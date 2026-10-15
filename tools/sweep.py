@@ -21,7 +21,7 @@ async def main():
         errs = []; pg.on('pageerror', lambda e: errs.append(str(e)))
         await pg.route('http://bsb.test/', lambda r: r.fulfill(body=HTML, content_type='text/html')); await pg.goto('http://bsb.test/')
         await pg.click('#coin'); await pg.wait_for_timeout(600)
-        levels = await pg.evaluate("[...document.querySelectorAll('#p-select .arc')].map(b => b.id.slice(2))")
+        levels = await pg.evaluate("[...document.querySelectorAll('#p-select .cat:not(.soon)')].map(b => b.id.slice(2))")
         for lv in levels:
             await pg.click('#t-' + lv); seen = collections.Counter(); slots = collections.Counter(); problems = []
             for i in range(N):

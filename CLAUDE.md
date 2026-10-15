@@ -28,11 +28,32 @@ python3 build/build.py      # checks every card, writes docs/index.html
 ## The game
 - Cabinet look: the phone is an arcade cabinet on club green #0B8343 (sampled from the Seattle Celtic logo). Marquee sign up top, a CRT screen in a black bezel (scanlines, glowing green pixel text), a black control panel with push-buttons, and two orange coin slots (hidden on short phones).
 - Title screen (attract mode): the sign and the panel's level buttons are fully dark. The CRT types the title, then shows a sample card whose blank fills itself in, on a loop. The two orange coin slots blink. Tapping a slot drops a coin in, the sign flickers on and level select opens. Tapping the screen or a dark button only flashes the slots. Coin slots show on every phone on the title and select screens, and hide during play on short phones.
-- Level select: five round arcade buttons in one row, icons only (no labels). Gen Alpha = phone with a deadpan face, Parents = orange cassette, Soccer Fanatics = soccer ball, Swifties = rainbow friendship bracelet, Premier League = gold trophy. A beaten level's ring glows green. The CRT shows the locked final boss with five progress lights.
+- Category select: ten named cream keys in two columns on the panel, in the order of the plan table below. Each key has a small pentagon at the right: an outline until beaten, then filled in the category's color. Categories without a deck yet show as dim, disabled keys. The CRT shows the soccer ball: earned patches fill the five rim slots clockwise from the top, in the order earned, with a gold lock on the center. Five patches turn the center red and wake the boss (tap the screen). The old round icon buttons are gone, but the five icons (phone, cassette, ball, bracelet, trophy) still show in the play HUD.
 - Play: one sentence with a blinking dashed blank and three cream buttons. Right = green with a pixel ✓. Wrong = red with a pixel ✕ and a shake, and the other choice dims. After answering, the blank fills in with the right answer: glowing green on a win, plain white with a dashed underline on a miss. Meanings show only on the buttons (the right answer's, plus your own wrong pick's) and wrap to two lines at most. The untouched choice stays unexplained.
-- 5 right in a row beats a level. One miss ends that run (retry with the replay icon). Beaten levels stay beaten on the device (localStorage `bsb-cleared`). All five wake the final boss, whose game is TBD. Each level walks a saved shuffled order (`bsb-q-<id>`) so replays bring new cards. The right answer never lands in the same slot 3 times running.
+- 5 right in a row beats a level. One miss ends that run (retry with the replay icon). Beaten levels stay beaten on the device (localStorage `bsb-cleared`). Five beaten categories complete the ball and wake the final boss, whose game is TBD. Each level walks a saved shuffled order (`bsb-q-<id>`) so replays bring new cards. The right answer never lands in the same slot 3 times running.
 - Fonts: Press Start 2P (marquee, title, numbers) and Pixelify Sans (everything else). Pixelify draws 5 like an S, so the code sets every digit in Press Start 2P. Its "fi" ligature looks like an A, so ligatures are off. Keep both fixes.
 - Less is more: no instructions, labels or congrats text. Icons, color and layout carry it.
+
+## The plan (locked Oct 15, 2026, don't re-open without Morg)
+Ten categories, named on screen. The test for each one: who has the edge? Kids and parents play the same game, and each side owns some categories.
+
+| Category | Edge | Deck |
+|---|---|---|
+| Kid Slang | kids | built (was Gen Alpha) |
+| Parent Slang | parents | built (was Parents) |
+| Grandparent Slang | nobody | new |
+| Taylor Swift | kids, moms | built (was Swifties) |
+| Old Tech | parents | new |
+| 7th Grade | kids | new |
+| Soccer Lingo | the team | built (was Soccer Fanatics) |
+| World Cup 2026 | everyone | new |
+| Seattle | everyone | new |
+| EPL | soccer dads | built (was Premier League) |
+
+- The meta-game is a soccer ball. 5 right in a row in a category earns that category's five-sided patch. Any five patches complete the ball (five rim patches, front view), and its center patch wakes the final boss. With 10 categories you can fail five and still get there.
+- Cards will get harder from 1 to 5 within a run (a difficulty tag of 1–3 per card). Gradual is fine.
+- Build order: the ball, patches and names with the five built decks first. Then add new decks one at a time, each approved by Morg before the next.
+- Still open: whether a failed category goes dark until the next coin (it only matters once there are six or more decks), and the boss game itself.
 
 ## House style for all text (strict)
 - One plain sentence per card, deadpan school-workbook tone. The answer supplies the fun.
@@ -54,4 +75,4 @@ python3 build/build.py      # checks every card, writes docs/index.html
 
 ## Open
 - Final boss game: TBD (Morg decides).
-- Morg may rename or redraw any icon. The soccer ball is the weakest.
+- Morg may rename or redraw any icon. The Soccer Lingo HUD icon is still a ball, which now clashes with the meta-ball. A jersey was offered.
