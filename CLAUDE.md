@@ -1,6 +1,6 @@
 # Blank Space Baby — brief for every session
 
-Read this first. It holds the decisions already made so nobody re-learns them.
+Read this first. It holds the decisions already made so nobody re-learns them. Then read DOSSIER.md for where things stand, what’s been tried and what’s next.
 
 ## What it is
 A fill-in-the-blank arcade word game for a youth girls' soccer team (Seattle Celtic G14, players ~12–14) and their parents. Built by Morg (owner, names everything, approves all player-facing text) with Claude. Soft-launching standalone at https://fernforager.github.io/blank-space-baby/ ; later it folds into the team's Carpool HQ app (repo FernForager/carpool-hq) as Arcade game #2 by copying `docs/index.html` into HQ's Arcade.
