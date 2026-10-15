@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#0B8343">
+<meta name="theme-color" content="#45BE76">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -29,7 +29,7 @@
    Level select: five round buttons on the panel (lit when beaten), the boss lair on the screen.
    Play: 5 right in a row beats a level, one miss ends the run. */
 :root {
-  --body: #0B8343; --body-dark: #075A2E;
+  --body: #45BE76; --body-dark: #2E9A5A;   /* Irish Green, Pantone 15-6340 TCX, and its shade */
   --bezel: #0D0F0E; --screen: #07130C; --glow: #5CF09A; --text: #EAFBF0; --dim: #7FAF92;
   --hot: #FF8A3D; --gold: #F7C948;
   --btn: #F6F0E2; --btn-edge: #CBBFA4; --btn-ink: #1E2A3B;
@@ -248,7 +248,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   // keep hyphenated words and score/season ranges on one line (outside tags only)
   var keep = function (html) { return html.replace(/(<[^>]*>)|([A-Za-z0-9’]+(?:[-–][A-Za-z0-9’]+)+)/g, function (m, tag, word) { return tag || '<span class="nb">' + word + '</span>'; }); };
   // Pixelify Sans draws 5 like an S, so digits use the arcade face (text outside tags only)
-  var num = function (html) { return html.replace(/(<[^>]*>)|(\d+(?:[.,]\d+)*)/g, function (m, tag, d) { return tag || '<span class="num">' + d + '</span>'; }); };
+  var num = function (html) { return html.replace(/(<[^>]*>)|(\d+)/g, function (m, tag, d) { return tag || '<span class="num">' + d + '</span>'; }); };
   // the sentence with its answer swapped for a blank (or filled in), glued to its punctuation so they never split
   function sentence(it, fill) {
     var glue = new RegExp('(^|[^A-Za-z0-9])((?:&quot;|“)?)(' + quote(esc(it.w)) + ')(?![A-Za-z0-9])((?:[:,.!?…\'’”]|&quot;)*)', 'i');

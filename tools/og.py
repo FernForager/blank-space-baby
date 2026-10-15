@@ -10,7 +10,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 HTML = open(os.path.join(ROOT, 'docs', 'index.html')).read()
 CARD = 'The halftime orange slices were <span class="nb"><span class="blank"></span></span>'
 STYLE = """
-  body { background: #0B8343; } .cab { max-width: 300px; gap: 8px; padding: 10px 14px 0; } .coin { display: none !important; }
+  body { background: #45BE76; } .cab { max-width: 300px; gap: 8px; padding: 10px 14px 0; } .coin { display: none !important; }
   .marquee { padding: 10px 8px 11px; } .cab[data-v="title"] .marquee h1 { opacity: 1 !important; font-size: 13px; }
   .cab[data-v="title"] .arc .cap { filter: none !important; } .arc .ring { width: 50px !important; height: 50px !important; } .cab[data-v="title"] .panel { height: 72px !important; padding: 0 12px; }
   .screen { padding: 12px 16px; } #v-title .logo { display: none !important; }
