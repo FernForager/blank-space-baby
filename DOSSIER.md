@@ -1,4 +1,4 @@
-# Dossier: Blank Space Baby
+# Dossier: Triviella (formerly Blank Space Baby)
 
 Handoff for Claude Code sessions, written Oct 14, 2026 at the end of the session that built the game. Read `CLAUDE.md` first: it has the standing rules (house style, sources, look, game rules). This file covers where things stand, what's been tried, what's next and how to work.
 
@@ -95,7 +95,7 @@ This repo is **public**. Never commit personal details: no last names, addresses
 
 ## 8. Things tried and dropped (don't re-propose)
 
-- **Names:** Decode It (an early working title), Wait Actually, Slango, Slangle, Slang Wrangler, Slanguage Arts. Morg named it **Blank Space Baby**.
+- **Names:** Decode It (an early working title), Wait Actually, Slango, Slangle, Slang Wrangler, Slanguage Arts. Morg named it **Blank Space Baby**, then renamed it **Triviella** on Oct 15, 2026: the Taylor Swift pun leaned too hard on one category out of ten. Also offered and passed over: Ball Knowledge, Five-a-Side, Mind the Gap, Nutmeg, Fill the Gap, Patchwork, Pass It On, Blank Check, and Triviela (the trivela kick pun).
 - **Look:**
   - A full Apple-style redesign. Morg's reaction: "I liked it before."
   - A gold star on wins.
