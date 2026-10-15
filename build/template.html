@@ -56,14 +56,17 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 /* select: the boss pentagon in the middle, and a slot around it for each earned pentagon */
 #v-select { container-type: size; }
 .board { position: relative; flex: none; width: min(100cqw, 100cqh); height: min(100cqw, 100cqh); }
-.board .p { position: absolute; width: 21%; transform: translate(-50%, -50%); color: #3E7A57; }
-.board .p svg, .flyer svg { display: block; width: 100%; height: auto; }
+.board .p { position: absolute; width: 21%; transform: translate(-50%, -50%); color: #3E7A57; filter: drop-shadow(0 0 3px rgba(92,240,154,.35)); }
+.pg { display: block; width: 100%; height: auto; overflow: visible; }
+.pg polygon { fill: currentColor; stroke: currentColor; stroke-width: 2; stroke-linejoin: round; }
+.pg.o polygon { fill: none; stroke-width: 6; }
 .board .p.on { color: var(--c); filter: drop-shadow(0 0 5px var(--c)); }
 .board .p.on.pending { visibility: hidden; }
-.board .p.new { animation: bump .45s steps(3); }
+.board .p.new svg { animation: bump .45s steps(3); }   /* animate the shape, not the slot, so it stays centered */
 .board .boss-p { width: 31%; color: #4A2328; }
 .board .lock { position: absolute; left: 50%; top: 52%; transform: translate(-50%, -50%); color: var(--gold); filter: drop-shadow(0 0 5px rgba(247,201,72,.7)); }
-.board.awake .boss-p { color: var(--no); filter: drop-shadow(0 0 6px var(--no)) drop-shadow(0 0 14px rgba(255,90,95,.6)); animation: bob 1.2s steps(2) infinite; }
+.board.awake .boss-p { color: var(--no); filter: drop-shadow(0 0 6px var(--no)) drop-shadow(0 0 14px rgba(255,90,95,.6)); }
+.board.awake .boss-p svg { animation: bob 1.2s steps(2) infinite; }
 .board.awake .lock { display: none; }
 .flyer { position: fixed; z-index: 10; pointer-events: none; transition: transform .75s cubic-bezier(.3, .1, .2, 1); filter: drop-shadow(0 0 6px var(--c)); color: var(--c); }
 /* the boss lair */
@@ -117,7 +120,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 #p-select { grid-template-columns: 1fr 1fr; gap: 8px; }
 .cat { min-height: 42px; font-size: 16px; line-height: 1.05; text-align: left; padding: 4px 10px 4px 12px; display: flex; align-items: center; justify-content: space-between; gap: 6px; box-shadow: 0 4px 0 var(--btn-edge), 0 5px 8px rgba(0,0,0,.25); }
 .cat:active:not(:disabled) { transform: translateY(3px); box-shadow: 0 1px 0 var(--btn-edge); }
-.cat .patch { flex: none; color: var(--btn-edge); }
+.cat .patch { flex: none; width: 18px; color: var(--btn-edge); }
 .cat.done .patch { color: var(--c); filter: drop-shadow(0 0 3px var(--c)); }
 .cat.soon { opacity: .28; }
 .cat.soon:disabled { cursor: default; }
@@ -140,7 +143,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 @media (max-height: 640px) { .cab { gap: 9px; padding-top: max(9px, env(safe-area-inset-top, 0px)); padding-bottom: max(12px, env(safe-area-inset-bottom, 0px)); } .marquee { padding: 11px 10px 13px; } .marquee h1 { font-size: 15px; }
   .cat { font-size: 14px; min-height: 38px; } .choice { font-size: 19px; min-height: 50px; } .sentence { font-size: 22px; } .sentence.long { font-size: 20px; } .sentence.longer { font-size: 18px; }
   }
-@media (prefers-reduced-motion: reduce) { .key, .choice .def { transition: none; } .pips i.bump, .choice.wrong, .flick, .blank, .go, .boss, .big-icon, .pips i.new, .board .p.new, .board.awake .boss-p, .cab.poweron .marquee h1 { animation: none; } .flyer { transition: none; } }
+@media (prefers-reduced-motion: reduce) { .key, .choice .def { transition: none; } .pips i.bump, .choice.wrong, .flick, .blank, .go, .boss, .big-icon, .pips i.new, .board .p.new svg, .board.awake .boss-p svg, .cab.poweron .marquee h1 { animation: none; } .flyer { transition: none; } }
 </style>
 <div class="cab" id="cab" data-v="select">
   <div class="marquee"><h1>BLANK <span class="sp">SPACE</span> BABY</h1></div>
@@ -178,10 +181,6 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     home:    ['...#...','..###..','.#####.','#######','.##.##.','.##.##.','.##.##.'],
     next:    ['...#...','...##..','######.','#######','######.','...##..','...#...'],
     again:   ['..####.#.','.##...##.','##...###.','##.......','##.......','##.....##','.##...##.','..#####..'],
-    pent:    ['......#......','....#####....','...#######...','..#########..','#############','#############','.###########.','.###########.','.###########.','..#########..','..#########..','..#########..'],
-    pento:   ['......#......','....##.##....','...#.....#...','..#.......#..','##.........##','#...........#','.#.........#.','.#.........#.','.#.........#.','..#.......#..','..#.......#..','..#########..'],
-    patch:   ['....#....','...###...','..#####..','.#######.','#########','.#######.','.#######.','..#####..','..#####..'],
-    slot:    ['....#....','...#.#...','..#...#..','.#.....#.','#.......#','.#.....#.','.#.....#.','..#...#..','..#####..'],
     ok:      ['......#','.....##','#...##.','##.##..','.###...','..#....'],
     no:      ['##...##','###.###','.#####.','..###..','.#####.','###.###','##...##']
   };
@@ -200,6 +199,8 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     var body = Object.keys(paths).map(function (k) { return '<path' + (k === '#' ? '' : ' fill="' + PAL[k] + '"') + ' d="' + paths[k] + '"/>'; }).join('');
     return '<svg class="px' + (cls ? ' ' + cls : '') + '" width="' + rows[0].length * scale + '" height="' + rows.length * scale + '" viewBox="0 0 ' + rows[0].length + ' ' + rows.length + '" aria-hidden="true">' + body + '</svg>';
   }
+  // pentagons are drawn as true vectors: a pixel grid can't hold their 36° and 72° edges cleanly
+  function pent(outline) { return '<svg class="pg' + (outline ? ' o' : '') + '" viewBox="0 0 100 100" aria-hidden="true"><polygon points="50.00,8.00 93.75,39.79 77.04,91.21 22.96,91.21 6.25,39.79"/></svg>'; }
   var esc = function (s) { return s.replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
   var quote = function (s) { return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); };
   var rx = function (w) { return new RegExp('(^|[^A-Za-z0-9])(' + quote(w) + ')(?![A-Za-z0-9])', 'i'); };
@@ -243,24 +244,24 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   CATS.forEach(function (c) {
     var b = document.createElement('button'); b.type = 'button'; b.className = 'key cat' + (c.soon ? ' soon' : ''); b.id = 't-' + c.id;
     b.style.setProperty('--c', HUE[c.id]); if (c.soon) b.disabled = true;
-    b.innerHTML = '<span>' + num(keep(esc(c.name))) + '</span><span class="patch">' + svg('slot', 2) + '</span>';
+    b.innerHTML = '<span>' + num(keep(esc(c.name))) + '</span><span class="patch">' + pent(true) + '</span>';
     b.addEventListener('click', function () { if (!c.soon) play(c.id); });
     $('p-select').appendChild(b);
   });
   // the board: the boss pentagon in the middle, five slots around it clockwise from the top
   var slots = [0, 1, 2, 3, 4].map(function (k) { var a = (-90 + 72 * k) * Math.PI / 180; return [50 + 33 * Math.cos(a), 50 + 33 * Math.sin(a)]; });
   function board() {
-    var html = '<div class="p boss-p" style="left:50%;top:50%">' + svg('pent', 4) + '</div><span class="lock">' + svg('lock', 3) + '</span>';
+    var html = '<div class="p boss-p" style="left:50%;top:50%">' + pent() + '</div><span class="lock">' + svg('lock', 3) + '</span>';
     slots.forEach(function (xy, k) {
       var id = cleared[k];
-      html += '<div class="p' + (id ? ' on' : '') + (id && id === fresh ? ' pending' : '') + '" id="slot' + k + '" style="left:' + xy[0] + '%;top:' + xy[1] + '%' + (id ? ';--c:' + HUE[id] : '') + '">' + svg(id ? 'pent' : 'pento', 3) + '</div>';
+      html += '<div class="p' + (id ? ' on' : '') + (id && id === fresh ? ' pending' : '') + '" id="slot' + k + '" style="left:' + xy[0] + '%;top:' + xy[1] + '%' + (id ? ';--c:' + HUE[id] : '') + '">' + pent(!id) + '</div>';
     });
     return html;
   }
   // a newly earned pentagon flies from its key up into its slot
   function fly(id) {
     var from = $('t-' + id).lastChild.getBoundingClientRect(), slot = $('slot' + cleared.indexOf(id)), to = slot.getBoundingClientRect();
-    var f = document.createElement('div'); f.className = 'flyer'; f.style.setProperty('--c', HUE[id]); f.innerHTML = svg('pent', 3);
+    var f = document.createElement('div'); f.className = 'flyer'; f.style.setProperty('--c', HUE[id]); f.innerHTML = pent();
     f.style.left = from.left + 'px'; f.style.top = from.top + 'px'; f.style.width = from.width + 'px';
     document.body.appendChild(f);
     var done = false;
@@ -276,7 +277,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   function select() {
     var all = cleared.length >= 5;
     $('lair').innerHTML = board(); $('lair').setAttribute('aria-label', Math.min(cleared.length, 5) + ' of 5');
-    CATS.forEach(function (c) { var d = cleared.indexOf(c.id) >= 0; $('t-' + c.id).classList.toggle('done', d); $('t-' + c.id).lastChild.innerHTML = svg(d ? 'patch' : 'slot', 2); });
+    CATS.forEach(function (c) { var d = cleared.indexOf(c.id) >= 0; $('t-' + c.id).classList.toggle('done', d); $('t-' + c.id).lastChild.innerHTML = pent(!d); });
     $('lair').classList.toggle('awake', all);
     go(all ? 'next' : null, 'Final boss');
     view('select');
