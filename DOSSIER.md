@@ -9,7 +9,7 @@ This repo is **public**. Never commit personal details: no last names, addresses
 ## 1. Where things stand
 
 - **Live:** https://fernforager.github.io/blank-space-baby/ (GitHub Pages, `main` branch, `/docs` folder). Morg has it on his Home Screen as **BSB**.
-- **Built:** title screen → level select → play → level beaten → final boss (locked until all five are beaten; its game is TBD).
+- **Built:** title screen → level select → play → level beaten → final boss (locked until all five are beaten, its game is TBD).
 - **Decks (318 cards):**
 
   | Level | Cards | What it is |
@@ -18,7 +18,7 @@ This repo is **public**. Never commit personal details: no last names, addresses
   | Parents | 51 | '90s slang |
   | Soccer Fanatics | 55 | Soccer terms |
   | Swifties | 50 | Taylor Swift facts |
-  | Premier League | 50 | League facts; 8 are current-season |
+  | Premier League | 50 | League facts, 8 of them current-season |
 
 - **Checked:** every screen fits without scrolling at 402×744, 375×667 and 320×568. A play sweep of every level is clean. The build refuses cards that break house style.
 - **Morg's verdict on v36:** "decent, long way to go." The next work is polish, not features.
@@ -47,7 +47,7 @@ This repo is **public**. Never commit personal details: no last names, addresses
    ```
    Then look at the screenshots yourself and zoom in on details.
 3. **Open a pull request.** Morg taps **Merge** in the GitHub app or Safari. That merge is his OK to go live.
-4. **Preview links (do this first; see §5).** Until Cloudflare Pages is connected, Morg can't play a branch before merging. Until then, attach screenshots to the pull request, or publish a preview if your session can.
+4. **Preview links (do this first, see §5).** Until Cloudflare Pages is connected, Morg can't play a branch before merging. Until then, attach screenshots to the pull request, or publish a preview if your session can.
 
 ## 4. How the code works
 
@@ -55,7 +55,7 @@ This repo is **public**. Never commit personal details: no last names, addresses
 - **Views:** `#cab[data-v]` is `title`, `select`, `play`, `clear` or `boss`. CSS shows the matching screen view (`#v-*`) and panel view (`#p-*`). The whole CRT screen (`#flip`) is the "continue" tap target. `#home` returns to level select.
 - **Panel height:** title, select and boss share one short panel (`--deck-h`) so the screen gets the room. Play uses the natural, taller panel.
 - **Sprites:** `SPR` holds pixel art as arrays of row strings. `#` is a single-color pixel. Letters are palette colors (`PAL`: K ink, W white, Y gold, O orange, R red, B blue, P purple, G green, k pink, D dark). `svg(name, scale, cls, color)` draws them. `color=true` paints the palette (level buttons). Without it you get the one-color CRT version: ink outline only, or every pixel if the sprite has no ink.
-- **Cards:** each card has `w` (answer), `means` (short meaning), `ex` (the sentence) and `k` (kind). The two wrong choices come from the same `k`. `groups` lists answers that could fill each other's blanks; two answers from one group never share a card. If a kind runs short, it falls back to any kind in the level.
+- **Cards:** each card has `w` (answer), `means` (short meaning), `ex` (the sentence) and `k` (kind). The two wrong choices come from the same `k`. `groups` lists answers that could fill each other's blanks, and two answers from one group never share a card. If a kind runs short, it falls back to any kind in the level.
 - **Sentence rendering, in order:** escape → swap the answer for a blank, glued to its punctuation so they never split (`glue`) → keep hyphenated words and ranges unbroken (`keep()`) → set digits in Press Start 2P (`num()`).
 - **Saved on the phone:** `bsb-cleared` holds the beaten levels. `bsb-q-<level>` holds that level's shuffled order and position, so replays deal new cards. All access is wrapped in try/catch.
 - **Answer slots:** shuffled, but never the same slot three times running (`lastSlots`).
@@ -67,13 +67,13 @@ This repo is **public**. Never commit personal details: no last names, addresses
    - **Soccer ball icon:** reads as "ball-ish." Try a bigger grid or a different symbol (whistle, cleat), shown side by side.
    - **Boss sprite:** placeholder art.
    - **Answer screen after a pick:** a lot of empty screen sits above the word on tall phones.
-   - **Pixelify Sans's uppercase B:** it can read like a G, which is a font quirk. If Morg notices, consider a different body font. Get his OK first; the font is part of a look he approved.
+   - **Pixelify Sans's uppercase B:** it can read like a G, which is a font quirk. If Morg notices, consider a different body font. Get his OK first. The font is part of a look he approved.
    - **CRT icons:** the HUD's one-color icons are tiny (scale 2). Check they read.
 3. **Link preview for texting:** an `og:image` (a cabinet screenshot or title art, 1200×630) and an `og:title`, plus a tagline only if Morg writes one.
 
 ## 6. Open questions for Morg (don't decide for him)
 
-- **The final boss game.** Ideas to offer, not choose: a speed round (blanks from all five decks against a timer); a mixed deck with "lives" instead of one miss; a boss that "talks" in nonsense slang you have to decode. Nothing in the code yet beyond the locked sprite.
+- **The final boss game.** Ideas to offer, not choose: a speed round (blanks from all five decks against a timer), a mixed deck with "lives" instead of one miss, or a boss that "talks" in nonsense slang you have to decode. Nothing in the code yet beyond the locked sprite.
 - **Miss rule:** right now a miss ends only that level's run. The all-or-nothing version (a miss resets everything) was offered and is still open.
 - **Swap or redraw any icon.** All five are placeholders he's OK'd for now.
 - **Deck items flagged for his review:**
@@ -97,7 +97,7 @@ This repo is **public**. Never commit personal details: no last names, addresses
 
 - **Names:** Decode It (an early working title), Wait Actually, Slango, Slangle, Slang Wrangler, Slanguage Arts. Morg named it **Blank Space Baby**.
 - **Look:**
-  - A full Apple-style redesign; Morg's reaction: "I liked it before."
+  - A full Apple-style redesign. Morg's reaction: "I liked it before."
   - A gold star on wins.
   - Vertical stripes, hoops, dots and a mesh-shorts texture behind the cards (flat club green won).
   - A pixel-clover Home Screen icon (for HQ).
