@@ -9,11 +9,11 @@
    earns its colored patch, and five patches complete the ball and wake the boss.
    Play: 5 right in a row beats a category, one miss ends the run. */
 :root {
-  --body: #0B8343; --body-dark: #075A2E;
+  --body: #F2EDE4; --body-dark: #00843D;   /* locked palette: warm white page, Celtic Green trim */
   --bezel: #0D0F0E; --screen: #07130C; --glow: #5CF09A; --text: #EAFBF0; --dim: #7FAF92;
   --hot: #FF8A3D; --gold: #F7C948;
   --btn: #F6F0E2; --btn-edge: #CBBFA4; --btn-ink: #1E2A3B;
-  --ok: #2FCB72; --ok-edge: #16843F; --no: #FF5A5F; --no-edge: #B02A35;
+  --ok: #45BE76; --ok-edge: #00843D; --no: #FF5A5F; --no-edge: #B02A35;
   --pixel: "Press Start 2P", ui-monospace, monospace;
   --body-font: "Pixelify Sans", ui-rounded, "SF Pro Rounded", system-ui, sans-serif;
   color-scheme: dark;
@@ -143,7 +143,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .choice .def { font-size: 15px; line-height: 1.15; font-weight: 500; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; max-height: 0; opacity: 0; transition: max-height .2s, opacity .2s; }
 .choice.right .def, .choice.wrong .def { max-height: 36px; opacity: .9; }
 .choice .mark { width: 21px; flex: none; }
-.choice.right { background: var(--ok); color: #05230F; box-shadow: 0 5px 0 var(--ok-edge), 0 0 18px rgba(47,203,114,.75); }
+.choice.right { background: var(--ok); color: #05230F; box-shadow: 0 5px 0 var(--ok-edge), 0 0 18px rgba(69,190,118,.75); }
 .choice.wrong { background: var(--no); color: #2B0508; box-shadow: 0 5px 0 var(--no-edge), 0 0 18px rgba(255,90,95,.7); animation: nope .32s ease; }
 .choice.dim { opacity: .35; }
 @keyframes nope { 20% { transform: translateX(-7px); } 45% { transform: translateX(6px); } 70% { transform: translateX(-4px); } 90% { transform: translateX(2px); } }
@@ -196,7 +196,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 (function () {
   var LEVELS = __LEVELS__, CATS = __CATS__;
   // each category's patch color
-  var HUE = { alpha: '#4DA3FF', parents: '#FF8A3D', grand: '#FF8FC8', swift: '#B46CFF', tech: '#C9CED6', grade7: '#2EC4B6', soccer: '#2FCB72', wc: '#5FD3F3', sea: '#9BE15D', epl: '#F7C948' };
+  var HUE = { alpha: '#4DA3FF', parents: '#FF8A3D', grand: '#FF8FC8', swift: '#B46CFF', tech: '#C9CED6', grade7: '#2EC4B6', soccer: '#45BE76', wc: '#5FD3F3', sea: '#9BE15D', epl: '#F7C948' };
   // the ball, front view: C is the center patch (the boss), 1–5 the rim patches clockwise from the top
   var BALL = ["...........KKKKKKK...........", "........KKK1111111KKK........", "......KKWWW1111111WWWKK......", ".....KKWWWW1111111WWWWKK.....", "....KWWWWKK1111111KKWWWWK....", "...KWWWWKWWW11111WWWKWWWWK...", "..KKWWWKWWWWW111WWWWWKWWWKK..", "..KW55KWWWWWWWKWWWWWWWK22WK..", ".K5555WWWWWWWWKWWWWWWWW2222K.", ".K55555WWWWWWWKWWWWWWW22222K.", ".K55555WWWWWWWKWWWWWWW22222K.", "K555555WWWWWWCCCWWWWWW222222K", "K555555KKKKKCCCCCKKKKK222222K", "K55555WWWWKCCCCCCCKWWWW22222K", "KW555WWWWWWCCCCCCCWWWWWW222WK", "KWWKWWWWWWWCCCCCCCWWWWWWWKWWK", "KWWKWWWWWWWWCCCCCWWWWWWWWKWWK", "KWWWKWWWWWWWCCCCCWWWWWWWKWWWK", ".KWWKWWWWWWKWWWWWKWWWWWWKWWK.", ".KWWKWWWWWKWWWWWWWKWWWWWKWWK.", ".KWWW44444KWWWWWWWK33333WWWK.", "..KWW444444WWWWWWW333333WWK..", "..KK4444444WWWWWWW3333333KK..", "...K4444444WWWWWWW3333333K...", "....K4444444WWWWW3333333K....", ".....KK44444KKKKK33333KK.....", "......KK44WWWWWWWWW33KK......", "........KKKWWWWWWWKKK........", "...........KKKKKKK..........."];
   // pixel sprites, one string per row ('#' = lit pixel)
@@ -218,7 +218,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     ok:      ['......#','.....##','#...##.','##.##..','.###...','..#....'],
     no:      ['##...##','###.###','.#####.','..###..','.#####.','###.###','##...##']
   };
-  var PAL = { K: '#1E2A3B', W: '#FFFFFF', Y: '#F7C948', O: '#FF8A3D', R: '#FF5A5F', B: '#4DA3FF', P: '#B46CFF', G: '#2FCB72', k: '#FF8FC8', D: '#5B6470' };
+  var PAL = { K: '#1E2A3B', W: '#FFFFFF', Y: '#F7C948', O: '#FF8A3D', R: '#FF5A5F', B: '#4DA3FF', P: '#B46CFF', G: '#45BE76', k: '#FF8FC8', D: '#5B6470' };
   function svg(name, scale, cls, color) {
     var rows = SPR[name], paths = {}, inked = rows.join('').indexOf('K') >= 0 && rows.join('').replace(/[.#K]/g, '') !== '';
     rows.forEach(function (r, y) {

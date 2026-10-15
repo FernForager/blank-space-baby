@@ -25,8 +25,23 @@ python3 build/build.py      # checks every card, writes docs/index.html
 - Preview links: Cloudflare Pages (project blank-space-baby, output `docs`, no build command) deploys every pushed branch to `https://<branch>.blank-space-baby.pages.dev` within a minute or two. Give Morg that link with every branch so he can play it on his phone before merging. `main` also deploys to https://blank-space-baby.pages.dev, but GitHub Pages stays the official link.
 - Test in headless Chromium (Playwright is preinstalled in Claude's cloud workspace) at 402×744 (his phone in the Claude viewer), 375×667 and 320×568. Every screen must fit with no scrolling. Zoom in on punctuation, line ends and icon pixels before calling anything done, not just the whole screen at a glance.
 
+## Palette (locked Oct 15, 2026, shared with Carpool HQ)
+Hex is the standard for screens. For print, convert with the Pantone Connect app, never from memory.
+
+| Use | Hex | Notes |
+|---|---|---|
+| Celtic Green | #00843D | Pantone 348 C. Crest, text on cream, the cabinet trim, the right-answer edge |
+| Irish Green | #45BE76 | Pantone 15-6340 TCX. Surfaces: the right-answer button, earned rings, HQ's dark-mode green |
+| Page | #F2EDE4 | Warm white: the cabinet body, theme-color, manifest |
+| Card | #FBF8F3 | HQ cards |
+| Ink | #1E2A3B | All dark text and sprite outlines |
+| Dark page | #161B22 | HQ dark mode (the game doesn't follow dark mode yet) |
+| Button cream | #F6F0E2 | Game keys |
+
+Game-only effects, not brand colors: the CRT glow #5CF09A, the wrong-answer red #FF5A5F, the coin orange and the patch colors. Don't add new greens.
+
 ## The game
-- Cabinet look: the phone is an arcade cabinet on club green #0B8343 (sampled from the Seattle Celtic logo). Marquee sign up top, a CRT screen in a black bezel (scanlines, glowing green pixel text), a black control panel with push-buttons, and two orange coin slots (hidden on short phones).
+- Cabinet look: the phone is an arcade cabinet on HQ's warm white, with Celtic Green trim along the sides and under the black parts. Marquee sign up top, a CRT screen in a black bezel (scanlines, glowing green pixel text), a black control panel with push-buttons, and two orange coin slots (hidden on short phones).
 - Title screen (attract mode): the sign and the panel's level buttons are fully dark. The CRT types the title, then shows a sample card whose blank fills itself in, on a loop. The two orange coin slots blink. Tapping a slot drops a coin in, the sign flickers on and level select opens. Tapping the screen or a dark button only flashes the slots. Coin slots show on every phone on the title and select screens, and hide during play on short phones.
 - Category select: ten named cream keys in two columns on the panel, in the order of the plan table below. Each key has a small pentagon at the right: an outline until beaten, then filled in the category's color. Categories without a deck yet show as dim, disabled keys. The CRT shows the soccer ball: earned patches fill the five rim slots clockwise from the top, in the order earned, with a gold lock on the center. Five patches turn the center red and wake the boss (tap the screen). The old round icon buttons are gone, but the five icons (phone, cassette, ball, bracelet, trophy) still show in the play HUD.
 - Play: one sentence with a blinking dashed blank and three cream buttons. Right = green with a pixel ✓. Wrong = red with a pixel ✕ and a shake, and the other choice dims. After answering, the blank fills in with the right answer: glowing green on a win, plain white with a dashed underline on a miss. Meanings show only on the buttons (the right answer's, plus your own wrong pick's) and wrap to two lines at most. The untouched choice stays unexplained.
