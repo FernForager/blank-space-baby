@@ -29,7 +29,7 @@ async def main():
                 if sh[0] > sh[1]: print(W, H, n, 'SCROLLS', sh)
                 await pg.screenshot(path=os.path.join(OUT, f'{W}_{n}.png'))
             await shot('title')
-            await pg.click('#coin'); await pg.wait_for_timeout(1200); await shot('select')
+            await pg.click('#start'); await pg.wait_for_timeout(1200); await shot('select')
             await pg.click('#t-swift'); await pg.wait_for_timeout(400); await shot('q')
             for i in range(5):
                 w = await pg.evaluate("document.getElementById('q').dataset.w")
@@ -42,7 +42,7 @@ async def main():
             wrong = await pg.evaluate("[...document.querySelectorAll('.choice')].map(b => b.dataset.w).find(x => x !== document.getElementById('q').dataset.w)")
             await pg.click(f'.choice[data-w="{wrong}"]'); await pg.wait_for_timeout(500); await shot('miss')
             await pg.evaluate("localStorage.setItem('bsb-cleared', JSON.stringify(['alpha','parents','soccer','swift','epl']))")
-            await pg.reload(); await pg.wait_for_timeout(1200); await pg.click('#coin'); await pg.wait_for_timeout(1200); await shot('select_all')
+            await pg.reload(); await pg.wait_for_timeout(1200); await pg.click('#start'); await pg.wait_for_timeout(1200); await shot('select_all')
             await pg.click('#flip'); await pg.wait_for_timeout(400); await shot('boss')
             if errs: print(W, H, 'JS ERRORS', errs)
             await ctx.close()

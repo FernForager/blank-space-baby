@@ -20,7 +20,7 @@ async def main():
         b = await p.chromium.launch(); pg = await b.new_page(viewport={'width': W, 'height': H})
         errs = []; pg.on('pageerror', lambda e: errs.append(str(e)))
         await pg.route('http://bsb.test/', lambda r: r.fulfill(body=HTML, content_type='text/html')); await pg.goto('http://bsb.test/')
-        await pg.click('#coin'); await pg.wait_for_timeout(600)
+        await pg.click('#start'); await pg.wait_for_timeout(600)
         levels = await pg.evaluate("[...document.querySelectorAll('#p-select .cat:not(.soon)')].map(b => b.id.slice(2))")
         for lv in levels:
             await pg.click('#t-' + lv); seen = collections.Counter(); slots = collections.Counter(); problems = []
