@@ -20,7 +20,6 @@ async def main():
         b = await p.chromium.launch(); pg = await b.new_page(viewport={'width': W, 'height': H})
         errs = []; pg.on('pageerror', lambda e: errs.append(str(e)))
         await pg.route('http://bsb.test/', lambda r: r.fulfill(body=HTML, content_type='text/html')); await pg.goto('http://bsb.test/')
-        await pg.click('#start'); await pg.wait_for_timeout(600)
         levels = await pg.evaluate("[...document.querySelectorAll('#p-select .cat:not(.soon)')].map(b => b.id.slice(2))")
         for lv in levels:
             await pg.click('#t-' + lv); seen = collections.Counter(); slots = collections.Counter(); problems = []
@@ -36,8 +35,8 @@ async def main():
                 if await pg.evaluate("document.querySelector('.face').scrollHeight > document.querySelector('.face').clientHeight + 1 || document.getElementById('q').scrollWidth > document.getElementById('q').clientWidth + 1"):
                     problems.append(('answer screen overflows', st['w']))
                 await pg.click('#flip')
-                if await pg.evaluate("document.getElementById('cab').dataset.v") == 'clear':
-                    await pg.click('#flip'); await pg.click('#t-' + lv)
+                if await pg.evaluate("document.getElementById('cab').dataset.v") == 'select':
+                    await pg.wait_for_timeout(1200); await pg.click('#t-' + lv)
             print(f'{lv}: {len(seen)} different cards, slots {dict(sorted(slots.items()))}, problems {problems[:5] or "none"}')
             if await pg.evaluate("document.getElementById('cab').dataset.v") == 'play': await pg.click('#home')
         print('JS errors:', errs or 'none'); await b.close()

@@ -3,10 +3,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Pixelify+Sans:wght@500;600;700&display=swap">
 <style>
-/* The phone is the cabinet: marquee sign, CRT screen in a black bezel, push-buttons on a black control panel, a pinball start button.
-   Title screen: attract mode until the glowing start button is pressed. It lights the sign.
-   Category select: ten named keys on the panel, the soccer ball on the screen. Each beaten category
-   earns its colored patch, and five patches complete the ball and wake the boss.
+/* The phone is the cabinet: marquee sign, CRT screen in a black bezel, push-buttons on a black control panel.
+   It opens straight on category select, and the sign powers on.
+   Category select: ten named keys on the panel, the boss pentagon on the screen. Each beaten category's
+   pentagon flies up from its key into a slot around the boss, and five wake it.
    Play: 5 right in a row beats a category, one miss ends the run. */
 :root {
   --body: #F2EDE4; --body-dark: #00843D;   /* locked palette: warm white page, Celtic Green trim */
@@ -25,7 +25,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   padding-top: max(12px, env(safe-area-inset-top, 0px)); padding-bottom: max(16px, env(safe-area-inset-bottom, 0px)); padding-left: max(14px, env(safe-area-inset-left, 0px)); padding-right: max(14px, env(safe-area-inset-right, 0px));
   background: linear-gradient(90deg, var(--body-dark) 0 6px, transparent 6px calc(100% - 6px), var(--body-dark) calc(100% - 6px)); }
 
-/* marquee: the lit sign (dark on the title screen, powers on at start) */
+/* marquee: the lit sign (flickers on when the game opens) */
 .marquee { flex: none; position: relative; border-radius: 14px; padding: 14px 12px 15px; text-align: center; overflow: hidden;
   background: radial-gradient(120% 140% at 50% 0%, #1E3A2A 0%, #0B1710 70%); box-shadow: inset 0 0 0 3px #000, inset 0 0 18px rgba(92,240,154,.18), 0 3px 0 var(--body-dark); }
 .marquee h1 { margin: 0; font-family: var(--pixel); font-weight: 400; font-size: 17px; line-height: 1; letter-spacing: 1px; color: #fff; white-space: nowrap;
@@ -33,8 +33,6 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .marquee h1 .sp { position: relative; }
 .marquee h1 .sp::after { content: ""; position: absolute; left: 0; right: 0; bottom: -7px; height: 3px;
   background: repeating-linear-gradient(90deg, var(--glow) 0 7px, transparent 7px 11px); box-shadow: 0 0 6px var(--glow); }
-.cab[data-v="title"] .marquee { background: #0B1710; box-shadow: inset 0 0 0 3px #000, 0 3px 0 var(--body-dark); }
-.cab[data-v="title"] .marquee h1 { opacity: 0; }
 .cab.poweron .marquee h1 { animation: power .6s steps(6); }
 @keyframes power { 0% { opacity: 0; } 17% { opacity: 1; } 34% { opacity: .15; } 51% { opacity: 1; } 68% { opacity: .4; } 100% { opacity: 1; } }
 
@@ -47,40 +45,29 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .flick { animation: flick .28s steps(4); }
 @keyframes flick { 0% { filter: brightness(2.2) contrast(.6); } 50% { filter: brightness(.5); } 100% { filter: none; } }
 .view { display: none; flex: 1; min-height: 0; flex-direction: column; }
-.cab[data-v="title"] #v-title, .cab[data-v="select"] #v-select, .cab[data-v="play"] #v-play, .cab[data-v="clear"] #v-clear, .cab[data-v="boss"] #v-boss { display: flex; }
+.cab[data-v="select"] #v-select, .cab[data-v="play"] #v-play, .cab[data-v="boss"] #v-boss { display: flex; }
 .px { shape-rendering: crispEdges; flex: none; display: block; fill: currentColor; }
 
-/* title */
-#v-title { align-items: center; justify-content: center; }
-.logo { margin: 0 0 10px; font-family: var(--pixel); font-weight: 400; font-size: 34px; line-height: 1.5; text-align: center; color: #fff;
-  text-shadow: 0 0 4px rgba(255,255,255,.7), 0 0 12px var(--glow), 0 0 26px rgba(92,240,154,.5); }
-.logo span { display: block; }
-.logo .type { position: relative; display: table; margin: 0 auto; }
-.logo .type b { font-weight: 400; visibility: hidden; }
-.logo.on .type b { animation: show 0s .5s forwards; }
-.logo.on .type b:nth-child(2) { animation-delay: .68s; } .logo.on .type b:nth-child(3) { animation-delay: .86s; }
-.logo.on .type b:nth-child(4) { animation-delay: 1.04s; } .logo.on .type b:nth-child(5) { animation-delay: 1.22s; }
-.logo .type::after { content: ""; position: absolute; left: 0; right: 0; bottom: 4px; height: 4px;
-  background: repeating-linear-gradient(90deg, var(--glow) 0 12px, transparent 12px 18px); box-shadow: 0 0 6px var(--glow); }
-@keyframes show { to { visibility: visible; } }
-/* attract mode: the title takes turns with a sample card that answers itself */
-#v-title .demo { display: none; } #v-title.demo .logo { display: none; }
-#v-title.demo .demo { display: flex; flex: 1; align-self: stretch; flex-direction: column; justify-content: center; }
+
+/* the answer, filled into the blank */
 .fill { color: var(--glow); text-shadow: 0 0 8px rgba(92,240,154,.7); }
 .missed .fill { color: #fff; text-shadow: 0 0 6px rgba(255,255,255,.35); padding-bottom: 3px;
   background: repeating-linear-gradient(90deg, var(--glow) 0 0.42em, transparent 0.42em 0.62em) left bottom / 100% 3px no-repeat; }   /* a miss still shows the right answer, without the win glow */
-
-/* select: the soccer ball. Earned patches show in their category's color, the rest wait as dim slots */
-.ball { width: min(62%, 200px); max-height: 100%; height: auto; image-rendering: pixelated; }
-#v-select .ball, #v-clear .ball { flex: 0 1 auto; min-height: 0; }
-.ball .lit { filter: drop-shadow(0 0 3px currentColor); }
-.ballwrap { position: relative; display: flex; justify-content: center; align-items: center; min-height: 0; flex: 1; width: 100%; }
-.ballwrap .lock { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); color: var(--gold); filter: drop-shadow(0 0 5px rgba(247,201,72,.7)); }
-.ballwrap.awake .lock { display: none; }
-.ballwrap.awake .center { filter: drop-shadow(0 0 4px #FF5A5F) drop-shadow(0 0 10px rgba(255,90,95,.7)); }
-.ball .new { animation: blink .35s steps(1) 5; }
+/* select: the boss pentagon in the middle, and a slot around it for each earned pentagon */
+#v-select { container-type: size; }
+.board { position: relative; flex: none; width: min(100cqw, 100cqh); height: min(100cqw, 100cqh); }
+.board .p { position: absolute; width: 21%; transform: translate(-50%, -50%); color: #3E7A57; }
+.board .p svg, .flyer svg { display: block; width: 100%; height: auto; }
+.board .p.on { color: var(--c); filter: drop-shadow(0 0 5px var(--c)); }
+.board .p.on.pending { visibility: hidden; }
+.board .p.new { animation: bump .45s steps(3); }
+.board .boss-p { width: 31%; color: #4A2328; }
+.board .lock { position: absolute; left: 50%; top: 52%; transform: translate(-50%, -50%); color: var(--gold); filter: drop-shadow(0 0 5px rgba(247,201,72,.7)); }
+.board.awake .boss-p { color: var(--no); filter: drop-shadow(0 0 6px var(--no)) drop-shadow(0 0 14px rgba(255,90,95,.6)); animation: bob 1.2s steps(2) infinite; }
+.board.awake .lock { display: none; }
+.flyer { position: fixed; z-index: 10; pointer-events: none; transition: transform .75s cubic-bezier(.3, .1, .2, 1); filter: drop-shadow(0 0 6px var(--c)); color: var(--c); }
 /* the boss lair */
-#v-select, #v-boss, #v-clear { align-items: center; justify-content: center; gap: 22px; }
+#v-select, #v-boss { align-items: center; justify-content: center; gap: 22px; }
 .boss { position: relative; color: #3A5546; }
 .boss.awake { color: var(--no); filter: drop-shadow(0 0 8px rgba(255,90,95,.8)); animation: bob 1.2s steps(2) infinite; }
 .boss .lock { position: absolute; left: 50%; bottom: -6px; transform: translateX(-50%); color: var(--gold); filter: drop-shadow(0 0 5px rgba(247,201,72,.7)); }
@@ -118,9 +105,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .panel { flex: none; box-sizing: border-box; display: flex; margin-top: auto; border-radius: 18px; padding: 12px 12px 15px;
   background: linear-gradient(180deg, #1A1D1B 0%, #0D0F0E 100%); box-shadow: inset 0 2px 0 rgba(255,255,255,.08), inset 0 0 0 2px #222, 0 3px 0 var(--body-dark); }
 .pv { display: none; flex: 1; min-width: 0; }
-.cab[data-v="title"] #p-select, .cab[data-v="select"] #p-select, .cab[data-v="boss"] #p-select { display: grid; }
-/* title: the panel is powered off until start is pressed */
-.cab[data-v="title"] .cat { cursor: default; filter: brightness(.3) saturate(.4); }
+.cab[data-v="select"] #p-select, .cab[data-v="boss"] #p-select { display: grid; }
 .cab[data-v="play"] #choices, .cab[data-v="clear"] #choices { display: flex; }
 
 
@@ -147,36 +132,25 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .choice.wrong { background: var(--no); color: #2B0508; box-shadow: 0 5px 0 var(--no-edge), 0 0 18px rgba(255,90,95,.7); animation: nope .32s ease; }
 .choice.dim { opacity: .35; }
 @keyframes nope { 20% { transform: translateX(-7px); } 45% { transform: translateX(6px); } 70% { transform: translateX(-4px); } 90% { transform: translateX(2px); } }
-.key:focus-visible, .go:focus-visible, .home:focus-visible, .start:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+.key:focus-visible, .go:focus-visible, .home:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
 
-/* start button, pinball style: lit and pulsing on the title screen, dark once the game is on */
-.start { flex: none; display: block; width: 54px; height: 54px; margin: 2px auto 4px; padding: 0; border: 0; border-radius: 50%; cursor: default; -webkit-tap-highlight-color: transparent;
-  background: radial-gradient(circle at 42% 34%, #7A5A48 0%, #4A3428 70%); box-shadow: 0 0 0 4px #0D0F0E, 0 4px 0 4px #0D0F0E, 0 6px 0 4px var(--body-dark); }
-.cab[data-v="title"] .start { cursor: pointer; background: radial-gradient(circle at 42% 34%, #FFF1DE 0%, #FFB36B 34%, var(--hot) 70%);
-  box-shadow: 0 0 0 4px #0D0F0E, 0 4px 0 4px #0D0F0E, 0 6px 0 4px var(--body-dark), 0 0 22px 6px rgba(255,138,61,.7); animation: lit 1.1s steps(2) infinite; }
-.cab[data-v="title"] .start:active, .start.press { transform: translateY(3px); box-shadow: 0 0 0 4px #0D0F0E, 0 1px 0 4px #0D0F0E, 0 3px 0 4px var(--body-dark), 0 0 30px 10px rgba(255,138,61,.85); }
-@keyframes lit { 50% { box-shadow: 0 0 0 4px #0D0F0E, 0 4px 0 4px #0D0F0E, 0 6px 0 4px var(--body-dark), 0 0 8px 2px rgba(255,138,61,.35); } }
-.start.nudge { animation: none !important; box-shadow: 0 0 0 4px #0D0F0E, 0 4px 0 4px #0D0F0E, 0 6px 0 4px var(--body-dark), 0 0 34px 12px rgba(255,138,61,.95); }
 
-@media (max-height: 700px) { .cab[data-v="play"] .start, .cab[data-v="clear"] .start { display: none; } .start { width: 46px; height: 46px; } .choice { min-height: 56px; } }
+@media (max-height: 700px) { .choice { min-height: 56px; } }
 @media (max-width: 360px) { :root { --cap: 52px; } }
 @media (max-height: 640px) { .cab { gap: 9px; padding-top: max(9px, env(safe-area-inset-top, 0px)); padding-bottom: max(12px, env(safe-area-inset-bottom, 0px)); } .marquee { padding: 11px 10px 13px; } .marquee h1 { font-size: 15px; }
   .cat { font-size: 14px; min-height: 38px; } .choice { font-size: 19px; min-height: 50px; } .sentence { font-size: 22px; } .sentence.long { font-size: 20px; } .sentence.longer { font-size: 18px; }
-  .logo { font-size: 28px; } }
-@media (prefers-reduced-motion: reduce) { .key, .choice .def { transition: none; } .pips i.bump, .choice.wrong, .flick, .blank, .go, .boss, .big-icon, .pips i.new, .cab[data-v="title"] .start, .cab.poweron .marquee h1 { animation: none; }
-  .logo .type b, .logo.on .type b { animation: none; visibility: visible; } }
+  }
+@media (prefers-reduced-motion: reduce) { .key, .choice .def { transition: none; } .pips i.bump, .choice.wrong, .flick, .blank, .go, .boss, .big-icon, .pips i.new, .board .p.new, .board.awake .boss-p, .cab.poweron .marquee h1 { animation: none; } .flyer { transition: none; } }
 </style>
-<div class="cab" id="cab" data-v="title">
+<div class="cab" id="cab" data-v="select">
   <div class="marquee"><h1>BLANK <span class="sp">SPACE</span> BABY</h1></div>
   <div class="bezel">
     <div class="screen" id="flip" aria-live="polite">
-      <section class="view" id="v-title"><p class="logo" aria-label="Blank Space Baby"><span>BLANK</span><span class="type"><b>S</b><b>P</b><b>A</b><b>C</b><b>E</b></span><span>BABY</span></p><div class="demo" aria-hidden="true"><p class="sentence" id="dq"></p></div></section>
-      <section class="view" id="v-select"><div class="ballwrap" id="lair"></div></section>
+      <section class="view" id="v-select"><div class="board" id="lair"></div></section>
       <section class="view" id="v-play">
         <div class="hud"><span class="lvl" id="lvl"></span><button class="home" id="home" type="button" aria-label="Levels"></button></div>
         <section class="face"><p class="sentence" id="q"></p></section>
       </section>
-      <section class="view" id="v-clear"><div class="ballwrap" id="clear-ball"></div></section>
       <section class="view" id="v-boss"><div class="boss" id="boss-big"></div></section>
       <button class="go wait" id="go" type="button" tabindex="-1" aria-label="Next"></button>
     </div>
@@ -185,15 +159,12 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     <div class="pv" id="p-select"></div>
     <div class="pv choices" id="choices"></div>
   </div>
-  <button class="start" id="start" type="button" aria-label="Start"></button>
 </div>
 <script>
 (function () {
   var LEVELS = __LEVELS__, CATS = __CATS__;
   // each category's patch color
   var HUE = { alpha: '#4DA3FF', parents: '#FF8A3D', grand: '#FF8FC8', swift: '#B46CFF', tech: '#C9CED6', grade7: '#2EC4B6', soccer: '#45BE76', wc: '#5FD3F3', sea: '#9BE15D', epl: '#F7C948' };
-  // the ball, front view: C is the center patch (the boss), 1–5 the rim patches clockwise from the top
-  var BALL = ["...........KKKKKKK...........", "........KKK1111111KKK........", "......KKWWW1111111WWWKK......", ".....KKWWWW1111111WWWWKK.....", "....KWWWWKK1111111KKWWWWK....", "...KWWWWKWWW11111WWWKWWWWK...", "..KKWWWKWWWWW111WWWWWKWWWKK..", "..KW55KWWWWWWWKWWWWWWWK22WK..", ".K5555WWWWWWWWKWWWWWWWW2222K.", ".K55555WWWWWWWKWWWWWWW22222K.", ".K55555WWWWWWWKWWWWWWW22222K.", "K555555WWWWWWCCCWWWWWW222222K", "K555555KKKKKCCCCCKKKKK222222K", "K55555WWWWKCCCCCCCKWWWW22222K", "KW555WWWWWWCCCCCCCWWWWWW222WK", "KWWKWWWWWWWCCCCCCCWWWWWWWKWWK", "KWWKWWWWWWWWCCCCCWWWWWWWWKWWK", "KWWWKWWWWWWWCCCCCWWWWWWWKWWWK", ".KWWKWWWWWWKWWWWWKWWWWWWKWWK.", ".KWWKWWWWWKWWWWWWWKWWWWWKWWK.", ".KWWW44444KWWWWWWWK33333WWWK.", "..KWW444444WWWWWWW333333WWK..", "..KK4444444WWWWWWW3333333KK..", "...K4444444WWWWWWW3333333K...", "....K4444444WWWWW3333333K....", ".....KK44444KKKKK33333KK.....", "......KK44WWWWWWWWW33KK......", "........KKKWWWWWWWKKK........", "...........KKKKKKK..........."];
   // pixel sprites, one string per row ('#' = lit pixel)
   var SPR = {
     // color sprites: K ink, W white, Y gold, O orange, R red, B blue, P purple, G green, k pink, D dark
@@ -207,6 +178,8 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     home:    ['...#...','..###..','.#####.','#######','.##.##.','.##.##.','.##.##.'],
     next:    ['...#...','...##..','######.','#######','######.','...##..','...#...'],
     again:   ['..####.#.','.##...##.','##...###.','##.......','##.......','##.....##','.##...##.','..#####..'],
+    pent:    ['......#......','....#####....','...#######...','..#########..','#############','#############','.###########.','.###########.','.###########.','..#########..','..#########..','..#########..'],
+    pento:   ['......#......','....##.##....','...#.....#...','..#.......#..','##.........##','#...........#','.#.........#.','.#.........#.','.#.........#.','..#.......#..','..#.......#..','..#########..'],
     patch:   ['....#....','...###...','..#####..','.#######.','#########','.#######.','.#######.','..#####..','..#####..'],
     slot:    ['....#....','...#.#...','..#...#..','.#.....#.','#.......#','.#.....#.','.#.....#.','..#...#..','..#####..'],
     ok:      ['......#','.....##','#...##.','##.##..','.###...','..#....'],
@@ -266,69 +239,52 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     g.innerHTML = svg(icon, 4); g.setAttribute('aria-label', label); g.classList.remove('wait'); g.tabIndex = 0;
   }
 
-  // ---- title ----
-  // attract mode: the title types itself, then a sample card answers itself, on a loop until start is pressed
-  var logo = document.querySelector('.logo'), start = $('start'), attractT, typed = false, starting = false;
-  var demos = [], di = 0;
-  LEVELS.forEach(function (Lv) { Lv.items.forEach(function (x) { if (x.ex.length <= 52) demos.push(x); }); });
-  demos = shuffle(demos);
-  function retype() { logo.classList.remove('on'); void logo.offsetWidth; logo.classList.add('on'); }
-  function attract(demo) {
-    clearTimeout(attractT);
-    if (cab.dataset.v !== 'title') return;
-    $('v-title').classList.toggle('demo', demo); flick();
-    if (demo) {
-      var it = demos[di++ % demos.length];
-      $('dq').className = size(it); $('dq').innerHTML = sentence(it);
-      attractT = setTimeout(function () { $('dq').innerHTML = sentence(it, true); flick(); attractT = setTimeout(function () { attract(false); }, 2600); }, 2200);
-    } else { retype(); attractT = setTimeout(function () { attract(true); }, 4800); }
-  }
-  // type SPACE only once the arcade font is in, so letters never appear in a stand-in font
-  function firstType() { if (typed) return; typed = true; logo.classList.add('on'); attractT = setTimeout(function () { attract(true); }, 4800); }
-  try { document.fonts.load('34px "Press Start 2P"').then(firstType, firstType); } catch (e) { firstType(); }
-  setTimeout(firstType, 2500);
-  function nudge() { start.classList.remove('nudge'); void start.offsetWidth; start.classList.add('nudge'); setTimeout(function () { start.classList.remove('nudge'); }, 450); }
-  start.addEventListener('click', function () {
-    if (cab.dataset.v !== 'title' || starting) return; starting = true; clearTimeout(attractT);
-    start.classList.add('press');
-    setTimeout(function () { start.classList.remove('press'); starting = false; powerOn(); }, 160);
-  });
-  function powerOn() { cab.classList.remove('poweron'); void cab.offsetWidth; cab.classList.add('poweron'); select(); }
-
   // ---- level select ----
   CATS.forEach(function (c) {
     var b = document.createElement('button'); b.type = 'button'; b.className = 'key cat' + (c.soon ? ' soon' : ''); b.id = 't-' + c.id;
     b.style.setProperty('--c', HUE[c.id]); if (c.soon) b.disabled = true;
     b.innerHTML = '<span>' + num(keep(esc(c.name))) + '</span><span class="patch">' + svg('slot', 2) + '</span>';
-    b.addEventListener('click', function () { if (cab.dataset.v === 'title') nudge(); else if (!c.soon) play(c.id); });
+    b.addEventListener('click', function () { if (!c.soon) play(c.id); });
     $('p-select').appendChild(b);
   });
-  function ball(fresh) {   // the earned patches, in the order they were earned, fill the rim clockwise from the top
-    var fill = { W: '#EAFBF0', C: cleared.length >= 5 ? '#FF5A5F' : '#1C3526' }, paths = {};
-    for (var i = 1; i <= 5; i++) fill[i] = cleared[i - 1] ? HUE[cleared[i - 1]] : '#1C3526';
-    BALL.forEach(function (r, y) {
-      for (var x = 0; x < r.length; x++) {
-        var ch = r[x]; if (ch === '.' || ch === 'K') continue;
-        var s = x; while (x + 1 < r.length && r[x + 1] === ch) x++;
-        paths[ch] = (paths[ch] || '') + 'M' + s + ' ' + y + 'h' + (x - s + 1) + 'v1h-' + (x - s + 1) + 'z';
-      }
+  // the board: the boss pentagon in the middle, five slots around it clockwise from the top
+  var slots = [0, 1, 2, 3, 4].map(function (k) { var a = (-90 + 72 * k) * Math.PI / 180; return [50 + 33 * Math.cos(a), 50 + 33 * Math.sin(a)]; });
+  function board() {
+    var html = '<div class="p boss-p" style="left:50%;top:50%">' + svg('pent', 4) + '</div><span class="lock">' + svg('lock', 3) + '</span>';
+    slots.forEach(function (xy, k) {
+      var id = cleared[k];
+      html += '<div class="p' + (id ? ' on' : '') + (id && id === fresh ? ' pending' : '') + '" id="slot' + k + '" style="left:' + xy[0] + '%;top:' + xy[1] + '%' + (id ? ';--c:' + HUE[id] : '') + '">' + svg(id ? 'pent' : 'pento', 3) + '</div>';
     });
-    var body = Object.keys(paths).map(function (k) {
-      var cls = k === 'C' ? 'center' : (k !== 'W' && cleared[k - 1] ? 'lit' : '') + (fresh && k === String(cleared.length) ? ' new' : '');
-      return '<path class="' + cls + '" fill="' + fill[k] + '" style="color:' + fill[k] + '" d="' + paths[k] + '"/>';
-    }).join('');
-    return '<svg class="px ball" viewBox="0 0 ' + BALL[0].length + ' ' + BALL.length + '" width="200" height="200" aria-hidden="true">' + body + '</svg>' + (cleared.length >= 5 ? '' : '<span class="lock">' + svg('lock', 3) + '</span>');
+    return html;
   }
+  // a newly earned pentagon flies from its key up into its slot
+  function fly(id) {
+    var from = $('t-' + id).lastChild.getBoundingClientRect(), slot = $('slot' + cleared.indexOf(id)), to = slot.getBoundingClientRect();
+    var f = document.createElement('div'); f.className = 'flyer'; f.style.setProperty('--c', HUE[id]); f.innerHTML = svg('pent', 3);
+    f.style.left = from.left + 'px'; f.style.top = from.top + 'px'; f.style.width = from.width + 'px';
+    document.body.appendChild(f);
+    var done = false;
+    function land() { if (done) return; done = true; f.remove(); slot.classList.remove('pending'); slot.classList.add('new'); }
+    requestAnimationFrame(function () { requestAnimationFrame(function () {
+      f.style.transform = 'translate(' + (to.left - from.left) + 'px,' + (to.top - from.top) + 'px) scale(' + (to.width / from.width) + ')';
+      f.style.transformOrigin = '0 0';
+    }); });
+    f.addEventListener('transitionend', land); setTimeout(land, 1100);
+  }
+
   $('boss-big').innerHTML = svg('boss', 10);
   function select() {
     var all = cleared.length >= 5;
-    $('lair').innerHTML = ball(); $('lair').setAttribute('aria-label', Math.min(cleared.length, 5) + ' of 5 patches');
-    fresh = null;
+    $('lair').innerHTML = board(); $('lair').setAttribute('aria-label', Math.min(cleared.length, 5) + ' of 5');
     CATS.forEach(function (c) { var d = cleared.indexOf(c.id) >= 0; $('t-' + c.id).classList.toggle('done', d); $('t-' + c.id).lastChild.innerHTML = svg(d ? 'patch' : 'slot', 2); });
     $('lair').classList.toggle('awake', all);
     go(all ? 'next' : null, 'Final boss');
     view('select');
+    if (fresh && cleared.indexOf(fresh) < 5) fly(fresh);
+    fresh = null;
   }
+
+  cab.classList.add('poweron'); select();
 
   // ---- play ----
   function nextItem() {   // walk a saved shuffled order per level, so replays bring new cards
@@ -385,20 +341,19 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     $('q').classList.toggle('missed', !ok); $('q').innerHTML = sentence(a, true); flick();
     if (document.activeElement && document.activeElement.blur) document.activeElement.blur();   // no leftover focus ring after a tap
   }
-  function clear() {
+  function clear() {   // a beaten category goes straight back to the board, where its pentagon flies in
     if (cleared.indexOf(L.id) < 0) { cleared.push(L.id); store.set('bsb-cleared', cleared); fresh = L.id; }
-    $('clear-ball').innerHTML = ball(fresh); $('clear-ball').classList.toggle('awake', cleared.length >= 5);
-    go('next', 'Levels'); view('clear');
+    select();
   }
+
 
   // ---- one tap target: the screen ----
   $('home').innerHTML = svg('home', 3);
   $('home').addEventListener('click', function (e) { e.stopPropagation(); select(); });
   $('flip').addEventListener('click', function () {
     var v = cab.dataset.v;
-    if (v === 'title') nudge();
-    else if (v === 'select') { if ($('lair').classList.contains('awake')) { go('next', 'Levels'); view('boss'); } }
-    else if (v === 'boss' || v === 'clear') select();
+    if (v === 'select') { if ($('lair').classList.contains('awake')) { go('next', 'Levels'); view('boss'); } }
+    else if (v === 'boss') select();
     else if (v === 'play' && answered) {
       if (missed) play(L.id);
       else if (wins >= WIN) clear();
