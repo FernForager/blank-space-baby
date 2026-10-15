@@ -1,0 +1,666 @@
+{
+ "deck": "Soccer Fanatics",
+ "primary": "Merriam-Webster — https://www.merriam-webster.com",
+ "secondary": "Dictionary.com, including its Collins British entries — https://www.dictionary.com",
+ "as_of": "2026-10-14",
+ "items": [
+  {
+   "w": "bicycle kick",
+   "means": "Backward somersault kick",
+   "ex": "The striker flipped upside down and scored with a bicycle kick",
+   "k": "move",
+   "src": "https://www.merriam-webster.com/dictionary/bicycle%20kick"
+  },
+  {
+   "w": "scissor kick",
+   "means": "Midair kick with a leg switch",
+   "ex": "She switched legs in midair and scored with a scissor kick",
+   "k": "move",
+   "src": "https://www.dictionary.com/browse/scissor-kick"
+  },
+  {
+   "w": "volley",
+   "means": "Kick before the ball lands",
+   "ex": "The defender kicked a volley out of the air before it could bounce",
+   "k": "move",
+   "src": "https://www.merriam-webster.com/dictionary/volley"
+  },
+  {
+   "w": "header",
+   "means": "Shot or pass made with the head",
+   "ex": "The captain jumped highest and scored a header off her forehead",
+   "k": "move",
+   "src": "https://www.merriam-webster.com/dictionary/header"
+  },
+  {
+   "w": "banana kick",
+   "means": "Kick that makes the ball curve",
+   "ex": "Dad’s banana kick curved so much it came back to him",
+   "k": "move",
+   "src": "https://www.merriam-webster.com/dictionary/banana%20kick"
+  },
+  {
+   "w": "backheel",
+   "means": "Kick backward with the heel",
+   "ex": "Facing away, the striker tapped a backheel to the teammate behind her",
+   "k": "move",
+   "src": "https://www.merriam-webster.com/dictionary/backheel"
+  },
+  {
+   "w": "cross",
+   "means": "Pass from the side to the middle",
+   "ex": "From near the sideline, the winger sent a cross to the striker’s head",
+   "k": "move",
+   "src": "https://www.merriam-webster.com/dictionary/cross"
+  },
+  {
+   "w": "nutmeg",
+   "means": "Pass it through a player’s legs",
+   "ex": "Grandma will nutmeg anyone who stands with their feet too wide apart",
+   "k": "move",
+   "src": "https://www.dictionary.com/browse/nutmeg"
+  },
+  {
+   "w": "stepover",
+   "means": "Fake by stepping over the ball",
+   "ex": "The winger faked with a stepover, swinging one foot around the ball",
+   "k": "move",
+   "src": "https://www.dictionary.com/browse/stepover"
+  },
+  {
+   "w": "dummy",
+   "means": "Fake pass or shot to fool you",
+   "ex": "The striker sold a dummy, pretending to shoot, then passed instead",
+   "k": "move",
+   "src": "https://www.dictionary.com/browse/dummy"
+  },
+  {
+   "w": "chip",
+   "means": "Shot lofted over a player",
+   "ex": "The keeper came out too far, so the striker hit a chip over her head",
+   "k": "move",
+   "src": "https://www.dictionary.com/browse/chip"
+  },
+  {
+   "w": "one-two",
+   "means": "Quick pass and instant return",
+   "ex": "The winger played a one-two, passing and getting it right back",
+   "k": "move",
+   "src": "https://www.dictionary.com/browse/one-two"
+  },
+  {
+   "w": "Panenka",
+   "means": "Gently chipped penalty",
+   "ex": "The captain took the penalty with a soft Panenka down the middle",
+   "k": "move",
+   "src": "https://www.dictionary.com/browse/panenka"
+  },
+  {
+   "w": "keepy-uppy",
+   "means": "Keeping the ball off the ground",
+   "ex": "Grandpa did keepy-uppy in the yard until the ball hit the window",
+   "k": "move",
+   "src": "https://www.dictionary.com/browse/keepy-uppy"
+  },
+  {
+   "w": "penalty kick",
+   "means": "Shot from 12 yards after a foul",
+   "ex": "The ref pointed to the spot 12 yards from goal and gave a penalty kick",
+   "k": "rules",
+   "src": "https://www.merriam-webster.com/dictionary/penalty%20kick"
+  },
+  {
+   "w": "corner kick",
+   "means": "Kick from a corner of the field",
+   "ex": "The defender knocked it out behind her own goal, so it’s a corner kick",
+   "k": "rules",
+   "src": "https://www.merriam-webster.com/dictionary/corner%20kick"
+  },
+  {
+   "w": "free kick",
+   "means": "Unchallenged kick after a foul",
+   "ex": "The ref blew for a foul at midfield and gave the team a free kick",
+   "k": "rules",
+   "src": "https://www.merriam-webster.com/dictionary/free%20kick"
+  },
+  {
+   "w": "red card",
+   "means": "Card that sends a player off",
+   "ex": "After her second yellow, the defender got a red card and had to leave",
+   "k": "rules",
+   "src": "https://www.merriam-webster.com/dictionary/red%20card"
+  },
+  {
+   "w": "yellow card",
+   "means": "Card for an official warning",
+   "ex": "The ref showed the captain a yellow card as an official warning",
+   "k": "rules",
+   "src": "https://www.merriam-webster.com/dictionary/yellow%20card"
+  },
+  {
+   "w": "offside",
+   "means": "Illegally ahead of the ball",
+   "ex": "The goal was waved off because the striker was offside",
+   "k": "rules",
+   "src": "https://www.merriam-webster.com/dictionary/offside"
+  },
+  {
+   "w": "handball",
+   "means": "Illegal touch with a hand",
+   "ex": "The defender blocked the shot with her arm, so the ref called handball",
+   "k": "rules",
+   "src": "https://www.dictionary.com/browse/handball"
+  },
+  {
+   "w": "dive",
+   "means": "Faking a trip to win a foul",
+   "ex": "The ref ignored the striker’s dive because nobody had touched her",
+   "k": "rules",
+   "src": "https://www.dictionary.com/browse/dive"
+  },
+  {
+   "w": "keeper",
+   "means": "The goalkeeper, for short",
+   "ex": "The keeper dove and caught the shot cleanly with both hands",
+   "k": "role",
+   "src": "https://www.merriam-webster.com/dictionary/keeper"
+  },
+  {
+   "w": "striker",
+   "means": "Forward whose job is scoring",
+   "ex": "The striker’s only job is to score, so she never helps on defense",
+   "k": "role",
+   "src": "https://www.merriam-webster.com/dictionary/striker"
+  },
+  {
+   "w": "center forward",
+   "means": "Middle player of the front line",
+   "ex": "Grandma played center forward, right in the middle of the front line",
+   "k": "role",
+   "src": "https://www.merriam-webster.com/dictionary/center%20forward"
+  },
+  {
+   "w": "winger",
+   "means": "Attacker who plays out wide",
+   "ex": "The coach put the fastest attacker way out wide to play winger",
+   "k": "role",
+   "src": "https://www.merriam-webster.com/dictionary/winger"
+  },
+  {
+   "w": "midfielder",
+   "means": "Plays in the middle of the field",
+   "ex": "As a midfielder, Mom runs between both penalty areas all game",
+   "k": "role",
+   "src": "https://www.merriam-webster.com/dictionary/midfielder"
+  },
+  {
+   "w": "fullback",
+   "means": "Defender who plays out wide",
+   "ex": "The fullback sprinted up the sideline from the back line to join the attack",
+   "k": "role",
+   "src": "https://www.merriam-webster.com/dictionary/fullback"
+  },
+  {
+   "w": "sweeper",
+   "means": "Lone defender behind the line",
+   "ex": "The sweeper roams behind the other defenders, just ahead of the keeper",
+   "k": "role",
+   "src": "https://www.merriam-webster.com/dictionary/sweeper"
+  },
+  {
+   "w": "playmaker",
+   "means": "Player who runs a team’s attack",
+   "ex": "Every attack runs through the playmaker, whose passes set up the goals",
+   "k": "role",
+   "src": "https://www.merriam-webster.com/dictionary/playmaker"
+  },
+  {
+   "w": "false nine",
+   "means": "Forward who drops into midfield",
+   "ex": "As a false nine, the forward keeps dropping into midfield",
+   "k": "role",
+   "src": "https://www.dictionary.com/browse/false-nine"
+  },
+  {
+   "w": "target man",
+   "means": "Tall forward who wins high balls",
+   "ex": "Every high cross goes to the target man, the tallest one on the team",
+   "k": "role",
+   "src": "https://www.dictionary.com/browse/target-man"
+  },
+  {
+   "w": "gaffer",
+   "means": "The team’s coach or manager",
+   "ex": "The gaffer made three subs at halftime and then sat back down",
+   "k": "role",
+   "src": "https://www.dictionary.com/browse/gaffer"
+  },
+  {
+   "w": "hat trick",
+   "means": "Three goals by one player",
+   "ex": "After her third goal of the game, the striker’s hat trick was complete",
+   "k": "score",
+   "src": "https://www.merriam-webster.com/dictionary/hat%20trick"
+  },
+  {
+   "w": "clean sheet",
+   "means": "Game where you allow no goals",
+   "ex": "Zero goals got past the keeper, so she earned her first clean sheet",
+   "k": "score",
+   "src": "https://www.merriam-webster.com/dictionary/clean%20sheet"
+  },
+  {
+   "w": "own goal",
+   "means": "Goal scored on your own team",
+   "ex": "The defender sneezed while clearing it and scored the first own goal",
+   "k": "score",
+   "src": "https://www.merriam-webster.com/dictionary/own%20goal"
+  },
+  {
+   "w": "equalizer",
+   "means": "Goal that ties the game",
+   "ex": "Down 1–0, the captain scored the equalizer and Dad dropped his coffee",
+   "k": "score",
+   "src": "https://www.merriam-webster.com/dictionary/equalizer"
+  },
+  {
+   "w": "nil",
+   "means": "Zero, in a soccer score",
+   "ex": "The other team lost 4–nil and still went out for ice cream",
+   "k": "score",
+   "src": "https://www.merriam-webster.com/dictionary/nil"
+  },
+  {
+   "w": "assist",
+   "means": "Pass that sets up a goal",
+   "ex": "The winger did not score, but she got an assist on both goals",
+   "k": "score",
+   "src": "https://www.dictionary.com/browse/assist"
+  },
+  {
+   "w": "shoot-out",
+   "means": "Tiebreaker of shots at the goal",
+   "ex": "Still tied after extra time, the game was decided by the shoot-out",
+   "k": "game",
+   "src": "https://www.merriam-webster.com/dictionary/shoot-out"
+  },
+  {
+   "w": "sudden death",
+   "means": "Next score wins the tied game",
+   "ex": "In sudden death, the very next goal wins the game",
+   "k": "game",
+   "src": "https://www.merriam-webster.com/dictionary/sudden%20death"
+  },
+  {
+   "w": "golden goal",
+   "means": "First extra-time goal wins it",
+   "ex": "The first goal in extra time was a golden goal, so everyone went home",
+   "k": "game",
+   "src": "https://www.dictionary.com/browse/golden-goal"
+  },
+  {
+   "w": "injury time",
+   "means": "Minutes added for lost time",
+   "ex": "The ref added three minutes of injury time after the long delay",
+   "k": "game",
+   "src": "https://www.merriam-webster.com/dictionary/injury%20time"
+  },
+  {
+   "w": "stoppage time",
+   "means": "Another name for injury time",
+   "ex": "The equalizer came in the fourth minute of stoppage time",
+   "k": "game",
+   "src": "https://www.dictionary.com/browse/stoppage-time"
+  },
+  {
+   "w": "friendly",
+   "means": "Game outside any league or cup",
+   "ex": "It was only a friendly, so no points or trophies were on the line",
+   "k": "game",
+   "src": "https://www.merriam-webster.com/dictionary/friendly"
+  },
+  {
+   "w": "derby",
+   "means": "Game between local rivals",
+   "ex": "The derby against the team from across town sold out in one day",
+   "k": "game",
+   "src": "https://www.merriam-webster.com/dictionary/derby"
+  },
+  {
+   "w": "futsal",
+   "means": "Indoor soccer, five per team",
+   "ex": "On rainy days the team plays futsal in the gym, five players per side",
+   "k": "game",
+   "src": "https://www.merriam-webster.com/dictionary/futsal"
+  },
+  {
+   "w": "howler",
+   "means": "A ridiculous blunder",
+   "ex": "The keeper made a howler and let a slow roller go through her legs",
+   "k": "lingo",
+   "src": "https://www.merriam-webster.com/dictionary/howler"
+  },
+  {
+   "w": "sitter",
+   "means": "Easy chance to score",
+   "ex": "The striker missed a sitter from two feet out and stared at the sky",
+   "k": "lingo",
+   "src": "https://www.merriam-webster.com/dictionary/sitter"
+  },
+  {
+   "w": "tap-in",
+   "means": "Easy goal from very close",
+   "ex": "The ball rolled across the empty goal and the striker scored a tap-in",
+   "k": "lingo",
+   "src": "https://www.dictionary.com/browse/tap-in"
+  },
+  {
+   "w": "clinical",
+   "means": "Precise and never wasteful",
+   "ex": "The striker was clinical and scored on all three of her shots",
+   "k": "lingo",
+   "src": "https://www.merriam-webster.com/dictionary/clinical"
+  },
+  {
+   "w": "set piece",
+   "means": "Planned team play, like a corner",
+   "ex": "The coach drew a new set piece for corners on a napkin",
+   "k": "lingo",
+   "src": "https://www.merriam-webster.com/dictionary/set%20piece"
+  },
+  {
+   "w": "tiki-taka",
+   "means": "Style of quick, short passes",
+   "ex": "With tiki-taka, the team kept the ball for ages with short passes",
+   "k": "lingo",
+   "src": "https://www.dictionary.com/browse/tiki-taka"
+  },
+  {
+   "w": "gegenpress",
+   "means": "Pressing right after losing it",
+   "ex": "After losing the ball, the team used the gegenpress to win it back",
+   "k": "lingo",
+   "src": "https://www.dictionary.com/browse/gegenpress"
+  },
+  {
+   "w": "relegated",
+   "means": "Sent down to a lower league",
+   "ex": "After finishing last, the team was relegated to a lower division",
+   "k": "lingo",
+   "src": "https://www.dictionary.com/browse/relegate"
+  }
+ ],
+ "groups": [
+  [
+   "volley",
+   "bicycle kick",
+   "scissor kick"
+  ],
+  [
+   "banana kick",
+   "cross"
+  ],
+  [
+   "stepover",
+   "dummy"
+  ],
+  [
+   "chip",
+   "Panenka"
+  ],
+  [
+   "free kick",
+   "penalty kick"
+  ],
+  [
+   "striker",
+   "center forward",
+   "target man",
+   "false nine"
+  ],
+  [
+   "playmaker",
+   "false nine",
+   "midfielder"
+  ],
+  [
+   "sweeper",
+   "fullback"
+  ],
+  [
+   "shoot-out",
+   "sudden death",
+   "golden goal"
+  ],
+  [
+   "injury time",
+   "stoppage time"
+  ],
+  [
+   "sitter",
+   "tap-in"
+  ],
+  [
+   "howler",
+   "own goal"
+  ],
+  [
+   "sitter",
+   "howler"
+  ]
+ ],
+ "cut": [
+  {
+   "w": "rabona",
+   "why": "Not in M-W or Dictionary.com/Collins in a soccer sense"
+  },
+  {
+   "w": "brace",
+   "why": "Both sources have only “a pair,” no two-goals sense"
+  },
+  {
+   "w": "park the bus",
+   "why": "Not in M-W or Dictionary.com/Collins in a soccer sense"
+  },
+  {
+   "w": "Cruyff turn",
+   "why": "Not in M-W or Dictionary.com/Collins in a soccer sense, also a proper name"
+  },
+  {
+   "w": "top bins",
+   "why": "Not in M-W or Dictionary.com/Collins in a soccer sense"
+  },
+  {
+   "w": "worldie",
+   "why": "Not in M-W or Dictionary.com/Collins in a soccer sense"
+  },
+  {
+   "w": "through ball",
+   "why": "Not in M-W or Dictionary.com/Collins in a soccer sense"
+  },
+  {
+   "w": "offside trap",
+   "why": "Not in M-W or Dictionary.com/Collins in a soccer sense"
+  },
+  {
+   "w": "kit",
+   "why": "No team-uniform sense in either source"
+  },
+  {
+   "w": "boots",
+   "why": "No soccer-shoe sense in either source"
+  },
+  {
+   "w": "promotion",
+   "why": "No league sense, only in examples"
+  },
+  {
+   "w": "treble",
+   "why": "No trophies sense, only in examples"
+  },
+  {
+   "w": "double",
+   "why": "M-W has no two-titles sense"
+  },
+  {
+   "w": "wall",
+   "why": "M-W has no free-kick wall sense"
+  },
+  {
+   "w": "simulation",
+   "why": "M-W has no soccer sense, used dive"
+  },
+  {
+   "w": "VAR",
+   "why": "Not in M-W as video assistant referee"
+  },
+  {
+   "w": "wonder goal",
+   "why": "Not in M-W or Dictionary.com/Collins in a soccer sense"
+  },
+  {
+   "w": "screamer",
+   "why": "Sports sense is baseball only, soccer in examples only"
+  },
+  {
+   "w": "poacher",
+   "why": "Striker sense in examples only"
+  },
+  {
+   "w": "box-to-box",
+   "why": "Not in M-W or Dictionary.com/Collins in a soccer sense"
+  },
+  {
+   "w": "back of the net",
+   "why": "Not in M-W or Dictionary.com/Collins in a soccer sense"
+  },
+  {
+   "w": "upper 90",
+   "why": "Not in M-W or Dictionary.com/Collins in a soccer sense"
+  },
+  {
+   "w": "number 10",
+   "why": "Not a dictionary entry"
+  },
+  {
+   "w": "woodwork",
+   "why": "Goal-frame sense in examples only"
+  },
+  {
+   "w": "golazo",
+   "why": "Not in M-W or Dictionary.com/Collins in a soccer sense"
+  },
+  {
+   "w": "give-and-go",
+   "why": "Names basketball and hockey only"
+  },
+  {
+   "w": "wingback",
+   "why": "American football sense only"
+  },
+  {
+   "w": "extra time",
+   "why": "Collins sense is the same as injury time, confusing next to golden goal"
+  },
+  {
+   "w": "goalkeeper",
+   "why": "Kept keeper instead, same meaning"
+  },
+  {
+   "w": "tackle",
+   "why": "M-W sense names football, not soccer"
+  },
+  {
+   "w": "juggle",
+   "why": "No soccer sense, used keepy-uppy"
+  },
+  {
+   "w": "flop",
+   "why": "No sports sense, used dive"
+  },
+  {
+   "w": "boot",
+   "why": "Plain “kick,” too basic"
+  },
+  {
+   "w": "booked",
+   "why": "Rarely used by American fans"
+  },
+  {
+   "w": "libero",
+   "why": "Rarely used, same as sweeper"
+  },
+  {
+   "w": "terrace",
+   "why": "Rarely used by American fans"
+  },
+  {
+   "w": "kickoff",
+   "why": "Too basic, trimmed so the deck is for fanatics"
+  },
+  {
+   "w": "dribble",
+   "why": "Too basic, trimmed so the deck is for fanatics"
+  },
+  {
+   "w": "trap",
+   "why": "Too basic, trimmed so the deck is for fanatics"
+  },
+  {
+   "w": "throw-in",
+   "why": "Too basic, trimmed so the deck is for fanatics"
+  },
+  {
+   "w": "goal kick",
+   "why": "Too basic, trimmed so the deck is for fanatics"
+  },
+  {
+   "w": "goalpost",
+   "why": "Too basic, trimmed so the deck is for fanatics"
+  },
+  {
+   "w": "cleats",
+   "why": "Too basic, trimmed so the deck is for fanatics"
+  },
+  {
+   "w": "shin guards",
+   "why": "Too basic, trimmed so the deck is for fanatics"
+  },
+  {
+   "w": "pitch",
+   "why": "Too basic, trimmed so the deck is for fanatics"
+  },
+  {
+   "w": "touchline",
+   "why": "Too basic, trimmed so the deck is for fanatics"
+  },
+  {
+   "w": "penalty area",
+   "why": "Too basic, trimmed so the deck is for fanatics"
+  },
+  {
+   "w": "goalmouth",
+   "why": "Too basic, trimmed so the deck is for fanatics"
+  },
+  {
+   "w": "wave",
+   "why": "Too basic, trimmed so the deck is for fanatics"
+  },
+  {
+   "w": "sub",
+   "why": "Too basic, trimmed so the deck is for fanatics"
+  },
+  {
+   "w": "underdog",
+   "why": "Too basic, trimmed so the deck is for fanatics"
+  },
+  {
+   "w": "upset",
+   "why": "Too basic, trimmed so the deck is for fanatics"
+  },
+  {
+   "w": "draw",
+   "why": "Too basic, trimmed so the deck is for fanatics"
+  }
+ ]
+}
