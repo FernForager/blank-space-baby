@@ -48,9 +48,9 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .marquee h1 .sp::after { content: ""; position: absolute; left: 0; right: 0; bottom: -7px; height: 3px;
   background: repeating-linear-gradient(90deg, var(--glow) 0 7px, transparent 7px 11px); box-shadow: 0 0 6px var(--glow); }
 .cab[data-v="title"] .marquee { background: #0B1710; box-shadow: inset 0 0 0 3px #000, 0 3px 0 var(--body-dark); }
-.cab[data-v="title"] .marquee h1 { opacity: .07; text-shadow: none; }
+.cab[data-v="title"] .marquee h1 { opacity: 0; }
 .cab.poweron .marquee h1 { animation: power .6s steps(6); }
-@keyframes power { 0% { opacity: .07; } 17% { opacity: 1; } 34% { opacity: .15; } 51% { opacity: 1; } 68% { opacity: .4; } 100% { opacity: 1; } }
+@keyframes power { 0% { opacity: 0; } 17% { opacity: 1; } 34% { opacity: .15; } 51% { opacity: 1; } 68% { opacity: .4; } 100% { opacity: 1; } }
 
 /* screen in its bezel */
 .bezel { flex: 1 1 auto; min-height: 0; max-height: 520px; border-radius: 20px; padding: 10px; background: var(--bezel); box-shadow: 0 3px 0 var(--body-dark), inset 0 0 0 2px #222; }
