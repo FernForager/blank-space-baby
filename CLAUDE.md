@@ -12,6 +12,7 @@ A fill-in-the-blank arcade word game for a youth girls' soccer team (Seattle Cel
 - `main` is the live site. **Never push to `main` without Morg's OK.** Work on a branch, show him, then merge when he says so.
 - He wants directness, honest pushback, short answers when short is right, and small fixes done now rather than later.
 - Keep usage lean.
+- No semicolons in anything you write for him: replies, docs, code comments, commit messages. He prefers em dashes, colons, commas or periods.
 
 ## How to build and check
 ```
