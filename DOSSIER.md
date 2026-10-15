@@ -69,7 +69,7 @@ This repo is **public**. Never commit personal details: no last names, addresses
    - **Answer screen after a pick:** a lot of empty screen sits above the word on tall phones.
    - **Pixelify Sans's uppercase B:** it can read like a G, which is a font quirk. If Morg notices, consider a different body font. Get his OK first. The font is part of a look he approved.
    - **CRT icons:** the HUD's one-color icons are tiny (scale 2). Check they read.
-3. **Link preview for texting:** an `og:image` (a cabinet screenshot or title art, 1200×630) and an `og:title`, plus a tagline only if Morg writes one.
+3. **Link preview for texting:** done (`docs/og.png` from `tools/og.py`, plus `og:title`). Add an `og:description` only if Morg writes a tagline.
 
 ## 6. Open questions for Morg (don't decide for him)
 
@@ -108,6 +108,8 @@ This repo is **public**. Never commit personal details: no last names, addresses
 
 ## 9. Gotchas
 
+- **Playwright in the sandbox:** the Python package may be missing. Install the version that matches the preinstalled Chromium (`pip install playwright==1.56.0` for chromium-1194). Never run `playwright install`.
+- **Offline:** `docs/sw.js` serves the page network-first (3-second fallback to the saved copy) and everything else cache-first. Bump `CACHE` in it if a cached file other than the page ever needs replacing. When the game folds into HQ, check `sw.js` against HQ's own setup.
 - **Fonts in the sandbox:** Google Fonts may be blocked, so screenshots fall back to system fonts and look wrong. Install Press Start 2P and Pixelify Sans into `~/.fonts` from github.com/google/fonts before trusting screenshots.
 - **Two font fixes to keep:** Pixelify Sans draws 5 like an S and its "fi" ligature like an A, so keep digits in Press Start 2P and ligatures off. Check any new font for both problems.
 - **The Claude app's artifact viewer** adds its own title bar. That's not the game repeating its title. The real site has no such bar.

@@ -3,7 +3,7 @@
     python3 tools/sweep.py [cards_per_level] [width] [height]     # defaults: 60 402 744
 
 Checks each card: three different choices, the answer among them, a blank in the
-sentence, nothing overflowing the screen (front or back). Also prints how often the
+sentence, nothing overflowing the screen (before or after answering). Also prints how often the
 right answer lands in each slot (should be roughly even). Answers every card right,
 so it also walks through level-beaten screens.
 """
@@ -20,20 +20,20 @@ async def main():
         b = await p.chromium.launch(); pg = await b.new_page(viewport={'width': W, 'height': H})
         errs = []; pg.on('pageerror', lambda e: errs.append(str(e)))
         await pg.route('http://bsb.test/', lambda r: r.fulfill(body=HTML, content_type='text/html')); await pg.goto('http://bsb.test/')
-        await pg.click('#start')
+        await pg.click('#coin'); await pg.wait_for_timeout(600)
         levels = await pg.evaluate("[...document.querySelectorAll('#p-select .arc')].map(b => b.id.slice(2))")
         for lv in levels:
             await pg.click('#t-' + lv); seen = collections.Counter(); slots = collections.Counter(); problems = []
             for i in range(N):
-                st = await pg.evaluate("""() => ({w: document.getElementById('w').textContent, ch: [...document.querySelectorAll('.choice')].map(b => b.dataset.w),
+                st = await pg.evaluate("""() => ({w: document.getElementById('q').dataset.w, ch: [...document.querySelectorAll('.choice')].map(b => b.dataset.w),
                     blank: !!document.querySelector('#q .blank'),
                     ov: document.getElementById('q').scrollWidth > document.getElementById('q').clientWidth + 1,
-                    fh: document.querySelector('.front').scrollHeight > document.querySelector('.front').clientHeight + 1})""")
+                    fh: document.querySelector('.face').scrollHeight > document.querySelector('.face').clientHeight + 1})""")
                 seen[st['w']] += 1
                 if len(set(st['ch'])) != 3 or st['w'] not in st['ch'] or not st['blank'] or st['ov'] or st['fh']: problems.append(st)
                 slots[st['ch'].index(st['w'])] += 1
                 await pg.click(f'.choice[data-w="{st["w"]}"]')
-                if await pg.evaluate("document.getElementById('back').scrollHeight > document.getElementById('back').clientHeight + 1"):
+                if await pg.evaluate("document.querySelector('.face').scrollHeight > document.querySelector('.face').clientHeight + 1 || document.getElementById('q').scrollWidth > document.getElementById('q').clientWidth + 1"):
                     problems.append(('answer screen overflows', st['w']))
                 await pg.click('#flip')
                 if await pg.evaluate("document.getElementById('cab').dataset.v") == 'clear':
