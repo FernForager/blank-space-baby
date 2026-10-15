@@ -47,7 +47,7 @@ This repo is **public**. Never commit personal details: no last names, addresses
    ```
    Then look at the screenshots yourself and zoom in on details.
 3. **Open a pull request.** Morg taps **Merge** in the GitHub app or Safari. That merge is his OK to go live.
-4. **Preview links (do this first, see §5).** Until Cloudflare Pages is connected, Morg can't play a branch before merging. Until then, attach screenshots to the pull request, or publish a preview if your session can.
+4. **Preview links.** Cloudflare Pages deploys every pushed branch to `https://<branch>.blank-space-baby.pages.dev`. Put that link in the pull request and in your reply so Morg can play it before merging.
 
 ## 4. How the code works
 
@@ -62,7 +62,7 @@ This repo is **public**. Never commit personal details: no last names, addresses
 
 ## 5. First session: do these first
 
-1. **Cloudflare Pages preview links.** Morg has a Cloudflare account. Connect this repo with the build command left empty and `docs` as the output directory. Every branch then gets its own preview address, and `main` gets one too, though GitHub Pages stays the official link. Walk him through it in iPhone Safari, one step at a time: Workers & Pages → Create → Pages → Connect to Git. Once it works, add the preview step to `CLAUDE.md`.
+1. **Cloudflare Pages preview links.** Done Oct 15, 2026. See §3, step 4.
 2. **Ask Morg what bugs him most** after playing v36 on the real link, then do a polish pass on that. Known soft spots:
    - **Soccer ball icon:** reads as "ball-ish." Try a bigger grid or a different symbol (whistle, cleat), shown side by side.
    - **Boss sprite:** placeholder art.
