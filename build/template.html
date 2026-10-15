@@ -60,15 +60,14 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .pg { display: block; width: 100%; height: auto; overflow: visible; }
 .pg polygon { fill: currentColor; stroke: currentColor; stroke-width: 2; stroke-linejoin: round; }
 .pg.o polygon { fill: none; stroke-width: 6; }
-.board .p.on { color: var(--c); filter: drop-shadow(0 0 5px var(--c)); }
+.board .p.on { color: var(--text); filter: drop-shadow(0 0 5px rgba(92,240,154,.8)); }   /* a soccer ball: one color, no rainbow */
 .board .p.on.pending { visibility: hidden; }
 .board .p.new svg { animation: bump .45s steps(3); }   /* animate the shape, not the slot, so it stays centered */
-.board .boss-p { width: 31%; color: #4A2328; }
-.board .lock { position: absolute; left: 50%; top: 52%; transform: translate(-50%, -50%); color: var(--gold); filter: drop-shadow(0 0 5px rgba(247,201,72,.7)); }
-.board.awake .boss-p { color: var(--no); filter: drop-shadow(0 0 6px var(--no)) drop-shadow(0 0 14px rgba(255,90,95,.6)); }
+.board .lock { position: absolute; left: 50%; top: 53%; transform: translate(-50%, -50%); color: #3E7A57; }
+.board.awake .boss-p { color: var(--text); filter: drop-shadow(0 0 6px rgba(92,240,154,.9)) drop-shadow(0 0 14px rgba(92,240,154,.5)); }
 .board.awake .boss-p svg { animation: bob 1.2s steps(2) infinite; }
 .board.awake .lock { display: none; }
-.flyer { position: fixed; z-index: 10; pointer-events: none; transition: transform .75s cubic-bezier(.3, .1, .2, 1); filter: drop-shadow(0 0 6px var(--c)); color: var(--c); }
+.flyer { position: fixed; z-index: 10; pointer-events: none; transition: transform .75s cubic-bezier(.3, .1, .2, 1); filter: drop-shadow(0 0 6px rgba(92,240,154,.8)); color: var(--text); }
 /* the boss lair */
 #v-select, #v-boss { align-items: center; justify-content: center; gap: 22px; }
 .boss { position: relative; color: #3A5546; }
@@ -121,7 +120,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .cat { min-height: 42px; font-size: 16px; line-height: 1.05; text-align: left; padding: 4px 10px 4px 12px; display: flex; align-items: center; justify-content: space-between; gap: 6px; box-shadow: 0 4px 0 var(--btn-edge), 0 5px 8px rgba(0,0,0,.25); }
 .cat:active:not(:disabled) { transform: translateY(3px); box-shadow: 0 1px 0 var(--btn-edge); }
 .cat .patch { flex: none; width: 18px; color: var(--btn-edge); }
-.cat.done .patch { color: var(--c); filter: drop-shadow(0 0 3px var(--c)); }
+.cat.done .patch { color: var(--btn-ink); }   /* a black patch, like a real ball */
 .cat.soon { opacity: .28; }
 .cat.soon:disabled { cursor: default; }
 .choices { flex-direction: column; gap: 10px; }
@@ -166,8 +165,6 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 <script>
 (function () {
   var LEVELS = __LEVELS__, CATS = __CATS__;
-  // each category's patch color
-  var HUE = { alpha: '#4DA3FF', parents: '#FF8A3D', grand: '#FF8FC8', swift: '#B46CFF', tech: '#C9CED6', grade7: '#2EC4B6', soccer: '#45BE76', wc: '#5FD3F3', sea: '#9BE15D', epl: '#F7C948' };
   // pixel sprites, one string per row ('#' = lit pixel)
   var SPR = {
     // color sprites: K ink, W white, Y gold, O orange, R red, B blue, P purple, G green, k pink, D dark
@@ -243,7 +240,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   // ---- level select ----
   CATS.forEach(function (c) {
     var b = document.createElement('button'); b.type = 'button'; b.className = 'key cat' + (c.soon ? ' soon' : ''); b.id = 't-' + c.id;
-    b.style.setProperty('--c', HUE[c.id]); if (c.soon) b.disabled = true;
+    if (c.soon) b.disabled = true;
     b.innerHTML = '<span>' + num(keep(esc(c.name))) + '</span><span class="patch">' + pent(true) + '</span>';
     b.addEventListener('click', function () { if (!c.soon) play(c.id); });
     $('p-select').appendChild(b);
@@ -251,17 +248,17 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   // the board: the boss pentagon in the middle, five slots around it clockwise from the top
   var slots = [0, 1, 2, 3, 4].map(function (k) { var a = (-90 + 72 * k) * Math.PI / 180; return [50 + 33 * Math.cos(a), 50 + 33 * Math.sin(a)]; });
   function board() {
-    var html = '<div class="p boss-p" style="left:50%;top:50%">' + pent() + '</div><span class="lock">' + svg('lock', 3) + '</span>';
+    var html = '<div class="p boss-p" style="left:50%;top:50%">' + pent(cleared.length < 5) + '<span class="lock">' + svg('lock', 3) + '</span></div>';
     slots.forEach(function (xy, k) {
       var id = cleared[k];
-      html += '<div class="p' + (id ? ' on' : '') + (id && id === fresh ? ' pending' : '') + '" id="slot' + k + '" style="left:' + xy[0] + '%;top:' + xy[1] + '%' + (id ? ';--c:' + HUE[id] : '') + '">' + pent(!id) + '</div>';
+      html += '<div class="p' + (id ? ' on' : '') + (id && id === fresh ? ' pending' : '') + '" id="slot' + k + '" style="left:' + xy[0] + '%;top:' + xy[1] + '%' + '">' + pent(!id) + '</div>';
     });
     return html;
   }
   // a newly earned pentagon flies from its key up into its slot
   function fly(id) {
     var from = $('t-' + id).lastChild.getBoundingClientRect(), slot = $('slot' + cleared.indexOf(id)), to = slot.getBoundingClientRect();
-    var f = document.createElement('div'); f.className = 'flyer'; f.style.setProperty('--c', HUE[id]); f.innerHTML = pent();
+    var f = document.createElement('div'); f.className = 'flyer'; f.innerHTML = pent();
     f.style.left = from.left + 'px'; f.style.top = from.top + 'px'; f.style.width = from.width + 'px';
     document.body.appendChild(f);
     var done = false;
