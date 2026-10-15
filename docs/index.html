@@ -69,11 +69,14 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .logo { margin: 0 0 10px; font-family: var(--pixel); font-weight: 400; font-size: 34px; line-height: 1.5; text-align: center; color: #fff;
   text-shadow: 0 0 4px rgba(255,255,255,.7), 0 0 12px var(--glow), 0 0 26px rgba(92,240,154,.5); }
 .logo span { display: block; }
-.logo .type { position: relative; display: block; width: 5ch; margin: 0 auto; }
-.logo .type b { font-weight: 400; display: block; overflow: hidden; white-space: nowrap; width: 0; animation: type .9s steps(5) .5s forwards; }
+.logo .type { position: relative; display: table; margin: 0 auto; }
+.logo .type b { font-weight: 400; visibility: hidden; }
+.logo.on .type b { animation: show 0s .5s forwards; }
+.logo.on .type b:nth-child(2) { animation-delay: .68s; } .logo.on .type b:nth-child(3) { animation-delay: .86s; }
+.logo.on .type b:nth-child(4) { animation-delay: 1.04s; } .logo.on .type b:nth-child(5) { animation-delay: 1.22s; }
 .logo .type::after { content: ""; position: absolute; left: 0; right: 0; bottom: 4px; height: 4px;
   background: repeating-linear-gradient(90deg, var(--glow) 0 12px, transparent 12px 18px); box-shadow: 0 0 6px var(--glow); }
-@keyframes type { to { width: 5ch; } }
+@keyframes show { to { visibility: visible; } }
 
 /* select: the boss lair */
 #v-select, #v-boss, #v-clear { align-items: center; justify-content: center; gap: 22px; }
@@ -172,13 +175,13 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   :root { --deck-h: 112px; } .choice { font-size: 19px; min-height: 50px; } .start { width: 76px; height: 76px; } .sentence { font-size: 22px; } .sentence.long { font-size: 20px; } .sentence.longer { font-size: 18px; }
   .word { font-size: 28px; } .logo { font-size: 28px; } }
 @media (prefers-reduced-motion: reduce) { .key, .choice .def { transition: none; } .pips i.bump, .choice.wrong, .flick, .blank, .go, .boss, .big-icon, .start, .pips i.new, .cab.poweron .marquee h1 { animation: none; }
-  .logo .type b { animation: none; width: 5ch; } }
+  .logo .type b, .logo.on .type b { animation: none; visibility: visible; } }
 </style>
 <div class="cab" id="cab" data-v="title">
   <div class="marquee"><h1>BLANK <span class="sp">SPACE</span> BABY</h1></div>
   <div class="bezel">
     <div class="screen" id="flip" aria-live="polite">
-      <section class="view" id="v-title"><p class="logo" aria-label="Blank Space Baby"><span>BLANK</span><span class="type"><b>SPACE</b></span><span>BABY</span></p></section>
+      <section class="view" id="v-title"><p class="logo" aria-label="Blank Space Baby"><span>BLANK</span><span class="type"><b>S</b><b>P</b><b>A</b><b>C</b><b>E</b></span><span>BABY</span></p></section>
       <section class="view" id="v-select"><div class="boss" id="lair"></div><div class="pips big" id="beaten"></div></section>
       <section class="view" id="v-play">
         <div class="hud"><span class="lvl" id="lvl"></span><button class="home" id="home" type="button" aria-label="Levels"></button></div>
@@ -213,7 +216,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     home:    ['...#...','..###..','.#####.','#######','.##.##.','.##.##.','.##.##.'],
     next:    ['...#...','...##..','######.','#######','######.','...##..','...#...'],
     again:   ['..####.#.','.##...##.','##...###.','##.......','##.......','##.....##','.##...##.','..#####..'],
-    play:    ['#.....','###...','#####.','######','#####.','###...','#.....'],
+    play:    ['#....','##...','###..','####.','#####','####.','###..','##...','#....'],
     ok:      ['......#','.....##','#...##.','##.##..','.###...','..#....'],
     no:      ['##...##','###.###','.#####.','..###..','.#####.','###.###','##...##']
   };
@@ -267,6 +270,10 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 
   // ---- title ----
   $('start').innerHTML = svg('play', 6);
+  // type SPACE only once the arcade font is in, so letters never appear in a stand-in font
+  var logo = document.querySelector('.logo'); function typeOn() { logo.classList.add('on'); }
+  try { document.fonts.load('34px "Press Start 2P"').then(typeOn, typeOn); } catch (e) { typeOn(); }
+  setTimeout(typeOn, 2500);
   function powerOn() { cab.classList.remove('poweron'); void cab.offsetWidth; cab.classList.add('poweron'); select(); }
   $('start').addEventListener('click', powerOn);
 
