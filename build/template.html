@@ -57,7 +57,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 #v-select { container-type: size; }
 .board { position: relative; flex: none; width: min(100cqw, 100cqh); height: min(100cqw, 100cqh); }
 .board .p { position: absolute; width: 21%; transform: translate(-50%, -50%); color: #3E7A57; filter: drop-shadow(0 0 3px rgba(92,240,154,.35)); }
-.pg { display: block; width: 100%; height: auto; overflow: visible; }
+.pg { display: block; width: 100%; height: auto; overflow: visible; transform-origin: 50% 54%; }   /* turn around the shape's own center */
 .pg polygon { fill: currentColor; stroke: currentColor; stroke-width: 2; stroke-linejoin: round; }
 .pg.o polygon { fill: none; stroke-width: 6; }
 .board .p.on { color: var(--text); filter: drop-shadow(0 0 5px rgba(92,240,154,.8)); }   /* a soccer ball: one color, no rainbow */
@@ -67,6 +67,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .board.awake .boss-p { color: var(--text); filter: drop-shadow(0 0 6px rgba(92,240,154,.9)) drop-shadow(0 0 14px rgba(92,240,154,.5)); }
 .board.awake .boss-p svg { animation: bob 1.2s steps(2) infinite; }
 .board.awake .lock { display: none; }
+.flyer .pg { transition: transform .75s cubic-bezier(.3, .1, .2, 1); }
 .flyer { position: fixed; z-index: 10; pointer-events: none; transition: transform .75s cubic-bezier(.3, .1, .2, 1); filter: drop-shadow(0 0 6px rgba(92,240,154,.8)); color: var(--text); }
 /* the boss lair */
 #v-select, #v-boss { align-items: center; justify-content: center; gap: 22px; }
@@ -197,7 +198,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     return '<svg class="px' + (cls ? ' ' + cls : '') + '" width="' + rows[0].length * scale + '" height="' + rows.length * scale + '" viewBox="0 0 ' + rows[0].length + ' ' + rows.length + '" aria-hidden="true">' + body + '</svg>';
   }
   // pentagons are drawn as true vectors: a pixel grid can't hold their 36° and 72° edges cleanly
-  function pent(outline) { return '<svg class="pg' + (outline ? ' o' : '') + '" viewBox="0 0 100 100" aria-hidden="true"><polygon points="50.00,8.00 93.75,39.79 77.04,91.21 22.96,91.21 6.25,39.79"/></svg>'; }
+  function pent(outline, turn) { return '<svg class="pg' + (outline ? ' o' : '') + '" viewBox="0 0 100 100" aria-hidden="true"><polygon' + (turn ? ' transform="rotate(' + turn + ' 50 54)"' : '') + ' points="50.00,8.00 93.75,39.79 77.04,91.21 22.96,91.21 6.25,39.79"/></svg>'; }
   var esc = function (s) { return s.replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
   var quote = function (s) { return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); };
   var rx = function (w) { return new RegExp('(^|[^A-Za-z0-9])(' + quote(w) + ')(?![A-Za-z0-9])', 'i'); };
@@ -245,27 +246,29 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     b.addEventListener('click', function () { if (!c.soon) play(c.id); });
     $('p-select').appendChild(b);
   });
-  // the board: the boss pentagon in the middle, five slots around it clockwise from the top
+  // the board: the boss pentagon in the middle, five slots around it clockwise from the top.
+  // Like seams on a real ball, every outer pentagon turns a flat side to the center, and the center points down
+  // so its flat sides face back
   var slots = [0, 1, 2, 3, 4].map(function (k) { var a = (-90 + 72 * k) * Math.PI / 180; return [50 + 33 * Math.cos(a), 50 + 33 * Math.sin(a)]; });
   function board() {
-    var html = '<div class="p boss-p" style="left:50%;top:50%">' + pent(cleared.length < 5) + '<span class="lock">' + svg('lock', 3) + '</span></div>';
+    var html = '<div class="p boss-p" style="left:50%;top:50%">' + pent(cleared.length < 5, 180) + '<span class="lock">' + svg('lock', 3) + '</span></div>';
     slots.forEach(function (xy, k) {
       var id = cleared[k];
-      html += '<div class="p' + (id ? ' on' : '') + (id && id === fresh ? ' pending' : '') + '" id="slot' + k + '" style="left:' + xy[0] + '%;top:' + xy[1] + '%' + '">' + pent(!id) + '</div>';
+      html += '<div class="p' + (id ? ' on' : '') + (id && id === fresh ? ' pending' : '') + '" id="slot' + k + '" style="left:' + xy[0] + '%;top:' + xy[1] + '%' + '">' + pent(!id, 72 * k) + '</div>';
     });
     return html;
   }
   // a newly earned pentagon flies from its key up into its slot
   function fly(id) {
     var from = $('t-' + id).lastChild.getBoundingClientRect(), slot = $('slot' + cleared.indexOf(id)), to = slot.getBoundingClientRect();
-    var f = document.createElement('div'); f.className = 'flyer'; f.innerHTML = pent();
+    var f = document.createElement('div'); f.className = 'flyer'; f.innerHTML = pent(); var turn = 72 * cleared.indexOf(id);
     f.style.left = from.left + 'px'; f.style.top = from.top + 'px'; f.style.width = from.width + 'px';
     document.body.appendChild(f);
     var done = false;
     function land() { if (done) return; done = true; f.remove(); slot.classList.remove('pending'); slot.classList.add('new'); }
     requestAnimationFrame(function () { requestAnimationFrame(function () {
       f.style.transform = 'translate(' + (to.left - from.left) + 'px,' + (to.top - from.top) + 'px) scale(' + (to.width / from.width) + ')';
-      f.style.transformOrigin = '0 0';
+      f.style.transformOrigin = '0 0'; f.firstChild.style.transform = 'rotate(' + turn + 'deg)';
     }); });
     f.addEventListener('transitionend', land); setTimeout(land, 1100);
   }
