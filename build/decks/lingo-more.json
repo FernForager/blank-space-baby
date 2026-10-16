@@ -91,7 +91,7 @@
       "ex": "Outside the penalty area, the keeper can’t use her hands",
       "hook": "keeper",
       "k": "field",
-      "src": "https://www.merriam-webster.com/dictionary/penalty%20area",
+      "src": "https://www.dictionary.com/browse/penalty-area",
       "d": 1
     },
     {
@@ -133,7 +133,7 @@
     {
       "w": "technical area",
       "means": "Coach’s box beside the field",
-      "ex": "The coach and the trainer must stay in the technical area at the side of the field",
+      "ex": "The coach and the trainer must stay in the technical area",
       "hook": "trainer",
       "k": "field",
       "src": "https://www.dictionary.com/browse/technical-area",
@@ -142,7 +142,7 @@
     {
       "w": "midfield",
       "means": "Middle part of the field",
-      "ex": "The ball sat in midfield, halfway between the two goals",
+      "ex": "The ball sat in the midfield, halfway between the two goals",
       "hook": "two goals",
       "k": "field",
       "src": "https://www.merriam-webster.com/dictionary/midfield",
@@ -168,7 +168,7 @@
     },
     {
       "w": "linesman",
-      "means": "Ref’s helper on the sideline",
+      "means": "Official who assists the ref",
       "ex": "The linesman raised a flag to signal that the striker was offside",
       "hook": "offside",
       "k": "role",
@@ -204,7 +204,7 @@
     },
     {
       "w": "soccer mom",
-      "means": "Mom who drives kids to soccer",
+      "means": "Mom who takes her kids to soccer",
       "ex": "With a minivan full of kids and orange slices, she’s a true soccer mom",
       "hook": "minivan",
       "k": "role",
@@ -253,13 +253,13 @@
       "ex": "After every goal, play restarts with a kickoff from the middle",
       "hook": "every goal",
       "k": "rules",
-      "src": "https://www.merriam-webster.com/dictionary/kickoff",
+      "src": "https://www.dictionary.com/browse/kickoff",
       "d": 1
     },
     {
       "w": "throw-in",
       "means": "Throw from the sideline to restart",
-      "ex": "The ball rolled out along the sideline, so the defender took a throw-in",
+      "ex": "The ball rolled out over the sideline, so the defender took a throw-in",
       "hook": "sideline",
       "k": "rules",
       "src": "https://www.merriam-webster.com/dictionary/throw-in",
@@ -421,7 +421,7 @@
     {
       "w": "silver goal",
       "means": "Extra-time lead at the break wins",
-      "ex": "Under the silver goal rule, leading after half of extra time wins it",
+      "ex": "Under the silver goal rule, the team ahead halfway through extra time won",
       "hook": "extra time",
       "k": "score",
       "src": "https://www.dictionary.com/browse/silver-goal",
@@ -430,7 +430,7 @@
     {
       "w": "away goal",
       "means": "Goal scored on the road",
-      "ex": "In some cups, an away goal once counted for more than a home goal",
+      "ex": "In some cups, each away goal once counted for more than a home goal",
       "hook": "cups",
       "k": "score",
       "src": "https://www.dictionary.com/browse/away-goal",

@@ -6,7 +6,7 @@ back to the reviewers and the hub, or lock it, which keeps it as it is for good.
 
 | File | Who | Branch |
 |---|---|---|
-| `soccer.json` | the soccer expert: is it right, honest in color, and said the way soccer people say it | `vet-soccer` |
+| `soccer.json` | the soccer expert: is it right, honest in color, and said the way soccer people say it | `factcheck` (the branch its chat may push to) |
 | `editor.json` | the writing editor: Strunk & White, Chicago, Merriam-Webster’s Collegiate and the house style | `vet-editor` |
 | `facts.json` | the fact checker: every fact against the deck’s one official source, independently | `vet-facts` |
 | `morg.json` | Morg’s flags and locks, synced from the beta’s database by `tools/vet.py marks` | `daily` |
