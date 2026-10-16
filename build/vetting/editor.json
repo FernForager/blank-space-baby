@@ -841,5 +841,296 @@
   "at": "2026-10-16T23:54:41Z",
   "h": "bb16f6d85b",
   "v": "ok"
+ },
+ "parents:0": {
+  "at": "2026-10-16T23:55:41Z",
+  "h": "353220e0e1",
+  "v": "ok"
+ },
+ "parents:1": {
+  "at": "2026-10-16T23:55:41Z",
+  "h": "27ea3d1c33",
+  "v": "ok"
+ },
+ "parents:10": {
+  "at": "2026-10-16T23:55:41Z",
+  "h": "e39be46853",
+  "note": "Adverb slot, wrong answers read as nonsense but meaning not grammar decides",
+  "v": "ok"
+ },
+ "parents:11": {
+  "at": "2026-10-16T23:55:41Z",
+  "h": "3ef4822627",
+  "v": "ok"
+ },
+ "parents:12": {
+  "at": "2026-10-16T23:55:41Z",
+  "h": "386a96ae08",
+  "v": "ok"
+ },
+ "parents:13": {
+  "at": "2026-10-16T23:55:41Z",
+  "fix": {
+   "hook": "final"
+  },
+  "h": "322afe38e8",
+  "note": "Hook was Mom, the final is the key soccer word",
+  "v": "fix"
+ },
+ "parents:14": {
+  "at": "2026-10-16T23:55:41Z",
+  "h": "86803683f7",
+  "v": "ok"
+ },
+ "parents:15": {
+  "at": "2026-10-16T23:55:41Z",
+  "fix": {
+   "ex": "When the other team bragged they would win, the captain said “as if”"
+  },
+  "h": "8a5dbd5a67",
+  "note": "Said appeared twice, bragged is more concrete",
+  "v": "fix"
+ },
+ "parents:16": {
+  "at": "2026-10-16T23:55:41Z",
+  "h": "232d010732",
+  "v": "ok"
+ },
+ "parents:17": {
+  "at": "2026-10-16T23:55:41Z",
+  "h": "6858bc0221",
+  "v": "ok"
+ },
+ "parents:18": {
+  "at": "2026-10-16T23:55:41Z",
+  "h": "285ea7e635",
+  "v": "ok"
+ },
+ "parents:19": {
+  "at": "2026-10-16T23:55:41Z",
+  "h": "05a4e2196f",
+  "v": "ok"
+ },
+ "parents:2": {
+  "at": "2026-10-16T23:55:41Z",
+  "h": "23629582b4",
+  "v": "ok"
+ },
+ "parents:20": {
+  "at": "2026-10-16T23:55:41Z",
+  "h": "c9c2d81d38",
+  "v": "ok"
+ },
+ "parents:21": {
+  "at": "2026-10-16T23:55:41Z",
+  "h": "cf9f6969ab",
+  "v": "ok"
+ },
+ "parents:22": {
+  "at": "2026-10-16T23:55:41Z",
+  "fix": {
+   "ex": "When the coach said to hustle, Dad nodded and said “word”"
+  },
+  "h": "14e0bd4b45",
+  "note": "Cut needless words, agreed also repeated the means",
+  "v": "fix"
+ },
+ "parents:23": {
+  "at": "2026-10-16T23:55:41Z",
+  "h": "0ae2d33ef6",
+  "v": "ok"
+ },
+ "parents:24": {
+  "at": "2026-10-16T23:55:41Z",
+  "h": "6e4015de07",
+  "v": "ok"
+ },
+ "parents:25": {
+  "at": "2026-10-16T23:55:41Z",
+  "h": "47e3fa1411",
+  "v": "ok"
+ },
+ "parents:26": {
+  "at": "2026-10-16T23:55:41Z",
+  "h": "aa56f38419",
+  "note": "List slot favors yada yada, most exclamations read oddly here but the card works",
+  "v": "ok"
+ },
+ "parents:27": {
+  "at": "2026-10-16T23:55:41Z",
+  "h": "1dc1e9671e",
+  "v": "ok"
+ },
+ "parents:28": {
+  "at": "2026-10-16T23:55:41Z",
+  "fix": {
+   "ex": "The keeper let in one goal, but the coach just said “no biggie”"
+  },
+  "h": "ea22d79972",
+  "note": "Bare it was ___ slot ruled out most exclamations by grammar, quoting fits them all",
+  "v": "fix"
+ },
+ "parents:29": {
+  "at": "2026-10-16T23:55:41Z",
+  "h": "f0e6bd9068",
+  "note": "homie, home skillet and dawg already share a group, so none should draw as a wrong answer here",
+  "v": "ok"
+ },
+ "parents:3": {
+  "at": "2026-10-16T23:55:41Z",
+  "h": "7b0d86b904",
+  "note": "a ___ chip fits all wrong answers, stoked and bummed read as nonsense",
+  "v": "ok"
+ },
+ "parents:30": {
+  "at": "2026-10-16T23:55:41Z",
+  "h": "7b2560b8b9",
+  "note": "homie, home skillet and dawg already share a group, so none should draw as a wrong answer here",
+  "v": "ok"
+ },
+ "parents:31": {
+  "at": "2026-10-16T23:55:41Z",
+  "h": "070765485c",
+  "v": "ok"
+ },
+ "parents:32": {
+  "at": "2026-10-16T23:55:41Z",
+  "h": "e64acd60e8",
+  "v": "ok"
+ },
+ "parents:33": {
+  "at": "2026-10-16T23:55:41Z",
+  "h": "395aed9ea3",
+  "v": "ok"
+ },
+ "parents:34": {
+  "at": "2026-10-16T23:55:41Z",
+  "h": "0db97bd632",
+  "v": "ok"
+ },
+ "parents:35": {
+  "at": "2026-10-16T23:55:41Z",
+  "fix": {
+   "ex": "The trophy’s bling was so bright that Dad wore sunglasses"
+  },
+  "h": "1cc1d18eaf",
+  "note": "so much ___ needs a mass noun and ruled out most wrong answers, shiny dropped since the means says it",
+  "v": "fix"
+ },
+ "parents:36": {
+  "at": "2026-10-16T23:55:41Z",
+  "fix": {
+   "ex": "The coach gave the keeper her props for that diving save"
+  },
+  "h": "9c9adac614",
+  "note": "gave the keeper ___ ruled out singular nouns, her ___ fits all and is the natural idiom",
+  "v": "fix"
+ },
+ "parents:37": {
+  "at": "2026-10-16T23:55:41Z",
+  "h": "48da195091",
+  "v": "ok"
+ },
+ "parents:38": {
+  "at": "2026-10-16T23:55:41Z",
+  "h": "cee7fe5c4c",
+  "note": "more of a ___ rules out peeps, props, kicks and bling, others fit",
+  "v": "ok"
+ },
+ "parents:39": {
+  "at": "2026-10-16T23:55:41Z",
+  "h": "edaee03e5b",
+  "note": "a ___ rules out peeps, props, kicks and bling, others fit",
+  "v": "ok"
+ },
+ "parents:4": {
+  "at": "2026-10-16T23:55:41Z",
+  "h": "914a7ea837",
+  "v": "ok"
+ },
+ "parents:40": {
+  "at": "2026-10-16T23:55:41Z",
+  "fix": {
+   "hook": "ref"
+  },
+  "h": "b250563aa8",
+  "note": "Hook ref is the key soccer word, yelled was weak",
+  "v": "fix"
+ },
+ "parents:41": {
+  "at": "2026-10-16T23:55:41Z",
+  "h": "f47fbcfdc6",
+  "v": "ok"
+ },
+ "parents:42": {
+  "at": "2026-10-16T23:55:41Z",
+  "h": "01116a8b07",
+  "v": "ok"
+ },
+ "parents:43": {
+  "at": "2026-10-16T23:55:41Z",
+  "h": "f00d93e6bf",
+  "note": "dis is the only transitive verb in its kind, so the object helps rule out some wrong answers, no wording avoids it",
+  "v": "ok"
+ },
+ "parents:44": {
+  "at": "2026-10-16T23:55:41Z",
+  "h": "231ae05647",
+  "v": "ok"
+ },
+ "parents:45": {
+  "at": "2026-10-16T23:55:41Z",
+  "h": "8146b8460e",
+  "v": "ok"
+ },
+ "parents:46": {
+  "at": "2026-10-16T23:55:41Z",
+  "h": "1d6a4d5d46",
+  "v": "ok"
+ },
+ "parents:47": {
+  "at": "2026-10-16T23:55:41Z",
+  "h": "4630552ede",
+  "v": "ok"
+ },
+ "parents:48": {
+  "at": "2026-10-16T23:55:41Z",
+  "h": "78fbfb3ad4",
+  "v": "ok"
+ },
+ "parents:49": {
+  "at": "2026-10-16T23:55:41Z",
+  "h": "6b152a3856",
+  "v": "ok"
+ },
+ "parents:5": {
+  "at": "2026-10-16T23:55:41Z",
+  "h": "12566a0c69",
+  "v": "ok"
+ },
+ "parents:50": {
+  "at": "2026-10-16T23:55:41Z",
+  "h": "6d3e02a76c",
+  "v": "ok"
+ },
+ "parents:6": {
+  "at": "2026-10-16T23:55:41Z",
+  "h": "6bfda42d1c",
+  "v": "ok"
+ },
+ "parents:7": {
+  "at": "2026-10-16T23:55:41Z",
+  "h": "e92f209502",
+  "v": "ok"
+ },
+ "parents:8": {
+  "at": "2026-10-16T23:55:41Z",
+  "h": "64f56f535c",
+  "v": "ok"
+ },
+ "parents:9": {
+  "at": "2026-10-16T23:55:41Z",
+  "h": "70971e5e67",
+  "v": "ok"
  }
 }
