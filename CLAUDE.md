@@ -13,6 +13,11 @@ Read this first. It holds the decisions already made so nobody re-learns them. T
 - He wants directness, honest pushback, short answers when short is right, and small fixes done now rather than later.
 - Quality first, efficiency second (Morg, Oct 16, 2026). Don't cut corners to save tokens, but don't waste them either.
 - No semicolons in anything you write for him: replies, docs, code comments, commit messages. He prefers em dashes, colons, commas or periods.
+- **One clear best way: just do it.** Offer options only when there’s a real trade-off, and always lead with your pick and a short why (Morg, Oct 16, 2026).
+- **Decisions go to the Triviela Hub, never as long lists in chat:** https://claude.ai/artifact/XUG8CRo9Us3AE9Y4XjU2rD. It shows Morg one decision at a time, in the order that unblocks the most work, with Claude’s pick first. His answers save to the hub’s database. At the start of every session, read it with ArtifactData. Act on answered decisions, then mark each one done (`status: "done"` plus a one-line `result`), and keep the work list current. The collections:
+  - `decisions`: `order`, `title`, `rec`, `why` (a list of short paragraphs), `options` (`id`, `label`), `pick` (the option id Claude recommends), optional `images` (`url`, `alt`, uploaded as artifact assets) and `links` (`label`, `url`), `status` (`open`, `answered` or `done`), `answer` (`choice`, `label`, `note`, `at`, written by the page), `later` (set when he taps Later).
+  - `work`: Claude’s list. `order`, `title`, `detail`, `state` (`now`, `next`, `waiting` or `done`).
+  - `todos`: things only Morg can do. `order`, `title`, `detail`, optional `url` and `urlLabel`, `done`.
 
 ## How to build and check
 ```
