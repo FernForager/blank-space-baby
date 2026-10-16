@@ -125,7 +125,7 @@
    "w": "stoked",
    "means": "Super excited",
    "ex": "Mom was stoked when the team made the final",
-   "hook": "Mom",
+   "hook": "final",
    "k": "adj",
    "src": "https://www.merriam-webster.com/dictionary/stoked",
    "d": 1
@@ -142,7 +142,7 @@
   {
    "w": "as if",
    "means": "No way, not a chance",
-   "ex": "When the other team said they would win, the captain said “as if”",
+   "ex": "When the other team bragged they would win, the captain said “as if”",
    "hook": "other team",
    "k": "exclaim",
    "src": "https://www.merriam-webster.com/dictionary/as%20if",
@@ -205,7 +205,7 @@
   {
    "w": "word",
    "means": "Agreed, for real",
-   "ex": "When the coach said to hustle, Dad agreed by replying “word”",
+   "ex": "When the coach said to hustle, Dad nodded and said “word”",
    "hook": "hustle",
    "k": "exclaim",
    "src": "https://www.merriam-webster.com/dictionary/word",
@@ -259,7 +259,7 @@
   {
    "w": "no biggie",
    "means": "Not a big deal",
-   "ex": "The keeper let in one goal, but the coach said it was no biggie",
+   "ex": "The keeper let in one goal, but the coach just said “no biggie”",
    "hook": "keeper",
    "k": "exclaim",
    "src": "https://www.merriam-webster.com/dictionary/no%20biggie",
@@ -322,7 +322,7 @@
   {
    "w": "bling",
    "means": "Flashy, shiny stuff",
-   "ex": "The trophy had so much bling that Dad wore sunglasses",
+   "ex": "The trophy’s bling was so bright that Dad wore sunglasses",
    "hook": "trophy",
    "k": "noun",
    "src": "https://www.merriam-webster.com/dictionary/bling",
@@ -331,7 +331,7 @@
   {
    "w": "props",
    "means": "Respect and credit",
-   "ex": "The coach gave the keeper props for her diving save",
+   "ex": "The coach gave the keeper her props for that diving save",
    "hook": "diving save",
    "k": "noun",
    "src": "https://www.merriam-webster.com/dictionary/props",
@@ -368,7 +368,7 @@
    "w": "chill pill",
    "means": "A pretend pill to calm down",
    "ex": "When Dad yelled at the ref, Mom told him to take a chill pill",
-   "hook": "yelled",
+   "hook": "ref",
    "k": "noun",
    "src": "https://greensdictofslang.com/entry/z2untty#nt2h5ci",
    "d": 1
