@@ -5847,5 +5847,394 @@
   "at": "2026-10-16T23:56:37Z",
   "h": "e44bf8fb9d",
   "v": "ok"
+ },
+ "ucl:0": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "00f54250cb",
+  "v": "ok"
+ },
+ "ucl:1": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "8665c963c4",
+  "v": "ok"
+ },
+ "ucl:10": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "ea6e5849b5",
+  "v": "ok"
+ },
+ "ucl:11": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "2a144ddda6",
+  "v": "ok"
+ },
+ "ucl:12": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "eb228104d0",
+  "v": "ok"
+ },
+ "ucl:13": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "82daaf7550",
+  "v": "ok"
+ },
+ "ucl:14": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "0b13fd8963",
+  "v": "ok"
+ },
+ "ucl:15": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "4a3cbdaa04",
+  "v": "ok"
+ },
+ "ucl:16": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "38d3dfe8c8",
+  "v": "ok"
+ },
+ "ucl:17": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "65a3118291",
+  "v": "ok"
+ },
+ "ucl:18": {
+  "at": "2026-10-16T23:58:42Z",
+  "fix": {
+   "ex": "Cristiano Ronaldo holds the Champions League records for goals and appearances"
+  },
+  "h": "1fcecd4e71",
+  "note": "all-time records read as career records, named the competition",
+  "v": "fix"
+ },
+ "ucl:19": {
+  "at": "2026-10-16T23:58:42Z",
+  "fix": {
+   "ex": "Lionel Messi is second on the Champions League scoring list with 129 goals"
+  },
+  "h": "b794ad1d0e",
+  "note": "all-time scoring list read as career goals, named the competition",
+  "v": "fix"
+ },
+ "ucl:2": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "a1c3a60560",
+  "v": "ok"
+ },
+ "ucl:20": {
+  "at": "2026-10-16T23:58:42Z",
+  "fix": {
+   "ex": "Robert Lewandowski is third on the Champions League scoring list with 109 goals"
+  },
+  "h": "90d2bb880b",
+  "note": "all-time scoring list read as career goals, named the competition",
+  "v": "fix"
+ },
+ "ucl:21": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "15323e94d8",
+  "v": "ok"
+ },
+ "ucl:22": {
+  "at": "2026-10-16T23:58:42Z",
+  "fix": {
+   "ex": "Kylian Mbappé was the Champions League top scorer in 2025–26 with 15 goals"
+  },
+  "h": "3a24343b12",
+  "note": "top scorer of a season with no competition named was ambiguous",
+  "v": "fix"
+ },
+ "ucl:23": {
+  "at": "2026-10-16T23:58:42Z",
+  "fix": {
+   "ex": "Erling Haaland was the Champions League top scorer in 2022–23 with 12 goals"
+  },
+  "h": "dc20b8553f",
+  "note": "top scorer of a season with no competition named was ambiguous",
+  "v": "fix"
+ },
+ "ucl:24": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "e6961d9bd0",
+  "v": "ok"
+ },
+ "ucl:25": {
+  "at": "2026-10-16T23:58:42Z",
+  "fix": {
+   "hook": "Chelsea"
+  },
+  "h": "22d55a9f1e",
+  "note": "hook was a bare final year, Chelsea is the specific club name",
+  "v": "fix"
+ },
+ "ucl:26": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "c8b2fea500",
+  "v": "ok"
+ },
+ "ucl:27": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "937c8e3f6d",
+  "v": "ok"
+ },
+ "ucl:28": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "e7da32ceb5",
+  "v": "ok"
+ },
+ "ucl:29": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "f439b3e5da",
+  "v": "ok"
+ },
+ "ucl:3": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "510d7e78b7",
+  "v": "ok"
+ },
+ "ucl:30": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "d77aa9452f",
+  "v": "ok"
+ },
+ "ucl:31": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "52c55e02d2",
+  "v": "ok"
+ },
+ "ucl:32": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "a3b9632f3d",
+  "v": "ok"
+ },
+ "ucl:33": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "c8b352f0f7",
+  "v": "ok"
+ },
+ "ucl:34": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "f857c971cd",
+  "v": "ok"
+ },
+ "ucl:35": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "034a4d097b",
+  "v": "ok"
+ },
+ "ucl:36": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "bc20519058",
+  "v": "ok"
+ },
+ "ucl:37": {
+  "at": "2026-10-16T23:58:42Z",
+  "fix": {
+   "hook": "Chelsea"
+  },
+  "h": "96309fad5d",
+  "note": "hook was a bare final year, Chelsea is the specific club name",
+  "v": "fix"
+ },
+ "ucl:38": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "1aa227c8cb",
+  "v": "ok"
+ },
+ "ucl:39": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "b17be5ea0b",
+  "v": "ok"
+ },
+ "ucl:4": {
+  "at": "2026-10-16T23:58:42Z",
+  "fix": {
+   "ex": "In 2020, Bayern Munich beat Paris Saint-Germain in the final",
+   "hook": "Paris"
+  },
+  "h": "9598434747",
+  "note": "Bayern Munich could be drawn as a wrong answer beside PSG, spelled the name out so the draw skips it",
+  "v": "fix"
+ },
+ "ucl:40": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "67dd2d0f44",
+  "v": "ok"
+ },
+ "ucl:41": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "b78d69998d",
+  "v": "ok"
+ },
+ "ucl:42": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "5fca5201a1",
+  "v": "ok"
+ },
+ "ucl:43": {
+  "at": "2026-10-16T23:58:42Z",
+  "fix": {
+   "ex": "Real Madrid beat Liverpool at Stade de France in 2022"
+  },
+  "h": "bc0cab7bba",
+  "note": "“at the ___” ruled out Wembley, Old Trafford and the other venues that take no article",
+  "v": "fix"
+ },
+ "ucl:44": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "78b48ce60b",
+  "v": "ok"
+ },
+ "ucl:45": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "ac81b00d4b",
+  "v": "ok"
+ },
+ "ucl:46": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "0233919f8e",
+  "v": "ok"
+ },
+ "ucl:47": {
+  "at": "2026-10-16T23:58:42Z",
+  "fix": {
+   "ex": "Umeå lost the first women’s final, in 2002, at Waldstadion"
+  },
+  "h": "0c9e59a1f4",
+  "note": "“at the ___” ruled out Wembley, Old Trafford and the other venues that take no article",
+  "v": "fix"
+ },
+ "ucl:48": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "c2a03a22d1",
+  "v": "ok"
+ },
+ "ucl:49": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "822dfa790e",
+  "v": "ok"
+ },
+ "ucl:5": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "04dcf41518",
+  "v": "ok"
+ },
+ "ucl:50": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "b7c5bd495a",
+  "v": "ok"
+ },
+ "ucl:51": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "782d9ba4e5",
+  "v": "ok"
+ },
+ "ucl:52": {
+  "at": "2026-10-16T23:58:42Z",
+  "fix": {
+   "ex": "Turbine Potsdam won the first final under the Champions League name, in Getafe",
+   "means": "They beat Lyon 7–6 on penalties in 2010"
+  },
+  "h": "bbc67d3f05",
+  "note": "“first Women’s Champions League final” clashed with the 2002 first final card, now says first under the new name, year moved out to fit 85 characters",
+  "v": "fix"
+ },
+ "ucl:53": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "ebf5aa9aff",
+  "v": "ok"
+ },
+ "ucl:54": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "1fe7c15981",
+  "v": "ok"
+ },
+ "ucl:55": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "724475ac44",
+  "note": "141 reads as nonsense here but the grammar fits every number",
+  "v": "ok"
+ },
+ "ucl:56": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "7bab1572c0",
+  "note": "141 reads as nonsense here but the grammar fits every number",
+  "v": "ok"
+ },
+ "ucl:57": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "4dc8c3b62e",
+  "note": "141 reads as nonsense here but the grammar fits every number",
+  "v": "ok"
+ },
+ "ucl:58": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "b5c866fe8b",
+  "v": "ok"
+ },
+ "ucl:59": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "5f168cda8e",
+  "v": "ok"
+ },
+ "ucl:6": {
+  "at": "2026-10-16T23:58:42Z",
+  "fix": {
+   "ex": "In 1982, Aston Villa beat Bayern Munich in the European Cup final"
+  },
+  "h": "cb69e715ab",
+  "note": "Bayern Munich could be drawn as a wrong answer against plain Bayern, spelled the name out so the draw skips it",
+  "v": "fix"
+ },
+ "ucl:60": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "a01c383371",
+  "v": "ok"
+ },
+ "ucl:61": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "fdb89e2762",
+  "v": "ok"
+ },
+ "ucl:62": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "12c155d32b",
+  "v": "ok"
+ },
+ "ucl:63": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "662a263663",
+  "v": "ok"
+ },
+ "ucl:64": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "1aceea4cdc",
+  "v": "ok"
+ },
+ "ucl:65": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "a27fc9b60b",
+  "v": "ok"
+ },
+ "ucl:66": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "9690592c86",
+  "v": "ok"
+ },
+ "ucl:7": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "bcf3b8877a",
+  "v": "ok"
+ },
+ "ucl:8": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "1d020b0e87",
+  "v": "ok"
+ },
+ "ucl:9": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "0af7c31e06",
+  "note": "hook Europe is general but the sentence has nothing more specific",
+  "v": "ok"
  }
 }
