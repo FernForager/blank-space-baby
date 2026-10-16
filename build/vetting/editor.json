@@ -3791,6 +3791,325 @@
   "note": "Shares the hook keeper with rules:26, the draw guard keeps them apart",
   "v": "ok"
  },
+ "seriea:0": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "f5139dd43d",
+  "v": "ok"
+ },
+ "seriea:1": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "de7c75a001",
+  "v": "ok"
+ },
+ "seriea:10": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "53f4408a88",
+  "v": "ok"
+ },
+ "seriea:11": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "14f051dfe0",
+  "v": "ok"
+ },
+ "seriea:12": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "67da43ca9f",
+  "v": "ok"
+ },
+ "seriea:13": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "507ced2f7e",
+  "v": "ok"
+ },
+ "seriea:14": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "b7bb78585e",
+  "v": "ok"
+ },
+ "seriea:15": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "b3b0f6bbcd",
+  "v": "ok"
+ },
+ "seriea:16": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "1cd2c3ae5a",
+  "v": "ok"
+ },
+ "seriea:17": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "c9c22ce6a0",
+  "v": "ok"
+ },
+ "seriea:18": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "152b9417a6",
+  "v": "ok"
+ },
+ "seriea:19": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "68e8bac74b",
+  "v": "ok"
+ },
+ "seriea:2": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "d7d0e3e5c7",
+  "note": "Serie A hook is shared with four cards but nothing more specific exists",
+  "v": "ok"
+ },
+ "seriea:20": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "4a4ea43468",
+  "v": "ok"
+ },
+ "seriea:21": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "d63fce2ec3",
+  "v": "ok"
+ },
+ "seriea:22": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "02dfea2fc4",
+  "v": "ok"
+ },
+ "seriea:23": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "eac29731af",
+  "v": "ok"
+ },
+ "seriea:24": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "50ca3ce447",
+  "v": "ok"
+ },
+ "seriea:25": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "702ac7d614",
+  "v": "ok"
+ },
+ "seriea:26": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "f6e04deba2",
+  "v": "ok"
+ },
+ "seriea:27": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "5a26666c7b",
+  "v": "ok"
+ },
+ "seriea:28": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "ae36d52604",
+  "v": "ok"
+ },
+ "seriea:29": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "a2520fe13f",
+  "v": "ok"
+ },
+ "seriea:3": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "25fc8117c4",
+  "v": "ok"
+ },
+ "seriea:30": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "43e6b3ebfa",
+  "v": "ok"
+ },
+ "seriea:31": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "8ac2889d86",
+  "v": "ok"
+ },
+ "seriea:32": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "7b26ccd9f5",
+  "v": "ok"
+ },
+ "seriea:33": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "a8934faeef",
+  "v": "ok"
+ },
+ "seriea:34": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "48b5a4b645",
+  "v": "ok"
+ },
+ "seriea:35": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "86bf03244b",
+  "v": "ok"
+ },
+ "seriea:36": {
+  "at": "2026-10-16T23:58:01Z",
+  "fix": {
+   "means": "Milan won 3–1 at Pisa"
+  },
+  "h": "c135858ced",
+  "note": "They was unclear, Milan won",
+  "v": "fix"
+ },
+ "seriea:37": {
+  "at": "2026-10-16T23:58:01Z",
+  "fix": {
+   "ex": "Fabio Capello led Milan to three titles in a row, starting in 1991–92",
+   "means": "The last came in 1993–94"
+  },
+  "h": "89624b7cca",
+  "note": "Starting in 1992 was ambiguous between seasons, means no longer repeats",
+  "v": "fix"
+ },
+ "seriea:38": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "c0cf802289",
+  "v": "ok"
+ },
+ "seriea:39": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "1d818bb5b0",
+  "v": "ok"
+ },
+ "seriea:4": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "5127936065",
+  "v": "ok"
+ },
+ "seriea:40": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "8e929ced8e",
+  "v": "ok"
+ },
+ "seriea:41": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "e8c43eb789",
+  "v": "ok"
+ },
+ "seriea:42": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "8fecbcc06a",
+  "v": "ok"
+ },
+ "seriea:43": {
+  "at": "2026-10-16T23:58:01Z",
+  "fix": {
+   "ex": "Roma and Lazio both play at the Olimpico"
+  },
+  "h": "35cab2fece",
+  "note": "Olimpico stadium read as Allianz Stadium stadium with wrong answers",
+  "v": "fix"
+ },
+ "seriea:44": {
+  "at": "2026-10-16T23:58:01Z",
+  "fix": {
+   "ex": "San Siro is officially named after Inter great Giuseppe Meazza"
+  },
+  "h": "ddb04ed718",
+  "note": "San Siro stadium read as Allianz Stadium stadium with wrong answers",
+  "v": "fix"
+ },
+ "seriea:45": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "d70bc98d3b",
+  "v": "ok"
+ },
+ "seriea:46": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "65f6230046",
+  "v": "ok"
+ },
+ "seriea:47": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "67d3226d78",
+  "v": "ok"
+ },
+ "seriea:48": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "861a2355db",
+  "v": "ok"
+ },
+ "seriea:49": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "dca602bee5",
+  "note": "Wrong answers like 974 clubs read as nonsense but the card works",
+  "v": "ok"
+ },
+ "seriea:5": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "8f4e597fdc",
+  "v": "ok"
+ },
+ "seriea:50": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "ad48bb7644",
+  "v": "ok"
+ },
+ "seriea:51": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "d443d1e5ca",
+  "v": "ok"
+ },
+ "seriea:52": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "3746f9f2c4",
+  "v": "ok"
+ },
+ "seriea:53": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "507cdba1b9",
+  "v": "ok"
+ },
+ "seriea:54": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "10942e7223",
+  "v": "ok"
+ },
+ "seriea:55": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "00b67abc54",
+  "v": "ok"
+ },
+ "seriea:56": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "d31b581180",
+  "v": "ok"
+ },
+ "seriea:57": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "f7d11cf3c2",
+  "v": "ok"
+ },
+ "seriea:58": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "d6250dec92",
+  "v": "ok"
+ },
+ "seriea:59": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "317b833c9f",
+  "v": "ok"
+ },
+ "seriea:6": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "026520b548",
+  "v": "ok"
+ },
+ "seriea:7": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "cae6dbf342",
+  "v": "ok"
+ },
+ "seriea:8": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "a2ea4ffc75",
+  "v": "ok"
+ },
+ "seriea:9": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "031928e0cf",
+  "v": "ok"
+ },
  "soccer:0": {
   "at": "2026-10-16T23:56:37Z",
   "h": "69a55645f0",
