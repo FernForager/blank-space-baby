@@ -1,0 +1,662 @@
+{
+  "deck": "International Women’s Soccer",
+  "primary": "fifa.com, uefa.com, ussoccer.com",
+  "secondary": "",
+  "as_of": "2026-10-15",
+  "items": [
+    {
+      "w": "USA",
+      "means": "Michelle Akers scored both goals",
+      "ex": "USA won the first Women’s World Cup, beating Norway 2–1 in 1991",
+      "k": "country",
+      "src": "https://www.fifa.com/en/articles/every-final-highlights",
+      "d": 1
+    },
+    {
+      "w": "Norway",
+      "means": "Hege Riise scored in the final",
+      "ex": "Norway beat Germany 2–0 to win the 1995 Women’s World Cup",
+      "k": "country",
+      "src": "https://www.fifa.com/en/articles/every-final-highlights",
+      "d": 2
+    },
+    {
+      "w": "Germany",
+      "means": "First to win two in a row",
+      "ex": "Germany won back-to-back Women’s World Cups in 2003 and 2007",
+      "k": "country",
+      "src": "https://www.fifa.com/en/articles/every-final-highlights",
+      "d": 2
+    },
+    {
+      "w": "Japan",
+      "means": "Its first World Cup title",
+      "ex": "Japan beat the USA on penalties to win the 2011 World Cup",
+      "k": "country",
+      "src": "https://www.fifa.com/en/articles/every-final-highlights",
+      "d": 1
+    },
+    {
+      "w": "Spain",
+      "means": "Its first World Cup final",
+      "ex": "Spain beat England 1–0 to win the 2023 Women’s World Cup",
+      "k": "country",
+      "src": "https://www.fifa.com/en/articles/every-final-highlights",
+      "d": 1
+    },
+    {
+      "w": "England",
+      "means": "Beat Germany, then Spain",
+      "ex": "England won the Women’s EURO in 2022 and again in 2025",
+      "k": "country",
+      "src": "https://www.uefa.com/womenseuro/news/0276-1574551cc7a7-6f3161f07484-1000--who-has-won-women-s-euro-champions-teams-players-scorers-a/",
+      "d": 1
+    },
+    {
+      "w": "Brazil",
+      "means": "The first in South America",
+      "ex": "Brazil will host the 2027 Women’s World Cup",
+      "k": "country",
+      "src": "https://www.fifa.com/en/articles/every-final-highlights",
+      "d": 1
+    },
+    {
+      "w": "Netherlands",
+      "means": "Its first Women’s EURO title",
+      "ex": "Hosts Netherlands won the 2017 Women’s EURO, beating Denmark 4–2",
+      "k": "country",
+      "src": "https://www.uefa.com/womenseuro/news/025c-0f3d8c8dca0d-e92ea4d4e4c2-1000--2017-final-netherlands-4-2-denmark/",
+      "d": 2
+    },
+    {
+      "w": "Sweden",
+      "means": "Beaten by Germany, then Canada",
+      "ex": "Sweden lost the Olympic final in both 2016 and 2020",
+      "k": "country",
+      "src": "https://www.fifa.com/en/tournaments/olympicgames/paris2024/articles/medal-winners-womens-tournament",
+      "d": 3
+    },
+    {
+      "w": "Canada",
+      "means": "Beat Sweden in the final",
+      "ex": "Canada won Olympic gold at Tokyo 2020 in a penalty shootout",
+      "k": "country",
+      "src": "https://www.fifa.com/en/tournaments/olympicgames/paris2024/articles/medal-winners-womens-tournament",
+      "d": 2
+    },
+    {
+      "w": "China",
+      "means": "It hosted again in 2007",
+      "ex": "The first Women’s World Cup was played in China in 1991",
+      "k": "country",
+      "src": "https://www.fifa.com/en/articles/every-final-highlights",
+      "d": 2
+    },
+    {
+      "w": "Switzerland",
+      "means": "England won it on penalties",
+      "ex": "Switzerland hosted the Women’s EURO in 2025",
+      "k": "country",
+      "src": "https://www.uefa.com/womenseuro/news/0288-199924f77c1f-b767cd925cf2-1000--women-s-euro-2025-in-switzerland-match-schedule-all-the-re/",
+      "d": 2
+    },
+    {
+      "w": "Australia",
+      "means": "With New Zealand: a first",
+      "ex": "Australia co-hosted the 2023 Women’s World Cup",
+      "k": "country",
+      "src": "https://www.fifa.com/en/articles/every-final-highlights",
+      "d": 1
+    },
+    {
+      "w": "Marta",
+      "means": "17 goals, at five World Cups",
+      "ex": "Marta has scored more Women’s World Cup goals than any other player",
+      "k": "player",
+      "src": "https://www.fifa.com/en/articles/every-marta-goal-womens-world-cup",
+      "d": 1,
+      "current": true
+    },
+    {
+      "w": "Megan Rapinoe",
+      "means": "She scored six goals",
+      "ex": "Megan Rapinoe won the Golden Ball and Golden Boot at the 2019 World Cup",
+      "k": "player",
+      "src": "https://www.ussoccer.com/history/timeline",
+      "d": 1
+    },
+    {
+      "w": "Carli Lloyd",
+      "means": "A 2–1 win over Japan at Wembley",
+      "ex": "Carli Lloyd scored both USA goals in the 2012 Olympic final",
+      "k": "player",
+      "src": "https://www.ussoccer.com/history/timeline",
+      "d": 2
+    },
+    {
+      "w": "Alex Morgan",
+      "means": "Tied the one-game record",
+      "ex": "Alex Morgan scored five goals as the USA beat Thailand 13–0",
+      "k": "player",
+      "src": "https://www.ussoccer.com/stories/2019/06/usa-surges-to-world-cup-record-13-0-win-in-opening-match-against-thailand",
+      "d": 1
+    },
+    {
+      "w": "Brandi Chastain",
+      "means": "A 5–4 shootout win over China",
+      "ex": "Brandi Chastain scored the winning penalty in the 1999 World Cup final",
+      "k": "player",
+      "src": "https://www.ussoccer.com/history/us-soccer-as-host/1999-fifa-womens-world-cup",
+      "d": 1
+    },
+    {
+      "w": "Mia Hamm",
+      "means": "She won it again in 2002",
+      "ex": "In 2001, Mia Hamm was the first FIFA Women’s World Player of the Year",
+      "k": "player",
+      "src": "https://www.ussoccer.com/history/timeline",
+      "d": 1
+    },
+    {
+      "w": "Abby Wambach",
+      "means": "She ended 2013 with 163 goals",
+      "ex": "In 2013, Abby Wambach broke Mia Hamm’s record for international goals",
+      "k": "player",
+      "src": "https://www.ussoccer.com/history/timeline",
+      "d": 2
+    },
+    {
+      "w": "Christine Sinclair",
+      "means": "Most ever, men or women",
+      "ex": "Christine Sinclair scored 190 goals for Canada, a world record",
+      "k": "player",
+      "src": "https://www.fifa.com/en/tournaments/womens/u20womensworldcup/poland-2026/articles/christine-sinclair-before-they-became-stars",
+      "d": 2,
+      "current": true
+    },
+    {
+      "w": "Aitana Bonmatí",
+      "means": "Spain’s midfielder, 2023–25",
+      "ex": "Aitana Bonmatí won The Best FIFA Women’s Player three years running",
+      "k": "player",
+      "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/womens-player-2025-winner-aitana-bonmati",
+      "d": 2
+    },
+    {
+      "w": "Homare Sawa",
+      "means": "Plus the Golden Ball and Boot",
+      "ex": "Homare Sawa captained Japan to the 2011 World Cup title",
+      "k": "player",
+      "src": "https://www.fifa.com/en/articles/lilly-formiga-and-more-all-time-womens-world-cup-appearances-australia-new-zealand-2023",
+      "d": 2
+    },
+    {
+      "w": "Mallory Swanson",
+      "means": "USA 1, Brazil 0, in Paris",
+      "ex": "Mallory Swanson scored the only goal of the 2024 Olympic final",
+      "k": "player",
+      "src": "https://www.ussoccer.com/stories/2024/08/us-womens-national-team-paris-olympics-highlights-by-the-numbers-stats",
+      "d": 2
+    },
+    {
+      "w": "Olga Carmona",
+      "means": "Her first-half goal beat England",
+      "ex": "Olga Carmona scored Spain’s winner in the 2023 World Cup final",
+      "k": "player",
+      "src": "https://www.fifa.com/en/articles/every-final-highlights",
+      "d": 2
+    },
+    {
+      "w": "Chloe Kelly",
+      "means": "She came off the bench to do it",
+      "ex": "Chloe Kelly scored England’s extra-time winner in the 2022 EURO final",
+      "k": "player",
+      "src": "https://www.uefa.com/womenseuro/news/0277-15c1d9745f40-baafd6e58b36-1000--england-2-1-germany-aet-kelly-gives-lionesses-wembley-fin/",
+      "d": 2
+    },
+    {
+      "w": "Michelle Akers",
+      "means": "A 2–1 win over Norway in China",
+      "ex": "Michelle Akers scored both USA goals in the 1991 World Cup final",
+      "k": "player",
+      "src": "https://www.fifa.com/en/articles/every-final-highlights",
+      "d": 3
+    },
+    {
+      "w": "Formiga",
+      "means": "Her first was Sweden 1995",
+      "ex": "Formiga was the first player to appear at seven World Cups",
+      "k": "player",
+      "src": "https://www.fifa.com/en/articles/lilly-formiga-and-more-all-time-womens-world-cup-appearances-australia-new-zealand-2023",
+      "d": 3,
+      "current": false
+    },
+    {
+      "w": "Alyssa Naeher",
+      "means": "2019 World Cup, 2024 Olympics",
+      "ex": "Alyssa Naeher kept clean sheets in World Cup and Olympic finals",
+      "k": "player",
+      "src": "https://www.ussoccer.com/stories/2024/08/us-womens-national-team-paris-olympics-highlights-by-the-numbers-stats",
+      "d": 3
+    },
+    {
+      "w": "Emma Hayes",
+      "means": "Paris 2024, 1–0 over Brazil",
+      "ex": "Emma Hayes won Olympic gold in just her 10th game as USA coach",
+      "k": "coach",
+      "src": "https://www.ussoccer.com/coaches/emma-hayes/uswnt",
+      "d": 2
+    },
+    {
+      "w": "Sarina Wiegman",
+      "means": "Netherlands, then England twice",
+      "ex": "Sarina Wiegman won three Women’s EUROs in a row with two countries",
+      "k": "coach",
+      "src": "https://www.uefa.com/womenseuro/news/0277-15bb2c72e55a-54e4f81bc686-1000--women-s-euro-coach-records-sarina-wiegman-breaks-another-r/",
+      "d": 2
+    },
+    {
+      "w": "Jill Ellis",
+      "means": "She never lost a World Cup game",
+      "ex": "Jill Ellis coached the USA to World Cup titles in 2015 and 2019",
+      "k": "coach",
+      "src": "https://www.ussoccer.com/stories/2019/10/jill-ellis-farewell-to-the-winningest-coach-in-us-soccer-history",
+      "d": 2
+    },
+    {
+      "w": "Pia Sundhage",
+      "means": "In Beijing, the USA’s third gold",
+      "ex": "Pia Sundhage coached the USA to Olympic gold in 2008",
+      "k": "coach",
+      "src": "https://www.ussoccer.com/history/timeline",
+      "d": 3
+    },
+    {
+      "w": "Tony DiCicco",
+      "means": "He also won Olympic gold in 1996",
+      "ex": "Tony DiCicco coached the USA to the 1999 World Cup title",
+      "k": "coach",
+      "src": "https://www.ussoccer.com/stories/2018/02/briana-scurry-dr-joe-machnik-and-tony-dicicco-receive-national-soccer-hall-of-fame-honors",
+      "d": 3
+    },
+    {
+      "w": "Anson Dorrance",
+      "means": "The 1991 tournament in China",
+      "ex": "Anson Dorrance coached the USA to the first Women’s World Cup title",
+      "k": "coach",
+      "src": "https://www.ussoccer.com/stories/2021/11/the-first-star",
+      "d": 3
+    },
+    {
+      "w": "1984",
+      "means": "Beat England on penalties",
+      "ex": "Sweden won the first Women’s EURO in 1984",
+      "k": "year",
+      "src": "https://www.uefa.com/news-media/news/00ad-0e10872af5f7-1f81f8f6134e-1000--1984-sweden-take-first-title/",
+      "d": 3
+    },
+    {
+      "w": "1996",
+      "means": "First gold: USA, in Atlanta",
+      "ex": "Women’s soccer joined the Olympics in 1996",
+      "k": "year",
+      "src": "https://www.fifa.com/en/tournaments/olympicgames/paris2024/articles/medal-winners-womens-tournament",
+      "d": 2
+    },
+    {
+      "w": "1999",
+      "means": "At the Rose Bowl, on penalties",
+      "ex": "The USA won a World Cup on home soil in 1999",
+      "k": "year",
+      "src": "https://www.ussoccer.com/history/us-soccer-as-host/1999-fifa-womens-world-cup",
+      "d": 1
+    },
+    {
+      "w": "2015",
+      "means": "The highest-scoring final ever",
+      "ex": "The USA beat Japan 5–2 in the 2015 World Cup final",
+      "k": "year",
+      "src": "https://www.fifa.com/en/articles/every-final-highlights",
+      "d": 2
+    },
+    {
+      "w": "2019",
+      "means": "Starting with 13–0 over Thailand",
+      "ex": "The USA won all seven of its games at the 2019 World Cup",
+      "k": "year",
+      "src": "https://www.ussoccer.com/history/timeline",
+      "d": 2
+    },
+    {
+      "w": "2023",
+      "means": "Up from 24 teams",
+      "ex": "The Women’s World Cup grew to 32 teams in 2023",
+      "k": "year",
+      "src": "https://inside.fifa.com/tournaments/womens/womensworldcup/france2019/media-releases/fifa-council-unanimously-approves-the-expansion-of-the-fifa-women-s-world-cup-to",
+      "d": 2
+    },
+    {
+      "w": "four",
+      "means": "1991, 1999, 2015 and 2019",
+      "ex": "The USA has won the Women’s World Cup four times",
+      "k": "number",
+      "src": "https://www.fifa.com/en/tournaments/womens/womensworldcup/australia-new-zealand2023/articles/womens-world-cup-champions-norway-usa-japan-germany-australia-new-zealand-2023",
+      "d": 1,
+      "current": true
+    },
+    {
+      "w": "five",
+      "means": "Four more than any other team",
+      "ex": "The USA has won five Olympic gold medals in women’s soccer",
+      "k": "number",
+      "src": "https://www.ussoccer.com/stories/2024/08/us-womens-national-team-paris-olympics-highlights-by-the-numbers-stats",
+      "d": 1,
+      "current": true
+    },
+    {
+      "w": "eight",
+      "means": "Six of them in a row",
+      "ex": "Germany has won the Women’s EURO a record eight times",
+      "k": "number",
+      "src": "https://www.uefa.com/womenseuro/news/0276-1570ce1f46f2-dced7a2638e9-1000--germany-first-to-50-women-s-euro-games-their-records-titles/",
+      "d": 2,
+      "current": true
+    },
+    {
+      "w": "12",
+      "means": "China hosted it",
+      "ex": "Only 12 teams played at the first Women’s World Cup, in 1991",
+      "k": "number",
+      "src": "https://www.fifa.com/en/articles/every-final-highlights",
+      "d": 3
+    },
+    {
+      "w": "48",
+      "means": "With 104 games in all",
+      "ex": "The Women’s World Cup will grow to 48 teams in 2031",
+      "k": "number",
+      "src": "https://inside.fifa.com/media-releases/council-landmark-decisions-future-of-womens-world-cup-fight-against-racism",
+      "d": 2,
+      "current": true
+    },
+    {
+      "w": "354",
+      "means": "Over about 24 years",
+      "ex": "Kristine Lilly played a world-record 354 games for the USA",
+      "k": "number",
+      "src": "https://www.fifa.com/en/articles/lilly-formiga-and-more-all-time-womens-world-cup-appearances-australia-new-zealand-2023",
+      "d": 3,
+      "current": true
+    },
+    {
+      "w": "Pasadena",
+      "means": "Over 90,000 at the Rose Bowl",
+      "ex": "The 1999 World Cup final was played in Pasadena",
+      "k": "place",
+      "src": "https://www.ussoccer.com/history/us-soccer-as-host/1999-fifa-womens-world-cup",
+      "d": 1
+    },
+    {
+      "w": "Rio de Janeiro",
+      "means": "At the famous Maracanã",
+      "ex": "The 2027 Women’s World Cup final will be played in Rio de Janeiro",
+      "k": "place",
+      "src": "https://www.fifa.com/en/tournaments/womens/womensworldcup/brazil-2027/articles/maracana-stadium-history",
+      "d": 1,
+      "current": true
+    },
+    {
+      "w": "Sydney",
+      "means": "At Stadium Australia",
+      "ex": "The 2023 Women’s World Cup final was played in Sydney",
+      "k": "place",
+      "src": "https://www.fifa.com/en/tournaments/womens/womensworldcup/australia-new-zealand2023/articles/womens-world-cup-champions-norway-usa-japan-germany-australia-new-zealand-2023",
+      "d": 1
+    },
+    {
+      "w": "London",
+      "means": "At Wembley, before 87,192 fans",
+      "ex": "The 2022 Women’s EURO final was played in London",
+      "k": "place",
+      "src": "https://www.uefa.com/womenseuro/news/0277-15c1d9745f40-baafd6e58b36-1000--england-2-1-germany-aet-kelly-gives-lionesses-wembley-fin/",
+      "d": 1
+    },
+    {
+      "w": "Basel",
+      "means": "Over Spain, after a 1–1 draw",
+      "ex": "England won the 2025 EURO final on penalties in Basel",
+      "k": "place",
+      "src": "https://www.uefa.com/womenseuro/news/029b-1e56a4b43051-3ec6381b01f6-1000--england-1-1-spain-aet-3-1-pens-highlights-lionesses-win-wo/",
+      "d": 2
+    },
+    {
+      "w": "Jesolo",
+      "means": "An Italian beach town, in 1985",
+      "ex": "The USA women’s team played its first games in Jesolo",
+      "k": "place",
+      "src": "https://www.ussoccer.com/history/timeline",
+      "d": 3
+    },
+    {
+      "w": "Golden Ball",
+      "means": "The award for the best player",
+      "ex": "Aitana Bonmatí won the Golden Ball at the 2023 World Cup",
+      "k": "term",
+      "src": "https://www.fifa.com/en/tournaments/womens/womensworldcup/australia-new-zealand2023/articles/fifa-womens-world-cup-awards-2023-all-the-winners",
+      "d": 1
+    },
+    {
+      "w": "Golden Boot",
+      "means": "For her five goals",
+      "ex": "Hinata Miyazawa won the Golden Boot at the 2023 World Cup",
+      "k": "term",
+      "src": "https://www.fifa.com/en/tournaments/womens/womensworldcup/australia-new-zealand2023/articles/hinata-miyazawa-japan-nadeshiko-unexpected-golden-boot-winner-world-cup-2023",
+      "d": 3
+    },
+    {
+      "w": "Golden Glove",
+      "means": "The award for the top keeper",
+      "ex": "Mary Earps won the Golden Glove at the 2023 World Cup",
+      "k": "term",
+      "src": "https://www.fifa.com/en/tournaments/womens/womensworldcup/australia-new-zealand2023/articles/fifa-womens-world-cup-awards-2023-all-the-winners",
+      "d": 2
+    },
+    {
+      "w": "golden goal",
+      "means": "An extra-time goal that ends it",
+      "ex": "Norway beat the USA on a golden goal in the 2000 Olympic final",
+      "k": "term",
+      "src": "https://www.ussoccer.com/history/timeline",
+      "d": 3
+    },
+    {
+      "w": "hat trick",
+      "means": "Three goals, the last a long lob",
+      "ex": "Carli Lloyd scored a 16-minute hat trick in the 2015 World Cup final",
+      "k": "term",
+      "src": "https://www.fifa.com/en/articles/every-final-highlights",
+      "d": 1
+    },
+    {
+      "w": "SheBelieves Cup",
+      "means": "Beat England, France and Germany",
+      "ex": "The USA won the first SheBelieves Cup in 2016",
+      "k": "term",
+      "src": "https://www.ussoccer.com/history/timeline",
+      "d": 2
+    },
+    {
+      "w": "Algarve Cup",
+      "means": "She scored three goals there",
+      "ex": "Christine Sinclair made her Canada debut at 16 at the 2000 Algarve Cup",
+      "k": "term",
+      "src": "https://www.fifa.com/en/tournaments/womens/u20womensworldcup/poland-2026/articles/christine-sinclair-before-they-became-stars",
+      "d": 3
+    },
+    {
+      "w": "Marta Award",
+      "means": "Named for Brazil’s great scorer",
+      "ex": "The FIFA Marta Award honors the year’s best goal in women’s soccer",
+      "k": "term",
+      "src": "https://www.fifa.com/en/articles/every-marta-goal-womens-world-cup",
+      "d": 2
+    },
+    {
+      "w": "Lionesses",
+      "means": "Back-to-back EURO champions",
+      "ex": "England’s women’s team is nicknamed the Lionesses",
+      "k": "nickname",
+      "src": "https://www.uefa.com/womenseuro/news/029b-1e56a4b43051-3ec6381b01f6-1000--england-1-1-spain-aet-3-1-pens-highlights-lionesses-win-wo/",
+      "d": 1
+    },
+    {
+      "w": "Matildas",
+      "means": "Named for a folk song",
+      "ex": "Australia’s team got its nickname, the Matildas, from a 1995 TV poll",
+      "k": "nickname",
+      "src": "https://www.fifa.com/en/tournaments/womens/womensworldcup/australia-new-zealand2023/articles/australia-matildas-nickname-history-womens-world-cup-2023",
+      "d": 1
+    },
+    {
+      "w": "Nadeshiko",
+      "means": "The 2011 world champions",
+      "ex": "Japan’s women’s team is known as the Nadeshiko",
+      "k": "nickname",
+      "src": "https://www.fifa.com/en/tournaments/womens/womensworldcup/australia-new-zealand2023/articles/hinata-miyazawa-japan-nadeshiko-unexpected-golden-boot-winner-world-cup-2023",
+      "d": 2
+    },
+    {
+      "w": "Seleção",
+      "means": "Marta’s national team",
+      "ex": "Brazil’s national team is often called the Seleção",
+      "k": "nickname",
+      "src": "https://www.fifa.com/en/articles/every-marta-goal-womens-world-cup",
+      "d": 2
+    },
+    {
+      "w": "’99ers",
+      "means": "The 1999 champions",
+      "ex": "The USA players who won the World Cup on home soil are the ’99ers",
+      "k": "nickname",
+      "src": "https://www.ussoccer.com/history/us-soccer-as-host/1999-fifa-womens-world-cup",
+      "d": 2
+    }
+  ],
+  "groups": [
+    [
+      "Carli Lloyd",
+      "Michelle Akers"
+    ],
+    [
+      "Mia Hamm",
+      "Abby Wambach",
+      "Christine Sinclair"
+    ],
+    [
+      "Megan Rapinoe",
+      "Alex Morgan"
+    ],
+    [
+      "USA",
+      "Norway"
+    ],
+    [
+      "Norway",
+      "Germany"
+    ],
+    [
+      "Japan",
+      "USA"
+    ],
+    [
+      "Spain",
+      "England"
+    ],
+    [
+      "Stars and Stripes",
+      "’99ers"
+    ]
+  ],
+  "cut": [
+    {
+      "w": "Marta (first to score at five World Cups)",
+      "why": "FIFA says Marta was first, but Christine Sinclair also scored at five and may have done it first in 2019. Ambiguous between two player answers"
+    },
+    {
+      "w": "17 (Marta’s World Cup goals)",
+      "why": "Repeats the Marta player card. Dropped to keep facts unique"
+    },
+    {
+      "w": "90,185 (1999 Rose Bowl crowd)",
+      "why": "FIFA says 90,185 but U.S. Soccer says 90,125. The sources disagree"
+    },
+    {
+      "w": "2031 and 2035 hosts",
+      "why": "Not appointed yet. FIFA’s Extraordinary Congress is set for later in 2026"
+    },
+    {
+      "w": "Canada Olympic medal count",
+      "why": "FIFA’s medal page contradicts itself (silver in its text, bronze in its list for 2012 and 2016)"
+    },
+    {
+      "w": "Germany Olympic bronzes",
+      "why": "FIFA’s page says three but lists four. Inconsistent"
+    },
+    {
+      "w": "Japan, first Asian World Cup winner",
+      "why": "No FIFA page found that states it"
+    },
+    {
+      "w": "Inka Grings (EURO top scorer)",
+      "why": "UEFA pages disagree on the all-time list (Heidi Mohr at 10 or 8)"
+    },
+    {
+      "w": "Esther González (EURO 2025 top scorer)",
+      "why": "Only the uefa.com page title could be seen, not its text"
+    },
+    {
+      "w": "Netherlands (2019 World Cup final)",
+      "why": "Needs ‘the’ before the blank, which reads badly with the other country answers. Used the 2017 EURO instead"
+    },
+    {
+      "w": "La Roja",
+      "why": "Chile uses the same nickname, and ‘the La Roja’ reads badly as a wrong option"
+    },
+    {
+      "w": "Sun Wen, Birgit Prinz, Hege Riise, Carin Jennings (Golden Ball winners)",
+      "why": "Supported by FIFA, but too obscure for most players and the player kind was already large"
+    },
+    {
+      "w": "Rose Lavelle (2019 final goal)",
+      "why": "Its sentence had to name Megan Rapinoe, another player answer. Trimmed"
+    },
+    {
+      "w": "Hannah Hampton (The Best goalkeeper 2025)",
+      "why": "Trimmed to keep keepers to one card and the number of hard cards down"
+    },
+    {
+      "w": "Parc des Princes",
+      "why": "Repeats the Mallory Swanson card’s fact"
+    },
+    {
+      "w": "Vlatko Andonovski",
+      "why": "The only fact we had was the date he was hired. Weak card"
+    },
+    {
+      "w": "Mary Earps and Hinata Miyazawa as player answers",
+      "why": "Used them in the Golden Glove and Golden Boot cards instead"
+    },
+    {
+      "w": "Kristine Lilly (30 World Cup games)",
+      "why": "Lilly’s 354 caps card covers her. One card per player"
+    },
+    {
+      "w": "2029",
+      "why": "“will host” gives it away, since 2029 is the only future year among the year answers"
+    },
+    {
+      "w": "Stars and Stripes",
+      "why": "Not a real everyday US nickname, mostly a FIFA writer’s flourish. It is also a near-fit with ’99ers. The source was off too. Nickname k keeps 5 cards"
+    }
+  ]
+}

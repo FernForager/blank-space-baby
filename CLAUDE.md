@@ -86,6 +86,7 @@ Ten categories, named on screen. The test for each one: who has the edge? Kids a
 - Soccer Fanatics: M-W (soccer sense) first, Dictionary.com (including its Collins British entries) second. Terms in neither are out (e.g. worldie, golazo, top bins, park the bus, brace).
 - Swifties: official sources first (taylorswift.com, the Recording Academy, RIAA, Billboard), Wikipedia second. No personal life.
 - Premier League: premierleague.com first. Items with `"current": true` (champion, promoted clubs, managers) are as of Oct 14, 2026 and need checking every season.
+- Soccer trivia decks (Oct 16, 2026): as few official sources as possible, one per category, no Wikipedia or news sites, not even as a backup. MLS mlssoccer.com, NWSL nwslsoccer.com, La Liga laliga.com, Bundesliga bundesliga.com, Serie A legaseriea.it, Ligue 1 ligue1.com, Liga MX ligamx.net, EPL premierleague.com, Champions League uefa.com, World Cup 2026 and Legends and Awards fifa.com (Awards may add ballondor.com), international men's and women's fifa.com plus uefa.com and ussoccer.com, Soccer Rules theifab.com, Club Nicknames the league sites above, Soccer Lingo Merriam-Webster and Dictionary.com. If the official site doesn't support a fact, the card is out.
 - Research anything that could have changed. Don't trust memory for current facts.
 
 ## Open

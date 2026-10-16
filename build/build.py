@@ -77,4 +77,5 @@ def main():
     open(os.path.join(ROOT, 'docs', 'index.html'), 'w').write(head + body + '\n</body>\n</html>\n')
     print('wrote docs/index.html')
 
-main()
+if __name__ == '__main__':   # so tools/checkdeck.py can import check() without rebuilding
+    main()

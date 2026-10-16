@@ -1,0 +1,698 @@
+{
+ "deck": "NWSL",
+ "primary": "nwslsoccer.com",
+ "secondary": "",
+ "as_of": "2026-10-15",
+ "items": [
+  {
+   "w": "Portland Thorns",
+   "means": "They won again in 2017 and 2022",
+   "ex": "Portland Thorns won the first NWSL Championship, in 2013",
+   "k": "club",
+   "src": "https://www.nwslsoccer.com/news/class-is-in-session-nwsl-playoffs-history-from-2013-to-2024",
+   "d": 2
+  },
+  {
+   "w": "FC Kansas City",
+   "means": "The club folded before 2018",
+   "ex": "FC Kansas City beat Seattle in both the 2014 and 2015 finals",
+   "k": "club",
+   "src": "https://www.nwslsoccer.com/news/class-is-in-session-nwsl-playoffs-history-from-2013-to-2024",
+   "d": 3
+  },
+  {
+   "w": "WNY Flash",
+   "means": "They moved to North Carolina in 2017",
+   "ex": "WNY Flash won the 2016 final, the first one decided on penalties",
+   "k": "club",
+   "src": "https://www.nwslsoccer.com/news/class-is-in-session-nwsl-playoffs-history-from-2013-to-2024",
+   "d": 3
+  },
+  {
+   "w": "NC Courage",
+   "means": "They also won the 2018 and 2019 titles",
+   "ex": "NC Courage won three Shields in a row, from 2017 to 2019",
+   "k": "club",
+   "src": "https://www.nwslsoccer.com/news/history-of-the-nwsl-shield",
+   "d": 2
+  },
+  {
+   "w": "Washington Spirit",
+   "means": "Kelley O’Hara headed in the winner",
+   "ex": "Washington Spirit won its first title in 2021, in extra time",
+   "k": "club",
+   "src": "https://www.nwslsoccer.com/news/match-recap-washington-spirit-vs-chicago-red-stars-11-20-2021",
+   "d": 2
+  },
+  {
+   "w": "Gotham FC",
+   "means": "Their second title in three years",
+   "ex": "Seeded eighth, Gotham FC still won the 2025 NWSL Championship",
+   "k": "club",
+   "src": "https://www.nwslsoccer.com/news/mvp-rose-lavelle-leads-gotham-to-second-nwsl-championship-victory-over-washington-spirit",
+   "d": 2
+  },
+  {
+   "w": "Orlando Pride",
+   "means": "The city’s first major league title",
+   "ex": "Orlando Pride won both the Shield and the championship in 2024",
+   "k": "club",
+   "src": "https://www.nwslsoccer.com/news/orlando-pride-lifts-first-nwsl-championship-trophy-2024-nwsl-championship-recap",
+   "d": 1
+  },
+  {
+   "w": "Seattle Reign",
+   "means": "They won a third Shield in 2022",
+   "ex": "Seattle Reign won back-to-back Shields in 2014 and 2015",
+   "k": "club",
+   "src": "https://www.nwslsoccer.com/news/history-of-the-nwsl-shield",
+   "d": 2
+  },
+  {
+   "w": "San Diego Wave",
+   "means": "Coached by Casey Stoney",
+   "ex": "In only its second season, San Diego Wave won the 2023 Shield",
+   "k": "club",
+   "src": "https://www.nwslsoccer.com/news/san-diego-wave-fc-claims-2023-nwsl-shield-presented-by-carmax",
+   "d": 2
+  },
+  {
+   "w": "KC Current",
+   "means": "Also a record 16 shutouts",
+   "ex": "KC Current set a league record with 21 wins in 2025",
+   "k": "club",
+   "src": "https://www.nwslsoccer.com/news/golden-boot-ironwomen-new-records-looking-back-at-2025-nwsl-season-milestones",
+   "d": 2
+  },
+  {
+   "w": "Denver Summit",
+   "means": "More than double Boston’s opener crowd",
+   "ex": "Denver Summit drew a record 63,004 fans to its first home game",
+   "k": "club",
+   "src": "https://www.nwslsoccer.com/news/no-place-like-home-denver-summit-inaugural-home-opener-at-mile-high-smashes-nwsl-attendance-record",
+   "d": 2,
+   "current": true
+  },
+  {
+   "w": "Temwa Chawinga",
+   "means": "Kansas City’s record-setting striker",
+   "ex": "Temwa Chawinga won NWSL MVP in both 2024 and 2025",
+   "k": "player",
+   "src": "https://www.nwslsoccer.com/news/records-returns-and-more-every-nwsl-club-s-biggest-storylines-in-2026-so-far",
+   "d": 2
+  },
+  {
+   "w": "Sam Kerr",
+   "means": "Temwa Chawinga broke it in 2024",
+   "ex": "Sam Kerr set the single-season goals record with 18 in 2019",
+   "k": "player",
+   "src": "https://www.nwslsoccer.com/news/a-history-of-the-nwsl-goal-record",
+   "d": 2
+  },
+  {
+   "w": "Kim Little",
+   "means": "She scored 16 goals for the Reign",
+   "ex": "Kim Little won MVP and the Golden Boot for Seattle in 2014",
+   "k": "player",
+   "src": "https://www.nwslsoccer.com/news/history-of-the-nwsl-shield",
+   "d": 3
+  },
+  {
+   "w": "Sophia Smith",
+   "means": "Portland’s No. 1 draft pick in 2020",
+   "ex": "In 2022, Sophia Smith became the youngest MVP in league history, at 22",
+   "k": "player",
+   "src": "https://www.nwslsoccer.com/news/portland-thorns-fc-striker-sophia-smith-named-2022-nwsl-most-valuable-player-presented-by-budweiser",
+   "d": 2
+  },
+  {
+   "w": "Marta",
+   "means": "A six-time world player of the year",
+   "ex": "At 38, Marta won her first NWSL title with Orlando",
+   "k": "player",
+   "src": "https://www.nwslsoccer.com/news/orlando-pride-lifts-first-nwsl-championship-trophy-2024-nwsl-championship-recap",
+   "d": 1
+  },
+  {
+   "w": "Barbra Banda",
+   "means": "She was named the final’s MVP",
+   "ex": "Barbra Banda scored the only goal of the 2024 NWSL final",
+   "k": "player",
+   "src": "https://www.nwslsoccer.com/news/orlando-pride-lifts-first-nwsl-championship-trophy-2024-nwsl-championship-recap",
+   "d": 2
+  },
+  {
+   "w": "Rose Lavelle",
+   "means": "She scored the only goal of the game",
+   "ex": "Gotham’s Rose Lavelle was named MVP of the 2025 final",
+   "k": "player",
+   "src": "https://www.nwslsoccer.com/news/mvp-rose-lavelle-leads-gotham-to-second-nwsl-championship-victory-over-washington-spirit",
+   "d": 2
+  },
+  {
+   "w": "Alex Morgan",
+   "means": "Wave fans call her the San Diegoat",
+   "ex": "The Wave retired the No. 13 shirt of Alex Morgan",
+   "k": "player",
+   "src": "https://www.nwslsoccer.com/news/alex-morgan-reflects-on-career-at-wave-number-retirement-this-means-everything",
+   "d": 1
+  },
+  {
+   "w": "Megan Rapinoe",
+   "means": "Jess Fishlock passed her in 2026",
+   "ex": "Until 2026, Megan Rapinoe held the Reign’s regular-season scoring record",
+   "k": "player",
+   "src": "https://www.nwslsoccer.com/news/sanchez-becomes-second-to-score-20-goals-fishlock-breaks-rapinoe-s-reign-scoring-record",
+   "d": 1
+  },
+  {
+   "w": "Jess Fishlock",
+   "means": "With Seattle since the league began",
+   "ex": "Jess Fishlock of the Reign was the NWSL’s 2021 MVP",
+   "k": "player",
+   "src": "https://www.nwslsoccer.com/news/portland-thorns-fc-striker-sophia-smith-named-2022-nwsl-most-valuable-player-presented-by-budweiser",
+   "d": 2
+  },
+  {
+   "w": "Christine Sinclair",
+   "means": "She spent 12 years in Portland",
+   "ex": "The Thorns retired No. 12 for Christine Sinclair, a first for the club",
+   "k": "player",
+   "src": "https://www.nwslsoccer.com/news/portland-thorns-to-retire-christine-sinclair-s-no-12-jersey-during-hall-of-fame-induction-ceremony",
+   "d": 2
+  },
+  {
+   "w": "Trinity Rodman",
+   "means": "Then she was Rookie of the Year",
+   "ex": "In 2021, Trinity Rodman became the NWSL’s youngest draft pick ever",
+   "k": "player",
+   "src": "https://www.nwslsoccer.com/news/washington-spirit-forward-trinity-rodman-named-2021-nwsl-rookie-of-the-year-presented-by-ally",
+   "d": 2
+  },
+  {
+   "w": "Malawi",
+   "means": "She is the first African-born MVP",
+   "ex": "Two-time MVP Temwa Chawinga comes from Malawi",
+   "k": "country",
+   "src": "https://www.nwslsoccer.com/news/kansas-city-current-forward-temwa-chawinga-named-2024-nwsl-most-valuable-player",
+   "d": 2
+  },
+  {
+   "w": "Scotland",
+   "means": "She arrived in Seattle in 2014",
+   "ex": "Kim Little, the 2014 MVP, comes from Scotland",
+   "k": "country",
+   "src": "https://www.nwslsoccer.com/news/a-history-of-the-nwsl-goal-record",
+   "d": 3
+  },
+  {
+   "w": "Wales",
+   "means": "48 goals in 166 games for her country",
+   "ex": "Jess Fishlock is the all-time top scorer for Wales",
+   "k": "country",
+   "src": "https://www.nwslsoccer.com/news/seattle-reign-captain-jess-fishlock-nwsl-original-to-retire-at-end-of-2026-season",
+   "d": 2
+  },
+  {
+   "w": "Canada",
+   "means": "Her last of four Olympics",
+   "ex": "Christine Sinclair won Olympic gold with Canada in 2021",
+   "k": "country",
+   "src": "https://www.nwslsoccer.com/news/portland-thorns-to-retire-christine-sinclair-s-no-12-jersey-during-hall-of-fame-induction-ceremony",
+   "d": 1
+  },
+  {
+   "w": "Tanzania",
+   "means": "She joined the Washington Spirit",
+   "ex": "In 2026, Clara Luvanga became the NWSL’s first player from Tanzania",
+   "k": "country",
+   "src": "https://www.nwslsoccer.com/news/sanchez-becomes-second-to-score-20-goals-fishlock-breaks-rapinoe-s-reign-scoring-record",
+   "d": 3
+  },
+  {
+   "w": "Australia",
+   "means": "She played for Perth Glory too",
+   "ex": "Sam Kerr’s national team is Australia",
+   "k": "country",
+   "src": "https://www.nwslsoccer.com/news/a-history-of-the-nwsl-goal-record",
+   "d": 1
+  },
+  {
+   "w": "8",
+   "means": "Each played 22 games",
+   "ex": "The NWSL’s first season, in 2013, had 8 teams",
+   "k": "number",
+   "src": "https://www.nwslsoccer.com/news/class-is-in-session-nwsl-playoffs-history-from-2013-to-2024",
+   "d": 2
+  },
+  {
+   "w": "16",
+   "means": "Boston and Denver joined in 2026",
+   "ex": "In 2026, the NWSL has 16 clubs",
+   "k": "number",
+   "src": "https://www.nwslsoccer.com/news/records-returns-and-more-every-nwsl-club-s-biggest-storylines-in-2026-so-far",
+   "d": 1,
+   "current": true
+  },
+  {
+   "w": "20",
+   "means": "Sam Kerr’s old record was 18",
+   "ex": "Temwa Chawinga scored a record 20 goals in 2024",
+   "k": "number",
+   "src": "https://www.nwslsoccer.com/news/kansas-city-current-forward-temwa-chawinga-named-2024-nwsl-most-valuable-player",
+   "d": 2
+  },
+  {
+   "w": "65",
+   "means": "They also won a record 21 games",
+   "ex": "In 2025, Kansas City set a league record with 65 points",
+   "k": "number",
+   "src": "https://www.nwslsoccer.com/news/golden-boot-ironwomen-new-records-looking-back-at-2025-nwsl-season-milestones",
+   "d": 3
+  },
+  {
+   "w": "190",
+   "means": "The most by any player, man or woman",
+   "ex": "Christine Sinclair scored 190 goals for Canada, a world record",
+   "k": "number",
+   "src": "https://www.nwslsoccer.com/news/portland-thorns-to-retire-christine-sinclair-s-no-12-jersey-during-hall-of-fame-induction-ceremony",
+   "d": 1
+  },
+  {
+   "w": "23",
+   "means": "A league record unbeaten start",
+   "ex": "Orlando’s unbeaten start to 2024 lasted a record 23 games",
+   "k": "number",
+   "src": "https://www.nwslsoccer.com/news/orlando-pride-lifts-first-nwsl-championship-trophy-2024-nwsl-championship-recap",
+   "d": 3
+  },
+  {
+   "w": "Shield",
+   "means": "Orlando won it in 2024",
+   "ex": "The NWSL Shield goes to the team with the best regular-season record",
+   "k": "term",
+   "src": "https://www.nwslsoccer.com/news/orlando-pride-lifts-first-nwsl-championship-trophy-2024-nwsl-championship-recap",
+   "d": 1
+  },
+  {
+   "w": "Golden Boot",
+   "means": "The award for the top scorer",
+   "ex": "Temwa Chawinga’s 15 goals in 2025 won her a second straight Golden Boot",
+   "k": "term",
+   "src": "https://www.nwslsoccer.com/news/golden-boot-ironwomen-new-records-looking-back-at-2025-nwsl-season-milestones",
+   "d": 1
+  },
+  {
+   "w": "Challenge Cup",
+   "means": "The club’s first trophy",
+   "ex": "Houston Dash won the 2020 Challenge Cup, beating Chicago 2–0",
+   "k": "term",
+   "src": "https://www.nwslsoccer.com/news/21947-2",
+   "d": 2
+  },
+  {
+   "w": "Ironwoman",
+   "means": "Kaleigh Kurtz did it four years running",
+   "ex": "Players who play every minute of every game earn Ironwoman status",
+   "k": "term",
+   "src": "https://www.nwslsoccer.com/news/golden-boot-ironwomen-new-records-looking-back-at-2025-nwsl-season-milestones",
+   "d": 2
+  },
+  {
+   "w": "Decision Day",
+   "means": "The final weekend of the season",
+   "ex": "San Diego clinched the 2023 Shield with a win on Decision Day",
+   "k": "term",
+   "src": "https://www.nwslsoccer.com/news/san-diego-wave-fc-claims-2023-nwsl-shield-presented-by-carmax",
+   "d": 3
+  },
+  {
+   "w": "draft",
+   "means": "Ended by the 2024 labor deal",
+   "ex": "The NWSL was the first major U.S. pro league to get rid of its draft",
+   "k": "term",
+   "src": "https://www.nwslsoccer.com/leadership-team",
+   "d": 2
+  },
+  {
+   "w": "Laura Harvey",
+   "means": "The Reign’s first head coach",
+   "ex": "In 2015, Laura Harvey became the first two-time Coach of the Year",
+   "k": "leader",
+   "src": "https://www.nwslsoccer.com/news/history-of-the-nwsl-shield",
+   "d": 2
+  },
+  {
+   "w": "Jessica Berman",
+   "means": "She led the growth to 16 clubs",
+   "ex": "Jessica Berman became NWSL commissioner in 2022",
+   "k": "leader",
+   "src": "https://www.nwslsoccer.com/leadership-team",
+   "d": 2
+  },
+  {
+   "w": "Casey Stoney",
+   "means": "In the club’s second season",
+   "ex": "Casey Stoney coached San Diego to the 2023 NWSL Shield",
+   "k": "leader",
+   "src": "https://www.nwslsoccer.com/news/san-diego-wave-fc-claims-2023-nwsl-shield-presented-by-carmax",
+   "d": 3
+  },
+  {
+   "w": "Juan Carlos Amorós",
+   "means": "Coach of the Year in 2023",
+   "ex": "Juan Carlos Amorós took Gotham from last place to the 2023 title",
+   "k": "leader",
+   "src": "https://www.nwslsoccer.com/news/nj-ny-gotham-fc-wins-2023-nwsl-championship-presented-by-bud-light",
+   "d": 3
+  },
+  {
+   "w": "Seb Hines",
+   "means": "Coach of the Year in 2024",
+   "ex": "Seb Hines coached Orlando to the 2024 NWSL Shield",
+   "k": "leader",
+   "src": "https://www.nwslsoccer.com/news/orlando-pride-head-coach-seb-hines-named-2024-nwsl-coach-of-the-year",
+   "d": 3
+  },
+  {
+   "w": "Bev Yanez",
+   "means": "She coaches Racing Louisville FC",
+   "ex": "Bev Yanez was named the 2025 NWSL Coach of the Year",
+   "k": "leader",
+   "src": "https://www.nwslsoccer.com/news/nwsl-celebrates-2025-awards",
+   "d": 3
+  },
+  {
+   "w": "CPKC Stadium",
+   "means": "Home of the Kansas City Current",
+   "ex": "CPKC Stadium was the first venue built for a women’s pro team",
+   "k": "stadium",
+   "src": "https://www.nwslsoccer.com/news/2024-nwsl-season-opens-with-ukg-nwsl-challenge-cup",
+   "d": 2
+  },
+  {
+   "w": "Audi Field",
+   "means": "Home of the Washington Spirit",
+   "ex": "The NWSL picked Audi Field to host both the 2022 and 2026 finals",
+   "k": "stadium",
+   "src": "https://www.nwslsoccer.com/news/2026-nwsl-championship-presented-by-google-pixel-to-be-staged-at-audi-field-in-washington-d-c",
+   "d": 2
+  },
+  {
+   "w": "Lumen Field",
+   "means": "In Seattle",
+   "ex": "The Reign play their home games at Lumen Field",
+   "k": "stadium",
+   "src": "https://www.nwslsoccer.com/news/seattle-reign-captain-jess-fishlock-nwsl-original-to-retire-at-end-of-2026-season",
+   "d": 1
+  },
+  {
+   "w": "Providence Park",
+   "means": "A 3–0 win over Angel City",
+   "ex": "Sinclair scored in her last regular-season home game at Providence Park",
+   "k": "stadium",
+   "src": "https://www.nwslsoccer.com/news/christine-sinclair-scores-in-final-regular-season-game-at-providence-park",
+   "d": 2
+  },
+  {
+   "w": "Snapdragon Stadium",
+   "means": "In San Diego",
+   "ex": "Gotham won the 2023 final before a record 25,011 fans at Snapdragon Stadium",
+   "k": "stadium",
+   "src": "https://www.nwslsoccer.com/news/nj-ny-gotham-fc-wins-2023-nwsl-championship-presented-by-bud-light",
+   "d": 3
+  },
+  {
+   "w": "Gillette Stadium",
+   "means": "Denver’s debut more than doubled it",
+   "ex": "Boston Legacy drew 30,207 fans to Gillette Stadium for its first home game",
+   "k": "stadium",
+   "src": "https://www.nwslsoccer.com/news/no-place-like-home-denver-summit-inaugural-home-opener-at-mile-high-smashes-nwsl-attendance-record",
+   "d": 3
+  },
+  {
+   "w": "Portland",
+   "means": "Portland Thorns FC",
+   "ex": "The Thorns play their home games in Portland",
+   "k": "city",
+   "src": "https://www.nwslsoccer.com/about-the-nwsl",
+   "d": 1
+  },
+  {
+   "w": "Orlando",
+   "means": "Champions in 2024",
+   "ex": "The Pride play their home games in Orlando",
+   "k": "city",
+   "src": "https://www.nwslsoccer.com/news/orlando-pride-lifts-first-nwsl-championship-trophy-2024-nwsl-championship-recap",
+   "d": 1
+  },
+  {
+   "w": "Houston",
+   "means": "The Houston Dash joined in 2014",
+   "ex": "The Dash play their home games in Houston",
+   "k": "city",
+   "src": "https://www.nwslsoccer.com/news/class-is-in-session-nwsl-playoffs-history-from-2013-to-2024",
+   "d": 1
+  },
+  {
+   "w": "San Diego",
+   "means": "San Diego Wave FC",
+   "ex": "The Wave play their home games in San Diego",
+   "k": "city",
+   "src": "https://www.nwslsoccer.com/about-the-nwsl",
+   "d": 1
+  },
+  {
+   "w": "Kansas City",
+   "means": "At CPKC Stadium",
+   "ex": "The Current play their home games in Kansas City",
+   "k": "city",
+   "src": "https://www.nwslsoccer.com/news/2024-nwsl-season-opens-with-ukg-nwsl-challenge-cup",
+   "d": 1
+  },
+  {
+   "w": "Denver",
+   "means": "Its first home game drew 63,004",
+   "ex": "The Summit play their home games in Denver",
+   "k": "city",
+   "src": "https://www.nwslsoccer.com/news/no-place-like-home-denver-summit-inaugural-home-opener-at-mile-high-smashes-nwsl-attendance-record",
+   "d": 1
+  },
+  {
+   "w": "Louisville",
+   "means": "Racing Louisville FC",
+   "ex": "The club known as Racing plays its home games in Louisville",
+   "k": "city",
+   "src": "https://www.nwslsoccer.com/about-the-nwsl",
+   "d": 1
+  },
+  {
+   "w": "Washington",
+   "means": "Home field: Audi Field",
+   "ex": "The Spirit play their home games in Washington",
+   "k": "city",
+   "src": "https://www.nwslsoccer.com/news/2026-nwsl-championship-presented-by-google-pixel-to-be-staged-at-audi-field-in-washington-d-c",
+   "d": 1
+  },
+  {
+   "w": "2013",
+   "means": "With eight teams",
+   "ex": "The NWSL played its first season in 2013",
+   "k": "year",
+   "src": "https://www.nwslsoccer.com/news/class-is-in-session-nwsl-playoffs-history-from-2013-to-2024",
+   "d": 1
+  },
+  {
+   "w": "2020",
+   "means": "No playoffs were held either",
+   "ex": "No NWSL regular season was played in 2020",
+   "k": "year",
+   "src": "https://www.nwslsoccer.com/news/class-is-in-session-nwsl-playoffs-history-from-2013-to-2024",
+   "d": 1
+  },
+  {
+   "w": "2026",
+   "means": "Two new clubs in one year",
+   "ex": "Boston Legacy and Denver Summit both played their first season in 2026",
+   "k": "year",
+   "src": "https://www.nwslsoccer.com/news/2026-nwsl-schedule-release-how-to-watch-denver-summit-fc",
+   "d": 1
+  },
+  {
+   "w": "2022",
+   "means": "Two new clubs in Southern California",
+   "ex": "Angel City FC and San Diego Wave both joined the league in 2022",
+   "k": "year",
+   "src": "https://www.nwslsoccer.com/news/class-is-in-session-nwsl-playoffs-history-from-2013-to-2024",
+   "d": 2
+  },
+  {
+   "w": "2016",
+   "means": "They reached the playoffs in 2017",
+   "ex": "The Orlando Pride joined the league in 2016",
+   "k": "year",
+   "src": "https://www.nwslsoccer.com/news/class-is-in-session-nwsl-playoffs-history-from-2013-to-2024",
+   "d": 2
+  },
+  {
+   "w": "2028",
+   "means": "It will be the league’s 18th club",
+   "ex": "Columbus is set to start play in the NWSL in 2028",
+   "k": "year",
+   "src": "https://www.nwslsoccer.com/news/nwsl-awards-expansion-franchise-to-columbus-marking-the-league-s-18th-club",
+   "d": 2,
+   "current": true
+  }
+ ],
+ "groups": [
+  [
+   "WNY Flash",
+   "NC Courage"
+  ],
+  [
+   "FC Kansas City",
+   "KC Current"
+  ],
+  [
+   "WNY Flash",
+   "NC Courage"
+  ],
+  [
+   "FC Kansas City",
+   "KC Current"
+  ],
+  [
+   "Orlando Pride",
+   "San Diego Wave"
+  ],
+  [
+   "Temwa Chawinga",
+   "Sam Kerr"
+  ],
+  [
+   "Marta",
+   "Barbra Banda",
+   "Rose Lavelle"
+  ],
+  [
+   "Megan Rapinoe",
+   "Jess Fishlock",
+   "Kim Little"
+  ],
+  [
+   "Sophia Smith",
+   "Christine Sinclair"
+  ],
+  [
+   "Scotland",
+   "Wales"
+  ],
+  [
+   "Malawi",
+   "Tanzania"
+  ],
+  [
+   "20",
+   "23"
+  ],
+  [
+   "Shield",
+   "Challenge Cup"
+  ],
+  [
+   "Casey Stoney",
+   "Seb Hines"
+  ],
+  [
+   "Juan Carlos Amorós",
+   "Bev Yanez"
+  ],
+  [
+   "Lumen Field",
+   "Providence Park"
+  ],
+  [
+   "Audi Field",
+   "Snapdragon Stadium"
+  ],
+  [
+   "CPKC Stadium",
+   "Gillette Stadium"
+  ],
+  [
+   "2022",
+   "2026",
+   "2028"
+  ],
+  [
+   "2013",
+   "2016"
+  ]
+ ],
+ "cut": [
+  {
+   "w": "Ashley Sanchez",
+   "why": "Tied the 20-goal season record in Sept 2026 with games left, so the record is still moving"
+  },
+  {
+   "w": "2026 champion and Shield",
+   "why": "Not decided yet. The final is Nov 21, 2026 at Audi Field"
+  },
+  {
+   "w": "All-time leading scorer",
+   "why": "No current career total found on nwslsoccer.com, only older or partial figures"
+  },
+  {
+   "w": "Jaedyn Shaw",
+   "why": "Youngest to 25 career goals (2026) is an active record and too obscure"
+  },
+  {
+   "w": "Sofia Huerta",
+   "why": "Career assists record (32) is still active and changing"
+  },
+  {
+   "w": "Laura Harvey (three-time Coach of the Year)",
+   "why": "Current-only claim, so it uses the timeless first-to-win-twice fact instead"
+  },
+  {
+   "w": "Sky Blue FC",
+   "why": "Gotham’s old name. Same franchise as Gotham FC, so it can’t be a clean wrong answer"
+  },
+  {
+   "w": "Utah Royals 2018 / Bay FC 2024",
+   "why": "The playoffs-history page files Bay FC and Utah under the wrong year heading"
+  },
+  {
+   "w": "Kerr losing the 2019 final to Houston",
+   "why": "One official page says this but contradicts the playoffs page (Courage beat Chicago 4–0)"
+  },
+  {
+   "w": "Rose Lavelle off the bench",
+   "why": "Official pages disagree on whether she subbed in and assisted or scored. Kept only the MVP fact"
+  },
+  {
+   "w": "Kelley O’Hara",
+   "why": "Dropped to keep the deck near 60. It’s in the Spirit card’s means line instead"
+  },
+  {
+   "w": "Lauren Holiday",
+   "why": "Dropped to keep the deck near 60 (first MVP, 2013)"
+  },
+  {
+   "w": "Bay FC at Oracle Park",
+   "why": "Old attendance record, beaten in 2026"
+  },
+  {
+   "w": "Savy King, Mallory Swanson, Sophia Wilson returns",
+   "why": "Health and maternity stories are personal life"
+  },
+  {
+   "w": "Boston as 15th club",
+   "why": "Only supported by a media-guide PDF, not a www.nwslsoccer.com page"
+  },
+  {
+   "w": "Media guide PDFs",
+   "why": "On images.nwslsoccer.com. Not used, to keep to www.nwslsoccer.com pages only"
+  }
+ ]
+}
