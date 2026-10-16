@@ -98,7 +98,7 @@
       "w": "Frank Lampard",
       "means": "The most long-range goals of anyone",
       "ex": "Frank Lampard scored 41 Premier League goals from outside the box",
-      "hook": "Premier",
+      "hook": "box",
       "k": "player",
       "src": "https://www.premierleague.com/en/stats/records",
       "d": 2
@@ -287,7 +287,7 @@
       "w": "Sam Allardyce",
       "means": "A record, from Bolton to Leeds",
       "ex": "Sam Allardyce managed nine different Premier League clubs",
-      "hook": "Premier",
+      "hook": "nine",
       "k": "manager",
       "src": "https://www.premierleague.com/en/stats/records",
       "d": 2
@@ -413,7 +413,7 @@
       "w": "6",
       "means": "Including Arsenal, Everton and Spurs",
       "ex": "Since 1992, 6 clubs have played in every Premier League season",
-      "hook": "Premier",
+      "hook": "every",
       "k": "number",
       "src": "https://www.premierleague.com/en/premier-league-explained",
       "d": 2,
@@ -743,6 +743,10 @@
     [
       "Sky Blues",
       "Clarets"
+    ],
+    [
+      "Aston Villa",
+      "Crystal Palace"
     ]
   ],
   "cut": [
