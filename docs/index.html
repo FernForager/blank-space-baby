@@ -144,15 +144,16 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .key:active:not(:disabled) { transform: translateY(4px); box-shadow: 0 1px 0 var(--btn-edge), 0 2px 4px rgba(0,0,0,.25); }
 .key:disabled { cursor: default; }
 
-/* the tiles: white, yellow card and red card keys, one color per column */
+/* the tiles: easy, medium and hard, one column each */
 #p-board.tiles { grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: repeat(6, auto); grid-auto-flow: column; gap: 9px 8px; padding-bottom: 4px; }
 .tile { position: relative; min-height: 52px; min-width: 0; padding: 4px 6px; font-size: 17px; line-height: 1.04; display: flex; align-items: center; justify-content: center; text-align: center; border-radius: 10px; }
-.tile.c1 { background: var(--c1); box-shadow: 0 4px 0 var(--c1-edge), 0 6px 8px rgba(0,0,0,.25); }
-.tile.c2 { background: var(--c2); box-shadow: 0 4px 0 var(--c2-edge), 0 6px 8px rgba(0,0,0,.25); }
-.tile.c3 { background: var(--c3); box-shadow: 0 4px 0 var(--c3-edge), 0 6px 8px rgba(0,0,0,.25); color: #fff; }
+/* every tile is a cream key like the answer buttons. A small referee's card in the corner marks medium (yellow) and hard (red),
+   and easy tiles have none (Morg, Oct 16, 2026: the bold colors took over the cabinet) */
+.tile { background: var(--btn); color: var(--btn-ink); box-shadow: 0 4px 0 var(--btn-edge), 0 6px 8px rgba(0,0,0,.25); padding-left: 9px; padding-right: 9px; }
+.tile.c2::after, .tile.c3::after { content: ""; position: absolute; top: 5px; right: 6px; width: 7px; height: 10px; border-radius: 1.5px; box-shadow: 0 0 0 1px rgba(0,0,0,.18); }
+.tile.c2::after { background: var(--c2); } .tile.c3::after { background: var(--c3); }
 .tile:active:not(:disabled) { transform: translateY(3px); box-shadow: 0 1px 0 rgba(0,0,0,.4); }
 .tile.done, .tile.miss { transform: translateY(3px); box-shadow: 0 1px 0 rgba(0,0,0,.4); opacity: .3; }
-.tile.c3.done, .tile.c3.miss { color: #fff; }
 .hk { display: block; width: 100%; overflow-wrap: normal; word-break: normal; hyphens: none; }
 
 /* answer buttons */
