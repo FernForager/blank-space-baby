@@ -95,13 +95,9 @@
   "v": "ok"
  },
  "alpha:15": {
-  "at": "2026-10-16T23:55:32Z",
-  "fix": {
-   "ex": "The bench yelled “six seven” when the sub board went up"
-  },
-  "h": "b833e397a7",
-  "note": "sentence spelled out 6 and 7, which gave the answer away",
-  "v": "fix"
+  "at": "2026-10-16T23:59:29Z",
+  "h": "bf6afbf812",
+  "v": "ok"
  },
  "alpha:16": {
   "at": "2026-10-16T23:55:32Z",
@@ -308,13 +304,9 @@
   "v": "ok"
  },
  "alpha:52": {
-  "at": "2026-10-16T23:55:32Z",
-  "fix": {
-   "ex": "Mom ran the snack schedule, carpool, and team party, so she is mother"
-  },
-  "h": "3db3583fcb",
-  "note": "serial comma per Chicago",
-  "v": "fix"
+  "at": "2026-10-16T23:59:29Z",
+  "h": "44431e4d30",
+  "v": "ok"
  },
  "alpha:53": {
   "at": "2026-10-16T23:55:32Z",
@@ -363,13 +355,9 @@
   "v": "ok"
  },
  "alpha:61": {
-  "at": "2026-10-16T23:55:32Z",
-  "fix": {
-   "ex": "The striker asked, “Chat, is this real?” after scoring a hat trick"
-  },
-  "h": "a67db73d00",
-  "note": "a quoted question starts with a capital, comma after asked per Chicago",
-  "v": "fix"
+  "at": "2026-10-16T23:59:29Z",
+  "h": "e0e63b1286",
+  "v": "ok"
  },
  "alpha:62": {
   "at": "2026-10-16T23:55:32Z",
@@ -2659,13 +2647,9 @@
   "v": "ok"
  },
  "epl:24": {
-  "at": "2026-10-16T23:54:41Z",
-  "fix": {
-   "ex": "Bronze statues of Arsenal legends stand outside Emirates Stadium"
-  },
-  "h": "ae65de6503",
-  "note": "dropped “the” before the blank so Anfield and Old Trafford read grammatically",
-  "v": "fix"
+  "at": "2026-10-16T23:59:29Z",
+  "h": "1360501bd5",
+  "v": "ok"
  },
  "epl:25": {
   "at": "2026-10-16T23:54:41Z",
@@ -2733,13 +2717,9 @@
   "v": "ok"
  },
  "epl:37": {
-  "at": "2026-10-16T23:54:41Z",
-  "fix": {
-   "means": "Possibly from their red-striped shirts"
-  },
-  "h": "d1077fceed",
-  "note": "hyphenated compound adjective, firmer than “maybe”",
-  "v": "fix"
+  "at": "2026-10-16T23:59:29Z",
+  "h": "a84bf62998",
+  "v": "ok"
  },
  "epl:38": {
   "at": "2026-10-16T23:54:41Z",
@@ -2822,14 +2802,9 @@
   "v": "ok"
  },
  "epl:8": {
-  "at": "2026-10-16T23:54:41Z",
-  "fix": {
-   "ex": "Hull City beat Middlesbrough 1–0 in the 2026 playoff final",
-   "hook": "playoff"
-  },
-  "h": "51e79578de",
-  "note": "Merriam-Webster spells playoff closed",
-  "v": "fix"
+  "at": "2026-10-16T23:59:29Z",
+  "h": "48cfc9a920",
+  "v": "ok"
  },
  "epl:9": {
   "at": "2026-10-16T23:54:41Z",
@@ -5034,22 +5009,14 @@
   "v": "ok"
  },
  "lingo-more:14": {
-  "at": "2026-10-16T23:56:48Z",
-  "fix": {
-   "ex": "The coach and the trainer must stay in the technical area"
-  },
-  "h": "1f530d796b",
-  "note": "Cut a trailing phrase the means line already covers",
-  "v": "fix"
+  "at": "2026-10-16T23:59:29Z",
+  "h": "0be3e89907",
+  "v": "ok"
  },
  "lingo-more:15": {
-  "at": "2026-10-16T23:56:48Z",
-  "fix": {
-   "ex": "The ball sat in the midfield, halfway between the two goals"
-  },
-  "h": "6e42c90243",
-  "note": "Other answers need “the,” so “in midfield” gave it away",
-  "v": "fix"
+  "at": "2026-10-16T23:59:29Z",
+  "h": "7799a2084f",
+  "v": "ok"
  },
  "lingo-more:16": {
   "at": "2026-10-16T23:56:48Z",
@@ -5062,8 +5029,8 @@
   "v": "ok"
  },
  "lingo-more:18": {
-  "at": "2026-10-16T23:56:48Z",
-  "h": "12b23b8461",
+  "at": "2026-10-16T23:59:29Z",
+  "h": "7af059e950",
   "v": "ok"
  },
  "lingo-more:19": {
@@ -5088,8 +5055,8 @@
   "v": "ok"
  },
  "lingo-more:22": {
-  "at": "2026-10-16T23:56:48Z",
-  "h": "a460e5b7f9",
+  "at": "2026-10-16T23:59:29Z",
+  "h": "4ecd1d5061",
   "v": "ok"
  },
  "lingo-more:23": {
@@ -5120,13 +5087,9 @@
   "v": "ok"
  },
  "lingo-more:28": {
-  "at": "2026-10-16T23:56:48Z",
-  "fix": {
-   "ex": "The ball rolled out over the sideline, so the defender took a throw-in"
-  },
-  "h": "0659dcc4dd",
-  "note": "“Out along the sideline” is unclear, the ball must cross it",
-  "v": "fix"
+  "at": "2026-10-16T23:59:29Z",
+  "h": "67926b6183",
+  "v": "ok"
  },
  "lingo-more:29": {
   "at": "2026-10-16T23:56:48Z",
@@ -5229,22 +5192,15 @@
   "v": "ok"
  },
  "lingo-more:46": {
-  "at": "2026-10-16T23:56:48Z",
-  "fix": {
-   "ex": "Under the silver goal rule, the team ahead halfway through extra time won"
-  },
-  "h": "64c83e3540",
-  "note": "Gerund subject and vague “wins it” read clumsily",
-  "v": "fix"
+  "at": "2026-10-16T23:59:29Z",
+  "h": "1c0cccc319",
+  "v": "ok"
  },
  "lingo-more:47": {
-  "at": "2026-10-16T23:56:48Z",
-  "fix": {
-   "ex": "In some cups, each away goal once counted for more than a home goal"
-  },
-  "h": "eb85c8ab6c",
-  "note": "“an ___” fit only away goal",
-  "v": "fix"
+  "at": "2026-10-16T23:59:29Z",
+  "h": "35a10336cd",
+  "note": "goalless reads as nonsense when drawn, rest fit",
+  "v": "ok"
  },
  "lingo-more:48": {
   "at": "2026-10-16T23:56:48Z",
@@ -6409,8 +6365,8 @@
   "v": "ok"
  },
  "parents:1": {
-  "at": "2026-10-16T23:55:41Z",
-  "h": "27ea3d1c33",
+  "at": "2026-10-16T23:59:29Z",
+  "h": "9e894650e7",
   "v": "ok"
  },
  "parents:10": {
@@ -6430,13 +6386,9 @@
   "v": "ok"
  },
  "parents:13": {
-  "at": "2026-10-16T23:55:41Z",
-  "fix": {
-   "hook": "final"
-  },
-  "h": "322afe38e8",
-  "note": "Hook was Mom, the final is the key soccer word",
-  "v": "fix"
+  "at": "2026-10-16T23:59:29Z",
+  "h": "39015e3c00",
+  "v": "ok"
  },
  "parents:14": {
   "at": "2026-10-16T23:55:41Z",
@@ -6444,13 +6396,9 @@
   "v": "ok"
  },
  "parents:15": {
-  "at": "2026-10-16T23:55:41Z",
-  "fix": {
-   "ex": "When the other team bragged they would win, the captain said “as if”"
-  },
-  "h": "8a5dbd5a67",
-  "note": "Said appeared twice, bragged is more concrete",
-  "v": "fix"
+  "at": "2026-10-16T23:59:29Z",
+  "h": "7fa199b5a2",
+  "v": "ok"
  },
  "parents:16": {
   "at": "2026-10-16T23:55:41Z",
@@ -6458,8 +6406,8 @@
   "v": "ok"
  },
  "parents:17": {
-  "at": "2026-10-16T23:55:41Z",
-  "h": "6858bc0221",
+  "at": "2026-10-16T23:59:29Z",
+  "h": "569fe6fa86",
   "v": "ok"
  },
  "parents:18": {
@@ -6473,8 +6421,8 @@
   "v": "ok"
  },
  "parents:2": {
-  "at": "2026-10-16T23:55:41Z",
-  "h": "23629582b4",
+  "at": "2026-10-16T23:59:29Z",
+  "h": "0c4a50db2e",
   "v": "ok"
  },
  "parents:20": {
@@ -6488,13 +6436,9 @@
   "v": "ok"
  },
  "parents:22": {
-  "at": "2026-10-16T23:55:41Z",
-  "fix": {
-   "ex": "When the coach said to hustle, Dad nodded and said “word”"
-  },
-  "h": "14e0bd4b45",
-  "note": "Cut needless words, agreed also repeated the means",
-  "v": "fix"
+  "at": "2026-10-16T23:59:29Z",
+  "h": "46c7f1363a",
+  "v": "ok"
  },
  "parents:23": {
   "at": "2026-10-16T23:55:41Z",
@@ -6523,13 +6467,9 @@
   "v": "ok"
  },
  "parents:28": {
-  "at": "2026-10-16T23:55:41Z",
-  "fix": {
-   "ex": "The keeper let in one goal, but the coach just said “no biggie”"
-  },
-  "h": "ea22d79972",
-  "note": "Bare it was ___ slot ruled out most exclamations by grammar, quoting fits them all",
-  "v": "fix"
+  "at": "2026-10-16T23:59:29Z",
+  "h": "4283575034",
+  "v": "ok"
  },
  "parents:29": {
   "at": "2026-10-16T23:55:41Z",
@@ -6550,8 +6490,8 @@
   "v": "ok"
  },
  "parents:31": {
-  "at": "2026-10-16T23:55:41Z",
-  "h": "070765485c",
+  "at": "2026-10-16T23:59:29Z",
+  "h": "7004c25c2c",
   "v": "ok"
  },
  "parents:32": {
@@ -6570,22 +6510,14 @@
   "v": "ok"
  },
  "parents:35": {
-  "at": "2026-10-16T23:55:41Z",
-  "fix": {
-   "ex": "The trophy’s bling was so bright that Dad wore sunglasses"
-  },
-  "h": "1cc1d18eaf",
-  "note": "so much ___ needs a mass noun and ruled out most wrong answers, shiny dropped since the means says it",
-  "v": "fix"
+  "at": "2026-10-16T23:59:29Z",
+  "h": "f246a62ae1",
+  "v": "ok"
  },
  "parents:36": {
-  "at": "2026-10-16T23:55:41Z",
-  "fix": {
-   "ex": "The coach gave the keeper her props for that diving save"
-  },
-  "h": "9c9adac614",
-  "note": "gave the keeper ___ ruled out singular nouns, her ___ fits all and is the natural idiom",
-  "v": "fix"
+  "at": "2026-10-16T23:59:29Z",
+  "h": "e0671c8c70",
+  "v": "ok"
  },
  "parents:37": {
   "at": "2026-10-16T23:55:41Z",
@@ -6599,9 +6531,8 @@
   "v": "ok"
  },
  "parents:39": {
-  "at": "2026-10-16T23:55:41Z",
-  "h": "edaee03e5b",
-  "note": "a ___ rules out peeps, props, kicks and bling, others fit",
+  "at": "2026-10-16T23:59:29Z",
+  "h": "ddc6785923",
   "v": "ok"
  },
  "parents:4": {
@@ -6610,13 +6541,9 @@
   "v": "ok"
  },
  "parents:40": {
-  "at": "2026-10-16T23:55:41Z",
-  "fix": {
-   "hook": "ref"
-  },
-  "h": "b250563aa8",
-  "note": "Hook ref is the key soccer word, yelled was weak",
-  "v": "fix"
+  "at": "2026-10-16T23:59:29Z",
+  "h": "84f15fd2c6",
+  "v": "ok"
  },
  "parents:41": {
   "at": "2026-10-16T23:55:41Z",
@@ -6680,13 +6607,13 @@
   "v": "ok"
  },
  "parents:7": {
-  "at": "2026-10-16T23:55:41Z",
-  "h": "e92f209502",
+  "at": "2026-10-16T23:59:29Z",
+  "h": "98871058c6",
   "v": "ok"
  },
  "parents:8": {
-  "at": "2026-10-16T23:55:41Z",
-  "h": "64f56f535c",
+  "at": "2026-10-16T23:59:29Z",
+  "h": "d025ef726a",
   "v": "ok"
  },
  "parents:9": {
