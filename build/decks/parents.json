@@ -254,7 +254,7 @@
    "hook": "practice",
    "k": "exclaim",
    "src": "https://www.merriam-webster.com/dictionary/cool%20beans",
-   "d": 2
+   "d": 1
   },
   {
    "w": "no biggie",
@@ -492,7 +492,8 @@
   ],
   [
    "whatever",
-   "no biggie"
+   "no biggie",
+   "cool beans"
   ],
   [
    "booyah",
@@ -520,6 +521,51 @@
    "veg out",
    "chill out",
    "kick it"
+  ],
+  [
+   "peace out",
+   "whatever",
+   "no biggie"
+  ],
+  [
+   "booyah",
+   "peace out",
+   "cool beans"
+  ],
+  [
+   "cool beans",
+   "as if",
+   "talk to the hand"
+  ],
+  [
+   "yada yada",
+   "whatever"
+  ],
+  [
+   "my bad",
+   "whatever",
+   "no biggie"
+  ],
+  [
+   "not",
+   "duh"
+  ],
+  [
+   "as if",
+   "yada yada",
+   "no biggie"
+  ],
+  [
+   "dawg",
+   "peeps"
+  ],
+  [
+   "couch potato",
+   "newbie"
+  ],
+  [
+   "have a cow",
+   "raise the roof"
   ]
  ],
  "cut": [
