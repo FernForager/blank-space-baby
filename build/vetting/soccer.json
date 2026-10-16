@@ -1,4 +1,284 @@
 {
+ "epl:0": {
+  "at": "2026-10-16T23:58:31Z",
+  "fix": {
+   "d": 3,
+   "ex": "Man United drew 5–5 at West Brom in 2013, the league’s highest-scoring draw",
+   "hook": "West Brom",
+   "means": "Alex Ferguson’s last game in charge",
+   "src": "https://www.premierleague.com/en/stats/records"
+  },
+  "h": "52f11c42dd",
+  "note": "Old card was the same fact as epl:40 (Ferguson’s record 13 titles with Man United) and its only tile word was the empty “titles.” New fact from the records page: the league’s only 5–5, Ferguson’s last game (premierleague.com video 3418545, “Fergie’s final match”). West Brom is a specific opponent that doesn’t give the answer away, and no decoy club could fill it. Real-fan lore, so red. Shares the West Brom tile with epl-more:8, which the draw keeps apart",
+  "v": "fix"
+ },
+ "epl:1": {
+  "at": "2026-10-16T23:58:31Z",
+  "h": "5dc5765571",
+  "v": "ok"
+ },
+ "epl:10": {
+  "at": "2026-10-16T23:58:31Z",
+  "h": "dd497c508f",
+  "v": "ok"
+ },
+ "epl:11": {
+  "at": "2026-10-16T23:58:31Z",
+  "h": "dc3055b9ef",
+  "v": "ok"
+ },
+ "epl:12": {
+  "at": "2026-10-16T23:58:31Z",
+  "h": "6918755800",
+  "note": "Relegation is new to American parents, but the decoys (20, 38, 380 …) make 3 the only sensible pick, so white holds as played",
+  "v": "ok"
+ },
+ "epl:13": {
+  "at": "2026-10-16T23:58:31Z",
+  "h": "752b150744",
+  "v": "ok"
+ },
+ "epl:14": {
+  "at": "2026-10-16T23:58:31Z",
+  "h": "dcf6f0b18b",
+  "v": "ok"
+ },
+ "epl:15": {
+  "at": "2026-10-16T23:58:31Z",
+  "h": "bcbb9a320a",
+  "v": "ok"
+ },
+ "epl:16": {
+  "at": "2026-10-16T23:58:31Z",
+  "h": "6ee51bac8c",
+  "v": "ok"
+ },
+ "epl:17": {
+  "at": "2026-10-16T23:58:31Z",
+  "h": "9d5700b7ef",
+  "note": "Still true. Tile Golden Boot is shared with epl-more:1 and several award cards, which the draw keeps apart",
+  "v": "ok"
+ },
+ "epl:18": {
+  "at": "2026-10-16T23:58:31Z",
+  "h": "e162a49b3e",
+  "v": "ok"
+ },
+ "epl:19": {
+  "at": "2026-10-16T23:58:31Z",
+  "h": "89cf93e19d",
+  "v": "ok"
+ },
+ "epl:2": {
+  "at": "2026-10-16T23:58:31Z",
+  "h": "3323dacbdf",
+  "note": "Still true on 2026-10-16",
+  "v": "ok"
+ },
+ "epl:20": {
+  "at": "2026-10-16T23:58:31Z",
+  "h": "5d58c46686",
+  "v": "ok"
+ },
+ "epl:21": {
+  "at": "2026-10-16T23:58:31Z",
+  "h": "49c47ba23c",
+  "note": "Records page confirms 21, Bruno Fernandes, 2025–26",
+  "v": "ok"
+ },
+ "epl:22": {
+  "at": "2026-10-16T23:58:31Z",
+  "h": "604b2bae51",
+  "v": "ok"
+ },
+ "epl:23": {
+  "at": "2026-10-16T23:58:31Z",
+  "h": "8df152ade8",
+  "v": "ok"
+ },
+ "epl:24": {
+  "at": "2026-10-16T23:58:31Z",
+  "h": "1360501bd5",
+  "v": "ok"
+ },
+ "epl:25": {
+  "at": "2026-10-16T23:58:31Z",
+  "h": "86fc2b29f5",
+  "v": "ok"
+ },
+ "epl:26": {
+  "at": "2026-10-16T23:58:31Z",
+  "h": "b910e0ec96",
+  "v": "ok"
+ },
+ "epl:27": {
+  "at": "2026-10-16T23:58:31Z",
+  "h": "f7eff91d33",
+  "v": "ok"
+ },
+ "epl:28": {
+  "at": "2026-10-16T23:58:31Z",
+  "fix": {
+   "hook": "Emirates"
+  },
+  "h": "ff284afb2a",
+  "note": "Holloway is a neighborhood few fans outside London know, so it names nothing on the tile. Emirates is the recognizable name in the sentence. The draw already keeps this card apart from epl:24 and epl:47",
+  "v": "fix"
+ },
+ "epl:29": {
+  "at": "2026-10-16T23:58:31Z",
+  "h": "148a0c4f18",
+  "v": "ok"
+ },
+ "epl:3": {
+  "at": "2026-10-16T23:58:31Z",
+  "h": "ae110593de",
+  "note": "Right: Mourinho, Ancelotti, Conte and Mancini, Pellegrini, Guardiola. Arsenal and Liverpool have two each now, so they make good decoys",
+  "v": "ok"
+ },
+ "epl:30": {
+  "at": "2026-10-16T23:58:31Z",
+  "h": "4d506cc944",
+  "v": "ok"
+ },
+ "epl:31": {
+  "at": "2026-10-16T23:58:31Z",
+  "h": "af7d41d828",
+  "v": "ok"
+ },
+ "epl:32": {
+  "at": "2026-10-16T23:58:31Z",
+  "h": "22edfff919",
+  "v": "ok"
+ },
+ "epl:33": {
+  "at": "2026-10-16T23:58:31Z",
+  "h": "cc79251ce6",
+  "note": "Near-twin of nicknames:0 (same fact). The shared answer keeps them off one board, but the pool carries the fact twice",
+  "v": "ok"
+ },
+ "epl:34": {
+  "at": "2026-10-16T23:58:31Z",
+  "h": "0160a47f43",
+  "v": "ok"
+ },
+ "epl:35": {
+  "at": "2026-10-16T23:58:31Z",
+  "h": "b51080ba42",
+  "v": "ok"
+ },
+ "epl:36": {
+  "at": "2026-10-16T23:58:31Z",
+  "h": "d8f60a303d",
+  "note": "Near-twin of nicknames:5 (same fact, shared answer)",
+  "v": "ok"
+ },
+ "epl:37": {
+  "at": "2026-10-16T23:58:31Z",
+  "h": "a84bf62998",
+  "note": "Near-twin of nicknames:6 (same fact, shared answer)",
+  "v": "ok"
+ },
+ "epl:38": {
+  "at": "2026-10-16T23:58:31Z",
+  "h": "bfea6b0b2b",
+  "note": "Near-twin of nicknames:4, same fact and nearly the same means line (Benfica, 1970s)",
+  "v": "ok"
+ },
+ "epl:39": {
+  "at": "2026-10-16T23:58:31Z",
+  "h": "7d141e9e95",
+  "note": "Near-twin of nicknames:12 (same answer). Ipswich are back for 2026–27, so still current",
+  "v": "ok"
+ },
+ "epl:4": {
+  "at": "2026-10-16T23:58:31Z",
+  "h": "988a284783",
+  "note": "Still true. Slot has since left Liverpool (Iraola is manager), but the sentence is about 2024–25",
+  "v": "ok"
+ },
+ "epl:40": {
+  "at": "2026-10-16T23:58:31Z",
+  "h": "1c6eac52a9",
+  "note": "With epl:0 changed, this is the deck’s only most-titles card",
+  "v": "ok"
+ },
+ "epl:41": {
+  "at": "2026-10-16T23:58:31Z",
+  "h": "4c6a897e5a",
+  "v": "ok"
+ },
+ "epl:42": {
+  "at": "2026-10-16T23:58:31Z",
+  "h": "f1597dc6ee",
+  "v": "ok"
+ },
+ "epl:43": {
+  "at": "2026-10-16T23:58:31Z",
+  "h": "fe8e456014",
+  "v": "ok"
+ },
+ "epl:44": {
+  "at": "2026-10-16T23:58:31Z",
+  "h": "c0adc4115a",
+  "v": "ok"
+ },
+ "epl:45": {
+  "at": "2026-10-16T23:58:31Z",
+  "h": "5ed66c385d",
+  "note": "Still current: premierleague.com coverage in October 2026 has Maresca in charge at Man City, appointed 29 June 2026",
+  "v": "ok"
+ },
+ "epl:46": {
+  "at": "2026-10-16T23:58:31Z",
+  "h": "efeb093c85",
+  "v": "ok"
+ },
+ "epl:47": {
+  "at": "2026-10-16T23:58:31Z",
+  "h": "78201f2951",
+  "v": "ok"
+ },
+ "epl:48": {
+  "at": "2026-10-16T23:58:31Z",
+  "h": "274a14ff26",
+  "v": "ok"
+ },
+ "epl:49": {
+  "at": "2026-10-16T23:58:31Z",
+  "h": "84e0f46624",
+  "v": "ok"
+ },
+ "epl:5": {
+  "at": "2026-10-16T23:58:31Z",
+  "h": "dabaae9cac",
+  "v": "ok"
+ },
+ "epl:6": {
+  "at": "2026-10-16T23:58:31Z",
+  "fix": {
+   "ex": "Frank Lampard led Coventry City back to the top flight in 2026 after 25 years",
+   "hook": "Lampard"
+  },
+  "h": "f2f029dd0b",
+  "note": "“Out of the league” reads as out of the Football League, which Coventry never were. Fans say top flight. The tile “returned” is an empty word: Lampard is the name fans know, per the source article (“masterminded by Frank Lampard … following a 25-year absence”). The draw keeps it apart from epl-more:10, whose answer is Frank Lampard",
+  "v": "fix"
+ },
+ "epl:7": {
+  "at": "2026-10-16T23:58:31Z",
+  "h": "79543e47be",
+  "v": "ok"
+ },
+ "epl:8": {
+  "at": "2026-10-16T23:58:31Z",
+  "h": "48cfc9a920",
+  "v": "ok"
+ },
+ "epl:9": {
+  "at": "2026-10-16T23:58:31Z",
+  "h": "bb16f6d85b",
+  "v": "ok"
+ },
  "parents:0": {
   "at": "2026-10-16T23:57:20Z",
   "h": "353220e0e1",
