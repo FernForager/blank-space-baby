@@ -23,6 +23,7 @@ python3 build/build.py      # checks every card, writes docs/index.html
 - `build/decks/*.json`: one deck per level. `SPEC.md` there is the deck-writing spec. Read it before editing a deck.
 - `docs/`: what GitHub Pages serves (index.html, icons, manifest, `sw.js` for offline play, `og.png` for link previews). Don't hand-edit docs/index.html. Rebuild it. Rerun `python3 tools/og.py` if the look or the icons change.
 - Preview links: Cloudflare Pages (project blank-space-baby, output `docs`, no build command) deploys every pushed branch to `https://<branch>.blank-space-baby.pages.dev` within a minute or two. Give Morg that link with every branch so he can play it on his phone before merging. `main` also deploys to https://blank-space-baby.pages.dev, but GitHub Pages stays the official link.
+- Cloud sessions run `.claude/hooks/session-start.sh` at startup: it installs Playwright for Python (1.56.0, matching the preinstalled Chromium) and the game's two fonts, so screenshots are right from the first minute.
 - Test in headless Chromium at device scale 3 (the iPhone is 3×, so 2× hides jaggies) (Playwright is preinstalled in Claude's cloud workspace) at 402×744 (his phone in the Claude viewer), 375×667 and 320×568. Every screen must fit with no scrolling. Zoom in on punctuation, line ends and icon pixels before calling anything done, not just the whole screen at a glance.
 
 ## Palette (locked Oct 15, 2026, shared with Carpool HQ)
