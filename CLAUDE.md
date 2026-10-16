@@ -63,17 +63,20 @@ Game-only effects, not brand colors: the CRT glow #5CF09A, and the wrong-answer 
 - **Results:** 0 goals is **Nil**, 1 **Goal**, 2 **Brace**, 3 **Hat trick**. Clearing all 18 is the hat trick and the perfect day.
 - **Why 6 per goal:** with three buttons and one miss ending the run, a fan right 85% of the time makes 6 in a row about 38% of the time but 12 only about 14%.
 - **Proposed board shape (not yet approved):** a round honeycomb of 19 hexagons (center, a ring of 6, a ring of 12), the shape of a ball. The 18 outer hexagons are the cards, and the center shows the player's ball filling with pentagon chips. On a real ball the white panels are hexagons and the black ones pentagons, so each shape does one job.
-- **The share text** is the heart of it. Base form, Morg's pick:
+- **The share text** is the heart of it. Morg's pick, with the count of right answers (locked Oct 16, 2026):
   ```
   Triviela #42
-  ⚽⚽ Brace
+  ⚽⚽ Brace · 17
   triviela.net
   ```
+  A day with no goal reads `Nil · 4`. No grid or path row: less is more.
+- **Colors shown at launch** (locked). Hidden-until-answered can be tried with a few serious fans in the playtest.
+- **Reset at local midnight,** like Wordle. Each date has one puzzle number, and everyone who plays #42 gets the same board.
+- **Repeats:** a card can come back, but never within 3 months. (At 18 a day, never repeating in a year would need about 6,500 cards.)
 - **Design compass:** think Zach Gage. Simple rules, real stakes, a clean ending, a perfect day that's possible. No jokers, no second chances, no endless mode. Less is more.
-- **A misunderstanding to avoid:** on Oct 16 Claude wrongly turned this into three balls of 6 tiles shown one after another, which made tile choice meaningless. It is one board of all 18. The 18-player panel (`research/player-panel-2026-10-16.md`) reviewed the wrong version, so ignore its point that choice doesn't matter. Its other advice still holds.
+- **A misunderstanding to avoid:** on Oct 16 Claude wrongly turned this into three balls of 6 tiles shown one after another, which made tile choice meaningless. It is one board of all 18. The 18-player panel (`research/player-panel-2026-10-16.md`) reviewed the wrong version, so ignore its point that choice doesn't matter. Its other advice still holds. Round two, on the correct design, is `research/player-panel-2026-10-16-round2.md`. Its pre-launch roadmap: build the daily plainly, save mid-run and lock the finished day, the end screen and share, a readability test on real phones with real people (it decides honeycomb vs a simpler board), a content pass (truly easy whites as basics, hard means deep not obscure, three believable choices, draw guardrails: at least one women's card and one rules card a day, at most 2–3 from one league, Kid Slang at most once and never red), then a week with the G14 team and parents before triviela.net. After launch: reveal all cards once your day ends, the anonymous difficulty counter, clear-cut offside picture cards.
 
 ## Open questions (Oct 16, 2026)
-- **Share text detail:** whether to add a 6 × 6 grid of the run (⚫ right, 🟥 the miss, ⚪ untouched), so friends see each other's path. Morg prefers less.
 - **Layout:** where the board and the ball sit (screen vs panel).
 - **Picture cards (proposed, not approved):** the CRT becomes a glowing chalkboard pitch drawn in vector lines. Offside (Onside / Offside / Not involved), name the formation, name the field marking or restart, ref signals, goal or no goal. Same three buttons. Each card is a few lines of data (dots, arrows, lines), so they scale. Sourcing: IFAB Laws of the Game for rules and the field, and one coaching authority for formations (US Soccer Learning Center proposed). A prototype of one offside, one formation and one field card was offered.
 - **A basics category** (working name Soccer 101, Morg's earlier name): all easy, for new families and young players.
