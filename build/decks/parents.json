@@ -20,7 +20,7 @@
    "hook": "jacket",
    "k": "adj",
    "src": "https://www.merriam-webster.com/dictionary/fly",
-   "d": 2
+   "d": 1
   },
   {
    "w": "fresh",
@@ -29,7 +29,7 @@
    "hook": "new jerseys",
    "k": "adj",
    "src": "https://www.merriam-webster.com/dictionary/fresh",
-   "d": 2
+   "d": 1
   },
   {
    "w": "sweet",
@@ -74,7 +74,7 @@
    "hook": "music",
    "k": "adj",
    "src": "https://www.merriam-webster.com/dictionary/def",
-   "d": 2
+   "d": 1
   },
   {
    "w": "all that",
@@ -83,7 +83,7 @@
    "hook": "shin guards",
    "k": "adj",
    "src": "https://greensdictofslang.com/entry/ktfqsua",
-   "d": 2
+   "d": 1
   },
   {
    "w": "off the hook",
@@ -164,7 +164,7 @@
    "hook": "practice",
    "k": "exclaim",
    "src": "https://www.merriam-webster.com/dictionary/psych",
-   "d": 2
+   "d": 1
   },
   {
    "w": "booyah",
@@ -287,7 +287,7 @@
    "w": "dawg",
    "means": "Pal, buddy",
    "ex": "The coach greets every player with “What’s up, dawg?”",
-   "hook": "greets",
+   "hook": "coach",
    "k": "noun",
    "src": "https://www.merriam-webster.com/dictionary/dawg",
    "d": 1
@@ -358,7 +358,7 @@
   {
    "w": "mall rat",
    "means": "Someone who lives at the mall",
-   "ex": "Grandma shops so often that the team calls her a mall rat",
+   "ex": "Grandma shops for soccer gear so often that the team calls her a mall rat",
    "hook": "Grandma",
    "k": "noun",
    "src": "https://www.merriam-webster.com/dictionary/mall%20rat",
