@@ -1454,6 +1454,356 @@
   "h": "7215d437da",
   "v": "ok"
  },
+ "bundesliga:0": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "fbab5ed700",
+  "v": "ok"
+ },
+ "bundesliga:1": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "a175428461",
+  "v": "ok"
+ },
+ "bundesliga:10": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "7b720a458a",
+  "v": "ok"
+ },
+ "bundesliga:11": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "5fd85490a6",
+  "note": "Shares the hook top scorer with the Torjägerkanone card, the draw keeps them apart",
+  "v": "ok"
+ },
+ "bundesliga:12": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "31bb42d6a1",
+  "v": "ok"
+ },
+ "bundesliga:13": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "68eb01c22a",
+  "v": "ok"
+ },
+ "bundesliga:14": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "1f52fc61b5",
+  "v": "ok"
+ },
+ "bundesliga:15": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "547afc2524",
+  "v": "ok"
+ },
+ "bundesliga:16": {
+  "at": "2026-10-16T23:57:47Z",
+  "fix": {
+   "ex": "Frankfurt’s Karl-Heinz Körbel played the most Bundesliga games",
+   "hook": "Frankfurt",
+   "means": "602 of them, all for one club"
+  },
+  "h": "7021d11757",
+  "note": "Hook was the bare league name. Club moved into the sentence as the hook, past tense for a retired player, means reworded to match",
+  "v": "fix"
+ },
+ "bundesliga:17": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "a6ba4c3409",
+  "v": "ok"
+ },
+ "bundesliga:18": {
+  "at": "2026-10-16T23:57:47Z",
+  "fix": {
+   "ex": "Erling Haaland scored a hat trick off the bench on his Bundesliga debut",
+   "hook": "hat trick"
+  },
+  "h": "1d5e9a96b7",
+  "note": "MW spells hat trick open",
+  "v": "fix"
+ },
+ "bundesliga:19": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "0e920cf6b2",
+  "v": "ok"
+ },
+ "bundesliga:2": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "65b0a28a9a",
+  "v": "ok"
+ },
+ "bundesliga:20": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "570d38e6a8",
+  "v": "ok"
+ },
+ "bundesliga:21": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "b241e5fa82",
+  "v": "ok"
+ },
+ "bundesliga:22": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "94fab7c7b4",
+  "v": "ok"
+ },
+ "bundesliga:23": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "79ca7dba66",
+  "v": "ok"
+ },
+ "bundesliga:24": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "a636558065",
+  "v": "ok"
+ },
+ "bundesliga:25": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "2ec5c59a09",
+  "v": "ok"
+ },
+ "bundesliga:26": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "36ed3eef14",
+  "v": "ok"
+ },
+ "bundesliga:27": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "12b5bf7b30",
+  "v": "ok"
+ },
+ "bundesliga:28": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "78c8e036f4",
+  "v": "ok"
+ },
+ "bundesliga:29": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "d5ad3ee7d5",
+  "note": "Yellow Wall can draw here and reads as nonsense (a stand, not a stadium), card still works",
+  "v": "ok"
+ },
+ "bundesliga:3": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "0f4262d932",
+  "v": "ok"
+ },
+ "bundesliga:30": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "5bd7f803b2",
+  "v": "ok"
+ },
+ "bundesliga:31": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "ebc0b7ce3b",
+  "v": "ok"
+ },
+ "bundesliga:32": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "f959952202",
+  "v": "ok"
+ },
+ "bundesliga:33": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "5badb0e057",
+  "v": "ok"
+ },
+ "bundesliga:34": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "6dd0dfe7f5",
+  "v": "ok"
+ },
+ "bundesliga:35": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "d7f31e5037",
+  "v": "ok"
+ },
+ "bundesliga:36": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "b345ffcb57",
+  "v": "ok"
+ },
+ "bundesliga:37": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "ef481e57bb",
+  "v": "ok"
+ },
+ "bundesliga:38": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "c85ca771d7",
+  "v": "ok"
+ },
+ "bundesliga:39": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "340335693c",
+  "v": "ok"
+ },
+ "bundesliga:4": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "c56ba1d3f3",
+  "v": "ok"
+ },
+ "bundesliga:40": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "2b40a5ce35",
+  "v": "ok"
+ },
+ "bundesliga:41": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "c9599ec918",
+  "v": "ok"
+ },
+ "bundesliga:42": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "210db82fa7",
+  "v": "ok"
+ },
+ "bundesliga:43": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "68f71ad792",
+  "v": "ok"
+ },
+ "bundesliga:44": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "589ff2ec0f",
+  "note": "Der Kaiser or Der Bomber in the slot reads as “the Der …”, odd but the card still works",
+  "v": "ok"
+ },
+ "bundesliga:45": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "3f37fea269",
+  "note": "Der Kaiser or Der Bomber in the slot reads as “the Der …”, odd but the card still works",
+  "v": "ok"
+ },
+ "bundesliga:46": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "2de51ff794",
+  "v": "ok"
+ },
+ "bundesliga:47": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "b2804ee438",
+  "v": "ok"
+ },
+ "bundesliga:48": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "fa8307c789",
+  "v": "ok"
+ },
+ "bundesliga:49": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "1de72c9de4",
+  "v": "ok"
+ },
+ "bundesliga:5": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "9f8faff92d",
+  "v": "ok"
+ },
+ "bundesliga:50": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "6d28ae7232",
+  "v": "ok"
+ },
+ "bundesliga:51": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "b53bff2a08",
+  "v": "ok"
+ },
+ "bundesliga:52": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "3e9e02a911",
+  "v": "ok"
+ },
+ "bundesliga:53": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "e016ab221e",
+  "v": "ok"
+ },
+ "bundesliga:54": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "a610940f3d",
+  "v": "ok"
+ },
+ "bundesliga:55": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "7512936d6a",
+  "v": "ok"
+ },
+ "bundesliga:56": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "897964cdd2",
+  "v": "ok"
+ },
+ "bundesliga:57": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "2ed9423e6d",
+  "v": "ok"
+ },
+ "bundesliga:58": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "91a6f6d3b4",
+  "v": "ok"
+ },
+ "bundesliga:59": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "8672e64e1d",
+  "v": "ok"
+ },
+ "bundesliga:6": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "ef400c4123",
+  "v": "ok"
+ },
+ "bundesliga:60": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "92b69af5b5",
+  "v": "ok"
+ },
+ "bundesliga:61": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "6917fe3cdc",
+  "v": "ok"
+ },
+ "bundesliga:62": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "beab3978c7",
+  "v": "ok"
+ },
+ "bundesliga:63": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "e283885ab1",
+  "v": "ok"
+ },
+ "bundesliga:64": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "71adacf20b",
+  "v": "ok"
+ },
+ "bundesliga:65": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "68e7a36e51",
+  "v": "ok"
+ },
+ "bundesliga:66": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "c124b3b543",
+  "v": "ok"
+ },
+ "bundesliga:7": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "98e557f58b",
+  "v": "ok"
+ },
+ "bundesliga:8": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "19720c0de7",
+  "v": "ok"
+ },
+ "bundesliga:9": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "98cd6ff2d8",
+  "v": "ok"
+ },
  "epl-more:0": {
   "at": "2026-10-16T23:57:25Z",
   "h": "2121020ea8",
