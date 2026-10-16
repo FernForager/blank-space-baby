@@ -7282,5 +7282,388 @@
   "h": "0af7c31e06",
   "note": "hook Europe is general but the sentence has nothing more specific",
   "v": "ok"
+ },
+ "wc26:0": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "6838138df5",
+  "v": "ok"
+ },
+ "wc26:1": {
+  "at": "2026-10-16T23:59:07Z",
+  "fix": {
+   "ex": "Defending champions Argentina lost the final in extra time",
+   "hook": "champions"
+  },
+  "h": "f4268c8aaa",
+  "note": "Argentina take a plural noun like Uruguay and Brazil in this deck, hook follows the sentence",
+  "v": "fix"
+ },
+ "wc26:10": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "ced41f4901",
+  "v": "ok"
+ },
+ "wc26:11": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "b1037d43e8",
+  "v": "ok"
+ },
+ "wc26:12": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "2b90794c38",
+  "v": "ok"
+ },
+ "wc26:13": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "e21db18e72",
+  "v": "ok"
+ },
+ "wc26:14": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "19c4ef0539",
+  "v": "ok"
+ },
+ "wc26:15": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "a2834a265e",
+  "v": "ok"
+ },
+ "wc26:16": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "9c97c797e8",
+  "v": "ok"
+ },
+ "wc26:17": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "199d9dac12",
+  "v": "ok"
+ },
+ "wc26:18": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "d52b00564a",
+  "v": "ok"
+ },
+ "wc26:19": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "69372ab769",
+  "v": "ok"
+ },
+ "wc26:2": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "325816302e",
+  "v": "ok"
+ },
+ "wc26:20": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "27359d0c01",
+  "v": "ok"
+ },
+ "wc26:21": {
+  "at": "2026-10-16T23:59:07Z",
+  "fix": {
+   "hook": "Argentina"
+  },
+  "h": "96b077311a",
+  "note": "Argentina is the most specific, tempting word, 2026 final was weak",
+  "v": "fix"
+ },
+ "wc26:22": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "c5ce09059d",
+  "v": "ok"
+ },
+ "wc26:23": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "0f52215033",
+  "v": "ok"
+ },
+ "wc26:24": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "12b29ac54c",
+  "v": "ok"
+ },
+ "wc26:25": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "5bdd2c9034",
+  "v": "ok"
+ },
+ "wc26:26": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "9205ce421f",
+  "v": "ok"
+ },
+ "wc26:27": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "78f615d70a",
+  "v": "ok"
+ },
+ "wc26:28": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "745d98b67c",
+  "v": "ok"
+ },
+ "wc26:29": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "c6d16dca10",
+  "v": "ok"
+ },
+ "wc26:3": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "71a80521d1",
+  "v": "ok"
+ },
+ "wc26:30": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "eeba4d9dce",
+  "v": "ok"
+ },
+ "wc26:31": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "0203b1eb3b",
+  "v": "ok"
+ },
+ "wc26:32": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "226fc543e2",
+  "v": "ok"
+ },
+ "wc26:33": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "47d70f1006",
+  "note": "as the tournament’s best player teaches the award but narrows the choice, fine for a medium card",
+  "v": "ok"
+ },
+ "wc26:34": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "b1bf31482f",
+  "v": "ok"
+ },
+ "wc26:35": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "7eb0b2ef92",
+  "v": "ok"
+ },
+ "wc26:36": {
+  "at": "2026-10-16T23:59:07Z",
+  "fix": {
+   "ex": "At 19, Pau Cubarsí won the Young Player Award",
+   "means": "Best player aged 21 or under"
+  },
+  "h": "e7db8fccf7",
+  "note": "sentence defined the award and ran to 83 characters, the definition moves to means",
+  "v": "fix"
+ },
+ "wc26:37": {
+  "at": "2026-10-16T23:59:07Z",
+  "fix": {
+   "ex": "Kylian Mbappé won the Bronze Ball as the tournament’s third-best player"
+  },
+  "h": "2adcf645f3",
+  "note": "the tournament’s plus its said it twice",
+  "v": "fix"
+ },
+ "wc26:38": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "2d844fc7e0",
+  "note": "named Golden Boot five times reads as nonsense, so sense rules out wrong answers, grammar still fits",
+  "v": "ok"
+ },
+ "wc26:39": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "ece871ca33",
+  "v": "ok"
+ },
+ "wc26:4": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "0f762af968",
+  "note": "Co-hosts points to the USA since Mexico and Canada are grouped out, but the fact is about hosting so any wording would, fine for a white card",
+  "v": "ok"
+ },
+ "wc26:40": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "19aa76965c",
+  "v": "ok"
+ },
+ "wc26:41": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "08d52d79d1",
+  "v": "ok"
+ },
+ "wc26:42": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "0aec5bb579",
+  "v": "ok"
+ },
+ "wc26:43": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "e9b6e2b3df",
+  "v": "ok"
+ },
+ "wc26:44": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "677e53b4c6",
+  "v": "ok"
+ },
+ "wc26:45": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "280423c373",
+  "v": "ok"
+ },
+ "wc26:46": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "769a5d1bf7",
+  "v": "ok"
+ },
+ "wc26:47": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "39c1f29055",
+  "note": "numeral 3 kept because the number kind uses digits",
+  "v": "ok"
+ },
+ "wc26:48": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "80e8d5f15b",
+  "v": "ok"
+ },
+ "wc26:49": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "4ade512b3f",
+  "v": "ok"
+ },
+ "wc26:5": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "3edf30e60c",
+  "v": "ok"
+ },
+ "wc26:50": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "9a7d98bec5",
+  "v": "ok"
+ },
+ "wc26:51": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "c1b5c61a06",
+  "v": "ok"
+ },
+ "wc26:52": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "9267550ada",
+  "v": "ok"
+ },
+ "wc26:53": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "e4e06ff627",
+  "v": "ok"
+ },
+ "wc26:54": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "5c5becb56d",
+  "v": "ok"
+ },
+ "wc26:55": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "3cfcab03dc",
+  "v": "ok"
+ },
+ "wc26:56": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "76341eee7e",
+  "v": "ok"
+ },
+ "wc26:57": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "172f0819cc",
+  "v": "ok"
+ },
+ "wc26:58": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "a21431ad1e",
+  "v": "ok"
+ },
+ "wc26:59": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "a478c9d229",
+  "v": "ok"
+ },
+ "wc26:6": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "f687b03edf",
+  "v": "ok"
+ },
+ "wc26:60": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "4b49e871bf",
+  "v": "ok"
+ },
+ "wc26:61": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "32bbfabf0c",
+  "v": "ok"
+ },
+ "wc26:62": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "d55800901e",
+  "v": "ok"
+ },
+ "wc26:63": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "5f03c5c681",
+  "v": "ok"
+ },
+ "wc26:64": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "d2a0720619",
+  "v": "ok"
+ },
+ "wc26:65": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "0ef995d541",
+  "v": "ok"
+ },
+ "wc26:66": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "47646e3512",
+  "v": "ok"
+ },
+ "wc26:67": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "c9dda59f4f",
+  "note": "known as the ___ reads oddly with mascot or ball names and with La Roja, card still works",
+  "v": "ok"
+ },
+ "wc26:68": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "57c0e356d6",
+  "v": "ok"
+ },
+ "wc26:69": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "500b3141b0",
+  "v": "ok"
+ },
+ "wc26:7": {
+  "at": "2026-10-16T23:59:07Z",
+  "fix": {
+   "ex": "Cabo Verde were the only team to keep Spain from scoring"
+  },
+  "h": "c724f4f483",
+  "note": "Newcomers gave it away since no other team in the draw is a debut side",
+  "v": "fix"
+ },
+ "wc26:70": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "d2b2d18d34",
+  "v": "ok"
+ },
+ "wc26:8": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "17abf45f87",
+  "note": "Co-hosts and first time both point to Canada over past champions, acceptable on a white card",
+  "v": "ok"
+ },
+ "wc26:9": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "8ea2d0fcf4",
+  "v": "ok"
  }
 }
