@@ -57,7 +57,7 @@ Game-only effects, not brand colors: the CRT glow #5CF09A, and the wrong-answer 
 ## The daily game (decided Oct 16, 2026, corrected the same day)
 - **One run a day.** Everyone gets the same 18 cards that day.
 - **The hopper:** every card is tagged easy, medium or hard. Each day draws **6 easy, 6 medium and 6 hard** at random from all categories, so odd neighbors sit side by side (Build Out next to Rangers FC next to Rabona). No hand-curated boards, and no brutal tier: hard means a real fan knows it, not obscure trivia.
-- **The board:** all 18 cards are laid out at the start, and the player taps any of them, in any order: choose your own adventure. Each tile shows a **hook**, a word or name from the card's sentence that is never the answer (e.g. "Rangers FC"). Difficulty is not shown on the tiles: reading the board is the fun.
+- **The board:** all 18 cards are laid out at the start, and the player taps any of them, in any order: choose your own adventure. Each tile shows a **hook**, a word or name from the card's sentence that is never the answer (e.g. "Rangers FC"). **Difficulty is shown as card colors:** easy tiles are white, medium are a yellow card, hard are a red card (Morg's idea, Oct 16, 2026). Showing it makes the choice a visible gamble and stops anyone being knocked out on their first tap by luck. White, yellow and red also differ in brightness, so colorblind players can tell them apart. Watch that the red tile doesn't get confused with the red wrong-answer feedback.
 - **Chips and goals:** every right answer adds a pentagon chip to the player's ball, wherever on the board it came from. **Every 6 chips is a goal.** Choice is real: grab safe-looking tiles to bank a goal, or take the scary ones while fresh.
 - **One miss ends the day.** Goals are banked, so a miss never takes one away.
 - **Results:** 0 goals is **Nil**, 1 **Goal**, 2 **Brace**, 3 **Hat trick**. Clearing all 18 is the hat trick and the perfect day.
@@ -74,7 +74,7 @@ Game-only effects, not brand colors: the CRT glow #5CF09A, and the wrong-answer 
 
 ## Open questions (Oct 16, 2026)
 - **Share text detail:** whether to add a 6 × 6 grid of the run (⚫ right, 🟥 the miss, ⚪ untouched), so friends see each other's path. Morg prefers less.
-- **Layout:** where the ball plaque and the 6 × 6 board sit (screen vs panel), and whether difficulty shows on the board (proposed: yes).
+- **Layout:** where the board and the ball sit (screen vs panel).
 - **Picture cards (proposed, not approved):** the CRT becomes a glowing chalkboard pitch drawn in vector lines. Offside (Onside / Offside / Not involved), name the formation, name the field marking or restart, ref signals, goal or no goal. Same three buttons. Each card is a few lines of data (dots, arrows, lines), so they scale. Sourcing: IFAB Laws of the Game for rules and the field, and one coaching authority for formations (US Soccer Learning Center proposed). A prototype of one offside, one formation and one field card was offered.
 - **A basics category** (working name Soccer 101, Morg's earlier name): all easy, for new families and young players.
 - **The category pool:** which soccer categories, and the few non-soccer ones beyond Kid Slang.
