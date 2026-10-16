@@ -223,7 +223,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   // keep hyphenated words and score/season ranges on one line (outside tags only)
   var keep = function (html) { return html.replace(/(<[^>]*>)|([A-Za-z0-9’]+(?:[-–][A-Za-z0-9’]+)+)/g, function (m, tag, word) { return tag || '<span class="nb">' + word + '</span>'; }); };
   // Pixelify Sans draws 5 like an S, so digits use the arcade face (text outside tags only)
-  var num = function (html) { return html.replace(/(<[^>]*>)|(\d+(?:[.,]\d+)*)/g, function (m, tag, d) { return tag || '<span class="num">' + d + '</span>'; }); };
+  var num = function (html) { return html.replace(/(<[^>]*>)|(\d+)/g, function (m, tag, d) { return tag || '<span class="num">' + d + '</span>'; }); };   // commas stay in the body font, so 60,704 doesn't gap
   // the sentence with its answer swapped for a blank (or filled in), glued to its punctuation so they never split
   function sentence(it, fill) {
     var glue = new RegExp('(^|[^A-Za-z0-9])((?:&quot;|“)?)(' + quote(esc(it.w)) + ')(?![A-Za-z0-9])((?:[:,.!?…\'’”]|&quot;)*)', 'i');
