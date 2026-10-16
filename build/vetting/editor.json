@@ -2091,6 +2091,336 @@
   "h": "bb16f6d85b",
   "v": "ok"
  },
+ "laliga:0": {
+  "at": "2026-10-16T23:57:35Z",
+  "fix": {
+   "ex": "Real Madrid beat Barcelona 8–2 in 1934–35, the biggest league win between the two",
+   "hook": "Barcelona"
+  },
+  "h": "480984c17f",
+  "note": "“Clásico” next to Barcelona gave the answer away, hook moved off it",
+  "v": "fix"
+ },
+ "laliga:1": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "4a07c7b1a6",
+  "note": "hook is thin but nothing better in the sentence",
+  "v": "ok"
+ },
+ "laliga:10": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "da8c199c5f",
+  "v": "ok"
+ },
+ "laliga:11": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "d46749219b",
+  "v": "ok"
+ },
+ "laliga:12": {
+  "at": "2026-10-16T23:57:35Z",
+  "fix": {
+   "ex": "Lionel Messi is LaLiga’s all-time top scorer"
+  },
+  "h": "7e2e11a865",
+  "note": "“all-time” and “history” said the same thing",
+  "v": "fix"
+ },
+ "laliga:13": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "b30142c56f",
+  "v": "ok"
+ },
+ "laliga:14": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "50c463fc5c",
+  "v": "ok"
+ },
+ "laliga:15": {
+  "at": "2026-10-16T23:57:35Z",
+  "fix": {
+   "ex": "The keeper who concedes the fewest goals wins a trophy named for Ricardo Zamora"
+  },
+  "h": "ecc4e2b1a9",
+  "note": "“concedes fewest wins” garden-pathed as “fewest wins”",
+  "v": "fix"
+ },
+ "laliga:16": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "a2e26d6390",
+  "v": "ok"
+ },
+ "laliga:17": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "7d74fa8ead",
+  "v": "ok"
+ },
+ "laliga:18": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "c967706445",
+  "v": "ok"
+ },
+ "laliga:19": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "cb043e5ad8",
+  "v": "ok"
+ },
+ "laliga:2": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "79bd04b0cc",
+  "v": "ok"
+ },
+ "laliga:20": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "a20473a987",
+  "v": "ok"
+ },
+ "laliga:21": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "45e685673a",
+  "v": "ok"
+ },
+ "laliga:22": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "6542d08a40",
+  "v": "ok"
+ },
+ "laliga:23": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "25a356353d",
+  "v": "ok"
+ },
+ "laliga:24": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "b35b6fbd53",
+  "v": "ok"
+ },
+ "laliga:25": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "1983790f91",
+  "v": "ok"
+ },
+ "laliga:26": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "2684f871e6",
+  "v": "ok"
+ },
+ "laliga:27": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "992b0955ea",
+  "v": "ok"
+ },
+ "laliga:28": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "0daf7437cc",
+  "v": "ok"
+ },
+ "laliga:29": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "d1477b7583",
+  "v": "ok"
+ },
+ "laliga:3": {
+  "at": "2026-10-16T23:57:35Z",
+  "fix": {
+   "ex": "Athletic Club field only players born or trained in the Basque Country"
+  },
+  "h": "fe61d7cbb0",
+  "note": "“only field players” read as outfield players, only moved to what it limits",
+  "v": "fix"
+ },
+ "laliga:30": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "729c48e595",
+  "v": "ok"
+ },
+ "laliga:31": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "60c208cc82",
+  "v": "ok"
+ },
+ "laliga:32": {
+  "at": "2026-10-16T23:57:35Z",
+  "fix": {
+   "ex": "Real Madrid’s Miguel Muñoz won more league titles than any other coach"
+  },
+  "h": "3e8cf296fb",
+  "note": "past tense for a finished career. Means repeats the sentence, his title count would teach more",
+  "v": "fix"
+ },
+ "laliga:33": {
+  "at": "2026-10-16T23:57:35Z",
+  "fix": {
+   "ex": "Luis Aragonés coached more LaLiga games than anyone"
+  },
+  "h": "827e70bf89",
+  "note": "past tense for a finished career. Means repeats the sentence",
+  "v": "fix"
+ },
+ "laliga:34": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "3f08015ca7",
+  "v": "ok"
+ },
+ "laliga:35": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "c6e6baa0cd",
+  "v": "ok"
+ },
+ "laliga:36": {
+  "at": "2026-10-16T23:57:35Z",
+  "fix": {
+   "ex": "Real Madrid play their home games at the Bernabéu",
+   "means": "Full name: Santiago Bernabéu"
+  },
+  "h": "7156204586",
+  "note": "“Santiago” before the blank called for a surname and ruled out most stadiums, full name moved to means",
+  "v": "fix"
+ },
+ "laliga:37": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "2f03b32f42",
+  "note": "sponsor prefix makes some wrong answers read oddly but the card works",
+  "v": "ok"
+ },
+ "laliga:38": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "59ad37ddfc",
+  "v": "ok"
+ },
+ "laliga:39": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "8e8e09915b",
+  "v": "ok"
+ },
+ "laliga:4": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "64f62a43a8",
+  "v": "ok"
+ },
+ "laliga:40": {
+  "at": "2026-10-16T23:57:35Z",
+  "fix": {
+   "ex": "Sevilla play their home games at the Sánchez-Pizjuán"
+  },
+  "h": "9e5d01b5d3",
+  "note": "“Ramón” before the blank called for a surname and gave the answer away",
+  "v": "fix"
+ },
+ "laliga:41": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "74926da185",
+  "v": "ok"
+ },
+ "laliga:42": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "51b95326aa",
+  "v": "ok"
+ },
+ "laliga:43": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "00a470ba34",
+  "v": "ok"
+ },
+ "laliga:44": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "1c52eb330b",
+  "v": "ok"
+ },
+ "laliga:45": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "73454356cb",
+  "v": "ok"
+ },
+ "laliga:46": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "a1c177b5bd",
+  "v": "ok"
+ },
+ "laliga:47": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "e0bf7095fc",
+  "v": "ok"
+ },
+ "laliga:48": {
+  "at": "2026-10-16T23:57:35Z",
+  "fix": {
+   "hook": "top-flight"
+  },
+  "h": "95d4b95277",
+  "note": "hook was the empty “two players”",
+  "v": "fix"
+ },
+ "laliga:49": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "ccd8d235de",
+  "v": "ok"
+ },
+ "laliga:5": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "4f286afc0a",
+  "v": "ok"
+ },
+ "laliga:50": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "4cdaa94572",
+  "v": "ok"
+ },
+ "laliga:51": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "6b2ccdc58c",
+  "v": "ok"
+ },
+ "laliga:52": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "c706b6881a",
+  "v": "ok"
+ },
+ "laliga:53": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "fc0b32e890",
+  "v": "ok"
+ },
+ "laliga:54": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "690eccc864",
+  "v": "ok"
+ },
+ "laliga:55": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "f9abc330dd",
+  "v": "ok"
+ },
+ "laliga:56": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "80cbb29635",
+  "v": "ok"
+ },
+ "laliga:6": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "abcfeda9f3",
+  "v": "ok"
+ },
+ "laliga:7": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "c2e1126607",
+  "v": "ok"
+ },
+ "laliga:8": {
+  "at": "2026-10-16T23:57:35Z",
+  "fix": {
+   "ex": "Rafa Benítez coached Valencia to the title in 2001–02 and again two years later"
+  },
+  "h": "64a119c8f6",
+  "note": "“to the league” means the title, said plainly",
+  "v": "fix"
+ },
+ "laliga:9": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "3156c2a568",
+  "note": "FC Barcelona as a wrong answer reads as nonsense but the card works",
+  "v": "ok"
+ },
  "lingo-more:0": {
   "at": "2026-10-16T23:56:48Z",
   "h": "14c3ce7ddd",
