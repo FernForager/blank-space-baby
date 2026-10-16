@@ -1,5 +1,7 @@
 # Dossier: Triviela (formerly Blank Space Baby)
 
+> **Oct 16, 2026:** much of this dossier describes the old Blank Space Baby arcade game. The game is now Triviela, a public daily soccer trivia game. CLAUDE.md ("Direction", "The daily game", "Open questions", "Where things are") is the current source of truth. Where they disagree, CLAUDE.md wins. Sections 7 and 8 here (roadmap ideas and things tried and dropped) are still useful history.
+
 Handoff for Claude Code sessions, written Oct 14, 2026 at the end of the session that built the game. Read `CLAUDE.md` first: it has the standing rules (house style, sources, look, game rules). This file covers where things stand, what's been tried, what's next and how to work.
 
 This repo is **public**. Never commit personal details: no last names, addresses, phone numbers, family names or photos.
