@@ -577,6 +577,1605 @@
   "h": "c9365428fe",
   "v": "ok"
  },
+ "basics:0": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "0e34592af3",
+  "note": "Singular shoe or shin guard after “her” reads a little odd but fair",
+  "v": "ok"
+ },
+ "basics:1": {
+  "at": "2026-10-16T23:57:03Z",
+  "fix": {
+   "ex": "A goal still counts if the scorer’s shoe came off by accident"
+  },
+  "h": "120967ea02",
+  "note": "Shoe or socks fit only a foot, so the blank gave itself away. Now any gear reads",
+  "v": "fix"
+ },
+ "basics:10": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "6ee3796c83",
+  "v": "ok"
+ },
+ "basics:100": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "33f8a9fe2e",
+  "v": "ok"
+ },
+ "basics:101": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "6c2b38d01f",
+  "v": "ok"
+ },
+ "basics:102": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "01bb6d3bd3",
+  "v": "ok"
+ },
+ "basics:103": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "4331520ccf",
+  "v": "ok"
+ },
+ "basics:104": {
+  "at": "2026-10-16T23:57:03Z",
+  "fix": {
+   "ex": "A player past the second-to-last opponent is offside only if she joins in"
+  },
+  "h": "fde74ffdeb",
+  "note": "“Being past … becomes offside” was clumsy",
+  "v": "fix"
+ },
+ "basics:105": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "87202f5355",
+  "note": "“At midfield” may puzzle readers, left for the soccer expert",
+  "v": "ok"
+ },
+ "basics:106": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "d080421ac2",
+  "v": "ok"
+ },
+ "basics:107": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "0aee0455d8",
+  "v": "ok"
+ },
+ "basics:108": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "79e246a0eb",
+  "v": "ok"
+ },
+ "basics:109": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "668b13b22b",
+  "v": "ok"
+ },
+ "basics:11": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "904c4ee7ba",
+  "v": "ok"
+ },
+ "basics:110": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "038530ba44",
+  "v": "ok"
+ },
+ "basics:111": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "6e723c11de",
+  "v": "ok"
+ },
+ "basics:112": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "cb4ceb39d0",
+  "v": "ok"
+ },
+ "basics:113": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "35cc2e714d",
+  "v": "ok"
+ },
+ "basics:114": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "3ac323000b",
+  "v": "ok"
+ },
+ "basics:115": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "7d29e80b6e",
+  "v": "ok"
+ },
+ "basics:116": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "1f683af9f0",
+  "v": "ok"
+ },
+ "basics:117": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "8672b66406",
+  "v": "ok"
+ },
+ "basics:118": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "c5eb482835",
+  "v": "ok"
+ },
+ "basics:119": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "f28df3f081",
+  "v": "ok"
+ },
+ "basics:12": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "8db696069c",
+  "v": "ok"
+ },
+ "basics:120": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "240ce03748",
+  "v": "ok"
+ },
+ "basics:121": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "2fec98bd6d",
+  "v": "ok"
+ },
+ "basics:122": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "abf0def6c4",
+  "v": "ok"
+ },
+ "basics:123": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "40e93df750",
+  "v": "ok"
+ },
+ "basics:124": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "5c85a45ee2",
+  "v": "ok"
+ },
+ "basics:125": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "a8cc3f7d17",
+  "v": "ok"
+ },
+ "basics:126": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "b02d7aca1c",
+  "v": "ok"
+ },
+ "basics:127": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "b311bf4129",
+  "v": "ok"
+ },
+ "basics:128": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "d1078762a4",
+  "v": "ok"
+ },
+ "basics:129": {
+  "at": "2026-10-16T23:57:03Z",
+  "fix": {
+   "ex": "When in doubt on a throw-in, the assistant referee follows the ref’s signal"
+  },
+  "h": "23bbedd06a",
+  "note": "Referee’s in the sentence knocked referee out of the pool, so it drew gear and rules terms. Ref’s keeps it in",
+  "v": "fix"
+ },
+ "basics:13": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "f683dbc6c9",
+  "v": "ok"
+ },
+ "basics:130": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "11ae00fd77",
+  "v": "ok"
+ },
+ "basics:131": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "d7e65ffd66",
+  "v": "ok"
+ },
+ "basics:132": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "bb95026035",
+  "v": "ok"
+ },
+ "basics:133": {
+  "at": "2026-10-16T23:57:03Z",
+  "fix": {
+   "ex": "When the ref watches a replay, the VAR picks the best camera angle"
+  },
+  "h": "a939c0c4bf",
+  "note": "Referee in the sentence knocked it out of the pool, so it drew gear and rules terms. Ref keeps it in",
+  "v": "fix"
+ },
+ "basics:134": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "9f66b196f0",
+  "v": "ok"
+ },
+ "basics:135": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "a20855f65c",
+  "v": "ok"
+ },
+ "basics:136": {
+  "at": "2026-10-16T23:57:03Z",
+  "fix": {
+   "ex": "The ref must make the first call, and only then can the VAR step in"
+  },
+  "h": "77467733bc",
+  "note": "Referee in the sentence knocked it out of the pool, so it drew gear and rules terms. Ref keeps it in",
+  "v": "fix"
+ },
+ "basics:137": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "58c9745e0d",
+  "v": "ok"
+ },
+ "basics:138": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "197a4acce4",
+  "v": "ok"
+ },
+ "basics:139": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "d330693cdd",
+  "v": "ok"
+ },
+ "basics:14": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "7adb35f639",
+  "v": "ok"
+ },
+ "basics:140": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "18eef7337d",
+  "v": "ok"
+ },
+ "basics:141": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "a62f563e74",
+  "v": "ok"
+ },
+ "basics:142": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "35c2f730fb",
+  "v": "ok"
+ },
+ "basics:143": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "1f6b2886aa",
+  "v": "ok"
+ },
+ "basics:144": {
+  "at": "2026-10-16T23:57:03Z",
+  "fix": {
+   "ex": "Before the match, the referee, not a captain, must toss the coin"
+  },
+  "h": "0bb0ce9917",
+  "note": "Active voice",
+  "v": "fix"
+ },
+ "basics:145": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "e538c0e93c",
+  "v": "ok"
+ },
+ "basics:146": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "710abfff0f",
+  "v": "ok"
+ },
+ "basics:147": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "731ec2048e",
+  "v": "ok"
+ },
+ "basics:148": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "1bdab233a2",
+  "v": "ok"
+ },
+ "basics:149": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "623a50e54c",
+  "v": "ok"
+ },
+ "basics:15": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "35bb429047",
+  "v": "ok"
+ },
+ "basics:150": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "5358013dce",
+  "v": "ok"
+ },
+ "basics:151": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "a4a020f05f",
+  "v": "ok"
+ },
+ "basics:152": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "c845c50488",
+  "v": "ok"
+ },
+ "basics:153": {
+  "at": "2026-10-16T23:57:03Z",
+  "fix": {
+   "means": "Often called a striker"
+  },
+  "h": "d5d8c68d54",
+  "note": "Means repeated the sentence",
+  "v": "fix"
+ },
+ "basics:154": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "c10d6b0481",
+  "v": "ok"
+ },
+ "basics:155": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "e30a8236d6",
+  "v": "ok"
+ },
+ "basics:156": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "a3bf4b392d",
+  "v": "ok"
+ },
+ "basics:157": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "b60a45e362",
+  "v": "ok"
+ },
+ "basics:158": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "76c43734e0",
+  "v": "ok"
+ },
+ "basics:16": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "5da6936511",
+  "v": "ok"
+ },
+ "basics:17": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "9d85893ff6",
+  "v": "ok"
+ },
+ "basics:18": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "f1020a9355",
+  "v": "ok"
+ },
+ "basics:19": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "e108bbf82e",
+  "v": "ok"
+ },
+ "basics:2": {
+  "at": "2026-10-16T23:57:03Z",
+  "fix": {
+   "ex": "Soccer shoes with grips on the bottom go by the name cleats"
+  },
+  "h": "f6f100731a",
+  "note": "Plural verb ruled out the singular wrong answers. “Go by the name” fits any",
+  "v": "fix"
+ },
+ "basics:20": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "5f648b772c",
+  "v": "ok"
+ },
+ "basics:21": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "e7d3c20afc",
+  "v": "ok"
+ },
+ "basics:22": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "f4615a660b",
+  "v": "ok"
+ },
+ "basics:23": {
+  "at": "2026-10-16T23:57:03Z",
+  "fix": {
+   "means": "They swap at halftime"
+  },
+  "h": "cf84fe7ca2",
+  "note": "Means repeated the sentence",
+  "v": "fix"
+ },
+ "basics:24": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "4698afc094",
+  "v": "ok"
+ },
+ "basics:25": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "23651e1140",
+  "v": "ok"
+ },
+ "basics:26": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "57fd5b5eac",
+  "v": "ok"
+ },
+ "basics:27": {
+  "at": "2026-10-16T23:57:03Z",
+  "fix": {
+   "ex": "In youth soccer, halves may be shorter than the usual 45 minutes"
+  },
+  "h": "cefb1a370b",
+  "note": "Smoother: youth soccer doesn’t play its own halves",
+  "v": "fix"
+ },
+ "basics:28": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "a14f83771b",
+  "v": "ok"
+ },
+ "basics:29": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "e763560baf",
+  "v": "ok"
+ },
+ "basics:3": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "24d32289b4",
+  "v": "ok"
+ },
+ "basics:30": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "8d4824d082",
+  "v": "ok"
+ },
+ "basics:31": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "8847e7037c",
+  "v": "ok"
+ },
+ "basics:32": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "dd57d8e6bd",
+  "v": "ok"
+ },
+ "basics:33": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "e3daa5bd3d",
+  "v": "ok"
+ },
+ "basics:34": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "7889694588",
+  "v": "ok"
+ },
+ "basics:35": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "a7a85dde4a",
+  "v": "ok"
+ },
+ "basics:36": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "0c3e987c8b",
+  "v": "ok"
+ },
+ "basics:37": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "f43af470ae",
+  "v": "ok"
+ },
+ "basics:38": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "95c1f6abef",
+  "v": "ok"
+ },
+ "basics:39": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "4008399bb1",
+  "v": "ok"
+ },
+ "basics:4": {
+  "at": "2026-10-16T23:57:03Z",
+  "fix": {
+   "means": "Shin guard size is each player’s call"
+  },
+  "h": "b62b78dcb2",
+  "note": "Means said “their” with two possible owners",
+  "v": "fix"
+ },
+ "basics:40": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "691604ea1c",
+  "v": "ok"
+ },
+ "basics:41": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "dd8bfcf28a",
+  "v": "ok"
+ },
+ "basics:42": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "61e7295882",
+  "note": "Sidelines takes a singular verb here and reads oddly when drawn, but the pool is mixed",
+  "v": "ok"
+ },
+ "basics:43": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "06a760119f",
+  "v": "ok"
+ },
+ "basics:44": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "9f60148be1",
+  "v": "ok"
+ },
+ "basics:45": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "3e7f16243d",
+  "v": "ok"
+ },
+ "basics:46": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "d5e2350907",
+  "v": "ok"
+ },
+ "basics:47": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "078a3640c5",
+  "v": "ok"
+ },
+ "basics:48": {
+  "at": "2026-10-16T23:57:03Z",
+  "fix": {
+   "means": "Written as one word"
+  },
+  "h": "b65db7da24",
+  "note": "Means repeated the sentence",
+  "v": "fix"
+ },
+ "basics:49": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "760a652000",
+  "v": "ok"
+ },
+ "basics:5": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "f9177ada3f",
+  "v": "ok"
+ },
+ "basics:50": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "ba2dd95fa0",
+  "v": "ok"
+ },
+ "basics:51": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "ed09f4380e",
+  "v": "ok"
+ },
+ "basics:52": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "ce82914bf2",
+  "v": "ok"
+ },
+ "basics:53": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "ec9e19212a",
+  "v": "ok"
+ },
+ "basics:54": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "efa20bbd19",
+  "v": "ok"
+ },
+ "basics:55": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "8a8011f0bf",
+  "v": "ok"
+ },
+ "basics:56": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "fb8a0e218d",
+  "v": "ok"
+ },
+ "basics:57": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "fa82247817",
+  "v": "ok"
+ },
+ "basics:58": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "8b1072dd46",
+  "v": "ok"
+ },
+ "basics:59": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "a30d869745",
+  "v": "ok"
+ },
+ "basics:6": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "6a509c3b2f",
+  "v": "ok"
+ },
+ "basics:60": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "9933bc35df",
+  "v": "ok"
+ },
+ "basics:61": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "ca7e35f444",
+  "v": "ok"
+ },
+ "basics:62": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "ff8b7619c6",
+  "v": "ok"
+ },
+ "basics:63": {
+  "at": "2026-10-16T23:57:03Z",
+  "fix": {
+   "ex": "A corner flag stands at each of the four points where the boundary lines meet"
+  },
+  "h": "edd14148bb",
+  "note": "One flag can’t stand at all four points",
+  "v": "fix"
+ },
+ "basics:64": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "c62622c7ce",
+  "v": "ok"
+ },
+ "basics:65": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "13513973da",
+  "v": "ok"
+ },
+ "basics:66": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "8d63a6d3b0",
+  "v": "ok"
+ },
+ "basics:67": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "48aa5187a5",
+  "v": "ok"
+ },
+ "basics:68": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "44e7df0da5",
+  "v": "ok"
+ },
+ "basics:69": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "c2a761efb3",
+  "v": "ok"
+ },
+ "basics:7": {
+  "at": "2026-10-16T23:57:03Z",
+  "fix": {
+   "ex": "A team shirt with a name and number on the back goes by the name jersey"
+  },
+  "h": "d6d53404bd",
+  "note": "“a ___” ruled out the plural wrong answers. Trimmed to fit",
+  "v": "fix"
+ },
+ "basics:70": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "ea4f4afcee",
+  "v": "ok"
+ },
+ "basics:71": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "e526709a71",
+  "v": "ok"
+ },
+ "basics:72": {
+  "at": "2026-10-16T23:57:03Z",
+  "fix": {
+   "ex": "At a corner kick, the ball sits in the small arc and the flag can’t be moved",
+   "hook": "flag"
+  },
+  "h": "82cc414fed",
+  "note": "Flagpost isn’t in Merriam-Webster, and card 52 says flagpole. Plain flag reads best for kids",
+  "v": "fix"
+ },
+ "basics:73": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "ce1f79c823",
+  "v": "ok"
+ },
+ "basics:74": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "c878a4b225",
+  "v": "ok"
+ },
+ "basics:75": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "cfaf0845b2",
+  "v": "ok"
+ },
+ "basics:76": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "247351f957",
+  "v": "ok"
+ },
+ "basics:77": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "5a6666802e",
+  "v": "ok"
+ },
+ "basics:78": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "713675cd3a",
+  "v": "ok"
+ },
+ "basics:79": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "92099e0bdb",
+  "v": "ok"
+ },
+ "basics:8": {
+  "at": "2026-10-16T23:57:03Z",
+  "fix": {
+   "ex": "The stiff pad over the front of the leg below the knee goes by the name shin guard"
+  },
+  "h": "5e8eb9da45",
+  "note": "“is a ___” ruled out the plural wrong answers",
+  "v": "fix"
+ },
+ "basics:80": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "79ee21b400",
+  "v": "ok"
+ },
+ "basics:81": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "eb4f4dc071",
+  "v": "ok"
+ },
+ "basics:82": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "b44197753e",
+  "v": "ok"
+ },
+ "basics:83": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "304ee1da71",
+  "v": "ok"
+ },
+ "basics:84": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "31a06b7df0",
+  "v": "ok"
+ },
+ "basics:85": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "e40c8616b1",
+  "v": "ok"
+ },
+ "basics:86": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "6e18fa7e6b",
+  "v": "ok"
+ },
+ "basics:87": {
+  "at": "2026-10-16T23:57:03Z",
+  "fix": {
+   "ex": "At a free kick close to goal, defenders may stand on the goal line between the posts",
+   "means": "Not the usual 10 yards away"
+  },
+  "h": "49a04ab8cd",
+  "note": "Read as every free kick and as a must. The goal line is an allowed exception near goal",
+  "v": "fix"
+ },
+ "basics:88": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "10fb24a432",
+  "v": "ok"
+ },
+ "basics:89": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "e99c11463d",
+  "v": "ok"
+ },
+ "basics:9": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "290b047b95",
+  "note": "Singular wrong answers (shoe, armband, shin guard) read ungrammatically after “wear … that set”, but most of the pool is plural",
+  "v": "ok"
+ },
+ "basics:90": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "4ac48eca53",
+  "v": "ok"
+ },
+ "basics:91": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "06b9bde94a",
+  "v": "ok"
+ },
+ "basics:92": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "120e050fa9",
+  "v": "ok"
+ },
+ "basics:93": {
+  "at": "2026-10-16T23:57:03Z",
+  "fix": {
+   "ex": "Once a keeper puts the ball down to play it, she’s open to tackling"
+  },
+  "h": "c79fe25b32",
+  "note": "“try ___ her” fit only gerunds, so most wrong answers read as broken English",
+  "v": "fix"
+ },
+ "basics:94": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "5ac4785201",
+  "v": "ok"
+ },
+ "basics:95": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "4aae3e99ba",
+  "v": "ok"
+ },
+ "basics:96": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "6381fcc289",
+  "v": "ok"
+ },
+ "basics:97": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "0d160b63b2",
+  "v": "ok"
+ },
+ "basics:98": {
+  "at": "2026-10-16T23:57:03Z",
+  "fix": {
+   "means": "It is if the arm moves toward the ball"
+  },
+  "h": "cc8a7d5c97",
+  "note": "Means “does” had no clear verb to stand for",
+  "v": "fix"
+ },
+ "basics:99": {
+  "at": "2026-10-16T23:57:03Z",
+  "h": "7215d437da",
+  "v": "ok"
+ },
+ "bundesliga:0": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "fbab5ed700",
+  "v": "ok"
+ },
+ "bundesliga:1": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "a175428461",
+  "v": "ok"
+ },
+ "bundesliga:10": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "7b720a458a",
+  "v": "ok"
+ },
+ "bundesliga:11": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "5fd85490a6",
+  "note": "Shares the hook top scorer with the Torjägerkanone card, the draw keeps them apart",
+  "v": "ok"
+ },
+ "bundesliga:12": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "31bb42d6a1",
+  "v": "ok"
+ },
+ "bundesliga:13": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "68eb01c22a",
+  "v": "ok"
+ },
+ "bundesliga:14": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "1f52fc61b5",
+  "v": "ok"
+ },
+ "bundesliga:15": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "547afc2524",
+  "v": "ok"
+ },
+ "bundesliga:16": {
+  "at": "2026-10-16T23:57:47Z",
+  "fix": {
+   "ex": "Frankfurt’s Karl-Heinz Körbel played the most Bundesliga games",
+   "hook": "Frankfurt",
+   "means": "602 of them, all for one club"
+  },
+  "h": "7021d11757",
+  "note": "Hook was the bare league name. Club moved into the sentence as the hook, past tense for a retired player, means reworded to match",
+  "v": "fix"
+ },
+ "bundesliga:17": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "a6ba4c3409",
+  "v": "ok"
+ },
+ "bundesliga:18": {
+  "at": "2026-10-16T23:57:47Z",
+  "fix": {
+   "ex": "Erling Haaland scored a hat trick off the bench on his Bundesliga debut",
+   "hook": "hat trick"
+  },
+  "h": "1d5e9a96b7",
+  "note": "MW spells hat trick open",
+  "v": "fix"
+ },
+ "bundesliga:19": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "0e920cf6b2",
+  "v": "ok"
+ },
+ "bundesliga:2": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "65b0a28a9a",
+  "v": "ok"
+ },
+ "bundesliga:20": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "570d38e6a8",
+  "v": "ok"
+ },
+ "bundesliga:21": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "b241e5fa82",
+  "v": "ok"
+ },
+ "bundesliga:22": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "94fab7c7b4",
+  "v": "ok"
+ },
+ "bundesliga:23": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "79ca7dba66",
+  "v": "ok"
+ },
+ "bundesliga:24": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "a636558065",
+  "v": "ok"
+ },
+ "bundesliga:25": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "2ec5c59a09",
+  "v": "ok"
+ },
+ "bundesliga:26": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "36ed3eef14",
+  "v": "ok"
+ },
+ "bundesliga:27": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "12b5bf7b30",
+  "v": "ok"
+ },
+ "bundesliga:28": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "78c8e036f4",
+  "v": "ok"
+ },
+ "bundesliga:29": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "d5ad3ee7d5",
+  "note": "Yellow Wall can draw here and reads as nonsense (a stand, not a stadium), card still works",
+  "v": "ok"
+ },
+ "bundesliga:3": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "0f4262d932",
+  "v": "ok"
+ },
+ "bundesliga:30": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "5bd7f803b2",
+  "v": "ok"
+ },
+ "bundesliga:31": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "ebc0b7ce3b",
+  "v": "ok"
+ },
+ "bundesliga:32": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "f959952202",
+  "v": "ok"
+ },
+ "bundesliga:33": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "5badb0e057",
+  "v": "ok"
+ },
+ "bundesliga:34": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "6dd0dfe7f5",
+  "v": "ok"
+ },
+ "bundesliga:35": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "d7f31e5037",
+  "v": "ok"
+ },
+ "bundesliga:36": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "b345ffcb57",
+  "v": "ok"
+ },
+ "bundesliga:37": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "ef481e57bb",
+  "v": "ok"
+ },
+ "bundesliga:38": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "c85ca771d7",
+  "v": "ok"
+ },
+ "bundesliga:39": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "340335693c",
+  "v": "ok"
+ },
+ "bundesliga:4": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "c56ba1d3f3",
+  "v": "ok"
+ },
+ "bundesliga:40": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "2b40a5ce35",
+  "v": "ok"
+ },
+ "bundesliga:41": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "c9599ec918",
+  "v": "ok"
+ },
+ "bundesliga:42": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "210db82fa7",
+  "v": "ok"
+ },
+ "bundesliga:43": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "68f71ad792",
+  "v": "ok"
+ },
+ "bundesliga:44": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "589ff2ec0f",
+  "note": "Der Kaiser or Der Bomber in the slot reads as “the Der …”, odd but the card still works",
+  "v": "ok"
+ },
+ "bundesliga:45": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "3f37fea269",
+  "note": "Der Kaiser or Der Bomber in the slot reads as “the Der …”, odd but the card still works",
+  "v": "ok"
+ },
+ "bundesliga:46": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "2de51ff794",
+  "v": "ok"
+ },
+ "bundesliga:47": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "b2804ee438",
+  "v": "ok"
+ },
+ "bundesliga:48": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "fa8307c789",
+  "v": "ok"
+ },
+ "bundesliga:49": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "1de72c9de4",
+  "v": "ok"
+ },
+ "bundesliga:5": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "9f8faff92d",
+  "v": "ok"
+ },
+ "bundesliga:50": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "6d28ae7232",
+  "v": "ok"
+ },
+ "bundesliga:51": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "b53bff2a08",
+  "v": "ok"
+ },
+ "bundesliga:52": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "3e9e02a911",
+  "v": "ok"
+ },
+ "bundesliga:53": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "e016ab221e",
+  "v": "ok"
+ },
+ "bundesliga:54": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "a610940f3d",
+  "v": "ok"
+ },
+ "bundesliga:55": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "7512936d6a",
+  "v": "ok"
+ },
+ "bundesliga:56": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "897964cdd2",
+  "v": "ok"
+ },
+ "bundesliga:57": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "2ed9423e6d",
+  "v": "ok"
+ },
+ "bundesliga:58": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "91a6f6d3b4",
+  "v": "ok"
+ },
+ "bundesliga:59": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "8672e64e1d",
+  "v": "ok"
+ },
+ "bundesliga:6": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "ef400c4123",
+  "v": "ok"
+ },
+ "bundesliga:60": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "92b69af5b5",
+  "v": "ok"
+ },
+ "bundesliga:61": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "6917fe3cdc",
+  "v": "ok"
+ },
+ "bundesliga:62": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "beab3978c7",
+  "v": "ok"
+ },
+ "bundesliga:63": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "e283885ab1",
+  "v": "ok"
+ },
+ "bundesliga:64": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "71adacf20b",
+  "v": "ok"
+ },
+ "bundesliga:65": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "68e7a36e51",
+  "v": "ok"
+ },
+ "bundesliga:66": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "c124b3b543",
+  "v": "ok"
+ },
+ "bundesliga:7": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "98e557f58b",
+  "v": "ok"
+ },
+ "bundesliga:8": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "19720c0de7",
+  "v": "ok"
+ },
+ "bundesliga:9": {
+  "at": "2026-10-16T23:57:47Z",
+  "h": "98cd6ff2d8",
+  "v": "ok"
+ },
+ "epl-more:0": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "2121020ea8",
+  "v": "ok"
+ },
+ "epl-more:1": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "4c2b5cc93f",
+  "v": "ok"
+ },
+ "epl-more:10": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "67be59b960",
+  "v": "ok"
+ },
+ "epl-more:11": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "1f92dbd45f",
+  "v": "ok"
+ },
+ "epl-more:12": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "f0ca9db06c",
+  "v": "ok"
+ },
+ "epl-more:13": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "706da6b867",
+  "v": "ok"
+ },
+ "epl-more:14": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "c293c37a70",
+  "v": "ok"
+ },
+ "epl-more:15": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "30d040f001",
+  "v": "ok"
+ },
+ "epl-more:16": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "40d90ecd3e",
+  "v": "ok"
+ },
+ "epl-more:17": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "3443d20a66",
+  "v": "ok"
+ },
+ "epl-more:18": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "ce6fefbacf",
+  "v": "ok"
+ },
+ "epl-more:19": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "36e5d4f851",
+  "v": "ok"
+ },
+ "epl-more:2": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "d384d3c3db",
+  "v": "ok"
+ },
+ "epl-more:20": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "e6bbdd3e20",
+  "v": "ok"
+ },
+ "epl-more:21": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "f38d6da446",
+  "v": "ok"
+ },
+ "epl-more:22": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "a6d2f54691",
+  "v": "ok"
+ },
+ "epl-more:23": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "68cc570588",
+  "v": "ok"
+ },
+ "epl-more:24": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "3155080ef7",
+  "v": "ok"
+ },
+ "epl-more:25": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "8feb493a0e",
+  "v": "ok"
+ },
+ "epl-more:26": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "f9822f5f5a",
+  "v": "ok"
+ },
+ "epl-more:27": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "7be880b31f",
+  "v": "ok"
+ },
+ "epl-more:28": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "27936d979b",
+  "v": "ok"
+ },
+ "epl-more:29": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "5aa6597c7b",
+  "v": "ok"
+ },
+ "epl-more:3": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "9f36768dc6",
+  "v": "ok"
+ },
+ "epl-more:30": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "304b9ef9fe",
+  "v": "ok"
+ },
+ "epl-more:31": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "efe1551ba1",
+  "v": "ok"
+ },
+ "epl-more:32": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "af4fd9b54d",
+  "v": "ok"
+ },
+ "epl-more:33": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "8b96841976",
+  "v": "ok"
+ },
+ "epl-more:34": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "2c5e513d2f",
+  "v": "ok"
+ },
+ "epl-more:35": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "2d187a1e2e",
+  "v": "ok"
+ },
+ "epl-more:36": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "214ea59e4e",
+  "v": "ok"
+ },
+ "epl-more:37": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "2633037e69",
+  "v": "ok"
+ },
+ "epl-more:38": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "4bcacad011",
+  "v": "ok"
+ },
+ "epl-more:39": {
+  "at": "2026-10-16T23:57:25Z",
+  "fix": {
+   "ex": "Villa Park has hosted 55 FA Cup semifinals, more than any ground"
+  },
+  "h": "e044304a5d",
+  "note": "M-W closes “semifinal”",
+  "v": "fix"
+ },
+ "epl-more:4": {
+  "at": "2026-10-16T23:57:25Z",
+  "fix": {
+   "ex": "Sadio Mané scored a hat trick in 2 minutes 56 seconds in 2015",
+   "hook": "hat trick",
+   "means": "For Southampton against Aston Villa"
+  },
+  "h": "c1591ffd68",
+  "note": "“hat trick” is open in M-W and “v” becomes “against” in American style",
+  "v": "fix"
+ },
+ "epl-more:40": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "84f0a1b7d9",
+  "v": "ok"
+ },
+ "epl-more:41": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "c3c0b1ee4a",
+  "note": "Wrong answers like Highbury read oddly with “their” but fit the grammar",
+  "v": "ok"
+ },
+ "epl-more:42": {
+  "at": "2026-10-16T23:57:25Z",
+  "fix": {
+   "ex": "A win is worth 3 points, and a draw is worth 1",
+   "means": "A loss earns nothing"
+  },
+  "h": "90ec00910e",
+  "note": "“1 point” ruled out every plural wrong answer by grammar. Means moved off the win fact now in the sentence",
+  "v": "fix"
+ },
+ "epl-more:43": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "a349c755f5",
+  "note": "Shares the number pool with 1, which reads as ungrammatical here (1 + plural noun) but the card still works",
+  "v": "ok"
+ },
+ "epl-more:44": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "9cc7e34c4e",
+  "note": "Shares the number pool with 1, which reads as ungrammatical here (1 + plural noun) but the card still works. Some wrong answers (97, 106) read as nonsense but fit the grammar",
+  "v": "ok"
+ },
+ "epl-more:45": {
+  "at": "2026-10-16T23:57:25Z",
+  "fix": {
+   "means": "Like Arsenal, Chelsea, and Liverpool"
+  },
+  "h": "058c648d54",
+  "note": "Chicago serial comma in the means",
+  "v": "fix"
+ },
+ "epl-more:46": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "0b15e2634e",
+  "note": "Shares the number pool with 1, which reads as ungrammatical here (1 + plural noun) but the card still works",
+  "v": "ok"
+ },
+ "epl-more:47": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "b9f2342d5c",
+  "note": "Shares the number pool with 1, which reads as ungrammatical here (1 + plural noun) but the card still works",
+  "v": "ok"
+ },
+ "epl-more:48": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "98e4b28122",
+  "note": "Shares the number pool with 1, which reads as ungrammatical here (1 + plural noun) but the card still works",
+  "v": "ok"
+ },
+ "epl-more:49": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "5606942b59",
+  "v": "ok"
+ },
+ "epl-more:5": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "a9057eab18",
+  "v": "ok"
+ },
+ "epl-more:50": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "944a26795d",
+  "v": "ok"
+ },
+ "epl-more:51": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "e23fccd631",
+  "v": "ok"
+ },
+ "epl-more:52": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "20db55118a",
+  "v": "ok"
+ },
+ "epl-more:53": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "6e9c497bad",
+  "v": "ok"
+ },
+ "epl-more:54": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "659325042b",
+  "v": "ok"
+ },
+ "epl-more:55": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "2fa86ca8d3",
+  "v": "ok"
+ },
+ "epl-more:56": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "adc611bee9",
+  "v": "ok"
+ },
+ "epl-more:57": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "f95e30d81c",
+  "v": "ok"
+ },
+ "epl-more:58": {
+  "at": "2026-10-16T23:57:25Z",
+  "fix": {
+   "ex": "Manchester City were once called Ardwick"
+  },
+  "h": "2a3a7ec4f3",
+  "note": "Clubs take plural verbs and pronouns, and the sentence was wordy",
+  "v": "fix"
+ },
+ "epl-more:59": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "b4e702dc77",
+  "v": "ok"
+ },
+ "epl-more:6": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "f579303d2b",
+  "v": "ok"
+ },
+ "epl-more:60": {
+  "at": "2026-10-16T23:57:25Z",
+  "fix": {
+   "means": "Their founder worked for a cycle firm"
+  },
+  "h": "3d7ade06e8",
+  "note": "Coventry City take a plural pronoun",
+  "v": "fix"
+ },
+ "epl-more:61": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "a9cc08bb3a",
+  "v": "ok"
+ },
+ "epl-more:62": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "991cd86ebd",
+  "v": "ok"
+ },
+ "epl-more:63": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "4475815f42",
+  "v": "ok"
+ },
+ "epl-more:64": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "4b11220f16",
+  "v": "ok"
+ },
+ "epl-more:65": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "f73453260a",
+  "v": "ok"
+ },
+ "epl-more:66": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "4871192ebc",
+  "v": "ok"
+ },
+ "epl-more:7": {
+  "at": "2026-10-16T23:57:25Z",
+  "fix": {
+   "ex": "Eric Cantona scored the first Premier League hat trick, for Leeds"
+  },
+  "h": "d88f4a616c",
+  "note": "“hat trick” is open in M-W",
+  "v": "fix"
+ },
+ "epl-more:8": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "ea83ff8e46",
+  "v": "ok"
+ },
+ "epl-more:9": {
+  "at": "2026-10-16T23:57:25Z",
+  "h": "16774b5952",
+  "v": "ok"
+ },
  "epl:0": {
   "at": "2026-10-16T23:54:41Z",
   "h": "52f11c42dd",
@@ -840,6 +2439,679 @@
  "epl:9": {
   "at": "2026-10-16T23:54:41Z",
   "h": "bb16f6d85b",
+  "v": "ok"
+ },
+ "laliga:0": {
+  "at": "2026-10-16T23:57:35Z",
+  "fix": {
+   "ex": "Real Madrid beat Barcelona 8–2 in 1934–35, the biggest league win between the two",
+   "hook": "Barcelona"
+  },
+  "h": "480984c17f",
+  "note": "“Clásico” next to Barcelona gave the answer away, hook moved off it",
+  "v": "fix"
+ },
+ "laliga:1": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "4a07c7b1a6",
+  "note": "hook is thin but nothing better in the sentence",
+  "v": "ok"
+ },
+ "laliga:10": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "da8c199c5f",
+  "v": "ok"
+ },
+ "laliga:11": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "d46749219b",
+  "v": "ok"
+ },
+ "laliga:12": {
+  "at": "2026-10-16T23:57:35Z",
+  "fix": {
+   "ex": "Lionel Messi is LaLiga’s all-time top scorer"
+  },
+  "h": "7e2e11a865",
+  "note": "“all-time” and “history” said the same thing",
+  "v": "fix"
+ },
+ "laliga:13": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "b30142c56f",
+  "v": "ok"
+ },
+ "laliga:14": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "50c463fc5c",
+  "v": "ok"
+ },
+ "laliga:15": {
+  "at": "2026-10-16T23:57:35Z",
+  "fix": {
+   "ex": "The keeper who concedes the fewest goals wins a trophy named for Ricardo Zamora"
+  },
+  "h": "ecc4e2b1a9",
+  "note": "“concedes fewest wins” garden-pathed as “fewest wins”",
+  "v": "fix"
+ },
+ "laliga:16": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "a2e26d6390",
+  "v": "ok"
+ },
+ "laliga:17": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "7d74fa8ead",
+  "v": "ok"
+ },
+ "laliga:18": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "c967706445",
+  "v": "ok"
+ },
+ "laliga:19": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "cb043e5ad8",
+  "v": "ok"
+ },
+ "laliga:2": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "79bd04b0cc",
+  "v": "ok"
+ },
+ "laliga:20": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "a20473a987",
+  "v": "ok"
+ },
+ "laliga:21": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "45e685673a",
+  "v": "ok"
+ },
+ "laliga:22": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "6542d08a40",
+  "v": "ok"
+ },
+ "laliga:23": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "25a356353d",
+  "v": "ok"
+ },
+ "laliga:24": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "b35b6fbd53",
+  "v": "ok"
+ },
+ "laliga:25": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "1983790f91",
+  "v": "ok"
+ },
+ "laliga:26": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "2684f871e6",
+  "v": "ok"
+ },
+ "laliga:27": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "992b0955ea",
+  "v": "ok"
+ },
+ "laliga:28": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "0daf7437cc",
+  "v": "ok"
+ },
+ "laliga:29": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "d1477b7583",
+  "v": "ok"
+ },
+ "laliga:3": {
+  "at": "2026-10-16T23:57:35Z",
+  "fix": {
+   "ex": "Athletic Club field only players born or trained in the Basque Country"
+  },
+  "h": "fe61d7cbb0",
+  "note": "“only field players” read as outfield players, only moved to what it limits",
+  "v": "fix"
+ },
+ "laliga:30": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "729c48e595",
+  "v": "ok"
+ },
+ "laliga:31": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "60c208cc82",
+  "v": "ok"
+ },
+ "laliga:32": {
+  "at": "2026-10-16T23:57:35Z",
+  "fix": {
+   "ex": "Real Madrid’s Miguel Muñoz won more league titles than any other coach"
+  },
+  "h": "3e8cf296fb",
+  "note": "past tense for a finished career. Means repeats the sentence, his title count would teach more",
+  "v": "fix"
+ },
+ "laliga:33": {
+  "at": "2026-10-16T23:57:35Z",
+  "fix": {
+   "ex": "Luis Aragonés coached more LaLiga games than anyone"
+  },
+  "h": "827e70bf89",
+  "note": "past tense for a finished career. Means repeats the sentence",
+  "v": "fix"
+ },
+ "laliga:34": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "3f08015ca7",
+  "v": "ok"
+ },
+ "laliga:35": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "c6e6baa0cd",
+  "v": "ok"
+ },
+ "laliga:36": {
+  "at": "2026-10-16T23:57:35Z",
+  "fix": {
+   "ex": "Real Madrid play their home games at the Bernabéu",
+   "means": "Full name: Santiago Bernabéu"
+  },
+  "h": "7156204586",
+  "note": "“Santiago” before the blank called for a surname and ruled out most stadiums, full name moved to means",
+  "v": "fix"
+ },
+ "laliga:37": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "2f03b32f42",
+  "note": "sponsor prefix makes some wrong answers read oddly but the card works",
+  "v": "ok"
+ },
+ "laliga:38": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "59ad37ddfc",
+  "v": "ok"
+ },
+ "laliga:39": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "8e8e09915b",
+  "v": "ok"
+ },
+ "laliga:4": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "64f62a43a8",
+  "v": "ok"
+ },
+ "laliga:40": {
+  "at": "2026-10-16T23:57:35Z",
+  "fix": {
+   "ex": "Sevilla play their home games at the Sánchez-Pizjuán"
+  },
+  "h": "9e5d01b5d3",
+  "note": "“Ramón” before the blank called for a surname and gave the answer away",
+  "v": "fix"
+ },
+ "laliga:41": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "74926da185",
+  "v": "ok"
+ },
+ "laliga:42": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "51b95326aa",
+  "v": "ok"
+ },
+ "laliga:43": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "00a470ba34",
+  "v": "ok"
+ },
+ "laliga:44": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "1c52eb330b",
+  "v": "ok"
+ },
+ "laliga:45": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "73454356cb",
+  "v": "ok"
+ },
+ "laliga:46": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "a1c177b5bd",
+  "v": "ok"
+ },
+ "laliga:47": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "e0bf7095fc",
+  "v": "ok"
+ },
+ "laliga:48": {
+  "at": "2026-10-16T23:57:35Z",
+  "fix": {
+   "hook": "top-flight"
+  },
+  "h": "95d4b95277",
+  "note": "hook was the empty “two players”",
+  "v": "fix"
+ },
+ "laliga:49": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "ccd8d235de",
+  "v": "ok"
+ },
+ "laliga:5": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "4f286afc0a",
+  "v": "ok"
+ },
+ "laliga:50": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "4cdaa94572",
+  "v": "ok"
+ },
+ "laliga:51": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "6b2ccdc58c",
+  "v": "ok"
+ },
+ "laliga:52": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "c706b6881a",
+  "v": "ok"
+ },
+ "laliga:53": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "fc0b32e890",
+  "v": "ok"
+ },
+ "laliga:54": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "690eccc864",
+  "v": "ok"
+ },
+ "laliga:55": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "f9abc330dd",
+  "v": "ok"
+ },
+ "laliga:56": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "80cbb29635",
+  "v": "ok"
+ },
+ "laliga:6": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "abcfeda9f3",
+  "v": "ok"
+ },
+ "laliga:7": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "c2e1126607",
+  "v": "ok"
+ },
+ "laliga:8": {
+  "at": "2026-10-16T23:57:35Z",
+  "fix": {
+   "ex": "Rafa Benítez coached Valencia to the title in 2001–02 and again two years later"
+  },
+  "h": "64a119c8f6",
+  "note": "“to the league” means the title, said plainly",
+  "v": "fix"
+ },
+ "laliga:9": {
+  "at": "2026-10-16T23:57:35Z",
+  "h": "3156c2a568",
+  "note": "FC Barcelona as a wrong answer reads as nonsense but the card works",
+  "v": "ok"
+ },
+ "ligue1:0": {
+  "at": "2026-10-16T23:58:01Z",
+  "fix": {
+   "means": "The fifth came with a 2–0 win at Lens"
+  },
+  "h": "9972f1ed28",
+  "note": "Means was unclear about which title it meant",
+  "v": "fix"
+ },
+ "ligue1:1": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "73b9f10b86",
+  "v": "ok"
+ },
+ "ligue1:10": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "6202f38956",
+  "v": "ok"
+ },
+ "ligue1:11": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "d8476986ca",
+  "v": "ok"
+ },
+ "ligue1:12": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "adf15a23b9",
+  "v": "ok"
+ },
+ "ligue1:13": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "15b9b715ab",
+  "v": "ok"
+ },
+ "ligue1:14": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "aaf0dc7b01",
+  "v": "ok"
+ },
+ "ligue1:15": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "26b3de290e",
+  "v": "ok"
+ },
+ "ligue1:16": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "d63a67fc31",
+  "v": "ok"
+ },
+ "ligue1:17": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "8da4ac1941",
+  "v": "ok"
+ },
+ "ligue1:18": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "14d9d396d6",
+  "v": "ok"
+ },
+ "ligue1:19": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "09b72d333b",
+  "v": "ok"
+ },
+ "ligue1:2": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "49b5a3adc8",
+  "v": "ok"
+ },
+ "ligue1:20": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "129ea6361f",
+  "v": "ok"
+ },
+ "ligue1:21": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "c411341f31",
+  "v": "ok"
+ },
+ "ligue1:22": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "afc5f87bdb",
+  "v": "ok"
+ },
+ "ligue1:23": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "a30c846060",
+  "v": "ok"
+ },
+ "ligue1:24": {
+  "at": "2026-10-16T23:58:01Z",
+  "fix": {
+   "means": "Marseille’s most recent league title"
+  },
+  "h": "76d61c1799",
+  "note": "OM is not explained for new fans",
+  "v": "fix"
+ },
+ "ligue1:25": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "954df3439e",
+  "v": "ok"
+ },
+ "ligue1:26": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "2790edfd73",
+  "v": "ok"
+ },
+ "ligue1:27": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "75fd276634",
+  "v": "ok"
+ },
+ "ligue1:28": {
+  "at": "2026-10-16T23:58:01Z",
+  "fix": {
+   "means": "Le Volcan means “the Volcano”"
+  },
+  "h": "cef415c1d6",
+  "note": "Means repeated the sentence, now translates the nickname",
+  "v": "fix"
+ },
+ "ligue1:29": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "67ca85d3a8",
+  "v": "ok"
+ },
+ "ligue1:3": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "d5e3c579ea",
+  "v": "ok"
+ },
+ "ligue1:30": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "256078d640",
+  "v": "ok"
+ },
+ "ligue1:31": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "5912b5cfc1",
+  "v": "ok"
+ },
+ "ligue1:32": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "861d47c788",
+  "v": "ok"
+ },
+ "ligue1:33": {
+  "at": "2026-10-16T23:58:01Z",
+  "fix": {
+   "means": "Opened in 2013"
+  },
+  "h": "693e50db97",
+  "note": "means repeated the sentence. New fact, for the fact checker",
+  "v": "fix"
+ },
+ "ligue1:34": {
+  "at": "2026-10-16T23:58:01Z",
+  "fix": {
+   "means": "Roazhon is Breton for Rennes"
+  },
+  "h": "72716c7a33",
+  "note": "means repeated the sentence. New fact, for the fact checker",
+  "v": "fix"
+ },
+ "ligue1:35": {
+  "at": "2026-10-16T23:58:01Z",
+  "fix": {
+   "means": "Named for Prince Louis II"
+  },
+  "h": "7b605c0d44",
+  "note": "means repeated the sentence. New fact, for the fact checker",
+  "v": "fix"
+ },
+ "ligue1:36": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "3b7795fe8e",
+  "v": "ok"
+ },
+ "ligue1:37": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "22bce96d95",
+  "v": "ok"
+ },
+ "ligue1:38": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "d863274fa8",
+  "v": "ok"
+ },
+ "ligue1:39": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "fbea6b955c",
+  "v": "ok"
+ },
+ "ligue1:4": {
+  "at": "2026-10-16T23:58:01Z",
+  "fix": {
+   "ex": "When Montpellier won the 2011–12 title, owner Louis Nicollin got a faux-hawk"
+  },
+  "h": "64e0a3f258",
+  "note": "MW spells it faux-hawk",
+  "v": "fix"
+ },
+ "ligue1:40": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "115277eb11",
+  "v": "ok"
+ },
+ "ligue1:41": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "21d2ffdc98",
+  "v": "ok"
+ },
+ "ligue1:42": {
+  "at": "2026-10-16T23:58:01Z",
+  "fix": {
+   "means": "Steve Mandanda played a record 30"
+  },
+  "h": "a38da75567",
+  "note": "Gave Mandanda his first name for new fans",
+  "v": "fix"
+ },
+ "ligue1:43": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "5651263a7b",
+  "v": "ok"
+ },
+ "ligue1:44": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "bbad93d4fd",
+  "v": "ok"
+ },
+ "ligue1:45": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "f0166aec46",
+  "note": "Every wrong derby name reads fine after The spiciest",
+  "v": "ok"
+ },
+ "ligue1:46": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "61057b5070",
+  "v": "ok"
+ },
+ "ligue1:47": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "239b5dcca9",
+  "v": "ok"
+ },
+ "ligue1:48": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "59003cb18a",
+  "v": "ok"
+ },
+ "ligue1:49": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "f998170f61",
+  "v": "ok"
+ },
+ "ligue1:5": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "b16811d3ee",
+  "v": "ok"
+ },
+ "ligue1:50": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "847234d687",
+  "v": "ok"
+ },
+ "ligue1:51": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "fd55bfe263",
+  "v": "ok"
+ },
+ "ligue1:52": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "3f5a5c7353",
+  "v": "ok"
+ },
+ "ligue1:53": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "64b046ba69",
+  "v": "ok"
+ },
+ "ligue1:54": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "50928a0975",
+  "v": "ok"
+ },
+ "ligue1:55": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "da99c8317f",
+  "note": "Hook French is vague but Saint-Étienne runs past 12 characters",
+  "v": "ok"
+ },
+ "ligue1:56": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "cc385e92b3",
+  "v": "ok"
+ },
+ "ligue1:57": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "53fd6dc3c8",
+  "v": "ok"
+ },
+ "ligue1:58": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "8194397db5",
+  "v": "ok"
+ },
+ "ligue1:59": {
+  "at": "2026-10-16T23:58:01Z",
+  "fix": {
+   "means": "A record for one season"
+  },
+  "h": "94e059ffa9",
+  "note": "Means was unclear, now says what the record is",
+  "v": "fix"
+ },
+ "ligue1:6": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "7e585d6eff",
+  "v": "ok"
+ },
+ "ligue1:60": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "3049568ead",
+  "v": "ok"
+ },
+ "ligue1:7": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "eb0f061f0c",
+  "v": "ok"
+ },
+ "ligue1:8": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "6352b4c088",
+  "v": "ok"
+ },
+ "ligue1:9": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "1acae9ed82",
   "v": "ok"
  },
  "lingo-more:0": {
@@ -1491,6 +3763,694 @@
  "parents:9": {
   "at": "2026-10-16T23:55:41Z",
   "h": "70971e5e67",
+  "v": "ok"
+ },
+ "rules:0": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "12b420d16d",
+  "note": "“1 players” reads oddly when drawn, card still works",
+  "v": "ok"
+ },
+ "rules:1": {
+  "at": "2026-10-16T23:57:16Z",
+  "fix": {
+   "means": "Red cards can leave a team that short"
+  },
+  "h": "b49b3f6347",
+  "note": "Means repeated the sentence",
+  "v": "fix"
+ },
+ "rules:10": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "0524c2a6b1",
+  "v": "ok"
+ },
+ "rules:11": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "00667504e4",
+  "v": "ok"
+ },
+ "rules:12": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "054a327e66",
+  "v": "ok"
+ },
+ "rules:13": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "d3dedc58f2",
+  "v": "ok"
+ },
+ "rules:14": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "a77c590b2c",
+  "v": "ok"
+ },
+ "rules:15": {
+  "at": "2026-10-16T23:57:16Z",
+  "fix": {
+   "means": "9.15 m, the center circle’s radius"
+  },
+  "h": "aeb9c7e743",
+  "note": "Means was unclear: the circle’s radius matches",
+  "v": "fix"
+ },
+ "rules:16": {
+  "at": "2026-10-16T23:57:16Z",
+  "fix": {
+   "means": "That’s 11 m in metric"
+  },
+  "h": "cfd913a9d2",
+  "note": "Means repeated the sentence",
+  "v": "fix"
+ },
+ "rules:17": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "46389d3562",
+  "v": "ok"
+ },
+ "rules:18": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "e215ed8e33",
+  "v": "ok"
+ },
+ "rules:19": {
+  "at": "2026-10-16T23:57:16Z",
+  "fix": {
+   "hook": "goal"
+  },
+  "h": "8166a227fc",
+  "note": "Hook names the object, not a modifier",
+  "v": "fix"
+ },
+ "rules:2": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "f0be2be2a7",
+  "note": "Shares the hook substitutes with rules:5, the draw guard keeps them apart",
+  "v": "ok"
+ },
+ "rules:20": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "bbb5287327",
+  "v": "ok"
+ },
+ "rules:21": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "5187530ca3",
+  "v": "ok"
+ },
+ "rules:22": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "7b8d26da1b",
+  "v": "ok"
+ },
+ "rules:23": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "88221232c9",
+  "v": "ok"
+ },
+ "rules:24": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "c226d1a07e",
+  "v": "ok"
+ },
+ "rules:25": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "fac743b5a7",
+  "v": "ok"
+ },
+ "rules:26": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "7434e61d77",
+  "note": "Grammar note: “a indirect free kick” reads wrong when drawn, but it rules out only one of six",
+  "v": "ok"
+ },
+ "rules:27": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "f51e2ea66d",
+  "note": "Grammar note: “a indirect free kick” reads wrong when drawn, but it rules out only one of six",
+  "v": "ok"
+ },
+ "rules:28": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "a20888b3b9",
+  "note": "Grammar note: “a indirect free kick” reads wrong when drawn, but it rules out only one of six",
+  "v": "ok"
+ },
+ "rules:29": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "eaa7725f07",
+  "note": "Grammar note: “a indirect free kick” reads wrong when drawn, but it rules out only one of six",
+  "v": "ok"
+ },
+ "rules:3": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "cb1b053a05",
+  "v": "ok"
+ },
+ "rules:30": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "54ded41f0f",
+  "note": "Grammar note: “a indirect free kick” reads wrong when drawn, but it rules out only one of six",
+  "v": "ok"
+ },
+ "rules:31": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "a2ea792767",
+  "note": "Grammar note: “a indirect free kick” reads wrong when drawn, but it rules out only one of six",
+  "v": "ok"
+ },
+ "rules:32": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "6b03549863",
+  "v": "ok"
+ },
+ "rules:33": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "d2577a877a",
+  "v": "ok"
+ },
+ "rules:34": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "4d7108a0b4",
+  "v": "ok"
+ },
+ "rules:35": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "7849fce549",
+  "v": "ok"
+ },
+ "rules:36": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "77c6105fe0",
+  "v": "ok"
+ },
+ "rules:37": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "98d63364f4",
+  "v": "ok"
+ },
+ "rules:38": {
+  "at": "2026-10-16T23:57:16Z",
+  "fix": {
+   "ex": "The goalkeeper may handle the ball inside their own penalty area"
+  },
+  "h": "279fb4b9d4",
+  "note": "“A ___” ruled out assistant referee and AVAR by article",
+  "v": "fix"
+ },
+ "rules:39": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "1661f1eca2",
+  "v": "ok"
+ },
+ "rules:4": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "b3aac2e6cd",
+  "v": "ok"
+ },
+ "rules:40": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "ba4ba0a321",
+  "v": "ok"
+ },
+ "rules:41": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "47c0af03eb",
+  "v": "ok"
+ },
+ "rules:42": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "d993d1ce3d",
+  "v": "ok"
+ },
+ "rules:43": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "5ac0b72743",
+  "v": "ok"
+ },
+ "rules:44": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "c752ad2d69",
+  "v": "ok"
+ },
+ "rules:45": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "2bdd35aca6",
+  "v": "ok"
+ },
+ "rules:46": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "3b274d29ab",
+  "v": "ok"
+ },
+ "rules:47": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "656e57547d",
+  "note": "Shares the hook boundary with rules:48, the draw guard keeps them apart",
+  "v": "ok"
+ },
+ "rules:48": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "cc7afc0fae",
+  "v": "ok"
+ },
+ "rules:49": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "bcd8334fc6",
+  "note": "“penalty kick” hints at the answer, acceptable on a white card",
+  "v": "ok"
+ },
+ "rules:5": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "4e30357077",
+  "v": "ok"
+ },
+ "rules:50": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "704b423c8f",
+  "v": "ok"
+ },
+ "rules:51": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "961345dabe",
+  "v": "ok"
+ },
+ "rules:52": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "d194809e73",
+  "v": "ok"
+ },
+ "rules:53": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "cd65747b1f",
+  "v": "ok"
+ },
+ "rules:54": {
+  "at": "2026-10-16T23:57:16Z",
+  "fix": {
+   "ex": "Since 2026, players may wear jewelry that is safe and securely covered"
+  },
+  "h": "d164bc1333",
+  "note": "Clumsy double condition, now plainer",
+  "v": "fix"
+ },
+ "rules:55": {
+  "at": "2026-10-16T23:57:16Z",
+  "fix": {
+   "ex": "Each team’s captain must be identified by their armband"
+  },
+  "h": "6a6c3cf1a6",
+  "note": "“an identifying ___” ruled out every plural wrong answer",
+  "v": "fix"
+ },
+ "rules:56": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "85add460f5",
+  "v": "ok"
+ },
+ "rules:57": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "044f8781a3",
+  "v": "ok"
+ },
+ "rules:58": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "1d97aa745e",
+  "v": "ok"
+ },
+ "rules:59": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "617bb19b35",
+  "v": "ok"
+ },
+ "rules:6": {
+  "at": "2026-10-16T23:57:16Z",
+  "fix": {
+   "hook": "coach"
+  },
+  "h": "9f69371acc",
+  "note": "Hook was half of the compound technical area",
+  "v": "fix"
+ },
+ "rules:60": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "e66b411d64",
+  "v": "ok"
+ },
+ "rules:61": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "d058c7641f",
+  "v": "ok"
+ },
+ "rules:62": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "204cd20f7d",
+  "v": "ok"
+ },
+ "rules:63": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "affea3614c",
+  "v": "ok"
+ },
+ "rules:64": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "e2a2b4b69d",
+  "note": "Hook is the answer of rules:60, the draw guard keeps them apart",
+  "v": "ok"
+ },
+ "rules:7": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "ea0c2a7045",
+  "v": "ok"
+ },
+ "rules:8": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "5421e1ac46",
+  "v": "ok"
+ },
+ "rules:9": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "110f41264b",
+  "note": "Shares the hook keeper with rules:26, the draw guard keeps them apart",
+  "v": "ok"
+ },
+ "seriea:0": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "f5139dd43d",
+  "v": "ok"
+ },
+ "seriea:1": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "de7c75a001",
+  "v": "ok"
+ },
+ "seriea:10": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "53f4408a88",
+  "v": "ok"
+ },
+ "seriea:11": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "14f051dfe0",
+  "v": "ok"
+ },
+ "seriea:12": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "67da43ca9f",
+  "v": "ok"
+ },
+ "seriea:13": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "507ced2f7e",
+  "v": "ok"
+ },
+ "seriea:14": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "b7bb78585e",
+  "v": "ok"
+ },
+ "seriea:15": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "b3b0f6bbcd",
+  "v": "ok"
+ },
+ "seriea:16": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "1cd2c3ae5a",
+  "v": "ok"
+ },
+ "seriea:17": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "c9c22ce6a0",
+  "v": "ok"
+ },
+ "seriea:18": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "152b9417a6",
+  "v": "ok"
+ },
+ "seriea:19": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "68e8bac74b",
+  "v": "ok"
+ },
+ "seriea:2": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "d7d0e3e5c7",
+  "note": "Serie A hook is shared with four cards but nothing more specific exists",
+  "v": "ok"
+ },
+ "seriea:20": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "4a4ea43468",
+  "v": "ok"
+ },
+ "seriea:21": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "d63fce2ec3",
+  "v": "ok"
+ },
+ "seriea:22": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "02dfea2fc4",
+  "v": "ok"
+ },
+ "seriea:23": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "eac29731af",
+  "v": "ok"
+ },
+ "seriea:24": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "50ca3ce447",
+  "v": "ok"
+ },
+ "seriea:25": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "702ac7d614",
+  "v": "ok"
+ },
+ "seriea:26": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "f6e04deba2",
+  "v": "ok"
+ },
+ "seriea:27": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "5a26666c7b",
+  "v": "ok"
+ },
+ "seriea:28": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "ae36d52604",
+  "v": "ok"
+ },
+ "seriea:29": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "a2520fe13f",
+  "v": "ok"
+ },
+ "seriea:3": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "25fc8117c4",
+  "v": "ok"
+ },
+ "seriea:30": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "43e6b3ebfa",
+  "v": "ok"
+ },
+ "seriea:31": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "8ac2889d86",
+  "v": "ok"
+ },
+ "seriea:32": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "7b26ccd9f5",
+  "v": "ok"
+ },
+ "seriea:33": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "a8934faeef",
+  "v": "ok"
+ },
+ "seriea:34": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "48b5a4b645",
+  "v": "ok"
+ },
+ "seriea:35": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "86bf03244b",
+  "v": "ok"
+ },
+ "seriea:36": {
+  "at": "2026-10-16T23:58:01Z",
+  "fix": {
+   "means": "Milan won 3–1 at Pisa"
+  },
+  "h": "c135858ced",
+  "note": "They was unclear, Milan won",
+  "v": "fix"
+ },
+ "seriea:37": {
+  "at": "2026-10-16T23:58:01Z",
+  "fix": {
+   "ex": "Fabio Capello led Milan to three titles in a row, starting in 1991–92",
+   "means": "The last came in 1993–94"
+  },
+  "h": "89624b7cca",
+  "note": "Starting in 1992 was ambiguous between seasons, means no longer repeats",
+  "v": "fix"
+ },
+ "seriea:38": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "c0cf802289",
+  "v": "ok"
+ },
+ "seriea:39": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "1d818bb5b0",
+  "v": "ok"
+ },
+ "seriea:4": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "5127936065",
+  "v": "ok"
+ },
+ "seriea:40": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "8e929ced8e",
+  "v": "ok"
+ },
+ "seriea:41": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "e8c43eb789",
+  "v": "ok"
+ },
+ "seriea:42": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "8fecbcc06a",
+  "v": "ok"
+ },
+ "seriea:43": {
+  "at": "2026-10-16T23:58:01Z",
+  "fix": {
+   "ex": "Roma and Lazio both play at the Olimpico"
+  },
+  "h": "35cab2fece",
+  "note": "Olimpico stadium read as Allianz Stadium stadium with wrong answers",
+  "v": "fix"
+ },
+ "seriea:44": {
+  "at": "2026-10-16T23:58:01Z",
+  "fix": {
+   "ex": "San Siro is officially named after Inter great Giuseppe Meazza"
+  },
+  "h": "ddb04ed718",
+  "note": "San Siro stadium read as Allianz Stadium stadium with wrong answers",
+  "v": "fix"
+ },
+ "seriea:45": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "d70bc98d3b",
+  "v": "ok"
+ },
+ "seriea:46": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "65f6230046",
+  "v": "ok"
+ },
+ "seriea:47": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "67d3226d78",
+  "v": "ok"
+ },
+ "seriea:48": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "861a2355db",
+  "v": "ok"
+ },
+ "seriea:49": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "dca602bee5",
+  "note": "Wrong answers like 974 clubs read as nonsense but the card works",
+  "v": "ok"
+ },
+ "seriea:5": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "8f4e597fdc",
+  "v": "ok"
+ },
+ "seriea:50": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "ad48bb7644",
+  "v": "ok"
+ },
+ "seriea:51": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "d443d1e5ca",
+  "v": "ok"
+ },
+ "seriea:52": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "3746f9f2c4",
+  "v": "ok"
+ },
+ "seriea:53": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "507cdba1b9",
+  "v": "ok"
+ },
+ "seriea:54": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "10942e7223",
+  "v": "ok"
+ },
+ "seriea:55": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "00b67abc54",
+  "v": "ok"
+ },
+ "seriea:56": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "d31b581180",
+  "v": "ok"
+ },
+ "seriea:57": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "f7d11cf3c2",
+  "v": "ok"
+ },
+ "seriea:58": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "d6250dec92",
+  "v": "ok"
+ },
+ "seriea:59": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "317b833c9f",
+  "v": "ok"
+ },
+ "seriea:6": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "026520b548",
+  "v": "ok"
+ },
+ "seriea:7": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "cae6dbf342",
+  "v": "ok"
+ },
+ "seriea:8": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "a2ea4ffc75",
+  "v": "ok"
+ },
+ "seriea:9": {
+  "at": "2026-10-16T23:58:01Z",
+  "h": "031928e0cf",
   "v": "ok"
  },
  "soccer:0": {
