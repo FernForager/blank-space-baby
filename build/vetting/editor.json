@@ -2771,6 +2771,381 @@
   "note": "FC Barcelona as a wrong answer reads as nonsense but the card works",
   "v": "ok"
  },
+ "ligamx:0": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "4e502ae557",
+  "note": "hook is a phrase fragment but nothing more specific is in the sentence",
+  "v": "ok"
+ },
+ "ligamx:1": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "807f4e3733",
+  "v": "ok"
+ },
+ "ligamx:10": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "8d4d01bbd8",
+  "v": "ok"
+ },
+ "ligamx:11": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "1daf5dd4ef",
+  "v": "ok"
+ },
+ "ligamx:12": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "886a047eec",
+  "v": "ok"
+ },
+ "ligamx:13": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "6f2afd5165",
+  "v": "ok"
+ },
+ "ligamx:14": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "d7f7548f12",
+  "v": "ok"
+ },
+ "ligamx:15": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "13eaa84b6f",
+  "v": "ok"
+ },
+ "ligamx:16": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "ff51de17f8",
+  "v": "ok"
+ },
+ "ligamx:17": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "32ff54ca94",
+  "v": "ok"
+ },
+ "ligamx:18": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "6cbe51ccb4",
+  "v": "ok"
+ },
+ "ligamx:19": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "294f009ce3",
+  "v": "ok"
+ },
+ "ligamx:2": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "f1fefb1e79",
+  "v": "ok"
+ },
+ "ligamx:20": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "f117166ca6",
+  "v": "ok"
+ },
+ "ligamx:21": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "658cad6945",
+  "v": "ok"
+ },
+ "ligamx:22": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "2038a22335",
+  "v": "ok"
+ },
+ "ligamx:23": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "51f9c6f86f",
+  "v": "ok"
+ },
+ "ligamx:24": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "c2bf011d94",
+  "note": "“the La Máquina” reads oddly when drawn, but “the” is natural with the other nicknames",
+  "v": "ok"
+ },
+ "ligamx:25": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "df7df19565",
+  "note": "“the La Máquina” reads oddly when drawn, but “the” is natural with the other nicknames",
+  "v": "ok"
+ },
+ "ligamx:26": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "ba1c3e1609",
+  "v": "ok"
+ },
+ "ligamx:27": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "6f0835bc8b",
+  "note": "“the La Máquina” reads oddly when drawn, but “the” is natural with the other nicknames",
+  "v": "ok"
+ },
+ "ligamx:28": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "9324e0057a",
+  "note": "“the La Máquina” reads oddly when drawn, but “the” is natural with the other nicknames",
+  "v": "ok"
+ },
+ "ligamx:29": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "80e1d45c4d",
+  "note": "“the La Máquina” reads oddly when drawn, but “the” is natural with the other nicknames",
+  "v": "ok"
+ },
+ "ligamx:3": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "c4c5b57989",
+  "v": "ok"
+ },
+ "ligamx:30": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "2595f21bc7",
+  "note": "“the La Máquina” reads oddly when drawn, but “the” is natural with the other nicknames",
+  "v": "ok"
+ },
+ "ligamx:31": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "e37f2b4b79",
+  "note": "“the La Máquina” reads oddly when drawn, but “the” is natural with the other nicknames",
+  "v": "ok"
+ },
+ "ligamx:32": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "aa5b4184aa",
+  "note": "“the La Máquina” reads oddly when drawn, but “the” is natural with the other nicknames",
+  "v": "ok"
+ },
+ "ligamx:33": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "9bb4f19942",
+  "note": "hook is weak but the sentence has nothing more specific",
+  "v": "ok"
+ },
+ "ligamx:34": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "9214251e3e",
+  "v": "ok"
+ },
+ "ligamx:35": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "d6f3a3b765",
+  "v": "ok"
+ },
+ "ligamx:36": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "06474c8351",
+  "v": "ok"
+ },
+ "ligamx:37": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "a8a8e8b4dd",
+  "v": "ok"
+ },
+ "ligamx:38": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "2b0d34daaa",
+  "note": "90+5 makes clear latest means clock time",
+  "v": "ok"
+ },
+ "ligamx:39": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "ee8cd584f8",
+  "v": "ok"
+ },
+ "ligamx:4": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "777ebb65c0",
+  "v": "ok"
+ },
+ "ligamx:40": {
+  "at": "2026-10-16T23:58:25Z",
+  "fix": {
+   "ex": "Joel Huiqui won a title with Cruz Azul in his first tournament as a coach, in 2026",
+   "hook": "Cruz Azul",
+   "means": "He was in charge for just 7 games"
+  },
+  "h": "b2d048fa1a",
+  "note": "hook as a coach was filler, moved Cruz Azul from the means into the sentence",
+  "v": "fix"
+ },
+ "ligamx:41": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "b5e2cd149d",
+  "v": "ok"
+ },
+ "ligamx:42": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "906e080ff1",
+  "v": "ok"
+ },
+ "ligamx:43": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "84a05bfd8e",
+  "v": "ok"
+ },
+ "ligamx:44": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "8dfc7e6f5c",
+  "v": "ok"
+ },
+ "ligamx:45": {
+  "at": "2026-10-16T23:58:25Z",
+  "fix": {
+   "ex": "Manuel Lapuente coached Necaxa to league titles in 1994–95 and 1995–96"
+  },
+  "h": "d0784fe8b3",
+  "note": "back-to-back repeated what the two seasons say",
+  "v": "fix"
+ },
+ "ligamx:46": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "8c17ea6e55",
+  "v": "ok"
+ },
+ "ligamx:47": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "84cec404d0",
+  "v": "ok"
+ },
+ "ligamx:48": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "e85262501a",
+  "v": "ok"
+ },
+ "ligamx:49": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "5fe2fadb6d",
+  "v": "ok"
+ },
+ "ligamx:5": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "b306ad9b6d",
+  "v": "ok"
+ },
+ "ligamx:50": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "5dd884c171",
+  "v": "ok"
+ },
+ "ligamx:51": {
+  "at": "2026-10-16T23:58:25Z",
+  "fix": {
+   "ex": "The old record for Liga MX players at a World Cup was set in 1998"
+  },
+  "h": "0c1ff63623",
+  "note": "league players was unclear",
+  "v": "fix"
+ },
+ "ligamx:52": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "c19b76ba57",
+  "v": "ok"
+ },
+ "ligamx:53": {
+  "at": "2026-10-16T23:58:25Z",
+  "fix": {
+   "ex": "With Apertura 2025, Toluca reached 12 league titles"
+  },
+  "h": "80aae666ef",
+  "note": "title number 12 read awkwardly",
+  "v": "fix"
+ },
+ "ligamx:54": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "be62838851",
+  "v": "ok"
+ },
+ "ligamx:55": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "0a2b8041d0",
+  "v": "ok"
+ },
+ "ligamx:56": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "b01c271d29",
+  "v": "ok"
+ },
+ "ligamx:57": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "df3b1336b0",
+  "v": "ok"
+ },
+ "ligamx:58": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "48b065b727",
+  "v": "ok"
+ },
+ "ligamx:59": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "f16b911e2a",
+  "v": "ok"
+ },
+ "ligamx:6": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "888bcb53c3",
+  "v": "ok"
+ },
+ "ligamx:60": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "7ef6e83b63",
+  "v": "ok"
+ },
+ "ligamx:61": {
+  "at": "2026-10-16T23:58:25Z",
+  "fix": {
+   "ex": "Liga MX’s word for each round of league games is Jornada"
+  },
+  "h": "95b7b4be16",
+  "note": "a before the blank ruled out Apertura and Ida",
+  "v": "fix"
+ },
+ "ligamx:62": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "18c1a1a1c9",
+  "v": "ok"
+ },
+ "ligamx:63": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "1f74adff25",
+  "v": "ok"
+ },
+ "ligamx:64": {
+  "at": "2026-10-16T23:58:25Z",
+  "fix": {
+   "ex": "The word for a big rivalry game, like América against Chivas, is Clásico"
+  },
+  "h": "24dd0bfda8",
+  "note": "a before the blank ruled out Apertura and Ida",
+  "v": "fix"
+ },
+ "ligamx:65": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "8694e995e8",
+  "v": "ok"
+ },
+ "ligamx:7": {
+  "at": "2026-10-16T23:58:25Z",
+  "fix": {
+   "ex": "The Clásico Tapatío, Mexico’s oldest rivalry, pits Chivas against Atlas"
+  },
+  "h": "a4d1ef1dd1",
+  "note": "oldest rivalry was unclear without Mexico",
+  "v": "fix"
+ },
+ "ligamx:8": {
+  "at": "2026-10-16T23:58:25Z",
+  "fix": {
+   "means": "Gignac passed his total in 2026"
+  },
+  "h": "5840937f63",
+  "note": "passed him was vague",
+  "v": "fix"
+ },
+ "ligamx:9": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "5d786d5ef5",
+  "v": "ok"
+ },
  "ligue1:0": {
   "at": "2026-10-16T23:58:01Z",
   "fix": {
