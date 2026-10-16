@@ -571,7 +571,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 
   // ---- the beta (preview links only): Morg's flag and lock keys (Oct 16, 2026) ----
   // Flag sends a card back to the three reviewers and the hub, and it leaves the beta at the next build. Lock marks it
-  // perfect: it keeps playing and nobody may change it. Each tap toggles. Marks go to /api/mark (functions/api/mark.js,
+  // perfect: it keeps playing and nobody may change it. Each tap toggles, and a card is never both. Marks go to /api/mark (functions/api/mark.js,
   // the beta's database). With no signal they wait in a queue on the phone and go once the network is back.
   var BETA = DEV, MARKS = store.get('bsb-marks', {}), QUEUE = store.get('bsb-mark-queue', []), BT = null, where = null, holdClock = 0, sending = null;
   var SAID = { flag: 'Flagged', unflag: 'Unflagged', lock: 'Locked', unlock: 'Unlocked' };
@@ -614,10 +614,13 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
       if (!st.flag) { note = window.prompt('What’s wrong with this card? (optional)', ''); if (note === null) return; }
       what = st.flag ? 'unflag' : 'flag';
     } else what = st.lock ? 'unlock' : 'lock';
-    var m = MARKS[t.id] = { flag: st.flag, lock: st.lock };
-    if (key === 'flag') m.flag = what === 'flag'; else m.lock = what === 'lock';
+    // a card is either flagged (it needs work) or locked (it's perfect), never both: one clears the other
+    var undo = what === 'flag' && st.lock ? 'unlock' : what === 'lock' && st.flag ? 'unflag' : null;
+    MARKS[t.id] = { flag: what === 'flag' || (st.flag && what !== 'unflag' && what !== 'lock'), lock: what === 'lock' || (st.lock && what !== 'unlock' && what !== 'flag') };
     store.set('bsb-marks', MARKS);
-    QUEUE.push({ card: t.id, hash: t.h || '', mark: what, note: String(note || '').slice(0, 500), day: S.day, snap: { w: t.w, ex: t.ex, m: t.m, hook: t.hook, d: t.d } });
+    var snap = { w: t.w, ex: t.ex, m: t.m, hook: t.hook, d: t.d };
+    if (undo) QUEUE.push({ card: t.id, hash: t.h || '', mark: undo, note: '', day: S.day, snap: snap });
+    QUEUE.push({ card: t.id, hash: t.h || '', mark: what, note: String(note || '').slice(0, 500), day: S.day, snap: snap });
     store.set('bsb-mark-queue', QUEUE);
     paint();
     flush().then(function (ok) { if (BT === t) say(ok ? SAID[what] : 'Queued'); });
