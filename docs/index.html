@@ -349,11 +349,14 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     for (var d = 0; d <= day; d++) { b = dealDay(d, q, last); if (every) all.push(b); }
     return every ? all : b;
   }
-  // the three choices on a card: the answer and two of the same kind from its deck, the same for everyone that day
+  // the three choices on a card: the answer and two of the same kind from its deck, the same for everyone that day.
+  // A wrong answer is never one already in the sentence or on the tile (Barcelona for "___ beat Barcelona")
+  function plain(s) { return ' ' + String(s || '').toLowerCase().replace(/[^0-9a-z\u00c0-\u024f]+/g, ' ').trim() + ' '; }
   function choices(c, day) {
-    var r = rng(hash('triviela choices ' + day + ' ' + c.id)), D = c.D;
-    var same = shuffle(D.cards.filter(function (x) { return x.k === c.k && !D.clash(x.w, c.w); }), r);
-    var any = shuffle(D.cards.filter(function (x) { return x.k !== c.k && !D.clash(x.w, c.w); }), r);
+    var r = rng(hash('triviela choices ' + day + ' ' + c.id)), D = c.D, seen = plain(c.ex).replace(plain(c.w), ' ') + plain(c.hook);   // its own answer left out: referee in assistant referee
+    var ok = function (x) { return !D.clash(x.w, c.w) && seen.indexOf(plain(x.w)) < 0; };
+    var same = shuffle(D.cards.filter(function (x) { return x.k === c.k && ok(x); }), r);
+    var any = shuffle(D.cards.filter(function (x) { return x.k !== c.k && ok(x); }), r);
     var picks = [c];
     same.concat(any).forEach(function (x) { if (picks.length < 3 && !picks.some(function (p) { return D.clash(p.w, x.w); })) picks.push(x); });
     return shuffle(picks, r).map(function (p) { return { w: p.w, m: p.m }; });
