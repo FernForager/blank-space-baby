@@ -1,0 +1,1481 @@
+[
+ {
+  "group": "kid",
+  "gender": "woman",
+  "persona": "Juniper \"June\" Alvarez, 10, fourth grade in north Seattle, second season of rec soccer (U10 Purple Pumas), plays defense because \"you don't have to be fast, you just have to be annoying.\" No phone of her own. Plays on Mom's phone at breakfast or the family iPad after homework.",
+  "first_week": "Monday: Dad shows me at breakfast because he saw it in the team parent chat. The arcade machine look is SO cool, it looks like the Pac-Man at the pizza place. Six pentagons. One says \"Rangers FC\" and I don't know what that is. One says \"throw-in\" and I know that one! I tap it, I'm right, and the pentagon goes black. I yell. Next I tap \"Messi\" because I know him. Right again. Then everything left is words I can't read fast, like \"Bundesliga.\" Dad says just guess, I guess, it goes red and shakes and I'm out. Nil. I'm kind of mad, but the answer filled in and the little line under it taught me something, so OK.\nTuesday: I ask for Mom's phone myself. Second card is about some French club. Out. Nil again. I don't want to text Nil to anybody.\nWednesday: I get a kid slang one about the orange slices being bussin and I laugh so hard. I also get an offside one and I know it because Coach Dee yelled about it Saturday. I fill the whole first ball and it says GOAL. I make Mom text it to Dad at work and to my Abuela. Dad texts back \"BRACE OR BUST\" and now it's a thing.\nThursday: Nil on a hard one in the first ball. I almost don't care anymore.\nFriday: Dad and I play together. I pick the tiles, he helps me read. We get a Goal. Most fun day because we argued about the answer.\nWeekend: I forget Saturday because of my game. Sunday I remember and get a Goal. If I'd gotten Nil Thursday AND Friday I think I'd have stopped by now.",
+  "play_daily": "Maybe. On my own, leaning no. With Dad at breakfast, yes. I come back if I get a Goal most days. If I get Nil three days in a row because the first ball has hard cards about leagues I've never heard of, I'm done and I go back to my drawing app. What brings me back is the breakfast thing with Dad and beating his score, not the trivia by itself.",
+  "share": "I don't have a phone, so Mom texts it for me. Goal or better goes to Dad at work, my Abuela in Tucson, and my best friend Priya from the Pumas through her mom. I would NEVER send a Nil. The red square where I went out feels like being shown up, so I'd want it to look like the black balls I got, not a big red mistake. I'd send it more if the text showed the black pentagons I filled even when I didn't finish a ball, like \"I got 4 of 6,\" so a bad day still looks like something. I'd send it less if it had a bunch of numbers or a long link.",
+  "love": [
+   "The arcade machine. It looks like a real game, not homework.",
+   "Turning a pentagon black. It feels like coloring in the soccer ball.",
+   "Picking my own tile. I pick the words I know first, and that's my strategy.",
+   "Kid slang cards. Grown-ups get them wrong and I get them right.",
+   "Rules cards like offside and throw-ins, because I can use them at my game Saturday.",
+   "The answer filling in after I miss, plus the little line that tells me why. I actually remember those.",
+   "No timer. I read slow and nobody rushes me.",
+   "Same cards as Dad, so we can talk about card number whatever at dinner."
+  ],
+  "turn_offs": [
+   "Going out on card 1 or 2 almost every day. That's not a game, that's just losing.",
+   "Hook words I can't read or say, like Bundesliga, Borussia, Ligue 1. I skip them, and then they're the only tiles left.",
+   "Hard cards in the first ball. If the first ball has two hard ones I basically never score.",
+   "A red square in my share text. It makes me not want to send anything.",
+   "Small text on Mom's phone. The iPad is fine, the phone is squinty.",
+   "Words in the meaning line I don't know. If it uses a hard word to explain a hard word, I stop reading it.",
+   "If it ever asked me to sign up or put in an email, Mom would say no and that's the end."
+  ],
+  "must_have_v1": [
+   "Order the balls easy, then medium, then hard. Ball 1 is all 6 easy cards, so a kid like me can actually score a Goal most days. That's not adding anything, it's just sorting what you already have.",
+   "Easy has to mean easy for a 10-year-old who's been playing two years: throw-ins, offside, Messi, Alex Morgan, slang. Not easy for a dad who watches the EPL.",
+   "Hook words a kid can read out loud. If the hook is a foreign club name, that card shouldn't be easy.",
+   "Big enough text on a phone, and no timer ever.",
+   "A share text that shows my black pentagons and the result, with no red square, ready for Mom to paste."
+  ],
+  "later": [
+   "Chalkboard picture cards: is this offside, which ref signal, where's the penalty spot. I'd love these more than any word card, and I'd learn from them.",
+   "After I'm out, let me flip through the rest of today's cards to see the answers, no score. I always want to know what the Rangers one was.",
+   "The basics stuff for new families, but mixed into the easy cards, not a separate thing I have to find.",
+   "The anonymous counter so cards that kids keep missing stop being called easy.",
+   "A little sound when the pentagon goes black. Not needed, just fun."
+  ],
+  "dont_build": [
+   "Accounts, avatars, a profile, a streak calendar with fire emojis. I'd stop if I felt bad for missing Saturday because I had a game.",
+   "Leaderboards. I'd be at the bottom under every high school kid.",
+   "A timer or a speed bonus. Slow readers lose for no reason.",
+   "Lives, jokers, hints, coins. I'd want them, but they make it feel like a phone game that wants Mom's credit card.",
+   "A kids mode or separate kids version. I want the SAME cards as Dad, that's the whole point.",
+   "The middle tile locked until the outer five. I'd be fine with it, but I don't need it, and it means I can't save the one I know for last. Try it, but don't spend time on it."
+  ],
+  "roadmap": [
+   {
+    "step": "Sort the day: ball 1 easy, ball 2 medium, ball 3 hard",
+    "why": "Cheapest change with the biggest effect for me. It turns most of my days from Nil into Goal, and Goal is what I share."
+   },
+   {
+    "step": "Re-check every easy card with a real 10-year-old rec player (or the U14 team as testers)",
+    "why": "Grown-ups think a Scottish club is easy. It isn't. Wrong easy cards are why kids quit on day 2."
+   },
+   {
+    "step": "Make sure hook words are readable and the means line uses simple words",
+    "why": "I pick tiles by reading them. If I can't read them, I can't play, and if I can't read the meaning, I don't learn."
+   },
+   {
+    "step": "Share text: number, black pentagons per ball, result word, short link, no red",
+    "why": "This is how Dad, Abuela and Priya hear about it. Make a bad-ish day still look good enough to send."
+   },
+   {
+    "step": "Phone text size and tap targets check on a small phone and an iPad",
+    "why": "I play on whatever grown-up device is around. Squinty text loses me fast."
+   },
+   {
+    "step": "Chalkboard picture cards, starting with offside, ref signals and field markings",
+    "why": "The best learning thing for kids like me, and it helps my actual games. Do it after the daily loop works, not before."
+   },
+   {
+    "step": "Stop there and watch",
+    "why": "No accounts, no streaks, no extra modes. If kids come back with their parents, it's working. Add cards, not features."
+   }
+  ],
+  "verdict": "I'd play it every morning with my dad and make Mom text our Goals to Abuela, but only if the first ball is truly easy for a kid. If it isn't, I'm out by Thursday."
+ },
+ {
+  "group": "kid",
+  "gender": "man",
+  "persona": "Theo Nakamura, 10, fourth grader in Shoreline WA, second season of U11 rec (coach usually puts me at left back), plays on Mom's iPhone or the family iPad. Knows players from EA FC at my friend Mateo's house, not from watching whole games.",
+  "first_week": "Monday: Dad shows me after dinner because his friend texted him a Brace. The arcade thing looks cool, like a real game and not a school thing. I see a ball with words on it: \"Rabona,\" \"Rangers FC,\" \"Liga MX,\" \"Offside,\" \"Haaland,\" \"Orange slices.\" I tap Haaland because I know him. Easy, got it, the tile goes black, nice. I tap Orange slices because it's the slang one, and I get it right because \"bussin\" is obviously right. Then I tap Offside and I THINK I know it but the sentence is long and I read it twice and pick wrong. Red X, shake, and that's it. Done. Zero. Nil. Dad got a Goal. I ask if I can go again and he says no, it's one a day. I'm kind of mad, and I go play something else. Tuesday: I almost don't play. Mom asks me in the car to the dentist, so I play on her phone. This time I only tap stuff I really know and skip the scary words. I get all 5 outside tiles and the middle one unlocks, and it's a hard one about Serie A. I guess. I get it RIGHT by luck and the ball fills up and I get a goal. Then ball two has \"Bundesliga\" and \"Ligue 1\" and stuff I can't even say, and I'm out on the second tile. But I got a GOAL. I make Mom text Dad \"1 goal.\" Wednesday: Mateo is over and we play mine together, arguing about every answer. We get one goal again. That was the most fun day. Thursday: I forget. Friday: I go out on the first ball because every tile was pro league stuff. Zero again. I'm like, this is for grown-ups. Saturday after my game: Dad asks if I did Triviela and I say \"it's too hard.\" If the first ball were stuff a kid can actually get, I'd have gotten a goal almost every day and I'd still be playing.",
+  "play_daily": "Maybe, leaning no. I'd play it when a grown-up reminds me or when Mateo is over. The honest reason I'd stop: if I go out with zero goals on most days, I'll decide it's a dad game. One goal has to be something a 10-year-old who's learning gets most days. Hat trick can be impossible for me, I don't care. But zero almost every day means I quit by week two.",
+  "share": "I don't have my own phone, so \"texting\" means making Mom text Dad at work or Grandpa, or sending from the iPad to Mateo. I'd only share on days I got at least one goal, and especially if I beat Dad. That's the whole reason: beating Dad. A Nil I'd never send. The ⚽⚽ part is good because I get it without reading. Rows of black dots and a red square I'd like too, because I could show how close I got. Don't put words in it I have to explain, like \"Brace.\" I learned what that means from the game and that's cool, but Grandpa might not know either. Mostly I'd show it at practice in person, holding up the phone.",
+  "love": [
+   "Picking which tile to answer. I can go for the ones I know first. That's the best part, like I'm choosing my play",
+   "The ball turning black and filling up. It feels like scoring",
+   "The middle tile being the shot on goal after the five around it. That makes sense to me right away",
+   "Short sentences and only three buttons. I can read it",
+   "Finding out the answer after, even when I miss. I learned what a rabona is and then I tried one at practice",
+   "The slang cards. Those are the ones I win against Dad",
+   "Same game for everybody, so I can say to Dad at dinner 'did you get the Arsenal one?'",
+   "The arcade look. It doesn't look like homework"
+  ],
+  "turn_offs": [
+   "Going out with zero on my first or second card because all six tiles were pro league stuff. That's the thing that makes me quit",
+   "Tiles I can't even read or say, like Bundesliga, Ligue 1, Serie A, all on one ball. I don't know what to tap",
+   "Long sentences. If I have to read it twice I start guessing",
+   "Tiny pixel text on the phone. Big is better",
+   "No goal sound or anything when I score. It should feel like a GOAL, not just turn black",
+   "Being told 'come back tomorrow' right after I lose on card two. I'd want SOMETHING to do, even just look at the answers",
+   "Grown-up words in the results that I don't get"
+  ],
+  "must_have_v1": [
+   "Ball one is the 6 easy cards, ball two medium, ball three hard. That way kids like me can get a goal and grown-ups still have something hard to chase",
+   "Easy really means easy for a kid who's learning: famous players, basic rules, ball words, slang. Not 'easy for someone who watches the EPL'",
+   "A big goal moment when the ball fills: the net shakes, a sound, something. No words needed",
+   "The share text with ⚽ emojis I don't have to read, sent from Mom's phone",
+   "Text big enough to read on a phone without squinting, and short sentences on the easy cards"
+  ],
+  "later": [
+   "Picture cards on the chalkboard pitch: is this offside, which ref signal, name this field line. Those are the ones I could get even if I read slowly, and they'd help me at real games",
+   "A basics category for kids and new families, which also fills up the easy pile",
+   "The anonymous counter so cards that kids keep missing stop being called easy",
+   "After you go out, let me flip through the cards I didn't get to with the answers showing, no score. Just so the day doesn't end in two seconds",
+   "Dark mode for playing in the car at night"
+  ],
+  "dont_build": [
+   "A timer. I read slowly. A timer means I lose to the clock, not because I didn't know it",
+   "Leaderboards or accounts. I'm 10, I can't make an account anyway, and seeing I'm last is worse than nothing",
+   "Extra lives or jokers. Honestly one miss is fair if the first ball is fair",
+   "Endless mode. I'd play it for an hour once and then never do the daily",
+   "Badges, streak counters, coins, unlockable stuff. That's the stuff that makes Mom take the iPad away",
+   "Lots of tutorials or instructions. I figured it out by tapping. Just keep it obvious"
+  ],
+  "roadmap": [
+   {
+    "step": "Order the daily balls easy, then medium, then hard",
+    "why": "The cheapest change and the one that decides if kids stay. It costs no new cards. It just makes one goal reachable for a beginner and keeps the hat trick hard for adults"
+   },
+   {
+    "step": "Have real 10-year-olds play the easy pile and pull out anything most of them miss",
+    "why": "Grown-ups always think stuff is easy that isn't. A few rec kids on the team testing 50 cards is free and fixes the biggest problem"
+   },
+   {
+    "step": "Ship the daily 18-card game with tile picking, middle unlocks last, one miss ends it",
+    "why": "That's the whole game and it's good. Don't wait on anything else"
+   },
+   {
+    "step": "Make the goal moment loud and big: net shake, sound, ball pops",
+    "why": "Getting a goal is the only reward I get each day, so it has to feel like one. No text needed"
+   },
+   {
+    "step": "Emoji share text that doesn't need reading",
+    "why": "That's how Dad, Grandpa and Mateo hear about it, and how I brag"
+   },
+   {
+    "step": "Picture cards for rules and ref signals, mostly in easy and medium",
+    "why": "Best thing for slow readers and new players, and it teaches stuff I use on Saturday. Only after the daily game works"
+   },
+   {
+    "step": "Anonymous difficulty counter",
+    "why": "Lets the easy pile fix itself over time without the owner guessing what kids know"
+   }
+  ],
+  "verdict": "The daily ball is a great idea and I'd love it, but if the first ball isn't stuff a 10-year-old can actually get, I'll go out with zero most days, call it a dad game, and stop by week two."
+ },
+ {
+  "group": "club",
+  "gender": "woman",
+  "persona": "Noor Haddad, 13, 8th grade in Shoreline WA, right back on a U14 girls' club team, Reign and Barça Femení fan, phone has Screen Time limits and lives in the team group chat \"G14 🍀\"",
+  "first_week": "Monday: my teammate Ava drops a link in the group chat with \"⚽ Goal\" and nothing else. I open it in the car on the way to practice. The cabinet looks cool, kind of retro-aesthetic, like something you'd see on a TikTok edit. No instructions, I just tap a tile that says \"Rabona\" because I know that one. Right, it goes black, satisfying. I pick \"Portland Thorns\" next, then a slang one, then one that says \"Rangers FC\" which I've never heard of. I guess. Wrong. Day over, 4 cards in. I'm annoyed but the means line taught me something, and the fill-in was quick. I send \"Nil 💀\" to the chat. Tuesday: I save the Liga MX and Serie A tiles for last on purpose and get a Goal. I send it to the chat and to my dad, who plays too and gets a Nil, which is the best part of my day. Wednesday: I go out on a hard card about the 1990s World Cup. Still fine. I want to see my streak and there isn't one, so I'm less hooked. Thursday: I forget until 10pm. The warm white cabinet is bright in a dark room. I play anyway because three girls on my team posted. Friday: a Kid Slang card uses a word nobody my age says anymore and I screenshot it to roast it. Honestly that screenshot got more replies than my score. Saturday is a game day, I forget. Sunday I'm back because Ava got a Brace and I want to beat her. By the end of the week, whether I keep playing depends 90% on whether my team keeps posting, and 10% on whether I keep dying early on men's leagues from countries I don't watch.",
+  "play_daily": "Maybe, leaning yes if my team plays it. It's short enough for a car ride and the same-cards-for-everyone thing makes it a group chat thing. I'll drop off if it feels like a men's European league quiz where I go out on card 3 most days, or if there's nothing that tracks that I came back (a streak).",
+  "share": "Yes, every day I do okay, to the team group chat first, then my best friend and my dad (to flex on him). I wouldn't post it on TikTok or Insta. More likely: a grid that shows where I went out (⚫⚫⚫⚫⚫⚫ ⚫⚫🟥) so people can see I was close, a streak number, and one-tap copy. Even more likely: a card so cringe or so hard I have to screenshot it. Less likely: a long share text, a link that looks spammy, anything that spoils answers (my friends would get mad), or a Nil with no way to make it look less embarrassing.",
+  "love": [
+   "Everyone gets the same cards, so we can argue about the hard one at practice",
+   "Picking which tile to answer: I can save the Bundesliga one for last and that feels like strategy, not luck",
+   "The tile going solid black like a ball patch, and a fresh ball showing up after a goal",
+   "The means line: I actually learned the keeper-holds-the-ball rule from it and told my coach",
+   "It's short. Under 3 minutes on a good day, about 30 seconds on a bad one",
+   "Hat trick for a perfect day. I'd lose my mind if I ever got one",
+   "The middle tile as the shot on goal. It makes it feel like soccer and not just a quiz",
+   "No ads, no account, no asking for my email"
+  ],
+  "turn_offs": [
+   "Going out on card 2 to a Serie A or Liga MX fact I could never know. Easy cards need to really be easy for a kid who plays but doesn't watch every league",
+   "If the daily mix is mostly men's European soccer. I play. I watch NWSL, the USWNT, Barça Femení. If those barely show up, it's not for me",
+   "Kid Slang that adults wrote and that's already dead. A little cringe is funny, but too much and it feels like a parent trying too hard",
+   "Not seeing the answer to the one that knocked me out. I need to know",
+   "Bright warm white at night when my whole phone is in dark mode",
+   "Any 'Great job!' or cartoon cheering, or anything that looks like a school learning app",
+   "Words I don't know with no clue at all. 'Brace' was confusing the first time, but I worked it out from the emoji count"
+  ],
+  "must_have_v1": [
+   "The same 18 cards for everyone, resetting at a set local time, with a countdown so I know when the next one drops",
+   "A one-tap copy share with a spoiler-free grid that shows where I went out, plus the day number",
+   "After a miss: show the right answer and its means line, and on the end screen, the card that got me",
+   "Every daily needs a fair mix that includes women's soccer, NWSL and US stuff, plus easy cards a 12-year-old player can actually get",
+   "A streak counter for days played (saved on the device, nothing fancy). That's what makes me open it on a lazy day"
+  ],
+  "later": [
+   "Chalkboard picture cards: offside or not, which ref signal, goal or no goal. Those are the ones my team would actually know better than parents",
+   "The anonymous counter, shown as 'X% got this one' on the end screen. Seeing I got the one most people missed would be the biggest flex",
+   "Dark mode",
+   "A Basics category for new players. Not for me, but my little sister would play",
+   "Yesterday's answers or an archive, so if I miss a game day I can still catch up"
+  ],
+  "dont_build": [
+   "Leaderboards or accounts. The group chat is the leaderboard",
+   "Endless mode, extra lives, hints or jokers. The one-miss rule is why it matters",
+   "Push notifications or anything that nags. My Screen Time is already a fight with my mom",
+   "Avatars, badges, unlockables or cosmetics",
+   "Long explanations after cards. One short line is perfect",
+   "More slang categories or more adult-written slang. Keep Kid Slang small and fresh, or cut cards that age badly",
+   "App store apps. A link in the group chat is how it spreads",
+   "Team or friend codes or 'challenge a friend' systems. Just let me paste my result"
+  ],
+  "roadmap": [
+   {
+    "step": "Ship the core daily: the same 18 cards, the 6-tile ball, one miss ends your day, a reset time and a countdown",
+    "why": "This alone is the game. Everything else is extra until people are playing it."
+   },
+   {
+    "step": "Share copy with a spoiler-free grid (⚫ per right answer, 🟥 where you went out), the day number and the link",
+    "why": "That's how it spreads. My team found it because Ava pasted it, not because anyone told us about it."
+   },
+   {
+    "step": "Tune how the daily is drawn: easy really easy, the women's and US game in every daily, no single obscure league stacked up",
+    "why": "Dying on card 2 to a league I don't watch is what makes me quit. It's a fix in the card picker, no new features."
+   },
+   {
+    "step": "End screen: the card that got you, its answer and means line, plus a streak number",
+    "why": "The answer closes the loop and teaches something. The streak brings me back on lazy days. Both are tiny."
+   },
+   {
+    "step": "Anonymous counter showing 'X% got this one'",
+    "why": "It fixes difficulty ratings with real results and gives people something to brag about, without accounts."
+   },
+   {
+    "step": "Chalkboard picture cards for offside, ref signals and goal or no goal",
+    "why": "It's the one new thing that lets players beat their parents and makes it feel like it's ours."
+   },
+   {
+    "step": "Dark mode",
+    "why": "Lots of us play at night. Nice, but it doesn't decide whether I come back."
+   }
+  ],
+  "verdict": "If my team posts it in the group chat and it doesn't kill me on card 2 with men's leagues I don't watch, I'd play it most days and flex my Brace on my dad. Keep it this small and just add a streak and a share grid that shows where I went out."
+ },
+ {
+  "group": "club",
+  "gender": "man",
+  "persona": "Mateo Okafor-Reyes, 13, eighth grader in Shoreline, center mid on a U14 boys' club team, Arsenal fan because of his uncle, watches highlights on TikTok and YouTube Shorts and is in four group chats, but the team chat is the one that matters",
+  "first_week": "Monday: my teammate Jonah drops \"Triviela #42 ⚽ Goal\" in the team chat with no explanation. That's how I find it. Nobody would ever send me a link with a pitch. I tap it during lunch. The arcade look made me go \"ok this is kinda hard.\" It looks like a retro FIFA menu, not a school website. First ball is easy. I tap \"Rabona\" first because I know that one, then the Arsenal one. I get the middle tile and score a goal. Second ball I go out on a Liga MX card about some club in Monterrey. I've never watched Liga MX in my life. One goal. I'm mad, but it's my fault for tapping that tile, so I'm not mad at the game. I send \"⚽ Goal, the Liga MX one is rigged\" to the chat.\n\nTuesday: I play before practice because Jonah got a brace and I'm not letting that stand. I go out on ball 1, card 4, an offside rule thing I should've known. Nil. That stings more than anything because I PLAY. I don't send it. Then I send it anyway an hour later because Ethan sent a Nil too.\n\nWednesday and Thursday: it's routine now. I play on the bus. It takes me like 90 seconds. I figured out the strategy is to tap the tiles you know first and leave the scary one for last, and that feels smart. Thursday I learn the keeper six-second thing changed. I bring it up at practice and our coach didn't know. That's the best thing that happened all week honestly.\n\nFriday: someone in the chat gets a hat trick and posts it in caps. Everyone is pressed. That's peak. Saturday is a game day and I forget until 9pm and play in bed. Sunday I'm kind of tired of seeing Bundesliga and Serie A cards I can only guess on. If the hard ball is all \"which year did this Italian club win\" I'll stop trying past ball 2. If there are hard cards that are hard because they're about rules or players I actually know, I'll keep grinding.",
+  "play_daily": "Yes, but only because of the group chat. The game alone, maybe 3 days a week. The game plus seeing Jonah's result every morning means every day, because I can't let him have it. If it takes more than 2 minutes or needs a login, no.",
+  "share": "Yes, to the team group chat, every day I get at least a Goal. A Nil I'll only send if someone else already sent one. Brothers and my uncle get the Arsenal-related ones screenshotted. More likely to share: the rows showing exactly where I went out (⚽⚽🟥) so people can see I almost had a hat trick, a share that's ONE tap to copy and doesn't spoil the answer, and a puzzle number so we know we played the same one. Less likely: anything with a long link, a \"Can you beat me?\" type message pre-written for me (cringe, I'd delete it), or a share image I have to save. Text only. It has to look normal in iMessage.",
+  "love": [
+   "Same 18 cards for everyone. That's the whole reason it works in a group chat",
+   "Picking which tile to answer. It makes going out feel like my fault, not luck, and that's why I come back instead of quitting",
+   "One miss and you're done. It's brutal, but it makes a hat trick actually mean something",
+   "The answer and the 'means' line after I miss. I actually learned rule stuff I bring up at practice",
+   "The arcade cabinet look. It doesn't look like homework or a kids' app",
+   "Goal, Brace, Hat trick as the result names. Those are words I already use",
+   "It's fast. Under two minutes on the bus"
+  ],
+  "turn_offs": [
+   "Too many cards on leagues nobody my age watches (Liga MX, Ligue 1, Serie A history). If the hard ball is mostly those, it's not hard, it's random",
+   "Kid Slang written by adults. If one card uses a word wrong or a word that died last year, the whole team will screenshot it and roast the game. Get kids to check it or cut it",
+   "Slow animations between balls. Let me go fast",
+   "Any instructions, tutorials or 'Great job!' popups. Already agree with no text",
+   "Going out on card 1 or 2 too often. If the easy ball isn't actually easy, I'd stop after a few Nils",
+   "Anything that asks for my email, name or a login. Instant close",
+   "A share message that sounds like an adult wrote it"
+  ],
+  "must_have_v1": [
+   "Same daily 18 cards for everyone, with a puzzle number and a clear reset time",
+   "One-tap copy share text with the ball rows and the 🟥 where you went out, no spoilers, short link",
+   "After a miss: show the right answer and the 'means' line, then stop. Let me see the board I almost filled",
+   "First ball is truly easy, so most players get at least one Goal most days",
+   "Remembers I already played today so I can't replay to fix it, and shows my result if I reopen it"
+  ],
+  "later": [
+   "Streak counter (days played, not days won), stored on my phone, with no account",
+   "Picture cards on the chalkboard pitch: offside or not, ref signals, goal or no goal. As a player, these are the ones I'd be best at and would brag about",
+   "The anonymous counter that re-sorts difficulty. Invisible to me, but it'd fix the 'easy card that isn't easy' problem",
+   "Balance the mix so leagues lean toward what players actually watch (EPL, MLS, NWSL, Champions League, rules, World Cup) and leave obscure league history mostly for the hard ball",
+   "A tiny 'how many people got a hat trick today' number after you finish. Not a leaderboard, just a reason to flex"
+  ],
+  "dont_build": [
+   "Leaderboards. The group chat is the leaderboard",
+   "Accounts, profiles, avatars, friend lists",
+   "Endless mode, practice mode, replays of today's puzzle. It kills the stakes",
+   "Jokers, hints, second lives, 'watch an ad to continue'",
+   "Dark mode before anything else. I literally don't care, the CRT is already dark",
+   "A basics category for v1. Put easy cards in the easy ball instead of a separate thing",
+   "Badges, achievements, XP, levels. That's every other app and I ignore it there too",
+   "A share image or a card to save. Text is faster and works in every chat",
+   "An archive of old puzzles. Missed it, missed it"
+  ],
+  "roadmap": [
+   {
+    "step": "Lock the daily 18: same seed for everyone, puzzle number, local reset, one-play-per-day memory",
+    "why": "Without everyone playing the same cards there's nothing to compare in the chat, and that's the only reason I'd come back daily"
+   },
+   {
+    "step": "Build the share text with ball rows and the 🟥, one tap to copy",
+    "why": "The share is how I found it and how my whole team will find it. It's marketing and the game at the same time"
+   },
+   {
+    "step": "Tune the easy ball hard: only cards most 13-year-old players would get",
+    "why": "If people go Nil too much in week one, they quit before the habit forms. The first Goal is the hook"
+   },
+   {
+    "step": "Have actual kids check Kid Slang and the easy cards before launch (the owner's daughter and two teammates is enough)",
+    "why": "One cringe card gets screenshotted and the game becomes a joke in the chat. Cheap to prevent"
+   },
+   {
+    "step": "Ship it to one team chat and watch for two weeks before adding anything",
+    "why": "You'll learn more from whether 15 kids keep posting than from any of these ideas"
+   },
+   {
+    "step": "Add a local streak counter",
+    "why": "Small, no account needed, and it's the thing that gets me to play on a game day at 9pm"
+   },
+   {
+    "step": "Add chalkboard picture cards (offside, signals, goal or no goal) as the one big content addition",
+    "why": "It's the only thing that makes players like me better than random fans, and that's what I'd brag about"
+   }
+  ],
+  "verdict": "I'd play it every day as long as my team chat does, so build the same-18-cards-for-everyone part and the share text perfectly, make the first ball actually easy, and skip everything else until kids are posting results on their own."
+ },
+ {
+  "group": "parent",
+  "gender": "woman",
+  "persona": "Jen Halvorsen, 44, Shoreline WA, physical therapy assistant. Her daughter Maya (13) plays center back on a U14 club team and her son Theo (9) plays rec. She learned the game from the sideline about six years ago, and she's one of 19 parents in the team group text.",
+  "first_week": "Monday, 5:40 pm, in the pickup line at Shoreline Stadium. Kristin drops the link in the parents' group text with \"ok this is addicting.\" I open it. The arcade thing is cute and I get it without any instructions. First ball: I tap \"Rabona\" because I've heard Maya say it, and I get it. Then a Rules card and a Kid Slang card, which I nail because I live with a 13-year-old. Then I'm left with \"Rangers FC,\" which I can't avoid because I need all six. I guess wrong. Nil. I'm a little mad, but the answer fills in and the \"means\" line tells me something I didn't know, so I don't feel stupid. Tuesday I play at 9:30 pm in bed and score a Goal. I text my sister a screenshot, not the share text, because I'm not sure how to share it yet. Wednesday I go out on a Bundesliga card on ball one. That's when I think: this is a dad game. Thursday I score a Brace, and that I post to the group text right away. Mark (Ava's dad) replies with a Hat trick and I want to throw my phone. Friday I forget, because it's tournament prep and laundry. Saturday, between games at Starfire, three of us moms play it in the car with the heat on, arguing over the hook words. Sunday I play while Maya sleeps on the drive home. By the end of the week I'm in if ball one stays winnable for someone like me. If I'd gone Nil four times, I'd be done by week two and wouldn't say so, I'd just quietly stop.",
+  "play_daily": "Maybe, leaning yes, during the season. Honestly it depends on two things: whether the group text keeps posting, and whether I score at least one goal more days than not. One miss ends the day, and that's fine as long as the first ball is truly easy. If the easy cards are \"easy for a guy who watches Bundesliga at 6 am,\" I'm gone in ten days.",
+  "share": "Yes, to the team parents' group text first, then my sister in Spokane, and sometimes Maya, who will roast me. I'm more likely to share if the text shows how far I got (like ⚫⚫⚫⚫⚪ then 🟥) so even a bad day looks like I tried. A big \"Nil\" alone I would never post. I'm more likely if it's one tap, pastes cleanly into iMessage, gives nothing away, and the link opens straight to today's game. I'm less likely if it has extra emoji clutter, a long URL, or anything that looks like an ad.",
+  "love": [
+   "The \"means\" line after every card. I learn one real thing a day and get to say \"did you know\" to my husband at dinner. That's the part that makes losing okay.",
+   "Kid Slang and Rules cards mixed in with the pro stuff. Those are where moms like me have the edge, and beating a dad on \"cooked\" is deeply satisfying.",
+   "Picking the tile order. Starting with what I know first feels like strategy, even though I still need all six.",
+   "It's short and it ends. I have four minutes in the pickup line, not twenty.",
+   "Everyone getting the same 18 cards, so the group text can argue about the Liga MX one.",
+   "No \"Great job!\" stuff. The dry voice is funny to me."
+  ],
+  "turn_offs": [
+   "Going out on card 3 because of a hard foreign-league card in the very first ball. Too many Nils and I'll feel like the game isn't for me.",
+   "The easy tier being written by and for soccer dads. Easy has to mean easy for a mom who learned the game six years ago.",
+   "Not seeing the right answer and its meaning when I miss. That's my consolation prize.",
+   "Losing my run because a text came in or I switched to Maps. I get interrupted constantly.",
+   "The day resetting at a weird time. If it flips at 5 pm Pacific because it's midnight somewhere else, the group text will be a mess.",
+   "Sound that plays on its own. I'm in a car with kids or at a practice field.",
+   "Any timer. I'd quit."
+  ],
+  "must_have_v1": [
+   "The same 18 cards for everyone, resetting at midnight Pacific, one run a day, and it remembers I already played",
+   "Ball one is six genuinely easy cards, tested on actual non-expert parents, so a normal person scores a goal most days",
+   "When I miss, the blank fills in and I see the right answer and its meaning before the run ends",
+   "A one-tap share with a progress grid (balls filled, where I went out), spoiler-free, short link that opens today's game",
+   "It saves mid-run and loads instantly on bad field wifi, so an interruption doesn't cost me my day"
+  ],
+  "later": [
+   "Chalkboard picture cards, especially offside and ref signals. Sideline parents argue about offside every single Saturday, so this would be gold, but not for launch.",
+   "The anonymous counter that re-sorts difficulty from real results. It's cheap, it fixes the dad-easy problem over time, and I never see it.",
+   "A small count of days played or a streak number on the end screen. No guilt, just a number.",
+   "A short line under the share text showing yesterday's toughest card, so the group text has something to argue about",
+   "More women's-game and US cards in easy and medium, since that's what our team actually watches"
+  ],
+  "dont_build": [
+   "Accounts, logins, leaderboards. The group text already is the leaderboard.",
+   "Push notifications or streak-shame reminders. I get enough pings from TeamSnap.",
+   "A practice or endless mode. I'd want one after going out early, I admit it, but it would kill the reason I come back tomorrow.",
+   "A separate Basics category. Just make the easy tier truly easy, and that handles new families.",
+   "Dark mode. The screen is already black and green. Nobody in my car would notice.",
+   "Jokers, hints, lifelines, second chances. One miss and done is what makes a Hat trick worth posting.",
+   "Timers or speed scoring",
+   "Sound on by default",
+   "Profiles, badges, avatars"
+  ],
+  "roadmap": [
+   {
+    "step": "Daily engine: same seeded 18 cards for everyone, midnight Pacific reset, one run a day, state saved through interruptions and app switches",
+    "why": "This is the whole game. If the group text isn't looking at the same cards, nothing else matters."
+   },
+   {
+    "step": "The ball board: 6 hook-word tiles, center unlocks last, a right answer turns a tile black, one miss ends it, and the miss reveals the answer and its meaning",
+    "why": "The core loop plus the teaching moment that makes losing feel okay instead of dumb."
+   },
+   {
+    "step": "Share text: title and number, progress grid with balls and where you went out, result word, short link. One tap to copy.",
+    "why": "Sharing is how it spreads through team group texts. It has to look decent even on a bad day or moms won't post it."
+   },
+   {
+    "step": "Two-week playtest with your own team's parents and kids before going public, focused on whether ball one is actually easy",
+    "why": "Your easy tier is the biggest risk. A dad and editor can't judge easy for a sideline mom. Real Nil rates will tell you."
+   },
+   {
+    "step": "Re-tag or cut cards from the playtest: move dad-easy cards up a tier, keep the women's game, US and Rules cards in easy",
+    "why": "Fixes the problem cheaply with content you already have, no new features."
+   },
+   {
+    "step": "Launch publicly, then add the tiny anonymous counter to re-sort difficulty from real results",
+    "why": "Keeps calibration honest as the audience grows, and players never see it."
+   },
+   {
+    "step": "Only then, chalkboard picture cards, starting with offside",
+    "why": "It's the one new feature I'd actually get excited about, but it's new art and new approvals on top of a slow card pace, so it waits."
+   }
+  ],
+  "verdict": "I'd play it and post it to the parents' group text most days of the season, but only if the first ball is truly easy for a mom who learned the game on the sideline. Without that, it turns into a dad game I quietly stop opening by week two."
+ },
+ {
+  "group": "parent",
+  "gender": "man",
+  "persona": "Greg Halvorsen, 46, project manager at a utility in Bellevue, drives his 13-year-old daughter Maya to U14 club practice in Redmond Tue/Thu/Sat. He never played, learned the game from the sideline over six years, and now watches Arsenal on Saturday mornings because Maya does.",
+  "first_week": "Monday: the link shows up in the parents' group text from the team manager. I open it in the pickup line at 7:40 with 15 minutes to kill. No login, it just loads, and that's the only reason I don't close it. The cabinet is charming. First ball: I tap \"Throw-in\" because I know that one, get it right, and the tile goes black. That feels good. Then I tap \"Rangers FC\" and it's something about Scottish titles. Wrong. Out on card 2. Nil. I read the means line and think, ok, fair, I learned a thing. Maya gets in the car and I tell her I got a Nil on a soccer game and she laughs at me. Tuesday: I'm smarter. I tap only hook words I recognize, save the scary ones for last. I get the whole first ball. GOAL. I actually say \"yes\" out loud in the car. I text Maya the result even though she's in the building 50 yards away. Wednesday: no practice, I forget it exists. Thursday: back in the pickup line, it's habit now. Maya has started playing it too and she beat me with a Brace. That's the hook. Not the trivia, the fact that my kid and I are now comparing scores at dinner. Friday: I go out on a Liga MX card about some club's nickname. That one annoyed me. Nothing I could have known, and it was in the first ball. If that happens three days running, I'm done. Saturday: tournament day, I play it at 6:50 a.m. in a Starbucks line before the game. I learn the keeper 8-second rule from a card and then see a ref call it two hours later. I tell the dad next to me like I've known it forever. That moment is the whole value of this thing for me. Sunday: I play, get a Goal, text it to my brother-in-law in Spokane, a Liverpool guy who thinks I'm a soccer tourist. He texts back his own result Monday. Now there are three of us.",
+  "play_daily": "Maybe, leaning yes during the season. Practice days are locked in: I have dead time in the pickup line and this fills it in 3 minutes. Off days I'll forget unless Maya or my brother-in-law texts a score first. What decides it: whether I can score a Goal most days. If hard Bundesliga or Liga MX cards can show up in the first ball and end my day on card 2, I'll Nil three times in a week and quietly stop. One miss ending the day is fine. Feeling cheated is not.",
+  "share": "Yes, but to my daughter and my brother-in-law, not the parents' group. That group is for carpool logistics and snack schedules, and someone posting a game score daily would get eye rolls. I'd post there maybe twice a season, on a Hat trick, as a brag. More likely to share: the text is three lines, copies in one tap, and the 🟥 shows where I went out, because a Nil with a red card on card 2 is funny and self-deprecating, so I'd send that too. Less likely: if it spoils anything about the cards, has a long ugly URL, or adds hype words. The Wordle format in the brief is exactly right. Don't add to it.",
+  "love": [
+   "The means line. I learned this sport through my kid and I'm tired of being the dad who doesn't know things. Every card teaching one true fact is why I'd keep coming.",
+   "Rules cards that pay off on the sideline that same weekend. The keeper 8-second rule is gold for a parent.",
+   "Picking which tile to answer. It gives a non-expert like me a fighting chance: I clear what I know and face the scary one last.",
+   "Same 18 cards for everyone. That's what makes comparing with my daughter at dinner work.",
+   "Kid Slang cards. Getting one right and saying 'that was bussin' to Maya to embarrass her is worth the whole app.",
+   "No login, no ads, loads from a text link. That's the only reason I tried it at all.",
+   "The arcade look. It's charming and it doesn't feel like a homework app or a betting app."
+  ],
+  "turn_offs": [
+   "Going out on a hard deep cut in the first ball. Hard cards in ball 1 will kill people like me.",
+   "Hook words I can't decode at all. If 'Rangers FC' and 'Pumas UNAM' are all I see, there's no real choice, it's a coin flip.",
+   "Stale facts. If a card says the wrong manager or champion, I lose trust in every 'means' line, which is the thing I came for.",
+   "Sound that plays on load. I'm in a car line with a sleeping kid in the back or in a quiet office.",
+   "Streak guilt, flames, 'don't break your streak!' I have enough nagging from apps.",
+   "Tiny text or tiny buttons. I'm 46 and playing with one thumb holding a coffee.",
+   "Anything that asks me to sign up, install an app or allow notifications. Instant close."
+  ],
+  "must_have_v1": [
+   "Difficulty ramps by ball: ball 1 = the 6 easy, ball 2 = medium, ball 3 = hard. A Goal should be reachable for a sideline parent most days, a Hat trick for the real fans.",
+   "Same 18 cards for everyone each day, reset at local midnight, and it remembers I already played today so I can't replay.",
+   "One-tap copy of the exact 3-line Wordle-style result with the ⚫ rows and the 🟥.",
+   "A means line on every card that is short, true and current. Fact-check anything that can change before it goes in the daily pool.",
+   "Loads instantly from a text link with no login, works on bad field wifi, big enough to play one-handed."
+  ],
+  "later": [
+   "Picture cards, starting with offside only. Offside is the thing parents actually argue about on the sideline. Skip formations and ref signals until offside proves itself.",
+   "Tiny anonymous counter to re-sort difficulty. Mis-tagged 'easy' cards are what will make me quit, so this matters, but only after real players have been at it a few weeks.",
+   "After you go out, a quiet way to see the answers to the cards you didn't reach. I'd learn more, but it's not a launch need.",
+   "A small record on my phone: the last 7 days of results. No streak flames, just the row.",
+   "Dark mode, for playing in bed at 10 p.m. Nice, not needed."
+  ],
+  "dont_build": [
+   "A basics category. Don't make me pick 'beginner.' Make the easy cards actually easy and put them in ball 1. Same result, no extra screens.",
+   "Category picker for the daily. The random mix is the charm, and it splits the shared puzzle.",
+   "Jokers, hints, second chances, a 'continue' button. The one-miss rule is what makes a Goal mean something.",
+   "Leaderboards, accounts, friends lists. The group text is the leaderboard.",
+   "Push notifications or streak reminders. My daughter texting me her score is the notification.",
+   "Archive of past days and endless mode. One a day keeps it special and keeps the owner's card pace manageable.",
+   "Sounds on by default, confetti, 'Great job!' text. Don't break the quiet arcade cabinet.",
+   "Long explanations after a card. One line. I'm in a car line, not a classroom."
+  ],
+  "roadmap": [
+   {
+    "step": "Build the daily engine: a date-seeded draw of 18 cards, ball 1 easy, ball 2 medium, ball 3 hard, one miss ends the day, played-today lock, local-midnight reset.",
+    "why": "This is the whole game. The easy-first ramp is the difference between parents like me sticking around or quietly leaving after three Nils."
+   },
+   {
+    "step": "End screen plus the 3-line share text with ⚫ rows and the 🟥, copied in one tap.",
+    "why": "Sharing is the only way this spreads, and the score comparison with my kid is what turns a curiosity into a habit."
+   },
+   {
+    "step": "Content pass on the daily pool only: write a recognizable hook word for every card, check that easy is truly easy for a non-player, and fact-check anything that could change.",
+    "why": "Hook words are what make the tile choice real instead of a coin flip, and one wrong 'means' line ruins trust in the learning, which is why I'm there."
+   },
+   {
+    "step": "Soft-launch to one team and its parents' group text for 2–3 weeks. Watch who's still sharing in week 3.",
+    "why": "Cheapest test there is. If parents stop by week 3, it's almost surely the difficulty, and you'll know before building anything else."
+   },
+   {
+    "step": "Add the anonymous right/wrong counter and re-tag difficulty from real results.",
+    "why": "Fixes mis-tagged cards automatically without the owner guessing, and protects ball 1 from cards that look easy but aren't."
+   },
+   {
+    "step": "Picture cards: offside only, a handful of them, mixed into the daily pool.",
+    "why": "It's the single most argued-about rule among parents and the most share-worthy card type. Prove one picture type before drawing five."
+   },
+   {
+    "step": "Small extras only if people ask: 7-day result row, answers after you go out, dark mode.",
+    "why": "Each is nice and cheap, none is why anyone plays. Let real players pull them in rather than pushing them out."
+   }
+  ],
+  "verdict": "I'd play it in the pickup line on practice days and text my score to my daughter and my brother-in-law, as long as ball 1 is truly easy so a sideline dad can score a Goal most days. Everything past the daily 18, the share text and true means lines is optional."
+ },
+ {
+  "group": "highschool",
+  "gender": "woman",
+  "persona": "Tessa Alvarado, 17, senior center back for Lincoln High varsity in Tacoma and an ECNL club player, verbally committed to a D3 school. Arsenal Women and Reign fan, plays EA FC Ultimate Team with her little brother, and her team group chat has 22 girls in it.",
+  "first_week": "Monday: our club captain drops a link in the team chat with \"⚽ Brace, beat that\" and nothing else. I open it on the bus to practice. The arcade cabinet look is cute, kind of retro, and I like that it doesn't explain itself, because I get it in two seconds. I tap \"Rabona\" first because I know that one, then a Liga MX club I've never heard of. I go out on card 9, a Bundesliga thing, and the red X and shake actually sting a little. That's good. I text the chat \"goal. bundesliga can rot\". Tuesday: I play before first period, get a hat trick on the first ball, then go out on a men's World Cup qualifying card. I learned something from the means line and actually remembered it. Wednesday: I forget until 10:40pm, open it in bed, and the bright warm-white cabinet blinds me, but I play anyway. Thursday: the build-up thing clicks. I save the middle tile anxiety for last and it feels like a real shot. Friday: I get a card that says Arsenal won the title and I don't know if it means the men or the women, and I pick wrong because I assumed women. I'm annoyed, and that's the first time I think about not coming back. Saturday: tournament day, I don't play until the car ride home, and three of my teammates are comparing in the chat so I play just to not be left out. Sunday: I get a Kid Slang card with \"bussin\" about orange slices and screenshot it to the chat as a joke, like \"who wrote this\". By the end of the week it's a 2-minute habit tied to the group chat, not to the game itself. If the chat stops posting, I'd probably drift off in a month.",
+  "play_daily": "Yes, as long as it takes under 3 minutes and my team chat keeps posting. The pick-your-tile part is what makes it feel like my run and not a quiz, and one-miss-ends-it makes it a 90-second thing on bad days, which honestly helps. The day I hit a card that feels unfair (a men's-vs-women's ambiguity, or a \"current\" fact that's out of date), I'd stop trusting it and stop playing.",
+  "share": "Yes, to my club team chat and to my brother, who thinks he knows more because he plays FC. Not to anyone outside soccer. \"⚽⚽ Brace\" alone is too thin, though. I'd want the shape of my run, like rows of ⚫ with a 🟥 where I went out, so people can see I got 11 deep and died on a hard one versus going out on card 2. More likely to share if: the text is short, it has a number (#42) so we know we're on the same day, and it never spoils a card. Less likely if: it adds a link preview with a cringe image, hashtags, \"I scored on Triviela!\" fake-excited copy, or anything that looks like an ad. The bare Wordle format is right. Do not make it cute.",
+  "love": [
+   "Picking which tile to answer. It's the only decision in the game and it makes it feel like strategy, like choosing where to play the ball",
+   "One miss ends your day. Real stakes. It makes a brace feel earned and keeps it short on school mornings",
+   "The middle tile as the shot on goal. Do the twist, it's the best idea in the brief",
+   "Hat trick as the perfect day. Calling 18-for-18 a hat trick is exactly the kind of thing my team would say",
+   "The means line teaching me something. Two weeks of this and I'd actually know the 8-second keeper rule cold, which I'd bring up at practice",
+   "Random neighbors from every league. Rangers next to a rabona next to an NWSL club is funny and keeps me from only knowing Arsenal stuff",
+   "No accounts, no ads, no leaderboard. I already have enough apps that want my email",
+   "The deadpan voice. It doesn't try to be my friend"
+  ],
+  "turn_offs": [
+   "Ambiguous men's vs women's cards. If the women's game is in the deck, every card has to say which one. 'Arsenal won the title' with no qualifier is a trap for someone like me and feels like the default is men",
+   "A deck that's 80% men's European club trivia with NWSL and women's internationals sprinkled in. If my run is all Serie A men's managers I'll feel like it's my dad's game",
+   "Kid Slang written by adults. 'The halftime orange slices were bussin' is funny once as a screenshot, but if it shows up as a real card in my daily 18 it reads like a parent trying. I'm 17, Gen Alpha slang isn't even my slang",
+   "Outdated 'current' facts. One wrong manager or champion and I'll stop trusting every card",
+   "The bright warm-white cabinet at night. I play in bed",
+   "Going out on card 1 or 2 to a hard card. If I get to choose tiles that's on me, but the first ball should lean easier so the day doesn't die in 15 seconds",
+   "Any 'Great job!' text, streak-guilt notifications, or begging me to share",
+   "Hook words that basically give away the answer, or ones so vague I can't tell what I'm picking"
+  ],
+  "must_have_v1": [
+   "The daily 18 with tile picking, one miss ends it, goals banked, and the middle-tile-last twist, same cards for everyone, reset at local midnight",
+   "A share text with the day number, the result word, and the run shape (⚫ rows plus a 🟥 where you went out), copied to clipboard in one tap, no spoilers",
+   "Women's game coverage that feels equal, and every club or international card explicitly saying men's or women's when it could be either",
+   "Difficulty ordered by ball: ball 1 easy, ball 2 medium, ball 3 hard, so day-one players don't die instantly and the hat trick is still rare",
+   "If you already played today, opening the link shows your result and the share button, not a replay"
+  ],
+  "later": [
+   "A dark cabinet for night play. The CRT is already dark, so just dim the warm-white body after sunset or follow the phone setting",
+   "Chalkboard picture cards, but only offside and ref signals. Those are the ones I'd actually screenshot and argue about with my team",
+   "A plain streak number on the result screen (days played in a row, not wins). No notifications attached to it",
+   "The anonymous counter to re-sort difficulty, once there's enough play to make it real",
+   "A one-line stat after you finish, like what percent of people got today's middle tile, so the chat has something to argue about"
+  ],
+  "dont_build": [
+   "Endless mode, practice mode or a past-days archive at launch. If I can keep playing, the daily result stops meaning anything",
+   "Leaderboards, accounts, friends lists, profiles or avatars. The group chat IS the leaderboard",
+   "Jokers, lifelines, skip, 50/50 or a second chance. The second you add one, a brace means less",
+   "Timers. I'm on a bus, I'll get interrupted",
+   "Push notifications or streak-loss guilt",
+   "EA FC-style player ratings, card packs or anything that looks like Ultimate Team. Don't chase the gamers, we have FC for that",
+   "Per-category picking or a category menu for the daily. The random mix is the point",
+   "More categories before the existing ones are balanced. I'd rather have fewer leagues with equal women's coverage than 20 categories that skew men's",
+   "Kid Slang in the daily mix for everyone. Keep it out, or make it rare. It's the part most likely to make a teenager close the tab"
+  ],
+  "roadmap": [
+   {
+    "step": "Audit the existing 1,400 cards for men's/women's ambiguity and stale 'current' facts, and check the women's game share across the deck",
+    "why": "Trust is the whole game when one miss ends your day. An unfair card is the fastest way to lose a teenager, and fixing it costs no code"
+   },
+   {
+    "step": "Build the daily 18: same seed for everyone, ball 1 easy, ball 2 medium, ball 3 hard, tile picking, middle tile last, one miss ends it, goals banked, locked after you play",
+    "why": "This is the product. Everything else is decoration until this loop feels good on a phone in under 3 minutes"
+   },
+   {
+    "step": "Write the hook words carefully and test them on real players",
+    "why": "Picking a tile is the only choice I make. If hooks give away answers or say nothing, the best part of the game goes flat"
+   },
+   {
+    "step": "Ship the share text: day number, result word, run shape with ⚫ and 🟥, one-tap copy",
+    "why": "Growth is the team chat. Without the run shape, results all look the same and there's nothing to talk about"
+   },
+   {
+    "step": "Soft launch to two or three real teams (a U14 team, a high school team, a rec team) for two weeks and watch who stops",
+    "why": "Find where people drift before building anything else. My guess is they drift on unfair cards, not missing features"
+   },
+   {
+    "step": "Night-friendly cabinet",
+    "why": "A lot of us play in bed. Cheap fix, removes a real annoyance"
+   },
+   {
+    "step": "Only then: offside and ref-signal chalkboard cards and the difficulty counter",
+    "why": "These make it better once the daily loop and content trust are proven, and both cost real time from someone who approves every card by hand"
+   }
+  ],
+  "verdict": "I'd play it daily and post my brace in the team chat as long as it stays under 3 minutes, never feels unfair, and treats the women's game as equal instead of a side category. Skip the extras and build the daily loop plus the share text really well."
+ },
+ {
+  "group": "highschool",
+  "gender": "man",
+  "persona": "Theo Lindqvist, 17, senior right winger at Ballard High (varsity, three-year starter) who also plays boys' club in Seattle. Arsenal fan since age 8, goes to Reign games with his dad because his little sister plays U14, plays EA FC Ultimate Team every night, and lives in the \"BHS Varsity\" group chat.",
+  "first_week": "Monday: my dad texts me the link with \"your sister's coach's dad made this.\" At first glance the cabinet look reads a little like a kids' thing and I almost ignore it. I open it at lunch anyway. One of the six hooks is \"Rabona,\" so I tap that first to feel smart. I clear the first ball, so one goal, then on the second ball I guess on a Bundesliga club card and miss. Out in about 90 seconds. Honestly that clean, sudden ending stung, and that's good. I send a screenshot to Kenji (Real Madrid fan, thinks he knows everything) with \"beat this.\" He gets a Nil and texts \"rigged.\" Now I'm hooked.\nTuesday: I open it at the bus stop without anyone reminding me. That's the real test, and it passes. I play the outer five carefully and save the middle for last, which really does feel like building an attack. Brace. I post it to the varsity chat. Two guys play. One of them goes out on a Kid Slang card about halftime orange slices and the chat roasts him for 40 messages. That card is cringe for a 17-year-old, but it was the funniest moment of the week, so it can stay.\nWednesday: I go out on an NWSL card I should have known. I'm mad at myself, not the game. That's the right kind of mad. I read the means line and I actually remember it now.\nThursday: an \"easy\" card is basically \"what's a throw-in.\" Insulting at my level, but it takes two seconds. Then a hard Champions League final card that was hard and fair. That's what I'm here for.\nFriday: I go out on card 16, so close to a hat trick. My share just says Brace, same as Tuesday when I went out on card 13. That annoyed me. I want people to see how close I got.\nWeekend: I play Saturday after my club game and skip Sunday, and nothing yells at me about it. If my streak resets I'll care a little. If there's no streak at all I'll care less about coming back.",
+  "play_daily": "Yes, for as long as at least two people in my group chat are playing. It takes under three minutes, it has real stakes, and there's one run so I can't grind it. If it's just me with nobody to compare against, I'd drift off by week three. What keeps me is the share and the trash talk, not the game alone. A local streak counter would carry me through the days when nobody else plays.",
+  "share": "Yes, every day I get a goal or more, and on Nils if they're funny. It goes to the varsity group chat first, then Kenji one-on-one to rub it in, and sometimes my dad because he'll play it too and I like beating him. I'm more likely to share if the text shows how far I got (the black dots plus a red square on card 16 is a flex even when the result is only a Brace) and if it's short enough to fit in one text bubble. I'm less likely if it has a long URL, any hashtag, or \"I scored X on Triviela!\" style hype copy. Never spoil the answer or the category I went out on in the share, because then the chat can't argue about it.",
+  "love": [
+   "One miss ends it. That's what makes it feel like a real game and not a quiz app.",
+   "Picking the order of tiles. Saving the hardest one for the middle tile 'shot' feels like soccer, not homework.",
+   "Everyone gets the same 18. That's the entire reason the group chat works.",
+   "The mix: a tactics term next to a Scottish club next to a trick move. You can't study for that.",
+   "Hard cards that are actually hard but fair, like Champions League history and NWSL stuff most of my friends don't know.",
+   "The dry workbook voice. It's funny without trying, and no 'Great job!' popups.",
+   "The means line after a miss. I learn something without feeling lectured.",
+   "It's over in two or three minutes. It fits between classes or before practice."
+  ],
+  "turn_offs": [
+   "Easy cards that are basically 'what is a corner kick.' One or two a day is fine, six that babyish would make me feel like it's for my sister.",
+   "Wrong or outdated facts. One card with an old transfer or the wrong manager and the chat calls it trash forever.",
+   "Slow animations I have to sit through between cards or between balls. Let me tap through.",
+   "Anything that asks me to log in, give an email, or turn on notifications.",
+   "The share text all coming out the same. A Brace on card 13 and a Brace on card 16 should look different.",
+   "Kid Slang showing up as a 'hard' card. Losing my whole day on Gen Alpha slang would make me quit for a week.",
+   "A super bright warm-white screen at 11pm. Minor, but it's when I play.",
+   "If it ever feels like a school or parent-made learning game. The arcade look has to feel cool, not cute."
+  ],
+  "must_have_v1": [
+   "The daily 18-card run: same cards for everyone, 6/6/6 easy-medium-hard, one miss and you're out, goals banked, middle tile unlocks last.",
+   "A one-tap share text: game number, result word, a dot row showing how far I got with a red square where I went out, and a short link. Nothing else.",
+   "Hard cards that really are hard and every current fact checked. This decides whether players my age respect it.",
+   "After you go out: show the right answer and its means line, then a countdown to tomorrow's game. That's the whole end screen.",
+   "A local streak count and my best result, stored on my phone, no account. That's what brings me back on days the chat is quiet."
+  ],
+  "later": [
+   "Chalkboard picture cards: is this offside, name this formation, which ref signal. As a player this is where I'd most want to show off. Even two a week would be great.",
+   "The anonymous difficulty counter, so a card half the country misses moves up to hard and the 'easy' tier stops being insulting.",
+   "Dark mode, or just a dimmer cabinet at night.",
+   "A tiny 'X% of players got this card' after the day ends. Pure fuel for the group chat, still no leaderboard.",
+   "Being able to play yesterday's game if I missed it, with no streak credit. Only if it's cheap to build."
+  ],
+  "dont_build": [
+   "Accounts, leaderboards, friends lists. The group chat already is the leaderboard.",
+   "Endless mode or practice mode. One run a day is the whole appeal, and if I can grind it I'll burn out.",
+   "Jokers, skips, 50/50s, second lives. They kill the sting, and the sting is the product.",
+   "Timers or speed bonuses. I play on the bus with bad signal and I want to think for a second.",
+   "EA FC player ratings or video game cards. I'd love them, but they change constantly and aren't official facts. Not worth the upkeep.",
+   "Push notifications or 'you're about to lose your streak!' nagging. That's what makes me delete apps.",
+   "Unlockable themes, avatars, badges, or any collectible stuff. It turns a clean daily game into a mobile game.",
+   "Too many new categories. 1,400 cards is already more than a year of dailies. Spend the time making the hards great."
+  ],
+  "roadmap": [
+   {
+    "step": "Ship the daily core: seeded 18 cards that are the same for everyone, the 6-tile ball, middle tile last, one miss ends it, goals banked, Nil/Goal/Brace/Hat trick.",
+    "why": "This is the whole game. Everything else is decoration until this feels tight and fast on a phone."
+   },
+   {
+    "step": "Share text with a dot row and a red square for where you went out, plus the game number and a short link.",
+    "why": "The share is how this spreads. Showing how far you got is what starts the trash talk and makes a 'Brace on 16' feel different from a 'Brace on 13.'"
+   },
+   {
+    "step": "End screen: the missed card's right answer and means line, a local streak, your best result, and a countdown to tomorrow.",
+    "why": "The streak and countdown get people back the next morning. The means line covers the learning goal without any lecture."
+   },
+   {
+    "step": "Audit the hard and easy tiers before launch. Cut baby-level easies, make sure hards are fair, recheck every current fact, keep Kid Slang out of hard.",
+    "why": "Older players decide in about two days whether this respects them. One wrong fact or six insulting easies and the chat calls it a kids' game."
+   },
+   {
+    "step": "Launch through group chats: your daughter's team, then high school and club team chats. No code needed.",
+    "why": "Ten people comparing results beats a thousand random players. Find out whether the daily loop holds before building anything else."
+   },
+   {
+    "step": "Add the anonymous per-card counter and re-sort difficulty from real results.",
+    "why": "Your easy/medium/hard guesses will be wrong for a lot of cards. Real data fixes that with no extra card writing."
+   },
+   {
+    "step": "Chalkboard picture cards (offside, formations, ref signals) mixed in a couple of times a week.",
+    "why": "It's the one new idea that gives players something trivia apps don't, and it suits the CRT look. Only do it after the core has proven people return."
+   }
+  ],
+  "verdict": "I'd play this every morning and post it to my varsity chat as long as a couple of teammates play too, so build the daily run, a share text that shows how far I got, a streak and hard cards that respect me, and nothing else until that loop is proven."
+ },
+ {
+  "group": "college",
+  "gender": "woman",
+  "persona": "Josie Varga, 20, junior holding mid at a D1 program in Ohio. Grew up in Tacoma playing ECNL. Watches Arsenal Women, Barça Femení, the Thorns and too much Bundesliga. Teammates from Norway, Brazil, England and Japan. In season now, so lots of bus rides and hotel rooms.",
+  "first_week": "Monday: my old club teammate drops 'Triviela #42 ⚽⚽ Brace' in our Tacoma group chat, so I open it on the bus to an away game. The cabinet look makes me smile right away. I get through the easy ball in about 40 seconds. The orange slices card is cringe-cute, so I screenshot it. Then I go out on the second ball, on a Liga MX club nickname I'd never heard of. I'm annoyed, but it was a fair miss and the 'means' line taught me something, so I respect it. Nil. I don't share it.\n\nTuesday: Brace. I go out on a hard Serie A manager card and spend five minutes checking it's still true, because managers get sacked monthly. If it had been stale, I'd stop trusting the whole game. I text the Brace to the Tacoma chat and to Ingrid, our Norwegian center back.\n\nWednesday: I realize choosing which tile to tap feels like a decision, but I have to answer all six anyway, so the order changes nothing. Seeing 'Rabona' sitting next to 'Rangers FC' is still fun, so I let it go.\n\nThursday: I get one Goal at 11:40pm in a hotel room. Freya, our English keeper, plays at 7am, and we argue about whether we even got the same cards.\n\nFriday: six of us are posting in the team chat. Laura from São Paulo goes out on an EPL card and roasts herself. The grid starts the conversation and the card that killed you keeps it going.\n\nSaturday is a game day and I forget to play. On Sunday, if there's no record of my days, I don't care that I missed. If there is one, I'm a little sad about it, and that's what brings me back.\n\nBy the end of the week I want a hat trick. I don't want a single new feature.",
+  "play_daily": "Yes, as long as the hard cards are hard because they need real knowledge, not because they're ambiguous or out of date. One wrong answer key or one sacked manager still listed, and I'm gone. One miss ending the day only works if every miss feels like my fault. It also has to take under 5 minutes. I play on the bus or before film.",
+  "share": "Yes, every day I score at least a Goal. I'd send it to my college team group chat (iMessage), my old club chat, and WhatsApp for Ingrid and Laura, so it has to be plain text that looks right in both apps. I'd post a Nil only if the card that killed me was ridiculous, and then I want to name it. I'm more likely to share if the grid shows which ball and which card I went out on, like ⚫⚫⚫⚫⚫⚫ / ⚫⚫🟥, because 'out on the 9th card' starts the argument. I'm less likely to share if it's long, has a link preview bigger than the result, or spoils the hook word before everyone has played.",
+  "love": [
+   "Everyone gets the same 18 cards. That's the whole social engine, and it's why our team chat would light up",
+   "Real stakes: one miss and you're done, goals already banked. No jokers. A hat trick that's possible but rare would feel like a true flex",
+   "The weird neighbors: a tactics term next to a Scottish club next to a trick move is exactly how my brain works after watching four leagues on a weekend",
+   "The 'means' line. I'd actually learn Ligue 1 and Liga MX stuff I skip on TV. Learning without being taught at is perfect",
+   "Goal, Brace and Hat trick as the result names, because they're real soccer words, not 'Great job!'",
+   "Answering in the dry workbook voice. The deadpan sentence plus a ridiculous answer is funnier than any joke",
+   "Laws of the Game cards. College players argue about the new keeper rule and offside constantly, so those would settle real fights",
+   "The arcade cabinet look. It's distinctive enough that a screenshot is recognizable in a group chat"
+  ],
+  "turn_offs": [
+   "Stale 'current' facts: managers, champions, transfers. One out-of-date card and I stop trusting the answer key for good",
+   "Ambiguous hard cards where two answers are arguably right. With one-miss-ends-it, that feels like getting robbed by VAR",
+   "Women's club soccer missing. NWSL is there, but no WSL, Liga F or Women's Champions League while the men get six leagues looks like an afterthought. My whole team would notice",
+   "The tile choice being fake. You answer all six regardless, so order is cosmetic. Fine as flavor, but don't build more systems on top of it as if it matters",
+   "Ambiguous daily reset. If my teammate in London and I aren't sure we got the same cards, comparing results means nothing",
+   "Too much easy. If the easy ball takes more than a minute or condescends, I'll skim and fat-finger a miss, and losing to an easy card by misclick would make me quit for the day angry",
+   "Mis-taps on chunky buttons near the edge of the screen, or no beat between tapping an answer and locking it in",
+   "Anything that feels like a kids' app: badges, mascots, confetti, cheering text"
+  ],
+  "must_have_v1": [
+   "The daily loop working perfectly: one shared seed with a clearly defined reset everyone agrees on (one global time, shown as #number), 18 cards across 3 balls, one miss ends it, Nil/Goal/Brace/Hat trick",
+   "A one-tap share in plain text (number, result, ball grid with 🟥 where you went out, short link) that looks right in both iMessage and WhatsApp",
+   "After you go out, show the card that beat you with its right answer and means line, then let me scroll the rest of the day's cards. That's where the learning and the group-chat argument come from",
+   "A fairness pass on every hard card and every time-sensitive fact before launch: one clearly right answer, dated 'current' facts, no gotchas",
+   "Play-once-per-day locked on the device, with today's result still shown if I reopen it, so I can re-share without replaying"
+  ],
+  "later": [
+   "A tiny local record: days played, current streak and how many of each result. No more than one line of numbers",
+   "Women's club cards (WSL, Liga F, UWCL) folded into existing categories or one new category, from official sites",
+   "Chalkboard picture cards on the CRT: is this offside, name this formation, which ref signal. This is the one feature that would make tactics people evangelize it. Start with offside and formations only",
+   "The anonymous right/wrong counter to re-sort difficulty, so 'hard' means hard for real players and not hard by guess",
+   "Dark mode, or just dimming the warm white cabinet at night. I play in dark hotel rooms"
+  ],
+  "dont_build": [
+   "The middle-tile-unlocks-last twist. It doesn't change the math, since you answer all six anyway. Only do it if it's nearly free and purely for drama",
+   "Accounts, leaderboards and friend lists. The group chat is the leaderboard",
+   "Timers. Speed doesn't measure soccer knowledge and they punish people on a bumpy bus",
+   "Hints, jokers, second lives, 'watch an ad to continue', practice or endless modes on the daily",
+   "Picking your categories for the daily. The random mix and the fact that everyone gets the same cards are the point",
+   "More non-soccer categories. Kid Slang is a fun easy-card spice, but don't let it grow",
+   "Push notifications, badges, achievements, sound effects or a mascot",
+   "A basics category as a separate mode. Put basics in the easy tier instead",
+   "Archive play of old days at launch. It splits the 'same cards today' conversation"
+  ],
+  "roadmap": [
+   {
+    "step": "Lock the daily engine: one global reset, seeded 18 cards (6 easy/6 medium/6 hard, ramping ball by ball), one miss ends it, goals banked, result tiers, today's result saved and shown on reopen",
+    "why": "It's the whole game. If the 'same cards today' promise breaks, nothing else matters"
+   },
+   {
+    "step": "Share text: number, tier word, ball grid with a 🟥 where you went out, short link. Test it in iMessage and WhatsApp",
+    "why": "Sharing is the only growth channel and it costs almost nothing to build"
+   },
+   {
+    "step": "Post-run reveal: the card that beat you, its answer and means line, then the rest of the day read-only",
+    "why": "This turns a loss into learning and into the group-chat argument that brings people back tomorrow"
+   },
+   {
+    "step": "Content fairness and freshness audit on hard and time-sensitive cards, with a 'checked on' date for current facts",
+    "why": "With one-miss-ends-it, a bad card is a broken game. Trust is the product"
+   },
+   {
+    "step": "Soft-launch with the owner's team and a few college and adult players for two weeks. Watch where people go out and which cards they complain about",
+    "why": "Real misses tell you which cards are unfair faster than any review"
+   },
+   {
+    "step": "Small local stats line (streak, results tally) plus the anonymous difficulty counter",
+    "why": "A streak drives daily return and the counter keeps the difficulty tiers honest, both cheaply"
+   },
+   {
+    "step": "Women's club coverage, then chalkboard offside and formation cards",
+    "why": "These close the biggest credibility gap for players like me and add the one feature that's truly unique, once the core loop has proven itself"
+   }
+  ],
+  "verdict": "I'd play this every day and post it to my team chat, as long as every card is fair and current and the team spends its effort on the shared daily, the share grid and the reveal after you go out, not on features."
+ },
+ {
+  "group": "college",
+  "gender": "man",
+  "persona": "Tomás \"Tommy\" Ilunga, 20, junior holding mid at a D1 school in the Midwest, Congolese-American from Columbus, watches about 6 games a weekend and wastes too much time on tactics Twitter, roommates with a Ghanaian winger and an English center back",
+  "first_week": "Monday: our assistant coach drops the link in the team GroupMe with \"bet none of you get a hat trick.\" I open it on the bus to an away game. The cabinet look is sick, and the first ball goes by in about 40 seconds because the easy cards are easy for me. I like tapping the tiles: I go \"Rabona\" first because I know I'll get it, and leave \"Rangers FC\" for last because Scottish football is my blind spot. Out on ball 2 on a Liga MX card. My teammate Rodrigo from Monterrey gets a Brace and won't stop talking about it. Tuesday: Brace. Out on a hard Laws of the Game card about the keeper six-second thing. Annoying, but I learned something, which is the point. Wednesday: Goal only, and I went out on a Kid Slang card. Honestly that was funny, and the whole chat roasted me, so I'll allow it. Thursday: first Hat trick. I screenshot nothing, I just paste the text, because the text is enough. Friday: I play before practice and see a card I'm pretty sure I saw Monday. That made me trust it a little less. Weekend: I play both days without being reminded, but by Sunday I'm noticing the easy ball feels like a toll booth before the real game starts.",
+  "play_daily": "Yes, for the first month for sure. After that it depends on two things: the hard cards have to actually be hard for someone like me (tactics, Laws, deep league stuff, not just \"who won the league\"), and I can't start seeing repeats. If I see the same card twice in the first few months, I'll drop to a few times a week. At 18 cards a day, 1,400 cards is about 77 days, and it's fewer if the hard pile is the smallest. That's the real threat to my daily habit, not missing features.",
+  "share": "Yes, every day I get a Brace or better, to the team GroupMe (20+ guys, 6 countries) and to my dad, who coached me growing up and will care more than he admits. On a Nil day I'd only share it if I went out somewhere funny. More likely to share: the ball rows of ⚫ with the 🟥 where I died, because \"out on the last tile of ball 3\" is the drama and that's what people reply to. Everyone getting the same 18 cards matters most, since that's how we compare. Less likely to share: if the text is long, has a link preview that hogs the chat, or spoils the card. Keep it three or four lines. Don't put my score as a percentage or anything that looks like a fitness app.",
+  "love": [
+   "One miss and you're done. Real stakes. Makes the easy cards matter because a dumb slip is brutal",
+   "Same 18 for everyone. That's the whole social engine for a team chat",
+   "Choosing tiles from hook words. It's a real decision: bank the ones you know, or hit the scary one while you're fresh",
+   "The middle tile as the shot on goal. Fits the soccer story and gives each ball a little climax",
+   "Goal, Brace, Hat trick. Every soccer person gets it instantly, and Hat trick being the perfect day feels earned",
+   "The 'means' line after the answer. I'd actually learn Serie A and Laws stuff I pretend to know",
+   "Men's and women's game mixed in without making it a thing. My teammates watch NWSL too",
+   "No ads, no accounts, no leaderboard. I don't want another app with a login"
+  ],
+  "turn_offs": [
+   "Repeated cards. Seeing one twice tells me the well is shallow",
+   "A wrong or outdated fact. Tactics guys will screenshot it and clown it in the chat, and then nobody trusts the game",
+   "Hard cards that are just obscure dates or stats. Hard should mean knowing the game, not memorizing a year",
+   "Bad wrong options. With three buttons, if two are obviously silly it's a coin flip pretending to be trivia",
+   "Slow animations between cards. I play on the bus and in the locker room, and 18 cards should take 3 to 4 minutes, max",
+   "Any 'Great job!' fluff, streak-guilt nags, or push notifications",
+   "Too much Kid Slang. One a week is funny. Losing a Hat trick to 'gyatt'-tier stuff every other day would make me quit",
+   "Puzzle resetting at weird times for my teammates' families back home. The number has to stay the same so we can compare"
+  ],
+  "must_have_v1": [
+   "The daily loop working perfectly: same 18 cards for everyone, one miss ends the day, goals banked, a clean end screen",
+   "The share text: number, ⚽ count, result name, ball rows with ⚫ and the 🟥 where you went out, link. Spoiler-free, one tap to copy",
+   "Difficulty that ramps across the day: ball 1 easy, ball 2 medium, ball 3 hard, with the middle tile being the hardest card in each ball. Then Goal is common, Brace is good and Hat trick is rare",
+   "A no-repeat rule for daily cards and enough approved cards banked for at least 90 days before launch",
+   "A last fact-check pass on every card that could have changed or is close to a judgment call, especially hard cards and their wrong options"
+  ],
+  "later": [
+   "The anonymous right/wrong counter so difficulty re-sorts from real results. The owner's 'hard' and my 'hard' won't match, and this fixes it without anyone hand-tuning",
+   "Chalkboard picture cards: name the formation, offside or not, which ref signal. This is the one feature that makes it MY game instead of a pub quiz. Start with formations and offside only",
+   "After you go out, let me read the rest of the day's cards with their answers and means lines, no score. Learning without an endless mode",
+   "A tiny local stats line (days played, how many Hat tricks) kept on the phone, no account",
+   "Dark mode, since I play in bed at night"
+  ],
+  "dont_build": [
+   "A timer. People can Google, sure, but the group chat polices that. A timer makes it stressful and turns it into a reflex game",
+   "Leaderboards or accounts. The GroupMe is the leaderboard",
+   "An endless or practice mode with scoring. It kills the 'one shot a day' feeling that makes the result mean something",
+   "Jokers, skips, second lives, or 'watch an ad to continue'",
+   "Category picking or filters for the daily. The random mix is the fun, and everyone has to face the same cards",
+   "Streak-loss notifications or anything that guilts me",
+   "More categories before the existing ones have deep, solid hard cards. Depth beats breadth for me",
+   "A basics or beginner category inside the daily. If families need it, fine, but keep it out of the shared 18 or the hard ball gets watered down"
+  ],
+  "roadmap": [
+   {
+    "step": "Ship the core daily: one seed, 18 cards, tile choice, one miss ends it, end screen, copy-to-share text with ball rows",
+    "why": "That's the whole game. Everything else is decoration until my team can compare results in the chat"
+   },
+   {
+    "step": "Lock the structure: ball 1 easy, ball 2 medium, ball 3 hard, middle tile hardest and unlocking last",
+    "why": "That gives the three results real meaning and makes the climb feel like build-up to a shot. Random difficulty mixing makes early outs feel cheap"
+   },
+   {
+    "step": "Audit the hard cards and every set of wrong options, and fact-check anything time-sensitive",
+    "why": "My crowd forgives a hard card but never a wrong one. Good wrong options are what separate trivia from a coin flip"
+   },
+   {
+    "step": "Count the runway: no daily repeats, at least 90 days of approved cards (540+, 180 hard) before you push it to strangers",
+    "why": "Repeats are what would actually make me stop playing daily. Content pace is the bottleneck, so plan it before launch, not after"
+   },
+   {
+    "step": "Add the anonymous right/wrong counter and re-sort difficulty monthly",
+    "why": "Cheapest way to make easy feel easy and hard feel hard for everyone, without the owner guessing"
+   },
+   {
+    "step": "Add a small set of chalkboard cards: formations and offside first, one per day at most, in the hard ball",
+    "why": "It's the feature that would make college and adult players feel the game was made for them. Keep it rare so content pace survives"
+   },
+   {
+    "step": "Only then consider the post-run card review and dark mode",
+    "why": "Nice, not needed. If the first six steps are solid, I'm already playing every day"
+   }
+  ],
+  "verdict": "If the hard ball is genuinely hard, the facts are bulletproof and I never see a repeat, this lives in my team's GroupMe every morning, and nothing else on the idea list matters until those three are true."
+ },
+ {
+  "group": "pro",
+  "gender": "woman",
+  "persona": "Tess Marchetti, 29, center back, retired in March after six NWSL seasons and two ACL tears. Now coaches a U15 girls' club team in Portland and does color commentary for a local Thorns pregame show.",
+  "first_week": "Monday: a former teammate drops the link in our old backline group chat with \"Brace, beat that.\" I open it on the MAX train. The cabinet look gets a smile out of me, and nobody tells me how to play, which I like. I tap \"Rabona\" first because I'm a show-off. Card one is easy. I clear the outer five, the middle tile wakes up, I hit it. Goal. Second ball, I get cocky and tap a Bundesliga tile. It asks which club plays at some stadium I've never heard of, and I'm out on card 9. One Goal. I'm annoyed in a good way. I read the line under the answer and actually learn something.\n\nTuesday: I go out on card 4 on a Liga MX question, guessing. Fair. But I notice that so far 11 of the 13 cards I've seen were about men's soccer. That's the moment I start keeping score on the game, not just in it.\n\nWednesday: a Soccer Rules card about the keeper eight-second rule. It's worded right, it says corner kick, and the line under it is clean. That's when I trust it. If that card had been sloppy I'd have screenshotted it to the chat to roast it and never come back. Hat trick? No. Brace. I text it.\n\nThursday: I go out on a Kid Slang card. \"Mid\" vs \"cooked.\" Losing my whole day to Gen Alpha slang is funny once. I send it to my U15s and they destroy me. That's honestly the best moment of the week.\n\nFriday: an NWSL card asks about a club's 2025 roster, and the line reads like it was true a year ago. I want to flag it and there's no way to. That's the crack.\n\nWeekend: I play both days without thinking about it. Sunday I go out on card 2. Eighteen seconds of game. Stings, but I'm back Monday. By then it's a habit, as long as it stays accurate and stops feeling like a men's quiz with a women's category bolted on.",
+  "play_daily": "Yes, at least for the first month, because the stakes are real and it takes two minutes. Whether I'm still playing in month three depends on two things: whether the cards are bulletproof accurate, and whether women's soccer shows up throughout the draw instead of living in its own little room. Lose either one and I'm gone without a word.",
+  "share": "Yes, most days. First to the old backline group chat, five former teammates spread from Portland to London, and that's competitive. Second to my U15s' parent-and-player chat, but only on days I'd lose to my kids. What makes me more likely: a short share that shows where I went out (the 🟥 on card 9 of ball 2) so people can argue about it, and a number so we know we played the same day. Less likely: if the share has more than three lines, any link-preview junk, or if it spoils which card got me. I'd never post it publicly. This is a group-chat thing.",
+  "love": [
+   "One miss ends the day. Real stakes. I've played under pressure my whole life and this is the right amount of it in two minutes",
+   "Picking my own tile from the hook words. Choosing which risk to take is a real decision, like picking your pass",
+   "The middle tile locked until the five around it. Build-up then the shot. Keep it, it's the best soccer idea in the whole thing",
+   "The line under the answer that teaches something. I'd read every one, even on cards I got right",
+   "Official sources and IFAB-accurate rules cards. That's what makes it not shallow",
+   "Odd neighbors on the same ball. A tactics term next to a Scottish club next to slang keeps everyone humble, including former pros",
+   "No 'Great job!' text. I don't need a game to clap for me",
+   "Hat trick being rare enough that it means something"
+  ],
+  "turn_offs": [
+   "One wrong or outdated card. Soccer people screenshot errors faster than they share scores. Rosters, managers and 'current' facts go stale every transfer window",
+   "A men's game by default. If the daily 18 keeps coming up 80% men's leagues because that's where the card count is, I'll notice in a week and so will every woman who plays",
+   "Hard cards that are only hard because they're obscure trivia (stadium capacities, kit sponsors, exact dates). Hard should mean you know the game deeply, not that you memorized Wikipedia",
+   "Kid Slang showing up as a medium or hard card. Losing my day on 'bussin' once is funny. Losing it twice in a week feels cheap",
+   "Slow animations between cards. The cabinet is charming but I'm on a train, don't make me wait for a flying pentagon",
+   "Any streak-guilt push notifications or nagging",
+   "Women's soccer filed away as its own category instead of mixed into rules, legends, awards and lingo"
+  ],
+  "must_have_v1": [
+   "The daily 18: same cards for everyone, a clear reset time (local midnight is fine) and a game number. That's the whole game",
+   "A three-line share: Triviela #42, the ball rows with a 🟥 where you went out, the link. No spoilers",
+   "A draw rule that balances the men's and women's game every day (for example at least 6 of 18 cards about the women's game or gender-neutral rules and lingo), so the card count in men's leagues doesn't decide who the game is for",
+   "A tiny 'this card is wrong' flag on the answer screen, even just a mailto link with the card ID. One editor can't catch every stale fact alone, and players will help if you let them",
+   "Date stamps on time-sensitive cards in the data so the owner can sweep 'current' facts every window. Kill or rewrite them before they go stale, not after someone mocks them"
+  ],
+  "later": [
+   "Chalkboard picture cards: offside or not, which ref signal, name the formation. As a coach I'd use these with my players. But only after the daily game is solid, and only as a few cards mixed into the draw, not a new mode",
+   "The anonymous counter that re-sorts difficulty from real results. Right now 'hard' is one person's guess, and in a month the data will be better than any guess",
+   "After you go out, let me scroll through the rest of today's cards with answers, no scoring. Half the fun of the group chat is arguing about card 14",
+   "Women's club cards beyond NWSL (WSL, Women's Champions League) mixed into existing categories, if official sources hold up",
+   "Dark mode. Nice for night games, not a reason anyone plays"
+  ],
+  "dont_build": [
+   "Accounts, leaderboards, friends lists. The group chat is the leaderboard",
+   "Timers. They punish people who read the sentence, and reading is the point",
+   "Hints, jokers, second lives, 'watch an ad to continue'. The second chance kills the stakes that make it work",
+   "Endless or practice mode. One run a day is why I come back tomorrow",
+   "A big stats dashboard. My streak and my last 7 days, at most. Nobody needs a win-rate pie chart",
+   "Player photos or likenesses. Legal headache, and it turns into a face quiz",
+   "A separate 'Women's' category as the answer to balance. Mix it in everywhere instead",
+   "More categories before the existing ones are bulletproof. 1,400 accurate cards beat 3,000 shaky ones",
+   "Achievements, badges, confetti, sound effects you can't turn off"
+  ],
+  "roadmap": [
+   {
+    "step": "Ship the daily 18 with the seeded same-for-everyone draw, the ball board, the locked middle tile, one-miss-out and banked goals",
+    "why": "It's the whole product. Everything else is decoration until this loop works and feels good in two minutes"
+   },
+   {
+    "step": "Add the three-line share text with ball rows and the 🟥 marker",
+    "why": "The group chat is your only marketing and your leaderboard. Without the share, nobody brings a friend"
+   },
+   {
+    "step": "Write the draw rules: men's/women's balance, Kid Slang easy-tier only, no two cards from the same category on one ball",
+    "why": "The draw decides who the game is for more than any category list does. Cheap to write, expensive to fix after people decide it isn't for them"
+   },
+   {
+    "step": "Audit every 'current' and dated card, stamp the time-sensitive ones, and cut the ones you can't keep fresh",
+    "why": "Accuracy is the brand. One stale roster card shared with mockery does more damage than 100 good cards earn"
+   },
+   {
+    "step": "Add the tiny flag-this-card link on the answer screen",
+    "why": "Turns the sharpest, most annoying players (like me) into free fact-checkers instead of critics"
+   },
+   {
+    "step": "Add the anonymous right/wrong counter and re-sort difficulty after a few weeks",
+    "why": "Makes easy, medium and hard honest without the owner guessing, and it's what keeps a Hat trick rare but possible"
+   },
+   {
+    "step": "Pilot 10 to 20 chalkboard picture cards (offside, signals, field markings) inside the normal draw",
+    "why": "It's the one idea that makes this better than every other text trivia game, and it plays to people who know the game from the pitch, not from Wikipedia. Test it small before building more"
+   }
+  ],
+  "verdict": "The loop is right and I'd play it daily, but it lives or dies on two things you can't fake: every card has to be accurate, and the daily draw has to treat the women's game as part of soccer, not a side category. Get those right before you build anything else."
+ },
+ {
+  "group": "pro",
+  "gender": "man",
+  "persona": "Reid Halloran, 29, center back, six MLS seasons (Real Salt Lake, then Minnesota on loan, then two years at Tacoma in USL after my second ACL). Retired last winter, now coaching a U13 boys' team in Tacoma and doing club scouting reports on the side.",
+  "first_week": "Monday: my old RSL roommate drops the link in our group chat with \"Brace. Beat that.\" I open it at 6:40 a.m. in the car before training. The cabinet look makes me grin, it feels like the bowling alley in Ogden. First ball goes fast: an MLS card, a rules card about the keeper and the 8 seconds (I know that one cold), a Kid Slang card I guess right because my players say \"cooked\" forty times a session. Second ball I go out on a Liga MX club nickname. Fine, I didn't know it. It shows me the answer and the means line and I actually learn something. One goal. I text the chat \"Goal. Liga MX got me.\" Tuesday: hat trick attempt dies on card 11, a Bundesliga question I'm sure is right... then I check and I'm wrong. Humbling, good. Wednesday: I go out on card 3, an easy one, because I fat-fingered the button next to the one I meant. That's the day I almost quit. Nil, on an easy card I knew. Thursday I come back anyway because Marco posted a Brace and I can't let a winger beat me. Friday: a rules card about a dropped ball restart. I'm 90 percent sure the answer is phrased slightly off from the actual Law. If that card is wrong, I'm out for good and I'll tell everyone why. It's right, I check the IFAB app. Respect goes up a lot. Saturday I'm at a tournament and forget until 9 p.m., play it in the hotel, get a Brace. Sunday the hat trick still hasn't happened and that's exactly why I'll open it Monday.",
+  "play_daily": "Yes, but conditionally. It's two minutes, it has a real ending, and my old teammates are competitive idiots, so the group chat does the retention for you. I'd stop the first time I catch a factually wrong card, or a \"hard\" card that's just random obscure stats instead of real knowledge, or if I lose a day to a fat-finger tap twice.",
+  "share": "Yes, every day I score, and honestly more on Nil days because losing is funnier. To the old RSL/Minnesota group chat (nine guys, still talk daily), my brother who played D3, and the parent of one of my U13s who's a huge Liga MX guy. What makes me more likely: the share shows exactly where I went out (one 🟥 in a row) so guys can roast me, and it's short enough to read in a notification preview. Even better if it names the category that killed me (\"out on Rules\"), that's what starts the argument. What makes me less likely: anything that spoils the answer, a long emoji wall, or a link that looks like tracking junk. Keep it to the number, the result, the rows, the URL.",
+  "love": [
+   "One miss ends it. That's soccer: one mistake at the back and the day is over. It makes every card matter",
+   "Same 18 cards for everyone. The argument in the group chat is the whole point",
+   "Rules cards from the actual Laws of the Game. Most soccer trivia gets the Laws wrong, and pros notice instantly",
+   "The means line after you answer. Learning the one thing I didn't know is why I'd respect it instead of resenting it",
+   "Picking which pentagon to answer from the hook word. That's a real decision: do I take the Serie A card now while I'm fresh?",
+   "The middle tile as the shot on goal after the build-up. Keep it, it gives each ball a little climax",
+   "MLS and NWSL sitting next to the EPL as equals, not as a novelty category",
+   "No 'Great job!' text. Dry voice, no hype. It feels like it was made by someone who actually watches the game"
+  ],
+  "turn_offs": [
+   "Any wrong fact, especially a rules card. One bad card and I'm gone and I'm telling the chat why",
+   "Stale 'current' facts: managers sacked in October and the card still names them. Date-stamp anything that can change or leave it out",
+   "Fake hard: obscure numbers (who scored the 73rd minute goal in a 2011 cup game) instead of real insider knowledge like Law nuance, tactical terms, women's game history",
+   "Losing a day to a mis-tap. Three buttons close together on a phone at 6 a.m. will happen",
+   "Slow animations between cards. If the pentagon fly-in takes more than a second, I'll feel it every single card",
+   "Kid Slang deciding my perfect day more than once a week. Once is funny, twice is annoying",
+   "Any hint of cutesy 'girl power' or 'ladies' framing on NWSL cards. Just treat it as soccer"
+  ],
+  "must_have_v1": [
+   "Bulletproof cards: every rules card checked word for word against the IFAB text, and every 'current' fact dated or cut. Plus a tiny way to say 'this card is wrong' (a mailto link is enough) so the community fixes things for you",
+   "The daily 18, same for everyone, resetting at local midnight, with a countdown to tomorrow once you're out",
+   "When you go out: show the card you missed, the right answer and its means line. That's the moment that teaches and the moment that makes me come back",
+   "One-tap share text: Triviela #N, the rows with the 🟥 where you went out, the result word, the URL. Nothing else",
+   "Fat-finger protection without a second chance: big, well-spaced buttons and a short dead zone so a tap during a transition doesn't count"
+  ],
+  "later": [
+   "Anonymous right/wrong counter that re-sorts difficulty. My 'hard' and a soccer mom's 'hard' are different things, and real data beats your guess fast",
+   "A tiny local record on the device: days played, best result, hat tricks. No account, no streak shaming",
+   "Picture cards, starting with ref signals and field markings only. They're unambiguous",
+   "Offside picture cards only once you can draw them so nobody can argue the pixel positions. Arguments about a rendering bug kill credibility",
+   "Maybe a 'yesterday's toughest card' reveal, but only after the counter exists"
+  ],
+  "dont_build": [
+   "Accounts, leaderboards, friends lists. The group chat is the leaderboard",
+   "Jokers, hints, extra lives, 'watch an ad to continue'. The second you can buy back a miss, the Brace means nothing",
+   "Endless mode, practice mode, pick-your-category mode for the daily. It splits the shared day",
+   "An archive of past days. One a day is the hook",
+   "Push notifications. My group chat already does that job",
+   "Sound on by default, confetti, celebration text",
+   "A 'pro' or 'expert' difficulty mode. Just make the hard cards actually hard",
+   "A basics category in the shared daily pool. Fine somewhere else, but if it dilutes the 18 the day gets soft"
+  ],
+  "roadmap": [
+   {
+    "step": "Audit the cards before anything else: every Laws card against the IFAB text, every 'current' fact dated or cut, kill hard cards that are just obscure numbers",
+    "why": "Credibility is the whole product for anyone who knows the game. One wrong card spreads through a group chat faster than any feature"
+   },
+   {
+    "step": "Ship the daily 18 with the six-tile ball, middle tile last, one miss ends it, local midnight reset",
+    "why": "It's the core loop and it already works on paper. Nothing else matters until people are playing the same day"
+   },
+   {
+    "step": "Out screen: the missed card with the answer and means line, plus the countdown",
+    "why": "Turns a loss into learning and gives a reason to come back tomorrow, at nearly zero build cost"
+   },
+   {
+    "step": "Share text with the 🟥 position, and fix button spacing and the transition dead zone",
+    "why": "Sharing is your only growth channel, and a fat-finger loss is the fastest way to lose someone"
+   },
+   {
+    "step": "Add the 'this card is wrong' mailto and cap Kid Slang at one card per day",
+    "why": "Cheap error catching from real players, and keeps the mixed pool fun instead of rigged against one side"
+   },
+   {
+    "step": "Add the anonymous right/wrong counter and re-sort difficulty after a few weeks of data",
+    "why": "Your easy/medium/hard tags are guesses. Real results make the 6/6/6 split fair across kids, parents and ex-pros"
+   },
+   {
+    "step": "Only then try picture cards, starting with ref signals and field markings",
+    "why": "New content type, real appeal, but only worth it once the basic loop has proven people come back daily"
+   }
+  ],
+  "verdict": "I'd play it every morning and text my old teammates daily, as long as every card is right, the hard ones are hard for real reasons, and a mis-tap never costs me the day."
+ },
+ {
+  "group": "rec",
+  "gender": "woman",
+  "persona": "Jess Okafor, 35, dental office manager in Tacoma, two kids (9 and 6), center back for a Sunday women's over-30 rec team called the Nutmegs, Arsenal fan because of her dad, 25 minutes each way on the Sounder train to Seattle",
+  "first_week": "Monday: Dana, our keeper, drops the link in the Nutmegs WhatsApp with \"⚽⚽ Brace, beat that.\" I open it on the train at Puyallup. The cabinet look gets a smile out of me, it feels like the Ms. Pac-Man machine at the pizza place. Ball one: Rabona, Arsenal, some Gen Alpha word I'd have to ask my 9-year-old about, a throw-in rule. I get all six and the ball goes black. Genuinely a little thrill. Ball two, I tap a Bundesliga tile, guess, out. One goal. Fine. I don't share, I just lurk.\n\nTuesday: out on the fourth card of the FIRST ball, a Liga MX club nickname. Forty seconds and my day is over, train hasn't even left Sumner. Nil. I felt stupid, not challenged. If that had happened Monday I would never have come back.\n\nWednesday: Brace. I screenshot nothing, I hit share and it pastes into WhatsApp. Two other Nutmegs start playing because of me. This is the day it becomes a thing.\n\nThursday: tunnel, my phone kills Safari, I come back and if it made me start over or ate my run I'd be furious. This is make-or-break and nobody will think about it until it happens.\n\nFriday: Our midfielder gets a Hat trick and the chat goes nuts. I want to know what card got me (a Ligue 1 one) so I can whine about it.\n\nSaturday: no train, kids' games, I forget. Sunday: we all play it at the pub after our match and argue about the offside card. That's the ritual.\n\nBy the end of the week I'm a weekday player, not a seven-day one. And honestly, whether I'm still here in week three depends entirely on how often ball one ends me.",
+  "play_daily": "Maybe, leaning yes on weekdays. It fits my train ride perfectly (18 cards is about 4 minutes) and the team chat gives me a reason. But one miss ends the day, and that's brutal for a casual fan when the misses come from leagues I don't follow. Two Nils in a week and I quietly stop. If ball one is reliably doable for someone who watches Arsenal on Saturdays and plays on Sundays, I'm in daily.",
+  "share": "Yes, to the Nutmegs WhatsApp group, about 14 women, and sometimes to my brother, who is a smug Spurs fan. I'd share a Goal or better, and I'd share a Nil only if it's funny, like if the text says what got me (\"out on Liga MX\"). More likely if it pastes cleanly in one tap and looks good in WhatsApp, not just iMessage. Less likely if it's long, has a big URL preview card that clutters the chat, or reads like an ad. Three lines max. Wordle trained us all.",
+  "love": [
+   "The cabinet look. It's charming and not trying to be a sportsbook app",
+   "The means line after each answer. I actually learned the keeper-holding-the-ball rule and repeated it at practice",
+   "The women's game is in there for real, NWSL and international women's, not a token category",
+   "Goal, Brace, Hat trick as the result names. Every soccer person gets it instantly",
+   "Odd neighbors on one ball. A Scottish club next to a trick move is fun, like a pub quiz with no theme",
+   "No account, no login, no email. I opened a link and played",
+   "A clean ending. I'm done, I close it, I get off the train"
+  ],
+  "turn_offs": [
+   "Getting knocked out on the first ball by an obscure-league card. That feels like I wasn't invited, not like I failed",
+   "Losing my run when my phone closes the tab in a tunnel",
+   "Long animations or a slow fireworks moment eating my 5 minutes. A quick satisfying thud is enough",
+   "Sound that plays by default on a train",
+   "Tiny pixel text I have to squint at with one hand on the train pole",
+   "Anything that nags: notifications, streak guilt, \"you missed yesterday!\"",
+   "Too much Gen Alpha slang. One per day is cute, three and I feel like I'm doing my kid's homework",
+   "If the hook word basically gives away the answer or is so vague I don't know what I'm tapping into"
+  ],
+  "must_have_v1": [
+   "The daily 18, same for everyone, with a clear reset time and \"come back tomorrow\" when I'm done",
+   "Ball one truly easy for a casual fan, tested on people like me, not on the person who wrote the cards",
+   "Save my run mid-ball so a dead tab, a tunnel or my stop arriving never costs me the day",
+   "One-tap share that pastes short and clean in WhatsApp and iMessage",
+   "After I'm out, show me the card that got me with the right answer and its means line"
+  ],
+  "later": [
+   "Chalkboard picture cards, especially offside and ref signals. Rec players argue about offside every single week, this would be the most-shared card type",
+   "A basics category so the 6-year-old soccer mom on my kid's team can score a goal too",
+   "The anonymous counter so \"easy\" means easy for real people, not the editor",
+   "Dark mode for the 6 p.m. train home",
+   "A simple streak or week view of my last 7 results, quiet, no guilt"
+  ],
+  "dont_build": [
+   "Accounts, leaderboards, friend lists. The WhatsApp chat IS the leaderboard",
+   "Endless or practice mode. It kills the \"one shot a day\" tension that makes the share mean something",
+   "Hints, jokers, second lives, ad-to-continue. Keep it honest",
+   "Push notifications",
+   "The middle-tile lock, unless the middle card is the hardest of the six. Since I must answer all six anyway, order barely matters, so the lock is a rule with no real choice behind it. If the middle is the toughest card, keep it, it's the shot on goal. Otherwise cut it",
+   "Category filters or \"pick your leagues.\" The random mix is the charm, just make ball one fair",
+   "An archive of past days at launch. Nice someday, not needed",
+   "Big end-of-day stats screens. I want my result, the card that got me, and the share button. Done"
+  ],
+  "roadmap": [
+   {
+    "step": "Ship the daily loop on the existing cabinet: date-seeded 18 cards, three balls ordered easy, medium, hard, one miss ends the day, Nil/Goal/Brace/Hat trick",
+    "why": "This is the whole game. Everything else is decoration until this works"
+   },
+   {
+    "step": "Save progress after every answer and lock the day once it's over",
+    "why": "Phones kill tabs constantly on trains. Losing a run once means losing a player for good"
+   },
+   {
+    "step": "One-tap share with a three-line result, tested by pasting into WhatsApp and iMessage on a real phone",
+    "why": "Sharing is how I found it and how my team found it. It's the only growth plan you have without ads or accounts"
+   },
+   {
+    "step": "End screen: the card that got me, its right answer and means line, and a countdown to tomorrow",
+    "why": "Learning the fact softens the miss, and the countdown is the reason I come back"
+   },
+   {
+    "step": "Mix rules for the daily draw: ball one only from widely known areas (EPL, World Cup, rules, NWSL, lingo), max one deep-cut league per ball, max one Kid Slang card per day",
+    "why": "Fairness on ball one decides whether casual fans stay. This is a few lines of code, not new content"
+   },
+   {
+    "step": "Playtest one week with ten non-nerds (rec players, soccer moms) before launch and re-tag what they miss",
+    "why": "Easy as judged by a careful editor is not easy for me on the train. Cheaper than building the counter first"
+   },
+   {
+    "step": "After launch: the anonymous difficulty counter, then chalkboard offside and ref-signal cards",
+    "why": "Real data fixes tagging at scale, and picture cards are the one new thing that would make my team argue and share more"
+   }
+  ],
+  "verdict": "I'd play it on the train most weekdays and text my Brace to the Nutmegs, as long as ball one doesn't punish casual fans and a dead tab never eats my run, so build those three things well and almost nothing else."
+ },
+ {
+  "group": "rec",
+  "gender": "man",
+  "persona": "Dave Okafor, 35, HVAC estimator in Renton, two kids (7 and 4), center back for an over-30 Sunday league team called Hairy Legs FC, casual Arsenal fan since FIFA 05, rides Link light rail 22 minutes each way",
+  "first_week": "Monday: our left back drops the link in the team WhatsApp with \"nerd thing but fun.\" I open it at Tukwila station. The cabinet looks great, I get it in two seconds without instructions. First ball: I tap \"Rabona\" because I know it, then \"Rangers FC,\" then a Liga MX nickname I've never heard of and I'm out. Nil, four cards in, 90 seconds total. I'm annoyed, and the means line under the answer was actually interesting, which annoys me more. I don't text it. Tuesday: I open it partly out of spite. I get a full ball (the GOAL moment better feel good) and die on a Bundesliga card. One goal. I text \"⚽ Goal\" to the group chat because Kev posted Nil. Wednesday: signal drops in the tunnel past SODO mid-ball. If my run is gone when it comes back, honestly I'm done with the game right there. Assuming it saved, I finish at Westlake. Nil again on a hard card in ball one, and that's when I notice the problem: a hard card in my first six feels like getting sent off in the warm-up. Thursday: Brace. I screenshot nothing, I copy the text and send it to the group and to my brother in Manchester, who replies \"who made this lol\" and then posts his own an hour later. That's the hook. Friday: Kid Slang card shows up, \"The halftime orange slices were ____.\" I get it right because my nephew says \"mid\" about everything and I'm weirdly proud. Weekend: I skip Saturday (kids' games), play Sunday morning before my match. By the end of the week it's a 3-minute train habit, and the group chat has four guys posting. If I'd had three Nils in a row early, there'd be zero.",
+  "play_daily": "Yes, on weekday trains, as long as two things hold. I usually score at least one goal, and a run survives a dead tunnel or reaching my stop. One miss ends the day is the right stakes, but if it ends my day on card 2 with an obscure club nickname too often, I stop opening it by week two.",
+  "share": "Yes, to the Hairy Legs FC WhatsApp and my brother in Manchester. I'd send a Goal or better every time, and a Nil only if the red card makes it funny. The 🟥 row is great for that: \"⚫⚫⚫🟥\" says \"I was close\" without a word. More likely if the text is short, copies in one tap and pastes clean into WhatsApp (no weird spacing, no long URL). Less likely if it's a screenshot, a long link, or if it gives away the card that got me (spoilers start arguments in the chat, the wrong kind). Hat trick should be rare enough that sending one feels like bragging rights.",
+  "love": [
+   "One miss ends it. Real stakes, fast, and it fits exactly one train ride",
+   "Picking my tile by the hook word. Taking Rabona first because I know it feels like choosing which defender to beat",
+   "The means line after answering. I actually learned the keeper six-second rule change from it and repeated it at my match",
+   "Goal, Brace, Hat trick as the result names. Every footballer gets that instantly",
+   "No account, no login, no ads, no notifications. It just opens",
+   "The dry voice. It reads like a ref's report and that's funny to me",
+   "The odd neighbors, a Scottish club next to a trick move. That randomness is what makes it feel like pub quiz, not homework"
+  ],
+  "turn_offs": [
+   "Hard cards in the first ball. Getting knocked out on card 2 by something I could never know feels unfair, not difficult",
+   "Losing my run because the train went underground or I closed the tab at my stop",
+   "Easy cards that are only easy if you follow Liga MX or Ligue 1. Easy has to mean easy for a guy who watches some EPL and the World Cup",
+   "Stale current facts (managers, champions). One wrong-answer-that-was-actually-right and I stop trusting it",
+   "Anything that wants my email, a login, or push notifications",
+   "Picture cards I have to squint at on a moving train",
+   "Sound that plays without me asking. I'm on public transit",
+   "A streak counter that guilts me for skipping Saturday when I'm at my kid's game"
+  ],
+  "must_have_v1": [
+   "Same 18 cards for everyone each day, rolling over at local midnight, with a day number",
+   "Balls ordered by difficulty: ball one easy, ball two medium, ball three hard. A first goal should be likely, a hat trick should be rare",
+   "Run saved on the phone so a dead tunnel, a locked screen or a closed tab doesn't wipe it, plus offline play once loaded",
+   "One-tap share text that pastes clean into WhatsApp and iMessage: number, goal emoji, result name, the ⚫ rows with 🟥 where you went out, short link",
+   "A clean end screen: your result, the card that ended you with its answer and means line, and nothing else (no stats wall)"
+  ],
+  "later": [
+   "The anonymous right/wrong counter so cards re-sort into the right tier. That's what fixes my Liga MX-on-easy complaint without Morg hand-tuning it",
+   "A tiny personal record on the end screen: goals this week, best result. No streak guilt",
+   "A handful of chalkboard picture cards (offside yes/no, ref signals) once the daily loop is proven, and only if they read at a glance on a small screen",
+   "Dark mode. Nice on a 6am train, not a launch blocker",
+   "A basics category, mixed into the easy tier, so my 7-year-old can play my phone with me in two years"
+  ],
+  "dont_build": [
+   "Leaderboards or accounts. The group chat is the leaderboard",
+   "Endless mode, practice mode or replay-today. One run a day is the whole point",
+   "Jokers, hints, skips, extra lives. They kill the stakes that make a Goal mean something",
+   "Timers. I'm on a moving train with one hand on a pole",
+   "Category picking for the daily. The random mix is the fun, and letting me choose makes my result incomparable to my brother's",
+   "An archive of past days at launch. Nobody asked, and it eats content",
+   "Push notifications or emails. I'll come back if it's good",
+   "Animated celebrations longer than a second. The Goal moment should land fast, then let me get on with it",
+   "Worrying about running out of cards. 18 a day burns about 540 a month, so 1,400 lasts ~11 weeks, but I won't remember a card I saw three months ago. Recycle old cards rather than slowing down or rushing approvals"
+  ],
+  "roadmap": [
+   {
+    "step": "Daily seed: the same 18 cards for everyone, numbered, local-midnight rollover",
+    "why": "Without the shared day there's nothing to compare in the group chat, and comparing is the whole reason I'd share"
+   },
+   {
+    "step": "Order the balls easy, medium, hard, and check the easy tier with a casual-fan eye",
+    "why": "This decides whether a normal player gets a first goal most days. Lots of Nils early on and you've lost me in week one"
+   },
+   {
+    "step": "Save the run mid-play and make it work offline",
+    "why": "Trains go through tunnels and people reach their stop. Losing a run once is enough to quit"
+   },
+   {
+    "step": "Share text plus the end screen (result, the card that ended you with its means line, nothing more)",
+    "why": "The share is the growth engine, and the means line on the killer card is the bit I actually remember and repeat at my match"
+   },
+   {
+    "step": "Soft-launch to two or three group chats for two weeks, and watch which days produce Nils",
+    "why": "Real results will tell you which easy cards aren't easy faster than any of us guessing"
+   },
+   {
+    "step": "Add the anonymous right/wrong counter and let tiers re-sort",
+    "why": "It fixes fairness automatically and keeps Morg approving content, not tuning difficulty by hand"
+   },
+   {
+    "step": "Only then, a few chalkboard picture cards, and decide on the locked-middle twist",
+    "why": "On the middle tile: it's fine if the lock shows clearly and that tile is the hardest of the six, so it really is the shot. If it's just an arbitrary lock, drop it. Neither of these should hold up launch"
+   }
+  ],
+  "verdict": "I'd play this every weekday and post Goals to my Sunday league chat, but only if the first ball is fair, a run survives a tunnel, and the share pastes clean. Everything else can wait."
+ },
+ {
+  "group": "lifer",
+  "gender": "woman",
+  "persona": "Peggy Szabo, 58, retired middle-school librarian in Burien, WA. Grew up in Kearny, NJ, watched the 1982 and 1986 World Cups on Spanish-language TV with her Hungarian dad, went to the 1999 Women's World Cup final at the Rose Bowl, Sounders season ticket since 2009. Granddaughter Junie (9) plays U10 rec in Des Moines.",
+  "first_week": "Monday: my son texts me the link with \"this is your thing Mom.\" I open it with coffee before my walk. The cabinet makes me smile, it looks like the Galaga machine at the Kearny bowling alley. First thing I do is squint. Glowing green pixel text on black at 7 a.m. with my readers on the kitchen counter is a problem. I go get them. First ball: Rabona, Rangers FC, a Laws card, fine, fine, fine. I get five, unlock the middle, it's an offside question, I get it. GOAL. I actually say \"GOAL\" out loud to the cat. Second ball I go out on a Kid Slang card. \"Mid.\" I have no idea what mid means. I'm annoyed, honestly a little insulted, but the answer fills in and the means line tells me, and I screenshot it and send it to Junie's mom to ask Junie if that's right. Tuesday: I go out on ball one on a Liga MX club nickname. Nil. That stings more than I expected because the game is over by 7:04 and there's no do-over. I respect that, I don't love it. Wednesday: Brace. I text my sister Ilona in Jersey, she's a Red Bulls lifer, and she plays it that night. Now it's on. Thursday: Nil again, on a \"since 2025\" rule change. I think: I watched Platini play and I'm getting beat by a rule from last year. Friday: one goal, and a legends card about the 1999 final was in it and I felt like the game knew me. Saturday at Junie's game I show her the ball on my phone between halves and she taps the slang tile and gets it instantly and laughs at me. That's the best moment of the week and it wasn't on purpose. Sunday: Ilona and I are trading results every morning. If I'd had three Nils in a row instead of two, I'd have quit by Thursday.",
+  "play_daily": "Yes, as a coffee habit next to Wordle, but only if the first ball is truly easy. With one miss ending the day and 18 cards from every corner of the sport, a lifelong fan will still go Nil on ball one too often, and too many Nils in a row and I'm gone. Being knocked out early is fine. Being knocked out early every day is a reason to stop.",
+  "share": "Yes, every day it's a Goal or better, to my sister Ilona in New Jersey and to a group text of four women from Section 121 at Lumen. I'd send a Nil to Ilona only, because she'd laugh. More likely if the text is short, has the number so we know it's the same day, and doesn't spoil anything. The ⚫ rows with a 🟥 where I went out are good. It tells the story without words, like Wordle squares. Less likely if it's long, has a link with tracking junk, or brags in words like \"I crushed it!\" Never send me a notification asking me to share. And keep \"Hat trick\" for the perfect day. That's a word I'd text with pride.",
+  "love": [
+   "The cabinet look. It's charming and not childish, and it reminds me of arcades I actually stood at",
+   "Saying GOAL out loud when the ball fills. The middle tile as the shot on goal makes the ball feel like a ball and not a grid of six",
+   "The deadpan workbook sentences. I was a librarian, I appreciate a dry sentence",
+   "Learning the answer even when I lose. The means line on the card that got me is what turns a loss into something I tell someone about",
+   "Same 18 for everyone. That's what makes it something Ilona and I can argue about",
+   "Nil, Goal, Brace, Hat trick. Real soccer words, no made-up points",
+   "One run a day and done. I don't want a game that eats my morning",
+   "Cards about legends, old World Cups and the women's game from before it was popular. Those are where I have the edge over the kids, and I want that edge to exist"
+  ],
+  "turn_offs": [
+   "Tiny pixel text. I'm 58. If I need my readers AND I still have to squint at glowing green on black, I'll play twice and quit. Pixel fonts are fine for the sign, not for a sentence I have to read",
+   "Being knocked out on ball one by Gen Alpha slang or a Liga MX nickname day after day. One miss ends it is fair, but the easy ball has to be easy for everyone, not easy for a 13-year-old",
+   "Too many cards about this season, last season, or rule changes from 2025. If half the deck is current events, the people who've watched the longest get punished for it",
+   "Anything that asks me to sign up, make an account, or give an email",
+   "Push notifications, streak guilt, flames, 'don't lose your streak!'",
+   "Hooks on the tiles I can't read. If 'Rangers FC' fits but a long one gets cut off or shrunk to nothing, that's a broken tile to me",
+   "Ads. Even one. I'd assume it's harvesting something",
+   "Green-only and red-only meaning. My husband is colorblind. Keep the check and the X"
+  ],
+  "must_have_v1": [
+   "Readable sentence text at real phone size for middle-aged eyes: bigger and plainer than the sign, high contrast, no squinting. Keep pixel style for the marquee and numbers",
+   "The daily 18 with the first ball made of genuinely easy cards for a broad crowd, not just for kids or just for diehards. That one decision is what keeps me past day 4",
+   "When I go out, the card that got me fills in with the right answer and its means line, then a clean end screen with my result. No retry",
+   "A one-tap share text: game number, ⚽ count, result word, the ⚫ rows with 🟥, the web address. Nothing else",
+   "The day changes at my local midnight and remembers I already played, with no account"
+  ],
+  "later": [
+   "Chalkboard picture cards: is this offside, name this formation, which ref signal. I'd love these, but after launch, and only a few",
+   "The anonymous counter that re-sorts difficulty from real results. It quietly fixes my biggest worry, the 'easy' ball that isn't, without anyone hand-guessing",
+   "More legends and history cards, especially old World Cups, old kits and the early women's game, so every ball has something for the long-timers",
+   "A tiny countdown to tomorrow's ball on the end screen",
+   "A basics category for new families, mixed into the easy ball, not its own mode"
+  ],
+  "dont_build": [
+   "Accounts, leaderboards, profiles, avatars. My leaderboard is my sister",
+   "Streak counters and stats pages. A streak turns a pleasure into a chore and I'll resent it the first time I break it",
+   "Second chances, jokers, hints, extra lives, practice mode or endless mode. The clean ending is the whole appeal",
+   "Dark mode. The screen is already a black CRT. Spend that time on font size instead",
+   "Category picking. The random mix is the fun, and letting me choose would let me hide from slang and Liga MX",
+   "Congratulations text, confetti, sound by default. The ball filling in black is enough",
+   "An app store app. A Home Screen icon is plenty",
+   "More categories before the existing ones are balanced across eras. Fourteen leagues is already plenty, it's the mix that needs work, not the count"
+  ],
+  "roadmap": [
+   {
+    "step": "Ship the daily loop: same 18 cards for everyone by date, three balls, middle tile unlocks last, one miss ends it, goals banked, result word at the end",
+    "why": "That's the whole game. Nothing else matters until this feels right every morning"
+   },
+   {
+    "step": "Readability pass on real phones with older eyes: sentence size, contrast, hook words that fit the tiles, check and X kept for colorblind players",
+    "why": "It costs little and it's the difference between me playing daily and me giving up on day two"
+   },
+   {
+    "step": "Tune the easy ball: make the first six cards ones a casual fan, a parent or a kid could each get, and keep slang and niche club nicknames out of it",
+    "why": "One-miss-ends-it is only fair if ball one is fair. Too many Nils in a row is how you lose people like me"
+   },
+   {
+    "step": "Losing card shows the answer and its means line, then the end screen with the share button",
+    "why": "Learning something from the miss is what makes a loss feel worth it, and the share is how the game spreads"
+   },
+   {
+    "step": "Share text: number, ⚽ count, result word, ⚫ rows with 🟥, web address",
+    "why": "This is the whole marketing plan. My sister found it because I texted her, not because of an ad"
+   },
+   {
+    "step": "Balance content across eras so every ball has a legends, history or women's-game card next to the current-season ones",
+    "why": "Each generation needs a card where they have the edge, or the old-timers feel like visitors"
+   },
+   {
+    "step": "Then the anonymous difficulty counter, then a handful of chalkboard picture cards",
+    "why": "Both are worth it but neither is needed on day one. The counter fixes difficulty with real data, the pictures add delight once the basics hold up"
+   }
+  ],
+  "verdict": "I'd play it every morning and text my sister the result, as long as I can read it without squinting and the first ball doesn't knock me out over a word my granddaughter invented last Tuesday."
+ },
+ {
+  "group": "lifer",
+  "gender": "man",
+  "persona": "Gary Pruitt, 58, retired Boeing machinist in Everett, born in Stockport, moved to Seattle at 11 in 1979. Watched the NASL Sounders at the Kingdome, his first real World Cup was Spain '82. His granddaughter Maddie, 11, plays U12 club in Snohomish.",
+  "first_week": "Monday: my son texts me a link with \"Dad, this is your thing.\" I open it at the kitchen table with coffee and my readers on. The cabinet look makes me grin, it's the Pac-Man machine at the bowling alley in Lynnwood. No instructions, but six pentagons on a ball is obvious enough. I tap \"Rangers FC\" first because my uncle was a Rangers man. Got it. \"Rabona\" is fine. Then \"rizz\" or some such and I just stare at it. Guess wrong. Day over, 0 goals, Nil, on card 3, done in 90 seconds. I'm annoyed, honestly, and nearly don't come back. Tuesday: I come back anyway because I want revenge, and this time I leave the slang tile for last. That's when I realize choosing the order is the actual game. I score one goal and go out on a 2025 NWSL question. The means line teaches me something, which I like. I text my brother Phil in Manchester \"Triviela #43 ⚽ Goal\" and he replies \"what's this then.\" Wednesday: a 1986 World Cup card and a Laws of the Game card on the same ball. That's my morning made. Brace. I text the old Sunday league group chat (five blokes in their 50s and 60s). Thursday: Maddie is over, I hand her the phone and she does the slang one for me in two seconds and laughs at me. That's the best moment of the week, honestly. Friday: the text is too small on the second ball and I squint at a long Liga MX sentence. Go out. Saturday: I'm in Phil's group chat comparing scores, three of us playing now. Sunday: I'm hooked, but I'd quit fast if I went out on card 1 or 2 three days in a row on current-season roster stuff I can't possibly know.",
+  "play_daily": "Yes, as a coffee ritual, if it takes under five minutes and I don't feel cheated. The one-miss rule is fine (that's football, one mistake and you're out) but only if the early cards are fair. If the easy ball keeps throwing slang or this-season managers at me, I'll drift off within two weeks.",
+  "share": "Yes. To my brother Phil in Manchester, the old Sunday league group text, and my son. Maddie too, so she can rub it in. The short Wordle-style block is right, and the 🟥 where I went out is perfect, it tells the story without spoiling anything. I'd share more if the result showed how far I got (three rows of ⚫, with the red card in its place) so a gallant Nil at card 5 looks different from a Nil at card 1. I'd share less if it had a long link, a brag graphic, or anything that gives away the card for people who haven't played yet.",
+  "love": [
+   "Choosing which tile to answer. Saving the slang card for last is real strategy, and it's the bit that made me come back",
+   "The middle tile locked until the outer five are done, like a shot on goal after the build-up. Keep that",
+   "Hat trick for a perfect day. Every football person gets it right away",
+   "Odd neighbors on one ball: a Scottish club, a rule change and a 1986 card side by side, like a pub quiz",
+   "The means line after answering, I actually learn the rule change or the stat",
+   "The arcade cabinet look, it's nostalgic for someone my age",
+   "Same 18 cards for everybody, so my brother and I are playing the same match across the Atlantic",
+   "No accounts, no ads, no leaderboard. I'm 58, I don't want another login"
+  ],
+  "turn_offs": [
+   "Tiny pixel text. If I need my readers and still squint at a two-line card on the second ball, I'm done. Legibility beats the retro look every time",
+   "Getting knocked out on the easy ball by Gen Alpha slang or a current-season roster card. That isn't a skill test for me, it's a coin flip",
+   "Too much this-season stuff (who got promoted, who manages whom) and not enough history. Football didn't start in 2025",
+   "Cryptic hook words on tiles that tell me nothing, so the choice turns into a blind guess",
+   "Going out and not being told the right answer. I need the closure",
+   "Any nagging: streak-shame messages, push notifications, 'don't lose your streak!'",
+   "A wrong or ambiguous card. If I go out on a card that's actually wrong, I won't trust the game again"
+  ],
+  "must_have_v1": [
+   "The daily 18 with a day number, the same for everyone, plus the one-tap share text (rows of ⚫ with 🟥 where you went out)",
+   "Big, high-contrast, readable text at phone size for 50-plus eyes, even if the pixel font has to give a bit",
+   "Difficulty that climbs by ball (easy, then medium, then hard) and a daily mix rule: at most one slang card a day, a cap on current-season cards, and at least one or two history, legends or World Cup cards",
+   "A clean end screen: the right answer and its means line for the card you missed, the result, Share, and 'next ball tomorrow'",
+   "Bulletproof accuracy on the cards, especially time-sensitive ones. One wrong card costs you a player"
+  ],
+  "later": [
+   "Chalkboard picture cards: offside or not, name the formation, which ref signal. I'd love those, but only once the basic game is solid",
+   "The anonymous counter that re-sorts difficulty from real results, so 'easy' really means easy",
+   "A small personal record on the device: days played, hat tricks, best run. No accounts",
+   "More history depth: old World Cups, old kits, NASL, legends of the '70s and '80s",
+   "A basics category, mainly so grandparents and grandkids can play it together"
+  ],
+  "dont_build": [
+   "Accounts, leaderboards, friends lists. The group text IS the leaderboard",
+   "An endless or practice mode, or a past-days archive. One day, one shot, come back tomorrow is the whole charm",
+   "Jokers, hints, extra lives or 'watch an ad to continue'",
+   "Push notifications or streak guilt",
+   "Dark mode before readability is fixed. I don't care about dark mode",
+   "An app store app. A link I can save to my Home Screen is enough",
+   "Fancy share graphics or animations. Plain emoji text works in every group chat, including Phil's ancient Android"
+  ],
+  "roadmap": [
+   {
+    "step": "Ship the daily 18: day number, same seed for everyone, three balls, locked middle tile, one miss ends it, Nil to Hat trick",
+    "why": "That's the whole game. Nothing else matters until this runs every morning without a hitch"
+   },
+   {
+    "step": "Add the share text with ⚫ rows and 🟥 placement, copied in one tap",
+    "why": "Sharing is how I found it and how my brother and mates will. It's the growth plan and costs almost nothing to build"
+   },
+   {
+    "step": "Do a readability pass on a real phone at 375 wide with older eyes: font size, line length, contrast on long cards",
+    "why": "If I can't read it comfortably, nothing else you build reaches me"
+   },
+   {
+    "step": "Set the daily draw rules: difficulty by ball, at most one slang card, a cap on current-season cards, a guaranteed history card",
+    "why": "Keeps the one-miss rule feeling fair and makes every generation feel the day was partly theirs"
+   },
+   {
+    "step": "Build the end screen: show the missed card's right answer and means line, plus a countdown to tomorrow",
+    "why": "Gives closure and the learning moment, and it's what brings me back the next morning"
+   },
+   {
+    "step": "Run an accuracy sweep on every time-sensitive card and set a season-refresh routine",
+    "why": "Trust is everything in a quiz, and stale facts are the likeliest wrong cards"
+   },
+   {
+    "step": "Add the anonymous difficulty counter, then chalkboard picture cards (offside and ref signals first)",
+    "why": "Real data makes easy actually easy, and picture cards are the one addition that would make it feel like nothing else out there"
+   }
+  ],
+  "verdict": "I'd play it every morning and text my brother in Manchester, as long as I can read it, the easy ball doesn't knock me out on slang or this season's trivia, and you resist adding anything beyond one fair daily match and a clean share."
+ },
+ {
+  "group": "newfan",
+  "gender": "woman",
+  "persona": "Dani Reyes, 27, scheduling coordinator at a hospital in Kansas City. Went to a World Cup group match at Arrowhead on a friend's spare ticket in June 2026, cried at the anthems, now splits KC Current season tickets with her roommate and half-follows Arsenal because her coworker won't shut up about them. Still nods along when anyone says \"offside.\"",
+  "first_week": "Day 1 (Monday): My roommate Jess texts me a \"Triviela #1 ⚽ Goal\" with a link. I open it on my lunch break. No sign-up, no tutorial, an arcade cabinet. Cute. I stare at six pentagons for a second, then figure out I tap one. I pick \"Current\" because duh, KC Current, get it right, it goes black. Big rush. I pick \"Rabona,\" no idea, guess, wrong. Red X, shake, done. Day over at card 2. The fill-in tells me a rabona is kicking with your leg crossed behind the other one. Okay, that's actually cool. But I'm annoyed, because Jess got a Goal and I got Nil on my first day ever. If I'd known I could skip around more carefully I'd have saved the scary-word tile for last. Lesson learned.\n\nDay 2: Now I play strategically. I tap every hook I recognize first: Arsenal, Rapinoe, World Cup 2026. Leave \"Rangers FC\" and \"Pressing\" for last. I get 5 on the first ball, then the middle tile is a Laws of the Game card about the keeper holding the ball too long. I guessed penalty, it was a corner kick. Out at 5 of 6. So close it physically hurt, which is exactly why I'll be back tomorrow. I text Jess the 🟥 row because 5 black dots and a red card is funny.\n\nDay 3: First Goal. I screenshot it before I even remember there's a share button. Second ball is medium and I go out on a Serie A nickname. Fine. Banked a goal, I feel smart.\n\nDay 4: Nil again on an easy card about a Bundesliga club. That one stung, because it was tagged easy and it was not easy for me. \"Easy\" for a guy who's watched since 1998 isn't easy for me. If this happens two days in a row I start skipping days.\n\nDay 5: Goal. One of the cards was about offside and I read the means line twice. Learned more about offside from one blank than from three men explaining it at a bar.\n\nDay 6-7: I play while my coffee brews. It takes 90 seconds when I go out early, maybe 4 minutes on a good day. That's the right size. By Sunday it's a habit IF I'm getting a Goal more days than not. If I'm Nil-ing 3 out of 5 days, I'm out by week two and I won't tell anyone it exists.",
+  "play_daily": "Maybe leaning yes. The pick-your-tile board is genuinely clever for someone like me because I can play to my knowledge, and one-and-done fits my morning. But one miss ending the day only works if the first ball is truly beginner-easy. If new fans Nil most days, we quit quietly. The difference between a habit and a deleted bookmark is whether I can usually bank one goal.",
+  "share": "Yes, to two places: a group chat called \"Arrowhead Girls\" (four of us who went to the match together, all new fans) and my coworker Marcus, the Arsenal guy, but only on days I beat him. I'd share a Goal or better every time. I'd share a Nil only if it shows how close I got (5 black dots then a 🟥 is a story, a bare \"Nil\" is just embarrassing). More likely to share: the dots rows, a one-tap copy button, the soccer words (I like learning that two goals is a brace by bragging with it). Less likely: if the text is long, has a big URL preview card that clutters the chat, or reveals answers. Never: if it asks me to sign in or tag friends.",
+  "love": [
+   "Picking my own tile from hook words. That's the whole game for me: it rewards knowing what you know and makes the hard tile a choice, not an ambush",
+   "The miss still teaches me something. The means line after a wrong answer is the consolation prize and honestly the reason I trust it as a learning thing",
+   "One run a day, done in under five minutes. Respects my time",
+   "Everyone gets the same cards, so the group chat can argue about the Serie A one",
+   "Nil / Goal / Brace / Hat trick. I learn real soccer words by using them to brag",
+   "The middle tile as the shot on goal. It makes card 6 feel like a penalty kick, high drama, I'd love it",
+   "No ads, no account, no streak-guilt notifications",
+   "Women's game sits right next to the men's. NWSL and the Current showing up makes it feel like it's for me, not for my dad",
+   "The dry workbook voice is funny without trying"
+  ],
+  "turn_offs": [
+   "Going out on card 1 or 2 most days. Three Nils in a week and I stop opening it",
+   "Cards tagged easy that are only easy for lifelong fans (Bundesliga club nicknames, 1990s Serie A legends). Easy has to mean a new fan could get it",
+   "Hook words that are pure jargon I can't even guess at, so the board feels like a test I didn't study for",
+   "Kid Slang showing up in my daily. One card is a funny palate cleanser, three would feel like it's not meant for me",
+   "Any hint of accounts, leaderboards or a public ranking. I'm new, I don't want to be ranked against men who know every Ligue 1 manager",
+   "If it ever starts nagging me with notifications or a streak I'm about to lose",
+   "If the share text spoils an answer for friends who haven't played yet",
+   "Pixel text so small I squint on the train"
+  ],
+  "must_have_v1": [
+   "Same 18 cards for everyone, new each day at local midnight, numbered (#42), and the game remembers I already played today so I can't accidentally replay",
+   "Ball 1 is all easy cards, ball 2 medium, ball 3 hard, and easy is calibrated for a new fan. This alone decides whether people like me stay",
+   "On a miss: show the right answer and its means line, then let me flip through the rest of today's cards read-only to learn them. Cheap, and it turns a Nil into a lesson instead of a slammed door",
+   "One-tap copy share text with a dot row per ball and the 🟥 where I went out, no answers, short URL",
+   "Loads instantly on a phone browser with zero sign-up, and text is big enough to read one-handed"
+  ],
+  "later": [
+   "Offside picture cards on the chalkboard pitch. This is the single thing I'd most want added, because offside is the one rule every new fan pretends to understand. Even 10 good ones would be a draw",
+   "A tiny anonymous counter so easy/medium/hard re-sorts from real results. Fixes my biggest complaint without the owner hand-guessing difficulty",
+   "A quiet days-played count and goals-this-month on the result screen, no streak-loss pressure",
+   "Dark mode for playing in bed",
+   "A Basics category, but only as cards sprinkled into the easy ball, not a separate mode"
+  ],
+  "dont_build": [
+   "Practice or endless mode. The second I can play forever, the daily one stops mattering",
+   "Jokers, lifelines, extra lives or a second chance. The fix for new fans is easier first-ball cards, not a crutch",
+   "Category picker or filters for the daily. Odd neighbors side by side is the fun",
+   "Accounts, friends lists, leaderboards, global percentiles",
+   "Push notifications or streak-loss warnings",
+   "Long explanations or a tutorial screen. The board teaches itself in one tap",
+   "Archive of past days at launch. Nice someday, but it dilutes the one-a-day ritual early on",
+   "A big pile of new categories before the difficulty tags are right. Better 1,400 well-sorted cards than 3,000 badly sorted ones"
+  ],
+  "roadmap": [
+   {
+    "step": "Lock the daily engine: same 18 cards by date, numbered days, played-today memory, one miss ends it, goals banked",
+    "why": "This is the whole product. Nothing else matters until the ritual works on a phone with no sign-up"
+   },
+   {
+    "step": "Order the balls easy, medium, hard, and re-audit every easy card through a new-fan lens (could someone who started watching in June 2026 get it?)",
+    "why": "New fans going out on card 2 is the most likely way this dies. It's an editing job, not a coding job, which suits the owner"
+   },
+   {
+    "step": "Build the board with hook words, and write hooks that are guessable nouns (a club, a player, a word) not pure jargon",
+    "why": "Choosing your tile is what makes this better than a quiz. Hooks are the strategy layer, so they deserve real editorial care"
+   },
+   {
+    "step": "Miss screen: right answer, means line, then a read-only flip through the rest of today's cards",
+    "why": "Turns a Nil into learning, which is the half of the pitch that keeps new fans coming back after a bad day"
+   },
+   {
+    "step": "One-tap share text with dot rows and the 🟥, no answers, short link",
+    "why": "The group chat is the only growth engine. A Nil that shows 5 dots then a red card is shareable, a bare Nil isn't"
+   },
+   {
+    "step": "Soft launch to a few group chats, then add the anonymous right/wrong counter and let real results re-sort difficulty",
+    "why": "The owner's guess at easy won't match a 27-year-old new fan's. Real data fixes it with zero extra cards"
+   },
+   {
+    "step": "Only then: a small set of offside and field-marking picture cards on the chalkboard pitch",
+    "why": "Highest-value addition for new fans, but it's new art and new card types, so it waits until the core loop is proven"
+   }
+  ],
+  "verdict": "The pick-your-own-tile ball is a genuinely great daily hook for a new fan like me, but one-miss-and-out only works if the first ball is truly beginner-easy, so spend the effort on difficulty calibration and the miss-screen lesson, not on new features."
+ },
+ {
+  "group": "newfan",
+  "gender": "man",
+  "persona": "Danny Reyes, 27, warehouse ops supervisor in Kansas City who went to a 2026 World Cup fan fest on a whim, got hooked, now has Sporting KC season tickets in the cheap seats and watches Arsenal on Saturday mornings, and still nods along when someone explains offside",
+  "first_week": "Monday: my buddy Luis, the one guy in our group chat who grew up on soccer, texts \"Triviela #1 ⚽ Goal\" with no explanation. I tap the link on my lunch break. Cabinet looks sick, very retro. No instructions, but I figure out tap a pentagon, answer it. Ball one goes fine, it's easy stuff, and the \"means\" lines are teaching me things I was too embarrassed to Google. I score a Goal, then on ball two I tap \"Rangers FC\" and I've got nothing. Out. I'm annoyed, but it took three minutes and I learned what a rabona is. I text \"⚽ Goal\" back to Luis like I've been playing for years. Tuesday: Nil. I went out on the third card, a Ligue 1 club nickname. That stung. I nearly didn't play Wednesday. Wednesday: I start tapping the tiles I recognize first, Rules and MLS and World Cup stuff, and save the weird European ones for last. Now it's a strategy game. Brace. That's the day I'm hooked, because I made a choice and it paid off. Thursday there's an offside card in plain words, I get it right, and the means line actually explains it better than Luis ever did. Friday and Saturday I play in bed before getting up. Sunday I go out on a Kid Slang card about \"mid\" and I'm laughing too hard to be mad, and I screenshot it to my 13-year-old niece. By the end of the week three guys in the group chat are posting. That's the only reason I'll still be playing in week three.",
+  "play_daily": "Yes, as long as two things hold. First, the first ball has to be winnable for someone like me, so most days I bank at least one Goal. A Nil on card two three days in a row and I'm gone by week two. Second, my group chat has to keep posting. One miss and you're out keeps it to 2–4 minutes, which is exactly why I'd fit it in every day. Make it longer or add lives and it turns into a chore.",
+  "share": "Yes, to the \"Pitch Please\" group chat: four college friends who all got into soccer together during the World Cup, plus Luis, who's the actual fan. I'd post every Goal or better without thinking. I'd post a Nil maybe half the time, as a joke. The ⚫ row per ball with a 🟥 where I went out is what makes it worth sending, because then the guys can see I got four tiles deep into ball two and didn't just whiff. Less likely to share: if it needs more than one tap, if the text includes a long link or tracking junk, or if it gives away the hook word I died on. More likely: a number and a name like \"Triviela #42 Brace\", so it reads like a scoreline. Hat trick days I'd post with zero shame.",
+  "love": [
+   "Picking which tile to answer. That's the whole game for me. Leaving the scary European club for last is real strategy, not just quizzing",
+   "The means line after each answer. I'm a new fan who's quietly embarrassed about what I don't know, and this teaches me without making me feel dumb",
+   "Short runs. One miss and I'm done in three minutes, perfect for a lunch break or bed",
+   "Goal / Brace / Hat trick result names. They make my score sound like a match, which is way better to text than '7/18'",
+   "Random odd neighbors. A trick move next to Liga MX next to a Laws of the Game change keeps it surprising",
+   "Plain-language Rules cards. That's how I'll finally learn offside, one card at a time",
+   "The arcade cabinet look. It feels like a thing, not a quiz website",
+   "Kid Slang showing up out of nowhere. Dying on 'cooked' is a story I'll tell"
+  ],
+  "turn_offs": [
+   "Going out on card 1–3 over something obscure (a Serie A nickname, a Bundesliga stadium) more than once a week. That's how you lose new fans",
+   "Hook words that mean nothing to me. 'Rangers FC' at least tells me it's a club, but an unknown surname gives me nothing to choose with, and then picking a tile is just a guess",
+   "Not knowing whether ball one is the easy one. If hard cards can show up early, a Nil feels random, not earned",
+   "Having to remember to come back with no streak or 'played X days' number. Wordle kept me with that dumb streak",
+   "Anything that feels like it's testing whether I'm a 'real fan'. Gatekeepy questions about 1990s Serie A would make me feel like an outsider again",
+   "A share text that's long, clunky or full of links"
+  ],
+  "must_have_v1": [
+   "A fair ramp: ball one all easy, ball two medium, ball three hard, so a newbie like me usually banks a Goal and a Hat trick stays rare and earned",
+   "One-tap share: 'Triviela #N', the goal emoji, the result name, a ⚫ row per ball with 🟥 where I went out, and the short link. Nothing else",
+   "The means line after every answer, especially the card that knocked me out, so a loss still teaches me something",
+   "Hook words that tell me what kind of card it is (club, player, rule, trick move), so picking a tile is a real decision",
+   "A small stat line on the done screen: days played streak, best result, and a countdown to tomorrow's ball, saved on my phone with no account"
+  ],
+  "later": [
+   "Chalkboard picture cards, but only 'is this offside?' at first. That's the one picture I'd actually want. Formations and ref signals can wait",
+   "The anonymous counter that re-sorts difficulty from real results. Probably the best way to stop easy-tagged cards that are actually brutal from killing new fans",
+   "After the day is over, let me look at (not play) the tiles I never got to with their answers. I'm curious, but I can live without it",
+   "A Basics category, but only if the easy pool turns out too thin for new fans. Better to just make the easy tier feel basic",
+   "Dark mode. Honestly I don't care, but I play in bed so it'd be nice someday"
+  ],
+  "dont_build": [
+   "Accounts, logins or leaderboards. My group chat is the leaderboard",
+   "Lives, jokers, hints or second chances. One miss and out is what gives the share its meaning",
+   "Endless or practice mode. The second I can play unlimited, the daily one stops mattering",
+   "Category picking or favorite leagues. The random mix is what's fun, and if I only got MLS I'd never learn anything",
+   "Push notifications or an app store app. A home-screen bookmark is fine",
+   "Badges, XP, levels or unlockable cosmetics. That's mobile game junk, and it fights the clean Zach Gage vibe",
+   "Long explanations or tutorials. The means line is enough. Don't turn cards into Wikipedia paragraphs",
+   "Too many Kid Slang cards. One now and then is hilarious, but if it shows up every day, 27-year-olds feel like the game isn't for them"
+  ],
+  "roadmap": [
+   {
+    "step": "Ship the daily loop: same 18 cards for everyone by date, 3 balls of 6, tap any tile, one miss ends the day, ball one easy, ball two medium, ball three hard",
+    "why": "This is the whole game. The easy-first ramp is what keeps a new fan from bouncing after two Nils"
+   },
+   {
+    "step": "Write hook words that signal the type of card, and check that the easy pool reads fair to a newcomer, not just a 'real fan'",
+    "why": "Choosing tiles is the fun part, and it only works if the hook tells me what I'm walking into. Most new fans will judge the game on the easy tier"
+   },
+   {
+    "step": "One-tap share text with the number, result name and ⚫/🟥 rows",
+    "why": "My group chat is how I found it and why I'd stay. It should be done before anything visual is added"
+   },
+   {
+    "step": "Done screen with the missed card's means line, a streak, best result and a countdown to tomorrow, all saved on the device",
+    "why": "This turns a loss into learning and gives me a reason to come back tomorrow without needing accounts"
+   },
+   {
+    "step": "Decide the middle-tile lock by playtesting it with a few people, then keep it or drop it",
+    "why": "Shot-on-goal tension is cool, but it takes away a choice. Let real plays decide, don't argue it in theory"
+   },
+   {
+    "step": "Add the anonymous result counter to re-sort difficulty",
+    "why": "Hand-tagged difficulty will be wrong sometimes, and a mis-tagged easy card is what kills a run on card two"
+   },
+   {
+    "step": "Only then try one picture card type: offside on the chalkboard pitch",
+    "why": "It's the one rule new fans really struggle with, and a picture is the right tool for it. Build one type, see if it lands, and stop there if not"
+   }
+  ],
+  "verdict": "If ball one reliably gives a new fan like me a Goal, the means lines keep teaching me things, and the share text is one clean tap, I'd play it every morning and post in my group chat for months, so build exactly that and resist everything else."
+ }
+]
