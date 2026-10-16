@@ -315,13 +315,13 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   // (reaching further back only when a guardrail needs it), and dealt cards go to the back. So a card comes back
   // as late as the deck allows, and never within 3 months once each color has about 570 cards.
   // Guardrails: at least one women's game card and one rules card, at most 3 from one league,
-  // at most one card from each slang deck and never a red one.
+  // at most one slang card in all (Kid Slang or Parent Slang) and never a red one.
   var PER = 6, WINDOW = 24, LEAGUE_MAX = 3;
   function fits(c, got) {
     var lg = 0;
     for (var i = 0; i < got.length; i++) {
       var x = got[i];
-      if (x === c || near(x, c) || (c.sl && x.D === c.D)) return false;
+      if (x === c || near(x, c) || (c.sl && x.sl)) return false;
       if (c.lg && x.lg === c.lg) lg++;
     }
     return lg < LEAGUE_MAX;

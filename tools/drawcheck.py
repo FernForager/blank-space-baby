@@ -3,8 +3,8 @@
     python3 tools/drawcheck.py [days] [page.html]      # default 365 days of docs/index.html
 
 Replays the draw the way every phone does and checks each day's board: 6 white, 6 yellow and 6 red cards,
-at least one women's game card and one rules card, at most 3 from one league, at most one card from each
-slang deck and never a red one, and no two cards that give each other away (one's answer in the other's
+at least one women's game card and one rules card, at most 3 from one league, at most one slang card
+and never a red one, and no two cards that give each other away (one's answer in the other's
 sentence or hook, or a shared answer or hook). Then reports how far apart repeats land, checks that two
 fresh page loads deal the same boards, and times the replay.
 """
@@ -24,8 +24,8 @@ CHECK = """(days) => {
     if (!all.some(c => c.rl)) bad.push([day, 'no rules card']);
     const lg = {}; all.forEach(c => { if (c.lg) lg[c.lg] = (lg[c.lg] || 0) + 1; });
     Object.entries(lg).forEach(([k, n]) => { if (n > 3) bad.push([day, n + ' from ' + k]); mix.leagues[k] = (mix.leagues[k] || 0) + n; });
-    const sl = {}; all.forEach(c => { if (c.sl) { sl[c.D.id] = (sl[c.D.id] || 0) + 1; if (c.d === 3) bad.push([day, 'red slang', c.id]); } });
-    Object.entries(sl).forEach(([k, n]) => { if (n > 1) bad.push([day, n + ' from ' + k]); });
+    const sl = all.filter(c => c.sl); sl.forEach(c => { if (c.d === 3) bad.push([day, 'red slang', c.id]); });
+    if (sl.length > 1) bad.push([day, sl.length + ' slang cards']);
     for (let i = 0; i < all.length; i++) for (let j = i + 1; j < all.length; j++) if (T.near(all[i], all[j])) bad.push([day, 'give away', all[i].id + ' ' + all[i].w, all[j].id + ' ' + all[j].w]);
     mix.women += all.filter(c => c.wm).length; mix.rules += all.filter(c => c.rl).length; mix.slang += all.filter(c => c.sl).length;
     all.forEach(c => { if (c.id in last) gaps.push(day - last[c.id]); last[c.id] = day; seen[c.id] = 1; });
