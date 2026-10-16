@@ -82,8 +82,8 @@
   {
    "w": "Hull City",
    "means": "Won by a late goal at Wembley",
-   "ex": "Hull City beat Middlesbrough 1–0 in the 2026 play-off final",
-   "hook": "play-off",
+   "ex": "Hull City beat Middlesbrough 1–0 in the 2026 playoff final",
+   "hook": "playoff",
    "k": "club",
    "src": "https://www.premierleague.com/en/news/4664386/all-you-need-to-know-as-hull-city-are-promoted-to-premier-league",
    "d": 3,
@@ -229,7 +229,7 @@
   {
    "w": "Emirates Stadium",
    "means": "Named after its airline sponsor",
-   "ex": "Bronze statues of Arsenal legends stand outside the Emirates Stadium",
+   "ex": "Bronze statues of Arsenal legends stand outside Emirates Stadium",
    "hook": "Arsenal",
    "k": "stadium",
    "src": "https://www.premierleague.com/en/news/4725666/all-you-need-to-know-about-the-20-premier-league-stadiums",
@@ -345,7 +345,7 @@
   },
   {
    "w": "Cherries",
-   "means": "Maybe from red striped shirts",
+   "means": "Possibly from their red-striped shirts",
    "ex": "AFC Bournemouth are nicknamed the Cherries",
    "hook": "Bournemouth",
    "k": "nickname",
