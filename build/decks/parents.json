@@ -44,7 +44,7 @@
    "w": "sick",
    "means": "Amazingly good",
    "ex": "The keeper made a sick save in the final minute",
-   "hook": "final minute",
+   "hook": "save",
    "k": "adj",
    "src": "https://www.merriam-webster.com/dictionary/sick",
    "d": 1
@@ -251,7 +251,7 @@
    "w": "cool beans",
    "means": "Sounds good to me",
    "ex": "When the coach moved practice to Friday, Mom said “cool beans”",
-   "hook": "Friday",
+   "hook": "practice",
    "k": "exclaim",
    "src": "https://www.merriam-webster.com/dictionary/cool%20beans",
    "d": 2
@@ -260,7 +260,7 @@
    "w": "no biggie",
    "means": "Not a big deal",
    "ex": "The keeper let in one goal, but the coach said it was no biggie",
-   "hook": "one goal",
+   "hook": "keeper",
    "k": "exclaim",
    "src": "https://www.merriam-webster.com/dictionary/no%20biggie",
    "d": 1
@@ -449,7 +449,7 @@
    "w": "chill out",
    "means": "To calm down, relax",
    "ex": "The coach told the nervous striker to chill out before her penalty",
-   "hook": "nervous",
+   "hook": "penalty",
    "k": "verb",
    "src": "https://www.merriam-webster.com/dictionary/chill%20out",
    "d": 1

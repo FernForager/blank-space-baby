@@ -89,7 +89,7 @@
       "w": "penalty area",
       "means": "Big box in front of each goal",
       "ex": "Outside the penalty area, the keeper can’t use her hands",
-      "hook": "her hands",
+      "hook": "keeper",
       "k": "field",
       "src": "https://www.merriam-webster.com/dictionary/penalty%20area",
       "d": 1
@@ -134,7 +134,7 @@
       "w": "technical area",
       "means": "Coach’s box beside the field",
       "ex": "The coach has to stay in the technical area at the side of the field",
-      "hook": "has to stay",
+      "hook": "coach",
       "k": "field",
       "src": "https://www.dictionary.com/browse/technical-area",
       "d": 2
@@ -467,7 +467,7 @@
       "w": "man-to-man",
       "means": "Each player guards one rival",
       "ex": "In man-to-man defense, every player sticks to one opponent all game",
-      "hook": "one opponent",
+      "hook": "defense",
       "k": "lingo",
       "src": "https://www.merriam-webster.com/dictionary/man-to-man",
       "d": 1
@@ -557,7 +557,7 @@
       "w": "net",
       "means": "Score a goal",
       "ex": "The striker raced onto the cross and managed to net it for a 2–1 lead",
-      "hook": "2–1 lead",
+      "hook": "cross",
       "k": "action",
       "src": "https://www.merriam-webster.com/dictionary/net",
       "d": 1

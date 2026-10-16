@@ -62,7 +62,7 @@
    "w": "Orlando Pride",
    "means": "The city’s first major league title",
    "ex": "Orlando Pride won both the Shield and the championship in 2024",
-   "hook": "championship",
+   "hook": "Shield",
    "k": "club",
    "src": "https://www.nwslsoccer.com/news/orlando-pride-lifts-first-nwsl-championship-trophy-2024-nwsl-championship-recap",
    "d": 2
@@ -71,7 +71,7 @@
    "w": "Seattle Reign",
    "means": "They won a third Shield in 2022",
    "ex": "Seattle Reign won back-to-back Shields in 2014 and 2015",
-   "hook": "back-to-back",
+   "hook": "Shields",
    "k": "club",
    "src": "https://www.nwslsoccer.com/news/history-of-the-nwsl-shield",
    "d": 3
@@ -98,7 +98,7 @@
    "w": "Denver Summit",
    "means": "More than double Boston’s opener crowd",
    "ex": "Denver Summit drew a record 63,004 fans to its first home game",
-   "hook": "63,004",
+   "hook": "63,004 fans",
    "k": "club",
    "src": "https://www.nwslsoccer.com/news/no-place-like-home-denver-summit-inaugural-home-opener-at-mile-high-smashes-nwsl-attendance-record",
    "d": 2,
@@ -171,7 +171,7 @@
    "w": "Alex Morgan",
    "means": "Wave fans call her the San Diegoat",
    "ex": "The Wave retired the No. 13 shirt of Alex Morgan",
-   "hook": "No. 13",
+   "hook": "Wave",
    "k": "player",
    "src": "https://www.nwslsoccer.com/news/alex-morgan-reflects-on-career-at-wave-number-retirement-this-means-everything",
    "d": 2
@@ -270,7 +270,7 @@
    "w": "8",
    "means": "Each played 22 games",
    "ex": "The NWSL’s first season, in 2013, had 8 teams",
-   "hook": "first season",
+   "hook": "NWSL",
    "k": "number",
    "src": "https://www.nwslsoccer.com/news/class-is-in-session-nwsl-playoffs-history-from-2013-to-2024",
    "d": 2
@@ -325,7 +325,7 @@
    "w": "Shield",
    "means": "Orlando won it in 2024",
    "ex": "The NWSL Shield goes to the team with the best regular-season record",
-   "hook": "record",
+   "hook": "NWSL",
    "k": "term",
    "src": "https://www.nwslsoccer.com/news/orlando-pride-lifts-first-nwsl-championship-trophy-2024-nwsl-championship-recap",
    "d": 1
@@ -334,7 +334,7 @@
    "w": "Golden Boot",
    "means": "The award for the top scorer",
    "ex": "Temwa Chawinga’s 15 goals in 2025 won her a second straight Golden Boot",
-   "hook": "15 goals",
+   "hook": "Chawinga",
    "k": "term",
    "src": "https://www.nwslsoccer.com/news/golden-boot-ironwomen-new-records-looking-back-at-2025-nwsl-season-milestones",
    "d": 1
@@ -361,7 +361,7 @@
    "w": "Decision Day",
    "means": "The final weekend of the season",
    "ex": "San Diego clinched the 2023 Shield with a win on Decision Day",
-   "hook": "clinched",
+   "hook": "San Diego",
    "k": "term",
    "src": "https://www.nwslsoccer.com/news/san-diego-wave-fc-claims-2023-nwsl-shield-presented-by-carmax",
    "d": 2
@@ -370,7 +370,7 @@
    "w": "draft",
    "means": "Ended by the 2024 labor deal",
    "ex": "The NWSL was the first major U.S. pro league to get rid of its draft",
-   "hook": "get rid of",
+   "hook": "NWSL",
    "k": "term",
    "src": "https://www.nwslsoccer.com/leadership-team",
    "d": 2
@@ -559,7 +559,7 @@
    "w": "2013",
    "means": "With eight teams",
    "ex": "The NWSL played its first season in 2013",
-   "hook": "first season",
+   "hook": "NWSL",
    "k": "year",
    "src": "https://www.nwslsoccer.com/news/class-is-in-session-nwsl-playoffs-history-from-2013-to-2024",
    "d": 2

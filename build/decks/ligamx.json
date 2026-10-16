@@ -318,7 +318,7 @@
    "w": "Cardozo",
    "means": "A Paraguayan striker",
    "ex": "Cardozo scored 249 goals for Toluca, the most by anyone for one club",
-   "hook": "249 goals",
+   "hook": "Toluca",
    "k": "player",
    "src": "https://ligamx.net/cancha/detallenoticia/47228",
    "d": 3,
@@ -346,7 +346,7 @@
    "w": "Cuauhtémoc Blanco",
    "means": "He scored 16 that tournament",
    "ex": "Cuauhtémoc Blanco led the league in goals for América in Invierno 98",
-   "hook": "Invierno 98",
+   "hook": "América",
    "k": "player",
    "src": "https://ligamx.net/cancha/detallenoticia/4614",
    "d": 2
@@ -383,7 +383,7 @@
    "w": "Antonio Mohamed",
    "means": "He won it with Toluca",
    "ex": "Antonio Mohamed won his fifth league title as a coach in Apertura 2025",
-   "hook": "fifth",
+   "hook": "Apertura",
    "k": "coach",
    "src": "https://ligamx.net/cancha/detallenoticia/46917",
    "d": 2
@@ -392,7 +392,7 @@
    "w": "Miguel Herrera",
    "means": "They beat Cruz Azul in the final",
    "ex": "Miguel Herrera coached América to the Clausura 2013 title",
-   "hook": "2013 title",
+   "hook": "América",
    "k": "coach",
    "src": "https://ligamx.net/cancha/detallenoticia/47548",
    "d": 2
@@ -401,7 +401,7 @@
    "w": "Juan Reynoso",
    "means": "Level with León’s 2019 run",
    "ex": "Juan Reynoso’s Cruz Azul won 12 games in a row in 2021",
-   "hook": "12 games",
+   "hook": "Cruz Azul",
    "k": "coach",
    "src": "https://ligamx.net/cancha/detallenoticia/38061",
    "d": 3
@@ -410,7 +410,7 @@
    "w": "Alberto Jorge",
    "means": "The fewest games for a champion coach",
    "ex": "Alberto Jorge coached Toluca to the Apertura 2002 title in just four games",
-   "hook": "four games",
+   "hook": "Toluca",
    "k": "coach",
    "src": "https://ligamx.net/cancha/detallenoticia/47571",
    "d": 3
@@ -419,7 +419,7 @@
    "w": "Manuel Lapuente",
    "means": "He won five league titles as a coach",
    "ex": "Manuel Lapuente coached Necaxa to back-to-back league titles in 1994–95 and 1995–96",
-   "hook": "back-to-back",
+   "hook": "Necaxa",
    "k": "coach",
    "src": "https://ligamx.net/cancha/detallenoticia/4614",
    "d": 3
@@ -473,7 +473,7 @@
    "w": "1998",
    "means": "26 league players went to France",
    "ex": "The old record for league players at a World Cup was set in 1998",
-   "hook": "old record",
+   "hook": "World Cup",
    "k": "year",
    "src": "https://ligamx.net/cancha/detallenoticia/47586",
    "d": 2
@@ -492,7 +492,7 @@
    "w": "12",
    "means": "Tied with Chivas for second-most",
    "ex": "Toluca’s Apertura 2025 crown was their league title number 12",
-   "hook": "2025 crown",
+   "hook": "Toluca",
    "k": "number",
    "src": "https://ligamx.net/cancha/detallenoticia/46917",
    "d": 2
@@ -501,7 +501,7 @@
    "w": "10",
    "means": "Fourth-most in the pro era",
    "ex": "Cruz Azul’s Clausura 2026 win made it 10 league titles for the club",
-   "hook": "2026 win",
+   "hook": "Cruz Azul",
    "k": "number",
    "src": "https://ligamx.net/cancha/detallenoticia/47571",
    "d": 2
@@ -539,7 +539,7 @@
    "w": "Apertura",
    "means": "Spanish for “opening”",
    "ex": "Each Liga MX season starts in summer with the Apertura tournament",
-   "hook": "summer",
+   "hook": "Liga MX",
    "k": "term",
    "src": "https://ligamx.net/cancha/detallenoticia/47591",
    "d": 2
@@ -548,7 +548,7 @@
    "w": "Clausura",
    "means": "Spanish for “closing”",
    "ex": "Each Liga MX season ends in spring with the Clausura tournament",
-   "hook": "spring",
+   "hook": "Liga MX",
    "k": "term",
    "src": "https://ligamx.net/cancha/club/1/america",
    "d": 2

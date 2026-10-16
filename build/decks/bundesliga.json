@@ -26,7 +26,7 @@
    "w": "Cologne",
    "means": "They won it again in 1977–78",
    "ex": "Cologne won the very first Bundesliga title, in 1963–64",
-   "hook": "very first",
+   "hook": "Bundesliga",
    "k": "club",
    "src": "https://www.bundesliga.com/en/bundesliga/news/german-champions-in-the-bundesliga-bayern-munich-borussia-dortmund-24221",
    "d": 3
@@ -44,7 +44,7 @@
    "w": "Wolfsburg",
    "means": "Their one and only league title",
    "ex": "Wolfsburg won the Bundesliga for the first time in 2008–09",
-   "hook": "2008–09",
+   "hook": "Bundesliga",
    "k": "club",
    "src": "https://www.bundesliga.com/en/bundesliga/news/german-champions-in-the-bundesliga-bayern-munich-borussia-dortmund-24221",
    "d": 3
@@ -53,7 +53,7 @@
    "w": "Borussia Dortmund",
    "means": "Still the biggest win in league history",
    "ex": "Gladbach beat Borussia Dortmund 12–0 on the last day of 1977–78",
-   "hook": "12–0",
+   "hook": "Gladbach",
    "k": "club",
    "src": "https://www.bundesliga.com/en/faq/10-things-on-the-bundesliga/bundesliga-records-goals-titles-attendances-for-players-and-clubs-10555",
    "d": 3
@@ -62,7 +62,7 @@
    "w": "Hamburg",
    "means": "They returned to the top flight in 2025",
    "ex": "Hamburg played every Bundesliga season from 1963 until they went down in 2018",
-   "hook": "went down",
+   "hook": "Bundesliga",
    "k": "club",
    "src": "https://www.bundesliga.com/en/faq/10-things-on-the-bundesliga/all-clubs-that-have-played-in-germany-s-top-flight-bayern-munich-dortmund-24106",
    "d": 3
@@ -80,7 +80,7 @@
    "w": "VfB Stuttgart",
    "means": "Also champions in 1984 and 1992",
    "ex": "VfB Stuttgart won their third Bundesliga title in 2006–07",
-   "hook": "2006–07",
+   "hook": "Bundesliga",
    "k": "club",
    "src": "https://www.bundesliga.com/en/bundesliga/news/german-champions-in-the-bundesliga-bayern-munich-borussia-dortmund-24221",
    "d": 3
@@ -89,7 +89,7 @@
    "w": "Werder Bremen",
    "means": "Their fourth Bundesliga title",
    "ex": "Werder Bremen won the Bundesliga title in 2003–04",
-   "hook": "2003–04",
+   "hook": "Bundesliga",
    "k": "club",
    "src": "https://www.bundesliga.com/en/bundesliga/news/german-champions-in-the-bundesliga-bayern-munich-borussia-dortmund-24221",
    "d": 3
@@ -98,7 +98,7 @@
    "w": "Bayern Munich",
    "means": "Their 13th title in 14 years",
    "ex": "Bayern Munich won the 2025–26 title with four games to spare",
-   "hook": "four games",
+   "hook": "2025–26",
    "k": "club",
    "src": "https://www.bundesliga.com/en/bundesliga/news/bayern-munich-vfb-stuttgart-match-report-highlights-matchday-30-champions-davies-kane-36979",
    "d": 2,
@@ -108,7 +108,7 @@
    "w": "Gerd Müller",
    "means": "365 goals, all for Bayern",
    "ex": "Gerd Müller is the Bundesliga’s all-time top scorer",
-   "hook": "all-time",
+   "hook": "top scorer",
    "k": "player",
    "src": "https://www.bundesliga.com/en/faq/10-things-on-the-bundesliga/the-bundesligas-all-time-top-scorers-10552",
    "d": 2
@@ -190,7 +190,7 @@
    "w": "Timo Konietzka",
    "means": "After 58 seconds, for Dortmund",
    "ex": "Timo Konietzka scored the first Bundesliga goal, in 1963",
-   "hook": "1963",
+   "hook": "Bundesliga",
    "k": "player",
    "src": "https://www.bundesliga.com/en/bundesliga/news/the-history-of-the-bundesliga-explained-19385",
    "d": 3
@@ -199,7 +199,7 @@
    "w": "Franz Beckenbauer",
    "means": "Four league titles with Bayern",
    "ex": "Bayern retired the No. 5 shirt in honor of Franz Beckenbauer",
-   "hook": "No. 5",
+   "hook": "Bayern",
    "k": "player",
    "src": "https://www.bundesliga.com/en/bundesliga/news/bayern-munich-retire-no-5-shirt-in-honour-of-club-legend-franz-beckenbauer-30015",
    "d": 2
@@ -208,7 +208,7 @@
    "w": "Udo Lattek",
    "means": "Six with Bayern, two with Gladbach",
    "ex": "Udo Lattek won a record eight Bundesliga titles as a coach",
-   "hook": "record eight",
+   "hook": "Bundesliga",
    "k": "coach",
    "src": "https://www.bundesliga.com/en/faq/10-things-on-the-bundesliga/bundesliga-records-goals-titles-attendances-for-players-and-clubs-10555",
    "d": 2
@@ -235,7 +235,7 @@
    "w": "Pep Guardiola",
    "means": "A Bundesliga record start",
    "ex": "Pep Guardiola’s Bayern won their first ten games of 2015–16",
-   "hook": "first ten",
+   "hook": "Bayern",
    "k": "coach",
    "src": "https://www.bundesliga.com/en/faq/10-things-on-the-bundesliga/bundesliga-records-goals-titles-attendances-for-players-and-clubs-10555",
    "d": 2
@@ -263,7 +263,7 @@
    "w": "Ottmar Hitzfeld",
    "means": "Second only to Udo Lattek’s eight",
    "ex": "Ottmar Hitzfeld won seven Bundesliga titles as a coach",
-   "hook": "seven",
+   "hook": "Bundesliga",
    "k": "coach",
    "src": "https://www.bundesliga.com/en/bundesliga/news/german-champions-in-the-bundesliga-bayern-munich-borussia-dortmund-24221",
    "d": 2
@@ -272,7 +272,7 @@
    "w": "Allianz Arena",
    "means": "Home since 2005",
    "ex": "Bayern Munich play their home games at the Allianz Arena",
-   "hook": "home games",
+   "hook": "Bayern",
    "k": "stadium",
    "src": "https://www.bundesliga.com/en/bundesliga/news/stadiums-germany-2026-27-munich-dortmund-37962",
    "d": 2,
@@ -282,7 +282,7 @@
    "w": "Signal Iduna Park",
    "means": "It holds 81,365 fans",
    "ex": "Dortmund’s Signal Iduna Park is the biggest stadium in Germany",
-   "hook": "biggest",
+   "hook": "Dortmund",
    "k": "stadium",
    "src": "https://www.bundesliga.com/en/bundesliga/news/stadiums-germany-2026-27-munich-dortmund-37962",
    "d": 2,
@@ -431,7 +431,7 @@
    "means": "It holds about 25,000 fans",
    "ex": "Dortmund’s giant south stand is called the Yellow Wall",
    "hook": "south stand",
-   "k": "name",
+   "k": "stadium",
    "src": "https://www.bundesliga.com/en/bundesliga/news/yellow-wall-wiki-borussia-dortmund-signal-iduna-park-bvb-3357-2391",
    "d": 1
   },
@@ -448,7 +448,7 @@
    "w": "Klassiker",
    "means": "First met in the Bundesliga in 1965",
    "ex": "Bayern Munich against Dortmund is known as the Klassiker",
-   "hook": "Munich",
+   "hook": "Bayern",
    "k": "derby",
    "src": "https://www.bundesliga.com/en/bundesliga/news/biggest-soccer-derbies-in-germany-klassiker-revierderby-oldest-rivalries-7578",
    "d": 2
@@ -502,7 +502,7 @@
    "w": "1963",
    "means": "On August 24, with 16 clubs",
    "ex": "The first Bundesliga season kicked off in August 1963",
-   "hook": "kicked off",
+   "hook": "Bundesliga",
    "k": "year",
    "src": "https://www.bundesliga.com/en/bundesliga/news/the-history-of-the-bundesliga-explained-19385",
    "d": 2
@@ -520,7 +520,7 @@
    "w": "2005",
    "means": "In time for the 2005–06 season",
    "ex": "Bayern Munich moved into their current stadium in 2005",
-   "hook": "stadium",
+   "hook": "Bayern",
    "k": "year",
    "src": "https://www.bundesliga.com/en/bundesliga/news/stadiums-germany-2026-27-munich-dortmund-37962",
    "d": 2
@@ -547,7 +547,7 @@
    "w": "1965",
    "means": "They missed the first two seasons",
    "ex": "Bayern Munich joined the Bundesliga in 1965",
-   "hook": "Munich",
+   "hook": "Bayern",
    "k": "year",
    "src": "https://www.bundesliga.com/en/faq/10-things-on-the-bundesliga/all-clubs-that-have-played-in-germany-s-top-flight-bayern-munich-dortmund-24106",
    "d": 3
@@ -584,7 +584,7 @@
    "w": "91",
    "means": "They won the title by 25 points",
    "ex": "Bayern set a Bundesliga record with 91 points in 2012–13",
-   "hook": "points",
+   "hook": "Bayern",
    "k": "number",
    "src": "https://www.bundesliga.com/en/faq/10-things-on-the-bundesliga/bundesliga-records-goals-titles-attendances-for-players-and-clubs-10555",
    "d": 2
@@ -602,7 +602,7 @@
    "w": "18",
    "means": "It started with 16 clubs",
    "ex": "The Bundesliga grew to 18 clubs in 1965–66",
-   "hook": "grew",
+   "hook": "Bundesliga",
    "k": "number",
    "src": "https://www.bundesliga.com/en/bundesliga/news/the-history-of-the-bundesliga-explained-19385",
    "d": 2
@@ -611,7 +611,7 @@
    "w": "13",
    "means": "Manuel Neuer has 13 as well",
    "ex": "Thomas Müller won a record 13 Bundesliga titles",
-   "hook": "Thomas",
+   "hook": "Müller",
    "k": "number",
    "src": "https://www.bundesliga.com/en/faq/10-things-on-the-bundesliga/bundesliga-records-goals-titles-attendances-for-players-and-clubs-10555",
    "d": 2,

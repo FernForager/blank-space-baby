@@ -8,7 +8,7 @@
    "w": "Man United",
    "means": "All 13 came under Alex Ferguson",
    "ex": "Man United have won the most Premier League titles, with 13",
-   "hook": "titles",
+   "hook": "Premier",
    "k": "club",
    "src": "https://www.premierleague.com/en/premier-league-explained",
    "d": 2
@@ -36,7 +36,7 @@
    "w": "Chelsea",
    "means": "Mourinho, Ancelotti and Conte",
    "ex": "Like Man City, Chelsea have won titles under three different managers",
-   "hook": "managers",
+   "hook": "Man City",
    "k": "club",
    "src": "https://www.premierleague.com/en/news/4660971/every-premier-league-title-winning-manager-in-history",
    "d": 2
@@ -111,7 +111,7 @@
    "w": "380",
    "means": "20 clubs, 38 games each, halved",
    "ex": "A Premier League season has 380 matches in all",
-   "hook": "matches",
+   "hook": "Premier",
    "k": "number",
    "src": "https://www.premierleague.com/en/premier-league-explained",
    "d": 2
@@ -129,7 +129,7 @@
    "w": "100",
    "means": "Pep Guardiola was the manager",
    "ex": "Man City set the record of 100 points in 2017–18",
-   "hook": "points",
+   "hook": "Man City",
    "k": "number",
    "src": "https://www.premierleague.com/en/stats/records",
    "d": 2
@@ -175,7 +175,7 @@
    "w": "James Milner",
    "means": "His run began in 2002–03",
    "ex": "James Milner has played more Premier League games than anyone",
-   "hook": "played more",
+   "hook": "Premier",
    "k": "player",
    "src": "https://www.premierleague.com/en/stats/records",
    "d": 2
@@ -184,7 +184,7 @@
    "w": "Petr Čech",
    "means": "For Chelsea and Arsenal",
    "ex": "Goalkeeper Petr Čech kept a record 202 clean sheets",
-   "hook": "goalkeeper",
+   "hook": "clean sheets",
    "k": "player",
    "src": "https://www.premierleague.com/en/stats/records",
    "d": 2

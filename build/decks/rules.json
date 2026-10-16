@@ -55,7 +55,7 @@
    "w": "15",
    "means": "The range allowed is 3 to 15",
    "ex": "The Laws cap a team’s named substitutes at 15",
-   "hook": "Laws",
+   "hook": "substitutes",
    "k": "count",
    "src": "https://www.theifab.com/laws/latest/the-players/",
    "d": 3,
@@ -92,7 +92,7 @@
    "w": "8 seconds",
    "means": "The ref shows the last 5 with a hand",
    "ex": "A keeper may hold the ball in their hands for up to 8 seconds",
-   "hook": "their hands",
+   "hook": "keeper",
    "k": "time",
    "src": "https://www.theifab.com/laws/latest/fouls-and-misconduct/",
    "d": 2,
@@ -150,7 +150,7 @@
    "means": "9.15 m, same as the center circle",
    "ex": "At a free kick, opponents must be at least 10 yards from the ball",
    "hook": "free kick",
-   "k": "measure",
+   "k": "measure-field",
    "src": "https://www.theifab.com/laws/latest/free-kicks/",
    "d": 2
   },
@@ -159,7 +159,7 @@
    "means": "11 m from the middle of the goal",
    "ex": "The penalty mark is 12 yards from the middle of the goal line",
    "hook": "penalty mark",
-   "k": "measure",
+   "k": "measure-field",
    "src": "https://www.theifab.com/laws/latest/the-field-of-play/",
    "d": 2
   },
@@ -168,7 +168,7 @@
    "means": "16.5 m in the metric version",
    "ex": "The penalty area stretches 18 yards out from the goal line",
    "hook": "penalty area",
-   "k": "measure",
+   "k": "measure-field",
    "src": "https://www.theifab.com/laws/latest/the-field-of-play/",
    "d": 2
   },
@@ -177,7 +177,7 @@
    "means": "5.5 m out, and 5.5 m from each post",
    "ex": "The goal area stretches 6 yards out from the goal line",
    "hook": "goal area",
-   "k": "measure",
+   "k": "measure-field",
    "src": "https://www.theifab.com/laws/latest/the-field-of-play/",
    "d": 2
   },
@@ -186,7 +186,7 @@
    "means": "7.32 m between the insides of the posts",
    "ex": "A full-size goal is 8 yards wide",
    "hook": "full-size",
-   "k": "measure",
+   "k": "measure-field",
    "src": "https://www.theifab.com/laws/latest/the-field-of-play/",
    "d": 2
   },
@@ -233,7 +233,7 @@
    "hook": "flagpost",
    "k": "measure",
    "src": "https://www.theifab.com/laws/latest/the-field-of-play/",
-   "d": 2
+   "d": 3
   },
   {
    "w": "5 inches",
@@ -267,7 +267,7 @@
    "w": "throw-in",
    "means": "Taken where the ball went out",
    "ex": "When the whole ball crosses a touchline, play restarts with a throw-in",
-   "hook": "whole ball",
+   "hook": "touchline",
    "k": "restart",
    "src": "https://www.theifab.com/laws/latest/the-throw-in/",
    "d": 2
@@ -429,7 +429,7 @@
    "w": "halfway line",
    "means": "Only at a stoppage, with the ref’s OK",
    "ex": "A substitute must come on level with the halfway line",
-   "hook": "come on",
+   "hook": "substitute",
    "k": "place",
    "src": "https://www.theifab.com/laws/latest/the-players/",
    "d": 2
@@ -447,7 +447,7 @@
    "w": "goal line",
    "means": "The goal sits in the middle of it",
    "ex": "Each of the two shorter boundary lines is a goal line",
-   "hook": "shorter",
+   "hook": "boundary",
    "k": "place",
    "src": "https://www.theifab.com/laws/latest/the-field-of-play/",
    "d": 1
@@ -591,7 +591,7 @@
    "w": "shoot-out",
    "means": "Officially: kicks from the penalty mark",
    "ex": "Under the Laws, a match still tied after extra time can go to a shoot-out",
-   "hook": "still tied",
+   "hook": "extra time",
    "k": "term",
    "src": "https://www.theifab.com/laws/latest/determining-the-outcome-of-a-match/",
    "d": 1

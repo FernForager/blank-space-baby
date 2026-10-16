@@ -251,7 +251,7 @@
    "w": "fullback",
    "means": "Defender who plays out wide",
    "ex": "The fullback sprinted up the sideline from the back line to join the attack",
-   "hook": "sprinted",
+   "hook": "sideline",
    "k": "role",
    "src": "https://www.merriam-webster.com/dictionary/fullback",
    "d": 2
@@ -377,7 +377,7 @@
    "w": "golden goal",
    "means": "First extra-time goal wins it",
    "ex": "The first goal in extra time was a golden goal, so everyone went home",
-   "hook": "went home",
+   "hook": "extra time",
    "k": "game",
    "src": "https://www.dictionary.com/browse/golden-goal",
    "d": 1
@@ -458,7 +458,7 @@
    "w": "clinical",
    "means": "Precise and never wasteful",
    "ex": "The striker was clinical and scored on all three of her shots",
-   "hook": "all three",
+   "hook": "shots",
    "k": "lingo",
    "src": "https://www.merriam-webster.com/dictionary/clinical",
    "d": 2

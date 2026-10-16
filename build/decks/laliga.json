@@ -161,7 +161,7 @@
    "w": "Lamine Yamal",
    "means": "16 goals and 12 assists",
    "ex": "Barça’s No. 10 Lamine Yamal was Player of the Season for 2025–26",
-   "hook": "No. 10",
+   "hook": "Barça",
    "k": "player",
    "src": "https://www.laliga.com/en-GB/news/lamine-yamal-ea-sports-laliga-player-of-the-season-2025-2026",
    "d": 2
@@ -170,7 +170,7 @@
    "w": "Kylian Mbappé",
    "means": "Four more than Lewandowski",
    "ex": "Kylian Mbappé won the Pichichi with 31 goals in his first Spanish season",
-   "hook": "31 goals",
+   "hook": "Pichichi",
    "k": "player",
    "src": "https://www.laliga.com/en-US/news/what-we-learned-from-laliga-ea-sports-this-week",
    "d": 2
@@ -234,7 +234,7 @@
    "w": "Luka Modrić",
    "means": "He also won the 2018 Ballon d’Or",
    "ex": "Luka Modrić left Real Madrid in 2025 after 13 seasons and 28 trophies",
-   "hook": "28 trophies",
+   "hook": "Real Madrid",
    "k": "player",
    "src": "https://www.laliga.com/en-US/news/what-we-learned-from-laliga-ea-sports-this-week",
    "d": 2
@@ -243,7 +243,7 @@
    "w": "Xavi Hernández",
    "means": "36 games, 31 of them in the league",
    "ex": "Xavi Hernández has played in the most Barcelona derbies",
-   "hook": "derbies",
+   "hook": "Barcelona",
    "k": "player",
    "src": "https://www.laliga.com/en-GB/partidazos/el-derbi-de-barcelona",
    "d": 2
@@ -261,7 +261,7 @@
    "w": "Pep Guardiola",
    "means": "Barça’s 2009 “sextete”",
    "ex": "In 2009, Pep Guardiola’s Barcelona won all six trophies it played for",
-   "hook": "six trophies",
+   "hook": "Barcelona",
    "k": "coach",
    "src": "https://www.laliga.com/noticias/mejores-clasicos-historia-laliga-real-madrid-barcelona",
    "d": 2
@@ -325,7 +325,7 @@
    "w": "José Mourinho",
    "means": "His side won 2–1 at Barça next season",
    "ex": "Barcelona beat José Mourinho’s Real Madrid 5–0 in November 2010",
-   "hook": "5–0",
+   "hook": "Barcelona",
    "k": "coach",
    "src": "https://www.laliga.com/noticias/mejores-clasicos-historia-laliga-real-madrid-barcelona",
    "d": 2
@@ -427,7 +427,7 @@
    "w": "100",
    "means": "Barcelona matched it a year later",
    "ex": "Real Madrid set a points record of 100 in 2011–12",
-   "hook": "points",
+   "hook": "Real Madrid",
    "k": "number",
    "src": "https://www.laliga.com/en-GB/news/what-has-been-the-points-record-of-liga-bbva-teams-in-just-one-season",
    "d": 2
@@ -454,7 +454,7 @@
    "w": "19",
    "means": "A first in LaLiga history",
    "ex": "Barcelona won all 19 of their home games in 2025–26",
-   "hook": "home games",
+   "hook": "Barcelona",
    "k": "number",
    "src": "https://www.laliga.com/en-GB/news/hansi-flick-laliga-ea-sports-coach-of-the-year-2025-2026",
    "d": 2
@@ -490,7 +490,7 @@
    "w": "1902",
    "means": "The Bernabéu opened in 1947",
    "ex": "Real Madrid were founded in 1902",
-   "hook": "founded",
+   "hook": "Real Madrid",
    "k": "year",
    "src": "https://www.laliga.com/en-GB/clubs/real-madrid",
    "d": 3
@@ -508,7 +508,7 @@
    "w": "1903",
    "means": "Home: the Riyadh Air Metropolitano",
    "ex": "Atlético de Madrid were founded in 1903",
-   "hook": "founded",
+   "hook": "Atlético",
    "k": "year",
    "src": "https://www.laliga.com/en-GB/clubs/atletico-de-madrid",
    "d": 3

@@ -8,7 +8,7 @@
    "w": "Spain",
    "means": "A record low for a champion",
    "ex": "Spain won the World Cup while giving up just one goal",
-   "hook": "one goal",
+   "hook": "World Cup",
    "k": "team",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/spain-argentina-final-report-highlights",
    "d": 2
@@ -35,7 +35,7 @@
    "w": "Brazil",
    "means": "Haaland scored twice for Norway",
    "ex": "Five-time champion Brazil was knocked out by Norway",
-   "hook": "knocked out",
+   "hook": "Norway",
    "k": "team",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/final-tournament-standings",
    "d": 1
@@ -71,7 +71,7 @@
    "w": "Cabo Verde",
    "means": "A 0–0 draw in their first game",
    "ex": "Newcomer Cabo Verde was the only team to keep Spain from scoring",
-   "hook": "newcomer",
+   "hook": "Spain",
    "k": "team",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/final-tournament-standings",
    "d": 2
@@ -208,7 +208,7 @@
    "w": "Thomas Tuchel",
    "means": "A 6–4 win over France",
    "ex": "Thomas Tuchel coached England to third place",
-   "hook": "third place",
+   "hook": "England",
    "k": "coach",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/final-tournament-standings",
    "d": 2
@@ -235,7 +235,7 @@
    "w": "Didier Deschamps",
    "means": "His last was the bronze final",
    "ex": "Didier Deschamps set a record for most World Cup games as a coach",
-   "hook": "record",
+   "hook": "World Cup",
    "k": "coach",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/records-broken-set",
    "d": 3
@@ -280,7 +280,7 @@
    "w": "Miami",
    "means": "A 6–4 win in the bronze final",
    "ex": "England beat France in Miami to finish third",
-   "hook": "finish third",
+   "hook": "England",
    "k": "city",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/france-england-report-highlights-bronze-final",
    "d": 3
@@ -316,7 +316,7 @@
    "w": "Golden Boot",
    "means": "He also won it in 2022",
    "ex": "Kylian Mbappé won the Golden Boot with 10 goals",
-   "hook": "10 goals",
+   "hook": "Mbappé",
    "k": "award",
    "src": "https://www.fifa.com/en/articles/adidas-golden-boot-race-top-scorer",
    "d": 2
@@ -352,7 +352,7 @@
    "w": "Player of the Match",
    "means": "He also won it five times in 2022",
    "ex": "Lionel Messi was named Player of the Match five times in 2026",
-   "hook": "five times",
+   "hook": "Messi",
    "k": "award",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/lionel-messi-argentina-stats-records",
    "d": 1
@@ -389,7 +389,7 @@
    "w": "1966",
    "means": "Third in 2026 was its best since",
    "ex": "England won the World Cup on home soil in 1966",
-   "hook": "home soil",
+   "hook": "England",
    "k": "year",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/final-tournament-standings",
    "d": 2
@@ -416,7 +416,7 @@
    "w": "48",
    "means": "Split into 12 groups of four",
    "ex": "The 2026 World Cup was the first with 48 teams",
-   "hook": "teams",
+   "hook": "World Cup",
    "k": "number",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/fifa-world-cup-2026-hosts-cities-dates-usa-mexico-canada",
    "d": 2
@@ -434,7 +434,7 @@
    "w": "3",
    "means": "Canada, Mexico and the USA",
    "ex": "The 2026 World Cup was the first shared by 3 countries",
-   "hook": "countries",
+   "hook": "World Cup",
    "k": "number",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/fifa-world-cup-2026-hosts-cities-dates-usa-mexico-canada",
    "d": 1
@@ -470,7 +470,7 @@
    "w": "1,248",
    "means": "That’s 26 for each of 48 teams",
    "ex": "A record 1,248 players were named to World Cup squads",
-   "hook": "squads",
+   "hook": "World Cup",
    "k": "number",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/fifa-world-cup-2026-hosts-cities-dates-usa-mexico-canada",
    "d": 2
@@ -506,7 +506,7 @@
    "w": "2–0",
    "means": "Goals by Oyarzabal and Porro",
    "ex": "Spain beat France 2–0 in the semifinal",
-   "hook": "semifinal",
+   "hook": "Spain",
    "k": "score",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/france-spain-match-report-highlights",
    "d": 3

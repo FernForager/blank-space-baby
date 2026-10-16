@@ -80,7 +80,7 @@
    "w": "Midnights",
    "means": "Led by “Anti-Hero” at No. 1",
    "ex": "Midnights made Swift the first artist to hold the whole Hot 100 top 10",
-   "hook": "top 10",
+   "hook": "Hot 100",
    "k": "album",
    "src": "https://en.wikipedia.org/wiki/Midnights",
    "d": 3
@@ -116,7 +116,7 @@
    "w": "2023",
    "means": "Opening night was in Glendale",
    "ex": "The Eras Tour’s opening night was March 17, 2023",
-   "hook": "March 17",
+   "hook": "Eras Tour",
    "k": "year",
    "src": "https://www.guinnessworldrecords.com/world-records/94243-most-successful-tour-solo-artist",
    "d": 2
@@ -125,7 +125,7 @@
    "w": "2024",
    "means": "The highest-grossing tour ever",
    "ex": "The Eras Tour played its final show on December 8, 2024",
-   "hook": "final show",
+   "hook": "Eras Tour",
    "k": "year",
    "src": "https://www.guinnessworldrecords.com/world-records/94243-most-successful-tour-solo-artist",
    "d": 2
@@ -179,7 +179,7 @@
    "w": "149",
    "means": "In 51 stadiums",
    "ex": "Swift played 149 shows on the Eras Tour",
-   "hook": "shows",
+   "hook": "Eras Tour",
    "k": "number",
    "src": "https://www.guinnessworldrecords.com/world-records/94243-most-successful-tour-solo-artist",
    "d": 2
@@ -188,7 +188,7 @@
    "w": "19",
    "means": "On five continents",
    "ex": "The Eras Tour visited 19 countries",
-   "hook": "countries",
+   "hook": "Eras Tour",
    "k": "number",
    "src": "https://www.guinnessworldrecords.com/world-records/94243-most-successful-tour-solo-artist",
    "d": 3
@@ -197,7 +197,7 @@
    "w": "12",
    "means": "They held Hot 100 spots 1 to 12",
    "ex": "The Life of a Showgirl has 12 songs on its standard edition",
-   "hook": "songs",
+   "hook": "Showgirl",
    "k": "number",
    "src": "https://tserasarchive.taylorswift.com/thelifeofashowgirl",
    "d": 3
@@ -269,7 +269,7 @@
    "w": "The Fate of Ophelia",
    "means": "Out the same day as the album",
    "ex": "“The Fate of Ophelia” was the first single from The Life of a Showgirl",
-   "hook": "first single",
+   "hook": "Showgirl",
    "k": "song",
    "src": "https://en.wikipedia.org/wiki/The_Life_of_a_Showgirl",
    "d": 2

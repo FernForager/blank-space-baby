@@ -26,7 +26,7 @@
    "w": "Inter",
    "means": "Three Champions League wins",
    "ex": "Inter are the only club to have played every Serie A season",
-   "hook": "only club",
+   "hook": "Serie A",
    "k": "club",
    "src": "https://www.legaseriea.it/serie-a/news/buon-compleanno-inter-x4658",
    "d": 2
@@ -35,7 +35,7 @@
    "w": "Inter",
    "means": "Named by writer Gianni Brera",
    "ex": "The Derby d’Italia is Inter vs. Juventus",
-   "hook": "Derby",
+   "hook": "Juventus",
    "k": "club",
    "src": "https://www.legaseriea.it/serie-a/news/inter-juventus-2025-2026-formazioni-risultato",
    "d": 2
@@ -44,7 +44,7 @@
    "w": "Inter",
    "means": "Clinched at San Siro",
    "ex": "Inter are the reigning Serie A champions",
-   "hook": "reigning",
+   "hook": "Serie A",
    "k": "club",
    "src": "https://www.legaseriea.it/serie-a/news/inter-parma-primo-match-point-scudetto",
    "d": 2,
@@ -81,7 +81,7 @@
    "w": "Cagliari",
    "means": "Clinched by beating Bari 2–0",
    "ex": "Cagliari won their one and only scudetto in 1969–70",
-   "hook": "1969–70",
+   "hook": "scudetto",
    "k": "club",
    "src": "https://www.legaseriea.it/serie-a/news/buon-compleanno-marcello-lippi-x1613",
    "d": 3
@@ -90,7 +90,7 @@
    "w": "Sampdoria",
    "means": "Gianluca Vialli scored that day",
    "ex": "Sampdoria clinched the 1991 scudetto with a 3–0 win over Lecce",
-   "hook": "1991",
+   "hook": "scudetto",
    "k": "club",
    "src": "https://www.legaseriea.it/serie-a/news/35-anni-fa-lo-scudetto-della-sampdoria",
    "d": 3
@@ -99,7 +99,7 @@
    "w": "Genoa",
    "means": "Poet Gabriele D’Annunzio’s idea",
    "ex": "In 1924, champions Genoa were the first to wear the scudetto badge",
-   "hook": "badge",
+   "hook": "scudetto",
    "k": "club",
    "src": "https://www.legaseriea.it/serie-a/news/il-simbolo-dello-scudetto-compie-102-anni",
    "d": 3
@@ -163,7 +163,7 @@
    "w": "Gianluigi Buffon",
    "means": "Plus a record 176 caps for Italy",
    "ex": "Gianluigi Buffon has played the most Serie A games, with 657",
-   "hook": "657",
+   "hook": "Serie A",
    "k": "player",
    "src": "https://www.legaseriea.it/serie-a/news/buon-compleanno-gigi-buffon-x0061",
    "d": 2
@@ -172,7 +172,7 @@
    "w": "Paolo Maldini",
    "means": "Including seven scudetti",
    "ex": "Paolo Maldini spent his whole career at Milan, winning 26 trophies",
-   "hook": "whole career",
+   "hook": "Milan",
    "k": "player",
    "src": "https://www.legaseriea.it/serie-a/news/buon-compleanno-paolo-maldini-x5425",
    "d": 2
@@ -199,7 +199,7 @@
    "w": "Gonzalo Higuaín",
    "means": "Breaking a record from 1949–50",
    "ex": "Gonzalo Higuaín scored a record 36 goals for Napoli in 2015–16",
-   "hook": "36 goals",
+   "hook": "Napoli",
    "k": "player",
    "src": "https://www.legaseriea.it/serie-a/news/giornata-storica-per-batistuta-e-higuain",
    "d": 2
@@ -217,7 +217,7 @@
    "w": "Gunnar Nordahl",
    "means": "A record that stood until 2016",
    "ex": "Gunnar Nordahl scored 35 goals for Milan in 1949–50",
-   "hook": "1949–50",
+   "hook": "Milan",
    "k": "player",
    "src": "https://www.legaseriea.it/serie-a/news/giornata-storica-per-batistuta-e-higuain",
    "d": 2
@@ -226,7 +226,7 @@
    "w": "Roberto Baggio",
    "means": "Known as the Divine Ponytail",
    "ex": "Roberto Baggio retired in 2004 with 205 Serie A goals",
-   "hook": "retired",
+   "hook": "Serie A",
    "k": "player",
    "src": "https://www.legaseriea.it/serie-a/news/44-anni-fa-seconda-stella-della-juventus",
    "d": 2
@@ -235,7 +235,7 @@
    "w": "Alessandro Del Piero",
    "means": "188 of them came in Serie A",
    "ex": "Alessandro Del Piero scored 290 goals for Juventus",
-   "hook": "290 goals",
+   "hook": "Juventus",
    "k": "player",
    "src": "https://www.legaseriea.it/serie-a/news/33-anni-fa-il-primo-gol-di-del-piero-in-serie-a",
    "d": 2
@@ -253,7 +253,7 @@
    "w": "Andrea Pirlo",
    "means": "Known as the Maestro",
    "ex": "Andrea Pirlo won two scudetti with Milan and four with Juventus",
-   "hook": "two scudetti",
+   "hook": "Juventus",
    "k": "player",
    "src": "https://www.legaseriea.it/serie-a/news/35-anni-fa-lo-scudetto-della-sampdoria",
    "d": 2
@@ -299,7 +299,7 @@
    "w": "Diego Maradona",
    "means": "It seats 54,732 fans",
    "ex": "Napoli’s home stadium is named after Diego Maradona",
-   "hook": "home stadium",
+   "hook": "Napoli",
    "k": "player",
    "src": "https://www.legaseriea.it/team/napoli/stadium",
    "d": 2
@@ -317,7 +317,7 @@
    "w": "Giovanni Trapattoni",
    "means": "And one more with Inter",
    "ex": "Giovanni Trapattoni won seven scudetti as a coach, six with Juventus",
-   "hook": "scudetti",
+   "hook": "Juventus",
    "k": "coach",
    "src": "https://www.legaseriea.it/serie-a/news/buon-compleanno-trap-x4566",
    "d": 3
@@ -344,7 +344,7 @@
    "w": "Fabio Capello",
    "means": "From 1991–92 to 1993–94",
    "ex": "Fabio Capello led Milan to three titles in a row, starting in 1992",
-   "hook": "three titles",
+   "hook": "Milan",
    "k": "coach",
    "src": "https://www.legaseriea.it/serie-a/news/la-giornata-dei-5-scudetti-x8318",
    "d": 3
@@ -371,7 +371,7 @@
    "w": "Stefano Pioli",
    "means": "Milan’s first title in 11 years",
    "ex": "Stefano Pioli coached Milan to the 2021–22 scudetto",
-   "hook": "2021–22",
+   "hook": "Milan",
    "k": "coach",
    "src": "https://www.legaseriea.it/serie-a/news/i-migliori-testa-a-testa-nella-lotta-scudetto",
    "d": 2
@@ -390,7 +390,7 @@
    "w": "Allianz Stadium",
    "means": "Built in 2011, it seats 41,507",
    "ex": "Juventus play their home games at the Allianz Stadium",
-   "hook": "home games",
+   "hook": "Juventus",
    "k": "stadium",
    "src": "https://en.legaseriea.it/team/juventus/stadium",
    "d": 2,
@@ -524,7 +524,7 @@
    "w": "1908",
    "means": "Only club in every Serie A season",
    "ex": "Inter were founded in 1908",
-   "hook": "founded",
+   "hook": "Inter",
    "k": "year",
    "src": "https://www.legaseriea.it/serie-a/news/buon-compleanno-inter-x4658",
    "d": 3
@@ -533,7 +533,7 @@
    "w": "1900",
    "means": "First as a running club",
    "ex": "Lazio were founded on a bench in Rome in 1900",
-   "hook": "bench",
+   "hook": "Lazio",
    "k": "year",
    "src": "https://www.legaseriea.it/serie-a/news/la-lazio-compie-126-anni",
    "d": 3

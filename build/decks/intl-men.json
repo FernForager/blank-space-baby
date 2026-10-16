@@ -27,7 +27,7 @@
       "w": "Uruguay",
       "means": "It won the title again in 1950",
       "ex": "Uruguay hosted and won the very first World Cup",
-      "hook": "very first",
+      "hook": "World Cup",
       "k": "team",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/uruguay-team-profile-history",
       "d": 2
@@ -36,7 +36,7 @@
       "w": "England",
       "means": "Geoff Hurst scored a hat-trick",
       "ex": "England beat West Germany 4–2 in the 1966 World Cup final",
-      "hook": "1966",
+      "hook": "West Germany",
       "k": "team",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/england-team-profile-history",
       "d": 2
@@ -72,7 +72,7 @@
       "w": "Italy",
       "means": "The first team to keep the title",
       "ex": "Italy won back-to-back World Cups in 1934 and 1938",
-      "hook": "back-to-back",
+      "hook": "World Cups",
       "k": "team",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/world-cup-champions-1930-1978-uruguay-italy-germany-brazil-england-argentina",
       "d": 3
@@ -108,7 +108,7 @@
       "w": "Croatia",
       "means": "Davor Šuker won the Golden Boot",
       "ex": "Croatia finished third at its very first World Cup in 1998",
-      "hook": "1998",
+      "hook": "World Cup",
       "k": "team",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/croatia-team-profile-history",
       "d": 2
@@ -182,7 +182,7 @@
       "w": "Mario Götze",
       "means": "An extra-time volley",
       "ex": "Mario Götze scored the winning goal in the 2014 World Cup final",
-      "hook": "2014",
+      "hook": "World Cup",
       "k": "player",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/world-cup-champions-1982-2026-italy-argentina-germany-brazil-france-spain",
       "d": 2
@@ -200,7 +200,7 @@
       "w": "Diego Maradona",
       "means": "He scored twice against England",
       "ex": "Diego Maradona led Argentina to the 1986 World Cup title",
-      "hook": "1986",
+      "hook": "Argentina",
       "k": "player",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/world-cup-champions-1982-2026-italy-argentina-germany-brazil-france-spain",
       "d": 2
@@ -273,7 +273,7 @@
       "w": "Antonín Panenka",
       "means": "That chip now bears his name",
       "ex": "Antonín Panenka won Euro 1976 with a chipped penalty",
-      "hook": "penalty",
+      "hook": "Euro 1976",
       "k": "player",
       "src": "https://www.uefa.com/uefaeuro/history/news/0253-0d7d2111437a-04b4248f94f0-1000--the-man-who-gave-the-panenka-penalty-its-name/",
       "d": 2
@@ -309,7 +309,7 @@
       "w": "Vittorio Pozzo",
       "means": "Italy in 1934 and 1938",
       "ex": "Vittorio Pozzo was the first coach to win two World Cups",
-      "hook": "first coach",
+      "hook": "World Cups",
       "k": "coach",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/vittorio-pozzo-only-coach-two-titles",
       "d": 3,
@@ -328,7 +328,7 @@
       "w": "Didier Deschamps",
       "means": "Captain in 1998, coach in 2018",
       "ex": "Didier Deschamps won the World Cup as France’s captain and coach",
-      "hook": "captain",
+      "hook": "France",
       "k": "coach",
       "src": "https://www.fifa.com/en/articles/france-world-cup-team-profile-history",
       "d": 2
@@ -364,7 +364,7 @@
       "w": "Bruce Arena",
       "means": "The USA’s best finish since 1930",
       "ex": "Bruce Arena coached the USA to the 2002 World Cup quarterfinals",
-      "hook": "2002",
+      "hook": "USA",
       "k": "coach",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/usa-team-profile-history",
       "d": 2
@@ -373,7 +373,7 @@
       "w": "Maracanã",
       "means": "Known as the Maracanazo",
       "ex": "Uruguay stunned Brazil in the deciding game of 1950 at the Maracanã",
-      "hook": "1950",
+      "hook": "Uruguay",
       "k": "stadium",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/uruguay-team-profile-history",
       "d": 2
@@ -400,7 +400,7 @@
       "w": "Lusail Stadium",
       "means": "In Lusail, Qatar",
       "ex": "Argentina won the 2022 World Cup final at Lusail Stadium",
-      "hook": "2022",
+      "hook": "Argentina",
       "k": "stadium",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/qatar2022",
       "d": 2
@@ -409,7 +409,7 @@
       "w": "Soccer City",
       "means": "Iniesta scored the winner there",
       "ex": "Spain won the 2010 World Cup final at Soccer City",
-      "hook": "2010",
+      "hook": "Spain",
       "k": "stadium",
       "src": "https://www.fifa.com/en/articles/andres-iniesta-tribute-spain-barcelona",
       "d": 2

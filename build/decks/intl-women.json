@@ -26,7 +26,7 @@
       "w": "Germany",
       "means": "First to win two in a row",
       "ex": "Germany won back-to-back Women’s World Cups in 2003 and 2007",
-      "hook": "back-to-back",
+      "hook": "World Cups",
       "k": "country",
       "src": "https://www.fifa.com/en/articles/every-final-highlights",
       "d": 2
@@ -35,7 +35,7 @@
       "w": "Japan",
       "means": "Its first World Cup title",
       "ex": "Japan beat the USA on penalties to win the 2011 World Cup",
-      "hook": "penalties",
+      "hook": "USA",
       "k": "country",
       "src": "https://www.fifa.com/en/articles/every-final-highlights",
       "d": 2
@@ -53,7 +53,7 @@
       "w": "England",
       "means": "Beat Germany, then Spain",
       "ex": "England won the Women’s EURO in 2022 and again in 2025",
-      "hook": "EURO",
+      "hook": "Women’s EURO",
       "k": "country",
       "src": "https://www.uefa.com/womenseuro/news/0276-1574551cc7a7-6f3161f07484-1000--who-has-won-women-s-euro-champions-teams-players-scorers-a/",
       "d": 2
@@ -62,7 +62,7 @@
       "w": "Brazil",
       "means": "The first in South America",
       "ex": "Brazil will host the 2027 Women’s World Cup",
-      "hook": "2027",
+      "hook": "World Cup",
       "k": "country",
       "src": "https://www.fifa.com/en/articles/every-final-highlights",
       "d": 2
@@ -98,7 +98,7 @@
       "w": "China",
       "means": "It hosted again in 2007",
       "ex": "The first Women’s World Cup was played in China in 1991",
-      "hook": "1991",
+      "hook": "World Cup",
       "k": "country",
       "src": "https://www.fifa.com/en/articles/every-final-highlights",
       "d": 3
@@ -107,7 +107,7 @@
       "w": "Switzerland",
       "means": "England won it on penalties",
       "ex": "Switzerland hosted the Women’s EURO in 2025",
-      "hook": "hosted",
+      "hook": "Women’s EURO",
       "k": "country",
       "src": "https://www.uefa.com/womenseuro/news/0288-199924f77c1f-b767cd925cf2-1000--women-s-euro-2025-in-switzerland-match-schedule-all-the-re/",
       "d": 2
@@ -116,7 +116,7 @@
       "w": "Australia",
       "means": "With New Zealand: a first",
       "ex": "Australia co-hosted the 2023 Women’s World Cup",
-      "hook": "co-hosted",
+      "hook": "World Cup",
       "k": "country",
       "src": "https://www.fifa.com/en/articles/every-final-highlights",
       "d": 2
@@ -162,7 +162,7 @@
       "w": "Brandi Chastain",
       "means": "A 5–4 shootout win over China",
       "ex": "Brandi Chastain scored the winning penalty in the 1999 World Cup final",
-      "hook": "penalty",
+      "hook": "World Cup",
       "k": "player",
       "src": "https://www.ussoccer.com/history/us-soccer-as-host/1999-fifa-womens-world-cup",
       "d": 2
@@ -189,7 +189,7 @@
       "w": "Christine Sinclair",
       "means": "Most ever, men or women",
       "ex": "Christine Sinclair scored 190 goals for Canada, a world record",
-      "hook": "190 goals",
+      "hook": "Canada",
       "k": "player",
       "src": "https://www.fifa.com/en/tournaments/womens/u20womensworldcup/poland-2026/articles/christine-sinclair-before-they-became-stars",
       "d": 2,
@@ -199,7 +199,7 @@
       "w": "Aitana Bonmatí",
       "means": "Spain’s midfielder, 2023–25",
       "ex": "Aitana Bonmatí won The Best FIFA Women’s Player three years running",
-      "hook": "three years",
+      "hook": "FIFA Women’s",
       "k": "player",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/womens-player-2025-winner-aitana-bonmati",
       "d": 2
@@ -208,7 +208,7 @@
       "w": "Homare Sawa",
       "means": "Plus the Golden Ball and Boot",
       "ex": "Homare Sawa captained Japan to the 2011 World Cup title",
-      "hook": "captained",
+      "hook": "Japan",
       "k": "player",
       "src": "https://www.fifa.com/en/articles/lilly-formiga-and-more-all-time-womens-world-cup-appearances-australia-new-zealand-2023",
       "d": 2
@@ -244,7 +244,7 @@
       "w": "Michelle Akers",
       "means": "A 2–1 win over Norway in China",
       "ex": "Michelle Akers scored both USA goals in the 1991 World Cup final",
-      "hook": "USA goals",
+      "hook": "USA",
       "k": "player",
       "src": "https://www.fifa.com/en/articles/every-final-highlights",
       "d": 3
@@ -272,7 +272,7 @@
       "w": "Emma Hayes",
       "means": "Paris 2024, 1–0 over Brazil",
       "ex": "Emma Hayes won Olympic gold in just her 10th game as USA coach",
-      "hook": "10th game",
+      "hook": "Olympic gold",
       "k": "coach",
       "src": "https://www.ussoccer.com/coaches/emma-hayes/uswnt",
       "d": 2
@@ -281,7 +281,7 @@
       "w": "Sarina Wiegman",
       "means": "Netherlands, then England twice",
       "ex": "Sarina Wiegman won three Women’s EUROs in a row with two countries",
-      "hook": "in a row",
+      "hook": "EUROs",
       "k": "coach",
       "src": "https://www.uefa.com/womenseuro/news/0277-15bb2c72e55a-54e4f81bc686-1000--women-s-euro-coach-records-sarina-wiegman-breaks-another-r/",
       "d": 2
@@ -290,7 +290,7 @@
       "w": "Jill Ellis",
       "means": "She never lost a World Cup game",
       "ex": "Jill Ellis coached the USA to World Cup titles in 2015 and 2019",
-      "hook": "2019",
+      "hook": "World Cup",
       "k": "coach",
       "src": "https://www.ussoccer.com/stories/2019/10/jill-ellis-farewell-to-the-winningest-coach-in-us-soccer-history",
       "d": 2
@@ -308,7 +308,7 @@
       "w": "Tony DiCicco",
       "means": "He also won Olympic gold in 1996",
       "ex": "Tony DiCicco coached the USA to the 1999 World Cup title",
-      "hook": "1999",
+      "hook": "World Cup",
       "k": "coach",
       "src": "https://www.ussoccer.com/stories/2018/02/briana-scurry-dr-joe-machnik-and-tony-dicicco-receive-national-soccer-hall-of-fame-honors",
       "d": 3
@@ -317,7 +317,7 @@
       "w": "Anson Dorrance",
       "means": "The 1991 tournament in China",
       "ex": "Anson Dorrance coached the USA to the first Women’s World Cup title",
-      "hook": "coached",
+      "hook": "World Cup",
       "k": "coach",
       "src": "https://www.ussoccer.com/stories/2021/11/the-first-star",
       "d": 3
@@ -344,7 +344,7 @@
       "w": "1999",
       "means": "At the Rose Bowl, on penalties",
       "ex": "The USA won a World Cup on home soil in 1999",
-      "hook": "home soil",
+      "hook": "USA",
       "k": "year",
       "src": "https://www.ussoccer.com/history/us-soccer-as-host/1999-fifa-womens-world-cup",
       "d": 2
@@ -362,7 +362,7 @@
       "w": "2019",
       "means": "Starting with 13–0 over Thailand",
       "ex": "The USA won all seven of its games at the 2019 World Cup",
-      "hook": "all seven",
+      "hook": "USA",
       "k": "year",
       "src": "https://www.ussoccer.com/history/timeline",
       "d": 2
@@ -371,7 +371,7 @@
       "w": "2023",
       "means": "Up from 24 teams",
       "ex": "The Women’s World Cup grew to 32 teams in 2023",
-      "hook": "32 teams",
+      "hook": "World Cup",
       "k": "year",
       "src": "https://inside.fifa.com/tournaments/womens/womensworldcup/france2019/media-releases/fifa-council-unanimously-approves-the-expansion-of-the-fifa-women-s-world-cup-to",
       "d": 2
@@ -390,7 +390,7 @@
       "w": "five",
       "means": "Four more than any other team",
       "ex": "The USA has won five Olympic gold medals in women’s soccer",
-      "hook": "gold medals",
+      "hook": "Olympic gold",
       "k": "number",
       "src": "https://www.ussoccer.com/stories/2024/08/us-womens-national-team-paris-olympics-highlights-by-the-numbers-stats",
       "d": 2,
@@ -410,7 +410,7 @@
       "w": "12",
       "means": "China hosted it",
       "ex": "Only 12 teams played at the first Women’s World Cup, in 1991",
-      "hook": "1991",
+      "hook": "World Cup",
       "k": "number",
       "src": "https://www.fifa.com/en/articles/every-final-highlights",
       "d": 2
@@ -419,7 +419,7 @@
       "w": "48",
       "means": "With 104 games in all",
       "ex": "The Women’s World Cup will grow to 48 teams in 2031",
-      "hook": "2031",
+      "hook": "World Cup",
       "k": "number",
       "src": "https://inside.fifa.com/media-releases/council-landmark-decisions-future-of-womens-world-cup-fight-against-racism",
       "d": 2,
@@ -439,7 +439,7 @@
       "w": "Pasadena",
       "means": "Over 90,000 at the Rose Bowl",
       "ex": "The 1999 World Cup final was played in Pasadena",
-      "hook": "1999",
+      "hook": "World Cup",
       "k": "place",
       "src": "https://www.ussoccer.com/history/us-soccer-as-host/1999-fifa-womens-world-cup",
       "d": 2
@@ -448,7 +448,7 @@
       "w": "Rio de Janeiro",
       "means": "At the famous Maracanã",
       "ex": "The 2027 Women’s World Cup final will be played in Rio de Janeiro",
-      "hook": "2027",
+      "hook": "World Cup",
       "k": "place",
       "src": "https://www.fifa.com/en/tournaments/womens/womensworldcup/brazil-2027/articles/maracana-stadium-history",
       "d": 2,
@@ -458,7 +458,7 @@
       "w": "Sydney",
       "means": "At Stadium Australia",
       "ex": "The 2023 Women’s World Cup final was played in Sydney",
-      "hook": "2023",
+      "hook": "World Cup",
       "k": "place",
       "src": "https://www.fifa.com/en/tournaments/womens/womensworldcup/australia-new-zealand2023/articles/womens-world-cup-champions-norway-usa-japan-germany-australia-new-zealand-2023",
       "d": 2
@@ -485,7 +485,7 @@
       "w": "Jesolo",
       "means": "An Italian beach town, in 1985",
       "ex": "The USA women’s team played its first games in Jesolo",
-      "hook": "first games",
+      "hook": "USA",
       "k": "place",
       "src": "https://www.ussoccer.com/history/timeline",
       "d": 3
@@ -495,7 +495,7 @@
       "means": "The award for the best player",
       "ex": "Aitana Bonmatí won the Golden Ball at the 2023 World Cup",
       "hook": "Bonmatí",
-      "k": "term",
+      "k": "award",
       "src": "https://www.fifa.com/en/tournaments/womens/womensworldcup/australia-new-zealand2023/articles/fifa-womens-world-cup-awards-2023-all-the-winners",
       "d": 2
     },
@@ -504,7 +504,7 @@
       "means": "For her five goals",
       "ex": "Hinata Miyazawa won the Golden Boot at the 2023 World Cup",
       "hook": "Miyazawa",
-      "k": "term",
+      "k": "award",
       "src": "https://www.fifa.com/en/tournaments/womens/womensworldcup/australia-new-zealand2023/articles/hinata-miyazawa-japan-nadeshiko-unexpected-golden-boot-winner-world-cup-2023",
       "d": 3
     },
@@ -513,7 +513,7 @@
       "means": "The award for the top keeper",
       "ex": "Mary Earps won the Golden Glove at the 2023 World Cup",
       "hook": "Mary Earps",
-      "k": "term",
+      "k": "award",
       "src": "https://www.fifa.com/en/tournaments/womens/womensworldcup/australia-new-zealand2023/articles/fifa-womens-world-cup-awards-2023-all-the-winners",
       "d": 2
     },
@@ -558,7 +558,7 @@
       "means": "Named for Brazil’s great scorer",
       "ex": "The FIFA Marta Award honors the year’s best goal in women’s soccer",
       "hook": "best goal",
-      "k": "term",
+      "k": "award",
       "src": "https://www.fifa.com/en/articles/every-marta-goal-womens-world-cup",
       "d": 2
     },
@@ -602,7 +602,7 @@
       "w": "’99ers",
       "means": "The 1999 champions",
       "ex": "The USA players who won the World Cup on home soil are the ’99ers",
-      "hook": "home soil",
+      "hook": "USA",
       "k": "nickname",
       "src": "https://www.ussoccer.com/history/us-soccer-as-host/1999-fifa-womens-world-cup",
       "d": 2

@@ -236,7 +236,7 @@
    "w": "lock in",
    "means": "Focus hard",
    "ex": "Kickoff is in five minutes, so it is time to lock in",
-   "hook": "five minutes",
+   "hook": "kickoff",
    "src": "https://www.merriam-webster.com/slang/lock-in",
    "d": 1
   },
@@ -692,7 +692,7 @@
    "w": "keep it a buck",
    "means": "Be totally honest",
    "ex": "Grandma had to keep it a buck: that penalty was bad",
-   "hook": "Grandma",
+   "hook": "penalty",
    "src": "https://www.merriam-webster.com/slang/keep-it-a-buck",
    "d": 3
   },
@@ -700,7 +700,7 @@
    "w": "kiki",
    "means": "A fun, gossipy hangout",
    "ex": "Two teammates had a 40-minute kiki in the carpool",
-   "hook": "40-minute",
+   "hook": "carpool",
    "src": "https://www.merriam-webster.com/slang/kiki",
    "d": 3
   },
@@ -716,7 +716,7 @@
    "w": "lowkenuinely",
    "means": "Honestly (said casually)",
    "ex": "The defender lowkenuinely loved the 6 a.m. tournament",
-   "hook": "6 a.m.",
+   "hook": "tournament",
    "src": "https://www.merriam-webster.com/slang/lowkenuinely",
    "d": 2
   },

@@ -81,7 +81,7 @@
    "w": "Tampa Bay Mutiny",
    "means": "Best record in the league’s first season",
    "ex": "The Tampa Bay Mutiny won the first Supporters’ Shield, in 1996",
-   "hook": "1996",
+   "hook": "Shield",
    "k": "club",
    "src": "https://www.mlssoccer.com/news/philadelphia-union-win-2025-supporters-shield",
    "d": 3
@@ -99,7 +99,7 @@
    "w": "FC Cincinnati",
    "means": "Their first Supporters’ Shield",
    "ex": "FC Cincinnati won the Supporters’ Shield in 2023",
-   "hook": "2023",
+   "hook": "Shield",
    "k": "club",
    "src": "https://www.mlssoccer.com/news/philadelphia-union-win-2025-supporters-shield",
    "d": 3
@@ -190,7 +190,7 @@
    "w": "Gareth Bale",
    "means": "LAFC then won it on penalties",
    "ex": "Gareth Bale’s 128th-minute header tied MLS Cup 2022 for LAFC",
-   "hook": "128th-minute",
+   "hook": "MLS Cup 2022",
    "k": "player",
    "src": "https://www.mlssoccer.com/news/los-angeles-football-club-win-first-mls-cup-in-club-history-defeating-the-philad",
    "d": 2
@@ -199,7 +199,7 @@
    "w": "Eric Wynalda",
    "means": "San Jose beat D.C. United 1–0",
    "ex": "Eric Wynalda scored the only goal of MLS’s first-ever game",
-   "hook": "only goal",
+   "hook": "MLS",
    "k": "player",
    "src": "https://www.mlssoccer.com/news/league-born-oral-history-inaugural-mls-match",
    "d": 3
@@ -217,7 +217,7 @@
    "w": "Jordan Morris",
    "means": "He passed Raúl Ruidíaz for the record",
    "ex": "Jordan Morris has scored the most goals in Sounders history",
-   "hook": "most goals",
+   "hook": "Sounders",
    "k": "player",
    "src": "https://www.mlssoccer.com/news/club-legend-jordan-morris-breaks-seattle-sounders-scoring-record",
    "d": 2,
@@ -330,7 +330,7 @@
    "w": "Crew Stadium",
    "means": "It hosted MLS Cup 2001",
    "ex": "Opened in 1999, Crew Stadium was MLS’s first soccer-specific stadium",
-   "hook": "1999",
+   "hook": "MLS",
    "k": "stadium",
    "src": "https://www.mlssoccer.com/news/timeline-of-every-new-soccer-stadium-in-mls",
    "d": 3
@@ -396,7 +396,7 @@
    "w": "1996",
    "means": "San Jose beat D.C. United 1–0",
    "ex": "MLS played its first-ever game in 1996",
-   "hook": "first-ever",
+   "hook": "MLS",
    "k": "year",
    "src": "https://www.mlssoccer.com/news/league-born-oral-history-inaugural-mls-match",
    "d": 2
@@ -497,7 +497,7 @@
    "w": "74",
    "means": "It won them the 2024 Supporters’ Shield",
    "ex": "Inter Miami set an MLS points record of 74 in 2024",
-   "hook": "MLS points",
+   "hook": "Inter Miami",
    "k": "number",
    "src": "https://www.mlssoccer.com/news/nashville-sc-tracker-supporters-shield-mls-points-record",
    "d": 2,

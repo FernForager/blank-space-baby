@@ -36,7 +36,7 @@
       "w": "Cristiano Ronaldo",
       "means": "He scored twice against Uzbekistan",
       "ex": "In 2026, Cristiano Ronaldo became the first player to score at six World Cups",
-      "hook": "2026",
+      "hook": "World Cups",
       "k": "player",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/cristiano-ronaldo-portugal-goal-record",
       "d": 1
@@ -63,7 +63,7 @@
       "w": "Johan Cruyff",
       "means": "Jan Olsson was the one fooled",
       "ex": "The famous turn that wowed the 1974 World Cup is named for Johan Cruyff",
-      "hook": "turn",
+      "hook": "famous turn",
       "k": "player",
       "src": "https://www.fifa.com/en/articles/quotes-about-johan-cruyff-netherlands-ajax-barcelona-legend-total-football",
       "d": 2
@@ -81,7 +81,7 @@
       "w": "Marta",
       "means": "The first one was for 2024",
       "ex": "FIFA’s award for the best goal in women’s soccer is named after Marta",
-      "hook": "women’s",
+      "hook": "best goal",
       "k": "player",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2024/articles/marta-award-nominees",
       "d": 2,
@@ -110,7 +110,7 @@
       "w": "Gary Lineker",
       "means": "Including a hat trick against Poland",
       "ex": "Gary Lineker won the Golden Boot at the 1986 World Cup with six goals",
-      "hook": "six goals",
+      "hook": "Golden Boot",
       "k": "player",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/gary-lineker-england-goals-1986",
       "d": 3
@@ -119,7 +119,7 @@
       "w": "Luka Modrić",
       "means": "Croatia reached the final that year",
       "ex": "Luka Modrić won the Golden Ball at the 2018 World Cup",
-      "hook": "2018",
+      "hook": "Golden Ball",
       "k": "player",
       "src": "https://www.fifa.com/en/articles/100-great-world-cup-moments-qatar-2022-13-modric-croatia-2018-golden-ball",
       "d": 2
@@ -146,7 +146,7 @@
       "w": "Mário Zagallo",
       "means": "Player in 1958 and 1962, coach in 1970",
       "ex": "Mário Zagallo was the first to win the World Cup as a player and as a coach",
-      "hook": "coach",
+      "hook": "World Cup",
       "k": "player",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/zagallo-beckenbauer-deschamps-record",
       "d": 3
@@ -155,7 +155,7 @@
       "w": "Miroslav Klose",
       "means": "Silver, bronze, bronze, then gold",
       "ex": "Miroslav Klose won World Cup medals at four straight tournaments, 2002–2014",
-      "hook": "medals",
+      "hook": "World Cup",
       "k": "player",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/miroslav-klose-four-medals",
       "d": 3
@@ -164,7 +164,7 @@
       "w": "Geoff Hurst",
       "means": "His third goal came in the 120th minute",
       "ex": "Geoff Hurst scored the first hat trick in a World Cup final, in 1966",
-      "hook": "1966",
+      "hook": "hat trick",
       "k": "player",
       "src": "https://www.fifa.com/en/articles/100-great-world-cup-moments-qatar-2022-66-geoff-hurst-england-1966",
       "d": 3
@@ -183,7 +183,7 @@
       "w": "Megan Rapinoe",
       "means": "She also scored in the 2–0 final",
       "ex": "Megan Rapinoe won the Golden Ball and Golden Boot at the 2019 Women’s World Cup",
-      "hook": "2019",
+      "hook": "Golden Ball",
       "k": "player",
       "src": "https://www.fifa.com/en/tournaments/womens/womensworldcup/australia-new-zealand2023/articles/megan-rapinoe-usa-golden-ball-world-cup-australia-new-zealand-countdown",
       "d": 1,
@@ -203,7 +203,7 @@
       "w": "Alex Morgan",
       "means": "World champion in 2015 and 2019",
       "ex": "Alex Morgan retired in 2024 with 123 goals for the USA",
-      "hook": "123 goals",
+      "hook": "USA",
       "k": "player",
       "src": "https://www.fifa.com/en/news/articles/alex-morgan-retires-usa",
       "d": 1,
@@ -252,7 +252,7 @@
       "w": "Cafu",
       "means": "He captained Brazil in the third one",
       "ex": "Cafu was the first man to play in three World Cup finals",
-      "hook": "finals",
+      "hook": "World Cup",
       "k": "player",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/cafu-brazil-three-finals",
       "d": 3
@@ -352,7 +352,7 @@
       "w": "Cameroon",
       "means": "They reached the quarterfinals",
       "ex": "Roger Milla scored four goals for Cameroon at the 1990 World Cup, aged 38",
-      "hook": "four goals",
+      "hook": "Roger Milla",
       "k": "nation",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/roger-milla-oldest-goalscorer-cameroon",
       "d": 2
