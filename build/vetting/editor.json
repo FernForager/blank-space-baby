@@ -842,6 +842,366 @@
   "h": "bb16f6d85b",
   "v": "ok"
  },
+ "lingo-more:0": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "14c3ce7ddd",
+  "note": "“floated a” leans toward lob but every answer fits the grammar",
+  "v": "ok"
+ },
+ "lingo-more:1": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "9bd76733d4",
+  "v": "ok"
+ },
+ "lingo-more:10": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "1a02b5d2e5",
+  "v": "ok"
+ },
+ "lingo-more:11": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "9977d53a3f",
+  "v": "ok"
+ },
+ "lingo-more:12": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "a8c9960e7d",
+  "v": "ok"
+ },
+ "lingo-more:13": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "233c938df3",
+  "v": "ok"
+ },
+ "lingo-more:14": {
+  "at": "2026-10-16T23:56:48Z",
+  "fix": {
+   "ex": "The coach and the trainer must stay in the technical area"
+  },
+  "h": "1f530d796b",
+  "note": "Cut a trailing phrase the means line already covers",
+  "v": "fix"
+ },
+ "lingo-more:15": {
+  "at": "2026-10-16T23:56:48Z",
+  "fix": {
+   "ex": "The ball sat in the midfield, halfway between the two goals"
+  },
+  "h": "6e42c90243",
+  "note": "Other answers need “the,” so “in midfield” gave it away",
+  "v": "fix"
+ },
+ "lingo-more:16": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "b7f6949e47",
+  "v": "ok"
+ },
+ "lingo-more:17": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "1518bf2e79",
+  "v": "ok"
+ },
+ "lingo-more:18": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "12b23b8461",
+  "v": "ok"
+ },
+ "lingo-more:19": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "0c134c08d5",
+  "note": "Means repeats the sentence. Left for the soccer expert to add something",
+  "v": "ok"
+ },
+ "lingo-more:2": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "b1c0442d76",
+  "v": "ok"
+ },
+ "lingo-more:20": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "b2a9ddb866",
+  "v": "ok"
+ },
+ "lingo-more:21": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "be71e4cd4b",
+  "v": "ok"
+ },
+ "lingo-more:22": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "a460e5b7f9",
+  "v": "ok"
+ },
+ "lingo-more:23": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "e9e70f4b6e",
+  "v": "ok"
+ },
+ "lingo-more:24": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "1bb204acb2",
+  "v": "ok"
+ },
+ "lingo-more:25": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "6477758fd5",
+  "v": "ok"
+ },
+ "lingo-more:26": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "82bf215dd3",
+  "note": "adjective blank, so noun wrong answers read as nonsense. Needs its own kind, not a rewrite",
+  "v": "ok"
+ },
+ "lingo-more:27": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "f3ea3c3360",
+  "note": "“a onside” reads as nonsense, other answers fit",
+  "v": "ok"
+ },
+ "lingo-more:28": {
+  "at": "2026-10-16T23:56:48Z",
+  "fix": {
+   "ex": "The ball rolled out over the sideline, so the defender took a throw-in"
+  },
+  "h": "0659dcc4dd",
+  "note": "“Out along the sideline” is unclear, the ball must cross it",
+  "v": "fix"
+ },
+ "lingo-more:29": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "5bb2899f80",
+  "v": "ok"
+ },
+ "lingo-more:3": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "1dc106f61a",
+  "v": "ok"
+ },
+ "lingo-more:30": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "12b886837d",
+  "note": "“a onside” reads as nonsense, other answers fit",
+  "v": "ok"
+ },
+ "lingo-more:31": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "5e7a4268fc",
+  "v": "ok"
+ },
+ "lingo-more:32": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "5fdc5e61f6",
+  "v": "ok"
+ },
+ "lingo-more:33": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "d24e7219ee",
+  "note": "“At ___” with no article rules out count-noun wrong answers. “the halftime break” is redundant, so a kind fix is better",
+  "v": "ok"
+ },
+ "lingo-more:34": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "02e26efa92",
+  "note": "“for ___” has no article, so count-noun answers like bye or rematch read ungrammatically. Grammar hints at the answer. Needs a sentence the soccer expert can live with or a k change",
+  "v": "ok"
+ },
+ "lingo-more:35": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "8a443c3c6a",
+  "v": "ok"
+ },
+ "lingo-more:36": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "278d2a125f",
+  "v": "ok"
+ },
+ "lingo-more:37": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "28c5ede5f3",
+  "v": "ok"
+ },
+ "lingo-more:38": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "450685db69",
+  "v": "ok"
+ },
+ "lingo-more:39": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "1556f096a0",
+  "v": "ok"
+ },
+ "lingo-more:4": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "0e9258e411",
+  "v": "ok"
+ },
+ "lingo-more:40": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "727e1c5782",
+  "v": "ok"
+ },
+ "lingo-more:41": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "9cfb8cba80",
+  "v": "ok"
+ },
+ "lingo-more:42": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "c2186d9ca1",
+  "note": "Adjective slot. Noun answers read as noun adjuncts, but “a away goal” clashes",
+  "v": "ok"
+ },
+ "lingo-more:43": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "70e6e85451",
+  "note": "“a away goal” and “a goalless” read oddly, rest fit",
+  "v": "ok"
+ },
+ "lingo-more:44": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "e8daeac4e4",
+  "v": "ok"
+ },
+ "lingo-more:45": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "0ef771c56f",
+  "v": "ok"
+ },
+ "lingo-more:46": {
+  "at": "2026-10-16T23:56:48Z",
+  "fix": {
+   "ex": "Under the silver goal rule, the team ahead halfway through extra time won"
+  },
+  "h": "64c83e3540",
+  "note": "Gerund subject and vague “wins it” read clumsily",
+  "v": "fix"
+ },
+ "lingo-more:47": {
+  "at": "2026-10-16T23:56:48Z",
+  "fix": {
+   "ex": "In some cups, each away goal once counted for more than a home goal"
+  },
+  "h": "eb85c8ab6c",
+  "note": "“an ___” fit only away goal",
+  "v": "fix"
+ },
+ "lingo-more:48": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "dee796ca7f",
+  "v": "ok"
+ },
+ "lingo-more:49": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "eb1b0a8d12",
+  "v": "ok"
+ },
+ "lingo-more:5": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "536baabac8",
+  "v": "ok"
+ },
+ "lingo-more:50": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "ca739810e0",
+  "v": "ok"
+ },
+ "lingo-more:51": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "a6f8fb3850",
+  "v": "ok"
+ },
+ "lingo-more:52": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "f974ccb688",
+  "v": "ok"
+ },
+ "lingo-more:53": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "81474859f9",
+  "v": "ok"
+ },
+ "lingo-more:54": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "6e0504e4d5",
+  "v": "ok"
+ },
+ "lingo-more:55": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "3cab6c44e5",
+  "v": "ok"
+ },
+ "lingo-more:56": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "b73a68ab59",
+  "v": "ok"
+ },
+ "lingo-more:57": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "cd7c12b492",
+  "v": "ok"
+ },
+ "lingo-more:58": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "804071aa86",
+  "v": "ok"
+ },
+ "lingo-more:59": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "e165984dad",
+  "v": "ok"
+ },
+ "lingo-more:6": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "0ba8ec2336",
+  "v": "ok"
+ },
+ "lingo-more:60": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "9fcb5327ae",
+  "v": "ok"
+ },
+ "lingo-more:61": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "f8031fdfea",
+  "v": "ok"
+ },
+ "lingo-more:62": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "344076f79e",
+  "v": "ok"
+ },
+ "lingo-more:63": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "9fbfc4c98d",
+  "v": "ok"
+ },
+ "lingo-more:64": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "d3495552d2",
+  "v": "ok"
+ },
+ "lingo-more:65": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "926007b4c3",
+  "v": "ok"
+ },
+ "lingo-more:7": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "bfd2e52ffd",
+  "v": "ok"
+ },
+ "lingo-more:8": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "1accd5dbb3",
+  "note": "over the post or midfield reads oddly but the card works",
+  "v": "ok"
+ },
+ "lingo-more:9": {
+  "at": "2026-10-16T23:56:48Z",
+  "h": "3f40d80e3d",
+  "v": "ok"
+ },
  "parents:0": {
   "at": "2026-10-16T23:55:41Z",
   "h": "353220e0e1",
