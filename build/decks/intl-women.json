@@ -52,8 +52,8 @@
     {
       "w": "England",
       "means": "Beat Germany, then Spain",
-      "ex": "England won the Women’s EURO in 2022 and again in 2025",
-      "hook": "Women’s EURO",
+      "ex": "England won the Women’s Euro in 2022 and again in 2025",
+      "hook": "Women’s Euro",
       "k": "country",
       "src": "https://www.uefa.com/womenseuro/news/0276-1574551cc7a7-6f3161f07484-1000--who-has-won-women-s-euro-champions-teams-players-scorers-a/",
       "d": 2
@@ -69,8 +69,8 @@
     },
     {
       "w": "Netherlands",
-      "means": "Its first Women’s EURO title",
-      "ex": "Hosts Netherlands won the 2017 Women’s EURO, beating Denmark 4–2",
+      "means": "Its first Women’s Euro title",
+      "ex": "Hosts Netherlands won the 2017 Women’s Euro, beating Denmark 4–2",
       "hook": "Denmark",
       "k": "country",
       "src": "https://www.uefa.com/womenseuro/news/025c-0f3d8c8dca0d-e92ea4d4e4c2-1000--2017-final-netherlands-4-2-denmark/",
@@ -106,8 +106,8 @@
     {
       "w": "Switzerland",
       "means": "England won it on penalties",
-      "ex": "Switzerland hosted the Women’s EURO in 2025",
-      "hook": "Women’s EURO",
+      "ex": "Switzerland hosted the Women’s Euro in 2025",
+      "hook": "Women’s Euro",
       "k": "country",
       "src": "https://www.uefa.com/womenseuro/news/0288-199924f77c1f-b767cd925cf2-1000--women-s-euro-2025-in-switzerland-match-schedule-all-the-re/",
       "d": 2
@@ -234,8 +234,8 @@
     {
       "w": "Chloe Kelly",
       "means": "She came off the bench to do it",
-      "ex": "Chloe Kelly scored England’s extra-time winner in the 2022 EURO final",
-      "hook": "2022 EURO",
+      "ex": "Chloe Kelly scored England’s extra-time winner in the 2022 Euro final",
+      "hook": "2022 Euro",
       "k": "player",
       "src": "https://www.uefa.com/womenseuro/news/0277-15c1d9745f40-baafd6e58b36-1000--england-2-1-germany-aet-kelly-gives-lionesses-wembley-fin/",
       "d": 2
@@ -280,8 +280,8 @@
     {
       "w": "Sarina Wiegman",
       "means": "Netherlands, then England twice",
-      "ex": "Sarina Wiegman won three Women’s EUROs in a row with two countries",
-      "hook": "EUROs",
+      "ex": "Sarina Wiegman won three Women’s Euros in a row with two countries",
+      "hook": "Euros",
       "k": "coach",
       "src": "https://www.uefa.com/womenseuro/news/0277-15bb2c72e55a-54e4f81bc686-1000--women-s-euro-coach-records-sarina-wiegman-breaks-another-r/",
       "d": 2
@@ -325,7 +325,7 @@
     {
       "w": "1984",
       "means": "Beat England on penalties",
-      "ex": "Sweden won the first Women’s EURO in 1984",
+      "ex": "Sweden won the first Women’s Euro in 1984",
       "hook": "Sweden",
       "k": "year",
       "src": "https://www.uefa.com/news-media/news/00ad-0e10872af5f7-1f81f8f6134e-1000--1984-sweden-take-first-title/",
@@ -399,7 +399,7 @@
     {
       "w": "eight",
       "means": "Six of them in a row",
-      "ex": "Germany has won the Women’s EURO a record eight times",
+      "ex": "Germany has won the Women’s Euro a record eight times",
       "hook": "Germany",
       "k": "number",
       "src": "https://www.uefa.com/womenseuro/news/0276-1570ce1f46f2-dced7a2638e9-1000--germany-first-to-50-women-s-euro-games-their-records-titles/",
@@ -466,8 +466,8 @@
     {
       "w": "London",
       "means": "At Wembley, before 87,192 fans",
-      "ex": "The 2022 Women’s EURO final was played in London",
-      "hook": "EURO final",
+      "ex": "The 2022 Women’s Euro final was played in London",
+      "hook": "Euro final",
       "k": "place",
       "src": "https://www.uefa.com/womenseuro/news/0277-15c1d9745f40-baafd6e58b36-1000--england-2-1-germany-aet-kelly-gives-lionesses-wembley-fin/",
       "d": 2
@@ -475,8 +475,8 @@
     {
       "w": "Basel",
       "means": "Over Spain, after a 1–1 draw",
-      "ex": "England won the 2025 EURO final on penalties in Basel",
-      "hook": "2025 EURO",
+      "ex": "England won the 2025 Euro final on penalties in Basel",
+      "hook": "2025 Euro",
       "k": "place",
       "src": "https://www.uefa.com/womenseuro/news/029b-1e56a4b43051-3ec6381b01f6-1000--england-1-1-spain-aet-3-1-pens-highlights-lionesses-win-wo/",
       "d": 3
@@ -564,7 +564,7 @@
     },
     {
       "w": "Lionesses",
-      "means": "Back-to-back EURO champions",
+      "means": "Back-to-back Euro champions",
       "ex": "England’s women’s team is nicknamed the Lionesses",
       "hook": "England",
       "k": "nickname",

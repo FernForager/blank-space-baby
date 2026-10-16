@@ -35,7 +35,7 @@
   {
    "w": "3",
    "means": "Several subs at once count as one",
-   "ex": "In top leagues, a team gets 3 chances to make subs, plus half-time",
+   "ex": "In top leagues, a team gets 3 chances to make subs, plus halftime",
    "hook": "make subs",
    "k": "count",
    "src": "https://www.theifab.com/laws/latest/the-players/",
@@ -82,8 +82,8 @@
   {
    "w": "15 minutes",
    "means": "Competition rules set the exact break",
-   "ex": "Half-time may last no longer than 15 minutes",
-   "hook": "half-time",
+   "ex": "Halftime may last no longer than 15 minutes",
+   "hook": "halftime",
    "k": "time",
    "src": "https://www.theifab.com/laws/latest/the-duration-of-the-match/",
    "d": 2
@@ -282,9 +282,9 @@
    "d": 2
   },
   {
-   "w": "kick-off",
+   "w": "kickoff",
    "means": "Also starts each half",
-   "ex": "After a goal is scored, play restarts with a kick-off",
+   "ex": "After a goal is scored, play restarts with a kickoff",
    "hook": "scored",
    "k": "restart",
    "src": "https://www.theifab.com/laws/latest/the-start-and-restart-of-play/",
@@ -489,9 +489,9 @@
    "d": 2
   },
   {
-   "w": "shinguards",
+   "w": "shin guards",
    "means": "Sizing them right is each player’s job",
-   "ex": "A player’s socks must cover the shinguards",
+   "ex": "A player’s socks must cover the shin guards",
    "hook": "socks",
    "k": "gear",
    "src": "https://www.theifab.com/laws/latest/the-players-equipment/",
@@ -571,8 +571,8 @@
   },
   {
    "w": "coin toss",
-   "means": "The winner picks a goal or the kick-off",
-   "ex": "Before a match, the team that wins the coin toss picks a goal or the kick-off",
+   "means": "The winner picks a goal or the kickoff",
+   "ex": "Before a match, the team that wins the coin toss picks a goal or the kickoff",
    "hook": "picks a goal",
    "k": "term",
    "src": "https://www.theifab.com/laws/latest/the-start-and-restart-of-play/",
