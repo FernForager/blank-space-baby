@@ -1,0 +1,21 @@
+# intl-women fact-check (2026-10-16)
+
+66 cards checked. 54 pass. 12 have problems.
+
+Source: fifa.com (including inside.fifa.com, read through FIFA’s own content feed at cxm-api.fifa.com), uefa.com, ussoccer.com
+
+- **[3]** `Japan`: the facts are right, but the means line uses a singular pronoun for a national team, against house style (national teams take plural). Source: https://www.fifa.com/en/articles/every-final-highlights. Fix: means “Their first World Cup title”
+- **[4]** `Spain`: same singular-pronoun slip in the means line. The fact itself is right (FIFA: “the first final for both Spain and England”). Source: https://www.fifa.com/en/articles/every-final-highlights. Fix: means “Their first World Cup final”
+- **[7]** `Netherlands`: same singular-pronoun slip in the means line. The fact is right. Source: https://www.uefa.com/womenseuro/news/0276-1574551cc7a7-6f3161f07484-1000--who-has-won-women-s-euro-champions-teams-players-scorers-a/. Fix: means “Their first Women’s Euro title”
+- **[18]** `Mia Hamm`: the card is right, but the src (the U.S. Soccer timeline) only lists 2001 and doesn’t support the means line’s 2002 repeat. FIFA does: “USA’s Mia Hamm won the first two awards in this category.” Source: https://www.fifa.com/en/articles/a-brief-history-of-the-best. Fix: src https://www.fifa.com/en/articles/a-brief-history-of-the-best
+- **[39]** `2019`: the fact is right (U.S. Soccer: “the first team to go 7-0-0 in the Women’s World Cup”), but “its games” is singular for a national team. Source: https://www.ussoccer.com/history/timeline. Fix: “The USA won all seven of their games at the 2019 World Cup”
+- **[41]** `four`: still true on 2026-10-16 (Brazil 2027 hasn’t been played), but “has won” is singular for a national team. Source: https://www.fifa.com/en/articles/every-final-highlights. Fix: “The USA have won the Women’s World Cup four times”
+- **[42]** `five`: still true, and the means line is confirmed (“four more than any other nation”), but “has won” is singular. Source: https://www.ussoccer.com/stories/2024/08/us-womens-national-team-paris-olympics-highlights-by-the-numbers-stats. Fix: “The USA have won five Olympic gold medals in women’s soccer”
+- **[43]** `eight`: still true (UEFA lists eight titles, six in a row from 1995 to 2013, and England won 2025), but “has won” is singular. Source: https://www.uefa.com/womenseuro/news/0276-1570ce1f46f2-dced7a2638e9-1000--germany-first-to-50-women-s-euro-games-their-records-titles/. Fix: “Germany have won the Women’s Euro a record eight times”
+- **[52]** `Jesolo`: the answer is right, but the means line’s “beach town” could not be confirmed on ussoccer.com. Its pages say only “Jesolo, Italy,” with the first match on August 18, 1985. Source: https://www.ussoccer.com/stories/2026/03/uswnt/learn-the-story-behind-the-first-uswnt-matches-the-85ers-michelle-akers-womens-history-month-mundialito-world-cup. Fix: means “In Italy, in August 1985”, and the same URL as src
+- **[56]** `golden goal`: the card is right, but its src (the U.S. Soccer timeline) only says the final was lost “in overtime.” A different U.S. Soccer page confirms the golden goal: “the lone loss coming to Norway on a ‘golden goal’ in overtime in 2000.” (FIFA’s Olympic medal page wrongly says penalties, so don’t use it here.) Source: https://www.ussoccer.com/stories/2024/08/us-womens-national-team-paris-olympics-highlights-by-the-numbers-stats. Fix: src that URL
+- **[62]** `Matildas`: the 1995 SBS TV poll is confirmed, but the means line “Named for a folk song” is not. FIFA says “there’s considerable debate over the origin of the name” (a mechanical kangaroo, Waltzing Matilda or the poll). Source: https://www.fifa.com/en/tournaments/olympicgames/paris2024/womens/articles/australia-matildas-olympics-profile. Fix: means “Picked over the Soccertoos”
+- **[65]** `’99ers`: the nickname is right, but the src (U.S. Soccer’s 1999 host page) never uses “99ers.” U.S. Soccer’s story “BTC: 99ers Honored in Los Angeles” does. Source: https://www.ussoccer.com/stories/2019/04/btc-uswnt-99ers-honored-in-los-angeles. Fix: src that URL
+
+Also noted, not counted as problems:
+- Hooks: “World Cup” on 14 cards and “USA” on 8, which narrows which of these cards can be dealt together
