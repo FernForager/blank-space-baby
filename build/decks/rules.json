@@ -6,9 +6,9 @@
  "items": [
   {
    "w": "11",
-   "means": "One of them must be the goalkeeper",
-   "ex": "Each team may have at most 11 players on the field",
-   "hook": "players",
+   "means": "A match can’t go on with fewer than 7",
+   "ex": "Each team may have at most 11 players on the field, and one must be the goalkeeper",
+   "hook": "goalkeeper",
    "k": "count",
    "src": "https://www.theifab.com/laws/latest/the-players/",
    "d": 1

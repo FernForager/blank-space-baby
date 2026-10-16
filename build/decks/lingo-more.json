@@ -133,8 +133,8 @@
     {
       "w": "technical area",
       "means": "Coach’s box beside the field",
-      "ex": "The coach has to stay in the technical area at the side of the field",
-      "hook": "coach",
+      "ex": "The coach and the trainer must stay in the technical area at the side of the field",
+      "hook": "trainer",
       "k": "field",
       "src": "https://www.dictionary.com/browse/technical-area",
       "d": 2

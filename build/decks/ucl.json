@@ -435,8 +435,8 @@
   {
    "w": "Waldstadion",
    "means": "Frankfurt won it at home",
-   "ex": "The first women’s final was played at the Waldstadion in 2002",
-   "hook": "2002",
+   "ex": "Umeå lost the first women’s final, in 2002, at the Waldstadion",
+   "hook": "Umeå",
    "k": "venue",
    "src": "https://www.uefa.com/womenschampionsleague/news/0250-0c50f8c5a638-5677bdc4dec5-1000--uefa-women-s-champions-league-history/",
    "d": 3,
@@ -485,8 +485,8 @@
   {
    "w": "Turbine Potsdam",
    "means": "They beat Lyon 7–6 on penalties",
-   "ex": "Turbine Potsdam won the first Women’s Champions League final, in 2010",
-   "hook": "2010",
+   "ex": "Turbine Potsdam won the first Women’s Champions League final, in Getafe in 2010",
+   "hook": "Getafe",
    "k": "wclub",
    "src": "https://www.uefa.com/womenschampionsleague/news/0250-0c50f8c5a638-5677bdc4dec5-1000--uefa-women-s-champions-league-history/",
    "d": 3,
@@ -505,8 +505,8 @@
   {
    "w": "Umeå",
    "means": "Their finals had two legs back then",
-   "ex": "Umeå won the women’s title in both 2003 and 2004",
-   "hook": "2003",
+   "ex": "Umeå won the women’s title in 2003, then again in 2004 after signing Marta",
+   "hook": "Marta",
    "k": "wclub",
    "src": "https://www.uefa.com/womenschampionsleague/news/0250-0c50f8c5a638-5677bdc4dec5-1000--uefa-women-s-champions-league-history/",
    "d": 3,

@@ -234,8 +234,8 @@
   {
    "w": "Didier Deschamps",
    "means": "His last was the bronze final",
-   "ex": "Didier Deschamps set a record for most World Cup games as a coach",
-   "hook": "coach",
+   "ex": "Didier Deschamps passed Helmut Schön for most World Cup games as a coach",
+   "hook": "Helmut Schön",
    "k": "coach",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/records-broken-set",
    "d": 3
@@ -252,8 +252,8 @@
   {
    "w": "New York New Jersey",
    "means": "Spain beat Argentina 1–0 there",
-   "ex": "The final was played in New York New Jersey",
-   "hook": "final",
+   "ex": "Ferran Torres’s extra-time goal won the final in New York New Jersey",
+   "hook": "Torres",
    "k": "city",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/spain-argentina-final-report-highlights",
    "d": 2
@@ -442,8 +442,8 @@
   {
    "w": "104",
    "means": "The biggest World Cup yet",
-   "ex": "The tournament had 104 matches in all",
-   "hook": "matches",
+   "ex": "The World Cup in Canada, Mexico and the USA had 104 matches in all",
+   "hook": "Canada",
    "k": "number",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/knockout-stage-match-schedule-bracket",
    "d": 2

@@ -458,8 +458,8 @@
   {
    "w": "30",
    "means": "San Diego FC was the 30th",
-   "ex": "MLS has 30 clubs",
-   "hook": "clubs",
+   "ex": "MLS has 30 clubs, three of them in Canada",
+   "hook": "Canada",
    "k": "number",
    "src": "https://www.mlssoccer.com/clubs/",
    "d": 1,
@@ -515,8 +515,8 @@
   {
    "w": "Supporters’ Shield",
    "means": "It has been given out since 1996",
-   "ex": "The best regular-season record wins the Supporters’ Shield",
-   "hook": "record",
+   "ex": "Philadelphia won the 2025 Supporters’ Shield for the best regular-season record",
+   "hook": "Philadelphia",
    "k": "trophy",
    "src": "https://www.mlssoccer.com/news/philadelphia-union-win-2025-supporters-shield",
    "d": 2

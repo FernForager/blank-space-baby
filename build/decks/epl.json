@@ -92,8 +92,8 @@
   {
    "w": "20",
    "means": "Each plays the others twice",
-   "ex": "The Premier League has 20 clubs",
-   "hook": "clubs",
+   "ex": "The Premier League has 20 clubs, one tier above the Championship",
+   "hook": "Championship",
    "k": "number",
    "src": "https://www.premierleague.com/en/premier-league-explained",
    "d": 2
@@ -110,8 +110,8 @@
   {
    "w": "380",
    "means": "20 clubs, 38 games each, halved",
-   "ex": "A Premier League season has 380 matches in all",
-   "hook": "matches",
+   "ex": "From August to May, a Premier League season has 380 matches in all",
+   "hook": "August",
    "k": "number",
    "src": "https://www.premierleague.com/en/premier-league-explained",
    "d": 2
@@ -429,8 +429,8 @@
   {
    "w": "1992",
    "means": "Man United won the first title",
-   "ex": "The Premier League began in 1992",
-   "hook": "began",
+   "ex": "The Premier League began in 1992 as England’s new top tier",
+   "hook": "England",
    "k": "year",
    "src": "https://www.premierleague.com/en/premier-league-explained",
    "d": 2

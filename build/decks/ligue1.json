@@ -37,18 +37,18 @@
     {
       "w": "Marseille",
       "means": "Nine league titles in all",
-      "ex": "Marseille won four league titles in a row, from 1988–89 to 1991–92",
-      "hook": "1988–89",
+      "ex": "Marseille won four league titles in a row from 1988–89, three with Chris Waddle",
+      "hook": "Waddle",
       "k": "club",
-      "src": "https://ligue1.com/fr/articles/l1_article_289-le-palmares-des-champions-de-ligue-1",
+      "src": "https://ligue1.com/en/articles/l1_article_198-euro-stars-chris-waddle-england",
       "d": 3,
       "current": false
     },
     {
       "w": "Montpellier",
       "means": "Three points clear of PSG",
-      "ex": "Montpellier won the 2011–12 league title",
-      "hook": "2011–12",
+      "ex": "When Montpellier won the 2011–12 title, owner Louis Nicollin got a fauxhawk",
+      "hook": "Nicollin",
       "k": "club",
       "src": "https://ligue1.com/en/articles/l1_article_2494-montpellier-s-best-moments-in-ligue-1",
       "d": 3,
@@ -307,10 +307,10 @@
     {
       "w": "Geoffroy-Guichard",
       "means": "Stade Geoffroy-Guichard in full",
-      "ex": "Saint-Étienne play home games at Geoffroy-Guichard",
-      "hook": "home games",
+      "ex": "Saint-Étienne play home games at Geoffroy-Guichard, also called the Chaudron",
+      "hook": "Chaudron",
       "k": "stadium",
-      "src": "https://ligue1.com/en/articles/l1_article_605-season-preview-16-saint-etienne",
+      "src": "https://ligue1.com/en/articles/l1_article_2378-stassin-the-derby-hero-as-saint-etienne-stun-ol",
       "d": 3,
       "current": true
     },
@@ -367,8 +367,8 @@
     {
       "w": "Les Verts",
       "means": "French for “the Greens”",
-      "ex": "Saint-Étienne go by the nickname Les Verts",
-      "hook": "nickname",
+      "ex": "Saint-Étienne, also known as Sainté, go by the nickname Les Verts",
+      "hook": "Sainté",
       "k": "nickname",
       "src": "https://ligue1.com/en/articles/l1_article_605-season-preview-16-saint-etienne",
       "d": 3,

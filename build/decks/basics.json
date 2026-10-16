@@ -718,10 +718,10 @@
     {
       "w": "free kick",
       "means": "In their own box, it’s a penalty kick",
-      "ex": "If a coach runs on and stops the ball in midfield, the other team gets a free kick",
-      "hook": "coach",
+      "ex": "A coach who stops the ball in midfield is sent off, and the opponents get a free kick",
+      "hook": "sent off",
       "k": "restart-type",
-      "src": "https://www.theifab.com/laws/latest/the-players/",
+      "src": "https://www.theifab.com/laws/latest/fouls-and-misconduct/",
       "d": 1
     },
     {
@@ -1186,10 +1186,10 @@
     {
       "w": "VAR",
       "means": "Working with assistants on replays",
-      "ex": "The VAR works in a video room that may be far from the stadium",
-      "hook": "stadium",
+      "ex": "The VAR checks penalty calls from a video room that may be far from the stadium",
+      "hook": "penalty",
       "k": "people-official",
-      "src": "https://www.theifab.com/laws/latest/the-field-of-play/",
+      "src": "https://www.theifab.com/laws/latest/video-assistant-referee-var-protocol/",
       "d": 1
     },
     {
