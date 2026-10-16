@@ -11,7 +11,7 @@ sentence, hook and color he saw.
 """
 import json, sys, os
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DECKS = [('mls','MLS'),('nwsl','NWSL'),('intl-men','International Men’s'),('intl-women','International Women’s'),('wc26','World Cup 2026'),
+DECKS = [('basics','Soccer 101 (new)'),('mls','MLS'),('nwsl','NWSL'),('intl-men','International Men’s'),('intl-women','International Women’s'),('wc26','World Cup 2026'),
          ('laliga','La Liga'),('bundesliga','Bundesliga'),('seriea','Serie A'),('ligue1','Ligue 1'),('ligamx','Liga MX'),('ucl','Champions League'),
          ('rules','Soccer Rules'),('legends','Soccer Legends'),('nicknames','Club Nicknames'),('awards','Awards'),('epl-more','EPL (new cards)'),('lingo-more','Soccer Lingo (new words)'),
          # the decks from the arcade game: only their tile words and colors are new

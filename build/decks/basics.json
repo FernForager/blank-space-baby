@@ -1,0 +1,2450 @@
+{
+  "deck": "Soccer 101",
+  "primary": "theifab.com",
+  "secondary": "merriam-webster.com",
+  "as_of": "2026-10-16",
+  "items": [
+    {
+      "w": "gloves",
+      "means": "The same goes for every player",
+      "ex": "Even for the goalkeeper, wearing her gloves is optional",
+      "hook": "goalkeeper",
+      "k": "game-gear",
+      "src": "https://www.theifab.com/laws/latest/the-players-equipment/",
+      "d": 1
+    },
+    {
+      "w": "shoe",
+      "means": "Replace it by the time the ball goes out",
+      "ex": "A goal still counts if the scorer’s foot lost its shoe by accident",
+      "hook": "scorer",
+      "k": "game-gear",
+      "src": "https://www.theifab.com/laws/latest/the-players-equipment/",
+      "d": 1
+    },
+    {
+      "w": "cleats",
+      "means": "The grips themselves are cleats too",
+      "ex": "Soccer shoes with grips on the bottom are called cleats",
+      "hook": "grips",
+      "k": "game-gear",
+      "src": "https://www.merriam-webster.com/dictionary/cleat",
+      "d": 1
+    },
+    {
+      "w": "armband",
+      "means": "Or the word captain, in one color",
+      "ex": "A captain’s armband may show the letter C",
+      "hook": "letter C",
+      "k": "game-gear",
+      "src": "https://www.theifab.com/laws/latest/the-players-equipment/",
+      "d": 1
+    },
+    {
+      "w": "jewelry",
+      "means": "Leather bands must come off too",
+      "ex": "A rubber band on the wrist must come off, just like any jewelry",
+      "hook": "rubber band",
+      "k": "game-gear",
+      "src": "https://www.theifab.com/laws/latest/the-players-equipment/",
+      "d": 1
+    },
+    {
+      "w": "glasses",
+      "means": "As long as they aren’t dangerous",
+      "ex": "A player who needs help seeing may play in her sports glasses",
+      "hook": "sports",
+      "k": "game-gear",
+      "src": "https://www.theifab.com/laws/latest/the-players-equipment/",
+      "d": 1
+    },
+    {
+      "w": "uniform",
+      "means": "It shows which team a player is on",
+      "ex": "A team’s matching shirts, shorts and socks make up its uniform",
+      "hook": "shorts",
+      "k": "game-gear",
+      "src": "https://www.merriam-webster.com/dictionary/uniform",
+      "d": 1
+    },
+    {
+      "w": "jersey",
+      "means": "Worn as part of a team uniform",
+      "ex": "A team shirt with a player’s name and number on the back is called a jersey",
+      "hook": "number",
+      "k": "game-gear",
+      "src": "https://www.merriam-webster.com/dictionary/jersey",
+      "d": 1
+    },
+    {
+      "w": "shin guard",
+      "means": "Used in several sports, not just soccer",
+      "ex": "The stiff pad covering the front of the leg below the knee is a shin guard",
+      "hook": "knee",
+      "k": "game-gear",
+      "src": "https://www.merriam-webster.com/dictionary/shin%20guard",
+      "d": 1
+    },
+    {
+      "w": "colors",
+      "means": "They must differ from the referee’s too",
+      "ex": "Each team must wear colors that set it apart from the other team",
+      "hook": "set it apart",
+      "k": "game-gear",
+      "src": "https://www.theifab.com/laws/latest/the-players-equipment/",
+      "d": 1
+    },
+    {
+      "w": "goalkeeper",
+      "means": "And from the referees too",
+      "ex": "Each goalkeeper must wear colors that stand out from all the other players",
+      "hook": "colors",
+      "k": "game-who",
+      "src": "https://www.theifab.com/laws/latest/the-players-equipment/",
+      "d": 1
+    },
+    {
+      "w": "goalkeeper",
+      "means": "A teammate takes over and changes shirt",
+      "ex": "Even with its subs used up, a team must keep a goalkeeper on the field",
+      "hook": "subs used up",
+      "k": "game-who",
+      "src": "https://www.theifab.com/laws/latest/the-players/",
+      "d": 1
+    },
+    {
+      "w": "goalkeeper",
+      "means": "Only if it still has subs to use",
+      "ex": "A team may sub in a different goalkeeper just to face a penalty kick",
+      "hook": "penalty kick",
+      "k": "game-who",
+      "src": "https://www.theifab.com/laws/latest/the-players/",
+      "d": 1
+    },
+    {
+      "w": "substitute",
+      "means": "Only at a stoppage, when signaled",
+      "ex": "A substitute may come on only after the player being replaced has left",
+      "hook": "replaced",
+      "k": "game-who",
+      "src": "https://www.theifab.com/laws/latest/the-players/",
+      "d": 1
+    },
+    {
+      "w": "return substitute",
+      "means": "Youth and grassroots games may allow it",
+      "ex": "In youth soccer, a player taken off who later comes back on is a return substitute",
+      "hook": "taken off",
+      "k": "game-who",
+      "src": "https://www.theifab.com/laws/latest/guidelines-for-return-substitutes/",
+      "d": 1
+    },
+    {
+      "w": "starter",
+      "means": "One who plays from the first minute",
+      "ex": "A player in the lineup when the match begins is a starter",
+      "hook": "lineup",
+      "k": "game-who",
+      "src": "https://www.merriam-webster.com/dictionary/starter",
+      "d": 1
+    },
+    {
+      "w": "bench",
+      "means": "Also the seat where they wait",
+      "ex": "A team’s reserve players, waiting for a turn to play, are its bench",
+      "hook": "reserve",
+      "k": "game-who",
+      "src": "https://www.merriam-webster.com/dictionary/bench",
+      "d": 1
+    },
+    {
+      "w": "kicker",
+      "means": "The other keeper waits on the goal line",
+      "ex": "In a shoot-out, all players but the kicker and goalkeepers stay in the center circle",
+      "hook": "circle",
+      "k": "game-who",
+      "src": "https://www.theifab.com/laws/latest/determining-the-outcome-of-a-match/",
+      "d": 1
+    },
+    {
+      "w": "coach",
+      "means": "Players can’t use phones or tablets",
+      "ex": "For tactics, a coach may use a smartwatch, but players may not",
+      "hook": "smartwatch",
+      "k": "game-who",
+      "src": "https://www.theifab.com/laws/latest/the-players-equipment/",
+      "d": 1
+    },
+    {
+      "w": "team official",
+      "means": "So do the coach and other staff",
+      "ex": "A doctor who is listed with the players and subs counts as a team official",
+      "hook": "doctor",
+      "k": "game-who",
+      "src": "https://www.theifab.com/laws/latest/glossary/football-terms/",
+      "d": 1
+    },
+    {
+      "w": "referee",
+      "means": "Spare balls are the referee’s call too",
+      "ex": "During a match, the ball may be changed only with the referee’s permission",
+      "hook": "ball",
+      "k": "game-who",
+      "src": "https://www.theifab.com/laws/latest/the-ball/",
+      "d": 1
+    },
+    {
+      "w": "referee",
+      "means": "Any player on the field may do it",
+      "ex": "At a stoppage, a player may swap with the goalkeeper once the referee is told",
+      "hook": "swap",
+      "k": "game-who",
+      "src": "https://www.theifab.com/laws/latest/the-players/",
+      "d": 1
+    },
+    {
+      "w": "referee",
+      "means": "So is a ball wholly over a boundary line",
+      "ex": "Once the referee stops the game, the ball is out of play",
+      "hook": "out of play",
+      "k": "game-who",
+      "src": "https://www.theifab.com/laws/latest/the-ball-in-and-out-of-play/",
+      "d": 1
+    },
+    {
+      "w": "second half",
+      "means": "Each team now defends the other goal",
+      "ex": "The two teams switch ends and attack the other goal in the second half",
+      "hook": "switch ends",
+      "k": "game-time",
+      "src": "https://www.theifab.com/laws/latest/the-start-and-restart-of-play/",
+      "d": 1
+    },
+    {
+      "w": "final whistle",
+      "means": "Shoot-out kicks come only afterward",
+      "ex": "The match ends at the final whistle, so a shoot-out isn’t part of it",
+      "hook": "match ends",
+      "k": "game-time",
+      "src": "https://www.theifab.com/laws/latest/determining-the-outcome-of-a-match/",
+      "d": 1
+    },
+    {
+      "w": "coin toss",
+      "means": "A second toss picks who kicks first",
+      "ex": "In a shoot-out, the goal for every kick is chosen at the coin toss",
+      "hook": "every kick",
+      "k": "game-time",
+      "src": "https://www.theifab.com/laws/latest/determining-the-outcome-of-a-match/",
+      "d": 1
+    },
+    {
+      "w": "additional time",
+      "means": "Subs and injuries do too",
+      "ex": "Goal celebrations make the additional time longer",
+      "hook": "celebrations",
+      "k": "game-time",
+      "src": "https://www.theifab.com/laws/latest/the-duration-of-the-match/",
+      "d": 1
+    },
+    {
+      "w": "halves",
+      "means": "So can the halves of extra time",
+      "ex": "Youth soccer may play its halves shorter than the usual 45 minutes",
+      "hook": "youth soccer",
+      "k": "game-time",
+      "src": "https://www.theifab.com/laws/latest/general-modifications/",
+      "d": 1
+    },
+    {
+      "w": "regulation",
+      "means": "Extra time and shoot-outs come after",
+      "ex": "Playing time set by the rules, not counting extra time, is called regulation",
+      "hook": "playing time",
+      "k": "game-time",
+      "src": "https://www.merriam-webster.com/dictionary/regulation",
+      "d": 1
+    },
+    {
+      "w": "draw",
+      "means": "Scores like 1–1 and 2–2 are draws",
+      "ex": "When both teams score the same number of goals, the match is a draw",
+      "hook": "same number",
+      "k": "game-result",
+      "src": "https://www.theifab.com/laws/latest/determining-the-outcome-of-a-match/",
+      "d": 1
+    },
+    {
+      "w": "tie",
+      "means": "Both mean the scores are level",
+      "ex": "Another word for a draw is a tie",
+      "hook": "draw",
+      "k": "game-result",
+      "src": "https://www.merriam-webster.com/dictionary/tie",
+      "d": 1
+    },
+    {
+      "w": "forfeit",
+      "means": "Competition rules have the final say",
+      "ex": "A team at fault for having too few players to go on may lose by forfeit",
+      "hook": "too few",
+      "k": "game-result",
+      "src": "https://www.theifab.com/laws/latest/the-players/",
+      "d": 1
+    },
+    {
+      "w": "win",
+      "means": "The other side takes the loss",
+      "ex": "Scoring more goals than the other team means a win",
+      "hook": "more goals",
+      "k": "game-result",
+      "src": "https://www.theifab.com/laws/latest/determining-the-outcome-of-a-match/",
+      "d": 1
+    },
+    {
+      "w": "shoot-out",
+      "means": "Yellow cards don’t carry over",
+      "ex": "A player shown a red card during the match can’t take part in the shoot-out",
+      "hook": "red card",
+      "k": "game-result",
+      "src": "https://www.theifab.com/laws/latest/determining-the-outcome-of-a-match/",
+      "d": 1
+    },
+    {
+      "w": "shoot-out",
+      "means": "Then a lead after equal kicks wins it",
+      "ex": "A shoot-out still level after five kicks each goes on until one team leads",
+      "hook": "five kicks",
+      "k": "game-result",
+      "src": "https://www.theifab.com/laws/latest/determining-the-outcome-of-a-match/",
+      "d": 1
+    },
+    {
+      "w": "shoot-out",
+      "means": "Even before all five kicks are taken",
+      "ex": "A shoot-out ends early once one team can no longer catch up",
+      "hook": "catch up",
+      "k": "game-result",
+      "src": "https://www.theifab.com/laws/latest/determining-the-outcome-of-a-match/",
+      "d": 1
+    },
+    {
+      "w": "challenge",
+      "means": "Tackles and charges are both kinds",
+      "ex": "Competing with an opponent for the ball is called a challenge",
+      "hook": "opponent",
+      "k": "game-play",
+      "src": "https://www.theifab.com/laws/latest/glossary/football-terms/",
+      "d": 1
+    },
+    {
+      "w": "save",
+      "means": "Not just goalkeepers make saves",
+      "ex": "A defender who stops a ball heading into the goal makes a save",
+      "hook": "defender",
+      "k": "game-play",
+      "src": "https://www.theifab.com/laws/latest/glossary/football-terms/",
+      "d": 1
+    },
+    {
+      "w": "kick",
+      "means": "Just making contact is enough",
+      "ex": "Playing the ball with the foot or the ankle counts as a kick",
+      "hook": "ankle",
+      "k": "game-play",
+      "src": "https://www.theifab.com/laws/latest/glossary/football-terms/",
+      "d": 1
+    },
+    {
+      "w": "goal",
+      "means": "And under the crossbar too",
+      "ex": "It’s a goal only when the whole ball is over the line between the posts",
+      "hook": "whole ball",
+      "k": "game-play",
+      "src": "https://www.theifab.com/laws/latest/determining-the-outcome-of-a-match/",
+      "d": 1
+    },
+    {
+      "w": "goal",
+      "means": "The referee rules it out",
+      "ex": "A goal won’t count if the scoring team committed an offense",
+      "hook": "offense",
+      "k": "game-play",
+      "src": "https://www.theifab.com/laws/latest/determining-the-outcome-of-a-match/",
+      "d": 1
+    },
+    {
+      "w": "goal",
+      "means": "Into the other net, it’s a goal kick",
+      "ex": "A goalkeeper who throws the ball into her own net by accident gives up a goal",
+      "hook": "throws",
+      "k": "game-play",
+      "src": "https://www.theifab.com/laws/latest/determining-the-outcome-of-a-match/",
+      "d": 1
+    },
+    {
+      "w": "halfway line",
+      "means": "It joins the middles of both touchlines",
+      "ex": "The halfway line runs across midfield, splitting the field in two",
+      "hook": "midfield",
+      "k": "field-line",
+      "src": "https://www.theifab.com/laws/latest/the-field-of-play/",
+      "d": 1
+    },
+    {
+      "w": "goal line",
+      "means": "Their lines meet it at right angles",
+      "ex": "Both boxes at each end of the field are drawn out from the goal line",
+      "hook": "boxes",
+      "k": "field-line",
+      "src": "https://www.theifab.com/laws/latest/the-field-of-play/",
+      "d": 1
+    },
+    {
+      "w": "halfway line",
+      "means": "Standing on the line itself counts too",
+      "ex": "A player on their own side of the halfway line can’t be offside",
+      "hook": "offside",
+      "k": "field-line",
+      "src": "https://www.theifab.com/laws/latest/offside/",
+      "d": 1
+    },
+    {
+      "w": "sideline",
+      "means": "It meets each goal line at a right angle",
+      "ex": "Another name for the touchline is the sideline",
+      "hook": "touchline",
+      "k": "field-line",
+      "src": "https://www.merriam-webster.com/dictionary/sideline",
+      "d": 1
+    },
+    {
+      "w": "sidelines",
+      "means": "The lines themselves are also sidelines",
+      "ex": "Parents cheer from the sidelines, just outside the field’s long edges",
+      "hook": "parents",
+      "k": "field-line",
+      "src": "https://www.merriam-webster.com/dictionary/sideline",
+      "d": 1
+    },
+    {
+      "w": "pitch",
+      "means": "Touchlines and goal lines bound it",
+      "ex": "Another word for the field of play is the pitch",
+      "hook": "field",
+      "k": "field-area",
+      "src": "https://www.theifab.com/laws/latest/glossary/football-terms/",
+      "d": 1
+    },
+    {
+      "w": "goalmouth",
+      "means": "The space just in front of the goal",
+      "ex": "In soccer and hockey, the goalmouth is the area directly in front of the net",
+      "hook": "hockey",
+      "k": "field-area",
+      "src": "https://www.merriam-webster.com/dictionary/goalmouth",
+      "d": 1
+    },
+    {
+      "w": "center mark",
+      "means": "It’s the midpoint of the halfway line",
+      "ex": "A full circle, 10 yards out, is drawn around the center mark",
+      "hook": "full circle",
+      "k": "field-area",
+      "src": "https://www.theifab.com/laws/latest/the-field-of-play/",
+      "d": 1
+    },
+    {
+      "w": "center circle",
+      "means": "At kickoff, opponents wait outside it",
+      "ex": "The halfway line cuts the center circle into two equal halves",
+      "hook": "equal halves",
+      "k": "field-area",
+      "src": "https://www.theifab.com/laws/latest/the-field-of-play/",
+      "d": 1
+    },
+    {
+      "w": "penalty arc",
+      "means": "Players wait outside it at penalty kicks",
+      "ex": "The penalty arc is the curved line bulging out from the top of the big box",
+      "hook": "curved line",
+      "k": "field-area",
+      "src": "https://www.theifab.com/laws/latest/the-field-of-play/",
+      "d": 1
+    },
+    {
+      "w": "corner arc",
+      "means": "Its radius is just 1 yard",
+      "ex": "The corner arc is the quarter circle drawn around each flagpole",
+      "hook": "flagpole",
+      "k": "field-area",
+      "src": "https://www.theifab.com/laws/latest/the-field-of-play/",
+      "d": 1
+    },
+    {
+      "w": "penalty mark",
+      "means": "The penalty arc is 10 yards from it",
+      "ex": "The penalty mark is the spot in the big box straight out from the goal’s middle",
+      "hook": "spot",
+      "k": "field-area",
+      "src": "https://www.theifab.com/laws/latest/the-field-of-play/",
+      "d": 1
+    },
+    {
+      "w": "technical area",
+      "means": "Lines on the ground mark its edges",
+      "ex": "A doctor may leave the technical area to check a hurt player, with the ref’s OK",
+      "hook": "hurt player",
+      "k": "field-area",
+      "src": "https://www.theifab.com/laws/latest/the-field-of-play/",
+      "d": 1
+    },
+    {
+      "w": "technical area",
+      "means": "Stepping out now and then gets a warning",
+      "ex": "A coach who keeps stepping out of the technical area can be shown a yellow card",
+      "hook": "stepping out",
+      "k": "field-area",
+      "src": "https://www.theifab.com/laws/latest/fouls-and-misconduct/",
+      "d": 1
+    },
+    {
+      "w": "penalty area",
+      "means": "Each line belongs to the area it marks",
+      "ex": "A foul right on the line of the big box counts as inside the penalty area",
+      "hook": "on the line",
+      "k": "field-area",
+      "src": "https://www.theifab.com/laws/latest/the-field-of-play/",
+      "d": 1
+    },
+    {
+      "w": "goalpost",
+      "means": "Square, round or oval all work",
+      "ex": "Each goalpost must be the same shape as the crossbar",
+      "hook": "shape",
+      "k": "field-goal",
+      "src": "https://www.theifab.com/laws/latest/the-field-of-play/",
+      "d": 1
+    },
+    {
+      "w": "net",
+      "means": "It’s an open-mesh fabric",
+      "ex": "Behind the keeper, the net wraps around the sides and back of the goal",
+      "hook": "keeper",
+      "k": "field-goal",
+      "src": "https://www.merriam-webster.com/dictionary/net",
+      "d": 1
+    },
+    {
+      "w": "net",
+      "means": "It must never get in the keeper’s way",
+      "ex": "The net may be fixed to the goal and the ground behind it",
+      "hook": "fixed",
+      "k": "field-goal",
+      "src": "https://www.theifab.com/laws/latest/the-field-of-play/",
+      "d": 1
+    },
+    {
+      "w": "goalpost",
+      "means": "So must the crossbar",
+      "ex": "By rule, every goalpost on a soccer field must be white",
+      "hook": "white",
+      "k": "field-goal",
+      "src": "https://www.theifab.com/laws/latest/the-field-of-play/",
+      "d": 1
+    },
+    {
+      "w": "crossbar",
+      "means": "Play stops until it’s fixed or replaced",
+      "ex": "If the crossbar breaks, a rope can’t be strung between the posts instead",
+      "hook": "rope",
+      "k": "field-goal",
+      "src": "https://www.theifab.com/laws/latest/the-field-of-play/",
+      "d": 1
+    },
+    {
+      "w": "crossbar",
+      "means": "The field’s size can change too",
+      "ex": "In youth soccer, the goal’s width and the height of its crossbar may change",
+      "hook": "youth",
+      "k": "field-goal",
+      "src": "https://www.theifab.com/laws/latest/general-modifications/",
+      "d": 1
+    },
+    {
+      "w": "corner flag",
+      "means": "Its top must not be pointed",
+      "ex": "A corner flag stands at all four points where the boundary lines meet",
+      "hook": "boundary",
+      "k": "field-goal",
+      "src": "https://www.theifab.com/laws/latest/the-field-of-play/",
+      "d": 1
+    },
+    {
+      "w": "kickoff",
+      "means": "The other team kicked off the first half",
+      "ex": "The team that chose a goal at the coin toss takes the second-half kickoff",
+      "hook": "coin toss",
+      "k": "restart-type",
+      "src": "https://www.theifab.com/laws/latest/the-start-and-restart-of-play/",
+      "d": 1
+    },
+    {
+      "w": "kickoff",
+      "means": "Into its own goal, it’s a corner kick",
+      "ex": "A team may score straight from the kickoff that starts each half",
+      "hook": "each half",
+      "k": "restart-type",
+      "src": "https://www.theifab.com/laws/latest/the-start-and-restart-of-play/",
+      "d": 1
+    },
+    {
+      "w": "kickoff",
+      "means": "The kicker can’t touch it twice in a row",
+      "ex": "If a player starts in the wrong half, the kickoff is taken again",
+      "hook": "wrong half",
+      "k": "restart-type",
+      "src": "https://www.theifab.com/laws/latest/the-start-and-restart-of-play/",
+      "d": 1
+    },
+    {
+      "w": "throw-in",
+      "means": "The thrower must face the field, too",
+      "ex": "Players take a throw-in with both hands",
+      "hook": "both hands",
+      "k": "restart-type",
+      "src": "https://www.theifab.com/laws/latest/the-throw-in/",
+      "d": 1
+    },
+    {
+      "w": "throw-in",
+      "means": "Starting above the head isn’t enough",
+      "ex": "At a throw-in, the ball must come from behind and over the head",
+      "hook": "head",
+      "k": "restart-type",
+      "src": "https://www.theifab.com/laws/latest/the-throw-in/",
+      "d": 1
+    },
+    {
+      "w": "throw-in",
+      "means": "Lifting a foot off the ground counts",
+      "ex": "A throw-in done the wrong way is retaken by the other team",
+      "hook": "wrong way",
+      "k": "restart-type",
+      "src": "https://www.theifab.com/laws/latest/the-throw-in/",
+      "d": 1
+    },
+    {
+      "w": "throw-in",
+      "means": "If it lands outside first, throw again",
+      "ex": "A throw-in is in play as soon as the ball enters the field",
+      "hook": "in play",
+      "k": "restart-type",
+      "src": "https://www.theifab.com/laws/latest/the-throw-in/",
+      "d": 1
+    },
+    {
+      "w": "goal kick",
+      "means": "Not just the keeper: any teammate",
+      "ex": "A goal kick is always taken by the defending team",
+      "hook": "defending",
+      "k": "restart-type",
+      "src": "https://www.theifab.com/laws/latest/the-goal-kick/",
+      "d": 1
+    },
+    {
+      "w": "corner kick",
+      "means": "The ball sits in the arc beside it",
+      "ex": "At a corner kick, players may not move the flagpost out of the way",
+      "hook": "flagpost",
+      "k": "restart-type",
+      "src": "https://www.theifab.com/laws/latest/the-corner-kick/",
+      "d": 1
+    },
+    {
+      "w": "corner kick",
+      "means": "Only into the other team’s goal",
+      "ex": "A corner kick that curls straight in from the arc by the flag counts as a goal",
+      "hook": "curls",
+      "k": "restart-type",
+      "src": "https://www.theifab.com/laws/latest/the-corner-kick/",
+      "d": 1
+    },
+    {
+      "w": "corner kick",
+      "means": "Kicked and clearly moving is enough",
+      "ex": "At a corner kick, the ball is in play once kicked, even if it never leaves the arc",
+      "hook": "never leaves",
+      "k": "restart-type",
+      "src": "https://www.theifab.com/laws/latest/the-corner-kick/",
+      "d": 1
+    },
+    {
+      "w": "penalty kick",
+      "means": "Everyone else waits behind the mark",
+      "ex": "At a penalty kick, only the keeper and the player taking it may be in the box",
+      "hook": "box",
+      "k": "restart-type",
+      "src": "https://www.theifab.com/laws/latest/the-penalty-kick/",
+      "d": 1
+    },
+    {
+      "w": "penalty kick",
+      "means": "Stalling the kick isn’t allowed either",
+      "ex": "At a penalty kick, the keeper may not touch the posts or net to distract the shooter",
+      "hook": "net",
+      "k": "restart-type",
+      "src": "https://www.theifab.com/laws/latest/the-penalty-kick/",
+      "d": 1
+    },
+    {
+      "w": "penalty kick",
+      "means": "First a warning, then a yellow card",
+      "ex": "A penalty kick saved by a keeper who left the line early is taken again",
+      "hook": "saved",
+      "k": "restart-type",
+      "src": "https://www.theifab.com/laws/latest/the-penalty-kick/",
+      "d": 1
+    },
+    {
+      "w": "penalty kick",
+      "means": "The defense gets an indirect free kick",
+      "ex": "A teammate who runs into the box early can’t score the rebound of a penalty kick",
+      "hook": "rebound",
+      "k": "restart-type",
+      "src": "https://www.theifab.com/laws/latest/the-penalty-kick/",
+      "d": 1
+    },
+    {
+      "w": "free kick",
+      "means": "In their own box, it’s a penalty kick",
+      "ex": "If a coach runs on and stops the ball in midfield, the other team gets a free kick",
+      "hook": "coach",
+      "k": "restart-type",
+      "src": "https://www.theifab.com/laws/latest/the-players/",
+      "d": 1
+    },
+    {
+      "w": "free kick",
+      "means": "Where the foul happens is what counts",
+      "ex": "A foul just outside the box gives a free kick, even if the player lands inside",
+      "hook": "just outside",
+      "k": "restart-type",
+      "src": "https://www.theifab.com/laws/latest/free-kicks/",
+      "d": 1
+    },
+    {
+      "w": "free kick",
+      "means": "Unless the referee says to wait",
+      "ex": "A team may take a free kick quickly, before the other team sets a wall",
+      "hook": "quickly",
+      "k": "restart-type",
+      "src": "https://www.theifab.com/laws/latest/free-kicks/",
+      "d": 1
+    },
+    {
+      "w": "dropped ball",
+      "means": "Touched in the air, it’s dropped again",
+      "ex": "At a dropped ball, the ball is in play once it touches the ground",
+      "hook": "ground",
+      "k": "restart-type",
+      "src": "https://www.theifab.com/laws/latest/the-start-and-restart-of-play/",
+      "d": 1
+    },
+    {
+      "w": "dropped ball",
+      "means": "Fans and animals are outside agents",
+      "ex": "When a dog runs on and stops the ball, play restarts with a dropped ball",
+      "hook": "dog",
+      "k": "restart-type",
+      "src": "https://www.theifab.com/laws/latest/the-players/",
+      "d": 1
+    },
+    {
+      "w": "halfway line",
+      "means": "Opponents also keep 10 yards back",
+      "ex": "At kickoff, all but the kicker must be on their own side of the halfway line",
+      "hook": "kickoff",
+      "k": "restart-place",
+      "src": "https://www.theifab.com/laws/latest/the-start-and-restart-of-play/",
+      "d": 1
+    },
+    {
+      "w": "sideline",
+      "means": "Officially it’s called the touchline",
+      "ex": "At a throw-in, part of each foot must be on the sideline or the ground behind it",
+      "hook": "each foot",
+      "k": "restart-place",
+      "src": "https://www.theifab.com/laws/latest/the-throw-in/",
+      "d": 1
+    },
+    {
+      "w": "corner arc",
+      "means": "Out over the goal line, off a defender",
+      "ex": "Attackers place the ball in the corner arc nearest to where it went out",
+      "hook": "attackers",
+      "k": "restart-place",
+      "src": "https://www.theifab.com/laws/latest/the-corner-kick/",
+      "d": 1
+    },
+    {
+      "w": "goal line",
+      "means": "Only when the kick is that close to goal",
+      "ex": "At a free kick, defenders within 10 yards must be on the goal line between the posts",
+      "hook": "posts",
+      "k": "restart-place",
+      "src": "https://www.theifab.com/laws/latest/free-kicks/",
+      "d": 1
+    },
+    {
+      "w": "tripping",
+      "means": "It’s a direct free kick foul",
+      "ex": "Making an opponent stumble with a leg, or even trying to, is tripping",
+      "hook": "leg",
+      "k": "fouls-act",
+      "src": "https://www.theifab.com/laws/latest/fouls-and-misconduct/",
+      "d": 1
+    },
+    {
+      "w": "pushing",
+      "means": "Careless ones get a free kick, no card",
+      "ex": "Shoving an opponent in the back, even carelessly, is the foul called pushing",
+      "hook": "back",
+      "k": "fouls-act",
+      "src": "https://www.theifab.com/laws/latest/fouls-and-misconduct/",
+      "d": 1
+    },
+    {
+      "w": "charging",
+      "means": "The arm stays close to the body",
+      "ex": "Bumping an opponent shoulder to shoulder for the ball is called charging",
+      "hook": "shoulder",
+      "k": "fouls-act",
+      "src": "https://www.theifab.com/laws/latest/glossary/football-terms/",
+      "d": 1
+    },
+    {
+      "w": "shielding",
+      "means": "Legal if no arms hold the opponent off",
+      "ex": "Keeping the body between an opponent and the ball is called shielding",
+      "hook": "body",
+      "k": "fouls-act",
+      "src": "https://www.theifab.com/laws/latest/fouls-and-misconduct/",
+      "d": 1
+    },
+    {
+      "w": "tackling",
+      "means": "On the ground or in the air",
+      "ex": "Going for the ball with the foot to win it from an opponent is tackling",
+      "hook": "foot",
+      "k": "fouls-act",
+      "src": "https://www.theifab.com/laws/latest/glossary/football-terms/",
+      "d": 1
+    },
+    {
+      "w": "tackling",
+      "means": "A ball on the ground is fair game",
+      "ex": "Once a keeper puts the ball down to play it, opponents may try tackling her for it",
+      "hook": "ball down",
+      "k": "fouls-act",
+      "src": "https://www.theifab.com/laws/latest/fouls-and-misconduct/",
+      "d": 1
+    },
+    {
+      "w": "kicking",
+      "means": "Too much force brings a red card",
+      "ex": "Swinging a leg at an opponent, even without contact, is the foul called kicking",
+      "hook": "swinging",
+      "k": "fouls-act",
+      "src": "https://www.theifab.com/laws/latest/fouls-and-misconduct/",
+      "d": 1
+    },
+    {
+      "w": "dangerous play",
+      "means": "No contact is needed for the call",
+      "ex": "Trying to play the ball in a way that could hurt someone is dangerous play",
+      "hook": "hurt",
+      "k": "fouls-act",
+      "src": "https://www.theifab.com/laws/latest/fouls-and-misconduct/",
+      "d": 1
+    },
+    {
+      "w": "dangerous play",
+      "means": "The danger to opponents is what counts",
+      "ex": "Bicycle and scissors kicks are legal, unless they count as dangerous play",
+      "hook": "bicycle",
+      "k": "fouls-act",
+      "src": "https://www.theifab.com/laws/latest/fouls-and-misconduct/",
+      "d": 1
+    },
+    {
+      "w": "dangerous play",
+      "means": "It gives an indirect free kick",
+      "ex": "Even a player putting only herself at risk can be called for dangerous play",
+      "hook": "herself",
+      "k": "fouls-act",
+      "src": "https://www.theifab.com/laws/latest/fouls-and-misconduct/",
+      "d": 1
+    },
+    {
+      "w": "handball",
+      "means": "Moving the arm toward the ball does",
+      "ex": "The ball touching a player’s arm isn’t always handball",
+      "hook": "arm",
+      "k": "fouls-act",
+      "src": "https://www.theifab.com/laws/latest/fouls-and-misconduct/",
+      "d": 1
+    },
+    {
+      "w": "handball",
+      "means": "The arm starts below the armpit",
+      "ex": "A ball hitting arms that make the body unnaturally bigger can be called handball",
+      "hook": "bigger",
+      "k": "fouls-act",
+      "src": "https://www.theifab.com/laws/latest/fouls-and-misconduct/",
+      "d": 1
+    },
+    {
+      "w": "offside",
+      "means": "Past means nearer the goal line",
+      "ex": "Lurking past both the ball and the second-to-last opponent can be offside",
+      "hook": "lurking",
+      "k": "fouls-act",
+      "src": "https://www.theifab.com/laws/latest/offside/",
+      "d": 1
+    },
+    {
+      "w": "offside",
+      "means": "The first touch of the pass counts",
+      "ex": "Offside is judged at the moment a teammate plays or touches the ball",
+      "hook": "moment",
+      "k": "fouls-act",
+      "src": "https://www.theifab.com/laws/latest/offside/",
+      "d": 1
+    },
+    {
+      "w": "offside",
+      "means": "Offside still applies at free kicks",
+      "ex": "There’s no offside straight from a goal kick, a throw-in or a corner kick",
+      "hook": "corner kick",
+      "k": "fouls-act",
+      "src": "https://www.theifab.com/laws/latest/offside/",
+      "d": 1
+    },
+    {
+      "w": "offside",
+      "means": "Level counts as onside",
+      "ex": "A player level with the second-to-last opponent can’t be called for offside",
+      "hook": "level",
+      "k": "fouls-act",
+      "src": "https://www.theifab.com/laws/latest/offside/",
+      "d": 1
+    },
+    {
+      "w": "offside",
+      "means": "Being there alone is no offense",
+      "ex": "Being past the second-to-last opponent only becomes offside if the player joins in",
+      "hook": "joins in",
+      "k": "fouls-act",
+      "src": "https://www.theifab.com/laws/latest/offside/",
+      "d": 1
+    },
+    {
+      "w": "free kick",
+      "means": "The ref calls the first foul after all",
+      "ex": "If advantage at midfield fails within a few seconds, the ref awards the free kick",
+      "hook": "advantage",
+      "k": "fouls-call",
+      "src": "https://www.theifab.com/laws/latest/the-referee/",
+      "d": 1
+    },
+    {
+      "w": "free kick",
+      "means": "Even bouncing it, she’s in control",
+      "ex": "Even a gentle challenge on a keeper holding the ball is punished with a free kick",
+      "hook": "challenge",
+      "k": "fouls-call",
+      "src": "https://www.theifab.com/laws/latest/fouls-and-misconduct/",
+      "d": 1
+    },
+    {
+      "w": "yellow card",
+      "means": "Even if the goal is called back",
+      "ex": "Taking off her shirt to celebrate a goal earns a player a yellow card",
+      "hook": "shirt",
+      "k": "fouls-call",
+      "src": "https://www.theifab.com/laws/latest/fouls-and-misconduct/",
+      "d": 1
+    },
+    {
+      "w": "yellow card",
+      "means": "Carrying it away counts too",
+      "ex": "Kicking the ball away after the whistle to waste time earns a player a yellow card",
+      "hook": "ball away",
+      "k": "fouls-call",
+      "src": "https://www.theifab.com/laws/latest/fouls-and-misconduct/",
+      "d": 1
+    },
+    {
+      "w": "yellow card",
+      "means": "Same at free kicks and throw-ins",
+      "ex": "Standing too close at an opponent’s corner kick can earn a player a yellow card",
+      "hook": "too close",
+      "k": "fouls-call",
+      "src": "https://www.theifab.com/laws/latest/fouls-and-misconduct/",
+      "d": 1
+    },
+    {
+      "w": "yellow card",
+      "means": "Once in play: a card plus a free kick",
+      "ex": "At a corner kick, a player who keeps holding after a warning earns a yellow card",
+      "hook": "holding",
+      "k": "fouls-call",
+      "src": "https://www.theifab.com/laws/latest/guidelines/other-advice/",
+      "d": 1
+    },
+    {
+      "w": "yellow card",
+      "means": "Subs can get cards from the bench too",
+      "ex": "A sub who runs onto the field without the referee’s OK earns a yellow card",
+      "hook": "sub",
+      "k": "fouls-call",
+      "src": "https://www.theifab.com/laws/latest/fouls-and-misconduct/",
+      "d": 1
+    },
+    {
+      "w": "yellow card",
+      "means": "Unless the swap is at halftime",
+      "ex": "Swapping with the keeper without telling the ref earns each player a yellow card",
+      "hook": "swapping",
+      "k": "fouls-call",
+      "src": "https://www.theifab.com/laws/latest/the-players/",
+      "d": 1
+    },
+    {
+      "w": "yellow card",
+      "means": "It also gives an indirect free kick",
+      "ex": "Yelling to distract an opponent during play can earn a player a yellow card",
+      "hook": "yelling",
+      "k": "fouls-call",
+      "src": "https://www.theifab.com/laws/latest/fouls-and-misconduct/",
+      "d": 1
+    },
+    {
+      "w": "yellow card",
+      "means": "Putting it back on later does too",
+      "ex": "A player who refuses to take off her jewelry earns a yellow card",
+      "hook": "jewelry",
+      "k": "fouls-call",
+      "src": "https://www.theifab.com/laws/latest/the-players-equipment/",
+      "d": 1
+    },
+    {
+      "w": "red card",
+      "means": "So her team plays a player short",
+      "ex": "During a match, a team can’t bring on a sub to replace a player who gets a red card",
+      "hook": "replace",
+      "k": "fouls-call",
+      "src": "https://www.theifab.com/laws/latest/the-players/",
+      "d": 1
+    },
+    {
+      "w": "red card",
+      "means": "Subs who get one must leave too",
+      "ex": "A player who gets a red card must leave the field and the bench area",
+      "hook": "bench area",
+      "k": "fouls-call",
+      "src": "https://www.theifab.com/laws/latest/fouls-and-misconduct/",
+      "d": 1
+    },
+    {
+      "w": "referee",
+      "means": "Their calls on facts of play are final",
+      "ex": "The referee runs the match, with full authority to enforce the rules",
+      "hook": "rules",
+      "k": "people-official",
+      "src": "https://www.theifab.com/laws/latest/the-referee/",
+      "d": 1
+    },
+    {
+      "w": "referee",
+      "means": "Even the VAR can only advise them",
+      "ex": "The referee always makes the final decision, even after a video review",
+      "hook": "decision",
+      "k": "people-official",
+      "src": "https://www.theifab.com/laws/latest/video-assistant-referee-var-protocol/",
+      "d": 1
+    },
+    {
+      "w": "referee",
+      "means": "They decide if the weather allows play",
+      "ex": "If the floodlights are too dim, the referee may stop or call off the match",
+      "hook": "floodlights",
+      "k": "people-official",
+      "src": "https://www.theifab.com/laws/latest/the-referee/",
+      "d": 1
+    },
+    {
+      "w": "referee",
+      "means": "Slight knocks wait till the ball’s out",
+      "ex": "The referee stops play for a serious injury but not for a slight one",
+      "hook": "injury",
+      "k": "people-official",
+      "src": "https://www.theifab.com/laws/latest/the-referee/",
+      "d": 1
+    },
+    {
+      "w": "referee",
+      "means": "They check that the bleeding has stopped",
+      "ex": "A player who is bleeding may come back only when the referee says so",
+      "hook": "bleeding",
+      "k": "people-official",
+      "src": "https://www.theifab.com/laws/latest/the-referee/",
+      "d": 1
+    },
+    {
+      "w": "referee",
+      "means": "They can send off a coach too",
+      "ex": "The referee can show a yellow card to a coach, not just to players",
+      "hook": "yellow card",
+      "k": "people-official",
+      "src": "https://www.theifab.com/laws/latest/the-referee/",
+      "d": 1
+    },
+    {
+      "w": "referee",
+      "means": "VAR delays count as lost time",
+      "ex": "The referee decides how much time to add for time lost in each half",
+      "hook": "time lost",
+      "k": "people-official",
+      "src": "https://www.theifab.com/laws/latest/the-duration-of-the-match/",
+      "d": 1
+    },
+    {
+      "w": "assistant referee",
+      "means": "One works each side of the field",
+      "ex": "Each assistant referee works along one half of one sideline",
+      "hook": "sideline",
+      "k": "people-official",
+      "src": "https://www.theifab.com/laws/latest/glossary/referee-terms/",
+      "d": 1
+    },
+    {
+      "w": "assistant referee",
+      "means": "Or level with the ball, if it’s nearer",
+      "ex": "On the sideline, the assistant referee keeps level with the second-to-last defender",
+      "hook": "keeps level",
+      "k": "people-official",
+      "src": "https://www.theifab.com/laws/latest/guidelines/positioning-movement-and-teamwork/",
+      "d": 1
+    },
+    {
+      "w": "assistant referee",
+      "means": "They check the ball is placed right",
+      "ex": "At a corner kick, the assistant referee stands behind the corner flag",
+      "hook": "corner flag",
+      "k": "people-official",
+      "src": "https://www.theifab.com/laws/latest/guidelines/positioning-movement-and-teamwork/",
+      "d": 1
+    },
+    {
+      "w": "assistant referee",
+      "means": "They help move players back",
+      "ex": "At a nearby free kick, the assistant referee may step onto the field",
+      "hook": "free kick",
+      "k": "people-official",
+      "src": "https://www.theifab.com/laws/latest/guidelines/positioning-movement-and-teamwork/",
+      "d": 1
+    },
+    {
+      "w": "assistant referee",
+      "means": "Side-to-side steps for short runs",
+      "ex": "To keep facing the field, the assistant referee often runs sideways",
+      "hook": "sideways",
+      "k": "people-official",
+      "src": "https://www.theifab.com/laws/latest/guidelines/positioning-movement-and-teamwork/",
+      "d": 1
+    },
+    {
+      "w": "assistant referee",
+      "means": "Close by, they flag which way it goes",
+      "ex": "When in doubt on a throw-in, the assistant referee follows the referee’s signal",
+      "hook": "throw-in",
+      "k": "people-official",
+      "src": "https://www.theifab.com/laws/latest/guidelines/body-language-communication-and-whistle/",
+      "d": 1
+    },
+    {
+      "w": "assistant referee",
+      "means": "Their partner works the goal line",
+      "ex": "In a shoot-out, one assistant referee watches the players in the center circle",
+      "hook": "shoot-out",
+      "k": "people-official",
+      "src": "https://www.theifab.com/laws/latest/guidelines/positioning-movement-and-teamwork/",
+      "d": 1
+    },
+    {
+      "w": "VAR",
+      "means": "Working with assistants on replays",
+      "ex": "The VAR works in a video room that may be far from the stadium",
+      "hook": "stadium",
+      "k": "people-official",
+      "src": "https://www.theifab.com/laws/latest/the-field-of-play/",
+      "d": 1
+    },
+    {
+      "w": "VAR",
+      "means": "No error found means a “silent check”",
+      "ex": "Coaches don’t need to ask for a review, since the VAR checks every goal",
+      "hook": "coaches",
+      "k": "people-official",
+      "src": "https://www.theifab.com/laws/latest/video-assistant-referee-var-protocol/",
+      "d": 1
+    },
+    {
+      "w": "VAR",
+      "means": "They also choose the replay speed",
+      "ex": "When the referee watches a replay, the VAR picks the best camera angle",
+      "hook": "camera angle",
+      "k": "people-official",
+      "src": "https://www.theifab.com/laws/latest/video-assistant-referee-var-protocol/",
+      "d": 1
+    },
+    {
+      "w": "VAR",
+      "means": "Their room is for approved people only",
+      "ex": "Any player who walks into the VAR’s video room gets a red card",
+      "hook": "red card",
+      "k": "people-official",
+      "src": "https://www.theifab.com/laws/latest/the-field-of-play/",
+      "d": 1
+    },
+    {
+      "w": "VAR",
+      "means": "The VAR checks big calls on its own",
+      "ex": "A player who keeps making the TV signal to ask for the VAR gets a yellow card",
+      "hook": "TV signal",
+      "k": "people-official",
+      "src": "https://www.theifab.com/laws/latest/video-assistant-referee-var-protocol/",
+      "d": 1
+    },
+    {
+      "w": "VAR",
+      "means": "The referee may not give “no decision”",
+      "ex": "The referee must make the first call, and only then can the VAR step in",
+      "hook": "first call",
+      "k": "people-official",
+      "src": "https://www.theifab.com/laws/latest/video-assistant-referee-var-protocol/",
+      "d": 1
+    },
+    {
+      "w": "whistle",
+      "means": "Not needed to restart a throw-in",
+      "ex": "The referee blows the whistle to start each half and to restart after a goal",
+      "hook": "restart",
+      "k": "people-gear",
+      "src": "https://www.theifab.com/laws/latest/guidelines/body-language-communication-and-whistle/",
+      "d": 1
+    },
+    {
+      "w": "whistle",
+      "means": "Kick early: a retake and a yellow card",
+      "ex": "At some free kicks, the referee tells the kicker to wait for the whistle",
+      "hook": "kicker",
+      "k": "people-gear",
+      "src": "https://www.theifab.com/laws/latest/guidelines/body-language-communication-and-whistle/",
+      "d": 1
+    },
+    {
+      "w": "watch",
+      "means": "A must-have, like the whistle",
+      "ex": "As the timekeeper, the referee keeps track of time on their watch",
+      "hook": "timekeeper",
+      "k": "people-gear",
+      "src": "https://www.theifab.com/laws/latest/the-referee/",
+      "d": 1
+    },
+    {
+      "w": "notebook",
+      "means": "Or another way to keep records",
+      "ex": "The referee writes down goals and cards in their notebook",
+      "hook": "cards",
+      "k": "people-gear",
+      "src": "https://www.theifab.com/laws/latest/the-referee/",
+      "d": 1
+    },
+    {
+      "w": "flag",
+      "means": "Always unfurled so it can be seen",
+      "ex": "The assistant referee usually holds the flag in the hand nearest the referee",
+      "hook": "hand",
+      "k": "people-gear",
+      "src": "https://www.theifab.com/laws/latest/guidelines/body-language-communication-and-whistle/",
+      "d": 1
+    },
+    {
+      "w": "headset",
+      "means": "Beep flags are allowed too",
+      "ex": "The referee and assistants may talk to each other over the headset",
+      "hook": "assistants",
+      "k": "people-gear",
+      "src": "https://www.theifab.com/laws/latest/the-referee/",
+      "d": 1
+    },
+    {
+      "w": "armband",
+      "means": "Worn by whoever is captain",
+      "ex": "When the captain is subbed off, another player must wear the armband",
+      "hook": "subbed off",
+      "k": "people-gear",
+      "src": "https://www.theifab.com/laws/latest/the-players/",
+      "d": 1
+    },
+    {
+      "w": "coin",
+      "means": "There’s a new toss before extra time",
+      "ex": "Before the match, the coin must be tossed by the referee, not a captain",
+      "hook": "captain",
+      "k": "people-gear",
+      "src": "https://www.theifab.com/laws/latest/the-start-and-restart-of-play/",
+      "d": 1
+    },
+    {
+      "w": "jewelry",
+      "means": "Harmless accessories are fine",
+      "ex": "Like the players, referees may not wear any jewelry on the field",
+      "hook": "referees",
+      "k": "people-gear",
+      "src": "https://www.theifab.com/laws/latest/the-referee/",
+      "d": 1
+    },
+    {
+      "w": "advantage",
+      "means": "One arm out front works too",
+      "ex": "With both arms stretched forward, the referee signals advantage and play goes on",
+      "hook": "both arms",
+      "k": "people-signal",
+      "src": "https://www.theifab.com/laws/latest/the-referee/",
+      "d": 1
+    },
+    {
+      "w": "review",
+      "means": "Shown again before the final call",
+      "ex": "Drawing a TV screen in the air, the referee signals a video review",
+      "hook": "TV screen",
+      "k": "people-signal",
+      "src": "https://www.theifab.com/laws/latest/video-assistant-referee-var-protocol/",
+      "d": 1
+    },
+    {
+      "w": "check",
+      "means": "The other arm stays stretched out",
+      "ex": "With a finger to the ear, the referee holds up the restart for a VAR check",
+      "hook": "finger",
+      "k": "people-signal",
+      "src": "https://www.theifab.com/laws/latest/video-assistant-referee-var-protocol/",
+      "d": 1
+    },
+    {
+      "w": "substitution",
+      "means": "Flag held flat over the head",
+      "ex": "When a coach wants a new player on, the flag goes up to signal the substitution",
+      "hook": "new player",
+      "k": "people-signal",
+      "src": "https://www.theifab.com/laws/latest/the-other-match-officials/",
+      "d": 1
+    },
+    {
+      "w": "goal",
+      "means": "If unclear, the flag goes up first",
+      "ex": "After a clear goal, the assistant referee runs toward the halfway line, flag down",
+      "hook": "flag down",
+      "k": "people-signal",
+      "src": "https://www.theifab.com/laws/latest/guidelines/positioning-movement-and-teamwork/",
+      "d": 1
+    },
+    {
+      "w": "foul",
+      "means": "The hand used shows who gets the kick",
+      "ex": "A slight wave of the flag shows the referee the foul that happened out of view",
+      "hook": "slight wave",
+      "k": "people-signal",
+      "src": "https://www.theifab.com/laws/latest/guidelines/body-language-communication-and-whistle/",
+      "d": 1
+    },
+    {
+      "w": "goalkeeper",
+      "means": "Lacrosse has goalkeepers too",
+      "ex": "In soccer and hockey, the player who defends the goal is the goalkeeper",
+      "hook": "hockey",
+      "k": "people-team",
+      "src": "https://www.merriam-webster.com/dictionary/goalkeeper",
+      "d": 1
+    },
+    {
+      "w": "forward",
+      "means": "Up front, by the opponent’s goal",
+      "ex": "A forward plays at the front of the formation, near the other team’s goal",
+      "hook": "formation",
+      "k": "people-team",
+      "src": "https://www.merriam-webster.com/dictionary/forward",
+      "d": 1
+    },
+    {
+      "w": "striker",
+      "means": "Strikers strike at the ball",
+      "ex": "The word striker is another name for a soccer forward",
+      "hook": "forward",
+      "k": "people-team",
+      "src": "https://www.merriam-webster.com/dictionary/striker",
+      "d": 1
+    },
+    {
+      "w": "defender",
+      "means": "Field hockey has fullbacks too",
+      "ex": "A fullback is mainly a defender, usually playing near her own goal",
+      "hook": "fullback",
+      "k": "people-team",
+      "src": "https://www.merriam-webster.com/dictionary/fullback",
+      "d": 1
+    },
+    {
+      "w": "captain",
+      "means": "Teammates stay 4.5 yards away",
+      "ex": "In some youth games, only each team’s captain may enter a zone around the referee",
+      "hook": "youth games",
+      "k": "people-team",
+      "src": "https://www.theifab.com/laws/latest/only-the-captain/",
+      "d": 1
+    },
+    {
+      "w": "coach",
+      "means": "Like a teacher for the team",
+      "ex": "The coach teaches players the basics and directs the team’s strategy",
+      "hook": "strategy",
+      "k": "people-team",
+      "src": "https://www.merriam-webster.com/dictionary/coach",
+      "d": 1
+    },
+    {
+      "w": "substitute",
+      "means": "Takes over the spot and the job",
+      "ex": "A substitute comes in during a game to take a teammate’s place",
+      "hook": "teammate",
+      "k": "people-team",
+      "src": "https://www.merriam-webster.com/dictionary/substitute",
+      "d": 1
+    }
+  ],
+  "groups": [
+    [
+      "shirt",
+      "jersey",
+      "uniform",
+      "colors"
+    ],
+    [
+      "gloves",
+      "glasses",
+      "cleats"
+    ],
+    [
+      "substitute",
+      "return substitute"
+    ],
+    [
+      "substitute",
+      "bench"
+    ],
+    [
+      "starter",
+      "return substitute"
+    ],
+    [
+      "regulation",
+      "additional time"
+    ],
+    [
+      "regulation",
+      "halves"
+    ],
+    [
+      "halves",
+      "second half"
+    ],
+    [
+      "second half",
+      "additional time"
+    ],
+    [
+      "halves",
+      "additional time"
+    ],
+    [
+      "draw",
+      "tie"
+    ],
+    [
+      "tackle",
+      "challenge",
+      "charge"
+    ],
+    [
+      "coach",
+      "team official"
+    ],
+    [
+      "armband",
+      "jersey",
+      "shirt",
+      "uniform"
+    ],
+    [
+      "gloves",
+      "armband"
+    ],
+    [
+      "substitute",
+      "goalkeeper"
+    ],
+    [
+      "tackle",
+      "kick"
+    ],
+    [
+      "sideline",
+      "sidelines",
+      "touchline"
+    ],
+    [
+      "center circle",
+      "center mark"
+    ],
+    [
+      "goalpost",
+      "crossbar"
+    ],
+    [
+      "pitch",
+      "field of play"
+    ],
+    [
+      "penalty area",
+      "penalty arc"
+    ],
+    [
+      "goalmouth",
+      "penalty area"
+    ],
+    [
+      "goalmouth",
+      "penalty mark"
+    ],
+    [
+      "pitch",
+      "center circle"
+    ],
+    [
+      "pitch",
+      "penalty area"
+    ],
+    [
+      "pitch",
+      "technical area"
+    ],
+    [
+      "sideline",
+      "touchline"
+    ],
+    [
+      "dropped ball",
+      "drop ball"
+    ],
+    [
+      "kickoff",
+      "kick-off"
+    ],
+    [
+      "charging",
+      "pushing"
+    ],
+    [
+      "charging",
+      "shielding"
+    ],
+    [
+      "charging",
+      "tackling"
+    ],
+    [
+      "pushing",
+      "tackling"
+    ],
+    [
+      "tripping",
+      "tackling"
+    ],
+    [
+      "kicking",
+      "tripping"
+    ],
+    [
+      "kicking",
+      "dangerous play"
+    ],
+    [
+      "kicking",
+      "tackling"
+    ],
+    [
+      "dangerous play",
+      "offside"
+    ],
+    [
+      "handball",
+      "dangerous play"
+    ],
+    [
+      "forward",
+      "striker"
+    ],
+    [
+      "defender",
+      "goalkeeper"
+    ],
+    [
+      "review",
+      "check"
+    ],
+    [
+      "watch",
+      "headset"
+    ],
+    [
+      "goal",
+      "foul"
+    ],
+    [
+      "coach",
+      "captain"
+    ]
+  ],
+  "cut": [
+    {
+      "w": "shirt",
+      "why": "Same fact as another basics card (merge)"
+    },
+    {
+      "w": "tackle",
+      "why": "Same fact as another basics card (merge)"
+    },
+    {
+      "w": "charge",
+      "why": "Same fact as another basics card (merge)"
+    },
+    {
+      "w": "two halves",
+      "why": "Already the means line of the existing 45-minute card (two equal halves make 90)"
+    },
+    {
+      "w": "one goalkeeper",
+      "why": "Already the means line of the existing 11-player card"
+    },
+    {
+      "w": "in play off the post",
+      "why": "No kind gave fair wrong buttons: other ball states were silly or also true"
+    },
+    {
+      "w": "penalty kick as time runs out",
+      "why": "Next to corner or free kicks it is not white, and next to my words the wrong buttons are silly"
+    },
+    {
+      "w": "out of play in the air",
+      "why": "Not white: a new parent would say a ball that curls back is still in play"
+    },
+    {
+      "w": "no goal off the referee",
+      "why": "Not white: a ball off the referee straight in is a dropped ball"
+    },
+    {
+      "w": "goal kick",
+      "why": "A keeper throwing straight into the other goal is not white as a card, so it is a means line"
+    },
+    {
+      "w": "sock tape",
+      "why": "Tape must match the sock: players know it, new parents do not"
+    },
+    {
+      "w": "earrings",
+      "why": "The 2026/27 wording now lets some items be safely covered, too fiddly for white"
+    },
+    {
+      "w": "head covers",
+      "why": "Black or shirt-colored head covers are not basics"
+    },
+    {
+      "w": "youth ball, players, field, goals",
+      "why": "Every wording gave silly wrong buttons, and field and goals belong to the field topic. Kept youth halves only"
+    },
+    {
+      "w": "shoot-out order",
+      "why": "The referee is not told the order, but every wording also fit coaches or subs"
+    },
+    {
+      "w": "whistle",
+      "why": "The whistle starting and ending each half is a referee signal, the people topic"
+    },
+    {
+      "w": "sent off, not replaced",
+      "why": "Fouls and cards topic"
+    },
+    {
+      "w": "abandoned, suspended",
+      "why": "Not white"
+    },
+    {
+      "w": "away goals rule",
+      "why": "Not white"
+    },
+    {
+      "w": "sudden death",
+      "why": "Neither source ties the term to the shoot-out"
+    },
+    {
+      "w": "overtime",
+      "why": "Clashes with extra time and additional time on the same buttons"
+    },
+    {
+      "w": "lineup, roster, team list",
+      "why": "Too close to each other and to starter and bench to be fair"
+    },
+    {
+      "w": "interception",
+      "why": "Needs an before it, which gives it away"
+    },
+    {
+      "w": "spherical",
+      "why": "The ball must be spherical, but no kind gave fair wrong buttons"
+    },
+    {
+      "w": "subs named before kickoff",
+      "why": "Coaches and captains seemed to fit the blank too"
+    },
+    {
+      "w": "loss",
+      "why": "Only restates the win card"
+    },
+    {
+      "w": "shin guards for all",
+      "why": "Every other required item fits the same sentence"
+    },
+    {
+      "w": "kickoff after a goal, coin toss for kickoff",
+      "why": "Already existing cards"
+    },
+    {
+      "w": "stoppage",
+      "why": "The set phrase stoppage in play gave it away, so it is the substitute card’s means line"
+    },
+    {
+      "w": "shirts",
+      "why": "Checker: the Law never says rival keepers’ shirts must differ, only that play goes on if they match and neither has a spare. The plainly stated half is Laws nuance, and in it gloves would fit the blank too"
+    },
+    {
+      "w": "goalkeeper",
+      "why": "Checker: the Law says goalkeepers may wear tracksuit bottoms, not that only they may. Without “only” a coach or referee fits the blank"
+    },
+    {
+      "w": "kicker",
+      "why": "Checker: the Law says the kicker may not deliberately play the ball a second time, with exceptions for accidental double touches. “Just one touch” overstates it, and the deck already has many shoot-out cards"
+    },
+    {
+      "w": "kickoff",
+      "why": "Checker: repeat: the existing kickoff card’s means line is “Also starts each half”, and the restart writer covers extra-time kickoffs"
+    },
+    {
+      "w": "halftime",
+      "why": "Checker: repeat: the existing halftime lingo card’s means line is “Break between the two halves”"
+    },
+    {
+      "w": "extra time",
+      "why": "Checker: near repeat: the existing shoot-out card (“a match still tied after extra time can go to a shoot-out”) and extra time card already teach that extra time follows a tie"
+    },
+    {
+      "w": "tiebreaker",
+      "why": "Checker: repeat: the existing Soccer Fanatics shoot-out card’s means line is “Tiebreaker of shots at the goal”"
+    },
+    {
+      "w": "shoot-out",
+      "why": "Checker: repeat: the existing rules shoot-out card’s means line is “Officially: kicks from the penalty mark”"
+    },
+    {
+      "w": "halfway line",
+      "why": "Same fact as another basics card (merge)"
+    },
+    {
+      "w": "center circle (shoot-out)",
+      "why": "Players who aren’t kicking wait there (Law 10), but a brand-new parent could easily pick technical area or penalty arc, so not white"
+    },
+    {
+      "w": "corner arc (corner kicks start there)",
+      "why": "Any sentence that names the corner kick echoes “corner” in the answer, and it is the restart writer’s “from where” fact"
+    },
+    {
+      "w": "corner flag (can’t be moved at a corner kick)",
+      "why": "Same echo problem, and goalposts can’t be moved either, so the blank has two right answers"
+    },
+    {
+      "w": "corner flag (top can’t be pointed)",
+      "why": "Goalposts must not be dangerous either, so goalpost could also fit. Kept as the corner flag card’s means"
+    },
+    {
+      "w": "goals must be secured to the ground",
+      "why": "A strong safety fact, but no kind gives fair wrong answers: nets may be fixed to the ground too, and “goals” would be a silly wrong button on the other goal cards"
+    },
+    {
+      "w": "nets are optional",
+      "why": "“A goal can be used without a corner flag” is also true, so the blank is ambiguous. Kept as a means line"
+    },
+    {
+      "w": "missing corner flag or gray posts (match can go ahead)",
+      "why": "From the Law 1 FAQ, but nets are optional too, so the blank has two answers"
+    },
+    {
+      "w": "rectangle (the field’s shape)",
+      "why": "A shape kind needs four cards, and the only others (circle, quarter circle, the boxes) were filler or repeated other cards"
+    },
+    {
+      "w": "green turf, grass or hybrid surface",
+      "why": "No kind of four with fair wrong answers"
+    },
+    {
+      "w": "other sports’ lines on turf in a different color",
+      "why": "Useful for families on turf fields, but no kind fits the answer “color”"
+    },
+    {
+      "w": "field and line lengths (100–130 yards and so on)",
+      "why": "Close numbers aren’t white, and far-apart numbers make silly wrong buttons"
+    },
+    {
+      "w": "10 yards (center circle) and 1 yard (corner arc) as answers",
+      "why": "Same measure problem. Both facts sit in means lines instead"
+    },
+    {
+      "w": "halfway-line flagposts",
+      "why": "Optional and rarely seen, and goal line or touchline also reads as right to a beginner"
+    },
+    {
+      "w": "goal-line technology",
+      "why": "Not white, and “goal-line” echoes the answer goal line"
+    },
+    {
+      "w": "penalty arc (keeps players 10 yards back)",
+      "why": "A restart fact, and naming the penalty kick echoes “penalty” in the answer"
+    },
+    {
+      "w": "center mark (the kickoff spot)",
+      "why": "Already in the game: at kickoff the ball sits in the middle of the center circle"
+    },
+    {
+      "w": "goal line (keeper stands on it for a penalty)",
+      "why": "A restart fact, and already the means of the existing penalty kick card"
+    },
+    {
+      "w": "penalty mark (shoot-out kicks)",
+      "why": "The game writer’s topic, and already the means of the existing shoot-out card"
+    },
+    {
+      "w": "technical area (coaches and subs sit there, one coach at a time)",
+      "why": "Both already in the game"
+    },
+    {
+      "w": "crossbar that can’t be fixed (match abandoned)",
+      "why": "A beginner can’t rule out net or corner flag, so not white. Kept the rope fact"
+    },
+    {
+      "w": "coach entering the other team’s technical area",
+      "why": "Coaches may not enter the field at all, so goal area and penalty area would also fit"
+    },
+    {
+      "w": "fourth official oversees the technical area",
+      "why": "The people writer’s topic"
+    },
+    {
+      "w": "unauthorized marks on the field (caution)",
+      "why": "Not white"
+    },
+    {
+      "w": "ads and logos on goals, nets and flags",
+      "why": "Not white, and several answers fit each blank"
+    },
+    {
+      "w": "referee review area and video room",
+      "why": "Not white"
+    },
+    {
+      "w": "six-yard box, 18-yard box, the D, the spot, woodwork, post, upright, box",
+      "why": "No soccer sense on merriam-webster.com or theifab.com (upright is the American football goalpost, and post can’t be blanked without echoing goalpost)"
+    },
+    {
+      "w": "touch (the ball goes into touch)",
+      "why": "British usage, not white for American families"
+    },
+    {
+      "w": "corner (where a sideline meets a goal line)",
+      "why": "Too obvious to teach anything, and the corner flag card covers it"
+    },
+    {
+      "w": "field of play includes the inside of the nets",
+      "why": "Too technical for a basic"
+    },
+    {
+      "w": "ball on the touchline is still in play",
+      "why": "The game writer’s topic (ball in and out of play)"
+    },
+    {
+      "w": "dropped ball inside the penalty area goes to the keeper",
+      "why": "The restart writer’s topic, and not white"
+    },
+    {
+      "w": "goal line (The posts and crossbar stand in the middle of each goal line)",
+      "why": "Repeat: the existing goal line card’s means is “The goal sits in the middle of it” (Soccer Rules), and Lingo has “End line where the goal sits”"
+    },
+    {
+      "w": "touchline (Along the side of the field, the technical area ends 1 yard from the touchline)",
+      "why": "Repeat: the existing technical area card’s means is “Up to 1 yard from the touchline”. Every other white touchline fact (longer line, throw-in when the whole ball crosses) is already in the game too"
+    },
+    {
+      "w": "end line (The goal line is also called the end line)",
+      "why": "Repeat: the existing Lingo goal line card’s means is “End line where the goal sits”, which teaches the same synonym. The writer’s M-W corner kick sourcing was fine"
+    },
+    {
+      "w": "goal area (The goal area is the small box drawn inside the big box)",
+      "why": "Repeat (writer flagged): the existing goal area card’s means is “The smaller box in front of goal”, and the 6-yards card’s means already gives the 6 yards from each post"
+    },
+    {
+      "w": "penalty area (The penalty area is the big box at each end of the field)",
+      "why": "Repeat: the existing Lingo penalty area card’s means is “Big box in front of each goal”, and its 18 yards is the existing 18 yards card"
+    },
+    {
+      "w": "center circle (Like a basketball court, a soccer field has a center circle in its middle)",
+      "why": "Repeat: the existing Lingo center circle card has “At kickoff, the ball sits right in the middle of the center circle” with the means “Ring in the middle of the field”. Only the basketball comparison was new"
+    },
+    {
+      "w": "technical area (Subs and coaches in the technical area must be named before the match)",
+      "why": "Writer’s weakest, and a repeat: “Subs and coaches in the ___” is the existing card “Coaches and subs sit in the technical area”, and the means matches its “Competition rules set who sits there”"
+    },
+    {
+      "w": "crossbar (The crossbar is the top edge of the goal frame)",
+      "why": "Repeat: the existing Lingo crossbar card’s means is “Bar across the top of the goal”"
+    },
+    {
+      "w": "kickoff",
+      "why": "Same fact as another basics card (merge)"
+    },
+    {
+      "w": "throw-in (no goal straight from it)",
+      "why": "Not white as played: a newcomer thinks a goal straight from a kickoff or a goal kick is impossible too, and it does count from both"
+    },
+    {
+      "w": "corner kick (keeper tips it over the bar)",
+      "why": "Not white: many new parents pick goal kick because the keeper touched it last. Also the same rule as the existing defender card"
+    },
+    {
+      "w": "indirect free kick (needs a second touch)",
+      "why": "Borderline white, and the only answer starting with a vowel, so every “a ___” blank in the kind would rule it out by grammar"
+    },
+    {
+      "w": "penalty kick (must be kicked forward)",
+      "why": "Parents who learned the old rule that the kickoff must go forward would pick kickoff, so two answers seem to fit"
+    },
+    {
+      "w": "penalty kick (still taken at the end of a half)",
+      "why": "Not white: newcomers think a last-second corner or free kick also has to be taken"
+    },
+    {
+      "w": "corner kick (goal kick stalling, 2026/27 countdown)",
+      "why": "Brand-new rule and only half deducible, so not white"
+    },
+    {
+      "w": "dropped ball (referee whistles by mistake)",
+      "why": "True (guidelines page) but rare, not a basic, and newcomers may guess kickoff"
+    },
+    {
+      "w": "goalkeeper (dropped ball inside the box)",
+      "why": "Not white: as played, newcomers would pick goal kick for anything the keeper restarts"
+    },
+    {
+      "w": "kickoff (after a goal, the team scored on kicks off)",
+      "why": "The blank would test the existing card’s fact (a goal leads to a kickoff), and no team kind gives fair wrong answers"
+    },
+    {
+      "w": "referee (tosses the coin)",
+      "why": "No kind with believable wrong answers, and the coin toss is already in the game twice"
+    },
+    {
+      "w": "kickoff (opponents outside the center circle)",
+      "why": "Law 8 gives 10 yards from the ball but never names the circle"
+    },
+    {
+      "w": "throw-in (the thrower must face the field)",
+      "why": "Not unique as played: a corner kicker faces the field too. Kept as a means line instead"
+    },
+    {
+      "w": "throw-in (lands outside first, same team throws again)",
+      "why": "Too close to the in-play card. Kept as its means line"
+    },
+    {
+      "w": "throw-in (goes to the team that didn’t touch it last)",
+      "why": "Already in the game (the lingo touchline card)"
+    },
+    {
+      "w": "free kick (ball must be still)",
+      "why": "True of every kick restart, so no single answer fits. Kept as a means line"
+    },
+    {
+      "w": "goal kick (can score straight into the other goal)",
+      "why": "No wording makes goal kick the only fit: kickoffs, corners and free kicks can score directly too"
+    },
+    {
+      "w": "corner kick (assistant referee stands behind the flag)",
+      "why": "Belongs to the people topic, and would be a third flag card for corners"
+    },
+    {
+      "w": "kickoff (ball may go backward)",
+      "why": "The page never says so outright, and a short corner can go backward too"
+    },
+    {
+      "w": "free kick (faking a kick is allowed)",
+      "why": "A fake in the penalty run-up is allowed too, and feinting is already in the game"
+    },
+    {
+      "w": "free kick (lifting the ball with both feet)",
+      "why": "Not white and not deducible from the sentence"
+    },
+    {
+      "w": "dropped ball (ball off the referee straight into the goal)",
+      "why": "Newcomers would expect a goal and pick kickoff"
+    },
+    {
+      "w": "dropped ball (ball girl grabs the ball)",
+      "why": "Same rule as the dog card (outside agent)"
+    },
+    {
+      "w": "free kick (substitute runs on and stops the ball)",
+      "why": "Same rule as the coach card"
+    },
+    {
+      "w": "corner arc (defenders 10 yards away at a corner)",
+      "why": "The sentence can’t say corner kick without echoing the answer, and the workaround read badly"
+    },
+    {
+      "w": "throw-in (taken from where the ball went out)",
+      "why": "Checker: Repeat: the existing Soccer Rules throw-in card’s means line is “Taken where the ball went out”"
+    },
+    {
+      "w": "throw-in (a flip throw is fine if the feet are down)",
+      "why": "Checker: Not on theifab.com: Law 15 never mentions flips, so the sentence is our inference"
+    },
+    {
+      "w": "free kick (taken from where the foul happened)",
+      "why": "Checker: Repeat: the existing indirect free kick card’s means is “Taken from where the offense happened”, and card 21’s means teaches it again"
+    },
+    {
+      "w": "dropped ball (the only restart the referee puts into play)",
+      "why": "Checker: Repeat: the existing drop ball card’s means is “Ref drops it to restart play”. Also “the only restart” is our inference, not the page’s words"
+    },
+    {
+      "w": "dropped ball (ball off the referee to the other team)",
+      "why": "Checker: Not white: a 2019 Law change many parents and kids don’t know (the old rule was “the ref is part of the field”), and free kick is a believable trap"
+    },
+    {
+      "w": "goal line (keeper stays on it at a penalty kick)",
+      "why": "Checker: Repeat: the existing Soccer Rules penalty kick card’s means is “The keeper must stay on the goal line”"
+    },
+    {
+      "w": "offside",
+      "why": "Same fact as another basics card (merge)"
+    },
+    {
+      "w": "yellow card",
+      "why": "Yellow means an official warning and two yellows make a red: both already in the game"
+    },
+    {
+      "w": "dissent",
+      "why": "Arguing with the ref earns a yellow: the existing dissent card already teaches it"
+    },
+    {
+      "w": "simulation",
+      "why": "Faking a foul earns a yellow: already taught by the simulation and dive cards"
+    },
+    {
+      "w": "penalty kick",
+      "why": "A defender’s handball in her own penalty area gives a penalty: same rule as the existing trip card"
+    },
+    {
+      "w": "free kick",
+      "why": "An attacker’s foul in the other team’s penalty area gives a free kick, not a penalty: with no penalty kick button the card can’t test it, and with one it’s a trap"
+    },
+    {
+      "w": "red card",
+      "why": "No advantage on a red card foul unless a goal chance is clear: a beginner may not get it as played"
+    },
+    {
+      "w": "warning",
+      "why": "A coach’s first mild complaint usually gets a warning: beside yellow card it’s a trap, beside free kick it’s silly. Kept as a meaning line"
+    },
+    {
+      "w": "warning",
+      "why": "Holding before a corner kick gets a warning first: a beginner may pick free kick. The yellow card that follows is in"
+    },
+    {
+      "w": "fans",
+      "why": "Fans can’t be shown cards: no kind where the wrong answers are fair"
+    },
+    {
+      "w": "foul",
+      "why": "Breaking a rule against an opponent is a foul: “foul” makes an odd wrong button in the card sentences"
+    },
+    {
+      "w": "careless",
+      "why": "Careless, reckless and excessive force: Laws terms you’d need to have studied"
+    },
+    {
+      "w": "yellow card",
+      "why": "A reckless tackle, repeated fouling, stopping a promising attack or trying to score with a hand: beginners split between yellow and red"
+    },
+    {
+      "w": "red card",
+      "why": "Insulting language, or a coach running on to confront the referee: beginners split between yellow and red"
+    },
+    {
+      "w": "red card",
+      "why": "A foul that denies an obvious goal-scoring chance: too much nuance, and the professional foul card covers the idea"
+    },
+    {
+      "w": "handball",
+      "why": "A keeper throwing the ball straight into the other goal: Law 10 gives a goal kick, so it’s the game topic, and the scoring-off-the-arm card is close"
+    },
+    {
+      "w": "offside",
+      "why": "Offside from a rebound off the post, a keeper’s save or blocking the keeper’s view: not the plainest offside facts"
+    },
+    {
+      "w": "impeding",
+      "why": "Blocking an opponent’s path with the ball out of reach: the Laws term isn’t known to beginners, and Merriam-Webster has no soccer sense of obstruction"
+    },
+    {
+      "w": "striking",
+      "why": "Striking, head-butts, biting and spitting: not kid-safe"
+    },
+    {
+      "w": "violent conduct",
+      "why": "Violent conduct against teammates, officials or fans: violence, and the existing card covers it"
+    },
+    {
+      "w": "booking",
+      "why": "Merriam-Webster has the soccer sense, but it’s British and not white for American families"
+    },
+    {
+      "w": "sin bin",
+      "why": "Temporary dismissals are a youth competition option few US families see, and a sin bin card already exists"
+    },
+    {
+      "w": "penalty kick",
+      "why": "Holding that starts outside the penalty area and goes on inside gives a penalty: beginners split between free kick and penalty"
+    },
+    {
+      "w": "yellow card",
+      "why": "Cards at halftime, after the final whistle or before kickoff, fence climbing, masks, marks on the field: not basics"
+    },
+    {
+      "w": "holding",
+      "why": "Holding only counts if it slows the opponent: too close to the existing holding card"
+    },
+    {
+      "w": "direct free kick",
+      "why": "Contact fouls give a direct free kick and dangerous play without contact an indirect one: direct vs indirect isn’t white, and it’s the restarts topic"
+    },
+    {
+      "w": "sportsmanship",
+      "why": "Merriam-Webster only, outside Laws 11 and 12 and outside this topic"
+    },
+    {
+      "w": "charging",
+      "why": "Laws nuance (fair charging within playing distance), not basics, and a second charging card that leans on another answer, shielding, in its sentence"
+    },
+    {
+      "w": "celebrating",
+      "why": "“Celebrating” is a silly wrong button on every foul and offside card, and silly buttons on this card give it away"
+    },
+    {
+      "w": "handball",
+      "why": "The Laws keep this apart from the handball offence (it’s a keeper handling offence for an indirect free kick, and the sentence drops “deliberately”), and the back-pass rule isn’t white for new parents"
+    },
+    {
+      "w": "free kick",
+      "why": "Not basics: many new parents don’t know a punt can’t be blocked, and a beginner may pick yellow card. “Gives away a” also only fit free kick"
+    },
+    {
+      "w": "yellow card",
+      "why": "Not one right answer: leaving the field in protest is a red card under a competition option, so red isn’t clearly wrong"
+    },
+    {
+      "w": "yellow card",
+      "why": "Coach cards aren’t player basics and a beginner may well pick red for disrespect to the ref. Coach cards are also in w-field and w-people"
+    },
+    {
+      "w": "red card",
+      "why": "Not white: beginners split between yellow and red, and the existing professional foul card covers the idea. Matches the writer’s own cut of the foul version"
+    },
+    {
+      "w": "referee",
+      "why": "Same fact as another basics card (merge)"
+    },
+    {
+      "w": "coach",
+      "why": "Same fact as another basics card (merge)"
+    },
+    {
+      "w": "coach",
+      "why": "Same fact as another basics card (merge)"
+    },
+    {
+      "w": "starter",
+      "why": "Same fact as another basics card (merge)"
+    },
+    {
+      "w": "fourth official",
+      "why": "Not white: a brand-new parent can’t tell the fourth official’s jobs (benches, subs, spare balls) from the assistant referees’, and the added-time board is already a d2 rules card"
+    },
+    {
+      "w": "additional assistant referee",
+      "why": "Not white: the goal-line officials of top matches are unknown to beginners"
+    },
+    {
+      "w": "reserve assistant referee",
+      "why": "Not white"
+    },
+    {
+      "w": "AVAR",
+      "why": "Not white, and already a d2 card in the rules deck"
+    },
+    {
+      "w": "center back",
+      "why": "Merriam-Webster’s only sense is volleyball and water polo, and theifab.com never names it"
+    },
+    {
+      "w": "stopper",
+      "why": "Merriam-Webster has no soccer sense"
+    },
+    {
+      "w": "wingback",
+      "why": "Merriam-Webster’s only sense is American football"
+    },
+    {
+      "w": "libero",
+      "why": "M-W: a soccer sweeper. Not white, and sweeper itself is a d2 card"
+    },
+    {
+      "w": "winger / midfielder / sweeper / halfback / center forward",
+      "why": "The only facts Merriam-Webster gives (plays wide, plays midfield, behind the defenders, behind the forwards, middle of the front line) are already cards in the lingo decks"
+    },
+    {
+      "w": "outside left / inside left / wing half",
+      "why": "Old five-forward positions, not white"
+    },
+    {
+      "w": "goalkeeper (netminder)",
+      "why": "M-W: netminder means goalkeeper, but the only possible hook, netminder, gives the answer away"
+    },
+    {
+      "w": "goalkeeper (shirt color, changing places, one per team)",
+      "why": "Laws 3 and 4 facts, the game writer’s topic"
+    },
+    {
+      "w": "captain (leader of the team)",
+      "why": "M-W fact, but coach also leads the team, and the hook “leader” gives it away"
+    },
+    {
+      "w": "captain (no special status, responsible for the team)",
+      "why": "Already the rules deck’s captain card and its means line"
+    },
+    {
+      "w": "captain (dissent is a yellow, armband or not)",
+      "why": "Repeats the rules card: the captain has no special privileges"
+    },
+    {
+      "w": "captain (may change during play without telling the referee)",
+      "why": "True (Law 3 FAQ) but trivia, not a basic"
+    },
+    {
+      "w": "only the captain may approach the referee",
+      "why": "A competition option until July 1, 2027, and the guideline says “usually the captain.” Kept the youth captain-only zone instead"
+    },
+    {
+      "w": "skipper",
+      "why": "Merriam-Webster gives no soccer-captain sense"
+    },
+    {
+      "w": "ref",
+      "why": "Short for referee, so any sentence echoes the answer"
+    },
+    {
+      "w": "linesman",
+      "why": "Already a lingo card, and the Laws say assistant referee"
+    },
+    {
+      "w": "indirect free kick signal (arm straight up)",
+      "why": "Not white: brand-new parents don’t know it"
+    },
+    {
+      "w": "direct free kick / goal kick / corner kick signals",
+      "why": "Not white, the graphic gives no words for the arm positions, and the sentences would echo “corner” or “goal”"
+    },
+    {
+      "w": "penalty kick signal",
+      "why": "Already a lingo card: the ref points to the spot"
+    },
+    {
+      "w": "offside flag",
+      "why": "Already a lingo card (the linesman raises the flag) and a rules card"
+    },
+    {
+      "w": "throw-in direction flag",
+      "why": "The rules deck’s assistant referee card already says they flag for throw-ins"
+    },
+    {
+      "w": "five-second countdown signal",
+      "why": "Countdown facts are already d2 rules cards"
+    },
+    {
+      "w": "red card / yellow card (referee’s gear)",
+      "why": "The fouls writer’s topic, already in the lingo deck, and “red and yellow ___” only fits a plural answer"
+    },
+    {
+      "w": "body camera",
+      "why": "Law 5 allows it, but not a basic for players or parents"
+    },
+    {
+      "w": "goal-line technology buzzes the referee’s watch",
+      "why": "True (Law 1.11), but pro-level tech, not a basic"
+    },
+    {
+      "w": "whistle used too often has less impact",
+      "why": "A refereeing tip, not a basic, and “blown” gives it away"
+    },
+    {
+      "w": "referee is the timekeeper",
+      "why": "Folded into the watch card instead of a second card with the same fact"
+    },
+    {
+      "w": "referee keeps a record and writes a match report",
+      "why": "Assistants also report on serious incidents, so the blank isn’t clear-cut. Kept the notebook card"
+    },
+    {
+      "w": "VAR is a current or former referee",
+      "why": "“Referee” would also be true in the blank"
+    },
+    {
+      "w": "VAR reviews have no time limit",
+      "why": "The referee’s on-field review is part of the same process, so referee would fit too"
+    },
+    {
+      "w": "VAR can only speak by pushing a button",
+      "why": "Assistant referees signal with buttons on beep flags, so the blank isn’t clear-cut"
+    },
+    {
+      "w": "no qualified stand-in, no VAR",
+      "why": "True (VAR protocol), but trivia, not a basic"
+    },
+    {
+      "w": "VAR categories (goal, penalty, red card, mistaken identity)",
+      "why": "Already the rules deck’s VAR means line"
+    },
+    {
+      "w": "entering the referee review area is a yellow",
+      "why": "As a VAR blank it misleads: the area belongs to the referee"
+    },
+    {
+      "w": "assistant referee watches the keeper at penalty kicks",
+      "why": "The VAR also checks keeper encroachment, so the blank isn’t clear-cut"
+    },
+    {
+      "w": "assistant referee helps with subs at the halfway line",
+      "why": "Not white: beginners would pick the referee"
+    },
+    {
+      "w": "assistant referee may come on in a mass confrontation",
+      "why": "Same fact as the free kick card (may step onto the field), and less basic"
+    },
+    {
+      "w": "assistant referee keeps the flag up until the referee sees it",
+      "why": "Same idea as the eye-contact card"
+    },
+    {
+      "w": "spectator’s whistle stops play",
+      "why": "Its restart (dropped ball) is the restart writer’s topic"
+    },
+    {
+      "w": "whistle blown by mistake means a dropped ball",
+      "why": "The restart writer’s topic"
+    },
+    {
+      "w": "ball hits the referee",
+      "why": "Law 9, the game writer’s topic"
+    },
+    {
+      "w": "referee (halftime)",
+      "why": "Trimmed from 18 referee cards: halftime card power is a nuance, not a basic"
+    },
+    {
+      "w": "referee (shoot-out)",
+      "why": "Trimmed (writer’s suggestion): keeping the shoot-out record is trivia"
+    },
+    {
+      "w": "referee (eye contact)",
+      "why": "Trimmed (writer’s suggestion): “sideline official” reads oddly and eye contact is a refereeing tip"
+    },
+    {
+      "w": "referee (on-field)",
+      "why": "Trimmed: a fourth referee-and-VAR process card beside the final decision, VAR room and replay cards"
+    },
+    {
+      "w": "referee (signals)",
+      "why": "Trimmed: the gear deck’s whistle cards already teach that the referee blows the whistle"
+    },
+    {
+      "w": "referee (video review)",
+      "why": "Trimmed: another VAR-process card for the referee, close to the final decision card"
+    },
+    {
+      "w": "referee (corner flag)",
+      "why": "Trimmed: a lower-level common-sense tip, not a basic"
+    },
+    {
+      "w": "referee (close enough)",
+      "why": "Trimmed (writer’s suggestion): a positioning tip, not a basic"
+    },
+    {
+      "w": "referee (review)",
+      "why": "Same idea as the final decision card, and its sentence names the VAR, one of the three buttons"
+    },
+    {
+      "w": "referee (substitution)",
+      "why": "Not one answer: the guidelines say the assistant referee is also told when a sub is requested"
+    },
+    {
+      "w": "flag (arm)",
+      "why": "Second flag card from the same paragraph, a style tip rather than a basic"
+    },
+    {
+      "w": "captain (letter C)",
+      "why": "Same fact as the rules deck’s armband card (the captain wears it), and the game writer has the letter C card"
+    },
+    {
+      "w": "coach (bench)",
+      "why": "Not a basic, and close to the card that coaches can get cards"
+    }
+  ]
+}

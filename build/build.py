@@ -22,6 +22,7 @@ DAILY = [
     # id            league         flags
     ('alpha',      '',            'slang'),
     ('parents',    '',            'slang'),
+    ('basics',     'basics',      ''),        # Soccer 101: all white, capped at 3 a day like a league
     ('soccer',     '',            ''),
     ('lingo-more', '',            ''),
     ('rules',      '',            'rules'),
