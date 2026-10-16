@@ -1,6 +1,6 @@
 """Play many days of the daily and flag anything broken.
 
-    python3 tools/sweep.py [days] [width] [height] [layout] [page.html]    # defaults: 30 402 744 grid docs/index.html
+    python3 tools/sweep.py [days] [width] [height] [page.html]    # defaults: 30 402 744 docs/index.html
 
 Plays every card of each day (animations off, every answer right), checking each one: three different
 choices with the answer among them, a blank in the sentence, nothing overflowing the screen before or
@@ -13,8 +13,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DAYS = int(sys.argv[1]) if len(sys.argv) > 1 else 30
 W = int(sys.argv[2]) if len(sys.argv) > 2 else 402
 H = int(sys.argv[3]) if len(sys.argv) > 3 else 744
-LAYOUT = sys.argv[4] if len(sys.argv) > 4 else 'grid'
-HTML = open(sys.argv[5] if len(sys.argv) > 5 else os.path.join(ROOT, 'docs', 'index.html')).read()
+HTML = open(sys.argv[4] if len(sys.argv) > 4 else os.path.join(ROOT, 'docs', 'index.html')).read()
 CARD = """() => { const q = document.getElementById('q'), f = document.querySelector('.face');
   return { w: q.dataset.w, ch: [...document.querySelectorAll('.choice')].map(b => b.dataset.w), blank: !!q.querySelector('.blank'),
            ov: q.scrollWidth > q.clientWidth + 1 || f.scrollHeight > f.clientHeight + 1, scroll: document.documentElement.scrollHeight > innerHeight }; }"""
@@ -32,7 +31,7 @@ async def main():
         await pg.route('http://bsb.test/**', lambda r: r.fulfill(body=HTML, content_type='text/html'))
         slots, problems, fonts, cards = collections.Counter(), [], [], 0
         for day in range(1, DAYS + 1):
-            await pg.goto(f'http://bsb.test/?day={day}&board={LAYOUT}&reset'); await pg.wait_for_timeout(250)
+            await pg.goto(f'http://bsb.test/?day={day}&reset'); await pg.wait_for_timeout(250)
             bd = await pg.evaluate(BOARD); fonts.append(bd['min'])
             if bd['over'] or bd['scroll']: problems.append((day, 'board', bd))
             for i in range(18):
@@ -44,7 +43,7 @@ async def main():
                 if await pg.evaluate(AFTER): problems.append((day, i, 'answer screen overflows', st['w']))
                 await pg.click('#flip'); await pg.wait_for_timeout(30 if i < 17 else 1000)
             if await pg.evaluate("document.getElementById('cab').dataset.v") != 'end': problems.append((day, 'no end screen after 18 right'))
-        print(f'{LAYOUT} {W}x{H}: {DAYS} days, {cards} cards, slots {dict(sorted(slots.items()))}, smallest hook font {min(fonts):.1f}px')
+        print(f'{W}x{H}: {DAYS} days, {cards} cards, slots {dict(sorted(slots.items()))}, smallest hook font {min(fonts):.1f}px')
         print('problems:', len(problems))
         for x in problems[:20]: print('  ', x)
         print('JS errors:', errs or 'none'); await b.close()

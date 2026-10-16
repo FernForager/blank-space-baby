@@ -44,7 +44,7 @@ DAILY = [
 ]
 SITE_LEAGUE = {'premierleague.com': 'epl', 'laliga.com': 'laliga', 'bundesliga.com': 'bundesliga', 'legaseriea.it': 'seriea',
                'ligue1.com': 'ligue1', 'ligamx.net': 'ligamx', 'mlssoccer.com': 'mls', 'nwslsoccer.com': 'nwsl'}
-START = [2026, 10, 16]   # the date of puzzle #1. A placeholder: the real numbering is Morg's call.
+START = [2026, 10, 16]   # the date of puzzle #1: launch day (Morg, Oct 16, 2026). A placeholder until that date is set.
 REPEAT_DAYS = 91          # a card never comes back within 3 months, once there are enough cards
 WINDOW = 24               # the draw deals from a shuffle of each color's 24 oldest cards (WINDOW in template.html)
 

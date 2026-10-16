@@ -44,8 +44,10 @@ This repo is **public**. Never commit personal details: no last names, addresses
    ```
    python3 build/build.py            # style check + writes docs/index.html
    python3 tools/screens.py          # every screen at 3 phone sizes → out/
-   python3 tools/sweep.py 60         # plays 60 cards per level, flags problems
+   python3 tools/sweep.py 30         # plays every card of 30 days, flags problems
    python3 tools/sweep.py 30 320 568 # same on the smallest phone
+   python3 tools/drawcheck.py        # a year of draws: guardrails, repeat spacing
+   python3 tools/lifecycle.py        # saving, resuming, locking, the share text, midnight
    ```
    Then look at the screenshots yourself and zoom in on details.
 3. **Open a pull request.** Morg taps **Merge** in the GitHub app or Safari. That merge is his OK to go live.

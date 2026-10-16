@@ -27,7 +27,8 @@
 /* The phone is the cabinet: marquee sign, CRT screen in a black bezel, push-buttons on a black control panel.
    The daily: everyone gets the same 18 cards a day, 6 white (easy), 6 yellow card (medium) and 6 red card (hard).
    Tap any tile. A right answer drops a pentagon chip into the ball, every 6 chips is a goal, one miss ends the day.
-   Two board layouts while Morg compares them: the honeycomb (data-l="hex") and a simpler grid (data-l="grid"). */
+   The board is the grid (Morg's pick, Oct 16, 2026): the ball and the goal lamps on the screen, the 18 tiles as keys
+   on the panel, one card color per column. */
 :root {
   --body: #F2EDE4; --body-dark: #00843D;   /* locked palette: warm white page, Celtic Green trim */
   --bezel: #0D0F0E; --screen: #07130C; --glow: #5CF09A; --text: #EAFBF0; --dim: #7FAF92; --gold: #F7C948;
@@ -90,24 +91,10 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .lamp.on { color: var(--text); filter: drop-shadow(0 0 6px rgba(92,240,154,.85)); }
 .lamp.new { animation: bump .45s steps(3); }
 
-/* the board: the honeycomb on the screen */
+/* the board: the ball and the goal lamps on the screen (the tiles are keys on the panel, below) */
 #v-board { container-type: size; align-items: center; justify-content: center; }
-.hive { position: relative; z-index: 3; flex: none; width: min(100cqw, 92.376cqh); aspect-ratio: 0.92376; container-type: inline-size; }   /* flat-top hexes: widest through the middle, where a word sits */
-.cell { position: absolute; width: 25%; height: 20%; box-sizing: border-box; margin: 0; padding: 0 2.25cqw; border: 0; transform: translate(-50%, -50%) scale(.95);
-  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%); display: flex; flex-direction: column; align-items: center; justify-content: center;
-  font: inherit; font-size: 4.4cqw; line-height: 1.04; text-align: center; color: var(--btn-ink); cursor: pointer; }
-.cell.c1 { background: var(--c1); } .cell.c2 { background: var(--c2); } .cell.c3 { background: var(--c3); color: #fff; }
-.cell:active:not(:disabled) { filter: brightness(.85); }
-.cell.core { background: #0E2418; cursor: default; padding: 0; }
-.cell.core .ball { width: 70%; }
-.cell.done, .cell.miss { background: #12291B; color: var(--glow); }
-.cell.miss { color: var(--no); }
-.cab[data-l="hex"] .screen { padding-left: 8px; padding-right: 8px; }
-.cab[data-l="hex"][data-v="play"] .screen, .cab[data-l="hex"][data-v="end"] .screen { padding-left: 16px; padding-right: 16px; }
-
-/* the board: the grid, as keys on the panel, with the ball on the screen */
 .pitch { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8%; width: 100%; height: 100%; }
-.pitch .ball { width: min(100cqw, calc(100cqh - 44px)); }
+.pitch .ball { width: min(100cqw, calc(92cqh - 24px)); }   /* fills the screen: the 8% gap and the 22px lamps, with a pixel to spare */
 
 /* play */
 .hud { display: flex; justify-content: space-between; align-items: center; flex: none; height: 24px; position: relative; z-index: 3; }
@@ -150,14 +137,14 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .panel { flex: none; box-sizing: border-box; display: flex; margin-top: auto; border-radius: 18px; padding: 12px 12px 15px;
   background: linear-gradient(180deg, #1A1D1B 0%, #0D0F0E 100%); box-shadow: inset 0 2px 0 rgba(255,255,255,.08), inset 0 0 0 2px #222, 0 3px 0 var(--body-dark); }
 .pv { display: none; flex: 1; min-width: 0; }
-.cab[data-v="board"] #p-board, .cab[data-v="end"] #p-end, .cab[data-v="play"] #choices { display: flex; }
-.cab[data-l="grid"][data-v="board"] #p-board { display: grid; }
+.cab[data-v="end"] #p-end, .cab[data-v="play"] #choices { display: flex; }
+.cab[data-v="board"] #p-board { display: grid; }
 .key { font: inherit; color: var(--btn-ink); border: 0; border-radius: 14px; background: var(--btn); box-shadow: 0 5px 0 var(--btn-edge), 0 7px 10px rgba(0,0,0,.25);
   cursor: pointer; transition: transform .06s, box-shadow .06s, background-color .15s, opacity .2s; }
 .key:active:not(:disabled) { transform: translateY(4px); box-shadow: 0 1px 0 var(--btn-edge), 0 2px 4px rgba(0,0,0,.25); }
 .key:disabled { cursor: default; }
 
-/* grid tiles: white, yellow card and red card keys, one color per column */
+/* the tiles: white, yellow card and red card keys, one color per column */
 #p-board.tiles { grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: repeat(6, auto); grid-auto-flow: column; gap: 9px 8px; padding-bottom: 4px; }
 .tile { position: relative; min-height: 52px; min-width: 0; padding: 4px 6px; font-size: 17px; line-height: 1.04; display: flex; align-items: center; justify-content: center; text-align: center; border-radius: 10px; }
 .tile.c1 { background: var(--c1); box-shadow: 0 4px 0 var(--c1-edge), 0 6px 8px rgba(0,0,0,.25); }
@@ -167,7 +154,6 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .tile.done, .tile.miss { transform: translateY(3px); box-shadow: 0 1px 0 rgba(0,0,0,.4); opacity: .3; }
 .tile.c3.done, .tile.c3.miss { color: #fff; }
 .hk { display: block; width: 100%; overflow-wrap: normal; word-break: normal; hyphens: none; }
-.cab[data-l="hex"] #p-board { justify-content: center; padding: 4px 0; }
 
 /* answer buttons */
 .choices { flex-direction: column; gap: 10px; }
@@ -188,7 +174,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .share .mark { flex: none; }
 .share .ball-i { display: inline-block; vertical-align: -2px; margin-right: 3px; }
 .clock { font-family: var(--pixel); font-size: 15px; letter-spacing: 1px; color: var(--glow); text-align: center; text-shadow: 0 0 6px rgba(92,240,154,.6); padding: 2px 0 1px; }
-.key:focus-visible, .go:focus-visible, .cell:focus-visible { outline: 3px solid var(--glow); outline-offset: 3px; }
+.key:focus-visible, .go:focus-visible { outline: 3px solid var(--glow); outline-offset: 3px; }
 
 @media (max-height: 700px) { .choice { min-height: 56px; } .tile { min-height: 46px; font-size: 16px; } }
 @media (max-height: 640px) { .cab { gap: 9px; padding-top: max(9px, env(safe-area-inset-top, 0px)); padding-bottom: max(12px, env(safe-area-inset-bottom, 0px)); } .marquee { padding: 11px 10px 13px; } .marquee h1 { font-size: 19px; }
@@ -197,7 +183,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   .lost .sentence { font-size: 19px; } .lost .sentence.long, .lost .sentence.longer { font-size: 17px; } .means { font-size: 16px; } .word { font-size: 17px; } }
 @media (prefers-reduced-motion: reduce) { .key, .choice .def { transition: none; } .pips i.bump, .choice.wrong, .flick, .blank, .go, .ball.goal, .ball .p.new svg, .lamp.new, .cab.poweron .marquee h1 { animation: none; } .flyer, .flyer .pg { transition: none; } }
 </style>
-<div class="cab" id="cab" data-v="board" data-l="hex">
+<div class="cab" id="cab" data-v="board">
   <div class="marquee"><h1>TRIVIELA</h1></div>
   <div class="bezel">
     <div class="screen" id="flip" aria-live="polite">
@@ -211,7 +197,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     </div>
   </div>
   <div class="panel">
-    <div class="pv" id="p-board"></div>
+    <div class="pv tiles" id="p-board"></div>
     <div class="pv choices" id="choices"></div>
     <div class="pv" id="p-end"><button class="key share" id="share" type="button"><span class="txt" id="share-txt"></span><span class="mark" id="share-mark"></span></button><div class="clock" id="clock"></div></div>
   </div>
@@ -378,7 +364,6 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   var DEV = /^(localhost|127\.0\.0\.1|bsb\.test)$|\.blank-space-baby\.pages\.dev$/.test(host);   // preview links only, never the real site
   var FIXED = DEV && params.get('day') ? Math.max(0, parseInt(params.get('day'), 10) - 1) : null;
   if (DEV && params.has('reset')) { store.del('bsb-daily'); params.delete('reset'); history.replaceState(null, '', location.pathname + (params.toString() ? '?' + params : '')); }
-  var LAYOUT = params.get('board') === 'grid' ? 'grid' : 'hex';
   function today() { return FIXED !== null ? FIXED : Math.max(0, dayOf(new Date())); }
   function fresh(day) {
     var b = deal(day);
@@ -397,7 +382,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   if (DEV) window.TRIVIELA = { deal: deal, choices: choices, ALL: ALL, POOL: POOL, near: near, state: function () { return S; } };   // for tools/drawcheck.py
 
   // ---- the board ----
-  var cab = $('cab'); cab.dataset.l = LAYOUT;
+  var cab = $('cab');
   function view(v) { cab.dataset.v = v; flick(); }
   function flick() { var s = $('flip'); s.classList.remove('flick'); void s.offsetWidth; s.classList.add('flick'); }
   function go(icon, label) {
@@ -416,24 +401,11 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     return '<span class="lamps">' + h + '</span>';
   }
   var COLOR = ['white', 'yellow card', 'red card'];
-  function tileHTML(T, i, cls, style) {
+  function tileHTML(T, i) {
     var st = S.res[i] === 1 ? ' done' : S.res[i] === 2 ? ' miss' : '';
-    return '<button type="button" class="' + cls + ' c' + T.d + st + '" data-i="' + i + '"' + (style ? ' style="' + style + '"' : '') + (S.res[i] || over() ? ' disabled' : '') +
+    return '<button type="button" class="key tile c' + T.d + st + '" data-i="' + i + '"' + (S.res[i] || over() ? ' disabled' : '') +
       ' aria-label="' + esc(T.hook) + ', ' + COLOR[T.d - 1] + '">' + (S.res[i] ? svg(S.res[i] === 1 ? 'ok' : 'no', 3) : '<span class="hk">' + num(keep(esc(T.hook))) + '</span>') + '</button>';
   }
-  // the honeycomb: the ball in the middle, the six whites around it, then yellow and red cards in turn.
-  // Flat-top hexes in five columns of 3, 4, 5, 4 and 3, measured in hex radii: 8 wide and 5√3 tall
-  var CELLS = (function () {
-    var cs = [];
-    for (var r = -2; r <= 2; r++) for (var q = -2; q <= 2; q++) {
-      var s = -q - r; if (Math.abs(s) > 2) continue;
-      var x = 1.5 * q, y = Math.sqrt(3) * (r + q / 2);
-      cs.push({ ring: Math.max(Math.abs(q), Math.abs(r), Math.abs(s)), left: (4 + x) / 8 * 100, top: (2.5 * Math.sqrt(3) + y) / (5 * Math.sqrt(3)) * 100, ang: (Math.atan2(x, -y) * 180 / Math.PI + 360.001) % 360 });
-    }
-    cs.sort(function (a, b) { return a.ring - b.ring || a.ang - b.ang; });
-    cs.forEach(function (c, j) { c.tile = j === 0 ? -1 : j <= 6 ? j - 1 : (j - 7) % 2 ? 12 + (j - 8) / 2 : 6 + (j - 7) / 2; });
-    return cs;
-  })();
   // chips in the ball and goals banked. Just after a goal-making answer, the ball still shows all six until the goal lands
   function score(landing) {
     var n = chips(), inBall = n % PER, goals = Math.floor(n / PER);
@@ -442,16 +414,8 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   }
   function board(pending) {
     var sc = score(pending !== undefined);
-    if (LAYOUT === 'hex') {
-      $('v-board').innerHTML = '<div class="hive">' + CELLS.map(function (c) {
-        var pos = 'left:' + c.left.toFixed(3) + '%;top:' + c.top.toFixed(3) + '%';
-        return c.tile < 0 ? '<div class="cell core" style="' + pos + '">' + ballHTML(sc.inBall, pending) + '</div>' : tileHTML(S.tiles[c.tile], c.tile, 'cell', pos);
-      }).join('') + '</div>';
-      $('p-board').className = 'pv'; $('p-board').innerHTML = lampsHTML(sc.goals, 3, true);
-    } else {
-      $('v-board').innerHTML = '<div class="pitch">' + ballHTML(sc.inBall, pending) + lampsHTML(sc.goals, 2, true) + '</div>';
-      $('p-board').className = 'pv tiles'; $('p-board').innerHTML = S.tiles.map(function (T, i) { return tileHTML(T, i, 'key tile'); }).join('');
-    }
+    $('v-board').innerHTML = '<div class="pitch">' + ballHTML(sc.inBall, pending) + lampsHTML(sc.goals, 2, true) + '</div>';
+    $('p-board').innerHTML = S.tiles.map(function (T, i) { return tileHTML(T, i); }).join('');
     document.querySelectorAll('[data-i]').forEach(function (b) { b.addEventListener('click', function (e) { e.stopPropagation(); open(+b.dataset.i); }); });
     requestAnimationFrame(fitAll);
   }
@@ -462,7 +426,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     var px = parseFloat(getComputedStyle(hk).fontSize), lh = parseFloat(getComputedStyle(el).lineHeight) / parseFloat(getComputedStyle(el).fontSize) || 1.04;
     while (px > 8 && (hk.scrollWidth > hk.clientWidth + 0.5 || hk.offsetHeight > 2 * px * lh + 1)) { px -= 0.5; hk.style.fontSize = px + 'px'; }
   }
-  function fitAll() { document.querySelectorAll('#v-board [data-i], #p-board [data-i]').forEach(fit); }
+  function fitAll() { document.querySelectorAll('#p-board [data-i]').forEach(fit); }
   window.addEventListener('resize', function () { if (cab.dataset.v === 'board') fitAll(); });
   if (document.fonts) { document.fonts.ready.then(fitAll); if (document.fonts.addEventListener) document.fonts.addEventListener('loadingdone', fitAll); }   // refit once the pixel font arrives
 
