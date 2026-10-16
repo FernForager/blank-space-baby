@@ -54,20 +54,23 @@ Game-only effects, not brand colors: the CRT glow #5CF09A, and the wrong-answer 
 - **Soccer first.** Be stingy with non-soccer categories. Kid Slang is the model of a good one (its sentences are still all about soccer).
 - **Learning:** it should teach real things: the offside rule, formations, field markings, ref signals, and the basics (how many players, what a throw-in is, positions).
 
-## The daily game (decided Oct 16, 2026)
-- **One run a day.** Everyone gets the same board that day.
-- **The board:** 36 cards in a 6 × 6 grid, all shown at the start. Six categories across the top (they change daily, drawn from the pool), six cards down each column from easy at the top to hard at the bottom. The player picks any card, in any order: choose your own adventure.
-- **Chips and the ball:** each right answer clicks a pentagon chip into the ball plaque (the six-pentagon board: center plus five). 6 chips complete the ball, which is a **goal**. The plaque clears and the next ball starts.
+## The daily game (decided Oct 16, 2026, corrected the same day)
+- **One run a day.** Everyone gets the same 18 cards that day.
+- **The hopper:** every card is tagged easy, medium or hard. Each day draws **6 easy, 6 medium and 6 hard** at random from all categories, so odd neighbors sit side by side (Build Out next to Rangers FC next to Rabona). No hand-curated boards, and no brutal tier: hard means a real fan knows it, not obscure trivia.
+- **The board:** all 18 cards are laid out at the start, and the player taps any of them, in any order: choose your own adventure. Each tile shows a **hook**, a word or name from the card's sentence that is never the answer (e.g. "Rangers FC"). Difficulty is not shown on the tiles: reading the board is the fun.
+- **Chips and goals:** every right answer adds a pentagon chip to the player's ball, wherever on the board it came from. **Every 6 chips is a goal.** Choice is real: grab safe-looking tiles to bank a goal, or take the scary ones while fresh.
 - **One miss ends the day.** Goals are banked, so a miss never takes one away.
-- **Results:** 0 goals is **Nil**, 1 **Goal**, 2 **Brace**, 3 **Hat trick**. 18 right is the hat trick and the perfect day, the most there is. You only need 18 of the 36, so the hardest cards are there for the devoted.
-- **Why 6 per goal, not 12:** with three buttons and one miss ending the run, a fan who's right 85% of the time makes 6 in a row about 38% of the time but 12 in a row only about 14%. At 12, most days would be Nil.
-- **The share text** is the heart of it (texting results is what made Wordle). Base form, Morg's pick:
+- **Results:** 0 goals is **Nil**, 1 **Goal**, 2 **Brace**, 3 **Hat trick**. Clearing all 18 is the hat trick and the perfect day.
+- **Why 6 per goal:** with three buttons and one miss ending the run, a fan right 85% of the time makes 6 in a row about 38% of the time but 12 only about 14%.
+- **Proposed board shape (not yet approved):** a round honeycomb of 19 hexagons (center, a ring of 6, a ring of 12), the shape of a ball. The 18 outer hexagons are the cards, and the center shows the player's ball filling with pentagon chips. On a real ball the white panels are hexagons and the black ones pentagons, so each shape does one job.
+- **The share text** is the heart of it. Base form, Morg's pick:
   ```
   Triviela #42
   ⚽⚽ Brace
   triviela.net
   ```
 - **Design compass:** think Zach Gage. Simple rules, real stakes, a clean ending, a perfect day that's possible. No jokers, no second chances, no endless mode. Less is more.
+- **A misunderstanding to avoid:** on Oct 16 Claude wrongly turned this into three balls of 6 tiles shown one after another, which made tile choice meaningless. It is one board of all 18. The 18-player panel (`research/player-panel-2026-10-16.md`) reviewed the wrong version, so ignore its point that choice doesn't matter. Its other advice still holds.
 
 ## Open questions (Oct 16, 2026)
 - **Share text detail:** whether to add a 6 × 6 grid of the run (⚫ right, 🟥 the miss, ⚪ untouched), so friends see each other's path. Morg prefers less.
