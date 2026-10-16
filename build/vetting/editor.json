@@ -577,6 +577,401 @@
   "h": "c9365428fe",
   "v": "ok"
  },
+ "awards:0": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "c31cc5f31b",
+  "v": "ok"
+ },
+ "awards:1": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "274592d3a5",
+  "v": "ok"
+ },
+ "awards:10": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "ee2248f69f",
+  "v": "ok"
+ },
+ "awards:11": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "2d20792312",
+  "v": "ok"
+ },
+ "awards:12": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "24d5c18a67",
+  "v": "ok"
+ },
+ "awards:13": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "c2d1cb191b",
+  "v": "ok"
+ },
+ "awards:14": {
+  "at": "2026-10-16T23:59:07Z",
+  "fix": {
+   "means": "He won the Fair Play Award in 1996"
+  },
+  "h": "74ba041707",
+  "note": "“Won Fair Play” is jargon, named the award and gave the year the sentence implies",
+  "v": "fix"
+ },
+ "awards:15": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "879748ff21",
+  "v": "ok"
+ },
+ "awards:16": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "da92b70167",
+  "v": "ok"
+ },
+ "awards:17": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "bae3f83c03",
+  "v": "ok"
+ },
+ "awards:18": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "27406d63ea",
+  "v": "ok"
+ },
+ "awards:19": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "ec3cb1f154",
+  "v": "ok"
+ },
+ "awards:2": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "0960cd1419",
+  "v": "ok"
+ },
+ "awards:20": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "a909863323",
+  "v": "ok"
+ },
+ "awards:21": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "b211398594",
+  "v": "ok"
+ },
+ "awards:22": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "739eb53a0f",
+  "v": "ok"
+ },
+ "awards:23": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "5b11f3ad53",
+  "v": "ok"
+ },
+ "awards:24": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "479aa776b8",
+  "v": "ok"
+ },
+ "awards:25": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "306346d8bd",
+  "v": "ok"
+ },
+ "awards:26": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "5a153fba75",
+  "v": "ok"
+ },
+ "awards:27": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "4c8c734f49",
+  "v": "ok"
+ },
+ "awards:28": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "15d6480a30",
+  "v": "ok"
+ },
+ "awards:29": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "c49b03caba",
+  "v": "ok"
+ },
+ "awards:3": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "ab23edea1e",
+  "v": "ok"
+ },
+ "awards:30": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "da8c2beb3c",
+  "v": "ok"
+ },
+ "awards:31": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "fb616c96cf",
+  "v": "ok"
+ },
+ "awards:32": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "ba39507b4a",
+  "v": "ok"
+ },
+ "awards:33": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "3fb857342a",
+  "v": "ok"
+ },
+ "awards:34": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "91a6331c2a",
+  "v": "ok"
+ },
+ "awards:35": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "46e344d26f",
+  "v": "ok"
+ },
+ "awards:36": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "868952c7f9",
+  "v": "ok"
+ },
+ "awards:37": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "d2b77f4df7",
+  "note": "MW’s scissors kick is a swimming term, scissor kick is the soccer usage, kept",
+  "v": "ok"
+ },
+ "awards:38": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "3afbd9f4e4",
+  "v": "ok"
+ },
+ "awards:39": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "49205152a1",
+  "v": "ok"
+ },
+ "awards:4": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "fdbb4d8230",
+  "v": "ok"
+ },
+ "awards:40": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "e1a9613959",
+  "v": "ok"
+ },
+ "awards:41": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "2b1612d5d0",
+  "v": "ok"
+ },
+ "awards:42": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "9dbbef0729",
+  "note": "Celtic and Zakho SC are clubs, so “nation” rules them out as wrong answers, the card still works",
+  "v": "ok"
+ },
+ "awards:43": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "0fcae9fbb1",
+  "note": "Celtic and Zakho SC are clubs and read oddly here, the card still works",
+  "v": "ok"
+ },
+ "awards:44": {
+  "at": "2026-10-16T23:59:07Z",
+  "fix": {
+   "means": "They won the Fair Play Award in 2003"
+  },
+  "h": "4dd7479da5",
+  "note": "“Won Fair Play” is jargon, named the award",
+  "v": "fix"
+ },
+ "awards:45": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "0cead17af3",
+  "v": "ok"
+ },
+ "awards:46": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "f547234e37",
+  "note": "Celtic and Zakho SC are clubs and read oddly here, the card still works",
+  "v": "ok"
+ },
+ "awards:47": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "976b368778",
+  "v": "ok"
+ },
+ "awards:48": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "5f31914f27",
+  "note": "“The Celtic men’s team” reads oddly as a wrong answer, the card still works",
+  "v": "ok"
+ },
+ "awards:49": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "d37a8bc5cc",
+  "v": "ok"
+ },
+ "awards:5": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "94069a8c7e",
+  "v": "ok"
+ },
+ "awards:50": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "c0fccb98f3",
+  "v": "ok"
+ },
+ "awards:51": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "6f3b845289",
+  "v": "ok"
+ },
+ "awards:52": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "eb25e6c189",
+  "v": "ok"
+ },
+ "awards:53": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "5ec7fc4a5e",
+  "v": "ok"
+ },
+ "awards:54": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "2bd3978ee4",
+  "v": "ok"
+ },
+ "awards:55": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "4d693cb2fb",
+  "v": "ok"
+ },
+ "awards:56": {
+  "at": "2026-10-16T23:59:07Z",
+  "fix": {
+   "means": "2023, 2024, and 2025"
+  },
+  "h": "c3aada3a31",
+  "note": "Chicago serial comma",
+  "v": "fix"
+ },
+ "awards:57": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "b699b8554d",
+  "v": "ok"
+ },
+ "awards:58": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "0899dbe7f2",
+  "v": "ok"
+ },
+ "awards:59": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "a038a164e0",
+  "v": "ok"
+ },
+ "awards:6": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "7fb6e11c40",
+  "v": "ok"
+ },
+ "awards:60": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "cfa1d8cd8e",
+  "v": "ok"
+ },
+ "awards:61": {
+  "at": "2026-10-16T23:59:07Z",
+  "fix": {
+   "means": "Including a hat trick in the final"
+  },
+  "h": "055d075b6d",
+  "note": "MW spells hat trick open, and the reworded line is clearer",
+  "v": "fix"
+ },
+ "awards:62": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "c41eb5efec",
+  "v": "ok"
+ },
+ "awards:63": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "ee4133031f",
+  "v": "ok"
+ },
+ "awards:64": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "069295d9ca",
+  "v": "ok"
+ },
+ "awards:65": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "5bd8b1028a",
+  "v": "ok"
+ },
+ "awards:66": {
+  "at": "2026-10-16T23:59:07Z",
+  "fix": {
+   "ex": "Harry Kane won the Golden Boot at the 2018 World Cup",
+   "means": "Six goals made him top scorer"
+  },
+  "h": "9295c3e344",
+  "note": "“with six goals” pointed to the Golden Boot over the other awards, moved it to means",
+  "v": "fix"
+ },
+ "awards:67": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "9594781ef1",
+  "v": "ok"
+ },
+ "awards:68": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "aae2330e56",
+  "v": "ok"
+ },
+ "awards:69": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "7750dab19a",
+  "v": "ok"
+ },
+ "awards:7": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "8e1fb4cadf",
+  "v": "ok"
+ },
+ "awards:70": {
+  "at": "2026-10-16T23:59:07Z",
+  "fix": {
+   "ex": "Lizbeth Ovalle’s backheel volley won the 2025 FIFA Marta Award"
+  },
+  "h": "f0f3bd67b4",
+  "note": "MW’s first spelling is backheel",
+  "v": "fix"
+ },
+ "awards:71": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "0b68147be4",
+  "v": "ok"
+ },
+ "awards:72": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "4f3df59331",
+  "v": "ok"
+ },
+ "awards:8": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "0b5424eb99",
+  "v": "ok"
+ },
+ "awards:9": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "41c043d5ea",
+  "v": "ok"
+ },
  "basics:0": {
   "at": "2026-10-16T23:57:03Z",
   "h": "0e34592af3",
