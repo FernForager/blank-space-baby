@@ -1,4 +1,6 @@
-# Dossier: Blank Space Baby
+# Dossier: Triviela (formerly Blank Space Baby)
+
+> **Oct 16, 2026:** much of this dossier describes the old Blank Space Baby arcade game. The game is now Triviela, a public daily soccer trivia game. CLAUDE.md ("Direction", "The daily game", "Open questions", "Where things are") is the current source of truth. Where they disagree, CLAUDE.md wins. Sections 7 and 8 here (roadmap ideas and things tried and dropped) are still useful history.
 
 Handoff for Claude Code sessions, written Oct 14, 2026 at the end of the session that built the game. Read `CLAUDE.md` first: it has the standing rules (house style, sources, look, game rules). This file covers where things stand, what's been tried, what's next and how to work.
 
@@ -95,7 +97,7 @@ This repo is **public**. Never commit personal details: no last names, addresses
 
 ## 8. Things tried and dropped (don't re-propose)
 
-- **Names:** Decode It (an early working title), Wait Actually, Slango, Slangle, Slang Wrangler, Slanguage Arts. Morg named it **Blank Space Baby**.
+- **Names:** Decode It (an early working title), Wait Actually, Slango, Slangle, Slang Wrangler, Slanguage Arts. Morg named it **Blank Space Baby**, then renamed it **Triviela** on Oct 15, 2026 (trivia + trivela): the Taylor Swift pun leaned too hard on one category out of ten. Also tried and passed over: Triviella (the sea snail genus, two L's) and Triviidae (its family, hard to say), plus Ball Knowledge, Five-a-Side, Mind the Gap, Nutmeg, Fill the Gap, Patchwork, Pass It On and Blank Check.
 - **Look:**
   - A full Apple-style redesign. Morg's reaction: "I liked it before."
   - A gold star on wins.

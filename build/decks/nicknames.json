@@ -1,0 +1,736 @@
+{
+  "deck": "Club Nicknames",
+  "primary": "premierleague.com, laliga.com, bundesliga.com",
+  "secondary": "",
+  "as_of": "2026-10-15",
+  "items": [
+    {
+      "w": "Gunners",
+      "means": "Royal Arsenal, Woolwich, 1886",
+      "ex": "Arsenal are the Gunners, after the munitions workers who founded them",
+      "k": "nickname",
+      "src": "https://www.premierleague.com/en/news/4592046/what-is-the-history-behind-every-premier-league-clubs-name",
+      "d": 1
+    },
+    {
+      "w": "Red Devils",
+      "means": "Sir Matt Busby made it stick",
+      "ex": "Man United took the Red Devils name from a Salford rugby club",
+      "k": "nickname",
+      "src": "https://www.premierleague.com/en/news/4726407/all-20-premier-league-clubs-badges-explained",
+      "d": 1
+    },
+    {
+      "w": "Seagulls",
+      "means": "They were once the Dolphins",
+      "ex": "Brighton became the Seagulls after fans answered Palace’s “Eagles” chant",
+      "k": "nickname",
+      "src": "https://www.premierleague.com/en/news/4726407/all-20-premier-league-clubs-badges-explained",
+      "d": 1
+    },
+    {
+      "w": "Bees",
+      "means": "The students yelled “Buck up Bs”",
+      "ex": "Brentford became the Bees after reporters misheard a student chant",
+      "k": "nickname",
+      "src": "https://www.premierleague.com/en/news/4592046/what-is-the-history-behind-every-premier-league-clubs-name",
+      "d": 1
+    },
+    {
+      "w": "Eagles",
+      "means": "From Benfica’s águias, or eagles",
+      "ex": "Crystal Palace became the Eagles in the 1970s, copying Benfica",
+      "k": "nickname",
+      "src": "https://www.premierleague.com/en/news/4592046/what-is-the-history-behind-every-premier-league-clubs-name",
+      "d": 1
+    },
+    {
+      "w": "Black Cats",
+      "means": "Two black lions flank the badge",
+      "ex": "Sunderland, who play at the Stadium of Light, are the Black Cats",
+      "k": "nickname",
+      "src": "https://www.premierleague.com/en/news/4726407/all-20-premier-league-clubs-badges-explained",
+      "d": 2
+    },
+    {
+      "w": "Cherries",
+      "means": "Or for their red striped shirts",
+      "ex": "Bournemouth may be the Cherries for trees that once grew by their ground",
+      "k": "nickname",
+      "src": "https://www.premierleague.com/en/news/4592046/what-is-the-history-behind-every-premier-league-clubs-name",
+      "d": 2
+    },
+    {
+      "w": "Clarets",
+      "means": "They began in blue and white",
+      "ex": "Burnley’s shirt color earned them the nickname the Clarets",
+      "k": "nickname",
+      "src": "https://www.premierleague.com/en/news/4592046/what-is-the-history-behind-every-premier-league-clubs-name",
+      "d": 2
+    },
+    {
+      "w": "Cottagers",
+      "means": "Their home is Craven Cottage",
+      "ex": "Fulham have been the Cottagers since moving grounds in 1896",
+      "k": "nickname",
+      "src": "https://www.premierleague.com/en/news/4592046/what-is-the-history-behind-every-premier-league-clubs-name",
+      "d": 2
+    },
+    {
+      "w": "Saints",
+      "means": "Founded at St Andrew’s Church",
+      "ex": "Fulham, founded in 1879, were first known as the Saints",
+      "k": "nickname",
+      "src": "https://www.premierleague.com/en/news/4592046/what-is-the-history-behind-every-premier-league-clubs-name",
+      "d": 3
+    },
+    {
+      "w": "Irons",
+      "means": "They began as Thames Ironworks FC",
+      "ex": "West Ham are the Irons, a nod to their shipbuilding roots",
+      "k": "nickname",
+      "src": "https://www.premierleague.com/en/news/4592046/what-is-the-history-behind-every-premier-league-clubs-name",
+      "d": 3
+    },
+    {
+      "w": "Sky Blues",
+      "means": "Hill arrived as manager in 1961",
+      "ex": "Coventry became the Sky Blues when Jimmy Hill changed their colors",
+      "k": "nickname",
+      "src": "https://www.premierleague.com/en/news/4625396/all-you-need-to-know-as-coventry-city-make-premier-league-return",
+      "d": 2
+    },
+    {
+      "w": "Tractor Boys",
+      "means": "Also FA Cup winners in 1978",
+      "ex": "Ipswich, the Tractor Boys, won the UEFA Cup under Bobby Robson in 1981",
+      "k": "nickname",
+      "src": "https://www.premierleague.com/en/news/4644752/all-you-need-to-know-as-ipswich-town-are-promoted-to-the-premier-league",
+      "d": 2
+    },
+    {
+      "w": "Dolphins",
+      "means": "Now they are the Seagulls",
+      "ex": "Until the mid-1970s, Brighton were known as the Dolphins",
+      "k": "nickname",
+      "src": "https://www.premierleague.com/en/news/4726407/all-20-premier-league-clubs-badges-explained",
+      "d": 3
+    },
+    {
+      "w": "Glaziers",
+      "means": "Malcolm Allison changed it",
+      "ex": "Until 1973, Crystal Palace were nicknamed the Glaziers",
+      "k": "nickname",
+      "src": "https://www.premierleague.com/en/news/4726407/all-20-premier-league-clubs-badges-explained",
+      "d": 3
+    },
+    {
+      "w": "Billy Goats",
+      "means": "Hennes the goat, a 1950 gift",
+      "ex": "Cologne’s nickname, the Billy Goats, began with a gift from a circus",
+      "k": "nickname",
+      "src": "https://www.bundesliga.com/en/bundesliga/news/clubs-with-animal-names-germany-eagles-wolves-goats-foals-lions-25000",
+      "d": 2
+    },
+    {
+      "w": "Foals",
+      "means": "They galloped like young horses",
+      "ex": "Gladbach’s young 1965 side, average age 20, became the Foals",
+      "k": "nickname",
+      "src": "https://www.bundesliga.com/en/bundesliga/news/clubs-with-animal-names-germany-eagles-wolves-goats-foals-lions-25000",
+      "d": 2
+    },
+    {
+      "w": "Zebras",
+      "means": "Their 1963 anthem: “Zebratwist”",
+      "ex": "MSV Duisburg are known in Germany as the Zebras",
+      "k": "nickname",
+      "src": "https://www.bundesliga.com/en/bundesliga/news/clubs-with-animal-names-germany-eagles-wolves-goats-foals-lions-25000",
+      "d": 3
+    },
+    {
+      "w": "Reds",
+      "means": "Many German nicknames are colors",
+      "ex": "Bayern Munich are known in Germany simply as the Reds",
+      "k": "nickname",
+      "src": "https://www.bundesliga.com/en/bundesliga/news/clubs-with-animal-names-germany-eagles-wolves-goats-foals-lions-25000",
+      "d": 1
+    },
+    {
+      "w": "Black-Yellows",
+      "means": "Named for their famous colors",
+      "ex": "Borussia Dortmund are known in Germany as the Black-Yellows",
+      "k": "nickname",
+      "src": "https://www.bundesliga.com/en/bundesliga/news/clubs-with-animal-names-germany-eagles-wolves-goats-foals-lions-25000",
+      "d": 1
+    },
+    {
+      "w": "Green-Whites",
+      "means": "First title came in 1964–65",
+      "ex": "Werder Bremen, four-time German champions, are the Green-Whites",
+      "k": "nickname",
+      "src": "https://www.bundesliga.com/en/bundesliga/news/werder-bremen-bundesliga-club-by-club-historical-guide-ozil-pizarro-rehhagel-24116",
+      "d": 2
+    },
+    {
+      "w": "Red Shorts",
+      "means": "Another color nickname",
+      "ex": "For their kit, Hamburg are known in Germany as the Red Shorts",
+      "k": "nickname",
+      "src": "https://www.bundesliga.com/en/bundesliga/news/clubs-with-animal-names-germany-eagles-wolves-goats-foals-lions-25000",
+      "d": 3
+    },
+    {
+      "w": "Royal Blues",
+      "means": "Named for their royal blue shirts",
+      "ex": "Schalke, from a city built on coal, are known as the Royal Blues",
+      "k": "nickname",
+      "src": "https://www.bundesliga.com/en/bundesliga/news/fc-schalke-04-bundesliga-club-by-club-historical-guide-24140",
+      "d": 2
+    },
+    {
+      "w": "Lilies",
+      "means": "On the city’s crest as well",
+      "ex": "Darmstadt are the Lilies, after the emblem on their crest",
+      "k": "nickname",
+      "src": "https://www.bundesliga.com/en/bundesliga/news/darmstadt-club-by-club-historical-guide-24215",
+      "d": 3
+    },
+    {
+      "w": "Clover Leaves",
+      "means": "A third title came before World War I",
+      "ex": "Fürth, German champions in 1926 and 1929, are the Clover Leaves",
+      "k": "nickname",
+      "src": "https://www.bundesliga.com/en/bundesliga/news/greuther-furth-club-by-club-historical-guide-kissinger-24307",
+      "d": 3
+    },
+    {
+      "w": "Old Lady",
+      "means": "Die Alte Dame, in German",
+      "ex": "Hertha Berlin are fondly known as the Old Lady",
+      "k": "nickname",
+      "src": "https://www.bundesliga.com/en/bundesliga/news/hertha-berlin-bundesliga-club-by-club-historical-guide-24161",
+      "d": 2
+    },
+    {
+      "w": "Dino",
+      "means": "It ran until their 2018 drop",
+      "ex": "A clock at Hamburg’s ground counted their years as the Bundesliga Dino",
+      "k": "nickname",
+      "src": "https://www.bundesliga.com/en/bundesliga/news/hamburger-sv-bundesliga-club-by-club-historical-guide-keegan-seeler-24135",
+      "d": 2
+    },
+    {
+      "w": "Merengues",
+      "means": "Spanish for meringues",
+      "ex": "Real Madrid’s all-white kit made them the Merengues",
+      "k": "nickname",
+      "src": "https://www.laliga.com/en-US/news/why-are-real-madrid-players-called-merengues",
+      "d": 2
+    },
+    {
+      "w": "Culés",
+      "means": "Passers-by saw them from behind",
+      "ex": "Barcelona fans are Culés, after early fans who sat on a stadium wall",
+      "k": "nickname",
+      "src": "https://www.laliga.com/en-US/news/why-are-barcelona-called-the-cules",
+      "d": 2
+    },
+    {
+      "w": "Lions",
+      "means": "Their stadium is San Mamés",
+      "ex": "Athletic Club players are the Lions, after a legend about Saint Mamés",
+      "k": "nickname",
+      "src": "https://www.laliga.com/en-US/news/why-are-the-players-from-athletic-called-lions",
+      "d": 2
+    },
+    {
+      "w": "Man United",
+      "means": "The Red Devils, since the 1960s",
+      "ex": "A red devil holding a pitchfork is on Man United’s badge",
+      "k": "club",
+      "src": "https://www.premierleague.com/en/news/4726407/all-20-premier-league-clubs-badges-explained",
+      "d": 1
+    },
+    {
+      "w": "Brighton",
+      "means": "There since 1977, with one break",
+      "ex": "A white seagull in flight is the only picture on Brighton’s badge",
+      "k": "club",
+      "src": "https://www.premierleague.com/en/news/4726407/all-20-premier-league-clubs-badges-explained",
+      "d": 1
+    },
+    {
+      "w": "Brentford",
+      "means": "A buff-tailed bumblebee",
+      "ex": "A bumblebee is the centerpiece of Brentford’s badge",
+      "k": "club",
+      "src": "https://www.premierleague.com/en/news/4726407/all-20-premier-league-clubs-badges-explained",
+      "d": 1
+    },
+    {
+      "w": "Crystal Palace",
+      "means": "Malcolm Allison named them the Eagles",
+      "ex": "An eagle has been on Crystal Palace’s badge since 1973",
+      "k": "club",
+      "src": "https://www.premierleague.com/en/news/4726407/all-20-premier-league-clubs-badges-explained",
+      "d": 1
+    },
+    {
+      "w": "Hull City",
+      "means": "For their nickname, the Tigers",
+      "ex": "A tiger’s head in an amber shield is on Hull City’s badge",
+      "k": "club",
+      "src": "https://www.premierleague.com/en/news/4726407/all-20-premier-league-clubs-badges-explained",
+      "d": 2
+    },
+    {
+      "w": "Cologne",
+      "means": "Hence the Billy Goats",
+      "ex": "Cologne’s first goat mascot, Hennes, arrived as a Carnival joke in 1950",
+      "k": "club",
+      "src": "https://www.bundesliga.com/en/bundesliga/news/clubs-with-animal-names-germany-eagles-wolves-goats-foals-lions-25000",
+      "d": 2
+    },
+    {
+      "w": "Frankfurt",
+      "means": "Fitting for a club called the Eagles",
+      "ex": "In 2006, Attila the eagle began flying around Frankfurt’s stadium before games",
+      "k": "club",
+      "src": "https://www.bundesliga.com/en/bundesliga/news/eintracht-frankfurt-bundesliga-club-by-club-historical-guide-europa-24142",
+      "d": 2
+    },
+    {
+      "w": "Villarreal",
+      "means": "Played at their 1967 promotion party",
+      "ex": "Villarreal are the Yellow Submarine, named after a Beatles song",
+      "k": "club",
+      "src": "https://www.laliga.com/en-US/news/why-are-villarreal-called-yellow-submarine",
+      "d": 1
+    },
+    {
+      "w": "Rayo Vallecano",
+      "means": "Hence the name Franjirrojos",
+      "ex": "Rayo Vallecano wear a red sash inspired by Argentina’s River Plate",
+      "k": "club",
+      "src": "https://www.laliga.com/en-US/news/why-are-the-players-of-rayo-called-the-franjirrojos",
+      "d": 2
+    },
+    {
+      "w": "Real Betis",
+      "means": "Heliopolis means city of the sun",
+      "ex": "Real Betis are Heliopolitans, after the district around their stadium",
+      "k": "club",
+      "src": "https://www.laliga.com/en-US/news/why-are-the-betis-players-called-heliopolitans",
+      "d": 3
+    },
+    {
+      "w": "Celta Vigo",
+      "means": "Planted by Knights Templar",
+      "ex": "Celta Vigo are called Olívicos, after an old olive tree in their city",
+      "k": "club",
+      "src": "https://www.laliga.com/en-US/news/why-are-the-celta-de-vigo-players-called-olivicos",
+      "d": 3
+    },
+    {
+      "w": "Deportivo",
+      "means": "The Tower of Hercules",
+      "ex": "Deportivo are called Herculinos, after a Roman lighthouse in their city",
+      "k": "club",
+      "src": "https://www.laliga.com/en-US/news/why-are-rc-deportivo-de-la-coruna-players-called-herculinos",
+      "d": 3
+    },
+    {
+      "w": "Osasuna",
+      "means": "Founded in Pamplona in 1920",
+      "ex": "Osasuna are the Rojillos, wearing red from the flag of Navarre",
+      "k": "club",
+      "src": "https://www.laliga.com/en-US/news/why-ca-osasuna-players-are-called-rojillos",
+      "d": 3
+    },
+    {
+      "w": "Nuremberg",
+      "means": "Germany’s most decorated club in 1963",
+      "ex": "Nuremberg, eight-time champions before 1963, are known as Der Club",
+      "k": "club",
+      "src": "https://www.bundesliga.com/en/bundesliga/news/nuremberg-club-by-club-historical-guide-gundogan-max-morlock-24164",
+      "d": 3
+    },
+    {
+      "w": "Elche",
+      "means": "Inspired by local palm groves",
+      "ex": "Elche are the Franjiverdes, after a green stripe added in 1926",
+      "k": "club",
+      "src": "https://www.laliga.com/en-US/news/why-elche-is-known-as-the-franjiverde-team",
+      "d": 3
+    },
+    {
+      "w": "mattress makers",
+      "means": "Like old striped mattress covers",
+      "ex": "Atlético Madrid’s nickname Colchoneros means mattress makers",
+      "k": "meaning",
+      "src": "https://www.laliga.com/en-US/news/why-are-the-players-from-atletico-called-colchoneros",
+      "d": 2
+    },
+    {
+      "w": "frogs",
+      "means": "Frogs lived by their old ground",
+      "ex": "Levante’s nickname Granotas is Valencian for frogs",
+      "k": "meaning",
+      "src": "https://www.laliga.com/en-US/news/why-are-levante-called-the-granotas",
+      "d": 2
+    },
+    {
+      "w": "anchovies",
+      "means": "Málaga is famous for them",
+      "ex": "Málaga’s nickname Boquerones means anchovies",
+      "k": "meaning",
+      "src": "https://www.laliga.com/en-US/news/why-the-players-from-malaga-are-called-boquerones",
+      "d": 2
+    },
+    {
+      "w": "parakeets",
+      "means": "Birds lived in trees by Sarrià",
+      "ex": "Espanyol are the Pericos, or parakeets, after birds by their old stadium",
+      "k": "meaning",
+      "src": "https://www.laliga.com/en-US/news/why-are-the-players-from-espanyol-called-pericos",
+      "d": 2
+    },
+    {
+      "w": "basins",
+      "means": "A basin was a parting gift",
+      "ex": "Sevilla’s nickname Palanganas means basins",
+      "k": "meaning",
+      "src": "https://www.laliga.com/en-US/news/why-are-the-sevillistas-sevilla-fc-players-called-palanganas-basin-1",
+      "d": 3
+    },
+    {
+      "w": "hey",
+      "means": "A very Valencian word",
+      "ex": "Valencia are known as Che, a local way of saying hey",
+      "k": "meaning",
+      "src": "https://www.laliga.com/en-US/news/why-are-the-valencia-players-called-ches",
+      "d": 3
+    },
+    {
+      "w": "blue and white",
+      "means": "Their shirt colors",
+      "ex": "Real Sociedad’s nickname Txuri-urdin is Basque for blue and white",
+      "k": "meaning",
+      "src": "https://www.laliga.com/en-US/news/why-are-the-players-from-real-sociedad-called-txuriurdines",
+      "d": 3
+    },
+    {
+      "w": "deep blues",
+      "means": "Taken from an older Getafe club",
+      "ex": "Getafe’s nickname Azulones means deep blues",
+      "k": "meaning",
+      "src": "https://www.laliga.com/en-US/news/why-are-the-getafe-players-called-azulones-deep-blues",
+      "d": 3
+    },
+    {
+      "w": "vermilion",
+      "means": "From the Catalan word vermelló",
+      "ex": "Mallorca’s nickname Bermellones comes from vermilion, a bright orange-red",
+      "k": "meaning",
+      "src": "https://www.laliga.com/en-US/news/why-are-the-players-for-rcd-mallorca-called-bermellones",
+      "d": 3
+    },
+    {
+      "w": "fava eaters",
+      "means": "Also a name for people of Álava",
+      "ex": "Alavés are the Babazorros, a Basque word for fava eaters",
+      "k": "meaning",
+      "src": "https://www.laliga.com/en-US/news/why-are-the-players-from-alaves-called-babazorros",
+      "d": 3
+    },
+    {
+      "w": "cucumber growers",
+      "means": "They once fed Madrid",
+      "ex": "Leganés are the Pepineros, or cucumber growers, from farming days",
+      "k": "meaning",
+      "src": "https://www.laliga.com/en-US/news/why-leganes-cd-players-are-called-pepineros",
+      "d": 3
+    },
+    {
+      "w": "young boars",
+      "means": "Wild boars roam the area",
+      "ex": "Mirandés are the Jabatos, meaning young boars",
+      "k": "meaning",
+      "src": "https://www.laliga.com/en-US/news/why-are-cd-mirandes-players-called-jabatos",
+      "d": 3
+    },
+    {
+      "w": "cubs",
+      "means": "Little brothers of the Lions",
+      "ex": "Athletic Club’s B team are the Cachorros, meaning cubs",
+      "k": "meaning",
+      "src": "https://www.laliga.com/en-US/news/why-bilbao-athletic-players-are-called-cachorros",
+      "d": 2
+    },
+    {
+      "w": "tidal wave",
+      "means": "So many follow them away",
+      "ex": "Sporting Gijón’s fans are called La Mareona, the tidal wave",
+      "k": "meaning",
+      "src": "https://www.laliga.com/en-US/news/why-are-the-sporting-fans-called-la-mareona",
+      "d": 3
+    },
+    {
+      "w": "canary",
+      "means": "Also their canary mascot’s name",
+      "ex": "Las Palmas fans chant “Pío-Pío,” the sound of a canary",
+      "k": "meaning",
+      "src": "https://www.laliga.com/en-US/news/why-do-the-players-of-las-palmas-call-themselves-pio-pio",
+      "d": 2
+    },
+    {
+      "w": "oak",
+      "means": "Cut down in 1879",
+      "ex": "Real Oviedo’s nickname Carbayones comes from a famous old oak",
+      "k": "meaning",
+      "src": "https://www.laliga.com/en-US/news/why-real-oviedo-is-known-as-the-carbayon-team",
+      "d": 3
+    },
+    {
+      "w": "miners",
+      "means": "Gelsenkirchen was a coal city",
+      "ex": "Schalke’s nickname Die Knappen means the miners",
+      "k": "meaning",
+      "src": "https://www.bundesliga.com/en/bundesliga/news/fc-schalke-04-bundesliga-club-by-club-historical-guide-24140",
+      "d": 2
+    },
+    {
+      "w": "works team",
+      "means": "Founded by Bayer workers",
+      "ex": "Leverkusen’s nickname Die Werkself means the works team",
+      "k": "meaning",
+      "src": "https://www.bundesliga.com/en/bundesliga/news/bayer-leverkusen-club-by-club-historical-guide-havertz-wirtz-ballack-24153",
+      "d": 3
+    },
+    {
+      "w": "unrelegatables",
+      "means": "They stayed up for over 20 years",
+      "ex": "Bochum were once Die Unabsteigbaren, meaning the unrelegatables",
+      "k": "meaning",
+      "src": "https://www.bundesliga.com/en/bundesliga/news/bochum-club-by-club-historical-guide-asano-goretzka-kuntz-24163",
+      "d": 3
+    },
+    {
+      "w": "island",
+      "means": "Their stadium sits on one",
+      "ex": "Werder, as in Werder Bremen, means a small river island",
+      "k": "meaning",
+      "src": "https://www.bundesliga.com/en/bundesliga/news/werder-bremen-bundesliga-club-by-club-historical-guide-ozil-pizarro-rehhagel-24116",
+      "d": 3
+    }
+  ],
+  "groups": [
+    [
+      "Seagulls",
+      "Dolphins"
+    ],
+    [
+      "Eagles",
+      "Glaziers",
+      "Les Aiglons"
+    ],
+    [
+      "Cottagers",
+      "Saints"
+    ],
+    [
+      "Red Shorts",
+      "Dino"
+    ],
+    [
+      "Reds",
+      "Red Shorts"
+    ],
+    [
+      "Lilies",
+      "Clover Leaves"
+    ],
+    [
+      "Crystal Palace",
+      "Frankfurt"
+    ],
+    [
+      "blue and white",
+      "deep blues",
+      "vermilion"
+    ],
+    [
+      "cubs",
+      "young boars"
+    ],
+    [
+      "canary",
+      "parakeets"
+    ],
+    [
+      "Seagulls",
+      "Eagles"
+    ],
+    [
+      "Red Devils",
+      "Reds",
+      "Red Shorts"
+    ],
+    [
+      "Red Shorts",
+      "Dino"
+    ],
+    [
+      "Seagulls",
+      "Dolphins",
+      "Eagles"
+    ],
+    [
+      "Eagles",
+      "Glaziers"
+    ],
+    [
+      "Cottagers",
+      "Saints"
+    ],
+    [
+      "Lilies",
+      "Clover Leaves"
+    ],
+    [
+      "Sky Blues",
+      "Royal Blues"
+    ],
+    [
+      "Gunners",
+      "Irons"
+    ],
+    [
+      "Crystal Palace",
+      "Frankfurt"
+    ],
+    [
+      "Rayo Vallecano",
+      "Osasuna"
+    ],
+    [
+      "Real Betis",
+      "Elche"
+    ],
+    [
+      "Celta Vigo",
+      "Deportivo"
+    ],
+    [
+      "parakeets",
+      "canary"
+    ],
+    [
+      "blue and white",
+      "deep blues"
+    ],
+    [
+      "young boars",
+      "cubs"
+    ],
+    [
+      "fava eaters",
+      "cucumber growers"
+    ],
+    [
+      "miners",
+      "works team"
+    ]
+  ],
+  "cut": [
+    {
+      "w": "Vikings",
+      "why": "Real Madrid’s Vikingos: laliga.com gives two competing origin stories"
+    },
+    {
+      "w": "Indios",
+      "why": "Atlético nickname, cut as culturally sensitive"
+    },
+    {
+      "w": "Armeros",
+      "why": "Eibar nickname means gunsmiths, cut as weapons-related"
+    },
+    {
+      "w": "Nazaríes",
+      "why": "Granada nickname, origin too involved for one plain sentence"
+    },
+    {
+      "w": "Queso Mecánico",
+      "why": "Albacete: the laliga.com page doesn’t spell out the meaning"
+    },
+    {
+      "w": "Neverkusen",
+      "why": "Leverkusen nickname is mocking, not kid-friendly in spirit"
+    },
+    {
+      "w": "Wolves",
+      "why": "Wolfsburg: the club name gives the answer away"
+    },
+    {
+      "w": "Lions (1860 Munich, Braunschweig)",
+      "why": "Two German clubs share it, and Athletic Club already uses Lions"
+    },
+    {
+      "w": "Storks",
+      "why": "Holstein Kiel: origin unclear even on bundesliga.com"
+    },
+    {
+      "w": "Red Bulls",
+      "why": "RB Leipzig: the club name gives it away"
+    },
+    {
+      "w": "Hammers",
+      "why": "West Ham: no premierleague.com page explains it (Irons used instead)"
+    },
+    {
+      "w": "Toffees, Magpies, Foxes, Villans, Spurs",
+      "why": "No premierleague.com page of its own explains them, only links out to club sites"
+    },
+    {
+      "w": "Les Gones, Les Verts, Phocéens, Merlus, Sang et Or",
+      "why": "ligue1.com only uses them in passing, never explains them. Kept three Ligue 1 cards where a page ties nickname to club plainly"
+    },
+    {
+      "w": "Old Lady (Juventus), Bianconeri, Rossoneri, Nerazzurri",
+      "why": "legaseriea.it has no page that explains Serie A nicknames"
+    },
+    {
+      "w": "Herons, Loons, NWSL nicknames",
+      "why": "No mlssoccer.com or nwslsoccer.com page found that explains them"
+    },
+    {
+      "w": "Maños, Califas, Indálicos, Pucelanos",
+      "why": "Supported by laliga.com but too obscure for this audience"
+    },
+    {
+      "w": "Unity (Eintracht)",
+      "why": "A club name meaning, not a nickname"
+    },
+    {
+      "w": "Arsenal",
+      "why": "It is the only card with k 'club' (SPEC needs at least 4 per k), so it would have no wrong buttons. It also repeats card 0’s Gunners fact. The fact is right (badges article: eastward-pointing cannon)"
+    },
+    {
+      "w": "Burn",
+      "why": "Only mlssoccer.com card. The user wants as few official sources as possible. Burn was also a former team name, not a nickname"
+    },
+    {
+      "w": "Les Dogues",
+      "why": "ligue1.com is an extra source. The user wants as few sources as possible, and the cited page is a World Cup preview, not a nickname source"
+    },
+    {
+      "w": "Les Canaris",
+      "why": "ligue1.com is an extra source, and the cited page is a player profile that barely backs the claim. Cut to keep sources tight"
+    },
+    {
+      "w": "Les Aiglons",
+      "why": "ligue1.com is an extra source, and the cited page is a transfer roundup. Cut to keep sources tight"
+    }
+  ]
+}

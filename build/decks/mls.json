@@ -1,0 +1,716 @@
+{
+ "deck": "MLS",
+ "primary": "mlssoccer.com",
+ "secondary": "",
+ "as_of": "2026-10-15",
+ "items": [
+  {
+   "w": "LA Galaxy",
+   "means": "Their sixth came in 2024",
+   "ex": "LA Galaxy have won six MLS Cups, more than any other club",
+   "k": "club",
+   "src": "https://www.mlssoccer.com/news/la-galaxy-win-mls-cup-2024-presented-by-audi-defeating-new-york-red-bulls-2-1",
+   "d": 1,
+   "current": true
+  },
+  {
+   "w": "Inter Miami",
+   "means": "Their first MLS Cup, with Messi as MVP",
+   "ex": "Inter Miami beat Vancouver 3–1 to win MLS Cup 2025",
+   "k": "club",
+   "src": "https://www.mlssoccer.com/news/inter-miami-cf-win-2025-mls-cup-presented-by-audi",
+   "d": 1
+  },
+  {
+   "w": "Sounders",
+   "means": "Their first MLS Cup, at BMO Field",
+   "ex": "The Sounders beat Toronto FC on penalties to win MLS Cup 2016",
+   "k": "club",
+   "src": "https://www.mlssoccer.com/news/mls-cup-winners",
+   "d": 1
+  },
+  {
+   "w": "Toronto FC",
+   "means": "MLS Cup, Shield and Canadian title",
+   "ex": "In 2017, Toronto FC won the first domestic treble in MLS history",
+   "k": "club",
+   "src": "https://www.mlssoccer.com/news/toronto-fc-win-first-domestic-treble-mls-history",
+   "d": 2
+  },
+  {
+   "w": "Atlanta United",
+   "means": "Josef Martínez was the MVP",
+   "ex": "Atlanta United beat Portland 2–0 at home to win MLS Cup 2018",
+   "k": "club",
+   "src": "https://www.mlssoccer.com/news/mls-cup-winners",
+   "d": 2
+  },
+  {
+   "w": "NYCFC",
+   "means": "Their first MLS Cup",
+   "ex": "NYCFC beat Portland on penalties to win MLS Cup 2021",
+   "k": "club",
+   "src": "https://www.mlssoccer.com/news/nycfc-are-2021-mls-cup-champions-cityzens-claim-first-ever-crown",
+   "d": 2
+  },
+  {
+   "w": "LAFC",
+   "means": "Their first MLS Cup",
+   "ex": "LAFC won MLS Cup 2022 on penalties after a 3–3 draw",
+   "k": "club",
+   "src": "https://www.mlssoccer.com/news/los-angeles-football-club-win-first-mls-cup-in-club-history-defeating-the-philad",
+   "d": 2
+  },
+  {
+   "w": "Columbus Crew",
+   "means": "After titles in 2008 and 2020",
+   "ex": "The Columbus Crew won their third MLS Cup in 2023, beating LAFC",
+   "k": "club",
+   "src": "https://www.mlssoccer.com/news/columbus-crew-win-2023-mls-cup-presented-by-audi-defeating-lafc-2-1",
+   "d": 2
+  },
+  {
+   "w": "Tampa Bay Mutiny",
+   "means": "Best record in the league’s first season",
+   "ex": "The Tampa Bay Mutiny won the first Supporters’ Shield, in 1996",
+   "k": "club",
+   "src": "https://www.mlssoccer.com/news/philadelphia-union-win-2025-supporters-shield",
+   "d": 3
+  },
+  {
+   "w": "Philadelphia Union",
+   "means": "Best regular-season record twice",
+   "ex": "The Philadelphia Union won the Supporters’ Shield in 2020 and 2025",
+   "k": "club",
+   "src": "https://www.mlssoccer.com/news/philadelphia-union-win-2025-supporters-shield",
+   "d": 2
+  },
+  {
+   "w": "FC Cincinnati",
+   "means": "Their first Supporters’ Shield",
+   "ex": "FC Cincinnati won the Supporters’ Shield in 2023",
+   "k": "club",
+   "src": "https://www.mlssoccer.com/news/philadelphia-union-win-2025-supporters-shield",
+   "d": 2
+  },
+  {
+   "w": "New York Red Bulls",
+   "means": "Three Shields, tied with Columbus",
+   "ex": "The New York Red Bulls won the Supporters’ Shield in 2013, 2015 and 2018",
+   "k": "club",
+   "src": "https://www.mlssoccer.com/news/philadelphia-union-win-2025-supporters-shield",
+   "d": 3
+  },
+  {
+   "w": "Chicago Fire",
+   "means": "MLS Cup and U.S. Open Cup, as a new club",
+   "ex": "In 1998, their first season, the Chicago Fire won a double",
+   "k": "club",
+   "src": "https://www.mlssoccer.com/news/look-back-history-mls-expansion",
+   "d": 3
+  },
+  {
+   "w": "Portland Timbers",
+   "means": "Diego Valeri was the MVP",
+   "ex": "The Portland Timbers beat Columbus 2–1 to win MLS Cup 2015",
+   "k": "club",
+   "src": "https://www.mlssoccer.com/news/mls-cup-winners",
+   "d": 2
+  },
+  {
+   "w": "Lionel Messi",
+   "means": "In 2024 and 2025, with Inter Miami",
+   "ex": "Lionel Messi was the first player to win MLS MVP in back-to-back years",
+   "k": "player",
+   "src": "https://www.mlssoccer.com/news/inter-miami-cf-forward-lionel-messi-named-2025-landon-donovan-mls-most-valuable-player-for-second-consecutive-season",
+   "d": 1
+  },
+  {
+   "w": "Chris Wondolowski",
+   "means": "He scored four goals that day",
+   "ex": "In 2019, Chris Wondolowski passed Landon Donovan as MLS’s all-time top scorer",
+   "k": "player",
+   "src": "https://www.mlssoccer.com/news/date-2019-san-joses-chris-wondolowski-became-mls-all-time-leading-goal-scorer",
+   "d": 2
+  },
+  {
+   "w": "Carlos Vela",
+   "means": "34 goals for LAFC",
+   "ex": "Carlos Vela set the MLS record for goals in a season in 2019",
+   "k": "player",
+   "src": "https://www.mlssoccer.com/news/carlos-vela-breaks-goalscoring-record-hat-trick-capture-2019-mls-golden-boot",
+   "d": 2,
+   "current": true
+  },
+  {
+   "w": "Josef Martínez",
+   "means": "Atlanta beat Portland 2–0",
+   "ex": "Josef Martínez was the MVP of MLS Cup 2018 for Atlanta",
+   "k": "player",
+   "src": "https://www.mlssoccer.com/news/mls-cup-winners",
+   "d": 3
+  },
+  {
+   "w": "Landon Donovan",
+   "means": "He won it himself in 2009",
+   "ex": "The MLS MVP award is named for Landon Donovan",
+   "k": "player",
+   "src": "https://www.mlssoccer.com/news/major-league-soccer-names-most-valuable-player-award-after-landon-donovan",
+   "d": 1
+  },
+  {
+   "w": "David Beckham",
+   "means": "He joined the LA Galaxy in 2007",
+   "ex": "The Designated Player rule is nicknamed for David Beckham",
+   "k": "player",
+   "src": "https://www.mlssoccer.com/players/david-beckham/",
+   "d": 1
+  },
+  {
+   "w": "Gareth Bale",
+   "means": "LAFC then won it on penalties",
+   "ex": "Gareth Bale’s 128th-minute header tied MLS Cup 2022 for LAFC",
+   "k": "player",
+   "src": "https://www.mlssoccer.com/news/los-angeles-football-club-win-first-mls-cup-in-club-history-defeating-the-philad",
+   "d": 2
+  },
+  {
+   "w": "Eric Wynalda",
+   "means": "San Jose beat D.C. United 1–0",
+   "ex": "Eric Wynalda scored the only goal of MLS’s first-ever game",
+   "k": "player",
+   "src": "https://www.mlssoccer.com/news/league-born-oral-history-inaugural-mls-match",
+   "d": 3
+  },
+  {
+   "w": "Stefan Frei",
+   "means": "Seattle won 5–4 on penalties",
+   "ex": "Stefan Frei was the MVP of MLS Cup 2016",
+   "k": "player",
+   "src": "https://www.mlssoccer.com/news/mls-cup-winners",
+   "d": 3
+  },
+  {
+   "w": "Jordan Morris",
+   "means": "He passed Raúl Ruidíaz for the record",
+   "ex": "Jordan Morris has scored the most goals in Sounders history",
+   "k": "player",
+   "src": "https://www.mlssoccer.com/news/club-legend-jordan-morris-breaks-seattle-sounders-scoring-record",
+   "d": 1,
+   "current": true
+  },
+  {
+   "w": "Preki",
+   "means": "He won it in 1997 and 2003",
+   "ex": "Before Messi, Preki was the only player to win MLS MVP twice",
+   "k": "player",
+   "src": "https://www.mlssoccer.com/news/inter-miami-cf-forward-lionel-messi-named-2025-landon-donovan-mls-most-valuable-player-for-second-consecutive-season",
+   "d": 3
+  },
+  {
+   "w": "Bruce Arena",
+   "means": "He also has four Supporters’ Shields",
+   "ex": "Bruce Arena has coached his teams to five MLS Cups",
+   "k": "coach",
+   "src": "https://www.mlssoccer.com/news/san-jose-earthquakes-name-bruce-arena-head-coach-sporting-director",
+   "d": 2,
+   "current": true
+  },
+  {
+   "w": "Brian Schmetzer",
+   "means": "He took over in the summer of 2016",
+   "ex": "Brian Schmetzer coached the Sounders to MLS Cups in 2016 and 2019",
+   "k": "coach",
+   "src": "https://www.mlssoccer.com/news/seattle-sounders-brian-schmetzer-reach-multi-year-extension",
+   "d": 2
+  },
+  {
+   "w": "Sigi Schmid",
+   "means": "He won the award in 1999 and 2008",
+   "ex": "The MLS Coach of the Year award is named for Sigi Schmid",
+   "k": "coach",
+   "src": "https://www.mlssoccer.com/news/philadelphia-union-bradley-carnell-2025-sigi-schmid-mls-coach-of-the-year",
+   "d": 2
+  },
+  {
+   "w": "Greg Vanney",
+   "means": "Two titles with two different clubs",
+   "ex": "Greg Vanney won MLS Cup with Toronto FC in 2017 and the Galaxy in 2024",
+   "k": "coach",
+   "src": "https://www.mlssoccer.com/news/la-galaxy-win-mls-cup-2024-presented-by-audi-defeating-new-york-red-bulls-2-1",
+   "d": 3
+  },
+  {
+   "w": "Javier Mascherano",
+   "means": "Miami beat Vancouver 3–1",
+   "ex": "Javier Mascherano won MLS Cup 2025 in his first year coaching Miami",
+   "k": "coach",
+   "src": "https://www.mlssoccer.com/news/inter-miami-cf-win-2025-mls-cup-presented-by-audi",
+   "d": 2
+  },
+  {
+   "w": "Steve Cherundolo",
+   "means": "LAFC’s first MLS Cup",
+   "ex": "Steve Cherundolo won MLS Cup 2022 in his first year coaching LAFC",
+   "k": "coach",
+   "src": "https://www.mlssoccer.com/news/los-angeles-football-club-win-first-mls-cup-in-club-history-defeating-the-philad",
+   "d": 3
+  },
+  {
+   "w": "Wilfried Nancy",
+   "means": "In his first season in Columbus",
+   "ex": "Wilfried Nancy coached the Columbus Crew to the 2023 MLS Cup",
+   "k": "coach",
+   "src": "https://www.mlssoccer.com/news/columbus-crew-win-2023-mls-cup-presented-by-audi-defeating-lafc-2-1",
+   "d": 3
+  },
+  {
+   "w": "Lumen Field",
+   "means": "68,741 saw the 2022 Concacaf final there",
+   "ex": "The Sounders play their home games at Lumen Field",
+   "k": "stadium",
+   "src": "https://www.mlssoccer.com/news/seattle-sounders-fc-win-2022-scotiabank-concacaf-champions-league",
+   "d": 1,
+   "current": true
+  },
+  {
+   "w": "BMO Field",
+   "means": "Opened in April 2007",
+   "ex": "Toronto FC play their home games at BMO Field",
+   "k": "stadium",
+   "src": "https://www.mlssoccer.com/news/timeline-of-every-new-soccer-stadium-in-mls",
+   "d": 1,
+   "current": true
+  },
+  {
+   "w": "Providence Park",
+   "means": "It hosted MLS Cup 2021",
+   "ex": "The Portland Timbers play their home games at Providence Park",
+   "k": "stadium",
+   "src": "https://www.mlssoccer.com/news/nycfc-are-2021-mls-cup-champions-cityzens-claim-first-ever-crown",
+   "d": 2,
+   "current": true
+  },
+  {
+   "w": "Crew Stadium",
+   "means": "It hosted MLS Cup 2001",
+   "ex": "Opened in 1999, Crew Stadium was MLS’s first soccer-specific stadium",
+   "k": "stadium",
+   "src": "https://www.mlssoccer.com/news/timeline-of-every-new-soccer-stadium-in-mls",
+   "d": 3
+  },
+  {
+   "w": "Spartan Stadium",
+   "means": "31,683 fans, a sellout",
+   "ex": "MLS’s first-ever game was played at Spartan Stadium in San Jose",
+   "k": "stadium",
+   "src": "https://www.mlssoccer.com/news/league-born-oral-history-inaugural-mls-match",
+   "d": 3
+  },
+  {
+   "w": "Rose Bowl",
+   "means": "Chicago beat D.C. United 2–0",
+   "ex": "The Chicago Fire won MLS Cup 1998 at the Rose Bowl",
+   "k": "stadium",
+   "src": "https://www.mlssoccer.com/news/mls-cup-winners",
+   "d": 3
+  },
+  {
+   "w": "Chase Stadium",
+   "means": "A sellout crowd of 21,550",
+   "ex": "Inter Miami won MLS Cup 2025 at home, at Chase Stadium",
+   "k": "stadium",
+   "src": "https://www.mlssoccer.com/news/inter-miami-cf-win-2025-mls-cup-presented-by-audi",
+   "d": 2
+  },
+  {
+   "w": "Snapdragon Stadium",
+   "means": "A 35,000-seat venue",
+   "ex": "San Diego FC play their home games at Snapdragon Stadium",
+   "k": "stadium",
+   "src": "https://www.mlssoccer.com/news/major-league-soccer-awards-expansion-team-to-san-diego",
+   "d": 2,
+   "current": true
+  },
+  {
+   "w": "Allianz Field",
+   "means": "Opened in April 2019",
+   "ex": "Minnesota United play their home games at Allianz Field",
+   "k": "stadium",
+   "src": "https://www.mlssoccer.com/news/timeline-of-every-new-soccer-stadium-in-mls",
+   "d": 2,
+   "current": true
+  },
+  {
+   "w": "Audi Field",
+   "means": "Opened in July 2018",
+   "ex": "The MLS club in Washington, D.C., plays its home games at Audi Field",
+   "k": "stadium",
+   "src": "https://www.mlssoccer.com/news/timeline-of-every-new-soccer-stadium-in-mls",
+   "d": 2,
+   "current": true
+  },
+  {
+   "w": "1996",
+   "means": "San Jose beat D.C. United 1–0",
+   "ex": "MLS played its first-ever game in 1996",
+   "k": "year",
+   "src": "https://www.mlssoccer.com/news/league-born-oral-history-inaugural-mls-match",
+   "d": 1
+  },
+  {
+   "w": "2009",
+   "means": "The league’s 15th club",
+   "ex": "The Sounders played their first MLS season in 2009",
+   "k": "year",
+   "src": "https://www.mlssoccer.com/news/look-back-history-mls-expansion",
+   "d": 1
+  },
+  {
+   "w": "2007",
+   "means": "MLS’s first Canadian club",
+   "ex": "Toronto FC joined MLS in 2007",
+   "k": "year",
+   "src": "https://www.mlssoccer.com/news/look-back-history-mls-expansion",
+   "d": 2
+  },
+  {
+   "w": "2025",
+   "means": "The league’s 30th club",
+   "ex": "San Diego FC played their first MLS season in 2025",
+   "k": "year",
+   "src": "https://www.mlssoccer.com/news/major-league-soccer-awards-expansion-team-to-san-diego",
+   "d": 2
+  },
+  {
+   "w": "2023",
+   "means": "They beat Nashville on penalties",
+   "ex": "Inter Miami won the Leagues Cup, their first trophy, in 2023",
+   "k": "year",
+   "src": "https://www.mlssoccer.com/news/lionel-messi-inter-miami-are-leagues-cup-champions",
+   "d": 1
+  },
+  {
+   "w": "2017",
+   "means": "Minnesota United joined the same year",
+   "ex": "Atlanta United played their first MLS season in 2017",
+   "k": "year",
+   "src": "https://www.mlssoccer.com/news/look-back-history-mls-expansion",
+   "d": 2
+  },
+  {
+   "w": "2011",
+   "means": "Vancouver joined the same year",
+   "ex": "The Portland Timbers played their first MLS season in 2011",
+   "k": "year",
+   "src": "https://www.mlssoccer.com/news/look-back-history-mls-expansion",
+   "d": 2
+  },
+  {
+   "w": "30",
+   "means": "San Diego FC was the 30th",
+   "ex": "MLS has 30 clubs",
+   "k": "number",
+   "src": "https://www.mlssoccer.com/clubs/",
+   "d": 1,
+   "current": true
+  },
+  {
+   "w": "10",
+   "means": "Tampa Bay was one of them",
+   "ex": "MLS began in 1996 with 10 clubs",
+   "k": "number",
+   "src": "https://www.mlssoccer.com/news/changing-guard-first-time-ever-no-founding-mls-clubs-conference-finals",
+   "d": 2
+  },
+  {
+   "w": "171",
+   "means": "Plus 42 assists",
+   "ex": "Chris Wondolowski scored 171 regular-season goals, an MLS record",
+   "k": "number",
+   "src": "https://www.mlssoccer.com/news/mls-goals-king-san-jose-earthquakes-legend-chris-wondolowski-retires",
+   "d": 3,
+   "current": true
+  },
+  {
+   "w": "31",
+   "means": "Carlos Vela beat it a year later",
+   "ex": "Josef Martínez scored 31 goals in 2018, a record at the time",
+   "k": "number",
+   "src": "https://www.mlssoccer.com/news/carlos-vela-breaks-goalscoring-record-hat-trick-capture-2019-mls-golden-boot",
+   "d": 3
+  },
+  {
+   "w": "74",
+   "means": "It won them the 2024 Supporters’ Shield",
+   "ex": "Inter Miami set an MLS points record of 74 in 2024",
+   "k": "number",
+   "src": "https://www.mlssoccer.com/news/nashville-sc-tracker-supporters-shield-mls-points-record",
+   "d": 2,
+   "current": false
+  },
+  {
+   "w": "29",
+   "means": "Benteke won it in 2024 with 23",
+   "ex": "Lionel Messi scored 29 goals to win the 2025 Golden Boot",
+   "k": "number",
+   "src": "https://www.mlssoccer.com/news/mls-golden-boot-winners",
+   "d": 2
+  },
+  {
+   "w": "Supporters’ Shield",
+   "means": "It has been given out since 1996",
+   "ex": "The best regular-season record wins the Supporters’ Shield",
+   "k": "trophy",
+   "src": "https://www.mlssoccer.com/news/philadelphia-union-win-2025-supporters-shield",
+   "d": 1
+  },
+  {
+   "w": "Golden Boot",
+   "means": "Messi won it in 2025",
+   "ex": "Each season, the league’s top goalscorer wins the Golden Boot",
+   "k": "trophy",
+   "src": "https://www.mlssoccer.com/news/mls-golden-boot-winners",
+   "d": 1
+  },
+  {
+   "w": "Leagues Cup",
+   "means": "A record 69,314 fans were there",
+   "ex": "The Sounders beat Inter Miami 3–0 to win the 2025 Leagues Cup",
+   "k": "trophy",
+   "src": "https://www.mlssoccer.com/news/champions-seattle-sounders-win-leagues-cup-2025-over-inter-miami",
+   "d": 1
+  },
+  {
+   "w": "Champions League",
+   "means": "They won 5–2 on aggregate",
+   "ex": "The Sounders beat Pumas in 2022 to win the Concacaf Champions League",
+   "k": "trophy",
+   "src": "https://www.mlssoccer.com/news/seattle-sounders-fc-win-2022-scotiabank-concacaf-champions-league",
+   "d": 2
+  },
+  {
+   "w": "MVP",
+   "means": "He had 17 assists that year",
+   "ex": "Carlos Valderrama won the league’s first MVP award in 1996",
+   "k": "trophy",
+   "src": "https://www.mlssoccer.com/players/carlos-valderrama/",
+   "d": 2
+  },
+  {
+   "w": "MLS Cup",
+   "means": "Part of MLS’s first domestic treble",
+   "ex": "Toronto FC beat the Sounders 2–0 in the final to win the 2017 MLS Cup",
+   "k": "trophy",
+   "src": "https://www.mlssoccer.com/news/toronto-fc-win-first-domestic-treble-mls-history",
+   "d": 1
+  }
+ ],
+ "groups": [
+  [
+   "Sounders",
+   "Toronto FC"
+  ],
+  [
+   "LAFC",
+   "Columbus Crew"
+  ],
+  [
+   "LAFC",
+   "Philadelphia Union"
+  ],
+  [
+   "Atlanta United",
+   "Portland Timbers"
+  ],
+  [
+   "NYCFC",
+   "Portland Timbers"
+  ],
+  [
+   "New York Red Bulls",
+   "Columbus Crew"
+  ],
+  [
+   "Carlos Vela",
+   "Josef Martínez"
+  ],
+  [
+   "Chris Wondolowski",
+   "Landon Donovan"
+  ],
+  [
+   "Portland Timbers",
+   "Columbus Crew"
+  ],
+  [
+   "Lionel Messi",
+   "Preki"
+  ],
+  [
+   "Steve Cherundolo",
+   "Wilfried Nancy"
+  ],
+  [
+   "Bruce Arena",
+   "Sigi Schmid",
+   "Brian Schmetzer"
+  ],
+  [
+   "Greg Vanney",
+   "Bruce Arena"
+  ],
+  [
+   "29",
+   "30",
+   "31"
+  ],
+  [
+   "2017",
+   "2018"
+  ],
+  [
+   "Supporters’ Shield",
+   "MLS Cup"
+  ],
+  [
+   "Leagues Cup",
+   "Champions League"
+  ],
+  [
+   "Crew Stadium",
+   "Spartan Stadium"
+  ],
+  [
+   "Lionel Messi",
+   "Preki",
+   "Landon Donovan"
+  ],
+  [
+   "Chris Wondolowski",
+   "Carlos Vela",
+   "Josef Martínez",
+   "Lionel Messi",
+   "Landon Donovan"
+  ],
+  [
+   "Josef Martínez",
+   "Stefan Frei",
+   "Lionel Messi"
+  ],
+  [
+   "Landon Donovan",
+   "David Beckham",
+   "Sigi Schmid"
+  ],
+  [
+   "Jordan Morris",
+   "Stefan Frei"
+  ],
+  [
+   "BMO Field",
+   "Providence Park",
+   "Crew Stadium",
+   "Rose Bowl",
+   "Chase Stadium",
+   "Lumen Field"
+  ],
+  [
+   "Crew Stadium",
+   "Spartan Stadium",
+   "Rose Bowl"
+  ],
+  [
+   "2023",
+   "2025",
+   "2009"
+  ],
+  [
+   "10",
+   "30"
+  ],
+  [
+   "29",
+   "31",
+   "171"
+  ],
+  [
+   "Golden Boot",
+   "MVP"
+  ]
+ ],
+ "cut": [
+  {
+   "w": "Miami Fusion",
+   "why": "2001 Shield winner. Too obscure for a public audience"
+  },
+  {
+   "w": "Real Salt Lake",
+   "why": "2009 MLS Cup. Too obscure, and too many cup-winner cards already"
+  },
+  {
+   "w": "Houston Dynamo",
+   "why": "2006 and 2007 back-to-back cups. Too obscure, trimmed for balance"
+  },
+  {
+   "w": "6 (Donovan’s MLS Cups)",
+   "why": "Overlaps the Galaxy’s six-cups card. A ‘most by a player’ angle isn’t on the official page"
+  },
+  {
+   "w": "Cucho Hernández",
+   "why": "2023 MLS Cup MVP. Too obscure, trimmed to balance difficulty"
+  },
+  {
+   "w": "Mercedes-Benz Stadium",
+   "why": "Answer is 21 characters, over the 20 hard max"
+  },
+  {
+   "w": "Dick’s Sporting Goods Park",
+   "why": "Highest-elevation MLS stadium, but the answer is too long"
+  },
+  {
+   "w": "Lower.com Field / Banc of California Stadium",
+   "why": "Both have since been renamed. Names aren’t stable"
+  },
+  {
+   "w": "Q2 Stadium",
+   "why": "Couldn’t pin its opening detail to official wording"
+  },
+  {
+   "w": "Whitecaps",
+   "why": "2025 runner-up only repeats the Inter Miami card"
+  },
+  {
+   "w": "Nashville SC (2026 Shield)",
+   "why": "The 2026 season is still underway on Oct 15, 2026, and the Shield isn’t clinched"
+  },
+  {
+   "w": "Sounders first MLS game date",
+   "why": "Official pages disagree: March 9 vs March 19, 2009"
+  },
+  {
+   "w": "Sounders as first MLS winner of Concacaf’s top club prize",
+   "why": "D.C. United and the Galaxy won the older Champions’ Cup, so the card avoids a ‘first’ claim"
+  },
+  {
+   "w": "2026 MLS Cup and Golden Boot",
+   "why": "Not decided yet. Messi leads the Golden Boot race with 23 goals as of Oct 11"
+  },
+  {
+   "w": "Toronto FC 69-point record",
+   "why": "Since broken (73 in 2021, 74 in 2024). Stale"
+  },
+  {
+   "w": "LAFC 72-point record (2019)",
+   "why": "Since broken. Stale"
+  },
+  {
+   "w": "D.C. United",
+   "why": "Answer’s periods (D.C.) trip the build’s two-sentence check, and the official name keeps them"
+  },
+  {
+   "w": "U.S. Open Cup",
+   "why": "Answer’s periods (U.S.) trip the build’s two-sentence check, and the official name keeps them"
+  }
+ ]
+}

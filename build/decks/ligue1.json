@@ -1,0 +1,685 @@
+{
+  "deck": "Ligue 1",
+  "primary": "ligue1.com",
+  "secondary": "",
+  "as_of": "2026-10-15",
+  "items": [
+    {
+      "w": "PSG",
+      "means": "Sealed with a 2–0 win at Lens",
+      "ex": "PSG won the league five seasons running, from 2021–22 to 2025–26",
+      "k": "club",
+      "src": "https://ligue1.com/en/articles/l1_article_5140-psg-s-ligue-1-mc-donald-s-title-win-in-numbers",
+      "d": 1,
+      "current": false
+    },
+    {
+      "w": "Lyon",
+      "means": "Seven titles in a row, 2002–2008",
+      "ex": "Karim Benzema came up through the academy at Lyon",
+      "k": "club",
+      "src": "https://ligue1.com/en/articles/l1_article_4875-lyon-how-a-dynasty-was-made",
+      "d": 1,
+      "current": false
+    },
+    {
+      "w": "Monaco",
+      "means": "Champions with him in 2016–17",
+      "ex": "Kylian Mbappé began his Ligue 1 career at Monaco",
+      "k": "club",
+      "src": "https://ligue1.com/en/articles/l1_article_3934-happy-birthday-kylian-mbappe",
+      "d": 1,
+      "current": false
+    },
+    {
+      "w": "Marseille",
+      "means": "Nine league titles in all",
+      "ex": "Marseille won four league titles in a row, from 1988–89 to 1991–92",
+      "k": "club",
+      "src": "https://ligue1.com/fr/articles/l1_article_289-le-palmares-des-champions-de-ligue-1",
+      "d": 2,
+      "current": false
+    },
+    {
+      "w": "Montpellier",
+      "means": "Three points clear of PSG",
+      "ex": "Montpellier won the 2011–12 league title",
+      "k": "club",
+      "src": "https://ligue1.com/en/articles/l1_article_2494-montpellier-s-best-moments-in-ligue-1",
+      "d": 2,
+      "current": false
+    },
+    {
+      "w": "Saint-Étienne",
+      "means": "A 1–0 loss at Hampden Park",
+      "ex": "Saint-Étienne lost the 1976 European Cup final to Bayern Munich",
+      "k": "club",
+      "src": "https://ligue1.com/en/articles/l1_article_1641-saint-etienne-the-golden-years",
+      "d": 2,
+      "current": false
+    },
+    {
+      "w": "Rennes",
+      "means": "12 goals in 26 league games",
+      "ex": "Ousmane Dembélé had his breakout season at Rennes in 2015–16",
+      "k": "club",
+      "src": "https://ligue1.com/en/articles/l1_article_2102-ousmane-dembele-the-rennes-breakout-season-2015-2016",
+      "d": 2,
+      "current": false
+    },
+    {
+      "w": "Brest",
+      "means": "A first in club history",
+      "ex": "Brest’s third-place finish in 2023–24 sent them to the Champions League",
+      "k": "club",
+      "src": "https://ligue1.com/en/articles/l1_article_563-season-preview-4-stade-brestois",
+      "d": 2,
+      "current": false
+    },
+    {
+      "w": "Paris FC",
+      "means": "Home is Stade Jean-Bouin",
+      "ex": "Paris FC returned to the top flight in 2025–26 after a 46-year absence",
+      "k": "club",
+      "src": "https://ligue1.com/en/articles/l1_article_2477-les-voisins-paris-fc-and-paris-saint-germain-reunited-after-53-years",
+      "d": 2,
+      "current": false
+    },
+    {
+      "w": "Cannes",
+      "means": "Against Nantes, in May 1989",
+      "ex": "Zinédine Zidane made his top-flight debut for Cannes at age 16",
+      "k": "club",
+      "src": "https://ligue1.com/en/articles/l1_article_5578-zinedine-zidane-the-ligue-1-roots-of-france-s-new-head-coach",
+      "d": 3,
+      "current": false
+    },
+    {
+      "w": "Olympique Lillois",
+      "means": "Their only French title",
+      "ex": "Olympique Lillois won the first French league title, in 1932–33",
+      "k": "club",
+      "src": "https://ligue1.com/fr/articles/l1_article_289-le-palmares-des-champions-de-ligue-1",
+      "d": 3,
+      "current": false
+    },
+    {
+      "w": "Delio Onnis",
+      "means": "Bernard Lacombe is next, with 255",
+      "ex": "Delio Onnis is Ligue 1’s all-time top scorer, with 299 goals",
+      "k": "player",
+      "src": "https://ligue1.com/en/articles/l1_article_2588-history-and-records-of-the-ligue-1-mc-donald-s-top-scorers",
+      "d": 3,
+      "current": false
+    },
+    {
+      "w": "Kylian Mbappé",
+      "means": "Every season from 2019 to 2024",
+      "ex": "Kylian Mbappé won a record six Ligue 1 scoring titles",
+      "k": "player",
+      "src": "https://ligue1.com/en/articles/l1_article_2588-history-and-records-of-the-ligue-1-mc-donald-s-top-scorers",
+      "d": 1,
+      "current": false
+    },
+    {
+      "w": "Jean-Pierre Papin",
+      "means": "With Marseille, 1988 to 1992",
+      "ex": "Jean-Pierre Papin was the first player to win five scoring titles in a row",
+      "k": "player",
+      "src": "https://ligue1.com/en/articles/l1_article_80-historique-et-records-du-classement-des-buteurs-l1",
+      "d": 2,
+      "current": false
+    },
+    {
+      "w": "Raymond Kopa",
+      "means": "Four French titles with Reims",
+      "ex": "Raymond Kopa left Reims for Real Madrid and won the 1958 Ballon d’Or",
+      "k": "player",
+      "src": "https://ligue1.com/en/articles/l1_article_2617-stade-de-reims-france-s-first-european-giant-returns-to-the-spotlight",
+      "d": 3,
+      "current": false
+    },
+    {
+      "w": "Michel Platini",
+      "means": "Saint-Étienne’s last title to date",
+      "ex": "Michel Platini captained Saint-Étienne to the 1980–81 title",
+      "k": "player",
+      "src": "https://ligue1.com/en/articles/l1_article_1641-saint-etienne-the-golden-years",
+      "d": 2,
+      "current": false
+    },
+    {
+      "w": "Zinédine Zidane",
+      "means": "He succeeded Didier Deschamps",
+      "ex": "Zinédine Zidane was named France’s head coach in July 2026",
+      "k": "coach",
+      "src": "https://ligue1.com/en/articles/l1_article_5578-zinedine-zidane-the-ligue-1-roots-of-france-s-new-head-coach",
+      "d": 1,
+      "current": true
+    },
+    {
+      "w": "Ousmane Dembélé",
+      "means": "The sixth Frenchman to win it",
+      "ex": "PSG’s Ousmane Dembélé won the Ballon d’Or in 2025",
+      "k": "player",
+      "src": "https://ligue1.com/en/articles/l1_article_3302-ousmane-dembele-wins-the-ballon-d-or",
+      "d": 1,
+      "current": false
+    },
+    {
+      "w": "Olivier Giroud",
+      "means": "Joint top scorer with Nenê",
+      "ex": "Olivier Giroud scored 21 goals as Montpellier won the 2011–12 title",
+      "k": "player",
+      "src": "https://ligue1.com/en/articles/l1_article_2494-montpellier-s-best-moments-in-ligue-1",
+      "d": 2,
+      "current": false
+    },
+    {
+      "w": "Zlatan Ibrahimović",
+      "means": "Mbappé is next, with 9",
+      "ex": "Zlatan Ibrahimović is the Classique’s top scorer, with 11 goals",
+      "k": "player",
+      "src": "https://ligue1.com/fr/articles/l1_article_2088-le-classique-en-chiffres-l1",
+      "d": 2,
+      "current": true
+    },
+    {
+      "w": "Marquinhos",
+      "means": "Marco Verratti is next, with 9",
+      "ex": "PSG’s Marquinhos has won a record 11 Ligue 1 titles",
+      "k": "player",
+      "src": "https://ligue1.com/en/articles/l1_article_5140-psg-s-ligue-1-mc-donald-s-title-win-in-numbers",
+      "d": 1,
+      "current": true
+    },
+    {
+      "w": "Guy Roux",
+      "means": "Won the 1995–96 title with Auxerre",
+      "ex": "French football’s longest-serving manager, Guy Roux, led Auxerre until 2005",
+      "k": "coach",
+      "src": "https://ligue1.com/en/articles/l1_article_535-back-to-the-big-time-auxerre",
+      "d": 3,
+      "current": false
+    },
+    {
+      "w": "Albert Batteux",
+      "means": "With Reims and Saint-Étienne",
+      "ex": "Albert Batteux won a record eight league titles as a coach",
+      "k": "coach",
+      "src": "https://ligue1.com/fr/articles/l1_article_282-historique-le-bilan-des-entraineurs-en-ligue-1",
+      "d": 3,
+      "current": false
+    },
+    {
+      "w": "Luis Enrique",
+      "means": "Including a 2024–25 treble",
+      "ex": "Luis Enrique coached PSG to back-to-back Champions League wins",
+      "k": "coach",
+      "src": "https://ligue1.com/en/articles/l1_article_5693-26-27-preview-14-paris-saint-germain",
+      "d": 1,
+      "current": false
+    },
+    {
+      "w": "Didier Deschamps",
+      "means": "OM’s most recent league title",
+      "ex": "Didier Deschamps coached Marseille to the 2009–10 league title",
+      "k": "coach",
+      "src": "https://ligue1.com/en/articles/l1_article_5771-happy-birthday-olympique-de-marseille",
+      "d": 2,
+      "current": false
+    },
+    {
+      "w": "Christophe Galtier",
+      "means": "Lille edged PSG that season",
+      "ex": "Christophe Galtier coached Lille to the 2020–21 title",
+      "k": "coach",
+      "src": "https://ligue1.com/en/articles/l1_article_2039-history-when-lille-pipped-psg-to-the-title-in-2021",
+      "d": 2,
+      "current": false
+    },
+    {
+      "w": "Will Still",
+      "means": "He was coaching Reims",
+      "ex": "In 2022–23, Will Still was the youngest head coach in Europe’s top five leagues",
+      "k": "coach",
+      "src": "https://ligue1.com/en/articles/l1_article_565-season-preview-5-rc-lens",
+      "d": 3,
+      "current": false
+    },
+    {
+      "w": "Parc des Princes",
+      "means": "PSG’s home since 1974",
+      "ex": "PSG play home games at Parc des Princes",
+      "k": "stadium",
+      "src": "https://ligue1.com/en/articles/l1_article_2477-les-voisins-paris-fc-and-paris-saint-germain-reunited-after-53-years",
+      "d": 1,
+      "current": true
+    },
+    {
+      "w": "Vélodrome",
+      "means": "OM’s home ground",
+      "ex": "Marseille’s Vélodrome is nicknamed “Le Volcan”",
+      "k": "stadium",
+      "src": "https://ligue1.com/en/articles/l1_article_5771-happy-birthday-olympique-de-marseille",
+      "d": 1,
+      "current": true
+    },
+    {
+      "w": "Groupama Stadium",
+      "means": "Lyon’s old home was Gerland",
+      "ex": "Lyon play home games at Groupama Stadium",
+      "k": "stadium",
+      "src": "https://ligue1.com/en/articles/l1_article_4420-the-olimpico-5-classic-clashes-between-om-and-ol",
+      "d": 2,
+      "current": true
+    },
+    {
+      "w": "Geoffroy-Guichard",
+      "means": "Stade Geoffroy-Guichard in full",
+      "ex": "Saint-Étienne play home games at Geoffroy-Guichard",
+      "k": "stadium",
+      "src": "https://ligue1.com/en/articles/l1_article_605-season-preview-16-saint-etienne",
+      "d": 2,
+      "current": true
+    },
+    {
+      "w": "Bollaert-Delelis",
+      "means": "Stade Bollaert-Delelis in full",
+      "ex": "Lens play home games at Bollaert-Delelis",
+      "k": "stadium",
+      "src": "https://ligue1.com/en/articles/l1_article_5716-lens-start-ligue-1-season-in-style-with-seven-goal-win-over-auxerre",
+      "d": 3,
+      "current": true
+    },
+    {
+      "w": "La Beaujoire",
+      "means": "Stade de la Beaujoire in full",
+      "ex": "Nantes play home games at La Beaujoire",
+      "k": "stadium",
+      "src": "https://ligue1.com/articles/l1_article_589-season-preview-11-fc-nantes",
+      "d": 3,
+      "current": true
+    },
+    {
+      "w": "Allianz Riviera",
+      "means": "Nice’s home ground",
+      "ex": "Nice play home games at Allianz Riviera",
+      "k": "stadium",
+      "src": "https://ligue1.com/en/articles/l1_article_590-season-preview-12-ogc-nice",
+      "d": 2,
+      "current": true
+    },
+    {
+      "w": "Roazhon Park",
+      "means": "Rennes’ home ground",
+      "ex": "Rennes play home games at Roazhon Park",
+      "k": "stadium",
+      "src": "https://ligue1.com/en/articles/l1_article_5703-preview-15-stade-rennais-1",
+      "d": 2,
+      "current": true
+    },
+    {
+      "w": "Stade Louis II",
+      "means": "Monaco’s home ground",
+      "ex": "Monaco play home games at Stade Louis II",
+      "k": "stadium",
+      "src": "https://ligue1.com/en/articles/l1_article_2371-preview-rc-strasbourg-travel-to-stade-louis-ii-for-crucial-clash-with-monaco",
+      "d": 2,
+      "current": true
+    },
+    {
+      "w": "Les Verts",
+      "means": "French for “the Greens”",
+      "ex": "Saint-Étienne go by the nickname Les Verts",
+      "k": "nickname",
+      "src": "https://ligue1.com/en/articles/l1_article_605-season-preview-16-saint-etienne",
+      "d": 2,
+      "current": false
+    },
+    {
+      "w": "Les Canaris",
+      "means": "French for “the Canaries”",
+      "ex": "Nantes go by the nickname Les Canaris",
+      "k": "nickname",
+      "src": "https://ligue1.com/articles/l1_article_589-season-preview-11-fc-nantes",
+      "d": 2,
+      "current": false
+    },
+    {
+      "w": "Les Dogues",
+      "means": "French for “the Mastiffs”",
+      "ex": "Lille go by the nickname Les Dogues",
+      "k": "nickname",
+      "src": "https://ligue1.com/en/articles/l1_article_571-season-preview-6-losc-lille",
+      "d": 3,
+      "current": false
+    },
+    {
+      "w": "Sang et Or",
+      "means": "French for “Blood and Gold”",
+      "ex": "Lens go by the nickname Sang et Or",
+      "k": "nickname",
+      "src": "https://ligue1.com/en/articles/l1_article_565-season-preview-5-rc-lens",
+      "d": 2,
+      "current": false
+    },
+    {
+      "w": "Les Aiglons",
+      "means": "French for “the Eaglets”",
+      "ex": "Nice go by the nickname Les Aiglons",
+      "k": "nickname",
+      "src": "https://ligue1.com/en/articles/l1_article_590-season-preview-12-ogc-nice",
+      "d": 3,
+      "current": false
+    },
+    {
+      "w": "Les Pirates",
+      "means": "Also called Les Ti’Zefs",
+      "ex": "Brest go by the nickname Les Pirates",
+      "k": "nickname",
+      "src": "https://ligue1.com/en/articles/l1_article_563-season-preview-4-stade-brestois",
+      "d": 2,
+      "current": false
+    },
+    {
+      "w": "Classique",
+      "means": "Mandanda played a record 30 of them",
+      "ex": "The Classique pits PSG against Marseille",
+      "k": "derby",
+      "src": "https://ligue1.com/fr/articles/l1_article_2088-le-classique-en-chiffres-l1",
+      "d": 1,
+      "current": false
+    },
+    {
+      "w": "Derby du Nord",
+      "means": "“Derby of the North”",
+      "ex": "The Derby du Nord pits Lens against Lille",
+      "k": "derby",
+      "src": "https://ligue1.com/en/articles/l1_article_1108-lens-vs-losc-five-classic-derby-du-nord-clashes-2",
+      "d": 2,
+      "current": false
+    },
+    {
+      "w": "Olimpico",
+      "means": "Olympique vs. Olympique",
+      "ex": "The Olimpico pits Marseille against Lyon",
+      "k": "derby",
+      "src": "https://ligue1.com/en/articles/l1_article_4420-the-olimpico-5-classic-clashes-between-om-and-ol",
+      "d": 3,
+      "current": false
+    },
+    {
+      "w": "Breton derby",
+      "means": "Brittany’s spiciest rivalry",
+      "ex": "The fiercest Breton derby pits Rennes against Nantes",
+      "k": "derby",
+      "src": "https://ligue1.com/en/articles/l1_article_2365-stade-rennais-vs-fc-nantes-5-legendary-matches",
+      "d": 2,
+      "current": false
+    },
+    {
+      "w": "Côte d’Azur derby",
+      "means": "Neighbors on the Mediterranean",
+      "ex": "The Côte d’Azur derby pits Nice against Monaco",
+      "k": "derby",
+      "src": "https://ligue1.com/en/articles/l1_article_4274-nice-and-monaco-see-out-goalless-draw-in-cote-d-azur-derby",
+      "d": 2,
+      "current": false
+    },
+    {
+      "w": "Rhône derby",
+      "means": "Also called the Rhône-Alps derby",
+      "ex": "The Rhône derby pits Lyon against Saint-Étienne",
+      "k": "derby",
+      "src": "https://ligue1.com/en/articles/l1_article_1222-recap-lacazette-wins-rhone-derby-for-lyon",
+      "d": 2,
+      "current": false
+    },
+    {
+      "w": "Inter",
+      "means": "Their second came a year later",
+      "ex": "PSG beat Inter in Munich to win their first Champions League",
+      "k": "europe",
+      "src": "https://ligue1.com/en/articles/l1_article_5693-26-27-preview-14-paris-saint-germain",
+      "d": 1,
+      "current": false
+    },
+    {
+      "w": "Arsenal",
+      "means": "4–3 in the shootout after 1–1",
+      "ex": "PSG beat Arsenal on penalties in Budapest to keep the Champions League",
+      "k": "europe",
+      "src": "https://ligue1.com/en/articles/l1_article_5693-26-27-preview-14-paris-saint-germain",
+      "d": 1,
+      "current": false
+    },
+    {
+      "w": "AC Milan",
+      "means": "Basile Boli scored the goal",
+      "ex": "Marseille beat AC Milan 1–0 to win the 1993 Champions League",
+      "k": "europe",
+      "src": "https://ligue1.com/en/articles/l1_article_5771-happy-birthday-olympique-de-marseille",
+      "d": 2,
+      "current": false
+    },
+    {
+      "w": "Real Madrid",
+      "means": "Real beat Reims again in 1959",
+      "ex": "Reims lost the 1956 European Cup final 4–3 to Real Madrid",
+      "k": "europe",
+      "src": "https://ligue1.com/en/articles/l1_article_2646-ligue-1-in-uefa-champions-league-finals",
+      "d": 2,
+      "current": false
+    },
+    {
+      "w": "Red Star Belgrade",
+      "means": "5–3 in the shootout after 0–0",
+      "ex": "Marseille lost the 1991 European Cup final on penalties to Red Star Belgrade",
+      "k": "europe",
+      "src": "https://ligue1.com/en/articles/l1_article_2646-ligue-1-in-uefa-champions-league-finals",
+      "d": 3,
+      "current": false
+    },
+    {
+      "w": "FC Porto",
+      "means": "Porto won 3–0",
+      "ex": "Monaco lost the 2004 Champions League final to FC Porto",
+      "k": "europe",
+      "src": "https://ligue1.com/en/articles/l1_article_2646-ligue-1-in-uefa-champions-league-finals",
+      "d": 3,
+      "current": false
+    },
+    {
+      "w": "14",
+      "means": "The 14th came in 2025–26",
+      "ex": "PSG have won a record 14 French league titles",
+      "k": "number",
+      "src": "https://ligue1.com/en/articles/l1_article_5140-psg-s-ligue-1-mc-donald-s-title-win-in-numbers",
+      "d": 1,
+      "current": true
+    },
+    {
+      "w": "10",
+      "means": "Second most, behind PSG",
+      "ex": "Saint-Étienne have won 10 French league titles",
+      "k": "number",
+      "src": "https://ligue1.com/fr/articles/l1_article_289-le-palmares-des-champions-de-ligue-1",
+      "d": 2,
+      "current": true
+    },
+    {
+      "w": "7",
+      "means": "From 2002 to 2008, a record",
+      "ex": "Lyon won 7 straight league titles in the 2000s",
+      "k": "number",
+      "src": "https://ligue1.com/en/articles/l1_article_5140-psg-s-ligue-1-mc-donald-s-title-win-in-numbers",
+      "d": 2,
+      "current": false
+    },
+    {
+      "w": "13",
+      "means": "In just six matches",
+      "ex": "Just Fontaine scored 13 goals at the 1958 World Cup",
+      "k": "number",
+      "src": "https://ligue1.com/en/articles/l1_article_2617-stade-de-reims-france-s-first-european-giant-returns-to-the-spotlight",
+      "d": 2,
+      "current": false
+    },
+    {
+      "w": "30",
+      "means": "75 league goals in 248 games",
+      "ex": "Juninho scored 30 Ligue 1 goals from free kicks",
+      "k": "number",
+      "src": "https://ligue1.com/en/articles/l1_article_247-copa-america-stars-juninho-brazil",
+      "d": 3,
+      "current": false
+    },
+    {
+      "w": "44",
+      "means": "Highest on the top-scorer list",
+      "ex": "Josip Skoblar scored 44 league goals for Marseille in 1970–71",
+      "k": "number",
+      "src": "https://ligue1.com/en/articles/l1_article_80-historique-et-records-du-classement-des-buteurs-l1",
+      "d": 3,
+      "current": false
+    },
+    {
+      "w": "34",
+      "means": "August 2026 to May 2027",
+      "ex": "The 2026–27 Ligue 1 season has 34 matchdays",
+      "k": "number",
+      "src": "https://ligue1.com/en/articles/l1_article_5292-the-2026-27-ligue-1-mc-donald-s-calendar-is-released",
+      "d": 2,
+      "current": true
+    }
+  ],
+  "groups": [
+    [
+      "PSG",
+      "Paris FC"
+    ],
+    [
+      "Brest",
+      "Monaco"
+    ],
+    [
+      "Marseille",
+      "Saint-Étienne"
+    ],
+    [
+      "Kylian Mbappé",
+      "Jean-Pierre Papin",
+      "Delio Onnis"
+    ],
+    [
+      "Zlatan Ibrahimović",
+      "Kylian Mbappé"
+    ],
+    [
+      "Raymond Kopa",
+      "Michel Platini",
+      "Jean-Pierre Papin",
+      "Ousmane Dembélé"
+    ],
+    [
+      "Zinédine Zidane",
+      "Didier Deschamps"
+    ],
+    [
+      "Inter",
+      "Arsenal"
+    ],
+    [
+      "14",
+      "13",
+      "10"
+    ],
+    [
+      "30",
+      "44"
+    ]
+  ],
+  "cut": [
+    {
+      "w": "Basile Boli",
+      "why": "Same fact as the AC Milan card, so I kept one"
+    },
+    {
+      "w": "Bordeaux (2008–09 title)",
+      "why": "Too obscure as a bare season fact, and cut to trim the deck"
+    },
+    {
+      "w": "Lens (1997–98 title)",
+      "why": "Too obscure as a bare season fact, and cut to trim the deck"
+    },
+    {
+      "w": "Lille (2020–21 title)",
+      "why": "Same fact as the Galtier coach card"
+    },
+    {
+      "w": "Les Gones / Les Phocéens",
+      "why": "Too obscure, and the meaning of Gones is not on ligue1.com"
+    },
+    {
+      "w": "Robert Herbin (“the Sphinx”)",
+      "why": "Cut to trim the deck. Supported by the ligue1.com Saint-Étienne history page"
+    },
+    {
+      "w": "Claude Puel (Monaco 1999–2000)",
+      "why": "Cut to trim the deck. Supported by the 26/27 Monaco preview"
+    },
+    {
+      "w": "Alain Perrin",
+      "why": "Too obscure"
+    },
+    {
+      "w": "Jean-Luc Ettori / Steve Mandanda",
+      "why": "Too obscure, and they overlap the Landreau and Classique cards"
+    },
+    {
+      "w": "Atlético Madrid (2018 Europa League final)",
+      "why": "Cut to trim the deck. It is on ligue1.com"
+    },
+    {
+      "w": "Stade Pierre-Mauroy / Abbé-Deschamps / La Meinau",
+      "why": "Cut to trim the deck. Each is on a ligue1.com page"
+    },
+    {
+      "w": "PSG founded 1970",
+      "why": "One ligue1.com page says 1970, another says the merged club formed in 1969"
+    },
+    {
+      "w": "Saint-Étienne founding year",
+      "why": "ligue1.com pages conflict (1919 vs. 1933)"
+    },
+    {
+      "w": "Batteux title split",
+      "why": "I kept the total of eight. Pages differ on how many came at Saint-Étienne (3 vs. 4)"
+    },
+    {
+      "w": "Guy Roux match count",
+      "why": "ligue1.com gives 890, 891 and 895, so the card uses no number"
+    },
+    {
+      "w": "Estéban Lepaul (2025–26 top scorer)",
+      "why": "Rennes card uses Dembélé instead. It could be a later current card"
+    },
+    {
+      "w": "1992–93 Marseille title",
+      "why": "Missing from the official roll, so left out"
+    },
+    {
+      "w": "Messi, Neymar, Thierry Henry",
+      "why": "Web-search budget ran out before I could find ligue1.com pages for them"
+    },
+    {
+      "w": "Ligue 1 has 18 clubs",
+      "why": "ligue1.com implies 18 but never states it outright. Used 34 matchdays instead"
+    },
+    {
+      "w": "Mickaël Landreau",
+      "why": "The only ligue1.com page with the 617 record is from May 2023, when Steve Mandanda was still active at 554. No current official page confirms Landreau still holds it, and the search budget ran out before an independent check. Unsure, so cut."
+    }
+  ]
+}

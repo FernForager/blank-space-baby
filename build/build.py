@@ -12,14 +12,21 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 DECKS = os.path.join(HERE, 'decks')
 
-# Level order on the panel. `name` is for screen readers only (the buttons show icons).
-LEVELS = [
-    ('alpha',   'alpha.json',    'Gen Alpha'),
-    ('parents', 'parents.json',  'Parents'),
-    ('soccer',  'soccer.json',   'Soccer Fanatics'),
-    ('swift',   'swifties.json', 'Swifties'),
-    ('epl',     'epl.json',      'Premier League'),
+# The ten categories, in panel order (reading left to right, two per row). Names show on the keys.
+# A category with no deck file yet shows as a dim key until its deck is written and approved.
+CATS = [
+    ('alpha',   'alpha.json',    'Kid Slang'),
+    ('parents', 'parents.json',  'Parent Slang'),
+    ('grand',   None,            'Grandparent Slang'),
+    ('swift',   'swifties.json', 'Taylor Swift'),
+    ('tech',    None,            'Old Tech'),
+    ('grade7',  None,            '7th Grade'),
+    ('soccer',  'soccer.json',   'Soccer Lingo'),
+    ('wc',      None,            'World Cup 2026'),
+    ('sea',     None,            'Seattle'),
+    ('epl',     'epl.json',      'EPL'),
 ]
+LEVELS = [c for c in CATS if c[1]]
 
 def rx(w):
     return re.compile(r'(^|[^A-Za-z0-9])(' + re.escape(w) + r')(?![A-Za-z0-9])', re.I)
@@ -61,7 +68,7 @@ def main():
         print('\nProblems:')
         for p in problems: print('  ', p)
         sys.exit(1)
-    tpl = open(os.path.join(HERE, 'template.html')).read().replace('__LEVELS__', json.dumps(levels, ensure_ascii=False))
+    tpl = open(os.path.join(HERE, 'template.html')).read().replace('__LEVELS__', json.dumps(levels, ensure_ascii=False)).replace('__CATS__', json.dumps([{'id': c[0], 'name': c[2], 'soon': not c[1]} for c in CATS], ensure_ascii=False))
     top, body = tpl.split('<style>', 1)              # title + font links move into <head>
     top = '\n'.join(l for l in top.splitlines() if 'claude:' not in l)
     head = open(os.path.join(HERE, 'head.html')).read().replace('</head>', top.strip() + '\n</head>')
@@ -70,4 +77,5 @@ def main():
     open(os.path.join(ROOT, 'docs', 'index.html'), 'w').write(head + body + '\n</body>\n</html>\n')
     print('wrote docs/index.html')
 
-main()
+if __name__ == '__main__':   # so tools/checkdeck.py can import check() without rebuilding
+    main()

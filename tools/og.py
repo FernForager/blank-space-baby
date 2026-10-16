@@ -10,12 +10,11 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 HTML = open(os.path.join(ROOT, 'docs', 'index.html')).read()
 CARD = 'The halftime orange slices were <span class="nb"><span class="blank"></span></span>'
 STYLE = """
-  body { background: #45BE76; } .cab { max-width: 300px; gap: 8px; padding: 10px 14px 0; } .coin { display: none !important; }
+  body { background: #F2EDE4; } .cab { max-width: 300px; gap: 8px; padding: 10px 14px 0; } 
   .marquee { padding: 10px 8px 11px; } .cab[data-v="title"] .marquee h1 { opacity: 1 !important; font-size: 13px; }
-  .cab[data-v="title"] .arc .cap { filter: none !important; } .arc .ring { width: 50px !important; height: 50px !important; } .cab[data-v="title"] .panel { height: 72px !important; padding: 0 12px; }
-  .screen { padding: 12px 16px; } #v-title .logo { display: none !important; }
-  #v-title .demo { display: flex !important; flex: 1; align-self: stretch; flex-direction: column; justify-content: center; }
-  #dq { font-size: 23px !important; } .blank { animation: none !important; }
+  .panel { display: none !important; } .bezel { max-height: none; }
+  .screen { padding: 12px 16px; } #v-play .hud, .go { display: none !important; }
+  #q { font-size: 30px !important; } .blank { animation: none !important; }
 """
 async def main():
     async with async_playwright() as p:
@@ -23,7 +22,7 @@ async def main():
         await pg.route('http://bsb.test/', lambda r: r.fulfill(body=HTML, content_type='text/html'))
         await pg.goto('http://bsb.test/'); await pg.wait_for_timeout(1500)
         await pg.add_style_tag(content=STYLE)
-        await pg.evaluate("c => { document.getElementById('dq').innerHTML = c; }", CARD)
+        await pg.evaluate("c => { document.getElementById('cab').dataset.v = 'play'; document.getElementById('q').className = 'sentence'; document.getElementById('q').innerHTML = c; }", CARD)
         await pg.wait_for_timeout(300); await pg.screenshot(path=os.path.join(ROOT, 'docs', 'og.png')); await b.close()
     print('wrote docs/og.png')
 asyncio.run(main())

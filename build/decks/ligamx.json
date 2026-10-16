@@ -1,0 +1,752 @@
+{
+ "deck": "Liga MX",
+ "primary": "ligamx.net",
+ "secondary": "",
+ "as_of": "2026-10-15",
+ "items": [
+  {
+   "w": "América",
+   "means": "Sealed with the Apertura 2024 title",
+   "ex": "América became the first team to win three short tournaments in a row",
+   "k": "club",
+   "src": "https://ligamx.net/cancha/detallenoticia/45355",
+   "d": 1
+  },
+  {
+   "w": "Chivas",
+   "means": "Rivals since a heated game in 1959",
+   "ex": "The Clásico Nacional pits América against Chivas",
+   "k": "club",
+   "src": "https://ligamx.net/cancha/detallenoticia/8050",
+   "d": 1
+  },
+  {
+   "w": "Toluca",
+   "means": "It was their 12th league title",
+   "ex": "Toluca beat Tigres 9–8 on penalties in the Apertura 2025 final",
+   "k": "club",
+   "src": "https://ligamx.net/cancha/detallenoticia/46917",
+   "d": 2
+  },
+  {
+   "w": "Cruz Azul",
+   "means": "Carlos Rotondi scored at 90+5",
+   "ex": "Cruz Azul won the Clausura 2026 final with a goal in stoppage time",
+   "k": "club",
+   "src": "https://ligamx.net/cancha/detallenoticia/47571",
+   "d": 1
+  },
+  {
+   "w": "Pumas",
+   "means": "Capitalino means “of the capital”",
+   "ex": "The Clásico Capitalino pits América against Pumas, Mexico’s national university club",
+   "k": "club",
+   "src": "https://ligamx.net/cancha/detallenoticia/47292",
+   "d": 1
+  },
+  {
+   "w": "Monterrey",
+   "means": "Fans call the club Rayados",
+   "ex": "The Clásico Regio pits Tigres against Monterrey",
+   "k": "club",
+   "src": "https://ligamx.net/cancha/detallenoticia/47228",
+   "d": 1
+  },
+  {
+   "w": "Tigres",
+   "means": "He reached 190 league goals",
+   "ex": "André-Pierre Gignac is the all-time top scorer for Tigres",
+   "k": "club",
+   "src": "https://ligamx.net/cancha/detallenoticia/47223",
+   "d": 1
+  },
+  {
+   "w": "Atlas",
+   "means": "The rivalry dates back to 1916",
+   "ex": "The Clásico Tapatío, the oldest rivalry, pits Chivas against Atlas",
+   "k": "club",
+   "src": "https://ligamx.net/cancha/detallenoticia/8050",
+   "d": 2
+  },
+  {
+   "w": "Santos",
+   "means": "Gignac passed him in 2026",
+   "ex": "Jared Borgetti scored 189 league goals for Santos",
+   "k": "club",
+   "src": "https://ligamx.net/cancha/detallenoticia/47228",
+   "d": 2
+  },
+  {
+   "w": "Pachuca",
+   "means": "They beat Monterrey in that final",
+   "ex": "Víctor Guzmán’s goal at 90+3 won Pachuca the Clausura 2016 title",
+   "k": "club",
+   "src": "https://ligamx.net/cancha/detallenoticia/47571",
+   "d": 3
+  },
+  {
+   "w": "Atlante",
+   "means": "Their last top-flight game was in 2014",
+   "ex": "Atlante returned to the top flight in 2026 after 12 years away",
+   "k": "club",
+   "src": "https://ligamx.net/cancha/detallenoticia/47622",
+   "d": 2
+  },
+  {
+   "w": "Banorte",
+   "means": "It holds 88,084 fans",
+   "ex": "América play home games at Estadio Banorte",
+   "k": "stadium",
+   "src": "https://ligamx.net/cancha/club/1/america",
+   "d": 2,
+   "current": true
+  },
+  {
+   "w": "Akron",
+   "means": "It holds 46,232 fans",
+   "ex": "Chivas play home games at Estadio Akron",
+   "k": "stadium",
+   "src": "https://ligamx.net/cancha/club/7/guadalajara",
+   "d": 2,
+   "current": true
+  },
+  {
+   "w": "BBVA",
+   "means": "It holds 53,529 fans",
+   "ex": "Monterrey play home games at Estadio BBVA",
+   "k": "stadium",
+   "src": "https://ligamx.net/cancha/club/14/monterrey",
+   "d": 2,
+   "current": true
+  },
+  {
+   "w": "Universitario",
+   "means": "“The Volcano”",
+   "ex": "Tigres’ Estadio Universitario is nicknamed El Volcán",
+   "k": "stadium",
+   "src": "https://ligamx.net/cancha/detallenoticia/46703",
+   "d": 2
+  },
+  {
+   "w": "Nemesio Diez",
+   "means": "It holds 27,273 fans",
+   "ex": "Toluca play home games at Estadio Nemesio Diez",
+   "k": "stadium",
+   "src": "https://ligamx.net/cancha/club/17/toluca",
+   "d": 2
+  },
+  {
+   "w": "Jalisco",
+   "means": "It holds 55,020 fans",
+   "ex": "Atlas play home games at Estadio Jalisco",
+   "k": "stadium",
+   "src": "https://ligamx.net/cancha/club/10445/atlas",
+   "d": 2
+  },
+  {
+   "w": "Caliente",
+   "means": "It holds 31,333 fans",
+   "ex": "The Xolos play home games at Estadio Caliente",
+   "k": "stadium",
+   "src": "https://ligamx.net/cancha/club/5/tijuana",
+   "d": 2
+  },
+  {
+   "w": "Aguascalientes",
+   "means": "At Estadio Victoria",
+   "ex": "Necaxa play home games in Aguascalientes",
+   "k": "city",
+   "src": "https://ligamx.net/cancha/club/29/necaxa",
+   "d": 2
+  },
+  {
+   "w": "Torreón",
+   "means": "At Estadio TSM Corona",
+   "ex": "Santos Laguna play home games in Torreón",
+   "k": "city",
+   "src": "https://ligamx.net/cancha/club/14102/santos-laguna",
+   "d": 2
+  },
+  {
+   "w": "Zapopan",
+   "means": "Estadio Akron, in the state of Jalisco",
+   "ex": "Chivas’ home stadium is in Zapopan",
+   "k": "city",
+   "src": "https://ligamx.net/cancha/club/7/guadalajara",
+   "d": 3
+  },
+  {
+   "w": "Guadalupe",
+   "means": "Estadio BBVA, in Nuevo León",
+   "ex": "Rayados’ home stadium is in Guadalupe",
+   "k": "city",
+   "src": "https://ligamx.net/cancha/club/14/monterrey",
+   "d": 3
+  },
+  {
+   "w": "Querétaro",
+   "means": "At Estadio La Corregidora",
+   "ex": "Gallos Blancos play home games in Querétaro",
+   "k": "city",
+   "src": "https://ligamx.net/cancha/club/13668/gallos-blancos-de-queretaro",
+   "d": 1
+  },
+  {
+   "w": "Tijuana",
+   "means": "In Baja California",
+   "ex": "The Xolos play home games in Tijuana",
+   "k": "city",
+   "src": "https://ligamx.net/cancha/club/5/tijuana",
+   "d": 1
+  },
+  {
+   "w": "Águilas",
+   "means": "“The Eagles”",
+   "ex": "América’s players are known as the Águilas",
+   "k": "nickname",
+   "src": "https://ligamx.net/cancha/detallenoticia/47292",
+   "d": 1
+  },
+  {
+   "w": "Diablos Rojos",
+   "means": "“The Red Devils”",
+   "ex": "Toluca are known as the Diablos Rojos",
+   "k": "nickname",
+   "src": "https://ligamx.net/cancha/detallenoticia/46917",
+   "d": 1
+  },
+  {
+   "w": "La Máquina",
+   "means": "“The Machine”",
+   "ex": "Cruz Azul are nicknamed La Máquina",
+   "k": "nickname",
+   "src": "https://ligamx.net/cancha/detallenoticia/47570",
+   "d": 1
+  },
+  {
+   "w": "Tuzos",
+   "means": "“The Gophers”",
+   "ex": "Pachuca are nicknamed the Tuzos",
+   "k": "nickname",
+   "src": "https://ligamx.net/cancha/detallenoticia/47228",
+   "d": 2
+  },
+  {
+   "w": "Rayos",
+   "means": "“The Lightning Bolts”",
+   "ex": "Necaxa are nicknamed the Rayos",
+   "k": "nickname",
+   "src": "https://ligamx.net/cancha/detallenoticia/29721",
+   "d": 2
+  },
+  {
+   "w": "Guerreros",
+   "means": "“The Warriors”",
+   "ex": "Santos Laguna are nicknamed the Guerreros",
+   "k": "nickname",
+   "src": "https://ligamx.net/cancha/detallenoticia/47228",
+   "d": 2
+  },
+  {
+   "w": "Potros",
+   "means": "“The Colts”",
+   "ex": "Atlante are nicknamed the Potros",
+   "k": "nickname",
+   "src": "https://ligamx.net/cancha/detallenoticia/47622",
+   "d": 2
+  },
+  {
+   "w": "Zorros",
+   "means": "“The Foxes”",
+   "ex": "Atlas are nicknamed the Zorros",
+   "k": "nickname",
+   "src": "https://ligamx.net/cancha/detallenoticia/47228",
+   "d": 2
+  },
+  {
+   "w": "Xolos",
+   "means": "Short for Xoloitzcuintles",
+   "ex": "Club Tijuana are nicknamed the Xolos",
+   "k": "nickname",
+   "src": "https://ligamx.net/cancha/club/5/tijuana",
+   "d": 1
+  },
+  {
+   "w": "Cabinho",
+   "means": "With Pumas, Atlante and León",
+   "ex": "Cabinho won eight league scoring titles, more than anyone",
+   "k": "player",
+   "src": "https://ligamx.net/cancha/detallenoticia/4614",
+   "d": 3,
+   "current": true
+  },
+  {
+   "w": "Cardozo",
+   "means": "A Paraguayan striker",
+   "ex": "Cardozo scored 249 goals for Toluca, the most by anyone for one club",
+   "k": "player",
+   "src": "https://ligamx.net/cancha/detallenoticia/47228",
+   "d": 2,
+   "current": true
+  },
+  {
+   "w": "Hugo Sánchez",
+   "means": "Famous for his bicycle kicks",
+   "ex": "Before leaving for Spain, Hugo Sánchez scored 102 goals for Pumas",
+   "k": "player",
+   "src": "https://ligamx.net/cancha/detallenoticia/4614",
+   "d": 1
+  },
+  {
+   "w": "Carlos Hermosillo",
+   "means": "From 1993–94 to 1995–96",
+   "ex": "Carlos Hermosillo won three straight scoring titles with Cruz Azul",
+   "k": "player",
+   "src": "https://ligamx.net/cancha/detallenoticia/4614",
+   "d": 3
+  },
+  {
+   "w": "Cuauhtémoc Blanco",
+   "means": "He scored 16 that tournament",
+   "ex": "Cuauhtémoc Blanco led the league in goals for América in Invierno 98",
+   "k": "player",
+   "src": "https://ligamx.net/cancha/detallenoticia/4614",
+   "d": 2
+  },
+  {
+   "w": "Carlos Rotondi",
+   "means": "For Cruz Azul in Clausura 2026",
+   "ex": "Carlos Rotondi scored the latest title-winning goal in a final, at 90+5",
+   "k": "player",
+   "src": "https://ligamx.net/cancha/detallenoticia/47571",
+   "d": 2
+  },
+  {
+   "w": "Nahuel Guzmán",
+   "means": "Level with Oribe Peralta",
+   "ex": "Tigres keeper Nahuel Guzmán tied the record with 18 games in finals",
+   "k": "player",
+   "src": "https://ligamx.net/cancha/detallenoticia/46917",
+   "d": 3,
+   "current": true
+  },
+  {
+   "w": "Joel Huiqui",
+   "means": "He led Cruz Azul in just 7 games",
+   "ex": "Joel Huiqui won a title in his first tournament as a coach, in 2026",
+   "k": "coach",
+   "src": "https://ligamx.net/cancha/detallenoticia/47571",
+   "d": 2
+  },
+  {
+   "w": "Antonio Mohamed",
+   "means": "He won it with Toluca",
+   "ex": "Antonio Mohamed won his fifth league title as a coach in Apertura 2025",
+   "k": "coach",
+   "src": "https://ligamx.net/cancha/detallenoticia/46917",
+   "d": 2
+  },
+  {
+   "w": "Miguel Herrera",
+   "means": "They beat Cruz Azul in the final",
+   "ex": "Miguel Herrera coached América to the Clausura 2013 title",
+   "k": "coach",
+   "src": "https://ligamx.net/cancha/detallenoticia/47548",
+   "d": 2
+  },
+  {
+   "w": "Juan Reynoso",
+   "means": "Level with León’s 2019 run",
+   "ex": "Juan Reynoso’s Cruz Azul won 12 games in a row in 2021",
+   "k": "coach",
+   "src": "https://ligamx.net/cancha/detallenoticia/38061",
+   "d": 3
+  },
+  {
+   "w": "Alberto Jorge",
+   "means": "The fewest games for a champion coach",
+   "ex": "Alberto Jorge coached Toluca to the Apertura 2002 title in just four games",
+   "k": "coach",
+   "src": "https://ligamx.net/cancha/detallenoticia/47571",
+   "d": 3
+  },
+  {
+   "w": "Manuel Lapuente",
+   "means": "He won five league titles as a coach",
+   "ex": "Manuel Lapuente coached Necaxa to back-to-back league titles in 1994–95 and 1995–96",
+   "k": "coach",
+   "src": "https://ligamx.net/cancha/detallenoticia/4614",
+   "d": 3
+  },
+  {
+   "w": "1943",
+   "means": "The start of the pro era",
+   "ex": "Mexico’s top league turned professional in 1943",
+   "k": "year",
+   "src": "https://ligamx.net/cancha/detallenoticia/4614",
+   "d": 2
+  },
+  {
+   "w": "1996",
+   "means": "Starting with Invierno 96",
+   "ex": "Two short tournaments a year began in 1996",
+   "k": "year",
+   "src": "https://ligamx.net/cancha/detallenoticia/4614",
+   "d": 2
+  },
+  {
+   "w": "1916",
+   "means": "Mexico’s oldest clásico",
+   "ex": "The Clásico Tapatío rivalry dates back to 1916",
+   "k": "year",
+   "src": "https://ligamx.net/cancha/detallenoticia/8050",
+   "d": 3
+  },
+  {
+   "w": "1959",
+   "means": "Chivas won after a taunt from América",
+   "ex": "The Clásico Nacional rivalry took off with a famous game in 1959",
+   "k": "year",
+   "src": "https://ligamx.net/cancha/detallenoticia/8050",
+   "d": 3
+  },
+  {
+   "w": "1962",
+   "means": "They lost 2–0 to América in their debut",
+   "ex": "Pumas joined the top flight in 1962",
+   "k": "year",
+   "src": "https://ligamx.net/cancha/detallenoticia/8050",
+   "d": 3
+  },
+  {
+   "w": "1998",
+   "means": "26 league players went to France",
+   "ex": "The old record for league players at a World Cup was set in 1998",
+   "k": "year",
+   "src": "https://ligamx.net/cancha/detallenoticia/47586",
+   "d": 3
+  },
+  {
+   "w": "16",
+   "means": "Their latest came in Apertura 2024",
+   "ex": "América have won 16 league titles, more than any other club",
+   "k": "number",
+   "src": "https://ligamx.net/cancha/detallenoticia/45355",
+   "d": 2,
+   "current": true
+  },
+  {
+   "w": "12",
+   "means": "Tied with Chivas for second-most",
+   "ex": "Toluca’s Apertura 2025 crown was their league title number 12",
+   "k": "number",
+   "src": "https://ligamx.net/cancha/detallenoticia/46917",
+   "d": 2
+  },
+  {
+   "w": "10",
+   "means": "Fourth-most in the pro era",
+   "ex": "Cruz Azul’s Clausura 2026 win made it 10 league titles for the club",
+   "k": "number",
+   "src": "https://ligamx.net/cancha/detallenoticia/47571",
+   "d": 2
+  },
+  {
+   "w": "27",
+   "means": "15 of them played for other countries",
+   "ex": "A record 27 Liga MX players were named to 2026 World Cup squads",
+   "k": "number",
+   "src": "https://ligamx.net/cancha/detallenoticia/47586",
+   "d": 3
+  },
+  {
+   "w": "88,084",
+   "means": "The biggest in Liga MX",
+   "ex": "Estadio Banorte, the old Estadio Azteca, holds 88,084 fans",
+   "k": "number",
+   "src": "https://ligamx.net/cancha/club/1/america",
+   "d": 3,
+   "current": true
+  },
+  {
+   "w": "1,170",
+   "means": "Known as the rule for minors",
+   "ex": "In Clausura 2026, each club had to give young players 1,170 minutes",
+   "k": "number",
+   "src": "https://ligamx.net/cancha/detallenoticia/47228",
+   "d": 3,
+   "current": false
+  },
+  {
+   "w": "Apertura",
+   "means": "Spanish for “opening”",
+   "ex": "Each Liga MX season starts in summer with the Apertura tournament",
+   "k": "term",
+   "src": "https://ligamx.net/cancha/detallenoticia/47591",
+   "d": 1
+  },
+  {
+   "w": "Clausura",
+   "means": "Spanish for “closing”",
+   "ex": "Each Liga MX season ends in spring with the Clausura tournament",
+   "k": "term",
+   "src": "https://ligamx.net/cancha/club/1/america",
+   "d": 1
+  },
+  {
+   "w": "Liguilla",
+   "means": "Used since the 1970–71 season",
+   "ex": "The knockout stage from the quarterfinals on is called the Liguilla",
+   "k": "term",
+   "src": "https://ligamx.net/cancha/detallenoticia/4614",
+   "d": 1
+  },
+  {
+   "w": "Jornada",
+   "means": "Spanish for “matchday”",
+   "ex": "Each round of league games is called a Jornada",
+   "k": "term",
+   "src": "https://ligamx.net/cancha/detallenoticia/47622",
+   "d": 2
+  },
+  {
+   "w": "Ida",
+   "means": "Spanish for “going”",
+   "ex": "The first leg of a two-game series is called the Ida",
+   "k": "term",
+   "src": "https://ligamx.net/cancha/detallenoticia/45349",
+   "d": 2
+  },
+  {
+   "w": "Vuelta",
+   "means": "Spanish for “return”",
+   "ex": "The second leg of a two-game series is called the Vuelta",
+   "k": "term",
+   "src": "https://ligamx.net/cancha/detallenoticia/45355",
+   "d": 2
+  },
+  {
+   "w": "Clásico",
+   "means": "That one is the Clásico Nacional",
+   "ex": "A big rivalry game, like América against Chivas, is called a Clásico",
+   "k": "term",
+   "src": "https://ligamx.net/cancha/detallenoticia/8050",
+   "d": 1
+  },
+  {
+   "w": "Gran Final",
+   "means": "It is played over two legs",
+   "ex": "The title-deciding series at the end of the playoffs is the Gran Final",
+   "k": "term",
+   "src": "https://ligamx.net/cancha/detallenoticia/45355",
+   "d": 1
+  }
+ ],
+ "groups": [
+  [
+   "Liguilla",
+   "Play-In",
+   "Gran Final"
+  ],
+  [
+   "Universitario",
+   "Jalisco"
+  ],
+  [
+   "Antonio Mohamed",
+   "Manuel Lapuente"
+  ],
+  [
+   "América",
+   "Pumas",
+   "Cruz Azul"
+  ],
+  [
+   "Chivas",
+   "Atlas"
+  ],
+  [
+   "Tigres",
+   "Monterrey"
+  ],
+  [
+   "Toluca",
+   "Tigres"
+  ],
+  [
+   "Cruz Azul",
+   "Pachuca"
+  ],
+  [
+   "Akron",
+   "Jalisco"
+  ],
+  [
+   "BBVA",
+   "Universitario"
+  ],
+  [
+   "Banorte",
+   "Universitario"
+  ],
+  [
+   "Zapopan",
+   "Guadalupe"
+  ],
+  [
+   "Aguascalientes",
+   "Caliente"
+  ],
+  [
+   "Cabinho",
+   "Hugo Sánchez",
+   "Carlos Hermosillo"
+  ],
+  [
+   "Cuauhtémoc Blanco",
+   "Carlos Hermosillo"
+  ],
+  [
+   "Antonio Mohamed",
+   "Manuel Lapuente"
+  ],
+  [
+   "Alberto Jorge",
+   "Antonio Mohamed"
+  ],
+  [
+   "Joel Huiqui",
+   "Juan Reynoso",
+   "Alberto Jorge"
+  ],
+  [
+   "1996",
+   "1998"
+  ],
+  [
+   "1959",
+   "1962"
+  ],
+  [
+   "1916",
+   "1943"
+  ],
+  [
+   "16",
+   "12",
+   "10"
+  ],
+  [
+   "Apertura",
+   "Clausura"
+  ],
+  [
+   "Ida",
+   "Vuelta"
+  ],
+  [
+   "Liguilla",
+   "Gran Final"
+  ],
+  [
+   "Águilas",
+   "Diablos Rojos",
+   "Zorros",
+   "Potros"
+  ],
+  [
+   "Rayos",
+   "Diablos Rojos"
+  ]
+ ],
+ "cut": [
+  {
+   "w": "León (10 straight wins, 2019)",
+   "why": "Clean fact on ligamx.net 29721, but cut to lighten the club kind and the d3 load. Cruz Azul's 2021 streak makes the year wording critical"
+  },
+  {
+   "w": "Cabinho 312 career goals",
+   "why": "Not on ligamx.net. Only his 8 scoring titles are supported"
+  },
+  {
+   "w": "Cardozo most Liguilla goals (43)",
+   "why": "Official figure dates from Dec 2023 and Gignac was closing in. Could be stale"
+  },
+  {
+   "w": "Gignac as player answer",
+   "why": "Already the subject of the Tigres club card. His retirement and final goal total aren't confirmed on the site"
+  },
+  {
+   "w": "Estadio Azteca renamed Banorte",
+   "why": "The site uses Estadio Banorte but no page states the rename. The card uses only the current name"
+  },
+  {
+   "w": "André Jardine (América three-peat coach)",
+   "why": "Site confirms he coached América in 2025 but no page found tying him to the three titles"
+  },
+  {
+   "w": "Atlas back-to-back titles 2021–22",
+   "why": "Supported (46917), but Atlas was already the answer to the Clásico Tapatío card and answers can't repeat within a kind"
+  },
+  {
+   "w": "Campeonísimo (Chivas era)",
+   "why": "Supported (4614) but dropped for difficulty balance. Easy to restore as a d3 nickname"
+  },
+  {
+   "w": "Dumbo López, Christian Benítez, Horacio Casarín",
+   "why": "Supported (4614) but too obscure for this audience, and the player kind was full"
+  },
+  {
+   "w": "Puebla tied for most Liguilla shootout wins",
+   "why": "Supported (46917) but obscure. Active record"
+  },
+  {
+   "w": "Chivas sent 5 players to the 2026 World Cup",
+   "why": "Supported (47586) but the number kind already had enough d3s"
+  },
+  {
+   "w": "Clásico Tapatío official edition 200",
+   "why": "Supported (47228) but awkward to phrase without an ordinal that hides the number"
+  },
+  {
+   "w": "America's first game at Estadio Azteca (1966)",
+   "why": "Supported (8050) but needs the old stadium name. Too close to the Banorte cards"
+  },
+  {
+   "w": "Liga MX has 18 clubs",
+   "why": "The standings load by script, so no ligamx.net page states the count in plain text"
+  },
+  {
+   "w": "Mazatlán",
+   "why": "Played Clausura 2026 but isn't in the Apertura 2026 club list, and no page explains the change. Left out"
+  },
+  {
+   "w": "Chivas plays only Mexican players",
+   "why": "No ligamx.net page found stating the policy"
+  },
+  {
+   "w": "Current head coaches (Almada, Milito, Vucetich, etc.)",
+   "why": "On club pages but they change often. Timeless coach facts preferred"
+  },
+  {
+   "w": "Clásico Nacional head-to-head totals",
+   "why": "Official totals date from 2014 and are long out of date"
+  },
+  {
+   "w": "Nou Camp, Hidalgo, La Corregidora, Victoria, Cuauhtémoc stadium cards",
+   "why": "Supported by club pages but the stadium kind was full. Cruz Azul also used Estadio Cuauhtémoc in Clausura 2026, so a Puebla card could be ambiguous"
+  },
+  {
+   "w": "Resumen de prensa pages on ligamx.net",
+   "why": "They reprint other outlets (ESPN, Récord, etc.), not league content, so none are used as a source"
+  },
+  {
+   "w": "Guillermo Ochoa",
+   "why": "Its source is a 2019 page (239 games, 2004–2011). Ochoa came back in 2019–22, and no ligamx.net page confirms he still holds the record as of Oct 2026. It is also the only card of kind “player”, so the game can’t draw two wrong buttons for it."
+  },
+  {
+   "w": "Play-In",
+   "why": "Probably stale. 46766 covers the Apertura 2025 format. 47591 (the official Apertura 2026 calendar) has the Fase Final going straight from Jornada 17 to the quarterfinals with no Play-In. A present-tense Play-In card is not supported for the current tournament."
+  }
+ ]
+}
