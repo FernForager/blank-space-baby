@@ -2370,6 +2370,375 @@
   "h": "70971e5e67",
   "v": "ok"
  },
+ "rules:0": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "12b420d16d",
+  "note": "“1 players” reads oddly when drawn, card still works",
+  "v": "ok"
+ },
+ "rules:1": {
+  "at": "2026-10-16T23:57:16Z",
+  "fix": {
+   "means": "Red cards can leave a team that short"
+  },
+  "h": "b49b3f6347",
+  "note": "Means repeated the sentence",
+  "v": "fix"
+ },
+ "rules:10": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "0524c2a6b1",
+  "v": "ok"
+ },
+ "rules:11": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "00667504e4",
+  "v": "ok"
+ },
+ "rules:12": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "054a327e66",
+  "v": "ok"
+ },
+ "rules:13": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "d3dedc58f2",
+  "v": "ok"
+ },
+ "rules:14": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "a77c590b2c",
+  "v": "ok"
+ },
+ "rules:15": {
+  "at": "2026-10-16T23:57:16Z",
+  "fix": {
+   "means": "9.15 m, the center circle’s radius"
+  },
+  "h": "aeb9c7e743",
+  "note": "Means was unclear: the circle’s radius matches",
+  "v": "fix"
+ },
+ "rules:16": {
+  "at": "2026-10-16T23:57:16Z",
+  "fix": {
+   "means": "That’s 11 m in metric"
+  },
+  "h": "cfd913a9d2",
+  "note": "Means repeated the sentence",
+  "v": "fix"
+ },
+ "rules:17": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "46389d3562",
+  "v": "ok"
+ },
+ "rules:18": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "e215ed8e33",
+  "v": "ok"
+ },
+ "rules:19": {
+  "at": "2026-10-16T23:57:16Z",
+  "fix": {
+   "hook": "goal"
+  },
+  "h": "8166a227fc",
+  "note": "Hook names the object, not a modifier",
+  "v": "fix"
+ },
+ "rules:2": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "f0be2be2a7",
+  "note": "Shares the hook substitutes with rules:5, the draw guard keeps them apart",
+  "v": "ok"
+ },
+ "rules:20": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "bbb5287327",
+  "v": "ok"
+ },
+ "rules:21": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "5187530ca3",
+  "v": "ok"
+ },
+ "rules:22": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "7b8d26da1b",
+  "v": "ok"
+ },
+ "rules:23": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "88221232c9",
+  "v": "ok"
+ },
+ "rules:24": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "c226d1a07e",
+  "v": "ok"
+ },
+ "rules:25": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "fac743b5a7",
+  "v": "ok"
+ },
+ "rules:26": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "7434e61d77",
+  "note": "Grammar note: “a indirect free kick” reads wrong when drawn, but it rules out only one of six",
+  "v": "ok"
+ },
+ "rules:27": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "f51e2ea66d",
+  "note": "Grammar note: “a indirect free kick” reads wrong when drawn, but it rules out only one of six",
+  "v": "ok"
+ },
+ "rules:28": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "a20888b3b9",
+  "note": "Grammar note: “a indirect free kick” reads wrong when drawn, but it rules out only one of six",
+  "v": "ok"
+ },
+ "rules:29": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "eaa7725f07",
+  "note": "Grammar note: “a indirect free kick” reads wrong when drawn, but it rules out only one of six",
+  "v": "ok"
+ },
+ "rules:3": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "cb1b053a05",
+  "v": "ok"
+ },
+ "rules:30": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "54ded41f0f",
+  "note": "Grammar note: “a indirect free kick” reads wrong when drawn, but it rules out only one of six",
+  "v": "ok"
+ },
+ "rules:31": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "a2ea792767",
+  "note": "Grammar note: “a indirect free kick” reads wrong when drawn, but it rules out only one of six",
+  "v": "ok"
+ },
+ "rules:32": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "6b03549863",
+  "v": "ok"
+ },
+ "rules:33": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "d2577a877a",
+  "v": "ok"
+ },
+ "rules:34": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "4d7108a0b4",
+  "v": "ok"
+ },
+ "rules:35": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "7849fce549",
+  "v": "ok"
+ },
+ "rules:36": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "77c6105fe0",
+  "v": "ok"
+ },
+ "rules:37": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "98d63364f4",
+  "v": "ok"
+ },
+ "rules:38": {
+  "at": "2026-10-16T23:57:16Z",
+  "fix": {
+   "ex": "The goalkeeper may handle the ball inside their own penalty area"
+  },
+  "h": "279fb4b9d4",
+  "note": "“A ___” ruled out assistant referee and AVAR by article",
+  "v": "fix"
+ },
+ "rules:39": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "1661f1eca2",
+  "v": "ok"
+ },
+ "rules:4": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "b3aac2e6cd",
+  "v": "ok"
+ },
+ "rules:40": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "ba4ba0a321",
+  "v": "ok"
+ },
+ "rules:41": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "47c0af03eb",
+  "v": "ok"
+ },
+ "rules:42": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "d993d1ce3d",
+  "v": "ok"
+ },
+ "rules:43": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "5ac0b72743",
+  "v": "ok"
+ },
+ "rules:44": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "c752ad2d69",
+  "v": "ok"
+ },
+ "rules:45": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "2bdd35aca6",
+  "v": "ok"
+ },
+ "rules:46": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "3b274d29ab",
+  "v": "ok"
+ },
+ "rules:47": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "656e57547d",
+  "note": "Shares the hook boundary with rules:48, the draw guard keeps them apart",
+  "v": "ok"
+ },
+ "rules:48": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "cc7afc0fae",
+  "v": "ok"
+ },
+ "rules:49": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "bcd8334fc6",
+  "note": "“penalty kick” hints at the answer, acceptable on a white card",
+  "v": "ok"
+ },
+ "rules:5": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "4e30357077",
+  "v": "ok"
+ },
+ "rules:50": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "704b423c8f",
+  "v": "ok"
+ },
+ "rules:51": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "961345dabe",
+  "v": "ok"
+ },
+ "rules:52": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "d194809e73",
+  "v": "ok"
+ },
+ "rules:53": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "cd65747b1f",
+  "v": "ok"
+ },
+ "rules:54": {
+  "at": "2026-10-16T23:57:16Z",
+  "fix": {
+   "ex": "Since 2026, players may wear jewelry that is safe and securely covered"
+  },
+  "h": "d164bc1333",
+  "note": "Clumsy double condition, now plainer",
+  "v": "fix"
+ },
+ "rules:55": {
+  "at": "2026-10-16T23:57:16Z",
+  "fix": {
+   "ex": "Each team’s captain must be identified by their armband"
+  },
+  "h": "6a6c3cf1a6",
+  "note": "“an identifying ___” ruled out every plural wrong answer",
+  "v": "fix"
+ },
+ "rules:56": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "85add460f5",
+  "v": "ok"
+ },
+ "rules:57": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "044f8781a3",
+  "v": "ok"
+ },
+ "rules:58": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "1d97aa745e",
+  "v": "ok"
+ },
+ "rules:59": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "617bb19b35",
+  "v": "ok"
+ },
+ "rules:6": {
+  "at": "2026-10-16T23:57:16Z",
+  "fix": {
+   "hook": "coach"
+  },
+  "h": "9f69371acc",
+  "note": "Hook was half of the compound technical area",
+  "v": "fix"
+ },
+ "rules:60": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "e66b411d64",
+  "v": "ok"
+ },
+ "rules:61": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "d058c7641f",
+  "v": "ok"
+ },
+ "rules:62": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "204cd20f7d",
+  "v": "ok"
+ },
+ "rules:63": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "affea3614c",
+  "v": "ok"
+ },
+ "rules:64": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "e2a2b4b69d",
+  "note": "Hook is the answer of rules:60, the draw guard keeps them apart",
+  "v": "ok"
+ },
+ "rules:7": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "ea0c2a7045",
+  "v": "ok"
+ },
+ "rules:8": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "5421e1ac46",
+  "v": "ok"
+ },
+ "rules:9": {
+  "at": "2026-10-16T23:57:16Z",
+  "h": "110f41264b",
+  "note": "Shares the hook keeper with rules:26, the draw guard keeps them apart",
+  "v": "ok"
+ },
  "soccer:0": {
   "at": "2026-10-16T23:56:37Z",
   "h": "69a55645f0",
