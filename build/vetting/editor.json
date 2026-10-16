@@ -1132,5 +1132,330 @@
   "at": "2026-10-16T23:55:41Z",
   "h": "70971e5e67",
   "v": "ok"
+ },
+ "soccer:0": {
+  "at": "2026-10-16T23:56:37Z",
+  "h": "69a55645f0",
+  "v": "ok"
+ },
+ "soccer:1": {
+  "at": "2026-10-16T23:56:37Z",
+  "h": "f47af50658",
+  "v": "ok"
+ },
+ "soccer:10": {
+  "at": "2026-10-16T23:56:37Z",
+  "h": "f98aa2b633",
+  "v": "ok"
+ },
+ "soccer:11": {
+  "at": "2026-10-16T23:56:37Z",
+  "h": "76f0f56472",
+  "v": "ok"
+ },
+ "soccer:12": {
+  "at": "2026-10-16T23:56:37Z",
+  "h": "f6deaa4d0a",
+  "note": "Capital P marks a name but the card still works",
+  "v": "ok"
+ },
+ "soccer:13": {
+  "at": "2026-10-16T23:56:37Z",
+  "fix": {
+   "ex": "Grandpa’s keepy-uppy in the yard ended when the ball hit the window"
+  },
+  "h": "2c8f248683",
+  "note": "No article made count-noun wrong answers ungrammatical",
+  "v": "fix"
+ },
+ "soccer:14": {
+  "at": "2026-10-16T23:56:37Z",
+  "h": "7b254e3781",
+  "note": "“a offside” reads wrong but the card works",
+  "v": "ok"
+ },
+ "soccer:15": {
+  "at": "2026-10-16T23:56:37Z",
+  "h": "3bdc9a0109",
+  "note": "“a offside” reads wrong but the card works",
+  "v": "ok"
+ },
+ "soccer:16": {
+  "at": "2026-10-16T23:56:37Z",
+  "h": "896609c9f3",
+  "note": "“a offside” and “a dive” read oddly but the card works",
+  "v": "ok"
+ },
+ "soccer:17": {
+  "at": "2026-10-16T23:56:37Z",
+  "h": "ee5e8340cd",
+  "note": "“a offside” reads wrong but the card works",
+  "v": "ok"
+ },
+ "soccer:18": {
+  "at": "2026-10-16T23:56:37Z",
+  "fix": {
+   "means": "Two in one game mean a red card"
+  },
+  "h": "5dcba7aa0a",
+  "note": "Means repeated the sentence",
+  "v": "fix"
+ },
+ "soccer:19": {
+  "at": "2026-10-16T23:56:37Z",
+  "h": "fbbaa46eef",
+  "note": "adjective blank, so most noun wrong answers read as nonsense. Needs its own kind, not a rewrite",
+  "v": "ok"
+ },
+ "soccer:2": {
+  "at": "2026-10-16T23:56:37Z",
+  "fix": {
+   "means": "A half volley comes just after a bounce"
+  },
+  "h": "5dfa3dd9d8",
+  "note": "Means repeated the sentence",
+  "v": "fix"
+ },
+ "soccer:20": {
+  "at": "2026-10-16T23:56:37Z",
+  "h": "7022f8865f",
+  "v": "ok"
+ },
+ "soccer:21": {
+  "at": "2026-10-16T23:56:37Z",
+  "h": "91d5f7b54a",
+  "v": "ok"
+ },
+ "soccer:22": {
+  "at": "2026-10-16T23:56:37Z",
+  "h": "8fe616d3f6",
+  "v": "ok"
+ },
+ "soccer:23": {
+  "at": "2026-10-16T23:56:37Z",
+  "h": "b6f7b625dc",
+  "v": "ok"
+ },
+ "soccer:24": {
+  "at": "2026-10-16T23:56:37Z",
+  "h": "dfe465aacf",
+  "v": "ok"
+ },
+ "soccer:25": {
+  "at": "2026-10-16T23:56:37Z",
+  "h": "daba17ff5f",
+  "v": "ok"
+ },
+ "soccer:26": {
+  "at": "2026-10-16T23:56:37Z",
+  "h": "b4d8aafbf8",
+  "v": "ok"
+ },
+ "soccer:27": {
+  "at": "2026-10-16T23:56:37Z",
+  "h": "4f20f7733e",
+  "v": "ok"
+ },
+ "soccer:28": {
+  "at": "2026-10-16T23:56:37Z",
+  "h": "61ec7816ca",
+  "v": "ok"
+ },
+ "soccer:29": {
+  "at": "2026-10-16T23:56:37Z",
+  "h": "6fd4827a06",
+  "v": "ok"
+ },
+ "soccer:3": {
+  "at": "2026-10-16T23:56:37Z",
+  "h": "a6bb05e3d3",
+  "v": "ok"
+ },
+ "soccer:30": {
+  "at": "2026-10-16T23:56:37Z",
+  "fix": {
+   "means": "Named for the striker’s No. 9 shirt"
+  },
+  "h": "95c49a315c",
+  "note": "Means repeated the sentence word for word",
+  "v": "fix"
+ },
+ "soccer:31": {
+  "at": "2026-10-16T23:56:37Z",
+  "h": "ab70dec81f",
+  "v": "ok"
+ },
+ "soccer:32": {
+  "at": "2026-10-16T23:56:37Z",
+  "h": "deb19f1069",
+  "v": "ok"
+ },
+ "soccer:33": {
+  "at": "2026-10-16T23:56:37Z",
+  "h": "e8a2e01dc5",
+  "v": "ok"
+ },
+ "soccer:34": {
+  "at": "2026-10-16T23:56:37Z",
+  "h": "60ec8ca66f",
+  "v": "ok"
+ },
+ "soccer:35": {
+  "at": "2026-10-16T23:56:37Z",
+  "h": "1aceb370f7",
+  "v": "ok"
+ },
+ "soccer:36": {
+  "at": "2026-10-16T23:56:37Z",
+  "h": "58d0b15ec8",
+  "v": "ok"
+ },
+ "soccer:37": {
+  "at": "2026-10-16T23:56:37Z",
+  "h": "cebdd42cec",
+  "v": "ok"
+ },
+ "soccer:38": {
+  "at": "2026-10-16T23:56:37Z",
+  "fix": {
+   "ex": "The winger did not score, but she got the assist on both goals"
+  },
+  "h": "cbe061b23b",
+  "note": "“an” ruled out hat trick, clean sheet and nil",
+  "v": "fix"
+ },
+ "soccer:39": {
+  "at": "2026-10-16T23:56:37Z",
+  "h": "6c8d919b53",
+  "v": "ok"
+ },
+ "soccer:4": {
+  "at": "2026-10-16T23:56:37Z",
+  "h": "97427b6f06",
+  "v": "ok"
+ },
+ "soccer:40": {
+  "at": "2026-10-16T23:56:37Z",
+  "fix": {
+   "means": "Tied shoot-outs end this way too"
+  },
+  "h": "8aa7454f28",
+  "note": "Means repeated the sentence",
+  "v": "fix"
+ },
+ "soccer:41": {
+  "at": "2026-10-16T23:56:37Z",
+  "fix": {
+   "hook": "extra time"
+  },
+  "h": "ee71028727",
+  "note": "Hook “first goal” held part of the answer",
+  "v": "fix"
+ },
+ "soccer:42": {
+  "at": "2026-10-16T23:56:37Z",
+  "h": "17d3b77b10",
+  "note": "Injury time and stoppage time are already grouped, though the deck file lists them as each other’s wrong answers",
+  "v": "ok"
+ },
+ "soccer:43": {
+  "at": "2026-10-16T23:56:37Z",
+  "h": "6dc981d4fc",
+  "note": "Injury time and stoppage time are already grouped, though the deck file lists them as each other’s wrong answers",
+  "v": "ok"
+ },
+ "soccer:44": {
+  "at": "2026-10-16T23:56:37Z",
+  "h": "73bc8083c1",
+  "note": "“a injury time” reads wrong but the card works",
+  "v": "ok"
+ },
+ "soccer:45": {
+  "at": "2026-10-16T23:56:37Z",
+  "h": "3c0876b53e",
+  "v": "ok"
+ },
+ "soccer:46": {
+  "at": "2026-10-16T23:56:37Z",
+  "h": "4e7db61ea3",
+  "v": "ok"
+ },
+ "soccer:47": {
+  "at": "2026-10-16T23:56:37Z",
+  "h": "e34c447c78",
+  "note": "“a clinical” and “a relegated” read as nonsense, lingo kind mixes parts of speech",
+  "v": "ok"
+ },
+ "soccer:48": {
+  "at": "2026-10-16T23:56:37Z",
+  "h": "130f076445",
+  "note": "“a clinical” and “a relegated” read as nonsense",
+  "v": "ok"
+ },
+ "soccer:49": {
+  "at": "2026-10-16T23:56:37Z",
+  "h": "15f74864f4",
+  "note": "“a clinical” and “a relegated” read as nonsense",
+  "v": "ok"
+ },
+ "soccer:5": {
+  "at": "2026-10-16T23:56:37Z",
+  "h": "db657ada52",
+  "v": "ok"
+ },
+ "soccer:50": {
+  "at": "2026-10-16T23:56:37Z",
+  "h": "27613b29a6",
+  "note": "adjective blank, so most noun wrong answers read as nonsense. Needs its own kind, not a rewrite",
+  "v": "ok"
+ },
+ "soccer:51": {
+  "at": "2026-10-16T23:56:37Z",
+  "h": "201f88d7ac",
+  "note": "“new clinical” and “new relegated” read as nonsense",
+  "v": "ok"
+ },
+ "soccer:52": {
+  "at": "2026-10-16T23:56:37Z",
+  "h": "ceca8be0f8",
+  "note": "Adjective wrong answers read as nonsense but the card works",
+  "v": "ok"
+ },
+ "soccer:53": {
+  "at": "2026-10-16T23:56:37Z",
+  "h": "41e96ba9a2",
+  "note": "“used clinical” and “used relegated” read as nonsense",
+  "v": "ok"
+ },
+ "soccer:54": {
+  "at": "2026-10-16T23:56:37Z",
+  "h": "56f6e45a1a",
+  "note": "adjective blank, so most noun wrong answers read as nonsense. Needs its own kind, not a rewrite",
+  "v": "ok"
+ },
+ "soccer:6": {
+  "at": "2026-10-16T23:56:37Z",
+  "h": "b6370baccd",
+  "v": "ok"
+ },
+ "soccer:7": {
+  "at": "2026-10-16T23:56:37Z",
+  "fix": {
+   "ex": "Grandma pulls a nutmeg on anyone whose feet are too wide apart",
+   "means": "Ball played through a player’s legs"
+  },
+  "h": "62f9936582",
+  "note": "Verb slot ruled out the noun wrong answers, now a noun slot",
+  "v": "fix"
+ },
+ "soccer:8": {
+  "at": "2026-10-16T23:56:37Z",
+  "h": "b49571cec4",
+  "v": "ok"
+ },
+ "soccer:9": {
+  "at": "2026-10-16T23:56:37Z",
+  "h": "e44bf8fb9d",
+  "v": "ok"
  }
 }
