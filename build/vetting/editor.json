@@ -3849,6 +3849,349 @@
   "h": "3f40d80e3d",
   "v": "ok"
  },
+ "mls:0": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "496dc2ec22",
+  "v": "ok"
+ },
+ "mls:1": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "d2c31fee3c",
+  "v": "ok"
+ },
+ "mls:10": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "ecbd714ce2",
+  "note": "Reads “The ___” so city-name wrong answers like “The NYCFC” sound a little off, card still works",
+  "v": "ok"
+ },
+ "mls:11": {
+  "at": "2026-10-16T23:58:25Z",
+  "fix": {
+   "ex": "The New York Red Bulls won the Supporters’ Shield in 2013, 2015, and 2018"
+  },
+  "h": "d2c5b5a4f1",
+  "note": "Chicago serial comma",
+  "v": "fix"
+ },
+ "mls:12": {
+  "at": "2026-10-16T23:58:25Z",
+  "fix": {
+   "means": "MLS Cup and U.S. Open Cup"
+  },
+  "h": "b4f18864f8",
+  "note": "means repeated “their first season”",
+  "v": "fix"
+ },
+ "mls:13": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "ef5f66e4ff",
+  "note": "Reads “The ___” so city-name wrong answers like “The NYCFC” sound a little off, card still works",
+  "v": "ok"
+ },
+ "mls:14": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "3cbbfbfbf6",
+  "v": "ok"
+ },
+ "mls:15": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "0a19e6d643",
+  "v": "ok"
+ },
+ "mls:16": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "1dfec3d702",
+  "note": "“in a season in 2019” is a little clunky but clear",
+  "v": "ok"
+ },
+ "mls:17": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "1ab5edbaa6",
+  "v": "ok"
+ },
+ "mls:18": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "91b85e1556",
+  "v": "ok"
+ },
+ "mls:19": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "ba25719744",
+  "v": "ok"
+ },
+ "mls:2": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "ec1835c5b5",
+  "note": "Reads “The ___” so city-name wrong answers like “The NYCFC” sound a little off, card still works",
+  "v": "ok"
+ },
+ "mls:20": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "31c0990991",
+  "v": "ok"
+ },
+ "mls:21": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "6e6d4a4759",
+  "v": "ok"
+ },
+ "mls:22": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "7832d435d0",
+  "v": "ok"
+ },
+ "mls:23": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "e525ea371d",
+  "v": "ok"
+ },
+ "mls:24": {
+  "at": "2026-10-16T23:58:25Z",
+  "fix": {
+   "ex": "Before Lionel Messi, Preki was the only player to win MLS MVP twice"
+  },
+  "h": "2617ef12f2",
+  "note": "Full name lets the draw keep Lionel Messi off the wrong buttons",
+  "v": "fix"
+ },
+ "mls:25": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "674813eb9d",
+  "v": "ok"
+ },
+ "mls:26": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "9df3ff09ec",
+  "v": "ok"
+ },
+ "mls:27": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "79a7d0684a",
+  "v": "ok"
+ },
+ "mls:28": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "82811a87d3",
+  "v": "ok"
+ },
+ "mls:29": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "ddc42179b9",
+  "v": "ok"
+ },
+ "mls:3": {
+  "at": "2026-10-16T23:58:25Z",
+  "fix": {
+   "means": "MLS Cup, Shield, and Canadian title"
+  },
+  "h": "1e33ecbf2b",
+  "note": "Chicago serial comma in means",
+  "v": "fix"
+ },
+ "mls:30": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "e87cc2dce0",
+  "v": "ok"
+ },
+ "mls:31": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "18278f8460",
+  "v": "ok"
+ },
+ "mls:32": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "134f9f14f9",
+  "v": "ok"
+ },
+ "mls:33": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "c6dfe4b16e",
+  "v": "ok"
+ },
+ "mls:34": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "20dc017211",
+  "v": "ok"
+ },
+ "mls:35": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "95445f01bb",
+  "v": "ok"
+ },
+ "mls:36": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "8ca9d5dbde",
+  "v": "ok"
+ },
+ "mls:37": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "2a4e36c55b",
+  "v": "ok"
+ },
+ "mls:38": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "dc1d558669",
+  "v": "ok"
+ },
+ "mls:39": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "fb3676e2f1",
+  "v": "ok"
+ },
+ "mls:4": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "0a9a68046a",
+  "v": "ok"
+ },
+ "mls:40": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "1b817010a7",
+  "v": "ok"
+ },
+ "mls:41": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "890bddd3be",
+  "v": "ok"
+ },
+ "mls:42": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "228fd8bf91",
+  "v": "ok"
+ },
+ "mls:43": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "9856fa9f31",
+  "v": "ok"
+ },
+ "mls:44": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "03471ce481",
+  "v": "ok"
+ },
+ "mls:45": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "d7dacf9f0b",
+  "v": "ok"
+ },
+ "mls:46": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "3a03b7b882",
+  "v": "ok"
+ },
+ "mls:47": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "916258b649",
+  "v": "ok"
+ },
+ "mls:48": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "3745d47c8a",
+  "v": "ok"
+ },
+ "mls:49": {
+  "at": "2026-10-16T23:58:25Z",
+  "fix": {
+   "means": "San Diego FC were the 30th"
+  },
+  "h": "466090e965",
+  "note": "San Diego FC take a plural verb",
+  "v": "fix"
+ },
+ "mls:5": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "395c404b4c",
+  "v": "ok"
+ },
+ "mls:50": {
+  "at": "2026-10-16T23:58:25Z",
+  "fix": {
+   "means": "Tampa Bay were one of them"
+  },
+  "h": "3abf41e290",
+  "note": "Tampa Bay take a plural verb",
+  "v": "fix"
+ },
+ "mls:51": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "c9dcd9d472",
+  "v": "ok"
+ },
+ "mls:52": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "2c7039bd56",
+  "v": "ok"
+ },
+ "mls:53": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "648ecfdcd2",
+  "v": "ok"
+ },
+ "mls:54": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "303c31b33a",
+  "v": "ok"
+ },
+ "mls:55": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "e98890180e",
+  "v": "ok"
+ },
+ "mls:56": {
+  "at": "2026-10-16T23:58:25Z",
+  "fix": {
+   "ex": "Each season, the league’s top scorer wins the Golden Boot",
+   "hook": "top scorer"
+  },
+  "h": "9ba4b1aae2",
+  "note": "goalscorer is not in Merriam-Webster, top scorer is plain",
+  "v": "fix"
+ },
+ "mls:57": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "edc01ee7cc",
+  "v": "ok"
+ },
+ "mls:58": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "8c0cbed5a4",
+  "note": "Wrong answers like “the Concacaf Golden Boot” read as nonsense, card still works",
+  "v": "ok"
+ },
+ "mls:59": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "22fd928fcb",
+  "note": "Some wrong answers like “first Leagues Cup award” read oddly, card still works",
+  "v": "ok"
+ },
+ "mls:6": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "298d5d1bcd",
+  "v": "ok"
+ },
+ "mls:60": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "bd0e9d7dc0",
+  "v": "ok"
+ },
+ "mls:7": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "2fd4de5ef1",
+  "note": "Reads “The ___” so city-name wrong answers like “The NYCFC” sound a little off, card still works",
+  "v": "ok"
+ },
+ "mls:8": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "c988d06208",
+  "note": "Reads “The ___” so city-name wrong answers like “The NYCFC” sound a little off, card still works",
+  "v": "ok"
+ },
+ "mls:9": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "dff6c9ea3f",
+  "note": "Reads “The ___” so city-name wrong answers like “The NYCFC” sound a little off, card still works",
+  "v": "ok"
+ },
  "parents:0": {
   "at": "2026-10-16T23:55:41Z",
   "h": "353220e0e1",
