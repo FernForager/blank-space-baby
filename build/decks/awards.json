@@ -126,7 +126,7 @@
       "w": "Ronaldinho",
       "means": "Nicknamed “The Wizard”",
       "ex": "Ronaldinho was FIFA’s top male player in 2004 and 2005",
-      "hook": "FIFA",
+      "hook": "top male",
       "k": "best",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
       "d": 2
@@ -135,7 +135,7 @@
       "w": "George Weah",
       "means": "He won Fair Play the next year",
       "ex": "George Weah was named FIFA’s top male player in 1995",
-      "hook": "FIFA",
+      "hook": "1995",
       "k": "best",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
       "d": 3
@@ -144,7 +144,7 @@
       "w": "Marta",
       "means": "She won a sixth in 2018",
       "ex": "Marta was FIFA’s top women’s player five years in a row, 2006–2010",
-      "hook": "FIFA",
+      "hook": "top women’s",
       "k": "woman",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
       "d": 2,
@@ -162,7 +162,7 @@
     },
     {
       "w": "Alexia Putellas",
-      "means": "The Best’s first back-to-back winner",
+      "means": "First to win it two years running",
       "ex": "Alexia Putellas won The Best Women’s Player award in 2021 and 2022",
       "hook": "Best Women’s",
       "k": "woman",
@@ -174,7 +174,7 @@
       "w": "Mia Hamm",
       "means": "The first name on FIFA’s list",
       "ex": "Mia Hamm was FIFA’s top women’s player in 2001 and 2002",
-      "hook": "FIFA",
+      "hook": "2001",
       "k": "woman",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
       "d": 2,
@@ -184,7 +184,7 @@
       "w": "Birgit Prinz",
       "means": "Three wins in a row",
       "ex": "Birgit Prinz was FIFA’s top women’s player from 2003 to 2005",
-      "hook": "FIFA",
+      "hook": "2003",
       "k": "woman",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
       "d": 3,
@@ -194,7 +194,7 @@
       "w": "Carli Lloyd",
       "means": "Marta was runner-up in 2016",
       "ex": "Carli Lloyd was FIFA’s top women’s player in 2015 and 2016",
-      "hook": "FIFA",
+      "hook": "2015",
       "k": "woman",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
       "d": 2,
@@ -278,7 +278,7 @@
     },
     {
       "w": "Luis Enrique",
-      "means": "PSG won its first Champions League",
+      "means": "PSG won their first Champions League",
       "ex": "Luis Enrique was FIFA’s top men’s coach in 2015 and again in 2025",
       "hook": "men’s coach",
       "k": "coach",
@@ -428,7 +428,7 @@
       "ex": "Argentina beat France on penalties in the 2022 World Cup final",
       "hook": "France",
       "k": "team",
-      "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/messi-golden-ball-record",
+      "src": "https://www.fifa.com/en/articles/world-cup-2022-qatar-france-mbappe-argentina-return",
       "d": 2
     },
     {
@@ -511,7 +511,7 @@
       "ex": "Emiliano Martínez won the World Cup’s Golden Glove in 2022",
       "hook": "Golden Glove",
       "k": "year",
-      "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/messi-golden-ball-record",
+      "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/unai-simon-adidas-golden-glove",
       "d": 2
     },
     {
@@ -521,7 +521,7 @@
       "hook": "Mbappé",
       "k": "num",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/fontaine-mbappe-ronaldo-and-more-every-world-cup-top-scorer",
-      "d": 1,
+      "d": 2,
       "current": true
     },
     {
@@ -572,7 +572,7 @@
       "ex": "Unai Simón kept a record 7 clean sheets at the 2026 World Cup",
       "hook": "clean sheets",
       "k": "count",
-      "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/overall-tournament-review-spain-argentina",
+      "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/unai-simon-adidas-golden-glove",
       "d": 2,
       "current": true
     },
@@ -609,7 +609,7 @@
       "ex": "Aitana Bonmatí won the Golden Ball at the 2023 Women’s World Cup",
       "hook": "Bonmatí",
       "k": "award",
-      "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/spain-men-women-first-simultaneous-champions",
+      "src": "https://www.fifa.com/en/tournaments/womens/womensworldcup/australia-new-zealand2023/articles/fifa-womens-world-cup-awards-2023-all-the-winners",
       "d": 2,
       "women": true
     },
@@ -619,7 +619,7 @@
       "ex": "Mary Earps won the Golden Glove at the 2023 Women’s World Cup",
       "hook": "Mary Earps",
       "k": "award",
-      "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/spain-men-women-first-simultaneous-champions",
+      "src": "https://www.fifa.com/en/tournaments/womens/womensworldcup/australia-new-zealand2023/articles/fifa-womens-world-cup-awards-2023-all-the-winners",
       "d": 2,
       "women": true
     },
@@ -662,7 +662,7 @@
     {
       "w": "Marta Award",
       "means": "For the best women’s goal",
-      "ex": "Lizbeth Ovalle’s scorpion kick won the 2025 FIFA Marta Award",
+      "ex": "Lizbeth Ovalle’s back-heel volley won the 2025 FIFA Marta Award",
       "hook": "Ovalle",
       "k": "award",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",

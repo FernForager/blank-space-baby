@@ -123,11 +123,11 @@
   },
   {
    "w": "Telmo Zarra",
-   "means": "Six Pichichis, all with Athletic",
+   "means": "Messi passed his total in 2014",
    "ex": "Telmo Zarra scored 251 LaLiga goals, the most by any Spaniard",
    "hook": "Spaniard",
    "k": "player",
-   "src": "https://www.laliga.com/en-GB/news/do-you-know-the-story-behind-the-pichichi-award",
+   "src": "https://www.laliga.com/en-GB/news/messi-received-the-lfp-trophy-for-the-all-time-top-goal-scorer-in-la-liga",
    "d": 3
   },
   {
@@ -205,7 +205,7 @@
   },
   {
    "w": "Ronaldinho",
-   "means": "His second solo goal made it 3–0",
+   "means": "His second goal made it 3–0",
    "ex": "In 2005, Real Madrid fans gave Barça’s Ronaldinho a standing ovation",
    "hook": "ovation",
    "k": "player",
@@ -214,7 +214,7 @@
   },
   {
    "w": "Alfredo Di Stéfano",
-   "means": "He won five straight European Cups",
+   "means": "He won five European Cups with Madrid",
    "ex": "Barcelona thought they had signed Alfredo Di Stéfano in 1953, but Madrid got him",
    "hook": "Barcelona",
    "k": "player",
@@ -260,7 +260,7 @@
   {
    "w": "Pep Guardiola",
    "means": "Barça’s 2009 “sextete”",
-   "ex": "In 2009, Pep Guardiola’s Barcelona won all six trophies it played for",
+   "ex": "In 2009, Pep Guardiola’s Barcelona won all six trophies they played for",
    "hook": "Barcelona",
    "k": "coach",
    "src": "https://www.laliga.com/noticias/mejores-clasicos-historia-laliga-real-madrid-barcelona",
@@ -372,7 +372,7 @@
    "ex": "Sevilla play their home games at the Ramón Sánchez-Pizjuán",
    "hook": "Sevilla",
    "k": "stadium",
-   "src": "https://www.laliga.com/en-GB/clubs/sevilla-fc",
+   "src": "https://www.laliga.com/en-GB/news/ten-things-you-may-not-know-about-the-ramon-sanchez-pizjuan",
    "d": 3
   },
   {
@@ -597,6 +597,10 @@
   [
    "36",
    "29"
+  ],
+  [
+   "Lionel Messi",
+   "Cristiano Ronaldo"
   ]
  ],
  "cut": [

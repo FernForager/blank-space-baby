@@ -327,7 +327,7 @@
   {
    "w": "Hugo Sánchez",
    "means": "Famous for his bicycle kicks",
-   "ex": "Before leaving for Spain, Hugo Sánchez scored 102 goals for Pumas",
+   "ex": "Hugo Sánchez scored 102 goals for Pumas",
    "hook": "Pumas",
    "k": "player",
    "src": "https://ligamx.net/cancha/detallenoticia/4614",
@@ -403,7 +403,7 @@
    "ex": "Juan Reynoso’s Cruz Azul won 12 games in a row in 2021",
    "hook": "Cruz Azul",
    "k": "coach",
-   "src": "https://ligamx.net/cancha/detallenoticia/38061",
+   "src": "https://ligamx.net/cancha/detallenoticia/40007",
    "d": 3
   },
   {
@@ -421,7 +421,7 @@
    "ex": "Manuel Lapuente coached Necaxa to back-to-back league titles in 1994–95 and 1995–96",
    "hook": "Necaxa",
    "k": "coach",
-   "src": "https://ligamx.net/cancha/detallenoticia/4614",
+   "src": "https://ligamx.net/cancha/detallenoticia/4404",
    "d": 3
   },
   {
@@ -516,24 +516,24 @@
    "d": 2
   },
   {
-   "w": "88,084",
-   "means": "The biggest in Liga MX",
-   "ex": "Estadio Banorte, the old Estadio Azteca, holds 88,084 fans",
-   "hook": "Azteca",
+   "w": "7",
+   "means": "Toluca lead that era with 9",
+   "ex": "Since short tournaments began in 1996, Pachuca have won 7 league titles",
+   "hook": "Pachuca",
    "k": "number",
-   "src": "https://ligamx.net/cancha/club/1/america",
-   "d": 1,
+   "src": "https://ligamx.net/cancha/detallenoticia/46917",
+   "d": 3,
    "current": true
   },
   {
-   "w": "1,170",
-   "means": "Known as the rule for minors",
-   "ex": "In Clausura 2026, each club had to give young players 1,170 minutes",
-   "hook": "minutes",
+   "w": "26",
+   "means": "Cruz Azul passed them with 27",
+   "ex": "Counting cups, Chivas have won 26 official titles",
+   "hook": "Chivas",
    "k": "number",
-   "src": "https://ligamx.net/cancha/detallenoticia/47228",
+   "src": "https://ligamx.net/cancha/detallenoticia/47571",
    "d": 3,
-   "current": false
+   "current": true
   },
   {
    "w": "Apertura",
@@ -696,11 +696,6 @@
   [
    "1916",
    "1943"
-  ],
-  [
-   "16",
-   "12",
-   "10"
   ],
   [
    "Apertura",

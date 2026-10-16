@@ -6,8 +6,8 @@
   "items": [
     {
       "w": "Brazil",
-      "means": "Its fifth title came in 2002",
-      "ex": "Brazil was the first nation to win five World Cups",
+      "means": "Their fifth title came in 2002",
+      "ex": "Brazil were the first nation to win five World Cups",
       "hook": "World Cups",
       "k": "team",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/brazil-team-profile-history",
@@ -16,7 +16,7 @@
     },
     {
       "w": "Argentina",
-      "means": "Its third World Cup title",
+      "means": "Their third World Cup title",
       "ex": "Argentina beat France on penalties in the 2022 World Cup final",
       "hook": "France",
       "k": "team",
@@ -25,7 +25,7 @@
     },
     {
       "w": "Uruguay",
-      "means": "It won the title again in 1950",
+      "means": "They won the title again in 1950",
       "ex": "Uruguay hosted and won the very first World Cup",
       "hook": "World Cup",
       "k": "team",
@@ -48,11 +48,11 @@
       "hook": "semifinalist",
       "k": "team",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/morocco-team-profile-history",
-      "d": 1
+      "d": 2
     },
     {
       "w": "Germany",
-      "means": "It went on to win the final",
+      "means": "They went on to win the final",
       "ex": "Germany beat host Brazil 7–1 in a 2014 World Cup semifinal",
       "hook": "host Brazil",
       "k": "team",
@@ -62,7 +62,7 @@
     {
       "w": "Spain",
       "means": "Beat the Netherlands 1–0 in 2010",
-      "ex": "Spain won its first World Cup in South Africa",
+      "ex": "Spain won their first World Cup in South Africa",
       "hook": "South Africa",
       "k": "team",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/world-cup-champions-1982-2026-italy-argentina-germany-brazil-france-spain",
@@ -107,7 +107,7 @@
     {
       "w": "Croatia",
       "means": "Davor Šuker won the Golden Boot",
-      "ex": "Croatia finished third at its very first World Cup in 1998",
+      "ex": "Croatia finished third at their very first World Cup in 1998",
       "hook": "World Cup",
       "k": "team",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/croatia-team-profile-history",
@@ -116,7 +116,7 @@
     {
       "w": "Portugal",
       "means": "Beat France 1–0 in extra time",
-      "ex": "Portugal won Euro 2016, its first major trophy",
+      "ex": "Portugal won Euro 2016, their first major trophy",
       "hook": "Euro 2016",
       "k": "team",
       "src": "https://www.uefa.com/uefaeuro/history/news/0253-0d81c3763c88-e741506b5589-1000--portugal-spoil-france-s-party-with-extra-time-win/",
@@ -125,7 +125,7 @@
     {
       "w": "France",
       "means": "Beat Croatia 4–2 in the final",
-      "ex": "France won its second World Cup in Russia in 2018",
+      "ex": "France won their second World Cup in Russia in 2018",
       "hook": "Russia",
       "k": "team",
       "src": "https://www.fifa.com/en/articles/france-world-cup-team-profile-history",
@@ -161,7 +161,7 @@
     },
     {
       "w": "Cristiano Ronaldo",
-      "means": "Also its most capped player",
+      "means": "Also their most capped player",
       "ex": "Cristiano Ronaldo is Portugal’s all-time leading scorer",
       "hook": "Portugal",
       "k": "player",
@@ -216,20 +216,20 @@
     },
     {
       "w": "Tim Howard",
-      "means": "16 saves at Brazil 2014",
+      "means": "16 saves, a record now shared",
       "ex": "USA keeper Tim Howard set a World Cup saves record against Belgium",
       "hook": "Belgium",
       "k": "player",
-      "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/usa-team-profile-history",
+      "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/tim-howard-usa-record-most-saves-game",
       "d": 2
     },
     {
       "w": "Landon Donovan",
-      "means": "It won the USA its group",
+      "means": "The USA won their group",
       "ex": "Landon Donovan scored a last-minute winner against Algeria in 2010",
       "hook": "Algeria",
       "k": "player",
-      "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/usa-team-profile-history",
+      "src": "https://www.ussoccer.com/stories/2010/06/us-wins-group-c-with-1-0-win-against-algeria",
       "d": 2
     },
     {
@@ -366,7 +366,7 @@
       "ex": "Bruce Arena coached the USA to the 2002 World Cup quarterfinals",
       "hook": "USA",
       "k": "coach",
-      "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/usa-team-profile-history",
+      "src": "https://www.ussoccer.com/stories/2022/06/20-years-later-usmnt-players-remember-run-to-2002-world-cup-quarterfinals",
       "d": 2
     },
     {
@@ -393,7 +393,7 @@
       "ex": "Brazil beat Italy on penalties in the 1994 final at the Rose Bowl",
       "hook": "1994 final",
       "k": "stadium",
-      "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/world-cup-champions-1982-2026-italy-argentina-germany-brazil-france-spain",
+      "src": "https://www.fifa.com/en/articles/roberto-baggio-italy-azzurri-brazil-heartbreak-fifa-world-cup-final-rose-bowl",
       "d": 2
     },
     {
@@ -402,7 +402,7 @@
       "ex": "Argentina won the 2022 World Cup final at Lusail Stadium",
       "hook": "Argentina",
       "k": "stadium",
-      "src": "https://www.fifa.com/en/tournaments/mens/worldcup/qatar2022",
+      "src": "https://www.fifa.com/en/articles/france-argentina-closing-ceremony-fifa-world-cup-qatar-2022",
       "d": 2
     },
     {
@@ -435,7 +435,7 @@
     {
       "w": "1954",
       "means": "Called the Miracle of Bern",
-      "ex": "West Germany won its first World Cup in 1954",
+      "ex": "West Germany won their first World Cup in 1954",
       "hook": "West Germany",
       "k": "year",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/germany-team-profile-history",
@@ -470,7 +470,7 @@
     },
     {
       "w": "2002",
-      "means": "Brazil won its fifth title",
+      "means": "Brazil won their fifth title",
       "ex": "South Korea and Japan hosted the first World Cup in Asia in 2002",
       "hook": "Japan",
       "k": "year",
@@ -492,7 +492,7 @@
       "ex": "Qatar hosted the World Cup in November and December of 2022",
       "hook": "Qatar",
       "k": "year",
-      "src": "https://www.fifa.com/en/tournaments/mens/worldcup/qatar2022",
+      "src": "https://www.fifa.com/en/articles/ten-queries-about-qatar-2022-world-cup",
       "d": 1
     },
     {
@@ -524,7 +524,7 @@
     },
     {
       "w": "La Roja",
-      "means": "First world title in 2010",
+      "means": "World champions in 2010 and 2026",
       "ex": "Spain’s national team goes by the nickname La Roja",
       "hook": "Spain",
       "k": "nickname",

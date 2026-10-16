@@ -126,7 +126,7 @@
     },
     {
       "w": "Tim Cahill",
-      "means": "Australia’s top scorer, with 50 goals",
+      "means": "Australia’s top men’s scorer, with 50",
       "ex": "Tim Cahill celebrated goals by shadow-boxing the corner flag",
       "hook": "corner flag",
       "k": "player",
@@ -136,7 +136,7 @@
     {
       "w": "Franco Baresi",
       "means": "719 games for the club, 1977–1997",
-      "ex": "Franco Baresi spent his whole career at AC Milan, which retired his No. 6",
+      "ex": "Franco Baresi spent his whole career at AC Milan, who retired his No. 6",
       "hook": "AC Milan",
       "k": "player",
       "src": "https://www.fifa.com/en/news/articles/franco-baresi-italy-obituary",
@@ -146,7 +146,7 @@
       "w": "Mário Zagallo",
       "means": "Player in 1958 and 1962, coach in 1970",
       "ex": "Mário Zagallo was the first to win the World Cup as a player and as a coach",
-      "hook": "World Cup",
+      "hook": "coach",
       "k": "player",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/zagallo-beckenbauer-deschamps-record",
       "d": 3
@@ -155,7 +155,7 @@
       "w": "Miroslav Klose",
       "means": "Silver, bronze, bronze, then gold",
       "ex": "Miroslav Klose won World Cup medals at four straight tournaments, 2002–2014",
-      "hook": "World Cup",
+      "hook": "medals",
       "k": "player",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/miroslav-klose-four-medals",
       "d": 3
@@ -225,7 +225,7 @@
       "ex": "Abby Wambach’s header in the 122nd minute saved the USA against Brazil in 2011",
       "hook": "header",
       "k": "woman",
-      "src": "https://www.fifa.com/en/tournaments/womens/womensworldcup/fifa-womens-world-cup-usa-2003/articles/abby-wambach-usa-first-goal",
+      "src": "https://inside.fifa.com/en/news/wambach-s-towering-header-saves-usa",
       "d": 2,
       "women": true
     },
@@ -252,7 +252,7 @@
       "w": "Cafu",
       "means": "He captained Brazil in the third one",
       "ex": "Cafu was the first man to play in three World Cup finals",
-      "hook": "World Cup",
+      "hook": "finals",
       "k": "player",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/cafu-brazil-three-finals",
       "d": 3
@@ -425,7 +425,7 @@
     },
     {
       "w": "Côte d’Ivoire",
-      "means": "Spearhead of its “golden generation”",
+      "means": "Spearhead of their “golden generation”",
       "ex": "Didier Drogba led Côte d’Ivoire at three World Cups",
       "hook": "Drogba",
       "k": "nation",
@@ -480,7 +480,7 @@
     {
       "w": "Santos",
       "means": "Then New York Cosmos, 1975–1977",
-      "ex": "Pelé spent most of his career at Santos and never joined a European club",
+      "ex": "Pelé spent most of his club career at Santos",
       "hook": "Pelé",
       "k": "club",
       "src": "https://www.fifa.com/en/articles/pele-o-rei-brazil-king-football-world-cup-obituary",
@@ -506,7 +506,7 @@
     },
     {
       "w": "Bayern Munich",
-      "means": "Later its coach, then its president",
+      "means": "Later their coach, then their president",
       "ex": "Franz Beckenbauer made his first-team debut for Bayern Munich at 18",
       "hook": "Beckenbauer",
       "k": "club",
@@ -564,7 +564,7 @@
       "ex": "Christine Sinclair won league titles with Portland Thorns in 2013, 2017 and 2022",
       "hook": "Sinclair",
       "k": "club",
-      "src": "https://www.fifa.com/en/news/articles/canada-legend-sinclair-to-retire-from-international-football",
+      "src": "https://www.fifa.com/fr/articles/christine-sinclair-canada-retraite-portland",
       "d": 2,
       "women": true
     },
