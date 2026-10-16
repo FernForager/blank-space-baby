@@ -1,0 +1,224 @@
+"""Vetting: how the three reviewers read cards and record verdicts, and how Morg's beta marks come in.
+
+    python3 tools/vet.py todo WHO [DECK] [--limit N] [--json]   # cards waiting on WHO's verdict, with all they need to judge them
+    python3 tools/vet.py apply WHO FILE.json                    # record verdicts: a JSON list of {id, h, v, note, fix}
+    python3 tools/vet.py card ID                                # one card in full: every verdict and mark on it
+    python3 tools/vet.py status                                 # where every card stands
+    python3 tools/vet.py fixes [DECK]                           # open fix and cut verdicts on current cards (for Trivelle)
+    python3 tools/vet.py take ID WHO                            # write WHO's proposed fix into the deck (for Trivelle)
+    python3 tools/vet.py out ID "reason"                        # take a card out of play for good (for Trivelle)
+    python3 tools/vet.py marks FILE.json                        # Morg's beta marks: rows from the database's marks table
+
+WHO is one of the reviewers in build/build.py: soccer (the soccer expert), editor (the writing editor) or facts
+(the fact checker). A card ID is <deck id>:<index>, its place in build/decks/<deck id>.json, which never changes.
+
+A verdict is v "ok" (the card is right as it stands), "fix" (it needs a change: say why in note, and put the
+changed fields in fix, like {"means": "..."}) or "cut" (it can't be saved: say why). Each verdict carries h, the
+fingerprint of the card the reviewer read (todo prints it). apply refuses a verdict whose card has changed since,
+so nobody approves wording they never saw, and checks every proposed fix against the house rules before saving it.
+A card plays in the beta once all three reviewers have said ok to its current wording, or once Morg locks it.
+"""
+import datetime, json, os, re, sys
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.join(ROOT, 'build')); sys.path.insert(0, os.path.join(ROOT, 'tools'))
+import build as B
+from review import wrongs
+
+FIELDS = ('w', 'ex', 'means', 'hook', 'd', 'k', 'src')   # what a fix may change
+COLOR = {1: 'white (easy)', 2: 'yellow (medium)', 3: 'red (hard)'}
+
+def now(): return datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
+
+def decks():
+    """Every deck in the daily, in order: (id, deck JSON, flags)."""
+    return [(did, json.load(open(os.path.join(B.DECKS, did + '.json'))), flags) for did, lg, flags in B.DAILY]
+
+def find(cid):
+    did, _, i = cid.partition(':')
+    path = os.path.join(B.DECKS, did + '.json')
+    if not re.fullmatch(r'[a-z0-9-]+', did) or not i.isdigit() or not os.path.exists(path): sys.exit(f'no such card: {cid}')
+    deck = json.load(open(path))
+    if int(i) >= len(deck['items']): sys.exit(f'no such card: {cid}')
+    return did, deck, int(i)
+
+def save_json(path, data):
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    open(path, 'w').write(json.dumps(data, ensure_ascii=False, indent=1, sort_keys=True) + '\n')
+
+def save_deck(did, deck):
+    """Write a deck back with the indent it already uses, so diffs stay small."""
+    path = os.path.join(B.DECKS, did + '.json')
+    m = re.search(r'\n( +)"', open(path).read())
+    open(path, 'w').write(json.dumps(deck, ensure_ascii=False, indent=len(m.group(1)) if m else 1) + '\n')
+
+def view(did, deck, i, flags=''):
+    """All a reviewer needs to judge one card."""
+    it = deck['items'][i]
+    return {'id': f'{did}:{i}', 'h': B.card_hash(it), 'deck': deck.get('deck', did), 'source': deck.get('primary', ''),
+            'color': COLOR.get(it.get('d'), '?'), 'kind': it.get('k', 'word'), 'answer': it['w'], 'sentence': it['ex'],
+            'means': it['means'], 'hook': it.get('hook', ''), 'src': it.get('src', ''),
+            'wrong_answers': wrongs(deck, it), 'notes': [x for x in (('women’s game' if it.get('women') or 'women' in flags else ''),
+            ('slang deck: no proper names' if 'slang' in flags else ''), ('can go stale: check it is still true today' if it.get('current') else '')) if x]}
+
+def todo(who, deck_id=None, limit=None, as_json=False):
+    verdicts, marks = B.vetting()
+    out = []
+    for did, deck, flags in decks():
+        if deck_id and did != deck_id: continue
+        for i, it in enumerate(deck['items']):
+            cid = f'{did}:{i}'
+            if it.get('out') or (marks.get(cid) or {}).get('m') == 'lock': continue
+            v = verdicts[who].get(cid)
+            if v and v.get('h') == B.card_hash(it): continue
+            out.append(view(did, deck, i, flags))
+    left = len(out)
+    if limit: out = out[:limit]
+    if as_json: print(json.dumps(out, ensure_ascii=False, indent=1)); return
+    for c in out:
+        print(f"\n{c['id']}  h={c['h']}  {c['deck']}  {c['color']}  kind: {c['kind']}")
+        print(f"  sentence: {c['sentence']}\n  answer:   {c['answer']}\n  means:    {c['means']}\n  tile:     {c['hook']}")
+        print(f"  wrong answers it can draw: {' · '.join(c['wrong_answers']) or 'none'}\n  source:   {c['src']}")
+        for n in c['notes']: print(f'  note:     {n}')
+    print(f'\n{left} waiting on {who}' + (f', {len(out)} shown' if limit and left > limit else ''))
+
+def problems_with(did, deck, i, proposed):
+    """The house-rule problems a proposed version of a card would have."""
+    items = list(deck['items']); items[i] = proposed
+    trial = dict(deck, items=items)
+    return B.item_problems(did, items, B.clasher(trial), proposed, hooks=True)
+
+def apply(who, path):
+    rows = json.load(open(path))
+    if isinstance(rows, dict): rows = [rows]
+    vpath = os.path.join(B.VET, who + '.json')
+    mine = B.load_json(vpath, {}); _, marks = B.vetting()
+    saved, refused = 0, []
+    for r in rows:
+        cid, v = r.get('id', ''), r.get('v')
+        try: did, deck, i = find(cid)
+        except SystemExit: refused.append((cid, 'no such card')); continue
+        it = deck['items'][i]
+        why = None
+        if v not in ('ok', 'fix', 'cut'): why = 'v must be ok, fix or cut'
+        elif r.get('h') != B.card_hash(it): why = 'the card has changed since you read it: read it again with todo or card'
+        elif (marks.get(cid) or {}).get('m') == 'lock': why = 'Morg locked this card'
+        elif v != 'ok' and not (r.get('note') or '').strip(): why = 'a fix or a cut needs a note saying why'
+        elif v == 'fix':
+            fix = r.get('fix') or {}
+            if not isinstance(fix, dict) or not fix or set(fix) - set(FIELDS): why = f'fix must be an object of changed fields, from {", ".join(FIELDS)}'
+            else:
+                proposed = dict(it, **fix)
+                if proposed == it: why = 'the fix changes nothing'
+                else:
+                    bad = problems_with(did, deck, i, proposed)
+                    if bad: why = 'the fix breaks house rules: ' + '; '.join(' '.join(str(x) for x in b[2:]) for b in bad)
+        if why: refused.append((cid, why)); continue
+        entry = {'v': v, 'h': r['h'], 'at': now()}
+        if r.get('note'): entry['note'] = r['note'].strip()
+        if v == 'fix': entry['fix'] = r['fix']
+        mine[cid] = entry; saved += 1
+    save_json(vpath, mine)
+    print(f'saved {saved} verdicts for {who}')
+    for cid, why in refused: print(f'  refused {cid}: {why}')
+    if refused: sys.exit(1)
+
+def card(cid):
+    did, deck, i = find(cid)
+    flags = dict((d, f) for d, _, f in B.DAILY).get(did, '')
+    verdicts, marks = B.vetting()
+    c = view(did, deck, i, flags); it = deck['items'][i]
+    print(json.dumps(c, ensure_ascii=False, indent=1))
+    print('standing:', B.standing(cid, it, verdicts, marks) if did in dict((d, 1) for d, _, _ in B.DAILY) else 'not in the daily')
+    for who in B.REVIEWERS:
+        v = verdicts[who].get(cid)
+        print(f'{who}:', json.dumps(v, ensure_ascii=False) if v else 'no verdict', '' if not v or v.get('h') == c['h'] else '(for an older wording)')
+    if marks.get(cid): print('Morg:', json.dumps(marks[cid], ensure_ascii=False))
+
+def status():
+    verdicts, marks = B.vetting()
+    tally = {k: [0, 0, 0] for k in ('approved', 'locked', 'pending', 'flagged', 'out')}
+    per = {who: {'ok': 0, 'fix': 0, 'cut': 0, 'waiting': 0} for who in B.REVIEWERS}
+    for did, deck, flags in decks():
+        for i, it in enumerate(deck['items']):
+            cid, h = f'{did}:{i}', B.card_hash(it)
+            st = B.standing(cid, it, verdicts, marks)
+            if it.get('d') in (1, 2, 3): tally[st][it['d'] - 1] += 1
+            if st in ('out', 'locked'): continue
+            for who in B.REVIEWERS:
+                v = verdicts[who].get(cid)
+                per[who][v['v'] if v and v.get('h') == h else 'waiting'] += 1
+    for k, (a, b, c) in tally.items(): print(f'{k:9} {a + b + c:5}   white {a}, yellow {b}, red {c}')
+    for who, n in per.items(): print(f'{who:9} ' + ', '.join(f'{v} {k}' for k, v in n.items()))
+
+def fixes(deck_id=None):
+    verdicts, marks = B.vetting(); n = 0
+    for did, deck, flags in decks():
+        if deck_id and did != deck_id: continue
+        for i, it in enumerate(deck['items']):
+            cid, h = f'{did}:{i}', B.card_hash(it)
+            if it.get('out') or (marks.get(cid) or {}).get('m') == 'lock': continue
+            open_ = {who: verdicts[who][cid] for who in B.REVIEWERS if verdicts[who].get(cid, {}).get('h') == h and verdicts[who][cid]['v'] != 'ok'}
+            if not open_: continue
+            n += 1
+            print(f'\n{cid}  {it["ex"]}  [{it["w"]}]  means: {it["means"]}  tile: {it.get("hook")}  {COLOR.get(it.get("d"))}')
+            for who, v in open_.items():
+                print(f'  {who} says {v["v"]}: {v.get("note", "")}' + (f'\n    fix: {json.dumps(v["fix"], ensure_ascii=False)}' if v.get('fix') else ''))
+    print(f'\n{n} cards with open fixes or cuts')
+
+def take(cid, who):
+    did, deck, i = find(cid)
+    verdicts, marks = B.vetting()
+    v, it = verdicts[who].get(cid), deck['items'][i]
+    if not v or v.get('v') != 'fix': sys.exit(f'{who} has no fix on {cid}')
+    if v.get('h') != B.card_hash(it): sys.exit(f'{who}’s fix was for an older wording of {cid}')
+    if (marks.get(cid) or {}).get('m') == 'lock': sys.exit(f'Morg locked {cid}')
+    proposed = dict(it, **v['fix'])
+    bad = problems_with(did, deck, i, proposed)
+    if bad: sys.exit('the fix breaks house rules: ' + '; '.join(' '.join(str(x) for x in b[2:]) for b in bad))
+    deck['items'][i] = proposed; save_deck(did, deck)
+    print(f'{cid} now reads: {proposed["ex"]}  [{proposed["w"]}]  means: {proposed["means"]}  tile: {proposed.get("hook")}  (new fingerprint {B.card_hash(proposed)}, back to all three reviewers)')
+
+def take_out(cid, why):
+    did, deck, i = find(cid)
+    deck['items'][i]['out'] = True; deck['items'][i]['out_why'] = why; save_deck(did, deck)
+    print(f'{cid} is out: {why}')
+
+def import_marks(path):
+    """Morg's marks from the beta (rows of the marks table, oldest first) folded into build/vetting/morg.json.
+    A flag or a lock stands until an unflag or an unlock for the same card. Prints what's new."""
+    rows = json.load(open(path))
+    if isinstance(rows, list) and rows and isinstance(rows[0], dict) and 'results' in rows[0]: rows = rows[0]['results']   # the database tool's reply
+    if isinstance(rows, dict): rows = rows.get('results', [])
+    mpath = os.path.join(B.VET, 'morg.json')
+    state = B.load_json(mpath, {'last': 0, 'cards': {}})
+    new = []
+    for r in sorted(rows, key=lambda r: int(r['id'])):
+        if int(r['id']) <= state['last']: continue
+        state['last'] = int(r['id']); cid, m = r['card'], r['mark']
+        if m in ('flag', 'lock'): state['cards'][cid] = {'m': m, 'h': r['hash'], 'note': r.get('note') or '', 'at': r['at'], 'row': int(r['id'])}
+        elif state['cards'].get(cid, {}).get('m') == m[2:]: del state['cards'][cid]   # unflag clears a flag, unlock a lock
+        new.append(r)
+    save_json(mpath, state)
+    for r in new: print(f"{r['id']}  {r['mark']:7} {r['card']}  {r.get('note') or ''}")
+    print(f'{len(new)} new marks, up to row {state["last"]}')
+
+if __name__ == '__main__':
+    a = sys.argv[1:]
+    if not a: sys.exit(__doc__)
+    cmd, rest = a[0], a[1:]
+    opt = lambda name: rest[rest.index(name) + 1] if name in rest else None
+    plain_args = [x for j, x in enumerate(rest) if not x.startswith('--') and (j == 0 or rest[j - 1] != '--limit')]
+    if cmd == 'todo':
+        who = plain_args[0] if plain_args else None
+        if who not in B.REVIEWERS: sys.exit('WHO must be one of ' + ', '.join(B.REVIEWERS))
+        todo(who, plain_args[1] if len(plain_args) > 1 else None, int(opt('--limit')) if opt('--limit') else None, '--json' in rest)
+    elif cmd == 'apply':
+        if len(plain_args) != 2 or plain_args[0] not in B.REVIEWERS: sys.exit('usage: vet.py apply WHO FILE.json')
+        apply(plain_args[0], plain_args[1])
+    elif cmd == 'card': card(plain_args[0])
+    elif cmd == 'status': status()
+    elif cmd == 'fixes': fixes(plain_args[0] if plain_args else None)
+    elif cmd == 'take': take(plain_args[0], plain_args[1])
+    elif cmd == 'out': take_out(plain_args[0], plain_args[1])
+    elif cmd == 'marks': import_marks(plain_args[0])
+    else: sys.exit(__doc__)

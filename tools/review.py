@@ -33,7 +33,7 @@ def wrongs(deck, it):
     clash = lambda a, b: a == b or bool(groups.get(a, set()) & groups.get(b, set()))
     out = []
     for x in deck['items']:
-        if x.get('k', 'word') == it.get('k', 'word') and not clash(x['w'], it['w']) and not shown(x['w'], it) and x['w'] not in out: out.append(x['w'])
+        if not x.get('out') and x.get('k', 'word') == it.get('k', 'word') and not clash(x['w'], it['w']) and not shown(x['w'], it) and x['w'] not in out: out.append(x['w'])
     return out
 
 TILE = {1: ('#FFFFFF', '#1E2A3B', 'White tile (easy)'), 2: ('#F7C948', '#1E2A3B', 'Yellow card (medium)'), 3: ('#D52B1E', '#FFFFFF', 'Red card (hard)')}

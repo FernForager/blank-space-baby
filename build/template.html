@@ -112,6 +112,16 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   display: flex; align-items: center; justify-content: center; filter: drop-shadow(0 0 6px rgba(92,240,154,.8)); animation: blink 1.05s steps(1) infinite; }
 .go.wait { display: none; }
 
+/* the beta only (preview links): Morg's flag and lock keys, on a card he has answered and on the card that got him
+   (Oct 16, 2026). A flag is yellow like a yellow card, a lock glows green */
+.beta { position: absolute; left: 8px; bottom: 8px; display: flex; align-items: center; gap: 2px; z-index: 3; }
+.beta[hidden], .bk[hidden] { display: none; }
+.bk { flex: none; width: 40px; height: 40px; padding: 0; border: 0; background: none; color: var(--dim); opacity: .75; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+.bk.on { opacity: 1; }
+.bk.flag.on { color: var(--gold); filter: drop-shadow(0 0 5px rgba(247,201,72,.8)); }
+.bk.lock.on { color: var(--text); filter: drop-shadow(0 0 5px rgba(92,240,154,.8)); }
+.bmsg { font-family: var(--pixel); font-size: 8px; letter-spacing: 1px; color: var(--dim); margin-left: 6px; white-space: nowrap; text-transform: uppercase; }
+
 /* control panel */
 .panel { flex: none; box-sizing: border-box; display: flex; margin-top: auto; border-radius: 18px; padding: 12px 12px 15px;
   background: linear-gradient(180deg, #1A1D1B 0%, #0D0F0E 100%); box-shadow: inset 0 2px 0 rgba(255,255,255,.08), inset 0 0 0 2px #222, 0 3px 0 var(--body-dark); }
@@ -153,8 +163,11 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .share { min-height: 62px; padding: 8px 16px 8px 18px; display: flex; align-items: center; justify-content: space-between; gap: 12px; text-align: left; font-size: 17px; line-height: 1.25; }
 .share .mark { flex: none; }
 .share .ball-i { display: inline-block; vertical-align: -2px; margin-right: 3px; }
+.endrow { display: flex; align-items: center; justify-content: center; gap: 6px; }
+.endrow .bk { height: 26px; color: #7C8A80; }
+.endrow .bk.flag.on { color: #B48A1C; filter: none; } .endrow .bk.lock.on { color: #45BE76; filter: none; }
 .clock { font-family: var(--pixel); font-size: 15px; letter-spacing: 1px; color: var(--glow); text-align: center; text-shadow: 0 0 6px rgba(92,240,154,.6); padding: 2px 0 1px; }
-.key:focus-visible, .go:focus-visible { outline: 3px solid var(--glow); outline-offset: 3px; }
+.key:focus-visible, .go:focus-visible, .bk:focus-visible { outline: 3px solid var(--glow); outline-offset: 3px; }
 
 @media (max-height: 700px) { .choice { min-height: 56px; } .tile { min-height: 46px; font-size: 16px; } }
 @media (max-height: 640px) { .cab { gap: 9px; padding-top: max(9px, env(safe-area-inset-top, 0px)); padding-bottom: max(12px, env(safe-area-inset-bottom, 0px)); } .marquee { padding: 11px 10px 13px; } .marquee h1 { font-size: 19px; }
@@ -174,12 +187,13 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
       </section>
       <section class="view" id="v-end"></section>
       <button class="go wait" id="go" type="button" tabindex="-1" aria-label="Next"></button>
+      <div class="beta" id="beta" hidden><button class="bk flag" id="b-flag" type="button"></button><button class="bk lock" id="b-lock" type="button"></button><span class="bmsg" id="b-msg"></span></div>
     </div>
   </div>
   <div class="panel">
     <div class="pv tiles" id="p-board"></div>
     <div class="pv choices" id="choices"></div>
-    <div class="pv" id="p-end"><button class="key share" id="share" type="button"><span class="txt" id="share-txt"></span><span class="mark" id="share-mark"></span></button><div class="clock" id="clock"></div></div>
+    <div class="pv" id="p-end"><button class="key share" id="share" type="button"><span class="txt" id="share-txt"></span><span class="mark" id="share-mark"></span></button><div class="endrow"><button class="bk flag" id="e-flag" type="button" hidden></button><div class="clock" id="clock"></div><button class="bk lock" id="e-lock" type="button" hidden></button></div></div>
   </div>
 </div>
 <script>
@@ -192,6 +206,9 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     next:  ['...#...','...##..','######.','#######','######.','...##..','...#...'],
     ok:    ['......#','.....##','#...##.','##.##..','.###...','..#....'],
     no:    ['##...##','###.###','.#####.','..###..','.#####.','###.###','##...##'],
+    flag:  ['#######','#######','######.','#####..','#......','#......','#......','#......'],
+    lock:  ['.#####.','.#...#.','.#...#.','#######','###.###','###.###','#######'],
+    unlock:['.#####.','.#...#.','.....#.','#######','###.###','###.###','#######'],
     share: ['....#....','...###...','..#####..','....#....','....#....','##..#..##','#.......#','#.......#','#.......#','#########']
   };
   var PAL = { K: '#1E2A3B', W: '#FFFFFF' };
@@ -253,7 +270,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     var g = {}; (D.groups || []).forEach(function (grp, i) { grp.forEach(function (w) { (g[w] = g[w] || []).push(i); }); });
     D.clash = function (a, b) { return a === b || (g[a] || []).some(function (i) { return (g[b] || []).indexOf(i) >= 0; }); };
     D.cards = D.items.map(function (x, i) {
-      var c = { D: D, id: D.id + ':' + i, w: x.w, m: x.means, ex: x.ex, k: x.k || 'word', hook: x.hook, d: x.d, lg: x.lg || D.lg || '', wm: !!(D.wm || x.wm), rl: !!D.rl, sl: !!D.sl, n: ALL.length };
+      var c = { D: D, id: D.id + ':' + (x.i != null ? x.i : i), fp: x.h, lk: x.lk, w: x.w, m: x.means, ex: x.ex, k: x.k || 'word', hook: x.hook, d: x.d, lg: x.lg || D.lg || '', wm: !!(D.wm || x.wm), rl: !!D.rl, sl: !!D.sl, n: ALL.length };
       c.a = toks(c.w); c.key = c.a.join(' '); c.h = toks(c.hook); c.hk = c.h.join(' ');
       c.t = toks(c.ex + ' ' + c.hook + ' ' + c.m);   // everything a player sees of the card: the sentence, its tile and, after answering, its means line
       c.names = /[A-Z]/.test(c.w) && c.a.length > 1 ? c.a.filter(function (w) { return w.length > 3 && !PLAIN[w] && !/^\d+$/.test(w); }) : [];   // Bayern in Bayern Munich
@@ -350,12 +367,17 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   function today() { return FIXED !== null ? FIXED : Math.max(0, dayOf(new Date())); }
   function fresh(day) {
     var b = deal(day);
-    return { v: 1, day: day, tiles: [].concat(b[0], b[1], b[2]).map(function (c) { return { d: c.d, hook: c.hook, w: c.w, m: c.m, ex: c.ex, ch: choices(c, day) }; }),
+    return { v: 1, day: day, tiles: [].concat(b[0], b[1], b[2]).map(function (c) { return { id: c.id, h: c.fp, lk: c.lk, d: c.d, hook: c.hook, w: c.w, m: c.m, ex: c.ex, ch: choices(c, day) }; }),
       res: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], open: -1, path: [], slots: [] };
   }
   function load() {
     var s = store.get('bsb-daily', null), d = today();
-    return s && s.v === 1 && s.day === d && s.tiles && s.tiles.length === 18 ? s : fresh(d);
+    if (!(s && s.v === 1 && s.day === d && s.tiles && s.tiles.length === 18)) return fresh(d);
+    s.tiles.forEach(function (t) {   // a board saved before cards had ids: find each card by its words
+      if (t.id) return;
+      for (var i = 0; i < ALL.length; i++) if (ALL[i].w === t.w && ALL[i].ex === t.ex) { t.id = ALL[i].id; t.h = ALL[i].fp; t.lk = ALL[i].lk; break; }
+    });
+    return s;
   }
   var S = load();
   var save = function () { store.set('bsb-daily', S); };
@@ -442,7 +464,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
       b.addEventListener('click', function () { answer(p, b); });
       $('choices').appendChild(b);
     });
-    go(null); view('play');
+    go(null); beta(null); view('play');
   }
   function answer(p, btn) {
     if (answered) return; answered = true;
@@ -455,14 +477,14 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
       else b.classList.add('dim');
     });
     if (ok) { var pi = $('pips').children[hud(true).inBall - 1]; pi.classList.remove('bump'); void pi.offsetWidth; pi.classList.add('bump'); }
-    go('next', 'Next');
+    go('next', 'Next'); beta(T, 'play');
     $('q').classList.toggle('missed', !ok); $('q').innerHTML = sentence(T, true); flick();
     if (document.activeElement && document.activeElement.blur) document.activeElement.blur();   // no leftover focus ring after a tap
   }
   var settle = null;   // lands a flying chip, and its goal, at once if the player taps another tile first
   function next() {   // after an answer: a right one flies its chip into the ball, a miss ends the day
     var i = S.open, ok = S.res[i] === 1;
-    S.open = -1; save(); go(null);
+    S.open = -1; save(); go(null); beta(null);
     if (!ok) return end();
     var n = chips(), k = (n - 1) % PER, goal = !(n % PER), timer = null;
     board(k); view('board');
@@ -509,12 +531,13 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
       (L ? '<div class="lost"><p class="' + size(L) + ' missed">' + sentence(L, true) + '</p><p class="means">' + num(keep(esc(L.m))) + '</p></div>' : ballHTML(6));
     $('share-txt').innerHTML = shareText().split('\n').map(function (line) { return num(esc(line)).replace(/⚽/g, svg('ball', 2, 'ball-i', true)); }).join('<br>');
     $('share-mark').innerHTML = svg('share', 3);
-    view('end'); clock(); clearInterval(tick); tick = setInterval(clock, 1000);
+    beta(L, 'end'); view('end'); clock(); clearInterval(tick); tick = setInterval(clock, 1000);
   }
   function clock() {   // the countdown to tomorrow's board, at local midnight
     var now = new Date(), left = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1) - now;
     if (FIXED === null && today() !== S.day) { clearInterval(tick); S = load(); save(); return show(); }
     var s = Math.max(0, Math.floor(left / 1000)), pad = function (x) { return (x < 10 ? '0' : '') + x; };
+    if (Date.now() < holdClock) return;   // a beta message is showing in its place
     $('clock').textContent = pad(Math.floor(s / 3600)) + ':' + pad(Math.floor(s / 60) % 60) + ':' + pad(s % 60);
   }
   $('share').addEventListener('click', function () {
@@ -524,6 +547,63 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     copy(text); done();
   });
   function copy(text) { var t = document.createElement('textarea'); t.value = text; t.style.position = 'fixed'; t.style.opacity = '0'; document.body.appendChild(t); t.select(); try { document.execCommand('copy'); } catch (e) {} t.remove(); }
+
+  // ---- the beta (preview links only): Morg's flag and lock keys (Oct 16, 2026) ----
+  // Flag sends a card back to the three reviewers and the hub, and it leaves the beta at the next build. Lock marks it
+  // perfect: it keeps playing and nobody may change it. Each tap toggles. Marks go to /api/mark (functions/api/mark.js,
+  // the beta's database). With no signal they wait in a queue on the phone and go once the network is back.
+  var BETA = DEV, MARKS = store.get('bsb-marks', {}), QUEUE = store.get('bsb-mark-queue', []), BT = null, where = null, holdClock = 0, sending = null;
+  var SAID = { flag: 'Flagged', unflag: 'Unflagged', lock: 'Locked', unlock: 'Unlocked' };
+  function marked(t) { var m = MARKS[t.id] || {}; return { flag: !!m.flag, lock: m.lock === undefined ? !!t.lk : !!m.lock }; }
+  function beta(t, at) {   // show the keys for card t on the play screen or the end screen, or hide them (t null)
+    BT = BETA && t && t.id ? t : null; where = BT ? at : null;
+    $('beta').hidden = where !== 'play'; $('e-flag').hidden = $('e-lock').hidden = where !== 'end'; $('b-msg').textContent = '';
+    if (!BT) return;
+    paint();
+    var id = BT.id;
+    fetch('/api/mark?card=' + encodeURIComponent(id)).then(function (r) { return r.ok ? r.json() : null; }).then(function (m) {   // what the database says, unless a tap is still on its way
+      if (!m || typeof m.flag !== 'boolean' || QUEUE.some(function (q) { return q.card === id; })) return;
+      MARKS[id] = { flag: m.flag, lock: m.lock }; store.set('bsb-marks', MARKS); if (BT && BT.id === id) paint();
+    }).catch(function () {});
+  }
+  function paint() {
+    var st = marked(BT), f = $(where === 'end' ? 'e-flag' : 'b-flag'), l = $(where === 'end' ? 'e-lock' : 'b-lock');
+    f.className = 'bk flag' + (st.flag ? ' on' : ''); f.innerHTML = svg('flag', 3); f.setAttribute('aria-pressed', st.flag); f.setAttribute('aria-label', st.flag ? 'Flagged. Tap to unflag' : 'Flag this card');
+    l.className = 'bk lock' + (st.lock ? ' on' : ''); l.innerHTML = svg(st.lock ? 'lock' : 'unlock', 3); l.setAttribute('aria-pressed', st.lock); l.setAttribute('aria-label', st.lock ? 'Locked. Tap to unlock' : 'Lock this card');
+  }
+  function say(text) {
+    if (where === 'end') { holdClock = Date.now() + 1600; $('clock').textContent = text.toUpperCase(); setTimeout(clock, 1650); return; }
+    var m = $('b-msg'); m.textContent = text; clearTimeout(say.t); say.t = setTimeout(function () { m.textContent = ''; }, 1600);
+  }
+  function flush() {   // send the queue in order: a refused mark is dropped, a network failure waits for the next try
+    if (sending) return sending;
+    sending = (function step() {
+      if (!QUEUE.length) return Promise.resolve(true);
+      return fetch('/api/mark', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(QUEUE[0]) }).then(function (r) {
+        if (!r.ok && !(r.status >= 400 && r.status < 500 && r.status !== 429)) return false;
+        QUEUE.shift(); store.set('bsb-mark-queue', QUEUE); return step();
+      }, function () { return false; });
+    })().then(function (ok) { sending = null; return ok; });
+    return sending;
+  }
+  function tap(e, key) {
+    e.stopPropagation(); if (!BT) return;
+    var t = BT, st = marked(t), note = '', what;
+    if (key === 'flag') {
+      if (!st.flag) { note = window.prompt('What’s wrong with this card? (optional)', ''); if (note === null) return; }
+      what = st.flag ? 'unflag' : 'flag';
+    } else what = st.lock ? 'unlock' : 'lock';
+    var m = MARKS[t.id] = { flag: st.flag, lock: st.lock };
+    if (key === 'flag') m.flag = what === 'flag'; else m.lock = what === 'lock';
+    store.set('bsb-marks', MARKS);
+    QUEUE.push({ card: t.id, hash: t.h || '', mark: what, note: String(note || '').slice(0, 500), day: S.day, snap: { w: t.w, ex: t.ex, m: t.m, hook: t.hook, d: t.d } });
+    store.set('bsb-mark-queue', QUEUE);
+    paint();
+    flush().then(function (ok) { if (BT === t) say(ok ? SAID[what] : 'Queued'); });
+  }
+  ['b-flag', 'e-flag'].forEach(function (id) { $(id).addEventListener('click', function (e) { tap(e, 'flag'); }); });
+  ['b-lock', 'e-lock'].forEach(function (id) { $(id).addEventListener('click', function (e) { tap(e, 'lock'); }); });
+  if (BETA) flush();
 
   // ---- one tap target: the screen ----
   $('flip').addEventListener('click', function () { if (cab.dataset.v === 'play' && answered) next(); });
