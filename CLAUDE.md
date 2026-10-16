@@ -77,6 +77,7 @@ Ten categories, named on screen. The test for each one: who has the edge? Kids a
 - Punctuation never wraps away from the word or blank it touches. Hyphenated words and ranges never break across lines (the code handles both).
 - Slang decks (Gen Alpha, Parents, Soccer Fanatics): every sentence is about soccer. No proper names, real or made up. Use roles (the coach, the ref, the keeper, the striker, the captain) and Mom, Dad, Grandpa, Grandma.
 - Trivia decks (Swifties, Premier League): plain factual sentences, real names allowed.
+- Clubs and national teams take British plural verbs ("Arsenal are", "Aston Villa have"), Morg's call on Oct 16, 2026.
 - Kid-safe: anything borderline (sexual, drugs, alcohol, slurs, mean-spirited, private-life gossip) is out. When unsure, cut it.
 - No song lyrics or quoted lines from songs, books or films, not even fragments.
 
