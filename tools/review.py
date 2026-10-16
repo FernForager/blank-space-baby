@@ -17,24 +17,8 @@ DECKS = [('basics','Soccer 101 (new)'),('mls','MLS'),('nwsl','NWSL'),('intl-men'
          # the decks from the arcade game: only their tile words and colors are new
          ('soccer','Soccer Lingo (new tiles and colors)'),('epl','EPL (new tiles and colors)'),('alpha','Kid Slang (new tiles and colors)'),('parents','Parent Slang (new tiles and colors)')]
 
-def plain(s):
-    """Lowercase words with spaces round them, as the game compares them (build/template.html's plain)."""
-    return ' ' + ' '.join(re.sub(r'[^0-9a-z\u00c0-\u024f]+', ' ', s.lower()).split()) + ' '
-
-def shown(w, it):
-    """Is the answer w already in this card's sentence (its own answer left out) or hook? Then it can't be one of its wrong answers."""
-    return plain(w) in plain(it['ex']).replace(plain(it['w']), ' ', 1) + plain(it.get('hook') or '')
-
-def wrongs(deck, it):
-    """The answers the game may put on this card's other two buttons: same kind, not grouped with it (build.py's clash), and not already in its sentence or hook."""
-    groups = {}
-    for i, grp in enumerate(deck.get('groups', [])):
-        for w in grp: groups.setdefault(w, set()).add(i)
-    clash = lambda a, b: a == b or bool(groups.get(a, set()) & groups.get(b, set()))
-    out = []
-    for x in deck['items']:
-        if not x.get('out') and x.get('k', 'word') == it.get('k', 'word') and not clash(x['w'], it['w']) and not shown(x['w'], it) and x['w'] not in out: out.append(x['w'])
-    return out
+sys.path.insert(0, os.path.join(ROOT, 'build'))
+from build import wrong_pool as wrongs   # one set of rules for the wrong answers, shared with the build and tools/vet.py
 
 TILE = {1: ('#FFFFFF', '#1E2A3B', 'White tile (easy)'), 2: ('#F7C948', '#1E2A3B', 'Yellow card (medium)'), 3: ('#D52B1E', '#FFFFFF', 'Red card (hard)')}
 

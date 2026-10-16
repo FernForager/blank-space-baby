@@ -20,11 +20,10 @@ A card plays in the beta once all three reviewers have said ok to its current wo
 """
 import datetime, json, os, re, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-sys.path.insert(0, os.path.join(ROOT, 'build')); sys.path.insert(0, os.path.join(ROOT, 'tools'))
+sys.path.insert(0, os.path.join(ROOT, 'build'))
 import build as B
-from review import wrongs
 
-FIELDS = ('w', 'ex', 'means', 'hook', 'd', 'k', 'src')   # what a fix may change
+FIELDS = ('w', 'ex', 'means', 'hook', 'd', 'k', 'src', 'groups')   # what a fix may change. groups: answers to add to the deck's groups
 COLOR = {1: 'white (easy)', 2: 'yellow (medium)', 3: 'red (hard)'}
 
 def now(): return datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
@@ -54,10 +53,10 @@ def save_deck(did, deck):
 def view(did, deck, i, flags=''):
     """All a reviewer needs to judge one card."""
     it = deck['items'][i]
-    return {'id': f'{did}:{i}', 'h': B.card_hash(it), 'deck': deck.get('deck', did), 'source': deck.get('primary', ''),
+    return {'id': f'{did}:{i}', 'h': B.fingerprint(deck, i), 'deck': deck.get('deck', did), 'source': deck.get('primary', ''),
             'color': COLOR.get(it.get('d'), '?'), 'kind': it.get('k', 'word'), 'answer': it['w'], 'sentence': it['ex'],
             'means': it['means'], 'hook': it.get('hook', ''), 'src': it.get('src', ''),
-            'wrong_answers': wrongs(deck, it), 'notes': [x for x in (('women’s game' if it.get('women') or 'women' in flags else ''),
+            'wrong_answers': B.wrong_pool(deck, it), 'notes': [x for x in (('women’s game' if it.get('women') or 'women' in flags else ''),
             ('slang deck: no proper names' if 'slang' in flags else ''), ('can go stale: check it is still true today' if it.get('current') else '')) if x]}
 
 def todo(who, deck_id=None, limit=None, as_json=False):
@@ -65,11 +64,12 @@ def todo(who, deck_id=None, limit=None, as_json=False):
     out = []
     for did, deck, flags in decks():
         if deck_id and did != deck_id: continue
+        clash = B.clasher(deck)
         for i, it in enumerate(deck['items']):
             cid = f'{did}:{i}'
             if it.get('out') or (marks.get(cid) or {}).get('m') == 'lock': continue
             v = verdicts[who].get(cid)
-            if v and v.get('h') == B.card_hash(it): continue
+            if v and v.get('h') == B.fingerprint(deck, i, clash): continue
             out.append(view(did, deck, i, flags))
     left = len(out)
     if limit: out = out[:limit]
@@ -81,11 +81,22 @@ def todo(who, deck_id=None, limit=None, as_json=False):
         for n in c['notes']: print(f'  note:     {n}')
     print(f'\n{left} waiting on {who}' + (f', {len(out)} shown' if limit and left > limit else ''))
 
-def problems_with(did, deck, i, proposed):
-    """The house-rule problems a proposed version of a card would have."""
-    items = list(deck['items']); items[i] = proposed
-    trial = dict(deck, items=items)
-    return B.item_problems(did, items, B.clasher(trial), proposed, hooks=True)
+def changed(deck, i, fix):
+    """The deck with a fix applied: its card fields replaced, and any groups added."""
+    fix = dict(fix); groups = fix.pop('groups', None) or []
+    items = list(deck['items']); items[i] = dict(items[i], **fix)
+    old = deck.get('groups', [])
+    return dict(deck, items=items, groups=old + [g for g in groups if g not in old])
+
+def problems_with(did, deck, i, fix):
+    """The house-rule problems a fix would give a card, or why the fix itself is malformed."""
+    groups = fix.get('groups')
+    if groups is not None:
+        answers = {x['w'] for x in deck['items']}
+        if not isinstance(groups, list) or not all(isinstance(g, list) and len(g) >= 2 and all(isinstance(w, str) and w in answers for w in g) for g in groups):
+            return [(did, deck['items'][i]['w'], 'groups must be a list of lists of two or more answers from this deck')]
+    trial = changed(deck, i, fix)
+    return B.item_problems(did, trial['items'], B.clasher(trial), trial['items'][i], hooks=True)
 
 def apply(who, path):
     rows = json.load(open(path))
@@ -100,17 +111,16 @@ def apply(who, path):
         it = deck['items'][i]
         why = None
         if v not in ('ok', 'fix', 'cut'): why = 'v must be ok, fix or cut'
-        elif r.get('h') != B.card_hash(it): why = 'the card has changed since you read it: read it again with todo or card'
+        elif r.get('h') != B.fingerprint(deck, i): why = 'the card or the wrong answers it can draw have changed since you read it: read it again with todo or card'
         elif (marks.get(cid) or {}).get('m') == 'lock': why = 'Morg locked this card'
         elif v != 'ok' and not (r.get('note') or '').strip(): why = 'a fix or a cut needs a note saying why'
         elif v == 'fix':
             fix = r.get('fix') or {}
             if not isinstance(fix, dict) or not fix or set(fix) - set(FIELDS): why = f'fix must be an object of changed fields, from {", ".join(FIELDS)}'
             else:
-                proposed = dict(it, **fix)
-                if proposed == it: why = 'the fix changes nothing'
+                if changed(deck, i, fix) == deck: why = 'the fix changes nothing'
                 else:
-                    bad = problems_with(did, deck, i, proposed)
+                    bad = problems_with(did, deck, i, fix)
                     if bad: why = 'the fix breaks house rules: ' + '; '.join(' '.join(str(x) for x in b[2:]) for b in bad)
         if why: refused.append((cid, why)); continue
         entry = {'v': v, 'h': r['h'], 'at': now()}
@@ -128,7 +138,7 @@ def card(cid):
     verdicts, marks = B.vetting()
     c = view(did, deck, i, flags); it = deck['items'][i]
     print(json.dumps(c, ensure_ascii=False, indent=1))
-    print('standing:', B.standing(cid, it, verdicts, marks) if did in dict((d, 1) for d, _, _ in B.DAILY) else 'not in the daily')
+    print('standing:', B.standing(cid, it, c['h'], verdicts, marks) if did in dict((d, 1) for d, _, _ in B.DAILY) else 'not in the daily')
     for who in B.REVIEWERS:
         v = verdicts[who].get(cid)
         print(f'{who}:', json.dumps(v, ensure_ascii=False) if v else 'no verdict', '' if not v or v.get('h') == c['h'] else '(for an older wording)')
@@ -139,9 +149,10 @@ def status():
     tally = {k: [0, 0, 0] for k in ('approved', 'locked', 'pending', 'flagged', 'out')}
     per = {who: {'ok': 0, 'fix': 0, 'cut': 0, 'waiting': 0} for who in B.REVIEWERS}
     for did, deck, flags in decks():
+        clash = B.clasher(deck)
         for i, it in enumerate(deck['items']):
-            cid, h = f'{did}:{i}', B.card_hash(it)
-            st = B.standing(cid, it, verdicts, marks)
+            cid, h = f'{did}:{i}', B.fingerprint(deck, i, clash)
+            st = B.standing(cid, it, h, verdicts, marks)
             if it.get('d') in (1, 2, 3): tally[st][it['d'] - 1] += 1
             if st in ('out', 'locked'): continue
             for who in B.REVIEWERS:
@@ -154,8 +165,9 @@ def fixes(deck_id=None):
     verdicts, marks = B.vetting(); n = 0
     for did, deck, flags in decks():
         if deck_id and did != deck_id: continue
+        clash = B.clasher(deck)
         for i, it in enumerate(deck['items']):
-            cid, h = f'{did}:{i}', B.card_hash(it)
+            cid, h = f'{did}:{i}', B.fingerprint(deck, i, clash)
             if it.get('out') or (marks.get(cid) or {}).get('m') == 'lock': continue
             open_ = {who: verdicts[who][cid] for who in B.REVIEWERS if verdicts[who].get(cid, {}).get('h') == h and verdicts[who][cid]['v'] != 'ok'}
             if not open_: continue
@@ -170,13 +182,13 @@ def take(cid, who):
     verdicts, marks = B.vetting()
     v, it = verdicts[who].get(cid), deck['items'][i]
     if not v or v.get('v') != 'fix': sys.exit(f'{who} has no fix on {cid}')
-    if v.get('h') != B.card_hash(it): sys.exit(f'{who}’s fix was for an older wording of {cid}')
+    if v.get('h') != B.fingerprint(deck, i): sys.exit(f'{who}’s fix was for an older wording of {cid}')
     if (marks.get(cid) or {}).get('m') == 'lock': sys.exit(f'Morg locked {cid}')
-    proposed = dict(it, **v['fix'])
-    bad = problems_with(did, deck, i, proposed)
+    bad = problems_with(did, deck, i, v['fix'])
     if bad: sys.exit('the fix breaks house rules: ' + '; '.join(' '.join(str(x) for x in b[2:]) for b in bad))
-    deck['items'][i] = proposed; save_deck(did, deck)
-    print(f'{cid} now reads: {proposed["ex"]}  [{proposed["w"]}]  means: {proposed["means"]}  tile: {proposed.get("hook")}  (new fingerprint {B.card_hash(proposed)}, back to all three reviewers)')
+    new = changed(deck, i, v['fix']); save_deck(did, new); p = new['items'][i]
+    print(f'{cid} now reads: {p["ex"]}  [{p["w"]}]  means: {p["means"]}  tile: {p.get("hook")}  (new fingerprint {B.fingerprint(new, i)}, back to all three reviewers)')
+    if v['fix'].get('groups'): print('  groups added:', v['fix']['groups'], '(cards of the same kind get new fingerprints too)')
 
 def take_out(cid, why):
     did, deck, i = find(cid)
