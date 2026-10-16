@@ -123,7 +123,7 @@
   {
    "w": "six seven",
    "means": "Nonsense shout for 6 and 7",
-   "ex": "The bench yelled “six seven” when the sub board showed 6 and 7",
+   "ex": "The bench yelled “six seven” when the sub board went up",
    "hook": "sub board",
    "src": "https://www.merriam-webster.com/dictionary/six%20seven",
    "d": 1
@@ -419,7 +419,7 @@
   {
    "w": "mother",
    "means": "An icon",
-   "ex": "Mom ran the snack schedule, carpool and team party, so she is mother",
+   "ex": "Mom ran the snack schedule, carpool, and team party, so she is mother",
    "hook": "carpool",
    "src": "https://www.merriam-webster.com/slang/mother",
    "d": 2
@@ -491,7 +491,7 @@
   {
    "w": "chat",
    "means": "Your online audience",
-   "ex": "The striker asked “chat, is this real?” after scoring a hat trick",
+   "ex": "The striker asked, “Chat, is this real?” after scoring a hat trick",
    "hook": "hat trick",
    "src": "https://www.merriam-webster.com/slang/chat",
    "d": 2
