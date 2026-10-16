@@ -406,5 +406,354 @@
   "h": "3f40d80e3d",
   "note": "MW penalty area shows the box in front of each goal but not the keeper’s hands. dictionary.com penalty-area (Collins British) says it is the area within which the goalkeeper may handle the ball, so that page supports both sentence and means",
   "v": "fix"
+ },
+ "soccer:0": {
+  "at": "2026-10-16T23:58:23Z",
+  "h": "69a55645f0",
+  "note": "merriam-webster.com bicycle kick: kick in soccer executed by somersaulting backwards to strike the ball in midair",
+  "v": "ok"
+ },
+ "soccer:1": {
+  "at": "2026-10-16T23:58:23Z",
+  "h": "f47af50658",
+  "note": "dictionary.com scissors kick (Collins, football): player leaps into the air raising one leg and brings up the other to kick the ball",
+  "v": "ok"
+ },
+ "soccer:10": {
+  "at": "2026-10-16T23:58:23Z",
+  "h": "f98aa2b633",
+  "note": "dictionary.com chip (Collins, sport): a shot or kick lofted into the air, esp over an obstacle or an opposing player’s head",
+  "v": "ok"
+ },
+ "soccer:11": {
+  "at": "2026-10-16T23:58:23Z",
+  "h": "76f0f56472",
+  "note": "dictionary.com one-two (Collins, soccer): another term for wall pass, which dictionary.com/browse/wall-pass defines as passing to a teammate and sprinting forward to receive the quick return",
+  "v": "ok"
+ },
+ "soccer:12": {
+  "at": "2026-10-16T23:58:23Z",
+  "h": "f6deaa4d0a",
+  "note": "dictionary.com Panenka: a penalty kick taken as a slow, gently arching shot to the center of goal",
+  "v": "ok"
+ },
+ "soccer:13": {
+  "at": "2026-10-16T23:58:23Z",
+  "h": "2c8f248683",
+  "note": "dictionary.com keepy-uppy (Collins, soccer): keeping a ball off the ground by bouncing it on a foot, knee or head",
+  "v": "ok"
+ },
+ "soccer:14": {
+  "at": "2026-10-16T23:58:23Z",
+  "h": "7b254e3781",
+  "note": "merriam-webster.com penalty kick: a free kick at the goal in soccer from a point 12 yards in front of the goal for certain violations. Free kick is rightly absent from the wrong answers",
+  "v": "ok"
+ },
+ "soccer:15": {
+  "at": "2026-10-16T23:58:23Z",
+  "fix": {
+   "groups": [
+    [
+     "corner kick",
+     "free kick"
+    ]
+   ]
+  },
+  "h": "3bdc9a0109",
+  "note": "MW corner kick defines it as “a free kick from a corner of a soccer field awarded … when a defender plays the ball out-of-bounds over the end line.” Sentence and means are right, but by the deck’s own source free kick (a listed wrong answer) is also true in this blank, so group them",
+  "v": "fix"
+ },
+ "soccer:16": {
+  "at": "2026-10-16T23:58:23Z",
+  "h": "896609c9f3",
+  "note": "merriam-webster.com free kick: a kick with which an opponent may not interfere, awarded because of an infraction by an opponent",
+  "v": "ok"
+ },
+ "soccer:17": {
+  "at": "2026-10-16T23:58:23Z",
+  "h": "ee5e8340cd",
+  "note": "merriam-webster.com red card: shown to a player who broke the rules and will not be allowed to continue playing",
+  "v": "ok"
+ },
+ "soccer:18": {
+  "at": "2026-10-16T23:58:23Z",
+  "h": "5dcba7aa0a",
+  "note": "merriam-webster.com yellow card: shown to a player who broke the rules and is being officially warned",
+  "v": "ok"
+ },
+ "soccer:19": {
+  "at": "2026-10-16T23:58:23Z",
+  "h": "fbbaa46eef",
+  "note": "merriam-webster.com offside: illegally in advance of the ball or puck",
+  "v": "ok"
+ },
+ "soccer:2": {
+  "at": "2026-10-16T23:58:23Z",
+  "h": "5dfa3dd9d8",
+  "note": "merriam-webster.com volley: a kick of the ball in soccer before it rebounds",
+  "v": "ok"
+ },
+ "soccer:20": {
+  "at": "2026-10-16T23:58:23Z",
+  "h": "7022f8865f",
+  "note": "dictionary.com handball (Collins, soccer): the offence of a player other than a keeper in his own area touching the ball with a hand. The Usage note there adds “hand or part of their arm”",
+  "v": "ok"
+ },
+ "soccer:21": {
+  "at": "2026-10-16T23:58:23Z",
+  "h": "91d5f7b54a",
+  "note": "dictionary.com dive (Soccer): a dramatic fall or feigned injury to get the opponent penalized, Collins: pretending to have been tripped to win a free kick or penalty",
+  "v": "ok"
+ },
+ "soccer:22": {
+  "at": "2026-10-16T23:58:23Z",
+  "h": "8fe616d3f6",
+  "note": "merriam-webster.com keeper: goalkeeper",
+  "v": "ok"
+ },
+ "soccer:23": {
+  "at": "2026-10-16T23:58:23Z",
+  "fix": {
+   "ex": "The striker waits near the other team’s goal, hoping to score",
+   "hook": "goal",
+   "src": "https://www.dictionary.com/browse/striker"
+  },
+  "h": "b6f7b625dc",
+  "note": "MW striker gives only “a forward in soccer.” dictionary.com/browse/striker (Collins, soccer) gives “an attacking player, esp one who generally positions himself near his opponent’s goal in the hope of scoring,” which supports the means line. Neither source supports “only job is to score” or “never helps on defense,” which is untrue of real strikers, so the sentence is reworded to the dictionary sense",
+  "v": "fix"
+ },
+ "soccer:24": {
+  "at": "2026-10-16T23:58:23Z",
+  "h": "dfe465aacf",
+  "note": "merriam-webster.com center forward: someone who plays in the middle of the front line of players in soccer and other sports",
+  "v": "ok"
+ },
+ "soccer:25": {
+  "at": "2026-10-16T23:58:23Z",
+  "h": "daba17ff5f",
+  "note": "merriam-webster.com winger: a player in a wing position, and merriam-webster.com/dictionary/wing: one of the offensive positions on either side of a center position",
+  "v": "ok"
+ },
+ "soccer:26": {
+  "at": "2026-10-16T23:58:23Z",
+  "h": "b4d8aafbf8",
+  "note": "merriam-webster.com midfielder: a member of a midfield, and merriam-webster.com/dictionary/midfield: the portion of a playing field midway between goals. dictionary.com/browse/midfielder adds that midfielders play both offensively and defensively",
+  "v": "ok"
+ },
+ "soccer:27": {
+  "at": "2026-10-16T23:58:23Z",
+  "h": "4f20f7733e",
+  "note": "merriam-webster.com fullback: a primarily defensive player usually stationed nearest the defended goal (as in soccer)",
+  "v": "ok"
+ },
+ "soccer:28": {
+  "at": "2026-10-16T23:58:23Z",
+  "h": "61ec7816ca",
+  "note": "merriam-webster.com sweeper: a lone back in soccer who plays between the line of the defenders and the goal",
+  "v": "ok"
+ },
+ "soccer:29": {
+  "at": "2026-10-16T23:58:23Z",
+  "fix": {
+   "src": "https://www.dictionary.com/browse/playmaker"
+  },
+  "h": "6fd4827a06",
+  "note": "MW playmaker only gives “a player who leads the offense for a team (as in basketball or hockey),” no soccer. dictionary.com/browse/playmaker (Collins, sport) gives “a player whose role is to create scoring opportunities for his or her team-mates,” which covers soccer and the sentence’s passes that set up goals",
+  "v": "fix"
+ },
+ "soccer:3": {
+  "at": "2026-10-16T23:58:23Z",
+  "h": "a6bb05e3d3",
+  "note": "merriam-webster.com header: a shot or pass in soccer made by heading the ball",
+  "v": "ok"
+ },
+ "soccer:30": {
+  "at": "2026-10-16T23:58:23Z",
+  "h": "95c49a315c",
+  "note": "dictionary.com false nine (Soccer): a center forward who drops back into the midfield to receive the ball",
+  "v": "ok"
+ },
+ "soccer:31": {
+  "at": "2026-10-16T23:58:23Z",
+  "h": "ab70dec81f",
+  "note": "dictionary.com target man (Collins, soccer): an attacking player to whom high crosses are played, esp a tall forward",
+  "v": "ok"
+ },
+ "soccer:32": {
+  "at": "2026-10-16T23:58:23Z",
+  "h": "deb19f1069",
+  "note": "dictionary.com gaffer: the coach or manager of a sports team",
+  "v": "ok"
+ },
+ "soccer:33": {
+  "at": "2026-10-16T23:58:23Z",
+  "h": "e8a2e01dc5",
+  "note": "merriam-webster.com hat trick: the scoring of three goals in one game (as of hockey or soccer) by a single player",
+  "v": "ok"
+ },
+ "soccer:34": {
+  "at": "2026-10-16T23:58:23Z",
+  "h": "60ec8ca66f",
+  "note": "merriam-webster.com clean sheet: a game in which the opposing team is prevented from scoring",
+  "v": "ok"
+ },
+ "soccer:35": {
+  "at": "2026-10-16T23:58:23Z",
+  "h": "1aceb370f7",
+  "note": "merriam-webster.com own goal: a goal in soccer that a player accidentally scores against his or her own team",
+  "v": "ok"
+ },
+ "soccer:36": {
+  "at": "2026-10-16T23:58:23Z",
+  "h": "58d0b15ec8",
+  "note": "merriam-webster.com equalizer: a score that ties a game",
+  "v": "ok"
+ },
+ "soccer:37": {
+  "at": "2026-10-16T23:58:23Z",
+  "fix": {
+   "src": "https://www.dictionary.com/browse/nil"
+  },
+  "h": "cebdd42cec",
+  "note": "MW nil gives only “nothing at all : zero,” with nothing about scores. dictionary.com/browse/nil (Collins) gives “another word for nothing: used esp in the scoring of certain games,” which supports the means line",
+  "v": "fix"
+ },
+ "soccer:38": {
+  "at": "2026-10-16T23:58:23Z",
+  "h": "cbe061b23b",
+  "note": "dictionary.com assist (Collins noun, sport): a pass or other action by a player which enables another player to score a goal",
+  "v": "ok"
+ },
+ "soccer:39": {
+  "at": "2026-10-16T23:58:23Z",
+  "h": "6c8d919b53",
+  "note": "merriam-webster.com shoot-out: a shooting competition in overtime to decide a game (as in soccer) tied at the end of regular play",
+  "v": "ok"
+ },
+ "soccer:4": {
+  "at": "2026-10-16T23:58:23Z",
+  "h": "97427b6f06",
+  "note": "merriam-webster.com banana kick: kick striking the side of the ball that makes it curve laterally in the air",
+  "v": "ok"
+ },
+ "soccer:40": {
+  "at": "2026-10-16T23:58:23Z",
+  "h": "8aa7454f28",
+  "note": "merriam-webster.com sudden death: extra play to break a tie in which the first to score wins",
+  "v": "ok"
+ },
+ "soccer:41": {
+  "at": "2026-10-16T23:58:23Z",
+  "h": "ee71028727",
+  "note": "dictionary.com golden goal (Collins, soccer): the first goal scored in extra time, which wins the match",
+  "v": "ok"
+ },
+ "soccer:42": {
+  "at": "2026-10-16T23:58:23Z",
+  "h": "17d3b77b10",
+  "note": "merriam-webster.com injury time: time added at the end of a game of soccer because of time lost when players are injured. Stoppage time is rightly absent from the wrong answers",
+  "v": "ok"
+ },
+ "soccer:43": {
+  "at": "2026-10-16T23:58:23Z",
+  "h": "6dc981d4fc",
+  "note": "dictionary.com stoppage time (Collins, sport): another name for injury time. Injury time is rightly absent from the wrong answers",
+  "v": "ok"
+ },
+ "soccer:44": {
+  "at": "2026-10-16T23:58:23Z",
+  "h": "73bc8083c1",
+  "note": "merriam-webster.com friendly (noun): a match between sports teams that has no connection with league or championship play",
+  "v": "ok"
+ },
+ "soccer:45": {
+  "at": "2026-10-16T23:58:23Z",
+  "h": "3c0876b53e",
+  "note": "merriam-webster.com derby: a game between local sports teams",
+  "v": "ok"
+ },
+ "soccer:46": {
+  "at": "2026-10-16T23:58:23Z",
+  "h": "4e7db61ea3",
+  "note": "merriam-webster.com futsal: a game developed from soccer typically played indoors between two teams of five players",
+  "v": "ok"
+ },
+ "soccer:47": {
+  "at": "2026-10-16T23:58:23Z",
+  "h": "e34c447c78",
+  "note": "merriam-webster.com howler: a humorous and ridiculous blunder",
+  "v": "ok"
+ },
+ "soccer:48": {
+  "at": "2026-10-16T23:58:23Z",
+  "h": "130f076445",
+  "note": "merriam-webster.com sitter: an easy scoring or fielding chance",
+  "v": "ok"
+ },
+ "soccer:49": {
+  "at": "2026-10-16T23:58:23Z",
+  "h": "15f74864f4",
+  "note": "dictionary.com tap-in (Collins, soccer): a goal scored without great effort by knocking the ball in from close range",
+  "v": "ok"
+ },
+ "soccer:5": {
+  "at": "2026-10-16T23:58:23Z",
+  "h": "db657ada52",
+  "note": "merriam-webster.com backheel: a kick of the ball backward with the heel",
+  "v": "ok"
+ },
+ "soccer:50": {
+  "at": "2026-10-16T23:58:23Z",
+  "h": "27613b29a6",
+  "note": "merriam-webster.com clinical: done or performed with excellence and precision",
+  "v": "ok"
+ },
+ "soccer:51": {
+  "at": "2026-10-16T23:58:23Z",
+  "h": "201f88d7ac",
+  "note": "merriam-webster.com set piece: a carefully planned sequence of movements performed by a team (as in soccer). dictionary.com/browse/set-piece names a corner kick as the example",
+  "v": "ok"
+ },
+ "soccer:52": {
+  "at": "2026-10-16T23:58:23Z",
+  "h": "ceca8be0f8",
+  "note": "dictionary.com tiki-taka (Soccer): keeping possession and moving upfield through a series of quick, short passes",
+  "v": "ok"
+ },
+ "soccer:53": {
+  "at": "2026-10-16T23:58:23Z",
+  "h": "41e96ba9a2",
+  "note": "dictionary.com gegenpressing (Soccer): on losing the ball, immediately seeking repossession with aggressive pressure",
+  "v": "ok"
+ },
+ "soccer:54": {
+  "at": "2026-10-16T23:58:23Z",
+  "h": "56f6e45a1a",
+  "note": "dictionary.com relegate (Collins): to demote a football team to a lower division",
+  "v": "ok"
+ },
+ "soccer:6": {
+  "at": "2026-10-16T23:58:23Z",
+  "h": "b6370baccd",
+  "note": "merriam-webster.com cross: an attacking pass in soccer played across the field from one side to the other or to the middle",
+  "v": "ok"
+ },
+ "soccer:7": {
+  "at": "2026-10-16T23:58:23Z",
+  "h": "62f9936582",
+  "note": "dictionary.com nutmeg (Collins verb, sport): to kick or hit the ball between the legs of an opposing player",
+  "v": "ok"
+ },
+ "soccer:8": {
+  "at": "2026-10-16T23:58:23Z",
+  "h": "b49571cec4",
+  "note": "dictionary.com stepover (Collins): raising the foot over the ball while in possession to wrong-foot an opponent",
+  "v": "ok"
+ },
+ "soccer:9": {
+  "at": "2026-10-16T23:58:23Z",
+  "h": "e44bf8fb9d",
+  "note": "dictionary.com dummy (Collins): a feigned pass or move in a sport such as football or rugby",
+  "v": "ok"
  }
 }
