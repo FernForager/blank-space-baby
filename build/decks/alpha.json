@@ -4,673 +4,897 @@
    "w": "bet",
    "means": "OK, for sure",
    "ex": "The striker said “bet” when the coach asked for one more goal",
-   "src": "https://www.merriam-webster.com/dictionary/bet"
+   "hook": "striker",
+   "src": "https://www.merriam-webster.com/dictionary/bet",
+   "d": 2
   },
   {
    "w": "no cap",
    "means": "For real, no lie",
    "ex": "The keeper has saved every penalty this season, no cap",
-   "src": "https://www.merriam-webster.com/dictionary/no%20cap"
+   "hook": "keeper",
+   "src": "https://www.merriam-webster.com/dictionary/no%20cap",
+   "d": 1
   },
   {
    "w": "cap",
    "means": "A lie or a brag",
    "ex": "The defender’s claim that she can kick a ball 100 yards is cap",
-   "src": "https://www.merriam-webster.com/dictionary/cap"
+   "hook": "100 yards",
+   "src": "https://www.merriam-webster.com/dictionary/cap",
+   "d": 2
   },
   {
    "w": "bussin",
    "means": "Really, really good",
    "ex": "The halftime orange slices were bussin",
-   "src": "https://www.merriam-webster.com/dictionary/bussin"
+   "hook": "halftime",
+   "src": "https://www.merriam-webster.com/dictionary/bussin",
+   "d": 1
   },
   {
    "w": "slay",
    "means": "Do amazingly well",
    "ex": "The striker continues to slay on every free kick",
-   "src": "https://www.merriam-webster.com/dictionary/slay"
+   "hook": "free kick",
+   "src": "https://www.merriam-webster.com/dictionary/slay",
+   "d": 1
   },
   {
    "w": "ate",
    "means": "Did it perfectly",
    "ex": "The midfielder scored a bicycle kick at practice and ate",
-   "src": "https://www.merriam-webster.com/slang/ate-and-left-no-crumbs"
+   "hook": "bicycle kick",
+   "src": "https://www.merriam-webster.com/slang/ate-and-left-no-crumbs",
+   "d": 2
   },
   {
    "w": "mid",
    "means": "Just OK, so-so",
    "ex": "The team agreed that the new practice pinnies are mid",
-   "src": "https://www.merriam-webster.com/dictionary/mid"
+   "hook": "pinnies",
+   "src": "https://www.merriam-webster.com/dictionary/mid",
+   "d": 2
   },
   {
    "w": "sus",
    "means": "Suspicious",
    "ex": "The ref looks sus wearing the other team’s colors",
-   "src": "https://www.merriam-webster.com/dictionary/sus"
+   "hook": "colors",
+   "src": "https://www.merriam-webster.com/dictionary/sus",
+   "d": 1
   },
   {
    "w": "GOAT",
    "means": "Greatest of all time",
    "ex": "The coach has not missed a practice in 20 years, so she is the GOAT",
-   "src": "https://www.merriam-webster.com/dictionary/GOAT"
+   "hook": "20 years",
+   "src": "https://www.merriam-webster.com/dictionary/GOAT",
+   "d": 1
   },
   {
    "w": "fire",
    "means": "Awesome, amazing",
    "ex": "The new cleats grip the wet grass and are fire",
-   "src": "https://www.merriam-webster.com/dictionary/fire"
+   "hook": "cleats",
+   "src": "https://www.merriam-webster.com/dictionary/fire",
+   "d": 1
   },
   {
    "w": "low-key",
    "means": "Somewhat, quietly",
    "ex": "The goalie says sprints are boring, but she low-key enjoys them",
-   "src": "https://www.merriam-webster.com/dictionary/low-key"
+   "hook": "sprints",
+   "src": "https://www.merriam-webster.com/dictionary/low-key",
+   "d": 1
   },
   {
    "w": "high-key",
    "means": "Totally, truly",
    "ex": "The whole team is high-key nervous about the tournament",
-   "src": "https://www.merriam-webster.com/dictionary/high-key"
+   "hook": "tournament",
+   "src": "https://www.merriam-webster.com/dictionary/high-key",
+   "d": 1
   },
   {
    "w": "delulu",
    "means": "Unrealistically hopeful",
    "ex": "The team is delulu if it plans to win 20–0",
-   "src": "https://www.merriam-webster.com/dictionary/delulu"
+   "hook": "win 20–0",
+   "src": "https://www.merriam-webster.com/dictionary/delulu",
+   "d": 1
   },
   {
    "w": "aura",
    "means": "Your cool factor",
    "ex": "The captain has so much aura that one look quiets the bench",
-   "src": "https://www.merriam-webster.com/dictionary/aura"
+   "hook": "captain",
+   "src": "https://www.merriam-webster.com/dictionary/aura",
+   "d": 1
   },
   {
    "w": "aura farming",
    "means": "Posing to look cool",
    "ex": "Wearing sunglasses during warm-ups is aura farming",
-   "src": "https://www.merriam-webster.com/slang/aura-farming"
+   "hook": "sunglasses",
+   "src": "https://www.merriam-webster.com/slang/aura-farming",
+   "d": 2
   },
   {
    "w": "six seven",
    "means": "Nonsense shout for 6 and 7",
    "ex": "The bench yelled “six seven” when the sub board showed 6 and 7",
-   "src": "https://www.merriam-webster.com/dictionary/six%20seven"
+   "hook": "sub board",
+   "src": "https://www.merriam-webster.com/dictionary/six%20seven",
+   "d": 1
   },
   {
    "w": "skibidi",
    "means": "A silly nonsense word",
    "ex": "The defender answered every coaching tip with “skibidi”",
-   "src": "https://www.merriam-webster.com/dictionary/skibidi"
+   "hook": "coaching tip",
+   "src": "https://www.merriam-webster.com/dictionary/skibidi",
+   "d": 2
   },
   {
    "w": "cooked",
    "means": "Doomed, done for",
    "ex": "The team forgot to stretch before sprints, so it is cooked",
-   "src": "https://www.merriam-webster.com/dictionary/cooked"
+   "hook": "stretch",
+   "src": "https://www.merriam-webster.com/dictionary/cooked",
+   "d": 2
   },
   {
    "w": "rage-bait",
    "means": "Posted to make people mad",
    "ex": "Dad’s post saying offside should be abolished was rage-bait",
-   "src": "https://www.merriam-webster.com/slang/rage-bait"
+   "hook": "offside",
+   "src": "https://www.merriam-webster.com/slang/rage-bait",
+   "d": 1
   },
   {
    "w": "glaze",
    "means": "Praise way too much",
    "ex": "Dad should not glaze the goalie after every routine save",
-   "src": "https://www.merriam-webster.com/dictionary/glaze"
+   "hook": "routine save",
+   "src": "https://www.merriam-webster.com/dictionary/glaze",
+   "d": 2
   },
   {
    "w": "fanum tax",
    "means": "Stealing a bite of your food",
    "ex": "Dad took one orange slice from the goalie’s snack as a fanum tax",
-   "src": "https://www.merriam-webster.com/slang/fanum-tax"
+   "hook": "orange slice",
+   "src": "https://www.merriam-webster.com/slang/fanum-tax",
+   "d": 2
   },
   {
    "w": "main character energy",
    "means": "Acting like the star",
    "ex": "The striker walked onto the field with main character energy",
-   "src": "https://www.merriam-webster.com/slang/main-character-energy"
+   "hook": "striker",
+   "src": "https://www.merriam-webster.com/slang/main-character-energy",
+   "d": 1
   },
   {
    "w": "touch grass",
    "means": "Get off screens, go outside",
    "ex": "After a day of soccer video games, Mom said to touch grass",
-   "src": "https://www.merriam-webster.com/dictionary/touch%20grass"
+   "hook": "video games",
+   "src": "https://www.merriam-webster.com/dictionary/touch%20grass",
+   "d": 1
   },
   {
    "w": "L",
    "means": "A loss",
    "ex": "Losing the final on penalties was a big L",
-   "src": "https://www.merriam-webster.com/dictionary/L"
+   "hook": "penalties",
+   "src": "https://www.merriam-webster.com/dictionary/L",
+   "d": 1
   },
   {
    "w": "sheesh",
    "means": "Wow! (or ugh!)",
    "ex": "The bench said “sheesh” when the striker scored from midfield",
-   "src": "https://www.merriam-webster.com/dictionary/sheesh"
+   "hook": "midfield",
+   "src": "https://www.merriam-webster.com/dictionary/sheesh",
+   "d": 1
   },
   {
    "w": "vibe check",
    "means": "Sizing up the mood",
    "ex": "The coach ran a vibe check on the team before kickoff",
-   "src": "https://www.merriam-webster.com/slang/vibe-check"
+   "hook": "kickoff",
+   "src": "https://www.merriam-webster.com/slang/vibe-check",
+   "d": 1
   },
   {
    "w": "bruh",
    "means": "Bro, dude",
    "ex": "The goalie said “bruh” when the ball rolled through her legs",
-   "src": "https://www.merriam-webster.com/dictionary/bruh"
+   "hook": "goalie",
+   "src": "https://www.merriam-webster.com/dictionary/bruh",
+   "d": 1
   },
   {
    "w": "tuff",
    "means": "Cool, impressive",
    "ex": "Grandpa wore a tuff new tracksuit to the game",
-   "src": "https://www.merriam-webster.com/slang/tuff"
+   "hook": "tracksuit",
+   "src": "https://www.merriam-webster.com/slang/tuff",
+   "d": 2
   },
   {
    "w": "crash out",
    "means": "Freak out, lose it",
    "ex": "Dad began to crash out when the ref missed the handball",
-   "src": "https://www.merriam-webster.com/dictionary/crash"
+   "hook": "handball",
+   "src": "https://www.merriam-webster.com/dictionary/crash",
+   "d": 2
   },
   {
    "w": "lock in",
    "means": "Focus hard",
    "ex": "Kickoff is in five minutes, so it is time to lock in",
-   "src": "https://www.merriam-webster.com/slang/lock-in"
+   "hook": "five minutes",
+   "src": "https://www.merriam-webster.com/slang/lock-in",
+   "d": 1
   },
   {
    "w": "goated",
    "means": "Super skilled, the best",
    "ex": "The keeper has never lost a shootout because she is goated",
-   "src": "https://www.merriam-webster.com/dictionary/goated"
+   "hook": "shootout",
+   "src": "https://www.merriam-webster.com/dictionary/goated",
+   "d": 1
   },
   {
    "w": "twin",
    "means": "Close friend, your double",
    "ex": "Dad said “Hi, twin” when Grandpa wore the same team scarf",
-   "src": "https://www.merriam-webster.com/slang/twin"
+   "hook": "scarf",
+   "src": "https://www.merriam-webster.com/slang/twin",
+   "d": 1
   },
   {
    "w": "unc",
    "means": "Someone acting old",
    "ex": "Dad asking what a nutmeg is counts as unc behavior",
-   "src": "https://www.merriam-webster.com/dictionary/unc"
+   "hook": "nutmeg",
+   "src": "https://www.merriam-webster.com/dictionary/unc",
+   "d": 2
   },
   {
    "w": "brain rot",
    "means": "Mind-numbing online junk",
    "ex": "Three hours of goofy soccer clips gave the striker brain rot",
-   "src": "https://www.merriam-webster.com/dictionary/brain%20rot"
+   "hook": "soccer clips",
+   "src": "https://www.merriam-webster.com/dictionary/brain%20rot",
+   "d": 1
   },
   {
    "w": "tea",
    "means": "Gossip",
    "ex": "Mom has the tea on why the coach was late",
-   "src": "https://www.merriam-webster.com/dictionary/tea"
+   "hook": "Mom",
+   "src": "https://www.merriam-webster.com/dictionary/tea",
+   "d": 1
   },
   {
    "w": "slaps",
    "means": "Is really good",
    "ex": "The team’s warm-up playlist slaps",
-   "src": "https://www.merriam-webster.com/slang/slap"
+   "hook": "playlist",
+   "src": "https://www.merriam-webster.com/slang/slap",
+   "d": 1
   },
   {
    "w": "drip",
    "means": "A stylish look",
    "ex": "Grandpa has drip in his matching team hat and socks",
-   "src": "https://www.merriam-webster.com/dictionary/drip"
+   "hook": "team hat",
+   "src": "https://www.merriam-webster.com/dictionary/drip",
+   "d": 2
   },
   {
    "w": "valid",
    "means": "Fair, makes sense",
    "ex": "Being tired after two games in one day is valid",
-   "src": "https://www.merriam-webster.com/dictionary/valid"
+   "hook": "two games",
+   "src": "https://www.merriam-webster.com/dictionary/valid",
+   "d": 1
   },
   {
    "w": "caught in 4k",
    "means": "Caught, with proof",
    "ex": "The defender was caught in 4k pulling a jersey on Dad’s video",
-   "src": "https://www.merriam-webster.com/slang/caught-in-4k"
+   "hook": "jersey",
+   "src": "https://www.merriam-webster.com/slang/caught-in-4k",
+   "d": 1
   },
   {
    "w": "hit different",
    "means": "Feels better than usual",
    "ex": "Wins in the pouring rain hit different",
-   "src": "https://www.merriam-webster.com/slang/hit-different"
+   "hook": "pouring rain",
+   "src": "https://www.merriam-webster.com/slang/hit-different",
+   "d": 1
   },
   {
    "w": "rent-free",
    "means": "Stuck in your head",
    "ex": "The missed penalty lives in the striker’s head rent-free",
-   "src": "https://www.merriam-webster.com/slang/rent-free"
+   "hook": "penalty",
+   "src": "https://www.merriam-webster.com/slang/rent-free",
+   "d": 1
   },
   {
    "w": "era",
    "means": "A phase of your life",
    "ex": "The team now stretches before every practice in its injury-free era",
-   "src": "https://www.merriam-webster.com/dictionary/era"
+   "hook": "injury-free",
+   "src": "https://www.merriam-webster.com/dictionary/era",
+   "d": 1
   },
   {
    "w": "red flag",
    "means": "A warning sign",
    "ex": "A teammate who skips warm-ups is a red flag",
-   "src": "https://www.merriam-webster.com/dictionary/red%20flag"
+   "hook": "warm-ups",
+   "src": "https://www.merriam-webster.com/dictionary/red%20flag",
+   "d": 1
   },
   {
    "w": "green flag",
    "means": "A good sign",
    "ex": "A teammate who helps carry the goals is a green flag",
-   "src": "https://www.merriam-webster.com/slang/green-flag"
+   "hook": "teammate",
+   "src": "https://www.merriam-webster.com/slang/green-flag",
+   "d": 1
   },
   {
    "w": "iykyk",
    "means": "If you know, you know",
    "ex": "What happened at last year’s tournament hotel is iykyk",
-   "src": "https://www.merriam-webster.com/dictionary/iykyk"
+   "hook": "hotel",
+   "src": "https://www.merriam-webster.com/dictionary/iykyk",
+   "d": 2
   },
   {
    "w": "bestie",
    "means": "Best friend",
    "ex": "The striker always passes to her bestie",
-   "src": "https://www.merriam-webster.com/dictionary/bestie"
+   "hook": "passes",
+   "src": "https://www.merriam-webster.com/dictionary/bestie",
+   "d": 1
   },
   {
    "w": "stan",
    "means": "Be a superfan of",
    "ex": "The whole team will stan the goalie after that save",
-   "src": "https://www.merriam-webster.com/dictionary/stan"
+   "hook": "that save",
+   "src": "https://www.merriam-webster.com/dictionary/stan",
+   "d": 2
   },
   {
    "w": "flex",
    "means": "Show off",
    "ex": "Wearing a tournament medal to the grocery store is a flex",
-   "src": "https://www.merriam-webster.com/dictionary/flex"
+   "hook": "medal",
+   "src": "https://www.merriam-webster.com/dictionary/flex",
+   "d": 1
   },
   {
    "w": "salty",
    "means": "Bitter, annoyed",
    "ex": "The other team was salty about the offside call",
-   "src": "https://www.merriam-webster.com/dictionary/salty"
+   "hook": "offside call",
+   "src": "https://www.merriam-webster.com/dictionary/salty",
+   "d": 1
   },
   {
    "w": "yeet",
    "means": "Throw hard",
    "ex": "The goalie will yeet the ball downfield on every goal kick",
-   "src": "https://www.merriam-webster.com/dictionary/yeet"
+   "hook": "goal kick",
+   "src": "https://www.merriam-webster.com/dictionary/yeet",
+   "d": 1
   },
   {
    "w": "gatekeep",
    "means": "Keep others from something",
    "ex": "Dad will gatekeep his secret parking spot by the field",
-   "src": "https://www.merriam-webster.com/dictionary/gatekeep"
+   "hook": "parking spot",
+   "src": "https://www.merriam-webster.com/dictionary/gatekeep",
+   "d": 1
   },
   {
    "w": "ghost",
    "means": "Suddenly stop answering",
    "ex": "Please do not ghost the team group text before a game",
-   "src": "https://www.merriam-webster.com/dictionary/ghost"
+   "hook": "group text",
+   "src": "https://www.merriam-webster.com/dictionary/ghost",
+   "d": 1
   },
   {
    "w": "mother",
    "means": "An icon",
    "ex": "Mom ran the snack schedule, carpool and team party, so she is mother",
-   "src": "https://www.merriam-webster.com/slang/mother"
+   "hook": "carpool",
+   "src": "https://www.merriam-webster.com/slang/mother",
+   "d": 2
   },
   {
    "w": "lit",
    "means": "Exciting, excellent",
    "ex": "The team film night with snacks was lit",
-   "src": "https://www.merriam-webster.com/dictionary/lit"
+   "hook": "film night",
+   "src": "https://www.merriam-webster.com/dictionary/lit",
+   "d": 1
   },
   {
    "w": "vibe",
    "means": "A feeling or mood",
    "ex": "Practice under the stadium lights is a vibe",
-   "src": "https://www.merriam-webster.com/dictionary/vibe"
+   "hook": "stadium",
+   "src": "https://www.merriam-webster.com/dictionary/vibe",
+   "d": 1
   },
   {
    "w": "glow-up",
    "means": "A big improvement",
    "ex": "The old practice field had a glow-up with new turf",
-   "src": "https://www.merriam-webster.com/dictionary/glow-up"
+   "hook": "turf",
+   "src": "https://www.merriam-webster.com/dictionary/glow-up",
+   "d": 1
   },
   {
    "w": "nerf",
    "means": "Make weaker",
    "ex": "The coach decided to nerf scrimmages by cutting them to five minutes",
-   "src": "https://www.merriam-webster.com/dictionary/nerf"
+   "hook": "scrimmages",
+   "src": "https://www.merriam-webster.com/dictionary/nerf",
+   "d": 2
   },
   {
    "w": "clutch",
    "means": "Great when it counts",
    "ex": "The last-second goal in the final was clutch",
-   "src": "https://www.merriam-webster.com/dictionary/clutch"
+   "hook": "last-second",
+   "src": "https://www.merriam-webster.com/dictionary/clutch",
+   "d": 1
   },
   {
    "w": "AFK",
    "means": "Away, not there",
    "ex": "The defender went AFK and watched the geese during the drill",
-   "src": "https://www.merriam-webster.com/dictionary/AFK"
+   "hook": "geese",
+   "src": "https://www.merriam-webster.com/dictionary/AFK",
+   "d": 1
   },
   {
    "w": "menace",
    "means": "A pest, a nuisance",
    "ex": "The goose on the practice field is a menace",
-   "src": "https://www.merriam-webster.com/dictionary/menace"
+   "hook": "goose",
+   "src": "https://www.merriam-webster.com/dictionary/menace",
+   "d": 1
   },
   {
    "w": "gas",
    "means": "Excellent",
    "ex": "The new team jerseys are gas",
-   "src": "https://www.merriam-webster.com/slang/gas"
+   "hook": "jerseys",
+   "src": "https://www.merriam-webster.com/slang/gas",
+   "d": 2
   },
   {
    "w": "chat",
    "means": "Your online audience",
    "ex": "The striker asked “chat, is this real?” after scoring a hat trick",
-   "src": "https://www.merriam-webster.com/slang/chat"
+   "hook": "hat trick",
+   "src": "https://www.merriam-webster.com/slang/chat",
+   "d": 2
   },
   {
    "w": "standing on business",
    "means": "Doing what you said",
    "ex": "The captain promised a goal and scored, standing on business",
-   "src": "https://www.merriam-webster.com/dictionary/stand%20on%20business"
+   "hook": "promised",
+   "src": "https://www.merriam-webster.com/dictionary/stand%20on%20business",
+   "d": 2
   },
   {
    "w": "cringe",
    "means": "Awkward, embarrassing",
    "ex": "Dad dancing on the sideline was cringe",
-   "src": "https://www.merriam-webster.com/dictionary/cringe"
+   "hook": "sideline",
+   "src": "https://www.merriam-webster.com/dictionary/cringe",
+   "d": 1
   },
   {
    "w": "spooky season",
    "means": "The weeks before Halloween",
    "ex": "The team wore orange socks to practice for spooky season",
-   "src": "https://www.merriam-webster.com/slang/spooky-season"
+   "hook": "orange socks",
+   "src": "https://www.merriam-webster.com/slang/spooky-season",
+   "d": 1
   },
   {
    "w": "buff",
    "means": "Make stronger",
    "ex": "An extra fitness day each week will buff the team’s speed",
-   "src": "https://www.merriam-webster.com/slang/buff"
+   "hook": "fitness",
+   "src": "https://www.merriam-webster.com/slang/buff",
+   "d": 1
   },
   {
    "w": "crine",
    "means": "Crying (laughing)",
    "ex": "Everyone was crine when Grandpa cheered for the wrong team",
-   "src": "https://www.merriam-webster.com/slang/crine"
+   "hook": "wrong team",
+   "src": "https://www.merriam-webster.com/slang/crine",
+   "d": 3
   },
   {
    "w": "Mary Sue",
    "means": "A too-perfect character",
    "ex": "The striker in the soccer movie never misses and is a Mary Sue",
-   "src": "https://www.merriam-webster.com/slang/mary-sue"
+   "hook": "soccer movie",
+   "src": "https://www.merriam-webster.com/slang/mary-sue",
+   "d": 3
   },
   {
    "w": "smol",
    "means": "Small and cute",
    "ex": "The new team mascot puppy is smol",
-   "src": "https://www.merriam-webster.com/slang/smol"
+   "hook": "mascot",
+   "src": "https://www.merriam-webster.com/slang/smol",
+   "d": 1
   },
   {
    "w": "flop era",
    "means": "A not-so-great stretch",
    "ex": "After five losses in a row, the team is in a flop era",
-   "src": "https://www.merriam-webster.com/slang/flop-era"
+   "hook": "five losses",
+   "src": "https://www.merriam-webster.com/slang/flop-era",
+   "d": 1
   },
   {
    "w": "peak",
    "means": "The absolute best",
    "ex": "Pizza after a tournament win is peak",
-   "src": "https://www.merriam-webster.com/slang/peak"
+   "hook": "pizza",
+   "src": "https://www.merriam-webster.com/slang/peak",
+   "d": 1
   },
   {
    "w": "sleep on",
    "means": "Underrate",
    "ex": "Do not sleep on the quiet defender who never loses a tackle",
-   "src": "https://www.merriam-webster.com/slang/sleep-on"
+   "hook": "tackle",
+   "src": "https://www.merriam-webster.com/slang/sleep-on",
+   "d": 1
   },
   {
    "w": "birb",
    "means": "A bird, said cutely",
    "ex": "A small birb landed on the crossbar during the penalty",
-   "src": "https://www.merriam-webster.com/slang/birb"
+   "hook": "crossbar",
+   "src": "https://www.merriam-webster.com/slang/birb",
+   "d": 1
   },
   {
    "w": "bias",
    "means": "Your favorite K-pop idol",
    "ex": "The goalie’s bias is the K-pop singer on her water bottle",
-   "src": "https://www.merriam-webster.com/slang/bias"
+   "hook": "water bottle",
+   "src": "https://www.merriam-webster.com/slang/bias",
+   "d": 2
   },
   {
    "w": "canon event",
    "means": "A moment that shapes you",
    "ex": "Getting hit in the face by the ball once is a canon event",
-   "src": "https://www.merriam-webster.com/slang/canon-event"
+   "hook": "face",
+   "src": "https://www.merriam-webster.com/slang/canon-event",
+   "d": 2
   },
   {
    "w": "chalked",
    "means": "Doomed, hopeless",
    "ex": "Down 6–0 at halftime, the team was chalked",
-   "src": "https://www.merriam-webster.com/slang/chalked"
+   "hook": "down 6–0",
+   "src": "https://www.merriam-webster.com/slang/chalked",
+   "d": 2
   },
   {
    "w": "clout",
    "means": "Fame and attention",
    "ex": "The striker only does trick shots for the clout",
-   "src": "https://www.merriam-webster.com/slang/clout"
+   "hook": "trick shots",
+   "src": "https://www.merriam-webster.com/slang/clout",
+   "d": 1
   },
   {
    "w": "cottagecore",
    "means": "Cozy country-life style",
    "ex": "Grandma’s picnic of bread and wildflowers is very cottagecore",
-   "src": "https://www.merriam-webster.com/slang/cottagecore"
+   "hook": "picnic",
+   "src": "https://www.merriam-webster.com/slang/cottagecore",
+   "d": 2
   },
   {
    "w": "do numbers",
    "means": "Get lots of views",
    "ex": "The video of the goalie’s save will do numbers",
-   "src": "https://www.merriam-webster.com/slang/do-numbers"
+   "hook": "video",
+   "src": "https://www.merriam-webster.com/slang/do-numbers",
+   "d": 2
   },
   {
    "w": "brick",
    "means": "Freezing cold",
    "ex": "At 30 degrees, Saturday’s game will be brick",
-   "src": "https://www.merriam-webster.com/slang/brick"
+   "hook": "30 degrees",
+   "src": "https://www.merriam-webster.com/slang/brick",
+   "d": 3
   },
   {
    "w": "Gen Z stare",
    "means": "A blank, silent stare",
    "ex": "The team gave the ref a Gen Z stare",
-   "src": "https://www.merriam-webster.com/slang/gen-z-stare"
+   "hook": "ref",
+   "src": "https://www.merriam-webster.com/slang/gen-z-stare",
+   "d": 2
   },
   {
    "w": "girl dinner",
    "means": "A snack-plate dinner",
    "ex": "Mom had leftover orange slices and crackers for girl dinner",
-   "src": "https://www.merriam-webster.com/slang/girl-dinner"
+   "hook": "crackers",
+   "src": "https://www.merriam-webster.com/slang/girl-dinner",
+   "d": 1
   },
   {
    "w": "girlypop",
    "means": "Cute name for a friend",
    "ex": "The captain greeted the new player with “Hi, girlypop”",
-   "src": "https://www.merriam-webster.com/slang/girlypop"
+   "hook": "new player",
+   "src": "https://www.merriam-webster.com/slang/girlypop",
+   "d": 2
   },
   {
    "w": "has entered the chat",
    "means": "Just showed up",
    "ex": "Kickoff is in one minute, and rain has entered the chat",
-   "src": "https://www.merriam-webster.com/slang/has-entered-the-chat"
+   "hook": "rain",
+   "src": "https://www.merriam-webster.com/slang/has-entered-the-chat",
+   "d": 1
   },
   {
    "w": "hold the L",
    "means": "Admit you lost",
    "ex": "The team lost fair and square, so it will hold the L",
-   "src": "https://www.merriam-webster.com/slang/hold-the-l"
+   "hook": "fair",
+   "src": "https://www.merriam-webster.com/slang/hold-the-l",
+   "d": 1
   },
   {
    "w": "IJBOL",
    "means": "I just burst out laughing",
    "ex": "The goalie texted IJBOL after Dad slipped on the sideline",
-   "src": "https://www.merriam-webster.com/slang/ijbol"
+   "hook": "slipped",
+   "src": "https://www.merriam-webster.com/slang/ijbol",
+   "d": 3
   },
   {
    "w": "keep it a buck",
    "means": "Be totally honest",
    "ex": "Grandma had to keep it a buck: that penalty was bad",
-   "src": "https://www.merriam-webster.com/slang/keep-it-a-buck"
+   "hook": "Grandma",
+   "src": "https://www.merriam-webster.com/slang/keep-it-a-buck",
+   "d": 3
   },
   {
    "w": "kiki",
    "means": "A fun, gossipy hangout",
    "ex": "Two teammates had a 40-minute kiki in the carpool",
-   "src": "https://www.merriam-webster.com/slang/kiki"
+   "hook": "40-minute",
+   "src": "https://www.merriam-webster.com/slang/kiki",
+   "d": 3
   },
   {
    "w": "lore",
    "means": "Someone’s backstory",
    "ex": "There is lore behind the goalie wearing the same socks to every game",
-   "src": "https://www.merriam-webster.com/slang/lore"
+   "hook": "same socks",
+   "src": "https://www.merriam-webster.com/slang/lore",
+   "d": 1
   },
   {
    "w": "lowkenuinely",
    "means": "Honestly (said casually)",
    "ex": "The defender lowkenuinely loved the 6 a.m. tournament",
-   "src": "https://www.merriam-webster.com/slang/lowkenuinely"
+   "hook": "6 a.m.",
+   "src": "https://www.merriam-webster.com/slang/lowkenuinely",
+   "d": 2
   },
   {
    "w": "out of pocket",
    "means": "Way out of line",
    "ex": "Arguing with the ref during the handshake line was out of pocket",
-   "src": "https://www.merriam-webster.com/slang/out-of-pocket"
+   "hook": "handshake",
+   "src": "https://www.merriam-webster.com/slang/out-of-pocket",
+   "d": 2
   },
   {
    "w": "plot armor",
    "means": "Can’t-lose story luck",
    "ex": "The striker never gets a yellow card because she has plot armor",
-   "src": "https://www.merriam-webster.com/slang/plot-armor"
+   "hook": "yellow card",
+   "src": "https://www.merriam-webster.com/slang/plot-armor",
+   "d": 3
   },
   {
    "w": "preppy",
    "means": "Bright, bows-and-smiles style",
    "ex": "Pastel bows on soccer cleats are very preppy",
-   "src": "https://www.merriam-webster.com/slang/preppy"
+   "hook": "pastel bows",
+   "src": "https://www.merriam-webster.com/slang/preppy",
+   "d": 1
   },
   {
    "w": "pressed",
    "means": "Upset, bothered",
    "ex": "Dad is still pressed about the ref’s call from last week",
-   "src": "https://www.merriam-webster.com/slang/pressed"
+   "hook": "ref’s call",
+   "src": "https://www.merriam-webster.com/slang/pressed",
+   "d": 1
   },
   {
    "w": "side quest",
    "means": "A fun detour from the plan",
    "ex": "Stopping for ice cream on the way to practice was a side quest",
-   "src": "https://www.merriam-webster.com/slang/side-quest"
+   "hook": "ice cream",
+   "src": "https://www.merriam-webster.com/slang/side-quest",
+   "d": 1
   },
   {
    "w": "SMH",
    "means": "Shaking my head",
    "ex": "Dad left the team’s ball bag at home again, SMH",
-   "src": "https://www.merriam-webster.com/slang/smh"
+   "hook": "ball bag",
+   "src": "https://www.merriam-webster.com/slang/smh",
+   "d": 1
   },
   {
    "w": "speed run",
    "means": "Do something super fast",
    "ex": "The team did a speed run of the cooldown in two minutes",
-   "src": "https://www.merriam-webster.com/slang/speed-run"
+   "hook": "cooldown",
+   "src": "https://www.merriam-webster.com/slang/speed-run",
+   "d": 1
   },
   {
    "w": "winter arc",
    "means": "Getting better over winter",
    "ex": "Juggling the ball 100 times every night is the striker’s winter arc",
-   "src": "https://www.merriam-webster.com/slang/winter-arc"
+   "hook": "juggling",
+   "src": "https://www.merriam-webster.com/slang/winter-arc",
+   "d": 2
   },
   {
    "w": "womp womp",
    "means": "Too bad (teasing)",
    "ex": "The field was closed because of rain, womp womp",
-   "src": "https://www.merriam-webster.com/slang/womp-womp"
+   "hook": "closed",
+   "src": "https://www.merriam-webster.com/slang/womp-womp",
+   "d": 1
   },
   {
    "w": "zoomies",
    "means": "A burst of crazy energy",
    "ex": "The team dog had the zoomies on the field during warm-ups",
-   "src": "https://www.merriam-webster.com/slang/zoomies"
+   "hook": "team dog",
+   "src": "https://www.merriam-webster.com/slang/zoomies",
+   "d": 1
   },
   {
    "w": "whimsy",
    "means": "Playful, quirky style",
    "ex": "A shin guard covered in stickers is pure whimsy",
-   "src": "https://www.merriam-webster.com/slang/whimsy"
+   "hook": "shin guard",
+   "src": "https://www.merriam-webster.com/slang/whimsy",
+   "d": 1
   },
   {
    "w": "blep",
    "means": "A pet’s tiny tongue-out",
    "ex": "The team dog did a blep at the coin toss",
-   "src": "https://www.merriam-webster.com/slang/blep"
+   "hook": "coin toss",
+   "src": "https://www.merriam-webster.com/slang/blep",
+   "d": 2
   },
   {
    "w": "it’s giving",
    "means": "It has the vibe of",
    "ex": "After three days of rain, it’s giving swamp on the field",
-   "src": "https://www.dictionary.com/culture/slang/its-giving"
+   "hook": "swamp",
+   "src": "https://www.dictionary.com/culture/slang/its-giving",
+   "d": 1
   },
   {
    "w": "slop",
    "means": "Low-quality AI junk online",
    "ex": "The AI-made highlight video of the game was slop",
-   "src": "https://www.dictionary.com/culture/slang/slop"
+   "hook": "highlight",
+   "src": "https://www.dictionary.com/culture/slang/slop",
+   "d": 1
   },
   {
    "w": "millennial pause",
    "means": "Pause before talking on video",
    "ex": "Mom’s video of the team cheer began with a millennial pause",
-   "src": "https://www.dictionary.com/culture/slang/millennial-pause"
+   "hook": "team cheer",
+   "src": "https://www.dictionary.com/culture/slang/millennial-pause",
+   "d": 2
   },
   {
    "w": "destim",
    "means": "Calm down after overload",
    "ex": "The goalie needed to destim after the loud shootout",
-   "src": "https://www.dictionary.com/culture/slang/destim"
+   "hook": "goalie",
+   "src": "https://www.dictionary.com/culture/slang/destim",
+   "d": 3
   },
   {
    "w": "girl grip",
    "means": "Holding stuff between fingers",
    "ex": "The captain carried four water bottles in a girl grip",
-   "src": "https://www.dictionary.com/culture/slang/girl-grip"
+   "hook": "bottles",
+   "src": "https://www.dictionary.com/culture/slang/girl-grip",
+   "d": 2
   },
   {
    "w": "let him cook",
    "means": "Let them do their thing",
    "ex": "The coach drew a strange new play, so the team will let him cook",
-   "src": "https://www.dictionary.com/culture/slang/let-him-cook"
+   "hook": "new play",
+   "src": "https://www.dictionary.com/culture/slang/let-him-cook",
+   "d": 1
   },
   {
    "w": "side character energy",
    "means": "Happy to support the star",
    "ex": "The defender who set up every goal had side character energy",
-   "src": "https://www.dictionary.com/culture/slang/side-character-energy"
+   "hook": "defender",
+   "src": "https://www.dictionary.com/culture/slang/side-character-energy",
+   "d": 2
   },
   {
    "w": "passenger princess",
    "means": "Always rides, never drives",
    "ex": "Grandpa never drives to games, so he is a passenger princess",
-   "src": "https://www.dictionary.com/culture/slang/passenger-princess"
+   "hook": "Grandpa",
+   "src": "https://www.dictionary.com/culture/slang/passenger-princess",
+   "d": 1
   },
   {
    "w": "steez",
    "means": "Effortless style",
    "ex": "The striker juggles during warm-ups with serious steez",
-   "src": "https://www.dictionary.com/culture/slang/steez"
+   "hook": "juggles",
+   "src": "https://www.dictionary.com/culture/slang/steez",
+   "d": 3
   },
   {
    "w": "soft life",
    "means": "A calm, easy life",
    "ex": "Grandma chose the soft life and watches games from a padded chair",
-   "src": "https://www.dictionary.com/culture/slang/soft-life"
+   "hook": "padded chair",
+   "src": "https://www.dictionary.com/culture/slang/soft-life",
+   "d": 2
   }
  ],
  "groups": [

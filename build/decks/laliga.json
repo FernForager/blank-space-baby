@@ -8,6 +8,7 @@
    "w": "Real Madrid",
    "means": "Betis won the league that same season",
    "ex": "Real Madrid beat Barcelona 8–2 in 1934–35, the biggest league Clásico win",
+   "hook": "Clásico",
    "k": "club",
    "src": "https://www.laliga.com/en-CA/news/the-history-of-elclasico-decade-by-decade",
    "d": 1
@@ -16,14 +17,16 @@
    "w": "FC Barcelona",
    "means": "They edged Real Madrid by 2 points",
    "ex": "FC Barcelona won the very first league title, in 1928–29",
+   "hook": "very first",
    "k": "club",
    "src": "https://www.laliga.com/noticias/todos-los-campeones-de-la-historia-de-laliga",
-   "d": 1
+   "d": 2
   },
   {
    "w": "Atlético de Madrid",
    "means": "Godín scored the vital goal",
    "ex": "Atlético de Madrid won the 2013–14 title with a last-day draw at Camp Nou",
+   "hook": "Camp Nou",
    "k": "club",
    "src": "https://www.laliga.com/en-GB/news/title-comparison-barcelona-vs-atletico-madrid",
    "d": 2
@@ -32,30 +35,34 @@
    "w": "Athletic Club",
    "means": "A club rule since 1912",
    "ex": "Athletic Club only field players born or trained in the Basque Country",
+   "hook": "Basque",
    "k": "club",
    "src": "https://www.laliga.com/en-US/news/five-things-you-may-not-know-about-athletic-club",
-   "d": 1
+   "d": 2
   },
   {
    "w": "Deportivo",
    "means": "Runners-up Barcelona were 5 behind",
    "ex": "Deportivo won their only league title in 1999–2000",
+   "hook": "1999–2000",
    "k": "club",
    "src": "https://www.laliga.com/noticias/todos-los-campeones-de-la-historia-de-laliga",
-   "d": 2
+   "d": 3
   },
   {
    "w": "Real Sociedad",
    "means": "In 1980–81 they tied Madrid on points",
    "ex": "Real Sociedad won back-to-back titles in 1980–81 and 1981–82",
+   "hook": "back-to-back",
    "k": "club",
    "src": "https://www.laliga.com/noticias/todos-los-campeones-de-la-historia-de-laliga",
-   "d": 2
+   "d": 3
   },
   {
    "w": "Real Betis",
    "means": "Real Madrid finished a point behind",
    "ex": "Real Betis won their only league title in 1934–35",
+   "hook": "1934–35",
    "k": "club",
    "src": "https://www.laliga.com/noticias/todos-los-campeones-de-la-historia-de-laliga",
    "d": 3
@@ -64,6 +71,7 @@
    "w": "Sevilla",
    "means": "Barcelona finished a point behind",
    "ex": "Sevilla won their only league title in 1945–46",
+   "hook": "1945–46",
    "k": "club",
    "src": "https://www.laliga.com/noticias/todos-los-campeones-de-la-historia-de-laliga",
    "d": 3
@@ -72,22 +80,25 @@
    "w": "Valencia",
    "means": "Their sixth title came in 2003–04",
    "ex": "Valencia won the league in 2001–02 and again two years later",
+   "hook": "2001–02",
    "k": "club",
    "src": "https://www.laliga.com/noticias/todos-los-campeones-de-la-historia-de-laliga",
-   "d": 2
+   "d": 3
   },
   {
    "w": "Espanyol",
    "means": "The other main club in the city",
    "ex": "Barcelona’s neighbors and derby rivals are Espanyol",
+   "hook": "Barcelona",
    "k": "club",
    "src": "https://www.laliga.com/en-GB/partidazos/el-derbi-de-barcelona",
-   "d": 1
+   "d": 2
   },
   {
    "w": "Villarreal",
    "means": "Ayoze Pérez scored 19 goals",
    "ex": "The 2024–25 Zarra Trophy went to a striker from Villarreal",
+   "hook": "Zarra Trophy",
    "k": "club",
    "src": "https://www.laliga.com/en-US/news/what-we-learned-from-laliga-ea-sports-this-week",
    "d": 3
@@ -96,6 +107,7 @@
    "w": "Levante",
    "means": "They went down in 2022",
    "ex": "Levante returned to the top flight in 2025 after three years away",
+   "hook": "top flight",
    "k": "club",
    "src": "https://www.laliga.com/en-US/news/what-we-learned-from-laliga-ea-sports-this-week",
    "d": 3
@@ -104,6 +116,7 @@
    "w": "Lionel Messi",
    "means": "Telmo Zarra is the top Spaniard",
    "ex": "Lionel Messi is the all-time top scorer in LaLiga history",
+   "hook": "top scorer",
    "k": "player",
    "src": "https://www.laliga.com/en-GB/news/laliga-remembers-90-years-of-professional-football-history",
    "d": 1
@@ -112,6 +125,7 @@
    "w": "Telmo Zarra",
    "means": "Six Pichichis, all with Athletic",
    "ex": "Telmo Zarra scored 251 LaLiga goals, the most by any Spaniard",
+   "hook": "Spaniard",
    "k": "player",
    "src": "https://www.laliga.com/en-GB/news/do-you-know-the-story-behind-the-pichichi-award",
    "d": 3
@@ -120,6 +134,7 @@
    "w": "Pichichi",
    "means": "He died in 1922, aged 29",
    "ex": "LaLiga’s top-scorer award honors Rafael Moreno, an Athletic striker known as Pichichi",
+   "hook": "top-scorer",
    "k": "player",
    "src": "https://www.laliga.com/en-GB/news/do-you-know-the-story-behind-the-pichichi-award",
    "d": 2
@@ -128,6 +143,7 @@
    "w": "Ricardo Zamora",
    "means": "Nicknamed “El Divino”",
    "ex": "The keeper who concedes fewest wins a trophy named for Ricardo Zamora",
+   "hook": "keeper",
    "k": "player",
    "src": "https://www.laliga.com/en-GB/news/espanyol-pay-tribute-to-famous-former-keeper-ricardo-zamora",
    "d": 2
@@ -136,6 +152,7 @@
    "w": "Jan Oblak",
    "means": "Atlético’s keeper did it in 2024–25",
    "ex": "Jan Oblak was the first player to win the Zamora Trophy six times",
+   "hook": "Zamora",
    "k": "player",
    "src": "https://www.laliga.com/en-US/news/what-we-learned-from-laliga-ea-sports-this-week",
    "d": 2
@@ -144,55 +161,62 @@
    "w": "Lamine Yamal",
    "means": "16 goals and 12 assists",
    "ex": "Barça’s No. 10 Lamine Yamal was Player of the Season for 2025–26",
+   "hook": "No. 10",
    "k": "player",
    "src": "https://www.laliga.com/en-GB/news/lamine-yamal-ea-sports-laliga-player-of-the-season-2025-2026",
-   "d": 1
+   "d": 2
   },
   {
    "w": "Kylian Mbappé",
    "means": "Four more than Lewandowski",
    "ex": "Kylian Mbappé won the Pichichi with 31 goals in his first Spanish season",
+   "hook": "31 goals",
    "k": "player",
    "src": "https://www.laliga.com/en-US/news/what-we-learned-from-laliga-ea-sports-this-week",
-   "d": 1
+   "d": 2
   },
   {
    "w": "Cristiano Ronaldo",
    "means": "He scored 22 against Atlético",
    "ex": "Cristiano Ronaldo is the top scorer in Madrid derby history",
+   "hook": "Madrid derby",
    "k": "player",
    "src": "https://www.laliga.com/en-GB/partidazos/el-derbi-de-madrid",
-   "d": 1
+   "d": 2
   },
   {
    "w": "Koke",
    "means": "Atlético’s record derby man",
    "ex": "Koke has played in more Madrid derbies than anyone",
+   "hook": "Madrid",
    "k": "player",
    "src": "https://www.laliga.com/en-GB/partidazos/el-derbi-de-madrid",
-   "d": 2,
+   "d": 3,
    "current": true
   },
   {
    "w": "Sergio Busquets",
    "means": "Ramos and Messi had 45 each",
    "ex": "Sergio Busquets played in a record 48 Clásicos",
+   "hook": "Clásicos",
    "k": "player",
    "src": "https://www.laliga.com/en-GB/partidazos/el-clasico",
-   "d": 2
+   "d": 3
   },
   {
    "w": "Ronaldinho",
    "means": "His second solo goal made it 3–0",
    "ex": "In 2005, Real Madrid fans gave Barça’s Ronaldinho a standing ovation",
+   "hook": "ovation",
    "k": "player",
    "src": "https://www.laliga.com/en-CA/news/the-history-of-elclasico-decade-by-decade",
-   "d": 1
+   "d": 2
   },
   {
    "w": "Alfredo Di Stéfano",
    "means": "He won five straight European Cups",
    "ex": "Barcelona thought they had signed Alfredo Di Stéfano in 1953, but Madrid got him",
+   "hook": "Barcelona",
    "k": "player",
    "src": "https://www.laliga.com/en-CA/news/the-history-of-elclasico-decade-by-decade",
    "d": 2
@@ -201,22 +225,25 @@
    "w": "Joaquín",
    "means": "Tied with Andoni Zubizarreta",
    "ex": "Real Betis legend Joaquín shares the record for most top-flight games",
+   "hook": "Real Betis",
    "k": "player",
    "src": "https://www.laliga.com/en-US/news/five-things-you-may-not-know-about-real-betis",
-   "d": 2
+   "d": 3
   },
   {
    "w": "Luka Modrić",
    "means": "He also won the 2018 Ballon d’Or",
    "ex": "Luka Modrić left Real Madrid in 2025 after 13 seasons and 28 trophies",
+   "hook": "28 trophies",
    "k": "player",
    "src": "https://www.laliga.com/en-US/news/what-we-learned-from-laliga-ea-sports-this-week",
-   "d": 1
+   "d": 2
   },
   {
    "w": "Xavi Hernández",
    "means": "36 games, 31 of them in the league",
    "ex": "Xavi Hernández has played in the most Barcelona derbies",
+   "hook": "derbies",
    "k": "player",
    "src": "https://www.laliga.com/en-GB/partidazos/el-derbi-de-barcelona",
    "d": 2
@@ -225,6 +252,7 @@
    "w": "Johan Cruyff",
    "means": "Barça’s famous “Dream Team”",
    "ex": "Johan Cruyff coached Barça to four straight titles, from 1991 to 1994",
+   "hook": "Barça",
    "k": "coach",
    "src": "https://www.laliga.com/en-CA/news/the-history-of-elclasico-decade-by-decade",
    "d": 2
@@ -233,38 +261,43 @@
    "w": "Pep Guardiola",
    "means": "Barça’s 2009 “sextete”",
    "ex": "In 2009, Pep Guardiola’s Barcelona won all six trophies it played for",
+   "hook": "six trophies",
    "k": "coach",
    "src": "https://www.laliga.com/noticias/mejores-clasicos-historia-laliga-real-madrid-barcelona",
-   "d": 1
+   "d": 2
   },
   {
    "w": "Diego Simeone",
    "means": "Known to fans as “Cholo”",
    "ex": "Diego Simeone led Atlético to league titles in 2013–14 and 2020–21",
+   "hook": "Atlético",
    "k": "coach",
    "src": "https://www.laliga.com/en-GB/news/title-comparison-barcelona-vs-atletico-madrid",
-   "d": 1
+   "d": 2
   },
   {
    "w": "Hansi Flick",
    "means": "His Barça got 94 points in 2025–26",
    "ex": "Hansi Flick was Coach of the Year in both 2024–25 and 2025–26",
+   "hook": "Coach",
    "k": "coach",
    "src": "https://www.laliga.com/en-GB/news/hansi-flick-laliga-ea-sports-coach-of-the-year-2025-2026",
-   "d": 1
+   "d": 2
   },
   {
    "w": "Zinedine Zidane",
    "means": "He was 43 when he took over",
    "ex": "Zinedine Zidane took over from Rafa Benítez at Real Madrid in 2016",
+   "hook": "Rafa Benítez",
    "k": "coach",
    "src": "https://www.laliga.com/en-GB/news/zinedine-zidane-appointed-new-manager-of-real-madrid",
-   "d": 1
+   "d": 2
   },
   {
    "w": "Miguel Muñoz",
    "means": "The all-time record for titles",
    "ex": "Miguel Muñoz has won more league titles than any other coach",
+   "hook": "titles",
    "k": "coach",
    "src": "https://www.laliga.com/en-GB/news/laliga-remembers-90-years-of-professional-football-history",
    "d": 3
@@ -273,6 +306,7 @@
    "w": "Luis Aragonés",
    "means": "LaLiga’s record for games in charge",
    "ex": "Luis Aragonés has coached more LaLiga games than anyone",
+   "hook": "LaLiga games",
    "k": "coach",
    "src": "https://www.laliga.com/en-GB/news/laliga-remembers-90-years-of-professional-football-history",
    "d": 3,
@@ -282,6 +316,7 @@
    "w": "Xabi Alonso",
    "means": "He played for Real Madrid, 2009–14",
    "ex": "Xabi Alonso replaced Carlo Ancelotti as Real Madrid coach in 2025",
+   "hook": "Ancelotti",
    "k": "coach",
    "src": "https://www.laliga.com/en-US/news/what-we-learned-from-laliga-ea-sports-this-week",
    "d": 2
@@ -290,6 +325,7 @@
    "w": "José Mourinho",
    "means": "His side won 2–1 at Barça next season",
    "ex": "Barcelona beat José Mourinho’s Real Madrid 5–0 in November 2010",
+   "hook": "5–0",
    "k": "coach",
    "src": "https://www.laliga.com/noticias/mejores-clasicos-historia-laliga-real-madrid-barcelona",
    "d": 2
@@ -298,30 +334,34 @@
    "w": "Bernabéu",
    "means": "Real Madrid’s home since 1947",
    "ex": "Real Madrid play their home games at the Santiago Bernabéu",
+   "hook": "Real Madrid",
    "k": "stadium",
    "src": "https://www.laliga.com/en-GB/clubs/real-madrid",
-   "d": 1
+   "d": 2
   },
   {
    "w": "Metropolitano",
    "means": "Atlético’s home in Madrid",
    "ex": "Atlético play their home games at the Riyadh Air Metropolitano",
+   "hook": "Atlético",
    "k": "stadium",
    "src": "https://www.laliga.com/en-GB/clubs/atletico-de-madrid",
-   "d": 1
+   "d": 2
   },
   {
    "w": "San Mamés",
    "means": "Rebuilt on the same site",
    "ex": "Athletic Club’s home, San Mamés, reopened in 2013 with 53,000 seats",
+   "hook": "Athletic",
    "k": "stadium",
    "src": "https://www.laliga.com/en-US/news/five-things-you-may-not-know-about-athletic-club",
-   "d": 1
+   "d": 3
   },
   {
    "w": "Mestalla",
    "means": "LaLiga’s most used stadium",
    "ex": "Valencia’s Mestalla has hosted more LaLiga games than any other ground",
+   "hook": "Valencia",
    "k": "stadium",
    "src": "https://www.laliga.com/en-GB/news/laliga-remembers-90-years-of-professional-football-history",
    "d": 3
@@ -330,14 +370,16 @@
    "w": "Sánchez-Pizjuán",
    "means": "Named for a former club president",
    "ex": "Sevilla play their home games at the Ramón Sánchez-Pizjuán",
+   "hook": "Sevilla",
    "k": "stadium",
    "src": "https://www.laliga.com/en-GB/clubs/sevilla-fc",
-   "d": 2
+   "d": 3
   },
   {
    "w": "El Molinón",
    "means": "Named for an old mill on the site",
    "ex": "Real Sporting’s El Molinón is the oldest stadium in Spain",
+   "hook": "Sporting",
    "k": "stadium",
    "src": "https://www.laliga.com/en-GB/news/ten-things-you-may-not-know-about-the-molinon",
    "d": 3
@@ -346,23 +388,26 @@
    "w": "Balaídos",
    "means": "Sponsor name: ABANCA Balaídos",
    "ex": "Celta play their home games at Balaídos in Vigo",
+   "hook": "Celta",
    "k": "stadium",
    "src": "https://www.laliga.com/en-GB/clubs/rc-celta",
-   "d": 2
+   "d": 3
   },
   {
    "w": "36",
    "means": "The record, ahead of Barcelona",
    "ex": "Real Madrid have won 36 league titles",
+   "hook": "Real Madrid",
    "k": "number",
    "src": "https://www.laliga.com/en-GB/news/comparison-real-madrid-fc-barcelona-titles",
-   "d": 1,
+   "d": 2,
    "current": true
   },
   {
    "w": "29",
    "means": "Their latest came in 2025–26",
    "ex": "FC Barcelona have won 29 league titles",
+   "hook": "FC Barcelona",
    "k": "number",
    "src": "https://www.laliga.com/en-GB/news/comparison-real-madrid-fc-barcelona-titles",
    "d": 2,
@@ -372,6 +417,7 @@
    "w": "9",
    "means": "Real Betis are one of them",
    "ex": "Only 9 clubs have ever won the league title",
+   "hook": "league title",
    "k": "number",
    "src": "https://www.laliga.com/en-US/news/five-things-you-may-not-know-about-real-betis",
    "d": 2,
@@ -381,30 +427,34 @@
    "w": "100",
    "means": "Barcelona matched it a year later",
    "ex": "Real Madrid set a points record of 100 in 2011–12",
+   "hook": "points",
    "k": "number",
    "src": "https://www.laliga.com/en-GB/news/what-has-been-the-points-record-of-liga-bbva-teams-in-just-one-season",
-   "d": 1
+   "d": 2
   },
   {
    "w": "50",
    "means": "No one else has matched it",
    "ex": "Messi scored 50 league goals in 2011–12, a single-season record",
+   "hook": "Messi",
    "k": "number",
    "src": "https://www.laliga.com/en-GB/news/messis-prodigious-decade",
-   "d": 1
+   "d": 2
   },
   {
    "w": "622",
    "means": "Joaquín and Andoni Zubizarreta",
    "ex": "The record for most top-flight games is 622, shared by two players",
+   "hook": "two players",
    "k": "number",
    "src": "https://www.laliga.com/en-US/news/five-things-you-may-not-know-about-real-betis",
-   "d": 3
+   "d": 2
   },
   {
    "w": "19",
    "means": "A first in LaLiga history",
    "ex": "Barcelona won all 19 of their home games in 2025–26",
+   "hook": "home games",
    "k": "number",
    "src": "https://www.laliga.com/en-GB/news/hansi-flick-laliga-ea-sports-coach-of-the-year-2025-2026",
    "d": 2
@@ -413,46 +463,52 @@
    "w": "754",
    "means": "More than 8 matchdays",
    "ex": "Keeper Claudio Bravo went 754 minutes without conceding in 2014–15",
+   "hook": "Bravo",
    "k": "number",
    "src": "https://www.laliga.com/en-GB/news/laliga-of-records",
-   "d": 3
+   "d": 2
   },
   {
    "w": "1929",
    "means": "The first match was at Sarrià",
    "ex": "The first LaLiga season kicked off in 1929",
+   "hook": "first LaLiga",
    "k": "year",
    "src": "https://www.laliga.com/en-GB/news/laliga-remembers-90-years-of-professional-football-history",
-   "d": 1
+   "d": 3
   },
   {
    "w": "1899",
    "means": "Their stadium: Spotify Camp Nou",
    "ex": "FC Barcelona were founded in 1899",
+   "hook": "FC Barcelona",
    "k": "year",
    "src": "https://www.laliga.com/en-GB/clubs/fc-barcelona",
-   "d": 2
+   "d": 3
   },
   {
    "w": "1902",
    "means": "The Bernabéu opened in 1947",
    "ex": "Real Madrid were founded in 1902",
+   "hook": "founded",
    "k": "year",
    "src": "https://www.laliga.com/en-GB/clubs/real-madrid",
-   "d": 2
+   "d": 3
   },
   {
    "w": "1898",
    "means": "On July 18",
    "ex": "Athletic Club were founded in 1898",
+   "hook": "Athletic",
    "k": "year",
    "src": "https://www.laliga.com/en-US/news/five-things-you-may-not-know-about-athletic-club",
-   "d": 2
+   "d": 3
   },
   {
    "w": "1903",
    "means": "Home: the Riyadh Air Metropolitano",
    "ex": "Atlético de Madrid were founded in 1903",
+   "hook": "founded",
    "k": "year",
    "src": "https://www.laliga.com/en-GB/clubs/atletico-de-madrid",
    "d": 3
@@ -461,9 +517,10 @@
    "w": "1959",
    "means": "Real Madrid won 1–0 at home",
    "ex": "Spain’s first televised soccer match was a Clásico in 1959",
+   "hook": "televised",
    "k": "year",
    "src": "https://www.laliga.com/en-CA/news/the-history-of-elclasico-decade-by-decade",
-   "d": 3
+   "d": 2
   }
  ],
  "groups": [

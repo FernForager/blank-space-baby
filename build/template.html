@@ -4,16 +4,15 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Pixelify+Sans:wght@500;600;700&display=swap">
 <style>
 /* The phone is the cabinet: marquee sign, CRT screen in a black bezel, push-buttons on a black control panel.
-   It opens straight on category select, and the sign powers on.
-   Category select: ten named keys on the panel, the boss pentagon on the screen. Each beaten category's
-   pentagon flies up from its key into a slot around the boss, and five wake it.
-   Play: 5 right in a row beats a category, one miss ends the run. */
+   The daily: everyone gets the same 18 cards a day, 6 white (easy), 6 yellow card (medium) and 6 red card (hard).
+   Tap any tile. A right answer drops a pentagon chip into the ball, every 6 chips is a goal, one miss ends the day.
+   Two board layouts while Morg compares them: the honeycomb (data-l="hex") and a simpler grid (data-l="grid"). */
 :root {
   --body: #F2EDE4; --body-dark: #00843D;   /* locked palette: warm white page, Celtic Green trim */
-  --bezel: #0D0F0E; --screen: #07130C; --glow: #5CF09A; --text: #EAFBF0; --dim: #7FAF92;
-  --hot: #FF8A3D; --gold: #F7C948;
+  --bezel: #0D0F0E; --screen: #07130C; --glow: #5CF09A; --text: #EAFBF0; --dim: #7FAF92; --gold: #F7C948;
   --btn: #F6F0E2; --btn-edge: #CBBFA4; --btn-ink: #1E2A3B;
   --ok: #45BE76; --ok-edge: #00843D; --no: #FF5A5F; --no-edge: #B02A35;
+  --c1: #FFFFFF; --c1-edge: #C9C2B4; --c2: #F7C948; --c2-edge: #B48A1C; --c3: #D52B1E; --c3-edge: #8C170F;   /* card colors: white, yellow card, red card */
   --pixel: "Press Start 2P", ui-monospace, monospace;
   --body-font: "Pixelify Sans", ui-rounded, "SF Pro Rounded", system-ui, sans-serif;
   color-scheme: dark;
@@ -42,59 +41,84 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .flick { animation: flick .28s steps(4); }
 @keyframes flick { 0% { filter: brightness(2.2) contrast(.6); } 50% { filter: brightness(.5); } 100% { filter: none; } }
 .view { display: none; flex: 1; min-height: 0; flex-direction: column; }
-.cab[data-v="select"] #v-select, .cab[data-v="play"] #v-play, .cab[data-v="boss"] #v-boss { display: flex; }
+.cab[data-v="board"] #v-board, .cab[data-v="play"] #v-play, .cab[data-v="end"] #v-end { display: flex; }
 .px { shape-rendering: crispEdges; flex: none; display: block; fill: currentColor; }
+.nb { white-space: nowrap; }
+.num { font-family: var(--pixel); font-weight: 400; font-size: .8em; letter-spacing: -.02em; }
 
-
-/* the answer, filled into the blank */
-.fill { color: var(--glow); text-shadow: 0 0 8px rgba(92,240,154,.7); }
-.missed .fill { color: #fff; text-shadow: 0 0 6px rgba(255,255,255,.35); padding-bottom: 3px;
-  background: repeating-linear-gradient(90deg, var(--glow) 0 0.42em, transparent 0.42em 0.62em) left bottom / 100% 3px no-repeat; }   /* a miss still shows the right answer, without the win glow */
-/* select: the boss pentagon in the middle, and a slot around it for each earned pentagon */
-#v-select { container-type: size; }
-.board { position: relative; flex: none; width: min(100cqw, 100cqh); height: min(100cqw, 100cqh); }
-.board .p { position: absolute; width: 21%; transform: translate(-50%, -50%); color: #3E7A57; filter: drop-shadow(0 0 3px rgba(92,240,154,.35)); }
+/* the ball: six pentagon chip slots, five around and the center last. Like seams on a real ball, every outer
+   pentagon turns a flat side to the center, and the center points down so its flat sides face back */
+.ball { position: relative; flex: none; aspect-ratio: 1; }
+.ball .p { position: absolute; width: 21%; transform: translate(-50%, -50%); color: #3E7A57; filter: drop-shadow(0 0 3px rgba(92,240,154,.35)); }
 .pg { display: block; width: 100%; height: auto; overflow: visible; transform-origin: 50% 54%; }   /* turn around the shape's own center */
 .pg polygon { fill: currentColor; stroke: currentColor; stroke-width: 2; stroke-linejoin: round; }
 .pg.o polygon { fill: none; stroke-width: 6; }
-.board .p.on { color: var(--text); filter: drop-shadow(0 0 5px rgba(92,240,154,.8)); }   /* a soccer ball: one color, no rainbow */
-.board .p.on.pending { visibility: hidden; }
-.board .p.new svg { animation: bump .45s steps(3); }   /* animate the shape, not the slot, so it stays centered */
-.board .lock { position: absolute; left: 50%; top: 53%; transform: translate(-50%, -50%); color: #3E7A57; }
-.board.awake .boss-p { color: var(--text); filter: drop-shadow(0 0 6px rgba(92,240,154,.9)) drop-shadow(0 0 14px rgba(92,240,154,.5)); }
-.board.awake .boss-p svg { animation: bob 1.2s steps(2) infinite; }
-.board.awake .lock { display: none; }
-.flyer .pg { transition: transform .75s cubic-bezier(.3, .1, .2, 1); }
-.flyer { position: fixed; z-index: 10; pointer-events: none; transition: transform .75s cubic-bezier(.3, .1, .2, 1); filter: drop-shadow(0 0 6px rgba(92,240,154,.8)); color: var(--text); }
-/* the boss lair */
-#v-select, #v-boss { align-items: center; justify-content: center; gap: 22px; }
-.boss { position: relative; color: #3A5546; }
-.boss.awake { color: var(--no); filter: drop-shadow(0 0 8px rgba(255,90,95,.8)); animation: bob 1.2s steps(2) infinite; }
-.boss .lock { position: absolute; left: 50%; bottom: -6px; transform: translateX(-50%); color: var(--gold); filter: drop-shadow(0 0 5px rgba(247,201,72,.7)); }
-.boss.awake .lock { display: none; }
+.ball .p.on { color: var(--text); filter: drop-shadow(0 0 5px rgba(92,240,154,.8)); }
+.ball .p.pending { visibility: hidden; }
+.ball .p.new svg { animation: bump .45s steps(3); }   /* animate the shape, not the slot, so it stays centered */
+.ball.goal .p { color: var(--text); filter: drop-shadow(0 0 6px rgba(92,240,154,.9)) drop-shadow(0 0 14px rgba(92,240,154,.5)); }
+.ball.goal { animation: bob .3s steps(2) 3; }
+.flyer { position: fixed; z-index: 10; pointer-events: none; transition: transform .6s cubic-bezier(.3, .1, .2, 1); filter: drop-shadow(0 0 6px rgba(92,240,154,.8)); color: var(--text); transform-origin: 0 0; }
+.flyer .pg { transition: transform .6s cubic-bezier(.3, .1, .2, 1); }
 @keyframes bob { 50% { transform: translateY(-4px); } }
-.pips i.new { animation: flick .5s steps(5) 2; }
-#v-boss .boss { color: var(--no); filter: drop-shadow(0 0 10px rgba(255,90,95,.9)); animation: bob .6s steps(2) infinite; }
+@keyframes bump { 50% { transform: scale(1.5); } }
+
+/* goals: three lamps, lit one by one */
+.lamps { display: flex; justify-content: center; gap: 12px; }
+.lamp { display: flex; align-items: center; justify-content: center; color: #2F5A41; }
+.lamp.on { color: var(--text); filter: drop-shadow(0 0 6px rgba(92,240,154,.85)); }
+.lamp.new { animation: bump .45s steps(3); }
+
+/* the board: the honeycomb on the screen */
+#v-board { container-type: size; align-items: center; justify-content: center; }
+.hive { position: relative; z-index: 3; flex: none; width: min(100cqw, 92.376cqh); aspect-ratio: 0.92376; container-type: inline-size; }   /* flat-top hexes: widest through the middle, where a word sits */
+.cell { position: absolute; width: 25%; height: 20%; box-sizing: border-box; margin: 0; padding: 0 2.25cqw; border: 0; transform: translate(-50%, -50%) scale(.95);
+  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%); display: flex; flex-direction: column; align-items: center; justify-content: center;
+  font: inherit; font-size: 4.4cqw; line-height: 1.04; text-align: center; color: var(--btn-ink); cursor: pointer; }
+.cell.c1 { background: var(--c1); } .cell.c2 { background: var(--c2); } .cell.c3 { background: var(--c3); color: #fff; }
+.cell:active:not(:disabled) { filter: brightness(.85); }
+.cell.core { background: #0E2418; cursor: default; padding: 0; }
+.cell.core .ball { width: 70%; }
+.cell.done, .cell.miss { background: #12291B; color: var(--glow); }
+.cell.miss { color: var(--no); }
+.cab[data-l="hex"] .screen { padding-left: 8px; padding-right: 8px; }
+.cab[data-l="hex"][data-v="play"] .screen, .cab[data-l="hex"][data-v="end"] .screen { padding-left: 16px; padding-right: 16px; }
+
+/* the board: the grid, as keys on the panel, with the ball on the screen */
+.pitch { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8%; width: 100%; height: 100%; }
+.pitch .ball { width: min(100cqw, calc(100cqh - 44px)); }
 
 /* play */
 .hud { display: flex; justify-content: space-between; align-items: center; flex: none; height: 24px; position: relative; z-index: 3; }
-.hud .lvl { display: flex; align-items: center; gap: 10px; color: var(--glow); filter: drop-shadow(0 0 4px rgba(92,240,154,.6)); }
+.hud .lvl { display: flex; align-items: center; gap: 10px; }
+.chip-card { width: 13px; height: 18px; border-radius: 2px; box-shadow: 0 0 6px rgba(255,255,255,.25); }
+.chip-card.c1 { background: var(--c1); } .chip-card.c2 { background: var(--c2); } .chip-card.c3 { background: var(--c3); }
 .pips { display: flex; gap: 5px; }
 .pips i { width: 10px; height: 10px; box-shadow: inset 0 0 0 2px #2C4A39; }
 .pips i.on { background: var(--glow); box-shadow: 0 0 6px var(--glow); }
 .pips i.bump { animation: bump .35s steps(3); }
-@keyframes bump { 50% { transform: scale(1.5); } }
-.pips.big { gap: 9px; } .pips.big i { width: 18px; height: 18px; }
-.home { width: 44px; height: 44px; margin: -10px -12px -10px 0; padding: 0; border: 0; background: none; color: var(--dim); display: flex; align-items: center; justify-content: center; cursor: pointer; }
+.hud .lamps { gap: 6px; }
 .face { flex: 1; min-height: 0; display: flex; flex-direction: column; justify-content: center; gap: 8px; }
 .sentence { margin: 0; font-size: 26px; line-height: 1.22; text-wrap: balance; text-shadow: 0 0 6px rgba(234,251,240,.25); }
 .sentence.long { font-size: 23px; } .sentence.longer { font-size: 21px; }
-.nb { white-space: nowrap; }
-.num { font-family: var(--pixel); font-weight: 400; font-size: .8em; letter-spacing: -.02em; }
 .blank { display: inline-block; width: 2.9em; height: 4px; margin: 0 0.05em; vertical-align: -0.16em;
   background: repeating-linear-gradient(90deg, var(--glow) 0 0.42em, transparent 0.42em 0.62em); box-shadow: 0 0 6px rgba(92,240,154,.6); animation: blink 1.05s steps(1) infinite; }
 @keyframes blink { 50% { opacity: .15; } }
-.big-icon { color: var(--glow); filter: drop-shadow(0 0 10px rgba(92,240,154,.9)); animation: bob .8s steps(2) infinite; }
+/* the answer, filled into the blank: glowing on a win, plain with a dashed underline on a miss */
+.fill { color: var(--glow); text-shadow: 0 0 8px rgba(92,240,154,.7); }
+.missed .fill { color: #fff; text-shadow: 0 0 6px rgba(255,255,255,.35); padding-bottom: 3px;
+  background: repeating-linear-gradient(90deg, var(--glow) 0 0.42em, transparent 0.42em 0.62em) left bottom / 100% 3px no-repeat; }
+
+/* the end of the day: the result, and the card that got you */
+#v-end { justify-content: center; gap: 18px; }
+.result { display: flex; flex-direction: column; align-items: center; gap: 12px; }
+.word { margin: 0; font-family: var(--pixel); font-weight: 400; font-size: 20px; line-height: 1.2; color: #fff; text-align: center;
+  text-shadow: 0 0 4px rgba(255,255,255,.6), 0 0 12px rgba(92,240,154,.6); }
+.lost { display: flex; flex-direction: column; gap: 10px; }
+.lost .sentence { font-size: 22px; } .lost .sentence.long { font-size: 20px; } .lost .sentence.longer { font-size: 19px; }
+.means { margin: 0; font-size: 18px; line-height: 1.2; color: #B8E6CA; font-weight: 500; }   /* the means line is the payoff, so it stays bright */
+#v-end .ball { width: min(62%, 60cqh); }
+#v-end { container-type: size; }
 
 /* the blinking go arrow, bottom right of the screen */
 .go { position: absolute; right: 12px; bottom: 12px; width: 44px; height: 44px; padding: 0; border: 0; background: none; color: var(--glow); cursor: pointer; z-index: 3;
@@ -105,22 +129,26 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .panel { flex: none; box-sizing: border-box; display: flex; margin-top: auto; border-radius: 18px; padding: 12px 12px 15px;
   background: linear-gradient(180deg, #1A1D1B 0%, #0D0F0E 100%); box-shadow: inset 0 2px 0 rgba(255,255,255,.08), inset 0 0 0 2px #222, 0 3px 0 var(--body-dark); }
 .pv { display: none; flex: 1; min-width: 0; }
-.cab[data-v="select"] #p-select, .cab[data-v="boss"] #p-select { display: grid; }
-.cab[data-v="play"] #choices, .cab[data-v="clear"] #choices { display: flex; }
-
-
+.cab[data-v="board"] #p-board, .cab[data-v="end"] #p-end, .cab[data-v="play"] #choices { display: flex; }
+.cab[data-l="grid"][data-v="board"] #p-board { display: grid; }
 .key { font: inherit; color: var(--btn-ink); border: 0; border-radius: 14px; background: var(--btn); box-shadow: 0 5px 0 var(--btn-edge), 0 7px 10px rgba(0,0,0,.25);
   cursor: pointer; transition: transform .06s, box-shadow .06s, background-color .15s, opacity .2s; }
 .key:active:not(:disabled) { transform: translateY(4px); box-shadow: 0 1px 0 var(--btn-edge), 0 2px 4px rgba(0,0,0,.25); }
 .key:disabled { cursor: default; }
 
-#p-select { grid-template-columns: 1fr 1fr; gap: 8px; }
-.cat { min-height: 42px; font-size: 16px; line-height: 1.05; text-align: left; padding: 4px 10px 4px 12px; display: flex; align-items: center; justify-content: space-between; gap: 6px; box-shadow: 0 4px 0 var(--btn-edge), 0 5px 8px rgba(0,0,0,.25); }
-.cat:active:not(:disabled) { transform: translateY(3px); box-shadow: 0 1px 0 var(--btn-edge); }
-.cat .patch { flex: none; width: 18px; color: var(--btn-edge); }
-.cat.done .patch { color: var(--btn-ink); }   /* a black patch, like a real ball */
-.cat.soon { opacity: .28; }
-.cat.soon:disabled { cursor: default; }
+/* grid tiles: white, yellow card and red card keys, one color per column */
+#p-board.tiles { grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: repeat(6, auto); grid-auto-flow: column; gap: 9px 8px; padding-bottom: 4px; }
+.tile { position: relative; min-height: 52px; min-width: 0; padding: 4px 6px; font-size: 17px; line-height: 1.04; display: flex; align-items: center; justify-content: center; text-align: center; border-radius: 10px; }
+.tile.c1 { background: var(--c1); box-shadow: 0 4px 0 var(--c1-edge), 0 6px 8px rgba(0,0,0,.25); }
+.tile.c2 { background: var(--c2); box-shadow: 0 4px 0 var(--c2-edge), 0 6px 8px rgba(0,0,0,.25); }
+.tile.c3 { background: var(--c3); box-shadow: 0 4px 0 var(--c3-edge), 0 6px 8px rgba(0,0,0,.25); color: #fff; }
+.tile:active:not(:disabled) { transform: translateY(3px); box-shadow: 0 1px 0 rgba(0,0,0,.4); }
+.tile.done, .tile.miss { transform: translateY(3px); box-shadow: 0 1px 0 rgba(0,0,0,.4); opacity: .3; }
+.tile.c3.done, .tile.c3.miss { color: #fff; }
+.hk { display: block; width: 100%; overflow-wrap: normal; word-break: normal; hyphens: none; }
+.cab[data-l="hex"] #p-board { justify-content: center; padding: 4px 0; }
+
+/* answer buttons */
 .choices { flex-direction: column; gap: 10px; }
 .choice { flex: none; min-height: 62px; font-size: 21px; text-align: left; padding: 6px 16px 6px 18px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
 .choice .txt { display: flex; flex-direction: column; gap: 1px; min-width: 0; }
@@ -132,54 +160,54 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .choice.wrong { background: var(--no); color: #2B0508; box-shadow: 0 5px 0 var(--no-edge), 0 0 18px rgba(255,90,95,.7); animation: nope .32s ease; }
 .choice.dim { opacity: .35; }
 @keyframes nope { 20% { transform: translateX(-7px); } 45% { transform: translateX(6px); } 70% { transform: translateX(-4px); } 90% { transform: translateX(2px); } }
-.key:focus-visible, .go:focus-visible, .home:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
 
+/* end of the day: one-tap share, and the countdown to tomorrow's board */
+#p-end { flex-direction: column; gap: 12px; }
+.share { min-height: 62px; padding: 8px 16px 8px 18px; display: flex; align-items: center; justify-content: space-between; gap: 12px; text-align: left; font-size: 17px; line-height: 1.25; }
+.share .mark { flex: none; }
+.share .ball-i { display: inline-block; vertical-align: -2px; margin-right: 3px; }
+.clock { font-family: var(--pixel); font-size: 15px; letter-spacing: 1px; color: var(--glow); text-align: center; text-shadow: 0 0 6px rgba(92,240,154,.6); padding: 2px 0 1px; }
+.key:focus-visible, .go:focus-visible, .cell:focus-visible { outline: 3px solid var(--glow); outline-offset: 3px; }
 
-@media (max-height: 700px) { .choice { min-height: 56px; } }
-@media (max-width: 360px) { :root { --cap: 52px; } }
+@media (max-height: 700px) { .choice { min-height: 56px; } .tile { min-height: 46px; font-size: 16px; } }
 @media (max-height: 640px) { .cab { gap: 9px; padding-top: max(9px, env(safe-area-inset-top, 0px)); padding-bottom: max(12px, env(safe-area-inset-bottom, 0px)); } .marquee { padding: 11px 10px 13px; } .marquee h1 { font-size: 19px; }
-  .cat { font-size: 14px; min-height: 38px; } .choice { font-size: 19px; min-height: 50px; } .sentence { font-size: 22px; } .sentence.long { font-size: 20px; } .sentence.longer { font-size: 18px; }
-  }
-@media (prefers-reduced-motion: reduce) { .key, .choice .def { transition: none; } .pips i.bump, .choice.wrong, .flick, .blank, .go, .boss, .big-icon, .pips i.new, .board .p.new svg, .board.awake .boss-p svg, .cab.poweron .marquee h1 { animation: none; } .flyer { transition: none; } }
+  .choice { font-size: 19px; min-height: 50px; } .sentence { font-size: 22px; } .sentence.long { font-size: 20px; } .sentence.longer { font-size: 18px; }
+  .tile { min-height: 44px; font-size: 15px; } #p-board.tiles { gap: 7px 7px; } .panel { padding: 10px 10px 13px; }
+  .lost .sentence { font-size: 19px; } .lost .sentence.long, .lost .sentence.longer { font-size: 17px; } .means { font-size: 16px; } .word { font-size: 17px; } }
+@media (prefers-reduced-motion: reduce) { .key, .choice .def { transition: none; } .pips i.bump, .choice.wrong, .flick, .blank, .go, .ball.goal, .ball .p.new svg, .lamp.new, .cab.poweron .marquee h1 { animation: none; } .flyer, .flyer .pg { transition: none; } }
 </style>
-<div class="cab" id="cab" data-v="select">
+<div class="cab" id="cab" data-v="board" data-l="hex">
   <div class="marquee"><h1>TRIVIELA</h1></div>
   <div class="bezel">
     <div class="screen" id="flip" aria-live="polite">
-      <section class="view" id="v-select"><div class="board" id="lair"></div></section>
+      <section class="view" id="v-board"></section>
       <section class="view" id="v-play">
-        <div class="hud"><span class="lvl" id="lvl"></span><button class="home" id="home" type="button" aria-label="Levels"></button></div>
+        <div class="hud"><span class="lvl" id="lvl"></span><span id="hud-goals"></span></div>
         <section class="face"><p class="sentence" id="q"></p></section>
       </section>
-      <section class="view" id="v-boss"><div class="boss" id="boss-big"></div></section>
+      <section class="view" id="v-end"></section>
       <button class="go wait" id="go" type="button" tabindex="-1" aria-label="Next"></button>
     </div>
   </div>
   <div class="panel">
-    <div class="pv" id="p-select"></div>
+    <div class="pv" id="p-board"></div>
     <div class="pv choices" id="choices"></div>
+    <div class="pv" id="p-end"><button class="key share" id="share" type="button"><span class="txt" id="share-txt"></span><span class="mark" id="share-mark"></span></button><div class="clock" id="clock"></div></div>
   </div>
 </div>
 <script>
 (function () {
-  var LEVELS = __LEVELS__, CATS = __CATS__;
+  var DECKS = __DECKS__, START = __START__;
   // pixel sprites, one string per row ('#' = lit pixel)
   var SPR = {
-    // color sprites: K ink, W white, Y gold, O orange, R red, B blue, P purple, G green, k pink, D dark
-    alpha:   ['..KKKKKKK..','..KBBBBBK..','..KBYYYBK..','..KYKYKYK..','..KYYYYYK..','..KYKKKYK..','..KBYYYBK..','..KBBBBBK..','..KBBBBBK..','..KKKWKKK..','..KKKKKKK..'],
-    parents: ['KKKKKKKKKKK','KOOOOOOOOOK','KOWWWWWWWOK','KOWKKWKKWOK','KOWWWWWWWOK','KOOOOOOOOOK','KOOKKKKKOOK','KKKKKKKKKKK'],
-    soccer:  ['...KKKKK...','.KKWWWWWKK.','.KWWWKWWWK.','KWWWKKKWWWK','KKWWKKKWWKK','KWKWWWWWKWK','KWWKWWWKWWK','KWWKKWKKWWK','.KWKKWKKWK.','.KKWWWWWKK.','...KKKKK...'],
-    swift:   ['...BkkkP...','..BBBkPPP..','.YYB...PGG.','RYY.....GGO','RR.......OO','RR.......RR','OO.......RR','OGG.....YYR','.GGP...BYY.','..PPPkBBB..','...PkkkB...'],
-    epl:     ['..KKKKKKK..','KKKYYWYYKKK','K.KYYWYYK.K','K.KYYYYYK.K','.KKYYYYYKK.','...KYYYK...','....KYK....','....KYK....','...KKKKK...','..KDDDDDK..','..KKKKKKK..'],
-    boss:    ['.#........#.','.##......##.','.##########.','############','###..##..###','###..##..###','############','############','##.##..##.##','############','.##########.'],
-    lock:    ['..###..','.#...#.','.#...#.','#######','###.###','###.###','#######'],
-    home:    ['...#...','..###..','.#####.','#######','.##.##.','.##.##.','.##.##.'],
-    next:    ['...#...','...##..','######.','#######','######.','...##..','...#...'],
-    again:   ['..####.#.','.##...##.','##...###.','##.......','##.......','##.....##','.##...##.','..#####..'],
-    ok:      ['......#','.....##','#...##.','##.##..','.###...','..#....'],
-    no:      ['##...##','###.###','.#####.','..###..','.#####.','###.###','##...##']
+    // color sprites: K ink, W white
+    ball:  ['...KKKKK...','.KKWWWWWKK.','.KWWWKWWWK.','KWWWKKKWWWK','KKWWKKKWWKK','KWKWWWWWKWK','KWWKWWWKWWK','KWWKKWKKWWK','.KWKKWKKWK.','.KKWWWWWKK.','...KKKKK...'],
+    next:  ['...#...','...##..','######.','#######','######.','...##..','...#...'],
+    ok:    ['......#','.....##','#...##.','##.##..','.###...','..#....'],
+    no:    ['##...##','###.###','.#####.','..###..','.#####.','###.###','##...##'],
+    share: ['....#....','...###...','..#####..','....#....','....#....','##..#..##','#.......#','#.......#','#.......#','#########']
   };
-  var PAL = { K: '#1E2A3B', W: '#FFFFFF', Y: '#F7C948', O: '#FF8A3D', R: '#FF5A5F', B: '#4DA3FF', P: '#B46CFF', G: '#45BE76', k: '#FF8FC8', D: '#5B6470' };
+  var PAL = { K: '#1E2A3B', W: '#FFFFFF' };
   function svg(name, scale, cls, color) {
     var rows = SPR[name], paths = {}, inked = rows.join('').indexOf('K') >= 0 && rows.join('').replace(/[.#K]/g, '') !== '';
     rows.forEach(function (r, y) {
@@ -198,7 +226,6 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   function pent(outline, turn) { return '<svg class="pg' + (outline ? ' o' : '') + '" viewBox="0 0 100 100" aria-hidden="true"><polygon' + (turn ? ' transform="rotate(' + turn + ' 50 54)"' : '') + ' points="50.00,8.00 93.75,39.79 77.04,91.21 22.96,91.21 6.25,39.79"/></svg>'; }
   var esc = function (s) { return s.replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
   var quote = function (s) { return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); };
-  var rx = function (w) { return new RegExp('(^|[^A-Za-z0-9])(' + quote(w) + ')(?![A-Za-z0-9])', 'i'); };
   // keep hyphenated words and score/season ranges on one line (outside tags only)
   var keep = function (html) { return html.replace(/(<[^>]*>)|([A-Za-z0-9’]+(?:[-–][A-Za-z0-9’]+)+)/g, function (m, tag, word) { return tag || '<span class="nb">' + word + '</span>'; }); };
   // Pixelify Sans draws 5 like an S, so digits use the arcade face (text outside tags only)
@@ -209,24 +236,147 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     return num(keep(esc(it.ex).replace(glue, '$1<span class="nb">$2' + (fill ? '<span class="fill">$3</span>' : '<span class="blank" aria-label="blank"></span>') + '$4</span>')));
   }
   var size = function (it) { var n = it.ex.length; return 'sentence' + (n > 70 ? ' longer' : n > 52 ? ' long' : ''); };
-  var shuffle = function (a) { a = a.slice(); for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; } return a; };
   var $ = function (id) { return document.getElementById(id); };
   var store = {
     get: function (k, d) { try { var v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch (e) { return d; } },
-    set: function (k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
+    set: function (k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} },
+    del: function (k) { try { localStorage.removeItem(k); } catch (e) {} }
   };
-  var WIN = 5;
 
-  LEVELS.forEach(function (L) {
-    L.items = L.items.filter(function (x) { return rx(x.w).test(x.ex); });
-    L.items.forEach(function (x) { x.k = x.k || 'word'; });
-    var g = {}; (L.groups || []).forEach(function (grp, i) { grp.forEach(function (w) { (g[w] = g[w] || []).push(i); }); });
-    L.clash = function (a, b) { return a === b || (g[a] || []).some(function (i) { return (g[b] || []).indexOf(i) >= 0; }); };
+  // ---- seeded randomness: the same date gives every player the same board ----
+  function hash(s) { var h = 2166136261; for (var i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 16777619); } return h >>> 0; }
+  function rng(seed) { var a = seed >>> 0; return function () { a = (a + 0x6D2B79F5) >>> 0; var t = a; t = Math.imul(t ^ (t >>> 15), t | 1); t ^= t + Math.imul(t ^ (t >>> 7), t | 61); return ((t ^ (t >>> 14)) >>> 0) / 4294967296; }; }
+  function shuffle(a, r) { a = a.slice(); for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(r() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+
+  // ---- the cards: every deck in one pool, split by color (red slang never plays) ----
+  // words compared loosely: lowercase, a plural s dropped, and short club names read as the full ones
+  var ALIAS = [['man united', 'manchester united'], ['man utd', 'manchester united'], ['man city', 'manchester city'], ['spurs', 'tottenham'],
+    ['psg', 'paris saint germain'], ['bar\u00e7a', 'barcelona'], ['juve', 'juventus'], ['gladbach', 'm\u00f6nchengladbach'], ['inter milan', 'inter'],
+    ['internazionale', 'inter'], ['atleti', 'atl\u00e9tico madrid'], ['kc current', 'kansas city current'], ['usmnt', 'usa'], ['uswnt', 'usa'], ['united states', 'usa']];
+  var PLAIN = {};   // words too common to tie two cards together on their own
+  ('real city united club sporting athletic football soccer national world cup women men award player team stadium arena park league final ' +
+   'golden ball boot glove best fifa uefa saint san santa new the and one two three four five six seven eight nine ten first last young old').split(' ').forEach(function (w) { PLAIN[w] = 1; });
+  function toks(s) {
+    s = ' ' + s.toLowerCase().replace(/[^0-9a-z\u00c0-\u024f]+/g, ' ') + ' ';
+    ALIAS.forEach(function (p) { s = s.split(' ' + p[0] + ' ').join(' ' + p[1] + ' '); });
+    return s.split(' ').filter(Boolean).map(function (w) { return w.length > 3 && /[^s]s$/.test(w) ? w.slice(0, -1) : w; });
+  }
+  var ALL = [], POOL = [[], [], []];
+  DECKS.forEach(function (D) {
+    var g = {}; (D.groups || []).forEach(function (grp, i) { grp.forEach(function (w) { (g[w] = g[w] || []).push(i); }); });
+    D.clash = function (a, b) { return a === b || (g[a] || []).some(function (i) { return (g[b] || []).indexOf(i) >= 0; }); };
+    D.cards = D.items.map(function (x, i) {
+      var c = { D: D, id: D.id + ':' + i, w: x.w, m: x.means, ex: x.ex, k: x.k || 'word', hook: x.hook, d: x.d, lg: x.lg || D.lg || '', wm: !!(D.wm || x.wm), rl: !!D.rl, sl: !!D.sl, n: ALL.length };
+      c.a = toks(c.w); c.key = c.a.join(' '); c.h = toks(c.hook); c.hk = c.h.join(' ');
+      c.t = toks(c.ex + ' ' + c.hook + ' ' + c.m);   // everything a player sees of the card: the sentence, its tile and, after answering, its means line
+      c.names = /[A-Z]/.test(c.w) && c.a.length > 1 ? c.a.filter(function (w) { return w.length > 3 && !PLAIN[w] && !/^\d+$/.test(w); }) : [];   // Bayern in Bayern Munich
+      c.near = {};
+      ALL.push(c); if (!(c.sl && c.d === 3)) POOL[c.d - 1].push(c);
+      return c;
+    });
   });
-  var byId = {}; LEVELS.forEach(function (L) { byId[L.id] = L; });
-  var cleared = store.get('bsb-cleared', []).filter(function (id) { return byId[id]; });
+  // two cards can't share a board when one gives the other away: one's answer shows up in what a player sees of the other
+  // (a short form or a telling name word counts), one's hook sits inside the other's answer, or they share an answer or a hook
+  (function () {
+    var at = {}, ans = {}, tie = function (a, b) { if (a !== b) a.near[b.n] = b.near[a.n] = 1; };
+    var runs = function (list, j, words) { for (var k = 1; k < words.length; k++) if (list[j + k] !== words[k]) return false; return true; };
+    ALL.forEach(function (c) { c.t.forEach(function (w, j) { (at[w] = at[w] || []).push([c, j]); }); c.a.forEach(function (w, j) { (ans[w] = ans[w] || []).push([c, j]); }); });
+    ALL.forEach(function (a) {
+      if (a.a.length) (at[a.a[0]] || []).forEach(function (hit) { if (runs(hit[0].t, hit[1], a.a)) tie(a, hit[0]); });
+      a.names.forEach(function (w) { (at[w] || []).forEach(function (hit) { tie(a, hit[0]); }); });
+      if (a.h.length) (ans[a.h[0]] || []).forEach(function (hit) { if (runs(hit[0].a, hit[1], a.h)) tie(a, hit[0]); });
+    });
+  })();
+  var near = function (a, b) { return a.near[b.n] || a.key === b.key || a.hk === b.hk; };
 
-  var cab = $('cab'), L, a, wins, missed, answered, lastSlots = [], fresh = null;
+  // ---- the draw ----
+  // Each color keeps a line of its cards, oldest first. A day deals from a shuffle of the 24 oldest in each line
+  // (reaching further back only when a guardrail needs it), and dealt cards go to the back. So a card comes back
+  // as late as the deck allows, and never within 3 months once each color has about 570 cards.
+  // Guardrails: at least one women's game card and one rules card, at most 3 from one league,
+  // at most one card from each slang deck and never a red one.
+  var PER = 6, WINDOW = 24, LEAGUE_MAX = 3;
+  function fits(c, got) {
+    var lg = 0;
+    for (var i = 0; i < got.length; i++) {
+      var x = got[i];
+      if (x === c || near(x, c) || (c.sl && x.D === c.D)) return false;
+      if (c.lg && x.lg === c.lg) lg++;
+    }
+    return lg < LEAGUE_MAX;
+  }
+  function dealDay(day, q, last) {
+    var r = rng(hash('triviela day ' + day)), got = [], tiers = [[], [], []];
+    var lists = q.map(function (Q) { return shuffle(Q.slice(0, WINDOW), r).concat(Q.slice(WINDOW)); });
+    function take(t, c) { tiers[t].push(c); got.push(c); last[c.n] = day; }
+    // a guardrail takes a card from the 24 oldest of a color if it can, or else the card that has rested longest
+    [function (c) { return c.wm; }, function (c) { return c.rl; }].forEach(function (want) {
+      if (got.some(want)) return;
+      var best = null, bt = 0, order = shuffle([0, 1, 2], r);
+      order.forEach(function (t) {
+        for (var i = 0; !best && i < Math.min(WINDOW, lists[t].length); i++) { var c = lists[t][i]; if (want(c) && fits(c, got)) { best = c; bt = t; } }
+      });
+      if (!best) order.forEach(function (t) {
+        for (var i = WINDOW; i < lists[t].length; i++) {
+          var c = lists[t][i];
+          if (want(c) && fits(c, got)) { if (!best || (last[c.n] === undefined ? -1 : last[c.n]) < (last[best.n] === undefined ? -1 : last[best.n])) { best = c; bt = t; } break; }
+        }
+      });
+      if (best) take(bt, best);
+    });
+    var at = [0, 0, 0], busy = true;   // then fill the three colors in turn, so they share the league caps fairly
+    while (busy) {
+      busy = false;
+      for (var t = 0; t < 3; t++) {
+        var L = lists[t];
+        while (tiers[t].length < PER && at[t] < L.length) { var c = L[at[t]++]; if (got.indexOf(c) < 0 && fits(c, got)) { take(t, c); break; } }
+        if (tiers[t].length < PER && at[t] < L.length) busy = true;
+      }
+    }
+    tiers.forEach(function (T, t) { T.forEach(function (c) { var Q = q[t]; Q.splice(Q.indexOf(c), 1); Q.push(c); }); });
+    return tiers.map(function (T) { return shuffle(T, r); });
+  }
+  function deal(day, every) {   // replay every day from puzzle #1, so each card's place in line is the same on every phone
+    var r0 = rng(hash('triviela lines')), q = POOL.map(function (P) { return shuffle(P, r0); }), last = {}, b, all = [];
+    for (var d = 0; d <= day; d++) { b = dealDay(d, q, last); if (every) all.push(b); }
+    return every ? all : b;
+  }
+  // the three choices on a card: the answer and two of the same kind from its deck, the same for everyone that day
+  function choices(c, day) {
+    var r = rng(hash('triviela choices ' + day + ' ' + c.id)), D = c.D;
+    var same = shuffle(D.cards.filter(function (x) { return x.k === c.k && !D.clash(x.w, c.w); }), r);
+    var any = shuffle(D.cards.filter(function (x) { return x.k !== c.k && !D.clash(x.w, c.w); }), r);
+    var picks = [c];
+    same.concat(any).forEach(function (x) { if (picks.length < 3 && !picks.some(function (p) { return D.clash(p.w, x.w); })) picks.push(x); });
+    return shuffle(picks, r).map(function (p) { return { w: p.w, m: p.m }; });
+  }
+  function dayOf(t) { return Math.round((Date.UTC(t.getFullYear(), t.getMonth(), t.getDate()) - Date.UTC(START[0], START[1] - 1, START[2])) / 864e5); }
+
+  // ---- today ----
+  var host = location.hostname, params = new URLSearchParams(location.search);
+  var DEV = /^(localhost|127\.0\.0\.1|bsb\.test)$|\.blank-space-baby\.pages\.dev$/.test(host);   // preview links only, never the real site
+  var FIXED = DEV && params.get('day') ? Math.max(0, parseInt(params.get('day'), 10) - 1) : null;
+  if (DEV && params.has('reset')) { store.del('bsb-daily'); params.delete('reset'); history.replaceState(null, '', location.pathname + (params.toString() ? '?' + params : '')); }
+  var LAYOUT = params.get('board') === 'grid' ? 'grid' : 'hex';
+  function today() { return FIXED !== null ? FIXED : Math.max(0, dayOf(new Date())); }
+  function fresh(day) {
+    var b = deal(day);
+    return { v: 1, day: day, tiles: [].concat(b[0], b[1], b[2]).map(function (c) { return { d: c.d, hook: c.hook, w: c.w, m: c.m, ex: c.ex, ch: choices(c, day) }; }),
+      res: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], open: -1, path: [], slots: [] };
+  }
+  function load() {
+    var s = store.get('bsb-daily', null), d = today();
+    return s && s.v === 1 && s.day === d && s.tiles && s.tiles.length === 18 ? s : fresh(d);
+  }
+  var S = load();
+  var save = function () { store.set('bsb-daily', S); };
+  var chips = function () { return S.res.filter(function (x) { return x === 1; }).length; };
+  var over = function () { return S.res.indexOf(2) >= 0 || chips() === 18; };
+  var RESULT = ['Nil', 'Goal', 'Brace', 'Hat trick'];
+  if (DEV) window.TRIVIELA = { deal: deal, choices: choices, ALL: ALL, POOL: POOL, near: near, state: function () { return S; } };   // for tools/drawcheck.py
+
+  // ---- the board ----
+  var cab = $('cab'); cab.dataset.l = LAYOUT;
   function view(v) { cab.dataset.v = v; flick(); }
   function flick() { var s = $('flip'); s.classList.remove('flick'); void s.offsetWidth; s.classList.add('flick'); }
   function go(icon, label) {
@@ -234,130 +384,192 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     if (!icon) { g.classList.add('wait'); g.tabIndex = -1; return; }
     g.innerHTML = svg(icon, 4); g.setAttribute('aria-label', label); g.classList.remove('wait'); g.tabIndex = 0;
   }
-
-  // ---- level select ----
-  CATS.forEach(function (c) {
-    var b = document.createElement('button'); b.type = 'button'; b.className = 'key cat' + (c.soon ? ' soon' : ''); b.id = 't-' + c.id;
-    if (c.soon) b.disabled = true;
-    b.innerHTML = '<span>' + num(keep(esc(c.name))) + '</span><span class="patch">' + pent(true) + '</span>';
-    b.addEventListener('click', function () { if (!c.soon) play(c.id); });
-    $('p-select').appendChild(b);
-  });
-  // the board: the boss pentagon in the middle, five slots around it clockwise from the top.
-  // Like seams on a real ball, every outer pentagon turns a flat side to the center, and the center points down
-  // so its flat sides face back
-  var slots = [0, 1, 2, 3, 4].map(function (k) { var a = (-90 + 72 * k) * Math.PI / 180; return [50 + 33 * Math.cos(a), 50 + 33 * Math.sin(a)]; });
-  function board() {
-    var html = '<div class="p boss-p" style="left:50%;top:50%">' + pent(cleared.length < 5, 180) + '<span class="lock">' + svg('lock', 3) + '</span></div>';
-    slots.forEach(function (xy, k) {
-      var id = cleared[k];
-      html += '<div class="p' + (id ? ' on' : '') + (id && id === fresh ? ' pending' : '') + '" id="slot' + k + '" style="left:' + xy[0] + '%;top:' + xy[1] + '%' + '">' + pent(!id, 72 * k) + '</div>';
-    });
-    return html;
+  var SLOTS = [0, 1, 2, 3, 4].map(function (k) { var a = (-90 + 72 * k) * Math.PI / 180; return [50 + 33 * Math.cos(a), 50 + 33 * Math.sin(a)]; }).concat([[50, 50]]);
+  function ballHTML(n, pending) {   // n chips in the ball: the five around clockwise from the top, then the center
+    return '<div class="ball" id="ball">' + SLOTS.map(function (xy, k) {
+      return '<div class="p' + (k < n ? ' on' : '') + (k === pending ? ' pending' : '') + '" id="slot' + k + '" style="left:' + xy[0] + '%;top:' + xy[1] + '%">' + pent(k >= n, k < 5 ? 72 * k : 180) + '</div>';
+    }).join('') + '</div>';
   }
-  // a newly earned pentagon flies from its key up into its slot
-  function fly(id) {
-    var from = $('t-' + id).lastChild.getBoundingClientRect(), slot = $('slot' + cleared.indexOf(id)), to = slot.getBoundingClientRect();
-    var f = document.createElement('div'); f.className = 'flyer'; f.innerHTML = pent(); var turn = 72 * cleared.indexOf(id);
-    f.style.left = from.left + 'px'; f.style.top = from.top + 'px'; f.style.width = from.width + 'px';
-    document.body.appendChild(f);
-    var done = false;
-    function land() { if (done) return; done = true; f.remove(); slot.classList.remove('pending'); slot.classList.add('new'); }
-    requestAnimationFrame(function () { requestAnimationFrame(function () {
-      f.style.transform = 'translate(' + (to.left - from.left) + 'px,' + (to.top - from.top) + 'px) scale(' + (to.width / from.width) + ')';
-      f.style.transformOrigin = '0 0'; f.firstChild.style.transform = 'rotate(' + turn + 'deg)';
-    }); });
-    f.addEventListener('transitionend', land); setTimeout(land, 1100);
+  function lampsHTML(goals, scale, ids) {
+    var h = ''; for (var i = 0; i < 3; i++) h += '<i class="lamp' + (i < goals ? ' on' : '') + '"' + (ids ? ' id="lamp' + i + '"' : '') + '>' + svg('ball', scale, '', i < goals) + '</i>';
+    return '<span class="lamps">' + h + '</span>';
   }
-
-  $('boss-big').innerHTML = svg('boss', 10);
-  function select() {
-    var all = cleared.length >= 5;
-    $('lair').innerHTML = board(); $('lair').setAttribute('aria-label', Math.min(cleared.length, 5) + ' of 5');
-    CATS.forEach(function (c) { var d = cleared.indexOf(c.id) >= 0; $('t-' + c.id).classList.toggle('done', d); $('t-' + c.id).lastChild.innerHTML = pent(!d); });
-    $('lair').classList.toggle('awake', all);
-    go(all ? 'next' : null, 'Final boss');
-    view('select');
-    if (fresh && cleared.indexOf(fresh) < 5) fly(fresh);
-    fresh = null;
+  var COLOR = ['white', 'yellow card', 'red card'];
+  function tileHTML(T, i, cls, style) {
+    var st = S.res[i] === 1 ? ' done' : S.res[i] === 2 ? ' miss' : '';
+    return '<button type="button" class="' + cls + ' c' + T.d + st + '" data-i="' + i + '"' + (style ? ' style="' + style + '"' : '') + (S.res[i] || over() ? ' disabled' : '') +
+      ' aria-label="' + esc(T.hook) + ', ' + COLOR[T.d - 1] + '">' + (S.res[i] ? svg(S.res[i] === 1 ? 'ok' : 'no', 3) : '<span class="hk">' + num(keep(esc(T.hook))) + '</span>') + '</button>';
   }
-
-  cab.classList.add('poweron'); select();
-
-  // ---- play ----
-  function nextItem() {   // walk a saved shuffled order per level, so replays bring new cards
-    var key = 'bsb-q-' + L.id, q = store.get(key, null), n = L.items.length;
-    if (!q || !q.order || q.order.length !== n || q.at >= n) {
-      var prev = q && q.order ? q.order[q.order.length - 1] : -1, order = shuffle(L.items.map(function (_, i) { return i; }));
-      if (order[0] === prev && n > 1) { order.push(order.shift()); }
-      q = { order: order, at: 0 };
+  // the honeycomb: the ball in the middle, the six whites around it, then yellow and red cards in turn.
+  // Flat-top hexes in five columns of 3, 4, 5, 4 and 3, measured in hex radii: 8 wide and 5√3 tall
+  var CELLS = (function () {
+    var cs = [];
+    for (var r = -2; r <= 2; r++) for (var q = -2; q <= 2; q++) {
+      var s = -q - r; if (Math.abs(s) > 2) continue;
+      var x = 1.5 * q, y = Math.sqrt(3) * (r + q / 2);
+      cs.push({ ring: Math.max(Math.abs(q), Math.abs(r), Math.abs(s)), left: (4 + x) / 8 * 100, top: (2.5 * Math.sqrt(3) + y) / (5 * Math.sqrt(3)) * 100, ang: (Math.atan2(x, -y) * 180 / Math.PI + 360.001) % 360 });
     }
-    var it = L.items[q.order[q.at]]; q.at++; store.set(key, q); return it;
+    cs.sort(function (a, b) { return a.ring - b.ring || a.ang - b.ang; });
+    cs.forEach(function (c, j) { c.tile = j === 0 ? -1 : j <= 6 ? j - 1 : (j - 7) % 2 ? 12 + (j - 8) / 2 : 6 + (j - 7) / 2; });
+    return cs;
+  })();
+  // chips in the ball and goals banked. Just after a goal-making answer, the ball still shows all six until the goal lands
+  function score(landing) {
+    var n = chips(), inBall = n % PER, goals = Math.floor(n / PER);
+    if (landing && n && !inBall) { inBall = PER; goals--; }
+    return { inBall: inBall, goals: goals };
   }
-  function play(id) {
-    L = byId[id]; wins = 0; lastSlots = [];
-    $('lvl').innerHTML = svg(L.id, 2) + '<span class="pips" id="pips">' + new Array(WIN + 1).join('<i></i>') + '</span>';
-    ask(); view('play');
+  function board(pending) {
+    var sc = score(pending !== undefined);
+    if (LAYOUT === 'hex') {
+      $('v-board').innerHTML = '<div class="hive">' + CELLS.map(function (c) {
+        var pos = 'left:' + c.left.toFixed(3) + '%;top:' + c.top.toFixed(3) + '%';
+        return c.tile < 0 ? '<div class="cell core" style="' + pos + '">' + ballHTML(sc.inBall, pending) + '</div>' : tileHTML(S.tiles[c.tile], c.tile, 'cell', pos);
+      }).join('') + '</div>';
+      $('p-board').className = 'pv'; $('p-board').innerHTML = lampsHTML(sc.goals, 3, true);
+    } else {
+      $('v-board').innerHTML = '<div class="pitch">' + ballHTML(sc.inBall, pending) + lampsHTML(sc.goals, 2, true) + '</div>';
+      $('p-board').className = 'pv tiles'; $('p-board').innerHTML = S.tiles.map(function (T, i) { return tileHTML(T, i, 'key tile'); }).join('');
+    }
+    document.querySelectorAll('[data-i]').forEach(function (b) { b.addEventListener('click', function (e) { e.stopPropagation(); open(+b.dataset.i); }); });
+    requestAnimationFrame(fitAll);
   }
-  function pips() { var ps = $('pips').children; for (var i = 0; i < ps.length; i++) ps[i].classList.toggle('on', i < wins); }
+  // shrink a hook that won't fit its tile on two lines, a half pixel at a time
+  function fit(el) {
+    var hk = el.querySelector('.hk'); if (!hk) return;
+    hk.style.fontSize = '';
+    var px = parseFloat(getComputedStyle(hk).fontSize), lh = parseFloat(getComputedStyle(el).lineHeight) / parseFloat(getComputedStyle(el).fontSize) || 1.04;
+    while (px > 8 && (hk.scrollWidth > hk.clientWidth + 0.5 || hk.offsetHeight > 2 * px * lh + 1)) { px -= 0.5; hk.style.fontSize = px + 'px'; }
+  }
+  function fitAll() { document.querySelectorAll('#v-board [data-i], #p-board [data-i]').forEach(fit); }
+  window.addEventListener('resize', function () { if (cab.dataset.v === 'board') fitAll(); });
+  if (document.fonts) { document.fonts.ready.then(fitAll); if (document.fonts.addEventListener) document.fonts.addEventListener('loadingdone', fitAll); }   // refit once the pixel font arrives
+
+  // ---- a card ----
+  var T, answered;
+  function open(i) {   // tapping a tile commits to it: a reload brings the same card back
+    if (over() || S.res[i] || S.open >= 0) return;
+    if (settle) settle();
+    var t = S.tiles[i], slot = t.ch.map(function (p) { return p.w; }).indexOf(t.w);
+    if (!t.set) {   // the right answer never lands in the same slot 3 times running
+      if (S.slots.length === 2 && S.slots[0] === slot && S.slots[1] === slot) { var to = (slot + 1 + Math.floor(Math.random() * 2)) % 3, x = t.ch[to]; t.ch[to] = t.ch[slot]; t.ch[slot] = x; slot = to; }
+      S.slots = S.slots.concat(slot).slice(-2); t.set = 1;
+    }
+    S.open = i; S.path.push(i); save(); ask();
+  }
+  function hud(landing) {
+    var sc = score(landing), p = ''; for (var i = 0; i < PER; i++) p += '<i' + (i < sc.inBall ? ' class="on"' : '') + '></i>';
+    $('lvl').innerHTML = '<i class="chip-card c' + T.d + '"></i><span class="pips" id="pips">' + p + '</span>';
+    $('hud-goals').innerHTML = lampsHTML(sc.goals, 2);
+    return sc;
+  }
   function ask() {
-    a = nextItem(); answered = false; missed = false;
-    var same = shuffle(L.items.filter(function (x) { return x.k === a.k && !L.clash(x.w, a.w); }));
-    var any = shuffle(L.items.filter(function (x) { return x.k !== a.k && !L.clash(x.w, a.w); }));
-    var picks = [a];
-    same.concat(any).forEach(function (x) { if (picks.length < 3 && !picks.some(function (p) { return L.clash(p.w, x.w); })) picks.push(x); });
-    pips();
-    $('q').className = size(a); $('q').innerHTML = sentence(a); $('q').dataset.w = a.w;
+    T = S.tiles[S.open]; answered = false;
+    hud();
+    $('q').className = size(T); $('q').innerHTML = sentence(T); $('q').dataset.w = T.w;
     $('choices').innerHTML = '';
-    var order = shuffle(picks), slot = order.indexOf(a);
-    if (lastSlots.length === 2 && lastSlots[0] === slot && lastSlots[1] === slot) {   // never the same slot 3 times running
-      var to = (slot + 1 + Math.floor(Math.random() * 2)) % 3, t = order[to]; order[to] = a; order[slot] = t; slot = to;
-    }
-    lastSlots = lastSlots.concat(slot).slice(-2);
-    order.forEach(function (p) {
+    T.ch.forEach(function (p) {
       var b = document.createElement('button'); b.type = 'button'; b.className = 'key choice'; b.dataset.w = p.w;
-      b.innerHTML = '<span class="txt"><span class="w">' + num(esc(p.w)) + '</span><span class="def">' + num(keep(esc(p.means))) + '</span></span><span class="mark" aria-hidden="true"></span>';
+      b.innerHTML = '<span class="txt"><span class="w">' + num(esc(p.w)) + '</span><span class="def">' + num(keep(esc(p.m))) + '</span></span><span class="mark" aria-hidden="true"></span>';
       b.addEventListener('click', function () { answer(p, b); });
       $('choices').appendChild(b);
     });
-    go(null);
+    go(null); view('play');
   }
   function answer(p, btn) {
     if (answered) return; answered = true;
-    var ok = p === a;
+    var ok = p.w === T.w;
+    S.res[S.open] = ok ? 1 : 2; save();   // saved before anything else, so a reload can't undo it
     document.querySelectorAll('.choice').forEach(function (b) {
       b.disabled = true;
-      if (b.dataset.w === a.w) { b.classList.add('right'); b.lastChild.innerHTML = svg('ok', 3); }
+      if (b.dataset.w === T.w) { b.classList.add('right'); b.lastChild.innerHTML = svg('ok', 3); }
       else if (b === btn) { b.classList.add('wrong'); b.lastChild.innerHTML = svg('no', 3); }
       else b.classList.add('dim');
     });
-    if (ok) {
-      wins++; pips(); var pi = $('pips').children[wins - 1]; pi.classList.remove('bump'); void pi.offsetWidth; pi.classList.add('bump');
-      go('next', wins >= WIN ? 'Level beaten' : 'Next');
-    } else { missed = true; go('again', 'Try again'); }
-    // the blank fills in with the answer: glowing on a win, plain on a miss
-    $('q').classList.toggle('missed', !ok); $('q').innerHTML = sentence(a, true); flick();
+    if (ok) { var pi = $('pips').children[hud(true).inBall - 1]; pi.classList.remove('bump'); void pi.offsetWidth; pi.classList.add('bump'); }
+    go('next', 'Next');
+    $('q').classList.toggle('missed', !ok); $('q').innerHTML = sentence(T, true); flick();
     if (document.activeElement && document.activeElement.blur) document.activeElement.blur();   // no leftover focus ring after a tap
   }
-  function clear() {   // a beaten category goes straight back to the board, where its pentagon flies in
-    if (cleared.indexOf(L.id) < 0) { cleared.push(L.id); store.set('bsb-cleared', cleared); fresh = L.id; }
-    select();
+  var settle = null;   // lands a flying chip, and its goal, at once if the player taps another tile first
+  function next() {   // after an answer: a right one flies its chip into the ball, a miss ends the day
+    var i = S.open, ok = S.res[i] === 1;
+    S.open = -1; save(); go(null);
+    if (!ok) return end();
+    var n = chips(), k = (n - 1) % PER, goal = !(n % PER), timer = null;
+    board(k); view('board');
+    var slot = $('slot' + k);
+    function scored() {   // the goal lands: a lamp lights and the ball empties
+      settle = null; board(); var l = $('lamp' + (n / PER - 1)); if (l) l.classList.add('new');
+      if (n === 18) setTimeout(end, 900);
+    }
+    var stop = fly(document.querySelector('[data-i="' + i + '"]'), slot, k < 5 ? 72 * k : 180, function () {
+      slot.classList.remove('pending'); slot.classList.add('new');
+      if (!goal) { settle = null; return; }
+      $('ball').classList.add('goal');   // six chips: a goal
+      timer = setTimeout(scored, motion() ? 950 : 0);
+    });
+    if (stop) settle = function () { stop(); clearTimeout(timer); slot.classList.remove('pending'); if (goal) scored(); else settle = null; };
+  }
+  var motion = function () { return !window.matchMedia || !matchMedia('(prefers-reduced-motion: reduce)').matches; };
+  function fly(fromEl, slot, turn, done) {   // returns a function that lands it at once, or nothing if it already landed
+    var a = fromEl.getBoundingClientRect(), b = slot.getBoundingClientRect(), s = b.width;
+    if (!motion()) { done(); return null; }
+    var f = document.createElement('div'); f.className = 'flyer'; f.innerHTML = pent();
+    var x = a.left + a.width / 2 - s / 2, y = a.top + a.height / 2 - s / 2;
+    f.style.left = x + 'px'; f.style.top = y + 'px'; f.style.width = s + 'px';
+    document.body.appendChild(f);
+    var gone = false;
+    function land() { if (gone) return; gone = true; f.remove(); done(); }
+    requestAnimationFrame(function () { requestAnimationFrame(function () {
+      f.style.transform = 'translate(' + (b.left - x) + 'px,' + (b.top - y) + 'px)'; f.firstChild.style.transform = 'rotate(' + turn + 'deg)';
+    }); });
+    f.addEventListener('transitionend', land); setTimeout(land, 900);
+    return function () { if (!gone) { gone = true; f.remove(); } };
   }
 
+  // ---- the end of the day ----
+  var tick;
+  function shareText() {
+    var n = chips(), g = Math.floor(n / PER);
+    return 'Triviela #' + (S.day + 1) + '\n' + (g ? new Array(g + 1).join('⚽') + ' ' : '') + RESULT[g] + ' · ' + n + '\ntriviela.net';
+  }
+  function end() {
+    var n = chips(), g = Math.floor(n / PER), lost = S.res.indexOf(2), L = S.tiles[lost];
+    var word = RESULT[g] + ' · ' + n;
+    $('v-end').innerHTML = '<div class="result">' + lampsHTML(g, 3) + '<p class="word">' + num(esc(word)) + '</p></div>' +
+      (L ? '<div class="lost"><p class="' + size(L) + ' missed">' + sentence(L, true) + '</p><p class="means">' + num(keep(esc(L.m))) + '</p></div>' : ballHTML(6));
+    $('share-txt').innerHTML = shareText().split('\n').map(function (line) { return num(esc(line)).replace(/⚽/g, svg('ball', 2, 'ball-i', true)); }).join('<br>');
+    $('share-mark').innerHTML = svg('share', 3);
+    view('end'); clock(); clearInterval(tick); tick = setInterval(clock, 1000);
+  }
+  function clock() {   // the countdown to tomorrow's board, at local midnight
+    var now = new Date(), left = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1) - now;
+    if (FIXED === null && today() !== S.day) { clearInterval(tick); S = load(); save(); return show(); }
+    var s = Math.max(0, Math.floor(left / 1000)), pad = function (x) { return (x < 10 ? '0' : '') + x; };
+    $('clock').textContent = pad(Math.floor(s / 3600)) + ':' + pad(Math.floor(s / 60) % 60) + ':' + pad(s % 60);
+  }
+  $('share').addEventListener('click', function () {
+    var text = shareText(), done = function () { $('share-mark').innerHTML = svg('ok', 3); setTimeout(function () { $('share-mark').innerHTML = svg('share', 3); }, 1600); };
+    if (navigator.share && /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) { navigator.share({ text: text }).catch(function () {}); return; }
+    if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done, function () { copy(text); done(); }); return; }
+    copy(text); done();
+  });
+  function copy(text) { var t = document.createElement('textarea'); t.value = text; t.style.position = 'fixed'; t.style.opacity = '0'; document.body.appendChild(t); t.select(); try { document.execCommand('copy'); } catch (e) {} t.remove(); }
 
   // ---- one tap target: the screen ----
-  $('home').innerHTML = svg('home', 3);
-  $('home').addEventListener('click', function (e) { e.stopPropagation(); select(); });
-  $('flip').addEventListener('click', function () {
-    var v = cab.dataset.v;
-    if (v === 'select') { if ($('lair').classList.contains('awake')) { go('next', 'Levels'); view('boss'); } }
-    else if (v === 'boss') select();
-    else if (v === 'play' && answered) {
-      if (missed) play(L.id);
-      else if (wins >= WIN) clear();
-      else { ask(); flick(); }
-    }
+  $('flip').addEventListener('click', function () { if (cab.dataset.v === 'play' && answered) next(); });
+  function show() {   // open the day where it was left: the end, an open card, or the board
+    if (S.open >= 0 && S.res[S.open]) { S.open = -1; save(); }
+    if (over()) return end();
+    if (S.open >= 0) return ask();
+    board(); view('board');
+  }
+  document.addEventListener('visibilitychange', function () {   // a finished or untouched day rolls over at midnight
+    if (document.hidden || FIXED !== null || today() === S.day || !(over() || !S.path.length)) return;
+    S = load(); save(); show();
   });
+  cab.classList.add('poweron'); show(); save();
 
   // offline: sw.js keeps a saved copy so the game loads at the field with no signal
   try { if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost')) navigator.serviceWorker.register('sw.js').catch(function () {}); } catch (e) {}

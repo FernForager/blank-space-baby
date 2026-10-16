@@ -8,6 +8,7 @@
    "w": "11",
    "means": "One of them must be the goalkeeper",
    "ex": "Each team may have at most 11 players on the field",
+   "hook": "players",
    "k": "count",
    "src": "https://www.theifab.com/laws/latest/the-players/",
    "d": 1
@@ -16,6 +17,7 @@
    "w": "7",
    "means": "The minimum to start or carry on",
    "ex": "A match can’t start or go on if a team has fewer than 7 players",
+   "hook": "can’t start",
    "k": "count",
    "src": "https://www.theifab.com/laws/latest/the-players/",
    "d": 2
@@ -24,32 +26,36 @@
    "w": "5",
    "means": "Extra time and concussion subs add more",
    "ex": "In official competitions, the Laws let a team use at most 5 substitutes",
-   "k": "count",
-   "src": "https://www.theifab.com/laws/latest/the-players/",
-   "d": 1,
-   "current": true
-  },
-  {
-   "w": "3",
-   "means": "Several subs at once count as one",
-   "ex": "In top leagues, a team gets 3 chances to make subs, plus half-time",
+   "hook": "substitutes",
    "k": "count",
    "src": "https://www.theifab.com/laws/latest/the-players/",
    "d": 2,
    "current": true
   },
   {
+   "w": "3",
+   "means": "Several subs at once count as one",
+   "ex": "In top leagues, a team gets 3 chances to make subs, plus half-time",
+   "hook": "make subs",
+   "k": "count",
+   "src": "https://www.theifab.com/laws/latest/the-players/",
+   "d": 3,
+   "current": true
+  },
+  {
    "w": "2",
    "means": "The second yellow brings the red",
    "ex": "A player gets sent off for 2 cautions in the same match",
+   "hook": "sent off",
    "k": "count",
    "src": "https://www.theifab.com/laws/latest/fouls-and-misconduct/",
-   "d": 1
+   "d": 2
   },
   {
    "w": "15",
    "means": "The range allowed is 3 to 15",
    "ex": "The Laws cap a team’s named substitutes at 15",
+   "hook": "Laws",
    "k": "count",
    "src": "https://www.theifab.com/laws/latest/the-players/",
    "d": 3,
@@ -59,6 +65,7 @@
    "w": "1",
    "means": "Competition rules set who sits there",
    "ex": "The number of people allowed to coach from the technical area at one time is 1",
+   "hook": "technical",
    "k": "count",
    "src": "https://www.theifab.com/laws/latest/the-field-of-play/",
    "d": 2
@@ -67,6 +74,7 @@
    "w": "45 minutes",
    "means": "Two equal halves make 90 minutes",
    "ex": "Each half of a match lasts 45 minutes",
+   "hook": "each half",
    "k": "time",
    "src": "https://www.theifab.com/laws/latest/the-duration-of-the-match/",
    "d": 1
@@ -75,6 +83,7 @@
    "w": "15 minutes",
    "means": "Competition rules set the exact break",
    "ex": "Half-time may last no longer than 15 minutes",
+   "hook": "half-time",
    "k": "time",
    "src": "https://www.theifab.com/laws/latest/the-duration-of-the-match/",
    "d": 2
@@ -83,6 +92,7 @@
    "w": "8 seconds",
    "means": "The ref shows the last 5 with a hand",
    "ex": "A keeper may hold the ball in their hands for up to 8 seconds",
+   "hook": "their hands",
    "k": "time",
    "src": "https://www.theifab.com/laws/latest/fouls-and-misconduct/",
    "d": 2,
@@ -92,6 +102,7 @@
    "w": "10 seconds",
    "means": "The clock starts when the board goes up",
    "ex": "A subbed-off player must be off the field within 10 seconds",
+   "hook": "subbed-off",
    "k": "time",
    "src": "https://www.theifab.com/laws/latest/the-players/",
    "d": 3,
@@ -101,15 +112,17 @@
    "w": "5 seconds",
    "means": "Then the other team gets the throw",
    "ex": "A stalling thrower gets a countdown of 5 seconds before losing the throw",
+   "hook": "thrower",
    "k": "time",
    "src": "https://www.theifab.com/laws/latest/the-throw-in/",
-   "d": 3,
+   "d": 2,
    "current": true
   },
   {
    "w": "1 minute",
    "means": "Cooling breaks can run longer",
    "ex": "A drinks break should last no longer than 1 minute",
+   "hook": "drinks break",
    "k": "time",
    "src": "https://www.theifab.com/laws/latest/the-duration-of-the-match/",
    "d": 2
@@ -118,14 +131,16 @@
    "w": "3 minutes",
    "means": "The ref adds the lost time back on",
    "ex": "A cooling break lasts between 90 seconds and 3 minutes",
+   "hook": "cooling",
    "k": "time",
    "src": "https://www.theifab.com/laws/latest/the-duration-of-the-match/",
-   "d": 3
+   "d": 2
   },
   {
    "w": "10 minutes",
    "means": "Sin bins run 10–15% of playing time",
    "ex": "In a 90-minute match, the Laws suggest a sin bin of 10 minutes",
+   "hook": "sin bin",
    "k": "time",
    "src": "https://www.theifab.com/laws/latest/guidelines-for-temporary-dismissals/",
    "d": 3
@@ -134,14 +149,16 @@
    "w": "10 yards",
    "means": "9.15 m, same as the center circle",
    "ex": "At a free kick, opponents must be at least 10 yards from the ball",
+   "hook": "free kick",
    "k": "measure",
    "src": "https://www.theifab.com/laws/latest/free-kicks/",
-   "d": 1
+   "d": 2
   },
   {
    "w": "12 yards",
    "means": "11 m from the middle of the goal",
    "ex": "The penalty mark is 12 yards from the middle of the goal line",
+   "hook": "penalty mark",
    "k": "measure",
    "src": "https://www.theifab.com/laws/latest/the-field-of-play/",
    "d": 2
@@ -150,22 +167,25 @@
    "w": "18 yards",
    "means": "16.5 m in the metric version",
    "ex": "The penalty area stretches 18 yards out from the goal line",
+   "hook": "penalty area",
    "k": "measure",
    "src": "https://www.theifab.com/laws/latest/the-field-of-play/",
-   "d": 1
+   "d": 2
   },
   {
    "w": "6 yards",
    "means": "5.5 m out, and 5.5 m from each post",
    "ex": "The goal area stretches 6 yards out from the goal line",
+   "hook": "goal area",
    "k": "measure",
    "src": "https://www.theifab.com/laws/latest/the-field-of-play/",
-   "d": 1
+   "d": 2
   },
   {
    "w": "8 yards",
    "means": "7.32 m between the insides of the posts",
    "ex": "A full-size goal is 8 yards wide",
+   "hook": "full-size",
    "k": "measure",
    "src": "https://www.theifab.com/laws/latest/the-field-of-play/",
    "d": 2
@@ -174,6 +194,7 @@
    "w": "8 feet",
    "means": "2.44 m to the bottom edge of the bar",
    "ex": "The crossbar sits 8 feet above the ground",
+   "hook": "crossbar",
    "k": "measure",
    "src": "https://www.theifab.com/laws/latest/the-field-of-play/",
    "d": 2
@@ -182,14 +203,16 @@
    "w": "2 yards",
    "means": "Or 2 m, measured from where it’s thrown",
    "ex": "At a throw-in, opponents must stand at least 2 yards away",
+   "hook": "throw-in",
    "k": "measure",
    "src": "https://www.theifab.com/laws/latest/the-throw-in/",
-   "d": 2
+   "d": 3
   },
   {
    "w": "4.5 yards",
    "means": "4 m, until the ball touches the ground",
    "ex": "At a dropped ball, all other players must be at least 4.5 yards away",
+   "hook": "dropped ball",
    "k": "measure",
    "src": "https://www.theifab.com/laws/latest/the-start-and-restart-of-play/",
    "d": 3
@@ -198,6 +221,7 @@
    "w": "1 yard",
    "means": "Too close gives an indirect free kick",
    "ex": "Attackers must stay at least 1 yard from a wall of three or more defenders",
+   "hook": "wall",
    "k": "measure",
    "src": "https://www.theifab.com/laws/latest/free-kicks/",
    "d": 3
@@ -206,47 +230,53 @@
    "w": "5 feet",
    "means": "At least 1.5 m tall in metric",
    "ex": "A corner flagpost must be at least 5 feet tall",
+   "hook": "flagpost",
    "k": "measure",
    "src": "https://www.theifab.com/laws/latest/the-field-of-play/",
-   "d": 3
+   "d": 2
   },
   {
    "w": "5 inches",
    "means": "12 cm is the metric limit",
    "ex": "Field lines can be no wider than 5 inches",
+   "hook": "field lines",
    "k": "measure",
    "src": "https://www.theifab.com/laws/latest/the-field-of-play/",
-   "d": 3
+   "d": 1
   },
   {
    "w": "corner kick",
    "means": "Taken from the corner nearest the keeper",
    "ex": "Since 2025, a keeper who holds the ball too long gives away a corner kick",
+   "hook": "keeper",
    "k": "restart",
    "src": "https://www.theifab.com/laws/latest/fouls-and-misconduct/",
-   "d": 2,
+   "d": 3,
    "current": true
   },
   {
    "w": "goal kick",
    "means": "Taken from anywhere in the goal area",
    "ex": "A shot that goes wide without touching the other team means a goal kick",
+   "hook": "goes wide",
    "k": "restart",
    "src": "https://www.theifab.com/laws/latest/the-goal-kick/",
-   "d": 1
+   "d": 2
   },
   {
    "w": "throw-in",
    "means": "Taken where the ball went out",
    "ex": "When the whole ball crosses a touchline, play restarts with a throw-in",
+   "hook": "whole ball",
    "k": "restart",
    "src": "https://www.theifab.com/laws/latest/the-throw-in/",
-   "d": 1
+   "d": 2
   },
   {
    "w": "dropped ball",
    "means": "The ball is replaced with the ref’s OK",
    "ex": "If the ball bursts in open play, the game restarts with a dropped ball",
+   "hook": "bursts",
    "k": "restart",
    "src": "https://www.theifab.com/laws/latest/the-ball/",
    "d": 2
@@ -255,6 +285,7 @@
    "w": "kick-off",
    "means": "Also starts each half",
    "ex": "After a goal is scored, play restarts with a kick-off",
+   "hook": "scored",
    "k": "restart",
    "src": "https://www.theifab.com/laws/latest/the-start-and-restart-of-play/",
    "d": 1
@@ -263,6 +294,7 @@
    "w": "penalty kick",
    "means": "The keeper must stay on the goal line",
    "ex": "A trip by a defender inside their own box gives away a penalty kick",
+   "hook": "own box",
    "k": "restart",
    "src": "https://www.theifab.com/laws/latest/the-penalty-kick/",
    "d": 1
@@ -271,6 +303,7 @@
    "w": "indirect free kick",
    "means": "Taken from where the offense happened",
    "ex": "An offside offense is punished with an indirect free kick",
+   "hook": "offside",
    "k": "restart",
    "src": "https://www.theifab.com/laws/latest/offside/",
    "d": 2
@@ -279,6 +312,7 @@
    "w": "assistant referee",
    "means": "They also flag for throw-ins and corners",
    "ex": "Each assistant referee carries a flag to help with offside",
+   "hook": "flag",
    "k": "role",
    "src": "https://www.theifab.com/laws/latest/glossary/referee-terms/",
    "d": 1
@@ -287,6 +321,7 @@
    "w": "fourth official",
    "means": "The referee may add more, never less",
    "ex": "The fourth official shows the minimum added time for each half",
+   "hook": "added time",
    "k": "role",
    "src": "https://www.theifab.com/laws/latest/the-duration-of-the-match/",
    "d": 2
@@ -295,6 +330,7 @@
    "w": "VAR",
    "means": "It checks goals, penalties and reds",
    "ex": "The VAR uses replays to help with clear and obvious errors",
+   "hook": "replays",
    "k": "role",
    "src": "https://www.theifab.com/laws/latest/the-other-match-officials/",
    "d": 1
@@ -303,14 +339,16 @@
    "w": "AVAR",
    "means": "The A stands for assistant",
    "ex": "The AVAR watches the live TV feed while the VAR checks an incident",
+   "hook": "live TV",
    "k": "role",
    "src": "https://www.theifab.com/laws/latest/the-other-match-officials/",
-   "d": 3
+   "d": 2
   },
   {
    "w": "captain",
    "means": "Teammates’ behavior is partly on them",
    "ex": "Under the Laws, the captain has no special status or privileges",
+   "hook": "privileges",
    "k": "role",
    "src": "https://www.theifab.com/laws/latest/the-players/",
    "d": 2
@@ -319,6 +357,7 @@
    "w": "goalkeeper",
    "means": "Outside the area, the arm rule applies",
    "ex": "A goalkeeper may handle the ball inside their own penalty area",
+   "hook": "handle",
    "k": "role",
    "src": "https://www.theifab.com/laws/latest/fouls-and-misconduct/",
    "d": 1
@@ -327,6 +366,7 @@
    "w": "simulation",
    "means": "It earns a yellow card",
    "ex": "Faking an injury to fool the referee is called simulation",
+   "hook": "injury",
    "k": "offense",
    "src": "https://www.theifab.com/laws/latest/fouls-and-misconduct/",
    "d": 1
@@ -335,6 +375,7 @@
    "w": "dissent",
    "means": "Punished with a yellow card",
    "ex": "Protesting a referee’s call by word or action is dissent",
+   "hook": "referee",
    "k": "offense",
    "src": "https://www.theifab.com/laws/latest/fouls-and-misconduct/",
    "d": 2
@@ -343,22 +384,25 @@
    "w": "serious foul play",
    "means": "A straight red card",
    "ex": "A tackle that endangers an opponent’s safety is serious foul play",
+   "hook": "tackle",
    "k": "offense",
    "src": "https://www.theifab.com/laws/latest/fouls-and-misconduct/",
-   "d": 2
+   "d": 1
   },
   {
    "w": "violent conduct",
    "means": "Red, contact or not",
    "ex": "Brutal force when not going for the ball is violent conduct",
+   "hook": "force",
    "k": "offense",
    "src": "https://www.theifab.com/laws/latest/fouls-and-misconduct/",
-   "d": 2
+   "d": 1
   },
   {
    "w": "handball",
    "means": "The shoulder doesn’t count as arm",
    "ex": "Scoring straight off your arm, even by accident, is handball",
+   "hook": "by accident",
    "k": "offense",
    "src": "https://www.theifab.com/laws/latest/fouls-and-misconduct/",
    "d": 1
@@ -367,6 +411,7 @@
    "w": "offside",
    "means": "Only head, body and feet count",
    "ex": "Hands and arms don’t count when judging an offside position",
+   "hook": "arms",
    "k": "offense",
    "src": "https://www.theifab.com/laws/latest/offside/",
    "d": 2
@@ -375,6 +420,7 @@
    "w": "holding",
    "means": "A direct free kick offense",
    "ex": "Grabbing an opponent’s arm to slow them down is holding",
+   "hook": "opponent",
    "k": "offense",
    "src": "https://www.theifab.com/laws/latest/fouls-and-misconduct/",
    "d": 1
@@ -383,6 +429,7 @@
    "w": "halfway line",
    "means": "Only at a stoppage, with the ref’s OK",
    "ex": "A substitute must come on level with the halfway line",
+   "hook": "come on",
    "k": "place",
    "src": "https://www.theifab.com/laws/latest/the-players/",
    "d": 2
@@ -391,14 +438,16 @@
    "w": "touchline",
    "means": "100–130 yards long",
    "ex": "Each of the two longer boundary lines is a touchline",
+   "hook": "boundary",
    "k": "place",
    "src": "https://www.theifab.com/laws/latest/the-field-of-play/",
-   "d": 1
+   "d": 2
   },
   {
    "w": "goal line",
    "means": "The goal sits in the middle of it",
    "ex": "Each of the two shorter boundary lines is a goal line",
+   "hook": "shorter",
    "k": "place",
    "src": "https://www.theifab.com/laws/latest/the-field-of-play/",
    "d": 1
@@ -407,6 +456,7 @@
    "w": "penalty mark",
    "means": "Its center, to be exact",
    "ex": "For a penalty kick, the ball must touch or hang over the penalty mark",
+   "hook": "must touch",
    "k": "place",
    "src": "https://www.theifab.com/laws/latest/the-penalty-kick/",
    "d": 1
@@ -415,6 +465,7 @@
    "w": "goal area",
    "means": "The smaller box in front of goal",
    "ex": "A goal kick can be taken from anywhere in the goal area",
+   "hook": "anywhere",
    "k": "place",
    "src": "https://www.theifab.com/laws/latest/the-goal-kick/",
    "d": 2
@@ -423,6 +474,7 @@
    "w": "penalty area",
    "means": "The keeper’s handling zone too",
    "ex": "At a goal kick, opponents must wait outside the penalty area",
+   "hook": "goal kick",
    "k": "place",
    "src": "https://www.theifab.com/laws/latest/the-goal-kick/",
    "d": 2
@@ -431,6 +483,7 @@
    "w": "technical area",
    "means": "Up to 1 yard from the touchline",
    "ex": "Coaches and subs sit in the technical area",
+   "hook": "coaches",
    "k": "place",
    "src": "https://www.theifab.com/laws/latest/the-field-of-play/",
    "d": 2
@@ -439,6 +492,7 @@
    "w": "shinguards",
    "means": "Sizing them right is each player’s job",
    "ex": "A player’s socks must cover the shinguards",
+   "hook": "socks",
    "k": "gear",
    "src": "https://www.theifab.com/laws/latest/the-players-equipment/",
    "d": 1
@@ -447,6 +501,7 @@
    "w": "jewelry",
    "means": "Covering it with tape isn’t allowed",
    "ex": "Players must take off all jewelry before playing",
+   "hook": "take off",
    "k": "gear",
    "src": "https://www.theifab.com/laws/latest/the-players-equipment/",
    "d": 1
@@ -455,6 +510,7 @@
    "w": "armband",
    "means": "Every team needs a captain on the field",
    "ex": "Each team’s captain must wear an identifying armband",
+   "hook": "captain",
    "k": "gear",
    "src": "https://www.theifab.com/laws/latest/the-players/",
    "d": 1
@@ -463,14 +519,16 @@
    "w": "sleeves",
    "means": "Or an exact copy of the sleeve pattern",
    "ex": "A player’s undershirt must match the main color of the shirt’s sleeves",
+   "hook": "undershirt",
    "k": "gear",
    "src": "https://www.theifab.com/laws/latest/the-players-equipment/",
-   "d": 2
+   "d": 1
   },
   {
    "w": "shorts",
    "means": "All teammates must match each other",
    "ex": "A player’s tights must match the main color of the shorts",
+   "hook": "tights",
    "k": "gear",
    "src": "https://www.theifab.com/laws/latest/the-players-equipment/",
    "d": 2
@@ -479,6 +537,7 @@
    "w": "advantage",
    "means": "If it fails, the foul is called",
    "ex": "Letting play go on because it helps the fouled team is advantage",
+   "hook": "fouled team",
    "k": "term",
    "src": "https://www.theifab.com/laws/latest/the-referee/",
    "d": 1
@@ -487,6 +546,7 @@
    "w": "wall",
    "means": "Attackers must stay 1 yard away",
    "ex": "At a free kick, three or more defenders standing side by side are called the wall",
+   "hook": "defenders",
    "k": "term",
    "src": "https://www.theifab.com/laws/latest/free-kicks/",
    "d": 1
@@ -495,6 +555,7 @@
    "w": "extra time",
    "means": "Not the same as added time",
    "ex": "Two periods of up to 15 minutes each make up extra time",
+   "hook": "two periods",
    "k": "term",
    "src": "https://www.theifab.com/laws/latest/determining-the-outcome-of-a-match/",
    "d": 1
@@ -503,14 +564,16 @@
    "w": "additional time",
    "means": "The fourth official shows the minimum",
    "ex": "Each half ends with additional time to make up for time lost",
+   "hook": "half ends",
    "k": "term",
    "src": "https://www.theifab.com/laws/latest/the-duration-of-the-match/",
-   "d": 2
+   "d": 1
   },
   {
    "w": "coin toss",
    "means": "The winner picks a goal or the kick-off",
    "ex": "Before a match, the team that wins the coin toss picks a goal or the kick-off",
+   "hook": "picks a goal",
    "k": "term",
    "src": "https://www.theifab.com/laws/latest/the-start-and-restart-of-play/",
    "d": 1
@@ -519,14 +582,16 @@
    "w": "feinting",
    "means": "Feint after the run-up and it’s a yellow",
    "ex": "At a penalty kick, feinting is fine during the run-up but not after",
+   "hook": "run-up",
    "k": "term",
    "src": "https://www.theifab.com/laws/latest/the-penalty-kick/",
-   "d": 3
+   "d": 2
   },
   {
    "w": "shoot-out",
    "means": "Officially: kicks from the penalty mark",
    "ex": "Under the Laws, a match still tied after extra time can go to a shoot-out",
+   "hook": "still tied",
    "k": "term",
    "src": "https://www.theifab.com/laws/latest/determining-the-outcome-of-a-match/",
    "d": 1

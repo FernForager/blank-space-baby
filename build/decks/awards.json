@@ -8,31 +8,35 @@
       "w": "Messi",
       "means": "Brazil 2014 and Qatar 2022",
       "ex": "Messi is the only man to win the World Cup Golden Ball twice",
+      "hook": "Golden Ball",
       "k": "wc",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/messi-golden-ball-record",
-      "d": 1,
+      "d": 2,
       "current": true
     },
     {
       "w": "Mbappé",
       "means": "Ten goals in 2026, eight in 2022",
       "ex": "Mbappé won the Golden Boot at both the 2022 and 2026 World Cups",
+      "hook": "World Cups",
       "k": "wc",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/fifa-world-cup-all-time-leading-scorers",
-      "d": 1
+      "d": 2
     },
     {
       "w": "Rodri",
       "means": "Spain conceded only one goal",
       "ex": "Rodri won the Golden Ball at the 2026 World Cup",
+      "hook": "Golden Ball",
       "k": "wc",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/overall-tournament-review-spain-argentina",
-      "d": 1
+      "d": 2
     },
     {
       "w": "Paolo Rossi",
       "means": "Both came at Spain 1982",
       "ex": "Paolo Rossi won the first-ever World Cup Golden Ball and Golden Boot",
+      "hook": "Golden Boot",
       "k": "wc",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/fontaine-mbappe-ronaldo-and-more-every-world-cup-top-scorer",
       "d": 3
@@ -41,6 +45,7 @@
       "w": "James Rodríguez",
       "means": "Six goals, one a famous volley",
       "ex": "James Rodríguez won the Golden Boot at the 2014 World Cup",
+      "hook": "2014",
       "k": "wc",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/fontaine-mbappe-ronaldo-and-more-every-world-cup-top-scorer",
       "d": 2
@@ -49,14 +54,16 @@
       "w": "Mario Kempes",
       "means": "He scored twice in the final",
       "ex": "Mario Kempes was the top scorer at the 1978 World Cup, with six goals",
+      "hook": "six goals",
       "k": "wc",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/fontaine-mbappe-ronaldo-and-more-every-world-cup-top-scorer",
-      "d": 3
+      "d": 2
     },
     {
       "w": "Gary Lineker",
       "means": "Six goals at Mexico 1986",
       "ex": "Gary Lineker was the top scorer at the 1986 World Cup",
+      "hook": "top scorer",
       "k": "wc",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/fontaine-mbappe-ronaldo-and-more-every-world-cup-top-scorer",
       "d": 2
@@ -65,22 +72,25 @@
       "w": "Dembélé",
       "means": "PSG won the Champions League",
       "ex": "Dembélé was named The Best FIFA Men’s Player for 2025",
+      "hook": "2025",
       "k": "best",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
-      "d": 1
+      "d": 2
     },
     {
       "w": "Vinícius Jr",
       "means": "Brazil’s first winner since 2007",
       "ex": "Vinícius Jr was named The Best FIFA Men’s Player for 2024",
+      "hook": "2024",
       "k": "best",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
-      "d": 1
+      "d": 2
     },
     {
       "w": "Kaká",
       "means": "He starred for AC Milan",
       "ex": "In 2007, Kaká was named FIFA World Player of the Year",
+      "hook": "2007",
       "k": "best",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
       "d": 2
@@ -89,14 +99,16 @@
       "w": "Romário",
       "means": "He won the World Cup that year",
       "ex": "In 1994, Romário was the first Brazilian named FIFA’s top male player",
+      "hook": "Brazilian",
       "k": "best",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
-      "d": 3
+      "d": 2
     },
     {
       "w": "Luka Modrić",
       "means": "Cristiano Ronaldo was runner-up",
       "ex": "Luka Modrić won The Best FIFA Men’s Player award for 2018",
+      "hook": "Men’s Player",
       "k": "best",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
       "d": 2
@@ -105,6 +117,7 @@
       "w": "Lewandowski",
       "means": "Messi was third in 2020",
       "ex": "Lewandowski won The Best FIFA Men’s Player award in 2020 and 2021",
+      "hook": "2021",
       "k": "best",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
       "d": 2
@@ -113,6 +126,7 @@
       "w": "Ronaldinho",
       "means": "Nicknamed “The Wizard”",
       "ex": "Ronaldinho was FIFA’s top male player in 2004 and 2005",
+      "hook": "2004",
       "k": "best",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
       "d": 2
@@ -121,6 +135,7 @@
       "w": "George Weah",
       "means": "He won Fair Play the next year",
       "ex": "George Weah was named FIFA’s top male player in 1995",
+      "hook": "1995",
       "k": "best",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
       "d": 3
@@ -129,78 +144,97 @@
       "w": "Marta",
       "means": "She won a sixth in 2018",
       "ex": "Marta was FIFA’s top women’s player five years in a row, 2006–2010",
+      "hook": "five years",
       "k": "woman",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
-      "d": 1
+      "d": 2,
+      "women": true
     },
     {
       "w": "Aitana Bonmatí",
       "means": "Her third win in a row",
       "ex": "Aitana Bonmatí was named The Best FIFA Women’s Player for 2025",
+      "hook": "2025",
       "k": "woman",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
-      "d": 1
+      "d": 2,
+      "women": true
     },
     {
       "w": "Alexia Putellas",
       "means": "The Best’s first back-to-back winner",
       "ex": "Alexia Putellas won The Best Women’s Player award in 2021 and 2022",
+      "hook": "2022",
       "k": "woman",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
-      "d": 2
+      "d": 2,
+      "women": true
     },
     {
       "w": "Mia Hamm",
       "means": "The first name on FIFA’s list",
       "ex": "Mia Hamm was FIFA’s top women’s player in 2001 and 2002",
+      "hook": "2001",
       "k": "woman",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
-      "d": 2
+      "d": 2,
+      "women": true
     },
     {
       "w": "Birgit Prinz",
       "means": "Three wins in a row",
       "ex": "Birgit Prinz was FIFA’s top women’s player from 2003 to 2005",
+      "hook": "2005",
       "k": "woman",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
-      "d": 3
+      "d": 3,
+      "women": true
     },
     {
       "w": "Carli Lloyd",
       "means": "Marta was runner-up in 2016",
       "ex": "Carli Lloyd was FIFA’s top women’s player in 2015 and 2016",
+      "hook": "2016",
       "k": "woman",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
-      "d": 2
+      "d": 2,
+      "women": true
     },
     {
       "w": "Megan Rapinoe",
       "means": "Alex Morgan finished second",
       "ex": "Megan Rapinoe was named The Best FIFA Women’s Player for 2019",
+      "hook": "2019",
       "k": "woman",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
-      "d": 1
+      "d": 2,
+      "women": true
     },
     {
       "w": "Mary Earps",
       "means": "She kept goal as England won EURO 2022",
       "ex": "Mary Earps won The Best FIFA Women’s Goalkeeper award in 2022 and 2023",
+      "hook": "2023",
       "k": "keeper",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
-      "d": 2
+      "d": 1,
+      "women": true
     },
     {
       "w": "Hannah Hampton",
       "means": "She also won Women’s EURO 2025",
       "ex": "Hannah Hampton won The Best Women’s Goalkeeper award for 2025",
+      "hook": "Women’s",
       "k": "keeper",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
-      "d": 2
+      "d": 1,
+      "women": true
     },
     {
       "w": "Emiliano Martínez",
       "means": "He won it in 2022 and 2024",
       "ex": "Emiliano Martínez was the first to win The Best Men’s Goalkeeper award twice",
+      "hook": "Goalkeeper",
       "k": "keeper",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
       "d": 2
@@ -209,6 +243,7 @@
       "w": "Donnarumma",
       "means": "A Champions League final shutout",
       "ex": "Donnarumma won The Best Men’s Goalkeeper award for 2025",
+      "hook": "Goalkeeper",
       "k": "keeper",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
       "d": 2
@@ -217,14 +252,16 @@
       "w": "Unai Simón",
       "means": "Spain let in just one goal",
       "ex": "Unai Simón won the Golden Glove at the 2026 World Cup",
+      "hook": "Golden Glove",
       "k": "keeper",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/overall-tournament-review-spain-argentina",
-      "d": 1
+      "d": 2
     },
     {
       "w": "Manuel Neuer",
       "means": "Germany won that World Cup",
       "ex": "Manuel Neuer won the Golden Glove at the 2014 World Cup",
+      "hook": "2014",
       "k": "keeper",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/messi-golden-ball-record",
       "d": 2
@@ -233,14 +270,17 @@
       "w": "Sarina Wiegman",
       "means": "Her fifth win, a record",
       "ex": "Sarina Wiegman won The Best Women’s Coach award for 2025",
+      "hook": "Women’s",
       "k": "coach",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
-      "d": 1
+      "d": 1,
+      "women": true
     },
     {
       "w": "Luis Enrique",
       "means": "PSG won its first Champions League",
       "ex": "Luis Enrique was FIFA’s top men’s coach in 2015 and again in 2025",
+      "hook": "men’s coach",
       "k": "coach",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
       "d": 2
@@ -249,6 +289,7 @@
       "w": "Carlo Ancelotti",
       "means": "Real Madrid won Europe again",
       "ex": "Carlo Ancelotti won The Best FIFA Men’s Coach award for 2024",
+      "hook": "2024",
       "k": "coach",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
       "d": 2
@@ -257,14 +298,16 @@
       "w": "Lionel Scaloni",
       "means": "Argentina won the 2022 World Cup",
       "ex": "Lionel Scaloni won The Best Men’s Coach award for 2022",
+      "hook": "2022",
       "k": "coach",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
-      "d": 1
+      "d": 2
     },
     {
       "w": "Jürgen Klopp",
       "means": "Hansi Flick was second in 2020",
       "ex": "Jürgen Klopp won The Best Men’s Coach award in 2019 and 2020",
+      "hook": "2020",
       "k": "coach",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
       "d": 2
@@ -273,14 +316,17 @@
       "w": "Emma Hayes",
       "means": "Two wins, three years apart",
       "ex": "Emma Hayes won The Best Women’s Coach award in 2021 and 2024",
+      "hook": "2021",
       "k": "coach",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
-      "d": 2
+      "d": 1,
+      "women": true
     },
     {
       "w": "Didier Deschamps",
       "means": "Zinedine Zidane was runner-up",
       "ex": "Didier Deschamps won The Best Men’s Coach award for 2018",
+      "hook": "2018",
       "k": "coach",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
       "d": 2
@@ -289,14 +335,16 @@
       "w": "Pep Guardiola",
       "means": "City won a historic treble",
       "ex": "Pep Guardiola won The Best Men’s Coach award for 2023",
+      "hook": "Men’s Coach",
       "k": "coach",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
-      "d": 1
+      "d": 2
     },
     {
       "w": "Cristiano Ronaldo",
       "means": "For Man United, against Porto",
       "ex": "Cristiano Ronaldo won the first FIFA Puskás Award, in 2009",
+      "hook": "2009",
       "k": "goal",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
       "d": 1
@@ -305,6 +353,7 @@
       "w": "Marcin Oleksy",
       "means": "A star of amputee soccer",
       "ex": "Marcin Oleksy won the 2022 FIFA Puskás Award with a scissor kick",
+      "hook": "scissor kick",
       "k": "goal",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
       "d": 3
@@ -313,6 +362,7 @@
       "w": "Alejandro Garnacho",
       "means": "An overhead kick for Man United",
       "ex": "Alejandro Garnacho won the 2024 FIFA Puskás Award for a goal at Everton",
+      "hook": "Everton",
       "k": "goal",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
       "d": 2
@@ -321,6 +371,7 @@
       "w": "Santiago Montiel",
       "means": "Second Argentine winner in a row",
       "ex": "Santiago Montiel won the 2025 FIFA Puskás Award with an overhead kick",
+      "hook": "Puskás Award",
       "k": "goal",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
       "d": 3
@@ -329,6 +380,7 @@
       "w": "Mohamed Salah",
       "means": "For Liverpool, against Everton",
       "ex": "Mohamed Salah won the FIFA Puskás Award in 2018",
+      "hook": "2018",
       "k": "goal",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
       "d": 2
@@ -337,6 +389,7 @@
       "w": "Son Heung-min",
       "means": "A solo run against Burnley",
       "ex": "Son Heung-min won the FIFA Puskás Award in 2020",
+      "hook": "2020",
       "k": "goal",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
       "d": 2
@@ -345,22 +398,26 @@
       "w": "Spain",
       "means": "Men in 2026, women in 2023",
       "ex": "In 2026, Spain became the first nation to hold both World Cup titles at once",
-      "k": "team",
-      "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/spain-men-women-first-simultaneous-champions",
-      "d": 1
-    },
-    {
-      "w": "Germany",
-      "means": "Plus four men’s World Cup wins",
-      "ex": "Germany won the Women’s World Cup in 2003 and 2007",
+      "hook": "2026",
       "k": "team",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/spain-men-women-first-simultaneous-champions",
       "d": 2
     },
     {
+      "w": "Germany",
+      "means": "Plus four men’s World Cup wins",
+      "ex": "Germany won the Women’s World Cup in 2003 and 2007",
+      "hook": "2003",
+      "k": "team",
+      "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/spain-men-women-first-simultaneous-champions",
+      "d": 2,
+      "women": true
+    },
+    {
       "w": "Celtic",
       "means": "They won Fair Play in 2003 too",
       "ex": "Celtic supporters won the FIFA Fan Award in 2017",
+      "hook": "Fan Award",
       "k": "team",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
       "d": 3
@@ -369,22 +426,26 @@
       "w": "Argentina",
       "means": "Messi’s second Golden Ball",
       "ex": "Argentina beat France on penalties in the 2022 World Cup final",
+      "hook": "France",
       "k": "team",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/messi-golden-ball-record",
-      "d": 1
+      "d": 2
     },
     {
       "w": "England",
       "means": "Spain won 1–0 in Sydney",
       "ex": "England lost to Spain in the 2023 Women’s World Cup final",
+      "hook": "Spain",
       "k": "team",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/spain-men-women-first-simultaneous-champions",
-      "d": 2
+      "d": 2,
+      "women": true
     },
     {
       "w": "Zakho SC",
       "means": "They tossed toys for sick kids",
       "ex": "Fans of Zakho SC won the 2025 FIFA Fan Award",
+      "hook": "Fan Award",
       "k": "team",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
       "d": 3
@@ -393,14 +454,16 @@
       "w": "Brazil",
       "means": "They wore black to fight racism",
       "ex": "The Brazil men’s team won the 2023 FIFA Fair Play Award",
+      "hook": "Fair Play",
       "k": "team",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
-      "d": 2
+      "d": 3
     },
     {
       "w": "1982",
       "means": "Paolo Rossi won both",
       "ex": "The World Cup first gave out the Golden Ball and Golden Boot in 1982",
+      "hook": "Golden Boot",
       "k": "year",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/fontaine-mbappe-ronaldo-and-more-every-world-cup-top-scorer",
       "d": 2
@@ -409,6 +472,7 @@
       "w": "2009",
       "means": "Cristiano Ronaldo won it",
       "ex": "FIFA gave out the first Puskás Award, for the best goal, in 2009",
+      "hook": "best goal",
       "k": "year",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
       "d": 2
@@ -417,14 +481,17 @@
       "w": "2024",
       "means": "Marta herself won it",
       "ex": "FIFA first gave the Marta Award, for the best women’s goal, in 2024",
+      "hook": "Marta Award",
       "k": "year",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
-      "d": 2
+      "d": 2,
+      "women": true
     },
     {
       "w": "1986",
       "means": "At the World Cup in Mexico",
       "ex": "Diego Maradona won the World Cup Golden Ball in 1986",
+      "hook": "Maradona",
       "k": "year",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/messi-golden-ball-record",
       "d": 2
@@ -433,22 +500,25 @@
       "w": "2014",
       "means": "Argentina lost that final",
       "ex": "Lionel Messi won his first Golden Ball at a senior World Cup in 2014",
+      "hook": "Messi",
       "k": "year",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/messi-golden-ball-record",
-      "d": 3
+      "d": 2
     },
     {
       "w": "2022",
       "means": "Argentina won that World Cup",
       "ex": "Emiliano Martinez won the World Cup’s Golden Glove in 2022",
+      "hook": "Golden Glove",
       "k": "year",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/messi-golden-ball-record",
-      "d": 1
+      "d": 2
     },
     {
       "w": "22",
       "means": "Miroslav Klose’s old record was 16",
       "ex": "Kylian Mbappé has scored a record 22 World Cup goals",
+      "hook": "Mbappé",
       "k": "num",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/fontaine-mbappe-ronaldo-and-more-every-world-cup-top-scorer",
       "d": 1,
@@ -458,14 +528,17 @@
       "w": "3",
       "means": "2023, 2024 and 2025",
       "ex": "Aitana Bonmatí won The Best Women’s Player award 3 years in a row",
+      "hook": "Bonmatí",
       "k": "num",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
-      "d": 1
+      "d": 2,
+      "women": true
     },
     {
       "w": "13",
       "means": "In only six games",
       "ex": "Just Fontaine scored a record 13 goals at the 1958 World Cup",
+      "hook": "Fontaine",
       "k": "num",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/fontaine-mbappe-ronaldo-and-more-every-world-cup-top-scorer",
       "d": 2,
@@ -475,24 +548,29 @@
       "w": "6",
       "means": "Five of them came in a row",
       "ex": "Marta was named FIFA’s top women’s player a record 6 times",
+      "hook": "Marta",
       "k": "num",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
       "d": 2,
+      "women": true,
       "current": true
     },
     {
       "w": "5",
       "means": "No coach has won it more",
       "ex": "Sarina Wiegman has won The Best Women’s Coach award 5 times",
+      "hook": "Wiegman",
       "k": "num",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
-      "d": 2,
+      "d": 3,
+      "women": true,
       "current": true
     },
     {
       "w": "7",
       "means": "In eight games",
       "ex": "Unai Simón kept a record 7 clean sheets at the 2026 World Cup",
+      "hook": "clean sheets",
       "k": "num",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/overall-tournament-review-spain-argentina",
       "d": 3,
@@ -502,6 +580,7 @@
       "w": "8",
       "means": "Including a final hat-trick",
       "ex": "Kylian Mbappé scored 8 goals at the 2022 World Cup",
+      "hook": "Mbappé",
       "k": "num",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/fontaine-mbappe-ronaldo-and-more-every-world-cup-top-scorer",
       "d": 2
@@ -510,6 +589,7 @@
       "w": "11",
       "means": "Hungary finished second",
       "ex": "Sándor Kocsis scored 11 goals at the 1954 World Cup",
+      "hook": "Kocsis",
       "k": "num",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/fontaine-mbappe-ronaldo-and-more-every-world-cup-top-scorer",
       "d": 3
@@ -518,54 +598,63 @@
       "w": "10",
       "means": "He won the Golden Boot again",
       "ex": "Kylian Mbappé scored 10 goals at the 2026 World Cup",
+      "hook": "2026",
       "k": "num",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/overall-tournament-review-spain-argentina",
-      "d": 1
+      "d": 2
     },
     {
       "w": "Golden Ball",
       "means": "Spain won that World Cup",
       "ex": "Aitana Bonmatí won the Golden Ball at the 2023 Women’s World Cup",
+      "hook": "Bonmatí",
       "k": "award",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/spain-men-women-first-simultaneous-champions",
-      "d": 1
+      "d": 2,
+      "women": true
     },
     {
       "w": "Golden Glove",
       "means": "For the tournament’s top keeper",
       "ex": "Mary Earps won the Golden Glove at the 2023 Women’s World Cup",
+      "hook": "Mary Earps",
       "k": "award",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/spain-men-women-first-simultaneous-champions",
-      "d": 1
+      "d": 2,
+      "women": true
     },
     {
       "w": "Golden Boot",
       "means": "For the tournament’s top scorer",
       "ex": "Harry Kane won the Golden Boot at the 2018 World Cup with six goals",
+      "hook": "Harry Kane",
       "k": "award",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/fontaine-mbappe-ronaldo-and-more-every-world-cup-top-scorer",
-      "d": 1
+      "d": 2
     },
     {
       "w": "Silver Ball",
       "means": "Rodri took the Golden Ball",
       "ex": "Lionel Messi won the Silver Ball at the 2026 World Cup",
+      "hook": "Messi",
       "k": "award",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/overall-tournament-review-spain-argentina",
-      "d": 3
+      "d": 2
     },
     {
       "w": "Young Player Award",
       "means": "He plays for Spain",
       "ex": "Pau Cubarsí won the Young Player Award at the 2026 World Cup",
+      "hook": "Cubarsí",
       "k": "award",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/overall-tournament-review-spain-argentina",
-      "d": 3
+      "d": 2
     },
     {
       "w": "Puskás Award",
       "means": "Named for a Hungarian legend",
       "ex": "Erik Lamela won the FIFA Puskás Award in 2021",
+      "hook": "Lamela",
       "k": "award",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
       "d": 2
@@ -574,14 +663,17 @@
       "w": "Marta Award",
       "means": "For the best women’s goal",
       "ex": "Lizbeth Ovalle’s scorpion kick won the 2025 FIFA Marta Award",
+      "hook": "Ovalle",
       "k": "award",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
-      "d": 2
+      "d": 2,
+      "women": true
     },
     {
       "w": "Fair Play Award",
       "means": "He helped a hurt rival breathe",
       "ex": "Luka Lochoshvili won the 2022 FIFA Fair Play Award",
+      "hook": "Lochoshvili",
       "k": "award",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
       "d": 3
@@ -590,6 +682,7 @@
       "w": "Fan Award",
       "means": "For their World Cup support",
       "ex": "Argentina supporters won the 2022 FIFA Fan Award",
+      "hook": "Argentina",
       "k": "award",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
       "d": 1

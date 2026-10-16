@@ -112,7 +112,7 @@ This repo is **public**. Never commit personal details: no last names, addresses
 
 - **Playwright in the sandbox:** the Python package may be missing. Install the version that matches the preinstalled Chromium (`pip install playwright==1.56.0` for chromium-1194). Never run `playwright install`.
 - **Offline:** `docs/sw.js` serves the page network-first (3-second fallback to the saved copy) and everything else cache-first. Bump `CACHE` in it if a cached file other than the page ever needs replacing. When the game folds into HQ, check `sw.js` against HQ's own setup.
-- **Fonts in the sandbox:** Google Fonts may be blocked, so screenshots fall back to system fonts and look wrong. Install Press Start 2P and Pixelify Sans into `~/.fonts` from github.com/google/fonts before trusting screenshots.
+- **Fonts in the sandbox:** Google Fonts may be blocked, so screenshots fall back to system fonts and look wrong. Install Press Start 2P and Pixelify Sans into `~/.fonts` from raw.githubusercontent.com/google/fonts (github.com’s own download links are blocked here) and run `fc-cache -f` before trusting screenshots.
 - **Two font fixes to keep:** Pixelify Sans draws 5 like an S and its "fi" ligature like an A, so keep digits in Press Start 2P and ligatures off. Check any new font for both problems.
 - **The Claude app's artifact viewer** adds its own title bar. That's not the game repeating its title. The real site has no such bar.
 - **Safe areas:** `.cab` pads by `env(safe-area-inset-*)` because the Home Screen version draws under the status bar. Test that the marquee clears the notch.

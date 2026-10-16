@@ -2,7 +2,7 @@
 
     python3 tools/checkdeck.py build/decks/mls.json      # prints problems, exits 1 if any
 
-Uses the same rules as build/build.py, plus: every item needs a source and a difficulty (d: 1–3),
+Uses the same rules as build/build.py (house style, hooks and difficulty), plus: every item needs a source,
 answers stay short, and each kind needs at least 4 items.
 """
 import json, os, sys, collections
@@ -12,7 +12,7 @@ from build import check
 path = sys.argv[1]
 deck = json.load(open(path))
 items = deck['items']
-bad = [p for p in check(os.path.basename(path), deck)]
+bad = [p for p in check(os.path.basename(path), deck, hooks=True)]
 kinds = collections.Counter(it.get('k', 'word') for it in items)
 for k, n in kinds.items():
     if n < 4: bad.append((k, 'kind has fewer than 4 items', n))
@@ -20,7 +20,6 @@ seen = collections.Counter(it['w'].lower() for it in items)
 for it in items:
     w = it['w']
     if not it.get('src', '').startswith('http'): bad.append((w, 'missing src URL'))
-    if it.get('d') not in (1, 2, 3): bad.append((w, 'missing or bad difficulty d (1–3)'))
     if len(w) > 20: bad.append((w, 'answer over 20 characters'))
     if seen[w.lower()] > 1: bad.append((w, 'same answer used more than once (allowed, but check the cards differ)'))
 for p in bad: print(*p, sep=' | ')

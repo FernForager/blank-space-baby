@@ -1,37 +1,77 @@
-"""Build Blank Space Baby.
+"""Build Triviela, the daily soccer trivia game.
 
     python3 build/build.py
 
 Reads build/template.html, build/head.html and the decks in build/decks/,
-checks every card against the house style, and writes docs/index.html
+checks every card against the house style and the hook rules, and writes docs/index.html
 (the live page). Stops with a list of problems if any card breaks a rule.
 """
 import json, os, re, sys
+from urllib.parse import urlparse
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 DECKS = os.path.join(HERE, 'decks')
 
-# The ten categories, in panel order (reading left to right, two per row). Names show on the keys.
-# A category with no deck file yet shows as a dim key until its deck is written and approved.
-CATS = [
-    ('alpha',   'alpha.json',    'Kid Slang'),
-    ('parents', 'parents.json',  'Parent Slang'),
-    ('grand',   None,            'Grandparent Slang'),
-    ('swift',   'swifties.json', 'Taylor Swift'),
-    ('tech',    None,            'Old Tech'),
-    ('grade7',  None,            '7th Grade'),
-    ('soccer',  'soccer.json',   'Soccer Lingo'),
-    ('wc',      None,            'World Cup 2026'),
-    ('sea',     None,            'Seattle'),
-    ('epl',     'epl.json',      'EPL'),
+# The decks the daily draws from (Morg, Oct 16, 2026: every soccer deck plus both slang decks, no Taylor Swift).
+#   league: the draw allows at most 3 cards a day from one league ('' for none, '*' for one per card, from its source site)
+#   women:  every card in the deck counts as a women's game card (elsewhere a card says so itself, with "women": true)
+#   rules:  every card in the deck counts as a rules card
+#   slang:  at most one card a day from the deck, and never a red one
+DAILY = [
+    # id            league         flags
+    ('alpha',      '',            'slang'),
+    ('parents',    '',            'slang'),
+    ('soccer',     '',            ''),
+    ('lingo-more', '',            ''),
+    ('rules',      '',            'rules'),
+    ('epl',        'epl',         ''),
+    ('epl-more',   'epl',         ''),
+    ('laliga',     'laliga',      ''),
+    ('bundesliga', 'bundesliga',  ''),
+    ('seriea',     'seriea',      ''),
+    ('ligue1',     'ligue1',      ''),
+    ('ligamx',     'ligamx',      ''),
+    ('mls',        'mls',         ''),
+    ('nwsl',       'nwsl',        'women'),
+    ('ucl',        'ucl',         ''),
+    ('nicknames',  '*',           ''),
+    ('intl-men',   '',            ''),
+    ('intl-women', '',            'women'),
+    ('wc26',       '',            ''),
+    ('legends',    '',            ''),
+    ('awards',     '',            ''),
 ]
-LEVELS = [c for c in CATS if c[1]]
+SITE_LEAGUE = {'premierleague.com': 'epl', 'laliga.com': 'laliga', 'bundesliga.com': 'bundesliga', 'legaseriea.it': 'seriea',
+               'ligue1.com': 'ligue1', 'ligamx.net': 'ligamx', 'mlssoccer.com': 'mls', 'nwslsoccer.com': 'nwsl'}
+START = [2026, 10, 16]   # the date of puzzle #1. A placeholder: the real numbering is Morg's call.
+REPEAT_DAYS = 91          # a card never comes back within 3 months, once there are enough cards
+WINDOW = 24               # the draw deals from a shuffle of each color's 24 oldest cards (WINDOW in template.html)
 
 def rx(w):
     return re.compile(r'(^|[^A-Za-z0-9])(' + re.escape(w) + r')(?![A-Za-z0-9])', re.I)
 
-def check(level, deck):
+HOOK_MAX = 12
+def words(s): return re.findall(r'[\w’]+', s.lower())
+def holds(a, b): return bool(b) and any(a[i:i + len(b)] == b for i in range(len(a) - len(b) + 1))   # word list b sits inside word list a
+
+def hook_problems(it):
+    """What's wrong with a card's hook (the word on its tile) and difficulty d. The rules are in build/decks/SPEC.md."""
+    h, w, ex, bad = it.get('hook'), it['w'], it['ex'], []
+    if not isinstance(h, str) or not h.strip(): bad.append('missing hook')
+    else:
+        if h != h.strip() or '  ' in h: bad.append('extra spaces in hook')
+        if len(h) > HOOK_MAX: bad.append(f'hook over {HOOK_MAX} characters')
+        if re.search(r"['\"]", h): bad.append('straight quote in hook')
+        if re.match(r'(the|a|an)\s', h, re.I): bad.append('hook starts with the, a or an')
+        if not re.search(r'(?<![\w’-])' + re.escape(h) + r'(?![\w-])', ex, re.I): bad.append('hook is not in the sentence')
+        hw, ww = words(h), words(w)
+        if holds(hw, ww) or holds(ww, hw): bad.append('hook is, holds or is part of the answer')
+    if it.get('d') not in (1, 2, 3): bad.append('missing or bad difficulty d (1–3)')
+    if 'women' in it and it['women'] is not True: bad.append('women must be true or left out')
+    return bad
+
+def check(level, deck, hooks=False):
     bad, items = [], deck['items']
     groups = {}
     for i, grp in enumerate(deck.get('groups', [])):
@@ -51,24 +91,41 @@ def check(level, deck):
         if len(ex) > 85: bad.append(tag + ('sentence over 85 characters', len(ex)))
         if len(mn) > 40: bad.append(tag + ('meaning over 40 characters', mn))
         if len(w) > 22: bad.append(tag + ('answer over 22 characters',))
+        if hooks: bad += [tag + (p, it.get('hook')) for p in hook_problems(it)]
         same = [x for x in items if x is not it and x.get('k', 'word') == it['k'] and not clash(x['w'], w)]
         if not any(not clash(x['w'], y['w']) for x in same for y in same if x is not y):
             bad.append(tag + ('not enough same-kind wrong answers',))
     return bad
 
+def league(deck_league, it):
+    if deck_league != '*': return deck_league
+    return SITE_LEAGUE.get(urlparse(it['src']).netloc.removeprefix('www.'), '')
+
 def main():
-    levels, problems = [], []
-    for lid, fname, name in LEVELS:
-        deck = json.load(open(os.path.join(DECKS, fname)))
-        problems += check(lid, deck)
-        levels.append({'id': lid, 'name': name, 'groups': deck.get('groups', []),
-                       'items': [{k: v for k, v in it.items() if k in ('w', 'means', 'ex', 'k')} for it in deck['items']]})
-        print(f'{name}: {len(deck["items"])} cards')
+    decks, problems, tiers = [], [], [0, 0, 0]
+    for did, lg, flags in DAILY:
+        deck = json.load(open(os.path.join(DECKS, did + '.json')))
+        problems += check(did, deck, hooks=True)
+        items = []
+        for it in deck['items']:
+            x = {k: it[k] for k in ('w', 'means', 'ex', 'k', 'hook', 'd') if k in it}
+            if lg == '*': x['lg'] = league(lg, it)
+            if it.get('women'): x['wm'] = 1
+            items.append(x)
+            if it.get('d') in (1, 2, 3) and not ('slang' in flags and it['d'] == 3): tiers[it['d'] - 1] += 1
+        decks.append({'id': did, 'lg': '' if lg == '*' else lg, 'wm': int('women' in flags), 'rl': int('rules' in flags),
+                      'sl': int('slang' in flags), 'groups': deck.get('groups', []), 'items': items})
+        print(f'{did}: {len(items)} cards')
     if problems:
         print('\nProblems:')
         for p in problems: print('  ', p)
         sys.exit(1)
-    tpl = open(os.path.join(HERE, 'template.html')).read().replace('__LEVELS__', json.dumps(levels, ensure_ascii=False)).replace('__CATS__', json.dumps([{'id': c[0], 'name': c[2], 'soon': not c[1]} for c in CATS], ensure_ascii=False))
+    print('\nIn the draw:', ', '.join(f'{n} {c}' for n, c in zip(tiers, ('white', 'yellow', 'red'))))
+    need = 6 * REPEAT_DAYS + WINDOW   # 6 a day for 3 months, plus the 24 oldest the draw shuffles from
+    print(f'Cards can stay 3 months apart once each color has about {need} cards. Until then the draw spaces them as far apart as it can:')
+    print(f'the smallest color ({min(tiers)} cards) repeats about every {(min(tiers) - WINDOW) // 6} days.')
+    tpl = open(os.path.join(HERE, 'template.html')).read()
+    tpl = tpl.replace('__DECKS__', json.dumps(decks, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')).replace('__START__', json.dumps(START))
     top, body = tpl.split('<style>', 1)              # title + font links move into <head>
     top = '\n'.join(l for l in top.splitlines() if 'claude:' not in l)
     head = open(os.path.join(HERE, 'head.html')).read().replace('</head>', top.strip() + '\n</head>')

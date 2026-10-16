@@ -8,22 +8,25 @@
    "w": "Real Madrid",
    "means": "Héctor Rial scored the winner",
    "ex": "Real Madrid won the very first European Cup final, against Reims",
+   "hook": "Reims",
    "k": "club",
    "src": "https://www.uefa.com/uefachampionsleague/history/seasons/1955/",
-   "d": 1
+   "d": 2
   },
   {
    "w": "Celtic",
    "means": "Remembered as the Lisbon Lions",
    "ex": "In 1967, Celtic beat two-time winners Inter in the final",
+   "hook": "Inter",
    "k": "club",
    "src": "https://www.uefa.com/uefachampionsleague/history/seasons/1966/",
-   "d": 2
+   "d": 3
   },
   {
    "w": "Manchester United",
    "means": "They beat Benfica 4–1 at Wembley",
    "ex": "In 1968, Manchester United became England’s first European champions",
+   "hook": "England",
    "k": "club",
    "src": "https://www.uefa.com/uefachampionsleague/history/seasons/1967/",
    "d": 2
@@ -32,6 +35,7 @@
    "w": "Ajax",
    "means": "They beat Panathinaikos in the final",
    "ex": "Johan Cruyff starred as Ajax won their first European Cup in 1971",
+   "hook": "Cruyff",
    "k": "club",
    "src": "https://www.uefa.com/uefachampionsleague/history/seasons/1970/",
    "d": 2
@@ -40,30 +44,34 @@
    "w": "Bayern Munich",
    "means": "Kingsley Coman scored the winner",
    "ex": "In 2020, Bayern Munich beat PSG in the final",
+   "hook": "PSG",
    "k": "club",
    "src": "https://www.uefa.com/uefachampionsleague/history/seasons/2020/",
-   "d": 1
+   "d": 2
   },
   {
    "w": "Nottingham Forest",
    "means": "Trevor Francis scored the winner",
    "ex": "In 1979, Nottingham Forest beat Malmö in the European Cup final",
+   "hook": "Malmö",
    "k": "club",
    "src": "https://www.uefa.com/uefachampionsleague/history/seasons/1978/",
-   "d": 2
+   "d": 3
   },
   {
    "w": "Aston Villa",
    "means": "The trophy went home to Birmingham",
    "ex": "In 1982, Aston Villa beat Bayern in the European Cup final",
+   "hook": "Bayern",
    "k": "club",
    "src": "https://www.uefa.com/uefachampionsleague/history/seasons/1981/",
-   "d": 2
+   "d": 3
   },
   {
    "w": "Barcelona",
    "means": "They beat Sampdoria 1–0 at Wembley",
    "ex": "Ronald Koeman’s free kick won Barcelona their first European Cup in 1992",
+   "hook": "Koeman",
    "k": "club",
    "src": "https://www.uefa.com/uefachampionsleague/history/seasons/1991/",
    "d": 2
@@ -72,6 +80,7 @@
    "w": "Marseille",
    "means": "Won the first Champions League final",
    "ex": "In 1993, Marseille became France’s first European champions",
+   "hook": "France",
    "k": "club",
    "src": "https://www.uefa.com/uefachampionsleague/history/seasons/1992/",
    "d": 2
@@ -80,6 +89,7 @@
    "w": "Porto",
    "means": "They beat Monaco in the final",
    "ex": "In 2004, Porto beat the odds to become champions of Europe",
+   "hook": "2004",
    "k": "club",
    "src": "https://www.uefa.com/uefachampionsleague/history/seasons/2003/",
    "d": 2
@@ -88,14 +98,16 @@
    "w": "Liverpool",
    "means": "They stunned Milan in the final",
    "ex": "Liverpool won the 2005 final known as the “Miracle of Istanbul”",
+   "hook": "Istanbul",
    "k": "club",
    "src": "https://www.uefa.com/uefachampionsleague/history/seasons/2004/",
-   "d": 1
+   "d": 2
   },
   {
    "w": "Inter",
    "means": "Part of a treble that season",
    "ex": "Diego Milito scored twice as Inter won the 2010 final",
+   "hook": "Milito",
    "k": "club",
    "src": "https://www.uefa.com/uefachampionsleague/history/seasons/2010/",
    "d": 2
@@ -104,30 +116,34 @@
    "w": "Chelsea",
    "means": "Thomas Tuchel was the coach",
    "ex": "In 2021, Chelsea beat Manchester City in the final",
+   "hook": "Manchester",
    "k": "club",
    "src": "https://www.uefa.com/uefachampionsleague/history/seasons/2021/",
-   "d": 1
+   "d": 2
   },
   {
    "w": "Manchester City",
    "means": "The final was in Istanbul",
    "ex": "Rodri scored as Manchester City beat Inter in the 2023 final",
+   "hook": "Rodri",
    "k": "club",
    "src": "https://www.uefa.com/uefachampionsleague/history/seasons/2023/",
-   "d": 1
+   "d": 2
   },
   {
    "w": "Paris Saint-Germain",
    "means": "They won it again in 2026",
    "ex": "In 2025, Paris Saint-Germain became first-time European champions",
+   "hook": "first-time",
    "k": "club",
    "src": "https://www.uefa.com/uefachampionsleague/history/seasons/2025/",
-   "d": 1
+   "d": 2
   },
   {
    "w": "Steaua București",
    "means": "Keeper Helmuth Duckadam was the hero",
    "ex": "In 1986, Steaua București beat Barcelona in a penalty shootout",
+   "hook": "Barcelona",
    "k": "club",
    "src": "https://www.uefa.com/uefachampionsleague/history/seasons/1985/",
    "d": 3
@@ -136,6 +152,7 @@
    "w": "Borussia Dortmund",
    "means": "They beat Juventus in Munich",
    "ex": "Super sub Lars Ricken sealed the 1997 title for Borussia Dortmund",
+   "hook": "Ricken",
    "k": "club",
    "src": "https://www.uefa.com/uefachampionsleague/history/seasons/1996/",
    "d": 3
@@ -144,6 +161,7 @@
    "w": "Atlético Madrid",
    "means": "Real’s city rivals lost 5–3 on penalties",
    "ex": "In 2016, Real Madrid beat Atlético Madrid on penalties in the final",
+   "hook": "penalties",
    "k": "club",
    "src": "https://www.uefa.com/uefachampionsleague/history/seasons/2016/",
    "d": 2
@@ -152,6 +170,7 @@
    "w": "Cristiano Ronaldo",
    "means": "Most goals and most games",
    "ex": "Cristiano Ronaldo holds the all-time records for goals and appearances",
+   "hook": "appearances",
    "k": "player",
    "src": "https://www.uefa.com/uefachampionsleague/history/",
    "d": 1,
@@ -161,6 +180,7 @@
    "w": "Lionel Messi",
    "means": "Behind only Cristiano Ronaldo",
    "ex": "Lionel Messi is second on the all-time scoring list with 129 goals",
+   "hook": "scoring list",
    "k": "player",
    "src": "https://www.uefa.com/uefachampionsleague/history/",
    "d": 1,
@@ -170,6 +190,7 @@
    "w": "Robert Lewandowski",
    "means": "Behind only Ronaldo and Messi",
    "ex": "Robert Lewandowski is third on the all-time scoring list with 109 goals",
+   "hook": "all-time",
    "k": "player",
    "src": "https://www.uefa.com/uefachampionsleague/history/",
    "d": 2,
@@ -179,30 +200,34 @@
    "w": "Gareth Bale",
    "means": "Real Madrid beat Liverpool",
    "ex": "Gareth Bale scored with an overhead kick in the 2018 final",
+   "hook": "overhead",
    "k": "player",
    "src": "https://www.uefa.com/uefachampionsleague/history/seasons/2018/",
-   "d": 1
+   "d": 2
   },
   {
    "w": "Kylian Mbappé",
    "means": "Harry Kane was next with 14",
    "ex": "Kylian Mbappé was the top scorer of 2025–26 with 15 goals",
+   "hook": "top scorer",
    "k": "player",
    "src": "https://www.uefa.com/uefachampionsleague/history/seasons/2026/",
-   "d": 1
+   "d": 2
   },
   {
    "w": "Erling Haaland",
    "means": "Mohamed Salah was next with 8",
    "ex": "Erling Haaland was the top scorer of 2022–23 with 12 goals",
+   "hook": "top scorer",
    "k": "player",
    "src": "https://www.uefa.com/uefachampionsleague/history/seasons/2023/",
-   "d": 1
+   "d": 2
   },
   {
    "w": "Zinédine Zidane",
    "means": "Real Madrid beat Leverkusen",
    "ex": "Zinédine Zidane scored a famous winner for Real Madrid in the 2002 final",
+   "hook": "Real Madrid",
    "k": "player",
    "src": "https://www.uefa.com/uefachampionsleague/history/seasons/2001/",
    "d": 2
@@ -211,6 +236,7 @@
    "w": "Didier Drogba",
    "means": "The shootout was against Bayern",
    "ex": "Didier Drogba hit Chelsea’s winning penalty in the 2012 final",
+   "hook": "2012 final",
    "k": "player",
    "src": "https://www.uefa.com/uefachampionsleague/history/seasons/2012/",
    "d": 2
@@ -219,6 +245,7 @@
    "w": "Arjen Robben",
    "means": "Bayern won 2–1 at Wembley",
    "ex": "Arjen Robben was the hero as Bayern beat Dortmund in the 2013 final",
+   "hook": "Bayern",
    "k": "player",
    "src": "https://www.uefa.com/uefachampionsleague/history/seasons/2013/",
    "d": 2
@@ -227,46 +254,52 @@
    "w": "Ferenc Puskás",
    "means": "Real Madrid won a ten-goal thriller",
    "ex": "Ferenc Puskás scored four goals in Real Madrid’s 1960 final win",
+   "hook": "four goals",
    "k": "player",
    "src": "https://www.uefa.com/uefachampionsleague/history/seasons/1959/",
-   "d": 3
+   "d": 2
   },
   {
    "w": "Andriy Shevchenko",
    "means": "Milan beat Juventus in the shootout",
    "ex": "Andriy Shevchenko scored the winning penalty for Milan in the 2003 final",
+   "hook": "Milan",
    "k": "player",
    "src": "https://www.uefa.com/uefachampionsleague/history/seasons/2002/",
-   "d": 3
+   "d": 2
   },
   {
    "w": "Pep Guardiola",
    "means": "Rodri scored the winning goal",
    "ex": "Pep Guardiola coached Manchester City to the 2023 title",
+   "hook": "Manchester",
    "k": "coach",
    "src": "https://www.uefa.com/uefachampionsleague/history/seasons/2023/",
-   "d": 1
+   "d": 2
   },
   {
    "w": "Luis Enrique",
    "means": "He has three titles as a coach",
    "ex": "Luis Enrique coached PSG to back-to-back titles in 2025 and 2026",
+   "hook": "PSG",
    "k": "coach",
    "src": "https://www.uefa.com/uefachampionsleague/history/seasons/2026/",
-   "d": 1
+   "d": 2
   },
   {
    "w": "Jürgen Klopp",
    "means": "An all-English final",
    "ex": "Jürgen Klopp’s Liverpool beat Tottenham in the 2019 final",
+   "hook": "Tottenham",
    "k": "coach",
    "src": "https://www.uefa.com/uefachampionsleague/history/seasons/2019/",
-   "d": 1
+   "d": 2
   },
   {
    "w": "José Mourinho",
    "means": "He won it again with Inter in 2010",
    "ex": "José Mourinho coached Porto to the title in 2004",
+   "hook": "Porto",
    "k": "coach",
    "src": "https://www.uefa.com/uefachampionsleague/history/seasons/2003/",
    "d": 2
@@ -275,6 +308,7 @@
    "w": "Carlo Ancelotti",
    "means": "Real Madrid beat Liverpool 1–0",
    "ex": "Carlo Ancelotti was Real Madrid’s coach for their 2022 title",
+   "hook": "2022 title",
    "k": "coach",
    "src": "https://www.uefa.com/uefachampionsleague/history/seasons/2022/",
    "d": 2
@@ -283,6 +317,7 @@
    "w": "Thomas Tuchel",
    "means": "Chelsea beat Man City in the final",
    "ex": "Thomas Tuchel guided Chelsea back to the top of Europe in 2021",
+   "hook": "Chelsea",
    "k": "coach",
    "src": "https://www.uefa.com/uefachampionsleague/history/seasons/2021/",
    "d": 2
@@ -291,6 +326,7 @@
    "w": "Istanbul",
    "means": "At the Atatürk Olympic Stadium",
    "ex": "Manchester City beat Inter in Istanbul in 2023",
+   "hook": "Inter",
    "k": "city",
    "src": "https://www.uefa.com/uefachampionsleague/history/seasons/2023/",
    "d": 2
@@ -299,14 +335,16 @@
    "w": "Lisbon",
    "means": "Real Madrid won 4–1 after extra time",
    "ex": "Real Madrid sealed “La Décima” against Atlético in Lisbon in 2014",
+   "hook": "La Décima",
    "k": "city",
    "src": "https://www.uefa.com/uefachampionsleague/history/seasons/2014/",
-   "d": 2
+   "d": 3
   },
   {
    "w": "Munich",
    "means": "Chelsea beat Bayern in the shootout",
    "ex": "Chelsea won the 2012 final on penalties in Munich",
+   "hook": "2012 final",
    "k": "city",
    "src": "https://www.uefa.com/uefachampionsleague/history/seasons/2012/",
    "d": 2
@@ -315,14 +353,16 @@
    "w": "Moscow",
    "means": "United won the shootout 6–5",
    "ex": "Manchester United beat Chelsea on penalties in Moscow in 2008",
+   "hook": "Chelsea",
    "k": "city",
    "src": "https://www.uefa.com/uefachampionsleague/history/seasons/2008/",
-   "d": 2
+   "d": 3
   },
   {
    "w": "Budapest",
    "means": "At the Puskás Aréna",
    "ex": "PSG beat Arsenal on penalties in Budapest in 2026",
+   "hook": "Arsenal",
    "k": "city",
    "src": "https://www.uefa.com/uefachampionsleague/history/seasons/2026/",
    "d": 2
@@ -331,6 +371,7 @@
    "w": "Glasgow",
    "means": "Zidane scored a famous winner",
    "ex": "Real Madrid beat Bayer Leverkusen in Glasgow in 2002",
+   "hook": "Leverkusen",
    "k": "city",
    "src": "https://www.uefa.com/uefachampionsleague/history/seasons/2001/",
    "d": 3
@@ -339,6 +380,7 @@
    "w": "Rome",
    "means": "Eto’o and Messi scored the goals",
    "ex": "Barcelona beat Manchester United 2–0 in Rome in 2009",
+   "hook": "Barcelona",
    "k": "city",
    "src": "https://www.uefa.com/uefachampionsleague/history/seasons/2009/",
    "d": 3
@@ -347,14 +389,16 @@
    "w": "Wembley",
    "means": "Real Madrid’s 15th European title",
    "ex": "Real Madrid beat Borussia Dortmund at Wembley in 2024",
+   "hook": "Dortmund",
    "k": "venue",
    "src": "https://www.uefa.com/uefachampionsleague/history/seasons/2024/",
-   "d": 1
+   "d": 2
   },
   {
    "w": "Stade de France",
    "means": "It also hosted the 2000 and 2006 finals",
    "ex": "Real Madrid beat Liverpool at the Stade de France in 2022",
+   "hook": "Liverpool",
    "k": "venue",
    "src": "https://www.uefa.com/uefachampionsleague/history/seasons/2022/",
    "d": 2
@@ -363,103 +407,126 @@
    "w": "Old Trafford",
    "means": "Milan won on penalties",
    "ex": "Milan beat Juventus in an all-Italian final at Old Trafford in 2003",
+   "hook": "Juventus",
    "k": "venue",
    "src": "https://www.uefa.com/uefachampionsleague/history/seasons/2002/",
-   "d": 2
+   "d": 3
   },
   {
    "w": "Craven Cottage",
    "means": "Lyon beat Turbine Potsdam 2–0",
    "ex": "Lyon won their first women’s title at Craven Cottage in 2011",
+   "hook": "Lyon",
    "k": "venue",
    "src": "https://www.uefa.com/womenschampionsleague/news/0250-0c50f8c5a638-5677bdc4dec5-1000--uefa-women-s-champions-league-history/",
-   "d": 3
+   "d": 3,
+   "women": true
   },
   {
    "w": "Stamford Bridge",
    "means": "Wolfsburg won 1–0 in London",
    "ex": "Wolfsburg beat Lyon at Stamford Bridge in the 2013 women’s final",
+   "hook": "Wolfsburg",
    "k": "venue",
    "src": "https://www.uefa.com/womenschampionsleague/news/0250-0c50f8c5a638-5677bdc4dec5-1000--uefa-women-s-champions-league-history/",
-   "d": 3
+   "d": 3,
+   "women": true
   },
   {
    "w": "Waldstadion",
    "means": "Frankfurt won it at home",
    "ex": "The first women’s final was played at the Waldstadion in 2002",
+   "hook": "2002",
    "k": "venue",
    "src": "https://www.uefa.com/womenschampionsleague/news/0250-0c50f8c5a638-5677bdc4dec5-1000--uefa-women-s-champions-league-history/",
-   "d": 3
+   "d": 3,
+   "women": true
   },
   {
    "w": "Barcelona",
    "means": "They won it in 2026, beating OL Lyonnes",
    "ex": "Barcelona reached a sixth straight women’s final in 2026",
+   "hook": "women’s",
    "k": "wclub",
    "src": "https://www.uefa.com/womenschampionsleague/history/seasons/2026/",
-   "d": 1
+   "d": 2,
+   "women": true
   },
   {
    "w": "Arsenal",
    "means": "They beat Barcelona 1–0 in Lisbon",
    "ex": "Arsenal won the 2025 women’s title from the first qualifying round",
+   "hook": "qualifying",
    "k": "wclub",
    "src": "https://www.uefa.com/womenschampionsleague/news/0250-0c50f8c5a638-5677bdc4dec5-1000--uefa-women-s-champions-league-history/",
-   "d": 1
+   "d": 2,
+   "women": true
   },
   {
    "w": "Lyon",
    "means": "The club is now called OL Lyonnes",
    "ex": "Lyon won five women’s titles in a row from 2016 to 2020",
+   "hook": "in a row",
    "k": "wclub",
    "src": "https://www.uefa.com/womenschampionsleague/news/0250-0c50f8c5a638-5677bdc4dec5-1000--uefa-women-s-champions-league-history/",
-   "d": 2
+   "d": 2,
+   "women": true
   },
   {
    "w": "Frankfurt",
    "means": "They also won the first final, in 2002",
    "ex": "In 2008, Frankfurt became the first three-time women’s champions",
+   "hook": "three-time",
    "k": "wclub",
    "src": "https://www.uefa.com/womenschampionsleague/news/0250-0c50f8c5a638-5677bdc4dec5-1000--uefa-women-s-champions-league-history/",
-   "d": 3
+   "d": 3,
+   "women": true
   },
   {
    "w": "Turbine Potsdam",
    "means": "They beat Lyon 7–6 on penalties",
    "ex": "Turbine Potsdam won the first Women’s Champions League final, in 2010",
+   "hook": "2010",
    "k": "wclub",
    "src": "https://www.uefa.com/womenschampionsleague/news/0250-0c50f8c5a638-5677bdc4dec5-1000--uefa-women-s-champions-league-history/",
-   "d": 3
+   "d": 3,
+   "women": true
   },
   {
    "w": "Wolfsburg",
    "means": "They beat Lyon, then Tyresö",
    "ex": "Wolfsburg won back-to-back women’s titles in 2013 and 2014",
+   "hook": "back-to-back",
    "k": "wclub",
    "src": "https://www.uefa.com/womenschampionsleague/news/0250-0c50f8c5a638-5677bdc4dec5-1000--uefa-women-s-champions-league-history/",
-   "d": 3
+   "d": 3,
+   "women": true
   },
   {
    "w": "Umeå",
    "means": "Their finals had two legs back then",
    "ex": "Umeå won the women’s title in both 2003 and 2004",
+   "hook": "women’s",
    "k": "wclub",
    "src": "https://www.uefa.com/womenschampionsleague/news/0250-0c50f8c5a638-5677bdc4dec5-1000--uefa-women-s-champions-league-history/",
-   "d": 3
+   "d": 3,
+   "women": true
   },
   {
    "w": "15",
    "means": "Most recently in 2024",
    "ex": "Real Madrid have won the European Cup a record 15 times",
+   "hook": "European Cup",
    "k": "count",
    "src": "https://www.uefa.com/uefachampionsleague/history/",
-   "d": 1,
+   "d": 2,
    "current": true
   },
   {
    "w": "7",
    "means": "Most recently in 2007",
    "ex": "Milan have won the European Cup 7 times, second only to Real Madrid",
+   "hook": "Milan",
    "k": "count",
    "src": "https://www.uefa.com/uefachampionsleague/history/",
    "d": 2,
@@ -469,6 +536,7 @@
    "w": "6",
    "means": "Most recently in 2019",
    "ex": "Liverpool have won the European Cup 6 times",
+   "hook": "Liverpool",
    "k": "count",
    "src": "https://www.uefa.com/uefachampionsleague/history/",
    "d": 2,
@@ -478,24 +546,28 @@
    "w": "141",
    "means": "Messi is second with 129",
    "ex": "Cristiano Ronaldo has scored a record 141 Champions League goals",
+   "hook": "Ronaldo",
    "k": "count",
    "src": "https://www.uefa.com/uefachampionsleague/history/",
-   "d": 2,
+   "d": 1,
    "current": true
   },
   {
    "w": "8",
    "means": "Frankfurt and Barcelona have four each",
    "ex": "Lyon have won a record 8 women’s titles",
+   "hook": "Lyon",
    "k": "count",
    "src": "https://www.uefa.com/womenschampionsleague/history/",
-   "d": 2,
+   "d": 3,
+   "women": true,
    "current": true
   },
   {
    "w": "5",
    "means": "Every final from 1956 to 1960",
    "ex": "Real Madrid won each of the first 5 European Cups",
+   "hook": "Real Madrid",
    "k": "count",
    "src": "https://www.uefa.com/uefachampionsleague/history/clubs/50051--real-madrid/",
    "d": 2
@@ -504,6 +576,7 @@
    "w": "5–0",
    "means": "The biggest winning margin in a final",
    "ex": "Inter lost the 2025 final to PSG by a record 5–0",
+   "hook": "2025 final",
    "k": "score",
    "src": "https://www.uefa.com/uefachampionsleague/history/seasons/2025/",
    "d": 1
@@ -512,22 +585,25 @@
    "w": "3–1",
    "means": "Their third title in a row",
    "ex": "Real Madrid beat Liverpool 3–1 in the 2018 final",
+   "hook": "2018 final",
    "k": "score",
    "src": "https://www.uefa.com/uefachampionsleague/history/seasons/2018/",
-   "d": 2
+   "d": 3
   },
   {
    "w": "2–0",
    "means": "An all-English final",
    "ex": "Liverpool beat Tottenham 2–0 in the 2019 final",
+   "hook": "Tottenham",
    "k": "score",
    "src": "https://www.uefa.com/uefachampionsleague/history/seasons/2019/",
-   "d": 2
+   "d": 3
   },
   {
    "w": "1–0",
    "means": "Rodri scored the only goal",
    "ex": "Manchester City beat Inter 1–0 in the 2023 final",
+   "hook": "2023 final",
    "k": "score",
    "src": "https://www.uefa.com/uefachampionsleague/history/seasons/2023/",
    "d": 2
@@ -536,17 +612,20 @@
    "w": "4–1",
    "means": "Real Madrid kept the trophy",
    "ex": "Real Madrid beat Juventus 4–1 in Cardiff in 2017",
+   "hook": "Cardiff",
    "k": "score",
    "src": "https://www.uefa.com/uefachampionsleague/history/seasons/2017/",
-   "d": 2
+   "d": 3
   },
   {
    "w": "4–0",
    "means": "Barcelona’s fourth women’s title",
    "ex": "Barcelona beat OL Lyonnes 4–0 in the 2026 women’s final",
+   "hook": "OL Lyonnes",
    "k": "score",
    "src": "https://www.uefa.com/womenschampionsleague/history/seasons/2026/",
-   "d": 3
+   "d": 3,
+   "women": true
   }
  ],
  "groups": [

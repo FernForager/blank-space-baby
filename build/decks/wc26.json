@@ -8,30 +8,34 @@
    "w": "Spain",
    "means": "A record low for a champion",
    "ex": "Spain won the World Cup while giving up just one goal",
+   "hook": "one goal",
    "k": "team",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/spain-argentina-final-report-highlights",
-   "d": 1
+   "d": 2
   },
   {
    "w": "Argentina",
    "means": "They had won it in 2022",
    "ex": "Defending champion Argentina lost the final in extra time",
+   "hook": "champion",
    "k": "team",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/spain-argentina-final-report-highlights",
-   "d": 1
+   "d": 2
   },
   {
    "w": "Mexico",
    "means": "Julián Quiñones scored first",
    "ex": "Mexico beat South Africa 2–0 in the opening match",
+   "hook": "South Africa",
    "k": "team",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/mexico-south-africa-highlights-match-report",
-   "d": 1
+   "d": 2
   },
   {
    "w": "Brazil",
    "means": "Haaland scored twice for Norway",
    "ex": "Five-time champion Brazil was knocked out by Norway",
+   "hook": "knocked out",
    "k": "team",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/final-tournament-standings",
    "d": 1
@@ -40,6 +44,7 @@
    "w": "USA",
    "means": "Canada had two and Mexico three",
    "ex": "Co-hosts USA had 11 of the 16 host cities",
+   "hook": "co-hosts",
    "k": "team",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/fifa-world-cup-2026-hosts-cities-dates-usa-mexico-canada",
    "d": 1
@@ -48,6 +53,7 @@
    "w": "England",
    "means": "A 3–2 win in Mexico City",
    "ex": "England knocked out co-hosts Mexico in the Round of 16",
+   "hook": "Mexico",
    "k": "team",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/knockout-stage-match-schedule-bracket",
    "d": 2
@@ -56,6 +62,7 @@
    "w": "Norway",
    "means": "Their first World Cup since 1998",
    "ex": "Norway reached the quarterfinals for the first time",
+   "hook": "first time",
    "k": "team",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/brazil-norway-match-report-highlights",
    "d": 2
@@ -64,6 +71,7 @@
    "w": "Cabo Verde",
    "means": "A 0–0 draw in their first game",
    "ex": "Newcomer Cabo Verde was the only team to keep Spain from scoring",
+   "hook": "newcomer",
    "k": "team",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/final-tournament-standings",
    "d": 2
@@ -72,47 +80,53 @@
    "w": "Canada",
    "means": "Then won a knockout game too",
    "ex": "Co-hosts Canada won a World Cup game for the first time",
+   "hook": "co-hosts",
    "k": "team",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/final-tournament-standings",
-   "d": 2
+   "d": 1
   },
   {
    "w": "Curaçao",
    "means": "About 156,000 people live there",
    "ex": "Curaçao became the smallest nation ever to play at a World Cup",
+   "hook": "smallest",
    "k": "team",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/records-broken-set",
-   "d": 3
+   "d": 1
   },
   {
    "w": "Ferran Torres",
    "means": "In the 106th minute",
    "ex": "Ferran Torres scored the only goal of the final",
+   "hook": "only goal",
    "k": "player",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/spain-argentina-final-report-highlights",
-   "d": 1
+   "d": 2
   },
   {
    "w": "Erling Haaland",
    "means": "He had seven goals by then",
    "ex": "Erling Haaland scored both goals as Norway beat Brazil",
+   "hook": "Brazil",
    "k": "player",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/brazil-norway-match-report-highlights",
-   "d": 1
+   "d": 2
   },
   {
    "w": "Kylian Mbappé",
    "means": "22 goals across three World Cups",
    "ex": "Kylian Mbappé became the all-time top scorer at World Cups",
+   "hook": "top scorer",
    "k": "player",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/records-broken-set",
-   "d": 1,
+   "d": 2,
    "current": true
   },
   {
    "w": "Lionel Messi",
    "means": "It was his third World Cup final",
    "ex": "At 39, Lionel Messi became the oldest outfield player in a World Cup final",
+   "hook": "oldest",
    "k": "player",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/spain-argentina-final-report-highlights",
    "d": 1
@@ -121,6 +135,7 @@
    "w": "Cristiano Ronaldo",
    "means": "He was 41 years old",
    "ex": "Cristiano Ronaldo became the first man to score at six World Cups",
+   "hook": "World Cups",
    "k": "player",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/records-broken-set",
    "d": 1
@@ -129,6 +144,7 @@
    "w": "Bukayo Saka",
    "means": "England won 6–4 in Miami",
    "ex": "Bukayo Saka scored a hat trick against France in the bronze final",
+   "hook": "hat trick",
    "k": "player",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/france-england-report-highlights-bronze-final",
    "d": 2
@@ -137,6 +153,7 @@
    "w": "Harry Kane",
    "means": "His 121st cap, in the semifinal",
    "ex": "Harry Kane became England’s most-capped outfield player",
+   "hook": "most-capped",
    "k": "player",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/england-argentina-match-report-highlights",
    "d": 2,
@@ -146,6 +163,7 @@
    "w": "Rodri",
    "means": "Beating his own 2022 record",
    "ex": "Rodri set a record with 790 completed passes in one World Cup",
+   "hook": "passes",
    "k": "player",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/records-broken-set",
    "d": 3
@@ -154,6 +172,7 @@
    "w": "Michael Olise",
    "means": "Five of them set up Mbappé",
    "ex": "Michael Olise set a World Cup record with seven assists",
+   "hook": "assists",
    "k": "player",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/records-broken-set",
    "d": 3
@@ -162,14 +181,16 @@
    "w": "Eloy Room",
    "means": "Tying the record for one match",
    "ex": "Curaçao goalkeeper Eloy Room made 16 saves against Ecuador",
+   "hook": "Curaçao",
    "k": "player",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/records-broken-set",
-   "d": 3
+   "d": 2
   },
   {
    "w": "Luis de la Fuente",
    "means": "He led Spain to the 2026 title",
    "ex": "At 65, Luis de la Fuente became the oldest coach to win a World Cup",
+   "hook": "oldest coach",
    "k": "coach",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/spain-argentina-final-report-highlights",
    "d": 2
@@ -178,6 +199,7 @@
    "w": "Lionel Scaloni",
    "means": "His team lost 1–0 in extra time",
    "ex": "Lionel Scaloni coached Argentina in the 2026 final",
+   "hook": "2026 final",
    "k": "coach",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/spain-argentina-final-report-highlights",
    "d": 2
@@ -186,6 +208,7 @@
    "w": "Thomas Tuchel",
    "means": "A 6–4 win over France",
    "ex": "Thomas Tuchel coached England to third place",
+   "hook": "third place",
    "k": "coach",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/final-tournament-standings",
    "d": 2
@@ -194,6 +217,7 @@
    "w": "Carlo Ancelotti",
    "means": "Out to Norway in the Round of 16",
    "ex": "Carlo Ancelotti coached Brazil at the 2026 World Cup",
+   "hook": "Brazil",
    "k": "coach",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/final-tournament-standings",
    "d": 2
@@ -202,6 +226,7 @@
    "w": "Mauricio Pochettino",
    "means": "Out to Belgium in the Round of 16",
    "ex": "Mauricio Pochettino coached the USA at its home World Cup",
+   "hook": "USA",
    "k": "coach",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/final-tournament-standings",
    "d": 2
@@ -210,6 +235,7 @@
    "w": "Didier Deschamps",
    "means": "His last was the bronze final",
    "ex": "Didier Deschamps set a record for most World Cup games as a coach",
+   "hook": "record",
    "k": "coach",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/records-broken-set",
    "d": 3
@@ -218,6 +244,7 @@
    "w": "Dick Advocaat",
    "means": "He coached Curaçao",
    "ex": "At 78, Dick Advocaat became the oldest coach in World Cup history",
+   "hook": "oldest coach",
    "k": "coach",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/records-broken-set",
    "d": 3
@@ -226,38 +253,43 @@
    "w": "New York New Jersey",
    "means": "Spain beat Argentina 1–0 there",
    "ex": "The final was played in New York New Jersey",
+   "hook": "final",
    "k": "city",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/spain-argentina-final-report-highlights",
-   "d": 1
+   "d": 2
   },
   {
    "w": "Mexico City",
    "means": "First stadium with three openers",
    "ex": "The opening match was played in Mexico City",
+   "hook": "opening",
    "k": "city",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/estadio-azteca-mexico-city-host-opening-match-world-cup-2026",
-   "d": 1
+   "d": 2
   },
   {
    "w": "Seattle",
    "means": "Home of the Sounders",
    "ex": "The USA played Australia in Seattle in the group stage",
+   "hook": "Australia",
    "k": "city",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/seattle-host-six-matches-stadium",
-   "d": 1
+   "d": 2
   },
   {
    "w": "Miami",
    "means": "A 6–4 win in the bronze final",
    "ex": "England beat France in Miami to finish third",
+   "hook": "finish third",
    "k": "city",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/france-england-report-highlights-bronze-final",
-   "d": 2
+   "d": 3
   },
   {
    "w": "Dallas",
    "means": "Ronaldo’s last World Cup game",
    "ex": "Spain knocked Portugal out in Dallas",
+   "hook": "Portugal",
    "k": "city",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/final-tournament-standings",
    "d": 3
@@ -266,6 +298,7 @@
    "w": "Atlanta",
    "means": "A 3–2 win in the Round of 16",
    "ex": "Argentina came from behind to beat Egypt in Atlanta",
+   "hook": "Egypt",
    "k": "city",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/final-tournament-standings",
    "d": 3
@@ -274,62 +307,70 @@
    "w": "Golden Ball",
    "means": "Spain’s steady midfield anchor",
    "ex": "Rodri won the Golden Ball as the tournament’s best player",
+   "hook": "Rodri",
    "k": "award",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/rodri-earns-adidas-golden-ball",
-   "d": 1
+   "d": 2
   },
   {
    "w": "Golden Boot",
    "means": "He also won it in 2022",
    "ex": "Kylian Mbappé won the Golden Boot with 10 goals",
+   "hook": "10 goals",
    "k": "award",
    "src": "https://www.fifa.com/en/articles/adidas-golden-boot-race-top-scorer",
-   "d": 1
+   "d": 2
   },
   {
    "w": "Golden Glove",
    "means": "A record seven clean sheets",
    "ex": "Unai Simón won the Golden Glove as the top goalkeeper",
+   "hook": "Unai Simón",
    "k": "award",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/unai-simon-adidas-golden-glove",
-   "d": 2
+   "d": 1
   },
   {
    "w": "Young Player Award",
    "means": "Spain’s teenage center-back",
    "ex": "At 19, Pau Cubarsí won the Young Player Award as the best player aged 21 or under",
+   "hook": "Cubarsí",
    "k": "award",
    "src": "https://www.fifa.com/en/articles/pau-cubarsi-fifa-young-player-award",
-   "d": 2
+   "d": 1
   },
   {
    "w": "Bronze Ball",
    "means": "He also won the Golden Boot",
    "ex": "Kylian Mbappé won the tournament’s Bronze Ball as its third-best player",
+   "hook": "Mbappé",
    "k": "award",
    "src": "https://www.fifa.com/en/articles/adidas-golden-boot-race-top-scorer",
-   "d": 3
+   "d": 1
   },
   {
    "w": "Player of the Match",
    "means": "He also won it five times in 2022",
    "ex": "Lionel Messi was named Player of the Match five times in 2026",
+   "hook": "five times",
    "k": "award",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/lionel-messi-argentina-stats-records",
-   "d": 3
+   "d": 1
   },
   {
    "w": "2022",
    "means": "They beat France in Qatar",
    "ex": "Argentina came in as champions after winning in 2022",
+   "hook": "Argentina",
    "k": "year",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/world-cup-champions-1982-2026-italy-argentina-germany-brazil-france-spain",
-   "d": 1
+   "d": 2
   },
   {
    "w": "2010",
    "means": "They beat the Netherlands",
    "ex": "Spain’s first men’s World Cup title came in 2010",
+   "hook": "Spain",
    "k": "year",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/world-cup-champions-1982-2026-italy-argentina-germany-brazil-france-spain",
    "d": 2
@@ -338,14 +379,17 @@
    "w": "2023",
    "means": "Spain held both titles at once",
    "ex": "Spain’s women won the World Cup in 2023",
+   "hook": "women",
    "k": "year",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/spain-men-women-first-simultaneous-champions",
-   "d": 2
+   "d": 2,
+   "women": true
   },
   {
    "w": "1966",
    "means": "Third in 2026 was its best since",
    "ex": "England won the World Cup on home soil in 1966",
+   "hook": "home soil",
    "k": "year",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/final-tournament-standings",
    "d": 2
@@ -354,6 +398,7 @@
    "w": "1998",
    "means": "Back after 28 years away",
    "ex": "Norway played its first World Cup since 1998",
+   "hook": "Norway",
    "k": "year",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/final-tournament-standings",
    "d": 3
@@ -362,6 +407,7 @@
    "w": "1986",
    "means": "First stadium to host three openers",
    "ex": "Mexico City’s stadium hosted World Cup finals in 1970 and 1986",
+   "hook": "Mexico City",
    "k": "year",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/estadio-azteca-mexico-city-host-opening-match-world-cup-2026",
    "d": 3
@@ -370,22 +416,25 @@
    "w": "48",
    "means": "Split into 12 groups of four",
    "ex": "The 2026 World Cup was the first with 48 teams",
+   "hook": "teams",
    "k": "number",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/fifa-world-cup-2026-hosts-cities-dates-usa-mexico-canada",
-   "d": 1
+   "d": 2
   },
   {
    "w": "16",
    "means": "Two in Canada, three in Mexico",
    "ex": "Matches were played in 16 host cities",
+   "hook": "host cities",
    "k": "number",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/fifa-world-cup-2026-hosts-cities-dates-usa-mexico-canada",
-   "d": 1
+   "d": 2
   },
   {
    "w": "3",
    "means": "Canada, Mexico and the USA",
    "ex": "The 2026 World Cup was the first shared by 3 countries",
+   "hook": "countries",
    "k": "number",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/fifa-world-cup-2026-hosts-cities-dates-usa-mexico-canada",
    "d": 1
@@ -394,6 +443,7 @@
    "w": "104",
    "means": "The biggest World Cup yet",
    "ex": "The tournament had 104 matches in all",
+   "hook": "matches",
    "k": "number",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/knockout-stage-match-schedule-bracket",
    "d": 2
@@ -402,6 +452,7 @@
    "w": "34",
    "means": "Across six World Cups",
    "ex": "Lionel Messi finished with a record 34 World Cup games",
+   "hook": "Messi",
    "k": "number",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/lionel-messi-argentina-stats-records",
    "d": 2
@@ -410,6 +461,7 @@
    "w": "6",
    "means": "Four group games, two knockouts",
    "ex": "Seattle Stadium hosted 6 World Cup matches",
+   "hook": "Seattle",
    "k": "number",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/seattle-host-six-matches-stadium",
    "d": 2
@@ -418,30 +470,34 @@
    "w": "1,248",
    "means": "That’s 26 for each of 48 teams",
    "ex": "A record 1,248 players were named to World Cup squads",
+   "hook": "squads",
    "k": "number",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/fifa-world-cup-2026-hosts-cities-dates-usa-mexico-canada",
-   "d": 3
+   "d": 2
   },
   {
    "w": "1–0",
    "means": "Ferran Torres scored the winner",
    "ex": "The final ended 1–0 after extra time",
+   "hook": "extra time",
    "k": "score",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/spain-argentina-final-report-highlights",
-   "d": 1
+   "d": 2
   },
   {
    "w": "6–4",
    "means": "Bukayo Saka scored three",
    "ex": "England beat France 6–4 in the bronze final",
+   "hook": "bronze final",
    "k": "score",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/france-england-report-highlights-bronze-final",
-   "d": 2
+   "d": 3
   },
   {
    "w": "4–1",
    "means": "In the Round of 16",
    "ex": "Belgium beat the USA 4–1 in Seattle",
+   "hook": "Belgium",
    "k": "score",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/knockout-stage-match-schedule-bracket",
    "d": 2
@@ -450,14 +506,16 @@
    "w": "2–0",
    "means": "Goals by Oyarzabal and Porro",
    "ex": "Spain beat France 2–0 in the semifinal",
+   "hook": "semifinal",
    "k": "score",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/france-spain-match-report-highlights",
-   "d": 2
+   "d": 3
   },
   {
    "w": "4–0",
    "means": "After a 0–0 draw with Cabo Verde",
    "ex": "Spain beat Saudi Arabia 4–0 in the group stage",
+   "hook": "Saudi Arabia",
    "k": "score",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/spain-men-women-first-simultaneous-champions",
    "d": 3
@@ -466,6 +524,7 @@
    "w": "3–3",
    "means": "Two goals came in added time",
    "ex": "The group game between Austria and Algeria finished 3–3",
+   "hook": "Austria",
    "k": "score",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/final-tournament-standings",
    "d": 3
@@ -474,6 +533,7 @@
    "w": "Round of 32",
    "means": "Paraguay won the shootout 4–3",
    "ex": "Germany lost to Paraguay on penalties in the Round of 32",
+   "hook": "Germany",
    "k": "round",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/knockout-stage-match-schedule-bracket",
    "d": 2
@@ -482,14 +542,16 @@
    "w": "Round of 16",
    "means": "Morocco won 3–0 in Houston",
    "ex": "Morocco beat co-hosts Canada in the Round of 16",
+   "hook": "Morocco",
    "k": "round",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/knockout-stage-match-schedule-bracket",
-   "d": 2
+   "d": 3
   },
   {
    "w": "quarterfinals",
    "means": "A 2–1 win in Miami",
    "ex": "England beat Norway in extra time in the quarterfinals",
+   "hook": "Norway",
    "k": "round",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/knockout-stage-match-schedule-bracket",
    "d": 2
@@ -498,6 +560,7 @@
    "w": "semifinal",
    "means": "A 2–1 comeback in Atlanta",
    "ex": "Argentina came from behind to beat England in the semifinal",
+   "hook": "England",
    "k": "round",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/england-argentina-match-report-highlights",
    "d": 2
@@ -506,6 +569,7 @@
    "w": "bronze final",
    "means": "Mbappé scored twice in the loss",
    "ex": "France lost to England in the bronze final",
+   "hook": "France",
    "k": "round",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/france-england-report-highlights-bronze-final",
    "d": 2
@@ -514,14 +578,16 @@
    "w": "group stage",
    "means": "Two draws and a loss to Spain",
    "ex": "Two-time champions Uruguay went out in the group stage",
+   "hook": "Uruguay",
    "k": "round",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/final-tournament-standings",
-   "d": 2
+   "d": 3
   },
   {
    "w": "Maple",
    "means": "A goalkeeper who loves art",
    "ex": "Canada’s mascot was a moose named Maple",
+   "hook": "moose",
    "k": "name",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/clutch-maple-zayu-mascots-unveiled",
    "d": 1
@@ -530,14 +596,16 @@
    "w": "Zayu",
    "means": "A striker from southern Mexico",
    "ex": "Mexico’s mascot was a jaguar named Zayu",
+   "hook": "jaguar",
    "k": "name",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/clutch-maple-zayu-mascots-unveiled",
-   "d": 1
+   "d": 2
   },
   {
    "w": "Clutch",
    "means": "A midfielder who loves adventure",
    "ex": "The USA’s mascot was a bald eagle named Clutch",
+   "hook": "bald eagle",
    "k": "name",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/clutch-maple-zayu-mascots-unveiled",
    "d": 1
@@ -546,6 +614,7 @@
    "w": "Three Lions",
    "means": "Third place in 2026",
    "ex": "England’s team is known as the Three Lions",
+   "hook": "England",
    "k": "name",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/final-tournament-standings",
    "d": 1
@@ -554,6 +623,7 @@
    "w": "La Roja",
    "means": "Also European champions in 2024",
    "ex": "Spain’s team is known as La Roja",
+   "hook": "Spain",
    "k": "name",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/spain-argentina-final-report-highlights",
    "d": 2
@@ -562,6 +632,7 @@
    "w": "Trionda",
    "means": "Spanish for “three waves”",
    "ex": "For most of the tournament, the match ball was the adidas Trionda",
+   "hook": "match ball",
    "k": "name",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/ball-balls-history",
    "d": 2
@@ -570,9 +641,10 @@
    "w": "Trionda Final",
    "means": "A gold version for the finale",
    "ex": "The Trionda Final ball was used for the last four games",
+   "hook": "last four",
    "k": "name",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/trionda-final-official-match-ball-final-four-matches",
-   "d": 3
+   "d": 2
   }
  ],
  "groups": [
