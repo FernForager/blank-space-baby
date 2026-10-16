@@ -1,0 +1,410 @@
+{
+ "lingo-more:0": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "14c3ce7ddd",
+  "note": "MW lob: a soft high-arching shot, throw, or kick",
+  "v": "ok"
+ },
+ "lingo-more:1": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "9bd76733d4",
+  "note": "dictionary.com daisy-cutter, Collins British: soccer, a powerful shot that moves close to the ground",
+  "v": "ok"
+ },
+ "lingo-more:10": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "1a02b5d2e5",
+  "note": "MW goal line: line at either end on which a goal is situated",
+  "v": "ok"
+ },
+ "lingo-more:11": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "9977d53a3f",
+  "note": "MW center circle: circle at the center of a playing surface where a kickoff takes place",
+  "v": "ok"
+ },
+ "lingo-more:12": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "a8c9960e7d",
+  "note": "dictionary.com crossbar: the horizontal bar forming part of the goal posts, as in soccer. post is not among the wrong answers",
+  "v": "ok"
+ },
+ "lingo-more:13": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "233c938df3",
+  "note": "MW post: goalpost. crossbar is not among the wrong answers",
+  "v": "ok"
+ },
+ "lingo-more:14": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "1f530d796b",
+  "note": "dictionary.com technical area, Collins British: soccer, area at the side of the pitch to which managers, trainers, coaches are restricted",
+  "v": "ok"
+ },
+ "lingo-more:15": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "6e42c90243",
+  "note": "MW midfield: the portion of a playing field midway between goals",
+  "v": "ok"
+ },
+ "lingo-more:16": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "b7f6949e47",
+  "note": "MW goalie: a player who defends the goal (as in soccer) : goalkeeper",
+  "v": "ok"
+ },
+ "lingo-more:17": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "1518bf2e79",
+  "note": "dictionary.com skipper: a captain or leader, as of a team",
+  "v": "ok"
+ },
+ "lingo-more:18": {
+  "at": "2026-10-16T23:56:49Z",
+  "fix": {
+   "means": "Official who assists the ref"
+  },
+  "h": "12b23b8461",
+  "note": "MW linesman: an official who assists a referee, especially on out-of-bounds or offside. dictionary.com (Collins) also says helps the referee. Neither entry says on the sideline, so the means goes past the source",
+  "v": "fix"
+ },
+ "lingo-more:19": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "0c134c08d5",
+  "note": "MW halfback: a player stationed immediately behind the forward line (as in soccer)",
+  "v": "ok"
+ },
+ "lingo-more:2": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "b1c0442d76",
+  "note": "MW pile driver: a forceful hit or kick (as of a ball)",
+  "v": "ok"
+ },
+ "lingo-more:20": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "b2a9ddb866",
+  "note": "dictionary.com utility player, Collins British: a player capable of playing competently in any of several positions",
+  "v": "ok"
+ },
+ "lingo-more:21": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "be71e4cd4b",
+  "note": "MW defender: a player in a sport assigned to a defensive position",
+  "v": "ok"
+ },
+ "lingo-more:22": {
+  "at": "2026-10-16T23:56:49Z",
+  "fix": {
+   "means": "Mom who takes her kids to soccer"
+  },
+  "h": "a460e5b7f9",
+  "note": "MW soccer mom: a mother who accompanies her children to their soccer games. The entry says accompanies, not drives",
+  "v": "fix"
+ },
+ "lingo-more:23": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "e9e70f4b6e",
+  "note": "MW ball girl: a female attendant who retrieves balls for players or officials (examples are tennis, baseball, basketball but the sense is general)",
+  "v": "ok"
+ },
+ "lingo-more:24": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "1bb204acb2",
+  "note": "MW scout: a person sent to watch players in action with a view to recommending their acquisition",
+  "v": "ok"
+ },
+ "lingo-more:25": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "6477758fd5",
+  "note": "MW free agent: a professional athlete free to negotiate a contract with any team",
+  "v": "ok"
+ },
+ "lingo-more:26": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "82bf215dd3",
+  "note": "MW onside: not offside, in a position legally to play or receive the ball",
+  "v": "ok"
+ },
+ "lingo-more:27": {
+  "at": "2026-10-16T23:56:49Z",
+  "fix": {
+   "src": "https://www.dictionary.com/browse/kickoff"
+  },
+  "h": "f3ea3c3360",
+  "note": "MW kickoff says only a kick that puts the ball into play. dictionary.com kickoff (soccer sense) says it puts a stationary ball into play from the center line at the start or after a goal has been scored, which shows the sentence",
+  "v": "fix"
+ },
+ "lingo-more:28": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "0659dcc4dd",
+  "note": "MW throw-in: a throw made from the touchline in soccer to put the ball back in play",
+  "v": "ok"
+ },
+ "lingo-more:29": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "5bb2899f80",
+  "note": "MW goal kick: awarded to the defense when the ball goes over the end line off an opposing player",
+  "v": "ok"
+ },
+ "lingo-more:3": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "1dc106f61a",
+  "note": "dictionary.com inswinger, Collins British: soccer, a ball kicked, esp from a corner, so as to curve towards the goal",
+  "v": "ok"
+ },
+ "lingo-more:30": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "12b886837d",
+  "note": "dictionary.com wall: soccer, a line of defenders standing shoulder to shoulder to block a free kick",
+  "v": "ok"
+ },
+ "lingo-more:31": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "5e7a4268fc",
+  "note": "MW professional foul: a foul made on purpose especially to prevent the other team from scoring a goal",
+  "v": "ok"
+ },
+ "lingo-more:32": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "5fdc5e61f6",
+  "note": "MW drop ball: putting a soccer ball in play by dropping it after a temporary suspension",
+  "v": "ok"
+ },
+ "lingo-more:33": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "d24e7219ee",
+  "note": "M-W halftime: an intermission between halves of a game or contest. No wrong answer fits “At ___”",
+  "v": "ok"
+ },
+ "lingo-more:34": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "02e26efa92",
+  "note": "Dictionary.com full time, Collins British noun 2: the end of a football or other match. halftime is not among its wrong answers",
+  "v": "ok"
+ },
+ "lingo-more:35": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "8a443c3c6a",
+  "note": "Dictionary.com knockout, Collins British: a competition in which competitors are eliminated progressively",
+  "v": "ok"
+ },
+ "lingo-more:36": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "278d2a125f",
+  "note": "Dictionary.com kickabout: a casual game of soccer, primarily played as a way to pass time",
+  "v": "ok"
+ },
+ "lingo-more:37": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "28c5ede5f3",
+  "note": "Dictionary.com five-a-side, Collins British: a version of soccer with five players on each side",
+  "v": "ok"
+ },
+ "lingo-more:38": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "450685db69",
+  "note": "M-W bye: the position of a participant in a tournament who advances to the next round without playing",
+  "v": "ok"
+ },
+ "lingo-more:39": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "1556f096a0",
+  "note": "M-W rematch: a second match between the same contestants or teams. playoff is not among its wrong answers",
+  "v": "ok"
+ },
+ "lingo-more:4": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "0e9258e411",
+  "note": "dictionary.com half volley, Collins British verb: to hit or kick a ball immediately after it bounces",
+  "v": "ok"
+ },
+ "lingo-more:40": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "727e1c5782",
+  "note": "M-W playoff: a final contest to determine the winner between contestants or teams that have tied. rematch is not among its wrong answers",
+  "v": "ok"
+ },
+ "lingo-more:41": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "9cfb8cba80",
+  "note": "M-W shutout: a game or contest in which one side fails to score",
+  "v": "ok"
+ },
+ "lingo-more:42": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "c2186d9ca1",
+  "note": "M-W goalless: having no goal scored by either team",
+  "v": "ok"
+ },
+ "lingo-more:43": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "70e6e85451",
+  "note": "M-W squeaker: a contest (such as a game or an election) won by a small margin",
+  "v": "ok"
+ },
+ "lingo-more:44": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "e8daeac4e4",
+  "note": "M-W drubbing (under drub): to beat severely, to defeat decisively. blowout is not among its wrong answers",
+  "v": "ok"
+ },
+ "lingo-more:45": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "0ef771c56f",
+  "note": "M-W blowout: an easy or one-sided victory. drubbing is not among its wrong answers",
+  "v": "ok"
+ },
+ "lingo-more:46": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "64c83e3540",
+  "note": "Dictionary.com silver goal, Collins British (soccer): a goal scored in a full half of extra time that counts as the winner if it is the only goal in that half",
+  "v": "ok"
+ },
+ "lingo-more:47": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "eb85c8ab6c",
+  "note": "Dictionary.com away goal, Collins British: a goal scored by a team playing away from home, counting for more than home goals in certain competitions",
+  "v": "ok"
+ },
+ "lingo-more:48": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "dee796ca7f",
+  "note": "Dictionary.com route one, Collins British (soccer): a style of play involving long high kicks towards a central striker",
+  "v": "ok"
+ },
+ "lingo-more:49": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "eb1b0a8d12",
+  "note": "Dictionary.com total football, Collins British: no fixed positions and every outfield player can join in the attack",
+  "v": "ok"
+ },
+ "lingo-more:5": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "536baabac8",
+  "note": "MW dropkick: dropping a ball and kicking it at the moment it starts to rebound",
+  "v": "ok"
+ },
+ "lingo-more:50": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "ca739810e0",
+  "note": "Dictionary.com back four, Collins British (soccer): the defensive players, usually two fullbacks and two centre backs",
+  "v": "ok"
+ },
+ "lingo-more:51": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "a6f8fb3850",
+  "note": "M-W man-to-man: a system of defense in which each defensive player guards a specified opponent",
+  "v": "ok"
+ },
+ "lingo-more:52": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "f974ccb688",
+  "note": "Dictionary.com tifo (Chiefly Soccer): a coordinated display by fans in the stadium, especially a large banner",
+  "v": "ok"
+ },
+ "lingo-more:53": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "81474859f9",
+  "note": "Dictionary.com cap, Chiefly British: an instance of playing in an international game or match as part of a national team",
+  "v": "ok"
+ },
+ "lingo-more:54": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "6e0504e4d5",
+  "note": "M-W eleven: a football team. Dictionary.com eleven: a set or group of 11 people, such as a football or soccer team",
+  "v": "ok"
+ },
+ "lingo-more:55": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "3cab6c44e5",
+  "note": "Dictionary.com footy, Collins British: informal football",
+  "v": "ok"
+ },
+ "lingo-more:56": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "b73a68ab59",
+  "note": "Dictionary.com giant killer, Collins British: a person, sports team, etc, that defeats an apparently superior opponent",
+  "v": "ok"
+ },
+ "lingo-more:57": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "cd7c12b492",
+  "note": "Dictionary.com wooden spoon, Collins British: a booby prize, esp in sporting contests",
+  "v": "ok"
+ },
+ "lingo-more:58": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "804071aa86",
+  "note": "M-W season ticket: a ticket (as to all of a club’s home games) valid during a specified time",
+  "v": "ok"
+ },
+ "lingo-more:59": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "e165984dad",
+  "note": "M-W dribble: to propel by successive slight taps or bounces with hand, foot, or stick",
+  "v": "ok"
+ },
+ "lingo-more:6": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "0ba8ec2336",
+  "note": "MW punt: kick a soccer ball dropped from the hands before it hits the ground",
+  "v": "ok"
+ },
+ "lingo-more:60": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "9fcb5327ae",
+  "note": "M-W sky: to hit (a ball) high into the air. No wrong answer sends the ball over the crossbar",
+  "v": "ok"
+ },
+ "lingo-more:61": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "f8031fdfea",
+  "note": "M-W net: to hit (a ball or puck) into the goal for a score (as in hockey or soccer)",
+  "v": "ok"
+ },
+ "lingo-more:62": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "344076f79e",
+  "note": "M-W save: to prevent an opponent from scoring or winning, and the noun: a play that prevents an opponent from scoring",
+  "v": "ok"
+ },
+ "lingo-more:63": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "9fbfc4c98d",
+  "note": "M-W tie: to equalize (the score) in a game or contest",
+  "v": "ok"
+ },
+ "lingo-more:64": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "d3495552d2",
+  "note": "M-W whitewash: to hold (an opponent) scoreless in a game or contest. mark, which would also fit, is not among its wrong answers",
+  "v": "ok"
+ },
+ "lingo-more:65": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "926007b4c3",
+  "note": "Dictionary.com mark, Collins British verb (sport): to stay close to (an opponent) to hamper his or her play",
+  "v": "ok"
+ },
+ "lingo-more:7": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "bfd2e52ffd",
+  "note": "MW back pass: a pass to a player behind the ball carrier (as in soccer)",
+  "v": "ok"
+ },
+ "lingo-more:8": {
+  "at": "2026-10-16T23:56:49Z",
+  "h": "1accd5dbb3",
+  "note": "MW touchline: lines that bound the long sides of the field in soccer",
+  "v": "ok"
+ },
+ "lingo-more:9": {
+  "at": "2026-10-16T23:56:49Z",
+  "fix": {
+   "src": "https://www.dictionary.com/browse/penalty-area"
+  },
+  "h": "3f40d80e3d",
+  "note": "MW penalty area shows the box in front of each goal but not the keeper’s hands. dictionary.com penalty-area (Collins British) says it is the area within which the goalkeeper may handle the ball, so that page supports both sentence and means",
+  "v": "fix"
+ }
+}
