@@ -1389,7 +1389,7 @@
   "v": "fix"
  },
  "parents:0": {
-  "at": "2026-10-16T23:59:28Z",
+  "at": "2026-10-16T23:59:39Z",
   "fix": {
    "src": "https://greensdictofslang.com/entry/p7xt23q"
   },
@@ -1397,92 +1397,134 @@
   "note": "M-W the bomb shows only the spelling “the bomb” (US slang, something or someone very good). Green’s bomb n. sense 11 lists “also da bomb” meaning the best, so the card’s spelling and means are supported there https://greensdictofslang.com/entry/p7xt23q",
   "v": "fix"
  },
+ "parents:1": {
+  "at": "2026-10-16T23:59:51Z",
+  "h": "9e894650e7",
+  "note": "M-W fly adj: impressively good, attractive, or stylish",
+  "v": "ok"
+ },
  "parents:10": {
-  "at": "2026-10-16T23:59:28Z",
+  "at": "2026-10-16T23:59:39Z",
   "h": "e39be46853",
   "note": "M-W wicked adv: very",
   "v": "ok"
  },
  "parents:11": {
-  "at": "2026-10-16T23:59:28Z",
+  "at": "2026-10-16T23:59:39Z",
   "h": "3ef4822627",
   "note": "M-W wack: of poor skill or quality, not good or appealing",
   "v": "ok"
  },
  "parents:12": {
-  "at": "2026-10-16T23:59:28Z",
+  "at": "2026-10-16T23:59:39Z",
   "h": "386a96ae08",
   "note": "M-W bogus: not genuine, counterfeit, sham. Green’s bogus adj sense 2 (unfair, untrustworthy) fits the offside call too",
   "v": "ok"
  },
+ "parents:13": {
+  "at": "2026-10-16T23:59:51Z",
+  "h": "39015e3c00",
+  "note": "M-W stoked: in an enthusiastic or exhilarated state",
+  "v": "ok"
+ },
  "parents:14": {
-  "at": "2026-10-16T23:59:28Z",
+  "at": "2026-10-16T23:59:39Z",
   "h": "86803683f7",
   "note": "M-W bummed: in low spirits, unhappy",
   "v": "ok"
  },
+ "parents:15": {
+  "at": "2026-10-16T23:59:51Z",
+  "h": "7fa199b5a2",
+  "note": "M-W as if sense 4: used to say that something is not true, not possible, will not happen, also used as an interjection",
+  "v": "ok"
+ },
  "parents:16": {
-  "at": "2026-10-16T23:59:28Z",
+  "at": "2026-10-16T23:59:39Z",
   "h": "232d010732",
   "note": "Green’s not! excl: used at the end of a sentence to reverse everything before it",
   "v": "ok"
  },
+ "parents:17": {
+  "at": "2026-10-16T23:59:51Z",
+  "h": "569fe6fa86",
+  "note": "M-W psych interjection: used to say that a previous statement was false or facetious (“Psych! Just kidding”)",
+  "v": "ok"
+ },
  "parents:18": {
-  "at": "2026-10-16T23:59:28Z",
+  "at": "2026-10-16T23:59:39Z",
   "h": "285ea7e635",
   "note": "M-W booyah interjection: used to express triumph or exuberance",
   "v": "ok"
  },
  "parents:19": {
-  "at": "2026-10-16T23:59:28Z",
+  "at": "2026-10-16T23:59:39Z",
   "h": "05a4e2196f",
   "note": "M-W bad noun sense 3: fault, example “the mistake was my bad” (no separate my bad entry, the dictionary/my%20bad URL is a 404)",
   "v": "ok"
  },
+ "parents:2": {
+  "at": "2026-10-16T23:59:51Z",
+  "h": "0c4a50db2e",
+  "note": "M-W fresh adj sense: fashionable",
+  "v": "ok"
+ },
  "parents:20": {
-  "at": "2026-10-16T23:59:28Z",
+  "at": "2026-10-16T23:59:39Z",
   "h": "c9c2d81d38",
   "note": "M-W duh sense 2: used to indicate that something just stated is all too obvious",
   "v": "ok"
  },
  "parents:21": {
-  "at": "2026-10-16T23:59:28Z",
+  "at": "2026-10-16T23:59:39Z",
   "h": "cf9f6969ab",
   "note": "M-W whatever adverb: sometimes used interjectionally to suggest the unimportance of an issue",
   "v": "ok"
  },
+ "parents:22": {
+  "at": "2026-10-16T23:59:51Z",
+  "h": "46c7f1363a",
+  "note": "M-W word sense 12 slang: used interjectionally to express agreement, affirmation, or admiration",
+  "v": "ok"
+ },
  "parents:23": {
-  "at": "2026-10-16T23:59:28Z",
+  "at": "2026-10-16T23:59:39Z",
   "h": "0ae2d33ef6",
   "note": "Green’s cowabunga! excl: an exclamation of pleasure, victory, surprise",
   "v": "ok"
  },
  "parents:24": {
-  "at": "2026-10-16T23:59:28Z",
+  "at": "2026-10-16T23:59:39Z",
   "h": "6e4015de07",
   "note": "Green’s talk to the hand: a dismissive phrase, don’t waste my time, glossed in a quotation as “I am not listening”",
   "v": "ok"
  },
  "parents:25": {
-  "at": "2026-10-16T23:59:28Z",
+  "at": "2026-10-16T23:59:39Z",
   "h": "47e3fa1411",
   "note": "Green’s peace out phr: goodbye",
   "v": "ok"
  },
  "parents:26": {
-  "at": "2026-10-16T23:59:28Z",
+  "at": "2026-10-16T23:59:39Z",
   "h": "aa56f38419",
   "note": "M-W yada yada (variant yada yada yada): boring or empty talk, often used interjectionally",
   "v": "ok"
  },
  "parents:27": {
-  "at": "2026-10-16T23:59:28Z",
+  "at": "2026-10-16T23:59:39Z",
   "h": "1dc1e9671e",
   "note": "M-W cool beans interjection: used like cool to express agreement or approval",
   "v": "ok"
  },
+ "parents:28": {
+  "at": "2026-10-16T23:59:51Z",
+  "h": "4283575034",
+  "note": "M-W (it’s) no biggie: used to indicate that something is not important or not a problem",
+  "v": "ok"
+ },
  "parents:29": {
-  "at": "2026-10-16T23:59:28Z",
+  "at": "2026-10-16T23:59:39Z",
   "fix": {
    "groups": [
     [
@@ -1496,127 +1538,169 @@
   "v": "fix"
  },
  "parents:3": {
-  "at": "2026-10-16T23:59:28Z",
+  "at": "2026-10-16T23:59:39Z",
   "h": "7b0d86b904",
   "note": "M-W sweet adj: very good or appealing",
   "v": "ok"
  },
  "parents:30": {
-  "at": "2026-10-16T23:59:28Z",
+  "at": "2026-10-16T23:59:39Z",
   "h": "7b2560b8b9",
   "note": "Green’s home n. compound home skillet sense 1: a good friend",
   "v": "ok"
  },
+ "parents:31": {
+  "at": "2026-10-16T23:59:51Z",
+  "h": "7004c25c2c",
+  "note": "M-W dawg sense 2 slang: man, buddy, dude, used as a familiar form of address",
+  "v": "ok"
+ },
  "parents:32": {
-  "at": "2026-10-16T23:59:28Z",
+  "at": "2026-10-16T23:59:39Z",
   "h": "e64acd60e8",
   "note": "M-W peeps: people, often the group who are someone’s friends, colleagues, family",
   "v": "ok"
  },
  "parents:33": {
-  "at": "2026-10-16T23:59:28Z",
+  "at": "2026-10-16T23:59:39Z",
   "h": "395aed9ea3",
   "note": "M-W posse: a large group often with a common interest, entourage",
   "v": "ok"
  },
  "parents:34": {
-  "at": "2026-10-16T23:59:28Z",
+  "at": "2026-10-16T23:59:39Z",
   "h": "0db97bd632",
   "note": "M-W crib noun sense: home",
   "v": "ok"
  },
+ "parents:35": {
+  "at": "2026-10-16T23:59:51Z",
+  "h": "f246a62ae1",
+  "note": "M-W bling: flashy jewelry, expensive and ostentatious possessions",
+  "v": "ok"
+ },
+ "parents:36": {
+  "at": "2026-10-16T23:59:51Z",
+  "h": "e0671c8c70",
+  "note": "M-W props: due, respect, credit",
+  "v": "ok"
+ },
  "parents:37": {
-  "at": "2026-10-16T23:59:28Z",
+  "at": "2026-10-16T23:59:39Z",
   "h": "48da195091",
   "note": "M-W newbie: a person who has recently started a particular activity, beginner",
   "v": "ok"
  },
  "parents:38": {
-  "at": "2026-10-16T23:59:28Z",
+  "at": "2026-10-16T23:59:39Z",
   "h": "cee7fe5c4c",
   "note": "M-W couch potato: a lazy and inactive person who spends a great deal of time watching television. Minor risk: “newbie” in the wrong answers half fits (calls himself a fan but is more of a newbie), though couch potato is the clear best fit",
   "v": "ok"
  },
+ "parents:39": {
+  "at": "2026-10-16T23:59:51Z",
+  "h": "ddc6785923",
+  "note": "M-W mall rat: a person who habitually spends a lot of time in shopping malls",
+  "v": "ok"
+ },
  "parents:4": {
-  "at": "2026-10-16T23:59:28Z",
+  "at": "2026-10-16T23:59:39Z",
   "h": "914a7ea837",
   "note": "M-W sick adj: outstandingly or amazingly good or impressive",
   "v": "ok"
  },
+ "parents:40": {
+  "at": "2026-10-16T23:59:51Z",
+  "h": "84f15fd2c6",
+  "note": "Green’s chill (pill) n: a metaphorical medicine that calms one down, usually in take a chill pill",
+  "v": "ok"
+ },
  "parents:41": {
-  "at": "2026-10-16T23:59:28Z",
+  "at": "2026-10-16T23:59:39Z",
   "h": "f47fbcfdc6",
   "note": "M-W kick noun sense 7: kicks plural, US slang, shoes or sneakers",
   "v": "ok"
  },
  "parents:42": {
-  "at": "2026-10-16T23:59:28Z",
+  "at": "2026-10-16T23:59:39Z",
   "h": "01116a8b07",
   "note": "M-W brainiac: a very intelligent person",
   "v": "ok"
  },
  "parents:43": {
-  "at": "2026-10-16T23:59:28Z",
+  "at": "2026-10-16T23:59:39Z",
   "h": "f00d93e6bf",
   "note": "M-W dis verb: to treat with disrespect or contempt, insult",
   "v": "ok"
  },
  "parents:44": {
-  "at": "2026-10-16T23:59:28Z",
+  "at": "2026-10-16T23:59:39Z",
   "h": "231ae05647",
   "note": "M-W bounce intransitive verb sense: leave",
   "v": "ok"
  },
  "parents:45": {
-  "at": "2026-10-16T23:59:28Z",
+  "at": "2026-10-16T23:59:39Z",
   "h": "8146b8460e",
   "note": "M-W bail intransitive verb: bail out sense 2, which M-W bail out defines as to abandon a difficult situation, also leave, depart https://www.merriam-webster.com/dictionary/bail%20out",
   "v": "ok"
  },
  "parents:46": {
-  "at": "2026-10-16T23:59:28Z",
+  "at": "2026-10-16T23:59:39Z",
   "h": "1d6a4d5d46",
   "note": "M-W raise the roof: to make a lot of noise celebrating, shouting",
   "v": "ok"
  },
  "parents:47": {
-  "at": "2026-10-16T23:59:28Z",
+  "at": "2026-10-16T23:59:39Z",
   "h": "4630552ede",
   "note": "M-W have a cow: to become very angry, upset",
   "v": "ok"
  },
  "parents:48": {
-  "at": "2026-10-16T23:59:28Z",
+  "at": "2026-10-16T23:59:39Z",
   "h": "78fbfb3ad4",
   "note": "M-W veg out: to spend time idly or passively",
   "v": "ok"
  },
  "parents:49": {
-  "at": "2026-10-16T23:59:28Z",
+  "at": "2026-10-16T23:59:39Z",
   "h": "6b152a3856",
   "note": "M-W chill out: to calm down, go easy, relax",
   "v": "ok"
  },
  "parents:5": {
-  "at": "2026-10-16T23:59:28Z",
+  "at": "2026-10-16T23:59:39Z",
   "h": "12566a0c69",
   "note": "M-W rad adj slang: cool sense 7, radical (cool 7: very good, excellent)",
   "v": "ok"
  },
  "parents:50": {
-  "at": "2026-10-16T23:59:28Z",
+  "at": "2026-10-16T23:59:39Z",
   "h": "6d3e02a76c",
   "note": "M-W kick it: to spend time relaxing or socializing, hang out",
   "v": "ok"
  },
  "parents:6": {
-  "at": "2026-10-16T23:59:28Z",
+  "at": "2026-10-16T23:59:39Z",
   "h": "6bfda42d1c",
   "note": "M-W gnarly: very bad, gross, and also cool",
   "v": "ok"
  },
+ "parents:7": {
+  "at": "2026-10-16T23:59:51Z",
+  "h": "98871058c6",
+  "note": "M-W def adj slang: cool sense 7 (very good, excellent, very fashionable or impressive)",
+  "v": "ok"
+ },
+ "parents:8": {
+  "at": "2026-10-16T23:59:51Z",
+  "h": "d025ef726a",
+  "note": "Green’s all that adj senses 2 and 3: excellent, often sarcastic for someone conceited",
+  "v": "ok"
+ },
  "parents:9": {
-  "at": "2026-10-16T23:59:28Z",
+  "at": "2026-10-16T23:59:39Z",
   "h": "70971e5e67",
   "note": "Green’s hook n. phrase off the hook sense 1: so good as to transcend description, incredibly cool",
   "v": "ok"
