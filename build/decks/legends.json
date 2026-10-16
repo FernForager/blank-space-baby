@@ -82,7 +82,7 @@
       "means": "The first one was for 2024",
       "ex": "FIFA’s award for the best goal in women’s soccer is named after Marta",
       "hook": "best goal",
-      "k": "player",
+      "k": "woman",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2024/articles/marta-award-nominees",
       "d": 2,
       "women": true
@@ -174,7 +174,7 @@
       "means": "Germany won the title that year",
       "ex": "In 2003, Birgit Prinz won the Women’s World Cup Golden Ball and Golden Boot",
       "hook": "Golden Boot",
-      "k": "player",
+      "k": "woman",
       "src": "https://www.fifa.com/en/articles/birgti-prinz-best-moments-womens-world-cup-australia-and-new-zealand-countdown",
       "d": 2,
       "women": true
@@ -184,9 +184,9 @@
       "means": "She also scored in the 2–0 final",
       "ex": "Megan Rapinoe won the Golden Ball and Golden Boot at the 2019 Women’s World Cup",
       "hook": "Golden Ball",
-      "k": "player",
+      "k": "woman",
       "src": "https://www.fifa.com/en/tournaments/womens/womensworldcup/australia-new-zealand2023/articles/megan-rapinoe-usa-golden-ball-world-cup-australia-new-zealand-countdown",
-      "d": 1,
+      "d": 2,
       "women": true
     },
     {
@@ -194,9 +194,9 @@
       "means": "She went on to win two World Cups",
       "ex": "Mia Hamm made her debut for the USA at just 15",
       "hook": "USA",
-      "k": "player",
+      "k": "woman",
       "src": "https://www.fifa.com/en/tournaments/womens/womensworldcup/articles/mia-hamm-usa-interview",
-      "d": 1,
+      "d": 2,
       "women": true
     },
     {
@@ -204,9 +204,9 @@
       "means": "World champion in 2015 and 2019",
       "ex": "Alex Morgan retired in 2024 with 123 goals for the USA",
       "hook": "USA",
-      "k": "player",
+      "k": "woman",
       "src": "https://www.fifa.com/en/news/articles/alex-morgan-retires-usa",
-      "d": 1,
+      "d": 2,
       "women": true
     },
     {
@@ -214,9 +214,9 @@
       "means": "One goal came from the halfway line",
       "ex": "Carli Lloyd scored a hat trick in the 2015 Women’s World Cup final",
       "hook": "hat trick",
-      "k": "player",
+      "k": "woman",
       "src": "https://www.fifa.com/en/tournaments/womens/womensworldcup/fifa-womens-world-cup-canada-2015/articles/carli-lloyd-usa-goal-final",
-      "d": 1,
+      "d": 2,
       "women": true
     },
     {
@@ -224,7 +224,7 @@
       "means": "She finally won the World Cup in 2015",
       "ex": "Abby Wambach’s header in the 122nd minute saved the USA against Brazil in 2011",
       "hook": "header",
-      "k": "player",
+      "k": "woman",
       "src": "https://www.fifa.com/en/tournaments/womens/womensworldcup/fifa-womens-world-cup-usa-2003/articles/abby-wambach-usa-first-goal",
       "d": 2,
       "women": true
@@ -234,9 +234,9 @@
       "means": "Top scorer at the first World Cup, 1991",
       "ex": "Michelle Akers scored the US women’s team’s first-ever goal, in 1985",
       "hook": "US women",
-      "k": "player",
+      "k": "woman",
       "src": "https://www.fifa.com/en/articles/michelle-akers-usa-interview",
-      "d": 1,
+      "d": 3,
       "women": true
     },
     {
@@ -708,14 +708,6 @@
       "Birgit Prinz",
       "Megan Rapinoe",
       "Marta"
-    ],
-    [
-      "Megan Rapinoe",
-      "Alex Morgan",
-      "Carli Lloyd",
-      "Abby Wambach",
-      "Mia Hamm",
-      "Michelle Akers"
     ],
     [
       "Geoff Hurst",
