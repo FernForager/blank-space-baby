@@ -1,11 +1,13 @@
-"""Build the card review page (a claude.ai artifact) from the decks in the daily.
+"""Build the card review queues for Morg's hub from the decks in the daily.
 
-    python3 tools/review.py OUT.html
+    python3 tools/review.py --hub OUTDIR     # one JSON file per deck: a review queue for the hub (Oct 16, 2026)
+    python3 tools/review.py OUT.html         # the old standalone review page, kept for reference
 
-Morg approves, flags or cuts each card there: its sentence, its means line, its tile word (hook) and its color.
+Morg approves, flags or cuts each card in the hub: its sentence, its means line, its tile word (hook) and its color.
 Each card also lists the wrong answers it can draw, so a giveaway or a second right answer shows.
-Decisions live in the artifact's database, one collection per deck (r_<deck id>), one document per card index,
-with the card's answer, sentence, hook and color as reviewed, so Claude can read them back.
+Each file is one document for the hub's collection projects/triviela/reviews (send them with ArtifactData). Morg's
+verdicts land in projects/triviela/verdicts, one document per card, named <deck id>~<card index>, with the answer,
+sentence, hook and color he saw.
 """
 import json, sys, os
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -26,11 +28,35 @@ def wrongs(deck, it):
         if x.get('k', 'word') == it.get('k', 'word') and not clash(x['w'], it['w']) and x['w'] not in out: out.append(x['w'])
     return out
 
-data = []
-for did, name in DECKS:
-    d = json.load(open(os.path.join(ROOT, 'build', 'decks', did + '.json')))
-    data.append({'id': did, 'name': name, 'cards': [[x['w'], x['ex'], x['means'], x.get('k', 'word'), x.get('d', 0), 1 if x.get('current') else 0, x['src'],
-                                                     x.get('hook', ''), wrongs(d, x)] for x in d['items']]})
-page = open(os.path.join(ROOT, 'tools', 'review.html')).read().replace('__DATA__', json.dumps(data, ensure_ascii=False).replace('</', '<\\/'))
-open(sys.argv[1], 'w').write(page)
-print('wrote', sys.argv[1], sum(len(x['cards']) for x in data), 'cards')
+TILE = {1: ('#FFFFFF', '#1E2A3B', 'White tile (easy)'), 2: ('#F7C948', '#1E2A3B', 'Yellow card (medium)'), 3: ('#D52B1E', '#FFFFFF', 'Red card (hard)')}
+
+def hub_item(i, x, pool):
+    shown = ' · '.join(pool[:8]) + (f' · and {len(pool) - 8} more' if len(pool) > 8 else '')
+    color, ink, label = TILE.get(x.get('d'), ('#FFFFFF', '#1E2A3B', ''))
+    host = x['src'].split('/')[2] if x['src'].startswith('http') else x['src']
+    return {'id': str(i), 'text': x['ex'], 'mark': x['w'], 'sub': x['means'],
+            'tile': {'text': x.get('hook', ''), 'color': color, 'ink': ink, 'label': label},
+            'lines': ['Wrong answers it can draw: ' + (shown or 'none')],
+            'chips': [x.get('k', 'word')] + (['can go stale'] if x.get('current') else []),
+            'link': {'label': 'Source: ' + host, 'url': x['src']},
+            'snap': {'w': x['w'], 'ex': x['ex'], 'means': x['means'], 'hook': x.get('hook', ''), 'd': x.get('d')}}
+
+if __name__ == '__main__':
+    if sys.argv[1] == '--hub':
+        out = sys.argv[2]; os.makedirs(out, exist_ok=True); n = 0
+        for order, (did, name) in enumerate(DECKS):
+            d = json.load(open(os.path.join(ROOT, 'build', 'decks', did + '.json')))
+            q = {'title': name, 'order': order + 1, 'seconds': 15, 'items': [hub_item(i, x, wrongs(d, x)) for i, x in enumerate(d['items'])]}
+            body = json.dumps(q, ensure_ascii=False)
+            assert len(body.encode()) < 250_000, (did, len(body.encode()), 'too big for one hub document')
+            open(os.path.join(out, did + '.json'), 'w').write(body); n += len(q['items'])
+        print('wrote', len(DECKS), 'review queues,', n, 'cards, into', out)
+    else:
+        data = []
+        for did, name in DECKS:
+            d = json.load(open(os.path.join(ROOT, 'build', 'decks', did + '.json')))
+            data.append({'id': did, 'name': name, 'cards': [[x['w'], x['ex'], x['means'], x.get('k', 'word'), x.get('d', 0), 1 if x.get('current') else 0, x['src'],
+                                                             x.get('hook', ''), wrongs(d, x)] for x in d['items']]})
+        page = open(os.path.join(ROOT, 'tools', 'review.html')).read().replace('__DATA__', json.dumps(data, ensure_ascii=False).replace('</', '<\\/'))
+        open(sys.argv[1], 'w').write(page)
+        print('wrote', sys.argv[1], sum(len(x['cards']) for x in data), 'cards')
