@@ -11,7 +11,7 @@ Read this first. It holds the decisions already made so nobody re-learns them. T
 - He names everything and approves all player-facing text (titles, labels, prompts, reactions). Anything you write for players is a placeholder until he signs off.
 - `main` is the live site. **Never push to `main` without Morg's OK.** Work on a branch, show him, then merge when he says so.
 - He wants directness, honest pushback, short answers when short is right, and small fixes done now rather than later.
-- Keep usage lean.
+- Quality first, efficiency second (Morg, Oct 16, 2026). Don't cut corners to save tokens, but don't waste them either.
 - No semicolons in anything you write for him: replies, docs, code comments, commit messages. He prefers em dashes, colons, commas or periods.
 
 ## How to build and check
