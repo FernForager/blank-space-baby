@@ -302,7 +302,7 @@
   {
    "w": "indirect free kick",
    "means": "Taken from where the offense happened",
-   "ex": "An offside offense is punished with an indirect free kick",
+   "ex": "After an offside offense, play restarts with the other team’s indirect free kick",
    "hook": "offside",
    "k": "restart",
    "src": "https://www.theifab.com/laws/latest/offside/",
@@ -410,7 +410,7 @@
   {
    "w": "offside",
    "means": "Only head, body and feet count",
-   "ex": "Hands and arms don’t count when judging an offside position",
+   "ex": "When judging offside, a player’s hands and arms don’t count",
    "hook": "arms",
    "k": "offense",
    "src": "https://www.theifab.com/laws/latest/offside/",

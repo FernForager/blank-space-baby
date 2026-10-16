@@ -7,7 +7,7 @@
     {
       "w": "Gunners",
       "means": "Royal Arsenal, Woolwich, 1886",
-      "ex": "Arsenal are the Gunners, after the munitions workers who founded them",
+      "ex": "Arsenal are the Gunners, after the factory workers who founded them",
       "hook": "Arsenal",
       "k": "nickname",
       "src": "https://www.premierleague.com/en/news/4592046/what-is-the-history-behind-every-premier-league-clubs-name",
@@ -60,12 +60,12 @@
     },
     {
       "w": "Cherries",
-      "means": "Or for their red striped shirts",
-      "ex": "Bournemouth may be the Cherries for trees that once grew by their ground",
+      "means": "Or for cherry trees by their ground",
+      "ex": "Bournemouth may be the Cherries for their red striped shirts",
       "hook": "Bournemouth",
       "k": "nickname",
       "src": "https://www.premierleague.com/en/news/4592046/what-is-the-history-behind-every-premier-league-clubs-name",
-      "d": 1
+      "d": 2
     },
     {
       "w": "Clarets",
@@ -439,11 +439,11 @@
     {
       "w": "parakeets",
       "means": "Birds lived in trees by Sarrià",
-      "ex": "Espanyol are the Pericos, or parakeets, after birds by their old stadium",
+      "ex": "Espanyol’s nickname, the Pericos, means parakeets",
       "hook": "Espanyol",
       "k": "meaning",
       "src": "https://www.laliga.com/en-US/news/why-are-the-players-from-espanyol-called-pericos",
-      "d": 1
+      "d": 2
     },
     {
       "w": "basins",
@@ -483,8 +483,8 @@
     },
     {
       "w": "vermilion",
-      "means": "From the Catalan word vermelló",
-      "ex": "Mallorca’s nickname Bermellones comes from vermilion, a bright orange-red",
+      "means": "A bright orange-red, vermelló in Catalan",
+      "ex": "Mallorca’s nickname, the Bermellones, comes from vermilion",
       "hook": "Mallorca",
       "k": "meaning",
       "src": "https://www.laliga.com/en-US/news/why-are-the-players-for-rcd-mallorca-called-bermellones",
@@ -501,12 +501,12 @@
     },
     {
       "w": "cucumber growers",
-      "means": "They once fed Madrid",
-      "ex": "Leganés are the Pepineros, or cucumber growers, from farming days",
+      "means": "Farmers who once fed Madrid",
+      "ex": "Leganés are the Pepineros, or cucumber growers",
       "hook": "Leganés",
       "k": "meaning",
       "src": "https://www.laliga.com/en-US/news/why-leganes-cd-players-are-called-pepineros",
-      "d": 1
+      "d": 2
     },
     {
       "w": "young boars",

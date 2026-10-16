@@ -16,7 +16,7 @@
   {
    "w": "fly",
    "means": "Stylish and impressive",
-   "ex": "Dad thinks his old team jacket still looks fly",
+   "ex": "Dad proudly wears his old team jacket because he thinks it still looks fly",
    "hook": "jacket",
    "k": "adj",
    "src": "https://www.merriam-webster.com/dictionary/fly",
@@ -25,7 +25,7 @@
   {
    "w": "fresh",
    "means": "Cool and in style",
-   "ex": "The coach said the team’s new jerseys look fresh",
+   "ex": "The whole team wants to wear the new jerseys because they look so fresh",
    "hook": "new jerseys",
    "k": "adj",
    "src": "https://www.merriam-webster.com/dictionary/fresh",
@@ -52,7 +52,7 @@
   {
    "w": "rad",
    "means": "Excellent, cool",
-   "ex": "Dad said the bicycle-kick goal was totally rad",
+   "ex": "Dad cheered and said the bicycle-kick goal was totally rad",
    "hook": "bicycle-kick",
    "k": "adj",
    "src": "https://www.merriam-webster.com/dictionary/rad",
@@ -70,16 +70,16 @@
   {
    "w": "def",
    "means": "Top-notch and stylish",
-   "ex": "The coach said the new warm-up music was def",
+   "ex": "The team danced through warm-ups because the new music was def",
    "hook": "music",
    "k": "adj",
    "src": "https://www.merriam-webster.com/dictionary/def",
-   "d": 3
+   "d": 2
   },
   {
    "w": "all that",
    "means": "The best, or so they think",
-   "ex": "The captain thinks her new shin guards are all that",
+   "ex": "The captain shows off her new shin guards like they are all that",
    "hook": "shin guards",
    "k": "adj",
    "src": "https://greensdictofslang.com/entry/ktfqsua",
@@ -160,7 +160,7 @@
   {
    "w": "psych",
    "means": "Ha, just kidding",
-   "ex": "The coach said practice was canceled—psych!",
+   "ex": "The coach pretended to cancel practice, then yelled “psych!”",
    "hook": "practice",
    "k": "exclaim",
    "src": "https://www.merriam-webster.com/dictionary/psych",
@@ -205,7 +205,7 @@
   {
    "w": "word",
    "means": "Agreed, for real",
-   "ex": "When the coach said to hustle, Dad replied “word”",
+   "ex": "When the coach said to hustle, Dad agreed by replying “word”",
    "hook": "hustle",
    "k": "exclaim",
    "src": "https://www.merriam-webster.com/dictionary/word",
@@ -223,7 +223,7 @@
   {
    "w": "talk to the hand",
    "means": "I’m not listening",
-   "ex": "Asked to share her orange slices, the goalie said “talk to the hand”",
+   "ex": "Asked to share her orange slices, the goalie refused with “talk to the hand”",
    "hook": "goalie",
    "k": "exclaim",
    "src": "https://greensdictofslang.com/entry/gavguda#mun6biq",
