@@ -133,7 +133,7 @@
   },
   {
    "w": "Manuel Neuer",
-   "means": "248 of them, a record",
+   "means": "A record he’s still adding to",
    "ex": "Manuel Neuer has kept more Bundesliga clean sheets than anyone",
    "hook": "clean sheets",
    "k": "player",
@@ -197,7 +197,7 @@
   },
   {
    "w": "Franz Beckenbauer",
-   "means": "Four league titles with Bayern",
+   "means": "Four titles as a Bayern player",
    "ex": "Bayern retired the No. 5 shirt in honor of Franz Beckenbauer",
    "hook": "Bayern",
    "k": "player",
@@ -433,7 +433,7 @@
    "hook": "south stand",
    "k": "stadium",
    "src": "https://www.bundesliga.com/en/bundesliga/news/yellow-wall-wiki-borussia-dortmund-signal-iduna-park-bvb-3357-2391",
-   "d": 1
+   "d": 2
   },
   {
    "w": "Hennes",
@@ -634,6 +634,10 @@
   [
    "Udo Lattek",
    "Ottmar Hitzfeld"
+  ],
+  [
+   "Gladbach",
+   "Borussia Dortmund"
   ]
  ],
  "cut": [

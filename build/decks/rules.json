@@ -6,9 +6,9 @@
  "items": [
   {
    "w": "11",
-   "means": "One of them must be the goalkeeper",
-   "ex": "Each team may have at most 11 players on the field",
-   "hook": "players",
+   "means": "A match can’t go on with fewer than 7",
+   "ex": "Each team may have at most 11 players on the field, and one must be the goalkeeper",
+   "hook": "goalkeeper",
    "k": "count",
    "src": "https://www.theifab.com/laws/latest/the-players/",
    "d": 1
@@ -227,13 +227,13 @@
    "d": 3
   },
   {
-   "w": "5 feet",
-   "means": "At least 1.5 m tall in metric",
-   "ex": "A corner flagpost must be at least 5 feet tall",
-   "hook": "flagpost",
+   "w": "27–28 inches",
+   "means": "And weigh 14–16 ounces",
+   "ex": "A match ball must measure 27–28 inches around",
+   "hook": "match ball",
    "k": "measure",
-   "src": "https://www.theifab.com/laws/latest/the-field-of-play/",
-   "d": 3
+   "src": "https://www.theifab.com/laws/latest/the-ball/",
+   "d": 2
   },
   {
    "w": "5 inches",
@@ -499,12 +499,13 @@
   },
   {
    "w": "jewelry",
-   "means": "Covering it with tape isn’t allowed",
-   "ex": "Players must take off all jewelry before playing",
-   "hook": "take off",
+   "means": "Dangerous items must still come off",
+   "ex": "Since 2026, players may wear jewelry that isn’t dangerous if it’s securely covered",
+   "hook": "covered",
    "k": "gear",
    "src": "https://www.theifab.com/laws/latest/the-players-equipment/",
-   "d": 1
+   "d": 2,
+   "current": true
   },
   {
    "w": "armband",
@@ -571,7 +572,7 @@
   },
   {
    "w": "coin toss",
-   "means": "The winner picks a goal or the kickoff",
+   "means": "Only the referee may toss the coin",
    "ex": "Before a match, the team that wins the coin toss picks a goal or the kickoff",
    "hook": "picks a goal",
    "k": "term",
@@ -589,7 +590,7 @@
   },
   {
    "w": "shoot-out",
-   "means": "Officially: kicks from the penalty mark",
+   "means": "Once called kicks from the penalty mark",
    "ex": "Under the Laws, a match still tied after extra time can go to a shoot-out",
    "hook": "extra time",
    "k": "term",
@@ -649,6 +650,10 @@
   [
    "coin toss",
    "shoot-out"
+  ],
+  [
+   "jewelry",
+   "shin guards"
   ]
  ],
  "cut": [

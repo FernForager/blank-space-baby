@@ -1,0 +1,11 @@
+# Cloudflare Pages settings (Morg, Oct 16, 2026). The site is the docs folder, with no build step.
+# The DB binding connects functions/api/mark.js, the beta's flag and lock keys, to the triviela-beta database.
+# While this file exists, Pages takes these settings from here, not from the dashboard.
+name = "blank-space-baby"
+pages_build_output_dir = "./docs"
+compatibility_date = "2026-10-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "triviela-beta"
+database_id = "28b9326e-e80a-433a-ab24-64c0c11712fe"

@@ -98,7 +98,7 @@
       "w": "Frank Lampard",
       "means": "The most long-range goals of anyone",
       "ex": "Frank Lampard scored 41 Premier League goals from outside the box",
-      "hook": "Premier",
+      "hook": "box",
       "k": "player",
       "src": "https://www.premierleague.com/en/stats/records",
       "d": 2
@@ -142,8 +142,8 @@
     {
       "w": "Cristiano Ronaldo",
       "means": "Both times with Man United",
-      "ex": "Cristiano Ronaldo was Player of the Season in 2006–07 and 2007–08",
-      "hook": "2006–07",
+      "ex": "Like Nemanja Vidić, Cristiano Ronaldo won Player of the Season twice",
+      "hook": "Vidić",
       "k": "player",
       "src": "https://www.premierleague.com/en/stats/records",
       "d": 1
@@ -287,7 +287,7 @@
       "w": "Sam Allardyce",
       "means": "A record, from Bolton to Leeds",
       "ex": "Sam Allardyce managed nine different Premier League clubs",
-      "hook": "Premier",
+      "hook": "nine",
       "k": "manager",
       "src": "https://www.premierleague.com/en/stats/records",
       "d": 2
@@ -411,9 +411,9 @@
     },
     {
       "w": "6",
-      "means": "Including Arsenal, Everton and Spurs",
-      "ex": "Since 1992, 6 clubs have played in every Premier League season",
-      "hook": "Premier",
+      "means": "Like Arsenal, Chelsea and Liverpool",
+      "ex": "Everton are one of 6 clubs to have played every Premier League season",
+      "hook": "Everton",
       "k": "number",
       "src": "https://www.premierleague.com/en/premier-league-explained",
       "d": 2,
@@ -743,6 +743,10 @@
     [
       "Sky Blues",
       "Clarets"
+    ],
+    [
+      "Aston Villa",
+      "Crystal Palace"
     ]
   ],
   "cut": [

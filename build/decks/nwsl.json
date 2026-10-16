@@ -43,7 +43,7 @@
   {
    "w": "Washington Spirit",
    "means": "Kelley O’Hara headed in the winner",
-   "ex": "Washington Spirit won its first title in 2021, in extra time",
+   "ex": "Washington Spirit won their first title in 2021, in extra time",
    "hook": "extra time",
    "k": "club",
    "src": "https://www.nwslsoccer.com/news/match-recap-washington-spirit-vs-chicago-red-stars-11-20-2021",
@@ -79,7 +79,7 @@
   {
    "w": "San Diego Wave",
    "means": "Coached by Casey Stoney",
-   "ex": "In only its second season, San Diego Wave won the 2023 Shield",
+   "ex": "In only their second season, San Diego Wave won the 2023 Shield",
    "hook": "2023 Shield",
    "k": "club",
    "src": "https://www.nwslsoccer.com/news/san-diego-wave-fc-claims-2023-nwsl-shield-presented-by-carmax",
@@ -97,7 +97,7 @@
   {
    "w": "Denver Summit",
    "means": "More than double Boston’s opener crowd",
-   "ex": "Denver Summit drew a record 63,004 fans to its first home game",
+   "ex": "Denver Summit drew a record 63,004 fans to their first home game",
    "hook": "63,004 fans",
    "k": "club",
    "src": "https://www.nwslsoccer.com/news/no-place-like-home-denver-summit-inaugural-home-opener-at-mile-high-smashes-nwsl-attendance-record",
@@ -288,10 +288,10 @@
   {
    "w": "20",
    "means": "Sam Kerr’s old record was 18",
-   "ex": "Temwa Chawinga scored a record 20 goals in 2024",
+   "ex": "In 2024, Temwa Chawinga became the first NWSL player to score 20 goals in a season",
    "hook": "Chawinga",
    "k": "number",
-   "src": "https://www.nwslsoccer.com/news/kansas-city-current-forward-temwa-chawinga-named-2024-nwsl-most-valuable-player",
+   "src": "https://www.nwslsoccer.com/news/a-history-of-the-nwsl-goal-record",
    "d": 2
   },
   {
@@ -314,7 +314,7 @@
   },
   {
    "w": "23",
-   "means": "A league record unbeaten start",
+   "means": "They went on to win the 2024 title",
    "ex": "Orlando’s unbeaten start to 2024 lasted a record 23 games",
    "hook": "unbeaten",
    "k": "number",
@@ -328,7 +328,7 @@
    "hook": "NWSL",
    "k": "term",
    "src": "https://www.nwslsoccer.com/news/orlando-pride-lifts-first-nwsl-championship-trophy-2024-nwsl-championship-recap",
-   "d": 1
+   "d": 2
   },
   {
    "w": "Golden Boot",
@@ -372,14 +372,14 @@
    "ex": "The NWSL was the first major U.S. pro league to get rid of its draft",
    "hook": "NWSL",
    "k": "term",
-   "src": "https://www.nwslsoccer.com/leadership-team",
+   "src": "https://www.nwslsoccer.com/news/nwsl-and-nwslpa-agree-to-historic-collective-bargaining-agreement",
    "d": 2
   },
   {
    "w": "Laura Harvey",
-   "means": "The Reign’s first head coach",
-   "ex": "In 2015, Laura Harvey became the first two-time Coach of the Year",
-   "hook": "Coach",
+   "means": "Her Reign won the 2014 and 2015 Shields",
+   "ex": "In 2015, Seattle’s Laura Harvey became the first two-time Coach of the Year",
+   "hook": "Seattle",
    "k": "leader",
    "src": "https://www.nwslsoccer.com/news/history-of-the-nwsl-shield",
    "d": 2
@@ -477,7 +477,7 @@
   {
    "w": "Gillette Stadium",
    "means": "Denver’s debut more than doubled it",
-   "ex": "Boston Legacy drew 30,207 fans to Gillette Stadium for its first home game",
+   "ex": "Boston Legacy drew 30,207 fans to Gillette Stadium for their first home game",
    "hook": "Boston",
    "k": "stadium",
    "src": "https://www.nwslsoccer.com/news/no-place-like-home-denver-summit-inaugural-home-opener-at-mile-high-smashes-nwsl-attendance-record",
@@ -530,7 +530,7 @@
   },
   {
    "w": "Denver",
-   "means": "Its first home game drew 63,004",
+   "means": "Their first home game drew 63,004",
    "ex": "The Summit play their home games in Denver",
    "hook": "Summit",
    "k": "city",
@@ -567,7 +567,7 @@
   {
    "w": "2020",
    "means": "No playoffs were held either",
-   "ex": "No NWSL regular season was played in 2020",
+   "ex": "Because of COVID-19, no NWSL regular season was played in 2020",
    "hook": "NWSL",
    "k": "year",
    "src": "https://www.nwslsoccer.com/news/class-is-in-session-nwsl-playoffs-history-from-2013-to-2024",

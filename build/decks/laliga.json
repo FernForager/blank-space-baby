@@ -43,10 +43,10 @@
   {
    "w": "Deportivo",
    "means": "Runners-up Barcelona were 5 behind",
-   "ex": "Deportivo won their only league title in 1999–2000",
-   "hook": "1999–2000",
+   "ex": "Roy Makaay scored as Deportivo clinched their only league title, in 1999–2000",
+   "hook": "Makaay",
    "k": "club",
-   "src": "https://www.laliga.com/noticias/todos-los-campeones-de-la-historia-de-laliga",
+   "src": "https://www.laliga.com/en-GB/news/galicia-quality",
    "d": 3
   },
   {
@@ -70,19 +70,19 @@
   {
    "w": "Sevilla",
    "means": "Barcelona finished a point behind",
-   "ex": "Sevilla won their only league title in 1945–46",
-   "hook": "1945–46",
+   "ex": "Sevilla won their only league title in 1945–46, with Ramón Encinas as coach",
+   "hook": "Encinas",
    "k": "club",
-   "src": "https://www.laliga.com/noticias/todos-los-campeones-de-la-historia-de-laliga",
+   "src": "https://www.laliga.com/en-GB/news/comparing-titles-real-betis-sevilla-fc",
    "d": 3
   },
   {
    "w": "Valencia",
    "means": "Their sixth title came in 2003–04",
-   "ex": "Valencia won the league in 2001–02 and again two years later",
-   "hook": "2001–02",
+   "ex": "Rafa Benítez coached Valencia to the league in 2001–02 and again two years later",
+   "hook": "Benítez",
    "k": "club",
-   "src": "https://www.laliga.com/noticias/todos-los-campeones-de-la-historia-de-laliga",
+   "src": "https://www.laliga.com/en-GB/news/rafa-benitez-named-as-new-real-madrid-boss",
    "d": 3
   },
   {
@@ -123,11 +123,11 @@
   },
   {
    "w": "Telmo Zarra",
-   "means": "Six Pichichis, all with Athletic",
+   "means": "Messi passed his total in 2014",
    "ex": "Telmo Zarra scored 251 LaLiga goals, the most by any Spaniard",
    "hook": "Spaniard",
    "k": "player",
-   "src": "https://www.laliga.com/en-GB/news/do-you-know-the-story-behind-the-pichichi-award",
+   "src": "https://www.laliga.com/en-GB/news/messi-received-the-lfp-trophy-for-the-all-time-top-goal-scorer-in-la-liga",
    "d": 3
   },
   {
@@ -205,7 +205,7 @@
   },
   {
    "w": "Ronaldinho",
-   "means": "His second solo goal made it 3–0",
+   "means": "His second goal made it 3–0",
    "ex": "In 2005, Real Madrid fans gave Barça’s Ronaldinho a standing ovation",
    "hook": "ovation",
    "k": "player",
@@ -214,7 +214,7 @@
   },
   {
    "w": "Alfredo Di Stéfano",
-   "means": "He won five straight European Cups",
+   "means": "He won five European Cups with Madrid",
    "ex": "Barcelona thought they had signed Alfredo Di Stéfano in 1953, but Madrid got him",
    "hook": "Barcelona",
    "k": "player",
@@ -260,7 +260,7 @@
   {
    "w": "Pep Guardiola",
    "means": "Barça’s 2009 “sextete”",
-   "ex": "In 2009, Pep Guardiola’s Barcelona won all six trophies it played for",
+   "ex": "In 2009, Pep Guardiola’s Barcelona won all six trophies they played for",
    "hook": "Barcelona",
    "k": "coach",
    "src": "https://www.laliga.com/noticias/mejores-clasicos-historia-laliga-real-madrid-barcelona",
@@ -278,10 +278,10 @@
   {
    "w": "Hansi Flick",
    "means": "His Barça got 94 points in 2025–26",
-   "ex": "Hansi Flick was Coach of the Year in both 2024–25 and 2025–26",
-   "hook": "Coach",
+   "ex": "Barça’s Hansi Flick was Coach of the Year in both 2024–25 and 2025–26",
+   "hook": "Barça",
    "k": "coach",
-   "src": "https://www.laliga.com/en-GB/news/hansi-flick-laliga-ea-sports-coach-of-the-year-2025-2026",
+   "src": "https://www.laliga.com/en-GB/news/hansi-flick-best-coach-in-laliga-ea-sports-2024-2025",
    "d": 2
   },
   {
@@ -296,10 +296,10 @@
   {
    "w": "Miguel Muñoz",
    "means": "The all-time record for titles",
-   "ex": "Miguel Muñoz has won more league titles than any other coach",
-   "hook": "titles",
+   "ex": "Real Madrid’s Miguel Muñoz has won more league titles than any other coach",
+   "hook": "Real Madrid",
    "k": "coach",
-   "src": "https://www.laliga.com/en-GB/news/laliga-remembers-90-years-of-professional-football-history",
+   "src": "https://www.laliga.com/noticias/historia-santiago-bernabeu-estadio-real-madrid",
    "d": 3
   },
   {
@@ -372,7 +372,7 @@
    "ex": "Sevilla play their home games at the Ramón Sánchez-Pizjuán",
    "hook": "Sevilla",
    "k": "stadium",
-   "src": "https://www.laliga.com/en-GB/clubs/sevilla-fc",
+   "src": "https://www.laliga.com/en-GB/news/ten-things-you-may-not-know-about-the-ramon-sanchez-pizjuan",
    "d": 3
   },
   {
@@ -597,6 +597,10 @@
   [
    "36",
    "29"
+  ],
+  [
+   "Lionel Messi",
+   "Cristiano Ronaldo"
   ]
  ],
  "cut": [

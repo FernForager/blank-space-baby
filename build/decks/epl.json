@@ -8,7 +8,7 @@
    "w": "Man United",
    "means": "All 13 came under Alex Ferguson",
    "ex": "Man United have won the most Premier League titles, with 13",
-   "hook": "Premier",
+   "hook": "titles",
    "k": "club",
    "src": "https://www.premierleague.com/en/premier-league-explained",
    "d": 2
@@ -92,8 +92,8 @@
   {
    "w": "20",
    "means": "Each plays the others twice",
-   "ex": "The Premier League has 20 clubs",
-   "hook": "Premier",
+   "ex": "The Premier League has 20 clubs, one tier above the Championship",
+   "hook": "Championship",
    "k": "number",
    "src": "https://www.premierleague.com/en/premier-league-explained",
    "d": 2
@@ -110,8 +110,8 @@
   {
    "w": "380",
    "means": "20 clubs, 38 games each, halved",
-   "ex": "A Premier League season has 380 matches in all",
-   "hook": "Premier",
+   "ex": "From August to May, a Premier League season has 380 matches in all",
+   "hook": "August",
    "k": "number",
    "src": "https://www.premierleague.com/en/premier-league-explained",
    "d": 2
@@ -174,8 +174,8 @@
   {
    "w": "James Milner",
    "means": "His run began in 2002–03",
-   "ex": "James Milner has played more Premier League games than anyone",
-   "hook": "Premier",
+   "ex": "James Milner has made the most Premier League appearances",
+   "hook": "appearances",
    "k": "player",
    "src": "https://www.premierleague.com/en/stats/records",
    "d": 2
@@ -266,7 +266,7 @@
    "w": "London",
    "means": "Home to several league clubs",
    "ex": "Arsenal’s Emirates Stadium is in Holloway, north London",
-   "hook": "Emirates",
+   "hook": "Holloway",
    "k": "city",
    "src": "https://www.premierleague.com/en/news/4725666/all-you-need-to-know-about-the-20-premier-league-stadiums",
    "d": 2
@@ -322,12 +322,12 @@
    "ex": "Everton are nicknamed the Toffees",
    "hook": "Everton",
    "k": "nickname",
-   "src": "https://www.premierleague.com/en/news/4576519/fulham-1-everton-2-match-report-7-february-2026",
+   "src": "https://www.premierleague.com/en/news/4592046/what-is-the-history-behind-every-premier-league-clubs-name",
    "d": 2
   },
   {
    "w": "Magpies",
-   "means": "For their black-and-white stripes",
+   "means": "They play in black-and-white stripes",
    "ex": "Newcastle United are nicknamed the Magpies",
    "hook": "Newcastle",
    "k": "nickname",
@@ -410,7 +410,7 @@
    "w": "Mikel Arteta",
    "means": "Won with Arsenal in 2025–26",
    "ex": "Mikel Arteta became the 13th different title-winning manager in 2026",
-   "hook": "manager",
+   "hook": "13th",
    "k": "manager",
    "src": "https://www.premierleague.com/en/news/4660971/every-premier-league-title-winning-manager-in-history",
    "d": 2,
@@ -429,8 +429,8 @@
   {
    "w": "1992",
    "means": "Man United won the first title",
-   "ex": "The Premier League began in 1992",
-   "hook": "Premier",
+   "ex": "The Premier League began in 1992 as England’s new top tier",
+   "hook": "England",
    "k": "year",
    "src": "https://www.premierleague.com/en/premier-league-explained",
    "d": 2

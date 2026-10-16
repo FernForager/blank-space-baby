@@ -15,7 +15,7 @@ self.addEventListener('activate', function (e) {
 });
 self.addEventListener('fetch', function (e) {
   var r = e.request;
-  if (r.method !== 'GET') return;
+  if (r.method !== 'GET' || new URL(r.url).pathname.indexOf('/api/') === 0) return;   // the beta's flag and lock calls always go to the network
   if (r.mode === 'navigate') {
     e.respondWith(new Promise(function (resolve) {
       var done = false;

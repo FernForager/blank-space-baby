@@ -4,7 +4,8 @@
 
 Plays every card of each day (animations off, every answer right), checking each one: three different
 choices with the answer among them, a blank in the sentence, nothing overflowing the screen before or
-after answering, and the page never scrolling. On each board it checks every hook fits its tile and
+after answering, the answered sentence clear of the go arrow and the beta's flag and lock keys, and the
+page never scrolling. On each board it checks every hook fits its tile and
 records the smallest hook font. Prints how often the right answer lands in each slot (should be even).
 """
 import asyncio, collections, os, sys
@@ -19,6 +20,11 @@ CARD = """() => { const q = document.getElementById('q'), f = document.querySele
            ov: q.scrollWidth > q.clientWidth + 1 || f.scrollHeight > f.clientHeight + 1, scroll: document.documentElement.scrollHeight > innerHeight }; }"""
 AFTER = """() => { const q = document.getElementById('q'), f = document.querySelector('.face');
   return q.scrollWidth > q.clientWidth + 1 || f.scrollHeight > f.clientHeight + 1 || document.documentElement.scrollHeight > innerHeight; }"""
+# after answering, the sentence must clear the go arrow and, on preview links, the beta's flag and lock keys
+CLEAR = """() => { const r = document.createRange(); r.selectNodeContents(document.getElementById('q'));
+  const lines = [...r.getClientRects()], keys = [...document.querySelectorAll('#go:not(.wait), #beta:not([hidden]) .bk')].map(e => e.getBoundingClientRect());
+  const hit = (a, b) => a.left < b.right && b.left < a.right && a.top < b.bottom && b.top < a.bottom;
+  return { hit: lines.some(l => keys.some(k => hit(l, k))), gap: Math.min(...keys.map(k => k.top)) - Math.max(...lines.map(l => l.bottom)), keys: keys.length }; }"""
 BOARD = """() => { const h = [...document.querySelectorAll('.hk')];
   return { min: Math.min(...h.map(e => parseFloat(getComputedStyle(e).fontSize))), over: h.filter(e => e.scrollWidth > e.clientWidth + 0.5).map(e => e.textContent),
            scroll: document.documentElement.scrollHeight > innerHeight }; }"""
@@ -29,7 +35,7 @@ async def main():
         ctx = await b.new_context(viewport={'width': W, 'height': H}, reduced_motion='reduce')
         pg = await ctx.new_page(); errs = []; pg.on('pageerror', lambda e: errs.append(str(e)))
         await pg.route('http://bsb.test/**', lambda r: r.fulfill(body=HTML, content_type='text/html'))
-        slots, problems, fonts, cards = collections.Counter(), [], [], 0
+        slots, problems, fonts, cards, gaps = collections.Counter(), [], [], 0, []
         for day in range(1, DAYS + 1):
             await pg.goto(f'http://bsb.test/?day={day}&reset'); await pg.wait_for_timeout(250)
             bd = await pg.evaluate(BOARD); fonts.append(bd['min'])
@@ -41,9 +47,11 @@ async def main():
                 slots[st['ch'].index(st['w'])] += 1
                 await pg.click(f'.choice[data-w="{st["w"]}"]')
                 if await pg.evaluate(AFTER): problems.append((day, i, 'answer screen overflows', st['w']))
+                cl = await pg.evaluate(CLEAR); gaps.append(cl['gap'])
+                if cl['hit'] or cl['keys'] != 3: problems.append((day, i, 'the sentence runs into the keys at the bottom', st['w'], cl))
                 await pg.click('#flip'); await pg.wait_for_timeout(30 if i < 17 else 1000)
             if await pg.evaluate("document.getElementById('cab').dataset.v") != 'end': problems.append((day, 'no end screen after 18 right'))
-        print(f'{W}x{H}: {DAYS} days, {cards} cards, slots {dict(sorted(slots.items()))}, smallest hook font {min(fonts):.1f}px')
+        print(f'{W}x{H}: {DAYS} days, {cards} cards, slots {dict(sorted(slots.items()))}, smallest hook font {min(fonts):.1f}px, closest the sentence comes to the bottom keys {min(gaps):.0f}px')
         print('problems:', len(problems))
         for x in problems[:20]: print('  ', x)
         print('JS errors:', errs or 'none'); await b.close()

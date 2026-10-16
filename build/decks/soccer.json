@@ -14,19 +14,19 @@
    "d": 1
   },
   {
-   "w": "scissor kick",
+   "w": "scissors kick",
    "means": "Midair kick with a leg switch",
-   "ex": "She switched legs in midair and scored with a scissor kick",
+   "ex": "She switched legs in midair and scored with a scissors kick",
    "hook": "midair",
    "k": "move",
-   "src": "https://www.dictionary.com/browse/scissor-kick",
+   "src": "https://www.dictionary.com/browse/scissors-kick",
    "d": 2
   },
   {
    "w": "volley",
    "means": "Kick before the ball lands",
-   "ex": "The defender kicked a volley out of the air before it could bounce",
-   "hook": "bounce",
+   "ex": "To hit a volley, kick the ball out of the air before it bounces",
+   "hook": "bounces",
    "k": "move",
    "src": "https://www.merriam-webster.com/dictionary/volley",
    "d": 1
@@ -241,7 +241,7 @@
   {
    "w": "midfielder",
    "means": "Plays in the middle of the field",
-   "ex": "As a midfielder, Mom runs between both penalty areas all game",
+   "ex": "As a midfielder, Mom plays behind the forwards and ahead of the defense",
    "hook": "Mom",
    "k": "role",
    "src": "https://www.merriam-webster.com/dictionary/midfielder",
@@ -249,9 +249,9 @@
   },
   {
    "w": "fullback",
-   "means": "Defender who plays out wide",
+   "means": "A defender near your own goal",
    "ex": "The fullback sprinted up the sideline from the back line to join the attack",
-   "hook": "sideline",
+   "hook": "sprinted",
    "k": "role",
    "src": "https://www.merriam-webster.com/dictionary/fullback",
    "d": 2
@@ -377,7 +377,7 @@
    "w": "golden goal",
    "means": "First extra-time goal wins it",
    "ex": "The first goal in extra time was a golden goal, so everyone went home",
-   "hook": "extra time",
+   "hook": "first goal",
    "k": "game",
    "src": "https://www.dictionary.com/browse/golden-goal",
    "d": 1
@@ -456,7 +456,7 @@
   },
   {
    "w": "clinical",
-   "means": "Precise and never wasteful",
+   "means": "Done with real skill and precision",
    "ex": "The striker was clinical and scored on all three of her shots",
    "hook": "shots",
    "k": "lingo",
@@ -482,12 +482,12 @@
    "d": 2
   },
   {
-   "w": "gegenpress",
+   "w": "gegenpressing",
    "means": "Pressing right after losing it",
-   "ex": "After losing the ball, the team used the gegenpress to win it back",
+   "ex": "After losing the ball, the team used gegenpressing to win it back",
    "hook": "win it back",
    "k": "lingo",
-   "src": "https://www.dictionary.com/browse/gegenpress",
+   "src": "https://www.dictionary.com/browse/gegenpressing",
    "d": 3
   },
   {
@@ -504,7 +504,7 @@
   [
    "volley",
    "bicycle kick",
-   "scissor kick"
+   "scissors kick"
   ],
   [
    "banana kick",

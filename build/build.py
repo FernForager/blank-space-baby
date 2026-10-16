@@ -2,11 +2,17 @@
 
     python3 build/build.py
 
-Reads build/template.html, build/head.html and the decks in build/decks/,
+Reads build/template.html, build/head.html, the decks in build/decks/ and the verdicts in build/vetting/,
 checks every card against the house style and the hook rules, and writes docs/index.html
 (the live page). Stops with a list of problems if any card breaks a rule.
+
+Which cards play (Morg, Oct 16, 2026): three Claude reviewers vet every card (REVIEWERS below, one file each in
+build/vetting/), and a card plays in the beta once all three have approved its current wording. Morg plays the beta
+and can flag a card (it leaves the beta until it changes or the flag is cleared) or lock it (it plays, and nobody may
+change it). His marks live in build/vetting/morg.json, synced from the beta's database by tools/vet.py marks.
+A card with "out": true never plays. tools/vet.py is how reviewers read cards and record verdicts.
 """
-import json, os, re, sys
+import hashlib, json, os, re, sys
 from urllib.parse import urlparse
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -45,6 +51,10 @@ DAILY = [
 ]
 SITE_LEAGUE = {'premierleague.com': 'epl', 'laliga.com': 'laliga', 'bundesliga.com': 'bundesliga', 'legaseriea.it': 'seriea',
                'ligue1.com': 'ligue1', 'ligamx.net': 'ligamx', 'mlssoccer.com': 'mls', 'nwslsoccer.com': 'nwsl'}
+VET = os.path.join(HERE, 'vetting')
+REVIEWERS = ('soccer', 'editor', 'facts')   # the soccer expert, the writing editor and the fact checker (Morg, Oct 16, 2026)
+BETA_VETTED_ONLY = False   # True once the first vetting pass is done: until then every card that isn't out or flagged plays
+BETA_MIN = 48              # with BETA_VETTED_ONLY, the build stops if a color has fewer cards than this (twice the draw's window)
 START = [2026, 10, 16]   # the date of puzzle #1: launch day (Morg, Oct 16, 2026). A placeholder until that date is set.
 REPEAT_DAYS = 91          # a card never comes back within 3 months, once there are enough cards
 WINDOW = 24               # the draw deals from a shuffle of each color's 24 oldest cards (WINDOW in template.html)
@@ -72,31 +82,84 @@ def hook_problems(it):
     if 'women' in it and it['women'] is not True: bad.append('women must be true or left out')
     return bad
 
-def check(level, deck, hooks=False):
-    bad, items = [], deck['items']
+def clasher(deck):
+    """Two answers clash when they're the same or share a group (they could fill each other's blanks)."""
     groups = {}
     for i, grp in enumerate(deck.get('groups', [])):
         for w in grp:
             groups.setdefault(w, set()).add(i)
-    clash = lambda a, b: a == b or bool(groups.get(a, set()) & groups.get(b, set()))
-    for it in items:
-        it.setdefault('k', 'word')
-        w, ex, mn = it['w'], it['ex'], it['means']
-        tag = (level, w)
-        if len(rx(w).findall(ex)) != 1: bad.append(tag + ('answer must appear exactly once in the sentence', ex))
-        for s in (ex, mn):
-            if ';' in s: bad.append(tag + ('semicolon', s))
-            if re.search(r"['\"]", s): bad.append(tag + ('straight quote or apostrophe', s))
-        if ex.rstrip().endswith('.'): bad.append(tag + ('period at the end', ex))
-        if re.search(r'[.!?][”"]?\s+[A-Z]', re.sub(r'\b(Mrs|Mr|Ms|No|St|vs)\. ', 'X ', ex)): bad.append(tag + ('looks like two sentences', ex))
-        if len(ex) > 85: bad.append(tag + ('sentence over 85 characters', len(ex)))
-        if len(mn) > 40: bad.append(tag + ('meaning over 40 characters', mn))
-        if len(w) > 22: bad.append(tag + ('answer over 22 characters',))
-        if hooks: bad += [tag + (p, it.get('hook')) for p in hook_problems(it)]
-        same = [x for x in items if x is not it and x.get('k', 'word') == it['k'] and not clash(x['w'], w)]
-        if not any(not clash(x['w'], y['w']) for x in same for y in same if x is not y):
-            bad.append(tag + ('not enough same-kind wrong answers',))
+    return lambda a, b: a == b or bool(groups.get(a, set()) & groups.get(b, set()))
+
+def item_problems(level, items, clash, it, hooks=True):
+    """Everything wrong with one card, as (deck, answer, problem, detail) tuples. items is its deck, for the wrong answers."""
+    bad = []
+    it.setdefault('k', 'word')
+    w, ex, mn = it['w'], it['ex'], it['means']
+    tag = (level, w)
+    if len(rx(w).findall(ex)) != 1: bad.append(tag + ('answer must appear exactly once in the sentence', ex))
+    for s in (ex, mn):
+        if ';' in s: bad.append(tag + ('semicolon', s))
+        if re.search(r"['\"]", s): bad.append(tag + ('straight quote or apostrophe', s))
+    if ex.rstrip().endswith('.'): bad.append(tag + ('period at the end', ex))
+    if re.search(r'[.!?][”"]?\s+[A-Z]', re.sub(r'\b(Mrs|Mr|Ms|No|St|vs)\. ', 'X ', ex)): bad.append(tag + ('looks like two sentences', ex))
+    if len(ex) > 85: bad.append(tag + ('sentence over 85 characters', len(ex)))
+    if len(mn) > 40: bad.append(tag + ('meaning over 40 characters', mn))
+    if len(w) > 22: bad.append(tag + ('answer over 22 characters',))
+    if hooks: bad += [tag + (p, it.get('hook')) for p in hook_problems(it)]
+    same = [x for x in items if x is not it and x.get('k', 'word') == it['k'] and not clash(x['w'], w)]
+    if not any(not clash(x['w'], y['w']) for x in same for y in same if x is not y):
+        bad.append(tag + ('not enough same-kind wrong answers',))
     return bad
+
+def check(level, deck, hooks=False):
+    items, clash = deck['items'], clasher(deck)
+    return [p for it in items for p in item_problems(level, items, clash, it, hooks)]
+
+# ---- the wrong answers a card can draw (the same rules as choices() in template.html) ----
+def plain(s):
+    """Lowercase words with spaces round them, as the game compares them (template.html's plain)."""
+    return ' ' + ' '.join(re.sub(r'[^0-9a-z\u00c0-\u024f]+', ' ', s.lower()).split()) + ' '
+
+def shown(w, it):
+    """Is the answer w already in this card's sentence (its own answer left out) or hook? Then it can't be one of its wrong answers."""
+    return plain(w) in plain(it['ex']).replace(plain(it['w']), ' ', 1) + plain(it.get('hook') or '')
+
+def wrong_pool(deck, it, clash=None):
+    """The answers the game may put on this card's other two buttons: from its deck, not out, not clashing with its answer
+    and not already in its sentence or on its tile. Same kind first, and any kind when the same kind has fewer than two."""
+    clash = clash or clasher(deck)
+    ok = lambda x: not x.get('out') and not clash(x['w'], it['w']) and not shown(x['w'], it)
+    same = list(dict.fromkeys(x['w'] for x in deck['items'] if x.get('k', 'word') == it.get('k', 'word') and ok(x)))
+    if len(same) >= 2: return same
+    return same + list(dict.fromkeys(x['w'] for x in deck['items'] if x.get('k', 'word') != it.get('k', 'word') and ok(x) and x['w'] not in same))
+
+# ---- vetting ----
+HASHED = ('w', 'ex', 'means', 'hook', 'd', 'k')   # what a player sees of a card, and the kind that picks its wrong answers
+def card_hash(it, pool):
+    """A short fingerprint of a card and the wrong answers it can draw. A verdict or a lock holds only while the card still
+    has the fingerprint it was given for, so a change to the card, or to the answers it can be offered, sends it back."""
+    return hashlib.sha1(json.dumps([it.get(k, 'word' if k == 'k' else None) for k in HASHED] + [sorted(pool)], ensure_ascii=False).encode()).hexdigest()[:10]
+
+def fingerprint(deck, i, clash=None):
+    return card_hash(deck['items'][i], wrong_pool(deck, deck['items'][i], clash))
+
+def load_json(path, default):
+    try: return json.load(open(path))
+    except FileNotFoundError: return default
+
+def vetting():
+    """Every reviewer's verdicts ({card id: {v, h, note, fix, at}}) and Morg's marks ({card id: {m, h, note, at}})."""
+    return {who: load_json(os.path.join(VET, who + '.json'), {}) for who in REVIEWERS}, load_json(os.path.join(VET, 'morg.json'), {}).get('cards', {})
+
+def standing(cid, it, h, verdicts, marks):
+    """Where a card stands: out, locked, flagged, approved (all three reviewers said ok to this wording) or pending.
+    h is the card's fingerprint (fingerprint() above)."""
+    m = marks.get(cid)
+    if it.get('out'): return 'out'
+    if m and m['m'] == 'lock': return 'locked'
+    if m and m['m'] == 'flag' and m['h'] == h: return 'flagged'
+    if all(verdicts[who].get(cid, {}).get('v') == 'ok' and verdicts[who][cid].get('h') == h for who in REVIEWERS): return 'approved'
+    return 'pending'
 
 def league(deck_league, it):
     if deck_league != '*': return deck_league
@@ -104,12 +167,21 @@ def league(deck_league, it):
 
 def main():
     decks, problems, tiers = [], [], [0, 0, 0]
+    verdicts, marks = vetting()
+    stand = {}
     for did, lg, flags in DAILY:
         deck = json.load(open(os.path.join(DECKS, did + '.json')))
         problems += check(did, deck, hooks=True)
-        items = []
-        for it in deck['items']:
+        items, clash = [], clasher(deck)
+        for i, it in enumerate(deck['items']):
+            cid, h = f'{did}:{i}', fingerprint(deck, i, clash)
+            st = stand[cid] = standing(cid, it, h, verdicts, marks)
+            m = marks.get(cid)
+            if st == 'locked' and m['h'] != h: problems.append((did, it['w'], 'locked by Morg but changed since: undo the change or ask him to unlock it'))
+            if st in ('out', 'flagged') or (BETA_VETTED_ONLY and st == 'pending'): continue
             x = {k: it[k] for k in ('w', 'means', 'ex', 'k', 'hook', 'd') if k in it}
+            x['i'], x['h'] = i, h   # the card's place in its deck and its fingerprint: the beta's flag and lock keys send both
+            if st == 'locked': x['lk'] = 1
             if lg == '*': x['lg'] = league(lg, it)
             if it.get('women'): x['wm'] = 1
             items.append(x)
@@ -121,7 +193,11 @@ def main():
         print('\nProblems:')
         for p in problems: print('  ', p)
         sys.exit(1)
-    print('\nIn the draw:', ', '.join(f'{n} {c}' for n, c in zip(tiers, ('white', 'yellow', 'red'))))
+    counts = {k: list(stand.values()).count(k) for k in ('approved', 'locked', 'pending', 'flagged', 'out')}
+    print('\nVetting:', ', '.join(f'{n} {k}' for k, n in counts.items()), '(the beta plays ' + ('only approved and locked cards)' if BETA_VETTED_ONLY else 'every card that isn’t out or flagged, until the first vetting pass is done)'))
+    if BETA_VETTED_ONLY and min(tiers) < BETA_MIN:
+        print(f'\nToo few vetted cards to deal a board: {tiers} (white, yellow, red), and each color needs {BETA_MIN}.'); sys.exit(1)
+    print('In the draw:', ', '.join(f'{n} {c}' for n, c in zip(tiers, ('white', 'yellow', 'red'))))
     need = 6 * REPEAT_DAYS + WINDOW   # 6 a day for 3 months, plus the 24 oldest the draw shuffles from
     print(f'Cards can stay 3 months apart once each color has about {need} cards. Until then the draw spaces them as far apart as it can:')
     print(f'the smallest color ({min(tiers)} cards) repeats about every {(min(tiers) - WINDOW) // 6} days.')

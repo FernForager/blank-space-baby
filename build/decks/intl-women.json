@@ -33,7 +33,7 @@
     },
     {
       "w": "Japan",
-      "means": "Its first World Cup title",
+      "means": "Their first World Cup title",
       "ex": "Japan beat the USA on penalties to win the 2011 World Cup",
       "hook": "USA",
       "k": "country",
@@ -42,7 +42,7 @@
     },
     {
       "w": "Spain",
-      "means": "Its first World Cup final",
+      "means": "Their first World Cup final",
       "ex": "Spain beat England 1–0 to win the 2023 Women’s World Cup",
       "hook": "England",
       "k": "country",
@@ -69,7 +69,7 @@
     },
     {
       "w": "Netherlands",
-      "means": "Its first Women’s Euro title",
+      "means": "Their first Women’s Euro title",
       "ex": "Hosts Netherlands won the 2017 Women’s Euro, beating Denmark 4–2",
       "hook": "Denmark",
       "k": "country",
@@ -173,7 +173,7 @@
       "ex": "In 2001, Mia Hamm was the first FIFA Women’s World Player of the Year",
       "hook": "World Player",
       "k": "player",
-      "src": "https://www.ussoccer.com/history/timeline",
+      "src": "https://www.fifa.com/en/articles/a-brief-history-of-the-best",
       "d": 2
     },
     {
@@ -361,7 +361,7 @@
     {
       "w": "2019",
       "means": "Starting with 13–0 over Thailand",
-      "ex": "The USA won all seven of its games at the 2019 World Cup",
+      "ex": "The USA won all seven of their games at the 2019 World Cup",
       "hook": "USA",
       "k": "year",
       "src": "https://www.ussoccer.com/history/timeline",
@@ -379,7 +379,7 @@
     {
       "w": "four",
       "means": "1991, 1999, 2015 and 2019",
-      "ex": "The USA has won the Women’s World Cup four times",
+      "ex": "The USA have won the Women’s World Cup four times",
       "hook": "USA",
       "k": "number",
       "src": "https://www.fifa.com/en/tournaments/womens/womensworldcup/australia-new-zealand2023/articles/womens-world-cup-champions-norway-usa-japan-germany-australia-new-zealand-2023",
@@ -389,7 +389,7 @@
     {
       "w": "five",
       "means": "Four more than any other team",
-      "ex": "The USA has won five Olympic gold medals in women’s soccer",
+      "ex": "The USA have won five Olympic gold medals in women’s soccer",
       "hook": "Olympic gold",
       "k": "number",
       "src": "https://www.ussoccer.com/stories/2024/08/us-womens-national-team-paris-olympics-highlights-by-the-numbers-stats",
@@ -399,7 +399,7 @@
     {
       "w": "eight",
       "means": "Six of them in a row",
-      "ex": "Germany has won the Women’s Euro a record eight times",
+      "ex": "Germany have won the Women’s Euro a record eight times",
       "hook": "Germany",
       "k": "number",
       "src": "https://www.uefa.com/womenseuro/news/0276-1570ce1f46f2-dced7a2638e9-1000--germany-first-to-50-women-s-euro-games-their-records-titles/",
@@ -483,11 +483,11 @@
     },
     {
       "w": "Jesolo",
-      "means": "An Italian beach town, in 1985",
-      "ex": "The USA women’s team played its first games in Jesolo",
+      "means": "In Italy, in August 1985",
+      "ex": "The USA women’s team played their first games in Jesolo",
       "hook": "USA",
       "k": "place",
-      "src": "https://www.ussoccer.com/history/timeline",
+      "src": "https://www.ussoccer.com/stories/2026/03/uswnt/learn-the-story-behind-the-first-uswnt-matches-the-85ers-michelle-akers-womens-history-month-mundialito-world-cup",
       "d": 3
     },
     {
@@ -523,7 +523,7 @@
       "ex": "Norway beat the USA on a golden goal in the 2000 Olympic final",
       "hook": "Norway",
       "k": "term",
-      "src": "https://www.ussoccer.com/history/timeline",
+      "src": "https://www.ussoccer.com/stories/2024/08/us-womens-national-team-paris-olympics-highlights-by-the-numbers-stats",
       "d": 2
     },
     {
@@ -573,8 +573,8 @@
     },
     {
       "w": "Matildas",
-      "means": "Named for a folk song",
-      "ex": "Australia’s team got its nickname, the Matildas, from a 1995 TV poll",
+      "means": "Picked over the Soccertoos",
+      "ex": "Australia’s team got their nickname, the Matildas, from a 1995 TV poll",
       "hook": "Australia",
       "k": "nickname",
       "src": "https://www.fifa.com/en/tournaments/womens/womensworldcup/australia-new-zealand2023/articles/australia-matildas-nickname-history-womens-world-cup-2023",
@@ -604,7 +604,7 @@
       "ex": "The USA players who won the World Cup on home soil are the ’99ers",
       "hook": "USA",
       "k": "nickname",
-      "src": "https://www.ussoccer.com/history/us-soccer-as-host/1999-fifa-womens-world-cup",
+      "src": "https://www.ussoccer.com/stories/2019/04/btc-uswnt-99ers-honored-in-los-angeles",
       "d": 2
     }
   ],

@@ -63,7 +63,7 @@
    "w": "Milan",
    "means": "He wanted a team of devils",
    "ex": "Founder Herbert Kilpin gave Milan their red and black",
-   "hook": "founder",
+   "hook": "Kilpin",
    "k": "club",
    "src": "https://www.legaseriea.it/serie-a/news/tutti-i-colori-della-serie-a-parte-2",
    "d": 2
@@ -107,10 +107,10 @@
   {
    "w": "Torino",
    "means": "Seven scudetti in all",
-   "ex": "Torino won the title every season from 1945–46 to 1948–49",
-   "hook": "1945–46",
+   "ex": "Valentino Mazzola’s Torino won the title every season from 1945–46 to 1948–49",
+   "hook": "Mazzola",
    "k": "club",
-   "src": "https://www.legaseriea.it/team/torino/palmares",
+   "src": "https://www.legaseriea.it/serie-a/news/buon-compleanno-gian-piero-gasperini-x6977",
    "d": 3
   },
   {
@@ -124,7 +124,7 @@
   },
   {
    "w": "Fiorentina",
-   "means": "152 league goals in purple",
+   "means": "152 Serie A goals in purple",
    "ex": "Gabriel Batistuta is the top Serie A scorer in Fiorentina history",
    "hook": "Batistuta",
    "k": "club",
@@ -301,7 +301,7 @@
    "ex": "Napoli’s home stadium is named after Diego Maradona",
    "hook": "Napoli",
    "k": "player",
-   "src": "https://www.legaseriea.it/team/napoli/stadium",
+   "src": "https://en.legaseriea.it/team/napoli/stadium",
    "d": 2
   },
   {
@@ -650,6 +650,10 @@
    "19",
    "20",
    "21"
+  ],
+  [
+   "Inter",
+   "Juventus"
   ]
  ],
  "cut": [

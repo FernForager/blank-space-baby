@@ -133,8 +133,8 @@
     {
       "w": "technical area",
       "means": "Coach’s box beside the field",
-      "ex": "The coach has to stay in the technical area at the side of the field",
-      "hook": "coach",
+      "ex": "The coach and the trainer must stay in the technical area at the side of the field",
+      "hook": "trainer",
       "k": "field",
       "src": "https://www.dictionary.com/browse/technical-area",
       "d": 2
@@ -223,7 +223,7 @@
     {
       "w": "scout",
       "means": "Watches players to recruit them",
-      "ex": "A scout from a college team came to watch the striker play",
+      "ex": "A scout from a college team came to see if the striker was worth recruiting",
       "hook": "college",
       "k": "role",
       "src": "https://www.merriam-webster.com/dictionary/scout",
@@ -430,8 +430,8 @@
     {
       "w": "away goal",
       "means": "Goal scored on the road",
-      "ex": "Until 2021, a European cup away goal counted extra if the two-game total was level",
-      "hook": "European cup",
+      "ex": "In some cups, an away goal once counted for more than a home goal",
+      "hook": "cups",
       "k": "score",
       "src": "https://www.dictionary.com/browse/away-goal",
       "d": 2
@@ -458,7 +458,7 @@
       "w": "back four",
       "means": "Usually two fullbacks, two center backs",
       "ex": "The back four lined up across the field in front of the keeper",
-      "hook": "keeper",
+      "hook": "lined up",
       "k": "lingo",
       "src": "https://www.dictionary.com/browse/back-four",
       "d": 2
@@ -557,7 +557,7 @@
       "w": "net",
       "means": "Score a goal",
       "ex": "The striker raced onto the cross and managed to net it for a 2–1 lead",
-      "hook": "cross",
+      "hook": "2–1 lead",
       "k": "action",
       "src": "https://www.merriam-webster.com/dictionary/net",
       "d": 1
@@ -584,7 +584,7 @@
       "w": "whitewash",
       "means": "Keep a team from scoring at all",
       "ex": "Our defense planned to whitewash the visitors and allow zero goals",
-      "hook": "defense",
+      "hook": "visitors",
       "k": "action",
       "src": "https://www.merriam-webster.com/dictionary/whitewash",
       "d": 2
@@ -774,6 +774,22 @@
     [
       "whitewash",
       "mark"
+    ],
+    [
+      "skipper",
+      "goalie"
+    ],
+    [
+      "skipper",
+      "defender"
+    ],
+    [
+      "skipper",
+      "halfback"
+    ],
+    [
+      "skipper",
+      "utility player"
     ]
   ],
   "cut": [

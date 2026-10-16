@@ -41,10 +41,10 @@
       "d": 1
     },
     {
-      "w": "jewelry",
-      "means": "Leather bands must come off too",
-      "ex": "A rubber band on the wrist must come off, just like any jewelry",
-      "hook": "rubber band",
+      "w": "socks",
+      "means": "Their size is each player’s call",
+      "ex": "A player’s shin guards must be fully covered by the socks",
+      "hook": "shin guards",
       "k": "game-gear",
       "src": "https://www.theifab.com/laws/latest/the-players-equipment/",
       "d": 1
@@ -654,8 +654,8 @@
     },
     {
       "w": "corner kick",
-      "means": "The ball sits in the arc beside it",
-      "ex": "At a corner kick, players may not move the flagpost out of the way",
+      "means": "The defense put it over their goal line",
+      "ex": "At a corner kick, the ball sits in the small arc and the flagpost can’t be moved",
       "hook": "flagpost",
       "k": "restart-type",
       "src": "https://www.theifab.com/laws/latest/the-corner-kick/",
@@ -718,10 +718,10 @@
     {
       "w": "free kick",
       "means": "In their own box, it’s a penalty kick",
-      "ex": "If a coach runs on and stops the ball in midfield, the other team gets a free kick",
-      "hook": "coach",
+      "ex": "A coach who stops the ball in midfield is sent off, and the opponents get a free kick",
+      "hook": "sent off",
       "k": "restart-type",
-      "src": "https://www.theifab.com/laws/latest/the-players/",
+      "src": "https://www.theifab.com/laws/latest/fouls-and-misconduct/",
       "d": 1
     },
     {
@@ -1033,8 +1033,8 @@
     {
       "w": "yellow card",
       "means": "Putting it back on later does too",
-      "ex": "A player who refuses to take off her jewelry earns a yellow card",
-      "hook": "jewelry",
+      "ex": "A player who won’t remove a dangerous accessory earns a yellow card",
+      "hook": "accessory",
       "k": "fouls-call",
       "src": "https://www.theifab.com/laws/latest/the-players-equipment/",
       "d": 1
@@ -1186,10 +1186,10 @@
     {
       "w": "VAR",
       "means": "Working with assistants on replays",
-      "ex": "The VAR works in a video room that may be far from the stadium",
-      "hook": "stadium",
+      "ex": "The VAR checks penalty calls from a video room that may be far from the stadium",
+      "hook": "penalty",
       "k": "people-official",
-      "src": "https://www.theifab.com/laws/latest/the-field-of-play/",
+      "src": "https://www.theifab.com/laws/latest/video-assistant-referee-var-protocol/",
       "d": 1
     },
     {
@@ -1310,12 +1310,12 @@
       "d": 1
     },
     {
-      "w": "jewelry",
-      "means": "Harmless accessories are fine",
-      "ex": "Like the players, referees may not wear any jewelry on the field",
-      "hook": "referees",
+      "w": "shin guards",
+      "means": "They’re a must for every player",
+      "ex": "Before kickoff, the referee checks that every player is wearing shin guards",
+      "hook": "kickoff",
       "k": "people-gear",
-      "src": "https://www.theifab.com/laws/latest/the-referee/",
+      "src": "https://www.theifab.com/laws/latest/the-players-equipment/",
       "d": 1
     },
     {
@@ -1627,6 +1627,18 @@
     [
       "coach",
       "captain"
+    ],
+    [
+      "shoe",
+      "cleats"
+    ],
+    [
+      "shoe",
+      "shin guard"
+    ],
+    [
+      "socks",
+      "uniform"
     ]
   ],
   "cut": [

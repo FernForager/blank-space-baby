@@ -106,7 +106,7 @@
   },
   {
    "w": "New York Red Bulls",
-   "means": "Three Shields, tied with Columbus",
+   "means": "Now called Red Bull New York",
    "ex": "The New York Red Bulls won the Supporters’ Shield in 2013, 2015 and 2018",
    "hook": "Shield",
    "k": "club",
@@ -199,7 +199,7 @@
    "w": "Eric Wynalda",
    "means": "San Jose beat D.C. United 1–0",
    "ex": "Eric Wynalda scored the only goal of MLS’s first-ever game",
-   "hook": "MLS",
+   "hook": "only goal",
    "k": "player",
    "src": "https://www.mlssoccer.com/news/league-born-oral-history-inaugural-mls-match",
    "d": 3
@@ -396,7 +396,7 @@
    "w": "1996",
    "means": "San Jose beat D.C. United 1–0",
    "ex": "MLS played its first-ever game in 1996",
-   "hook": "MLS",
+   "hook": "first-ever",
    "k": "year",
    "src": "https://www.mlssoccer.com/news/league-born-oral-history-inaugural-mls-match",
    "d": 2
@@ -458,8 +458,8 @@
   {
    "w": "30",
    "means": "San Diego FC was the 30th",
-   "ex": "MLS has 30 clubs",
-   "hook": "MLS",
+   "ex": "MLS has 30 clubs, three of them in Canada",
+   "hook": "Canada",
    "k": "number",
    "src": "https://www.mlssoccer.com/clubs/",
    "d": 1,
@@ -501,7 +501,7 @@
    "k": "number",
    "src": "https://www.mlssoccer.com/news/nashville-sc-tracker-supporters-shield-mls-points-record",
    "d": 2,
-   "current": false
+   "current": true
   },
   {
    "w": "29",
@@ -515,8 +515,8 @@
   {
    "w": "Supporters’ Shield",
    "means": "It has been given out since 1996",
-   "ex": "The best regular-season record wins the Supporters’ Shield",
-   "hook": "record",
+   "ex": "Philadelphia won the 2025 Supporters’ Shield for the best regular-season record",
+   "hook": "Philadelphia",
    "k": "trophy",
    "src": "https://www.mlssoccer.com/news/philadelphia-union-win-2025-supporters-shield",
    "d": 2

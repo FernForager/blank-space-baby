@@ -208,7 +208,7 @@
       "ex": "Schalke, from a city built on coal, are known as the Royal Blues",
       "hook": "Schalke",
       "k": "nickname",
-      "src": "https://www.bundesliga.com/en/bundesliga/news/fc-schalke-04-bundesliga-club-by-club-historical-guide-24140",
+      "src": "https://www.bundesliga.com/en/bundesliga/news/clubs-with-animal-names-germany-eagles-wolves-goats-foals-lions-25000",
       "d": 2
     },
     {
@@ -325,7 +325,7 @@
       "ex": "Cologne’s first goat mascot, Hennes, arrived as a Carnival joke in 1950",
       "hook": "goat",
       "k": "club",
-      "src": "https://www.bundesliga.com/en/bundesliga/news/clubs-with-animal-names-germany-eagles-wolves-goats-foals-lions-25000",
+      "src": "https://www.bundesliga.com/en/bundesliga/news/hennes-goat-cologne-living-mascot-25002",
       "d": 2
     },
     {
@@ -358,8 +358,8 @@
     {
       "w": "Real Betis",
       "means": "Heliopolis means city of the sun",
-      "ex": "Real Betis are Heliopolitans, after the district around their stadium",
-      "hook": "district",
+      "ex": "Real Betis are Heliopolitans, after Heliopolis, the district by their stadium",
+      "hook": "Heliopolis",
       "k": "club",
       "src": "https://www.laliga.com/en-US/news/why-are-the-betis-players-called-heliopolitans",
       "d": 3
@@ -533,7 +533,7 @@
       "hook": "Gijón",
       "k": "meaning",
       "src": "https://www.laliga.com/en-US/news/why-are-the-sporting-fans-called-la-mareona",
-      "d": 2
+      "d": 3
     },
     {
       "w": "canary",
@@ -551,7 +551,7 @@
       "hook": "Oviedo",
       "k": "meaning",
       "src": "https://www.laliga.com/en-US/news/why-real-oviedo-is-known-as-the-carbayon-team",
-      "d": 2
+      "d": 3
     },
     {
       "w": "miners",

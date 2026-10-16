@@ -9,7 +9,7 @@ Each file is one document for the hub's collection projects/triviela/reviews (se
 verdicts land in projects/triviela/verdicts, one document per card, named <deck id>~<card index>, with the answer,
 sentence, hook and color he saw.
 """
-import json, sys, os
+import json, os, re, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DECKS = [('basics','Soccer 101 (new)'),('mls','MLS'),('nwsl','NWSL'),('intl-men','International Men’s'),('intl-women','International Women’s'),('wc26','World Cup 2026'),
          ('laliga','La Liga'),('bundesliga','Bundesliga'),('seriea','Serie A'),('ligue1','Ligue 1'),('ligamx','Liga MX'),('ucl','Champions League'),
@@ -17,16 +17,8 @@ DECKS = [('basics','Soccer 101 (new)'),('mls','MLS'),('nwsl','NWSL'),('intl-men'
          # the decks from the arcade game: only their tile words and colors are new
          ('soccer','Soccer Lingo (new tiles and colors)'),('epl','EPL (new tiles and colors)'),('alpha','Kid Slang (new tiles and colors)'),('parents','Parent Slang (new tiles and colors)')]
 
-def wrongs(deck, it):
-    """The answers the game may put on this card's other two buttons: same kind, and not grouped with it (build.py's clash)."""
-    groups = {}
-    for i, grp in enumerate(deck.get('groups', [])):
-        for w in grp: groups.setdefault(w, set()).add(i)
-    clash = lambda a, b: a == b or bool(groups.get(a, set()) & groups.get(b, set()))
-    out = []
-    for x in deck['items']:
-        if x.get('k', 'word') == it.get('k', 'word') and not clash(x['w'], it['w']) and x['w'] not in out: out.append(x['w'])
-    return out
+sys.path.insert(0, os.path.join(ROOT, 'build'))
+from build import wrong_pool as wrongs   # one set of rules for the wrong answers, shared with the build and tools/vet.py
 
 TILE = {1: ('#FFFFFF', '#1E2A3B', 'White tile (easy)'), 2: ('#F7C948', '#1E2A3B', 'Yellow card (medium)'), 3: ('#D52B1E', '#FFFFFF', 'Red card (hard)')}
 

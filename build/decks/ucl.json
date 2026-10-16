@@ -283,7 +283,7 @@
    "ex": "Luis Enrique coached PSG to back-to-back titles in 2025 and 2026",
    "hook": "PSG",
    "k": "coach",
-   "src": "https://www.uefa.com/uefachampionsleague/history/seasons/2026/",
+   "src": "https://www.uefa.com/uefachampionsleague/news/0252-0e98c715bb79-dea77f56e2bd-1000--final-records-and-statistics/",
    "d": 2
   },
   {
@@ -435,8 +435,8 @@
   {
    "w": "Waldstadion",
    "means": "Frankfurt won it at home",
-   "ex": "The first women’s final was played at the Waldstadion in 2002",
-   "hook": "women’s",
+   "ex": "Umeå lost the first women’s final, in 2002, at the Waldstadion",
+   "hook": "Umeå",
    "k": "venue",
    "src": "https://www.uefa.com/womenschampionsleague/news/0250-0c50f8c5a638-5677bdc4dec5-1000--uefa-women-s-champions-league-history/",
    "d": 3,
@@ -446,9 +446,9 @@
    "w": "Barcelona",
    "means": "They won it in 2026, beating OL Lyonnes",
    "ex": "Barcelona reached a sixth straight women’s final in 2026",
-   "hook": "women’s",
+   "hook": "sixth",
    "k": "wclub",
-   "src": "https://www.uefa.com/womenschampionsleague/history/seasons/2026/",
+   "src": "https://www.uefa.com/womenschampionsleague/news/0250-0c50f8c5a638-5677bdc4dec5-1000--uefa-women-s-champions-league-history/",
    "d": 2,
    "women": true
   },
@@ -466,7 +466,7 @@
    "w": "Lyon",
    "means": "The club is now called OL Lyonnes",
    "ex": "Lyon won five women’s titles in a row from 2016 to 2020",
-   "hook": "women’s",
+   "hook": "in a row",
    "k": "wclub",
    "src": "https://www.uefa.com/womenschampionsleague/news/0250-0c50f8c5a638-5677bdc4dec5-1000--uefa-women-s-champions-league-history/",
    "d": 2,
@@ -476,7 +476,7 @@
    "w": "Frankfurt",
    "means": "They also won the first final, in 2002",
    "ex": "In 2008, Frankfurt became the first three-time women’s champions",
-   "hook": "women’s",
+   "hook": "three-time",
    "k": "wclub",
    "src": "https://www.uefa.com/womenschampionsleague/news/0250-0c50f8c5a638-5677bdc4dec5-1000--uefa-women-s-champions-league-history/",
    "d": 3,
@@ -485,8 +485,8 @@
   {
    "w": "Turbine Potsdam",
    "means": "They beat Lyon 7–6 on penalties",
-   "ex": "Turbine Potsdam won the first Women’s Champions League final, in 2010",
-   "hook": "Women’s",
+   "ex": "Turbine Potsdam won the first Women’s Champions League final, in Getafe in 2010",
+   "hook": "Getafe",
    "k": "wclub",
    "src": "https://www.uefa.com/womenschampionsleague/news/0250-0c50f8c5a638-5677bdc4dec5-1000--uefa-women-s-champions-league-history/",
    "d": 3,
@@ -496,7 +496,7 @@
    "w": "Wolfsburg",
    "means": "They beat Lyon, then Tyresö",
    "ex": "Wolfsburg won back-to-back women’s titles in 2013 and 2014",
-   "hook": "women’s",
+   "hook": "back-to-back",
    "k": "wclub",
    "src": "https://www.uefa.com/womenschampionsleague/news/0250-0c50f8c5a638-5677bdc4dec5-1000--uefa-women-s-champions-league-history/",
    "d": 3,
@@ -505,8 +505,8 @@
   {
    "w": "Umeå",
    "means": "Their finals had two legs back then",
-   "ex": "Umeå won the women’s title in both 2003 and 2004",
-   "hook": "women’s",
+   "ex": "Umeå won the women’s title in 2003, then again in 2004 after signing Marta",
+   "hook": "Marta",
    "k": "wclub",
    "src": "https://www.uefa.com/womenschampionsleague/news/0250-0c50f8c5a638-5677bdc4dec5-1000--uefa-women-s-champions-league-history/",
    "d": 3,
@@ -578,7 +578,7 @@
    "ex": "Inter lost the 2025 final to PSG by a record 5–0",
    "hook": "2025 final",
    "k": "score",
-   "src": "https://www.uefa.com/uefachampionsleague/history/seasons/2025/",
+   "src": "https://www.uefa.com/uefachampionsleague/news/0252-0e98c715bb79-dea77f56e2bd-1000--final-records-and-statistics/",
    "d": 1
   },
   {
@@ -685,6 +685,10 @@
   [
    "Frankfurt",
    "Turbine Potsdam"
+  ],
+  [
+   "Steaua București",
+   "Barcelona"
   ]
  ],
  "cut": [
