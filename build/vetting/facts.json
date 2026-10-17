@@ -4106,14 +4106,13 @@
   "v": "ok"
  },
  "laliga:13": {
-  "at": "2026-10-17T00:36:56Z",
+  "at": "2026-10-17T00:45:18Z",
   "fix": {
-   "ex": "Telmo Zarra held LaLiga’s all-time scoring record, 251 goals, from 1955 to 2014",
-   "hook": "251 goals",
-   "means": "Messi broke it with a hat trick"
+   "ex": "Telmo Zarra held LaLiga’s all-time scoring record from 1955 to 2014",
+   "hook": "1955"
   },
-  "h": "8de722195e",
-  "note": "src shows Messi passed Zarra’s haul of 251, the record for most LaLiga goals that had stood since 1955, with a hat trick at the Sánchez Pizjuán in Nov 2014. No laliga.com page I could find (src, laliga.com/noticias/252-goles-para-hacer-historia, laliga.com/en-CA/news/legends-of-the-basque-derby, site searches) says Zarra has more goals than any other Spaniard today. Reworded to the record the src does show, hook moved to a word in the new sentence, means to the hat trick",
+  "h": "5a63fe7454",
+  "note": "laliga.com disagrees with itself on Zarra’s total: the Messi LFP trophy page (the src) says 251, the LaLiga of records page says 253. Both agree he held the all-time record until Messi passed him in 2014, so the fix drops the disputed number from the sentence and the tile",
   "v": "fix"
  },
  "laliga:14": {
@@ -8516,13 +8515,10 @@
   "v": "ok"
  },
  "soccer:43": {
-  "at": "2026-10-17T00:36:56Z",
-  "fix": {
-   "means": "Time added on at the end of a game"
-  },
-  "h": "cb787706ab",
-  "note": "dictionary.com/browse/stoppage-time: another name for injury time. dictionary.com/browse/injury-time: extra playing time added on to compensate for time spent attending to injured players. merriam-webster.com/dictionary/injury%20time: time added at the end of a game. Neither says the end of a half, so the means follows M-W. Sentence and wrong answers are fine (an equalizer can’t come in golden goal or sudden death, and injury time isn’t drawable)",
-  "v": "fix"
+  "at": "2026-10-17T00:45:18Z",
+  "h": "2ef7a9bb7f",
+  "note": "merriam-webster.com injury time: time added to make up for time lost to stoppages, and dictionary.com stoppage time calls it another name for injury time. No drawable wrong answer fits the fourth minute of the blank",
+  "v": "ok"
  },
  "soccer:44": {
   "at": "2026-10-16T23:58:23Z",
