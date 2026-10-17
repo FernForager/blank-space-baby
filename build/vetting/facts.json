@@ -1,4 +1,852 @@
 {
+ "alpha:0": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "22db3ea124",
+  "note": "M-W bet page, Did you know: slang bet is an informal affirmative like “For sure!”",
+  "v": "ok"
+ },
+ "alpha:1": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "afce9ab9ae",
+  "note": "M-W no cap (slang): sincerely, truthfully",
+  "v": "ok"
+ },
+ "alpha:10": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "0354b0bf16",
+  "note": "M-W low-key adverb: to a moderate or limited degree, without seeking attention",
+  "v": "ok"
+ },
+ "alpha:100": {
+  "at": "2026-10-17T00:01:37Z",
+  "fix": {
+   "groups": [
+    [
+     "whimsy",
+     "peak"
+    ]
+   ]
+  },
+  "h": "c62ddba2dd",
+  "note": "M-W slang whimsy: a whimsical visual aesthetic or lifestyle (fire and cringe already grouped). But peak is still drawable and “is pure peak” fits a stickered shin guard as praise, so group them",
+  "v": "fix"
+ },
+ "alpha:101": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "f60369725d",
+  "note": "M-W slang blep: an animal with its tongue sticking partway out",
+  "v": "ok"
+ },
+ "alpha:102": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "5283001bcd",
+  "note": "Dictionary.com slang it’s giving: describes a strong energy or look, with or without an object (it’s giving main character)",
+  "v": "ok"
+ },
+ "alpha:103": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "d728a44bd7",
+  "note": "Dictionary.com slang slop: low-quality digital content created by AI (mid, cringe, brain rot, rage-bait already grouped)",
+  "v": "ok"
+ },
+ "alpha:104": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "bad3fb2e79",
+  "note": "Dictionary.com slang millennial pause: a 1- or 2-second delay before speaking in a recorded video",
+  "v": "ok"
+ },
+ "alpha:105": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "d17380b854",
+  "note": "Dictionary.com slang destim: to calm down by avoiding overwhelming stimuli such as loud noises",
+  "v": "ok"
+ },
+ "alpha:106": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "3654a073f8",
+  "note": "Dictionary.com slang girl grip: holding multiple items in one hand by grasping them between fingers",
+  "v": "ok"
+ },
+ "alpha:107": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "e366ce69aa",
+  "note": "Dictionary.com slang let him cook: to freely let a person do something they are good at",
+  "v": "ok"
+ },
+ "alpha:108": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "5d02ca84cd",
+  "note": "Dictionary.com slang side character energy: humble, content, prefers to support others rather than be the center",
+  "v": "ok"
+ },
+ "alpha:109": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "ea1b884d60",
+  "note": "Dictionary.com slang passenger princess: a person who has others drive while they sit in the passenger seat",
+  "v": "ok"
+ },
+ "alpha:11": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "8ad9507ead",
+  "note": "M-W high-key (informal): to a complete degree, totally, truly",
+  "v": "ok"
+ },
+ "alpha:110": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "2c82b9901a",
+  "note": "Dictionary.com slang steez: a person’s unique style, implying a slick, cool, effortless way of carrying oneself",
+  "v": "ok"
+ },
+ "alpha:111": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "3d5e105aa9",
+  "note": "Dictionary.com slang soft life: a lifestyle of comfort and relaxation with minimal stress",
+  "v": "ok"
+ },
+ "alpha:12": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "75cb6695e8",
+  "note": "M-W delulu (slang): unreasonably self-confident in one’s ability to achieve goals",
+  "v": "ok"
+ },
+ "alpha:13": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "7cd0020b2d",
+  "note": "M-W aura: the quality of being impressively cool",
+  "v": "ok"
+ },
+ "alpha:14": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "6e003e0134",
+  "note": "M-W slang aura farming: doing something to look cool, impressive, stylish",
+  "v": "ok"
+ },
+ "alpha:15": {
+  "at": "2026-10-17T00:02:11Z",
+  "fix": {
+   "ex": "When the sub board showed a 6 and a 7, the bench yelled “six seven”"
+  },
+  "h": "bf6afbf812",
+  "note": "M-W six seven shows a nonsense phrase tied to the numbers 6 and 7. The new wording drops the numbers, so drawable shouts like sheesh, bruh, lock in, fire and womp womp fit the blank too and the card has more than one right answer. Bringing the numbers back keeps only six seven true. It gives the answer away more, which the desk can weigh, but one right answer comes first",
+  "v": "fix"
+ },
+ "alpha:16": {
+  "at": "2026-10-17T00:01:37Z",
+  "fix": {
+   "ex": "The defender answered every coaching tip with the nonsense word “skibidi”"
+  },
+  "h": "db8ab81b77",
+  "note": "M-W skibidi: a nonsensical expression and meme. As written any reply fits the blank (no cap, IJBOL, lock in, L and touch grass are all drawable). Naming it a nonsense word leaves only skibidi (six seven is already excluded)",
+  "v": "fix"
+ },
+ "alpha:17": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "84a455b4a7",
+  "note": "M-W cooked (informal): certain to experience a very bad outcome",
+  "v": "ok"
+ },
+ "alpha:18": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "5968407275",
+  "note": "M-W slang rage-bait: content that is intentionally offensive or provocative",
+  "v": "ok"
+ },
+ "alpha:19": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "69dc1fdce6",
+  "note": "M-W glaze verb (slang): to praise excessively or obsequiously",
+  "v": "ok"
+ },
+ "alpha:2": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "c5527533bd",
+  "note": "M-W cap verb: to lie by boasting or exaggerating, and slang noun: empty boasting or dishonest talk",
+  "v": "ok"
+ },
+ "alpha:20": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "396b2c46a6",
+  "note": "M-W slang Fanum tax: taking someone else’s food, a joke tax of a bite or portion",
+  "v": "ok"
+ },
+ "alpha:21": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "c2a71eac83",
+  "note": "M-W slang main character energy: dramatic self-confidence, acting like the center of attention",
+  "v": "ok"
+ },
+ "alpha:22": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "8a2a410f73",
+  "note": "M-W touch grass: participate in normal activities in the real world as opposed to online",
+  "v": "ok"
+ },
+ "alpha:23": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "1c56459800",
+  "note": "M-W L abbreviation: loss",
+  "v": "ok"
+ },
+ "alpha:24": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "74c5b5fdc5",
+  "note": "M-W sheesh: used to express disappointment, annoyance, or surprise",
+  "v": "ok"
+ },
+ "alpha:25": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "0bcf170a91",
+  "note": "M-W slang vibe check: a casual or intuitive assessment of something or someone",
+  "v": "ok"
+ },
+ "alpha:26": {
+  "at": "2026-10-17T00:01:37Z",
+  "fix": {
+   "groups": [
+    [
+     "bruh",
+     "chalked"
+    ]
+   ],
+   "means": "A groan of dismay, from bro",
+   "src": "https://www.dictionary.com/culture/slang/bruh"
+  },
+  "h": "886f9e254b",
+  "note": "M-W bruh is only a noun: brother, a male friend, a friendly way of addressing a man or boy. The sentence uses the interjection of surprise or dismay, which only Dictionary.com shows (https://www.dictionary.com/culture/slang/bruh). Means changed to that sense. M-W chalked (doomed, done for) also fits a groan here, like cooked which is already excluded",
+  "v": "fix"
+ },
+ "alpha:27": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "e9110346cd",
+  "note": "M-W slang tuff: cool, awesome",
+  "v": "ok"
+ },
+ "alpha:28": {
+  "at": "2026-10-17T00:01:37Z",
+  "fix": {
+   "groups": [
+    [
+     "crash out",
+     "cringe"
+    ]
+   ]
+  },
+  "h": "7c8f1793dd",
+  "note": "M-W crash, intransitive verb sense 6 (slang): to react suddenly with extreme distress or anger, usually used with out. But M-W cringe (to recoil in distaste) also fits “Dad began to ___ when the ref missed the handball”",
+  "v": "fix"
+ },
+ "alpha:29": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "351d8b149c",
+  "note": "M-W slang lock in: to enter a state of deep focus",
+  "v": "ok"
+ },
+ "alpha:3": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "b1d4611b03",
+  "note": "M-W bussin’ (slang): extremely good, delicious",
+  "v": "ok"
+ },
+ "alpha:30": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "0c93846b33",
+  "note": "M-W GOATED (slang): considered to be the greatest of all time",
+  "v": "ok"
+ },
+ "alpha:31": {
+  "at": "2026-10-17T00:01:37Z",
+  "fix": {
+   "means": "A close friend with your style"
+  },
+  "h": "2ec4e51a5d",
+  "note": "M-W slang twin: a close friend who shares a similar style or energy, and the page says it does not necessarily mean facial similarity, so “your double” overstates it",
+  "v": "fix"
+ },
+ "alpha:32": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "49eb6230d7",
+  "note": "M-W unc (slang): a person who is old or ageing or acts old for their age",
+  "v": "ok"
+ },
+ "alpha:33": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "6d9d10bd12",
+  "note": "M-W brain rot (slang): decline in cognitive function from too much shallow online content",
+  "v": "ok"
+ },
+ "alpha:34": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "7dc5fb9ccc",
+  "note": "M-W tea sense 6, the tea (slang): private or inside information",
+  "v": "ok"
+ },
+ "alpha:35": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "7f604a2d49",
+  "note": "M-W slang slap: to exhibit excellence, especially of a song",
+  "v": "ok"
+ },
+ "alpha:36": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "06b2ccd030",
+  "note": "M-W drip sense 6 (slang): a fashionable style or look",
+  "v": "ok"
+ },
+ "alpha:37": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "5fc1f86dea",
+  "note": "M-W valid: well-grounded or justifiable",
+  "v": "ok"
+ },
+ "alpha:38": {
+  "at": "2026-10-17T00:01:37Z",
+  "fix": {
+   "groups": [
+    [
+     "caught in 4k",
+     "low-key",
+     "high-key",
+     "lowkenuinely"
+    ]
+   ]
+  },
+  "h": "a50de4ec8c",
+  "note": "Sense checks out at https://www.merriam-webster.com/slang/caught-in-4k (M-W slang page: exposed doing something wrong with irrefutable evidence such as high-resolution video). But low-key, high-key and lowkenuinely also read naturally as adverbs in the blank (“The defender was low-key pulling a jersey on Dad’s video”), so group them with the answer",
+  "v": "fix"
+ },
+ "alpha:39": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "6d4dd5f8bb",
+  "note": "M-W slang page: has a different effect or feeling, often better in some unique way",
+  "v": "ok"
+ },
+ "alpha:4": {
+  "at": "2026-10-17T00:01:37Z",
+  "fix": {
+   "ex": "The striker continues to slay, scoring on every free kick"
+  },
+  "h": "087e862fe1",
+  "note": "M-W slay: to do something exceptionally well. But the sentence gives no clue the kicks go well, so “brick” (miss badly) and “crash out” also fit “continues to ___ on every free kick”. Reworded so only slay fits",
+  "v": "fix"
+ },
+ "alpha:40": {
+  "at": "2026-10-17T00:01:37Z",
+  "fix": {
+   "groups": [
+    [
+     "rent-free",
+     "no cap",
+     "low-key",
+     "high-key",
+     "lowkenuinely",
+     "iykyk"
+    ]
+   ]
+  },
+  "h": "cf7df59668",
+  "note": "Sense checks out at https://www.merriam-webster.com/slang/rent-free (M-W slang page: someone or something living rent-free in your head is thought about a lot). But the blank ends a complete clause, so tag words also fit (“lives in the striker’s head no cap”, “…low-key”, “…iykyk”), so group them with the answer",
+  "v": "fix"
+ },
+ "alpha:41": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "b72d6470ba",
+  "note": "M-W dictionary: a stage in development (as of a person or thing)",
+  "v": "ok"
+ },
+ "alpha:42": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "303751e203",
+  "note": "M-W dictionary: a warning signal or sign",
+  "v": "ok"
+ },
+ "alpha:43": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "330c5d83f4",
+  "note": "M-W slang page: a positive or welcoming sign or signal",
+  "v": "ok"
+ },
+ "alpha:44": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "e79bccf618",
+  "note": "M-W dictionary: if you know you know, used to acknowledge shared knowledge or experience",
+  "v": "ok"
+ },
+ "alpha:45": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "3dc52ef4ac",
+  "note": "M-W dictionary: best friend",
+  "v": "ok"
+ },
+ "alpha:46": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "873e22cb74",
+  "note": "M-W dictionary verb: to be an extremely devoted and enthusiastic fan of someone",
+  "v": "ok"
+ },
+ "alpha:47": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "fe66918326",
+  "note": "M-W dictionary noun: an act of bragging or showing off",
+  "v": "ok"
+ },
+ "alpha:48": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "53fe66dfe6",
+  "note": "M-W dictionary: feeling or showing resentment towards a person or situation : bitter",
+  "v": "ok"
+ },
+ "alpha:49": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "074914a172",
+  "note": "M-W dictionary: to throw especially with force",
+  "v": "ok"
+ },
+ "alpha:5": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "6f7ce846bc",
+  "note": "M-W slang ate (and left no crumbs): performed or did perfectly or impressively",
+  "v": "ok"
+ },
+ "alpha:50": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "eb81950a66",
+  "note": "M-W dictionary: to restrict access to something of value",
+  "v": "ok"
+ },
+ "alpha:51": {
+  "at": "2026-10-17T00:01:37Z",
+  "fix": {
+   "groups": [
+    [
+     "ghost",
+     "rage-bait"
+    ]
+   ]
+  },
+  "h": "0344bcca95",
+  "note": "Sense checks out at https://www.merriam-webster.com/dictionary/ghost (M-W dictionary: to cut off all contact with someone abruptly and usually without explanation). But M-W slang rage-bait (https://www.merriam-webster.com/slang/rage-bait) is also a verb, to make intentionally provocative statements, so “do not rage-bait the team group text” also works, so group them",
+  "v": "fix"
+ },
+ "alpha:52": {
+  "at": "2026-10-17T00:02:11Z",
+  "fix": {
+   "groups": [
+    [
+     "mother",
+     "chalked"
+    ]
+   ]
+  },
+  "h": "44431e4d30",
+  "note": "Sense checks out at https://www.merriam-webster.com/slang/mother (M-W slang page: a person, usually a woman, widely acknowledged as nurturing and inspiring). But M-W slang chalked (https://www.merriam-webster.com/slang/chalked) includes done for and wrecked, so “ran everything, so she is chalked” also reads as true (the deck already keeps cooked off this card for the same reason)",
+  "v": "fix"
+ },
+ "alpha:53": {
+  "at": "2026-10-17T00:01:37Z",
+  "fix": {
+   "groups": [
+    [
+     "lit",
+     "chalked"
+    ]
+   ]
+  },
+  "h": "560f357495",
+  "note": "Sense checks out at https://www.merriam-webster.com/dictionary/lit (M-W dictionary: excellent, exciting). But M-W chalked includes messed up, ruined, no good, so “the film night was chalked” also fits, the same way mid and cringe are already grouped with lit",
+  "v": "fix"
+ },
+ "alpha:54": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "10756664aa",
+  "note": "M-W dictionary: a distinctive feeling or quality capable of being sensed",
+  "v": "ok"
+ },
+ "alpha:55": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "39051d5582",
+  "note": "M-W dictionary: a usually dramatic enhancement especially to physical appearance",
+  "v": "ok"
+ },
+ "alpha:56": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "1b98397822",
+  "note": "M-W dictionary: broadly, to make something less useful or effective",
+  "v": "ok"
+ },
+ "alpha:57": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "49e0ba5ebb",
+  "note": "M-W dictionary adjective: made or done in a crucial situation, successful in a crucial situation",
+  "v": "ok"
+ },
+ "alpha:58": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "77e206c821",
+  "note": "M-W dictionary: away from keyboard. Dictionary.com (https://www.dictionary.com/browse/afk) adds that it signals a participant is absent or has stopped participating, which supports the means line",
+  "v": "ok"
+ },
+ "alpha:59": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "0adaedbad1",
+  "note": "M-W dictionary: an annoying person : nuisance, and one that represents a threat",
+  "v": "ok"
+ },
+ "alpha:6": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "30d9e240f0",
+  "note": "M-W mid: neither very good nor very bad, so-so",
+  "v": "ok"
+ },
+ "alpha:60": {
+  "at": "2026-10-17T00:01:37Z",
+  "fix": {
+   "groups": [
+    [
+     "gas",
+     "chalked"
+    ],
+    [
+     "gas",
+     "cottagecore"
+    ]
+   ]
+  },
+  "h": "7834cb9468",
+  "note": "Sense checks out at https://www.merriam-webster.com/slang/gas (M-W slang page: a slangy adjective meaning excellent, awesome, great). But chalked (M-W: no good, ruined) and cottagecore (a style word like preppy, already grouped with gas) also describe jerseys plausibly",
+  "v": "fix"
+ },
+ "alpha:61": {
+  "at": "2026-10-17T00:02:11Z",
+  "h": "e0e63b1286",
+  "note": "M-W slang page: a friendly way to address one’s presumed audience of friends and followers",
+  "v": "ok"
+ },
+ "alpha:62": {
+  "at": "2026-10-17T00:01:37Z",
+  "fix": {
+   "means": "Doing what needs to be done"
+  },
+  "h": "8606687808",
+  "note": "Sense checks out at https://www.merriam-webster.com/dictionary/stand%20on%20business (M-W dictionary (stand on business): to do what needs to be done, to take a firm stand). But M-W defines stand on business as to do what needs to be done, to take a firm stand. It does not say doing what you said, so the means line should follow M-W",
+  "v": "fix"
+ },
+ "alpha:63": {
+  "at": "2026-10-17T00:01:37Z",
+  "fix": {
+   "groups": [
+    [
+     "cringe",
+     "main character energy"
+    ]
+   ]
+  },
+  "h": "1fa548284b",
+  "note": "Sense checks out at https://www.merriam-webster.com/dictionary/cringe (M-W dictionary adjective: so embarrassing, awkward, etc. as to cause one to cringe). But M-W main character energy (https://www.merriam-webster.com/slang/main-character-energy) is self-assured behavior, also used to criticize its excesses, so “Dad dancing on the sideline was main character energy” also fits",
+  "v": "fix"
+ },
+ "alpha:64": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "b37b578012",
+  "note": "M-W slang page: the weeks leading up to Halloween",
+  "v": "ok"
+ },
+ "alpha:65": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "6b8818ee47",
+  "note": "M-W slang page: to improve or enhance something in a video game, make it more powerful",
+  "v": "ok"
+ },
+ "alpha:66": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "1c55339703",
+  "note": "M-W slang page: a pronunciation spelling of crying, often used for crying with laughter",
+  "v": "ok"
+ },
+ "alpha:67": {
+  "at": "2026-10-17T00:01:37Z",
+  "fix": {
+   "groups": [
+    [
+     "Mary Sue",
+     "menace"
+    ]
+   ]
+  },
+  "h": "5dee7072d9",
+  "note": "Sense checks out at https://www.merriam-webster.com/slang/mary-sue (M-W slang page: a fictional character who is implausibly perfect). But a striker who never misses is a menace (M-W menace: one that represents a threat) also reads as true",
+  "v": "fix"
+ },
+ "alpha:68": {
+  "at": "2026-10-17T00:01:37Z",
+  "fix": {
+   "groups": [
+    [
+     "smol",
+     "fire",
+     "goated",
+     "peak",
+     "lit"
+    ]
+   ]
+  },
+  "h": "5d2bab8031",
+  "note": "Sense checks out at https://www.merriam-webster.com/slang/smol (M-W slang page: small, little in an intensely cute way). But “the puppy is fire / goated / peak / lit” fit the same way gas and tuff do, which the deck already groups with smol",
+  "v": "fix"
+ },
+ "alpha:69": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "2c1f8a7b9d",
+  "note": "M-W slang page: a period of diminished success",
+  "v": "ok"
+ },
+ "alpha:7": {
+  "at": "2026-10-17T00:01:37Z",
+  "fix": {
+   "ex": "The ref seems sus for wearing the other team’s colors"
+  },
+  "h": "2531cff598",
+  "note": "M-W sus (slang): suspicious. But “looks ___ wearing the other team’s colors” also takes the style words still drawn as wrong answers (fire, tuff, drip-style adjectives like goated, lit, peak, preppy). “Seems ___ for wearing” keeps it a judgment, so only sus fits",
+  "v": "fix"
+ },
+ "alpha:70": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "d35c0047ae",
+  "note": "M-W slang page: describes something as excellent, superb, truly great",
+  "v": "ok"
+ },
+ "alpha:71": {
+  "at": "2026-10-17T00:01:37Z",
+  "fix": {
+   "groups": [
+    [
+     "sleep on",
+     "rage-bait"
+    ]
+   ]
+  },
+  "h": "0b6b190f79",
+  "note": "Sense checks out at https://www.merriam-webster.com/slang/sleep-on (M-W slang page: to ignore, overlook or underestimate). But M-W rage-bait is also a verb (to make intentionally provocative statements), so “Do not rage-bait the quiet defender” is sound advice too, so group them",
+  "v": "fix"
+ },
+ "alpha:72": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "9fdfa0f18a",
+  "note": "M-W slang page: humorous, affectionate slang for bird",
+  "v": "ok"
+ },
+ "alpha:73": {
+  "at": "2026-10-17T00:01:37Z",
+  "fix": {
+   "groups": [
+    [
+     "bias",
+     "GOAT"
+    ]
+   ]
+  },
+  "h": "ff23d3da06",
+  "note": "Sense checks out at https://www.merriam-webster.com/slang/bias (M-W slang page: K-pop sense, a favorite idol or performer). But “The goalie’s GOAT is the K-pop singer” also reads naturally (M-W GOAT: the greatest of all time), so group them",
+  "v": "fix"
+ },
+ "alpha:74": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "53cc9a84df",
+  "note": "M-W slang page: an experience that comes to shape or define who a person is",
+  "v": "ok"
+ },
+ "alpha:75": {
+  "at": "2026-10-17T00:01:37Z",
+  "fix": {
+   "groups": [
+    [
+     "chalked",
+     "AFK"
+    ],
+    [
+     "chalked",
+     "mid"
+    ]
+   ]
+  },
+  "h": "d9c246d805",
+  "note": "Sense checks out at https://www.merriam-webster.com/slang/chalked (M-W slang page: doomed, hopeless, done for). But “Down 6–0, the team was AFK” (Dictionary.com: absent, stopped participating) and “…was mid” (M-W mid: mediocre, disappointing) also fit",
+  "v": "fix"
+ },
+ "alpha:76": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "ef28e5367e",
+  "note": "M-W slang clout: attention, fame, or popularity, especially on social media",
+  "v": "ok"
+ },
+ "alpha:77": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "5f17accd37",
+  "note": "M-W slang cottagecore: quaint, cozy, modest style from bucolic inspirations (gardening, baking)",
+  "v": "ok"
+ },
+ "alpha:78": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "01a7a3d9ba",
+  "note": "M-W slang do numbers: to earn a lot of sales, social media interactions, etc. (slay already grouped)",
+  "v": "ok"
+ },
+ "alpha:79": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "f7e9694bb5",
+  "note": "M-W slang brick: extremely cold (used of weather)",
+  "v": "ok"
+ },
+ "alpha:8": {
+  "at": "2026-10-17T00:01:37Z",
+  "fix": {
+   "ex": "The coach has won the league in each of her 20 years, so she is the GOAT"
+  },
+  "h": "61a8c7a4d7",
+  "note": "M-W GOAT: the most accomplished and successful individual in the history of a sport or activity. Perfect attendance is not accomplishment or success, so the sense is a stretch. Reworded to a record of winning, hook 20 years kept",
+  "v": "fix"
+ },
+ "alpha:80": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "0d84b5b2fe",
+  "note": "M-W slang Gen Z stare: an unblinking, vacant expression where a spoken reply is expected (vibe check already grouped)",
+  "v": "ok"
+ },
+ "alpha:81": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "9b6a938292",
+  "note": "M-W slang girl dinner: a light meal of snacks or easy-to-prepare foods",
+  "v": "ok"
+ },
+ "alpha:82": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "70cdfa9160",
+  "note": "M-W slang girlypop: an affectionate term for a close girl or woman friend (bestie and twin already grouped)",
+  "v": "ok"
+ },
+ "alpha:83": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "46d0824dea",
+  "note": "M-W slang has entered the chat: notes the sudden appearance of a person or topic",
+  "v": "ok"
+ },
+ "alpha:84": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "88e4dcce4a",
+  "note": "M-W slang hold the L: to admit being wrong or to accept defeat",
+  "v": "ok"
+ },
+ "alpha:85": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "44c46d2b04",
+  "note": "M-W slang IJBOL: I just burst out laughing (SMH, bruh, womp womp, sheesh already grouped)",
+  "v": "ok"
+ },
+ "alpha:86": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "fc173528ba",
+  "note": "M-W slang keep it a buck: to be honest, real, or truthful",
+  "v": "ok"
+ },
+ "alpha:87": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "5274923255",
+  "note": "M-W slang kiki: a gossipy get-together, a lively chat",
+  "v": "ok"
+ },
+ "alpha:88": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "1633292afa",
+  "note": "M-W slang lore: the history or backstory of a person, character, or imagined world",
+  "v": "ok"
+ },
+ "alpha:89": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "3fac7045a1",
+  "note": "M-W slang lowkenuinely: in a manner both genuine and low-key (low-key and high-key already grouped)",
+  "v": "ok"
+ },
+ "alpha:9": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "0574bcb328",
+  "note": "M-W fire (slang adjective): excellent, a generalized term of approval",
+  "v": "ok"
+ },
+ "alpha:90": {
+  "at": "2026-10-17T00:01:37Z",
+  "fix": {
+   "groups": [
+    [
+     "out of pocket",
+     "salty"
+    ]
+   ]
+  },
+  "h": "d32a748f96",
+  "note": "M-W slang out of pocket: inappropriate, out of line (cringe already grouped). But salty is still drawable and fits too: arguing with the ref in the handshake line is easily called salty (deck card: Bitter, annoyed), so group them",
+  "v": "fix"
+ },
+ "alpha:91": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "d153364b61",
+  "note": "M-W slang plot armor: the overly convenient invulnerability of a fictional character",
+  "v": "ok"
+ },
+ "alpha:92": {
+  "at": "2026-10-17T00:01:37Z",
+  "fix": {
+   "groups": [
+    [
+     "preppy",
+     "girlypop"
+    ]
+   ]
+  },
+  "h": "2236e88859",
+  "note": "M-W slang preppy: a cheery, sporty girls’ style with pastels, smiley faces and hair bows. But M-W slang girlypop (merriam-webster.com/slang/girlypop) is also an adjective for hyperfeminine things, so “very girlypop” fits pastel bows too and girlypop is drawable here, so group them",
+  "v": "fix"
+ },
+ "alpha:93": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "e59e9d21be",
+  "note": "M-W slang pressed: stressed out, upset, bothered (salty and crash out already grouped)",
+  "v": "ok"
+ },
+ "alpha:94": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "5720542b46",
+  "note": "M-W slang side quest: an activity secondary to one’s main endeavor",
+  "v": "ok"
+ },
+ "alpha:95": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "855a89c02d",
+  "note": "M-W slang SMH: shaking my head, disapproval or disbelief (bruh, womp womp, sheesh already grouped)",
+  "v": "ok"
+ },
+ "alpha:96": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "c4676bb625",
+  "note": "M-W slang speed run: an incredibly fast progression, also a verb",
+  "v": "ok"
+ },
+ "alpha:97": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "34ed513c51",
+  "note": "M-W slang winter arc: an October–December stretch of focus on self-improvement goals",
+  "v": "ok"
+ },
+ "alpha:98": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "f7805af4a8",
+  "note": "M-W slang womp womp: interjection mocking someone’s misfortune (SMH, bruh already grouped)",
+  "v": "ok"
+ },
+ "alpha:99": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "c9365428fe",
+  "note": "M-W slang zoomies: a burst of frenetic running in dogs and cats",
+  "v": "ok"
+ },
  "basics:0": {
   "at": "2026-10-16T23:59:06Z",
   "h": "0e34592af3",
@@ -978,6 +1826,1524 @@
   "at": "2026-10-16T23:59:06Z",
   "h": "7215d437da",
   "note": "theifab.com Law 12.1 Handling the ball: unnaturally bigger is an offence, the arm’s upper boundary is the bottom of the armpit",
+  "v": "ok"
+ },
+ "bundesliga:0": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "fbab5ed700",
+  "note": "bundesliga.com German champions page (src): Bayern titles 2012/13 to 2022/23, then Leverkusen champions 2023/24. Kompany page also says Leverkusen ended the run of 11",
+  "v": "ok"
+ },
+ "bundesliga:1": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "a175428461",
+  "note": "bundesliga.com records page (src, stats as of 12 October 2026): Xabi Alonso’s Leverkusen 2023/24 the only side unbeaten for a whole season (34 games)",
+  "v": "ok"
+ },
+ "bundesliga:10": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "7b720a458a",
+  "note": "bundesliga.com matchday 30 report (src): 34th Bundesliga title with four games to spare, a 13th crown in 14 years",
+  "v": "ok"
+ },
+ "bundesliga:11": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "5fd85490a6",
+  "note": "bundesliga.com records page (src, stats as of 12 October 2026): Gerd Müller 365 goals for Bayern. Same on the top scorers page",
+  "v": "ok"
+ },
+ "bundesliga:12": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "31bb42d6a1",
+  "note": "bundesliga.com records page (src, stats as of 12 October 2026): top non-German scorer Lewandowski, 312 for Bayern and Dortmund",
+  "v": "ok"
+ },
+ "bundesliga:13": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "68eb01c22a",
+  "note": "bundesliga.com records page (src, stats as of 12 October 2026): Kane converted his first 24 Bundesliga penalties, missed the 25th against Wolfsburg on Matchday 33 of 2025/26",
+  "v": "ok"
+ },
+ "bundesliga:14": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "1f52fc61b5",
+  "note": "bundesliga.com records page (src, stats as of 12 October 2026): most clean sheets Neuer with 248, and he features in 2026/27, so still adding",
+  "v": "ok"
+ },
+ "bundesliga:15": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "547afc2524",
+  "note": "bundesliga.com records page (src, stats as of 12 October 2026): most assists in a season Thomas Müller 21 in 2019/20, career record 178 (since data collection began in 1992/93)",
+  "v": "ok"
+ },
+ "bundesliga:16": {
+  "at": "2026-10-17T00:04:17Z",
+  "h": "1a2afa4013",
+  "note": "bundesliga.com records page (src, stats as of 12 October 2026): Körbel 602 appearances, all for Eintracht Frankfurt",
+  "v": "ok"
+ },
+ "bundesliga:17": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "a6ba4c3409",
+  "note": "bundesliga.com records page (src, stats as of 12 October 2026): youngest scorer Moukoko, 16 years 28 days, for Dortmund at Union Berlin, December 2020",
+  "v": "ok"
+ },
+ "bundesliga:18": {
+  "at": "2026-10-17T00:04:17Z",
+  "h": "84f251e91f",
+  "note": "bundesliga.com records page (src, stats as of 12 October 2026): seven players scored debut hat-tricks, only Haaland (Dortmund) as a substitute",
+  "v": "ok"
+ },
+ "bundesliga:19": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "0e920cf6b2",
+  "note": "bundesliga.com records page (src, stats as of 12 October 2026): oldest scorer Pizarro at 40 years, 7 months and 15 days",
+  "v": "ok"
+ },
+ "bundesliga:2": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "65b0a28a9a",
+  "note": "bundesliga.com German champions page (src): 1963/64 Cologne first champions, 1977/78 Cologne (2nd title)",
+  "v": "ok"
+ },
+ "bundesliga:20": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "570d38e6a8",
+  "note": "bundesliga.com history page (src): Dortmund’s Timo Konietzka scored after 58 seconds against Werder on 24 August 1963",
+  "v": "ok"
+ },
+ "bundesliga:21": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "b241e5fa82",
+  "note": "bundesliga.com No. 5 shirt page (src): Bayern retired No. 5 for Beckenbauer, a four-time Bundesliga winner with Bayern",
+  "v": "ok"
+ },
+ "bundesliga:22": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "94fab7c7b4",
+  "note": "bundesliga.com records page (src, stats as of 12 October 2026): Lattek 8 titles as coach, 6 with Bayern and 2 with Gladbach",
+  "v": "ok"
+ },
+ "bundesliga:23": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "79ca7dba66",
+  "note": "bundesliga.com records page (src, stats as of 12 October 2026): Xabi Alonso’s Leverkusen 2023/24 went 34 games without defeat",
+  "v": "ok"
+ },
+ "bundesliga:24": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "a636558065",
+  "note": "bundesliga.com Klopp in numbers page (src): back-to-back titles with Dortmund in 2011 and 2012, 133 league wins with Dortmund",
+  "v": "ok"
+ },
+ "bundesliga:25": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "2ec5c59a09",
+  "note": "bundesliga.com records page (src, stats as of 12 October 2026): Bayern won their opening 10 games of 2015/16 under Guardiola, the longest winning start",
+  "v": "ok"
+ },
+ "bundesliga:26": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "36ed3eef14",
+  "note": "bundesliga.com records page (src, stats as of 12 October 2026): youngest permanent coach Nagelsmann, Hoffenheim, aged 28 years and 205 days",
+  "v": "ok"
+ },
+ "bundesliga:27": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "12b5bf7b30",
+  "note": "bundesliga.com Kompany page (src): won the title in his first two Bundesliga seasons (2024/25 and 2025/26) with Bayern",
+  "v": "ok"
+ },
+ "bundesliga:28": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "78c8e036f4",
+  "note": "bundesliga.com German champions page (src): Hitzfeld’s 7th title in 2007/08. Records page: Lattek’s 8 is the coaching record",
+  "v": "ok"
+ },
+ "bundesliga:29": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "d5ad3ee7d5",
+  "note": "bundesliga.com 2026/27 stadiums page (src): Allianz Arena Bayern’s home since the start of 2005/06",
+  "v": "ok"
+ },
+ "bundesliga:3": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "0f4262d932",
+  "note": "bundesliga.com German champions page (src): 1997/98 Kaiserslautern, only promoted team to win it. Records page confirms they remain the only one",
+  "v": "ok"
+ },
+ "bundesliga:30": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "5bd7f803b2",
+  "note": "bundesliga.com 2026/27 stadiums page (src): Signal Iduna Park is Germany’s largest stadium, holds 81,365",
+  "v": "ok"
+ },
+ "bundesliga:31": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "ebc0b7ce3b",
+  "note": "bundesliga.com 2026/27 stadiums page (src): Weserstadion sits on the bank of the Weser, fans can arrive by boat",
+  "v": "ok"
+ },
+ "bundesliga:32": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "f959952202",
+  "note": "bundesliga.com 2026/27 stadiums page (src): Veltins-Arena tunnel redesigned in 2014 to look like a coal mine",
+  "v": "ok"
+ },
+ "bundesliga:33": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "5badb0e057",
+  "note": "bundesliga.com 2026/27 stadiums page (src): Volksparkstadion HSV home since 1963, demolished and rebuilt in 2000",
+  "v": "ok"
+ },
+ "bundesliga:34": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "6dd0dfe7f5",
+  "note": "bundesliga.com records page (stats as of 12 Oct 2026): 88,075 at Berlin’s Olympiastadion in September 1969, Hertha beat Cologne 1–0",
+  "v": "ok"
+ },
+ "bundesliga:35": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "d7f31e5037",
+  "note": "bundesliga.com stadiums 2026–27 page: Stuttgart’s MHPArena, home since 1933, locals may still call it the Neckarstadion",
+  "v": "ok"
+ },
+ "bundesliga:36": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "b345ffcb57",
+  "note": "bundesliga.com animal names page: Cologne have a goat on the crest and are known as the Billy Goats",
+  "v": "ok"
+ },
+ "bundesliga:37": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "ef481e57bb",
+  "note": "bundesliga.com animal names page: Gladbach’s young squad and quick, free-flowing play earned the nickname the Foals",
+  "v": "ok"
+ },
+ "bundesliga:38": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "c85ca771d7",
+  "note": "bundesliga.com animal names page: the eagle of the city’s coat of arms, Eintracht are known as the Eagles",
+  "v": "ok"
+ },
+ "bundesliga:39": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "340335693c",
+  "note": "bundesliga.com animal names page: 1860 Munich have a lion on the badge, hence Die Löwen",
+  "v": "ok"
+ },
+ "bundesliga:4": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "c56ba1d3f3",
+  "note": "bundesliga.com German champions page (src): 2008/09 Wolfsburg first title, no other Wolfsburg title through 2023/24. Bayern won 2024/25 and 2025/26 (bundesliga.com/en/bundesliga/news/vincent-kompany-coaching-greats-bayern-munich-guardiola-flick-tuchel-37234), so still their only one",
+  "v": "ok"
+ },
+ "bundesliga:40": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "2b40a5ce35",
+  "note": "bundesliga.com animal names page: Duisburg’s blue-and-white striped shirts led to the name the Zebras",
+  "v": "ok"
+ },
+ "bundesliga:41": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "c9599ec918",
+  "note": "bundesliga.com Leverkusen nickname page: the team known as the Werkself, Factory XI",
+  "v": "ok"
+ },
+ "bundesliga:42": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "210db82fa7",
+  "note": "bundesliga.com No. 5 shirt page: Beckenbauer was known the world over as Der Kaiser and Bayern retired the No. 5",
+  "v": "ok"
+ },
+ "bundesliga:43": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "68f71ad792",
+  "note": "bundesliga.com Gerd Müller page: nicknamed Der Bomber, 566 goals in 607 competitive games for Bayern",
+  "v": "ok"
+ },
+ "bundesliga:44": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "589ff2ec0f",
+  "note": "bundesliga.com Meisterschale page (15 Apr 2026): trophy for each Bundesliga champion, nicknamed the salad bowl",
+  "v": "ok"
+ },
+ "bundesliga:45": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "3f37fea269",
+  "note": "bundesliga.com Kane page (16 May 2026): Torjägerkanone goes to the season’s top scorer, Kane won it a third straight season in 2025–26",
+  "v": "ok"
+ },
+ "bundesliga:46": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "2de51ff794",
+  "note": "bundesliga.com Yellow Wall page: the Yellow Wall is the south stand of Signal Iduna Park, almost 25,000 fans",
+  "v": "ok"
+ },
+ "bundesliga:47": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "b2804ee438",
+  "note": "bundesliga.com Hennes page: living goat mascot Hennes, named after player-coach Hennes Weisweiler",
+  "v": "ok"
+ },
+ "bundesliga:48": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "fa8307c789",
+  "note": "bundesliga.com derbies page: Der Klassiker is Bayern v Dortmund, first match 16 October 1965",
+  "v": "ok"
+ },
+ "bundesliga:49": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "1de72c9de4",
+  "note": "bundesliga.com derbies page: Revierderby is Dortmund v Schalke, first match 3 May 1925",
+  "v": "ok"
+ },
+ "bundesliga:5": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "9f8faff92d",
+  "note": "bundesliga.com records page (src, stats as of 12 October 2026): largest victory Gladbach 12–0 Dortmund on the final matchday of 1977/78",
+  "v": "ok"
+ },
+ "bundesliga:50": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "6d28ae7232",
+  "note": "bundesliga.com derbies page: Nordderby is Hamburg v Werder Bremen, a northern rivalry from the North German championship",
+  "v": "ok"
+ },
+ "bundesliga:51": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "b53bff2a08",
+  "note": "bundesliga.com derbies page: Rhine derby is Cologne v Gladbach, 35.4 miles apart",
+  "v": "ok"
+ },
+ "bundesliga:52": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "3e9e02a911",
+  "note": "bundesliga.com derbies page: Bayern v Gladbach is the Original Klassiker, they went toe-to-toe throughout the 70s",
+  "v": "ok"
+ },
+ "bundesliga:53": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "e016ab221e",
+  "note": "bundesliga.com derbies page: Baden-Swabia derby is Stuttgart v Karlsruhe, root of the feud goes back to 1806",
+  "v": "ok"
+ },
+ "bundesliga:54": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "a610940f3d",
+  "note": "bundesliga.com history page: first season got underway on 24 August 1963 with 16 teams",
+  "v": "ok"
+ },
+ "bundesliga:55": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "7512936d6a",
+  "note": "bundesliga.com stadiums 2026–27 page: Signal Iduna Park home since 1974, opened for that year’s World Cup, original name Westfalenstadion",
+  "v": "ok"
+ },
+ "bundesliga:56": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "897964cdd2",
+  "note": "bundesliga.com stadiums 2026–27 page: Allianz Arena home since 2005, in time for the 2005/06 season",
+  "v": "ok"
+ },
+ "bundesliga:57": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "2ed9423e6d",
+  "note": "bundesliga.com 50+1 page: the rule was introduced in 1998, members hold the majority of voting rights",
+  "v": "ok"
+ },
+ "bundesliga:58": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "91a6f6d3b4",
+  "note": "bundesliga.com Klopp in numbers page (24 Jul 2026): led Mainz into the Bundesliga for the first time in 2004 in his first coaching job",
+  "v": "ok"
+ },
+ "bundesliga:59": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "8672e64e1d",
+  "note": "bundesliga.com all clubs page: Bayern came up in 1965, failed to qualify for the first two seasons",
+  "v": "ok"
+ },
+ "bundesliga:6": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "ef400c4123",
+  "note": "bundesliga.com all-clubs page (src): HSV only ever-present club until relegation in 2018, returned in 2025",
+  "v": "ok"
+ },
+ "bundesliga:60": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "92b69af5b5",
+  "note": "bundesliga.com top scorers page: Gerd Müller 365 goals in 427 games over 14 seasons",
+  "v": "ok"
+ },
+ "bundesliga:61": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "6917fe3cdc",
+  "note": "bundesliga.com top scorers page: Lewandowski hit 41 in 2020/21, breaking Müller’s 40",
+  "v": "ok"
+ },
+ "bundesliga:62": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "beab3978c7",
+  "note": "bundesliga.com records page (stats as of 12 Oct 2026): Bayern champions 34 times in the Bundesliga era plus one in 1932 (still true after 2025–26)",
+  "v": "ok"
+ },
+ "bundesliga:63": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "e283885ab1",
+  "note": "bundesliga.com records page (stats as of 12 Oct 2026): Bayern 91 points in 2012/13, 25 points clear of Dortmund",
+  "v": "ok"
+ },
+ "bundesliga:64": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "71adacf20b",
+  "note": "bundesliga.com history page: 16-team division in 1963/64, became 18 from 1965/66",
+  "v": "ok"
+ },
+ "bundesliga:65": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "68e7a36e51",
+  "note": "bundesliga.com history page: sixteen teams became 18 from the 1965/66 campaign",
+  "v": "ok"
+ },
+ "bundesliga:66": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "c124b3b543",
+  "note": "bundesliga.com records page (stats as of 12 Oct 2026): Manuel Neuer has joined Thomas Müller on a record 13 Bundesliga titles (Neuer still playing, recheck next season)",
+  "v": "ok"
+ },
+ "bundesliga:7": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "98e557f58b",
+  "note": "bundesliga.com German champions page (src): Gladbach champions 1974/75, 1975/76, 1976/77 (3rd, 4th, 5th titles), five in all",
+  "v": "ok"
+ },
+ "bundesliga:8": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "19720c0de7",
+  "note": "bundesliga.com German champions page (src): VfB Stuttgart 1983/84, 1991/92 and 2006/07 (3rd title)",
+  "v": "ok"
+ },
+ "bundesliga:9": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "98cd6ff2d8",
+  "note": "bundesliga.com German champions page (src): 2003/04 Werder Bremen (4th title)",
+  "v": "ok"
+ },
+ "epl-more:0": {
+  "at": "2026-10-17T00:04:54Z",
+  "h": "2121020ea8",
+  "note": "premierleague.com/en/stats/records (player records tables): Most PL goals at one club 213 Harry Kane (Tottenham 2013/14–2022/23)",
+  "v": "ok"
+ },
+ "epl-more:1": {
+  "at": "2026-10-17T00:04:54Z",
+  "h": "4c2b5cc93f",
+  "note": "premierleague.com/en/stats/records (player records tables): Most Golden Boot awards 4 Henry (Arsenal) and Salah (Liverpool), Salah not among wrong answers. Player of the Season 2 Henry (2003/04, 2005/06)",
+  "v": "ok"
+ },
+ "epl-more:10": {
+  "at": "2026-10-17T00:04:54Z",
+  "h": "67be59b960",
+  "note": "premierleague.com/en/stats/records (player records tables): Most PL goals from outside the box 41 Frank Lampard",
+  "v": "ok"
+ },
+ "epl-more:11": {
+  "at": "2026-10-17T00:04:54Z",
+  "h": "1f92dbd45f",
+  "note": "premierleague.com/en/stats/records (player records tables): Most Playmaker awards 3 Kevin De Bruyne (2017/18, 2019/20, 2022/23)",
+  "v": "ok"
+ },
+ "epl-more:12": {
+  "at": "2026-10-17T00:04:54Z",
+  "h": "f0ca9db06c",
+  "note": "premierleague.com/en/stats/records (player records tables): Most Young Player of the Season awards 2 Phil Foden (2020/21 and 2021/22)",
+  "v": "ok"
+ },
+ "epl-more:13": {
+  "at": "2026-10-17T00:04:54Z",
+  "h": "706da6b867",
+  "note": "premierleague.com/en/stats/records (player records tables): Most Save of the Season awards 2 Jordan Pickford (Everton, 2021/22 and 2025/26)",
+  "v": "ok"
+ },
+ "epl-more:14": {
+  "at": "2026-10-17T00:04:54Z",
+  "h": "c293c37a70",
+  "note": "premierleague.com/en/stats/records (player records tables): Youngest PL goalscorer 16 years 73 days Max Dowman (Arsenal v Everton, 14 March 2026)",
+  "v": "ok"
+ },
+ "epl-more:15": {
+  "at": "2026-10-17T00:04:54Z",
+  "h": "30d040f001",
+  "note": "premierleague.com/en/stats/records (player records tables): Player of the Season 2 each for Henry, Ronaldo (Man United 2006/07, 2007/08), Vidic, De Bruyne, Salah. None of those is among the wrong answers",
+  "v": "ok"
+ },
+ "epl-more:16": {
+  "at": "2026-10-17T00:04:54Z",
+  "h": "40d90ecd3e",
+  "note": "premierleague.com/en/stats/records (player records tables): Goal of the Season Son (Tottenham 2019/20), Lamela (Tottenham 2020/21)",
+  "v": "ok"
+ },
+ "epl-more:17": {
+  "at": "2026-10-17T00:04:54Z",
+  "h": "3443d20a66",
+  "note": "premierleague.com title-winning managers page (19 May 2026): Blackburn won their one and only PL title in 1994/95, Shearer scoring 34",
+  "v": "ok"
+ },
+ "epl-more:18": {
+  "at": "2026-10-17T00:04:54Z",
+  "h": "ce6fefbacf",
+  "note": "premierleague.com/en/stats/records (player records tables): Most goals as a combination 47 Kane and Son (Tottenham)",
+  "v": "ok"
+ },
+ "epl-more:19": {
+  "at": "2026-10-17T00:04:54Z",
+  "h": "36e5d4f851",
+  "note": "premierleague.com/en/stats/records (player records tables): Highest PL scoring match 7–4 Portsmouth v Reading (29 September 2007)",
+  "v": "ok"
+ },
+ "epl-more:2": {
+  "at": "2026-10-17T00:04:54Z",
+  "fix": {
+   "src": "https://www.premierleague.com/news/4298728"
+  },
+  "h": "d384d3c3db",
+  "note": "Records page has no goal involvements row. premierleague.com/news/4298728 shows Salah 29 goals 18 assists 47 in 2024/25, equal to Cole and Shearer (47). Still the record: 2025/26 leaders on premierleague.com/en/stats/top/players were Haaland 27 goals 8 assists and Fernandes 21 assists with under 15 goals",
+  "v": "fix"
+ },
+ "epl-more:20": {
+  "at": "2026-10-17T00:04:54Z",
+  "h": "e6bbdd3e20",
+  "note": "premierleague.com club names history page: in 1865 a group of Nottingham shinty (similar to hockey) players launched the club",
+  "v": "ok"
+ },
+ "epl-more:21": {
+  "at": "2026-10-17T00:04:54Z",
+  "h": "f38d6da446",
+  "note": "premierleague.com club names history page: named after a large Georgian building, cricket club founded 1872 by chapel members, football two years later",
+  "v": "ok"
+ },
+ "epl-more:22": {
+  "at": "2026-10-17T00:04:54Z",
+  "h": "a6d2f54691",
+  "note": "premierleague.com club names history page: named for the glass Crystal Palace that housed the 1851 Great Exhibition, relocated from Hyde Park to south London",
+  "v": "ok"
+ },
+ "epl-more:23": {
+  "at": "2026-10-17T00:04:54Z",
+  "h": "68cc570588",
+  "note": "premierleague.com club names history page: founded 1879 for local schoolteachers, opened to non-teachers in 1880",
+  "v": "ok"
+ },
+ "epl-more:24": {
+  "at": "2026-10-17T00:04:54Z",
+  "h": "3155080ef7",
+  "note": "premierleague.com title-winning managers page (19 May 2026): Mourinho won 2004/05 with Chelsea aged 42 years 94 days, again in 2005/06",
+  "v": "ok"
+ },
+ "epl-more:25": {
+  "at": "2026-10-17T00:04:54Z",
+  "h": "8feb493a0e",
+  "note": "premierleague.com 20 stadiums page (26 Sep 2026): Anfield has a stand named after Sir Kenny Dalglish. Means from premierleague.com title-winning managers page (19 May 2026) (Dalglish, Blackburn 1994/95)",
+  "v": "ok"
+ },
+ "epl-more:26": {
+  "at": "2026-10-17T00:04:54Z",
+  "h": "f9822f5f5a",
+  "note": "premierleague.com title-winning managers page (19 May 2026): Ancelotti 2009/10, wrapped up on the final day with an 8-0 win over Wigan",
+  "v": "ok"
+ },
+ "epl-more:27": {
+  "at": "2026-10-17T00:04:54Z",
+  "h": "7be880b31f",
+  "note": "premierleague.com title-winning managers page (19 May 2026): Conte 2016/17, shift to 3-4-3 proved vital. Italy has produced four title-winning managers",
+  "v": "ok"
+ },
+ "epl-more:28": {
+  "at": "2026-10-17T00:04:54Z",
+  "h": "27936d979b",
+  "note": "premierleague.com title-winning managers page (19 May 2026): Mancini won Man City first title in 2011/12, after a short stint with Leicester as a player",
+  "v": "ok"
+ },
+ "epl-more:29": {
+  "at": "2026-10-17T00:04:54Z",
+  "h": "5aa6597c7b",
+  "note": "premierleague.com title-winning managers page (19 May 2026): Pellegrini, Chilean, first coach from outside Europe to win the title, 2013/14",
+  "v": "ok"
+ },
+ "epl-more:3": {
+  "at": "2026-10-17T00:04:54Z",
+  "h": "9f36768dc6",
+  "note": "premierleague.com/en/stats/records (player records tables): Most headed PL goals 53 Peter Crouch",
+  "v": "ok"
+ },
+ "epl-more:30": {
+  "at": "2026-10-17T00:04:54Z",
+  "h": "304b9ef9fe",
+  "note": "premierleague.com title-winning managers page (19 May 2026): Klopp 2019/20 ended a 30-year wait, club-record 99 points",
+  "v": "ok"
+ },
+ "epl-more:31": {
+  "at": "2026-10-17T00:04:54Z",
+  "fix": {
+   "src": "https://www.premierleague.com/news/662065"
+  },
+  "h": "efe1551ba1",
+  "note": "Not on the current records page. premierleague.com/news/662065 (Records: Managers) shows Most PL clubs managed 9 Sam Allardyce (Bolton to Leeds, 2001/02–2022/23), and premierleague.com/news/3251324 calls Leeds his record ninth club",
+  "v": "fix"
+ },
+ "epl-more:32": {
+  "at": "2026-10-17T00:04:54Z",
+  "h": "af4fd9b54d",
+  "note": "premierleague.com 20 stadiums page (26 Sep 2026): statues of Sir Bobby Robson outside Portman Road and St James’ Park, and a Portman Road stand named after him",
+  "v": "ok"
+ },
+ "epl-more:33": {
+  "at": "2026-10-17T00:04:54Z",
+  "h": "8b96841976",
+  "note": "premierleague.com 20 stadiums page (26 Sep 2026): Arsenal previously at Highbury, less than a mile away, for 93 years",
+  "v": "ok"
+ },
+ "epl-more:34": {
+  "at": "2026-10-17T00:04:54Z",
+  "h": "2c5e513d2f",
+  "note": "premierleague.com stadiums guide (26 Sep 2026): Toffees played at Goodison Park for 133 years, Hill Dickinson Stadium opened 2025",
+  "v": "ok"
+ },
+ "epl-more:35": {
+  "at": "2026-10-17T00:04:54Z",
+  "h": "2d187a1e2e",
+  "note": "premierleague.com stadiums guide (26 Sep 2026): Man City left Maine Road for Etihad Stadium in 2003",
+  "v": "ok"
+ },
+ "epl-more:36": {
+  "at": "2026-10-17T00:04:54Z",
+  "h": "214ea59e4e",
+  "note": "premierleague.com stadiums guide (26 Sep 2026): all four Elland Road stands named after Revie, Charlton, Hunter and John Charles",
+  "v": "ok"
+ },
+ "epl-more:37": {
+  "at": "2026-10-17T00:04:54Z",
+  "h": "2633037e69",
+  "note": "premierleague.com stadiums guide (26 Sep 2026): Portman Road since 1884, capacity 30,294",
+  "v": "ok"
+ },
+ "epl-more:38": {
+  "at": "2026-10-17T00:04:54Z",
+  "h": "4bcacad011",
+  "note": "premierleague.com stadiums guide (26 Sep 2026): Selhurst Park since 1924, shared with Wimbledon 1991 to 2003",
+  "v": "ok"
+ },
+ "epl-more:39": {
+  "at": "2026-10-17T00:05:08Z",
+  "h": "315ba44ad3",
+  "note": "premierleague.com stadiums guide (26 Sep 2026): Villa Park has hosted 55 FA Cup semi-finals, including replays, more than any other",
+  "v": "ok"
+ },
+ "epl-more:4": {
+  "at": "2026-10-17T00:05:08Z",
+  "h": "70863e159b",
+  "note": "premierleague.com/en/stats/records (player records tables): Fastest PL hat-trick 2 min 56 s Sadio Mane (Southampton v Aston Villa, 16 May 2015)",
+  "v": "ok"
+ },
+ "epl-more:40": {
+  "at": "2026-10-17T00:04:54Z",
+  "h": "84f0a1b7d9",
+  "note": "premierleague.com stadiums guide (26 Sep 2026): City Ground stands named after Clough, Peter Taylor and John Robertson",
+  "v": "ok"
+ },
+ "epl-more:41": {
+  "at": "2026-10-17T00:04:54Z",
+  "h": "c3c0b1ee4a",
+  "note": "premierleague.com stadiums guide (26 Sep 2026): Guardiola had a stand named after him upon his exit in May 2026",
+  "v": "ok"
+ },
+ "epl-more:42": {
+  "at": "2026-10-17T00:05:08Z",
+  "h": "7d023ee374",
+  "note": "premierleague.com/en/premier-league-explained: one point for a draw, three for a win",
+  "v": "ok"
+ },
+ "epl-more:43": {
+  "at": "2026-10-17T00:04:54Z",
+  "h": "a349c755f5",
+  "note": "premierleague.com/en/stats/records: most points without winning the title, 97, Liverpool 2018/19",
+  "v": "ok"
+ },
+ "epl-more:44": {
+  "at": "2026-10-17T00:04:54Z",
+  "h": "9cc7e34c4e",
+  "note": "premierleague.com/en/stats/records: fewest goals conceded 15 and most clean sheets 25, Chelsea 2004/05",
+  "v": "ok"
+ },
+ "epl-more:45": {
+  "at": "2026-10-17T00:05:08Z",
+  "h": "738cb465b7",
+  "note": "premierleague.com/en/premier-league-explained: six ever-presents incl. Everton, records page lists them 1992/93 to date",
+  "v": "ok"
+ },
+ "epl-more:46": {
+  "at": "2026-10-17T00:04:54Z",
+  "h": "0b15e2634e",
+  "note": "premierleague.com/en/premier-league-explained: seven different winners since 1992, champions list shows 2025/26 Arsenal",
+  "v": "ok"
+ },
+ "epl-more:47": {
+  "at": "2026-10-17T00:04:54Z",
+  "h": "b9f2342d5c",
+  "note": "premierleague.com/en/stats/records: longest unbeaten home run 86, Chelsea 21 Feb 2004 to 26 Oct 2008",
+  "v": "ok"
+ },
+ "epl-more:48": {
+  "at": "2026-10-17T00:04:54Z",
+  "h": "98e4b28122",
+  "note": "premierleague.com/en/stats/records: most goals in a season 106, Man City 2017/18",
+  "v": "ok"
+ },
+ "epl-more:49": {
+  "at": "2026-10-17T00:04:54Z",
+  "h": "5606942b59",
+  "note": "premierleague.com club names history: founded 1886 by workers at the Royal Arsenal munitions factory",
+  "v": "ok"
+ },
+ "epl-more:5": {
+  "at": "2026-10-17T00:04:54Z",
+  "h": "a9057eab18",
+  "note": "premierleague.com/en/stats/records (player records tables): Most consecutive PL matches scoring 11 Jamie Vardy (Leicester, 29 Aug–28 Nov 2015)",
+  "v": "ok"
+ },
+ "epl-more:50": {
+  "at": "2026-10-17T00:04:54Z",
+  "h": "944a26795d",
+  "note": "premierleague.com stadiums guide (26 Sep 2026): Old Trafford home since 1910, stands named after Ferguson and Bobby Charlton",
+  "v": "ok"
+ },
+ "epl-more:51": {
+  "at": "2026-10-17T00:04:54Z",
+  "h": "e23fccd631",
+  "note": "premierleague.com club names history: Leeds United founded 1919, replacing Leeds City which was forced to disband",
+  "v": "ok"
+ },
+ "epl-more:52": {
+  "at": "2026-10-17T00:04:54Z",
+  "h": "20db55118a",
+  "note": "premierleague.com stadiums guide (26 Sep 2026): Amex home since 2011, replacing Withdean Stadium",
+  "v": "ok"
+ },
+ "epl-more:53": {
+  "at": "2026-10-17T00:04:54Z",
+  "h": "6e9c497bad",
+  "note": "premierleague.com stadiums guide (26 Sep 2026): Stadium of Light 1997, built on the former Monkwearmouth Colliery",
+  "v": "ok"
+ },
+ "epl-more:54": {
+  "at": "2026-10-17T00:04:54Z",
+  "h": "659325042b",
+  "note": "premierleague.com title-winning managers page: Arteta made 110 league appearances before hanging up his boots in 2016",
+  "v": "ok"
+ },
+ "epl-more:55": {
+  "at": "2026-10-17T00:04:54Z",
+  "h": "2fa86ca8d3",
+  "note": "premierleague.com club names history: first called Dial Square after a factory workshop, then Royal Arsenal",
+  "v": "ok"
+ },
+ "epl-more:56": {
+  "at": "2026-10-17T00:04:54Z",
+  "h": "adc611bee9",
+  "note": "premierleague.com club names history: founded 1878 by railway employees as Newton Heath LYR",
+  "v": "ok"
+ },
+ "epl-more:57": {
+  "at": "2026-10-17T00:04:54Z",
+  "h": "f95e30d81c",
+  "note": "premierleague.com club names history: Thames Ironworks FC from 1895, replaced by West Ham United in 1900",
+  "v": "ok"
+ },
+ "epl-more:58": {
+  "at": "2026-10-17T00:05:08Z",
+  "h": "c5821c9b69",
+  "note": "premierleague.com club names history: Ardwick AFC from 1887 before becoming Manchester City, origins a St Mark’s Church team in 1880",
+  "v": "ok"
+ },
+ "epl-more:59": {
+  "at": "2026-10-17T00:04:54Z",
+  "h": "b4e702dc77",
+  "note": "premierleague.com club names history: founded 1899 as Boscombe Football Club, AFC Bournemouth from 1971",
+  "v": "ok"
+ },
+ "epl-more:6": {
+  "at": "2026-10-17T00:04:54Z",
+  "h": "f579303d2b",
+  "note": "premierleague.com/en/stats/records (player records tables): Most PL free-kicks scored 18 David Beckham (Manchester United)",
+  "v": "ok"
+ },
+ "epl-more:60": {
+  "at": "2026-10-17T00:05:08Z",
+  "h": "e5a28becf1",
+  "note": "premierleague.com Coventry return article: founder Willie Stanley worked for cycle company Singers, Singers FC until 1898",
+  "v": "ok"
+ },
+ "epl-more:61": {
+  "at": "2026-10-17T00:04:54Z",
+  "h": "a9cc08bb3a",
+  "note": "premierleague.com club names history: Bees from the ‘Buck up Bs’ student chant",
+  "v": "ok"
+ },
+ "epl-more:62": {
+  "at": "2026-10-17T00:04:54Z",
+  "h": "991cd86ebd",
+  "note": "premierleague.com club names history: Irons nickname from shipbuilding origins",
+  "v": "ok"
+ },
+ "epl-more:63": {
+  "at": "2026-10-17T00:04:54Z",
+  "h": "4475815f42",
+  "note": "premierleague.com club names history: claret and blue earned the Clarets nickname",
+  "v": "ok"
+ },
+ "epl-more:64": {
+  "at": "2026-10-17T00:04:54Z",
+  "h": "4b11220f16",
+  "note": "premierleague.com Hull promotion article: the Tigers, highest PL finish 16th (2013/14)",
+  "v": "ok"
+ },
+ "epl-more:65": {
+  "at": "2026-10-17T00:04:54Z",
+  "h": "f73453260a",
+  "note": "premierleague.com Coventry return article: sky blue colours adopted under Jimmy Hill gave the nickname",
+  "v": "ok"
+ },
+ "epl-more:66": {
+  "at": "2026-10-17T00:04:54Z",
+  "h": "4871192ebc",
+  "note": "premierleague.com club names history: original nickname the Saints, replaced by the Cottagers on the 1896 move to Craven Cottage",
+  "v": "ok"
+ },
+ "epl-more:7": {
+  "at": "2026-10-17T00:05:08Z",
+  "h": "02ca84ca04",
+  "note": "premierleague.com/en/stats/records (player records tables): First PL hat-trick Eric Cantona (Leeds United v Tottenham, 25 August 1992)",
+  "v": "ok"
+ },
+ "epl-more:8": {
+  "at": "2026-10-17T00:04:54Z",
+  "h": "ea83ff8e46",
+  "note": "premierleague.com/en/stats/records (player records tables): Scored a PL goal lists six keepers, Alisson (West Brom v Liverpool, 16 May 2021). Pickford not among wrong answers",
+  "v": "ok"
+ },
+ "epl-more:9": {
+  "at": "2026-10-17T00:04:54Z",
+  "h": "16774b5952",
+  "note": "premierleague.com/en/stats/records (player records tables): Fastest PL goal 7.69 seconds Shane Long (Watford v Southampton, 24 April 2019)",
+  "v": "ok"
+ },
+ "epl:0": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "52f11c42dd",
+  "note": "stats/records: most PL title wins 13 Manchester United, all listed seasons match Ferguson's 13 on news 4660971 (every title-winning manager). Still true after 2025/26",
+  "v": "ok"
+ },
+ "epl:1": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "5dc5765571",
+  "note": "stats/records: most consecutive titles 4 Man City 2020/21-2023/24, called record-breaking on news 4660971 (every title-winning manager)",
+  "v": "ok"
+ },
+ "epl:10": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "dd497c508f",
+  "note": "premier-league-explained: 20 teams play each other home and away (38 games each). news 4660971 (every title-winning manager) also cites 38 matches in 2003/04",
+  "v": "ok"
+ },
+ "epl:11": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "dc3055b9ef",
+  "note": "premier-league-explained: season runs August to May, a total of 380 matches",
+  "v": "ok"
+ },
+ "epl:12": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "6918755800",
+  "note": "premier-league-explained: bottom three are relegated to the EFL Championship",
+  "v": "ok"
+ },
+ "epl:13": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "752b150744",
+  "note": "stats/records: most PL points 100 Man City 2017/18. news 4660971 (every title-winning manager) shows it was Guardiola's first title",
+  "v": "ok"
+ },
+ "epl:14": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "dcf6f0b18b",
+  "note": "stats/records: longest unbeaten run 49 Arsenal, 7 May 2003 to 24 October 2004, which spans all of 2003/04",
+  "v": "ok"
+ },
+ "epl:15": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "bcbb9a320a",
+  "note": "stats/records: most PL goals in a season 36 Erling Haaland, Man City 2022/23",
+  "v": "ok"
+ },
+ "epl:16": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "6ee51bac8c",
+  "note": "stats/records: top PL goalscorer 260 Alan Shearer (Blackburn Rovers and Newcastle United)",
+  "v": "ok"
+ },
+ "epl:17": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "9d5700b7ef",
+  "note": "news 4668605 (everything decided in 2025/26): Haaland won the Golden Boot with 27, Igor Thiago second with 22",
+  "v": "ok"
+ },
+ "epl:18": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "e162a49b3e",
+  "note": "stats/records: most PL appearances 658 James Milner, 2002/03 to 2025/26",
+  "v": "ok"
+ },
+ "epl:19": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "89cf93e19d",
+  "note": "stats/records: most PL clean sheets 202 Petr Cech (Chelsea and Arsenal)",
+  "v": "ok"
+ },
+ "epl:2": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "3323dacbdf",
+  "note": "news 4668605 (everything decided in 2025/26): Arsenal champions for the first time in 22 years, finished on 85 points",
+  "v": "ok"
+ },
+ "epl:20": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "5d58c46686",
+  "note": "premier-league-explained: Aguero's goal deep into stoppage time on the final day gave Man City the 2011/12 title",
+  "v": "ok"
+ },
+ "epl:21": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "49c47ba23c",
+  "note": "news 4668605 (everything decided in 2025/26): Fernandes set up 21 goals in 2025/26, a single-season record, and was named Player of the Season. stats/records lists 21 as the record",
+  "v": "ok"
+ },
+ "epl:22": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "604b2bae51",
+  "note": "news 4725666 (all 20 stadiums, 2026/27): Old Trafford is the largest PL stadium (74,158), nicknamed the Theatre of Dreams",
+  "v": "ok"
+ },
+ "epl:23": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "8df152ade8",
+  "note": "news 4725666 (all 20 stadiums, 2026/27): Liverpool have played at Anfield since the club was formed in 1892, capacity 61,276",
+  "v": "ok"
+ },
+ "epl:24": {
+  "at": "2026-10-17T00:02:42Z",
+  "h": "1360501bd5",
+  "note": "news 4725666 (all 20 stadiums, 2026/27): six bronze statues of Arsenal figures outside Emirates Stadium, named after sponsor airline Emirates",
+  "v": "ok"
+ },
+ "epl:25": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "86fc2b29f5",
+  "note": "news 4725666 (all 20 stadiums, 2026/27): Chelsea at Stamford Bridge since the club was formed in 1905, located in Fulham, west London",
+  "v": "ok"
+ },
+ "epl:26": {
+  "at": "2026-10-17T00:02:26Z",
+  "fix": {
+   "ex": "Newcastle’s St James’ Park sits close to the city center"
+  },
+  "h": "b910e0ec96",
+  "note": "news 4725666 (all 20 stadiums, 2026/27): St James' Park is 'located close to the city centre', not right in it. Newcastle there since 1892 is supported",
+  "v": "fix"
+ },
+ "epl:27": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "f7eff91d33",
+  "note": "news 4725666 (all 20 stadiums, 2026/27): Fulham at Craven Cottage since 1896, Riverside Stand overlooks the River Thames. news 4592046 (history behind club names): Cottagers nickname came with the move to Craven Cottage",
+  "v": "ok"
+ },
+ "epl:28": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "ff284afb2a",
+  "note": "news 4725666 (all 20 stadiums, 2026/27): Emirates is in Holloway, north London. Same page lists six London clubs in 2026/27",
+  "v": "ok"
+ },
+ "epl:29": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "148a0c4f18",
+  "note": "news 4725666 (all 20 stadiums, 2026/27): Villa Park in Aston, Birmingham, Villa's home since 1897",
+  "v": "ok"
+ },
+ "epl:3": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "ae110593de",
+  "note": "news 4660971 (every title-winning manager): Man City (Guardiola, Mancini, Pellegrini) and Chelsea (Mourinho, Ancelotti, Conte) have won with three managers. Arsenal and Liverpool have two, Man United one",
+  "v": "ok"
+ },
+ "epl:30": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "4d506cc944",
+  "note": "news 4725666 (all 20 stadiums, 2026/27): Hill Dickinson Stadium opened 2025 at Bramley-Moore Dock in Liverpool",
+  "v": "ok"
+ },
+ "epl:31": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "af7d41d828",
+  "note": "news 4725666 (all 20 stadiums, 2026/27): City Ground in West Bridgford, south of Nottingham city centre, on the River Trent, Forest's home",
+  "v": "ok"
+ },
+ "epl:32": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "22edfff919",
+  "note": "news 4725666 (all 20 stadiums, 2026/27): Vitality Stadium is the smallest PL ground, capacity 12,357, in the Bournemouth suburb of Boscombe",
+  "v": "ok"
+ },
+ "epl:33": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "cc79251ce6",
+  "note": "news 4592046 (history behind club names): the Gunners nickname is a tribute to the founders' Royal Arsenal factory",
+  "v": "ok"
+ },
+ "epl:34": {
+  "at": "2026-10-17T00:02:26Z",
+  "fix": {
+   "src": "https://www.premierleague.com/en/news/4725666/all-you-need-to-know-about-the-20-premier-league-stadiums"
+  },
+  "h": "0160a47f43",
+  "note": "news 4592046 (history behind club names) never mentions the Toffees nickname (it does show St Domingo's in 1878, supporting the means). news 4725666 (all 20 stadiums, 2026/27) calls Everton 'the Toffees', so point src there",
+  "v": "fix"
+ },
+ "epl:35": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "b51080ba42",
+  "note": "news 4489927 (Tyne-Wear derby) calls Newcastle the Magpies. Means: news 4504230 (why Newcastle will wear third kit) shows their home kit is black-and-white striped shirts",
+  "v": "ok"
+ },
+ "epl:36": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "d8f60a303d",
+  "note": "news 4489927 (Tyne-Wear derby) calls Sunderland the Black Cats and their ground the Stadium of Light",
+  "v": "ok"
+ },
+ "epl:37": {
+  "at": "2026-10-17T00:02:42Z",
+  "h": "a84bf62998",
+  "note": "news 4592046 (history behind club names): Cherries nickname believed to stem from the red striped shirts or nearby cherry trees",
+  "v": "ok"
+ },
+ "epl:38": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "bfea6b0b2b",
+  "note": "news 4592046 (history behind club names): Eagles nickname from the 1970s, Malcolm Allison inspired by Benfica",
+  "v": "ok"
+ },
+ "epl:39": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "7d141e9e95",
+  "note": "news 4644752: Ipswich called the Tractor Boys, promoted for 2026/27",
+  "v": "ok"
+ },
+ "epl:4": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "988a284783",
+  "note": "news 4660971 (every title-winning manager): Slot title season 2024/25, his first season in charge. Klopp won 2019/20 with Liverpool",
+  "v": "ok"
+ },
+ "epl:40": {
+  "at": "2026-10-17T00:02:26Z",
+  "fix": {
+   "means": "2012–13 was his last season in charge"
+  },
+  "h": "1c6eac52a9",
+  "note": "Sentence ok: stats/records most PL winners' medals 13 Sir Alex Ferguson, and news 4725666 (all 20 stadiums, 2026/27) says a record 13. Means unsupported: no premierleague.com page found giving 1986 (news 59707 says 26 years in one line and 27 in another). news 4660971 (every title-winning manager) says 2012/13 was his last season in charge",
+  "v": "fix"
+ },
+ "epl:41": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "4c6a897e5a",
+  "note": "news 4660971 (every title-winning manager): Wenger's Invincibles of 2003/04 won 26 and drew 12 of 38",
+  "v": "ok"
+ },
+ "epl:42": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "f1597dc6ee",
+  "note": "news 4660971 (every title-winning manager): Ranieri led Leicester to the 2015/16 title at odds of 5000/1, one of the greatest achievements in PL history",
+  "v": "ok"
+ },
+ "epl:43": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "fe8e456014",
+  "note": "news 4660971 (every title-winning manager): Guardiola title seasons 2017/18 to 2023/24, six titles",
+  "v": "ok"
+ },
+ "epl:44": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "c0adc4115a",
+  "note": "news 4660971 (every title-winning manager): Arteta is the 13th manager to win the PL title, with Arsenal in 2025/26",
+  "v": "ok"
+ },
+ "epl:45": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "5ed66c385d",
+  "note": "news 4676111 (dated 29 Jun 2026): Maresca named Man City manager replacing Guardiola. Still in charge today: the site's current team-news ticker shows 'Maresca says Haaland and team-mates will need rest'",
+  "v": "ok"
+ },
+ "epl:46": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "efeb093c85",
+  "note": "premier-league-explained: the Premier League began in 1992 as the top tier. stats/records shows Man United won 1992/93",
+  "v": "ok"
+ },
+ "epl:47": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "78201f2951",
+  "note": "news 4725666 (all 20 stadiums, 2026/27): Arsenal at Emirates Stadium since 2006, capacity 60,704",
+  "v": "ok"
+ },
+ "epl:48": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "274a14ff26",
+  "note": "news 4725666 (all 20 stadiums, 2026/27): Etihad built for the 2002 Commonwealth Games, City moved in 2003",
+  "v": "ok"
+ },
+ "epl:49": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "84e0f46624",
+  "note": "news 4725666 (all 20 stadiums, 2026/27): Tottenham Hotspur Stadium opened 2019 replacing White Hart Lane, hosts annual NFL games",
+  "v": "ok"
+ },
+ "epl:5": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "dabaae9cac",
+  "note": "stats/records: biggest PL away win 0-9 Southampton v Leicester City, 25 October 2019. premier-league-explained shows Leicester won 2015/16",
+  "v": "ok"
+ },
+ "epl:6": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "f2f029dd0b",
+  "note": "news 4625396: Coventry return after a 25-year absence as 2025/26 Championship champions",
+  "v": "ok"
+ },
+ "epl:7": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "79543e47be",
+  "note": "news 4644752: Ipswich finished second in the Championship, an immediate return after relegation in 2024/25. Hull page 4664386 confirms runners-up",
+  "v": "ok"
+ },
+ "epl:8": {
+  "at": "2026-10-17T00:02:42Z",
+  "h": "48cfc9a920",
+  "note": "news 4664386: Hull beat Middlesbrough 1-0 in the playoff final at Wembley, McBurnie scored in second-half stoppage time",
+  "v": "ok"
+ },
+ "epl:9": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "bb16f6d85b",
+  "note": "premier-league-explained: top tier with 20 teams, Championship is the second tier, teams play each other home and away",
+  "v": "ok"
+ },
+ "ligamx:0": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "4e502ae557",
+  "note": "ligamx.net/cancha/detallenoticia/45355: América beat Monterrey in the Apertura 2024 final, the first club to win three short tournaments in a row",
+  "v": "ok"
+ },
+ "ligamx:1": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "807f4e3733",
+  "note": "detallenoticia/8050: Clásico Nacional América vs Guadalajara began with a heated game on 12 Nov 1959",
+  "v": "ok"
+ },
+ "ligamx:10": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "8d4d01bbd8",
+  "note": "detallenoticia/47622: Atlante (the Potros) played their first top-flight game since April 2014 in July 2026",
+  "v": "ok"
+ },
+ "ligamx:11": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "1daf5dd4ef",
+  "note": "ligamx.net club page: Estadio Banorte, Capacidad 88,084, checked today",
+  "v": "ok"
+ },
+ "ligamx:12": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "886a047eec",
+  "note": "ligamx.net club page: Estadio AKRON, Capacidad 46,232, checked today",
+  "v": "ok"
+ },
+ "ligamx:13": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "6f2afd5165",
+  "note": "ligamx.net club page: Estadio BBVA, Capacidad 53,529, checked today",
+  "v": "ok"
+ },
+ "ligamx:14": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "d7f7548f12",
+  "note": "detallenoticia/46703: Tigres at the Estadio Universitario, called El Volcán",
+  "v": "ok"
+ },
+ "ligamx:15": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "13eaa84b6f",
+  "note": "ligamx.net club page: Estadio Nemesio Diez, Capacidad 27,273",
+  "v": "ok"
+ },
+ "ligamx:16": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "ff51de17f8",
+  "note": "ligamx.net club page: Estadio Jalisco, Capacidad 55,020",
+  "v": "ok"
+ },
+ "ligamx:17": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "32ff54ca94",
+  "note": "ligamx.net club page: Estadio Caliente, Capacidad 31,333. detallenoticia/47228 names the team Xolos at the Estadio Caliente",
+  "v": "ok"
+ },
+ "ligamx:18": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "6cbe51ccb4",
+  "note": "ligamx.net club page: Estadio Victoria, Aguascalientes",
+  "v": "ok"
+ },
+ "ligamx:19": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "294f009ce3",
+  "note": "ligamx.net club page: Estadio TSM Corona, Torreón, Coahuila",
+  "v": "ok"
+ },
+ "ligamx:2": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "f1fefb1e79",
+  "note": "detallenoticia/46917: Toluca beat Tigres 9–8 on penalties in the Apertura 2025 final, their 12th league title",
+  "v": "ok"
+ },
+ "ligamx:20": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "f117166ca6",
+  "note": "ligamx.net club page: Estadio AKRON, Zapopan, Jalisco",
+  "v": "ok"
+ },
+ "ligamx:21": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "658cad6945",
+  "note": "ligamx.net club page: Estadio BBVA, Guadalupe, Nuevo León",
+  "v": "ok"
+ },
+ "ligamx:22": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "2038a22335",
+  "note": "ligamx.net club page: Estadio La Corregidora, Santiago de Querétaro",
+  "v": "ok"
+ },
+ "ligamx:23": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "51f9c6f86f",
+  "note": "ligamx.net club page: Estadio Caliente, Tijuana, Baja California",
+  "v": "ok"
+ },
+ "ligamx:24": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "c2bf011d94",
+  "note": "detallenoticia/47292: “las Águilas del América”",
+  "v": "ok"
+ },
+ "ligamx:25": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "df7df19565",
+  "note": "detallenoticia/46917: Toluca called the Diablos Rojos",
+  "v": "ok"
+ },
+ "ligamx:26": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "ba1c3e1609",
+  "note": "detallenoticia/47570: Cruz Azul called La Máquina",
+  "v": "ok"
+ },
+ "ligamx:27": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "6f0835bc8b",
+  "note": "detallenoticia/47228: Pachuca called the Tuzos",
+  "v": "ok"
+ },
+ "ligamx:28": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "9324e0057a",
+  "note": "detallenoticia/29721: “los Rayos del Necaxa”",
+  "v": "ok"
+ },
+ "ligamx:29": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "80e1d45c4d",
+  "note": "detallenoticia/47228: “los Guerreros de Santos Laguna”",
+  "v": "ok"
+ },
+ "ligamx:3": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "c4c5b57989",
+  "note": "detallenoticia/47571: Cruz Azul won the Clausura 2026 title with Rotondi’s goal at 90+5",
+  "v": "ok"
+ },
+ "ligamx:30": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "2595f21bc7",
+  "note": "detallenoticia/47622: Atlante called the Potros",
+  "v": "ok"
+ },
+ "ligamx:31": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "e37f2b4b79",
+  "note": "detallenoticia/47228 and 8050: Atlas called the Zorros",
+  "v": "ok"
+ },
+ "ligamx:32": {
+  "at": "2026-10-17T00:04:57Z",
+  "fix": {
+   "src": "https://ligamx.net/cancha/club/72/xoloitzcuintles"
+  },
+  "h": "aa5b4184aa",
+  "note": "The src page shows only the name Club Tijuana, the @Xolos handle and a social handle xoloitzcuintles. ligamx.net/cancha/club/72/xoloitzcuintles gives the full name Club Tijuana Xoloitzcuintles de Caliente with the @Xolos handle, which supports both the sentence and the means",
+  "v": "fix"
+ },
+ "ligamx:33": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "9bb4f19942",
+  "note": "4614 (ligamx.net, 2013) says Cabinho won the scoring title 8 times, with Pumas, Atlante and León, the most ever (next best Adalberto López with 5). No later ligamx.net page found showing anyone near 8, and the Apertura 2026 is only at Jornada 12",
+  "v": "ok"
+ },
+ "ligamx:34": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "9214251e3e",
+  "note": "47228 (March 2026) says Gignac is second with one club behind Cardozo’s 249 with Toluca. No final or record since changes it. Means: 4614 calls Cardozo “el paraguayo”",
+  "v": "ok"
+ },
+ "ligamx:35": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "d6f3a3b765",
+  "note": "4614: Hugo Sánchez “anotó 102 goles” with Pumas and is remembered for his chilenas (bicycle kicks)",
+  "v": "ok"
+ },
+ "ligamx:36": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "06474c8351",
+  "note": "4614: Hermosillo won a scoring tricampeonato in 93-94, 94-95 and 95-96, all with Cruz Azul",
+  "v": "ok"
+ },
+ "ligamx:37": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "a8a8e8b4dd",
+  "note": "4614: Cuauhtémoc Blanco with América won the Invierno 98 scoring title with 16 goals",
+  "v": "ok"
+ },
+ "ligamx:38": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "2b0d34daaa",
+  "note": "47571: Rotondi scored at 90+5 for Cruz Azul in the Clausura 2026 final, the latest title-winning goal in Liguilla history. Apertura 2026 is still in its regular season, so it stands",
+  "v": "ok"
+ },
+ "ligamx:39": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "ee8cd584f8",
+  "note": "46917: Nahuel Guzmán tied Oribe Peralta with 18 final games. The only final since (Clausura 2026) was Cruz Azul v Pumas, so it stands. Guzmán is still on the Tigres roster at ligamx.net/cancha/club/16/tigres",
+  "v": "ok"
+ },
+ "ligamx:4": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "777ebb65c0",
+  "note": "detallenoticia/47292: Clásico capitalino Pumas de la UNAM vs América. ligamx.net club menu lists Pumas as Universidad Nacional. detallenoticia/8050 says both clubs play in the capital",
+  "v": "ok"
+ },
+ "ligamx:40": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "b2d048fa1a",
+  "note": "47571: Huiqui won the title in his first tournament as coach with only seven Liga MX games coached",
+  "v": "ok"
+ },
+ "ligamx:41": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "b5e2cd149d",
+  "note": "46917: Antonio Mohamed won his fifth Liga MX title as coach with Toluca in the Apertura 2025",
+  "v": "ok"
+ },
+ "ligamx:42": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "906e080ff1",
+  "note": "47548: in the Clausura 2013 Miguel Herrera’s América won the title over Guillermo Vázquez’s Cruz Azul",
+  "v": "ok"
+ },
+ "ligamx:43": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "84a05bfd8e",
+  "note": "40007: Juan Reynoso’s Cruz Azul won 12 in a row in 2021 (Guard1anes 2021), tying the record of Necaxa 1934–35 and León Clausura 2019",
+  "v": "ok"
+ },
+ "ligamx:44": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "8dfc7e6f5c",
+  "note": "47571: the only coach to win a title with fewer games than Huiqui was Alberto Jorge, with four, in the Apertura 2002 with Toluca",
+  "v": "ok"
+ },
+ "ligamx:45": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "d0784fe8b3",
+  "note": "4404: Necaxa won back-to-back titles in 94-95 and 95-96 under Manolo Lapuente. Means: 46917 lists Lapuente among coaches with five Liga MX titles",
+  "v": "ok"
+ },
+ "ligamx:46": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "8c17ea6e55",
+  "note": "4614: “Desde que la Liga Mexicana se profesionalizó en 1943” (4404 also: professional era began in 1943)",
+  "v": "ok"
+ },
+ "ligamx:47": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "84cec404d0",
+  "note": "4614: in the second half of 1996 the league switched to two tournaments a year, starting with the Invierno 96",
+  "v": "ok"
+ },
+ "ligamx:48": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "e85262501a",
+  "note": "8050: the Clásico Tapatío is considered the oldest in Mexican soccer, the rivalry born in 1916",
+  "v": "ok"
+ },
+ "ligamx:49": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "5fe2fadb6d",
+  "note": "8050: the Clásico Nacional rivalry began on November 12, 1959, when Chivas beat América after América’s coach Fernando Marcos mocked them",
+  "v": "ok"
+ },
+ "ligamx:5": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "b306ad9b6d",
+  "note": "detallenoticia/47228: Clásico Regio Tigres vs Monterrey. Rayados confirmed by the club page title Rayados de Monterrey (ligamx.net/cancha/club/14/monterrey)",
+  "v": "ok"
+ },
+ "ligamx:50": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "5dd884c171",
+  "note": "8050: América welcomed Pumas to the top flight on July 1, 1962, winning 2–0",
+  "v": "ok"
+ },
+ "ligamx:51": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "0c1ff63623",
+  "note": "47586: the previous record was 26 league players at France 1998",
+  "v": "ok"
+ },
+ "ligamx:52": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "c19b76ba57",
+  "note": "45355: Apertura 2024 was América’s 16th title. 47571 (Clausura 2026) still has América on 16, and Apertura 2026 is unfinished",
+  "v": "ok"
+ },
+ "ligamx:53": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "80aae666ef",
+  "note": "46917: Toluca reached 12 titles, tying Chivas for second. 47571 still shows Chivas and Toluca on 12 each",
+  "v": "ok"
+ },
+ "ligamx:54": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "be62838851",
+  "note": "47571: Cruz Azul’s tenth Liga MX title, fourth-most in the professional era",
+  "v": "ok"
+ },
+ "ligamx:55": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "0a2b8041d0",
+  "note": "47586: 27 Liga MX players in 2026 World Cup squads, a record, 15 of them with countries other than Mexico",
+  "v": "ok"
+ },
+ "ligamx:56": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "b01c271d29",
+  "note": "46917: since Invierno 96 Toluca have 9, Pachuca 7. The one title since (Clausura 2026) went to Cruz Azul, so both still stand",
+  "v": "ok"
+ },
+ "ligamx:57": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "df3b1336b0",
+  "note": "47571: Cruz Azul reached 27 official titles, passing Chivas’ 26",
+  "v": "ok"
+ },
+ "ligamx:58": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "48b065b727",
+  "note": "47591: the Apertura 2026 starts the new season on July 16. The “opening” gloss is a plain translation",
+  "v": "ok"
+ },
+ "ligamx:59": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "f16b911e2a",
+  "note": "ligamx.net/cancha/club/1/america lists each season (2025-2026) as Apertura then Clausura. 47571, dated May 25 2026, covers the Clausura 2026 final, so it ends in spring. The “closing” gloss is a plain translation",
+  "v": "ok"
+ },
+ "ligamx:6": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "888bcb53c3",
+  "note": "detallenoticia/47223: Gignac is the all-time top scorer for Tigres with 190 Liga MX goals. His player page (ligamx.net/cancha/jugador/111171) shows only one Clausura 2026 goal, none in the Liguilla and no Apertura 2026 games, so 190 still stands",
+  "v": "ok"
+ },
+ "ligamx:60": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "7ef6e83b63",
+  "note": "4614: Liguillas arrived in 1970-71 as the Fase Final after the regular season. 47548 counts 12 Liguilla games through the semifinals (quarterfinals plus semifinals), so it starts at the quarterfinals",
+  "v": "ok"
+ },
+ "ligamx:61": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "95b7b4be16",
+  "note": "47622: Jornada 1 of the Apertura 2026, also called the “Fecha 1”. The “matchday” gloss is a plain translation",
+  "v": "ok"
+ },
+ "ligamx:62": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "18c1a1a1c9",
+  "note": "45349: “partido de Ida de la Final” is the first leg, with the Vuelta to follow. The “going” gloss is a plain translation",
+  "v": "ok"
+ },
+ "ligamx:63": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "1f74adff25",
+  "note": "45355: “El partido de Vuelta” of the Apertura 2024 final was the second leg. The “return” gloss is a plain translation",
+  "v": "ok"
+ },
+ "ligamx:64": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "24dd0bfda8",
+  "note": "8050: América v Guadalajara is the Clásico Nacional, one of several clásicos (Tapatío, Joven, Regio)",
+  "v": "ok"
+ },
+ "ligamx:65": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "8694e995e8",
+  "note": "45355 and 45349: the Gran Final of the Apertura 2024, played over Ida and Vuelta",
+  "v": "ok"
+ },
+ "ligamx:7": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "a4d1ef1dd1",
+  "note": "detallenoticia/8050: Clásico Tapatío Chivas vs Atlas, the oldest rivalry, born in 1916",
+  "v": "ok"
+ },
+ "ligamx:8": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "5840937f63",
+  "note": "detallenoticia/47228: Gignac’s 190 passed the 189 of Borgetti with Santos in March 2026",
+  "v": "ok"
+ },
+ "ligamx:9": {
+  "at": "2026-10-17T00:04:57Z",
+  "h": "5d786d5ef5",
+  "note": "detallenoticia/47571: Víctor Guzmán scored at 90+3 for Pachuca against Monterrey in the Clausura 2016 final",
   "v": "ok"
  },
  "lingo-more:0": {
@@ -2093,6 +4459,372 @@
   "at": "2026-10-16T23:59:06Z",
   "h": "110f41264b",
   "note": "theifab.com Law 12 12.3, 2026/27: corner kick if the keeper controls the ball with hands for more than eight seconds, the referee counts down the last five with a raised hand. Still true today",
+  "v": "ok"
+ },
+ "seriea:0": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "f5139dd43d",
+  "note": "legaseriea.it Juventus palmares lists 36 Serie A titles, the last nine 2011–12 to 2019–20 (titles 28 to 36)",
+  "v": "ok"
+ },
+ "seriea:1": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "de7c75a001",
+  "note": "legaseriea.it Tutti i colori parte 1: Juventus first played in a pink shirt, black and white came after the Notts County shirts arrived",
+  "v": "ok"
+ },
+ "seriea:10": {
+  "at": "2026-10-17T00:03:32Z",
+  "fix": {
+   "means": "Gabriele D’Annunzio’s idea"
+  },
+  "h": "53f4408a88",
+  "note": "legaseriea.it Il simbolo dello Scudetto compie 102 anni: Genoa first wore the scudetto in 1924, from an idea of Gabriele D’Annunzio. The page never calls him a poet, so the means drops that word",
+  "v": "fix"
+ },
+ "seriea:11": {
+  "at": "2026-10-17T00:03:32Z",
+  "fix": {
+   "src": "https://www.legaseriea.it/team/torino/palmares"
+  },
+  "h": "14f051dfe0",
+  "note": "The src (Gasperini birthday page) only says Mazzola won five titles with Grande Torino. The Torino palmares shows the 1945–46 to 1948–49 titles and seven Serie A titles in all (1927–28, 1942–43, 1945–46 to 1948–49, 1975–76)",
+  "v": "fix"
+ },
+ "seriea:12": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "67da43ca9f",
+  "note": "legaseriea.it La Lazio compie 126 anni: sky blue and white taken from the flag of Greece, home of the Olympics",
+  "v": "ok"
+ },
+ "seriea:13": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "507ced2f7e",
+  "note": "legaseriea.it birthday page (Feb 2026): Batistuta is Fiorentina’s top Serie A scorer with 152, still current",
+  "v": "ok"
+ },
+ "seriea:14": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "b7bb78585e",
+  "note": "legaseriea.it Atalanta palmares: UEFA Europa League 2023–24, their only European trophy listed",
+  "v": "ok"
+ },
+ "seriea:15": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "b3b0f6bbcd",
+  "note": "legaseriea.it Parma palmares: Coppa UEFA 1994–95 and 1998–99, Coppa delle Coppe 1992–93",
+  "v": "ok"
+ },
+ "seriea:16": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "1cd2c3ae5a",
+  "note": "legaseriea.it Tutti i colori parte 1: Como’s azzurro honors the lake, the club was first black and white",
+  "v": "ok"
+ },
+ "seriea:17": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "c9c22ce6a0",
+  "note": "legaseriea.it Buffon birthday page (Jan 2026): 657 Serie A games, the most ever, and a record 176 Italy caps",
+  "v": "ok"
+ },
+ "seriea:18": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "152b9417a6",
+  "note": "legaseriea.it Maldini birthday page: whole career at Milan, 26 trophies including seven scudetti",
+  "v": "ok"
+ },
+ "seriea:19": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "68e8bac74b",
+  "note": "legaseriea.it Totti 50 page: only Roma at club level, 619 Serie A games and 250 goals",
+  "v": "ok"
+ },
+ "seriea:2": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "d7d0e3e5c7",
+  "note": "legaseriea.it Buon compleanno Inter: unico club ad aver disputato tutti i campionati di Serie A, three Champions League in the palmarès",
+  "v": "ok"
+ },
+ "seriea:20": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "4a4ea43468",
+  "note": "legaseriea.it Shevchenko birthday page: stadiums in Novara and Vercelli named for Piola, 1938 World Cup winner",
+  "v": "ok"
+ },
+ "seriea:21": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "d63fce2ec3",
+  "note": "legaseriea.it Giornata storica (May 2026): Higuaín’s 36 in 2015–16 beat Nordahl’s 1949–50 record of 35, later equaled by Immobile, not passed",
+  "v": "ok"
+ },
+ "seriea:22": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "02dfea2fc4",
+  "note": "legaseriea.it Giornata storica: Immobile equaled Higuaín’s 36 for Lazio in 2019–20",
+  "v": "ok"
+ },
+ "seriea:23": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "eac29731af",
+  "note": "legaseriea.it Giornata storica: Nordahl’s 35 for Milan in 1949–50 was the record until Higuaín in 2016",
+  "v": "ok"
+ },
+ "seriea:24": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "50ca3ce447",
+  "note": "legaseriea.it 44 anni fa seconda stella: Baggio, the Divin Codino, retired in 2004 with 205 Serie A goals",
+  "v": "ok"
+ },
+ "seriea:25": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "702ac7d614",
+  "note": "legaseriea.it Del Piero first goal page: 290 goals for Juventus, 188 in Serie A",
+  "v": "ok"
+ },
+ "seriea:26": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "f6e04deba2",
+  "note": "legaseriea.it Buon compleanno Bologna: Ibrahimović 156 Serie A goals for Juventus, Inter and Milan, five scudetti",
+  "v": "ok"
+ },
+ "seriea:27": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "5a26666c7b",
+  "note": "legaseriea.it Sampdoria/Pirlo page: two scudetti with Milan, four more with Juventus, called the Maestro",
+  "v": "ok"
+ },
+ "seriea:28": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "ae36d52604",
+  "note": "legaseriea.it Kaká birthday page: 77 Serie A goals for Milan, Pallone d’Oro 2007",
+  "v": "ok"
+ },
+ "seriea:29": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "a2520fe13f",
+  "note": "legaseriea.it CR7 birthday page: 98 games and 81 Serie A goals in three seasons at Juventus",
+  "v": "ok"
+ },
+ "seriea:3": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "25fc8117c4",
+  "note": "legaseriea.it Inter-Juventus 2025–26 page: Derby d’Italia is Inter vs. Juventus, the phrase coined in 1967 by journalist Gianni Brera",
+  "v": "ok"
+ },
+ "seriea:30": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "43e6b3ebfa",
+  "note": "legaseriea.it src (Feb 1 2026 Accadde oggi): Riva won the classifica marcatori three times with Cagliari, called Rombo di Tuono",
+  "v": "ok"
+ },
+ "seriea:31": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "8ac2889d86",
+  "note": "legaseriea.it src (Oct 13 2026): Di Natale top scorer 2009/10 and 2010/11, sixth all-time with 209 Serie A goals",
+  "v": "ok"
+ },
+ "seriea:32": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "7b26ccd9f5",
+  "note": "legaseriea.it src: stadium Diego Armando Maradona, capacity 54,732",
+  "v": "ok"
+ },
+ "seriea:33": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "a8934faeef",
+  "note": "legaseriea.it src: Mourinho’s Inter 2009/10, first and only Triplete of an Italian club",
+  "v": "ok"
+ },
+ "seriea:34": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "48b5a4b645",
+  "note": "legaseriea.it src (Mar 17 2026): seven scudetti as coach, six with Juventus and one with Inter",
+  "v": "ok"
+ },
+ "seriea:35": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "86bf03244b",
+  "note": "legaseriea.it src (Apr 12 2026): 5 scudetti all with Juventus, won the 2006 World Cup as Italy coach",
+  "v": "ok"
+ },
+ "seriea:36": {
+  "at": "2026-10-17T00:04:03Z",
+  "h": "f798aa473e",
+  "note": "legaseriea.it src (Sep 13 2026 Accadde oggi): 1987 Sacchi debut at Milan, Gullit and Van Basten debut, both score in 3–1 at Pisa",
+  "v": "ok"
+ },
+ "seriea:37": {
+  "at": "2026-10-17T00:04:03Z",
+  "h": "19b09543f8",
+  "note": "legaseriea.it src: 1992 the first of 3 consecutive scudetti for Capello’s Milan",
+  "v": "ok"
+ },
+ "seriea:38": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "c0cf802289",
+  "note": "legaseriea.it src (May 23 2026): 2025 Conte’s Napoli champions for the fourth time",
+  "v": "ok"
+ },
+ "seriea:39": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "1d818bb5b0",
+  "note": "legaseriea.it src (May 3 2026): Inter-Parma 2–0, scudetto 21, title won by Chivu in his first season in A from the start",
+  "v": "ok"
+ },
+ "seriea:4": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "5127936065",
+  "note": "legaseriea.it Inter-Parma 2–0 on May 3, 2026 at San Siro gave Inter scudetto no. 21 (2025–26), Inter palmares https://www.legaseriea.it/team/inter/palmares lists 2025–26",
+  "v": "ok"
+ },
+ "seriea:40": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "8e929ced8e",
+  "note": "legaseriea.it src: Pioli’s Milan 2021/22 champions for the first time in eleven years",
+  "v": "ok"
+ },
+ "seriea:41": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "e8c43eb789",
+  "note": "legaseriea.it src: Como coach Francesc Fabregas Soler, stadium Giuseppe Sinigaglia (checked Oct 2026)",
+  "v": "ok"
+ },
+ "seriea:42": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "8fecbcc06a",
+  "note": "legaseriea.it src: Allianz Stadium, built 2011, capacity 41,507 (checked Oct 2026)",
+  "v": "ok"
+ },
+ "seriea:43": {
+  "at": "2026-10-17T00:04:03Z",
+  "h": "c5e958c96a",
+  "note": "legaseriea.it src and https://en.legaseriea.it/team/lazio/stadium: both clubs list the Olimpico, built 1953, capacity 69,689",
+  "v": "ok"
+ },
+ "seriea:44": {
+  "at": "2026-10-17T00:04:03Z",
+  "h": "d52ca49958",
+  "note": "legaseriea.it src (Aug 23 2026 Accadde oggi): the San Siro stadium is named after Meazza, who won the 1934 and 1938 World Cups and three scudetti with Inter",
+  "v": "ok"
+ },
+ "seriea:45": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "d70bc98d3b",
+  "note": "legaseriea.it src: Renato Dall’Ara, built 1927, capacity 36,532",
+  "v": "ok"
+ },
+ "seriea:46": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "65f6230046",
+  "note": "legaseriea.it src: Artemio Franchi, built 1931, capacity 24,786",
+  "v": "ok"
+ },
+ "seriea:47": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "67d3226d78",
+  "note": "legaseriea.it src: Luigi Ferraris, built 1911, capacity 33,205",
+  "v": "ok"
+ },
+ "seriea:48": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "861a2355db",
+  "note": "legaseriea.it src: New Balance Arena, Bergamo, built 1928, capacity 23,439 (checked Oct 2026)",
+  "v": "ok"
+ },
+ "seriea:49": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "dca602bee5",
+  "note": "legaseriea.it src: the 2026–27 club index lists 20 clubs",
+  "v": "ok"
+ },
+ "seriea:5": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "8f4e597fdc",
+  "note": "en.legaseriea.it Supercup final page: Inter vs. AC Milan is the Derby della Madonnina, also called the Milan derby",
+  "v": "ok"
+ },
+ "seriea:50": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "ad48bb7644",
+  "note": "legaseriea.it src palmares: 36 Serie A titles, first 1904-05 (Inter 21, Milan 19, so still the record)",
+  "v": "ok"
+ },
+ "seriea:51": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "d443d1e5ca",
+  "note": "legaseriea.it https://www.legaseriea.it/serie-a/news/inter-parma-primo-match-point-scudetto: Inter-Parma 2–0, scudetto n. 21",
+  "v": "ok"
+ },
+ "seriea:52": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "3746f9f2c4",
+  "note": "legaseriea.it src palmares: 19 Serie A titles, latest 2021-22",
+  "v": "ok"
+ },
+ "seriea:53": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "507cdba1b9",
+  "note": "legaseriea.it src palmares: 4 Serie A titles, 1986-87 first, latest 2024-25",
+  "v": "ok"
+ },
+ "seriea:54": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "10942e7223",
+  "note": "legaseriea.it src (Sep 29 2026): Piola still the top scorer of single-table Serie A with 274, played for Pro Vercelli, Lazio, Juventus and Novara",
+  "v": "ok"
+ },
+ "seriea:55": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "00b67abc54",
+  "note": "legaseriea.it src (Jan 28 2026): Buffon holds the record of 974 minutes unbeaten in 2015/16",
+  "v": "ok"
+ },
+ "seriea:56": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "d31b581180",
+  "note": "legaseriea.it src (Mar 9 2026): Inter founded 1908, only club to play every Serie A season",
+  "v": "ok"
+ },
+ "seriea:57": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "f7d11cf3c2",
+  "note": "legaseriea.it src (Jan 9 2026): Lazio born on a bench in Piazza della Libertà in 1900 as a running club",
+  "v": "ok"
+ },
+ "seriea:58": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "d6250dec92",
+  "note": "legaseriea.it src (Jun 7 2026): Roma born 1927 from the merger of Alba Roma, Roman and Fortitudo Pro Roma",
+  "v": "ok"
+ },
+ "seriea:59": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "317b833c9f",
+  "note": "legaseriea.it src (Oct 3 2026): Bologna founded 1909, first president Louis Rauch, a Swiss dentist",
+  "v": "ok"
+ },
+ "seriea:6": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "026520b548",
+  "note": "legaseriea.it Tutti i colori parte 2: founder Herbert Kilpin chose red and black for a team of devils",
+  "v": "ok"
+ },
+ "seriea:7": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "cae6dbf342",
+  "note": "legaseriea.it Nel 1987 il Double del Napoli: first scudetto then the Coppa Italia, beating Atalanta in the final (3–0 and 1–0)",
+  "v": "ok"
+ },
+ "seriea:8": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "a2ea4ffc75",
+  "note": "legaseriea.it Lippi birthday page: in 1970 Cagliari beat Bari 2–0 to win their first and only scudetto (1969–70)",
+  "v": "ok"
+ },
+ "seriea:9": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "031928e0cf",
+  "note": "legaseriea.it 35 anni fa lo scudetto della Sampdoria: 1991 scudetto clinched 3–0 over Lecce, goals by Cerezo, Mannini and Vialli",
   "v": "ok"
  },
  "soccer:0": {
