@@ -3699,6 +3699,325 @@
   "h": "70971e5e67",
   "v": "ok"
  },
+ "rules:0": {
+  "at": "2026-10-17T00:00:54Z",
+  "h": "12b420d16d",
+  "note": "Checked against Law 3 (2026/27). Its means line names rules:1’s answer, so the draw keeps the two apart",
+  "v": "ok"
+ },
+ "rules:10": {
+  "at": "2026-10-17T00:00:54Z",
+  "h": "0524c2a6b1",
+  "note": "Checked: new in 2026/27, Law 3.3, the ten seconds run from the board",
+  "v": "ok"
+ },
+ "rules:11": {
+  "at": "2026-10-17T00:00:54Z",
+  "h": "00667504e4",
+  "note": "Checked: Law 15.2 (2026/27)",
+  "v": "ok"
+ },
+ "rules:12": {
+  "at": "2026-10-17T00:00:54Z",
+  "h": "054a327e66",
+  "v": "ok"
+ },
+ "rules:13": {
+  "at": "2026-10-17T00:00:54Z",
+  "h": "d3dedc58f2",
+  "v": "ok"
+ },
+ "rules:14": {
+  "at": "2026-10-17T00:00:54Z",
+  "h": "a77c590b2c",
+  "note": "Checked: temporary dismissal guidelines, 10–15% of playing time",
+  "v": "ok"
+ },
+ "rules:17": {
+  "at": "2026-10-17T00:00:54Z",
+  "h": "46389d3562",
+  "v": "ok"
+ },
+ "rules:18": {
+  "at": "2026-10-17T00:00:54Z",
+  "h": "e215ed8e33",
+  "v": "ok"
+ },
+ "rules:2": {
+  "at": "2026-10-17T00:00:54Z",
+  "h": "f0be2be2a7",
+  "note": "Shares the hook substitutes with rules:5, so the draw keeps them apart",
+  "v": "ok"
+ },
+ "rules:20": {
+  "at": "2026-10-17T00:00:54Z",
+  "h": "bbb5287327",
+  "v": "ok"
+ },
+ "rules:21": {
+  "at": "2026-10-17T00:00:54Z",
+  "h": "5187530ca3",
+  "v": "ok"
+ },
+ "rules:22": {
+  "at": "2026-10-17T00:00:54Z",
+  "h": "7b8d26da1b",
+  "v": "ok"
+ },
+ "rules:23": {
+  "at": "2026-10-17T00:00:54Z",
+  "h": "88221232c9",
+  "v": "ok"
+ },
+ "rules:24": {
+  "at": "2026-10-17T00:00:54Z",
+  "h": "c226d1a07e",
+  "v": "ok"
+ },
+ "rules:25": {
+  "at": "2026-10-17T00:00:54Z",
+  "h": "fac743b5a7",
+  "v": "ok"
+ },
+ "rules:26": {
+  "at": "2026-10-17T00:00:54Z",
+  "h": "7434e61d77",
+  "note": "Checked: Law 12.3 and Law 17.1, corner from the side nearest the keeper. Near-twin of rules:9",
+  "v": "ok"
+ },
+ "rules:27": {
+  "at": "2026-10-17T00:00:54Z",
+  "h": "f51e2ea66d",
+  "v": "ok"
+ },
+ "rules:28": {
+  "at": "2026-10-17T00:00:54Z",
+  "h": "a20888b3b9",
+  "v": "ok"
+ },
+ "rules:29": {
+  "at": "2026-10-17T00:00:54Z",
+  "h": "eaa7725f07",
+  "note": "Close to basics:83 (dog on the field, dropped ball) but a different fact",
+  "v": "ok"
+ },
+ "rules:3": {
+  "at": "2026-10-17T00:00:54Z",
+  "fix": {
+   "ex": "In top leagues, a team gets 3 windows to make subs, plus halftime"
+  },
+  "h": "cb1b053a05",
+  "note": "Fans call these substitution windows, and “chances” reads like scoring chances",
+  "v": "fix"
+ },
+ "rules:30": {
+  "at": "2026-10-17T00:00:54Z",
+  "h": "54ded41f0f",
+  "v": "ok"
+ },
+ "rules:31": {
+  "at": "2026-10-17T00:00:54Z",
+  "h": "a2ea792767",
+  "v": "ok"
+ },
+ "rules:32": {
+  "at": "2026-10-17T00:00:54Z",
+  "h": "6b03549863",
+  "v": "ok"
+ },
+ "rules:33": {
+  "at": "2026-10-17T00:00:54Z",
+  "h": "d2577a877a",
+  "note": "Near-twin of basics:141 (the assistant referee holds the flag). basics:141’s answer is this card’s hook, so they never meet",
+  "v": "ok"
+ },
+ "rules:34": {
+  "at": "2026-10-17T00:00:54Z",
+  "h": "4d7108a0b4",
+  "v": "ok"
+ },
+ "rules:35": {
+  "at": "2026-10-17T00:00:54Z",
+  "h": "7849fce549",
+  "v": "ok"
+ },
+ "rules:36": {
+  "at": "2026-10-17T00:00:54Z",
+  "h": "77c6105fe0",
+  "v": "ok"
+ },
+ "rules:37": {
+  "at": "2026-10-17T00:00:54Z",
+  "h": "98d63364f4",
+  "note": "Still the Law 3.10 wording in 2026/27. The optional ‘Only the captain’ guidelines sit beside it, and basics:156 covers them",
+  "v": "ok"
+ },
+ "rules:39": {
+  "at": "2026-10-17T00:00:54Z",
+  "fix": {
+   "ex": "Diving or faking an injury to fool the referee is called simulation",
+   "hook": "diving"
+  },
+  "h": "1661f1eca2",
+  "note": "Diving is the word fans and kids use, and it makes a better tile than the vague “injury”",
+  "v": "fix"
+ },
+ "rules:4": {
+  "at": "2026-10-17T00:00:54Z",
+  "h": "b3aac2e6cd",
+  "v": "ok"
+ },
+ "rules:40": {
+  "at": "2026-10-17T00:00:54Z",
+  "fix": {
+   "hook": "protesting"
+  },
+  "h": "ba4ba0a321",
+  "note": "“referee” is an empty tile in a rules deck, and it needlessly ties this card to the many basics cards whose answer is referee (basics:20–22, 117–123)",
+  "v": "fix"
+ },
+ "rules:41": {
+  "at": "2026-10-17T00:00:54Z",
+  "h": "47c0af03eb",
+  "v": "ok"
+ },
+ "rules:42": {
+  "at": "2026-10-17T00:00:54Z",
+  "h": "d993d1ce3d",
+  "v": "ok"
+ },
+ "rules:43": {
+  "at": "2026-10-17T00:00:54Z",
+  "h": "5ac0b72743",
+  "v": "ok"
+ },
+ "rules:44": {
+  "at": "2026-10-17T00:00:54Z",
+  "h": "c752ad2d69",
+  "v": "ok"
+ },
+ "rules:45": {
+  "at": "2026-10-17T00:00:54Z",
+  "h": "2bdd35aca6",
+  "v": "ok"
+ },
+ "rules:46": {
+  "at": "2026-10-17T00:00:54Z",
+  "h": "3b274d29ab",
+  "v": "ok"
+ },
+ "rules:47": {
+  "at": "2026-10-17T00:00:54Z",
+  "h": "656e57547d",
+  "note": "Shares the hook boundary with rules:48, a near-twin, so the draw keeps them apart",
+  "v": "ok"
+ },
+ "rules:48": {
+  "at": "2026-10-17T00:00:54Z",
+  "h": "cc7afc0fae",
+  "note": "Near-twin of rules:47",
+  "v": "ok"
+ },
+ "rules:49": {
+  "at": "2026-10-17T00:00:54Z",
+  "h": "bcd8334fc6",
+  "v": "ok"
+ },
+ "rules:5": {
+  "at": "2026-10-17T00:00:54Z",
+  "h": "4e30357077",
+  "v": "ok"
+ },
+ "rules:50": {
+  "at": "2026-10-17T00:00:54Z",
+  "h": "704b423c8f",
+  "v": "ok"
+ },
+ "rules:51": {
+  "at": "2026-10-17T00:00:54Z",
+  "h": "961345dabe",
+  "v": "ok"
+ },
+ "rules:52": {
+  "at": "2026-10-17T00:00:54Z",
+  "h": "d194809e73",
+  "v": "ok"
+ },
+ "rules:53": {
+  "at": "2026-10-17T00:00:54Z",
+  "h": "cd65747b1f",
+  "note": "Same fact as basics:4 (socks must cover the shin guards), even the means line. The draw keeps them apart, but Morg may want only one",
+  "v": "ok"
+ },
+ "rules:56": {
+  "at": "2026-10-17T00:00:54Z",
+  "h": "85add460f5",
+  "v": "ok"
+ },
+ "rules:57": {
+  "at": "2026-10-17T00:00:54Z",
+  "h": "044f8781a3",
+  "v": "ok"
+ },
+ "rules:58": {
+  "at": "2026-10-17T00:00:54Z",
+  "h": "1d97aa745e",
+  "note": "Near-twin of basics:146 and basics:105 (same answer)",
+  "v": "ok"
+ },
+ "rules:59": {
+  "at": "2026-10-17T00:00:54Z",
+  "h": "617bb19b35",
+  "v": "ok"
+ },
+ "rules:60": {
+  "at": "2026-10-17T00:00:54Z",
+  "h": "e66b411d64",
+  "v": "ok"
+ },
+ "rules:61": {
+  "at": "2026-10-17T00:00:54Z",
+  "fix": {
+   "means": "Fans also call it stoppage time"
+  },
+  "h": "d058c7641f",
+  "note": "The old means named the fourth official, which gives away rules:34. Stoppage time is what US fans call it. Near-twin of basics:26 and basics:123",
+  "v": "fix"
+ },
+ "rules:62": {
+  "at": "2026-10-17T00:00:54Z",
+  "h": "204cd20f7d",
+  "note": "Near-twin of basics:25 (same answer). Its means is basics:144’s fact",
+  "v": "ok"
+ },
+ "rules:63": {
+  "at": "2026-10-17T00:00:54Z",
+  "h": "affea3614c",
+  "v": "ok"
+ },
+ "rules:64": {
+  "at": "2026-10-17T00:00:54Z",
+  "h": "e2a2b4b69d",
+  "note": "Same answer as basics:33–35, so they never meet",
+  "v": "ok"
+ },
+ "rules:7": {
+  "at": "2026-10-17T00:00:54Z",
+  "h": "ea0c2a7045",
+  "note": "basics:27 holds “45 minutes” in its sentence, so the draw keeps them apart",
+  "v": "ok"
+ },
+ "rules:8": {
+  "at": "2026-10-17T00:00:54Z",
+  "h": "5421e1ac46",
+  "v": "ok"
+ },
+ "rules:9": {
+  "at": "2026-10-17T00:00:54Z",
+  "h": "110f41264b",
+  "note": "Near-twin of rules:26 (same 8-second Law 12.3). They share the hook keeper, so they never meet",
+  "v": "ok"
+ },
  "seriea:0": {
   "at": "2026-10-17T00:00:12Z",
   "fix": {
