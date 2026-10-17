@@ -7,8 +7,8 @@
     {
       "w": "lob",
       "means": "Soft kick that arcs up high",
-      "ex": "The keeper rushed out, so the striker floated a lob over her head",
-      "hook": "rushed out",
+      "ex": "The midfielder floated a lob over both center backs for the striker to chase",
+      "hook": "center backs",
       "k": "shot",
       "src": "https://www.merriam-webster.com/dictionary/lob",
       "d": 1
@@ -178,7 +178,7 @@
     {
       "w": "halfback",
       "means": "Player right behind the forwards",
-      "ex": "Our halfback lined up right behind the forwards at kickoff",
+      "ex": "In Grandpa’s day, the halfback lined up right behind the forwards",
       "hook": "forwards",
       "k": "role",
       "src": "https://www.merriam-webster.com/dictionary/halfback",
@@ -227,7 +227,7 @@
       "hook": "college",
       "k": "role",
       "src": "https://www.merriam-webster.com/dictionary/scout",
-      "d": 2
+      "d": 1
     },
     {
       "w": "free agent",
@@ -236,12 +236,12 @@
       "hook": "contract",
       "k": "role",
       "src": "https://www.merriam-webster.com/dictionary/free%20agent",
-      "d": 2
+      "d": 1
     },
     {
       "w": "onside",
       "means": "In a legal spot, not offside",
-      "ex": "The flag stayed down because the striker was onside when the pass came",
+      "ex": "The flag stayed down because the striker was onside when the pass was played",
       "hook": "flag",
       "k": "rules",
       "src": "https://www.merriam-webster.com/dictionary/onside",
@@ -376,8 +376,8 @@
     {
       "w": "shutout",
       "means": "Game where one side scores zero",
-      "ex": "The keeper made ten saves and earned her first shutout of the season",
-      "hook": "ten saves",
+      "ex": "The 4–0 win was the team’s third straight shutout",
+      "hook": "4–0 win",
       "k": "score",
       "src": "https://www.merriam-webster.com/dictionary/shutout",
       "d": 1
@@ -439,8 +439,8 @@
     {
       "w": "route one",
       "means": "Long balls up to the striker",
-      "ex": "The coach loved route one: long, high kicks up to the tall striker",
-      "hook": "high kicks",
+      "ex": "The coach loved route one: long balls straight up to the tall striker",
+      "hook": "long balls",
       "k": "lingo",
       "src": "https://www.dictionary.com/browse/route-one",
       "d": 2
@@ -583,7 +583,7 @@
     {
       "w": "whitewash",
       "means": "Keep a team from scoring at all",
-      "ex": "Our defense planned to whitewash the visitors and allow zero goals",
+      "ex": "Our team planned to whitewash the visitors, winning without allowing a goal",
       "hook": "visitors",
       "k": "action",
       "src": "https://www.merriam-webster.com/dictionary/whitewash",
@@ -790,6 +790,14 @@
     [
       "skipper",
       "utility player"
+    ],
+    [
+      "daisy cutter",
+      "back pass"
+    ],
+    [
+      "knockout",
+      "five-a-side"
     ]
   ],
   "cut": [

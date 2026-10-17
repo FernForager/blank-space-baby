@@ -24,7 +24,7 @@
   },
   {
    "w": "volley",
-   "means": "A half volley comes just after a bounce",
+   "means": "Kicked out of the air",
    "ex": "To hit a volley, kick the ball out of the air before it bounces",
    "hook": "bounces",
    "k": "move",
@@ -119,7 +119,7 @@
    "hook": "penalty",
    "k": "move",
    "src": "https://www.dictionary.com/browse/panenka",
-   "d": 3
+   "d": 2
   },
   {
    "w": "keepy-uppy",
@@ -286,7 +286,7 @@
   {
    "w": "target man",
    "means": "Tall forward who wins high balls",
-   "ex": "Every high cross goes to the target man, the tallest one on the team",
+   "ex": "Every high cross is aimed at the target man, the tallest one up front",
    "hook": "high cross",
    "k": "role",
    "src": "https://www.dictionary.com/browse/target-man",
@@ -322,7 +322,7 @@
   {
    "w": "own goal",
    "means": "Goal scored on your own team",
-   "ex": "The defender sneezed while clearing it and scored the first own goal",
+   "ex": "The defender sneezed while clearing it and scored an own goal",
    "hook": "sneezed",
    "k": "score",
    "src": "https://www.merriam-webster.com/dictionary/own%20goal",
@@ -350,7 +350,7 @@
    "w": "assist",
    "means": "Pass that sets up a goal",
    "ex": "The winger did not score, but she got the assist on both goals",
-   "hook": "winger",
+   "hook": "both goals",
    "k": "score",
    "src": "https://www.dictionary.com/browse/assist",
    "d": 1
@@ -358,8 +358,8 @@
   {
    "w": "shoot-out",
    "means": "Tiebreaker of shots at the goal",
-   "ex": "Still tied after extra time, the game was decided by the shoot-out",
-   "hook": "extra time",
+   "ex": "Still tied after extra time, the game was decided in a shoot-out",
+   "hook": "still tied",
    "k": "game",
    "src": "https://www.merriam-webster.com/dictionary/shoot-out",
    "d": 1
@@ -393,7 +393,7 @@
   },
   {
    "w": "stoppage time",
-   "means": "Another name for injury time",
+   "means": "Time added on at the end of a half",
    "ex": "The equalizer came in the fourth minute of stoppage time",
    "hook": "equalizer",
    "k": "game",
@@ -557,6 +557,10 @@
   [
    "sitter",
    "howler"
+  ],
+  [
+   "derby",
+   "friendly"
   ]
  ],
  "cut": [

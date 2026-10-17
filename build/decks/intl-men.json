@@ -157,7 +157,9 @@
       "k": "player",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/pele-three-world-cup-titles-only-player",
       "d": 2,
-      "current": true
+      "current": true,
+      "out": true,
+      "out_why": "Same fact as legends:0, which keeps it (cross-deck twins, soccer expert)"
     },
     {
       "w": "Cristiano Ronaldo",
@@ -176,7 +178,9 @@
       "hook": "1998 final",
       "k": "player",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/world-cup-champions-1982-2026-italy-argentina-germany-brazil-france-spain",
-      "d": 2
+      "d": 2,
+      "out": true,
+      "out_why": "Same fact as legends:4, which keeps it (cross-deck twins, soccer expert)"
     },
     {
       "w": "Mario Götze",
@@ -194,7 +198,9 @@
       "hook": "Spain",
       "k": "player",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/world-cup-champions-1982-2026-italy-argentina-germany-brazil-france-spain",
-      "d": 2
+      "d": 2,
+      "out": true,
+      "out_why": "Same fact as legends:5, which keeps it (cross-deck twins, soccer expert)"
     },
     {
       "w": "Diego Maradona",
@@ -212,7 +218,9 @@
       "hook": "Croatia",
       "k": "player",
       "src": "https://www.fifa.com/en/articles/100-great-world-cup-moments-qatar-2022-13-modric-croatia-2018-golden-ball",
-      "d": 2
+      "d": 2,
+      "out": true,
+      "out_why": "Same fact as legends:12, which keeps it (cross-deck twins, soccer expert)"
     },
     {
       "w": "Tim Howard",
@@ -248,7 +256,9 @@
       "hook": "famous turn",
       "k": "player",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/netherlands-team-profile-history",
-      "d": 2
+      "d": 2,
+      "out": true,
+      "out_why": "Same fact as legends:6, which keeps it (cross-deck twins, soccer expert)"
     },
     {
       "w": "Marco van Basten",

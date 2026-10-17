@@ -15,11 +15,11 @@
   },
   {
    "w": "Bayer Leverkusen",
-   "means": "Coached by Xabi Alonso",
-   "ex": "Bayer Leverkusen won the 2023–24 title without losing a game",
-   "hook": "2023–24",
+   "means": "The first team to go a season unbeaten",
+   "ex": "Bayer Leverkusen beat Augsburg on the last day to finish 2023–24 unbeaten",
+   "hook": "Augsburg",
    "k": "club",
-   "src": "https://www.bundesliga.com/en/faq/10-things-on-the-bundesliga/bundesliga-records-goals-titles-attendances-for-players-and-clubs-10555",
+   "src": "https://www.bundesliga.com/en/bundesliga/news/bayern-leverkusen-augsburg-preview-live-blog-report-xabi-alonso-wirtz-unbeaten-27365",
    "d": 2
   },
   {
@@ -43,8 +43,8 @@
   {
    "w": "Wolfsburg",
    "means": "Their one and only league title",
-   "ex": "Wolfsburg won the Bundesliga for the first time in 2008–09",
-   "hook": "Bundesliga",
+   "ex": "Felix Magath coached Wolfsburg to their first Bundesliga title, in 2008–09",
+   "hook": "Magath",
    "k": "club",
    "src": "https://www.bundesliga.com/en/bundesliga/news/german-champions-in-the-bundesliga-bayern-munich-borussia-dortmund-24221",
    "d": 3
@@ -61,8 +61,8 @@
   {
    "w": "Hamburg",
    "means": "They returned to the top flight in 2025",
-   "ex": "Hamburg played every Bundesliga season from 1963 until they went down in 2018",
-   "hook": "Bundesliga",
+   "ex": "Known as the Dino, Hamburg never left the Bundesliga until 2018",
+   "hook": "Dino",
    "k": "club",
    "src": "https://www.bundesliga.com/en/faq/10-things-on-the-bundesliga/all-clubs-that-have-played-in-germany-s-top-flight-bayern-munich-dortmund-24106",
    "d": 3
@@ -79,8 +79,8 @@
   {
    "w": "VfB Stuttgart",
    "means": "Also champions in 1984 and 1992",
-   "ex": "VfB Stuttgart won their third Bundesliga title in 2006–07",
-   "hook": "Bundesliga",
+   "ex": "VfB Stuttgart beat Schalke to the 2006–07 title by one point",
+   "hook": "Schalke",
    "k": "club",
    "src": "https://www.bundesliga.com/en/bundesliga/news/german-champions-in-the-bundesliga-bayern-munich-borussia-dortmund-24221",
    "d": 3
@@ -96,11 +96,11 @@
   },
   {
    "w": "Bayern Munich",
-   "means": "Their 13th title in 14 years",
-   "ex": "Bayern Munich won the 2025–26 title with four games to spare",
-   "hook": "2025–26",
+   "means": "The old record stood for 54 years",
+   "ex": "Bayern Munich set a Bundesliga record with 122 goals in 2025–26",
+   "hook": "122 goals",
    "k": "club",
-   "src": "https://www.bundesliga.com/en/bundesliga/news/bayern-munich-vfb-stuttgart-match-report-highlights-matchday-30-champions-davies-kane-36979",
+   "src": "https://www.bundesliga.com/en/bundesliga/news/bayern-munich-season-in-numbers-record-champions-36970",
    "d": 2,
    "current": true
   },
@@ -188,9 +188,9 @@
   },
   {
    "w": "Timo Konietzka",
-   "means": "After 58 seconds, for Dortmund",
-   "ex": "Timo Konietzka scored the first Bundesliga goal, in 1963",
-   "hook": "Bundesliga",
+   "means": "For Dortmund against Werder Bremen",
+   "ex": "Timo Konietzka scored the first Bundesliga goal after just 58 seconds",
+   "hook": "58 seconds",
    "k": "player",
    "src": "https://www.bundesliga.com/en/bundesliga/news/the-history-of-the-bundesliga-explained-19385",
    "d": 3
@@ -199,16 +199,16 @@
    "w": "Franz Beckenbauer",
    "means": "Four titles as a Bayern player",
    "ex": "Bayern retired the No. 5 shirt in honor of Franz Beckenbauer",
-   "hook": "Bayern",
+   "hook": "No. 5",
    "k": "player",
    "src": "https://www.bundesliga.com/en/bundesliga/news/bayern-munich-retire-no-5-shirt-in-honour-of-club-legend-franz-beckenbauer-30015",
    "d": 2
   },
   {
    "w": "Udo Lattek",
-   "means": "Six with Bayern, two with Gladbach",
-   "ex": "Udo Lattek won a record eight Bundesliga titles as a coach",
-   "hook": "Bundesliga",
+   "means": "Six of them with Bayern",
+   "ex": "Udo Lattek won a record eight Bundesliga titles, with Bayern and Gladbach",
+   "hook": "Gladbach",
    "k": "coach",
    "src": "https://www.bundesliga.com/en/faq/10-things-on-the-bundesliga/bundesliga-records-goals-titles-attendances-for-players-and-clubs-10555",
    "d": 2
@@ -242,9 +242,9 @@
   },
   {
    "w": "Julian Nagelsmann",
-   "means": "He was 28 at Hoffenheim",
-   "ex": "Julian Nagelsmann is the youngest permanent Bundesliga coach",
-   "hook": "youngest",
+   "means": "The league’s youngest permanent coach",
+   "ex": "Julian Nagelsmann was just 28 when he took charge of Hoffenheim",
+   "hook": "Hoffenheim",
    "k": "coach",
    "src": "https://www.bundesliga.com/en/faq/10-things-on-the-bundesliga/bundesliga-records-goals-titles-attendances-for-players-and-clubs-10555",
    "d": 2
@@ -262,8 +262,8 @@
   {
    "w": "Ottmar Hitzfeld",
    "means": "Second only to Udo Lattek’s eight",
-   "ex": "Ottmar Hitzfeld won seven Bundesliga titles as a coach",
-   "hook": "Bundesliga",
+   "ex": "Ottmar Hitzfeld won seven Bundesliga titles, with Dortmund and Bayern",
+   "hook": "Dortmund",
    "k": "coach",
    "src": "https://www.bundesliga.com/en/bundesliga/news/german-champions-in-the-bundesliga-bayern-munich-borussia-dortmund-24221",
    "d": 2
@@ -352,7 +352,9 @@
    "hook": "Gladbach",
    "k": "nickname",
    "src": "https://www.bundesliga.com/en/bundesliga/news/clubs-with-animal-names-germany-eagles-wolves-goats-foals-lions-25000",
-   "d": 3
+   "d": 3,
+   "out": true,
+   "out_why": "Same fact as nicknames:16, which keeps it (cross-deck twins, soccer expert)"
   },
   {
    "w": "Eagles",
@@ -379,7 +381,9 @@
    "hook": "Duisburg",
    "k": "nickname",
    "src": "https://www.bundesliga.com/en/bundesliga/news/clubs-with-animal-names-germany-eagles-wolves-goats-foals-lions-25000",
-   "d": 3
+   "d": 3,
+   "out": true,
+   "out_why": "Same fact as nicknames:17, which keeps it (cross-deck twins, soccer expert)"
   },
   {
    "w": "Werkself",
@@ -501,8 +505,8 @@
   {
    "w": "1963",
    "means": "On August 24, with 16 clubs",
-   "ex": "The first Bundesliga season kicked off in August 1963",
-   "hook": "Bundesliga",
+   "ex": "The Bundesliga’s first season kicked off in August 1963",
+   "hook": "first season",
    "k": "year",
    "src": "https://www.bundesliga.com/en/bundesliga/news/the-history-of-the-bundesliga-explained-19385",
    "d": 2
@@ -592,8 +596,8 @@
   {
    "w": "16",
    "means": "It grew to 18 clubs in 1965–66",
-   "ex": "The first Bundesliga season had 16 clubs",
-   "hook": "Bundesliga",
+   "ex": "The Bundesliga’s first season had 16 clubs",
+   "hook": "first season",
    "k": "number",
    "src": "https://www.bundesliga.com/en/bundesliga/news/the-history-of-the-bundesliga-explained-19385",
    "d": 2

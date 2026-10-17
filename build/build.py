@@ -106,8 +106,8 @@ def item_problems(level, items, clash, it, hooks=True):
     if len(mn) > 40: bad.append(tag + ('meaning over 40 characters', mn))
     if len(w) > 22: bad.append(tag + ('answer over 22 characters',))
     if hooks: bad += [tag + (p, it.get('hook')) for p in hook_problems(it)]
-    same = [x for x in items if x is not it and x.get('k', 'word') == it['k'] and not clash(x['w'], w)]
-    if not any(not clash(x['w'], y['w']) for x in same for y in same if x is not y):
+    same = [x for x in items if x is not it and not x.get('out') and x.get('k', 'word') == it['k'] and not clash(x['w'], w)]   # cut cards are never offered
+    if not it.get('out') and not any(not clash(x['w'], y['w']) for x in same for y in same if x is not y):
         bad.append(tag + ('not enough same-kind wrong answers',))
     return bad
 

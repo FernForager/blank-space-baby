@@ -35,7 +35,7 @@
   {
    "w": "slay",
    "means": "Do amazingly well",
-   "ex": "The striker continues to slay on every free kick",
+   "ex": "The striker continues to slay, scoring on every free kick",
    "hook": "free kick",
    "src": "https://www.merriam-webster.com/dictionary/slay",
    "d": 1
@@ -250,7 +250,7 @@
   },
   {
    "w": "twin",
-   "means": "Close friend, your double",
+   "means": "A close friend with your style",
    "ex": "Dad said “Hi, twin” when Grandpa wore the same team scarf",
    "hook": "scarf",
    "src": "https://www.merriam-webster.com/slang/twin",
@@ -1368,6 +1368,78 @@
   [
    "crine",
    "cringe"
+  ],
+  [
+   "rent-free",
+   "no cap"
+  ],
+  [
+   "rent-free",
+   "low-key"
+  ],
+  [
+   "rent-free",
+   "high-key"
+  ],
+  [
+   "rent-free",
+   "lowkenuinely"
+  ],
+  [
+   "rent-free",
+   "iykyk"
+  ],
+  [
+   "smol",
+   "fire"
+  ],
+  [
+   "smol",
+   "goated"
+  ],
+  [
+   "smol",
+   "peak"
+  ],
+  [
+   "smol",
+   "lit"
+  ],
+  [
+   "ghost",
+   "rage-bait"
+  ],
+  [
+   "mother",
+   "chalked"
+  ],
+  [
+   "gas",
+   "chalked"
+  ],
+  [
+   "gas",
+   "cottagecore"
+  ],
+  [
+   "Mary Sue",
+   "menace"
+  ],
+  [
+   "sleep on",
+   "rage-bait"
+  ],
+  [
+   "whimsy",
+   "peak"
+  ],
+  [
+   "chalked",
+   "AFK"
+  ],
+  [
+   "chalked",
+   "mid"
   ]
  ],
  "deck": "Gen Alpha",

@@ -592,6 +592,26 @@
       "k": "meaning",
       "src": "https://www.bundesliga.com/en/bundesliga/news/werder-bremen-bundesliga-club-by-club-historical-guide-ozil-pizarro-rehhagel-24116",
       "d": 2
+    },
+    {
+      "w": "Toffees",
+      "means": "Began as St Domingo’s in 1878",
+      "ex": "Everton are nicknamed the Toffees",
+      "hook": "Everton",
+      "k": "nickname",
+      "src": "https://www.premierleague.com/en/news/4592046/what-is-the-history-behind-every-premier-league-clubs-name",
+      "d": 2,
+      "moved_from": "epl:34"
+    },
+    {
+      "w": "Magpies",
+      "means": "They play in black-and-white stripes",
+      "ex": "Newcastle United are nicknamed the Magpies",
+      "hook": "Newcastle",
+      "k": "nickname",
+      "src": "https://www.premierleague.com/en/news/4489927/woltemade-own-goal-earns-sunderland-tyne-wear-derby-win",
+      "d": 2,
+      "moved_from": "epl:35"
     }
   ],
   "groups": [

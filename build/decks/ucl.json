@@ -87,11 +87,11 @@
   },
   {
    "w": "Porto",
-   "means": "They beat Monaco in the final",
-   "ex": "In 2004, Porto beat the odds to become champions of Europe",
-   "hook": "Europe",
+   "means": "Their second European title, after 1987",
+   "ex": "In 2004, Porto beat Monaco to become champions of Europe",
+   "hook": "Monaco",
    "k": "club",
-   "src": "https://www.uefa.com/uefachampionsleague/history/seasons/2003/",
+   "src": "https://www.uefa.com/uefachampionsleague/news/019d-0e6ae5999141-82ce41064ec4-1000--porto-perform-to-perfection/",
    "d": 2
   },
   {
@@ -132,9 +132,9 @@
   },
   {
    "w": "Paris Saint-Germain",
-   "means": "They won it again in 2026",
-   "ex": "In 2025, Paris Saint-Germain became first-time European champions",
-   "hook": "first-time",
+   "means": "Their first European title",
+   "ex": "Désiré Doué scored twice as Paris Saint-Germain won the 2025 final",
+   "hook": "Doué",
    "k": "club",
    "src": "https://www.uefa.com/uefachampionsleague/history/seasons/2025/",
    "d": 2
@@ -280,8 +280,8 @@
   {
    "w": "Luis Enrique",
    "means": "He has three titles as a coach",
-   "ex": "Luis Enrique coached PSG to back-to-back titles in 2025 and 2026",
-   "hook": "PSG",
+   "ex": "Luis Enrique coached Paris Saint-Germain to back-to-back titles in 2025 and 2026",
+   "hook": "Paris",
    "k": "coach",
    "src": "https://www.uefa.com/uefachampionsleague/news/0252-0e98c715bb79-dea77f56e2bd-1000--final-records-and-statistics/",
    "d": 2
@@ -297,11 +297,11 @@
   },
   {
    "w": "José Mourinho",
-   "means": "He won it again with Inter in 2010",
+   "means": "Porto beat Monaco 3–0 in the final",
    "ex": "José Mourinho coached Porto to the title in 2004",
    "hook": "Porto",
    "k": "coach",
-   "src": "https://www.uefa.com/uefachampionsleague/history/seasons/2003/",
+   "src": "https://www.uefa.com/uefachampionsleague/news/019d-0e6ae5999141-82ce41064ec4-1000--porto-perform-to-perfection/",
    "d": 2
   },
   {
@@ -369,11 +369,11 @@
   },
   {
    "w": "Glasgow",
-   "means": "Zidane scored a famous winner",
+   "means": "At Hampden Park",
    "ex": "Real Madrid beat Bayer Leverkusen in Glasgow in 2002",
    "hook": "Leverkusen",
    "k": "city",
-   "src": "https://www.uefa.com/uefachampionsleague/history/seasons/2001/",
+   "src": "https://www.uefa.com/uefachampionsleague/match/69489--leverkusen-vs-real-madrid/",
    "d": 3
   },
   {
@@ -387,11 +387,11 @@
   },
   {
    "w": "Wembley",
-   "means": "Real Madrid’s 15th European title",
+   "means": "Carvajal and Vinícius Júnior scored",
    "ex": "Real Madrid beat Borussia Dortmund at Wembley in 2024",
    "hook": "Dortmund",
    "k": "venue",
-   "src": "https://www.uefa.com/uefachampionsleague/history/seasons/2024/",
+   "src": "https://www.uefa.com/uefachampionsleague/news/028e-1b07e18d875a-ba78e4b9d9fc-1000--real-madrid-win-champions-league-carvajal-and-vinicius-jun/",
    "d": 2
   },
   {
@@ -415,7 +415,7 @@
   {
    "w": "Craven Cottage",
    "means": "Lyon beat Turbine Potsdam 2–0",
-   "ex": "Lyon won their first women’s title at Craven Cottage in 2011",
+   "ex": "Lyon won their first women’s European title at Craven Cottage in 2011",
    "hook": "Lyon",
    "k": "venue",
    "src": "https://www.uefa.com/womenschampionsleague/news/0250-0c50f8c5a638-5677bdc4dec5-1000--uefa-women-s-champions-league-history/",
@@ -445,7 +445,7 @@
   {
    "w": "Barcelona",
    "means": "They won it in 2026, beating OL Lyonnes",
-   "ex": "Barcelona reached a sixth straight women’s final in 2026",
+   "ex": "Barcelona reached a sixth straight Women’s Champions League final in 2026",
    "hook": "sixth",
    "k": "wclub",
    "src": "https://www.uefa.com/womenschampionsleague/news/0250-0c50f8c5a638-5677bdc4dec5-1000--uefa-women-s-champions-league-history/",
@@ -465,8 +465,8 @@
   {
    "w": "Lyon",
    "means": "The club is now called OL Lyonnes",
-   "ex": "Lyon won five women’s titles in a row from 2016 to 2020",
-   "hook": "in a row",
+   "ex": "Wendie Renard’s Lyon won five straight women’s European titles from 2016 to 2020",
+   "hook": "Renard",
    "k": "wclub",
    "src": "https://www.uefa.com/womenschampionsleague/news/0250-0c50f8c5a638-5677bdc4dec5-1000--uefa-women-s-champions-league-history/",
    "d": 2,
@@ -475,7 +475,7 @@
   {
    "w": "Frankfurt",
    "means": "They also won the first final, in 2002",
-   "ex": "In 2008, Frankfurt became the first three-time women’s champions",
+   "ex": "In 2008, Frankfurt became the first three-time women’s European champions",
    "hook": "three-time",
    "k": "wclub",
    "src": "https://www.uefa.com/womenschampionsleague/news/0250-0c50f8c5a638-5677bdc4dec5-1000--uefa-women-s-champions-league-history/",
@@ -495,7 +495,7 @@
   {
    "w": "Wolfsburg",
    "means": "They beat Lyon, then Tyresö",
-   "ex": "Wolfsburg won back-to-back women’s titles in 2013 and 2014",
+   "ex": "Wolfsburg won back-to-back women’s European titles in 2013 and 2014",
    "hook": "back-to-back",
    "k": "wclub",
    "src": "https://www.uefa.com/womenschampionsleague/news/0250-0c50f8c5a638-5677bdc4dec5-1000--uefa-women-s-champions-league-history/",
@@ -505,7 +505,7 @@
   {
    "w": "Umeå",
    "means": "Their finals had two legs back then",
-   "ex": "Umeå won the women’s title in 2003, then again in 2004 after signing Marta",
+   "ex": "Umeå were European champions in 2003, then again in 2004 after signing Marta",
    "hook": "Marta",
    "k": "wclub",
    "src": "https://www.uefa.com/womenschampionsleague/news/0250-0c50f8c5a638-5677bdc4dec5-1000--uefa-women-s-champions-league-history/",
@@ -550,7 +550,9 @@
    "k": "count",
    "src": "https://www.uefa.com/uefachampionsleague/history/",
    "d": 1,
-   "current": true
+   "current": true,
+   "out": true,
+   "out_why": "Plays as a giveaway: 141 against 5, 6, 7, 8 and 15 (title counts) needs no knowledge (soccer expert)"
   },
   {
    "w": "8",
@@ -575,7 +577,7 @@
   {
    "w": "5–0",
    "means": "The biggest winning margin in a final",
-   "ex": "Inter lost the 2025 final to PSG by a record 5–0",
+   "ex": "Inter lost the 2025 final to Paris Saint-Germain by a record 5–0",
    "hook": "2025 final",
    "k": "score",
    "src": "https://www.uefa.com/uefachampionsleague/news/0252-0e98c715bb79-dea77f56e2bd-1000--final-records-and-statistics/",
