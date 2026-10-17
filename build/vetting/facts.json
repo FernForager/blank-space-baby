@@ -4099,6 +4099,363 @@
   "note": "MW penalty area shows the box in front of each goal but not the keeper’s hands. dictionary.com penalty-area (Collins British) says it is the area within which the goalkeeper may handle the ball, so that page supports both sentence and means",
   "v": "fix"
  },
+ "mls:0": {
+  "at": "2026-10-17T00:11:44Z",
+  "h": "496dc2ec22",
+  "note": "src: Galaxy’s sixth MLS Cup in 2024, most in league history, two more than D.C. United (4). MLS Cup 2025 went to Miami and MLS Cup 2026 is not yet played, so still true today",
+  "v": "ok"
+ },
+ "mls:1": {
+  "at": "2026-10-17T00:11:44Z",
+  "h": "d2c31fee3c",
+  "note": "src: Miami beat Vancouver 3–1, club’s first ever MLS Cup, Messi named MLS Cup MVP",
+  "v": "ok"
+ },
+ "mls:10": {
+  "at": "2026-10-17T00:11:44Z",
+  "h": "ecbd714ce2",
+  "note": "src Shield list: FC Cincinnati 2023, their only Shield",
+  "v": "ok"
+ },
+ "mls:11": {
+  "at": "2026-10-17T00:11:51Z",
+  "h": "e77dc1d1b2",
+  "note": "src Shield list: New York Red Bulls 2013, 2015, 2018. mlssoccer.com club page https://www.mlssoccer.com/clubs/red-bull-new-york/ names the club Red Bull New York today",
+  "v": "ok"
+ },
+ "mls:12": {
+  "at": "2026-10-17T00:11:51Z",
+  "h": "5881ed9715",
+  "note": "src: Chicago Fire won an MLS Cup and US Open Cup double in their first season, 1998",
+  "v": "ok"
+ },
+ "mls:13": {
+  "at": "2026-10-17T00:11:44Z",
+  "h": "ef5f66e4ff",
+  "note": "src (MLS Cup winners): 2015 Portland 2, Columbus 1, MVP Diego Valeri",
+  "v": "ok"
+ },
+ "mls:14": {
+  "at": "2026-10-17T00:11:44Z",
+  "h": "3cbbfbfbf6",
+  "note": "src: Messi first player in league history to win back-to-back MVP (2024, 2025) with Inter Miami",
+  "v": "ok"
+ },
+ "mls:15": {
+  "at": "2026-10-17T00:11:44Z",
+  "h": "0a19e6d643",
+  "note": "src: Wondolowski passed Donovan in 2019 with the only four-goal game of his career that day",
+  "v": "ok"
+ },
+ "mls:17": {
+  "at": "2026-10-17T00:11:44Z",
+  "h": "1ab5edbaa6",
+  "note": "src (MLS Cup winners): 2018 MVP Josef Martinez, Atlanta 2, Portland 0",
+  "v": "ok"
+ },
+ "mls:18": {
+  "at": "2026-10-17T00:11:44Z",
+  "h": "91b85e1556",
+  "note": "src: MVP award named after Donovan, he won the league MVP in 2009",
+  "v": "ok"
+ },
+ "mls:19": {
+  "at": "2026-10-17T00:11:44Z",
+  "h": "ba25719744",
+  "note": "https://www.mlssoccer.com/players/david-beckham/ : arrived via the Designated Player rule, known as “The Beckham Rule,” signed by the Galaxy in 2007",
+  "v": "ok"
+ },
+ "mls:2": {
+  "at": "2026-10-17T00:11:44Z",
+  "h": "ec1835c5b5",
+  "note": "src (MLS Cup winners): 2016 Sounders 0, Toronto 0, Sounders 5–4 pen, at BMO Field, no earlier Sounders title in the list",
+  "v": "ok"
+ },
+ "mls:20": {
+  "at": "2026-10-17T00:11:44Z",
+  "h": "31c0990991",
+  "note": "src: Bale’s 128th-minute header tied it, LAFC won the shootout",
+  "v": "ok"
+ },
+ "mls:21": {
+  "at": "2026-10-17T00:11:44Z",
+  "h": "6e6d4a4759",
+  "note": "src: Wynalda’s 87th-minute goal won it 1–0 for the San Jose Clash over D.C. United in the first MLS game",
+  "v": "ok"
+ },
+ "mls:22": {
+  "at": "2026-10-17T00:11:44Z",
+  "h": "7832d435d0",
+  "note": "src (MLS Cup winners): 2016 MVP Stefan Frei, Sounders won 5–4 on penalties",
+  "v": "ok"
+ },
+ "mls:23": {
+  "at": "2026-10-17T00:11:44Z",
+  "h": "e525ea371d",
+  "note": "src (Sept 27, 2026): Morris passed Raúl Ruidíaz for most regular-season goals in Sounders history, after already breaking his all-competitions record in 2025. Current today",
+  "v": "ok"
+ },
+ "mls:24": {
+  "at": "2026-10-17T00:11:51Z",
+  "h": "caaa64f80b",
+  "note": "https://www.mlssoccer.com/news/inter-miami-cf-forward-lionel-messi-named-2025-landon-donovan-mls-most-valuable-player-for-second-consecutive-season : Messi the second to win it twice, joining Preki (1997 and 2003)",
+  "v": "ok"
+ },
+ "mls:25": {
+  "at": "2026-10-17T00:11:44Z",
+  "h": "674813eb9d",
+  "note": "src: five MLS Cups and four Supporters’ Shields. No MLS Cup won since (2024 Vanney, 2025 Mascherano), 2026 not yet played",
+  "v": "ok"
+ },
+ "mls:26": {
+  "at": "2026-10-17T00:11:44Z",
+  "h": "9df3ff09ec",
+  "note": "src: appointed in the summer of 2016, two MLS Cup titles (2016, ’19)",
+  "v": "ok"
+ },
+ "mls:27": {
+  "at": "2026-10-17T00:11:44Z",
+  "fix": {
+   "src": "https://www.mlssoccer.com/news/mls-names-coach-year-award-after-sigi-schmid"
+  },
+  "h": "79a7d0684a",
+  "note": "src (Carnell 2025 award) shows the award’s name but not Schmid’s own wins. https://www.mlssoccer.com/news/mls-names-coach-year-award-after-sigi-schmid shows both the naming and that Schmid won it in 1999 and 2008",
+  "v": "fix"
+ },
+ "mls:28": {
+  "at": "2026-10-17T00:11:44Z",
+  "h": "82811a87d3",
+  "note": "src: Vanney won with Toronto FC in 2017 and the Galaxy in 2024, fourth coach to win with two clubs",
+  "v": "ok"
+ },
+ "mls:29": {
+  "at": "2026-10-17T00:11:44Z",
+  "h": "ddc42179b9",
+  "note": "https://www.mlssoccer.com/news/inter-miami-cf-win-2025-mls-cup-presented-by-audi : Miami beat Vancouver 3–1, Mascherano won it in his first year as head coach",
+  "v": "ok"
+ },
+ "mls:3": {
+  "at": "2026-10-17T00:11:51Z",
+  "h": "38ca201f6c",
+  "note": "src: first domestic treble in MLS history, MLS Cup, Supporters’ Shield and 2017 Canadian Championship",
+  "v": "ok"
+ },
+ "mls:30": {
+  "at": "2026-10-17T00:11:44Z",
+  "h": "e87cc2dce0",
+  "note": "https://www.mlssoccer.com/news/los-angeles-football-club-win-first-mls-cup-in-club-history-defeating-the-philad : Cherundolo first-year head coach, LAFC’s first MLS Cup",
+  "v": "ok"
+ },
+ "mls:31": {
+  "at": "2026-10-17T00:11:44Z",
+  "h": "18278f8460",
+  "note": "src shows Nancy won MLS Cup 2023 in his debut season with Columbus. No wrong answer coached Columbus in 2023",
+  "v": "ok"
+ },
+ "mls:32": {
+  "at": "2026-10-17T00:11:44Z",
+  "h": "134f9f14f9",
+  "note": "src shows 68,741 at Lumen Field for the 2022 CCL final. Still home today: stats-api.mlssoccer.com 2026 regular-season schedule (loaded by mlssoccer.com club schedule pages) lists Seattle home games at Lumen Field",
+  "v": "ok"
+ },
+ "mls:33": {
+  "at": "2026-10-17T00:11:44Z",
+  "h": "c6dfe4b16e",
+  "note": "src timeline: BMO Field opened April 2007, TFC’s only home. Still home today per stats-api.mlssoccer.com 2026 regular-season schedule (loaded by mlssoccer.com club schedule pages)",
+  "v": "ok"
+ },
+ "mls:34": {
+  "at": "2026-10-17T00:11:44Z",
+  "h": "20dc017211",
+  "note": "src: NYCFC won MLS Cup 2021 at Providence Park, first MLS Cup hosted by the Timbers. Still home today per stats-api.mlssoccer.com 2026 regular-season schedule (loaded by mlssoccer.com club schedule pages)",
+  "v": "ok"
+ },
+ "mls:35": {
+  "at": "2026-10-17T00:11:51Z",
+  "h": "c90459c165",
+  "note": "src timeline: Historic Crew Stadium, opened May 1999, the league’s first soccer-specific stadium. MLS Cup 2001 at Crew Stadium is on https://www.mlssoccer.com/news/mls-cup-winners",
+  "v": "ok"
+ },
+ "mls:36": {
+  "at": "2026-10-17T00:11:44Z",
+  "h": "8ca9d5dbde",
+  "note": "src: April 6, 1996 at Spartan Stadium, San Jose, sellout crowd of 31,683",
+  "v": "ok"
+ },
+ "mls:37": {
+  "at": "2026-10-17T00:11:44Z",
+  "h": "2a4e36c55b",
+  "note": "src: MLS Cup 1998 Chicago Fire 2, D.C. United 0, Rose Bowl (Pasadena)",
+  "v": "ok"
+ },
+ "mls:38": {
+  "at": "2026-10-17T00:11:44Z",
+  "h": "dc1d558669",
+  "note": "src: Inter Miami beat Vancouver 3–1 at Chase Stadium, sold out, attendance 21,550. Historical, so their 2026 move to Nu Stadium does not affect it",
+  "v": "ok"
+ },
+ "mls:39": {
+  "at": "2026-10-17T00:11:44Z",
+  "h": "fb3676e2f1",
+  "note": "src: begins play in 2025 at Snapdragon Stadium, the 35,000-seat venue. Still home today per stats-api.mlssoccer.com 2026 regular-season schedule (loaded by mlssoccer.com club schedule pages)",
+  "v": "ok"
+ },
+ "mls:4": {
+  "at": "2026-10-17T00:11:44Z",
+  "h": "0a9a68046a",
+  "note": "src (MLS Cup winners): 2018 Atlanta United 2, Portland 0 at Mercedes-Benz Stadium in Atlanta, MVP Josef Martinez",
+  "v": "ok"
+ },
+ "mls:40": {
+  "at": "2026-10-17T00:11:44Z",
+  "h": "1b817010a7",
+  "note": "src timeline: Allianz Field opened April 2019, Minnesota United’s home. Still home today per stats-api.mlssoccer.com 2026 regular-season schedule (loaded by mlssoccer.com club schedule pages)",
+  "v": "ok"
+ },
+ "mls:41": {
+  "at": "2026-10-17T00:11:44Z",
+  "h": "890bddd3be",
+  "note": "src timeline: Audi Field opened July 2018, D.C. United’s home. Still home today per stats-api.mlssoccer.com 2026 regular-season schedule (loaded by mlssoccer.com club schedule pages)",
+  "v": "ok"
+ },
+ "mls:42": {
+  "at": "2026-10-17T00:11:44Z",
+  "h": "228fd8bf91",
+  "note": "src: first MLS game April 6, 1996, San Jose Clash won 1–0 over D.C. United",
+  "v": "ok"
+ },
+ "mls:43": {
+  "at": "2026-10-17T00:11:44Z",
+  "h": "9856fa9f31",
+  "note": "src: 2009 Seattle Sounders (15 teams)",
+  "v": "ok"
+ },
+ "mls:44": {
+  "at": "2026-10-17T00:11:44Z",
+  "h": "03471ce481",
+  "note": "src: 2007 Toronto FC, MLS ventured into Canada for the first time",
+  "v": "ok"
+ },
+ "mls:45": {
+  "at": "2026-10-17T00:11:44Z",
+  "h": "d7dacf9f0b",
+  "note": "src: MLS awarded its 30th team to San Diego, to begin play in 2025. San Diego FC appear in 2025 coverage (Shield page) and the 2026 schedule",
+  "v": "ok"
+ },
+ "mls:46": {
+  "at": "2026-10-17T00:11:44Z",
+  "h": "3a03b7b882",
+  "note": "src: Inter Miami’s first-ever trophy, Leagues Cup 2023, beat Nashville 10–9 on penalties after 1–1",
+  "v": "ok"
+ },
+ "mls:47": {
+  "at": "2026-10-17T00:11:44Z",
+  "h": "916258b649",
+  "note": "src: 2017 Atlanta United FC and Minnesota United FC (22 teams)",
+  "v": "ok"
+ },
+ "mls:48": {
+  "at": "2026-10-17T00:11:44Z",
+  "h": "3745d47c8a",
+  "note": "src: 2011 Portland Timbers and Vancouver Whitecaps (18 teams)",
+  "v": "ok"
+ },
+ "mls:49": {
+  "at": "2026-10-17T00:12:00Z",
+  "h": "04e7647785",
+  "note": "src clubs page lists 30 clubs today, three in Canada (CF Montréal, Toronto FC, Vancouver). 30th club: https://www.mlssoccer.com/news/major-league-soccer-awards-expansion-team-to-san-diego",
+  "v": "ok"
+ },
+ "mls:5": {
+  "at": "2026-10-17T00:11:44Z",
+  "h": "395c404b4c",
+  "note": "src: NYCFC beat Portland in a shootout for their first-ever MLS Cup",
+  "v": "ok"
+ },
+ "mls:50": {
+  "at": "2026-10-17T00:12:00Z",
+  "h": "1bfa21c1c0",
+  "note": "src: MLS launched in 1996 with 10 member teams including Tampa Bay Mutiny",
+  "v": "ok"
+ },
+ "mls:51": {
+  "at": "2026-10-17T00:12:00Z",
+  "h": "2ef8288db7",
+  "note": "src: 171 regular-season goals and 42 assists, all-time leader. Still the record per https://www.mlssoccer.com/news/mls-legends-wondolowski-sanneh-named-to-national-soccer-hall-of-fame (Nov 2025). Next on the list is Donovan with 145",
+  "v": "ok"
+ },
+ "mls:52": {
+  "at": "2026-10-17T00:12:00Z",
+  "h": "46a3cd2efd",
+  "note": "src: Vela surpassed Josef Martínez’s mark of 31 goals set the year before (2018)",
+  "v": "ok"
+ },
+ "mls:53": {
+  "at": "2026-10-17T00:12:00Z",
+  "h": "dd6054ffa3",
+  "note": "src (Oct 7, 2026) shows Inter Miami’s record of 74 set in 2024 still stands. 2024 Shield with 74 points on https://www.mlssoccer.com/news/philadelphia-union-win-2025-supporters-shield. WARNING: Nashville have 66 points after 29 games with 5 left (stats-api), and need 9 more to break it by Nov 7. The past-tense wording stays true, but the build should recheck after Decision Day",
+  "v": "ok"
+ },
+ "mls:54": {
+  "at": "2026-10-17T00:12:00Z",
+  "h": "45b02bf66b",
+  "note": "src: 2025 Lionel Messi 29 goals, 2024 Christian Benteke 23 goals",
+  "v": "ok"
+ },
+ "mls:55": {
+  "at": "2026-10-17T00:11:44Z",
+  "h": "e98890180e",
+  "note": "src: Philadelphia won the 2025 Shield for the league’s best regular-season record, table of every winner since 1996",
+  "v": "ok"
+ },
+ "mls:56": {
+  "at": "2026-10-17T00:11:51Z",
+  "h": "0d18b1b1e9",
+  "note": "src: since 2005 the Golden Boot goes to the leading goalscorer, 2025 Lionel Messi",
+  "v": "ok"
+ },
+ "mls:57": {
+  "at": "2026-10-17T00:11:44Z",
+  "h": "edc01ee7cc",
+  "note": "src: Seattle beat Inter Miami 3–0 in the final at Lumen Field before a Leagues Cup and club-record 69,314",
+  "v": "ok"
+ },
+ "mls:59": {
+  "at": "2026-10-17T00:11:44Z",
+  "h": "22fd928fcb",
+  "note": "src: named the league’s first MVP in 1996 with 4 goals and 17 assists",
+  "v": "ok"
+ },
+ "mls:6": {
+  "at": "2026-10-17T00:11:44Z",
+  "h": "298d5d1bcd",
+  "note": "src: LAFC first MLS Cup, 3–3 after extra time, won the shootout",
+  "v": "ok"
+ },
+ "mls:60": {
+  "at": "2026-10-17T00:11:44Z",
+  "h": "bd0e9d7dc0",
+  "note": "src: TFC beat Seattle 2–0 in MLS Cup 2017, completing the first domestic treble in MLS history",
+  "v": "ok"
+ },
+ "mls:7": {
+  "at": "2026-10-17T00:11:44Z",
+  "h": "2fd4de5ef1",
+  "note": "src: Crew’s third MLS Cup (2008, 2020, 2023), beat LAFC 2–1",
+  "v": "ok"
+ },
+ "mls:8": {
+  "at": "2026-10-17T00:11:44Z",
+  "h": "c988d06208",
+  "note": "src lists every Shield winner: 1996 Tampa Bay Mutiny, and says the Shield is the league’s best regular-season record",
+  "v": "ok"
+ },
+ "mls:9": {
+  "at": "2026-10-17T00:11:44Z",
+  "h": "dff6c9ea3f",
+  "note": "src: Shield 2025 is Philadelphia’s second, also 2020. 2026 Shield race is between Nashville and Vancouver (https://www.mlssoccer.com/news/matchday-31-how-nashville-sc-can-clinch-the-supporters-shield), so still twice today",
+  "v": "ok"
+ },
  "nicknames:0": {
   "at": "2026-10-17T00:11:28Z",
   "h": "aa49098494",
