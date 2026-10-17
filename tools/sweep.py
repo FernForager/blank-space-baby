@@ -4,8 +4,8 @@
 
 Plays every card of each day (animations off, every answer right), checking each one: three different
 choices with the answer among them, a blank in the sentence, nothing overflowing the screen before or
-after answering, the answered sentence clear of the go arrow and the beta's flag and lock keys, and the
-page never scrolling. On each board it checks every hook fits its tile and
+after answering, the answered sentence clear of the go arrow and the beta's flag and lock keys (with the
+smallest gap between a line and a key under it), and the page never scrolling. On each board it checks every hook fits its tile and
 records the smallest hook font. Prints how often the right answer lands in each slot (should be even).
 """
 import asyncio, collections, os, sys
@@ -24,7 +24,8 @@ AFTER = """() => { const q = document.getElementById('q'), f = document.querySel
 CLEAR = """() => { const r = document.createRange(); r.selectNodeContents(document.getElementById('q'));
   const lines = [...r.getClientRects()], keys = [...document.querySelectorAll('#go:not(.wait), #beta:not([hidden]) .bk')].map(e => e.getBoundingClientRect());
   const hit = (a, b) => a.left < b.right && b.left < a.right && a.top < b.bottom && b.top < a.bottom;
-  return { hit: lines.some(l => keys.some(k => hit(l, k))), gap: Math.min(...keys.map(k => k.top)) - Math.max(...lines.map(l => l.bottom)), keys: keys.length }; }"""
+  const above = [].concat(...lines.map(l => keys.filter(k => l.left < k.right && k.left < l.right).map(k => k.top - l.bottom)));   // only keys a line sits over
+  return { hit: lines.some(l => keys.some(k => hit(l, k))), gap: above.length ? Math.min(...above) : 999, keys: keys.length }; }"""
 BOARD = """() => { const h = [...document.querySelectorAll('.hk')];
   return { min: Math.min(...h.map(e => parseFloat(getComputedStyle(e).fontSize))), over: h.filter(e => e.scrollWidth > e.clientWidth + 0.5).map(e => e.textContent),
            scroll: document.documentElement.scrollHeight > innerHeight }; }"""
@@ -51,7 +52,7 @@ async def main():
                 if cl['hit'] or cl['keys'] != 3: problems.append((day, i, 'the sentence runs into the keys at the bottom', st['w'], cl))
                 await pg.click('#flip'); await pg.wait_for_timeout(30 if i < 17 else 1000)
             if await pg.evaluate("document.getElementById('cab').dataset.v") != 'end': problems.append((day, 'no end screen after 18 right'))
-        print(f'{W}x{H}: {DAYS} days, {cards} cards, slots {dict(sorted(slots.items()))}, smallest hook font {min(fonts):.1f}px, closest the sentence comes to the bottom keys {min(gaps):.0f}px')
+        print(f'{W}x{H}: {DAYS} days, {cards} cards, slots {dict(sorted(slots.items()))}, smallest hook font {min(fonts):.1f}px, closest the sentence comes to a key below it {min(gaps):.0f}px')
         print('problems:', len(problems))
         for x in problems[:20]: print('  ', x)
         print('JS errors:', errs or 'none'); await b.close()
