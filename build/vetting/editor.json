@@ -308,8 +308,8 @@
   "v": "ok"
  },
  "alpha:53": {
-  "at": "2026-10-16T23:55:32Z",
-  "h": "560f357495",
+  "at": "2026-10-17T00:45:02Z",
+  "h": "cfc20622c4",
   "v": "ok"
  },
  "alpha:54": {
@@ -7410,13 +7410,9 @@
   "v": "ok"
  },
  "soccer:43": {
-  "at": "2026-10-17T00:40:51Z",
-  "fix": {
-   "means": "Time added at the end of each half"
-  },
-  "h": "aa60581a22",
-  "note": "“end of a game” misleads, stoppage time comes at the end of each half",
-  "v": "fix"
+  "at": "2026-10-17T00:45:02Z",
+  "h": "2ef7a9bb7f",
+  "v": "ok"
  },
  "soccer:44": {
   "at": "2026-10-16T23:56:37Z",
