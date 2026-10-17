@@ -128,13 +128,10 @@
   "v": "ok"
  },
  "alpha:16": {
-  "at": "2026-10-17T00:18:57Z",
-  "fix": {
-   "ex": "The defender answered every coaching tip with the nonsense word “skibidi”"
-  },
-  "h": "74b15223f4",
-  "note": "M-W skibidi: nonsensical expression and meme, used humorously and interjectionally. But the blank “answered every coaching tip with “___”” also fits drawable yeet (M-W yeet interjection: used to express surprise, approval or excited enthusiasm, https://www.merriam-webster.com/dictionary/yeet) and IJBOL or chat as reply words. Naming it a nonsense word leaves only skibidi (six seven is already grouped out)",
-  "v": "fix"
+  "at": "2026-10-17T00:48:39Z",
+  "h": "0bb82f4359",
+  "note": "merriam-webster.com/dictionary/skibidi: used humorously as a nonsensical expression and meme, which supports the means line. No drawable wrong answer is a nonsense word (six seven is not in this card’s pool)",
+  "v": "ok"
  },
  "alpha:17": {
   "at": "2026-10-17T00:01:37Z",
@@ -473,22 +470,10 @@
   "v": "ok"
  },
  "alpha:60": {
-  "at": "2026-10-17T00:01:37Z",
-  "fix": {
-   "groups": [
-    [
-     "gas",
-     "chalked"
-    ],
-    [
-     "gas",
-     "cottagecore"
-    ]
-   ]
-  },
-  "h": "7834cb9468",
-  "note": "Sense checks out at https://www.merriam-webster.com/slang/gas (M-W slang page: a slangy adjective meaning excellent, awesome, great). But chalked (M-W: no good, ruined) and cottagecore (a style word like preppy, already grouped with gas) also describe jerseys plausibly",
-  "v": "fix"
+  "at": "2026-10-17T00:48:39Z",
+  "h": "1fb3d539e0",
+  "note": "merriam-webster.com/slang/gas: adjective, excellent, awesome, great. Checked the drawable near misses on MW: slay is a verb (MW dictionary, Dictionary.com slang too), buff is a gaming verb (to improve a weapon or ability), girlypop is a noun or an adjective for hyperfeminine things, not a word for excellent, brick means extremely cold, high-key is an adverb, cooked means doomed. Fire, bussin, lit, goated, tuff, peak, slaps, drip and valid are not in this card’s pool. Only gas fits",
+  "v": "ok"
  },
  "alpha:61": {
   "at": "2026-10-17T00:02:11Z",
@@ -821,10 +806,13 @@
   "v": "ok"
  },
  "awards:13": {
-  "at": "2026-10-17T00:23:27Z",
-  "h": "5072544b2a",
-  "note": "fifa.com all-award-winners-history (The Best 2025 given 16 Dec 2025, no 2026 awards yet): Ronaldinho 2004 and 2005. Means from https://www.fifa.com/en/articles/brazil-awards-list (O Bruxo, The Wizard)",
-  "v": "ok"
+  "at": "2026-10-17T00:48:39Z",
+  "fix": {
+   "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2024/articles/brazil-awards-list"
+  },
+  "h": "268d274959",
+  "note": "src shows Ronaldinho winning in 2004 and 2005 but not Barcelona or The Wizard. https://www.fifa.com/en/the-best-fifa-football-awards/2024/articles/brazil-awards-list shows all three: 2004 and 2005 Ronaldinho, his magical performances for Barcelona, O Bruxo (The Wizard)",
+  "v": "fix"
  },
  "awards:14": {
   "at": "2026-10-17T00:23:27Z",
@@ -3764,9 +3752,9 @@
   "v": "ok"
  },
  "intl-women:22": {
-  "at": "2026-10-17T00:15:03Z",
-  "h": "2dd152f04d",
-  "note": "fifa.com all-time appearances article (via cxm-api.fifa.com): Sawa captained Japan to victory at Germany 2011 and won the Golden Boot and Ball",
+  "at": "2026-10-17T00:48:39Z",
+  "h": "976299857d",
+  "note": "src fifa.com: Sawa’s stunning 117th-minute equaliser levelled the final at 2–2 and sent it to penalties, and she won the adidas Golden Ball and Golden Boot. Wambach and Morgan scored in that final but not the equalizer",
   "v": "ok"
  },
  "intl-women:23": {
@@ -5153,13 +5141,10 @@
   "v": "ok"
  },
  "ligamx:61": {
-  "at": "2026-10-17T00:28:32Z",
-  "fix": {
-   "means": "Apertura 2026’s Jornada 1 had 29 goals"
-  },
-  "h": "b7e92edc96",
-  "note": "ligamx.net 47622 uses Jornada for each league round (Jornada 1 of Apertura 2026, also called Fecha 1) but never translates it as matchday, so that means line must go. New means is shown on the same page",
-  "v": "fix"
+  "at": "2026-10-17T00:48:39Z",
+  "h": "2e77cc3d85",
+  "note": "src: Lo que dejó la Jornada 1 del Apertura 2026 calls the same round both Jornada 1 and Fecha 1 (la fecha inaugural, Una Fecha 1 sin empates, los nueve partidos de la jornada). Fecha is not a drawable wrong answer",
+  "v": "ok"
  },
  "ligamx:62": {
   "at": "2026-10-17T00:04:57Z",
@@ -5535,9 +5520,9 @@
   "v": "ok"
  },
  "ligue1:55": {
-  "at": "2026-10-17T00:28:39Z",
-  "h": "95f1bd8c6a",
-  "note": "ligue1.com palmarès (updated for 2025/26): PSG 14, then Saint-Étienne with 10",
+  "at": "2026-10-17T00:48:39Z",
+  "h": "d4344ef38e",
+  "note": "src palmarès page: PSG 14 titles, AS Saint-Etienne 10, second most. Sainté is ligue1.com’s own short name for the club, in the headline of https://ligue1.com/en/articles/l1_article_2402-one-to-watch-leo-petrot-sainte-s-sentinel-re-emerges-out-the-shadows",
   "v": "ok"
  },
  "ligue1:56": {
@@ -6733,9 +6718,9 @@
   "v": "ok"
  },
  "nicknames:64": {
-  "at": "2026-10-17T00:11:40Z",
-  "h": "b493ca76db",
-  "note": "bundesliga.com Werder guide: Werder means small islands in a river, like the Peterswerder where the Weserstadion is. No other deck answer fits the blank",
+  "at": "2026-10-17T00:48:39Z",
+  "h": "4cc013f994",
+  "note": "src bundesliga.com guide: Werder literally means ait or eyot and refers to small islands in a river, such as the Peterswerder where the Weserstadion is, named after the river Weser that flows alongside it",
   "v": "ok"
  },
  "nicknames:65": {
@@ -8167,9 +8152,9 @@
   "v": "ok"
  },
  "seriea:49": {
-  "at": "2026-10-17T00:20:23Z",
-  "h": "ea2aedb6af",
-  "note": "Team index lists 20 clubs for the current season",
+  "at": "2026-10-17T00:48:39Z",
+  "h": "ab4a4e3ea6",
+  "note": "legaseriea.it/team/index lists 20 clubs for 2026/27. The 38 games: https://www.legaseriea.it/serie-a/news/recap-38-giornata-serie-a-gol-collection says the 38ª giornata delivered the season’s last verdicts, and https://en.legaseriea.it/serie-a/news/insights-matchday-38 covers Matchday 38 of 2025/2026",
   "v": "ok"
  },
  "seriea:5": {
