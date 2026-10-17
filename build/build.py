@@ -53,7 +53,7 @@ SITE_LEAGUE = {'premierleague.com': 'epl', 'laliga.com': 'laliga', 'bundesliga.c
                'ligue1.com': 'ligue1', 'ligamx.net': 'ligamx', 'mlssoccer.com': 'mls', 'nwslsoccer.com': 'nwsl'}
 VET = os.path.join(HERE, 'vetting')
 REVIEWERS = ('soccer', 'editor', 'facts')   # the soccer expert, the writing editor and the fact checker (Morg, Oct 16, 2026)
-BETA_VETTED_ONLY = False   # True once the first vetting pass is done: until then every card that isn't out or flagged plays
+BETA_VETTED_ONLY = True   # True once the first vetting pass is done: until then every card that isn't out or flagged plays
 BETA_MIN = 48              # with BETA_VETTED_ONLY, the build stops if a color has fewer cards than this (twice the draw's window)
 START = [2026, 10, 16]   # the date of puzzle #1: launch day (Morg, Oct 16, 2026). A placeholder until that date is set.
 REPEAT_DAYS = 91          # a card never comes back within 3 months, once there are enough cards
