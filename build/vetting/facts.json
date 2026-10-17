@@ -417,7 +417,7 @@
   "v": "fix"
  },
  "alpha:53": {
-  "at": "2026-10-17T00:01:37Z",
+  "at": "2026-10-17T00:24:33Z",
   "fix": {
    "groups": [
     [
@@ -426,7 +426,7 @@
     ]
    ]
   },
-  "h": "560f357495",
+  "h": "91f51d5091",
   "note": "Sense checks out at https://www.merriam-webster.com/dictionary/lit (M-W dictionary: excellent, exciting). But M-W chalked includes messed up, ruined, no good, so “the film night was chalked” also fits, the same way mid and cringe are already grouped with lit",
   "v": "fix"
  },
@@ -885,16 +885,52 @@
   "note": "fifa.com all-award-winners-history (The Best 2025 given 16 Dec 2025, no 2026 awards yet): 2019 Megan Rapinoe, Alex Morgan second",
   "v": "ok"
  },
+ "awards:22": {
+  "at": "2026-10-17T00:24:47Z",
+  "h": "685c796279",
+  "note": "fifa.com all-award-winners-history (The Best 2025 given 16 Dec 2025, no 2026 awards yet): Earps women’s goalkeeper 2022 and 2023. Means from https://www.fifa.com/en/articles/earps-wins-the-best-fifa-womens-goalkeeper-award-berger-endler (England won Women’s EURO 2022, she played every minute)",
+  "v": "ok"
+ },
+ "awards:23": {
+  "at": "2026-10-17T00:24:47Z",
+  "h": "181cec629f",
+  "note": "fifa.com all-award-winners-history (The Best 2025 given 16 Dec 2025, no 2026 awards yet): 2025 Hannah Hampton. Means from fifa.com/en/the-best-fifa-football-awards/2025/articles/womens-goalkeeper-2025-winner-hannah-hampton (England beat Spain in the EURO final, she was Goalkeeper of the Tournament)",
+  "v": "ok"
+ },
  "awards:25": {
   "at": "2026-10-17T00:23:27Z",
   "h": "5d217d99fd",
   "note": "fifa.com all-award-winners-history (The Best 2025 given 16 Dec 2025, no 2026 awards yet): 2025 Donnarumma. Means from https://www.fifa.com/en/articles/mens-goalkeeper-2025-winner-gianluigi-donnarumma (clean sheet in the 5–0 Champions League final)",
   "v": "ok"
  },
+ "awards:27": {
+  "at": "2026-10-17T00:24:47Z",
+  "h": "27fbff0984",
+  "note": "fifa.com messi-golden-ball-record: Messi stood next to Golden Glove recipient Manuel Neuer at Brazil 2014, after final defeat to the Germans",
+  "v": "ok"
+ },
+ "awards:28": {
+  "at": "2026-10-17T00:24:47Z",
+  "h": "7606142059",
+  "note": "fifa.com all-award-winners-history (The Best 2025 given 16 Dec 2025, no 2026 awards yet): Wiegman 2017, 2020, 2022, 2023, 2025. https://www.fifa.com/en/articles/womens-coach-2025-winner-sarina-wiegman says record-extending fifth time",
+  "v": "ok"
+ },
  "awards:29": {
   "at": "2026-10-17T00:23:10Z",
   "h": "c49b03caba",
   "note": "fifa.com all-award-winners-history (The Best 2025 given 16 Dec 2025, no 2026 awards yet): Luis Enrique 2015 and 2025. Means from https://www.fifa.com/en/articles/mens-coach-2025-winner-luis-enrique (PSG maiden Champions League title)",
+  "v": "ok"
+ },
+ "awards:3": {
+  "at": "2026-10-17T00:24:47Z",
+  "h": "dcd52c7fdc",
+  "note": "fifa.com every-world-cup-top-scorer (published 22 Jul 2026): Rossi was the winner of the inaugural Golden Ball and Golden Boot awards at Spain 1982",
+  "v": "ok"
+ },
+ "awards:33": {
+  "at": "2026-10-17T00:24:47Z",
+  "h": "32878b895b",
+  "note": "fifa.com all-award-winners-history (The Best 2025 given 16 Dec 2025, no 2026 awards yet): Emma Hayes 2021 and 2024",
   "v": "ok"
  },
  "awards:34": {
@@ -935,6 +971,12 @@
   "h": "49205152a1",
   "note": "FIFA’s Montiel winner page shows the 2025 Puskás Award for an overhead kick and that he is the second successive Argentinian winner after Garnacho. The history page has neither detail",
   "v": "fix"
+ },
+ "awards:4": {
+  "at": "2026-10-17T00:24:47Z",
+  "h": "8ee38790da",
+  "note": "fifa.com every-world-cup-top-scorer (published 22 Jul 2026): James Rodriguez top scorer at Brazil 2014 with six, including a stunning volley against Uruguay",
+  "v": "ok"
  },
  "awards:40": {
   "at": "2026-10-17T00:23:10Z",
@@ -996,6 +1038,12 @@
   "note": "FIFA top-scorer page: Rossi won the inaugural Golden Ball and Golden Boot at Spain 1982",
   "v": "ok"
  },
+ "awards:5": {
+  "at": "2026-10-17T00:24:47Z",
+  "h": "3cb45a9b7a",
+  "note": "fifa.com every-world-cup-top-scorer (published 22 Jul 2026): Kempes top scorer 1978 with six, a brace in the final",
+  "v": "ok"
+ },
  "awards:50": {
   "at": "2026-10-17T00:23:10Z",
   "fix": {
@@ -1044,10 +1092,52 @@
   "note": "fifa.com The Best all-winners history page (API text, updated 16 Dec 2025): Bonmati 2023, 2024, 2025. FIFA 2025 release calls it a historic third straight. No 2026 The Best awards held yet (2025 edition was 16 Dec 2025)",
   "v": "ok"
  },
+ "awards:57": {
+  "at": "2026-10-17T00:24:47Z",
+  "h": "bad13d068a",
+  "note": "FIFA top-scorer page: 13 goals in six games at Sweden 1958, a single-tournament record which still stands (Mbappé had 10 in 2026)",
+  "v": "ok"
+ },
+ "awards:58": {
+  "at": "2026-10-17T00:24:47Z",
+  "h": "215a67c6b3",
+  "note": "fifa.com The Best all-winners history page (API text, updated 16 Dec 2025): Marta won 2006 to 2010 and 2018, six, more than anyone (Prinz and Bonmati three). No 2026 The Best awards held yet (2025 edition was 16 Dec 2025)",
+  "v": "ok"
+ },
+ "awards:59": {
+  "at": "2026-10-17T00:24:47Z",
+  "h": "944ef5998b",
+  "note": "fifa.com The Best all-winners history page (API text, updated 16 Dec 2025): Wiegman 2017, 2020, 2022, 2023, 2025, five. Next is Neid with three. No 2026 The Best awards held yet (2025 edition was 16 Dec 2025)",
+  "v": "ok"
+ },
+ "awards:6": {
+  "at": "2026-10-17T00:24:47Z",
+  "h": "22a048228e",
+  "note": "fifa.com every-world-cup-top-scorer (published 22 Jul 2026): Lineker top scorer at Mexico 1986 with six",
+  "v": "ok"
+ },
  "awards:60": {
   "at": "2026-10-17T00:23:10Z",
   "h": "cfa1d8cd8e",
   "note": "FIFA Golden Glove article: seven clean sheets in eight matches, the most ever at a single World Cup",
+  "v": "ok"
+ },
+ "awards:61": {
+  "at": "2026-10-17T00:24:47Z",
+  "h": "84f43df383",
+  "note": "FIFA top-scorer page: eight goals at Qatar 2022 including a hat-trick in the final",
+  "v": "ok"
+ },
+ "awards:62": {
+  "at": "2026-10-17T00:24:47Z",
+  "h": "f98a3825e5",
+  "note": "FIFA top-scorer page: Kocsis scored 11 at Switzerland 1954 as Hungary came second",
+  "v": "ok"
+ },
+ "awards:63": {
+  "at": "2026-10-17T00:24:47Z",
+  "h": "b5fbf6fcb1",
+  "note": "FIFA tournament review: Golden Boot with ten goals. Top-scorer page says he topped the charts in 2022 and 2026",
   "v": "ok"
  },
  "awards:66": {
@@ -2169,8 +2259,8 @@
   "v": "ok"
  },
  "bundesliga:21": {
-  "at": "2026-10-17T00:04:10Z",
-  "h": "b241e5fa82",
+  "at": "2026-10-17T00:24:33Z",
+  "h": "46b5bd86b7",
   "note": "bundesliga.com No. 5 shirt page (src): Bayern retired No. 5 for Beckenbauer, a four-time Bundesliga winner with Bayern",
   "v": "ok"
  },
@@ -2385,8 +2475,8 @@
   "v": "ok"
  },
  "bundesliga:54": {
-  "at": "2026-10-17T00:04:10Z",
-  "h": "a610940f3d",
+  "at": "2026-10-17T00:24:47Z",
+  "h": "c5c9ff4665",
   "note": "bundesliga.com history page: first season got underway on 24 August 1963 with 16 teams",
   "v": "ok"
  },
@@ -2451,8 +2541,8 @@
   "v": "ok"
  },
  "bundesliga:64": {
-  "at": "2026-10-17T00:04:10Z",
-  "h": "71adacf20b",
+  "at": "2026-10-17T00:24:47Z",
+  "h": "fcbe8d1357",
   "note": "bundesliga.com history page: 16-team division in 1963/64, became 18 from 1965/66",
   "v": "ok"
  },
@@ -2529,8 +2619,8 @@
   "v": "ok"
  },
  "epl-more:15": {
-  "at": "2026-10-17T00:04:54Z",
-  "h": "30d040f001",
+  "at": "2026-10-17T00:24:33Z",
+  "h": "de04d0044a",
   "note": "premierleague.com/en/stats/records (player records tables): Player of the Season 2 each for Henry, Ronaldo (Man United 2006/07, 2007/08), Vidic, De Bruyne, Salah. None of those is among the wrong answers",
   "v": "ok"
  },
@@ -2757,8 +2847,8 @@
   "v": "ok"
  },
  "epl-more:49": {
-  "at": "2026-10-17T00:04:54Z",
-  "h": "5606942b59",
+  "at": "2026-10-17T00:24:33Z",
+  "h": "425059e812",
   "note": "premierleague.com club names history: founded 1886 by workers at the Royal Arsenal munitions factory",
   "v": "ok"
  },
@@ -2769,32 +2859,32 @@
   "v": "ok"
  },
  "epl-more:50": {
-  "at": "2026-10-17T00:04:54Z",
-  "h": "944a26795d",
+  "at": "2026-10-17T00:24:33Z",
+  "h": "d09400c73b",
   "note": "premierleague.com stadiums guide (26 Sep 2026): Old Trafford home since 1910, stands named after Ferguson and Bobby Charlton",
   "v": "ok"
  },
  "epl-more:51": {
-  "at": "2026-10-17T00:04:54Z",
-  "h": "e23fccd631",
+  "at": "2026-10-17T00:24:33Z",
+  "h": "bbc57e6f4c",
   "note": "premierleague.com club names history: Leeds United founded 1919, replacing Leeds City which was forced to disband",
   "v": "ok"
  },
  "epl-more:52": {
-  "at": "2026-10-17T00:04:54Z",
-  "h": "20db55118a",
+  "at": "2026-10-17T00:24:47Z",
+  "h": "6e2bc58c52",
   "note": "premierleague.com stadiums guide (26 Sep 2026): Amex home since 2011, replacing Withdean Stadium",
   "v": "ok"
  },
  "epl-more:53": {
-  "at": "2026-10-17T00:04:54Z",
-  "h": "6e9c497bad",
+  "at": "2026-10-17T00:24:47Z",
+  "h": "3c796b013c",
   "note": "premierleague.com stadiums guide (26 Sep 2026): Stadium of Light 1997, built on the former Monkwearmouth Colliery",
   "v": "ok"
  },
  "epl-more:54": {
-  "at": "2026-10-17T00:04:54Z",
-  "h": "659325042b",
+  "at": "2026-10-17T00:24:47Z",
+  "h": "11b282415a",
   "note": "premierleague.com title-winning managers page: Arteta made 110 league appearances before hanging up his boots in 2016",
   "v": "ok"
  },
@@ -4155,8 +4245,8 @@
   "v": "ok"
  },
  "laliga:41": {
-  "at": "2026-10-17T00:08:54Z",
-  "h": "74926da185",
+  "at": "2026-10-17T00:24:47Z",
+  "h": "4fd76a13d5",
   "note": "src: the oldest stadium in Spain, named for a large water mill on the site",
   "v": "ok"
  },
@@ -5331,8 +5421,8 @@
   "v": "ok"
  },
  "ligue1:56": {
-  "at": "2026-10-17T00:12:04Z",
-  "h": "cc385e92b3",
+  "at": "2026-10-17T00:24:33Z",
+  "h": "ce48cdb76d",
   "note": "src (May 2026): only Lyon, 2002 to 2008 (7), and the French palmarès page l1_article_289 says Lyon stand alone with 7 in a row",
   "v": "ok"
  },
@@ -5343,8 +5433,8 @@
   "v": "ok"
  },
  "ligue1:60": {
-  "at": "2026-10-17T00:12:04Z",
-  "h": "3049568ead",
+  "at": "2026-10-17T00:24:33Z",
+  "h": "4c6bce3173",
   "note": "src (Jun 10, 2026): 2026/27 season runs Aug 21, 2026 to May 29, 2027, the 34th and final matchday",
   "v": "ok"
  },
@@ -5373,8 +5463,8 @@
   "v": "ok"
  },
  "lingo-more:1": {
-  "at": "2026-10-16T23:56:49Z",
-  "h": "9bd76733d4",
+  "at": "2026-10-17T00:24:33Z",
+  "h": "96c1ce4e6a",
   "note": "dictionary.com daisy-cutter, Collins British: soccer, a powerful shot that moves close to the ground",
   "v": "ok"
  },
@@ -5475,14 +5565,14 @@
   "v": "ok"
  },
  "lingo-more:24": {
-  "at": "2026-10-16T23:56:49Z",
-  "h": "1bb204acb2",
+  "at": "2026-10-17T00:24:33Z",
+  "h": "0590ed5b49",
   "note": "MW scout: a person sent to watch players in action with a view to recommending their acquisition",
   "v": "ok"
  },
  "lingo-more:25": {
-  "at": "2026-10-16T23:56:49Z",
-  "h": "6477758fd5",
+  "at": "2026-10-17T00:24:33Z",
+  "h": "25d4d22e68",
   "note": "MW free agent: a professional athlete free to negotiate a contract with any team",
   "v": "ok"
  },
@@ -5550,8 +5640,8 @@
   "v": "ok"
  },
  "lingo-more:35": {
-  "at": "2026-10-16T23:56:49Z",
-  "h": "8a443c3c6a",
+  "at": "2026-10-17T00:24:33Z",
+  "h": "453728a017",
   "note": "Dictionary.com knockout, Collins British: a competition in which competitors are eliminated progressively",
   "v": "ok"
  },
@@ -6144,108 +6234,108 @@
   "v": "ok"
  },
  "nicknames:0": {
-  "at": "2026-10-17T00:11:28Z",
-  "h": "aa49098494",
+  "at": "2026-10-17T00:24:47Z",
+  "h": "c0c32fa6bd",
   "note": "premierleague.com club names history page: Royal Arsenal munitions factory workers in Woolwich, 1886, Gunners a tribute to the factory",
   "v": "ok"
  },
  "nicknames:1": {
-  "at": "2026-10-17T00:11:28Z",
-  "h": "a8eff0e6d3",
+  "at": "2026-10-17T00:24:47Z",
+  "h": "aa53f43110",
   "note": "premierleague.com badges explained page: Busby adopted the Red Devils nickname from rugby league club Salford and popularised the devil in the 1960s",
   "v": "ok"
  },
  "nicknames:10": {
-  "at": "2026-10-17T00:11:28Z",
-  "h": "ed14b534b1",
+  "at": "2026-10-17T00:24:47Z",
+  "h": "1847beda72",
   "note": "premierleague.com club names history page: Thames Ironworks Football Club, Irons nickname harks back to shipbuilding origins",
   "v": "ok"
  },
  "nicknames:11": {
-  "at": "2026-10-17T00:11:28Z",
-  "h": "3037f6c2f3",
+  "at": "2026-10-17T00:24:47Z",
+  "h": "c6f8338220",
   "note": "premierleague.com Coventry promotion page: Jimmy Hill appointed in 1961, under him the team adopted sky blue colours, giving rise to the nickname (he then led them to two titles, so manager is clear)",
   "v": "ok"
  },
  "nicknames:12": {
-  "at": "2026-10-17T00:11:28Z",
-  "h": "b5f5800dc1",
+  "at": "2026-10-17T00:24:47Z",
+  "h": "de81e75d3c",
   "note": "premierleague.com Ipswich promotion page: Robson led the Tractor Boys to the FA Cup in 1978 and the UEFA Cup in 1981",
   "v": "ok"
  },
  "nicknames:13": {
-  "at": "2026-10-17T00:11:28Z",
-  "h": "6df4473a45",
+  "at": "2026-10-17T00:24:47Z",
+  "h": "9faa7b61aa",
   "note": "premierleague.com badges explained page: Brighton were once the Dolphins, Seagulls since the mid-1970s",
   "v": "ok"
  },
  "nicknames:14": {
-  "at": "2026-10-17T00:11:28Z",
-  "h": "8a8c6f206c",
+  "at": "2026-10-17T00:24:47Z",
+  "h": "3a1617dde4",
   "note": "premierleague.com badges explained page: in 1973 Malcolm Allison changed the nickname from the Glaziers to the Eagles",
   "v": "ok"
  },
  "nicknames:15": {
-  "at": "2026-10-17T00:11:28Z",
-  "h": "3cedb22afe",
+  "at": "2026-10-17T00:24:47Z",
+  "h": "8080ba304a",
   "note": "bundesliga.com animal names page: Hennes, a living goat gifted by circus director Carola Williams in February 1950, team known as the Billy Goats",
   "v": "ok"
  },
  "nicknames:16": {
-  "at": "2026-10-17T00:11:28Z",
-  "h": "0161512706",
+  "at": "2026-10-17T00:24:47Z",
+  "h": "fd68312d30",
   "note": "bundesliga.com animal names page: up in 1965 with a squad averaging 20, the Foals, galloping like young horses",
   "v": "ok"
  },
  "nicknames:17": {
-  "at": "2026-10-17T00:11:28Z",
-  "h": "f459c15958",
+  "at": "2026-10-17T00:24:47Z",
+  "h": "6c591a765b",
   "note": "bundesliga.com animal names page: blue-and-white stripes led to Die Zebras, ‘Zebratwist’ written in 1963 as the first official Bundesliga club anthem",
   "v": "ok"
  },
  "nicknames:18": {
-  "at": "2026-10-17T00:11:28Z",
-  "h": "ca57cb17ca",
+  "at": "2026-10-17T00:24:47Z",
+  "h": "e0feda4f58",
   "note": "bundesliga.com animal names page: Bayern Munich are the Reds, colours are a big theme in nicknames",
   "v": "ok"
  },
  "nicknames:19": {
-  "at": "2026-10-17T00:11:28Z",
-  "h": "2bd53089b5",
+  "at": "2026-10-17T00:24:47Z",
+  "h": "7286d4692c",
   "note": "bundesliga.com animal names page: Borussia Dortmund the Black-Yellows, colour nicknames",
   "v": "ok"
  },
  "nicknames:2": {
-  "at": "2026-10-17T00:11:28Z",
-  "h": "1b15ed7fef",
+  "at": "2026-10-17T00:24:47Z",
+  "h": "99d21bbcf4",
   "note": "premierleague.com badges explained page: once the Dolphins, Seagulls since the mid-1970s after fans answered Palace’s “Eagles” chant",
   "v": "ok"
  },
  "nicknames:20": {
-  "at": "2026-10-17T00:11:28Z",
-  "h": "be920e9f3e",
+  "at": "2026-10-17T00:24:47Z",
+  "h": "09df4b3d22",
   "note": "bundesliga.com Werder guide: the Green-Whites, champions four times, second Bundesliga champions in 1964/65. Still four: bundesliga.com says Bayern won the last two titles (https://www.bundesliga.com/en/bundesliga/news/who-can-challenge-bayern-munich-title-borussia-dortmund-rb-leipzig-vfb-stuttgart-bayer-leverkusen-38312)",
   "v": "ok"
  },
  "nicknames:21": {
-  "at": "2026-10-17T00:11:28Z",
-  "h": "7681066460",
+  "at": "2026-10-17T00:24:47Z",
+  "h": "ebb2e32bbe",
   "note": "bundesliga.com animal names page: Hamburg the Red Shorts, a colour nickname (HSV guide also: Die Rothosen, red shorts)",
   "v": "ok"
  },
  "nicknames:22": {
-  "at": "2026-10-17T00:11:28Z",
+  "at": "2026-10-17T00:24:47Z",
   "fix": {
    "means": "Also called Die Knappen, the miners",
    "src": "https://www.bundesliga.com/en/bundesliga/news/fc-schalke-04-bundesliga-club-by-club-historical-guide-24140"
   },
-  "h": "e5c8235518",
+  "h": "025e982789",
   "note": "The src (animal names page) shows Schalke are the Royal Blues but not the coal city or the shirts. bundesliga.com Schalke guide shows the Royal Blues hail from Gelsenkirchen, a city built on coal mining, and their nickname Die Knappen (the miners). Neither page says the name comes from royal blue shirts, so the means is replaced",
   "v": "fix"
  },
  "nicknames:23": {
-  "at": "2026-10-17T00:11:28Z",
-  "h": "3795cec161",
+  "at": "2026-10-17T00:24:47Z",
+  "h": "2ba9aa7b9d",
   "note": "bundesliga.com Darmstadt guide: the Lilies, named for the flower on the city and club’s crests",
   "v": "ok"
  },
@@ -6256,38 +6346,38 @@
   "v": "ok"
  },
  "nicknames:25": {
-  "at": "2026-10-17T00:11:28Z",
-  "h": "8c5542c0dd",
+  "at": "2026-10-17T00:24:47Z",
+  "h": "db14e62327",
   "note": "bundesliga.com Hertha guide: Die Alte Dame (Old Lady)",
   "v": "ok"
  },
  "nicknames:26": {
-  "at": "2026-10-17T00:11:28Z",
-  "h": "c32aafa73e",
+  "at": "2026-10-17T00:24:47Z",
+  "h": "c1c99f16b4",
   "note": "bundesliga.com HSV guide: ever-present until relegation in 2018, a clock in the stadium counted their time as the ‘Bundesliga Dino’",
   "v": "ok"
  },
  "nicknames:27": {
-  "at": "2026-10-17T00:11:28Z",
-  "h": "e0658b8d4d",
+  "at": "2026-10-17T00:24:47Z",
+  "h": "8b6fcaffef",
   "note": "laliga.com Merengues page: Merengues (Meringues) for their all-white kit",
   "v": "ok"
  },
  "nicknames:28": {
-  "at": "2026-10-17T00:11:28Z",
-  "h": "dd743c2ab4",
+  "at": "2026-10-17T00:24:47Z",
+  "h": "01195b8c1b",
   "note": "laliga.com Culés page: fans sat on the walls, passers-by saw their backsides, hence Culés",
   "v": "ok"
  },
  "nicknames:29": {
-  "at": "2026-10-17T00:11:28Z",
-  "h": "b49cbc1321",
+  "at": "2026-10-17T00:24:47Z",
+  "h": "c3a2af3165",
   "note": "laliga.com Lions page: the lions after the legend of Saint Mamés. Means from laliga.com club page https://www.laliga.com/en-GB/clubs/athletic-club (San Mamés, home of Athletic Club)",
   "v": "ok"
  },
  "nicknames:3": {
-  "at": "2026-10-17T00:11:28Z",
-  "h": "3c55acff45",
+  "at": "2026-10-17T00:24:47Z",
+  "h": "fcf3bea92a",
   "note": "premierleague.com club names history page: students from Borough Road College shouted “Buck up Bs”, the media heard bees",
   "v": "ok"
  },
@@ -6355,8 +6445,8 @@
   "v": "ok"
  },
  "nicknames:4": {
-  "at": "2026-10-17T00:11:28Z",
-  "h": "b42ca8a6e1",
+  "at": "2026-10-17T00:24:47Z",
+  "h": "0dc03000ea",
   "note": "premierleague.com club names history page: Eagles nickname from the 1970s, Malcolm Allison copied Benfica’s águias",
   "v": "ok"
  },
@@ -6415,8 +6505,8 @@
   "v": "ok"
  },
  "nicknames:5": {
-  "at": "2026-10-17T00:11:28Z",
-  "h": "61b992476b",
+  "at": "2026-10-17T00:24:47Z",
+  "h": "5d22172797",
   "note": "premierleague.com badges explained page: badge introduced for the move to the Stadium of Light, two black lions tie in with the Black Cats nickname",
   "v": "ok"
  },
@@ -6475,8 +6565,8 @@
   "v": "ok"
  },
  "nicknames:6": {
-  "at": "2026-10-17T00:11:40Z",
-  "h": "0bb49d3beb",
+  "at": "2026-10-17T00:24:47Z",
+  "h": "833d633988",
   "note": "premierleague.com club names history page: Cherries either from the red striped shirts or the cherry trees on the Cooper-Dean estate next to Dean Court",
   "v": "ok"
  },
@@ -6511,20 +6601,20 @@
   "v": "ok"
  },
  "nicknames:7": {
-  "at": "2026-10-17T00:11:28Z",
-  "h": "8b9c6b6618",
+  "at": "2026-10-17T00:24:47Z",
+  "h": "30f78321f4",
   "note": "premierleague.com club names history page: began in blue and white, claret and blue earned them the Clarets nickname",
   "v": "ok"
  },
  "nicknames:8": {
-  "at": "2026-10-17T00:11:28Z",
-  "h": "8bbe80df93",
+  "at": "2026-10-17T00:24:47Z",
+  "h": "3f56ff1d2e",
   "note": "premierleague.com club names history page: became the Cottagers on moving to Craven Cottage in 1896",
   "v": "ok"
  },
  "nicknames:9": {
-  "at": "2026-10-17T00:11:28Z",
-  "h": "eb42f42fdb",
+  "at": "2026-10-17T00:24:47Z",
+  "h": "1cc4aadb61",
   "note": "premierleague.com club names history page: founded at Fulham St Andrew’s Church in 1879, original nickname the Saints",
   "v": "ok"
  },
@@ -6634,20 +6724,20 @@
   "v": "ok"
  },
  "nwsl:24": {
-  "at": "2026-10-17T00:10:57Z",
-  "h": "e752212b72",
+  "at": "2026-10-17T00:24:33Z",
+  "h": "207c98e44c",
   "note": "Goal record page: Little is “a goal-scoring Scot” who joined Seattle Reign FC in 2014 (Shield history page: her first NWSL season was 2014)",
   "v": "ok"
  },
  "nwsl:25": {
-  "at": "2026-10-17T00:10:57Z",
-  "h": "da820a42ae",
+  "at": "2026-10-17T00:24:33Z",
+  "h": "dc0530636f",
   "note": "Fishlock retirement page: 48 goals in 166 caps for Wales, both national team records",
   "v": "ok"
  },
  "nwsl:26": {
-  "at": "2026-10-17T00:10:57Z",
-  "h": "345d49725f",
+  "at": "2026-10-17T00:24:33Z",
+  "h": "c9409e1da1",
   "note": "Sinclair page: four straight Olympics with Canada, closing with gold in 2021",
   "v": "ok"
  },
@@ -6658,14 +6748,14 @@
   "v": "ok"
  },
  "nwsl:28": {
-  "at": "2026-10-17T00:10:57Z",
-  "h": "8dcac83a10",
+  "at": "2026-10-17T00:24:33Z",
+  "h": "b00e2fa0db",
   "note": "Goal record page: stints with Perth Glory and her national team in Australia",
   "v": "ok"
  },
  "nwsl:29": {
-  "at": "2026-10-17T00:10:57Z",
-  "h": "e6e855d497",
+  "at": "2026-10-17T00:24:33Z",
+  "h": "698e87c6f7",
   "note": "Playoffs history page, 2013: eight teams and 22 regular-season games",
   "v": "ok"
  },
@@ -6676,20 +6766,20 @@
   "v": "ok"
  },
  "nwsl:30": {
-  "at": "2026-10-17T00:10:57Z",
-  "h": "760db1010f",
+  "at": "2026-10-17T00:24:33Z",
+  "h": "7db2af1bc0",
   "note": "2026 storylines page lists 16 clubs. https://www.nwslsoccer.com/news/seattle-reign-captain-jess-fishlock-nwsl-original-to-retire-at-end-of-2026-season calls Denver Summit and Boston Legacy both 2026 expansion teams",
   "v": "ok"
  },
  "nwsl:31": {
-  "at": "2026-10-17T00:10:57Z",
-  "h": "6033f93ea5",
+  "at": "2026-10-17T00:24:33Z",
+  "h": "d1198b396b",
   "note": "Goal record page: Chawinga became the first player to hit 20 goals, passing Kerr’s 18. Sanchez reached 20 in 2026 as the second (Sept 28, 2026 page), so “first” still holds",
   "v": "ok"
  },
  "nwsl:32": {
-  "at": "2026-10-17T00:10:57Z",
-  "h": "12ad25515e",
+  "at": "2026-10-17T00:24:33Z",
+  "h": "45b7df84a7",
   "note": "2025 milestones page: most points in one season 65, most wins 21",
   "v": "ok"
  },
@@ -6700,8 +6790,8 @@
   "v": "ok"
  },
  "nwsl:34": {
-  "at": "2026-10-17T00:10:57Z",
-  "h": "16671342ee",
+  "at": "2026-10-17T00:24:33Z",
+  "h": "63184972ad",
   "note": "2024 championship recap: NWSL records incl. unbeaten streak to open the season (23 matches), Pride won the 2024 title",
   "v": "ok"
  },
@@ -6718,8 +6808,8 @@
   "v": "ok"
  },
  "nwsl:37": {
-  "at": "2026-10-17T00:10:57Z",
-  "h": "aeb9d72271",
+  "at": "2026-10-17T00:24:33Z",
+  "h": "9f01f04d78",
   "note": "Page shows Houston Dash 2, Chicago Red Stars 0, first trophy in club history, 2020 Challenge Cup champions",
   "v": "ok"
  },
@@ -6730,8 +6820,8 @@
   "v": "ok"
  },
  "nwsl:39": {
-  "at": "2026-10-17T00:10:57Z",
-  "h": "2a2416dbf7",
+  "at": "2026-10-17T00:24:33Z",
+  "h": "e4f5bb19e6",
   "note": "2023 Shield page: Shield-clinching victory on Decision Day, winner decided in the final weekend of play",
   "v": "ok"
  },
@@ -6877,11 +6967,11 @@
   "v": "ok"
  },
  "nwsl:59": {
-  "at": "2026-10-17T00:10:57Z",
+  "at": "2026-10-17T00:24:47Z",
   "fix": {
    "src": "https://www.nwslsoccer.com/news/2026-nwsl-schedule-release-how-to-watch-racing-louisville-fc"
   },
-  "h": "383a66b595",
+  "h": "d7a7d9e8ce",
   "note": "The about-the-nwsl page renders no text about clubs. Racing’s 2026 schedule page shows Racing Louisville FC at home at Lynn Family Stadium",
   "v": "fix"
  },
@@ -8044,8 +8134,8 @@
   "v": "ok"
  },
  "soccer:12": {
-  "at": "2026-10-16T23:58:23Z",
-  "h": "f6deaa4d0a",
+  "at": "2026-10-17T00:24:33Z",
+  "h": "d8e9b8d4d8",
   "note": "dictionary.com Panenka: a penalty kick taken as a slow, gently arching shot to the center of goal",
   "v": "ok"
  },
@@ -8280,8 +8370,8 @@
   "v": "ok"
  },
  "soccer:45": {
-  "at": "2026-10-16T23:58:23Z",
-  "h": "3c0876b53e",
+  "at": "2026-10-17T00:24:33Z",
+  "h": "5471524ffd",
   "note": "merriam-webster.com derby: a game between local sports teams",
   "v": "ok"
  },
