@@ -57,6 +57,8 @@ REVIEWERS = ('soccer', 'editor', 'facts')   # the soccer expert, the writing edi
 BETA_VETTED_ONLY = True   # True once the first vetting pass is done: until then every card that isn't out or flagged plays
 BETA_MIN = 48              # with BETA_VETTED_ONLY, the build stops if a color has fewer cards than this (twice the draw's window)
 START = [2026, 10, 16]   # the date of puzzle #1: launch day (Morg, Oct 16, 2026). A placeholder until that date is set.
+DEMO_DAYS = 7             # the playtest (Morg, Oct 17, 2026): boards #1 to #7 back to back, each finished one leading to the next, then a
+                          # thank-you and Start over. The date doesn't move it. 0 for the real daily, one board a day from START
 REPEAT_DAYS = 91          # a card never comes back within 3 months, once there are enough cards
 WINDOW = 24               # the draw deals from a shuffle of each color's 24 oldest cards (WINDOW in template.html)
 
@@ -214,8 +216,9 @@ def main(test_copy=None):
     need = 6 * REPEAT_DAYS + WINDOW   # 6 a day for 3 months, plus the 24 oldest the draw shuffles from
     print(f'Cards can stay 3 months apart once each color has about {need} cards. Until then the draw spaces them as far apart as it can:')
     print(f'the smallest color ({min(tiers)} cards) repeats about every {(min(tiers) - WINDOW) // 6} days.')
+    if DEMO_DAYS: print(f'Demo: boards #1 to #{DEMO_DAYS} play back to back, then a thank-you (DEMO_DAYS in build.py, 0 for the real daily).')
     tpl = open(os.path.join(HERE, 'template.html')).read()
-    tpl = tpl.replace('__DECKS__', json.dumps(decks, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')).replace('__START__', json.dumps(START))
+    tpl = tpl.replace('__DECKS__', json.dumps(decks, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')).replace('__START__', json.dumps(START)).replace('__DEMO__', str(DEMO_DAYS))
     top, body = tpl.split('<style>', 1)              # title + font links move into <head>
     top = '\n'.join(l for l in top.splitlines() if 'claude:' not in l)
     head = open(os.path.join(HERE, 'head.html')).read().replace('</head>', top.strip() + '\n</head>')
