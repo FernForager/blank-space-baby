@@ -15,7 +15,7 @@
   },
   {
    "w": "7",
-   "means": "The minimum to start or carry on",
+   "means": "Red cards can leave a team that short",
    "ex": "A match can’t start or go on if a team has fewer than 7 players",
    "hook": "can’t start",
    "k": "count",
@@ -65,7 +65,7 @@
    "w": "1",
    "means": "Competition rules set who sits there",
    "ex": "The number of people allowed to coach from the technical area at one time is 1",
-   "hook": "technical",
+   "hook": "coach",
    "k": "count",
    "src": "https://www.theifab.com/laws/latest/the-field-of-play/",
    "d": 2
@@ -147,7 +147,7 @@
   },
   {
    "w": "10 yards",
-   "means": "9.15 m, same as the center circle",
+   "means": "9.15 m, the center circle’s radius",
    "ex": "At a free kick, opponents must be at least 10 yards from the ball",
    "hook": "free kick",
    "k": "measure-field",
@@ -156,7 +156,7 @@
   },
   {
    "w": "12 yards",
-   "means": "11 m from the middle of the goal",
+   "means": "That’s 11 m in metric",
    "ex": "The penalty mark is 12 yards from the middle of the goal line",
    "hook": "penalty mark",
    "k": "measure-field",
@@ -185,7 +185,7 @@
    "w": "8 yards",
    "means": "7.32 m between the insides of the posts",
    "ex": "A full-size goal is 8 yards wide",
-   "hook": "full-size",
+   "hook": "goal",
    "k": "measure-field",
    "src": "https://www.theifab.com/laws/latest/the-field-of-play/",
    "d": 2
@@ -356,7 +356,7 @@
   {
    "w": "goalkeeper",
    "means": "Outside the area, the arm rule applies",
-   "ex": "A goalkeeper may handle the ball inside their own penalty area",
+   "ex": "The goalkeeper may handle the ball inside their own penalty area",
    "hook": "handle",
    "k": "role",
    "src": "https://www.theifab.com/laws/latest/fouls-and-misconduct/",
@@ -500,7 +500,7 @@
   {
    "w": "jewelry",
    "means": "Dangerous items must still come off",
-   "ex": "Since 2026, players may wear jewelry that isn’t dangerous if it’s securely covered",
+   "ex": "Since 2026, players may wear jewelry that is safe and securely covered",
    "hook": "covered",
    "k": "gear",
    "src": "https://www.theifab.com/laws/latest/the-players-equipment/",
@@ -510,7 +510,7 @@
   {
    "w": "armband",
    "means": "Every team needs a captain on the field",
-   "ex": "Each team’s captain must wear an identifying armband",
+   "ex": "Each team’s captain must be identified by their armband",
    "hook": "captain",
    "k": "gear",
    "src": "https://www.theifab.com/laws/latest/the-players/",

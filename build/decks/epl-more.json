@@ -42,9 +42,9 @@
     },
     {
       "w": "Sadio Mané",
-      "means": "For Southampton v Aston Villa",
-      "ex": "Sadio Mané scored a hat-trick in 2 minutes 56 seconds in 2015",
-      "hook": "hat-trick",
+      "means": "For Southampton against Aston Villa",
+      "ex": "Sadio Mané scored a hat trick in 2 minutes 56 seconds in 2015",
+      "hook": "hat trick",
       "k": "player",
       "src": "https://www.premierleague.com/en/stats/records",
       "d": 3
@@ -70,7 +70,7 @@
     {
       "w": "Eric Cantona",
       "means": "Against Tottenham in August 1992",
-      "ex": "Eric Cantona scored the first Premier League hat-trick, for Leeds",
+      "ex": "Eric Cantona scored the first Premier League hat trick, for Leeds",
       "hook": "Leeds",
       "k": "player",
       "src": "https://www.premierleague.com/en/stats/records",
@@ -358,7 +358,7 @@
     {
       "w": "Villa Park",
       "means": "Aston Villa’s home ground",
-      "ex": "Villa Park has hosted 55 FA Cup semi-finals, more than any ground",
+      "ex": "Villa Park has hosted 55 FA Cup semifinals, more than any ground",
       "hook": "FA Cup",
       "k": "ground",
       "src": "https://www.premierleague.com/en/news/4725666/all-you-need-to-know-about-the-20-premier-league-stadiums",
@@ -384,8 +384,8 @@
     },
     {
       "w": "1",
-      "means": "A win is worth three",
-      "ex": "A draw earns each team 1 point",
+      "means": "A loss earns nothing",
+      "ex": "A win is worth 3 points, and a draw is worth 1",
       "hook": "draw",
       "k": "number",
       "src": "https://www.premierleague.com/en/premier-league-explained",
@@ -411,7 +411,7 @@
     },
     {
       "w": "6",
-      "means": "Like Arsenal, Chelsea and Liverpool",
+      "means": "Like Arsenal, Chelsea, and Liverpool",
       "ex": "Everton are one of 6 clubs to have played every Premier League season",
       "hook": "Everton",
       "k": "number",
@@ -531,7 +531,7 @@
     {
       "w": "Ardwick",
       "means": "Began as a church team in 1880",
-      "ex": "Before it took the name Manchester City, the club was called Ardwick",
+      "ex": "Manchester City were once called Ardwick",
       "hook": "Manchester",
       "k": "old name",
       "src": "https://www.premierleague.com/en/news/4592046/what-is-the-history-behind-every-premier-league-clubs-name",
@@ -548,7 +548,7 @@
     },
     {
       "w": "Singers",
-      "means": "Its founder worked for a cycle firm",
+      "means": "Their founder worked for a cycle firm",
       "ex": "Coventry City were known as Singers FC until 1898",
       "hook": "Coventry",
       "k": "old name",

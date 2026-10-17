@@ -24,7 +24,7 @@
   },
   {
    "w": "volley",
-   "means": "Kick before the ball lands",
+   "means": "A half volley comes just after a bounce",
    "ex": "To hit a volley, kick the ball out of the air before it bounces",
    "hook": "bounces",
    "k": "move",
@@ -69,8 +69,8 @@
   },
   {
    "w": "nutmeg",
-   "means": "Pass it through a player’s legs",
-   "ex": "Grandma will nutmeg anyone who stands with their feet too wide apart",
+   "means": "Ball played through a player’s legs",
+   "ex": "Grandma pulls a nutmeg on anyone whose feet are too wide apart",
    "hook": "wide apart",
    "k": "move",
    "src": "https://www.dictionary.com/browse/nutmeg",
@@ -124,7 +124,7 @@
   {
    "w": "keepy-uppy",
    "means": "Keeping the ball off the ground",
-   "ex": "Grandpa did keepy-uppy in the yard until the ball hit the window",
+   "ex": "Grandpa’s keepy-uppy in the yard ended when the ball hit the window",
    "hook": "Grandpa",
    "k": "move",
    "src": "https://www.dictionary.com/browse/keepy-uppy",
@@ -168,7 +168,7 @@
   },
   {
    "w": "yellow card",
-   "means": "Card for an official warning",
+   "means": "Two in one game mean a red card",
    "ex": "The ref showed the captain a yellow card as an official warning",
    "hook": "warning",
    "k": "rules",
@@ -276,7 +276,7 @@
   },
   {
    "w": "false nine",
-   "means": "Forward who drops into midfield",
+   "means": "Named for the striker’s No. 9 shirt",
    "ex": "As a false nine, the forward keeps dropping into midfield",
    "hook": "forward",
    "k": "role",
@@ -349,7 +349,7 @@
   {
    "w": "assist",
    "means": "Pass that sets up a goal",
-   "ex": "The winger did not score, but she got an assist on both goals",
+   "ex": "The winger did not score, but she got the assist on both goals",
    "hook": "winger",
    "k": "score",
    "src": "https://www.dictionary.com/browse/assist",
@@ -366,7 +366,7 @@
   },
   {
    "w": "sudden death",
-   "means": "Next score wins the tied game",
+   "means": "Tied shoot-outs end this way too",
    "ex": "In sudden death, the very next goal wins the game",
    "hook": "next goal",
    "k": "game",
@@ -377,7 +377,7 @@
    "w": "golden goal",
    "means": "First extra-time goal wins it",
    "ex": "The first goal in extra time was a golden goal, so everyone went home",
-   "hook": "first goal",
+   "hook": "extra time",
    "k": "game",
    "src": "https://www.dictionary.com/browse/golden-goal",
    "d": 1

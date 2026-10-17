@@ -7,8 +7,8 @@
   {
    "w": "Real Madrid",
    "means": "Betis won the league that same season",
-   "ex": "Real Madrid beat Barcelona 8–2 in 1934–35, the biggest league Clásico win",
-   "hook": "Clásico",
+   "ex": "Real Madrid beat Barcelona 8–2 in 1934–35, the biggest league win between the two",
+   "hook": "Barcelona",
    "k": "club",
    "src": "https://www.laliga.com/en-CA/news/the-history-of-elclasico-decade-by-decade",
    "d": 1
@@ -34,7 +34,7 @@
   {
    "w": "Athletic Club",
    "means": "A club rule since 1912",
-   "ex": "Athletic Club only field players born or trained in the Basque Country",
+   "ex": "Athletic Club field only players born or trained in the Basque Country",
    "hook": "Basque",
    "k": "club",
    "src": "https://www.laliga.com/en-US/news/five-things-you-may-not-know-about-athletic-club",
@@ -79,7 +79,7 @@
   {
    "w": "Valencia",
    "means": "Their sixth title came in 2003–04",
-   "ex": "Rafa Benítez coached Valencia to the league in 2001–02 and again two years later",
+   "ex": "Rafa Benítez coached Valencia to the title in 2001–02 and again two years later",
    "hook": "Benítez",
    "k": "club",
    "src": "https://www.laliga.com/en-GB/news/rafa-benitez-named-as-new-real-madrid-boss",
@@ -115,7 +115,7 @@
   {
    "w": "Lionel Messi",
    "means": "Telmo Zarra is the top Spaniard",
-   "ex": "Lionel Messi is the all-time top scorer in LaLiga history",
+   "ex": "Lionel Messi is LaLiga’s all-time top scorer",
    "hook": "top scorer",
    "k": "player",
    "src": "https://www.laliga.com/en-GB/news/laliga-remembers-90-years-of-professional-football-history",
@@ -142,7 +142,7 @@
   {
    "w": "Ricardo Zamora",
    "means": "Nicknamed “El Divino”",
-   "ex": "The keeper who concedes fewest wins a trophy named for Ricardo Zamora",
+   "ex": "The keeper who concedes the fewest goals wins a trophy named for Ricardo Zamora",
    "hook": "keeper",
    "k": "player",
    "src": "https://www.laliga.com/en-GB/news/espanyol-pay-tribute-to-famous-former-keeper-ricardo-zamora",
@@ -296,7 +296,7 @@
   {
    "w": "Miguel Muñoz",
    "means": "The all-time record for titles",
-   "ex": "Real Madrid’s Miguel Muñoz has won more league titles than any other coach",
+   "ex": "Real Madrid’s Miguel Muñoz won more league titles than any other coach",
    "hook": "Real Madrid",
    "k": "coach",
    "src": "https://www.laliga.com/noticias/historia-santiago-bernabeu-estadio-real-madrid",
@@ -305,7 +305,7 @@
   {
    "w": "Luis Aragonés",
    "means": "LaLiga’s record for games in charge",
-   "ex": "Luis Aragonés has coached more LaLiga games than anyone",
+   "ex": "Luis Aragonés coached more LaLiga games than anyone",
    "hook": "LaLiga games",
    "k": "coach",
    "src": "https://www.laliga.com/en-GB/news/laliga-remembers-90-years-of-professional-football-history",
@@ -332,8 +332,8 @@
   },
   {
    "w": "Bernabéu",
-   "means": "Real Madrid’s home since 1947",
-   "ex": "Real Madrid play their home games at the Santiago Bernabéu",
+   "means": "Full name: Santiago Bernabéu",
+   "ex": "Real Madrid play their home games at the Bernabéu",
    "hook": "Real Madrid",
    "k": "stadium",
    "src": "https://www.laliga.com/en-GB/clubs/real-madrid",
@@ -369,7 +369,7 @@
   {
    "w": "Sánchez-Pizjuán",
    "means": "Named for a former club president",
-   "ex": "Sevilla play their home games at the Ramón Sánchez-Pizjuán",
+   "ex": "Sevilla play their home games at the Sánchez-Pizjuán",
    "hook": "Sevilla",
    "k": "stadium",
    "src": "https://www.laliga.com/en-GB/news/ten-things-you-may-not-know-about-the-ramon-sanchez-pizjuan",
@@ -445,7 +445,7 @@
    "w": "622",
    "means": "Joaquín and Andoni Zubizarreta",
    "ex": "The record for most top-flight games is 622, shared by two players",
-   "hook": "two players",
+   "hook": "top-flight",
    "k": "number",
    "src": "https://www.laliga.com/en-US/news/five-things-you-may-not-know-about-real-betis",
    "d": 2
