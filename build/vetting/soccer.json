@@ -2643,6 +2643,316 @@
   "note": "Decoy fix rides on intl-men:8 groups",
   "v": "ok"
  },
+ "laliga:0": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "b58d08f493",
+  "v": "ok"
+ },
+ "laliga:1": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "4a07c7b1a6",
+  "note": "Near-twin of laliga:51: its 1928–29 hands over 51’s answer, 1929, and the draw does not tie them (see 51)",
+  "v": "ok"
+ },
+ "laliga:10": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "da8c199c5f",
+  "note": "Zarra Trophy hints at laliga:13, already tied by the draw",
+  "v": "ok"
+ },
+ "laliga:11": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "d46749219b",
+  "v": "ok"
+ },
+ "laliga:12": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "d7590550e8",
+  "v": "ok"
+ },
+ "laliga:13": {
+  "at": "2026-10-17T00:02:07Z",
+  "fix": {
+   "ex": "Telmo Zarra scored more LaLiga goals than any other Spaniard"
+  },
+  "h": "b30142c56f",
+  "note": "laliga.com disagrees with itself on Zarra’s total: the LFP Trophy page says 251, the LaLiga of Records page says 253. Dropping the number keeps the fact that matters and that every page agrees on (laliga.com lists him as top Spanish goalscorer)",
+  "v": "fix"
+ },
+ "laliga:14": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "50c463fc5c",
+  "v": "ok"
+ },
+ "laliga:15": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "ad2e9fceef",
+  "v": "ok"
+ },
+ "laliga:16": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "a2e26d6390",
+  "note": "Its “Zamora Trophy” gives away laliga:15, but the draw ties them through Zamora",
+  "v": "ok"
+ },
+ "laliga:17": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "7d74fa8ead",
+  "v": "ok"
+ },
+ "laliga:18": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "c967706445",
+  "v": "ok"
+ },
+ "laliga:19": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "cb043e5ad8",
+  "v": "ok"
+ },
+ "laliga:2": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "79bd04b0cc",
+  "note": "Near-twin of laliga:29 (Simeone, 2013–14 title). The draw already ties them through Atlético",
+  "v": "ok"
+ },
+ "laliga:20": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "a20473a987",
+  "note": "Still the derby record on Oct 17, 2026",
+  "v": "ok"
+ },
+ "laliga:21": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "45e685673a",
+  "v": "ok"
+ },
+ "laliga:22": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "6542d08a40",
+  "v": "ok"
+ },
+ "laliga:23": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "25a356353d",
+  "v": "ok"
+ },
+ "laliga:24": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "b35b6fbd53",
+  "v": "ok"
+ },
+ "laliga:25": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "1983790f91",
+  "v": "ok"
+ },
+ "laliga:26": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "2684f871e6",
+  "v": "ok"
+ },
+ "laliga:27": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "992b0955ea",
+  "v": "ok"
+ },
+ "laliga:28": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "0daf7437cc",
+  "v": "ok"
+ },
+ "laliga:29": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "d1477b7583",
+  "v": "ok"
+ },
+ "laliga:3": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "297c2755ae",
+  "note": "The new word order fixes the old “only field players” misread",
+  "v": "ok"
+ },
+ "laliga:30": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "729c48e595",
+  "v": "ok"
+ },
+ "laliga:31": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "60c208cc82",
+  "v": "ok"
+ },
+ "laliga:32": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "4b9445cac6",
+  "v": "ok"
+ },
+ "laliga:33": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "608585dcb8",
+  "note": "Still true: Simeone, the nearest active coach, is about 200 games behind",
+  "v": "ok"
+ },
+ "laliga:34": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "3f08015ca7",
+  "v": "ok"
+ },
+ "laliga:35": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "c6e6baa0cd",
+  "v": "ok"
+ },
+ "laliga:36": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "33d48abfef",
+  "v": "ok"
+ },
+ "laliga:37": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "2f03b32f42",
+  "v": "ok"
+ },
+ "laliga:38": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "59ad37ddfc",
+  "v": "ok"
+ },
+ "laliga:39": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "8e8e09915b",
+  "v": "ok"
+ },
+ "laliga:4": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "64f62a43a8",
+  "v": "ok"
+ },
+ "laliga:40": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "6212af6c2c",
+  "v": "ok"
+ },
+ "laliga:41": {
+  "at": "2026-10-17T00:02:07Z",
+  "fix": {
+   "ex": "Sporting Gijón’s El Molinón is the oldest stadium in Spain"
+  },
+  "h": "74926da185",
+  "note": "Fans everywhere call the club Sporting Gijón. “Real Sporting” reads like a typo for Real something, or gets mixed up with Sporting in Lisbon",
+  "v": "fix"
+ },
+ "laliga:42": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "51b95326aa",
+  "v": "ok"
+ },
+ "laliga:43": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "00a470ba34",
+  "note": "36 still right after Barcelona’s 2024–25 and 2025–26 titles",
+  "v": "ok"
+ },
+ "laliga:44": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "1c52eb330b",
+  "v": "ok"
+ },
+ "laliga:45": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "73454356cb",
+  "v": "ok"
+ },
+ "laliga:46": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "a1c177b5bd",
+  "v": "ok"
+ },
+ "laliga:47": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "e0bf7095fc",
+  "v": "ok"
+ },
+ "laliga:48": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "ea81d50247",
+  "v": "ok"
+ },
+ "laliga:49": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "ccd8d235de",
+  "v": "ok"
+ },
+ "laliga:5": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "4f286afc0a",
+  "v": "ok"
+ },
+ "laliga:50": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "4cdaa94572",
+  "v": "ok"
+ },
+ "laliga:51": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "6b2ccdc58c",
+  "note": "Near-twin of laliga:1, whose “1928–29” gives this answer away. The draw’s giveaway check misses it because 1929 is not a token of 1928–29. Suggest the guardrail also reads a season like 1928–29 as 1929",
+  "v": "ok"
+ },
+ "laliga:52": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "c706b6881a",
+  "v": "ok"
+ },
+ "laliga:53": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "fc0b32e890",
+  "v": "ok"
+ },
+ "laliga:54": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "690eccc864",
+  "v": "ok"
+ },
+ "laliga:55": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "f9abc330dd",
+  "v": "ok"
+ },
+ "laliga:56": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "80cbb29635",
+  "note": "Weak decoys: founding years from 1898 to 1903 can’t be a TV date, so it often plays easy. Yellow is the most it can be. A few postwar years in the year kind would sharpen it",
+  "v": "ok"
+ },
+ "laliga:6": {
+  "at": "2026-10-17T00:02:07Z",
+  "fix": {
+   "ex": "Real Betis won their only league title in 1934–35, beating Sevilla 3–0 away",
+   "hook": "Sevilla",
+   "src": "https://www.laliga.com/en-GB/news/comparing-titles-real-betis-sevilla-fc"
+  },
+  "h": "abcfeda9f3",
+  "note": "New tile word as asked. The bare year gave a fan nothing to tap. laliga.com states the 3–0 win at Sevilla’s ground (Nervión) on two pages that agree: the Betis-Sevilla titles comparison and the El Gran Derbi page, which adds it was the first top-flight Seville derby, Feb 3, 1935. Sevilla is never a wrong answer here (grouped), and the draw already keeps this card off a board with laliga:7 (Sevilla’s answer) and laliga:40 (same hook). New src is the page that states the only title, the 3–0 and Real Madrid on 33",
+  "v": "fix"
+ },
+ "laliga:7": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "c2e1126607",
+  "note": "Encinas is an obscure tile word, but the only specific one the sentence has. Better than the year",
+  "v": "ok"
+ },
+ "laliga:8": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "d9454ca9e6",
+  "v": "ok"
+ },
+ "laliga:9": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "3156c2a568",
+  "v": "ok"
+ },
  "ligamx:0": {
   "at": "2026-10-17T00:01:31Z",
   "fix": {
