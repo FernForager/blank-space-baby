@@ -97,7 +97,7 @@ This was `main` until Oct 17, 2026, when the daily game replaced it on the live 
   ⚽⚽ Brace · 17
   triviela.net
   ```
-  A day with no goal reads `Nil · 4`. Since Oct 17, 2026 (Morg's yes, on the beta first) a grid sits under the title: one square per card in tap order, six to a row so a full row is a goal, colored by tile (⬜ 🟨 🟥) with ❌ on the miss. The share key draws the same grid small. Morg finds yellow and red unfriendly, so the colors may change.
+  Since Oct 17, 2026 (Morg's call, on the beta first, so a stranger sees soccer at a glance) a grid sits under the title: a ⚽ per right answer in tap order, six to a row, a 🥅 closing each full row (a goal) and ❌ on the miss. The result line drops its balls (`Brace · 17`, `Nil · 4`). The share key draws the same grid. Colored squares by tile were tried first and dropped the same day.
 - **Colors shown at launch** (locked). Hidden-until-answered can be tried with a few serious fans in the playtest.
 - **Reset at local midnight,** like Wordle. Each date has one puzzle number, and everyone who plays #42 gets the same board.
 - **Repeats:** a card can come back, but never within 3 months. (At 18 a day, never repeating in a year would need about 6,500 cards.)

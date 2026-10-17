@@ -184,14 +184,14 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .share { min-height: 62px; padding: 8px 16px 8px 18px; display: flex; align-items: center; justify-content: space-between; gap: 12px; text-align: left; font-size: 17px; line-height: 1.25; }
 .share .mark { flex: none; }
 .share .ball-i { display: inline-block; vertical-align: -2px; margin-right: 3px; }
-.share .txt { flex: 1 1 auto; min-width: 0; }
-.share .grid { flex: none; margin-left: auto; }
-.sgrid { display: flex; flex-direction: column; gap: 3px; }
-.srow { display: flex; gap: 3px; }
-.sq { display: block; width: 10px; height: 10px; border-radius: 1.5px; box-shadow: inset 0 0 0 1px rgba(30,42,59,.35); }
-.sq.c1 { background: var(--c1); } .sq.c2 { background: var(--c2); } .sq.c3 { background: var(--c3); }
-.sq.x { background: none; box-shadow: none; position: relative; }
-.sq.x::before, .sq.x::after { content: ""; position: absolute; left: -1px; top: 4px; width: 12px; height: 2px; background: #FF5A5F; transform: rotate(45deg); }
+.share .txt { flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 3px; }
+.sgrid { display: flex; flex-direction: column; gap: 2px; padding-block: 2px; }
+.sgrid:empty { display: none; }
+.srow { display: flex; gap: 2px; align-items: center; }
+.sgrid .ball-i { display: block; margin: 0; }
+.sq { display: block; width: 16px; height: 16px; position: relative; }
+.sq.net { box-sizing: border-box; border: 2px solid var(--btn-ink); border-bottom: 0; background: repeating-linear-gradient(90deg, transparent 0 3px, rgba(30,42,59,.5) 3px 4px), repeating-linear-gradient(0deg, transparent 0 3px, rgba(30,42,59,.5) 3px 4px); }
+.sq.x::before, .sq.x::after { content: ""; position: absolute; left: 0; top: 7px; width: 16px; height: 2px; background: #FF5A5F; transform: rotate(45deg); }
 .sq.x::after { transform: rotate(-45deg); }
 .endrow { display: flex; align-items: center; justify-content: center; gap: 6px; }
 .endrow .bk { height: 26px; color: #7C8A80; }
@@ -231,7 +231,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   <div class="panel">
     <div class="pv tiles" id="p-board"></div>
     <div class="pv choices" id="choices"></div>
-    <div class="pv" id="p-end"><button class="key share" id="share" type="button"><span class="txt" id="share-txt"></span><span class="grid" id="share-grid"></span><span class="mark" id="share-mark"></span></button><div class="endrow"><button class="bk flag" id="e-flag" type="button" hidden></button><button class="bk again" id="e-again" type="button" aria-label="Start over" hidden></button><div class="clock" id="clock"></div><button class="next" id="e-next" type="button" hidden></button><button class="bk lock" id="e-lock" type="button" hidden></button></div></div>
+    <div class="pv" id="p-end"><button class="key share" id="share" type="button"><span class="txt"><span id="share-top"></span><span class="grid" id="share-grid"></span><span id="share-txt"></span></span><span class="mark" id="share-mark"></span></button><div class="endrow"><button class="bk flag" id="e-flag" type="button" hidden></button><button class="bk again" id="e-again" type="button" aria-label="Start over" hidden></button><div class="clock" id="clock"></div><button class="next" id="e-next" type="button" hidden></button><button class="bk lock" id="e-lock" type="button" hidden></button></div></div>
   </div>
 </div>
 <script>
@@ -564,27 +564,25 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 
   // ---- the end of the day ----
   var tick;
-  var SQ = ['', '⬜', '🟨', '🟥'];
-  function grid() {   // the tapped cards in order, six to a row (a full row is a goal): each tile's color, and ❌ for the miss
-    var rows = [];
-    S.path.forEach(function (i, k) { if (!S.res[i]) return; if (k % PER === 0) rows.push([]); rows[rows.length - 1].push(S.res[i] === 2 ? 'x' : S.tiles[i].d); });
+  function grid() {   // the tapped cards in order, six to a row: a ball for each right answer, a net after each goal, ❌ for the miss
+    var cells = S.path.filter(function (i) { return S.res[i]; }).map(function (i) { return S.res[i] === 1 ? 'ball' : 'x'; }), rows = [];
+    for (var k = 0; k < cells.length; k += PER) rows.push(cells.slice(k, k + PER).concat(k + PER <= cells.length && cells[k + PER - 1] === 'ball' ? ['net'] : []));
     return rows;
   }
+  var EMO = { ball: '⚽', net: '🥅', x: '❌' };
   function shareText() {
     var n = chips(), g = Math.floor(n / PER);
-    return 'Triviela #' + (S.day + 1) + '\n' + grid().map(function (r) { return r.map(function (c) { return c === 'x' ? '❌' : SQ[c]; }).join(''); }).join('\n') +
-      '\n' + (g ? new Array(g + 1).join('⚽') + ' ' : '') + RESULT[g] + ' · ' + n + '\ntriviela.net';
-  }
-  function gridHTML() {   // the same grid drawn small on the share key
-    return '<span class="sgrid">' + grid().map(function (r) { return '<span class="srow">' + r.map(function (c) { return '<i class="sq ' + (c === 'x' ? 'x' : 'c' + c) + '"></i>'; }).join('') + '</span>'; }).join('') + '</span>';
+    return 'Triviela #' + (S.day + 1) + '\n' + grid().map(function (r) { return r.map(function (c) { return EMO[c]; }).join(''); }).join('\n') +
+      (n || S.path.length ? '\n' : '') + RESULT[g] + ' · ' + n + '\ntriviela.net';
   }
   function end() {
     var n = chips(), g = Math.floor(n / PER), lost = S.res.indexOf(2), L = S.tiles[lost];
     var word = RESULT[g] + ' · ' + n;
     $('v-end').innerHTML = '<div class="result">' + lampsHTML(g, 3) + '<p class="word">' + num(esc(word)) + '</p></div>' +
       (L ? '<div class="lost"><p class="' + size(L) + ' missed">' + sentence(L, true) + '</p><p class="means">' + num(keep(esc(L.m))) + '</p></div>' : ballHTML(6));
-    $('share-txt').innerHTML = shareText().split('\n').filter(function (line) { return !/[⬜🟨🟥❌]/u.test(line); }).map(function (line) { return num(esc(line)).replace(/⚽/g, svg('ball', 2, 'ball-i', true)); }).join('<br>');
-    $('share-grid').innerHTML = gridHTML();
+    $('share-top').innerHTML = 'Triviela #' + num(String(S.day + 1));
+    $('share-txt').innerHTML = num(esc(word)) + '<br>triviela.net';
+    $('share-grid').innerHTML = '<span class="sgrid">' + grid().map(function (r) { return '<span class="srow">' + r.map(function (c) { return c === 'ball' ? svg('ball', 2, 'ball-i', true) : '<i class="sq ' + c + '"></i>'; }).join('') + '</span>'; }).join('') + '</span>';
     $('share-mark').innerHTML = svg('share', 3);
     beta(L, 'end'); view('end'); clearInterval(tick); endRow(); if (!DEMO) tick = setInterval(clock, 1000);
   }

@@ -26,9 +26,10 @@ def ok(cond, what):
     print(('ok    ' if cond else 'FAIL  ') + what)
     if not cond: fails.append(what)
 
-def grid(s):   # the share grid the page should write: tapped cards in order, six to a row, ❌ for the miss
-    cells = ['❌' if s['res'][i] == 2 else '⬜🟨🟥'[s['tiles'][i]['d'] - 1] for i in s['path'] if s['res'][i]]
-    return '\n'.join(''.join(cells[k:k + 6]) for k in range(0, len(cells), 6))
+def grid(s):   # the share grid the page should write: a ball per right answer in tap order, six to a row, a net after each goal, ❌ for the miss
+    cells = ['⚽' if s['res'][i] == 1 else '❌' for i in s['path'] if s['res'][i]]
+    rows = [cells[k:k + 6] for k in range(0, len(cells), 6)]
+    return '\n'.join(''.join(r) + ('🥅' if len(r) == 6 and r[-1] == '⚽' else '') for r in rows)
 
 
 async def run(b, html, demo):
@@ -67,7 +68,7 @@ async def run(b, html, demo):
     await pg.click(f'.choice[data-w="{wrong}"]'); await pg.click('#flip'); await pg.wait_for_timeout(300)
     await pg.click('#share'); await pg.wait_for_timeout(200)
     text = await pg.evaluate("navigator.clipboard.readText()")
-    ok(text == 'Triviela #1\n' + grid(await state()) + '\n⚽⚽ Brace · 12\ntriviela.net', 'the share text is exact: ' + repr(text))
+    ok(text == 'Triviela #1\n' + grid(await state()) + '\nBrace · 12\ntriviela.net', 'the share text is exact: ' + repr(text))
     lost = await pg.evaluate("document.querySelector('#v-end .lost .fill') && document.querySelector('#v-end .lost .fill').textContent")
     ok(lost == w, 'the end screen fills in the right answer of the card that got you')
     # 4. locked
