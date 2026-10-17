@@ -3826,10 +3826,15 @@
   "v": "ok"
  },
  "laliga:13": {
-  "at": "2026-10-17T00:40:59Z",
-  "h": "5a63fe7454",
-  "note": "Soccer-wise fine. One flag for the fact checker: laliga.com gives Zarra 251 on one page and 253 on another, and the number now sits in the sentence and on the tile",
-  "v": "ok"
+  "at": "2026-10-17T00:46:49Z",
+  "fix": {
+   "ex": "Telmo Zarra held LaLiga’s scoring record until Lionel Messi passed him in 2014",
+   "hook": "Messi",
+   "means": "Messi did it with a hat trick"
+  },
+  "h": "9ba7b77386",
+  "note": "The number is rightly gone, but the tile is now a bare year, which tells a fan nothing. Put the famous moment in the sentence instead: the cited laliga.com page is about Messi taking the record from Zarra in 2014. Messi is never one of this card’s decoys, and the draw keeps it apart from cards whose answer is Messi",
+  "v": "fix"
  },
  "laliga:14": {
   "at": "2026-10-17T00:02:07Z",
