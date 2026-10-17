@@ -3737,6 +3737,418 @@
   "h": "3156c2a568",
   "v": "ok"
  },
+ "legends:0": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "911cc0a677",
+  "note": "Twin of intl-men:16 (same fact, same hook). The draw keeps them apart, but Trivelle should keep one",
+  "v": "ok"
+ },
+ "legends:1": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "399797cacf",
+  "v": "ok"
+ },
+ "legends:10": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "c55a5c64ca",
+  "v": "ok"
+ },
+ "legends:11": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "6e85506ddd",
+  "note": "Twin of awards:6 (same answer, same fact). The draw keeps them apart, but Trivelle should keep one",
+  "v": "ok"
+ },
+ "legends:12": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "e8109fe03d",
+  "note": "Twin of intl-men:22 (same answer, same fact). The draw keeps them apart, but Trivelle should keep one",
+  "v": "ok"
+ },
+ "legends:13": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "edbbfbbf07",
+  "v": "ok"
+ },
+ "legends:14": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "e66d55b0c5",
+  "v": "ok"
+ },
+ "legends:15": {
+  "at": "2026-10-17T00:05:12Z",
+  "fix": {
+   "ex": "Mário Zagallo was the first man to win the World Cup as a player and as a coach",
+   "hook": "coach"
+  },
+  "h": "3f855d73a2",
+  "note": "“Before Deschamps” reads as if Deschamps came next, but Beckenbauer did it second (1974 and 1990). The plain record says it right",
+  "v": "fix"
+ },
+ "legends:16": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "270880ab36",
+  "v": "ok"
+ },
+ "legends:17": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "ca658171c5",
+  "note": "Still right after Mbappé’s 2022 hat trick, since it says first",
+  "v": "ok"
+ },
+ "legends:18": {
+  "at": "2026-10-17T00:05:12Z",
+  "fix": {
+   "d": 3
+  },
+  "h": "927158af49",
+  "note": "Birgit Prinz is the women’s game in depth for a US fan, and the decoys are all Americans who played 2003 (Hamm, Wambach). Red is honest. Near awards:19 (Prinz, 2003)",
+  "v": "fix"
+ },
+ "legends:19": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "bd4da01ae2",
+  "note": "Twin of intl-women:14 (same sentence). The draw keeps them apart, but Trivelle should keep one",
+  "v": "ok"
+ },
+ "legends:2": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "dabc4bce91",
+  "note": "Still true after 2026 (Rodri won the Golden Ball, Messi the Silver). Twin of awards:0 (same sentence). The draw keeps them apart, but Trivelle should keep one",
+  "v": "ok"
+ },
+ "legends:20": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "3faa4e6e92",
+  "v": "ok"
+ },
+ "legends:21": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "c04fb0e5ff",
+  "v": "ok"
+ },
+ "legends:22": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "e6fa1cf6d0",
+  "note": "Twin of intl-women:57 (same fact). The draw keeps them apart, but Trivelle should keep one. Also near awards:20",
+  "v": "ok"
+ },
+ "legends:23": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "d834b2a41b",
+  "v": "ok"
+ },
+ "legends:24": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "bf8b9ccbc0",
+  "v": "ok"
+ },
+ "legends:25": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "0106c640bc",
+  "note": "Twin of awards:9 (same sentence). The draw keeps them apart, but Trivelle should keep one. Also near seriea:28 (Ballon d’Or 2007)",
+  "v": "ok"
+ },
+ "legends:26": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "b578b74b94",
+  "note": "FIFA: Messi became the second man to play three finals in 2026, after Cafu, so first still holds. Messi is grouped out as a decoy, good",
+  "v": "ok"
+ },
+ "legends:27": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "bb11029d4a",
+  "note": "Plays trivially: its only decoys are 34–354, nobody scores 34 at one World Cup, so the white comes from the decoys, not the fact. The plausible ones (17, 22) are grouped out. The same card is already in awards:57 and ligue1:57",
+  "v": "cut"
+ },
+ "legends:28": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "0818c72dc2",
+  "note": "Decoys skew high (34–354) because the group [13, 17, 22] keeps 22 away. Dropping that group would help, all three are certainly wrong for each other. Near-twin of intl-women:13 (Marta, most goals)",
+  "v": "ok"
+ },
+ "legends:29": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "c2f931145e",
+  "note": "Plays trivially: every decoy is 13–49, so “world-record ___ games” can only be 354. Word-for-word the same card is intl-women:46",
+  "v": "cut"
+ },
+ "legends:3": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "dd8a488501",
+  "note": "FIFA confirms the two goals in the 5–0 win over Uzbekistan. Twin of wc26:14 (same fact). The draw keeps them apart, but Trivelle should keep one",
+  "v": "ok"
+ },
+ "legends:30": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "a3c10683fe",
+  "v": "ok"
+ },
+ "legends:31": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "5f504752d0",
+  "v": "ok"
+ },
+ "legends:32": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "c8d30de559",
+  "note": "FIFA’s oldest-players list still has El Hadary first after 2026",
+  "v": "ok"
+ },
+ "legends:33": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "369ad81573",
+  "v": "ok"
+ },
+ "legends:34": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "6ff3cba27a",
+  "note": "Twin of wc26:49 (same fact, same hook). The draw keeps them apart, but Trivelle should keep one",
+  "v": "ok"
+ },
+ "legends:35": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "31127bbbdd",
+  "note": "Decoys skew high (34–354) because of the group [13, 17, 22]. Twin of awards:55 (same sentence). The draw keeps them apart, but Trivelle should keep one. Also near wc26:12",
+  "v": "ok"
+ },
+ "legends:36": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "4888349793",
+  "v": "ok"
+ },
+ "legends:37": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "7b82c9e193",
+  "note": "White honestly as played, the name points to Japan. Twin of intl-women:22 (same fact). The draw keeps them apart, but Trivelle should keep one",
+  "v": "ok"
+ },
+ "legends:38": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "854c2a9f62",
+  "v": "ok"
+ },
+ "legends:39": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "ba3801a8ac",
+  "note": "Near nwsl:26 and intl-women:20 (Sinclair for Canada)",
+  "v": "ok"
+ },
+ "legends:4": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "bdb97d6f7d",
+  "note": "Twin of intl-men:18 (same fact, same hook). The draw keeps them apart, but Trivelle should keep one",
+  "v": "ok"
+ },
+ "legends:40": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "15a01236ac",
+  "v": "ok"
+ },
+ "legends:41": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "916a72825f",
+  "v": "ok"
+ },
+ "legends:42": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "2021e17314",
+  "v": "ok"
+ },
+ "legends:43": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "1cbfef429a",
+  "v": "ok"
+ },
+ "legends:44": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "6801bfaf40",
+  "v": "ok"
+ },
+ "legends:45": {
+  "at": "2026-10-17T00:05:12Z",
+  "fix": {
+   "d": 3
+  },
+  "h": "e8a55b4c12",
+  "note": "Chilavert is a cult name for real fans, not regular ones, and Colombia (Higuita’s country) is a strong decoy. Red",
+  "v": "fix"
+ },
+ "legends:46": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "c10dd26b8c",
+  "v": "ok"
+ },
+ "legends:47": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "81b6bcd202",
+  "v": "ok"
+ },
+ "legends:48": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "ecb8f44c68",
+  "v": "ok"
+ },
+ "legends:49": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "8b118c2a8f",
+  "v": "ok"
+ },
+ "legends:5": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "2b39abc0b1",
+  "note": "Twin of intl-men:20 (same fact). The draw keeps them apart, but Trivelle should keep one",
+  "v": "ok"
+ },
+ "legends:50": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "6fe90c3fdc",
+  "v": "ok"
+ },
+ "legends:51": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "f1d73e4df6",
+  "v": "ok"
+ },
+ "legends:52": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "c0fa1ff364",
+  "note": "Near-twin of ucl:3 (Cruyff, Ajax, 1971)",
+  "v": "ok"
+ },
+ "legends:53": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "5cfa33bc37",
+  "v": "ok"
+ },
+ "legends:54": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "b831ea47b9",
+  "v": "ok"
+ },
+ "legends:55": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "4080a7c154",
+  "note": "Near-twin of seriea:18 (Maldini, whole career at Milan)",
+  "v": "ok"
+ },
+ "legends:56": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "e3a5e097e7",
+  "v": "ok"
+ },
+ "legends:57": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "dacff647ff",
+  "note": "Near-twin of ucl:25 (Drogba, Chelsea, 2012 final)",
+  "v": "ok"
+ },
+ "legends:58": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "b722767d9d",
+  "v": "ok"
+ },
+ "legends:59": {
+  "at": "2026-10-17T00:05:12Z",
+  "fix": {
+   "d": 1
+  },
+  "h": "9a9b02a4d2",
+  "note": "As played it is a gimme: Portland Thorns is the only women’s or American club among its decoys (Santos, Dynamo Moscow, Reims), so a new parent gets it from the name Christine alone. White is honest. Near nwsl:21",
+  "v": "fix"
+ },
+ "legends:6": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "c085f0080a",
+  "note": "Twin of intl-men:26 (same fact, same hook). The draw keeps them apart, but Trivelle should keep one",
+  "v": "ok"
+ },
+ "legends:60": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "8c0d2fb90c",
+  "v": "ok"
+ },
+ "legends:61": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "7a288daa04",
+  "v": "ok"
+ },
+ "legends:62": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "1b24917e2e",
+  "v": "ok"
+ },
+ "legends:63": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "a2b92b5c1c",
+  "note": "Twin of bundesliga:42 (same sentence). The draw keeps them apart, but Trivelle should keep one",
+  "v": "ok"
+ },
+ "legends:64": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "e8612a7051",
+  "v": "ok"
+ },
+ "legends:65": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "5fa4f6028b",
+  "v": "ok"
+ },
+ "legends:66": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "3034b7a13d",
+  "v": "ok"
+ },
+ "legends:67": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "d6882e8b27",
+  "v": "ok"
+ },
+ "legends:68": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "6d945a4153",
+  "note": "FIFA’s interview has him playing at 58",
+  "v": "ok"
+ },
+ "legends:69": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "d9128b97f7",
+  "v": "ok"
+ },
+ "legends:7": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "21db5db0fb",
+  "note": "Near-twin of awards:50, whose answer 2009 is in this sentence",
+  "v": "ok"
+ },
+ "legends:70": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "6ffd650693",
+  "note": "Twin of bundesliga:43 (same sentence). The draw keeps them apart, but Trivelle should keep one",
+  "v": "ok"
+ },
+ "legends:71": {
+  "at": "2026-10-17T00:05:12Z",
+  "fix": {
+   "means": "Spanish for “the Flea”",
+   "w": "La Pulga"
+  },
+  "h": "250d461df4",
+  "note": "Fans everywhere say La Pulga. The full La Pulga Atómica is rare. FIFA’s source has the long form, which contains it",
+  "v": "fix"
+ },
+ "legends:8": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "f2ac984eed",
+  "note": "Twin of intl-women:60 (same fact, same hook). The draw keeps them apart, but Trivelle should keep one. Also near awards:51",
+  "v": "ok"
+ },
+ "legends:9": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "6638388cc2",
+  "note": "Still the only keeper to win it after 2026",
+  "v": "ok"
+ },
  "ligamx:0": {
   "at": "2026-10-17T00:01:31Z",
   "fix": {
