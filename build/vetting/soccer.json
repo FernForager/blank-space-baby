@@ -6136,139 +6136,127 @@
   "v": "ok"
  },
  "nicknames:0": {
-  "at": "2026-10-17T00:00:38Z",
-  "h": "aa49098494",
-  "note": "Near-twin: epl:33 is the same fact. Keep this richer one and cut that one",
+  "at": "2026-10-17T00:19:44Z",
+  "h": "c0c32fa6bd",
+  "note": "Still a fair white: Arsenal points to guns without giving it away. Near-twin epl:33 as noted before",
   "v": "ok"
  },
  "nicknames:1": {
-  "at": "2026-10-17T00:00:38Z",
-  "h": "a8eff0e6d3",
-  "note": "Twin risk with nicknames:30 is handled by the draw (Man United is in this sentence)",
+  "at": "2026-10-17T00:19:44Z",
+  "h": "aa53f43110",
   "v": "ok"
  },
  "nicknames:10": {
-  "at": "2026-10-17T00:00:38Z",
-  "h": "ed14b534b1",
-  "note": "Near-twin of epl-more:62 (same fact). Its means also names the answer of epl-more:57 (Thames Ironworks)",
+  "at": "2026-10-17T00:19:44Z",
+  "h": "1847beda72",
   "v": "ok"
  },
  "nicknames:11": {
-  "at": "2026-10-17T00:00:38Z",
-  "h": "3037f6c2f3",
-  "note": "Near-twin: epl-more:65, Jimmy Hill in both is the same fact. Keep this richer one and cut that one",
+  "at": "2026-10-17T00:19:44Z",
+  "h": "c6f8338220",
   "v": "ok"
  },
  "nicknames:12": {
-  "at": "2026-10-17T00:00:38Z",
-  "h": "b5f5800dc1",
-  "note": "Near-twin of epl:39 (Tractor Boys). Bobby Robson in the sentence keeps it apart from epl-more:32",
+  "at": "2026-10-17T00:19:44Z",
+  "h": "de81e75d3c",
   "v": "ok"
  },
  "nicknames:13": {
-  "at": "2026-10-17T00:00:38Z",
-  "h": "6df4473a45",
+  "at": "2026-10-17T00:19:44Z",
+  "h": "9faa7b61aa",
   "v": "ok"
  },
  "nicknames:14": {
-  "at": "2026-10-17T00:00:38Z",
-  "h": "8a8c6f206c",
+  "at": "2026-10-17T00:19:44Z",
+  "h": "3a1617dde4",
   "v": "ok"
  },
  "nicknames:15": {
-  "at": "2026-10-17T00:00:38Z",
-  "h": "3cedb22afe",
-  "note": "Near-twin of bundesliga:36 (same fact) and bundesliga:47 (Hennes)",
+  "at": "2026-10-17T00:19:44Z",
+  "h": "8080ba304a",
   "v": "ok"
  },
  "nicknames:16": {
-  "at": "2026-10-17T00:00:38Z",
-  "h": "0161512706",
-  "note": "Near-twin: bundesliga:37 is the same fact. Keep this richer one and cut that one",
+  "at": "2026-10-17T00:19:44Z",
+  "h": "fd68312d30",
   "v": "ok"
  },
  "nicknames:17": {
-  "at": "2026-10-17T00:00:38Z",
-  "h": "f459c15958",
-  "note": "Near-twin: bundesliga:40 is the same fact. Keep this richer one and cut that one",
+  "at": "2026-10-17T00:19:44Z",
+  "h": "6c591a765b",
   "v": "ok"
  },
  "nicknames:18": {
-  "at": "2026-10-17T00:00:38Z",
-  "h": "ca57cb17ca",
+  "at": "2026-10-17T00:19:44Z",
+  "h": "e0feda4f58",
   "v": "ok"
  },
  "nicknames:19": {
-  "at": "2026-10-17T00:00:38Z",
-  "h": "2bd53089b5",
+  "at": "2026-10-17T00:19:44Z",
+  "h": "7286d4692c",
   "v": "ok"
  },
  "nicknames:2": {
-  "at": "2026-10-17T00:00:38Z",
-  "h": "1b15ed7fef",
+  "at": "2026-10-17T00:19:44Z",
+  "h": "99d21bbcf4",
   "v": "ok"
  },
  "nicknames:20": {
-  "at": "2026-10-17T00:00:38Z",
-  "h": "be920e9f3e",
+  "at": "2026-10-17T00:19:44Z",
+  "h": "09df4b3d22",
   "note": "Still four titles after 2025–26",
   "v": "ok"
  },
  "nicknames:21": {
-  "at": "2026-10-17T00:00:38Z",
-  "h": "7681066460",
+  "at": "2026-10-17T00:19:44Z",
+  "h": "ebb2e32bbe",
+  "note": "The new “after their kit” ending reads more naturally. Red Devils, Reds and Dino are rightly kept off",
   "v": "ok"
  },
  "nicknames:22": {
-  "at": "2026-10-17T00:00:38Z",
-  "h": "e5c8235518",
+  "at": "2026-10-17T00:19:44Z",
+  "h": "025e982789",
   "v": "ok"
  },
  "nicknames:23": {
-  "at": "2026-10-17T00:00:38Z",
-  "h": "3795cec161",
+  "at": "2026-10-17T00:19:44Z",
+  "h": "2ba9aa7b9d",
   "v": "ok"
  },
  "nicknames:24": {
-  "at": "2026-10-17T00:00:38Z",
-  "fix": {
-   "ex": "Fürth, three-time German champions, are the Clover Leaves",
-   "means": "The first came before World War I"
-  },
-  "h": "4755b7a037",
-  "note": "“Champions in 1926 and 1929” reads as two titles, but bundesliga.com calls Fürth three-time champions",
-  "v": "fix"
+  "at": "2026-10-17T00:19:44Z",
+  "h": "1abc5527d3",
+  "v": "ok"
  },
  "nicknames:25": {
-  "at": "2026-10-17T00:00:38Z",
-  "h": "8c5542c0dd",
+  "at": "2026-10-17T00:19:44Z",
+  "h": "db14e62327",
+  "note": "Fans think of Juventus as the Old Lady, which makes a real red, but the sentence names Hertha so it stays certainly right",
   "v": "ok"
  },
  "nicknames:26": {
-  "at": "2026-10-17T00:00:38Z",
-  "h": "c32aafa73e",
+  "at": "2026-10-17T00:19:44Z",
+  "h": "c1c99f16b4",
   "v": "ok"
  },
  "nicknames:27": {
-  "at": "2026-10-17T00:00:38Z",
-  "h": "e0658b8d4d",
+  "at": "2026-10-17T00:19:44Z",
+  "h": "8b6fcaffef",
   "v": "ok"
  },
  "nicknames:28": {
-  "at": "2026-10-17T00:00:38Z",
-  "h": "dd743c2ab4",
+  "at": "2026-10-17T00:19:44Z",
+  "h": "01195b8c1b",
   "v": "ok"
  },
  "nicknames:29": {
-  "at": "2026-10-17T00:00:38Z",
-  "h": "b49cbc1321",
-  "note": "Shares the answer Lions with bundesliga:39 (1860 Munich), so the draw keeps them apart",
+  "at": "2026-10-17T00:19:44Z",
+  "h": "c3a2af3165",
   "v": "ok"
  },
  "nicknames:3": {
-  "at": "2026-10-17T00:00:38Z",
-  "h": "3c55acff45",
-  "note": "Near-twin: epl-more:61, same story even in the means is the same fact. Keep this richer one and cut that one",
+  "at": "2026-10-17T00:19:44Z",
+  "h": "fcf3bea92a",
   "v": "ok"
  },
  "nicknames:30": {
@@ -6298,9 +6286,9 @@
   "v": "ok"
  },
  "nicknames:35": {
-  "at": "2026-10-17T00:00:38Z",
-  "h": "e81eb23c97",
-  "note": "Near-twin of bundesliga:47 (Hennes is that card’s answer) and of nicknames:15",
+  "at": "2026-10-17T00:19:44Z",
+  "h": "06c8c56b95",
+  "note": "bundesliga.com: circus director Carola Williams gave the goat during carnival, 13 February 1950. Near-twin of nicknames:15 (Cologne in its sentence and hook, Billy Goats in this means), so the draw keeps them apart",
   "v": "ok"
  },
  "nicknames:36": {
@@ -6325,9 +6313,8 @@
   "v": "ok"
  },
  "nicknames:4": {
-  "at": "2026-10-17T00:00:38Z",
-  "h": "b42ca8a6e1",
-  "note": "Near-twin: epl:38, Benfica in both is the same fact. Keep this richer one and cut that one",
+  "at": "2026-10-17T00:19:44Z",
+  "h": "0dc03000ea",
   "v": "ok"
  },
  "nicknames:40": {
@@ -6387,19 +6374,16 @@
   "v": "cut"
  },
  "nicknames:5": {
-  "at": "2026-10-17T00:00:38Z",
-  "h": "61b992476b",
-  "note": "Near-twin: epl:36, almost word for word, Stadium of Light in both is the same fact. Keep this richer one and cut that one",
+  "at": "2026-10-17T00:19:44Z",
+  "h": "5d22172797",
+  "note": "premierleague.com badges page backs the means: the two black lions tie in with the Black Cats name",
   "v": "ok"
  },
  "nicknames:50": {
-  "at": "2026-10-17T00:00:38Z",
-  "fix": {
-   "ex": "Valencia are known as Che, a local word that means hey"
-  },
-  "h": "9f60b95ea6",
-  "note": "Plays trivially easy: only hey fits “a local way of saying ___,” every other decoy is a noun. “A local word that means ___” takes them all",
-  "v": "fix"
+  "at": "2026-10-17T00:19:44Z",
+  "h": "a5c6237db5",
+  "note": "Fresh look: “a local way of saying ___” reads fine with every decoy (saying frogs, saying oak), so it no longer plays trivially easy. Fair yellow",
+  "v": "ok"
  },
  "nicknames:51": {
   "at": "2026-10-17T00:00:38Z",
@@ -6412,13 +6396,10 @@
   "v": "ok"
  },
  "nicknames:53": {
-  "at": "2026-10-17T00:00:38Z",
-  "fix": {
-   "d": 2
-  },
-  "h": "ebe9321a28",
-  "note": "Not white: a 10-year-old doesn’t know the word vermilion, and Mallorca’s nickname isn’t a basic. A regular fan gets it from the sound-alike",
-  "v": "fix"
+  "at": "2026-10-17T00:19:44Z",
+  "h": "a26b6d0381",
+  "note": "Fresh look: the Bermellones–vermilion sound-alike lets a kid or a new parent get it without knowing the word, and the color decoys are kept off by groups. Fair white as played",
+  "v": "ok"
  },
  "nicknames:54": {
   "at": "2026-10-17T00:00:38Z",
@@ -6447,18 +6428,14 @@
   "v": "ok"
  },
  "nicknames:59": {
-  "at": "2026-10-17T00:00:38Z",
-  "fix": {
-   "ex": "Las Palmas fans chant “Pío-Pío” in honor of the island canary"
-  },
-  "h": "095fa939b6",
-  "note": "The article gives it away: only singular decoys fit “the sound of a ___,” and almost all of them are plural. The new wording takes every decoy. Still an honest white",
-  "v": "fix"
+  "at": "2026-10-17T00:19:44Z",
+  "h": "1f1195ece3",
+  "note": "“The song of the ___” now takes every decoy. Pío-Pío as a chirp and the Canary Islands make it an honest white",
+  "v": "ok"
  },
  "nicknames:6": {
-  "at": "2026-10-17T00:00:38Z",
-  "h": "6dedc09141",
-  "note": "Near-twin: epl:37 is the same fact. Keep this richer one and cut that one",
+  "at": "2026-10-17T00:19:44Z",
+  "h": "833d633988",
   "v": "ok"
  },
  "nicknames:60": {
@@ -6488,30 +6465,40 @@
   "v": "ok"
  },
  "nicknames:64": {
-  "at": "2026-10-17T00:00:38Z",
+  "at": "2026-10-17T00:19:44Z",
   "fix": {
-   "ex": "Werder, as in Werder Bremen, is a German word meaning island"
+   "ex": "Werder, as in Werder Bremen, is a German word meaning island",
+   "means": "Their stadium sits on one in the Weser"
   },
-  "h": "7019f182aa",
-  "note": "“Means a small river ___” only fits singular decoys, and river all but says island. bundesliga.com: Werder means small islands in a river",
+  "h": "b493ca76db",
+  "note": "Still plays trivially easy: “means ___ in a river” rules out almost every decoy (oak, hey, canary, miners, vermilion in a river). Move the river to the means, which bundesliga.com backs: Werder means small islands in a river, and the Weserstadion sits on Peterswerder, one of them",
   "v": "fix"
  },
+ "nicknames:65": {
+  "at": "2026-10-17T00:19:44Z",
+  "h": "5226555fea",
+  "note": "Honest yellow and good decoys, none could be Everton. The means is true (1871 chapel plus seven years) but doesn’t say why Toffees, and the cited page never names the nickname: the fact checker’s call. No twin left now that epl:34 moved here",
+  "v": "ok"
+ },
+ "nicknames:66": {
+  "at": "2026-10-17T00:19:44Z",
+  "h": "1b2191c3c9",
+  "note": "Honest yellow, and the Black Cats decoy (the Tyne–Wear rival) is a nice touch. The cited match report calls them the Magpies. No twin left now that epl:35 moved here",
+  "v": "ok"
+ },
  "nicknames:7": {
-  "at": "2026-10-17T00:00:38Z",
-  "h": "8b9c6b6618",
-  "note": "Near-twin: epl-more:63 is the same fact. Keep this richer one and cut that one",
+  "at": "2026-10-17T00:19:44Z",
+  "h": "30f78321f4",
   "v": "ok"
  },
  "nicknames:8": {
-  "at": "2026-10-17T00:00:38Z",
-  "h": "8bbe80df93",
-  "note": "Near-twin of epl:27, whose means names this answer, and epl-more:66, whose sentence holds it",
+  "at": "2026-10-17T00:19:44Z",
+  "h": "3f56ff1d2e",
   "v": "ok"
  },
  "nicknames:9": {
-  "at": "2026-10-17T00:00:38Z",
-  "h": "eb42f42fdb",
-  "note": "Near-twin: epl-more:66 is the same fact. Keep this richer one and cut that one",
+  "at": "2026-10-17T00:19:44Z",
+  "h": "1cc4aadb61",
   "v": "ok"
  },
  "nwsl:0": {
