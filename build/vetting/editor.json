@@ -101,13 +101,9 @@
   "v": "ok"
  },
  "alpha:16": {
-  "at": "2026-10-17T00:25:20Z",
-  "fix": {
-   "ex": "The defender answered every coaching tip with “skibidi”"
-  },
-  "h": "1f8e7e1f5e",
-  "note": "“the nonsense word” points straight at skibidi and repeats the means line",
-  "v": "fix"
+  "at": "2026-10-17T00:34:39Z",
+  "h": "0bb82f4359",
+  "v": "ok"
  },
  "alpha:17": {
   "at": "2026-10-16T23:55:32Z",
@@ -569,8 +565,8 @@
   "v": "ok"
  },
  "awards:0": {
-  "at": "2026-10-17T00:15:22Z",
-  "h": "45e37fca46",
+  "at": "2026-10-17T00:34:39Z",
+  "h": "bfa7cd6b3c",
   "v": "ok"
  },
  "awards:1": {
@@ -594,8 +590,8 @@
   "v": "ok"
  },
  "awards:13": {
-  "at": "2026-10-16T23:59:07Z",
-  "h": "c2d1cb191b",
+  "at": "2026-10-17T00:34:39Z",
+  "h": "268d274959",
   "v": "ok"
  },
  "awards:14": {
@@ -811,8 +807,8 @@
   "v": "ok"
  },
  "awards:5": {
-  "at": "2026-10-17T00:15:22Z",
-  "h": "3cb45a9b7a",
+  "at": "2026-10-17T00:34:39Z",
+  "h": "bca8f56050",
   "v": "ok"
  },
  "awards:50": {
@@ -925,8 +921,8 @@
   "v": "ok"
  },
  "awards:69": {
-  "at": "2026-10-16T23:59:07Z",
-  "h": "7750dab19a",
+  "at": "2026-10-17T00:34:39Z",
+  "h": "9d15b83518",
   "v": "ok"
  },
  "awards:7": {
@@ -935,13 +931,9 @@
   "v": "ok"
  },
  "awards:70": {
-  "at": "2026-10-16T23:59:07Z",
-  "fix": {
-   "ex": "Lizbeth Ovalle’s backheel volley won the 2025 FIFA Marta Award"
-  },
-  "h": "f0f3bd67b4",
-  "note": "MW’s first spelling is backheel",
-  "v": "fix"
+  "at": "2026-10-17T00:34:39Z",
+  "h": "f9687230d7",
+  "v": "ok"
  },
  "awards:71": {
   "at": "2026-10-16T23:59:07Z",
@@ -2897,13 +2889,9 @@
   "v": "ok"
  },
  "intl-men:28": {
-  "at": "2026-10-16T23:58:53Z",
-  "fix": {
-   "means": "Including two hat tricks"
-  },
-  "h": "c3302bd58f",
-  "note": "Hat trick is open in M-W",
-  "v": "fix"
+  "at": "2026-10-17T00:34:39Z",
+  "h": "f98a7b38d8",
+  "v": "ok"
  },
  "intl-men:29": {
   "at": "2026-10-16T23:58:53Z",
@@ -3216,8 +3204,8 @@
   "v": "ok"
  },
  "intl-women:22": {
-  "at": "2026-10-16T23:58:53Z",
-  "h": "a6534f84a9",
+  "at": "2026-10-17T00:34:39Z",
+  "h": "976299857d",
   "v": "ok"
  },
  "intl-women:23": {
@@ -3867,8 +3855,8 @@
   "v": "ok"
  },
  "legends:18": {
-  "at": "2026-10-16T23:59:07Z",
-  "h": "927158af49",
+  "at": "2026-10-17T00:34:39Z",
+  "h": "cffa64afe4",
   "v": "ok"
  },
  "legends:19": {
@@ -3917,13 +3905,13 @@
   "v": "ok"
  },
  "legends:27": {
-  "at": "2026-10-17T00:15:22Z",
-  "h": "0f7c1dfa63",
+  "at": "2026-10-17T00:34:39Z",
+  "h": "a4ddc5e4b2",
   "v": "ok"
  },
  "legends:28": {
-  "at": "2026-10-17T00:15:22Z",
-  "h": "99fb3bfad7",
+  "at": "2026-10-17T00:34:39Z",
+  "h": "1194f6d081",
   "v": "ok"
  },
  "legends:29": {
@@ -3938,27 +3926,23 @@
   "v": "ok"
  },
  "legends:30": {
-  "at": "2026-10-16T23:59:07Z",
-  "h": "a3c10683fe",
+  "at": "2026-10-17T00:34:39Z",
+  "h": "56692b795a",
   "v": "ok"
  },
  "legends:31": {
-  "at": "2026-10-16T23:59:07Z",
-  "h": "5f504752d0",
+  "at": "2026-10-17T00:34:39Z",
+  "h": "cf75b30d2d",
   "v": "ok"
  },
  "legends:32": {
-  "at": "2026-10-16T23:59:07Z",
-  "fix": {
-   "hook": "El Hadary"
-  },
-  "h": "c8d30de559",
-  "note": "A player beats a nation as the hook",
-  "v": "fix"
+  "at": "2026-10-17T00:34:39Z",
+  "h": "e6acbdda43",
+  "v": "ok"
  },
  "legends:33": {
-  "at": "2026-10-16T23:59:07Z",
-  "h": "369ad81573",
+  "at": "2026-10-17T00:34:39Z",
+  "h": "f1fa9808bd",
   "v": "ok"
  },
  "legends:34": {
@@ -3967,8 +3951,8 @@
   "v": "ok"
  },
  "legends:35": {
-  "at": "2026-10-17T00:15:22Z",
-  "h": "02e8eff24c",
+  "at": "2026-10-17T00:34:39Z",
+  "h": "ab74b421fc",
   "v": "ok"
  },
  "legends:36": {
@@ -4543,13 +4527,9 @@
   "v": "ok"
  },
  "ligamx:61": {
-  "at": "2026-10-16T23:58:25Z",
-  "fix": {
-   "ex": "Liga MX’s word for each round of league games is Jornada"
-  },
-  "h": "95b7b4be16",
-  "note": "a before the blank ruled out Apertura and Ida",
-  "v": "fix"
+  "at": "2026-10-17T00:34:39Z",
+  "h": "2e77cc3d85",
+  "v": "ok"
  },
  "ligamx:62": {
   "at": "2026-10-16T23:58:25Z",
@@ -4576,8 +4556,8 @@
   "v": "ok"
  },
  "ligamx:7": {
-  "at": "2026-10-17T00:09:05Z",
-  "h": "2714d3e326",
+  "at": "2026-10-17T00:34:39Z",
+  "h": "636c03ea91",
   "v": "ok"
  },
  "ligamx:8": {
@@ -4600,8 +4580,8 @@
   "v": "fix"
  },
  "ligue1:1": {
-  "at": "2026-10-17T00:09:05Z",
-  "h": "e80c8e6aa1",
+  "at": "2026-10-17T00:34:39Z",
+  "h": "a460bd546c",
   "v": "ok"
  },
  "ligue1:10": {
@@ -4704,13 +4684,9 @@
   "v": "ok"
  },
  "ligue1:28": {
-  "at": "2026-10-16T23:58:01Z",
-  "fix": {
-   "means": "Le Volcan means “the Volcano”"
-  },
-  "h": "cef415c1d6",
-  "note": "Means repeated the sentence, now translates the nickname",
-  "v": "fix"
+  "at": "2026-10-17T00:34:39Z",
+  "h": "a5ec09fc17",
+  "v": "ok"
  },
  "ligue1:29": {
   "at": "2026-10-16T23:58:01Z",
@@ -4747,22 +4723,14 @@
   "v": "fix"
  },
  "ligue1:34": {
-  "at": "2026-10-16T23:58:01Z",
-  "fix": {
-   "means": "Roazhon is Breton for Rennes"
-  },
-  "h": "72716c7a33",
-  "note": "means repeated the sentence. New fact, for the fact checker",
-  "v": "fix"
+  "at": "2026-10-17T00:34:39Z",
+  "h": "1f7742883e",
+  "v": "ok"
  },
  "ligue1:35": {
-  "at": "2026-10-16T23:58:01Z",
-  "fix": {
-   "means": "Named for Prince Louis II"
-  },
-  "h": "7b605c0d44",
-  "note": "means repeated the sentence. New fact, for the fact checker",
-  "v": "fix"
+  "at": "2026-10-17T00:34:39Z",
+  "h": "51c9b631ec",
+  "v": "ok"
  },
  "ligue1:36": {
   "at": "2026-10-16T23:58:01Z",
@@ -4880,8 +4848,8 @@
   "v": "ok"
  },
  "ligue1:55": {
-  "at": "2026-10-17T00:09:05Z",
-  "h": "a6d1334ac2",
+  "at": "2026-10-17T00:34:39Z",
+  "h": "d4344ef38e",
   "v": "ok"
  },
  "ligue1:56": {
@@ -4895,8 +4863,8 @@
   "v": "ok"
  },
  "ligue1:58": {
-  "at": "2026-10-17T00:09:05Z",
-  "h": "ac1e1e9a10",
+  "at": "2026-10-17T00:34:39Z",
+  "h": "6eecc6d3d6",
   "v": "ok"
  },
  "ligue1:59": {
@@ -5508,8 +5476,8 @@
   "v": "ok"
  },
  "mls:49": {
-  "at": "2026-10-17T00:09:05Z",
-  "h": "04e7647785",
+  "at": "2026-10-17T00:34:39Z",
+  "h": "887cfb32c5",
   "v": "ok"
  },
  "mls:5": {
@@ -5528,8 +5496,8 @@
   "v": "ok"
  },
  "mls:52": {
-  "at": "2026-10-17T00:09:05Z",
-  "h": "46a3cd2efd",
+  "at": "2026-10-17T00:34:39Z",
+  "h": "8ad4a7315e",
   "v": "ok"
  },
  "mls:53": {
@@ -5538,8 +5506,8 @@
   "v": "ok"
  },
  "mls:54": {
-  "at": "2026-10-17T00:09:05Z",
-  "h": "45b02bf66b",
+  "at": "2026-10-17T00:34:39Z",
+  "h": "7af7219afc",
   "v": "ok"
  },
  "mls:55": {
@@ -5681,8 +5649,8 @@
   "v": "fix"
  },
  "nicknames:22": {
-  "at": "2026-10-17T00:15:22Z",
-  "h": "025e982789",
+  "at": "2026-10-17T00:34:39Z",
+  "h": "85ccc0d8ed",
   "v": "ok"
  },
  "nicknames:23": {
@@ -5999,13 +5967,9 @@
   "v": "ok"
  },
  "nwsl:18": {
-  "at": "2026-10-16T23:58:42Z",
-  "fix": {
-   "ex": "The Wave retired Alex Morgan’s No. 13 shirt"
-  },
-  "h": "678dea3edf",
-  "note": "possessive reads shorter and plainer, every name fits ___’s",
-  "v": "fix"
+  "at": "2026-10-17T00:34:39Z",
+  "h": "b83dd11aae",
+  "v": "ok"
  },
  "nwsl:19": {
   "at": "2026-10-16T23:58:42Z",
@@ -7134,12 +7098,12 @@
   "v": "fix"
  },
  "seriea:44": {
-  "at": "2026-10-16T23:58:01Z",
+  "at": "2026-10-17T00:34:39Z",
   "fix": {
-   "ex": "San Siro is officially named after Inter great Giuseppe Meazza"
+   "ex": "Inter and Milan both play home games at San Siro"
   },
-  "h": "ddb04ed718",
-  "note": "San Siro stadium read as Allianz Stadium stadium with wrong answers",
+  "h": "48ecc0f349",
+  "note": "“the ___ stadium” reads “the Allianz Stadium stadium” and “the New Balance Arena stadium” with wrong answers",
   "v": "fix"
  },
  "seriea:45": {
@@ -7163,8 +7127,8 @@
   "v": "ok"
  },
  "seriea:49": {
-  "at": "2026-10-17T00:09:05Z",
-  "h": "ea2aedb6af",
+  "at": "2026-10-17T00:34:39Z",
+  "h": "ab4a4e3ea6",
   "v": "ok"
  },
  "seriea:5": {
@@ -7866,8 +7830,8 @@
   "v": "ok"
  },
  "ucl:59": {
-  "at": "2026-10-16T23:58:42Z",
-  "h": "5f168cda8e",
+  "at": "2026-10-17T00:34:39Z",
+  "h": "65c43ac553",
   "v": "ok"
  },
  "ucl:6": {
@@ -7980,8 +7944,8 @@
   "v": "ok"
  },
  "wc26:17": {
-  "at": "2026-10-16T23:59:07Z",
-  "h": "199d9dac12",
+  "at": "2026-10-17T00:34:39Z",
+  "h": "57aef3edb2",
   "v": "ok"
  },
  "wc26:18": {
