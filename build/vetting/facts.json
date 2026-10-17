@@ -897,6 +897,12 @@
   "note": "fifa.com all-award-winners-history (The Best 2025 given 16 Dec 2025, no 2026 awards yet): 2025 Hannah Hampton. Means from fifa.com/en/the-best-fifa-football-awards/2025/articles/womens-goalkeeper-2025-winner-hannah-hampton (England beat Spain in the EURO final, she was Goalkeeper of the Tournament)",
   "v": "ok"
  },
+ "awards:24": {
+  "at": "2026-10-17T00:29:57Z",
+  "h": "90a8ef1663",
+  "note": "src fifa.com all-winners list, Men’s Goalkeeper: Martinez 2022 and 2024, the only double winner since the award began in 2017. Manuel Neuer won once (2020) and Donnarumma once (2025), so neither wrong answer fits",
+  "v": "ok"
+ },
  "awards:25": {
   "at": "2026-10-17T00:23:27Z",
   "h": "5d217d99fd",
@@ -927,6 +933,30 @@
   "note": "fifa.com every-world-cup-top-scorer (published 22 Jul 2026): Rossi was the winner of the inaugural Golden Ball and Golden Boot awards at Spain 1982",
   "v": "ok"
  },
+ "awards:30": {
+  "at": "2026-10-17T00:29:57Z",
+  "fix": {
+   "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2024/articles/coach-winner-2024-carlo-ancelotti"
+  },
+  "h": "e6ced03717",
+  "note": "The src list shows 2024 Ancelotti, Xabi Alonso second but not the club. fifa.com’s 2024 winner article shows Ancelotti won The Best Men’s Coach 2024 with Real Madrid, Alonso second on 22 points to his 26. No wrong answer won 2024",
+  "v": "fix"
+ },
+ "awards:31": {
+  "at": "2026-10-17T00:29:57Z",
+  "h": "b2d3b2127c",
+  "note": "src fifa.com all-winners list, Men’s Coach 2022: Lionel Scaloni, Carlo Ancelotti, Pep Guardiola. inside.fifa.com’s 2024 reaction story also calls Ancelotti runner-up in 2022",
+  "v": "ok"
+ },
+ "awards:32": {
+  "at": "2026-10-17T00:29:57Z",
+  "fix": {
+   "src": "https://www.fifa.com/en/the-best-fifa-football-awards/articles/the-best-history-stats-winners-awards"
+  },
+  "h": "6497852b4b",
+  "note": "The src list shows Klopp won in 2019 and 2020 with Flick second in 2020 but never names Liverpool. fifa.com’s Best Awards history page says “Liverpool’s Jurgen Klopp” won back to back in 2019 and 2020. The src list still backs the means. No wrong answer won both years",
+  "v": "fix"
+ },
  "awards:33": {
   "at": "2026-10-17T00:24:47Z",
   "h": "32878b895b",
@@ -938,6 +968,15 @@
   "h": "91a6331c2a",
   "note": "fifa.com all-award-winners-history (The Best 2025 given 16 Dec 2025, no 2026 awards yet): 2018 Deschamps, Zidane second",
   "v": "ok"
+ },
+ "awards:35": {
+  "at": "2026-10-17T00:29:57Z",
+  "fix": {
+   "src": "https://www.fifa.com/en/the-best-fifa-football-awards/articles/pep-guardiola-best-mens-coach-manchester-city"
+  },
+  "h": "ecc684dca6",
+  "note": "The src list shows Guardiola won in 2023 but not the club or the treble. fifa.com’s 2023 winner article says he led Manchester City to a historic Premier League, Champions League and FA Cup treble in 2022/23. No wrong answer won 2023",
+  "v": "fix"
  },
  "awards:36": {
   "at": "2026-10-17T00:23:10Z",
@@ -3377,6 +3416,12 @@
   "note": "ussoccer.com 2010 story: Donovan’s 91st-minute goal beat Algeria 1–0 and won Group C",
   "v": "ok"
  },
+ "intl-men:25": {
+  "at": "2026-10-17T00:29:57Z",
+  "h": "746b67e035",
+  "note": "src fifa.com USA team profile: 1930 wins over Belgium and then Paraguay, Bert Patenaude scoring the first-ever hat-trick in World Cup history in the second of those matches (Paraguay)",
+  "v": "ok"
+ },
  "intl-men:27": {
   "at": "2026-10-17T00:17:52Z",
   "h": "a858ba5ff9",
@@ -3539,6 +3584,15 @@
   "note": "fifa.com USA profile: World Cup hosts 1994 and 2026, sole hosts in 1994, co-hosts in 2026",
   "v": "ok"
  },
+ "intl-men:51": {
+  "at": "2026-10-17T00:29:57Z",
+  "fix": {
+   "src": "https://www.fifa.com/en/articles/the-official-film-of-the-2002-fifa-world-cup"
+  },
+  "h": "e9d957230c",
+  "note": "The src only says the 2002 tournament went to the Far East for the first time and never says co-hosted. fifa.com’s official 2002 film page says “the first in Asia and the first to be co-hosted”, which backs both the sentence and the means. No wrong year was in Asia",
+  "v": "fix"
+ },
  "intl-men:52": {
   "at": "2026-10-17T00:17:52Z",
   "h": "5aa4df70da",
@@ -3651,6 +3705,12 @@
   "at": "2026-10-17T00:14:49Z",
   "h": "63e5cc3985",
   "note": "fifa.com every-final-highlights (now at /en/tournaments/womens/womensworldcup/brazil-2027/articles/every-final-highlights, read via cxm-api.fifa.com): China PR 1991 was the first edition, and China hosted for the second time in 2007",
+  "v": "ok"
+ },
+ "intl-women:11": {
+  "at": "2026-10-17T00:29:57Z",
+  "h": "f66446bc43",
+  "note": "src uefa.com: Women’s EURO 2025 ran 2 to 27 July in Switzerland, final at St. Jakob-Park, Basel (England 1–1 Spain, 3–1 on pens)",
   "v": "ok"
  },
  "intl-women:12": {
@@ -3945,9 +4005,9 @@
   "v": "ok"
  },
  "intl-women:56": {
-  "at": "2026-10-17T00:14:49Z",
+  "at": "2026-10-17T00:29:57Z",
   "h": "f733c9cfa3",
-  "note": "ussoccer.com Paris 2024 by the numbers (the src): the lone gold-medal-match loss came to Norway on a golden goal in overtime in 2000. The fifa.com Paris 2024 medal page says penalties instead, so the deck’s official sites disagree. The desk may want to weigh it",
+  "note": "src ussoccer.com says the lone gold-medal-game loss came to Norway on a golden goal in overtime in 2000. fifa.com’s own record of the final agrees: inside.fifa.com Sydney 2000 story “A golden gold for the Norwegian underdogs” (https://inside.fifa.com/tournaments/womens/womensolympic/sydney2000/news/a-golden-gold-for-the-norwegian-underdogs) says the final was decided by the golden goal rule, Mellgren scoring 12 minutes into extra time. The fifa.com Paris 2024 medal page that says penalties is a FIFA error and loses to the tournament’s own report",
   "v": "ok"
  },
  "intl-women:57": {
@@ -3999,6 +4059,12 @@
   "at": "2026-10-17T00:14:49Z",
   "h": "96688d7323",
   "note": "fifa.com Miyazawa article calls Japan the Nadeshiko. 2011 title on the fifa.com every final article",
+  "v": "ok"
+ },
+ "intl-women:64": {
+  "at": "2026-10-17T00:29:57Z",
+  "h": "dcd6124074",
+  "note": "src fifa.com Marta article: FIFA reflects on every goal she scored for the Seleção at the Women’s World Cup (Brazil’s women’s team). None of the wrong nicknames is Brazil’s",
   "v": "ok"
  },
  "intl-women:65": {
