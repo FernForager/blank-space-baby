@@ -739,6 +739,863 @@
   "h": "c9365428fe",
   "v": "ok"
  },
+ "basics:0": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "0e34592af3",
+  "v": "ok"
+ },
+ "basics:1": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "120967ea02",
+  "note": "Awkward “foot lost its shoe” is doing a job: it keeps gloves and jersey from fitting (losing either wouldn’t cancel a goal either). Keep",
+  "v": "ok"
+ },
+ "basics:10": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "6ee3796c83",
+  "v": "ok"
+ },
+ "basics:100": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "33f8a9fe2e",
+  "v": "ok"
+ },
+ "basics:101": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "6c2b38d01f",
+  "v": "ok"
+ },
+ "basics:102": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "01bb6d3bd3",
+  "v": "ok"
+ },
+ "basics:103": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "4331520ccf",
+  "v": "ok"
+ },
+ "basics:104": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "fde74ffdeb",
+  "v": "ok"
+ },
+ "basics:105": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "87202f5355",
+  "v": "ok"
+ },
+ "basics:106": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "d080421ac2",
+  "v": "ok"
+ },
+ "basics:107": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "0aee0455d8",
+  "v": "ok"
+ },
+ "basics:108": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "79e246a0eb",
+  "v": "ok"
+ },
+ "basics:109": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "668b13b22b",
+  "v": "ok"
+ },
+ "basics:11": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "904c4ee7ba",
+  "v": "ok"
+ },
+ "basics:110": {
+  "at": "2026-10-17T00:00:49Z",
+  "fix": {
+   "means": "Once in play, it’s a foul too"
+  },
+  "h": "038530ba44",
+  "note": "The means said a free kick, but holding by a defender in the box once the ball is in play is a penalty kick. Keep it general.",
+  "v": "fix"
+ },
+ "basics:111": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "6e723c11de",
+  "v": "ok"
+ },
+ "basics:112": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "cb4ceb39d0",
+  "v": "ok"
+ },
+ "basics:113": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "35cc2e714d",
+  "v": "ok"
+ },
+ "basics:114": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "3ac323000b",
+  "v": "ok"
+ },
+ "basics:115": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "7d29e80b6e",
+  "v": "ok"
+ },
+ "basics:116": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "1f683af9f0",
+  "v": "ok"
+ },
+ "basics:117": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "8672b66406",
+  "v": "ok"
+ },
+ "basics:118": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "c5eb482835",
+  "v": "ok"
+ },
+ "basics:119": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "f28df3f081",
+  "v": "ok"
+ },
+ "basics:12": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "8db696069c",
+  "v": "ok"
+ },
+ "basics:120": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "240ce03748",
+  "v": "ok"
+ },
+ "basics:121": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "2fec98bd6d",
+  "v": "ok"
+ },
+ "basics:122": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "abf0def6c4",
+  "v": "ok"
+ },
+ "basics:123": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "40e93df750",
+  "v": "ok"
+ },
+ "basics:124": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "5c85a45ee2",
+  "v": "ok"
+ },
+ "basics:125": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "a8cc3f7d17",
+  "v": "ok"
+ },
+ "basics:126": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "b02d7aca1c",
+  "v": "ok"
+ },
+ "basics:127": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "b311bf4129",
+  "v": "ok"
+ },
+ "basics:128": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "d1078762a4",
+  "v": "ok"
+ },
+ "basics:129": {
+  "at": "2026-10-17T00:00:49Z",
+  "fix": {
+   "ex": "Unsure which way a far-off throw-in goes, the assistant referee raises the flag",
+   "means": "Then they follow the referee’s signal"
+  },
+  "h": "23bbedd06a",
+  "note": "The sentence names the referee, so referee drops out of the kind and the card falls back to the whole deck (coin toss, net, halves as decoys). Rewritten without the word referee, same guideline fact.",
+  "v": "fix"
+ },
+ "basics:13": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "f683dbc6c9",
+  "v": "ok"
+ },
+ "basics:130": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "11ae00fd77",
+  "v": "ok"
+ },
+ "basics:131": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "d7e65ffd66",
+  "v": "ok"
+ },
+ "basics:132": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "bb95026035",
+  "v": "ok"
+ },
+ "basics:133": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "a939c0c4bf",
+  "note": "The sentence names the referee, so the card draws decoys from the whole deck. Taking the referee out cannot save it: the protocol lets the referee ask for other angles and speeds, so referee becomes arguably right. It is also booth procedure no beginner knows.",
+  "v": "cut"
+ },
+ "basics:134": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "9f66b196f0",
+  "v": "ok"
+ },
+ "basics:135": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "a20855f65c",
+  "note": "Related to basics:147 (TV screen signal) but no giveaway",
+  "v": "ok"
+ },
+ "basics:136": {
+  "at": "2026-10-17T00:00:49Z",
+  "fix": {
+   "ex": "Only after the first call on the field can the VAR step in"
+  },
+  "h": "77467733bc",
+  "note": "The sentence names the referee, so the kind has only one decoy left and the card draws from the whole deck. Rewritten without the word referee. Close to basics:118 in spirit but neither gives the other away.",
+  "v": "fix"
+ },
+ "basics:137": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "58c9745e0d",
+  "v": "ok"
+ },
+ "basics:138": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "197a4acce4",
+  "v": "ok"
+ },
+ "basics:139": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "d330693cdd",
+  "v": "ok"
+ },
+ "basics:14": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "7adb35f639",
+  "v": "ok"
+ },
+ "basics:140": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "18eef7337d",
+  "v": "ok"
+ },
+ "basics:141": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "a62f563e74",
+  "v": "ok"
+ },
+ "basics:142": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "35c2f730fb",
+  "v": "ok"
+ },
+ "basics:143": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "1f6b2886aa",
+  "v": "ok"
+ },
+ "basics:144": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "0bb0ce9917",
+  "v": "ok"
+ },
+ "basics:145": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "e538c0e93c",
+  "v": "ok"
+ },
+ "basics:146": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "710abfff0f",
+  "v": "ok"
+ },
+ "basics:147": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "731ec2048e",
+  "v": "ok"
+ },
+ "basics:148": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "1bdab233a2",
+  "v": "ok"
+ },
+ "basics:149": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "623a50e54c",
+  "v": "ok"
+ },
+ "basics:15": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "35bb429047",
+  "v": "ok"
+ },
+ "basics:150": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "5358013dce",
+  "v": "ok"
+ },
+ "basics:151": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "a4a020f05f",
+  "v": "ok"
+ },
+ "basics:152": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "c845c50488",
+  "v": "ok"
+ },
+ "basics:153": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "d5d8c68d54",
+  "v": "ok"
+ },
+ "basics:154": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "c10d6b0481",
+  "v": "ok"
+ },
+ "basics:155": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "e30a8236d6",
+  "v": "ok"
+ },
+ "basics:156": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "a3bf4b392d",
+  "v": "ok"
+ },
+ "basics:157": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "b60a45e362",
+  "v": "ok"
+ },
+ "basics:158": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "76c43734e0",
+  "v": "ok"
+ },
+ "basics:16": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "5da6936511",
+  "v": "ok"
+ },
+ "basics:17": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "9d85893ff6",
+  "v": "ok"
+ },
+ "basics:18": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "f1020a9355",
+  "v": "ok"
+ },
+ "basics:19": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "e108bbf82e",
+  "v": "ok"
+ },
+ "basics:2": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "f6f100731a",
+  "v": "ok"
+ },
+ "basics:20": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "5f648b772c",
+  "v": "ok"
+ },
+ "basics:21": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "e7d3c20afc",
+  "v": "ok"
+ },
+ "basics:22": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "f4615a660b",
+  "v": "ok"
+ },
+ "basics:23": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "cf84fe7ca2",
+  "v": "ok"
+ },
+ "basics:24": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "4698afc094",
+  "note": "IFAB’s own FAQ: penalties “are not part of the match and therefore begin after the final whistle”",
+  "v": "ok"
+ },
+ "basics:25": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "23651e1140",
+  "v": "ok"
+ },
+ "basics:26": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "57fd5b5eac",
+  "note": "American fans and broadcasters mostly say “stoppage time” or “added time”. Fine to keep IFAB’s term, Morg’s call",
+  "v": "ok"
+ },
+ "basics:27": {
+  "at": "2026-10-17T00:00:49Z",
+  "fix": {
+   "hook": "45 minutes"
+  },
+  "h": "cefb1a370b",
+  "note": "Hook “youth soccer” nearly matches basics:62’s “youth” (same General Modifications fact family), two such tiles on one board would confuse. “45 minutes” is a better tap",
+  "v": "fix"
+ },
+ "basics:28": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "a14f83771b",
+  "v": "ok"
+ },
+ "basics:29": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "e763560baf",
+  "v": "ok"
+ },
+ "basics:3": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "24d32289b4",
+  "note": "Near-twin of rules:55 (armband, shared answer)",
+  "v": "ok"
+ },
+ "basics:30": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "8d4824d082",
+  "note": "Near-twin of basics:29 (draw) and shares its answer with lingo-more:63. Hook “draw” all but says “tie”, acceptable on a white",
+  "v": "ok"
+ },
+ "basics:31": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "8847e7037c",
+  "v": "ok"
+ },
+ "basics:32": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "dd57d8e6bd",
+  "v": "ok"
+ },
+ "basics:33": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "e3daa5bd3d",
+  "note": "Law 10: a player sent off during the match can’t take part, cautions don’t carry forward",
+  "v": "ok"
+ },
+ "basics:34": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "7889694588",
+  "v": "ok"
+ },
+ "basics:35": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "a7a85dde4a",
+  "v": "ok"
+ },
+ "basics:36": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "0c3e987c8b",
+  "v": "ok"
+ },
+ "basics:37": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "f43af470ae",
+  "v": "ok"
+ },
+ "basics:38": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "95c1f6abef",
+  "v": "ok"
+ },
+ "basics:39": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "4008399bb1",
+  "v": "ok"
+ },
+ "basics:4": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "b62b78dcb2",
+  "note": "Same fact as rules:53 (socks cover the shin guards). Each sentence holds the other’s answer, so the guardrail keeps them apart",
+  "v": "ok"
+ },
+ "basics:40": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "691604ea1c",
+  "v": "ok"
+ },
+ "basics:41": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "dd8bfcf28a",
+  "v": "ok"
+ },
+ "basics:42": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "61e7295882",
+  "v": "ok"
+ },
+ "basics:43": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "06a760119f",
+  "v": "ok"
+ },
+ "basics:44": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "9f60148be1",
+  "v": "ok"
+ },
+ "basics:45": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "3e7f16243d",
+  "note": "Near-twin of basics:46 and rules:47 (touchline). Hook all but says the answer, acceptable on a white",
+  "v": "ok"
+ },
+ "basics:46": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "d5e2350907",
+  "note": "Near-twin of basics:45",
+  "v": "ok"
+ },
+ "basics:47": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "078a3640c5",
+  "v": "ok"
+ },
+ "basics:48": {
+  "at": "2026-10-17T00:00:49Z",
+  "fix": {
+   "ex": "The area right in front of the net, where scrambles happen, is the goalmouth",
+   "hook": "scrambles",
+   "means": "Hockey uses the word too"
+  },
+  "h": "b65db7da24",
+  "note": "“In soccer and hockey” puts a hockey tile on a soccer board and the means only repeats the sentence. Same M-W definition, said the way a soccer family would, with the hockey fact moved to the means",
+  "v": "fix"
+ },
+ "basics:49": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "760a652000",
+  "note": "Near-twin of basics:50 and lingo-more:11 (center circle)",
+  "v": "ok"
+ },
+ "basics:5": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "f9177ada3f",
+  "v": "ok"
+ },
+ "basics:50": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "ba2dd95fa0",
+  "note": "Shares its answer with lingo-more:11",
+  "v": "ok"
+ },
+ "basics:51": {
+  "at": "2026-10-17T00:00:49Z",
+  "fix": {
+   "hook": "big box"
+  },
+  "h": "ed09f4380e",
+  "note": "“curved line” half gives away “arc” and is a vague tile. “big box” is the soccer word every kid uses",
+  "v": "fix"
+ },
+ "basics:52": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "ce82914bf2",
+  "v": "ok"
+ },
+ "basics:53": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "ec9e19212a",
+  "v": "ok"
+ },
+ "basics:54": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "efa20bbd19",
+  "note": "Shares its answer with basics:55, rules:52 and lingo-more:14",
+  "v": "ok"
+ },
+ "basics:55": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "8a8011f0bf",
+  "note": "Law 12: occasionally leaving is a warning, persistently is a caution",
+  "v": "ok"
+ },
+ "basics:56": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "fb8a0e218d",
+  "v": "ok"
+ },
+ "basics:57": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "fa82247817",
+  "v": "ok"
+ },
+ "basics:58": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "8b1072dd46",
+  "v": "ok"
+ },
+ "basics:59": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "a30d869745",
+  "v": "ok"
+ },
+ "basics:6": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "6a509c3b2f",
+  "v": "ok"
+ },
+ "basics:60": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "9933bc35df",
+  "v": "ok"
+ },
+ "basics:61": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "ca7e35f444",
+  "v": "ok"
+ },
+ "basics:62": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "ff8b7619c6",
+  "v": "ok"
+ },
+ "basics:63": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "edd14148bb",
+  "v": "ok"
+ },
+ "basics:64": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "c62622c7ce",
+  "note": "Related to rules:62 (coin toss), different fact",
+  "v": "ok"
+ },
+ "basics:65": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "13513973da",
+  "v": "ok"
+ },
+ "basics:66": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "8d63a6d3b0",
+  "v": "ok"
+ },
+ "basics:67": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "48aa5187a5",
+  "note": "Hook “both hands” all but says throw-in, acceptable on a white",
+  "v": "ok"
+ },
+ "basics:68": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "44e7df0da5",
+  "v": "ok"
+ },
+ "basics:69": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "c2a761efb3",
+  "v": "ok"
+ },
+ "basics:7": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "d6d53404bd",
+  "v": "ok"
+ },
+ "basics:70": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "ea4f4afcee",
+  "v": "ok"
+ },
+ "basics:71": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "e526709a71",
+  "v": "ok"
+ },
+ "basics:72": {
+  "at": "2026-10-17T00:00:49Z",
+  "fix": {
+   "ex": "At a corner kick, the ball sits in the small arc and the flagpole can’t be moved",
+   "hook": "flagpole"
+  },
+  "h": "82cc414fed",
+  "note": "Tiles “flagpost” (here) and “flagpole” (basics:52) could sit on one board and look like a typo. Use the word M-W and fans know, same hook as basics:52 so the shared-hook guardrail keeps them apart",
+  "v": "fix"
+ },
+ "basics:73": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "ce1f79c823",
+  "v": "ok"
+ },
+ "basics:74": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "c878a4b225",
+  "v": "ok"
+ },
+ "basics:75": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "cfaf0845b2",
+  "v": "ok"
+ },
+ "basics:76": {
+  "at": "2026-10-17T00:00:49Z",
+  "fix": {
+   "hook": "shooter"
+  },
+  "h": "247351f957",
+  "note": "Hook “net” is the answer of basics:58 and basics:59, so a net tile on a penalty card misleads and blocks those cards. “shooter” names this card’s moment",
+  "v": "fix"
+ },
+ "basics:77": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "5a6666802e",
+  "v": "ok"
+ },
+ "basics:78": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "713675cd3a",
+  "note": "Law 14 2026/27: an encroaching teammate who plays the rebound and scores gives an indirect free kick",
+  "v": "ok"
+ },
+ "basics:79": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "92099e0bdb",
+  "note": "“dropped ball” is a good decoy (it’s the restart for an outside agent), and certainly wrong for a coach",
+  "v": "ok"
+ },
+ "basics:8": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "5e8eb9da45",
+  "v": "ok"
+ },
+ "basics:80": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "79ee21b400",
+  "v": "ok"
+ },
+ "basics:81": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "eb4f4dc071",
+  "v": "ok"
+ },
+ "basics:82": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "b44197753e",
+  "v": "ok"
+ },
+ "basics:83": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "304ee1da71",
+  "v": "ok"
+ },
+ "basics:84": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "31a06b7df0",
+  "v": "ok"
+ },
+ "basics:85": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "e40c8616b1",
+  "v": "ok"
+ },
+ "basics:86": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "6e18fa7e6b",
+  "v": "ok"
+ },
+ "basics:87": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "49a04ab8cd",
+  "v": "ok"
+ },
+ "basics:88": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "10fb24a432",
+  "v": "ok"
+ },
+ "basics:89": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "e99c11463d",
+  "v": "ok"
+ },
+ "basics:9": {
+  "at": "2026-10-17T00:00:49Z",
+  "fix": {
+   "ex": "Each team must wear shirt colors that set it apart from the other team",
+   "hook": "shirt"
+  },
+  "h": "290b047b95",
+  "note": "The hook “set it apart” tells a player nothing. A shirt tile names the topic, and the decoys still can’t fit",
+  "v": "fix"
+ },
+ "basics:90": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "4ac48eca53",
+  "v": "ok"
+ },
+ "basics:91": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "06b9bde94a",
+  "v": "ok"
+ },
+ "basics:92": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "120e050fa9",
+  "v": "ok"
+ },
+ "basics:93": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "c79fe25b32",
+  "note": "Related to basics:106 (keeper with the ball in hand) but neither gives the other away",
+  "v": "ok"
+ },
+ "basics:94": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "5ac4785201",
+  "v": "ok"
+ },
+ "basics:95": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "4aae3e99ba",
+  "v": "ok"
+ },
+ "basics:96": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "6381fcc289",
+  "v": "ok"
+ },
+ "basics:97": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "0d160b63b2",
+  "note": "Same answer and close to basics:95, the draw keeps them apart",
+  "v": "ok"
+ },
+ "basics:98": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "cc8a7d5c97",
+  "v": "ok"
+ },
+ "basics:99": {
+  "at": "2026-10-17T00:00:49Z",
+  "h": "7215d437da",
+  "v": "ok"
+ },
  "epl:0": {
   "at": "2026-10-16T23:58:31Z",
   "fix": {
