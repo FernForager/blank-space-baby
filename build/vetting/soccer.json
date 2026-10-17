@@ -2394,14 +2394,9 @@
   "v": "ok"
  },
  "bundesliga:8": {
-  "at": "2026-10-17T00:03:01Z",
-  "fix": {
-   "ex": "VfB Stuttgart beat Schalke to the 2006–07 title by one point",
-   "hook": "Schalke"
-  },
-  "h": "19720c0de7",
-  "note": "Bundesliga is a league label on the tile. bundesliga.com’s champions page has Stuttgart one point ahead of Schalke (70 to 68). Schalke is a specific tile and not in the club decoy pool",
-  "v": "fix"
+  "at": "2026-10-17T00:40:59Z",
+  "h": "45eabc1c74",
+  "v": "ok"
  },
  "bundesliga:9": {
   "at": "2026-10-17T00:03:01Z",
@@ -3831,13 +3826,10 @@
   "v": "ok"
  },
  "laliga:13": {
-  "at": "2026-10-17T00:02:07Z",
-  "fix": {
-   "ex": "Telmo Zarra scored more LaLiga goals than any other Spaniard"
-  },
-  "h": "b30142c56f",
-  "note": "laliga.com disagrees with itself on Zarra’s total: the LFP Trophy page says 251, the LaLiga of Records page says 253. Dropping the number keeps the fact that matters and that every page agrees on (laliga.com lists him as top Spanish goalscorer)",
-  "v": "fix"
+  "at": "2026-10-17T00:40:59Z",
+  "h": "5a63fe7454",
+  "note": "Soccer-wise fine. One flag for the fact checker: laliga.com gives Zarra 251 on one page and 253 on another, and the number now sits in the sentence and on the tile",
+  "v": "ok"
  },
  "laliga:14": {
   "at": "2026-10-17T00:02:07Z",
@@ -4260,18 +4252,21 @@
   "v": "ok"
  },
  "legends:30": {
-  "at": "2026-10-17T00:05:12Z",
-  "h": "a3c10683fe",
+  "at": "2026-10-17T00:40:59Z",
+  "h": "6caeeaca95",
+  "note": "Now a fair red: 40 and 45 are both believable ages and both certainly wrong",
   "v": "ok"
  },
  "legends:31": {
-  "at": "2026-10-17T00:05:12Z",
-  "h": "5f504752d0",
+  "at": "2026-10-17T00:40:59Z",
+  "h": "76b0875fa9",
+  "note": "Now a fair red against 42 and 45",
   "v": "ok"
  },
  "legends:32": {
-  "at": "2026-10-17T00:24:49Z",
-  "h": "adda8f94d8",
+  "at": "2026-10-17T00:40:59Z",
+  "h": "53cb2a698b",
+  "note": "Now a fair red against 40 and 42",
   "v": "ok"
  },
  "legends:33": {
@@ -7633,15 +7628,9 @@
   "v": "ok"
  },
  "seriea:44": {
-  "at": "2026-10-17T00:26:19Z",
-  "fix": {
-   "ex": "Inter and Milan share the San Siro stadium",
-   "hook": "Inter",
-   "means": "Officially the Giuseppe Meazza"
-  },
-  "h": "d52ca49958",
-  "note": "Still plays trivially easy: every decoy (Dall’Ara, Franchi, Ferraris, Allianz, New Balance) is plainly named for someone or something else, so “named after Meazza” rules them out. Ask who shares it and move Meazza to the means",
-  "v": "fix"
+  "at": "2026-10-17T00:40:59Z",
+  "h": "d61c1cf50a",
+  "v": "ok"
  },
  "seriea:45": {
   "at": "2026-10-17T00:00:12Z",
@@ -7989,13 +7978,9 @@
   "v": "ok"
  },
  "soccer:43": {
-  "at": "2026-10-17T00:01:58Z",
-  "fix": {
-   "means": "Time added on at the end of a half"
-  },
-  "h": "6dc981d4fc",
-  "note": "“Another name for injury time” leans on another card and helps on soccer:42 if both are dealt. Define it instead",
-  "v": "fix"
+  "at": "2026-10-17T00:40:59Z",
+  "h": "aa60581a22",
+  "v": "ok"
  },
  "soccer:44": {
   "at": "2026-10-17T00:01:58Z",
@@ -8123,15 +8108,9 @@
   "v": "ok"
  },
  "ucl:14": {
-  "at": "2026-10-17T00:07:24Z",
-  "fix": {
-   "ex": "Désiré Doué scored twice as Paris Saint-Germain won the 2025 final",
-   "hook": "Doué",
-   "means": "Their first European title"
-  },
-  "h": "0b13fd8963",
-  "note": "Hook “first-time” names nothing. Doué’s two goals make a real tile. Also, cards 30 and 61 now spell out Paris Saint-Germain, so the draw keeps them off this card’s board (both gave the answer away as “PSG”)",
-  "v": "fix"
+  "at": "2026-10-17T00:40:59Z",
+  "h": "9095d74446",
+  "v": "ok"
  },
  "ucl:15": {
   "at": "2026-10-17T00:07:24Z",
@@ -8495,16 +8474,9 @@
   "v": "ok"
  },
  "ucl:9": {
-  "at": "2026-10-17T00:07:24Z",
-  "fix": {
-   "ex": "In 2004, Porto beat Monaco to become champions of Europe",
-   "hook": "Monaco",
-   "means": "Their second European title, after 1987",
-   "src": "https://www.uefa.com/uefachampionsleague/news/019d-0e6ae5999141-82ce41064ec4-1000--porto-perform-to-perfection/"
-  },
-  "h": "0af7c31e06",
-  "note": "Hook “Europe” is an empty word. Name the opponent instead, and move the final to the sentence",
-  "v": "fix"
+  "at": "2026-10-17T00:40:59Z",
+  "h": "ff03e0c560",
+  "v": "ok"
  },
  "wc26:0": {
   "at": "2026-10-17T00:04:39Z",
