@@ -255,7 +255,9 @@
    "hook": "Luvanga",
    "k": "country",
    "src": "https://www.nwslsoccer.com/news/sanchez-becomes-second-to-score-20-goals-fishlock-breaks-rapinoe-s-reign-scoring-record",
-   "d": 2
+   "d": 2,
+   "out": true,
+   "out_why": "Plays as a freebie: every decoy country (Scotland, Wales, Canada, Australia) obviously had NWSL players long before 2026, and Malawi is grouped away (soccer expert)"
   },
   {
    "w": "Australia",
@@ -310,7 +312,9 @@
    "hook": "Sinclair",
    "k": "number",
    "src": "https://www.nwslsoccer.com/news/portland-thorns-to-retire-christine-sinclair-s-no-12-jersey-during-hall-of-fame-induction-ceremony",
-   "d": 1
+   "d": 1,
+   "out": true,
+   "out_why": "Word for word the same sentence as intl-women:20 (Sinclair, 190 goals for Canada), which is that fact’s natural home (soccer expert)"
   },
   {
    "w": "23",
@@ -346,11 +350,11 @@
    "hook": "Houston",
    "k": "term",
    "src": "https://www.nwslsoccer.com/news/21947-2",
-   "d": 2
+   "d": 1
   },
   {
    "w": "Ironwoman",
-   "means": "Kaleigh Kurtz did it four years running",
+   "means": "Kaleigh Kurtz did it 2022–2025",
    "ex": "Players who play every minute of every game earn Ironwoman status",
    "hook": "every minute",
    "k": "term",
@@ -364,7 +368,7 @@
    "hook": "San Diego",
    "k": "term",
    "src": "https://www.nwslsoccer.com/news/san-diego-wave-fc-claims-2023-nwsl-shield-presented-by-carmax",
-   "d": 2
+   "d": 1
   },
   {
    "w": "draft",
@@ -467,8 +471,8 @@
   },
   {
    "w": "Snapdragon Stadium",
-   "means": "In San Diego",
-   "ex": "Gotham won the 2023 final before a record 25,011 fans at Snapdragon Stadium",
+   "means": "A record for a final, in San Diego",
+   "ex": "Gotham won the 2023 final before 25,011 fans at Snapdragon Stadium",
    "hook": "2023 final",
    "k": "stadium",
    "src": "https://www.nwslsoccer.com/news/nj-ny-gotham-fc-wins-2023-nwsl-championship-presented-by-bud-light",
@@ -540,7 +544,7 @@
   {
    "w": "Louisville",
    "means": "Racing Louisville FC",
-   "ex": "The club known as Racing plays its home games in Louisville",
+   "ex": "Racing play their home games in Louisville",
    "hook": "Racing",
    "k": "city",
    "src": "https://www.nwslsoccer.com/about-the-nwsl",

@@ -120,7 +120,9 @@
    "k": "player",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/records-broken-set",
    "d": 2,
-   "current": true
+   "current": true,
+   "out": true,
+   "out_why": "Same fact as legends:35, which keeps it (cross-deck twins, soccer expert)"
   },
   {
    "w": "Lionel Messi",
@@ -184,7 +186,9 @@
    "hook": "Curaçao",
    "k": "player",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/records-broken-set",
-   "d": 2
+   "d": 2,
+   "out": true,
+   "out_why": "Every other player answer is a famous outfield player, so “Curaçao goalkeeper … made 16 saves” gives Eloy Room away to any fan (soccer expert)"
   },
   {
    "w": "Luis de la Fuente",
@@ -473,7 +477,9 @@
    "hook": "squads",
    "k": "number",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/fifa-world-cup-2026-hosts-cities-dates-usa-mexico-canada",
-   "d": 2
+   "d": 2,
+   "out": true,
+   "out_why": "Every decoy (3, 6, 16, 34, 48, 104) is far too small for a total of squad players, so it plays as a gimme, and the fact is arithmetic (26 × 48) more than soccer (soccer expert)"
   },
   {
    "w": "1–0",
@@ -617,7 +623,9 @@
    "hook": "England",
    "k": "name",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/final-tournament-standings",
-   "d": 1
+   "d": 1,
+   "out": true,
+   "out_why": "Same card as intl-men:56 (Three Lions), which owns national team nicknames (soccer expert)"
   },
   {
    "w": "La Roja",
@@ -626,7 +634,9 @@
    "hook": "Spain",
    "k": "name",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/spain-argentina-final-report-highlights",
-   "d": 2
+   "d": 2,
+   "out": true,
+   "out_why": "Same card as intl-men:57 (La Roja), which owns national team nicknames (soccer expert)"
   },
   {
    "w": "Trionda",
@@ -644,7 +654,9 @@
    "hook": "last four",
    "k": "name",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/trionda-final-official-match-ball-final-four-matches",
-   "d": 2
+   "d": 2,
+   "out": true,
+   "out_why": "Gimme and twin: the only ball name among mascots, and “Final” in the answer matches “the last four games.” wc26:69 already covers the Trionda (soccer expert)"
   }
  ],
  "groups": [

@@ -495,7 +495,9 @@
    "hook": "socks",
    "k": "gear",
    "src": "https://www.theifab.com/laws/latest/the-players-equipment/",
-   "d": 1
+   "d": 1,
+   "out": true,
+   "out_why": "Same fact as basics:4, which keeps it (cross-deck twins, soccer expert)"
   },
   {
    "w": "jewelry",

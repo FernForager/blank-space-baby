@@ -7,7 +7,7 @@
     {
       "w": "USA",
       "means": "Michelle Akers scored both goals",
-      "ex": "USA won the first Women’s World Cup, beating Norway 2–1 in 1991",
+      "ex": "The USA won the first Women’s World Cup, beating Norway 2–1 in 1991",
       "hook": "Norway",
       "k": "country",
       "src": "https://www.fifa.com/en/articles/every-final-highlights",
@@ -105,7 +105,7 @@
     },
     {
       "w": "Switzerland",
-      "means": "England won it on penalties",
+      "means": "The final was in Basel",
       "ex": "Switzerland hosted the Women’s Euro in 2025",
       "hook": "Women’s Euro",
       "k": "country",
@@ -174,7 +174,9 @@
       "hook": "World Player",
       "k": "player",
       "src": "https://www.fifa.com/en/articles/a-brief-history-of-the-best",
-      "d": 2
+      "d": 2,
+      "out": true,
+      "out_why": "Same fact as awards:18, which keeps it (cross-deck twins, soccer expert)"
     },
     {
       "w": "Abby Wambach",
@@ -446,7 +448,7 @@
     },
     {
       "w": "Rio de Janeiro",
-      "means": "At the famous Maracanã",
+      "means": "At Brazil’s famous Maracanã",
       "ex": "The 2027 Women’s World Cup final will be played in Rio de Janeiro",
       "hook": "World Cup",
       "k": "place",
@@ -592,7 +594,7 @@
     {
       "w": "Seleção",
       "means": "Marta’s national team",
-      "ex": "Brazil’s national team is often called the Seleção",
+      "ex": "Brazil’s women’s team is also called the Seleção",
       "hook": "Brazil",
       "k": "nickname",
       "src": "https://www.fifa.com/en/articles/every-marta-goal-womens-world-cup",
