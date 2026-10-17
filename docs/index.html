@@ -703,6 +703,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     if (document.hidden || FIXED !== null || today() === S.day || !(over() || !S.path.length)) return;
     S = load(); save(); show();
   });
+  document.addEventListener('touchstart', function () {}, { passive: true });   // iPhone Safari only shows :active (keys pressing down) once a touch listener exists
   cab.classList.add('poweron'); show(); save();
 
   // offline: sw.js keeps a saved copy so the game loads at the field with no signal
