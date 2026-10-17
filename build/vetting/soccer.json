@@ -7327,5 +7327,431 @@
   "at": "2026-10-17T00:01:58Z",
   "h": "e44bf8fb9d",
   "v": "ok"
+ },
+ "wc26:0": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "6838138df5",
+  "v": "ok"
+ },
+ "wc26:1": {
+  "at": "2026-10-17T00:04:39Z",
+  "fix": {
+   "ex": "Defending champions Argentina lost the final in extra time",
+   "hook": "champions"
+  },
+  "h": "f4268c8aaa",
+  "note": "Defending champions, plural, the way fans and FIFA say it and how the deck says Five-time champions Brazil and Two-time champions Uruguay",
+  "v": "fix"
+ },
+ "wc26:10": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "ced41f4901",
+  "note": "Logical twin of wc26:52: the only goal of the final means 1–0 (the means lines already tie them)",
+  "v": "ok"
+ },
+ "wc26:11": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "b1037d43e8",
+  "v": "ok"
+ },
+ "wc26:12": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "2b90794c38",
+  "note": "Same fact as legends:35 and awards:55 (22 goals). Keep one copy",
+  "v": "ok"
+ },
+ "wc26:13": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "e21db18e72",
+  "v": "ok"
+ },
+ "wc26:14": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "19c4ef0539",
+  "note": "Same fact as legends:3, word for word. Keep one copy, this deck owns 2026 facts",
+  "v": "ok"
+ },
+ "wc26:15": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "a2834a265e",
+  "v": "ok"
+ },
+ "wc26:16": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "9c97c797e8",
+  "v": "ok"
+ },
+ "wc26:17": {
+  "at": "2026-10-17T00:04:39Z",
+  "fix": {
+   "d": 2
+  },
+  "h": "199d9dac12",
+  "note": "Plays yellow, not red: next to two of Haaland, Messi, Mbappé, Saka or Kane, any regular fan picks the deep-lying midfielder Rodri",
+  "v": "fix"
+ },
+ "wc26:18": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "d52b00564a",
+  "v": "ok"
+ },
+ "wc26:19": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "69372ab769",
+  "note": "Every other player answer is a famous outfield player, so “Curaçao goalkeeper … made 16 saves” gives Eloy Room away to any fan. The player kind has no second keeper to make it fair",
+  "v": "cut"
+ },
+ "wc26:2": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "325816302e",
+  "v": "ok"
+ },
+ "wc26:20": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "27359d0c01",
+  "note": "Shares the oldest coach hook with wc26:26, which keeps the two apart",
+  "v": "ok"
+ },
+ "wc26:21": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "96b077311a",
+  "v": "ok"
+ },
+ "wc26:22": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "c5ce09059d",
+  "v": "ok"
+ },
+ "wc26:23": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "0f52215033",
+  "v": "ok"
+ },
+ "wc26:24": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "12b29ac54c",
+  "v": "ok"
+ },
+ "wc26:25": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "5bdd2c9034",
+  "v": "ok"
+ },
+ "wc26:26": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "9205ce421f",
+  "v": "ok"
+ },
+ "wc26:27": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "78f615d70a",
+  "v": "ok"
+ },
+ "wc26:28": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "745d98b67c",
+  "v": "ok"
+ },
+ "wc26:29": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "c6d16dca10",
+  "v": "ok"
+ },
+ "wc26:3": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "71a80521d1",
+  "note": "Five-time champions is the clue a new parent can lean on, so white is fair",
+  "v": "ok"
+ },
+ "wc26:30": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "eeba4d9dce",
+  "v": "ok"
+ },
+ "wc26:31": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "0203b1eb3b",
+  "note": "Twin of wc26:32 (the other semifinal city) and wc26:55 (same match). Dallas hosting nine games is not in the fifa.com text I hold, fact checker to confirm",
+  "v": "ok"
+ },
+ "wc26:32": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "226fc543e2",
+  "note": "Twin of wc26:31 and wc26:61 (same semifinal)",
+  "v": "ok"
+ },
+ "wc26:33": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "47d70f1006",
+  "note": "Same fact as awards:2 (Rodri, Golden Ball 2026)",
+  "v": "ok"
+ },
+ "wc26:34": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "b1bf31482f",
+  "note": "Same fact as awards:1 and awards:63",
+  "v": "ok"
+ },
+ "wc26:35": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "7eb0b2ef92",
+  "note": "Same fact as awards:26 and awards:60",
+  "v": "ok"
+ },
+ "wc26:36": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "e7db8fccf7",
+  "note": "Same fact as awards:68, word for word nearly. Keep one copy",
+  "v": "ok"
+ },
+ "wc26:37": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "2adcf645f3",
+  "v": "ok"
+ },
+ "wc26:38": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "2d844fc7e0",
+  "v": "ok"
+ },
+ "wc26:39": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "ece871ca33",
+  "v": "ok"
+ },
+ "wc26:4": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "0f762af968",
+  "note": "Decoys are never co-hosts, so it plays as a gimme, which is fine at white",
+  "v": "ok"
+ },
+ "wc26:40": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "19aa76965c",
+  "note": "Twin of intl-men:6, intl-men:44 and intl-men:52 (Spain 2010)",
+  "v": "ok"
+ },
+ "wc26:41": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "08d52d79d1",
+  "note": "Decoys are never Women’s World Cup years, so a fan who knows they fall in odd years gets it free. Twin of awards:42 and intl-women:4",
+  "v": "ok"
+ },
+ "wc26:42": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "0aec5bb579",
+  "note": "Twin of intl-men:3 and intl-men:34 (England 1966)",
+  "v": "ok"
+ },
+ "wc26:43": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "e9b6e2b3df",
+  "v": "ok"
+ },
+ "wc26:44": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "677e53b4c6",
+  "note": "Twin of intl-men:45 (Azteca, 1970 final)",
+  "v": "ok"
+ },
+ "wc26:45": {
+  "at": "2026-10-17T00:04:39Z",
+  "fix": {
+   "groups": [
+    [
+     "3",
+     "48"
+    ],
+    [
+     "6",
+     "48"
+    ],
+    [
+     "16",
+     "104"
+    ],
+    [
+     "3",
+     "104"
+    ],
+    [
+     "6",
+     "104"
+    ],
+    [
+     "3",
+     "34"
+    ],
+    [
+     "6",
+     "34"
+    ]
+   ]
+  },
+  "h": "280423c373",
+  "note": "The number cards draw decoys of the wrong size (Seattle hosted 104 matches, 3 teams at the first 48-team World Cup), so most draws play as gimmes. These groups keep each card to believable numbers: 48 teams vs 16, 34, 104, 16 cities vs 3, 6, 34, 48, 3 countries vs 6, 16, 104 matches vs 34, 48, Messi’s 34 games vs 16, 48, 104, Seattle’s 6 vs 3, 16. Assumes wc26:51 (1,248) is cut",
+  "v": "fix"
+ },
+ "wc26:46": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "769a5d1bf7",
+  "v": "ok"
+ },
+ "wc26:47": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "39c1f29055",
+  "v": "ok"
+ },
+ "wc26:48": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "80e8d5f15b",
+  "v": "ok"
+ },
+ "wc26:49": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "4ade512b3f",
+  "note": "Same fact as legends:34 (34 games), shared answer keeps them apart. Keep one copy",
+  "v": "ok"
+ },
+ "wc26:5": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "3edf30e60c",
+  "v": "ok"
+ },
+ "wc26:50": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "9a7d98bec5",
+  "v": "ok"
+ },
+ "wc26:51": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "c1b5c61a06",
+  "note": "Every decoy (3, 6, 16, 34, 48, 104) is far too small for a total of squad players, so it plays as a gimme, and the fact is arithmetic (26 × 48) more than soccer",
+  "v": "cut"
+ },
+ "wc26:52": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "9267550ada",
+  "v": "ok"
+ },
+ "wc26:53": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "e4e06ff627",
+  "note": "Twin cluster on the bronze final: wc26:15, 22, 30, 62",
+  "v": "ok"
+ },
+ "wc26:54": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "5c5becb56d",
+  "v": "ok"
+ },
+ "wc26:55": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "3cfcab03dc",
+  "v": "ok"
+ },
+ "wc26:56": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "76341eee7e",
+  "v": "ok"
+ },
+ "wc26:57": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "172f0819cc",
+  "note": "Borderline for red: a group game score, but FIFA calls it one of the games of the tournament and the wording doesn’t tip that it was a draw",
+  "v": "ok"
+ },
+ "wc26:58": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "a21431ad1e",
+  "v": "ok"
+ },
+ "wc26:59": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "a478c9d229",
+  "v": "ok"
+ },
+ "wc26:6": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "f687b03edf",
+  "v": "ok"
+ },
+ "wc26:60": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "4b49e871bf",
+  "v": "ok"
+ },
+ "wc26:61": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "32bbfabf0c",
+  "v": "ok"
+ },
+ "wc26:62": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "d55800901e",
+  "v": "ok"
+ },
+ "wc26:63": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "5f03c5c681",
+  "v": "ok"
+ },
+ "wc26:64": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "d2a0720619",
+  "v": "ok"
+ },
+ "wc26:65": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "0ef995d541",
+  "v": "ok"
+ },
+ "wc26:66": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "47646e3512",
+  "v": "ok"
+ },
+ "wc26:67": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "c9dda59f4f",
+  "note": "Same card as intl-men:56 (Three Lions), which owns national team nicknames. Not a 2026 fact. Cutting it also clears an odd decoy for the mascot cards",
+  "v": "cut"
+ },
+ "wc26:68": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "57c0e356d6",
+  "note": "Same card as intl-men:57 (La Roja), which owns national team nicknames. Not a 2026 fact",
+  "v": "cut"
+ },
+ "wc26:69": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "500b3141b0",
+  "v": "ok"
+ },
+ "wc26:7": {
+  "at": "2026-10-17T00:04:39Z",
+  "fix": {
+   "ex": "Cabo Verde were the only team to keep Spain from scoring"
+  },
+  "h": "c724f4f483",
+  "note": "Newcomers gives it away: every decoy (Argentina, Brazil, England, Mexico, USA) is a long-time World Cup team. Without it the player has to remember the 0–0 shock",
+  "v": "fix"
+ },
+ "wc26:70": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "d2b2d18d34",
+  "note": "Gimme and twin: the only ball name among mascots, and “Final” in the answer matches “the last four games.” wc26:69 already covers the Trionda",
+  "v": "cut"
+ },
+ "wc26:8": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "17abf45f87",
+  "note": "Decoys are always Spain, Argentina, Brazil and England, so it plays as a gimme, fine at white",
+  "v": "ok"
+ },
+ "wc26:9": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "8ea2d0fcf4",
+  "v": "ok"
  }
 }
