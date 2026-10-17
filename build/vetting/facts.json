@@ -1828,6 +1828,408 @@
   "note": "theifab.com Law 12.1 Handling the ball: unnaturally bigger is an offence, the arm’s upper boundary is the bottom of the armpit",
   "v": "ok"
  },
+ "bundesliga:0": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "fbab5ed700",
+  "note": "bundesliga.com German champions page (src): Bayern titles 2012/13 to 2022/23, then Leverkusen champions 2023/24. Kompany page also says Leverkusen ended the run of 11",
+  "v": "ok"
+ },
+ "bundesliga:1": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "a175428461",
+  "note": "bundesliga.com records page (src, stats as of 12 October 2026): Xabi Alonso’s Leverkusen 2023/24 the only side unbeaten for a whole season (34 games)",
+  "v": "ok"
+ },
+ "bundesliga:10": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "7b720a458a",
+  "note": "bundesliga.com matchday 30 report (src): 34th Bundesliga title with four games to spare, a 13th crown in 14 years",
+  "v": "ok"
+ },
+ "bundesliga:11": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "5fd85490a6",
+  "note": "bundesliga.com records page (src, stats as of 12 October 2026): Gerd Müller 365 goals for Bayern. Same on the top scorers page",
+  "v": "ok"
+ },
+ "bundesliga:12": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "31bb42d6a1",
+  "note": "bundesliga.com records page (src, stats as of 12 October 2026): top non-German scorer Lewandowski, 312 for Bayern and Dortmund",
+  "v": "ok"
+ },
+ "bundesliga:13": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "68eb01c22a",
+  "note": "bundesliga.com records page (src, stats as of 12 October 2026): Kane converted his first 24 Bundesliga penalties, missed the 25th against Wolfsburg on Matchday 33 of 2025/26",
+  "v": "ok"
+ },
+ "bundesliga:14": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "1f52fc61b5",
+  "note": "bundesliga.com records page (src, stats as of 12 October 2026): most clean sheets Neuer with 248, and he features in 2026/27, so still adding",
+  "v": "ok"
+ },
+ "bundesliga:15": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "547afc2524",
+  "note": "bundesliga.com records page (src, stats as of 12 October 2026): most assists in a season Thomas Müller 21 in 2019/20, career record 178 (since data collection began in 1992/93)",
+  "v": "ok"
+ },
+ "bundesliga:16": {
+  "at": "2026-10-17T00:04:17Z",
+  "h": "1a2afa4013",
+  "note": "bundesliga.com records page (src, stats as of 12 October 2026): Körbel 602 appearances, all for Eintracht Frankfurt",
+  "v": "ok"
+ },
+ "bundesliga:17": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "a6ba4c3409",
+  "note": "bundesliga.com records page (src, stats as of 12 October 2026): youngest scorer Moukoko, 16 years 28 days, for Dortmund at Union Berlin, December 2020",
+  "v": "ok"
+ },
+ "bundesliga:18": {
+  "at": "2026-10-17T00:04:17Z",
+  "h": "84f251e91f",
+  "note": "bundesliga.com records page (src, stats as of 12 October 2026): seven players scored debut hat-tricks, only Haaland (Dortmund) as a substitute",
+  "v": "ok"
+ },
+ "bundesliga:19": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "0e920cf6b2",
+  "note": "bundesliga.com records page (src, stats as of 12 October 2026): oldest scorer Pizarro at 40 years, 7 months and 15 days",
+  "v": "ok"
+ },
+ "bundesliga:2": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "65b0a28a9a",
+  "note": "bundesliga.com German champions page (src): 1963/64 Cologne first champions, 1977/78 Cologne (2nd title)",
+  "v": "ok"
+ },
+ "bundesliga:20": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "570d38e6a8",
+  "note": "bundesliga.com history page (src): Dortmund’s Timo Konietzka scored after 58 seconds against Werder on 24 August 1963",
+  "v": "ok"
+ },
+ "bundesliga:21": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "b241e5fa82",
+  "note": "bundesliga.com No. 5 shirt page (src): Bayern retired No. 5 for Beckenbauer, a four-time Bundesliga winner with Bayern",
+  "v": "ok"
+ },
+ "bundesliga:22": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "94fab7c7b4",
+  "note": "bundesliga.com records page (src, stats as of 12 October 2026): Lattek 8 titles as coach, 6 with Bayern and 2 with Gladbach",
+  "v": "ok"
+ },
+ "bundesliga:23": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "79ca7dba66",
+  "note": "bundesliga.com records page (src, stats as of 12 October 2026): Xabi Alonso’s Leverkusen 2023/24 went 34 games without defeat",
+  "v": "ok"
+ },
+ "bundesliga:24": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "a636558065",
+  "note": "bundesliga.com Klopp in numbers page (src): back-to-back titles with Dortmund in 2011 and 2012, 133 league wins with Dortmund",
+  "v": "ok"
+ },
+ "bundesliga:25": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "2ec5c59a09",
+  "note": "bundesliga.com records page (src, stats as of 12 October 2026): Bayern won their opening 10 games of 2015/16 under Guardiola, the longest winning start",
+  "v": "ok"
+ },
+ "bundesliga:26": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "36ed3eef14",
+  "note": "bundesliga.com records page (src, stats as of 12 October 2026): youngest permanent coach Nagelsmann, Hoffenheim, aged 28 years and 205 days",
+  "v": "ok"
+ },
+ "bundesliga:27": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "12b5bf7b30",
+  "note": "bundesliga.com Kompany page (src): won the title in his first two Bundesliga seasons (2024/25 and 2025/26) with Bayern",
+  "v": "ok"
+ },
+ "bundesliga:28": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "78c8e036f4",
+  "note": "bundesliga.com German champions page (src): Hitzfeld’s 7th title in 2007/08. Records page: Lattek’s 8 is the coaching record",
+  "v": "ok"
+ },
+ "bundesliga:29": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "d5ad3ee7d5",
+  "note": "bundesliga.com 2026/27 stadiums page (src): Allianz Arena Bayern’s home since the start of 2005/06",
+  "v": "ok"
+ },
+ "bundesliga:3": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "0f4262d932",
+  "note": "bundesliga.com German champions page (src): 1997/98 Kaiserslautern, only promoted team to win it. Records page confirms they remain the only one",
+  "v": "ok"
+ },
+ "bundesliga:30": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "5bd7f803b2",
+  "note": "bundesliga.com 2026/27 stadiums page (src): Signal Iduna Park is Germany’s largest stadium, holds 81,365",
+  "v": "ok"
+ },
+ "bundesliga:31": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "ebc0b7ce3b",
+  "note": "bundesliga.com 2026/27 stadiums page (src): Weserstadion sits on the bank of the Weser, fans can arrive by boat",
+  "v": "ok"
+ },
+ "bundesliga:32": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "f959952202",
+  "note": "bundesliga.com 2026/27 stadiums page (src): Veltins-Arena tunnel redesigned in 2014 to look like a coal mine",
+  "v": "ok"
+ },
+ "bundesliga:33": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "5badb0e057",
+  "note": "bundesliga.com 2026/27 stadiums page (src): Volksparkstadion HSV home since 1963, demolished and rebuilt in 2000",
+  "v": "ok"
+ },
+ "bundesliga:34": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "6dd0dfe7f5",
+  "note": "bundesliga.com records page (stats as of 12 Oct 2026): 88,075 at Berlin’s Olympiastadion in September 1969, Hertha beat Cologne 1–0",
+  "v": "ok"
+ },
+ "bundesliga:35": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "d7f31e5037",
+  "note": "bundesliga.com stadiums 2026–27 page: Stuttgart’s MHPArena, home since 1933, locals may still call it the Neckarstadion",
+  "v": "ok"
+ },
+ "bundesliga:36": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "b345ffcb57",
+  "note": "bundesliga.com animal names page: Cologne have a goat on the crest and are known as the Billy Goats",
+  "v": "ok"
+ },
+ "bundesliga:37": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "ef481e57bb",
+  "note": "bundesliga.com animal names page: Gladbach’s young squad and quick, free-flowing play earned the nickname the Foals",
+  "v": "ok"
+ },
+ "bundesliga:38": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "c85ca771d7",
+  "note": "bundesliga.com animal names page: the eagle of the city’s coat of arms, Eintracht are known as the Eagles",
+  "v": "ok"
+ },
+ "bundesliga:39": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "340335693c",
+  "note": "bundesliga.com animal names page: 1860 Munich have a lion on the badge, hence Die Löwen",
+  "v": "ok"
+ },
+ "bundesliga:4": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "c56ba1d3f3",
+  "note": "bundesliga.com German champions page (src): 2008/09 Wolfsburg first title, no other Wolfsburg title through 2023/24. Bayern won 2024/25 and 2025/26 (bundesliga.com/en/bundesliga/news/vincent-kompany-coaching-greats-bayern-munich-guardiola-flick-tuchel-37234), so still their only one",
+  "v": "ok"
+ },
+ "bundesliga:40": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "2b40a5ce35",
+  "note": "bundesliga.com animal names page: Duisburg’s blue-and-white striped shirts led to the name the Zebras",
+  "v": "ok"
+ },
+ "bundesliga:41": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "c9599ec918",
+  "note": "bundesliga.com Leverkusen nickname page: the team known as the Werkself, Factory XI",
+  "v": "ok"
+ },
+ "bundesliga:42": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "210db82fa7",
+  "note": "bundesliga.com No. 5 shirt page: Beckenbauer was known the world over as Der Kaiser and Bayern retired the No. 5",
+  "v": "ok"
+ },
+ "bundesliga:43": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "68f71ad792",
+  "note": "bundesliga.com Gerd Müller page: nicknamed Der Bomber, 566 goals in 607 competitive games for Bayern",
+  "v": "ok"
+ },
+ "bundesliga:44": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "589ff2ec0f",
+  "note": "bundesliga.com Meisterschale page (15 Apr 2026): trophy for each Bundesliga champion, nicknamed the salad bowl",
+  "v": "ok"
+ },
+ "bundesliga:45": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "3f37fea269",
+  "note": "bundesliga.com Kane page (16 May 2026): Torjägerkanone goes to the season’s top scorer, Kane won it a third straight season in 2025–26",
+  "v": "ok"
+ },
+ "bundesliga:46": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "2de51ff794",
+  "note": "bundesliga.com Yellow Wall page: the Yellow Wall is the south stand of Signal Iduna Park, almost 25,000 fans",
+  "v": "ok"
+ },
+ "bundesliga:47": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "b2804ee438",
+  "note": "bundesliga.com Hennes page: living goat mascot Hennes, named after player-coach Hennes Weisweiler",
+  "v": "ok"
+ },
+ "bundesliga:48": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "fa8307c789",
+  "note": "bundesliga.com derbies page: Der Klassiker is Bayern v Dortmund, first match 16 October 1965",
+  "v": "ok"
+ },
+ "bundesliga:49": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "1de72c9de4",
+  "note": "bundesliga.com derbies page: Revierderby is Dortmund v Schalke, first match 3 May 1925",
+  "v": "ok"
+ },
+ "bundesliga:5": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "9f8faff92d",
+  "note": "bundesliga.com records page (src, stats as of 12 October 2026): largest victory Gladbach 12–0 Dortmund on the final matchday of 1977/78",
+  "v": "ok"
+ },
+ "bundesliga:50": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "6d28ae7232",
+  "note": "bundesliga.com derbies page: Nordderby is Hamburg v Werder Bremen, a northern rivalry from the North German championship",
+  "v": "ok"
+ },
+ "bundesliga:51": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "b53bff2a08",
+  "note": "bundesliga.com derbies page: Rhine derby is Cologne v Gladbach, 35.4 miles apart",
+  "v": "ok"
+ },
+ "bundesliga:52": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "3e9e02a911",
+  "note": "bundesliga.com derbies page: Bayern v Gladbach is the Original Klassiker, they went toe-to-toe throughout the 70s",
+  "v": "ok"
+ },
+ "bundesliga:53": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "e016ab221e",
+  "note": "bundesliga.com derbies page: Baden-Swabia derby is Stuttgart v Karlsruhe, root of the feud goes back to 1806",
+  "v": "ok"
+ },
+ "bundesliga:54": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "a610940f3d",
+  "note": "bundesliga.com history page: first season got underway on 24 August 1963 with 16 teams",
+  "v": "ok"
+ },
+ "bundesliga:55": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "7512936d6a",
+  "note": "bundesliga.com stadiums 2026–27 page: Signal Iduna Park home since 1974, opened for that year’s World Cup, original name Westfalenstadion",
+  "v": "ok"
+ },
+ "bundesliga:56": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "897964cdd2",
+  "note": "bundesliga.com stadiums 2026–27 page: Allianz Arena home since 2005, in time for the 2005/06 season",
+  "v": "ok"
+ },
+ "bundesliga:57": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "2ed9423e6d",
+  "note": "bundesliga.com 50+1 page: the rule was introduced in 1998, members hold the majority of voting rights",
+  "v": "ok"
+ },
+ "bundesliga:58": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "91a6f6d3b4",
+  "note": "bundesliga.com Klopp in numbers page (24 Jul 2026): led Mainz into the Bundesliga for the first time in 2004 in his first coaching job",
+  "v": "ok"
+ },
+ "bundesliga:59": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "8672e64e1d",
+  "note": "bundesliga.com all clubs page: Bayern came up in 1965, failed to qualify for the first two seasons",
+  "v": "ok"
+ },
+ "bundesliga:6": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "ef400c4123",
+  "note": "bundesliga.com all-clubs page (src): HSV only ever-present club until relegation in 2018, returned in 2025",
+  "v": "ok"
+ },
+ "bundesliga:60": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "92b69af5b5",
+  "note": "bundesliga.com top scorers page: Gerd Müller 365 goals in 427 games over 14 seasons",
+  "v": "ok"
+ },
+ "bundesliga:61": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "6917fe3cdc",
+  "note": "bundesliga.com top scorers page: Lewandowski hit 41 in 2020/21, breaking Müller’s 40",
+  "v": "ok"
+ },
+ "bundesliga:62": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "beab3978c7",
+  "note": "bundesliga.com records page (stats as of 12 Oct 2026): Bayern champions 34 times in the Bundesliga era plus one in 1932 (still true after 2025–26)",
+  "v": "ok"
+ },
+ "bundesliga:63": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "e283885ab1",
+  "note": "bundesliga.com records page (stats as of 12 Oct 2026): Bayern 91 points in 2012/13, 25 points clear of Dortmund",
+  "v": "ok"
+ },
+ "bundesliga:64": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "71adacf20b",
+  "note": "bundesliga.com history page: 16-team division in 1963/64, became 18 from 1965/66",
+  "v": "ok"
+ },
+ "bundesliga:65": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "68e7a36e51",
+  "note": "bundesliga.com history page: sixteen teams became 18 from the 1965/66 campaign",
+  "v": "ok"
+ },
+ "bundesliga:66": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "c124b3b543",
+  "note": "bundesliga.com records page (stats as of 12 Oct 2026): Manuel Neuer has joined Thomas Müller on a record 13 Bundesliga titles (Neuer still playing, recheck next season)",
+  "v": "ok"
+ },
+ "bundesliga:7": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "98e557f58b",
+  "note": "bundesliga.com German champions page (src): Gladbach champions 1974/75, 1975/76, 1976/77 (3rd, 4th, 5th titles), five in all",
+  "v": "ok"
+ },
+ "bundesliga:8": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "19720c0de7",
+  "note": "bundesliga.com German champions page (src): VfB Stuttgart 1983/84, 1991/92 and 2006/07 (3rd title)",
+  "v": "ok"
+ },
+ "bundesliga:9": {
+  "at": "2026-10-17T00:04:10Z",
+  "h": "98cd6ff2d8",
+  "note": "bundesliga.com German champions page (src): 2003/04 Werder Bremen (4th title)",
+  "v": "ok"
+ },
  "epl:0": {
   "at": "2026-10-17T00:02:26Z",
   "h": "52f11c42dd",
