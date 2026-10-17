@@ -6,7 +6,7 @@
   "items": [
     {
       "w": "Brazil",
-      "means": "Their fifth title came in 2002",
+      "means": "Still the only five-time champions",
       "ex": "Brazil were the first nation to win five World Cups",
       "hook": "World Cups",
       "k": "team",
@@ -34,7 +34,7 @@
     },
     {
       "w": "England",
-      "means": "Geoff Hurst scored a hat-trick",
+      "means": "Geoff Hurst scored a hat trick",
       "ex": "England beat West Germany 4–2 in the 1966 World Cup final",
       "hook": "West Germany",
       "k": "team",
@@ -54,7 +54,7 @@
       "w": "Germany",
       "means": "They went on to win the final",
       "ex": "Germany beat host Brazil 7–1 in a 2014 World Cup semifinal",
-      "hook": "host Brazil",
+      "hook": "Brazil",
       "k": "team",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/germany-team-profile-history",
       "d": 2
@@ -72,7 +72,7 @@
       "w": "Italy",
       "means": "The first team to keep the title",
       "ex": "Italy won back-to-back World Cups in 1934 and 1938",
-      "hook": "World Cups",
+      "hook": "back-to-back",
       "k": "team",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/world-cup-champions-1930-1978-uruguay-italy-germany-brazil-england-argentina",
       "d": 3
@@ -82,7 +82,7 @@
       "means": "Big underdogs who won 1–0",
       "ex": "Greece won Euro 2004 by beating host Portugal in the final",
       "hook": "Euro 2004",
-      "k": "team",
+      "k": "euro winner",
       "src": "https://www.uefa.com/uefaeuro/history/news/0254-0d7b673abd33-d04e3bb2cd62-1000--greece-crowned-kings-of-europe-after-euro-2004-final-win-ag/",
       "d": 2
     },
@@ -91,7 +91,7 @@
       "means": "Beat Germany 2–0 in the final",
       "ex": "Denmark replaced Yugoslavia at Euro 1992 on short notice and won it",
       "hook": "Yugoslavia",
-      "k": "team",
+      "k": "euro winner",
       "src": "https://www.uefa.com/uefaeuro/history/news/025a-0eb91faf9bf0-942d69c5a0a8-1000--euro-1992-all-you-need-to-know/",
       "d": 3
     },
@@ -100,7 +100,7 @@
       "means": "Won the shoot-out 5–3",
       "ex": "Czechoslovakia beat West Germany on penalties to win Euro 1976",
       "hook": "Euro 1976",
-      "k": "team",
+      "k": "euro winner",
       "src": "https://www.uefa.com/uefaeuro/history/news/0253-0d7b2fd33353-cdc961ca4218-1000--panenka-makes-his-name-as-czechoslovakia-beat-west-german/",
       "d": 3
     },
@@ -108,7 +108,7 @@
       "w": "Croatia",
       "means": "Davor Šuker won the Golden Boot",
       "ex": "Croatia finished third at their very first World Cup in 1998",
-      "hook": "World Cup",
+      "hook": "1998",
       "k": "team",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/croatia-team-profile-history",
       "d": 2
@@ -118,7 +118,7 @@
       "means": "Beat France 1–0 in extra time",
       "ex": "Portugal won Euro 2016, their first major trophy",
       "hook": "Euro 2016",
-      "k": "team",
+      "k": "euro winner",
       "src": "https://www.uefa.com/uefaeuro/history/news/0253-0d81c3763c88-e741506b5589-1000--portugal-spoil-france-s-party-with-extra-time-win/",
       "d": 2
     },
@@ -143,8 +143,8 @@
     {
       "w": "Kylian Mbappé",
       "means": "France still lost on penalties",
-      "ex": "Kylian Mbappé scored a hat-trick in the 2022 World Cup final",
-      "hook": "hat-trick",
+      "ex": "Kylian Mbappé scored a hat trick in the 2022 World Cup final",
+      "hook": "hat trick",
       "k": "player",
       "src": "https://www.fifa.com/en/articles/france-world-cup-team-profile-history",
       "d": 2
@@ -207,7 +207,7 @@
     },
     {
       "w": "Luka Modrić",
-      "means": "Croatia lost the final to France",
+      "means": "Given to the tournament’s best player",
       "ex": "Luka Modrić won the Golden Ball after Croatia reached the 2018 final",
       "hook": "Croatia",
       "k": "player",
@@ -234,9 +234,9 @@
     },
     {
       "w": "Bert Patenaude",
-      "means": "For the USA in 1930",
-      "ex": "Bert Patenaude scored the first hat-trick in World Cup history",
-      "hook": "hat-trick",
+      "means": "For the USA, against Paraguay",
+      "ex": "Bert Patenaude scored the first hat trick in World Cup history",
+      "hook": "hat trick",
       "k": "player",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/usa-team-profile-history",
       "d": 3
@@ -261,7 +261,7 @@
     },
     {
       "w": "Michel Platini",
-      "means": "Including two hat-tricks",
+      "means": "Including two hat tricks",
       "ex": "Michel Platini scored a record nine goals at Euro 1984",
       "hook": "Euro 1984",
       "k": "player",
@@ -307,9 +307,9 @@
     },
     {
       "w": "Vittorio Pozzo",
-      "means": "Italy in 1934 and 1938",
-      "ex": "Vittorio Pozzo was the first coach to win two World Cups",
-      "hook": "World Cups",
+      "means": "Champions in 1934 and 1938",
+      "ex": "Italy’s Vittorio Pozzo is the only coach to win two World Cups",
+      "hook": "Italy",
       "k": "coach",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/vittorio-pozzo-only-coach-two-titles",
       "d": 3,
@@ -372,7 +372,7 @@
     {
       "w": "Maracanã",
       "means": "Known as the Maracanazo",
-      "ex": "Uruguay stunned Brazil in the deciding game of 1950 at the Maracanã",
+      "ex": "Uruguay stunned Brazil at the Maracanã to win the 1950 World Cup",
       "hook": "Uruguay",
       "k": "stadium",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/uruguay-team-profile-history",
@@ -470,7 +470,7 @@
     },
     {
       "w": "2002",
-      "means": "Brazil won their fifth title",
+      "means": "The first co-hosted World Cup",
       "ex": "South Korea and Japan hosted the first World Cup in Asia in 2002",
       "hook": "Japan",
       "k": "year",
@@ -481,7 +481,7 @@
       "w": "2010",
       "means": "Spain won the final 1–0",
       "ex": "South Africa hosted the first World Cup in Africa in 2010",
-      "hook": "Africa",
+      "hook": "South Africa",
       "k": "year",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/world-cup-champions-1982-2026-italy-argentina-germany-brazil-france-spain",
       "d": 2
@@ -489,7 +489,7 @@
     {
       "w": "2022",
       "means": "Thirty-two teams took part",
-      "ex": "Qatar hosted the World Cup in November and December of 2022",
+      "ex": "Qatar hosted the World Cup in November and December 2022",
       "hook": "Qatar",
       "k": "year",
       "src": "https://www.fifa.com/en/articles/ten-queries-about-qatar-2022-world-cup",
@@ -622,10 +622,6 @@
       "Argentina"
     ],
     [
-      "Denmark",
-      "Greece"
-    ],
-    [
       "Croatia",
       "Portugal"
     ],
@@ -637,12 +633,6 @@
       "Brazil",
       "Germany",
       "Italy"
-    ],
-    [
-      "Greece",
-      "Denmark",
-      "Czechoslovakia",
-      "Portugal"
     ],
     [
       "Argentina",

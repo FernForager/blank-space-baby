@@ -6,7 +6,9 @@
     python3 tools/vet.py status                                 # where every card stands
     python3 tools/vet.py fixes [DECK]                           # open fix and cut verdicts on current cards (for Trivelle)
     python3 tools/vet.py take ID WHO                            # write WHO's proposed fix into the deck (for Trivelle)
+    python3 tools/vet.py combine ID WHO:field,field WHO:field   # write fields from two reviewers' fixes at once (for Trivelle)
     python3 tools/vet.py out ID "reason"                        # take a card out of play for good (for Trivelle)
+    python3 tools/vet.py decline ID WHO "reason"                # turn down WHO's fix or cut: the card goes back to WHO (for Trivelle)
     python3 tools/vet.py marks FILE.json                        # Morg's beta marks: rows from the database's marks table
 
 WHO is one of the reviewers in build/build.py: soccer (the soccer expert), editor (the writing editor) or facts
@@ -60,6 +62,7 @@ def view(did, deck, i, flags=''):
             ('slang deck: no proper names' if 'slang' in flags else ''), ('can go stale: check it is still true today' if it.get('current') else '')) if x]}
 
 def todo(who, deck_id=None, limit=None, as_json=False):
+    """Cards waiting on who: no verdict, a verdict for an older wording, or a fix the desk turned down (with its reason)."""
     verdicts, marks = B.vetting()
     out = []
     for did, deck, flags in decks():
@@ -70,7 +73,9 @@ def todo(who, deck_id=None, limit=None, as_json=False):
             if it.get('out') or (marks.get(cid) or {}).get('m') == 'lock': continue
             v = verdicts[who].get(cid)
             if v and v.get('h') == B.fingerprint(deck, i, clash): continue
-            out.append(view(did, deck, i, flags))
+            c = view(did, deck, i, flags); n = desk_note(cid, who)
+            if n: c['notes'].append(n)
+            out.append(c)
     left = len(out)
     if limit: out = out[:limit]
     if as_json: print(json.dumps(out, ensure_ascii=False, indent=1)); return
@@ -187,15 +192,74 @@ def take(cid, who):
     bad = problems_with(did, deck, i, v['fix'])
     if bad: sys.exit('the fix breaks house rules: ' + '; '.join(' '.join(str(x) for x in b[2:]) for b in bad))
     new = changed(deck, i, v['fix']); save_deck(did, new); p = new['items'][i]
-    dpath = os.path.join(B.VET, 'desk.json'); desk = B.load_json(dpath, {})   # the proposer's ok on the wording it asked for
-    desk.setdefault(cid, {})[who] = {'h': B.fingerprint(new, i), 'at': now()}; save_json(dpath, desk)
-    print(f'{cid} now reads: {p["ex"]}  [{p["w"]}]  means: {p["means"]}  tile: {p.get("hook")}  (fingerprint {B.fingerprint(new, i)}: counts as {who}’s ok, back to the other two)')
+    carried = carry(did, deck, new, skip=(i,))
+    dpath = os.path.join(B.VET, 'desk.json'); desk = B.load_json(dpath, {})   # the proposer's ok on the wording it asked for,
+    old = B.fingerprint(deck, i)                                               # and any other reviewer's who asked for the same
+    for w in B.REVIEWERS:
+        o = verdicts[w].get(cid)
+        if w == who or (o and o.get('v') == 'fix' and o.get('h') == old and o.get('fix') == v['fix']):
+            desk.setdefault(cid, {})[w] = {'h': B.fingerprint(new, i), 'at': now()}
+    save_json(dpath, desk)
+    print(f'{cid} now reads: {p["ex"]}  [{p["w"]}]  means: {p["means"]}  tile: {p.get("hook")}  (fingerprint {B.fingerprint(new, i)}: counts as {who}’s ok, back to the other two)' + (f'  ({carried} oks carried on deck-mates)' if carried else ''))
     if v['fix'].get('groups'): print('  groups added:', v['fix']['groups'], '(cards of the same kind get new fingerprints too)')
+
+def combine(cid, parts):
+    """Apply fields from several reviewers' fixes on one card at once, as WHO:field,field ... It counts as no one's ok,
+    since the result is no one's exact proposal, so all three see the card fresh."""
+    did, deck, i = find(cid)
+    verdicts, marks = B.vetting(); h = B.fingerprint(deck, i); fix = {}
+    if (marks.get(cid) or {}).get('m') == 'lock': sys.exit(f'Morg locked {cid}')
+    for part in parts:
+        who, _, fields = part.partition(':')
+        v = verdicts.get(who, {}).get(cid)
+        if not v or v.get('v') != 'fix' or v.get('h') != h: sys.exit(f'{who} has no current fix on {cid}')
+        for f in fields.split(','):
+            if f not in v['fix']: sys.exit(f'{who}’s fix on {cid} has no {f}')
+            fix[f] = v['fix'][f]
+    bad = problems_with(did, deck, i, fix)
+    if bad: sys.exit('the combined fix breaks house rules: ' + '; '.join(' '.join(str(x) for x in b[2:]) for b in bad))
+    new = changed(deck, i, fix); save_deck(did, new); p = new['items'][i]
+    carried = carry(did, deck, new, skip=(i,))
+    print(f'{cid} now reads: {p["ex"]}  [{p["w"]}]  means: {p["means"]}  tile: {p.get("hook")}  (combined, back to all three)' + (f'  ({carried} oks carried on deck-mates)' if carried else ''))
+
+def carry(did, before, after, skip=()):
+    """After a deck changes, keep the oks of every other card whose only change is losing wrong answers: a card offered
+    fewer decoys can't gain a second right answer, so its reviewers needn't see it again. A card that gains a decoy
+    goes back to them. Recorded in desk.json like a taken fix."""
+    verdicts, _ = B.vetting(); cb, ca = B.clasher(before), B.clasher(after)
+    dpath = os.path.join(B.VET, 'desk.json'); desk = B.load_json(dpath, {}); n = 0
+    for j, it in enumerate(after['items']):
+        if j in skip or it.get('out') or j >= len(before['items']): continue
+        old, new = B.fingerprint(before, j, cb), B.fingerprint(after, j, ca)
+        if old == new or {k: v for k, v in before['items'][j].items()} != it: continue
+        if not set(B.wrong_pool(after, it, ca)) <= set(B.wrong_pool(before, before['items'][j], cb)): continue
+        cid = f'{did}:{j}'
+        for w in B.REVIEWERS:
+            v = verdicts[w].get(cid)
+            if v and v.get('v') == 'ok' and v.get('h') == old:
+                desk.setdefault(cid, {})[w] = {'h': new, 'at': now()}; n += 1
+    save_json(dpath, desk)
+    return n
+
+def decline(cid, who, why):
+    """Turn down a reviewer's fix or cut with a reason. The card goes back into that reviewer's todo with the reason."""
+    did, deck, i = find(cid)
+    verdicts, _ = B.vetting(); v = verdicts[who].get(cid)
+    if not v or v.get('v') == 'ok': sys.exit(f'{who} has no fix or cut on {cid}')
+    dpath = os.path.join(B.VET, 'desk.json'); desk = B.load_json(dpath, {})
+    desk.setdefault(cid, {})[who] = {'declined': True, 'note': why, 'h': B.fingerprint(deck, i), 'at': now()}; save_json(dpath, desk)
+    print(f'declined {who}’s {v["v"]} on {cid}: {why}')
+
+def desk_note(cid, who):
+    t = B.load_json(os.path.join(B.VET, 'desk.json'), {}).get(cid, {}).get(who)
+    return f'Trivelle turned down your last verdict: {t["note"]}' if t and t.get('declined') else ''
 
 def take_out(cid, why):
     did, deck, i = find(cid)
+    before = json.loads(json.dumps(deck))
     deck['items'][i]['out'] = True; deck['items'][i]['out_why'] = why; save_deck(did, deck)
-    print(f'{cid} is out: {why}')
+    n = carry(did, before, deck, skip=(i,))
+    print(f'{cid} is out: {why}  ({n} oks carried over on cards that only lost it as a wrong answer)')
 
 def import_marks(path):
     """Morg's marks from the beta (rows of the marks table, oldest first) folded into build/vetting/morg.json.
@@ -234,5 +298,7 @@ if __name__ == '__main__':
     elif cmd == 'fixes': fixes(plain_args[0] if plain_args else None)
     elif cmd == 'take': take(plain_args[0], plain_args[1])
     elif cmd == 'out': take_out(plain_args[0], plain_args[1])
+    elif cmd == 'combine': combine(plain_args[0], plain_args[1:])
+    elif cmd == 'decline': decline(plain_args[0], plain_args[1], plain_args[2])
     elif cmd == 'marks': import_marks(plain_args[0])
     else: sys.exit(__doc__)

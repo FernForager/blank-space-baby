@@ -53,8 +53,8 @@
     {
       "w": "Andrés Iniesta",
       "means": "It spared Spain a penalty shootout",
-      "ex": "Andrés Iniesta scored the winner in the 116th minute of the 2010 final",
-      "hook": "2010 final",
+      "ex": "Andrés Iniesta scored the winner in the 116th minute of the 2010 World Cup final",
+      "hook": "116th minute",
       "k": "player",
       "src": "https://www.fifa.com/en/articles/100-great-world-cup-moments-fifa-qatar-2022-6-iniesta-2010-final-spain-netherlands",
       "d": 2
@@ -71,7 +71,7 @@
     {
       "w": "Ferenc Puskás",
       "means": "Hungary’s “Galloping Major”",
-      "ex": "Since 2009, FIFA’s award for the year’s best goal has honored Ferenc Puskás",
+      "ex": "Since 2009, FIFA’s award for the year’s best goal has been named for Ferenc Puskás",
       "hook": "best goal",
       "k": "player",
       "src": "https://www.fifa.com/en/news/articles/hungary-magical-magyars-puskas-hidegkuti-england-wembley-1953-six-three",
@@ -127,7 +127,7 @@
     {
       "w": "Tim Cahill",
       "means": "Australia’s top men’s scorer, with 50",
-      "ex": "Tim Cahill celebrated goals by shadow-boxing the corner flag",
+      "ex": "Tim Cahill celebrated goals by shadowboxing the corner flag",
       "hook": "corner flag",
       "k": "player",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/tim-cahill-world-cup-celebrations",
@@ -145,8 +145,8 @@
     {
       "w": "Mário Zagallo",
       "means": "Player in 1958 and 1962, coach in 1970",
-      "ex": "Mário Zagallo was first to win the World Cup as player and coach, before Deschamps",
-      "hook": "Deschamps",
+      "ex": "Mário Zagallo was the first to win the World Cup as a player and as a coach",
+      "hook": "coach",
       "k": "player",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/zagallo-beckenbauer-deschamps-record",
       "d": 3
@@ -313,7 +313,7 @@
       "w": "45",
       "means": "He broke the record for oldest player",
       "ex": "Egypt’s Essam El Hadary played at the 2018 World Cup at age 45",
-      "hook": "Egypt",
+      "hook": "El Hadary",
       "k": "number",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/essam-el-hadary-oldest-player",
       "d": 3,
@@ -351,7 +351,7 @@
     {
       "w": "Cameroon",
       "means": "They reached the quarterfinals",
-      "ex": "Roger Milla scored four goals for Cameroon at the 1990 World Cup, aged 38",
+      "ex": "Roger Milla, 38, scored four goals for Cameroon at the 1990 World Cup",
       "hook": "Roger Milla",
       "k": "nation",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/roger-milla-oldest-goalscorer-cameroon",
@@ -407,7 +407,7 @@
     },
     {
       "w": "Hungary",
-      "means": "They had 35 shots to England’s five",
+      "means": "They had 35 shots to England’s 5",
       "ex": "Ferenc Puskás and Hungary beat England 6–3 at Wembley in 1953",
       "hook": "Puskás",
       "k": "nation",
@@ -417,7 +417,7 @@
     {
       "w": "Netherlands",
       "means": "Players swapped positions freely",
-      "ex": "Total Football was perfected by Johan Cruyff’s Ajax and the Netherlands",
+      "ex": "Ajax and Johan Cruyff’s Netherlands perfected Total Football",
       "hook": "Ajax",
       "k": "nation",
       "src": "https://www.fifa.com/en/articles/total-football-revolutionary-ajax-barcelona-netherlands-rinus-michels-johan-cruyff",
@@ -552,7 +552,7 @@
     {
       "w": "Reims",
       "means": "Full name: Stade de Reims",
-      "ex": "Just Fontaine was a Reims striker when he starred at the 1958 World Cup",
+      "ex": "Just Fontaine played for Reims when he starred at the 1958 World Cup",
       "hook": "Fontaine",
       "k": "club",
       "src": "https://www.fifa.com/en/articles/just-fontaine-13-goal-fifa-world-cup-record-sweden-1958-france",
@@ -608,7 +608,7 @@
     {
       "w": "Black Spider",
       "means": "His black kit was really dark blue",
-      "ex": "Soviet goalkeeper Lev Yashin was nicknamed the Black Spider",
+      "ex": "Soviet goalkeeper Lev Yashin was known by the nickname Black Spider",
       "hook": "Lev Yashin",
       "k": "nickname",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/lev-yashin-soviet-union-goalkeeper",
@@ -617,7 +617,7 @@
     {
       "w": "Black Panther",
       "means": "Scored twice past Brazil in 1966",
-      "ex": "Portugal’s Eusébio was nicknamed the Black Panther",
+      "ex": "Portugal’s Eusébio was known by the nickname Black Panther",
       "hook": "Eusébio",
       "k": "nickname",
       "src": "https://www.fifa.com/en/articles/pele-greatest-showdowns-eusebio-garrincha-lev-yashin",
@@ -626,7 +626,7 @@
     {
       "w": "Divine Ponytail",
       "means": "Il Divin Codino in Italian",
-      "ex": "Italy’s Roberto Baggio was nicknamed the Divine Ponytail",
+      "ex": "Italy’s Roberto Baggio was known by the nickname Divine Ponytail",
       "hook": "Baggio",
       "k": "nickname",
       "src": "https://www.fifa.com/en/articles/roberto-baggio-italy-azzurri-brazil-heartbreak-fifa-world-cup-final-rose-bowl",
@@ -654,7 +654,7 @@
     {
       "w": "Little Bird",
       "means": "Star of Brazil’s 1962 World Cup win",
-      "ex": "Brazil winger Garrincha was nicknamed the Little Bird",
+      "ex": "Brazil winger Garrincha was known by the nickname Little Bird",
       "hook": "Garrincha",
       "k": "nickname",
       "src": "https://www.fifa.com/en/articles/89-days-to-go-qatar-2022-garrincha-brazil-chile-1962-fifa-world-cup",

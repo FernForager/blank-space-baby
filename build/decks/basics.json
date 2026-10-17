@@ -88,8 +88,8 @@
     {
       "w": "colors",
       "means": "They must differ from the referee’s too",
-      "ex": "Each team must wear colors that set it apart from the other team",
-      "hook": "set it apart",
+      "ex": "Each team must wear shirt colors that set it apart from the other team",
+      "hook": "shirt",
       "k": "game-gear",
       "src": "https://www.theifab.com/laws/latest/the-players-equipment/",
       "d": 1
@@ -231,7 +231,7 @@
     },
     {
       "w": "coin toss",
-      "means": "A second toss picks who kicks first",
+      "means": "The second toss winner picks who starts",
       "ex": "In a shoot-out, the goal for every kick is chosen at the coin toss",
       "hook": "every kick",
       "k": "game-time",
@@ -467,7 +467,7 @@
       "w": "penalty arc",
       "means": "Players wait outside it at penalty kicks",
       "ex": "The penalty arc is the curved line bulging out from the top of the big box",
-      "hook": "curved line",
+      "hook": "big box",
       "k": "field-area",
       "src": "https://www.theifab.com/laws/latest/the-field-of-play/",
       "d": 1
@@ -692,7 +692,7 @@
       "w": "penalty kick",
       "means": "Stalling the kick isn’t allowed either",
       "ex": "At a penalty kick, the keeper may not touch the posts or net to distract the shooter",
-      "hook": "net",
+      "hook": "shooter",
       "k": "restart-type",
       "src": "https://www.theifab.com/laws/latest/the-penalty-kick/",
       "d": 1
@@ -730,7 +730,7 @@
       "ex": "A foul just outside the box gives a free kick, even if the player lands inside",
       "hook": "just outside",
       "k": "restart-type",
-      "src": "https://www.theifab.com/laws/latest/free-kicks/",
+      "src": "https://www.theifab.com/laws/latest/fouls-and-misconduct/",
       "d": 1
     },
     {
@@ -825,7 +825,7 @@
     },
     {
       "w": "shielding",
-      "means": "Legal if no arms hold the opponent off",
+      "means": "Legal with the ball near and no holding",
       "ex": "Keeping the body between an opponent and the ball is called shielding",
       "hook": "body",
       "k": "fouls-act",
@@ -996,7 +996,7 @@
     },
     {
       "w": "yellow card",
-      "means": "Once in play: a card plus a free kick",
+      "means": "In play: card plus free kick or penalty",
       "ex": "At a corner kick, a player who keeps holding after a warning earns a yellow card",
       "hook": "holding",
       "k": "fouls-call",
