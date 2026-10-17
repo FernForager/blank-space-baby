@@ -2220,15 +2220,15 @@
   "v": "ok"
  },
  "bundesliga:1": {
-  "at": "2026-10-17T00:04:10Z",
-  "h": "a175428461",
-  "note": "bundesliga.com records page (src, stats as of 12 October 2026): Xabi Alonso’s Leverkusen 2023/24 the only side unbeaten for a whole season (34 games)",
+  "at": "2026-10-17T00:30:51Z",
+  "h": "f97c9ee10a",
+  "note": "bundesliga.com match report (src): Leverkusen 2-1 Augsburg on the final day, the first-ever side to last a Bundesliga season unbeaten",
   "v": "ok"
  },
  "bundesliga:10": {
-  "at": "2026-10-17T00:04:10Z",
-  "h": "7b720a458a",
-  "note": "bundesliga.com matchday 30 report (src): 34th Bundesliga title with four games to spare, a 13th crown in 14 years",
+  "at": "2026-10-17T00:30:51Z",
+  "h": "ec37e3888f",
+  "note": "bundesliga.com season in numbers (src, 26.05.2026): 122 is Bayern’s new Bundesliga record for goals, the 1971/72 side held the record for 54 years. Still the record, the 2026/27 season is only weeks old",
   "v": "ok"
  },
  "bundesliga:11": {
@@ -2292,9 +2292,9 @@
   "v": "ok"
  },
  "bundesliga:20": {
-  "at": "2026-10-17T00:04:10Z",
-  "h": "570d38e6a8",
-  "note": "bundesliga.com history page (src): Dortmund’s Timo Konietzka scored after 58 seconds against Werder on 24 August 1963",
+  "at": "2026-10-17T00:30:51Z",
+  "h": "4349a376fd",
+  "note": "bundesliga.com history explained (src): Dortmund’s Timo Konietzka scored after only 58 seconds against Werder on 24 August 1963. The records page names the opponent as Werder Bremen",
   "v": "ok"
  },
  "bundesliga:21": {
@@ -2304,9 +2304,9 @@
   "v": "ok"
  },
  "bundesliga:22": {
-  "at": "2026-10-17T00:04:10Z",
-  "h": "94fab7c7b4",
-  "note": "bundesliga.com records page (src, stats as of 12 October 2026): Lattek 8 titles as coach, 6 with Bayern and 2 with Gladbach",
+  "at": "2026-10-17T00:30:51Z",
+  "h": "2c119c16c2",
+  "note": "bundesliga.com records page (src, current to 2026/27): Most titles (coach) Udo Lattek 8, six with Bayern and two with Gladbach",
   "v": "ok"
  },
  "bundesliga:23": {
@@ -2328,9 +2328,9 @@
   "v": "ok"
  },
  "bundesliga:26": {
-  "at": "2026-10-17T00:04:10Z",
-  "h": "36ed3eef14",
-  "note": "bundesliga.com records page (src, stats as of 12 October 2026): youngest permanent coach Nagelsmann, Hoffenheim, aged 28 years and 205 days",
+  "at": "2026-10-17T00:30:51Z",
+  "h": "3894beab4a",
+  "note": "bundesliga.com records page (src): youngest permanent coach Julian Nagelsmann, first game in charge of Hoffenheim at 28 years and 205 days",
   "v": "ok"
  },
  "bundesliga:27": {
@@ -2340,9 +2340,9 @@
   "v": "ok"
  },
  "bundesliga:28": {
-  "at": "2026-10-17T00:04:10Z",
-  "h": "78c8e036f4",
-  "note": "bundesliga.com German champions page (src): Hitzfeld’s 7th title in 2007/08. Records page: Lattek’s 8 is the coaching record",
+  "at": "2026-10-17T00:30:51Z",
+  "h": "3bab531d5e",
+  "note": "bundesliga.com champions page (src): Hitzfeld’s titles 1 and 2 with Dortmund (1994/95, 1995/96) and 3 to 7 with Bayern, Lattek’s eight a record. No other coach on the list passes four (Heynckes) through 2023/24, and the records page still names Lattek alone as the record holder, so Hitzfeld is second today",
   "v": "ok"
  },
  "bundesliga:29": {
@@ -2418,10 +2418,13 @@
   "v": "ok"
  },
  "bundesliga:4": {
-  "at": "2026-10-17T00:04:10Z",
-  "h": "c56ba1d3f3",
-  "note": "bundesliga.com German champions page (src): 2008/09 Wolfsburg first title, no other Wolfsburg title through 2023/24. Bayern won 2024/25 and 2025/26 (bundesliga.com/en/bundesliga/news/vincent-kompany-coaching-greats-bayern-munich-guardiola-flick-tuchel-37234), so still their only one",
-  "v": "ok"
+  "at": "2026-10-17T00:30:51Z",
+  "fix": {
+   "src": "https://www.bundesliga.com/en/faq/10-things-on-the-bundesliga/all-clubs-that-have-played-in-germany-s-top-flight-bayern-munich-dortmund-24106"
+  },
+  "h": "a632cb9b72",
+  "note": "The champions page (src) shows Magath and Wolfsburg’s first title in 2008/09 but stops at 2023/24, so it can’t show the means line today. The all-clubs page, updated for 2026, says Magath was the brains behind Wolfsburg’s sole Bundesliga title and that they were relegated in 2026 with the 2008/09 title under Magath",
+  "v": "fix"
  },
  "bundesliga:40": {
   "at": "2026-10-17T00:04:10Z",
@@ -2550,9 +2553,9 @@
   "v": "ok"
  },
  "bundesliga:6": {
-  "at": "2026-10-17T00:04:10Z",
-  "h": "ef400c4123",
-  "note": "bundesliga.com all-clubs page (src): HSV only ever-present club until relegation in 2018, returned in 2025",
+  "at": "2026-10-17T00:30:51Z",
+  "h": "2a51742ebc",
+  "note": "bundesliga.com all-clubs page (src): the only ever-present club until relegation in 2018, a stadium clock counted their time as the ‘Bundesliga Dino’, back up in 2025",
   "v": "ok"
  },
  "bundesliga:60": {
@@ -2604,10 +2607,13 @@
   "v": "ok"
  },
  "bundesliga:8": {
-  "at": "2026-10-17T00:04:10Z",
-  "h": "19720c0de7",
-  "note": "bundesliga.com German champions page (src): VfB Stuttgart 1983/84, 1991/92 and 2006/07 (3rd title)",
-  "v": "ok"
+  "at": "2026-10-17T00:30:51Z",
+  "fix": {
+   "ex": "VfB Stuttgart beat Schalke to the 2006–07 title by two points"
+  },
+  "h": "56a929503d",
+  "note": "bundesliga.com champions page (src): 2006/07 VfB Stuttgart champions with 70 points ahead of Schalke on 68, so two points, not one. The 1983/84 and 1991/92 titles (means) are on the same page",
+  "v": "fix"
  },
  "bundesliga:9": {
   "at": "2026-10-17T00:04:10Z",
@@ -8649,6 +8655,16 @@
   "note": "uefa.com 2023 season page: Man City win as Rodri strikes in Istanbul. Final Man City 1–0 Inter per match.uefa.com/v5/matches (the API the season page loads)",
   "v": "ok"
  },
+ "ucl:14": {
+  "at": "2026-10-17T00:30:51Z",
+  "fix": {
+   "means": "Their first Champions League title",
+   "src": "https://www.uefa.com/uefachampionsleague/news/0299-1de417608530-15b01ff7b150-1000--paris-win-champions-league-desire-doue-double-helps-secure/"
+  },
+  "h": "c9ebf169e6",
+  "note": "The 2025 season page (src) shows Paris’ first ever Champions League winning campaign but not Doué’s goals. The uefa.com final report shows Doué scoring on 20 and 63 minutes in the 5-0 win over Inter. Means narrowed to what the season page says (PSG had other European cups before, so ‘first European title’ reads wrong)",
+  "v": "fix"
+ },
  "ucl:15": {
   "at": "2026-10-17T00:17:55Z",
   "h": "4a3cbdaa04",
@@ -8763,6 +8779,12 @@
   "note": "uefa.com 2019 season page: Klopp’s Liverpool beat Spurs in all-English final",
   "v": "ok"
  },
+ "ucl:32": {
+  "at": "2026-10-17T00:30:51Z",
+  "h": "c61b5ee067",
+  "note": "uefa.com report (src): AS Monaco 0-3 FC Porto in the 2004 final, Porto coach José Mourinho",
+  "v": "ok"
+ },
  "ucl:33": {
   "at": "2026-10-17T00:17:55Z",
   "h": "c8b352f0f7",
@@ -8811,10 +8833,22 @@
   "note": "uefa.com 2020 season page: Bayern reign as Coman returns to haunt Paris. Final Paris 0–1 Bayern per match.uefa.com/v5/matches (the API the season page loads)",
   "v": "ok"
  },
+ "ucl:40": {
+  "at": "2026-10-17T00:30:51Z",
+  "h": "ee00e98b9e",
+  "note": "uefa.com match page (src) shows the final as Madrid’s ninth European crown. Its own match data, https://match.uefa.com/v5/matches/69489, gives 15 May 2002, Leverkusen 1-2 Real Madrid at Hampden Park, Glasgow",
+  "v": "ok"
+ },
  "ucl:41": {
   "at": "2026-10-17T00:17:55Z",
   "h": "b78d69998d",
   "note": "uefa.com seasons/2009: Barcelona too strong for Manchester United. match.uefa.com/v5/matches?matchId=302813: 2–0, Stadio Olimpico, Rome, goals Eto’o and Messi",
+  "v": "ok"
+ },
+ "ucl:42": {
+  "at": "2026-10-17T00:30:51Z",
+  "h": "c62d48c837",
+  "note": "uefa.com report (src): Dortmund 0-2 Real Madrid at Wembley Stadium on 1 June 2024, goals by Carvajal and Vinícius Júnior",
   "v": "ok"
  },
  "ucl:43": {
@@ -8865,10 +8899,22 @@
   "note": "uefa.com 1978 season page: Francis scored Forest’s winner in the 1979 final. Final Nott’m Forest 1–0 Malmö per match.uefa.com/v5/matches (the API the season page loads)",
   "v": "ok"
  },
+ "ucl:50": {
+  "at": "2026-10-17T00:30:51Z",
+  "h": "ae06f3b077",
+  "note": "uefa.com UWCL history (src, updated May 2026): Lyon won in 2015/16, 2016/17, 2017/18, 2018/19 and 2019/20, Renard in her ninth final in 2020, and the club is now the renamed OL Lyonnes",
+  "v": "ok"
+ },
  "ucl:51": {
   "at": "2026-10-17T00:18:04Z",
   "h": "4b0a75d3a9",
   "note": "WUCL history article: 2007/08 Frankfurt became the first three-time champions, and won the first UEFA Women’s Cup in 2002",
+  "v": "ok"
+ },
+ "ucl:52": {
+  "at": "2026-10-17T00:30:51Z",
+  "h": "0aab8635e4",
+  "note": "uefa.com UWCL history (src): the first UEFA Women’s Champions League of 2009/10 ended in a one-off final in Getafe, 0-0 then Potsdam beat Olympique Lyonnais 7-6 on penalties",
   "v": "ok"
  },
  "ucl:53": {
@@ -8981,6 +9027,15 @@
   "h": "1d020b0e87",
   "note": "uefa.com 1992 season page: Marseille win inaugural Champions League final, France’s first winners",
   "v": "ok"
+ },
+ "ucl:9": {
+  "at": "2026-10-17T00:30:51Z",
+  "fix": {
+   "means": "They were also champions in 1987"
+  },
+  "h": "39fc9bff75",
+  "note": "uefa.com report (src): Monaco 0-3 Porto, the premier club prize for the second time, 17 years after the 1987 European Cup final. But the same page says Porto had just won the UEFA Cup the season before, so ‘second European title’ is wrong. New means keeps the 1987 fact without that problem",
+  "v": "fix"
  },
  "wc26:0": {
   "at": "2026-10-17T00:20:41Z",
