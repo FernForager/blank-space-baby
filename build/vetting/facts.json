@@ -1930,6 +1930,12 @@
   "note": "news 4725666 (all 20 stadiums, 2026/27): Liverpool have played at Anfield since the club was formed in 1892, capacity 61,276",
   "v": "ok"
  },
+ "epl:24": {
+  "at": "2026-10-17T00:02:42Z",
+  "h": "1360501bd5",
+  "note": "news 4725666 (all 20 stadiums, 2026/27): six bronze statues of Arsenal figures outside Emirates Stadium, named after sponsor airline Emirates",
+  "v": "ok"
+ },
  "epl:25": {
   "at": "2026-10-17T00:02:26Z",
   "h": "86fc2b29f5",
@@ -2012,6 +2018,12 @@
   "at": "2026-10-17T00:02:26Z",
   "h": "d8f60a303d",
   "note": "news 4489927 (Tyne-Wear derby) calls Sunderland the Black Cats and their ground the Stadium of Light",
+  "v": "ok"
+ },
+ "epl:37": {
+  "at": "2026-10-17T00:02:42Z",
+  "h": "a84bf62998",
+  "note": "news 4592046 (history behind club names): Cherries nickname believed to stem from the red striped shirts or nearby cherry trees",
   "v": "ok"
  },
  "epl:38": {
@@ -2111,6 +2123,12 @@
   "at": "2026-10-17T00:02:26Z",
   "h": "79543e47be",
   "note": "news 4644752: Ipswich finished second in the Championship, an immediate return after relegation in 2024/25. Hull page 4664386 confirms runners-up",
+  "v": "ok"
+ },
+ "epl:8": {
+  "at": "2026-10-17T00:02:42Z",
+  "h": "48cfc9a920",
+  "note": "news 4664386: Hull beat Middlesbrough 1-0 in the playoff final at Wembley, McBurnie scored in second-half stoppage time",
   "v": "ok"
  },
  "epl:9": {
