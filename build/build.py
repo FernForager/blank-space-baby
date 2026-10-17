@@ -148,8 +148,16 @@ def load_json(path, default):
     except FileNotFoundError: return default
 
 def vetting():
-    """Every reviewer's verdicts ({card id: {v, h, note, fix, at}}) and Morg's marks ({card id: {m, h, note, at}})."""
-    return {who: load_json(os.path.join(VET, who + '.json'), {}) for who in REVIEWERS}, load_json(os.path.join(VET, 'morg.json'), {}).get('cards', {})
+    """Every reviewer's verdicts ({card id: {v, h, note, fix, at}}) and Morg's marks ({card id: {m, h, note, at}}).
+    A reviewer's own fix, once the desk applies it exactly as proposed (tools/vet.py take), counts as that reviewer's
+    ok on the new wording: the desk records it in desk.json ({card id: {who: {h, at}}}), since only reviewers write
+    their own files. Whichever is newer, the reviewer's verdict or the desk's record, stands."""
+    verdicts = {who: load_json(os.path.join(VET, who + '.json'), {}) for who in REVIEWERS}
+    for cid, takes in load_json(os.path.join(VET, 'desk.json'), {}).items():
+        for who, t in takes.items():
+            v = verdicts.get(who, {}).get(cid)
+            if who in verdicts and (not v or v.get('at', '') <= t['at']): verdicts[who][cid] = {'v': 'ok', 'h': t['h'], 'at': t['at'], 'note': 'its own fix, applied as proposed'}
+    return verdicts, load_json(os.path.join(VET, 'morg.json'), {}).get('cards', {})
 
 def standing(cid, it, h, verdicts, marks):
     """Where a card stands: out, locked, flagged, approved (all three reviewers said ok to this wording) or pending.
