@@ -3691,6 +3691,312 @@
   "note": "detallenoticia/47571: Víctor Guzmán scored at 90+3 for Pachuca against Monterrey in the Clausura 2016 final",
   "v": "ok"
  },
+ "ligue1:0": {
+  "at": "2026-10-17T00:12:14Z",
+  "h": "363f1fd0e7",
+  "note": "ligue1.com title-in-numbers (May 20, 2026): fifth consecutive title, sealed with a 0–2 win at Lens. Also l1_article_5693 (26/27 PSG preview)",
+  "v": "ok"
+ },
+ "ligue1:10": {
+  "at": "2026-10-17T00:12:14Z",
+  "h": "81d225d596",
+  "note": "ligue1.com palmarès (updated May 2026): Olympique Lillois won the first edition 1932/33, one title",
+  "v": "ok"
+ },
+ "ligue1:11": {
+  "at": "2026-10-17T00:12:04Z",
+  "h": "d8476986ca",
+  "note": "ligue1.com top scorers history: Onnis 299, Lacombe 255. Same list in the May 17, 2026 update l1_article_80",
+  "v": "ok"
+ },
+ "ligue1:13": {
+  "at": "2026-10-17T00:12:04Z",
+  "h": "15b9b715ab",
+  "note": "ligue1.com l1_article_80 (May 17, 2026): Papin first to win five consecutive top scorer titles, with OM 1988 to 1992",
+  "v": "ok"
+ },
+ "ligue1:14": {
+  "at": "2026-10-17T00:12:04Z",
+  "h": "aaf0dc7b01",
+  "note": "ligue1.com Reims article: Kopa joined Real Madrid in 1956, Ballon d’Or 1958, four French titles with Reims (1953, 1955, 1960, 1962)",
+  "v": "ok"
+ },
+ "ligue1:15": {
+  "at": "2026-10-17T00:12:04Z",
+  "h": "26b3de290e",
+  "note": "ligue1.com Saint-Étienne golden years: 1980–81 title with Platini as captain, their tenth and last. Palmarès page (May 2026) confirms no title since 1981",
+  "v": "ok"
+ },
+ "ligue1:16": {
+  "at": "2026-10-17T00:12:04Z",
+  "h": "d63a67fc31",
+  "note": "ligue1.com Zidane article (Jul 28, 2026): appointed France head coach, succeeding Didier Deschamps. Dated fact, stays true",
+  "v": "ok"
+ },
+ "ligue1:17": {
+  "at": "2026-10-17T00:12:04Z",
+  "h": "8da4ac1941",
+  "note": "ligue1.com Dembélé Ballon d’Or article (Sep 22, 2025): won with PSG, sixth Frenchman. Still at PSG per l1_article_5693 (Aug 2026)",
+  "v": "ok"
+ },
+ "ligue1:18": {
+  "at": "2026-10-17T00:12:04Z",
+  "h": "14d9d396d6",
+  "note": "ligue1.com Montpellier best moments: Giroud ended level on 21 goals, sharing the top scorer honor with Nenê",
+  "v": "ok"
+ },
+ "ligue1:19": {
+  "at": "2026-10-17T00:12:04Z",
+  "h": "09b72d333b",
+  "note": "ligue1.com/fr Classique records (Sep 14, 2026): Ibrahimović 11 goals, Mbappé next with 9. Neither plays in Ligue 1 now, so it holds",
+  "v": "ok"
+ },
+ "ligue1:2": {
+  "at": "2026-10-17T00:12:04Z",
+  "h": "49b5a3adc8",
+  "note": "ligue1.com Mbappé birthday article: his Ligue 1 story began with Monaco in 2016/17, 15 goals as Monaco won the title",
+  "v": "ok"
+ },
+ "ligue1:20": {
+  "at": "2026-10-17T00:12:04Z",
+  "h": "129ea6361f",
+  "note": "ligue1.com title-in-numbers (May 20, 2026): Marquinhos record 11 titles, Verratti next with 9. No title decided since",
+  "v": "ok"
+ },
+ "ligue1:21": {
+  "at": "2026-10-17T00:12:04Z",
+  "h": "c411341f31",
+  "note": "ligue1.com Auxerre article: Guy Roux French football’s longest serving manager, managed until June 2005, 1995–96 title",
+  "v": "ok"
+ },
+ "ligue1:22": {
+  "at": "2026-10-17T00:12:04Z",
+  "h": "afc5f87bdb",
+  "note": "ligue1.com/fr coaches record page: Batteux 8 titles (Reims 5, ASSE 3). Still the record: Luis Enrique has 3 per the palmarès page",
+  "v": "ok"
+ },
+ "ligue1:23": {
+  "at": "2026-10-17T00:12:04Z",
+  "h": "a30c846060",
+  "note": "ligue1.com 26/27 PSG preview (Aug 19, 2026): back-to-back Champions Leagues under Luis Enrique after a historic treble the season before",
+  "v": "ok"
+ },
+ "ligue1:24": {
+  "at": "2026-10-17T00:12:14Z",
+  "h": "e06ba508d3",
+  "note": "ligue1.com OM birthday article (Aug 31, 2026): Deschamps guided OM to their most recent league title in 2010",
+  "v": "ok"
+ },
+ "ligue1:25": {
+  "at": "2026-10-17T00:12:04Z",
+  "h": "954df3439e",
+  "note": "ligue1.com Lille 2021 history article: Lille pipped PSG to the 2020–21 title under Christophe Galtier",
+  "v": "ok"
+ },
+ "ligue1:26": {
+  "at": "2026-10-17T00:12:04Z",
+  "h": "2790edfd73",
+  "note": "ligue1.com Lens season preview: Will Still at Reims in 2022–23 became the youngest head coach in Europe’s top five leagues",
+  "v": "ok"
+ },
+ "ligue1:27": {
+  "at": "2026-10-17T00:12:04Z",
+  "h": "75fd276634",
+  "note": "Les Voisins article: PSG took over the Parc des Princes on promotion in 1974. Still home in 2026/27 per l1_article_5699 and l1_article_5710 (Aug 2026)",
+  "v": "ok"
+ },
+ "ligue1:29": {
+  "at": "2026-10-17T00:12:04Z",
+  "h": "67ca85d3a8",
+  "note": "Olimpico article names Gerland as Lyon’s historic stadium and Groupama Stadium for a 2024 home game. Still home in 2026/27 per https://ligue1.com/en/articles/l1_article_5690- (Preview #9: Olympique Lyonnais, Aug 2026)",
+  "v": "ok"
+ },
+ "ligue1:3": {
+  "at": "2026-10-17T00:12:04Z",
+  "h": "d5e3c579ea",
+  "note": "Waddle page shows three successive titles with OM. Four in a row 1988/89–1991/92 and nine titles in all: ligue1.com/fr/articles/l1_article_289-le-palmares-des-champions-de-ligue-1 (updated May 2026) and l1_article_5771",
+  "v": "ok"
+ },
+ "ligue1:30": {
+  "at": "2026-10-17T00:12:04Z",
+  "fix": {
+   "means": "Les Verts’ home ground"
+  },
+  "h": "256078d640",
+  "note": "src shows the Chaudron and Geoffroy-Guichard as Saint-Étienne’s home (still so in Aug 2026 per l1_article_5723) but never the full name Stade Geoffroy-Guichard, so means changed to what the page shows",
+  "v": "fix"
+ },
+ "ligue1:31": {
+  "at": "2026-10-17T00:12:04Z",
+  "h": "5912b5cfc1",
+  "note": "src (Aug 22, 2026) has Lens beating Auxerre at home at Stade Bollaert-Delelis, also the 26/27 PSG preview (l1_article_5693) names Stade Bollaert-Delelis",
+  "v": "ok"
+ },
+ "ligue1:32": {
+  "at": "2026-10-17T00:12:04Z",
+  "h": "861d47c788",
+  "note": "src (2024 preview) lists Stadium: Stade de la Beaujoire. Still current: https://ligue1.com/en/articles/l1_article_4273-lyon-grind-out-nantes-win-to-climb-onto-podium (Feb 7, 2026) has Nantes hosting Lyon at La Beaujoire. Nantes are not in the 2026–27 Ligue 1 matchday 1 list, the sentence still holds",
+  "v": "ok"
+ },
+ "ligue1:36": {
+  "at": "2026-10-17T00:12:04Z",
+  "h": "3b7795fe8e",
+  "note": "src lists Nickname(s): Sainté, Les Verts, Les Stéphanois. Means is the plain French meaning (verts = greens), ligue1.com does not translate it",
+  "v": "ok"
+ },
+ "ligue1:37": {
+  "at": "2026-10-17T00:12:04Z",
+  "h": "22bce96d95",
+  "note": "src lists Nickname(s): Les Canaris, La Maison Jaune. Means is the plain French meaning, ligue1.com does not translate it",
+  "v": "ok"
+ },
+ "ligue1:38": {
+  "at": "2026-10-17T00:12:04Z",
+  "h": "d863274fa8",
+  "note": "src lists Nickname: Les Dogues. Means is the plain French meaning (dogue = mastiff), ligue1.com does not translate it",
+  "v": "ok"
+ },
+ "ligue1:39": {
+  "at": "2026-10-17T00:12:04Z",
+  "h": "fbea6b955c",
+  "note": "src lists Nickname(s): Les Sang & Or (Blood and Gold). The Nice preview (l1_article_590) spells it Le Sang et Or",
+  "v": "ok"
+ },
+ "ligue1:4": {
+  "at": "2026-10-17T00:12:14Z",
+  "h": "d5e89f838f",
+  "note": "ligue1.com Montpellier best moments: 2011–12 title three points ahead of PSG, Nicollin’s orange and blue fauxhawk",
+  "v": "ok"
+ },
+ "ligue1:40": {
+  "at": "2026-10-17T00:12:04Z",
+  "h": "115277eb11",
+  "note": "src lists Nickname(s): Les Aiglons, Le Gym, still used in the 26/27 Nice preview l1_article_5679. Means is the plain French meaning, ligue1.com does not translate it",
+  "v": "ok"
+ },
+ "ligue1:41": {
+  "at": "2026-10-17T00:12:04Z",
+  "h": "21d2ffdc98",
+  "note": "src lists Nickname(s): Les Pirates, Les Ti’Zefs",
+  "v": "ok"
+ },
+ "ligue1:42": {
+  "at": "2026-10-17T00:12:14Z",
+  "h": "f8ee6e3eb7",
+  "note": "src (Sep 14, 2026) names the PSG–OM match the Classique and says Steve Mandanda played 30 Classiques, the most of any player",
+  "v": "ok"
+ },
+ "ligue1:43": {
+  "at": "2026-10-17T00:12:04Z",
+  "h": "5651263a7b",
+  "note": "src (Sep 2025) calls Lens vs Lille the Derby du Nord, or Derby of the North",
+  "v": "ok"
+ },
+ "ligue1:44": {
+  "at": "2026-10-17T00:12:04Z",
+  "h": "bbad93d4fd",
+  "note": "src (Feb 2026) calls Olympique de Marseille vs Olympique Lyonnais the Olimpico",
+  "v": "ok"
+ },
+ "ligue1:45": {
+  "at": "2026-10-17T00:12:04Z",
+  "h": "f0166aec46",
+  "note": "src: Breton derbies involve Rennes, Nantes, Angers, Brest and Lorient, and are never spicier than when Nantes take on Rennes",
+  "v": "ok"
+ },
+ "ligue1:46": {
+  "at": "2026-10-17T00:12:04Z",
+  "fix": {
+   "means": "Nice and Monaco are local rivals"
+  },
+  "h": "61057b5070",
+  "note": "src (Feb 8, 2026) names Nice vs Monaco the Côte d’Azur derby and calls them local rivals, but says nothing about the Mediterranean",
+  "v": "fix"
+ },
+ "ligue1:47": {
+  "at": "2026-10-17T00:12:04Z",
+  "h": "239b5dcca9",
+  "note": "src (Nov 2024) calls Lyon vs Saint-Étienne the Rhône Derby and the Rhône-Alps derby",
+  "v": "ok"
+ },
+ "ligue1:48": {
+  "at": "2026-10-17T00:12:14Z",
+  "h": "2158a0d1f3",
+  "note": "src (Aug 19, 2026): twelve months after dismantling Inter in Munich to lift their first Champions League, PSG won it again",
+  "v": "ok"
+ },
+ "ligue1:49": {
+  "at": "2026-10-17T00:12:14Z",
+  "h": "177622c606",
+  "note": "src (Aug 19, 2026): PSG beat Arsenal 4–3 on penalties after a 1–1 draw in the Budapest final to retain the trophy",
+  "v": "ok"
+ },
+ "ligue1:5": {
+  "at": "2026-10-17T00:12:04Z",
+  "h": "b16811d3ee",
+  "note": "ligue1.com Saint-Étienne golden years: 1976 European Cup final, 1–0 loss to Bayern at Hampden Park",
+  "v": "ok"
+ },
+ "ligue1:50": {
+  "at": "2026-10-17T00:12:04Z",
+  "h": "847234d687",
+  "note": "src (Aug 31, 2026): Basile Boli got the only goal against AC Milan in the 1993 final. 1–0 also on https://ligue1.com/en/articles/l1_article_2646-ligue-1-in-uefa-champions-league-finals",
+  "v": "ok"
+ },
+ "ligue1:51": {
+  "at": "2026-10-17T00:12:04Z",
+  "h": "fd55bfe263",
+  "note": "src: 1956 Real Madrid 4–3 Stade de Reims, then 1959 Real Madrid 2–0 Reims",
+  "v": "ok"
+ },
+ "ligue1:52": {
+  "at": "2026-10-17T00:12:04Z",
+  "h": "3f5a5c7353",
+  "note": "src: 1991 Red Star Belgrade 0–0 OM, 5–3 on penalties",
+  "v": "ok"
+ },
+ "ligue1:53": {
+  "at": "2026-10-17T00:12:04Z",
+  "h": "64b046ba69",
+  "note": "src: 2004 FC Porto 3–0 Monaco",
+  "v": "ok"
+ },
+ "ligue1:56": {
+  "at": "2026-10-17T00:12:04Z",
+  "h": "cc385e92b3",
+  "note": "src (May 2026): only Lyon, 2002 to 2008 (7), and the French palmarès page l1_article_289 says Lyon stand alone with 7 in a row",
+  "v": "ok"
+ },
+ "ligue1:6": {
+  "at": "2026-10-17T00:12:04Z",
+  "h": "7e585d6eff",
+  "note": "ligue1.com Dembélé Rennes article: breakout 2015–16, 12 goals and 5 assists in 26 Ligue 1 appearances",
+  "v": "ok"
+ },
+ "ligue1:60": {
+  "at": "2026-10-17T00:12:04Z",
+  "h": "3049568ead",
+  "note": "src (Jun 10, 2026): 2026/27 season runs Aug 21, 2026 to May 29, 2027, the 34th and final matchday",
+  "v": "ok"
+ },
+ "ligue1:7": {
+  "at": "2026-10-17T00:12:04Z",
+  "h": "eb0f061f0c",
+  "note": "ligue1.com Brest season preview: finished third in 2023/24, Champions League for the first time in club history",
+  "v": "ok"
+ },
+ "ligue1:8": {
+  "at": "2026-10-17T00:12:04Z",
+  "h": "6352b4c088",
+  "note": "ligue1.com Les Voisins article: return to the top flight for 2025–26 after a 46-year absence, Stade Jean-Bouin home. Still home in 2026/27 per l1_article_5692 (Paris FC preview, Aug 19, 2026)",
+  "v": "ok"
+ },
+ "ligue1:9": {
+  "at": "2026-10-17T00:12:04Z",
+  "h": "1acae9ed82",
+  "note": "ligue1.com Zidane roots article: Division 1 debut for Cannes against Nantes on 18 May 1989, aged 16",
+  "v": "ok"
+ },
  "lingo-more:0": {
   "at": "2026-10-16T23:56:49Z",
   "h": "14c3ce7ddd",
