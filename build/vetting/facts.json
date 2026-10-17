@@ -417,7 +417,7 @@
   "v": "fix"
  },
  "alpha:53": {
-  "at": "2026-10-17T00:24:33Z",
+  "at": "2026-10-17T00:38:00Z",
   "fix": {
    "groups": [
     [
@@ -426,7 +426,7 @@
     ]
    ]
   },
-  "h": "91f51d5091",
+  "h": "8152e7bdd7",
   "note": "Sense checks out at https://www.merriam-webster.com/dictionary/lit (M-W dictionary: excellent, exciting). But M-W chalked includes messed up, ruined, no good, so “the film night was chalked” also fits, the same way mid and cringe are already grouped with lit",
   "v": "fix"
  },
@@ -552,21 +552,10 @@
   "v": "fix"
  },
  "alpha:68": {
-  "at": "2026-10-17T00:01:37Z",
-  "fix": {
-   "groups": [
-    [
-     "smol",
-     "fire",
-     "goated",
-     "peak",
-     "lit"
-    ]
-   ]
-  },
-  "h": "5d2bab8031",
-  "note": "Sense checks out at https://www.merriam-webster.com/slang/smol (M-W slang page: small, little in an intensely cute way). But “the puppy is fire / goated / peak / lit” fit the same way gas and tuff do, which the deck already groups with smol",
-  "v": "fix"
+  "at": "2026-10-17T00:38:00Z",
+  "h": "0dea7fdcf1",
+  "note": "merriam-webster.com smol: small in a cute way. The desk took fire, goated, peak and lit off this card, so smol is the one right answer",
+  "v": "ok"
  },
  "alpha:69": {
   "at": "2026-10-17T00:01:37Z",
@@ -805,8 +794,8 @@
   "v": "ok"
  },
  "awards:0": {
-  "at": "2026-10-17T00:23:27Z",
-  "h": "45e37fca46",
+  "at": "2026-10-17T00:38:00Z",
+  "h": "bfa7cd6b3c",
   "note": "fifa.com messi-golden-ball-record: only two-time Golden Ball winner, Brazil 2014 and Qatar 2022. Still true today: the 2026 Golden Ball went to Rodri, Messi took the Silver Ball (overall-tournament-review-spain-argentina)",
   "v": "ok"
  },
@@ -1078,8 +1067,8 @@
   "v": "ok"
  },
  "awards:5": {
-  "at": "2026-10-17T00:24:47Z",
-  "h": "3cb45a9b7a",
+  "at": "2026-10-17T00:38:00Z",
+  "h": "bca8f56050",
   "note": "fifa.com every-world-cup-top-scorer (published 22 Jul 2026): Kempes top scorer 1978 with six, a brace in the final",
   "v": "ok"
  },
@@ -1192,8 +1181,8 @@
   "v": "ok"
  },
  "awards:69": {
-  "at": "2026-10-17T00:23:27Z",
-  "h": "ec54d180a4",
+  "at": "2026-10-17T00:38:00Z",
+  "h": "9d15b83518",
   "note": "fifa.com The Best all-winners history page (API text, updated 16 Dec 2025) lists Lamela 2021. Means is on https://www.fifa.com/en/the-best-fifa-football-awards/articles/watch-every-puskas-award-winner (named for Hungarian striker Ferenc Puskás)",
   "v": "ok"
  },
@@ -1204,14 +1193,10 @@
   "v": "ok"
  },
  "awards:70": {
-  "at": "2026-10-17T00:23:27Z",
-  "fix": {
-   "ex": "Lizbeth Ovalle’s scorpion kick won the 2025 FIFA Marta Award",
-   "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/marta-winner-2025-lizbeth-ovalle"
-  },
-  "h": "2c6ccc5c33",
-  "note": "FIFA’s Ovalle winner page calls the goal an audacious scorpion kick, not a back-heel volley. The history page only lists her name",
-  "v": "fix"
+  "at": "2026-10-17T00:38:00Z",
+  "h": "f9687230d7",
+  "note": "fifa.com Marta Award 2025 winner page: Lizbeth Ovalle’s scorpion kick. Puskás Award is now drawable, but that award is the men’s, so it stays false",
+  "v": "ok"
  },
  "awards:71": {
   "at": "2026-10-17T00:23:27Z",
@@ -1247,8 +1232,8 @@
   "v": "ok"
  },
  "basics:1": {
-  "at": "2026-10-17T00:18:17Z",
-  "h": "85b5bf1a9f",
+  "at": "2026-10-17T00:38:00Z",
+  "h": "450b797eb9",
   "note": "theifab.com Law 4.2 and FAQs (footwear lost accidentally must be replaced no later than when the ball next goes out of play, a goal scored before that is awarded)",
   "v": "ok"
  },
@@ -1496,14 +1481,10 @@
   "v": "ok"
  },
  "basics:136": {
-  "at": "2026-10-17T00:18:44Z",
-  "fix": {
-   "ex": "The ref must make a call and may not wait for the VAR’s replay to make it",
-   "hook": "call"
-  },
-  "h": "3151bc5216",
-  "note": "theifab.com VAR protocol: the referee must always make a decision and may not give “no decision” and then use the replay review to decide. But the VAR may also act on a serious missed incident where no call was made, so “only then can the VAR step in” is too strong. The new sentence states the protocol’s own rule, and “replay” keeps referee and assistant referee false",
-  "v": "fix"
+  "at": "2026-10-17T00:38:00Z",
+  "h": "f0e8edf071",
+  "note": "theifab.com VAR protocol: the referee must always make a decision and may not use the replay review to make it. The desk’s wording states that rule, and referee and assistant referee stay false",
+  "v": "ok"
  },
  "basics:137": {
   "at": "2026-10-16T23:59:06Z",
@@ -1863,8 +1844,8 @@
   "v": "ok"
  },
  "basics:48": {
-  "at": "2026-10-17T00:18:17Z",
-  "h": "6c7267afd6",
+  "at": "2026-10-17T00:38:00Z",
+  "h": "ff75aa47d7",
   "note": "merriam-webster.com/dictionary/goalmouth (the area directly in front of the goal, as in soccer or hockey, headword is one word)",
   "v": "ok"
  },
@@ -2913,8 +2894,8 @@
   "v": "ok"
  },
  "epl-more:52": {
-  "at": "2026-10-17T00:24:47Z",
-  "h": "6e2bc58c52",
+  "at": "2026-10-17T00:38:00Z",
+  "h": "eb3b5645cc",
   "note": "premierleague.com stadiums guide (26 Sep 2026): Amex home since 2011, replacing Withdean Stadium",
   "v": "ok"
  },
@@ -3432,8 +3413,8 @@
   "v": "ok"
  },
  "intl-men:28": {
-  "at": "2026-10-17T00:17:52Z",
-  "h": "e19a564ba1",
+  "at": "2026-10-17T00:38:00Z",
+  "h": "f98a7b38d8",
   "note": "uefa.com Euro history makers 1984: Platini’s nine goals including two hat-tricks remain a record (no Euro since 2024)",
   "v": "ok"
  },
@@ -4499,8 +4480,8 @@
   "v": "ok"
  },
  "legends:18": {
-  "at": "2026-10-17T00:21:33Z",
-  "h": "e352251811",
+  "at": "2026-10-17T00:38:00Z",
+  "h": "cffa64afe4",
   "note": "fifa.com Prinz countdown page: in 2003 she was the first to take both the Golden Boot and Golden Ball outright, Germany won the title",
   "v": "ok"
  },
@@ -4547,32 +4528,32 @@
   "v": "ok"
  },
  "legends:30": {
-  "at": "2026-10-17T00:21:33Z",
-  "h": "081cbba555",
+  "at": "2026-10-17T00:38:00Z",
+  "h": "56692b795a",
   "note": "fifa.com Milla record page: 42 when he scored in 1994. Still first on fifa.com oldest goalscorers list updated 19 Jul 2026 (…/canadamexicousa2026/articles/oldest-goalscorers-history-all-time), Ronaldo second at 41",
   "v": "ok"
  },
  "legends:31": {
-  "at": "2026-10-17T00:21:33Z",
-  "h": "79067a9be3",
+  "at": "2026-10-17T00:38:00Z",
+  "h": "cf75b30d2d",
   "note": "fifa.com Zoff page: 40 years 133 days in 1982, oldest winner. Spain won 2026 and no Spain player is on fifa.com’s oldest-players-at-2026 list (all 39+ listed), so the record stands",
   "v": "ok"
  },
  "legends:32": {
-  "at": "2026-10-17T00:21:33Z",
-  "h": "adda8f94d8",
+  "at": "2026-10-17T00:38:00Z",
+  "h": "e6acbdda43",
   "note": "fifa.com El Hadary page: 45 years 161 days at Russia 2018, oldest player ever. fifa.com eight-players-aged-40-or-over (2026) confirms no one surpasses him",
   "v": "ok"
  },
  "legends:33": {
-  "at": "2026-10-17T00:21:33Z",
-  "h": "1dcebe5682",
+  "at": "2026-10-17T00:38:00Z",
+  "h": "f1fa9808bd",
   "note": "fifa.com Charlton obituary: 106 appearances and 49 goals for England, 1966 World Cup winner",
   "v": "ok"
  },
  "legends:35": {
-  "at": "2026-10-17T00:21:33Z",
-  "h": "02e8eff24c",
+  "at": "2026-10-17T00:38:00Z",
+  "h": "ab74b421fc",
   "note": "fifa.com all-time scorers (19 Jul 2026): Mbappé 22, ten of them at the 2026 World Cup",
   "v": "ok"
  },
@@ -5577,8 +5558,8 @@
   "v": "ok"
  },
  "ligue1:58": {
-  "at": "2026-10-17T00:28:39Z",
-  "h": "8e1f0f1c2f",
+  "at": "2026-10-17T00:38:00Z",
+  "h": "6eecc6d3d6",
   "note": "ligue1.com Juninho article: 75 goals in 248 Ligue 1 matches, including 30 from free kicks",
   "v": "ok"
  },
@@ -6294,8 +6275,8 @@
   "v": "ok"
  },
  "mls:49": {
-  "at": "2026-10-17T00:12:00Z",
-  "h": "04e7647785",
+  "at": "2026-10-17T00:38:00Z",
+  "h": "887cfb32c5",
   "note": "src clubs page lists 30 clubs today, three in Canada (CF Montréal, Toronto FC, Vancouver). 30th club: https://www.mlssoccer.com/news/major-league-soccer-awards-expansion-team-to-san-diego",
   "v": "ok"
  },
@@ -6318,8 +6299,8 @@
   "v": "ok"
  },
  "mls:52": {
-  "at": "2026-10-17T00:12:00Z",
-  "h": "46a3cd2efd",
+  "at": "2026-10-17T00:38:00Z",
+  "h": "8ad4a7315e",
   "note": "src: Vela surpassed Josef Martínez’s mark of 31 goals set the year before (2018)",
   "v": "ok"
  },
@@ -6330,8 +6311,8 @@
   "v": "ok"
  },
  "mls:54": {
-  "at": "2026-10-17T00:12:00Z",
-  "h": "45b02bf66b",
+  "at": "2026-10-17T00:38:00Z",
+  "h": "7af7219afc",
   "note": "src: 2025 Lionel Messi 29 goals, 2024 Christian Benteke 23 goals",
   "v": "ok"
  },
@@ -6859,8 +6840,8 @@
   "v": "ok"
  },
  "nwsl:18": {
-  "at": "2026-10-17T00:11:13Z",
-  "h": "b8da1cd6d0",
+  "at": "2026-10-17T00:38:00Z",
+  "h": "b83dd11aae",
   "note": "Wave page: the Wave retired her No. 13, and she was welcomed as “the San Diegoat”",
   "v": "ok"
  },
@@ -7312,8 +7293,8 @@
   "v": "ok"
  },
  "parents:22": {
-  "at": "2026-10-16T23:59:51Z",
-  "h": "46c7f1363a",
+  "at": "2026-10-17T00:38:00Z",
+  "h": "4ca8633d35",
   "note": "M-W word sense 12 slang: used interjectionally to express agreement, affirmation, or admiration",
   "v": "ok"
  },
@@ -8161,9 +8142,9 @@
   "v": "ok"
  },
  "seriea:44": {
-  "at": "2026-10-17T00:04:03Z",
-  "h": "d52ca49958",
-  "note": "legaseriea.it src (Aug 23 2026 Accadde oggi): the San Siro stadium is named after Meazza, who won the 1934 and 1938 World Cups and three scudetti with Inter",
+  "at": "2026-10-17T00:38:00Z",
+  "h": "48ecc0f349",
+  "note": "legaseriea.it club pages list the Giuseppe Meazza as home for both Inter and Milan, and the Aug 23 2026 Accadde oggi item says the San Siro stadium is named for Meazza",
   "v": "ok"
  },
  "seriea:45": {
@@ -8368,8 +8349,8 @@
   "v": "ok"
  },
  "soccer:20": {
-  "at": "2026-10-16T23:58:23Z",
-  "h": "7022f8865f",
+  "at": "2026-10-17T00:38:00Z",
+  "h": "345a6d4067",
   "note": "dictionary.com handball (Collins, soccer): the offence of a player other than a keeper in his own area touching the ball with a hand. The Usage note there adds “hand or part of their arm”",
   "v": "ok"
  },
@@ -8607,8 +8588,8 @@
   "v": "ok"
  },
  "soccer:53": {
-  "at": "2026-10-16T23:58:23Z",
-  "h": "41e96ba9a2",
+  "at": "2026-10-17T00:38:00Z",
+  "h": "6f338663f0",
   "note": "dictionary.com gegenpressing (Soccer): on losing the ball, immediately seeking repossession with aggressive pressure",
   "v": "ok"
  },
@@ -8869,8 +8850,8 @@
   "v": "ok"
  },
  "ucl:42": {
-  "at": "2026-10-17T00:30:51Z",
-  "h": "c62d48c837",
+  "at": "2026-10-17T00:38:00Z",
+  "h": "f6d6fccd27",
   "note": "uefa.com report (src): Dortmund 0-2 Real Madrid at Wembley Stadium on 1 June 2024, goals by Carvajal and Vinícius Júnior",
   "v": "ok"
  },
@@ -8986,8 +8967,8 @@
   "v": "fix"
  },
  "ucl:59": {
-  "at": "2026-10-17T00:18:04Z",
-  "h": "6342cd5efa",
+  "at": "2026-10-17T00:38:00Z",
+  "h": "65c43ac553",
   "note": "uefa.com/womenschampionsleague/history all-time stats: most titles OL Lyonnes 8, Frankfurt 4, Barcelona 4",
   "v": "ok"
  },
@@ -9109,8 +9090,8 @@
   "v": "ok"
  },
  "wc26:17": {
-  "at": "2026-10-17T00:20:59Z",
-  "h": "f5ff118202",
+  "at": "2026-10-17T00:38:00Z",
+  "h": "57aef3edb2",
   "note": "fifa.com records article: 790 completed passes, beating his own 638 from Qatar 2022",
   "v": "ok"
  },
