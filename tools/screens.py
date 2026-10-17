@@ -20,6 +20,12 @@ FONTS = """() => { const h = [...document.querySelectorAll('.hk')]; if (!h.lengt
   return { min: Math.min(...h.map(e => parseFloat(getComputedStyle(e).fontSize))), max: Math.max(...h.map(e => parseFloat(getComputedStyle(e).fontSize))),
            over: h.filter(e => e.scrollWidth > e.clientWidth + 0.5).map(e => e.textContent) }; }"""
 
+async def tap(pg, sel):   # a tile tap: the day's first tile asks for a second tap
+    await pg.click(sel)
+    if await pg.evaluate("document.getElementById('cab').dataset.v") == 'board' and await pg.evaluate("!!document.querySelector('.tile.armed')"):
+        await pg.click(sel)
+
+
 async def main():
     async with async_playwright() as p:
         b = await p.chromium.launch()
@@ -33,13 +39,13 @@ async def main():
                 if sh[0] > sh[1]: print(W, H, n, 'SCROLLS', sh)
                 await pg.screenshot(path=os.path.join(OUT, f'{W}_{n}.png'))
             async def right(i, wait=1100):
-                await pg.click(f'[data-i="{i}"]'); await pg.wait_for_timeout(350)
+                await tap(pg, f'[data-i="{i}"]'); await pg.wait_for_timeout(350)
                 w = await pg.evaluate("document.getElementById('q').dataset.w")
                 await pg.click(f'.choice[data-w="{w}"]'); await pg.wait_for_timeout(350)
             await pg.goto(url + '&reset'); await pg.wait_for_timeout(1500)
             await shot('board')
             f = await pg.evaluate(FONTS); print(W, H, 'hook font', f['min'], '–', f['max'], 'px', ('OVERFLOW ' + str(f['over'])) if f['over'] else '')
-            await pg.click('[data-i="0"]'); await pg.wait_for_timeout(400); await shot('q')
+            await tap(pg, '[data-i="0"]'); await pg.wait_for_timeout(400); await shot('q')
             w = await pg.evaluate("document.getElementById('q').dataset.w")
             await pg.click(f'.choice[data-w="{w}"]'); await pg.wait_for_timeout(400); await shot('win')
             await pg.click('#flip'); await pg.wait_for_timeout(1100)
@@ -50,7 +56,7 @@ async def main():
                 await right(i); await pg.click('#flip'); await pg.wait_for_timeout(1100)
             await right(13); await pg.click('#flip'); await pg.wait_for_timeout(700); await shot('goal')
             await pg.wait_for_timeout(1200); await shot('board6')
-            await pg.click('[data-i="14"]'); await pg.wait_for_timeout(350)
+            await tap(pg, '[data-i="14"]'); await pg.wait_for_timeout(350)
             wrong = await pg.evaluate("[...document.querySelectorAll('.choice')].map(b => b.dataset.w).find(x => x !== document.getElementById('q').dataset.w)")
             await pg.click(f'.choice[data-w="{wrong}"]'); await pg.wait_for_timeout(500); await shot('miss')
             await pg.click('#flip'); await pg.wait_for_timeout(500); await shot('end')

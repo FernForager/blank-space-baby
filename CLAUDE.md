@@ -121,6 +121,8 @@ It replaces the arcade game: no category keys, no boss. The cabinet, palette, fo
 - **No name on screen while the name is open:** the marquee reads “How well do you know the beautiful game?” in a neon script (Yellowtail, white core, green glow), the page title and link preview say the same, the share text opens with `#42` and no name, and the Home Screen name is “Soccer Trivia”. Only the link (triviela.net) carries the name.
 - **The ball fills the board screen:** pentagons at 33% of the ball, 31.5% out from the center, so the assembled ball reads as a real ball (Morg: it’s the coup de grâce). The goal lamps moved to the top right, where the play screen keeps them.
 - **Clearer next steps:** after an answer the screen shows a blinking “NEXT ▶” (the whole screen still taps through), and the demo’s end screen says “Play #2 ▶”.
+- **The day’s first tile asks for a second tap** (Morg, Oct 17, 2026: the keys sit right under a thumb): it lights up with a green glow and the screen blinks “Tap again to kick off”. Tapping another tile moves the glow. Every tile after the first opens on one tap.
+- **The cabinet is pinned:** no rubber-band bounce on iPhone, no double-tap zoom, and a touch listener so keys visibly press down under a finger (Safari shows `:active` only once one exists).
 - **The demo’s tucked-away restart:** a dim replay icon in the sign’s right corner. Tap it and the sign asks “Start over? Tap again”, and a second tap within 3 seconds goes back to #1.
 
 ## The beta and the vetting team (Morg, Oct 16, 2026)

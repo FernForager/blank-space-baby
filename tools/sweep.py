@@ -30,6 +30,12 @@ BOARD = """() => { const h = [...document.querySelectorAll('.hk')];
   return { min: Math.min(...h.map(e => parseFloat(getComputedStyle(e).fontSize))), over: h.filter(e => e.scrollWidth > e.clientWidth + 0.5).map(e => e.textContent),
            scroll: document.documentElement.scrollHeight > innerHeight }; }"""
 
+async def tap(pg, sel):   # a tile tap: the day's first tile asks for a second tap
+    await pg.click(sel)
+    if await pg.evaluate("document.getElementById('cab').dataset.v") == 'board' and await pg.evaluate("!!document.querySelector('.tile.armed')"):
+        await pg.click(sel)
+
+
 async def main():
     async with async_playwright() as p:
         b = await p.chromium.launch()
@@ -42,7 +48,7 @@ async def main():
             bd = await pg.evaluate(BOARD); fonts.append(bd['min'])
             if bd['over'] or bd['scroll']: problems.append((day, 'board', bd))
             for i in range(18):
-                await pg.click(f'[data-i="{i}"]')
+                await tap(pg, f'[data-i="{i}"]')
                 st = await pg.evaluate(CARD); cards += 1
                 if len(set(st['ch'])) != 3 or st['w'] not in st['ch'] or not st['blank'] or st['ov'] or st['scroll']: problems.append((day, i, st))
                 slots[st['ch'].index(st['w'])] += 1

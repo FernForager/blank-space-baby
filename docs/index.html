@@ -170,6 +170,9 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .tile { background: var(--btn); color: var(--btn-ink); box-shadow: 0 4px 0 var(--btn-edge), 0 6px 8px rgba(0,0,0,.25); padding-left: 9px; padding-right: 9px; }
 .tile.c2::after, .tile.c3::after { content: ""; position: absolute; top: 5px; right: 6px; width: 7px; height: 10px; border-radius: 1.5px; box-shadow: 0 0 0 1px rgba(0,0,0,.18); }
 .tile.c2::after { background: var(--c2); } .tile.c3::after { background: var(--c3); }
+.tile.armed { box-shadow: 0 0 0 3px var(--glow), 0 0 14px rgba(92,240,154,.8), 0 4px 0 var(--btn-edge); }
+.pitch .kick { position: absolute; left: 0; right: 0; bottom: 0; margin: 0 auto; width: max-content; padding: 5px 8px; border-radius: 4px; background: rgba(7,19,12,.85); white-space: nowrap; z-index: 2; text-align: center; font-family: var(--pixel); font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: var(--glow);
+  text-shadow: 0 0 6px rgba(92,240,154,.8); animation: blink 1.05s steps(1) infinite; }
 .tile:active:not(:disabled) { transform: translateY(3px); box-shadow: 0 1px 0 rgba(0,0,0,.4); }
 .tile.done, .tile.miss { transform: translateY(3px); box-shadow: 0 1px 0 rgba(0,0,0,.4); opacity: .3; }
 .hk { display: block; width: 100%; overflow-wrap: normal; word-break: normal; hyphens: none; }
@@ -214,11 +217,11 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .key:focus-visible, .go:focus-visible, .bk:focus-visible { outline: 3px solid var(--glow); outline-offset: 3px; }
 
 @media (max-height: 700px) { .choice { min-height: 56px; } .tile { min-height: 46px; font-size: 16px; } }
-@media (max-height: 640px) { .cab { gap: 9px; padding-top: max(9px, env(safe-area-inset-top, 0px)); padding-bottom: max(12px, env(safe-area-inset-bottom, 0px)); } .marquee { padding: 8px 10px 9px; } .marquee h1 { font-size: 19px; } .marquee h1.cta { font-size: 22px; }
+@media (max-height: 640px) { .pitch .kick { font-size: 9px; } .cab { gap: 9px; padding-top: max(9px, env(safe-area-inset-top, 0px)); padding-bottom: max(12px, env(safe-area-inset-bottom, 0px)); } .marquee { padding: 8px 10px 9px; } .marquee h1 { font-size: 19px; } .marquee h1.cta { font-size: 22px; }
   .choice { font-size: 19px; min-height: 50px; } .sentence { font-size: 22px; } .sentence.long { font-size: 20px; } .sentence.longer { font-size: 18px; }
   .tile { min-height: 44px; font-size: 15px; } #p-board.tiles { gap: 7px 7px; } .panel { padding: 10px 10px 13px; }
   .lost .sentence { font-size: 19px; } .lost .sentence.long, .lost .sentence.longer { font-size: 17px; } .means { font-size: 16px; } .word { font-size: 17px; } }
-@media (prefers-reduced-motion: reduce) { .key, .choice .def { transition: none; } .pips i.bump, .choice.wrong, .flick, .blank, .go, .ball.goal, .ball .p.new svg, .lamp.new, .cab.poweron .marquee h1, .endrow .next svg { animation: none; } .flyer, .flyer .pg { transition: none; } }
+@media (prefers-reduced-motion: reduce) { .key, .choice .def { transition: none; } .pips i.bump, .choice.wrong, .flick, .blank, .go, .ball.goal, .ball .p.new svg, .lamp.new, .cab.poweron .marquee h1, .endrow .next svg, .pitch .kick { animation: none; } .flyer, .flyer .pg { transition: none; } }
 </style>
 <div class="cab" id="cab" data-v="board">
   <div class="marquee"><h1 class="cta">How well do you know<br>the beautiful game?</h1><button class="restart" id="restart" type="button" aria-label="Start over" hidden></button></div>
@@ -469,9 +472,9 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   }
   function board(pending) {
     var sc = score(pending !== undefined);
-    $('v-board').innerHTML = '<div class="pitch">' + ballHTML(sc.inBall, pending) + lampsHTML(sc.goals, 2, true) + '</div>';
+    $('v-board').innerHTML = '<div class="pitch">' + ballHTML(sc.inBall, pending) + lampsHTML(sc.goals, 2, true) + '<p class="kick" id="kick" hidden>Tap again to kick off</p></div>';
     $('p-board').innerHTML = S.tiles.map(function (T, i) { return tileHTML(T, i); }).join('');
-    document.querySelectorAll('[data-i]').forEach(function (b) { b.addEventListener('click', function (e) { e.stopPropagation(); open(+b.dataset.i); }); });
+    document.querySelectorAll('[data-i]').forEach(function (b) { b.addEventListener('click', function (e) { e.stopPropagation(); tapTile(+b.dataset.i); }); });
     requestAnimationFrame(fitAll);
   }
   // shrink a hook that won't fit its tile on two lines, a half pixel at a time
@@ -484,6 +487,17 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   function fitAll() { document.querySelectorAll('#p-board [data-i]').forEach(fit); }
   window.addEventListener('resize', function () { if (cab.dataset.v === 'board') fitAll(); });
   if (document.fonts) { document.fonts.ready.then(fitAll); if (document.fonts.addEventListener) document.fonts.addEventListener('loadingdone', fitAll); }   // refit once the pixel font arrives
+
+  // the day's first tile asks for a second tap, since the keys sit right under a thumb (Morg, Oct 17, 2026)
+  var armed1 = -1;
+  function tapTile(i) {
+    if (!S.path.length && armed1 !== i && !over() && !S.res[i]) {
+      armed1 = i;
+      document.querySelectorAll('#p-board [data-i]').forEach(function (b) { b.classList.toggle('armed', +b.dataset.i === i); });
+      $('kick').hidden = false; flick(); return;
+    }
+    armed1 = -1; open(i);
+  }
 
   // ---- a card ----
   var T, answered;

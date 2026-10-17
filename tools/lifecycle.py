@@ -26,6 +26,12 @@ def ok(cond, what):
     print(('ok    ' if cond else 'FAIL  ') + what)
     if not cond: fails.append(what)
 
+async def tap(pg, sel):   # a tile tap: the day's first tile asks for a second tap
+    await pg.click(sel)
+    if await pg.evaluate("document.getElementById('cab').dataset.v") == 'board' and await pg.evaluate("!!document.querySelector('.tile.armed')"):
+        await pg.click(sel)
+
+
 async def run(b, html, demo):
     print(f'-- as the {"demo, " + str(demo) + " boards" if demo else "real daily"}')
     ctx = await b.new_context(viewport={'width': 402, 'height': 744}, reduced_motion='reduce')
@@ -37,6 +43,9 @@ async def run(b, html, demo):
     state = lambda: pg.evaluate("JSON.parse(localStorage.getItem('bsb-daily'))")
     s = await state(); ok(s and s['day'] == 0, 'a fresh day is saved as soon as the board opens')
     # 1. commit
+    await pg.click('[data-i="3"]')
+    v = await pg.evaluate("[document.getElementById('cab').dataset.v, !!document.querySelector('[data-i=\"3\"].armed'), !document.getElementById('kick').hidden]")
+    ok(v == ['board', True, True], f'the first tile of the day asks for a second tap: {v}')
     await pg.click('[data-i="3"]')
     before = await pg.evaluate("[...document.querySelectorAll('.choice')].map(b => b.dataset.w)")
     await pg.reload(); await pg.wait_for_timeout(300)
@@ -52,12 +61,12 @@ async def run(b, html, demo):
     # slot rule over the rest of the day, answering right
     slots = [s['tiles'][3]['ch'].index(next(c for c in s['tiles'][3]['ch'] if c['w'] == s['tiles'][3]['w']))]
     for i in [x for x in range(18) if x != 3][:11]:
-        await pg.click(f'[data-i="{i}"]'); w = await pg.evaluate("document.getElementById('q').dataset.w")
+        await tap(pg, f'[data-i="{i}"]'); w = await pg.evaluate("document.getElementById('q').dataset.w")
         ch = await pg.evaluate("[...document.querySelectorAll('.choice')].map(b => b.dataset.w)"); slots.append(ch.index(w))
         await pg.click(f'.choice[data-w="{w}"]'); await pg.click('#flip'); await pg.wait_for_timeout(1200 if (len(slots)) % 6 == 0 else 40)
     ok(not any(slots[k] == slots[k + 1] == slots[k + 2] for k in range(len(slots) - 2)), f'the right answer never takes one slot 3 times running ({"".join(map(str, slots))})')
     # 3. a miss ends the day, the share text is exact
-    await pg.click('[data-i="16"]'); w = await pg.evaluate("document.getElementById('q').dataset.w")
+    await tap(pg, '[data-i="16"]'); w = await pg.evaluate("document.getElementById('q').dataset.w")
     wrong = await pg.evaluate("[...document.querySelectorAll('.choice')].map(b => b.dataset.w).find(x => x !== document.getElementById('q').dataset.w)")
     await pg.click(f'.choice[data-w="{wrong}"]'); await pg.click('#flip'); await pg.wait_for_timeout(300)
     await pg.click('#share'); await pg.wait_for_timeout(200)
@@ -93,7 +102,7 @@ async def run(b, html, demo):
         v = await pg.evaluate("document.getElementById('cab').dataset.v"); s = await state()
         ok(v == 'board' and s['day'] == 1 and not any(s['res']), 'the arrow opens a fresh board, #2')
         async def lose():
-            await pg.click('[data-i="0"]'); await pg.wait_for_timeout(100)
+            await tap(pg, '[data-i="0"]'); await pg.wait_for_timeout(100)
             wrong = await pg.evaluate("[...document.querySelectorAll('.choice')].map(b => b.dataset.w).find(x => x !== document.getElementById('q').dataset.w)")
             await pg.click(f'.choice[data-w="{wrong}"]'); await pg.click('#flip'); await pg.wait_for_timeout(300)
         await lose(); await pg.click('#share'); await pg.wait_for_timeout(200)
