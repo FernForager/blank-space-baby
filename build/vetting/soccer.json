@@ -1596,6 +1596,321 @@
   "h": "7215d437da",
   "v": "ok"
  },
+ "epl-more:0": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "2121020ea8",
+  "note": "Shares the Tottenham hook with 16, and 18’s sentence names Harry Kane, the draw guardrail keeps them apart",
+  "v": "ok"
+ },
+ "epl-more:1": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "4c2b5cc93f",
+  "v": "ok"
+ },
+ "epl-more:10": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "67be59b960",
+  "v": "ok"
+ },
+ "epl-more:11": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "1f92dbd45f",
+  "v": "ok"
+ },
+ "epl-more:12": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "f0ca9db06c",
+  "v": "ok"
+ },
+ "epl-more:13": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "706da6b867",
+  "v": "ok"
+ },
+ "epl-more:14": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "c293c37a70",
+  "v": "ok"
+ },
+ "epl-more:15": {
+  "at": "2026-10-17T00:01:48Z",
+  "fix": {
+   "d": 2
+  },
+  "h": "30d040f001",
+  "note": "Not white: a new soccer parent doesn’t know who won Player of the Season, and the Vidić tile means nothing to a 10-year-old. A regular-fan yellow",
+  "v": "fix"
+ },
+ "epl-more:16": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "40d90ecd3e",
+  "v": "ok"
+ },
+ "epl-more:17": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "3443d20a66",
+  "v": "ok"
+ },
+ "epl-more:18": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "ce6fefbacf",
+  "note": "Soft yellow: the Harry Kane tile and sentence point straight at Tottenham for any fan, but no better tile exists in it. Near-twin of 0 and 16 (guardrail keeps them apart)",
+  "v": "ok"
+ },
+ "epl-more:19": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "36e5d4f851",
+  "v": "ok"
+ },
+ "epl-more:2": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "d384d3c3db",
+  "v": "ok"
+ },
+ "epl-more:20": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "e6bbdd3e20",
+  "v": "ok"
+ },
+ "epl-more:21": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "f38d6da446",
+  "v": "ok"
+ },
+ "epl-more:22": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "a6d2f54691",
+  "v": "ok"
+ },
+ "epl-more:23": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "68cc570588",
+  "v": "ok"
+ },
+ "epl-more:24": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "3155080ef7",
+  "v": "ok"
+ },
+ "epl-more:25": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "8feb493a0e",
+  "v": "ok"
+ },
+ "epl-more:26": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "f9822f5f5a",
+  "v": "ok"
+ },
+ "epl-more:27": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "7be880b31f",
+  "v": "ok"
+ },
+ "epl-more:28": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "27936d979b",
+  "v": "ok"
+ },
+ "epl-more:29": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "5aa6597c7b",
+  "v": "ok"
+ },
+ "epl-more:3": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "9f36768dc6",
+  "v": "ok"
+ },
+ "epl-more:30": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "304b9ef9fe",
+  "v": "ok"
+ },
+ "epl-more:31": {
+  "at": "2026-10-17T00:01:48Z",
+  "fix": {
+   "ex": "Sam Allardyce managed nine Premier League clubs, from Bolton to Leeds",
+   "hook": "Bolton",
+   "means": "The most of any manager"
+  },
+  "h": "efe1551ba1",
+  "note": "The tile “nine” tells a player nothing. Naming the first and last clubs gives a real tile and keeps the fact",
+  "v": "fix"
+ },
+ "epl-more:32": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "af4fd9b54d",
+  "note": "nicknames:12 names Bobby Robson in its sentence, so the two must not share a board",
+  "v": "ok"
+ },
+ "epl-more:33": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "8b96841976",
+  "v": "ok"
+ },
+ "epl-more:34": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "2c5e513d2f",
+  "v": "ok"
+ },
+ "epl-more:35": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "2d187a1e2e",
+  "v": "ok"
+ },
+ "epl-more:36": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "214ea59e4e",
+  "v": "ok"
+ },
+ "epl-more:37": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "2633037e69",
+  "v": "ok"
+ },
+ "epl-more:38": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "4bcacad011",
+  "v": "ok"
+ },
+ "epl-more:39": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "315ba44ad3",
+  "v": "ok"
+ },
+ "epl-more:4": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "70863e159b",
+  "v": "ok"
+ },
+ "epl-more:40": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "84f0a1b7d9",
+  "note": "Pairs with epl:31 (answer Nottingham, tile City Ground), each gives the other away, so they must not share a board",
+  "v": "ok"
+ },
+ "epl-more:41": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "c3c0b1ee4a",
+  "v": "ok"
+ },
+ "epl-more:42": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "7d023ee374",
+  "note": "Fine white basic, though the decoys are absurd next to a 3-point win (6, 15, 97 for a draw). It improves once the number groups are dropped and k is split (see 43)",
+  "v": "ok"
+ },
+ "epl-more:49": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "5606942b59",
+  "note": "Nine draws in ten offer one modern year (1997, 2011, 2016), so it often plays as a 50/50. Fixed by the year split noted on 52. nicknames:0’s means line gives 1886",
+  "v": "ok"
+ },
+ "epl-more:5": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "a9057eab18",
+  "v": "ok"
+ },
+ "epl-more:50": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "944a26795d",
+  "note": "Nine draws in ten offer one modern year, so it often plays as a 50/50. Fixed by the year split noted on 52",
+  "v": "ok"
+ },
+ "epl-more:51": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "e23fccd631",
+  "note": "Nine draws in ten offer one modern year, so it often plays as a 50/50. Fixed by the year split noted on 52",
+  "v": "ok"
+ },
+ "epl-more:55": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "2fa86ca8d3",
+  "v": "ok"
+ },
+ "epl-more:56": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "adc611bee9",
+  "v": "ok"
+ },
+ "epl-more:57": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "f95e30d81c",
+  "note": "nicknames:10’s means line says they began as Thames Ironworks FC, a near-twin in the after-answer text only",
+  "v": "ok"
+ },
+ "epl-more:58": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "c5821c9b69",
+  "v": "ok"
+ },
+ "epl-more:59": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "b4e702dc77",
+  "v": "ok"
+ },
+ "epl-more:6": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "f579303d2b",
+  "v": "ok"
+ },
+ "epl-more:60": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "e5a28becf1",
+  "v": "ok"
+ },
+ "epl-more:61": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "a9cc08bb3a",
+  "note": "Same fact as nicknames:3 (Brentford the Bees), which tells it better. Two copies in the pool means a repeat inside three months",
+  "v": "cut"
+ },
+ "epl-more:62": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "991cd86ebd",
+  "note": "Same fact as nicknames:10 (West Ham the Irons, shipbuilding roots), which tells it better",
+  "v": "cut"
+ },
+ "epl-more:63": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "4475815f42",
+  "note": "Same fact as nicknames:7 (Burnley the Clarets, from their shirt color), which tells it better",
+  "v": "cut"
+ },
+ "epl-more:64": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "4b11220f16",
+  "note": "Given away by nicknames:34 (the tiger on Hull City’s badge, means: for their nickname, the Tigers). With the other five nickname twins gone, this kind has no decoys left",
+  "v": "cut"
+ },
+ "epl-more:65": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "f73453260a",
+  "note": "Same fact as nicknames:11 (Coventry the Sky Blues, Jimmy Hill’s colors), which tells it better",
+  "v": "cut"
+ },
+ "epl-more:66": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "4871192ebc",
+  "note": "Same fact as nicknames:9 (Fulham were first known as the Saints)",
+  "v": "cut"
+ },
+ "epl-more:7": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "02ca84ca04",
+  "v": "ok"
+ },
+ "epl-more:8": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "ea83ff8e46",
+  "v": "ok"
+ },
+ "epl-more:9": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "16774b5952",
+  "v": "ok"
+ },
  "epl:0": {
   "at": "2026-10-16T23:58:31Z",
   "fix": {
