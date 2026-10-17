@@ -582,7 +582,9 @@
       "k": "number",
       "src": "https://ligue1.com/en/articles/l1_article_2617-stade-de-reims-france-s-first-european-giant-returns-to-the-spotlight",
       "d": 2,
-      "current": false
+      "current": false,
+      "out": true,
+      "out_why": "Same fact as awards:57, which keeps it (cross-deck twins, soccer expert)"
     },
     {
       "w": "30",

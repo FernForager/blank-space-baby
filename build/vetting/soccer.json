@@ -739,6 +739,461 @@
   "h": "c9365428fe",
   "v": "ok"
  },
+ "awards:0": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "c31cc5f31b",
+  "note": "Word for word the same card as legends:2. Keep one, this deck is its natural home",
+  "v": "ok"
+ },
+ "awards:1": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "274592d3a5",
+  "note": "Near-twin of wc26:34 (Golden Boot 2026, same fact)",
+  "v": "ok"
+ },
+ "awards:10": {
+  "at": "2026-10-17T00:06:28Z",
+  "fix": {
+   "ex": "In 1994, Romário was the first Brazilian named FIFA World Player of the Year"
+  },
+  "h": "ee2248f69f",
+  "note": "Fans call it FIFA World Player of the Year, the award’s name in 1994. “Top male player” sounds clinical",
+  "v": "fix"
+ },
+ "awards:11": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "2d20792312",
+  "v": "ok"
+ },
+ "awards:12": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "24d5c18a67",
+  "v": "ok"
+ },
+ "awards:13": {
+  "at": "2026-10-17T00:06:28Z",
+  "fix": {
+   "ex": "Ronaldinho was FIFA World Player of the Year in 2004 and 2005",
+   "hook": "World Player"
+  },
+  "h": "c2d1cb191b",
+  "note": "Use the award’s real name, as fans say it. The old hook “top male” was a fragment that makes no one tap",
+  "v": "fix"
+ },
+ "awards:14": {
+  "at": "2026-10-17T00:06:28Z",
+  "fix": {
+   "ex": "George Weah was FIFA World Player of the Year in 1995, ahead of Paolo Maldini"
+  },
+  "h": "74ba041707",
+  "note": "Use the award’s real name for 1995, as fans say it",
+  "v": "fix"
+ },
+ "awards:15": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "879748ff21",
+  "note": "Same fact family as awards:58, kept apart by the guardrail (Marta in its sentence)",
+  "v": "ok"
+ },
+ "awards:16": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "da92b70167",
+  "note": "Near-twin of intl-women:21 and awards:56 (Bonmatí three in a row)",
+  "v": "ok"
+ },
+ "awards:17": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "bae3f83c03",
+  "v": "ok"
+ },
+ "awards:18": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "27406d63ea",
+  "note": "Near-twin of intl-women:18 (Hamm, first winner in 2001, again in 2002)",
+  "v": "ok"
+ },
+ "awards:19": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "ec3cb1f154",
+  "v": "ok"
+ },
+ "awards:2": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "0960cd1419",
+  "note": "Near-twin of wc26:33 (Rodri, Golden Ball 2026)",
+  "v": "ok"
+ },
+ "awards:20": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "a909863323",
+  "note": "Overlaps legends:22 and intl-women:57 on the 2015 final hat trick, kept apart by the shared answer and hook",
+  "v": "ok"
+ },
+ "awards:21": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "b211398594",
+  "v": "ok"
+ },
+ "awards:22": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "739eb53a0f",
+  "note": "Plays as “which one is the keeper”: every decoy is an outfield player or a coach. The group [Mary Earps, Hannah Hampton] blocks the only believable decoy, and the sentence names a year so it is certainly wrong: consider dropping that group so the card tests the fact",
+  "v": "ok"
+ },
+ "awards:23": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "5b11f3ad53",
+  "note": "Plays as “which one is the keeper”. The group [Mary Earps, Hannah Hampton] blocks the only believable decoy, and the sentence names a year so it is certainly wrong: consider dropping that group so the card tests the fact",
+  "v": "ok"
+ },
+ "awards:24": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "479aa776b8",
+  "note": "Only Donnarumma is a keeper among its decoys, so most draws are solved by position. The group [Emiliano Martínez, Manuel Neuer, Unai Simón] blocks the only believable decoy, and the sentence names a year so it is certainly wrong: consider dropping that group so the card tests the fact",
+  "v": "ok"
+ },
+ "awards:25": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "306346d8bd",
+  "v": "ok"
+ },
+ "awards:26": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "5a153fba75",
+  "note": "Near-twin of wc26:35 (Simón, Golden Glove 2026). Most draws are solved by position. The group [Emiliano Martínez, Manuel Neuer, Unai Simón] blocks the only believable decoy, and the sentence names a year so it is certainly wrong: consider dropping that group so the card tests the fact",
+  "v": "ok"
+ },
+ "awards:27": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "4c8c734f49",
+  "note": "Most draws are solved by position, as on awards:26. The group [Emiliano Martínez, Manuel Neuer, Unai Simón] blocks the only believable decoy, and the sentence names a year so it is certainly wrong: consider dropping that group so the card tests the fact",
+  "v": "ok"
+ },
+ "awards:28": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "15d6480a30",
+  "note": "Every decoy is a player, never a coach, so a fan solves it by role. The group [Sarina Wiegman, Emma Hayes] blocks the only believable decoy, and the sentence names a year so it is certainly wrong: consider dropping that group so the card tests the fact. Recheck the record after FIFA’s 2026 awards",
+  "v": "ok"
+ },
+ "awards:29": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "c49b03caba",
+  "v": "ok"
+ },
+ "awards:3": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "ab23edea1e",
+  "note": "Same fact as awards:49, kept apart on a board by their shared hook. Red is fair: James and Lineker make real decoys",
+  "v": "ok"
+ },
+ "awards:30": {
+  "at": "2026-10-17T00:06:28Z",
+  "fix": {
+   "ex": "Carlo Ancelotti won The Best Men’s Coach award for 2024 at Real Madrid",
+   "hook": "Real Madrid",
+   "means": "Xabi Alonso finished second"
+  },
+  "h": "da8c2beb3c",
+  "note": "Six coach cards share the hook Men’s Coach, so they never share a board and the tiles all read alike. Real Madrid makes a tile a fan taps. New means, since the old one repeated the club",
+  "v": "fix"
+ },
+ "awards:31": {
+  "at": "2026-10-17T00:06:28Z",
+  "fix": {
+   "means": "Carlo Ancelotti was runner-up"
+  },
+  "h": "fb616c96cf",
+  "note": "The old means (Argentina won in 2022) gives away awards:45 if both are on the board",
+  "v": "fix"
+ },
+ "awards:32": {
+  "at": "2026-10-17T00:06:28Z",
+  "fix": {
+   "ex": "Jürgen Klopp won The Best Men’s Coach award in 2019 and 2020 at Liverpool",
+   "hook": "Liverpool"
+  },
+  "h": "ba39507b4a",
+  "note": "Same hook problem as awards:30: Liverpool is the tile a fan taps",
+  "v": "fix"
+ },
+ "awards:33": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "3fb857342a",
+  "note": "Every decoy is a player, never a coach, so a fan solves it by role. The group [Sarina Wiegman, Emma Hayes] blocks the only believable decoy, and the sentence names a year so it is certainly wrong: consider dropping that group so the card tests the fact",
+  "v": "ok"
+ },
+ "awards:34": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "91a6331c2a",
+  "v": "ok"
+ },
+ "awards:35": {
+  "at": "2026-10-17T00:06:28Z",
+  "fix": {
+   "ex": "Pep Guardiola won The Best Men’s Coach award for 2023 at Man City",
+   "hook": "Man City"
+  },
+  "h": "46e344d26f",
+  "note": "Same hook problem as awards:30: Man City is the tile a fan taps",
+  "v": "fix"
+ },
+ "awards:36": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "868952c7f9",
+  "note": "Near-twin of awards:50 and legends:7 (first Puskás Award, 2009), kept apart by 2009 in its sentence",
+  "v": "ok"
+ },
+ "awards:37": {
+  "at": "2026-10-17T00:06:28Z",
+  "fix": {
+   "hook": "scissor kick"
+  },
+  "h": "d2b77f4df7",
+  "note": "Six cards share the hook Puskás Award. Scissor kick is specific and makes a fan tap",
+  "v": "fix"
+ },
+ "awards:38": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "3afbd9f4e4",
+  "v": "ok"
+ },
+ "awards:39": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "49205152a1",
+  "note": "Gettable by elimination: a fan knows Ronaldo, Salah and Son won in earlier years",
+  "v": "ok"
+ },
+ "awards:4": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "fdbb4d8230",
+  "v": "ok"
+ },
+ "awards:40": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "e1a9613959",
+  "v": "ok"
+ },
+ "awards:41": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "2b1612d5d0",
+  "v": "ok"
+ },
+ "awards:42": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "9dbbef0729",
+  "note": "Celtic and Zakho SC are clubs, weak decoys for a nation, but fair at yellow",
+  "v": "ok"
+ },
+ "awards:43": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "0fcae9fbb1",
+  "v": "ok"
+ },
+ "awards:44": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "4dd7479da5",
+  "v": "ok"
+ },
+ "awards:45": {
+  "at": "2026-10-17T00:06:28Z",
+  "fix": {
+   "means": "It ended 3–3 after extra time"
+  },
+  "h": "0cead17af3",
+  "note": "The old means (Messi’s second Golden Ball) gives away awards:0 if both are on the board. Near-twin of intl-men:15 (France lost the 2022 final on penalties)",
+  "v": "fix"
+ },
+ "awards:46": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "f547234e37",
+  "v": "ok"
+ },
+ "awards:47": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "976b368778",
+  "note": "Obscure, not deep: almost no fan anywhere knows the 2025 Fan Award went to an Iraqi club, so it plays as a blind guess that can end a run. Celtic’s Fan Award card (awards:44) stays",
+  "v": "cut"
+ },
+ "awards:48": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "5f31914f27",
+  "v": "ok"
+ },
+ "awards:49": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "d37a8bc5cc",
+  "note": "Same fact as awards:3, kept apart by their shared hook. Plays easy: 2009 and 2024 aren’t World Cup years",
+  "v": "ok"
+ },
+ "awards:5": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "94069a8c7e",
+  "note": "Plays easy: its only decoys are Messi, Mbappé and Rodri, all far too young for 1978. Still fair at yellow",
+  "v": "ok"
+ },
+ "awards:50": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "c0fccb98f3",
+  "note": "Near-twin of legends:7 (Puskás Award since 2009) and awards:36",
+  "v": "ok"
+ },
+ "awards:51": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "6f3b845289",
+  "note": "Near-twin of legends:8, whose means says the first Marta Award was for 2024",
+  "v": "ok"
+ },
+ "awards:52": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "eb25e6c189",
+  "note": "Plays easy: every decoy year comes after Maradona’s time. Fair at yellow",
+  "v": "ok"
+ },
+ "awards:53": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "5ec7fc4a5e",
+  "note": "Plays easy: 2009 and 2024 aren’t World Cup years and 1982 and 1986 are before Messi. Fair at yellow",
+  "v": "ok"
+ },
+ "awards:54": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "2bd3978ee4",
+  "note": "Plays easy for the same reason as awards:53. Fair at yellow",
+  "v": "ok"
+ },
+ "awards:55": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "4d693cb2fb",
+  "note": "Word for word the same fact as legends:35 (22, Mbappé’s record) and close to wc26:12. Keep one",
+  "v": "ok"
+ },
+ "awards:56": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "c3aada3a31",
+  "note": "Near-twin of awards:16 and intl-women:21, kept apart by the guardrail",
+  "v": "ok"
+ },
+ "awards:57": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "b699b8554d",
+  "note": "The same card as legends:27 (13, Fontaine 1958). Keep one",
+  "v": "ok"
+ },
+ "awards:58": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "0899dbe7f2",
+  "note": "Still the record on 2026-10-16. Recheck after FIFA’s 2026 awards",
+  "v": "ok"
+ },
+ "awards:59": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "a038a164e0",
+  "note": "Still the record on 2026-10-16. Recheck after FIFA’s 2026 awards",
+  "v": "ok"
+ },
+ "awards:6": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "7fb6e11c40",
+  "note": "Near-twin of legends:11 (Lineker, Golden Boot 1986, six goals)",
+  "v": "ok"
+ },
+ "awards:60": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "cfa1d8cd8e",
+  "note": "Near-twin of wc26:35, whose means gives the seven clean sheets",
+  "v": "ok"
+ },
+ "awards:61": {
+  "at": "2026-10-17T00:06:28Z",
+  "fix": {
+   "means": "Including a hat trick in the final"
+  },
+  "h": "055d075b6d",
+  "note": "Hat trick is open in Merriam-Webster and in awards:20. Say “in the final” the way fans do",
+  "v": "fix"
+ },
+ "awards:62": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "c41eb5efec",
+  "v": "ok"
+ },
+ "awards:63": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "ee4133031f",
+  "note": "Near-twin of wc26:34 (Golden Boot with 10 goals), kept apart by 10 in its sentence",
+  "v": "ok"
+ },
+ "awards:64": {
+  "at": "2026-10-17T00:06:28Z",
+  "fix": {
+   "means": "For the tournament’s best player"
+  },
+  "h": "069295d9ca",
+  "note": "Word for word the same card as intl-women:53: keep one. The old means (Spain won that World Cup) half gives away awards:42 on the same board",
+  "v": "fix"
+ },
+ "awards:65": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "5bd8b1028a",
+  "note": "Word for word the same card as intl-women:55. Keep one",
+  "v": "ok"
+ },
+ "awards:66": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "9295c3e344",
+  "v": "ok"
+ },
+ "awards:67": {
+  "at": "2026-10-17T00:06:28Z",
+  "fix": {
+   "means": "For the tournament’s second-best player"
+  },
+  "h": "9594781ef1",
+  "note": "The old means (Rodri took the Golden Ball) gives away awards:2, which can sit on the same board",
+  "v": "fix"
+ },
+ "awards:68": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "aae2330e56",
+  "note": "Near-twin of wc26:36 (Cubarsí, Young Player Award 2026)",
+  "v": "ok"
+ },
+ "awards:69": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "7750dab19a",
+  "v": "ok"
+ },
+ "awards:7": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "8e1fb4cadf",
+  "v": "ok"
+ },
+ "awards:70": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "f0f3bd67b4",
+  "v": "ok"
+ },
+ "awards:71": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "0b68147be4",
+  "v": "ok"
+ },
+ "awards:72": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "4f3df59331",
+  "v": "ok"
+ },
+ "awards:8": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "0b5424eb99",
+  "v": "ok"
+ },
+ "awards:9": {
+  "at": "2026-10-17T00:06:28Z",
+  "h": "41c043d5ea",
+  "note": "Near-twin of legends:25, the same fact almost word for word. Keep one",
+  "v": "ok"
+ },
  "basics:0": {
   "at": "2026-10-17T00:00:49Z",
   "h": "0e34592af3",
@@ -1596,6 +2051,735 @@
   "h": "7215d437da",
   "v": "ok"
  },
+ "bundesliga:0": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "fbab5ed700",
+  "note": "Its means names Leverkusen, so the board already keeps it apart from card 1",
+  "v": "ok"
+ },
+ "bundesliga:1": {
+  "at": "2026-10-17T00:03:01Z",
+  "fix": {
+   "ex": "Bayer Leverkusen beat Augsburg on the last day to finish 2023–24 unbeaten",
+   "hook": "Augsburg",
+   "means": "The first team to go a season unbeaten",
+   "src": "https://www.bundesliga.com/en/bundesliga/news/bayern-leverkusen-augsburg-preview-live-blog-report-xabi-alonso-wirtz-unbeaten-27365"
+  },
+  "h": "a175428461",
+  "note": "A bare season is a weak tile. The last-day win over Augsburg is the bundesliga.com match that sealed the unbeaten season, and Augsburg is specific, not a giveaway and not a decoy. The means no longer names Xabi Alonso (card 23’s answer). Ties to cards 23 and 41 through Leverkusen, which the board already handles",
+  "v": "fix"
+ },
+ "bundesliga:10": {
+  "at": "2026-10-17T00:03:01Z",
+  "fix": {
+   "ex": "Bayern Munich set a Bundesliga record with 122 goals in 2025–26",
+   "hook": "122 goals",
+   "means": "The old record stood for 54 years",
+   "src": "https://www.bundesliga.com/en/bundesliga/news/bayern-munich-season-in-numbers-record-champions-36970"
+  },
+  "h": "7b720a458a",
+  "note": "A bare season is a weak tile, and the clinch opponent (Stuttgart) is in the decoy pool. bundesliga.com’s 2025–26 season in numbers gives a record instead: 122 goals, breaking the 1971–72 Bayern mark that stood 54 years. The tile 122 goals is specific and not a giveaway. Recheck next May in case it falls",
+  "v": "fix"
+ },
+ "bundesliga:11": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "5fd85490a6",
+  "v": "ok"
+ },
+ "bundesliga:12": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "31bb42d6a1",
+  "v": "ok"
+ },
+ "bundesliga:13": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "68eb01c22a",
+  "note": "Kane’s run ended in 2025–26, so the fact is settled",
+  "v": "ok"
+ },
+ "bundesliga:14": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "1f52fc61b5",
+  "v": "ok"
+ },
+ "bundesliga:15": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "547afc2524",
+  "v": "ok"
+ },
+ "bundesliga:16": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "1a2afa4013",
+  "v": "ok"
+ },
+ "bundesliga:17": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "a6ba4c3409",
+  "v": "ok"
+ },
+ "bundesliga:18": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "84f251e91f",
+  "v": "ok"
+ },
+ "bundesliga:19": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "0e920cf6b2",
+  "v": "ok"
+ },
+ "bundesliga:2": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "65b0a28a9a",
+  "note": "Bundesliga tile is fair here: the card is about the league’s first season",
+  "v": "ok"
+ },
+ "bundesliga:20": {
+  "at": "2026-10-17T00:03:01Z",
+  "fix": {
+   "ex": "Timo Konietzka scored the first Bundesliga goal after just 58 seconds",
+   "hook": "58 seconds",
+   "means": "For Dortmund against Werder Bremen",
+   "src": "https://www.bundesliga.com/en/bundesliga/news/the-history-of-the-bundesliga-explained-19385"
+  },
+  "h": "570d38e6a8",
+  "note": "Bundesliga is a league label on the tile. bundesliga.com’s history page gives 58 seconds against Werder Bremen, a tile a fan wants to tap. Dropping 1963 also stops it hinting card 54",
+  "v": "fix"
+ },
+ "bundesliga:21": {
+  "at": "2026-10-17T00:03:01Z",
+  "fix": {
+   "hook": "No. 5"
+  },
+  "h": "b241e5fa82",
+  "note": "No. 5 is a sharper tile than Bayern, which nine cards in this deck already use",
+  "v": "fix"
+ },
+ "bundesliga:22": {
+  "at": "2026-10-17T00:03:01Z",
+  "fix": {
+   "ex": "Udo Lattek won a record eight Bundesliga titles, with Bayern and Gladbach",
+   "hook": "Gladbach",
+   "means": "Six of them with Bayern"
+  },
+  "h": "94fab7c7b4",
+  "note": "Bundesliga is a league label on the tile. Naming his two clubs gives a specific tile (Gladbach), and none of the decoy coaches won with Gladbach",
+  "v": "fix"
+ },
+ "bundesliga:23": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "79ca7dba66",
+  "note": "Near-twin of card 1 (Leverkusen unbeaten 2023–24). The board ties them through Leverkusen",
+  "v": "ok"
+ },
+ "bundesliga:24": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "a636558065",
+  "v": "ok"
+ },
+ "bundesliga:25": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "2ec5c59a09",
+  "v": "ok"
+ },
+ "bundesliga:26": {
+  "at": "2026-10-17T00:03:01Z",
+  "fix": {
+   "ex": "Julian Nagelsmann was just 28 when he took charge of Hoffenheim",
+   "hook": "Hoffenheim",
+   "means": "The league’s youngest permanent coach"
+  },
+  "h": "36ed3eef14",
+  "note": "youngest is a vague tile and card 17 shares it. Hoffenheim is specific, and none of the decoy coaches ever coached there. The records page gives 28 years, 205 days at Hoffenheim",
+  "v": "fix"
+ },
+ "bundesliga:27": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "12b5bf7b30",
+  "note": "Ties to card 10 through Bayern. Recheck if Kompany leaves",
+  "v": "ok"
+ },
+ "bundesliga:28": {
+  "at": "2026-10-17T00:03:01Z",
+  "fix": {
+   "ex": "Ottmar Hitzfeld won seven Bundesliga titles, with Dortmund and Bayern",
+   "hook": "Dortmund"
+  },
+  "h": "78c8e036f4",
+  "note": "Bundesliga is a league label on the tile. Naming his two clubs gives a specific tile (Dortmund). Klopp and the Bayern coaches in the decoy pool stay certainly wrong at seven titles",
+  "v": "fix"
+ },
+ "bundesliga:29": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "d5ad3ee7d5",
+  "v": "ok"
+ },
+ "bundesliga:3": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "0f4262d932",
+  "v": "ok"
+ },
+ "bundesliga:30": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "5bd7f803b2",
+  "v": "ok"
+ },
+ "bundesliga:31": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "ebc0b7ce3b",
+  "v": "ok"
+ },
+ "bundesliga:32": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "f959952202",
+  "v": "ok"
+ },
+ "bundesliga:33": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "5badb0e057",
+  "v": "ok"
+ },
+ "bundesliga:34": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "6dd0dfe7f5",
+  "v": "ok"
+ },
+ "bundesliga:35": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "d7f31e5037",
+  "v": "ok"
+ },
+ "bundesliga:36": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "b345ffcb57",
+  "note": "Near-twin of card 47 (the goat). The board ties them through goat",
+  "v": "ok"
+ },
+ "bundesliga:37": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "ef481e57bb",
+  "v": "ok"
+ },
+ "bundesliga:38": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "c85ca771d7",
+  "v": "ok"
+ },
+ "bundesliga:39": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "340335693c",
+  "v": "ok"
+ },
+ "bundesliga:4": {
+  "at": "2026-10-17T00:03:01Z",
+  "fix": {
+   "ex": "Felix Magath coached Wolfsburg to their first Bundesliga title, in 2008–09",
+   "hook": "Magath"
+  },
+  "h": "c56ba1d3f3",
+  "note": "Bundesliga is a league label on the tile. Felix Magath coached the 2008–09 title (bundesliga.com champions page) and makes a better tile, with Bayern as a fair trap since he had just won with them",
+  "v": "fix"
+ },
+ "bundesliga:40": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "2b40a5ce35",
+  "v": "ok"
+ },
+ "bundesliga:41": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "c9599ec918",
+  "v": "ok"
+ },
+ "bundesliga:42": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "210db82fa7",
+  "v": "ok"
+ },
+ "bundesliga:43": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "68f71ad792",
+  "v": "ok"
+ },
+ "bundesliga:44": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "589ff2ec0f",
+  "v": "ok"
+ },
+ "bundesliga:45": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "3f37fea269",
+  "note": "Recheck next May: Kane’s three years running changes if he wins again",
+  "v": "ok"
+ },
+ "bundesliga:46": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "2de51ff794",
+  "v": "ok"
+ },
+ "bundesliga:47": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "b2804ee438",
+  "note": "Near-twin of card 36 (Billy Goats)",
+  "v": "ok"
+ },
+ "bundesliga:48": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "fa8307c789",
+  "v": "ok"
+ },
+ "bundesliga:49": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "1de72c9de4",
+  "v": "ok"
+ },
+ "bundesliga:5": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "9f8faff92d",
+  "v": "ok"
+ },
+ "bundesliga:50": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "6d28ae7232",
+  "v": "ok"
+ },
+ "bundesliga:51": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "b53bff2a08",
+  "v": "ok"
+ },
+ "bundesliga:52": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "3e9e02a911",
+  "v": "ok"
+ },
+ "bundesliga:53": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "e016ab221e",
+  "v": "ok"
+ },
+ "bundesliga:54": {
+  "at": "2026-10-17T00:03:01Z",
+  "fix": {
+   "ex": "The Bundesliga’s first season kicked off in August 1963",
+   "hook": "first season"
+  },
+  "h": "a610940f3d",
+  "note": "Bundesliga is a league label on the tile. first season says what the card is about",
+  "v": "fix"
+ },
+ "bundesliga:55": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "7512936d6a",
+  "v": "ok"
+ },
+ "bundesliga:56": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "897964cdd2",
+  "v": "ok"
+ },
+ "bundesliga:57": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "2ed9423e6d",
+  "v": "ok"
+ },
+ "bundesliga:58": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "91a6f6d3b4",
+  "v": "ok"
+ },
+ "bundesliga:59": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "8672e64e1d",
+  "v": "ok"
+ },
+ "bundesliga:6": {
+  "at": "2026-10-17T00:03:01Z",
+  "fix": {
+   "ex": "Known as the Dino, Hamburg never left the Bundesliga until 2018",
+   "hook": "Dino"
+  },
+  "h": "ef400c4123",
+  "note": "Bundesliga is a league label on the tile. bundesliga.com calls Hamburg the Bundesliga Dino (the stadium clock counted it), a much better tile that only a fan can decode",
+  "v": "fix"
+ },
+ "bundesliga:60": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "92b69af5b5",
+  "v": "ok"
+ },
+ "bundesliga:61": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "6917fe3cdc",
+  "v": "ok"
+ },
+ "bundesliga:62": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "beab3978c7",
+  "note": "Recheck next May: 34 titles",
+  "v": "ok"
+ },
+ "bundesliga:63": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "e283885ab1",
+  "v": "ok"
+ },
+ "bundesliga:64": {
+  "at": "2026-10-17T00:03:01Z",
+  "fix": {
+   "ex": "The Bundesliga’s first season had 16 clubs",
+   "hook": "first season"
+  },
+  "h": "71adacf20b",
+  "note": "Bundesliga is a league label on the tile. first season matches card 54, its near-twin, so the two never share a board",
+  "v": "fix"
+ },
+ "bundesliga:65": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "68e7a36e51",
+  "note": "Near-twin of card 64 (16 clubs). Their means lines tie them",
+  "v": "ok"
+ },
+ "bundesliga:66": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "c124b3b543",
+  "note": "Recheck next May: Neuer could pass 13",
+  "v": "ok"
+ },
+ "bundesliga:7": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "98e557f58b",
+  "v": "ok"
+ },
+ "bundesliga:8": {
+  "at": "2026-10-17T00:03:01Z",
+  "fix": {
+   "ex": "VfB Stuttgart beat Schalke to the 2006–07 title by one point",
+   "hook": "Schalke"
+  },
+  "h": "19720c0de7",
+  "note": "Bundesliga is a league label on the tile. bundesliga.com’s champions page has Stuttgart one point ahead of Schalke (70 to 68). Schalke is a specific tile and not in the club decoy pool",
+  "v": "fix"
+ },
+ "bundesliga:9": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "98cd6ff2d8",
+  "note": "Bundesliga tile kept: Ailton and Thomas Schaaf would be star giveaways and Bayern is a decoy",
+  "v": "ok"
+ },
+ "epl-more:0": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "2121020ea8",
+  "note": "Shares the Tottenham hook with 16, and 18’s sentence names Harry Kane, the draw guardrail keeps them apart",
+  "v": "ok"
+ },
+ "epl-more:1": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "4c2b5cc93f",
+  "v": "ok"
+ },
+ "epl-more:10": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "67be59b960",
+  "v": "ok"
+ },
+ "epl-more:11": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "1f92dbd45f",
+  "v": "ok"
+ },
+ "epl-more:12": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "f0ca9db06c",
+  "v": "ok"
+ },
+ "epl-more:13": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "706da6b867",
+  "v": "ok"
+ },
+ "epl-more:14": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "c293c37a70",
+  "v": "ok"
+ },
+ "epl-more:15": {
+  "at": "2026-10-17T00:01:48Z",
+  "fix": {
+   "d": 2
+  },
+  "h": "30d040f001",
+  "note": "Not white: a new soccer parent doesn’t know who won Player of the Season, and the Vidić tile means nothing to a 10-year-old. A regular-fan yellow",
+  "v": "fix"
+ },
+ "epl-more:16": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "40d90ecd3e",
+  "v": "ok"
+ },
+ "epl-more:17": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "3443d20a66",
+  "v": "ok"
+ },
+ "epl-more:18": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "ce6fefbacf",
+  "note": "Soft yellow: the Harry Kane tile and sentence point straight at Tottenham for any fan, but no better tile exists in it. Near-twin of 0 and 16 (guardrail keeps them apart)",
+  "v": "ok"
+ },
+ "epl-more:19": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "36e5d4f851",
+  "v": "ok"
+ },
+ "epl-more:2": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "d384d3c3db",
+  "v": "ok"
+ },
+ "epl-more:20": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "e6bbdd3e20",
+  "v": "ok"
+ },
+ "epl-more:21": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "f38d6da446",
+  "v": "ok"
+ },
+ "epl-more:22": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "a6d2f54691",
+  "v": "ok"
+ },
+ "epl-more:23": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "68cc570588",
+  "v": "ok"
+ },
+ "epl-more:24": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "3155080ef7",
+  "v": "ok"
+ },
+ "epl-more:25": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "8feb493a0e",
+  "v": "ok"
+ },
+ "epl-more:26": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "f9822f5f5a",
+  "v": "ok"
+ },
+ "epl-more:27": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "7be880b31f",
+  "v": "ok"
+ },
+ "epl-more:28": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "27936d979b",
+  "v": "ok"
+ },
+ "epl-more:29": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "5aa6597c7b",
+  "v": "ok"
+ },
+ "epl-more:3": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "9f36768dc6",
+  "v": "ok"
+ },
+ "epl-more:30": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "304b9ef9fe",
+  "v": "ok"
+ },
+ "epl-more:31": {
+  "at": "2026-10-17T00:01:48Z",
+  "fix": {
+   "ex": "Sam Allardyce managed nine Premier League clubs, from Bolton to Leeds",
+   "hook": "Bolton",
+   "means": "The most of any manager"
+  },
+  "h": "efe1551ba1",
+  "note": "The tile “nine” tells a player nothing. Naming the first and last clubs gives a real tile and keeps the fact",
+  "v": "fix"
+ },
+ "epl-more:32": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "af4fd9b54d",
+  "note": "nicknames:12 names Bobby Robson in its sentence, so the two must not share a board",
+  "v": "ok"
+ },
+ "epl-more:33": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "8b96841976",
+  "v": "ok"
+ },
+ "epl-more:34": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "2c5e513d2f",
+  "v": "ok"
+ },
+ "epl-more:35": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "2d187a1e2e",
+  "v": "ok"
+ },
+ "epl-more:36": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "214ea59e4e",
+  "v": "ok"
+ },
+ "epl-more:37": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "2633037e69",
+  "v": "ok"
+ },
+ "epl-more:38": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "4bcacad011",
+  "v": "ok"
+ },
+ "epl-more:39": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "315ba44ad3",
+  "v": "ok"
+ },
+ "epl-more:4": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "70863e159b",
+  "v": "ok"
+ },
+ "epl-more:40": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "84f0a1b7d9",
+  "note": "Pairs with epl:31 (answer Nottingham, tile City Ground), each gives the other away, so they must not share a board",
+  "v": "ok"
+ },
+ "epl-more:41": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "c3c0b1ee4a",
+  "v": "ok"
+ },
+ "epl-more:42": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "7d023ee374",
+  "note": "Fine white basic, though the decoys are absurd next to a 3-point win (6, 15, 97 for a draw). It improves once the number groups are dropped and k is split (see 43)",
+  "v": "ok"
+ },
+ "epl-more:49": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "5606942b59",
+  "note": "Nine draws in ten offer one modern year (1997, 2011, 2016), so it often plays as a 50/50. Fixed by the year split noted on 52. nicknames:0’s means line gives 1886",
+  "v": "ok"
+ },
+ "epl-more:5": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "a9057eab18",
+  "v": "ok"
+ },
+ "epl-more:50": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "944a26795d",
+  "note": "Nine draws in ten offer one modern year, so it often plays as a 50/50. Fixed by the year split noted on 52",
+  "v": "ok"
+ },
+ "epl-more:51": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "e23fccd631",
+  "note": "Nine draws in ten offer one modern year, so it often plays as a 50/50. Fixed by the year split noted on 52",
+  "v": "ok"
+ },
+ "epl-more:55": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "2fa86ca8d3",
+  "v": "ok"
+ },
+ "epl-more:56": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "adc611bee9",
+  "v": "ok"
+ },
+ "epl-more:57": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "f95e30d81c",
+  "note": "nicknames:10’s means line says they began as Thames Ironworks FC, a near-twin in the after-answer text only",
+  "v": "ok"
+ },
+ "epl-more:58": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "c5821c9b69",
+  "v": "ok"
+ },
+ "epl-more:59": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "b4e702dc77",
+  "v": "ok"
+ },
+ "epl-more:6": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "f579303d2b",
+  "v": "ok"
+ },
+ "epl-more:60": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "e5a28becf1",
+  "v": "ok"
+ },
+ "epl-more:61": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "a9cc08bb3a",
+  "note": "Same fact as nicknames:3 (Brentford the Bees), which tells it better. Two copies in the pool means a repeat inside three months",
+  "v": "cut"
+ },
+ "epl-more:62": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "991cd86ebd",
+  "note": "Same fact as nicknames:10 (West Ham the Irons, shipbuilding roots), which tells it better",
+  "v": "cut"
+ },
+ "epl-more:63": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "4475815f42",
+  "note": "Same fact as nicknames:7 (Burnley the Clarets, from their shirt color), which tells it better",
+  "v": "cut"
+ },
+ "epl-more:64": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "4b11220f16",
+  "note": "Given away by nicknames:34 (the tiger on Hull City’s badge, means: for their nickname, the Tigers). With the other five nickname twins gone, this kind has no decoys left",
+  "v": "cut"
+ },
+ "epl-more:65": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "f73453260a",
+  "note": "Same fact as nicknames:11 (Coventry the Sky Blues, Jimmy Hill’s colors), which tells it better",
+  "v": "cut"
+ },
+ "epl-more:66": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "4871192ebc",
+  "note": "Same fact as nicknames:9 (Fulham were first known as the Saints)",
+  "v": "cut"
+ },
+ "epl-more:7": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "02ca84ca04",
+  "v": "ok"
+ },
+ "epl-more:8": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "ea83ff8e46",
+  "v": "ok"
+ },
+ "epl-more:9": {
+  "at": "2026-10-17T00:01:48Z",
+  "h": "16774b5952",
+  "v": "ok"
+ },
  "epl:0": {
   "at": "2026-10-16T23:58:31Z",
   "fix": {
@@ -2326,6 +3510,1098 @@
   "at": "2026-10-17T00:00:51Z",
   "h": "af01d5ec74",
   "note": "Decoy fix rides on intl-men:8 groups",
+  "v": "ok"
+ },
+ "intl-women:0": {
+  "at": "2026-10-17T00:03:04Z",
+  "fix": {
+   "ex": "The USA won the first Women’s World Cup, beating Norway 2–1 in 1991"
+  },
+  "h": "680865ece0",
+  "note": "Fans say “the USA”: a sentence opening on a bare “USA” reads like a headline",
+  "v": "fix"
+ },
+ "intl-women:1": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "2998a382e3",
+  "v": "ok"
+ },
+ "intl-women:10": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "63e5cc3985",
+  "v": "ok"
+ },
+ "intl-women:11": {
+  "at": "2026-10-17T00:03:04Z",
+  "fix": {
+   "means": "The final was in Basel"
+  },
+  "h": "f7711b5696",
+  "note": "Twin of intl-women:51 the draw can’t catch: Switzerland gives away Basel (the only Swiss city among its decoys) and Basel gives away Switzerland. A means line naming Basel ties them",
+  "v": "fix"
+ },
+ "intl-women:12": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "391d17c96e",
+  "v": "ok"
+ },
+ "intl-women:13": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "b2f3d11d02",
+  "note": "ok. Near-twin of legends:28, kept apart by the draw. Still true on 2026-10-16",
+  "v": "ok"
+ },
+ "intl-women:14": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "5d35439c73",
+  "note": "ok. Exact twin of legends:19 (same answer, same hook, nearly the same sentence). Keep this one and drop legends:19",
+  "v": "ok"
+ },
+ "intl-women:15": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "8567b6cd31",
+  "v": "ok"
+ },
+ "intl-women:16": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "1e131207f8",
+  "v": "ok"
+ },
+ "intl-women:17": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "b6fbda57dd",
+  "v": "ok"
+ },
+ "intl-women:18": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "ed02cf5b13",
+  "note": "ok. Near-twin of awards:18 (shared answer)",
+  "v": "ok"
+ },
+ "intl-women:19": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "1a1a2a4e64",
+  "v": "ok"
+ },
+ "intl-women:2": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "f5b0e839c7",
+  "note": "ok. Near-twin of awards:43 (same fact, same answer), so the draw keeps them apart. Keep one",
+  "v": "ok"
+ },
+ "intl-women:20": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "0339181bac",
+  "note": "ok. Same sentence as nwsl:33, which is the one out of place. Still a world record",
+  "v": "ok"
+ },
+ "intl-women:21": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "3778d80236",
+  "note": "ok. Near-twin of awards:56 and awards:16",
+  "v": "ok"
+ },
+ "intl-women:22": {
+  "at": "2026-10-17T00:03:04Z",
+  "fix": {
+   "d": 3,
+   "ex": "Homare Sawa’s 117th-minute equalizer sent the 2011 World Cup final to penalties",
+   "hook": "equalizer",
+   "means": "She won the Golden Ball and Boot",
+   "src": "https://www.fifa.com/en/tournaments/womens/womensworldcup/fifa-womens-world-cup-germany-2011/articles/sawa-golden-ball-boot-winner"
+  },
+  "h": "a6534f84a9",
+  "note": "Homare Sawa is the only Japanese name among the decoys, so “captained Japan” plays trivially easy, and it repeats legends:37 almost word for word. Her 117th-minute equalizer in the final is the moment fans remember, and Wambach and Morgan, who also scored in that final, make real decoys. Red as rewritten",
+  "v": "fix"
+ },
+ "intl-women:23": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "fb7beb7dd9",
+  "v": "ok"
+ },
+ "intl-women:24": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "6e44581e05",
+  "v": "ok"
+ },
+ "intl-women:25": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "7f74bce6d4",
+  "v": "ok"
+ },
+ "intl-women:26": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "c8ff669901",
+  "v": "ok"
+ },
+ "intl-women:27": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "377259a70d",
+  "v": "ok"
+ },
+ "intl-women:28": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "4df4a70b73",
+  "v": "ok"
+ },
+ "intl-women:29": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "fe90f657f6",
+  "note": "ok. Near-twin of awards:33",
+  "v": "ok"
+ },
+ "intl-women:3": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "7b576f313f",
+  "v": "ok"
+ },
+ "intl-women:30": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "cb621a1bd1",
+  "note": "ok. Near-twin of awards:28 and awards:59",
+  "v": "ok"
+ },
+ "intl-women:31": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "30edbce1a2",
+  "v": "ok"
+ },
+ "intl-women:32": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "dde06518b1",
+  "v": "ok"
+ },
+ "intl-women:33": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "648f821ec3",
+  "v": "ok"
+ },
+ "intl-women:34": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "0133f54d0f",
+  "v": "ok"
+ },
+ "intl-women:35": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "84c8b8a9da",
+  "v": "ok"
+ },
+ "intl-women:36": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "6644ffc769",
+  "v": "ok"
+ },
+ "intl-women:37": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "a38737155c",
+  "v": "ok"
+ },
+ "intl-women:38": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "0f8cc4c74c",
+  "v": "ok"
+ },
+ "intl-women:39": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "5c279456b7",
+  "v": "ok"
+ },
+ "intl-women:4": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "39afd9022b",
+  "note": "ok. Near-twin of awards:46, wc26:41 and intl-women:24, all kept apart by the draw",
+  "v": "ok"
+ },
+ "intl-women:40": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "ada2f02b67",
+  "v": "ok"
+ },
+ "intl-women:41": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "304c1d72d5",
+  "v": "ok"
+ },
+ "intl-women:42": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "4bd4eb1b92",
+  "v": "ok"
+ },
+ "intl-women:43": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "18483ffe86",
+  "v": "ok"
+ },
+ "intl-women:44": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "5b2e642bee",
+  "v": "ok"
+ },
+ "intl-women:45": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "efad17bc42",
+  "v": "ok"
+ },
+ "intl-women:46": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "2d1d66fbf0",
+  "note": "ok as white: next to four, five, eight, 12 and 48 it plays by elimination, which fits white. Exact twin of legends:29 (same sentence, answer and hook). Keep one",
+  "v": "ok"
+ },
+ "intl-women:47": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "eba63da3cc",
+  "v": "ok"
+ },
+ "intl-women:48": {
+  "at": "2026-10-17T00:03:04Z",
+  "fix": {
+   "means": "At Brazil’s famous Maracanã"
+  },
+  "h": "f914bbbbb6",
+  "note": "Twin of intl-women:6 the draw can’t catch: Brazil hosting gives away Rio (the only Brazilian city among its decoys). Naming Brazil in the means ties them",
+  "v": "fix"
+ },
+ "intl-women:49": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "0af01f6ebd",
+  "v": "ok"
+ },
+ "intl-women:5": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "dc05bca811",
+  "v": "ok"
+ },
+ "intl-women:50": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "9267d78ddb",
+  "v": "ok"
+ },
+ "intl-women:51": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "0dcf37061c",
+  "v": "ok"
+ },
+ "intl-women:52": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "f3cb84110a",
+  "v": "ok"
+ },
+ "intl-women:53": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "4333143f69",
+  "note": "ok. Exact twin of awards:64 (same sentence, answer and hook). Keep one",
+  "v": "ok"
+ },
+ "intl-women:54": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "65e857f170",
+  "v": "ok"
+ },
+ "intl-women:55": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "566544930e",
+  "note": "ok. Exact twin of awards:65 (same sentence, answer and hook). Keep one",
+  "v": "ok"
+ },
+ "intl-women:56": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "f733c9cfa3",
+  "v": "ok"
+ },
+ "intl-women:57": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "adab7f17ad",
+  "note": "ok. Plays trivially easy by grammar (a 16-minute golden goal makes no sense), which fits white. Near-twin of legends:22",
+  "v": "ok"
+ },
+ "intl-women:58": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "cbf064e85d",
+  "v": "ok"
+ },
+ "intl-women:59": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "537d3f49d2",
+  "v": "ok"
+ },
+ "intl-women:6": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "e694645dfd",
+  "v": "ok"
+ },
+ "intl-women:60": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "fcd4abddb8",
+  "note": "ok. Near-twin of legends:8 (same hook) and awards:51, awards:70",
+  "v": "ok"
+ },
+ "intl-women:61": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "ee05257f8a",
+  "v": "ok"
+ },
+ "intl-women:62": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "49059e3fdb",
+  "v": "ok"
+ },
+ "intl-women:63": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "96688d7323",
+  "v": "ok"
+ },
+ "intl-women:64": {
+  "at": "2026-10-17T00:03:04Z",
+  "fix": {
+   "ex": "Brazil’s women’s team is also called the Seleção"
+  },
+  "h": "47c76c287a",
+  "note": "As written this is the men’s card (intl-men has the same fact) in a women’s deck. Make it about the women’s team",
+  "v": "fix"
+ },
+ "intl-women:65": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "d417024cfc",
+  "note": "ok. Near-twin of intl-women:37, kept apart because its means line says 1999",
+  "v": "ok"
+ },
+ "intl-women:7": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "bd379f32ea",
+  "v": "ok"
+ },
+ "intl-women:8": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "13f44ba7e1",
+  "v": "ok"
+ },
+ "intl-women:9": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "42cb4374ea",
+  "note": "ok. Same fact as nwsl:26 (shared answer, kept apart by the draw)",
+  "v": "ok"
+ },
+ "laliga:0": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "b58d08f493",
+  "v": "ok"
+ },
+ "laliga:1": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "4a07c7b1a6",
+  "note": "Near-twin of laliga:51: its 1928–29 hands over 51’s answer, 1929, and the draw does not tie them (see 51)",
+  "v": "ok"
+ },
+ "laliga:10": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "da8c199c5f",
+  "note": "Zarra Trophy hints at laliga:13, already tied by the draw",
+  "v": "ok"
+ },
+ "laliga:11": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "d46749219b",
+  "v": "ok"
+ },
+ "laliga:12": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "d7590550e8",
+  "v": "ok"
+ },
+ "laliga:13": {
+  "at": "2026-10-17T00:02:07Z",
+  "fix": {
+   "ex": "Telmo Zarra scored more LaLiga goals than any other Spaniard"
+  },
+  "h": "b30142c56f",
+  "note": "laliga.com disagrees with itself on Zarra’s total: the LFP Trophy page says 251, the LaLiga of Records page says 253. Dropping the number keeps the fact that matters and that every page agrees on (laliga.com lists him as top Spanish goalscorer)",
+  "v": "fix"
+ },
+ "laliga:14": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "50c463fc5c",
+  "v": "ok"
+ },
+ "laliga:15": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "ad2e9fceef",
+  "v": "ok"
+ },
+ "laliga:16": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "a2e26d6390",
+  "note": "Its “Zamora Trophy” gives away laliga:15, but the draw ties them through Zamora",
+  "v": "ok"
+ },
+ "laliga:17": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "7d74fa8ead",
+  "v": "ok"
+ },
+ "laliga:18": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "c967706445",
+  "v": "ok"
+ },
+ "laliga:19": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "cb043e5ad8",
+  "v": "ok"
+ },
+ "laliga:2": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "79bd04b0cc",
+  "note": "Near-twin of laliga:29 (Simeone, 2013–14 title). The draw already ties them through Atlético",
+  "v": "ok"
+ },
+ "laliga:20": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "a20473a987",
+  "note": "Still the derby record on Oct 17, 2026",
+  "v": "ok"
+ },
+ "laliga:21": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "45e685673a",
+  "v": "ok"
+ },
+ "laliga:22": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "6542d08a40",
+  "v": "ok"
+ },
+ "laliga:23": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "25a356353d",
+  "v": "ok"
+ },
+ "laliga:24": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "b35b6fbd53",
+  "v": "ok"
+ },
+ "laliga:25": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "1983790f91",
+  "v": "ok"
+ },
+ "laliga:26": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "2684f871e6",
+  "v": "ok"
+ },
+ "laliga:27": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "992b0955ea",
+  "v": "ok"
+ },
+ "laliga:28": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "0daf7437cc",
+  "v": "ok"
+ },
+ "laliga:29": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "d1477b7583",
+  "v": "ok"
+ },
+ "laliga:3": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "297c2755ae",
+  "note": "The new word order fixes the old “only field players” misread",
+  "v": "ok"
+ },
+ "laliga:30": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "729c48e595",
+  "v": "ok"
+ },
+ "laliga:31": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "60c208cc82",
+  "v": "ok"
+ },
+ "laliga:32": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "4b9445cac6",
+  "v": "ok"
+ },
+ "laliga:33": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "608585dcb8",
+  "note": "Still true: Simeone, the nearest active coach, is about 200 games behind",
+  "v": "ok"
+ },
+ "laliga:34": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "3f08015ca7",
+  "v": "ok"
+ },
+ "laliga:35": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "c6e6baa0cd",
+  "v": "ok"
+ },
+ "laliga:36": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "33d48abfef",
+  "v": "ok"
+ },
+ "laliga:37": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "2f03b32f42",
+  "v": "ok"
+ },
+ "laliga:38": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "59ad37ddfc",
+  "v": "ok"
+ },
+ "laliga:39": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "8e8e09915b",
+  "v": "ok"
+ },
+ "laliga:4": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "64f62a43a8",
+  "v": "ok"
+ },
+ "laliga:40": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "6212af6c2c",
+  "v": "ok"
+ },
+ "laliga:41": {
+  "at": "2026-10-17T00:02:07Z",
+  "fix": {
+   "ex": "Sporting Gijón’s El Molinón is the oldest stadium in Spain"
+  },
+  "h": "74926da185",
+  "note": "Fans everywhere call the club Sporting Gijón. “Real Sporting” reads like a typo for Real something, or gets mixed up with Sporting in Lisbon",
+  "v": "fix"
+ },
+ "laliga:42": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "51b95326aa",
+  "v": "ok"
+ },
+ "laliga:43": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "00a470ba34",
+  "note": "36 still right after Barcelona’s 2024–25 and 2025–26 titles",
+  "v": "ok"
+ },
+ "laliga:44": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "1c52eb330b",
+  "v": "ok"
+ },
+ "laliga:45": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "73454356cb",
+  "v": "ok"
+ },
+ "laliga:46": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "a1c177b5bd",
+  "v": "ok"
+ },
+ "laliga:47": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "e0bf7095fc",
+  "v": "ok"
+ },
+ "laliga:48": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "ea81d50247",
+  "v": "ok"
+ },
+ "laliga:49": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "ccd8d235de",
+  "v": "ok"
+ },
+ "laliga:5": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "4f286afc0a",
+  "v": "ok"
+ },
+ "laliga:50": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "4cdaa94572",
+  "v": "ok"
+ },
+ "laliga:51": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "6b2ccdc58c",
+  "note": "Near-twin of laliga:1, whose “1928–29” gives this answer away. The draw’s giveaway check misses it because 1929 is not a token of 1928–29. Suggest the guardrail also reads a season like 1928–29 as 1929",
+  "v": "ok"
+ },
+ "laliga:52": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "c706b6881a",
+  "v": "ok"
+ },
+ "laliga:53": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "fc0b32e890",
+  "v": "ok"
+ },
+ "laliga:54": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "690eccc864",
+  "v": "ok"
+ },
+ "laliga:55": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "f9abc330dd",
+  "v": "ok"
+ },
+ "laliga:56": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "80cbb29635",
+  "note": "Weak decoys: founding years from 1898 to 1903 can’t be a TV date, so it often plays easy. Yellow is the most it can be. A few postwar years in the year kind would sharpen it",
+  "v": "ok"
+ },
+ "laliga:6": {
+  "at": "2026-10-17T00:02:07Z",
+  "fix": {
+   "ex": "Real Betis won their only league title in 1934–35, beating Sevilla 3–0 away",
+   "hook": "Sevilla",
+   "src": "https://www.laliga.com/en-GB/news/comparing-titles-real-betis-sevilla-fc"
+  },
+  "h": "abcfeda9f3",
+  "note": "New tile word as asked. The bare year gave a fan nothing to tap. laliga.com states the 3–0 win at Sevilla’s ground (Nervión) on two pages that agree: the Betis-Sevilla titles comparison and the El Gran Derbi page, which adds it was the first top-flight Seville derby, Feb 3, 1935. Sevilla is never a wrong answer here (grouped), and the draw already keeps this card off a board with laliga:7 (Sevilla’s answer) and laliga:40 (same hook). New src is the page that states the only title, the 3–0 and Real Madrid on 33",
+  "v": "fix"
+ },
+ "laliga:7": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "c2e1126607",
+  "note": "Encinas is an obscure tile word, but the only specific one the sentence has. Better than the year",
+  "v": "ok"
+ },
+ "laliga:8": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "d9454ca9e6",
+  "v": "ok"
+ },
+ "laliga:9": {
+  "at": "2026-10-17T00:02:07Z",
+  "h": "3156c2a568",
+  "v": "ok"
+ },
+ "legends:0": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "911cc0a677",
+  "note": "Twin of intl-men:16 (same fact, same hook). The draw keeps them apart, but Trivelle should keep one",
+  "v": "ok"
+ },
+ "legends:1": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "399797cacf",
+  "v": "ok"
+ },
+ "legends:10": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "c55a5c64ca",
+  "v": "ok"
+ },
+ "legends:11": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "6e85506ddd",
+  "note": "Twin of awards:6 (same answer, same fact). The draw keeps them apart, but Trivelle should keep one",
+  "v": "ok"
+ },
+ "legends:12": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "e8109fe03d",
+  "note": "Twin of intl-men:22 (same answer, same fact). The draw keeps them apart, but Trivelle should keep one",
+  "v": "ok"
+ },
+ "legends:13": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "edbbfbbf07",
+  "v": "ok"
+ },
+ "legends:14": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "e66d55b0c5",
+  "v": "ok"
+ },
+ "legends:15": {
+  "at": "2026-10-17T00:05:12Z",
+  "fix": {
+   "ex": "Mário Zagallo was the first man to win the World Cup as a player and as a coach",
+   "hook": "coach"
+  },
+  "h": "3f855d73a2",
+  "note": "“Before Deschamps” reads as if Deschamps came next, but Beckenbauer did it second (1974 and 1990). The plain record says it right",
+  "v": "fix"
+ },
+ "legends:16": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "270880ab36",
+  "v": "ok"
+ },
+ "legends:17": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "ca658171c5",
+  "note": "Still right after Mbappé’s 2022 hat trick, since it says first",
+  "v": "ok"
+ },
+ "legends:18": {
+  "at": "2026-10-17T00:05:12Z",
+  "fix": {
+   "d": 3
+  },
+  "h": "927158af49",
+  "note": "Birgit Prinz is the women’s game in depth for a US fan, and the decoys are all Americans who played 2003 (Hamm, Wambach). Red is honest. Near awards:19 (Prinz, 2003)",
+  "v": "fix"
+ },
+ "legends:19": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "bd4da01ae2",
+  "note": "Twin of intl-women:14 (same sentence). The draw keeps them apart, but Trivelle should keep one",
+  "v": "ok"
+ },
+ "legends:2": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "dabc4bce91",
+  "note": "Still true after 2026 (Rodri won the Golden Ball, Messi the Silver). Twin of awards:0 (same sentence). The draw keeps them apart, but Trivelle should keep one",
+  "v": "ok"
+ },
+ "legends:20": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "3faa4e6e92",
+  "v": "ok"
+ },
+ "legends:21": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "c04fb0e5ff",
+  "v": "ok"
+ },
+ "legends:22": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "e6fa1cf6d0",
+  "note": "Twin of intl-women:57 (same fact). The draw keeps them apart, but Trivelle should keep one. Also near awards:20",
+  "v": "ok"
+ },
+ "legends:23": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "d834b2a41b",
+  "v": "ok"
+ },
+ "legends:24": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "bf8b9ccbc0",
+  "v": "ok"
+ },
+ "legends:25": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "0106c640bc",
+  "note": "Twin of awards:9 (same sentence). The draw keeps them apart, but Trivelle should keep one. Also near seriea:28 (Ballon d’Or 2007)",
+  "v": "ok"
+ },
+ "legends:26": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "b578b74b94",
+  "note": "FIFA: Messi became the second man to play three finals in 2026, after Cafu, so first still holds. Messi is grouped out as a decoy, good",
+  "v": "ok"
+ },
+ "legends:27": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "bb11029d4a",
+  "note": "Plays trivially: its only decoys are 34–354, nobody scores 34 at one World Cup, so the white comes from the decoys, not the fact. The plausible ones (17, 22) are grouped out. The same card is already in awards:57 and ligue1:57",
+  "v": "cut"
+ },
+ "legends:28": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "0818c72dc2",
+  "note": "Decoys skew high (34–354) because the group [13, 17, 22] keeps 22 away. Dropping that group would help, all three are certainly wrong for each other. Near-twin of intl-women:13 (Marta, most goals)",
+  "v": "ok"
+ },
+ "legends:29": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "c2f931145e",
+  "note": "Plays trivially: every decoy is 13–49, so “world-record ___ games” can only be 354. Word-for-word the same card is intl-women:46",
+  "v": "cut"
+ },
+ "legends:3": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "dd8a488501",
+  "note": "FIFA confirms the two goals in the 5–0 win over Uzbekistan. Twin of wc26:14 (same fact). The draw keeps them apart, but Trivelle should keep one",
+  "v": "ok"
+ },
+ "legends:30": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "a3c10683fe",
+  "v": "ok"
+ },
+ "legends:31": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "5f504752d0",
+  "v": "ok"
+ },
+ "legends:32": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "c8d30de559",
+  "note": "FIFA’s oldest-players list still has El Hadary first after 2026",
+  "v": "ok"
+ },
+ "legends:33": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "369ad81573",
+  "v": "ok"
+ },
+ "legends:34": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "6ff3cba27a",
+  "note": "Twin of wc26:49 (same fact, same hook). The draw keeps them apart, but Trivelle should keep one",
+  "v": "ok"
+ },
+ "legends:35": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "31127bbbdd",
+  "note": "Decoys skew high (34–354) because of the group [13, 17, 22]. Twin of awards:55 (same sentence). The draw keeps them apart, but Trivelle should keep one. Also near wc26:12",
+  "v": "ok"
+ },
+ "legends:36": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "4888349793",
+  "v": "ok"
+ },
+ "legends:37": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "7b82c9e193",
+  "note": "White honestly as played, the name points to Japan. Twin of intl-women:22 (same fact). The draw keeps them apart, but Trivelle should keep one",
+  "v": "ok"
+ },
+ "legends:38": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "854c2a9f62",
+  "v": "ok"
+ },
+ "legends:39": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "ba3801a8ac",
+  "note": "Near nwsl:26 and intl-women:20 (Sinclair for Canada)",
+  "v": "ok"
+ },
+ "legends:4": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "bdb97d6f7d",
+  "note": "Twin of intl-men:18 (same fact, same hook). The draw keeps them apart, but Trivelle should keep one",
+  "v": "ok"
+ },
+ "legends:40": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "15a01236ac",
+  "v": "ok"
+ },
+ "legends:41": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "916a72825f",
+  "v": "ok"
+ },
+ "legends:42": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "2021e17314",
+  "v": "ok"
+ },
+ "legends:43": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "1cbfef429a",
+  "v": "ok"
+ },
+ "legends:44": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "6801bfaf40",
+  "v": "ok"
+ },
+ "legends:45": {
+  "at": "2026-10-17T00:05:12Z",
+  "fix": {
+   "d": 3
+  },
+  "h": "e8a55b4c12",
+  "note": "Chilavert is a cult name for real fans, not regular ones, and Colombia (Higuita’s country) is a strong decoy. Red",
+  "v": "fix"
+ },
+ "legends:46": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "c10dd26b8c",
+  "v": "ok"
+ },
+ "legends:47": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "81b6bcd202",
+  "v": "ok"
+ },
+ "legends:48": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "ecb8f44c68",
+  "v": "ok"
+ },
+ "legends:49": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "8b118c2a8f",
+  "v": "ok"
+ },
+ "legends:5": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "2b39abc0b1",
+  "note": "Twin of intl-men:20 (same fact). The draw keeps them apart, but Trivelle should keep one",
+  "v": "ok"
+ },
+ "legends:50": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "6fe90c3fdc",
+  "v": "ok"
+ },
+ "legends:51": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "f1d73e4df6",
+  "v": "ok"
+ },
+ "legends:52": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "c0fa1ff364",
+  "note": "Near-twin of ucl:3 (Cruyff, Ajax, 1971)",
+  "v": "ok"
+ },
+ "legends:53": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "5cfa33bc37",
+  "v": "ok"
+ },
+ "legends:54": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "b831ea47b9",
+  "v": "ok"
+ },
+ "legends:55": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "4080a7c154",
+  "note": "Near-twin of seriea:18 (Maldini, whole career at Milan)",
+  "v": "ok"
+ },
+ "legends:56": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "e3a5e097e7",
+  "v": "ok"
+ },
+ "legends:57": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "dacff647ff",
+  "note": "Near-twin of ucl:25 (Drogba, Chelsea, 2012 final)",
+  "v": "ok"
+ },
+ "legends:58": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "b722767d9d",
+  "v": "ok"
+ },
+ "legends:59": {
+  "at": "2026-10-17T00:05:12Z",
+  "fix": {
+   "d": 1
+  },
+  "h": "9a9b02a4d2",
+  "note": "As played it is a gimme: Portland Thorns is the only women’s or American club among its decoys (Santos, Dynamo Moscow, Reims), so a new parent gets it from the name Christine alone. White is honest. Near nwsl:21",
+  "v": "fix"
+ },
+ "legends:6": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "c085f0080a",
+  "note": "Twin of intl-men:26 (same fact, same hook). The draw keeps them apart, but Trivelle should keep one",
+  "v": "ok"
+ },
+ "legends:60": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "8c0d2fb90c",
+  "v": "ok"
+ },
+ "legends:61": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "7a288daa04",
+  "v": "ok"
+ },
+ "legends:62": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "1b24917e2e",
+  "v": "ok"
+ },
+ "legends:63": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "a2b92b5c1c",
+  "note": "Twin of bundesliga:42 (same sentence). The draw keeps them apart, but Trivelle should keep one",
+  "v": "ok"
+ },
+ "legends:64": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "e8612a7051",
+  "v": "ok"
+ },
+ "legends:65": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "5fa4f6028b",
+  "v": "ok"
+ },
+ "legends:66": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "3034b7a13d",
+  "v": "ok"
+ },
+ "legends:67": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "d6882e8b27",
+  "v": "ok"
+ },
+ "legends:68": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "6d945a4153",
+  "note": "FIFA’s interview has him playing at 58",
+  "v": "ok"
+ },
+ "legends:69": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "d9128b97f7",
+  "v": "ok"
+ },
+ "legends:7": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "21db5db0fb",
+  "note": "Near-twin of awards:50, whose answer 2009 is in this sentence",
+  "v": "ok"
+ },
+ "legends:70": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "6ffd650693",
+  "note": "Twin of bundesliga:43 (same sentence). The draw keeps them apart, but Trivelle should keep one",
+  "v": "ok"
+ },
+ "legends:71": {
+  "at": "2026-10-17T00:05:12Z",
+  "fix": {
+   "means": "Spanish for “the Flea”",
+   "w": "La Pulga"
+  },
+  "h": "250d461df4",
+  "note": "Fans everywhere say La Pulga. The full La Pulga Atómica is rare. FIFA’s source has the long form, which contains it",
+  "v": "fix"
+ },
+ "legends:8": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "f2ac984eed",
+  "note": "Twin of intl-women:60 (same fact, same hook). The draw keeps them apart, but Trivelle should keep one. Also near awards:51",
+  "v": "ok"
+ },
+ "legends:9": {
+  "at": "2026-10-17T00:05:12Z",
+  "h": "6638388cc2",
+  "note": "Still the only keeper to win it after 2026",
   "v": "ok"
  },
  "ligamx:0": {
@@ -3071,6 +5347,393 @@
   "h": "1acae9ed82",
   "v": "ok"
  },
+ "lingo-more:0": {
+  "at": "2026-10-17T00:02:01Z",
+  "fix": {
+   "ex": "The midfielder floated a lob over both center backs for the striker to chase",
+   "hook": "center backs"
+  },
+  "h": "14c3ce7ddd",
+  "note": "Near-twin of soccer:10 (chip): both had the keeper rushing out and the ball floated over her head. Moved this one to a lofted pass over the defense, a common use of lob",
+  "v": "fix"
+ },
+ "lingo-more:1": {
+  "at": "2026-10-17T00:02:01Z",
+  "fix": {
+   "groups": [
+    [
+     "daisy cutter",
+     "back pass"
+    ]
+   ]
+  },
+  "h": "9bd76733d4",
+  "note": "Back pass also fits: a back pass that rolls along the grass into your own net is a classic blooper. Keep them apart",
+  "v": "fix"
+ },
+ "lingo-more:10": {
+  "at": "2026-10-17T00:02:01Z",
+  "h": "1a02b5d2e5",
+  "v": "ok"
+ },
+ "lingo-more:11": {
+  "at": "2026-10-17T00:02:01Z",
+  "h": "9977d53a3f",
+  "v": "ok"
+ },
+ "lingo-more:12": {
+  "at": "2026-10-17T00:02:01Z",
+  "h": "a8c9960e7d",
+  "v": "ok"
+ },
+ "lingo-more:13": {
+  "at": "2026-10-17T00:02:01Z",
+  "h": "233c938df3",
+  "v": "ok"
+ },
+ "lingo-more:14": {
+  "at": "2026-10-17T00:02:01Z",
+  "h": "0be3e89907",
+  "v": "ok"
+ },
+ "lingo-more:15": {
+  "at": "2026-10-17T00:02:01Z",
+  "h": "7799a2084f",
+  "v": "ok"
+ },
+ "lingo-more:16": {
+  "at": "2026-10-17T00:02:01Z",
+  "h": "b7f6949e47",
+  "note": "Near-twin of soccer:22 (keeper), a different answer, so the draw won’t keep them apart",
+  "v": "ok"
+ },
+ "lingo-more:17": {
+  "at": "2026-10-17T00:02:01Z",
+  "h": "1518bf2e79",
+  "v": "ok"
+ },
+ "lingo-more:18": {
+  "at": "2026-10-17T00:02:01Z",
+  "h": "7af059e950",
+  "note": "Near-twin of rules:33 (assistant referee with the offside flag), a different answer, so the draw won’t keep them apart",
+  "v": "ok"
+ },
+ "lingo-more:19": {
+  "at": "2026-10-17T00:02:01Z",
+  "fix": {
+   "ex": "In Grandpa’s day, the halfback lined up right behind the forwards"
+  },
+  "h": "0c134c08d5",
+  "note": "Halfback is an old-timer’s word now, fans say midfielder, and as written it is a twin of soccer:26 (midfielder, behind the forwards). Framing it as Grandpa’s era is true to how it is used and sets it apart",
+  "v": "fix"
+ },
+ "lingo-more:2": {
+  "at": "2026-10-17T00:02:01Z",
+  "h": "b1c0442d76",
+  "v": "ok"
+ },
+ "lingo-more:20": {
+  "at": "2026-10-17T00:02:01Z",
+  "h": "b2a9ddb866",
+  "v": "ok"
+ },
+ "lingo-more:21": {
+  "at": "2026-10-17T00:02:01Z",
+  "h": "be71e4cd4b",
+  "v": "ok"
+ },
+ "lingo-more:22": {
+  "at": "2026-10-17T00:02:01Z",
+  "h": "4ecd1d5061",
+  "v": "ok"
+ },
+ "lingo-more:23": {
+  "at": "2026-10-17T00:02:01Z",
+  "h": "e9e70f4b6e",
+  "v": "ok"
+ },
+ "lingo-more:24": {
+  "at": "2026-10-17T00:02:01Z",
+  "fix": {
+   "d": 1
+  },
+  "h": "1bb204acb2",
+  "note": "Everyone knows a scout recruits, and every other choice is a player or a parent, so it plays white",
+  "v": "fix"
+ },
+ "lingo-more:25": {
+  "at": "2026-10-17T00:02:01Z",
+  "fix": {
+   "d": 1
+  },
+  "h": "6477758fd5",
+  "note": "Free agent is everyday American sports talk a new parent knows, and the other choices never fit, so it plays white",
+  "v": "fix"
+ },
+ "lingo-more:26": {
+  "at": "2026-10-17T00:02:01Z",
+  "fix": {
+   "ex": "The flag stayed down because the striker was onside when the pass was played"
+  },
+  "h": "82bf215dd3",
+  "note": "Offside is judged when the pass is played, not when it arrives, and “when the pass came” blurs that. Fix the wording on the one card meant to teach it",
+  "v": "fix"
+ },
+ "lingo-more:27": {
+  "at": "2026-10-17T00:02:01Z",
+  "h": "f3ea3c3360",
+  "v": "ok"
+ },
+ "lingo-more:28": {
+  "at": "2026-10-17T00:02:01Z",
+  "h": "67926b6183",
+  "note": "Near-twin of lingo-more:8 (touchline, ball out, throw-in). The draw keeps them apart, but one could teach a different throw-in fact",
+  "v": "ok"
+ },
+ "lingo-more:29": {
+  "at": "2026-10-17T00:02:01Z",
+  "h": "5bb2899f80",
+  "v": "ok"
+ },
+ "lingo-more:3": {
+  "at": "2026-10-17T00:02:01Z",
+  "h": "1dc106f61a",
+  "v": "ok"
+ },
+ "lingo-more:30": {
+  "at": "2026-10-17T00:02:01Z",
+  "h": "12b886837d",
+  "v": "ok"
+ },
+ "lingo-more:31": {
+  "at": "2026-10-17T00:02:01Z",
+  "h": "5e7a4268fc",
+  "v": "ok"
+ },
+ "lingo-more:32": {
+  "at": "2026-10-17T00:02:01Z",
+  "h": "5fdc5e61f6",
+  "note": "The Laws say dropped ball (rules:29, basics:82, basics:83). Different spelling, so the draw won’t keep them apart",
+  "v": "ok"
+ },
+ "lingo-more:33": {
+  "at": "2026-10-17T00:02:01Z",
+  "h": "d24e7219ee",
+  "v": "ok"
+ },
+ "lingo-more:34": {
+  "at": "2026-10-17T00:02:01Z",
+  "h": "02e26efa92",
+  "v": "ok"
+ },
+ "lingo-more:35": {
+  "at": "2026-10-17T00:02:01Z",
+  "fix": {
+   "groups": [
+    [
+     "knockout",
+     "five-a-side"
+    ]
+   ]
+  },
+  "h": "8a443c3c6a",
+  "note": "Five-a-side also fits: a five-a-side tournament can be knockout. Keep them apart",
+  "v": "fix"
+ },
+ "lingo-more:36": {
+  "at": "2026-10-17T00:02:01Z",
+  "h": "278d2a125f",
+  "v": "ok"
+ },
+ "lingo-more:37": {
+  "at": "2026-10-17T00:02:01Z",
+  "h": "28c5ede5f3",
+  "v": "ok"
+ },
+ "lingo-more:38": {
+  "at": "2026-10-17T00:02:01Z",
+  "h": "450685db69",
+  "v": "ok"
+ },
+ "lingo-more:39": {
+  "at": "2026-10-17T00:02:01Z",
+  "h": "1556f096a0",
+  "v": "ok"
+ },
+ "lingo-more:4": {
+  "at": "2026-10-17T00:02:01Z",
+  "h": "0e9258e411",
+  "v": "ok"
+ },
+ "lingo-more:40": {
+  "at": "2026-10-17T00:02:01Z",
+  "h": "727e1c5782",
+  "v": "ok"
+ },
+ "lingo-more:41": {
+  "at": "2026-10-17T00:02:01Z",
+  "fix": {
+   "ex": "The 4–0 win was the team’s third straight shutout",
+   "hook": "4–0 win"
+  },
+  "h": "9cfb8cba80",
+  "note": "Near-twin of soccer:34 (clean sheet): both were a keeper earning her first one. Moved this one to a team result, the way Americans use shutout",
+  "v": "fix"
+ },
+ "lingo-more:42": {
+  "at": "2026-10-17T00:02:01Z",
+  "h": "c2186d9ca1",
+  "v": "ok"
+ },
+ "lingo-more:43": {
+  "at": "2026-10-17T00:02:01Z",
+  "h": "70e6e85451",
+  "v": "ok"
+ },
+ "lingo-more:44": {
+  "at": "2026-10-17T00:02:01Z",
+  "h": "e8daeac4e4",
+  "v": "ok"
+ },
+ "lingo-more:45": {
+  "at": "2026-10-17T00:02:01Z",
+  "h": "0ef771c56f",
+  "v": "ok"
+ },
+ "lingo-more:46": {
+  "at": "2026-10-17T00:02:01Z",
+  "h": "1c0cccc319",
+  "v": "ok"
+ },
+ "lingo-more:47": {
+  "at": "2026-10-17T00:02:01Z",
+  "h": "35a10336cd",
+  "v": "ok"
+ },
+ "lingo-more:48": {
+  "at": "2026-10-17T00:02:01Z",
+  "fix": {
+   "ex": "The coach loved route one: long balls straight up to the tall striker",
+   "hook": "long balls"
+  },
+  "h": "dee796ca7f",
+  "note": "Fans say long balls, not long, high kicks. Close cousin of soccer:31 (target man)",
+  "v": "fix"
+ },
+ "lingo-more:49": {
+  "at": "2026-10-17T00:02:01Z",
+  "h": "eb1b0a8d12",
+  "v": "ok"
+ },
+ "lingo-more:5": {
+  "at": "2026-10-17T00:02:01Z",
+  "h": "536baabac8",
+  "v": "ok"
+ },
+ "lingo-more:50": {
+  "at": "2026-10-17T00:02:01Z",
+  "h": "ca739810e0",
+  "v": "ok"
+ },
+ "lingo-more:51": {
+  "at": "2026-10-17T00:02:01Z",
+  "h": "a6f8fb3850",
+  "v": "ok"
+ },
+ "lingo-more:52": {
+  "at": "2026-10-17T00:02:01Z",
+  "h": "f974ccb688",
+  "v": "ok"
+ },
+ "lingo-more:53": {
+  "at": "2026-10-17T00:02:01Z",
+  "h": "81474859f9",
+  "v": "ok"
+ },
+ "lingo-more:54": {
+  "at": "2026-10-17T00:02:01Z",
+  "h": "6e0504e4d5",
+  "v": "ok"
+ },
+ "lingo-more:55": {
+  "at": "2026-10-17T00:02:01Z",
+  "h": "3cab6c44e5",
+  "v": "ok"
+ },
+ "lingo-more:56": {
+  "at": "2026-10-17T00:02:01Z",
+  "h": "b73a68ab59",
+  "v": "ok"
+ },
+ "lingo-more:57": {
+  "at": "2026-10-17T00:02:01Z",
+  "h": "cd7c12b492",
+  "v": "ok"
+ },
+ "lingo-more:58": {
+  "at": "2026-10-17T00:02:01Z",
+  "h": "804071aa86",
+  "v": "ok"
+ },
+ "lingo-more:59": {
+  "at": "2026-10-17T00:02:01Z",
+  "h": "e165984dad",
+  "v": "ok"
+ },
+ "lingo-more:6": {
+  "at": "2026-10-17T00:02:01Z",
+  "h": "0ba8ec2336",
+  "v": "ok"
+ },
+ "lingo-more:60": {
+  "at": "2026-10-17T00:02:01Z",
+  "h": "9fcb5327ae",
+  "v": "ok"
+ },
+ "lingo-more:61": {
+  "at": "2026-10-17T00:02:01Z",
+  "h": "f8031fdfea",
+  "v": "ok"
+ },
+ "lingo-more:62": {
+  "at": "2026-10-17T00:02:01Z",
+  "h": "344076f79e",
+  "v": "ok"
+ },
+ "lingo-more:63": {
+  "at": "2026-10-17T00:02:01Z",
+  "h": "9fbfc4c98d",
+  "v": "ok"
+ },
+ "lingo-more:64": {
+  "at": "2026-10-17T00:02:01Z",
+  "fix": {
+   "ex": "Our team planned to whitewash the visitors, winning without allowing a goal"
+  },
+  "h": "d3495552d2",
+  "note": "Tie also fits: Americans say they tied a team, and a 0–0 tie allows zero goals. Winning rules it out",
+  "v": "fix"
+ },
+ "lingo-more:65": {
+  "at": "2026-10-17T00:02:01Z",
+  "h": "926007b4c3",
+  "v": "ok"
+ },
+ "lingo-more:7": {
+  "at": "2026-10-17T00:02:01Z",
+  "h": "bfd2e52ffd",
+  "v": "ok"
+ },
+ "lingo-more:8": {
+  "at": "2026-10-17T00:02:01Z",
+  "h": "1accd5dbb3",
+  "v": "ok"
+ },
+ "lingo-more:9": {
+  "at": "2026-10-17T00:02:01Z",
+  "h": "3f40d80e3d",
+  "v": "ok"
+ },
  "mls:0": {
   "at": "2026-10-17T00:00:30Z",
   "h": "496dc2ec22",
@@ -3807,6 +6470,377 @@
   "note": "Near-twin: epl-more:66 is the same fact. Keep this richer one and cut that one",
   "v": "ok"
  },
+ "nwsl:0": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "217f5d0406",
+  "v": "ok"
+ },
+ "nwsl:1": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "6adac53c84",
+  "v": "ok"
+ },
+ "nwsl:10": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "36e0bf4930",
+  "note": "Checked nwslsoccer.com: 63,004 is still the NWSL record on Oct 17, 2026",
+  "v": "ok"
+ },
+ "nwsl:11": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "5f40716d51",
+  "note": "Checked nwslsoccer.com 2025 awards: Chawinga was 2025 MVP",
+  "v": "ok"
+ },
+ "nwsl:12": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "0627ed8659",
+  "note": "Safe however Ashley Sanchez’s 2026 chase ends, since it says 2019",
+  "v": "ok"
+ },
+ "nwsl:13": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "ccb63184b0",
+  "v": "ok"
+ },
+ "nwsl:14": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "400e61b1a8",
+  "v": "ok"
+ },
+ "nwsl:15": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "053d351574",
+  "v": "ok"
+ },
+ "nwsl:16": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "c8c8d0fcb1",
+  "v": "ok"
+ },
+ "nwsl:17": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "a300782318",
+  "v": "ok"
+ },
+ "nwsl:18": {
+  "at": "2026-10-17T00:03:32Z",
+  "fix": {
+   "ex": "The Wave retired the No. 13 jersey of Alex Morgan"
+  },
+  "h": "678dea3edf",
+  "note": "American fans say jersey, not shirt, and card 21 already says retired No. 12",
+  "v": "fix"
+ },
+ "nwsl:19": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "390a7c6df7",
+  "v": "ok"
+ },
+ "nwsl:2": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "436a5ab008",
+  "v": "ok"
+ },
+ "nwsl:20": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "ebf0981898",
+  "v": "ok"
+ },
+ "nwsl:21": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "8fe6662bc4",
+  "v": "ok"
+ },
+ "nwsl:22": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "4cca6c362e",
+  "v": "ok"
+ },
+ "nwsl:23": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "0e4f39ecf3",
+  "v": "ok"
+ },
+ "nwsl:24": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "e752212b72",
+  "v": "ok"
+ },
+ "nwsl:25": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "da820a42ae",
+  "note": "Fishlock retired from Wales after 2025, so 48 in 166 is final",
+  "v": "ok"
+ },
+ "nwsl:26": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "345d49725f",
+  "v": "ok"
+ },
+ "nwsl:27": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "ab31e9d32d",
+  "note": "Plays as a freebie: every decoy country (Scotland, Wales, Canada, Australia) obviously had NWSL players long before 2026, and Malawi is grouped away. Luvanga is a new name few fans know, so the tile has no pull either",
+  "v": "cut"
+ },
+ "nwsl:28": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "8dcac83a10",
+  "v": "ok"
+ },
+ "nwsl:29": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "e6e855d497",
+  "v": "ok"
+ },
+ "nwsl:3": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "ebd5588eed",
+  "v": "ok"
+ },
+ "nwsl:30": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "760db1010f",
+  "v": "ok"
+ },
+ "nwsl:31": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "6033f93ea5",
+  "note": "Safe if Ashley Sanchez gets a 21st goal: Chawinga stays the first to 20",
+  "v": "ok"
+ },
+ "nwsl:32": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "12ad25515e",
+  "v": "ok"
+ },
+ "nwsl:33": {
+  "at": "2026-10-17T00:03:57Z",
+  "h": "51f99116c9",
+  "note": "Word for word the same sentence as intl-women:20 (Sinclair, 190 goals for Canada), which is that fact’s natural home. Here the blank is 190, and its decoys (8, 16, 20, 23, 65) make it play trivially easy. Keep intl-women:20",
+  "v": "cut"
+ },
+ "nwsl:34": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "16671342ee",
+  "v": "ok"
+ },
+ "nwsl:35": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "9be2e70fe2",
+  "note": "Plays a bit easy by elimination, but a new parent could pair draft with a team’s record, so yellow holds",
+  "v": "ok"
+ },
+ "nwsl:36": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "8ebe0c60ab",
+  "v": "ok"
+ },
+ "nwsl:37": {
+  "at": "2026-10-17T00:03:32Z",
+  "fix": {
+   "d": 1
+  },
+  "h": "aeb9d72271",
+  "note": "Plays white: next to Golden Boot, Ironwoman, Decision Day or draft, only a cup can be won by beating Chicago 2–0, and a 10-year-old sees that (Shield, the one real decoy, is grouped away)",
+  "v": "fix"
+ },
+ "nwsl:38": {
+  "at": "2026-10-17T00:03:32Z",
+  "fix": {
+   "means": "Kaleigh Kurtz did it 2022–2025"
+  },
+  "h": "ec1f6fc216",
+  "note": "Kurtz can finish a fifth straight Ironwoman season when 2026 ends in two weeks, so four years running goes stale. Name the years instead (nwslsoccer.com: her fourth straight in 2025)",
+  "v": "fix"
+ },
+ "nwsl:39": {
+  "at": "2026-10-17T00:03:32Z",
+  "fix": {
+   "d": 1
+  },
+  "h": "2a2416dbf7",
+  "note": "Plays white: with a win on ___ only fits Decision Day next to Golden Boot, Challenge Cup, Ironwoman or draft, so anyone gets it from the grammar",
+  "v": "fix"
+ },
+ "nwsl:4": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "aacff98034",
+  "v": "ok"
+ },
+ "nwsl:40": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "2cd9d8a51f",
+  "v": "ok"
+ },
+ "nwsl:41": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "2463cda291",
+  "v": "ok"
+ },
+ "nwsl:42": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "bc627483aa",
+  "v": "ok"
+ },
+ "nwsl:43": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "0d2553c0d2",
+  "v": "ok"
+ },
+ "nwsl:44": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "68522eedb5",
+  "v": "ok"
+ },
+ "nwsl:45": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "9dfb00bfdd",
+  "v": "ok"
+ },
+ "nwsl:46": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "afdd1848bc",
+  "note": "Checked nwslsoccer.com 2025 awards: Bev Yanez, Racing Louisville",
+  "v": "ok"
+ },
+ "nwsl:47": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "e82d274436",
+  "v": "ok"
+ },
+ "nwsl:48": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "ebf96a1452",
+  "v": "ok"
+ },
+ "nwsl:49": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "1ac24623db",
+  "v": "ok"
+ },
+ "nwsl:5": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "bd49f1360d",
+  "v": "ok"
+ },
+ "nwsl:50": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "87ffd1213f",
+  "v": "ok"
+ },
+ "nwsl:51": {
+  "at": "2026-10-17T00:03:32Z",
+  "fix": {
+   "ex": "Gotham won the 2023 final before 25,011 fans at Snapdragon Stadium",
+   "means": "A record for a final, in San Diego"
+  },
+  "h": "9be248ab30",
+  "note": "A record 25,011 reads as the league record, which this deck says is Denver’s 63,004 (card 10). It was a record for a final, so say that in the means",
+  "v": "fix"
+ },
+ "nwsl:52": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "d3e705ed79",
+  "v": "ok"
+ },
+ "nwsl:53": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "93d7ecc2da",
+  "v": "ok"
+ },
+ "nwsl:54": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "a295883be1",
+  "v": "ok"
+ },
+ "nwsl:55": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "e22a77dd30",
+  "v": "ok"
+ },
+ "nwsl:56": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "fb90e68bd7",
+  "v": "ok"
+ },
+ "nwsl:57": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "69df44891e",
+  "v": "ok"
+ },
+ "nwsl:58": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "22918c9b48",
+  "v": "ok"
+ },
+ "nwsl:59": {
+  "at": "2026-10-17T00:03:32Z",
+  "fix": {
+   "ex": "Racing play their home games in Louisville"
+  },
+  "h": "383a66b595",
+  "note": "House style gives clubs British plurals (plays its → play their), and Racing is how fans say it",
+  "v": "fix"
+ },
+ "nwsl:6": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "9ac970fbdf",
+  "v": "ok"
+ },
+ "nwsl:60": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "3762afcc26",
+  "v": "ok"
+ },
+ "nwsl:61": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "6d19137dbb",
+  "v": "ok"
+ },
+ "nwsl:62": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "fe29762eec",
+  "v": "ok"
+ },
+ "nwsl:63": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "81d6b03429",
+  "v": "ok"
+ },
+ "nwsl:64": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "d888e574aa",
+  "v": "ok"
+ },
+ "nwsl:65": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "9871c5e758",
+  "v": "ok"
+ },
+ "nwsl:66": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "6066620c63",
+  "v": "ok"
+ },
+ "nwsl:7": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "e6848dc9cb",
+  "v": "ok"
+ },
+ "nwsl:8": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "66da97ec64",
+  "note": "Near-twins 39 and 43 (all three are the 2023 Wave Shield), but the draw already keeps them apart through San Diego",
+  "v": "ok"
+ },
+ "nwsl:9": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "b9505ba90a",
+  "note": "Near-twin of 32 (same 2025 KC season), kept apart by the draw. Still the record: no 2026 club is near 21 wins",
+  "v": "ok"
+ },
  "parents:0": {
   "at": "2026-10-16T23:57:20Z",
   "h": "353220e0e1",
@@ -4109,6 +7143,12 @@
   "note": "Checked against Law 3 (2026/27). Its means line names rules:1’s answer, so the draw keeps the two apart",
   "v": "ok"
  },
+ "rules:1": {
+  "at": "2026-10-17T00:01:56Z",
+  "h": "1c295535ae",
+  "note": "Checked: Law 3.1 (2026/27). The new means line no longer gives away rules:0",
+  "v": "ok"
+ },
  "rules:10": {
   "at": "2026-10-17T00:00:54Z",
   "h": "0524c2a6b1",
@@ -4137,6 +7177,18 @@
   "note": "Checked: temporary dismissal guidelines, 10–15% of playing time",
   "v": "ok"
  },
+ "rules:15": {
+  "at": "2026-10-17T00:01:56Z",
+  "h": "fa2626c1c5",
+  "note": "Checked: Law 13.2",
+  "v": "ok"
+ },
+ "rules:16": {
+  "at": "2026-10-17T00:01:56Z",
+  "h": "16421d0ad4",
+  "note": "Checked: Law 1",
+  "v": "ok"
+ },
  "rules:17": {
   "at": "2026-10-17T00:00:54Z",
   "h": "46389d3562",
@@ -4145,6 +7197,12 @@
  "rules:18": {
   "at": "2026-10-17T00:00:54Z",
   "h": "e215ed8e33",
+  "v": "ok"
+ },
+ "rules:19": {
+  "at": "2026-10-17T00:01:56Z",
+  "h": "59f773bbe4",
+  "note": "The tile goal is broad and ties the card to every goal, goal line, goal area and goal kick card, which narrows its boards, but it reads well",
   "v": "ok"
  },
  "rules:2": {
@@ -4256,6 +7314,12 @@
   "note": "Still the Law 3.10 wording in 2026/27. The optional ‘Only the captain’ guidelines sit beside it, and basics:156 covers them",
   "v": "ok"
  },
+ "rules:38": {
+  "at": "2026-10-17T00:01:56Z",
+  "h": "fe35ccb729",
+  "note": "Checked: Law 12",
+  "v": "ok"
+ },
  "rules:39": {
   "at": "2026-10-17T00:00:54Z",
   "fix": {
@@ -4353,6 +7417,18 @@
   "note": "Same fact as basics:4 (socks must cover the shin guards), even the means line. The draw keeps them apart, but Morg may want only one",
   "v": "ok"
  },
+ "rules:54": {
+  "at": "2026-10-17T00:01:56Z",
+  "h": "c1a42ff538",
+  "note": "Checked: 2026/27 Law 4.1 allows accessories that are safe and securely covered. Still guessable by grammar, fine for yellow since the rule is new. Related to basics:114",
+  "v": "ok"
+ },
+ "rules:55": {
+  "at": "2026-10-17T00:01:56Z",
+  "h": "8390631c69",
+  "note": "Checked: Law 3.10. Near-twin of basics:143 and basics:3 (same answer, so they never meet)",
+  "v": "ok"
+ },
  "rules:56": {
   "at": "2026-10-17T00:00:54Z",
   "h": "85add460f5",
@@ -4372,6 +7448,12 @@
  "rules:59": {
   "at": "2026-10-17T00:00:54Z",
   "h": "617bb19b35",
+  "v": "ok"
+ },
+ "rules:6": {
+  "at": "2026-10-17T00:01:56Z",
+  "h": "b1d1676738",
+  "note": "Checked: Law 1.9, only one person at a time gives tactical instructions",
   "v": "ok"
  },
  "rules:60": {
@@ -4782,6 +7864,1188 @@
  "seriea:9": {
   "at": "2026-10-17T00:00:12Z",
   "h": "031928e0cf",
+  "v": "ok"
+ },
+ "soccer:0": {
+  "at": "2026-10-17T00:01:58Z",
+  "h": "69a55645f0",
+  "v": "ok"
+ },
+ "soccer:1": {
+  "at": "2026-10-17T00:01:58Z",
+  "h": "f47af50658",
+  "v": "ok"
+ },
+ "soccer:10": {
+  "at": "2026-10-17T00:01:58Z",
+  "h": "f98aa2b633",
+  "note": "Near-twin of lingo-more:0 (lob): same keeper-off-her-line chip. Kept this one as the shot, and moved the lob card to a pass over the defense",
+  "v": "ok"
+ },
+ "soccer:11": {
+  "at": "2026-10-17T00:01:58Z",
+  "h": "76f0f56472",
+  "v": "ok"
+ },
+ "soccer:12": {
+  "at": "2026-10-17T00:01:58Z",
+  "fix": {
+   "d": 2
+  },
+  "h": "f6deaa4d0a",
+  "note": "As played it falls by elimination: no other choice fits a soft penalty down the middle, and a regular fan knows the Panenka. Yellow, not red",
+  "v": "fix"
+ },
+ "soccer:13": {
+  "at": "2026-10-17T00:01:58Z",
+  "h": "e47546f080",
+  "v": "ok"
+ },
+ "soccer:14": {
+  "at": "2026-10-17T00:01:58Z",
+  "h": "7b254e3781",
+  "v": "ok"
+ },
+ "soccer:15": {
+  "at": "2026-10-17T00:01:58Z",
+  "h": "3bdc9a0109",
+  "v": "ok"
+ },
+ "soccer:16": {
+  "at": "2026-10-17T00:01:58Z",
+  "h": "896609c9f3",
+  "v": "ok"
+ },
+ "soccer:17": {
+  "at": "2026-10-17T00:01:58Z",
+  "h": "ee5e8340cd",
+  "v": "ok"
+ },
+ "soccer:18": {
+  "at": "2026-10-17T00:01:58Z",
+  "h": "a8b9d7e0d4",
+  "v": "ok"
+ },
+ "soccer:19": {
+  "at": "2026-10-17T00:01:58Z",
+  "h": "fbbaa46eef",
+  "v": "ok"
+ },
+ "soccer:2": {
+  "at": "2026-10-17T00:01:58Z",
+  "fix": {
+   "means": "Kicked out of the air"
+  },
+  "h": "95501cd181",
+  "note": "The new means names half volley, the answer of lingo-more:4, so it gives that card away if both are dealt. Define the volley itself",
+  "v": "fix"
+ },
+ "soccer:20": {
+  "at": "2026-10-17T00:01:58Z",
+  "h": "7022f8865f",
+  "v": "ok"
+ },
+ "soccer:21": {
+  "at": "2026-10-17T00:01:58Z",
+  "h": "91d5f7b54a",
+  "note": "Near-twin of rules:39 (simulation), a different answer, so the draw won’t keep them apart",
+  "v": "ok"
+ },
+ "soccer:22": {
+  "at": "2026-10-17T00:01:58Z",
+  "h": "8fe616d3f6",
+  "note": "Near-twin of lingo-more:16 (goalie): both teach the short word for goalkeeper, and the draw won’t keep them apart",
+  "v": "ok"
+ },
+ "soccer:23": {
+  "at": "2026-10-17T00:01:58Z",
+  "h": "b6f7b625dc",
+  "v": "ok"
+ },
+ "soccer:24": {
+  "at": "2026-10-17T00:01:58Z",
+  "h": "dfe465aacf",
+  "v": "ok"
+ },
+ "soccer:25": {
+  "at": "2026-10-17T00:01:58Z",
+  "h": "daba17ff5f",
+  "v": "ok"
+ },
+ "soccer:26": {
+  "at": "2026-10-17T00:01:58Z",
+  "h": "b4d8aafbf8",
+  "v": "ok"
+ },
+ "soccer:27": {
+  "at": "2026-10-17T00:01:58Z",
+  "h": "4f20f7733e",
+  "v": "ok"
+ },
+ "soccer:28": {
+  "at": "2026-10-17T00:01:58Z",
+  "h": "61ec7816ca",
+  "v": "ok"
+ },
+ "soccer:29": {
+  "at": "2026-10-17T00:01:58Z",
+  "h": "6fd4827a06",
+  "v": "ok"
+ },
+ "soccer:3": {
+  "at": "2026-10-17T00:01:58Z",
+  "h": "a6bb05e3d3",
+  "v": "ok"
+ },
+ "soccer:30": {
+  "at": "2026-10-17T00:01:58Z",
+  "h": "39bd93b468",
+  "v": "ok"
+ },
+ "soccer:31": {
+  "at": "2026-10-17T00:01:58Z",
+  "fix": {
+   "ex": "Every high cross is aimed at the target man, the tallest one up front"
+  },
+  "h": "ab70dec81f",
+  "note": "Keeper also fits: keepers claim high crosses and are often the tallest on the team. “Aimed at” and “up front” rule it out. Close cousin of lingo-more:48 (route one)",
+  "v": "fix"
+ },
+ "soccer:32": {
+  "at": "2026-10-17T00:01:58Z",
+  "h": "deb19f1069",
+  "note": "Plays easy by elimination, since only the gaffer makes subs, but the word itself is fine at yellow",
+  "v": "ok"
+ },
+ "soccer:33": {
+  "at": "2026-10-17T00:01:58Z",
+  "h": "e8a2e01dc5",
+  "v": "ok"
+ },
+ "soccer:34": {
+  "at": "2026-10-17T00:01:58Z",
+  "h": "60ec8ca66f",
+  "note": "Near-twin of lingo-more:41 (shutout). Kept this keeper version and moved the shutout card to a team result",
+  "v": "ok"
+ },
+ "soccer:35": {
+  "at": "2026-10-17T00:01:58Z",
+  "fix": {
+   "ex": "The defender sneezed while clearing it and scored an own goal"
+  },
+  "h": "1aceb370f7",
+  "note": "“Scored the first own goal” reads like the first ever. Fans say she scored an own goal",
+  "v": "fix"
+ },
+ "soccer:36": {
+  "at": "2026-10-17T00:01:58Z",
+  "h": "58d0b15ec8",
+  "v": "ok"
+ },
+ "soccer:37": {
+  "at": "2026-10-17T00:01:58Z",
+  "h": "cebdd42cec",
+  "v": "ok"
+ },
+ "soccer:38": {
+  "at": "2026-10-17T00:01:58Z",
+  "fix": {
+   "hook": "both goals"
+  },
+  "h": "c9b5f719d2",
+  "note": "The hook “winger” is another card’s answer (soccer:25) and points at positions, not scoring. “Both goals” names the topic",
+  "v": "fix"
+ },
+ "soccer:39": {
+  "at": "2026-10-17T00:01:58Z",
+  "fix": {
+   "ex": "Still tied after extra time, the game was decided in a shoot-out",
+   "hook": "still tied"
+  },
+  "h": "6c8d919b53",
+  "note": "Fans say a game is decided in a shoot-out, not “by the shoot-out.” New hook so it no longer shares “extra time” with soccer:41. Same answer as rules:64, which the draw keeps apart",
+  "v": "fix"
+ },
+ "soccer:4": {
+  "at": "2026-10-17T00:01:58Z",
+  "h": "97427b6f06",
+  "v": "ok"
+ },
+ "soccer:40": {
+  "at": "2026-10-17T00:01:58Z",
+  "h": "92bcd74aed",
+  "note": "Near-twin of soccer:41 (golden goal): same next-goal-wins idea, grouped so they never decoy each other, but they can share a board",
+  "v": "ok"
+ },
+ "soccer:41": {
+  "at": "2026-10-17T00:01:58Z",
+  "h": "cc0c1c04ef",
+  "v": "ok"
+ },
+ "soccer:42": {
+  "at": "2026-10-17T00:01:58Z",
+  "h": "17d3b77b10",
+  "note": "Near-twin of basics:26 and rules:61 (additional time), a different answer, so the draw won’t keep them apart",
+  "v": "ok"
+ },
+ "soccer:43": {
+  "at": "2026-10-17T00:01:58Z",
+  "fix": {
+   "means": "Time added on at the end of a half"
+  },
+  "h": "6dc981d4fc",
+  "note": "“Another name for injury time” leans on another card and helps on soccer:42 if both are dealt. Define it instead",
+  "v": "fix"
+ },
+ "soccer:44": {
+  "at": "2026-10-17T00:01:58Z",
+  "h": "73bc8083c1",
+  "v": "ok"
+ },
+ "soccer:45": {
+  "at": "2026-10-17T00:01:58Z",
+  "fix": {
+   "groups": [
+    [
+     "derby",
+     "friendly"
+    ]
+   ]
+  },
+  "h": "3c0876b53e",
+  "note": "Friendly also fits: a friendly against the team from across town could sell out too. Keep them apart",
+  "v": "fix"
+ },
+ "soccer:46": {
+  "at": "2026-10-17T00:01:58Z",
+  "h": "4e7db61ea3",
+  "v": "ok"
+ },
+ "soccer:47": {
+  "at": "2026-10-17T00:01:58Z",
+  "fix": {
+   "ex": "The keeper made a howler and let a soft shot roll through her legs",
+   "hook": "soft shot"
+  },
+  "h": "e34c447c78",
+  "note": "“Slow roller” is baseball talk. A soccer fan says a soft shot rolled through her legs",
+  "v": "fix"
+ },
+ "soccer:48": {
+  "at": "2026-10-17T00:01:58Z",
+  "h": "130f076445",
+  "v": "ok"
+ },
+ "soccer:49": {
+  "at": "2026-10-17T00:01:58Z",
+  "h": "15f74864f4",
+  "v": "ok"
+ },
+ "soccer:5": {
+  "at": "2026-10-17T00:01:58Z",
+  "h": "db657ada52",
+  "v": "ok"
+ },
+ "soccer:50": {
+  "at": "2026-10-17T00:01:58Z",
+  "h": "27613b29a6",
+  "v": "ok"
+ },
+ "soccer:51": {
+  "at": "2026-10-17T00:01:58Z",
+  "h": "201f88d7ac",
+  "v": "ok"
+ },
+ "soccer:52": {
+  "at": "2026-10-17T00:01:58Z",
+  "h": "ceca8be0f8",
+  "v": "ok"
+ },
+ "soccer:53": {
+  "at": "2026-10-17T00:01:58Z",
+  "fix": {
+   "d": 2
+  },
+  "h": "41e96ba9a2",
+  "note": "The word contains “pressing” and the sentence says win it back, and the other choices never fit, so anyone gets it by elimination. Yellow, not red",
+  "v": "fix"
+ },
+ "soccer:54": {
+  "at": "2026-10-17T00:01:58Z",
+  "h": "56f6e45a1a",
+  "v": "ok"
+ },
+ "soccer:6": {
+  "at": "2026-10-17T00:01:58Z",
+  "h": "b6370baccd",
+  "v": "ok"
+ },
+ "soccer:7": {
+  "at": "2026-10-17T00:01:58Z",
+  "h": "559dbcf849",
+  "v": "ok"
+ },
+ "soccer:8": {
+  "at": "2026-10-17T00:01:58Z",
+  "h": "b49571cec4",
+  "v": "ok"
+ },
+ "soccer:9": {
+  "at": "2026-10-17T00:01:58Z",
+  "h": "e44bf8fb9d",
+  "v": "ok"
+ },
+ "ucl:0": {
+  "at": "2026-10-17T00:07:24Z",
+  "h": "00f54250cb",
+  "v": "ok"
+ },
+ "ucl:1": {
+  "at": "2026-10-17T00:07:24Z",
+  "h": "8665c963c4",
+  "v": "ok"
+ },
+ "ucl:10": {
+  "at": "2026-10-17T00:07:24Z",
+  "h": "ea6e5849b5",
+  "v": "ok"
+ },
+ "ucl:11": {
+  "at": "2026-10-17T00:07:24Z",
+  "h": "2a144ddda6",
+  "v": "ok"
+ },
+ "ucl:12": {
+  "at": "2026-10-17T00:07:24Z",
+  "h": "eb228104d0",
+  "v": "ok"
+ },
+ "ucl:13": {
+  "at": "2026-10-17T00:07:24Z",
+  "h": "82daaf7550",
+  "note": "Four cards cover the 2023 final (ucl:13, 29, 35, 64). The draw blocks 13 with the others, but 29, 35 and 64 can all land on one board",
+  "v": "ok"
+ },
+ "ucl:14": {
+  "at": "2026-10-17T00:07:24Z",
+  "fix": {
+   "ex": "Désiré Doué scored twice as Paris Saint-Germain won the 2025 final",
+   "hook": "Doué",
+   "means": "Their first European title"
+  },
+  "h": "0b13fd8963",
+  "note": "Hook “first-time” names nothing. Doué’s two goals make a real tile. Also, cards 30 and 61 now spell out Paris Saint-Germain, so the draw keeps them off this card’s board (both gave the answer away as “PSG”)",
+  "v": "fix"
+ },
+ "ucl:15": {
+  "at": "2026-10-17T00:07:24Z",
+  "h": "4a3cbdaa04",
+  "note": "Barcelona is already kept out of its wrong answers",
+  "v": "ok"
+ },
+ "ucl:16": {
+  "at": "2026-10-17T00:07:24Z",
+  "h": "38d3dfe8c8",
+  "v": "ok"
+ },
+ "ucl:17": {
+  "at": "2026-10-17T00:07:24Z",
+  "h": "65a3118291",
+  "v": "ok"
+ },
+ "ucl:18": {
+  "at": "2026-10-17T00:07:24Z",
+  "fix": {
+   "ex": "Cristiano Ronaldo holds the Champions League records for goals and appearances"
+  },
+  "h": "1fcecd4e71",
+  "note": "On the daily board no deck name shows, so “all-time records” reads as career records. Name the competition",
+  "v": "fix"
+ },
+ "ucl:19": {
+  "at": "2026-10-17T00:07:24Z",
+  "fix": {
+   "ex": "Lionel Messi is second on the Champions League scoring list with 129 goals"
+  },
+  "h": "b794ad1d0e",
+  "note": "“The all-time scoring list” needs the competition named, since the board shows no deck",
+  "v": "fix"
+ },
+ "ucl:2": {
+  "at": "2026-10-17T00:07:24Z",
+  "h": "a1c3a60560",
+  "v": "ok"
+ },
+ "ucl:20": {
+  "at": "2026-10-17T00:07:24Z",
+  "fix": {
+   "ex": "Robert Lewandowski is third on the Champions League scoring list with 109 goals"
+  },
+  "h": "90d2bb880b",
+  "note": "Without the competition named, “third on the all-time scoring list” is wrong for Lewandowski’s career overall. 109 checked on uefa.com today, but he is still active at Barcelona, so recheck each season",
+  "v": "fix"
+ },
+ "ucl:21": {
+  "at": "2026-10-17T00:07:24Z",
+  "h": "15323e94d8",
+  "v": "ok"
+ },
+ "ucl:22": {
+  "at": "2026-10-17T00:07:24Z",
+  "fix": {
+   "ex": "Kylian Mbappé was the Champions League top scorer of 2025–26 with 15 goals"
+  },
+  "h": "3a24343b12",
+  "note": "With no deck name on the board, “top scorer of 2025–26” could mean La Liga. 15 and Kane’s 14 checked on uefa.com",
+  "v": "fix"
+ },
+ "ucl:23": {
+  "at": "2026-10-17T00:07:24Z",
+  "fix": {
+   "ex": "Erling Haaland was the Champions League top scorer of 2022–23 with 12 goals"
+  },
+  "h": "dc20b8553f",
+  "note": "Haaland was also the Premier League’s top scorer in 2022–23 (with 36), so name the competition. 12 and Salah’s 8 checked on uefa.com",
+  "v": "fix"
+ },
+ "ucl:24": {
+  "at": "2026-10-17T00:07:24Z",
+  "h": "e6961d9bd0",
+  "v": "ok"
+ },
+ "ucl:25": {
+  "at": "2026-10-17T00:07:24Z",
+  "h": "22d55a9f1e",
+  "v": "ok"
+ },
+ "ucl:26": {
+  "at": "2026-10-17T00:07:24Z",
+  "h": "c8b2fea500",
+  "v": "ok"
+ },
+ "ucl:27": {
+  "at": "2026-10-17T00:07:24Z",
+  "h": "937c8e3f6d",
+  "v": "ok"
+ },
+ "ucl:28": {
+  "at": "2026-10-17T00:07:24Z",
+  "h": "e7da32ceb5",
+  "v": "ok"
+ },
+ "ucl:29": {
+  "at": "2026-10-17T00:07:24Z",
+  "h": "f439b3e5da",
+  "note": "Twin of ucl:64 on the 2023 final: both can share a board",
+  "v": "ok"
+ },
+ "ucl:3": {
+  "at": "2026-10-17T00:07:24Z",
+  "h": "510d7e78b7",
+  "v": "ok"
+ },
+ "ucl:30": {
+  "at": "2026-10-17T00:07:24Z",
+  "fix": {
+   "ex": "Luis Enrique coached Paris Saint-Germain to back-to-back titles in 2025 and 2026",
+   "hook": "Paris"
+  },
+  "h": "d77aa9452f",
+  "note": "Spell out Paris Saint-Germain so the draw keeps this card off card 14’s board (it gave 14’s answer away). Hook moves to Paris",
+  "v": "fix"
+ },
+ "ucl:31": {
+  "at": "2026-10-17T00:07:24Z",
+  "h": "52c55e02d2",
+  "v": "ok"
+ },
+ "ucl:32": {
+  "at": "2026-10-17T00:07:24Z",
+  "fix": {
+   "means": "Porto beat Monaco 3–0 in the final",
+   "src": "https://www.uefa.com/uefachampionsleague/news/019d-0e6ae5999141-82ce41064ec4-1000--porto-perform-to-perfection/"
+  },
+  "h": "a3b9632f3d",
+  "note": "The means line “He won it again with Inter in 2010” gives away card 11 (Inter, 2010 final) when both are on one board",
+  "v": "fix"
+ },
+ "ucl:33": {
+  "at": "2026-10-17T00:07:24Z",
+  "h": "c8b352f0f7",
+  "v": "ok"
+ },
+ "ucl:34": {
+  "at": "2026-10-17T00:07:24Z",
+  "h": "f857c971cd",
+  "v": "ok"
+ },
+ "ucl:35": {
+  "at": "2026-10-17T00:07:24Z",
+  "h": "034a4d097b",
+  "v": "ok"
+ },
+ "ucl:36": {
+  "at": "2026-10-17T00:07:24Z",
+  "h": "bc20519058",
+  "v": "ok"
+ },
+ "ucl:37": {
+  "at": "2026-10-17T00:07:24Z",
+  "h": "96309fad5d",
+  "v": "ok"
+ },
+ "ucl:38": {
+  "at": "2026-10-17T00:07:24Z",
+  "h": "1aa227c8cb",
+  "v": "ok"
+ },
+ "ucl:39": {
+  "at": "2026-10-17T00:07:24Z",
+  "h": "b17be5ea0b",
+  "v": "ok"
+ },
+ "ucl:4": {
+  "at": "2026-10-17T00:07:24Z",
+  "h": "9598434747",
+  "v": "ok"
+ },
+ "ucl:40": {
+  "at": "2026-10-17T00:07:24Z",
+  "fix": {
+   "means": "At Hampden Park",
+   "src": "https://www.uefa.com/uefachampionsleague/match/69489--leverkusen-vs-real-madrid/"
+  },
+  "h": "67dd2d0f44",
+  "note": "The means line “Zidane scored a famous winner” gives away card 24 (Zidane, 2002 final), which can share its board",
+  "v": "fix"
+ },
+ "ucl:41": {
+  "at": "2026-10-17T00:07:24Z",
+  "h": "b78d69998d",
+  "v": "ok"
+ },
+ "ucl:42": {
+  "at": "2026-10-17T00:07:24Z",
+  "fix": {
+   "means": "Carvajal and Vinícius Júnior scored",
+   "src": "https://www.uefa.com/uefachampionsleague/news/028e-1b07e18d875a-ba78e4b9d9fc-1000--real-madrid-win-champions-league-carvajal-and-vinicius-jun/"
+  },
+  "h": "5fca5201a1",
+  "note": "The means line “Real Madrid’s 15th European title” gives away card 55 (answer 15), which can share its board",
+  "v": "fix"
+ },
+ "ucl:43": {
+  "at": "2026-10-17T00:07:24Z",
+  "h": "bc0cab7bba",
+  "v": "ok"
+ },
+ "ucl:44": {
+  "at": "2026-10-17T00:07:24Z",
+  "h": "78b48ce60b",
+  "v": "ok"
+ },
+ "ucl:45": {
+  "at": "2026-10-17T00:07:24Z",
+  "fix": {
+   "ex": "Lyon won their first women’s European title at Craven Cottage in 2011"
+  },
+  "h": "ac81b00d4b",
+  "note": "Out of context this is wrong: Lyon won French titles long before 2011. It was their first European title",
+  "v": "fix"
+ },
+ "ucl:46": {
+  "at": "2026-10-17T00:07:24Z",
+  "h": "0233919f8e",
+  "v": "ok"
+ },
+ "ucl:47": {
+  "at": "2026-10-17T00:07:24Z",
+  "h": "0c9e59a1f4",
+  "note": "Obscure: almost no fan knows the venue of the 2002 Women’s Cup final, and next to English and French grounds the only German name is a pure guess. A rewrite naming Frankfurt makes it a giveaway",
+  "v": "cut"
+ },
+ "ucl:48": {
+  "at": "2026-10-17T00:07:24Z",
+  "fix": {
+   "ex": "Barcelona reached a sixth straight Women’s Champions League final in 2026"
+  },
+  "h": "c2a03a22d1",
+  "note": "“A sixth straight women’s final” could be a domestic cup final on a mixed board. Name the competition",
+  "v": "fix"
+ },
+ "ucl:49": {
+  "at": "2026-10-17T00:07:24Z",
+  "h": "822dfa790e",
+  "v": "ok"
+ },
+ "ucl:5": {
+  "at": "2026-10-17T00:07:24Z",
+  "h": "04dcf41518",
+  "v": "ok"
+ },
+ "ucl:50": {
+  "at": "2026-10-17T00:07:24Z",
+  "fix": {
+   "ex": "Wendie Renard’s Lyon won five straight women’s European titles from 2016 to 2020",
+   "hook": "Renard"
+  },
+  "h": "b7c5bd495a",
+  "note": "Lyon also won many French titles in a row, so “women’s titles” needs “European”. Hook “in a row” names nothing: Renard played in every one of those finals (uefa.com history)",
+  "v": "fix"
+ },
+ "ucl:51": {
+  "at": "2026-10-17T00:07:24Z",
+  "fix": {
+   "ex": "In 2008, Frankfurt became the first three-time women’s European champions"
+  },
+  "h": "782d9ba4e5",
+  "note": "“Three-time women’s champions” needs “European” on a mixed board (Frankfurt won many German titles too)",
+  "v": "fix"
+ },
+ "ucl:52": {
+  "at": "2026-10-17T00:07:24Z",
+  "h": "bbc67d3f05",
+  "v": "ok"
+ },
+ "ucl:53": {
+  "at": "2026-10-17T00:07:24Z",
+  "fix": {
+   "ex": "Wolfsburg won back-to-back women’s European titles in 2013 and 2014"
+  },
+  "h": "ebf5aa9aff",
+  "note": "Wolfsburg also won the Bundesliga in 2013 and 2014, so “women’s titles” needs “European”",
+  "v": "fix"
+ },
+ "ucl:54": {
+  "at": "2026-10-17T00:07:24Z",
+  "fix": {
+   "ex": "Umeå were European champions in 2003, then again in 2004 after signing Marta"
+  },
+  "h": "1fe7c15981",
+  "note": "Umeå also won Swedish titles those years, so say European. Shorter and how a fan would put it",
+  "v": "fix"
+ },
+ "ucl:55": {
+  "at": "2026-10-17T00:07:24Z",
+  "h": "724475ac44",
+  "v": "ok"
+ },
+ "ucl:56": {
+  "at": "2026-10-17T00:07:24Z",
+  "h": "7bab1572c0",
+  "v": "ok"
+ },
+ "ucl:57": {
+  "at": "2026-10-17T00:07:24Z",
+  "h": "4dc8c3b62e",
+  "note": "Bayern also have 6, which is fine since the sentence names Liverpool",
+  "v": "ok"
+ },
+ "ucl:58": {
+  "at": "2026-10-17T00:07:24Z",
+  "h": "b5c866fe8b",
+  "note": "Plays as a giveaway: 141 against 5, 6, 7, 8 and 15 (title counts) needs no knowledge. Near-twin of ucl:18 (Ronaldo’s goals record), and its means hands over ucl:19 (Messi, 129)",
+  "v": "cut"
+ },
+ "ucl:59": {
+  "at": "2026-10-17T00:07:24Z",
+  "fix": {
+   "ex": "Lyon have won a record 8 Women’s Champions League titles"
+  },
+  "h": "5f168cda8e",
+  "note": "Lyon have far more than 8 French titles, so “women’s titles” must name the competition",
+  "v": "fix"
+ },
+ "ucl:6": {
+  "at": "2026-10-17T00:07:24Z",
+  "h": "cb69e715ab",
+  "v": "ok"
+ },
+ "ucl:60": {
+  "at": "2026-10-17T00:07:24Z",
+  "h": "a01c383371",
+  "v": "ok"
+ },
+ "ucl:61": {
+  "at": "2026-10-17T00:07:24Z",
+  "fix": {
+   "ex": "Inter lost the 2025 final to Paris Saint-Germain by a record 5–0"
+  },
+  "h": "fdb89e2762",
+  "note": "Spell out Paris Saint-Germain so the draw keeps this card off card 14’s board. As “PSG” it gave 14’s answer away",
+  "v": "fix"
+ },
+ "ucl:62": {
+  "at": "2026-10-17T00:07:24Z",
+  "h": "12c155d32b",
+  "v": "ok"
+ },
+ "ucl:63": {
+  "at": "2026-10-17T00:07:24Z",
+  "h": "662a263663",
+  "v": "ok"
+ },
+ "ucl:64": {
+  "at": "2026-10-17T00:07:24Z",
+  "h": "1aceea4cdc",
+  "v": "ok"
+ },
+ "ucl:65": {
+  "at": "2026-10-17T00:07:24Z",
+  "h": "a27fc9b60b",
+  "v": "ok"
+ },
+ "ucl:66": {
+  "at": "2026-10-17T00:07:24Z",
+  "h": "9690592c86",
+  "v": "ok"
+ },
+ "ucl:7": {
+  "at": "2026-10-17T00:07:24Z",
+  "h": "bcf3b8877a",
+  "v": "ok"
+ },
+ "ucl:8": {
+  "at": "2026-10-17T00:07:24Z",
+  "h": "1d020b0e87",
+  "v": "ok"
+ },
+ "ucl:9": {
+  "at": "2026-10-17T00:07:24Z",
+  "fix": {
+   "ex": "In 2004, Porto beat Monaco to become champions of Europe",
+   "hook": "Monaco",
+   "means": "Their second European title, after 1987",
+   "src": "https://www.uefa.com/uefachampionsleague/news/019d-0e6ae5999141-82ce41064ec4-1000--porto-perform-to-perfection/"
+  },
+  "h": "0af7c31e06",
+  "note": "Hook “Europe” is an empty word. Name the opponent instead, and move the final to the sentence",
+  "v": "fix"
+ },
+ "wc26:0": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "6838138df5",
+  "v": "ok"
+ },
+ "wc26:1": {
+  "at": "2026-10-17T00:04:39Z",
+  "fix": {
+   "ex": "Defending champions Argentina lost the final in extra time",
+   "hook": "champions"
+  },
+  "h": "f4268c8aaa",
+  "note": "Defending champions, plural, the way fans and FIFA say it and how the deck says Five-time champions Brazil and Two-time champions Uruguay",
+  "v": "fix"
+ },
+ "wc26:10": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "ced41f4901",
+  "note": "Logical twin of wc26:52: the only goal of the final means 1–0 (the means lines already tie them)",
+  "v": "ok"
+ },
+ "wc26:11": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "b1037d43e8",
+  "v": "ok"
+ },
+ "wc26:12": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "2b90794c38",
+  "note": "Same fact as legends:35 and awards:55 (22 goals). Keep one copy",
+  "v": "ok"
+ },
+ "wc26:13": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "e21db18e72",
+  "v": "ok"
+ },
+ "wc26:14": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "19c4ef0539",
+  "note": "Same fact as legends:3, word for word. Keep one copy, this deck owns 2026 facts",
+  "v": "ok"
+ },
+ "wc26:15": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "a2834a265e",
+  "v": "ok"
+ },
+ "wc26:16": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "9c97c797e8",
+  "v": "ok"
+ },
+ "wc26:17": {
+  "at": "2026-10-17T00:04:39Z",
+  "fix": {
+   "d": 2
+  },
+  "h": "199d9dac12",
+  "note": "Plays yellow, not red: next to two of Haaland, Messi, Mbappé, Saka or Kane, any regular fan picks the deep-lying midfielder Rodri",
+  "v": "fix"
+ },
+ "wc26:18": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "d52b00564a",
+  "v": "ok"
+ },
+ "wc26:19": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "69372ab769",
+  "note": "Every other player answer is a famous outfield player, so “Curaçao goalkeeper … made 16 saves” gives Eloy Room away to any fan. The player kind has no second keeper to make it fair",
+  "v": "cut"
+ },
+ "wc26:2": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "325816302e",
+  "v": "ok"
+ },
+ "wc26:20": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "27359d0c01",
+  "note": "Shares the oldest coach hook with wc26:26, which keeps the two apart",
+  "v": "ok"
+ },
+ "wc26:21": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "96b077311a",
+  "v": "ok"
+ },
+ "wc26:22": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "c5ce09059d",
+  "v": "ok"
+ },
+ "wc26:23": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "0f52215033",
+  "v": "ok"
+ },
+ "wc26:24": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "12b29ac54c",
+  "v": "ok"
+ },
+ "wc26:25": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "5bdd2c9034",
+  "v": "ok"
+ },
+ "wc26:26": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "9205ce421f",
+  "v": "ok"
+ },
+ "wc26:27": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "78f615d70a",
+  "v": "ok"
+ },
+ "wc26:28": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "745d98b67c",
+  "v": "ok"
+ },
+ "wc26:29": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "c6d16dca10",
+  "v": "ok"
+ },
+ "wc26:3": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "71a80521d1",
+  "note": "Five-time champions is the clue a new parent can lean on, so white is fair",
+  "v": "ok"
+ },
+ "wc26:30": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "eeba4d9dce",
+  "v": "ok"
+ },
+ "wc26:31": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "0203b1eb3b",
+  "note": "Twin of wc26:32 (the other semifinal city) and wc26:55 (same match). Dallas hosting nine games is not in the fifa.com text I hold, fact checker to confirm",
+  "v": "ok"
+ },
+ "wc26:32": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "226fc543e2",
+  "note": "Twin of wc26:31 and wc26:61 (same semifinal)",
+  "v": "ok"
+ },
+ "wc26:33": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "47d70f1006",
+  "note": "Same fact as awards:2 (Rodri, Golden Ball 2026)",
+  "v": "ok"
+ },
+ "wc26:34": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "b1bf31482f",
+  "note": "Same fact as awards:1 and awards:63",
+  "v": "ok"
+ },
+ "wc26:35": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "7eb0b2ef92",
+  "note": "Same fact as awards:26 and awards:60",
+  "v": "ok"
+ },
+ "wc26:36": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "e7db8fccf7",
+  "note": "Same fact as awards:68, word for word nearly. Keep one copy",
+  "v": "ok"
+ },
+ "wc26:37": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "2adcf645f3",
+  "v": "ok"
+ },
+ "wc26:38": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "2d844fc7e0",
+  "v": "ok"
+ },
+ "wc26:39": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "ece871ca33",
+  "v": "ok"
+ },
+ "wc26:4": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "0f762af968",
+  "note": "Decoys are never co-hosts, so it plays as a gimme, which is fine at white",
+  "v": "ok"
+ },
+ "wc26:40": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "19aa76965c",
+  "note": "Twin of intl-men:6, intl-men:44 and intl-men:52 (Spain 2010)",
+  "v": "ok"
+ },
+ "wc26:41": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "08d52d79d1",
+  "note": "Decoys are never Women’s World Cup years, so a fan who knows they fall in odd years gets it free. Twin of awards:42 and intl-women:4",
+  "v": "ok"
+ },
+ "wc26:42": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "0aec5bb579",
+  "note": "Twin of intl-men:3 and intl-men:34 (England 1966)",
+  "v": "ok"
+ },
+ "wc26:43": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "e9b6e2b3df",
+  "v": "ok"
+ },
+ "wc26:44": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "677e53b4c6",
+  "note": "Twin of intl-men:45 (Azteca, 1970 final)",
+  "v": "ok"
+ },
+ "wc26:45": {
+  "at": "2026-10-17T00:04:39Z",
+  "fix": {
+   "groups": [
+    [
+     "3",
+     "48"
+    ],
+    [
+     "6",
+     "48"
+    ],
+    [
+     "16",
+     "104"
+    ],
+    [
+     "3",
+     "104"
+    ],
+    [
+     "6",
+     "104"
+    ],
+    [
+     "3",
+     "34"
+    ],
+    [
+     "6",
+     "34"
+    ]
+   ]
+  },
+  "h": "280423c373",
+  "note": "The number cards draw decoys of the wrong size (Seattle hosted 104 matches, 3 teams at the first 48-team World Cup), so most draws play as gimmes. These groups keep each card to believable numbers: 48 teams vs 16, 34, 104, 16 cities vs 3, 6, 34, 48, 3 countries vs 6, 16, 104 matches vs 34, 48, Messi’s 34 games vs 16, 48, 104, Seattle’s 6 vs 3, 16. Assumes wc26:51 (1,248) is cut",
+  "v": "fix"
+ },
+ "wc26:46": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "769a5d1bf7",
+  "v": "ok"
+ },
+ "wc26:47": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "39c1f29055",
+  "v": "ok"
+ },
+ "wc26:48": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "80e8d5f15b",
+  "v": "ok"
+ },
+ "wc26:49": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "4ade512b3f",
+  "note": "Same fact as legends:34 (34 games), shared answer keeps them apart. Keep one copy",
+  "v": "ok"
+ },
+ "wc26:5": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "3edf30e60c",
+  "v": "ok"
+ },
+ "wc26:50": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "9a7d98bec5",
+  "v": "ok"
+ },
+ "wc26:51": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "c1b5c61a06",
+  "note": "Every decoy (3, 6, 16, 34, 48, 104) is far too small for a total of squad players, so it plays as a gimme, and the fact is arithmetic (26 × 48) more than soccer",
+  "v": "cut"
+ },
+ "wc26:52": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "9267550ada",
+  "v": "ok"
+ },
+ "wc26:53": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "e4e06ff627",
+  "note": "Twin cluster on the bronze final: wc26:15, 22, 30, 62",
+  "v": "ok"
+ },
+ "wc26:54": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "5c5becb56d",
+  "v": "ok"
+ },
+ "wc26:55": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "3cfcab03dc",
+  "v": "ok"
+ },
+ "wc26:56": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "76341eee7e",
+  "v": "ok"
+ },
+ "wc26:57": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "172f0819cc",
+  "note": "Borderline for red: a group game score, but FIFA calls it one of the games of the tournament and the wording doesn’t tip that it was a draw",
+  "v": "ok"
+ },
+ "wc26:58": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "a21431ad1e",
+  "v": "ok"
+ },
+ "wc26:59": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "a478c9d229",
+  "v": "ok"
+ },
+ "wc26:6": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "f687b03edf",
+  "v": "ok"
+ },
+ "wc26:60": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "4b49e871bf",
+  "v": "ok"
+ },
+ "wc26:61": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "32bbfabf0c",
+  "v": "ok"
+ },
+ "wc26:62": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "d55800901e",
+  "v": "ok"
+ },
+ "wc26:63": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "5f03c5c681",
+  "v": "ok"
+ },
+ "wc26:64": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "d2a0720619",
+  "v": "ok"
+ },
+ "wc26:65": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "0ef995d541",
+  "v": "ok"
+ },
+ "wc26:66": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "47646e3512",
+  "v": "ok"
+ },
+ "wc26:67": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "c9dda59f4f",
+  "note": "Same card as intl-men:56 (Three Lions), which owns national team nicknames. Not a 2026 fact. Cutting it also clears an odd decoy for the mascot cards",
+  "v": "cut"
+ },
+ "wc26:68": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "57c0e356d6",
+  "note": "Same card as intl-men:57 (La Roja), which owns national team nicknames. Not a 2026 fact",
+  "v": "cut"
+ },
+ "wc26:69": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "500b3141b0",
+  "v": "ok"
+ },
+ "wc26:7": {
+  "at": "2026-10-17T00:04:39Z",
+  "fix": {
+   "ex": "Cabo Verde were the only team to keep Spain from scoring"
+  },
+  "h": "c724f4f483",
+  "note": "Newcomers gives it away: every decoy (Argentina, Brazil, England, Mexico, USA) is a long-time World Cup team. Without it the player has to remember the 0–0 shock",
+  "v": "fix"
+ },
+ "wc26:70": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "d2b2d18d34",
+  "note": "Gimme and twin: the only ball name among mascots, and “Final” in the answer matches “the last four games.” wc26:69 already covers the Trionda",
+  "v": "cut"
+ },
+ "wc26:8": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "17abf45f87",
+  "note": "Decoys are always Spain, Argentina, Brazil and England, so it plays as a gimme, fine at white",
+  "v": "ok"
+ },
+ "wc26:9": {
+  "at": "2026-10-17T00:04:39Z",
+  "h": "8ea2d0fcf4",
   "v": "ok"
  }
 }

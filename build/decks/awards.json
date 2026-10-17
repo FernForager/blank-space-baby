@@ -21,7 +21,9 @@
       "hook": "Golden Boot",
       "k": "wc",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/fifa-world-cup-all-time-leading-scorers",
-      "d": 2
+      "d": 2,
+      "out": true,
+      "out_why": "Same fact as wc26:34, which keeps it (cross-deck twins, soccer expert)"
     },
     {
       "w": "Rodri",
@@ -30,7 +32,9 @@
       "hook": "Golden Ball",
       "k": "wc",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/overall-tournament-review-spain-argentina",
-      "d": 2
+      "d": 2,
+      "out": true,
+      "out_why": "Same fact as wc26:33, which keeps it (cross-deck twins, soccer expert)"
     },
     {
       "w": "Paolo Rossi",
@@ -235,7 +239,7 @@
       "means": "He won it in 2022 and 2024",
       "ex": "Emiliano Martínez was the first to win The Best Men’s Goalkeeper award twice",
       "hook": "Goalkeeper",
-      "k": "best",
+      "k": "keeper",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
       "d": 2
     },
@@ -244,7 +248,7 @@
       "means": "A Champions League final shutout",
       "ex": "Donnarumma won The Best Men’s Goalkeeper award for 2025",
       "hook": "Goalkeeper",
-      "k": "best",
+      "k": "keeper",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
       "d": 2
     },
@@ -253,16 +257,18 @@
       "means": "Spain let in just one goal",
       "ex": "Unai Simón won the Golden Glove at the 2026 World Cup",
       "hook": "Golden Glove",
-      "k": "best",
+      "k": "keeper",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/overall-tournament-review-spain-argentina",
-      "d": 2
+      "d": 2,
+      "out": true,
+      "out_why": "Same fact as wc26:35, which keeps it (cross-deck twins, soccer expert)"
     },
     {
       "w": "Manuel Neuer",
       "means": "Germany won that World Cup",
       "ex": "Manuel Neuer won the Golden Glove at the 2014 World Cup",
       "hook": "Golden Glove",
-      "k": "best",
+      "k": "keeper",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/messi-golden-ball-record",
       "d": 2
     },
@@ -287,16 +293,16 @@
     },
     {
       "w": "Carlo Ancelotti",
-      "means": "Real Madrid won Europe again",
-      "ex": "Carlo Ancelotti won The Best FIFA Men’s Coach award for 2024",
-      "hook": "Men’s Coach",
+      "means": "Xabi Alonso finished second",
+      "ex": "Carlo Ancelotti won The Best Men’s Coach award for 2024 at Real Madrid",
+      "hook": "Real Madrid",
       "k": "coach",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
       "d": 2
     },
     {
       "w": "Lionel Scaloni",
-      "means": "Argentina won the 2022 World Cup",
+      "means": "Carlo Ancelotti was runner-up",
       "ex": "Lionel Scaloni won The Best Men’s Coach award for 2022",
       "hook": "Men’s Coach",
       "k": "coach",
@@ -306,8 +312,8 @@
     {
       "w": "Jürgen Klopp",
       "means": "Hansi Flick was second in 2020",
-      "ex": "Jürgen Klopp won The Best Men’s Coach award in 2019 and 2020",
-      "hook": "Men’s Coach",
+      "ex": "Jürgen Klopp won The Best Men’s Coach award in 2019 and 2020 at Liverpool",
+      "hook": "Liverpool",
       "k": "coach",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
       "d": 2
@@ -334,8 +340,8 @@
     {
       "w": "Pep Guardiola",
       "means": "City won a historic treble",
-      "ex": "Pep Guardiola won The Best Men’s Coach award for 2023",
-      "hook": "Men’s Coach",
+      "ex": "Pep Guardiola won The Best Men’s Coach award for 2023 at Man City",
+      "hook": "Man City",
       "k": "coach",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
       "d": 2
@@ -353,7 +359,7 @@
       "w": "Marcin Oleksy",
       "means": "A star of amputee soccer",
       "ex": "Marcin Oleksy won the 2022 FIFA Puskás Award with a scissor kick",
-      "hook": "Puskás Award",
+      "hook": "scissor kick",
       "k": "goal",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
       "d": 3
@@ -429,7 +435,9 @@
       "hook": "France",
       "k": "team",
       "src": "https://www.fifa.com/en/articles/world-cup-2022-qatar-france-mbappe-argentina-return",
-      "d": 2
+      "d": 2,
+      "out": true,
+      "out_why": "Same fact as intl-men:1, which keeps it (cross-deck twins, soccer expert)"
     },
     {
       "w": "England",
@@ -448,7 +456,9 @@
       "hook": "Fan Award",
       "k": "team",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
-      "d": 3
+      "d": 3,
+      "out": true,
+      "out_why": "Obscure, not deep: almost no fan anywhere knows the 2025 Fan Award went to an Iraqi club, so it plays as a blind guess that can end a run (soccer expert)"
     },
     {
       "w": "Brazil",
@@ -522,7 +532,9 @@
       "k": "num",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/fontaine-mbappe-ronaldo-and-more-every-world-cup-top-scorer",
       "d": 2,
-      "current": true
+      "current": true,
+      "out": true,
+      "out_why": "Same fact as legends:35, which keeps it (cross-deck twins, soccer expert)"
     },
     {
       "w": "3",
@@ -574,7 +586,9 @@
       "k": "count",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/unai-simon-adidas-golden-glove",
       "d": 2,
-      "current": true
+      "current": true,
+      "out": true,
+      "out_why": "Same fact as wc26:35, which keeps it (cross-deck twins, soccer expert)"
     },
     {
       "w": "8",
@@ -611,7 +625,9 @@
       "k": "award",
       "src": "https://www.fifa.com/en/tournaments/womens/womensworldcup/australia-new-zealand2023/articles/fifa-womens-world-cup-awards-2023-all-the-winners",
       "d": 2,
-      "women": true
+      "women": true,
+      "out": true,
+      "out_why": "Same fact as intl-women:53, which keeps it (cross-deck twins, soccer expert)"
     },
     {
       "w": "Golden Glove",
@@ -621,7 +637,9 @@
       "k": "award",
       "src": "https://www.fifa.com/en/tournaments/womens/womensworldcup/australia-new-zealand2023/articles/fifa-womens-world-cup-awards-2023-all-the-winners",
       "d": 2,
-      "women": true
+      "women": true,
+      "out": true,
+      "out_why": "Same fact as intl-women:55, which keeps it (cross-deck twins, soccer expert)"
     },
     {
       "w": "Golden Boot",
@@ -648,7 +666,9 @@
       "hook": "Cubarsí",
       "k": "award",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/overall-tournament-review-spain-argentina",
-      "d": 2
+      "d": 2,
+      "out": true,
+      "out_why": "Same fact as wc26:36, which keeps it (cross-deck twins, soccer expert)"
     },
     {
       "w": "Puskás Award",
@@ -698,19 +718,6 @@
       "Silver Ball"
     ],
     [
-      "Paolo Rossi",
-      "Mario Kempes"
-    ],
-    [
-      "James Rodríguez",
-      "Gary Lineker",
-      "Mario Kempes"
-    ],
-    [
-      "Messi",
-      "Rodri"
-    ],
-    [
       "Romário",
       "Ronaldinho",
       "Kaká"
@@ -723,19 +730,6 @@
       "Carli Lloyd",
       "Megan Rapinoe",
       "Mia Hamm"
-    ],
-    [
-      "Mary Earps",
-      "Hannah Hampton"
-    ],
-    [
-      "Emiliano Martínez",
-      "Manuel Neuer",
-      "Unai Simón"
-    ],
-    [
-      "Sarina Wiegman",
-      "Emma Hayes"
     ],
     [
       "Lionel Scaloni",
@@ -775,20 +769,8 @@
       "1986"
     ],
     [
-      "5",
-      "6"
-    ],
-    [
-      "8",
-      "10"
-    ],
-    [
       "7",
       "8"
-    ],
-    [
-      "11",
-      "13"
     ],
     [
       "Golden Ball",

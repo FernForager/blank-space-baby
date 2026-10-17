@@ -30,7 +30,9 @@
       "k": "player",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/lionel-messi-argentina-stats-records",
       "d": 2,
-      "current": true
+      "current": true,
+      "out": true,
+      "out_why": "Same fact as awards:0, which keeps it (cross-deck twins, soccer expert)"
     },
     {
       "w": "Cristiano Ronaldo",
@@ -39,7 +41,9 @@
       "hook": "World Cups",
       "k": "player",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/cristiano-ronaldo-portugal-goal-record",
-      "d": 1
+      "d": 1,
+      "out": true,
+      "out_why": "Same fact as wc26:14, which keeps it (cross-deck twins, soccer expert)"
     },
     {
       "w": "Zinedine Zidane",
@@ -85,7 +89,9 @@
       "k": "woman",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2024/articles/marta-award-nominees",
       "d": 2,
-      "women": true
+      "women": true,
+      "out": true,
+      "out_why": "Same fact as intl-women:60, which keeps it (cross-deck twins, soccer expert)"
     },
     {
       "w": "Oliver Kahn",
@@ -113,7 +119,9 @@
       "hook": "Golden Boot",
       "k": "player",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/gary-lineker-england-goals-1986",
-      "d": 3
+      "d": 3,
+      "out": true,
+      "out_why": "Same fact as awards:6, which keeps it (cross-deck twins, soccer expert)"
     },
     {
       "w": "Luka Modrić",
@@ -187,7 +195,9 @@
       "k": "woman",
       "src": "https://www.fifa.com/en/tournaments/womens/womensworldcup/australia-new-zealand2023/articles/megan-rapinoe-usa-golden-ball-world-cup-australia-new-zealand-countdown",
       "d": 2,
-      "women": true
+      "women": true,
+      "out": true,
+      "out_why": "Same fact as intl-women:14, which keeps it (cross-deck twins, soccer expert)"
     },
     {
       "w": "Mia Hamm",
@@ -217,7 +227,9 @@
       "k": "woman",
       "src": "https://www.fifa.com/en/tournaments/womens/womensworldcup/fifa-womens-world-cup-canada-2015/articles/carli-lloyd-usa-goal-final",
       "d": 2,
-      "women": true
+      "women": true,
+      "out": true,
+      "out_why": "Same fact as intl-women:57, which keeps it (cross-deck twins, soccer expert)"
     },
     {
       "w": "Abby Wambach",
@@ -246,7 +258,9 @@
       "hook": "World Player",
       "k": "player",
       "src": "https://www.fifa.com/en/tournaments/mens/club-world-cup/usa-2025/articles/kaka-interview-club-world-cup-ac-milan-real-madrid",
-      "d": 3
+      "d": 3,
+      "out": true,
+      "out_why": "Same fact as awards:9, which keeps it (cross-deck twins, soccer expert)"
     },
     {
       "w": "Cafu",
@@ -287,7 +301,9 @@
       "src": "https://www.fifa.com/en/tournaments/womens/womensworldcup/brazil-2027/articles/lilly-sinclair-lloyd-pearce-record",
       "d": 2,
       "women": true,
-      "current": true
+      "current": true,
+      "out": true,
+      "out_why": "Plays trivially: every decoy is 13–49, so “world-record ___ games” can only be 354 (soccer expert)"
     },
     {
       "w": "42",
@@ -336,7 +352,9 @@
       "k": "number",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/players-most-appearances-games-matches-history",
       "d": 3,
-      "current": true
+      "current": true,
+      "out": true,
+      "out_why": "Same fact as wc26:49, which keeps it (cross-deck twins, soccer expert)"
     },
     {
       "w": "22",
@@ -439,7 +457,7 @@
       "hook": "Chilavert",
       "k": "nation",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/jose-luis-chilavert-paraguay-goalkeeper-free-kick-2002",
-      "d": 2
+      "d": 3
     },
     {
       "w": "Iran",
@@ -565,7 +583,7 @@
       "hook": "Sinclair",
       "k": "club",
       "src": "https://www.fifa.com/fr/articles/christine-sinclair-canada-retraite-portland",
-      "d": 2,
+      "d": 1,
       "women": true
     },
     {
@@ -603,7 +621,9 @@
       "hook": "Beckenbauer",
       "k": "nickname",
       "src": "https://www.fifa.com/en/news/articles/franz-beckenbauer-obituary-germany",
-      "d": 2
+      "d": 2,
+      "out": true,
+      "out_why": "Same fact as bundesliga:42, which keeps it (cross-deck twins, soccer expert)"
     },
     {
       "w": "Black Spider",
@@ -667,7 +687,9 @@
       "hook": "Gerd Müller",
       "k": "nickname",
       "src": "https://www.fifa.com/en/articles/100-great-world-cup-moments-qatar-2022-17-gerd-muller-west-germany-final-goal-1974",
-      "d": 2
+      "d": 2,
+      "out": true,
+      "out_why": "Same fact as bundesliga:43, which keeps it (cross-deck twins, soccer expert)"
     },
     {
       "w": "La Pulga Atómica",
@@ -730,11 +752,6 @@
     [
       "Miroslav Klose",
       "Cafu"
-    ],
-    [
-      "13",
-      "17",
-      "22"
     ],
     [
       "40",

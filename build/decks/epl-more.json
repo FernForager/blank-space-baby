@@ -28,7 +28,7 @@
       "ex": "Mohamed Salah had 29 goals and 18 assists for Liverpool in 2024–25",
       "hook": "Liverpool",
       "k": "player",
-      "src": "https://www.premierleague.com/en/stats/records",
+      "src": "https://www.premierleague.com/news/4298728",
       "d": 2
     },
     {
@@ -146,7 +146,7 @@
       "hook": "Vidić",
       "k": "player",
       "src": "https://www.premierleague.com/en/stats/records",
-      "d": 1
+      "d": 2
     },
     {
       "w": "Son Heung-min",
@@ -285,11 +285,11 @@
     },
     {
       "w": "Sam Allardyce",
-      "means": "A record, from Bolton to Leeds",
-      "ex": "Sam Allardyce managed nine different Premier League clubs",
-      "hook": "nine",
+      "means": "The most of any manager",
+      "ex": "Sam Allardyce managed nine Premier League clubs, from Bolton to Leeds",
+      "hook": "Bolton",
       "k": "manager",
-      "src": "https://www.premierleague.com/en/stats/records",
+      "src": "https://www.premierleague.com/news/662065",
       "d": 2
     },
     {
@@ -387,7 +387,7 @@
       "means": "A loss earns nothing",
       "ex": "A win is worth 3 points, and a draw is worth 1",
       "hook": "draw",
-      "k": "number",
+      "k": "count",
       "src": "https://www.premierleague.com/en/premier-league-explained",
       "d": 1
     },
@@ -396,7 +396,7 @@
       "means": "Most ever without winning the title",
       "ex": "Liverpool earned 97 points in 2018–19 and still missed the title",
       "hook": "Liverpool",
-      "k": "number",
+      "k": "record",
       "src": "https://www.premierleague.com/en/stats/records",
       "d": 2
     },
@@ -405,7 +405,7 @@
       "means": "Plus a record 25 clean sheets",
       "ex": "Chelsea conceded just 15 league goals in 2004–05",
       "hook": "Chelsea",
-      "k": "number",
+      "k": "count",
       "src": "https://www.premierleague.com/en/stats/records",
       "d": 2
     },
@@ -414,7 +414,7 @@
       "means": "Like Arsenal, Chelsea, and Liverpool",
       "ex": "Everton are one of 6 clubs to have played every Premier League season",
       "hook": "Everton",
-      "k": "number",
+      "k": "count",
       "src": "https://www.premierleague.com/en/premier-league-explained",
       "d": 2,
       "current": true
@@ -424,7 +424,7 @@
       "means": "Most recently Arsenal, in 2025–26",
       "ex": "Since 1992, 7 different clubs have won the title",
       "hook": "since 1992",
-      "k": "number",
+      "k": "count",
       "src": "https://www.premierleague.com/en/premier-league-explained",
       "d": 2,
       "current": true
@@ -434,7 +434,7 @@
       "means": "A Premier League record",
       "ex": "Chelsea went 86 home league games unbeaten from 2004 to 2008",
       "hook": "unbeaten",
-      "k": "number",
+      "k": "record",
       "src": "https://www.premierleague.com/en/stats/records",
       "d": 2
     },
@@ -443,7 +443,7 @@
       "means": "A single-season record",
       "ex": "Man City scored 106 league goals in 2017–18",
       "hook": "Man City",
-      "k": "number",
+      "k": "record",
       "src": "https://www.premierleague.com/en/stats/records",
       "d": 2
     },
@@ -452,7 +452,7 @@
       "means": "Founded by munitions workers",
       "ex": "Arsenal were founded in 1886",
       "hook": "Arsenal",
-      "k": "year",
+      "k": "early year",
       "src": "https://www.premierleague.com/en/news/4592046/what-is-the-history-behind-every-premier-league-clubs-name",
       "d": 3
     },
@@ -461,7 +461,7 @@
       "means": "Stands honor Ferguson and Charlton",
       "ex": "Man United have played at Old Trafford since 1910",
       "hook": "Old Trafford",
-      "k": "year",
+      "k": "early year",
       "src": "https://www.premierleague.com/en/news/4725666/all-you-need-to-know-about-the-20-premier-league-stadiums",
       "d": 3
     },
@@ -470,7 +470,7 @@
       "means": "Replacing the disbanded Leeds City",
       "ex": "Leeds United were founded in 1919",
       "hook": "Leeds",
-      "k": "year",
+      "k": "early year",
       "src": "https://www.premierleague.com/en/news/4592046/what-is-the-history-behind-every-premier-league-clubs-name",
       "d": 3
     },
@@ -479,7 +479,7 @@
       "means": "Their old home was Withdean Stadium",
       "ex": "Brighton moved into the Amex in 2011",
       "hook": "Brighton",
-      "k": "year",
+      "k": "recent year",
       "src": "https://www.premierleague.com/en/news/4725666/all-you-need-to-know-about-the-20-premier-league-stadiums",
       "d": 2
     },
@@ -488,7 +488,7 @@
       "means": "Built on the site of an old coal mine",
       "ex": "Sunderland moved into the Stadium of Light in 1997",
       "hook": "Sunderland",
-      "k": "year",
+      "k": "recent year",
       "src": "https://www.premierleague.com/en/news/4725666/all-you-need-to-know-about-the-20-premier-league-stadiums",
       "d": 2
     },
@@ -497,7 +497,7 @@
       "means": "After 110 league games for them",
       "ex": "Mikel Arteta retired as an Arsenal player in 2016",
       "hook": "Arteta",
-      "k": "year",
+      "k": "recent year",
       "src": "https://www.premierleague.com/en/news/4660971/every-premier-league-title-winning-manager-in-history",
       "d": 2
     },
@@ -562,7 +562,9 @@
       "hook": "Brentford",
       "k": "nickname",
       "src": "https://www.premierleague.com/en/news/4592046/what-is-the-history-behind-every-premier-league-clubs-name",
-      "d": 2
+      "d": 2,
+      "out": true,
+      "out_why": "Same fact as nicknames:3 (Brentford the Bees), which tells it better (soccer expert)"
     },
     {
       "w": "Irons",
@@ -571,7 +573,9 @@
       "hook": "West Ham",
       "k": "nickname",
       "src": "https://www.premierleague.com/en/news/4592046/what-is-the-history-behind-every-premier-league-clubs-name",
-      "d": 2
+      "d": 2,
+      "out": true,
+      "out_why": "Same fact as nicknames:10 (West Ham the Irons, shipbuilding roots), which tells it better (soccer expert)"
     },
     {
       "w": "Clarets",
@@ -580,7 +584,9 @@
       "hook": "Burnley",
       "k": "nickname",
       "src": "https://www.premierleague.com/en/news/4592046/what-is-the-history-behind-every-premier-league-clubs-name",
-      "d": 2
+      "d": 2,
+      "out": true,
+      "out_why": "Same fact as nicknames:7 (Burnley the Clarets, from their shirt color), which tells it better (soccer expert)"
     },
     {
       "w": "Tigers",
@@ -589,7 +595,9 @@
       "hook": "Hull City",
       "k": "nickname",
       "src": "https://www.premierleague.com/en/news/4664386/all-you-need-to-know-as-hull-city-are-promoted-to-premier-league",
-      "d": 2
+      "d": 2,
+      "out": true,
+      "out_why": "Given away by nicknames:34 (the tiger on Hull City’s badge, means: for their nickname, the Tigers) (soccer expert)"
     },
     {
       "w": "Sky Blues",
@@ -598,7 +606,9 @@
       "hook": "Coventry",
       "k": "nickname",
       "src": "https://www.premierleague.com/en/news/4625396/all-you-need-to-know-as-coventry-city-make-premier-league-return",
-      "d": 2
+      "d": 2,
+      "out": true,
+      "out_why": "Same fact as nicknames:11 (Coventry the Sky Blues, Jimmy Hill’s colors), which tells it better (soccer expert)"
     },
     {
       "w": "Saints",
@@ -607,7 +617,9 @@
       "hook": "Fulham",
       "k": "nickname",
       "src": "https://www.premierleague.com/en/news/4592046/what-is-the-history-behind-every-premier-league-clubs-name",
-      "d": 3
+      "d": 3,
+      "out": true,
+      "out_why": "Same fact as nicknames:9 (Fulham were first known as the Saints) (soccer expert)"
     }
   ],
   "groups": [
@@ -708,11 +720,6 @@
       "Selhurst Park",
       "Villa Park",
       "Portman Road"
-    ],
-    [
-      "1997",
-      "2011",
-      "2016"
     ],
     [
       "Newton Heath",

@@ -247,7 +247,7 @@
   {
    "w": "St James’ Park",
    "means": "Newcastle’s home since 1892",
-   "ex": "Newcastle’s St James’ Park sits right in the city center",
+   "ex": "Newcastle’s St James’ Park sits close to the city center",
    "hook": "Newcastle",
    "k": "stadium",
    "src": "https://www.premierleague.com/en/news/4725666/all-you-need-to-know-about-the-20-premier-league-stadiums",
@@ -314,7 +314,9 @@
    "hook": "Arsenal",
    "k": "nickname",
    "src": "https://www.premierleague.com/en/news/4592046/what-is-the-history-behind-every-premier-league-clubs-name",
-   "d": 1
+   "d": 1,
+   "out": true,
+   "out_why": "Same fact as nicknames:0, which keeps it (cross-deck twins, soccer expert)"
   },
   {
    "w": "Toffees",
@@ -323,7 +325,9 @@
    "hook": "Everton",
    "k": "nickname",
    "src": "https://www.premierleague.com/en/news/4592046/what-is-the-history-behind-every-premier-league-clubs-name",
-   "d": 2
+   "d": 2,
+   "out": true,
+   "out_why": "Moved to nicknames:65, the deck for club nicknames"
   },
   {
    "w": "Magpies",
@@ -332,7 +336,9 @@
    "hook": "Newcastle",
    "k": "nickname",
    "src": "https://www.premierleague.com/en/news/4489927/woltemade-own-goal-earns-sunderland-tyne-wear-derby-win",
-   "d": 2
+   "d": 2,
+   "out": true,
+   "out_why": "Moved to nicknames:66, the deck for club nicknames"
   },
   {
    "w": "Black Cats",
@@ -341,7 +347,9 @@
    "hook": "Sunderland",
    "k": "nickname",
    "src": "https://www.premierleague.com/en/news/4489927/woltemade-own-goal-earns-sunderland-tyne-wear-derby-win",
-   "d": 2
+   "d": 2,
+   "out": true,
+   "out_why": "Same fact as nicknames:5, which keeps it (cross-deck twins, soccer expert)"
   },
   {
    "w": "Cherries",
@@ -350,7 +358,9 @@
    "hook": "Bournemouth",
    "k": "nickname",
    "src": "https://www.premierleague.com/en/news/4592046/what-is-the-history-behind-every-premier-league-clubs-name",
-   "d": 2
+   "d": 2,
+   "out": true,
+   "out_why": "Same fact as nicknames:6, which keeps it (cross-deck twins, soccer expert)"
   },
   {
    "w": "Eagles",
@@ -359,7 +369,9 @@
    "hook": "Palace",
    "k": "nickname",
    "src": "https://www.premierleague.com/en/news/4592046/what-is-the-history-behind-every-premier-league-clubs-name",
-   "d": 2
+   "d": 2,
+   "out": true,
+   "out_why": "Same fact as nicknames:4, which keeps it (cross-deck twins, soccer expert)"
   },
   {
    "w": "Tractor Boys",
@@ -368,11 +380,13 @@
    "hook": "Ipswich",
    "k": "nickname",
    "src": "https://www.premierleague.com/en/news/4644752/all-you-need-to-know-as-ipswich-town-are-promoted-to-the-premier-league",
-   "d": 2
+   "d": 2,
+   "out": true,
+   "out_why": "Same fact as nicknames:12, which keeps it (cross-deck twins, soccer expert)"
   },
   {
    "w": "Alex Ferguson",
-   "means": "He managed the club from 1986 to 2013",
+   "means": "2012–13 was his last season in charge",
    "ex": "Alex Ferguson won a record 13 Premier League titles with Man United",
    "hook": "Man United",
    "k": "manager",
