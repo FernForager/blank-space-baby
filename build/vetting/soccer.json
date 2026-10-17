@@ -2328,6 +2328,410 @@
   "note": "Decoy fix rides on intl-men:8 groups",
   "v": "ok"
  },
+ "ligamx:0": {
+  "at": "2026-10-17T00:01:31Z",
+  "fix": {
+   "ex": "América won the first three-peat of the short-tournament era",
+   "hook": "three-peat"
+  },
+  "h": "4e502ae557",
+  "note": "“In a row” is an empty tile. Fans call it a three-peat (tricampeonato), and the hook should say so",
+  "v": "fix"
+ },
+ "ligamx:1": {
+  "at": "2026-10-17T00:01:31Z",
+  "fix": {
+   "means": "One of Mexico’s biggest games"
+  },
+  "h": "807f4e3733",
+  "note": "Means gave away ligamx:49 (1959), which can share a board with this card. New means is on 8050 (“más importantes y esperados”)",
+  "v": "fix"
+ },
+ "ligamx:10": {
+  "at": "2026-10-17T00:01:31Z",
+  "h": "8d4d01bbd8",
+  "note": "47622: first top-flight game since April 2014",
+  "v": "ok"
+ },
+ "ligamx:11": {
+  "at": "2026-10-17T00:01:31Z",
+  "h": "1daf5dd4ef",
+  "note": "Fans still say Azteca. The 88,084 capacity is on the club page but may predate the World Cup renovation, worth a look by the fact checker",
+  "v": "ok"
+ },
+ "ligamx:12": {
+  "at": "2026-10-17T00:01:31Z",
+  "h": "886a047eec",
+  "v": "ok"
+ },
+ "ligamx:13": {
+  "at": "2026-10-17T00:01:31Z",
+  "h": "6f2afd5165",
+  "v": "ok"
+ },
+ "ligamx:14": {
+  "at": "2026-10-17T00:01:31Z",
+  "h": "d7f7548f12",
+  "v": "ok"
+ },
+ "ligamx:15": {
+  "at": "2026-10-17T00:01:31Z",
+  "h": "13eaa84b6f",
+  "v": "ok"
+ },
+ "ligamx:16": {
+  "at": "2026-10-17T00:01:31Z",
+  "h": "ff51de17f8",
+  "v": "ok"
+ },
+ "ligamx:17": {
+  "at": "2026-10-17T00:01:31Z",
+  "h": "32ff54ca94",
+  "v": "ok"
+ },
+ "ligamx:18": {
+  "at": "2026-10-17T00:01:31Z",
+  "h": "6cbe51ccb4",
+  "v": "ok"
+ },
+ "ligamx:19": {
+  "at": "2026-10-17T00:01:31Z",
+  "h": "294f009ce3",
+  "v": "ok"
+ },
+ "ligamx:2": {
+  "at": "2026-10-17T00:01:31Z",
+  "fix": {
+   "means": "Their second title in a row"
+  },
+  "h": "f1fefb1e79",
+  "note": "Means gave away ligamx:53 (title number 12). The back-to-back (bicampeonato) is on 46917 and teaches more",
+  "v": "fix"
+ },
+ "ligamx:20": {
+  "at": "2026-10-17T00:01:31Z",
+  "h": "f117166ca6",
+  "v": "ok"
+ },
+ "ligamx:21": {
+  "at": "2026-10-17T00:01:31Z",
+  "fix": {
+   "means": "In the state of Nuevo León"
+  },
+  "h": "658cad6945",
+  "note": "Means named Estadio BBVA, the answer of ligamx:13, which can share a board with this card",
+  "v": "fix"
+ },
+ "ligamx:22": {
+  "at": "2026-10-17T00:01:31Z",
+  "h": "2038a22335",
+  "v": "ok"
+ },
+ "ligamx:23": {
+  "at": "2026-10-17T00:01:31Z",
+  "h": "51f9c6f86f",
+  "note": "Same fact as ligamx:32 turned around (Xolos and Tijuana), and the club’s own name, Club Tijuana, gives it away. Also shares the Xolos tile with ligamx:17",
+  "v": "cut"
+ },
+ "ligamx:24": {
+  "at": "2026-10-17T00:01:31Z",
+  "h": "c2bf011d94",
+  "v": "ok"
+ },
+ "ligamx:25": {
+  "at": "2026-10-17T00:01:31Z",
+  "h": "df7df19565",
+  "v": "ok"
+ },
+ "ligamx:26": {
+  "at": "2026-10-17T00:01:31Z",
+  "h": "ba1c3e1609",
+  "v": "ok"
+ },
+ "ligamx:27": {
+  "at": "2026-10-17T00:01:31Z",
+  "h": "6f0835bc8b",
+  "v": "ok"
+ },
+ "ligamx:28": {
+  "at": "2026-10-17T00:01:31Z",
+  "h": "9324e0057a",
+  "v": "ok"
+ },
+ "ligamx:29": {
+  "at": "2026-10-17T00:01:31Z",
+  "h": "80e1d45c4d",
+  "v": "ok"
+ },
+ "ligamx:3": {
+  "at": "2026-10-17T00:01:31Z",
+  "h": "c4c5b57989",
+  "note": "Near-twin of ligamx:38, 40, 54 (same final). The fix to 38 puts Cruz Azul in its sentence so the two never share a board",
+  "v": "ok"
+ },
+ "ligamx:30": {
+  "at": "2026-10-17T00:01:31Z",
+  "h": "2595f21bc7",
+  "v": "ok"
+ },
+ "ligamx:31": {
+  "at": "2026-10-17T00:01:31Z",
+  "h": "e37f2b4b79",
+  "v": "ok"
+ },
+ "ligamx:32": {
+  "at": "2026-10-17T00:01:31Z",
+  "h": "aa5b4184aa",
+  "note": "Near-twin of ligamx:23, which I cut",
+  "v": "ok"
+ },
+ "ligamx:33": {
+  "at": "2026-10-17T00:01:31Z",
+  "h": "9bb4f19942",
+  "note": "Nahuel Guzmán (a keeper) and Rotondi are weak decoys for every scoring card in the player kind. The deck has no better ones",
+  "v": "ok"
+ },
+ "ligamx:34": {
+  "at": "2026-10-17T00:01:31Z",
+  "h": "9214251e3e",
+  "v": "ok"
+ },
+ "ligamx:35": {
+  "at": "2026-10-17T00:01:31Z",
+  "h": "d6f3a3b765",
+  "v": "ok"
+ },
+ "ligamx:36": {
+  "at": "2026-10-17T00:01:31Z",
+  "h": "06474c8351",
+  "note": "Plays a bit easier than red when the weak decoys Rotondi and Nahuel Guzmán are drawn, still a real fan’s fact",
+  "v": "ok"
+ },
+ "ligamx:37": {
+  "at": "2026-10-17T00:01:31Z",
+  "fix": {
+   "hook": "Invierno 98"
+  },
+  "h": "a8a8e8b4dd",
+  "note": "Five cards use the América tile. Invierno 98 is in the sentence, specific and names the moment",
+  "v": "fix"
+ },
+ "ligamx:38": {
+  "at": "2026-10-17T00:01:31Z",
+  "fix": {
+   "ex": "Carlos Rotondi’s title winner for Cruz Azul at 90+5 is the latest ever in a final",
+   "means": "It won the Clausura 2026 final"
+  },
+  "h": "2b0d34daaa",
+  "note": "Means gave away ligamx:3 (Cruz Azul), which could share a board. Putting Cruz Azul in the sentence keeps them apart, and “latest ever” reads clearer than “latest”",
+  "v": "fix"
+ },
+ "ligamx:39": {
+  "at": "2026-10-17T00:01:31Z",
+  "h": "ee8cd584f8",
+  "note": "Record still shared at 18: Tigres weren’t in the Clausura 2026 final (Cruz Azul beat Pumas, 47571)",
+  "v": "ok"
+ },
+ "ligamx:4": {
+  "at": "2026-10-17T00:01:31Z",
+  "h": "777ebb65c0",
+  "v": "ok"
+ },
+ "ligamx:40": {
+  "at": "2026-10-17T00:01:31Z",
+  "fix": {
+   "ex": "Joel Huiqui won a title in his first tournament as head coach, in 2026",
+   "hook": "head coach",
+   "means": "Champion after just 7 games in charge"
+  },
+  "h": "b2d048fa1a",
+  "note": "“As a coach” is an empty tile, and the means gave away ligamx:3 (Cruz Azul). 47571: “con apenas siete partidos dirigidos”",
+  "v": "fix"
+ },
+ "ligamx:41": {
+  "at": "2026-10-17T00:01:31Z",
+  "fix": {
+   "means": "Tied for fourth-most by a coach"
+  },
+  "h": "b5e2cd149d",
+  "note": "Means gave away ligamx:2 (Toluca), which can share a board. 46917 says the fifth title tied him for fourth-most",
+  "v": "fix"
+ },
+ "ligamx:42": {
+  "at": "2026-10-17T00:01:31Z",
+  "h": "906e080ff1",
+  "v": "ok"
+ },
+ "ligamx:43": {
+  "at": "2026-10-17T00:01:31Z",
+  "h": "84a05bfd8e",
+  "v": "ok"
+ },
+ "ligamx:44": {
+  "at": "2026-10-17T00:01:31Z",
+  "h": "8dfc7e6f5c",
+  "note": "Few fans know Alberto Jorge, but Herrera and Lapuente are clearly wrong to a real fan, so it is gettable",
+  "v": "ok"
+ },
+ "ligamx:45": {
+  "at": "2026-10-17T00:01:31Z",
+  "h": "d0784fe8b3",
+  "v": "ok"
+ },
+ "ligamx:46": {
+  "at": "2026-10-17T00:01:31Z",
+  "h": "8c17ea6e55",
+  "v": "ok"
+ },
+ "ligamx:47": {
+  "at": "2026-10-17T00:01:31Z",
+  "h": "84cec404d0",
+  "v": "ok"
+ },
+ "ligamx:48": {
+  "at": "2026-10-17T00:01:31Z",
+  "h": "e85262501a",
+  "v": "ok"
+ },
+ "ligamx:49": {
+  "at": "2026-10-17T00:01:31Z",
+  "fix": {
+   "means": "It followed a taunt by América’s coach"
+  },
+  "h": "5fe2fadb6d",
+  "note": "Means gave away ligamx:1 (Chivas), which can share a board. 8050: América’s coach Fernando Marcos mocked the Chivas players",
+  "v": "fix"
+ },
+ "ligamx:5": {
+  "at": "2026-10-17T00:01:31Z",
+  "h": "b306ad9b6d",
+  "v": "ok"
+ },
+ "ligamx:50": {
+  "at": "2026-10-17T00:01:31Z",
+  "h": "5dd884c171",
+  "v": "ok"
+ },
+ "ligamx:51": {
+  "at": "2026-10-17T00:01:31Z",
+  "fix": {
+   "ex": "Before 2026, the record for Liga MX players at a World Cup was set in 1998"
+  },
+  "h": "0c1ff63623",
+  "note": "“League players” doesn’t say which league, and “the old record” reads oddly. Fans say it this way",
+  "v": "fix"
+ },
+ "ligamx:52": {
+  "at": "2026-10-17T00:01:31Z",
+  "h": "c19b76ba57",
+  "v": "ok"
+ },
+ "ligamx:53": {
+  "at": "2026-10-17T00:01:31Z",
+  "h": "80aae666ef",
+  "v": "ok"
+ },
+ "ligamx:54": {
+  "at": "2026-10-17T00:01:31Z",
+  "h": "be62838851",
+  "v": "ok"
+ },
+ "ligamx:55": {
+  "at": "2026-10-17T00:01:31Z",
+  "h": "0a2b8041d0",
+  "note": "Loses 26 as a decoy after the ligamx:57 group, still has 16, 12, 10 and 7",
+  "v": "ok"
+ },
+ "ligamx:56": {
+  "at": "2026-10-17T00:01:31Z",
+  "h": "b01c271d29",
+  "v": "ok"
+ },
+ "ligamx:57": {
+  "at": "2026-10-17T00:01:31Z",
+  "fix": {
+   "groups": [
+    [
+     "26",
+     "27"
+    ]
+   ]
+  },
+  "h": "df3b1336b0",
+  "note": "26 next to 27 is a coin flip even for a real fan, and 27 is in this card’s own means. Keep them off the same card",
+  "v": "fix"
+ },
+ "ligamx:58": {
+  "at": "2026-10-17T00:01:31Z",
+  "h": "48b065b727",
+  "v": "ok"
+ },
+ "ligamx:59": {
+  "at": "2026-10-17T00:01:31Z",
+  "h": "f16b911e2a",
+  "v": "ok"
+ },
+ "ligamx:6": {
+  "at": "2026-10-17T00:01:31Z",
+  "h": "888bcb53c3",
+  "note": "190 with Tigres is second for one club behind Cardozo (47228)",
+  "v": "ok"
+ },
+ "ligamx:60": {
+  "at": "2026-10-17T00:01:31Z",
+  "h": "7ef6e83b63",
+  "v": "ok"
+ },
+ "ligamx:61": {
+  "at": "2026-10-17T00:01:31Z",
+  "h": "95b7b4be16",
+  "v": "ok"
+ },
+ "ligamx:62": {
+  "at": "2026-10-17T00:01:31Z",
+  "h": "18c1a1a1c9",
+  "v": "ok"
+ },
+ "ligamx:63": {
+  "at": "2026-10-17T00:01:31Z",
+  "h": "1f74adff25",
+  "v": "ok"
+ },
+ "ligamx:64": {
+  "at": "2026-10-17T00:01:31Z",
+  "h": "24dd0bfda8",
+  "note": "Near-twin of ligamx:1 (its sentence names Chivas, so the draw keeps them apart)",
+  "v": "ok"
+ },
+ "ligamx:65": {
+  "at": "2026-10-17T00:01:31Z",
+  "h": "8694e995e8",
+  "v": "ok"
+ },
+ "ligamx:7": {
+  "at": "2026-10-17T00:01:31Z",
+  "fix": {
+   "means": "Tapatío means “from Guadalajara”"
+  },
+  "h": "a4d1ef1dd1",
+  "note": "Means gave away ligamx:48 (1916), which can share a board with this card. Explaining the name teaches more, like the Capitalino card",
+  "v": "fix"
+ },
+ "ligamx:8": {
+  "at": "2026-10-17T00:01:31Z",
+  "fix": {
+   "means": "Now third-most by anyone for one club"
+  },
+  "h": "5840937f63",
+  "note": "“Gignac passed him” doesn’t say in what. 47228: Cardozo 249, Gignac 190, Borgetti 189, all for one club",
+  "v": "fix"
+ },
+ "ligamx:9": {
+  "at": "2026-10-17T00:01:31Z",
+  "h": "5d786d5ef5",
+  "note": "Tile Guzmán is a different player from the ligamx:39 answer Nahuel Guzmán. Mild, acceptable",
+  "v": "ok"
+ },
  "ligue1:0": {
   "at": "2026-10-16T23:59:47Z",
   "h": "9972f1ed28",
