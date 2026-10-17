@@ -6,7 +6,7 @@
   "items": [
     {
       "w": "PSG",
-      "means": "Sealed with a 2–0 win at Lens",
+      "means": "The fifth came with a 2–0 win at Lens",
       "ex": "PSG won the league five seasons running, from 2021–22 to 2025–26",
       "hook": "five seasons",
       "k": "club",
@@ -47,7 +47,7 @@
     {
       "w": "Montpellier",
       "means": "Three points clear of PSG",
-      "ex": "When Montpellier won the 2011–12 title, owner Louis Nicollin got a fauxhawk",
+      "ex": "When Montpellier won the 2011–12 title, owner Louis Nicollin got a faux-hawk",
       "hook": "Nicollin",
       "k": "club",
       "src": "https://ligue1.com/en/articles/l1_article_2494-montpellier-s-best-moments-in-ligue-1",
@@ -246,7 +246,7 @@
     },
     {
       "w": "Didier Deschamps",
-      "means": "OM’s most recent league title",
+      "means": "Marseille’s most recent league title",
       "ex": "Didier Deschamps coached Marseille to the 2009–10 league title",
       "hook": "Marseille",
       "k": "coach",
@@ -286,7 +286,7 @@
     },
     {
       "w": "Vélodrome",
-      "means": "OM’s home ground",
+      "means": "Le Volcan means “the Volcano”",
       "ex": "Marseille’s Vélodrome is nicknamed “Le Volcan”",
       "hook": "Le Volcan",
       "k": "stadium",
@@ -336,7 +336,7 @@
     },
     {
       "w": "Allianz Riviera",
-      "means": "Nice’s home ground",
+      "means": "Opened in 2013",
       "ex": "Nice play home games at Allianz Riviera",
       "hook": "Nice",
       "k": "stadium",
@@ -346,7 +346,7 @@
     },
     {
       "w": "Roazhon Park",
-      "means": "Rennes’ home ground",
+      "means": "Roazhon is Breton for Rennes",
       "ex": "Rennes play home games at Roazhon Park",
       "hook": "Rennes",
       "k": "stadium",
@@ -356,7 +356,7 @@
     },
     {
       "w": "Stade Louis II",
-      "means": "Monaco’s home ground",
+      "means": "Named for Prince Louis II",
       "ex": "Monaco play home games at Stade Louis II",
       "hook": "Monaco",
       "k": "stadium",
@@ -426,7 +426,7 @@
     },
     {
       "w": "Classique",
-      "means": "Mandanda played a record 30 of them",
+      "means": "Steve Mandanda played a record 30",
       "ex": "The Classique pits PSG against Marseille",
       "hook": "Marseille",
       "k": "derby",
@@ -596,7 +596,7 @@
     },
     {
       "w": "44",
-      "means": "Highest on the top-scorer list",
+      "means": "A record for one season",
       "ex": "Josip Skoblar scored 44 league goals for Marseille in 1970–71",
       "hook": "Skoblar",
       "k": "number",

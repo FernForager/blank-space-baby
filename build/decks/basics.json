@@ -16,7 +16,7 @@
     {
       "w": "shoe",
       "means": "Replace it by the time the ball goes out",
-      "ex": "A goal still counts if the scorer’s foot lost its shoe by accident",
+      "ex": "A goal still counts if the scorer’s shoe came off by accident",
       "hook": "scorer",
       "k": "game-gear",
       "src": "https://www.theifab.com/laws/latest/the-players-equipment/",
@@ -25,7 +25,7 @@
     {
       "w": "cleats",
       "means": "The grips themselves are cleats too",
-      "ex": "Soccer shoes with grips on the bottom are called cleats",
+      "ex": "Soccer shoes with grips on the bottom go by the name cleats",
       "hook": "grips",
       "k": "game-gear",
       "src": "https://www.merriam-webster.com/dictionary/cleat",
@@ -42,7 +42,7 @@
     },
     {
       "w": "socks",
-      "means": "Their size is each player’s call",
+      "means": "Shin guard size is each player’s call",
       "ex": "A player’s shin guards must be fully covered by the socks",
       "hook": "shin guards",
       "k": "game-gear",
@@ -70,7 +70,7 @@
     {
       "w": "jersey",
       "means": "Worn as part of a team uniform",
-      "ex": "A team shirt with a player’s name and number on the back is called a jersey",
+      "ex": "A team shirt with a name and number on the back goes by the name jersey",
       "hook": "number",
       "k": "game-gear",
       "src": "https://www.merriam-webster.com/dictionary/jersey",
@@ -79,7 +79,7 @@
     {
       "w": "shin guard",
       "means": "Used in several sports, not just soccer",
-      "ex": "The stiff pad covering the front of the leg below the knee is a shin guard",
+      "ex": "The stiff pad over the front of the leg below the knee goes by the name shin guard",
       "hook": "knee",
       "k": "game-gear",
       "src": "https://www.merriam-webster.com/dictionary/shin%20guard",
@@ -213,7 +213,7 @@
     },
     {
       "w": "second half",
-      "means": "Each team now defends the other goal",
+      "means": "They swap at halftime",
       "ex": "The two teams switch ends and attack the other goal in the second half",
       "hook": "switch ends",
       "k": "game-time",
@@ -250,7 +250,7 @@
     {
       "w": "halves",
       "means": "So can the halves of extra time",
-      "ex": "Youth soccer may play its halves shorter than the usual 45 minutes",
+      "ex": "In youth soccer, halves may be shorter than the usual 45 minutes",
       "hook": "youth soccer",
       "k": "game-time",
       "src": "https://www.theifab.com/laws/latest/general-modifications/",
@@ -438,7 +438,7 @@
     },
     {
       "w": "goalmouth",
-      "means": "The space just in front of the goal",
+      "means": "Written as one word",
       "ex": "In soccer and hockey, the goalmouth is the area directly in front of the net",
       "hook": "hockey",
       "k": "field-area",
@@ -574,7 +574,7 @@
     {
       "w": "corner flag",
       "means": "Its top must not be pointed",
-      "ex": "A corner flag stands at all four points where the boundary lines meet",
+      "ex": "A corner flag stands at each of the four points where the boundary lines meet",
       "hook": "boundary",
       "k": "field-goal",
       "src": "https://www.theifab.com/laws/latest/the-field-of-play/",
@@ -655,8 +655,8 @@
     {
       "w": "corner kick",
       "means": "The defense put it over their goal line",
-      "ex": "At a corner kick, the ball sits in the small arc and the flagpost can’t be moved",
-      "hook": "flagpost",
+      "ex": "At a corner kick, the ball sits in the small arc and the flag can’t be moved",
+      "hook": "flag",
       "k": "restart-type",
       "src": "https://www.theifab.com/laws/latest/the-corner-kick/",
       "d": 1
@@ -789,8 +789,8 @@
     },
     {
       "w": "goal line",
-      "means": "Only when the kick is that close to goal",
-      "ex": "At a free kick, defenders within 10 yards must be on the goal line between the posts",
+      "means": "Not the usual 10 yards away",
+      "ex": "At a free kick close to goal, defenders may stand on the goal line between the posts",
       "hook": "posts",
       "k": "restart-place",
       "src": "https://www.theifab.com/laws/latest/free-kicks/",
@@ -844,7 +844,7 @@
     {
       "w": "tackling",
       "means": "A ball on the ground is fair game",
-      "ex": "Once a keeper puts the ball down to play it, opponents may try tackling her for it",
+      "ex": "Once a keeper puts the ball down to play it, she’s open to tackling",
       "hook": "ball down",
       "k": "fouls-act",
       "src": "https://www.theifab.com/laws/latest/fouls-and-misconduct/",
@@ -888,7 +888,7 @@
     },
     {
       "w": "handball",
-      "means": "Moving the arm toward the ball does",
+      "means": "It is if the arm moves toward the ball",
       "ex": "The ball touching a player’s arm isn’t always handball",
       "hook": "arm",
       "k": "fouls-act",
@@ -943,7 +943,7 @@
     {
       "w": "offside",
       "means": "Being there alone is no offense",
-      "ex": "Being past the second-to-last opponent only becomes offside if the player joins in",
+      "ex": "A player past the second-to-last opponent is offside only if she joins in",
       "hook": "joins in",
       "k": "fouls-act",
       "src": "https://www.theifab.com/laws/latest/offside/",
@@ -1168,7 +1168,7 @@
     {
       "w": "assistant referee",
       "means": "Close by, they flag which way it goes",
-      "ex": "When in doubt on a throw-in, the assistant referee follows the referee’s signal",
+      "ex": "When in doubt on a throw-in, the assistant referee follows the ref’s signal",
       "hook": "throw-in",
       "k": "people-official",
       "src": "https://www.theifab.com/laws/latest/guidelines/body-language-communication-and-whistle/",
@@ -1204,7 +1204,7 @@
     {
       "w": "VAR",
       "means": "They also choose the replay speed",
-      "ex": "When the referee watches a replay, the VAR picks the best camera angle",
+      "ex": "When the ref watches a replay, the VAR picks the best camera angle",
       "hook": "camera angle",
       "k": "people-official",
       "src": "https://www.theifab.com/laws/latest/video-assistant-referee-var-protocol/",
@@ -1231,7 +1231,7 @@
     {
       "w": "VAR",
       "means": "The referee may not give “no decision”",
-      "ex": "The referee must make the first call, and only then can the VAR step in",
+      "ex": "The ref must make the first call, and only then can the VAR step in",
       "hook": "first call",
       "k": "people-official",
       "src": "https://www.theifab.com/laws/latest/video-assistant-referee-var-protocol/",
@@ -1303,7 +1303,7 @@
     {
       "w": "coin",
       "means": "There’s a new toss before extra time",
-      "ex": "Before the match, the coin must be tossed by the referee, not a captain",
+      "ex": "Before the match, the referee, not a captain, must toss the coin",
       "hook": "captain",
       "k": "people-gear",
       "src": "https://www.theifab.com/laws/latest/the-start-and-restart-of-play/",
@@ -1383,7 +1383,7 @@
     },
     {
       "w": "forward",
-      "means": "Up front, by the opponent’s goal",
+      "means": "Often called a striker",
       "ex": "A forward plays at the front of the formation, near the other team’s goal",
       "hook": "formation",
       "k": "people-team",

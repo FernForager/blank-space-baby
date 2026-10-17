@@ -333,7 +333,7 @@
   },
   {
    "w": "Arrigo Sacchi",
-   "means": "They won 3–1 at Pisa",
+   "means": "Milan won 3–1 at Pisa",
    "ex": "In 1987, Arrigo Sacchi gave Gullit and Van Basten their Serie A debuts",
    "hook": "Van Basten",
    "k": "coach",
@@ -342,8 +342,8 @@
   },
   {
    "w": "Fabio Capello",
-   "means": "From 1991–92 to 1993–94",
-   "ex": "Fabio Capello led Milan to three titles in a row, starting in 1992",
+   "means": "The last came in 1993–94",
+   "ex": "Fabio Capello led Milan to three titles in a row, starting in 1991–92",
    "hook": "Milan",
    "k": "coach",
    "src": "https://www.legaseriea.it/serie-a/news/la-giornata-dei-5-scudetti-x8318",
@@ -399,7 +399,7 @@
   {
    "w": "Olimpico",
    "means": "Built in 1953, it seats 69,689",
-   "ex": "Roma and Lazio share the Olimpico stadium",
+   "ex": "Roma and Lazio both play at the Olimpico",
    "hook": "Lazio",
    "k": "stadium",
    "src": "https://en.legaseriea.it/team/roma/stadium",
@@ -408,7 +408,7 @@
   {
    "w": "San Siro",
    "means": "He won two World Cups with Italy",
-   "ex": "The San Siro stadium is named after Inter great Giuseppe Meazza",
+   "ex": "San Siro is officially named after Inter great Giuseppe Meazza",
    "hook": "Meazza",
    "k": "stadium",
    "src": "https://www.legaseriea.it/serie-a/news/segui-le-partite-su-radio-tv-serie-a-con-serie-a-live",

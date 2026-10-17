@@ -152,9 +152,9 @@
   },
   {
    "w": "Karl-Heinz Körbel",
-   "means": "All 602 of them for Frankfurt",
-   "ex": "Karl-Heinz Körbel has played the most Bundesliga games",
-   "hook": "Bundesliga",
+   "means": "602 of them, all for one club",
+   "ex": "Frankfurt’s Karl-Heinz Körbel played the most Bundesliga games",
+   "hook": "Frankfurt",
    "k": "player",
    "src": "https://www.bundesliga.com/en/faq/10-things-on-the-bundesliga/bundesliga-records-goals-titles-attendances-for-players-and-clubs-10555",
    "d": 3
@@ -171,8 +171,8 @@
   {
    "w": "Erling Haaland",
    "means": "For Dortmund, the only one off the bench",
-   "ex": "Erling Haaland scored a hat-trick off the bench on his Bundesliga debut",
-   "hook": "hat-trick",
+   "ex": "Erling Haaland scored a hat trick off the bench on his Bundesliga debut",
+   "hook": "hat trick",
    "k": "player",
    "src": "https://www.bundesliga.com/en/faq/10-things-on-the-bundesliga/bundesliga-records-goals-titles-attendances-for-players-and-clubs-10555",
    "d": 2
