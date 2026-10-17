@@ -1,4 +1,744 @@
 {
+ "alpha:0": {
+  "at": "2026-10-17T00:00:40Z",
+  "fix": {
+   "groups": [
+    [
+     "bet",
+     "lock in"
+    ]
+   ]
+  },
+  "h": "22db3ea124",
+  "note": "“Lock in” also works as a reply to the coach asking for one more goal, so keep it off this card",
+  "v": "fix"
+ },
+ "alpha:1": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "afce9ab9ae",
+  "v": "ok"
+ },
+ "alpha:10": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "0354b0bf16",
+  "v": "ok"
+ },
+ "alpha:100": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "c62ddba2dd",
+  "v": "ok"
+ },
+ "alpha:101": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "f60369725d",
+  "v": "ok"
+ },
+ "alpha:102": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "5283001bcd",
+  "v": "ok"
+ },
+ "alpha:103": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "d728a44bd7",
+  "v": "ok"
+ },
+ "alpha:104": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "bad3fb2e79",
+  "v": "ok"
+ },
+ "alpha:105": {
+  "at": "2026-10-17T00:00:40Z",
+  "fix": {
+   "groups": [
+    [
+     "destim",
+     "hold the L"
+    ]
+   ]
+  },
+  "h": "d17380b854",
+  "note": "If the shootout was lost, “needed to hold the L” also fits",
+  "v": "fix"
+ },
+ "alpha:106": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "3654a073f8",
+  "v": "ok"
+ },
+ "alpha:107": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "e366ce69aa",
+  "v": "ok"
+ },
+ "alpha:108": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "5d02ca84cd",
+  "v": "ok"
+ },
+ "alpha:109": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "ea1b884d60",
+  "v": "ok"
+ },
+ "alpha:11": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "8ad9507ead",
+  "v": "ok"
+ },
+ "alpha:110": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "2c82b9901a",
+  "v": "ok"
+ },
+ "alpha:111": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "3d5e105aa9",
+  "v": "ok"
+ },
+ "alpha:12": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "75cb6695e8",
+  "v": "ok"
+ },
+ "alpha:13": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "7cd0020b2d",
+  "v": "ok"
+ },
+ "alpha:14": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "6e003e0134",
+  "v": "ok"
+ },
+ "alpha:15": {
+  "at": "2026-10-17T00:00:40Z",
+  "fix": {
+   "ex": "Kids in the stands yelled “six seven” when the sub board showed 6 and 7"
+  },
+  "h": "bf6afbf812",
+  "note": "Without the 6 and 7 there is no reason for the shout, so sheesh, bruh, L or womp womp fit just as well. And youth games have no sub board. Kids in the stands at a pro or college game, seeing 6 and 7 go up, is exactly where the meme lives",
+  "v": "fix"
+ },
+ "alpha:16": {
+  "at": "2026-10-17T00:00:40Z",
+  "fix": {
+   "groups": [
+    [
+     "skibidi",
+     "unc"
+    ],
+    [
+     "skibidi",
+     "touch grass"
+    ],
+    [
+     "skibidi",
+     "L"
+    ]
+   ]
+  },
+  "h": "db8ab81b77",
+  "note": "A kid answering every tip with “unc,” “touch grass” or “L” is just as believable, so the card had more than one right answer",
+  "v": "fix"
+ },
+ "alpha:17": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "84a455b4a7",
+  "v": "ok"
+ },
+ "alpha:18": {
+  "at": "2026-10-17T00:00:40Z",
+  "fix": {
+   "groups": [
+    [
+     "rage-bait",
+     "unc"
+    ],
+    [
+     "rage-bait",
+     "salty"
+    ],
+    [
+     "rage-bait",
+     "brain rot"
+    ]
+   ]
+  },
+  "h": "5968407275",
+  "note": "Kids would just as easily call Dad’s hot take unc or salty or brain rot, so keep those off this card",
+  "v": "fix"
+ },
+ "alpha:19": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "69dc1fdce6",
+  "v": "ok"
+ },
+ "alpha:2": {
+  "at": "2026-10-17T00:00:40Z",
+  "fix": {
+   "groups": [
+    [
+     "cap",
+     "cringe"
+    ],
+    [
+     "cap",
+     "rage-bait"
+    ]
+   ]
+  },
+  "h": "c5527533bd",
+  "note": "A brag can also be called cringe or rage-bait by a teammate, so keep those off this card. Same answer as lingo-more:53 (a cap for country), the draw keeps them apart",
+  "v": "fix"
+ },
+ "alpha:20": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "396b2c46a6",
+  "v": "ok"
+ },
+ "alpha:21": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "c2a71eac83",
+  "v": "ok"
+ },
+ "alpha:22": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "8a2a410f73",
+  "v": "ok"
+ },
+ "alpha:23": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "1c56459800",
+  "v": "ok"
+ },
+ "alpha:24": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "74c5b5fdc5",
+  "v": "ok"
+ },
+ "alpha:25": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "0bcf170a91",
+  "v": "ok"
+ },
+ "alpha:26": {
+  "at": "2026-10-17T00:00:40Z",
+  "fix": {
+   "groups": [
+    [
+     "bruh",
+     "crine"
+    ]
+   ]
+  },
+  "h": "886f9e254b",
+  "note": "“Crine” (crying) also fits a goalie who just let one through her legs",
+  "v": "fix"
+ },
+ "alpha:27": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "e9110346cd",
+  "v": "ok"
+ },
+ "alpha:28": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "7c8f1793dd",
+  "v": "ok"
+ },
+ "alpha:29": {
+  "at": "2026-10-17T00:00:40Z",
+  "fix": {
+   "groups": [
+    [
+     "lock in",
+     "vibe check"
+    ]
+   ]
+  },
+  "h": "351d8b149c",
+  "note": "“Time to vibe check” also fits five minutes before kickoff",
+  "v": "fix"
+ },
+ "alpha:3": {
+  "at": "2026-10-17T00:00:40Z",
+  "fix": {
+   "groups": [
+    [
+     "bussin",
+     "sus"
+    ],
+    [
+     "bussin",
+     "slop"
+    ]
+   ]
+  },
+  "h": "b1d4611b03",
+  "note": "Kids do call iffy food sus or slop, so a fan could defend either here",
+  "v": "fix"
+ },
+ "alpha:30": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "0c93846b33",
+  "v": "ok"
+ },
+ "alpha:31": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "2ec4e51a5d",
+  "v": "ok"
+ },
+ "alpha:32": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "49eb6230d7",
+  "v": "ok"
+ },
+ "alpha:33": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "6d9d10bd12",
+  "v": "ok"
+ },
+ "alpha:34": {
+  "at": "2026-10-17T00:00:40Z",
+  "fix": {
+   "hook": "coach"
+  },
+  "h": "7dc5fb9ccc",
+  "note": "A tile reading Mom says nothing about soccer. Coach is the soccer word in the sentence",
+  "v": "fix"
+ },
+ "alpha:35": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "7f604a2d49",
+  "v": "ok"
+ },
+ "alpha:36": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "06b2ccd030",
+  "v": "ok"
+ },
+ "alpha:37": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "5fc1f86dea",
+  "v": "ok"
+ },
+ "alpha:38": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "a50de4ec8c",
+  "v": "ok"
+ },
+ "alpha:39": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "6d4dd5f8bb",
+  "v": "ok"
+ },
+ "alpha:4": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "087e862fe1",
+  "v": "ok"
+ },
+ "alpha:40": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "cf7df59668",
+  "v": "ok"
+ },
+ "alpha:41": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "b72d6470ba",
+  "v": "ok"
+ },
+ "alpha:42": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "303751e203",
+  "v": "ok"
+ },
+ "alpha:43": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "330c5d83f4",
+  "v": "ok"
+ },
+ "alpha:44": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "e79bccf618",
+  "v": "ok"
+ },
+ "alpha:45": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "3dc52ef4ac",
+  "v": "ok"
+ },
+ "alpha:46": {
+  "at": "2026-10-17T00:00:40Z",
+  "fix": {
+   "hook": "save"
+  },
+  "h": "873e22cb74",
+  "note": "A tile shouldn’t start with “that.” Save is the soccer word",
+  "v": "fix"
+ },
+ "alpha:47": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "fe66918326",
+  "v": "ok"
+ },
+ "alpha:48": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "53fe66dfe6",
+  "v": "ok"
+ },
+ "alpha:49": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "074914a172",
+  "v": "ok"
+ },
+ "alpha:5": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "6f7ce846bc",
+  "v": "ok"
+ },
+ "alpha:50": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "eb81950a66",
+  "v": "ok"
+ },
+ "alpha:51": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "0344bcca95",
+  "v": "ok"
+ },
+ "alpha:52": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "44431e4d30",
+  "v": "ok"
+ },
+ "alpha:53": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "560f357495",
+  "v": "ok"
+ },
+ "alpha:54": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "10756664aa",
+  "v": "ok"
+ },
+ "alpha:55": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "39051d5582",
+  "v": "ok"
+ },
+ "alpha:56": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "1b98397822",
+  "v": "ok"
+ },
+ "alpha:57": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "49e0ba5ebb",
+  "note": "Same answer as wc26:66 (the mascot Clutch). The draw keeps them apart",
+  "v": "ok"
+ },
+ "alpha:58": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "77e206c821",
+  "v": "ok"
+ },
+ "alpha:59": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "0adaedbad1",
+  "v": "ok"
+ },
+ "alpha:6": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "30d9e240f0",
+  "v": "ok"
+ },
+ "alpha:60": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "7834cb9468",
+  "v": "ok"
+ },
+ "alpha:61": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "e0e63b1286",
+  "v": "ok"
+ },
+ "alpha:62": {
+  "at": "2026-10-17T00:00:40Z",
+  "fix": {
+   "hook": "captain"
+  },
+  "h": "8606687808",
+  "note": "Promised isn’t a soccer word and half gives away the meaning. Captain is the soccer word",
+  "v": "fix"
+ },
+ "alpha:63": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "1fa548284b",
+  "v": "ok"
+ },
+ "alpha:64": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "b37b578012",
+  "v": "ok"
+ },
+ "alpha:65": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "6b8818ee47",
+  "v": "ok"
+ },
+ "alpha:66": {
+  "at": "2026-10-17T00:00:40Z",
+  "fix": {
+   "groups": [
+    [
+     "crine",
+     "cringe"
+    ]
+   ]
+  },
+  "h": "1c55339703",
+  "note": "Cringe looks like a misspelling of crine and a player could argue “everyone was cringe,” so keep it off this card",
+  "v": "fix"
+ },
+ "alpha:67": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "5dee7072d9",
+  "note": "Right and fair, but Mary Sue is a decades-old fan-fiction term more than kid slang. Red, so it never plays as slang anyway",
+  "v": "ok"
+ },
+ "alpha:68": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "5d2bab8031",
+  "v": "ok"
+ },
+ "alpha:69": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "2c1f8a7b9d",
+  "v": "ok"
+ },
+ "alpha:7": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "2531cff598",
+  "v": "ok"
+ },
+ "alpha:70": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "d35c0047ae",
+  "v": "ok"
+ },
+ "alpha:71": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "0b6b190f79",
+  "v": "ok"
+ },
+ "alpha:72": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "9fdfa0f18a",
+  "v": "ok"
+ },
+ "alpha:73": {
+  "at": "2026-10-17T00:00:40Z",
+  "fix": {
+   "groups": [
+    [
+     "bias",
+     "GOAT"
+    ]
+   ]
+  },
+  "h": "ff23d3da06",
+  "note": "“The goalie’s GOAT is the singer on her bottle” works too, kids say “my GOAT” about idols",
+  "v": "fix"
+ },
+ "alpha:74": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "53cc9a84df",
+  "v": "ok"
+ },
+ "alpha:75": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "d9c246d805",
+  "v": "ok"
+ },
+ "alpha:76": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "ef28e5367e",
+  "v": "ok"
+ },
+ "alpha:77": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "5f17accd37",
+  "v": "ok"
+ },
+ "alpha:78": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "01a7a3d9ba",
+  "v": "ok"
+ },
+ "alpha:79": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "f7e9694bb5",
+  "v": "ok"
+ },
+ "alpha:8": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "61a8c7a4d7",
+  "v": "ok"
+ },
+ "alpha:80": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "0d84b5b2fe",
+  "v": "ok"
+ },
+ "alpha:81": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "9b6a938292",
+  "v": "ok"
+ },
+ "alpha:82": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "70cdfa9160",
+  "v": "ok"
+ },
+ "alpha:83": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "46d0824dea",
+  "v": "ok"
+ },
+ "alpha:84": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "88e4dcce4a",
+  "v": "ok"
+ },
+ "alpha:85": {
+  "at": "2026-10-17T00:00:40Z",
+  "fix": {
+   "groups": [
+    [
+     "IJBOL",
+     "caught in 4k"
+    ],
+    [
+     "IJBOL",
+     "unc"
+    ]
+   ]
+  },
+  "h": "44c46d2b04",
+  "note": "A kid could just as well text “caught in 4k” or “unc” when Dad slips on the sideline",
+  "v": "fix"
+ },
+ "alpha:86": {
+  "at": "2026-10-17T00:00:40Z",
+  "fix": {
+   "d": 2
+  },
+  "h": "fc173528ba",
+  "note": "Kids use “keep it a buck” all the time, so it’s known by one side of the family: yellow, not red. Red slang never plays, so this also puts a good card into the beta",
+  "v": "fix"
+ },
+ "alpha:87": {
+  "at": "2026-10-17T00:00:40Z",
+  "fix": {
+   "groups": [
+    [
+     "kiki",
+     "crash out"
+    ]
+   ]
+  },
+  "h": "5274923255",
+  "note": "A 40-minute crash out in the carpool is just as believable. Red, so it never plays as slang, but fix it for later",
+  "v": "fix"
+ },
+ "alpha:88": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "1633292afa",
+  "v": "ok"
+ },
+ "alpha:89": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "3fac7045a1",
+  "v": "ok"
+ },
+ "alpha:9": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "0574bcb328",
+  "v": "ok"
+ },
+ "alpha:90": {
+  "at": "2026-10-17T00:00:40Z",
+  "fix": {
+   "groups": [
+    [
+     "out of pocket",
+     "salty"
+    ]
+   ]
+  },
+  "h": "d32a748f96",
+  "note": "Arguing with the ref in the handshake line could fairly be called salty",
+  "v": "fix"
+ },
+ "alpha:91": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "d153364b61",
+  "v": "ok"
+ },
+ "alpha:92": {
+  "at": "2026-10-17T00:00:40Z",
+  "fix": {
+   "groups": [
+    [
+     "preppy",
+     "girlypop"
+    ],
+    [
+     "preppy",
+     "drip"
+    ]
+   ]
+  },
+  "h": "2236e88859",
+  "note": "Pastel bows on cleats are just as much girlypop, and a fan could say very drip",
+  "v": "fix"
+ },
+ "alpha:93": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "e59e9d21be",
+  "v": "ok"
+ },
+ "alpha:94": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "5720542b46",
+  "v": "ok"
+ },
+ "alpha:95": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "855a89c02d",
+  "v": "ok"
+ },
+ "alpha:96": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "c4676bb625",
+  "v": "ok"
+ },
+ "alpha:97": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "34ed513c51",
+  "v": "ok"
+ },
+ "alpha:98": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "f7805af4a8",
+  "v": "ok"
+ },
+ "alpha:99": {
+  "at": "2026-10-17T00:00:40Z",
+  "h": "c9365428fe",
+  "v": "ok"
+ },
  "epl:0": {
   "at": "2026-10-16T23:58:31Z",
   "fix": {
