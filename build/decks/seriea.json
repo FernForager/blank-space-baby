@@ -407,9 +407,9 @@
   },
   {
    "w": "San Siro",
-   "means": "He won two World Cups with Italy",
-   "ex": "San Siro is officially named after Inter great Giuseppe Meazza",
-   "hook": "Meazza",
+   "means": "Officially the Giuseppe Meazza",
+   "ex": "Inter and Milan share the San Siro stadium",
+   "hook": "Inter",
    "k": "stadium",
    "src": "https://www.legaseriea.it/serie-a/news/segui-le-partite-su-radio-tv-serie-a-con-serie-a-live",
    "d": 2
@@ -453,8 +453,8 @@
   },
   {
    "w": "20",
-   "means": "Twenty clubs, twenty shirts",
-   "ex": "Serie A is played by 20 clubs",
+   "means": "Each plays 38 games a season",
+   "ex": "Serie A has 20 clubs",
    "hook": "Serie A",
    "k": "number",
    "src": "https://www.legaseriea.it/team/index",

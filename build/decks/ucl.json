@@ -440,7 +440,9 @@
    "k": "venue",
    "src": "https://www.uefa.com/womenschampionsleague/news/0250-0c50f8c5a638-5677bdc4dec5-1000--uefa-women-s-champions-league-history/",
    "d": 3,
-   "women": true
+   "women": true,
+   "out": true,
+   "out_why": "Still obscure: hardly any fan knows where the 2002 women’s final was played (soccer expert)"
   },
   {
    "w": "Barcelona",
@@ -557,7 +559,7 @@
   {
    "w": "8",
    "means": "Frankfurt and Barcelona have four each",
-   "ex": "Lyon have won a record 8 women’s titles",
+   "ex": "Lyon have won a record 8 Women’s Champions League titles",
    "hook": "Lyon",
    "k": "count",
    "src": "https://www.uefa.com/womenschampionsleague/history/",

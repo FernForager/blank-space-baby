@@ -208,12 +208,12 @@
     },
     {
       "w": "Homare Sawa",
-      "means": "Plus the Golden Ball and Boot",
-      "ex": "Homare Sawa captained Japan to the 2011 World Cup title",
-      "hook": "Japan",
+      "means": "She won the Golden Ball and Boot",
+      "ex": "Homare Sawa’s 117th-minute equalizer sent the 2011 World Cup final to penalties",
+      "hook": "equalizer",
       "k": "player",
-      "src": "https://www.fifa.com/en/articles/lilly-formiga-and-more-all-time-womens-world-cup-appearances-australia-new-zealand-2023",
-      "d": 2
+      "src": "https://www.fifa.com/en/tournaments/womens/womensworldcup/fifa-womens-world-cup-germany-2011/articles/sawa-golden-ball-boot-winner",
+      "d": 3
     },
     {
       "w": "Mallory Swanson",

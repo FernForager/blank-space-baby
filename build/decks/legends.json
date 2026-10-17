@@ -184,7 +184,7 @@
       "hook": "Golden Boot",
       "k": "woman",
       "src": "https://www.fifa.com/en/articles/birgti-prinz-best-moments-womens-world-cup-australia-and-new-zealand-countdown",
-      "d": 2,
+      "d": 3,
       "women": true
     },
     {
@@ -272,18 +272,18 @@
       "d": 3
     },
     {
-      "w": "13",
-      "means": "Still the most at a single World Cup",
-      "ex": "Just Fontaine scored 13 goals at a single World Cup, in 1958",
-      "hook": "Fontaine",
+      "w": "16",
+      "means": "He passed Ronaldo’s 15 in 2014",
+      "ex": "Miroslav Klose held the World Cup scoring record with 16 goals until 2026",
+      "hook": "Klose",
       "k": "number",
-      "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/top-goalscorers-one-edition",
-      "d": 1,
+      "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/fifa-world-cup-all-time-leading-scorers",
+      "d": 2,
       "current": true
     },
     {
       "w": "17",
-      "means": "Across six tournaments, 2003–2023",
+      "means": "Scored at five World Cups, 2003–2019",
       "ex": "Marta has scored 17 Women’s World Cup goals, the most ever",
       "hook": "Marta",
       "k": "number",
