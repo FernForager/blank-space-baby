@@ -5603,6 +5603,376 @@
   "note": "Near-twin: epl-more:66 is the same fact. Keep this richer one and cut that one",
   "v": "ok"
  },
+ "nwsl:0": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "217f5d0406",
+  "v": "ok"
+ },
+ "nwsl:1": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "6adac53c84",
+  "v": "ok"
+ },
+ "nwsl:10": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "36e0bf4930",
+  "note": "Checked nwslsoccer.com: 63,004 is still the NWSL record on Oct 17, 2026",
+  "v": "ok"
+ },
+ "nwsl:11": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "5f40716d51",
+  "note": "Checked nwslsoccer.com 2025 awards: Chawinga was 2025 MVP",
+  "v": "ok"
+ },
+ "nwsl:12": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "0627ed8659",
+  "note": "Safe however Ashley Sanchez’s 2026 chase ends, since it says 2019",
+  "v": "ok"
+ },
+ "nwsl:13": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "ccb63184b0",
+  "v": "ok"
+ },
+ "nwsl:14": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "400e61b1a8",
+  "v": "ok"
+ },
+ "nwsl:15": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "053d351574",
+  "v": "ok"
+ },
+ "nwsl:16": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "c8c8d0fcb1",
+  "v": "ok"
+ },
+ "nwsl:17": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "a300782318",
+  "v": "ok"
+ },
+ "nwsl:18": {
+  "at": "2026-10-17T00:03:32Z",
+  "fix": {
+   "ex": "The Wave retired the No. 13 jersey of Alex Morgan"
+  },
+  "h": "678dea3edf",
+  "note": "American fans say jersey, not shirt, and card 21 already says retired No. 12",
+  "v": "fix"
+ },
+ "nwsl:19": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "390a7c6df7",
+  "v": "ok"
+ },
+ "nwsl:2": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "436a5ab008",
+  "v": "ok"
+ },
+ "nwsl:20": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "ebf0981898",
+  "v": "ok"
+ },
+ "nwsl:21": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "8fe6662bc4",
+  "v": "ok"
+ },
+ "nwsl:22": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "4cca6c362e",
+  "v": "ok"
+ },
+ "nwsl:23": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "0e4f39ecf3",
+  "v": "ok"
+ },
+ "nwsl:24": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "e752212b72",
+  "v": "ok"
+ },
+ "nwsl:25": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "da820a42ae",
+  "note": "Fishlock retired from Wales after 2025, so 48 in 166 is final",
+  "v": "ok"
+ },
+ "nwsl:26": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "345d49725f",
+  "v": "ok"
+ },
+ "nwsl:27": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "ab31e9d32d",
+  "note": "Plays as a freebie: every decoy country (Scotland, Wales, Canada, Australia) obviously had NWSL players long before 2026, and Malawi is grouped away. Luvanga is a new name few fans know, so the tile has no pull either",
+  "v": "cut"
+ },
+ "nwsl:28": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "8dcac83a10",
+  "v": "ok"
+ },
+ "nwsl:29": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "e6e855d497",
+  "v": "ok"
+ },
+ "nwsl:3": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "ebd5588eed",
+  "v": "ok"
+ },
+ "nwsl:30": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "760db1010f",
+  "v": "ok"
+ },
+ "nwsl:31": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "6033f93ea5",
+  "note": "Safe if Ashley Sanchez gets a 21st goal: Chawinga stays the first to 20",
+  "v": "ok"
+ },
+ "nwsl:32": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "12ad25515e",
+  "v": "ok"
+ },
+ "nwsl:33": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "51f99116c9",
+  "v": "ok"
+ },
+ "nwsl:34": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "16671342ee",
+  "v": "ok"
+ },
+ "nwsl:35": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "9be2e70fe2",
+  "note": "Plays a bit easy by elimination, but a new parent could pair draft with a team’s record, so yellow holds",
+  "v": "ok"
+ },
+ "nwsl:36": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "8ebe0c60ab",
+  "v": "ok"
+ },
+ "nwsl:37": {
+  "at": "2026-10-17T00:03:32Z",
+  "fix": {
+   "d": 1
+  },
+  "h": "aeb9d72271",
+  "note": "Plays white: next to Golden Boot, Ironwoman, Decision Day or draft, only a cup can be won by beating Chicago 2–0, and a 10-year-old sees that (Shield, the one real decoy, is grouped away)",
+  "v": "fix"
+ },
+ "nwsl:38": {
+  "at": "2026-10-17T00:03:32Z",
+  "fix": {
+   "means": "Kaleigh Kurtz did it 2022–2025"
+  },
+  "h": "ec1f6fc216",
+  "note": "Kurtz can finish a fifth straight Ironwoman season when 2026 ends in two weeks, so four years running goes stale. Name the years instead (nwslsoccer.com: her fourth straight in 2025)",
+  "v": "fix"
+ },
+ "nwsl:39": {
+  "at": "2026-10-17T00:03:32Z",
+  "fix": {
+   "d": 1
+  },
+  "h": "2a2416dbf7",
+  "note": "Plays white: with a win on ___ only fits Decision Day next to Golden Boot, Challenge Cup, Ironwoman or draft, so anyone gets it from the grammar",
+  "v": "fix"
+ },
+ "nwsl:4": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "aacff98034",
+  "v": "ok"
+ },
+ "nwsl:40": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "2cd9d8a51f",
+  "v": "ok"
+ },
+ "nwsl:41": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "2463cda291",
+  "v": "ok"
+ },
+ "nwsl:42": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "bc627483aa",
+  "v": "ok"
+ },
+ "nwsl:43": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "0d2553c0d2",
+  "v": "ok"
+ },
+ "nwsl:44": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "68522eedb5",
+  "v": "ok"
+ },
+ "nwsl:45": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "9dfb00bfdd",
+  "v": "ok"
+ },
+ "nwsl:46": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "afdd1848bc",
+  "note": "Checked nwslsoccer.com 2025 awards: Bev Yanez, Racing Louisville",
+  "v": "ok"
+ },
+ "nwsl:47": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "e82d274436",
+  "v": "ok"
+ },
+ "nwsl:48": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "ebf96a1452",
+  "v": "ok"
+ },
+ "nwsl:49": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "1ac24623db",
+  "v": "ok"
+ },
+ "nwsl:5": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "bd49f1360d",
+  "v": "ok"
+ },
+ "nwsl:50": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "87ffd1213f",
+  "v": "ok"
+ },
+ "nwsl:51": {
+  "at": "2026-10-17T00:03:32Z",
+  "fix": {
+   "ex": "Gotham won the 2023 final before 25,011 fans at Snapdragon Stadium",
+   "means": "A record for a final, in San Diego"
+  },
+  "h": "9be248ab30",
+  "note": "A record 25,011 reads as the league record, which this deck says is Denver’s 63,004 (card 10). It was a record for a final, so say that in the means",
+  "v": "fix"
+ },
+ "nwsl:52": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "d3e705ed79",
+  "v": "ok"
+ },
+ "nwsl:53": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "93d7ecc2da",
+  "v": "ok"
+ },
+ "nwsl:54": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "a295883be1",
+  "v": "ok"
+ },
+ "nwsl:55": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "e22a77dd30",
+  "v": "ok"
+ },
+ "nwsl:56": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "fb90e68bd7",
+  "v": "ok"
+ },
+ "nwsl:57": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "69df44891e",
+  "v": "ok"
+ },
+ "nwsl:58": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "22918c9b48",
+  "v": "ok"
+ },
+ "nwsl:59": {
+  "at": "2026-10-17T00:03:32Z",
+  "fix": {
+   "ex": "Racing play their home games in Louisville"
+  },
+  "h": "383a66b595",
+  "note": "House style gives clubs British plurals (plays its → play their), and Racing is how fans say it",
+  "v": "fix"
+ },
+ "nwsl:6": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "9ac970fbdf",
+  "v": "ok"
+ },
+ "nwsl:60": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "3762afcc26",
+  "v": "ok"
+ },
+ "nwsl:61": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "6d19137dbb",
+  "v": "ok"
+ },
+ "nwsl:62": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "fe29762eec",
+  "v": "ok"
+ },
+ "nwsl:63": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "81d6b03429",
+  "v": "ok"
+ },
+ "nwsl:64": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "d888e574aa",
+  "v": "ok"
+ },
+ "nwsl:65": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "9871c5e758",
+  "v": "ok"
+ },
+ "nwsl:66": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "6066620c63",
+  "v": "ok"
+ },
+ "nwsl:7": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "e6848dc9cb",
+  "v": "ok"
+ },
+ "nwsl:8": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "66da97ec64",
+  "note": "Near-twins 39 and 43 (all three are the 2023 Wave Shield), but the draw already keeps them apart through San Diego",
+  "v": "ok"
+ },
+ "nwsl:9": {
+  "at": "2026-10-17T00:03:32Z",
+  "h": "b9505ba90a",
+  "note": "Near-twin of 32 (same 2025 KC season), kept apart by the draw. Still the record: no 2026 club is near 21 wins",
+  "v": "ok"
+ },
  "parents:0": {
   "at": "2026-10-16T23:57:20Z",
   "h": "353220e0e1",
