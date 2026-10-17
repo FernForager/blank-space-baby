@@ -4424,15 +4424,15 @@
   "v": "ok"
  },
  "lingo-more:14": {
-  "at": "2026-10-16T23:56:49Z",
-  "h": "1f530d796b",
-  "note": "dictionary.com technical area, Collins British: soccer, area at the side of the pitch to which managers, trainers, coaches are restricted",
+  "at": "2026-10-17T00:16:36Z",
+  "h": "0be3e89907",
+  "note": "dictionary.com/browse/technical-area Collins (soccer): the area at the side of the pitch to which managers, trainers, coaches, etc are restricted during play",
   "v": "ok"
  },
  "lingo-more:15": {
-  "at": "2026-10-16T23:56:49Z",
-  "h": "6e42c90243",
-  "note": "MW midfield: the portion of a playing field midway between goals",
+  "at": "2026-10-17T00:16:36Z",
+  "h": "7799a2084f",
+  "note": "merriam-webster.com/dictionary/midfield sense 1: the portion of a playing field that is midway between goals",
   "v": "ok"
  },
  "lingo-more:16": {
@@ -4523,9 +4523,9 @@
   "v": "fix"
  },
  "lingo-more:28": {
-  "at": "2026-10-16T23:56:49Z",
-  "h": "0659dcc4dd",
-  "note": "MW throw-in: a throw made from the touchline in soccer to put the ball back in play",
+  "at": "2026-10-17T00:16:36Z",
+  "h": "67926b6183",
+  "note": "merriam-webster.com/dictionary/throw-in sense 1a: a throw made from the touchline in soccer to put the ball back in play after it has gone into touch",
   "v": "ok"
  },
  "lingo-more:29": {
@@ -4643,15 +4643,15 @@
   "v": "ok"
  },
  "lingo-more:46": {
-  "at": "2026-10-16T23:56:49Z",
-  "h": "64c83e3540",
-  "note": "Dictionary.com silver goal, Collins British (soccer): a goal scored in a full half of extra time that counts as the winner if it is the only goal in that half",
+  "at": "2026-10-17T00:16:36Z",
+  "h": "1c0cccc319",
+  "note": "dictionary.com/browse/silver-goal Collins (soccer): a goal scored in a full half of extra time that counts as the winner if it is the only goal in that half. Sentence and means match that rule. Merriam-Webster has no entry",
   "v": "ok"
  },
  "lingo-more:47": {
-  "at": "2026-10-16T23:56:49Z",
-  "h": "eb85c8ab6c",
-  "note": "Dictionary.com away goal, Collins British: a goal scored by a team playing away from home, counting for more than home goals in certain competitions",
+  "at": "2026-10-17T00:16:36Z",
+  "h": "35a10336cd",
+  "note": "dictionary.com/browse/away-goal Collins: a goal scored by a team playing away from its home ground, and away goals count for more than home goals in certain competitions",
   "v": "ok"
  },
  "lingo-more:48": {
@@ -7020,9 +7020,9 @@
   "v": "ok"
  },
  "soccer:13": {
-  "at": "2026-10-16T23:58:23Z",
-  "h": "2c8f248683",
-  "note": "dictionary.com keepy-uppy (Collins, soccer): keeping a ball off the ground by bouncing it on a foot, knee or head",
+  "at": "2026-10-17T00:16:36Z",
+  "h": "e47546f080",
+  "note": "dictionary.com/browse/keepy-uppy Collins (soccer): keeping a ball off the ground by bouncing it repeatedly on a foot, knee or head. Only keepy-uppy is an ongoing activity that can end, so the wrong answers stay false",
   "v": "ok"
  },
  "soccer:14": {
@@ -7032,18 +7032,10 @@
   "v": "ok"
  },
  "soccer:15": {
-  "at": "2026-10-16T23:58:23Z",
-  "fix": {
-   "groups": [
-    [
-     "corner kick",
-     "free kick"
-    ]
-   ]
-  },
-  "h": "3bdc9a0109",
-  "note": "MW corner kick defines it as “a free kick from a corner of a soccer field awarded … when a defender plays the ball out-of-bounds over the end line.” Sentence and means are right, but by the deck’s own source free kick (a listed wrong answer) is also true in this blank, so group them",
-  "v": "fix"
+  "at": "2026-10-17T00:16:36Z",
+  "h": "086edeffb3",
+  "note": "merriam-webster.com/dictionary/corner%20kick: a free kick from a corner of a soccer field awarded to an attacker when a defender plays the ball over the end line. For the desk: M-W calls a corner kick a kind of free kick, but its free kick entry (and dictionary.com Collins) ties free kicks to a foul or infraction, which this sentence lacks, so free kick stays false",
+  "v": "ok"
  },
  "soccer:16": {
   "at": "2026-10-16T23:58:23Z",
@@ -7058,21 +7050,24 @@
   "v": "ok"
  },
  "soccer:18": {
-  "at": "2026-10-16T23:58:23Z",
-  "h": "5dcba7aa0a",
-  "note": "merriam-webster.com yellow card: shown to a player who broke the rules and is being officially warned",
-  "v": "ok"
+  "at": "2026-10-17T00:16:36Z",
+  "fix": {
+   "means": "A caution, not a send-off"
+  },
+  "h": "e15b44d149",
+  "note": "Sentence backed by merriam-webster.com/dictionary/yellow%20card (player is being officially warned). The means line (two in one game mean a red card) is on neither M-W nor dictionary.com, whose yellow card and red card entries only say cautioned vs sent off (dictionary.com/browse/yellow-card, dictionary.com/browse/red-card)",
+  "v": "fix"
  },
  "soccer:19": {
-  "at": "2026-10-16T23:58:23Z",
-  "h": "fbbaa46eef",
-  "note": "merriam-webster.com offside: illegally in advance of the ball or puck",
+  "at": "2026-10-17T00:16:36Z",
+  "h": "aa3183a15d",
+  "note": "merriam-webster.com/dictionary/offside: illegally in advance of the ball or puck",
   "v": "ok"
  },
  "soccer:2": {
-  "at": "2026-10-16T23:58:23Z",
-  "h": "5dfa3dd9d8",
-  "note": "merriam-webster.com volley: a kick of the ball in soccer before it rebounds",
+  "at": "2026-10-17T00:16:49Z",
+  "h": "19f2ad9517",
+  "note": "merriam-webster.com/dictionary/volley sense 1a(2): a kick of the ball in soccer before it rebounds. Means line backed by dictionary.com/browse/half-volley (Collins: hit or kick a ball immediately after it bounces) and merriam-webster.com/dictionary/half%20volley (at the instant it rebounds)",
   "v": "ok"
  },
  "soccer:20": {
@@ -7150,10 +7145,13 @@
   "v": "ok"
  },
  "soccer:30": {
-  "at": "2026-10-16T23:58:23Z",
-  "h": "95c49a315c",
-  "note": "dictionary.com false nine (Soccer): a center forward who drops back into the midfield to receive the ball",
-  "v": "ok"
+  "at": "2026-10-17T00:16:36Z",
+  "fix": {
+   "means": "Drops back to pull defenders out"
+  },
+  "h": "39bd93b468",
+  "note": "dictionary.com/browse/false-nine: a center forward who drops back into the midfield to receive the ball, drawing the opposing defense out of position. The means line (named for the No. 9 shirt) is not on dictionary.com, and Merriam-Webster has no entry (404). New means uses the entry's own content",
+  "v": "fix"
  },
  "soccer:31": {
   "at": "2026-10-16T23:58:23Z",
@@ -7201,9 +7199,9 @@
   "v": "fix"
  },
  "soccer:38": {
-  "at": "2026-10-16T23:58:23Z",
-  "h": "cbe061b23b",
-  "note": "dictionary.com assist (Collins noun, sport): a pass or other action by a player which enables another player to score a goal",
+  "at": "2026-10-17T00:16:49Z",
+  "h": "6c42550125",
+  "note": "dictionary.com/browse/assist Collins noun (sport): a pass or other action by a player which enables another player to score a goal",
   "v": "ok"
  },
  "soccer:39": {
@@ -7219,15 +7217,18 @@
   "v": "ok"
  },
  "soccer:40": {
-  "at": "2026-10-16T23:58:23Z",
-  "h": "8aa7454f28",
-  "note": "merriam-webster.com sudden death: extra play to break a tie in which the first to score wins",
-  "v": "ok"
+  "at": "2026-10-17T00:16:36Z",
+  "fix": {
+   "means": "Extra play to break a tie"
+  },
+  "h": "92bcd74aed",
+  "note": "Sentence backed by merriam-webster.com/dictionary/sudden%20death sense 2: extra play to break a tie in which the first to score or gain the lead wins. The means line (tied shoot-outs end this way too) is unsupported: M-W shoot-out, dictionary.com shootout and dictionary.com penalty-shoot-out never mention sudden death",
+  "v": "fix"
  },
  "soccer:41": {
-  "at": "2026-10-16T23:58:23Z",
-  "h": "ee71028727",
-  "note": "dictionary.com golden goal (Collins, soccer): the first goal scored in extra time, which wins the match",
+  "at": "2026-10-17T00:16:36Z",
+  "h": "cc0c1c04ef",
+  "note": "dictionary.com/browse/golden-goal Collins (soccer): the first goal scored in extra time, which wins the match for the side scoring it",
   "v": "ok"
  },
  "soccer:42": {
@@ -7285,9 +7286,9 @@
   "v": "ok"
  },
  "soccer:50": {
-  "at": "2026-10-16T23:58:23Z",
-  "h": "27613b29a6",
-  "note": "merriam-webster.com clinical: done or performed with excellence and precision",
+  "at": "2026-10-17T00:16:36Z",
+  "h": "38021938b5",
+  "note": "merriam-webster.com/dictionary/clinical sense 3 (US informal): done or performed with excellence and precision, with the example of clinical shooting",
   "v": "ok"
  },
  "soccer:51": {
@@ -7309,9 +7310,9 @@
   "v": "ok"
  },
  "soccer:54": {
-  "at": "2026-10-16T23:58:23Z",
-  "h": "56f6e45a1a",
-  "note": "dictionary.com relegate (Collins): to demote a football team to a lower division",
+  "at": "2026-10-17T00:16:36Z",
+  "h": "3c765e87c9",
+  "note": "dictionary.com/browse/relegate Collins: to demote a football team to a lower division. Also merriam-webster.com/dictionary/relegate sense d",
   "v": "ok"
  },
  "soccer:6": {
@@ -7321,9 +7322,9 @@
   "v": "ok"
  },
  "soccer:7": {
-  "at": "2026-10-16T23:58:23Z",
-  "h": "62f9936582",
-  "note": "dictionary.com nutmeg (Collins verb, sport): to kick or hit the ball between the legs of an opposing player",
+  "at": "2026-10-17T00:16:36Z",
+  "h": "559dbcf849",
+  "note": "dictionary.com/browse/nutmeg Collins verb (informal, sport): to kick or hit the ball between the legs of an opposing player. Merriam-Webster has only the spice sense",
   "v": "ok"
  },
  "soccer:8": {
