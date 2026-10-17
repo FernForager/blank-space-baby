@@ -8049,5 +8049,415 @@
   "h": "1d020b0e87",
   "note": "uefa.com 1992 season page: Marseille win inaugural Champions League final, France’s first winners",
   "v": "ok"
+ },
+ "wc26:0": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "6838138df5",
+  "note": "fifa.com final report: one goal conceded is the lowest for a World Cup-winning team",
+  "v": "ok"
+ },
+ "wc26:1": {
+  "at": "2026-10-17T00:20:59Z",
+  "h": "51f8894c6d",
+  "note": "fifa.com final report: defending champions Argentina lost 1–0 after extra time. 2022 title shown on the hosts article (Argentina aiming to retain the trophy after Qatar 2022)",
+  "v": "ok"
+ },
+ "wc26:10": {
+  "at": "2026-10-17T00:20:59Z",
+  "h": "eb580b1e3b",
+  "note": "fifa.com final report: Torres (106) the only goal",
+  "v": "ok"
+ },
+ "wc26:11": {
+  "at": "2026-10-17T00:20:59Z",
+  "h": "0965af986b",
+  "note": "fifa.com Brazil–Norway report: Haaland (79, 90), his sixth and seventh tournament goals",
+  "v": "ok"
+ },
+ "wc26:13": {
+  "at": "2026-10-17T00:20:59Z",
+  "h": "d81436304a",
+  "note": "fifa.com final report: at 39 years 25 days the oldest outfield player in a final, his third final (2014, 2022, 2026)",
+  "v": "ok"
+ },
+ "wc26:14": {
+  "at": "2026-10-17T00:20:59Z",
+  "h": "4261ad619d",
+  "note": "fifa.com records article: the 41-year-old became the first man to score in six World Cups",
+  "v": "ok"
+ },
+ "wc26:15": {
+  "at": "2026-10-17T00:20:59Z",
+  "h": "60f5dad01b",
+  "note": "fifa.com bronze final report: Saka hat-trick, France 4–6 England at Miami Stadium",
+  "v": "ok"
+ },
+ "wc26:16": {
+  "at": "2026-10-17T00:20:59Z",
+  "h": "cf2e85aa56",
+  "note": "fifa.com England–Argentina semifinal report: 121st appearance made Kane England’s most-capped outfield player. Still true today (the record only grows)",
+  "v": "ok"
+ },
+ "wc26:17": {
+  "at": "2026-10-17T00:20:59Z",
+  "h": "f5ff118202",
+  "note": "fifa.com records article: 790 completed passes, beating his own 638 from Qatar 2022",
+  "v": "ok"
+ },
+ "wc26:18": {
+  "at": "2026-10-17T00:20:59Z",
+  "h": "d1eb2f08da",
+  "note": "fifa.com records article: seven assists in one edition, five for Mbappé",
+  "v": "ok"
+ },
+ "wc26:2": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "325816302e",
+  "note": "fifa.com match report: Mexico 2–0 South Africa in the opening match, Quiñones scored in the 9th minute",
+  "v": "ok"
+ },
+ "wc26:20": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "27359d0c01",
+  "note": "fifa.com final report: at 65 years 28 days the oldest World Cup-winning coach",
+  "v": "ok"
+ },
+ "wc26:21": {
+  "at": "2026-10-17T00:20:59Z",
+  "h": "234e675128",
+  "note": "fifa.com final report: Scaloni Argentina coach, Spain won 1–0 after extra time",
+  "v": "ok"
+ },
+ "wc26:22": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "c5ce09059d",
+  "note": "fifa.com final standings: Tuchel’s England third after a 6–4 win over France",
+  "v": "ok"
+ },
+ "wc26:23": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "0f52215033",
+  "note": "fifa.com final standings: Ancelotti’s Brazil eliminated by Norway in the Round of 16",
+  "v": "ok"
+ },
+ "wc26:24": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "12b29ac54c",
+  "note": "fifa.com final standings: Pochettino’s USA out to Belgium in the Round of 16",
+  "v": "ok"
+ },
+ "wc26:25": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "5bdd2c9034",
+  "note": "fifa.com records article: 26 games, eclipsing Helmut Schön’s 25. Bronze final report says it ended his reign as France coach",
+  "v": "ok"
+ },
+ "wc26:26": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "9205ce421f",
+  "note": "fifa.com records article: Advocaat, 78 years 271 days, oldest coach, with Curaçao",
+  "v": "ok"
+ },
+ "wc26:27": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "78f615d70a",
+  "note": "fifa.com final report: Torres’s 106th-minute goal, 1–0 v Argentina in New York New Jersey",
+  "v": "ok"
+ },
+ "wc26:28": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "745d98b67c",
+  "note": "fifa.com Azteca article: Mexico City Stadium hosted the opener, the first stadium with three openers",
+  "v": "ok"
+ },
+ "wc26:29": {
+  "at": "2026-10-17T00:20:41Z",
+  "fix": {
+   "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/usa-australia-match-report-highlights"
+  },
+  "h": "c6d16dca10",
+  "note": "The card’s src is the Seattle schedule written before the tournament. The fifa.com USA 2–0 Australia match report shows the game was played in Seattle, so it becomes the src",
+  "v": "fix"
+ },
+ "wc26:3": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "71a80521d1",
+  "note": "fifa.com final standings: Brazil out to Norway in the Round of 16 with a Haaland double, record-extending sixth star sought (five titles)",
+  "v": "ok"
+ },
+ "wc26:30": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "eeba4d9dce",
+  "note": "fifa.com bronze final report: France 4–6 England at Miami Stadium, England third",
+  "v": "ok"
+ },
+ "wc26:31": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "0203b1eb3b",
+  "note": "fifa.com knockout results: semifinal France 0–2 Spain at Dallas Stadium. Nine matches: https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/dallas-stadium-host-nine-world-cup-matches",
+  "v": "ok"
+ },
+ "wc26:32": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "226fc543e2",
+  "note": "fifa.com knockout results: semifinal England 1–2 Argentina at Atlanta Stadium",
+  "v": "ok"
+ },
+ "wc26:33": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "47d70f1006",
+  "note": "fifa.com Golden Ball article: Rodri won it, a steady presence in Spain’s midfield",
+  "v": "ok"
+ },
+ "wc26:34": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "b1bf31482f",
+  "note": "fifa.com Golden Boot article: Mbappé won with ten goals, retaining the title he won at Qatar 2022",
+  "v": "ok"
+ },
+ "wc26:35": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "7eb0b2ef92",
+  "note": "fifa.com Golden Glove article: Simón won it with seven clean sheets, the most ever in one World Cup",
+  "v": "ok"
+ },
+ "wc26:36": {
+  "at": "2026-10-17T00:20:59Z",
+  "fix": {
+   "groups": [
+    [
+     "Young Player Award",
+     "Player of the Match"
+    ]
+   ]
+  },
+  "h": "d4dd8edfcc",
+  "note": "fifa.com Young Player Award article shows Cubarsí won it at 19, and FIFA’s awards rules define it as best player born on or after 1 January 2005. The reworded sentence drops “aged 21 or under”, so Player of the Match, which can be drawn, may also be true of him in some game. Grouping keeps them apart",
+  "v": "fix"
+ },
+ "wc26:37": {
+  "at": "2026-10-17T00:20:59Z",
+  "h": "fa9ef8db93",
+  "note": "src (now redirects to https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/adidas-golden-boot-race-top-scorer) shows Mbappé won the Golden Boot and the Bronze Ball. The awards PDF (https://digitalhub.fifa.com/asset/5f21873f-792f-4972-9f55-96e73ac61a01/FIFA-World-Cup-2026-Official-FIFA-Awards.pdf) lists him Bronze Ball and defines it as third-best player",
+  "v": "ok"
+ },
+ "wc26:38": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "2d844fc7e0",
+  "note": "src: Player of the Match given to Messi an unequalled 16 times, his five at 2026 a new record for one edition",
+  "v": "ok"
+ },
+ "wc26:39": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "ece871ca33",
+  "note": "src: Qatar 2022 champions Argentina, runners-up France. Spain won 2026, so Argentina came in as holders",
+  "v": "ok"
+ },
+ "wc26:4": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "0f762af968",
+  "note": "fifa.com hosts article lists 16 host cities: Canada 2, Mexico 3, USA 11",
+  "v": "ok"
+ },
+ "wc26:40": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "19aa76965c",
+  "note": "src: 2010 champions Spain beat the Netherlands for Spain’s first World Cup success",
+  "v": "ok"
+ },
+ "wc26:41": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "08d52d79d1",
+  "note": "src: Spain women won in 2023 and this is the first time the reigning men’s and women’s champions are from the same country",
+  "v": "ok"
+ },
+ "wc26:42": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "0aec5bb579",
+  "note": "src: England third in 2026, their best finish since lifting the trophy in 1966 on home turf",
+  "v": "ok"
+ },
+ "wc26:43": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "e9b6e2b3df",
+  "note": "src: Norway making their return for the first time since 1998 (28 years by arithmetic)",
+  "v": "ok"
+ },
+ "wc26:44": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "677e53b4c6",
+  "note": "src (redirects to https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/estadio-azteca-mexico-city-host-opening-match-world-cup-2026): hosted the World Cup finals and opening games of 1970 and 1986, first stadium to host three opening matches. Written before the tournament but still true",
+  "v": "ok"
+ },
+ "wc26:45": {
+  "at": "2026-10-17T00:20:59Z",
+  "h": "ac7442ef65",
+  "note": "src: first with 48 teams, final draw made 12 groups of four",
+  "v": "ok"
+ },
+ "wc26:46": {
+  "at": "2026-10-17T00:20:59Z",
+  "h": "5e31be48f8",
+  "note": "src: 16 host cities, Toronto and Vancouver in Canada, Guadalajara, Mexico City and Monterrey in Mexico",
+  "v": "ok"
+ },
+ "wc26:47": {
+  "at": "2026-10-17T00:20:59Z",
+  "h": "1ae146d1d9",
+  "note": "src: for the first time hosting divided among three countries, Canada, Mexico and the USA",
+  "v": "ok"
+ },
+ "wc26:48": {
+  "at": "2026-10-17T00:20:59Z",
+  "h": "606af427c5",
+  "note": "src: the biggest-ever edition boasted 104 games featuring 48 teams in Canada, Mexico and the United States",
+  "v": "ok"
+ },
+ "wc26:49": {
+  "at": "2026-10-17T00:20:59Z",
+  "h": "7269320d8d",
+  "note": "src: 34 his total after 2026, first man to reach 30 appearances, played at six editions",
+  "v": "ok"
+ },
+ "wc26:5": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "3edf30e60c",
+  "note": "fifa.com knockout results: Match 92 Mexico 2–3 England at Mexico City Stadium in the Round of 16",
+  "v": "ok"
+ },
+ "wc26:50": {
+  "at": "2026-10-17T00:20:59Z",
+  "h": "19b76131e1",
+  "note": "src: six matches, four group games plus one Round of 32 and one Round of 16. The knockout results page confirms both knockouts were played in Seattle",
+  "v": "ok"
+ },
+ "wc26:51": {
+  "at": "2026-10-17T00:20:41Z",
+  "fix": {
+   "means": "An average of 26 per team"
+  },
+  "h": "c1b5c61a06",
+  "note": "src shows a record 1,248 players representing 48 nations but never states a per-team squad size, so “26 for each” is unsupported as worded. 1,248 over 48 is an average of 26, which the arithmetic does support",
+  "v": "fix"
+ },
+ "wc26:52": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "9267550ada",
+  "note": "src: Spain 1–0 Argentina, Torres goal in the 106th minute, extra time",
+  "v": "ok"
+ },
+ "wc26:53": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "e4e06ff627",
+  "note": "src: France 4–6 England in the bronze final, Saka hat-trick",
+  "v": "ok"
+ },
+ "wc26:54": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "5c5becb56d",
+  "note": "src: Match 94 USA 1–4 Belgium at Seattle Stadium in the Round of 16",
+  "v": "ok"
+ },
+ "wc26:55": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "3cfcab03dc",
+  "note": "src: France 0–2 Spain semifinal, goals by Oyarzabal (pen) and Porro",
+  "v": "ok"
+ },
+ "wc26:56": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "76341eee7e",
+  "note": "src: Match 91 Brazil 1–2 Norway at New York New Jersey Stadium in the Round of 16",
+  "v": "ok"
+ },
+ "wc26:57": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "172f0819cc",
+  "note": "src: Austria and Algeria drew 3–3 in Group J, with two goals scored deep into added time",
+  "v": "ok"
+ },
+ "wc26:58": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "a21431ad1e",
+  "note": "src: Match 74 Germany 1–1 Paraguay (PSO 3–4) in the Round of 32",
+  "v": "ok"
+ },
+ "wc26:59": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "a478c9d229",
+  "note": "src: Match 90 Canada 0–3 Morocco at Houston Stadium in the Round of 16. Morocco were in Group C and Canada in Group B, so no group meeting",
+  "v": "ok"
+ },
+ "wc26:6": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "f687b03edf",
+  "note": "fifa.com Brazil–Norway report: Norway reach the last eight for the first time. Final standings article: first World Cup since 1998",
+  "v": "ok"
+ },
+ "wc26:60": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "4b49e871bf",
+  "note": "src: Match 99 Norway 1–2 England (AET) at Miami Stadium in the quarterfinals. Norway in Group I, England in Group L",
+  "v": "ok"
+ },
+ "wc26:61": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "32bbfabf0c",
+  "note": "src: England led through Gordon (55), Argentina won 2–1 with goals at 85 and 90+2 in Atlanta",
+  "v": "ok"
+ },
+ "wc26:62": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "d55800901e",
+  "note": "src: France 4–6 England bronze final, Mbappé scored at 48 and 66",
+  "v": "ok"
+ },
+ "wc26:63": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "5f03c5c681",
+  "note": "src: Uruguay out in the group stage after draws with Saudi Arabia and Cabo Verde and defeat to Spain",
+  "v": "ok"
+ },
+ "wc26:64": {
+  "at": "2026-10-17T00:20:59Z",
+  "h": "14fcd415c0",
+  "note": "src: Maple the Moose (Canada), a street style-loving artist and dedicated goalkeeper",
+  "v": "ok"
+ },
+ "wc26:65": {
+  "at": "2026-10-17T00:20:59Z",
+  "h": "e04408c430",
+  "note": "src: Zayu the Jaguar (Mexico), from the jungles of southern Mexico, a striker on the pitch",
+  "v": "ok"
+ },
+ "wc26:66": {
+  "at": "2026-10-17T00:20:59Z",
+  "h": "a9974e65f3",
+  "note": "src: Clutch the Bald Eagle (USA), unquenchable thirst for adventure, like all great midfielders",
+  "v": "ok"
+ },
+ "wc26:69": {
+  "at": "2026-10-17T00:20:59Z",
+  "h": "fccc829b87",
+  "note": "src: TRIONDA the official match ball, name translated from Spanish as “three waves”, with TRIONDA FINAL used only for the final four matches",
+  "v": "ok"
+ },
+ "wc26:7": {
+  "at": "2026-10-17T00:20:59Z",
+  "h": "6bd2e04718",
+  "note": "fifa.com final standings: debutants Cabo Verde the only side to prevent Spain from scoring, 0–0 in the opening Group H match",
+  "v": "ok"
+ },
+ "wc26:8": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "17abf45f87",
+  "note": "fifa.com final standings: Canada’s first group stage win, then a first knockout round win (1–0 v South Africa)",
+  "v": "ok"
+ },
+ "wc26:9": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "8ea2d0fcf4",
+  "note": "fifa.com records article: Curaçao, around 156,000 inhabitants, smallest nation by population to play at a World Cup",
+  "v": "ok"
  }
 }
