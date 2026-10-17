@@ -3121,9 +3121,9 @@
   "v": "ok"
  },
  "intl-men:10": {
-  "at": "2026-10-17T00:00:51Z",
-  "h": "d2ce168279",
-  "note": "Near-twin of intl-men:29 (same Euro 1976 final, same hook, so they never share a board). Decoy fix rides on intl-men:8 groups",
+  "at": "2026-10-17T00:26:19Z",
+  "h": "6b1fc991ce",
+  "note": "Near-twin of intl-men:29 (same Euro 1976 final, same tile, so they never share a board)",
   "v": "ok"
  },
  "intl-men:11": {
@@ -3136,9 +3136,8 @@
   "v": "fix"
  },
  "intl-men:12": {
-  "at": "2026-10-17T00:00:51Z",
-  "h": "b252d54998",
-  "note": "Decoy fix rides on intl-men:8 groups",
+  "at": "2026-10-17T00:26:19Z",
+  "h": "d63f68aeb8",
   "v": "ok"
  },
  "intl-men:13": {
@@ -3153,8 +3152,8 @@
   "v": "ok"
  },
  "intl-men:15": {
-  "at": "2026-10-17T00:00:51Z",
-  "h": "e9fabd64df",
+  "at": "2026-10-17T00:26:19Z",
+  "h": "1d8f4a3d6f",
   "v": "ok"
  },
  "intl-men:16": {
@@ -3218,13 +3217,9 @@
   "v": "ok"
  },
  "intl-men:25": {
-  "at": "2026-10-17T00:00:51Z",
-  "fix": {
-   "means": "For the USA, against Paraguay"
-  },
-  "h": "ba49a1d39c",
-  "note": "The means hands over 1930, the answer of intl-men:46. The opponent is on the src page (FIFA’s USA profile: the hat-trick came against Paraguay)",
-  "v": "fix"
+  "at": "2026-10-17T00:26:19Z",
+  "h": "746b67e035",
+  "v": "ok"
  },
  "intl-men:26": {
   "at": "2026-10-17T00:00:51Z",
@@ -3238,10 +3233,13 @@
   "v": "ok"
  },
  "intl-men:28": {
-  "at": "2026-10-17T00:00:51Z",
-  "h": "c3302bd58f",
-  "note": "Still the Euro record for one tournament",
-  "v": "ok"
+  "at": "2026-10-17T00:26:19Z",
+  "fix": {
+   "d": 2
+  },
+  "h": "e19a564ba1",
+  "note": "Plays yellow: with Van Basten and Panenka grouped out, every decoy is a non-European or a player born after 1984, so any regular fan who knows Platini was France’s 1980s star gets it",
+  "v": "fix"
  },
  "intl-men:29": {
   "at": "2026-10-17T00:00:51Z",
@@ -3250,12 +3248,12 @@
   "v": "ok"
  },
  "intl-men:3": {
-  "at": "2026-10-17T00:00:51Z",
+  "at": "2026-10-17T00:26:19Z",
   "fix": {
    "means": "Won after extra time, on home soil"
   },
-  "h": "cd473a47f1",
-  "note": "The means names Geoff Hurst, the answer of legends:17, and nothing blocks the two from one board",
+  "h": "550371cb62",
+  "note": "The means names Geoff Hurst, the answer of legends:17, and the draw only checks sentences and tiles, so the two can share a board",
   "v": "fix"
  },
  "intl-men:30": {
@@ -3377,8 +3375,8 @@
   "v": "ok"
  },
  "intl-men:5": {
-  "at": "2026-10-17T00:00:51Z",
-  "h": "2059ba4129",
+  "at": "2026-10-17T00:26:19Z",
+  "h": "dc5fdf1bd9",
   "v": "ok"
  },
  "intl-men:50": {
@@ -3405,8 +3403,8 @@
   "v": "fix"
  },
  "intl-men:53": {
-  "at": "2026-10-17T00:00:51Z",
-  "h": "4b5237cbd4",
+  "at": "2026-10-17T00:26:19Z",
+  "h": "dad74eca9e",
   "v": "ok"
  },
  "intl-men:54": {
@@ -3478,83 +3476,14 @@
   "v": "fix"
  },
  "intl-men:8": {
-  "at": "2026-10-17T00:00:51Z",
-  "fix": {
-   "groups": [
-    [
-     "Greece",
-     "Brazil"
-    ],
-    [
-     "Greece",
-     "Argentina"
-    ],
-    [
-     "Greece",
-     "Uruguay"
-    ],
-    [
-     "Greece",
-     "Morocco"
-    ],
-    [
-     "Denmark",
-     "Brazil"
-    ],
-    [
-     "Denmark",
-     "Argentina"
-    ],
-    [
-     "Denmark",
-     "Uruguay"
-    ],
-    [
-     "Denmark",
-     "Morocco"
-    ],
-    [
-     "Czechoslovakia",
-     "Brazil"
-    ],
-    [
-     "Czechoslovakia",
-     "Argentina"
-    ],
-    [
-     "Czechoslovakia",
-     "Uruguay"
-    ],
-    [
-     "Czechoslovakia",
-     "Morocco"
-    ],
-    [
-     "Portugal",
-     "Brazil"
-    ],
-    [
-     "Portugal",
-     "Argentina"
-    ],
-    [
-     "Portugal",
-     "Uruguay"
-    ],
-    [
-     "Portugal",
-     "Morocco"
-    ]
-   ]
-  },
-  "h": "98da2e8372",
-  "note": "On the four Euro winner cards (8, 9, 10, 12) Brazil, Argentina, Uruguay and Morocco are free eliminations because they can’t play a Euro. These groups keep them off those cards",
-  "v": "fix"
+  "at": "2026-10-17T00:26:19Z",
+  "h": "1c6097427d",
+  "note": "Its own kind leaves only Denmark and Czechoslovakia as decoys, both certainly wrong. Yellow is honest",
+  "v": "ok"
  },
  "intl-men:9": {
-  "at": "2026-10-17T00:00:51Z",
-  "h": "af01d5ec74",
-  "note": "Decoy fix rides on intl-men:8 groups",
+  "at": "2026-10-17T00:26:19Z",
+  "h": "3c9cf9c05f",
   "v": "ok"
  },
  "intl-women:0": {
@@ -3608,8 +3537,9 @@
   "v": "ok"
  },
  "intl-women:16": {
-  "at": "2026-10-17T00:03:04Z",
-  "h": "1e131207f8",
+  "at": "2026-10-17T00:26:19Z",
+  "h": "fecf5e4191",
+  "note": "Michelle Akers, who also scored five in a World Cup game, is a great decoy",
   "v": "ok"
  },
  "intl-women:17": {
@@ -3647,7 +3577,7 @@
   "v": "ok"
  },
  "intl-women:22": {
-  "at": "2026-10-17T00:03:04Z",
+  "at": "2026-10-17T00:26:19Z",
   "fix": {
    "d": 3,
    "ex": "Homare Sawa’s 117th-minute equalizer sent the 2011 World Cup final to penalties",
@@ -3655,8 +3585,8 @@
    "means": "She won the Golden Ball and Boot",
    "src": "https://www.fifa.com/en/tournaments/womens/womensworldcup/fifa-womens-world-cup-germany-2011/articles/sawa-golden-ball-boot-winner"
   },
-  "h": "a6534f84a9",
-  "note": "Homare Sawa is the only Japanese name among the decoys, so “captained Japan” plays trivially easy, and it repeats legends:37 almost word for word. Her 117th-minute equalizer in the final is the moment fans remember, and Wambach and Morgan, who also scored in that final, make real decoys. Red as rewritten",
+  "h": "2dd152f04d",
+  "note": "Homare Sawa is the only Japanese name among the decoys, so “captained Japan” plays trivially easy, and it repeats legends:37 almost word for word. Her 117th-minute equalizer in the final is the moment fans remember, and Wambach and Morgan, who also scored in that final, make real decoys. The new src (fifa.com 2011 award winners) states the 117th-minute equalizer. Red as rewritten",
   "v": "fix"
  },
  "intl-women:23": {
@@ -3887,8 +3817,8 @@
   "v": "ok"
  },
  "intl-women:62": {
-  "at": "2026-10-17T00:03:04Z",
-  "h": "49059e3fdb",
+  "at": "2026-10-17T00:26:19Z",
+  "h": "e70a0ebe4e",
   "v": "ok"
  },
  "intl-women:63": {
@@ -4741,12 +4671,12 @@
   "v": "ok"
  },
  "ligamx:21": {
-  "at": "2026-10-17T00:01:31Z",
+  "at": "2026-10-17T00:26:19Z",
   "fix": {
    "means": "In the state of Nuevo León"
   },
-  "h": "658cad6945",
-  "note": "Means named Estadio BBVA, the answer of ligamx:13, which can share a board with this card",
+  "h": "095bb2bf12",
+  "note": "The means names Estadio BBVA, the answer of ligamx:13, and the draw doesn’t check means lines",
   "v": "fix"
  },
  "ligamx:22": {
@@ -4865,15 +4795,10 @@
   "v": "ok"
  },
  "ligamx:40": {
-  "at": "2026-10-17T00:01:31Z",
-  "fix": {
-   "ex": "Joel Huiqui won a title in his first tournament as head coach, in 2026",
-   "hook": "head coach",
-   "means": "Champion after just 7 games in charge"
-  },
-  "h": "b2d048fa1a",
-  "note": "“As a coach” is an empty tile, and the means gave away ligamx:3 (Cruz Azul). 47571: “con apenas siete partidos dirigidos”",
-  "v": "fix"
+  "at": "2026-10-17T00:26:19Z",
+  "h": "e3c51e35e9",
+  "note": "The draw keeps it away from ligamx:3, whose answer is in this sentence",
+  "v": "ok"
  },
  "ligamx:41": {
   "at": "2026-10-17T00:01:31Z",
@@ -4901,8 +4826,8 @@
   "v": "ok"
  },
  "ligamx:45": {
-  "at": "2026-10-17T00:01:31Z",
-  "h": "d0784fe8b3",
+  "at": "2026-10-17T00:26:19Z",
+  "h": "98834b0aa7",
   "v": "ok"
  },
  "ligamx:46": {
@@ -4954,8 +4879,8 @@
   "v": "ok"
  },
  "ligamx:53": {
-  "at": "2026-10-17T00:01:31Z",
-  "h": "80aae666ef",
+  "at": "2026-10-17T00:26:19Z",
+  "h": "8447aa2c6b",
   "v": "ok"
  },
  "ligamx:54": {
@@ -5010,8 +4935,8 @@
   "v": "ok"
  },
  "ligamx:61": {
-  "at": "2026-10-17T00:01:31Z",
-  "h": "95b7b4be16",
+  "at": "2026-10-17T00:26:19Z",
+  "h": "b7e92edc96",
   "v": "ok"
  },
  "ligamx:62": {
@@ -5025,8 +4950,8 @@
   "v": "ok"
  },
  "ligamx:64": {
-  "at": "2026-10-17T00:01:31Z",
-  "h": "24dd0bfda8",
+  "at": "2026-10-17T00:26:19Z",
+  "h": "e1ad030a3a",
   "note": "Near-twin of ligamx:1 (its sentence names Chivas, so the draw keeps them apart)",
   "v": "ok"
  },
@@ -5036,13 +4961,9 @@
   "v": "ok"
  },
  "ligamx:7": {
-  "at": "2026-10-17T00:01:31Z",
-  "fix": {
-   "means": "Tapatío means “from Guadalajara”"
-  },
-  "h": "a4d1ef1dd1",
-  "note": "Means gave away ligamx:48 (1916), which can share a board with this card. Explaining the name teaches more, like the Capitalino card",
-  "v": "fix"
+  "at": "2026-10-17T00:26:19Z",
+  "h": "2714d3e326",
+  "v": "ok"
  },
  "ligamx:8": {
   "at": "2026-10-17T00:01:31Z",
@@ -5060,9 +4981,8 @@
   "v": "ok"
  },
  "ligue1:0": {
-  "at": "2026-10-16T23:59:47Z",
-  "h": "9972f1ed28",
-  "note": "Right as of 2025–26. Near ligue1:54 and ligue1:56 in topic, no giveaway",
+  "at": "2026-10-17T00:26:19Z",
+  "h": "363f1fd0e7",
   "v": "ok"
  },
  "ligue1:1": {
@@ -5162,8 +5082,9 @@
   "v": "ok"
  },
  "ligue1:24": {
-  "at": "2026-10-16T23:59:47Z",
-  "h": "76d61c1799",
+  "at": "2026-10-17T00:26:19Z",
+  "h": "e06ba508d3",
+  "note": "Galtier, a two-time Ligue 1 winner, is a good decoy",
   "v": "ok"
  },
  "ligue1:25": {
@@ -5182,9 +5103,8 @@
   "v": "ok"
  },
  "ligue1:28": {
-  "at": "2026-10-16T23:59:47Z",
-  "h": "cef415c1d6",
-  "note": "ligue1.com does call it “Le Volcan” (the OM birthday page)",
+  "at": "2026-10-17T00:26:19Z",
+  "h": "b7ea409b64",
   "v": "ok"
  },
  "ligue1:29": {
@@ -5213,18 +5133,18 @@
   "v": "ok"
  },
  "ligue1:33": {
-  "at": "2026-10-16T23:59:47Z",
-  "h": "693e50db97",
+  "at": "2026-10-17T00:26:19Z",
+  "h": "8a489d35a9",
   "v": "ok"
  },
  "ligue1:34": {
-  "at": "2026-10-16T23:59:47Z",
-  "h": "72716c7a33",
+  "at": "2026-10-17T00:26:19Z",
+  "h": "d7d01e7152",
   "v": "ok"
  },
  "ligue1:35": {
-  "at": "2026-10-16T23:59:47Z",
-  "h": "7b605c0d44",
+  "at": "2026-10-17T00:26:19Z",
+  "h": "0abdbe1791",
   "v": "ok"
  },
  "ligue1:36": {
@@ -5248,8 +5168,8 @@
   "v": "ok"
  },
  "ligue1:4": {
-  "at": "2026-10-16T23:59:47Z",
-  "h": "64e0a3f258",
+  "at": "2026-10-17T00:26:19Z",
+  "h": "d5e89f838f",
   "v": "ok"
  },
  "ligue1:40": {
@@ -5263,8 +5183,8 @@
   "v": "ok"
  },
  "ligue1:42": {
-  "at": "2026-10-16T23:59:47Z",
-  "h": "a38da75567",
+  "at": "2026-10-17T00:26:19Z",
+  "h": "f8ee6e3eb7",
   "v": "ok"
  },
  "ligue1:43": {
@@ -5336,19 +5256,20 @@
   "v": "ok"
  },
  "ligue1:54": {
-  "at": "2026-10-16T23:59:47Z",
-  "h": "50928a0975",
-  "note": "The deck’s group 14/13/10 keeps the only believable title counts apart, so half the time this plays against two absurd decoys (30, 34, 44). Each of 14, 13 and 10 is certainly wrong in the others’ sentences: Trivelle should drop that group",
+  "at": "2026-10-17T00:26:19Z",
+  "h": "696b2e2312",
+  "note": "With the group gone, 10 and 7 now come up, so yellow is honest. 14 is still right for 2026–27",
   "v": "ok"
  },
  "ligue1:55": {
-  "at": "2026-10-16T23:59:47Z",
+  "at": "2026-10-17T00:26:19Z",
   "fix": {
+   "d": 3,
    "ex": "Saint-Étienne, or Sainté, have won 10 French league titles",
    "hook": "Sainté"
   },
-  "h": "da99c8317f",
-  "note": "“French” tells the player nothing. Saint-Étienne is too long for a tile, so the sentence adds the short form fans use (ligue1:36 teaches it too). The deck’s group 14/13/10 keeps the only believable title counts apart, so half the time this plays against two absurd decoys (30, 34, 44). Each of 14, 13 and 10 is certainly wrong in the others’ sentences: Trivelle should drop that group",
+  "h": "95f1bd8c6a",
+  "note": "The tile “French” tells the player nothing, and Saint-Étienne is too long for a tile, so add the short form fans use (ligue1:36 shares the tile and the draw keeps them apart). Now that 14 and 7 can be drawn, it plays red: Saint-Étienne’s ten titles are French history, deep but gettable",
   "v": "fix"
  },
  "ligue1:56": {
@@ -5363,14 +5284,23 @@
   "v": "ok"
  },
  "ligue1:58": {
-  "at": "2026-10-16T23:59:47Z",
-  "h": "8194397db5",
-  "note": "The 30/44 group is right: 44 is near his Lyon free-kick total in all competitions",
-  "v": "ok"
+  "at": "2026-10-17T00:26:19Z",
+  "fix": {
+   "groups": [
+    [
+     "30",
+     "44"
+    ]
+   ]
+  },
+  "h": "8e1f0f1c2f",
+  "note": "With the groups gone, 44 can be drawn here, and 44 is Juninho’s famous free-kick total for Lyon in all competitions. A fan who knows it gets marked wrong. ligue1.com confirms 30 in Ligue 1. Keep 30 and 44 apart",
+  "v": "fix"
  },
  "ligue1:59": {
-  "at": "2026-10-16T23:59:47Z",
-  "h": "94e059ffa9",
+  "at": "2026-10-17T00:26:19Z",
+  "h": "aca048ae93",
+  "note": "If the 30/44 group from ligue1:58 goes back, 34 is still a close decoy here",
   "v": "ok"
  },
  "ligue1:6": {
@@ -5803,15 +5733,13 @@
   "v": "ok"
  },
  "mls:11": {
-  "at": "2026-10-17T00:00:30Z",
-  "h": "d2c5b5a4f1",
-  "note": "Right to keep the old name: they won all three as the New York Red Bulls, and the means teaches the rebrand",
+  "at": "2026-10-17T00:26:19Z",
+  "h": "e77dc1d1b2",
   "v": "ok"
  },
  "mls:12": {
-  "at": "2026-10-17T00:00:30Z",
-  "h": "b4f18864f8",
-  "note": "Near-twin of mls:37 (1998 final)",
+  "at": "2026-10-17T00:26:19Z",
+  "h": "5881ed9715",
   "v": "ok"
  },
  "mls:13": {
@@ -5887,9 +5815,8 @@
   "v": "ok"
  },
  "mls:24": {
-  "at": "2026-10-17T00:00:30Z",
-  "h": "2617ef12f2",
-  "note": "Near-twin of mls:14, kept apart by the draw",
+  "at": "2026-10-17T00:26:19Z",
+  "h": "caaa64f80b",
   "v": "ok"
  },
  "mls:25": {
@@ -5920,8 +5847,8 @@
   "v": "ok"
  },
  "mls:3": {
-  "at": "2026-10-17T00:00:30Z",
-  "h": "1e33ecbf2b",
+  "at": "2026-10-17T00:26:19Z",
+  "h": "38ca201f6c",
   "note": "Near-twin of mls:60 and mls:28 (Toronto 2017), kept apart by the draw",
   "v": "ok"
  },
@@ -6037,10 +5964,13 @@
   "v": "ok"
  },
  "mls:49": {
-  "at": "2026-10-17T00:00:31Z",
-  "h": "466090e965",
-  "note": "Plays trivially easy: its only decoys are 171 and 74, because the deck groups 29, 30 and 31 together. 29 and 31 would be good, certainly wrong decoys here. Trivelle could drop that group. White is honest as played",
-  "v": "ok"
+  "at": "2026-10-17T00:26:19Z",
+  "fix": {
+   "d": 2
+  },
+  "h": "04e7647785",
+  "note": "With 29 and 31 now in the pool, 7 draws in 10 put a close number beside 30. A new soccer parent wouldn’t know MLS has exactly 30 clubs. Yellow",
+  "v": "fix"
  },
  "mls:5": {
   "at": "2026-10-17T00:00:30Z",
@@ -6048,23 +5978,24 @@
   "v": "ok"
  },
  "mls:50": {
-  "at": "2026-10-17T00:00:31Z",
-  "h": "3abf41e290",
+  "at": "2026-10-17T00:26:19Z",
+  "h": "1bfa21c1c0",
+  "note": "Every decoy is far from 10, but a beginner can’t be sure a league began that small. Yellow holds",
   "v": "ok"
  },
  "mls:51": {
-  "at": "2026-10-17T00:00:31Z",
-  "h": "c9dcd9d472",
-  "note": "Plays easy: 10, 30 and 74 can’t be a career record. 171 and 42 assists confirmed on mlssoccer.com",
+  "at": "2026-10-17T00:26:19Z",
+  "h": "2ef8288db7",
   "v": "ok"
  },
  "mls:52": {
-  "at": "2026-10-17T00:00:31Z",
+  "at": "2026-10-17T00:26:19Z",
   "fix": {
+   "d": 3,
    "means": "The record fell the very next year"
   },
-  "h": "2c7039bd56",
-  "note": "The means names Carlos Vela, which gives away mls:16 if both land on one board (the draw only checks sentence and tile)",
+  "h": "46a3cd2efd",
+  "note": "29 and 30 can now be drawn, and telling 31 from them takes real MLS memory, so red. The means names Carlos Vela, the answer of mls:16, and the draw doesn’t check means lines",
   "v": "fix"
  },
  "mls:53": {
@@ -6078,10 +6009,13 @@
   "v": "fix"
  },
  "mls:54": {
-  "at": "2026-10-17T00:00:31Z",
-  "h": "303c31b33a",
-  "note": "Plays easy: only 10 and 74 can be drawn. Messi has 23 in 2026 with about five games left, so the 2025 line stays right",
-  "v": "ok"
+  "at": "2026-10-17T00:26:19Z",
+  "fix": {
+   "d": 3
+  },
+  "h": "45b02bf66b",
+  "note": "30 and 31 can now be drawn beside 29, and Messi’s exact 2025 total takes a real MLS fan. Red",
+  "v": "fix"
  },
  "mls:55": {
   "at": "2026-10-17T00:00:31Z",
@@ -6090,8 +6024,8 @@
   "v": "ok"
  },
  "mls:56": {
-  "at": "2026-10-17T00:00:31Z",
-  "h": "9ba4b1aae2",
+  "at": "2026-10-17T00:26:19Z",
+  "h": "0d18b1b1e9",
   "v": "ok"
  },
  "mls:57": {
@@ -6519,9 +6453,9 @@
   "v": "ok"
  },
  "nwsl:10": {
-  "at": "2026-10-17T00:03:32Z",
-  "h": "36e0bf4930",
-  "note": "Checked nwslsoccer.com: 63,004 is still the NWSL record on Oct 17, 2026",
+  "at": "2026-10-17T00:26:19Z",
+  "h": "cbc3c55f2f",
+  "note": "The new means checks out: 63,004 is more than double Boston’s 30,207",
   "v": "ok"
  },
  "nwsl:11": {
@@ -6562,12 +6496,12 @@
   "v": "ok"
  },
  "nwsl:18": {
-  "at": "2026-10-17T00:03:32Z",
+  "at": "2026-10-17T00:26:19Z",
   "fix": {
-   "ex": "The Wave retired the No. 13 jersey of Alex Morgan"
+   "ex": "The Wave retired Alex Morgan’s No. 13 jersey"
   },
-  "h": "678dea3edf",
-  "note": "American fans say jersey, not shirt, and card 21 already says retired No. 12",
+  "h": "b8da1cd6d0",
+  "note": "American fans retire a jersey, not a shirt (house style uses American soccer words)",
   "v": "fix"
  },
  "nwsl:19": {
@@ -6823,8 +6757,8 @@
   "v": "fix"
  },
  "nwsl:6": {
-  "at": "2026-10-17T00:03:32Z",
-  "h": "9ac970fbdf",
+  "at": "2026-10-17T00:26:19Z",
+  "h": "3954579f62",
   "v": "ok"
  },
  "nwsl:60": {
@@ -7555,8 +7489,8 @@
   "v": "ok"
  },
  "seriea:10": {
-  "at": "2026-10-17T00:00:12Z",
-  "h": "53f4408a88",
+  "at": "2026-10-17T00:26:19Z",
+  "h": "d1d68e396a",
   "v": "ok"
  },
  "seriea:11": {
@@ -7723,13 +7657,14 @@
   "v": "ok"
  },
  "seriea:36": {
-  "at": "2026-10-17T00:00:12Z",
-  "h": "c135858ced",
+  "at": "2026-10-17T00:26:19Z",
+  "h": "f798aa473e",
   "v": "ok"
  },
  "seriea:37": {
-  "at": "2026-10-17T00:00:12Z",
-  "h": "89624b7cca",
+  "at": "2026-10-17T00:26:19Z",
+  "h": "19b09543f8",
+  "note": "Conte’s three in a row at Juventus make him a good decoy, and “starting in 1991–92” rules him out",
   "v": "ok"
  },
  "seriea:38": {
@@ -7769,19 +7704,19 @@
   "v": "ok"
  },
  "seriea:43": {
-  "at": "2026-10-17T00:00:12Z",
-  "h": "35cab2fece",
+  "at": "2026-10-17T00:26:19Z",
+  "h": "c5e958c96a",
   "v": "ok"
  },
  "seriea:44": {
-  "at": "2026-10-17T00:00:12Z",
+  "at": "2026-10-17T00:26:19Z",
   "fix": {
    "ex": "Inter and Milan share the San Siro stadium",
    "hook": "Inter",
    "means": "Officially the Giuseppe Meazza"
   },
-  "h": "ddb04ed718",
-  "note": "Plays trivially easy: every decoy (Renato Dall’Ara, Artemio Franchi, Luigi Ferraris, Allianz, New Balance) is plainly named for someone or something else, so “named after Meazza” rules them out. Ask who shares it and move Meazza to the means",
+  "h": "d52ca49958",
+  "note": "Still plays trivially easy: every decoy (Dall’Ara, Franchi, Ferraris, Allianz, New Balance) is plainly named for someone or something else, so “named after Meazza” rules them out. Ask who shares it and move Meazza to the means",
   "v": "fix"
  },
  "seriea:45": {
@@ -7809,13 +7744,13 @@
   "v": "fix"
  },
  "seriea:49": {
-  "at": "2026-10-17T00:00:12Z",
+  "at": "2026-10-17T00:26:19Z",
   "fix": {
-   "d": 1,
+   "ex": "Serie A has 20 clubs",
    "means": "Each plays 38 games a season"
   },
-  "h": "dca602bee5",
-  "note": "Plays trivially easy: the only decoys are 36, 4, 274 and 974 (19 and 21 are grouped out), so anyone picks 20. Honest color is white. The means said nothing, so teach the 38-game season",
+  "h": "ea2aedb6af",
+  "note": "With 19 and 21 back in the pool, yellow is honest again. Fans say Serie A “has” 20 clubs, and the means said nothing, so teach the 38-game season",
   "v": "fix"
  },
  "seriea:5": {
@@ -7829,13 +7764,15 @@
   "v": "ok"
  },
  "seriea:51": {
-  "at": "2026-10-17T00:00:12Z",
-  "h": "d443d1e5ca",
+  "at": "2026-10-17T00:26:19Z",
+  "h": "1b37f059d5",
+  "note": "20 and 19 now come up as decoys, which is right: fans who followed the second-star race in 2024 get it. Yellow holds",
   "v": "ok"
  },
  "seriea:52": {
-  "at": "2026-10-17T00:00:12Z",
-  "h": "3746f9f2c4",
+  "at": "2026-10-17T00:26:19Z",
+  "h": "74bacf1df0",
+  "note": "20 and 21 now come up as decoys. The Milan–Inter star race makes it fair at yellow",
   "v": "ok"
  },
  "seriea:53": {
@@ -8290,22 +8227,16 @@
   "v": "ok"
  },
  "ucl:18": {
-  "at": "2026-10-17T00:07:24Z",
-  "fix": {
-   "ex": "Cristiano Ronaldo holds the Champions League records for goals and appearances"
-  },
-  "h": "1fcecd4e71",
-  "note": "On the daily board no deck name shows, so “all-time records” reads as career records. Name the competition",
-  "v": "fix"
+  "at": "2026-10-17T00:26:19Z",
+  "h": "9f823aca67",
+  "note": "Still true on uefa.com today: 141 goals, 187 appearances",
+  "v": "ok"
  },
  "ucl:19": {
-  "at": "2026-10-17T00:07:24Z",
-  "fix": {
-   "ex": "Lionel Messi is second on the Champions League scoring list with 129 goals"
-  },
-  "h": "b794ad1d0e",
-  "note": "“The all-time scoring list” needs the competition named, since the board shows no deck",
-  "v": "fix"
+  "at": "2026-10-17T00:26:19Z",
+  "h": "30c53a8c5a",
+  "note": "129 checked on uefa.com today. Shares the tile “scoring list” with ucl:20, so the draw keeps them apart",
+  "v": "ok"
  },
  "ucl:2": {
   "at": "2026-10-17T00:07:24Z",
@@ -8313,13 +8244,10 @@
   "v": "ok"
  },
  "ucl:20": {
-  "at": "2026-10-17T00:07:24Z",
-  "fix": {
-   "ex": "Robert Lewandowski is third on the Champions League scoring list with 109 goals"
-  },
-  "h": "90d2bb880b",
-  "note": "Without the competition named, “third on the all-time scoring list” is wrong for Lewandowski’s career overall. 109 checked on uefa.com today, but he is still active at Barcelona, so recheck each season",
-  "v": "fix"
+  "at": "2026-10-17T00:26:19Z",
+  "h": "479c3c3fb8",
+  "note": "109 checked on uefa.com today, still third",
+  "v": "ok"
  },
  "ucl:21": {
   "at": "2026-10-17T00:07:24Z",
@@ -8327,22 +8255,14 @@
   "v": "ok"
  },
  "ucl:22": {
-  "at": "2026-10-17T00:07:24Z",
-  "fix": {
-   "ex": "Kylian Mbappé was the Champions League top scorer of 2025–26 with 15 goals"
-  },
-  "h": "3a24343b12",
-  "note": "With no deck name on the board, “top scorer of 2025–26” could mean La Liga. 15 and Kane’s 14 checked on uefa.com",
-  "v": "fix"
+  "at": "2026-10-17T00:26:19Z",
+  "h": "0918713f87",
+  "v": "ok"
  },
  "ucl:23": {
-  "at": "2026-10-17T00:07:24Z",
-  "fix": {
-   "ex": "Erling Haaland was the Champions League top scorer of 2022–23 with 12 goals"
-  },
-  "h": "dc20b8553f",
-  "note": "Haaland was also the Premier League’s top scorer in 2022–23 (with 36), so name the competition. 12 and Salah’s 8 checked on uefa.com",
-  "v": "fix"
+  "at": "2026-10-17T00:26:19Z",
+  "h": "b366402175",
+  "v": "ok"
  },
  "ucl:24": {
   "at": "2026-10-17T00:07:24Z",
@@ -8350,8 +8270,9 @@
   "v": "ok"
  },
  "ucl:25": {
-  "at": "2026-10-17T00:07:24Z",
-  "h": "22d55a9f1e",
+  "at": "2026-10-17T00:26:19Z",
+  "h": "8619055dd6",
+  "note": "Robben, who missed a penalty in that final, is a great decoy",
   "v": "ok"
  },
  "ucl:26": {
@@ -8426,8 +8347,9 @@
   "v": "ok"
  },
  "ucl:37": {
-  "at": "2026-10-17T00:07:24Z",
-  "h": "96309fad5d",
+  "at": "2026-10-17T00:26:19Z",
+  "h": "396c0291ef",
+  "note": "Moscow, where Chelsea lost a final on penalties in 2008, is a great decoy. Same final as ucl:25, and the shared tile keeps them apart",
   "v": "ok"
  },
  "ucl:38": {
@@ -8441,8 +8363,9 @@
   "v": "ok"
  },
  "ucl:4": {
-  "at": "2026-10-17T00:07:24Z",
-  "h": "9598434747",
+  "at": "2026-10-17T00:26:19Z",
+  "h": "e3c20686ed",
+  "note": "Paris Saint-Germain drops out of the decoys since it is in the sentence. Fine as yellow",
   "v": "ok"
  },
  "ucl:40": {
@@ -8471,8 +8394,8 @@
   "v": "fix"
  },
  "ucl:43": {
-  "at": "2026-10-17T00:07:24Z",
-  "h": "bc0cab7bba",
+  "at": "2026-10-17T00:26:19Z",
+  "h": "cd0a96094b",
   "v": "ok"
  },
  "ucl:44": {
@@ -8495,9 +8418,9 @@
   "v": "ok"
  },
  "ucl:47": {
-  "at": "2026-10-17T00:07:24Z",
-  "h": "0c9e59a1f4",
-  "note": "Obscure: almost no fan knows the venue of the 2002 Women’s Cup final, and next to English and French grounds the only German name is a pure guess. A rewrite naming Frankfurt makes it a giveaway",
+  "at": "2026-10-17T00:26:19Z",
+  "h": "a76af8464d",
+  "note": "Still obscure: hardly any fan knows where the 2002 Women’s Cup final was played, and next to English and French grounds the only German name is a guess or a giveaway. “The first women’s final” is also vague on a board with no deck name",
   "v": "cut"
  },
  "ucl:48": {
@@ -8539,8 +8462,9 @@
   "v": "fix"
  },
  "ucl:52": {
-  "at": "2026-10-17T00:07:24Z",
-  "h": "bbc67d3f05",
+  "at": "2026-10-17T00:26:19Z",
+  "h": "0aab8635e4",
+  "note": "Lyon, the beaten finalist, is a fair decoy",
   "v": "ok"
  },
  "ucl:53": {
@@ -8584,17 +8508,18 @@
   "v": "cut"
  },
  "ucl:59": {
-  "at": "2026-10-17T00:07:24Z",
+  "at": "2026-10-17T00:26:19Z",
   "fix": {
    "ex": "Lyon have won a record 8 Women’s Champions League titles"
   },
-  "h": "5f168cda8e",
-  "note": "Lyon have far more than 8 French titles, so “women’s titles” must name the competition",
+  "h": "6342cd5efa",
+  "note": "Lyon have far more than 8 French league titles, so “women’s titles” must name the competition. 8, Frankfurt’s 4 and Barcelona’s 4 checked on uefa.com today",
   "v": "fix"
  },
  "ucl:6": {
-  "at": "2026-10-17T00:07:24Z",
-  "h": "cb69e715ab",
+  "at": "2026-10-17T00:26:19Z",
+  "h": "79676da4bc",
+  "note": "Nottingham Forest and Liverpool make strong, certainly wrong decoys. The src is right: uefa.com files 1981–82 under /seasons/1981/",
   "v": "ok"
  },
  "ucl:60": {
@@ -8664,14 +8589,9 @@
   "v": "ok"
  },
  "wc26:1": {
-  "at": "2026-10-17T00:04:39Z",
-  "fix": {
-   "ex": "Defending champions Argentina lost the final in extra time",
-   "hook": "champions"
-  },
-  "h": "f4268c8aaa",
-  "note": "Defending champions, plural, the way fans and FIFA say it and how the deck says Five-time champions Brazil and Two-time champions Uruguay",
-  "v": "fix"
+  "at": "2026-10-17T00:26:19Z",
+  "h": "51f8894c6d",
+  "v": "ok"
  },
  "wc26:10": {
   "at": "2026-10-17T00:04:39Z",
@@ -8712,12 +8632,12 @@
   "v": "ok"
  },
  "wc26:17": {
-  "at": "2026-10-17T00:04:39Z",
+  "at": "2026-10-17T00:26:19Z",
   "fix": {
    "d": 2
   },
-  "h": "199d9dac12",
-  "note": "Plays yellow, not red: next to two of Haaland, Messi, Mbappé, Saka or Kane, any regular fan picks the deep-lying midfielder Rodri",
+  "h": "f5ff118202",
+  "note": "Plays yellow, not red: next to two of Ferran Torres, Haaland, Messi, Ronaldo, Saka, Kane or Olise, any regular fan picks the deep-lying midfielder Rodri for a passing record",
   "v": "fix"
  },
  "wc26:18": {
@@ -8743,8 +8663,9 @@
   "v": "ok"
  },
  "wc26:21": {
-  "at": "2026-10-17T00:04:39Z",
-  "h": "96b077311a",
+  "at": "2026-10-17T00:26:19Z",
+  "h": "234e675128",
+  "note": "De la Fuente, the other finalist’s coach, makes a good decoy",
   "v": "ok"
  },
  "wc26:22": {
@@ -8829,14 +8750,15 @@
   "v": "ok"
  },
  "wc26:36": {
-  "at": "2026-10-17T00:04:39Z",
-  "h": "e7db8fccf7",
-  "note": "Same fact as awards:68, word for word nearly. Keep one copy",
+  "at": "2026-10-17T00:26:19Z",
+  "h": "592775dedc",
+  "note": "Same fact as awards:68, nearly word for word. Keep one copy",
   "v": "ok"
  },
  "wc26:37": {
-  "at": "2026-10-17T00:04:39Z",
-  "h": "2adcf645f3",
+  "at": "2026-10-17T00:26:19Z",
+  "h": "fa9ef8db93",
+  "note": "“Third-best” points to Bronze, so it plays white, as rated",
   "v": "ok"
  },
  "wc26:38": {
@@ -8885,42 +8807,10 @@
   "v": "ok"
  },
  "wc26:45": {
-  "at": "2026-10-17T00:04:39Z",
-  "fix": {
-   "groups": [
-    [
-     "3",
-     "48"
-    ],
-    [
-     "6",
-     "48"
-    ],
-    [
-     "16",
-     "104"
-    ],
-    [
-     "3",
-     "104"
-    ],
-    [
-     "6",
-     "104"
-    ],
-    [
-     "3",
-     "34"
-    ],
-    [
-     "6",
-     "34"
-    ]
-   ]
-  },
-  "h": "280423c373",
-  "note": "The number cards draw decoys of the wrong size (Seattle hosted 104 matches, 3 teams at the first 48-team World Cup), so most draws play as gimmes. These groups keep each card to believable numbers: 48 teams vs 16, 34, 104, 16 cities vs 3, 6, 34, 48, 3 countries vs 6, 16, 104 matches vs 34, 48, Messi’s 34 games vs 16, 48, 104, Seattle’s 6 vs 3, 16. Assumes wc26:51 (1,248) is cut",
-  "v": "fix"
+  "at": "2026-10-17T00:26:19Z",
+  "h": "ac7442ef65",
+  "note": "The 48-team expansion was the headline of the tournament. With 34 and 16 in the pool, yellow is fair",
+  "v": "ok"
  },
  "wc26:46": {
   "at": "2026-10-17T00:04:39Z",
@@ -9059,13 +8949,10 @@
   "v": "ok"
  },
  "wc26:7": {
-  "at": "2026-10-17T00:04:39Z",
-  "fix": {
-   "ex": "Cabo Verde were the only team to keep Spain from scoring"
-  },
-  "h": "c724f4f483",
-  "note": "Newcomers gives it away: every decoy (Argentina, Brazil, England, Mexico, USA) is a long-time World Cup team. Without it the player has to remember the 0–0 shock",
-  "v": "fix"
+  "at": "2026-10-17T00:26:19Z",
+  "h": "6bd2e04718",
+  "note": "fifa.com final standings: Cabo Verde were the only side to stop Spain scoring",
+  "v": "ok"
  },
  "wc26:70": {
   "at": "2026-10-17T00:04:39Z",
