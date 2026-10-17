@@ -8,47 +8,57 @@
       "w": "Pelé",
       "means": "Brazil’s champion in 1958, 1962 and 1970",
       "ex": "Pelé won three World Cups, more than any other player",
+      "hook": "World Cups",
       "k": "player",
       "src": "https://www.fifa.com/en/articles/pele-o-rei-brazil-king-football-world-cup-obituary",
-      "d": 1
+      "d": 2
     },
     {
       "w": "Diego Maradona",
       "means": "A dazzling solo goal came minutes later",
       "ex": "Diego Maradona scored the “Hand of God” goal against England in 1986",
+      "hook": "Hand of God",
       "k": "player",
       "src": "https://www.fifa.com/en/articles/diego-maradona-argentina-england-hand-of-god-1986",
-      "d": 1
+      "d": 2
     },
     {
       "w": "Lionel Messi",
       "means": "Best player in 2014 and in 2022",
       "ex": "Lionel Messi is the only man to win the World Cup Golden Ball twice",
+      "hook": "Golden Ball",
       "k": "player",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/lionel-messi-argentina-stats-records",
-      "d": 1,
-      "current": true
+      "d": 2,
+      "current": true,
+      "out": true,
+      "out_why": "Same fact as awards:0, which keeps it (cross-deck twins, soccer expert)"
     },
     {
       "w": "Cristiano Ronaldo",
       "means": "He scored twice against Uzbekistan",
       "ex": "In 2026, Cristiano Ronaldo became the first player to score at six World Cups",
+      "hook": "World Cups",
       "k": "player",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/cristiano-ronaldo-portugal-goal-record",
-      "d": 1
+      "d": 1,
+      "out": true,
+      "out_why": "Same fact as wc26:14, which keeps it (cross-deck twins, soccer expert)"
     },
     {
       "w": "Zinedine Zidane",
       "means": "Heading wasn’t even his strength",
       "ex": "Zinedine Zidane scored two headers as France beat Brazil in the 1998 final",
+      "hook": "1998 final",
       "k": "player",
       "src": "https://www.fifa.com/en/articles/100-great-world-cup-moments-3-zinedine-zidane-1998-final-france-brazil",
-      "d": 1
+      "d": 2
     },
     {
       "w": "Andrés Iniesta",
       "means": "It spared Spain a penalty shootout",
-      "ex": "Andrés Iniesta scored the winner in the 116th minute of the 2010 final",
+      "ex": "Andrés Iniesta scored the winner in the 116th minute of the 2010 World Cup final",
+      "hook": "116th minute",
       "k": "player",
       "src": "https://www.fifa.com/en/articles/100-great-world-cup-moments-fifa-qatar-2022-6-iniesta-2010-final-spain-netherlands",
       "d": 2
@@ -57,6 +67,7 @@
       "w": "Johan Cruyff",
       "means": "Jan Olsson was the one fooled",
       "ex": "The famous turn that wowed the 1974 World Cup is named for Johan Cruyff",
+      "hook": "famous turn",
       "k": "player",
       "src": "https://www.fifa.com/en/articles/quotes-about-johan-cruyff-netherlands-ajax-barcelona-legend-total-football",
       "d": 2
@@ -64,7 +75,8 @@
     {
       "w": "Ferenc Puskás",
       "means": "Hungary’s “Galloping Major”",
-      "ex": "Since 2009, FIFA’s award for the year’s best goal has honored Ferenc Puskás",
+      "ex": "Since 2009, FIFA’s award for the year’s best goal has been named for Ferenc Puskás",
+      "hook": "best goal",
       "k": "player",
       "src": "https://www.fifa.com/en/news/articles/hungary-magical-magyars-puskas-hidegkuti-england-wembley-1953-six-three",
       "d": 2
@@ -73,23 +85,29 @@
       "w": "Marta",
       "means": "The first one was for 2024",
       "ex": "FIFA’s award for the best goal in women’s soccer is named after Marta",
-      "k": "player",
+      "hook": "best goal",
+      "k": "woman",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2024/articles/marta-award-nominees",
-      "d": 2
+      "d": 2,
+      "women": true,
+      "out": true,
+      "out_why": "Same fact as intl-women:60, which keeps it (cross-deck twins, soccer expert)"
     },
     {
       "w": "Oliver Kahn",
       "means": "Germany’s keeper at the 2002 World Cup",
       "ex": "Oliver Kahn was the first goalkeeper to win the World Cup Golden Ball",
+      "hook": "goalkeeper",
       "k": "player",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/oliver-kahn-goalkeeper-golden-ball",
-      "d": 3,
+      "d": 2,
       "current": false
     },
     {
       "w": "Gordon Banks",
       "means": "Pelé was sure he had scored",
       "ex": "England keeper Gordon Banks made a famous save from Pelé’s header in 1970",
+      "hook": "famous save",
       "k": "player",
       "src": "https://www.fifa.com/en/articles/100-great-world-cup-moments-80-gordon-banks-pele-save-mexico-1970",
       "d": 2
@@ -98,22 +116,27 @@
       "w": "Gary Lineker",
       "means": "Including a hat trick against Poland",
       "ex": "Gary Lineker won the Golden Boot at the 1986 World Cup with six goals",
+      "hook": "Golden Boot",
       "k": "player",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/gary-lineker-england-goals-1986",
-      "d": 2
+      "d": 3,
+      "out": true,
+      "out_why": "Same fact as awards:6, which keeps it (cross-deck twins, soccer expert)"
     },
     {
       "w": "Luka Modrić",
       "means": "Croatia reached the final that year",
       "ex": "Luka Modrić won the Golden Ball at the 2018 World Cup",
+      "hook": "Golden Ball",
       "k": "player",
       "src": "https://www.fifa.com/en/articles/100-great-world-cup-moments-qatar-2022-13-modric-croatia-2018-golden-ball",
       "d": 2
     },
     {
       "w": "Tim Cahill",
-      "means": "Australia’s top scorer, with 50 goals",
-      "ex": "Tim Cahill celebrated goals by shadow-boxing the corner flag",
+      "means": "Australia’s top men’s scorer, with 50",
+      "ex": "Tim Cahill celebrated goals by shadowboxing the corner flag",
+      "hook": "corner flag",
       "k": "player",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/tim-cahill-world-cup-celebrations",
       "d": 3
@@ -121,7 +144,8 @@
     {
       "w": "Franco Baresi",
       "means": "719 games for the club, 1977–1997",
-      "ex": "Franco Baresi spent his whole career at AC Milan, which retired his No. 6",
+      "ex": "Franco Baresi spent his whole career at AC Milan, who retired his No. 6",
+      "hook": "AC Milan",
       "k": "player",
       "src": "https://www.fifa.com/en/news/articles/franco-baresi-italy-obituary",
       "d": 3
@@ -130,6 +154,7 @@
       "w": "Mário Zagallo",
       "means": "Player in 1958 and 1962, coach in 1970",
       "ex": "Mário Zagallo was the first to win the World Cup as a player and as a coach",
+      "hook": "coach",
       "k": "player",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/zagallo-beckenbauer-deschamps-record",
       "d": 3
@@ -138,6 +163,7 @@
       "w": "Miroslav Klose",
       "means": "Silver, bronze, bronze, then gold",
       "ex": "Miroslav Klose won World Cup medals at four straight tournaments, 2002–2014",
+      "hook": "medals",
       "k": "player",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/miroslav-klose-four-medals",
       "d": 3
@@ -146,132 +172,165 @@
       "w": "Geoff Hurst",
       "means": "His third goal came in the 120th minute",
       "ex": "Geoff Hurst scored the first hat trick in a World Cup final, in 1966",
+      "hook": "hat trick",
       "k": "player",
       "src": "https://www.fifa.com/en/articles/100-great-world-cup-moments-qatar-2022-66-geoff-hurst-england-1966",
-      "d": 2
+      "d": 3
     },
     {
       "w": "Birgit Prinz",
       "means": "Germany won the title that year",
       "ex": "In 2003, Birgit Prinz won the Women’s World Cup Golden Ball and Golden Boot",
-      "k": "player",
+      "hook": "Golden Boot",
+      "k": "woman",
       "src": "https://www.fifa.com/en/articles/birgti-prinz-best-moments-womens-world-cup-australia-and-new-zealand-countdown",
-      "d": 3
+      "d": 3,
+      "women": true
     },
     {
       "w": "Megan Rapinoe",
       "means": "She also scored in the 2–0 final",
       "ex": "Megan Rapinoe won the Golden Ball and Golden Boot at the 2019 Women’s World Cup",
-      "k": "player",
+      "hook": "Golden Ball",
+      "k": "woman",
       "src": "https://www.fifa.com/en/tournaments/womens/womensworldcup/australia-new-zealand2023/articles/megan-rapinoe-usa-golden-ball-world-cup-australia-new-zealand-countdown",
-      "d": 1
+      "d": 2,
+      "women": true,
+      "out": true,
+      "out_why": "Same fact as intl-women:14, which keeps it (cross-deck twins, soccer expert)"
     },
     {
       "w": "Mia Hamm",
       "means": "She went on to win two World Cups",
       "ex": "Mia Hamm made her debut for the USA at just 15",
-      "k": "player",
+      "hook": "USA",
+      "k": "woman",
       "src": "https://www.fifa.com/en/tournaments/womens/womensworldcup/articles/mia-hamm-usa-interview",
-      "d": 1
+      "d": 2,
+      "women": true
     },
     {
       "w": "Alex Morgan",
       "means": "World champion in 2015 and 2019",
       "ex": "Alex Morgan retired in 2024 with 123 goals for the USA",
-      "k": "player",
+      "hook": "USA",
+      "k": "woman",
       "src": "https://www.fifa.com/en/news/articles/alex-morgan-retires-usa",
-      "d": 1
+      "d": 2,
+      "women": true
     },
     {
       "w": "Carli Lloyd",
       "means": "One goal came from the halfway line",
       "ex": "Carli Lloyd scored a hat trick in the 2015 Women’s World Cup final",
-      "k": "player",
+      "hook": "hat trick",
+      "k": "woman",
       "src": "https://www.fifa.com/en/tournaments/womens/womensworldcup/fifa-womens-world-cup-canada-2015/articles/carli-lloyd-usa-goal-final",
-      "d": 1
+      "d": 2,
+      "women": true,
+      "out": true,
+      "out_why": "Same fact as intl-women:57, which keeps it (cross-deck twins, soccer expert)"
     },
     {
       "w": "Abby Wambach",
       "means": "She finally won the World Cup in 2015",
       "ex": "Abby Wambach’s header in the 122nd minute saved the USA against Brazil in 2011",
-      "k": "player",
-      "src": "https://www.fifa.com/en/tournaments/womens/womensworldcup/fifa-womens-world-cup-usa-2003/articles/abby-wambach-usa-first-goal",
-      "d": 2
+      "hook": "header",
+      "k": "woman",
+      "src": "https://inside.fifa.com/en/news/wambach-s-towering-header-saves-usa",
+      "d": 2,
+      "women": true
     },
     {
       "w": "Michelle Akers",
       "means": "Top scorer at the first World Cup, 1991",
       "ex": "Michelle Akers scored the US women’s team’s first-ever goal, in 1985",
-      "k": "player",
+      "hook": "US women",
+      "k": "woman",
       "src": "https://www.fifa.com/en/articles/michelle-akers-usa-interview",
-      "d": 3
+      "d": 3,
+      "women": true
     },
     {
       "w": "Kaká",
       "means": "He also won the 2002 World Cup",
       "ex": "Kaká was named FIFA World Player of the Year in 2007",
+      "hook": "World Player",
       "k": "player",
       "src": "https://www.fifa.com/en/tournaments/mens/club-world-cup/usa-2025/articles/kaka-interview-club-world-cup-ac-milan-real-madrid",
-      "d": 2
+      "d": 3,
+      "out": true,
+      "out_why": "Same fact as awards:9, which keeps it (cross-deck twins, soccer expert)"
     },
     {
       "w": "Cafu",
       "means": "He captained Brazil in the third one",
       "ex": "Cafu was the first man to play in three World Cup finals",
+      "hook": "finals",
       "k": "player",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/cafu-brazil-three-finals",
-      "d": 2
+      "d": 3
     },
     {
-      "w": "13",
-      "means": "Still the most at a single World Cup",
-      "ex": "Just Fontaine scored 13 goals at a single World Cup, in 1958",
+      "w": "16",
+      "means": "He passed Ronaldo’s 15 in 2014",
+      "ex": "Miroslav Klose held the World Cup scoring record with 16 goals until 2026",
+      "hook": "Klose",
       "k": "number",
-      "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/top-goalscorers-one-edition",
-      "d": 3,
+      "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/fifa-world-cup-all-time-leading-scorers",
+      "d": 2,
       "current": true
     },
     {
       "w": "17",
-      "means": "Across six tournaments, 2003–2023",
+      "means": "Scored at five World Cups, 2003–2019",
       "ex": "Marta has scored 17 Women’s World Cup goals, the most ever",
+      "hook": "Marta",
       "k": "number",
       "src": "https://www.fifa.com/en/tournaments/womens/womensworldcup/articles/womens-world-cup-all-time-leading-scorers-goal-top-list",
       "d": 2,
+      "women": true,
       "current": true
     },
     {
       "w": "354",
       "means": "Only four women have passed 300",
       "ex": "Kristine Lilly played a world-record 354 games for the USA",
+      "hook": "Lilly",
       "k": "number",
       "src": "https://www.fifa.com/en/tournaments/womens/womensworldcup/brazil-2027/articles/lilly-sinclair-lloyd-pearce-record",
-      "d": 3,
-      "current": true
+      "d": 2,
+      "women": true,
+      "current": true,
+      "out": true,
+      "out_why": "Plays trivially: every decoy is 13–49, so “world-record ___ games” can only be 354 (soccer expert)"
     },
     {
       "w": "42",
       "means": "Still the oldest World Cup scorer",
       "ex": "Roger Milla was 42 when he scored at the 1994 World Cup",
-      "k": "number",
+      "hook": "Roger Milla",
+      "k": "age",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/roger-milla-oldest-goalscorer-cameroon",
-      "d": 2,
+      "d": 3,
       "current": true
     },
     {
       "w": "40",
       "means": "The oldest man to win the World Cup",
       "ex": "Dino Zoff was 40 when he lifted the World Cup for Italy in 1982",
-      "k": "number",
+      "hook": "Dino Zoff",
+      "k": "age",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/dino-zoff-italy-oldest-winner",
-      "d": 2,
+      "d": 3,
       "current": true
     },
     {
       "w": "45",
       "means": "He broke the record for oldest player",
       "ex": "Egypt’s Essam El Hadary played at the 2018 World Cup at age 45",
-      "k": "number",
+      "hook": "El Hadary",
+      "k": "age",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/essam-el-hadary-oldest-player",
       "d": 3,
       "current": false
@@ -280,6 +339,7 @@
       "w": "49",
       "means": "A 1966 World Cup winner",
       "ex": "Bobby Charlton scored 49 goals in 106 games for England",
+      "hook": "Charlton",
       "k": "number",
       "src": "https://www.fifa.com/en/news/articles/world-cup-winner-sir-bobby-charlton-died-aged-86",
       "d": 3
@@ -288,15 +348,19 @@
       "w": "34",
       "means": "Across six World Cups, 2006–2026",
       "ex": "Lionel Messi has played a record 34 World Cup matches",
+      "hook": "Messi",
       "k": "number",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/players-most-appearances-games-matches-history",
-      "d": 2,
-      "current": true
+      "d": 3,
+      "current": true,
+      "out": true,
+      "out_why": "Same fact as wc26:49, which keeps it (cross-deck twins, soccer expert)"
     },
     {
       "w": "22",
       "means": "Ten of them came in 2026",
       "ex": "Kylian Mbappé holds the World Cup scoring record with 22 goals",
+      "hook": "Mbappé",
       "k": "number",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/fifa-world-cup-all-time-leading-scorers",
       "d": 2,
@@ -305,7 +369,8 @@
     {
       "w": "Cameroon",
       "means": "They reached the quarterfinals",
-      "ex": "Roger Milla scored four goals for Cameroon at the 1990 World Cup, aged 38",
+      "ex": "Roger Milla, 38, scored four goals for Cameroon at the 1990 World Cup",
+      "hook": "Roger Milla",
       "k": "nation",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/roger-milla-oldest-goalscorer-cameroon",
       "d": 2
@@ -314,46 +379,55 @@
       "w": "Japan",
       "means": "She won the Golden Ball and Boot too",
       "ex": "Homare Sawa led Japan to the 2011 Women’s World Cup title",
+      "hook": "Homare Sawa",
       "k": "nation",
       "src": "https://www.fifa.com/en/tournaments/womens/womensworldcup/fifa-womens-world-cup-germany-2011/articles/sawa-golden-ball-boot-winner",
-      "d": 1
+      "d": 1,
+      "women": true
     },
     {
       "w": "China",
       "means": "Best player at the 1999 World Cup",
       "ex": "Sun Wen of China shared FIFA’s Women’s Player of the Century award",
+      "hook": "Sun Wen",
       "k": "nation",
       "src": "https://www.fifa.com/en/tournaments/womens/womensworldcup/fifa-womens-world-cup-china-1991/articles/sun-wen-china-pr-unforgettable-first-match",
-      "d": 1
+      "d": 1,
+      "women": true
     },
     {
       "w": "Canada",
       "means": "Her first was in 2003, her last in 2023",
       "ex": "Christine Sinclair played at six Women’s World Cups for Canada",
+      "hook": "Sinclair",
       "k": "nation",
       "src": "https://www.fifa.com/en/tournaments/womens/womensworldcup/articles/womens-world-cup-all-time-leading-scorers-goal-top-list",
-      "d": 1
+      "d": 1,
+      "women": true
     },
     {
       "w": "South Korea",
       "means": "He starred in Germany’s Bundesliga",
       "ex": "Cha Bum-kun came back at 33 to play for South Korea at the 1986 World Cup",
+      "hook": "Cha Bum-kun",
       "k": "nation",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/cha-bum-kun-korea-republic-current-squad-foundation-later-generations",
-      "d": 2
+      "d": 1
     },
     {
       "w": "Colombia",
       "means": "Famous for his blond curls",
       "ex": "Carlos Valderrama led Colombia to three straight World Cups, 1990–1998",
+      "hook": "Valderrama",
       "k": "nation",
       "src": "https://www.fifa.com/en/articles/carlos-valderrama-birthday-colombia-legend-art-of-passing",
       "d": 2
     },
     {
       "w": "Hungary",
-      "means": "They had 35 shots to England’s five",
+      "means": "They had 35 shots to England’s 5",
       "ex": "Ferenc Puskás and Hungary beat England 6–3 at Wembley in 1953",
+      "hook": "Puskás",
       "k": "nation",
       "src": "https://www.fifa.com/en/news/articles/hungary-magical-magyars-puskas-hidegkuti-england-wembley-1953-six-three",
       "d": 2
@@ -361,15 +435,17 @@
     {
       "w": "Netherlands",
       "means": "Players swapped positions freely",
-      "ex": "Total Football was perfected by Johan Cruyff’s Ajax and the Netherlands",
+      "ex": "Ajax and Johan Cruyff’s Netherlands perfected Total Football",
+      "hook": "Ajax",
       "k": "nation",
       "src": "https://www.fifa.com/en/articles/total-football-revolutionary-ajax-barcelona-netherlands-rinus-michels-johan-cruyff",
-      "d": 1
+      "d": 2
     },
     {
       "w": "Côte d’Ivoire",
-      "means": "Spearhead of its “golden generation”",
+      "means": "Spearhead of their “golden generation”",
       "ex": "Didier Drogba led Côte d’Ivoire at three World Cups",
+      "hook": "Drogba",
       "k": "nation",
       "src": "https://www.fifa.com/en/tournaments/mens/club-world-cup/usa-2025/articles/didier-drogba-club-world-cup-africa",
       "d": 2
@@ -378,6 +454,7 @@
       "w": "Paraguay",
       "means": "Free kicks and penalties",
       "ex": "José Luis Chilavert, a goalkeeper for Paraguay, scored over 50 career goals",
+      "hook": "Chilavert",
       "k": "nation",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/jose-luis-chilavert-paraguay-goalkeeper-free-kick-2002",
       "d": 3
@@ -386,6 +463,7 @@
       "w": "Iran",
       "means": "He reached 100 in 2004",
       "ex": "Ali Daei of Iran was the first man to score 100 international goals",
+      "hook": "Ali Daei",
       "k": "nation",
       "src": "https://www.fifa.com/en/news/articles/ali-daei-iran-interview-one-hundred-goals",
       "d": 2
@@ -394,6 +472,7 @@
       "w": "Türkiye",
       "means": "They went on to win bronze, 3–2",
       "ex": "Hakan Şükür scored for Türkiye after 11 seconds at the 2002 World Cup",
+      "hook": "11 seconds",
       "k": "nation",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/hakan-sukur-turkiye-fastest-goal-history",
       "d": 2
@@ -402,6 +481,7 @@
       "w": "Romania",
       "means": "He shone at the 1994 World Cup",
       "ex": "Gheorghe Hagi, “the Maradona of the Carpathians,” starred for Romania",
+      "hook": "Hagi",
       "k": "nation",
       "src": "https://www.fifa.com/en/articles/100-great-world-cup-moments-85-romania-hagi-usa-1994-fifa-world-cup-qatar-2022",
       "d": 2
@@ -410,6 +490,7 @@
       "w": "Portugal",
       "means": "They won 5–3 at the 1966 World Cup",
       "ex": "Eusébio scored four as Portugal came back from 3–0 down against North Korea",
+      "hook": "North Korea",
       "k": "nation",
       "src": "https://www.fifa.com/en/articles/100-great-world-cup-moments-qatar-2022-31-eusebio-portugal-star-1966",
       "d": 2
@@ -417,7 +498,8 @@
     {
       "w": "Santos",
       "means": "Then New York Cosmos, 1975–1977",
-      "ex": "Pelé spent most of his career at Santos and never joined a European club",
+      "ex": "Pelé spent most of his club career at Santos",
+      "hook": "Pelé",
       "k": "club",
       "src": "https://www.fifa.com/en/articles/pele-o-rei-brazil-king-football-world-cup-obituary",
       "d": 2
@@ -426,38 +508,43 @@
       "w": "Benfica",
       "means": "They beat Real Madrid 5–3",
       "ex": "Eusébio scored twice as Benfica won the 1962 European Cup final",
+      "hook": "Eusébio",
       "k": "club",
-      "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/pele-eusebio-reunion",
+      "src": "https://inside.fifa.com/fr/news/panthere-noire-montre-route-portugal-2926976",
       "d": 2
     },
     {
       "w": "Ajax",
       "means": "Cruyff’s hometown club in Amsterdam",
       "ex": "With Johan Cruyff, Ajax won three European Cups in a row, 1971–1973",
+      "hook": "Cruyff",
       "k": "club",
       "src": "https://www.fifa.com/en/articles/total-football-revolutionary-ajax-barcelona-netherlands-rinus-michels-johan-cruyff",
       "d": 2
     },
     {
       "w": "Bayern Munich",
-      "means": "Later its coach, then its president",
+      "means": "Later their coach, then their president",
       "ex": "Franz Beckenbauer made his first-team debut for Bayern Munich at 18",
+      "hook": "Beckenbauer",
       "k": "club",
       "src": "https://www.fifa.com/en/news/articles/franz-beckenbauer-obituary-germany",
-      "d": 1
+      "d": 2
     },
     {
       "w": "Dynamo Moscow",
       "means": "He saved over 150 penalties",
       "ex": "Lev Yashin spent his whole career at Dynamo Moscow",
+      "hook": "Lev Yashin",
       "k": "club",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/lev-yashin-soviet-union-goalkeeper",
-      "d": 3
+      "d": 2
     },
     {
       "w": "Milan",
       "means": "His father Cesare played there too",
       "ex": "Paolo Maldini made his debut for Milan at 16, in January 1985",
+      "hook": "Maldini",
       "k": "club",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/cesare-paolo-daniel-maldini-dynasty",
       "d": 2
@@ -466,6 +553,7 @@
       "w": "Flamengo",
       "means": "Plus a Copa Libertadores title",
       "ex": "Zico led Flamengo to the 1981 Intercontinental Cup",
+      "hook": "Zico",
       "k": "club",
       "src": "https://www.fifa.com/en/tournaments/mens/club-world-cup/usa-2025/articles/zico-flamengo-determination-love-passion",
       "d": 3
@@ -474,14 +562,16 @@
       "w": "Chelsea",
       "means": "They beat Bayern in Munich",
       "ex": "Didier Drogba helped Chelsea win the 2012 Champions League",
+      "hook": "Drogba",
       "k": "club",
       "src": "https://www.fifa.com/en/tournaments/mens/club-world-cup/usa-2025/articles/didier-drogba-club-world-cup-africa",
-      "d": 1
+      "d": 2
     },
     {
       "w": "Reims",
       "means": "Full name: Stade de Reims",
-      "ex": "Just Fontaine was a Reims striker when he starred at the 1958 World Cup",
+      "ex": "Just Fontaine played for Reims when he starred at the 1958 World Cup",
+      "hook": "Fontaine",
       "k": "club",
       "src": "https://www.fifa.com/en/articles/just-fontaine-13-goal-fifa-world-cup-record-sweden-1958-france",
       "d": 3
@@ -489,31 +579,37 @@
     {
       "w": "Portland Thorns",
       "means": "Her NWSL club, 2013–2024",
-      "ex": "Christine Sinclair won league titles with Portland Thorns in 2013, 2017 and 2022",
+      "ex": "Christine Sinclair won league titles with Portland Thorns in 2013, 2017, and 2022",
+      "hook": "Sinclair",
       "k": "club",
-      "src": "https://www.fifa.com/en/news/articles/canada-legend-sinclair-to-retire-from-international-football",
-      "d": 2
+      "src": "https://www.fifa.com/fr/articles/christine-sinclair-canada-retraite-portland",
+      "d": 1,
+      "women": true
     },
     {
       "w": "Barcelona",
       "means": "Putellas won it in 2021 and 2022",
       "ex": "Aitana Bonmatí and Alexia Putellas both won The Best award at Barcelona",
+      "hook": "Bonmatí",
       "k": "club",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2024/articles/aitana-bonmati-alexia-putellas-barcelona-four-straight-years",
-      "d": 1
+      "d": 2,
+      "women": true
     },
     {
       "w": "Real Madrid",
       "means": "He arrived from Juventus",
       "ex": "In 2001, Real Madrid paid a world-record fee for Zinedine Zidane",
+      "hook": "Zidane",
       "k": "club",
       "src": "https://www.fifa.com/en/tournaments/mens/club-world-cup/usa-2025/articles/zidane-real-madrid-juventus",
-      "d": 1
+      "d": 2
     },
     {
       "w": "O Rei",
       "means": "Portuguese for “the King”",
       "ex": "Brazil’s Pelé was known around the world as O Rei",
+      "hook": "Pelé",
       "k": "nickname",
       "src": "https://www.fifa.com/en/articles/pele-o-rei-brazil-king-football-world-cup-obituary",
       "d": 2
@@ -522,14 +618,18 @@
       "w": "Der Kaiser",
       "means": "German for “the Emperor”",
       "ex": "Franz Beckenbauer was nicknamed Der Kaiser",
+      "hook": "Beckenbauer",
       "k": "nickname",
       "src": "https://www.fifa.com/en/news/articles/franz-beckenbauer-obituary-germany",
-      "d": 2
+      "d": 2,
+      "out": true,
+      "out_why": "Same fact as bundesliga:42, which keeps it (cross-deck twins, soccer expert)"
     },
     {
       "w": "Black Spider",
       "means": "His black kit was really dark blue",
-      "ex": "Soviet goalkeeper Lev Yashin was nicknamed the Black Spider",
+      "ex": "Soviet goalkeeper Lev Yashin was known by the nickname Black Spider",
+      "hook": "Lev Yashin",
       "k": "nickname",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/lev-yashin-soviet-union-goalkeeper",
       "d": 2
@@ -537,7 +637,8 @@
     {
       "w": "Black Panther",
       "means": "Scored twice past Brazil in 1966",
-      "ex": "Portugal’s Eusébio was nicknamed the Black Panther",
+      "ex": "Portugal’s Eusébio was known by the nickname Black Panther",
+      "hook": "Eusébio",
       "k": "nickname",
       "src": "https://www.fifa.com/en/articles/pele-greatest-showdowns-eusebio-garrincha-lev-yashin",
       "d": 3
@@ -545,7 +646,8 @@
     {
       "w": "Divine Ponytail",
       "means": "Il Divin Codino in Italian",
-      "ex": "Italy’s Roberto Baggio was nicknamed the Divine Ponytail",
+      "ex": "Italy’s Roberto Baggio was known by the nickname Divine Ponytail",
+      "hook": "Baggio",
       "k": "nickname",
       "src": "https://www.fifa.com/en/articles/roberto-baggio-italy-azzurri-brazil-heartbreak-fifa-world-cup-final-rose-bowl",
       "d": 2
@@ -554,6 +656,7 @@
       "w": "O Fenômeno",
       "means": "Portuguese for “the Phenomenon”",
       "ex": "Brazil’s Ronaldo, two-goal hero of the 2002 World Cup final, was nicknamed O Fenômeno",
+      "hook": "Ronaldo",
       "k": "nickname",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/cafu-brazil-three-finals",
       "d": 2
@@ -562,6 +665,7 @@
       "w": "King Kazu",
       "means": "Still playing at 58 in 2025",
       "ex": "Japanese striker Miura is known to his fans as King Kazu",
+      "hook": "Miura",
       "k": "nickname",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/kazu-miura-japan-interview",
       "d": 2,
@@ -570,7 +674,8 @@
     {
       "w": "Little Bird",
       "means": "Star of Brazil’s 1962 World Cup win",
-      "ex": "Brazil winger Garrincha was nicknamed the Little Bird",
+      "ex": "Brazil winger Garrincha was known by the nickname Little Bird",
+      "hook": "Garrincha",
       "k": "nickname",
       "src": "https://www.fifa.com/en/articles/89-days-to-go-qatar-2022-garrincha-brazil-chile-1962-fifa-world-cup",
       "d": 3
@@ -579,17 +684,21 @@
       "w": "Der Bomber",
       "means": "He scored the winner in the 1974 final",
       "ex": "West Germany striker Gerd Müller was known as Der Bomber",
+      "hook": "Gerd Müller",
       "k": "nickname",
       "src": "https://www.fifa.com/en/articles/100-great-world-cup-moments-qatar-2022-17-gerd-muller-west-germany-final-goal-1974",
-      "d": 2
+      "d": 2,
+      "out": true,
+      "out_why": "Same fact as bundesliga:43, which keeps it (cross-deck twins, soccer expert)"
     },
     {
       "w": "La Pulga Atómica",
       "means": "Spanish for “the Atomic Flea”",
       "ex": "Lionel Messi is nicknamed La Pulga Atómica",
+      "hook": "Messi",
       "k": "nickname",
       "src": "https://www.fifa.com/en/articles/lionel-messi-argentina-wins-golden-ball-award-best-player-fifa-world-cup-qatar-2022",
-      "d": 1
+      "d": 2
     }
   ],
   "groups": [
@@ -623,14 +732,6 @@
       "Marta"
     ],
     [
-      "Megan Rapinoe",
-      "Alex Morgan",
-      "Carli Lloyd",
-      "Abby Wambach",
-      "Mia Hamm",
-      "Michelle Akers"
-    ],
-    [
       "Geoff Hurst",
       "Carli Lloyd"
     ],
@@ -651,16 +752,6 @@
     [
       "Miroslav Klose",
       "Cafu"
-    ],
-    [
-      "13",
-      "17",
-      "22"
-    ],
-    [
-      "40",
-      "42",
-      "45"
     ],
     [
       "Japan",

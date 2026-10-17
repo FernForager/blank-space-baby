@@ -32,3 +32,23 @@ Write a JSON file (path given in your task) shaped exactly like:
 - Every item must be supported by the primary source. Use the secondary only to fill gaps or confirm, and note in `src` which one you used.
 - Never invent facts, quotes, or dates. If you can't verify, cut it.
 - No song lyrics or quoted lines from songs, books or films — not even fragments.
+
+## Hooks and difficulty (the daily, Oct 16, 2026)
+Every card also needs these fields:
+- `hook`: the word or name on the card’s tile on the daily board. It is the player’s only clue to what the card is about, so they can bet on what they know.
+  - Copied from the sentence: one word or a few words in a row, spelled exactly as in `ex` (accents, curly apostrophes, hyphens). You may drop a possessive ’s (Arsenal’s → Arsenal), and lowercase the sentence’s first word if it isn’t a name.
+  - Never the answer, never part of it and never containing it (answer Real Madrid: not Real, not Madrid, not Real Madrid’s).
+  - Never a giveaway: someone who doesn’t know the fact can’t work out the answer from the hook alone (answer Gunners: not munitions).
+  - Short: 12 characters at most, counting spaces, ideally 10 or fewer. One or two words. No “the,” “a” or “an” in front.
+  - Readable out loud by a 10-year-old. When the sentence has a short familiar form, use it (Gladbach, not Mönchengladbach).
+  - Names the topic: the most recognizable name in the sentence (a player, club, national team, city, award or competition), or for rules, lingo and slang cards the key soccer word or object (throw-in, keeper, crossbar, shin guard).
+  - Specific beats general: a club or a player beats a league name (Haaland beats Bundesliga). The panel cut league labels on tiles, and a bare league name works like one. Use a league or competition name only when nothing more specific works.
+  - No empty words (team, game, player, fans, season, year, record) unless nothing better exists.
+  - Varied: don’t give many cards in one deck the same hook. Two tiles with the same hook on one board would confuse.
+- `d`: difficulty, which sets the tile’s card color. One bar for every deck:
+  - 1, easy (a white tile): a 10-year-old player and a brand-new soccer parent would both very likely get it right. True basics: rules every young player learns, field words, the most famous names anyone has heard of (Messi, the World Cup, Real Madrid). If you have to follow a league, a club or a national team to know it, it isn’t easy.
+  - 2, medium (a yellow card): a regular fan, or a player who watches some games, likely gets it. A beginner might or might not.
+  - 3, hard (a red card): a real fan knows it. Deep but gettable (Laws nuance, tactics, history across eras, the women’s game in depth, club lore), never obscure trivia.
+  - Judge the card as it’s played: the answer shows up next to two wrong answers of the same kind (`k`) from the same deck.
+  - Slang: easy means kids and parents both know it. Known mostly by one side of the family is medium.
+- `women`: `true` on a card about the women’s game (a women’s player, team, coach, league or competition), in any deck except NWSL and International Women’s, where every card counts already.

@@ -6,24 +6,27 @@
  "items": [
   {
    "w": "Juventus",
-   "means": "Titles 28 to 36 for the club",
+   "means": "Under Conte, Allegri and Sarri",
    "ex": "Juventus won nine titles in a row, from 2011–12 to 2019–20",
+   "hook": "nine titles",
    "k": "club",
    "src": "https://www.legaseriea.it/team/juventus/palmares",
-   "d": 1
+   "d": 2
   },
   {
    "w": "Juventus",
    "means": "Black and white came later",
    "ex": "When they were founded, Juventus played in pink shirts",
+   "hook": "pink shirts",
    "k": "club",
    "src": "https://www.legaseriea.it/serie-a/news/tutti-i-colori-della-serie-a-parte-1",
-   "d": 2
+   "d": 3
   },
   {
    "w": "Inter",
    "means": "Three Champions League wins",
-   "ex": "Inter are the only club to have played every Serie A season",
+   "ex": "Inter are the only club never to have been relegated from Serie A",
+   "hook": "relegated",
    "k": "club",
    "src": "https://www.legaseriea.it/serie-a/news/buon-compleanno-inter-x4658",
    "d": 2
@@ -32,31 +35,35 @@
    "w": "Inter",
    "means": "Named by writer Gianni Brera",
    "ex": "The Derby d’Italia is Inter vs. Juventus",
+   "hook": "Juventus",
    "k": "club",
    "src": "https://www.legaseriea.it/serie-a/news/inter-juventus-2025-2026-formazioni-risultato",
-   "d": 1
+   "d": 2
   },
   {
    "w": "Inter",
    "means": "Clinched at San Siro",
    "ex": "Inter are the reigning Serie A champions",
+   "hook": "champions",
    "k": "club",
    "src": "https://www.legaseriea.it/serie-a/news/inter-parma-primo-match-point-scudetto",
-   "d": 1,
+   "d": 2,
    "current": true
   },
   {
    "w": "Milan",
    "means": "Also called the Milan derby",
    "ex": "Milan face Inter in the Derby della Madonnina",
+   "hook": "Madonnina",
    "k": "club",
    "src": "https://en.legaseriea.it/supercoppa/news/the-derby-della-madonnina-in-the-final",
-   "d": 1
+   "d": 2
   },
   {
    "w": "Milan",
    "means": "He wanted a team of devils",
    "ex": "Founder Herbert Kilpin gave Milan their red and black",
+   "hook": "Kilpin",
    "k": "club",
    "src": "https://www.legaseriea.it/serie-a/news/tutti-i-colori-della-serie-a-parte-2",
    "d": 2
@@ -65,6 +72,7 @@
    "w": "Napoli",
    "means": "Atalanta lost the cup final",
    "ex": "In 1987, Napoli won their first scudetto and the Coppa Italia",
+   "hook": "Coppa Italia",
    "k": "club",
    "src": "https://www.legaseriea.it/serie-a/news/nel-1987-il-double-del-napoli",
    "d": 2
@@ -73,22 +81,25 @@
    "w": "Cagliari",
    "means": "Clinched by beating Bari 2–0",
    "ex": "Cagliari won their one and only scudetto in 1969–70",
+   "hook": "scudetto",
    "k": "club",
    "src": "https://www.legaseriea.it/serie-a/news/buon-compleanno-marcello-lippi-x1613",
-   "d": 2
+   "d": 3
   },
   {
    "w": "Sampdoria",
    "means": "Gianluca Vialli scored that day",
    "ex": "Sampdoria clinched the 1991 scudetto with a 3–0 win over Lecce",
+   "hook": "scudetto",
    "k": "club",
    "src": "https://www.legaseriea.it/serie-a/news/35-anni-fa-lo-scudetto-della-sampdoria",
    "d": 3
   },
   {
    "w": "Genoa",
-   "means": "Poet Gabriele D’Annunzio’s idea",
+   "means": "Gabriele D’Annunzio’s idea",
    "ex": "In 1924, champions Genoa were the first to wear the scudetto badge",
+   "hook": "scudetto",
    "k": "club",
    "src": "https://www.legaseriea.it/serie-a/news/il-simbolo-dello-scudetto-compie-102-anni",
    "d": 3
@@ -96,7 +107,8 @@
   {
    "w": "Torino",
    "means": "Seven scudetti in all",
-   "ex": "Torino won the title every season from 1945–46 to 1948–49",
+   "ex": "Valentino Mazzola’s Torino won the title every season from 1945–46 to 1948–49",
+   "hook": "Mazzola",
    "k": "club",
    "src": "https://www.legaseriea.it/team/torino/palmares",
    "d": 3
@@ -105,14 +117,16 @@
    "w": "Lazio",
    "means": "The Olympics began in Greece",
    "ex": "Lazio took their sky blue and white from the flag of Greece",
+   "hook": "Greece",
    "k": "club",
    "src": "https://www.legaseriea.it/serie-a/news/la-lazio-compie-126-anni",
-   "d": 2
+   "d": 3
   },
   {
    "w": "Fiorentina",
-   "means": "152 league goals in purple",
+   "means": "152 Serie A goals in purple",
    "ex": "Gabriel Batistuta is the top Serie A scorer in Fiorentina history",
+   "hook": "Batistuta",
    "k": "club",
    "src": "https://www.legaseriea.it/serie-a/news/oggi-festeggiano-causio-batistuta-e-giuseppe-rossi",
    "d": 2,
@@ -122,6 +136,7 @@
    "w": "Atalanta",
    "means": "Their first European trophy",
    "ex": "Atalanta won the Europa League in 2023–24",
+   "hook": "Europa",
    "k": "club",
    "src": "https://www.legaseriea.it/team/atalanta/palmares",
    "d": 2
@@ -130,6 +145,7 @@
    "w": "Parma",
    "means": "Plus the 1992–93 Cup Winners’ Cup",
    "ex": "Parma won the UEFA Cup in 1994–95 and again in 1998–99",
+   "hook": "UEFA Cup",
    "k": "club",
    "src": "https://www.legaseriea.it/team/parma/palmares",
    "d": 3
@@ -138,6 +154,7 @@
    "w": "Como",
    "means": "They once wore black and white",
    "ex": "Como wear blue in honor of their lake",
+   "hook": "blue",
    "k": "club",
    "src": "https://www.legaseriea.it/serie-a/news/tutti-i-colori-della-serie-a-parte-1",
    "d": 2
@@ -145,31 +162,35 @@
   {
    "w": "Gianluigi Buffon",
    "means": "Plus a record 176 caps for Italy",
-   "ex": "Gianluigi Buffon has played the most Serie A games, with 657",
+   "ex": "Gianluigi Buffon played a record 657 Serie A games, for Parma and Juventus",
+   "hook": "Parma",
    "k": "player",
    "src": "https://www.legaseriea.it/serie-a/news/buon-compleanno-gigi-buffon-x0061",
-   "d": 1
+   "d": 2
   },
   {
    "w": "Paolo Maldini",
    "means": "Including seven scudetti",
    "ex": "Paolo Maldini spent his whole career at Milan, winning 26 trophies",
+   "hook": "Milan",
    "k": "player",
    "src": "https://www.legaseriea.it/serie-a/news/buon-compleanno-paolo-maldini-x5425",
-   "d": 1
+   "d": 2
   },
   {
    "w": "Francesco Totti",
    "means": "In 619 Serie A games",
    "ex": "Francesco Totti scored 250 Serie A goals, all for Roma",
+   "hook": "Roma",
    "k": "player",
    "src": "https://www.legaseriea.it/serie-a/news/francesco-totti-spegne-50-candeline",
-   "d": 1
+   "d": 2
   },
   {
    "w": "Silvio Piola",
    "means": "A 1938 World Cup winner",
    "ex": "Stadiums in Novara and Vercelli are named after Silvio Piola",
+   "hook": "Novara",
    "k": "player",
    "src": "https://www.legaseriea.it/serie-a/news/buon-compleanno-shevchenko-x5287",
    "d": 3
@@ -178,6 +199,7 @@
    "w": "Gonzalo Higuaín",
    "means": "Breaking a record from 1949–50",
    "ex": "Gonzalo Higuaín scored a record 36 goals for Napoli in 2015–16",
+   "hook": "Napoli",
    "k": "player",
    "src": "https://www.legaseriea.it/serie-a/news/giornata-storica-per-batistuta-e-higuain",
    "d": 2
@@ -186,6 +208,7 @@
    "w": "Ciro Immobile",
    "means": "Tying the 2015–16 record",
    "ex": "Ciro Immobile scored 36 league goals for Lazio in 2019–20",
+   "hook": "Lazio",
    "k": "player",
    "src": "https://www.legaseriea.it/serie-a/news/giornata-storica-per-batistuta-e-higuain",
    "d": 2
@@ -194,14 +217,16 @@
    "w": "Gunnar Nordahl",
    "means": "A record that stood until 2016",
    "ex": "Gunnar Nordahl scored 35 goals for Milan in 1949–50",
+   "hook": "Milan",
    "k": "player",
    "src": "https://www.legaseriea.it/serie-a/news/giornata-storica-per-batistuta-e-higuain",
-   "d": 3
+   "d": 2
   },
   {
    "w": "Roberto Baggio",
    "means": "Known as the Divine Ponytail",
-   "ex": "Roberto Baggio retired in 2004 with 205 Serie A goals",
+   "ex": "Roberto Baggio retired at Brescia in 2004 with 205 Serie A goals",
+   "hook": "Brescia",
    "k": "player",
    "src": "https://www.legaseriea.it/serie-a/news/44-anni-fa-seconda-stella-della-juventus",
    "d": 2
@@ -210,22 +235,25 @@
    "w": "Alessandro Del Piero",
    "means": "188 of them came in Serie A",
    "ex": "Alessandro Del Piero scored 290 goals for Juventus",
+   "hook": "Juventus",
    "k": "player",
    "src": "https://www.legaseriea.it/serie-a/news/33-anni-fa-il-primo-gol-di-del-piero-in-serie-a",
-   "d": 1
+   "d": 2
   },
   {
    "w": "Zlatan Ibrahimović",
    "means": "He also won five scudetti",
    "ex": "Zlatan Ibrahimović scored 156 Serie A goals for Juventus, Inter and Milan",
+   "hook": "Milan",
    "k": "player",
    "src": "https://www.legaseriea.it/serie-a/news/buon-compleanno-bologna-x7084",
-   "d": 1
+   "d": 2
   },
   {
    "w": "Andrea Pirlo",
    "means": "Known as the Maestro",
    "ex": "Andrea Pirlo won two scudetti with Milan and four with Juventus",
+   "hook": "Juventus",
    "k": "player",
    "src": "https://www.legaseriea.it/serie-a/news/35-anni-fa-lo-scudetto-della-sampdoria",
    "d": 2
@@ -234,6 +262,7 @@
    "w": "Kaká",
    "means": "77 Serie A goals for Milan",
    "ex": "Milan’s Kaká won the Ballon d’Or in 2007",
+   "hook": "Ballon d’Or",
    "k": "player",
    "src": "https://www.legaseriea.it/serie-a/news/buon-compleanno-kaka",
    "d": 2
@@ -242,22 +271,25 @@
    "w": "Cristiano Ronaldo",
    "means": "In just 98 games",
    "ex": "Cristiano Ronaldo scored 81 Serie A goals in three seasons at Juventus",
+   "hook": "Juventus",
    "k": "player",
    "src": "https://www.legaseriea.it/serie-a/news/buon-compleanno-a-tevez-e-cr7-x9054",
-   "d": 1
+   "d": 2
   },
   {
    "w": "Gigi Riva",
    "means": "Nicknamed Rombo di Tuono",
    "ex": "Gigi Riva was Serie A’s top scorer three times with Cagliari",
+   "hook": "Cagliari",
    "k": "player",
    "src": "https://www.legaseriea.it/serie-a/news/oggi-festeggiano-causio-batistuta-e-giuseppe-rossi",
-   "d": 2
+   "d": 3
   },
   {
    "w": "Antonio Di Natale",
    "means": "209 goals, sixth all-time",
-   "ex": "Antonio Di Natale was Serie A’s top scorer in 2009–10 and 2010–11",
+   "ex": "Udinese’s Antonio Di Natale was Serie A’s top scorer in 2009–10 and 2010–11",
+   "hook": "Udinese",
    "k": "player",
    "src": "https://www.legaseriea.it/serie-a/news/buon-compleanno-toto-di-natale",
    "d": 3,
@@ -267,54 +299,61 @@
    "w": "Diego Maradona",
    "means": "It seats 54,732 fans",
    "ex": "Napoli’s home stadium is named after Diego Maradona",
+   "hook": "Napoli",
    "k": "player",
-   "src": "https://www.legaseriea.it/team/napoli/stadium",
-   "d": 1
+   "src": "https://en.legaseriea.it/team/napoli/stadium",
+   "d": 2
   },
   {
    "w": "José Mourinho",
    "means": "A first for an Italian club",
    "ex": "José Mourinho led Inter to the treble in 2009–10",
+   "hook": "treble",
    "k": "coach",
    "src": "https://www.legaseriea.it/serie-a/news/i-migliori-testa-a-testa-nella-lotta-scudetto",
-   "d": 1
+   "d": 2
   },
   {
    "w": "Giovanni Trapattoni",
    "means": "And one more with Inter",
    "ex": "Giovanni Trapattoni won seven scudetti as a coach, six with Juventus",
+   "hook": "Juventus",
    "k": "coach",
    "src": "https://www.legaseriea.it/serie-a/news/buon-compleanno-trap-x4566",
-   "d": 2
+   "d": 3
   },
   {
    "w": "Marcello Lippi",
    "means": "He coached Italy to that title",
    "ex": "Marcello Lippi won five scudetti with Juventus and the 2006 World Cup",
+   "hook": "World Cup",
    "k": "coach",
    "src": "https://www.legaseriea.it/serie-a/news/buon-compleanno-marcello-lippi-x1613",
-   "d": 2
+   "d": 3
   },
   {
    "w": "Arrigo Sacchi",
-   "means": "They won 3–1 at Pisa",
+   "means": "Milan won 3–1 at Pisa",
    "ex": "In 1987, Arrigo Sacchi gave Gullit and Van Basten their Serie A debuts",
+   "hook": "Van Basten",
    "k": "coach",
    "src": "https://www.legaseriea.it/serie-a/news/buon-compleanno-fabio-cannavaro-x3741",
    "d": 3
   },
   {
    "w": "Fabio Capello",
-   "means": "From 1991–92 to 1993–94",
-   "ex": "Fabio Capello led Milan to three titles in a row, starting in 1992",
+   "means": "The last came in 1993–94",
+   "ex": "Fabio Capello led Milan to three titles in a row, starting in 1991–92",
+   "hook": "Milan",
    "k": "coach",
    "src": "https://www.legaseriea.it/serie-a/news/la-giornata-dei-5-scudetti-x8318",
-   "d": 2
+   "d": 3
   },
   {
    "w": "Antonio Conte",
    "means": "Napoli’s fourth league title",
    "ex": "Antonio Conte coached Napoli to the 2024–25 scudetto",
+   "hook": "Napoli",
    "k": "coach",
    "src": "https://www.legaseriea.it/serie-a/news/l-anno-scorso-il-napoli-vinceva-lo-scudetto",
    "d": 2
@@ -323,6 +362,7 @@
    "w": "Cristian Chivu",
    "means": "In his first full season",
    "ex": "Cristian Chivu coached Inter to the 2025–26 scudetto",
+   "hook": "Inter",
    "k": "coach",
    "src": "https://www.legaseriea.it/serie-a/news/inter-parma-primo-match-point-scudetto",
    "d": 2
@@ -331,6 +371,7 @@
    "w": "Stefano Pioli",
    "means": "Milan’s first title in 11 years",
    "ex": "Stefano Pioli coached Milan to the 2021–22 scudetto",
+   "hook": "Milan",
    "k": "coach",
    "src": "https://www.legaseriea.it/serie-a/news/i-migliori-testa-a-testa-nella-lotta-scudetto",
    "d": 2
@@ -339,6 +380,7 @@
    "w": "Cesc Fàbregas",
    "means": "Como play at the Sinigaglia",
    "ex": "Cesc Fàbregas is the head coach of Como",
+   "hook": "Como",
    "k": "coach",
    "src": "https://en.legaseriea.it/team/como/stadium",
    "d": 2,
@@ -348,73 +390,82 @@
    "w": "Allianz Stadium",
    "means": "Built in 2011, it seats 41,507",
    "ex": "Juventus play their home games at the Allianz Stadium",
+   "hook": "Juventus",
    "k": "stadium",
    "src": "https://en.legaseriea.it/team/juventus/stadium",
-   "d": 1,
+   "d": 2,
    "current": true
   },
   {
    "w": "Olimpico",
    "means": "Built in 1953, it seats 69,689",
-   "ex": "Roma and Lazio share the Olimpico stadium",
+   "ex": "Roma and Lazio both play at the Olimpico",
+   "hook": "Lazio",
    "k": "stadium",
    "src": "https://en.legaseriea.it/team/roma/stadium",
-   "d": 1
+   "d": 2
   },
   {
    "w": "San Siro",
-   "means": "He won two World Cups with Italy",
-   "ex": "The San Siro stadium is named after Inter great Giuseppe Meazza",
+   "means": "Officially the Giuseppe Meazza",
+   "ex": "Inter and Milan both play home games at San Siro",
+   "hook": "Inter",
    "k": "stadium",
    "src": "https://www.legaseriea.it/serie-a/news/segui-le-partite-su-radio-tv-serie-a-con-serie-a-live",
-   "d": 1
+   "d": 2
   },
   {
    "w": "Renato Dall’Ara",
    "means": "It seats 36,532 fans",
    "ex": "Bologna play at the Renato Dall’Ara, built in 1927",
+   "hook": "Bologna",
    "k": "stadium",
    "src": "https://en.legaseriea.it/team/bologna/stadium",
-   "d": 2
+   "d": 3
   },
   {
    "w": "Artemio Franchi",
    "means": "Built in 1931, it seats 24,786",
    "ex": "Fiorentina play their home games at the Artemio Franchi",
+   "hook": "Fiorentina",
    "k": "stadium",
    "src": "https://en.legaseriea.it/team/fiorentina/stadium",
-   "d": 2
+   "d": 3
   },
   {
    "w": "Luigi Ferraris",
    "means": "It seats 33,205 fans",
    "ex": "Genoa play at the Luigi Ferraris, built in 1911",
+   "hook": "Genoa",
    "k": "stadium",
    "src": "https://en.legaseriea.it/team/genoa/stadium",
-   "d": 2
+   "d": 3
   },
   {
    "w": "New Balance Arena",
    "means": "Built in 1928, it seats 23,439",
-   "ex": "Atalanta’s stadium in Bergamo is now called the New Balance Arena",
+   "ex": "Atalanta play their home games in Bergamo at the New Balance Arena",
+   "hook": "Atalanta",
    "k": "stadium",
    "src": "https://en.legaseriea.it/team/atalanta/stadium",
-   "d": 3,
+   "d": 2,
    "current": true
   },
   {
    "w": "20",
-   "means": "Twenty clubs, twenty shirts",
-   "ex": "Serie A is played by 20 clubs",
+   "means": "Each plays 38 games a season",
+   "ex": "Serie A has 20 clubs",
+   "hook": "Serie A",
    "k": "number",
    "src": "https://www.legaseriea.it/team/index",
-   "d": 1,
+   "d": 2,
    "current": true
   },
   {
    "w": "36",
    "means": "Their first came in 1904–05",
    "ex": "Juventus have won a record 36 scudetti",
+   "hook": "Juventus",
    "k": "number",
    "src": "https://www.legaseriea.it/team/juventus/palmares",
    "d": 2,
@@ -424,6 +475,7 @@
    "w": "21",
    "means": "Clinched by beating Parma 2–0",
    "ex": "Inter’s 2025–26 title was their scudetto number 21",
+   "hook": "Inter",
    "k": "number",
    "src": "https://www.legaseriea.it/serie-a/news/inter-parma-primo-match-point-scudetto",
    "d": 2
@@ -432,6 +484,7 @@
    "w": "19",
    "means": "The latest came in 2021–22",
    "ex": "Milan have won the scudetto 19 times",
+   "hook": "Milan",
    "k": "number",
    "src": "https://www.legaseriea.it/team/milan/palmares",
    "d": 2,
@@ -441,6 +494,7 @@
    "w": "4",
    "means": "The first came in 1986–87",
    "ex": "Napoli have won the scudetto 4 times",
+   "hook": "Napoli",
    "k": "number",
    "src": "https://www.legaseriea.it/team/napoli/palmares",
    "d": 2,
@@ -450,40 +504,45 @@
    "w": "274",
    "means": "For Pro Vercelli, Lazio and more",
    "ex": "Silvio Piola scored a record 274 Serie A goals",
+   "hook": "Silvio Piola",
    "k": "number",
    "src": "https://www.legaseriea.it/serie-a/news/buon-compleanno-shevchenko-x5287",
-   "d": 3,
+   "d": 1,
    "current": true
   },
   {
    "w": "974",
    "means": "In the 2015–16 season",
    "ex": "Gianluigi Buffon once went a record 974 minutes without conceding",
+   "hook": "Buffon",
    "k": "number",
    "src": "https://www.legaseriea.it/serie-a/news/buon-compleanno-gigi-buffon-x0061",
-   "d": 3,
+   "d": 1,
    "current": true
   },
   {
    "w": "1908",
    "means": "Only club in every Serie A season",
    "ex": "Inter were founded in 1908",
+   "hook": "Inter",
    "k": "year",
    "src": "https://www.legaseriea.it/serie-a/news/buon-compleanno-inter-x4658",
-   "d": 2
+   "d": 3
   },
   {
    "w": "1900",
    "means": "First as a running club",
    "ex": "Lazio were founded on a bench in Rome in 1900",
+   "hook": "Lazio",
    "k": "year",
    "src": "https://www.legaseriea.it/serie-a/news/la-lazio-compie-126-anni",
-   "d": 2
+   "d": 3
   },
   {
    "w": "1927",
    "means": "A merger of three Rome clubs",
    "ex": "Roma were founded in 1927",
+   "hook": "Roma",
    "k": "year",
    "src": "https://www.legaseriea.it/serie-a/news/la-roma-compie-99-anni",
    "d": 3
@@ -492,6 +551,7 @@
    "w": "1909",
    "means": "Their first president was Swiss",
    "ex": "Bologna were founded in 1909",
+   "hook": "Bologna",
    "k": "year",
    "src": "https://www.legaseriea.it/serie-a/news/buon-compleanno-bologna-x7084",
    "d": 3
@@ -587,9 +647,8 @@
    "New Balance Arena"
   ],
   [
-   "19",
-   "20",
-   "21"
+   "Inter",
+   "Juventus"
   ]
  ],
  "cut": [

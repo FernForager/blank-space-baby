@@ -6,8 +6,9 @@
   "items": [
     {
       "w": "Brazil",
-      "means": "Its fifth title came in 2002",
-      "ex": "Brazil was the first nation to win five World Cups",
+      "means": "Still the only five-time champions",
+      "ex": "Brazil were the first nation to win five World Cups",
+      "hook": "World Cups",
       "k": "team",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/brazil-team-profile-history",
       "d": 1,
@@ -15,65 +16,73 @@
     },
     {
       "w": "Argentina",
-      "means": "Its third World Cup title",
+      "means": "Their third World Cup title",
       "ex": "Argentina beat France on penalties in the 2022 World Cup final",
+      "hook": "France",
       "k": "team",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/world-cup-champions-1982-2026-italy-argentina-germany-brazil-france-spain",
-      "d": 1
+      "d": 2
     },
     {
       "w": "Uruguay",
-      "means": "It won the title again in 1950",
+      "means": "They won the title again in 1950",
       "ex": "Uruguay hosted and won the very first World Cup",
+      "hook": "World Cup",
       "k": "team",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/uruguay-team-profile-history",
       "d": 2
     },
     {
       "w": "England",
-      "means": "Geoff Hurst scored a hat-trick",
+      "means": "Geoff Hurst scored a hat trick",
       "ex": "England beat West Germany 4–2 in the 1966 World Cup final",
+      "hook": "West Germany",
       "k": "team",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/england-team-profile-history",
-      "d": 1
+      "d": 2
     },
     {
       "w": "Morocco",
       "means": "Lost 2–0 to France in the semis",
       "ex": "In 2022, Morocco became the first African World Cup semifinalist",
+      "hook": "semifinalist",
       "k": "team",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/morocco-team-profile-history",
-      "d": 1
+      "d": 2
     },
     {
       "w": "Germany",
-      "means": "It went on to win the final",
+      "means": "They went on to win the final",
       "ex": "Germany beat host Brazil 7–1 in a 2014 World Cup semifinal",
+      "hook": "Brazil",
       "k": "team",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/germany-team-profile-history",
-      "d": 1
+      "d": 2
     },
     {
       "w": "Spain",
       "means": "Beat the Netherlands 1–0 in 2010",
-      "ex": "Spain won its first World Cup in South Africa",
+      "ex": "Spain won their first World Cup in South Africa",
+      "hook": "South Africa",
       "k": "team",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/world-cup-champions-1982-2026-italy-argentina-germany-brazil-france-spain",
-      "d": 1
+      "d": 2
     },
     {
       "w": "Italy",
       "means": "The first team to keep the title",
       "ex": "Italy won back-to-back World Cups in 1934 and 1938",
+      "hook": "back-to-back",
       "k": "team",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/world-cup-champions-1930-1978-uruguay-italy-germany-brazil-england-argentina",
-      "d": 2
+      "d": 3
     },
     {
       "w": "Greece",
       "means": "Big underdogs who won 1–0",
       "ex": "Greece won Euro 2004 by beating host Portugal in the final",
-      "k": "team",
+      "hook": "Euro 2004",
+      "k": "euro winner",
       "src": "https://www.uefa.com/uefaeuro/history/news/0254-0d7b673abd33-d04e3bb2cd62-1000--greece-crowned-kings-of-europe-after-euro-2004-final-win-ag/",
       "d": 2
     },
@@ -81,7 +90,8 @@
       "w": "Denmark",
       "means": "Beat Germany 2–0 in the final",
       "ex": "Denmark replaced Yugoslavia at Euro 1992 on short notice and won it",
-      "k": "team",
+      "hook": "Yugoslavia",
+      "k": "euro winner",
       "src": "https://www.uefa.com/uefaeuro/history/news/025a-0eb91faf9bf0-942d69c5a0a8-1000--euro-1992-all-you-need-to-know/",
       "d": 3
     },
@@ -89,14 +99,16 @@
       "w": "Czechoslovakia",
       "means": "Won the shoot-out 5–3",
       "ex": "Czechoslovakia beat West Germany on penalties to win Euro 1976",
-      "k": "team",
+      "hook": "Euro 1976",
+      "k": "euro winner",
       "src": "https://www.uefa.com/uefaeuro/history/news/0253-0d7b2fd33353-cdc961ca4218-1000--panenka-makes-his-name-as-czechoslovakia-beat-west-german/",
       "d": 3
     },
     {
       "w": "Croatia",
       "means": "Davor Šuker won the Golden Boot",
-      "ex": "Croatia finished third at its very first World Cup in 1998",
+      "ex": "Croatia finished third at their very first World Cup in 1998",
+      "hook": "1998",
       "k": "team",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/croatia-team-profile-history",
       "d": 2
@@ -104,23 +116,26 @@
     {
       "w": "Portugal",
       "means": "Beat France 1–0 in extra time",
-      "ex": "Portugal won Euro 2016, its first major trophy",
-      "k": "team",
+      "ex": "Portugal won Euro 2016, their first major trophy",
+      "hook": "Euro 2016",
+      "k": "euro winner",
       "src": "https://www.uefa.com/uefaeuro/history/news/0253-0d81c3763c88-e741506b5589-1000--portugal-spoil-france-s-party-with-extra-time-win/",
-      "d": 1
+      "d": 2
     },
     {
       "w": "France",
       "means": "Beat Croatia 4–2 in the final",
-      "ex": "France won its second World Cup in Russia in 2018",
+      "ex": "France won their second World Cup in Russia in 2018",
+      "hook": "Russia",
       "k": "team",
       "src": "https://www.fifa.com/en/articles/france-world-cup-team-profile-history",
-      "d": 1
+      "d": 2
     },
     {
       "w": "Lionel Messi",
       "means": "His second Golden Ball",
       "ex": "Lionel Messi won the Golden Ball at the 2022 World Cup",
+      "hook": "Golden Ball",
       "k": "player",
       "src": "https://www.fifa.com/en/articles/world-cup-qatar-2022-every-goal-highlights-messi-argentina-mbappe-france-winners",
       "d": 1
@@ -128,24 +143,29 @@
     {
       "w": "Kylian Mbappé",
       "means": "France still lost on penalties",
-      "ex": "Kylian Mbappé scored a hat-trick in the 2022 World Cup final",
+      "ex": "Kylian Mbappé scored a hat trick in the 2022 World Cup final",
+      "hook": "hat trick",
       "k": "player",
       "src": "https://www.fifa.com/en/articles/france-world-cup-team-profile-history",
-      "d": 1
+      "d": 2
     },
     {
       "w": "Pelé",
       "means": "Champion in 1958, 1962 and 1970",
       "ex": "Pelé is the only player to win three World Cups",
+      "hook": "World Cups",
       "k": "player",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/pele-three-world-cup-titles-only-player",
-      "d": 1,
-      "current": true
+      "d": 2,
+      "current": true,
+      "out": true,
+      "out_why": "Same fact as legends:0, which keeps it (cross-deck twins, soccer expert)"
     },
     {
       "w": "Cristiano Ronaldo",
-      "means": "Also its most capped player",
+      "means": "Also their most capped player",
       "ex": "Cristiano Ronaldo is Portugal’s all-time leading scorer",
+      "hook": "Portugal",
       "k": "player",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/portugal-team-profile-history",
       "d": 1,
@@ -155,14 +175,18 @@
       "w": "Zinedine Zidane",
       "means": "France’s first World Cup title",
       "ex": "Zinedine Zidane scored twice as France beat Brazil in the 1998 final",
+      "hook": "1998 final",
       "k": "player",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/world-cup-champions-1982-2026-italy-argentina-germany-brazil-france-spain",
-      "d": 2
+      "d": 2,
+      "out": true,
+      "out_why": "Same fact as legends:4, which keeps it (cross-deck twins, soccer expert)"
     },
     {
       "w": "Mario Götze",
       "means": "An extra-time volley",
       "ex": "Mario Götze scored the winning goal in the 2014 World Cup final",
+      "hook": "World Cup",
       "k": "player",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/world-cup-champions-1982-2026-italy-argentina-germany-brazil-france-spain",
       "d": 2
@@ -171,46 +195,56 @@
       "w": "Andrés Iniesta",
       "means": "Four minutes from the end",
       "ex": "Andrés Iniesta scored Spain’s winner in the 2010 World Cup final",
+      "hook": "Spain",
       "k": "player",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/world-cup-champions-1982-2026-italy-argentina-germany-brazil-france-spain",
-      "d": 2
+      "d": 2,
+      "out": true,
+      "out_why": "Same fact as legends:5, which keeps it (cross-deck twins, soccer expert)"
     },
     {
       "w": "Diego Maradona",
       "means": "He scored twice against England",
       "ex": "Diego Maradona led Argentina to the 1986 World Cup title",
+      "hook": "Argentina",
       "k": "player",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/world-cup-champions-1982-2026-italy-argentina-germany-brazil-france-spain",
-      "d": 1
-    },
-    {
-      "w": "Luka Modrić",
-      "means": "Croatia lost the final to France",
-      "ex": "Luka Modrić won the Golden Ball after Croatia reached the 2018 final",
-      "k": "player",
-      "src": "https://www.fifa.com/en/articles/100-great-world-cup-moments-qatar-2022-13-modric-croatia-2018-golden-ball",
       "d": 2
     },
     {
-      "w": "Tim Howard",
-      "means": "16 saves at Brazil 2014",
-      "ex": "USA keeper Tim Howard set a World Cup saves record against Belgium",
+      "w": "Luka Modrić",
+      "means": "Given to the tournament’s best player",
+      "ex": "Luka Modrić won the Golden Ball after Croatia reached the 2018 final",
+      "hook": "Croatia",
       "k": "player",
-      "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/usa-team-profile-history",
+      "src": "https://www.fifa.com/en/articles/100-great-world-cup-moments-qatar-2022-13-modric-croatia-2018-golden-ball",
+      "d": 2,
+      "out": true,
+      "out_why": "Same fact as legends:12, which keeps it (cross-deck twins, soccer expert)"
+    },
+    {
+      "w": "Tim Howard",
+      "means": "16 saves, a record now shared",
+      "ex": "USA keeper Tim Howard set a World Cup saves record against Belgium",
+      "hook": "Belgium",
+      "k": "player",
+      "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/tim-howard-usa-record-most-saves-game",
       "d": 2
     },
     {
       "w": "Landon Donovan",
-      "means": "It won the USA its group",
+      "means": "The USA won their group",
       "ex": "Landon Donovan scored a last-minute winner against Algeria in 2010",
+      "hook": "Algeria",
       "k": "player",
-      "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/usa-team-profile-history",
+      "src": "https://www.ussoccer.com/stories/2010/06/us-wins-group-c-with-1-0-win-against-algeria",
       "d": 2
     },
     {
       "w": "Bert Patenaude",
-      "means": "For the USA in 1930",
-      "ex": "Bert Patenaude scored the first hat-trick in World Cup history",
+      "means": "For the USA, against Paraguay",
+      "ex": "Bert Patenaude scored the first hat trick in World Cup history",
+      "hook": "hat trick",
       "k": "player",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/usa-team-profile-history",
       "d": 3
@@ -219,63 +253,73 @@
       "w": "Johan Cruyff",
       "means": "Now known as the Cruyff Turn",
       "ex": "Johan Cruyff showed off his famous turn against Sweden in 1974",
+      "hook": "famous turn",
       "k": "player",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/netherlands-team-profile-history",
-      "d": 2
+      "d": 2,
+      "out": true,
+      "out_why": "Same fact as legends:6, which keeps it (cross-deck twins, soccer expert)"
     },
     {
       "w": "Marco van Basten",
       "means": "The Dutch beat the USSR 2–0",
       "ex": "Marco van Basten scored a famous volley in the Euro 1988 final",
+      "hook": "Euro 1988",
       "k": "player",
       "src": "https://www.uefa.com/uefaeuro/history/news/0253-0d8162342da4-964ee372d4bf-1000--ten-great-euro-moments-van-basten-s-volley/",
-      "d": 2
+      "d": 3
     },
     {
       "w": "Michel Platini",
-      "means": "Including two hat-tricks",
+      "means": "Including two hat tricks",
       "ex": "Michel Platini scored a record nine goals at Euro 1984",
+      "hook": "Euro 1984",
       "k": "player",
       "src": "https://www.uefa.com/uefaeuro/history/news/0253-0d811e08aca4-9adde9d7b0f6-1000--euro-history-makers-1984-michel-platini/",
-      "d": 3,
+      "d": 2,
       "current": true
     },
     {
       "w": "Antonín Panenka",
       "means": "That chip now bears his name",
       "ex": "Antonín Panenka won Euro 1976 with a chipped penalty",
+      "hook": "Euro 1976",
       "k": "player",
       "src": "https://www.uefa.com/uefaeuro/history/news/0253-0d7d2111437a-04b4248f94f0-1000--the-man-who-gave-the-panenka-penalty-its-name/",
-      "d": 3
+      "d": 2
     },
     {
       "w": "Lamine Yamal",
       "means": "He turned 17 the day before the final",
       "ex": "Lamine Yamal was named Young Player of the Tournament at Euro 2024",
+      "hook": "Young Player",
       "k": "player",
       "src": "https://www.uefa.com/uefaeuro/history/news/028f-1b5e5e91b6e6-b9784b9e13fb-1000--lamine-yamal-named-euro-2024-young-player-of-the-tournament/",
-      "d": 1
+      "d": 2
     },
     {
       "w": "Gavi",
       "means": "An outside-of-the-foot strike",
       "ex": "Spain’s Gavi scored with a trivela volley against Costa Rica in 2022",
+      "hook": "trivela",
       "k": "player",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/spain-team-profile-history",
-      "d": 3
+      "d": 2
     },
     {
       "w": "Mikel Oyarzabal",
       "means": "Spain beat England 2–1",
       "ex": "Mikel Oyarzabal scored Spain’s late winner in the Euro 2024 final",
+      "hook": "Euro 2024",
       "k": "player",
       "src": "https://www.uefa.com/uefaeuro/history/news/028f-1b5e5c2b7b67-d5faab9be20b-1000--spain-2-1-england-late-oyarzabal-winner-earns-la-roja-reco/",
       "d": 2
     },
     {
       "w": "Vittorio Pozzo",
-      "means": "Italy in 1934 and 1938",
-      "ex": "Vittorio Pozzo was the first coach to win two World Cups",
+      "means": "Champions in 1934 and 1938",
+      "ex": "Italy’s Vittorio Pozzo is the only coach to win two World Cups",
+      "hook": "Italy",
       "k": "coach",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/vittorio-pozzo-only-coach-two-titles",
       "d": 3,
@@ -285,6 +329,7 @@
       "w": "Alf Ramsey",
       "means": "His team: the “wingless wonders”",
       "ex": "Alf Ramsey coached England to the 1966 World Cup title",
+      "hook": "England",
       "k": "coach",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/england-team-profile-history",
       "d": 2
@@ -293,14 +338,16 @@
       "w": "Didier Deschamps",
       "means": "Captain in 1998, coach in 2018",
       "ex": "Didier Deschamps won the World Cup as France’s captain and coach",
+      "hook": "France",
       "k": "coach",
       "src": "https://www.fifa.com/en/articles/france-world-cup-team-profile-history",
-      "d": 1
+      "d": 2
     },
     {
       "w": "Lionel Scaloni",
       "means": "He first took over in 2018",
       "ex": "Lionel Scaloni coached Argentina to the 2022 World Cup title",
+      "hook": "Argentina",
       "k": "coach",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/argentina-team-profile-history",
       "d": 2
@@ -309,6 +356,7 @@
       "w": "Otto Rehhagel",
       "means": "Greece beat Portugal 1–0",
       "ex": "Otto Rehhagel coached Greece to the Euro 2004 title",
+      "hook": "Greece",
       "k": "coach",
       "src": "https://www.uefa.com/uefaeuro/history/news/0254-0d7b673abd33-d04e3bb2cd62-1000--greece-crowned-kings-of-europe-after-euro-2004-final-win-ag/",
       "d": 3
@@ -317,6 +365,7 @@
       "w": "Mauricio Pochettino",
       "means": "He followed Gregg Berhalter",
       "ex": "The USMNT hired Argentine coach Mauricio Pochettino in 2024",
+      "hook": "USMNT",
       "k": "coach",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/usa-team-profile-history",
       "d": 2
@@ -325,14 +374,16 @@
       "w": "Bruce Arena",
       "means": "The USA’s best finish since 1930",
       "ex": "Bruce Arena coached the USA to the 2002 World Cup quarterfinals",
+      "hook": "USA",
       "k": "coach",
-      "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/usa-team-profile-history",
+      "src": "https://www.ussoccer.com/stories/2022/06/20-years-later-usmnt-players-remember-run-to-2002-world-cup-quarterfinals",
       "d": 2
     },
     {
       "w": "Maracanã",
       "means": "Known as the Maracanazo",
-      "ex": "Uruguay stunned Brazil in the deciding game of 1950 at the Maracanã",
+      "ex": "Uruguay stunned Brazil at the Maracanã to win the 1950 World Cup",
+      "hook": "Uruguay",
       "k": "stadium",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/uruguay-team-profile-history",
       "d": 2
@@ -341,38 +392,43 @@
       "w": "Wembley",
       "means": "Italy won the shoot-out 3–2",
       "ex": "Italy beat England on penalties in the Euro 2020 final at Wembley",
+      "hook": "Euro 2020",
       "k": "stadium",
       "src": "https://www.uefa.com/uefaeuro/history/news/026b-12bba5b7b7a1-5519282c3d1a-1000--italy-1-1-england-aet-3-2-on-pens-donnarumma-the-hero-as-a/",
-      "d": 1
+      "d": 2
     },
     {
       "w": "Rose Bowl",
       "means": "In Pasadena, California",
       "ex": "Brazil beat Italy on penalties in the 1994 final at the Rose Bowl",
+      "hook": "1994 final",
       "k": "stadium",
-      "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/world-cup-champions-1982-2026-italy-argentina-germany-brazil-france-spain",
+      "src": "https://www.fifa.com/en/articles/roberto-baggio-italy-azzurri-brazil-heartbreak-fifa-world-cup-final-rose-bowl",
       "d": 2
     },
     {
       "w": "Lusail Stadium",
       "means": "In Lusail, Qatar",
       "ex": "Argentina won the 2022 World Cup final at Lusail Stadium",
+      "hook": "Argentina",
       "k": "stadium",
-      "src": "https://www.fifa.com/en/tournaments/mens/worldcup/qatar2022",
+      "src": "https://www.fifa.com/en/articles/france-argentina-closing-ceremony-fifa-world-cup-qatar-2022",
       "d": 2
     },
     {
       "w": "Soccer City",
       "means": "Iniesta scored the winner there",
       "ex": "Spain won the 2010 World Cup final at Soccer City",
+      "hook": "Spain",
       "k": "stadium",
       "src": "https://www.fifa.com/en/articles/andres-iniesta-tribute-spain-barcelona",
-      "d": 3
+      "d": 2
     },
     {
       "w": "Azteca Stadium",
       "means": "Brazil’s third world title",
       "ex": "Brazil beat Italy 4–1 in the 1970 final at Azteca Stadium",
+      "hook": "1970 final",
       "k": "stadium",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/world-cup-champions-1930-1978-uruguay-italy-germany-brazil-england-argentina",
       "d": 2
@@ -381,6 +437,7 @@
       "w": "1930",
       "means": "Thirteen teams took part",
       "ex": "The first World Cup was played in Uruguay in 1930",
+      "hook": "Uruguay",
       "k": "year",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/world-cup-champions-1930-1978-uruguay-italy-germany-brazil-england-argentina",
       "d": 1
@@ -388,7 +445,8 @@
     {
       "w": "1954",
       "means": "Called the Miracle of Bern",
-      "ex": "West Germany won its first World Cup in 1954",
+      "ex": "West Germany won their first World Cup in 1954",
+      "hook": "West Germany",
       "k": "year",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/germany-team-profile-history",
       "d": 3
@@ -397,6 +455,7 @@
       "w": "1958",
       "means": "Brazil beat host Sweden 5–2",
       "ex": "A 17-year-old Pelé won his first World Cup in 1958",
+      "hook": "Pelé",
       "k": "year",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/world-cup-champions-1930-1978-uruguay-italy-germany-brazil-england-argentina",
       "d": 2
@@ -405,6 +464,7 @@
       "w": "1982",
       "means": "West Germany beat France",
       "ex": "The first penalty shoot-out at a World Cup took place in 1982",
+      "hook": "shoot-out",
       "k": "year",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/germany-team-profile-history",
       "d": 3
@@ -413,38 +473,43 @@
       "w": "1994",
       "means": "Co-hosted again in 2026",
       "ex": "The USA hosted the World Cup for the first time in 1994",
+      "hook": "USA",
       "k": "year",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/usa-team-profile-history",
-      "d": 1
+      "d": 2
     },
     {
       "w": "2002",
-      "means": "Brazil won its fifth title",
+      "means": "The first co-hosted World Cup",
       "ex": "South Korea and Japan hosted the first World Cup in Asia in 2002",
+      "hook": "Japan",
       "k": "year",
-      "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/world-cup-champions-1982-2026-italy-argentina-germany-brazil-france-spain",
+      "src": "https://www.fifa.com/en/articles/the-official-film-of-the-2002-fifa-world-cup",
       "d": 2
     },
     {
       "w": "2010",
       "means": "Spain won the final 1–0",
       "ex": "South Africa hosted the first World Cup in Africa in 2010",
+      "hook": "South Africa",
       "k": "year",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/world-cup-champions-1982-2026-italy-argentina-germany-brazil-france-spain",
-      "d": 1
+      "d": 2
     },
     {
       "w": "2022",
       "means": "Thirty-two teams took part",
-      "ex": "Qatar hosted the World Cup in November and December of 2022",
+      "ex": "Qatar hosted the World Cup in November and December 2022",
+      "hook": "Qatar",
       "k": "year",
-      "src": "https://www.fifa.com/en/tournaments/mens/worldcup/qatar2022",
+      "src": "https://www.fifa.com/en/articles/ten-queries-about-qatar-2022-world-cup",
       "d": 1
     },
     {
       "w": "Seleção",
       "means": "Also called the Canarinho",
       "ex": "Brazil’s national team goes by the nickname Seleção",
+      "hook": "Brazil",
       "k": "nickname",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/brazil-team-profile-history",
       "d": 2
@@ -453,6 +518,7 @@
       "w": "La Albiceleste",
       "means": "World champions in 2022",
       "ex": "Argentina’s national team goes by the nickname La Albiceleste",
+      "hook": "Argentina",
       "k": "nickname",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/argentina-team-profile-history",
       "d": 2
@@ -461,22 +527,25 @@
       "w": "Three Lions",
       "means": "World champions in 1966",
       "ex": "England’s national team goes by the nickname Three Lions",
+      "hook": "England",
       "k": "nickname",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/england-team-profile-history",
       "d": 1
     },
     {
       "w": "La Roja",
-      "means": "First world title in 2010",
+      "means": "World champions in 2010 and 2026",
       "ex": "Spain’s national team goes by the nickname La Roja",
+      "hook": "Spain",
       "k": "nickname",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/spain-team-profile-history",
-      "d": 1
+      "d": 2
     },
     {
       "w": "Oranje",
       "means": "Runners-up in 1974, 1978 and 2010",
       "ex": "The Netherlands’ national team goes by the nickname Oranje",
+      "hook": "Netherlands",
       "k": "nickname",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/netherlands-team-profile-history",
       "d": 2
@@ -485,14 +554,16 @@
       "w": "Les Bleus",
       "means": "World champions in 1998 and 2018",
       "ex": "France’s national team goes by the nickname Les Bleus",
+      "hook": "France",
       "k": "nickname",
       "src": "https://www.fifa.com/en/articles/france-world-cup-team-profile-history",
-      "d": 1
+      "d": 2
     },
     {
       "w": "Atlas Lions",
       "means": "World Cup semifinalists in 2022",
       "ex": "Morocco’s national team goes by the nickname Atlas Lions",
+      "hook": "Morocco",
       "k": "nickname",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/morocco-team-profile-history",
       "d": 2
@@ -501,6 +572,7 @@
       "w": "Stars and Stripes",
       "means": "Hosts of the 1994 World Cup",
       "ex": "The USA’s men’s team goes by the nickname Stars and Stripes",
+      "hook": "USA",
       "k": "nickname",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/usa-team-profile-history",
       "d": 1
@@ -509,6 +581,7 @@
       "w": "Azzurri",
       "means": "Back-to-back champions, 1934–38",
       "ex": "Italy’s national team goes by the nickname Azzurri",
+      "hook": "Italy",
       "k": "nickname",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/vittorio-pozzo-only-coach-two-titles",
       "d": 2
@@ -517,9 +590,10 @@
       "w": "Lions of Teranga",
       "means": "Reached the last eight in 2002",
       "ex": "Senegal’s national team goes by the nickname Lions of Teranga",
+      "hook": "Senegal",
       "k": "nickname",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/senegal-team-profile-history",
-      "d": 3
+      "d": 2
     }
   ],
   "groups": [
@@ -558,10 +632,6 @@
       "Argentina"
     ],
     [
-      "Denmark",
-      "Greece"
-    ],
-    [
       "Croatia",
       "Portugal"
     ],
@@ -573,12 +643,6 @@
       "Brazil",
       "Germany",
       "Italy"
-    ],
-    [
-      "Greece",
-      "Denmark",
-      "Czechoslovakia",
-      "Portugal"
     ],
     [
       "Argentina",

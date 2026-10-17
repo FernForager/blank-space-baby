@@ -8,38 +8,43 @@
       "w": "Harry Kane",
       "means": "The most by anyone for one club",
       "ex": "Harry Kane scored 213 league goals for Tottenham",
+      "hook": "Tottenham",
       "k": "player",
       "src": "https://www.premierleague.com/en/stats/records",
-      "d": 1
+      "d": 2
     },
     {
       "w": "Thierry Henry",
       "means": "Also Player of the Season twice",
       "ex": "Thierry Henry won the Golden Boot four times with Arsenal",
+      "hook": "Golden Boot",
       "k": "player",
       "src": "https://www.premierleague.com/en/stats/records",
-      "d": 1
+      "d": 2
     },
     {
       "w": "Mohamed Salah",
       "means": "47 in all, equal to the record",
       "ex": "Mohamed Salah had 29 goals and 18 assists for Liverpool in 2024–25",
+      "hook": "Liverpool",
       "k": "player",
-      "src": "https://www.premierleague.com/en/stats/records",
-      "d": 1
+      "src": "https://www.premierleague.com/news/4298728",
+      "d": 2
     },
     {
       "w": "Peter Crouch",
       "means": "The most headed goals in the league",
       "ex": "Peter Crouch scored 53 Premier League goals with his head",
+      "hook": "his head",
       "k": "player",
       "src": "https://www.premierleague.com/en/stats/records",
       "d": 2
     },
     {
       "w": "Sadio Mané",
-      "means": "For Southampton v Aston Villa",
-      "ex": "Sadio Mané scored a hat-trick in 2 minutes 56 seconds in 2015",
+      "means": "For Southampton against Aston Villa",
+      "ex": "Sadio Mané scored a hat trick in 2 minutes 56 seconds in 2015",
+      "hook": "hat trick",
       "k": "player",
       "src": "https://www.premierleague.com/en/stats/records",
       "d": 3
@@ -48,6 +53,7 @@
       "w": "Jamie Vardy",
       "means": "A Premier League record run",
       "ex": "Jamie Vardy scored in 11 league games in a row for Leicester in 2015",
+      "hook": "Leicester",
       "k": "player",
       "src": "https://www.premierleague.com/en/stats/records",
       "d": 2
@@ -56,30 +62,34 @@
       "w": "David Beckham",
       "means": "The most of any player",
       "ex": "David Beckham scored 18 league goals from free kicks for Man United",
-      "k": "player",
-      "src": "https://www.premierleague.com/en/stats/records",
-      "d": 1
-    },
-    {
-      "w": "Eric Cantona",
-      "means": "Against Tottenham in August 1992",
-      "ex": "Eric Cantona scored the first Premier League hat-trick, for Leeds",
+      "hook": "free kicks",
       "k": "player",
       "src": "https://www.premierleague.com/en/stats/records",
       "d": 2
     },
     {
+      "w": "Eric Cantona",
+      "means": "Against Tottenham in August 1992",
+      "ex": "Eric Cantona scored the first Premier League hat trick, for Leeds",
+      "hook": "Leeds",
+      "k": "player",
+      "src": "https://www.premierleague.com/en/stats/records",
+      "d": 3
+    },
+    {
       "w": "Alisson Becker",
       "means": "One of six keepers to score",
       "ex": "Liverpool keeper Alisson Becker scored a goal at West Brom in 2021",
+      "hook": "West Brom",
       "k": "player",
       "src": "https://www.premierleague.com/en/stats/records",
-      "d": 1
+      "d": 2
     },
     {
       "w": "Shane Long",
       "means": "The fastest goal in league history",
       "ex": "Shane Long scored after just 7.69 seconds for Southampton in 2019",
+      "hook": "Southampton",
       "k": "player",
       "src": "https://www.premierleague.com/en/stats/records",
       "d": 2
@@ -88,30 +98,34 @@
       "w": "Frank Lampard",
       "means": "The most long-range goals of anyone",
       "ex": "Frank Lampard scored 41 Premier League goals from outside the box",
+      "hook": "box",
       "k": "player",
       "src": "https://www.premierleague.com/en/stats/records",
-      "d": 1
+      "d": 2
     },
     {
       "w": "Kevin De Bruyne",
       "means": "The most of any player",
       "ex": "Kevin De Bruyne won the Playmaker award three times for Man City",
+      "hook": "Playmaker",
       "k": "player",
       "src": "https://www.premierleague.com/en/stats/records",
-      "d": 1
+      "d": 2
     },
     {
       "w": "Phil Foden",
       "means": "In 2020–21 and 2021–22",
       "ex": "Phil Foden was named Young Player of the Season twice",
+      "hook": "Young Player",
       "k": "player",
       "src": "https://www.premierleague.com/en/stats/records",
-      "d": 1
+      "d": 2
     },
     {
       "w": "Jordan Pickford",
       "means": "Both times for Everton",
       "ex": "Jordan Pickford won Save of the Season in 2021–22 and 2025–26",
+      "hook": "Save",
       "k": "player",
       "src": "https://www.premierleague.com/en/stats/records",
       "d": 2
@@ -120,22 +134,25 @@
       "w": "Max Dowman",
       "means": "The league’s youngest scorer",
       "ex": "Max Dowman scored for Arsenal against Everton in 2026 at age 16",
+      "hook": "Arsenal",
       "k": "player",
       "src": "https://www.premierleague.com/en/stats/records",
-      "d": 3
+      "d": 2
     },
     {
       "w": "Cristiano Ronaldo",
       "means": "Both times with Man United",
-      "ex": "Cristiano Ronaldo was Player of the Season in 2006–07 and 2007–08",
+      "ex": "Like Nemanja Vidić, Cristiano Ronaldo won Player of the Season twice",
+      "hook": "Vidić",
       "k": "player",
       "src": "https://www.premierleague.com/en/stats/records",
-      "d": 1
+      "d": 2
     },
     {
       "w": "Son Heung-min",
       "means": "Erik Lamela won it the next year",
       "ex": "Son Heung-min won Goal of the Season for Tottenham in 2019–20",
+      "hook": "Tottenham",
       "k": "player",
       "src": "https://www.premierleague.com/en/stats/records",
       "d": 2
@@ -144,6 +161,7 @@
       "w": "Blackburn Rovers",
       "means": "Their only Premier League title",
       "ex": "Blackburn Rovers won the 1994–95 title with Alan Shearer’s 34 goals",
+      "hook": "Shearer",
       "k": "club",
       "src": "https://www.premierleague.com/en/news/4660971/every-premier-league-title-winning-manager-in-history",
       "d": 2
@@ -152,14 +170,16 @@
       "w": "Tottenham",
       "means": "A league record for one pair",
       "ex": "Harry Kane and Son Heung-min combined on 47 goals for Tottenham",
+      "hook": "Harry Kane",
       "k": "club",
       "src": "https://www.premierleague.com/en/stats/records",
-      "d": 1
+      "d": 2
     },
     {
       "w": "Portsmouth",
       "means": "11 goals, still the league record",
       "ex": "Portsmouth beat Reading 7–4 in 2007, the league’s highest-scoring game",
+      "hook": "Reading",
       "k": "club",
       "src": "https://www.premierleague.com/en/stats/records",
       "d": 3
@@ -168,6 +188,7 @@
       "w": "Nottingham Forest",
       "means": "Shinty is a game like hockey",
       "ex": "Nottingham Forest were founded in 1865 by a group of shinty players",
+      "hook": "shinty",
       "k": "club",
       "src": "https://www.premierleague.com/en/news/4592046/what-is-the-history-behind-every-premier-league-clubs-name",
       "d": 3
@@ -176,6 +197,7 @@
       "w": "Aston Villa",
       "means": "The cricket club came first, in 1872",
       "ex": "Aston Villa are named after a large Georgian building",
+      "hook": "Georgian",
       "k": "club",
       "src": "https://www.premierleague.com/en/news/4592046/what-is-the-history-behind-every-premier-league-clubs-name",
       "d": 2
@@ -184,6 +206,7 @@
       "w": "Crystal Palace",
       "means": "Glass hall, later moved to south London",
       "ex": "Crystal Palace are named after the building that housed the 1851 Great Exhibition",
+      "hook": "Exhibition",
       "k": "club",
       "src": "https://www.premierleague.com/en/news/4592046/what-is-the-history-behind-every-premier-league-clubs-name",
       "d": 2
@@ -192,6 +215,7 @@
       "w": "Sunderland",
       "means": "Opened to all players in 1880",
       "ex": "Sunderland began in 1879 as a football club for local teachers",
+      "hook": "teachers",
       "k": "club",
       "src": "https://www.premierleague.com/en/news/4592046/what-is-the-history-behind-every-premier-league-clubs-name",
       "d": 3
@@ -200,14 +224,16 @@
       "w": "José Mourinho",
       "means": "He won it again the next year",
       "ex": "José Mourinho won the 2004–05 title with Chelsea at age 42",
+      "hook": "Chelsea",
       "k": "manager",
       "src": "https://www.premierleague.com/en/news/4660971/every-premier-league-title-winning-manager-in-history",
-      "d": 1
+      "d": 2
     },
     {
       "w": "Kenny Dalglish",
       "means": "Title-winning boss in 1994–95",
       "ex": "Anfield has a stand named after Kenny Dalglish",
+      "hook": "Anfield",
       "k": "manager",
       "src": "https://www.premierleague.com/en/news/4725666/all-you-need-to-know-about-the-20-premier-league-stadiums",
       "d": 2
@@ -216,6 +242,7 @@
       "w": "Carlo Ancelotti",
       "means": "Against Wigan, on the final day",
       "ex": "Carlo Ancelotti’s Chelsea clinched the 2009–10 title with an 8–0 win",
+      "hook": "Chelsea",
       "k": "manager",
       "src": "https://www.premierleague.com/en/news/4660971/every-premier-league-title-winning-manager-in-history",
       "d": 2
@@ -224,6 +251,7 @@
       "w": "Antonio Conte",
       "means": "One of four Italian title winners",
       "ex": "Antonio Conte’s Chelsea won the 2016–17 title with a 3-4-3 formation",
+      "hook": "Chelsea",
       "k": "manager",
       "src": "https://www.premierleague.com/en/news/4660971/every-premier-league-title-winning-manager-in-history",
       "d": 2
@@ -232,6 +260,7 @@
       "w": "Roberto Mancini",
       "means": "He once played briefly for Leicester",
       "ex": "Roberto Mancini won Man City’s first Premier League title, in 2011–12",
+      "hook": "Man City",
       "k": "manager",
       "src": "https://www.premierleague.com/en/news/4660971/every-premier-league-title-winning-manager-in-history",
       "d": 2
@@ -240,30 +269,34 @@
       "w": "Manuel Pellegrini",
       "means": "From Chile, with Man City in 2013–14",
       "ex": "Manuel Pellegrini became the first non-European boss to win the title",
+      "hook": "non-European",
       "k": "manager",
       "src": "https://www.premierleague.com/en/news/4660971/every-premier-league-title-winning-manager-in-history",
-      "d": 3
+      "d": 2
     },
     {
       "w": "Jürgen Klopp",
       "means": "With a club-record 99 points",
       "ex": "Jürgen Klopp’s Liverpool won the 2019–20 title, ending a 30-year wait",
+      "hook": "Liverpool",
       "k": "manager",
       "src": "https://www.premierleague.com/en/news/4660971/every-premier-league-title-winning-manager-in-history",
-      "d": 1
+      "d": 2
     },
     {
       "w": "Sam Allardyce",
-      "means": "A record, from Bolton to Leeds",
-      "ex": "Sam Allardyce managed nine different Premier League clubs",
+      "means": "The most of any manager",
+      "ex": "Sam Allardyce managed nine Premier League clubs, from Bolton to Leeds",
+      "hook": "Bolton",
       "k": "manager",
-      "src": "https://www.premierleague.com/en/stats/records",
+      "src": "https://www.premierleague.com/news/662065",
       "d": 2
     },
     {
       "w": "Bobby Robson",
       "means": "Ipswich also named a stand after him",
       "ex": "Bobby Robson has statues outside the Ipswich and Newcastle grounds",
+      "hook": "Newcastle",
       "k": "manager",
       "src": "https://www.premierleague.com/en/news/4725666/all-you-need-to-know-about-the-20-premier-league-stadiums",
       "d": 3
@@ -272,22 +305,25 @@
       "w": "Highbury",
       "means": "Less than a mile from the Emirates",
       "ex": "Arsenal played at Highbury for 93 years",
+      "hook": "Arsenal",
       "k": "ground",
       "src": "https://www.premierleague.com/en/news/4725666/all-you-need-to-know-about-the-20-premier-league-stadiums",
-      "d": 1
+      "d": 2
     },
     {
       "w": "Goodison Park",
       "means": "Their home until the 2025 move",
       "ex": "Everton played at Goodison Park for 133 years",
+      "hook": "Everton",
       "k": "ground",
       "src": "https://www.premierleague.com/en/news/4725666/all-you-need-to-know-about-the-20-premier-league-stadiums",
-      "d": 1
+      "d": 2
     },
     {
       "w": "Maine Road",
       "means": "Their home before the Etihad",
       "ex": "Man City played at Maine Road until 2003",
+      "hook": "Man City",
       "k": "ground",
       "src": "https://www.premierleague.com/en/news/4725666/all-you-need-to-know-about-the-20-premier-league-stadiums",
       "d": 2
@@ -296,14 +332,16 @@
       "w": "Elland Road",
       "means": "Including Don Revie and Jack Charlton",
       "ex": "All four stands at Leeds United’s Elland Road are named after legends",
+      "hook": "Leeds",
       "k": "ground",
       "src": "https://www.premierleague.com/en/news/4725666/all-you-need-to-know-about-the-20-premier-league-stadiums",
-      "d": 1
+      "d": 2
     },
     {
       "w": "Portman Road",
       "means": "Capacity: 30,294",
       "ex": "Ipswich Town have played at Portman Road since 1884",
+      "hook": "Ipswich",
       "k": "ground",
       "src": "https://www.premierleague.com/en/news/4725666/all-you-need-to-know-about-the-20-premier-league-stadiums",
       "d": 2
@@ -312,6 +350,7 @@
       "w": "Selhurst Park",
       "means": "Shared with Wimbledon, 1991–2003",
       "ex": "Crystal Palace have played at Selhurst Park since 1924",
+      "hook": "Palace",
       "k": "ground",
       "src": "https://www.premierleague.com/en/news/4725666/all-you-need-to-know-about-the-20-premier-league-stadiums",
       "d": 2
@@ -319,7 +358,8 @@
     {
       "w": "Villa Park",
       "means": "Aston Villa’s home ground",
-      "ex": "Villa Park has hosted 55 FA Cup semi-finals, more than any ground",
+      "ex": "Villa Park has hosted 55 FA Cup semifinals, more than any ground",
+      "hook": "FA Cup",
       "k": "ground",
       "src": "https://www.premierleague.com/en/news/4725666/all-you-need-to-know-about-the-20-premier-league-stadiums",
       "d": 3
@@ -328,6 +368,7 @@
       "w": "City Ground",
       "means": "Another honors Peter Taylor",
       "ex": "A stand at Nottingham Forest’s City Ground is named after Brian Clough",
+      "hook": "Nottingham",
       "k": "ground",
       "src": "https://www.premierleague.com/en/news/4725666/all-you-need-to-know-about-the-20-premier-league-stadiums",
       "d": 2
@@ -335,16 +376,18 @@
     {
       "w": "Etihad Stadium",
       "means": "Named when he left in May 2026",
-      "ex": "Man City named an Etihad Stadium stand after Pep Guardiola in 2026",
+      "ex": "In 2026, Man City named a stand at their Etihad Stadium after Pep Guardiola",
+      "hook": "Guardiola",
       "k": "ground",
       "src": "https://www.premierleague.com/en/news/4725666/all-you-need-to-know-about-the-20-premier-league-stadiums",
-      "d": 1
+      "d": 2
     },
     {
-      "w": "1",
-      "means": "A win is worth three",
-      "ex": "A draw earns each team 1 point",
-      "k": "number",
+      "w": "3",
+      "means": "A loss earns nothing",
+      "ex": "A win is worth 3 points, and a draw is worth 1",
+      "hook": "draw",
+      "k": "count",
       "src": "https://www.premierleague.com/en/premier-league-explained",
       "d": 1
     },
@@ -352,7 +395,8 @@
       "w": "97",
       "means": "Most ever without winning the title",
       "ex": "Liverpool earned 97 points in 2018–19 and still missed the title",
-      "k": "number",
+      "hook": "Liverpool",
+      "k": "record",
       "src": "https://www.premierleague.com/en/stats/records",
       "d": 2
     },
@@ -360,15 +404,17 @@
       "w": "15",
       "means": "Plus a record 25 clean sheets",
       "ex": "Chelsea conceded just 15 league goals in 2004–05",
-      "k": "number",
+      "hook": "Chelsea",
+      "k": "count",
       "src": "https://www.premierleague.com/en/stats/records",
       "d": 2
     },
     {
       "w": "6",
-      "means": "Including Arsenal, Everton and Spurs",
-      "ex": "Since 1992, 6 clubs have played in every Premier League season",
-      "k": "number",
+      "means": "Like Arsenal, Chelsea, and Liverpool",
+      "ex": "Everton are one of 6 clubs to have played every Premier League season",
+      "hook": "Everton",
+      "k": "count",
       "src": "https://www.premierleague.com/en/premier-league-explained",
       "d": 2,
       "current": true
@@ -377,7 +423,8 @@
       "w": "7",
       "means": "Most recently Arsenal, in 2025–26",
       "ex": "Since 1992, 7 different clubs have won the title",
-      "k": "number",
+      "hook": "since 1992",
+      "k": "count",
       "src": "https://www.premierleague.com/en/premier-league-explained",
       "d": 2,
       "current": true
@@ -386,23 +433,26 @@
       "w": "86",
       "means": "A Premier League record",
       "ex": "Chelsea went 86 home league games unbeaten from 2004 to 2008",
-      "k": "number",
+      "hook": "unbeaten",
+      "k": "record",
       "src": "https://www.premierleague.com/en/stats/records",
-      "d": 3
+      "d": 2
     },
     {
       "w": "106",
       "means": "A single-season record",
       "ex": "Man City scored 106 league goals in 2017–18",
-      "k": "number",
+      "hook": "Man City",
+      "k": "record",
       "src": "https://www.premierleague.com/en/stats/records",
-      "d": 3
+      "d": 2
     },
     {
       "w": "1886",
       "means": "Founded by munitions workers",
       "ex": "Arsenal were founded in 1886",
-      "k": "year",
+      "hook": "Arsenal",
+      "k": "early year",
       "src": "https://www.premierleague.com/en/news/4592046/what-is-the-history-behind-every-premier-league-clubs-name",
       "d": 3
     },
@@ -410,7 +460,8 @@
       "w": "1910",
       "means": "Stands honor Ferguson and Charlton",
       "ex": "Man United have played at Old Trafford since 1910",
-      "k": "year",
+      "hook": "Old Trafford",
+      "k": "early year",
       "src": "https://www.premierleague.com/en/news/4725666/all-you-need-to-know-about-the-20-premier-league-stadiums",
       "d": 3
     },
@@ -418,7 +469,8 @@
       "w": "1919",
       "means": "Replacing the disbanded Leeds City",
       "ex": "Leeds United were founded in 1919",
-      "k": "year",
+      "hook": "Leeds",
+      "k": "early year",
       "src": "https://www.premierleague.com/en/news/4592046/what-is-the-history-behind-every-premier-league-clubs-name",
       "d": 3
     },
@@ -426,30 +478,34 @@
       "w": "2011",
       "means": "Their old home was Withdean Stadium",
       "ex": "Brighton moved into the Amex in 2011",
-      "k": "year",
+      "hook": "Brighton",
+      "k": "recent year",
       "src": "https://www.premierleague.com/en/news/4725666/all-you-need-to-know-about-the-20-premier-league-stadiums",
-      "d": 2
+      "d": 3
     },
     {
       "w": "1997",
       "means": "Built on the site of an old coal mine",
       "ex": "Sunderland moved into the Stadium of Light in 1997",
-      "k": "year",
+      "hook": "Sunderland",
+      "k": "recent year",
       "src": "https://www.premierleague.com/en/news/4725666/all-you-need-to-know-about-the-20-premier-league-stadiums",
-      "d": 3
+      "d": 2
     },
     {
       "w": "2016",
       "means": "After 110 league games for them",
       "ex": "Mikel Arteta retired as an Arsenal player in 2016",
-      "k": "year",
+      "hook": "Arteta",
+      "k": "recent year",
       "src": "https://www.premierleague.com/en/news/4660971/every-premier-league-title-winning-manager-in-history",
-      "d": 3
+      "d": 2
     },
     {
       "w": "Dial Square",
       "means": "Later renamed Royal Arsenal",
       "ex": "Arsenal’s first name was Dial Square, after a factory workshop",
+      "hook": "Arsenal",
       "k": "old name",
       "src": "https://www.premierleague.com/en/news/4592046/what-is-the-history-behind-every-premier-league-clubs-name",
       "d": 3
@@ -458,6 +514,7 @@
       "w": "Newton Heath",
       "means": "A team of railway workers",
       "ex": "Man United began in 1878 as Newton Heath",
+      "hook": "Man United",
       "k": "old name",
       "src": "https://www.premierleague.com/en/news/4592046/what-is-the-history-behind-every-premier-league-clubs-name",
       "d": 2
@@ -466,14 +523,16 @@
       "w": "Thames Ironworks",
       "means": "Replaced by West Ham in 1900",
       "ex": "West Ham began in 1895 as the works team of Thames Ironworks",
+      "hook": "West Ham",
       "k": "old name",
       "src": "https://www.premierleague.com/en/news/4592046/what-is-the-history-behind-every-premier-league-clubs-name",
-      "d": 3
+      "d": 2
     },
     {
       "w": "Ardwick",
       "means": "Began as a church team in 1880",
-      "ex": "Before it took the name Manchester City, the club was called Ardwick",
+      "ex": "Manchester City were once called Ardwick",
+      "hook": "Manchester",
       "k": "old name",
       "src": "https://www.premierleague.com/en/news/4592046/what-is-the-history-behind-every-premier-league-clubs-name",
       "d": 3
@@ -482,14 +541,16 @@
       "w": "Boscombe",
       "means": "Renamed AFC Bournemouth in 1971",
       "ex": "AFC Bournemouth began in 1899 as Boscombe Football Club",
+      "hook": "Bournemouth",
       "k": "old name",
       "src": "https://www.premierleague.com/en/news/4592046/what-is-the-history-behind-every-premier-league-clubs-name",
       "d": 3
     },
     {
       "w": "Singers",
-      "means": "Its founder worked for a cycle firm",
+      "means": "Their founder worked for a cycle firm",
       "ex": "Coventry City were known as Singers FC until 1898",
+      "hook": "Coventry",
       "k": "old name",
       "src": "https://www.premierleague.com/en/news/4625396/all-you-need-to-know-as-coventry-city-make-premier-league-return",
       "d": 3
@@ -498,49 +559,67 @@
       "w": "Bees",
       "means": "From a student chant: “Buck up Bs”",
       "ex": "Brentford are nicknamed the Bees",
+      "hook": "Brentford",
       "k": "nickname",
       "src": "https://www.premierleague.com/en/news/4592046/what-is-the-history-behind-every-premier-league-clubs-name",
-      "d": 1
+      "d": 2,
+      "out": true,
+      "out_why": "Same fact as nicknames:3 (Brentford the Bees), which tells it better (soccer expert)"
     },
     {
       "w": "Irons",
       "means": "From the club’s shipbuilding roots",
       "ex": "West Ham United are nicknamed the Irons",
+      "hook": "West Ham",
       "k": "nickname",
       "src": "https://www.premierleague.com/en/news/4592046/what-is-the-history-behind-every-premier-league-clubs-name",
-      "d": 2
+      "d": 2,
+      "out": true,
+      "out_why": "Same fact as nicknames:10 (West Ham the Irons, shipbuilding roots), which tells it better (soccer expert)"
     },
     {
       "w": "Clarets",
       "means": "After their claret-and-blue kit",
       "ex": "Burnley are nicknamed the Clarets",
+      "hook": "Burnley",
       "k": "nickname",
       "src": "https://www.premierleague.com/en/news/4592046/what-is-the-history-behind-every-premier-league-clubs-name",
-      "d": 2
+      "d": 2,
+      "out": true,
+      "out_why": "Same fact as nicknames:7 (Burnley the Clarets, from their shirt color), which tells it better (soccer expert)"
     },
     {
       "w": "Tigers",
       "means": "Their best finish: 16th in 2013–14",
       "ex": "Hull City are nicknamed the Tigers",
+      "hook": "Hull City",
       "k": "nickname",
       "src": "https://www.premierleague.com/en/news/4664386/all-you-need-to-know-as-hull-city-are-promoted-to-premier-league",
-      "d": 2
+      "d": 2,
+      "out": true,
+      "out_why": "Given away by nicknames:34 (the tiger on Hull City’s badge, means: for their nickname, the Tigers) (soccer expert)"
     },
     {
       "w": "Sky Blues",
       "means": "From colors chosen under Jimmy Hill",
       "ex": "Coventry City are nicknamed the Sky Blues",
+      "hook": "Coventry",
       "k": "nickname",
       "src": "https://www.premierleague.com/en/news/4625396/all-you-need-to-know-as-coventry-city-make-premier-league-return",
-      "d": 1
+      "d": 2,
+      "out": true,
+      "out_why": "Same fact as nicknames:11 (Coventry the Sky Blues, Jimmy Hill’s colors), which tells it better (soccer expert)"
     },
     {
       "w": "Saints",
       "means": "Changed after the 1896 move",
       "ex": "Before they were the Cottagers, Fulham were nicknamed the Saints",
+      "hook": "Fulham",
       "k": "nickname",
       "src": "https://www.premierleague.com/en/news/4592046/what-is-the-history-behind-every-premier-league-clubs-name",
-      "d": 3
+      "d": 3,
+      "out": true,
+      "out_why": "Same fact as nicknames:9 (Fulham were first known as the Saints) (soccer expert)"
     }
   ],
   "groups": [
@@ -568,10 +647,6 @@
     [
       "Kevin De Bruyne",
       "Phil Foden"
-    ],
-    [
-      "6",
-      "7"
     ],
     [
       "Max Dowman",
@@ -647,25 +722,6 @@
       "Portman Road"
     ],
     [
-      "6",
-      "7"
-    ],
-    [
-      "86",
-      "97",
-      "106"
-    ],
-    [
-      "15",
-      "6",
-      "7"
-    ],
-    [
-      "1997",
-      "2011",
-      "2016"
-    ],
-    [
       "Newton Heath",
       "Ardwick"
     ],
@@ -676,6 +732,10 @@
     [
       "Sky Blues",
       "Clarets"
+    ],
+    [
+      "Aston Villa",
+      "Crystal Palace"
     ]
   ],
   "cut": [

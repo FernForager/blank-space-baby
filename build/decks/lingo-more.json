@@ -7,7 +7,8 @@
     {
       "w": "lob",
       "means": "Soft kick that arcs up high",
-      "ex": "The keeper rushed out, so the striker floated a lob over her head",
+      "ex": "The midfielder floated a lob over both center backs for the striker to chase",
+      "hook": "center backs",
       "k": "shot",
       "src": "https://www.merriam-webster.com/dictionary/lob",
       "d": 1
@@ -16,30 +17,34 @@
       "w": "daisy cutter",
       "means": "Hard shot that skims the ground",
       "ex": "Grandpa’s daisy cutter never left the grass on its way into the net",
+      "hook": "grass",
       "k": "shot",
       "src": "https://www.dictionary.com/browse/daisy-cutter",
-      "d": 3
+      "d": 2
     },
     {
       "w": "piledriver",
       "means": "Very forceful kick",
       "ex": "Mom’s piledriver from 30 yards nearly knocked the keeper over",
+      "hook": "30 yards",
       "k": "shot",
       "src": "https://www.merriam-webster.com/dictionary/pile%20driver",
-      "d": 3
+      "d": 2
     },
     {
       "w": "inswinger",
       "means": "Kick that curves in toward goal",
       "ex": "From the corner, the captain curled her inswinger toward the goalmouth",
+      "hook": "corner",
       "k": "shot",
       "src": "https://www.dictionary.com/browse/inswinger",
-      "d": 3
+      "d": 2
     },
     {
       "w": "half volley",
       "means": "Kick just as the ball bounces",
       "ex": "She met the cross with a half volley the instant it bounced off the grass",
+      "hook": "cross",
       "k": "shot",
       "src": "https://www.dictionary.com/browse/half-volley",
       "d": 2
@@ -48,54 +53,61 @@
       "w": "dropkick",
       "means": "Drop it, kick it off the bounce",
       "ex": "The keeper dropped the ball, let it bounce once, then booted a dropkick upfield",
+      "hook": "booted",
       "k": "shot",
       "src": "https://www.merriam-webster.com/dictionary/dropkick",
-      "d": 2
+      "d": 1
     },
     {
       "w": "punt",
       "means": "Kick from the hands, no bounce",
       "ex": "Straight from her hands, with no bounce, the keeper sent a long punt upfield",
+      "hook": "no bounce",
       "k": "shot",
       "src": "https://www.merriam-webster.com/dictionary/punt",
-      "d": 2
+      "d": 1
     },
     {
       "w": "back pass",
       "means": "Pass to a teammate behind you",
       "ex": "Under pressure, the defender rolled a safe back pass to the keeper",
+      "hook": "pressure",
       "k": "shot",
       "src": "https://www.merriam-webster.com/dictionary/back%20pass",
-      "d": 2
+      "d": 1
     },
     {
       "w": "touchline",
       "means": "Line on a long side of the field",
       "ex": "The ball rolled out over the touchline, so the other team got a throw-in",
+      "hook": "throw-in",
       "k": "field",
       "src": "https://www.merriam-webster.com/dictionary/touchline",
-      "d": 2
+      "d": 1
     },
     {
       "w": "penalty area",
       "means": "Big box in front of each goal",
       "ex": "Outside the penalty area, the keeper can’t use her hands",
+      "hook": "keeper",
       "k": "field",
-      "src": "https://www.merriam-webster.com/dictionary/penalty%20area",
+      "src": "https://www.dictionary.com/browse/penalty-area",
       "d": 1
     },
     {
       "w": "goal line",
       "means": "End line where the goal sits",
       "ex": "The defender cleared the ball off the goal line just before it went in",
+      "hook": "cleared",
       "k": "field",
       "src": "https://www.merriam-webster.com/dictionary/goal%20line",
-      "d": 2
+      "d": 1
     },
     {
       "w": "center circle",
       "means": "Ring in the middle of the field",
       "ex": "At kickoff, the ball sits right in the middle of the center circle",
+      "hook": "kickoff",
       "k": "field",
       "src": "https://www.merriam-webster.com/dictionary/center%20circle",
       "d": 1
@@ -104,6 +116,7 @@
       "w": "crossbar",
       "means": "Bar across the top of the goal",
       "ex": "Her shot clanged off the crossbar just above the keeper’s head",
+      "hook": "clanged",
       "k": "field",
       "src": "https://www.dictionary.com/browse/crossbar",
       "d": 1
@@ -112,6 +125,7 @@
       "w": "post",
       "means": "Upright side of the goal",
       "ex": "The shot hit the left post and bounced away from the goal",
+      "hook": "bounced",
       "k": "field",
       "src": "https://www.merriam-webster.com/dictionary/post",
       "d": 1
@@ -119,15 +133,17 @@
     {
       "w": "technical area",
       "means": "Coach’s box beside the field",
-      "ex": "The coach has to stay in the technical area at the side of the field",
+      "ex": "The coach and the trainer must stay in the technical area",
+      "hook": "trainer",
       "k": "field",
       "src": "https://www.dictionary.com/browse/technical-area",
-      "d": 3
+      "d": 2
     },
     {
       "w": "midfield",
       "means": "Middle part of the field",
-      "ex": "The ball sat in midfield, halfway between the two goals",
+      "ex": "The ball sat in the midfield, halfway between the two goals",
+      "hook": "two goals",
       "k": "field",
       "src": "https://www.merriam-webster.com/dictionary/midfield",
       "d": 1
@@ -136,6 +152,7 @@
       "w": "goalie",
       "means": "Another word for goalkeeper",
       "ex": "In her big gloves, Grandma played goalie and dove at every shot",
+      "hook": "Grandma",
       "k": "role",
       "src": "https://www.merriam-webster.com/dictionary/goalie",
       "d": 1
@@ -144,14 +161,16 @@
       "w": "skipper",
       "means": "The team captain",
       "ex": "The skipper wore the armband and called heads at the coin toss",
+      "hook": "armband",
       "k": "role",
       "src": "https://www.dictionary.com/browse/skipper",
       "d": 2
     },
     {
       "w": "linesman",
-      "means": "Ref’s helper on the sideline",
+      "means": "Official who assists the ref",
       "ex": "The linesman raised a flag to signal that the striker was offside",
+      "hook": "offside",
       "k": "role",
       "src": "https://www.merriam-webster.com/dictionary/linesman",
       "d": 1
@@ -159,15 +178,17 @@
     {
       "w": "halfback",
       "means": "Player right behind the forwards",
-      "ex": "Our halfback lined up right behind the forwards at kickoff",
+      "ex": "In Grandpa’s day, the halfback lined up right behind the forwards",
+      "hook": "forwards",
       "k": "role",
       "src": "https://www.merriam-webster.com/dictionary/halfback",
-      "d": 3
+      "d": 2
     },
     {
       "w": "utility player",
       "means": "Plays many positions well",
       "ex": "Our utility player has played every position this season except keeper",
+      "hook": "position",
       "k": "role",
       "src": "https://www.dictionary.com/browse/utility-player",
       "d": 2
@@ -176,14 +197,16 @@
       "w": "defender",
       "means": "Player in a defensive position",
       "ex": "She plays on the back line as a defender, right in front of the keeper",
+      "hook": "back line",
       "k": "role",
       "src": "https://www.merriam-webster.com/dictionary/defender",
       "d": 1
     },
     {
       "w": "soccer mom",
-      "means": "Mom who drives kids to soccer",
+      "means": "Mom who takes her kids to soccer",
       "ex": "With a minivan full of kids and orange slices, she’s a true soccer mom",
+      "hook": "minivan",
       "k": "role",
       "src": "https://www.merriam-webster.com/dictionary/soccer%20mom",
       "d": 1
@@ -192,6 +215,7 @@
       "w": "ball girl",
       "means": "Helper who fetches stray balls",
       "ex": "When the shot sailed out, the ball girl tossed the keeper a spare",
+      "hook": "sailed out",
       "k": "role",
       "src": "https://www.merriam-webster.com/dictionary/ball%20girl",
       "d": 1
@@ -199,7 +223,8 @@
     {
       "w": "scout",
       "means": "Watches players to recruit them",
-      "ex": "A scout from a college team came to watch the striker play",
+      "ex": "A scout from a college team came to see if the striker was worth recruiting",
+      "hook": "college",
       "k": "role",
       "src": "https://www.merriam-webster.com/dictionary/scout",
       "d": 1
@@ -208,30 +233,34 @@
       "w": "free agent",
       "means": "Free to sign with any team",
       "ex": "With no contract, the star became a free agent and could join any team",
+      "hook": "contract",
       "k": "role",
       "src": "https://www.merriam-webster.com/dictionary/free%20agent",
-      "d": 2
+      "d": 1
     },
     {
       "w": "onside",
       "means": "In a legal spot, not offside",
-      "ex": "The flag stayed down because the striker was onside when the pass came",
+      "ex": "The flag stayed down because the striker was onside when the pass was played",
+      "hook": "flag",
       "k": "rules",
       "src": "https://www.merriam-webster.com/dictionary/onside",
-      "d": 2
+      "d": 1
     },
     {
       "w": "kickoff",
       "means": "Kick that starts play",
       "ex": "After every goal, play restarts with a kickoff from the middle",
+      "hook": "every goal",
       "k": "rules",
-      "src": "https://www.merriam-webster.com/dictionary/kickoff",
+      "src": "https://www.dictionary.com/browse/kickoff",
       "d": 1
     },
     {
       "w": "throw-in",
       "means": "Throw from the sideline to restart",
-      "ex": "The ball rolled out along the sideline, so the defender took a throw-in",
+      "ex": "The ball rolled out over the sideline, so the defender took a throw-in",
+      "hook": "sideline",
       "k": "rules",
       "src": "https://www.merriam-webster.com/dictionary/throw-in",
       "d": 1
@@ -240,6 +269,7 @@
       "w": "goal kick",
       "means": "Restart when attackers kick it out",
       "ex": "The shot went wide over the end line, so the keeper took a goal kick",
+      "hook": "end line",
       "k": "rules",
       "src": "https://www.merriam-webster.com/dictionary/goal%20kick",
       "d": 1
@@ -248,6 +278,7 @@
       "w": "wall",
       "means": "Row of players blocking a kick",
       "ex": "Four defenders stood shoulder to shoulder in a wall for the free kick",
+      "hook": "free kick",
       "k": "rules",
       "src": "https://www.dictionary.com/browse/wall",
       "d": 1
@@ -256,22 +287,25 @@
       "w": "professional foul",
       "means": "Foul on purpose to stop a goal",
       "ex": "Beaten for speed, the defender made a professional foul to stop a goal",
+      "hook": "speed",
       "k": "rules",
       "src": "https://www.merriam-webster.com/dictionary/professional%20foul",
-      "d": 3
+      "d": 2
     },
     {
       "w": "drop ball",
       "means": "Ref drops it to restart play",
       "ex": "After the injury break, the ref restarted play with a drop ball",
+      "hook": "injury break",
       "k": "rules",
       "src": "https://www.merriam-webster.com/dictionary/drop%20ball",
-      "d": 3
+      "d": 2
     },
     {
       "w": "halftime",
       "means": "Break between the two halves",
       "ex": "At halftime, the coach handed out orange slices and drew up a new plan",
+      "hook": "new plan",
       "k": "game",
       "src": "https://www.merriam-webster.com/dictionary/halftime",
       "d": 1
@@ -280,22 +314,25 @@
       "w": "full time",
       "means": "The end of the match",
       "ex": "The ref blew the whistle for full time, and the 2–1 win was final",
+      "hook": "whistle",
       "k": "game",
       "src": "https://www.dictionary.com/browse/full-time",
-      "d": 2
+      "d": 1
     },
     {
       "w": "knockout",
       "means": "Lose once and you’re out",
       "ex": "In a knockout tournament, every team that loses goes straight home",
+      "hook": "tournament",
       "k": "game",
       "src": "https://www.dictionary.com/browse/knockout",
-      "d": 2
+      "d": 1
     },
     {
       "w": "kickabout",
       "means": "Casual game just for fun",
       "ex": "The kids kept no score in their kickabout, with backpacks for goals",
+      "hook": "backpacks",
       "k": "game",
       "src": "https://www.dictionary.com/browse/kickabout",
       "d": 2
@@ -304,6 +341,7 @@
       "w": "five-a-side",
       "means": "Soccer with five players a team",
       "ex": "Mom plays in a five-a-side league on a tiny field every Tuesday night",
+      "hook": "tiny field",
       "k": "game",
       "src": "https://www.dictionary.com/browse/five-a-side",
       "d": 2
@@ -312,6 +350,7 @@
       "w": "bye",
       "means": "Free pass to the next round",
       "ex": "As the top seed, the team got a bye and skipped the first round",
+      "hook": "top seed",
       "k": "game",
       "src": "https://www.merriam-webster.com/dictionary/bye",
       "d": 2
@@ -320,6 +359,7 @@
       "w": "rematch",
       "means": "Second game, same two teams",
       "ex": "After losing the final, the team begged for a rematch next spring",
+      "hook": "begged",
       "k": "game",
       "src": "https://www.merriam-webster.com/dictionary/rematch",
       "d": 1
@@ -328,6 +368,7 @@
       "w": "playoff",
       "means": "Extra game to break a tie",
       "ex": "Tied on points, the two teams met in a playoff for the title",
+      "hook": "points",
       "k": "game",
       "src": "https://www.merriam-webster.com/dictionary/playoff",
       "d": 1
@@ -335,7 +376,8 @@
     {
       "w": "shutout",
       "means": "Game where one side scores zero",
-      "ex": "The keeper made ten saves and earned her first shutout of the season",
+      "ex": "The 4–0 win was the team’s third straight shutout",
+      "hook": "4–0 win",
       "k": "score",
       "src": "https://www.merriam-webster.com/dictionary/shutout",
       "d": 1
@@ -344,14 +386,16 @@
       "w": "goalless",
       "means": "With no goals by either team",
       "ex": "Neither team could score, and the game ended in a goalless draw",
+      "hook": "draw",
       "k": "score",
       "src": "https://www.merriam-webster.com/dictionary/goalless",
-      "d": 2
+      "d": 1
     },
     {
       "w": "squeaker",
       "means": "Win by the tiniest margin",
       "ex": "The team won 2–1 in a squeaker that came down to the final minute",
+      "hook": "final minute",
       "k": "score",
       "src": "https://www.merriam-webster.com/dictionary/squeaker",
       "d": 2
@@ -360,6 +404,7 @@
       "w": "drubbing",
       "means": "A heavy, one-sided defeat",
       "ex": "The visitors took a 7–0 drubbing and rode the bus home in silence",
+      "hook": "in silence",
       "k": "score",
       "src": "https://www.merriam-webster.com/dictionary/drubbing",
       "d": 2
@@ -368,6 +413,7 @@
       "w": "blowout",
       "means": "Totally lopsided game",
       "ex": "With a 9–1 final score, the game was a total blowout",
+      "hook": "final score",
       "k": "score",
       "src": "https://www.merriam-webster.com/dictionary/blowout",
       "d": 1
@@ -375,39 +421,44 @@
     {
       "w": "silver goal",
       "means": "Extra-time lead at the break wins",
-      "ex": "Under the silver goal rule, leading after half of extra time wins it",
+      "ex": "Under the silver goal rule, the team ahead halfway through extra time won",
+      "hook": "extra time",
       "k": "score",
       "src": "https://www.dictionary.com/browse/silver-goal",
-      "d": 3
+      "d": 2
     },
     {
       "w": "away goal",
       "means": "Goal scored on the road",
-      "ex": "Until 2021, a European cup away goal counted extra if the two-game total was level",
+      "ex": "In some cups, each away goal once counted for more than a home goal",
+      "hook": "cups",
       "k": "score",
       "src": "https://www.dictionary.com/browse/away-goal",
-      "d": 3
+      "d": 2
     },
     {
       "w": "route one",
       "means": "Long balls up to the striker",
-      "ex": "The coach loved route one: long, high kicks up to the tall striker",
+      "ex": "The coach loved route one: long balls straight up to the tall striker",
+      "hook": "long balls",
       "k": "lingo",
       "src": "https://www.dictionary.com/browse/route-one",
-      "d": 3
+      "d": 2
     },
     {
       "w": "total football",
       "means": "Style where anyone can attack",
       "ex": "In total football, no one has a fixed position and defenders attack",
+      "hook": "defenders",
       "k": "lingo",
       "src": "https://www.dictionary.com/browse/total-football",
-      "d": 3
+      "d": 2
     },
     {
       "w": "back four",
       "means": "Usually two fullbacks, two center backs",
       "ex": "The back four lined up across the field in front of the keeper",
+      "hook": "lined up",
       "k": "lingo",
       "src": "https://www.dictionary.com/browse/back-four",
       "d": 2
@@ -416,22 +467,25 @@
       "w": "man-to-man",
       "means": "Each player guards one rival",
       "ex": "In man-to-man defense, every player sticks to one opponent all game",
+      "hook": "defense",
       "k": "lingo",
       "src": "https://www.merriam-webster.com/dictionary/man-to-man",
-      "d": 2
+      "d": 1
     },
     {
       "w": "tifo",
       "means": "Giant fan display in the stands",
       "ex": "Before kickoff, fans unrolled a huge painted tifo across the stands",
+      "hook": "stands",
       "k": "lingo",
       "src": "https://www.dictionary.com/browse/tifo",
-      "d": 3
+      "d": 2
     },
     {
       "w": "cap",
       "means": "One game for your national team",
       "ex": "The defender earned her first cap by playing for the national team",
+      "hook": "national",
       "k": "lingo",
       "src": "https://www.dictionary.com/browse/cap",
       "d": 2
@@ -440,6 +494,7 @@
       "w": "eleven",
       "means": "A full soccer team",
       "ex": "The coach picked her starting eleven and sent the rest to the bench",
+      "hook": "bench",
       "k": "lingo",
       "src": "https://www.merriam-webster.com/dictionary/eleven",
       "d": 1
@@ -448,6 +503,7 @@
       "w": "footy",
       "means": "Informal word for soccer",
       "ex": "Grandpa still calls the game “footy” and never misses a Saturday match",
+      "hook": "Saturday",
       "k": "lingo",
       "src": "https://www.dictionary.com/browse/footy",
       "d": 2
@@ -456,22 +512,25 @@
       "w": "giant killer",
       "means": "Underdog that beats a top team",
       "ex": "By beating the league champions, the tiny club became a giant killer",
+      "hook": "champions",
       "k": "lingo",
       "src": "https://www.dictionary.com/browse/giant-killer",
-      "d": 2
+      "d": 1
     },
     {
       "w": "wooden spoon",
       "means": "Joke prize for the worst team",
       "ex": "Last place in the league won the wooden spoon, a prize nobody wants",
+      "hook": "last place",
       "k": "lingo",
       "src": "https://www.dictionary.com/browse/wooden-spoon",
-      "d": 3
+      "d": 2
     },
     {
       "w": "season ticket",
       "means": "Pass to every home game",
       "ex": "Dad’s season ticket gets him into every home game this year",
+      "hook": "home game",
       "k": "lingo",
       "src": "https://www.merriam-webster.com/dictionary/season%20ticket",
       "d": 1
@@ -480,6 +539,7 @@
       "w": "dribble",
       "means": "Move the ball with small kicks",
       "ex": "The winger used tiny taps to dribble the ball past three defenders",
+      "hook": "tiny taps",
       "k": "action",
       "src": "https://www.merriam-webster.com/dictionary/dribble",
       "d": 1
@@ -488,22 +548,25 @@
       "w": "sky",
       "means": "Kick it way up too high",
       "ex": "With an open goal, Dad managed to sky the ball over the crossbar",
+      "hook": "open goal",
       "k": "action",
       "src": "https://www.merriam-webster.com/dictionary/sky",
-      "d": 2
+      "d": 1
     },
     {
       "w": "net",
       "means": "Score a goal",
       "ex": "The striker raced onto the cross and managed to net it for a 2–1 lead",
+      "hook": "2–1 lead",
       "k": "action",
       "src": "https://www.merriam-webster.com/dictionary/net",
-      "d": 2
+      "d": 1
     },
     {
       "w": "save",
       "means": "Stop the ball going into goal",
       "ex": "The keeper dove to her left to save the penalty and keep it 0–0",
+      "hook": "penalty",
       "k": "action",
       "src": "https://www.merriam-webster.com/dictionary/save",
       "d": 1
@@ -512,6 +575,7 @@
       "w": "tie",
       "means": "Even up the score",
       "ex": "Down 2–1, the visitors needed one more goal to tie the score",
+      "hook": "Down 2–1",
       "k": "action",
       "src": "https://www.merriam-webster.com/dictionary/tie",
       "d": 1
@@ -519,18 +583,20 @@
     {
       "w": "whitewash",
       "means": "Keep a team from scoring at all",
-      "ex": "Our defense planned to whitewash the visitors and allow zero goals",
+      "ex": "Our team planned to whitewash the visitors, winning without allowing a goal",
+      "hook": "visitors",
       "k": "action",
       "src": "https://www.merriam-webster.com/dictionary/whitewash",
-      "d": 3
+      "d": 2
     },
     {
       "w": "mark",
       "means": "Stay close to guard a player",
       "ex": "The coach told the defender to mark the striker and stay glued to her",
+      "hook": "glued",
       "k": "action",
       "src": "https://www.dictionary.com/browse/mark",
-      "d": 2
+      "d": 1
     }
   ],
   "groups": [
@@ -708,6 +774,30 @@
     [
       "whitewash",
       "mark"
+    ],
+    [
+      "skipper",
+      "goalie"
+    ],
+    [
+      "skipper",
+      "defender"
+    ],
+    [
+      "skipper",
+      "halfback"
+    ],
+    [
+      "skipper",
+      "utility player"
+    ],
+    [
+      "daisy cutter",
+      "back pass"
+    ],
+    [
+      "knockout",
+      "five-a-side"
     ]
   ],
   "cut": [

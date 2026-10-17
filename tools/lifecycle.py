@@ -1,0 +1,80 @@
+"""Check the daily's life cycle: saving, resuming, locking, sharing and midnight.
+
+    python3 tools/lifecycle.py [page.html]       # default docs/index.html
+
+1. A tapped tile is committed: a reload reopens the same card with the same choices in the same order.
+2. A reload after a right answer keeps the chip, and the board shows it.
+3. The share text matches the locked format exactly (checked through the clipboard).
+4. A finished day reopens to its result and can't be replayed.
+5. At local midnight the countdown runs out and a fresh board appears, numbered one higher.
+6. The right answer never lands in the same slot three cards running.
+Runs on a fake clock set to 23:58 local time on puzzle #1's date.
+"""
+import asyncio, datetime, json, os, re, sys
+from playwright.async_api import async_playwright
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+HTML = open(sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, 'docs', 'index.html')).read()
+START = json.loads(re.search(r'START = (\[[^\]]+\])', HTML).group(1))
+fails = []
+def ok(cond, what):
+    print(('ok    ' if cond else 'FAIL  ') + what)
+    if not cond: fails.append(what)
+
+async def main():
+    async with async_playwright() as p:
+        b = await p.chromium.launch()
+        ctx = await b.new_context(viewport={'width': 402, 'height': 744}, reduced_motion='reduce')
+        await ctx.grant_permissions(['clipboard-read', 'clipboard-write'], origin='https://bsb.test')
+        pg = await ctx.new_page(); errs = []; pg.on('pageerror', lambda e: errs.append(str(e)))
+        await pg.clock.install(time=datetime.datetime(START[0], START[1], START[2], 23, 58, 0))
+        await pg.route('https://bsb.test/**', lambda r: r.fulfill(body=HTML, content_type='text/html'))
+        await pg.goto('https://bsb.test/'); await pg.wait_for_timeout(300)
+        state = lambda: pg.evaluate("JSON.parse(localStorage.getItem('bsb-daily'))")
+        s = await state(); ok(s and s['day'] == 0, 'a fresh day is saved as soon as the board opens')
+        # 1. commit
+        await pg.click('[data-i="3"]')
+        before = await pg.evaluate("[...document.querySelectorAll('.choice')].map(b => b.dataset.w)")
+        await pg.reload(); await pg.wait_for_timeout(300)
+        v = await pg.evaluate("document.getElementById('cab').dataset.v")
+        after = await pg.evaluate("[...document.querySelectorAll('.choice')].map(b => b.dataset.w)")
+        ok(v == 'play' and before == after, 'a reload reopens the tapped card with the same choices in order')
+        # 2. a right answer survives a reload before tapping on
+        w = await pg.evaluate("document.getElementById('q').dataset.w")
+        await pg.click(f'.choice[data-w="{w}"]'); await pg.reload(); await pg.wait_for_timeout(300)
+        s = await state(); v = await pg.evaluate("document.getElementById('cab').dataset.v")
+        lit = await pg.evaluate("document.querySelectorAll('#ball .p.on').length")
+        ok(v == 'board' and s['res'][3] == 1 and lit == 1, 'a right answer is saved at once and its chip is in the ball after a reload')
+        # slot rule over the rest of the day, answering right
+        slots = [s['tiles'][3]['ch'].index(next(c for c in s['tiles'][3]['ch'] if c['w'] == s['tiles'][3]['w']))]
+        for i in [x for x in range(18) if x != 3][:11]:
+            await pg.click(f'[data-i="{i}"]'); w = await pg.evaluate("document.getElementById('q').dataset.w")
+            ch = await pg.evaluate("[...document.querySelectorAll('.choice')].map(b => b.dataset.w)"); slots.append(ch.index(w))
+            await pg.click(f'.choice[data-w="{w}"]'); await pg.click('#flip'); await pg.wait_for_timeout(1200 if (len(slots)) % 6 == 0 else 40)
+        ok(not any(slots[k] == slots[k + 1] == slots[k + 2] for k in range(len(slots) - 2)), f'the right answer never takes one slot 3 times running ({"".join(map(str, slots))})')
+        # 3. a miss ends the day, the share text is exact
+        await pg.click('[data-i="16"]'); w = await pg.evaluate("document.getElementById('q').dataset.w")
+        wrong = await pg.evaluate("[...document.querySelectorAll('.choice')].map(b => b.dataset.w).find(x => x !== document.getElementById('q').dataset.w)")
+        await pg.click(f'.choice[data-w="{wrong}"]'); await pg.click('#flip'); await pg.wait_for_timeout(300)
+        await pg.click('#share'); await pg.wait_for_timeout(200)
+        text = await pg.evaluate("navigator.clipboard.readText()")
+        ok(text == 'Triviela #1\n⚽⚽ Brace · 12\ntriviela.net', 'the share text is exact: ' + repr(text))
+        lost = await pg.evaluate("document.querySelector('#v-end .lost .fill') && document.querySelector('#v-end .lost .fill').textContent")
+        ok(lost == w, 'the end screen fills in the right answer of the card that got you')
+        # 4. locked
+        await pg.reload(); await pg.wait_for_timeout(300)
+        v = await pg.evaluate("document.getElementById('cab').dataset.v")
+        n = await pg.evaluate("document.querySelectorAll('[data-i]:not([disabled])').length")
+        ok(v == 'end' and n == 0, 'a finished day reopens to its result, with nothing left to tap')
+        # 5. midnight
+        c0, left = await pg.evaluate("""[document.getElementById('clock').textContent,
+            Math.floor((new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate() + 1) - new Date()) / 1000)]""")
+        h, m, sec = map(int, c0.split(':'))
+        ok(abs(h * 3600 + m * 60 + sec - left) <= 1, f'the countdown shows the time to local midnight: {c0}')
+        await pg.clock.run_for(125_000); await pg.wait_for_timeout(300)
+        v = await pg.evaluate("document.getElementById('cab').dataset.v"); s = await state()
+        ok(v == 'board' and s['day'] == 1 and not any(s['res']), 'at midnight a fresh board appears, as puzzle #2')
+        ok(not errs, 'no JS errors ' + str(errs))
+        await b.close()
+    print('all good' if not fails else f'{len(fails)} failed')
+    sys.exit(1 if fails else 0)
+asyncio.run(main())

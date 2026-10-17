@@ -8,351 +8,451 @@
    "w": "Fearless",
    "means": "Won at the 2010 Grammys",
    "ex": "Swift won her first Album of the Year Grammy for Fearless",
+   "hook": "Grammy",
    "k": "album",
-   "src": "https://www.guinnessworldrecords.com/world-records/652144-most-album-of-the-year-awards-won-at-the-grammys-female"
+   "src": "https://www.guinnessworldrecords.com/world-records/652144-most-album-of-the-year-awards-won-at-the-grammys-female",
+   "d": 3
   },
   {
    "w": "Speak Now",
    "means": "Its lead single was “Mine”",
    "ex": "Swift wrote every song on the standard Speak Now by herself",
+   "hook": "every song",
    "k": "album",
-   "src": "https://en.wikipedia.org/wiki/Speak_Now"
+   "src": "https://en.wikipedia.org/wiki/Speak_Now",
+   "d": 3
   },
   {
    "w": "Red",
    "means": "The longest song ever to hit No. 1",
    "ex": "The ten-minute version of “All Too Well” is on Red (Taylor’s Version)",
+   "hook": "All Too Well",
    "k": "album",
-   "src": "https://en.wikipedia.org/wiki/Taylor_Swift_singles_discography"
+   "src": "https://en.wikipedia.org/wiki/Taylor_Swift_singles_discography",
+   "d": 2
   },
   {
    "w": "1989",
    "means": "Its Taylor’s Version came out in 2023",
    "ex": "Swift named her 2014 album 1989 after the year she was born",
+   "hook": "2014 album",
    "k": "album",
-   "src": "https://en.wikipedia.org/wiki/Taylor_Swift"
+   "src": "https://en.wikipedia.org/wiki/Taylor_Swift",
+   "d": 1
   },
   {
    "w": "reputation",
    "means": "Her sixth album, from 2017",
    "ex": "Swift’s 2018 stadium tour was named after her album reputation",
+   "hook": "stadium tour",
    "k": "album",
-   "src": "https://en.wikipedia.org/wiki/Reputation_Stadium_Tour"
+   "src": "https://en.wikipedia.org/wiki/Reputation_Stadium_Tour",
+   "d": 2
   },
   {
    "w": "Lover",
    "means": "Her seventh album, from 2019",
    "ex": "“ME!” and “You Need to Calm Down” were singles from Lover",
+   "hook": "Calm Down",
    "k": "album",
-   "src": "https://en.wikipedia.org/wiki/Taylor_Swift_singles_discography"
+   "src": "https://en.wikipedia.org/wiki/Taylor_Swift_singles_discography",
+   "d": 2
   },
   {
    "w": "folklore",
    "means": "Won Album of the Year in 2021",
    "ex": "Swift surprise-released folklore in July 2020",
+   "hook": "July 2020",
    "k": "album",
-   "src": "https://en.wikipedia.org/wiki/Folklore_(Taylor_Swift_album)"
+   "src": "https://en.wikipedia.org/wiki/Folklore_(Taylor_Swift_album)",
+   "d": 2
   },
   {
    "w": "evermore",
    "means": "Surprise-released in December 2020",
    "ex": "Swift called evermore a sister record to folklore",
+   "hook": "sister",
    "k": "album",
-   "src": "https://en.wikipedia.org/wiki/Evermore_(Taylor_Swift_album)"
+   "src": "https://en.wikipedia.org/wiki/Evermore_(Taylor_Swift_album)",
+   "d": 2
   },
   {
    "w": "Midnights",
    "means": "Led by “Anti-Hero” at No. 1",
    "ex": "Midnights made Swift the first artist to hold the whole Hot 100 top 10",
+   "hook": "Hot 100",
    "k": "album",
-   "src": "https://en.wikipedia.org/wiki/Midnights"
+   "src": "https://en.wikipedia.org/wiki/Midnights",
+   "d": 3
   },
   {
    "w": "2006",
    "means": "She was 16 at the time",
    "ex": "Swift released her debut album, Taylor Swift, in 2006",
+   "hook": "debut album",
    "k": "year",
-   "src": "https://en.wikipedia.org/wiki/Taylor_Swift_albums_discography"
+   "src": "https://en.wikipedia.org/wiki/Taylor_Swift_albums_discography",
+   "d": 1
   },
   {
    "w": "2020",
    "means": "July and December, both surprises",
    "ex": "Swift released both folklore and evermore in 2020",
+   "hook": "evermore",
    "k": "year",
-   "src": "https://en.wikipedia.org/wiki/Taylor_Swift_albums_discography"
+   "src": "https://en.wikipedia.org/wiki/Taylor_Swift_albums_discography",
+   "d": 2
   },
   {
    "w": "2021",
    "means": "First of four Taylor’s Versions",
    "ex": "Fearless (Taylor’s Version), her first re-recording, came out in 2021",
+   "hook": "re-recording",
    "k": "year",
-   "src": "https://en.wikipedia.org/wiki/Fearless_(Taylor%27s_Version)"
+   "src": "https://en.wikipedia.org/wiki/Fearless_(Taylor%27s_Version)",
+   "d": 3
   },
   {
    "w": "2023",
    "means": "Opening night was in Glendale",
    "ex": "The Eras Tour’s opening night was March 17, 2023",
+   "hook": "Eras Tour",
    "k": "year",
-   "src": "https://www.guinnessworldrecords.com/world-records/94243-most-successful-tour-solo-artist"
+   "src": "https://www.guinnessworldrecords.com/world-records/94243-most-successful-tour-solo-artist",
+   "d": 2
   },
   {
    "w": "2024",
    "means": "The highest-grossing tour ever",
    "ex": "The Eras Tour played its final show on December 8, 2024",
+   "hook": "Eras Tour",
    "k": "year",
-   "src": "https://www.guinnessworldrecords.com/world-records/94243-most-successful-tour-solo-artist"
+   "src": "https://www.guinnessworldrecords.com/world-records/94243-most-successful-tour-solo-artist",
+   "d": 2
   },
   {
    "w": "2025",
    "means": "Her 12th studio album",
    "ex": "Swift released The Life of a Showgirl in October 2025",
+   "hook": "Showgirl",
    "k": "year",
-   "src": "https://en.wikipedia.org/wiki/The_Life_of_a_Showgirl"
+   "src": "https://en.wikipedia.org/wiki/The_Life_of_a_Showgirl",
+   "d": 2
   },
   {
    "w": "2026",
    "means": "The song is “I Knew It, I Knew You”",
    "ex": "Swift’s song for Toy Story 5 hit No. 1 on the Hot 100 in 2026",
+   "hook": "Toy Story 5",
    "k": "year",
-   "src": "https://www.kunc.org/2026-06-19/taylor-swifts-toy-story-song-debuts-at-no-1-on-the-billboard-charts"
+   "src": "https://www.kunc.org/2026-06-19/taylor-swifts-toy-story-song-debuts-at-no-1-on-the-billboard-charts",
+   "d": 2
   },
   {
    "w": "4",
    "means": "Fearless, 1989, folklore, Midnights",
    "ex": "Swift has won Album of the Year at the Grammys a record 4 times",
+   "hook": "Grammys",
    "k": "number",
-   "src": "https://www.guinnessworldrecords.com/world-records/652144-most-album-of-the-year-awards-won-at-the-grammys-female"
+   "src": "https://www.guinnessworldrecords.com/world-records/652144-most-album-of-the-year-awards-won-at-the-grammys-female",
+   "d": 2
   },
   {
    "w": "14",
    "means": "From 58 nominations",
    "ex": "Swift has won 14 Grammy Awards in all",
+   "hook": "Grammy",
    "k": "number",
-   "src": "https://www.grammy.com/artists/taylor-swift/15450"
+   "src": "https://www.grammy.com/artists/taylor-swift/15450",
+   "d": 3
   },
   {
    "w": "13",
    "means": "She was born on December 13",
    "ex": "Swift’s lucky number is 13",
+   "hook": "lucky number",
    "k": "number",
-   "src": "https://www.aol.com/news/why-taylor-swift-loves-number-235859697.html"
+   "src": "https://www.aol.com/news/why-taylor-swift-loves-number-235859697.html",
+   "d": 2
   },
   {
    "w": "149",
    "means": "In 51 stadiums",
    "ex": "Swift played 149 shows on the Eras Tour",
+   "hook": "Eras Tour",
    "k": "number",
-   "src": "https://www.guinnessworldrecords.com/world-records/94243-most-successful-tour-solo-artist"
+   "src": "https://www.guinnessworldrecords.com/world-records/94243-most-successful-tour-solo-artist",
+   "d": 2
   },
   {
    "w": "19",
    "means": "On five continents",
    "ex": "The Eras Tour visited 19 countries",
+   "hook": "Eras Tour",
    "k": "number",
-   "src": "https://www.guinnessworldrecords.com/world-records/94243-most-successful-tour-solo-artist"
+   "src": "https://www.guinnessworldrecords.com/world-records/94243-most-successful-tour-solo-artist",
+   "d": 3
   },
   {
    "w": "12",
    "means": "They held Hot 100 spots 1 to 12",
    "ex": "The Life of a Showgirl has 12 songs on its standard edition",
+   "hook": "Showgirl",
    "k": "number",
-   "src": "https://tserasarchive.taylorswift.com/thelifeofashowgirl"
+   "src": "https://tserasarchive.taylorswift.com/thelifeofashowgirl",
+   "d": 3
   },
   {
    "w": "10",
    "means": "Her longest run at No. 1",
    "ex": "“The Fate of Ophelia” spent 10 weeks at No. 1 on the Hot 100",
+   "hook": "Ophelia",
    "k": "number",
-   "src": "https://en.wikipedia.org/wiki/The_Fate_of_Ophelia"
+   "src": "https://en.wikipedia.org/wiki/The_Fate_of_Ophelia",
+   "d": 3
   },
   {
    "w": "36",
    "means": "Inducted in June 2026",
    "ex": "At 36, Swift became the youngest woman in the Songwriters Hall of Fame",
+   "hook": "Songwriters",
    "k": "number",
-   "src": "https://au.variety.com/2026/music/global/taylor-swift-inducted-songwriters-hall-of-fame-32184/"
+   "src": "https://au.variety.com/2026/music/global/taylor-swift-inducted-songwriters-hall-of-fame-32184/",
+   "d": 2
   },
   {
    "w": "Tim McGraw",
    "means": "Named for the country star",
    "ex": "Swift’s debut single, from 2006, was “Tim McGraw”",
+   "hook": "debut single",
    "k": "song",
-   "src": "https://en.wikipedia.org/wiki/Taylor_Swift_singles_discography"
+   "src": "https://en.wikipedia.org/wiki/Taylor_Swift_singles_discography",
+   "d": 2
   },
   {
    "w": "Shake It Off",
    "means": "It debuted at No. 1 in 2014",
    "ex": "“Shake It Off” was the lead single from 1989",
+   "hook": "1989",
    "k": "song",
-   "src": "https://en.wikipedia.org/wiki/Shake_It_Off"
+   "src": "https://en.wikipedia.org/wiki/Shake_It_Off",
+   "d": 2
   },
   {
    "w": "cardigan",
    "means": "It debuted at No. 1 on the Hot 100",
    "ex": "“cardigan” was the lead single from folklore",
+   "hook": "folklore",
    "k": "song",
-   "src": "https://en.wikipedia.org/wiki/Folklore_(Taylor_Swift_album)"
+   "src": "https://en.wikipedia.org/wiki/Folklore_(Taylor_Swift_album)",
+   "d": 2
   },
   {
    "w": "Anti-Hero",
    "means": "Eight weeks at No. 1",
    "ex": "“Anti-Hero” was the lead single from Midnights",
+   "hook": "Midnights",
    "k": "song",
-   "src": "https://en.wikipedia.org/wiki/Midnights"
+   "src": "https://en.wikipedia.org/wiki/Midnights",
+   "d": 2
   },
   {
    "w": "Fortnight",
    "means": "From The Tortured Poets Department",
    "ex": "Swift sang “Fortnight” with Post Malone",
+   "hook": "Post Malone",
    "k": "song",
-   "src": "https://en.wikipedia.org/wiki/Taylor_Swift_singles_discography"
+   "src": "https://en.wikipedia.org/wiki/Taylor_Swift_singles_discography",
+   "d": 2
   },
   {
    "w": "The Fate of Ophelia",
    "means": "Out the same day as the album",
    "ex": "“The Fate of Ophelia” was the first single from The Life of a Showgirl",
+   "hook": "Showgirl",
    "k": "song",
-   "src": "https://en.wikipedia.org/wiki/The_Life_of_a_Showgirl"
+   "src": "https://en.wikipedia.org/wiki/The_Life_of_a_Showgirl",
+   "d": 2
   },
   {
    "w": "Opalite",
    "means": "It also reached No. 1",
    "ex": "“Opalite” was the second single from The Life of a Showgirl",
+   "hook": "Showgirl",
    "k": "song",
-   "src": "https://tserasarchive.taylorswift.com/thelifeofashowgirl"
+   "src": "https://tserasarchive.taylorswift.com/thelifeofashowgirl",
+   "d": 2
   },
   {
    "w": "Christmas Tree Farm",
    "means": "She grew up on one in Pennsylvania",
    "ex": "Swift’s 2019 holiday single was “Christmas Tree Farm”",
+   "hook": "2019",
    "k": "song",
-   "src": "https://en.wikipedia.org/wiki/Christmas_Tree_Farm_(song)"
+   "src": "https://en.wikipedia.org/wiki/Christmas_Tree_Farm_(song)",
+   "d": 1
   },
   {
    "w": "West Reading",
    "means": "Born there on December 13, 1989",
    "ex": "Swift was born in West Reading, Pennsylvania",
+   "hook": "Pennsylvania",
    "k": "place",
-   "src": "https://en.wikipedia.org/wiki/Taylor_Swift"
+   "src": "https://en.wikipedia.org/wiki/Taylor_Swift",
+   "d": 2
   },
   {
    "w": "Hendersonville",
    "means": "Near her dad’s new Nashville job",
    "ex": "At 14, Swift moved with her family to Hendersonville, Tennessee",
+   "hook": "Tennessee",
    "k": "place",
-   "src": "https://en.wikipedia.org/wiki/Taylor_Swift"
+   "src": "https://en.wikipedia.org/wiki/Taylor_Swift",
+   "d": 2
   },
   {
    "w": "Nashville",
    "means": "Big Machine signed her soon after",
    "ex": "As a teen, Swift played a showcase at the Bluebird Cafe in Nashville",
+   "hook": "Bluebird",
    "k": "place",
-   "src": "https://en.wikipedia.org/wiki/Taylor_Swift"
+   "src": "https://en.wikipedia.org/wiki/Taylor_Swift",
+   "d": 2
   },
   {
    "w": "Glendale",
    "means": "The reputation tour began there too",
    "ex": "The Eras Tour opened at State Farm Stadium in Glendale, Arizona",
+   "hook": "State Farm",
    "k": "place",
-   "src": "https://en.wikipedia.org/wiki/The_Eras_Tour"
+   "src": "https://en.wikipedia.org/wiki/The_Eras_Tour",
+   "d": 2
   },
   {
    "w": "Vancouver",
    "means": "In British Columbia, Canada",
    "ex": "Swift ended the Eras Tour with shows in Vancouver",
+   "hook": "Eras Tour",
    "k": "place",
-   "src": "https://en.wikipedia.org/wiki/The_Eras_Tour"
+   "src": "https://en.wikipedia.org/wiki/The_Eras_Tour",
+   "d": 2
   },
   {
    "w": "Seattle",
    "means": "Like a magnitude 2.3 earthquake",
    "ex": "The 2023 “Swift Quake” shook Lumen Field in Seattle",
+   "hook": "Swift Quake",
    "k": "place",
-   "src": "https://abc7news.com/taylor-swift-concert-earthquake-lumen-field-seattle-swifties-quake/13564231/"
+   "src": "https://abc7news.com/taylor-swift-concert-earthquake-lumen-field-seattle-swifties-quake/13564231/",
+   "d": 2
   },
   {
    "w": "Meredith Grey",
    "means": "Named for a Grey’s Anatomy doctor",
    "ex": "Swift’s oldest cat, a Scottish Fold, is named Meredith Grey",
+   "hook": "oldest cat",
    "k": "name",
-   "src": "https://en.wikipedia.org/wiki/Olivia_Benson_(cat)"
+   "src": "https://en.wikipedia.org/wiki/Olivia_Benson_(cat)",
+   "d": 3
   },
   {
    "w": "Olivia Benson",
    "means": "From Law & Order: SVU",
    "ex": "Swift’s cat Olivia Benson shares her name with a TV detective",
+   "hook": "TV detective",
    "k": "name",
-   "src": "https://en.wikipedia.org/wiki/Olivia_Benson_(cat)"
+   "src": "https://en.wikipedia.org/wiki/Olivia_Benson_(cat)",
+   "d": 2
   },
   {
    "w": "Benjamin Button",
    "means": "A Ragdoll cat from the “ME!” video",
    "ex": "Swift adopted Benjamin Button after he appeared in a 2019 music video",
+   "hook": "music video",
    "k": "name",
-   "src": "https://en.wikipedia.org/wiki/Olivia_Benson_(cat)"
+   "src": "https://en.wikipedia.org/wiki/Olivia_Benson_(cat)",
+   "d": 2
   },
   {
    "w": "Bombalurina",
    "means": "A singing cat in the musical Cats",
    "ex": "Swift played Bombalurina in the 2019 movie Cats",
+   "hook": "Cats",
    "k": "name",
-   "src": "https://en.wikipedia.org/wiki/Taylor_Swift"
+   "src": "https://en.wikipedia.org/wiki/Taylor_Swift",
+   "d": 2
   },
   {
    "w": "Audrey",
    "means": "Ted’s crush in the movie",
    "ex": "Swift voiced Audrey in the 2012 animated film The Lorax",
+   "hook": "Lorax",
    "k": "name",
-   "src": "https://en.wikipedia.org/wiki/The_Lorax_(film)"
+   "src": "https://en.wikipedia.org/wiki/The_Lorax_(film)",
+   "d": 2
   },
   {
    "w": "Felicia",
    "means": "Full name: Felicia Miller",
    "ex": "Swift made her acting debut as Felicia in Valentine’s Day",
+   "hook": "acting debut",
    "k": "name",
-   "src": "https://en.wikipedia.org/wiki/Valentine%27s_Day_(2010_film)"
+   "src": "https://en.wikipedia.org/wiki/Valentine%27s_Day_(2010_film)",
+   "d": 3
   },
   {
    "w": "Swifties",
    "means": "In an Oxford dictionary since 2023",
    "ex": "Taylor Swift’s fans are known as Swifties",
+   "hook": "Taylor",
    "k": "term",
-   "src": "https://en.wikipedia.org/wiki/Swifties"
+   "src": "https://en.wikipedia.org/wiki/Swifties",
+   "d": 1
   },
   {
    "w": "Easter eggs",
    "means": "Decoding them is called Swiftology",
    "ex": "Swift hides clues for fans, called Easter eggs, in her work",
+   "hook": "clues",
    "k": "term",
-   "src": "https://en.wikipedia.org/wiki/Swifties"
+   "src": "https://en.wikipedia.org/wiki/Swifties",
+   "d": 1
   },
   {
    "w": "friendship bracelets",
    "means": "Often spelling out album titles",
    "ex": "Fans traded beaded friendship bracelets at Eras Tour shows",
+   "hook": "Eras Tour",
    "k": "term",
-   "src": "https://www.today.com/today/amp/rcna99768"
+   "src": "https://www.today.com/today/amp/rcna99768",
+   "d": 1
   },
   {
    "w": "masters",
    "means": "The original recordings",
    "ex": "In 2025, Swift bought back the masters to her first six albums",
+   "hook": "bought back",
    "k": "term",
-   "src": "https://en.wikipedia.org/wiki/Taylor_Swift"
+   "src": "https://en.wikipedia.org/wiki/Taylor_Swift",
+   "d": 2
   },
   {
    "w": "From the Vault",
    "means": "Fearless (Taylor’s Version) had six",
    "ex": "Unreleased songs on her re-recordings are tagged “From the Vault”",
+   "hook": "unreleased",
    "k": "term",
-   "src": "https://en.wikipedia.org/wiki/Fearless_(Taylor%27s_Version)"
+   "src": "https://en.wikipedia.org/wiki/Fearless_(Taylor%27s_Version)",
+   "d": 2
   },
   {
    "w": "Taylor’s Version",
    "means": "Four came out from 2021 to 2023",
    "ex": "Swift added “Taylor’s Version” to the titles of her re-recorded albums",
+   "hook": "re-recorded",
    "k": "term",
-   "src": "https://www.taylorswift.com/read-my-letter/"
+   "src": "https://www.taylorswift.com/read-my-letter/",
+   "d": 1
   }
  ],
  "groups": [

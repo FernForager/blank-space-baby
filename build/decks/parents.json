@@ -8,358 +8,460 @@
    "w": "da bomb",
    "means": "The very best",
    "ex": "Grandma says her halftime orange slices are da bomb",
+   "hook": "halftime",
    "k": "adj",
-   "src": "https://www.merriam-webster.com/dictionary/the%20bomb"
+   "src": "https://greensdictofslang.com/entry/p7xt23q",
+   "d": 1
   },
   {
    "w": "fly",
    "means": "Stylish and impressive",
-   "ex": "Dad thinks his old team jacket still looks fly",
+   "ex": "Dad proudly wears his old team jacket because he thinks it still looks fly",
+   "hook": "jacket",
    "k": "adj",
-   "src": "https://www.merriam-webster.com/dictionary/fly"
+   "src": "https://www.merriam-webster.com/dictionary/fly",
+   "d": 1
   },
   {
    "w": "fresh",
    "means": "Cool and in style",
-   "ex": "The coach said the team’s new jerseys look fresh",
+   "ex": "The whole team wants to wear the new jerseys because they look so fresh",
+   "hook": "new jerseys",
    "k": "adj",
-   "src": "https://www.merriam-webster.com/dictionary/fresh"
+   "src": "https://www.merriam-webster.com/dictionary/fresh",
+   "d": 1
   },
   {
    "w": "sweet",
    "means": "Really good",
    "ex": "The striker scored with a sweet chip over the keeper",
+   "hook": "chip",
    "k": "adj",
-   "src": "https://www.merriam-webster.com/dictionary/sweet"
+   "src": "https://www.merriam-webster.com/dictionary/sweet",
+   "d": 1
   },
   {
    "w": "sick",
    "means": "Amazingly good",
    "ex": "The keeper made a sick save in the final minute",
+   "hook": "save",
    "k": "adj",
-   "src": "https://www.merriam-webster.com/dictionary/sick"
+   "src": "https://www.merriam-webster.com/dictionary/sick",
+   "d": 1
   },
   {
    "w": "rad",
    "means": "Excellent, cool",
-   "ex": "Dad said the bicycle-kick goal was totally rad",
+   "ex": "Dad cheered and said the bicycle-kick goal was totally rad",
+   "hook": "bicycle-kick",
    "k": "adj",
-   "src": "https://www.merriam-webster.com/dictionary/rad"
+   "src": "https://www.merriam-webster.com/dictionary/rad",
+   "d": 1
   },
   {
    "w": "gnarly",
    "means": "Awesome, or really gross",
    "ex": "Grandpa called the muddy slide tackle gnarly",
+   "hook": "slide tackle",
    "k": "adj",
-   "src": "https://www.merriam-webster.com/dictionary/gnarly"
+   "src": "https://www.merriam-webster.com/dictionary/gnarly",
+   "d": 1
   },
   {
    "w": "def",
    "means": "Top-notch and stylish",
-   "ex": "The coach said the new warm-up music was def",
+   "ex": "The team danced through warm-ups because the new music was def",
+   "hook": "music",
    "k": "adj",
-   "src": "https://www.merriam-webster.com/dictionary/def"
+   "src": "https://www.merriam-webster.com/dictionary/def",
+   "d": 1
   },
   {
    "w": "all that",
    "means": "The best, or so they think",
-   "ex": "The captain thinks her new shin guards are all that",
+   "ex": "The captain shows off her new shin guards like they are all that",
+   "hook": "shin guards",
    "k": "adj",
-   "src": "https://greensdictofslang.com/entry/ktfqsua"
+   "src": "https://greensdictofslang.com/entry/ktfqsua",
+   "d": 1
   },
   {
    "w": "off the hook",
    "means": "So good it’s wild",
    "ex": "After the 4–4 thriller, the fans said the final was off the hook",
+   "hook": "thriller",
    "k": "adj",
-   "src": "https://greensdictofslang.com/entry/ldvvffa#3ddn4xi"
+   "src": "https://greensdictofslang.com/entry/ldvvffa#3ddn4xi",
+   "d": 1
   },
   {
    "w": "wicked",
    "means": "Very, extremely",
    "ex": "The keeper can throw the ball wicked far",
+   "hook": "throw",
    "k": "adj",
-   "src": "https://www.merriam-webster.com/dictionary/wicked"
+   "src": "https://www.merriam-webster.com/dictionary/wicked",
+   "d": 1
   },
   {
    "w": "wack",
    "means": "Not good at all",
    "ex": "Dad grumbled that deciding a final by coin flip is wack",
+   "hook": "coin flip",
    "k": "adj",
-   "src": "https://www.merriam-webster.com/dictionary/wack"
+   "src": "https://www.merriam-webster.com/dictionary/wack",
+   "d": 1
   },
   {
    "w": "bogus",
    "means": "Fake, not legit",
    "ex": "Grandpa yelled that the offside call was bogus",
+   "hook": "offside call",
    "k": "adj",
-   "src": "https://www.merriam-webster.com/dictionary/bogus"
+   "src": "https://www.merriam-webster.com/dictionary/bogus",
+   "d": 1
   },
   {
    "w": "stoked",
    "means": "Super excited",
    "ex": "Mom was stoked when the team made the final",
+   "hook": "final",
    "k": "adj",
-   "src": "https://www.merriam-webster.com/dictionary/stoked"
+   "src": "https://www.merriam-webster.com/dictionary/stoked",
+   "d": 1
   },
   {
    "w": "bummed",
    "means": "Sad and let down",
    "ex": "Grandma was bummed when the game got rained out",
+   "hook": "rained out",
    "k": "adj",
-   "src": "https://www.merriam-webster.com/dictionary/bummed"
+   "src": "https://www.merriam-webster.com/dictionary/bummed",
+   "d": 1
   },
   {
    "w": "as if",
    "means": "No way, not a chance",
-   "ex": "When the other team said they would win, the captain said “as if”",
+   "ex": "When the other team bragged they would win, the captain said “as if”",
+   "hook": "other team",
    "k": "exclaim",
-   "src": "https://www.merriam-webster.com/dictionary/as%20if"
+   "src": "https://www.merriam-webster.com/dictionary/as%20if",
+   "d": 1
   },
   {
    "w": "not",
    "means": "Flips what was just said",
    "ex": "Dad said the ref had a perfect game… not!",
+   "hook": "perfect game",
    "k": "exclaim",
-   "src": "https://greensdictofslang.com/entry/2rw3dpy"
+   "src": "https://greensdictofslang.com/entry/2rw3dpy",
+   "d": 2
   },
   {
    "w": "psych",
    "means": "Ha, just kidding",
-   "ex": "The coach said practice was canceled—psych!",
+   "ex": "The coach pretended to cancel practice, then yelled “psych!”",
+   "hook": "practice",
    "k": "exclaim",
-   "src": "https://www.merriam-webster.com/dictionary/psych"
+   "src": "https://www.merriam-webster.com/dictionary/psych",
+   "d": 1
   },
   {
    "w": "booyah",
    "means": "A shout of triumph",
    "ex": "Dad yelled “booyah” when the striker scored in extra time",
+   "hook": "extra time",
    "k": "exclaim",
-   "src": "https://www.merriam-webster.com/dictionary/booyah"
+   "src": "https://www.merriam-webster.com/dictionary/booyah",
+   "d": 1
   },
   {
    "w": "my bad",
    "means": "Sorry, that’s on me",
    "ex": "The defender said “my bad” after passing to the other team",
+   "hook": "defender",
    "k": "exclaim",
-   "src": "https://www.merriam-webster.com/dictionary/bad"
+   "src": "https://www.merriam-webster.com/dictionary/bad",
+   "d": 1
   },
   {
    "w": "duh",
    "means": "That’s so obvious",
    "ex": "Asked if the ball has to go in the net, the striker said “duh”",
+   "hook": "net",
    "k": "exclaim",
-   "src": "https://www.merriam-webster.com/dictionary/duh"
+   "src": "https://www.merriam-webster.com/dictionary/duh",
+   "d": 1
   },
   {
    "w": "whatever",
    "means": "Fine, who cares",
    "ex": "Told to run one more lap, the striker sighed and said “whatever”",
+   "hook": "lap",
    "k": "exclaim",
-   "src": "https://www.merriam-webster.com/dictionary/whatever"
+   "src": "https://www.merriam-webster.com/dictionary/whatever",
+   "d": 1
   },
   {
    "w": "word",
    "means": "Agreed, for real",
-   "ex": "When the coach said to hustle, Dad replied “word”",
+   "ex": "When the coach said to hustle, Dad nodded and said “word”",
+   "hook": "hustle",
    "k": "exclaim",
-   "src": "https://www.merriam-webster.com/dictionary/word"
+   "src": "https://www.merriam-webster.com/dictionary/word",
+   "d": 2
   },
   {
    "w": "cowabunga",
    "means": "A wild shout of joy",
    "ex": "The keeper yelled “cowabunga” as she dove for the ball in the mud",
+   "hook": "mud",
    "k": "exclaim",
-   "src": "https://greensdictofslang.com/entry/knvl3ly"
+   "src": "https://greensdictofslang.com/entry/knvl3ly",
+   "d": 1
   },
   {
    "w": "talk to the hand",
    "means": "I’m not listening",
-   "ex": "Asked to share her orange slices, the goalie said “talk to the hand”",
+   "ex": "Asked to share her orange slices, the goalie refused with “talk to the hand”",
+   "hook": "goalie",
    "k": "exclaim",
-   "src": "https://greensdictofslang.com/entry/gavguda#mun6biq"
+   "src": "https://greensdictofslang.com/entry/gavguda#mun6biq",
+   "d": 2
   },
   {
    "w": "peace out",
    "means": "Goodbye, see ya",
    "ex": "After the final whistle, the coach said “peace out” and drove home",
+   "hook": "whistle",
    "k": "exclaim",
-   "src": "https://greensdictofslang.com/entry/ncy47ti"
+   "src": "https://greensdictofslang.com/entry/ncy47ti",
+   "d": 1
   },
   {
    "w": "yada yada",
    "means": "And so on, blah blah",
    "ex": "The coach talked about passing, running, yada yada, for an hour",
+   "hook": "passing",
    "k": "exclaim",
-   "src": "https://www.merriam-webster.com/dictionary/yada%20yada%20yada"
+   "src": "https://www.merriam-webster.com/dictionary/yada%20yada%20yada",
+   "d": 1
   },
   {
    "w": "cool beans",
    "means": "Sounds good to me",
    "ex": "When the coach moved practice to Friday, Mom said “cool beans”",
+   "hook": "practice",
    "k": "exclaim",
-   "src": "https://www.merriam-webster.com/dictionary/cool%20beans"
+   "src": "https://www.merriam-webster.com/dictionary/cool%20beans",
+   "d": 1
   },
   {
    "w": "no biggie",
    "means": "Not a big deal",
-   "ex": "The keeper let in one goal, but the coach said it was no biggie",
+   "ex": "The keeper let in one goal, but the coach just said “no biggie”",
+   "hook": "keeper",
    "k": "exclaim",
-   "src": "https://www.merriam-webster.com/dictionary/no%20biggie"
+   "src": "https://www.merriam-webster.com/dictionary/no%20biggie",
+   "d": 1
   },
   {
    "w": "homie",
    "means": "A close buddy",
    "ex": "Dad calls the assistant coach his homie",
+   "hook": "assistant",
    "k": "noun",
-   "src": "https://www.merriam-webster.com/dictionary/homie"
+   "src": "https://www.merriam-webster.com/dictionary/homie",
+   "d": 1
   },
   {
    "w": "home skillet",
    "means": "A good friend",
    "ex": "Grandpa calls the team’s bus driver his home skillet",
+   "hook": "bus driver",
    "k": "noun",
-   "src": "https://greensdictofslang.com/entry/llxfpia#i2z4hsq"
+   "src": "https://greensdictofslang.com/entry/llxfpia#i2z4hsq",
+   "d": 2
   },
   {
    "w": "dawg",
    "means": "Pal, buddy",
    "ex": "The coach greets every player with “What’s up, dawg?”",
+   "hook": "coach",
    "k": "noun",
-   "src": "https://www.merriam-webster.com/dictionary/dawg"
+   "src": "https://www.merriam-webster.com/dictionary/dawg",
+   "d": 1
   },
   {
    "w": "peeps",
    "means": "Your friends and family",
    "ex": "Mom brought all her peeps to watch the final",
+   "hook": "Mom",
    "k": "noun",
-   "src": "https://www.merriam-webster.com/dictionary/peeps"
+   "src": "https://www.merriam-webster.com/dictionary/peeps",
+   "d": 1
   },
   {
    "w": "posse",
    "means": "Your crew of friends",
    "ex": "The captain walked onto the field with her whole posse",
+   "hook": "captain",
    "k": "noun",
-   "src": "https://www.merriam-webster.com/dictionary/posse"
+   "src": "https://www.merriam-webster.com/dictionary/posse",
+   "d": 1
   },
   {
    "w": "crib",
    "means": "Home, where you live",
    "ex": "After the win, the team ate pizza at Grandma’s crib",
+   "hook": "pizza",
    "k": "noun",
-   "src": "https://www.merriam-webster.com/dictionary/crib"
+   "src": "https://www.merriam-webster.com/dictionary/crib",
+   "d": 1
   },
   {
    "w": "bling",
    "means": "Flashy, shiny stuff",
-   "ex": "The trophy had so much bling that Dad wore sunglasses",
+   "ex": "The trophy’s bling was so bright that Dad wore sunglasses",
+   "hook": "trophy",
    "k": "noun",
-   "src": "https://www.merriam-webster.com/dictionary/bling"
+   "src": "https://www.merriam-webster.com/dictionary/bling",
+   "d": 1
   },
   {
    "w": "props",
    "means": "Respect and credit",
-   "ex": "The coach gave the keeper props for her diving save",
+   "ex": "The coach gave the keeper her props for that diving save",
+   "hook": "diving save",
    "k": "noun",
-   "src": "https://www.merriam-webster.com/dictionary/props"
+   "src": "https://www.merriam-webster.com/dictionary/props",
+   "d": 1
   },
   {
    "w": "newbie",
    "means": "Someone brand-new",
    "ex": "The newbie on the team scored in her very first game",
+   "hook": "first game",
    "k": "noun",
-   "src": "https://www.merriam-webster.com/dictionary/newbie"
+   "src": "https://www.merriam-webster.com/dictionary/newbie",
+   "d": 1
   },
   {
    "w": "couch potato",
    "means": "A lazy TV watcher",
    "ex": "Dad calls himself a soccer fan, but he is more of a couch potato",
+   "hook": "soccer fan",
    "k": "noun",
-   "src": "https://www.merriam-webster.com/dictionary/couch%20potato"
+   "src": "https://www.merriam-webster.com/dictionary/couch%20potato",
+   "d": 1
   },
   {
    "w": "mall rat",
    "means": "Someone who lives at the mall",
-   "ex": "Grandma shops so often that the team calls her a mall rat",
+   "ex": "Grandma shops for soccer gear so often that the team calls her a mall rat",
+   "hook": "Grandma",
    "k": "noun",
-   "src": "https://www.merriam-webster.com/dictionary/mall%20rat"
+   "src": "https://www.merriam-webster.com/dictionary/mall%20rat",
+   "d": 1
   },
   {
    "w": "chill pill",
    "means": "A pretend pill to calm down",
    "ex": "When Dad yelled at the ref, Mom told him to take a chill pill",
+   "hook": "ref",
    "k": "noun",
-   "src": "https://greensdictofslang.com/entry/z2untty#nt2h5ci"
+   "src": "https://greensdictofslang.com/entry/z2untty#nt2h5ci",
+   "d": 1
   },
   {
    "w": "kicks",
    "means": "Shoes or sneakers",
    "ex": "The striker laced up her new kicks before the final",
+   "hook": "laced up",
    "k": "noun",
-   "src": "https://www.merriam-webster.com/dictionary/kicks"
+   "src": "https://www.merriam-webster.com/dictionary/kicks",
+   "d": 1
   },
   {
    "w": "brainiac",
    "means": "A super-smart person",
    "ex": "The defender is such a brainiac that she knows every rule by heart",
+   "hook": "every rule",
    "k": "noun",
-   "src": "https://www.merriam-webster.com/dictionary/brainiac"
+   "src": "https://www.merriam-webster.com/dictionary/brainiac",
+   "d": 1
   },
   {
    "w": "dis",
    "means": "To insult or disrespect",
    "ex": "Grandma told the fans not to dis the other team’s keeper",
+   "hook": "keeper",
    "k": "verb",
-   "src": "https://www.merriam-webster.com/dictionary/dis"
+   "src": "https://www.merriam-webster.com/dictionary/dis",
+   "d": 1
   },
   {
    "w": "bounce",
    "means": "To leave, head out",
    "ex": "After the game, Dad grabbed his keys and said it was time to bounce",
+   "hook": "keys",
    "k": "verb",
-   "src": "https://www.merriam-webster.com/dictionary/bounce"
+   "src": "https://www.merriam-webster.com/dictionary/bounce",
+   "d": 1
   },
   {
    "w": "bail",
    "means": "To leave in a hurry",
    "ex": "When the rain started, half the fans decided to bail",
+   "hook": "rain",
    "k": "verb",
-   "src": "https://www.merriam-webster.com/dictionary/bail"
+   "src": "https://www.merriam-webster.com/dictionary/bail",
+   "d": 1
   },
   {
    "w": "raise the roof",
    "means": "To cheer wildly",
    "ex": "Dad tried to raise the roof when the keeper saved the penalty",
+   "hook": "penalty",
    "k": "verb",
-   "src": "https://www.merriam-webster.com/dictionary/raise%20the%20roof"
+   "src": "https://www.merriam-webster.com/dictionary/raise%20the%20roof",
+   "d": 1
   },
   {
    "w": "have a cow",
    "means": "To get really upset",
    "ex": "Mom told the coach not to have a cow over one missed pass",
+   "hook": "missed pass",
    "k": "verb",
-   "src": "https://www.merriam-webster.com/dictionary/have%20a%20cow"
+   "src": "https://www.merriam-webster.com/dictionary/have%20a%20cow",
+   "d": 1
   },
   {
    "w": "veg out",
    "means": "To lounge and do nothing",
    "ex": "After the tournament, the whole team went home to veg out",
+   "hook": "tournament",
    "k": "verb",
-   "src": "https://www.merriam-webster.com/dictionary/veg%20out"
+   "src": "https://www.merriam-webster.com/dictionary/veg%20out",
+   "d": 1
   },
   {
    "w": "chill out",
    "means": "To calm down, relax",
    "ex": "The coach told the nervous striker to chill out before her penalty",
+   "hook": "penalty",
    "k": "verb",
-   "src": "https://www.merriam-webster.com/dictionary/chill%20out"
+   "src": "https://www.merriam-webster.com/dictionary/chill%20out",
+   "d": 1
   },
   {
    "w": "kick it",
    "means": "To hang out and relax",
    "ex": "On rest days, the captain likes to kick it with the team",
+   "hook": "rest days",
    "k": "verb",
-   "src": "https://www.merriam-webster.com/dictionary/kick%20it"
+   "src": "https://www.merriam-webster.com/dictionary/kick%20it",
+   "d": 1
   }
  ],
  "groups": [
@@ -390,7 +492,8 @@
   ],
   [
    "whatever",
-   "no biggie"
+   "no biggie",
+   "cool beans"
   ],
   [
    "booyah",
@@ -418,6 +521,57 @@
    "veg out",
    "chill out",
    "kick it"
+  ],
+  [
+   "peace out",
+   "whatever",
+   "no biggie"
+  ],
+  [
+   "booyah",
+   "peace out",
+   "cool beans"
+  ],
+  [
+   "cool beans",
+   "as if",
+   "talk to the hand"
+  ],
+  [
+   "yada yada",
+   "whatever"
+  ],
+  [
+   "my bad",
+   "whatever",
+   "no biggie"
+  ],
+  [
+   "not",
+   "duh"
+  ],
+  [
+   "as if",
+   "yada yada",
+   "no biggie"
+  ],
+  [
+   "dawg",
+   "peeps"
+  ],
+  [
+   "couch potato",
+   "newbie"
+  ],
+  [
+   "have a cow",
+   "raise the roof"
+  ],
+  [
+   "word",
+   "whatever",
+   "my bad",
+   "no biggie"
   ]
  ],
  "cut": [

@@ -1,43 +1,59 @@
-"""Play many cards in every level and flag anything broken.
+"""Play many days of the daily and flag anything broken.
 
-    python3 tools/sweep.py [cards_per_level] [width] [height]     # defaults: 60 402 744
+    python3 tools/sweep.py [days] [width] [height] [page.html]    # defaults: 30 402 744 docs/index.html
 
-Checks each card: three different choices, the answer among them, a blank in the
-sentence, nothing overflowing the screen (before or after answering). Also prints how often the
-right answer lands in each slot (should be roughly even). Answers every card right,
-so it also walks through level-beaten screens.
+Plays every card of each day (animations off, every answer right), checking each one: three different
+choices with the answer among them, a blank in the sentence, nothing overflowing the screen before or
+after answering, the answered sentence clear of the go arrow and the beta's flag and lock keys (with the
+smallest gap between a line and a key under it), and the page never scrolling. On each board it checks every hook fits its tile and
+records the smallest hook font. Prints how often the right answer lands in each slot (should be even).
 """
 import asyncio, collections, os, sys
 from playwright.async_api import async_playwright
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-HTML = open(os.path.join(ROOT, 'docs', 'index.html')).read()
-N = int(sys.argv[1]) if len(sys.argv) > 1 else 60
+DAYS = int(sys.argv[1]) if len(sys.argv) > 1 else 30
 W = int(sys.argv[2]) if len(sys.argv) > 2 else 402
 H = int(sys.argv[3]) if len(sys.argv) > 3 else 744
+HTML = open(sys.argv[4] if len(sys.argv) > 4 else os.path.join(ROOT, 'docs', 'index.html')).read()
+CARD = """() => { const q = document.getElementById('q'), f = document.querySelector('.face');
+  return { w: q.dataset.w, ch: [...document.querySelectorAll('.choice')].map(b => b.dataset.w), blank: !!q.querySelector('.blank'),
+           ov: q.scrollWidth > q.clientWidth + 1 || f.scrollHeight > f.clientHeight + 1, scroll: document.documentElement.scrollHeight > innerHeight }; }"""
+AFTER = """() => { const q = document.getElementById('q'), f = document.querySelector('.face');
+  return q.scrollWidth > q.clientWidth + 1 || f.scrollHeight > f.clientHeight + 1 || document.documentElement.scrollHeight > innerHeight; }"""
+# after answering, the sentence must clear the go arrow and, on preview links, the beta's flag and lock keys
+CLEAR = """() => { const r = document.createRange(); r.selectNodeContents(document.getElementById('q'));
+  const lines = [...r.getClientRects()], keys = [...document.querySelectorAll('#go:not(.wait), #beta:not([hidden]) .bk')].map(e => e.getBoundingClientRect());
+  const hit = (a, b) => a.left < b.right && b.left < a.right && a.top < b.bottom && b.top < a.bottom;
+  const above = [].concat(...lines.map(l => keys.filter(k => l.left < k.right && k.left < l.right).map(k => k.top - l.bottom)));   // only keys a line sits over
+  return { hit: lines.some(l => keys.some(k => hit(l, k))), gap: above.length ? Math.min(...above) : 999, keys: keys.length }; }"""
+BOARD = """() => { const h = [...document.querySelectorAll('.hk')];
+  return { min: Math.min(...h.map(e => parseFloat(getComputedStyle(e).fontSize))), over: h.filter(e => e.scrollWidth > e.clientWidth + 0.5).map(e => e.textContent),
+           scroll: document.documentElement.scrollHeight > innerHeight }; }"""
 
 async def main():
     async with async_playwright() as p:
-        b = await p.chromium.launch(); pg = await b.new_page(viewport={'width': W, 'height': H})
-        errs = []; pg.on('pageerror', lambda e: errs.append(str(e)))
-        await pg.route('http://bsb.test/', lambda r: r.fulfill(body=HTML, content_type='text/html')); await pg.goto('http://bsb.test/')
-        levels = await pg.evaluate("[...document.querySelectorAll('#p-select .cat:not(.soon)')].map(b => b.id.slice(2))")
-        for lv in levels:
-            await pg.click('#t-' + lv); seen = collections.Counter(); slots = collections.Counter(); problems = []
-            for i in range(N):
-                st = await pg.evaluate("""() => ({w: document.getElementById('q').dataset.w, ch: [...document.querySelectorAll('.choice')].map(b => b.dataset.w),
-                    blank: !!document.querySelector('#q .blank'),
-                    ov: document.getElementById('q').scrollWidth > document.getElementById('q').clientWidth + 1,
-                    fh: document.querySelector('.face').scrollHeight > document.querySelector('.face').clientHeight + 1})""")
-                seen[st['w']] += 1
-                if len(set(st['ch'])) != 3 or st['w'] not in st['ch'] or not st['blank'] or st['ov'] or st['fh']: problems.append(st)
+        b = await p.chromium.launch()
+        ctx = await b.new_context(viewport={'width': W, 'height': H}, reduced_motion='reduce')
+        pg = await ctx.new_page(); errs = []; pg.on('pageerror', lambda e: errs.append(str(e)))
+        await pg.route('http://bsb.test/**', lambda r: r.fulfill(body=HTML, content_type='text/html'))
+        slots, problems, fonts, cards, gaps = collections.Counter(), [], [], 0, []
+        for day in range(1, DAYS + 1):
+            await pg.goto(f'http://bsb.test/?day={day}&reset'); await pg.wait_for_timeout(250)
+            bd = await pg.evaluate(BOARD); fonts.append(bd['min'])
+            if bd['over'] or bd['scroll']: problems.append((day, 'board', bd))
+            for i in range(18):
+                await pg.click(f'[data-i="{i}"]')
+                st = await pg.evaluate(CARD); cards += 1
+                if len(set(st['ch'])) != 3 or st['w'] not in st['ch'] or not st['blank'] or st['ov'] or st['scroll']: problems.append((day, i, st))
                 slots[st['ch'].index(st['w'])] += 1
                 await pg.click(f'.choice[data-w="{st["w"]}"]')
-                if await pg.evaluate("document.querySelector('.face').scrollHeight > document.querySelector('.face').clientHeight + 1 || document.getElementById('q').scrollWidth > document.getElementById('q').clientWidth + 1"):
-                    problems.append(('answer screen overflows', st['w']))
-                await pg.click('#flip')
-                if await pg.evaluate("document.getElementById('cab').dataset.v") == 'select':
-                    await pg.wait_for_timeout(1200); await pg.click('#t-' + lv)
-            print(f'{lv}: {len(seen)} different cards, slots {dict(sorted(slots.items()))}, problems {problems[:5] or "none"}')
-            if await pg.evaluate("document.getElementById('cab').dataset.v") == 'play': await pg.click('#home')
+                if await pg.evaluate(AFTER): problems.append((day, i, 'answer screen overflows', st['w']))
+                cl = await pg.evaluate(CLEAR); gaps.append(cl['gap'])
+                if cl['hit'] or cl['keys'] != 3: problems.append((day, i, 'the sentence runs into the keys at the bottom', st['w'], cl))
+                await pg.click('#flip'); await pg.wait_for_timeout(30 if i < 17 else 1000)
+            if await pg.evaluate("document.getElementById('cab').dataset.v") != 'end': problems.append((day, 'no end screen after 18 right'))
+        print(f'{W}x{H}: {DAYS} days, {cards} cards, slots {dict(sorted(slots.items()))}, smallest hook font {min(fonts):.1f}px, closest the sentence comes to a key below it {min(gaps):.0f}px')
+        print('problems:', len(problems))
+        for x in problems[:20]: print('  ', x)
         print('JS errors:', errs or 'none'); await b.close()
 asyncio.run(main())

@@ -1,6 +1,6 @@
-# Blank Space Baby
+# Triviela
 
-An arcade fill-in-the-blank word game. Five levels, one boss.
+A daily soccer trivia game in an arcade-cabinet look. Everyone gets the same 18 cards each day.
 
 Play: https://fernforager.github.io/blank-space-baby/
 

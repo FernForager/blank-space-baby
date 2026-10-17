@@ -4,7 +4,8 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Pixelify+Sans:wght@500;600&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
 <style>
 /* One card at a time, like the game's screen, with the three decisions as big keys below it.
-   Colors come from the locked Triviela palette. Card text is in a plain face: the pixel font draws 5 like an S, and numbers get fact-checked here. */
+   Colors come from the locked Triviela palette. Card text is in a plain face: the pixel font draws 5 like an S, and numbers get fact-checked here.
+   The tile shows the card's hook as the board shows it: Pixelify Sans, digits in Press Start 2P, on the card's color. */
 :root {
   --page: #F2EDE4; --card: #FBF8F3; --ink: #1E2A3B; --muted: #5F6673; --line: rgba(30,42,59,.12);
   --celtic: #00843D; --irish: #45BE76; --flag: #B7791F; --cut: #C2413B; --screen: #07130C; --glow: #5CF09A; --screen-ink: #EAFBF0;
@@ -43,6 +44,14 @@ select { font: inherit; font-weight: 700; width: 100%; padding: 10px 12px; borde
 .tags { display: flex; gap: 6px; flex-wrap: wrap; }
 .tag { font-size: 12px; font-weight: 700; padding: 2px 8px; border-radius: 99px; border: 1px solid rgba(92,240,154,.4); color: var(--glow); }
 .tag.cur { border-color: #E0A94A; color: #E0A94A; }
+.tilerow { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.tile { font-family: var(--pixel); font-weight: 600; font-size: 17px; line-height: 1.05; font-variant-ligatures: none; padding: 9px 14px; min-width: 92px; box-sizing: border-box;
+  border-radius: 10px; text-align: center; color: #1E2A3B; }
+.tile.c1 { background: #FFFFFF; box-shadow: 0 4px 0 #C9C2B4; } .tile.c2 { background: #F7C948; box-shadow: 0 4px 0 #B48A1C; } .tile.c3 { background: #D52B1E; color: #fff; box-shadow: 0 4px 0 #8C170F; }
+.tile .num { font-family: var(--display); font-weight: 400; font-size: .8em; letter-spacing: -.02em; }
+.tilelabel { font-size: 13px; color: #A9C9B4; }
+.pool { margin: 0; font-size: 13px; line-height: 1.45; color: #A9C9B4; }
+.pool b { color: var(--screen-ink); font-weight: 700; }
 .state { font-size: 14px; font-weight: 700; min-height: 20px; }
 .state.ok { color: var(--celtic); } .state.flag { color: var(--flag); } .state.cut { color: var(--cut); }
 .keys { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
@@ -116,9 +125,13 @@ button:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3p
     var w = x[0], ex = esc(x[1]), i = x[1].toLowerCase().indexOf(w.toLowerCase());
     if (i >= 0) ex = esc(x[1].slice(0, i)) + '<mark>' + esc(x[1].slice(i, i + w.length)) + '</mark>' + esc(x[1].slice(i + w.length));
     var host = (x[6].match(/^https?:\/\/([^\/]+)/) || [, x[6]])[1];
+    var hook = esc(x[7] || '').replace(/\d+/g, function (n) { return '<span class="num">' + n + '</span>'; });
+    var pool = x[8] || [], shown = pool.slice(0, 10).map(esc).join(' · ') + (pool.length > 10 ? ' · and ' + (pool.length - 10) + ' more' : '');
     $('screen').innerHTML = '<div class="meta"><span>' + esc(d.name.toUpperCase()) + '</span><span>' + (ci + 1) + '/' + d.cards.length + '</span></div>' +
+      '<div class="tilerow"><span class="tile c' + x[4] + '">' + (hook || '—') + '</span><span class="tilelabel">' + ['', 'White tile (easy)', 'Yellow card (medium)', 'Red card (hard)'][x[4]] + '</span></div>' +
       '<p class="ex">' + ex + '</p><p class="means">' + esc(x[2]) + '</p>' +
-      '<div class="tags"><span class="tag">' + esc(x[3]) + '</span><span class="tag">' + ['', 'easy', 'medium', 'hard'][x[4]] + '</span>' + (x[5] ? '<span class="tag cur">can go stale</span>' : '') + '</div>' +
+      '<p class="pool">Wrong answers it can draw: <b>' + (shown || 'none') + '</b></p>' +
+      '<div class="tags"><span class="tag">' + esc(x[3]) + '</span>' + (x[5] ? '<span class="tag cur">can go stale</span>' : '') + '</div>' +
       '<div class="src">Source: <a href="' + esc(x[6]) + '" target="_blank" rel="noopener">' + esc(host) + '</a></div>';
     var st = $('state'); st.className = 'state' + (r ? ' ' + r.s : '');
     st.textContent = r ? ({ ok: 'Approved', flag: 'Flagged', cut: 'Cut' }[r.s] + (r.note ? ' · “' + r.note + '”' : '')) : '';
@@ -137,7 +150,7 @@ button:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3p
 
   function decide(s) {
     var d = DECKS[di], x = d.cards[ci]; if (!x) return;
-    var note = $('note').value.trim(), body = { s: s, note: note, w: x[0], ex: x[1] };
+    var note = $('note').value.trim(), body = { s: s, note: note, w: x[0], ex: x[1], hook: x[7], d: x[4] };
     reviews[d.id][ci] = body;                       // show it right away, the store confirms after
     var at = ci; ci = nextIndex(ci, 1); render();
     if (!db) { $('status').textContent = 'Not saved: open this page signed in to claude.ai so decisions are kept.'; return; }

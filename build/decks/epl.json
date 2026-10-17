@@ -6,361 +6,475 @@
  "items": [
   {
    "w": "Man United",
-   "means": "All 13 came under Alex Ferguson",
-   "ex": "Man United have won the most Premier League titles, with 13",
+   "means": "Alex Ferguson’s last game in charge",
+   "ex": "Man United drew 5–5 at West Brom in 2013, the league’s highest-scoring draw",
+   "hook": "West Brom",
    "k": "club",
-   "src": "https://www.premierleague.com/en/premier-league-explained"
+   "src": "https://www.premierleague.com/en/stats/records",
+   "d": 3
   },
   {
    "w": "Man City",
    "means": "A first in league history",
    "ex": "Man City won four titles in a row, from 2020–21 to 2023–24",
+   "hook": "four titles",
    "k": "club",
-   "src": "https://www.premierleague.com/en/premier-league-explained"
+   "src": "https://www.premierleague.com/en/premier-league-explained",
+   "d": 2
   },
   {
    "w": "Arsenal",
    "means": "They finished on 85 points",
    "ex": "Arsenal won the 2025–26 title, their first in 22 years",
+   "hook": "22 years",
    "k": "club",
    "src": "https://www.premierleague.com/en/news/4668605/everything-thats-been-decided-in-202526-premier-league",
+   "d": 2,
    "current": true
   },
   {
    "w": "Chelsea",
    "means": "Mourinho, Ancelotti and Conte",
    "ex": "Like Man City, Chelsea have won titles under three different managers",
+   "hook": "Man City",
    "k": "club",
-   "src": "https://www.premierleague.com/en/news/4660971/every-premier-league-title-winning-manager-in-history"
+   "src": "https://www.premierleague.com/en/news/4660971/every-premier-league-title-winning-manager-in-history",
+   "d": 2
   },
   {
    "w": "Liverpool",
    "means": "Also champions in 2019–20",
    "ex": "Arne Slot won the 2024–25 title in his first season at Liverpool",
+   "hook": "Arne Slot",
    "k": "club",
-   "src": "https://www.premierleague.com/en/news/4660971/every-premier-league-title-winning-manager-in-history"
+   "src": "https://www.premierleague.com/en/news/4660971/every-premier-league-title-winning-manager-in-history",
+   "d": 2
   },
   {
    "w": "Leicester City",
    "means": "Also the 2015–16 champions",
    "ex": "Leicester City won 9–0 at Southampton in 2019, a record away win",
+   "hook": "Southampton",
    "k": "club",
-   "src": "https://www.premierleague.com/en/stats/records"
+   "src": "https://www.premierleague.com/en/stats/records",
+   "d": 3
   },
   {
    "w": "Coventry City",
    "means": "2025–26 Championship winners",
-   "ex": "Coventry City returned in 2026 after 25 years out of the league",
+   "ex": "Frank Lampard led Coventry City back to the top flight in 2026 after 25 years",
+   "hook": "Lampard",
    "k": "club",
    "src": "https://www.premierleague.com/en/news/4625396/all-you-need-to-know-as-coventry-city-make-premier-league-return",
+   "d": 2,
    "current": true
   },
   {
    "w": "Ipswich Town",
    "means": "Back after one season away",
    "ex": "Ipswich Town won promotion in 2026 as Championship runners-up",
+   "hook": "promotion",
    "k": "club",
    "src": "https://www.premierleague.com/en/news/4644752/all-you-need-to-know-as-ipswich-town-are-promoted-to-the-premier-league",
+   "d": 3,
    "current": true
   },
   {
    "w": "Hull City",
    "means": "Won by a late goal at Wembley",
-   "ex": "Hull City beat Middlesbrough 1–0 in the 2026 play-off final",
+   "ex": "Hull City beat Middlesbrough 1–0 in the 2026 playoff final",
+   "hook": "playoff",
    "k": "club",
    "src": "https://www.premierleague.com/en/news/4664386/all-you-need-to-know-as-hull-city-are-promoted-to-premier-league",
+   "d": 3,
    "current": true
   },
   {
    "w": "20",
    "means": "Each plays the others twice",
-   "ex": "The Premier League has 20 clubs",
+   "ex": "The Premier League has 20 clubs, one tier above the Championship",
+   "hook": "Championship",
    "k": "number",
-   "src": "https://www.premierleague.com/en/premier-league-explained"
+   "src": "https://www.premierleague.com/en/premier-league-explained",
+   "d": 2
   },
   {
    "w": "38",
    "means": "Every rival twice, home and away",
    "ex": "Each club plays 38 league games a season",
+   "hook": "league games",
    "k": "number",
-   "src": "https://www.premierleague.com/en/premier-league-explained"
+   "src": "https://www.premierleague.com/en/premier-league-explained",
+   "d": 2
   },
   {
    "w": "380",
    "means": "20 clubs, 38 games each, halved",
-   "ex": "A Premier League season has 380 matches in all",
+   "ex": "From August to May, a Premier League season has 380 matches in all",
+   "hook": "August",
    "k": "number",
-   "src": "https://www.premierleague.com/en/premier-league-explained"
+   "src": "https://www.premierleague.com/en/premier-league-explained",
+   "d": 2
   },
   {
    "w": "3",
    "means": "They drop to the Championship",
    "ex": "The bottom 3 clubs are relegated each season",
+   "hook": "relegated",
    "k": "number",
-   "src": "https://www.premierleague.com/en/premier-league-explained"
+   "src": "https://www.premierleague.com/en/premier-league-explained",
+   "d": 1
   },
   {
    "w": "100",
    "means": "Pep Guardiola was the manager",
    "ex": "Man City set the record of 100 points in 2017–18",
+   "hook": "Man City",
    "k": "number",
-   "src": "https://www.premierleague.com/en/stats/records"
+   "src": "https://www.premierleague.com/en/stats/records",
+   "d": 2
   },
   {
    "w": "49",
    "means": "All of 2003–04 included",
    "ex": "Arsenal went a record 49 league games unbeaten, from 2003 to 2004",
+   "hook": "unbeaten",
    "k": "number",
-   "src": "https://www.premierleague.com/en/stats/records"
+   "src": "https://www.premierleague.com/en/stats/records",
+   "d": 2
   },
   {
    "w": "36",
    "means": "Most by a player in one season",
    "ex": "Erling Haaland scored 36 league goals for Man City in 2022–23",
+   "hook": "Haaland",
    "k": "number",
-   "src": "https://www.premierleague.com/en/stats/records"
+   "src": "https://www.premierleague.com/en/stats/records",
+   "d": 2
   },
   {
    "w": "Alan Shearer",
    "means": "For Blackburn and Newcastle",
    "ex": "Alan Shearer is the all-time top scorer, with 260 goals",
+   "hook": "top scorer",
    "k": "player",
-   "src": "https://www.premierleague.com/en/stats/records"
+   "src": "https://www.premierleague.com/en/stats/records",
+   "d": 2
   },
   {
    "w": "Erling Haaland",
    "means": "Igor Thiago was next, with 22",
    "ex": "Erling Haaland won the 2025–26 Golden Boot with 27 goals",
+   "hook": "Golden Boot",
    "k": "player",
    "src": "https://www.premierleague.com/en/news/4668605/everything-thats-been-decided-in-202526-premier-league",
+   "d": 2,
    "current": true
   },
   {
    "w": "James Milner",
    "means": "His run began in 2002–03",
-   "ex": "James Milner has played more Premier League games than anyone",
+   "ex": "James Milner has made the most Premier League appearances",
+   "hook": "appearances",
    "k": "player",
-   "src": "https://www.premierleague.com/en/stats/records"
+   "src": "https://www.premierleague.com/en/stats/records",
+   "d": 2
   },
   {
    "w": "Petr Čech",
    "means": "For Chelsea and Arsenal",
    "ex": "Goalkeeper Petr Čech kept a record 202 clean sheets",
+   "hook": "clean sheets",
    "k": "player",
-   "src": "https://www.premierleague.com/en/stats/records"
+   "src": "https://www.premierleague.com/en/stats/records",
+   "d": 2
   },
   {
    "w": "Sergio Agüero",
    "means": "Scored on the season’s final day",
    "ex": "Sergio Agüero’s stoppage-time goal won Man City the 2011–12 title",
+   "hook": "Man City",
    "k": "player",
-   "src": "https://www.premierleague.com/en/premier-league-explained"
+   "src": "https://www.premierleague.com/en/premier-league-explained",
+   "d": 2
   },
   {
    "w": "Bruno Fernandes",
    "means": "He was also Player of the Season",
    "ex": "Bruno Fernandes set a single-season record with 21 assists in 2025–26",
+   "hook": "assists",
    "k": "player",
    "src": "https://www.premierleague.com/en/news/4668605/everything-thats-been-decided-in-202526-premier-league",
+   "d": 2,
    "current": true
   },
   {
    "w": "Old Trafford",
    "means": "Known as the Theatre of Dreams",
    "ex": "Man United’s Old Trafford is the biggest ground in the league",
+   "hook": "Man United",
    "k": "stadium",
-   "src": "https://www.premierleague.com/en/news/4725666/all-you-need-to-know-about-the-20-premier-league-stadiums"
+   "src": "https://www.premierleague.com/en/news/4725666/all-you-need-to-know-about-the-20-premier-league-stadiums",
+   "d": 2
   },
   {
    "w": "Anfield",
    "means": "Capacity: 61,276",
    "ex": "Liverpool have played at Anfield since the club began in 1892",
+   "hook": "Liverpool",
    "k": "stadium",
-   "src": "https://www.premierleague.com/en/news/4725666/all-you-need-to-know-about-the-20-premier-league-stadiums"
+   "src": "https://www.premierleague.com/en/news/4725666/all-you-need-to-know-about-the-20-premier-league-stadiums",
+   "d": 2
   },
   {
    "w": "Emirates Stadium",
    "means": "Named after its airline sponsor",
-   "ex": "Bronze statues of Arsenal legends stand outside the Emirates Stadium",
+   "ex": "Bronze statues of Arsenal legends stand outside Emirates Stadium",
+   "hook": "Arsenal",
    "k": "stadium",
-   "src": "https://www.premierleague.com/en/news/4725666/all-you-need-to-know-about-the-20-premier-league-stadiums"
+   "src": "https://www.premierleague.com/en/news/4725666/all-you-need-to-know-about-the-20-premier-league-stadiums",
+   "d": 2
   },
   {
    "w": "Stamford Bridge",
    "means": "It’s in Fulham, west London",
    "ex": "Chelsea have played at Stamford Bridge since the club formed in 1905",
+   "hook": "Chelsea",
    "k": "stadium",
-   "src": "https://www.premierleague.com/en/news/4725666/all-you-need-to-know-about-the-20-premier-league-stadiums"
+   "src": "https://www.premierleague.com/en/news/4725666/all-you-need-to-know-about-the-20-premier-league-stadiums",
+   "d": 2
   },
   {
    "w": "St James’ Park",
    "means": "Newcastle’s home since 1892",
-   "ex": "Newcastle’s St James’ Park sits right in the city center",
+   "ex": "Newcastle’s St James’ Park sits close to the city center",
+   "hook": "Newcastle",
    "k": "stadium",
-   "src": "https://www.premierleague.com/en/news/4725666/all-you-need-to-know-about-the-20-premier-league-stadiums"
+   "src": "https://www.premierleague.com/en/news/4725666/all-you-need-to-know-about-the-20-premier-league-stadiums",
+   "d": 2
   },
   {
    "w": "Craven Cottage",
    "means": "Source of the Cottagers nickname",
    "ex": "Fulham play at Craven Cottage, on the bank of the River Thames",
+   "hook": "Fulham",
    "k": "stadium",
-   "src": "https://www.premierleague.com/en/news/4725666/all-you-need-to-know-about-the-20-premier-league-stadiums"
+   "src": "https://www.premierleague.com/en/news/4725666/all-you-need-to-know-about-the-20-premier-league-stadiums",
+   "d": 2
   },
   {
    "w": "London",
    "means": "Home to several league clubs",
    "ex": "Arsenal’s Emirates Stadium is in Holloway, north London",
+   "hook": "Emirates",
    "k": "city",
-   "src": "https://www.premierleague.com/en/news/4725666/all-you-need-to-know-about-the-20-premier-league-stadiums"
+   "src": "https://www.premierleague.com/en/news/4725666/all-you-need-to-know-about-the-20-premier-league-stadiums",
+   "d": 2
   },
   {
    "w": "Birmingham",
    "means": "Aston Villa’s home since 1897",
    "ex": "Villa Park is in the Aston area of Birmingham",
+   "hook": "Villa Park",
    "k": "city",
-   "src": "https://www.premierleague.com/en/news/4725666/all-you-need-to-know-about-the-20-premier-league-stadiums"
+   "src": "https://www.premierleague.com/en/news/4725666/all-you-need-to-know-about-the-20-premier-league-stadiums",
+   "d": 2
   },
   {
    "w": "Liverpool",
    "means": "Everton’s home since 2025",
    "ex": "Everton’s new stadium at Bramley-Moore Dock is in Liverpool",
+   "hook": "Everton",
    "k": "city",
-   "src": "https://www.premierleague.com/en/news/4725666/all-you-need-to-know-about-the-20-premier-league-stadiums"
+   "src": "https://www.premierleague.com/en/news/4725666/all-you-need-to-know-about-the-20-premier-league-stadiums",
+   "d": 2
   },
   {
    "w": "Nottingham",
    "means": "Home of Nottingham Forest",
    "ex": "The City Ground sits on the River Trent, just south of Nottingham",
+   "hook": "City Ground",
    "k": "city",
-   "src": "https://www.premierleague.com/en/news/4725666/all-you-need-to-know-about-the-20-premier-league-stadiums"
+   "src": "https://www.premierleague.com/en/news/4725666/all-you-need-to-know-about-the-20-premier-league-stadiums",
+   "d": 2
   },
   {
    "w": "Bournemouth",
    "means": "Capacity: just 12,357",
    "ex": "The league’s smallest ground, Vitality Stadium, is in Bournemouth",
+   "hook": "Vitality",
    "k": "city",
-   "src": "https://www.premierleague.com/en/news/4725666/all-you-need-to-know-about-the-20-premier-league-stadiums"
+   "src": "https://www.premierleague.com/en/news/4725666/all-you-need-to-know-about-the-20-premier-league-stadiums",
+   "d": 2
   },
   {
    "w": "Gunners",
    "means": "A nod to the founders’ factory",
    "ex": "Arsenal are nicknamed the Gunners",
+   "hook": "Arsenal",
    "k": "nickname",
-   "src": "https://www.premierleague.com/en/news/4592046/what-is-the-history-behind-every-premier-league-clubs-name"
+   "src": "https://www.premierleague.com/en/news/4592046/what-is-the-history-behind-every-premier-league-clubs-name",
+   "d": 1,
+   "out": true,
+   "out_why": "Same fact as nicknames:0, which keeps it (cross-deck twins, soccer expert)"
   },
   {
    "w": "Toffees",
    "means": "Began as St Domingo’s in 1878",
    "ex": "Everton are nicknamed the Toffees",
+   "hook": "Everton",
    "k": "nickname",
-   "src": "https://www.premierleague.com/en/news/4576519/fulham-1-everton-2-match-report-7-february-2026"
+   "src": "https://www.premierleague.com/en/news/4592046/what-is-the-history-behind-every-premier-league-clubs-name",
+   "d": 2,
+   "out": true,
+   "out_why": "Moved to nicknames:65, the deck for club nicknames"
   },
   {
    "w": "Magpies",
-   "means": "For their black-and-white stripes",
+   "means": "They play in black-and-white stripes",
    "ex": "Newcastle United are nicknamed the Magpies",
+   "hook": "Newcastle",
    "k": "nickname",
-   "src": "https://www.premierleague.com/en/news/4489927/woltemade-own-goal-earns-sunderland-tyne-wear-derby-win"
+   "src": "https://www.premierleague.com/en/news/4489927/woltemade-own-goal-earns-sunderland-tyne-wear-derby-win",
+   "d": 2,
+   "out": true,
+   "out_why": "Moved to nicknames:66, the deck for club nicknames"
   },
   {
    "w": "Black Cats",
    "means": "Home: the Stadium of Light",
    "ex": "Sunderland are nicknamed the Black Cats",
+   "hook": "Sunderland",
    "k": "nickname",
-   "src": "https://www.premierleague.com/en/news/4489927/woltemade-own-goal-earns-sunderland-tyne-wear-derby-win"
+   "src": "https://www.premierleague.com/en/news/4489927/woltemade-own-goal-earns-sunderland-tyne-wear-derby-win",
+   "d": 2,
+   "out": true,
+   "out_why": "Same fact as nicknames:5, which keeps it (cross-deck twins, soccer expert)"
   },
   {
    "w": "Cherries",
-   "means": "Maybe from red striped shirts",
+   "means": "Possibly from their red-striped shirts",
    "ex": "AFC Bournemouth are nicknamed the Cherries",
+   "hook": "Bournemouth",
    "k": "nickname",
-   "src": "https://www.premierleague.com/en/news/4592046/what-is-the-history-behind-every-premier-league-clubs-name"
+   "src": "https://www.premierleague.com/en/news/4592046/what-is-the-history-behind-every-premier-league-clubs-name",
+   "d": 2,
+   "out": true,
+   "out_why": "Same fact as nicknames:6, which keeps it (cross-deck twins, soccer expert)"
   },
   {
    "w": "Eagles",
    "means": "Inspired by Benfica in the 1970s",
    "ex": "Crystal Palace are nicknamed the Eagles",
+   "hook": "Palace",
    "k": "nickname",
-   "src": "https://www.premierleague.com/en/news/4592046/what-is-the-history-behind-every-premier-league-clubs-name"
+   "src": "https://www.premierleague.com/en/news/4592046/what-is-the-history-behind-every-premier-league-clubs-name",
+   "d": 2,
+   "out": true,
+   "out_why": "Same fact as nicknames:4, which keeps it (cross-deck twins, soccer expert)"
   },
   {
    "w": "Tractor Boys",
    "means": "Back in the league for 2026–27",
    "ex": "Ipswich Town are nicknamed the Tractor Boys",
+   "hook": "Ipswich",
    "k": "nickname",
-   "src": "https://www.premierleague.com/en/news/4644752/all-you-need-to-know-as-ipswich-town-are-promoted-to-the-premier-league"
+   "src": "https://www.premierleague.com/en/news/4644752/all-you-need-to-know-as-ipswich-town-are-promoted-to-the-premier-league",
+   "d": 2,
+   "out": true,
+   "out_why": "Same fact as nicknames:12, which keeps it (cross-deck twins, soccer expert)"
   },
   {
    "w": "Alex Ferguson",
-   "means": "He managed the club from 1986 to 2013",
+   "means": "2012–13 was his last season in charge",
    "ex": "Alex Ferguson won a record 13 Premier League titles with Man United",
+   "hook": "Man United",
    "k": "manager",
-   "src": "https://www.premierleague.com/en/stats/records"
+   "src": "https://www.premierleague.com/en/stats/records",
+   "d": 2
   },
   {
    "w": "Arsène Wenger",
    "means": "26 wins, 12 draws, no defeats",
    "ex": "Arsène Wenger managed Arsenal’s unbeaten Invincibles in 2003–04",
+   "hook": "Invincibles",
    "k": "manager",
-   "src": "https://www.premierleague.com/en/news/4660971/every-premier-league-title-winning-manager-in-history"
+   "src": "https://www.premierleague.com/en/news/4660971/every-premier-league-title-winning-manager-in-history",
+   "d": 2
   },
   {
    "w": "Claudio Ranieri",
    "means": "One of the league’s great upsets",
    "ex": "Claudio Ranieri led Leicester City to a shock title in 2015–16",
+   "hook": "Leicester",
    "k": "manager",
-   "src": "https://www.premierleague.com/en/news/4660971/every-premier-league-title-winning-manager-in-history"
+   "src": "https://www.premierleague.com/en/news/4660971/every-premier-league-title-winning-manager-in-history",
+   "d": 2
   },
   {
    "w": "Pep Guardiola",
    "means": "Titles from 2017–18 to 2023–24",
    "ex": "Pep Guardiola won six Premier League titles with Man City",
+   "hook": "Man City",
    "k": "manager",
-   "src": "https://www.premierleague.com/en/news/4660971/every-premier-league-title-winning-manager-in-history"
+   "src": "https://www.premierleague.com/en/news/4660971/every-premier-league-title-winning-manager-in-history",
+   "d": 2
   },
   {
    "w": "Mikel Arteta",
    "means": "Won with Arsenal in 2025–26",
    "ex": "Mikel Arteta became the 13th different title-winning manager in 2026",
+   "hook": "13th",
    "k": "manager",
    "src": "https://www.premierleague.com/en/news/4660971/every-premier-league-title-winning-manager-in-history",
+   "d": 2,
    "current": true
   },
   {
    "w": "Enzo Maresca",
    "means": "Appointed in June 2026",
    "ex": "Enzo Maresca replaced Pep Guardiola as Man City manager in 2026",
+   "hook": "Guardiola",
    "k": "manager",
    "src": "https://www.premierleague.com/en/news/4676111/analysis-how-will-man-city-look-under-maresca",
+   "d": 2,
    "current": true
   },
   {
    "w": "1992",
    "means": "Man United won the first title",
-   "ex": "The Premier League began in 1992",
+   "ex": "The Premier League began in 1992 as England’s new top tier",
+   "hook": "England",
    "k": "year",
-   "src": "https://www.premierleague.com/en/premier-league-explained"
+   "src": "https://www.premierleague.com/en/premier-league-explained",
+   "d": 2
   },
   {
    "w": "2006",
    "means": "Capacity: 60,704",
    "ex": "Arsenal moved into the Emirates Stadium in 2006",
+   "hook": "Emirates",
    "k": "year",
-   "src": "https://www.premierleague.com/en/news/4725666/all-you-need-to-know-about-the-20-premier-league-stadiums"
+   "src": "https://www.premierleague.com/en/news/4725666/all-you-need-to-know-about-the-20-premier-league-stadiums",
+   "d": 3
   },
   {
    "w": "2002",
    "means": "City moved in the next year",
    "ex": "Man City’s Etihad Stadium was built for the 2002 Commonwealth Games",
+   "hook": "Etihad",
    "k": "year",
-   "src": "https://www.premierleague.com/en/news/4725666/all-you-need-to-know-about-the-20-premier-league-stadiums"
+   "src": "https://www.premierleague.com/en/news/4725666/all-you-need-to-know-about-the-20-premier-league-stadiums",
+   "d": 3
   },
   {
    "w": "2019",
    "means": "It also hosts NFL games",
    "ex": "Tottenham Hotspur Stadium opened in 2019, replacing White Hart Lane",
+   "hook": "Tottenham",
    "k": "year",
-   "src": "https://www.premierleague.com/en/news/4725666/all-you-need-to-know-about-the-20-premier-league-stadiums"
+   "src": "https://www.premierleague.com/en/news/4725666/all-you-need-to-know-about-the-20-premier-league-stadiums",
+   "d": 2
   }
  ],
  "groups": [
