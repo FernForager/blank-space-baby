@@ -124,7 +124,7 @@ It replaces the arcade game: no category keys, no boss. The cabinet, palette, fo
 - **Clearer next steps:** after an answer the screen shows a blinking “NEXT ▶” (the whole screen still taps through), and the demo’s end screen says “Play #2 ▶”.
 - **The day’s first tile asks for a second tap** (Morg, Oct 17, 2026: the keys sit right under a thumb): it lights up with a green glow and the screen blinks “Tap again to kick off”. Tapping another tile moves the glow. Every tile after the first opens on one tap.
 - **The cabinet is pinned:** no rubber-band bounce on iPhone, no double-tap zoom, and a touch listener so keys visibly press down under a finger (Safari shows `:active` only once one exists).
-- **The demo’s tucked-away restart:** a dim replay icon in the sign’s right corner. Tap it and the sign asks “Start over? Tap again”, and a second tap within 3 seconds goes back to #1.
+- **The demo’s tucked-away restart:** a dim replay icon in the sign’s right corner opens a small pop-up, “Start over from #1?”, with two keys: Keep playing (cream) and Start over (green). A tap outside the box closes it. (A tap-again-to-confirm sign was tried first, Oct 17, 2026, and dropped as confusing.)
 
 ## The beta and the vetting team (Morg, Oct 16, 2026)
 Morg needs to build and tune, not approve cards one by one. So:

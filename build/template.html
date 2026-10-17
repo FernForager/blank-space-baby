@@ -34,7 +34,13 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .cab.poweron .marquee h1 { animation: power .6s steps(6); }
 .marquee h1.cta { font-family: 'Yellowtail', cursive; font-size: 27px; line-height: 1.02; letter-spacing: 0; white-space: normal; padding: 0 26px 2px;
   text-shadow: 0 0 3px rgba(255,255,255,.9), 0 0 9px var(--glow), 0 0 18px rgba(92,240,154,.6), 0 0 30px rgba(92,240,154,.35); }
-.marquee h1.cta.ask { font-family: var(--body-font); font-size: 17px; padding-block: 8px; }
+.ask-pop { position: fixed; inset: 0; z-index: 20; display: flex; align-items: center; justify-content: center; padding: 24px; background: rgba(5,10,7,.72); }
+.ask-pop[hidden] { display: none; }
+.ask-box { width: 100%; max-width: 320px; box-sizing: border-box; padding: 20px 16px 18px; border-radius: 18px; background: var(--bezel); box-shadow: inset 0 0 0 3px #000, 0 0 0 3px var(--body-dark), 0 10px 30px rgba(0,0,0,.5); text-align: center; }
+.ask-box p { margin: 0 0 16px; font-size: 20px; color: var(--text); text-shadow: 0 0 8px rgba(92,240,154,.5); }
+.ask-keys { display: flex; gap: 10px; }
+.ask-keys .key { flex: 1; min-height: 50px; font-size: 16px; }
+.ask-keys .key.yes { background: var(--ok); box-shadow: 0 5px 0 var(--ok-edge), 0 7px 10px rgba(0,0,0,.25); }
 .restart { position: absolute; right: 6px; top: 50%; transform: translateY(-50%); width: 34px; height: 34px; padding: 0; border: 0; background: none; color: var(--dim); opacity: .5; cursor: pointer; display: flex; align-items: center; justify-content: center; }
 .restart:focus-visible { outline: 3px solid var(--glow); outline-offset: 2px; }
 @keyframes power { 0% { opacity: 0; } 17% { opacity: 1; } 34% { opacity: .15; } 51% { opacity: 1; } 68% { opacity: .4; } 100% { opacity: 1; } }
@@ -204,6 +210,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 </style>
 <div class="cab" id="cab" data-v="board">
   <div class="marquee"><h1 class="cta">How well do you know<br>the beautiful game?</h1><button class="restart" id="restart" type="button" aria-label="Start over" hidden></button></div>
+  <div class="ask-pop" id="restart-ask" role="dialog" aria-modal="true" aria-labelledby="ra-q" hidden><div class="ask-box"><p id="ra-q">Start over from <span class="num">#1</span>?</p><div class="ask-keys"><button class="key" id="ra-no" type="button">Keep playing</button><button class="key yes" id="ra-yes" type="button">Start over</button></div></div></div>
   <div class="bezel">
     <div class="screen" id="flip" aria-live="polite">
       <section class="view" id="v-board"></section>
@@ -599,14 +606,13 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     clearInterval(tick); store.set('bsb-demo', d); store.del('bsb-daily'); S = load(); save(); show();
   }
   $('e-again').innerHTML = svg('again', 3);
-  var armed = 0, CTA = $('cab').querySelector('.marquee h1').innerHTML;   // the demo's tucked-away restart, in the sign's corner: tap, then tap again
+  // the demo's tucked-away restart, in the sign's corner: it opens a small pop-up with two keys (Morg, Oct 17, 2026)
   if (DEMO) { $('restart').hidden = false; $('restart').innerHTML = svg('again', 2); }
-  $('restart').addEventListener('click', function () {
-    var h = $('cab').querySelector('.marquee h1');
-    if (Date.now() < armed) { armed = 0; h.innerHTML = CTA; h.classList.remove('ask'); goDay(0); return; }
-    armed = Date.now() + 3000; h.innerHTML = 'Start over? Tap again'; h.classList.add('ask');
-    setTimeout(function () { if (Date.now() >= armed) { h.innerHTML = CTA; h.classList.remove('ask'); } }, 3100);
-  });
+  function askRestart(on) { $('restart-ask').hidden = !on; if (on) $('ra-no').focus(); }
+  $('restart').addEventListener('click', function () { askRestart(true); });
+  $('ra-no').addEventListener('click', function () { askRestart(false); });
+  $('ra-yes').addEventListener('click', function () { askRestart(false); goDay(0); });
+  $('restart-ask').addEventListener('click', function (e) { if (e.target === $('restart-ask')) askRestart(false); });   // a tap outside the box closes it
   $('e-next').addEventListener('click', function () { if (DEMO && S.day < DEMO - 1) goDay(S.day + 1); });
   $('e-again').addEventListener('click', function () { if (DEMO) goDay(0); });
   function clock() {   // the countdown to tomorrow's board, at local midnight
