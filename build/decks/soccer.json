@@ -168,7 +168,7 @@
   },
   {
    "w": "yellow card",
-   "means": "Two in one game mean a red card",
+   "means": "A caution, not a send-off",
    "ex": "The ref showed the captain a yellow card as an official warning",
    "hook": "warning",
    "k": "rules",
@@ -187,7 +187,7 @@
   {
    "w": "handball",
    "means": "Illegal touch with a hand",
-   "ex": "The defender blocked the shot with her arm, so the ref called handball",
+   "ex": "The defender blocked the shot with her arm, an offense called handball",
    "hook": "blocked",
    "k": "rules",
    "src": "https://www.dictionary.com/browse/handball",
@@ -276,7 +276,7 @@
   },
   {
    "w": "false nine",
-   "means": "Named for the striker’s No. 9 shirt",
+   "means": "Drops back to pull defenders out",
    "ex": "As a false nine, the forward keeps dropping into midfield",
    "hook": "forward",
    "k": "role",
@@ -366,7 +366,7 @@
   },
   {
    "w": "sudden death",
-   "means": "Tied shoot-outs end this way too",
+   "means": "Extra play to break a tie",
    "ex": "In sudden death, the very next goal wins the game",
    "hook": "next goal",
    "k": "game",
@@ -488,7 +488,7 @@
    "hook": "win it back",
    "k": "lingo",
    "src": "https://www.dictionary.com/browse/gegenpressing",
-   "d": 3
+   "d": 2
   },
   {
    "w": "relegated",

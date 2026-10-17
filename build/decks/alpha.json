@@ -131,7 +131,7 @@
   {
    "w": "skibidi",
    "means": "A silly nonsense word",
-   "ex": "The defender answered every coaching tip with “skibidi”",
+   "ex": "The defender answered every coaching tip with the nonsense word “skibidi”",
    "hook": "coaching tip",
    "src": "https://www.merriam-webster.com/dictionary/skibidi",
    "d": 2
@@ -213,7 +213,7 @@
    "means": "Bro, dude",
    "ex": "The goalie said “bruh” when the ball rolled through her legs",
    "hook": "goalie",
-   "src": "https://www.merriam-webster.com/dictionary/bruh",
+   "src": "https://www.dictionary.com/culture/slang/bruh",
    "d": 1
   },
   {
@@ -266,7 +266,7 @@
   },
   {
    "w": "brain rot",
-   "means": "Mind-numbing online junk",
+   "means": "Mind fog from too much junk online",
    "ex": "Three hours of goofy soccer clips gave the striker brain rot",
    "hook": "soccer clips",
    "src": "https://www.merriam-webster.com/dictionary/brain%20rot",
@@ -483,7 +483,7 @@
   {
    "w": "gas",
    "means": "Excellent",
-   "ex": "The new team jerseys are gas",
+   "ex": "Every player wants to keep the new team jerseys because they are gas",
    "hook": "jerseys",
    "src": "https://www.merriam-webster.com/slang/gas",
    "d": 2
@@ -498,7 +498,7 @@
   },
   {
    "w": "standing on business",
-   "means": "Doing what you said",
+   "means": "Doing what needs to be done",
    "ex": "The captain promised a goal and scored, standing on business",
    "hook": "captain",
    "src": "https://www.merriam-webster.com/dictionary/stand%20on%20business",
@@ -547,7 +547,7 @@
   {
    "w": "smol",
    "means": "Small and cute",
-   "ex": "The new team mascot puppy is smol",
+   "ex": "The new team mascot puppy fits inside a cleat—it’s that smol",
    "hook": "mascot",
    "src": "https://www.merriam-webster.com/slang/smol",
    "d": 1
@@ -1440,6 +1440,22 @@
   [
    "chalked",
    "mid"
+  ],
+  [
+   "gas",
+   "whimsy"
+  ],
+  [
+   "cringe",
+   "mother"
+  ],
+  [
+   "preppy",
+   "fire"
+  ],
+  [
+   "preppy",
+   "lit"
   ]
  ],
  "deck": "Gen Alpha",

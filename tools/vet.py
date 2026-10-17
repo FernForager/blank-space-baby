@@ -7,6 +7,7 @@
     python3 tools/vet.py fixes [DECK]                           # open fix and cut verdicts on current cards (for Trivelle)
     python3 tools/vet.py take ID WHO                            # write WHO's proposed fix into the deck (for Trivelle)
     python3 tools/vet.py combine ID WHO:field,field WHO:field   # write fields from two reviewers' fixes at once (for Trivelle)
+    python3 tools/vet.py edit ID '{"ex": "..."}'                # write the desk's own wording, checked like a fix (for Trivelle)
     python3 tools/vet.py out ID "reason"                        # take a card out of play for good (for Trivelle)
     python3 tools/vet.py decline ID WHO "reason"                # turn down WHO's fix or cut: the card goes back to WHO (for Trivelle)
     python3 tools/vet.py marks FILE.json                        # Morg's beta marks: rows from the database's marks table
@@ -222,6 +223,22 @@ def combine(cid, parts):
     carried = carry(did, deck, new, skip=(i,))
     print(f'{cid} now reads: {p["ex"]}  [{p["w"]}]  means: {p["means"]}  tile: {p.get("hook")}  (combined, back to all three)' + (f'  ({carried} oks carried on deck-mates)' if carried else ''))
 
+def edit(cid, fix):
+    """The desk's own wording, for when no proposal is quite right. Checked against the house rules like a reviewer's
+    fix, and it counts as no one's ok, so all three see the card fresh."""
+    did, deck, i = find(cid)
+    _, marks = B.vetting()
+    if (marks.get(cid) or {}).get('m') == 'lock': sys.exit(f'Morg locked {cid}')
+    fix = json.loads(fix)
+    if not isinstance(fix, dict) or not fix or set(fix) - set(FIELDS): sys.exit(f'the edit must be an object of changed fields, from {", ".join(FIELDS)}')
+    bad = problems_with(did, deck, i, fix)
+    if bad: sys.exit('the edit breaks house rules: ' + '; '.join(' '.join(str(x) for x in b[2:]) for b in bad))
+    new = changed(deck, i, fix)
+    if new == deck: sys.exit('the edit changes nothing')
+    save_deck(did, new); p = new['items'][i]
+    carried = carry(did, deck, new, skip=(i,))
+    print(f'{cid} now reads: {p["ex"]}  [{p["w"]}]  means: {p["means"]}  tile: {p.get("hook")}  (the desk’s wording, back to all three)' + (f'  ({carried} oks carried on deck-mates)' if carried else ''))
+
 def carry(did, before, after, skip=()):
     """After a deck changes, keep the oks of every other card whose only change is losing wrong answers: a card offered
     fewer decoys can't gain a second right answer, so its reviewers needn't see it again. A card that gains a decoy
@@ -299,6 +316,7 @@ if __name__ == '__main__':
     elif cmd == 'take': take(plain_args[0], plain_args[1])
     elif cmd == 'out': take_out(plain_args[0], plain_args[1])
     elif cmd == 'combine': combine(plain_args[0], plain_args[1:])
+    elif cmd == 'edit': edit(plain_args[0], plain_args[1])
     elif cmd == 'decline': decline(plain_args[0], plain_args[1], plain_args[2])
     elif cmd == 'marks': import_marks(plain_args[0])
     else: sys.exit(__doc__)
