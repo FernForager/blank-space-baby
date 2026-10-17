@@ -322,6 +322,10 @@
    "at": "2026-10-17T00:23:58Z",
    "h": "8152e7bdd7"
   },
+  "facts": {
+   "at": "2026-10-17T00:44:15Z",
+   "h": "cfc20622c4"
+  },
   "soccer": {
    "at": "2026-10-17T00:23:58Z",
    "h": "8152e7bdd7"
@@ -473,16 +477,16 @@
  },
  "alpha:75": {
   "editor": {
-   "at": "2026-10-17T00:13:24Z",
-   "h": "014bc15e6e"
+   "at": "2026-10-17T00:44:15Z",
+   "h": "23c5bf10a4"
   },
   "facts": {
-   "at": "2026-10-17T00:13:42Z",
-   "h": "139f2f365c"
+   "at": "2026-10-17T00:44:15Z",
+   "h": "23c5bf10a4"
   },
   "soccer": {
-   "at": "2026-10-17T00:13:24Z",
-   "h": "014bc15e6e"
+   "at": "2026-10-17T00:44:15Z",
+   "h": "23c5bf10a4"
   }
  },
  "alpha:77": {
@@ -3938,6 +3942,12 @@
   }
  },
  "soccer:43": {
+  "editor": {
+   "at": "2026-10-17T00:44:15Z",
+   "declined": true,
+   "h": "2ef7a9bb7f",
+   "note": "You’re right that “end of a game” misleads, but the fact checker can’t back “each half” from M-W or Dictionary.com, the deck’s sources. The desk used what both say and what’s true of every half: “Added to make up for lost time” (M-W injury time: added to make up for time lost)"
+  },
   "facts": {
    "at": "2026-10-17T00:38:48Z",
    "h": "aa60581a22"

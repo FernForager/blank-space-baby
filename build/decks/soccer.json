@@ -393,7 +393,7 @@
   },
   {
    "w": "stoppage time",
-   "means": "Time added on at the end of a game",
+   "means": "Added to make up for lost time",
    "ex": "The equalizer came in the fourth minute of stoppage time",
    "hook": "equalizer",
    "k": "game",
