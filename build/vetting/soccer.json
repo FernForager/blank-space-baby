@@ -24,8 +24,8 @@
   "v": "ok"
  },
  "alpha:100": {
-  "at": "2026-10-17T00:00:40Z",
-  "h": "c62ddba2dd",
+  "at": "2026-10-17T00:18:40Z",
+  "h": "ae9a0b4239",
   "v": "ok"
  },
  "alpha:101": {
@@ -285,8 +285,8 @@
   "v": "ok"
  },
  "alpha:31": {
-  "at": "2026-10-17T00:00:40Z",
-  "h": "2ec4e51a5d",
+  "at": "2026-10-17T00:18:40Z",
+  "h": "85c0a332d1",
   "v": "ok"
  },
  "alpha:32": {
@@ -334,13 +334,13 @@
   "v": "ok"
  },
  "alpha:4": {
-  "at": "2026-10-17T00:00:40Z",
-  "h": "087e862fe1",
+  "at": "2026-10-17T00:18:40Z",
+  "h": "d291ec06ee",
   "v": "ok"
  },
  "alpha:40": {
-  "at": "2026-10-17T00:00:40Z",
-  "h": "cf7df59668",
+  "at": "2026-10-17T00:18:40Z",
+  "h": "e34186bb3c",
   "v": "ok"
  },
  "alpha:41": {
@@ -403,13 +403,13 @@
   "v": "ok"
  },
  "alpha:51": {
-  "at": "2026-10-17T00:00:40Z",
-  "h": "0344bcca95",
+  "at": "2026-10-17T00:18:40Z",
+  "h": "f3da882e4d",
   "v": "ok"
  },
  "alpha:52": {
-  "at": "2026-10-17T00:00:40Z",
-  "h": "44431e4d30",
+  "at": "2026-10-17T00:18:40Z",
+  "h": "9b26ca0bf7",
   "v": "ok"
  },
  "alpha:53": {
@@ -454,9 +454,19 @@
   "v": "ok"
  },
  "alpha:60": {
-  "at": "2026-10-17T00:00:40Z",
-  "h": "7834cb9468",
-  "v": "ok"
+  "at": "2026-10-17T00:18:40Z",
+  "fix": {
+   "ex": "Every player wants to keep the new team jerseys because they are gas",
+   "groups": [
+    [
+     "gas",
+     "whimsy"
+    ]
+   ]
+  },
+  "h": "dfae948b0f",
+  "note": "“The new team jerseys are ___” has no clue they’re great, so whimsy, sus or out of pocket can fit. Add the clue, and keep whimsy apart",
+  "v": "fix"
  },
  "alpha:61": {
   "at": "2026-10-17T00:00:40Z",
@@ -502,15 +512,19 @@
   "v": "fix"
  },
  "alpha:67": {
-  "at": "2026-10-17T00:00:40Z",
-  "h": "5dee7072d9",
-  "note": "Right and fair, but Mary Sue is a decades-old fan-fiction term more than kid slang. Red, so it never plays as slang anyway",
+  "at": "2026-10-17T00:18:40Z",
+  "h": "da79349482",
+  "note": "Mary Sue is fan-fiction talk more than kid slang. Red, so it never plays as slang",
   "v": "ok"
  },
  "alpha:68": {
-  "at": "2026-10-17T00:00:40Z",
-  "h": "5d2bab8031",
-  "v": "ok"
+  "at": "2026-10-17T00:18:40Z",
+  "fix": {
+   "ex": "The new team mascot puppy fits inside a cleat—it’s that smol"
+  },
+  "h": "3add5ec680",
+  "note": "Nothing in “the new team mascot puppy is ___” says small, so cringe, GOAT or mother can fit. Give it a size clue",
+  "v": "fix"
  },
  "alpha:69": {
   "at": "2026-10-17T00:00:40Z",
@@ -528,8 +542,8 @@
   "v": "ok"
  },
  "alpha:71": {
-  "at": "2026-10-17T00:00:40Z",
-  "h": "0b6b190f79",
+  "at": "2026-10-17T00:18:40Z",
+  "h": "e8e841dae1",
   "v": "ok"
  },
  "alpha:72": {
@@ -557,8 +571,8 @@
   "v": "ok"
  },
  "alpha:75": {
-  "at": "2026-10-17T00:00:40Z",
-  "h": "d9c246d805",
+  "at": "2026-10-17T00:18:40Z",
+  "h": "139f2f365c",
   "v": "ok"
  },
  "alpha:76": {
@@ -1200,10 +1214,13 @@
   "v": "ok"
  },
  "basics:1": {
-  "at": "2026-10-17T00:00:49Z",
-  "h": "120967ea02",
-  "note": "Awkward “foot lost its shoe” is doing a job: it keeps gloves and jersey from fitting (losing either wouldn’t cancel a goal either). Keep",
-  "v": "ok"
+  "at": "2026-10-17T00:18:40Z",
+  "fix": {
+   "ex": "A goal still counts if the scorer lost a shoe by accident and kicked it in her sock"
+  },
+  "h": "85b5bf1a9f",
+  "note": "“The scorer’s shoe came off” lets gloves, armband or jersey fit too: losing any of them wouldn’t cancel a goal either. Tie it to the foot so only shoe works (Law 4: the goal is awarded)",
+  "v": "fix"
  },
  "basics:10": {
   "at": "2026-10-17T00:00:49Z",
@@ -1231,8 +1248,8 @@
   "v": "ok"
  },
  "basics:104": {
-  "at": "2026-10-17T00:00:49Z",
-  "h": "fde74ffdeb",
+  "at": "2026-10-17T00:18:40Z",
+  "h": "5269340a26",
   "v": "ok"
  },
  "basics:105": {
@@ -1266,13 +1283,9 @@
   "v": "ok"
  },
  "basics:110": {
-  "at": "2026-10-17T00:00:49Z",
-  "fix": {
-   "means": "Once in play, it’s a foul too"
-  },
-  "h": "038530ba44",
-  "note": "The means said a free kick, but holding by a defender in the box once the ball is in play is a penalty kick. Keep it general.",
-  "v": "fix"
+  "at": "2026-10-17T00:18:40Z",
+  "h": "8d6bab10b6",
+  "v": "ok"
  },
  "basics:111": {
   "at": "2026-10-17T00:00:49Z",
@@ -1370,14 +1383,9 @@
   "v": "ok"
  },
  "basics:129": {
-  "at": "2026-10-17T00:00:49Z",
-  "fix": {
-   "ex": "Unsure which way a far-off throw-in goes, the assistant referee raises the flag",
-   "means": "Then they follow the referee’s signal"
-  },
-  "h": "23bbedd06a",
-  "note": "The sentence names the referee, so referee drops out of the kind and the card falls back to the whole deck (coin toss, net, halves as decoys). Rewritten without the word referee, same guideline fact.",
-  "v": "fix"
+  "at": "2026-10-17T00:18:40Z",
+  "h": "10104f993e",
+  "v": "ok"
  },
  "basics:13": {
   "at": "2026-10-17T00:00:49Z",
@@ -1400,10 +1408,10 @@
   "v": "ok"
  },
  "basics:133": {
-  "at": "2026-10-17T00:00:49Z",
-  "h": "a939c0c4bf",
-  "note": "The sentence names the referee, so the card draws decoys from the whole deck. Taking the referee out cannot save it: the protocol lets the referee ask for other angles and speeds, so referee becomes arguably right. It is also booth procedure no beginner knows.",
-  "v": "cut"
+  "at": "2026-10-17T00:18:40Z",
+  "h": "8bb1ed965a",
+  "note": "Re-judged: the sentence now says ref, so referee and assistant referee are the decoys, and “the referee picks” reads plainly wrong. Easy by elimination, fine as white",
+  "v": "ok"
  },
  "basics:134": {
   "at": "2026-10-17T00:00:49Z",
@@ -1417,13 +1425,9 @@
   "v": "ok"
  },
  "basics:136": {
-  "at": "2026-10-17T00:00:49Z",
-  "fix": {
-   "ex": "Only after the first call on the field can the VAR step in"
-  },
-  "h": "77467733bc",
-  "note": "The sentence names the referee, so the kind has only one decoy left and the card draws from the whole deck. Rewritten without the word referee. Close to basics:118 in spirit but neither gives the other away.",
-  "v": "fix"
+  "at": "2026-10-17T00:18:40Z",
+  "h": "3151bc5216",
+  "v": "ok"
  },
  "basics:137": {
   "at": "2026-10-17T00:00:49Z",
@@ -1466,8 +1470,8 @@
   "v": "ok"
  },
  "basics:144": {
-  "at": "2026-10-17T00:00:49Z",
-  "h": "0bb0ce9917",
+  "at": "2026-10-17T00:18:40Z",
+  "h": "d9bff08838",
   "v": "ok"
  },
  "basics:145": {
@@ -1516,8 +1520,8 @@
   "v": "ok"
  },
  "basics:153": {
-  "at": "2026-10-17T00:00:49Z",
-  "h": "d5d8c68d54",
+  "at": "2026-10-17T00:18:40Z",
+  "h": "74d1a3779c",
   "v": "ok"
  },
  "basics:154": {
@@ -1566,8 +1570,8 @@
   "v": "ok"
  },
  "basics:2": {
-  "at": "2026-10-17T00:00:49Z",
-  "h": "f6f100731a",
+  "at": "2026-10-17T00:18:40Z",
+  "h": "312a5a5f01",
   "v": "ok"
  },
  "basics:20": {
@@ -1586,8 +1590,8 @@
   "v": "ok"
  },
  "basics:23": {
-  "at": "2026-10-17T00:00:49Z",
-  "h": "cf84fe7ca2",
+  "at": "2026-10-17T00:18:40Z",
+  "h": "4d120fb5c7",
   "v": "ok"
  },
  "basics:24": {
@@ -1597,8 +1601,9 @@
   "v": "ok"
  },
  "basics:25": {
-  "at": "2026-10-17T00:00:49Z",
-  "h": "23651e1140",
+  "at": "2026-10-17T00:18:40Z",
+  "h": "392d0ae11d",
+  "note": "basics:130 already has the hook shoot-out, so every kick is fine",
   "v": "ok"
  },
  "basics:26": {
@@ -1608,13 +1613,10 @@
   "v": "ok"
  },
  "basics:27": {
-  "at": "2026-10-17T00:00:49Z",
-  "fix": {
-   "hook": "45 minutes"
-  },
-  "h": "cefb1a370b",
-  "note": "Hook “youth soccer” nearly matches basics:62’s “youth” (same General Modifications fact family), two such tiles on one board would confuse. “45 minutes” is a better tap",
-  "v": "fix"
+  "at": "2026-10-17T00:18:40Z",
+  "h": "7e60116c16",
+  "note": "Its hook “youth soccer” sits close to basics:62 (youth) and basics:156 (youth games), which the draw can put on one board. Minor",
+  "v": "ok"
  },
  "basics:28": {
   "at": "2026-10-17T00:00:49Z",
@@ -1685,9 +1687,8 @@
   "v": "ok"
  },
  "basics:4": {
-  "at": "2026-10-17T00:00:49Z",
-  "h": "b62b78dcb2",
-  "note": "Same fact as rules:53 (socks cover the shin guards). Each sentence holds the other’s answer, so the guardrail keeps them apart",
+  "at": "2026-10-17T00:18:40Z",
+  "h": "29d0a801bf",
   "v": "ok"
  },
  "basics:40": {
@@ -1733,14 +1734,12 @@
   "v": "ok"
  },
  "basics:48": {
-  "at": "2026-10-17T00:00:49Z",
+  "at": "2026-10-17T00:18:40Z",
   "fix": {
-   "ex": "The area right in front of the net, where scrambles happen, is the goalmouth",
-   "hook": "scrambles",
-   "means": "Hockey uses the word too"
+   "hook": "net"
   },
-  "h": "b65db7da24",
-  "note": "“In soccer and hockey” puts a hockey tile on a soccer board and the means only repeats the sentence. Same M-W definition, said the way a soccer family would, with the hockey fact moved to the means",
+  "h": "6c7267afd6",
+  "note": "“Hockey” is a non-soccer tile, and basics:152 already has the same hook. Net is the soccer object in the sentence",
   "v": "fix"
  },
  "basics:49": {
@@ -1832,8 +1831,8 @@
   "v": "ok"
  },
  "basics:63": {
-  "at": "2026-10-17T00:00:49Z",
-  "h": "edd14148bb",
+  "at": "2026-10-17T00:18:40Z",
+  "h": "6eee54f2cd",
   "v": "ok"
  },
  "basics:64": {
@@ -1869,8 +1868,8 @@
   "v": "ok"
  },
  "basics:7": {
-  "at": "2026-10-17T00:00:49Z",
-  "h": "d6d53404bd",
+  "at": "2026-10-17T00:18:40Z",
+  "h": "2fbc5b179e",
   "v": "ok"
  },
  "basics:70": {
@@ -1884,14 +1883,9 @@
   "v": "ok"
  },
  "basics:72": {
-  "at": "2026-10-17T00:00:49Z",
-  "fix": {
-   "ex": "At a corner kick, the ball sits in the small arc and the flagpole can’t be moved",
-   "hook": "flagpole"
-  },
-  "h": "82cc414fed",
-  "note": "Tiles “flagpost” (here) and “flagpole” (basics:52) could sit on one board and look like a typo. Use the word M-W and fans know, same hook as basics:52 so the shared-hook guardrail keeps them apart",
-  "v": "fix"
+  "at": "2026-10-17T00:18:40Z",
+  "h": "cc436c6442",
+  "v": "ok"
  },
  "basics:73": {
   "at": "2026-10-17T00:00:49Z",
@@ -1935,8 +1929,8 @@
   "v": "ok"
  },
  "basics:8": {
-  "at": "2026-10-17T00:00:49Z",
-  "h": "5e8eb9da45",
+  "at": "2026-10-17T00:18:40Z",
+  "h": "161aaf83bf",
   "v": "ok"
  },
  "basics:80": {
@@ -1975,8 +1969,8 @@
   "v": "ok"
  },
  "basics:87": {
-  "at": "2026-10-17T00:00:49Z",
-  "h": "49a04ab8cd",
+  "at": "2026-10-17T00:18:40Z",
+  "h": "378b3abdab",
   "v": "ok"
  },
  "basics:88": {
@@ -2005,8 +1999,8 @@
   "v": "ok"
  },
  "basics:91": {
-  "at": "2026-10-17T00:00:49Z",
-  "h": "06b9bde94a",
+  "at": "2026-10-17T00:18:40Z",
+  "h": "c30737be7e",
   "v": "ok"
  },
  "basics:92": {
@@ -2015,9 +2009,8 @@
   "v": "ok"
  },
  "basics:93": {
-  "at": "2026-10-17T00:00:49Z",
-  "h": "c79fe25b32",
-  "note": "Related to basics:106 (keeper with the ball in hand) but neither gives the other away",
+  "at": "2026-10-17T00:18:40Z",
+  "h": "35745f13b6",
   "v": "ok"
  },
  "basics:94": {
@@ -2042,8 +2035,8 @@
   "v": "ok"
  },
  "basics:98": {
-  "at": "2026-10-17T00:00:49Z",
-  "h": "cc8a7d5c97",
+  "at": "2026-10-17T00:18:40Z",
+  "h": "72148706d4",
   "v": "ok"
  },
  "basics:99": {
@@ -2597,15 +2590,10 @@
   "v": "ok"
  },
  "epl-more:31": {
-  "at": "2026-10-17T00:01:48Z",
-  "fix": {
-   "ex": "Sam Allardyce managed nine Premier League clubs, from Bolton to Leeds",
-   "hook": "Bolton",
-   "means": "The most of any manager"
-  },
-  "h": "efe1551ba1",
-  "note": "The tile “nine” tells a player nothing. Naming the first and last clubs gives a real tile and keeps the fact",
-  "v": "fix"
+  "at": "2026-10-17T00:18:40Z",
+  "h": "5aab505d25",
+  "note": "Bolton, Newcastle, Blackburn, West Ham, Sunderland, Crystal Palace, Everton, West Brom, Leeds: nine",
+  "v": "ok"
  },
  "epl-more:32": {
   "at": "2026-10-17T00:01:48Z",
@@ -2665,15 +2653,51 @@
   "v": "ok"
  },
  "epl-more:42": {
-  "at": "2026-10-17T00:01:48Z",
-  "h": "7d023ee374",
-  "note": "Fine white basic, though the decoys are absurd next to a 3-point win (6, 15, 97 for a draw). It improves once the number groups are dropped and k is split (see 43)",
+  "at": "2026-10-17T00:18:40Z",
+  "h": "9803dce0ba",
+  "note": "Honest white: 15, 6 and 7 are never a win’s points",
+  "v": "ok"
+ },
+ "epl-more:43": {
+  "at": "2026-10-17T00:18:40Z",
+  "h": "03680fdb11",
+  "note": "Yellow is honest: 106 is past the 100-point record, so it comes down to 97 or 86 for a fan",
+  "v": "ok"
+ },
+ "epl-more:44": {
+  "at": "2026-10-17T00:18:40Z",
+  "h": "d9f809807d",
+  "note": "Plays easy for fans (3, 6 or 7 conceded in a season is impossible), but a beginner can go low. Yellow holds",
+  "v": "ok"
+ },
+ "epl-more:45": {
+  "at": "2026-10-17T00:18:40Z",
+  "h": "7ece52eb57",
+  "note": "Six ever-presents still true on premierleague.com for 2026–27. 7 is a good decoy",
+  "v": "ok"
+ },
+ "epl-more:46": {
+  "at": "2026-10-17T00:18:40Z",
+  "h": "d2954bd762",
+  "note": "premierleague.com: seven winners, 2025–26 Arsenal. 6 is a good decoy",
+  "v": "ok"
+ },
+ "epl-more:47": {
+  "at": "2026-10-17T00:18:40Z",
+  "h": "eb079965dd",
+  "note": "A fan can reason it: about 4½ seasons of home games rules out 97 and 106. Yellow holds",
+  "v": "ok"
+ },
+ "epl-more:48": {
+  "at": "2026-10-17T00:18:40Z",
+  "h": "6a98529a78",
+  "note": "Yellow holds: a fan knows City’s Centurions passed 100 goals, and 106 is the only choice over 100",
   "v": "ok"
  },
  "epl-more:49": {
-  "at": "2026-10-17T00:01:48Z",
-  "h": "5606942b59",
-  "note": "Nine draws in ten offer one modern year (1997, 2011, 2016), so it often plays as a 50/50. Fixed by the year split noted on 52. nicknames:0’s means line gives 1886",
+  "at": "2026-10-17T00:18:40Z",
+  "h": "425059e812",
+  "note": "Red is honest next to 1910 and 1919",
   "v": "ok"
  },
  "epl-more:5": {
@@ -2682,15 +2706,36 @@
   "v": "ok"
  },
  "epl-more:50": {
-  "at": "2026-10-17T00:01:48Z",
-  "h": "944a26795d",
-  "note": "Nine draws in ten offer one modern year, so it often plays as a 50/50. Fixed by the year split noted on 52",
+  "at": "2026-10-17T00:18:40Z",
+  "h": "d09400c73b",
+  "note": "Red is honest next to 1886 and 1919",
   "v": "ok"
  },
  "epl-more:51": {
-  "at": "2026-10-17T00:01:48Z",
-  "h": "e23fccd631",
-  "note": "Nine draws in ten offer one modern year, so it often plays as a 50/50. Fixed by the year split noted on 52",
+  "at": "2026-10-17T00:18:40Z",
+  "h": "bbc57e6f4c",
+  "note": "Red is honest next to 1886 and 1910",
+  "v": "ok"
+ },
+ "epl-more:52": {
+  "at": "2026-10-17T00:18:40Z",
+  "fix": {
+   "d": 3
+  },
+  "h": "6e2bc58c52",
+  "note": "With 1997 and 2016 next to it, only a real fan knows the Amex opened in 2011 (Brighton came up in 2017). Red is honest",
+  "v": "fix"
+ },
+ "epl-more:53": {
+  "at": "2026-10-17T00:18:40Z",
+  "h": "3c796b013c",
+  "note": "Yellow holds: fans remember the move from Roker Park in the late ’90s, and 2011 and 2016 are too late",
+  "v": "ok"
+ },
+ "epl-more:54": {
+  "at": "2026-10-17T00:18:40Z",
+  "h": "11b282415a",
+  "note": "Yellow holds: 1997 is impossible, and a fan who knows he joined in 2011 rules that out",
   "v": "ok"
  },
  "epl-more:55": {
@@ -2888,8 +2933,8 @@
   "v": "ok"
  },
  "epl:26": {
-  "at": "2026-10-16T23:58:31Z",
-  "h": "b910e0ec96",
+  "at": "2026-10-17T00:18:40Z",
+  "h": "2b2e462499",
   "v": "ok"
  },
  "epl:27": {
@@ -2979,9 +3024,8 @@
   "v": "ok"
  },
  "epl:40": {
-  "at": "2026-10-16T23:58:31Z",
-  "h": "1c6eac52a9",
-  "note": "With epl:0 changed, this is the deck’s only most-titles card",
+  "at": "2026-10-17T00:18:40Z",
+  "h": "33398a3df5",
   "v": "ok"
  },
  "epl:41": {
@@ -6871,8 +6915,8 @@
   "v": "ok"
  },
  "parents:13": {
-  "at": "2026-10-16T23:57:20Z",
-  "h": "322afe38e8",
+  "at": "2026-10-17T00:18:40Z",
+  "h": "39015e3c00",
   "v": "ok"
  },
  "parents:14": {
@@ -6881,8 +6925,8 @@
   "v": "ok"
  },
  "parents:15": {
-  "at": "2026-10-16T23:57:20Z",
-  "h": "8a5dbd5a67",
+  "at": "2026-10-17T00:18:40Z",
+  "h": "7fa199b5a2",
   "v": "ok"
  },
  "parents:16": {
@@ -6929,17 +6973,19 @@
   "v": "ok"
  },
  "parents:22": {
-  "at": "2026-10-16T23:57:20Z",
+  "at": "2026-10-17T00:18:40Z",
   "fix": {
    "groups": [
     [
      "word",
-     "whatever"
+     "whatever",
+     "my bad",
+     "no biggie"
     ]
    ]
   },
-  "h": "14e0bd4b45",
-  "note": "A grudging “whatever” can also read as agreeing, so keep the two apart",
+  "h": "46c7f1363a",
+  "note": "Nodding along to “hustle,” Dad could just as well say “whatever,” “my bad” or “no biggie,” and all three can be drawn. Keep them apart from word",
   "v": "fix"
  },
  "parents:23": {
@@ -6968,8 +7014,8 @@
   "v": "ok"
  },
  "parents:28": {
-  "at": "2026-10-16T23:57:20Z",
-  "h": "ea22d79972",
+  "at": "2026-10-17T00:18:40Z",
+  "h": "4283575034",
   "v": "ok"
  },
  "parents:29": {
@@ -7012,13 +7058,13 @@
   "v": "ok"
  },
  "parents:35": {
-  "at": "2026-10-16T23:57:20Z",
-  "h": "1cc1d18eaf",
+  "at": "2026-10-17T00:18:40Z",
+  "h": "f246a62ae1",
   "v": "ok"
  },
  "parents:36": {
-  "at": "2026-10-16T23:57:20Z",
-  "h": "9c9adac614",
+  "at": "2026-10-17T00:18:40Z",
+  "h": "e0671c8c70",
   "v": "ok"
  },
  "parents:37": {
@@ -7046,13 +7092,9 @@
   "v": "ok"
  },
  "parents:40": {
-  "at": "2026-10-16T23:57:20Z",
-  "fix": {
-   "hook": "ref"
-  },
-  "h": "b250563aa8",
-  "note": "“yelled” half hints at calm down. The ref is the soccer word and the sideline moment",
-  "v": "fix"
+  "at": "2026-10-17T00:18:40Z",
+  "h": "84f15fd2c6",
+  "v": "ok"
  },
  "parents:41": {
   "at": "2026-10-16T23:57:20Z",
@@ -7902,33 +7944,33 @@
   "v": "ok"
  },
  "soccer:14": {
-  "at": "2026-10-17T00:01:58Z",
-  "h": "7b254e3781",
+  "at": "2026-10-17T00:18:40Z",
+  "h": "c281b7a437",
   "v": "ok"
  },
  "soccer:15": {
-  "at": "2026-10-17T00:01:58Z",
-  "h": "3bdc9a0109",
+  "at": "2026-10-17T00:18:40Z",
+  "h": "086edeffb3",
   "v": "ok"
  },
  "soccer:16": {
-  "at": "2026-10-17T00:01:58Z",
-  "h": "896609c9f3",
+  "at": "2026-10-17T00:18:40Z",
+  "h": "5a1307f9a2",
   "v": "ok"
  },
  "soccer:17": {
-  "at": "2026-10-17T00:01:58Z",
-  "h": "ee5e8340cd",
+  "at": "2026-10-17T00:18:40Z",
+  "h": "a2363ee27d",
   "v": "ok"
  },
  "soccer:18": {
-  "at": "2026-10-17T00:01:58Z",
-  "h": "a8b9d7e0d4",
+  "at": "2026-10-17T00:18:40Z",
+  "h": "e15b44d149",
   "v": "ok"
  },
  "soccer:19": {
-  "at": "2026-10-17T00:01:58Z",
-  "h": "fbbaa46eef",
+  "at": "2026-10-17T00:18:40Z",
+  "h": "aa3183a15d",
   "v": "ok"
  },
  "soccer:2": {
@@ -7941,14 +7983,17 @@
   "v": "fix"
  },
  "soccer:20": {
-  "at": "2026-10-17T00:01:58Z",
-  "h": "7022f8865f",
-  "v": "ok"
+  "at": "2026-10-17T00:18:40Z",
+  "fix": {
+   "ex": "The defender blocked the shot with her arm, an offense called handball"
+  },
+  "h": "a88a7a66b3",
+  "note": "“So the ref called ___” lets penalty kick or free kick read as right: a ref calls handball and gives a penalty. Name the offense so only handball fits",
+  "v": "fix"
  },
  "soccer:21": {
-  "at": "2026-10-17T00:01:58Z",
-  "h": "91d5f7b54a",
-  "note": "Near-twin of rules:39 (simulation), a different answer, so the draw won’t keep them apart",
+  "at": "2026-10-17T00:18:40Z",
+  "h": "e58dd98825",
   "v": "ok"
  },
  "soccer:22": {
@@ -7958,8 +8003,9 @@
   "v": "ok"
  },
  "soccer:23": {
-  "at": "2026-10-17T00:01:58Z",
-  "h": "b6f7b625dc",
+  "at": "2026-10-17T00:18:40Z",
+  "h": "25e1b1db0c",
+  "note": "Near basics:153 (forward, means says striker), tied by the guardrail",
   "v": "ok"
  },
  "soccer:24": {
@@ -8122,23 +8168,19 @@
   "v": "ok"
  },
  "soccer:47": {
-  "at": "2026-10-17T00:01:58Z",
-  "fix": {
-   "ex": "The keeper made a howler and let a soft shot roll through her legs",
-   "hook": "soft shot"
-  },
-  "h": "e34c447c78",
-  "note": "“Slow roller” is baseball talk. A soccer fan says a soft shot rolled through her legs",
-  "v": "fix"
+  "at": "2026-10-17T00:18:40Z",
+  "h": "672c528c7c",
+  "note": "“Slow roller” is American soccer talk too, so fine",
+  "v": "ok"
  },
  "soccer:48": {
-  "at": "2026-10-17T00:01:58Z",
-  "h": "130f076445",
+  "at": "2026-10-17T00:18:40Z",
+  "h": "05210dc3ad",
   "v": "ok"
  },
  "soccer:49": {
-  "at": "2026-10-17T00:01:58Z",
-  "h": "15f74864f4",
+  "at": "2026-10-17T00:18:40Z",
+  "h": "34271ccc08",
   "v": "ok"
  },
  "soccer:5": {
@@ -8147,32 +8189,32 @@
   "v": "ok"
  },
  "soccer:50": {
-  "at": "2026-10-17T00:01:58Z",
-  "h": "27613b29a6",
+  "at": "2026-10-17T00:18:40Z",
+  "h": "38021938b5",
   "v": "ok"
  },
  "soccer:51": {
-  "at": "2026-10-17T00:01:58Z",
-  "h": "201f88d7ac",
+  "at": "2026-10-17T00:18:40Z",
+  "h": "6f08d833b9",
   "v": "ok"
  },
  "soccer:52": {
-  "at": "2026-10-17T00:01:58Z",
-  "h": "ceca8be0f8",
+  "at": "2026-10-17T00:18:40Z",
+  "h": "89912281b5",
   "v": "ok"
  },
  "soccer:53": {
-  "at": "2026-10-17T00:01:58Z",
+  "at": "2026-10-17T00:18:40Z",
   "fix": {
    "d": 2
   },
-  "h": "41e96ba9a2",
-  "note": "The word contains “pressing” and the sentence says win it back, and the other choices never fit, so anyone gets it by elimination. Yellow, not red",
+  "h": "beeefc1e20",
+  "note": "The word contains “pressing,” the sentence says win it back, and no other choice fits, so anyone gets it by elimination. Yellow, not red",
   "v": "fix"
  },
  "soccer:54": {
-  "at": "2026-10-17T00:01:58Z",
-  "h": "56f6e45a1a",
+  "at": "2026-10-17T00:18:40Z",
+  "h": "3c765e87c9",
   "v": "ok"
  },
  "soccer:6": {
