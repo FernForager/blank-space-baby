@@ -142,9 +142,11 @@ Morg needs to build and tune, not approve cards one by one. So:
 - **Content pace:** the vetting team sets it now, not Morg’s review (Oct 16, 2026). He flags and locks cards as he plays the beta. The old review page (https://claude.ai/artifact/M7WgEfdhNp6sMGGCNLrW7V) only points to the hub.
 - **triviela.net:** done Oct 17, 2026 (Cloudflare nameservers, DNSSEC off, the Squarespace parking records deleted, Pages custom domains for triviela.net and www). Moving the registration itself to Cloudflare waits for the 60-day rule (Morg’s parked to-do).
 
-## Where things are (Oct 17, 2026)
-- `main` (live, https://fernforager.github.io/blank-space-baby/): the daily game since Oct 17, 2026, Morg’s OK. He plays it alone first, then the G14 team and their parents get it for a week, once triviela.net points at it (his to-do). No Flag or Lock keys there.
-- `daily` branch (the beta, https://daily.blank-space-baby.pages.dev): still where new work lands first, and it goes to `main` only with Morg’s OK. It has the daily game on the grid board, hooks and difficulty on every card, the vetting pipeline and Morg’s flag and lock keys. Since Oct 17, 2026 it plays only cards all three reviewers approved: all 1,487 in play by the end of the first pass, that same day (422 white, 766 yellow, 299 red, with 57 out).
+## Where things are (Oct 17, 2026, evening: Morg is taking a break)
+- `main` (live at https://triviela.net and https://fernforager.github.io/blank-space-baby/): the daily game with the 7-board demo and the polish pass, Morg’s OK. His friend Tom has the link, sent without saying it’s Morg’s game. No Flag or Lock keys there.
+- `daily` branch (the beta, https://daily.blank-space-baby.pages.dev): level with `main` except for CLAUDE.md notes. New work lands here first and goes to `main` only with Morg’s OK. All 1,487 approved cards play (422 white, 766 yellow, 299 red, with 57 out).
+- **The name** is on hold: `research/naming-2026-10-17.md` has the search so far, the name board and what Morg turned down.
+- **Still running while he’s away:** the twice-daily beta flag sync (no flags yet). Nothing else needs him. When he’s back, the next steps are his: the G14 playtest, a name if one comes to him, and more red and white cards after the playtest.
 
 ## The old plan (Oct 15, 2026, superseded by the daily game above)
 Ten categories, named on screen. The test for each one: who has the edge? Kids and parents play the same game, and each side owns some categories.

@@ -1,0 +1,2132 @@
+[
+ {
+  "name": "Goalivia",
+  "note": "trivia meets Bolivia",
+  "group": "Brain and school",
+  "star": true
+ },
+ {
+  "name": "Goalgebra",
+  "note": "algebra with a scoreline",
+  "group": "Brain and school",
+  "star": true
+ },
+ {
+  "name": "Goalgorithm",
+  "note": "algorithm, solve for goals",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goalossary",
+  "note": "glossary of soccer words",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goalmanac",
+  "note": "almanac of soccer facts",
+  "group": "Brain and school",
+  "star": true
+ },
+ {
+  "name": "Goalcademy",
+  "note": "academy, like youth soccer",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Old Goal School",
+  "note": "old school, schooled in goals",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goalmentary",
+  "note": "elementary, my dear striker",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goalbrainer",
+  "note": "no-brainer, but harder",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goal IQ",
+  "note": "test your soccer smarts",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Sherlock Goals",
+  "note": "detective work on every card",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goalscholar",
+  "note": "scholar that sounds like goalscorer",
+  "group": "Brain and school",
+  "star": true
+ },
+ {
+  "name": "Goalphabet",
+  "note": "alphabet of the game",
+  "group": "Brain and school",
+  "star": true
+ },
+ {
+  "name": "Goalcabulary",
+  "note": "vocabulary, soccer edition",
+  "group": "Brain and school",
+  "star": true
+ },
+ {
+  "name": "Goalculator",
+  "note": "calculator for your goals",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goalometry",
+  "note": "geometry of the pitch",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goalculus",
+  "note": "calculus, but fun",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Pythagoalean",
+  "note": "Pythagoras scores a theorem",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goalchemy",
+  "note": "alchemy turns facts to goals",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goalosophy",
+  "note": "philosophy of the beautiful game",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goalography",
+  "note": "geography of world soccer",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goalology",
+  "note": "the study of goals",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goalpedia",
+  "note": "encyclopedia of goals",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goalcyclopedia",
+  "note": "encyclopedia, fully spelled out",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goalnomics",
+  "note": "economics of scoring",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goal Theory",
+  "note": "a science of the net",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "The Goal Standard",
+  "note": "gold standard of trivia",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goal Star",
+  "note": "gold star for right answers",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goal Stars",
+  "note": "sticker chart for soccer brains",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Straight Goals",
+  "note": "straight A's, soccer style",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Honor Goal",
+  "note": "honor roll for fans",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goal Call",
+  "note": "roll call of facts",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goalbrain",
+  "note": "brain built for goals",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Big Brain Goal",
+  "note": "think it in the net",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Brainy Goals",
+  "note": "smart way to score",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goal Tutor",
+  "note": "learn as you play",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Professor Goal",
+  "note": "a lecture with a finish",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Dr. Goal",
+  "note": "the doctor of soccer facts",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goal Lab",
+  "note": "experiments in soccer knowledge",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goalgic",
+  "note": "logic, but goals",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Pop Goal",
+  "note": "pop quiz, soccer style",
+  "group": "Brain and school",
+  "star": true
+ },
+ {
+  "name": "Goal Exam",
+  "note": "the daily soccer test",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goalwork",
+  "note": "homework you want to do",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goalschool",
+  "note": "school where goals teach",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goal Grade",
+  "note": "grade your soccer brain",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goal Primer",
+  "note": "a primer on the game",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goalbook",
+  "note": "a textbook of goals",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goal Lecture",
+  "note": "lecture that ends in celebration",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goalabus",
+  "note": "syllabus for soccer fans",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goal Major",
+  "note": "major in soccer",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goal GPA",
+  "note": "grade point of goals",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goaliversity",
+  "note": "university of the game",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goal Institute",
+  "note": "serious name, silly game",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goaliac",
+  "note": "brainiac who scores",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goal Nerd",
+  "note": "proud soccer nerd",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goal Geek",
+  "note": "for the geeks of the game",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goal Wiz",
+  "note": "soccer quiz wizard",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goal Genius",
+  "note": "genius on the ball",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goal Sage",
+  "note": "wise in soccer ways",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goal Smarts",
+  "note": "street smarts, pitch smarts",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Smart Goal",
+  "note": "goal-setting acronym, literally",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goal Mind",
+  "note": "mind of a goalscorer",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goal Recall",
+  "note": "memory meets the net",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goal Facts",
+  "note": "just the facts, scored",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goalore",
+  "note": "lore that sounds like galore",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goals Galore",
+  "note": "plenty to learn",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goal Know",
+  "note": "know your goals",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goal 101",
+  "note": "intro course to soccer",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goal ABCs",
+  "note": "the basics first",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goalileo",
+  "note": "Galileo studies the ball",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Flash Goal",
+  "note": "flashcards that score",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goal Cards",
+  "note": "flashcards for fans",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Chalkboard Goal",
+  "note": "coach's chalkboard, classroom chalkboard",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goalboard",
+  "note": "chalkboard plus goalboard",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goal Recess",
+  "note": "recess with a ball",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goal Bell",
+  "note": "school bell, final whistle",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goal of Thought",
+  "note": "school of thought pun",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goalgrammar",
+  "note": "grammar of the game",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goal Notebook",
+  "note": "notes from the touchline",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Teacher's Goal",
+  "note": "teacher's pet, soccer style",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goal Thesis",
+  "note": "defend your goal",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goalbonacci",
+  "note": "Fibonacci, but goals",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goaltheorem",
+  "note": "prove it in the net",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goalmath",
+  "note": "math where answers score",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goal Class",
+  "note": "class is in session",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goal Pupil",
+  "note": "the eager learner",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goal Scholarship",
+  "note": "earn a scholarship, score",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goalbrarian",
+  "note": "librarian of soccer facts",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goalbrary",
+  "note": "library of goals",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goalgraphy",
+  "note": "biography of a goal",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goal Report",
+  "note": "report card for fans",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goal Credit",
+  "note": "extra credit for goals",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goalucation",
+  "note": "education, kicked in",
+  "group": "Brain and school",
+  "star": false
+ },
+ {
+  "name": "Goalpardy",
+  "note": "Jeopardy with a ball",
+  "group": "Quiz shows",
+  "star": true
+ },
+ {
+  "name": "Goal Bowl",
+  "note": "quiz bowl for soccer",
+  "group": "Quiz shows",
+  "star": true
+ },
+ {
+  "name": "Goal Bee",
+  "note": "spelling bee, soccer edition",
+  "group": "Quiz shows",
+  "star": false
+ },
+ {
+  "name": "Mastergoal",
+  "note": "Mastermind for fans",
+  "group": "Quiz shows",
+  "star": false
+ },
+ {
+  "name": "Goal or No Goal",
+  "note": "Deal or No Deal, plus VAR",
+  "group": "Quiz shows",
+  "star": true
+ },
+ {
+  "name": "Goalionaire",
+  "note": "millionaire in goals",
+  "group": "Quiz shows",
+  "star": false
+ },
+ {
+  "name": "Wheel of Goal",
+  "note": "Wheel of Fortune spins",
+  "group": "Quiz shows",
+  "star": false
+ },
+ {
+  "name": "Goal Feud",
+  "note": "Family Feud, soccer families",
+  "group": "Quiz shows",
+  "star": false
+ },
+ {
+  "name": "The Goal Is Right",
+  "note": "The Price Is Right",
+  "group": "Quiz shows",
+  "star": false
+ },
+ {
+  "name": "Goal Chase",
+  "note": "The Chase, on the wing",
+  "group": "Quiz shows",
+  "star": false
+ },
+ {
+  "name": "Final Goal",
+  "note": "Final Jeopardy for fans",
+  "group": "Quiz shows",
+  "star": false
+ },
+ {
+  "name": "Goal Buzzer",
+  "note": "hit the buzzer, score",
+  "group": "Quiz shows",
+  "star": false
+ },
+ {
+  "name": "Buzzer Goal",
+  "note": "last-second buzzer beater",
+  "group": "Quiz shows",
+  "star": false
+ },
+ {
+  "name": "Goal Showdown",
+  "note": "head to head quiz",
+  "group": "Quiz shows",
+  "star": false
+ },
+ {
+  "name": "Goal Gauntlet",
+  "note": "run the trivia gauntlet",
+  "group": "Quiz shows",
+  "star": false
+ },
+ {
+  "name": "Goalathon",
+  "note": "marathon of goals",
+  "group": "Quiz shows",
+  "star": false
+ },
+ {
+  "name": "Quizgoal",
+  "note": "quiz plus goal",
+  "group": "Quiz shows",
+  "star": false
+ },
+ {
+  "name": "Goal Quiz",
+  "note": "say what it is",
+  "group": "Quiz shows",
+  "star": false
+ },
+ {
+  "name": "Lightning Goal",
+  "note": "lightning round finish",
+  "group": "Quiz shows",
+  "star": false
+ },
+ {
+  "name": "Goal Round",
+  "note": "bonus round of goals",
+  "group": "Quiz shows",
+  "star": false
+ },
+ {
+  "name": "Goal Champ",
+  "note": "returning champion vibes",
+  "group": "Quiz shows",
+  "star": false
+ },
+ {
+  "name": "Goalmaster",
+  "note": "quizmaster who scores",
+  "group": "Quiz shows",
+  "star": false
+ },
+ {
+  "name": "Quizmaster Goal",
+  "note": "host with the answers",
+  "group": "Quiz shows",
+  "star": false
+ },
+ {
+  "name": "Goal Panel",
+  "note": "panel show of pundits",
+  "group": "Quiz shows",
+  "star": false
+ },
+ {
+  "name": "Goal Quiz Night",
+  "note": "family quiz night",
+  "group": "Quiz shows",
+  "star": false
+ },
+ {
+  "name": "Goalbusters",
+  "note": "Blockbusters and Ghostbusters both",
+  "group": "Quiz shows",
+  "star": false
+ },
+ {
+  "name": "Name That Goal",
+  "note": "Name That Tune pun",
+  "group": "Quiz shows",
+  "star": false
+ },
+ {
+  "name": "Goal Puzzler",
+  "note": "weekly puzzler, daily",
+  "group": "Quiz shows",
+  "star": false
+ },
+ {
+  "name": "Riddle Goal",
+  "note": "riddle me a goal",
+  "group": "Quiz shows",
+  "star": false
+ },
+ {
+  "name": "Goal Riddler",
+  "note": "riddles with a finish",
+  "group": "Quiz shows",
+  "star": false
+ },
+ {
+  "name": "Twenty Goals",
+  "note": "Twenty Questions remix",
+  "group": "Quiz shows",
+  "star": false
+ },
+ {
+  "name": "The Goal Question",
+  "note": "the question is the goal",
+  "group": "Quiz shows",
+  "star": false
+ },
+ {
+  "name": "Goal Tiebreaker",
+  "note": "settle it with facts",
+  "group": "Quiz shows",
+  "star": false
+ },
+ {
+  "name": "Grand Goal",
+  "note": "grand prize finish",
+  "group": "Quiz shows",
+  "star": false
+ },
+ {
+  "name": "Goal Lifeline",
+  "note": "no lifelines, just goals",
+  "group": "Quiz shows",
+  "star": false
+ },
+ {
+  "name": "Goal for the Win",
+  "note": "for the win, literally",
+  "group": "Quiz shows",
+  "star": false
+ },
+ {
+  "name": "Goal Show",
+  "note": "the show is the goal",
+  "group": "Quiz shows",
+  "star": false
+ },
+ {
+  "name": "Goal Challenge",
+  "note": "daily trivia challenge",
+  "group": "Quiz shows",
+  "star": false
+ },
+ {
+  "name": "Goal Contestant",
+  "note": "you're the contestant",
+  "group": "Quiz shows",
+  "star": false
+ },
+ {
+  "name": "Countdown Goal",
+  "note": "Countdown clock quiz",
+  "group": "Quiz shows",
+  "star": false
+ },
+ {
+  "name": "Goal Link",
+  "note": "weakest link, strongest goal",
+  "group": "Quiz shows",
+  "star": false
+ },
+ {
+  "name": "Goal Answer",
+  "note": "answer is a goal",
+  "group": "Quiz shows",
+  "star": false
+ },
+ {
+  "name": "Goalpardy Jr.",
+  "note": "kids' edition game show",
+  "group": "Quiz shows",
+  "star": false
+ },
+ {
+  "name": "Double Goalpardy",
+  "note": "the harder round",
+  "group": "Quiz shows",
+  "star": false
+ },
+ {
+  "name": "Goal Bonanza",
+  "note": "game show bonanza",
+  "group": "Quiz shows",
+  "star": false
+ },
+ {
+  "name": "Goal Jackpot",
+  "note": "hit the jackpot",
+  "group": "Quiz shows",
+  "star": false
+ },
+ {
+  "name": "Goal Prize",
+  "note": "prize for every six",
+  "group": "Quiz shows",
+  "star": false
+ },
+ {
+  "name": "Goal Studio",
+  "note": "studio audience cheers",
+  "group": "Quiz shows",
+  "star": false
+ },
+ {
+  "name": "Who Scores?",
+  "note": "whodunit game show",
+  "group": "Quiz shows",
+  "star": false
+ },
+ {
+  "name": "Goal Trivia Tonight",
+  "note": "prime-time quiz show",
+  "group": "Quiz shows",
+  "star": false
+ },
+ {
+  "name": "Goalzinga",
+  "note": "zinger answers, goal finish",
+  "group": "Quiz shows",
+  "star": false
+ },
+ {
+  "name": "Beat the Goalie",
+  "note": "beat the clock, beat keeper",
+  "group": "Quiz shows",
+  "star": false
+ },
+ {
+  "name": "Goal Scramble",
+  "note": "word scramble round",
+  "group": "Quiz shows",
+  "star": false
+ },
+ {
+  "name": "Goal Duel",
+  "note": "quiz duel on the pitch",
+  "group": "Quiz shows",
+  "star": false
+ },
+ {
+  "name": "Quiz Kick",
+  "note": "quiz kicks off",
+  "group": "Quiz shows",
+  "star": false
+ },
+ {
+  "name": "Goal Hunt",
+  "note": "scavenger hunt for facts",
+  "group": "Quiz shows",
+  "star": false
+ },
+ {
+  "name": "Goal Brain Bowl",
+  "note": "brain bowl, soccer bowl",
+  "group": "Quiz shows",
+  "star": false
+ },
+ {
+  "name": "Goal a Day",
+  "note": "daily dose of goals",
+  "group": "Daily habit",
+  "star": true
+ },
+ {
+  "name": "Daily Goal",
+  "note": "goal-setting, but daily",
+  "group": "Daily habit",
+  "star": false
+ },
+ {
+  "name": "Goalday",
+  "note": "holiday every day",
+  "group": "Daily habit",
+  "star": false
+ },
+ {
+  "name": "Goal of the Day",
+  "note": "TV highlight segment",
+  "group": "Daily habit",
+  "star": false
+ },
+ {
+  "name": "Goal Morning",
+  "note": "good morning, said fast",
+  "group": "Daily habit",
+  "star": true
+ },
+ {
+  "name": "Goal Night",
+  "note": "good night, one more",
+  "group": "Daily habit",
+  "star": false
+ },
+ {
+  "name": "Goal O'Clock",
+  "note": "it's time to play",
+  "group": "Daily habit",
+  "star": false
+ },
+ {
+  "name": "Goaltime",
+  "note": "halftime, every time",
+  "group": "Daily habit",
+  "star": false
+ },
+ {
+  "name": "Goal Hour",
+  "note": "happy hour for kids",
+  "group": "Daily habit",
+  "star": false
+ },
+ {
+  "name": "Goal Break",
+  "note": "coffee break with facts",
+  "group": "Daily habit",
+  "star": false
+ },
+ {
+  "name": "Goal Minute",
+  "note": "a minute of trivia",
+  "group": "Daily habit",
+  "star": false
+ },
+ {
+  "name": "Goal Habit",
+  "note": "the good habit",
+  "group": "Daily habit",
+  "star": false
+ },
+ {
+  "name": "Goalstreak",
+  "note": "keep your streak alive",
+  "group": "Daily habit",
+  "star": false
+ },
+ {
+  "name": "Today's Goal",
+  "note": "today's one goal",
+  "group": "Daily habit",
+  "star": false
+ },
+ {
+  "name": "Goal Today",
+  "note": "the daily ask",
+  "group": "Daily habit",
+  "star": false
+ },
+ {
+  "name": "Goalendar",
+  "note": "calendar of goals",
+  "group": "Daily habit",
+  "star": false
+ },
+ {
+  "name": "Goal Dose",
+  "note": "daily dose of soccer",
+  "group": "Daily habit",
+  "star": false
+ },
+ {
+  "name": "Goalbite",
+  "note": "bite-size daily trivia",
+  "group": "Daily habit",
+  "star": false
+ },
+ {
+  "name": "Goal Bites",
+  "note": "snack-size soccer facts",
+  "group": "Daily habit",
+  "star": false
+ },
+ {
+  "name": "One Goal a Day",
+  "note": "keeps boredom away",
+  "group": "Daily habit",
+  "star": false
+ },
+ {
+  "name": "Goal Before Breakfast",
+  "note": "play before school",
+  "group": "Daily habit",
+  "star": false
+ },
+ {
+  "name": "Goal Clock",
+  "note": "resets at midnight",
+  "group": "Daily habit",
+  "star": false
+ },
+ {
+  "name": "Goalarm",
+  "note": "alarm clock for fans",
+  "group": "Daily habit",
+  "star": false
+ },
+ {
+  "name": "Everyday Goal",
+  "note": "the everyday ritual",
+  "group": "Daily habit",
+  "star": false
+ },
+ {
+  "name": "Goal Ahead",
+  "note": "go ahead, sounded out",
+  "group": "Daily habit",
+  "star": false
+ },
+ {
+  "name": "Midnight Goal",
+  "note": "new board at midnight",
+  "group": "Daily habit",
+  "star": false
+ },
+ {
+  "name": "Goal Rush",
+  "note": "gold rush every morning",
+  "group": "Daily habit",
+  "star": true
+ },
+ {
+  "name": "Goal Diary",
+  "note": "daily diary of goals",
+  "group": "Daily habit",
+  "star": false
+ },
+ {
+  "name": "Goal Journal",
+  "note": "journal your goals",
+  "group": "Daily habit",
+  "star": false
+ },
+ {
+  "name": "Goal Log",
+  "note": "captain's log, daily",
+  "group": "Daily habit",
+  "star": false
+ },
+ {
+  "name": "Goal Fix",
+  "note": "your daily fix",
+  "group": "Daily habit",
+  "star": false
+ },
+ {
+  "name": "Dailygoal",
+  "note": "one word, one habit",
+  "group": "Daily habit",
+  "star": false
+ },
+ {
+  "name": "Goal Routine",
+  "note": "part of the routine",
+  "group": "Daily habit",
+  "star": false
+ },
+ {
+  "name": "Goal Ritual",
+  "note": "morning ritual",
+  "group": "Daily habit",
+  "star": false
+ },
+ {
+  "name": "Goal Commute",
+  "note": "play on the bus",
+  "group": "Daily habit",
+  "star": false
+ },
+ {
+  "name": "Goal Tomorrow",
+  "note": "come back tomorrow",
+  "group": "Daily habit",
+  "star": false
+ },
+ {
+  "name": "Goal Again",
+  "note": "again tomorrow",
+  "group": "Daily habit",
+  "star": false
+ },
+ {
+  "name": "Goal 24",
+  "note": "a new board daily",
+  "group": "Daily habit",
+  "star": false
+ },
+ {
+  "name": "Sunrise Goal",
+  "note": "first light, first goal",
+  "group": "Daily habit",
+  "star": false
+ },
+ {
+  "name": "Goal Daybreak",
+  "note": "breakfast-time board",
+  "group": "Daily habit",
+  "star": false
+ },
+ {
+  "name": "Matchgoal",
+  "note": "every day is matchday",
+  "group": "Daily habit",
+  "star": false
+ },
+ {
+  "name": "Goal Matchday",
+  "note": "matchday every day",
+  "group": "Daily habit",
+  "star": false
+ },
+ {
+  "name": "Goal Coffee",
+  "note": "coffee and a quiz",
+  "group": "Daily habit",
+  "star": false
+ },
+ {
+  "name": "Goal Toast",
+  "note": "toast and trivia",
+  "group": "Daily habit",
+  "star": false
+ },
+ {
+  "name": "Goalfast",
+  "note": "breakfast for fans",
+  "group": "Daily habit",
+  "star": false
+ },
+ {
+  "name": "Goal Snack",
+  "note": "snack between classes",
+  "group": "Daily habit",
+  "star": false
+ },
+ {
+  "name": "Goal Weekday",
+  "note": "weekdays and weekends",
+  "group": "Daily habit",
+  "star": false
+ },
+ {
+  "name": "Goalidays",
+  "note": "holidays, daily",
+  "group": "Daily habit",
+  "star": false
+ },
+ {
+  "name": "Goal Ticket",
+  "note": "your daily ticket",
+  "group": "Daily habit",
+  "star": false
+ },
+ {
+  "name": "Goal Pass",
+  "note": "season pass, daily",
+  "group": "Daily habit",
+  "star": false
+ },
+ {
+  "name": "Goal Kickoff",
+  "note": "kick off the day",
+  "group": "Daily habit",
+  "star": false
+ },
+ {
+  "name": "Kickoff Goal",
+  "note": "start each day",
+  "group": "Daily habit",
+  "star": false
+ },
+ {
+  "name": "Goal Wake-Up",
+  "note": "wake up and score",
+  "group": "Daily habit",
+  "star": false
+ },
+ {
+  "name": "Goal Lunchbreak",
+  "note": "lunchtime trivia",
+  "group": "Daily habit",
+  "star": false
+ },
+ {
+  "name": "Goalnap",
+  "note": "post-quiz nap",
+  "group": "Daily habit",
+  "star": false
+ },
+ {
+  "name": "Goal Daily",
+  "note": "the daily paper of goals",
+  "group": "Daily habit",
+  "star": false
+ },
+ {
+  "name": "Goal Gazette",
+  "note": "morning paper of goals",
+  "group": "Daily habit",
+  "star": false
+ },
+ {
+  "name": "Goalio",
+  "note": "snappy app name",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goalz",
+  "note": "plural with attitude",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goaly",
+  "note": "cute and quick",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goalo",
+  "note": "short and round",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goalster",
+  "note": "the goal hipster",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goalix",
+  "note": "sounds like a gadget",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Gooal",
+  "note": "one extra o",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goooal",
+  "note": "the shout begins",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "GOOOOAL",
+  "note": "the full announcer shout",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goal Goal",
+  "note": "say it twice",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goaly Moly",
+  "note": "holy moly, soccer style",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goalnuts",
+  "note": "go nuts, literally",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goalden",
+  "note": "golden, like the boot",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goalfish",
+  "note": "goldfish memory test",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goalmine",
+  "note": "gold mine of facts",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goaldust",
+  "note": "gold dust trivia",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goalilocks",
+  "note": "not too easy, not too hard",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goaliath",
+  "note": "Goliath of soccer quizzes",
+  "group": "Short and snappy",
+  "star": true
+ },
+ {
+  "name": "Goalaxy",
+  "note": "galaxy of goals",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goalactic",
+  "note": "galactic, out of this world",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goalarious",
+  "note": "hilarious, but goals",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goalpaca",
+  "note": "alpaca with a ball",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goalrilla",
+  "note": "gorilla keeper",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goalrus",
+  "note": "walrus in goal",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goalphin",
+  "note": "dolphin with a header",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goalapagos",
+  "note": "Galápagos of rare facts",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goalway",
+  "note": "Galway, a Celtic nod",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goallery",
+  "note": "gallery of great goals",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goalzilla",
+  "note": "monster of a quiz",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goalmania",
+  "note": "mania for goals",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goalfest",
+  "note": "festival of goals",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goalbot",
+  "note": "robot that scores",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goalorama",
+  "note": "panorama of goals",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goalapalooza",
+  "note": "the big festival",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goaltastic",
+  "note": "fantastic, scored",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goalicious",
+  "note": "delicious trivia",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goalino",
+  "note": "little Italian goal",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goalito",
+  "note": "small goal, big joy",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goalita",
+  "note": "friendly little goal",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goaletta",
+  "note": "a tiny goal",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goalaroo",
+  "note": "kangaroo bounce",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goalee",
+  "note": "sounds like goalie",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goalify",
+  "note": "turn facts to goals",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goalbit",
+  "note": "a bit of soccer",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goalpop",
+  "note": "pops off the screen",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goalzo",
+  "note": "short Golazo",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goalop",
+  "note": "gallop toward goal",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goaloop",
+  "note": "the daily loop",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goalyo",
+  "note": "yo, goal",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Megagoal",
+  "note": "mega-sized goal",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Supergoal",
+  "note": "super goal, super brain",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goalmax",
+  "note": "max out your goals",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "GoalQ",
+  "note": "goal plus IQ",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goal 18",
+  "note": "eighteen cards a day",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goal Six",
+  "note": "six right, one goal",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goalmoji",
+  "note": "emoji ball share",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goalnado",
+  "note": "tornado of goals",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goalfie",
+  "note": "selfie with the net",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goalwhiz",
+  "note": "quick-witted scorer",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goaldie",
+  "note": "Goldie the mascot",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goaldfinch",
+  "note": "goldfinch, a bird",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goalpher",
+  "note": "gopher in the goal",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goalumbus",
+  "note": "discover new goals",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goalactica",
+  "note": "sci-fi soccer",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goaloo",
+  "note": "bouncy and fun",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goalvy",
+  "note": "groovy goals",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goalnut",
+  "note": "a goal-obsessed fan",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goalcorn",
+  "note": "unicorn of goals",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goalicorn",
+  "note": "rare as a unicorn",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goalaxia",
+  "note": "galaxy, Latin flavor",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goalzy",
+  "note": "breezy and easy",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goalmo",
+  "note": "short and snappy",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goalden Hour",
+  "note": "golden hour light",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Goaldilocks",
+  "note": "Goldilocks, alt spelling",
+  "group": "Short and snappy",
+  "star": false
+ },
+ {
+  "name": "Gol",
+  "note": "goal in Spanish, Portuguese, more",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Goalazo",
+  "note": "goal plus golazo",
+  "group": "Around the world",
+  "star": true
+ },
+ {
+  "name": "Golazoo",
+  "note": "golazo meets the zoo",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Golazio",
+  "note": "Italian-sounding golazo",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Golazone",
+  "note": "the golazo zone",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Golazzle",
+  "note": "golazo with razzle dazzle",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Golazinho",
+  "note": "little golazo, Brazil style",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Golinho",
+  "note": "little goal in Portuguese",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Golito",
+  "note": "little goal in Spanish",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Golcito",
+  "note": "tiny goal, Latin style",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Golaço",
+  "note": "Portuguese for a great goal",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Golão",
+  "note": "big goal, Portuguese",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Golasso",
+  "note": "golazo, extra Italian",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Gooool",
+  "note": "the Latin shout",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Goooool",
+  "note": "longer shout, louder",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Gol Gol Gol",
+  "note": "the commentator's triple",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Tor",
+  "note": "goal in German",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Tooor",
+  "note": "German shout",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Tor des Tages",
+  "note": "German goal of the day",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Gol del Día",
+  "note": "Spanish goal of the day",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "But du Jour",
+  "note": "French goal of the day",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Golo do Dia",
+  "note": "Portuguese goal of the day",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Doel van de Dag",
+  "note": "Dutch goal of the day",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Le But",
+  "note": "French for the goal",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Quel But",
+  "note": "French for what a goal",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Mål",
+  "note": "goal in Scandinavian",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Mål Mål",
+  "note": "Scandinavian double shout",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Doel",
+  "note": "goal in Dutch",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Doelpunt",
+  "note": "Dutch for a scored goal",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Golo",
+  "note": "goal in Portugal",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Cúl",
+  "note": "Irish Gaelic goal, Celtic nod",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Gôl",
+  "note": "Welsh for goal",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Maali",
+  "note": "Finnish for goal",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Gól",
+  "note": "Hungarian and Czech goal",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Rete",
+  "note": "Italian for net, goal",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Golivia",
+  "note": "gol plus trivia",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Torivia",
+  "note": "Tor plus trivia",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Gol de Letra",
+  "note": "Brazil's flick goal, easy",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Olímpico",
+  "note": "goal straight from a corner",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Mundogol",
+  "note": "world of goals",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Golmundo",
+  "note": "goals around the world",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Gol a Gol",
+  "note": "goal by goal",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Golquiz",
+  "note": "gol plus quiz",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Goalaço",
+  "note": "goal plus golaço",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Goalasso",
+  "note": "goal plus golasso",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Gooolazo",
+  "note": "shout plus golazo",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Torgol",
+  "note": "German meets Spanish",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Butgol",
+  "note": "French meets Spanish",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Golmål",
+  "note": "Spanish meets Swedish",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Tor Gol But",
+  "note": "three languages, one shout",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Gol Global",
+  "note": "goals in every tongue",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Golazo Diario",
+  "note": "daily golazo in Spanish",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Golbal",
+  "note": "global, gol spelled",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Golé",
+  "note": "olé plus gol",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Olé Gol",
+  "note": "stadium chant mashup",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Golita",
+  "note": "little gol, friendly",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Golazo Brain",
+  "note": "smart golazo",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Gol Tutor",
+  "note": "learn the world's goals",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Goal Babel",
+  "note": "every language shouts goal",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Polyglot Goal",
+  "note": "goal in many languages",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Gol de Oro",
+  "note": "golden goal in Spanish",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Golden Gol",
+  "note": "golden goal, gol spelled",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Bicigol",
+  "note": "bicycle-kick goal, Latin flavor",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Golpedia",
+  "note": "encyclopedia, gol spelled",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Golosario",
+  "note": "glossary in Spanish",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Golmanaque",
+  "note": "almanac in Spanish",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Tormeister",
+  "note": "German master of goals",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Torwiz",
+  "note": "German goal wizard",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Gol Escola",
+  "note": "goal school, Portuguese",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Escolazo",
+  "note": "school plus golazo",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Profegol",
+  "note": "teacher of goals, Spanish",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Golcademia",
+  "note": "academy, Spanish style",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Gooolivia",
+  "note": "shout plus trivia",
+  "group": "Around the world",
+  "star": false
+ },
+ {
+  "name": "Golazo Bowl",
+  "note": "golazo quiz bowl",
+  "group": "Around the world",
+  "star": false
+ }
+]

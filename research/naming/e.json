@@ -1,0 +1,1820 @@
+[
+ {
+  "name": "Quizkick",
+  "note": "quiz plus kick",
+  "group": "Quiz kicks",
+  "star": false
+ },
+ {
+  "name": "Kickquiz",
+  "note": "kick plus quiz",
+  "group": "Quiz kicks",
+  "star": false
+ },
+ {
+  "name": "Quizpitch",
+  "note": "quiz plus pitch",
+  "group": "Quiz kicks",
+  "star": false
+ },
+ {
+  "name": "Pitchquiz",
+  "note": "pitch plus quiz",
+  "group": "Quiz kicks",
+  "star": false
+ },
+ {
+  "name": "Quizgoal",
+  "note": "quiz plus goal",
+  "group": "Quiz kicks",
+  "star": false
+ },
+ {
+  "name": "Goalquiz",
+  "note": "goal plus quiz",
+  "group": "Quiz kicks",
+  "star": false
+ },
+ {
+  "name": "Quizgol",
+  "note": "quiz plus Spanish gol",
+  "group": "Quiz kicks",
+  "star": false
+ },
+ {
+  "name": "Golquiz",
+  "note": "gol plus quiz",
+  "group": "Quiz kicks",
+  "star": false
+ },
+ {
+  "name": "Quizbol",
+  "note": "quiz plus fútbol",
+  "group": "Quiz kicks",
+  "star": true
+ },
+ {
+  "name": "Quizbola",
+  "note": "quiz plus bola, the ball",
+  "group": "Quiz kicks",
+  "star": false
+ },
+ {
+  "name": "Quizfut",
+  "note": "quiz plus fut",
+  "group": "Quiz kicks",
+  "star": false
+ },
+ {
+  "name": "Futquiz",
+  "note": "fut plus quiz",
+  "group": "Quiz kicks",
+  "star": false
+ },
+ {
+  "name": "Footquiz",
+  "note": "foot plus quiz",
+  "group": "Quiz kicks",
+  "star": false
+ },
+ {
+  "name": "Footyquiz",
+  "note": "footy plus quiz",
+  "group": "Quiz kicks",
+  "star": false
+ },
+ {
+  "name": "Quizfooty",
+  "note": "quiz plus footy",
+  "group": "Quiz kicks",
+  "star": false
+ },
+ {
+  "name": "Quizebol",
+  "note": "quiz plus futebol",
+  "group": "Quiz kicks",
+  "star": false
+ },
+ {
+  "name": "Quizinho",
+  "note": "quiz with Brazilian diminutive -inho",
+  "group": "Quiz kicks",
+  "star": true
+ },
+ {
+  "name": "Quizito",
+  "note": "quiz with Spanish diminutive -ito",
+  "group": "Quiz kicks",
+  "star": false
+ },
+ {
+  "name": "Quizazo",
+  "note": "quiz plus golazo",
+  "group": "Quiz kicks",
+  "star": true
+ },
+ {
+  "name": "Quizzazo",
+  "note": "quiz plus golazo, double z",
+  "group": "Quiz kicks",
+  "star": false
+ },
+ {
+  "name": "Quizderby",
+  "note": "quiz plus derby",
+  "group": "Quiz kicks",
+  "star": false
+ },
+ {
+  "name": "Derbyquiz",
+  "note": "derby plus quiz",
+  "group": "Quiz kicks",
+  "star": false
+ },
+ {
+  "name": "Quizside",
+  "note": "quiz plus offside",
+  "group": "Quiz kicks",
+  "star": false
+ },
+ {
+  "name": "Offquiz",
+  "note": "offside clipped plus quiz",
+  "group": "Quiz kicks",
+  "star": false
+ },
+ {
+  "name": "Quizstrike",
+  "note": "quiz plus striker",
+  "group": "Quiz kicks",
+  "star": false
+ },
+ {
+  "name": "Strikequiz",
+  "note": "striker plus quiz",
+  "group": "Quiz kicks",
+  "star": false
+ },
+ {
+  "name": "Quizkeeper",
+  "note": "quiz plus keeper",
+  "group": "Quiz kicks",
+  "star": false
+ },
+ {
+  "name": "Keepquiz",
+  "note": "keeper plus quiz",
+  "group": "Quiz kicks",
+  "star": false
+ },
+ {
+  "name": "Headquiz",
+  "note": "header plus quiz",
+  "group": "Quiz kicks",
+  "star": false
+ },
+ {
+  "name": "Quizhead",
+  "note": "quiz plus header",
+  "group": "Quiz kicks",
+  "star": false
+ },
+ {
+  "name": "Chipquiz",
+  "note": "chip shot plus quiz",
+  "group": "Quiz kicks",
+  "star": false
+ },
+ {
+  "name": "Quizchip",
+  "note": "quiz plus chip shot",
+  "group": "Quiz kicks",
+  "star": false
+ },
+ {
+  "name": "Curlquiz",
+  "note": "curler plus quiz",
+  "group": "Quiz kicks",
+  "star": false
+ },
+ {
+  "name": "Quizcurl",
+  "note": "quiz plus curler",
+  "group": "Quiz kicks",
+  "star": false
+ },
+ {
+  "name": "Quizmeg",
+  "note": "quiz plus nutmeg",
+  "group": "Quiz kicks",
+  "star": true
+ },
+ {
+  "name": "Megquiz",
+  "note": "nutmeg clipped plus quiz",
+  "group": "Quiz kicks",
+  "star": false
+ },
+ {
+  "name": "Quizbona",
+  "note": "quiz plus rabona",
+  "group": "Quiz kicks",
+  "star": false
+ },
+ {
+  "name": "Quizenka",
+  "note": "quiz plus panenka",
+  "group": "Quiz kicks",
+  "star": false
+ },
+ {
+  "name": "Quizolley",
+  "note": "quiz plus volley",
+  "group": "Quiz kicks",
+  "star": false
+ },
+ {
+  "name": "Volleyquiz",
+  "note": "volley plus quiz",
+  "group": "Quiz kicks",
+  "star": false
+ },
+ {
+  "name": "Dribquiz",
+  "note": "dribble clipped plus quiz",
+  "group": "Quiz kicks",
+  "star": false
+ },
+ {
+  "name": "Quizball",
+  "note": "quiz plus ball",
+  "group": "Quiz kicks",
+  "star": false
+ },
+ {
+  "name": "Quizola",
+  "note": "quiz plus bola",
+  "group": "Quiz kicks",
+  "star": false
+ },
+ {
+  "name": "Quizgoalo",
+  "note": "quiz plus goal, Latin ending",
+  "group": "Quiz kicks",
+  "star": false
+ },
+ {
+  "name": "Trivola",
+  "note": "trivia plus bola, the ball",
+  "group": "Trivia and fact blends",
+  "star": true
+ },
+ {
+  "name": "Trivibol",
+  "note": "trivia plus fútbol",
+  "group": "Trivia and fact blends",
+  "star": false
+ },
+ {
+  "name": "Trivbol",
+  "note": "trivia clipped plus fútbol",
+  "group": "Trivia and fact blends",
+  "star": false
+ },
+ {
+  "name": "Trivebol",
+  "note": "trivia plus futebol",
+  "group": "Trivia and fact blends",
+  "star": false
+ },
+ {
+  "name": "Trivball",
+  "note": "trivia clipped plus ball",
+  "group": "Trivia and fact blends",
+  "star": false
+ },
+ {
+  "name": "Triviball",
+  "note": "trivia plus ball",
+  "group": "Trivia and fact blends",
+  "star": false
+ },
+ {
+  "name": "Trivkick",
+  "note": "trivia clipped plus kick",
+  "group": "Trivia and fact blends",
+  "star": false
+ },
+ {
+  "name": "Kicktriv",
+  "note": "kick plus trivia clipped",
+  "group": "Trivia and fact blends",
+  "star": false
+ },
+ {
+  "name": "Trivgoal",
+  "note": "trivia clipped plus goal",
+  "group": "Trivia and fact blends",
+  "star": false
+ },
+ {
+  "name": "Trivigol",
+  "note": "trivia plus gol",
+  "group": "Trivia and fact blends",
+  "star": false
+ },
+ {
+  "name": "Trivolley",
+  "note": "trivia plus volley",
+  "group": "Trivia and fact blends",
+  "star": true
+ },
+ {
+  "name": "Trivazo",
+  "note": "trivia plus golazo",
+  "group": "Trivia and fact blends",
+  "star": false
+ },
+ {
+  "name": "Trivinho",
+  "note": "trivia with -inho",
+  "group": "Trivia and fact blends",
+  "star": false
+ },
+ {
+  "name": "Trivito",
+  "note": "trivia with -ito",
+  "group": "Trivia and fact blends",
+  "star": false
+ },
+ {
+  "name": "Trivpitch",
+  "note": "trivia clipped plus pitch",
+  "group": "Trivia and fact blends",
+  "star": false
+ },
+ {
+  "name": "Futriv",
+  "note": "fut plus trivia",
+  "group": "Trivia and fact blends",
+  "star": false
+ },
+ {
+  "name": "Futrivia",
+  "note": "fútbol plus trivia",
+  "group": "Trivia and fact blends",
+  "star": false
+ },
+ {
+  "name": "Footriv",
+  "note": "foot plus trivia",
+  "group": "Trivia and fact blends",
+  "star": false
+ },
+ {
+  "name": "Footrivia",
+  "note": "football plus trivia, shared t",
+  "group": "Trivia and fact blends",
+  "star": false
+ },
+ {
+  "name": "Trivmeg",
+  "note": "trivia plus nutmeg",
+  "group": "Trivia and fact blends",
+  "star": false
+ },
+ {
+  "name": "Nutrivia",
+  "note": "nutmeg plus trivia",
+  "group": "Trivia and fact blends",
+  "star": true
+ },
+ {
+  "name": "Trivbona",
+  "note": "trivia plus rabona",
+  "group": "Trivia and fact blends",
+  "star": false
+ },
+ {
+  "name": "Trivenka",
+  "note": "trivia plus panenka",
+  "group": "Trivia and fact blends",
+  "star": false
+ },
+ {
+  "name": "Trivderby",
+  "note": "trivia plus derby",
+  "group": "Trivia and fact blends",
+  "star": false
+ },
+ {
+  "name": "Trivside",
+  "note": "trivia plus offside",
+  "group": "Trivia and fact blends",
+  "star": false
+ },
+ {
+  "name": "Trivstrike",
+  "note": "trivia plus striker",
+  "group": "Trivia and fact blends",
+  "star": false
+ },
+ {
+  "name": "Trivkeeper",
+  "note": "trivia plus keeper",
+  "group": "Trivia and fact blends",
+  "star": false
+ },
+ {
+  "name": "Trivchip",
+  "note": "trivia plus chip shot",
+  "group": "Trivia and fact blends",
+  "star": false
+ },
+ {
+  "name": "Trivicurl",
+  "note": "trivia plus curler",
+  "group": "Trivia and fact blends",
+  "star": false
+ },
+ {
+  "name": "Dribvia",
+  "note": "dribble plus trivia",
+  "group": "Trivia and fact blends",
+  "star": false
+ },
+ {
+  "name": "Strivia",
+  "note": "striker plus trivia",
+  "group": "Trivia and fact blends",
+  "star": false
+ },
+ {
+  "name": "Kicktrivia",
+  "note": "kick plus trivia",
+  "group": "Trivia and fact blends",
+  "star": false
+ },
+ {
+  "name": "Goaltriv",
+  "note": "goal plus trivia clipped",
+  "group": "Trivia and fact blends",
+  "star": false
+ },
+ {
+  "name": "Factball",
+  "note": "fact plus ball",
+  "group": "Trivia and fact blends",
+  "star": false
+ },
+ {
+  "name": "Factkick",
+  "note": "fact plus kick",
+  "group": "Trivia and fact blends",
+  "star": false
+ },
+ {
+  "name": "Kickfact",
+  "note": "kick plus fact",
+  "group": "Trivia and fact blends",
+  "star": false
+ },
+ {
+  "name": "Factgoal",
+  "note": "fact plus goal",
+  "group": "Trivia and fact blends",
+  "star": false
+ },
+ {
+  "name": "Goalfact",
+  "note": "goal plus fact",
+  "group": "Trivia and fact blends",
+  "star": false
+ },
+ {
+  "name": "Factgol",
+  "note": "fact plus gol",
+  "group": "Trivia and fact blends",
+  "star": false
+ },
+ {
+  "name": "Factazo",
+  "note": "fact plus golazo",
+  "group": "Trivia and fact blends",
+  "star": true
+ },
+ {
+  "name": "Factinho",
+  "note": "fact with -inho",
+  "group": "Trivia and fact blends",
+  "star": false
+ },
+ {
+  "name": "Factito",
+  "note": "fact with -ito",
+  "group": "Trivia and fact blends",
+  "star": false
+ },
+ {
+  "name": "Factbol",
+  "note": "fact plus fútbol",
+  "group": "Trivia and fact blends",
+  "star": false
+ },
+ {
+  "name": "Factbola",
+  "note": "fact plus bola",
+  "group": "Trivia and fact blends",
+  "star": false
+ },
+ {
+  "name": "Factfut",
+  "note": "fact plus fut",
+  "group": "Trivia and fact blends",
+  "star": false
+ },
+ {
+  "name": "Futfact",
+  "note": "fut plus fact",
+  "group": "Trivia and fact blends",
+  "star": false
+ },
+ {
+  "name": "Footfact",
+  "note": "foot plus fact",
+  "group": "Trivia and fact blends",
+  "star": false
+ },
+ {
+  "name": "Factpitch",
+  "note": "fact plus pitch",
+  "group": "Trivia and fact blends",
+  "star": false
+ },
+ {
+  "name": "Pitchfact",
+  "note": "pitch plus fact",
+  "group": "Trivia and fact blends",
+  "star": false
+ },
+ {
+  "name": "Factside",
+  "note": "fact plus offside",
+  "group": "Trivia and fact blends",
+  "star": false
+ },
+ {
+  "name": "Factmeg",
+  "note": "fact plus nutmeg",
+  "group": "Trivia and fact blends",
+  "star": false
+ },
+ {
+  "name": "Factenka",
+  "note": "fact plus panenka",
+  "group": "Trivia and fact blends",
+  "star": false
+ },
+ {
+  "name": "Factbona",
+  "note": "fact plus rabona",
+  "group": "Trivia and fact blends",
+  "star": false
+ },
+ {
+  "name": "Factchip",
+  "note": "fact plus chip shot",
+  "group": "Trivia and fact blends",
+  "star": false
+ },
+ {
+  "name": "Factstrike",
+  "note": "fact plus striker",
+  "group": "Trivia and fact blends",
+  "star": false
+ },
+ {
+  "name": "Factkeeper",
+  "note": "fact plus keeper",
+  "group": "Trivia and fact blends",
+  "star": false
+ },
+ {
+  "name": "Factderby",
+  "note": "fact plus derby",
+  "group": "Trivia and fact blends",
+  "star": false
+ },
+ {
+  "name": "Headfact",
+  "note": "header plus fact",
+  "group": "Trivia and fact blends",
+  "star": false
+ },
+ {
+  "name": "Factolley",
+  "note": "fact plus volley",
+  "group": "Trivia and fact blends",
+  "star": false
+ },
+ {
+  "name": "Brainkick",
+  "note": "brain plus kick",
+  "group": "Brain, smart and wit",
+  "star": false
+ },
+ {
+  "name": "Kickbrain",
+  "note": "kick plus brain",
+  "group": "Brain, smart and wit",
+  "star": false
+ },
+ {
+  "name": "Braingoal",
+  "note": "brain plus goal",
+  "group": "Brain, smart and wit",
+  "star": false
+ },
+ {
+  "name": "Goalbrain",
+  "note": "goal plus brain",
+  "group": "Brain, smart and wit",
+  "star": false
+ },
+ {
+  "name": "Braingol",
+  "note": "brain plus gol",
+  "group": "Brain, smart and wit",
+  "star": false
+ },
+ {
+  "name": "Brainazo",
+  "note": "brain plus golazo",
+  "group": "Brain, smart and wit",
+  "star": true
+ },
+ {
+  "name": "Brainbol",
+  "note": "brain plus fútbol",
+  "group": "Brain, smart and wit",
+  "star": false
+ },
+ {
+  "name": "Brainbola",
+  "note": "brain plus bola",
+  "group": "Brain, smart and wit",
+  "star": false
+ },
+ {
+  "name": "Brainebol",
+  "note": "brain plus futebol",
+  "group": "Brain, smart and wit",
+  "star": false
+ },
+ {
+  "name": "Futbrain",
+  "note": "fut plus brain",
+  "group": "Brain, smart and wit",
+  "star": false
+ },
+ {
+  "name": "Footbrain",
+  "note": "foot plus brain",
+  "group": "Brain, smart and wit",
+  "star": false
+ },
+ {
+  "name": "Brainpitch",
+  "note": "brain plus pitch",
+  "group": "Brain, smart and wit",
+  "star": false
+ },
+ {
+  "name": "Pitchbrain",
+  "note": "pitch plus brain",
+  "group": "Brain, smart and wit",
+  "star": false
+ },
+ {
+  "name": "Brainside",
+  "note": "brain plus offside",
+  "group": "Brain, smart and wit",
+  "star": false
+ },
+ {
+  "name": "Brainstrike",
+  "note": "brain plus striker",
+  "group": "Brain, smart and wit",
+  "star": false
+ },
+ {
+  "name": "Brainkeeper",
+  "note": "brain plus keeper",
+  "group": "Brain, smart and wit",
+  "star": false
+ },
+ {
+  "name": "Brainmeg",
+  "note": "brain plus nutmeg",
+  "group": "Brain, smart and wit",
+  "star": false
+ },
+ {
+  "name": "Brainenka",
+  "note": "brain plus panenka",
+  "group": "Brain, smart and wit",
+  "star": false
+ },
+ {
+  "name": "Brainbona",
+  "note": "brain plus rabona",
+  "group": "Brain, smart and wit",
+  "star": false
+ },
+ {
+  "name": "Brainvolley",
+  "note": "brain plus volley",
+  "group": "Brain, smart and wit",
+  "star": false
+ },
+ {
+  "name": "Brainchip",
+  "note": "brain plus chip shot",
+  "group": "Brain, smart and wit",
+  "star": false
+ },
+ {
+  "name": "Braincurl",
+  "note": "brain plus curler",
+  "group": "Brain, smart and wit",
+  "star": false
+ },
+ {
+  "name": "Brainderby",
+  "note": "brain plus derby",
+  "group": "Brain, smart and wit",
+  "star": false
+ },
+ {
+  "name": "Braininho",
+  "note": "brain with -inho",
+  "group": "Brain, smart and wit",
+  "star": false
+ },
+ {
+  "name": "Brainito",
+  "note": "brain with -ito",
+  "group": "Brain, smart and wit",
+  "star": false
+ },
+ {
+  "name": "Noggoal",
+  "note": "noggin plus goal",
+  "group": "Brain, smart and wit",
+  "star": false
+ },
+ {
+  "name": "Nogball",
+  "note": "noggin plus ball",
+  "group": "Brain, smart and wit",
+  "star": false
+ },
+ {
+  "name": "Smartball",
+  "note": "smart plus ball",
+  "group": "Brain, smart and wit",
+  "star": false
+ },
+ {
+  "name": "Smartkick",
+  "note": "smart plus kick",
+  "group": "Brain, smart and wit",
+  "star": false
+ },
+ {
+  "name": "Smartgoal",
+  "note": "smart plus goal",
+  "group": "Brain, smart and wit",
+  "star": false
+ },
+ {
+  "name": "Goalsmart",
+  "note": "goal plus smart",
+  "group": "Brain, smart and wit",
+  "star": false
+ },
+ {
+  "name": "Smartazo",
+  "note": "smart plus golazo",
+  "group": "Brain, smart and wit",
+  "star": false
+ },
+ {
+  "name": "Smartbol",
+  "note": "smart plus fútbol",
+  "group": "Brain, smart and wit",
+  "star": false
+ },
+ {
+  "name": "Smartbola",
+  "note": "smart plus bola",
+  "group": "Brain, smart and wit",
+  "star": false
+ },
+ {
+  "name": "Smartfut",
+  "note": "smart plus fut",
+  "group": "Brain, smart and wit",
+  "star": false
+ },
+ {
+  "name": "Smartfooty",
+  "note": "smart plus footy",
+  "group": "Brain, smart and wit",
+  "star": false
+ },
+ {
+  "name": "Footsmart",
+  "note": "foot plus smart",
+  "group": "Brain, smart and wit",
+  "star": false
+ },
+ {
+  "name": "Smartpitch",
+  "note": "smart plus pitch",
+  "group": "Brain, smart and wit",
+  "star": false
+ },
+ {
+  "name": "Smartside",
+  "note": "smart plus offside",
+  "group": "Brain, smart and wit",
+  "star": false
+ },
+ {
+  "name": "Smartstrike",
+  "note": "smart plus striker",
+  "group": "Brain, smart and wit",
+  "star": false
+ },
+ {
+  "name": "Smartkeeper",
+  "note": "smart plus keeper",
+  "group": "Brain, smart and wit",
+  "star": false
+ },
+ {
+  "name": "Smartmeg",
+  "note": "smart plus nutmeg",
+  "group": "Brain, smart and wit",
+  "star": false
+ },
+ {
+  "name": "Smartinho",
+  "note": "smart with -inho",
+  "group": "Brain, smart and wit",
+  "star": false
+ },
+ {
+  "name": "Headsmart",
+  "note": "header plus smart",
+  "group": "Brain, smart and wit",
+  "star": false
+ },
+ {
+  "name": "Footwit",
+  "note": "foot plus wit",
+  "group": "Brain, smart and wit",
+  "star": true
+ },
+ {
+  "name": "Pitchwit",
+  "note": "pitch plus wit",
+  "group": "Brain, smart and wit",
+  "star": true
+ },
+ {
+  "name": "Kickwit",
+  "note": "kick plus wit",
+  "group": "Brain, smart and wit",
+  "star": false
+ },
+ {
+  "name": "Goalwit",
+  "note": "goal plus wit",
+  "group": "Brain, smart and wit",
+  "star": false
+ },
+ {
+  "name": "Witball",
+  "note": "wit plus ball",
+  "group": "Brain, smart and wit",
+  "star": false
+ },
+ {
+  "name": "Futwit",
+  "note": "fut plus wit",
+  "group": "Brain, smart and wit",
+  "star": false
+ },
+ {
+  "name": "Witazo",
+  "note": "wit plus golazo",
+  "group": "Brain, smart and wit",
+  "star": false
+ },
+ {
+  "name": "Kickwise",
+  "note": "kick plus wise",
+  "group": "Brain, smart and wit",
+  "star": false
+ },
+ {
+  "name": "Footwise",
+  "note": "foot plus wise",
+  "group": "Brain, smart and wit",
+  "star": false
+ },
+ {
+  "name": "Goalwise",
+  "note": "goal plus wise",
+  "group": "Brain, smart and wit",
+  "star": false
+ },
+ {
+  "name": "Pitchwise",
+  "note": "pitch plus wise",
+  "group": "Brain, smart and wit",
+  "star": false
+ },
+ {
+  "name": "Mindgoal",
+  "note": "mind plus goal",
+  "group": "Brain, smart and wit",
+  "star": false
+ },
+ {
+  "name": "Goalmind",
+  "note": "goal plus mind",
+  "group": "Brain, smart and wit",
+  "star": false
+ },
+ {
+  "name": "Headucated",
+  "note": "header plus educated",
+  "group": "Brain, smart and wit",
+  "star": false
+ },
+ {
+  "name": "Clueball",
+  "note": "clue plus ball",
+  "group": "Clue, know, answer, test",
+  "star": false
+ },
+ {
+  "name": "Cluekick",
+  "note": "clue plus kick",
+  "group": "Clue, know, answer, test",
+  "star": false
+ },
+ {
+  "name": "Kickclue",
+  "note": "kick plus clue",
+  "group": "Clue, know, answer, test",
+  "star": false
+ },
+ {
+  "name": "Cluegoal",
+  "note": "clue plus goal",
+  "group": "Clue, know, answer, test",
+  "star": false
+ },
+ {
+  "name": "Goalclue",
+  "note": "goal plus clue",
+  "group": "Clue, know, answer, test",
+  "star": false
+ },
+ {
+  "name": "Cluegol",
+  "note": "clue plus gol",
+  "group": "Clue, know, answer, test",
+  "star": false
+ },
+ {
+  "name": "Clueazo",
+  "note": "clue plus golazo",
+  "group": "Clue, know, answer, test",
+  "star": false
+ },
+ {
+  "name": "Cluebol",
+  "note": "clue plus fútbol",
+  "group": "Clue, know, answer, test",
+  "star": true
+ },
+ {
+  "name": "Cluebola",
+  "note": "clue plus bola",
+  "group": "Clue, know, answer, test",
+  "star": false
+ },
+ {
+  "name": "Futclue",
+  "note": "fut plus clue",
+  "group": "Clue, know, answer, test",
+  "star": false
+ },
+ {
+  "name": "Footclue",
+  "note": "foot plus clue",
+  "group": "Clue, know, answer, test",
+  "star": false
+ },
+ {
+  "name": "Cluepitch",
+  "note": "clue plus pitch",
+  "group": "Clue, know, answer, test",
+  "star": false
+ },
+ {
+  "name": "Pitchclue",
+  "note": "pitch plus clue",
+  "group": "Clue, know, answer, test",
+  "star": false
+ },
+ {
+  "name": "Clueside",
+  "note": "clue plus offside",
+  "group": "Clue, know, answer, test",
+  "star": false
+ },
+ {
+  "name": "Cluemeg",
+  "note": "clue plus nutmeg",
+  "group": "Clue, know, answer, test",
+  "star": false
+ },
+ {
+  "name": "Clueinho",
+  "note": "clue with -inho",
+  "group": "Clue, know, answer, test",
+  "star": false
+ },
+ {
+  "name": "Cluestrike",
+  "note": "clue plus striker",
+  "group": "Clue, know, answer, test",
+  "star": false
+ },
+ {
+  "name": "Cluekeeper",
+  "note": "clue plus keeper",
+  "group": "Clue, know, answer, test",
+  "star": false
+ },
+ {
+  "name": "Cluechip",
+  "note": "clue plus chip shot",
+  "group": "Clue, know, answer, test",
+  "star": false
+ },
+ {
+  "name": "Knowball",
+  "note": "know plus ball",
+  "group": "Clue, know, answer, test",
+  "star": false
+ },
+ {
+  "name": "Knowgoal",
+  "note": "know plus goal",
+  "group": "Clue, know, answer, test",
+  "star": false
+ },
+ {
+  "name": "Goalknow",
+  "note": "goal plus know",
+  "group": "Clue, know, answer, test",
+  "star": false
+ },
+ {
+  "name": "Knowbol",
+  "note": "know plus fútbol",
+  "group": "Clue, know, answer, test",
+  "star": false
+ },
+ {
+  "name": "Knowbola",
+  "note": "know plus bola",
+  "group": "Clue, know, answer, test",
+  "star": false
+ },
+ {
+  "name": "Knowazo",
+  "note": "know plus golazo",
+  "group": "Clue, know, answer, test",
+  "star": false
+ },
+ {
+  "name": "Knowside",
+  "note": "know plus onside",
+  "group": "Clue, know, answer, test",
+  "star": false
+ },
+ {
+  "name": "Knowpitch",
+  "note": "know plus pitch",
+  "group": "Clue, know, answer, test",
+  "star": false
+ },
+ {
+  "name": "Knowkick",
+  "note": "know plus kick",
+  "group": "Clue, know, answer, test",
+  "star": false
+ },
+ {
+  "name": "Kickknow",
+  "note": "kick plus know",
+  "group": "Clue, know, answer, test",
+  "star": false
+ },
+ {
+  "name": "Knowfut",
+  "note": "know plus fut",
+  "group": "Clue, know, answer, test",
+  "star": false
+ },
+ {
+  "name": "Knowinho",
+  "note": "know with -inho",
+  "group": "Clue, know, answer, test",
+  "star": false
+ },
+ {
+  "name": "Knowkeeper",
+  "note": "know plus keeper",
+  "group": "Clue, know, answer, test",
+  "star": false
+ },
+ {
+  "name": "Testball",
+  "note": "test plus ball",
+  "group": "Clue, know, answer, test",
+  "star": false
+ },
+ {
+  "name": "Testkick",
+  "note": "test plus kick",
+  "group": "Clue, know, answer, test",
+  "star": false
+ },
+ {
+  "name": "Kicktest",
+  "note": "kick plus test",
+  "group": "Clue, know, answer, test",
+  "star": false
+ },
+ {
+  "name": "Testgoal",
+  "note": "test plus goal",
+  "group": "Clue, know, answer, test",
+  "star": false
+ },
+ {
+  "name": "Testazo",
+  "note": "test plus golazo",
+  "group": "Clue, know, answer, test",
+  "star": false
+ },
+ {
+  "name": "Testinho",
+  "note": "test with -inho",
+  "group": "Clue, know, answer, test",
+  "star": false
+ },
+ {
+  "name": "Testbol",
+  "note": "test plus fútbol",
+  "group": "Clue, know, answer, test",
+  "star": false
+ },
+ {
+  "name": "Pitchtest",
+  "note": "pitch plus test",
+  "group": "Clue, know, answer, test",
+  "star": false
+ },
+ {
+  "name": "Footest",
+  "note": "foot plus test, shared t",
+  "group": "Clue, know, answer, test",
+  "star": false
+ },
+ {
+  "name": "Answerball",
+  "note": "answer plus ball",
+  "group": "Clue, know, answer, test",
+  "star": false
+ },
+ {
+  "name": "Answerazo",
+  "note": "answer plus golazo",
+  "group": "Clue, know, answer, test",
+  "star": false
+ },
+ {
+  "name": "Kickanswer",
+  "note": "kick plus answer",
+  "group": "Clue, know, answer, test",
+  "star": false
+ },
+ {
+  "name": "Goalanswer",
+  "note": "goal plus answer",
+  "group": "Clue, know, answer, test",
+  "star": false
+ },
+ {
+  "name": "Answerbol",
+  "note": "answer plus fútbol",
+  "group": "Clue, know, answer, test",
+  "star": false
+ },
+ {
+  "name": "Driddle",
+  "note": "dribble plus riddle",
+  "group": "Skill-move mashups",
+  "star": true
+ },
+ {
+  "name": "Dribblequiz",
+  "note": "dribble plus quiz",
+  "group": "Skill-move mashups",
+  "star": false
+ },
+ {
+  "name": "Riddlekick",
+  "note": "riddle plus kick",
+  "group": "Skill-move mashups",
+  "star": false
+ },
+ {
+  "name": "Kickriddle",
+  "note": "kick plus riddle",
+  "group": "Skill-move mashups",
+  "star": false
+ },
+ {
+  "name": "Riddlegoal",
+  "note": "riddle plus goal",
+  "group": "Skill-move mashups",
+  "star": false
+ },
+ {
+  "name": "Riddlazo",
+  "note": "riddle plus golazo",
+  "group": "Skill-move mashups",
+  "star": false
+ },
+ {
+  "name": "Nutquiz",
+  "note": "nutmeg clipped plus quiz",
+  "group": "Skill-move mashups",
+  "star": false
+ },
+ {
+  "name": "Nutfact",
+  "note": "nutmeg clipped plus fact",
+  "group": "Skill-move mashups",
+  "star": false
+ },
+ {
+  "name": "Nutsmart",
+  "note": "nutmeg clipped plus smart",
+  "group": "Skill-move mashups",
+  "star": false
+ },
+ {
+  "name": "Nutclue",
+  "note": "nutmeg clipped plus clue",
+  "group": "Skill-move mashups",
+  "star": false
+ },
+ {
+  "name": "Panquiz",
+  "note": "panenka clipped plus quiz",
+  "group": "Skill-move mashups",
+  "star": false
+ },
+ {
+  "name": "Pankenka",
+  "note": "panenka with a know sound",
+  "group": "Skill-move mashups",
+  "star": false
+ },
+ {
+  "name": "Rabrainona",
+  "note": "rabona with brain inside",
+  "group": "Skill-move mashups",
+  "star": false
+ },
+ {
+  "name": "Raquizbona",
+  "note": "rabona with quiz inside",
+  "group": "Skill-move mashups",
+  "star": false
+ },
+ {
+  "name": "Volleyfact",
+  "note": "volley plus fact",
+  "group": "Skill-move mashups",
+  "star": false
+ },
+ {
+  "name": "Volleybrain",
+  "note": "volley plus brain",
+  "group": "Skill-move mashups",
+  "star": false
+ },
+ {
+  "name": "Headwit",
+  "note": "header plus wit",
+  "group": "Skill-move mashups",
+  "star": false
+ },
+ {
+  "name": "Headclue",
+  "note": "header plus clue",
+  "group": "Skill-move mashups",
+  "star": false
+ },
+ {
+  "name": "Chipclue",
+  "note": "chip shot plus clue",
+  "group": "Skill-move mashups",
+  "star": false
+ },
+ {
+  "name": "Chipwit",
+  "note": "chip plus wit",
+  "group": "Skill-move mashups",
+  "star": false
+ },
+ {
+  "name": "Curlclue",
+  "note": "curler plus clue",
+  "group": "Skill-move mashups",
+  "star": false
+ },
+ {
+  "name": "Curlbrain",
+  "note": "curler plus brain",
+  "group": "Skill-move mashups",
+  "star": false
+ },
+ {
+  "name": "Curlwit",
+  "note": "curler plus wit",
+  "group": "Skill-move mashups",
+  "star": false
+ },
+ {
+  "name": "Derbrain",
+  "note": "derby plus brain",
+  "group": "Skill-move mashups",
+  "star": false
+ },
+ {
+  "name": "Derbyfact",
+  "note": "derby plus fact",
+  "group": "Skill-move mashups",
+  "star": false
+ },
+ {
+  "name": "Derbyclue",
+  "note": "derby plus clue",
+  "group": "Skill-move mashups",
+  "star": false
+ },
+ {
+  "name": "Offclue",
+  "note": "offside clipped plus clue",
+  "group": "Skill-move mashups",
+  "star": false
+ },
+ {
+  "name": "Strikesmart",
+  "note": "striker plus smart",
+  "group": "Skill-move mashups",
+  "star": false
+ },
+ {
+  "name": "Keepsmart",
+  "note": "keeper plus smart",
+  "group": "Skill-move mashups",
+  "star": false
+ },
+ {
+  "name": "Keepwit",
+  "note": "keeper plus wit",
+  "group": "Skill-move mashups",
+  "star": false
+ },
+ {
+  "name": "Golazquiz",
+  "note": "golazo plus quiz",
+  "group": "Skill-move mashups",
+  "star": false
+ },
+ {
+  "name": "Golazofact",
+  "note": "golazo plus fact",
+  "group": "Skill-move mashups",
+  "star": false
+ },
+ {
+  "name": "Volazo",
+  "note": "volley plus golazo",
+  "group": "Skill-move mashups",
+  "star": false
+ },
+ {
+  "name": "Dribbazo",
+  "note": "dribble plus golazo",
+  "group": "Skill-move mashups",
+  "star": false
+ },
+ {
+  "name": "Megazo",
+  "note": "nutmeg plus golazo",
+  "group": "Skill-move mashups",
+  "star": false
+ },
+ {
+  "name": "Brainmegazo",
+  "note": "brain, nutmeg and golazo",
+  "group": "Skill-move mashups",
+  "star": false
+ },
+ {
+  "name": "Kiq",
+  "note": "kick plus IQ",
+  "group": "Fútbol, footy and IQ",
+  "star": false
+ },
+ {
+  "name": "Goaliq",
+  "note": "goal plus IQ",
+  "group": "Fútbol, footy and IQ",
+  "star": true
+ },
+ {
+  "name": "Footiq",
+  "note": "foot plus IQ",
+  "group": "Fútbol, footy and IQ",
+  "star": false
+ },
+ {
+  "name": "Ballyq",
+  "note": "ball plus IQ",
+  "group": "Fútbol, footy and IQ",
+  "star": false
+ },
+ {
+  "name": "Pitchiq",
+  "note": "pitch plus IQ",
+  "group": "Fútbol, footy and IQ",
+  "star": false
+ },
+ {
+  "name": "Futiq",
+  "note": "fut plus IQ",
+  "group": "Fútbol, footy and IQ",
+  "star": false
+ },
+ {
+  "name": "Kickiq",
+  "note": "kick plus IQ, spelled out",
+  "group": "Fútbol, footy and IQ",
+  "star": false
+ },
+ {
+  "name": "Derbiq",
+  "note": "derby plus IQ",
+  "group": "Fútbol, footy and IQ",
+  "star": false
+ },
+ {
+  "name": "Footyiq",
+  "note": "footy plus IQ",
+  "group": "Fútbol, footy and IQ",
+  "star": false
+ },
+ {
+  "name": "Futebrain",
+  "note": "futebol plus brain",
+  "group": "Fútbol, footy and IQ",
+  "star": false
+ },
+ {
+  "name": "Futequiz",
+  "note": "futebol plus quiz",
+  "group": "Fútbol, footy and IQ",
+  "star": false
+ },
+ {
+  "name": "Futefact",
+  "note": "futebol plus fact",
+  "group": "Fútbol, footy and IQ",
+  "star": false
+ },
+ {
+  "name": "Bolquiz",
+  "note": "bola plus quiz",
+  "group": "Fútbol, footy and IQ",
+  "star": false
+ },
+ {
+  "name": "Bolafact",
+  "note": "bola plus fact",
+  "group": "Fútbol, footy and IQ",
+  "star": false
+ },
+ {
+  "name": "Bolaclue",
+  "note": "bola plus clue",
+  "group": "Fútbol, footy and IQ",
+  "star": false
+ },
+ {
+  "name": "Futbolquiz",
+  "note": "fútbol plus quiz",
+  "group": "Fútbol, footy and IQ",
+  "star": false
+ },
+ {
+  "name": "Futsmart",
+  "note": "fut plus smart",
+  "group": "Fútbol, footy and IQ",
+  "star": false
+ },
+ {
+  "name": "Futknow",
+  "note": "fut plus know",
+  "group": "Fútbol, footy and IQ",
+  "star": false
+ },
+ {
+  "name": "Footyfact",
+  "note": "footy plus fact",
+  "group": "Fútbol, footy and IQ",
+  "star": false
+ },
+ {
+  "name": "Footyclue",
+  "note": "footy plus clue",
+  "group": "Fútbol, footy and IQ",
+  "star": false
+ },
+ {
+  "name": "Footybrain",
+  "note": "footy plus brain",
+  "group": "Fútbol, footy and IQ",
+  "star": false
+ },
+ {
+  "name": "Footyknow",
+  "note": "footy plus know",
+  "group": "Fútbol, footy and IQ",
+  "star": false
+ },
+ {
+  "name": "Footywit",
+  "note": "footy plus wit",
+  "group": "Fútbol, footy and IQ",
+  "star": false
+ },
+ {
+  "name": "Footytest",
+  "note": "footy plus test",
+  "group": "Fútbol, footy and IQ",
+  "star": false
+ },
+ {
+  "name": "Futivia",
+  "note": "fútbol plus trivia, clipped",
+  "group": "Fútbol, footy and IQ",
+  "star": false
+ },
+ {
+  "name": "Futola",
+  "note": "fútbol plus bola, quiz sense",
+  "group": "Fútbol, footy and IQ",
+  "star": false
+ },
+ {
+  "name": "Kwizo",
+  "note": "quiz respelled with -o",
+  "group": "Short and clipped",
+  "star": true
+ },
+ {
+  "name": "Kwizball",
+  "note": "quiz respelled plus ball",
+  "group": "Short and clipped",
+  "star": false
+ },
+ {
+  "name": "Kwizgol",
+  "note": "quiz respelled plus gol",
+  "group": "Short and clipped",
+  "star": false
+ },
+ {
+  "name": "Kwizkick",
+  "note": "quiz respelled plus kick",
+  "group": "Short and clipped",
+  "star": false
+ },
+ {
+  "name": "Quizo",
+  "note": "quiz with Latin -o ending",
+  "group": "Short and clipped",
+  "star": false
+ },
+ {
+  "name": "Kickle",
+  "note": "kick with daily-game -le",
+  "group": "Short and clipped",
+  "star": false
+ },
+ {
+  "name": "Goaldle",
+  "note": "goal with daily-game -dle",
+  "group": "Short and clipped",
+  "star": false
+ },
+ {
+  "name": "Pitchle",
+  "note": "pitch with daily-game -le",
+  "group": "Short and clipped",
+  "star": false
+ },
+ {
+  "name": "Futle",
+  "note": "fut with daily-game -le",
+  "group": "Short and clipped",
+  "star": false
+ },
+ {
+  "name": "Volle",
+  "note": "volley with daily-game -le",
+  "group": "Short and clipped",
+  "star": false
+ },
+ {
+  "name": "Trivle",
+  "note": "trivia with daily-game -le",
+  "group": "Short and clipped",
+  "star": false
+ },
+ {
+  "name": "Factle",
+  "note": "fact with daily-game -le",
+  "group": "Short and clipped",
+  "star": false
+ },
+ {
+  "name": "Cluele",
+  "note": "clue with daily-game -le",
+  "group": "Short and clipped",
+  "star": false
+ },
+ {
+  "name": "Brainle",
+  "note": "brain with daily-game -le",
+  "group": "Short and clipped",
+  "star": false
+ },
+ {
+  "name": "Megle",
+  "note": "nutmeg with daily-game -le",
+  "group": "Short and clipped",
+  "star": false
+ },
+ {
+  "name": "Gollo",
+  "note": "gol plus quiz-show -o",
+  "group": "Short and clipped",
+  "star": false
+ },
+ {
+  "name": "Golito",
+  "note": "gol with -ito, small goal",
+  "group": "Short and clipped",
+  "star": false
+ },
+ {
+  "name": "Golinho",
+  "note": "gol with -inho",
+  "group": "Short and clipped",
+  "star": false
+ },
+ {
+  "name": "Kickazo",
+  "note": "kick plus golazo",
+  "group": "Short and clipped",
+  "star": false
+ },
+ {
+  "name": "Pitchazo",
+  "note": "pitch plus golazo",
+  "group": "Short and clipped",
+  "star": false
+ },
+ {
+  "name": "Kikazo",
+  "note": "kick respelled plus golazo",
+  "group": "Short and clipped",
+  "star": false
+ },
+ {
+  "name": "Trivo",
+  "note": "trivia clipped to two syllables",
+  "group": "Short and clipped",
+  "star": false
+ },
+ {
+  "name": "Triva",
+  "note": "trivia minus i, letter swap",
+  "group": "Short and clipped",
+  "star": false
+ },
+ {
+  "name": "Quizza",
+  "note": "quiz with Italian ending",
+  "group": "Short and clipped",
+  "star": false
+ },
+ {
+  "name": "Factzo",
+  "note": "fact plus golazo clipped",
+  "group": "Short and clipped",
+  "star": false
+ },
+ {
+  "name": "Bolo",
+  "note": "bola plus quiz-show -o",
+  "group": "Short and clipped",
+  "star": false
+ },
+ {
+  "name": "Knowl",
+  "note": "know plus goal, clipped",
+  "group": "Short and clipped",
+  "star": false
+ },
+ {
+  "name": "Gwiz",
+  "note": "goal plus quiz, clipped",
+  "group": "Short and clipped",
+  "star": false
+ },
+ {
+  "name": "Quoal",
+  "note": "quiz plus goal, letter swap",
+  "group": "Short and clipped",
+  "star": false
+ },
+ {
+  "name": "Kwoal",
+  "note": "quiz plus goal, respelled",
+  "group": "Short and clipped",
+  "star": false
+ },
+ {
+  "name": "Fakt",
+  "note": "fact with a kick k",
+  "group": "Short and clipped",
+  "star": false
+ },
+ {
+  "name": "Klu",
+  "note": "clue clipped and respelled",
+  "group": "Short and clipped",
+  "star": false
+ },
+ {
+  "name": "Kluball",
+  "note": "clue respelled plus ball",
+  "group": "Short and clipped",
+  "star": false
+ },
+ {
+  "name": "Klugol",
+  "note": "clue respelled plus gol",
+  "group": "Short and clipped",
+  "star": false
+ }
+]

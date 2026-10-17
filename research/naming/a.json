@@ -1,0 +1,2582 @@
+[
+ {
+  "name": "Portugoal",
+  "note": "Portugal",
+  "group": "Places",
+  "star": true
+ },
+ {
+  "name": "Senegoal",
+  "note": "Senegal",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Goalifornia",
+  "note": "California",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Mongoalia",
+  "note": "Mongolia",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Bengoal",
+  "note": "Bengal, the Indian region",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Donegoal",
+  "note": "Donegal, Irish county",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Goalway",
+  "note": "Galway, Irish city",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Goalapagos",
+  "note": "Galápagos Islands",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Goalveston",
+  "note": "Galveston, Texas",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Goalcatraz",
+  "note": "Alcatraz, the island prison",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Goalaska",
+  "note": "Alaska",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Goalbania",
+  "note": "Albania",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Goalgeria",
+  "note": "Algeria",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Goalberta",
+  "note": "Alberta, Canada",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Goalabama",
+  "note": "Alabama",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Goalbuquerque",
+  "note": "Albuquerque, New Mexico",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Goalorado",
+  "note": "Colorado",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Goalombia",
+  "note": "Colombia",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Goalogne",
+  "note": "Cologne, Germany",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Angoala",
+  "note": "Angola",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Montregoal",
+  "note": "Montreal",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Goalamazoo",
+  "note": "Kalamazoo, Michigan",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Oregoal",
+  "note": "Oregon",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Oregoal Trail",
+  "note": "the Oregon Trail",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Goalivia",
+  "note": "Bolivia",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Goalstralia",
+  "note": "Australia",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Goaldives",
+  "note": "the Maldives",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Goaldova",
+  "note": "Moldova",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Goalland",
+  "note": "Holland",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Goaland",
+  "note": "Poland",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Congoal",
+  "note": "Congo",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Togoal",
+  "note": "Togo",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Tobagoal",
+  "note": "Trinidad and Tobago",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Chicagoal",
+  "note": "Chicago",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "San Diegoal",
+  "note": "San Diego",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Santiagoal",
+  "note": "Santiago, Chile",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Fargoal",
+  "note": "Fargo, North Dakota",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Durangoal",
+  "note": "Durango, Mexico",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Santo Domingoal",
+  "note": "Santo Domingo",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Archipelagoal",
+  "note": "archipelago, a chain of islands",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Goalamo",
+  "note": "the Alamo, Texas",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Goalbi Desert",
+  "note": "the Gobi Desert",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Goalps",
+  "note": "the Alps",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Goalpine",
+  "note": "alpine, of high mountains",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Goalicia",
+  "note": "Galicia, Spain",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Goalilee",
+  "note": "Galilee",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Goaledonia",
+  "note": "Caledonia, old name for Scotland",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Goalexandria",
+  "note": "Alexandria, Egypt",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Goal Coast",
+  "note": "Gold Coast, Australia",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Goalden Gate",
+  "note": "the Golden Gate",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Goalden State",
+  "note": "the Golden State, California",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Singoalpore",
+  "note": "Singapore",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Istangoal",
+  "note": "Istanbul",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Goalympia",
+  "note": "Olympia, Washington",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Saigoal",
+  "note": "Saigon",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Aragoal",
+  "note": "Aragon, Spain",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Goalchester",
+  "note": "Colchester, England",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Goalbany",
+  "note": "Albany, New York",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Goaledo",
+  "note": "Toledo",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Goalaysia",
+  "note": "Malaysia",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Goalgaria",
+  "note": "Bulgaria",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Goaldorado",
+  "note": "El Dorado, city of gold",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "North Goal",
+  "note": "the North Pole",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Shangri-Goal",
+  "note": "Shangri-La, a hidden paradise",
+  "group": "Places",
+  "star": false
+ },
+ {
+  "name": "Goalrilla",
+  "note": "gorilla",
+  "group": "Animals",
+  "star": true
+ },
+ {
+  "name": "Goala",
+  "note": "koala",
+  "group": "Animals",
+  "star": false
+ },
+ {
+  "name": "Eagoal",
+  "note": "eagle",
+  "group": "Animals",
+  "star": false
+ },
+ {
+  "name": "Seagoal",
+  "note": "seagull",
+  "group": "Animals",
+  "star": false
+ },
+ {
+  "name": "Beagoal",
+  "note": "beagle",
+  "group": "Animals",
+  "star": false
+ },
+ {
+  "name": "Goaldfish",
+  "note": "goldfish",
+  "group": "Animals",
+  "star": false
+ },
+ {
+  "name": "Pangoalin",
+  "note": "pangolin, the scaly anteater",
+  "group": "Animals",
+  "star": false
+ },
+ {
+  "name": "Goalbatross",
+  "note": "albatross",
+  "group": "Animals",
+  "star": false
+ },
+ {
+  "name": "Goalphin",
+  "note": "dolphin",
+  "group": "Animals",
+  "star": false
+ },
+ {
+  "name": "Goalverine",
+  "note": "wolverine",
+  "group": "Animals",
+  "star": false
+ },
+ {
+  "name": "Tadgoal",
+  "note": "tadpole",
+  "group": "Animals",
+  "star": false
+ },
+ {
+  "name": "Goalpaca",
+  "note": "alpaca",
+  "group": "Animals",
+  "star": false
+ },
+ {
+  "name": "Goalamander",
+  "note": "salamander",
+  "group": "Animals",
+  "star": false
+ },
+ {
+  "name": "Goalrus",
+  "note": "walrus",
+  "group": "Animals",
+  "star": false
+ },
+ {
+  "name": "Jackgoal",
+  "note": "jackal",
+  "group": "Animals",
+  "star": false
+ },
+ {
+  "name": "Goalfinch",
+  "note": "goldfinch",
+  "group": "Animals",
+  "star": false
+ },
+ {
+  "name": "Bluegoal",
+  "note": "bluegill, a sunfish",
+  "group": "Animals",
+  "star": false
+ },
+ {
+  "name": "Nightingoal",
+  "note": "nightingale",
+  "group": "Animals",
+  "star": false
+ },
+ {
+  "name": "Origoal",
+  "note": "oriole",
+  "group": "Animals",
+  "star": false
+ },
+ {
+  "name": "Border Goallie",
+  "note": "border collie",
+  "group": "Animals",
+  "star": false
+ },
+ {
+  "name": "Goalden Retriever",
+  "note": "golden retriever",
+  "group": "Animals",
+  "star": false
+ },
+ {
+  "name": "Goaldendoodle",
+  "note": "goldendoodle",
+  "group": "Animals",
+  "star": false
+ },
+ {
+  "name": "Goalar Bear",
+  "note": "polar bear",
+  "group": "Animals",
+  "star": false
+ },
+ {
+  "name": "Flamingoal",
+  "note": "flamingo",
+  "group": "Animals",
+  "star": false
+ },
+ {
+  "name": "Dingoal",
+  "note": "dingo",
+  "group": "Animals",
+  "star": false
+ },
+ {
+  "name": "Bongoal",
+  "note": "bongo, a forest antelope",
+  "group": "Animals",
+  "star": false
+ },
+ {
+  "name": "Dragoalfly",
+  "note": "dragonfly",
+  "group": "Animals",
+  "star": false
+ },
+ {
+  "name": "Komodo Dragoal",
+  "note": "Komodo dragon",
+  "group": "Animals",
+  "star": false
+ },
+ {
+  "name": "Goalligator",
+  "note": "alligator",
+  "group": "Animals",
+  "star": false
+ },
+ {
+  "name": "Goalley Cat",
+  "note": "alley cat",
+  "group": "Animals",
+  "star": false
+ },
+ {
+  "name": "Camgoal",
+  "note": "camel",
+  "group": "Animals",
+  "star": false
+ },
+ {
+  "name": "Anigoal",
+  "note": "animal",
+  "group": "Animals",
+  "star": false
+ },
+ {
+  "name": "Squirgoal",
+  "note": "squirrel",
+  "group": "Animals",
+  "star": false
+ },
+ {
+  "name": "Goalpher",
+  "note": "gopher",
+  "group": "Animals",
+  "star": false
+ },
+ {
+  "name": "Gagoal",
+  "note": "gaggle of geese",
+  "group": "Animals",
+  "star": false
+ },
+ {
+  "name": "Goallusk",
+  "note": "mollusk",
+  "group": "Animals",
+  "star": false
+ },
+ {
+  "name": "Bengoal Tiger",
+  "note": "Bengal tiger",
+  "group": "Animals",
+  "star": false
+ },
+ {
+  "name": "Angoalfish",
+  "note": "angelfish",
+  "group": "Animals",
+  "star": false
+ },
+ {
+  "name": "Goalago",
+  "note": "galago, the bush baby",
+  "group": "Animals",
+  "star": false
+ },
+ {
+  "name": "Buffagoal",
+  "note": "buffalo",
+  "group": "Animals",
+  "star": false
+ },
+ {
+  "name": "Goallock",
+  "note": "pollock, a fish",
+  "group": "Animals",
+  "star": false
+ },
+ {
+  "name": "Mogoalse",
+  "note": "mongoose",
+  "group": "Animals",
+  "star": false
+ },
+ {
+  "name": "Goalcamole",
+  "note": "guacamole",
+  "group": "Food",
+  "star": true
+ },
+ {
+  "name": "Guacagoal",
+  "note": "guacamole, the other way",
+  "group": "Food",
+  "star": false
+ },
+ {
+  "name": "Goalnola",
+  "note": "granola",
+  "group": "Food",
+  "star": false
+ },
+ {
+  "name": "Goalzone",
+  "note": "calzone",
+  "group": "Food",
+  "star": false
+ },
+ {
+  "name": "Goalash",
+  "note": "goulash",
+  "group": "Food",
+  "star": false
+ },
+ {
+  "name": "Gorgoalzola",
+  "note": "gorgonzola cheese",
+  "group": "Food",
+  "star": false
+ },
+ {
+  "name": "Ravigoali",
+  "note": "ravioli",
+  "group": "Food",
+  "star": false
+ },
+ {
+  "name": "Stromgoali",
+  "note": "stromboli",
+  "group": "Food",
+  "star": false
+ },
+ {
+  "name": "Bagoal",
+  "note": "bagel",
+  "group": "Food",
+  "star": false
+ },
+ {
+  "name": "Mangoal",
+  "note": "mango",
+  "group": "Food",
+  "star": false
+ },
+ {
+  "name": "Goaliflower",
+  "note": "cauliflower",
+  "group": "Food",
+  "star": false
+ },
+ {
+  "name": "Goalslaw",
+  "note": "coleslaw",
+  "group": "Food",
+  "star": false
+ },
+ {
+  "name": "Goalsa",
+  "note": "salsa",
+  "group": "Food",
+  "star": false
+ },
+ {
+  "name": "Goalad",
+  "note": "salad",
+  "group": "Food",
+  "star": false
+ },
+ {
+  "name": "Goalato",
+  "note": "gelato",
+  "group": "Food",
+  "star": false
+ },
+ {
+  "name": "Goalfredo",
+  "note": "fettuccine alfredo",
+  "group": "Food",
+  "star": false
+ },
+ {
+  "name": "Goaloumi",
+  "note": "halloumi cheese",
+  "group": "Food",
+  "star": false
+ },
+ {
+  "name": "Goalmond",
+  "note": "almond",
+  "group": "Food",
+  "star": false
+ },
+ {
+  "name": "Goalfalfa",
+  "note": "alfalfa sprouts",
+  "group": "Food",
+  "star": false
+ },
+ {
+  "name": "Goalapeño",
+  "note": "jalapeño",
+  "group": "Food",
+  "star": false
+ },
+ {
+  "name": "Goalnut",
+  "note": "walnut",
+  "group": "Food",
+  "star": false
+ },
+ {
+  "name": "Goallipop",
+  "note": "lollipop",
+  "group": "Food",
+  "star": false
+ },
+ {
+  "name": "Goalette",
+  "note": "galette, a rustic tart",
+  "group": "Food",
+  "star": false
+ },
+ {
+  "name": "Chocgoalate",
+  "note": "chocolate",
+  "group": "Food",
+  "star": false
+ },
+ {
+  "name": "Ceregoal",
+  "note": "cereal",
+  "group": "Food",
+  "star": false
+ },
+ {
+  "name": "Goalamari",
+  "note": "calamari",
+  "group": "Food",
+  "star": false
+ },
+ {
+  "name": "Goalandaise",
+  "note": "hollandaise sauce",
+  "group": "Food",
+  "star": false
+ },
+ {
+  "name": "Goalasses",
+  "note": "molasses",
+  "group": "Food",
+  "star": false
+ },
+ {
+  "name": "Goallof Rice",
+  "note": "jollof rice",
+  "group": "Food",
+  "star": false
+ },
+ {
+  "name": "Cassergoal",
+  "note": "casserole",
+  "group": "Food",
+  "star": false
+ },
+ {
+  "name": "Kugoal",
+  "note": "kugel, a noodle pudding",
+  "group": "Food",
+  "star": false
+ },
+ {
+  "name": "Escargoal",
+  "note": "escargot, French snails",
+  "group": "Food",
+  "star": false
+ },
+ {
+  "name": "Goalatin",
+  "note": "gelatin",
+  "group": "Food",
+  "star": false
+ },
+ {
+  "name": "Cinnamon Goal",
+  "note": "cinnamon roll",
+  "group": "Food",
+  "star": false
+ },
+ {
+  "name": "Egg Goal",
+  "note": "egg roll",
+  "group": "Food",
+  "star": false
+ },
+ {
+  "name": "Spring Goal",
+  "note": "spring roll",
+  "group": "Food",
+  "star": false
+ },
+ {
+  "name": "Goalorie",
+  "note": "calorie",
+  "group": "Food",
+  "star": false
+ },
+ {
+  "name": "Tarragoal",
+  "note": "tarragon, the herb",
+  "group": "Food",
+  "star": false
+ },
+ {
+  "name": "Cangoali",
+  "note": "cannoli",
+  "group": "Food",
+  "star": false
+ },
+ {
+  "name": "Goalspice",
+  "note": "allspice",
+  "group": "Food",
+  "star": false
+ },
+ {
+  "name": "Goaliath",
+  "note": "Goliath, the giant",
+  "group": "Legends and thinkers",
+  "star": true
+ },
+ {
+  "name": "Goalileo",
+  "note": "Galileo, the astronomer",
+  "group": "Legends and thinkers",
+  "star": false
+ },
+ {
+  "name": "Goalcrates",
+  "note": "Socrates, the philosopher",
+  "group": "Legends and thinkers",
+  "star": false
+ },
+ {
+  "name": "Goalpoleon",
+  "note": "Napoleon",
+  "group": "Legends and thinkers",
+  "star": false
+ },
+ {
+  "name": "Goalumbus",
+  "note": "Christopher Columbus",
+  "group": "Legends and thinkers",
+  "star": false
+ },
+ {
+  "name": "Goaldilocks",
+  "note": "Goldilocks and the Three Bears",
+  "group": "Legends and thinkers",
+  "star": false
+ },
+ {
+  "name": "Goalbert",
+  "note": "Albert Einstein",
+  "group": "Legends and thinkers",
+  "star": false
+ },
+ {
+  "name": "Goalfred the Great",
+  "note": "Alfred the Great",
+  "group": "Legends and thinkers",
+  "star": false
+ },
+ {
+  "name": "Goalexander the Great",
+  "note": "Alexander the Great",
+  "group": "Legends and thinkers",
+  "star": false
+ },
+ {
+  "name": "Goaliver Twist",
+  "note": "Oliver Twist, Dickens",
+  "group": "Legends and thinkers",
+  "star": false
+ },
+ {
+  "name": "Goaladdin",
+  "note": "Aladdin",
+  "group": "Legends and thinkers",
+  "star": false
+ },
+ {
+  "name": "Goali Baba",
+  "note": "Ali Baba and the thieves",
+  "group": "Legends and thinkers",
+  "star": false
+ },
+ {
+  "name": "Goalice in Wonderland",
+  "note": "Alice in Wonderland",
+  "group": "Legends and thinkers",
+  "star": false
+ },
+ {
+  "name": "Goalliver’s Travels",
+  "note": "Gulliver’s Travels",
+  "group": "Legends and thinkers",
+  "star": false
+ },
+ {
+  "name": "Sir Goalahad",
+  "note": "Sir Galahad, the knight",
+  "group": "Legends and thinkers",
+  "star": false
+ },
+ {
+  "name": "Exgoalibur",
+  "note": "Excalibur, King Arthur’s sword",
+  "group": "Legends and thinkers",
+  "star": false
+ },
+ {
+  "name": "Camegoalot",
+  "note": "Camelot",
+  "group": "Legends and thinkers",
+  "star": false
+ },
+ {
+  "name": "Old King Goal",
+  "note": "Old King Cole",
+  "group": "Legends and thinkers",
+  "star": false
+ },
+ {
+  "name": "Goalgamesh",
+  "note": "Gilgamesh, the oldest epic",
+  "group": "Legends and thinkers",
+  "star": false
+ },
+ {
+  "name": "Goalympus",
+  "note": "Olympus, home of the gods",
+  "group": "Legends and thinkers",
+  "star": true
+ },
+ {
+  "name": "Goalhalla",
+  "note": "Valhalla, hall of heroes",
+  "group": "Legends and thinkers",
+  "star": false
+ },
+ {
+  "name": "Goalossus",
+  "note": "the Colossus of Rhodes",
+  "group": "Legends and thinkers",
+  "star": false
+ },
+ {
+  "name": "Goalden Fleece",
+  "note": "the Golden Fleece",
+  "group": "Legends and thinkers",
+  "star": false
+ },
+ {
+  "name": "Goalden Goose",
+  "note": "the goose with golden eggs",
+  "group": "Legends and thinkers",
+  "star": false
+ },
+ {
+  "name": "Goalden Age",
+  "note": "a golden age",
+  "group": "Legends and thinkers",
+  "star": false
+ },
+ {
+  "name": "Hannigoal",
+  "note": "Hannibal, who crossed the Alps",
+  "group": "Legends and thinkers",
+  "star": false
+ },
+ {
+  "name": "Goaltaire",
+  "note": "Voltaire, the French writer",
+  "group": "Legends and thinkers",
+  "star": false
+ },
+ {
+  "name": "Aristgoal",
+  "note": "Aristotle",
+  "group": "Legends and thinkers",
+  "star": false
+ },
+ {
+  "name": "Pythagoalas",
+  "note": "Pythagoras",
+  "group": "Legends and thinkers",
+  "star": false
+ },
+ {
+  "name": "Hegoal",
+  "note": "Hegel, the philosopher",
+  "group": "Legends and thinkers",
+  "star": false
+ },
+ {
+  "name": "King Goalomon",
+  "note": "King Solomon",
+  "group": "Legends and thinkers",
+  "star": false
+ },
+ {
+  "name": "Argoalnauts",
+  "note": "the Argonauts, Jason’s crew",
+  "group": "Legends and thinkers",
+  "star": false
+ },
+ {
+  "name": "Hercugoals",
+  "note": "Hercules",
+  "group": "Legends and thinkers",
+  "star": false
+ },
+ {
+  "name": "Oragoal",
+  "note": "an oracle, like Delphi",
+  "group": "Legends and thinkers",
+  "star": false
+ },
+ {
+  "name": "Magoallan",
+  "note": "Magellan, the explorer",
+  "group": "Legends and thinkers",
+  "star": false
+ },
+ {
+  "name": "Marco Goalo",
+  "note": "Marco Polo",
+  "group": "Legends and thinkers",
+  "star": false
+ },
+ {
+  "name": "Sherlock Goalmes",
+  "note": "Sherlock Holmes",
+  "group": "Legends and thinkers",
+  "star": false
+ },
+ {
+  "name": "Sleepy Goallow",
+  "note": "Sleepy Hollow",
+  "group": "Legends and thinkers",
+  "star": false
+ },
+ {
+  "name": "Goalchemist",
+  "note": "alchemist",
+  "group": "Legends and thinkers",
+  "star": false
+ },
+ {
+  "name": "Goalleon",
+  "note": "galleon, a sailing ship",
+  "group": "Legends and thinkers",
+  "star": false
+ },
+ {
+  "name": "Goalympians",
+  "note": "the Olympian gods",
+  "group": "Legends and thinkers",
+  "star": false
+ },
+ {
+  "name": "Prodigoal Son",
+  "note": "the prodigal son",
+  "group": "Legends and thinkers",
+  "star": false
+ },
+ {
+  "name": "Goalblin",
+  "note": "goblin",
+  "group": "Monsters and space",
+  "star": false
+ },
+ {
+  "name": "Hobgoalblin",
+  "note": "hobgoblin",
+  "group": "Monsters and space",
+  "star": false
+ },
+ {
+  "name": "Gargoal",
+  "note": "gargoyle",
+  "group": "Monsters and space",
+  "star": false
+ },
+ {
+  "name": "Goalzilla",
+  "note": "Godzilla",
+  "group": "Monsters and space",
+  "star": false
+ },
+ {
+  "name": "Goalem",
+  "note": "golem, the clay giant",
+  "group": "Monsters and space",
+  "star": false
+ },
+ {
+  "name": "Goalish",
+  "note": "ghoulish",
+  "group": "Monsters and space",
+  "star": false
+ },
+ {
+  "name": "Goal Troll",
+  "note": "troll",
+  "group": "Monsters and space",
+  "star": false
+ },
+ {
+  "name": "Goaliens",
+  "note": "aliens",
+  "group": "Monsters and space",
+  "star": false
+ },
+ {
+  "name": "Goalgon",
+  "note": "Gorgon, like Medusa",
+  "group": "Monsters and space",
+  "star": false
+ },
+ {
+  "name": "Dragoal",
+  "note": "dragon",
+  "group": "Monsters and space",
+  "star": false
+ },
+ {
+  "name": "Goaltergeist",
+  "note": "poltergeist",
+  "group": "Monsters and space",
+  "star": false
+ },
+ {
+  "name": "Wendigoal",
+  "note": "wendigo, a forest spirit",
+  "group": "Monsters and space",
+  "star": false
+ },
+ {
+  "name": "Goalaxy",
+  "note": "galaxy",
+  "group": "Monsters and space",
+  "star": true
+ },
+ {
+  "name": "Goalactic",
+  "note": "galactic",
+  "group": "Monsters and space",
+  "star": false
+ },
+ {
+  "name": "Intergoalactic",
+  "note": "intergalactic",
+  "group": "Monsters and space",
+  "star": false
+ },
+ {
+  "name": "Goalar System",
+  "note": "the solar system",
+  "group": "Monsters and space",
+  "star": false
+ },
+ {
+  "name": "Goalar Flare",
+  "note": "solar flare",
+  "group": "Monsters and space",
+  "star": false
+ },
+ {
+  "name": "Goalaris",
+  "note": "Polaris, the North Star",
+  "group": "Monsters and space",
+  "star": false
+ },
+ {
+  "name": "Goalstice",
+  "note": "solstice",
+  "group": "Monsters and space",
+  "star": false
+ },
+ {
+  "name": "Goalley’s Comet",
+  "note": "Halley’s Comet",
+  "group": "Monsters and space",
+  "star": false
+ },
+ {
+  "name": "Black Goal",
+  "note": "black hole",
+  "group": "Monsters and space",
+  "star": false
+ },
+ {
+  "name": "Wormgoal",
+  "note": "wormhole",
+  "group": "Monsters and space",
+  "star": false
+ },
+ {
+  "name": "Goalogram",
+  "note": "hologram",
+  "group": "Monsters and space",
+  "star": false
+ },
+ {
+  "name": "Goalecule",
+  "note": "molecule",
+  "group": "Monsters and space",
+  "star": false
+ },
+ {
+  "name": "Argoal",
+  "note": "argon, the element",
+  "group": "Monsters and space",
+  "star": false
+ },
+ {
+  "name": "Goallium",
+  "note": "gallium, the element",
+  "group": "Monsters and space",
+  "star": false
+ },
+ {
+  "name": "Goalcium",
+  "note": "calcium",
+  "group": "Monsters and space",
+  "star": false
+ },
+ {
+  "name": "Goallisto",
+  "note": "Callisto, Jupiter’s moon",
+  "group": "Monsters and space",
+  "star": false
+ },
+ {
+  "name": "Goalpha Centauri",
+  "note": "Alpha Centauri",
+  "group": "Monsters and space",
+  "star": false
+ },
+ {
+  "name": "Goalcano",
+  "note": "volcano",
+  "group": "Monsters and space",
+  "star": true
+ },
+ {
+  "name": "Goalpocalypse",
+  "note": "apocalypse",
+  "group": "Monsters and space",
+  "star": false
+ },
+ {
+  "name": "Goalch Ness Monster",
+  "note": "Loch Ness Monster",
+  "group": "Monsters and space",
+  "star": false
+ },
+ {
+  "name": "Goalaxy Brain",
+  "note": "galaxy brain",
+  "group": "Monsters and space",
+  "star": false
+ },
+ {
+  "name": "Goaloween",
+  "note": "Halloween",
+  "group": "Monsters and space",
+  "star": false
+ },
+ {
+  "name": "Goaltage",
+  "note": "voltage",
+  "group": "Monsters and space",
+  "star": false
+ },
+ {
+  "name": "Pentagoal",
+  "note": "pentagon, the ball’s patch",
+  "group": "Shapes and math",
+  "star": true
+ },
+ {
+  "name": "Hexagoal",
+  "note": "hexagon",
+  "group": "Shapes and math",
+  "star": false
+ },
+ {
+  "name": "Octagoal",
+  "note": "octagon",
+  "group": "Shapes and math",
+  "star": false
+ },
+ {
+  "name": "Heptagoal",
+  "note": "heptagon",
+  "group": "Shapes and math",
+  "star": false
+ },
+ {
+  "name": "Nonagoal",
+  "note": "nonagon",
+  "group": "Shapes and math",
+  "star": false
+ },
+ {
+  "name": "Decagoal",
+  "note": "decagon",
+  "group": "Shapes and math",
+  "star": false
+ },
+ {
+  "name": "Dodecagoal",
+  "note": "dodecagon, twelve sides",
+  "group": "Shapes and math",
+  "star": false
+ },
+ {
+  "name": "Polygoal",
+  "note": "polygon",
+  "group": "Shapes and math",
+  "star": false
+ },
+ {
+  "name": "Diagoalnal",
+  "note": "diagonal",
+  "group": "Shapes and math",
+  "star": false
+ },
+ {
+  "name": "Triangoal",
+  "note": "triangle",
+  "group": "Shapes and math",
+  "star": false
+ },
+ {
+  "name": "Rectangoal",
+  "note": "rectangle",
+  "group": "Shapes and math",
+  "star": false
+ },
+ {
+  "name": "Angoal",
+  "note": "angle",
+  "group": "Shapes and math",
+  "star": false
+ },
+ {
+  "name": "Spherigoal",
+  "note": "spherical, ball shaped",
+  "group": "Shapes and math",
+  "star": false
+ },
+ {
+  "name": "Goalgebra",
+  "note": "algebra",
+  "group": "Shapes and math",
+  "star": false
+ },
+ {
+  "name": "Goalgorithm",
+  "note": "algorithm",
+  "group": "Shapes and math",
+  "star": false
+ },
+ {
+  "name": "Goalculator",
+  "note": "calculator",
+  "group": "Shapes and math",
+  "star": false
+ },
+ {
+  "name": "Goalculus",
+  "note": "calculus",
+  "group": "Shapes and math",
+  "star": false
+ },
+ {
+  "name": "Goalden Ratio",
+  "note": "the golden ratio",
+  "group": "Shapes and math",
+  "star": false
+ },
+ {
+  "name": "Trigoalometry",
+  "note": "trigonometry",
+  "group": "Shapes and math",
+  "star": false
+ },
+ {
+  "name": "Paragoalogram",
+  "note": "parallelogram",
+  "group": "Shapes and math",
+  "star": false
+ },
+ {
+  "name": "Decigoal",
+  "note": "decimal",
+  "group": "Shapes and math",
+  "star": false
+ },
+ {
+  "name": "Integoal",
+  "note": "integral",
+  "group": "Shapes and math",
+  "star": false
+ },
+ {
+  "name": "Spirgoal",
+  "note": "spiral",
+  "group": "Shapes and math",
+  "star": false
+ },
+ {
+  "name": "Fracgoal",
+  "note": "fractal",
+  "group": "Shapes and math",
+  "star": false
+ },
+ {
+  "name": "Regoalar",
+  "note": "regular",
+  "group": "Shapes and math",
+  "star": false
+ },
+ {
+  "name": "Angoalar",
+  "note": "angular",
+  "group": "Shapes and math",
+  "star": false
+ },
+ {
+  "name": "Goalumn",
+  "note": "column",
+  "group": "Shapes and math",
+  "star": false
+ },
+ {
+  "name": "Vertigoal",
+  "note": "vertical, and vertigo",
+  "group": "Shapes and math",
+  "star": false
+ },
+ {
+  "name": "Horizongoal",
+  "note": "horizontal",
+  "group": "Shapes and math",
+  "star": false
+ },
+ {
+  "name": "Paragoal",
+  "note": "paragon",
+  "group": "Shapes and math",
+  "star": false
+ },
+ {
+  "name": "Conigoal",
+  "note": "conical",
+  "group": "Shapes and math",
+  "star": false
+ },
+ {
+  "name": "Tetragoal",
+  "note": "tetragon, four sides",
+  "group": "Shapes and math",
+  "star": false
+ },
+ {
+  "name": "Goalore",
+  "note": "galore",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goallery",
+  "note": "gallery",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Jungoal",
+  "note": "jungle",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Jingoal",
+  "note": "jingle",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Jingoal Bells",
+  "note": "Jingle Bells",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goalphabet",
+  "note": "alphabet",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goalmanac",
+  "note": "almanac",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goalchemy",
+  "note": "alchemy",
+  "group": "Everyday words",
+  "star": true
+ },
+ {
+  "name": "Goalume",
+  "note": "volume",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Regoalution",
+  "note": "revolution",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Egoalution",
+  "note": "evolution",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Absgoalute",
+  "note": "absolute",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goalvanize",
+  "note": "galvanize",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goally Gee",
+  "note": "golly gee",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goallywobbles",
+  "note": "collywobbles, nervous tummy",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goalsmacked",
+  "note": "gobsmacked",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goalbledygook",
+  "note": "gobbledygook",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Gigoal",
+  "note": "giggle",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Jugoal",
+  "note": "juggle, like keepie-uppies",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goalumph",
+  "note": "galumph, to clomp around",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goal Pal",
+  "note": "gal pal",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goallop",
+  "note": "gallop",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goallivant",
+  "note": "gallivant",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goaloshes",
+  "note": "galoshes",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goalrious",
+  "note": "glorious",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goalry",
+  "note": "glory",
+  "group": "Everyday words",
+  "star": true
+ },
+ {
+  "name": "Goalry Days",
+  "note": "glory days",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goallible",
+  "note": "gullible",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Mogoal",
+  "note": "mogul, or ski moguls",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Jargoal",
+  "note": "jargon",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Bandwagoal",
+  "note": "bandwagon",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Chargoal",
+  "note": "charcoal",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goal Rush",
+  "note": "the gold rush",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Rock and Goal",
+  "note": "rock and roll",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goal Model",
+  "note": "role model",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goalercoaster",
+  "note": "roller coaster",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Drum Goal",
+  "note": "drumroll",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goaly Moly",
+  "note": "holy moly",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goaly Cow",
+  "note": "holy cow",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goalsome",
+  "note": "wholesome",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "The Goal Enchilada",
+  "note": "the whole enchilada",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "The Goal Shebang",
+  "note": "the whole shebang",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "The Goal Nine Yards",
+  "note": "the whole nine yards",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goalheartedly",
+  "note": "wholeheartedly",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "April Goal’s Day",
+  "note": "April Fools’ Day",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goaltide",
+  "note": "Yuletide",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goalka",
+  "note": "polka",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goalka Dot",
+  "note": "polka dot",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Rigmagoal",
+  "note": "rigmarole",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Pot of Goal",
+  "note": "pot of gold",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goal Star",
+  "note": "gold star",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goal Standard",
+  "note": "the gold standard",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Fool’s Goal",
+  "note": "fool’s gold",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goal Mine",
+  "note": "gold mine",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goal Miner",
+  "note": "coal miner",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Loopgoal",
+  "note": "loophole",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goal in One",
+  "note": "hole in one",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Rabbit Goal",
+  "note": "rabbit hole",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Pigeongoal",
+  "note": "pigeonhole",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Maygoal",
+  "note": "maypole",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goaloha",
+  "note": "aloha",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Higoalarious",
+  "note": "hilarious",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goalley-oop",
+  "note": "alley-oop",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goalter Ego",
+  "note": "alter ego",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Alter Egoal",
+  "note": "alter ego, the other way",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goaltitude",
+  "note": "altitude",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goaluminum",
+  "note": "aluminum",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goalliance",
+  "note": "alliance",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goallowance",
+  "note": "allowance",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goalendar",
+  "note": "calendar",
+  "group": "Everyday words",
+  "star": true
+ },
+ {
+  "name": "Goaleidoscope",
+  "note": "kaleidoscope",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goalamity",
+  "note": "calamity",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goalypso",
+  "note": "calypso music",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goalossal",
+  "note": "colossal",
+  "group": "Everyday words",
+  "star": true
+ },
+ {
+  "name": "Goallide",
+  "note": "collide",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goallection",
+  "note": "collection",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goallage",
+  "note": "collage",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goaliday",
+  "note": "holiday",
+  "group": "Everyday words",
+  "star": true
+ },
+ {
+  "name": "Happy Goalidays",
+  "note": "happy holidays",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goalley",
+  "note": "volley",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goalitaire",
+  "note": "solitaire",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goalidarity",
+  "note": "solidarity",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Esgoalator",
+  "note": "escalator",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goallinate",
+  "note": "pollinate",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Festigoal",
+  "note": "festival",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Carnigoal",
+  "note": "carnival",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Rigoal",
+  "note": "rival",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Survigoal",
+  "note": "survival",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Revigoal",
+  "note": "revival",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Arrigoal",
+  "note": "arrival",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Intergoal",
+  "note": "interval, like halftime",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Tropigoal",
+  "note": "tropical",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Musigoal",
+  "note": "musical",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Magigoal",
+  "note": "magical",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Radigoal",
+  "note": "radical",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Whimsigoal",
+  "note": "whimsical",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Fantastigoal",
+  "note": "fantastical",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Tactigoal",
+  "note": "tactical",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Hysterigoal",
+  "note": "hysterical",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Origigoal",
+  "note": "original",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Glogoal",
+  "note": "global",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Continengoal",
+  "note": "continental",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Fundamengoal",
+  "note": "fundamental",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Monumengoal",
+  "note": "monumental",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Experimengoal",
+  "note": "experimental",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Elemengoal",
+  "note": "elemental",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Accidengoal",
+  "note": "accidental",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Morgoal",
+  "note": "mortal, and Morg’s name",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Amigoal",
+  "note": "amigo, Spanish for friend",
+  "group": "Everyday words",
+  "star": true
+ },
+ {
+  "name": "Indigoal",
+  "note": "indigo",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Lingoal",
+  "note": "lingo, soccer talk",
+  "group": "Everyday words",
+  "star": true
+ },
+ {
+  "name": "Bingoal",
+  "note": "bingo",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Tangoal",
+  "note": "tango",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Pogoal",
+  "note": "pogo stick",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Cargoal",
+  "note": "cargo",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Embargoal",
+  "note": "embargo",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "La Goala",
+  "note": "la ola, the stadium wave",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goalé",
+  "note": "olé, the stadium chant",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Regoal",
+  "note": "regal",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Frugoal",
+  "note": "frugal",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Madrigoal",
+  "note": "madrigal, an old song",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Fungoal",
+  "note": "fungal, or fun goal",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Singoal",
+  "note": "single",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Mingoal",
+  "note": "mingle",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Tingoal",
+  "note": "tingle",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Tangoal Up",
+  "note": "tangle",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Wrangoal",
+  "note": "wrangle",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Dangoal",
+  "note": "dangle",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Bangoal",
+  "note": "bangle",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Bugoal",
+  "note": "bugle",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Snugoal",
+  "note": "snuggle",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Strugoal",
+  "note": "struggle",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Wigoal",
+  "note": "wiggle",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Squigoal",
+  "note": "squiggle",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Gurgoal",
+  "note": "gurgle",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Togoal Switch",
+  "note": "toggle switch",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goalgles",
+  "note": "goggles",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goalblet",
+  "note": "goblet",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Angoalic",
+  "note": "angelic",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goalsmith",
+  "note": "goldsmith",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goalden Ticket",
+  "note": "golden ticket",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goalden Hour",
+  "note": "golden hour",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goalckenspiel",
+  "note": "glockenspiel",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goalcove",
+  "note": "alcove",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goalbum",
+  "note": "album",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goalibi",
+  "note": "alibi",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goallegro",
+  "note": "allegro, fast in music",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Piccogoal",
+  "note": "piccolo",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goallar",
+  "note": "collar",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goallon",
+  "note": "gallon",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goala Night",
+  "note": "gala night",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goallant",
+  "note": "gallant",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goallege",
+  "note": "college",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goaloof",
+  "note": "aloof",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goalpha",
+  "note": "alpha",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goalmost",
+  "note": "almost",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goal Call",
+  "note": "roll call",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goaling Pin",
+  "note": "rolling pin",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Honor Goal",
+  "note": "honor roll",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goalsale",
+  "note": "wholesale",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goalmate",
+  "note": "soulmate",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goalful",
+  "note": "soulful",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goal Searching",
+  "note": "soul searching",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Fishgoal",
+  "note": "fishbowl",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goaling Alley",
+  "note": "bowling alley",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Mountain Out of a Goalhill",
+  "note": "mountain out of a molehill",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Totem Goal",
+  "note": "totem pole",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Flaggoal",
+  "note": "flagpole",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goal Vault",
+  "note": "pole vault",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Cubbygoal",
+  "note": "cubbyhole",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Peepgoal",
+  "note": "peephole",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Keygoal",
+  "note": "keyhole",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Lingoaleum",
+  "note": "linoleum",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Gondgoala",
+  "note": "gondola",
+  "group": "Everyday words",
+  "star": false
+ },
+ {
+  "name": "Goalvanometer",
+  "note": "galvanometer",
+  "group": "Everyday words",
+  "star": false
+ }
+]

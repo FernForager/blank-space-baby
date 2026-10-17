@@ -1,0 +1,1520 @@
+[
+ {
+  "name": "Kickstreak",
+  "note": "kick plus streak",
+  "group": "Streak, run and chain",
+  "star": true
+ },
+ {
+  "name": "Streako",
+  "note": "streak with a soccer o",
+  "group": "Streak, run and chain",
+  "star": true
+ },
+ {
+  "name": "Streakick",
+  "note": "streak plus kick, shared k",
+  "group": "Streak, run and chain",
+  "star": false
+ },
+ {
+  "name": "Streakball",
+  "note": "streak plus football",
+  "group": "Streak, run and chain",
+  "star": false
+ },
+ {
+  "name": "Goalstreak",
+  "note": "goal plus streak",
+  "group": "Streak, run and chain",
+  "star": false
+ },
+ {
+  "name": "Strikestreak",
+  "note": "strike plus streak",
+  "group": "Streak, run and chain",
+  "star": false
+ },
+ {
+  "name": "Runball",
+  "note": "run plus ball",
+  "group": "Streak, run and chain",
+  "star": false
+ },
+ {
+  "name": "Chainball",
+  "note": "chain plus ball",
+  "group": "Streak, run and chain",
+  "star": false
+ },
+ {
+  "name": "Kickchain",
+  "note": "kick plus chain",
+  "group": "Streak, run and chain",
+  "star": false
+ },
+ {
+  "name": "Chainkick",
+  "note": "chain plus kick",
+  "group": "Streak, run and chain",
+  "star": false
+ },
+ {
+  "name": "Combogoal",
+  "note": "combo plus goal",
+  "group": "Streak, run and chain",
+  "star": false
+ },
+ {
+  "name": "Goalcombo",
+  "note": "goal plus combo",
+  "group": "Streak, run and chain",
+  "star": false
+ },
+ {
+  "name": "Combol",
+  "note": "combo plus gol",
+  "group": "Streak, run and chain",
+  "star": true
+ },
+ {
+  "name": "Combokick",
+  "note": "combo plus kick",
+  "group": "Streak, run and chain",
+  "star": false
+ },
+ {
+  "name": "Streaq",
+  "note": "streak in quiz spelling",
+  "group": "Streak, run and chain",
+  "star": false
+ },
+ {
+  "name": "Inarow",
+  "note": "in a row, one word",
+  "group": "Streak, run and chain",
+  "star": false
+ },
+ {
+  "name": "Rowgoal",
+  "note": "in a row plus goal",
+  "group": "Streak, run and chain",
+  "star": false
+ },
+ {
+  "name": "Rowball",
+  "note": "row plus ball",
+  "group": "Streak, run and chain",
+  "star": false
+ },
+ {
+  "name": "Sixrow",
+  "note": "six in a row",
+  "group": "Streak, run and chain",
+  "star": false
+ },
+ {
+  "name": "Sixstreak",
+  "note": "six-streak makes a goal",
+  "group": "Streak, run and chain",
+  "star": false
+ },
+ {
+  "name": "Runstrike",
+  "note": "run plus strike",
+  "group": "Streak, run and chain",
+  "star": false
+ },
+ {
+  "name": "Streakeeper",
+  "note": "streak plus keeper",
+  "group": "Streak, run and chain",
+  "star": false
+ },
+ {
+  "name": "Linkick",
+  "note": "link plus kick",
+  "group": "Streak, run and chain",
+  "star": false
+ },
+ {
+  "name": "Chainshot",
+  "note": "chain plus shot",
+  "group": "Streak, run and chain",
+  "star": false
+ },
+ {
+  "name": "Streakfoot",
+  "note": "streak plus foot",
+  "group": "Streak, run and chain",
+  "star": false
+ },
+ {
+  "name": "Rungol",
+  "note": "run plus gol",
+  "group": "Streak, run and chain",
+  "star": false
+ },
+ {
+  "name": "Golrun",
+  "note": "gol plus run",
+  "group": "Streak, run and chain",
+  "star": false
+ },
+ {
+  "name": "Chaingol",
+  "note": "chain plus gol",
+  "group": "Streak, run and chain",
+  "star": false
+ },
+ {
+  "name": "Streakster",
+  "note": "streak plus -ster",
+  "group": "Streak, run and chain",
+  "star": false
+ },
+ {
+  "name": "Streakie",
+  "note": "streak plus cute -ie",
+  "group": "Streak, run and chain",
+  "star": false
+ },
+ {
+  "name": "Kickrun",
+  "note": "kick plus run",
+  "group": "Streak, run and chain",
+  "star": false
+ },
+ {
+  "name": "Pitchstreak",
+  "note": "pitch plus streak",
+  "group": "Streak, run and chain",
+  "star": false
+ },
+ {
+  "name": "Streakpitch",
+  "note": "streak plus pitch",
+  "group": "Streak, run and chain",
+  "star": false
+ },
+ {
+  "name": "Hexstreak",
+  "note": "hex for six plus streak",
+  "group": "Streak, run and chain",
+  "star": false
+ },
+ {
+  "name": "Hexgoal",
+  "note": "hex for six plus goal",
+  "group": "Streak, run and chain",
+  "star": false
+ },
+ {
+  "name": "Goalchain",
+  "note": "goal plus chain",
+  "group": "Streak, run and chain",
+  "star": false
+ },
+ {
+  "name": "Linkball",
+  "note": "link plus ball",
+  "group": "Streak, run and chain",
+  "star": false
+ },
+ {
+  "name": "Streakazul",
+  "note": "streak plus azul, blue-sky run",
+  "group": "Streak, run and chain",
+  "star": false
+ },
+ {
+  "name": "Runlio",
+  "note": "run plus golazo-ish -lio",
+  "group": "Streak, run and chain",
+  "star": false
+ },
+ {
+  "name": "Chainio",
+  "note": "chain plus -io",
+  "group": "Streak, run and chain",
+  "star": false
+ },
+ {
+  "name": "Goaldle",
+  "note": "goal plus Wordle-style ending",
+  "group": "Puzzle -le riffs",
+  "star": true
+ },
+ {
+  "name": "Kickle",
+  "note": "kick plus -le",
+  "group": "Puzzle -le riffs",
+  "star": true
+ },
+ {
+  "name": "Pitchle",
+  "note": "pitch plus -le",
+  "group": "Puzzle -le riffs",
+  "star": true
+ },
+ {
+  "name": "Balldle",
+  "note": "ball plus -le",
+  "group": "Puzzle -le riffs",
+  "star": false
+ },
+ {
+  "name": "Strikle",
+  "note": "strike plus -le",
+  "group": "Puzzle -le riffs",
+  "star": false
+ },
+ {
+  "name": "Scordle",
+  "note": "score plus -le",
+  "group": "Puzzle -le riffs",
+  "star": true
+ },
+ {
+  "name": "Futle",
+  "note": "fútbol plus -le",
+  "group": "Puzzle -le riffs",
+  "star": false
+ },
+ {
+  "name": "Futble",
+  "note": "fútbol plus -le, longer",
+  "group": "Puzzle -le riffs",
+  "star": false
+ },
+ {
+  "name": "Soccle",
+  "note": "soccer plus -le",
+  "group": "Puzzle -le riffs",
+  "star": false
+ },
+ {
+  "name": "Soccerdle",
+  "note": "soccer plus -le",
+  "group": "Puzzle -le riffs",
+  "star": false
+ },
+ {
+  "name": "Footydle",
+  "note": "footy plus -le",
+  "group": "Puzzle -le riffs",
+  "star": false
+ },
+ {
+  "name": "Crossle",
+  "note": "cross plus -le",
+  "group": "Puzzle -le riffs",
+  "star": false
+ },
+ {
+  "name": "Volle",
+  "note": "volley plus -le",
+  "group": "Puzzle -le riffs",
+  "star": false
+ },
+ {
+  "name": "Headle",
+  "note": "header plus -le",
+  "group": "Puzzle -le riffs",
+  "star": false
+ },
+ {
+  "name": "Cornle",
+  "note": "corner plus -le",
+  "group": "Puzzle -le riffs",
+  "star": false
+ },
+ {
+  "name": "Cornerdle",
+  "note": "corner plus -le",
+  "group": "Puzzle -le riffs",
+  "star": false
+ },
+ {
+  "name": "Penaldle",
+  "note": "penalty plus -le",
+  "group": "Puzzle -le riffs",
+  "star": false
+ },
+ {
+  "name": "Spotle",
+  "note": "spot kick plus -le",
+  "group": "Puzzle -le riffs",
+  "star": true
+ },
+ {
+  "name": "Hattle",
+  "note": "hat trick plus -le",
+  "group": "Puzzle -le riffs",
+  "star": false
+ },
+ {
+  "name": "Offsidle",
+  "note": "offside plus -le",
+  "group": "Puzzle -le riffs",
+  "star": false
+ },
+ {
+  "name": "Keepdle",
+  "note": "keeper plus -le",
+  "group": "Puzzle -le riffs",
+  "star": false
+ },
+ {
+  "name": "Pentle",
+  "note": "ball pentagon plus -le",
+  "group": "Puzzle -le riffs",
+  "star": false
+ },
+ {
+  "name": "Patchle",
+  "note": "ball patch plus -le",
+  "group": "Puzzle -le riffs",
+  "star": false
+ },
+ {
+  "name": "Chiple",
+  "note": "chip shot plus -le",
+  "group": "Puzzle -le riffs",
+  "star": false
+ },
+ {
+  "name": "Curle",
+  "note": "curler plus -le",
+  "group": "Puzzle -le riffs",
+  "star": false
+ },
+ {
+  "name": "Bendle",
+  "note": "bend it plus -le",
+  "group": "Puzzle -le riffs",
+  "star": false
+ },
+ {
+  "name": "Trivle",
+  "note": "trivia plus -le",
+  "group": "Puzzle -le riffs",
+  "star": false
+ },
+ {
+  "name": "Quizle",
+  "note": "quiz plus -le",
+  "group": "Puzzle -le riffs",
+  "star": false
+ },
+ {
+  "name": "Vardle",
+  "note": "VAR review plus -le",
+  "group": "Puzzle -le riffs",
+  "star": false
+ },
+ {
+  "name": "Refle",
+  "note": "ref plus -le",
+  "group": "Puzzle -le riffs",
+  "star": false
+ },
+ {
+  "name": "Cardle",
+  "note": "yellow card plus -le",
+  "group": "Puzzle -le riffs",
+  "star": false
+ },
+ {
+  "name": "Turfle",
+  "note": "turf plus -le",
+  "group": "Puzzle -le riffs",
+  "star": false
+ },
+ {
+  "name": "Matchle",
+  "note": "match plus -le",
+  "group": "Puzzle -le riffs",
+  "star": false
+ },
+ {
+  "name": "Derbydle",
+  "note": "derby plus -le",
+  "group": "Puzzle -le riffs",
+  "star": false
+ },
+ {
+  "name": "Streakle",
+  "note": "streak plus -le",
+  "group": "Puzzle -le riffs",
+  "star": true
+ },
+ {
+  "name": "Runnle",
+  "note": "run plus -le",
+  "group": "Puzzle -le riffs",
+  "star": false
+ },
+ {
+  "name": "Chainle",
+  "note": "chain plus -le",
+  "group": "Puzzle -le riffs",
+  "star": false
+ },
+ {
+  "name": "Clutchle",
+  "note": "clutch plus -le",
+  "group": "Puzzle -le riffs",
+  "star": true
+ },
+ {
+  "name": "Shootle",
+  "note": "shootout plus -le",
+  "group": "Puzzle -le riffs",
+  "star": false
+ },
+ {
+  "name": "Peekle",
+  "note": "PK said aloud plus -le",
+  "group": "Puzzle -le riffs",
+  "star": true
+ },
+ {
+  "name": "Golle",
+  "note": "gol plus -le",
+  "group": "Puzzle -le riffs",
+  "star": false
+ },
+ {
+  "name": "Kickoffle",
+  "note": "kickoff plus -le",
+  "group": "Puzzle -le riffs",
+  "star": false
+ },
+ {
+  "name": "Netdle",
+  "note": "net plus -le",
+  "group": "Puzzle -le riffs",
+  "star": false
+ },
+ {
+  "name": "Boxle",
+  "note": "penalty box plus -le",
+  "group": "Puzzle -le riffs",
+  "star": false
+ },
+ {
+  "name": "Postle",
+  "note": "goalpost plus -le",
+  "group": "Puzzle -le riffs",
+  "star": false
+ },
+ {
+  "name": "Stripedle",
+  "note": "kit stripes plus -le",
+  "group": "Puzzle -le riffs",
+  "star": false
+ },
+ {
+  "name": "Squadle",
+  "note": "squad plus -le",
+  "group": "Puzzle -le riffs",
+  "star": false
+ },
+ {
+  "name": "Wingle",
+  "note": "winger plus -le",
+  "group": "Puzzle -le riffs",
+  "star": false
+ },
+ {
+  "name": "Halfle",
+  "note": "halftime plus -le",
+  "group": "Puzzle -le riffs",
+  "star": false
+ },
+ {
+  "name": "Ninetle",
+  "note": "ninety minutes plus -le",
+  "group": "Puzzle -le riffs",
+  "star": false
+ },
+ {
+  "name": "Gridball",
+  "note": "grid plus ball",
+  "group": "Grid, cipher and clue",
+  "star": false
+ },
+ {
+  "name": "Kickgrid",
+  "note": "kick plus grid",
+  "group": "Grid, cipher and clue",
+  "star": false
+ },
+ {
+  "name": "Gridkick",
+  "note": "grid plus kick",
+  "group": "Grid, cipher and clue",
+  "star": false
+ },
+ {
+  "name": "Gridgoal",
+  "note": "grid plus goal",
+  "group": "Grid, cipher and clue",
+  "star": false
+ },
+ {
+  "name": "Goalgrid",
+  "note": "goal plus grid",
+  "group": "Grid, cipher and clue",
+  "star": false
+ },
+ {
+  "name": "Pitchgrid",
+  "note": "pitch as a grid",
+  "group": "Grid, cipher and clue",
+  "star": false
+ },
+ {
+  "name": "Kickword",
+  "note": "kick plus crossword",
+  "group": "Grid, cipher and clue",
+  "star": false
+ },
+ {
+  "name": "Kickcross",
+  "note": "kick plus crossword",
+  "group": "Grid, cipher and clue",
+  "star": false
+ },
+ {
+  "name": "Goalword",
+  "note": "goal plus word puzzle",
+  "group": "Grid, cipher and clue",
+  "star": false
+ },
+ {
+  "name": "Cipherball",
+  "note": "cipher plus ball",
+  "group": "Grid, cipher and clue",
+  "star": false
+ },
+ {
+  "name": "Ciphergoal",
+  "note": "cipher plus goal",
+  "group": "Grid, cipher and clue",
+  "star": false
+ },
+ {
+  "name": "Goalsolve",
+  "note": "goal plus solve",
+  "group": "Grid, cipher and clue",
+  "star": false
+ },
+ {
+  "name": "Solveball",
+  "note": "solve plus ball",
+  "group": "Grid, cipher and clue",
+  "star": false
+ },
+ {
+  "name": "Solvo",
+  "note": "solve with a soccer o",
+  "group": "Grid, cipher and clue",
+  "star": true
+ },
+ {
+  "name": "Guessgoal",
+  "note": "guess plus goal",
+  "group": "Grid, cipher and clue",
+  "star": false
+ },
+ {
+  "name": "Goalguess",
+  "note": "goal plus guess",
+  "group": "Grid, cipher and clue",
+  "star": false
+ },
+ {
+  "name": "Guesskick",
+  "note": "guess plus kick",
+  "group": "Grid, cipher and clue",
+  "star": false
+ },
+ {
+  "name": "Kickguess",
+  "note": "kick plus guess",
+  "group": "Grid, cipher and clue",
+  "star": false
+ },
+ {
+  "name": "Riddleball",
+  "note": "riddle plus ball",
+  "group": "Grid, cipher and clue",
+  "star": false
+ },
+ {
+  "name": "Goalriddle",
+  "note": "goal plus riddle",
+  "group": "Grid, cipher and clue",
+  "star": false
+ },
+ {
+  "name": "Riddlekick",
+  "note": "riddle plus kick",
+  "group": "Grid, cipher and clue",
+  "star": false
+ },
+ {
+  "name": "Riddlo",
+  "note": "riddle with a soccer o",
+  "group": "Grid, cipher and clue",
+  "star": false
+ },
+ {
+  "name": "Puzzball",
+  "note": "puzzle plus ball",
+  "group": "Grid, cipher and clue",
+  "star": false
+ },
+ {
+  "name": "Puzzgoal",
+  "note": "puzzle plus goal",
+  "group": "Grid, cipher and clue",
+  "star": false
+ },
+ {
+  "name": "Puzzkick",
+  "note": "puzzle plus kick",
+  "group": "Grid, cipher and clue",
+  "star": false
+ },
+ {
+  "name": "Puzzlito",
+  "note": "puzzle plus Spanish -ito",
+  "group": "Grid, cipher and clue",
+  "star": false
+ },
+ {
+  "name": "Kickpuzz",
+  "note": "kick plus puzzle",
+  "group": "Grid, cipher and clue",
+  "star": false
+ },
+ {
+  "name": "Clueball",
+  "note": "clue plus ball",
+  "group": "Grid, cipher and clue",
+  "star": false
+ },
+ {
+  "name": "Cluegoal",
+  "note": "clue plus goal",
+  "group": "Grid, cipher and clue",
+  "star": false
+ },
+ {
+  "name": "Kickclue",
+  "note": "kick plus clue",
+  "group": "Grid, cipher and clue",
+  "star": false
+ },
+ {
+  "name": "Cluekick",
+  "note": "clue plus kick",
+  "group": "Grid, cipher and clue",
+  "star": false
+ },
+ {
+  "name": "Brainball",
+  "note": "brain plus ball",
+  "group": "Grid, cipher and clue",
+  "star": false
+ },
+ {
+  "name": "Quizkick",
+  "note": "quiz plus kick",
+  "group": "Grid, cipher and clue",
+  "star": false
+ },
+ {
+  "name": "Kickquiz",
+  "note": "kick plus quiz",
+  "group": "Grid, cipher and clue",
+  "star": false
+ },
+ {
+  "name": "Quizgol",
+  "note": "quiz plus gol",
+  "group": "Grid, cipher and clue",
+  "star": false
+ },
+ {
+  "name": "Golquiz",
+  "note": "gol plus quiz",
+  "group": "Grid, cipher and clue",
+  "star": false
+ },
+ {
+  "name": "Quizpitch",
+  "note": "quiz plus pitch",
+  "group": "Grid, cipher and clue",
+  "star": false
+ },
+ {
+  "name": "Pitchquiz",
+  "note": "pitch plus quiz",
+  "group": "Grid, cipher and clue",
+  "star": false
+ },
+ {
+  "name": "Footiq",
+  "note": "football plus IQ",
+  "group": "Grid, cipher and clue",
+  "star": false
+ },
+ {
+  "name": "Goaliq",
+  "note": "goal plus IQ",
+  "group": "Grid, cipher and clue",
+  "star": false
+ },
+ {
+  "name": "Kickiq",
+  "note": "kick plus IQ",
+  "group": "Grid, cipher and clue",
+  "star": false
+ },
+ {
+  "name": "Ballogic",
+  "note": "ball plus logic",
+  "group": "Grid, cipher and clue",
+  "star": false
+ },
+ {
+  "name": "Logikick",
+  "note": "logic plus kick",
+  "group": "Grid, cipher and clue",
+  "star": false
+ },
+ {
+  "name": "Gridlo",
+  "note": "grid plus soccer -lo",
+  "group": "Grid, cipher and clue",
+  "star": false
+ },
+ {
+  "name": "Solvita",
+  "note": "solve plus Spanish -ita",
+  "group": "Grid, cipher and clue",
+  "star": false
+ },
+ {
+  "name": "Cluezo",
+  "note": "clue plus -zo flourish",
+  "group": "Grid, cipher and clue",
+  "star": false
+ },
+ {
+  "name": "Gridgol",
+  "note": "grid plus gol",
+  "group": "Grid, cipher and clue",
+  "star": false
+ },
+ {
+  "name": "Spotquiz",
+  "note": "spot kick plus quiz",
+  "group": "Shootout and hat trick",
+  "star": false
+ },
+ {
+  "name": "Quizspot",
+  "note": "quiz plus spot kick",
+  "group": "Shootout and hat trick",
+  "star": false
+ },
+ {
+  "name": "Shootquiz",
+  "note": "shootout plus quiz",
+  "group": "Shootout and hat trick",
+  "star": false
+ },
+ {
+  "name": "Quizout",
+  "note": "quiz plus shootout",
+  "group": "Shootout and hat trick",
+  "star": false
+ },
+ {
+  "name": "Shootiq",
+  "note": "shootout plus IQ",
+  "group": "Shootout and hat trick",
+  "star": false
+ },
+ {
+  "name": "Peekayo",
+  "note": "PK spelled out, soccer o",
+  "group": "Shootout and hat trick",
+  "star": false
+ },
+ {
+  "name": "Spotshot",
+  "note": "spot kick plus shot",
+  "group": "Shootout and hat trick",
+  "star": false
+ },
+ {
+  "name": "Penno",
+  "note": "penalty plus soccer o",
+  "group": "Shootout and hat trick",
+  "star": false
+ },
+ {
+  "name": "Penalteaser",
+  "note": "penalty plus brain teaser",
+  "group": "Shootout and hat trick",
+  "star": false
+ },
+ {
+  "name": "Penaltrix",
+  "note": "penalty plus -trix",
+  "group": "Shootout and hat trick",
+  "star": false
+ },
+ {
+  "name": "Spottrick",
+  "note": "spot kick plus hat trick",
+  "group": "Shootout and hat trick",
+  "star": false
+ },
+ {
+  "name": "Hattrix",
+  "note": "hat trick plus -trix",
+  "group": "Shootout and hat trick",
+  "star": true
+ },
+ {
+  "name": "Hatriv",
+  "note": "hat trick plus trivia",
+  "group": "Shootout and hat trick",
+  "star": false
+ },
+ {
+  "name": "Hattrivia",
+  "note": "hat trick plus trivia",
+  "group": "Shootout and hat trick",
+  "star": false
+ },
+ {
+  "name": "Triquiz",
+  "note": "hat trick plus quiz",
+  "group": "Shootout and hat trick",
+  "star": false
+ },
+ {
+  "name": "Hatquiz",
+  "note": "hat trick plus quiz",
+  "group": "Shootout and hat trick",
+  "star": false
+ },
+ {
+  "name": "Hatricky",
+  "note": "hat trick plus tricky",
+  "group": "Shootout and hat trick",
+  "star": false
+ },
+ {
+  "name": "Penquiz",
+  "note": "penalty plus quiz",
+  "group": "Shootout and hat trick",
+  "star": false
+ },
+ {
+  "name": "Spotsmart",
+  "note": "spot kick plus smart",
+  "group": "Shootout and hat trick",
+  "star": false
+ },
+ {
+  "name": "Shootsmart",
+  "note": "shootout plus smart",
+  "group": "Shootout and hat trick",
+  "star": false
+ },
+ {
+  "name": "Kicksmart",
+  "note": "kick plus smart",
+  "group": "Shootout and hat trick",
+  "star": false
+ },
+ {
+  "name": "Boxbrain",
+  "note": "penalty box plus brain",
+  "group": "Shootout and hat trick",
+  "star": false
+ },
+ {
+  "name": "Shootoo",
+  "note": "shootout, stretched like a cheer",
+  "group": "Shootout and hat trick",
+  "star": false
+ },
+ {
+  "name": "Spotkiq",
+  "note": "spot kick plus IQ",
+  "group": "Shootout and hat trick",
+  "star": false
+ },
+ {
+  "name": "Twelvy",
+  "note": "twelve-yard spot, nicknamed",
+  "group": "Shootout and hat trick",
+  "star": false
+ },
+ {
+  "name": "Hatrik",
+  "note": "hat trick, respelled",
+  "group": "Shootout and hat trick",
+  "star": false
+ },
+ {
+  "name": "Tricko",
+  "note": "hat trick with soccer o",
+  "group": "Shootout and hat trick",
+  "star": false
+ },
+ {
+  "name": "Spotto",
+  "note": "spot kick with soccer o",
+  "group": "Shootout and hat trick",
+  "star": false
+ },
+ {
+  "name": "Keeperquiz",
+  "note": "keeper plus quiz",
+  "group": "Shootout and hat trick",
+  "star": false
+ },
+ {
+  "name": "Saveiq",
+  "note": "keeper save plus IQ",
+  "group": "Shootout and hat trick",
+  "star": false
+ },
+ {
+  "name": "Shootwit",
+  "note": "shootout plus wit",
+  "group": "Shootout and hat trick",
+  "star": false
+ },
+ {
+  "name": "Bracewit",
+  "note": "brace plus wit",
+  "group": "Shootout and hat trick",
+  "star": false
+ },
+ {
+  "name": "Trickstreak",
+  "note": "hat trick plus streak",
+  "group": "Shootout and hat trick",
+  "star": false
+ },
+ {
+  "name": "Hatstreak",
+  "note": "hat trick plus streak",
+  "group": "Shootout and hat trick",
+  "star": false
+ },
+ {
+  "name": "Clutchkick",
+  "note": "clutch plus kick",
+  "group": "Clutch, buzzer and extra time",
+  "star": false
+ },
+ {
+  "name": "Clutchball",
+  "note": "clutch plus ball",
+  "group": "Clutch, buzzer and extra time",
+  "star": false
+ },
+ {
+  "name": "Clutchgoal",
+  "note": "clutch plus goal",
+  "group": "Clutch, buzzer and extra time",
+  "star": false
+ },
+ {
+  "name": "Clutcho",
+  "note": "clutch with soccer o",
+  "group": "Clutch, buzzer and extra time",
+  "star": false
+ },
+ {
+  "name": "Buzzgoal",
+  "note": "buzzer plus goal",
+  "group": "Clutch, buzzer and extra time",
+  "star": false
+ },
+ {
+  "name": "Buzzkick",
+  "note": "buzzer plus kick",
+  "group": "Clutch, buzzer and extra time",
+  "star": false
+ },
+ {
+  "name": "Buzzball",
+  "note": "buzzer plus ball",
+  "group": "Clutch, buzzer and extra time",
+  "star": false
+ },
+ {
+  "name": "Buzzle",
+  "note": "buzzer plus puzzle",
+  "group": "Clutch, buzzer and extra time",
+  "star": true
+ },
+ {
+  "name": "Goalbuzz",
+  "note": "goal plus buzzer",
+  "group": "Clutch, buzzer and extra time",
+  "star": false
+ },
+ {
+  "name": "Scorebrain",
+  "note": "scoreboard plus brain",
+  "group": "Clutch, buzzer and extra time",
+  "star": false
+ },
+ {
+  "name": "Quizboard",
+  "note": "quiz plus scoreboard",
+  "group": "Clutch, buzzer and extra time",
+  "star": false
+ },
+ {
+  "name": "Scorequiz",
+  "note": "score plus quiz",
+  "group": "Clutch, buzzer and extra time",
+  "star": false
+ },
+ {
+  "name": "Quizscore",
+  "note": "quiz plus score",
+  "group": "Clutch, buzzer and extra time",
+  "star": false
+ },
+ {
+  "name": "Scoreiq",
+  "note": "score plus IQ",
+  "group": "Clutch, buzzer and extra time",
+  "star": false
+ },
+ {
+  "name": "Scorely",
+  "note": "score plus daily",
+  "group": "Clutch, buzzer and extra time",
+  "star": false
+ },
+ {
+  "name": "Kickly",
+  "note": "kick plus daily",
+  "group": "Clutch, buzzer and extra time",
+  "star": false
+ },
+ {
+  "name": "Goalday",
+  "note": "goal plus daily",
+  "group": "Clutch, buzzer and extra time",
+  "star": false
+ },
+ {
+  "name": "Kickaday",
+  "note": "kick-a-day, one word",
+  "group": "Clutch, buzzer and extra time",
+  "star": true
+ },
+ {
+  "name": "Goaladay",
+  "note": "goal-a-day, one word",
+  "group": "Clutch, buzzer and extra time",
+  "star": false
+ },
+ {
+  "name": "Dailykick",
+  "note": "daily plus kick",
+  "group": "Clutch, buzzer and extra time",
+  "star": false
+ },
+ {
+  "name": "Dailygol",
+  "note": "daily plus gol",
+  "group": "Clutch, buzzer and extra time",
+  "star": false
+ },
+ {
+  "name": "Daygol",
+  "note": "day plus gol",
+  "group": "Clutch, buzzer and extra time",
+  "star": false
+ },
+ {
+  "name": "Crunchkick",
+  "note": "crunch time plus kick",
+  "group": "Clutch, buzzer and extra time",
+  "star": false
+ },
+ {
+  "name": "Xtrakick",
+  "note": "extra time plus kick",
+  "group": "Clutch, buzzer and extra time",
+  "star": false
+ },
+ {
+  "name": "Stoppagoal",
+  "note": "stoppage time plus goal",
+  "group": "Clutch, buzzer and extra time",
+  "star": false
+ },
+ {
+  "name": "Suddengoal",
+  "note": "sudden-death goal, death dropped",
+  "group": "Clutch, buzzer and extra time",
+  "star": false
+ },
+ {
+  "name": "Suddenkick",
+  "note": "sudden plus kick",
+  "group": "Clutch, buzzer and extra time",
+  "star": false
+ },
+ {
+  "name": "Suddenquiz",
+  "note": "sudden-death plus quiz",
+  "group": "Clutch, buzzer and extra time",
+  "star": false
+ },
+ {
+  "name": "Overkick",
+  "note": "overtime plus kick",
+  "group": "Clutch, buzzer and extra time",
+  "star": false
+ },
+ {
+  "name": "Ninetyplus",
+  "note": "ninety-plus stoppage time",
+  "group": "Clutch, buzzer and extra time",
+  "star": false
+ },
+ {
+  "name": "Mvpitch",
+  "note": "MVP plus pitch",
+  "group": "Clutch, buzzer and extra time",
+  "star": false
+ },
+ {
+  "name": "Buzzerbeat",
+  "note": "buzzer-beater, soccer ear",
+  "group": "Clutch, buzzer and extra time",
+  "star": false
+ },
+ {
+  "name": "Clutchiq",
+  "note": "clutch plus IQ",
+  "group": "Clutch, buzzer and extra time",
+  "star": false
+ },
+ {
+  "name": "Stoppiq",
+  "note": "stoppage time plus IQ",
+  "group": "Clutch, buzzer and extra time",
+  "star": false
+ },
+ {
+  "name": "Xtraquiz",
+  "note": "extra time plus quiz",
+  "group": "Clutch, buzzer and extra time",
+  "star": false
+ },
+ {
+  "name": "Clockgol",
+  "note": "game clock plus gol",
+  "group": "Clutch, buzzer and extra time",
+  "star": false
+ },
+ {
+  "name": "Whistlewit",
+  "note": "final whistle plus wit",
+  "group": "Clutch, buzzer and extra time",
+  "star": false
+ },
+ {
+  "name": "Fulltimer",
+  "note": "full time plus -er",
+  "group": "Clutch, buzzer and extra time",
+  "star": false
+ },
+ {
+  "name": "Golo",
+  "note": "gol plus o",
+  "group": "Short hybrid coinages",
+  "star": false
+ },
+ {
+  "name": "Goalio",
+  "note": "goal plus -io",
+  "group": "Short hybrid coinages",
+  "star": false
+ },
+ {
+  "name": "Kickio",
+  "note": "kick plus -io",
+  "group": "Short hybrid coinages",
+  "star": false
+ },
+ {
+  "name": "Scorio",
+  "note": "score plus -io",
+  "group": "Short hybrid coinages",
+  "star": false
+ },
+ {
+  "name": "Kicko",
+  "note": "kick plus o",
+  "group": "Short hybrid coinages",
+  "star": false
+ },
+ {
+  "name": "Quizo",
+  "note": "quiz plus o",
+  "group": "Short hybrid coinages",
+  "star": false
+ },
+ {
+  "name": "Quizito",
+  "note": "quiz plus -ito",
+  "group": "Short hybrid coinages",
+  "star": false
+ },
+ {
+  "name": "Futquiz",
+  "note": "fútbol plus quiz",
+  "group": "Short hybrid coinages",
+  "star": false
+ },
+ {
+  "name": "Quizfut",
+  "note": "quiz plus fútbol",
+  "group": "Short hybrid coinages",
+  "star": false
+ },
+ {
+  "name": "Futriv",
+  "note": "fútbol plus trivia",
+  "group": "Short hybrid coinages",
+  "star": false
+ },
+ {
+  "name": "Trivgol",
+  "note": "trivia plus gol",
+  "group": "Short hybrid coinages",
+  "star": false
+ },
+ {
+  "name": "Goltriv",
+  "note": "gol plus trivia",
+  "group": "Short hybrid coinages",
+  "star": false
+ },
+ {
+  "name": "Kicktriv",
+  "note": "kick plus trivia",
+  "group": "Short hybrid coinages",
+  "star": false
+ },
+ {
+  "name": "Trivkick",
+  "note": "trivia plus kick",
+  "group": "Short hybrid coinages",
+  "star": false
+ },
+ {
+  "name": "Trivball",
+  "note": "trivia plus ball",
+  "group": "Short hybrid coinages",
+  "star": false
+ },
+ {
+  "name": "Trivstreak",
+  "note": "trivia plus streak",
+  "group": "Short hybrid coinages",
+  "star": false
+ },
+ {
+  "name": "Smartgol",
+  "note": "smart plus gol",
+  "group": "Short hybrid coinages",
+  "star": false
+ },
+ {
+  "name": "Brainkick",
+  "note": "brain plus kick",
+  "group": "Short hybrid coinages",
+  "star": false
+ },
+ {
+  "name": "Kickbrain",
+  "note": "kick plus brain",
+  "group": "Short hybrid coinages",
+  "star": false
+ },
+ {
+  "name": "Goalbrain",
+  "note": "goal plus brain",
+  "group": "Short hybrid coinages",
+  "star": false
+ },
+ {
+  "name": "Brainstrike",
+  "note": "brain plus strike",
+  "group": "Short hybrid coinages",
+  "star": false
+ },
+ {
+  "name": "Mindkick",
+  "note": "mind plus kick",
+  "group": "Short hybrid coinages",
+  "star": false
+ },
+ {
+  "name": "Kickwit",
+  "note": "kick plus wit",
+  "group": "Short hybrid coinages",
+  "star": false
+ },
+ {
+  "name": "Witkick",
+  "note": "wit plus kick",
+  "group": "Short hybrid coinages",
+  "star": false
+ },
+ {
+  "name": "Goalwit",
+  "note": "goal plus wit",
+  "group": "Short hybrid coinages",
+  "star": false
+ },
+ {
+  "name": "Kenball",
+  "note": "ken, knowing, plus ball",
+  "group": "Short hybrid coinages",
+  "star": false
+ },
+ {
+  "name": "Sabegol",
+  "note": "sabe, knows, plus gol",
+  "group": "Short hybrid coinages",
+  "star": false
+ },
+ {
+  "name": "Quizzo",
+  "note": "quiz with a soccer zz",
+  "group": "Short hybrid coinages",
+  "star": false
+ },
+ {
+  "name": "Kiqo",
+  "note": "kick plus IQ, tiny",
+  "group": "Short hybrid coinages",
+  "star": false
+ },
+ {
+  "name": "Goliq",
+  "note": "gol plus IQ",
+  "group": "Short hybrid coinages",
+  "star": false
+ },
+ {
+  "name": "Futiq",
+  "note": "fútbol plus IQ",
+  "group": "Short hybrid coinages",
+  "star": false
+ },
+ {
+  "name": "Strikiq",
+  "note": "strike plus IQ",
+  "group": "Short hybrid coinages",
+  "star": false
+ },
+ {
+  "name": "Golwise",
+  "note": "gol plus wise",
+  "group": "Short hybrid coinages",
+  "star": false
+ },
+ {
+  "name": "Kickwise",
+  "note": "kick plus wise",
+  "group": "Short hybrid coinages",
+  "star": false
+ },
+ {
+  "name": "Pitchwise",
+  "note": "pitch plus wise",
+  "group": "Short hybrid coinages",
+  "star": false
+ },
+ {
+  "name": "Ballwise",
+  "note": "ball plus wise",
+  "group": "Short hybrid coinages",
+  "star": false
+ },
+ {
+  "name": "Quizzle",
+  "note": "quiz plus dazzle, -le",
+  "group": "Short hybrid coinages",
+  "star": false
+ },
+ {
+  "name": "Scorezo",
+  "note": "score plus -zo flourish",
+  "group": "Short hybrid coinages",
+  "star": false
+ },
+ {
+  "name": "Kickquo",
+  "note": "kick plus IQ, quiz",
+  "group": "Short hybrid coinages",
+  "star": false
+ },
+ {
+  "name": "Gollio",
+  "note": "gol plus -io, sung",
+  "group": "Short hybrid coinages",
+  "star": false
+ },
+ {
+  "name": "Trivio",
+  "note": "trivia with soccer o",
+  "group": "Short hybrid coinages",
+  "star": false
+ },
+ {
+  "name": "Kwizgol",
+  "note": "quiz respelled plus gol",
+  "group": "Short hybrid coinages",
+  "star": false
+ },
+ {
+  "name": "Goalmind",
+  "note": "goal plus mastermind",
+  "group": "Short hybrid coinages",
+  "star": false
+ },
+ {
+  "name": "Footwit",
+  "note": "foot plus wit",
+  "group": "Short hybrid coinages",
+  "star": false
+ }
+]

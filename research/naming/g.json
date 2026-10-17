@@ -1,0 +1,1502 @@
+[
+ {
+  "name": "Tikiquiz",
+  "note": "tiki-taka plus quiz",
+  "group": "Rhymes and doubles",
+  "star": true
+ },
+ {
+  "name": "Quiztaka",
+  "note": "quiz plus tiki-taka",
+  "group": "Rhymes and doubles",
+  "star": false
+ },
+ {
+  "name": "Goaly Moly",
+  "note": "holy moly, with a goal",
+  "group": "Rhymes and doubles",
+  "star": true
+ },
+ {
+  "name": "Kickaroo",
+  "note": "kick plus kangaroo bounce",
+  "group": "Rhymes and doubles",
+  "star": true
+ },
+ {
+  "name": "Quizaroo",
+  "note": "quiz with a bouncy -aroo",
+  "group": "Rhymes and doubles",
+  "star": false
+ },
+ {
+  "name": "Golagola",
+  "note": "doubled Spanish gol",
+  "group": "Rhymes and doubles",
+  "star": true
+ },
+ {
+  "name": "Bolabola",
+  "note": "doubled bola, ball worldwide",
+  "group": "Rhymes and doubles",
+  "star": true
+ },
+ {
+  "name": "Kickykicky",
+  "note": "doubled kick, playground chant",
+  "group": "Rhymes and doubles",
+  "star": false
+ },
+ {
+  "name": "Tikatika",
+  "note": "tiki-taka, trimmed and doubled",
+  "group": "Rhymes and doubles",
+  "star": false
+ },
+ {
+  "name": "Takatiki",
+  "note": "tiki-taka flipped",
+  "group": "Rhymes and doubles",
+  "star": false
+ },
+ {
+  "name": "Fizzquiz",
+  "note": "fizzy rhyme on quiz",
+  "group": "Rhymes and doubles",
+  "star": false
+ },
+ {
+  "name": "Quizzle-Dazzle",
+  "note": "razzle-dazzle quiz",
+  "group": "Rhymes and doubles",
+  "star": false
+ },
+ {
+  "name": "Razzle Ball",
+  "note": "razzle-dazzle plus ball",
+  "group": "Rhymes and doubles",
+  "star": false
+ },
+ {
+  "name": "Dribble Quibble",
+  "note": "dribble rhymes with quibble",
+  "group": "Rhymes and doubles",
+  "star": false
+ },
+ {
+  "name": "Kickle",
+  "note": "kick with a pickle wiggle",
+  "group": "Rhymes and doubles",
+  "star": false
+ },
+ {
+  "name": "Pitchypatchy",
+  "note": "pitch in a reduplicated pair",
+  "group": "Rhymes and doubles",
+  "star": false
+ },
+ {
+  "name": "Tippatappa",
+  "note": "tip-tap passing sound",
+  "group": "Rhymes and doubles",
+  "star": false
+ },
+ {
+  "name": "Dibbadabba",
+  "note": "dribble as a doubled sound",
+  "group": "Rhymes and doubles",
+  "star": false
+ },
+ {
+  "name": "Bimbam",
+  "note": "quick one-two rhythm",
+  "group": "Rhymes and doubles",
+  "star": false
+ },
+ {
+  "name": "Zippazap",
+  "note": "zippy passing, doubled",
+  "group": "Rhymes and doubles",
+  "star": false
+ },
+ {
+  "name": "Wiggawagga",
+  "note": "wiggly dribble doubling",
+  "group": "Rhymes and doubles",
+  "star": false
+ },
+ {
+  "name": "Hokey Goalie",
+  "note": "hokey-pokey plus goalie",
+  "group": "Rhymes and doubles",
+  "star": false
+ },
+ {
+  "name": "Golly Goal",
+  "note": "golly gosh plus goal",
+  "group": "Rhymes and doubles",
+  "star": false
+ },
+ {
+  "name": "Kickity",
+  "note": "lickety-split with a kick",
+  "group": "Rhymes and doubles",
+  "star": false
+ },
+ {
+  "name": "Chipchap",
+  "note": "chip shot doubled",
+  "group": "Rhymes and doubles",
+  "star": false
+ },
+ {
+  "name": "Netnet",
+  "note": "doubled net, ball in twice",
+  "group": "Rhymes and doubles",
+  "star": false
+ },
+ {
+  "name": "Gooligan",
+  "note": "goal plus hooligan, friendly version",
+  "group": "Rhymes and doubles",
+  "star": false
+ },
+ {
+  "name": "Brainybrace",
+  "note": "brainy plus brace rhyme",
+  "group": "Rhymes and doubles",
+  "star": false
+ },
+ {
+  "name": "Snappy Pappy",
+  "note": "snap pass doubled",
+  "group": "Rhymes and doubles",
+  "star": false
+ },
+ {
+  "name": "Kickquick",
+  "note": "kick and quick rhymed",
+  "group": "Rhymes and doubles",
+  "star": false
+ },
+ {
+  "name": "Tricky Kicky",
+  "note": "trick and kick rhymed",
+  "group": "Rhymes and doubles",
+  "star": false
+ },
+ {
+  "name": "Goalpole",
+  "note": "goal rhymes with pole",
+  "group": "Rhymes and doubles",
+  "star": false
+ },
+ {
+  "name": "Footloop",
+  "note": "foot plus loop rhyme",
+  "group": "Rhymes and doubles",
+  "star": false
+ },
+ {
+  "name": "Toetap",
+  "note": "toe poke doubled sound",
+  "group": "Rhymes and doubles",
+  "star": false
+ },
+ {
+  "name": "Tikitak",
+  "note": "tiki-taka clipped",
+  "group": "Rhymes and doubles",
+  "star": false
+ },
+ {
+  "name": "Thwonk",
+  "note": "ball off the boot",
+  "group": "Strike and net sounds",
+  "star": true
+ },
+ {
+  "name": "Doinko",
+  "note": "ball off the post",
+  "group": "Strike and net sounds",
+  "star": true
+ },
+ {
+  "name": "Doink",
+  "note": "the post ringing",
+  "group": "Strike and net sounds",
+  "star": false
+ },
+ {
+  "name": "Thunko",
+  "note": "thud of a clean strike",
+  "group": "Strike and net sounds",
+  "star": true
+ },
+ {
+  "name": "Swishnet",
+  "note": "ball swishing into net",
+  "group": "Strike and net sounds",
+  "star": false
+ },
+ {
+  "name": "Thwacka",
+  "note": "thwack of a laces strike",
+  "group": "Strike and net sounds",
+  "star": false
+ },
+ {
+  "name": "Plonko",
+  "note": "plonk into the corner",
+  "group": "Strike and net sounds",
+  "star": false
+ },
+ {
+  "name": "Pokka",
+  "note": "toe-poke sound",
+  "group": "Strike and net sounds",
+  "star": true
+ },
+ {
+  "name": "Bonko",
+  "note": "bonk off the crossbar",
+  "group": "Strike and net sounds",
+  "star": false
+ },
+ {
+  "name": "Thwip",
+  "note": "quick flick sound",
+  "group": "Strike and net sounds",
+  "star": false
+ },
+ {
+  "name": "Zwip",
+  "note": "ball zipping past keeper",
+  "group": "Strike and net sounds",
+  "star": false
+ },
+ {
+  "name": "Fwump",
+  "note": "ball hitting the netting",
+  "group": "Strike and net sounds",
+  "star": false
+ },
+ {
+  "name": "Thwump",
+  "note": "heavy net bulge sound",
+  "group": "Strike and net sounds",
+  "star": false
+ },
+ {
+  "name": "Splonk",
+  "note": "splash of ball into net",
+  "group": "Strike and net sounds",
+  "star": false
+ },
+ {
+  "name": "Kerswish",
+  "note": "kerplunk sound plus swish",
+  "group": "Strike and net sounds",
+  "star": false
+ },
+ {
+  "name": "Kernet",
+  "note": "kerplunk sound plus net",
+  "group": "Strike and net sounds",
+  "star": false
+ },
+ {
+  "name": "Ka-Goal",
+  "note": "ka-boom with a goal",
+  "group": "Strike and net sounds",
+  "star": false
+ },
+ {
+  "name": "Ka-Quiz",
+  "note": "ka-boom with a quiz",
+  "group": "Strike and net sounds",
+  "star": false
+ },
+ {
+  "name": "Thwock",
+  "note": "clean volley sound",
+  "group": "Strike and net sounds",
+  "star": false
+ },
+ {
+  "name": "Clonko",
+  "note": "clank off the woodwork",
+  "group": "Strike and net sounds",
+  "star": false
+ },
+ {
+  "name": "Tonko",
+  "note": "tonk of a header",
+  "group": "Strike and net sounds",
+  "star": false
+ },
+ {
+  "name": "Bloop",
+  "note": "soft lob drop",
+  "group": "Strike and net sounds",
+  "star": false
+ },
+ {
+  "name": "Bloopa",
+  "note": "soft lob, bouncy suffix",
+  "group": "Strike and net sounds",
+  "star": false
+ },
+ {
+  "name": "Swooza",
+  "note": "swoosh of net plus -a",
+  "group": "Strike and net sounds",
+  "star": false
+ },
+ {
+  "name": "Wooshka",
+  "note": "whoosh with a playful tail",
+  "group": "Strike and net sounds",
+  "star": false
+ },
+ {
+  "name": "Rattlenet",
+  "note": "net rattling after strike",
+  "group": "Strike and net sounds",
+  "star": false
+ },
+ {
+  "name": "Thuddle",
+  "note": "thud plus puddle bounce",
+  "group": "Strike and net sounds",
+  "star": false
+ },
+ {
+  "name": "Pocka",
+  "note": "pock of ball on boot",
+  "group": "Strike and net sounds",
+  "star": false
+ },
+ {
+  "name": "Pockety",
+  "note": "pocket-sized strike sound",
+  "group": "Strike and net sounds",
+  "star": false
+ },
+ {
+  "name": "Bink",
+  "note": "tiny tap-in sound",
+  "group": "Strike and net sounds",
+  "star": false
+ },
+ {
+  "name": "Binko",
+  "note": "tap-in sound, -o suffix",
+  "group": "Strike and net sounds",
+  "star": false
+ },
+ {
+  "name": "Thwacko",
+  "note": "thwack with an -o",
+  "group": "Strike and net sounds",
+  "star": false
+ },
+ {
+  "name": "Zingball",
+  "note": "ball zinging into top corner",
+  "group": "Strike and net sounds",
+  "star": false
+ },
+ {
+  "name": "Pang",
+  "note": "ball off the crossbar",
+  "group": "Strike and net sounds",
+  "star": false
+ },
+ {
+  "name": "Ponk",
+  "note": "header thud",
+  "group": "Strike and net sounds",
+  "star": false
+ },
+ {
+  "name": "Ponko",
+  "note": "header thud plus -o",
+  "group": "Strike and net sounds",
+  "star": false
+ },
+ {
+  "name": "Oi Oi",
+  "note": "terrace call and answer",
+  "group": "Terrace chants",
+  "star": false
+ },
+ {
+  "name": "Ooh Ahh",
+  "note": "crowd gasp then cheer",
+  "group": "Terrace chants",
+  "star": false
+ },
+ {
+  "name": "Dale Dale",
+  "note": "Spanish terrace chant",
+  "group": "Terrace chants",
+  "star": false
+ },
+ {
+  "name": "Hup Hup",
+  "note": "Dutch-style cheer",
+  "group": "Terrace chants",
+  "star": false
+ },
+ {
+  "name": "Allez Oop",
+  "note": "allez plus alley-oop",
+  "group": "Terrace chants",
+  "star": false
+ },
+ {
+  "name": "Lalagol",
+  "note": "la-la chant plus gol",
+  "group": "Terrace chants",
+  "star": false
+ },
+ {
+  "name": "Nanagoal",
+  "note": "na-na chant plus goal",
+  "group": "Terrace chants",
+  "star": false
+ },
+ {
+  "name": "Ayogol",
+  "note": "ayo shout plus gol",
+  "group": "Terrace chants",
+  "star": false
+ },
+ {
+  "name": "Woah Oh",
+  "note": "stadium sing-along hook",
+  "group": "Terrace chants",
+  "star": false
+ },
+ {
+  "name": "Clapclap",
+  "note": "rhythmic terrace clapping",
+  "group": "Terrace chants",
+  "star": false
+ },
+ {
+  "name": "Huzzagol",
+  "note": "huzzah plus gol",
+  "group": "Terrace chants",
+  "star": false
+ },
+ {
+  "name": "Vivagol",
+  "note": "viva plus gol",
+  "group": "Terrace chants",
+  "star": false
+ },
+ {
+  "name": "Chanto",
+  "note": "chant with an -o",
+  "group": "Terrace chants",
+  "star": false
+ },
+ {
+  "name": "Chantzy",
+  "note": "chant with a -zy",
+  "group": "Terrace chants",
+  "star": false
+ },
+ {
+  "name": "Kopkop",
+  "note": "the Kop end, doubled",
+  "group": "Terrace chants",
+  "star": false
+ },
+ {
+  "name": "Stompa",
+  "note": "stomping stand rhythm",
+  "group": "Terrace chants",
+  "star": false
+ },
+ {
+  "name": "Hollerball",
+  "note": "holler from the stands",
+  "group": "Terrace chants",
+  "star": false
+ },
+ {
+  "name": "Singalong Gol",
+  "note": "stands singing a goal",
+  "group": "Terrace chants",
+  "star": false
+ },
+ {
+  "name": "Hey Gol",
+  "note": "hey chant plus gol",
+  "group": "Terrace chants",
+  "star": false
+ },
+ {
+  "name": "Ohayo Gol",
+  "note": "oh-ay-oh chant plus gol",
+  "group": "Terrace chants",
+  "star": false
+ },
+ {
+  "name": "Ayaya",
+  "note": "crowd wail",
+  "group": "Terrace chants",
+  "star": false
+ },
+ {
+  "name": "Terracita",
+  "note": "little terrace",
+  "group": "Terrace chants",
+  "star": false
+ },
+ {
+  "name": "Boomclap",
+  "note": "drum and clap rhythm",
+  "group": "Terrace chants",
+  "star": false
+ },
+ {
+  "name": "Drumgol",
+  "note": "stadium drum plus gol",
+  "group": "Terrace chants",
+  "star": false
+ },
+ {
+  "name": "Ultraz",
+  "note": "ultras with a buzzing z",
+  "group": "Terrace chants",
+  "star": false
+ },
+ {
+  "name": "Bouncy Bounce",
+  "note": "stands bouncing in unison",
+  "group": "Terrace chants",
+  "star": false
+ },
+ {
+  "name": "Wavey",
+  "note": "the stadium wave",
+  "group": "Terrace chants",
+  "star": false
+ },
+ {
+  "name": "Mexiwave",
+  "note": "stadium wave nickname",
+  "group": "Terrace chants",
+  "star": false
+ },
+ {
+  "name": "Yallagol",
+  "note": "yalla, let’s go, plus gol",
+  "group": "Terrace chants",
+  "star": false
+ },
+ {
+  "name": "Vamogol",
+  "note": "vamos plus gol",
+  "group": "Terrace chants",
+  "star": false
+ },
+ {
+  "name": "Allezgo",
+  "note": "allez plus go",
+  "group": "Terrace chants",
+  "star": false
+ },
+ {
+  "name": "Ooh-Gol",
+  "note": "crowd ooh plus gol",
+  "group": "Terrace chants",
+  "star": false
+ },
+ {
+  "name": "Hoo-Ha Ball",
+  "note": "crowd hoo-ha plus ball",
+  "group": "Terrace chants",
+  "star": false
+ },
+ {
+  "name": "Roarzy",
+  "note": "crowd roar, -zy suffix",
+  "group": "Terrace chants",
+  "star": false
+ },
+ {
+  "name": "Clapzo",
+  "note": "clap with an -zo",
+  "group": "Terrace chants",
+  "star": false
+ },
+ {
+  "name": "Goool",
+  "note": "stretched commentator goal call",
+  "group": "Commentator shouts",
+  "star": false
+ },
+ {
+  "name": "Gola",
+  "note": "goal call, Italian flavor",
+  "group": "Commentator shouts",
+  "star": false
+ },
+ {
+  "name": "Getinn",
+  "note": "get in! from the booth",
+  "group": "Commentator shouts",
+  "star": false
+ },
+ {
+  "name": "Whatagol",
+  "note": "what a goal, run together",
+  "group": "Commentator shouts",
+  "star": false
+ },
+ {
+  "name": "Ohmigol",
+  "note": "oh my gol",
+  "group": "Commentator shouts",
+  "star": false
+ },
+ {
+  "name": "Wowgol",
+  "note": "wow plus gol",
+  "group": "Commentator shouts",
+  "star": false
+ },
+ {
+  "name": "Boomgol",
+  "note": "boom plus gol",
+  "group": "Commentator shouts",
+  "star": false
+ },
+ {
+  "name": "Scorcha",
+  "note": "what a scorcher",
+  "group": "Commentator shouts",
+  "star": false
+ },
+ {
+  "name": "Scorchio",
+  "note": "scorcher with Italian flair",
+  "group": "Commentator shouts",
+  "star": false
+ },
+ {
+  "name": "Rocketo",
+  "note": "rocket shot, -o suffix",
+  "group": "Commentator shouts",
+  "star": false
+ },
+ {
+  "name": "Whammo",
+  "note": "wham, it’s in",
+  "group": "Commentator shouts",
+  "star": false
+ },
+ {
+  "name": "Zowie Gol",
+  "note": "zowie plus gol",
+  "group": "Commentator shouts",
+  "star": false
+ },
+ {
+  "name": "Unbelievo",
+  "note": "unbelievable, clipped",
+  "group": "Commentator shouts",
+  "star": false
+ },
+ {
+  "name": "Wondergol",
+  "note": "wonder goal",
+  "group": "Commentator shouts",
+  "star": false
+ },
+ {
+  "name": "Bangero",
+  "note": "banger shot, Spanish twist",
+  "group": "Commentator shouts",
+  "star": false
+ },
+ {
+  "name": "Worldo",
+  "note": "world-class strike, clipped",
+  "group": "Commentator shouts",
+  "star": false
+ },
+ {
+  "name": "Topbinz",
+  "note": "top bins, buzzed",
+  "group": "Commentator shouts",
+  "star": false
+ },
+ {
+  "name": "Sizzla",
+  "note": "sizzling strike",
+  "group": "Commentator shouts",
+  "star": false
+ },
+ {
+  "name": "Rippo",
+  "note": "ripped into the net",
+  "group": "Commentator shouts",
+  "star": false
+ },
+ {
+  "name": "Holagol",
+  "note": "hola plus gol",
+  "group": "Commentator shouts",
+  "star": false
+ },
+ {
+  "name": "Andddd",
+  "note": "commentator’s rising and",
+  "group": "Commentator shouts",
+  "star": false
+ },
+ {
+  "name": "Ohhhh Gol",
+  "note": "commentator gasp plus gol",
+  "group": "Commentator shouts",
+  "star": false
+ },
+ {
+  "name": "Oofa",
+  "note": "oof, what a hit",
+  "group": "Commentator shouts",
+  "star": false
+ },
+ {
+  "name": "Kerpowza",
+  "note": "kerpow plus wowza",
+  "group": "Commentator shouts",
+  "star": false
+ },
+ {
+  "name": "Yesgol",
+  "note": "yes plus gol",
+  "group": "Commentator shouts",
+  "star": false
+ },
+ {
+  "name": "Whatta",
+  "note": "what a … shout",
+  "group": "Commentator shouts",
+  "star": false
+ },
+ {
+  "name": "Thundergol",
+  "note": "thunderbolt goal call",
+  "group": "Commentator shouts",
+  "star": false
+ },
+ {
+  "name": "Screamergol",
+  "note": "screamer goal call",
+  "group": "Commentator shouts",
+  "star": false
+ },
+ {
+  "name": "Rasca",
+  "note": "raking strike, short",
+  "group": "Commentator shouts",
+  "star": false
+ },
+ {
+  "name": "Goalarama",
+  "note": "goal plus -arama",
+  "group": "Commentator shouts",
+  "star": false
+ },
+ {
+  "name": "Quizarama",
+  "note": "quiz plus -arama",
+  "group": "Commentator shouts",
+  "star": false
+ },
+ {
+  "name": "Gol Gol Gol",
+  "note": "triple goal call",
+  "group": "Commentator shouts",
+  "star": false
+ },
+ {
+  "name": "Goltime",
+  "note": "goal time shout",
+  "group": "Commentator shouts",
+  "star": false
+ },
+ {
+  "name": "Itsin",
+  "note": "it’s in!, one word",
+  "group": "Commentator shouts",
+  "star": false
+ },
+ {
+  "name": "Ballyhoal",
+  "note": "ballyhoo plus goal",
+  "group": "Commentator shouts",
+  "star": false
+ },
+ {
+  "name": "Booyagol",
+  "note": "booyah plus gol",
+  "group": "Commentator shouts",
+  "star": false
+ },
+ {
+  "name": "Goalix",
+  "note": "goal plus -ix",
+  "group": "Playful suffixes",
+  "star": true
+ },
+ {
+  "name": "Kickix",
+  "note": "kick plus -ix",
+  "group": "Playful suffixes",
+  "star": false
+ },
+ {
+  "name": "Quizix",
+  "note": "quiz plus -ix",
+  "group": "Playful suffixes",
+  "star": false
+ },
+ {
+  "name": "Brainix",
+  "note": "brain plus -ix",
+  "group": "Playful suffixes",
+  "star": false
+ },
+ {
+  "name": "Scorix",
+  "note": "score plus -ix",
+  "group": "Playful suffixes",
+  "star": false
+ },
+ {
+  "name": "Goaloo",
+  "note": "goal plus -oo",
+  "group": "Playful suffixes",
+  "star": true
+ },
+ {
+  "name": "Kickoo",
+  "note": "kick plus -oo",
+  "group": "Playful suffixes",
+  "star": false
+ },
+ {
+  "name": "Quizoo",
+  "note": "quiz plus -oo",
+  "group": "Playful suffixes",
+  "star": false
+ },
+ {
+  "name": "Scoroo",
+  "note": "score plus -oo",
+  "group": "Playful suffixes",
+  "star": false
+ },
+ {
+  "name": "Netoo",
+  "note": "net plus -oo",
+  "group": "Playful suffixes",
+  "star": false
+ },
+ {
+  "name": "Goalzy",
+  "note": "goal plus -zy",
+  "group": "Playful suffixes",
+  "star": false
+ },
+ {
+  "name": "Kickzy",
+  "note": "kick plus -zy",
+  "group": "Playful suffixes",
+  "star": false
+ },
+ {
+  "name": "Quizzy",
+  "note": "quiz plus -zy",
+  "group": "Playful suffixes",
+  "star": false
+ },
+ {
+  "name": "Netzy",
+  "note": "net plus -zy",
+  "group": "Playful suffixes",
+  "star": false
+ },
+ {
+  "name": "Pitchzy",
+  "note": "pitch plus -zy",
+  "group": "Playful suffixes",
+  "star": false
+ },
+ {
+  "name": "Kicko",
+  "note": "kick plus -o",
+  "group": "Playful suffixes",
+  "star": false
+ },
+ {
+  "name": "Goalo",
+  "note": "goal plus -o",
+  "group": "Playful suffixes",
+  "star": false
+ },
+ {
+  "name": "Netzo",
+  "note": "net plus -zo",
+  "group": "Playful suffixes",
+  "star": true
+ },
+ {
+  "name": "Quizzo",
+  "note": "quiz plus -o, pub trivia",
+  "group": "Playful suffixes",
+  "star": false
+ },
+ {
+  "name": "Brainzo",
+  "note": "brain plus -zo",
+  "group": "Playful suffixes",
+  "star": false
+ },
+ {
+  "name": "Pitcho",
+  "note": "pitch plus -o",
+  "group": "Playful suffixes",
+  "star": false
+ },
+ {
+  "name": "Scoro",
+  "note": "score plus -o",
+  "group": "Playful suffixes",
+  "star": false
+ },
+ {
+  "name": "Kicka",
+  "note": "kick plus -a",
+  "group": "Playful suffixes",
+  "star": false
+ },
+ {
+  "name": "Goala",
+  "note": "goal plus -a",
+  "group": "Playful suffixes",
+  "star": false
+ },
+ {
+  "name": "Quiza",
+  "note": "quiz plus -a",
+  "group": "Playful suffixes",
+  "star": false
+ },
+ {
+  "name": "Scora",
+  "note": "score plus -a",
+  "group": "Playful suffixes",
+  "star": false
+ },
+ {
+  "name": "Brainza",
+  "note": "brain plus -za",
+  "group": "Playful suffixes",
+  "star": false
+ },
+ {
+  "name": "Goaly",
+  "note": "goal plus -y",
+  "group": "Playful suffixes",
+  "star": false
+ },
+ {
+  "name": "Kicky",
+  "note": "kick plus -y",
+  "group": "Playful suffixes",
+  "star": false
+ },
+ {
+  "name": "Netty",
+  "note": "net plus -y",
+  "group": "Playful suffixes",
+  "star": false
+ },
+ {
+  "name": "Goalio",
+  "note": "goal plus -io",
+  "group": "Playful suffixes",
+  "star": true
+ },
+ {
+  "name": "Kickio",
+  "note": "kick plus -io",
+  "group": "Playful suffixes",
+  "star": false
+ },
+ {
+  "name": "Quizio",
+  "note": "quiz plus -io",
+  "group": "Playful suffixes",
+  "star": false
+ },
+ {
+  "name": "Smartzo",
+  "note": "smart plus -zo",
+  "group": "Playful suffixes",
+  "star": false
+ },
+ {
+  "name": "Clevo",
+  "note": "clever, clipped plus -o",
+  "group": "Playful suffixes",
+  "star": false
+ },
+ {
+  "name": "Brainaroo",
+  "note": "brain plus -aroo",
+  "group": "Playful suffixes",
+  "star": false
+ },
+ {
+  "name": "Reffo",
+  "note": "the ref, clipped",
+  "group": "Clipped nicknames",
+  "star": false
+ },
+ {
+  "name": "Gaffa",
+  "note": "gaffer, the manager, clipped",
+  "group": "Clipped nicknames",
+  "star": false
+ },
+ {
+  "name": "Keeps",
+  "note": "keeper, clipped Aussie-style",
+  "group": "Clipped nicknames",
+  "star": false
+ },
+ {
+  "name": "Midi",
+  "note": "midfielder, clipped",
+  "group": "Clipped nicknames",
+  "star": false
+ },
+ {
+  "name": "Socca",
+  "note": "soccer, clipped",
+  "group": "Clipped nicknames",
+  "star": false
+ },
+ {
+  "name": "Sokka",
+  "note": "soccer, clipped and spiky",
+  "group": "Clipped nicknames",
+  "star": false
+ },
+ {
+  "name": "Soccy",
+  "note": "soccer, clipped plus -y",
+  "group": "Clipped nicknames",
+  "star": false
+ },
+ {
+  "name": "Futi",
+  "note": "futbol, clipped",
+  "group": "Clipped nicknames",
+  "star": false
+ },
+ {
+  "name": "Futo",
+  "note": "futbol, clipped plus -o",
+  "group": "Clipped nicknames",
+  "star": false
+ },
+ {
+  "name": "Futbo",
+  "note": "futbol, short form",
+  "group": "Clipped nicknames",
+  "star": false
+ },
+ {
+  "name": "Fooch",
+  "note": "football, clipped mash",
+  "group": "Clipped nicknames",
+  "star": false
+ },
+ {
+  "name": "Hatty",
+  "note": "hat trick, clipped",
+  "group": "Clipped nicknames",
+  "star": false
+ },
+ {
+  "name": "Bracey",
+  "note": "brace, two goals, clipped",
+  "group": "Clipped nicknames",
+  "star": false
+ },
+ {
+  "name": "Corna",
+  "note": "corner kick, clipped",
+  "group": "Clipped nicknames",
+  "star": false
+ },
+ {
+  "name": "Volly",
+  "note": "volley, clipped",
+  "group": "Clipped nicknames",
+  "star": false
+ },
+ {
+  "name": "Chippa",
+  "note": "chip shot, clipped",
+  "group": "Clipped nicknames",
+  "star": false
+ },
+ {
+  "name": "Rabbo",
+  "note": "rabona, clipped",
+  "group": "Clipped nicknames",
+  "star": false
+ },
+ {
+  "name": "Bicy",
+  "note": "bicycle kick, clipped",
+  "group": "Clipped nicknames",
+  "star": false
+ },
+ {
+  "name": "Flicka",
+  "note": "flick-on, clipped",
+  "group": "Clipped nicknames",
+  "star": false
+ },
+ {
+  "name": "Dribbs",
+  "note": "dribble, clipped",
+  "group": "Clipped nicknames",
+  "star": false
+ },
+ {
+  "name": "Tekky",
+  "note": "technical player, clipped",
+  "group": "Clipped nicknames",
+  "star": false
+ },
+ {
+  "name": "Shinz",
+  "note": "shin pads, clipped",
+  "group": "Clipped nicknames",
+  "star": false
+ },
+ {
+  "name": "Wingo",
+  "note": "winger, clipped plus -o",
+  "group": "Clipped nicknames",
+  "star": false
+ },
+ {
+  "name": "Strika",
+  "note": "striker, clipped",
+  "group": "Clipped nicknames",
+  "star": false
+ },
+ {
+  "name": "Captn",
+  "note": "captain, clipped",
+  "group": "Clipped nicknames",
+  "star": false
+ },
+ {
+  "name": "Fullie",
+  "note": "fullback, clipped",
+  "group": "Clipped nicknames",
+  "star": false
+ },
+ {
+  "name": "Stoppo",
+  "note": "stoppage time, clipped",
+  "group": "Clipped nicknames",
+  "star": false
+ },
+ {
+  "name": "Offy",
+  "note": "offside, clipped",
+  "group": "Clipped nicknames",
+  "star": false
+ },
+ {
+  "name": "Penno",
+  "note": "penalty, clipped",
+  "group": "Clipped nicknames",
+  "star": false
+ },
+ {
+  "name": "Kicko Off",
+  "note": "kickoff, clipped play",
+  "group": "Clipped nicknames",
+  "star": false
+ },
+ {
+  "name": "Headsy",
+  "note": "header, clipped",
+  "group": "Clipped nicknames",
+  "star": false
+ },
+ {
+  "name": "Crossy",
+  "note": "cross, clipped plus -y",
+  "group": "Clipped nicknames",
+  "star": false
+ },
+ {
+  "name": "Assisto",
+  "note": "assist, clipped plus -o",
+  "group": "Clipped nicknames",
+  "star": false
+ },
+ {
+  "name": "Cleato",
+  "note": "cleats, clipped plus -o",
+  "group": "Clipped nicknames",
+  "star": false
+ },
+ {
+  "name": "Nettie",
+  "note": "net, nickname style",
+  "group": "Clipped nicknames",
+  "star": false
+ },
+ {
+  "name": "Postie",
+  "note": "the post, nickname style",
+  "group": "Clipped nicknames",
+  "star": false
+ },
+ {
+  "name": "Gooza",
+  "note": "goal plus whooshing zoo sound",
+  "group": "Worldwide fun words",
+  "star": true
+ },
+ {
+  "name": "Golo",
+  "note": "Portuguese goal, playful",
+  "group": "Worldwide fun words",
+  "star": false
+ },
+ {
+  "name": "Golinho",
+  "note": "little goal, Portuguese diminutive",
+  "group": "Worldwide fun words",
+  "star": false
+ },
+ {
+  "name": "Goolu",
+  "note": "goal with a vowel bounce",
+  "group": "Worldwide fun words",
+  "star": false
+ },
+ {
+  "name": "Gollo",
+  "note": "goal, Italian-sounding",
+  "group": "Worldwide fun words",
+  "star": false
+ },
+ {
+  "name": "Kalcio",
+  "note": "calcio, Italian soccer, respelled",
+  "group": "Worldwide fun words",
+  "star": false
+ },
+ {
+  "name": "Pelotita",
+  "note": "little ball, Spanish",
+  "group": "Worldwide fun words",
+  "star": false
+ },
+ {
+  "name": "Bolazo",
+  "note": "bola plus -azo",
+  "group": "Worldwide fun words",
+  "star": false
+ },
+ {
+  "name": "Golazito",
+  "note": "tiny golazo, coined diminutive",
+  "group": "Worldwide fun words",
+  "star": false
+ },
+ {
+  "name": "Kikaboo",
+  "note": "kick plus peekaboo",
+  "group": "Worldwide fun words",
+  "star": false
+ },
+ {
+  "name": "Kiboo",
+  "note": "kick plus boo, short",
+  "group": "Worldwide fun words",
+  "star": false
+ },
+ {
+  "name": "Kiko",
+  "note": "kick, bouncy two-syllable",
+  "group": "Worldwide fun words",
+  "star": false
+ },
+ {
+  "name": "Tiko",
+  "note": "tiki-taka, clipped",
+  "group": "Worldwide fun words",
+  "star": false
+ },
+ {
+  "name": "Futzi",
+  "note": "futbol plus -zi",
+  "group": "Worldwide fun words",
+  "star": false
+ },
+ {
+  "name": "Fuzzo",
+  "note": "futbol buzzed with -zo",
+  "group": "Worldwide fun words",
+  "star": false
+ },
+ {
+  "name": "Soka",
+  "note": "soccer, Swahili-style spelling",
+  "group": "Worldwide fun words",
+  "star": false
+ },
+ {
+  "name": "Bolito",
+  "note": "little ball, Spanish-ish",
+  "group": "Worldwide fun words",
+  "star": false
+ },
+ {
+  "name": "Golemo",
+  "note": "gol plus memo",
+  "group": "Worldwide fun words",
+  "star": false
+ },
+ {
+  "name": "Quizgol",
+  "note": "quiz plus gol",
+  "group": "Worldwide fun words",
+  "star": true
+ },
+ {
+  "name": "Golquiz",
+  "note": "gol plus quiz",
+  "group": "Worldwide fun words",
+  "star": false
+ },
+ {
+  "name": "Kwizball",
+  "note": "quiz plus ball, respelled",
+  "group": "Worldwide fun words",
+  "star": false
+ },
+ {
+  "name": "Kwizzo",
+  "note": "quiz respelled with -o",
+  "group": "Worldwide fun words",
+  "star": false
+ },
+ {
+  "name": "Kwik Kick",
+  "note": "quick kick, respelled",
+  "group": "Worldwide fun words",
+  "star": false
+ },
+ {
+  "name": "Golazzle",
+  "note": "gol plus razzle-dazzle",
+  "group": "Worldwide fun words",
+  "star": false
+ },
+ {
+  "name": "Ballaballa",
+  "note": "German for crazy, ball doubled",
+  "group": "Worldwide fun words",
+  "star": false
+ },
+ {
+  "name": "Gooba",
+  "note": "goal plus a bubbly ending",
+  "group": "Worldwide fun words",
+  "star": false
+ },
+ {
+  "name": "Zoozoo Gol",
+  "note": "buzzy doubled sound plus gol",
+  "group": "Worldwide fun words",
+  "star": false
+ },
+ {
+  "name": "Bobola",
+  "note": "bola with a bounce",
+  "group": "Worldwide fun words",
+  "star": false
+ },
+ {
+  "name": "Peloo",
+  "note": "pelota clipped plus -oo",
+  "group": "Worldwide fun words",
+  "star": false
+ },
+ {
+  "name": "Kickazoo",
+  "note": "kick plus kazoo buzz",
+  "group": "Worldwide fun words",
+  "star": false
+ },
+ {
+  "name": "Gozzo",
+  "note": "goal buzzed with -zzo",
+  "group": "Worldwide fun words",
+  "star": false
+ },
+ {
+  "name": "Zuko Gol",
+  "note": "zing plus kick plus gol",
+  "group": "Worldwide fun words",
+  "star": false
+ },
+ {
+  "name": "Tatagol",
+  "note": "drum rhythm plus gol",
+  "group": "Worldwide fun words",
+  "star": false
+ },
+ {
+  "name": "Bolabrain",
+  "note": "ball plus brain",
+  "group": "Worldwide fun words",
+  "star": false
+ },
+ {
+  "name": "Golbo",
+  "note": "gol plus bo, bouncy",
+  "group": "Worldwide fun words",
+  "star": false
+ },
+ {
+  "name": "Kickamaroo",
+  "note": "kick plus kangaroo hop",
+  "group": "Worldwide fun words",
+  "star": false
+ }
+]

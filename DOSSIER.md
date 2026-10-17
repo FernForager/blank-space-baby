@@ -99,7 +99,7 @@ This repo is **public**. Never commit personal details: no last names, addresses
 
 ## 8. Things tried and dropped (don't re-propose)
 
-- **Names:** Decode It (an early working title), Wait Actually, Slango, Slangle, Slang Wrangler, Slanguage Arts. Morg named it **Blank Space Baby**, then renamed it **Triviela** on Oct 15, 2026 (trivia + trivela): the Taylor Swift pun leaned too hard on one category out of ten. Also tried and passed over: Triviella (the sea snail genus, two L's) and Triviidae (its family, hard to say), plus Ball Knowledge, Five-a-Side, Mind the Gap, Nutmeg, Fill the Gap, Patchwork, Pass It On and Blank Check.
+- **Names:** Decode It (an early working title), Wait Actually, Slango, Slangle, Slang Wrangler, Slanguage Arts. Morg named it **Blank Space Baby**, then renamed it **Triviela** on Oct 15, 2026 (trivia + trivela): the Taylor Swift pun leaned too hard on one category out of ten. Also tried and passed over: Triviella (the sea snail genus, two L's) and Triviidae (its family, hard to say), plus Ball Knowledge, Five-a-Side, Mind the Gap, Nutmeg, Fill the Gap, Patchwork, Pass It On and Blank Check. The Oct 17, 2026 search (2,329 ideas, two panel rounds, nothing picked yet) is in `research/naming-2026-10-17.md`, with its own list of names he turned down.
 - **Look:**
   - A full Apple-style redesign. Morg's reaction: "I liked it before."
   - A gold star on wins.

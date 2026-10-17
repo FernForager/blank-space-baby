@@ -1,0 +1,2420 @@
+[
+ {
+  "name": "Golden Goal",
+  "note": "extra-time sudden death winner",
+  "group": "Soccer talk",
+  "star": true
+ },
+ {
+  "name": "Goal Hanger",
+  "note": "striker who loiters by goal",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Goalmouth",
+  "note": "the area right before goal",
+  "group": "Soccer talk",
+  "star": true
+ },
+ {
+  "name": "Goal Line",
+  "note": "the line the ball crosses",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Goal Rush",
+  "note": "a sudden flurry of goals",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Goal Difference",
+  "note": "the league table tiebreaker",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Goalfest",
+  "note": "a high-scoring match",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Goal Machine",
+  "note": "nickname for a prolific scorer",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Goal Getter",
+  "note": "classic praise for a striker",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Goals Galore",
+  "note": "commentator line for lots",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Goal Kick",
+  "note": "restart from the goal area",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Goalpost",
+  "note": "the upright of the frame",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Goal Frame",
+  "note": "posts plus crossbar",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Goal Net",
+  "note": "where every goal ends up",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Goalie",
+  "note": "the keeper, kid style",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Goalie Goalie",
+  "note": "playground shout for keeper",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Goal Area",
+  "note": "official name of six-yard box",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Goalbound",
+  "note": "shot heading for goal",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Goalward",
+  "note": "always moving toward goal",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Goal Feast",
+  "note": "a match full of goals",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Goal Drought",
+  "note": "long spell without scoring",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Goal Poacher",
+  "note": "striker who snaps up chances",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Goal Sniffer",
+  "note": "nose for goal",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Goal Scorer",
+  "note": "the one who finishes",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Goal Tally",
+  "note": "your running count",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Goal Lamp",
+  "note": "the lights on the screen",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Goal Light",
+  "note": "lights up when you score",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Goal Horn",
+  "note": "stadium blast after a goal",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Goal Siren",
+  "note": "the alarm of a goal",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Goal Slide",
+  "note": "the knee-slide celebration",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Goal Dance",
+  "note": "corner-flag celebration moves",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Goal Jig",
+  "note": "a little scoring dance",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Goal Huddle",
+  "note": "team pile after scoring",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Goal Roar",
+  "note": "the crowd's noise",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Goooal",
+  "note": "the commentator's long scream",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Gooooooal",
+  "note": "even longer scream",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Goal of the Day",
+  "note": "twist on goal of the month",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Goal Replay",
+  "note": "watch it again",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Goal Line Check",
+  "note": "the replay review moment",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Open Goal",
+  "note": "empty net, no excuses",
+  "group": "Soccer talk",
+  "star": true
+ },
+ {
+  "name": "Own Goal",
+  "note": "scoring for the other side",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Away Goals",
+  "note": "the old tiebreak rule",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Late Goal",
+  "note": "scored in the dying minutes",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Last-Gasp Goal",
+  "note": "winner at the very end",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Stoppage Time Goal",
+  "note": "scored after the ninety",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Goalside",
+  "note": "defender between attacker and goal",
+  "group": "Soccer talk",
+  "star": true
+ },
+ {
+  "name": "Goalmouth Scramble",
+  "note": "chaos in front of goal",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Daily Goal",
+  "note": "one puzzle, one goal",
+  "group": "Soccer talk",
+  "star": true
+ },
+ {
+  "name": "Goal a Day",
+  "note": "a goal every day",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Goal of the Week",
+  "note": "highlight reel pun",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Goal Glory",
+  "note": "the joy of scoring",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Goal Frenzy",
+  "note": "goals everywhere",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Goal Spree",
+  "note": "scoring run",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Goal Hunter",
+  "note": "always chasing goals",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Goal Thief",
+  "note": "steals goals from defenders",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Goal Bandit",
+  "note": "cheeky scorer",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Bag a Goal",
+  "note": "British for scoring",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Goal Haul",
+  "note": "a big pile of goals",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Goal Grab",
+  "note": "snatch one quick",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Goal Contribution",
+  "note": "stat for goals and assists",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Goal Average",
+  "note": "the older tiebreaker",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Goal Call",
+  "note": "the commentator's moment",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Goal Shout",
+  "note": "yelling it out",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "What a Goal",
+  "note": "every commentator ever",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "And It's a Goal",
+  "note": "commentator's big build-up",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Goal Whistle",
+  "note": "the ref points to center",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Goal Woodwork",
+  "note": "hit the post or bar",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Goal Stanchion",
+  "note": "the back support of the net",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Back of the Goal",
+  "note": "where the ball should end",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Goal Pile-On",
+  "note": "everyone jumps on the scorer",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Goal Salute",
+  "note": "celebration pose",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Goal Hunger",
+  "note": "that need to score",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Goal Threat",
+  "note": "dangerous in front of goal",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Goal Chance",
+  "note": "a shot at scoring",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Goal Kick Off",
+  "note": "kickoff after a goal",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "Goalkeeper's Gloves",
+  "note": "the keeper's best friend",
+  "group": "Soccer talk",
+  "star": false
+ },
+ {
+  "name": "The Goalfather",
+  "note": "from The Godfather",
+  "group": "Films and TV",
+  "star": true
+ },
+ {
+  "name": "Goalbusters",
+  "note": "from Ghostbusters",
+  "group": "Films and TV",
+  "star": false
+ },
+ {
+  "name": "Back to the Goal",
+  "note": "from Back to the Future",
+  "group": "Films and TV",
+  "star": false
+ },
+ {
+  "name": "Goal Wars",
+  "note": "from Star Wars",
+  "group": "Films and TV",
+  "star": false
+ },
+ {
+  "name": "Goaltergeist",
+  "note": "from Poltergeist",
+  "group": "Films and TV",
+  "star": false
+ },
+ {
+  "name": "Goal Story",
+  "note": "from Toy Story",
+  "group": "Films and TV",
+  "star": false
+ },
+ {
+  "name": "Finding Goal",
+  "note": "from Finding Nemo",
+  "group": "Films and TV",
+  "star": false
+ },
+ {
+  "name": "The Goal King",
+  "note": "from The Lion King",
+  "group": "Films and TV",
+  "star": false
+ },
+ {
+  "name": "Goalzilla",
+  "note": "from Godzilla",
+  "group": "Films and TV",
+  "star": false
+ },
+ {
+  "name": "Jurassic Goal",
+  "note": "from Jurassic Park",
+  "group": "Films and TV",
+  "star": false
+ },
+ {
+  "name": "Goal Trek",
+  "note": "from Star Trek",
+  "group": "Films and TV",
+  "star": false
+ },
+ {
+  "name": "Raiders of the Lost Goal",
+  "note": "from Raiders of the Lost Ark",
+  "group": "Films and TV",
+  "star": false
+ },
+ {
+  "name": "Lord of the Goals",
+  "note": "from Lord of the Rings",
+  "group": "Films and TV",
+  "star": false
+ },
+ {
+  "name": "The Goal Rush",
+  "note": "from the Chaplin classic",
+  "group": "Films and TV",
+  "star": false
+ },
+ {
+  "name": "Goalfinger",
+  "note": "from the Bond film",
+  "group": "Films and TV",
+  "star": false
+ },
+ {
+  "name": "Goalden Eye",
+  "note": "from the Bond film",
+  "group": "Films and TV",
+  "star": false
+ },
+ {
+  "name": "The Goalden Girls",
+  "note": "from the sitcom",
+  "group": "Films and TV",
+  "star": false
+ },
+ {
+  "name": "Mission Goalpossible",
+  "note": "from Mission: Impossible",
+  "group": "Films and TV",
+  "star": false
+ },
+ {
+  "name": "Goalpocalypse Now",
+  "note": "from Apocalypse Now",
+  "group": "Films and TV",
+  "star": false
+ },
+ {
+  "name": "Goal Runner",
+  "note": "from Blade Runner",
+  "group": "Films and TV",
+  "star": false
+ },
+ {
+  "name": "The Goal Identity",
+  "note": "from The Bourne Identity",
+  "group": "Films and TV",
+  "star": false
+ },
+ {
+  "name": "Goal Hard",
+  "note": "from Die Hard",
+  "group": "Films and TV",
+  "star": false
+ },
+ {
+  "name": "Goalmanji",
+  "note": "from Jumanji",
+  "group": "Films and TV",
+  "star": false
+ },
+ {
+  "name": "Goalzen",
+  "note": "from Frozen",
+  "group": "Films and TV",
+  "star": false
+ },
+ {
+  "name": "The Goal Show",
+  "note": "from The Truman Show",
+  "group": "Films and TV",
+  "star": false
+ },
+ {
+  "name": "Inside Goal",
+  "note": "from Inside Out",
+  "group": "Films and TV",
+  "star": false
+ },
+ {
+  "name": "Goal-E",
+  "note": "from the robot film",
+  "group": "Films and TV",
+  "star": false
+ },
+ {
+  "name": "The Goalden Compass",
+  "note": "from the fantasy novel",
+  "group": "Films and TV",
+  "star": false
+ },
+ {
+  "name": "Charlie and the Goal Factory",
+  "note": "from the Roald Dahl book",
+  "group": "Films and TV",
+  "star": false
+ },
+ {
+  "name": "The Wizard of Goalz",
+  "note": "from The Wizard of Oz",
+  "group": "Films and TV",
+  "star": false
+ },
+ {
+  "name": "Planet of the Goals",
+  "note": "from Planet of the Apes",
+  "group": "Films and TV",
+  "star": false
+ },
+ {
+  "name": "Night at the Goaleum",
+  "note": "from Night at the Museum",
+  "group": "Films and TV",
+  "star": false
+ },
+ {
+  "name": "Goal Alone",
+  "note": "from Home Alone",
+  "group": "Films and TV",
+  "star": false
+ },
+ {
+  "name": "Goalhog Day",
+  "note": "from Groundhog Day, same daily",
+  "group": "Films and TV",
+  "star": true
+ },
+ {
+  "name": "Sesame Goal",
+  "note": "from Sesame Street",
+  "group": "Films and TV",
+  "star": false
+ },
+ {
+  "name": "The Great Goal Off",
+  "note": "from the baking show",
+  "group": "Films and TV",
+  "star": false
+ },
+ {
+  "name": "Goal of Thrones",
+  "note": "from the fantasy series",
+  "group": "Films and TV",
+  "star": false
+ },
+ {
+  "name": "Stranger Goals",
+  "note": "from Stranger Things",
+  "group": "Films and TV",
+  "star": false
+ },
+ {
+  "name": "Goaldilocks",
+  "note": "from the fairy tale",
+  "group": "Films and TV",
+  "star": false
+ },
+ {
+  "name": "Goaldilocks and the Three Goals",
+  "note": "fairy tale meets hat trick",
+  "group": "Films and TV",
+  "star": false
+ },
+ {
+  "name": "Goaliath",
+  "note": "from David and Goliath",
+  "group": "Films and TV",
+  "star": false
+ },
+ {
+  "name": "Moby Goal",
+  "note": "from Moby Dick",
+  "group": "Films and TV",
+  "star": false
+ },
+ {
+  "name": "Goalliver's Travels",
+  "note": "from Gulliver's Travels",
+  "group": "Films and TV",
+  "star": false
+ },
+ {
+  "name": "Goal Island",
+  "note": "from Treasure Island",
+  "group": "Films and TV",
+  "star": false
+ },
+ {
+  "name": "The Goalden Ticket",
+  "note": "from the chocolate factory",
+  "group": "Films and TV",
+  "star": false
+ },
+ {
+  "name": "Goalionaire",
+  "note": "from the quiz show",
+  "group": "Films and TV",
+  "star": false
+ },
+ {
+  "name": "Wheel of Goal",
+  "note": "from Wheel of Fortune",
+  "group": "Films and TV",
+  "star": false
+ },
+ {
+  "name": "Goalpardy",
+  "note": "from the quiz show",
+  "group": "Films and TV",
+  "star": false
+ },
+ {
+  "name": "Goal or No Goal",
+  "note": "from Deal or No Deal",
+  "group": "Films and TV",
+  "star": false
+ },
+ {
+  "name": "The Goal Whisperer",
+  "note": "from The Horse Whisperer",
+  "group": "Films and TV",
+  "star": false
+ },
+ {
+  "name": "Goalcatraz",
+  "note": "from the island prison film",
+  "group": "Films and TV",
+  "star": false
+ },
+ {
+  "name": "The Goalden Snitch Hunt",
+  "note": "from wizard sports",
+  "group": "Films and TV",
+  "star": false
+ },
+ {
+  "name": "Goaltopia",
+  "note": "from Zootopia and utopia",
+  "group": "Films and TV",
+  "star": false
+ },
+ {
+  "name": "The Goal Bachelor",
+  "note": "from dating shows, mild",
+  "group": "Films and TV",
+  "star": false
+ },
+ {
+  "name": "Goal Encounters",
+  "note": "from Close Encounters",
+  "group": "Films and TV",
+  "star": false
+ },
+ {
+  "name": "Goalverine Rising",
+  "note": "from the clawed hero",
+  "group": "Films and TV",
+  "star": false
+ },
+ {
+  "name": "Goal Fu Panda",
+  "note": "from Kung Fu Panda",
+  "group": "Films and TV",
+  "star": false
+ },
+ {
+  "name": "How to Train Your Goal",
+  "note": "from How to Train Your Dragon",
+  "group": "Films and TV",
+  "star": false
+ },
+ {
+  "name": "Goal Nemo",
+  "note": "another fishy pun",
+  "group": "Films and TV",
+  "star": false
+ },
+ {
+  "name": "Goalpel",
+  "note": "from gospel",
+  "group": "Music",
+  "star": false
+ },
+ {
+  "name": "Rhythm and Goals",
+  "note": "from rhythm and blues",
+  "group": "Music",
+  "star": false
+ },
+ {
+  "name": "Rock and Goal",
+  "note": "from rock and roll",
+  "group": "Music",
+  "star": true
+ },
+ {
+  "name": "Goal Train",
+  "note": "from Soul Train",
+  "group": "Music",
+  "star": false
+ },
+ {
+  "name": "Goal Music",
+  "note": "from soul music",
+  "group": "Music",
+  "star": false
+ },
+ {
+  "name": "Heart and Goal",
+  "note": "from Heart and Soul",
+  "group": "Music",
+  "star": false
+ },
+ {
+  "name": "Goalsa",
+  "note": "from salsa",
+  "group": "Music",
+  "star": false
+ },
+ {
+  "name": "Bohemian Goalsody",
+  "note": "from the Queen anthem",
+  "group": "Music",
+  "star": false
+ },
+ {
+  "name": "Goaltown",
+  "note": "from Motown",
+  "group": "Music",
+  "star": false
+ },
+ {
+  "name": "Goal Man",
+  "note": "from Soul Man",
+  "group": "Music",
+  "star": false
+ },
+ {
+  "name": "Goal Hop",
+  "note": "from hip hop",
+  "group": "Music",
+  "star": false
+ },
+ {
+  "name": "Goal Groove",
+  "note": "get into the groove",
+  "group": "Music",
+  "star": false
+ },
+ {
+  "name": "Goal Jam",
+  "note": "a jam session",
+  "group": "Music",
+  "star": false
+ },
+ {
+  "name": "Goal Disco",
+  "note": "dancefloor celebrations",
+  "group": "Music",
+  "star": false
+ },
+ {
+  "name": "Goal Mio",
+  "note": "from O Sole Mio",
+  "group": "Music",
+  "star": false
+ },
+ {
+  "name": "Goaleoke",
+  "note": "karaoke for scorers",
+  "group": "Music",
+  "star": false
+ },
+ {
+  "name": "Goal Anthem",
+  "note": "the stadium song",
+  "group": "Music",
+  "star": false
+ },
+ {
+  "name": "Goal Chorus",
+  "note": "the whole stand sings",
+  "group": "Music",
+  "star": false
+ },
+ {
+  "name": "Goal Choir",
+  "note": "singing from the terraces",
+  "group": "Music",
+  "star": false
+ },
+ {
+  "name": "The Goalpera",
+  "note": "from opera",
+  "group": "Music",
+  "star": false
+ },
+ {
+  "name": "Goal Symphony",
+  "note": "orchestral scoring",
+  "group": "Music",
+  "star": false
+ },
+ {
+  "name": "Goal Diva",
+  "note": "a scorer with flair",
+  "group": "Music",
+  "star": false
+ },
+ {
+  "name": "Goal Remix",
+  "note": "the goal, remixed",
+  "group": "Music",
+  "star": false
+ },
+ {
+  "name": "Goal Mixtape",
+  "note": "your best goals tape",
+  "group": "Music",
+  "star": false
+ },
+ {
+  "name": "Goal Banger",
+  "note": "banger means a great song",
+  "group": "Music",
+  "star": false
+ },
+ {
+  "name": "Goal Funk",
+  "note": "funky finishing",
+  "group": "Music",
+  "star": false
+ },
+ {
+  "name": "Goal Polka",
+  "note": "oom-pah celebrations",
+  "group": "Music",
+  "star": false
+ },
+ {
+  "name": "Goal Yodel",
+  "note": "yodel after scoring",
+  "group": "Music",
+  "star": false
+ },
+ {
+  "name": "Goal Reggae",
+  "note": "island rhythm scoring",
+  "group": "Music",
+  "star": false
+ },
+ {
+  "name": "Goal Lotta Love",
+  "note": "from the rock classic",
+  "group": "Music",
+  "star": false
+ },
+ {
+  "name": "Goal New World",
+  "note": "from the Aladdin song",
+  "group": "Music",
+  "star": false
+ },
+ {
+  "name": "Goal 'Round the Clock",
+  "note": "from Rock Around the Clock",
+  "group": "Music",
+  "star": false
+ },
+ {
+  "name": "Goal Ballad",
+  "note": "a slow sad goal song",
+  "group": "Music",
+  "star": false
+ },
+ {
+  "name": "Goal Jingle",
+  "note": "catchy little tune",
+  "group": "Music",
+  "star": false
+ },
+ {
+  "name": "Goal Rap",
+  "note": "rhymes about scoring",
+  "group": "Music",
+  "star": false
+ },
+ {
+  "name": "Goal Riff",
+  "note": "guitar lick of a goal",
+  "group": "Music",
+  "star": false
+ },
+ {
+  "name": "Goal Bop",
+  "note": "a bouncy tune",
+  "group": "Music",
+  "star": false
+ },
+ {
+  "name": "Goal Beat",
+  "note": "drum beat of the stands",
+  "group": "Music",
+  "star": false
+ },
+ {
+  "name": "Goal Sister",
+  "note": "from Soul Sister",
+  "group": "Music",
+  "star": false
+ },
+ {
+  "name": "Goalful",
+  "note": "from soulful",
+  "group": "Music",
+  "star": false
+ },
+ {
+  "name": "Goal Glam",
+  "note": "glam rock scoring",
+  "group": "Music",
+  "star": false
+ },
+ {
+  "name": "Goaliday",
+  "note": "from holiday",
+  "group": "Holidays",
+  "star": false
+ },
+ {
+  "name": "Goalloween",
+  "note": "from Halloween",
+  "group": "Holidays",
+  "star": false
+ },
+ {
+  "name": "Happy Goalidays",
+  "note": "from happy holidays",
+  "group": "Holidays",
+  "star": false
+ },
+ {
+  "name": "Thanksgoaling",
+  "note": "from Thanksgiving",
+  "group": "Holidays",
+  "star": false
+ },
+ {
+  "name": "New Year's Goal",
+  "note": "resolution, but soccer",
+  "group": "Holidays",
+  "star": false
+ },
+ {
+  "name": "Goal Year's Eve",
+  "note": "from New Year's Eve",
+  "group": "Holidays",
+  "star": false
+ },
+ {
+  "name": "Goalentine's Day",
+  "note": "from Valentine's Day",
+  "group": "Holidays",
+  "star": false
+ },
+ {
+  "name": "Goalentine",
+  "note": "a valentine for scorers",
+  "group": "Holidays",
+  "star": false
+ },
+ {
+  "name": "St. Goaltrick's Day",
+  "note": "from St. Patrick's Day",
+  "group": "Holidays",
+  "star": false
+ },
+ {
+  "name": "Goaster",
+  "note": "from Easter",
+  "group": "Holidays",
+  "star": false
+ },
+ {
+  "name": "Goaster Bunny",
+  "note": "from the Easter Bunny",
+  "group": "Holidays",
+  "star": false
+ },
+ {
+  "name": "Merry Goalmas",
+  "note": "from Merry Christmas",
+  "group": "Holidays",
+  "star": false
+ },
+ {
+  "name": "O Goaly Night",
+  "note": "from the carol",
+  "group": "Holidays",
+  "star": false
+ },
+ {
+  "name": "Jingle Goals",
+  "note": "from Jingle Bells",
+  "group": "Holidays",
+  "star": false
+ },
+ {
+  "name": "Deck the Goals",
+  "note": "from Deck the Halls",
+  "group": "Holidays",
+  "star": false
+ },
+ {
+  "name": "Goal to the World",
+  "note": "from Joy to the World",
+  "group": "Holidays",
+  "star": false
+ },
+ {
+  "name": "Fourth of Goaly",
+  "note": "from Fourth of July",
+  "group": "Holidays",
+  "star": false
+ },
+ {
+  "name": "Goalpril Fools",
+  "note": "from April Fools",
+  "group": "Holidays",
+  "star": false
+ },
+ {
+  "name": "Happy Goalthday",
+  "note": "from happy birthday",
+  "group": "Holidays",
+  "star": false
+ },
+ {
+  "name": "Goal Friday",
+  "note": "from Good Friday",
+  "group": "Holidays",
+  "star": false
+ },
+ {
+  "name": "Let It Goal",
+  "note": "from Let It Snow",
+  "group": "Holidays",
+  "star": false
+ },
+ {
+  "name": "Goaly Jolly",
+  "note": "from holly jolly",
+  "group": "Holidays",
+  "star": false
+ },
+ {
+  "name": "Trick or Goal",
+  "note": "from trick or treat",
+  "group": "Holidays",
+  "star": false
+ },
+ {
+  "name": "Goalidaze",
+  "note": "holiday daze, goal style",
+  "group": "Holidays",
+  "star": false
+ },
+ {
+  "name": "Goaliday Cheer",
+  "note": "from holiday cheer",
+  "group": "Holidays",
+  "star": false
+ },
+ {
+  "name": "Goal Day",
+  "note": "every day is goal day",
+  "group": "Holidays",
+  "star": false
+ },
+ {
+  "name": "Goalbration",
+  "note": "from celebration",
+  "group": "Holidays",
+  "star": false
+ },
+ {
+  "name": "Goaltastic",
+  "note": "from fantastic",
+  "group": "Big words",
+  "star": false
+ },
+ {
+  "name": "Goaltacular",
+  "note": "from spectacular",
+  "group": "Big words",
+  "star": false
+ },
+ {
+  "name": "Goalarious",
+  "note": "from hilarious",
+  "group": "Big words",
+  "star": false
+ },
+ {
+  "name": "Goalphoria",
+  "note": "from euphoria",
+  "group": "Big words",
+  "star": false
+ },
+ {
+  "name": "Goalmentum",
+  "note": "from momentum",
+  "group": "Big words",
+  "star": false
+ },
+ {
+  "name": "Goalsplosion",
+  "note": "from explosion",
+  "group": "Big words",
+  "star": false
+ },
+ {
+  "name": "Goalossal",
+  "note": "from colossal",
+  "group": "Big words",
+  "star": false
+ },
+ {
+  "name": "Goalorious",
+  "note": "from glorious",
+  "group": "Big words",
+  "star": false
+ },
+ {
+  "name": "Goaltimate",
+  "note": "from ultimate",
+  "group": "Big words",
+  "star": false
+ },
+ {
+  "name": "Goalmazing",
+  "note": "from amazing",
+  "group": "Big words",
+  "star": false
+ },
+ {
+  "name": "Goalsome",
+  "note": "from wholesome and awesome",
+  "group": "Big words",
+  "star": false
+ },
+ {
+  "name": "Goalsational",
+  "note": "from sensational",
+  "group": "Big words",
+  "star": false
+ },
+ {
+  "name": "Goalbulous",
+  "note": "from fabulous",
+  "group": "Big words",
+  "star": false
+ },
+ {
+  "name": "Goalvelous",
+  "note": "from marvelous",
+  "group": "Big words",
+  "star": false
+ },
+ {
+  "name": "Goalriffic",
+  "note": "from terrific",
+  "group": "Big words",
+  "star": false
+ },
+ {
+  "name": "Goalnormous",
+  "note": "from enormous",
+  "group": "Big words",
+  "star": false
+ },
+ {
+  "name": "Goalgantic",
+  "note": "from gigantic",
+  "group": "Big words",
+  "star": false
+ },
+ {
+  "name": "Goalmongous",
+  "note": "from humongous",
+  "group": "Big words",
+  "star": false
+ },
+ {
+  "name": "Goaldacious",
+  "note": "from audacious",
+  "group": "Big words",
+  "star": false
+ },
+ {
+  "name": "Goalstonishing",
+  "note": "from astonishing",
+  "group": "Big words",
+  "star": false
+ },
+ {
+  "name": "Ungoalievable",
+  "note": "from unbelievable",
+  "group": "Big words",
+  "star": false
+ },
+ {
+  "name": "Goalific",
+  "note": "from goal plus terrific",
+  "group": "Big words",
+  "star": false
+ },
+ {
+  "name": "Goalactic",
+  "note": "from galactic",
+  "group": "Big words",
+  "star": false
+ },
+ {
+  "name": "Goalaxy",
+  "note": "from galaxy",
+  "group": "Big words",
+  "star": false
+ },
+ {
+  "name": "Goalden",
+  "note": "sounds like golden",
+  "group": "Big words",
+  "star": false
+ },
+ {
+  "name": "Goalden Age",
+  "note": "from golden age",
+  "group": "Big words",
+  "star": false
+ },
+ {
+  "name": "Goalvana",
+  "note": "from nirvana",
+  "group": "Big words",
+  "star": false
+ },
+ {
+  "name": "Goalightful",
+  "note": "from delightful",
+  "group": "Big words",
+  "star": false
+ },
+ {
+  "name": "Goalstoppable",
+  "note": "from unstoppable",
+  "group": "Big words",
+  "star": false
+ },
+ {
+  "name": "Goalphabet",
+  "note": "from alphabet",
+  "group": "Big words",
+  "star": false
+ },
+ {
+  "name": "Goalmageddon",
+  "note": "from Armageddon",
+  "group": "Big words",
+  "star": false
+ },
+ {
+  "name": "Goal Overload",
+  "note": "too many goals",
+  "group": "Big words",
+  "star": false
+ },
+ {
+  "name": "Goalheartedly",
+  "note": "from wholeheartedly",
+  "group": "Big words",
+  "star": false
+ },
+ {
+  "name": "Goalgeous",
+  "note": "from gorgeous",
+  "group": "Big words",
+  "star": false
+ },
+ {
+  "name": "Goalmendous",
+  "note": "from tremendous",
+  "group": "Big words",
+  "star": false
+ },
+ {
+  "name": "Goalstanding",
+  "note": "from outstanding",
+  "group": "Big words",
+  "star": false
+ },
+ {
+  "name": "Goalvolution",
+  "note": "from evolution",
+  "group": "Big words",
+  "star": false
+ },
+ {
+  "name": "Goalstronomical",
+  "note": "from astronomical",
+  "group": "Big words",
+  "star": false
+ },
+ {
+  "name": "Goalpendous",
+  "note": "from stupendous",
+  "group": "Big words",
+  "star": false
+ },
+ {
+  "name": "Goalcredible",
+  "note": "from incredible",
+  "group": "Big words",
+  "star": false
+ },
+ {
+  "name": "Goal Standard",
+  "note": "from gold standard",
+  "group": "Big words",
+  "star": true
+ },
+ {
+  "name": "Goal Medal",
+  "note": "from gold medal",
+  "group": "Big words",
+  "star": false
+ },
+ {
+  "name": "Goalmine",
+  "note": "from goldmine",
+  "group": "Big words",
+  "star": false
+ },
+ {
+  "name": "Goal Star",
+  "note": "from a teacher's gold star",
+  "group": "Big words",
+  "star": false
+ },
+ {
+  "name": "Good as Goal",
+  "note": "from good as gold",
+  "group": "Big words",
+  "star": true
+ },
+ {
+  "name": "Pot of Goal",
+  "note": "from pot of gold",
+  "group": "Big words",
+  "star": false
+ },
+ {
+  "name": "Heart of Goal",
+  "note": "from heart of gold",
+  "group": "Big words",
+  "star": false
+ },
+ {
+  "name": "Fool's Goal",
+  "note": "from fool's gold",
+  "group": "Big words",
+  "star": false
+ },
+ {
+  "name": "Silence Is Goalden",
+  "note": "from silence is golden",
+  "group": "Big words",
+  "star": false
+ },
+ {
+  "name": "Goalden Rule",
+  "note": "from the golden rule",
+  "group": "Big words",
+  "star": false
+ },
+ {
+  "name": "Goalden Hour",
+  "note": "from golden hour",
+  "group": "Big words",
+  "star": false
+ },
+ {
+  "name": "Goalden Oldie",
+  "note": "from golden oldie",
+  "group": "Big words",
+  "star": false
+ },
+ {
+  "name": "Goalden Egg",
+  "note": "from the golden goose",
+  "group": "Big words",
+  "star": false
+ },
+ {
+  "name": "Goalsmith",
+  "note": "from goldsmith",
+  "group": "Big words",
+  "star": false
+ },
+ {
+  "name": "Goal Coast",
+  "note": "from Gold Coast",
+  "group": "Big words",
+  "star": false
+ },
+ {
+  "name": "Goal Nugget",
+  "note": "from gold nugget",
+  "group": "Big words",
+  "star": false
+ },
+ {
+  "name": "Goal Goal Goal",
+  "note": "triple shout",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goal Soup",
+  "note": "soup of the day",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goal Burger",
+  "note": "a goal with fries",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goal Noodle",
+  "note": "use your noodle",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goal Nuggets",
+  "note": "kid menu scoring",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goal Pancakes",
+  "note": "stack them up",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goal Sandwich",
+  "note": "goals between bread",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goal Taco",
+  "note": "taco Tuesday every day",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goalnut",
+  "note": "from doughnut",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goalgurt",
+  "note": "from yogurt",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goalcakes",
+  "note": "from cupcakes",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goal Pickle",
+  "note": "in a real pickle",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goal Goblin",
+  "note": "mischief in the box",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goal Gremlin",
+  "note": "chaos in the net",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goal Gnome",
+  "note": "garden-gnome keeper",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goal Wizard",
+  "note": "magic with the ball",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goal Llama",
+  "note": "a llama in goal",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goal Sloth",
+  "note": "slowest scorer alive",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goalrilla",
+  "note": "from gorilla",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goal Moose",
+  "note": "a moose on the pitch",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goalphin",
+  "note": "from dolphin",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goalpaca",
+  "note": "from alpaca",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goalbatross",
+  "note": "from albatross",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goaldfish",
+  "note": "from goldfish",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goalicorn",
+  "note": "from unicorn",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goalasaurus",
+  "note": "a dinosaur that scores",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goalosaurus Rex",
+  "note": "king of scoring dinosaurs",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goalbot",
+  "note": "a robot striker",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goalnaut",
+  "note": "from astronaut",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goal Rocket",
+  "note": "blast it in",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goal Potato",
+  "note": "couch potato, but scoring",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goaliflower",
+  "note": "from cauliflower",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goalslaw",
+  "note": "from coleslaw",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goalnola",
+  "note": "from granola",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goalioli",
+  "note": "from ravioli",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Guacagoalie",
+  "note": "from guacamole",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Roly Goaly",
+  "note": "from roly-poly",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goaly Moly",
+  "note": "from holy moly",
+  "group": "Totally nuts",
+  "star": true
+ },
+ {
+  "name": "Goaly Cow",
+  "note": "from holy cow",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goaly Smokes",
+  "note": "from holy smokes",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goaly Guacamoly",
+  "note": "from holy guacamole",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goal Bless You",
+  "note": "from bless you",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Oh My Goal",
+  "note": "from oh my gosh",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goalabaloo",
+  "note": "from hullabaloo",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goalapalooza",
+  "note": "from lollapalooza",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goalywood",
+  "note": "from Hollywood",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goal Wobble",
+  "note": "a jelly-legged finish",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goalarama",
+  "note": "a whole goal extravaganza",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goalbalaya",
+  "note": "from jambalaya",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Gobbledygoal",
+  "note": "from gobbledygook",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goal Bonanza",
+  "note": "a jackpot of goals",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goalpourri",
+  "note": "from potpourri",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goalywobbles",
+  "note": "from collywobbles, nervous tummy",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goalden Retriever",
+  "note": "from golden retriever",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goalf",
+  "note": "soccer meets golf",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goalgebra",
+  "note": "from algebra",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goalometry",
+  "note": "from geometry",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goalmallow",
+  "note": "from marshmallow",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goal Sprinkles",
+  "note": "sprinkles on top",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goalnado",
+  "note": "from tornado",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goalquake",
+  "note": "from earthquake",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goalcano",
+  "note": "from volcano",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goalpocalypse",
+  "note": "end-of-the-world scoring",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goal Pajamas",
+  "note": "score in your PJs",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goal Socks",
+  "note": "lucky socks",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Squad Goals",
+  "note": "slang for aspirational group",
+  "group": "Totally nuts",
+  "star": true
+ },
+ {
+  "name": "Life Goals",
+  "note": "slang for life aims",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Family Goals",
+  "note": "the whole family plays",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goals Goals Goals",
+  "note": "the chant version",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Ready Set Goal",
+  "note": "from ready set go",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goal with the Flow",
+  "note": "from go with the flow",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "The Goal Nine Yards",
+  "note": "from the whole nine yards",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "The Goal Shebang",
+  "note": "from the whole shebang",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "The Goal Enchilada",
+  "note": "from the whole enchilada",
+  "group": "Totally nuts",
+  "star": true
+ },
+ {
+  "name": "Goal Hog",
+  "note": "from going whole hog",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goal Wide World",
+  "note": "from the whole wide world",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goal Milk",
+  "note": "from whole milk",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goal Grain",
+  "note": "from whole grain",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goal Truth",
+  "note": "from the whole truth",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goalsale",
+  "note": "from wholesale",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goal in the Wall",
+  "note": "from hole in the wall",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Black Goal",
+  "note": "from black hole",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goal in One",
+  "note": "from hole in one",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goal Kit and Caboodle",
+  "note": "from kit and caboodle",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goal Whale",
+  "note": "a whale of a goal",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goal Gobbler",
+  "note": "eats goals for breakfast",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goal Gumbo",
+  "note": "a mixed pot of goals",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goal Waffle",
+  "note": "waffles and goals",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goal Yeti",
+  "note": "abominable scorer",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goal Kraken",
+  "note": "release the scorer",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goalcorn",
+  "note": "popcorn for scorers",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goal Bubble",
+  "note": "blowing scoring bubbles",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goal Biscuit",
+  "note": "a British snack",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goal Lasagna",
+  "note": "layers of goals",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goal Nacho",
+  "note": "nachos at halftime",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goal Dumpling",
+  "note": "small but packed",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goal Hamster",
+  "note": "running on a wheel",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goal Penguin",
+  "note": "waddles in goal",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goal Owl",
+  "note": "wise old scorer",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goal Gazpacho",
+  "note": "cold soup of goals",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goalcoaster",
+  "note": "from roller coaster",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Goaltergeist Jr.",
+  "note": "the little ghost striker",
+  "group": "Totally nuts",
+  "star": false
+ },
+ {
+  "name": "Six for a Goal",
+  "note": "six right makes a goal",
+  "group": "Numbers",
+  "star": true
+ },
+ {
+  "name": "Goal Six",
+  "note": "six chips per goal",
+  "group": "Numbers",
+  "star": false
+ },
+ {
+  "name": "Six to Goal",
+  "note": "count to six",
+  "group": "Numbers",
+  "star": false
+ },
+ {
+  "name": "Goal 18",
+  "note": "eighteen cards a day",
+  "group": "Numbers",
+  "star": false
+ },
+ {
+  "name": "Eighteen to Goal",
+  "note": "the full board",
+  "group": "Numbers",
+  "star": false
+ },
+ {
+  "name": "Goal Times Three",
+  "note": "hat trick math",
+  "group": "Numbers",
+  "star": false
+ },
+ {
+  "name": "Three Goal Day",
+  "note": "the perfect day",
+  "group": "Numbers",
+  "star": false
+ },
+ {
+  "name": "1-2-3 Goal",
+  "note": "count and score",
+  "group": "Numbers",
+  "star": false
+ },
+ {
+  "name": "Goal One",
+  "note": "the first one counts",
+  "group": "Numbers",
+  "star": false
+ },
+ {
+  "name": "Goal Nine",
+  "note": "the classic number nine",
+  "group": "Numbers",
+  "star": false
+ },
+ {
+  "name": "Goal 42",
+  "note": "nod to the share number",
+  "group": "Numbers",
+  "star": false
+ },
+ {
+  "name": "Goal 101",
+  "note": "the basics course",
+  "group": "Numbers",
+  "star": false
+ },
+ {
+  "name": "Goal 360",
+  "note": "full circle scoring",
+  "group": "Numbers",
+  "star": false
+ },
+ {
+  "name": "Goal 365",
+  "note": "a goal every day",
+  "group": "Numbers",
+  "star": false
+ },
+ {
+  "name": "Goal 24-7",
+  "note": "always scoring",
+  "group": "Numbers",
+  "star": false
+ },
+ {
+  "name": "Goal o'Clock",
+  "note": "time to score",
+  "group": "Numbers",
+  "star": false
+ },
+ {
+  "name": "Goalendar",
+  "note": "from calendar, daily puzzle",
+  "group": "Numbers",
+  "star": true
+ },
+ {
+  "name": "Goalmanac",
+  "note": "from almanac",
+  "group": "Numbers",
+  "star": false
+ },
+ {
+  "name": "Goal Diary",
+  "note": "daily log of goals",
+  "group": "Numbers",
+  "star": false
+ },
+ {
+  "name": "Goal Journal",
+  "note": "write it down daily",
+  "group": "Numbers",
+  "star": false
+ },
+ {
+  "name": "Goalculator",
+  "note": "from calculator",
+  "group": "Numbers",
+  "star": false
+ },
+ {
+  "name": "Goaltiplication",
+  "note": "from multiplication",
+  "group": "Numbers",
+  "star": false
+ },
+ {
+  "name": "Goal Count",
+  "note": "keep score",
+  "group": "Numbers",
+  "star": false
+ },
+ {
+  "name": "Countdown to Goal",
+  "note": "tick down to six",
+  "group": "Numbers",
+  "star": false
+ },
+ {
+  "name": "Goal Clock",
+  "note": "beat the clock",
+  "group": "Numbers",
+  "star": false
+ },
+ {
+  "name": "18 Goaler",
+  "note": "from 18-wheeler",
+  "group": "Numbers",
+  "star": false
+ },
+ {
+  "name": "Goal Trifecta",
+  "note": "three in one",
+  "group": "Numbers",
+  "star": false
+ },
+ {
+  "name": "Goal Trio",
+  "note": "three goals together",
+  "group": "Numbers",
+  "star": false
+ },
+ {
+  "name": "Triple Goal",
+  "note": "one, two, three",
+  "group": "Numbers",
+  "star": false
+ },
+ {
+  "name": "Triple Goal Threat",
+  "note": "from triple threat",
+  "group": "Numbers",
+  "star": false
+ },
+ {
+  "name": "The Sixth Goal",
+  "note": "from The Sixth Sense",
+  "group": "Numbers",
+  "star": false
+ },
+ {
+  "name": "One Goal Wonder",
+  "note": "from one-hit wonder",
+  "group": "Numbers",
+  "star": false
+ },
+ {
+  "name": "Goal Numbers",
+  "note": "from whole numbers",
+  "group": "Numbers",
+  "star": false
+ },
+ {
+  "name": "Six Degrees of Goal",
+  "note": "from six degrees, separation game",
+  "group": "Numbers",
+  "star": false
+ },
+ {
+  "name": "Third Goal Charm",
+  "note": "third time's the charm",
+  "group": "Numbers",
+  "star": false
+ },
+ {
+  "name": "Goal Dozen",
+  "note": "a dozen goals, dream on",
+  "group": "Numbers",
+  "star": false
+ },
+ {
+  "name": "Half a Dozen Goals",
+  "note": "six, the magic number",
+  "group": "Numbers",
+  "star": false
+ },
+ {
+  "name": "Goal by Six",
+  "note": "every sixth one scores",
+  "group": "Numbers",
+  "star": false
+ },
+ {
+  "name": "Three Goals Make a Hat",
+  "note": "hat trick, literally",
+  "group": "Numbers",
+  "star": false
+ },
+ {
+  "name": "Goal 6-18-3",
+  "note": "the daily formula",
+  "group": "Numbers",
+  "star": false
+ },
+ {
+  "name": "Goal Zero",
+  "note": "nil, but hopeful",
+  "group": "Numbers",
+  "star": false
+ },
+ {
+  "name": "Nil to Goal",
+  "note": "from nothing to something",
+  "group": "Numbers",
+  "star": false
+ }
+]
