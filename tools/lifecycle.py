@@ -62,7 +62,7 @@ async def run(b, html, demo):
     await pg.click(f'.choice[data-w="{wrong}"]'); await pg.click('#flip'); await pg.wait_for_timeout(300)
     await pg.click('#share'); await pg.wait_for_timeout(200)
     text = await pg.evaluate("navigator.clipboard.readText()")
-    ok(text == 'Triviela #1\n⚽⚽❌\nBrace · 12 in a row\ntriviela.net', 'the share text is exact: ' + repr(text))
+    ok(text == '#1 ⚽⚽❌\nBrace · 12 in a row\ntriviela.net', 'the share text is exact: ' + repr(text))
     lost = await pg.evaluate("document.querySelector('#v-end .lost .fill') && document.querySelector('#v-end .lost .fill').textContent")
     ok(lost == w, 'the end screen fills in the right answer of the card that got you')
     # 4. locked
@@ -85,7 +85,7 @@ async def run(b, html, demo):
         row = lambda: pg.evaluate("""({ clock: document.getElementById('clock').hidden ? null : document.getElementById('clock').textContent,
             next: document.getElementById('e-next').hidden ? null : document.getElementById('e-next').textContent,
             again: !document.getElementById('e-again').hidden })""")
-        r = await row(); ok(r == {'clock': None, 'next': '#2', 'again': True}, f'a finished board offers #2 and Start over, with no countdown: {r}')
+        r = await row(); ok(r == {'clock': None, 'next': 'Play #2', 'again': True}, f'a finished board offers #2 and Start over, with no countdown: {r}')
         await pg.clock.run_for(125_000); await pg.wait_for_timeout(300)
         v = await pg.evaluate("document.getElementById('cab').dataset.v"); s = await state()
         ok(v == 'end' and s['day'] == 0, 'midnight changes nothing in the demo')
@@ -98,7 +98,7 @@ async def run(b, html, demo):
             await pg.click(f'.choice[data-w="{wrong}"]'); await pg.click('#flip'); await pg.wait_for_timeout(300)
         await lose(); await pg.click('#share'); await pg.wait_for_timeout(200)
         text = await pg.evaluate("navigator.clipboard.readText()")
-        ok(text == 'Triviela #2\n❌\nNil\ntriviela.net', 'board #2 shares as #2: ' + repr(text))
+        ok(text == '#2 ❌\nNil\ntriviela.net', 'board #2 shares as #2: ' + repr(text))
         await pg.evaluate(f"localStorage.setItem('bsb-demo', '{demo - 1}'); localStorage.removeItem('bsb-daily')"); await pg.reload(); await pg.wait_for_timeout(300)
         s = await state(); ok(s['day'] == demo - 1, f'the demo picks up where it was left, on #{demo}')
         await lose(); r = await row()

@@ -117,6 +117,12 @@ It replaces the arcade game: no category keys, no boss. The cabinet, palette, fo
 - **The playtest demo (Morg, Oct 17, 2026):** `DEMO_DAYS = 7` in `build/build.py`, so a finished board never feels like a soft lock. Boards #1 to #7 play back to back: the end screen shows a blinking “#2 ▶” in the countdown’s place to open the next board, and the arcade game’s replay icon to start over at #1. #7 ends with “Thanks for playing” (Morg’s words) and a lit replay icon. The date doesn’t move it: `bsb-demo` holds the player’s place, and midnight changes nothing. Set it to 0 for the real daily at launch. On a preview link, `?day=N` still wins, and the arrow moves the link to `?day=N+1`.
 - **Preview-only switches:** on `*.blank-space-baby.pages.dev`, `?day=N` shows puzzle N and `?reset` clears today’s saved run. They never work on the real site.
 
+## The polish pass (Morg, Oct 17, 2026, before his friend Tom tried it)
+- **No name on screen while the name is open:** the marquee reads “How well do you know the beautiful game?” in a neon script (Yellowtail, white core, green glow), the page title and link preview say the same, the share text opens with `#42` and no name, and the Home Screen name is “Soccer Trivia”. Only the link (triviela.net) carries the name.
+- **The ball fills the board screen:** pentagons at 33% of the ball, 31.5% out from the center, so the assembled ball reads as a real ball (Morg: it’s the coup de grâce). The goal lamps moved to the top right, where the play screen keeps them.
+- **Clearer next steps:** after an answer the screen shows a blinking “NEXT ▶” (the whole screen still taps through), and the demo’s end screen says “Play #2 ▶”.
+- **The demo’s tucked-away restart:** a dim replay icon in the sign’s right corner. Tap it and the sign asks “Start over? Tap again”, and a second tap within 3 seconds goes back to #1.
+
 ## The beta and the vetting team (Morg, Oct 16, 2026)
 Morg needs to build and tune, not approve cards one by one. So:
 - **The beta** is the `daily` preview, https://daily.blank-space-baby.pages.dev. Nothing there is public.

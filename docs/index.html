@@ -7,20 +7,20 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Triviela">
+<meta name="apple-mobile-web-app-title" content="Soccer Trivia">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="icon" type="image/png" href="icon-192.png">
 <link rel="manifest" href="manifest.webmanifest">
-<meta property="og:title" content="Triviela">
+<meta property="og:title" content="How well do you know the beautiful game?">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://triviela.net/">
 <meta property="og:image" content="https://triviela.net/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<title>Triviela</title>
+<title>How well do you know the beautiful game?</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Pixelify+Sans:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Pixelify+Sans:wght@500;600;700&family=Yellowtail&display=swap">
 </head>
 <body style="margin:0">
 <style>
@@ -52,6 +52,11 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .marquee h1 { margin: 0; font-family: var(--pixel); font-weight: 400; font-size: 22px; line-height: 1; letter-spacing: 3px; color: #fff; white-space: nowrap;
   text-shadow: 0 0 4px rgba(255,255,255,.7), 0 0 10px var(--glow), 0 0 20px rgba(92,240,154,.55); }
 .cab.poweron .marquee h1 { animation: power .6s steps(6); }
+.marquee h1.cta { font-family: 'Yellowtail', cursive; font-size: 27px; line-height: 1.02; letter-spacing: 0; white-space: normal; padding: 0 26px 2px;
+  text-shadow: 0 0 3px rgba(255,255,255,.9), 0 0 9px var(--glow), 0 0 18px rgba(92,240,154,.6), 0 0 30px rgba(92,240,154,.35); }
+.marquee h1.cta.ask { font-family: var(--body-font); font-size: 17px; padding-block: 8px; }
+.restart { position: absolute; right: 6px; top: 50%; transform: translateY(-50%); width: 34px; height: 34px; padding: 0; border: 0; background: none; color: var(--dim); opacity: .5; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+.restart:focus-visible { outline: 3px solid var(--glow); outline-offset: 2px; }
 @keyframes power { 0% { opacity: 0; } 17% { opacity: 1; } 34% { opacity: .15; } 51% { opacity: 1; } 68% { opacity: .4; } 100% { opacity: 1; } }
 
 /* screen in its bezel */
@@ -71,7 +76,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 /* the ball: six pentagon chip slots, five around and the center last. Like seams on a real ball, every outer
    pentagon turns a flat side to the center, and the center points down so its flat sides face back */
 .ball { position: relative; flex: none; aspect-ratio: 1; }
-.ball .p { position: absolute; width: 21%; transform: translate(-50%, -50%); color: #3E7A57; filter: drop-shadow(0 0 3px rgba(92,240,154,.35)); }
+.ball .p { position: absolute; width: 33%; transform: translate(-50%, -50%); color: #3E7A57; filter: drop-shadow(0 0 3px rgba(92,240,154,.35)); }
 .pg { display: block; width: 100%; height: auto; overflow: visible; transform-origin: 50% 54%; }   /* turn around the shape's own center */
 .pg polygon { fill: currentColor; stroke: currentColor; stroke-width: 2; stroke-linejoin: round; }
 .pg.o polygon { fill: none; stroke-width: 6; }
@@ -93,8 +98,9 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 
 /* the board: the ball and the goal lamps on the screen (the tiles are keys on the panel, below) */
 #v-board { container-type: size; align-items: center; justify-content: center; }
-.pitch { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8%; width: 100%; height: 100%; }
-.pitch .ball { width: min(100cqw, calc(92cqh - 24px)); }   /* fills the screen: the 8% gap and the 22px lamps, with a pixel to spare */
+.pitch { position: relative; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; }
+.pitch .ball { width: min(100cqw, 100cqh); }   /* the ball fills the screen (Morg, Oct 17, 2026: the assembled ball is the payoff) */
+.pitch .lamps { position: absolute; top: 0; right: 0; gap: 6px; }   /* the goal lamps sit top right, where the play screen keeps them */
 
 /* play */
 .hud { display: flex; justify-content: space-between; align-items: center; flex: none; height: 24px; position: relative; z-index: 3; }
@@ -130,7 +136,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 #v-end { container-type: size; }
 
 /* the blinking go arrow, bottom right of the screen */
-.go { position: absolute; right: 12px; bottom: 12px; width: 44px; height: 44px; padding: 0; border: 0; background: none; color: var(--glow); cursor: pointer; z-index: 3;
+.go { position: absolute; right: 10px; bottom: 10px; height: 44px; padding: 0 6px 0 10px; gap: 8px; font-family: var(--pixel); font-size: 12px; letter-spacing: 1px; text-transform: uppercase; border: 0; background: none; color: var(--glow); cursor: pointer; z-index: 3;
   display: flex; align-items: center; justify-content: center; filter: drop-shadow(0 0 6px rgba(92,240,154,.8)); animation: blink 1.05s steps(1) infinite; }
 .go.wait { display: none; }
 
@@ -188,7 +194,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .share .txt { flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 3px; }
 .sgrid { display: flex; flex-direction: column; gap: 2px; padding-block: 2px; }
 .srow { display: flex; gap: 2px; align-items: center; }
-.sgrid .ball-i { display: block; margin: 0; }
+.srow .ball-i { display: block; margin: 0; } .srow .num { margin-right: 4px; }
 .sq { display: block; width: 16px; height: 16px; position: relative; }
 .sq.x::before, .sq.x::after { content: ""; position: absolute; left: 0; top: 7px; width: 16px; height: 2px; background: #FF5A5F; transform: rotate(45deg); }
 .sq.x::after { transform: rotate(-45deg); }
@@ -207,14 +213,14 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .key:focus-visible, .go:focus-visible, .bk:focus-visible { outline: 3px solid var(--glow); outline-offset: 3px; }
 
 @media (max-height: 700px) { .choice { min-height: 56px; } .tile { min-height: 46px; font-size: 16px; } }
-@media (max-height: 640px) { .cab { gap: 9px; padding-top: max(9px, env(safe-area-inset-top, 0px)); padding-bottom: max(12px, env(safe-area-inset-bottom, 0px)); } .marquee { padding: 11px 10px 13px; } .marquee h1 { font-size: 19px; }
+@media (max-height: 640px) { .cab { gap: 9px; padding-top: max(9px, env(safe-area-inset-top, 0px)); padding-bottom: max(12px, env(safe-area-inset-bottom, 0px)); } .marquee { padding: 8px 10px 9px; } .marquee h1 { font-size: 19px; } .marquee h1.cta { font-size: 22px; }
   .choice { font-size: 19px; min-height: 50px; } .sentence { font-size: 22px; } .sentence.long { font-size: 20px; } .sentence.longer { font-size: 18px; }
   .tile { min-height: 44px; font-size: 15px; } #p-board.tiles { gap: 7px 7px; } .panel { padding: 10px 10px 13px; }
   .lost .sentence { font-size: 19px; } .lost .sentence.long, .lost .sentence.longer { font-size: 17px; } .means { font-size: 16px; } .word { font-size: 17px; } }
 @media (prefers-reduced-motion: reduce) { .key, .choice .def { transition: none; } .pips i.bump, .choice.wrong, .flick, .blank, .go, .ball.goal, .ball .p.new svg, .lamp.new, .cab.poweron .marquee h1, .endrow .next svg { animation: none; } .flyer, .flyer .pg { transition: none; } }
 </style>
 <div class="cab" id="cab" data-v="board">
-  <div class="marquee"><h1>TRIVIELA</h1></div>
+  <div class="marquee"><h1 class="cta">How well do you know<br>the beautiful game?</h1><button class="restart" id="restart" type="button" aria-label="Start over" hidden></button></div>
   <div class="bezel">
     <div class="screen" id="flip" aria-live="polite">
       <section class="view" id="v-board"></section>
@@ -230,7 +236,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   <div class="panel">
     <div class="pv tiles" id="p-board"></div>
     <div class="pv choices" id="choices"></div>
-    <div class="pv" id="p-end"><button class="key share" id="share" type="button"><span class="txt"><span id="share-top"></span><span class="grid" id="share-grid"></span><span id="share-txt"></span></span><span class="mark" id="share-mark"></span></button><div class="endrow"><button class="bk flag" id="e-flag" type="button" hidden></button><button class="bk again" id="e-again" type="button" aria-label="Start over" hidden></button><div class="clock" id="clock"></div><button class="next" id="e-next" type="button" hidden></button><button class="bk lock" id="e-lock" type="button" hidden></button></div></div>
+    <div class="pv" id="p-end"><button class="key share" id="share" type="button"><span class="txt"><span id="share-top"></span><span id="share-txt"></span></span><span class="mark" id="share-mark"></span></button><div class="endrow"><button class="bk flag" id="e-flag" type="button" hidden></button><button class="bk again" id="e-again" type="button" aria-label="Start over" hidden></button><div class="clock" id="clock"></div><button class="next" id="e-next" type="button" hidden></button><button class="bk lock" id="e-lock" type="button" hidden></button></div></div>
   </div>
 </div>
 <script>
@@ -436,9 +442,9 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   function go(icon, label) {
     var g = $('go');
     if (!icon) { g.classList.add('wait'); g.tabIndex = -1; return; }
-    g.innerHTML = svg(icon, 4); g.setAttribute('aria-label', label); g.classList.remove('wait'); g.tabIndex = 0;
+    g.innerHTML = '<span class="lbl">' + label + '</span>' + svg(icon, 3); g.setAttribute('aria-label', label); g.classList.remove('wait'); g.tabIndex = 0;
   }
-  var SLOTS = [0, 1, 2, 3, 4].map(function (k) { var a = (-90 + 72 * k) * Math.PI / 180; return [50 + 33 * Math.cos(a), 50 + 33 * Math.sin(a)]; }).concat([[50, 50]]);
+  var SLOTS = [0, 1, 2, 3, 4].map(function (k) { var a = (-90 + 72 * k) * Math.PI / 180; return [50 + 31.5 * Math.cos(a), 50 + 31.5 * Math.sin(a)]; }).concat([[50, 50]]);
   function ballHTML(n, pending) {   // n chips in the ball: the five around clockwise from the top, then the center
     return '<div class="ball" id="ball">' + SLOTS.map(function (xy, k) {
       return '<div class="p' + (k < n ? ' on' : '') + (k === pending ? ' pending' : '') + '" id="slot' + k + '" style="left:' + xy[0] + '%;top:' + xy[1] + '%">' + pent(k >= n, k < 5 ? 72 * k : 180) + '</div>';
@@ -571,7 +577,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   }
   function streak() { return chips() ? chips() + ' in a row' : ''; }
   function shareText() {
-    return 'Triviela #' + (S.day + 1) + '\n' + grid().map(function (c) { return c === 'ball' ? '⚽' : '❌'; }).join('') +
+    return '#' + (S.day + 1) + ' ' + grid().map(function (c) { return c === 'ball' ? '⚽' : '❌'; }).join('') +
       '\n' + RESULT[Math.floor(chips() / PER)] + (chips() ? ' · ' + streak() : '') + '\ntriviela.net';
   }
   function end() {
@@ -579,9 +585,8 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     var word = RESULT[g] + (n ? ' · ' + streak() : '');
     $('v-end').innerHTML = '<div class="result">' + lampsHTML(g, 3) + '<p class="word">' + esc(RESULT[g]) + (n ? '<span class="run">' + num(esc(streak())) + '</span>' : '') + '</p></div>' +
       (L ? '<div class="lost"><p class="' + size(L) + ' missed">' + sentence(L, true) + '</p><p class="means">' + num(keep(esc(L.m))) + '</p></div>' : ballHTML(6));
-    $('share-top').innerHTML = 'Triviela #' + num(String(S.day + 1));
+    $('share-top').innerHTML = '<span class="srow">' + num('#' + (S.day + 1)) + ' ' + grid().map(function (c) { return c === 'ball' ? svg('ball', 2, 'ball-i', true) : '<i class="sq x"></i>'; }).join('') + '</span>';
     $('share-txt').innerHTML = num(esc(word)) + '<br>triviela.net';
-    $('share-grid').innerHTML = '<span class="sgrid"><span class="srow">' + grid().map(function (c) { return c === 'ball' ? svg('ball', 2, 'ball-i', true) : '<i class="sq x"></i>'; }).join('') + '</span></span>';
     $('share-mark').innerHTML = svg('share', 3);
     beta(L, 'end'); view('end'); clearInterval(tick); endRow(); if (!DEMO) tick = setInterval(clock, 1000);
   }
@@ -593,13 +598,21 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     if (!DEMO) return clock();
     $('clock').classList.toggle('thanks', last);
     if (last) { $('clock').textContent = 'Thanks for playing'; return; }
-    $('e-next').innerHTML = num('#' + (S.day + 2)) + svg('next', 3); $('e-next').setAttribute('aria-label', 'Next day, #' + (S.day + 2));
+    $('e-next').innerHTML = 'Play ' + num('#' + (S.day + 2)) + svg('next', 3); $('e-next').setAttribute('aria-label', 'Next day, #' + (S.day + 2));
   }
   function goDay(d) {   // the demo's next board, or back to #1
     if (FIXED !== null) { params.set('day', d + 1); params.set('reset', ''); location.search = params.toString(); return; }   // a preview link's ?day=N
     clearInterval(tick); store.set('bsb-demo', d); store.del('bsb-daily'); S = load(); save(); show();
   }
   $('e-again').innerHTML = svg('again', 3);
+  var armed = 0, CTA = $('cab').querySelector('.marquee h1').innerHTML;   // the demo's tucked-away restart, in the sign's corner: tap, then tap again
+  if (DEMO) { $('restart').hidden = false; $('restart').innerHTML = svg('again', 2); }
+  $('restart').addEventListener('click', function () {
+    var h = $('cab').querySelector('.marquee h1');
+    if (Date.now() < armed) { armed = 0; h.innerHTML = CTA; h.classList.remove('ask'); goDay(0); return; }
+    armed = Date.now() + 3000; h.innerHTML = 'Start over? Tap again'; h.classList.add('ask');
+    setTimeout(function () { if (Date.now() >= armed) { h.innerHTML = CTA; h.classList.remove('ask'); } }, 3100);
+  });
   $('e-next').addEventListener('click', function () { if (DEMO && S.day < DEMO - 1) goDay(S.day + 1); });
   $('e-again').addEventListener('click', function () { if (DEMO) goDay(0); });
   function clock() {   // the countdown to tomorrow's board, at local midnight
