@@ -95,13 +95,9 @@
   "v": "ok"
  },
  "alpha:15": {
-  "at": "2026-10-16T23:55:32Z",
-  "fix": {
-   "ex": "The bench yelled “six seven” when the sub board went up"
-  },
-  "h": "b833e397a7",
-  "note": "sentence spelled out 6 and 7, which gave the answer away",
-  "v": "fix"
+  "at": "2026-10-16T23:59:29Z",
+  "h": "bf6afbf812",
+  "v": "ok"
  },
  "alpha:16": {
   "at": "2026-10-16T23:55:32Z",
@@ -308,13 +304,9 @@
   "v": "ok"
  },
  "alpha:52": {
-  "at": "2026-10-16T23:55:32Z",
-  "fix": {
-   "ex": "Mom ran the snack schedule, carpool, and team party, so she is mother"
-  },
-  "h": "3db3583fcb",
-  "note": "serial comma per Chicago",
-  "v": "fix"
+  "at": "2026-10-16T23:59:29Z",
+  "h": "44431e4d30",
+  "v": "ok"
  },
  "alpha:53": {
   "at": "2026-10-16T23:55:32Z",
@@ -363,13 +355,9 @@
   "v": "ok"
  },
  "alpha:61": {
-  "at": "2026-10-16T23:55:32Z",
-  "fix": {
-   "ex": "The striker asked, “Chat, is this real?” after scoring a hat trick"
-  },
-  "h": "a67db73d00",
-  "note": "a quoted question starts with a capital, comma after asked per Chicago",
-  "v": "fix"
+  "at": "2026-10-16T23:59:29Z",
+  "h": "e0e63b1286",
+  "v": "ok"
  },
  "alpha:62": {
   "at": "2026-10-16T23:55:32Z",
@@ -575,6 +563,401 @@
  "alpha:99": {
   "at": "2026-10-16T23:55:32Z",
   "h": "c9365428fe",
+  "v": "ok"
+ },
+ "awards:0": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "c31cc5f31b",
+  "v": "ok"
+ },
+ "awards:1": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "274592d3a5",
+  "v": "ok"
+ },
+ "awards:10": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "ee2248f69f",
+  "v": "ok"
+ },
+ "awards:11": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "2d20792312",
+  "v": "ok"
+ },
+ "awards:12": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "24d5c18a67",
+  "v": "ok"
+ },
+ "awards:13": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "c2d1cb191b",
+  "v": "ok"
+ },
+ "awards:14": {
+  "at": "2026-10-16T23:59:07Z",
+  "fix": {
+   "means": "He won the Fair Play Award in 1996"
+  },
+  "h": "74ba041707",
+  "note": "“Won Fair Play” is jargon, named the award and gave the year the sentence implies",
+  "v": "fix"
+ },
+ "awards:15": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "879748ff21",
+  "v": "ok"
+ },
+ "awards:16": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "da92b70167",
+  "v": "ok"
+ },
+ "awards:17": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "bae3f83c03",
+  "v": "ok"
+ },
+ "awards:18": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "27406d63ea",
+  "v": "ok"
+ },
+ "awards:19": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "ec3cb1f154",
+  "v": "ok"
+ },
+ "awards:2": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "0960cd1419",
+  "v": "ok"
+ },
+ "awards:20": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "a909863323",
+  "v": "ok"
+ },
+ "awards:21": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "b211398594",
+  "v": "ok"
+ },
+ "awards:22": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "739eb53a0f",
+  "v": "ok"
+ },
+ "awards:23": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "5b11f3ad53",
+  "v": "ok"
+ },
+ "awards:24": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "479aa776b8",
+  "v": "ok"
+ },
+ "awards:25": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "306346d8bd",
+  "v": "ok"
+ },
+ "awards:26": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "5a153fba75",
+  "v": "ok"
+ },
+ "awards:27": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "4c8c734f49",
+  "v": "ok"
+ },
+ "awards:28": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "15d6480a30",
+  "v": "ok"
+ },
+ "awards:29": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "c49b03caba",
+  "v": "ok"
+ },
+ "awards:3": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "ab23edea1e",
+  "v": "ok"
+ },
+ "awards:30": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "da8c2beb3c",
+  "v": "ok"
+ },
+ "awards:31": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "fb616c96cf",
+  "v": "ok"
+ },
+ "awards:32": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "ba39507b4a",
+  "v": "ok"
+ },
+ "awards:33": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "3fb857342a",
+  "v": "ok"
+ },
+ "awards:34": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "91a6331c2a",
+  "v": "ok"
+ },
+ "awards:35": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "46e344d26f",
+  "v": "ok"
+ },
+ "awards:36": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "868952c7f9",
+  "v": "ok"
+ },
+ "awards:37": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "d2b77f4df7",
+  "note": "MW’s scissors kick is a swimming term, scissor kick is the soccer usage, kept",
+  "v": "ok"
+ },
+ "awards:38": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "3afbd9f4e4",
+  "v": "ok"
+ },
+ "awards:39": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "49205152a1",
+  "v": "ok"
+ },
+ "awards:4": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "fdbb4d8230",
+  "v": "ok"
+ },
+ "awards:40": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "e1a9613959",
+  "v": "ok"
+ },
+ "awards:41": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "2b1612d5d0",
+  "v": "ok"
+ },
+ "awards:42": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "9dbbef0729",
+  "note": "Celtic and Zakho SC are clubs, so “nation” rules them out as wrong answers, the card still works",
+  "v": "ok"
+ },
+ "awards:43": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "0fcae9fbb1",
+  "note": "Celtic and Zakho SC are clubs and read oddly here, the card still works",
+  "v": "ok"
+ },
+ "awards:44": {
+  "at": "2026-10-16T23:59:07Z",
+  "fix": {
+   "means": "They won the Fair Play Award in 2003"
+  },
+  "h": "4dd7479da5",
+  "note": "“Won Fair Play” is jargon, named the award",
+  "v": "fix"
+ },
+ "awards:45": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "0cead17af3",
+  "v": "ok"
+ },
+ "awards:46": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "f547234e37",
+  "note": "Celtic and Zakho SC are clubs and read oddly here, the card still works",
+  "v": "ok"
+ },
+ "awards:47": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "976b368778",
+  "v": "ok"
+ },
+ "awards:48": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "5f31914f27",
+  "note": "“The Celtic men’s team” reads oddly as a wrong answer, the card still works",
+  "v": "ok"
+ },
+ "awards:49": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "d37a8bc5cc",
+  "v": "ok"
+ },
+ "awards:5": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "94069a8c7e",
+  "v": "ok"
+ },
+ "awards:50": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "c0fccb98f3",
+  "v": "ok"
+ },
+ "awards:51": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "6f3b845289",
+  "v": "ok"
+ },
+ "awards:52": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "eb25e6c189",
+  "v": "ok"
+ },
+ "awards:53": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "5ec7fc4a5e",
+  "v": "ok"
+ },
+ "awards:54": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "2bd3978ee4",
+  "v": "ok"
+ },
+ "awards:55": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "4d693cb2fb",
+  "v": "ok"
+ },
+ "awards:56": {
+  "at": "2026-10-16T23:59:07Z",
+  "fix": {
+   "means": "2023, 2024, and 2025"
+  },
+  "h": "c3aada3a31",
+  "note": "Chicago serial comma",
+  "v": "fix"
+ },
+ "awards:57": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "b699b8554d",
+  "v": "ok"
+ },
+ "awards:58": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "0899dbe7f2",
+  "v": "ok"
+ },
+ "awards:59": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "a038a164e0",
+  "v": "ok"
+ },
+ "awards:6": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "7fb6e11c40",
+  "v": "ok"
+ },
+ "awards:60": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "cfa1d8cd8e",
+  "v": "ok"
+ },
+ "awards:61": {
+  "at": "2026-10-16T23:59:07Z",
+  "fix": {
+   "means": "Including a hat trick in the final"
+  },
+  "h": "055d075b6d",
+  "note": "MW spells hat trick open, and the reworded line is clearer",
+  "v": "fix"
+ },
+ "awards:62": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "c41eb5efec",
+  "v": "ok"
+ },
+ "awards:63": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "ee4133031f",
+  "v": "ok"
+ },
+ "awards:64": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "069295d9ca",
+  "v": "ok"
+ },
+ "awards:65": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "5bd8b1028a",
+  "v": "ok"
+ },
+ "awards:66": {
+  "at": "2026-10-16T23:59:07Z",
+  "fix": {
+   "ex": "Harry Kane won the Golden Boot at the 2018 World Cup",
+   "means": "Six goals made him top scorer"
+  },
+  "h": "9295c3e344",
+  "note": "“with six goals” pointed to the Golden Boot over the other awards, moved it to means",
+  "v": "fix"
+ },
+ "awards:67": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "9594781ef1",
+  "v": "ok"
+ },
+ "awards:68": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "aae2330e56",
+  "v": "ok"
+ },
+ "awards:69": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "7750dab19a",
+  "v": "ok"
+ },
+ "awards:7": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "8e1fb4cadf",
+  "v": "ok"
+ },
+ "awards:70": {
+  "at": "2026-10-16T23:59:07Z",
+  "fix": {
+   "ex": "Lizbeth Ovalle’s backheel volley won the 2025 FIFA Marta Award"
+  },
+  "h": "f0f3bd67b4",
+  "note": "MW’s first spelling is backheel",
+  "v": "fix"
+ },
+ "awards:71": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "0b68147be4",
+  "v": "ok"
+ },
+ "awards:72": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "4f3df59331",
+  "v": "ok"
+ },
+ "awards:8": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "0b5424eb99",
+  "v": "ok"
+ },
+ "awards:9": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "41c043d5ea",
   "v": "ok"
  },
  "basics:0": {
@@ -2264,13 +2647,9 @@
   "v": "ok"
  },
  "epl:24": {
-  "at": "2026-10-16T23:54:41Z",
-  "fix": {
-   "ex": "Bronze statues of Arsenal legends stand outside Emirates Stadium"
-  },
-  "h": "ae65de6503",
-  "note": "dropped “the” before the blank so Anfield and Old Trafford read grammatically",
-  "v": "fix"
+  "at": "2026-10-16T23:59:29Z",
+  "h": "1360501bd5",
+  "v": "ok"
  },
  "epl:25": {
   "at": "2026-10-16T23:54:41Z",
@@ -2338,13 +2717,9 @@
   "v": "ok"
  },
  "epl:37": {
-  "at": "2026-10-16T23:54:41Z",
-  "fix": {
-   "means": "Possibly from their red-striped shirts"
-  },
-  "h": "d1077fceed",
-  "note": "hyphenated compound adjective, firmer than “maybe”",
-  "v": "fix"
+  "at": "2026-10-16T23:59:29Z",
+  "h": "a84bf62998",
+  "v": "ok"
  },
  "epl:38": {
   "at": "2026-10-16T23:54:41Z",
@@ -2427,18 +2802,713 @@
   "v": "ok"
  },
  "epl:8": {
-  "at": "2026-10-16T23:54:41Z",
-  "fix": {
-   "ex": "Hull City beat Middlesbrough 1–0 in the 2026 playoff final",
-   "hook": "playoff"
-  },
-  "h": "51e79578de",
-  "note": "Merriam-Webster spells playoff closed",
-  "v": "fix"
+  "at": "2026-10-16T23:59:29Z",
+  "h": "48cfc9a920",
+  "v": "ok"
  },
  "epl:9": {
   "at": "2026-10-16T23:54:41Z",
   "h": "bb16f6d85b",
+  "v": "ok"
+ },
+ "intl-men:0": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "9a9efd12cd",
+  "v": "ok"
+ },
+ "intl-men:1": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "ae89eaea77",
+  "v": "ok"
+ },
+ "intl-men:10": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "d2ce168279",
+  "v": "ok"
+ },
+ "intl-men:11": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "75cdec6a74",
+  "v": "ok"
+ },
+ "intl-men:12": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "b252d54998",
+  "v": "ok"
+ },
+ "intl-men:13": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "3d0290dea0",
+  "v": "ok"
+ },
+ "intl-men:14": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "002db74900",
+  "v": "ok"
+ },
+ "intl-men:15": {
+  "at": "2026-10-16T23:58:53Z",
+  "fix": {
+   "ex": "Kylian Mbappé scored a hat trick in the 2022 World Cup final",
+   "hook": "hat trick"
+  },
+  "h": "e9fabd64df",
+  "note": "Hat trick is open in M-W, hook follows",
+  "v": "fix"
+ },
+ "intl-men:16": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "a012c4f656",
+  "v": "ok"
+ },
+ "intl-men:17": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "429cff43d3",
+  "v": "ok"
+ },
+ "intl-men:18": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "6a5a51301c",
+  "v": "ok"
+ },
+ "intl-men:19": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "4441c4a20c",
+  "v": "ok"
+ },
+ "intl-men:2": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "d81ad16981",
+  "v": "ok"
+ },
+ "intl-men:20": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "5290938943",
+  "v": "ok"
+ },
+ "intl-men:21": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "f592b730e8",
+  "v": "ok"
+ },
+ "intl-men:22": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "6108db9934",
+  "v": "ok"
+ },
+ "intl-men:23": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "d51049d749",
+  "v": "ok"
+ },
+ "intl-men:24": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "c3e43c4677",
+  "v": "ok"
+ },
+ "intl-men:25": {
+  "at": "2026-10-16T23:58:53Z",
+  "fix": {
+   "ex": "Bert Patenaude scored the first hat trick in World Cup history",
+   "hook": "hat trick"
+  },
+  "h": "ba49a1d39c",
+  "note": "Hat trick is open in M-W, hook follows",
+  "v": "fix"
+ },
+ "intl-men:26": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "ad76b8fd40",
+  "v": "ok"
+ },
+ "intl-men:27": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "b9f1ca652b",
+  "v": "ok"
+ },
+ "intl-men:28": {
+  "at": "2026-10-16T23:58:53Z",
+  "fix": {
+   "means": "Including two hat tricks"
+  },
+  "h": "c3302bd58f",
+  "note": "Hat trick is open in M-W",
+  "v": "fix"
+ },
+ "intl-men:29": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "c2fb6b24a8",
+  "v": "ok"
+ },
+ "intl-men:3": {
+  "at": "2026-10-16T23:58:53Z",
+  "fix": {
+   "means": "Geoff Hurst scored a hat trick"
+  },
+  "h": "cd473a47f1",
+  "note": "Hat trick is open in M-W",
+  "v": "fix"
+ },
+ "intl-men:30": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "a2d74e1732",
+  "v": "ok"
+ },
+ "intl-men:31": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "489208808a",
+  "v": "ok"
+ },
+ "intl-men:32": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "4152db655c",
+  "v": "ok"
+ },
+ "intl-men:33": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "cd4d560d7a",
+  "v": "ok"
+ },
+ "intl-men:34": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "058837f8bf",
+  "v": "ok"
+ },
+ "intl-men:35": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "7a71c6fc73",
+  "v": "ok"
+ },
+ "intl-men:36": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "ee2cd74f5e",
+  "v": "ok"
+ },
+ "intl-men:37": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "6181864bc4",
+  "v": "ok"
+ },
+ "intl-men:38": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "2ccf083bc8",
+  "v": "ok"
+ },
+ "intl-men:39": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "cc5b88832b",
+  "v": "ok"
+ },
+ "intl-men:4": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "66ff63ee01",
+  "note": "Morocco is the only African team in the pool, so the word African gives it away. Pool issue, not wording",
+  "v": "ok"
+ },
+ "intl-men:40": {
+  "at": "2026-10-16T23:58:53Z",
+  "fix": {
+   "ex": "Uruguay stunned Brazil in the deciding game of the 1950 World Cup at the Maracanã"
+  },
+  "h": "901129fcd6",
+  "note": "Named the competition so 1950 reads clearly. With the before the blank, Wembley and Soccer City read oddly",
+  "v": "fix"
+ },
+ "intl-men:41": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "d78ec9d629",
+  "note": "Rose Bowl reads oddly after at with no the",
+  "v": "ok"
+ },
+ "intl-men:42": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "2c9f1f7a73",
+  "note": "With the before the blank, Wembley and Soccer City read oddly as wrong answers",
+  "v": "ok"
+ },
+ "intl-men:43": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "d2c57f9b74",
+  "v": "ok"
+ },
+ "intl-men:44": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "4fe45e6ba7",
+  "v": "ok"
+ },
+ "intl-men:45": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "8f10807ebb",
+  "v": "ok"
+ },
+ "intl-men:46": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "cfaae29772",
+  "v": "ok"
+ },
+ "intl-men:47": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "e7e594c016",
+  "v": "ok"
+ },
+ "intl-men:48": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "9b5fb2d1c4",
+  "v": "ok"
+ },
+ "intl-men:49": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "a691bbecfd",
+  "v": "ok"
+ },
+ "intl-men:5": {
+  "at": "2026-10-16T23:58:53Z",
+  "fix": {
+   "hook": "Brazil"
+  },
+  "h": "2059ba4129",
+  "note": "Hook drops the filler word host",
+  "v": "fix"
+ },
+ "intl-men:50": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "99821613b7",
+  "v": "ok"
+ },
+ "intl-men:51": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "4cbf46ba01",
+  "v": "ok"
+ },
+ "intl-men:52": {
+  "at": "2026-10-16T23:58:53Z",
+  "fix": {
+   "hook": "South Africa"
+  },
+  "h": "338dbb2641",
+  "note": "Hook names the host, not the continent",
+  "v": "fix"
+ },
+ "intl-men:53": {
+  "at": "2026-10-16T23:58:53Z",
+  "fix": {
+   "ex": "Qatar hosted the World Cup in November and December 2022"
+  },
+  "h": "4b5237cbd4",
+  "note": "Chicago: no of between month and year",
+  "v": "fix"
+ },
+ "intl-men:54": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "d40d6f06f1",
+  "v": "ok"
+ },
+ "intl-men:55": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "c58fac3535",
+  "v": "ok"
+ },
+ "intl-men:56": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "a722ce9225",
+  "v": "ok"
+ },
+ "intl-men:57": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "27ae526b86",
+  "note": "For the fact checker: means says Spain won in 2026",
+  "v": "ok"
+ },
+ "intl-men:58": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "ff9b280e46",
+  "v": "ok"
+ },
+ "intl-men:59": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "2a19fb9d98",
+  "v": "ok"
+ },
+ "intl-men:6": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "57d7f72242",
+  "v": "ok"
+ },
+ "intl-men:60": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "11bb4382be",
+  "v": "ok"
+ },
+ "intl-men:61": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "880f4a990d",
+  "v": "ok"
+ },
+ "intl-men:62": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "559c33e5d6",
+  "v": "ok"
+ },
+ "intl-men:63": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "031a869942",
+  "v": "ok"
+ },
+ "intl-men:7": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "d05b48c399",
+  "v": "ok"
+ },
+ "intl-men:8": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "98da2e8372",
+  "v": "ok"
+ },
+ "intl-men:9": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "af01d5ec74",
+  "v": "ok"
+ },
+ "intl-women:0": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "680865ece0",
+  "v": "ok"
+ },
+ "intl-women:1": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "2998a382e3",
+  "v": "ok"
+ },
+ "intl-women:10": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "63e5cc3985",
+  "note": "“in USA” and “in Netherlands” read a little off without “the”, card still works",
+  "v": "ok"
+ },
+ "intl-women:11": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "f7711b5696",
+  "v": "ok"
+ },
+ "intl-women:12": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "391d17c96e",
+  "v": "ok"
+ },
+ "intl-women:13": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "b2f3d11d02",
+  "v": "ok"
+ },
+ "intl-women:14": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "5d35439c73",
+  "v": "ok"
+ },
+ "intl-women:15": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "8567b6cd31",
+  "v": "ok"
+ },
+ "intl-women:16": {
+  "at": "2026-10-16T23:58:53Z",
+  "fix": {
+   "means": "Tied the World Cup record for one game"
+  },
+  "h": "1e131207f8",
+  "note": "Means said only “the one-game record”, now says which record",
+  "v": "fix"
+ },
+ "intl-women:17": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "b6fbda57dd",
+  "v": "ok"
+ },
+ "intl-women:18": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "ed02cf5b13",
+  "v": "ok"
+ },
+ "intl-women:19": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "1a1a2a4e64",
+  "v": "ok"
+ },
+ "intl-women:2": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "f5b0e839c7",
+  "v": "ok"
+ },
+ "intl-women:20": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "0339181bac",
+  "v": "ok"
+ },
+ "intl-women:21": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "3778d80236",
+  "v": "ok"
+ },
+ "intl-women:22": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "a6534f84a9",
+  "v": "ok"
+ },
+ "intl-women:23": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "fb7beb7dd9",
+  "v": "ok"
+ },
+ "intl-women:24": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "6e44581e05",
+  "v": "ok"
+ },
+ "intl-women:25": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "7f74bce6d4",
+  "v": "ok"
+ },
+ "intl-women:26": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "c8ff669901",
+  "v": "ok"
+ },
+ "intl-women:27": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "377259a70d",
+  "v": "ok"
+ },
+ "intl-women:28": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "4df4a70b73",
+  "v": "ok"
+ },
+ "intl-women:29": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "fe90f657f6",
+  "v": "ok"
+ },
+ "intl-women:3": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "7b576f313f",
+  "v": "ok"
+ },
+ "intl-women:30": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "cb621a1bd1",
+  "v": "ok"
+ },
+ "intl-women:31": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "30edbce1a2",
+  "v": "ok"
+ },
+ "intl-women:32": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "dde06518b1",
+  "v": "ok"
+ },
+ "intl-women:33": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "648f821ec3",
+  "v": "ok"
+ },
+ "intl-women:34": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "0133f54d0f",
+  "v": "ok"
+ },
+ "intl-women:35": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "84c8b8a9da",
+  "v": "ok"
+ },
+ "intl-women:36": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "6644ffc769",
+  "v": "ok"
+ },
+ "intl-women:37": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "a38737155c",
+  "v": "ok"
+ },
+ "intl-women:38": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "0f8cc4c74c",
+  "v": "ok"
+ },
+ "intl-women:39": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "5c279456b7",
+  "v": "ok"
+ },
+ "intl-women:4": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "39afd9022b",
+  "v": "ok"
+ },
+ "intl-women:40": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "ada2f02b67",
+  "v": "ok"
+ },
+ "intl-women:41": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "304c1d72d5",
+  "v": "ok"
+ },
+ "intl-women:42": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "4bd4eb1b92",
+  "v": "ok"
+ },
+ "intl-women:43": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "18483ffe86",
+  "v": "ok"
+ },
+ "intl-women:44": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "5b2e642bee",
+  "v": "ok"
+ },
+ "intl-women:45": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "efad17bc42",
+  "v": "ok"
+ },
+ "intl-women:46": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "2d1d66fbf0",
+  "v": "ok"
+ },
+ "intl-women:47": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "eba63da3cc",
+  "v": "ok"
+ },
+ "intl-women:48": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "f914bbbbb6",
+  "v": "ok"
+ },
+ "intl-women:49": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "0af01f6ebd",
+  "v": "ok"
+ },
+ "intl-women:5": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "dc05bca811",
+  "v": "ok"
+ },
+ "intl-women:50": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "9267d78ddb",
+  "v": "ok"
+ },
+ "intl-women:51": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "0dcf37061c",
+  "v": "ok"
+ },
+ "intl-women:52": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "f3cb84110a",
+  "v": "ok"
+ },
+ "intl-women:53": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "4333143f69",
+  "v": "ok"
+ },
+ "intl-women:54": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "65e857f170",
+  "v": "ok"
+ },
+ "intl-women:55": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "566544930e",
+  "v": "ok"
+ },
+ "intl-women:56": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "f733c9cfa3",
+  "note": "“on a hat trick” and “on a SheBelieves Cup” read as nonsense, card still works",
+  "v": "ok"
+ },
+ "intl-women:57": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "adab7f17ad",
+  "note": "“a 16-minute SheBelieves Cup” reads as nonsense, card still works",
+  "v": "ok"
+ },
+ "intl-women:58": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "cbf064e85d",
+  "v": "ok"
+ },
+ "intl-women:59": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "537d3f49d2",
+  "v": "ok"
+ },
+ "intl-women:6": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "e694645dfd",
+  "v": "ok"
+ },
+ "intl-women:60": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "fcd4abddb8",
+  "v": "ok"
+ },
+ "intl-women:61": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "ee05257f8a",
+  "v": "ok"
+ },
+ "intl-women:62": {
+  "at": "2026-10-16T23:58:53Z",
+  "fix": {
+   "ex": "Australia’s women got their nickname, the Matildas, from a 1995 TV poll"
+  },
+  "h": "49059e3fdb",
+  "note": "“Australia’s team” could mean the men, and a singular team took “their”",
+  "v": "fix"
+ },
+ "intl-women:63": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "96688d7323",
+  "v": "ok"
+ },
+ "intl-women:64": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "47c76c287a",
+  "v": "ok"
+ },
+ "intl-women:65": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "d417024cfc",
+  "v": "ok"
+ },
+ "intl-women:7": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "bd379f32ea",
+  "note": "“Hosts Netherlands” is headline style but reads fine with every wrong answer",
+  "v": "ok"
+ },
+ "intl-women:8": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "13f44ba7e1",
+  "v": "ok"
+ },
+ "intl-women:9": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "42cb4374ea",
   "v": "ok"
  },
  "laliga:0": {
@@ -2769,6 +3839,799 @@
   "at": "2026-10-16T23:57:35Z",
   "h": "3156c2a568",
   "note": "FC Barcelona as a wrong answer reads as nonsense but the card works",
+  "v": "ok"
+ },
+ "legends:0": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "911cc0a677",
+  "v": "ok"
+ },
+ "legends:1": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "399797cacf",
+  "v": "ok"
+ },
+ "legends:10": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "c55a5c64ca",
+  "v": "ok"
+ },
+ "legends:11": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "6e85506ddd",
+  "v": "ok"
+ },
+ "legends:12": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "e8109fe03d",
+  "v": "ok"
+ },
+ "legends:13": {
+  "at": "2026-10-16T23:59:07Z",
+  "fix": {
+   "ex": "Tim Cahill celebrated goals by shadowboxing the corner flag"
+  },
+  "h": "edbbfbbf07",
+  "note": "MW spells it shadowbox, closed",
+  "v": "fix"
+ },
+ "legends:14": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "e66d55b0c5",
+  "v": "ok"
+ },
+ "legends:15": {
+  "at": "2026-10-16T23:59:07Z",
+  "fix": {
+   "ex": "Mário Zagallo was the first to win the World Cup as a player and as a coach",
+   "hook": "coach"
+  },
+  "h": "3f855d73a2",
+  "note": "“was first” lacked the article, and “before Deschamps” misleads since Beckenbauer won both in between (for the fact checker). New hook from the new sentence",
+  "v": "fix"
+ },
+ "legends:16": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "270880ab36",
+  "v": "ok"
+ },
+ "legends:17": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "ca658171c5",
+  "v": "ok"
+ },
+ "legends:18": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "927158af49",
+  "v": "ok"
+ },
+ "legends:19": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "bd4da01ae2",
+  "v": "ok"
+ },
+ "legends:2": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "dabc4bce91",
+  "v": "ok"
+ },
+ "legends:20": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "3faa4e6e92",
+  "v": "ok"
+ },
+ "legends:21": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "c04fb0e5ff",
+  "v": "ok"
+ },
+ "legends:22": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "e6fa1cf6d0",
+  "v": "ok"
+ },
+ "legends:23": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "d834b2a41b",
+  "v": "ok"
+ },
+ "legends:24": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "bf8b9ccbc0",
+  "v": "ok"
+ },
+ "legends:25": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "0106c640bc",
+  "v": "ok"
+ },
+ "legends:26": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "b578b74b94",
+  "v": "ok"
+ },
+ "legends:27": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "bb11029d4a",
+  "v": "ok"
+ },
+ "legends:28": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "0818c72dc2",
+  "v": "ok"
+ },
+ "legends:29": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "c2f931145e",
+  "note": "Wrong numbers like 13 read grammatically but implausibly",
+  "v": "ok"
+ },
+ "legends:3": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "dd8a488501",
+  "v": "ok"
+ },
+ "legends:30": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "a3c10683fe",
+  "v": "ok"
+ },
+ "legends:31": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "5f504752d0",
+  "v": "ok"
+ },
+ "legends:32": {
+  "at": "2026-10-16T23:59:07Z",
+  "fix": {
+   "hook": "El Hadary"
+  },
+  "h": "c8d30de559",
+  "note": "A player beats a nation as the hook",
+  "v": "fix"
+ },
+ "legends:33": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "369ad81573",
+  "v": "ok"
+ },
+ "legends:34": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "6ff3cba27a",
+  "v": "ok"
+ },
+ "legends:35": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "31127bbbdd",
+  "v": "ok"
+ },
+ "legends:36": {
+  "at": "2026-10-16T23:59:07Z",
+  "fix": {
+   "ex": "Roger Milla, 38, scored four goals for Cameroon at the 1990 World Cup"
+  },
+  "h": "4888349793",
+  "note": "“aged 38” is British, appositive age reads cleaner",
+  "v": "fix"
+ },
+ "legends:37": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "7b82c9e193",
+  "v": "ok"
+ },
+ "legends:38": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "854c2a9f62",
+  "v": "ok"
+ },
+ "legends:39": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "ba3801a8ac",
+  "v": "ok"
+ },
+ "legends:4": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "bdb97d6f7d",
+  "v": "ok"
+ },
+ "legends:40": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "15a01236ac",
+  "v": "ok"
+ },
+ "legends:41": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "916a72825f",
+  "v": "ok"
+ },
+ "legends:42": {
+  "at": "2026-10-16T23:59:07Z",
+  "fix": {
+   "means": "They had 35 shots to England’s 5"
+  },
+  "h": "2021e17314",
+  "note": "Chicago: numbers in one category stay consistent, 35 and 5",
+  "v": "fix"
+ },
+ "legends:43": {
+  "at": "2026-10-16T23:59:07Z",
+  "fix": {
+   "ex": "Ajax and Johan Cruyff’s Netherlands perfected Total Football"
+  },
+  "h": "1cbfef429a",
+  "note": "“the Netherlands” put the article before the blank, ruling out every other nation. Now active voice and article-free",
+  "v": "fix"
+ },
+ "legends:44": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "6801bfaf40",
+  "v": "ok"
+ },
+ "legends:45": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "e8a55b4c12",
+  "v": "ok"
+ },
+ "legends:46": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "c10dd26b8c",
+  "v": "ok"
+ },
+ "legends:47": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "81b6bcd202",
+  "v": "ok"
+ },
+ "legends:48": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "ecb8f44c68",
+  "v": "ok"
+ },
+ "legends:49": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "8b118c2a8f",
+  "v": "ok"
+ },
+ "legends:5": {
+  "at": "2026-10-16T23:59:07Z",
+  "fix": {
+   "ex": "Andrés Iniesta scored the winner in the 116th minute of the 2010 World Cup final",
+   "hook": "116th minute"
+  },
+  "h": "2b39abc0b1",
+  "note": "“The 2010 final” could be any final, now the World Cup final. Hook moved to a word still in the sentence",
+  "v": "fix"
+ },
+ "legends:50": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "6fe90c3fdc",
+  "v": "ok"
+ },
+ "legends:51": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "f1d73e4df6",
+  "v": "ok"
+ },
+ "legends:52": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "c0fa1ff364",
+  "v": "ok"
+ },
+ "legends:53": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "5cfa33bc37",
+  "v": "ok"
+ },
+ "legends:54": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "b831ea47b9",
+  "v": "ok"
+ },
+ "legends:55": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "4080a7c154",
+  "v": "ok"
+ },
+ "legends:56": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "e3a5e097e7",
+  "v": "ok"
+ },
+ "legends:57": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "dacff647ff",
+  "v": "ok"
+ },
+ "legends:58": {
+  "at": "2026-10-16T23:59:07Z",
+  "fix": {
+   "ex": "Just Fontaine played for Reims when he starred at the 1958 World Cup"
+  },
+  "h": "b722767d9d",
+  "note": "“a Reims striker” would read “a Ajax striker” with one wrong answer",
+  "v": "fix"
+ },
+ "legends:59": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "9a9b02a4d2",
+  "v": "ok"
+ },
+ "legends:6": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "c085f0080a",
+  "v": "ok"
+ },
+ "legends:60": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "8c0d2fb90c",
+  "v": "ok"
+ },
+ "legends:61": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "7a288daa04",
+  "v": "ok"
+ },
+ "legends:62": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "1b24917e2e",
+  "v": "ok"
+ },
+ "legends:63": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "a2b92b5c1c",
+  "note": "English nicknames read a little bare after “nicknamed” but still work",
+  "v": "ok"
+ },
+ "legends:64": {
+  "at": "2026-10-16T23:59:07Z",
+  "fix": {
+   "ex": "Soviet goalkeeper Lev Yashin was known by the nickname Black Spider"
+  },
+  "h": "e8612a7051",
+  "note": "“the ___” ruled out O Rei, Der Kaiser and the other foreign nicknames, “the nickname ___” fits all",
+  "v": "fix"
+ },
+ "legends:65": {
+  "at": "2026-10-16T23:59:07Z",
+  "fix": {
+   "ex": "Portugal’s Eusébio was known by the nickname Black Panther"
+  },
+  "h": "5fa4f6028b",
+  "note": "“the ___” ruled out O Rei, Der Kaiser and the other foreign nicknames, “the nickname ___” fits all",
+  "v": "fix"
+ },
+ "legends:66": {
+  "at": "2026-10-16T23:59:07Z",
+  "fix": {
+   "ex": "Italy’s Roberto Baggio was known by the nickname Divine Ponytail"
+  },
+  "h": "3034b7a13d",
+  "note": "“the ___” ruled out O Rei, Der Kaiser and the other foreign nicknames, “the nickname ___” fits all",
+  "v": "fix"
+ },
+ "legends:67": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "d6882e8b27",
+  "note": "At the 85-character limit but every word earns its place",
+  "v": "ok"
+ },
+ "legends:68": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "6d945a4153",
+  "v": "ok"
+ },
+ "legends:69": {
+  "at": "2026-10-16T23:59:07Z",
+  "fix": {
+   "ex": "Brazil winger Garrincha was known by the nickname Little Bird"
+  },
+  "h": "d9128b97f7",
+  "note": "“the ___” ruled out O Rei, Der Kaiser and the other foreign nicknames, “the nickname ___” fits all",
+  "v": "fix"
+ },
+ "legends:7": {
+  "at": "2026-10-16T23:59:07Z",
+  "fix": {
+   "ex": "Since 2009, FIFA’s award for the year’s best goal has been named for Ferenc Puskás"
+  },
+  "h": "21db5db0fb",
+  "note": "“has honored” could read as Puskás winning it, now “has been named for”",
+  "v": "fix"
+ },
+ "legends:70": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "6ffd650693",
+  "note": "English nicknames read a little bare after “known as” but still work",
+  "v": "ok"
+ },
+ "legends:71": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "250d461df4",
+  "v": "ok"
+ },
+ "legends:8": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "f2ac984eed",
+  "v": "ok"
+ },
+ "legends:9": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "6638388cc2",
+  "v": "ok"
+ },
+ "ligamx:0": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "4e502ae557",
+  "note": "hook is a phrase fragment but nothing more specific is in the sentence",
+  "v": "ok"
+ },
+ "ligamx:1": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "807f4e3733",
+  "v": "ok"
+ },
+ "ligamx:10": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "8d4d01bbd8",
+  "v": "ok"
+ },
+ "ligamx:11": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "1daf5dd4ef",
+  "v": "ok"
+ },
+ "ligamx:12": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "886a047eec",
+  "v": "ok"
+ },
+ "ligamx:13": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "6f2afd5165",
+  "v": "ok"
+ },
+ "ligamx:14": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "d7f7548f12",
+  "v": "ok"
+ },
+ "ligamx:15": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "13eaa84b6f",
+  "v": "ok"
+ },
+ "ligamx:16": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "ff51de17f8",
+  "v": "ok"
+ },
+ "ligamx:17": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "32ff54ca94",
+  "v": "ok"
+ },
+ "ligamx:18": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "6cbe51ccb4",
+  "v": "ok"
+ },
+ "ligamx:19": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "294f009ce3",
+  "v": "ok"
+ },
+ "ligamx:2": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "f1fefb1e79",
+  "v": "ok"
+ },
+ "ligamx:20": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "f117166ca6",
+  "v": "ok"
+ },
+ "ligamx:21": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "658cad6945",
+  "v": "ok"
+ },
+ "ligamx:22": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "2038a22335",
+  "v": "ok"
+ },
+ "ligamx:23": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "51f9c6f86f",
+  "v": "ok"
+ },
+ "ligamx:24": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "c2bf011d94",
+  "note": "“the La Máquina” reads oddly when drawn, but “the” is natural with the other nicknames",
+  "v": "ok"
+ },
+ "ligamx:25": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "df7df19565",
+  "note": "“the La Máquina” reads oddly when drawn, but “the” is natural with the other nicknames",
+  "v": "ok"
+ },
+ "ligamx:26": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "ba1c3e1609",
+  "v": "ok"
+ },
+ "ligamx:27": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "6f0835bc8b",
+  "note": "“the La Máquina” reads oddly when drawn, but “the” is natural with the other nicknames",
+  "v": "ok"
+ },
+ "ligamx:28": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "9324e0057a",
+  "note": "“the La Máquina” reads oddly when drawn, but “the” is natural with the other nicknames",
+  "v": "ok"
+ },
+ "ligamx:29": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "80e1d45c4d",
+  "note": "“the La Máquina” reads oddly when drawn, but “the” is natural with the other nicknames",
+  "v": "ok"
+ },
+ "ligamx:3": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "c4c5b57989",
+  "v": "ok"
+ },
+ "ligamx:30": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "2595f21bc7",
+  "note": "“the La Máquina” reads oddly when drawn, but “the” is natural with the other nicknames",
+  "v": "ok"
+ },
+ "ligamx:31": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "e37f2b4b79",
+  "note": "“the La Máquina” reads oddly when drawn, but “the” is natural with the other nicknames",
+  "v": "ok"
+ },
+ "ligamx:32": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "aa5b4184aa",
+  "note": "“the La Máquina” reads oddly when drawn, but “the” is natural with the other nicknames",
+  "v": "ok"
+ },
+ "ligamx:33": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "9bb4f19942",
+  "note": "hook is weak but the sentence has nothing more specific",
+  "v": "ok"
+ },
+ "ligamx:34": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "9214251e3e",
+  "v": "ok"
+ },
+ "ligamx:35": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "d6f3a3b765",
+  "v": "ok"
+ },
+ "ligamx:36": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "06474c8351",
+  "v": "ok"
+ },
+ "ligamx:37": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "a8a8e8b4dd",
+  "v": "ok"
+ },
+ "ligamx:38": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "2b0d34daaa",
+  "note": "90+5 makes clear latest means clock time",
+  "v": "ok"
+ },
+ "ligamx:39": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "ee8cd584f8",
+  "v": "ok"
+ },
+ "ligamx:4": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "777ebb65c0",
+  "v": "ok"
+ },
+ "ligamx:40": {
+  "at": "2026-10-16T23:58:25Z",
+  "fix": {
+   "ex": "Joel Huiqui won a title with Cruz Azul in his first tournament as a coach, in 2026",
+   "hook": "Cruz Azul",
+   "means": "He was in charge for just 7 games"
+  },
+  "h": "b2d048fa1a",
+  "note": "hook as a coach was filler, moved Cruz Azul from the means into the sentence",
+  "v": "fix"
+ },
+ "ligamx:41": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "b5e2cd149d",
+  "v": "ok"
+ },
+ "ligamx:42": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "906e080ff1",
+  "v": "ok"
+ },
+ "ligamx:43": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "84a05bfd8e",
+  "v": "ok"
+ },
+ "ligamx:44": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "8dfc7e6f5c",
+  "v": "ok"
+ },
+ "ligamx:45": {
+  "at": "2026-10-16T23:58:25Z",
+  "fix": {
+   "ex": "Manuel Lapuente coached Necaxa to league titles in 1994–95 and 1995–96"
+  },
+  "h": "d0784fe8b3",
+  "note": "back-to-back repeated what the two seasons say",
+  "v": "fix"
+ },
+ "ligamx:46": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "8c17ea6e55",
+  "v": "ok"
+ },
+ "ligamx:47": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "84cec404d0",
+  "v": "ok"
+ },
+ "ligamx:48": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "e85262501a",
+  "v": "ok"
+ },
+ "ligamx:49": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "5fe2fadb6d",
+  "v": "ok"
+ },
+ "ligamx:5": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "b306ad9b6d",
+  "v": "ok"
+ },
+ "ligamx:50": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "5dd884c171",
+  "v": "ok"
+ },
+ "ligamx:51": {
+  "at": "2026-10-16T23:58:25Z",
+  "fix": {
+   "ex": "The old record for Liga MX players at a World Cup was set in 1998"
+  },
+  "h": "0c1ff63623",
+  "note": "league players was unclear",
+  "v": "fix"
+ },
+ "ligamx:52": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "c19b76ba57",
+  "v": "ok"
+ },
+ "ligamx:53": {
+  "at": "2026-10-16T23:58:25Z",
+  "fix": {
+   "ex": "With Apertura 2025, Toluca reached 12 league titles"
+  },
+  "h": "80aae666ef",
+  "note": "title number 12 read awkwardly",
+  "v": "fix"
+ },
+ "ligamx:54": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "be62838851",
+  "v": "ok"
+ },
+ "ligamx:55": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "0a2b8041d0",
+  "v": "ok"
+ },
+ "ligamx:56": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "b01c271d29",
+  "v": "ok"
+ },
+ "ligamx:57": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "df3b1336b0",
+  "v": "ok"
+ },
+ "ligamx:58": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "48b065b727",
+  "v": "ok"
+ },
+ "ligamx:59": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "f16b911e2a",
+  "v": "ok"
+ },
+ "ligamx:6": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "888bcb53c3",
+  "v": "ok"
+ },
+ "ligamx:60": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "7ef6e83b63",
+  "v": "ok"
+ },
+ "ligamx:61": {
+  "at": "2026-10-16T23:58:25Z",
+  "fix": {
+   "ex": "Liga MX’s word for each round of league games is Jornada"
+  },
+  "h": "95b7b4be16",
+  "note": "a before the blank ruled out Apertura and Ida",
+  "v": "fix"
+ },
+ "ligamx:62": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "18c1a1a1c9",
+  "v": "ok"
+ },
+ "ligamx:63": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "1f74adff25",
+  "v": "ok"
+ },
+ "ligamx:64": {
+  "at": "2026-10-16T23:58:25Z",
+  "fix": {
+   "ex": "The word for a big rivalry game, like América against Chivas, is Clásico"
+  },
+  "h": "24dd0bfda8",
+  "note": "a before the blank ruled out Apertura and Ida",
+  "v": "fix"
+ },
+ "ligamx:65": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "8694e995e8",
+  "v": "ok"
+ },
+ "ligamx:7": {
+  "at": "2026-10-16T23:58:25Z",
+  "fix": {
+   "ex": "The Clásico Tapatío, Mexico’s oldest rivalry, pits Chivas against Atlas"
+  },
+  "h": "a4d1ef1dd1",
+  "note": "oldest rivalry was unclear without Mexico",
+  "v": "fix"
+ },
+ "ligamx:8": {
+  "at": "2026-10-16T23:58:25Z",
+  "fix": {
+   "means": "Gignac passed his total in 2026"
+  },
+  "h": "5840937f63",
+  "note": "passed him was vague",
+  "v": "fix"
+ },
+ "ligamx:9": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "5d786d5ef5",
   "v": "ok"
  },
  "ligue1:0": {
@@ -3146,22 +5009,14 @@
   "v": "ok"
  },
  "lingo-more:14": {
-  "at": "2026-10-16T23:56:48Z",
-  "fix": {
-   "ex": "The coach and the trainer must stay in the technical area"
-  },
-  "h": "1f530d796b",
-  "note": "Cut a trailing phrase the means line already covers",
-  "v": "fix"
+  "at": "2026-10-16T23:59:29Z",
+  "h": "0be3e89907",
+  "v": "ok"
  },
  "lingo-more:15": {
-  "at": "2026-10-16T23:56:48Z",
-  "fix": {
-   "ex": "The ball sat in the midfield, halfway between the two goals"
-  },
-  "h": "6e42c90243",
-  "note": "Other answers need “the,” so “in midfield” gave it away",
-  "v": "fix"
+  "at": "2026-10-16T23:59:29Z",
+  "h": "7799a2084f",
+  "v": "ok"
  },
  "lingo-more:16": {
   "at": "2026-10-16T23:56:48Z",
@@ -3174,8 +5029,8 @@
   "v": "ok"
  },
  "lingo-more:18": {
-  "at": "2026-10-16T23:56:48Z",
-  "h": "12b23b8461",
+  "at": "2026-10-16T23:59:29Z",
+  "h": "7af059e950",
   "v": "ok"
  },
  "lingo-more:19": {
@@ -3200,8 +5055,8 @@
   "v": "ok"
  },
  "lingo-more:22": {
-  "at": "2026-10-16T23:56:48Z",
-  "h": "a460e5b7f9",
+  "at": "2026-10-16T23:59:29Z",
+  "h": "4ecd1d5061",
   "v": "ok"
  },
  "lingo-more:23": {
@@ -3232,13 +5087,9 @@
   "v": "ok"
  },
  "lingo-more:28": {
-  "at": "2026-10-16T23:56:48Z",
-  "fix": {
-   "ex": "The ball rolled out over the sideline, so the defender took a throw-in"
-  },
-  "h": "0659dcc4dd",
-  "note": "“Out along the sideline” is unclear, the ball must cross it",
-  "v": "fix"
+  "at": "2026-10-16T23:59:29Z",
+  "h": "67926b6183",
+  "v": "ok"
  },
  "lingo-more:29": {
   "at": "2026-10-16T23:56:48Z",
@@ -3341,22 +5192,15 @@
   "v": "ok"
  },
  "lingo-more:46": {
-  "at": "2026-10-16T23:56:48Z",
-  "fix": {
-   "ex": "Under the silver goal rule, the team ahead halfway through extra time won"
-  },
-  "h": "64c83e3540",
-  "note": "Gerund subject and vague “wins it” read clumsily",
-  "v": "fix"
+  "at": "2026-10-16T23:59:29Z",
+  "h": "1c0cccc319",
+  "v": "ok"
  },
  "lingo-more:47": {
-  "at": "2026-10-16T23:56:48Z",
-  "fix": {
-   "ex": "In some cups, each away goal once counted for more than a home goal"
-  },
-  "h": "eb85c8ab6c",
-  "note": "“an ___” fit only away goal",
-  "v": "fix"
+  "at": "2026-10-16T23:59:29Z",
+  "h": "35a10336cd",
+  "note": "goalless reads as nonsense when drawn, rest fit",
+  "v": "ok"
  },
  "lingo-more:48": {
   "at": "2026-10-16T23:56:48Z",
@@ -3474,14 +5318,1055 @@
   "h": "3f40d80e3d",
   "v": "ok"
  },
+ "mls:0": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "496dc2ec22",
+  "v": "ok"
+ },
+ "mls:1": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "d2c31fee3c",
+  "v": "ok"
+ },
+ "mls:10": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "ecbd714ce2",
+  "note": "Reads “The ___” so city-name wrong answers like “The NYCFC” sound a little off, card still works",
+  "v": "ok"
+ },
+ "mls:11": {
+  "at": "2026-10-16T23:58:25Z",
+  "fix": {
+   "ex": "The New York Red Bulls won the Supporters’ Shield in 2013, 2015, and 2018"
+  },
+  "h": "d2c5b5a4f1",
+  "note": "Chicago serial comma",
+  "v": "fix"
+ },
+ "mls:12": {
+  "at": "2026-10-16T23:58:25Z",
+  "fix": {
+   "means": "MLS Cup and U.S. Open Cup"
+  },
+  "h": "b4f18864f8",
+  "note": "means repeated “their first season”",
+  "v": "fix"
+ },
+ "mls:13": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "ef5f66e4ff",
+  "note": "Reads “The ___” so city-name wrong answers like “The NYCFC” sound a little off, card still works",
+  "v": "ok"
+ },
+ "mls:14": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "3cbbfbfbf6",
+  "v": "ok"
+ },
+ "mls:15": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "0a19e6d643",
+  "v": "ok"
+ },
+ "mls:16": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "1dfec3d702",
+  "note": "“in a season in 2019” is a little clunky but clear",
+  "v": "ok"
+ },
+ "mls:17": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "1ab5edbaa6",
+  "v": "ok"
+ },
+ "mls:18": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "91b85e1556",
+  "v": "ok"
+ },
+ "mls:19": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "ba25719744",
+  "v": "ok"
+ },
+ "mls:2": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "ec1835c5b5",
+  "note": "Reads “The ___” so city-name wrong answers like “The NYCFC” sound a little off, card still works",
+  "v": "ok"
+ },
+ "mls:20": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "31c0990991",
+  "v": "ok"
+ },
+ "mls:21": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "6e6d4a4759",
+  "v": "ok"
+ },
+ "mls:22": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "7832d435d0",
+  "v": "ok"
+ },
+ "mls:23": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "e525ea371d",
+  "v": "ok"
+ },
+ "mls:24": {
+  "at": "2026-10-16T23:58:25Z",
+  "fix": {
+   "ex": "Before Lionel Messi, Preki was the only player to win MLS MVP twice"
+  },
+  "h": "2617ef12f2",
+  "note": "Full name lets the draw keep Lionel Messi off the wrong buttons",
+  "v": "fix"
+ },
+ "mls:25": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "674813eb9d",
+  "v": "ok"
+ },
+ "mls:26": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "9df3ff09ec",
+  "v": "ok"
+ },
+ "mls:27": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "79a7d0684a",
+  "v": "ok"
+ },
+ "mls:28": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "82811a87d3",
+  "v": "ok"
+ },
+ "mls:29": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "ddc42179b9",
+  "v": "ok"
+ },
+ "mls:3": {
+  "at": "2026-10-16T23:58:25Z",
+  "fix": {
+   "means": "MLS Cup, Shield, and Canadian title"
+  },
+  "h": "1e33ecbf2b",
+  "note": "Chicago serial comma in means",
+  "v": "fix"
+ },
+ "mls:30": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "e87cc2dce0",
+  "v": "ok"
+ },
+ "mls:31": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "18278f8460",
+  "v": "ok"
+ },
+ "mls:32": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "134f9f14f9",
+  "v": "ok"
+ },
+ "mls:33": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "c6dfe4b16e",
+  "v": "ok"
+ },
+ "mls:34": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "20dc017211",
+  "v": "ok"
+ },
+ "mls:35": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "95445f01bb",
+  "v": "ok"
+ },
+ "mls:36": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "8ca9d5dbde",
+  "v": "ok"
+ },
+ "mls:37": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "2a4e36c55b",
+  "v": "ok"
+ },
+ "mls:38": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "dc1d558669",
+  "v": "ok"
+ },
+ "mls:39": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "fb3676e2f1",
+  "v": "ok"
+ },
+ "mls:4": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "0a9a68046a",
+  "v": "ok"
+ },
+ "mls:40": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "1b817010a7",
+  "v": "ok"
+ },
+ "mls:41": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "890bddd3be",
+  "v": "ok"
+ },
+ "mls:42": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "228fd8bf91",
+  "v": "ok"
+ },
+ "mls:43": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "9856fa9f31",
+  "v": "ok"
+ },
+ "mls:44": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "03471ce481",
+  "v": "ok"
+ },
+ "mls:45": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "d7dacf9f0b",
+  "v": "ok"
+ },
+ "mls:46": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "3a03b7b882",
+  "v": "ok"
+ },
+ "mls:47": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "916258b649",
+  "v": "ok"
+ },
+ "mls:48": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "3745d47c8a",
+  "v": "ok"
+ },
+ "mls:49": {
+  "at": "2026-10-16T23:58:25Z",
+  "fix": {
+   "means": "San Diego FC were the 30th"
+  },
+  "h": "466090e965",
+  "note": "San Diego FC take a plural verb",
+  "v": "fix"
+ },
+ "mls:5": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "395c404b4c",
+  "v": "ok"
+ },
+ "mls:50": {
+  "at": "2026-10-16T23:58:25Z",
+  "fix": {
+   "means": "Tampa Bay were one of them"
+  },
+  "h": "3abf41e290",
+  "note": "Tampa Bay take a plural verb",
+  "v": "fix"
+ },
+ "mls:51": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "c9dcd9d472",
+  "v": "ok"
+ },
+ "mls:52": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "2c7039bd56",
+  "v": "ok"
+ },
+ "mls:53": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "648ecfdcd2",
+  "v": "ok"
+ },
+ "mls:54": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "303c31b33a",
+  "v": "ok"
+ },
+ "mls:55": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "e98890180e",
+  "v": "ok"
+ },
+ "mls:56": {
+  "at": "2026-10-16T23:58:25Z",
+  "fix": {
+   "ex": "Each season, the league’s top scorer wins the Golden Boot",
+   "hook": "top scorer"
+  },
+  "h": "9ba4b1aae2",
+  "note": "goalscorer is not in Merriam-Webster, top scorer is plain",
+  "v": "fix"
+ },
+ "mls:57": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "edc01ee7cc",
+  "v": "ok"
+ },
+ "mls:58": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "8c0cbed5a4",
+  "note": "Wrong answers like “the Concacaf Golden Boot” read as nonsense, card still works",
+  "v": "ok"
+ },
+ "mls:59": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "22fd928fcb",
+  "note": "Some wrong answers like “first Leagues Cup award” read oddly, card still works",
+  "v": "ok"
+ },
+ "mls:6": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "298d5d1bcd",
+  "v": "ok"
+ },
+ "mls:60": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "bd0e9d7dc0",
+  "v": "ok"
+ },
+ "mls:7": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "2fd4de5ef1",
+  "note": "Reads “The ___” so city-name wrong answers like “The NYCFC” sound a little off, card still works",
+  "v": "ok"
+ },
+ "mls:8": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "c988d06208",
+  "note": "Reads “The ___” so city-name wrong answers like “The NYCFC” sound a little off, card still works",
+  "v": "ok"
+ },
+ "mls:9": {
+  "at": "2026-10-16T23:58:25Z",
+  "h": "dff6c9ea3f",
+  "note": "Reads “The ___” so city-name wrong answers like “The NYCFC” sound a little off, card still works",
+  "v": "ok"
+ },
+ "nicknames:0": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "aa49098494",
+  "v": "ok"
+ },
+ "nicknames:1": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "a8eff0e6d3",
+  "v": "ok"
+ },
+ "nicknames:10": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "ed14b534b1",
+  "v": "ok"
+ },
+ "nicknames:11": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "3037f6c2f3",
+  "v": "ok"
+ },
+ "nicknames:12": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "b5f5800dc1",
+  "v": "ok"
+ },
+ "nicknames:13": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "6df4473a45",
+  "v": "ok"
+ },
+ "nicknames:14": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "8a8c6f206c",
+  "v": "ok"
+ },
+ "nicknames:15": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "3cedb22afe",
+  "v": "ok"
+ },
+ "nicknames:16": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "0161512706",
+  "v": "ok"
+ },
+ "nicknames:17": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "f459c15958",
+  "v": "ok"
+ },
+ "nicknames:18": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "ca57cb17ca",
+  "v": "ok"
+ },
+ "nicknames:19": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "2bd53089b5",
+  "v": "ok"
+ },
+ "nicknames:2": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "1b15ed7fef",
+  "v": "ok"
+ },
+ "nicknames:20": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "be920e9f3e",
+  "v": "ok"
+ },
+ "nicknames:21": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "7681066460",
+  "note": "means adds little, could use a fact",
+  "v": "ok"
+ },
+ "nicknames:22": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "e5c8235518",
+  "v": "ok"
+ },
+ "nicknames:23": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "3795cec161",
+  "v": "ok"
+ },
+ "nicknames:24": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "4755b7a037",
+  "v": "ok"
+ },
+ "nicknames:25": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "8c5542c0dd",
+  "v": "ok"
+ },
+ "nicknames:26": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "c32aafa73e",
+  "note": "wrong answers read fine as the Bundesliga X",
+  "v": "ok"
+ },
+ "nicknames:27": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "e0658b8d4d",
+  "v": "ok"
+ },
+ "nicknames:28": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "dd743c2ab4",
+  "v": "ok"
+ },
+ "nicknames:29": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "b49cbc1321",
+  "v": "ok"
+ },
+ "nicknames:3": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "3c55acff45",
+  "v": "ok"
+ },
+ "nicknames:30": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "6814703e52",
+  "v": "ok"
+ },
+ "nicknames:31": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "e0ecee8d00",
+  "v": "ok"
+ },
+ "nicknames:32": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "96b4c7daa9",
+  "v": "ok"
+ },
+ "nicknames:33": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "bc5d2b9fbe",
+  "v": "ok"
+ },
+ "nicknames:34": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "7a5b479f1e",
+  "v": "ok"
+ },
+ "nicknames:35": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "e81eb23c97",
+  "v": "ok"
+ },
+ "nicknames:36": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "e61d4e4164",
+  "v": "ok"
+ },
+ "nicknames:37": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "033bac269a",
+  "v": "ok"
+ },
+ "nicknames:38": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "73c95a3389",
+  "v": "ok"
+ },
+ "nicknames:39": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "71c49c41b0",
+  "v": "ok"
+ },
+ "nicknames:4": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "b42ca8a6e1",
+  "v": "ok"
+ },
+ "nicknames:40": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "e6e00a9a03",
+  "v": "ok"
+ },
+ "nicknames:41": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "231b516538",
+  "v": "ok"
+ },
+ "nicknames:42": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "28a37cf6b2",
+  "v": "ok"
+ },
+ "nicknames:43": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "cfe11036f0",
+  "v": "ok"
+ },
+ "nicknames:44": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "c519f49fb4",
+  "v": "ok"
+ },
+ "nicknames:45": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "fa2815ba6f",
+  "note": "wrong answers like island or hey read a little odd after means, but the card works",
+  "v": "ok"
+ },
+ "nicknames:46": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "7bd4b688cd",
+  "v": "ok"
+ },
+ "nicknames:47": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "a05777d6b3",
+  "v": "ok"
+ },
+ "nicknames:48": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "c6aad97241",
+  "v": "ok"
+ },
+ "nicknames:49": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "a3e404dcd0",
+  "v": "ok"
+ },
+ "nicknames:5": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "61b992476b",
+  "v": "ok"
+ },
+ "nicknames:50": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "9f60b95ea6",
+  "note": "means adds little. Most wrong answers read as odd English after saying, but the card works",
+  "v": "ok"
+ },
+ "nicknames:51": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "dac9296dc4",
+  "v": "ok"
+ },
+ "nicknames:52": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "e1fcfa168b",
+  "v": "ok"
+ },
+ "nicknames:53": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "ebe9321a28",
+  "v": "ok"
+ },
+ "nicknames:54": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "2b09ce3a69",
+  "v": "ok"
+ },
+ "nicknames:55": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "fed42e65db",
+  "v": "ok"
+ },
+ "nicknames:56": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "299a02baba",
+  "v": "ok"
+ },
+ "nicknames:57": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "52e786984a",
+  "v": "ok"
+ },
+ "nicknames:58": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "417fb6d7f3",
+  "note": "some wrong answers (the hey, the oak) read as nonsense but the card works",
+  "v": "ok"
+ },
+ "nicknames:59": {
+  "at": "2026-10-16T23:58:53Z",
+  "fix": {
+   "ex": "Las Palmas fans chant “Pío-Pío,” the song of the canary"
+  },
+  "h": "095fa939b6",
+  "note": "“a canary” ruled out the many plural and vowel-initial wrong answers by grammar. “the canary” fits them all",
+  "v": "fix"
+ },
+ "nicknames:6": {
+  "at": "2026-10-16T23:58:53Z",
+  "fix": {
+   "ex": "Bournemouth may owe their nickname, the Cherries, to their red-striped shirts"
+  },
+  "h": "6dedc09141",
+  "note": "“May be the Cherries” read as if the nickname itself was in doubt. Moved the may to the reason. red-striped takes a hyphen before a noun",
+  "v": "fix"
+ },
+ "nicknames:60": {
+  "at": "2026-10-16T23:58:53Z",
+  "fix": {
+   "ex": "Real Oviedo’s nickname Carbayones comes from the city’s famous old oak"
+  },
+  "h": "34b2f52fba",
+  "note": "“a famous old” ruled out most wrong answers, which are plural or start with a vowel. “the city’s” fits them all, city meaning Oviedo, for the fact checker",
+  "v": "fix"
+ },
+ "nicknames:61": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "bdb3487a76",
+  "v": "ok"
+ },
+ "nicknames:62": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "063663fecc",
+  "v": "ok"
+ },
+ "nicknames:63": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "c3fd8b6473",
+  "v": "ok"
+ },
+ "nicknames:64": {
+  "at": "2026-10-16T23:58:53Z",
+  "fix": {
+   "ex": "Werder, as in Werder Bremen, means island in a river"
+  },
+  "h": "7019f182aa",
+  "note": "“a small river” ruled out most wrong answers, which are plural or start with a vowel. Gloss form with no article fits them all",
+  "v": "fix"
+ },
+ "nicknames:7": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "8b9c6b6618",
+  "v": "ok"
+ },
+ "nicknames:8": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "8bbe80df93",
+  "v": "ok"
+ },
+ "nicknames:9": {
+  "at": "2026-10-16T23:58:53Z",
+  "h": "eb42f42fdb",
+  "v": "ok"
+ },
+ "nwsl:0": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "217f5d0406",
+  "v": "ok"
+ },
+ "nwsl:1": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "6adac53c84",
+  "v": "ok"
+ },
+ "nwsl:10": {
+  "at": "2026-10-16T23:58:42Z",
+  "fix": {
+   "means": "More than double Boston’s opening crowd"
+  },
+  "h": "36e0bf4930",
+  "note": "opener crowd was a clumsy noun stack",
+  "v": "fix"
+ },
+ "nwsl:11": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "5f40716d51",
+  "v": "ok"
+ },
+ "nwsl:12": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "0627ed8659",
+  "note": "hook leans on record but nothing better in the sentence",
+  "v": "ok"
+ },
+ "nwsl:13": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "ccb63184b0",
+  "v": "ok"
+ },
+ "nwsl:14": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "400e61b1a8",
+  "v": "ok"
+ },
+ "nwsl:15": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "053d351574",
+  "v": "ok"
+ },
+ "nwsl:16": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "c8c8d0fcb1",
+  "v": "ok"
+ },
+ "nwsl:17": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "a300782318",
+  "v": "ok"
+ },
+ "nwsl:18": {
+  "at": "2026-10-16T23:58:42Z",
+  "fix": {
+   "ex": "The Wave retired Alex Morgan’s No. 13 shirt"
+  },
+  "h": "678dea3edf",
+  "note": "possessive reads shorter and plainer, every name fits ___’s",
+  "v": "fix"
+ },
+ "nwsl:19": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "390a7c6df7",
+  "v": "ok"
+ },
+ "nwsl:2": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "436a5ab008",
+  "v": "ok"
+ },
+ "nwsl:20": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "ebf0981898",
+  "v": "ok"
+ },
+ "nwsl:21": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "8fe6662bc4",
+  "v": "ok"
+ },
+ "nwsl:22": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "4cca6c362e",
+  "v": "ok"
+ },
+ "nwsl:23": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "0e4f39ecf3",
+  "v": "ok"
+ },
+ "nwsl:24": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "e752212b72",
+  "v": "ok"
+ },
+ "nwsl:25": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "da820a42ae",
+  "v": "ok"
+ },
+ "nwsl:26": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "345d49725f",
+  "v": "ok"
+ },
+ "nwsl:27": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "ab31e9d32d",
+  "v": "ok"
+ },
+ "nwsl:28": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "8dcac83a10",
+  "v": "ok"
+ },
+ "nwsl:29": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "e6e855d497",
+  "v": "ok"
+ },
+ "nwsl:3": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "ebd5588eed",
+  "v": "ok"
+ },
+ "nwsl:30": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "760db1010f",
+  "v": "ok"
+ },
+ "nwsl:31": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "6033f93ea5",
+  "note": "82 characters, near the limit but clear",
+  "v": "ok"
+ },
+ "nwsl:32": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "12ad25515e",
+  "v": "ok"
+ },
+ "nwsl:33": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "51f99116c9",
+  "v": "ok"
+ },
+ "nwsl:34": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "16671342ee",
+  "v": "ok"
+ },
+ "nwsl:35": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "9be2e70fe2",
+  "v": "ok"
+ },
+ "nwsl:36": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "8ebe0c60ab",
+  "v": "ok"
+ },
+ "nwsl:37": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "aeb9d72271",
+  "v": "ok"
+ },
+ "nwsl:38": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "ec1f6fc216",
+  "v": "ok"
+ },
+ "nwsl:39": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "2a2416dbf7",
+  "note": "Ironwoman, draft and Golden Boot read oddly after on, card still works",
+  "v": "ok"
+ },
+ "nwsl:4": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "aacff98034",
+  "v": "ok"
+ },
+ "nwsl:40": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "2cd9d8a51f",
+  "note": "lowercase draft stands out among capitalized wrong answers, grammar still fits",
+  "v": "ok"
+ },
+ "nwsl:41": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "2463cda291",
+  "v": "ok"
+ },
+ "nwsl:42": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "bc627483aa",
+  "v": "ok"
+ },
+ "nwsl:43": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "0d2553c0d2",
+  "v": "ok"
+ },
+ "nwsl:44": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "68522eedb5",
+  "v": "ok"
+ },
+ "nwsl:45": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "9dfb00bfdd",
+  "v": "ok"
+ },
+ "nwsl:46": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "afdd1848bc",
+  "v": "ok"
+ },
+ "nwsl:47": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "e82d274436",
+  "note": "hook is general but nothing better in the sentence",
+  "v": "ok"
+ },
+ "nwsl:48": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "ebf96a1452",
+  "v": "ok"
+ },
+ "nwsl:49": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "1ac24623db",
+  "v": "ok"
+ },
+ "nwsl:5": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "bd49f1360d",
+  "v": "ok"
+ },
+ "nwsl:50": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "87ffd1213f",
+  "v": "ok"
+ },
+ "nwsl:51": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "9be248ab30",
+  "v": "ok"
+ },
+ "nwsl:52": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "d3e705ed79",
+  "v": "ok"
+ },
+ "nwsl:53": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "93d7ecc2da",
+  "v": "ok"
+ },
+ "nwsl:54": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "a295883be1",
+  "v": "ok"
+ },
+ "nwsl:55": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "e22a77dd30",
+  "v": "ok"
+ },
+ "nwsl:56": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "fb90e68bd7",
+  "v": "ok"
+ },
+ "nwsl:57": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "69df44891e",
+  "v": "ok"
+ },
+ "nwsl:58": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "22918c9b48",
+  "v": "ok"
+ },
+ "nwsl:59": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "383a66b595",
+  "v": "ok"
+ },
+ "nwsl:6": {
+  "at": "2026-10-16T23:58:42Z",
+  "fix": {
+   "means": "The city’s first major-league title"
+  },
+  "h": "9ac970fbdf",
+  "note": "major-league takes a hyphen as an adjective per MW",
+  "v": "fix"
+ },
+ "nwsl:60": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "3762afcc26",
+  "v": "ok"
+ },
+ "nwsl:61": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "6d19137dbb",
+  "v": "ok"
+ },
+ "nwsl:62": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "fe29762eec",
+  "v": "ok"
+ },
+ "nwsl:63": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "81d6b03429",
+  "v": "ok"
+ },
+ "nwsl:64": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "d888e574aa",
+  "v": "ok"
+ },
+ "nwsl:65": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "9871c5e758",
+  "v": "ok"
+ },
+ "nwsl:66": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "6066620c63",
+  "v": "ok"
+ },
+ "nwsl:7": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "e6848dc9cb",
+  "v": "ok"
+ },
+ "nwsl:8": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "66da97ec64",
+  "v": "ok"
+ },
+ "nwsl:9": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "b9505ba90a",
+  "v": "ok"
+ },
  "parents:0": {
   "at": "2026-10-16T23:55:41Z",
   "h": "353220e0e1",
   "v": "ok"
  },
  "parents:1": {
-  "at": "2026-10-16T23:55:41Z",
-  "h": "27ea3d1c33",
+  "at": "2026-10-16T23:59:29Z",
+  "h": "9e894650e7",
   "v": "ok"
  },
  "parents:10": {
@@ -3501,13 +6386,9 @@
   "v": "ok"
  },
  "parents:13": {
-  "at": "2026-10-16T23:55:41Z",
-  "fix": {
-   "hook": "final"
-  },
-  "h": "322afe38e8",
-  "note": "Hook was Mom, the final is the key soccer word",
-  "v": "fix"
+  "at": "2026-10-16T23:59:29Z",
+  "h": "39015e3c00",
+  "v": "ok"
  },
  "parents:14": {
   "at": "2026-10-16T23:55:41Z",
@@ -3515,13 +6396,9 @@
   "v": "ok"
  },
  "parents:15": {
-  "at": "2026-10-16T23:55:41Z",
-  "fix": {
-   "ex": "When the other team bragged they would win, the captain said “as if”"
-  },
-  "h": "8a5dbd5a67",
-  "note": "Said appeared twice, bragged is more concrete",
-  "v": "fix"
+  "at": "2026-10-16T23:59:29Z",
+  "h": "7fa199b5a2",
+  "v": "ok"
  },
  "parents:16": {
   "at": "2026-10-16T23:55:41Z",
@@ -3529,8 +6406,8 @@
   "v": "ok"
  },
  "parents:17": {
-  "at": "2026-10-16T23:55:41Z",
-  "h": "6858bc0221",
+  "at": "2026-10-16T23:59:29Z",
+  "h": "569fe6fa86",
   "v": "ok"
  },
  "parents:18": {
@@ -3544,8 +6421,8 @@
   "v": "ok"
  },
  "parents:2": {
-  "at": "2026-10-16T23:55:41Z",
-  "h": "23629582b4",
+  "at": "2026-10-16T23:59:29Z",
+  "h": "0c4a50db2e",
   "v": "ok"
  },
  "parents:20": {
@@ -3559,13 +6436,9 @@
   "v": "ok"
  },
  "parents:22": {
-  "at": "2026-10-16T23:55:41Z",
-  "fix": {
-   "ex": "When the coach said to hustle, Dad nodded and said “word”"
-  },
-  "h": "14e0bd4b45",
-  "note": "Cut needless words, agreed also repeated the means",
-  "v": "fix"
+  "at": "2026-10-16T23:59:29Z",
+  "h": "46c7f1363a",
+  "v": "ok"
  },
  "parents:23": {
   "at": "2026-10-16T23:55:41Z",
@@ -3594,13 +6467,9 @@
   "v": "ok"
  },
  "parents:28": {
-  "at": "2026-10-16T23:55:41Z",
-  "fix": {
-   "ex": "The keeper let in one goal, but the coach just said “no biggie”"
-  },
-  "h": "ea22d79972",
-  "note": "Bare it was ___ slot ruled out most exclamations by grammar, quoting fits them all",
-  "v": "fix"
+  "at": "2026-10-16T23:59:29Z",
+  "h": "4283575034",
+  "v": "ok"
  },
  "parents:29": {
   "at": "2026-10-16T23:55:41Z",
@@ -3621,8 +6490,8 @@
   "v": "ok"
  },
  "parents:31": {
-  "at": "2026-10-16T23:55:41Z",
-  "h": "070765485c",
+  "at": "2026-10-16T23:59:29Z",
+  "h": "7004c25c2c",
   "v": "ok"
  },
  "parents:32": {
@@ -3641,22 +6510,14 @@
   "v": "ok"
  },
  "parents:35": {
-  "at": "2026-10-16T23:55:41Z",
-  "fix": {
-   "ex": "The trophy’s bling was so bright that Dad wore sunglasses"
-  },
-  "h": "1cc1d18eaf",
-  "note": "so much ___ needs a mass noun and ruled out most wrong answers, shiny dropped since the means says it",
-  "v": "fix"
+  "at": "2026-10-16T23:59:29Z",
+  "h": "f246a62ae1",
+  "v": "ok"
  },
  "parents:36": {
-  "at": "2026-10-16T23:55:41Z",
-  "fix": {
-   "ex": "The coach gave the keeper her props for that diving save"
-  },
-  "h": "9c9adac614",
-  "note": "gave the keeper ___ ruled out singular nouns, her ___ fits all and is the natural idiom",
-  "v": "fix"
+  "at": "2026-10-16T23:59:29Z",
+  "h": "e0671c8c70",
+  "v": "ok"
  },
  "parents:37": {
   "at": "2026-10-16T23:55:41Z",
@@ -3670,9 +6531,8 @@
   "v": "ok"
  },
  "parents:39": {
-  "at": "2026-10-16T23:55:41Z",
-  "h": "edaee03e5b",
-  "note": "a ___ rules out peeps, props, kicks and bling, others fit",
+  "at": "2026-10-16T23:59:29Z",
+  "h": "ddc6785923",
   "v": "ok"
  },
  "parents:4": {
@@ -3681,13 +6541,9 @@
   "v": "ok"
  },
  "parents:40": {
-  "at": "2026-10-16T23:55:41Z",
-  "fix": {
-   "hook": "ref"
-  },
-  "h": "b250563aa8",
-  "note": "Hook ref is the key soccer word, yelled was weak",
-  "v": "fix"
+  "at": "2026-10-16T23:59:29Z",
+  "h": "84f15fd2c6",
+  "v": "ok"
  },
  "parents:41": {
   "at": "2026-10-16T23:55:41Z",
@@ -3751,13 +6607,13 @@
   "v": "ok"
  },
  "parents:7": {
-  "at": "2026-10-16T23:55:41Z",
-  "h": "e92f209502",
+  "at": "2026-10-16T23:59:29Z",
+  "h": "98871058c6",
   "v": "ok"
  },
  "parents:8": {
-  "at": "2026-10-16T23:55:41Z",
-  "h": "64f56f535c",
+  "at": "2026-10-16T23:59:29Z",
+  "h": "d025ef726a",
   "v": "ok"
  },
  "parents:9": {
@@ -4776,6 +7632,778 @@
  "soccer:9": {
   "at": "2026-10-16T23:56:37Z",
   "h": "e44bf8fb9d",
+  "v": "ok"
+ },
+ "ucl:0": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "00f54250cb",
+  "v": "ok"
+ },
+ "ucl:1": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "8665c963c4",
+  "v": "ok"
+ },
+ "ucl:10": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "ea6e5849b5",
+  "v": "ok"
+ },
+ "ucl:11": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "2a144ddda6",
+  "v": "ok"
+ },
+ "ucl:12": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "eb228104d0",
+  "v": "ok"
+ },
+ "ucl:13": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "82daaf7550",
+  "v": "ok"
+ },
+ "ucl:14": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "0b13fd8963",
+  "v": "ok"
+ },
+ "ucl:15": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "4a3cbdaa04",
+  "v": "ok"
+ },
+ "ucl:16": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "38d3dfe8c8",
+  "v": "ok"
+ },
+ "ucl:17": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "65a3118291",
+  "v": "ok"
+ },
+ "ucl:18": {
+  "at": "2026-10-16T23:58:42Z",
+  "fix": {
+   "ex": "Cristiano Ronaldo holds the Champions League records for goals and appearances"
+  },
+  "h": "1fcecd4e71",
+  "note": "all-time records read as career records, named the competition",
+  "v": "fix"
+ },
+ "ucl:19": {
+  "at": "2026-10-16T23:58:42Z",
+  "fix": {
+   "ex": "Lionel Messi is second on the Champions League scoring list with 129 goals"
+  },
+  "h": "b794ad1d0e",
+  "note": "all-time scoring list read as career goals, named the competition",
+  "v": "fix"
+ },
+ "ucl:2": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "a1c3a60560",
+  "v": "ok"
+ },
+ "ucl:20": {
+  "at": "2026-10-16T23:58:42Z",
+  "fix": {
+   "ex": "Robert Lewandowski is third on the Champions League scoring list with 109 goals"
+  },
+  "h": "90d2bb880b",
+  "note": "all-time scoring list read as career goals, named the competition",
+  "v": "fix"
+ },
+ "ucl:21": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "15323e94d8",
+  "v": "ok"
+ },
+ "ucl:22": {
+  "at": "2026-10-16T23:58:42Z",
+  "fix": {
+   "ex": "Kylian Mbappé was the Champions League top scorer in 2025–26 with 15 goals"
+  },
+  "h": "3a24343b12",
+  "note": "top scorer of a season with no competition named was ambiguous",
+  "v": "fix"
+ },
+ "ucl:23": {
+  "at": "2026-10-16T23:58:42Z",
+  "fix": {
+   "ex": "Erling Haaland was the Champions League top scorer in 2022–23 with 12 goals"
+  },
+  "h": "dc20b8553f",
+  "note": "top scorer of a season with no competition named was ambiguous",
+  "v": "fix"
+ },
+ "ucl:24": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "e6961d9bd0",
+  "v": "ok"
+ },
+ "ucl:25": {
+  "at": "2026-10-16T23:58:42Z",
+  "fix": {
+   "hook": "Chelsea"
+  },
+  "h": "22d55a9f1e",
+  "note": "hook was a bare final year, Chelsea is the specific club name",
+  "v": "fix"
+ },
+ "ucl:26": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "c8b2fea500",
+  "v": "ok"
+ },
+ "ucl:27": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "937c8e3f6d",
+  "v": "ok"
+ },
+ "ucl:28": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "e7da32ceb5",
+  "v": "ok"
+ },
+ "ucl:29": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "f439b3e5da",
+  "v": "ok"
+ },
+ "ucl:3": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "510d7e78b7",
+  "v": "ok"
+ },
+ "ucl:30": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "d77aa9452f",
+  "v": "ok"
+ },
+ "ucl:31": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "52c55e02d2",
+  "v": "ok"
+ },
+ "ucl:32": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "a3b9632f3d",
+  "v": "ok"
+ },
+ "ucl:33": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "c8b352f0f7",
+  "v": "ok"
+ },
+ "ucl:34": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "f857c971cd",
+  "v": "ok"
+ },
+ "ucl:35": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "034a4d097b",
+  "v": "ok"
+ },
+ "ucl:36": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "bc20519058",
+  "v": "ok"
+ },
+ "ucl:37": {
+  "at": "2026-10-16T23:58:42Z",
+  "fix": {
+   "hook": "Chelsea"
+  },
+  "h": "96309fad5d",
+  "note": "hook was a bare final year, Chelsea is the specific club name",
+  "v": "fix"
+ },
+ "ucl:38": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "1aa227c8cb",
+  "v": "ok"
+ },
+ "ucl:39": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "b17be5ea0b",
+  "v": "ok"
+ },
+ "ucl:4": {
+  "at": "2026-10-16T23:58:42Z",
+  "fix": {
+   "ex": "In 2020, Bayern Munich beat Paris Saint-Germain in the final",
+   "hook": "Paris"
+  },
+  "h": "9598434747",
+  "note": "Bayern Munich could be drawn as a wrong answer beside PSG, spelled the name out so the draw skips it",
+  "v": "fix"
+ },
+ "ucl:40": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "67dd2d0f44",
+  "v": "ok"
+ },
+ "ucl:41": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "b78d69998d",
+  "v": "ok"
+ },
+ "ucl:42": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "5fca5201a1",
+  "v": "ok"
+ },
+ "ucl:43": {
+  "at": "2026-10-16T23:58:42Z",
+  "fix": {
+   "ex": "Real Madrid beat Liverpool at Stade de France in 2022"
+  },
+  "h": "bc0cab7bba",
+  "note": "“at the ___” ruled out Wembley, Old Trafford and the other venues that take no article",
+  "v": "fix"
+ },
+ "ucl:44": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "78b48ce60b",
+  "v": "ok"
+ },
+ "ucl:45": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "ac81b00d4b",
+  "v": "ok"
+ },
+ "ucl:46": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "0233919f8e",
+  "v": "ok"
+ },
+ "ucl:47": {
+  "at": "2026-10-16T23:58:42Z",
+  "fix": {
+   "ex": "Umeå lost the first women’s final, in 2002, at Waldstadion"
+  },
+  "h": "0c9e59a1f4",
+  "note": "“at the ___” ruled out Wembley, Old Trafford and the other venues that take no article",
+  "v": "fix"
+ },
+ "ucl:48": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "c2a03a22d1",
+  "v": "ok"
+ },
+ "ucl:49": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "822dfa790e",
+  "v": "ok"
+ },
+ "ucl:5": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "04dcf41518",
+  "v": "ok"
+ },
+ "ucl:50": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "b7c5bd495a",
+  "v": "ok"
+ },
+ "ucl:51": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "782d9ba4e5",
+  "v": "ok"
+ },
+ "ucl:52": {
+  "at": "2026-10-16T23:58:42Z",
+  "fix": {
+   "ex": "Turbine Potsdam won the first final under the Champions League name, in Getafe",
+   "means": "They beat Lyon 7–6 on penalties in 2010"
+  },
+  "h": "bbc67d3f05",
+  "note": "“first Women’s Champions League final” clashed with the 2002 first final card, now says first under the new name, year moved out to fit 85 characters",
+  "v": "fix"
+ },
+ "ucl:53": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "ebf5aa9aff",
+  "v": "ok"
+ },
+ "ucl:54": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "1fe7c15981",
+  "v": "ok"
+ },
+ "ucl:55": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "724475ac44",
+  "note": "141 reads as nonsense here but the grammar fits every number",
+  "v": "ok"
+ },
+ "ucl:56": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "7bab1572c0",
+  "note": "141 reads as nonsense here but the grammar fits every number",
+  "v": "ok"
+ },
+ "ucl:57": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "4dc8c3b62e",
+  "note": "141 reads as nonsense here but the grammar fits every number",
+  "v": "ok"
+ },
+ "ucl:58": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "b5c866fe8b",
+  "v": "ok"
+ },
+ "ucl:59": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "5f168cda8e",
+  "v": "ok"
+ },
+ "ucl:6": {
+  "at": "2026-10-16T23:58:42Z",
+  "fix": {
+   "ex": "In 1982, Aston Villa beat Bayern Munich in the European Cup final"
+  },
+  "h": "cb69e715ab",
+  "note": "Bayern Munich could be drawn as a wrong answer against plain Bayern, spelled the name out so the draw skips it",
+  "v": "fix"
+ },
+ "ucl:60": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "a01c383371",
+  "v": "ok"
+ },
+ "ucl:61": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "fdb89e2762",
+  "v": "ok"
+ },
+ "ucl:62": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "12c155d32b",
+  "v": "ok"
+ },
+ "ucl:63": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "662a263663",
+  "v": "ok"
+ },
+ "ucl:64": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "1aceea4cdc",
+  "v": "ok"
+ },
+ "ucl:65": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "a27fc9b60b",
+  "v": "ok"
+ },
+ "ucl:66": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "9690592c86",
+  "v": "ok"
+ },
+ "ucl:7": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "bcf3b8877a",
+  "v": "ok"
+ },
+ "ucl:8": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "1d020b0e87",
+  "v": "ok"
+ },
+ "ucl:9": {
+  "at": "2026-10-16T23:58:42Z",
+  "h": "0af7c31e06",
+  "note": "hook Europe is general but the sentence has nothing more specific",
+  "v": "ok"
+ },
+ "wc26:0": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "6838138df5",
+  "v": "ok"
+ },
+ "wc26:1": {
+  "at": "2026-10-16T23:59:07Z",
+  "fix": {
+   "ex": "Defending champions Argentina lost the final in extra time",
+   "hook": "champions"
+  },
+  "h": "f4268c8aaa",
+  "note": "Argentina take a plural noun like Uruguay and Brazil in this deck, hook follows the sentence",
+  "v": "fix"
+ },
+ "wc26:10": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "ced41f4901",
+  "v": "ok"
+ },
+ "wc26:11": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "b1037d43e8",
+  "v": "ok"
+ },
+ "wc26:12": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "2b90794c38",
+  "v": "ok"
+ },
+ "wc26:13": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "e21db18e72",
+  "v": "ok"
+ },
+ "wc26:14": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "19c4ef0539",
+  "v": "ok"
+ },
+ "wc26:15": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "a2834a265e",
+  "v": "ok"
+ },
+ "wc26:16": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "9c97c797e8",
+  "v": "ok"
+ },
+ "wc26:17": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "199d9dac12",
+  "v": "ok"
+ },
+ "wc26:18": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "d52b00564a",
+  "v": "ok"
+ },
+ "wc26:19": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "69372ab769",
+  "v": "ok"
+ },
+ "wc26:2": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "325816302e",
+  "v": "ok"
+ },
+ "wc26:20": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "27359d0c01",
+  "v": "ok"
+ },
+ "wc26:21": {
+  "at": "2026-10-16T23:59:07Z",
+  "fix": {
+   "hook": "Argentina"
+  },
+  "h": "96b077311a",
+  "note": "Argentina is the most specific, tempting word, 2026 final was weak",
+  "v": "fix"
+ },
+ "wc26:22": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "c5ce09059d",
+  "v": "ok"
+ },
+ "wc26:23": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "0f52215033",
+  "v": "ok"
+ },
+ "wc26:24": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "12b29ac54c",
+  "v": "ok"
+ },
+ "wc26:25": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "5bdd2c9034",
+  "v": "ok"
+ },
+ "wc26:26": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "9205ce421f",
+  "v": "ok"
+ },
+ "wc26:27": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "78f615d70a",
+  "v": "ok"
+ },
+ "wc26:28": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "745d98b67c",
+  "v": "ok"
+ },
+ "wc26:29": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "c6d16dca10",
+  "v": "ok"
+ },
+ "wc26:3": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "71a80521d1",
+  "v": "ok"
+ },
+ "wc26:30": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "eeba4d9dce",
+  "v": "ok"
+ },
+ "wc26:31": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "0203b1eb3b",
+  "v": "ok"
+ },
+ "wc26:32": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "226fc543e2",
+  "v": "ok"
+ },
+ "wc26:33": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "47d70f1006",
+  "note": "as the tournament’s best player teaches the award but narrows the choice, fine for a medium card",
+  "v": "ok"
+ },
+ "wc26:34": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "b1bf31482f",
+  "v": "ok"
+ },
+ "wc26:35": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "7eb0b2ef92",
+  "v": "ok"
+ },
+ "wc26:36": {
+  "at": "2026-10-16T23:59:07Z",
+  "fix": {
+   "ex": "At 19, Pau Cubarsí won the Young Player Award",
+   "means": "Best player aged 21 or under"
+  },
+  "h": "e7db8fccf7",
+  "note": "sentence defined the award and ran to 83 characters, the definition moves to means",
+  "v": "fix"
+ },
+ "wc26:37": {
+  "at": "2026-10-16T23:59:07Z",
+  "fix": {
+   "ex": "Kylian Mbappé won the Bronze Ball as the tournament’s third-best player"
+  },
+  "h": "2adcf645f3",
+  "note": "the tournament’s plus its said it twice",
+  "v": "fix"
+ },
+ "wc26:38": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "2d844fc7e0",
+  "note": "named Golden Boot five times reads as nonsense, so sense rules out wrong answers, grammar still fits",
+  "v": "ok"
+ },
+ "wc26:39": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "ece871ca33",
+  "v": "ok"
+ },
+ "wc26:4": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "0f762af968",
+  "note": "Co-hosts points to the USA since Mexico and Canada are grouped out, but the fact is about hosting so any wording would, fine for a white card",
+  "v": "ok"
+ },
+ "wc26:40": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "19aa76965c",
+  "v": "ok"
+ },
+ "wc26:41": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "08d52d79d1",
+  "v": "ok"
+ },
+ "wc26:42": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "0aec5bb579",
+  "v": "ok"
+ },
+ "wc26:43": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "e9b6e2b3df",
+  "v": "ok"
+ },
+ "wc26:44": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "677e53b4c6",
+  "v": "ok"
+ },
+ "wc26:45": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "280423c373",
+  "v": "ok"
+ },
+ "wc26:46": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "769a5d1bf7",
+  "v": "ok"
+ },
+ "wc26:47": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "39c1f29055",
+  "note": "numeral 3 kept because the number kind uses digits",
+  "v": "ok"
+ },
+ "wc26:48": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "80e8d5f15b",
+  "v": "ok"
+ },
+ "wc26:49": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "4ade512b3f",
+  "v": "ok"
+ },
+ "wc26:5": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "3edf30e60c",
+  "v": "ok"
+ },
+ "wc26:50": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "9a7d98bec5",
+  "v": "ok"
+ },
+ "wc26:51": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "c1b5c61a06",
+  "v": "ok"
+ },
+ "wc26:52": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "9267550ada",
+  "v": "ok"
+ },
+ "wc26:53": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "e4e06ff627",
+  "v": "ok"
+ },
+ "wc26:54": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "5c5becb56d",
+  "v": "ok"
+ },
+ "wc26:55": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "3cfcab03dc",
+  "v": "ok"
+ },
+ "wc26:56": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "76341eee7e",
+  "v": "ok"
+ },
+ "wc26:57": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "172f0819cc",
+  "v": "ok"
+ },
+ "wc26:58": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "a21431ad1e",
+  "v": "ok"
+ },
+ "wc26:59": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "a478c9d229",
+  "v": "ok"
+ },
+ "wc26:6": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "f687b03edf",
+  "v": "ok"
+ },
+ "wc26:60": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "4b49e871bf",
+  "v": "ok"
+ },
+ "wc26:61": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "32bbfabf0c",
+  "v": "ok"
+ },
+ "wc26:62": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "d55800901e",
+  "v": "ok"
+ },
+ "wc26:63": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "5f03c5c681",
+  "v": "ok"
+ },
+ "wc26:64": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "d2a0720619",
+  "v": "ok"
+ },
+ "wc26:65": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "0ef995d541",
+  "v": "ok"
+ },
+ "wc26:66": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "47646e3512",
+  "v": "ok"
+ },
+ "wc26:67": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "c9dda59f4f",
+  "note": "known as the ___ reads oddly with mascot or ball names and with La Roja, card still works",
+  "v": "ok"
+ },
+ "wc26:68": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "57c0e356d6",
+  "v": "ok"
+ },
+ "wc26:69": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "500b3141b0",
+  "v": "ok"
+ },
+ "wc26:7": {
+  "at": "2026-10-16T23:59:07Z",
+  "fix": {
+   "ex": "Cabo Verde were the only team to keep Spain from scoring"
+  },
+  "h": "c724f4f483",
+  "note": "Newcomers gave it away since no other team in the draw is a debut side",
+  "v": "fix"
+ },
+ "wc26:70": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "d2b2d18d34",
+  "v": "ok"
+ },
+ "wc26:8": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "17abf45f87",
+  "note": "Co-hosts and first time both point to Canada over past champions, acceptable on a white card",
+  "v": "ok"
+ },
+ "wc26:9": {
+  "at": "2026-10-16T23:59:07Z",
+  "h": "8ea2d0fcf4",
   "v": "ok"
  }
 }

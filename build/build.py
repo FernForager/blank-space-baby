@@ -101,7 +101,7 @@ def item_problems(level, items, clash, it, hooks=True):
         if ';' in s: bad.append(tag + ('semicolon', s))
         if re.search(r"['\"]", s): bad.append(tag + ('straight quote or apostrophe', s))
     if ex.rstrip().endswith('.'): bad.append(tag + ('period at the end', ex))
-    if re.search(r'[.!?][”"]?\s+[A-Z]', re.sub(r'\b(Mrs|Mr|Ms|No|St|vs)\. ', 'X ', ex)): bad.append(tag + ('looks like two sentences', ex))
+    if re.search(r'[.!?][”"]?\s+[A-Z]', re.sub(r'\b(Mrs|Mr|Ms|No|St|vs|D\.C|U\.S)\. ', 'X ', ex)): bad.append(tag + ('looks like two sentences', ex))   # D.C. United, U.S. Soccer
     if len(ex) > 85: bad.append(tag + ('sentence over 85 characters', len(ex)))
     if len(mn) > 40: bad.append(tag + ('meaning over 40 characters', mn))
     if len(w) > 22: bad.append(tag + ('answer over 22 characters',))
@@ -156,7 +156,9 @@ def vetting():
     for cid, takes in load_json(os.path.join(VET, 'desk.json'), {}).items():
         for who, t in takes.items():
             v = verdicts.get(who, {}).get(cid)
-            if who in verdicts and (not v or v.get('at', '') <= t['at']): verdicts[who][cid] = {'v': 'ok', 'h': t['h'], 'at': t['at'], 'note': 'its own fix, applied as proposed'}
+            if who not in verdicts or (v and v.get('at', '') > t['at']): continue
+            if t.get('declined'): verdicts[who].pop(cid, None)   # the desk turned the fix down: the card goes back to its reviewer
+            else: verdicts[who][cid] = {'v': 'ok', 'h': t['h'], 'at': t['at'], 'note': 'its own fix, applied as proposed'}
     return verdicts, load_json(os.path.join(VET, 'morg.json'), {}).get('cards', {})
 
 def standing(cid, it, h, verdicts, marks):

@@ -35,7 +35,7 @@
   {
    "w": "3",
    "means": "Several subs at once count as one",
-   "ex": "In top leagues, a team gets 3 chances to make subs, plus halftime",
+   "ex": "In top leagues, a team gets 3 windows to make subs, plus halftime",
    "hook": "make subs",
    "k": "count",
    "src": "https://www.theifab.com/laws/latest/the-players/",
@@ -365,8 +365,8 @@
   {
    "w": "simulation",
    "means": "It earns a yellow card",
-   "ex": "Faking an injury to fool the referee is called simulation",
-   "hook": "injury",
+   "ex": "Diving or faking an injury to fool the referee is called simulation",
+   "hook": "diving",
    "k": "offense",
    "src": "https://www.theifab.com/laws/latest/fouls-and-misconduct/",
    "d": 1
@@ -375,7 +375,7 @@
    "w": "dissent",
    "means": "Punished with a yellow card",
    "ex": "Protesting a referee’s call by word or action is dissent",
-   "hook": "referee",
+   "hook": "protesting",
    "k": "offense",
    "src": "https://www.theifab.com/laws/latest/fouls-and-misconduct/",
    "d": 2
@@ -563,7 +563,7 @@
   },
   {
    "w": "additional time",
-   "means": "The fourth official shows the minimum",
+   "means": "Fans also call it stoppage time",
    "ex": "Each half ends with additional time to make up for time lost",
    "hook": "half ends",
    "k": "term",

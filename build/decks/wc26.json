@@ -16,8 +16,8 @@
   {
    "w": "Argentina",
    "means": "They had won it in 2022",
-   "ex": "Defending champion Argentina lost the final in extra time",
-   "hook": "champion",
+   "ex": "Defending champions Argentina lost the final in extra time",
+   "hook": "champions",
    "k": "team",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/spain-argentina-final-report-highlights",
    "d": 2
@@ -70,7 +70,7 @@
   {
    "w": "Cabo Verde",
    "means": "A 0–0 draw in their first game",
-   "ex": "Newcomers Cabo Verde were the only team to keep Spain from scoring",
+   "ex": "Cabo Verde were the only team to keep Spain from scoring",
    "hook": "Spain",
    "k": "team",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/final-tournament-standings",
@@ -199,7 +199,7 @@
    "w": "Lionel Scaloni",
    "means": "His team lost 1–0 in extra time",
    "ex": "Lionel Scaloni coached Argentina in the 2026 final",
-   "hook": "2026 final",
+   "hook": "Argentina",
    "k": "coach",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/spain-argentina-final-report-highlights",
    "d": 2
@@ -332,8 +332,8 @@
   },
   {
    "w": "Young Player Award",
-   "means": "Spain’s teenage center-back",
-   "ex": "At 19, Pau Cubarsí won the Young Player Award as the best player aged 21 or under",
+   "means": "Best player aged 21 or under",
+   "ex": "At 19, Pau Cubarsí won the Young Player Award",
    "hook": "Cubarsí",
    "k": "award",
    "src": "https://www.fifa.com/en/articles/pau-cubarsi-fifa-young-player-award",
@@ -342,7 +342,7 @@
   {
    "w": "Bronze Ball",
    "means": "He also won the Golden Boot",
-   "ex": "Kylian Mbappé won the tournament’s Bronze Ball as its third-best player",
+   "ex": "Kylian Mbappé won the Bronze Ball as the tournament’s third-best player",
    "hook": "Mbappé",
    "k": "award",
    "src": "https://www.fifa.com/en/articles/adidas-golden-boot-race-top-scorer",

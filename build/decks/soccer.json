@@ -180,7 +180,7 @@
    "means": "Illegally ahead of the ball",
    "ex": "The goal was waved off because the striker was offside",
    "hook": "waved off",
-   "k": "rules",
+   "k": "adjective",
    "src": "https://www.merriam-webster.com/dictionary/offside",
    "d": 1
   },
@@ -214,10 +214,10 @@
   {
    "w": "striker",
    "means": "Forward whose job is scoring",
-   "ex": "The striker’s only job is to score, so she never helps on defense",
-   "hook": "only job",
+   "ex": "The striker waits near the other team’s goal, hoping to score",
+   "hook": "goal",
    "k": "role",
-   "src": "https://www.merriam-webster.com/dictionary/striker",
+   "src": "https://www.dictionary.com/browse/striker",
    "d": 1
   },
   {
@@ -271,7 +271,7 @@
    "ex": "Every attack runs through the playmaker, whose passes set up the goals",
    "hook": "attack",
    "k": "role",
-   "src": "https://www.merriam-webster.com/dictionary/playmaker",
+   "src": "https://www.dictionary.com/browse/playmaker",
    "d": 2
   },
   {
@@ -343,7 +343,7 @@
    "ex": "The other team lost 4–nil and still went out for ice cream",
    "hook": "ice cream",
    "k": "score",
-   "src": "https://www.merriam-webster.com/dictionary/nil",
+   "src": "https://www.dictionary.com/browse/nil",
    "d": 1
   },
   {
@@ -459,7 +459,7 @@
    "means": "Done with real skill and precision",
    "ex": "The striker was clinical and scored on all three of her shots",
    "hook": "shots",
-   "k": "lingo",
+   "k": "adjective",
    "src": "https://www.merriam-webster.com/dictionary/clinical",
    "d": 2
   },
@@ -495,7 +495,7 @@
    "means": "Sent down to a lower league",
    "ex": "After finishing last, the team was relegated to a lower division",
    "hook": "division",
-   "k": "lingo",
+   "k": "adjective",
    "src": "https://www.dictionary.com/browse/relegate",
    "d": 2
   }

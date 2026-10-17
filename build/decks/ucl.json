@@ -43,8 +43,8 @@
   {
    "w": "Bayern Munich",
    "means": "Kingsley Coman scored the winner",
-   "ex": "In 2020, Bayern Munich beat PSG in the final",
-   "hook": "PSG",
+   "ex": "In 2020, Bayern Munich beat Paris Saint-Germain in the final",
+   "hook": "Paris",
    "k": "club",
    "src": "https://www.uefa.com/uefachampionsleague/history/seasons/2020/",
    "d": 2
@@ -61,7 +61,7 @@
   {
    "w": "Aston Villa",
    "means": "The trophy went home to Birmingham",
-   "ex": "In 1982, Aston Villa beat Bayern in the European Cup final",
+   "ex": "In 1982, Aston Villa beat Bayern Munich in the European Cup final",
    "hook": "Bayern",
    "k": "club",
    "src": "https://www.uefa.com/uefachampionsleague/history/seasons/1981/",
@@ -169,7 +169,7 @@
   {
    "w": "Cristiano Ronaldo",
    "means": "Most goals and most games",
-   "ex": "Cristiano Ronaldo holds the all-time records for goals and appearances",
+   "ex": "Cristiano Ronaldo holds the Champions League records for goals and appearances",
    "hook": "appearances",
    "k": "player",
    "src": "https://www.uefa.com/uefachampionsleague/history/",
@@ -179,7 +179,7 @@
   {
    "w": "Lionel Messi",
    "means": "Behind only Cristiano Ronaldo",
-   "ex": "Lionel Messi is second on the all-time scoring list with 129 goals",
+   "ex": "Lionel Messi is second on the Champions League scoring list with 129 goals",
    "hook": "scoring list",
    "k": "player",
    "src": "https://www.uefa.com/uefachampionsleague/history/",
@@ -189,7 +189,7 @@
   {
    "w": "Robert Lewandowski",
    "means": "Behind only Ronaldo and Messi",
-   "ex": "Robert Lewandowski is third on the all-time scoring list with 109 goals",
+   "ex": "Robert Lewandowski is third on the Champions League scoring list with 109 goals",
    "hook": "scoring list",
    "k": "player",
    "src": "https://www.uefa.com/uefachampionsleague/history/",
@@ -208,7 +208,7 @@
   {
    "w": "Kylian Mbappé",
    "means": "Harry Kane was next with 14",
-   "ex": "Kylian Mbappé was the top scorer of 2025–26 with 15 goals",
+   "ex": "Kylian Mbappé was the Champions League top scorer in 2025–26 with 15 goals",
    "hook": "top scorer",
    "k": "player",
    "src": "https://www.uefa.com/uefachampionsleague/history/seasons/2026/",
@@ -217,7 +217,7 @@
   {
    "w": "Erling Haaland",
    "means": "Mohamed Salah was next with 8",
-   "ex": "Erling Haaland was the top scorer of 2022–23 with 12 goals",
+   "ex": "Erling Haaland was the Champions League top scorer in 2022–23 with 12 goals",
    "hook": "top scorer",
    "k": "player",
    "src": "https://www.uefa.com/uefachampionsleague/history/seasons/2023/",
@@ -236,7 +236,7 @@
    "w": "Didier Drogba",
    "means": "The shootout was against Bayern",
    "ex": "Didier Drogba hit Chelsea’s winning penalty in the 2012 final",
-   "hook": "2012 final",
+   "hook": "Chelsea",
    "k": "player",
    "src": "https://www.uefa.com/uefachampionsleague/history/seasons/2012/",
    "d": 2
@@ -344,7 +344,7 @@
    "w": "Munich",
    "means": "Chelsea beat Bayern in the shootout",
    "ex": "Chelsea won the 2012 final on penalties in Munich",
-   "hook": "2012 final",
+   "hook": "Chelsea",
    "k": "city",
    "src": "https://www.uefa.com/uefachampionsleague/history/seasons/2012/",
    "d": 2
@@ -397,7 +397,7 @@
   {
    "w": "Stade de France",
    "means": "It also hosted the 2000 and 2006 finals",
-   "ex": "Real Madrid beat Liverpool at the Stade de France in 2022",
+   "ex": "Real Madrid beat Liverpool at Stade de France in 2022",
    "hook": "Liverpool",
    "k": "venue",
    "src": "https://www.uefa.com/uefachampionsleague/history/seasons/2022/",
@@ -435,7 +435,7 @@
   {
    "w": "Waldstadion",
    "means": "Frankfurt won it at home",
-   "ex": "Umeå lost the first women’s final, in 2002, at the Waldstadion",
+   "ex": "Umeå lost the first women’s final, in 2002, at Waldstadion",
    "hook": "Umeå",
    "k": "venue",
    "src": "https://www.uefa.com/womenschampionsleague/news/0250-0c50f8c5a638-5677bdc4dec5-1000--uefa-women-s-champions-league-history/",
@@ -484,8 +484,8 @@
   },
   {
    "w": "Turbine Potsdam",
-   "means": "They beat Lyon 7–6 on penalties",
-   "ex": "Turbine Potsdam won the first Women’s Champions League final, in Getafe in 2010",
+   "means": "They beat Lyon 7–6 on penalties in 2010",
+   "ex": "Turbine Potsdam won the first final under the Champions League name, in Getafe",
    "hook": "Getafe",
    "k": "wclub",
    "src": "https://www.uefa.com/womenschampionsleague/news/0250-0c50f8c5a638-5677bdc4dec5-1000--uefa-women-s-champions-league-history/",

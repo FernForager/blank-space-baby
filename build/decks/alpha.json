@@ -123,7 +123,7 @@
   {
    "w": "six seven",
    "means": "Nonsense shout for 6 and 7",
-   "ex": "The bench yelled “six seven” when the sub board went up",
+   "ex": "Kids in the stands yelled “six seven” when the sub board showed 6 and 7",
    "hook": "sub board",
    "src": "https://www.merriam-webster.com/dictionary/six%20seven",
    "d": 1
@@ -276,7 +276,7 @@
    "w": "tea",
    "means": "Gossip",
    "ex": "Mom has the tea on why the coach was late",
-   "hook": "Mom",
+   "hook": "coach",
    "src": "https://www.merriam-webster.com/dictionary/tea",
    "d": 1
   },
@@ -372,7 +372,7 @@
    "w": "stan",
    "means": "Be a superfan of",
    "ex": "The whole team will stan the goalie after that save",
-   "hook": "that save",
+   "hook": "save",
    "src": "https://www.merriam-webster.com/dictionary/stan",
    "d": 2
   },
@@ -500,7 +500,7 @@
    "w": "standing on business",
    "means": "Doing what you said",
    "ex": "The captain promised a goal and scored, standing on business",
-   "hook": "promised",
+   "hook": "captain",
    "src": "https://www.merriam-webster.com/dictionary/stand%20on%20business",
    "d": 2
   },
@@ -694,7 +694,7 @@
    "ex": "Grandma had to keep it a buck: that penalty was bad",
    "hook": "penalty",
    "src": "https://www.merriam-webster.com/slang/keep-it-a-buck",
-   "d": 3
+   "d": 2
   },
   {
    "w": "kiki",
@@ -1280,6 +1280,94 @@
   [
    "keep it a buck",
    "crash out"
+  ],
+  [
+   "bet",
+   "lock in"
+  ],
+  [
+   "cap",
+   "cringe"
+  ],
+  [
+   "cap",
+   "rage-bait"
+  ],
+  [
+   "bussin",
+   "sus"
+  ],
+  [
+   "bussin",
+   "slop"
+  ],
+  [
+   "skibidi",
+   "unc"
+  ],
+  [
+   "skibidi",
+   "touch grass"
+  ],
+  [
+   "skibidi",
+   "L"
+  ],
+  [
+   "bruh",
+   "crine"
+  ],
+  [
+   "bias",
+   "GOAT"
+  ],
+  [
+   "IJBOL",
+   "caught in 4k"
+  ],
+  [
+   "IJBOL",
+   "unc"
+  ],
+  [
+   "kiki",
+   "crash out"
+  ],
+  [
+   "out of pocket",
+   "salty"
+  ],
+  [
+   "preppy",
+   "girlypop"
+  ],
+  [
+   "preppy",
+   "drip"
+  ],
+  [
+   "destim",
+   "hold the L"
+  ],
+  [
+   "rage-bait",
+   "unc"
+  ],
+  [
+   "rage-bait",
+   "salty"
+  ],
+  [
+   "rage-bait",
+   "brain rot"
+  ],
+  [
+   "lock in",
+   "vibe check"
+  ],
+  [
+   "crine",
+   "cringe"
   ]
  ],
  "deck": "Gen Alpha",

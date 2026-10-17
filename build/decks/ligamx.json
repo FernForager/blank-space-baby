@@ -7,15 +7,15 @@
   {
    "w": "América",
    "means": "Sealed with the Apertura 2024 title",
-   "ex": "América became the first team to win three short tournaments in a row",
-   "hook": "in a row",
+   "ex": "América won the first three-peat of the short-tournament era",
+   "hook": "three-peat",
    "k": "club",
    "src": "https://ligamx.net/cancha/detallenoticia/45355",
    "d": 2
   },
   {
    "w": "Chivas",
-   "means": "Rivals since a heated game in 1959",
+   "means": "One of Mexico’s biggest games",
    "ex": "The Clásico Nacional pits América against Chivas",
    "hook": "Clásico",
    "k": "club",
@@ -24,7 +24,7 @@
   },
   {
    "w": "Toluca",
-   "means": "It was their 12th league title",
+   "means": "Their second title in a row",
    "ex": "Toluca beat Tigres 9–8 on penalties in the Apertura 2025 final",
    "hook": "Tigres",
    "k": "club",
@@ -69,8 +69,8 @@
   },
   {
    "w": "Atlas",
-   "means": "The rivalry dates back to 1916",
-   "ex": "The Clásico Tapatío, the oldest rivalry, pits Chivas against Atlas",
+   "means": "Tapatío means “from Guadalajara”",
+   "ex": "The Clásico Tapatío, Mexico’s oldest rivalry, pits Chivas against Atlas",
    "hook": "Tapatío",
    "k": "club",
    "src": "https://ligamx.net/cancha/detallenoticia/8050",
@@ -78,7 +78,7 @@
   },
   {
    "w": "Santos",
-   "means": "Gignac passed him in 2026",
+   "means": "Now third-most by anyone for one club",
    "ex": "Jared Borgetti scored 189 league goals for Santos",
    "hook": "Borgetti",
    "k": "club",
@@ -221,7 +221,9 @@
    "hook": "Xolos",
    "k": "city",
    "src": "https://ligamx.net/cancha/club/5/tijuana",
-   "d": 2
+   "d": 2,
+   "out": true,
+   "out_why": "Same fact as ligamx:32 turned around, and the club’s name, Club Tijuana, gives it away (soccer expert)"
   },
   {
    "w": "Águilas",
@@ -346,15 +348,15 @@
    "w": "Cuauhtémoc Blanco",
    "means": "He scored 16 that tournament",
    "ex": "Cuauhtémoc Blanco led the league in goals for América in Invierno 98",
-   "hook": "América",
+   "hook": "Invierno 98",
    "k": "player",
    "src": "https://ligamx.net/cancha/detallenoticia/4614",
    "d": 2
   },
   {
    "w": "Carlos Rotondi",
-   "means": "For Cruz Azul in Clausura 2026",
-   "ex": "Carlos Rotondi scored the latest title-winning goal in a final, at 90+5",
+   "means": "It won the Clausura 2026 final",
+   "ex": "Carlos Rotondi’s title winner for Cruz Azul at 90+5 is the latest ever in a final",
    "hook": "90+5",
    "k": "player",
    "src": "https://ligamx.net/cancha/detallenoticia/47571",
@@ -372,16 +374,16 @@
   },
   {
    "w": "Joel Huiqui",
-   "means": "He led Cruz Azul in just 7 games",
-   "ex": "Joel Huiqui won a title in his first tournament as a coach, in 2026",
-   "hook": "as a coach",
+   "means": "He was in charge for just 7 games",
+   "ex": "Joel Huiqui won a title with Cruz Azul in his first tournament as a coach, in 2026",
+   "hook": "Cruz Azul",
    "k": "coach",
    "src": "https://ligamx.net/cancha/detallenoticia/47571",
    "d": 2
   },
   {
    "w": "Antonio Mohamed",
-   "means": "He won it with Toluca",
+   "means": "Tied for fourth-most by a coach",
    "ex": "Antonio Mohamed won his fifth league title as a coach in Apertura 2025",
    "hook": "Apertura",
    "k": "coach",
@@ -418,7 +420,7 @@
   {
    "w": "Manuel Lapuente",
    "means": "He won five league titles as a coach",
-   "ex": "Manuel Lapuente coached Necaxa to back-to-back league titles in 1994–95 and 1995–96",
+   "ex": "Manuel Lapuente coached Necaxa to league titles in 1994–95 and 1995–96",
    "hook": "Necaxa",
    "k": "coach",
    "src": "https://ligamx.net/cancha/detallenoticia/4404",
@@ -453,7 +455,7 @@
   },
   {
    "w": "1959",
-   "means": "Chivas won after a taunt from América",
+   "means": "It followed a taunt by América’s coach",
    "ex": "The Clásico Nacional rivalry took off with a famous game in 1959",
    "hook": "Nacional",
    "k": "year",
@@ -472,7 +474,7 @@
   {
    "w": "1998",
    "means": "26 league players went to France",
-   "ex": "The old record for league players at a World Cup was set in 1998",
+   "ex": "Before 2026, the record for Liga MX players at a World Cup was set in 1998",
    "hook": "World Cup",
    "k": "year",
    "src": "https://ligamx.net/cancha/detallenoticia/47586",
@@ -491,7 +493,7 @@
   {
    "w": "12",
    "means": "Tied with Chivas for second-most",
-   "ex": "Toluca’s Apertura 2025 crown was their league title number 12",
+   "ex": "With Apertura 2025, Toluca reached 12 league titles",
    "hook": "Toluca",
    "k": "number",
    "src": "https://ligamx.net/cancha/detallenoticia/46917",
@@ -565,7 +567,7 @@
   {
    "w": "Jornada",
    "means": "Spanish for “matchday”",
-   "ex": "Each round of league games is called a Jornada",
+   "ex": "Liga MX’s word for each round of league games is Jornada",
    "hook": "round",
    "k": "term",
    "src": "https://ligamx.net/cancha/detallenoticia/47622",
@@ -592,7 +594,7 @@
   {
    "w": "Clásico",
    "means": "That one is the Clásico Nacional",
-   "ex": "A big rivalry game, like América against Chivas, is called a Clásico",
+   "ex": "The word for a big rivalry game, like América against Chivas, is Clásico",
    "hook": "big rivalry",
    "k": "term",
    "src": "https://ligamx.net/cancha/detallenoticia/8050",
@@ -718,6 +720,10 @@
   [
    "Rayos",
    "Diablos Rojos"
+  ],
+  [
+   "26",
+   "27"
   ]
  ],
  "cut": [
