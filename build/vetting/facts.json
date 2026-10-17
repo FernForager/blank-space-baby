@@ -1,4 +1,852 @@
 {
+ "alpha:0": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "22db3ea124",
+  "note": "M-W bet page, Did you know: slang bet is an informal affirmative like “For sure!”",
+  "v": "ok"
+ },
+ "alpha:1": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "afce9ab9ae",
+  "note": "M-W no cap (slang): sincerely, truthfully",
+  "v": "ok"
+ },
+ "alpha:10": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "0354b0bf16",
+  "note": "M-W low-key adverb: to a moderate or limited degree, without seeking attention",
+  "v": "ok"
+ },
+ "alpha:100": {
+  "at": "2026-10-17T00:01:37Z",
+  "fix": {
+   "groups": [
+    [
+     "whimsy",
+     "peak"
+    ]
+   ]
+  },
+  "h": "c62ddba2dd",
+  "note": "M-W slang whimsy: a whimsical visual aesthetic or lifestyle (fire and cringe already grouped). But peak is still drawable and “is pure peak” fits a stickered shin guard as praise, so group them",
+  "v": "fix"
+ },
+ "alpha:101": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "f60369725d",
+  "note": "M-W slang blep: an animal with its tongue sticking partway out",
+  "v": "ok"
+ },
+ "alpha:102": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "5283001bcd",
+  "note": "Dictionary.com slang it’s giving: describes a strong energy or look, with or without an object (it’s giving main character)",
+  "v": "ok"
+ },
+ "alpha:103": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "d728a44bd7",
+  "note": "Dictionary.com slang slop: low-quality digital content created by AI (mid, cringe, brain rot, rage-bait already grouped)",
+  "v": "ok"
+ },
+ "alpha:104": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "bad3fb2e79",
+  "note": "Dictionary.com slang millennial pause: a 1- or 2-second delay before speaking in a recorded video",
+  "v": "ok"
+ },
+ "alpha:105": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "d17380b854",
+  "note": "Dictionary.com slang destim: to calm down by avoiding overwhelming stimuli such as loud noises",
+  "v": "ok"
+ },
+ "alpha:106": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "3654a073f8",
+  "note": "Dictionary.com slang girl grip: holding multiple items in one hand by grasping them between fingers",
+  "v": "ok"
+ },
+ "alpha:107": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "e366ce69aa",
+  "note": "Dictionary.com slang let him cook: to freely let a person do something they are good at",
+  "v": "ok"
+ },
+ "alpha:108": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "5d02ca84cd",
+  "note": "Dictionary.com slang side character energy: humble, content, prefers to support others rather than be the center",
+  "v": "ok"
+ },
+ "alpha:109": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "ea1b884d60",
+  "note": "Dictionary.com slang passenger princess: a person who has others drive while they sit in the passenger seat",
+  "v": "ok"
+ },
+ "alpha:11": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "8ad9507ead",
+  "note": "M-W high-key (informal): to a complete degree, totally, truly",
+  "v": "ok"
+ },
+ "alpha:110": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "2c82b9901a",
+  "note": "Dictionary.com slang steez: a person’s unique style, implying a slick, cool, effortless way of carrying oneself",
+  "v": "ok"
+ },
+ "alpha:111": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "3d5e105aa9",
+  "note": "Dictionary.com slang soft life: a lifestyle of comfort and relaxation with minimal stress",
+  "v": "ok"
+ },
+ "alpha:12": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "75cb6695e8",
+  "note": "M-W delulu (slang): unreasonably self-confident in one’s ability to achieve goals",
+  "v": "ok"
+ },
+ "alpha:13": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "7cd0020b2d",
+  "note": "M-W aura: the quality of being impressively cool",
+  "v": "ok"
+ },
+ "alpha:14": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "6e003e0134",
+  "note": "M-W slang aura farming: doing something to look cool, impressive, stylish",
+  "v": "ok"
+ },
+ "alpha:15": {
+  "at": "2026-10-17T00:02:11Z",
+  "fix": {
+   "ex": "When the sub board showed a 6 and a 7, the bench yelled “six seven”"
+  },
+  "h": "bf6afbf812",
+  "note": "M-W six seven shows a nonsense phrase tied to the numbers 6 and 7. The new wording drops the numbers, so drawable shouts like sheesh, bruh, lock in, fire and womp womp fit the blank too and the card has more than one right answer. Bringing the numbers back keeps only six seven true. It gives the answer away more, which the desk can weigh, but one right answer comes first",
+  "v": "fix"
+ },
+ "alpha:16": {
+  "at": "2026-10-17T00:01:37Z",
+  "fix": {
+   "ex": "The defender answered every coaching tip with the nonsense word “skibidi”"
+  },
+  "h": "db8ab81b77",
+  "note": "M-W skibidi: a nonsensical expression and meme. As written any reply fits the blank (no cap, IJBOL, lock in, L and touch grass are all drawable). Naming it a nonsense word leaves only skibidi (six seven is already excluded)",
+  "v": "fix"
+ },
+ "alpha:17": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "84a455b4a7",
+  "note": "M-W cooked (informal): certain to experience a very bad outcome",
+  "v": "ok"
+ },
+ "alpha:18": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "5968407275",
+  "note": "M-W slang rage-bait: content that is intentionally offensive or provocative",
+  "v": "ok"
+ },
+ "alpha:19": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "69dc1fdce6",
+  "note": "M-W glaze verb (slang): to praise excessively or obsequiously",
+  "v": "ok"
+ },
+ "alpha:2": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "c5527533bd",
+  "note": "M-W cap verb: to lie by boasting or exaggerating, and slang noun: empty boasting or dishonest talk",
+  "v": "ok"
+ },
+ "alpha:20": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "396b2c46a6",
+  "note": "M-W slang Fanum tax: taking someone else’s food, a joke tax of a bite or portion",
+  "v": "ok"
+ },
+ "alpha:21": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "c2a71eac83",
+  "note": "M-W slang main character energy: dramatic self-confidence, acting like the center of attention",
+  "v": "ok"
+ },
+ "alpha:22": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "8a2a410f73",
+  "note": "M-W touch grass: participate in normal activities in the real world as opposed to online",
+  "v": "ok"
+ },
+ "alpha:23": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "1c56459800",
+  "note": "M-W L abbreviation: loss",
+  "v": "ok"
+ },
+ "alpha:24": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "74c5b5fdc5",
+  "note": "M-W sheesh: used to express disappointment, annoyance, or surprise",
+  "v": "ok"
+ },
+ "alpha:25": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "0bcf170a91",
+  "note": "M-W slang vibe check: a casual or intuitive assessment of something or someone",
+  "v": "ok"
+ },
+ "alpha:26": {
+  "at": "2026-10-17T00:01:37Z",
+  "fix": {
+   "groups": [
+    [
+     "bruh",
+     "chalked"
+    ]
+   ],
+   "means": "A groan of dismay, from bro",
+   "src": "https://www.dictionary.com/culture/slang/bruh"
+  },
+  "h": "886f9e254b",
+  "note": "M-W bruh is only a noun: brother, a male friend, a friendly way of addressing a man or boy. The sentence uses the interjection of surprise or dismay, which only Dictionary.com shows (https://www.dictionary.com/culture/slang/bruh). Means changed to that sense. M-W chalked (doomed, done for) also fits a groan here, like cooked which is already excluded",
+  "v": "fix"
+ },
+ "alpha:27": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "e9110346cd",
+  "note": "M-W slang tuff: cool, awesome",
+  "v": "ok"
+ },
+ "alpha:28": {
+  "at": "2026-10-17T00:01:37Z",
+  "fix": {
+   "groups": [
+    [
+     "crash out",
+     "cringe"
+    ]
+   ]
+  },
+  "h": "7c8f1793dd",
+  "note": "M-W crash, intransitive verb sense 6 (slang): to react suddenly with extreme distress or anger, usually used with out. But M-W cringe (to recoil in distaste) also fits “Dad began to ___ when the ref missed the handball”",
+  "v": "fix"
+ },
+ "alpha:29": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "351d8b149c",
+  "note": "M-W slang lock in: to enter a state of deep focus",
+  "v": "ok"
+ },
+ "alpha:3": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "b1d4611b03",
+  "note": "M-W bussin’ (slang): extremely good, delicious",
+  "v": "ok"
+ },
+ "alpha:30": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "0c93846b33",
+  "note": "M-W GOATED (slang): considered to be the greatest of all time",
+  "v": "ok"
+ },
+ "alpha:31": {
+  "at": "2026-10-17T00:01:37Z",
+  "fix": {
+   "means": "A close friend with your style"
+  },
+  "h": "2ec4e51a5d",
+  "note": "M-W slang twin: a close friend who shares a similar style or energy, and the page says it does not necessarily mean facial similarity, so “your double” overstates it",
+  "v": "fix"
+ },
+ "alpha:32": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "49eb6230d7",
+  "note": "M-W unc (slang): a person who is old or ageing or acts old for their age",
+  "v": "ok"
+ },
+ "alpha:33": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "6d9d10bd12",
+  "note": "M-W brain rot (slang): decline in cognitive function from too much shallow online content",
+  "v": "ok"
+ },
+ "alpha:34": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "7dc5fb9ccc",
+  "note": "M-W tea sense 6, the tea (slang): private or inside information",
+  "v": "ok"
+ },
+ "alpha:35": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "7f604a2d49",
+  "note": "M-W slang slap: to exhibit excellence, especially of a song",
+  "v": "ok"
+ },
+ "alpha:36": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "06b2ccd030",
+  "note": "M-W drip sense 6 (slang): a fashionable style or look",
+  "v": "ok"
+ },
+ "alpha:37": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "5fc1f86dea",
+  "note": "M-W valid: well-grounded or justifiable",
+  "v": "ok"
+ },
+ "alpha:38": {
+  "at": "2026-10-17T00:01:37Z",
+  "fix": {
+   "groups": [
+    [
+     "caught in 4k",
+     "low-key",
+     "high-key",
+     "lowkenuinely"
+    ]
+   ]
+  },
+  "h": "a50de4ec8c",
+  "note": "Sense checks out at https://www.merriam-webster.com/slang/caught-in-4k (M-W slang page: exposed doing something wrong with irrefutable evidence such as high-resolution video). But low-key, high-key and lowkenuinely also read naturally as adverbs in the blank (“The defender was low-key pulling a jersey on Dad’s video”), so group them with the answer",
+  "v": "fix"
+ },
+ "alpha:39": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "6d4dd5f8bb",
+  "note": "M-W slang page: has a different effect or feeling, often better in some unique way",
+  "v": "ok"
+ },
+ "alpha:4": {
+  "at": "2026-10-17T00:01:37Z",
+  "fix": {
+   "ex": "The striker continues to slay, scoring on every free kick"
+  },
+  "h": "087e862fe1",
+  "note": "M-W slay: to do something exceptionally well. But the sentence gives no clue the kicks go well, so “brick” (miss badly) and “crash out” also fit “continues to ___ on every free kick”. Reworded so only slay fits",
+  "v": "fix"
+ },
+ "alpha:40": {
+  "at": "2026-10-17T00:01:37Z",
+  "fix": {
+   "groups": [
+    [
+     "rent-free",
+     "no cap",
+     "low-key",
+     "high-key",
+     "lowkenuinely",
+     "iykyk"
+    ]
+   ]
+  },
+  "h": "cf7df59668",
+  "note": "Sense checks out at https://www.merriam-webster.com/slang/rent-free (M-W slang page: someone or something living rent-free in your head is thought about a lot). But the blank ends a complete clause, so tag words also fit (“lives in the striker’s head no cap”, “…low-key”, “…iykyk”), so group them with the answer",
+  "v": "fix"
+ },
+ "alpha:41": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "b72d6470ba",
+  "note": "M-W dictionary: a stage in development (as of a person or thing)",
+  "v": "ok"
+ },
+ "alpha:42": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "303751e203",
+  "note": "M-W dictionary: a warning signal or sign",
+  "v": "ok"
+ },
+ "alpha:43": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "330c5d83f4",
+  "note": "M-W slang page: a positive or welcoming sign or signal",
+  "v": "ok"
+ },
+ "alpha:44": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "e79bccf618",
+  "note": "M-W dictionary: if you know you know, used to acknowledge shared knowledge or experience",
+  "v": "ok"
+ },
+ "alpha:45": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "3dc52ef4ac",
+  "note": "M-W dictionary: best friend",
+  "v": "ok"
+ },
+ "alpha:46": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "873e22cb74",
+  "note": "M-W dictionary verb: to be an extremely devoted and enthusiastic fan of someone",
+  "v": "ok"
+ },
+ "alpha:47": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "fe66918326",
+  "note": "M-W dictionary noun: an act of bragging or showing off",
+  "v": "ok"
+ },
+ "alpha:48": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "53fe66dfe6",
+  "note": "M-W dictionary: feeling or showing resentment towards a person or situation : bitter",
+  "v": "ok"
+ },
+ "alpha:49": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "074914a172",
+  "note": "M-W dictionary: to throw especially with force",
+  "v": "ok"
+ },
+ "alpha:5": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "6f7ce846bc",
+  "note": "M-W slang ate (and left no crumbs): performed or did perfectly or impressively",
+  "v": "ok"
+ },
+ "alpha:50": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "eb81950a66",
+  "note": "M-W dictionary: to restrict access to something of value",
+  "v": "ok"
+ },
+ "alpha:51": {
+  "at": "2026-10-17T00:01:37Z",
+  "fix": {
+   "groups": [
+    [
+     "ghost",
+     "rage-bait"
+    ]
+   ]
+  },
+  "h": "0344bcca95",
+  "note": "Sense checks out at https://www.merriam-webster.com/dictionary/ghost (M-W dictionary: to cut off all contact with someone abruptly and usually without explanation). But M-W slang rage-bait (https://www.merriam-webster.com/slang/rage-bait) is also a verb, to make intentionally provocative statements, so “do not rage-bait the team group text” also works, so group them",
+  "v": "fix"
+ },
+ "alpha:52": {
+  "at": "2026-10-17T00:02:11Z",
+  "fix": {
+   "groups": [
+    [
+     "mother",
+     "chalked"
+    ]
+   ]
+  },
+  "h": "44431e4d30",
+  "note": "Sense checks out at https://www.merriam-webster.com/slang/mother (M-W slang page: a person, usually a woman, widely acknowledged as nurturing and inspiring). But M-W slang chalked (https://www.merriam-webster.com/slang/chalked) includes done for and wrecked, so “ran everything, so she is chalked” also reads as true (the deck already keeps cooked off this card for the same reason)",
+  "v": "fix"
+ },
+ "alpha:53": {
+  "at": "2026-10-17T00:01:37Z",
+  "fix": {
+   "groups": [
+    [
+     "lit",
+     "chalked"
+    ]
+   ]
+  },
+  "h": "560f357495",
+  "note": "Sense checks out at https://www.merriam-webster.com/dictionary/lit (M-W dictionary: excellent, exciting). But M-W chalked includes messed up, ruined, no good, so “the film night was chalked” also fits, the same way mid and cringe are already grouped with lit",
+  "v": "fix"
+ },
+ "alpha:54": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "10756664aa",
+  "note": "M-W dictionary: a distinctive feeling or quality capable of being sensed",
+  "v": "ok"
+ },
+ "alpha:55": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "39051d5582",
+  "note": "M-W dictionary: a usually dramatic enhancement especially to physical appearance",
+  "v": "ok"
+ },
+ "alpha:56": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "1b98397822",
+  "note": "M-W dictionary: broadly, to make something less useful or effective",
+  "v": "ok"
+ },
+ "alpha:57": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "49e0ba5ebb",
+  "note": "M-W dictionary adjective: made or done in a crucial situation, successful in a crucial situation",
+  "v": "ok"
+ },
+ "alpha:58": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "77e206c821",
+  "note": "M-W dictionary: away from keyboard. Dictionary.com (https://www.dictionary.com/browse/afk) adds that it signals a participant is absent or has stopped participating, which supports the means line",
+  "v": "ok"
+ },
+ "alpha:59": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "0adaedbad1",
+  "note": "M-W dictionary: an annoying person : nuisance, and one that represents a threat",
+  "v": "ok"
+ },
+ "alpha:6": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "30d9e240f0",
+  "note": "M-W mid: neither very good nor very bad, so-so",
+  "v": "ok"
+ },
+ "alpha:60": {
+  "at": "2026-10-17T00:01:37Z",
+  "fix": {
+   "groups": [
+    [
+     "gas",
+     "chalked"
+    ],
+    [
+     "gas",
+     "cottagecore"
+    ]
+   ]
+  },
+  "h": "7834cb9468",
+  "note": "Sense checks out at https://www.merriam-webster.com/slang/gas (M-W slang page: a slangy adjective meaning excellent, awesome, great). But chalked (M-W: no good, ruined) and cottagecore (a style word like preppy, already grouped with gas) also describe jerseys plausibly",
+  "v": "fix"
+ },
+ "alpha:61": {
+  "at": "2026-10-17T00:02:11Z",
+  "h": "e0e63b1286",
+  "note": "M-W slang page: a friendly way to address one’s presumed audience of friends and followers",
+  "v": "ok"
+ },
+ "alpha:62": {
+  "at": "2026-10-17T00:01:37Z",
+  "fix": {
+   "means": "Doing what needs to be done"
+  },
+  "h": "8606687808",
+  "note": "Sense checks out at https://www.merriam-webster.com/dictionary/stand%20on%20business (M-W dictionary (stand on business): to do what needs to be done, to take a firm stand). But M-W defines stand on business as to do what needs to be done, to take a firm stand. It does not say doing what you said, so the means line should follow M-W",
+  "v": "fix"
+ },
+ "alpha:63": {
+  "at": "2026-10-17T00:01:37Z",
+  "fix": {
+   "groups": [
+    [
+     "cringe",
+     "main character energy"
+    ]
+   ]
+  },
+  "h": "1fa548284b",
+  "note": "Sense checks out at https://www.merriam-webster.com/dictionary/cringe (M-W dictionary adjective: so embarrassing, awkward, etc. as to cause one to cringe). But M-W main character energy (https://www.merriam-webster.com/slang/main-character-energy) is self-assured behavior, also used to criticize its excesses, so “Dad dancing on the sideline was main character energy” also fits",
+  "v": "fix"
+ },
+ "alpha:64": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "b37b578012",
+  "note": "M-W slang page: the weeks leading up to Halloween",
+  "v": "ok"
+ },
+ "alpha:65": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "6b8818ee47",
+  "note": "M-W slang page: to improve or enhance something in a video game, make it more powerful",
+  "v": "ok"
+ },
+ "alpha:66": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "1c55339703",
+  "note": "M-W slang page: a pronunciation spelling of crying, often used for crying with laughter",
+  "v": "ok"
+ },
+ "alpha:67": {
+  "at": "2026-10-17T00:01:37Z",
+  "fix": {
+   "groups": [
+    [
+     "Mary Sue",
+     "menace"
+    ]
+   ]
+  },
+  "h": "5dee7072d9",
+  "note": "Sense checks out at https://www.merriam-webster.com/slang/mary-sue (M-W slang page: a fictional character who is implausibly perfect). But a striker who never misses is a menace (M-W menace: one that represents a threat) also reads as true",
+  "v": "fix"
+ },
+ "alpha:68": {
+  "at": "2026-10-17T00:01:37Z",
+  "fix": {
+   "groups": [
+    [
+     "smol",
+     "fire",
+     "goated",
+     "peak",
+     "lit"
+    ]
+   ]
+  },
+  "h": "5d2bab8031",
+  "note": "Sense checks out at https://www.merriam-webster.com/slang/smol (M-W slang page: small, little in an intensely cute way). But “the puppy is fire / goated / peak / lit” fit the same way gas and tuff do, which the deck already groups with smol",
+  "v": "fix"
+ },
+ "alpha:69": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "2c1f8a7b9d",
+  "note": "M-W slang page: a period of diminished success",
+  "v": "ok"
+ },
+ "alpha:7": {
+  "at": "2026-10-17T00:01:37Z",
+  "fix": {
+   "ex": "The ref seems sus for wearing the other team’s colors"
+  },
+  "h": "2531cff598",
+  "note": "M-W sus (slang): suspicious. But “looks ___ wearing the other team’s colors” also takes the style words still drawn as wrong answers (fire, tuff, drip-style adjectives like goated, lit, peak, preppy). “Seems ___ for wearing” keeps it a judgment, so only sus fits",
+  "v": "fix"
+ },
+ "alpha:70": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "d35c0047ae",
+  "note": "M-W slang page: describes something as excellent, superb, truly great",
+  "v": "ok"
+ },
+ "alpha:71": {
+  "at": "2026-10-17T00:01:37Z",
+  "fix": {
+   "groups": [
+    [
+     "sleep on",
+     "rage-bait"
+    ]
+   ]
+  },
+  "h": "0b6b190f79",
+  "note": "Sense checks out at https://www.merriam-webster.com/slang/sleep-on (M-W slang page: to ignore, overlook or underestimate). But M-W rage-bait is also a verb (to make intentionally provocative statements), so “Do not rage-bait the quiet defender” is sound advice too, so group them",
+  "v": "fix"
+ },
+ "alpha:72": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "9fdfa0f18a",
+  "note": "M-W slang page: humorous, affectionate slang for bird",
+  "v": "ok"
+ },
+ "alpha:73": {
+  "at": "2026-10-17T00:01:37Z",
+  "fix": {
+   "groups": [
+    [
+     "bias",
+     "GOAT"
+    ]
+   ]
+  },
+  "h": "ff23d3da06",
+  "note": "Sense checks out at https://www.merriam-webster.com/slang/bias (M-W slang page: K-pop sense, a favorite idol or performer). But “The goalie’s GOAT is the K-pop singer” also reads naturally (M-W GOAT: the greatest of all time), so group them",
+  "v": "fix"
+ },
+ "alpha:74": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "53cc9a84df",
+  "note": "M-W slang page: an experience that comes to shape or define who a person is",
+  "v": "ok"
+ },
+ "alpha:75": {
+  "at": "2026-10-17T00:01:37Z",
+  "fix": {
+   "groups": [
+    [
+     "chalked",
+     "AFK"
+    ],
+    [
+     "chalked",
+     "mid"
+    ]
+   ]
+  },
+  "h": "d9c246d805",
+  "note": "Sense checks out at https://www.merriam-webster.com/slang/chalked (M-W slang page: doomed, hopeless, done for). But “Down 6–0, the team was AFK” (Dictionary.com: absent, stopped participating) and “…was mid” (M-W mid: mediocre, disappointing) also fit",
+  "v": "fix"
+ },
+ "alpha:76": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "ef28e5367e",
+  "note": "M-W slang clout: attention, fame, or popularity, especially on social media",
+  "v": "ok"
+ },
+ "alpha:77": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "5f17accd37",
+  "note": "M-W slang cottagecore: quaint, cozy, modest style from bucolic inspirations (gardening, baking)",
+  "v": "ok"
+ },
+ "alpha:78": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "01a7a3d9ba",
+  "note": "M-W slang do numbers: to earn a lot of sales, social media interactions, etc. (slay already grouped)",
+  "v": "ok"
+ },
+ "alpha:79": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "f7e9694bb5",
+  "note": "M-W slang brick: extremely cold (used of weather)",
+  "v": "ok"
+ },
+ "alpha:8": {
+  "at": "2026-10-17T00:01:37Z",
+  "fix": {
+   "ex": "The coach has won the league in each of her 20 years, so she is the GOAT"
+  },
+  "h": "61a8c7a4d7",
+  "note": "M-W GOAT: the most accomplished and successful individual in the history of a sport or activity. Perfect attendance is not accomplishment or success, so the sense is a stretch. Reworded to a record of winning, hook 20 years kept",
+  "v": "fix"
+ },
+ "alpha:80": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "0d84b5b2fe",
+  "note": "M-W slang Gen Z stare: an unblinking, vacant expression where a spoken reply is expected (vibe check already grouped)",
+  "v": "ok"
+ },
+ "alpha:81": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "9b6a938292",
+  "note": "M-W slang girl dinner: a light meal of snacks or easy-to-prepare foods",
+  "v": "ok"
+ },
+ "alpha:82": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "70cdfa9160",
+  "note": "M-W slang girlypop: an affectionate term for a close girl or woman friend (bestie and twin already grouped)",
+  "v": "ok"
+ },
+ "alpha:83": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "46d0824dea",
+  "note": "M-W slang has entered the chat: notes the sudden appearance of a person or topic",
+  "v": "ok"
+ },
+ "alpha:84": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "88e4dcce4a",
+  "note": "M-W slang hold the L: to admit being wrong or to accept defeat",
+  "v": "ok"
+ },
+ "alpha:85": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "44c46d2b04",
+  "note": "M-W slang IJBOL: I just burst out laughing (SMH, bruh, womp womp, sheesh already grouped)",
+  "v": "ok"
+ },
+ "alpha:86": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "fc173528ba",
+  "note": "M-W slang keep it a buck: to be honest, real, or truthful",
+  "v": "ok"
+ },
+ "alpha:87": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "5274923255",
+  "note": "M-W slang kiki: a gossipy get-together, a lively chat",
+  "v": "ok"
+ },
+ "alpha:88": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "1633292afa",
+  "note": "M-W slang lore: the history or backstory of a person, character, or imagined world",
+  "v": "ok"
+ },
+ "alpha:89": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "3fac7045a1",
+  "note": "M-W slang lowkenuinely: in a manner both genuine and low-key (low-key and high-key already grouped)",
+  "v": "ok"
+ },
+ "alpha:9": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "0574bcb328",
+  "note": "M-W fire (slang adjective): excellent, a generalized term of approval",
+  "v": "ok"
+ },
+ "alpha:90": {
+  "at": "2026-10-17T00:01:37Z",
+  "fix": {
+   "groups": [
+    [
+     "out of pocket",
+     "salty"
+    ]
+   ]
+  },
+  "h": "d32a748f96",
+  "note": "M-W slang out of pocket: inappropriate, out of line (cringe already grouped). But salty is still drawable and fits too: arguing with the ref in the handshake line is easily called salty (deck card: Bitter, annoyed), so group them",
+  "v": "fix"
+ },
+ "alpha:91": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "d153364b61",
+  "note": "M-W slang plot armor: the overly convenient invulnerability of a fictional character",
+  "v": "ok"
+ },
+ "alpha:92": {
+  "at": "2026-10-17T00:01:37Z",
+  "fix": {
+   "groups": [
+    [
+     "preppy",
+     "girlypop"
+    ]
+   ]
+  },
+  "h": "2236e88859",
+  "note": "M-W slang preppy: a cheery, sporty girls’ style with pastels, smiley faces and hair bows. But M-W slang girlypop (merriam-webster.com/slang/girlypop) is also an adjective for hyperfeminine things, so “very girlypop” fits pastel bows too and girlypop is drawable here, so group them",
+  "v": "fix"
+ },
+ "alpha:93": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "e59e9d21be",
+  "note": "M-W slang pressed: stressed out, upset, bothered (salty and crash out already grouped)",
+  "v": "ok"
+ },
+ "alpha:94": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "5720542b46",
+  "note": "M-W slang side quest: an activity secondary to one’s main endeavor",
+  "v": "ok"
+ },
+ "alpha:95": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "855a89c02d",
+  "note": "M-W slang SMH: shaking my head, disapproval or disbelief (bruh, womp womp, sheesh already grouped)",
+  "v": "ok"
+ },
+ "alpha:96": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "c4676bb625",
+  "note": "M-W slang speed run: an incredibly fast progression, also a verb",
+  "v": "ok"
+ },
+ "alpha:97": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "34ed513c51",
+  "note": "M-W slang winter arc: an October–December stretch of focus on self-improvement goals",
+  "v": "ok"
+ },
+ "alpha:98": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "f7805af4a8",
+  "note": "M-W slang womp womp: interjection mocking someone’s misfortune (SMH, bruh already grouped)",
+  "v": "ok"
+ },
+ "alpha:99": {
+  "at": "2026-10-17T00:01:37Z",
+  "h": "c9365428fe",
+  "note": "M-W slang zoomies: a burst of frenetic running in dogs and cats",
+  "v": "ok"
+ },
  "basics:0": {
   "at": "2026-10-16T23:59:06Z",
   "h": "0e34592af3",
