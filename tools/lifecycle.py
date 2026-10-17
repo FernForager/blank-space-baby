@@ -26,6 +26,11 @@ def ok(cond, what):
     print(('ok    ' if cond else 'FAIL  ') + what)
     if not cond: fails.append(what)
 
+def grid(s):   # the share grid the page should write: tapped cards in order, six to a row, ❌ for the miss
+    cells = ['❌' if s['res'][i] == 2 else '⬜🟨🟥'[s['tiles'][i]['d'] - 1] for i in s['path'] if s['res'][i]]
+    return '\n'.join(''.join(cells[k:k + 6]) for k in range(0, len(cells), 6))
+
+
 async def run(b, html, demo):
     print(f'-- as the {"demo, " + str(demo) + " boards" if demo else "real daily"}')
     ctx = await b.new_context(viewport={'width': 402, 'height': 744}, reduced_motion='reduce')
@@ -62,7 +67,7 @@ async def run(b, html, demo):
     await pg.click(f'.choice[data-w="{wrong}"]'); await pg.click('#flip'); await pg.wait_for_timeout(300)
     await pg.click('#share'); await pg.wait_for_timeout(200)
     text = await pg.evaluate("navigator.clipboard.readText()")
-    ok(text == 'Triviela #1\n⚽⚽ Brace · 12\ntriviela.net', 'the share text is exact: ' + repr(text))
+    ok(text == 'Triviela #1\n' + grid(await state()) + '\n⚽⚽ Brace · 12\ntriviela.net', 'the share text is exact: ' + repr(text))
     lost = await pg.evaluate("document.querySelector('#v-end .lost .fill') && document.querySelector('#v-end .lost .fill').textContent")
     ok(lost == w, 'the end screen fills in the right answer of the card that got you')
     # 4. locked
@@ -98,7 +103,7 @@ async def run(b, html, demo):
             await pg.click(f'.choice[data-w="{wrong}"]'); await pg.click('#flip'); await pg.wait_for_timeout(300)
         await lose(); await pg.click('#share'); await pg.wait_for_timeout(200)
         text = await pg.evaluate("navigator.clipboard.readText()")
-        ok(text == 'Triviela #2\nNil · 0\ntriviela.net', 'board #2 shares as #2: ' + repr(text))
+        ok(text == 'Triviela #2\n❌\nNil · 0\ntriviela.net', 'board #2 shares as #2: ' + repr(text))
         await pg.evaluate(f"localStorage.setItem('bsb-demo', '{demo - 1}'); localStorage.removeItem('bsb-daily')"); await pg.reload(); await pg.wait_for_timeout(300)
         s = await state(); ok(s['day'] == demo - 1, f'the demo picks up where it was left, on #{demo}')
         await lose(); r = await row()
