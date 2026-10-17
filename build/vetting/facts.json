@@ -4099,6 +4099,429 @@
   "note": "MW penalty area shows the box in front of each goal but not the keeper’s hands. dictionary.com penalty-area (Collins British) says it is the area within which the goalkeeper may handle the ball, so that page supports both sentence and means",
   "v": "fix"
  },
+ "nwsl:0": {
+  "at": "2026-10-17T00:10:57Z",
+  "h": "217f5d0406",
+  "note": "nwslsoccer.com playoffs history page: 2013 Thorns beat WNY Flash 2–0 in the first NWSL Championship, and won again in 2017 and 2022",
+  "v": "ok"
+ },
+ "nwsl:1": {
+  "at": "2026-10-17T00:10:57Z",
+  "h": "6adac53c84",
+  "note": "Playoffs history page: FC Kansas City beat OL Seattle 2–1 in 2014 and 1–0 in 2015 finals, and folded in the offseason before 2018",
+  "v": "ok"
+ },
+ "nwsl:10": {
+  "at": "2026-10-17T00:11:13Z",
+  "fix": {
+   "means": "Boston’s home opener drew 30,207"
+  },
+  "h": "4a333ae361",
+  "note": "nwslsoccer.com Denver opener page: record 63,004 at the inaugural home opener, still a record per the June 2026 storylines page. The same page says Denver “nearly doubled” Boston’s 30,207, so the means line’s “more than double” goes past what the site says. New means states only the shown figure",
+  "v": "fix"
+ },
+ "nwsl:11": {
+  "at": "2026-10-17T00:10:57Z",
+  "h": "5f40716d51",
+  "note": "2026 storylines page calls Chawinga back-to-back MVP and Golden Boot winner (Kansas City). 2024 MVP on https://www.nwslsoccer.com/news/kansas-city-current-forward-temwa-chawinga-named-2024-nwsl-most-valuable-player",
+  "v": "ok"
+ },
+ "nwsl:12": {
+  "at": "2026-10-17T00:10:57Z",
+  "h": "0627ed8659",
+  "note": "Goal record page: Kerr scored 18 in 2019 for the record, Chawinga broke it in 2024. Note: Ashley Sanchez tied the 20-goal mark on Sept 28, 2026 (https://www.nwslsoccer.com/news/sanchez-becomes-second-to-score-20-goals-fishlock-breaks-rapinoe-s-reign-scoring-record) but this card stays true",
+  "v": "ok"
+ },
+ "nwsl:13": {
+  "at": "2026-10-17T00:10:57Z",
+  "h": "ccb63184b0",
+  "note": "Shield history page, 2014: Kim Little won Golden Boot and MVP with a league-leading 16 goals for Seattle Reign FC",
+  "v": "ok"
+ },
+ "nwsl:14": {
+  "at": "2026-10-17T00:10:57Z",
+  "h": "400e61b1a8",
+  "note": "2022 MVP page: at 22 the youngest MVP in NWSL history, No. 1 overall pick in the 2020 Draft. Note: she now plays as Sophia Wilson (2026 storylines page), the card’s 2022 name is fine but the soccer reviewer may want to know",
+  "v": "ok"
+ },
+ "nwsl:15": {
+  "at": "2026-10-17T00:10:57Z",
+  "h": "053d351574",
+  "note": "2024 final recap: Marta, six-time World Player of the Year, lifted her first NWSL Championship at age 38 with Orlando",
+  "v": "ok"
+ },
+ "nwsl:16": {
+  "at": "2026-10-17T00:10:57Z",
+  "h": "c8c8d0fcb1",
+  "note": "2024 final recap: Banda’s 37th-minute goal won it 1–0 and earned her Championship MVP",
+  "v": "ok"
+ },
+ "nwsl:17": {
+  "at": "2026-10-17T00:10:57Z",
+  "h": "a300782318",
+  "note": "2025 final page: Lavelle’s 80th-minute goal won it 1–0 and earned her MVP",
+  "v": "ok"
+ },
+ "nwsl:18": {
+  "at": "2026-10-17T00:11:13Z",
+  "h": "b8da1cd6d0",
+  "note": "Wave page: the Wave retired her No. 13, and she was welcomed as “the San Diegoat”",
+  "v": "ok"
+ },
+ "nwsl:19": {
+  "at": "2026-10-17T00:10:57Z",
+  "h": "390a7c6df7",
+  "note": "Sept 28, 2026 page: Fishlock broke the Reign’s all-time regular season scoring record previously held by Megan Rapinoe",
+  "v": "ok"
+ },
+ "nwsl:2": {
+  "at": "2026-10-17T00:10:57Z",
+  "h": "436a5ab008",
+  "note": "Playoffs history page: 2016 WNY Flash beat Washington 3–2 on PKs, the first final decided by PKs, then moved to Cary, North Carolina in 2017",
+  "v": "ok"
+ },
+ "nwsl:20": {
+  "at": "2026-10-17T00:10:57Z",
+  "h": "ebf0981898",
+  "note": "MVP list on src: 2021 Jessica Fishlock, OL Reign. https://www.nwslsoccer.com/news/seattle-reign-captain-jess-fishlock-nwsl-original-to-retire-at-end-of-2026-season says she has played for the Reign every season since the league began",
+  "v": "ok"
+ },
+ "nwsl:21": {
+  "at": "2026-10-17T00:10:57Z",
+  "h": "8fe6662bc4",
+  "note": "Announcement page: No. 12 is the first jersey in club history to be retired, 12 years in Portland. The ceremony took place, see https://www.nwslsoccer.com/news/portland-turns-out-to-celebrate-christine-sinclair-s-thorns-hall-of-fame-induction",
+  "v": "ok"
+ },
+ "nwsl:22": {
+  "at": "2026-10-17T00:10:57Z",
+  "h": "4cca6c362e",
+  "note": "Rookie of the Year page: youngest player to be drafted in the NWSL (No. 2 pick in 2021), then 2021 Rookie of the Year",
+  "v": "ok"
+ },
+ "nwsl:23": {
+  "at": "2026-10-17T00:10:57Z",
+  "h": "0e4f39ecf3",
+  "note": "2024 MVP page: Malawi international, the first African-born MVP. Two-time MVP shown on the 2026 storylines page (back-to-back MVP)",
+  "v": "ok"
+ },
+ "nwsl:24": {
+  "at": "2026-10-17T00:10:57Z",
+  "h": "e752212b72",
+  "note": "Goal record page: Little is “a goal-scoring Scot” who joined Seattle Reign FC in 2014 (Shield history page: her first NWSL season was 2014)",
+  "v": "ok"
+ },
+ "nwsl:25": {
+  "at": "2026-10-17T00:10:57Z",
+  "h": "da820a42ae",
+  "note": "Fishlock retirement page: 48 goals in 166 caps for Wales, both national team records",
+  "v": "ok"
+ },
+ "nwsl:26": {
+  "at": "2026-10-17T00:10:57Z",
+  "h": "345d49725f",
+  "note": "Sinclair page: four straight Olympics with Canada, closing with gold in 2021",
+  "v": "ok"
+ },
+ "nwsl:27": {
+  "at": "2026-10-17T00:10:57Z",
+  "h": "ab31e9d32d",
+  "note": "Sept 28, 2026 page: Clara Luvanga made her debut for the Spirit, the first Tanzanian player in NWSL history",
+  "v": "ok"
+ },
+ "nwsl:28": {
+  "at": "2026-10-17T00:10:57Z",
+  "h": "8dcac83a10",
+  "note": "Goal record page: stints with Perth Glory and her national team in Australia",
+  "v": "ok"
+ },
+ "nwsl:29": {
+  "at": "2026-10-17T00:10:57Z",
+  "h": "e6e855d497",
+  "note": "Playoffs history page, 2013: eight teams and 22 regular-season games",
+  "v": "ok"
+ },
+ "nwsl:3": {
+  "at": "2026-10-17T00:10:57Z",
+  "h": "ebd5588eed",
+  "note": "Shield history page: Courage won the 2017, 2018 and 2019 Shields and the 2018 and 2019 Championships",
+  "v": "ok"
+ },
+ "nwsl:30": {
+  "at": "2026-10-17T00:10:57Z",
+  "h": "760db1010f",
+  "note": "2026 storylines page lists 16 clubs. https://www.nwslsoccer.com/news/seattle-reign-captain-jess-fishlock-nwsl-original-to-retire-at-end-of-2026-season calls Denver Summit and Boston Legacy both 2026 expansion teams",
+  "v": "ok"
+ },
+ "nwsl:31": {
+  "at": "2026-10-17T00:10:57Z",
+  "h": "6033f93ea5",
+  "note": "Goal record page: Chawinga became the first player to hit 20 goals, passing Kerr’s 18. Sanchez reached 20 in 2026 as the second (Sept 28, 2026 page), so “first” still holds",
+  "v": "ok"
+ },
+ "nwsl:32": {
+  "at": "2026-10-17T00:10:57Z",
+  "h": "12ad25515e",
+  "note": "2025 milestones page: most points in one season 65, most wins 21",
+  "v": "ok"
+ },
+ "nwsl:33": {
+  "at": "2026-10-17T00:10:57Z",
+  "h": "51f99116c9",
+  "note": "Sinclair page: 190 goals for Canada, the most international goals by a male or female",
+  "v": "ok"
+ },
+ "nwsl:34": {
+  "at": "2026-10-17T00:10:57Z",
+  "h": "16671342ee",
+  "note": "2024 championship recap: NWSL records incl. unbeaten streak to open the season (23 matches), Pride won the 2024 title",
+  "v": "ok"
+ },
+ "nwsl:35": {
+  "at": "2026-10-17T00:10:57Z",
+  "h": "9be2e70fe2",
+  "note": "2024 championship recap: Orlando secured the Shield as the league’s best regular-season team",
+  "v": "ok"
+ },
+ "nwsl:36": {
+  "at": "2026-10-17T00:10:57Z",
+  "h": "8ebe0c60ab",
+  "note": "2025 milestones page: Chawinga finished atop the Golden Boot race again with 15 goals, back-to-back years",
+  "v": "ok"
+ },
+ "nwsl:37": {
+  "at": "2026-10-17T00:10:57Z",
+  "h": "aeb9d72271",
+  "note": "Page shows Houston Dash 2, Chicago Red Stars 0, first trophy in club history, 2020 Challenge Cup champions",
+  "v": "ok"
+ },
+ "nwsl:38": {
+  "at": "2026-10-17T00:10:57Z",
+  "h": "ec1f6fc216",
+  "note": "2025 milestones page: Ironwoman is an athlete who played every minute of every game, Kurtz completed her fourth consecutive Ironwoman season",
+  "v": "ok"
+ },
+ "nwsl:39": {
+  "at": "2026-10-17T00:10:57Z",
+  "h": "2a2416dbf7",
+  "note": "2023 Shield page: Shield-clinching victory on Decision Day, winner decided in the final weekend of play",
+  "v": "ok"
+ },
+ "nwsl:4": {
+  "at": "2026-10-17T00:10:57Z",
+  "h": "aacff98034",
+  "note": "Match recap: 1–1 after 90, O’Hara header in the 97th minute in extra time, the Spirit’s first title in club history",
+  "v": "ok"
+ },
+ "nwsl:40": {
+  "at": "2026-10-17T00:10:57Z",
+  "fix": {
+   "src": "https://www.nwslsoccer.com/leadership-team"
+  },
+  "h": "2cd9d8a51f",
+  "note": "The CBA page shows the draft eliminated (Aug 2024) but not the “first” claim. The leadership page bio of Berman says the CBA makes the NWSL “the first U.S. professional sports league to eliminate its draft”",
+  "v": "fix"
+ },
+ "nwsl:41": {
+  "at": "2026-10-17T00:10:57Z",
+  "h": "2463cda291",
+  "note": "History of the Shield: Reign won 2014 and 2015 Shields, in 2015 Harvey became the first coach to win multiple Coach of the Year honors",
+  "v": "ok"
+ },
+ "nwsl:42": {
+  "at": "2026-10-17T00:10:57Z",
+  "h": "bc627483aa",
+  "note": "Leadership page bio: Berman named Commissioner in 2022 and “led the league’s expansion to 16 clubs”",
+  "v": "ok"
+ },
+ "nwsl:43": {
+  "at": "2026-10-17T00:10:57Z",
+  "h": "0d2553c0d2",
+  "note": "2023 Shield page: Casey Stoney earns her first Shield, the first regular season title in the expansion side’s two-year history",
+  "v": "ok"
+ },
+ "nwsl:44": {
+  "at": "2026-10-17T00:10:57Z",
+  "h": "68522eedb5",
+  "note": "2023 championship page: Coach of the Year Amorós led his club from last place in 2022 to a Championship a year later",
+  "v": "ok"
+ },
+ "nwsl:45": {
+  "at": "2026-10-17T00:10:57Z",
+  "h": "9dfb00bfdd",
+  "note": "Coach of the Year page: Hines named 2024 Coach of the Year and led the Pride to the 2024 Shield",
+  "v": "ok"
+ },
+ "nwsl:46": {
+  "at": "2026-10-17T00:10:57Z",
+  "fix": {
+   "means": "She coached Racing Louisville FC"
+  },
+  "h": "afdd1848bc",
+  "note": "2025 awards page: Coach of the Year Bev Yanez (Racing Louisville FC). No nwslsoccer.com page found showing she still coaches there in 2026 (team page renders empty, latest coach news Nov 2025), so tie the means to the award year",
+  "v": "fix"
+ },
+ "nwsl:47": {
+  "at": "2026-10-17T00:10:57Z",
+  "h": "e82d274436",
+  "note": "2024 season-open page: CPKC Stadium is the first purpose-built stadium for a women’s professional sports team, Current host its inaugural match",
+  "v": "ok"
+ },
+ "nwsl:48": {
+  "at": "2026-10-17T00:10:57Z",
+  "h": "ebf96a1452",
+  "note": "2026 Championship page: Audi Field, home of the Washington Spirit, hosts the 2026 final and previously hosted the 2022 final",
+  "v": "ok"
+ },
+ "nwsl:49": {
+  "at": "2026-10-17T00:10:57Z",
+  "h": "1ac24623db",
+  "note": "Fishlock page: the Reign return to Seattle and Lumen Field to host Utah",
+  "v": "ok"
+ },
+ "nwsl:5": {
+  "at": "2026-10-17T00:10:57Z",
+  "h": "bd49f1360d",
+  "note": "Lavelle final page: Gotham the No. 8 seed beat Washington 1–0 for their second title. Playoffs history page shows Gotham won 2023",
+  "v": "ok"
+ },
+ "nwsl:50": {
+  "at": "2026-10-17T00:10:57Z",
+  "h": "87ffd1213f",
+  "note": "Sinclair page: scored in her final regular-season match at Providence Park, 3–0 win over Angel City",
+  "v": "ok"
+ },
+ "nwsl:51": {
+  "at": "2026-10-17T00:10:57Z",
+  "h": "9be248ab30",
+  "note": "2023 championship page: record-setting title match crowd of 25,011 at Snapdragon Stadium in San Diego. Still the final record per https://www.nwslsoccer.com/news/2025-nwsl-championship-postseason-records (2025 final sold out at 18,000)",
+  "v": "ok"
+ },
+ "nwsl:52": {
+  "at": "2026-10-17T00:10:57Z",
+  "fix": {
+   "means": "Denver’s debut drew 63,004"
+  },
+  "h": "d3e705ed79",
+  "note": "Denver page: Boston drew 30,207 at Gillette Stadium for their inaugural home opener, but the page says Denver’s 63,004 “nearly doubled” it, so “more than doubled” contradicts the source wording",
+  "v": "fix"
+ },
+ "nwsl:53": {
+  "at": "2026-10-17T00:10:57Z",
+  "fix": {
+   "src": "https://www.nwslsoccer.com/news/2026-nwsl-schedule-release-how-to-watch-portland-thorns-fc"
+  },
+  "h": "93d7ecc2da",
+  "note": "The about-the-nwsl page renders no text about clubs. The Thorns’ 2026 schedule page shows Portland Thorns FC at home at Providence Park",
+  "v": "fix"
+ },
+ "nwsl:54": {
+  "at": "2026-10-17T00:10:57Z",
+  "h": "a295883be1",
+  "note": "2024 championship recap: Orlando Pride won the 2024 Championship, parade in downtown Orlando",
+  "v": "ok"
+ },
+ "nwsl:55": {
+  "at": "2026-10-17T00:10:57Z",
+  "h": "e22a77dd30",
+  "note": "Playoffs history page: 2014 section, Houston Dash added, league up to nine teams",
+  "v": "ok"
+ },
+ "nwsl:56": {
+  "at": "2026-10-17T00:10:57Z",
+  "fix": {
+   "src": "https://www.nwslsoccer.com/news/2026-nwsl-schedule-release-how-to-watch-san-diego-wave-fc"
+  },
+  "h": "fb90e68bd7",
+  "note": "The about-the-nwsl page renders no text about clubs. The Wave’s 2026 schedule page shows San Diego Wave FC at home at Snapdragon Stadium",
+  "v": "fix"
+ },
+ "nwsl:57": {
+  "at": "2026-10-17T00:10:57Z",
+  "h": "69df44891e",
+  "note": "2024 season-open page: Kansas City Current host the inaugural match at CPKC Stadium",
+  "v": "ok"
+ },
+ "nwsl:58": {
+  "at": "2026-10-17T00:10:57Z",
+  "h": "22918c9b48",
+  "note": "Denver page: Summit welcomed home to Denver, record 63,004 at the inaugural home opener",
+  "v": "ok"
+ },
+ "nwsl:59": {
+  "at": "2026-10-17T00:10:57Z",
+  "fix": {
+   "src": "https://www.nwslsoccer.com/news/2026-nwsl-schedule-release-how-to-watch-racing-louisville-fc"
+  },
+  "h": "383a66b595",
+  "note": "The about-the-nwsl page renders no text about clubs. Racing’s 2026 schedule page shows Racing Louisville FC at home at Lynn Family Stadium",
+  "v": "fix"
+ },
+ "nwsl:6": {
+  "at": "2026-10-17T00:11:13Z",
+  "h": "3954579f62",
+  "note": "2024 final recap: Pride secured the Shield and won the Championship, the first title for any Orlando major league pro team",
+  "v": "ok"
+ },
+ "nwsl:60": {
+  "at": "2026-10-17T00:10:57Z",
+  "h": "3762afcc26",
+  "note": "2026 Championship page: Audi Field in Washington, D.C., home of the Washington Spirit",
+  "v": "ok"
+ },
+ "nwsl:61": {
+  "at": "2026-10-17T00:10:57Z",
+  "h": "6d19137dbb",
+  "note": "Playoffs history page: 2013 section, just eight teams in the league",
+  "v": "ok"
+ },
+ "nwsl:62": {
+  "at": "2026-10-17T00:10:57Z",
+  "h": "fe29762eec",
+  "note": "Playoffs history page: no regular season or playoffs were held in 2020",
+  "v": "ok"
+ },
+ "nwsl:63": {
+  "at": "2026-10-17T00:10:57Z",
+  "h": "81d6b03429",
+  "note": "Denver schedule page: two new teams this season, Boston and Denver",
+  "v": "ok"
+ },
+ "nwsl:64": {
+  "at": "2026-10-17T00:10:57Z",
+  "h": "d888e574aa",
+  "note": "Playoffs history page: 2022 section, Southern California gained Angel City FC and the San Diego Wave",
+  "v": "ok"
+ },
+ "nwsl:65": {
+  "at": "2026-10-17T00:10:57Z",
+  "h": "9871c5e758",
+  "note": "Playoffs history page: in 2016 the Orlando Pride entered, and the 2017 semifinal was No. 2 Portland vs. No. 3 Orlando Pride",
+  "v": "ok"
+ },
+ "nwsl:66": {
+  "at": "2026-10-17T00:10:57Z",
+  "h": "6066620c63",
+  "note": "Columbus page: awarded the league’s 18th franchise, set to begin play in 2028. No later change found",
+  "v": "ok"
+ },
+ "nwsl:7": {
+  "at": "2026-10-17T00:10:57Z",
+  "h": "e6848dc9cb",
+  "note": "Shield history page: Seattle Reign FC won the 2014 and 2015 Shields, and a third as OL Reign in 2022",
+  "v": "ok"
+ },
+ "nwsl:8": {
+  "at": "2026-10-17T00:10:57Z",
+  "h": "66da97ec64",
+  "note": "2023 Shield page: first regular season title in the expansion side’s two-year history, Casey Stoney’s first Shield",
+  "v": "ok"
+ },
+ "nwsl:9": {
+  "at": "2026-10-17T00:10:57Z",
+  "h": "b9505ba90a",
+  "note": "2025 milestones page: Kansas City records list shows most wins 21 and shutouts 16",
+  "v": "ok"
+ },
  "parents:0": {
   "at": "2026-10-16T23:59:39Z",
   "fix": {
