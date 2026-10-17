@@ -854,9 +854,9 @@
   "v": "ok"
  },
  "basics:1": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "120967ea02",
-  "note": "theifab.com Law 4 (The Players’ Equipment) 4.2 and FAQs: footwear lost accidentally must be replaced no later than when the ball next goes out, a goal scored before that is awarded",
+  "at": "2026-10-17T00:18:17Z",
+  "h": "85b5bf1a9f",
+  "note": "theifab.com Law 4.2 and FAQs (footwear lost accidentally must be replaced no later than when the ball next goes out of play, a goal scored before that is awarded)",
   "v": "ok"
  },
  "basics:10": {
@@ -890,9 +890,9 @@
   "v": "ok"
  },
  "basics:104": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "fde74ffdeb",
-  "note": "theifab.com Law 11.1 and 11.2: being in an offside position is not an offence, only becoming involved in active play",
+  "at": "2026-10-17T00:18:17Z",
+  "h": "5269340a26",
+  "note": "theifab.com Law 11 (it is not an offence to be in an offside position, a player is penalised only on becoming involved in active play)",
   "v": "ok"
  },
  "basics:105": {
@@ -1055,13 +1055,10 @@
   "v": "ok"
  },
  "basics:129": {
-  "at": "2026-10-16T23:59:06Z",
-  "fix": {
-   "ex": "Unsure on a throw-in, the assistant referee raises the flag and follows the referee"
-  },
-  "h": "23bbedd06a",
-  "note": "theifab.com Guidelines, Body language (Throw-in): far from the AR and in doubt, the AR raises the flag, makes eye contact and follows the referee’s signal. Near the AR, a direct signal shows the direction, so the means line holds. The wrong-answer pool here includes players and the coach (captain, goalkeeper, coach), and any player could be said to follow the referee’s signal, so the reword adds the flag to make only the assistant referee fit (83 characters, hook unchanged)",
-  "v": "fix"
+  "at": "2026-10-17T00:18:18Z",
+  "h": "10104f993e",
+  "note": "theifab.com/laws/latest/guidelines/body-language-communication-and-whistle/ (AR in doubt about throw-in direction raises the flag and follows the referee’s signal, near the AR a direct signal shows the direction)",
+  "v": "ok"
  },
  "basics:13": {
   "at": "2026-10-16T23:59:06Z",
@@ -1088,9 +1085,9 @@
   "v": "ok"
  },
  "basics:133": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "a939c0c4bf",
-  "note": "theifab.com VAR protocol (Practicalities): if the referee decides to view the replay footage, the VAR will select the best angle and replay speed",
+  "at": "2026-10-17T00:18:18Z",
+  "h": "8bb1ed965a",
+  "note": "theifab.com VAR protocol 3 Practicalities (if the referee decides to view the replay footage, the VAR will select the best angle/replay speed)",
   "v": "ok"
  },
  "basics:134": {
@@ -1106,21 +1103,13 @@
   "v": "ok"
  },
  "basics:136": {
-  "at": "2026-10-16T23:59:06Z",
+  "at": "2026-10-17T00:18:44Z",
   "fix": {
-   "groups": [
-    [
-     "VAR",
-     "review"
-    ],
-    [
-     "VAR",
-     "check"
-    ]
-   ]
+   "ex": "The ref must make a call and may not wait for the VAR’s replay to make it",
+   "hook": "call"
   },
-  "h": "77467733bc",
-  "note": "theifab.com VAR protocol: the referee must always make a decision and may not give no decision, the VAR is only used after the referee has made a first decision. Facts hold. But review and check are in this card’s wrong-answer pool and both also fit the blank (a review or a check also comes only after the referee’s first call), so group them with VAR",
+  "h": "3151bc5216",
+  "note": "theifab.com VAR protocol: the referee must always make a decision and may not give “no decision” and then use the replay review to decide. But the VAR may also act on a serious missed incident where no call was made, so “only then can the VAR step in” is too strong. The new sentence states the protocol’s own rule, and “replay” keeps referee and assistant referee false",
   "v": "fix"
  },
  "basics:137": {
@@ -1172,9 +1161,9 @@
   "v": "ok"
  },
  "basics:144": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "0bb0ce9917",
-  "note": "theifab.com Law 8 FAQ: the coin must be tossed by the referee, not an AR or captain, and the referee tosses a coin before extra time",
+  "at": "2026-10-17T00:18:18Z",
+  "h": "d9bff08838",
+  "note": "theifab.com Law 8.1 (the referee tosses a coin) and Law 8 FAQ (the referee tosses a coin again before extra time)",
   "v": "ok"
  },
  "basics:145": {
@@ -1232,9 +1221,9 @@
   "v": "ok"
  },
  "basics:153": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "d5d8c68d54",
-  "note": "merriam-webster.com forward (noun): a player who plays at the front of the team’s formation near the opponent’s goal",
+  "at": "2026-10-17T00:18:18Z",
+  "h": "74d1a3779c",
+  "note": "merriam-webster.com/dictionary/forward (a player who plays at the front of the team’s formation near the opponent’s goal), means from merriam-webster.com/dictionary/striker (a forward in soccer)",
   "v": "ok"
  },
  "basics:154": {
@@ -1292,9 +1281,9 @@
   "v": "ok"
  },
  "basics:2": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "f6f100731a",
-  "note": "merriam-webster.com cleat: a projecting piece on the bottom of a shoe that furnishes a grip, and shoes equipped with cleats",
+  "at": "2026-10-17T00:18:17Z",
+  "h": "312a5a5f01",
+  "note": "merriam-webster.com/dictionary/cleat (a projecting piece on the bottom of a shoe that furnishes a grip, and shoes equipped with cleats)",
   "v": "ok"
  },
  "basics:20": {
@@ -1316,9 +1305,9 @@
   "v": "ok"
  },
  "basics:23": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "cf84fe7ca2",
-  "note": "theifab.com Law 8 8.1: for the second half the teams change ends and attack the opposite goals",
+  "at": "2026-10-17T00:18:17Z",
+  "h": "4d120fb5c7",
+  "note": "theifab.com Law 8.1 (for the second half, the teams change ends and attack the opposite goals)",
   "v": "ok"
  },
  "basics:24": {
@@ -1343,9 +1332,9 @@
   "v": "ok"
  },
  "basics:27": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "cefb1a370b",
-  "note": "theifab.com General Modifications: for youth, veterans, disability and grassroots football, national FAs may modify the duration of the two halves and of extra time",
+  "at": "2026-10-17T00:18:17Z",
+  "h": "7e60116c16",
+  "note": "theifab.com General Modifications (for youth football, national FAs may modify the duration of the two equal halves and the two equal halves of extra time) and Law 7.1 (two halves of 45 minutes)",
   "v": "ok"
  },
  "basics:28": {
@@ -1427,9 +1416,9 @@
   "v": "ok"
  },
  "basics:4": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "b62b78dcb2",
-  "note": "theifab.com Law 4 (The Players’ Equipment) 4.2: shinguards must be covered by the socks, players are responsible for their size and suitability",
+  "at": "2026-10-17T00:18:17Z",
+  "h": "29d0a801bf",
+  "note": "theifab.com Law 4.2 (shinguards must be covered by the socks, players are responsible for the size and suitability of their shinguards) and Law 4 FAQ",
   "v": "ok"
  },
  "basics:40": {
@@ -1481,9 +1470,9 @@
   "v": "ok"
  },
  "basics:48": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "b65db7da24",
-  "note": "merriam-webster.com goalmouth: the area directly in front of the goal (as in soccer or hockey)",
+  "at": "2026-10-17T00:18:17Z",
+  "h": "6c7267afd6",
+  "note": "merriam-webster.com/dictionary/goalmouth (the area directly in front of the goal, as in soccer or hockey, headword is one word)",
   "v": "ok"
  },
  "basics:49": {
@@ -1505,9 +1494,9 @@
   "v": "ok"
  },
  "basics:51": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "ed09f4380e",
-  "note": "theifab.com Law 1 (The Field of Play) 2026/27 1.6: arc of radius 9.15 m from the penalty mark drawn outside the penalty area. Law 14.1: other players at least 9.15 m from the mark and outside the area",
+  "at": "2026-10-17T00:18:17Z",
+  "h": "b1c6fd341b",
+  "note": "theifab.com Law 1.6 (arc of radius 9.15 m from the penalty mark drawn outside the penalty area) and Law 14.1 (other players at least 9.15 m from the penalty mark and outside the penalty area)",
   "v": "ok"
  },
  "basics:52": {
@@ -1583,9 +1572,9 @@
   "v": "ok"
  },
  "basics:63": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "edd14148bb",
-  "note": "theifab.com Law 1 (The Field of Play) 2026/27 1.8: a flagpost with a non-pointed top and a flag at each corner",
+  "at": "2026-10-17T00:18:17Z",
+  "h": "6eee54f2cd",
+  "note": "theifab.com Law 1.8 (a flagpost with a non-pointed top and a flag must be placed at each corner)",
   "v": "ok"
  },
  "basics:64": {
@@ -1625,9 +1614,9 @@
   "v": "ok"
  },
  "basics:7": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "d6d53404bd",
-  "note": "merriam-webster.com jersey: a shirt worn by a sports team member as part of a team uniform, typically with the athlete’s name and number on the back",
+  "at": "2026-10-17T00:18:17Z",
+  "h": "2fbc5b179e",
+  "note": "merriam-webster.com/dictionary/jersey (shirt worn by a member of a sports team as part of a team uniform, typically with name and number on the back)",
   "v": "ok"
  },
  "basics:70": {
@@ -1643,9 +1632,9 @@
   "v": "ok"
  },
  "basics:72": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "82cc414fed",
-  "note": "theifab.com Law 17: ball placed in the corner area, flagpost must not be moved. Awarded when the ball passes over the goal line last touched by a defender (Law 17 also lists two newer cases, the means line is still true)",
+  "at": "2026-10-17T00:18:17Z",
+  "h": "cc436c6442",
+  "note": "theifab.com Law 17 (ball placed in the corner area, the corner flagpost must not be moved, awarded when the ball last touched a defender and crosses the goal line)",
   "v": "ok"
  },
  "basics:73": {
@@ -1667,9 +1656,9 @@
   "v": "ok"
  },
  "basics:76": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "247351f957",
-  "note": "theifab.com Law 14.1: goalkeeper must not unfairly distract the kicker, e.g. delay the kick or touch the goalposts, crossbar or net",
+  "at": "2026-10-17T00:18:17Z",
+  "h": "25988f6589",
+  "note": "theifab.com Law 14.1 (goalkeeper must not unfairly distract the kicker, e.g. delay the taking of the kick or touch the goalposts, crossbar or goal net)",
   "v": "ok"
  },
  "basics:77": {
@@ -1691,9 +1680,9 @@
   "v": "ok"
  },
  "basics:8": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "5e8eb9da45",
-  "note": "merriam-webster.com shin guard: a protective covering for the shin, usually of stiffened canvas or leather, used in various sports",
+  "at": "2026-10-17T00:18:17Z",
+  "h": "161aaf83bf",
+  "note": "merriam-webster.com/dictionary/shin%20guard (protective covering for the shin, usually stiffened, used in various sports) plus merriam-webster.com/dictionary/shin (front part of the leg below the knee)",
   "v": "ok"
  },
  "basics:80": {
@@ -1742,9 +1731,9 @@
   "v": "ok"
  },
  "basics:87": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "49a04ab8cd",
-  "note": "theifab.com Law 13.2 (Free Kicks): opponents at least 9.15 m (10 yds) away unless on their own goal line between the goalposts",
+  "at": "2026-10-17T00:18:17Z",
+  "h": "378b3abdab",
+  "note": "theifab.com Law 13.2 (opponents at least 9.15 m from the ball unless they are on their own goal line between the goalposts)",
   "v": "ok"
  },
  "basics:88": {
@@ -1760,9 +1749,9 @@
   "v": "ok"
  },
  "basics:9": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "290b047b95",
-  "note": "theifab.com Law 4 (The Players’ Equipment) 4.3: the two teams must wear colors that distinguish them from each other and the match officials",
+  "at": "2026-10-17T00:18:17Z",
+  "h": "4f16f2e467",
+  "note": "theifab.com Law 4.3 (the two teams must wear colours that distinguish them from each other and the match officials)",
   "v": "ok"
  },
  "basics:90": {
@@ -1787,10 +1776,13 @@
   "v": "ok"
  },
  "basics:93": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "c79fe25b32",
-  "note": "theifab.com Law 12 FAQ on the fouls-and-misconduct page: once the goalkeeper has released the ball from the hands, any opponent can challenge them for it",
-  "v": "ok"
+  "at": "2026-10-17T00:18:17Z",
+  "fix": {
+   "means": "Once she lets go, it’s fair game"
+  },
+  "h": "35745f13b6",
+  "note": "theifab.com Law 12.3 and FAQ: a goalkeeper in control of the ball with the hands cannot be challenged, and control includes the ball held between hand and the ground, so a ball on the ground is not always fair game. Once the keeper releases it, any opponent can challenge. Means reworded to match",
+  "v": "fix"
  },
  "basics:94": {
   "at": "2026-10-16T23:59:06Z",
@@ -1817,9 +1809,9 @@
   "v": "ok"
  },
  "basics:98": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "cc8a7d5c97",
-  "note": "theifab.com Law 12.1 Handling the ball: not every touch is an offence, moving the hand/arm towards the ball is",
+  "at": "2026-10-17T00:18:17Z",
+  "h": "72148706d4",
+  "note": "theifab.com Law 12.1 (not every touch of the hand/arm with the ball is an offence, deliberately touching it, for example moving the hand/arm towards the ball, is)",
   "v": "ok"
  },
  "basics:99": {
@@ -6582,9 +6574,9 @@
   "v": "ok"
  },
  "rules:1": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "b49b3f6347",
-  "note": "theifab.com Law 3 3.1, 2026/27: a match may not start or continue if either team has fewer than seven players",
+  "at": "2026-10-17T00:18:18Z",
+  "h": "1c295535ae",
+  "note": "theifab.com Law 3.1 (a match may not start or continue if either team has fewer than seven players), Law 3.6 (a player sent off after kick-off cannot be replaced)",
   "v": "ok"
  },
  "rules:10": {
@@ -6618,15 +6610,15 @@
   "v": "ok"
  },
  "rules:15": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "aeb9c7e743",
-  "note": "theifab.com Law 13 13.2, 2026/27: opponents at least 9.15 m (10 yds) from the ball, Law 1 center circle radius 9.15 m (10 yds)",
+  "at": "2026-10-17T00:18:18Z",
+  "h": "fa2626c1c5",
+  "note": "theifab.com Law 13.2 (opponents at least 9.15 m (10 yds) from the ball) and Law 1.2 (centre circle radius 9.15 m (10 yds))",
   "v": "ok"
  },
  "rules:16": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "cfd913a9d2",
-  "note": "theifab.com Law 1 1.6, 2026/27: penalty mark 11 m (12 yds) from the midpoint between the goalposts",
+  "at": "2026-10-17T00:18:18Z",
+  "h": "16421d0ad4",
+  "note": "theifab.com Law 1.6 (penalty mark 11 m (12 yds) from the midpoint between the goalposts)",
   "v": "ok"
  },
  "rules:17": {
@@ -6642,9 +6634,9 @@
   "v": "ok"
  },
  "rules:19": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "8166a227fc",
-  "note": "theifab.com Law 1 1.11 (Goals), 2026/27: 7.32 m (8 yds) between the inside of the posts",
+  "at": "2026-10-17T00:18:18Z",
+  "h": "59f773bbe4",
+  "note": "theifab.com Law 1.10 (distance between the inside of the posts is 7.32 m (8 yds))",
   "v": "ok"
  },
  "rules:2": {
@@ -6714,9 +6706,9 @@
   "v": "ok"
  },
  "rules:3": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "cb1b053a05",
-  "note": "theifab.com Law 3 3.2, 2026/27: top division and senior A teams with five subs get a maximum of three substitution opportunities plus half-time, multiple subs in one stoppage count as one. Still true today",
+  "at": "2026-10-17T00:18:18Z",
+  "h": "031fc6b49c",
+  "note": "theifab.com Law 3.2 2026/27 (top division first teams and senior A internationals with five subs: maximum of three substitution opportunities plus half-time, multiple subs in one stoppage count as one). Still current",
   "v": "ok"
  },
  "rules:30": {
@@ -6768,15 +6760,15 @@
   "v": "ok"
  },
  "rules:38": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "279fb4b9d4",
-  "note": "Law 12.1 (2026/27): handball offence applies except for the goalkeeper within their penalty area, and outside it the keeper has the same restrictions as any player",
+  "at": "2026-10-17T00:18:18Z",
+  "h": "fe35ccb729",
+  "note": "theifab.com Law 12.1 (handball offence except for the goalkeeper within their penalty area, the goalkeeper has the same restrictions as any other player outside the penalty area)",
   "v": "ok"
  },
  "rules:39": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "1661f1eca2",
-  "note": "Law 12.4 (2026/27): caution for attempting to deceive the referee by feigning injury or pretending to have been fouled (simulation)",
+  "at": "2026-10-17T00:18:18Z",
+  "h": "773080794e",
+  "note": "theifab.com Law 12.4 (caution for attempting to deceive the referee, e.g. by feigning injury or pretending to have been fouled (simulation))",
   "v": "ok"
  },
  "rules:4": {
@@ -6786,9 +6778,9 @@
   "v": "ok"
  },
  "rules:40": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "ba4ba0a321",
-  "note": "Law 12.4 (2026/27): dissent by word or action is a cautionable offense",
+  "at": "2026-10-17T00:18:18Z",
+  "h": "bb5b57c964",
+  "note": "theifab.com Law 12.4 (caution for dissent by word or action) and glossary (dissent: public protest or disagreement with a match official’s decision, punishable by a caution)",
   "v": "ok"
  },
  "rules:41": {
@@ -6876,15 +6868,15 @@
   "v": "ok"
  },
  "rules:54": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "d164bc1333",
-  "note": "Law 4.1 (2026/27): accessories are permitted if not dangerous and safely and securely covered, dangerous items must be removed. Law 4 FAQs allow earrings and a non-dangerous necklace if securely covered. The 2025/26 page (theifab.com/laws/2025-26/the-players-equipment/) still said all jewellery is forbidden, so the change is 2026. Still current today. Note the Law itself now says accessories, not jewellery",
+  "at": "2026-10-17T00:18:18Z",
+  "h": "c1a42ff538",
+  "note": "theifab.com Law 4.1 2026/27 (accessories permitted if not dangerous and safely and securely covered, dangerous items must be removed, the old jewellery ban is deleted text) and Law 4 FAQs on earrings and a necklace. Still current",
   "v": "ok"
  },
  "rules:55": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "6a6c3cf1a6",
-  "note": "Law 3.10 (2026/27): each team must have a captain on the field of play who wears an identifying armband",
+  "at": "2026-10-17T00:18:44Z",
+  "h": "f3abd15244",
+  "note": "theifab.com Law 3.10 (each team must have a captain on the field of play who wears an identifying armband)",
   "v": "ok"
  },
  "rules:56": {
@@ -6912,9 +6904,9 @@
   "v": "ok"
  },
  "rules:6": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "9f69371acc",
-  "note": "theifab.com Law 1 1.9 (The technical area), 2026/27: only one person at a time is authorised to convey tactical instructions, number of occupants defined by competition rules",
+  "at": "2026-10-17T00:18:18Z",
+  "h": "b1d1676738",
+  "note": "theifab.com Law 1.9 (only one person at a time is authorised to convey tactical instructions from the technical area, the number of occupants and who they are follow competition rules)",
   "v": "ok"
  },
  "rules:60": {
@@ -6924,10 +6916,13 @@
   "v": "ok"
  },
  "rules:61": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "d058c7641f",
-  "note": "Law 7.3 (2026/27): allowance is made in each half for all playing time lost, and the fourth official indicates the minimum additional time",
-  "v": "ok"
+  "at": "2026-10-17T00:18:18Z",
+  "fix": {
+   "means": "The fourth official shows the minimum"
+  },
+  "h": "82544914a3",
+  "note": "theifab.com Law 7.3 and glossary support the sentence, but the phrase stoppage time appears nowhere on theifab.com (Law 7, glossary, site search). Law 7.3 says the fourth official indicates the minimum additional time decided by the referee",
+  "v": "fix"
  },
  "rules:62": {
   "at": "2026-10-16T23:59:06Z",
