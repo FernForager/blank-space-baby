@@ -618,6 +618,363 @@
   "h": "1acae9ed82",
   "v": "ok"
  },
+ "mls:0": {
+  "at": "2026-10-17T00:00:30Z",
+  "h": "496dc2ec22",
+  "note": "Still six until MLS Cup 2026 in December. Recheck after it",
+  "v": "ok"
+ },
+ "mls:1": {
+  "at": "2026-10-17T00:00:30Z",
+  "h": "d2c31fee3c",
+  "note": "Same final as mls:29 and mls:38, which the draw already keeps apart",
+  "v": "ok"
+ },
+ "mls:10": {
+  "at": "2026-10-17T00:00:30Z",
+  "h": "ecbd714ce2",
+  "v": "ok"
+ },
+ "mls:11": {
+  "at": "2026-10-17T00:00:30Z",
+  "h": "d2c5b5a4f1",
+  "note": "Right to keep the old name: they won all three as the New York Red Bulls, and the means teaches the rebrand",
+  "v": "ok"
+ },
+ "mls:12": {
+  "at": "2026-10-17T00:00:30Z",
+  "h": "b4f18864f8",
+  "note": "Near-twin of mls:37 (1998 final)",
+  "v": "ok"
+ },
+ "mls:13": {
+  "at": "2026-10-17T00:00:30Z",
+  "h": "ef5f66e4ff",
+  "v": "ok"
+ },
+ "mls:14": {
+  "at": "2026-10-17T00:00:30Z",
+  "h": "3cbbfbfbf6",
+  "note": "White holds as played: Messi is the name anyone knows. Near-twin of mls:24",
+  "v": "ok"
+ },
+ "mls:15": {
+  "at": "2026-10-17T00:00:30Z",
+  "h": "0a19e6d643",
+  "note": "Near-twin of mls:51 (Wondolowski’s record)",
+  "v": "ok"
+ },
+ "mls:16": {
+  "at": "2026-10-17T00:00:30Z",
+  "fix": {
+   "ex": "Carlos Vela scored 34 goals for LAFC in 2019, an MLS season record",
+   "hook": "34 goals",
+   "means": "He was also the 2019 MVP"
+  },
+  "h": "1dfec3d702",
+  "note": "Hook “MLS record” is a league label plus an empty word. “34 goals” is the cue a fan taps. Record is safe in 2026: Messi leads with 23 and about five games left",
+  "v": "fix"
+ },
+ "mls:17": {
+  "at": "2026-10-17T00:00:30Z",
+  "h": "1ab5edbaa6",
+  "v": "ok"
+ },
+ "mls:18": {
+  "at": "2026-10-17T00:00:30Z",
+  "h": "91b85e1556",
+  "note": "Landon Donovan MVP is the award’s official name",
+  "v": "ok"
+ },
+ "mls:19": {
+  "at": "2026-10-17T00:00:30Z",
+  "h": "ba25719744",
+  "v": "ok"
+ },
+ "mls:2": {
+  "at": "2026-10-17T00:00:30Z",
+  "h": "ec1835c5b5",
+  "note": "Near-twin of mls:22 and mls:26 (MLS Cup 2016)",
+  "v": "ok"
+ },
+ "mls:20": {
+  "at": "2026-10-17T00:00:30Z",
+  "h": "31c0990991",
+  "v": "ok"
+ },
+ "mls:21": {
+  "at": "2026-10-17T00:00:30Z",
+  "h": "6e6d4a4759",
+  "v": "ok"
+ },
+ "mls:22": {
+  "at": "2026-10-17T00:00:30Z",
+  "h": "7832d435d0",
+  "note": "Near-twin of mls:2",
+  "v": "ok"
+ },
+ "mls:23": {
+  "at": "2026-10-17T00:00:30Z",
+  "h": "e525ea371d",
+  "note": "Still true in 2026 on mlssoccer.com",
+  "v": "ok"
+ },
+ "mls:24": {
+  "at": "2026-10-17T00:00:30Z",
+  "h": "2617ef12f2",
+  "note": "Near-twin of mls:14, kept apart by the draw",
+  "v": "ok"
+ },
+ "mls:25": {
+  "at": "2026-10-17T00:00:30Z",
+  "h": "674813eb9d",
+  "note": "Arena coaches San Jose in 2026: recheck after MLS Cup 2026 in December",
+  "v": "ok"
+ },
+ "mls:26": {
+  "at": "2026-10-17T00:00:30Z",
+  "h": "9df3ff09ec",
+  "v": "ok"
+ },
+ "mls:27": {
+  "at": "2026-10-17T00:00:30Z",
+  "h": "79a7d0684a",
+  "v": "ok"
+ },
+ "mls:28": {
+  "at": "2026-10-17T00:00:31Z",
+  "h": "82811a87d3",
+  "v": "ok"
+ },
+ "mls:29": {
+  "at": "2026-10-17T00:00:31Z",
+  "h": "ddc42179b9",
+  "note": "Near-twin of mls:1",
+  "v": "ok"
+ },
+ "mls:3": {
+  "at": "2026-10-17T00:00:30Z",
+  "h": "1e33ecbf2b",
+  "note": "Near-twin of mls:60 and mls:28 (Toronto 2017), kept apart by the draw",
+  "v": "ok"
+ },
+ "mls:30": {
+  "at": "2026-10-17T00:00:31Z",
+  "h": "e87cc2dce0",
+  "v": "ok"
+ },
+ "mls:31": {
+  "at": "2026-10-17T00:00:31Z",
+  "h": "18278f8460",
+  "note": "Near-twin of mls:7",
+  "v": "ok"
+ },
+ "mls:32": {
+  "at": "2026-10-17T00:00:31Z",
+  "h": "134f9f14f9",
+  "v": "ok"
+ },
+ "mls:33": {
+  "at": "2026-10-17T00:00:31Z",
+  "h": "c6dfe4b16e",
+  "v": "ok"
+ },
+ "mls:34": {
+  "at": "2026-10-17T00:00:31Z",
+  "h": "20dc017211",
+  "v": "ok"
+ },
+ "mls:35": {
+  "at": "2026-10-17T00:00:31Z",
+  "fix": {
+   "hook": "1999"
+  },
+  "h": "95445f01bb",
+  "note": "Hook “MLS” is just the league name and says nothing. The year is a real cue",
+  "v": "fix"
+ },
+ "mls:36": {
+  "at": "2026-10-17T00:00:31Z",
+  "h": "8ca9d5dbde",
+  "v": "ok"
+ },
+ "mls:37": {
+  "at": "2026-10-17T00:00:31Z",
+  "h": "2a4e36c55b",
+  "note": "Plays easy: the three decoys all opened after 2017",
+  "v": "ok"
+ },
+ "mls:38": {
+  "at": "2026-10-17T00:00:31Z",
+  "h": "dc1d558669",
+  "note": "Near-twin of mls:1",
+  "v": "ok"
+ },
+ "mls:39": {
+  "at": "2026-10-17T00:00:31Z",
+  "h": "fb3676e2f1",
+  "v": "ok"
+ },
+ "mls:4": {
+  "at": "2026-10-17T00:00:30Z",
+  "h": "0a9a68046a",
+  "note": "Near-twin of mls:17 (MLS Cup 2018)",
+  "v": "ok"
+ },
+ "mls:40": {
+  "at": "2026-10-17T00:00:31Z",
+  "h": "1b817010a7",
+  "v": "ok"
+ },
+ "mls:41": {
+  "at": "2026-10-17T00:00:31Z",
+  "h": "890bddd3be",
+  "note": "Fans would say “D.C. United play their home games at Audi Field”, but the build’s two-sentence check trips on “D.C. United”. Trivelle could add D.C. to its exceptions, then reword",
+  "v": "ok"
+ },
+ "mls:42": {
+  "at": "2026-10-17T00:00:31Z",
+  "h": "228fd8bf91",
+  "v": "ok"
+ },
+ "mls:43": {
+  "at": "2026-10-17T00:00:31Z",
+  "h": "9856fa9f31",
+  "v": "ok"
+ },
+ "mls:44": {
+  "at": "2026-10-17T00:00:31Z",
+  "h": "03471ce481",
+  "v": "ok"
+ },
+ "mls:45": {
+  "at": "2026-10-17T00:00:31Z",
+  "h": "d7dacf9f0b",
+  "note": "Its means (30th club) gives away mls:49 if both land on one board, a small risk on an easy card",
+  "v": "ok"
+ },
+ "mls:46": {
+  "at": "2026-10-17T00:00:31Z",
+  "h": "3a03b7b882",
+  "note": "Plays easy: every decoy year is before Inter Miami existed (2025 and 2009 are grouped out). Yellow still fair",
+  "v": "ok"
+ },
+ "mls:47": {
+  "at": "2026-10-17T00:00:31Z",
+  "h": "916258b649",
+  "v": "ok"
+ },
+ "mls:48": {
+  "at": "2026-10-17T00:00:31Z",
+  "h": "3745d47c8a",
+  "v": "ok"
+ },
+ "mls:49": {
+  "at": "2026-10-17T00:00:31Z",
+  "h": "466090e965",
+  "note": "Plays trivially easy: its only decoys are 171 and 74, because the deck groups 29, 30 and 31 together. 29 and 31 would be good, certainly wrong decoys here. Trivelle could drop that group. White is honest as played",
+  "v": "ok"
+ },
+ "mls:5": {
+  "at": "2026-10-17T00:00:30Z",
+  "h": "395c404b4c",
+  "v": "ok"
+ },
+ "mls:50": {
+  "at": "2026-10-17T00:00:31Z",
+  "h": "3abf41e290",
+  "v": "ok"
+ },
+ "mls:51": {
+  "at": "2026-10-17T00:00:31Z",
+  "h": "c9dcd9d472",
+  "note": "Plays easy: 10, 30 and 74 can’t be a career record. 171 and 42 assists confirmed on mlssoccer.com",
+  "v": "ok"
+ },
+ "mls:52": {
+  "at": "2026-10-17T00:00:31Z",
+  "fix": {
+   "means": "The record fell the very next year"
+  },
+  "h": "2c7039bd56",
+  "note": "The means names Carlos Vela, which gives away mls:16 if both land on one board (the draw only checks sentence and tile)",
+  "v": "fix"
+ },
+ "mls:53": {
+  "at": "2026-10-17T00:00:31Z",
+  "fix": {
+   "ex": "Inter Miami won the 2024 Supporters’ Shield with 74 points",
+   "means": "A new MLS points record that year"
+  },
+  "h": "648ecfdcd2",
+  "note": "Nashville have 66 points with about five games left (mlssoccer.com, Matchday 31) and can pass 74 by Decision Day. Reworded so it stays true either way. Recheck after Decision Day",
+  "v": "fix"
+ },
+ "mls:54": {
+  "at": "2026-10-17T00:00:31Z",
+  "h": "303c31b33a",
+  "note": "Plays easy: only 10 and 74 can be drawn. Messi has 23 in 2026 with about five games left, so the 2025 line stays right",
+  "v": "ok"
+ },
+ "mls:55": {
+  "at": "2026-10-17T00:00:31Z",
+  "h": "e98890180e",
+  "note": "Same fact as mls:9, kept apart by the draw. The sentence half-defines the answer, fair for yellow",
+  "v": "ok"
+ },
+ "mls:56": {
+  "at": "2026-10-17T00:00:31Z",
+  "h": "9ba4b1aae2",
+  "v": "ok"
+ },
+ "mls:57": {
+  "at": "2026-10-17T00:00:31Z",
+  "h": "edc01ee7cc",
+  "v": "ok"
+ },
+ "mls:58": {
+  "at": "2026-10-17T00:00:31Z",
+  "fix": {
+   "ex": "The Sounders beat Pumas to win the 2022 Champions League, 5–2 on aggregate",
+   "means": "Concacaf’s, now the Champions Cup"
+  },
+  "h": "8c0cbed5a4",
+  "note": "“the Concacaf ___” leaves only Champions League as a fit, so the card plays free. Dropping Concacaf from the blank’s side makes MLS Cup and Shield real decoys, and the means teaches the rename",
+  "v": "fix"
+ },
+ "mls:59": {
+  "at": "2026-10-17T00:00:31Z",
+  "h": "22fd928fcb",
+  "v": "ok"
+ },
+ "mls:6": {
+  "at": "2026-10-17T00:00:30Z",
+  "h": "298d5d1bcd",
+  "note": "Near-twin of mls:20 and mls:30 (MLS Cup 2022)",
+  "v": "ok"
+ },
+ "mls:60": {
+  "at": "2026-10-17T00:00:31Z",
+  "h": "bd0e9d7dc0",
+  "v": "ok"
+ },
+ "mls:7": {
+  "at": "2026-10-17T00:00:30Z",
+  "h": "2fd4de5ef1",
+  "note": "Near-twin of mls:31 (Columbus 2023)",
+  "v": "ok"
+ },
+ "mls:8": {
+  "at": "2026-10-17T00:00:30Z",
+  "h": "c988d06208",
+  "v": "ok"
+ },
+ "mls:9": {
+  "at": "2026-10-17T00:00:30Z",
+  "h": "dff6c9ea3f",
+  "note": "Same 2025 Shield as mls:55, kept apart by the draw. Nashville are clinching the 2026 Shield, so 2020 and 2025 stays complete",
+  "v": "ok"
+ },
  "parents:0": {
   "at": "2026-10-16T23:57:20Z",
   "h": "353220e0e1",
