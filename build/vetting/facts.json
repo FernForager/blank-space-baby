@@ -4099,6 +4099,355 @@
   "note": "MW penalty area shows the box in front of each goal but not the keeper’s hands. dictionary.com penalty-area (Collins British) says it is the area within which the goalkeeper may handle the ball, so that page supports both sentence and means",
   "v": "fix"
  },
+ "nicknames:0": {
+  "at": "2026-10-17T00:11:28Z",
+  "h": "aa49098494",
+  "note": "premierleague.com club names history page: Royal Arsenal munitions factory workers in Woolwich, 1886, Gunners a tribute to the factory",
+  "v": "ok"
+ },
+ "nicknames:1": {
+  "at": "2026-10-17T00:11:28Z",
+  "h": "a8eff0e6d3",
+  "note": "premierleague.com badges explained page: Busby adopted the Red Devils nickname from rugby league club Salford and popularised the devil in the 1960s",
+  "v": "ok"
+ },
+ "nicknames:10": {
+  "at": "2026-10-17T00:11:28Z",
+  "h": "ed14b534b1",
+  "note": "premierleague.com club names history page: Thames Ironworks Football Club, Irons nickname harks back to shipbuilding origins",
+  "v": "ok"
+ },
+ "nicknames:11": {
+  "at": "2026-10-17T00:11:28Z",
+  "h": "3037f6c2f3",
+  "note": "premierleague.com Coventry promotion page: Jimmy Hill appointed in 1961, under him the team adopted sky blue colours, giving rise to the nickname (he then led them to two titles, so manager is clear)",
+  "v": "ok"
+ },
+ "nicknames:12": {
+  "at": "2026-10-17T00:11:28Z",
+  "h": "b5f5800dc1",
+  "note": "premierleague.com Ipswich promotion page: Robson led the Tractor Boys to the FA Cup in 1978 and the UEFA Cup in 1981",
+  "v": "ok"
+ },
+ "nicknames:13": {
+  "at": "2026-10-17T00:11:28Z",
+  "h": "6df4473a45",
+  "note": "premierleague.com badges explained page: Brighton were once the Dolphins, Seagulls since the mid-1970s",
+  "v": "ok"
+ },
+ "nicknames:14": {
+  "at": "2026-10-17T00:11:28Z",
+  "h": "8a8c6f206c",
+  "note": "premierleague.com badges explained page: in 1973 Malcolm Allison changed the nickname from the Glaziers to the Eagles",
+  "v": "ok"
+ },
+ "nicknames:15": {
+  "at": "2026-10-17T00:11:28Z",
+  "h": "3cedb22afe",
+  "note": "bundesliga.com animal names page: Hennes, a living goat gifted by circus director Carola Williams in February 1950, team known as the Billy Goats",
+  "v": "ok"
+ },
+ "nicknames:16": {
+  "at": "2026-10-17T00:11:28Z",
+  "h": "0161512706",
+  "note": "bundesliga.com animal names page: up in 1965 with a squad averaging 20, the Foals, galloping like young horses",
+  "v": "ok"
+ },
+ "nicknames:17": {
+  "at": "2026-10-17T00:11:28Z",
+  "h": "f459c15958",
+  "note": "bundesliga.com animal names page: blue-and-white stripes led to Die Zebras, ‘Zebratwist’ written in 1963 as the first official Bundesliga club anthem",
+  "v": "ok"
+ },
+ "nicknames:18": {
+  "at": "2026-10-17T00:11:28Z",
+  "h": "ca57cb17ca",
+  "note": "bundesliga.com animal names page: Bayern Munich are the Reds, colours are a big theme in nicknames",
+  "v": "ok"
+ },
+ "nicknames:19": {
+  "at": "2026-10-17T00:11:28Z",
+  "h": "2bd53089b5",
+  "note": "bundesliga.com animal names page: Borussia Dortmund the Black-Yellows, colour nicknames",
+  "v": "ok"
+ },
+ "nicknames:2": {
+  "at": "2026-10-17T00:11:28Z",
+  "h": "1b15ed7fef",
+  "note": "premierleague.com badges explained page: once the Dolphins, Seagulls since the mid-1970s after fans answered Palace’s “Eagles” chant",
+  "v": "ok"
+ },
+ "nicknames:20": {
+  "at": "2026-10-17T00:11:28Z",
+  "h": "be920e9f3e",
+  "note": "bundesliga.com Werder guide: the Green-Whites, champions four times, second Bundesliga champions in 1964/65. Still four: bundesliga.com says Bayern won the last two titles (https://www.bundesliga.com/en/bundesliga/news/who-can-challenge-bayern-munich-title-borussia-dortmund-rb-leipzig-vfb-stuttgart-bayer-leverkusen-38312)",
+  "v": "ok"
+ },
+ "nicknames:21": {
+  "at": "2026-10-17T00:11:28Z",
+  "h": "7681066460",
+  "note": "bundesliga.com animal names page: Hamburg the Red Shorts, a colour nickname (HSV guide also: Die Rothosen, red shorts)",
+  "v": "ok"
+ },
+ "nicknames:22": {
+  "at": "2026-10-17T00:11:28Z",
+  "fix": {
+   "means": "Also called Die Knappen, the miners",
+   "src": "https://www.bundesliga.com/en/bundesliga/news/fc-schalke-04-bundesliga-club-by-club-historical-guide-24140"
+  },
+  "h": "e5c8235518",
+  "note": "The src (animal names page) shows Schalke are the Royal Blues but not the coal city or the shirts. bundesliga.com Schalke guide shows the Royal Blues hail from Gelsenkirchen, a city built on coal mining, and their nickname Die Knappen (the miners). Neither page says the name comes from royal blue shirts, so the means is replaced",
+  "v": "fix"
+ },
+ "nicknames:23": {
+  "at": "2026-10-17T00:11:28Z",
+  "h": "3795cec161",
+  "note": "bundesliga.com Darmstadt guide: the Lilies, named for the flower on the city and club’s crests",
+  "v": "ok"
+ },
+ "nicknames:25": {
+  "at": "2026-10-17T00:11:28Z",
+  "h": "8c5542c0dd",
+  "note": "bundesliga.com Hertha guide: Die Alte Dame (Old Lady)",
+  "v": "ok"
+ },
+ "nicknames:26": {
+  "at": "2026-10-17T00:11:28Z",
+  "h": "c32aafa73e",
+  "note": "bundesliga.com HSV guide: ever-present until relegation in 2018, a clock in the stadium counted their time as the ‘Bundesliga Dino’",
+  "v": "ok"
+ },
+ "nicknames:27": {
+  "at": "2026-10-17T00:11:28Z",
+  "h": "e0658b8d4d",
+  "note": "laliga.com Merengues page: Merengues (Meringues) for their all-white kit",
+  "v": "ok"
+ },
+ "nicknames:28": {
+  "at": "2026-10-17T00:11:28Z",
+  "h": "dd743c2ab4",
+  "note": "laliga.com Culés page: fans sat on the walls, passers-by saw their backsides, hence Culés",
+  "v": "ok"
+ },
+ "nicknames:29": {
+  "at": "2026-10-17T00:11:28Z",
+  "h": "b49cbc1321",
+  "note": "laliga.com Lions page: the lions after the legend of Saint Mamés. Means from laliga.com club page https://www.laliga.com/en-GB/clubs/athletic-club (San Mamés, home of Athletic Club)",
+  "v": "ok"
+ },
+ "nicknames:3": {
+  "at": "2026-10-17T00:11:28Z",
+  "h": "3c55acff45",
+  "note": "premierleague.com club names history page: students from Borough Road College shouted “Buck up Bs”, the media heard bees",
+  "v": "ok"
+ },
+ "nicknames:33": {
+  "at": "2026-10-17T00:11:28Z",
+  "h": "bc5d2b9fbe",
+  "note": "premierleague.com badges article: eagle ever-present on Palace badge since 1973 when Malcolm Allison changed the nickname to the Eagles. No other deck answer fits the blank",
+  "v": "ok"
+ },
+ "nicknames:34": {
+  "at": "2026-10-17T00:11:28Z",
+  "h": "7a5b479f1e",
+  "note": "premierleague.com badges article: tiger head for the Tigers nickname sits in an amber shield on the 2019 badge. No other deck answer fits the blank",
+  "v": "ok"
+ },
+ "nicknames:35": {
+  "at": "2026-10-17T00:11:28Z",
+  "fix": {
+   "ex": "Cologne’s first goat mascot, Hennes, arrived as a Carnival gift in 1950"
+  },
+  "h": "e81eb23c97",
+  "note": "bundesliga.com Hennes article: on 13 February 1950 a circus director presented the goat during carnival saying the team lacked a lucky charm, a gift, not a joke. Means line ok (gave the Billy Goats their nickname)",
+  "v": "fix"
+ },
+ "nicknames:36": {
+  "at": "2026-10-17T00:11:28Z",
+  "h": "e61d4e4164",
+  "note": "bundesliga.com Frankfurt guide: known as Die Adler (the Eagles), since 2006 an eagle named Attila has flown around the stadium before home games. No other deck answer fits the blank",
+  "v": "ok"
+ },
+ "nicknames:37": {
+  "at": "2026-10-17T00:11:28Z",
+  "h": "033bac269a",
+  "note": "laliga.com: nickname from the Beatles song Yellow Submarine, the Spanish version was the soundtrack of the 1967 promotion party. No other deck answer fits the blank",
+  "v": "ok"
+ },
+ "nicknames:38": {
+  "at": "2026-10-17T00:11:28Z",
+  "h": "73c95a3389",
+  "note": "laliga.com: red stripe from devotion to River Plate plus the Atlético agreement, hence franjirrojos. No other deck answer fits the blank",
+  "v": "ok"
+ },
+ "nicknames:39": {
+  "at": "2026-10-17T00:11:28Z",
+  "h": "71c49c41b0",
+  "note": "laliga.com: Heliopolitans after the Heliopolis district where the stadium is, Heliopolis means city of the sun in Greek. No other deck answer fits the blank",
+  "v": "ok"
+ },
+ "nicknames:4": {
+  "at": "2026-10-17T00:11:28Z",
+  "h": "b42ca8a6e1",
+  "note": "premierleague.com club names history page: Eagles nickname from the 1970s, Malcolm Allison copied Benfica’s águias",
+  "v": "ok"
+ },
+ "nicknames:40": {
+  "at": "2026-10-17T00:11:28Z",
+  "h": "e6e00a9a03",
+  "note": "laliga.com: olivicos after Vigo as city of the olive, an olive tree planted by Templar knight-monks. No other deck answer fits the blank",
+  "v": "ok"
+ },
+ "nicknames:41": {
+  "at": "2026-10-17T00:11:28Z",
+  "h": "231b516538",
+  "note": "laliga.com: herculinos after the Tower of Hercules, a Roman lighthouse in La Coruña. No other deck answer fits the blank",
+  "v": "ok"
+ },
+ "nicknames:42": {
+  "at": "2026-10-17T00:11:28Z",
+  "h": "28a37cf6b2",
+  "note": "laliga.com: rojillos from red shirts in the colors of the Navarre flag, club formed in Pamplona in 1920. No other deck answer fits the blank",
+  "v": "ok"
+ },
+ "nicknames:44": {
+  "at": "2026-10-17T00:11:28Z",
+  "h": "c519f49fb4",
+  "note": "laliga.com: green stripe added in 1926 by Anton Fivébr, inspired by palm groves, hence franjiverde. No other deck answer fits the blank",
+  "v": "ok"
+ },
+ "nicknames:45": {
+  "at": "2026-10-17T00:11:40Z",
+  "h": "0c953d550d",
+  "note": "laliga.com: colchoneros (mattressmakers), mattresses were covered in red and white striped material. No other deck answer fits the blank",
+  "v": "ok"
+ },
+ "nicknames:46": {
+  "at": "2026-10-17T00:11:40Z",
+  "h": "f40f9370c8",
+  "note": "laliga.com: granota means frog in Valencian, the old Vallejo ground by a river bed full of frogs. No other deck answer fits the blank",
+  "v": "ok"
+ },
+ "nicknames:47": {
+  "at": "2026-10-17T00:11:40Z",
+  "h": "b02bd40d04",
+  "note": "laliga.com: boquerones are anchovies, a gastronomic symbol of Málaga. No other deck answer fits the blank",
+  "v": "ok"
+ },
+ "nicknames:48": {
+  "at": "2026-10-17T00:11:40Z",
+  "h": "e29e0c2089",
+  "note": "laliga.com: perico (parakeet), the birds lived in the trees around Estadio de Sarriá. No other deck answer fits the blank",
+  "v": "ok"
+ },
+ "nicknames:5": {
+  "at": "2026-10-17T00:11:28Z",
+  "h": "61b992476b",
+  "note": "premierleague.com badges explained page: badge introduced for the move to the Stadium of Light, two black lions tie in with the Black Cats nickname",
+  "v": "ok"
+ },
+ "nicknames:50": {
+  "at": "2026-10-17T00:11:40Z",
+  "h": "a5c6237db5",
+  "note": "laliga.com: Che is a common colloquial way of saying hey in the Valencia region. No other deck answer fits the blank",
+  "v": "ok"
+ },
+ "nicknames:51": {
+  "at": "2026-10-17T00:11:40Z",
+  "h": "9e9c22328f",
+  "note": "laliga.com: txuri-urdin means blue and white in Euskera, the team’s colors. No other deck answer fits the blank",
+  "v": "ok"
+ },
+ "nicknames:52": {
+  "at": "2026-10-17T00:11:40Z",
+  "h": "be95dd0249",
+  "note": "laliga.com: azulones (deep blues), name and colors taken from the earlier Getafe club that disappeared in 1933. No other deck answer fits the blank",
+  "v": "ok"
+ },
+ "nicknames:53": {
+  "at": "2026-10-17T00:11:40Z",
+  "h": "a26b6d0381",
+  "note": "laliga.com: bermellón from the Catalan vermelló, a brilliant orangish-red. No other deck answer fits the blank",
+  "v": "ok"
+ },
+ "nicknames:54": {
+  "at": "2026-10-17T00:11:40Z",
+  "h": "8214ac5425",
+  "note": "laliga.com: babazorro from Basque, fava eaters, also names the people of Álava. No other deck answer fits the blank",
+  "v": "ok"
+ },
+ "nicknames:55": {
+  "at": "2026-10-17T00:11:40Z",
+  "h": "0351806492",
+  "note": "laliga.com: pepineros from cucumber growing, Leganés orchards supplied the capital. No other deck answer fits the blank",
+  "v": "ok"
+ },
+ "nicknames:57": {
+  "at": "2026-10-17T00:11:40Z",
+  "h": "9c7fd63411",
+  "note": "laliga.com: Bilbao Athletic players are cachorros (cubs), little brothers of the first team leones. No other deck answer fits the blank",
+  "v": "ok"
+ },
+ "nicknames:58": {
+  "at": "2026-10-17T00:11:40Z",
+  "h": "b88196e52a",
+  "note": "laliga.com: Sporting fans are La Mareona (the tidal wave) for how many follow the team away. No other deck answer fits the blank",
+  "v": "ok"
+ },
+ "nicknames:59": {
+  "at": "2026-10-17T00:11:40Z",
+  "h": "1f1195ece3",
+  "note": "laliga.com: Pío-pío is the sound of a canary, chanted by fans, and the canary mascot shares the name. No other deck answer fits the blank",
+  "v": "ok"
+ },
+ "nicknames:6": {
+  "at": "2026-10-17T00:11:40Z",
+  "h": "0bb49d3beb",
+  "note": "premierleague.com club names history page: Cherries either from the red striped shirts or the cherry trees on the Cooper-Dean estate next to Dean Court",
+  "v": "ok"
+ },
+ "nicknames:61": {
+  "at": "2026-10-17T00:11:40Z",
+  "h": "cbaa6b1a22",
+  "note": "bundesliga.com Schalke guide: nickname Die Knappen (the miners), Gelsenkirchen built on coal mining. No other deck answer fits the blank",
+  "v": "ok"
+ },
+ "nicknames:62": {
+  "at": "2026-10-17T00:11:40Z",
+  "h": "6f3cc0c449",
+  "note": "bundesliga.com Leverkusen guide: Die Werkself, the works or factory XI, club founded by Bayer workers in 1904. No other deck answer fits the blank",
+  "v": "ok"
+ },
+ "nicknames:63": {
+  "at": "2026-10-17T00:11:40Z",
+  "h": "c81b817737",
+  "note": "bundesliga.com Bochum guide: stayed up for over 20 years from 1971, nickname Die Unabsteigbaren (the unrelegatables). No other deck answer fits the blank",
+  "v": "ok"
+ },
+ "nicknames:64": {
+  "at": "2026-10-17T00:11:40Z",
+  "h": "b493ca76db",
+  "note": "bundesliga.com Werder guide: Werder means small islands in a river, like the Peterswerder where the Weserstadion is. No other deck answer fits the blank",
+  "v": "ok"
+ },
+ "nicknames:7": {
+  "at": "2026-10-17T00:11:28Z",
+  "h": "8b9c6b6618",
+  "note": "premierleague.com club names history page: began in blue and white, claret and blue earned them the Clarets nickname",
+  "v": "ok"
+ },
+ "nicknames:8": {
+  "at": "2026-10-17T00:11:28Z",
+  "h": "8bbe80df93",
+  "note": "premierleague.com club names history page: became the Cottagers on moving to Craven Cottage in 1896",
+  "v": "ok"
+ },
+ "nicknames:9": {
+  "at": "2026-10-17T00:11:28Z",
+  "h": "eb42f42fdb",
+  "note": "premierleague.com club names history page: founded at Fulham St Andrew’s Church in 1879, original nickname the Saints",
+  "v": "ok"
+ },
  "nwsl:0": {
   "at": "2026-10-17T00:10:57Z",
   "h": "217f5d0406",
