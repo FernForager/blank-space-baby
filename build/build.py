@@ -1,6 +1,7 @@
 """Build Triviela, the daily soccer trivia game.
 
     python3 build/build.py
+    python3 build/build.py --with-pending FILE   # a test copy that also plays cards still waiting on a reviewer
 
 Reads build/template.html, build/head.html, the decks in build/decks/ and the verdicts in build/vetting/,
 checks every card against the house style and the hook rules, and writes docs/index.html
@@ -175,7 +176,9 @@ def league(deck_league, it):
     if deck_league != '*': return deck_league
     return SITE_LEAGUE.get(urlparse(it['src']).netloc.removeprefix('www.'), '')
 
-def main():
+def main(test_copy=None):
+    """Build the game into docs/index.html, or, given test_copy, into that file with pending cards playing too, so the
+    desk can try a reworded card on a phone screen before the reviewers have passed it."""
     decks, problems, tiers = [], [], [0, 0, 0]
     verdicts, marks = vetting()
     stand = {}
@@ -188,7 +191,7 @@ def main():
             st = stand[cid] = standing(cid, it, h, verdicts, marks)
             m = marks.get(cid)
             if st == 'locked' and m['h'] != h: problems.append((did, it['w'], 'locked by Morg but changed since: undo the change or ask him to unlock it'))
-            if st in ('out', 'flagged') or (BETA_VETTED_ONLY and st == 'pending'): continue
+            if st in ('out', 'flagged') or (BETA_VETTED_ONLY and st == 'pending' and not test_copy): continue
             x = {k: it[k] for k in ('w', 'means', 'ex', 'k', 'hook', 'd') if k in it}
             x['i'], x['h'] = i, h   # the card's place in its deck and its fingerprint: the beta's flag and lock keys send both
             if st == 'locked': x['lk'] = 1
@@ -217,9 +220,11 @@ def main():
     top = '\n'.join(l for l in top.splitlines() if 'claude:' not in l)
     head = open(os.path.join(HERE, 'head.html')).read().replace('</head>', top.strip() + '\n</head>')
     body = '<style>' + body
-    os.makedirs(os.path.join(ROOT, 'docs'), exist_ok=True)
-    open(os.path.join(ROOT, 'docs', 'index.html'), 'w').write(head + body + '\n</body>\n</html>\n')
-    print('wrote docs/index.html')
+    path = test_copy or os.path.join(ROOT, 'docs', 'index.html')
+    os.makedirs(os.path.dirname(os.path.abspath(path)), exist_ok=True)
+    open(path, 'w').write(head + body + '\n</body>\n</html>\n')
+    print('wrote ' + (f'{path} (a test copy, with pending cards)' if test_copy else 'docs/index.html'))
 
 if __name__ == '__main__':   # so tools/checkdeck.py can import check() without rebuilding
-    main()
+    a = sys.argv[1:]
+    main(a[a.index('--with-pending') + 1] if '--with-pending' in a[:-1] else None)

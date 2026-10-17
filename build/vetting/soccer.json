@@ -122,9 +122,8 @@
   "v": "fix"
  },
  "alpha:16": {
-  "at": "2026-10-17T00:26:44Z",
-  "h": "1f8e7e1f5e",
-  "note": "“Nonsense word” steers to the answer, but parents may not know skibidi, so yellow holds",
+  "at": "2026-10-17T00:35:10Z",
+  "h": "0bb82f4359",
   "v": "ok"
  },
  "alpha:17": {
@@ -1118,13 +1117,9 @@
   "v": "ok"
  },
  "awards:67": {
-  "at": "2026-10-17T00:24:49Z",
-  "fix": {
-   "means": "Eight goals and four assists"
-  },
+  "at": "2026-10-17T00:35:10Z",
   "h": "5392284140",
-  "note": "The means names Rodri’s Golden Ball, which gives away wc26:33 (Rodri, answer Golden Ball), and nothing keeps the two apart on a board. Swap in his tournament line, from FIFA’s 2026 review",
-  "v": "fix"
+  "v": "ok"
  },
  "awards:68": {
   "at": "2026-10-17T00:06:28Z",
@@ -1133,8 +1128,8 @@
   "v": "ok"
  },
  "awards:69": {
-  "at": "2026-10-17T00:06:28Z",
-  "h": "7750dab19a",
+  "at": "2026-10-17T00:35:10Z",
+  "h": "9d15b83518",
   "v": "ok"
  },
  "awards:7": {
@@ -1143,13 +1138,9 @@
   "v": "ok"
  },
  "awards:70": {
-  "at": "2026-10-17T00:24:49Z",
-  "fix": {
-   "d": 1
-  },
-  "h": "2c6ccc5c33",
-  "note": "Plays as a give-away: the group [Puskás Award, Marta Award] (in the deck twice) blocks its only believable decoy, so the buttons are a goal award against Golden Boot, Silver Ball, Fair Play and Fan. Better fix: drop that group, since each is certainly wrong on the other’s card (Montiel won the 2025 Puskás, and the Marta Award began in 2024 and is for women), then keep yellow. If the group stays, it is white",
-  "v": "fix"
+  "at": "2026-10-17T00:35:10Z",
+  "h": "f9687230d7",
+  "v": "ok"
  },
  "awards:71": {
   "at": "2026-10-17T00:06:28Z",
@@ -1385,9 +1376,8 @@
   "v": "ok"
  },
  "basics:136": {
-  "at": "2026-10-17T00:26:44Z",
-  "h": "30b27d2a94",
-  "note": "Both decoys are plainly wrong once the ref is named, which suits white",
+  "at": "2026-10-17T00:35:10Z",
+  "h": "f0e8edf071",
   "v": "ok"
  },
  "basics:137": {
@@ -3208,13 +3198,9 @@
   "v": "ok"
  },
  "intl-men:3": {
-  "at": "2026-10-17T00:26:19Z",
-  "fix": {
-   "means": "Won after extra time, on home soil"
-  },
+  "at": "2026-10-17T00:35:10Z",
   "h": "550371cb62",
-  "note": "The means names Geoff Hurst, the answer of legends:17, and the draw only checks sentences and tiles, so the two can share a board",
-  "v": "fix"
+  "v": "ok"
  },
  "intl-men:30": {
   "at": "2026-10-17T00:00:51Z",
@@ -4256,13 +4242,10 @@
   "v": "fix"
  },
  "legends:28": {
-  "at": "2026-10-17T00:24:49Z",
-  "fix": {
-   "means": "Scored at five World Cups, 2003–2019"
-  },
-  "h": "99fb3bfad7",
-  "note": "Marta played six Women’s World Cups but scored at five, with none in 2023 (fifa.com’s scorer list). The means reads as if her goals spanned all six, and it contradicts intl-women:13 (“17 goals, at five World Cups”). Near-twin of intl-women:13, kept apart by Marta in this sentence",
-  "v": "fix"
+  "at": "2026-10-17T00:35:10Z",
+  "h": "1194f6d081",
+  "note": "16 (Klose) and 22 (Mbappé) make it a fair fight",
+  "v": "ok"
  },
  "legends:29": {
   "at": "2026-10-17T00:05:12Z",
@@ -4292,8 +4275,8 @@
   "v": "ok"
  },
  "legends:33": {
-  "at": "2026-10-17T00:05:12Z",
-  "h": "369ad81573",
+  "at": "2026-10-17T00:35:10Z",
+  "h": "f1fa9808bd",
   "v": "ok"
  },
  "legends:34": {
@@ -4303,9 +4286,8 @@
   "v": "ok"
  },
  "legends:35": {
-  "at": "2026-10-17T00:24:49Z",
-  "h": "02e8eff24c",
-  "note": "Checked on fifa.com: 22 goals (4, 8, 10). Its means would give away awards:63, but their shared Mbappé hook keeps them apart",
+  "at": "2026-10-17T00:35:10Z",
+  "h": "ab74b421fc",
   "v": "ok"
  },
  "legends:36": {
@@ -4628,13 +4610,10 @@
   "v": "ok"
  },
  "ligamx:21": {
-  "at": "2026-10-17T00:26:19Z",
-  "fix": {
-   "means": "In the state of Nuevo León"
-  },
+  "at": "2026-10-17T00:35:10Z",
   "h": "095bb2bf12",
-  "note": "The means names Estadio BBVA, the answer of ligamx:13, and the draw doesn’t check means lines",
-  "v": "fix"
+  "note": "Only three city decoys, but each is a real Liga MX city and certainly wrong, so red holds",
+  "v": "ok"
  },
  "ligamx:22": {
   "at": "2026-10-17T00:01:31Z",
@@ -4892,8 +4871,8 @@
   "v": "ok"
  },
  "ligamx:61": {
-  "at": "2026-10-17T00:26:19Z",
-  "h": "b7e92edc96",
+  "at": "2026-10-17T00:35:10Z",
+  "h": "2e77cc3d85",
   "v": "ok"
  },
  "ligamx:62": {
@@ -4918,8 +4897,8 @@
   "v": "ok"
  },
  "ligamx:7": {
-  "at": "2026-10-17T00:26:19Z",
-  "h": "2714d3e326",
+  "at": "2026-10-17T00:35:10Z",
+  "h": "636c03ea91",
   "v": "ok"
  },
  "ligamx:8": {
@@ -4943,13 +4922,10 @@
   "v": "ok"
  },
  "ligue1:1": {
-  "at": "2026-10-16T23:59:47Z",
-  "fix": {
-   "means": "A future Ballon d’Or winner"
-  },
-  "h": "73b9f10b86",
-  "note": "The means line “Seven titles in a row” gives away ligue1:56 (answer 7), and the number check can’t see a spelled-out seven. New means is backed by the Dembélé Ballon d’Or page (ligue1:17’s src), which lists Benzema among the French winners",
-  "v": "fix"
+  "at": "2026-10-17T00:35:10Z",
+  "h": "a460bd546c",
+  "note": "Means is fine, but it spells “seven” while ligue1:56’s answer is 7. If the draw’s give-away check only matches digits, those two can still share a board",
+  "v": "ok"
  },
  "ligue1:10": {
   "at": "2026-10-16T23:59:47Z",
@@ -5060,8 +5036,8 @@
   "v": "ok"
  },
  "ligue1:28": {
-  "at": "2026-10-17T00:26:19Z",
-  "h": "b7ea409b64",
+  "at": "2026-10-17T00:35:10Z",
+  "h": "a5ec09fc17",
   "v": "ok"
  },
  "ligue1:29": {
@@ -5095,13 +5071,13 @@
   "v": "ok"
  },
  "ligue1:34": {
-  "at": "2026-10-17T00:26:19Z",
-  "h": "d7d01e7152",
+  "at": "2026-10-17T00:35:10Z",
+  "h": "1f7742883e",
   "v": "ok"
  },
  "ligue1:35": {
-  "at": "2026-10-17T00:26:19Z",
-  "h": "0abdbe1791",
+  "at": "2026-10-17T00:35:10Z",
+  "h": "51c9b631ec",
   "v": "ok"
  },
  "ligue1:36": {
@@ -5946,14 +5922,9 @@
   "v": "ok"
  },
  "mls:52": {
-  "at": "2026-10-17T00:26:19Z",
-  "fix": {
-   "d": 3,
-   "means": "The record fell the very next year"
-  },
-  "h": "46a3cd2efd",
-  "note": "29 and 30 can now be drawn, and telling 31 from them takes real MLS memory, so red. The means names Carlos Vela, the answer of mls:16, and the draw doesn’t check means lines",
-  "v": "fix"
+  "at": "2026-10-17T00:35:10Z",
+  "h": "8ad4a7315e",
+  "v": "ok"
  },
  "mls:53": {
   "at": "2026-10-17T00:00:31Z",
@@ -6112,8 +6083,8 @@
   "v": "ok"
  },
  "nicknames:22": {
-  "at": "2026-10-17T00:19:44Z",
-  "h": "025e982789",
+  "at": "2026-10-17T00:35:10Z",
+  "h": "85ccc0d8ed",
   "v": "ok"
  },
  "nicknames:23": {
