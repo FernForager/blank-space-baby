@@ -897,6 +897,12 @@
   "note": "fifa.com all-award-winners-history (The Best 2025 given 16 Dec 2025, no 2026 awards yet): 2025 Hannah Hampton. Means from fifa.com/en/the-best-fifa-football-awards/2025/articles/womens-goalkeeper-2025-winner-hannah-hampton (England beat Spain in the EURO final, she was Goalkeeper of the Tournament)",
   "v": "ok"
  },
+ "awards:24": {
+  "at": "2026-10-17T00:29:57Z",
+  "h": "90a8ef1663",
+  "note": "src fifa.com all-winners list, Men’s Goalkeeper: Martinez 2022 and 2024, the only double winner since the award began in 2017. Manuel Neuer won once (2020) and Donnarumma once (2025), so neither wrong answer fits",
+  "v": "ok"
+ },
  "awards:25": {
   "at": "2026-10-17T00:23:27Z",
   "h": "5d217d99fd",
@@ -927,6 +933,30 @@
   "note": "fifa.com every-world-cup-top-scorer (published 22 Jul 2026): Rossi was the winner of the inaugural Golden Ball and Golden Boot awards at Spain 1982",
   "v": "ok"
  },
+ "awards:30": {
+  "at": "2026-10-17T00:29:57Z",
+  "fix": {
+   "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2024/articles/coach-winner-2024-carlo-ancelotti"
+  },
+  "h": "e6ced03717",
+  "note": "The src list shows 2024 Ancelotti, Xabi Alonso second but not the club. fifa.com’s 2024 winner article shows Ancelotti won The Best Men’s Coach 2024 with Real Madrid, Alonso second on 22 points to his 26. No wrong answer won 2024",
+  "v": "fix"
+ },
+ "awards:31": {
+  "at": "2026-10-17T00:29:57Z",
+  "h": "b2d3b2127c",
+  "note": "src fifa.com all-winners list, Men’s Coach 2022: Lionel Scaloni, Carlo Ancelotti, Pep Guardiola. inside.fifa.com’s 2024 reaction story also calls Ancelotti runner-up in 2022",
+  "v": "ok"
+ },
+ "awards:32": {
+  "at": "2026-10-17T00:29:57Z",
+  "fix": {
+   "src": "https://www.fifa.com/en/the-best-fifa-football-awards/articles/the-best-history-stats-winners-awards"
+  },
+  "h": "6497852b4b",
+  "note": "The src list shows Klopp won in 2019 and 2020 with Flick second in 2020 but never names Liverpool. fifa.com’s Best Awards history page says “Liverpool’s Jurgen Klopp” won back to back in 2019 and 2020. The src list still backs the means. No wrong answer won both years",
+  "v": "fix"
+ },
  "awards:33": {
   "at": "2026-10-17T00:24:47Z",
   "h": "32878b895b",
@@ -938,6 +968,15 @@
   "h": "91a6331c2a",
   "note": "fifa.com all-award-winners-history (The Best 2025 given 16 Dec 2025, no 2026 awards yet): 2018 Deschamps, Zidane second",
   "v": "ok"
+ },
+ "awards:35": {
+  "at": "2026-10-17T00:29:57Z",
+  "fix": {
+   "src": "https://www.fifa.com/en/the-best-fifa-football-awards/articles/pep-guardiola-best-mens-coach-manchester-city"
+  },
+  "h": "ecc684dca6",
+  "note": "The src list shows Guardiola won in 2023 but not the club or the treble. fifa.com’s 2023 winner article says he led Manchester City to a historic Premier League, Champions League and FA Cup treble in 2022/23. No wrong answer won 2023",
+  "v": "fix"
  },
  "awards:36": {
   "at": "2026-10-17T00:23:10Z",
@@ -2181,15 +2220,15 @@
   "v": "ok"
  },
  "bundesliga:1": {
-  "at": "2026-10-17T00:04:10Z",
-  "h": "a175428461",
-  "note": "bundesliga.com records page (src, stats as of 12 October 2026): Xabi Alonso’s Leverkusen 2023/24 the only side unbeaten for a whole season (34 games)",
+  "at": "2026-10-17T00:30:51Z",
+  "h": "f97c9ee10a",
+  "note": "bundesliga.com match report (src): Leverkusen 2-1 Augsburg on the final day, the first-ever side to last a Bundesliga season unbeaten",
   "v": "ok"
  },
  "bundesliga:10": {
-  "at": "2026-10-17T00:04:10Z",
-  "h": "7b720a458a",
-  "note": "bundesliga.com matchday 30 report (src): 34th Bundesliga title with four games to spare, a 13th crown in 14 years",
+  "at": "2026-10-17T00:30:51Z",
+  "h": "ec37e3888f",
+  "note": "bundesliga.com season in numbers (src, 26.05.2026): 122 is Bayern’s new Bundesliga record for goals, the 1971/72 side held the record for 54 years. Still the record, the 2026/27 season is only weeks old",
   "v": "ok"
  },
  "bundesliga:11": {
@@ -2253,9 +2292,9 @@
   "v": "ok"
  },
  "bundesliga:20": {
-  "at": "2026-10-17T00:04:10Z",
-  "h": "570d38e6a8",
-  "note": "bundesliga.com history page (src): Dortmund’s Timo Konietzka scored after 58 seconds against Werder on 24 August 1963",
+  "at": "2026-10-17T00:30:51Z",
+  "h": "4349a376fd",
+  "note": "bundesliga.com history explained (src): Dortmund’s Timo Konietzka scored after only 58 seconds against Werder on 24 August 1963. The records page names the opponent as Werder Bremen",
   "v": "ok"
  },
  "bundesliga:21": {
@@ -2265,9 +2304,9 @@
   "v": "ok"
  },
  "bundesliga:22": {
-  "at": "2026-10-17T00:04:10Z",
-  "h": "94fab7c7b4",
-  "note": "bundesliga.com records page (src, stats as of 12 October 2026): Lattek 8 titles as coach, 6 with Bayern and 2 with Gladbach",
+  "at": "2026-10-17T00:30:51Z",
+  "h": "2c119c16c2",
+  "note": "bundesliga.com records page (src, current to 2026/27): Most titles (coach) Udo Lattek 8, six with Bayern and two with Gladbach",
   "v": "ok"
  },
  "bundesliga:23": {
@@ -2289,9 +2328,9 @@
   "v": "ok"
  },
  "bundesliga:26": {
-  "at": "2026-10-17T00:04:10Z",
-  "h": "36ed3eef14",
-  "note": "bundesliga.com records page (src, stats as of 12 October 2026): youngest permanent coach Nagelsmann, Hoffenheim, aged 28 years and 205 days",
+  "at": "2026-10-17T00:30:51Z",
+  "h": "3894beab4a",
+  "note": "bundesliga.com records page (src): youngest permanent coach Julian Nagelsmann, first game in charge of Hoffenheim at 28 years and 205 days",
   "v": "ok"
  },
  "bundesliga:27": {
@@ -2301,9 +2340,9 @@
   "v": "ok"
  },
  "bundesliga:28": {
-  "at": "2026-10-17T00:04:10Z",
-  "h": "78c8e036f4",
-  "note": "bundesliga.com German champions page (src): Hitzfeld’s 7th title in 2007/08. Records page: Lattek’s 8 is the coaching record",
+  "at": "2026-10-17T00:30:51Z",
+  "h": "3bab531d5e",
+  "note": "bundesliga.com champions page (src): Hitzfeld’s titles 1 and 2 with Dortmund (1994/95, 1995/96) and 3 to 7 with Bayern, Lattek’s eight a record. No other coach on the list passes four (Heynckes) through 2023/24, and the records page still names Lattek alone as the record holder, so Hitzfeld is second today",
   "v": "ok"
  },
  "bundesliga:29": {
@@ -2379,10 +2418,13 @@
   "v": "ok"
  },
  "bundesliga:4": {
-  "at": "2026-10-17T00:04:10Z",
-  "h": "c56ba1d3f3",
-  "note": "bundesliga.com German champions page (src): 2008/09 Wolfsburg first title, no other Wolfsburg title through 2023/24. Bayern won 2024/25 and 2025/26 (bundesliga.com/en/bundesliga/news/vincent-kompany-coaching-greats-bayern-munich-guardiola-flick-tuchel-37234), so still their only one",
-  "v": "ok"
+  "at": "2026-10-17T00:30:51Z",
+  "fix": {
+   "src": "https://www.bundesliga.com/en/faq/10-things-on-the-bundesliga/all-clubs-that-have-played-in-germany-s-top-flight-bayern-munich-dortmund-24106"
+  },
+  "h": "a632cb9b72",
+  "note": "The champions page (src) shows Magath and Wolfsburg’s first title in 2008/09 but stops at 2023/24, so it can’t show the means line today. The all-clubs page, updated for 2026, says Magath was the brains behind Wolfsburg’s sole Bundesliga title and that they were relegated in 2026 with the 2008/09 title under Magath",
+  "v": "fix"
  },
  "bundesliga:40": {
   "at": "2026-10-17T00:04:10Z",
@@ -2511,9 +2553,9 @@
   "v": "ok"
  },
  "bundesliga:6": {
-  "at": "2026-10-17T00:04:10Z",
-  "h": "ef400c4123",
-  "note": "bundesliga.com all-clubs page (src): HSV only ever-present club until relegation in 2018, returned in 2025",
+  "at": "2026-10-17T00:30:51Z",
+  "h": "2a51742ebc",
+  "note": "bundesliga.com all-clubs page (src): the only ever-present club until relegation in 2018, a stadium clock counted their time as the ‘Bundesliga Dino’, back up in 2025",
   "v": "ok"
  },
  "bundesliga:60": {
@@ -2565,10 +2607,13 @@
   "v": "ok"
  },
  "bundesliga:8": {
-  "at": "2026-10-17T00:04:10Z",
-  "h": "19720c0de7",
-  "note": "bundesliga.com German champions page (src): VfB Stuttgart 1983/84, 1991/92 and 2006/07 (3rd title)",
-  "v": "ok"
+  "at": "2026-10-17T00:30:51Z",
+  "fix": {
+   "ex": "VfB Stuttgart beat Schalke to the 2006–07 title by two points"
+  },
+  "h": "56a929503d",
+  "note": "bundesliga.com champions page (src): 2006/07 VfB Stuttgart champions with 70 points ahead of Schalke on 68, so two points, not one. The 1983/84 and 1991/92 titles (means) are on the same page",
+  "v": "fix"
  },
  "bundesliga:9": {
   "at": "2026-10-17T00:04:10Z",
@@ -2730,13 +2775,10 @@
   "v": "ok"
  },
  "epl-more:31": {
-  "at": "2026-10-17T00:04:54Z",
-  "fix": {
-   "src": "https://www.premierleague.com/news/662065"
-  },
-  "h": "efe1551ba1",
-  "note": "Not on the current records page. premierleague.com/news/662065 (Records: Managers) shows Most PL clubs managed 9 Sam Allardyce (Bolton to Leeds, 2001/02–2022/23), and premierleague.com/news/3251324 calls Leeds his record ninth club",
-  "v": "fix"
+  "at": "2026-10-17T00:36:56Z",
+  "h": "5aab505d25",
+  "note": "premierleague.com/news/662065 (Records: Managers, live today): Most PL clubs managed 9, Sam Allardyce, Bolton Wanderers to Leeds United. His live PL profile premierleague.com/en/news/60628 says he was head coach of Leeds, his ninth Premier League club, with no later club, so nine and the record still stand. None of the wrong answers managed nine",
+  "v": "ok"
  },
  "epl-more:32": {
   "at": "2026-10-17T00:04:54Z",
@@ -3377,6 +3419,12 @@
   "note": "ussoccer.com 2010 story: Donovan’s 91st-minute goal beat Algeria 1–0 and won Group C",
   "v": "ok"
  },
+ "intl-men:25": {
+  "at": "2026-10-17T00:29:57Z",
+  "h": "746b67e035",
+  "note": "src fifa.com USA team profile: 1930 wins over Belgium and then Paraguay, Bert Patenaude scoring the first-ever hat-trick in World Cup history in the second of those matches (Paraguay)",
+  "v": "ok"
+ },
  "intl-men:27": {
   "at": "2026-10-17T00:17:52Z",
   "h": "a858ba5ff9",
@@ -3539,6 +3587,15 @@
   "note": "fifa.com USA profile: World Cup hosts 1994 and 2026, sole hosts in 1994, co-hosts in 2026",
   "v": "ok"
  },
+ "intl-men:51": {
+  "at": "2026-10-17T00:29:57Z",
+  "fix": {
+   "src": "https://www.fifa.com/en/articles/the-official-film-of-the-2002-fifa-world-cup"
+  },
+  "h": "e9d957230c",
+  "note": "The src only says the 2002 tournament went to the Far East for the first time and never says co-hosted. fifa.com’s official 2002 film page says “the first in Asia and the first to be co-hosted”, which backs both the sentence and the means. No wrong year was in Asia",
+  "v": "fix"
+ },
  "intl-men:52": {
   "at": "2026-10-17T00:17:52Z",
   "h": "5aa4df70da",
@@ -3651,6 +3708,12 @@
   "at": "2026-10-17T00:14:49Z",
   "h": "63e5cc3985",
   "note": "fifa.com every-final-highlights (now at /en/tournaments/womens/womensworldcup/brazil-2027/articles/every-final-highlights, read via cxm-api.fifa.com): China PR 1991 was the first edition, and China hosted for the second time in 2007",
+  "v": "ok"
+ },
+ "intl-women:11": {
+  "at": "2026-10-17T00:29:57Z",
+  "h": "f66446bc43",
+  "note": "src uefa.com: Women’s EURO 2025 ran 2 to 27 July in Switzerland, final at St. Jakob-Park, Basel (England 1–1 Spain, 3–1 on pens)",
   "v": "ok"
  },
  "intl-women:12": {
@@ -3945,9 +4008,9 @@
   "v": "ok"
  },
  "intl-women:56": {
-  "at": "2026-10-17T00:14:49Z",
+  "at": "2026-10-17T00:29:57Z",
   "h": "f733c9cfa3",
-  "note": "ussoccer.com Paris 2024 by the numbers (the src): the lone gold-medal-match loss came to Norway on a golden goal in overtime in 2000. The fifa.com Paris 2024 medal page says penalties instead, so the deck’s official sites disagree. The desk may want to weigh it",
+  "note": "src ussoccer.com says the lone gold-medal-game loss came to Norway on a golden goal in overtime in 2000. fifa.com’s own record of the final agrees: inside.fifa.com Sydney 2000 story “A golden gold for the Norwegian underdogs” (https://inside.fifa.com/tournaments/womens/womensolympic/sydney2000/news/a-golden-gold-for-the-norwegian-underdogs) says the final was decided by the golden goal rule, Mellgren scoring 12 minutes into extra time. The fifa.com Paris 2024 medal page that says penalties is a FIFA error and loses to the tournament’s own report",
   "v": "ok"
  },
  "intl-women:57": {
@@ -3999,6 +4062,12 @@
   "at": "2026-10-17T00:14:49Z",
   "h": "96688d7323",
   "note": "fifa.com Miyazawa article calls Japan the Nadeshiko. 2011 title on the fifa.com every final article",
+  "v": "ok"
+ },
+ "intl-women:64": {
+  "at": "2026-10-17T00:29:57Z",
+  "h": "dcd6124074",
+  "note": "src fifa.com Marta article: FIFA reflects on every goal she scored for the Seleção at the Women’s World Cup (Brazil’s women’s team). None of the wrong nicknames is Brazil’s",
   "v": "ok"
  },
  "intl-women:65": {
@@ -4056,10 +4125,15 @@
   "v": "ok"
  },
  "laliga:13": {
-  "at": "2026-10-17T00:08:54Z",
-  "h": "b30142c56f",
-  "note": "https://www.laliga.com/en-GB/news/messi-received-the-lfp-trophy-for-the-all-time-top-goal-scorer-in-la-liga shows Zarra’s 251 passed by Messi in November 2014. Top Spanish goalscorer Telmo Zarra at https://www.laliga.com/en-GB/news/laliga-remembers-90-years-of-professional-football-history",
-  "v": "ok"
+  "at": "2026-10-17T00:36:56Z",
+  "fix": {
+   "ex": "Telmo Zarra held LaLiga’s all-time scoring record, 251 goals, from 1955 to 2014",
+   "hook": "251 goals",
+   "means": "Messi broke it with a hat trick"
+  },
+  "h": "8de722195e",
+  "note": "src shows Messi passed Zarra’s haul of 251, the record for most LaLiga goals that had stood since 1955, with a hat trick at the Sánchez Pizjuán in Nov 2014. No laliga.com page I could find (src, laliga.com/noticias/252-goles-para-hacer-historia, laliga.com/en-CA/news/legends-of-the-basque-derby, site searches) says Zarra has more goals than any other Spaniard today. Reworded to the record the src does show, hook moved to a word in the new sentence, means to the hat trick",
+  "v": "fix"
  },
  "laliga:14": {
   "at": "2026-10-17T00:08:54Z",
@@ -4347,9 +4421,9 @@
   "v": "ok"
  },
  "laliga:6": {
-  "at": "2026-10-17T00:08:54Z",
-  "h": "abcfeda9f3",
-  "note": "src table: 1934–35 Real Betis 34, Real Madrid 33. Only title confirmed at https://www.laliga.com/en-US/news/five-things-you-may-not-know-about-real-betis",
+  "at": "2026-10-17T00:36:56Z",
+  "h": "144fa48421",
+  "note": "src: one LALIGA title, achieved in 1935, 34 points to Real Madrid’s 33, a resounding 0-3 win at Nervión (Sevilla’s ground). laliga.com/en-MX/news/five-things-you-may-not-know-about-real-betis: in the 1934/35 season Betis became champions for the first and only time. Still only: laliga.com 2025/26 awards page says Barcelona retained the title",
   "v": "ok"
  },
  "laliga:7": {
@@ -5545,9 +5619,9 @@
   "v": "ok"
  },
  "lingo-more:0": {
-  "at": "2026-10-16T23:56:49Z",
-  "h": "14c3ce7ddd",
-  "note": "MW lob: a soft high-arching shot, throw, or kick",
+  "at": "2026-10-17T00:36:56Z",
+  "h": "49f8b854b6",
+  "note": "merriam-webster.com/dictionary/lob noun 2: a soft high-arching shot, throw, or kick. Daisy cutter, piledriver and back pass can’t float over defenders, and a midfielder in open play can’t dropkick",
   "v": "ok"
  },
  "lingo-more:1": {
@@ -5614,9 +5688,9 @@
   "v": "fix"
  },
  "lingo-more:19": {
-  "at": "2026-10-16T23:56:49Z",
-  "h": "0c134c08d5",
-  "note": "MW halfback: a player stationed immediately behind the forward line (as in soccer)",
+  "at": "2026-10-17T00:36:56Z",
+  "h": "12b8702614",
+  "note": "merriam-webster.com/dictionary/halfback sense 2: a player stationed immediately behind the forward line (as in soccer). First known use 1882, so it was in use in Grandpa’s day. No wrong answer lines up behind the forwards",
   "v": "ok"
  },
  "lingo-more:2": {
@@ -5665,9 +5739,9 @@
   "v": "ok"
  },
  "lingo-more:26": {
-  "at": "2026-10-16T23:56:49Z",
-  "h": "82bf215dd3",
-  "note": "MW onside: not offside, in a position legally to play or receive the ball",
+  "at": "2026-10-17T00:36:56Z",
+  "h": "08ff929b66",
+  "note": "merriam-webster.com/dictionary/onside: not offside, in a position legally to play or receive the ball. No wrong answer fits was ___",
   "v": "ok"
  },
  "lingo-more:27": {
@@ -5770,9 +5844,9 @@
   "v": "ok"
  },
  "lingo-more:41": {
-  "at": "2026-10-16T23:56:49Z",
-  "h": "9cfb8cba80",
-  "note": "M-W shutout: a game or contest in which one side fails to score",
+  "at": "2026-10-17T00:36:56Z",
+  "h": "b67d53fd4f",
+  "note": "merriam-webster.com/dictionary/shutout: a game or contest in which one side fails to score. A 4–0 win is no squeaker, silver goal and away goal don’t fit",
   "v": "ok"
  },
  "lingo-more:42": {
@@ -5812,9 +5886,9 @@
   "v": "ok"
  },
  "lingo-more:48": {
-  "at": "2026-10-16T23:56:49Z",
-  "h": "dee796ca7f",
-  "note": "Dictionary.com route one, Collins British (soccer): a style of play involving long high kicks towards a central striker",
+  "at": "2026-10-17T00:36:56Z",
+  "h": "2915cfa0e7",
+  "note": "dictionary.com/browse/route-one (Collins, soccer): a style of play involving long high kicks towards a central striker. No wrong answer fits",
   "v": "ok"
  },
  "lingo-more:49": {
@@ -5920,9 +5994,9 @@
   "v": "ok"
  },
  "lingo-more:64": {
-  "at": "2026-10-16T23:56:49Z",
-  "h": "d3495552d2",
-  "note": "M-W whitewash: to hold (an opponent) scoreless in a game or contest. mark, which would also fit, is not among its wrong answers",
+  "at": "2026-10-17T00:36:56Z",
+  "h": "b40afa04a4",
+  "note": "merriam-webster.com/dictionary/whitewash sense 3 (informal): to hold (an opponent) scoreless in a game or contest. No wrong verb fits ___ the visitors with no goal allowed",
   "v": "ok"
  },
  "lingo-more:65": {
@@ -6688,6 +6762,21 @@
   "note": "bundesliga.com Werder guide: Werder means small islands in a river, like the Peterswerder where the Weserstadion is. No other deck answer fits the blank",
   "v": "ok"
  },
+ "nicknames:65": {
+  "at": "2026-10-17T00:36:56Z",
+  "fix": {
+   "src": "https://www.premierleague.com/en/news/60628"
+  },
+  "h": "5226555fea",
+  "note": "src shows the means (St Domingo’s, the name taken in 1878, seven years after the 1871 chapel) but never calls Everton the Toffees. premierleague.com/en/news/60628 (Allardyce profile) does: guiding the Toffees to an eighth place finish as Everton manager. Means stays on 4592046. Royal Blues is drawable and Everton wear royal blue, but no premierleague.com page calls them that, so left as is",
+  "v": "fix"
+ },
+ "nicknames:66": {
+  "at": "2026-10-17T00:36:56Z",
+  "h": "1b2191c3c9",
+  "note": "src calls Newcastle the Magpies (the Magpies’ wait for a league win over the Black Cats). The means is on premierleague.com/en/news/4504230/why-newcastle-will-wear-third-kit-for-tyne-wear-derby: Newcastle’s home kit of black-and-white striped shirts. No wrong answer is a Newcastle nickname on the site",
+  "v": "ok"
+ },
  "nicknames:7": {
   "at": "2026-10-17T00:24:47Z",
   "h": "30f78321f4",
@@ -6902,9 +6991,9 @@
   "v": "ok"
  },
  "nwsl:38": {
-  "at": "2026-10-17T00:10:57Z",
-  "h": "ec1f6fc216",
-  "note": "2025 milestones page: Ironwoman is an athlete who played every minute of every game, Kurtz completed her fourth consecutive Ironwoman season",
+  "at": "2026-10-17T00:36:56Z",
+  "h": "56f913985c",
+  "note": "src: an Ironwoman is an athlete who played every minute of every game this season, players earned Ironwoman status, and Kurtz completed her fourth consecutive Ironwoman season in 2025 (so 2022–2025)",
   "v": "ok"
  },
  "nwsl:39": {
@@ -6998,9 +7087,9 @@
   "v": "ok"
  },
  "nwsl:51": {
-  "at": "2026-10-17T00:10:57Z",
-  "h": "9be248ab30",
-  "note": "2023 championship page: record-setting title match crowd of 25,011 at Snapdragon Stadium in San Diego. Still the final record per https://www.nwslsoccer.com/news/2025-nwsl-championship-postseason-records (2025 final sold out at 18,000)",
+  "at": "2026-10-17T00:36:56Z",
+  "h": "550756cc52",
+  "note": "src: record-setting title match crowd of 25,011 for Gotham’s 2–1 win at Snapdragon Stadium in San Diego, Nov 11, 2023. Still the record: nwslsoccer.com/news/2025-nwsl-championship-postseason-records gives the 2025 final a sold-out 18,000, a 57% rise on 2024, and the 2026 final isn’t played yet",
   "v": "ok"
  },
  "nwsl:52": {
@@ -8362,9 +8451,9 @@
   "v": "fix"
  },
  "soccer:31": {
-  "at": "2026-10-16T23:58:23Z",
-  "h": "ab70dec81f",
-  "note": "dictionary.com target man (Collins, soccer): an attacking player to whom high crosses are played, esp a tall forward",
+  "at": "2026-10-17T00:36:56Z",
+  "h": "fff1578210",
+  "note": "dictionary.com/browse/target-man (Collins): an attacking player to whom high crosses and centres are played, esp a tall forward. No drawable wrong answer fits a high cross aimed at the tallest one up front",
   "v": "ok"
  },
  "soccer:32": {
@@ -8386,10 +8475,13 @@
   "v": "ok"
  },
  "soccer:35": {
-  "at": "2026-10-16T23:58:23Z",
-  "h": "1aceb370f7",
-  "note": "merriam-webster.com own goal: a goal in soccer that a player accidentally scores against his or her own team",
-  "v": "ok"
+  "at": "2026-10-17T00:36:56Z",
+  "fix": {
+   "ex": "Already down 1–0, the defender sneezed while clearing it and scored an own goal"
+  },
+  "h": "8d78bc1d6c",
+  "note": "merriam-webster.com/dictionary/own%20goal: a goal a player accidentally scores against his or her own team, so the sentence and means are right. But the drawable wrong answer equalizer also reads cleanly after the reworded blank (scored an equalizer), and an own goal can itself be the equalizer. Setting the score at 1–0 down makes the own goal a second goal against, so equalizer is false. Hook unchanged. Soft risk, weigh it",
+  "v": "fix"
  },
  "soccer:36": {
   "at": "2026-10-16T23:58:23Z",
@@ -8413,9 +8505,9 @@
   "v": "ok"
  },
  "soccer:39": {
-  "at": "2026-10-16T23:58:23Z",
-  "h": "6c8d919b53",
-  "note": "merriam-webster.com shoot-out: a shooting competition in overtime to decide a game (as in soccer) tied at the end of regular play",
+  "at": "2026-10-17T00:36:56Z",
+  "h": "22371c5633",
+  "note": "merriam-webster.com/dictionary/shoot-out sense 3: a shooting competition in overtime used to determine the winner of a game (as in soccer) tied at the end of regular play. Injury time and stoppage time can’t come after extra time ends, others don’t fit",
   "v": "ok"
  },
  "soccer:4": {
@@ -8446,10 +8538,13 @@
   "v": "ok"
  },
  "soccer:43": {
-  "at": "2026-10-16T23:58:23Z",
-  "h": "6dc981d4fc",
-  "note": "dictionary.com stoppage time (Collins, sport): another name for injury time. Injury time is rightly absent from the wrong answers",
-  "v": "ok"
+  "at": "2026-10-17T00:36:56Z",
+  "fix": {
+   "means": "Time added on at the end of a game"
+  },
+  "h": "cb787706ab",
+  "note": "dictionary.com/browse/stoppage-time: another name for injury time. dictionary.com/browse/injury-time: extra playing time added on to compensate for time spent attending to injured players. merriam-webster.com/dictionary/injury%20time: time added at the end of a game. Neither says the end of a half, so the means follows M-W. Sentence and wrong answers are fine (an equalizer can’t come in golden goal or sudden death, and injury time isn’t drawable)",
+  "v": "fix"
  },
  "soccer:44": {
   "at": "2026-10-16T23:58:23Z",
@@ -8583,6 +8678,16 @@
   "note": "uefa.com 2023 season page: Man City win as Rodri strikes in Istanbul. Final Man City 1–0 Inter per match.uefa.com/v5/matches (the API the season page loads)",
   "v": "ok"
  },
+ "ucl:14": {
+  "at": "2026-10-17T00:30:51Z",
+  "fix": {
+   "means": "Their first Champions League title",
+   "src": "https://www.uefa.com/uefachampionsleague/news/0299-1de417608530-15b01ff7b150-1000--paris-win-champions-league-desire-doue-double-helps-secure/"
+  },
+  "h": "c9ebf169e6",
+  "note": "The 2025 season page (src) shows Paris’ first ever Champions League winning campaign but not Doué’s goals. The uefa.com final report shows Doué scoring on 20 and 63 minutes in the 5-0 win over Inter. Means narrowed to what the season page says (PSG had other European cups before, so ‘first European title’ reads wrong)",
+  "v": "fix"
+ },
  "ucl:15": {
   "at": "2026-10-17T00:17:55Z",
   "h": "4a3cbdaa04",
@@ -8697,6 +8802,12 @@
   "note": "uefa.com 2019 season page: Klopp’s Liverpool beat Spurs in all-English final",
   "v": "ok"
  },
+ "ucl:32": {
+  "at": "2026-10-17T00:30:51Z",
+  "h": "c61b5ee067",
+  "note": "uefa.com report (src): AS Monaco 0-3 FC Porto in the 2004 final, Porto coach José Mourinho",
+  "v": "ok"
+ },
  "ucl:33": {
   "at": "2026-10-17T00:17:55Z",
   "h": "c8b352f0f7",
@@ -8745,10 +8856,22 @@
   "note": "uefa.com 2020 season page: Bayern reign as Coman returns to haunt Paris. Final Paris 0–1 Bayern per match.uefa.com/v5/matches (the API the season page loads)",
   "v": "ok"
  },
+ "ucl:40": {
+  "at": "2026-10-17T00:30:51Z",
+  "h": "ee00e98b9e",
+  "note": "uefa.com match page (src) shows the final as Madrid’s ninth European crown. Its own match data, https://match.uefa.com/v5/matches/69489, gives 15 May 2002, Leverkusen 1-2 Real Madrid at Hampden Park, Glasgow",
+  "v": "ok"
+ },
  "ucl:41": {
   "at": "2026-10-17T00:17:55Z",
   "h": "b78d69998d",
   "note": "uefa.com seasons/2009: Barcelona too strong for Manchester United. match.uefa.com/v5/matches?matchId=302813: 2–0, Stadio Olimpico, Rome, goals Eto’o and Messi",
+  "v": "ok"
+ },
+ "ucl:42": {
+  "at": "2026-10-17T00:30:51Z",
+  "h": "c62d48c837",
+  "note": "uefa.com report (src): Dortmund 0-2 Real Madrid at Wembley Stadium on 1 June 2024, goals by Carvajal and Vinícius Júnior",
   "v": "ok"
  },
  "ucl:43": {
@@ -8799,10 +8922,22 @@
   "note": "uefa.com 1978 season page: Francis scored Forest’s winner in the 1979 final. Final Nott’m Forest 1–0 Malmö per match.uefa.com/v5/matches (the API the season page loads)",
   "v": "ok"
  },
+ "ucl:50": {
+  "at": "2026-10-17T00:30:51Z",
+  "h": "ae06f3b077",
+  "note": "uefa.com UWCL history (src, updated May 2026): Lyon won in 2015/16, 2016/17, 2017/18, 2018/19 and 2019/20, Renard in her ninth final in 2020, and the club is now the renamed OL Lyonnes",
+  "v": "ok"
+ },
  "ucl:51": {
   "at": "2026-10-17T00:18:04Z",
   "h": "4b0a75d3a9",
   "note": "WUCL history article: 2007/08 Frankfurt became the first three-time champions, and won the first UEFA Women’s Cup in 2002",
+  "v": "ok"
+ },
+ "ucl:52": {
+  "at": "2026-10-17T00:30:51Z",
+  "h": "0aab8635e4",
+  "note": "uefa.com UWCL history (src): the first UEFA Women’s Champions League of 2009/10 ended in a one-off final in Getafe, 0-0 then Potsdam beat Olympique Lyonnais 7-6 on penalties",
   "v": "ok"
  },
  "ucl:53": {
@@ -8915,6 +9050,15 @@
   "h": "1d020b0e87",
   "note": "uefa.com 1992 season page: Marseille win inaugural Champions League final, France’s first winners",
   "v": "ok"
+ },
+ "ucl:9": {
+  "at": "2026-10-17T00:30:51Z",
+  "fix": {
+   "means": "They were also champions in 1987"
+  },
+  "h": "39fc9bff75",
+  "note": "uefa.com report (src): Monaco 0-3 Porto, the premier club prize for the second time, 17 years after the 1987 European Cup final. But the same page says Porto had just won the UEFA Cup the season before, so ‘second European title’ is wrong. New means keeps the 1987 fact without that problem",
+  "v": "fix"
  },
  "wc26:0": {
   "at": "2026-10-17T00:20:41Z",
