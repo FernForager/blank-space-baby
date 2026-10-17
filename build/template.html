@@ -257,6 +257,9 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   var ALIAS = [['man united', 'manchester united'], ['man utd', 'manchester united'], ['man city', 'manchester city'], ['spurs', 'tottenham'],
     ['psg', 'paris saint germain'], ['bar\u00e7a', 'barcelona'], ['juve', 'juventus'], ['gladbach', 'm\u00f6nchengladbach'], ['inter milan', 'inter'],
     ['internazionale', 'inter'], ['atleti', 'atl\u00e9tico madrid'], ['kc current', 'kansas city current'], ['usmnt', 'usa'], ['uswnt', 'usa'], ['united states', 'usa']];
+  // a spelled number is the same number: “seven straight titles” gives away an answer of 7 (one is left out, too common to tell)
+  'two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen twenty'
+    .split(' ').forEach(function (w, i) { ALIAS.push([w, String(i + 2)]); });
   var PLAIN = {};   // words too common to tie two cards together on their own
   ('real city united club sporting athletic football soccer national world cup women men award player team stadium arena park league final ' +
    'golden ball boot glove best fifa uefa saint san santa new the and one two three four five six seven eight nine ten first last young old').split(' ').forEach(function (w) { PLAIN[w] = 1; });

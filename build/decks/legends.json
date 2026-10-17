@@ -310,7 +310,7 @@
       "means": "Still the oldest World Cup scorer",
       "ex": "Roger Milla was 42 when he scored at the 1994 World Cup",
       "hook": "Roger Milla",
-      "k": "number",
+      "k": "age",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/roger-milla-oldest-goalscorer-cameroon",
       "d": 3,
       "current": true
@@ -320,7 +320,7 @@
       "means": "The oldest man to win the World Cup",
       "ex": "Dino Zoff was 40 when he lifted the World Cup for Italy in 1982",
       "hook": "Dino Zoff",
-      "k": "number",
+      "k": "age",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/dino-zoff-italy-oldest-winner",
       "d": 3,
       "current": true
@@ -330,7 +330,7 @@
       "means": "He broke the record for oldest player",
       "ex": "Egypt’s Essam El Hadary played at the 2018 World Cup at age 45",
       "hook": "El Hadary",
-      "k": "number",
+      "k": "age",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/essam-el-hadary-oldest-player",
       "d": 3,
       "current": false
@@ -752,11 +752,6 @@
     [
       "Miroslav Klose",
       "Cafu"
-    ],
-    [
-      "40",
-      "42",
-      "45"
     ],
     [
       "Japan",
