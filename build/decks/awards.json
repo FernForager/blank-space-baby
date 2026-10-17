@@ -11,7 +11,7 @@
       "hook": "Golden Ball",
       "k": "wc",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/messi-golden-ball-record",
-      "d": 2,
+      "d": 1,
       "current": true
     },
     {
@@ -61,7 +61,7 @@
       "hook": "top scorer",
       "k": "wc",
       "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/fontaine-mbappe-ronaldo-and-more-every-world-cup-top-scorer",
-      "d": 2
+      "d": 3
     },
     {
       "w": "Gary Lineker",
@@ -96,7 +96,7 @@
       "ex": "In 2007, Kaká was named FIFA World Player of the Year",
       "hook": "World Player",
       "k": "best",
-      "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
+      "src": "https://www.fifa.com/en/articles/brazil-awards-list",
       "d": 2
     },
     {
@@ -105,7 +105,7 @@
       "ex": "In 1994, Romário was the first Brazilian named FIFA’s top male player",
       "hook": "Brazilian",
       "k": "best",
-      "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
+      "src": "https://www.fifa.com/en/articles/brazil-awards-list",
       "d": 2
     },
     {
@@ -129,8 +129,8 @@
     {
       "w": "Ronaldinho",
       "means": "Nicknamed “The Wizard”",
-      "ex": "Ronaldinho was FIFA’s top male player in 2004 and 2005",
-      "hook": "top male",
+      "ex": "At Barcelona, Ronaldinho was FIFA’s top male player in 2004 and 2005",
+      "hook": "Barcelona",
       "k": "best",
       "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
       "d": 2
@@ -361,7 +361,7 @@
       "ex": "Marcin Oleksy won the 2022 FIFA Puskás Award with a scissors kick",
       "hook": "Puskás",
       "k": "goal",
-      "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
+      "src": "https://inside.fifa.com/organisation/news/the-best-fifa-football-awards-2022-oleksy",
       "d": 3
     },
     {
@@ -370,7 +370,7 @@
       "ex": "Alejandro Garnacho won the 2024 FIFA Puskás Award for a goal at Everton",
       "hook": "Everton",
       "k": "goal",
-      "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
+      "src": "https://www.fifa.com/en/the-best-fifa-football-awards/articles/watch-every-puskas-award-winner",
       "d": 2
     },
     {
@@ -379,7 +379,7 @@
       "ex": "Santiago Montiel won the 2025 FIFA Puskás Award with an overhead kick",
       "hook": "Puskás Award",
       "k": "goal",
-      "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
+      "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/puskas-winner-2025-santiago-montiel",
       "d": 3
     },
     {
@@ -484,7 +484,7 @@
       "ex": "FIFA gave out the first Puskás Award, for the best goal, in 2009",
       "hook": "Puskás Award",
       "k": "year",
-      "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
+      "src": "https://www.fifa.com/en/the-best-fifa-football-awards/articles/watch-every-puskas-award-winner",
       "d": 2
     },
     {
@@ -493,7 +493,7 @@
       "ex": "FIFA first gave the Marta Award, for the best women’s goal, in 2024",
       "hook": "Marta Award",
       "k": "year",
-      "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
+      "src": "https://inside.fifa.com/en/news/aitana-bonmati-vinicius-jr-on-top-of-the-world-at-the-best-fifa-football-awards-2024",
       "d": 2,
       "women": true
     },
@@ -682,10 +682,10 @@
     {
       "w": "Marta Award",
       "means": "For the best women’s goal",
-      "ex": "Lizbeth Ovalle’s backheel volley won the 2025 FIFA Marta Award",
+      "ex": "Lizbeth Ovalle’s scorpion kick won the 2025 FIFA Marta Award",
       "hook": "Ovalle",
       "k": "award",
-      "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/all-award-winners-history",
+      "src": "https://www.fifa.com/en/the-best-fifa-football-awards/2025/articles/marta-winner-2025-lizbeth-ovalle",
       "d": 2,
       "women": true
     },
@@ -709,10 +709,6 @@
     }
   ],
   "groups": [
-    [
-      "Puskás Award",
-      "Marta Award"
-    ],
     [
       "Golden Ball",
       "Silver Ball"
@@ -775,10 +771,6 @@
     [
       "Golden Ball",
       "Silver Ball"
-    ],
-    [
-      "Puskás Award",
-      "Marta Award"
     ],
     [
       "Fan Award",

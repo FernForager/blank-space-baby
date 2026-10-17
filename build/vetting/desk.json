@@ -88,6 +88,12 @@
   }
  },
  "alpha:16": {
+  "editor": {
+   "at": "2026-10-17T00:32:47Z",
+   "declined": true,
+   "h": "0bb82f4359",
+   "note": "The plain sentence fits dozens of drawable replies (no cap, bussin, let him cook, it’s giving…), too many to group out, so the clue “the nonsense word” has to stay. To meet your point the means line no longer repeats it: it now gives M-W’s other half, “A meme word, used for laughs”"
+  },
   "facts": {
    "at": "2026-10-17T00:23:56Z",
    "h": "1f8e7e1f5e"
@@ -585,9 +591,19 @@
    "h": "152586bc6e"
   }
  },
+ "awards:0": {
+  "soccer": {
+   "at": "2026-10-17T00:32:33Z",
+   "h": "bfa7cd6b3c"
+  }
+ },
  "awards:10": {
   "editor": {
    "at": "2026-10-17T00:10:07Z",
+   "h": "53ca9072fe"
+  },
+  "facts": {
+   "at": "2026-10-17T00:32:33Z",
    "h": "53ca9072fe"
   }
  },
@@ -615,6 +631,10 @@
   "editor": {
    "at": "2026-10-17T00:10:07Z",
    "h": "5072544b2a"
+  },
+  "soccer": {
+   "at": "2026-10-17T00:32:33Z",
+   "h": "268d274959"
   }
  },
  "awards:14": {
@@ -652,9 +672,25 @@
    "at": "2026-10-17T00:16:12Z",
    "h": "b5de0b6c6e"
   },
+  "facts": {
+   "at": "2026-10-17T00:32:33Z",
+   "h": "b5de0b6c6e"
+  },
   "soccer": {
    "at": "2026-10-17T00:13:30Z",
    "h": "e0112b410d"
+  }
+ },
+ "awards:38": {
+  "facts": {
+   "at": "2026-10-17T00:32:34Z",
+   "h": "3afbd9f4e4"
+  }
+ },
+ "awards:39": {
+  "facts": {
+   "at": "2026-10-17T00:32:34Z",
+   "h": "49205152a1"
   }
  },
  "awards:42": {
@@ -703,6 +739,24 @@
    "h": "318d44083c"
   }
  },
+ "awards:5": {
+  "soccer": {
+   "at": "2026-10-17T00:32:33Z",
+   "h": "bca8f56050"
+  }
+ },
+ "awards:50": {
+  "facts": {
+   "at": "2026-10-17T00:32:34Z",
+   "h": "c0fccb98f3"
+  }
+ },
+ "awards:51": {
+  "facts": {
+   "at": "2026-10-17T00:32:34Z",
+   "h": "6f3b845289"
+  }
+ },
  "awards:56": {
   "editor": {
    "at": "2026-10-17T00:12:27Z",
@@ -735,6 +789,12 @@
   "editor": {
    "at": "2026-10-17T00:12:27Z",
    "h": "5392284140"
+  },
+  "soccer": {
+   "at": "2026-10-17T00:32:48Z",
+   "declined": true,
+   "h": "5392284140",
+   "note": "The draw does check means lines (since Oct 16), so wc26:33 can never share its board, and “Rodri took the Golden Ball” is already fact-checked"
   }
  },
  "awards:68": {
@@ -808,6 +868,10 @@
    "at": "2026-10-17T00:10:07Z",
    "h": "c24d62760e"
   },
+  "facts": {
+   "at": "2026-10-17T00:32:33Z",
+   "h": "c24d62760e"
+  },
   "soccer": {
    "at": "2026-10-17T00:10:07Z",
    "h": "c24d62760e"
@@ -851,8 +915,8 @@
  },
  "basics:136": {
   "editor": {
-   "at": "2026-10-17T00:00:16Z",
-   "h": "3151bc5216"
+   "at": "2026-10-17T00:32:31Z",
+   "h": "f0e8edf071"
   },
   "facts": {
    "at": "2026-10-17T00:23:59Z",
@@ -1561,6 +1625,10 @@
   "editor": {
    "at": "2026-10-17T00:12:29Z",
    "h": "e19a564ba1"
+  },
+  "soccer": {
+   "at": "2026-10-17T00:32:33Z",
+   "h": "f98a7b38d8"
   }
  },
  "intl-men:29": {
@@ -1577,6 +1645,12 @@
   "editor": {
    "at": "2026-10-17T00:07:02Z",
    "h": "550371cb62"
+  },
+  "soccer": {
+   "at": "2026-10-17T00:32:48Z",
+   "declined": true,
+   "h": "550371cb62",
+   "note": "The draw does check means lines (since Oct 16), so legends:17 can never share its board, and Hurst’s hat trick is the fact of 1966 worth teaching"
   }
  },
  "intl-men:30": {
@@ -1763,6 +1837,10 @@
   "editor": {
    "at": "2026-10-17T00:12:26Z",
    "h": "2dd152f04d"
+  },
+  "soccer": {
+   "at": "2026-10-17T00:32:33Z",
+   "h": "976299857d"
   }
  },
  "intl-women:23": {
@@ -2033,6 +2111,10 @@
   "editor": {
    "at": "2026-10-17T00:12:28Z",
    "h": "e352251811"
+  },
+  "soccer": {
+   "at": "2026-10-17T00:32:33Z",
+   "h": "cffa64afe4"
   }
  },
  "legends:20": {
@@ -2103,6 +2185,18 @@
   "soccer": {
    "at": "2026-10-17T00:12:27Z",
    "h": "3c97fe6ba6"
+  }
+ },
+ "legends:27": {
+  "soccer": {
+   "at": "2026-10-17T00:32:33Z",
+   "h": "a4ddc5e4b2"
+  }
+ },
+ "legends:28": {
+  "soccer": {
+   "at": "2026-10-17T00:32:33Z",
+   "h": "ea13f7896b"
   }
  },
  "legends:3": {
@@ -2361,6 +2455,12 @@
   "editor": {
    "at": "2026-10-17T00:03:34Z",
    "h": "095bb2bf12"
+  },
+  "soccer": {
+   "at": "2026-10-17T00:32:47Z",
+   "declined": true,
+   "h": "095bb2bf12",
+   "note": "The draw does check means lines (since Oct 16): one card’s answer in another’s means keeps the two off the same board, so “Estadio BBVA, in Nuevo León” stays"
   }
  },
  "ligamx:22": {
@@ -2447,12 +2547,24 @@
   "editor": {
    "at": "2026-10-17T00:06:30Z",
    "h": "b7e92edc96"
+  },
+  "facts": {
+   "at": "2026-10-17T00:32:47Z",
+   "declined": true,
+   "h": "2e77cc3d85",
+   "note": "Your source line is right that ligamx.net never translates Jornada. The desk used the other fact on that page instead, that a round is also called Fecha, which teaches more than one round’s goal count"
   }
  },
  "ligamx:64": {
   "editor": {
    "at": "2026-10-17T00:06:31Z",
    "h": "e1ad030a3a"
+  }
+ },
+ "ligamx:7": {
+  "facts": {
+   "at": "2026-10-17T00:32:32Z",
+   "h": "636c03ea91"
   }
  },
  "ligamx:8": {
@@ -2468,6 +2580,10 @@
   }
  },
  "ligue1:1": {
+  "facts": {
+   "at": "2026-10-17T00:32:32Z",
+   "h": "a460bd546c"
+  },
   "soccer": {
    "at": "2026-10-17T00:06:30Z",
    "h": "e80c8e6aa1"
@@ -2495,6 +2611,10 @@
   "editor": {
    "at": "2026-10-17T00:00:18Z",
    "h": "b7ea409b64"
+  },
+  "facts": {
+   "at": "2026-10-17T00:32:32Z",
+   "h": "a5ec09fc17"
   }
  },
  "ligue1:30": {
@@ -2507,18 +2627,30 @@
   "editor": {
    "at": "2026-10-17T00:00:18Z",
    "h": "8a489d35a9"
+  },
+  "facts": {
+   "at": "2026-10-17T00:32:32Z",
+   "h": "8a489d35a9"
   }
  },
  "ligue1:34": {
   "editor": {
    "at": "2026-10-17T00:00:18Z",
    "h": "d7d01e7152"
+  },
+  "facts": {
+   "at": "2026-10-17T00:32:32Z",
+   "h": "1f7742883e"
   }
  },
  "ligue1:35": {
   "editor": {
    "at": "2026-10-17T00:00:18Z",
    "h": "0abdbe1791"
+  },
+  "facts": {
+   "at": "2026-10-17T00:32:32Z",
+   "h": "51c9b631ec"
   }
  },
  "ligue1:4": {
@@ -2561,6 +2693,10 @@
   "editor": {
    "at": "2026-10-17T00:12:27Z",
    "h": "95f1bd8c6a"
+  },
+  "soccer": {
+   "at": "2026-10-17T00:32:32Z",
+   "h": "d4344ef38e"
   }
  },
  "ligue1:56": {
@@ -2577,12 +2713,24 @@
   "editor": {
    "at": "2026-10-17T00:12:27Z",
    "h": "8e1f0f1c2f"
+  },
+  "soccer": {
+   "at": "2026-10-17T00:32:34Z",
+   "h": "6eecc6d3d6"
   }
  },
  "ligue1:59": {
   "editor": {
-   "at": "2026-10-17T00:12:27Z",
-   "h": "aca048ae93"
+   "at": "2026-10-17T00:32:34Z",
+   "h": "8f843893eb"
+  },
+  "facts": {
+   "at": "2026-10-17T00:32:34Z",
+   "h": "8f843893eb"
+  },
+  "soccer": {
+   "at": "2026-10-17T00:32:34Z",
+   "h": "8f843893eb"
   }
  },
  "ligue1:60": {
@@ -2779,10 +2927,30 @@
    "h": "c90459c165"
   }
  },
+ "mls:49": {
+  "soccer": {
+   "at": "2026-10-17T00:32:32Z",
+   "h": "887cfb32c5"
+  }
+ },
+ "mls:52": {
+  "soccer": {
+   "at": "2026-10-17T00:32:47Z",
+   "declined": true,
+   "h": "8ad4a7315e",
+   "note": "Red is in. The means stays “Carlos Vela beat it a year later”: the draw does check means lines (since Oct 16), so mls:16 can never share its board"
+  }
+ },
  "mls:53": {
   "soccer": {
    "at": "2026-10-17T00:06:31Z",
    "h": "dd6054ffa3"
+  }
+ },
+ "mls:54": {
+  "soccer": {
+   "at": "2026-10-17T00:32:32Z",
+   "h": "7af7219afc"
   }
  },
  "mls:56": {
@@ -2801,6 +2969,12 @@
   "editor": {
    "at": "2026-10-17T00:16:12Z",
    "h": "ebb2e32bbe"
+  }
+ },
+ "nicknames:22": {
+  "facts": {
+   "at": "2026-10-17T00:32:33Z",
+   "h": "85ccc0d8ed"
   }
  },
  "nicknames:24": {
@@ -3005,6 +3179,10 @@
   "editor": {
    "at": "2026-10-17T00:06:31Z",
    "h": "b8da1cd6d0"
+  },
+  "soccer": {
+   "at": "2026-10-17T00:32:32Z",
+   "h": "b83dd11aae"
   }
  },
  "nwsl:24": {
@@ -3152,6 +3330,10 @@
   }
  },
  "nwsl:59": {
+  "facts": {
+   "at": "2026-10-17T00:32:32Z",
+   "h": "d7a7d9e8ce"
+  },
   "soccer": {
    "at": "2026-10-17T00:13:28Z",
    "h": "d7a7d9e8ce"
@@ -3485,12 +3667,22 @@
   "editor": {
    "at": "2026-10-17T00:00:18Z",
    "h": "d52ca49958"
+  },
+  "soccer": {
+   "at": "2026-10-17T00:32:32Z",
+   "h": "48ecc0f349"
   }
  },
  "seriea:48": {
   "soccer": {
    "at": "2026-10-17T00:06:29Z",
    "h": "6da8dc59e8"
+  }
+ },
+ "seriea:49": {
+  "soccer": {
+   "at": "2026-10-17T00:32:32Z",
+   "h": "ab4a4e3ea6"
   }
  },
  "seriea:54": {
@@ -3838,21 +4030,69 @@
   }
  },
  "ucl:42": {
+  "editor": {
+   "at": "2026-10-17T00:32:47Z",
+   "h": "f6d6fccd27"
+  },
   "soccer": {
-   "at": "2026-10-17T00:13:29Z",
-   "h": "c62d48c837"
+   "at": "2026-10-17T00:32:47Z",
+   "h": "f6d6fccd27"
   }
  },
  "ucl:43": {
   "editor": {
-   "at": "2026-10-17T00:06:32Z",
-   "h": "cd0a96094b"
+   "at": "2026-10-17T00:32:47Z",
+   "h": "bf3fc53a53"
+  },
+  "facts": {
+   "at": "2026-10-17T00:32:47Z",
+   "h": "bf3fc53a53"
+  },
+  "soccer": {
+   "at": "2026-10-17T00:32:47Z",
+   "h": "bf3fc53a53"
+  }
+ },
+ "ucl:44": {
+  "editor": {
+   "at": "2026-10-17T00:32:47Z",
+   "h": "afc971a650"
+  },
+  "facts": {
+   "at": "2026-10-17T00:32:47Z",
+   "h": "afc971a650"
+  },
+  "soccer": {
+   "at": "2026-10-17T00:32:47Z",
+   "h": "afc971a650"
   }
  },
  "ucl:45": {
+  "editor": {
+   "at": "2026-10-17T00:32:47Z",
+   "h": "b57052c958"
+  },
+  "facts": {
+   "at": "2026-10-17T00:32:47Z",
+   "h": "b57052c958"
+  },
   "soccer": {
-   "at": "2026-10-17T00:13:29Z",
-   "h": "180eb24e84"
+   "at": "2026-10-17T00:32:47Z",
+   "h": "b57052c958"
+  }
+ },
+ "ucl:46": {
+  "editor": {
+   "at": "2026-10-17T00:32:47Z",
+   "h": "a4629e1918"
+  },
+  "facts": {
+   "at": "2026-10-17T00:32:47Z",
+   "h": "a4629e1918"
+  },
+  "soccer": {
+   "at": "2026-10-17T00:32:47Z",
+   "h": "a4629e1918"
   }
  },
  "ucl:47": {
@@ -3939,6 +4179,10 @@
   "editor": {
    "at": "2026-10-17T00:10:54Z",
    "h": "6342cd5efa"
+  },
+  "soccer": {
+   "at": "2026-10-17T00:32:32Z",
+   "h": "65c43ac553"
   }
  },
  "ucl:6": {
@@ -4049,6 +4293,10 @@
   "editor": {
    "at": "2026-10-17T00:12:27Z",
    "h": "f5ff118202"
+  },
+  "soccer": {
+   "at": "2026-10-17T00:32:33Z",
+   "h": "57aef3edb2"
   }
  },
  "wc26:18": {

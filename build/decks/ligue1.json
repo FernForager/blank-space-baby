@@ -16,7 +16,7 @@
     },
     {
       "w": "Lyon",
-      "means": "A future Ballon d’Or winner",
+      "means": "Lyon won seven straight titles to 2008",
       "ex": "Karim Benzema came up through the academy at Lyon",
       "hook": "Benzema",
       "k": "club",
@@ -286,7 +286,7 @@
     },
     {
       "w": "Vélodrome",
-      "means": "Le Volcan means “the Volcano”",
+      "means": "A nod to its fervent atmosphere",
       "ex": "Marseille’s Vélodrome is nicknamed “Le Volcan”",
       "hook": "Le Volcan",
       "k": "stadium",
@@ -340,13 +340,13 @@
       "ex": "Nice play home games at Allianz Riviera",
       "hook": "Nice",
       "k": "stadium",
-      "src": "https://ligue1.com/en/articles/l1_article_590-season-preview-12-ogc-nice",
+      "src": "https://ligue1.com/en/articles/l1_article_5679-26-27-preview-12-ogc-nice",
       "d": 2,
       "current": true
     },
     {
       "w": "Roazhon Park",
-      "means": "Roazhon is Breton for Rennes",
+      "means": "Home of the Breton side",
       "ex": "Rennes play home games at Roazhon Park",
       "hook": "Rennes",
       "k": "stadium",
@@ -356,11 +356,11 @@
     },
     {
       "w": "Stade Louis II",
-      "means": "Named for Prince Louis II",
+      "means": "In the Principality of Monaco",
       "ex": "Monaco play home games at Stade Louis II",
       "hook": "Monaco",
       "k": "stadium",
-      "src": "https://ligue1.com/en/articles/l1_article_2371-preview-rc-strasbourg-travel-to-stade-louis-ii-for-crucial-clash-with-monaco",
+      "src": "https://ligue1.com/en/articles/l1_article_5712-conference-league-monaco-edge-gornik-zabrze-in-thriller",
       "d": 2,
       "current": true
     },
@@ -557,11 +557,11 @@
     {
       "w": "10",
       "means": "Second most, behind PSG",
-      "ex": "Saint-Étienne have won 10 French league titles",
-      "hook": "French",
+      "ex": "Saint-Étienne, or Sainté, have won 10 French league titles",
+      "hook": "Sainté",
       "k": "number",
       "src": "https://ligue1.com/fr/articles/l1_article_289-le-palmares-des-champions-de-ligue-1",
-      "d": 2,
+      "d": 3,
       "current": true
     },
     {
@@ -652,6 +652,10 @@
     [
       "Inter",
       "Arsenal"
+    ],
+    [
+      "30",
+      "44"
     ]
   ],
   "cut": [

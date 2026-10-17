@@ -101,9 +101,13 @@
   "v": "ok"
  },
  "alpha:16": {
-  "at": "2026-10-17T00:09:05Z",
-  "h": "74b15223f4",
-  "v": "ok"
+  "at": "2026-10-17T00:25:20Z",
+  "fix": {
+   "ex": "The defender answered every coaching tip with “skibidi”"
+  },
+  "h": "1f8e7e1f5e",
+  "note": "“the nonsense word” points straight at skibidi and repeats the means line",
+  "v": "fix"
  },
  "alpha:17": {
   "at": "2026-10-16T23:55:32Z",
@@ -197,8 +201,8 @@
   "v": "ok"
  },
  "alpha:33": {
-  "at": "2026-10-16T23:55:32Z",
-  "h": "6d9d10bd12",
+  "at": "2026-10-17T00:25:20Z",
+  "h": "0875b2d2a0",
   "v": "ok"
  },
  "alpha:34": {
@@ -349,8 +353,8 @@
   "v": "ok"
  },
  "alpha:60": {
-  "at": "2026-10-17T00:15:22Z",
-  "h": "dfae948b0f",
+  "at": "2026-10-17T00:25:20Z",
+  "h": "1fb3d539e0",
   "v": "ok"
  },
  "alpha:61": {
@@ -359,13 +363,13 @@
   "v": "ok"
  },
  "alpha:62": {
-  "at": "2026-10-17T00:09:05Z",
-  "h": "f15c04af09",
+  "at": "2026-10-17T00:25:20Z",
+  "h": "ef5c5dcf68",
   "v": "ok"
  },
  "alpha:63": {
-  "at": "2026-10-16T23:55:32Z",
-  "h": "1fa548284b",
+  "at": "2026-10-17T00:25:20Z",
+  "h": "0b1eafde93",
   "v": "ok"
  },
  "alpha:64": {
@@ -390,8 +394,8 @@
   "v": "ok"
  },
  "alpha:68": {
-  "at": "2026-10-17T00:15:22Z",
-  "h": "3add5ec680",
+  "at": "2026-10-17T00:25:20Z",
+  "h": "0dea7fdcf1",
   "v": "ok"
  },
  "alpha:69": {
@@ -525,8 +529,8 @@
   "v": "ok"
  },
  "alpha:92": {
-  "at": "2026-10-17T00:09:05Z",
-  "h": "152586bc6e",
+  "at": "2026-10-17T00:25:20Z",
+  "h": "ad8beacf49",
   "v": "ok"
  },
  "alpha:93": {
@@ -966,13 +970,9 @@
   "v": "ok"
  },
  "basics:1": {
-  "at": "2026-10-16T23:57:03Z",
-  "fix": {
-   "ex": "A goal still counts if the scorer’s shoe came off by accident"
-  },
-  "h": "120967ea02",
-  "note": "Shoe or socks fit only a foot, so the blank gave itself away. Now any gear reads",
-  "v": "fix"
+  "at": "2026-10-17T00:25:20Z",
+  "h": "450b797eb9",
+  "v": "ok"
  },
  "basics:10": {
   "at": "2026-10-16T23:57:03Z",
@@ -1188,12 +1188,12 @@
   "v": "ok"
  },
  "basics:136": {
-  "at": "2026-10-16T23:57:03Z",
+  "at": "2026-10-17T00:25:20Z",
   "fix": {
-   "ex": "The ref must make the first call, and only then can the VAR step in"
+   "ex": "The ref must make a call without waiting for the VAR’s replay"
   },
-  "h": "77467733bc",
-  "note": "Referee in the sentence knocked it out of the pool, so it drew gear and rules terms. Ref keeps it in",
+  "h": "30b27d2a94",
+  "note": "needless words, “may not wait … to make it” read clumsily",
   "v": "fix"
  },
  "basics:137": {
@@ -1517,13 +1517,9 @@
   "v": "ok"
  },
  "basics:48": {
-  "at": "2026-10-16T23:57:03Z",
-  "fix": {
-   "means": "Written as one word"
-  },
-  "h": "b65db7da24",
-  "note": "Means repeated the sentence",
-  "v": "fix"
+  "at": "2026-10-17T00:25:20Z",
+  "h": "ff75aa47d7",
+  "v": "ok"
  },
  "basics:49": {
   "at": "2026-10-16T23:57:03Z",
@@ -1793,13 +1789,9 @@
   "v": "ok"
  },
  "basics:93": {
-  "at": "2026-10-16T23:57:03Z",
-  "fix": {
-   "ex": "Once a keeper puts the ball down to play it, she’s open to tackling"
-  },
-  "h": "c79fe25b32",
-  "note": "“try ___ her” fit only gerunds, so most wrong answers read as broken English",
-  "v": "fix"
+  "at": "2026-10-17T00:25:20Z",
+  "h": "07dcc4360e",
+  "v": "ok"
  },
  "basics:94": {
   "at": "2026-10-16T23:57:03Z",
@@ -2437,8 +2429,8 @@
   "v": "ok"
  },
  "epl-more:52": {
-  "at": "2026-10-17T00:15:22Z",
-  "h": "6e2bc58c52",
+  "at": "2026-10-17T00:25:20Z",
+  "h": "eb3b5645cc",
   "v": "ok"
  },
  "epl-more:53": {
@@ -5926,13 +5918,9 @@
   "v": "ok"
  },
  "nicknames:64": {
-  "at": "2026-10-16T23:58:53Z",
-  "fix": {
-   "ex": "Werder, as in Werder Bremen, means island in a river"
-  },
-  "h": "7019f182aa",
-  "note": "“a small river” ruled out most wrong answers, which are plural or start with a vowel. Gloss form with no article fits them all",
-  "v": "fix"
+  "at": "2026-10-17T00:25:20Z",
+  "h": "4cc013f994",
+  "v": "ok"
  },
  "nicknames:65": {
   "at": "2026-10-17T00:15:22Z",
@@ -6383,8 +6371,8 @@
   "v": "ok"
  },
  "parents:22": {
-  "at": "2026-10-16T23:59:29Z",
-  "h": "46c7f1363a",
+  "at": "2026-10-17T00:25:20Z",
+  "h": "4ca8633d35",
   "v": "ok"
  },
  "parents:23": {
@@ -6901,8 +6889,8 @@
   "v": "ok"
  },
  "rules:61": {
-  "at": "2026-10-17T00:09:05Z",
-  "h": "82544914a3",
+  "at": "2026-10-17T00:25:20Z",
+  "h": "d058c7641f",
   "v": "ok"
  },
  "rules:62": {
@@ -7313,13 +7301,9 @@
   "v": "ok"
  },
  "soccer:18": {
-  "at": "2026-10-16T23:56:37Z",
-  "fix": {
-   "means": "Two in one game mean a red card"
-  },
-  "h": "5dcba7aa0a",
-  "note": "Means repeated the sentence",
-  "v": "fix"
+  "at": "2026-10-17T00:25:20Z",
+  "h": "ce77a10a2b",
+  "v": "ok"
  },
  "soccer:19": {
   "at": "2026-10-17T00:09:05Z",
@@ -7332,8 +7316,8 @@
   "v": "ok"
  },
  "soccer:20": {
-  "at": "2026-10-16T23:56:37Z",
-  "h": "7022f8865f",
+  "at": "2026-10-17T00:25:20Z",
+  "h": "345a6d4067",
   "v": "ok"
  },
  "soccer:21": {
@@ -7387,13 +7371,9 @@
   "v": "ok"
  },
  "soccer:30": {
-  "at": "2026-10-16T23:56:37Z",
-  "fix": {
-   "means": "Named for the striker’s No. 9 shirt"
-  },
-  "h": "95c49a315c",
-  "note": "Means repeated the sentence word for word",
-  "v": "fix"
+  "at": "2026-10-17T00:25:20Z",
+  "h": "33d83417ab",
+  "v": "ok"
  },
  "soccer:31": {
   "at": "2026-10-17T00:15:22Z",
@@ -7446,13 +7426,9 @@
   "v": "ok"
  },
  "soccer:40": {
-  "at": "2026-10-16T23:56:37Z",
-  "fix": {
-   "means": "Tied shoot-outs end this way too"
-  },
-  "h": "8aa7454f28",
-  "note": "Means repeated the sentence",
-  "v": "fix"
+  "at": "2026-10-17T00:25:20Z",
+  "h": "5f1c1412b3",
+  "v": "ok"
  },
  "soccer:41": {
   "at": "2026-10-16T23:56:37Z",
@@ -7531,9 +7507,8 @@
   "v": "ok"
  },
  "soccer:53": {
-  "at": "2026-10-16T23:56:37Z",
-  "h": "41e96ba9a2",
-  "note": "“used clinical” and “used relegated” read as nonsense",
+  "at": "2026-10-17T00:25:20Z",
+  "h": "6f338663f0",
   "v": "ok"
  },
  "soccer:54": {
@@ -8115,14 +8090,9 @@
   "v": "ok"
  },
  "wc26:36": {
-  "at": "2026-10-16T23:59:07Z",
-  "fix": {
-   "ex": "At 19, Pau Cubarsí won the Young Player Award",
-   "means": "Best player aged 21 or under"
-  },
-  "h": "e7db8fccf7",
-  "note": "sentence defined the award and ran to 83 characters, the definition moves to means",
-  "v": "fix"
+  "at": "2026-10-17T00:25:20Z",
+  "h": "592775dedc",
+  "v": "ok"
  },
  "wc26:37": {
   "at": "2026-10-16T23:59:07Z",

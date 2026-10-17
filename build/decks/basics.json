@@ -1231,7 +1231,7 @@
     {
       "w": "VAR",
       "means": "The referee may not give “no decision”",
-      "ex": "The ref must make a call and may not wait for the VAR’s replay to make it",
+      "ex": "The ref must make a call without waiting for the VAR’s replay",
       "hook": "call",
       "k": "people-official",
       "src": "https://www.theifab.com/laws/latest/video-assistant-referee-var-protocol/",
