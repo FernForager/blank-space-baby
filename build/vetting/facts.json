@@ -7680,5 +7680,374 @@
   "h": "e44bf8fb9d",
   "note": "dictionary.com dummy (Collins): a feigned pass or move in a sport such as football or rugby",
   "v": "ok"
+ },
+ "ucl:0": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "00f54250cb",
+  "note": "uefa.com 1955 season page: Madrid overcome Reims to win first edition, Héctor Rial struck the winner. Final 4–3 per match.uefa.com/v5/matches (the API the season page loads)",
+  "v": "ok"
+ },
+ "ucl:1": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "8665c963c4",
+  "note": "uefa.com 1966 season page: Celtic upset two-time winners Inter, video titled Celtic’s Lisbon Lions",
+  "v": "ok"
+ },
+ "ucl:10": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "ea6e5849b5",
+  "note": "uefa.com 2004 season page: Liverpool stun Milan in ‘Miracle of Istanbul’",
+  "v": "ok"
+ },
+ "ucl:11": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "2a144ddda6",
+  "note": "uefa.com 2010 season page: Milito strikes twice as Inter complete treble",
+  "v": "ok"
+ },
+ "ucl:12": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "eb228104d0",
+  "note": "uefa.com 2021 season page: Tuchel guides Chelsea back to the summit. Final Man City 0–1 Chelsea per match.uefa.com/v5/matches (the API the season page loads)",
+  "v": "ok"
+ },
+ "ucl:13": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "82daaf7550",
+  "note": "uefa.com 2023 season page: Man City win as Rodri strikes in Istanbul. Final Man City 1–0 Inter per match.uefa.com/v5/matches (the API the season page loads)",
+  "v": "ok"
+ },
+ "ucl:15": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "4a3cbdaa04",
+  "note": "uefa.com 1985 season page: Steaua stun Barcelona in shoot-out, heroics of Helmuth Duckadam",
+  "v": "ok"
+ },
+ "ucl:16": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "38d3dfe8c8",
+  "note": "uefa.com 1996 season page: Dortmund v Juventus 1997 final, super sub Lars Ricken seals glory in Munich",
+  "v": "ok"
+ },
+ "ucl:17": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "65a3118291",
+  "note": "uefa.com 2016 season page: Real Madrid 1–1 Atleti (5–3p), triumphed against their city rivals",
+  "v": "ok"
+ },
+ "ucl:18": {
+  "at": "2026-10-17T00:18:04Z",
+  "h": "9f823aca67",
+  "note": "uefa.com history page all-time stats (checked today): Cristiano Ronaldo top scorer 141 and most appearances 187",
+  "v": "ok"
+ },
+ "ucl:19": {
+  "at": "2026-10-17T00:18:04Z",
+  "h": "30c53a8c5a",
+  "note": "uefa.com history page and rankings/players/goals_scored (checked today): Messi second with 129 behind Ronaldo 141",
+  "v": "ok"
+ },
+ "ucl:2": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "a1c3a60560",
+  "note": "uefa.com 1967 season page: Benfica 1–4 Man United, first English European Cup winners, victory at Wembley",
+  "v": "ok"
+ },
+ "ucl:20": {
+  "at": "2026-10-17T00:18:04Z",
+  "h": "479c3c3fb8",
+  "note": "uefa.com history page and rankings/players/goals_scored (checked today): Lewandowski third with 109 behind Ronaldo and Messi",
+  "v": "ok"
+ },
+ "ucl:21": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "15323e94d8",
+  "note": "uefa.com 2018 season page: Bale overhead kick helps Madrid make it three, Real Madrid v Liverpool final",
+  "v": "ok"
+ },
+ "ucl:22": {
+  "at": "2026-10-17T00:18:04Z",
+  "h": "0918713f87",
+  "note": "uefa.com 2026 season page top scorers: Mbappé 15, Kane 14",
+  "v": "ok"
+ },
+ "ucl:23": {
+  "at": "2026-10-17T00:18:04Z",
+  "h": "b366402175",
+  "note": "uefa.com 2023 season page top scorers: Haaland 12, Salah 8",
+  "v": "ok"
+ },
+ "ucl:24": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "e6961d9bd0",
+  "note": "uefa.com 2001 season page: famous Zidane finish wins it for Madrid, Real Madrid v Leverkusen 2002 final",
+  "v": "ok"
+ },
+ "ucl:25": {
+  "at": "2026-10-17T00:18:04Z",
+  "h": "8619055dd6",
+  "note": "uefa.com 2012 season page: Drogba hits Chelsea’s shoot-out winner against Bayern",
+  "v": "ok"
+ },
+ "ucl:26": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "c8b2fea500",
+  "note": "uefa.com 2013 season page: Robben the hero at Wembley. Final Dortmund 1–2 Bayern per match.uefa.com/v5/matches (the API the season page loads)",
+  "v": "ok"
+ },
+ "ucl:27": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "937c8e3f6d",
+  "note": "uefa.com 1959 season page: Puskás got four as Madrid crush Frankfurt after ten-goal thriller (7–3 per match.uefa.com/v5/matches (the API the season page loads))",
+  "v": "ok"
+ },
+ "ucl:28": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "e7da32ceb5",
+  "note": "uefa.com 2002 season page: Shevchenko effort wins final shoot-out for Milan v Juventus",
+  "v": "ok"
+ },
+ "ucl:29": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "f439b3e5da",
+  "note": "uefa.com 2023 season page: Pep Guardiola’s side, Rodri strikes, final 1–0 per match.uefa.com/v5/matches (the API the season page loads)",
+  "v": "ok"
+ },
+ "ucl:3": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "510d7e78b7",
+  "note": "uefa.com 1970 season page: first-time champions Ajax ease past Panathinaikos, Johan Cruyff starring",
+  "v": "ok"
+ },
+ "ucl:30": {
+  "at": "2026-10-17T00:18:04Z",
+  "h": "ef2eaf740a",
+  "note": "uefa.com final records article (src): Luis Enrique 3 titles (Barcelona 2015, Paris 2025, 2026), consecutive Paris 2025, 2026",
+  "v": "ok"
+ },
+ "ucl:31": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "52c55e02d2",
+  "note": "uefa.com 2019 season page: Klopp’s Liverpool beat Spurs in all-English final",
+  "v": "ok"
+ },
+ "ucl:33": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "c8b352f0f7",
+  "note": "uefa.com 2022 season page: Ancelotti makes history as Madrid win again. Final Liverpool 0–1 Real Madrid per match.uefa.com/v5/matches (the API the season page loads)",
+  "v": "ok"
+ },
+ "ucl:34": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "f857c971cd",
+  "note": "uefa.com seasons/2021 headline: Tuchel guides Chelsea back to the summit. Final Man City 0–1 Chelsea per match.uefa.com/v5/matches?matchId=2029498",
+  "v": "ok"
+ },
+ "ucl:35": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "034a4d097b",
+  "note": "uefa.com seasons/2023: Man City win the title as Rodri strikes in Istanbul. Venue Atatürk Olympic Stadium, Istanbul, Man City 1–0 Inter per match.uefa.com/v5/matches?matchId=2037765",
+  "v": "ok"
+ },
+ "ucl:36": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "bc20519058",
+  "note": "uefa.com seasons/2014: Madrid break Atlético hearts to seal La Décima, extra-time win in Lisbon, 2014 final Real Madrid 4-1 Atleti. match.uefa.com/v5/matches?matchId=2011883 gives 1–1 in regular time, 4–1 total, Estádio do SL Benfica, Lisbon",
+  "v": "ok"
+ },
+ "ucl:37": {
+  "at": "2026-10-17T00:18:04Z",
+  "h": "396c0291ef",
+  "note": "uefa.com seasons/2012: Drogba hits Chelsea’s shoot-out winner against Bayern, Chelsea claimed glory in Munich. match.uefa.com/v5/matches?matchId=2007693: 1–1, pens 4–3, Munich",
+  "v": "ok"
+ },
+ "ucl:38": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "1aa227c8cb",
+  "note": "uefa.com seasons/2008: United win Chelsea shoot-out. match.uefa.com/v5/matches?matchId=301604: 1–1, pens 6–5, Luzhniki Stadium, Moscow",
+  "v": "ok"
+ },
+ "ucl:39": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "b17be5ea0b",
+  "note": "uefa.com seasons/2026: Paris edge Arsenal on penalties in Budapest final. match.uefa.com/v5/matches?matchId=2047742: 1–1, pens 4–3, Puskás Aréna, Budapest",
+  "v": "ok"
+ },
+ "ucl:4": {
+  "at": "2026-10-17T00:18:04Z",
+  "h": "e3c20686ed",
+  "note": "uefa.com 2020 season page: Bayern reign as Coman returns to haunt Paris. Final Paris 0–1 Bayern per match.uefa.com/v5/matches (the API the season page loads)",
+  "v": "ok"
+ },
+ "ucl:41": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "b78d69998d",
+  "note": "uefa.com seasons/2009: Barcelona too strong for Manchester United. match.uefa.com/v5/matches?matchId=302813: 2–0, Stadio Olimpico, Rome, goals Eto’o and Messi",
+  "v": "ok"
+ },
+ "ucl:43": {
+  "at": "2026-10-17T00:18:04Z",
+  "h": "cd0a96094b",
+  "note": "uefa.com seasons/2022: Ancelotti makes history as Madrid win again. match.uefa.com/v5/matches?matchId=2034586: Liverpool 0–1 Real Madrid, Stade de France. Means: match.uefa.com/v5/matches?matchId=64833 (2000 final) and match.uefa.com/v5/matches?matchId=84101 (2006 final) both at Stade de France",
+  "v": "ok"
+ },
+ "ucl:44": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "78b48ce60b",
+  "note": "uefa.com seasons/2002 (the 2002/03 page): Shevchenko effort wins final shoot-out for Milan. match.uefa.com/v5/matches?matchId=71176: Juventus 0–0 Milan, pens 2–3, Old Trafford, Manchester, 2003-05-28",
+  "v": "ok"
+ },
+ "ucl:45": {
+  "at": "2026-10-17T00:18:04Z",
+  "h": "180eb24e84",
+  "note": "WUCL history article: 2010/11 final at Craven Cottage in London, Lyon beat Potsdam 2-0 for France’s first title (and their third came in 2015/16)",
+  "v": "ok"
+ },
+ "ucl:46": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "0233919f8e",
+  "note": "WUCL history article: 2012/13 Wolfsburg beat Lyon 1-0 at London’s Stamford Bridge",
+  "v": "ok"
+ },
+ "ucl:47": {
+  "at": "2026-10-17T00:18:04Z",
+  "h": "a76af8464d",
+  "note": "WUCL history article: first final 2002, Umeå v FFC Frankfurt, who staged the final at the Waldstadion, Frankfurt won 2-0",
+  "v": "ok"
+ },
+ "ucl:48": {
+  "at": "2026-10-17T00:18:04Z",
+  "h": "66fdb6e85a",
+  "note": "WUCL history article: 2025/26 Barcelona, in an unprecedented sixth straight final, beat the renamed OL Lyonnes 4-0 in Oslo",
+  "v": "ok"
+ },
+ "ucl:49": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "822dfa790e",
+  "note": "WUCL history article: 2024/25 Arsenal beat Barcelona 1-0 in Lisbon, first side to reach the final from round 1 of qualifying",
+  "v": "ok"
+ },
+ "ucl:5": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "04dcf41518",
+  "note": "uefa.com 1978 season page: Francis scored Forest’s winner in the 1979 final. Final Nott’m Forest 1–0 Malmö per match.uefa.com/v5/matches (the API the season page loads)",
+  "v": "ok"
+ },
+ "ucl:51": {
+  "at": "2026-10-17T00:18:04Z",
+  "h": "4b0a75d3a9",
+  "note": "WUCL history article: 2007/08 Frankfurt became the first three-time champions, and won the first UEFA Women’s Cup in 2002",
+  "v": "ok"
+ },
+ "ucl:53": {
+  "at": "2026-10-17T00:18:04Z",
+  "h": "31a765c7a1",
+  "note": "WUCL history article: Wolfsburg beat Lyon 1-0 in the 2012/13 final, then Tyresö 4-3 in the 2013/14 final in Lisbon",
+  "v": "ok"
+ },
+ "ucl:54": {
+  "at": "2026-10-17T00:18:04Z",
+  "h": "27bfbed834",
+  "note": "WUCL history article: Umeå won the new two-legged final in 2002/03, then won again in 2003/04 bolstered by the signing of Marta (also two legs)",
+  "v": "ok"
+ },
+ "ucl:55": {
+  "at": "2026-10-17T00:18:04Z",
+  "h": "6a1868d2f7",
+  "note": "uefa.com/uefachampionsleague/history: Madrid lead the way with 15 European Cups. Latest title 2023/24 per uefa.com history/clubs/50051--real-madrid",
+  "v": "ok"
+ },
+ "ucl:56": {
+  "at": "2026-10-17T00:18:04Z",
+  "fix": {
+   "src": "https://www.uefa.com/uefachampionsleague/news/0275-1541637ad1db-88aeeefefefd-1000--which-teams-have-won-the-european-cup-or-champions-league/"
+  },
+  "h": "2777080680",
+  "note": "The src history page only says Milan are among Madrid’s closest challengers, not the count. https://www.uefa.com/uefachampionsleague/news/0275-1541637ad1db-88aeeefefefd-1000--which-teams-have-won-the-european-cup-or-champions-league/ shows AC Milan next with seven triumphs, and history/clubs/50058--milan lists 7 titles, latest 2006/07",
+  "v": "fix"
+ },
+ "ucl:57": {
+  "at": "2026-10-17T00:18:04Z",
+  "fix": {
+   "src": "https://www.uefa.com/uefachampionsleague/news/0275-1541637ad1db-88aeeefefefd-1000--which-teams-have-won-the-european-cup-or-champions-league/"
+  },
+  "h": "aa235330ae",
+  "note": "The src history page doesn’t show the count. https://www.uefa.com/uefachampionsleague/news/0275-1541637ad1db-88aeeefefefd-1000--which-teams-have-won-the-european-cup-or-champions-league/ shows Liverpool with six titles, and history/clubs/7889--liverpool lists 6 titles, latest 2018/19",
+  "v": "fix"
+ },
+ "ucl:58": {
+  "at": "2026-10-17T00:17:55Z",
+  "fix": {
+   "src": "https://www.uefa.com/uefachampionsleague/history/rankings/players/goals_scored"
+  },
+  "h": "b5c866fe8b",
+  "note": "The src history page doesn’t show it. https://www.uefa.com/uefachampionsleague/history/rankings/players/goals_scored shows Cristiano Ronaldo 141, Messi 129 (checked today)",
+  "v": "fix"
+ },
+ "ucl:59": {
+  "at": "2026-10-17T00:18:04Z",
+  "h": "6342cd5efa",
+  "note": "uefa.com/womenschampionsleague/history all-time stats: most titles OL Lyonnes 8, Frankfurt 4, Barcelona 4",
+  "v": "ok"
+ },
+ "ucl:6": {
+  "at": "2026-10-17T00:18:04Z",
+  "h": "79676da4bc",
+  "note": "uefa.com 1981 season page: Aston Villa bring the European Cup to Birmingham. Final Aston Villa 1–0 Bayern per match.uefa.com/v5/matches (the API the season page loads)",
+  "v": "ok"
+ },
+ "ucl:60": {
+  "at": "2026-10-17T00:18:04Z",
+  "h": "b43f194b01",
+  "note": "Real Madrid club history page lists titles 1955/56 through 1959/60. https://www.uefa.com/uefachampionsleague/news/0275-1541637ad1db-88aeeefefefd-1000--which-teams-have-won-the-european-cup-or-champions-league/ also says they won the first five editions between 1956 and 1960",
+  "v": "ok"
+ },
+ "ucl:61": {
+  "at": "2026-10-17T00:18:04Z",
+  "h": "6db73baac1",
+  "note": "Final records article: biggest win in a Champions League final, 5-0 Paris Saint-Germain vs Inter (31/05/2025)",
+  "v": "ok"
+ },
+ "ucl:62": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "12c155d32b",
+  "note": "uefa.com seasons/2018: Bale overhead kick helps Madrid make it three in a row. match.uefa.com/v5/matches?matchId=2021711: Real Madrid 3–1 Liverpool",
+  "v": "ok"
+ },
+ "ucl:63": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "662a263663",
+  "note": "uefa.com seasons/2019: Klopp’s Liverpool beat Spurs in all-English final. match.uefa.com/v5/matches?matchId=2025486: Tottenham 0–2 Liverpool",
+  "v": "ok"
+ },
+ "ucl:64": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "1aceea4cdc",
+  "note": "uefa.com seasons/2023: Rodri strikes in Istanbul. match.uefa.com/v5/matches?matchId=2037765: Man City 1–0 Inter, only goal Rodri 68’",
+  "v": "ok"
+ },
+ "ucl:65": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "a27fc9b60b",
+  "note": "uefa.com seasons/2017: Ronaldo-powered Madrid defend title in Cardiff, 2017 final Real Madrid 4-1 Juventus. match.uefa.com/v5/matches?matchId=2019641 confirms 1–4 in Cardiff",
+  "v": "ok"
+ },
+ "ucl:66": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "9690592c86",
+  "note": "uefa.com/womenschampionsleague/history/seasons/2026: Barcelona defeated OL Lyonnes 4-0 in Oslo. Fourth title per WUCL history page (Barcelona 4)",
+  "v": "ok"
+ },
+ "ucl:7": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "bcf3b8877a",
+  "note": "uefa.com 1991 season page: Koeman free kick, Barcelona 1–0 Sampdoria at Wembley, first time kings of Europe",
+  "v": "ok"
+ },
+ "ucl:8": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "1d020b0e87",
+  "note": "uefa.com 1992 season page: Marseille win inaugural Champions League final, France’s first winners",
+  "v": "ok"
  }
 }
