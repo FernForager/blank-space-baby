@@ -3057,6 +3057,376 @@
   "note": "Decoy fix rides on intl-men:8 groups",
   "v": "ok"
  },
+ "intl-women:0": {
+  "at": "2026-10-17T00:03:04Z",
+  "fix": {
+   "ex": "The USA won the first Women’s World Cup, beating Norway 2–1 in 1991"
+  },
+  "h": "680865ece0",
+  "note": "Fans say “the USA”: a sentence opening on a bare “USA” reads like a headline",
+  "v": "fix"
+ },
+ "intl-women:1": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "2998a382e3",
+  "v": "ok"
+ },
+ "intl-women:10": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "63e5cc3985",
+  "v": "ok"
+ },
+ "intl-women:11": {
+  "at": "2026-10-17T00:03:04Z",
+  "fix": {
+   "means": "The final was in Basel"
+  },
+  "h": "f7711b5696",
+  "note": "Twin of intl-women:51 the draw can’t catch: Switzerland gives away Basel (the only Swiss city among its decoys) and Basel gives away Switzerland. A means line naming Basel ties them",
+  "v": "fix"
+ },
+ "intl-women:12": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "391d17c96e",
+  "v": "ok"
+ },
+ "intl-women:13": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "b2f3d11d02",
+  "note": "ok. Near-twin of legends:28, kept apart by the draw. Still true on 2026-10-16",
+  "v": "ok"
+ },
+ "intl-women:14": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "5d35439c73",
+  "note": "ok. Exact twin of legends:19 (same answer, same hook, nearly the same sentence). Keep this one and drop legends:19",
+  "v": "ok"
+ },
+ "intl-women:15": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "8567b6cd31",
+  "v": "ok"
+ },
+ "intl-women:16": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "1e131207f8",
+  "v": "ok"
+ },
+ "intl-women:17": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "b6fbda57dd",
+  "v": "ok"
+ },
+ "intl-women:18": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "ed02cf5b13",
+  "note": "ok. Near-twin of awards:18 (shared answer)",
+  "v": "ok"
+ },
+ "intl-women:19": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "1a1a2a4e64",
+  "v": "ok"
+ },
+ "intl-women:2": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "f5b0e839c7",
+  "note": "ok. Near-twin of awards:43 (same fact, same answer), so the draw keeps them apart. Keep one",
+  "v": "ok"
+ },
+ "intl-women:20": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "0339181bac",
+  "note": "ok. Same sentence as nwsl:33, which is the one out of place. Still a world record",
+  "v": "ok"
+ },
+ "intl-women:21": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "3778d80236",
+  "note": "ok. Near-twin of awards:56 and awards:16",
+  "v": "ok"
+ },
+ "intl-women:22": {
+  "at": "2026-10-17T00:03:04Z",
+  "fix": {
+   "d": 3,
+   "ex": "Homare Sawa’s 117th-minute equalizer sent the 2011 World Cup final to penalties",
+   "hook": "equalizer",
+   "means": "She won the Golden Ball and Boot",
+   "src": "https://www.fifa.com/en/tournaments/womens/womensworldcup/fifa-womens-world-cup-germany-2011/articles/sawa-golden-ball-boot-winner"
+  },
+  "h": "a6534f84a9",
+  "note": "Homare Sawa is the only Japanese name among the decoys, so “captained Japan” plays trivially easy, and it repeats legends:37 almost word for word. Her 117th-minute equalizer in the final is the moment fans remember, and Wambach and Morgan, who also scored in that final, make real decoys. Red as rewritten",
+  "v": "fix"
+ },
+ "intl-women:23": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "fb7beb7dd9",
+  "v": "ok"
+ },
+ "intl-women:24": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "6e44581e05",
+  "v": "ok"
+ },
+ "intl-women:25": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "7f74bce6d4",
+  "v": "ok"
+ },
+ "intl-women:26": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "c8ff669901",
+  "v": "ok"
+ },
+ "intl-women:27": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "377259a70d",
+  "v": "ok"
+ },
+ "intl-women:28": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "4df4a70b73",
+  "v": "ok"
+ },
+ "intl-women:29": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "fe90f657f6",
+  "note": "ok. Near-twin of awards:33",
+  "v": "ok"
+ },
+ "intl-women:3": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "7b576f313f",
+  "v": "ok"
+ },
+ "intl-women:30": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "cb621a1bd1",
+  "note": "ok. Near-twin of awards:28 and awards:59",
+  "v": "ok"
+ },
+ "intl-women:31": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "30edbce1a2",
+  "v": "ok"
+ },
+ "intl-women:32": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "dde06518b1",
+  "v": "ok"
+ },
+ "intl-women:33": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "648f821ec3",
+  "v": "ok"
+ },
+ "intl-women:34": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "0133f54d0f",
+  "v": "ok"
+ },
+ "intl-women:35": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "84c8b8a9da",
+  "v": "ok"
+ },
+ "intl-women:36": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "6644ffc769",
+  "v": "ok"
+ },
+ "intl-women:37": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "a38737155c",
+  "v": "ok"
+ },
+ "intl-women:38": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "0f8cc4c74c",
+  "v": "ok"
+ },
+ "intl-women:39": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "5c279456b7",
+  "v": "ok"
+ },
+ "intl-women:4": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "39afd9022b",
+  "note": "ok. Near-twin of awards:46, wc26:41 and intl-women:24, all kept apart by the draw",
+  "v": "ok"
+ },
+ "intl-women:40": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "ada2f02b67",
+  "v": "ok"
+ },
+ "intl-women:41": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "304c1d72d5",
+  "v": "ok"
+ },
+ "intl-women:42": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "4bd4eb1b92",
+  "v": "ok"
+ },
+ "intl-women:43": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "18483ffe86",
+  "v": "ok"
+ },
+ "intl-women:44": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "5b2e642bee",
+  "v": "ok"
+ },
+ "intl-women:45": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "efad17bc42",
+  "v": "ok"
+ },
+ "intl-women:46": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "2d1d66fbf0",
+  "note": "ok as white: next to four, five, eight, 12 and 48 it plays by elimination, which fits white. Exact twin of legends:29 (same sentence, answer and hook). Keep one",
+  "v": "ok"
+ },
+ "intl-women:47": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "eba63da3cc",
+  "v": "ok"
+ },
+ "intl-women:48": {
+  "at": "2026-10-17T00:03:04Z",
+  "fix": {
+   "means": "At Brazil’s famous Maracanã"
+  },
+  "h": "f914bbbbb6",
+  "note": "Twin of intl-women:6 the draw can’t catch: Brazil hosting gives away Rio (the only Brazilian city among its decoys). Naming Brazil in the means ties them",
+  "v": "fix"
+ },
+ "intl-women:49": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "0af01f6ebd",
+  "v": "ok"
+ },
+ "intl-women:5": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "dc05bca811",
+  "v": "ok"
+ },
+ "intl-women:50": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "9267d78ddb",
+  "v": "ok"
+ },
+ "intl-women:51": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "0dcf37061c",
+  "v": "ok"
+ },
+ "intl-women:52": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "f3cb84110a",
+  "v": "ok"
+ },
+ "intl-women:53": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "4333143f69",
+  "note": "ok. Exact twin of awards:64 (same sentence, answer and hook). Keep one",
+  "v": "ok"
+ },
+ "intl-women:54": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "65e857f170",
+  "v": "ok"
+ },
+ "intl-women:55": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "566544930e",
+  "note": "ok. Exact twin of awards:65 (same sentence, answer and hook). Keep one",
+  "v": "ok"
+ },
+ "intl-women:56": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "f733c9cfa3",
+  "v": "ok"
+ },
+ "intl-women:57": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "adab7f17ad",
+  "note": "ok. Plays trivially easy by grammar (a 16-minute golden goal makes no sense), which fits white. Near-twin of legends:22",
+  "v": "ok"
+ },
+ "intl-women:58": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "cbf064e85d",
+  "v": "ok"
+ },
+ "intl-women:59": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "537d3f49d2",
+  "v": "ok"
+ },
+ "intl-women:6": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "e694645dfd",
+  "v": "ok"
+ },
+ "intl-women:60": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "fcd4abddb8",
+  "note": "ok. Near-twin of legends:8 (same hook) and awards:51, awards:70",
+  "v": "ok"
+ },
+ "intl-women:61": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "ee05257f8a",
+  "v": "ok"
+ },
+ "intl-women:62": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "49059e3fdb",
+  "v": "ok"
+ },
+ "intl-women:63": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "96688d7323",
+  "v": "ok"
+ },
+ "intl-women:64": {
+  "at": "2026-10-17T00:03:04Z",
+  "fix": {
+   "ex": "Brazil’s women’s team is also called the Seleção"
+  },
+  "h": "47c76c287a",
+  "note": "As written this is the men’s card (intl-men has the same fact) in a women’s deck. Make it about the women’s team",
+  "v": "fix"
+ },
+ "intl-women:65": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "d417024cfc",
+  "note": "ok. Near-twin of intl-women:37, kept apart because its means line says 1999",
+  "v": "ok"
+ },
+ "intl-women:7": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "bd379f32ea",
+  "v": "ok"
+ },
+ "intl-women:8": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "13f44ba7e1",
+  "v": "ok"
+ },
+ "intl-women:9": {
+  "at": "2026-10-17T00:03:04Z",
+  "h": "42cb4374ea",
+  "note": "ok. Same fact as nwsl:26 (shared answer, kept apart by the draw)",
+  "v": "ok"
+ },
  "laliga:0": {
   "at": "2026-10-17T00:02:07Z",
   "h": "b58d08f493",
