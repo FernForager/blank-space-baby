@@ -1,8 +1,8 @@
 {
  "alpha:0": {
-  "at": "2026-10-17T00:01:37Z",
-  "h": "22db3ea124",
-  "note": "M-W bet page, Did you know: slang bet is an informal affirmative like “For sure!”",
+  "at": "2026-10-17T00:18:57Z",
+  "h": "0361801fe0",
+  "note": "M-W bet: informal affirmative similar to “For sure!” No drawable wrong answer fits (bruh, sheesh, slay, cap and the like are already grouped out)",
   "v": "ok"
  },
  "alpha:1": {
@@ -44,9 +44,9 @@
   "v": "ok"
  },
  "alpha:103": {
-  "at": "2026-10-17T00:01:37Z",
-  "h": "d728a44bd7",
-  "note": "Dictionary.com slang slop: low-quality digital content created by AI (mid, cringe, brain rot, rage-bait already grouped)",
+  "at": "2026-10-17T00:18:58Z",
+  "h": "4c667bd9b6",
+  "note": "Dictionary.com slang slop: low-quality digital content created by AI. The “AI-made” cue rules out the drawable wrong answers, and mid, cringe, fire are grouped out",
   "v": "ok"
  },
  "alpha:104": {
@@ -56,9 +56,9 @@
   "v": "ok"
  },
  "alpha:105": {
-  "at": "2026-10-17T00:01:37Z",
-  "h": "d17380b854",
-  "note": "Dictionary.com slang destim: to calm down by avoiding overwhelming stimuli such as loud noises",
+  "at": "2026-10-17T00:18:58Z",
+  "h": "5e492e74ea",
+  "note": "Dictionary.com slang destim: to calm down by avoiding overwhelming stimuli such as loud noises. No drawable wrong answer fits",
   "v": "ok"
  },
  "alpha:106": {
@@ -122,21 +122,18 @@
   "v": "ok"
  },
  "alpha:15": {
-  "at": "2026-10-17T00:02:11Z",
-  "fix": {
-   "ex": "When the sub board showed a 6 and a 7, the bench yelled “six seven”"
-  },
-  "h": "bf6afbf812",
-  "note": "M-W six seven shows a nonsense phrase tied to the numbers 6 and 7. The new wording drops the numbers, so drawable shouts like sheesh, bruh, lock in, fire and womp womp fit the blank too and the card has more than one right answer. Bringing the numbers back keeps only six seven true. It gives the answer away more, which the desk can weigh, but one right answer comes first",
-  "v": "fix"
+  "at": "2026-10-17T00:18:57Z",
+  "h": "62cfeabd70",
+  "note": "M-W six seven interjection slang: nonsensical expression, especially by kids, as upon seeing the numbers 6 and 7 in succession. The 6 and 7 cue rules out the drawable wrong answers",
+  "v": "ok"
  },
  "alpha:16": {
-  "at": "2026-10-17T00:01:37Z",
+  "at": "2026-10-17T00:18:57Z",
   "fix": {
    "ex": "The defender answered every coaching tip with the nonsense word “skibidi”"
   },
-  "h": "db8ab81b77",
-  "note": "M-W skibidi: a nonsensical expression and meme. As written any reply fits the blank (no cap, IJBOL, lock in, L and touch grass are all drawable). Naming it a nonsense word leaves only skibidi (six seven is already excluded)",
+  "h": "74b15223f4",
+  "note": "M-W skibidi: nonsensical expression and meme, used humorously and interjectionally. But the blank “answered every coaching tip with “___”” also fits drawable yeet (M-W yeet interjection: used to express surprise, approval or excited enthusiasm, https://www.merriam-webster.com/dictionary/yeet) and IJBOL or chat as reply words. Naming it a nonsense word leaves only skibidi (six seven is already grouped out)",
   "v": "fix"
  },
  "alpha:17": {
@@ -146,9 +143,9 @@
   "v": "ok"
  },
  "alpha:18": {
-  "at": "2026-10-17T00:01:37Z",
-  "h": "5968407275",
-  "note": "M-W slang rage-bait: content that is intentionally offensive or provocative",
+  "at": "2026-10-17T00:19:04Z",
+  "h": "486ac4dd1c",
+  "note": "M-W slang rage-bait: content that tries to provoke anger or outrage to gain attention. No drawable wrong answer fits",
   "v": "ok"
  },
  "alpha:19": {
@@ -158,9 +155,9 @@
   "v": "ok"
  },
  "alpha:2": {
-  "at": "2026-10-17T00:01:37Z",
-  "h": "c5527533bd",
-  "note": "M-W cap verb: to lie by boasting or exaggerating, and slang noun: empty boasting or dishonest talk",
+  "at": "2026-10-17T00:18:57Z",
+  "h": "3acd11b2b8",
+  "note": "M-W cap noun (4) slang: nonsense, especially empty boasting or dishonest talk, and verb sense: to lie by boasting or exaggerating. No drawable wrong answer fits",
   "v": "ok"
  },
  "alpha:20": {
@@ -176,15 +173,15 @@
   "v": "ok"
  },
  "alpha:22": {
-  "at": "2026-10-17T00:01:37Z",
-  "h": "8a2a410f73",
-  "note": "M-W touch grass: participate in normal activities in the real world as opposed to online",
+  "at": "2026-10-17T00:18:58Z",
+  "h": "2b8d7ad884",
+  "note": "M-W touch grass: to take part in normal real-world activities as opposed to online ones. No drawable wrong answer fits",
   "v": "ok"
  },
  "alpha:23": {
-  "at": "2026-10-17T00:01:37Z",
-  "h": "1c56459800",
-  "note": "M-W L abbreviation: loss",
+  "at": "2026-10-17T00:18:58Z",
+  "h": "3322cb4507",
+  "note": "M-W L abbreviation (2) sense 3: loss, losses. The other loss words are grouped out",
   "v": "ok"
  },
  "alpha:24": {
@@ -194,25 +191,18 @@
   "v": "ok"
  },
  "alpha:25": {
-  "at": "2026-10-17T00:01:37Z",
-  "h": "0bcf170a91",
-  "note": "M-W slang vibe check: a casual or intuitive assessment of something or someone",
+  "at": "2026-10-17T00:18:58Z",
+  "h": "a841e59d63",
+  "note": "M-W slang vibe check: a casual or intuitive assessment of the quality of something. The means narrows it to mood but a team’s vibe is its mood. No drawable wrong answer fits",
   "v": "ok"
  },
  "alpha:26": {
-  "at": "2026-10-17T00:01:37Z",
+  "at": "2026-10-17T00:18:58Z",
   "fix": {
-   "groups": [
-    [
-     "bruh",
-     "chalked"
-    ]
-   ],
-   "means": "A groan of dismay, from bro",
    "src": "https://www.dictionary.com/culture/slang/bruh"
   },
-  "h": "886f9e254b",
-  "note": "M-W bruh is only a noun: brother, a male friend, a friendly way of addressing a man or boy. The sentence uses the interjection of surprise or dismay, which only Dictionary.com shows (https://www.dictionary.com/culture/slang/bruh). Means changed to that sense. M-W chalked (doomed, done for) also fits a groan here, like cooked which is already excluded",
+  "h": "96fc6d050a",
+  "note": "M-W bruh (https://www.merriam-webster.com/dictionary/bruh) shows only the noun: brother, bro, a friendly way of addressing a man or boy. It has no interjection sense, and here a goalie says it as a reaction. Dictionary.com slang shows bruh as an interjection for something exasperating or embarrassing, used like dude and man, which supports the sentence and the means line. No drawable wrong answer fits (SMH, womp womp, sheesh are grouped out)",
   "v": "fix"
  },
  "alpha:27": {
@@ -222,29 +212,21 @@
   "v": "ok"
  },
  "alpha:28": {
-  "at": "2026-10-17T00:01:37Z",
-  "fix": {
-   "groups": [
-    [
-     "crash out",
-     "cringe"
-    ]
-   ]
-  },
-  "h": "7c8f1793dd",
-  "note": "M-W crash, intransitive verb sense 6 (slang): to react suddenly with extreme distress or anger, usually used with out. But M-W cringe (to recoil in distaste) also fits “Dad began to ___ when the ref missed the handball”",
-  "v": "fix"
+  "at": "2026-10-17T00:18:58Z",
+  "h": "0fe86aa89d",
+  "note": "M-W crash verb sense 6 slang: to react suddenly with extreme distress or anger, usually used with out. Also https://www.merriam-webster.com/slang/crash-out. No drawable wrong answer fits",
+  "v": "ok"
  },
  "alpha:29": {
-  "at": "2026-10-17T00:01:37Z",
-  "h": "351d8b149c",
-  "note": "M-W slang lock in: to enter a state of deep focus",
+  "at": "2026-10-17T00:18:58Z",
+  "h": "2a40d73a7a",
+  "note": "M-W slang lock in: to enter a state of deep focus. Other focus words are grouped out",
   "v": "ok"
  },
  "alpha:3": {
-  "at": "2026-10-17T00:01:37Z",
-  "h": "b1d4611b03",
-  "note": "M-W bussin’ (slang): extremely good, delicious",
+  "at": "2026-10-17T00:18:57Z",
+  "h": "1ec1808750",
+  "note": "M-W bussin’ (variant bussin) slang: extremely good, excellent. Praise words that would also fit are already grouped out",
   "v": "ok"
  },
  "alpha:30": {
@@ -263,21 +245,24 @@
   "v": "fix"
  },
  "alpha:32": {
-  "at": "2026-10-17T00:01:37Z",
-  "h": "49eb6230d7",
-  "note": "M-W unc (slang): a person who is old or ageing or acts old for their age",
+  "at": "2026-10-17T00:18:58Z",
+  "h": "24b87412a1",
+  "note": "M-W unc slang: a person who is old or acts old for their age. No drawable wrong answer fits",
   "v": "ok"
  },
  "alpha:33": {
-  "at": "2026-10-17T00:01:37Z",
-  "h": "6d9d10bd12",
-  "note": "M-W brain rot (slang): decline in cognitive function from too much shallow online content",
-  "v": "ok"
+  "at": "2026-10-17T00:18:58Z",
+  "fix": {
+   "means": "Mind fog from too much junk online"
+  },
+  "h": "22cbb12e0e",
+  "note": "M-W brain rot sense 1: a perceived decline in cognitive function from consuming too much shallow online content, also: that content. The sentence uses sense 1 (the clips gave her brain rot), but the means line gives sense 2, the content itself. The fix matches the sense in play",
+  "v": "fix"
  },
  "alpha:34": {
-  "at": "2026-10-17T00:01:37Z",
-  "h": "7dc5fb9ccc",
-  "note": "M-W tea sense 6, the tea (slang): private or inside information",
+  "at": "2026-10-17T00:18:58Z",
+  "h": "45d3e7294d",
+  "note": "M-W tea sense 6, the tea slang: private or inside information especially of a personal nature. No drawable wrong answer fits",
   "v": "ok"
  },
  "alpha:35": {
@@ -287,9 +272,9 @@
   "v": "ok"
  },
  "alpha:36": {
-  "at": "2026-10-17T00:01:37Z",
-  "h": "06b2ccd030",
-  "note": "M-W drip sense 6 (slang): a fashionable style or look",
+  "at": "2026-10-17T00:18:58Z",
+  "h": "65c7bea139",
+  "note": "M-W drip sense 6 slang: a fashionable style or look. Overlapping words (steez, aura, clout) are grouped out",
   "v": "ok"
  },
  "alpha:37": {
@@ -299,20 +284,10 @@
   "v": "ok"
  },
  "alpha:38": {
-  "at": "2026-10-17T00:01:37Z",
-  "fix": {
-   "groups": [
-    [
-     "caught in 4k",
-     "low-key",
-     "high-key",
-     "lowkenuinely"
-    ]
-   ]
-  },
-  "h": "a50de4ec8c",
-  "note": "Sense checks out at https://www.merriam-webster.com/slang/caught-in-4k (M-W slang page: exposed doing something wrong with irrefutable evidence such as high-resolution video). But low-key, high-key and lowkenuinely also read naturally as adverbs in the blank (“The defender was low-key pulling a jersey on Dad’s video”), so group them with the answer",
-  "v": "fix"
+  "at": "2026-10-17T00:18:58Z",
+  "h": "e403f9be3b",
+  "note": "M-W slang caught in 4k: exposed doing something wrong with irrefutable evidence, typically high-resolution video. No drawable wrong answer fits",
+  "v": "ok"
  },
  "alpha:39": {
   "at": "2026-10-17T00:01:37Z",
@@ -378,9 +353,9 @@
   "v": "ok"
  },
  "alpha:46": {
-  "at": "2026-10-17T00:01:37Z",
-  "h": "873e22cb74",
-  "note": "M-W dictionary verb: to be an extremely devoted and enthusiastic fan of someone",
+  "at": "2026-10-17T00:18:58Z",
+  "h": "c1000be902",
+  "note": "M-W stan verb slang: to be an extremely devoted and enthusiastic fan of someone. Glaze and the like are grouped out",
   "v": "ok"
  },
  "alpha:47": {
@@ -390,9 +365,9 @@
   "v": "ok"
  },
  "alpha:48": {
-  "at": "2026-10-17T00:01:37Z",
-  "h": "53fe66dfe6",
-  "note": "M-W dictionary: feeling or showing resentment towards a person or situation : bitter",
+  "at": "2026-10-17T00:18:58Z",
+  "h": "104683e30a",
+  "note": "M-W salty sense 4 informal: feeling or showing resentment, bitter. Pressed and the like are grouped out",
   "v": "ok"
  },
  "alpha:49": {
@@ -522,26 +497,26 @@
   "v": "ok"
  },
  "alpha:62": {
-  "at": "2026-10-17T00:01:37Z",
+  "at": "2026-10-17T00:18:58Z",
   "fix": {
    "means": "Doing what needs to be done"
   },
-  "h": "8606687808",
-  "note": "Sense checks out at https://www.merriam-webster.com/dictionary/stand%20on%20business (M-W dictionary (stand on business): to do what needs to be done, to take a firm stand). But M-W defines stand on business as to do what needs to be done, to take a firm stand. It does not say doing what you said, so the means line should follow M-W",
+  "h": "f15c04af09",
+  "note": "M-W stand on business phrase: 1 slang to do what needs to be done, 2 slang to take a firm stand. Neither says doing what you promised. The sentence still fits sense 1, so only the means line changes. No drawable wrong answer fits",
   "v": "fix"
  },
  "alpha:63": {
-  "at": "2026-10-17T00:01:37Z",
+  "at": "2026-10-17T00:18:58Z",
   "fix": {
    "groups": [
     [
      "cringe",
-     "main character energy"
+     "mother"
     ]
    ]
   },
-  "h": "1fa548284b",
-  "note": "Sense checks out at https://www.merriam-webster.com/dictionary/cringe (M-W dictionary adjective: so embarrassing, awkward, etc. as to cause one to cringe). But M-W main character energy (https://www.merriam-webster.com/slang/main-character-energy) is self-assured behavior, also used to criticize its excesses, so “Dad dancing on the sideline was main character energy” also fits",
+  "h": "8a7fd071ca",
+  "note": "M-W cringe adjective slang: so embarrassing or awkward as to cause one to cringe. Praise words that also fit “was ___” (fire, gas, lit, goated, peak, tuff) are already grouped out, but mother is not, and the deck’s own mother card uses it as a predicate (“she is mother”), so “Dad dancing on the sideline was mother” also reads right",
   "v": "fix"
  },
  "alpha:64": {
@@ -557,9 +532,9 @@
   "v": "ok"
  },
  "alpha:66": {
-  "at": "2026-10-17T00:01:37Z",
-  "h": "1c55339703",
-  "note": "M-W slang page: a pronunciation spelling of crying, often used for crying with laughter",
+  "at": "2026-10-17T00:18:58Z",
+  "h": "6472936ebd",
+  "note": "M-W slang crine: pronunciation spelling of crying, often used for crying with laughter. No drawable wrong answer fits",
   "v": "ok"
  },
  "alpha:67": {
@@ -600,13 +575,10 @@
   "v": "ok"
  },
  "alpha:7": {
-  "at": "2026-10-17T00:01:37Z",
-  "fix": {
-   "ex": "The ref seems sus for wearing the other team’s colors"
-  },
-  "h": "2531cff598",
-  "note": "M-W sus (slang): suspicious. But “looks ___ wearing the other team’s colors” also takes the style words still drawn as wrong answers (fire, tuff, drip-style adjectives like goated, lit, peak, preppy). “Seems ___ for wearing” keeps it a judgment, so only sus fits",
-  "v": "fix"
+  "at": "2026-10-17T00:18:57Z",
+  "h": "d8da9f3864",
+  "note": "M-W sus slang: suspicious, suspect. No drawable wrong answer fits",
+  "v": "ok"
  },
  "alpha:70": {
   "at": "2026-10-17T00:01:37Z",
@@ -635,18 +607,10 @@
   "v": "ok"
  },
  "alpha:73": {
-  "at": "2026-10-17T00:01:37Z",
-  "fix": {
-   "groups": [
-    [
-     "bias",
-     "GOAT"
-    ]
-   ]
-  },
-  "h": "ff23d3da06",
-  "note": "Sense checks out at https://www.merriam-webster.com/slang/bias (M-W slang page: K-pop sense, a favorite idol or performer). But “The goalie’s GOAT is the K-pop singer” also reads naturally (M-W GOAT: the greatest of all time), so group them",
-  "v": "fix"
+  "at": "2026-10-17T00:18:58Z",
+  "h": "3d315b172b",
+  "note": "M-W slang bias: K-pop sense, a favorite idol or performer. No drawable wrong answer fits",
+  "v": "ok"
  },
  "alpha:74": {
   "at": "2026-10-17T00:01:37Z",
@@ -697,13 +661,10 @@
   "v": "ok"
  },
  "alpha:8": {
-  "at": "2026-10-17T00:01:37Z",
-  "fix": {
-   "ex": "The coach has won the league in each of her 20 years, so she is the GOAT"
-  },
-  "h": "61a8c7a4d7",
-  "note": "M-W GOAT: the most accomplished and successful individual in the history of a sport or activity. Perfect attendance is not accomplishment or success, so the sense is a stretch. Reworded to a record of winning, hook 20 years kept",
-  "v": "fix"
+  "at": "2026-10-17T00:18:57Z",
+  "h": "ff3e45ac61",
+  "note": "M-W GOAT: the greatest of all time, the most accomplished individual. No drawable wrong answer fits “she is the ___”",
+  "v": "ok"
  },
  "alpha:80": {
   "at": "2026-10-17T00:01:37Z",
@@ -718,9 +679,9 @@
   "v": "ok"
  },
  "alpha:82": {
-  "at": "2026-10-17T00:01:37Z",
-  "h": "70cdfa9160",
-  "note": "M-W slang girlypop: an affectionate term for a close girl or woman friend (bestie and twin already grouped)",
+  "at": "2026-10-17T00:18:58Z",
+  "h": "b8245a6db8",
+  "note": "M-W slang girlypop: a friendly, affectionate term for a close friend. Bestie, twin and chat are grouped out",
   "v": "ok"
  },
  "alpha:83": {
@@ -730,27 +691,27 @@
   "v": "ok"
  },
  "alpha:84": {
-  "at": "2026-10-17T00:01:37Z",
-  "h": "88e4dcce4a",
-  "note": "M-W slang hold the L: to admit being wrong or to accept defeat",
+  "at": "2026-10-17T00:18:58Z",
+  "h": "0cb70fd309",
+  "note": "M-W slang hold the L: to admit being wrong or to accept defeat. No drawable wrong answer fits",
   "v": "ok"
  },
  "alpha:85": {
-  "at": "2026-10-17T00:01:37Z",
-  "h": "44c46d2b04",
-  "note": "M-W slang IJBOL: I just burst out laughing (SMH, bruh, womp womp, sheesh already grouped)",
+  "at": "2026-10-17T00:18:58Z",
+  "h": "feaabcc7a1",
+  "note": "M-W slang IJBOL: abbreviation for “I just burst out laughing.” Crine and the like are grouped out",
   "v": "ok"
  },
  "alpha:86": {
-  "at": "2026-10-17T00:01:37Z",
-  "h": "fc173528ba",
-  "note": "M-W slang keep it a buck: to be honest, real, or truthful",
+  "at": "2026-10-17T00:18:58Z",
+  "h": "6f7281ccde",
+  "note": "M-W slang keep it a buck: to be honest, real or truthful. The honesty words are grouped out",
   "v": "ok"
  },
  "alpha:87": {
-  "at": "2026-10-17T00:01:37Z",
-  "h": "5274923255",
-  "note": "M-W slang kiki: a gossipy get-together, a lively chat",
+  "at": "2026-10-17T00:18:58Z",
+  "h": "27e49d660c",
+  "note": "M-W slang kiki: an informal gathering among close friends with laughter and gossip, a gossipy conversation. Tea and lore are grouped out",
   "v": "ok"
  },
  "alpha:88": {
@@ -772,18 +733,10 @@
   "v": "ok"
  },
  "alpha:90": {
-  "at": "2026-10-17T00:01:37Z",
-  "fix": {
-   "groups": [
-    [
-     "out of pocket",
-     "salty"
-    ]
-   ]
-  },
-  "h": "d32a748f96",
-  "note": "M-W slang out of pocket: inappropriate, out of line (cringe already grouped). But salty is still drawable and fits too: arguing with the ref in the handshake line is easily called salty (deck card: Bitter, annoyed), so group them",
-  "v": "fix"
+  "at": "2026-10-17T00:18:58Z",
+  "h": "a5327c32fc",
+  "note": "M-W slang out of pocket: wildly inappropriate, out of line. No drawable wrong answer fits",
+  "v": "ok"
  },
  "alpha:91": {
   "at": "2026-10-17T00:01:37Z",
@@ -792,17 +745,21 @@
   "v": "ok"
  },
  "alpha:92": {
-  "at": "2026-10-17T00:01:37Z",
+  "at": "2026-10-17T00:18:58Z",
   "fix": {
    "groups": [
     [
      "preppy",
-     "girlypop"
+     "fire"
+    ],
+    [
+     "preppy",
+     "lit"
     ]
    ]
   },
-  "h": "2236e88859",
-  "note": "M-W slang preppy: a cheery, sporty girls’ style with pastels, smiley faces and hair bows. But M-W slang girlypop (merriam-webster.com/slang/girlypop) is also an adjective for hyperfeminine things, so “very girlypop” fits pastel bows too and girlypop is drawable here, so group them",
+  "h": "152586bc6e",
+  "note": "M-W slang preppy: casual upscale fashion trend popular with preteen girls, bright colors, pastel pinks and blues, smiley faces, hair bows. Praise words tuff, gas and bussin are already grouped out of “very ___”, but fire and lit are the same kind of word and still drawable (“Pastel bows on soccer cleats are very fire”)",
   "v": "fix"
  },
  "alpha:93": {
@@ -854,9 +811,9 @@
   "v": "ok"
  },
  "basics:1": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "120967ea02",
-  "note": "theifab.com Law 4 (The Players’ Equipment) 4.2 and FAQs: footwear lost accidentally must be replaced no later than when the ball next goes out, a goal scored before that is awarded",
+  "at": "2026-10-17T00:18:17Z",
+  "h": "85b5bf1a9f",
+  "note": "theifab.com Law 4.2 and FAQs (footwear lost accidentally must be replaced no later than when the ball next goes out of play, a goal scored before that is awarded)",
   "v": "ok"
  },
  "basics:10": {
@@ -890,9 +847,9 @@
   "v": "ok"
  },
  "basics:104": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "fde74ffdeb",
-  "note": "theifab.com Law 11.1 and 11.2: being in an offside position is not an offence, only becoming involved in active play",
+  "at": "2026-10-17T00:18:17Z",
+  "h": "5269340a26",
+  "note": "theifab.com Law 11 (it is not an offence to be in an offside position, a player is penalised only on becoming involved in active play)",
   "v": "ok"
  },
  "basics:105": {
@@ -1055,13 +1012,10 @@
   "v": "ok"
  },
  "basics:129": {
-  "at": "2026-10-16T23:59:06Z",
-  "fix": {
-   "ex": "Unsure on a throw-in, the assistant referee raises the flag and follows the referee"
-  },
-  "h": "23bbedd06a",
-  "note": "theifab.com Guidelines, Body language (Throw-in): far from the AR and in doubt, the AR raises the flag, makes eye contact and follows the referee’s signal. Near the AR, a direct signal shows the direction, so the means line holds. The wrong-answer pool here includes players and the coach (captain, goalkeeper, coach), and any player could be said to follow the referee’s signal, so the reword adds the flag to make only the assistant referee fit (83 characters, hook unchanged)",
-  "v": "fix"
+  "at": "2026-10-17T00:18:18Z",
+  "h": "10104f993e",
+  "note": "theifab.com/laws/latest/guidelines/body-language-communication-and-whistle/ (AR in doubt about throw-in direction raises the flag and follows the referee’s signal, near the AR a direct signal shows the direction)",
+  "v": "ok"
  },
  "basics:13": {
   "at": "2026-10-16T23:59:06Z",
@@ -1088,9 +1042,9 @@
   "v": "ok"
  },
  "basics:133": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "a939c0c4bf",
-  "note": "theifab.com VAR protocol (Practicalities): if the referee decides to view the replay footage, the VAR will select the best angle and replay speed",
+  "at": "2026-10-17T00:18:18Z",
+  "h": "8bb1ed965a",
+  "note": "theifab.com VAR protocol 3 Practicalities (if the referee decides to view the replay footage, the VAR will select the best angle/replay speed)",
   "v": "ok"
  },
  "basics:134": {
@@ -1106,21 +1060,13 @@
   "v": "ok"
  },
  "basics:136": {
-  "at": "2026-10-16T23:59:06Z",
+  "at": "2026-10-17T00:18:44Z",
   "fix": {
-   "groups": [
-    [
-     "VAR",
-     "review"
-    ],
-    [
-     "VAR",
-     "check"
-    ]
-   ]
+   "ex": "The ref must make a call and may not wait for the VAR’s replay to make it",
+   "hook": "call"
   },
-  "h": "77467733bc",
-  "note": "theifab.com VAR protocol: the referee must always make a decision and may not give no decision, the VAR is only used after the referee has made a first decision. Facts hold. But review and check are in this card’s wrong-answer pool and both also fit the blank (a review or a check also comes only after the referee’s first call), so group them with VAR",
+  "h": "3151bc5216",
+  "note": "theifab.com VAR protocol: the referee must always make a decision and may not give “no decision” and then use the replay review to decide. But the VAR may also act on a serious missed incident where no call was made, so “only then can the VAR step in” is too strong. The new sentence states the protocol’s own rule, and “replay” keeps referee and assistant referee false",
   "v": "fix"
  },
  "basics:137": {
@@ -1172,9 +1118,9 @@
   "v": "ok"
  },
  "basics:144": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "0bb0ce9917",
-  "note": "theifab.com Law 8 FAQ: the coin must be tossed by the referee, not an AR or captain, and the referee tosses a coin before extra time",
+  "at": "2026-10-17T00:18:18Z",
+  "h": "d9bff08838",
+  "note": "theifab.com Law 8.1 (the referee tosses a coin) and Law 8 FAQ (the referee tosses a coin again before extra time)",
   "v": "ok"
  },
  "basics:145": {
@@ -1232,9 +1178,9 @@
   "v": "ok"
  },
  "basics:153": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "d5d8c68d54",
-  "note": "merriam-webster.com forward (noun): a player who plays at the front of the team’s formation near the opponent’s goal",
+  "at": "2026-10-17T00:18:18Z",
+  "h": "74d1a3779c",
+  "note": "merriam-webster.com/dictionary/forward (a player who plays at the front of the team’s formation near the opponent’s goal), means from merriam-webster.com/dictionary/striker (a forward in soccer)",
   "v": "ok"
  },
  "basics:154": {
@@ -1292,9 +1238,9 @@
   "v": "ok"
  },
  "basics:2": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "f6f100731a",
-  "note": "merriam-webster.com cleat: a projecting piece on the bottom of a shoe that furnishes a grip, and shoes equipped with cleats",
+  "at": "2026-10-17T00:18:17Z",
+  "h": "312a5a5f01",
+  "note": "merriam-webster.com/dictionary/cleat (a projecting piece on the bottom of a shoe that furnishes a grip, and shoes equipped with cleats)",
   "v": "ok"
  },
  "basics:20": {
@@ -1316,9 +1262,9 @@
   "v": "ok"
  },
  "basics:23": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "cf84fe7ca2",
-  "note": "theifab.com Law 8 8.1: for the second half the teams change ends and attack the opposite goals",
+  "at": "2026-10-17T00:18:17Z",
+  "h": "4d120fb5c7",
+  "note": "theifab.com Law 8.1 (for the second half, the teams change ends and attack the opposite goals)",
   "v": "ok"
  },
  "basics:24": {
@@ -1343,9 +1289,9 @@
   "v": "ok"
  },
  "basics:27": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "cefb1a370b",
-  "note": "theifab.com General Modifications: for youth, veterans, disability and grassroots football, national FAs may modify the duration of the two halves and of extra time",
+  "at": "2026-10-17T00:18:17Z",
+  "h": "7e60116c16",
+  "note": "theifab.com General Modifications (for youth football, national FAs may modify the duration of the two equal halves and the two equal halves of extra time) and Law 7.1 (two halves of 45 minutes)",
   "v": "ok"
  },
  "basics:28": {
@@ -1427,9 +1373,9 @@
   "v": "ok"
  },
  "basics:4": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "b62b78dcb2",
-  "note": "theifab.com Law 4 (The Players’ Equipment) 4.2: shinguards must be covered by the socks, players are responsible for their size and suitability",
+  "at": "2026-10-17T00:18:17Z",
+  "h": "29d0a801bf",
+  "note": "theifab.com Law 4.2 (shinguards must be covered by the socks, players are responsible for the size and suitability of their shinguards) and Law 4 FAQ",
   "v": "ok"
  },
  "basics:40": {
@@ -1481,9 +1427,9 @@
   "v": "ok"
  },
  "basics:48": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "b65db7da24",
-  "note": "merriam-webster.com goalmouth: the area directly in front of the goal (as in soccer or hockey)",
+  "at": "2026-10-17T00:18:17Z",
+  "h": "6c7267afd6",
+  "note": "merriam-webster.com/dictionary/goalmouth (the area directly in front of the goal, as in soccer or hockey, headword is one word)",
   "v": "ok"
  },
  "basics:49": {
@@ -1505,9 +1451,9 @@
   "v": "ok"
  },
  "basics:51": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "ed09f4380e",
-  "note": "theifab.com Law 1 (The Field of Play) 2026/27 1.6: arc of radius 9.15 m from the penalty mark drawn outside the penalty area. Law 14.1: other players at least 9.15 m from the mark and outside the area",
+  "at": "2026-10-17T00:18:17Z",
+  "h": "b1c6fd341b",
+  "note": "theifab.com Law 1.6 (arc of radius 9.15 m from the penalty mark drawn outside the penalty area) and Law 14.1 (other players at least 9.15 m from the penalty mark and outside the penalty area)",
   "v": "ok"
  },
  "basics:52": {
@@ -1583,9 +1529,9 @@
   "v": "ok"
  },
  "basics:63": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "edd14148bb",
-  "note": "theifab.com Law 1 (The Field of Play) 2026/27 1.8: a flagpost with a non-pointed top and a flag at each corner",
+  "at": "2026-10-17T00:18:17Z",
+  "h": "6eee54f2cd",
+  "note": "theifab.com Law 1.8 (a flagpost with a non-pointed top and a flag must be placed at each corner)",
   "v": "ok"
  },
  "basics:64": {
@@ -1625,9 +1571,9 @@
   "v": "ok"
  },
  "basics:7": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "d6d53404bd",
-  "note": "merriam-webster.com jersey: a shirt worn by a sports team member as part of a team uniform, typically with the athlete’s name and number on the back",
+  "at": "2026-10-17T00:18:17Z",
+  "h": "2fbc5b179e",
+  "note": "merriam-webster.com/dictionary/jersey (shirt worn by a member of a sports team as part of a team uniform, typically with name and number on the back)",
   "v": "ok"
  },
  "basics:70": {
@@ -1643,9 +1589,9 @@
   "v": "ok"
  },
  "basics:72": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "82cc414fed",
-  "note": "theifab.com Law 17: ball placed in the corner area, flagpost must not be moved. Awarded when the ball passes over the goal line last touched by a defender (Law 17 also lists two newer cases, the means line is still true)",
+  "at": "2026-10-17T00:18:17Z",
+  "h": "cc436c6442",
+  "note": "theifab.com Law 17 (ball placed in the corner area, the corner flagpost must not be moved, awarded when the ball last touched a defender and crosses the goal line)",
   "v": "ok"
  },
  "basics:73": {
@@ -1667,9 +1613,9 @@
   "v": "ok"
  },
  "basics:76": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "247351f957",
-  "note": "theifab.com Law 14.1: goalkeeper must not unfairly distract the kicker, e.g. delay the kick or touch the goalposts, crossbar or net",
+  "at": "2026-10-17T00:18:17Z",
+  "h": "25988f6589",
+  "note": "theifab.com Law 14.1 (goalkeeper must not unfairly distract the kicker, e.g. delay the taking of the kick or touch the goalposts, crossbar or goal net)",
   "v": "ok"
  },
  "basics:77": {
@@ -1691,9 +1637,9 @@
   "v": "ok"
  },
  "basics:8": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "5e8eb9da45",
-  "note": "merriam-webster.com shin guard: a protective covering for the shin, usually of stiffened canvas or leather, used in various sports",
+  "at": "2026-10-17T00:18:17Z",
+  "h": "161aaf83bf",
+  "note": "merriam-webster.com/dictionary/shin%20guard (protective covering for the shin, usually stiffened, used in various sports) plus merriam-webster.com/dictionary/shin (front part of the leg below the knee)",
   "v": "ok"
  },
  "basics:80": {
@@ -1742,9 +1688,9 @@
   "v": "ok"
  },
  "basics:87": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "49a04ab8cd",
-  "note": "theifab.com Law 13.2 (Free Kicks): opponents at least 9.15 m (10 yds) away unless on their own goal line between the goalposts",
+  "at": "2026-10-17T00:18:17Z",
+  "h": "378b3abdab",
+  "note": "theifab.com Law 13.2 (opponents at least 9.15 m from the ball unless they are on their own goal line between the goalposts)",
   "v": "ok"
  },
  "basics:88": {
@@ -1760,9 +1706,9 @@
   "v": "ok"
  },
  "basics:9": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "290b047b95",
-  "note": "theifab.com Law 4 (The Players’ Equipment) 4.3: the two teams must wear colors that distinguish them from each other and the match officials",
+  "at": "2026-10-17T00:18:17Z",
+  "h": "4f16f2e467",
+  "note": "theifab.com Law 4.3 (the two teams must wear colours that distinguish them from each other and the match officials)",
   "v": "ok"
  },
  "basics:90": {
@@ -1787,10 +1733,13 @@
   "v": "ok"
  },
  "basics:93": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "c79fe25b32",
-  "note": "theifab.com Law 12 FAQ on the fouls-and-misconduct page: once the goalkeeper has released the ball from the hands, any opponent can challenge them for it",
-  "v": "ok"
+  "at": "2026-10-17T00:18:17Z",
+  "fix": {
+   "means": "Once she lets go, it’s fair game"
+  },
+  "h": "35745f13b6",
+  "note": "theifab.com Law 12.3 and FAQ: a goalkeeper in control of the ball with the hands cannot be challenged, and control includes the ball held between hand and the ground, so a ball on the ground is not always fair game. Once the keeper releases it, any opponent can challenge. Means reworded to match",
+  "v": "fix"
  },
  "basics:94": {
   "at": "2026-10-16T23:59:06Z",
@@ -1817,9 +1766,9 @@
   "v": "ok"
  },
  "basics:98": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "cc8a7d5c97",
-  "note": "theifab.com Law 12.1 Handling the ball: not every touch is an offence, moving the hand/arm towards the ball is",
+  "at": "2026-10-17T00:18:17Z",
+  "h": "72148706d4",
+  "note": "theifab.com Law 12.1 (not every touch of the hand/arm with the ball is an offence, deliberately touching it, for example moving the hand/arm towards the ball, is)",
   "v": "ok"
  },
  "basics:99": {
@@ -2459,45 +2408,45 @@
   "v": "ok"
  },
  "epl-more:42": {
-  "at": "2026-10-17T00:05:08Z",
-  "h": "7d023ee374",
-  "note": "premierleague.com/en/premier-league-explained: one point for a draw, three for a win",
+  "at": "2026-10-17T00:20:31Z",
+  "h": "9803dce0ba",
+  "note": "Explained page: three points for a win, one for a draw and none for a defeat",
   "v": "ok"
  },
  "epl-more:43": {
-  "at": "2026-10-17T00:04:54Z",
-  "h": "a349c755f5",
-  "note": "premierleague.com/en/stats/records: most points without winning the title, 97, Liverpool 2018/19",
+  "at": "2026-10-17T00:20:31Z",
+  "h": "03680fdb11",
+  "note": "premierleague.com/en/stats/records: most PL points in a season without winning the title, 97 Liverpool 2018/19",
   "v": "ok"
  },
  "epl-more:44": {
-  "at": "2026-10-17T00:04:54Z",
-  "h": "9cc7e34c4e",
-  "note": "premierleague.com/en/stats/records: fewest goals conceded 15 and most clean sheets 25, Chelsea 2004/05",
+  "at": "2026-10-17T00:20:31Z",
+  "h": "d9f809807d",
+  "note": "premierleague.com/en/stats/records: fewest goals conceded in a season 15 Chelsea 2004/05, most clean sheets 25 Chelsea 2004/05",
   "v": "ok"
  },
  "epl-more:45": {
-  "at": "2026-10-17T00:05:08Z",
-  "h": "738cb465b7",
-  "note": "premierleague.com/en/premier-league-explained: six ever-presents incl. Everton, records page lists them 1992/93 to date",
+  "at": "2026-10-17T00:20:31Z",
+  "h": "7ece52eb57",
+  "note": "premierleague.com/en/premier-league-explained: six ever-present clubs, Arsenal, Chelsea, Everton, Liverpool, Man Utd and Tottenham (also on the records page)",
   "v": "ok"
  },
  "epl-more:46": {
-  "at": "2026-10-17T00:04:54Z",
-  "h": "0b15e2634e",
+  "at": "2026-10-17T00:20:31Z",
+  "h": "d2954bd762",
   "note": "premierleague.com/en/premier-league-explained: seven different winners since 1992, champions list shows 2025/26 Arsenal",
   "v": "ok"
  },
  "epl-more:47": {
-  "at": "2026-10-17T00:04:54Z",
-  "h": "b9f2342d5c",
-  "note": "premierleague.com/en/stats/records: longest unbeaten home run 86, Chelsea 21 Feb 2004 to 26 Oct 2008",
+  "at": "2026-10-17T00:20:31Z",
+  "h": "eb079965dd",
+  "note": "premierleague.com/en/stats/records: longest PL unbeaten home run 86 Chelsea (21 Feb 2004 – 26 Oct 2008)",
   "v": "ok"
  },
  "epl-more:48": {
-  "at": "2026-10-17T00:04:54Z",
-  "h": "98e4b28122",
-  "note": "premierleague.com/en/stats/records: most goals in a season 106, Man City 2017/18",
+  "at": "2026-10-17T00:20:31Z",
+  "h": "6a98529a78",
+  "note": "premierleague.com/en/stats/records: most PL goals in a season 106 Man City 2017/18",
   "v": "ok"
  },
  "epl-more:49": {
@@ -2639,9 +2588,9 @@
   "v": "ok"
  },
  "epl:0": {
-  "at": "2026-10-17T00:02:26Z",
-  "h": "52f11c42dd",
-  "note": "stats/records: most PL title wins 13 Manchester United, all listed seasons match Ferguson's 13 on news 4660971 (every title-winning manager). Still true after 2025/26",
+  "at": "2026-10-17T00:20:23Z",
+  "h": "05611bef61",
+  "note": "Records page: highest PL scoring draw 5–5 West Brom v Man United 19 May 2013. Means from premierleague.com/news/582185: the Hawthorns was the scene of Ferguson’s 810th and final Premier League outing, a 5–5 draw",
   "v": "ok"
  },
  "epl:1": {
@@ -2768,9 +2717,9 @@
   "v": "ok"
  },
  "epl:28": {
-  "at": "2026-10-17T00:02:26Z",
-  "h": "ff284afb2a",
-  "note": "news 4725666 (all 20 stadiums, 2026/27): Emirates is in Holloway, north London. Same page lists six London clubs in 2026/27",
+  "at": "2026-10-17T00:20:23Z",
+  "h": "d1fb19c376",
+  "note": "Stadiums page (26 Sep 2026): Emirates Stadium is in Holloway, north London. Same page also places Brentford, Fulham and Crystal Palace in London",
   "v": "ok"
  },
  "epl:29": {
@@ -2924,9 +2873,9 @@
   "v": "ok"
  },
  "epl:6": {
-  "at": "2026-10-17T00:02:26Z",
-  "h": "f2f029dd0b",
-  "note": "news 4625396: Coventry return after a 25-year absence as 2025/26 Championship champions",
+  "at": "2026-10-17T00:20:23Z",
+  "h": "e75fda89d4",
+  "note": "Article (2 Jun 2026): Coventry, managed by Frank Lampard, won the 2025/26 Championship and return to the Premier League after a 25-year absence. Still true for 2026/27",
   "v": "ok"
  },
  "epl:7": {
@@ -2945,6 +2894,348 @@
   "at": "2026-10-17T00:02:26Z",
   "h": "bb16f6d85b",
   "note": "premier-league-explained: top tier with 20 teams, Championship is the second tier, teams play each other home and away",
+  "v": "ok"
+ },
+ "intl-men:0": {
+  "at": "2026-10-17T00:17:52Z",
+  "h": "8484beddd1",
+  "note": "fifa.com Brazil profile: champions on five occasions, more than any other nation. fifa.com champions 1982–2026 page: 2002 was a record-extending fifth title. Still true after 2026 (Spain won, their second)",
+  "v": "ok"
+ },
+ "intl-men:1": {
+  "at": "2026-10-17T00:17:52Z",
+  "h": "db703778ae",
+  "note": "fifa.com champions 1982–2026 page: Argentina beat France on penalties after 3–3 in the Qatar 2022 final, winning a third World Cup",
+  "v": "ok"
+ },
+ "intl-men:10": {
+  "at": "2026-10-17T00:17:52Z",
+  "h": "6b1fc991ce",
+  "note": "uefa.com Euro 1976 final report: Czechoslovakia beat West Germany on penalties. First seven kicks scored, Hoeness missed West Germany’s fourth, Panenka scored the ninth, so 5–3",
+  "v": "ok"
+ },
+ "intl-men:11": {
+  "at": "2026-10-17T00:17:52Z",
+  "h": "d415616768",
+  "note": "fifa.com Croatia profile: third at their first World Cup, France 1998, Šuker won the Golden Boot",
+  "v": "ok"
+ },
+ "intl-men:12": {
+  "at": "2026-10-17T00:17:52Z",
+  "h": "d63f68aeb8",
+  "note": "uefa.com Euro 2016 final report: Portugal beat France 1–0 after extra time for their first major trophy",
+  "v": "ok"
+ },
+ "intl-men:13": {
+  "at": "2026-10-17T00:17:52Z",
+  "h": "06611a2602",
+  "note": "fifa.com France profile: lifted the trophy for the second time in Russia 2018, beating Croatia 4–2",
+  "v": "ok"
+ },
+ "intl-men:14": {
+  "at": "2026-10-17T00:17:52Z",
+  "h": "26ceecd032",
+  "note": "fifa.com Qatar 2022 article: Messi won the Golden Ball, the second time he has won it",
+  "v": "ok"
+ },
+ "intl-men:15": {
+  "at": "2026-10-17T00:17:52Z",
+  "h": "1d8f4a3d6f",
+  "note": "fifa.com France profile: Mbappé’s hat-trick in the 2022 final in vain as Argentina won the shoot-out",
+  "v": "ok"
+ },
+ "intl-men:17": {
+  "at": "2026-10-17T00:17:52Z",
+  "h": "bd23a472e7",
+  "note": "fifa.com Portugal profile: Ronaldo has 226 caps and 143 goals, both records",
+  "v": "ok"
+ },
+ "intl-men:19": {
+  "at": "2026-10-17T00:17:52Z",
+  "h": "c17a735e19",
+  "note": "fifa.com champions 1982–2026 page: Götze settled the 2014 final with an extra-time volley",
+  "v": "ok"
+ },
+ "intl-men:2": {
+  "at": "2026-10-17T00:17:52Z",
+  "h": "af7fa70606",
+  "note": "fifa.com Uruguay profile: first World Cup hosts and winners (1930), won again in 1950",
+  "v": "ok"
+ },
+ "intl-men:21": {
+  "at": "2026-10-17T00:17:52Z",
+  "h": "310d675d7c",
+  "note": "fifa.com champions 1982–2026 page: Maradona spearheaded Argentina’s 1986 title, two goals vs England in the quarterfinal",
+  "v": "ok"
+ },
+ "intl-men:23": {
+  "at": "2026-10-17T00:17:52Z",
+  "h": "7455615118",
+  "note": "fifa.com Tim Howard article (current version): 16 saves vs Belgium in 2014, a World Cup record he now shares with Curaçao’s Eloy Room",
+  "v": "ok"
+ },
+ "intl-men:24": {
+  "at": "2026-10-17T00:17:52Z",
+  "h": "4ced19b7ee",
+  "note": "ussoccer.com 2010 story: Donovan’s 91st-minute goal beat Algeria 1–0 and won Group C",
+  "v": "ok"
+ },
+ "intl-men:27": {
+  "at": "2026-10-17T00:17:52Z",
+  "h": "a858ba5ff9",
+  "note": "uefa.com Ten great Euro moments: van Basten’s volley in the 1988 final vs the USSR. The 2–0 score is on https://www.uefa.com/uefaeuro/history/news/025b-0ed955722c3e-d9f74ab7998d-1000--euro-1988-all-you-need-to-know/",
+  "v": "ok"
+ },
+ "intl-men:28": {
+  "at": "2026-10-17T00:17:52Z",
+  "h": "e19a564ba1",
+  "note": "uefa.com Euro history makers 1984: Platini’s nine goals including two hat-tricks remain a record (no Euro since 2024)",
+  "v": "ok"
+ },
+ "intl-men:29": {
+  "at": "2026-10-17T00:17:52Z",
+  "h": "209f89ac7c",
+  "note": "uefa.com Panenka article: his chipped penalty won the Euro 1976 final shoot-out and is forever known as the Panenka",
+  "v": "ok"
+ },
+ "intl-men:3": {
+  "at": "2026-10-17T00:17:52Z",
+  "h": "550371cb62",
+  "note": "fifa.com England profile: beat West Germany 4–2 at Wembley in 1966, Geoff Hurst the first final hat-trick",
+  "v": "ok"
+ },
+ "intl-men:30": {
+  "at": "2026-10-17T00:17:52Z",
+  "h": "80489cdab6",
+  "note": "uefa.com Euro 2024 Young Player article: Yamal named Young Player of the Tournament, turned 17 the day before the final",
+  "v": "ok"
+ },
+ "intl-men:31": {
+  "at": "2026-10-17T00:17:52Z",
+  "h": "7fb5e6727e",
+  "note": "fifa.com Spain profile: Gavi’s trivela on the volley made it 5–0 vs Costa Rica in 2022. Outside-of-the-boot meaning on https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/ricardo-quaresma-goal-portugal-iran-2018",
+  "v": "ok"
+ },
+ "intl-men:32": {
+  "at": "2026-10-17T00:17:52Z",
+  "h": "70a26ef79a",
+  "note": "uefa.com EURO 2024 final report: Oyarzabal scored four minutes from time, Spain 2-1 England",
+  "v": "ok"
+ },
+ "intl-men:33": {
+  "at": "2026-10-17T00:17:52Z",
+  "h": "14fcd53142",
+  "note": "fifa.com Pozzo article: the only coach to win two World Cups, Italy 1934 and 1938. Still true after 2026, won by Spain under Luis de la Fuente per https://www.fifa.com/en/tournaments/mens/worldcup/articles/world-cup-champions-1982-2026-italy-argentina-germany-brazil-france-spain",
+  "v": "ok"
+ },
+ "intl-men:34": {
+  "at": "2026-10-17T00:17:37Z",
+  "h": "058837f8bf",
+  "note": "fifa.com England profile: Alf Ramsey led the 1966 champions, the ‘wingless wonders’",
+  "v": "ok"
+ },
+ "intl-men:35": {
+  "at": "2026-10-17T00:17:37Z",
+  "h": "7a71c6fc73",
+  "note": "fifa.com France profile: Deschamps captained the 1998 winners and coached the 2018 winners",
+  "v": "ok"
+ },
+ "intl-men:36": {
+  "at": "2026-10-17T00:17:37Z",
+  "h": "ee2cd74f5e",
+  "note": "fifa.com Argentina profile: Scaloni first took the helm in August 2018. 2022 title on https://www.fifa.com/en/tournaments/mens/worldcup/articles/world-cup-champions-1982-2026-italy-argentina-germany-brazil-france-spain",
+  "v": "ok"
+ },
+ "intl-men:37": {
+  "at": "2026-10-17T00:17:37Z",
+  "h": "6181864bc4",
+  "note": "uefa.com EURO 2004 final report: Otto Rehhagel’s Greece beat hosts Portugal 1-0",
+  "v": "ok"
+ },
+ "intl-men:38": {
+  "at": "2026-10-17T00:17:37Z",
+  "h": "2ccf083bc8",
+  "note": "fifa.com USA profile: Pochettino, former Argentina international, appointed September 2024 after Gregg Berhalter’s second stint",
+  "v": "ok"
+ },
+ "intl-men:39": {
+  "at": "2026-10-17T00:17:37Z",
+  "h": "cc5b88832b",
+  "note": "ussoccer.com 2002 story: head coach Bruce Arena, run to the quarterfinals, the best modern era finish. fifa.com USA profile shows the 1930 semifinal as their best, and https://www.fifa.com/en/tournaments/mens/worldcup/articles/world-cup-champions-1982-2026-italy-argentina-germany-brazil-france-spain lists the 2026 quarterfinals without the USA (they went out to Belgium in the last 16)",
+  "v": "ok"
+ },
+ "intl-men:4": {
+  "at": "2026-10-17T00:17:52Z",
+  "h": "36e35524c3",
+  "note": "fifa.com Morocco profile: first African team to reach a World Cup semifinal (Qatar 2022), lost 2–0 to France",
+  "v": "ok"
+ },
+ "intl-men:40": {
+  "at": "2026-10-17T00:17:52Z",
+  "h": "a9a668f0a1",
+  "note": "fifa.com Uruguay profile: deciding match of 1950 at the Maracana, Uruguay beat Brazil 2-1, labeled Maracanazo",
+  "v": "ok"
+ },
+ "intl-men:41": {
+  "at": "2026-10-17T00:17:37Z",
+  "h": "d78ec9d629",
+  "note": "uefa.com EURO 2020 final report: Italy beat England 3-2 on penalties at Wembley",
+  "v": "ok"
+ },
+ "intl-men:42": {
+  "at": "2026-10-17T00:17:37Z",
+  "h": "2c9f1f7a73",
+  "note": "fifa.com Baggio article: 1994 final shoot-out at the Rose Bowl, Brazil crowned. Pasadena, California is in the photo caption on https://www.fifa.com/en/tournaments/mens/worldcup/articles/world-cup-champions-1982-2026-italy-argentina-germany-brazil-france-spain",
+  "v": "ok"
+ },
+ "intl-men:43": {
+  "at": "2026-10-17T00:17:37Z",
+  "h": "d2c57f9b74",
+  "note": "fifa.com closing ceremony article: 2022 final Argentina v France at Lusail Stadium, Lusail City, Qatar. Argentina’s win on https://www.fifa.com/en/tournaments/mens/worldcup/articles/world-cup-champions-1982-2026-italy-argentina-germany-brazil-france-spain",
+  "v": "ok"
+ },
+ "intl-men:44": {
+  "at": "2026-10-17T00:17:37Z",
+  "h": "4fe45e6ba7",
+  "note": "fifa.com Iniesta article: Iniesta scored for Spain against the Netherlands at Soccer City in the 2010 final (115th minute). Spain won 1-0 per https://www.fifa.com/en/tournaments/mens/worldcup/articles/world-cup-champions-1982-2026-italy-argentina-germany-brazil-france-spain",
+  "v": "ok"
+ },
+ "intl-men:45": {
+  "at": "2026-10-17T00:17:37Z",
+  "h": "8f10807ebb",
+  "note": "fifa.com 1930–1978 champions page: Brazil beat Italy 4-1 at Azteca Stadium in 1970. Brazil’s titles 1958, 1962, 1970 make it the third",
+  "v": "ok"
+ },
+ "intl-men:46": {
+  "at": "2026-10-17T00:17:37Z",
+  "h": "cfaae29772",
+  "note": "fifa.com 1930–1978 champions page: first edition in Uruguay in 1930, thirteen nations competed",
+  "v": "ok"
+ },
+ "intl-men:47": {
+  "at": "2026-10-17T00:17:37Z",
+  "h": "e7e594c016",
+  "note": "fifa.com Germany profile: Miracle of Bern, first World Cup title in 1954",
+  "v": "ok"
+ },
+ "intl-men:48": {
+  "at": "2026-10-17T00:17:37Z",
+  "h": "9b5fb2d1c4",
+  "note": "fifa.com 1930–1978 champions page: Pele aged 17, Brazil beat hosts Sweden 5-2 in the 1958 final",
+  "v": "ok"
+ },
+ "intl-men:49": {
+  "at": "2026-10-17T00:17:37Z",
+  "h": "a691bbecfd",
+  "note": "fifa.com Germany profile: 1982 semifinal against France, West Germany prevailed in the first-ever World Cup penalty shoot-out",
+  "v": "ok"
+ },
+ "intl-men:5": {
+  "at": "2026-10-17T00:17:52Z",
+  "h": "dc5fdf1bd9",
+  "note": "fifa.com Germany profile: 7–1 win over hosts Brazil in the 2014 semis. Champions 1982–2026 page https://www.fifa.com/en/tournaments/mens/worldcup/articles/world-cup-champions-1982-2026-italy-argentina-germany-brazil-france-spain shows Germany won the 2014 final",
+  "v": "ok"
+ },
+ "intl-men:50": {
+  "at": "2026-10-17T00:17:37Z",
+  "h": "99821613b7",
+  "note": "fifa.com USA profile: World Cup hosts 1994 and 2026, sole hosts in 1994, co-hosts in 2026",
+  "v": "ok"
+ },
+ "intl-men:52": {
+  "at": "2026-10-17T00:17:52Z",
+  "h": "5aa4df70da",
+  "note": "fifa.com 1982–2026 champions page: 2010 South Africa, held in Africa for the first time, Spain beat the Netherlands 1-0",
+  "v": "ok"
+ },
+ "intl-men:53": {
+  "at": "2026-10-17T00:17:52Z",
+  "h": "dad74eca9e",
+  "note": "fifa.com Qatar 2022 article: played in November and December, 32 participating nations",
+  "v": "ok"
+ },
+ "intl-men:54": {
+  "at": "2026-10-17T00:17:37Z",
+  "h": "d40d6f06f1",
+  "note": "fifa.com Brazil profile: calls the team Seleção and Canarinho",
+  "v": "ok"
+ },
+ "intl-men:55": {
+  "at": "2026-10-17T00:17:37Z",
+  "h": "c58fac3535",
+  "note": "fifa.com Argentina profile: La Albiceleste, world champions. 2022 title on https://www.fifa.com/en/tournaments/mens/worldcup/articles/world-cup-champions-1982-2026-italy-argentina-germany-brazil-france-spain",
+  "v": "ok"
+ },
+ "intl-men:56": {
+  "at": "2026-10-17T00:17:37Z",
+  "h": "a722ce9225",
+  "note": "fifa.com England profile: the Three Lions, Champions (1966)",
+  "v": "ok"
+ },
+ "intl-men:57": {
+  "at": "2026-10-17T00:17:37Z",
+  "h": "27ae526b86",
+  "note": "fifa.com Spain profile: La Roja, Champions (2010). The 2026 title (beat Argentina in the final) is on https://www.fifa.com/en/tournaments/mens/worldcup/articles/world-cup-champions-1982-2026-italy-argentina-germany-brazil-france-spain",
+  "v": "ok"
+ },
+ "intl-men:58": {
+  "at": "2026-10-17T00:17:37Z",
+  "h": "ff9b280e46",
+  "note": "fifa.com Netherlands profile: Oranje, Runners-up (1974, 1978, 2010). They did not reach the 2026 final",
+  "v": "ok"
+ },
+ "intl-men:59": {
+  "at": "2026-10-17T00:17:37Z",
+  "h": "2a19fb9d98",
+  "note": "fifa.com France profile: Les Bleus, champions in 1998 and 2018",
+  "v": "ok"
+ },
+ "intl-men:6": {
+  "at": "2026-10-17T00:17:52Z",
+  "h": "9017a0516e",
+  "note": "fifa.com champions 1982–2026 page: 2010 in South Africa was Spain’s first World Cup, 1–0 over the Netherlands. Their 2026 title is their second, so the card still holds",
+  "v": "ok"
+ },
+ "intl-men:60": {
+  "at": "2026-10-17T00:17:37Z",
+  "h": "11bb4382be",
+  "note": "fifa.com Morocco profile: the Atlas Lions reached the semi-finals at Qatar 2022",
+  "v": "ok"
+ },
+ "intl-men:61": {
+  "at": "2026-10-17T00:17:37Z",
+  "h": "880f4a990d",
+  "note": "fifa.com USA profile: the Stars and Stripes, World Cup hosts 1994",
+  "v": "ok"
+ },
+ "intl-men:62": {
+  "at": "2026-10-17T00:17:37Z",
+  "h": "559c33e5d6",
+  "note": "fifa.com Pozzo article: the Azzurri won in 1934 and repeated the feat in 1938",
+  "v": "ok"
+ },
+ "intl-men:63": {
+  "at": "2026-10-17T00:17:37Z",
+  "h": "031a869942",
+  "note": "fifa.com Senegal profile: the Lions of Teranga reached the last eight (quarterfinals) in 2002",
+  "v": "ok"
+ },
+ "intl-men:7": {
+  "at": "2026-10-17T00:17:52Z",
+  "h": "4a544d0036",
+  "note": "fifa.com champions 1930–1978 page: Italy first team to retain the trophy, 1934 and 1938",
+  "v": "ok"
+ },
+ "intl-men:8": {
+  "at": "2026-10-17T00:17:52Z",
+  "h": "1c6097427d",
+  "note": "uefa.com Euro 2004 final report: 80-1 outsiders Greece beat hosts Portugal 1–0",
+  "v": "ok"
+ },
+ "intl-men:9": {
+  "at": "2026-10-17T00:17:52Z",
+  "h": "3c9cf9c05f",
+  "note": "uefa.com Euro 1992 all you need to know: Denmark replaced Yugoslavia at late notice and beat Germany 2–0 in the final",
   "v": "ok"
  },
  "intl-women:0": {
@@ -3680,6 +3971,387 @@
   "at": "2026-10-17T00:08:54Z",
   "h": "3156c2a568",
   "note": "src: Espanyol and FC Barcelona are the two main clubs of the Catalan capital, ElDerbi de Barcelona",
+  "v": "ok"
+ },
+ "legends:0": {
+  "at": "2026-10-17T00:21:33Z",
+  "h": "5166ddc2cd",
+  "note": "fifa.com Pelé obituary: three titles, more World Cups than any other player, won 1958, 1962 and 1970. No player could reach three titles since",
+  "v": "ok"
+ },
+ "legends:1": {
+  "at": "2026-10-17T00:21:33Z",
+  "h": "72f7857dcf",
+  "note": "fifa.com Hand of God article: the 1986 quarterfinal v England, the mesmeric second goal followed four minutes later",
+  "v": "ok"
+ },
+ "legends:10": {
+  "at": "2026-10-17T00:21:33Z",
+  "h": "5faa63ed8d",
+  "note": "fifa.com 100 great moments (80): Banks saved Pelé’s header in 1970, Pelé was sure it had gone in",
+  "v": "ok"
+ },
+ "legends:12": {
+  "at": "2026-10-17T00:21:33Z",
+  "h": "04f12cbda3",
+  "note": "fifa.com 100 great moments (13): Modrić won the 2018 Golden Ball, Croatia reached the final",
+  "v": "ok"
+ },
+ "legends:13": {
+  "at": "2026-10-17T00:21:33Z",
+  "h": "654f64dc2a",
+  "note": "fifa.com Cahill celebrations page: shadow-boxing the corner post, Australia’s all-time record scorer. The 50 goals are on inside.fifa.com/tournaments/mens/worldcup/2018russia/news/cahill-announces-retirement-from-socceroos",
+  "v": "ok"
+ },
+ "legends:14": {
+  "at": "2026-10-17T00:21:33Z",
+  "h": "a598bb68c9",
+  "note": "fifa.com Baresi obituary: whole career at AC Milan 1977–1997, 719 appearances, Milan retired his No. 6",
+  "v": "ok"
+ },
+ "legends:15": {
+  "at": "2026-10-17T00:21:33Z",
+  "h": "e9c37eb916",
+  "note": "fifa.com Zagallo, Beckenbauer, Deschamps page: Zagallo first to win as player (1958, 1962) and coach (1970), Deschamps third. Spain’s 2026 win added no one",
+  "v": "ok"
+ },
+ "legends:16": {
+  "at": "2026-10-17T00:21:33Z",
+  "h": "4fa0a0ccde",
+  "note": "fifa.com Klose four medals page: silver 2002, bronze 2006, bronze 2010, gold 2014",
+  "v": "ok"
+ },
+ "legends:17": {
+  "at": "2026-10-17T00:21:33Z",
+  "h": "5bdeb9fc2d",
+  "note": "fifa.com 100 great moments (66): Hurst’s 120th-minute strike completed the hat trick in the 1966 final. Page predates Mbappé’s 2022 final hat trick, so ‘first’ is the right word",
+  "v": "ok"
+ },
+ "legends:18": {
+  "at": "2026-10-17T00:21:33Z",
+  "h": "e352251811",
+  "note": "fifa.com Prinz countdown page: in 2003 she was the first to take both the Golden Boot and Golden Ball outright, Germany won the title",
+  "v": "ok"
+ },
+ "legends:20": {
+  "at": "2026-10-17T00:21:33Z",
+  "h": "b6023065b6",
+  "note": "fifa.com Mia Hamm interview: debut aged just 15, won two Women’s World Cups",
+  "v": "ok"
+ },
+ "legends:21": {
+  "at": "2026-10-17T00:21:33Z",
+  "h": "c5fc16ff74",
+  "note": "fifa.com Alex Morgan retires (4 Sep 2024): 123 goals for the USA, World Cup winner 2015 and 2019",
+  "v": "ok"
+ },
+ "legends:23": {
+  "at": "2026-10-17T00:21:33Z",
+  "h": "d5fb065226",
+  "note": "inside.fifa.com Wambach header page: 122nd-minute header v Brazil in the 2011 quarterfinal. 2015 title on inside.fifa.com/en/news/when-wambach-was-on-top-of-the-world (long-awaited winner’s medal by Dec 2015)",
+  "v": "ok"
+ },
+ "legends:24": {
+  "at": "2026-10-17T00:21:33Z",
+  "h": "efd96be071",
+  "note": "fifa.com Akers interview: scored the US women’s first-ever goal in 1985, claimed the first Golden Boot at the 1991 World Cup",
+  "v": "ok"
+ },
+ "legends:26": {
+  "at": "2026-10-17T00:21:33Z",
+  "h": "3c97fe6ba6",
+  "note": "fifa.com Cafu three finals page: first man to play in three World Cup finals, captained Brazil in 2002. Messi has since played a third final (2026) but ‘first’ still holds and Messi is not a wrong answer here",
+  "v": "ok"
+ },
+ "legends:27": {
+  "at": "2026-10-17T00:21:33Z",
+  "h": "0f7c1dfa63",
+  "note": "fifa.com top scorers in one edition (18 Jul 2026): Fontaine 13 in 1958 still first, Mbappé’s 10 in 2026 is joint third",
+  "v": "ok"
+ },
+ "legends:28": {
+  "at": "2026-10-17T00:21:33Z",
+  "h": "99fb3bfad7",
+  "note": "fifa.com Women’s World Cup all-time scorers: Marta 17 across six tournaments 2003–2023. No Women’s World Cup since 2023",
+  "v": "ok"
+ },
+ "legends:30": {
+  "at": "2026-10-17T00:21:33Z",
+  "h": "081cbba555",
+  "note": "fifa.com Milla record page: 42 when he scored in 1994. Still first on fifa.com oldest goalscorers list updated 19 Jul 2026 (…/canadamexicousa2026/articles/oldest-goalscorers-history-all-time), Ronaldo second at 41",
+  "v": "ok"
+ },
+ "legends:31": {
+  "at": "2026-10-17T00:21:33Z",
+  "h": "79067a9be3",
+  "note": "fifa.com Zoff page: 40 years 133 days in 1982, oldest winner. Spain won 2026 and no Spain player is on fifa.com’s oldest-players-at-2026 list (all 39+ listed), so the record stands",
+  "v": "ok"
+ },
+ "legends:32": {
+  "at": "2026-10-17T00:21:33Z",
+  "h": "adda8f94d8",
+  "note": "fifa.com El Hadary page: 45 years 161 days at Russia 2018, oldest player ever. fifa.com eight-players-aged-40-or-over (2026) confirms no one surpasses him",
+  "v": "ok"
+ },
+ "legends:33": {
+  "at": "2026-10-17T00:21:33Z",
+  "h": "1dcebe5682",
+  "note": "fifa.com Charlton obituary: 106 appearances and 49 goals for England, 1966 World Cup winner",
+  "v": "ok"
+ },
+ "legends:35": {
+  "at": "2026-10-17T00:21:33Z",
+  "h": "02e8eff24c",
+  "note": "fifa.com all-time scorers (19 Jul 2026): Mbappé 22, ten of them at the 2026 World Cup",
+  "v": "ok"
+ },
+ "legends:36": {
+  "at": "2026-10-17T00:21:33Z",
+  "h": "47d7f1527c",
+  "note": "src shows Milla, 38, scored four at Italy 1990 as Cameroon reached the quarter-finals",
+  "v": "ok"
+ },
+ "legends:37": {
+  "at": "2026-10-17T00:21:24Z",
+  "h": "7b82c9e193",
+  "note": "src shows Sawa led Japan to the 2011 title and won the Golden Ball and Golden Boot",
+  "v": "ok"
+ },
+ "legends:38": {
+  "at": "2026-10-17T00:21:24Z",
+  "h": "854c2a9f62",
+  "note": "src shows Sun Wen joint winner of FIFA’s Women’s Player of the Century and 1999 Golden Ball",
+  "v": "ok"
+ },
+ "legends:39": {
+  "at": "2026-10-17T00:21:24Z",
+  "h": "ba3801a8ac",
+  "note": "src lists Sinclair at six World Cups, 2003 to 2023 (no Women’s World Cup since 2023)",
+  "v": "ok"
+ },
+ "legends:4": {
+  "at": "2026-10-17T00:21:33Z",
+  "h": "d5b4749025",
+  "note": "fifa.com 100 great moments (3): Zidane’s headed double in the 1998 final, France beat Brazil, heading not his forte",
+  "v": "ok"
+ },
+ "legends:40": {
+  "at": "2026-10-17T00:21:24Z",
+  "h": "15a01236ac",
+  "note": "src (June 2026) shows Cha back in the Korea Republic shirt at 33 for Mexico 1986 after his Bundesliga move, with UEFA Cups at Frankfurt and Leverkusen",
+  "v": "ok"
+ },
+ "legends:41": {
+  "at": "2026-10-17T00:21:24Z",
+  "h": "916a72825f",
+  "note": "src shows Valderrama the standard-bearer of a Colombia side at three World Cups in a row (1990, 1994, 1998) and his blond curls",
+  "v": "ok"
+ },
+ "legends:42": {
+  "at": "2026-10-17T00:21:33Z",
+  "h": "33c8f0349b",
+  "note": "src shows Hungary beat England 6–3 at Wembley in 1953 with Puskás scoring twice, 35 shots to five",
+  "v": "ok"
+ },
+ "legends:43": {
+  "at": "2026-10-17T00:21:33Z",
+  "h": "93a814578c",
+  "note": "src says Total Football was perfected by the Ajax and Netherlands teams of the 1970s, no fixed positions",
+  "v": "ok"
+ },
+ "legends:44": {
+  "at": "2026-10-17T00:21:24Z",
+  "h": "6801bfaf40",
+  "note": "src calls Drogba spearhead of the golden generation who played at three World Cups",
+  "v": "ok"
+ },
+ "legends:45": {
+  "at": "2026-10-17T00:21:33Z",
+  "h": "0e90f06b0d",
+  "note": "src shows Chilavert of Paraguay scored more than 50 career goals from free kicks and penalties",
+  "v": "ok"
+ },
+ "legends:46": {
+  "at": "2026-10-17T00:21:24Z",
+  "h": "c10dd26b8c",
+  "note": "src shows Daei the first man to 100 international goals, on 17 November 2004",
+  "v": "ok"
+ },
+ "legends:47": {
+  "at": "2026-10-17T00:21:24Z",
+  "h": "81b6bcd202",
+  "note": "src shows Sukur scored after 11 seconds in the 2002 third-place game, a 3–2 win for bronze",
+  "v": "ok"
+ },
+ "legends:48": {
+  "at": "2026-10-17T00:21:24Z",
+  "h": "ecb8f44c68",
+  "note": "src shows Hagi dubbed the Maradona of the Carpathians and starring for Romania at USA 94",
+  "v": "ok"
+ },
+ "legends:49": {
+  "at": "2026-10-17T00:21:24Z",
+  "h": "8b118c2a8f",
+  "note": "src shows Eusebio’s four goals as Portugal came back from 3–0 down to beat Korea DPR 5–3 in 1966",
+  "v": "ok"
+ },
+ "legends:5": {
+  "at": "2026-10-17T00:21:33Z",
+  "h": "966fbe361e",
+  "note": "fifa.com 100 great moments (6): minute 116 of the 2010 final, avoiding a penalty shootout",
+  "v": "ok"
+ },
+ "legends:50": {
+  "at": "2026-10-17T00:21:24Z",
+  "h": "6fe90c3fdc",
+  "note": "src shows Pelé spent most of his career at Santos, then New York Cosmos 1975 to 1977",
+  "v": "ok"
+ },
+ "legends:51": {
+  "at": "2026-10-17T00:21:24Z",
+  "fix": {
+   "src": "https://inside.fifa.com/fr/news/panthere-noire-montre-route-portugal-2926976"
+  },
+  "h": "f1d73e4df6",
+  "note": "src (Pelé and Eusebio in Boston) only calls him a Benfica icon. inside.fifa.com shows Benfica beat Real Madrid 5–3 in the 1962 European Cup final with Eusebio scoring twice",
+  "v": "fix"
+ },
+ "legends:52": {
+  "at": "2026-10-17T00:21:24Z",
+  "h": "c0fa1ff364",
+  "note": "src shows Ajax won three straight European Cups 1971 to 1973 with Cruyff, the Amsterdam club. Cruyff called an Amsterdammer at https://www.fifa.com/en/tournaments/mens/worldcup/articles/johan-cruyff-tribute-netherlands-total-football-ajax-barcelona",
+  "v": "ok"
+ },
+ "legends:53": {
+  "at": "2026-10-17T00:21:24Z",
+  "h": "5cfa33bc37",
+  "note": "src shows Beckenbauer’s Bayern debut at 18, interim coach in 1994 and 1996, president from 1994",
+  "v": "ok"
+ },
+ "legends:54": {
+  "at": "2026-10-17T00:21:24Z",
+  "h": "b831ea47b9",
+  "note": "src shows Yashin gave 20 years to his only club, Dynamo Moscow, and saved 150-plus penalties",
+  "v": "ok"
+ },
+ "legends:55": {
+  "at": "2026-10-17T00:21:24Z",
+  "h": "4080a7c154",
+  "note": "src shows Paolo Maldini’s Milan debut at 16 on 20 January 1985, and Cesare a former Milan player",
+  "v": "ok"
+ },
+ "legends:56": {
+  "at": "2026-10-17T00:21:24Z",
+  "h": "e3a5e097e7",
+  "note": "src shows Zico fired Flamengo to a Copa Libertadores and the 1981 Intercontinental Cup",
+  "v": "ok"
+ },
+ "legends:57": {
+  "at": "2026-10-17T00:21:24Z",
+  "h": "dacff647ff",
+  "note": "src shows Drogba’s Chelsea beat Bayern in Munich for the 2011–12 Champions League",
+  "v": "ok"
+ },
+ "legends:58": {
+  "at": "2026-10-17T00:21:33Z",
+  "h": "149ce39565",
+  "note": "src calls Fontaine the Stade de Reims forward at Sweden 1958",
+  "v": "ok"
+ },
+ "legends:59": {
+  "at": "2026-10-17T00:21:33Z",
+  "h": "e43987dda2",
+  "note": "src (fifa.com/fr) shows Sinclair’s NWSL titles with Portland in 2013, 2017 and 2022, 12 seasons, retiring after 2024",
+  "v": "ok"
+ },
+ "legends:6": {
+  "at": "2026-10-17T00:21:33Z",
+  "h": "67efd833de",
+  "note": "fifa.com Cruyff tributes page: Jan Olsson on being the victim of the Cruyff Turn at Germany 1974",
+  "v": "ok"
+ },
+ "legends:60": {
+  "at": "2026-10-17T00:21:24Z",
+  "h": "8c0d2fb90c",
+  "note": "src shows Putellas (2021, 2022) and Bonmatí (2023, 2024) won The Best as Barcelona players",
+  "v": "ok"
+ },
+ "legends:61": {
+  "at": "2026-10-17T00:21:24Z",
+  "h": "7a288daa04",
+  "note": "src shows Real Madrid paid a world-record fee for Zidane from Juventus in 2001",
+  "v": "ok"
+ },
+ "legends:62": {
+  "at": "2026-10-17T00:21:33Z",
+  "h": "67081d6172",
+  "note": "src shows Pelé known as O Rei (The King)",
+  "v": "ok"
+ },
+ "legends:63": {
+  "at": "2026-10-17T00:21:24Z",
+  "h": "a2b92b5c1c",
+  "note": "src shows Beckenbauer nicknamed Der Kaiser. English form The Emperor at https://www.fifa.com/en/tournaments/mens/worldcup/articles/italy-germany-mexico-1970",
+  "v": "ok"
+ },
+ "legends:64": {
+  "at": "2026-10-17T00:21:33Z",
+  "h": "e2d2fdd120",
+  "note": "src shows the Black Spider nickname and that the black kit was in fact dark blue",
+  "v": "ok"
+ },
+ "legends:65": {
+  "at": "2026-10-17T00:21:33Z",
+  "h": "f0d9ee9ef1",
+  "note": "src shows Eusebio, The Black Panther, scored twice in Portugal’s 3–1 win over Brazil in 1966",
+  "v": "ok"
+ },
+ "legends:66": {
+  "at": "2026-10-17T00:21:33Z",
+  "h": "71af13f545",
+  "note": "src shows Baggio called Il Divin Codino (the Divine Ponytail)",
+  "v": "ok"
+ },
+ "legends:67": {
+  "at": "2026-10-17T00:21:33Z",
+  "h": "a3c8662752",
+  "note": "src shows O Fenômeno’s two second-half goals won the 2002 final. English form The Phenomenon at https://www.fifa.com/en/archive/ronaldo",
+  "v": "ok"
+ },
+ "legends:68": {
+  "at": "2026-10-17T00:21:33Z",
+  "h": "20211b7f67",
+  "note": "src (April 2025) shows Miura known as King Kazu and still playing at 58",
+  "v": "ok"
+ },
+ "legends:69": {
+  "at": "2026-10-17T00:21:33Z",
+  "h": "3c5964b58e",
+  "note": "src shows Garrincha called Brazil’s Little Bird and the star of the 1962 win",
+  "v": "ok"
+ },
+ "legends:7": {
+  "at": "2026-10-17T00:21:33Z",
+  "h": "1cb2664c31",
+  "note": "fifa.com Magical Magyars article: the FIFA Puskás Award was established in 2009 to honor the year’s finest goal, Puskás ‘The Galloping Major’",
+  "v": "ok"
+ },
+ "legends:70": {
+  "at": "2026-10-17T00:21:24Z",
+  "h": "6ffd650693",
+  "note": "src shows Gerd Muller, Der Bomber, scored the winner in the 1974 final",
+  "v": "ok"
+ },
+ "legends:71": {
+  "at": "2026-10-17T00:21:33Z",
+  "h": "e871dabb2c",
+  "note": "src shows La Pulga Atomica. English form The Atomic Flea at https://www.fifa.com/en/tournaments/mens/worldcup/articles/lionel-messi-performance-argentina-switzerland",
+  "v": "ok"
+ },
+ "legends:9": {
+  "at": "2026-10-17T00:21:33Z",
+  "h": "cdd52624d0",
+  "note": "fifa.com Kahn Golden Ball record page: only goalkeeper to win the Golden Ball, at the 2002 World Cup with Germany. First stays true whatever 2026 brought",
   "v": "ok"
  },
  "ligamx:0": {
@@ -4424,15 +5096,15 @@
   "v": "ok"
  },
  "lingo-more:14": {
-  "at": "2026-10-16T23:56:49Z",
-  "h": "1f530d796b",
-  "note": "dictionary.com technical area, Collins British: soccer, area at the side of the pitch to which managers, trainers, coaches are restricted",
+  "at": "2026-10-17T00:16:36Z",
+  "h": "0be3e89907",
+  "note": "dictionary.com/browse/technical-area Collins (soccer): the area at the side of the pitch to which managers, trainers, coaches, etc are restricted during play",
   "v": "ok"
  },
  "lingo-more:15": {
-  "at": "2026-10-16T23:56:49Z",
-  "h": "6e42c90243",
-  "note": "MW midfield: the portion of a playing field midway between goals",
+  "at": "2026-10-17T00:16:36Z",
+  "h": "7799a2084f",
+  "note": "merriam-webster.com/dictionary/midfield sense 1: the portion of a playing field that is midway between goals",
   "v": "ok"
  },
  "lingo-more:16": {
@@ -4523,9 +5195,9 @@
   "v": "fix"
  },
  "lingo-more:28": {
-  "at": "2026-10-16T23:56:49Z",
-  "h": "0659dcc4dd",
-  "note": "MW throw-in: a throw made from the touchline in soccer to put the ball back in play",
+  "at": "2026-10-17T00:16:36Z",
+  "h": "67926b6183",
+  "note": "merriam-webster.com/dictionary/throw-in sense 1a: a throw made from the touchline in soccer to put the ball back in play after it has gone into touch",
   "v": "ok"
  },
  "lingo-more:29": {
@@ -4643,15 +5315,15 @@
   "v": "ok"
  },
  "lingo-more:46": {
-  "at": "2026-10-16T23:56:49Z",
-  "h": "64c83e3540",
-  "note": "Dictionary.com silver goal, Collins British (soccer): a goal scored in a full half of extra time that counts as the winner if it is the only goal in that half",
+  "at": "2026-10-17T00:16:36Z",
+  "h": "1c0cccc319",
+  "note": "dictionary.com/browse/silver-goal Collins (soccer): a goal scored in a full half of extra time that counts as the winner if it is the only goal in that half. Sentence and means match that rule. Merriam-Webster has no entry",
   "v": "ok"
  },
  "lingo-more:47": {
-  "at": "2026-10-16T23:56:49Z",
-  "h": "eb85c8ab6c",
-  "note": "Dictionary.com away goal, Collins British: a goal scored by a team playing away from home, counting for more than home goals in certain competitions",
+  "at": "2026-10-17T00:16:36Z",
+  "h": "35a10336cd",
+  "note": "dictionary.com/browse/away-goal Collins: a goal scored by a team playing away from its home ground, and away goals count for more than home goals in certain competitions",
   "v": "ok"
  },
  "lingo-more:48": {
@@ -4841,6 +5513,12 @@
   "at": "2026-10-17T00:11:44Z",
   "h": "0a19e6d643",
   "note": "src: Wondolowski passed Donovan in 2019 with the only four-goal game of his career that day",
+  "v": "ok"
+ },
+ "mls:16": {
+  "at": "2026-10-17T00:19:50Z",
+  "h": "ea3c106964",
+  "note": "src shows Vela’s MLS single-season record 34 goals for LAFC in 2019. MVP from mlssoccer.com/news/lafc-s-carlos-vela-named-2019-landon-donovan-mls-mvp. Still the record today: mlssoccer.com/stats/players shows 2025 leader Messi 29 and 2026 leader Messi 23. No wrong answer fits",
   "v": "ok"
  },
  "mls:17": {
@@ -5116,6 +5794,12 @@
   "note": "src: Seattle beat Inter Miami 3–0 in the final at Lumen Field before a Leagues Cup and club-record 69,314",
   "v": "ok"
  },
+ "mls:58": {
+  "at": "2026-10-17T00:19:50Z",
+  "h": "dfecd61a76",
+  "note": "src shows Sounders beat Pumas UNAM 3–0, 5–2 on aggregate, to win the 2022 Concacaf Champions League. Rename to Champions Cup from 2024 at mlssoccer.com/news/concacaf-rebrands-premier-regional-competition-increases-prize-money",
+  "v": "ok"
+ },
  "mls:59": {
   "at": "2026-10-17T00:11:44Z",
   "h": "22fd928fcb",
@@ -5258,6 +5942,12 @@
   "note": "bundesliga.com Darmstadt guide: the Lilies, named for the flower on the city and club’s crests",
   "v": "ok"
  },
+ "nicknames:24": {
+  "at": "2026-10-17T00:19:58Z",
+  "h": "1abc5527d3",
+  "note": "src calls Fürth the Clover Leaves and three-time champions of Germany, with the pre–World War I title followed by 1926 and 1929. Minor: Fürth play in green and white, but the page never calls them Green-Whites, so that wrong answer stands",
+  "v": "ok"
+ },
  "nicknames:25": {
   "at": "2026-10-17T00:11:28Z",
   "h": "8c5542c0dd",
@@ -5292,6 +5982,24 @@
   "at": "2026-10-17T00:11:28Z",
   "h": "3c55acff45",
   "note": "premierleague.com club names history page: students from Borough Road College shouted “Buck up Bs”, the media heard bees",
+  "v": "ok"
+ },
+ "nicknames:30": {
+  "at": "2026-10-17T00:19:50Z",
+  "h": "6814703e52",
+  "note": "src: red devil holding a pitchfork on the crest, popularised by Busby in the 1960s with the Red Devils nickname. Wrong answers checked: PL article shows Brighton seagull, Brentford bee, Palace eagle, Hull tiger head. Crests served by laliga.com and bundesliga.com viewed: Osasuna lion, Villarreal stripes, Rayo lightning bolt, Betis crown, Celta cross, Deportivo crown and cross, Elche figure and tower, Cologne goat, Frankfurt eagle, Nuremberg 1. FCN lettering. No red devil",
+  "v": "ok"
+ },
+ "nicknames:31": {
+  "at": "2026-10-17T00:19:50Z",
+  "h": "e0ecee8d00",
+  "note": "src: crest includes only the club name and a white seagull in mid-flight, seagull on the crest since 1977 except 2001/02. Same crest check as nicknames:30: no other listed club has a seagull (Palace and Frankfurt have eagles)",
+  "v": "ok"
+ },
+ "nicknames:32": {
+  "at": "2026-10-17T00:19:50Z",
+  "h": "96b4c7daa9",
+  "note": "src: centrepiece is a buff-tailed bumblebee. Same crest check as nicknames:30: no other listed club has a bee",
   "v": "ok"
  },
  "nicknames:33": {
@@ -5361,6 +6069,12 @@
   "at": "2026-10-17T00:11:28Z",
   "h": "28a37cf6b2",
   "note": "laliga.com: rojillos from red shirts in the colors of the Navarre flag, club formed in Pamplona in 1920. No other deck answer fits the blank",
+  "v": "ok"
+ },
+ "nicknames:43": {
+  "at": "2026-10-17T00:19:50Z",
+  "h": "81e18b9b46",
+  "note": "src: known as Der Club, eight-time champions at the Bundesliga’s creation, then won 1967/68, so nine. No wrong answer has nine German titles or that nickname",
   "v": "ok"
  },
  "nicknames:44": {
@@ -5457,6 +6171,12 @@
   "at": "2026-10-17T00:11:40Z",
   "h": "0bb49d3beb",
   "note": "premierleague.com club names history page: Cherries either from the red striped shirts or the cherry trees on the Cooper-Dean estate next to Dean Court",
+  "v": "ok"
+ },
+ "nicknames:60": {
+  "at": "2026-10-17T00:19:50Z",
+  "h": "9a1308fb02",
+  "note": "src: El Carbayón is the augmentative of the Asturian word for oak, an old oak on Uría Street cut down in 1879",
   "v": "ok"
  },
  "nicknames:61": {
@@ -6060,9 +6780,9 @@
   "v": "ok"
  },
  "parents:29": {
-  "at": "2026-10-17T00:14:17Z",
+  "at": "2026-10-17T00:18:58Z",
   "h": "f0e6bd9068",
-  "note": "merriam-webster.com homie: a close friend, homeboy. home skillet is already grouped out of this card, and the drawable plurals peeps and posse don’t fit one assistant coach",
+  "note": "M-W homie, a variant of homey noun: homeboy, and M-W homeboy (https://www.merriam-webster.com/dictionary/homeboy) slang: broadly a male friend. No drawable wrong answer fits",
   "v": "ok"
  },
  "parents:3": {
@@ -6240,9 +6960,9 @@
   "v": "ok"
  },
  "rules:1": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "b49b3f6347",
-  "note": "theifab.com Law 3 3.1, 2026/27: a match may not start or continue if either team has fewer than seven players",
+  "at": "2026-10-17T00:18:18Z",
+  "h": "1c295535ae",
+  "note": "theifab.com Law 3.1 (a match may not start or continue if either team has fewer than seven players), Law 3.6 (a player sent off after kick-off cannot be replaced)",
   "v": "ok"
  },
  "rules:10": {
@@ -6276,15 +6996,15 @@
   "v": "ok"
  },
  "rules:15": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "aeb9c7e743",
-  "note": "theifab.com Law 13 13.2, 2026/27: opponents at least 9.15 m (10 yds) from the ball, Law 1 center circle radius 9.15 m (10 yds)",
+  "at": "2026-10-17T00:18:18Z",
+  "h": "fa2626c1c5",
+  "note": "theifab.com Law 13.2 (opponents at least 9.15 m (10 yds) from the ball) and Law 1.2 (centre circle radius 9.15 m (10 yds))",
   "v": "ok"
  },
  "rules:16": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "cfd913a9d2",
-  "note": "theifab.com Law 1 1.6, 2026/27: penalty mark 11 m (12 yds) from the midpoint between the goalposts",
+  "at": "2026-10-17T00:18:18Z",
+  "h": "16421d0ad4",
+  "note": "theifab.com Law 1.6 (penalty mark 11 m (12 yds) from the midpoint between the goalposts)",
   "v": "ok"
  },
  "rules:17": {
@@ -6300,9 +7020,9 @@
   "v": "ok"
  },
  "rules:19": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "8166a227fc",
-  "note": "theifab.com Law 1 1.11 (Goals), 2026/27: 7.32 m (8 yds) between the inside of the posts",
+  "at": "2026-10-17T00:18:18Z",
+  "h": "59f773bbe4",
+  "note": "theifab.com Law 1.10 (distance between the inside of the posts is 7.32 m (8 yds))",
   "v": "ok"
  },
  "rules:2": {
@@ -6372,9 +7092,9 @@
   "v": "ok"
  },
  "rules:3": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "cb1b053a05",
-  "note": "theifab.com Law 3 3.2, 2026/27: top division and senior A teams with five subs get a maximum of three substitution opportunities plus half-time, multiple subs in one stoppage count as one. Still true today",
+  "at": "2026-10-17T00:18:18Z",
+  "h": "031fc6b49c",
+  "note": "theifab.com Law 3.2 2026/27 (top division first teams and senior A internationals with five subs: maximum of three substitution opportunities plus half-time, multiple subs in one stoppage count as one). Still current",
   "v": "ok"
  },
  "rules:30": {
@@ -6426,15 +7146,15 @@
   "v": "ok"
  },
  "rules:38": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "279fb4b9d4",
-  "note": "Law 12.1 (2026/27): handball offence applies except for the goalkeeper within their penalty area, and outside it the keeper has the same restrictions as any player",
+  "at": "2026-10-17T00:18:18Z",
+  "h": "fe35ccb729",
+  "note": "theifab.com Law 12.1 (handball offence except for the goalkeeper within their penalty area, the goalkeeper has the same restrictions as any other player outside the penalty area)",
   "v": "ok"
  },
  "rules:39": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "1661f1eca2",
-  "note": "Law 12.4 (2026/27): caution for attempting to deceive the referee by feigning injury or pretending to have been fouled (simulation)",
+  "at": "2026-10-17T00:18:18Z",
+  "h": "773080794e",
+  "note": "theifab.com Law 12.4 (caution for attempting to deceive the referee, e.g. by feigning injury or pretending to have been fouled (simulation))",
   "v": "ok"
  },
  "rules:4": {
@@ -6444,9 +7164,9 @@
   "v": "ok"
  },
  "rules:40": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "ba4ba0a321",
-  "note": "Law 12.4 (2026/27): dissent by word or action is a cautionable offense",
+  "at": "2026-10-17T00:18:18Z",
+  "h": "bb5b57c964",
+  "note": "theifab.com Law 12.4 (caution for dissent by word or action) and glossary (dissent: public protest or disagreement with a match official’s decision, punishable by a caution)",
   "v": "ok"
  },
  "rules:41": {
@@ -6534,15 +7254,15 @@
   "v": "ok"
  },
  "rules:54": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "d164bc1333",
-  "note": "Law 4.1 (2026/27): accessories are permitted if not dangerous and safely and securely covered, dangerous items must be removed. Law 4 FAQs allow earrings and a non-dangerous necklace if securely covered. The 2025/26 page (theifab.com/laws/2025-26/the-players-equipment/) still said all jewellery is forbidden, so the change is 2026. Still current today. Note the Law itself now says accessories, not jewellery",
+  "at": "2026-10-17T00:18:18Z",
+  "h": "c1a42ff538",
+  "note": "theifab.com Law 4.1 2026/27 (accessories permitted if not dangerous and safely and securely covered, dangerous items must be removed, the old jewellery ban is deleted text) and Law 4 FAQs on earrings and a necklace. Still current",
   "v": "ok"
  },
  "rules:55": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "6a6c3cf1a6",
-  "note": "Law 3.10 (2026/27): each team must have a captain on the field of play who wears an identifying armband",
+  "at": "2026-10-17T00:18:44Z",
+  "h": "f3abd15244",
+  "note": "theifab.com Law 3.10 (each team must have a captain on the field of play who wears an identifying armband)",
   "v": "ok"
  },
  "rules:56": {
@@ -6570,9 +7290,9 @@
   "v": "ok"
  },
  "rules:6": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "9f69371acc",
-  "note": "theifab.com Law 1 1.9 (The technical area), 2026/27: only one person at a time is authorised to convey tactical instructions, number of occupants defined by competition rules",
+  "at": "2026-10-17T00:18:18Z",
+  "h": "b1d1676738",
+  "note": "theifab.com Law 1.9 (only one person at a time is authorised to convey tactical instructions from the technical area, the number of occupants and who they are follow competition rules)",
   "v": "ok"
  },
  "rules:60": {
@@ -6582,10 +7302,13 @@
   "v": "ok"
  },
  "rules:61": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "d058c7641f",
-  "note": "Law 7.3 (2026/27): allowance is made in each half for all playing time lost, and the fourth official indicates the minimum additional time",
-  "v": "ok"
+  "at": "2026-10-17T00:18:18Z",
+  "fix": {
+   "means": "The fourth official shows the minimum"
+  },
+  "h": "82544914a3",
+  "note": "theifab.com Law 7.3 and glossary support the sentence, but the phrase stoppage time appears nowhere on theifab.com (Law 7, glossary, site search). Law 7.3 says the fourth official indicates the minimum additional time decided by the referee",
+  "v": "fix"
  },
  "rules:62": {
   "at": "2026-10-16T23:59:06Z",
@@ -6624,9 +7347,9 @@
   "v": "ok"
  },
  "seriea:0": {
-  "at": "2026-10-17T00:03:32Z",
-  "h": "f5139dd43d",
-  "note": "legaseriea.it Juventus palmares lists 36 Serie A titles, the last nine 2011–12 to 2019–20 (titles 28 to 36)",
+  "at": "2026-10-17T00:20:23Z",
+  "h": "20fc018aef",
+  "note": "Juventus palmares lists 2011-12 to 2019-20 in a row. Means: legaseriea.it/serie-a/news/buon-compleanno-antonio-conte-x2055 (Conte won the scudetto with Juventus), massimiliano-allegri-e-il-nuovo-allenatore-del-napoli (five straight scudetti with Juve 2014–2019) and la-panchina-dell-atalanta-e-di-maurizio-sarri (champion of Italy with Juventus the season after Chelsea)",
   "v": "ok"
  },
  "seriea:1": {
@@ -6684,9 +7407,9 @@
   "v": "ok"
  },
  "seriea:17": {
-  "at": "2026-10-17T00:03:32Z",
-  "h": "c9c22ce6a0",
-  "note": "legaseriea.it Buffon birthday page (Jan 2026): 657 Serie A games, the most ever, and a record 176 Italy caps",
+  "at": "2026-10-17T00:20:23Z",
+  "h": "e00738f925",
+  "note": "Buffon birthday article (28 Jan 2026): 657 Serie A appearances, the record, with Parma and Juventus in Italy, and 176 Italy caps, the record",
   "v": "ok"
  },
  "seriea:18": {
@@ -6702,9 +7425,9 @@
   "v": "ok"
  },
  "seriea:2": {
-  "at": "2026-10-17T00:03:32Z",
-  "h": "d7d0e3e5c7",
-  "note": "legaseriea.it Buon compleanno Inter: unico club ad aver disputato tutti i campionati di Serie A, three Champions League in the palmarès",
+  "at": "2026-10-17T00:20:23Z",
+  "h": "2f1a6d5e25",
+  "note": "Inter birthday article (9 Mar 2026): the only club to have played every Serie A season, three Champions Leagues",
   "v": "ok"
  },
  "seriea:20": {
@@ -6732,9 +7455,9 @@
   "v": "ok"
  },
  "seriea:24": {
-  "at": "2026-10-17T00:03:32Z",
-  "h": "50ca3ce447",
-  "note": "legaseriea.it 44 anni fa seconda stella: Baggio, the Divin Codino, retired in 2004 with 205 Serie A goals",
+  "at": "2026-10-17T00:20:23Z",
+  "h": "89e2477020",
+  "note": "44-anni-fa article: 2004, Baggio retired after Milan-Brescia at San Siro, 452 Serie A games and 205 goals, called the Divin Codino",
   "v": "ok"
  },
  "seriea:25": {
@@ -6774,15 +7497,15 @@
   "v": "ok"
  },
  "seriea:30": {
-  "at": "2026-10-17T00:03:32Z",
-  "h": "43e6b3ebfa",
-  "note": "legaseriea.it src (Feb 1 2026 Accadde oggi): Riva won the classifica marcatori three times with Cagliari, called Rombo di Tuono",
+  "at": "2026-10-17T00:20:23Z",
+  "h": "0f73f791c8",
+  "note": "Causio-Batistuta-Rossi article: Riva, Rombo di Tuono, played almost all his career at Cagliari and won the scoring title three times",
   "v": "ok"
  },
  "seriea:31": {
-  "at": "2026-10-17T00:03:32Z",
-  "h": "8ac2889d86",
-  "note": "legaseriea.it src (Oct 13 2026): Di Natale top scorer 2009/10 and 2010/11, sixth all-time with 209 Serie A goals",
+  "at": "2026-10-17T00:20:23Z",
+  "h": "a857e15aca",
+  "note": "Di Natale birthday article (13 Oct 2026): Udinese, top scorer 2009/10 and 2010/11, 209 goals, sixth all-time",
   "v": "ok"
  },
  "seriea:32": {
@@ -6834,9 +7557,9 @@
   "v": "ok"
  },
  "seriea:4": {
-  "at": "2026-10-17T00:03:32Z",
-  "h": "5127936065",
-  "note": "legaseriea.it Inter-Parma 2–0 on May 3, 2026 at San Siro gave Inter scudetto no. 21 (2025–26), Inter palmares https://www.legaseriea.it/team/inter/palmares lists 2025–26",
+  "at": "2026-10-17T00:20:23Z",
+  "h": "d71b4525c5",
+  "note": "Inter-Parma 2–0 article (3 May 2026): Inter clinched the 2025–26 title at San Siro (Meazza). Still reigning in Oct 2026",
   "v": "ok"
  },
  "seriea:40": {
@@ -6888,15 +7611,15 @@
   "v": "ok"
  },
  "seriea:48": {
-  "at": "2026-10-17T00:03:32Z",
-  "h": "861a2355db",
-  "note": "legaseriea.it src: New Balance Arena, Bergamo, built 1928, capacity 23,439 (checked Oct 2026)",
+  "at": "2026-10-17T00:20:23Z",
+  "h": "6da8dc59e8",
+  "note": "Atalanta club page: New Balance Arena, Bergamo, built 1928, capacity 23 439",
   "v": "ok"
  },
  "seriea:49": {
-  "at": "2026-10-17T00:03:32Z",
-  "h": "dca602bee5",
-  "note": "legaseriea.it src: the 2026–27 club index lists 20 clubs",
+  "at": "2026-10-17T00:20:23Z",
+  "h": "ea2aedb6af",
+  "note": "Team index lists 20 clubs for the current season",
   "v": "ok"
  },
  "seriea:5": {
@@ -6912,15 +7635,15 @@
   "v": "ok"
  },
  "seriea:51": {
-  "at": "2026-10-17T00:03:32Z",
-  "h": "d443d1e5ca",
-  "note": "legaseriea.it https://www.legaseriea.it/serie-a/news/inter-parma-primo-match-point-scudetto: Inter-Parma 2–0, scudetto n. 21",
+  "at": "2026-10-17T00:20:23Z",
+  "h": "1b37f059d5",
+  "note": "Inter-Parma 2–0 article (3 May 2026): scudetto number 21 for Inter",
   "v": "ok"
  },
  "seriea:52": {
-  "at": "2026-10-17T00:03:32Z",
-  "h": "3746f9f2c4",
-  "note": "legaseriea.it src palmares: 19 Serie A titles, latest 2021-22",
+  "at": "2026-10-17T00:20:23Z",
+  "h": "74bacf1df0",
+  "note": "Milan palmares: 19 Serie A titles, latest 2021-22",
   "v": "ok"
  },
  "seriea:53": {
@@ -6930,15 +7653,15 @@
   "v": "ok"
  },
  "seriea:54": {
-  "at": "2026-10-17T00:03:32Z",
-  "h": "10942e7223",
-  "note": "legaseriea.it src (Sep 29 2026): Piola still the top scorer of single-table Serie A with 274, played for Pro Vercelli, Lazio, Juventus and Novara",
+  "at": "2026-10-17T00:20:23Z",
+  "h": "8dd896a8be",
+  "note": "Shevchenko birthday article (29 Sep 2026): Piola still the top scorer in single-group Serie A with 274, played for Pro Vercelli, Lazio, Juventus and Novara",
   "v": "ok"
  },
  "seriea:55": {
-  "at": "2026-10-17T00:03:32Z",
-  "h": "00b67abc54",
-  "note": "legaseriea.it src (Jan 28 2026): Buffon holds the record of 974 minutes unbeaten in 2015/16",
+  "at": "2026-10-17T00:20:23Z",
+  "h": "83fba6d17a",
+  "note": "Buffon birthday article (28 Jan 2026): record 974 minutes unbeaten in the 2015/16 season",
   "v": "ok"
  },
  "seriea:56": {
@@ -7020,9 +7743,9 @@
   "v": "ok"
  },
  "soccer:13": {
-  "at": "2026-10-16T23:58:23Z",
-  "h": "2c8f248683",
-  "note": "dictionary.com keepy-uppy (Collins, soccer): keeping a ball off the ground by bouncing it on a foot, knee or head",
+  "at": "2026-10-17T00:16:36Z",
+  "h": "e47546f080",
+  "note": "dictionary.com/browse/keepy-uppy Collins (soccer): keeping a ball off the ground by bouncing it repeatedly on a foot, knee or head. Only keepy-uppy is an ongoing activity that can end, so the wrong answers stay false",
   "v": "ok"
  },
  "soccer:14": {
@@ -7032,18 +7755,10 @@
   "v": "ok"
  },
  "soccer:15": {
-  "at": "2026-10-16T23:58:23Z",
-  "fix": {
-   "groups": [
-    [
-     "corner kick",
-     "free kick"
-    ]
-   ]
-  },
-  "h": "3bdc9a0109",
-  "note": "MW corner kick defines it as “a free kick from a corner of a soccer field awarded … when a defender plays the ball out-of-bounds over the end line.” Sentence and means are right, but by the deck’s own source free kick (a listed wrong answer) is also true in this blank, so group them",
-  "v": "fix"
+  "at": "2026-10-17T00:16:36Z",
+  "h": "086edeffb3",
+  "note": "merriam-webster.com/dictionary/corner%20kick: a free kick from a corner of a soccer field awarded to an attacker when a defender plays the ball over the end line. For the desk: M-W calls a corner kick a kind of free kick, but its free kick entry (and dictionary.com Collins) ties free kicks to a foul or infraction, which this sentence lacks, so free kick stays false",
+  "v": "ok"
  },
  "soccer:16": {
   "at": "2026-10-16T23:58:23Z",
@@ -7058,21 +7773,24 @@
   "v": "ok"
  },
  "soccer:18": {
-  "at": "2026-10-16T23:58:23Z",
-  "h": "5dcba7aa0a",
-  "note": "merriam-webster.com yellow card: shown to a player who broke the rules and is being officially warned",
-  "v": "ok"
+  "at": "2026-10-17T00:16:36Z",
+  "fix": {
+   "means": "A caution, not a send-off"
+  },
+  "h": "e15b44d149",
+  "note": "Sentence backed by merriam-webster.com/dictionary/yellow%20card (player is being officially warned). The means line (two in one game mean a red card) is on neither M-W nor dictionary.com, whose yellow card and red card entries only say cautioned vs sent off (dictionary.com/browse/yellow-card, dictionary.com/browse/red-card)",
+  "v": "fix"
  },
  "soccer:19": {
-  "at": "2026-10-16T23:58:23Z",
-  "h": "fbbaa46eef",
-  "note": "merriam-webster.com offside: illegally in advance of the ball or puck",
+  "at": "2026-10-17T00:16:36Z",
+  "h": "aa3183a15d",
+  "note": "merriam-webster.com/dictionary/offside: illegally in advance of the ball or puck",
   "v": "ok"
  },
  "soccer:2": {
-  "at": "2026-10-16T23:58:23Z",
-  "h": "5dfa3dd9d8",
-  "note": "merriam-webster.com volley: a kick of the ball in soccer before it rebounds",
+  "at": "2026-10-17T00:16:49Z",
+  "h": "19f2ad9517",
+  "note": "merriam-webster.com/dictionary/volley sense 1a(2): a kick of the ball in soccer before it rebounds. Means line backed by dictionary.com/browse/half-volley (Collins: hit or kick a ball immediately after it bounces) and merriam-webster.com/dictionary/half%20volley (at the instant it rebounds)",
   "v": "ok"
  },
  "soccer:20": {
@@ -7150,10 +7868,13 @@
   "v": "ok"
  },
  "soccer:30": {
-  "at": "2026-10-16T23:58:23Z",
-  "h": "95c49a315c",
-  "note": "dictionary.com false nine (Soccer): a center forward who drops back into the midfield to receive the ball",
-  "v": "ok"
+  "at": "2026-10-17T00:16:36Z",
+  "fix": {
+   "means": "Drops back to pull defenders out"
+  },
+  "h": "39bd93b468",
+  "note": "dictionary.com/browse/false-nine: a center forward who drops back into the midfield to receive the ball, drawing the opposing defense out of position. The means line (named for the No. 9 shirt) is not on dictionary.com, and Merriam-Webster has no entry (404). New means uses the entry's own content",
+  "v": "fix"
  },
  "soccer:31": {
   "at": "2026-10-16T23:58:23Z",
@@ -7201,9 +7922,9 @@
   "v": "fix"
  },
  "soccer:38": {
-  "at": "2026-10-16T23:58:23Z",
-  "h": "cbe061b23b",
-  "note": "dictionary.com assist (Collins noun, sport): a pass or other action by a player which enables another player to score a goal",
+  "at": "2026-10-17T00:16:49Z",
+  "h": "6c42550125",
+  "note": "dictionary.com/browse/assist Collins noun (sport): a pass or other action by a player which enables another player to score a goal",
   "v": "ok"
  },
  "soccer:39": {
@@ -7219,15 +7940,18 @@
   "v": "ok"
  },
  "soccer:40": {
-  "at": "2026-10-16T23:58:23Z",
-  "h": "8aa7454f28",
-  "note": "merriam-webster.com sudden death: extra play to break a tie in which the first to score wins",
-  "v": "ok"
+  "at": "2026-10-17T00:16:36Z",
+  "fix": {
+   "means": "Extra play to break a tie"
+  },
+  "h": "92bcd74aed",
+  "note": "Sentence backed by merriam-webster.com/dictionary/sudden%20death sense 2: extra play to break a tie in which the first to score or gain the lead wins. The means line (tied shoot-outs end this way too) is unsupported: M-W shoot-out, dictionary.com shootout and dictionary.com penalty-shoot-out never mention sudden death",
+  "v": "fix"
  },
  "soccer:41": {
-  "at": "2026-10-16T23:58:23Z",
-  "h": "ee71028727",
-  "note": "dictionary.com golden goal (Collins, soccer): the first goal scored in extra time, which wins the match",
+  "at": "2026-10-17T00:16:36Z",
+  "h": "cc0c1c04ef",
+  "note": "dictionary.com/browse/golden-goal Collins (soccer): the first goal scored in extra time, which wins the match for the side scoring it",
   "v": "ok"
  },
  "soccer:42": {
@@ -7285,9 +8009,9 @@
   "v": "ok"
  },
  "soccer:50": {
-  "at": "2026-10-16T23:58:23Z",
-  "h": "27613b29a6",
-  "note": "merriam-webster.com clinical: done or performed with excellence and precision",
+  "at": "2026-10-17T00:16:36Z",
+  "h": "38021938b5",
+  "note": "merriam-webster.com/dictionary/clinical sense 3 (US informal): done or performed with excellence and precision, with the example of clinical shooting",
   "v": "ok"
  },
  "soccer:51": {
@@ -7309,9 +8033,9 @@
   "v": "ok"
  },
  "soccer:54": {
-  "at": "2026-10-16T23:58:23Z",
-  "h": "56f6e45a1a",
-  "note": "dictionary.com relegate (Collins): to demote a football team to a lower division",
+  "at": "2026-10-17T00:16:36Z",
+  "h": "3c765e87c9",
+  "note": "dictionary.com/browse/relegate Collins: to demote a football team to a lower division. Also merriam-webster.com/dictionary/relegate sense d",
   "v": "ok"
  },
  "soccer:6": {
@@ -7321,9 +8045,9 @@
   "v": "ok"
  },
  "soccer:7": {
-  "at": "2026-10-16T23:58:23Z",
-  "h": "62f9936582",
-  "note": "dictionary.com nutmeg (Collins verb, sport): to kick or hit the ball between the legs of an opposing player",
+  "at": "2026-10-17T00:16:36Z",
+  "h": "559dbcf849",
+  "note": "dictionary.com/browse/nutmeg Collins verb (informal, sport): to kick or hit the ball between the legs of an opposing player. Merriam-Webster has only the spice sense",
   "v": "ok"
  },
  "soccer:8": {
@@ -7336,6 +8060,785 @@
   "at": "2026-10-16T23:58:23Z",
   "h": "e44bf8fb9d",
   "note": "dictionary.com dummy (Collins): a feigned pass or move in a sport such as football or rugby",
+  "v": "ok"
+ },
+ "ucl:0": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "00f54250cb",
+  "note": "uefa.com 1955 season page: Madrid overcome Reims to win first edition, Héctor Rial struck the winner. Final 4–3 per match.uefa.com/v5/matches (the API the season page loads)",
+  "v": "ok"
+ },
+ "ucl:1": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "8665c963c4",
+  "note": "uefa.com 1966 season page: Celtic upset two-time winners Inter, video titled Celtic’s Lisbon Lions",
+  "v": "ok"
+ },
+ "ucl:10": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "ea6e5849b5",
+  "note": "uefa.com 2004 season page: Liverpool stun Milan in ‘Miracle of Istanbul’",
+  "v": "ok"
+ },
+ "ucl:11": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "2a144ddda6",
+  "note": "uefa.com 2010 season page: Milito strikes twice as Inter complete treble",
+  "v": "ok"
+ },
+ "ucl:12": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "eb228104d0",
+  "note": "uefa.com 2021 season page: Tuchel guides Chelsea back to the summit. Final Man City 0–1 Chelsea per match.uefa.com/v5/matches (the API the season page loads)",
+  "v": "ok"
+ },
+ "ucl:13": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "82daaf7550",
+  "note": "uefa.com 2023 season page: Man City win as Rodri strikes in Istanbul. Final Man City 1–0 Inter per match.uefa.com/v5/matches (the API the season page loads)",
+  "v": "ok"
+ },
+ "ucl:15": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "4a3cbdaa04",
+  "note": "uefa.com 1985 season page: Steaua stun Barcelona in shoot-out, heroics of Helmuth Duckadam",
+  "v": "ok"
+ },
+ "ucl:16": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "38d3dfe8c8",
+  "note": "uefa.com 1996 season page: Dortmund v Juventus 1997 final, super sub Lars Ricken seals glory in Munich",
+  "v": "ok"
+ },
+ "ucl:17": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "65a3118291",
+  "note": "uefa.com 2016 season page: Real Madrid 1–1 Atleti (5–3p), triumphed against their city rivals",
+  "v": "ok"
+ },
+ "ucl:18": {
+  "at": "2026-10-17T00:18:04Z",
+  "h": "9f823aca67",
+  "note": "uefa.com history page all-time stats (checked today): Cristiano Ronaldo top scorer 141 and most appearances 187",
+  "v": "ok"
+ },
+ "ucl:19": {
+  "at": "2026-10-17T00:18:04Z",
+  "h": "30c53a8c5a",
+  "note": "uefa.com history page and rankings/players/goals_scored (checked today): Messi second with 129 behind Ronaldo 141",
+  "v": "ok"
+ },
+ "ucl:2": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "a1c3a60560",
+  "note": "uefa.com 1967 season page: Benfica 1–4 Man United, first English European Cup winners, victory at Wembley",
+  "v": "ok"
+ },
+ "ucl:20": {
+  "at": "2026-10-17T00:18:04Z",
+  "h": "479c3c3fb8",
+  "note": "uefa.com history page and rankings/players/goals_scored (checked today): Lewandowski third with 109 behind Ronaldo and Messi",
+  "v": "ok"
+ },
+ "ucl:21": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "15323e94d8",
+  "note": "uefa.com 2018 season page: Bale overhead kick helps Madrid make it three, Real Madrid v Liverpool final",
+  "v": "ok"
+ },
+ "ucl:22": {
+  "at": "2026-10-17T00:18:04Z",
+  "h": "0918713f87",
+  "note": "uefa.com 2026 season page top scorers: Mbappé 15, Kane 14",
+  "v": "ok"
+ },
+ "ucl:23": {
+  "at": "2026-10-17T00:18:04Z",
+  "h": "b366402175",
+  "note": "uefa.com 2023 season page top scorers: Haaland 12, Salah 8",
+  "v": "ok"
+ },
+ "ucl:24": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "e6961d9bd0",
+  "note": "uefa.com 2001 season page: famous Zidane finish wins it for Madrid, Real Madrid v Leverkusen 2002 final",
+  "v": "ok"
+ },
+ "ucl:25": {
+  "at": "2026-10-17T00:18:04Z",
+  "h": "8619055dd6",
+  "note": "uefa.com 2012 season page: Drogba hits Chelsea’s shoot-out winner against Bayern",
+  "v": "ok"
+ },
+ "ucl:26": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "c8b2fea500",
+  "note": "uefa.com 2013 season page: Robben the hero at Wembley. Final Dortmund 1–2 Bayern per match.uefa.com/v5/matches (the API the season page loads)",
+  "v": "ok"
+ },
+ "ucl:27": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "937c8e3f6d",
+  "note": "uefa.com 1959 season page: Puskás got four as Madrid crush Frankfurt after ten-goal thriller (7–3 per match.uefa.com/v5/matches (the API the season page loads))",
+  "v": "ok"
+ },
+ "ucl:28": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "e7da32ceb5",
+  "note": "uefa.com 2002 season page: Shevchenko effort wins final shoot-out for Milan v Juventus",
+  "v": "ok"
+ },
+ "ucl:29": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "f439b3e5da",
+  "note": "uefa.com 2023 season page: Pep Guardiola’s side, Rodri strikes, final 1–0 per match.uefa.com/v5/matches (the API the season page loads)",
+  "v": "ok"
+ },
+ "ucl:3": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "510d7e78b7",
+  "note": "uefa.com 1970 season page: first-time champions Ajax ease past Panathinaikos, Johan Cruyff starring",
+  "v": "ok"
+ },
+ "ucl:30": {
+  "at": "2026-10-17T00:18:04Z",
+  "h": "ef2eaf740a",
+  "note": "uefa.com final records article (src): Luis Enrique 3 titles (Barcelona 2015, Paris 2025, 2026), consecutive Paris 2025, 2026",
+  "v": "ok"
+ },
+ "ucl:31": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "52c55e02d2",
+  "note": "uefa.com 2019 season page: Klopp’s Liverpool beat Spurs in all-English final",
+  "v": "ok"
+ },
+ "ucl:33": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "c8b352f0f7",
+  "note": "uefa.com 2022 season page: Ancelotti makes history as Madrid win again. Final Liverpool 0–1 Real Madrid per match.uefa.com/v5/matches (the API the season page loads)",
+  "v": "ok"
+ },
+ "ucl:34": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "f857c971cd",
+  "note": "uefa.com seasons/2021 headline: Tuchel guides Chelsea back to the summit. Final Man City 0–1 Chelsea per match.uefa.com/v5/matches?matchId=2029498",
+  "v": "ok"
+ },
+ "ucl:35": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "034a4d097b",
+  "note": "uefa.com seasons/2023: Man City win the title as Rodri strikes in Istanbul. Venue Atatürk Olympic Stadium, Istanbul, Man City 1–0 Inter per match.uefa.com/v5/matches?matchId=2037765",
+  "v": "ok"
+ },
+ "ucl:36": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "bc20519058",
+  "note": "uefa.com seasons/2014: Madrid break Atlético hearts to seal La Décima, extra-time win in Lisbon, 2014 final Real Madrid 4-1 Atleti. match.uefa.com/v5/matches?matchId=2011883 gives 1–1 in regular time, 4–1 total, Estádio do SL Benfica, Lisbon",
+  "v": "ok"
+ },
+ "ucl:37": {
+  "at": "2026-10-17T00:18:04Z",
+  "h": "396c0291ef",
+  "note": "uefa.com seasons/2012: Drogba hits Chelsea’s shoot-out winner against Bayern, Chelsea claimed glory in Munich. match.uefa.com/v5/matches?matchId=2007693: 1–1, pens 4–3, Munich",
+  "v": "ok"
+ },
+ "ucl:38": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "1aa227c8cb",
+  "note": "uefa.com seasons/2008: United win Chelsea shoot-out. match.uefa.com/v5/matches?matchId=301604: 1–1, pens 6–5, Luzhniki Stadium, Moscow",
+  "v": "ok"
+ },
+ "ucl:39": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "b17be5ea0b",
+  "note": "uefa.com seasons/2026: Paris edge Arsenal on penalties in Budapest final. match.uefa.com/v5/matches?matchId=2047742: 1–1, pens 4–3, Puskás Aréna, Budapest",
+  "v": "ok"
+ },
+ "ucl:4": {
+  "at": "2026-10-17T00:18:04Z",
+  "h": "e3c20686ed",
+  "note": "uefa.com 2020 season page: Bayern reign as Coman returns to haunt Paris. Final Paris 0–1 Bayern per match.uefa.com/v5/matches (the API the season page loads)",
+  "v": "ok"
+ },
+ "ucl:41": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "b78d69998d",
+  "note": "uefa.com seasons/2009: Barcelona too strong for Manchester United. match.uefa.com/v5/matches?matchId=302813: 2–0, Stadio Olimpico, Rome, goals Eto’o and Messi",
+  "v": "ok"
+ },
+ "ucl:43": {
+  "at": "2026-10-17T00:18:04Z",
+  "h": "cd0a96094b",
+  "note": "uefa.com seasons/2022: Ancelotti makes history as Madrid win again. match.uefa.com/v5/matches?matchId=2034586: Liverpool 0–1 Real Madrid, Stade de France. Means: match.uefa.com/v5/matches?matchId=64833 (2000 final) and match.uefa.com/v5/matches?matchId=84101 (2006 final) both at Stade de France",
+  "v": "ok"
+ },
+ "ucl:44": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "78b48ce60b",
+  "note": "uefa.com seasons/2002 (the 2002/03 page): Shevchenko effort wins final shoot-out for Milan. match.uefa.com/v5/matches?matchId=71176: Juventus 0–0 Milan, pens 2–3, Old Trafford, Manchester, 2003-05-28",
+  "v": "ok"
+ },
+ "ucl:45": {
+  "at": "2026-10-17T00:18:04Z",
+  "h": "180eb24e84",
+  "note": "WUCL history article: 2010/11 final at Craven Cottage in London, Lyon beat Potsdam 2-0 for France’s first title (and their third came in 2015/16)",
+  "v": "ok"
+ },
+ "ucl:46": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "0233919f8e",
+  "note": "WUCL history article: 2012/13 Wolfsburg beat Lyon 1-0 at London’s Stamford Bridge",
+  "v": "ok"
+ },
+ "ucl:47": {
+  "at": "2026-10-17T00:18:04Z",
+  "h": "a76af8464d",
+  "note": "WUCL history article: first final 2002, Umeå v FFC Frankfurt, who staged the final at the Waldstadion, Frankfurt won 2-0",
+  "v": "ok"
+ },
+ "ucl:48": {
+  "at": "2026-10-17T00:18:04Z",
+  "h": "66fdb6e85a",
+  "note": "WUCL history article: 2025/26 Barcelona, in an unprecedented sixth straight final, beat the renamed OL Lyonnes 4-0 in Oslo",
+  "v": "ok"
+ },
+ "ucl:49": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "822dfa790e",
+  "note": "WUCL history article: 2024/25 Arsenal beat Barcelona 1-0 in Lisbon, first side to reach the final from round 1 of qualifying",
+  "v": "ok"
+ },
+ "ucl:5": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "04dcf41518",
+  "note": "uefa.com 1978 season page: Francis scored Forest’s winner in the 1979 final. Final Nott’m Forest 1–0 Malmö per match.uefa.com/v5/matches (the API the season page loads)",
+  "v": "ok"
+ },
+ "ucl:51": {
+  "at": "2026-10-17T00:18:04Z",
+  "h": "4b0a75d3a9",
+  "note": "WUCL history article: 2007/08 Frankfurt became the first three-time champions, and won the first UEFA Women’s Cup in 2002",
+  "v": "ok"
+ },
+ "ucl:53": {
+  "at": "2026-10-17T00:18:04Z",
+  "h": "31a765c7a1",
+  "note": "WUCL history article: Wolfsburg beat Lyon 1-0 in the 2012/13 final, then Tyresö 4-3 in the 2013/14 final in Lisbon",
+  "v": "ok"
+ },
+ "ucl:54": {
+  "at": "2026-10-17T00:18:04Z",
+  "h": "27bfbed834",
+  "note": "WUCL history article: Umeå won the new two-legged final in 2002/03, then won again in 2003/04 bolstered by the signing of Marta (also two legs)",
+  "v": "ok"
+ },
+ "ucl:55": {
+  "at": "2026-10-17T00:18:04Z",
+  "h": "6a1868d2f7",
+  "note": "uefa.com/uefachampionsleague/history: Madrid lead the way with 15 European Cups. Latest title 2023/24 per uefa.com history/clubs/50051--real-madrid",
+  "v": "ok"
+ },
+ "ucl:56": {
+  "at": "2026-10-17T00:18:04Z",
+  "fix": {
+   "src": "https://www.uefa.com/uefachampionsleague/news/0275-1541637ad1db-88aeeefefefd-1000--which-teams-have-won-the-european-cup-or-champions-league/"
+  },
+  "h": "2777080680",
+  "note": "The src history page only says Milan are among Madrid’s closest challengers, not the count. https://www.uefa.com/uefachampionsleague/news/0275-1541637ad1db-88aeeefefefd-1000--which-teams-have-won-the-european-cup-or-champions-league/ shows AC Milan next with seven triumphs, and history/clubs/50058--milan lists 7 titles, latest 2006/07",
+  "v": "fix"
+ },
+ "ucl:57": {
+  "at": "2026-10-17T00:18:04Z",
+  "fix": {
+   "src": "https://www.uefa.com/uefachampionsleague/news/0275-1541637ad1db-88aeeefefefd-1000--which-teams-have-won-the-european-cup-or-champions-league/"
+  },
+  "h": "aa235330ae",
+  "note": "The src history page doesn’t show the count. https://www.uefa.com/uefachampionsleague/news/0275-1541637ad1db-88aeeefefefd-1000--which-teams-have-won-the-european-cup-or-champions-league/ shows Liverpool with six titles, and history/clubs/7889--liverpool lists 6 titles, latest 2018/19",
+  "v": "fix"
+ },
+ "ucl:58": {
+  "at": "2026-10-17T00:17:55Z",
+  "fix": {
+   "src": "https://www.uefa.com/uefachampionsleague/history/rankings/players/goals_scored"
+  },
+  "h": "b5c866fe8b",
+  "note": "The src history page doesn’t show it. https://www.uefa.com/uefachampionsleague/history/rankings/players/goals_scored shows Cristiano Ronaldo 141, Messi 129 (checked today)",
+  "v": "fix"
+ },
+ "ucl:59": {
+  "at": "2026-10-17T00:18:04Z",
+  "h": "6342cd5efa",
+  "note": "uefa.com/womenschampionsleague/history all-time stats: most titles OL Lyonnes 8, Frankfurt 4, Barcelona 4",
+  "v": "ok"
+ },
+ "ucl:6": {
+  "at": "2026-10-17T00:18:04Z",
+  "h": "79676da4bc",
+  "note": "uefa.com 1981 season page: Aston Villa bring the European Cup to Birmingham. Final Aston Villa 1–0 Bayern per match.uefa.com/v5/matches (the API the season page loads)",
+  "v": "ok"
+ },
+ "ucl:60": {
+  "at": "2026-10-17T00:18:04Z",
+  "h": "b43f194b01",
+  "note": "Real Madrid club history page lists titles 1955/56 through 1959/60. https://www.uefa.com/uefachampionsleague/news/0275-1541637ad1db-88aeeefefefd-1000--which-teams-have-won-the-european-cup-or-champions-league/ also says they won the first five editions between 1956 and 1960",
+  "v": "ok"
+ },
+ "ucl:61": {
+  "at": "2026-10-17T00:18:04Z",
+  "h": "6db73baac1",
+  "note": "Final records article: biggest win in a Champions League final, 5-0 Paris Saint-Germain vs Inter (31/05/2025)",
+  "v": "ok"
+ },
+ "ucl:62": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "12c155d32b",
+  "note": "uefa.com seasons/2018: Bale overhead kick helps Madrid make it three in a row. match.uefa.com/v5/matches?matchId=2021711: Real Madrid 3–1 Liverpool",
+  "v": "ok"
+ },
+ "ucl:63": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "662a263663",
+  "note": "uefa.com seasons/2019: Klopp’s Liverpool beat Spurs in all-English final. match.uefa.com/v5/matches?matchId=2025486: Tottenham 0–2 Liverpool",
+  "v": "ok"
+ },
+ "ucl:64": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "1aceea4cdc",
+  "note": "uefa.com seasons/2023: Rodri strikes in Istanbul. match.uefa.com/v5/matches?matchId=2037765: Man City 1–0 Inter, only goal Rodri 68’",
+  "v": "ok"
+ },
+ "ucl:65": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "a27fc9b60b",
+  "note": "uefa.com seasons/2017: Ronaldo-powered Madrid defend title in Cardiff, 2017 final Real Madrid 4-1 Juventus. match.uefa.com/v5/matches?matchId=2019641 confirms 1–4 in Cardiff",
+  "v": "ok"
+ },
+ "ucl:66": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "9690592c86",
+  "note": "uefa.com/womenschampionsleague/history/seasons/2026: Barcelona defeated OL Lyonnes 4-0 in Oslo. Fourth title per WUCL history page (Barcelona 4)",
+  "v": "ok"
+ },
+ "ucl:7": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "bcf3b8877a",
+  "note": "uefa.com 1991 season page: Koeman free kick, Barcelona 1–0 Sampdoria at Wembley, first time kings of Europe",
+  "v": "ok"
+ },
+ "ucl:8": {
+  "at": "2026-10-17T00:17:55Z",
+  "h": "1d020b0e87",
+  "note": "uefa.com 1992 season page: Marseille win inaugural Champions League final, France’s first winners",
+  "v": "ok"
+ },
+ "wc26:0": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "6838138df5",
+  "note": "fifa.com final report: one goal conceded is the lowest for a World Cup-winning team",
+  "v": "ok"
+ },
+ "wc26:1": {
+  "at": "2026-10-17T00:20:59Z",
+  "h": "51f8894c6d",
+  "note": "fifa.com final report: defending champions Argentina lost 1–0 after extra time. 2022 title shown on the hosts article (Argentina aiming to retain the trophy after Qatar 2022)",
+  "v": "ok"
+ },
+ "wc26:10": {
+  "at": "2026-10-17T00:20:59Z",
+  "h": "eb580b1e3b",
+  "note": "fifa.com final report: Torres (106) the only goal",
+  "v": "ok"
+ },
+ "wc26:11": {
+  "at": "2026-10-17T00:20:59Z",
+  "h": "0965af986b",
+  "note": "fifa.com Brazil–Norway report: Haaland (79, 90), his sixth and seventh tournament goals",
+  "v": "ok"
+ },
+ "wc26:13": {
+  "at": "2026-10-17T00:20:59Z",
+  "h": "d81436304a",
+  "note": "fifa.com final report: at 39 years 25 days the oldest outfield player in a final, his third final (2014, 2022, 2026)",
+  "v": "ok"
+ },
+ "wc26:14": {
+  "at": "2026-10-17T00:20:59Z",
+  "h": "4261ad619d",
+  "note": "fifa.com records article: the 41-year-old became the first man to score in six World Cups",
+  "v": "ok"
+ },
+ "wc26:15": {
+  "at": "2026-10-17T00:20:59Z",
+  "h": "60f5dad01b",
+  "note": "fifa.com bronze final report: Saka hat-trick, France 4–6 England at Miami Stadium",
+  "v": "ok"
+ },
+ "wc26:16": {
+  "at": "2026-10-17T00:20:59Z",
+  "h": "cf2e85aa56",
+  "note": "fifa.com England–Argentina semifinal report: 121st appearance made Kane England’s most-capped outfield player. Still true today (the record only grows)",
+  "v": "ok"
+ },
+ "wc26:17": {
+  "at": "2026-10-17T00:20:59Z",
+  "h": "f5ff118202",
+  "note": "fifa.com records article: 790 completed passes, beating his own 638 from Qatar 2022",
+  "v": "ok"
+ },
+ "wc26:18": {
+  "at": "2026-10-17T00:20:59Z",
+  "h": "d1eb2f08da",
+  "note": "fifa.com records article: seven assists in one edition, five for Mbappé",
+  "v": "ok"
+ },
+ "wc26:2": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "325816302e",
+  "note": "fifa.com match report: Mexico 2–0 South Africa in the opening match, Quiñones scored in the 9th minute",
+  "v": "ok"
+ },
+ "wc26:20": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "27359d0c01",
+  "note": "fifa.com final report: at 65 years 28 days the oldest World Cup-winning coach",
+  "v": "ok"
+ },
+ "wc26:21": {
+  "at": "2026-10-17T00:20:59Z",
+  "h": "234e675128",
+  "note": "fifa.com final report: Scaloni Argentina coach, Spain won 1–0 after extra time",
+  "v": "ok"
+ },
+ "wc26:22": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "c5ce09059d",
+  "note": "fifa.com final standings: Tuchel’s England third after a 6–4 win over France",
+  "v": "ok"
+ },
+ "wc26:23": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "0f52215033",
+  "note": "fifa.com final standings: Ancelotti’s Brazil eliminated by Norway in the Round of 16",
+  "v": "ok"
+ },
+ "wc26:24": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "12b29ac54c",
+  "note": "fifa.com final standings: Pochettino’s USA out to Belgium in the Round of 16",
+  "v": "ok"
+ },
+ "wc26:25": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "5bdd2c9034",
+  "note": "fifa.com records article: 26 games, eclipsing Helmut Schön’s 25. Bronze final report says it ended his reign as France coach",
+  "v": "ok"
+ },
+ "wc26:26": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "9205ce421f",
+  "note": "fifa.com records article: Advocaat, 78 years 271 days, oldest coach, with Curaçao",
+  "v": "ok"
+ },
+ "wc26:27": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "78f615d70a",
+  "note": "fifa.com final report: Torres’s 106th-minute goal, 1–0 v Argentina in New York New Jersey",
+  "v": "ok"
+ },
+ "wc26:28": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "745d98b67c",
+  "note": "fifa.com Azteca article: Mexico City Stadium hosted the opener, the first stadium with three openers",
+  "v": "ok"
+ },
+ "wc26:29": {
+  "at": "2026-10-17T00:20:41Z",
+  "fix": {
+   "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/usa-australia-match-report-highlights"
+  },
+  "h": "c6d16dca10",
+  "note": "The card’s src is the Seattle schedule written before the tournament. The fifa.com USA 2–0 Australia match report shows the game was played in Seattle, so it becomes the src",
+  "v": "fix"
+ },
+ "wc26:3": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "71a80521d1",
+  "note": "fifa.com final standings: Brazil out to Norway in the Round of 16 with a Haaland double, record-extending sixth star sought (five titles)",
+  "v": "ok"
+ },
+ "wc26:30": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "eeba4d9dce",
+  "note": "fifa.com bronze final report: France 4–6 England at Miami Stadium, England third",
+  "v": "ok"
+ },
+ "wc26:31": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "0203b1eb3b",
+  "note": "fifa.com knockout results: semifinal France 0–2 Spain at Dallas Stadium. Nine matches: https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/dallas-stadium-host-nine-world-cup-matches",
+  "v": "ok"
+ },
+ "wc26:32": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "226fc543e2",
+  "note": "fifa.com knockout results: semifinal England 1–2 Argentina at Atlanta Stadium",
+  "v": "ok"
+ },
+ "wc26:33": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "47d70f1006",
+  "note": "fifa.com Golden Ball article: Rodri won it, a steady presence in Spain’s midfield",
+  "v": "ok"
+ },
+ "wc26:34": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "b1bf31482f",
+  "note": "fifa.com Golden Boot article: Mbappé won with ten goals, retaining the title he won at Qatar 2022",
+  "v": "ok"
+ },
+ "wc26:35": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "7eb0b2ef92",
+  "note": "fifa.com Golden Glove article: Simón won it with seven clean sheets, the most ever in one World Cup",
+  "v": "ok"
+ },
+ "wc26:36": {
+  "at": "2026-10-17T00:20:59Z",
+  "fix": {
+   "groups": [
+    [
+     "Young Player Award",
+     "Player of the Match"
+    ]
+   ]
+  },
+  "h": "d4dd8edfcc",
+  "note": "fifa.com Young Player Award article shows Cubarsí won it at 19, and FIFA’s awards rules define it as best player born on or after 1 January 2005. The reworded sentence drops “aged 21 or under”, so Player of the Match, which can be drawn, may also be true of him in some game. Grouping keeps them apart",
+  "v": "fix"
+ },
+ "wc26:37": {
+  "at": "2026-10-17T00:20:59Z",
+  "h": "fa9ef8db93",
+  "note": "src (now redirects to https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/adidas-golden-boot-race-top-scorer) shows Mbappé won the Golden Boot and the Bronze Ball. The awards PDF (https://digitalhub.fifa.com/asset/5f21873f-792f-4972-9f55-96e73ac61a01/FIFA-World-Cup-2026-Official-FIFA-Awards.pdf) lists him Bronze Ball and defines it as third-best player",
+  "v": "ok"
+ },
+ "wc26:38": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "2d844fc7e0",
+  "note": "src: Player of the Match given to Messi an unequalled 16 times, his five at 2026 a new record for one edition",
+  "v": "ok"
+ },
+ "wc26:39": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "ece871ca33",
+  "note": "src: Qatar 2022 champions Argentina, runners-up France. Spain won 2026, so Argentina came in as holders",
+  "v": "ok"
+ },
+ "wc26:4": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "0f762af968",
+  "note": "fifa.com hosts article lists 16 host cities: Canada 2, Mexico 3, USA 11",
+  "v": "ok"
+ },
+ "wc26:40": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "19aa76965c",
+  "note": "src: 2010 champions Spain beat the Netherlands for Spain’s first World Cup success",
+  "v": "ok"
+ },
+ "wc26:41": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "08d52d79d1",
+  "note": "src: Spain women won in 2023 and this is the first time the reigning men’s and women’s champions are from the same country",
+  "v": "ok"
+ },
+ "wc26:42": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "0aec5bb579",
+  "note": "src: England third in 2026, their best finish since lifting the trophy in 1966 on home turf",
+  "v": "ok"
+ },
+ "wc26:43": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "e9b6e2b3df",
+  "note": "src: Norway making their return for the first time since 1998 (28 years by arithmetic)",
+  "v": "ok"
+ },
+ "wc26:44": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "677e53b4c6",
+  "note": "src (redirects to https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/estadio-azteca-mexico-city-host-opening-match-world-cup-2026): hosted the World Cup finals and opening games of 1970 and 1986, first stadium to host three opening matches. Written before the tournament but still true",
+  "v": "ok"
+ },
+ "wc26:45": {
+  "at": "2026-10-17T00:20:59Z",
+  "h": "ac7442ef65",
+  "note": "src: first with 48 teams, final draw made 12 groups of four",
+  "v": "ok"
+ },
+ "wc26:46": {
+  "at": "2026-10-17T00:20:59Z",
+  "h": "5e31be48f8",
+  "note": "src: 16 host cities, Toronto and Vancouver in Canada, Guadalajara, Mexico City and Monterrey in Mexico",
+  "v": "ok"
+ },
+ "wc26:47": {
+  "at": "2026-10-17T00:20:59Z",
+  "h": "1ae146d1d9",
+  "note": "src: for the first time hosting divided among three countries, Canada, Mexico and the USA",
+  "v": "ok"
+ },
+ "wc26:48": {
+  "at": "2026-10-17T00:20:59Z",
+  "h": "606af427c5",
+  "note": "src: the biggest-ever edition boasted 104 games featuring 48 teams in Canada, Mexico and the United States",
+  "v": "ok"
+ },
+ "wc26:49": {
+  "at": "2026-10-17T00:20:59Z",
+  "h": "7269320d8d",
+  "note": "src: 34 his total after 2026, first man to reach 30 appearances, played at six editions",
+  "v": "ok"
+ },
+ "wc26:5": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "3edf30e60c",
+  "note": "fifa.com knockout results: Match 92 Mexico 2–3 England at Mexico City Stadium in the Round of 16",
+  "v": "ok"
+ },
+ "wc26:50": {
+  "at": "2026-10-17T00:20:59Z",
+  "h": "19b76131e1",
+  "note": "src: six matches, four group games plus one Round of 32 and one Round of 16. The knockout results page confirms both knockouts were played in Seattle",
+  "v": "ok"
+ },
+ "wc26:51": {
+  "at": "2026-10-17T00:20:41Z",
+  "fix": {
+   "means": "An average of 26 per team"
+  },
+  "h": "c1b5c61a06",
+  "note": "src shows a record 1,248 players representing 48 nations but never states a per-team squad size, so “26 for each” is unsupported as worded. 1,248 over 48 is an average of 26, which the arithmetic does support",
+  "v": "fix"
+ },
+ "wc26:52": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "9267550ada",
+  "note": "src: Spain 1–0 Argentina, Torres goal in the 106th minute, extra time",
+  "v": "ok"
+ },
+ "wc26:53": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "e4e06ff627",
+  "note": "src: France 4–6 England in the bronze final, Saka hat-trick",
+  "v": "ok"
+ },
+ "wc26:54": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "5c5becb56d",
+  "note": "src: Match 94 USA 1–4 Belgium at Seattle Stadium in the Round of 16",
+  "v": "ok"
+ },
+ "wc26:55": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "3cfcab03dc",
+  "note": "src: France 0–2 Spain semifinal, goals by Oyarzabal (pen) and Porro",
+  "v": "ok"
+ },
+ "wc26:56": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "76341eee7e",
+  "note": "src: Match 91 Brazil 1–2 Norway at New York New Jersey Stadium in the Round of 16",
+  "v": "ok"
+ },
+ "wc26:57": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "172f0819cc",
+  "note": "src: Austria and Algeria drew 3–3 in Group J, with two goals scored deep into added time",
+  "v": "ok"
+ },
+ "wc26:58": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "a21431ad1e",
+  "note": "src: Match 74 Germany 1–1 Paraguay (PSO 3–4) in the Round of 32",
+  "v": "ok"
+ },
+ "wc26:59": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "a478c9d229",
+  "note": "src: Match 90 Canada 0–3 Morocco at Houston Stadium in the Round of 16. Morocco were in Group C and Canada in Group B, so no group meeting",
+  "v": "ok"
+ },
+ "wc26:6": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "f687b03edf",
+  "note": "fifa.com Brazil–Norway report: Norway reach the last eight for the first time. Final standings article: first World Cup since 1998",
+  "v": "ok"
+ },
+ "wc26:60": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "4b49e871bf",
+  "note": "src: Match 99 Norway 1–2 England (AET) at Miami Stadium in the quarterfinals. Norway in Group I, England in Group L",
+  "v": "ok"
+ },
+ "wc26:61": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "32bbfabf0c",
+  "note": "src: England led through Gordon (55), Argentina won 2–1 with goals at 85 and 90+2 in Atlanta",
+  "v": "ok"
+ },
+ "wc26:62": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "d55800901e",
+  "note": "src: France 4–6 England bronze final, Mbappé scored at 48 and 66",
+  "v": "ok"
+ },
+ "wc26:63": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "5f03c5c681",
+  "note": "src: Uruguay out in the group stage after draws with Saudi Arabia and Cabo Verde and defeat to Spain",
+  "v": "ok"
+ },
+ "wc26:64": {
+  "at": "2026-10-17T00:20:59Z",
+  "h": "14fcd415c0",
+  "note": "src: Maple the Moose (Canada), a street style-loving artist and dedicated goalkeeper",
+  "v": "ok"
+ },
+ "wc26:65": {
+  "at": "2026-10-17T00:20:59Z",
+  "h": "e04408c430",
+  "note": "src: Zayu the Jaguar (Mexico), from the jungles of southern Mexico, a striker on the pitch",
+  "v": "ok"
+ },
+ "wc26:66": {
+  "at": "2026-10-17T00:20:59Z",
+  "h": "a9974e65f3",
+  "note": "src: Clutch the Bald Eagle (USA), unquenchable thirst for adventure, like all great midfielders",
+  "v": "ok"
+ },
+ "wc26:69": {
+  "at": "2026-10-17T00:20:59Z",
+  "h": "fccc829b87",
+  "note": "src: TRIONDA the official match ball, name translated from Spanish as “three waves”, with TRIONDA FINAL used only for the final four matches",
+  "v": "ok"
+ },
+ "wc26:7": {
+  "at": "2026-10-17T00:20:59Z",
+  "h": "6bd2e04718",
+  "note": "fifa.com final standings: debutants Cabo Verde the only side to prevent Spain from scoring, 0–0 in the opening Group H match",
+  "v": "ok"
+ },
+ "wc26:8": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "17abf45f87",
+  "note": "fifa.com final standings: Canada’s first group stage win, then a first knockout round win (1–0 v South Africa)",
+  "v": "ok"
+ },
+ "wc26:9": {
+  "at": "2026-10-17T00:20:41Z",
+  "h": "8ea2d0fcf4",
+  "note": "fifa.com records article: Curaçao, around 156,000 inhabitants, smallest nation by population to play at a World Cup",
   "v": "ok"
  }
 }
