@@ -62,7 +62,7 @@ async def run(b, html, demo):
     await pg.click(f'.choice[data-w="{wrong}"]'); await pg.click('#flip'); await pg.wait_for_timeout(300)
     await pg.click('#share'); await pg.wait_for_timeout(200)
     text = await pg.evaluate("navigator.clipboard.readText()")
-    ok(text == '#1 ⚽⚽❌\nBrace · 12 in a row\ntriviela.net', 'the share text is exact: ' + repr(text))
+    ok(text == '#1 ⚽⚽❌\nBrace!! · 12 in a row\ntriviela.net', 'the share text is exact: ' + repr(text))
     lost = await pg.evaluate("document.querySelector('#v-end .lost .fill') && document.querySelector('#v-end .lost .fill').textContent")
     ok(lost == w, 'the end screen fills in the right answer of the card that got you')
     # 4. locked

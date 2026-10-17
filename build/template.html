@@ -111,7 +111,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .lost { display: flex; flex-direction: column; gap: 10px; }
 .lost .sentence { font-size: 22px; } .lost .sentence.long { font-size: 20px; } .lost .sentence.longer { font-size: 19px; }
 .means { margin: 0; font-size: 18px; line-height: 1.2; color: #B8E6CA; font-weight: 500; }   /* the means line is the payoff, so it stays bright */
-#v-end .ball { width: min(62%, 60cqh); }
+#v-end .ball { width: min(62%, 60cqh); margin: 0 auto; }
 #v-end { container-type: size; }
 
 /* the blinking go arrow, bottom right of the screen */
@@ -411,7 +411,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   var save = function () { store.set('bsb-daily', S); };
   var chips = function () { return S.res.filter(function (x) { return x === 1; }).length; };
   var over = function () { return S.res.indexOf(2) >= 0 || chips() === 18; };
-  var RESULT = ['Nil', 'Goal', 'Brace', 'Hat trick'];
+  var RESULT = ['Nil', 'Goal!', 'Brace!!', 'Hat Trick!!!'];   // Morg, Oct 17, 2026: one to three exclamation points
   if (DEV) window.TRIVIELA = { deal: deal, choices: choices, ALL: ALL, POOL: POOL, near: near, state: function () { return S; } };   // for tools/drawcheck.py
 
   // ---- the board ----
