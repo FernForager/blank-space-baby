@@ -5670,18 +5670,10 @@
   "v": "ok"
  },
  "parents:29": {
-  "at": "2026-10-16T23:59:39Z",
-  "fix": {
-   "groups": [
-    [
-     "homie",
-     "home skillet"
-    ]
-   ]
-  },
+  "at": "2026-10-17T00:14:17Z",
   "h": "f0e6bd9068",
-  "note": "M-W homey noun (variant homie): homeboy, which M-W defines as a male friend https://www.merriam-webster.com/dictionary/homeboy. But “home skillet” is in this card’s wrong answers and fits the blank just as well (Green’s home skillet: a good friend), so they need grouping",
-  "v": "fix"
+  "note": "merriam-webster.com homie: a close friend, homeboy. home skillet is already grouped out of this card, and the drawable plurals peeps and posse don’t fit one assistant coach",
+  "v": "ok"
  },
  "parents:3": {
   "at": "2026-10-16T23:59:39Z",
