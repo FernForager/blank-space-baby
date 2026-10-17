@@ -975,6 +975,385 @@
   "note": "Same 2025 Shield as mls:55, kept apart by the draw. Nashville are clinching the 2026 Shield, so 2020 and 2025 stays complete",
   "v": "ok"
  },
+ "nicknames:0": {
+  "at": "2026-10-17T00:00:38Z",
+  "h": "aa49098494",
+  "note": "Near-twin: epl:33 is the same fact. Keep this richer one and cut that one",
+  "v": "ok"
+ },
+ "nicknames:1": {
+  "at": "2026-10-17T00:00:38Z",
+  "h": "a8eff0e6d3",
+  "note": "Twin risk with nicknames:30 is handled by the draw (Man United is in this sentence)",
+  "v": "ok"
+ },
+ "nicknames:10": {
+  "at": "2026-10-17T00:00:38Z",
+  "h": "ed14b534b1",
+  "note": "Near-twin of epl-more:62 (same fact). Its means also names the answer of epl-more:57 (Thames Ironworks)",
+  "v": "ok"
+ },
+ "nicknames:11": {
+  "at": "2026-10-17T00:00:38Z",
+  "h": "3037f6c2f3",
+  "note": "Near-twin: epl-more:65, Jimmy Hill in both is the same fact. Keep this richer one and cut that one",
+  "v": "ok"
+ },
+ "nicknames:12": {
+  "at": "2026-10-17T00:00:38Z",
+  "h": "b5f5800dc1",
+  "note": "Near-twin of epl:39 (Tractor Boys). Bobby Robson in the sentence keeps it apart from epl-more:32",
+  "v": "ok"
+ },
+ "nicknames:13": {
+  "at": "2026-10-17T00:00:38Z",
+  "h": "6df4473a45",
+  "v": "ok"
+ },
+ "nicknames:14": {
+  "at": "2026-10-17T00:00:38Z",
+  "h": "8a8c6f206c",
+  "v": "ok"
+ },
+ "nicknames:15": {
+  "at": "2026-10-17T00:00:38Z",
+  "h": "3cedb22afe",
+  "note": "Near-twin of bundesliga:36 (same fact) and bundesliga:47 (Hennes)",
+  "v": "ok"
+ },
+ "nicknames:16": {
+  "at": "2026-10-17T00:00:38Z",
+  "h": "0161512706",
+  "note": "Near-twin: bundesliga:37 is the same fact. Keep this richer one and cut that one",
+  "v": "ok"
+ },
+ "nicknames:17": {
+  "at": "2026-10-17T00:00:38Z",
+  "h": "f459c15958",
+  "note": "Near-twin: bundesliga:40 is the same fact. Keep this richer one and cut that one",
+  "v": "ok"
+ },
+ "nicknames:18": {
+  "at": "2026-10-17T00:00:38Z",
+  "h": "ca57cb17ca",
+  "v": "ok"
+ },
+ "nicknames:19": {
+  "at": "2026-10-17T00:00:38Z",
+  "h": "2bd53089b5",
+  "v": "ok"
+ },
+ "nicknames:2": {
+  "at": "2026-10-17T00:00:38Z",
+  "h": "1b15ed7fef",
+  "v": "ok"
+ },
+ "nicknames:20": {
+  "at": "2026-10-17T00:00:38Z",
+  "h": "be920e9f3e",
+  "note": "Still four titles after 2025–26",
+  "v": "ok"
+ },
+ "nicknames:21": {
+  "at": "2026-10-17T00:00:38Z",
+  "h": "7681066460",
+  "v": "ok"
+ },
+ "nicknames:22": {
+  "at": "2026-10-17T00:00:38Z",
+  "h": "e5c8235518",
+  "v": "ok"
+ },
+ "nicknames:23": {
+  "at": "2026-10-17T00:00:38Z",
+  "h": "3795cec161",
+  "v": "ok"
+ },
+ "nicknames:24": {
+  "at": "2026-10-17T00:00:38Z",
+  "fix": {
+   "ex": "Fürth, three-time German champions, are the Clover Leaves",
+   "means": "The first came before World War I"
+  },
+  "h": "4755b7a037",
+  "note": "“Champions in 1926 and 1929” reads as two titles, but bundesliga.com calls Fürth three-time champions",
+  "v": "fix"
+ },
+ "nicknames:25": {
+  "at": "2026-10-17T00:00:38Z",
+  "h": "8c5542c0dd",
+  "v": "ok"
+ },
+ "nicknames:26": {
+  "at": "2026-10-17T00:00:38Z",
+  "h": "c32aafa73e",
+  "v": "ok"
+ },
+ "nicknames:27": {
+  "at": "2026-10-17T00:00:38Z",
+  "h": "e0658b8d4d",
+  "v": "ok"
+ },
+ "nicknames:28": {
+  "at": "2026-10-17T00:00:38Z",
+  "h": "dd743c2ab4",
+  "v": "ok"
+ },
+ "nicknames:29": {
+  "at": "2026-10-17T00:00:38Z",
+  "h": "b49cbc1321",
+  "note": "Shares the answer Lions with bundesliga:39 (1860 Munich), so the draw keeps them apart",
+  "v": "ok"
+ },
+ "nicknames:3": {
+  "at": "2026-10-17T00:00:38Z",
+  "h": "3c55acff45",
+  "note": "Near-twin: epl-more:61, same story even in the means is the same fact. Keep this richer one and cut that one",
+  "v": "ok"
+ },
+ "nicknames:30": {
+  "at": "2026-10-17T00:00:38Z",
+  "h": "6814703e52",
+  "v": "ok"
+ },
+ "nicknames:31": {
+  "at": "2026-10-17T00:00:38Z",
+  "h": "e0ecee8d00",
+  "v": "ok"
+ },
+ "nicknames:32": {
+  "at": "2026-10-17T00:00:38Z",
+  "h": "96b4c7daa9",
+  "v": "ok"
+ },
+ "nicknames:33": {
+  "at": "2026-10-17T00:00:38Z",
+  "h": "bc5d2b9fbe",
+  "v": "ok"
+ },
+ "nicknames:34": {
+  "at": "2026-10-17T00:00:38Z",
+  "h": "7a5b479f1e",
+  "note": "Near-twin of epl-more:64 (Hull are the Tigers), which this means names",
+  "v": "ok"
+ },
+ "nicknames:35": {
+  "at": "2026-10-17T00:00:38Z",
+  "h": "e81eb23c97",
+  "note": "Near-twin of bundesliga:47 (Hennes is that card’s answer) and of nicknames:15",
+  "v": "ok"
+ },
+ "nicknames:36": {
+  "at": "2026-10-17T00:00:38Z",
+  "h": "e61d4e4164",
+  "note": "Near-twin of bundesliga:38 (Frankfurt are the Eagles)",
+  "v": "ok"
+ },
+ "nicknames:37": {
+  "at": "2026-10-17T00:00:38Z",
+  "h": "033bac269a",
+  "v": "ok"
+ },
+ "nicknames:38": {
+  "at": "2026-10-17T00:00:38Z",
+  "h": "73c95a3389",
+  "v": "ok"
+ },
+ "nicknames:39": {
+  "at": "2026-10-17T00:00:38Z",
+  "h": "71c49c41b0",
+  "v": "ok"
+ },
+ "nicknames:4": {
+  "at": "2026-10-17T00:00:38Z",
+  "h": "b42ca8a6e1",
+  "note": "Near-twin: epl:38, Benfica in both is the same fact. Keep this richer one and cut that one",
+  "v": "ok"
+ },
+ "nicknames:40": {
+  "at": "2026-10-17T00:00:38Z",
+  "h": "e6e00a9a03",
+  "v": "ok"
+ },
+ "nicknames:41": {
+  "at": "2026-10-17T00:00:38Z",
+  "h": "231b516538",
+  "v": "ok"
+ },
+ "nicknames:42": {
+  "at": "2026-10-17T00:00:38Z",
+  "h": "28a37cf6b2",
+  "v": "ok"
+ },
+ "nicknames:43": {
+  "at": "2026-10-17T00:00:38Z",
+  "fix": {
+   "ex": "Nuremberg, nine-time German champions, are known as Der Club",
+   "means": "Eight came before the Bundesliga"
+  },
+  "h": "cfe11036f0",
+  "note": "Fans know Nuremberg as nine-time champions, so “eight-time champions before 1963” invites a “but they have nine.” bundesliga.com: eight before the Bundesliga, a ninth in 1967–68",
+  "v": "fix"
+ },
+ "nicknames:44": {
+  "at": "2026-10-17T00:00:38Z",
+  "h": "c519f49fb4",
+  "v": "ok"
+ },
+ "nicknames:45": {
+  "at": "2026-10-17T00:00:38Z",
+  "h": "fa2815ba6f",
+  "v": "ok"
+ },
+ "nicknames:46": {
+  "at": "2026-10-17T00:00:38Z",
+  "h": "7bd4b688cd",
+  "v": "ok"
+ },
+ "nicknames:47": {
+  "at": "2026-10-17T00:00:38Z",
+  "h": "a05777d6b3",
+  "v": "ok"
+ },
+ "nicknames:48": {
+  "at": "2026-10-17T00:00:38Z",
+  "h": "c6aad97241",
+  "v": "ok"
+ },
+ "nicknames:49": {
+  "at": "2026-10-17T00:00:38Z",
+  "h": "a3e404dcd0",
+  "note": "Too obscure for red: a legend-based old name for Sevilla’s supporters (the source says so), not what fans call the club (Sevillistas, Nervionenses). No decoy logic can make basins gettable",
+  "v": "cut"
+ },
+ "nicknames:5": {
+  "at": "2026-10-17T00:00:38Z",
+  "h": "61b992476b",
+  "note": "Near-twin: epl:36, almost word for word, Stadium of Light in both is the same fact. Keep this richer one and cut that one",
+  "v": "ok"
+ },
+ "nicknames:50": {
+  "at": "2026-10-17T00:00:38Z",
+  "fix": {
+   "ex": "Valencia are known as Che, a local word that means hey"
+  },
+  "h": "9f60b95ea6",
+  "note": "Plays trivially easy: only hey fits “a local way of saying ___,” every other decoy is a noun. “A local word that means ___” takes them all",
+  "v": "fix"
+ },
+ "nicknames:51": {
+  "at": "2026-10-17T00:00:38Z",
+  "h": "dac9296dc4",
+  "v": "ok"
+ },
+ "nicknames:52": {
+  "at": "2026-10-17T00:00:38Z",
+  "h": "e1fcfa168b",
+  "v": "ok"
+ },
+ "nicknames:53": {
+  "at": "2026-10-17T00:00:38Z",
+  "fix": {
+   "d": 2
+  },
+  "h": "ebe9321a28",
+  "note": "Not white: a 10-year-old doesn’t know the word vermilion, and Mallorca’s nickname isn’t a basic. A regular fan gets it from the sound-alike",
+  "v": "fix"
+ },
+ "nicknames:54": {
+  "at": "2026-10-17T00:00:38Z",
+  "h": "2b09ce3a69",
+  "v": "ok"
+ },
+ "nicknames:55": {
+  "at": "2026-10-17T00:00:38Z",
+  "h": "fed42e65db",
+  "v": "ok"
+ },
+ "nicknames:56": {
+  "at": "2026-10-17T00:00:38Z",
+  "h": "299a02baba",
+  "note": "Too obscure for red: Mirandés have never played in the top flight, and young boars can’t be reasoned out from the decoys",
+  "v": "cut"
+ },
+ "nicknames:57": {
+  "at": "2026-10-17T00:00:38Z",
+  "h": "52e786984a",
+  "v": "ok"
+ },
+ "nicknames:58": {
+  "at": "2026-10-17T00:00:38Z",
+  "h": "417fb6d7f3",
+  "v": "ok"
+ },
+ "nicknames:59": {
+  "at": "2026-10-17T00:00:38Z",
+  "fix": {
+   "ex": "Las Palmas fans chant “Pío-Pío” in honor of the island canary"
+  },
+  "h": "095fa939b6",
+  "note": "The article gives it away: only singular decoys fit “the sound of a ___,” and almost all of them are plural. The new wording takes every decoy. Still an honest white",
+  "v": "fix"
+ },
+ "nicknames:6": {
+  "at": "2026-10-17T00:00:38Z",
+  "h": "6dedc09141",
+  "note": "Near-twin: epl:37 is the same fact. Keep this richer one and cut that one",
+  "v": "ok"
+ },
+ "nicknames:60": {
+  "at": "2026-10-17T00:00:38Z",
+  "fix": {
+   "ex": "Real Oviedo’s nickname Carbayones comes from the Asturian word for oak",
+   "means": "A famous old oak, felled in 1879"
+  },
+  "h": "34b2f52fba",
+  "note": "“A famous old ___” only fits the few singular decoys, so it plays easy. laliga.com: carbayón is the Asturian augmentative of oak",
+  "v": "fix"
+ },
+ "nicknames:61": {
+  "at": "2026-10-17T00:00:38Z",
+  "h": "bdb3487a76",
+  "v": "ok"
+ },
+ "nicknames:62": {
+  "at": "2026-10-17T00:00:38Z",
+  "h": "063663fecc",
+  "note": "Near-twin: bundesliga:41 (Werkself), the draw keeps them apart is the same fact. Keep this richer one and cut that one",
+  "v": "ok"
+ },
+ "nicknames:63": {
+  "at": "2026-10-17T00:00:38Z",
+  "h": "c3fd8b6473",
+  "v": "ok"
+ },
+ "nicknames:64": {
+  "at": "2026-10-17T00:00:38Z",
+  "fix": {
+   "ex": "Werder, as in Werder Bremen, is a German word meaning island"
+  },
+  "h": "7019f182aa",
+  "note": "“Means a small river ___” only fits singular decoys, and river all but says island. bundesliga.com: Werder means small islands in a river",
+  "v": "fix"
+ },
+ "nicknames:7": {
+  "at": "2026-10-17T00:00:38Z",
+  "h": "8b9c6b6618",
+  "note": "Near-twin: epl-more:63 is the same fact. Keep this richer one and cut that one",
+  "v": "ok"
+ },
+ "nicknames:8": {
+  "at": "2026-10-17T00:00:38Z",
+  "h": "8bbe80df93",
+  "note": "Near-twin of epl:27, whose means names this answer, and epl-more:66, whose sentence holds it",
+  "v": "ok"
+ },
+ "nicknames:9": {
+  "at": "2026-10-17T00:00:38Z",
+  "h": "eb42f42fdb",
+  "note": "Near-twin: epl-more:66 is the same fact. Keep this richer one and cut that one",
+  "v": "ok"
+ },
  "parents:0": {
   "at": "2026-10-16T23:57:20Z",
   "h": "353220e0e1",
