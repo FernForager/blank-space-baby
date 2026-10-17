@@ -120,6 +120,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 /* the end of the day: the result, and the card that got you */
 #v-end { justify-content: center; gap: 18px; }
 .result { display: flex; flex-direction: column; align-items: center; gap: 12px; }
+.word .run { display: block; margin-top: 4px; font-size: .8em; color: var(--text); }
 .word { margin: 0; font-family: var(--pixel); font-weight: 400; font-size: 20px; line-height: 1.2; color: #fff; text-align: center;
   text-shadow: 0 0 4px rgba(255,255,255,.6), 0 0 12px rgba(92,240,154,.6); }
 .lost { display: flex; flex-direction: column; gap: 10px; }
@@ -186,11 +187,9 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .share .ball-i { display: inline-block; vertical-align: -2px; margin-right: 3px; }
 .share .txt { flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 3px; }
 .sgrid { display: flex; flex-direction: column; gap: 2px; padding-block: 2px; }
-.sgrid:empty { display: none; }
 .srow { display: flex; gap: 2px; align-items: center; }
 .sgrid .ball-i { display: block; margin: 0; }
 .sq { display: block; width: 16px; height: 16px; position: relative; }
-.sq.net { box-sizing: border-box; border: 2px solid var(--btn-ink); border-bottom: 0; background: repeating-linear-gradient(90deg, transparent 0 3px, rgba(30,42,59,.5) 3px 4px), repeating-linear-gradient(0deg, transparent 0 3px, rgba(30,42,59,.5) 3px 4px); }
 .sq.x::before, .sq.x::after { content: ""; position: absolute; left: 0; top: 7px; width: 16px; height: 2px; background: #FF5A5F; transform: rotate(45deg); }
 .sq.x::after { transform: rotate(-45deg); }
 .endrow { display: flex; align-items: center; justify-content: center; gap: 6px; }
@@ -564,25 +563,25 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 
   // ---- the end of the day ----
   var tick;
-  function grid() {   // the tapped cards in order, six to a row: a ball for each right answer, a net after each goal, ❌ for the miss
-    var cells = S.path.filter(function (i) { return S.res[i]; }).map(function (i) { return S.res[i] === 1 ? 'ball' : 'x'; }), rows = [];
-    for (var k = 0; k < cells.length; k += PER) rows.push(cells.slice(k, k + PER).concat(k + PER <= cells.length && cells[k + PER - 1] === 'ball' ? ['net'] : []));
-    return rows;
+  function grid() {   // a ball for each goal, then ❌ if a miss ended the day (Morg, Oct 17, 2026)
+    var g = Math.floor(chips() / PER), r = [];
+    for (var k = 0; k < g; k++) r.push('ball');
+    if (S.res.indexOf(2) >= 0) r.push('x');
+    return r;
   }
-  var EMO = { ball: '⚽', net: '🥅', x: '❌' };
+  function streak() { return chips() ? chips() + ' in a row' : ''; }
   function shareText() {
-    var n = chips(), g = Math.floor(n / PER);
-    return 'Triviela #' + (S.day + 1) + '\n' + grid().map(function (r) { return r.map(function (c) { return EMO[c]; }).join(''); }).join('\n') +
-      (n || S.path.length ? '\n' : '') + RESULT[g] + ' · ' + n + '\ntriviela.net';
+    return 'Triviela #' + (S.day + 1) + '\n' + grid().map(function (c) { return c === 'ball' ? '⚽' : '❌'; }).join('') +
+      '\n' + RESULT[Math.floor(chips() / PER)] + (chips() ? ' · ' + streak() : '') + '\ntriviela.net';
   }
   function end() {
     var n = chips(), g = Math.floor(n / PER), lost = S.res.indexOf(2), L = S.tiles[lost];
-    var word = RESULT[g] + ' · ' + n;
-    $('v-end').innerHTML = '<div class="result">' + lampsHTML(g, 3) + '<p class="word">' + num(esc(word)) + '</p></div>' +
+    var word = RESULT[g] + (n ? ' · ' + streak() : '');
+    $('v-end').innerHTML = '<div class="result">' + lampsHTML(g, 3) + '<p class="word">' + esc(RESULT[g]) + (n ? '<span class="run">' + num(esc(streak())) + '</span>' : '') + '</p></div>' +
       (L ? '<div class="lost"><p class="' + size(L) + ' missed">' + sentence(L, true) + '</p><p class="means">' + num(keep(esc(L.m))) + '</p></div>' : ballHTML(6));
     $('share-top').innerHTML = 'Triviela #' + num(String(S.day + 1));
     $('share-txt').innerHTML = num(esc(word)) + '<br>triviela.net';
-    $('share-grid').innerHTML = '<span class="sgrid">' + grid().map(function (r) { return '<span class="srow">' + r.map(function (c) { return c === 'ball' ? svg('ball', 2, 'ball-i', true) : '<i class="sq ' + c + '"></i>'; }).join('') + '</span>'; }).join('') + '</span>';
+    $('share-grid').innerHTML = '<span class="sgrid"><span class="srow">' + grid().map(function (c) { return c === 'ball' ? svg('ball', 2, 'ball-i', true) : '<i class="sq x"></i>'; }).join('') + '</span></span>';
     $('share-mark').innerHTML = svg('share', 3);
     beta(L, 'end'); view('end'); clearInterval(tick); endRow(); if (!DEMO) tick = setInterval(clock, 1000);
   }

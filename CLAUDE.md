@@ -97,7 +97,7 @@ This was `main` until Oct 17, 2026, when the daily game replaced it on the live 
   ⚽⚽ Brace · 17
   triviela.net
   ```
-  Since Oct 17, 2026 (Morg's call, on the beta first, so a stranger sees soccer at a glance) a grid sits under the title: a ⚽ per right answer in tap order, six to a row, a 🥅 closing each full row (a goal) and ❌ on the miss. The result line drops its balls (`Brace · 17`, `Nil · 4`). The share key draws the same grid. Colored squares by tile were tried first and dropped the same day.
+  Since Oct 17, 2026 (Morg's call, on the beta first) it reads `Triviela #42`, then a ⚽ per goal with ❌ if a miss ended the day (`⚽⚽❌`, a perfect day `⚽⚽⚽`), then `Brace · 17 in a row` (a day with no right answer reads just `Nil`), then triviela.net. The count is a streak, since one miss ends the day, so "17" alone or "17/18" read wrong. The end screen shows the same words, with "17 in a row" on its own line. Tried and dropped the same day: tile-colored squares (yellow and red read as punishment), a ball per right answer (too many balls, the goals didn't pop), balls with dots for leftover chips (needed explaining), and a ⭐ (the game has no stars).
 - **Colors shown at launch** (locked). Hidden-until-answered can be tried with a few serious fans in the playtest.
 - **Reset at local midnight,** like Wordle. Each date has one puzzle number, and everyone who plays #42 gets the same board.
 - **Repeats:** a card can come back, but never within 3 months. (At 18 a day, never repeating in a year would need about 6,500 cards.)
