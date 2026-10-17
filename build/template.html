@@ -18,7 +18,8 @@
   --body-font: "Pixelify Sans", ui-rounded, "SF Pro Rounded", system-ui, sans-serif;
   color-scheme: dark;
 }
-html, body { height: 100%; }
+html, body { height: 100%; overflow: hidden; overscroll-behavior: none; touch-action: manipulation; }   /* the cabinet stays put: no rubber-band bounce on iPhone (Morg, Oct 17, 2026) */
+body { position: fixed; inset: 0; margin: 0; }
 body { background: var(--body); color: var(--text); font-family: var(--body-font); font-weight: 600; -webkit-font-smoothing: antialiased; font-variant-ligatures: none; -webkit-user-select: none; user-select: none; }
 button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none; }
 .cab { max-width: 420px; height: 100%; margin: 0 auto; box-sizing: border-box; display: flex; flex-direction: column; gap: 12px;
