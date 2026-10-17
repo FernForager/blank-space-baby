@@ -4106,14 +4106,10 @@
   "v": "ok"
  },
  "laliga:13": {
-  "at": "2026-10-17T00:45:18Z",
-  "fix": {
-   "ex": "Telmo Zarra held LaLiga’s all-time scoring record from 1955 to 2014",
-   "hook": "1955"
-  },
-  "h": "5a63fe7454",
-  "note": "laliga.com disagrees with itself on Zarra’s total: the Messi LFP trophy page (the src) says 251, the LaLiga of records page says 253. Both agree he held the all-time record until Messi passed him in 2014, so the fix drops the disputed number from the sentence and the tile",
-  "v": "fix"
+  "at": "2026-10-17T00:47:54Z",
+  "h": "e1e6727d9d",
+  "note": "laliga.com Messi LFP trophy page (the src): Zarra’s all-time LaLiga scoring record stood until Messi passed him with a hat trick in November 2014. No goal total on the card, so the site’s 251 versus 253 split no longer matters. None of the drawable players held that record",
+  "v": "ok"
  },
  "laliga:14": {
   "at": "2026-10-17T00:08:54Z",
