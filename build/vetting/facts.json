@@ -5134,6 +5134,12 @@
   "note": "src: Wondolowski passed Donovan in 2019 with the only four-goal game of his career that day",
   "v": "ok"
  },
+ "mls:16": {
+  "at": "2026-10-17T00:19:50Z",
+  "h": "ea3c106964",
+  "note": "src shows Vela’s MLS single-season record 34 goals for LAFC in 2019. MVP from mlssoccer.com/news/lafc-s-carlos-vela-named-2019-landon-donovan-mls-mvp. Still the record today: mlssoccer.com/stats/players shows 2025 leader Messi 29 and 2026 leader Messi 23. No wrong answer fits",
+  "v": "ok"
+ },
  "mls:17": {
   "at": "2026-10-17T00:11:44Z",
   "h": "1ab5edbaa6",
@@ -5407,6 +5413,12 @@
   "note": "src: Seattle beat Inter Miami 3–0 in the final at Lumen Field before a Leagues Cup and club-record 69,314",
   "v": "ok"
  },
+ "mls:58": {
+  "at": "2026-10-17T00:19:50Z",
+  "h": "dfecd61a76",
+  "note": "src shows Sounders beat Pumas UNAM 3–0, 5–2 on aggregate, to win the 2022 Concacaf Champions League. Rename to Champions Cup from 2024 at mlssoccer.com/news/concacaf-rebrands-premier-regional-competition-increases-prize-money",
+  "v": "ok"
+ },
  "mls:59": {
   "at": "2026-10-17T00:11:44Z",
   "h": "22fd928fcb",
@@ -5549,6 +5561,12 @@
   "note": "bundesliga.com Darmstadt guide: the Lilies, named for the flower on the city and club’s crests",
   "v": "ok"
  },
+ "nicknames:24": {
+  "at": "2026-10-17T00:19:58Z",
+  "h": "1abc5527d3",
+  "note": "src calls Fürth the Clover Leaves and three-time champions of Germany, with the pre–World War I title followed by 1926 and 1929. Minor: Fürth play in green and white, but the page never calls them Green-Whites, so that wrong answer stands",
+  "v": "ok"
+ },
  "nicknames:25": {
   "at": "2026-10-17T00:11:28Z",
   "h": "8c5542c0dd",
@@ -5583,6 +5601,24 @@
   "at": "2026-10-17T00:11:28Z",
   "h": "3c55acff45",
   "note": "premierleague.com club names history page: students from Borough Road College shouted “Buck up Bs”, the media heard bees",
+  "v": "ok"
+ },
+ "nicknames:30": {
+  "at": "2026-10-17T00:19:50Z",
+  "h": "6814703e52",
+  "note": "src: red devil holding a pitchfork on the crest, popularised by Busby in the 1960s with the Red Devils nickname. Wrong answers checked: PL article shows Brighton seagull, Brentford bee, Palace eagle, Hull tiger head. Crests served by laliga.com and bundesliga.com viewed: Osasuna lion, Villarreal stripes, Rayo lightning bolt, Betis crown, Celta cross, Deportivo crown and cross, Elche figure and tower, Cologne goat, Frankfurt eagle, Nuremberg 1. FCN lettering. No red devil",
+  "v": "ok"
+ },
+ "nicknames:31": {
+  "at": "2026-10-17T00:19:50Z",
+  "h": "e0ecee8d00",
+  "note": "src: crest includes only the club name and a white seagull in mid-flight, seagull on the crest since 1977 except 2001/02. Same crest check as nicknames:30: no other listed club has a seagull (Palace and Frankfurt have eagles)",
+  "v": "ok"
+ },
+ "nicknames:32": {
+  "at": "2026-10-17T00:19:50Z",
+  "h": "96b4c7daa9",
+  "note": "src: centrepiece is a buff-tailed bumblebee. Same crest check as nicknames:30: no other listed club has a bee",
   "v": "ok"
  },
  "nicknames:33": {
@@ -5652,6 +5688,12 @@
   "at": "2026-10-17T00:11:28Z",
   "h": "28a37cf6b2",
   "note": "laliga.com: rojillos from red shirts in the colors of the Navarre flag, club formed in Pamplona in 1920. No other deck answer fits the blank",
+  "v": "ok"
+ },
+ "nicknames:43": {
+  "at": "2026-10-17T00:19:50Z",
+  "h": "81e18b9b46",
+  "note": "src: known as Der Club, eight-time champions at the Bundesliga’s creation, then won 1967/68, so nine. No wrong answer has nine German titles or that nickname",
   "v": "ok"
  },
  "nicknames:44": {
@@ -5748,6 +5790,12 @@
   "at": "2026-10-17T00:11:40Z",
   "h": "0bb49d3beb",
   "note": "premierleague.com club names history page: Cherries either from the red striped shirts or the cherry trees on the Cooper-Dean estate next to Dean Court",
+  "v": "ok"
+ },
+ "nicknames:60": {
+  "at": "2026-10-17T00:19:50Z",
+  "h": "9a1308fb02",
+  "note": "src: El Carbayón is the augmentative of the Asturian word for oak, an old oak on Uría Street cut down in 1879",
   "v": "ok"
  },
  "nicknames:61": {
