@@ -2947,6 +2947,396 @@
   "note": "premier-league-explained: top tier with 20 teams, Championship is the second tier, teams play each other home and away",
   "v": "ok"
  },
+ "intl-women:0": {
+  "at": "2026-10-17T00:15:03Z",
+  "h": "6afd222ec0",
+  "note": "fifa.com every-final-highlights (now at /en/tournaments/womens/womensworldcup/brazil-2027/articles/every-final-highlights, read via cxm-api.fifa.com): USA beat Norway 2-1 in 1991, both goals Michelle Akers",
+  "v": "ok"
+ },
+ "intl-women:1": {
+  "at": "2026-10-17T00:14:49Z",
+  "h": "2998a382e3",
+  "note": "fifa.com every-final-highlights (now at /en/tournaments/womens/womensworldcup/brazil-2027/articles/every-final-highlights, read via cxm-api.fifa.com): Norway beat Germany 2-0 in 1995, goals from Hege Riise and Marianne Pettersen",
+  "v": "ok"
+ },
+ "intl-women:10": {
+  "at": "2026-10-17T00:14:49Z",
+  "h": "63e5cc3985",
+  "note": "fifa.com every-final-highlights (now at /en/tournaments/womens/womensworldcup/brazil-2027/articles/every-final-highlights, read via cxm-api.fifa.com): China PR 1991 was the first edition, and China hosted for the second time in 2007",
+  "v": "ok"
+ },
+ "intl-women:12": {
+  "at": "2026-10-17T00:14:49Z",
+  "h": "391d17c96e",
+  "note": "fifa.com every-final-highlights (now at /en/tournaments/womens/womensworldcup/brazil-2027/articles/every-final-highlights, read via cxm-api.fifa.com): 2023 was the first Women’s World Cup played across two countries (Australia and New Zealand)",
+  "v": "ok"
+ },
+ "intl-women:13": {
+  "at": "2026-10-17T00:15:03Z",
+  "h": "3b65c0f1ec",
+  "note": "fifa.com every Marta goal (Feb 2026, via cxm-api.fifa.com): her 17 goals remain unmatched, first to score at five World Cups (she played at six, so “at five” means scored at five, still true). No Women’s World Cup since 2023",
+  "v": "ok"
+ },
+ "intl-women:14": {
+  "at": "2026-10-17T00:15:03Z",
+  "h": "e9fc7c8ce9",
+  "note": "ussoccer.com timeline 2019: Rapinoe won the Golden Ball and the Golden Boot with six goals",
+  "v": "ok"
+ },
+ "intl-women:15": {
+  "at": "2026-10-17T00:15:03Z",
+  "h": "186ad279f7",
+  "note": "ussoccer.com timeline 2012: 2-1 win over Japan at Wembley, Carli Lloyd scored both goals",
+  "v": "ok"
+ },
+ "intl-women:16": {
+  "at": "2026-10-17T00:15:03Z",
+  "h": "fecf5e4191",
+  "note": "ussoccer.com story (fetched with curl): Morgan’s five goals tied Michelle Akers for most in a single World Cup match in the 13-0 win over Thailand",
+  "v": "ok"
+ },
+ "intl-women:17": {
+  "at": "2026-10-17T00:15:03Z",
+  "h": "e880781d59",
+  "note": "ussoccer.com 1999 Women’s World Cup page: Chastain scored the winning penalty in a 5-4 shootout over China",
+  "v": "ok"
+ },
+ "intl-women:18": {
+  "at": "2026-10-17T00:14:49Z",
+  "h": "ed02cf5b13",
+  "note": "fifa.com a-brief-history-of-the-best (via cxm-api.fifa.com): inaugural Women’s World Player award in 2001 went to Mia Hamm, who won the first two. Also ussoccer.com timeline 2001",
+  "v": "ok"
+ },
+ "intl-women:19": {
+  "at": "2026-10-17T00:14:49Z",
+  "h": "1a1a2a4e64",
+  "note": "ussoccer.com timeline 2013: Wambach surpassed Mia Hamm’s record of 158 and ended the year on 163",
+  "v": "ok"
+ },
+ "intl-women:2": {
+  "at": "2026-10-17T00:14:49Z",
+  "h": "f5b0e839c7",
+  "note": "fifa.com every-final-highlights (now at /en/tournaments/womens/womensworldcup/brazil-2027/articles/every-final-highlights, read via cxm-api.fifa.com): Germany won 2003 and 2007, the first back-to-back winners",
+  "v": "ok"
+ },
+ "intl-women:20": {
+  "at": "2026-10-17T00:14:49Z",
+  "h": "0339181bac",
+  "note": "fifa.com Sinclair article (Sept 2026, via cxm-api.fifa.com): 190 goals in 331 caps, remains international football’s highest goalscorer, men’s and women’s",
+  "v": "ok"
+ },
+ "intl-women:21": {
+  "at": "2026-10-17T00:15:03Z",
+  "h": "e9cf245ef2",
+  "note": "fifa.com 2025 winner article (via cxm-api.fifa.com): Spain and Barcelona midfielder voted The Best FIFA Women’s Player for a third straight year",
+  "v": "ok"
+ },
+ "intl-women:22": {
+  "at": "2026-10-17T00:15:03Z",
+  "h": "2dd152f04d",
+  "note": "fifa.com all-time appearances article (via cxm-api.fifa.com): Sawa captained Japan to victory at Germany 2011 and won the Golden Boot and Ball",
+  "v": "ok"
+ },
+ "intl-women:23": {
+  "at": "2026-10-17T00:15:03Z",
+  "h": "a51af77c93",
+  "note": "ussoccer.com Paris 2024 by the numbers: USA beat Brazil 1-0 in the final at Parc des Princes, Paris, Swanson scored the goal",
+  "v": "ok"
+ },
+ "intl-women:24": {
+  "at": "2026-10-17T00:15:03Z",
+  "h": "5ef9a74546",
+  "note": "fifa.com every-final-highlights (now at /en/tournaments/womens/womensworldcup/brazil-2027/articles/every-final-highlights, read via cxm-api.fifa.com): Olga Carmona’s first-half strike gave Spain a 1-0 win over England",
+  "v": "ok"
+ },
+ "intl-women:25": {
+  "at": "2026-10-17T00:15:03Z",
+  "h": "6787b5399f",
+  "note": "uefa.com 2022 final report: Kelly scored the 110th-minute winner after coming on for Mead in the 64th minute",
+  "v": "ok"
+ },
+ "intl-women:26": {
+  "at": "2026-10-17T00:15:03Z",
+  "h": "89ac880da6",
+  "note": "fifa.com every-final-highlights (now at /en/tournaments/womens/womensworldcup/brazil-2027/articles/every-final-highlights, read via cxm-api.fifa.com): Michelle Akers scored both goals in the 2-1 win over Norway at China PR 1991",
+  "v": "ok"
+ },
+ "intl-women:27": {
+  "at": "2026-10-17T00:15:03Z",
+  "h": "170b0f7915",
+  "note": "fifa.com all-time appearances article (via cxm-api.fifa.com): Formiga the only player, regardless of gender, at seven World Cups, starting at Sweden 1995. No later tournament gives anyone a seventh",
+  "v": "ok"
+ },
+ "intl-women:28": {
+  "at": "2026-10-17T00:15:03Z",
+  "h": "7b01925f95",
+  "note": "ussoccer.com Paris 2024 by the numbers: Naeher the first keeper with clean sheets in a World Cup final (2019) and an Olympic gold medal game (2024)",
+  "v": "ok"
+ },
+ "intl-women:29": {
+  "at": "2026-10-17T00:14:49Z",
+  "h": "fe90f657f6",
+  "note": "ussoccer.com Hayes bio: Olympic gold in her 10th match in charge. Final 1-0 over Brazil per ussoccer.com timeline 2024 and the Paris 2024 by-the-numbers story",
+  "v": "ok"
+ },
+ "intl-women:3": {
+  "at": "2026-10-17T00:14:49Z",
+  "h": "7b576f313f",
+  "note": "fifa.com every-final-highlights (now at /en/tournaments/womens/womensworldcup/brazil-2027/articles/every-final-highlights, read via cxm-api.fifa.com): Japan beat USA on penalties after 2-2 in 2011 to claim their first Women’s World Cup",
+  "v": "ok"
+ },
+ "intl-women:30": {
+  "at": "2026-10-17T00:14:49Z",
+  "h": "cb621a1bd1",
+  "note": "uefa.com coach records page: Wiegman won 2017 (Netherlands), 2022 and 2025 (England)",
+  "v": "ok"
+ },
+ "intl-women:31": {
+  "at": "2026-10-17T00:14:49Z",
+  "h": "30edbce1a2",
+  "note": "ussoccer.com Ellis farewell story: World Cup titles 2015 and 2019, never lost a World Cup match (13-0-1)",
+  "v": "ok"
+ },
+ "intl-women:32": {
+  "at": "2026-10-17T00:14:49Z",
+  "h": "dde06518b1",
+  "note": "ussoccer.com timeline 2008: led by Pia Sundhage, the USA won the Beijing Olympics for their third gold medal",
+  "v": "ok"
+ },
+ "intl-women:33": {
+  "at": "2026-10-17T00:14:49Z",
+  "h": "648f821ec3",
+  "note": "ussoccer.com 2018 Hall of Fame story: DiCicco at the helm for the 1999 title and led the USA to the first Olympic gold in 1996",
+  "v": "ok"
+ },
+ "intl-women:34": {
+  "at": "2026-10-17T00:14:49Z",
+  "h": "0133f54d0f",
+  "note": "ussoccer.com The First Star: Anson Dorrance directed the squad that won the first Women’s World Cup in Guangzhou, China, 1991. Note: DiCicco (a wrong answer) was on that 1991 coaching staff per the ussoccer.com Hall of Fame story, but Dorrance was the head coach, so the sentence holds",
+  "v": "ok"
+ },
+ "intl-women:35": {
+  "at": "2026-10-17T00:14:49Z",
+  "h": "84c8b8a9da",
+  "note": "uefa.com 1984 Sweden take first title (now under /womenseuro/news/): Sweden beat England on penalties in the two-legged final of the first UEFA women’s competition, 27 May 1984",
+  "v": "ok"
+ },
+ "intl-women:36": {
+  "at": "2026-10-17T00:14:49Z",
+  "h": "6644ffc769",
+  "note": "fifa.com Paris 2024 medal winners: maiden competition held at Atlanta 1996, USA gold 1996 (read via the site’s own cxm-api.fifa.com JSON)",
+  "v": "ok"
+ },
+ "intl-women:37": {
+  "at": "2026-10-17T00:14:49Z",
+  "h": "a38737155c",
+  "note": "ussoccer.com 1999 Women’s World Cup page: first nation to win on home soil, 5–4 on penalties before 90,125 at the Rose Bowl",
+  "v": "ok"
+ },
+ "intl-women:38": {
+  "at": "2026-10-17T00:14:49Z",
+  "h": "0f8cc4c74c",
+  "note": "fifa.com every final (updated Aug 2026): USA downed Japan 5–2 in the highest-scoring final",
+  "v": "ok"
+ },
+ "intl-women:39": {
+  "at": "2026-10-17T00:14:49Z",
+  "h": "5c279456b7",
+  "note": "ussoccer.com timeline 2019: first team to go 7-0-0 at a Women’s World Cup. The 13–0 opening win over Thailand is on https://www.ussoccer.com/stories/2019/06/after-record-world-cup-opening-win-usa-faces-chile-in-paris",
+  "v": "ok"
+ },
+ "intl-women:4": {
+  "at": "2026-10-17T00:14:49Z",
+  "h": "39afd9022b",
+  "note": "fifa.com every-final-highlights (now at /en/tournaments/womens/womensworldcup/brazil-2027/articles/every-final-highlights, read via cxm-api.fifa.com): Spain beat England 1-0 in 2023, the first final for both",
+  "v": "ok"
+ },
+ "intl-women:40": {
+  "at": "2026-10-17T00:14:49Z",
+  "h": "ada2f02b67",
+  "note": "inside.fifa.com 2019 release: field expanded from 24 to 32 teams as of the 2023 edition",
+  "v": "ok"
+ },
+ "intl-women:41": {
+  "at": "2026-10-17T00:14:49Z",
+  "h": "304c1d72d5",
+  "note": "fifa.com champions page lists 1991, 1999, 2015, 2019. Still four today: fifa.com every final article (Aug 2026) says the 1991 title was the first of USA’s four and Spain are the current holders",
+  "v": "ok"
+ },
+ "intl-women:42": {
+  "at": "2026-10-17T00:14:49Z",
+  "h": "4bd4eb1b92",
+  "note": "ussoccer.com Paris 2024 by the numbers: fifth Olympic gold, four more than any other nation. No Olympic tournament since",
+  "v": "ok"
+ },
+ "intl-women:43": {
+  "at": "2026-10-17T00:14:49Z",
+  "h": "18483ffe86",
+  "note": "uefa.com Germany records article (July 2025): most titles 8, most consecutive 6 (1995–2013). England won 2025, so still current",
+  "v": "ok"
+ },
+ "intl-women:44": {
+  "at": "2026-10-17T00:14:49Z",
+  "h": "5b2e642bee",
+  "note": "fifa.com every final: first edition featured only 12 teams, China PR 1991",
+  "v": "ok"
+ },
+ "intl-women:45": {
+  "at": "2026-10-17T00:14:49Z",
+  "h": "efad17bc42",
+  "note": "inside.fifa.com Council release: expansion to 48 teams as of 2031, matches up from 64 to 104",
+  "v": "ok"
+ },
+ "intl-women:46": {
+  "at": "2026-10-17T00:14:49Z",
+  "h": "2d1d66fbf0",
+  "note": "fifa.com appearances article: world-record 354 appearances over some 24 years. Still the record today: fifa.com Sinclair article (Sept 2026) puts Sinclair second on 331 behind Lilly’s 354 https://www.fifa.com/en/tournaments/womens/u20womensworldcup/poland-2026/articles/christine-sinclair-before-they-became-stars",
+  "v": "ok"
+ },
+ "intl-women:47": {
+  "at": "2026-10-17T00:14:49Z",
+  "h": "eba63da3cc",
+  "note": "ussoccer.com 1999 Women’s World Cup page: final before a sell-out 90,125 at the Rose Bowl in Pasadena",
+  "v": "ok"
+ },
+ "intl-women:48": {
+  "at": "2026-10-17T00:15:03Z",
+  "h": "d37f91efa2",
+  "note": "fifa.com Maracanã article (Aug 2026): the Maracanã in Rio de Janeiro stages the final on 25 July 2027",
+  "v": "ok"
+ },
+ "intl-women:49": {
+  "at": "2026-10-17T00:14:49Z",
+  "h": "0af01f6ebd",
+  "note": "fifa.com champions article: the 2023 final at Stadium Australia in Sydney",
+  "v": "ok"
+ },
+ "intl-women:5": {
+  "at": "2026-10-17T00:14:49Z",
+  "h": "dc05bca811",
+  "note": "uefa.com Women’s EURO every final: 2022 England 2-1 Germany (aet), 2025 England 1-1 Spain (3-1 pens)",
+  "v": "ok"
+ },
+ "intl-women:50": {
+  "at": "2026-10-17T00:14:49Z",
+  "fix": {
+   "src": "https://www.uefa.com/womenseuro/news/029b-1e56a4b43051-3ec6381b01f6-1000--england-1-1-spain-aet-3-1-pens-highlights-lionesses-win-wo/"
+  },
+  "h": "9267d78ddb",
+  "note": "The src (2022 final report) shows Wembley and the 87,192 crowd but never names London. The uefa.com 2025 final page lists past finals with “2022: England 2-1 Germany (aet), London, England”. Means stays supported by the 2022 report",
+  "v": "fix"
+ },
+ "intl-women:51": {
+  "at": "2026-10-17T00:14:49Z",
+  "h": "0dcf37061c",
+  "note": "uefa.com 2025 final page: England 1-1 Spain (aet, 3-1 pens), past-finals list gives Basel, Switzerland",
+  "v": "ok"
+ },
+ "intl-women:52": {
+  "at": "2026-10-17T00:14:49Z",
+  "h": "f3cb84110a",
+  "note": "ussoccer.com 85ers story (Mar 2026): first ever match 18 Aug 1985 at the tournament in Jesolo, Italy",
+  "v": "ok"
+ },
+ "intl-women:53": {
+  "at": "2026-10-17T00:14:49Z",
+  "h": "4333143f69",
+  "note": "fifa.com 2023 awards article: Aitana Bonmati, adidas Golden Ball for the best player",
+  "v": "ok"
+ },
+ "intl-women:54": {
+  "at": "2026-10-17T00:14:49Z",
+  "h": "65e857f170",
+  "note": "fifa.com Miyazawa article: five goals won the adidas Golden Boot",
+  "v": "ok"
+ },
+ "intl-women:55": {
+  "at": "2026-10-17T00:14:49Z",
+  "h": "566544930e",
+  "note": "fifa.com 2023 awards article: Mary Earps, adidas Golden Glove",
+  "v": "ok"
+ },
+ "intl-women:56": {
+  "at": "2026-10-17T00:14:49Z",
+  "h": "f733c9cfa3",
+  "note": "ussoccer.com Paris 2024 by the numbers (the src): the lone gold-medal-match loss came to Norway on a golden goal in overtime in 2000. The fifa.com Paris 2024 medal page says penalties instead, so the deck’s official sites disagree. The desk may want to weigh it",
+  "v": "ok"
+ },
+ "intl-women:57": {
+  "at": "2026-10-17T00:14:49Z",
+  "fix": {
+   "src": "https://www.fifa.com/en/articles/lilly-formiga-and-more-all-time-womens-world-cup-appearances-australia-new-zealand-2023"
+  },
+  "h": "adab7f17ad",
+  "note": "The src (every final) shows Lloyd’s hat trick but not the 16 minutes or the lob. The fifa.com appearances article shows a 16-minute hat-trick against Japan capped by a half-way line lob",
+  "v": "fix"
+ },
+ "intl-women:58": {
+  "at": "2026-10-17T00:14:49Z",
+  "h": "cbf064e85d",
+  "note": "ussoccer.com timeline 2016: won the inaugural SheBelieves Cup with wins over England, France and Germany",
+  "v": "ok"
+ },
+ "intl-women:59": {
+  "at": "2026-10-17T00:14:49Z",
+  "h": "537d3f49d2",
+  "note": "fifa.com Sinclair article (Sept 2026): senior debut aged 16 at the 2000 Algarve Cup, with three goals",
+  "v": "ok"
+ },
+ "intl-women:6": {
+  "at": "2026-10-17T00:14:49Z",
+  "h": "e694645dfd",
+  "note": "fifa.com every-final-highlights (now at /en/tournaments/womens/womensworldcup/brazil-2027/articles/every-final-highlights, read via cxm-api.fifa.com): Brazil 2027 is the first Women’s World Cup on South American soil",
+  "v": "ok"
+ },
+ "intl-women:60": {
+  "at": "2026-10-17T00:14:49Z",
+  "h": "fcd4abddb8",
+  "note": "fifa.com every Marta goal article: Marta’s strikes inspired the FIFA Marta Award, presented annually for the finest goal in women’s football, and her 17 World Cup goals",
+  "v": "ok"
+ },
+ "intl-women:61": {
+  "at": "2026-10-17T00:14:49Z",
+  "h": "ee05257f8a",
+  "note": "uefa.com 2025 final page: Lionesses retain the title, second consecutive Women’s EURO",
+  "v": "ok"
+ },
+ "intl-women:62": {
+  "at": "2026-10-17T00:15:03Z",
+  "h": "e70a0ebe4e",
+  "note": "fifa.com Matildas nickname article: after a 1995 World Cup warm-up, SBS TV ran a poll and Matildas beat Soccertoos, Blue Flyers and others. The page implies 1995 (Women’s Socceroos until 1995) rather than dating the poll outright",
+  "v": "ok"
+ },
+ "intl-women:63": {
+  "at": "2026-10-17T00:14:49Z",
+  "h": "96688d7323",
+  "note": "fifa.com Miyazawa article calls Japan the Nadeshiko. 2011 title on the fifa.com every final article",
+  "v": "ok"
+ },
+ "intl-women:65": {
+  "at": "2026-10-17T00:14:49Z",
+  "h": "d417024cfc",
+  "note": "ussoccer.com story titled “BTC: 99ers Honored in Los Angeles” about the 1999 title team at the Rose Bowl",
+  "v": "ok"
+ },
+ "intl-women:7": {
+  "at": "2026-10-17T00:14:49Z",
+  "h": "bd379f32ea",
+  "note": "uefa.com 2017 final page: hosts Netherlands beat Denmark 4-2, two first-time finalists. uefa.com 2022 final page lists the Netherlands with one title",
+  "v": "ok"
+ },
+ "intl-women:8": {
+  "at": "2026-10-17T00:14:49Z",
+  "h": "13f44ba7e1",
+  "note": "fifa.com Olympic medal winners page: Sweden lost to Germany at Rio 2016 and to Canada on penalties at Tokyo 2020",
+  "v": "ok"
+ },
+ "intl-women:9": {
+  "at": "2026-10-17T00:14:49Z",
+  "h": "42cb4374ea",
+  "note": "fifa.com Olympic medal winners page: Canada beat Sweden in a penalty shootout for Tokyo 2020 gold",
+  "v": "ok"
+ },
  "laliga:0": {
   "at": "2026-10-17T00:09:16Z",
   "h": "b58d08f493",
