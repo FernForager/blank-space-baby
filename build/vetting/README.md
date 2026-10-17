@@ -10,10 +10,12 @@ back to the reviewers and the hub, or lock it, which keeps it as it is for good.
 | `editor.json` | the writing editor: Strunk & White, Chicago, Merriam-Webster’s Collegiate and the house style | `vet-editor` |
 | `facts.json` | the fact checker: every fact against the deck’s one official source, independently | `vet-facts` |
 | `morg.json` | Morg’s flags and locks, synced from the beta’s database by `tools/vet.py marks` | `daily` |
+| `desk.json` | the fixes Trivelle applied as proposed, each counting as its proposer’s ok | `daily` |
 
 Each reviewer writes only its own file, on its own branch, with `tools/vet.py apply`. Trivelle merges the branches
 into `daily`, applies the fixes (`tools/vet.py fixes`, `take`, `out`) and rebuilds. A fix changes a card’s
-fingerprint, so it goes back to all three. Read `python3 tools/vet.py` for every command.
+fingerprint, so it goes back to the other two reviewers. A fix applied exactly as proposed counts as its proposer’s ok,
+recorded by Trivelle in `desk.json`, so it doesn’t come back to you. Read `python3 tools/vet.py` for every command.
 
 ## The rules every reviewer follows
 
