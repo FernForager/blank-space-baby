@@ -2408,45 +2408,45 @@
   "v": "ok"
  },
  "epl-more:42": {
-  "at": "2026-10-17T00:05:08Z",
-  "h": "7d023ee374",
-  "note": "premierleague.com/en/premier-league-explained: one point for a draw, three for a win",
+  "at": "2026-10-17T00:20:31Z",
+  "h": "9803dce0ba",
+  "note": "Explained page: three points for a win, one for a draw and none for a defeat",
   "v": "ok"
  },
  "epl-more:43": {
-  "at": "2026-10-17T00:04:54Z",
-  "h": "a349c755f5",
-  "note": "premierleague.com/en/stats/records: most points without winning the title, 97, Liverpool 2018/19",
+  "at": "2026-10-17T00:20:31Z",
+  "h": "03680fdb11",
+  "note": "premierleague.com/en/stats/records: most PL points in a season without winning the title, 97 Liverpool 2018/19",
   "v": "ok"
  },
  "epl-more:44": {
-  "at": "2026-10-17T00:04:54Z",
-  "h": "9cc7e34c4e",
-  "note": "premierleague.com/en/stats/records: fewest goals conceded 15 and most clean sheets 25, Chelsea 2004/05",
+  "at": "2026-10-17T00:20:31Z",
+  "h": "d9f809807d",
+  "note": "premierleague.com/en/stats/records: fewest goals conceded in a season 15 Chelsea 2004/05, most clean sheets 25 Chelsea 2004/05",
   "v": "ok"
  },
  "epl-more:45": {
-  "at": "2026-10-17T00:05:08Z",
-  "h": "738cb465b7",
-  "note": "premierleague.com/en/premier-league-explained: six ever-presents incl. Everton, records page lists them 1992/93 to date",
+  "at": "2026-10-17T00:20:31Z",
+  "h": "7ece52eb57",
+  "note": "premierleague.com/en/premier-league-explained: six ever-present clubs, Arsenal, Chelsea, Everton, Liverpool, Man Utd and Tottenham (also on the records page)",
   "v": "ok"
  },
  "epl-more:46": {
-  "at": "2026-10-17T00:04:54Z",
-  "h": "0b15e2634e",
+  "at": "2026-10-17T00:20:31Z",
+  "h": "d2954bd762",
   "note": "premierleague.com/en/premier-league-explained: seven different winners since 1992, champions list shows 2025/26 Arsenal",
   "v": "ok"
  },
  "epl-more:47": {
-  "at": "2026-10-17T00:04:54Z",
-  "h": "b9f2342d5c",
-  "note": "premierleague.com/en/stats/records: longest unbeaten home run 86, Chelsea 21 Feb 2004 to 26 Oct 2008",
+  "at": "2026-10-17T00:20:31Z",
+  "h": "eb079965dd",
+  "note": "premierleague.com/en/stats/records: longest PL unbeaten home run 86 Chelsea (21 Feb 2004 – 26 Oct 2008)",
   "v": "ok"
  },
  "epl-more:48": {
-  "at": "2026-10-17T00:04:54Z",
-  "h": "98e4b28122",
-  "note": "premierleague.com/en/stats/records: most goals in a season 106, Man City 2017/18",
+  "at": "2026-10-17T00:20:31Z",
+  "h": "6a98529a78",
+  "note": "premierleague.com/en/stats/records: most PL goals in a season 106 Man City 2017/18",
   "v": "ok"
  },
  "epl-more:49": {
@@ -2588,9 +2588,9 @@
   "v": "ok"
  },
  "epl:0": {
-  "at": "2026-10-17T00:02:26Z",
-  "h": "52f11c42dd",
-  "note": "stats/records: most PL title wins 13 Manchester United, all listed seasons match Ferguson's 13 on news 4660971 (every title-winning manager). Still true after 2025/26",
+  "at": "2026-10-17T00:20:23Z",
+  "h": "05611bef61",
+  "note": "Records page: highest PL scoring draw 5–5 West Brom v Man United 19 May 2013. Means from premierleague.com/news/582185: the Hawthorns was the scene of Ferguson’s 810th and final Premier League outing, a 5–5 draw",
   "v": "ok"
  },
  "epl:1": {
@@ -2717,9 +2717,9 @@
   "v": "ok"
  },
  "epl:28": {
-  "at": "2026-10-17T00:02:26Z",
-  "h": "ff284afb2a",
-  "note": "news 4725666 (all 20 stadiums, 2026/27): Emirates is in Holloway, north London. Same page lists six London clubs in 2026/27",
+  "at": "2026-10-17T00:20:23Z",
+  "h": "d1fb19c376",
+  "note": "Stadiums page (26 Sep 2026): Emirates Stadium is in Holloway, north London. Same page also places Brentford, Fulham and Crystal Palace in London",
   "v": "ok"
  },
  "epl:29": {
@@ -2873,9 +2873,9 @@
   "v": "ok"
  },
  "epl:6": {
-  "at": "2026-10-17T00:02:26Z",
-  "h": "f2f029dd0b",
-  "note": "news 4625396: Coventry return after a 25-year absence as 2025/26 Championship champions",
+  "at": "2026-10-17T00:20:23Z",
+  "h": "e75fda89d4",
+  "note": "Article (2 Jun 2026): Coventry, managed by Frank Lampard, won the 2025/26 Championship and return to the Premier League after a 25-year absence. Still true for 2026/27",
   "v": "ok"
  },
  "epl:7": {
@@ -6966,9 +6966,9 @@
   "v": "ok"
  },
  "seriea:0": {
-  "at": "2026-10-17T00:03:32Z",
-  "h": "f5139dd43d",
-  "note": "legaseriea.it Juventus palmares lists 36 Serie A titles, the last nine 2011–12 to 2019–20 (titles 28 to 36)",
+  "at": "2026-10-17T00:20:23Z",
+  "h": "20fc018aef",
+  "note": "Juventus palmares lists 2011-12 to 2019-20 in a row. Means: legaseriea.it/serie-a/news/buon-compleanno-antonio-conte-x2055 (Conte won the scudetto with Juventus), massimiliano-allegri-e-il-nuovo-allenatore-del-napoli (five straight scudetti with Juve 2014–2019) and la-panchina-dell-atalanta-e-di-maurizio-sarri (champion of Italy with Juventus the season after Chelsea)",
   "v": "ok"
  },
  "seriea:1": {
@@ -7026,9 +7026,9 @@
   "v": "ok"
  },
  "seriea:17": {
-  "at": "2026-10-17T00:03:32Z",
-  "h": "c9c22ce6a0",
-  "note": "legaseriea.it Buffon birthday page (Jan 2026): 657 Serie A games, the most ever, and a record 176 Italy caps",
+  "at": "2026-10-17T00:20:23Z",
+  "h": "e00738f925",
+  "note": "Buffon birthday article (28 Jan 2026): 657 Serie A appearances, the record, with Parma and Juventus in Italy, and 176 Italy caps, the record",
   "v": "ok"
  },
  "seriea:18": {
@@ -7044,9 +7044,9 @@
   "v": "ok"
  },
  "seriea:2": {
-  "at": "2026-10-17T00:03:32Z",
-  "h": "d7d0e3e5c7",
-  "note": "legaseriea.it Buon compleanno Inter: unico club ad aver disputato tutti i campionati di Serie A, three Champions League in the palmarès",
+  "at": "2026-10-17T00:20:23Z",
+  "h": "2f1a6d5e25",
+  "note": "Inter birthday article (9 Mar 2026): the only club to have played every Serie A season, three Champions Leagues",
   "v": "ok"
  },
  "seriea:20": {
@@ -7074,9 +7074,9 @@
   "v": "ok"
  },
  "seriea:24": {
-  "at": "2026-10-17T00:03:32Z",
-  "h": "50ca3ce447",
-  "note": "legaseriea.it 44 anni fa seconda stella: Baggio, the Divin Codino, retired in 2004 with 205 Serie A goals",
+  "at": "2026-10-17T00:20:23Z",
+  "h": "89e2477020",
+  "note": "44-anni-fa article: 2004, Baggio retired after Milan-Brescia at San Siro, 452 Serie A games and 205 goals, called the Divin Codino",
   "v": "ok"
  },
  "seriea:25": {
@@ -7116,15 +7116,15 @@
   "v": "ok"
  },
  "seriea:30": {
-  "at": "2026-10-17T00:03:32Z",
-  "h": "43e6b3ebfa",
-  "note": "legaseriea.it src (Feb 1 2026 Accadde oggi): Riva won the classifica marcatori three times with Cagliari, called Rombo di Tuono",
+  "at": "2026-10-17T00:20:23Z",
+  "h": "0f73f791c8",
+  "note": "Causio-Batistuta-Rossi article: Riva, Rombo di Tuono, played almost all his career at Cagliari and won the scoring title three times",
   "v": "ok"
  },
  "seriea:31": {
-  "at": "2026-10-17T00:03:32Z",
-  "h": "8ac2889d86",
-  "note": "legaseriea.it src (Oct 13 2026): Di Natale top scorer 2009/10 and 2010/11, sixth all-time with 209 Serie A goals",
+  "at": "2026-10-17T00:20:23Z",
+  "h": "a857e15aca",
+  "note": "Di Natale birthday article (13 Oct 2026): Udinese, top scorer 2009/10 and 2010/11, 209 goals, sixth all-time",
   "v": "ok"
  },
  "seriea:32": {
@@ -7176,9 +7176,9 @@
   "v": "ok"
  },
  "seriea:4": {
-  "at": "2026-10-17T00:03:32Z",
-  "h": "5127936065",
-  "note": "legaseriea.it Inter-Parma 2–0 on May 3, 2026 at San Siro gave Inter scudetto no. 21 (2025–26), Inter palmares https://www.legaseriea.it/team/inter/palmares lists 2025–26",
+  "at": "2026-10-17T00:20:23Z",
+  "h": "d71b4525c5",
+  "note": "Inter-Parma 2–0 article (3 May 2026): Inter clinched the 2025–26 title at San Siro (Meazza). Still reigning in Oct 2026",
   "v": "ok"
  },
  "seriea:40": {
@@ -7230,15 +7230,15 @@
   "v": "ok"
  },
  "seriea:48": {
-  "at": "2026-10-17T00:03:32Z",
-  "h": "861a2355db",
-  "note": "legaseriea.it src: New Balance Arena, Bergamo, built 1928, capacity 23,439 (checked Oct 2026)",
+  "at": "2026-10-17T00:20:23Z",
+  "h": "6da8dc59e8",
+  "note": "Atalanta club page: New Balance Arena, Bergamo, built 1928, capacity 23 439",
   "v": "ok"
  },
  "seriea:49": {
-  "at": "2026-10-17T00:03:32Z",
-  "h": "dca602bee5",
-  "note": "legaseriea.it src: the 2026–27 club index lists 20 clubs",
+  "at": "2026-10-17T00:20:23Z",
+  "h": "ea2aedb6af",
+  "note": "Team index lists 20 clubs for the current season",
   "v": "ok"
  },
  "seriea:5": {
@@ -7254,15 +7254,15 @@
   "v": "ok"
  },
  "seriea:51": {
-  "at": "2026-10-17T00:03:32Z",
-  "h": "d443d1e5ca",
-  "note": "legaseriea.it https://www.legaseriea.it/serie-a/news/inter-parma-primo-match-point-scudetto: Inter-Parma 2–0, scudetto n. 21",
+  "at": "2026-10-17T00:20:23Z",
+  "h": "1b37f059d5",
+  "note": "Inter-Parma 2–0 article (3 May 2026): scudetto number 21 for Inter",
   "v": "ok"
  },
  "seriea:52": {
-  "at": "2026-10-17T00:03:32Z",
-  "h": "3746f9f2c4",
-  "note": "legaseriea.it src palmares: 19 Serie A titles, latest 2021-22",
+  "at": "2026-10-17T00:20:23Z",
+  "h": "74bacf1df0",
+  "note": "Milan palmares: 19 Serie A titles, latest 2021-22",
   "v": "ok"
  },
  "seriea:53": {
@@ -7272,15 +7272,15 @@
   "v": "ok"
  },
  "seriea:54": {
-  "at": "2026-10-17T00:03:32Z",
-  "h": "10942e7223",
-  "note": "legaseriea.it src (Sep 29 2026): Piola still the top scorer of single-table Serie A with 274, played for Pro Vercelli, Lazio, Juventus and Novara",
+  "at": "2026-10-17T00:20:23Z",
+  "h": "8dd896a8be",
+  "note": "Shevchenko birthday article (29 Sep 2026): Piola still the top scorer in single-group Serie A with 274, played for Pro Vercelli, Lazio, Juventus and Novara",
   "v": "ok"
  },
  "seriea:55": {
-  "at": "2026-10-17T00:03:32Z",
-  "h": "00b67abc54",
-  "note": "legaseriea.it src (Jan 28 2026): Buffon holds the record of 974 minutes unbeaten in 2015/16",
+  "at": "2026-10-17T00:20:23Z",
+  "h": "83fba6d17a",
+  "note": "Buffon birthday article (28 Jan 2026): record 974 minutes unbeaten in the 2015/16 season",
   "v": "ok"
  },
  "seriea:56": {
