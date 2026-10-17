@@ -40,7 +40,7 @@ python3 tools/vet.py status          # where every card stands: approved, locked
 python3 tools/screens.py             # every daily screen at three phone sizes, into out/
 python3 tools/sweep.py 30 320 568    # plays every card of 30 days, flags overflow and scrolling
 python3 tools/drawcheck.py           # a year of draws: guardrails, repeat spacing, same boards on every load
-python3 tools/lifecycle.py           # saving, resuming, locking, the share text, midnight
+python3 tools/lifecycle.py           # saving, resuming, locking, the share text, midnight, and the demo (it runs both ways)
 ```
 - `build/template.html`: the whole game (HTML, CSS, JS in one file). `__DECKS__` is replaced with the decks, `__START__` with the date of puzzle #1.
 - `build/head.html`: the page head (Home Screen meta, icons, manifest).
@@ -114,6 +114,7 @@ It replaces the arcade game: no category keys, no boss. The cabinet, palette, fo
 - **Saved on the phone:** `bsb-daily` holds today’s board (the cards themselves, so a deck change mid-day can’t alter a started board), each tile’s result, the open card, the tap order and the last two answer slots. It saves on every tap. A finished day reopens to its end screen. A finished or untouched day rolls over at local midnight. A day in progress stays until it’s finished or the page reloads.
 - **End screen:** the goal lamps, the result word with the count (Brace · 17) and the card that got you: its sentence with the answer filled in, then its means line. The panel has one share key showing the exact text it sends (the share sheet on a phone, the clipboard on a computer) and the countdown to local midnight.
 - **The board (Morg, Oct 16, 2026):** the grid. The ball and the goal lamps fill the screen, and the 18 tiles are cream keys on the panel, one difficulty per column. A small referee’s card in each tile’s corner marks medium (yellow) and hard (red), and easy tiles have none (Morg, Oct 16, 2026: the bold tile colors took over the cabinet, and green for easy was dropped because colorblind players confuse it with yellow and red). A Golazo for a goal made only of red cards waits for the playtest. Hooks shrink to fit their tile on two lines. The honeycomb and its `?board=` switch are gone.
+- **The playtest demo (Morg, Oct 17, 2026):** `DEMO_DAYS = 7` in `build/build.py`, so a finished board never feels like a soft lock. Boards #1 to #7 play back to back: the end screen shows a blinking “#2 ▶” in the countdown’s place to open the next board, and the arcade game’s replay icon to start over at #1. #7 ends with “Thanks for playing” (Morg’s words) and a lit replay icon. The date doesn’t move it: `bsb-demo` holds the player’s place, and midnight changes nothing. Set it to 0 for the real daily at launch. On a preview link, `?day=N` still wins, and the arrow moves the link to `?day=N+1`.
 - **Preview-only switches:** on `*.blank-space-baby.pages.dev`, `?day=N` shows puzzle N and `?reset` clears today’s saved run. They never work on the real site.
 
 ## The beta and the vetting team (Morg, Oct 16, 2026)
