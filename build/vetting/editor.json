@@ -1,7 +1,7 @@
 {
  "alpha:0": {
-  "at": "2026-10-16T23:55:32Z",
-  "h": "22db3ea124",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "0361801fe0",
   "v": "ok"
  },
  "alpha:1": {
@@ -40,8 +40,8 @@
   "v": "ok"
  },
  "alpha:105": {
-  "at": "2026-10-16T23:55:32Z",
-  "h": "d17380b854",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "5e492e74ea",
   "v": "ok"
  },
  "alpha:106": {
@@ -95,13 +95,14 @@
   "v": "ok"
  },
  "alpha:15": {
-  "at": "2026-10-16T23:59:29Z",
-  "h": "bf6afbf812",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "62cfeabd70",
+  "note": "“showed 6 and 7” hints the answer, acceptable on a white card",
   "v": "ok"
  },
  "alpha:16": {
-  "at": "2026-10-16T23:55:32Z",
-  "h": "db8ab81b77",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "74b15223f4",
   "v": "ok"
  },
  "alpha:17": {
@@ -110,8 +111,8 @@
   "v": "ok"
  },
  "alpha:18": {
-  "at": "2026-10-16T23:55:32Z",
-  "h": "5968407275",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "8a0bf1fd32",
   "v": "ok"
  },
  "alpha:19": {
@@ -121,8 +122,8 @@
   "v": "ok"
  },
  "alpha:2": {
-  "at": "2026-10-16T23:55:32Z",
-  "h": "c5527533bd",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "3acd11b2b8",
   "v": "ok"
  },
  "alpha:20": {
@@ -156,8 +157,8 @@
   "v": "ok"
  },
  "alpha:26": {
-  "at": "2026-10-16T23:55:32Z",
-  "h": "886f9e254b",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "96fc6d050a",
   "v": "ok"
  },
  "alpha:27": {
@@ -171,13 +172,13 @@
   "v": "ok"
  },
  "alpha:29": {
-  "at": "2026-10-16T23:55:32Z",
-  "h": "351d8b149c",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "2a40d73a7a",
   "v": "ok"
  },
  "alpha:3": {
-  "at": "2026-10-16T23:55:32Z",
-  "h": "b1d4611b03",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "1ec1808750",
   "v": "ok"
  },
  "alpha:30": {
@@ -201,8 +202,8 @@
   "v": "ok"
  },
  "alpha:34": {
-  "at": "2026-10-16T23:55:32Z",
-  "h": "7dc5fb9ccc",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "45d3e7294d",
   "v": "ok"
  },
  "alpha:35": {
@@ -267,9 +268,8 @@
   "v": "ok"
  },
  "alpha:46": {
-  "at": "2026-10-16T23:55:32Z",
-  "h": "873e22cb74",
-  "note": "verb slot, many wrong answers read as nonsense",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "c1000be902",
   "v": "ok"
  },
  "alpha:47": {
@@ -360,8 +360,8 @@
   "v": "ok"
  },
  "alpha:62": {
-  "at": "2026-10-16T23:55:32Z",
-  "h": "8606687808",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "f15c04af09",
   "v": "ok"
  },
  "alpha:63": {
@@ -381,8 +381,8 @@
   "v": "ok"
  },
  "alpha:66": {
-  "at": "2026-10-16T23:55:32Z",
-  "h": "1c55339703",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "6472936ebd",
   "v": "ok"
  },
  "alpha:67": {
@@ -421,8 +421,8 @@
   "v": "ok"
  },
  "alpha:73": {
-  "at": "2026-10-16T23:55:32Z",
-  "h": "ff23d3da06",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "3d315b172b",
   "v": "ok"
  },
  "alpha:74": {
@@ -486,18 +486,18 @@
   "v": "ok"
  },
  "alpha:85": {
-  "at": "2026-10-16T23:55:32Z",
-  "h": "44c46d2b04",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "feaabcc7a1",
   "v": "ok"
  },
  "alpha:86": {
-  "at": "2026-10-16T23:55:32Z",
-  "h": "fc173528ba",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "6f7281ccde",
   "v": "ok"
  },
  "alpha:87": {
-  "at": "2026-10-16T23:55:32Z",
-  "h": "5274923255",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "27e49d660c",
   "v": "ok"
  },
  "alpha:88": {
@@ -516,8 +516,8 @@
   "v": "ok"
  },
  "alpha:90": {
-  "at": "2026-10-16T23:55:32Z",
-  "h": "d32a748f96",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "a5327c32fc",
   "v": "ok"
  },
  "alpha:91": {
@@ -526,8 +526,8 @@
   "v": "ok"
  },
  "alpha:92": {
-  "at": "2026-10-16T23:55:32Z",
-  "h": "2236e88859",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "152586bc6e",
   "v": "ok"
  },
  "alpha:93": {
@@ -1041,8 +1041,8 @@
   "v": "ok"
  },
  "basics:110": {
-  "at": "2026-10-16T23:57:03Z",
-  "h": "038530ba44",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "8d6bab10b6",
   "v": "ok"
  },
  "basics:111": {
@@ -1384,8 +1384,8 @@
   "v": "ok"
  },
  "basics:25": {
-  "at": "2026-10-16T23:57:03Z",
-  "h": "23651e1140",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "392d0ae11d",
   "v": "ok"
  },
  "basics:26": {
@@ -1542,8 +1542,8 @@
   "v": "ok"
  },
  "basics:51": {
-  "at": "2026-10-16T23:57:03Z",
-  "h": "ed09f4380e",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "b1c6fd341b",
   "v": "ok"
  },
  "basics:52": {
@@ -1690,8 +1690,8 @@
   "v": "ok"
  },
  "basics:76": {
-  "at": "2026-10-16T23:57:03Z",
-  "h": "247351f957",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "25988f6589",
   "v": "ok"
  },
  "basics:77": {
@@ -1774,9 +1774,8 @@
   "v": "ok"
  },
  "basics:9": {
-  "at": "2026-10-16T23:57:03Z",
-  "h": "290b047b95",
-  "note": "Singular wrong answers (shoe, armband, shin guard) read ungrammatically after “wear … that set”, but most of the pool is plural",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "4f16f2e467",
   "v": "ok"
  },
  "basics:90": {
@@ -1785,8 +1784,8 @@
   "v": "ok"
  },
  "basics:91": {
-  "at": "2026-10-16T23:57:03Z",
-  "h": "06b9bde94a",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "c30737be7e",
   "v": "ok"
  },
  "basics:92": {
@@ -2384,52 +2383,38 @@
   "v": "ok"
  },
  "epl-more:42": {
-  "at": "2026-10-16T23:57:25Z",
-  "fix": {
-   "ex": "A win is worth 3 points, and a draw is worth 1",
-   "means": "A loss earns nothing"
-  },
-  "h": "90ec00910e",
-  "note": "“1 point” ruled out every plural wrong answer by grammar. Means moved off the win fact now in the sentence",
-  "v": "fix"
+  "at": "2026-10-17T00:09:05Z",
+  "h": "c30ca47021",
+  "v": "ok"
  },
  "epl-more:43": {
-  "at": "2026-10-16T23:57:25Z",
-  "h": "a349c755f5",
-  "note": "Shares the number pool with 1, which reads as ungrammatical here (1 + plural noun) but the card still works",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "a6f1e26919",
   "v": "ok"
  },
  "epl-more:44": {
-  "at": "2026-10-16T23:57:25Z",
-  "h": "9cc7e34c4e",
-  "note": "Shares the number pool with 1, which reads as ungrammatical here (1 + plural noun) but the card still works. Some wrong answers (97, 106) read as nonsense but fit the grammar",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "784b0a1f97",
   "v": "ok"
  },
  "epl-more:45": {
-  "at": "2026-10-16T23:57:25Z",
-  "fix": {
-   "means": "Like Arsenal, Chelsea, and Liverpool"
-  },
-  "h": "058c648d54",
-  "note": "Chicago serial comma in the means",
-  "v": "fix"
+  "at": "2026-10-17T00:09:05Z",
+  "h": "2d783e5eff",
+  "v": "ok"
  },
  "epl-more:46": {
-  "at": "2026-10-16T23:57:25Z",
-  "h": "0b15e2634e",
-  "note": "Shares the number pool with 1, which reads as ungrammatical here (1 + plural noun) but the card still works",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "d9bd97cac1",
   "v": "ok"
  },
  "epl-more:47": {
-  "at": "2026-10-16T23:57:25Z",
-  "h": "b9f2342d5c",
-  "note": "Shares the number pool with 1, which reads as ungrammatical here (1 + plural noun) but the card still works",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "a62b002c4f",
   "v": "ok"
  },
  "epl-more:48": {
-  "at": "2026-10-16T23:57:25Z",
-  "h": "98e4b28122",
-  "note": "Shares the number pool with 1, which reads as ungrammatical here (1 + plural noun) but the card still works",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "1dd7bf4b12",
   "v": "ok"
  },
  "epl-more:49": {
@@ -2560,9 +2545,8 @@
   "v": "ok"
  },
  "epl:0": {
-  "at": "2026-10-16T23:54:41Z",
-  "h": "52f11c42dd",
-  "note": "hook is a general word but the sentence has nothing more specific",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "05611bef61",
   "v": "ok"
  },
  "epl:1": {
@@ -2667,8 +2651,8 @@
   "v": "ok"
  },
  "epl:28": {
-  "at": "2026-10-16T23:54:41Z",
-  "h": "ff284afb2a",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "d1fb19c376",
   "v": "ok"
  },
  "epl:29": {
@@ -2792,8 +2776,8 @@
   "v": "ok"
  },
  "epl:6": {
-  "at": "2026-10-16T23:54:41Z",
-  "h": "f2f029dd0b",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "e75fda89d4",
   "v": "ok"
  },
  "epl:7": {
@@ -2812,8 +2796,8 @@
   "v": "ok"
  },
  "intl-men:0": {
-  "at": "2026-10-16T23:58:53Z",
-  "h": "9a9efd12cd",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "8484beddd1",
   "v": "ok"
  },
  "intl-men:1": {
@@ -2822,18 +2806,18 @@
   "v": "ok"
  },
  "intl-men:10": {
-  "at": "2026-10-16T23:58:53Z",
-  "h": "d2ce168279",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "6b1fc991ce",
   "v": "ok"
  },
  "intl-men:11": {
-  "at": "2026-10-16T23:58:53Z",
-  "h": "75cdec6a74",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "d415616768",
   "v": "ok"
  },
  "intl-men:12": {
-  "at": "2026-10-16T23:58:53Z",
-  "h": "b252d54998",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "d63f68aeb8",
   "v": "ok"
  },
  "intl-men:13": {
@@ -2892,8 +2876,8 @@
   "v": "ok"
  },
  "intl-men:22": {
-  "at": "2026-10-16T23:58:53Z",
-  "h": "6108db9934",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "cb0cce9e2b",
   "v": "ok"
  },
  "intl-men:23": {
@@ -2907,14 +2891,9 @@
   "v": "ok"
  },
  "intl-men:25": {
-  "at": "2026-10-16T23:58:53Z",
-  "fix": {
-   "ex": "Bert Patenaude scored the first hat trick in World Cup history",
-   "hook": "hat trick"
-  },
-  "h": "ba49a1d39c",
-  "note": "Hat trick is open in M-W, hook follows",
-  "v": "fix"
+  "at": "2026-10-17T00:09:05Z",
+  "h": "102acaff4e",
+  "v": "ok"
  },
  "intl-men:26": {
   "at": "2026-10-16T23:58:53Z",
@@ -2965,8 +2944,8 @@
   "v": "ok"
  },
  "intl-men:33": {
-  "at": "2026-10-16T23:58:53Z",
-  "h": "cd4d560d7a",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "14fcd53142",
   "v": "ok"
  },
  "intl-men:34": {
@@ -3006,13 +2985,9 @@
   "v": "ok"
  },
  "intl-men:40": {
-  "at": "2026-10-16T23:58:53Z",
-  "fix": {
-   "ex": "Uruguay stunned Brazil in the deciding game of the 1950 World Cup at the Maracanã"
-  },
-  "h": "901129fcd6",
-  "note": "Named the competition so 1950 reads clearly. With the before the blank, Wembley and Soccer City read oddly",
-  "v": "fix"
+  "at": "2026-10-17T00:09:05Z",
+  "h": "a9a668f0a1",
+  "v": "ok"
  },
  "intl-men:41": {
   "at": "2026-10-16T23:58:53Z",
@@ -3076,8 +3051,8 @@
   "v": "ok"
  },
  "intl-men:51": {
-  "at": "2026-10-16T23:58:53Z",
-  "h": "4cbf46ba01",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "e9d957230c",
   "v": "ok"
  },
  "intl-men:52": {
@@ -3155,18 +3130,18 @@
   "v": "ok"
  },
  "intl-men:7": {
-  "at": "2026-10-16T23:58:53Z",
-  "h": "d05b48c399",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "4a544d0036",
   "v": "ok"
  },
  "intl-men:8": {
-  "at": "2026-10-16T23:58:53Z",
-  "h": "98da2e8372",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "1c6097427d",
   "v": "ok"
  },
  "intl-men:9": {
-  "at": "2026-10-16T23:58:53Z",
-  "h": "af01d5ec74",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "3c9cf9c05f",
   "v": "ok"
  },
  "intl-women:0": {
@@ -4260,14 +4235,13 @@
   "v": "ok"
  },
  "ligamx:0": {
-  "at": "2026-10-16T23:58:25Z",
-  "h": "4e502ae557",
-  "note": "hook is a phrase fragment but nothing more specific is in the sentence",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "8ea9bb7d82",
   "v": "ok"
  },
  "ligamx:1": {
-  "at": "2026-10-16T23:58:25Z",
-  "h": "807f4e3733",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "1863293f59",
   "v": "ok"
  },
  "ligamx:10": {
@@ -4321,8 +4295,8 @@
   "v": "ok"
  },
  "ligamx:2": {
-  "at": "2026-10-16T23:58:25Z",
-  "h": "f1fefb1e79",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "5f89e65a4c",
   "v": "ok"
  },
  "ligamx:20": {
@@ -4425,14 +4399,13 @@
   "v": "ok"
  },
  "ligamx:37": {
-  "at": "2026-10-16T23:58:25Z",
-  "h": "a8a8e8b4dd",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "bc6798f70f",
   "v": "ok"
  },
  "ligamx:38": {
-  "at": "2026-10-16T23:58:25Z",
-  "h": "2b0d34daaa",
-  "note": "90+5 makes clear latest means clock time",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "a6e634b88b",
   "v": "ok"
  },
  "ligamx:39": {
@@ -4457,8 +4430,8 @@
   "v": "fix"
  },
  "ligamx:41": {
-  "at": "2026-10-16T23:58:25Z",
-  "h": "b5e2cd149d",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "63e8244686",
   "v": "ok"
  },
  "ligamx:42": {
@@ -4501,8 +4474,8 @@
   "v": "ok"
  },
  "ligamx:49": {
-  "at": "2026-10-16T23:58:25Z",
-  "h": "5fe2fadb6d",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "a8dec161d9",
   "v": "ok"
  },
  "ligamx:5": {
@@ -4516,13 +4489,9 @@
   "v": "ok"
  },
  "ligamx:51": {
-  "at": "2026-10-16T23:58:25Z",
-  "fix": {
-   "ex": "The old record for Liga MX players at a World Cup was set in 1998"
-  },
-  "h": "0c1ff63623",
-  "note": "league players was unclear",
-  "v": "fix"
+  "at": "2026-10-17T00:09:05Z",
+  "h": "5bc6131136",
+  "v": "ok"
  },
  "ligamx:52": {
   "at": "2026-10-16T23:58:25Z",
@@ -4554,8 +4523,8 @@
   "v": "ok"
  },
  "ligamx:57": {
-  "at": "2026-10-16T23:58:25Z",
-  "h": "df3b1336b0",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "da9701fa54",
   "v": "ok"
  },
  "ligamx:58": {
@@ -4612,22 +4581,14 @@
   "v": "ok"
  },
  "ligamx:7": {
-  "at": "2026-10-16T23:58:25Z",
-  "fix": {
-   "ex": "The Clásico Tapatío, Mexico’s oldest rivalry, pits Chivas against Atlas"
-  },
-  "h": "a4d1ef1dd1",
-  "note": "oldest rivalry was unclear without Mexico",
-  "v": "fix"
+  "at": "2026-10-17T00:09:05Z",
+  "h": "2714d3e326",
+  "v": "ok"
  },
  "ligamx:8": {
-  "at": "2026-10-16T23:58:25Z",
-  "fix": {
-   "means": "Gignac passed his total in 2026"
-  },
-  "h": "5840937f63",
-  "note": "passed him was vague",
-  "v": "fix"
+  "at": "2026-10-17T00:09:05Z",
+  "h": "bda0fe76e6",
+  "v": "ok"
  },
  "ligamx:9": {
   "at": "2026-10-16T23:58:25Z",
@@ -4644,13 +4605,13 @@
   "v": "fix"
  },
  "ligue1:1": {
-  "at": "2026-10-16T23:58:01Z",
-  "h": "73b9f10b86",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "e80c8e6aa1",
   "v": "ok"
  },
  "ligue1:10": {
-  "at": "2026-10-16T23:58:01Z",
-  "h": "6202f38956",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "81d225d596",
   "v": "ok"
  },
  "ligue1:11": {
@@ -4659,8 +4620,8 @@
   "v": "ok"
  },
  "ligue1:12": {
-  "at": "2026-10-16T23:58:01Z",
-  "h": "adf15a23b9",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "d9a1eb720d",
   "v": "ok"
  },
  "ligue1:13": {
@@ -4883,13 +4844,13 @@
   "v": "ok"
  },
  "ligue1:48": {
-  "at": "2026-10-16T23:58:01Z",
-  "h": "59003cb18a",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "2158a0d1f3",
   "v": "ok"
  },
  "ligue1:49": {
-  "at": "2026-10-16T23:58:01Z",
-  "h": "f998170f61",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "177622c606",
   "v": "ok"
  },
  "ligue1:5": {
@@ -4918,14 +4879,13 @@
   "v": "ok"
  },
  "ligue1:54": {
-  "at": "2026-10-16T23:58:01Z",
-  "h": "50928a0975",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "aad57b3ebd",
   "v": "ok"
  },
  "ligue1:55": {
-  "at": "2026-10-16T23:58:01Z",
-  "h": "da99c8317f",
-  "note": "Hook French is vague but Saint-Étienne runs past 12 characters",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "a6d1334ac2",
   "v": "ok"
  },
  "ligue1:56": {
@@ -4934,23 +4894,19 @@
   "v": "ok"
  },
  "ligue1:57": {
-  "at": "2026-10-16T23:58:01Z",
-  "h": "53fd6dc3c8",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "07858aafa4",
   "v": "ok"
  },
  "ligue1:58": {
-  "at": "2026-10-16T23:58:01Z",
-  "h": "8194397db5",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "ac1e1e9a10",
   "v": "ok"
  },
  "ligue1:59": {
-  "at": "2026-10-16T23:58:01Z",
-  "fix": {
-   "means": "A record for one season"
-  },
-  "h": "94e059ffa9",
-  "note": "Means was unclear, now says what the record is",
-  "v": "fix"
+  "at": "2026-10-17T00:09:05Z",
+  "h": "e15d73d4f8",
+  "v": "ok"
  },
  "ligue1:6": {
   "at": "2026-10-16T23:58:01Z",
@@ -5369,9 +5325,8 @@
   "v": "ok"
  },
  "mls:16": {
-  "at": "2026-10-16T23:58:25Z",
-  "h": "1dfec3d702",
-  "note": "“in a season in 2019” is a little clunky but clear",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "ea3c106964",
   "v": "ok"
  },
  "mls:17": {
@@ -5484,8 +5439,8 @@
   "v": "ok"
  },
  "mls:35": {
-  "at": "2026-10-16T23:58:25Z",
-  "h": "95445f01bb",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "c90459c165",
   "v": "ok"
  },
  "mls:36": {
@@ -5559,13 +5514,9 @@
   "v": "ok"
  },
  "mls:49": {
-  "at": "2026-10-16T23:58:25Z",
-  "fix": {
-   "means": "San Diego FC were the 30th"
-  },
-  "h": "466090e965",
-  "note": "San Diego FC take a plural verb",
-  "v": "fix"
+  "at": "2026-10-17T00:09:05Z",
+  "h": "04e7647785",
+  "v": "ok"
  },
  "mls:5": {
   "at": "2026-10-16T23:58:25Z",
@@ -5573,32 +5524,28 @@
   "v": "ok"
  },
  "mls:50": {
-  "at": "2026-10-16T23:58:25Z",
-  "fix": {
-   "means": "Tampa Bay were one of them"
-  },
-  "h": "3abf41e290",
-  "note": "Tampa Bay take a plural verb",
-  "v": "fix"
+  "at": "2026-10-17T00:09:05Z",
+  "h": "1bfa21c1c0",
+  "v": "ok"
  },
  "mls:51": {
-  "at": "2026-10-16T23:58:25Z",
-  "h": "c9dcd9d472",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "2ef8288db7",
   "v": "ok"
  },
  "mls:52": {
-  "at": "2026-10-16T23:58:25Z",
-  "h": "2c7039bd56",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "46a3cd2efd",
   "v": "ok"
  },
  "mls:53": {
-  "at": "2026-10-16T23:58:25Z",
-  "h": "648ecfdcd2",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "dd6054ffa3",
   "v": "ok"
  },
  "mls:54": {
-  "at": "2026-10-16T23:58:25Z",
-  "h": "303c31b33a",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "45b02bf66b",
   "v": "ok"
  },
  "mls:55": {
@@ -5622,9 +5569,8 @@
   "v": "ok"
  },
  "mls:58": {
-  "at": "2026-10-16T23:58:25Z",
-  "h": "8c0cbed5a4",
-  "note": "Wrong answers like “the Concacaf Golden Boot” read as nonsense, card still works",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "dfecd61a76",
   "v": "ok"
  },
  "mls:59": {
@@ -5748,8 +5694,8 @@
   "v": "ok"
  },
  "nicknames:24": {
-  "at": "2026-10-16T23:58:53Z",
-  "h": "4755b7a037",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "46b0f3c136",
   "v": "ok"
  },
  "nicknames:25": {
@@ -5854,8 +5800,8 @@
   "v": "ok"
  },
  "nicknames:43": {
-  "at": "2026-10-16T23:58:53Z",
-  "h": "cfe11036f0",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "81e18b9b46",
   "v": "ok"
  },
  "nicknames:44": {
@@ -5960,13 +5906,9 @@
   "v": "fix"
  },
  "nicknames:60": {
-  "at": "2026-10-16T23:58:53Z",
-  "fix": {
-   "ex": "Real Oviedo’s nickname Carbayones comes from the city’s famous old oak"
-  },
-  "h": "34b2f52fba",
-  "note": "“a famous old” ruled out most wrong answers, which are plural or start with a vowel. “the city’s” fits them all, city meaning Oviedo, for the fact checker",
-  "v": "fix"
+  "at": "2026-10-17T00:09:05Z",
+  "h": "9a1308fb02",
+  "v": "ok"
  },
  "nicknames:61": {
   "at": "2026-10-16T23:58:53Z",
@@ -6759,8 +6701,8 @@
   "v": "ok"
  },
  "rules:3": {
-  "at": "2026-10-16T23:57:16Z",
-  "h": "cb1b053a05",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "031fc6b49c",
   "v": "ok"
  },
  "rules:30": {
@@ -6815,8 +6757,8 @@
   "v": "fix"
  },
  "rules:39": {
-  "at": "2026-10-16T23:57:16Z",
-  "h": "1661f1eca2",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "773080794e",
   "v": "ok"
  },
  "rules:4": {
@@ -6825,8 +6767,8 @@
   "v": "ok"
  },
  "rules:40": {
-  "at": "2026-10-16T23:57:16Z",
-  "h": "ba4ba0a321",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "bb5b57c964",
   "v": "ok"
  },
  "rules:41": {
@@ -6954,8 +6896,8 @@
   "v": "ok"
  },
  "rules:61": {
-  "at": "2026-10-16T23:57:16Z",
-  "h": "d058c7641f",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "82544914a3",
   "v": "ok"
  },
  "rules:62": {
@@ -6991,8 +6933,8 @@
   "v": "ok"
  },
  "seriea:0": {
-  "at": "2026-10-16T23:58:01Z",
-  "h": "f5139dd43d",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "20fc018aef",
   "v": "ok"
  },
  "seriea:1": {
@@ -7036,8 +6978,8 @@
   "v": "ok"
  },
  "seriea:17": {
-  "at": "2026-10-16T23:58:01Z",
-  "h": "c9c22ce6a0",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "e00738f925",
   "v": "ok"
  },
  "seriea:18": {
@@ -7051,9 +6993,8 @@
   "v": "ok"
  },
  "seriea:2": {
-  "at": "2026-10-16T23:58:01Z",
-  "h": "d7d0e3e5c7",
-  "note": "Serie A hook is shared with four cards but nothing more specific exists",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "2f1a6d5e25",
   "v": "ok"
  },
  "seriea:20": {
@@ -7077,8 +7018,8 @@
   "v": "ok"
  },
  "seriea:24": {
-  "at": "2026-10-16T23:58:01Z",
-  "h": "50ca3ce447",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "89e2477020",
   "v": "ok"
  },
  "seriea:25": {
@@ -7112,13 +7053,13 @@
   "v": "ok"
  },
  "seriea:30": {
-  "at": "2026-10-16T23:58:01Z",
-  "h": "43e6b3ebfa",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "0f73f791c8",
   "v": "ok"
  },
  "seriea:31": {
-  "at": "2026-10-16T23:58:01Z",
-  "h": "8ac2889d86",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "a857e15aca",
   "v": "ok"
  },
  "seriea:32": {
@@ -7171,8 +7112,8 @@
   "v": "ok"
  },
  "seriea:4": {
-  "at": "2026-10-16T23:58:01Z",
-  "h": "5127936065",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "d71b4525c5",
   "v": "ok"
  },
  "seriea:40": {
@@ -7224,14 +7165,13 @@
   "v": "ok"
  },
  "seriea:48": {
-  "at": "2026-10-16T23:58:01Z",
-  "h": "861a2355db",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "6da8dc59e8",
   "v": "ok"
  },
  "seriea:49": {
-  "at": "2026-10-16T23:58:01Z",
-  "h": "dca602bee5",
-  "note": "Wrong answers like 974 clubs read as nonsense but the card works",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "ea2aedb6af",
   "v": "ok"
  },
  "seriea:5": {
@@ -7245,13 +7185,13 @@
   "v": "ok"
  },
  "seriea:51": {
-  "at": "2026-10-16T23:58:01Z",
-  "h": "d443d1e5ca",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "1b37f059d5",
   "v": "ok"
  },
  "seriea:52": {
-  "at": "2026-10-16T23:58:01Z",
-  "h": "3746f9f2c4",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "74bacf1df0",
   "v": "ok"
  },
  "seriea:53": {
@@ -7260,13 +7200,13 @@
   "v": "ok"
  },
  "seriea:54": {
-  "at": "2026-10-16T23:58:01Z",
-  "h": "10942e7223",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "8dd896a8be",
   "v": "ok"
  },
  "seriea:55": {
-  "at": "2026-10-16T23:58:01Z",
-  "h": "00b67abc54",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "83fba6d17a",
   "v": "ok"
  },
  "seriea:56": {
@@ -7378,9 +7318,8 @@
   "v": "fix"
  },
  "soccer:19": {
-  "at": "2026-10-16T23:56:37Z",
-  "h": "fbbaa46eef",
-  "note": "adjective blank, so most noun wrong answers read as nonsense. Needs its own kind, not a rewrite",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "aa3183a15d",
   "v": "ok"
  },
  "soccer:2": {
@@ -7408,8 +7347,8 @@
   "v": "ok"
  },
  "soccer:23": {
-  "at": "2026-10-16T23:56:37Z",
-  "h": "b6f7b625dc",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "25e1b1db0c",
   "v": "ok"
  },
  "soccer:24": {
@@ -7580,9 +7519,8 @@
   "v": "ok"
  },
  "soccer:50": {
-  "at": "2026-10-16T23:56:37Z",
-  "h": "27613b29a6",
-  "note": "adjective blank, so most noun wrong answers read as nonsense. Needs its own kind, not a rewrite",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "38021938b5",
   "v": "ok"
  },
  "soccer:51": {
@@ -7604,9 +7542,8 @@
   "v": "ok"
  },
  "soccer:54": {
-  "at": "2026-10-16T23:56:37Z",
-  "h": "56f6e45a1a",
-  "note": "adjective blank, so most noun wrong answers read as nonsense. Needs its own kind, not a rewrite",
+  "at": "2026-10-17T00:09:05Z",
+  "h": "3c765e87c9",
   "v": "ok"
  },
  "soccer:6": {
