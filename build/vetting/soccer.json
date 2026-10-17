@@ -754,10 +754,13 @@
   "v": "ok"
  },
  "awards:0": {
-  "at": "2026-10-17T00:06:28Z",
-  "h": "c31cc5f31b",
-  "note": "Word for word the same card as legends:2. Keep one, this deck is its natural home",
-  "v": "ok"
+  "at": "2026-10-17T00:24:49Z",
+  "fix": {
+   "d": 1
+  },
+  "h": "45e37fca46",
+  "note": "Plays easy as dealt: Messi next to two of Rossi, James, Kempes and Lineker, and a 10-year-old or a new parent picks the one name they know. Honest color is white. Near-twin of intl-men:14 (Messi’s second Golden Ball, 2022), kept apart only by Messi in its sentence",
+  "v": "fix"
  },
  "awards:1": {
   "at": "2026-10-17T00:06:28Z",
@@ -766,13 +769,10 @@
   "v": "ok"
  },
  "awards:10": {
-  "at": "2026-10-17T00:06:28Z",
-  "fix": {
-   "ex": "In 1994, Romário was the first Brazilian named FIFA World Player of the Year"
-  },
-  "h": "ee2248f69f",
-  "note": "Fans call it FIFA World Player of the Year, the award’s name in 1994. “Top male player” sounds clinical",
-  "v": "fix"
+  "at": "2026-10-17T00:24:49Z",
+  "h": "53ca9072fe",
+  "note": "Vinícius Jr is the only other Brazilian among its decoys, so a fan who knows nationalities solves most draws. Yellow is still honest",
+  "v": "ok"
  },
  "awards:11": {
   "at": "2026-10-17T00:06:28Z",
@@ -785,23 +785,20 @@
   "v": "ok"
  },
  "awards:13": {
-  "at": "2026-10-17T00:06:28Z",
+  "at": "2026-10-17T00:24:49Z",
   "fix": {
-   "ex": "Ronaldinho was FIFA World Player of the Year in 2004 and 2005",
-   "hook": "World Player"
+   "ex": "At Barcelona, Ronaldinho was FIFA’s top male player in 2004 and 2005",
+   "hook": "Barcelona"
   },
-  "h": "c2d1cb191b",
-  "note": "Use the award’s real name, as fans say it. The old hook “top male” was a fragment that makes no one tap",
+  "h": "5072544b2a",
+  "note": "The tile “top male” is an empty phrase nobody taps for. Barcelona is the club he won both with, and it makes Dembélé and Lewandowski (both later Barça) believable decoys that the years still rule out",
   "v": "fix"
  },
  "awards:14": {
-  "at": "2026-10-17T00:06:28Z",
-  "fix": {
-   "ex": "George Weah was FIFA World Player of the Year in 1995, ahead of Paolo Maldini"
-  },
-  "h": "74ba041707",
-  "note": "Use the award’s real name for 1995, as fans say it",
-  "v": "fix"
+  "at": "2026-10-17T00:24:49Z",
+  "h": "808adad48e",
+  "note": "Checked on fifa.com: 1995 Weah, Maldini second, Weah Fair Play 1996. Romário and Ronaldinho are good era decoys",
+  "v": "ok"
  },
  "awards:15": {
   "at": "2026-10-17T00:06:28Z",
@@ -849,26 +846,27 @@
   "v": "ok"
  },
  "awards:22": {
-  "at": "2026-10-17T00:06:28Z",
-  "h": "739eb53a0f",
-  "note": "Plays as “which one is the keeper”: every decoy is an outfield player or a coach. The group [Mary Earps, Hannah Hampton] blocks the only believable decoy, and the sentence names a year so it is certainly wrong: consider dropping that group so the card tests the fact",
+  "at": "2026-10-17T00:24:49Z",
+  "h": "685c796279",
+  "note": "Only Hannah Hampton among its decoys is a keeper, so most draws are solved by position for a regular fan. Yellow is still honest, since a new parent won’t know Earps, Bonmatí or Prinz",
   "v": "ok"
  },
  "awards:23": {
-  "at": "2026-10-17T00:06:28Z",
-  "h": "5b11f3ad53",
-  "note": "Plays as “which one is the keeper”. The group [Mary Earps, Hannah Hampton] blocks the only believable decoy, and the sentence names a year so it is certainly wrong: consider dropping that group so the card tests the fact",
+  "at": "2026-10-17T00:24:49Z",
+  "h": "181cec629f",
+  "note": "Same position give-away as awards:22, yellow still honest",
   "v": "ok"
  },
  "awards:24": {
-  "at": "2026-10-17T00:06:28Z",
-  "h": "479aa776b8",
-  "note": "Only Donnarumma is a keeper among its decoys, so most draws are solved by position. The group [Emiliano Martínez, Manuel Neuer, Unai Simón] blocks the only believable decoy, and the sentence names a year so it is certainly wrong: consider dropping that group so the card tests the fact",
+  "at": "2026-10-17T00:24:49Z",
+  "h": "90a8ef1663",
+  "note": "The keeper kind now has three cards (Unai Simón is out), so all three keepers show every time. Good: Neuer and Donnarumma are believable and certainly wrong (one win each). Below the spec’s four per kind",
   "v": "ok"
  },
  "awards:25": {
-  "at": "2026-10-17T00:06:28Z",
-  "h": "306346d8bd",
+  "at": "2026-10-17T00:24:49Z",
+  "h": "5d217d99fd",
+  "note": "Checked on fifa.com. Martínez and Neuer are believable decoys",
   "v": "ok"
  },
  "awards:26": {
@@ -878,15 +876,15 @@
   "v": "ok"
  },
  "awards:27": {
-  "at": "2026-10-17T00:06:28Z",
-  "h": "4c8c734f49",
-  "note": "Most draws are solved by position, as on awards:26. The group [Emiliano Martínez, Manuel Neuer, Unai Simón] blocks the only believable decoy, and the sentence names a year so it is certainly wrong: consider dropping that group so the card tests the fact",
+  "at": "2026-10-17T00:24:49Z",
+  "h": "27fbff0984",
+  "note": "Martínez (the 2022 Golden Glove) is the decoy a fan hesitates over, ruled out by the year",
   "v": "ok"
  },
  "awards:28": {
-  "at": "2026-10-17T00:06:28Z",
-  "h": "15d6480a30",
-  "note": "Every decoy is a player, never a coach, so a fan solves it by role. The group [Sarina Wiegman, Emma Hayes] blocks the only believable decoy, and the sentence names a year so it is certainly wrong: consider dropping that group so the card tests the fact. Recheck the record after FIFA’s 2026 awards",
+  "at": "2026-10-17T00:24:49Z",
+  "h": "7606142059",
+  "note": "Only Emma Hayes among its decoys is a coach, so a regular fan solves most draws by role. Yellow is honest",
   "v": "ok"
  },
  "awards:29": {
@@ -895,9 +893,9 @@
   "v": "ok"
  },
  "awards:3": {
-  "at": "2026-10-17T00:06:28Z",
-  "h": "ab23edea1e",
-  "note": "Same fact as awards:49, kept apart on a board by their shared hook. Red is fair: James and Lineker make real decoys",
+  "at": "2026-10-17T00:24:49Z",
+  "h": "dcd52c7fdc",
+  "note": "Checked on fifa.com: Rossi won the inaugural Golden Ball and Golden Boot. Same fact as awards:49 (1982), kept apart by their shared Golden Boot hook",
   "v": "ok"
  },
  "awards:30": {
@@ -931,9 +929,9 @@
   "v": "fix"
  },
  "awards:33": {
-  "at": "2026-10-17T00:06:28Z",
-  "h": "3fb857342a",
-  "note": "Every decoy is a player, never a coach, so a fan solves it by role. The group [Sarina Wiegman, Emma Hayes] blocks the only believable decoy, and the sentence names a year so it is certainly wrong: consider dropping that group so the card tests the fact",
+  "at": "2026-10-17T00:24:49Z",
+  "h": "32878b895b",
+  "note": "Same role give-away as awards:28. Checked on fifa.com: 2021 and 2024",
   "v": "ok"
  },
  "awards:34": {
@@ -978,8 +976,8 @@
   "v": "ok"
  },
  "awards:4": {
-  "at": "2026-10-17T00:06:28Z",
-  "h": "fdbb4d8230",
+  "at": "2026-10-17T00:24:49Z",
+  "h": "8ee38790da",
   "v": "ok"
  },
  "awards:40": {
@@ -1004,8 +1002,9 @@
   "v": "ok"
  },
  "awards:44": {
-  "at": "2026-10-17T00:06:28Z",
-  "h": "4dd7479da5",
+  "at": "2026-10-17T00:24:49Z",
+  "h": "9f7961be14",
+  "note": "Checked on fifa.com: Celtic supporters 2017, Fair Play 2003",
   "v": "ok"
  },
  "awards:45": {
@@ -1040,10 +1039,13 @@
   "v": "ok"
  },
  "awards:5": {
-  "at": "2026-10-17T00:06:28Z",
-  "h": "94069a8c7e",
-  "note": "Plays easy: its only decoys are Messi, Mbappé and Rodri, all far too young for 1978. Still fair at yellow",
-  "v": "ok"
+  "at": "2026-10-17T00:24:49Z",
+  "fix": {
+   "d": 3
+  },
+  "h": "3cb45a9b7a",
+  "note": "Kempes as 1978’s top scorer is history across eras, and every decoy is a real World Cup top scorer or Golden Ball winner, so a regular fan is guessing between Kempes, Rossi and Lineker. That is red, level with Rossi on awards:3",
+  "v": "fix"
  },
  "awards:50": {
   "at": "2026-10-17T00:06:28Z",
@@ -1082,33 +1084,32 @@
   "v": "ok"
  },
  "awards:56": {
-  "at": "2026-10-17T00:06:28Z",
-  "h": "c3aada3a31",
-  "note": "Near-twin of awards:16 and intl-women:21, kept apart by the guardrail",
+  "at": "2026-10-17T00:24:49Z",
+  "h": "9d233057f6",
+  "note": "Same fact as intl-women:21 (Bonmatí three years running), kept apart by Bonmatí in its sentence. Can’t be cut without breaking the count kind, which has only three cards",
   "v": "ok"
  },
  "awards:57": {
-  "at": "2026-10-17T00:06:28Z",
-  "h": "b699b8554d",
-  "note": "The same card as legends:27 (13, Fontaine 1958). Keep one",
+  "at": "2026-10-17T00:24:49Z",
+  "h": "bad13d068a",
+  "note": "The keeper of the Fontaine 13 pair: 8, 10 and 11 are all real World Cup tallies. Twin of legends:27, which I’ve turned into a new card. Still the record after Mbappé’s 10 in 2026",
   "v": "ok"
  },
  "awards:58": {
-  "at": "2026-10-17T00:06:28Z",
-  "h": "0899dbe7f2",
-  "note": "Still the record on 2026-10-16. Recheck after FIFA’s 2026 awards",
+  "at": "2026-10-17T00:24:49Z",
+  "h": "215a67c6b3",
+  "note": "Five is the decoy that bites, since five came in a row",
   "v": "ok"
  },
  "awards:59": {
-  "at": "2026-10-17T00:06:28Z",
-  "h": "a038a164e0",
-  "note": "Still the record on 2026-10-16. Recheck after FIFA’s 2026 awards",
+  "at": "2026-10-17T00:24:49Z",
+  "h": "944ef5998b",
+  "note": "Checked on fifa.com: 2017, 2020, 2022, 2023, 2025",
   "v": "ok"
  },
  "awards:6": {
-  "at": "2026-10-17T00:06:28Z",
-  "h": "7fb6e11c40",
-  "note": "Near-twin of legends:11 (Lineker, Golden Boot 1986, six goals)",
+  "at": "2026-10-17T00:24:49Z",
+  "h": "22a048228e",
   "v": "ok"
  },
  "awards:60": {
@@ -1118,23 +1119,19 @@
   "v": "ok"
  },
  "awards:61": {
-  "at": "2026-10-17T00:06:28Z",
-  "fix": {
-   "means": "Including a hat trick in the final"
-  },
-  "h": "055d075b6d",
-  "note": "Hat trick is open in Merriam-Webster and in awards:20. Say “in the final” the way fans do",
-  "v": "fix"
+  "at": "2026-10-17T00:24:49Z",
+  "h": "84f43df383",
+  "v": "ok"
  },
  "awards:62": {
-  "at": "2026-10-17T00:06:28Z",
-  "h": "c41eb5efec",
+  "at": "2026-10-17T00:24:49Z",
+  "h": "f98a3825e5",
   "v": "ok"
  },
  "awards:63": {
-  "at": "2026-10-17T00:06:28Z",
-  "h": "ee4133031f",
-  "note": "Near-twin of wc26:34 (Golden Boot with 10 goals), kept apart by 10 in its sentence",
+  "at": "2026-10-17T00:24:49Z",
+  "h": "b5fbf6fcb1",
+  "note": "Checked on fifa.com: ten goals and the Golden Boot in 2026. Same fact as wc26:34, kept apart by their shared Mbappé hook",
   "v": "ok"
  },
  "awards:64": {
@@ -1153,17 +1150,17 @@
   "v": "ok"
  },
  "awards:66": {
-  "at": "2026-10-17T00:06:28Z",
-  "h": "9295c3e344",
+  "at": "2026-10-17T00:24:49Z",
+  "h": "694929d9e0",
   "v": "ok"
  },
  "awards:67": {
-  "at": "2026-10-17T00:06:28Z",
+  "at": "2026-10-17T00:24:49Z",
   "fix": {
-   "means": "For the tournament’s second-best player"
+   "means": "Eight goals and four assists"
   },
-  "h": "9594781ef1",
-  "note": "The old means (Rodri took the Golden Ball) gives away awards:2, which can sit on the same board",
+  "h": "5392284140",
+  "note": "The means names Rodri’s Golden Ball, which gives away wc26:33 (Rodri, answer Golden Ball), and nothing keeps the two apart on a board. Swap in his tournament line, from FIFA’s 2026 review",
   "v": "fix"
  },
  "awards:68": {
@@ -1183,9 +1180,13 @@
   "v": "ok"
  },
  "awards:70": {
-  "at": "2026-10-17T00:06:28Z",
-  "h": "f0f3bd67b4",
-  "v": "ok"
+  "at": "2026-10-17T00:24:49Z",
+  "fix": {
+   "d": 1
+  },
+  "h": "2c6ccc5c33",
+  "note": "Plays as a give-away: the group [Puskás Award, Marta Award] (in the deck twice) blocks its only believable decoy, so the buttons are a goal award against Golden Boot, Silver Ball, Fair Play and Fan. Better fix: drop that group, since each is certainly wrong on the other’s card (Montiel won the 2025 Puskás, and the Marta Award began in 2024 and is for women), then keep yellow. If the group stays, it is white",
+  "v": "fix"
  },
  "awards:71": {
   "at": "2026-10-17T00:06:28Z",
@@ -4265,8 +4266,8 @@
   "v": "ok"
  },
  "legends:13": {
-  "at": "2026-10-17T00:05:12Z",
-  "h": "edbbfbbf07",
+  "at": "2026-10-17T00:24:49Z",
+  "h": "654f64dc2a",
   "v": "ok"
  },
  "legends:14": {
@@ -4275,14 +4276,10 @@
   "v": "ok"
  },
  "legends:15": {
-  "at": "2026-10-17T00:05:12Z",
-  "fix": {
-   "ex": "Mário Zagallo was the first man to win the World Cup as a player and as a coach",
-   "hook": "coach"
-  },
-  "h": "3f855d73a2",
-  "note": "“Before Deschamps” reads as if Deschamps came next, but Beckenbauer did it second (1974 and 1990). The plain record says it right",
-  "v": "fix"
+  "at": "2026-10-17T00:24:49Z",
+  "h": "e9c37eb916",
+  "note": "Beckenbauer and Deschamps, who did it later, aren’t in the pool, so every decoy is certainly wrong",
+  "v": "ok"
  },
  "legends:16": {
   "at": "2026-10-17T00:05:12Z",
@@ -4296,12 +4293,12 @@
   "v": "ok"
  },
  "legends:18": {
-  "at": "2026-10-17T00:05:12Z",
+  "at": "2026-10-17T00:24:49Z",
   "fix": {
    "d": 3
   },
-  "h": "927158af49",
-  "note": "Birgit Prinz is the women’s game in depth for a US fan, and the decoys are all Americans who played 2003 (Hamm, Wambach). Red is honest. Near awards:19 (Prinz, 2003)",
+  "h": "e352251811",
+  "note": "As dealt it sits next to two of Hamm, Morgan, Wambach and Akers, the names a US fan knows, so it takes real women’s-game depth to know Prinz swept 2003. That is red, as on awards:19",
   "v": "fix"
  },
  "legends:19": {
@@ -4355,16 +4352,27 @@
   "v": "ok"
  },
  "legends:27": {
-  "at": "2026-10-17T00:05:12Z",
-  "h": "bb11029d4a",
-  "note": "Plays trivially: its only decoys are 34–354, nobody scores 34 at one World Cup, so the white comes from the decoys, not the fact. The plausible ones (17, 22) are grouped out. The same card is already in awards:57 and ligue1:57",
-  "v": "cut"
+  "at": "2026-10-17T00:24:49Z",
+  "fix": {
+   "d": 2,
+   "ex": "Miroslav Klose held the World Cup scoring record with 16 goals until 2026",
+   "hook": "Klose",
+   "means": "He passed Ronaldo’s 15 in 2014",
+   "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/fifa-world-cup-all-time-leading-scorers",
+   "w": "16"
+  },
+  "h": "0f7c1dfa63",
+  "note": "Twin of awards:57 (Fontaine’s 13), which has the better decoys, and it plays white only because 40–49 sit next to it. Rather than cut it, I’ve made it Klose’s old record, checked on fifa.com: it gives the number kind a decoy fans hesitate over for Marta’s 17 and Mbappé’s 22. If you’d rather not add a new fact, cut it as a twin",
+  "v": "fix"
  },
  "legends:28": {
-  "at": "2026-10-17T00:05:12Z",
-  "h": "0818c72dc2",
-  "note": "Decoys skew high (34–354) because the group [13, 17, 22] keeps 22 away. Dropping that group would help, all three are certainly wrong for each other. Near-twin of intl-women:13 (Marta, most goals)",
-  "v": "ok"
+  "at": "2026-10-17T00:24:49Z",
+  "fix": {
+   "means": "Scored at five World Cups, 2003–2019"
+  },
+  "h": "99fb3bfad7",
+  "note": "Marta played six Women’s World Cups but scored at five, with none in 2023 (fifa.com’s scorer list). The means reads as if her goals spanned all six, and it contradicts intl-women:13 (“17 goals, at five World Cups”). Near-twin of intl-women:13, kept apart by Marta in this sentence",
+  "v": "fix"
  },
  "legends:29": {
   "at": "2026-10-17T00:05:12Z",
@@ -4389,9 +4397,8 @@
   "v": "ok"
  },
  "legends:32": {
-  "at": "2026-10-17T00:05:12Z",
-  "h": "c8d30de559",
-  "note": "FIFA’s oldest-players list still has El Hadary first after 2026",
+  "at": "2026-10-17T00:24:49Z",
+  "h": "adda8f94d8",
   "v": "ok"
  },
  "legends:33": {
@@ -4406,14 +4413,14 @@
   "v": "ok"
  },
  "legends:35": {
-  "at": "2026-10-17T00:05:12Z",
-  "h": "31127bbbdd",
-  "note": "Decoys skew high (34–354) because of the group [13, 17, 22]. Twin of awards:55 (same sentence). The draw keeps them apart, but Trivelle should keep one. Also near wc26:12",
+  "at": "2026-10-17T00:24:49Z",
+  "h": "02e8eff24c",
+  "note": "Checked on fifa.com: 22 goals (4, 8, 10). Its means would give away awards:63, but their shared Mbappé hook keeps them apart",
   "v": "ok"
  },
  "legends:36": {
-  "at": "2026-10-17T00:05:12Z",
-  "h": "4888349793",
+  "at": "2026-10-17T00:24:49Z",
+  "h": "47d7f1527c",
   "v": "ok"
  },
  "legends:37": {
@@ -4450,13 +4457,14 @@
   "v": "ok"
  },
  "legends:42": {
-  "at": "2026-10-17T00:05:12Z",
-  "h": "2021e17314",
+  "at": "2026-10-17T00:24:49Z",
+  "h": "33c8f0349b",
+  "note": "Checked on fifa.com: 35 shots to 5",
   "v": "ok"
  },
  "legends:43": {
-  "at": "2026-10-17T00:05:12Z",
-  "h": "1cbfef429a",
+  "at": "2026-10-17T00:24:49Z",
+  "h": "93a814578c",
   "v": "ok"
  },
  "legends:44": {
@@ -4494,9 +4502,9 @@
   "v": "ok"
  },
  "legends:5": {
-  "at": "2026-10-17T00:05:12Z",
-  "h": "2b39abc0b1",
-  "note": "Twin of intl-men:20 (same fact). The draw keeps them apart, but Trivelle should keep one",
+  "at": "2026-10-17T00:24:49Z",
+  "h": "966fbe361e",
+  "note": "Checked on fifa.com’s 2026 review: Iniesta’s 2010 winner was in the 116th minute",
   "v": "ok"
  },
  "legends:50": {
@@ -4543,8 +4551,9 @@
   "v": "ok"
  },
  "legends:58": {
-  "at": "2026-10-17T00:05:12Z",
-  "h": "b722767d9d",
+  "at": "2026-10-17T00:24:49Z",
+  "h": "149ce39565",
+  "note": "Reims is the only French club in its decoys, so it comes down to knowing Fontaine is French and Reims is in France. Still red",
   "v": "ok"
  },
  "legends:59": {
@@ -4584,18 +4593,20 @@
   "v": "ok"
  },
  "legends:64": {
-  "at": "2026-10-17T00:05:12Z",
-  "h": "e8612a7051",
+  "at": "2026-10-17T00:24:49Z",
+  "h": "e2d2fdd120",
   "v": "ok"
  },
  "legends:65": {
-  "at": "2026-10-17T00:05:12Z",
-  "h": "5fa4f6028b",
+  "at": "2026-10-17T00:24:49Z",
+  "h": "f0d9ee9ef1",
+  "note": "O Rei and O Fenômeno, both Portuguese, are the decoys that bite",
   "v": "ok"
  },
  "legends:66": {
-  "at": "2026-10-17T00:05:12Z",
-  "h": "3034b7a13d",
+  "at": "2026-10-17T00:24:49Z",
+  "h": "71af13f545",
+  "note": "seriea:24’s means (“Known as the Divine Ponytail”) gives this away, but Roberto Baggio in this sentence keeps them apart",
   "v": "ok"
  },
  "legends:67": {
@@ -4610,14 +4621,14 @@
   "v": "ok"
  },
  "legends:69": {
-  "at": "2026-10-17T00:05:12Z",
-  "h": "d9128b97f7",
+  "at": "2026-10-17T00:24:49Z",
+  "h": "3c5964b58e",
+  "note": "fifa.com calls him Brazil’s “Little Bird”",
   "v": "ok"
  },
  "legends:7": {
-  "at": "2026-10-17T00:05:12Z",
-  "h": "21db5db0fb",
-  "note": "Near-twin of awards:50, whose answer 2009 is in this sentence",
+  "at": "2026-10-17T00:24:49Z",
+  "h": "1cb2664c31",
   "v": "ok"
  },
  "legends:70": {
@@ -4627,14 +4638,10 @@
   "v": "ok"
  },
  "legends:71": {
-  "at": "2026-10-17T00:05:12Z",
-  "fix": {
-   "means": "Spanish for “the Flea”",
-   "w": "La Pulga"
-  },
-  "h": "250d461df4",
-  "note": "Fans everywhere say La Pulga. The full La Pulga Atómica is rare. FIFA’s source has the long form, which contains it",
-  "v": "fix"
+  "at": "2026-10-17T00:24:49Z",
+  "h": "e871dabb2c",
+  "note": "fifa.com uses “La Pulga Atomica”",
+  "v": "ok"
  },
  "legends:8": {
   "at": "2026-10-17T00:05:12Z",
