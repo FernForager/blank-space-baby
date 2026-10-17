@@ -16,7 +16,7 @@
     },
     {
       "w": "Lyon",
-      "means": "Seven titles in a row, 2002–2008",
+      "means": "A future Ballon d’Or winner",
       "ex": "Karim Benzema came up through the academy at Lyon",
       "hook": "Benzema",
       "k": "club",
@@ -108,7 +108,7 @@
       "w": "Olympique Lillois",
       "means": "Their only French title",
       "ex": "Olympique Lillois won the first French league title, in 1932–33",
-      "hook": "first French",
+      "hook": "1932–33",
       "k": "club",
       "src": "https://ligue1.com/fr/articles/l1_article_289-le-palmares-des-champions-de-ligue-1",
       "d": 3,
@@ -127,8 +127,8 @@
     {
       "w": "Kylian Mbappé",
       "means": "Every season from 2019 to 2024",
-      "ex": "Kylian Mbappé won a record six Ligue 1 scoring titles",
-      "hook": "Ligue 1",
+      "ex": "Kylian Mbappé won a record six straight Ligue 1 scoring titles",
+      "hook": "six straight",
       "k": "player",
       "src": "https://ligue1.com/en/articles/l1_article_2588-history-and-records-of-the-ligue-1-mc-donald-s-top-scorers",
       "d": 2,
@@ -488,7 +488,7 @@
       "w": "Inter",
       "means": "Their second came a year later",
       "ex": "PSG beat Inter in Munich to win their first Champions League",
-      "hook": "PSG",
+      "hook": "Munich",
       "k": "europe",
       "src": "https://ligue1.com/en/articles/l1_article_5693-26-27-preview-14-paris-saint-germain",
       "d": 2,
@@ -498,7 +498,7 @@
       "w": "Arsenal",
       "means": "4–3 in the shootout after 1–1",
       "ex": "PSG beat Arsenal on penalties in Budapest to keep the Champions League",
-      "hook": "PSG",
+      "hook": "Budapest",
       "k": "europe",
       "src": "https://ligue1.com/en/articles/l1_article_5693-26-27-preview-14-paris-saint-germain",
       "d": 2,
@@ -650,15 +650,6 @@
     [
       "Inter",
       "Arsenal"
-    ],
-    [
-      "14",
-      "13",
-      "10"
-    ],
-    [
-      "30",
-      "44"
     ]
   ],
   "cut": [

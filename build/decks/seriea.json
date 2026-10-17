@@ -6,7 +6,7 @@
  "items": [
   {
    "w": "Juventus",
-   "means": "Titles 28 to 36 for the club",
+   "means": "Under Conte, Allegri and Sarri",
    "ex": "Juventus won nine titles in a row, from 2011–12 to 2019–20",
    "hook": "nine titles",
    "k": "club",
@@ -25,8 +25,8 @@
   {
    "w": "Inter",
    "means": "Three Champions League wins",
-   "ex": "Inter are the only club to have played every Serie A season",
-   "hook": "Serie A",
+   "ex": "Inter are the only club never to have been relegated from Serie A",
+   "hook": "relegated",
    "k": "club",
    "src": "https://www.legaseriea.it/serie-a/news/buon-compleanno-inter-x4658",
    "d": 2
@@ -44,7 +44,7 @@
    "w": "Inter",
    "means": "Clinched at San Siro",
    "ex": "Inter are the reigning Serie A champions",
-   "hook": "Serie A",
+   "hook": "champions",
    "k": "club",
    "src": "https://www.legaseriea.it/serie-a/news/inter-parma-primo-match-point-scudetto",
    "d": 2,
@@ -162,8 +162,8 @@
   {
    "w": "Gianluigi Buffon",
    "means": "Plus a record 176 caps for Italy",
-   "ex": "Gianluigi Buffon has played the most Serie A games, with 657",
-   "hook": "Serie A",
+   "ex": "Gianluigi Buffon played a record 657 Serie A games, for Parma and Juventus",
+   "hook": "Parma",
    "k": "player",
    "src": "https://www.legaseriea.it/serie-a/news/buon-compleanno-gigi-buffon-x0061",
    "d": 2
@@ -225,8 +225,8 @@
   {
    "w": "Roberto Baggio",
    "means": "Known as the Divine Ponytail",
-   "ex": "Roberto Baggio retired in 2004 with 205 Serie A goals",
-   "hook": "Serie A",
+   "ex": "Roberto Baggio retired at Brescia in 2004 with 205 Serie A goals",
+   "hook": "Brescia",
    "k": "player",
    "src": "https://www.legaseriea.it/serie-a/news/44-anni-fa-seconda-stella-della-juventus",
    "d": 2
@@ -283,13 +283,13 @@
    "hook": "Cagliari",
    "k": "player",
    "src": "https://www.legaseriea.it/serie-a/news/oggi-festeggiano-causio-batistuta-e-giuseppe-rossi",
-   "d": 2
+   "d": 3
   },
   {
    "w": "Antonio Di Natale",
    "means": "209 goals, sixth all-time",
-   "ex": "Antonio Di Natale was Serie A’s top scorer in 2009–10 and 2010–11",
-   "hook": "top scorer",
+   "ex": "Udinese’s Antonio Di Natale was Serie A’s top scorer in 2009–10 and 2010–11",
+   "hook": "Udinese",
    "k": "player",
    "src": "https://www.legaseriea.it/serie-a/news/buon-compleanno-toto-di-natale",
    "d": 3,
@@ -444,7 +444,7 @@
   {
    "w": "New Balance Arena",
    "means": "Built in 1928, it seats 23,439",
-   "ex": "Atalanta’s stadium in Bergamo is now called the New Balance Arena",
+   "ex": "Atalanta play their home games in Bergamo at the New Balance Arena",
    "hook": "Atalanta",
    "k": "stadium",
    "src": "https://en.legaseriea.it/team/atalanta/stadium",
@@ -507,7 +507,7 @@
    "hook": "Silvio Piola",
    "k": "number",
    "src": "https://www.legaseriea.it/serie-a/news/buon-compleanno-shevchenko-x5287",
-   "d": 2,
+   "d": 1,
    "current": true
   },
   {
@@ -517,7 +517,7 @@
    "hook": "Buffon",
    "k": "number",
    "src": "https://www.legaseriea.it/serie-a/news/buon-compleanno-gigi-buffon-x0061",
-   "d": 2,
+   "d": 1,
    "current": true
   },
   {
@@ -645,11 +645,6 @@
   [
    "Allianz Stadium",
    "New Balance Arena"
-  ],
-  [
-   "19",
-   "20",
-   "21"
   ],
   [
    "Inter",

@@ -6,12 +6,12 @@
  "items": [
   {
    "w": "Man United",
-   "means": "All 13 came under Alex Ferguson",
-   "ex": "Man United have won the most Premier League titles, with 13",
-   "hook": "titles",
+   "means": "Alex Ferguson’s last game in charge",
+   "ex": "Man United drew 5–5 at West Brom in 2013, the league’s highest-scoring draw",
+   "hook": "West Brom",
    "k": "club",
-   "src": "https://www.premierleague.com/en/premier-league-explained",
-   "d": 2
+   "src": "https://www.premierleague.com/en/stats/records",
+   "d": 3
   },
   {
    "w": "Man City",
@@ -62,8 +62,8 @@
   {
    "w": "Coventry City",
    "means": "2025–26 Championship winners",
-   "ex": "Coventry City returned in 2026 after 25 years out of the league",
-   "hook": "returned",
+   "ex": "Frank Lampard led Coventry City back to the top flight in 2026 after 25 years",
+   "hook": "Lampard",
    "k": "club",
    "src": "https://www.premierleague.com/en/news/4625396/all-you-need-to-know-as-coventry-city-make-premier-league-return",
    "d": 2,
@@ -266,7 +266,7 @@
    "w": "London",
    "means": "Home to several league clubs",
    "ex": "Arsenal’s Emirates Stadium is in Holloway, north London",
-   "hook": "Holloway",
+   "hook": "Emirates",
    "k": "city",
    "src": "https://www.premierleague.com/en/news/4725666/all-you-need-to-know-about-the-20-premier-league-stadiums",
    "d": 2

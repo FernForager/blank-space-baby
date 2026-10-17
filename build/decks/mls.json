@@ -34,7 +34,7 @@
   },
   {
    "w": "Toronto FC",
-   "means": "MLS Cup, Shield and Canadian title",
+   "means": "MLS Cup, Shield, and Canadian title",
    "ex": "In 2017, Toronto FC won the first domestic treble in MLS history",
    "hook": "treble",
    "k": "club",
@@ -107,7 +107,7 @@
   {
    "w": "New York Red Bulls",
    "means": "Now called Red Bull New York",
-   "ex": "The New York Red Bulls won the Supporters’ Shield in 2013, 2015 and 2018",
+   "ex": "The New York Red Bulls won the Supporters’ Shield in 2013, 2015, and 2018",
    "hook": "Shield",
    "k": "club",
    "src": "https://www.mlssoccer.com/news/philadelphia-union-win-2025-supporters-shield",
@@ -115,7 +115,7 @@
   },
   {
    "w": "Chicago Fire",
-   "means": "MLS Cup and U.S. Open Cup, as a new club",
+   "means": "MLS Cup and U.S. Open Cup",
    "ex": "In 1998, their first season, the Chicago Fire won a double",
    "hook": "double",
    "k": "club",
@@ -151,9 +151,9 @@
   },
   {
    "w": "Carlos Vela",
-   "means": "34 goals for LAFC",
-   "ex": "Carlos Vela set the MLS record for goals in a season in 2019",
-   "hook": "MLS record",
+   "means": "He was also the 2019 MVP",
+   "ex": "Carlos Vela scored 34 goals for LAFC in 2019, an MLS season record",
+   "hook": "34 goals",
    "k": "player",
    "src": "https://www.mlssoccer.com/news/carlos-vela-breaks-goalscoring-record-hat-trick-capture-2019-mls-golden-boot",
    "d": 2,
@@ -226,7 +226,7 @@
   {
    "w": "Preki",
    "means": "He won it in 1997 and 2003",
-   "ex": "Before Messi, Preki was the only player to win MLS MVP twice",
+   "ex": "Before Lionel Messi, Preki was the only player to win MLS MVP twice",
    "hook": "MLS MVP",
    "k": "player",
    "src": "https://www.mlssoccer.com/news/inter-miami-cf-forward-lionel-messi-named-2025-landon-donovan-mls-most-valuable-player-for-second-consecutive-season",
@@ -330,7 +330,7 @@
    "w": "Crew Stadium",
    "means": "It hosted MLS Cup 2001",
    "ex": "Opened in 1999, Crew Stadium was MLS’s first soccer-specific stadium",
-   "hook": "MLS",
+   "hook": "1999",
    "k": "stadium",
    "src": "https://www.mlssoccer.com/news/timeline-of-every-new-soccer-stadium-in-mls",
    "d": 3
@@ -495,8 +495,8 @@
   },
   {
    "w": "74",
-   "means": "It won them the 2024 Supporters’ Shield",
-   "ex": "Inter Miami set an MLS points record of 74 in 2024",
+   "means": "A new MLS points record that year",
+   "ex": "Inter Miami won the 2024 Supporters’ Shield with 74 points",
    "hook": "Inter Miami",
    "k": "number",
    "src": "https://www.mlssoccer.com/news/nashville-sc-tracker-supporters-shield-mls-points-record",
@@ -524,8 +524,8 @@
   {
    "w": "Golden Boot",
    "means": "Messi won it in 2025",
-   "ex": "Each season, the league’s top goalscorer wins the Golden Boot",
-   "hook": "goalscorer",
+   "ex": "Each season, the league’s top scorer wins the Golden Boot",
+   "hook": "top scorer",
    "k": "trophy",
    "src": "https://www.mlssoccer.com/news/mls-golden-boot-winners",
    "d": 1
@@ -541,8 +541,8 @@
   },
   {
    "w": "Champions League",
-   "means": "They won 5–2 on aggregate",
-   "ex": "The Sounders beat Pumas in 2022 to win the Concacaf Champions League",
+   "means": "Concacaf’s, now the Champions Cup",
+   "ex": "The Sounders beat Pumas to win the 2022 Champions League, 5–2 on aggregate",
    "hook": "Pumas",
    "k": "trophy",
    "src": "https://www.mlssoccer.com/news/seattle-sounders-fc-win-2022-scotiabank-concacaf-champions-league",
@@ -622,11 +622,6 @@
    "Bruce Arena"
   ],
   [
-   "29",
-   "30",
-   "31"
-  ],
-  [
    "2017",
    "2018"
   ],
@@ -685,15 +680,6 @@
    "2023",
    "2025",
    "2009"
-  ],
-  [
-   "10",
-   "30"
-  ],
-  [
-   "29",
-   "31",
-   "171"
   ],
   [
    "Golden Boot",

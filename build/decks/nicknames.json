@@ -61,7 +61,7 @@
     {
       "w": "Cherries",
       "means": "Or for cherry trees by their ground",
-      "ex": "Bournemouth may be the Cherries for their red striped shirts",
+      "ex": "Bournemouth may owe their nickname, the Cherries, to their red-striped shirts",
       "hook": "Bournemouth",
       "k": "nickname",
       "src": "https://www.premierleague.com/en/news/4592046/what-is-the-history-behind-every-premier-league-clubs-name",
@@ -222,8 +222,8 @@
     },
     {
       "w": "Clover Leaves",
-      "means": "A third title came before World War I",
-      "ex": "Fürth, German champions in 1926 and 1929, are the Clover Leaves",
+      "means": "The first came before World War I",
+      "ex": "Fürth, three-time German champions, are the Clover Leaves",
       "hook": "Fürth",
       "k": "nickname",
       "src": "https://www.bundesliga.com/en/bundesliga/news/greuther-furth-club-by-club-historical-guide-kissinger-24307",
@@ -393,8 +393,8 @@
     },
     {
       "w": "Nuremberg",
-      "means": "Germany’s most decorated club in 1963",
-      "ex": "Nuremberg, eight-time champions before 1963, are known as Der Club",
+      "means": "Eight came before the Bundesliga",
+      "ex": "Nuremberg, nine-time German champions, are known as Der Club",
       "hook": "Der Club",
       "k": "club",
       "src": "https://www.bundesliga.com/en/bundesliga/news/nuremberg-club-by-club-historical-guide-gundogan-max-morlock-24164",
@@ -452,7 +452,9 @@
       "hook": "Sevilla",
       "k": "meaning",
       "src": "https://www.laliga.com/en-US/news/why-are-the-sevillistas-sevilla-fc-players-called-palanganas-basin-1",
-      "d": 3
+      "d": 3,
+      "out": true,
+      "out_why": "Too obscure even for red: an old supporters’ name, not what fans call Sevilla (soccer expert)"
     },
     {
       "w": "hey",
@@ -515,7 +517,9 @@
       "hook": "Mirandés",
       "k": "meaning",
       "src": "https://www.laliga.com/en-US/news/why-are-cd-mirandes-players-called-jabatos",
-      "d": 3
+      "d": 3,
+      "out": true,
+      "out_why": "Too obscure even for red: Mirandés have never played in the top flight (soccer expert)"
     },
     {
       "w": "cubs",
@@ -538,7 +542,7 @@
     {
       "w": "canary",
       "means": "Also their canary mascot’s name",
-      "ex": "Las Palmas fans chant “Pío-Pío,” the sound of a canary",
+      "ex": "Las Palmas fans chant “Pío-Pío,” the song of the canary",
       "hook": "Las Palmas",
       "k": "meaning",
       "src": "https://www.laliga.com/en-US/news/why-do-the-players-of-las-palmas-call-themselves-pio-pio",
@@ -546,8 +550,8 @@
     },
     {
       "w": "oak",
-      "means": "Cut down in 1879",
-      "ex": "Real Oviedo’s nickname Carbayones comes from a famous old oak",
+      "means": "A famous old oak, felled in 1879",
+      "ex": "Real Oviedo’s nickname Carbayones comes from the Asturian word for oak",
       "hook": "Oviedo",
       "k": "meaning",
       "src": "https://www.laliga.com/en-US/news/why-real-oviedo-is-known-as-the-carbayon-team",
@@ -583,7 +587,7 @@
     {
       "w": "island",
       "means": "Their stadium sits on one",
-      "ex": "Werder, as in Werder Bremen, means a small river island",
+      "ex": "Werder, as in Werder Bremen, means island in a river",
       "hook": "Werder",
       "k": "meaning",
       "src": "https://www.bundesliga.com/en/bundesliga/news/werder-bremen-bundesliga-club-by-club-historical-guide-ozil-pizarro-rehhagel-24116",
