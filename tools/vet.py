@@ -102,7 +102,7 @@ def apply(who, path):
     rows = json.load(open(path))
     if isinstance(rows, dict): rows = [rows]
     vpath = os.path.join(B.VET, who + '.json')
-    mine = B.load_json(vpath, {}); _, marks = B.vetting()
+    mine = B.load_json(vpath, {}); _, marks = B.vetting()   # the reviewer's own file only: desk records stay in desk.json
     saved, refused = 0, []
     for r in rows:
         cid, v = r.get('id', ''), r.get('v')
@@ -187,7 +187,9 @@ def take(cid, who):
     bad = problems_with(did, deck, i, v['fix'])
     if bad: sys.exit('the fix breaks house rules: ' + '; '.join(' '.join(str(x) for x in b[2:]) for b in bad))
     new = changed(deck, i, v['fix']); save_deck(did, new); p = new['items'][i]
-    print(f'{cid} now reads: {p["ex"]}  [{p["w"]}]  means: {p["means"]}  tile: {p.get("hook")}  (new fingerprint {B.fingerprint(new, i)}, back to all three reviewers)')
+    dpath = os.path.join(B.VET, 'desk.json'); desk = B.load_json(dpath, {})   # the proposer's ok on the wording it asked for
+    desk.setdefault(cid, {})[who] = {'h': B.fingerprint(new, i), 'at': now()}; save_json(dpath, desk)
+    print(f'{cid} now reads: {p["ex"]}  [{p["w"]}]  means: {p["means"]}  tile: {p.get("hook")}  (fingerprint {B.fingerprint(new, i)}: counts as {who}’s ok, back to the other two)')
     if v['fix'].get('groups'): print('  groups added:', v['fix']['groups'], '(cards of the same kind get new fingerprints too)')
 
 def take_out(cid, why):
