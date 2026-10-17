@@ -4528,32 +4528,32 @@
   "v": "ok"
  },
  "legends:30": {
-  "at": "2026-10-17T00:38:00Z",
-  "h": "56692b795a",
+  "at": "2026-10-17T00:41:09Z",
+  "h": "6caeeaca95",
   "note": "fifa.com Milla record page: 42 when he scored in 1994. Still first on fifa.com oldest goalscorers list updated 19 Jul 2026 (…/canadamexicousa2026/articles/oldest-goalscorers-history-all-time), Ronaldo second at 41",
   "v": "ok"
  },
  "legends:31": {
-  "at": "2026-10-17T00:38:00Z",
-  "h": "cf75b30d2d",
+  "at": "2026-10-17T00:41:09Z",
+  "h": "76b0875fa9",
   "note": "fifa.com Zoff page: 40 years 133 days in 1982, oldest winner. Spain won 2026 and no Spain player is on fifa.com’s oldest-players-at-2026 list (all 39+ listed), so the record stands",
   "v": "ok"
  },
  "legends:32": {
-  "at": "2026-10-17T00:38:00Z",
-  "h": "e6acbdda43",
+  "at": "2026-10-17T00:41:09Z",
+  "h": "53cb2a698b",
   "note": "fifa.com El Hadary page: 45 years 161 days at Russia 2018, oldest player ever. fifa.com eight-players-aged-40-or-over (2026) confirms no one surpasses him",
   "v": "ok"
  },
  "legends:33": {
-  "at": "2026-10-17T00:38:00Z",
-  "h": "f1fa9808bd",
+  "at": "2026-10-17T00:41:09Z",
+  "h": "522810c798",
   "note": "fifa.com Charlton obituary: 106 appearances and 49 goals for England, 1966 World Cup winner",
   "v": "ok"
  },
  "legends:35": {
-  "at": "2026-10-17T00:38:00Z",
-  "h": "ab74b421fc",
+  "at": "2026-10-17T00:41:09Z",
+  "h": "2f8de3660d",
   "note": "fifa.com all-time scorers (19 Jul 2026): Mbappé 22, ten of them at the 2026 World Cup",
   "v": "ok"
  },
@@ -8142,8 +8142,8 @@
   "v": "ok"
  },
  "seriea:44": {
-  "at": "2026-10-17T00:38:00Z",
-  "h": "48ecc0f349",
+  "at": "2026-10-17T00:41:09Z",
+  "h": "d61c1cf50a",
   "note": "legaseriea.it club pages list the Giuseppe Meazza as home for both Inter and Milan, and the Aug 23 2026 Accadde oggi item says the San Siro stadium is named for Meazza",
   "v": "ok"
  },
@@ -8456,13 +8456,10 @@
   "v": "ok"
  },
  "soccer:35": {
-  "at": "2026-10-17T00:36:56Z",
-  "fix": {
-   "ex": "Already down 1–0, the defender sneezed while clearing it and scored an own goal"
-  },
-  "h": "8d78bc1d6c",
-  "note": "merriam-webster.com/dictionary/own%20goal: a goal a player accidentally scores against his or her own team, so the sentence and means are right. But the drawable wrong answer equalizer also reads cleanly after the reworded blank (scored an equalizer), and an own goal can itself be the equalizer. Setting the score at 1–0 down makes the own goal a second goal against, so equalizer is false. Hook unchanged. Soft risk, weigh it",
-  "v": "fix"
+  "at": "2026-10-17T00:41:09Z",
+  "h": "1b4380e468",
+  "note": "merriam-webster.com own goal: a goal scored against one’s own side. With equalizer grouped out, the card has one right answer",
+  "v": "ok"
  },
  "soccer:36": {
   "at": "2026-10-16T23:58:23Z",
