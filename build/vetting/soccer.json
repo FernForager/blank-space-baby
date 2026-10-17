@@ -4424,6 +4424,12 @@
   "note": "Checked against Law 3 (2026/27). Its means line names rules:1’s answer, so the draw keeps the two apart",
   "v": "ok"
  },
+ "rules:1": {
+  "at": "2026-10-17T00:01:56Z",
+  "h": "1c295535ae",
+  "note": "Checked: Law 3.1 (2026/27). The new means line no longer gives away rules:0",
+  "v": "ok"
+ },
  "rules:10": {
   "at": "2026-10-17T00:00:54Z",
   "h": "0524c2a6b1",
@@ -4452,6 +4458,18 @@
   "note": "Checked: temporary dismissal guidelines, 10–15% of playing time",
   "v": "ok"
  },
+ "rules:15": {
+  "at": "2026-10-17T00:01:56Z",
+  "h": "fa2626c1c5",
+  "note": "Checked: Law 13.2",
+  "v": "ok"
+ },
+ "rules:16": {
+  "at": "2026-10-17T00:01:56Z",
+  "h": "16421d0ad4",
+  "note": "Checked: Law 1",
+  "v": "ok"
+ },
  "rules:17": {
   "at": "2026-10-17T00:00:54Z",
   "h": "46389d3562",
@@ -4460,6 +4478,12 @@
  "rules:18": {
   "at": "2026-10-17T00:00:54Z",
   "h": "e215ed8e33",
+  "v": "ok"
+ },
+ "rules:19": {
+  "at": "2026-10-17T00:01:56Z",
+  "h": "59f773bbe4",
+  "note": "The tile goal is broad and ties the card to every goal, goal line, goal area and goal kick card, which narrows its boards, but it reads well",
   "v": "ok"
  },
  "rules:2": {
@@ -4571,6 +4595,12 @@
   "note": "Still the Law 3.10 wording in 2026/27. The optional ‘Only the captain’ guidelines sit beside it, and basics:156 covers them",
   "v": "ok"
  },
+ "rules:38": {
+  "at": "2026-10-17T00:01:56Z",
+  "h": "fe35ccb729",
+  "note": "Checked: Law 12",
+  "v": "ok"
+ },
  "rules:39": {
   "at": "2026-10-17T00:00:54Z",
   "fix": {
@@ -4668,6 +4698,18 @@
   "note": "Same fact as basics:4 (socks must cover the shin guards), even the means line. The draw keeps them apart, but Morg may want only one",
   "v": "ok"
  },
+ "rules:54": {
+  "at": "2026-10-17T00:01:56Z",
+  "h": "c1a42ff538",
+  "note": "Checked: 2026/27 Law 4.1 allows accessories that are safe and securely covered. Still guessable by grammar, fine for yellow since the rule is new. Related to basics:114",
+  "v": "ok"
+ },
+ "rules:55": {
+  "at": "2026-10-17T00:01:56Z",
+  "h": "8390631c69",
+  "note": "Checked: Law 3.10. Near-twin of basics:143 and basics:3 (same answer, so they never meet)",
+  "v": "ok"
+ },
  "rules:56": {
   "at": "2026-10-17T00:00:54Z",
   "h": "85add460f5",
@@ -4687,6 +4729,12 @@
  "rules:59": {
   "at": "2026-10-17T00:00:54Z",
   "h": "617bb19b35",
+  "v": "ok"
+ },
+ "rules:6": {
+  "at": "2026-10-17T00:01:56Z",
+  "h": "b1d1676738",
+  "note": "Checked: Law 1.9, only one person at a time gives tactical instructions",
   "v": "ok"
  },
  "rules:60": {
