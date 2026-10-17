@@ -1828,6 +1828,297 @@
   "note": "theifab.com Law 12.1 Handling the ball: unnaturally bigger is an offence, the arm’s upper boundary is the bottom of the armpit",
   "v": "ok"
  },
+ "epl:0": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "52f11c42dd",
+  "note": "stats/records: most PL title wins 13 Manchester United, all listed seasons match Ferguson's 13 on news 4660971 (every title-winning manager). Still true after 2025/26",
+  "v": "ok"
+ },
+ "epl:1": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "5dc5765571",
+  "note": "stats/records: most consecutive titles 4 Man City 2020/21-2023/24, called record-breaking on news 4660971 (every title-winning manager)",
+  "v": "ok"
+ },
+ "epl:10": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "dd497c508f",
+  "note": "premier-league-explained: 20 teams play each other home and away (38 games each). news 4660971 (every title-winning manager) also cites 38 matches in 2003/04",
+  "v": "ok"
+ },
+ "epl:11": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "dc3055b9ef",
+  "note": "premier-league-explained: season runs August to May, a total of 380 matches",
+  "v": "ok"
+ },
+ "epl:12": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "6918755800",
+  "note": "premier-league-explained: bottom three are relegated to the EFL Championship",
+  "v": "ok"
+ },
+ "epl:13": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "752b150744",
+  "note": "stats/records: most PL points 100 Man City 2017/18. news 4660971 (every title-winning manager) shows it was Guardiola's first title",
+  "v": "ok"
+ },
+ "epl:14": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "dcf6f0b18b",
+  "note": "stats/records: longest unbeaten run 49 Arsenal, 7 May 2003 to 24 October 2004, which spans all of 2003/04",
+  "v": "ok"
+ },
+ "epl:15": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "bcbb9a320a",
+  "note": "stats/records: most PL goals in a season 36 Erling Haaland, Man City 2022/23",
+  "v": "ok"
+ },
+ "epl:16": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "6ee51bac8c",
+  "note": "stats/records: top PL goalscorer 260 Alan Shearer (Blackburn Rovers and Newcastle United)",
+  "v": "ok"
+ },
+ "epl:17": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "9d5700b7ef",
+  "note": "news 4668605 (everything decided in 2025/26): Haaland won the Golden Boot with 27, Igor Thiago second with 22",
+  "v": "ok"
+ },
+ "epl:18": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "e162a49b3e",
+  "note": "stats/records: most PL appearances 658 James Milner, 2002/03 to 2025/26",
+  "v": "ok"
+ },
+ "epl:19": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "89cf93e19d",
+  "note": "stats/records: most PL clean sheets 202 Petr Cech (Chelsea and Arsenal)",
+  "v": "ok"
+ },
+ "epl:2": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "3323dacbdf",
+  "note": "news 4668605 (everything decided in 2025/26): Arsenal champions for the first time in 22 years, finished on 85 points",
+  "v": "ok"
+ },
+ "epl:20": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "5d58c46686",
+  "note": "premier-league-explained: Aguero's goal deep into stoppage time on the final day gave Man City the 2011/12 title",
+  "v": "ok"
+ },
+ "epl:21": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "49c47ba23c",
+  "note": "news 4668605 (everything decided in 2025/26): Fernandes set up 21 goals in 2025/26, a single-season record, and was named Player of the Season. stats/records lists 21 as the record",
+  "v": "ok"
+ },
+ "epl:22": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "604b2bae51",
+  "note": "news 4725666 (all 20 stadiums, 2026/27): Old Trafford is the largest PL stadium (74,158), nicknamed the Theatre of Dreams",
+  "v": "ok"
+ },
+ "epl:23": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "8df152ade8",
+  "note": "news 4725666 (all 20 stadiums, 2026/27): Liverpool have played at Anfield since the club was formed in 1892, capacity 61,276",
+  "v": "ok"
+ },
+ "epl:25": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "86fc2b29f5",
+  "note": "news 4725666 (all 20 stadiums, 2026/27): Chelsea at Stamford Bridge since the club was formed in 1905, located in Fulham, west London",
+  "v": "ok"
+ },
+ "epl:26": {
+  "at": "2026-10-17T00:02:26Z",
+  "fix": {
+   "ex": "Newcastle’s St James’ Park sits close to the city center"
+  },
+  "h": "b910e0ec96",
+  "note": "news 4725666 (all 20 stadiums, 2026/27): St James' Park is 'located close to the city centre', not right in it. Newcastle there since 1892 is supported",
+  "v": "fix"
+ },
+ "epl:27": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "f7eff91d33",
+  "note": "news 4725666 (all 20 stadiums, 2026/27): Fulham at Craven Cottage since 1896, Riverside Stand overlooks the River Thames. news 4592046 (history behind club names): Cottagers nickname came with the move to Craven Cottage",
+  "v": "ok"
+ },
+ "epl:28": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "ff284afb2a",
+  "note": "news 4725666 (all 20 stadiums, 2026/27): Emirates is in Holloway, north London. Same page lists six London clubs in 2026/27",
+  "v": "ok"
+ },
+ "epl:29": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "148a0c4f18",
+  "note": "news 4725666 (all 20 stadiums, 2026/27): Villa Park in Aston, Birmingham, Villa's home since 1897",
+  "v": "ok"
+ },
+ "epl:3": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "ae110593de",
+  "note": "news 4660971 (every title-winning manager): Man City (Guardiola, Mancini, Pellegrini) and Chelsea (Mourinho, Ancelotti, Conte) have won with three managers. Arsenal and Liverpool have two, Man United one",
+  "v": "ok"
+ },
+ "epl:30": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "4d506cc944",
+  "note": "news 4725666 (all 20 stadiums, 2026/27): Hill Dickinson Stadium opened 2025 at Bramley-Moore Dock in Liverpool",
+  "v": "ok"
+ },
+ "epl:31": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "af7d41d828",
+  "note": "news 4725666 (all 20 stadiums, 2026/27): City Ground in West Bridgford, south of Nottingham city centre, on the River Trent, Forest's home",
+  "v": "ok"
+ },
+ "epl:32": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "22edfff919",
+  "note": "news 4725666 (all 20 stadiums, 2026/27): Vitality Stadium is the smallest PL ground, capacity 12,357, in the Bournemouth suburb of Boscombe",
+  "v": "ok"
+ },
+ "epl:33": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "cc79251ce6",
+  "note": "news 4592046 (history behind club names): the Gunners nickname is a tribute to the founders' Royal Arsenal factory",
+  "v": "ok"
+ },
+ "epl:34": {
+  "at": "2026-10-17T00:02:26Z",
+  "fix": {
+   "src": "https://www.premierleague.com/en/news/4725666/all-you-need-to-know-about-the-20-premier-league-stadiums"
+  },
+  "h": "0160a47f43",
+  "note": "news 4592046 (history behind club names) never mentions the Toffees nickname (it does show St Domingo's in 1878, supporting the means). news 4725666 (all 20 stadiums, 2026/27) calls Everton 'the Toffees', so point src there",
+  "v": "fix"
+ },
+ "epl:35": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "b51080ba42",
+  "note": "news 4489927 (Tyne-Wear derby) calls Newcastle the Magpies. Means: news 4504230 (why Newcastle will wear third kit) shows their home kit is black-and-white striped shirts",
+  "v": "ok"
+ },
+ "epl:36": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "d8f60a303d",
+  "note": "news 4489927 (Tyne-Wear derby) calls Sunderland the Black Cats and their ground the Stadium of Light",
+  "v": "ok"
+ },
+ "epl:38": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "bfea6b0b2b",
+  "note": "news 4592046 (history behind club names): Eagles nickname from the 1970s, Malcolm Allison inspired by Benfica",
+  "v": "ok"
+ },
+ "epl:39": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "7d141e9e95",
+  "note": "news 4644752: Ipswich called the Tractor Boys, promoted for 2026/27",
+  "v": "ok"
+ },
+ "epl:4": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "988a284783",
+  "note": "news 4660971 (every title-winning manager): Slot title season 2024/25, his first season in charge. Klopp won 2019/20 with Liverpool",
+  "v": "ok"
+ },
+ "epl:40": {
+  "at": "2026-10-17T00:02:26Z",
+  "fix": {
+   "means": "2012–13 was his last season in charge"
+  },
+  "h": "1c6eac52a9",
+  "note": "Sentence ok: stats/records most PL winners' medals 13 Sir Alex Ferguson, and news 4725666 (all 20 stadiums, 2026/27) says a record 13. Means unsupported: no premierleague.com page found giving 1986 (news 59707 says 26 years in one line and 27 in another). news 4660971 (every title-winning manager) says 2012/13 was his last season in charge",
+  "v": "fix"
+ },
+ "epl:41": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "4c6a897e5a",
+  "note": "news 4660971 (every title-winning manager): Wenger's Invincibles of 2003/04 won 26 and drew 12 of 38",
+  "v": "ok"
+ },
+ "epl:42": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "f1597dc6ee",
+  "note": "news 4660971 (every title-winning manager): Ranieri led Leicester to the 2015/16 title at odds of 5000/1, one of the greatest achievements in PL history",
+  "v": "ok"
+ },
+ "epl:43": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "fe8e456014",
+  "note": "news 4660971 (every title-winning manager): Guardiola title seasons 2017/18 to 2023/24, six titles",
+  "v": "ok"
+ },
+ "epl:44": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "c0adc4115a",
+  "note": "news 4660971 (every title-winning manager): Arteta is the 13th manager to win the PL title, with Arsenal in 2025/26",
+  "v": "ok"
+ },
+ "epl:45": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "5ed66c385d",
+  "note": "news 4676111 (dated 29 Jun 2026): Maresca named Man City manager replacing Guardiola. Still in charge today: the site's current team-news ticker shows 'Maresca says Haaland and team-mates will need rest'",
+  "v": "ok"
+ },
+ "epl:46": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "efeb093c85",
+  "note": "premier-league-explained: the Premier League began in 1992 as the top tier. stats/records shows Man United won 1992/93",
+  "v": "ok"
+ },
+ "epl:47": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "78201f2951",
+  "note": "news 4725666 (all 20 stadiums, 2026/27): Arsenal at Emirates Stadium since 2006, capacity 60,704",
+  "v": "ok"
+ },
+ "epl:48": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "274a14ff26",
+  "note": "news 4725666 (all 20 stadiums, 2026/27): Etihad built for the 2002 Commonwealth Games, City moved in 2003",
+  "v": "ok"
+ },
+ "epl:49": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "84e0f46624",
+  "note": "news 4725666 (all 20 stadiums, 2026/27): Tottenham Hotspur Stadium opened 2019 replacing White Hart Lane, hosts annual NFL games",
+  "v": "ok"
+ },
+ "epl:5": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "dabaae9cac",
+  "note": "stats/records: biggest PL away win 0-9 Southampton v Leicester City, 25 October 2019. premier-league-explained shows Leicester won 2015/16",
+  "v": "ok"
+ },
+ "epl:6": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "f2f029dd0b",
+  "note": "news 4625396: Coventry return after a 25-year absence as 2025/26 Championship champions",
+  "v": "ok"
+ },
+ "epl:7": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "79543e47be",
+  "note": "news 4644752: Ipswich finished second in the Championship, an immediate return after relegation in 2024/25. Hull page 4664386 confirms runners-up",
+  "v": "ok"
+ },
+ "epl:9": {
+  "at": "2026-10-17T00:02:26Z",
+  "h": "bb16f6d85b",
+  "note": "premier-league-explained: top tier with 20 teams, Championship is the second tier, teams play each other home and away",
+  "v": "ok"
+ },
  "lingo-more:0": {
   "at": "2026-10-16T23:56:49Z",
   "h": "14c3ce7ddd",
