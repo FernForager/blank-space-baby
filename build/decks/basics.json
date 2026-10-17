@@ -16,7 +16,7 @@
     {
       "w": "shoe",
       "means": "Replace it by the time the ball goes out",
-      "ex": "A goal still counts if the scorer’s shoe came off by accident",
+      "ex": "A goal still counts if the scorer’s shoe slipped off and she shot in her sock",
       "hook": "scorer",
       "k": "game-gear",
       "src": "https://www.theifab.com/laws/latest/the-players-equipment/",
@@ -440,7 +440,7 @@
       "w": "goalmouth",
       "means": "Written as one word",
       "ex": "In soccer and hockey, the goalmouth is the area directly in front of the net",
-      "hook": "hockey",
+      "hook": "net",
       "k": "field-area",
       "src": "https://www.merriam-webster.com/dictionary/goalmouth",
       "d": 1
@@ -843,7 +843,7 @@
     },
     {
       "w": "tackling",
-      "means": "A ball on the ground is fair game",
+      "means": "Once she lets go, it’s fair game",
       "ex": "Once a keeper puts the ball down to play it, she’s open to tackling",
       "hook": "ball down",
       "k": "fouls-act",
@@ -1231,8 +1231,8 @@
     {
       "w": "VAR",
       "means": "The referee may not give “no decision”",
-      "ex": "The ref must make the first call, and only then can the VAR step in",
-      "hook": "first call",
+      "ex": "The ref must make a call and may not wait for the VAR’s replay to make it",
+      "hook": "call",
       "k": "people-official",
       "src": "https://www.theifab.com/laws/latest/video-assistant-referee-var-protocol/",
       "d": 1
