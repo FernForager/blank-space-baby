@@ -122,26 +122,10 @@
   "v": "fix"
  },
  "alpha:16": {
-  "at": "2026-10-17T00:00:40Z",
-  "fix": {
-   "groups": [
-    [
-     "skibidi",
-     "unc"
-    ],
-    [
-     "skibidi",
-     "touch grass"
-    ],
-    [
-     "skibidi",
-     "L"
-    ]
-   ]
-  },
-  "h": "db8ab81b77",
-  "note": "A kid answering every tip with “unc,” “touch grass” or “L” is just as believable, so the card had more than one right answer",
-  "v": "fix"
+  "at": "2026-10-17T00:26:44Z",
+  "h": "1f8e7e1f5e",
+  "note": "“Nonsense word” steers to the answer, but parents may not know skibidi, so yellow holds",
+  "v": "ok"
  },
  "alpha:17": {
   "at": "2026-10-17T00:00:40Z",
@@ -295,8 +279,8 @@
   "v": "ok"
  },
  "alpha:33": {
-  "at": "2026-10-17T00:00:40Z",
-  "h": "6d9d10bd12",
+  "at": "2026-10-17T00:26:44Z",
+  "h": "0875b2d2a0",
   "v": "ok"
  },
  "alpha:34": {
@@ -474,17 +458,13 @@
   "v": "ok"
  },
  "alpha:62": {
-  "at": "2026-10-17T00:00:40Z",
-  "fix": {
-   "hook": "captain"
-  },
-  "h": "8606687808",
-  "note": "Promised isn’t a soccer word and half gives away the meaning. Captain is the soccer word",
-  "v": "fix"
+  "at": "2026-10-17T00:26:44Z",
+  "h": "ef5c5dcf68",
+  "v": "ok"
  },
  "alpha:63": {
-  "at": "2026-10-17T00:00:40Z",
-  "h": "1fa548284b",
+  "at": "2026-10-17T00:26:44Z",
+  "h": "0b1eafde93",
   "v": "ok"
  },
  "alpha:64": {
@@ -701,22 +681,9 @@
   "v": "ok"
  },
  "alpha:92": {
-  "at": "2026-10-17T00:00:40Z",
-  "fix": {
-   "groups": [
-    [
-     "preppy",
-     "girlypop"
-    ],
-    [
-     "preppy",
-     "drip"
-    ]
-   ]
-  },
-  "h": "2236e88859",
-  "note": "Pastel bows on cleats are just as much girlypop, and a fan could say very drip",
-  "v": "fix"
+  "at": "2026-10-17T00:26:44Z",
+  "h": "ad8beacf49",
+  "v": "ok"
  },
  "alpha:93": {
   "at": "2026-10-17T00:00:40Z",
@@ -956,13 +923,9 @@
   "v": "ok"
  },
  "awards:37": {
-  "at": "2026-10-17T00:06:28Z",
-  "fix": {
-   "hook": "scissor kick"
-  },
-  "h": "d2b77f4df7",
-  "note": "Six cards share the hook Puskás Award. Scissor kick is specific and makes a fan tap",
-  "v": "fix"
+  "at": "2026-10-17T00:26:44Z",
+  "h": "b5de0b6c6e",
+  "v": "ok"
  },
  "awards:38": {
   "at": "2026-10-17T00:06:28Z",
@@ -1215,13 +1178,9 @@
   "v": "ok"
  },
  "basics:1": {
-  "at": "2026-10-17T00:18:40Z",
-  "fix": {
-   "ex": "A goal still counts if the scorer lost a shoe by accident and kicked it in her sock"
-  },
-  "h": "85b5bf1a9f",
-  "note": "“The scorer’s shoe came off” lets gloves, armband or jersey fit too: losing any of them wouldn’t cancel a goal either. Tie it to the foot so only shoe works (Law 4: the goal is awarded)",
-  "v": "fix"
+  "at": "2026-10-17T00:26:44Z",
+  "h": "450b797eb9",
+  "v": "ok"
  },
  "basics:10": {
   "at": "2026-10-17T00:00:49Z",
@@ -1426,8 +1385,9 @@
   "v": "ok"
  },
  "basics:136": {
-  "at": "2026-10-17T00:18:40Z",
-  "h": "3151bc5216",
+  "at": "2026-10-17T00:26:44Z",
+  "h": "30b27d2a94",
+  "note": "Both decoys are plainly wrong once the ref is named, which suits white",
   "v": "ok"
  },
  "basics:137": {
@@ -2010,8 +1970,8 @@
   "v": "ok"
  },
  "basics:93": {
-  "at": "2026-10-17T00:18:40Z",
-  "h": "35745f13b6",
+  "at": "2026-10-17T00:26:44Z",
+  "h": "07dcc4360e",
   "v": "ok"
  },
  "basics:94": {
@@ -4487,13 +4447,10 @@
   "v": "ok"
  },
  "legends:59": {
-  "at": "2026-10-17T00:05:12Z",
-  "fix": {
-   "d": 1
-  },
-  "h": "9a9b02a4d2",
-  "note": "As played it is a gimme: Portland Thorns is the only women’s or American club among its decoys (Santos, Dynamo Moscow, Reims), so a new parent gets it from the name Christine alone. White is honest. Near nwsl:21",
-  "v": "fix"
+  "at": "2026-10-17T00:26:44Z",
+  "h": "e43987dda2",
+  "note": "Plays easy next to men’s clubs, which suits white",
+  "v": "ok"
  },
  "legends:6": {
   "at": "2026-10-17T00:05:12Z",
@@ -5118,8 +5075,8 @@
   "v": "ok"
  },
  "ligue1:30": {
-  "at": "2026-10-16T23:59:47Z",
-  "h": "256078d640",
+  "at": "2026-10-17T00:26:44Z",
+  "h": "d2fcfeea8c",
   "v": "ok"
  },
  "ligue1:31": {
@@ -5203,8 +5160,8 @@
   "v": "ok"
  },
  "ligue1:46": {
-  "at": "2026-10-16T23:59:47Z",
-  "h": "61057b5070",
+  "at": "2026-10-17T00:26:44Z",
+  "h": "379152cabe",
   "v": "ok"
  },
  "ligue1:47": {
@@ -6672,9 +6629,9 @@
   "v": "ok"
  },
  "nwsl:46": {
-  "at": "2026-10-17T00:03:32Z",
-  "h": "afdd1848bc",
-  "note": "Checked nwslsoccer.com 2025 awards: Bev Yanez, Racing Louisville",
+  "at": "2026-10-17T00:26:44Z",
+  "h": "e642bd664e",
+  "note": "Tile is thin but nothing better is in the sentence",
   "v": "ok"
  },
  "nwsl:47": {
@@ -6713,8 +6670,8 @@
   "v": "fix"
  },
  "nwsl:52": {
-  "at": "2026-10-17T00:03:32Z",
-  "h": "d3e705ed79",
+  "at": "2026-10-17T00:26:44Z",
+  "h": "34735d4022",
   "v": "ok"
  },
  "nwsl:53": {
@@ -7432,13 +7389,9 @@
   "v": "ok"
  },
  "rules:61": {
-  "at": "2026-10-17T00:00:54Z",
-  "fix": {
-   "means": "Fans also call it stoppage time"
-  },
+  "at": "2026-10-17T00:26:44Z",
   "h": "d058c7641f",
-  "note": "The old means named the fourth official, which gives away rules:34. Stoppage time is what US fans call it. Near-twin of basics:26 and basics:123",
-  "v": "fix"
+  "v": "ok"
  },
  "rules:62": {
   "at": "2026-10-17T00:00:54Z",
@@ -7895,8 +7848,8 @@
   "v": "ok"
  },
  "soccer:18": {
-  "at": "2026-10-17T00:18:40Z",
-  "h": "e15b44d149",
+  "at": "2026-10-17T00:26:44Z",
+  "h": "ce77a10a2b",
   "v": "ok"
  },
  "soccer:19": {
@@ -7975,8 +7928,8 @@
   "v": "ok"
  },
  "soccer:30": {
-  "at": "2026-10-17T00:01:58Z",
-  "h": "39bd93b468",
+  "at": "2026-10-17T00:26:44Z",
+  "h": "33d83417ab",
   "v": "ok"
  },
  "soccer:31": {
@@ -8049,9 +8002,8 @@
   "v": "ok"
  },
  "soccer:40": {
-  "at": "2026-10-17T00:01:58Z",
-  "h": "92bcd74aed",
-  "note": "Near-twin of soccer:41 (golden goal): same next-goal-wins idea, grouped so they never decoy each other, but they can share a board",
+  "at": "2026-10-17T00:26:44Z",
+  "h": "5f1c1412b3",
   "v": "ok"
  },
  "soccer:41": {
