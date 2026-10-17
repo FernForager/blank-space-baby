@@ -1596,6 +1596,420 @@
   "h": "7215d437da",
   "v": "ok"
  },
+ "bundesliga:0": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "fbab5ed700",
+  "note": "Its means names Leverkusen, so the board already keeps it apart from card 1",
+  "v": "ok"
+ },
+ "bundesliga:1": {
+  "at": "2026-10-17T00:03:01Z",
+  "fix": {
+   "ex": "Bayer Leverkusen beat Augsburg on the last day to finish 2023–24 unbeaten",
+   "hook": "Augsburg",
+   "means": "The first team to go a season unbeaten",
+   "src": "https://www.bundesliga.com/en/bundesliga/news/bayern-leverkusen-augsburg-preview-live-blog-report-xabi-alonso-wirtz-unbeaten-27365"
+  },
+  "h": "a175428461",
+  "note": "A bare season is a weak tile. The last-day win over Augsburg is the bundesliga.com match that sealed the unbeaten season, and Augsburg is specific, not a giveaway and not a decoy. The means no longer names Xabi Alonso (card 23’s answer). Ties to cards 23 and 41 through Leverkusen, which the board already handles",
+  "v": "fix"
+ },
+ "bundesliga:10": {
+  "at": "2026-10-17T00:03:01Z",
+  "fix": {
+   "ex": "Bayern Munich set a Bundesliga record with 122 goals in 2025–26",
+   "hook": "122 goals",
+   "means": "The old record stood for 54 years",
+   "src": "https://www.bundesliga.com/en/bundesliga/news/bayern-munich-season-in-numbers-record-champions-36970"
+  },
+  "h": "7b720a458a",
+  "note": "A bare season is a weak tile, and the clinch opponent (Stuttgart) is in the decoy pool. bundesliga.com’s 2025–26 season in numbers gives a record instead: 122 goals, breaking the 1971–72 Bayern mark that stood 54 years. The tile 122 goals is specific and not a giveaway. Recheck next May in case it falls",
+  "v": "fix"
+ },
+ "bundesliga:11": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "5fd85490a6",
+  "v": "ok"
+ },
+ "bundesliga:12": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "31bb42d6a1",
+  "v": "ok"
+ },
+ "bundesliga:13": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "68eb01c22a",
+  "note": "Kane’s run ended in 2025–26, so the fact is settled",
+  "v": "ok"
+ },
+ "bundesliga:14": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "1f52fc61b5",
+  "v": "ok"
+ },
+ "bundesliga:15": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "547afc2524",
+  "v": "ok"
+ },
+ "bundesliga:16": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "1a2afa4013",
+  "v": "ok"
+ },
+ "bundesliga:17": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "a6ba4c3409",
+  "v": "ok"
+ },
+ "bundesliga:18": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "84f251e91f",
+  "v": "ok"
+ },
+ "bundesliga:19": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "0e920cf6b2",
+  "v": "ok"
+ },
+ "bundesliga:2": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "65b0a28a9a",
+  "note": "Bundesliga tile is fair here: the card is about the league’s first season",
+  "v": "ok"
+ },
+ "bundesliga:20": {
+  "at": "2026-10-17T00:03:01Z",
+  "fix": {
+   "ex": "Timo Konietzka scored the first Bundesliga goal after just 58 seconds",
+   "hook": "58 seconds",
+   "means": "For Dortmund against Werder Bremen",
+   "src": "https://www.bundesliga.com/en/bundesliga/news/the-history-of-the-bundesliga-explained-19385"
+  },
+  "h": "570d38e6a8",
+  "note": "Bundesliga is a league label on the tile. bundesliga.com’s history page gives 58 seconds against Werder Bremen, a tile a fan wants to tap. Dropping 1963 also stops it hinting card 54",
+  "v": "fix"
+ },
+ "bundesliga:21": {
+  "at": "2026-10-17T00:03:01Z",
+  "fix": {
+   "hook": "No. 5"
+  },
+  "h": "b241e5fa82",
+  "note": "No. 5 is a sharper tile than Bayern, which nine cards in this deck already use",
+  "v": "fix"
+ },
+ "bundesliga:22": {
+  "at": "2026-10-17T00:03:01Z",
+  "fix": {
+   "ex": "Udo Lattek won a record eight Bundesliga titles, with Bayern and Gladbach",
+   "hook": "Gladbach",
+   "means": "Six of them with Bayern"
+  },
+  "h": "94fab7c7b4",
+  "note": "Bundesliga is a league label on the tile. Naming his two clubs gives a specific tile (Gladbach), and none of the decoy coaches won with Gladbach",
+  "v": "fix"
+ },
+ "bundesliga:23": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "79ca7dba66",
+  "note": "Near-twin of card 1 (Leverkusen unbeaten 2023–24). The board ties them through Leverkusen",
+  "v": "ok"
+ },
+ "bundesliga:24": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "a636558065",
+  "v": "ok"
+ },
+ "bundesliga:25": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "2ec5c59a09",
+  "v": "ok"
+ },
+ "bundesliga:26": {
+  "at": "2026-10-17T00:03:01Z",
+  "fix": {
+   "ex": "Julian Nagelsmann was just 28 when he took charge of Hoffenheim",
+   "hook": "Hoffenheim",
+   "means": "The league’s youngest permanent coach"
+  },
+  "h": "36ed3eef14",
+  "note": "youngest is a vague tile and card 17 shares it. Hoffenheim is specific, and none of the decoy coaches ever coached there. The records page gives 28 years, 205 days at Hoffenheim",
+  "v": "fix"
+ },
+ "bundesliga:27": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "12b5bf7b30",
+  "note": "Ties to card 10 through Bayern. Recheck if Kompany leaves",
+  "v": "ok"
+ },
+ "bundesliga:28": {
+  "at": "2026-10-17T00:03:01Z",
+  "fix": {
+   "ex": "Ottmar Hitzfeld won seven Bundesliga titles, with Dortmund and Bayern",
+   "hook": "Dortmund"
+  },
+  "h": "78c8e036f4",
+  "note": "Bundesliga is a league label on the tile. Naming his two clubs gives a specific tile (Dortmund). Klopp and the Bayern coaches in the decoy pool stay certainly wrong at seven titles",
+  "v": "fix"
+ },
+ "bundesliga:29": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "d5ad3ee7d5",
+  "v": "ok"
+ },
+ "bundesliga:3": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "0f4262d932",
+  "v": "ok"
+ },
+ "bundesliga:30": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "5bd7f803b2",
+  "v": "ok"
+ },
+ "bundesliga:31": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "ebc0b7ce3b",
+  "v": "ok"
+ },
+ "bundesliga:32": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "f959952202",
+  "v": "ok"
+ },
+ "bundesliga:33": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "5badb0e057",
+  "v": "ok"
+ },
+ "bundesliga:34": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "6dd0dfe7f5",
+  "v": "ok"
+ },
+ "bundesliga:35": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "d7f31e5037",
+  "v": "ok"
+ },
+ "bundesliga:36": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "b345ffcb57",
+  "note": "Near-twin of card 47 (the goat). The board ties them through goat",
+  "v": "ok"
+ },
+ "bundesliga:37": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "ef481e57bb",
+  "v": "ok"
+ },
+ "bundesliga:38": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "c85ca771d7",
+  "v": "ok"
+ },
+ "bundesliga:39": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "340335693c",
+  "v": "ok"
+ },
+ "bundesliga:4": {
+  "at": "2026-10-17T00:03:01Z",
+  "fix": {
+   "ex": "Felix Magath coached Wolfsburg to their first Bundesliga title, in 2008–09",
+   "hook": "Magath"
+  },
+  "h": "c56ba1d3f3",
+  "note": "Bundesliga is a league label on the tile. Felix Magath coached the 2008–09 title (bundesliga.com champions page) and makes a better tile, with Bayern as a fair trap since he had just won with them",
+  "v": "fix"
+ },
+ "bundesliga:40": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "2b40a5ce35",
+  "v": "ok"
+ },
+ "bundesliga:41": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "c9599ec918",
+  "v": "ok"
+ },
+ "bundesliga:42": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "210db82fa7",
+  "v": "ok"
+ },
+ "bundesliga:43": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "68f71ad792",
+  "v": "ok"
+ },
+ "bundesliga:44": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "589ff2ec0f",
+  "v": "ok"
+ },
+ "bundesliga:45": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "3f37fea269",
+  "note": "Recheck next May: Kane’s three years running changes if he wins again",
+  "v": "ok"
+ },
+ "bundesliga:46": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "2de51ff794",
+  "v": "ok"
+ },
+ "bundesliga:47": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "b2804ee438",
+  "note": "Near-twin of card 36 (Billy Goats)",
+  "v": "ok"
+ },
+ "bundesliga:48": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "fa8307c789",
+  "v": "ok"
+ },
+ "bundesliga:49": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "1de72c9de4",
+  "v": "ok"
+ },
+ "bundesliga:5": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "9f8faff92d",
+  "v": "ok"
+ },
+ "bundesliga:50": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "6d28ae7232",
+  "v": "ok"
+ },
+ "bundesliga:51": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "b53bff2a08",
+  "v": "ok"
+ },
+ "bundesliga:52": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "3e9e02a911",
+  "v": "ok"
+ },
+ "bundesliga:53": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "e016ab221e",
+  "v": "ok"
+ },
+ "bundesliga:54": {
+  "at": "2026-10-17T00:03:01Z",
+  "fix": {
+   "ex": "The Bundesliga’s first season kicked off in August 1963",
+   "hook": "first season"
+  },
+  "h": "a610940f3d",
+  "note": "Bundesliga is a league label on the tile. first season says what the card is about",
+  "v": "fix"
+ },
+ "bundesliga:55": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "7512936d6a",
+  "v": "ok"
+ },
+ "bundesliga:56": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "897964cdd2",
+  "v": "ok"
+ },
+ "bundesliga:57": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "2ed9423e6d",
+  "v": "ok"
+ },
+ "bundesliga:58": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "91a6f6d3b4",
+  "v": "ok"
+ },
+ "bundesliga:59": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "8672e64e1d",
+  "v": "ok"
+ },
+ "bundesliga:6": {
+  "at": "2026-10-17T00:03:01Z",
+  "fix": {
+   "ex": "Known as the Dino, Hamburg never left the Bundesliga until 2018",
+   "hook": "Dino"
+  },
+  "h": "ef400c4123",
+  "note": "Bundesliga is a league label on the tile. bundesliga.com calls Hamburg the Bundesliga Dino (the stadium clock counted it), a much better tile that only a fan can decode",
+  "v": "fix"
+ },
+ "bundesliga:60": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "92b69af5b5",
+  "v": "ok"
+ },
+ "bundesliga:61": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "6917fe3cdc",
+  "v": "ok"
+ },
+ "bundesliga:62": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "beab3978c7",
+  "note": "Recheck next May: 34 titles",
+  "v": "ok"
+ },
+ "bundesliga:63": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "e283885ab1",
+  "v": "ok"
+ },
+ "bundesliga:64": {
+  "at": "2026-10-17T00:03:01Z",
+  "fix": {
+   "ex": "The Bundesliga’s first season had 16 clubs",
+   "hook": "first season"
+  },
+  "h": "71adacf20b",
+  "note": "Bundesliga is a league label on the tile. first season matches card 54, its near-twin, so the two never share a board",
+  "v": "fix"
+ },
+ "bundesliga:65": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "68e7a36e51",
+  "note": "Near-twin of card 64 (16 clubs). Their means lines tie them",
+  "v": "ok"
+ },
+ "bundesliga:66": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "c124b3b543",
+  "note": "Recheck next May: Neuer could pass 13",
+  "v": "ok"
+ },
+ "bundesliga:7": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "98e557f58b",
+  "v": "ok"
+ },
+ "bundesliga:8": {
+  "at": "2026-10-17T00:03:01Z",
+  "fix": {
+   "ex": "VfB Stuttgart beat Schalke to the 2006–07 title by one point",
+   "hook": "Schalke"
+  },
+  "h": "19720c0de7",
+  "note": "Bundesliga is a league label on the tile. bundesliga.com’s champions page has Stuttgart one point ahead of Schalke (70 to 68). Schalke is a specific tile and not in the club decoy pool",
+  "v": "fix"
+ },
+ "bundesliga:9": {
+  "at": "2026-10-17T00:03:01Z",
+  "h": "98cd6ff2d8",
+  "note": "Bundesliga tile kept: Ailton and Thomas Schaaf would be star giveaways and Bayern is a decoy",
+  "v": "ok"
+ },
  "epl-more:0": {
   "at": "2026-10-17T00:01:48Z",
   "h": "2121020ea8",
