@@ -32,6 +32,12 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .marquee h1 { margin: 0; font-family: var(--pixel); font-weight: 400; font-size: 22px; line-height: 1; letter-spacing: 3px; color: #fff; white-space: nowrap;
   text-shadow: 0 0 4px rgba(255,255,255,.7), 0 0 10px var(--glow), 0 0 20px rgba(92,240,154,.55); }
 .cab.poweron .marquee h1 { animation: power .6s steps(6); }
+/* the sign as a dot-matrix board (Morg, Oct 18, 2026): every dot lit at random, the brighter ones spell TRIVIELA */
+.marquee.dm { height: 66px; padding: 0; box-sizing: border-box; }
+.marquee.dm canvas { position: absolute; inset: 7px 8px; width: calc(100% - 16px); height: calc(100% - 14px); }
+.cab.poweron .marquee.dm canvas { animation: power .6s steps(6); }
+.sr { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.marquee.dm .menu-b { right: 4px; z-index: 1; background: radial-gradient(closest-side, rgba(7,19,12,.95), rgba(7,19,12,.8) 70%, transparent); border-radius: 50%; }
 .marquee h1.neon { font-family: 'Yellowtail', cursive; font-size: 40px; line-height: 1; letter-spacing: 0; padding: 0 30px 4px; color: #FFE6F7;
   text-shadow: 0 0 2px #fff, 0 0 7px #FF5FD2, 0 0 16px #FF2FC0, 0 0 30px rgba(255,47,192,.65), 0 0 48px rgba(255,47,192,.35); }   /* the name in pink neon (Morg, Oct 18, 2026) */
 .menu-b { position: absolute; right: 8px; top: 50%; transform: translateY(-50%); width: 36px; height: 36px; padding: 0; border: 0; background: none; color: var(--dim); opacity: .6; cursor: pointer; display: flex; align-items: center; justify-content: center; }
@@ -229,14 +235,14 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .key:focus-visible, .go:focus-visible, .bk:focus-visible { outline: 3px solid var(--glow); outline-offset: 3px; }
 
 @media (max-height: 700px) { .choice { min-height: 56px; } .tile { min-height: 46px; font-size: 16px; } }
-@media (max-height: 640px) { .pitch .kick { font-size: 9px; } .cab { gap: 9px; padding-top: max(9px, env(safe-area-inset-top, 0px)); padding-bottom: max(12px, env(safe-area-inset-bottom, 0px)); } .marquee { padding: 8px 10px 9px; } .marquee h1 { font-size: 19px; } .marquee h1.neon { font-size: 34px; }
+@media (max-height: 640px) { .pitch .kick { font-size: 9px; } .cab { gap: 9px; padding-top: max(9px, env(safe-area-inset-top, 0px)); padding-bottom: max(12px, env(safe-area-inset-bottom, 0px)); } .marquee { padding: 8px 10px 9px; } .marquee h1 { font-size: 19px; } .marquee.dm { height: 54px; }
   .choice { font-size: 19px; min-height: 50px; } .sentence { font-size: 22px; } .sentence.long { font-size: 20px; } .sentence.longer { font-size: 18px; }
   .tile { min-height: 44px; font-size: 15px; } #p-board.tiles { gap: 7px 7px; } .panel { padding: 10px 10px 13px; }
   .lost .sentence { font-size: 19px; } .lost .sentence.long, .lost .sentence.longer { font-size: 17px; } .means { font-size: 16px; } .word { font-size: 17px; } }
-@media (prefers-reduced-motion: reduce) { .key, .choice .def { transition: none; } .pips i.bump, .choice.wrong, .flick, .blank, .go, .ball.goal, .ball .p.new svg, .lamp.new, .cab.poweron .marquee h1, .endrow .next svg, .pitch .kick, .pitch .shout { animation: none; } .flyer, .flyer .pg { transition: none; } }
+@media (prefers-reduced-motion: reduce) { .key, .choice .def { transition: none; } .pips i.bump, .choice.wrong, .flick, .blank, .go, .ball.goal, .ball .p.new svg, .lamp.new, .cab.poweron .marquee h1, .cab.poweron .marquee.dm canvas, .endrow .next svg, .pitch .kick, .pitch .shout { animation: none; } .flyer, .flyer .pg { transition: none; } }
 </style>
 <div class="cab" id="cab" data-v="board">
-  <div class="marquee"><h1 class="neon">Triviela</h1><button class="menu-b" id="menu-b" type="button" aria-label="Menu"></button></div>
+  <div class="marquee dm"><h1 class="sr">Triviela</h1><canvas id="sign" aria-hidden="true"></canvas><button class="menu-b" id="menu-b" type="button" aria-label="Menu"></button></div>
   <div class="ask-pop" id="menu" role="dialog" aria-modal="true" aria-label="Menu" hidden><div class="ask-box menu-box"><button class="key" id="m-how" type="button">How to play</button><button class="key" id="m-restart" type="button" hidden>Start over from <span class="num">#1</span></button><button class="key" id="m-close" type="button">Back to the game</button></div></div>
   <div class="ask-pop" id="intro" role="dialog" aria-modal="true" aria-labelledby="in-q" hidden><div class="ask-box intro-box">
     <p class="in-q" id="in-q">How well do you know the beautiful game?</p>
@@ -670,6 +676,33 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     clearInterval(tick); store.set('bsb-demo', d); store.del('bsb-daily'); S = load(); save(); show();
   }
   $('e-again').innerHTML = svg('again', 3);
+  // the sign: a dot-matrix board. Background dots glow at random, and the dots inside the 5×7 letters of TRIVIELA,
+  // each font pixel 2×2 dots, glow brighter, so the name sits in the noise (Morg, Oct 18, 2026: pointillism)
+  var GLYPH = {
+    T: ['#####', '..#..', '..#..', '..#..', '..#..', '..#..', '..#..'], R: ['####.', '#...#', '#...#', '####.', '#.#..', '#..#.', '#...#'],
+    I: ['.###.', '..#..', '..#..', '..#..', '..#..', '..#..', '.###.'], V: ['#...#', '#...#', '#...#', '#...#', '#...#', '.#.#.', '..#..'],
+    E: ['#####', '#....', '#....', '####.', '#....', '#....', '#####'], L: ['#....', '#....', '#....', '#....', '#....', '#....', '#####'],
+    A: ['.###.', '#...#', '#...#', '#####', '#...#', '#...#', '#...#']
+  };
+  function drawSign() {
+    var c = $('sign'), w = c.clientWidth, h = c.clientHeight; if (!w || !h) return;
+    var dpr = window.devicePixelRatio || 1; c.width = Math.round(w * dpr); c.height = Math.round(h * dpr);
+    var g = c.getContext('2d'); g.setTransform(dpr, 0, 0, dpr, 0, 0); g.clearRect(0, 0, w, h);
+    var word = 'TRIVIELA', cols = word.length * 6 - 1, rows = 7, k = 2;   // font pixels across, and dots per font pixel
+    var pitch = (w - 34) / (cols * k + 3), nx = Math.floor(w / pitch), ny = Math.max(rows * k + 2, Math.floor(h / pitch)), oy = (h - ny * pitch) / 2;   // the name leaves room for the menu
+    var on = {}, top = Math.floor((ny - rows * k) / 2);
+    for (var i = 0; i < word.length; i++) GLYPH[word[i]].forEach(function (r, y) { for (var x = 0; x < 5; x++) if (r[x] === '#') for (var a = 0; a < k; a++) for (var b = 0; b < k; b++) on[((i * 6 + x) * k + 1 + a) + ',' + (top + y * k + b)] = 1; });
+    var seed = 42, rnd = function () { seed = (seed * 16807) % 2147483647; return seed / 2147483647; };   // seeded, so the sign is the same on every load
+    for (var y = 0; y < ny; y++) for (var x = 0; x < nx; x++) {
+      var lit = on[x + ',' + y], r = rnd();
+      var v = lit ? (r < .12 ? .25 + rnd() * .2 : .55 + rnd() * .35) : (r < .14 ? .3 + rnd() * .3 : .06 + rnd() * .16);   // some letter dots drop out and some stray dots flare, so the name hides in the noise
+      g.fillStyle = 'rgba(' + (lit ? '190,255,215,' : '92,240,154,') + v + ')';
+      g.shadowColor = 'rgba(92,240,154,.8)'; g.shadowBlur = lit ? pitch * .8 : 0;
+      g.beginPath(); g.arc((x + .5) * pitch, oy + (y + .5) * pitch, pitch * .36, 0, 6.2832); g.fill();
+    }
+  }
+  drawSign(); window.addEventListener('resize', drawSign);
+
   // the sign's corner opens a small menu: how to play, and in the demo a way back to #1 (Morg, Oct 18, 2026)
   $('menu-b').innerHTML = svg('menu', 3);
   if (DEMO) $('m-restart').hidden = false;
