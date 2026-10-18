@@ -111,10 +111,26 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .ball .p.new svg { animation: bump .45s steps(3); }   /* animate the shape, not the slot, so it stays centered */
 .ball.goal .p { color: var(--text); filter: drop-shadow(0 0 6px rgba(92,240,154,.9)) drop-shadow(0 0 14px rgba(92,240,154,.5)); }
 .ball.goal { animation: bob .3s steps(2) 3; }
+.goalfx { position: absolute; left: 0; top: 2%; width: 100%; height: 80%; overflow: visible; z-index: 2; pointer-events: none; color: #fff; filter: drop-shadow(0 0 3px var(--glow)) drop-shadow(0 0 8px rgba(92,240,154,.6)); }
+.goalfx .gl { fill: none; stroke: var(--glow); stroke-linecap: round; stroke-linejoin: round; }
+.goalfx .gf { stroke-width: 3; stroke-dasharray: 1; stroke-dashoffset: 1; animation: draw .45s ease-out forwards; }
+.goalfx .gn { stroke-width: 1.2; opacity: 0; animation: netin .3s .35s ease-out forwards; }
+.goalfx .net { transform-box: fill-box; transform-origin: 50% 50%; animation: ripple .5s 1.05s ease-out; }
+.goalfx .gb { transform: translate(100px, 150px); animation: shot .5s .55s cubic-bezier(.2,.7,.3,1) forwards; }
+.goalfx .gbi { animation: spin .5s .55s linear; transform-origin: 0 0; }
+@keyframes draw { to { stroke-dashoffset: 0; } }
+@keyframes netin { to { opacity: .7; } }
+@keyframes shot { 0% { transform: translate(100px, 150px) scale(1.8); } 100% { transform: translate(140px, 56px) scale(.85); } }
+@keyframes spin { to { transform: rotate(300deg); } }
+@keyframes ripple { 0% { transform: scale(1); opacity: .7; } 30% { transform: scale(1.06, 1.1) translateY(-3%); opacity: 1; } 100% { transform: scale(1); opacity: .7; } }
+.pitch.fxon .ball { opacity: 0; }
 .pitch .shout { position: absolute; inset: 0; margin: auto; height: max-content; z-index: 3; text-align: center; font-family: var(--pixel); font-size: clamp(22px, 9cqw, 34px); line-height: 1.2; color: #fff; pointer-events: none;
   text-shadow: 0 0 6px #fff, 0 0 14px var(--glow), 0 0 28px rgba(92,240,154,.7); animation: shout 2.2s ease-out forwards; }
+.pitch.fxon .shout { inset: auto 0 2% 0; margin: 0 auto; opacity: 0; animation: shout 1.6s 1s ease-out forwards; }
 @keyframes shout { 0% { transform: scale(.4); opacity: 0; } 15% { transform: scale(1.15); opacity: 1; } 25% { transform: scale(1); } 75% { opacity: 1; } 100% { opacity: 0; } }
 .bv { display: block; overflow: visible; }
+.bv polygon { fill: none; stroke: currentColor; stroke-width: 9; stroke-linejoin: round; }
+.bv.on polygon { fill: currentColor; stroke-width: 4; }
 .flyer { position: fixed; z-index: 10; pointer-events: none; transition: transform .6s cubic-bezier(.3, .1, .2, 1); filter: drop-shadow(0 0 6px rgba(92,240,154,.8)); color: var(--text); transform-origin: 0 0; }
 .flyer .pg { transition: transform .6s cubic-bezier(.3, .1, .2, 1); }
 @keyframes bob { 50% { transform: translateY(-4px); } }
@@ -303,20 +319,11 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     share: ['....#....','...###...','..#####..','....#....','....#....','##..#..##','#.......#','#.......#','#.......#','#########']
   };
   var PAL = { K: '#1E2A3B', W: '#FFFFFF' };
-  var BID = 0;
-  function ballSvg(size, cls, color) {   // a real soccer ball, drawn as vectors: a center pentagon, five cut-off patches at the rim, and seams (Morg, Oct 18, 2026: the pixel ball didn't read)
-    var id = 'bc' + (++BID), ink = color ? PAL.K : 'currentColor', fill = color ? PAL.W : 'none';
-    var pg = function (cx, cy, r, rot) { var pts = []; for (var k = 0; k < 5; k++) { var a = (rot - 90 + 72 * k) * Math.PI / 180; pts.push((cx + r * Math.cos(a)).toFixed(1) + ',' + (cy + r * Math.sin(a)).toFixed(1)); } return '<polygon points="' + pts.join(' ') + '"/>'; };
-    var seams = '', patches = '';
-    for (var k = 0; k < 5; k++) {
-      var a = (-90 + 72 * k) * Math.PI / 180;
-      seams += '<line x1="' + (18 * Math.cos(a)).toFixed(1) + '" y1="' + (18 * Math.sin(a)).toFixed(1) + '" x2="' + (46 * Math.cos(a)).toFixed(1) + '" y2="' + (46 * Math.sin(a)).toFixed(1) + '"/>';
-      var b = (-90 + 36 + 72 * k) * Math.PI / 180;
-      patches += pg(60 * Math.cos(b), 60 * Math.sin(b), 21, 36 + 72 * k + 180);
-    }
-    return '<svg class="bv' + (cls ? ' ' + cls : '') + '" width="' + size + '" height="' + size + '" viewBox="-50 -50 100 100" aria-hidden="true"><defs><clipPath id="' + id + '"><circle r="45"/></clipPath></defs>' +
-      '<circle r="45" fill="' + fill + '"/><g clip-path="url(#' + id + ')" fill="' + ink + '" stroke="' + ink + '" stroke-width="3.5" stroke-linejoin="round">' + pg(0, 0, 19, 0) + patches + seams + '</g>' +
-      '<circle r="45" fill="none" stroke="' + ink + '" stroke-width="6"/></svg>';
+  function ballSvg(size, cls, on) {   // a mini of the big ball, the same six pentagons in the same seams (Morg, Oct 18, 2026): outlines while empty, filled once earned
+    var body = SLOTS.map(function (xy, k) {
+      return '<svg x="' + (xy[0] - 16.5).toFixed(2) + '" y="' + (xy[1] - 16.5).toFixed(2) + '" width="33" height="33" viewBox="0 0 100 100" overflow="visible"><polygon transform="rotate(' + (k < 5 ? 72 * k : 180) + ' 50 54)" points="50.00,8.00 93.75,39.79 77.04,91.21 22.96,91.21 6.25,39.79"/></svg>';
+    }).join('');
+    return '<svg class="bv' + (on ? ' on' : '') + (cls ? ' ' + cls : '') + '" width="' + size + '" height="' + size + '" viewBox="0 0 100 100" aria-hidden="true">' + body + '</svg>';
   }
   function svg(name, scale, cls, color) {
     if (name === 'ball') return ballSvg(11 * scale, cls, color);
@@ -614,9 +621,12 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     var slot = $('slot' + k);
     function scored() {   // the goal lands: a lamp lights and the ball empties
       settle = null; board(); var l = $('lamp' + (n / PER - 1)); if (l) l.classList.add('new');
-      var sh = document.createElement('p'); sh.className = 'shout'; sh.textContent = RESULT[n / PER];   // Goal!, Brace!!, Hat Trick!!! (Morg, Oct 18, 2026)
-      var pitch = document.querySelector('#v-board .pitch'); if (pitch) pitch.appendChild(sh);
-      if (n === 18) setTimeout(end, 2200);
+      var pitch = document.querySelector('#v-board .pitch');
+      if (pitch) {
+        if (motion()) { pitch.insertAdjacentHTML('beforeend', GOALFX); pitch.classList.add('fxon'); setTimeout(function () { var fx = pitch.querySelector('.goalfx'); if (fx) fx.remove(); pitch.classList.remove('fxon'); }, 2600); }
+        var sh = document.createElement('p'); sh.className = 'shout'; sh.textContent = RESULT[n / PER]; pitch.appendChild(sh);   // Goal!, Brace!!, Hat Trick!!! (Morg, Oct 18, 2026)
+      }
+      if (n === 18) setTimeout(end, 2800);
     }
     var stop = fly(document.querySelector('[data-i="' + i + '"]'), slot, k < 5 ? 72 * k : 180, function () {
       slot.classList.remove('pending'); slot.classList.add('new');
@@ -626,6 +636,18 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     });
     if (stop) settle = function () { stop(); clearTimeout(timer); slot.classList.remove('pending'); if (goal) scored(); else settle = null; };
   }
+  // the goal: green lines on black, Tron style (Morg, Oct 18, 2026). The frame draws itself in, the net fades up,
+  // the ball flies into the top corner and the net ripples, then the shout. Drawn here, so it matches the cabinet.
+  var GOALFX = (function () {
+    var net = '', x, y;
+    for (x = 50; x <= 150; x += 10) net += 'M' + x + ' 44V110';
+    for (y = 53; y <= 102; y += 8) net += 'M40 ' + y + 'H160';
+    return '<svg class="goalfx" viewBox="0 0 200 130" aria-hidden="true">' +
+      '<path class="gl gf" pathLength="1" d="M2 120H198"/>' +
+      '<path class="gl gf" pathLength="1" d="M24 120V30H176V120"/>' +
+      '<g class="net"><path class="gl gn" d="M40 110V44H160V110M24 30L40 44M176 30L160 44M24 120L40 110M176 120L160 110' + net + '"/></g>' +
+      '<g class="gb"><g class="gbi">' + ballSvg(26, '', true).replace('<svg ', '<svg x="-13" y="-13" ') + '</g></g></svg>';
+  })();
   var motion = function () { return !window.matchMedia || !matchMedia('(prefers-reduced-motion: reduce)').matches; };
   function fly(fromEl, slot, turn, done) {   // returns a function that lands it at once, or nothing if it already landed
     var a = fromEl.getBoundingClientRect(), b = slot.getBoundingClientRect(), s = b.width;
