@@ -527,9 +527,17 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   var RESULT = ['Nil', 'Goal!', 'Brace!!', 'Hat Trick!!!'];   // Morg, Oct 17, 2026: one to three exclamation points
   if (DEV) window.TRIVIELA = { deal: deal, choices: choices, ALL: ALL, POOL: POOL, near: near, state: function () { return S; } };   // for tools/drawcheck.py
 
+  // ---- the tap shield ----
+  // a touch within 350 ms of a new screen, a pop-up opening or closing, or the first tile arming is dropped,
+  // so a quick double tap can't land on whatever now sits under the finger (a tile's second tap answering the card)
+  var shield = 0, eat = false;
+  function guard() { shield = Date.now() + 350; }
+  document.addEventListener('touchstart', function () { eat = Date.now() < shield; }, { capture: true, passive: true });
+  document.addEventListener('click', function (e) { if (eat) { eat = false; e.stopPropagation(); e.preventDefault(); } }, true);
+
   // ---- the board ----
   var cab = $('cab');
-  function view(v) { cab.dataset.v = v; flick(); }
+  function view(v) { cab.dataset.v = v; flick(); guard(); }
   function flick() { var s = $('flip'); s.classList.remove('flick'); void s.offsetWidth; s.classList.add('flick'); }
   function go(icon, label) {
     var g = $('go');
@@ -578,7 +586,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     if (!S.path.length && armed1 !== i && !over() && !S.res[i]) {
       armed1 = i;
       document.querySelectorAll('#p-board [data-i]').forEach(function (b) { b.classList.toggle('armed', +b.dataset.i === i); });
-      $('kick').hidden = false; flick(); return;
+      $('kick').hidden = false; flick(); guard(); return;
     }
     armed1 = -1; open(i);
   }
@@ -734,7 +742,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   // the sign's corner opens a small menu: how to play, and in the demo a way back to #1 (Morg, Oct 18, 2026)
   $('menu-b').innerHTML = svg('menu', 3);
   if (DEMO) $('m-restart').hidden = false;
-  function pop(id, on) { $(id).hidden = !on; }
+  function pop(id, on) { $(id).hidden = !on; guard(); }
   $('menu-b').addEventListener('click', function () { pop('menu', true); });
   $('m-close').addEventListener('click', function () { pop('menu', false); });
   $('m-how').addEventListener('click', function () { pop('menu', false); intro(); });

@@ -57,7 +57,7 @@ async def main():
                 if await pg.evaluate(AFTER): problems.append((day, i, 'answer screen overflows', st['w']))
                 cl = await pg.evaluate(CLEAR); gaps.append(cl['gap'])
                 if cl['hit'] or cl['keys'] != 3: problems.append((day, i, 'the sentence runs into the keys at the bottom', st['w'], cl))
-                await pg.click('#flip'); await pg.wait_for_timeout(30 if i < 17 else 1000)
+                await pg.click('#flip'); await pg.wait_for_timeout(30 if i < 17 else 4000)
             if await pg.evaluate("document.getElementById('cab').dataset.v") != 'end': problems.append((day, 'no end screen after 18 right'))
         print(f'{W}x{H}: {DAYS} days, {cards} cards, slots {dict(sorted(slots.items()))}, smallest hook font {min(fonts):.1f}px, closest the sentence comes to a key below it {min(gaps):.0f}px')
         print('problems:', len(problems))
