@@ -41,6 +41,7 @@ async def main():
         b = await p.chromium.launch()
         ctx = await b.new_context(viewport={'width': W, 'height': H}, reduced_motion='reduce')
         pg = await ctx.new_page(); errs = []; pg.on('pageerror', lambda e: errs.append(str(e)))
+        await pg.add_init_script("try { localStorage.setItem('bsb-intro-off', 'true') } catch (e) {}")   # skip the how-to-play screen
         await pg.route('http://bsb.test/**', lambda r: r.fulfill(body=HTML, content_type='text/html'))
         slots, problems, fonts, cards, gaps = collections.Counter(), [], [], 0, []
         for day in range(1, DAYS + 1):

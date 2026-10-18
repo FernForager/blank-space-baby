@@ -37,6 +37,7 @@ async def run(b, html, demo):
     ctx = await b.new_context(viewport={'width': 402, 'height': 744}, reduced_motion='reduce')
     await ctx.grant_permissions(['clipboard-read', 'clipboard-write'], origin='https://bsb.test')
     pg = await ctx.new_page(); errs = []; pg.on('pageerror', lambda e: errs.append(str(e)))
+    await pg.add_init_script("try { localStorage.setItem('bsb-intro-off', 'true') } catch (e) {}")   # skip the how-to-play screen
     await pg.clock.install(time=datetime.datetime(START[0], START[1], START[2], 23, 58, 0))
     await pg.route('https://bsb.test/**', lambda r: r.fulfill(body=html, content_type='text/html'))
     await pg.goto('https://bsb.test/'); await pg.wait_for_timeout(300)
@@ -71,7 +72,7 @@ async def run(b, html, demo):
     await pg.click(f'.choice[data-w="{wrong}"]'); await pg.click('#flip'); await pg.wait_for_timeout(300)
     await pg.click('#share'); await pg.wait_for_timeout(200)
     text = await pg.evaluate("navigator.clipboard.readText()")
-    ok(text == '#1 ⚽⚽❌\nBrace!! · 12 in a row\ntriviela.net', 'the share text is exact: ' + repr(text))
+    ok(text == 'Triviela #1 ⚽⚽❌\nBrace!! · 12 in a row\ntriviela.net', 'the share text is exact: ' + repr(text))
     lost = await pg.evaluate("document.querySelector('#v-end .lost .fill') && document.querySelector('#v-end .lost .fill').textContent")
     ok(lost == w, 'the end screen fills in the right answer of the card that got you')
     # 4. locked
@@ -107,7 +108,7 @@ async def run(b, html, demo):
             await pg.click(f'.choice[data-w="{wrong}"]'); await pg.click('#flip'); await pg.wait_for_timeout(300)
         await lose(); await pg.click('#share'); await pg.wait_for_timeout(200)
         text = await pg.evaluate("navigator.clipboard.readText()")
-        ok(text == '#2 ❌\nNil\ntriviela.net', 'board #2 shares as #2: ' + repr(text))
+        ok(text == 'Triviela #2 ❌\nNil\ntriviela.net', 'board #2 shares as #2: ' + repr(text))
         await pg.evaluate(f"localStorage.setItem('bsb-demo', '{demo - 1}'); localStorage.removeItem('bsb-daily')"); await pg.reload(); await pg.wait_for_timeout(300)
         s = await state(); ok(s['day'] == demo - 1, f'the demo picks up where it was left, on #{demo}')
         await lose(); r = await row()

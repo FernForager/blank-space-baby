@@ -1,6 +1,6 @@
 {
-  "name": "Soccer Trivia",
-  "short_name": "Soccer Trivia",
+  "name": "Triviela",
+  "short_name": "Triviela",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#F2EDE4",

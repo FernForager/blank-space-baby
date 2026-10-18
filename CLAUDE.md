@@ -119,12 +119,15 @@ It replaces the arcade game: no category keys, no boss. The cabinet, palette, fo
 - **Preview-only switches:** on `*.blank-space-baby.pages.dev`, `?day=N` shows puzzle N and `?reset` clears today’s saved run. They never work on the real site.
 
 ## The polish pass (Morg, Oct 17, 2026, before his friend Tom tried it)
-- **No name on screen while the name is open:** the marquee reads “How well do you know the beautiful game?” in a neon script (Yellowtail, white core, green glow), the page title and link preview say the same, the share text opens with `#42` and no name, and the Home Screen name is “Soccer Trivia”. Only the link (triviela.net) carries the name.
+- **The name in pink neon** (Morg, Oct 18, 2026, replacing the Oct 17 call to arms on the sign): the marquee reads “Triviela” in Yellowtail script, a pale pink core with a hot-pink glow (pink is a game-only effect, like the CRT green). The page title, Home Screen name, link preview and share text (`Triviela #42 ⚽⚽❌`) say Triviela again, and the link preview’s description is the question.
 - **The ball fills the board screen:** pentagons at 33% of the ball, 31.5% out from the center, so the assembled ball reads as a real ball (Morg: it’s the coup de grâce). The goal lamps moved to the top right, where the play screen keeps them.
 - **Clearer next steps:** after an answer the screen shows a blinking “NEXT ▶” (the whole screen still taps through), and the demo’s end screen says “Play #2 ▶”.
 - **The day’s first tile asks for a second tap** (Morg, Oct 17, 2026: the keys sit right under a thumb): it lights up with a green glow and the screen blinks “Tap again to kick off”. Tapping another tile moves the glow. Every tile after the first opens on one tap.
 - **The cabinet is pinned:** no rubber-band bounce on iPhone, no double-tap zoom, and a touch listener so keys visibly press down under a finger (Safari shows `:active` only once one exists).
-- **The demo’s tucked-away restart:** a dim replay icon in the sign’s right corner opens a small pop-up, “Start over from #1?”, with two keys: Keep playing (cream) and Start over (green). A tap outside the box closes it. (A tap-again-to-confirm sign was tried first, Oct 17, 2026, and dropped as confusing.)
+- **A menu in the sign’s corner** (three bars, Oct 18, 2026): How to play, Start over from #1 (the demo only, behind a Keep playing / Start over pop-up), and Back to the game. A tap outside any pop-up closes it.
+- **How to play** (Oct 18, 2026, Morg’s ask, wording a placeholder until he signs off): one screen with the question “How well do you know the beautiful game?” in the body font, four short lines (18 cards, the three colors, 6 in a row is a goal, one miss ends the day) and a green Kick off key. It shows on every visit until the player ticks “Don’t show this again” (`bsb-intro-off`), and the menu always brings it back. The test tools set `bsb-intro-off` so it stays out of their way.
+- **Real soccer balls:** the goal lamps and the share key’s balls are vectors now (`ballSvg`): a white ball, a center pentagon, five patches cut off by the rim and seams. The 11×11 pixel ball didn’t read as a ball.
+- **The goal shout:** when a ball fills, “Goal!”, “Brace!!” or “Hat Trick!!!” pops over the screen in the arcade face for about two seconds.
 
 ## The beta and the vetting team (Morg, Oct 16, 2026)
 Morg needs to build and tune, not approve cards one by one. So:
