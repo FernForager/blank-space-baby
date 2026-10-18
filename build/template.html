@@ -302,18 +302,18 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   // the ball: one classic soccer-ball icon (Morg, Oct 18, 2026). Six patches, the center one and five cut off by the
   // edge, with seams between them and no ring around it. Patches light up as chips are earned: 0–4 clockwise from the upper
   // right, then the center (5). A goal lamp is the same icon, small, with every patch lit or none.
-  var BI = 0, BALLG = (function () {
+  var BI = 0, BALLG = (function () {   // true proportions: every polygon has the same side, so the hexagons come out regular
     var P = function (a, r) { return [r * Math.cos(a * Math.PI / 180), r * Math.sin(a * Math.PI / 180)]; };
-    var poly = function (cx, cy, r, rot) { var v = []; for (var j = 0; j < 5; j++) { var p = P(rot + 72 * j, r); v.push([cx + p[0], cy + p[1]]); } return v; };
-    var center = poly(0, 0, 17, -90), patches = [], seams = '';
-    for (var k = 0; k < 5; k++) { var phi = -54 + 72 * k, c = P(phi, 47); patches.push(poly(c[0], c[1], 17, phi)); }
+    var S = 15, R = S / (2 * Math.sin(Math.PI / 5));   // side, and a pentagon's corner radius
+    var poly = function (cx, cy, rot) { var v = []; for (var j = 0; j < 5; j++) { var p = P(rot + 72 * j, R); v.push([cx + p[0], cy + p[1]]); } return v; };
+    var center = poly(0, 0, -90), patches = [], seams = '', L = function (a, b) { return 'M' + a[0].toFixed(1) + ' ' + a[1].toFixed(1) + 'L' + b[0].toFixed(1) + ' ' + b[1].toFixed(1); };
+    // each edge patch sits straight out from a corner of the center one, a side's length away, pointing back at it
+    for (var k = 0; k < 5; k++) { var th = -90 + 72 * k, c = P(th, 2 * R + S); patches.push(poly(c[0], c[1], th + 180)); }
     for (k = 0; k < 5; k++) {
-      var th = -90 + 72 * k, v = P(th, 17), q = P(th, 29);
-      seams += 'M' + v[0].toFixed(1) + ' ' + v[1].toFixed(1) + 'L' + q[0].toFixed(1) + ' ' + q[1].toFixed(1);
-      [(k + 4) % 5, k].forEach(function (pi) {   // to the nearest corner of the patch on each side
-        var best = patches[pi].reduce(function (b, w) { var d = Math.hypot(w[0] - q[0], w[1] - q[1]); return d < b[0] ? [d, w] : b; }, [1e9])[1];
-        seams += 'M' + q[0].toFixed(1) + ' ' + q[1].toFixed(1) + 'L' + best[0].toFixed(1) + ' ' + best[1].toFixed(1);
-      });
+      seams += L(center[k], patches[k][0]);   // the seam from a center corner to the edge patch's tip
+      seams += L(patches[k][4], patches[(k + 1) % 5][1]);   // the outer edge of the hexagon between two edge patches
+      var c = P(-90 + 72 * k, 2 * R + S);
+      [2, 3].forEach(function (j) { var v = patches[k][j], dx = v[0] - c[0], dy = v[1] - c[1], m = Math.hypot(dx, dy); seams += L(v, [v[0] + dx / m * S, v[1] + dy / m * S]); });   // seams on past the edge patch
     }
     var pts = function (v) { return v.map(function (w) { return w[0].toFixed(1) + ',' + w[1].toFixed(1); }).join(' '); };
     return { patches: patches.map(pts).concat([pts(center)]), seams: seams };
