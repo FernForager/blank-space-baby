@@ -86,17 +86,17 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 /* the ball: six pentagon chip slots, five around and the center last. Like seams on a real ball, every outer
    pentagon turns a flat side to the center, and the center points down so its flat sides face back */
 .ball { position: relative; flex: none; aspect-ratio: 1; }
-.ball .seams { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; fill: none; stroke: #3E7A57; stroke-width: 1.3; stroke-linecap: round; stroke-dasharray: 0 2.6; filter: drop-shadow(0 0 2px rgba(92,240,154,.35)); }
-.ball.goal .seams { stroke: var(--text); filter: drop-shadow(0 0 4px rgba(92,240,154,.9)); }
-.ball .p { position: absolute; width: 33%; transform: translate(-50%, -50%); color: #3E7A57; filter: drop-shadow(0 0 3px rgba(92,240,154,.35)); }
-.pg { display: block; width: 100%; height: auto; overflow: visible; transform-origin: 50% 54%; }   /* turn around the shape's own center */
-.pg polygon { fill: url(#pon); stroke: currentColor; stroke-width: 4; stroke-linejoin: round; }   /* dot-matrix pentagons (Morg, Oct 18, 2026): lit dots once earned */
-.pg.o polygon { fill: url(#pdim); stroke-width: 5; }
-.ball .p.on { color: var(--text); filter: drop-shadow(0 0 5px rgba(92,240,154,.8)); }
-.ball .p.pending { visibility: hidden; }
-.ball .p.new svg { animation: bump .45s steps(3); }   /* animate the shape, not the slot, so it stays centered */
-.ball.goal .p { color: var(--text); filter: drop-shadow(0 0 6px rgba(92,240,154,.9)) drop-shadow(0 0 14px rgba(92,240,154,.5)); }
+.bi { display: block; width: 100%; height: 100%; overflow: visible; }
+.bi .body { fill: rgba(92,240,154,.07); }
+.bi .sm { fill: none; stroke: #3E7A57; stroke-width: 2.2; stroke-linecap: round; }
+.bi .pt { fill: url(#bdim); stroke: #3E7A57; stroke-width: 2.4; stroke-linejoin: round; transform-box: fill-box; transform-origin: center; }
+.bi .pt.on { fill: url(#bon); stroke: var(--text); filter: drop-shadow(0 0 3px rgba(92,240,154,.8)); }
+.bi .pt.new { animation: bump .45s steps(3); }
+.ball.goal .bi .sm { stroke: var(--text); }
+.ball.goal .bi { filter: drop-shadow(0 0 6px rgba(92,240,154,.8)); }
 .ball.goal { animation: bob .3s steps(2) 3; }
+.bi.mini .body { fill: currentColor; } .bi.mini .sm { stroke: var(--mp, #07130C); stroke-width: 4; } .bi.mini .pt, .bi.mini .pt.on { fill: var(--mp, #07130C); stroke: var(--mp, #07130C); stroke-width: 3; filter: none; }
+.share .bi.mini { color: #fff; --mp: #1E2A3B; } .share .bi.mini .body { stroke: #1E2A3B; stroke-width: 7; }
 .goalfx { position: absolute; left: 0; top: 0; width: 100%; height: 82%; z-index: 2; pointer-events: none; filter: drop-shadow(0 0 2px rgba(92,240,154,.55)); animation: power .5s steps(5); }
 .pitch.fxon .ball { opacity: 0; }
 .pitch .shout { position: absolute; inset: 0; margin: auto; height: max-content; z-index: 3; text-align: center; font-family: var(--pixel); font-size: clamp(22px, 9cqw, 34px); line-height: 1.2; color: #fff; pointer-events: none;
@@ -107,8 +107,6 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .bv polygon { fill: none; stroke: currentColor; stroke-width: 9; stroke-linejoin: round; }
 .bv.on polygon { fill: currentColor; stroke-width: 4; }
 .bv .rim { fill: none; stroke: currentColor; stroke-width: 4; opacity: .55; }
-.flyer { position: fixed; z-index: 10; pointer-events: none; transition: transform .6s cubic-bezier(.3, .1, .2, 1); filter: drop-shadow(0 0 6px rgba(92,240,154,.8)); color: var(--text); transform-origin: 0 0; }
-.flyer .pg { transition: transform .6s cubic-bezier(.3, .1, .2, 1); }
 @keyframes bob { 50% { transform: translateY(-4px); } }
 @keyframes bump { 50% { transform: scale(1.5); } }
 
@@ -242,10 +240,12 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   .choice { font-size: 19px; min-height: 50px; } .sentence { font-size: 22px; } .sentence.long { font-size: 20px; } .sentence.longer { font-size: 18px; }
   .tile { min-height: 44px; font-size: 15px; } #p-board.tiles { gap: 7px 7px; } .panel { padding: 10px 10px 13px; }
   .lost .sentence { font-size: 19px; } .lost .sentence.long, .lost .sentence.longer { font-size: 17px; } .means { font-size: 16px; } .word { font-size: 17px; } }
-@media (prefers-reduced-motion: reduce) { .key, .choice .def { transition: none; } .pips i.bump, .choice.wrong, .flick, .blank, .go, .ball.goal, .ball .p.new svg, .lamp.new, .cab.poweron .marquee h1, .cab.poweron .marquee.dm canvas, .endrow .next svg, .pitch .kick, .pitch .shout { animation: none; } .flyer, .flyer .pg { transition: none; } }
+@media (prefers-reduced-motion: reduce) { .key, .choice .def { transition: none; } .pips i.bump, .choice.wrong, .flick, .blank, .go, .ball.goal, .bi .pt.new, .lamp.new, .cab.poweron .marquee h1, .cab.poweron .marquee.dm canvas, .endrow .next svg, .pitch .kick, .pitch .shout { animation: none; } }
 </style>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
   <pattern id="pon" width="7" height="7" patternUnits="userSpaceOnUse"><circle cx="3.5" cy="3.5" r="2.6" fill="#EAFBF0"/></pattern>
+  <pattern id="bon" width="2.6" height="2.6" patternUnits="userSpaceOnUse"><circle cx="1.3" cy="1.3" r="1" fill="#EAFBF0"/></pattern>
+  <pattern id="bdim" width="2.6" height="2.6" patternUnits="userSpaceOnUse"><circle cx="1.3" cy="1.3" r=".6" fill="#2C5A40"/></pattern>
   <pattern id="pdim" width="7" height="7" patternUnits="userSpaceOnUse"><circle cx="3.5" cy="3.5" r="1.7" fill="#2C5A40"/></pattern>
 </defs></svg>
 <div class="cab" id="cab" data-v="board">
@@ -299,12 +299,32 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     share: ['....#....','...###...','..#####..','....#....','....#....','##..#..##','#.......#','#.......#','#.......#','#########']
   };
   var PAL = { K: '#1E2A3B', W: '#FFFFFF' };
-  function ballSvg(size, cls, on) {   // a mini of the big ball, the same six pentagons in the same seams (Morg, Oct 18, 2026): outlines while empty, filled once earned
-    var body = SLOTS.map(function (xy, k) {
-      return '<svg x="' + (xy[0] - 16.5).toFixed(2) + '" y="' + (xy[1] - 16.5).toFixed(2) + '" width="33" height="33" viewBox="0 0 100 100" overflow="visible"><polygon transform="rotate(' + (k < 5 ? 72 * k : 180) + ' 50 54)" points="50.00,8.00 93.75,39.79 77.04,91.21 22.96,91.21 6.25,39.79"/></svg>';
-    }).join('');
-    return '<svg class="bv' + (on ? ' on' : '') + (cls ? ' ' + cls : '') + '" width="' + size + '" height="' + size + '" viewBox="0 0 100 100" aria-hidden="true"><circle class="rim" cx="50" cy="50" r="49"/>' + body + '</svg>';
+  // the ball: one classic soccer-ball icon (Morg, Oct 18, 2026). Six patches, the center one and five cut off by the
+  // edge, with seams between them and no ring around it. Patches light up as chips are earned: 0–4 clockwise from the upper
+  // right, then the center (5). A goal lamp is the same icon, small, with every patch lit or none.
+  var BI = 0, BALLG = (function () {
+    var P = function (a, r) { return [r * Math.cos(a * Math.PI / 180), r * Math.sin(a * Math.PI / 180)]; };
+    var poly = function (cx, cy, r, rot) { var v = []; for (var j = 0; j < 5; j++) { var p = P(rot + 72 * j, r); v.push([cx + p[0], cy + p[1]]); } return v; };
+    var center = poly(0, 0, 17, -90), patches = [], seams = '';
+    for (var k = 0; k < 5; k++) { var phi = -54 + 72 * k, c = P(phi, 47); patches.push(poly(c[0], c[1], 17, phi)); }
+    for (k = 0; k < 5; k++) {
+      var th = -90 + 72 * k, v = P(th, 17), q = P(th, 29);
+      seams += 'M' + v[0].toFixed(1) + ' ' + v[1].toFixed(1) + 'L' + q[0].toFixed(1) + ' ' + q[1].toFixed(1);
+      [(k + 4) % 5, k].forEach(function (pi) {   // to the nearest corner of the patch on each side
+        var best = patches[pi].reduce(function (b, w) { var d = Math.hypot(w[0] - q[0], w[1] - q[1]); return d < b[0] ? [d, w] : b; }, [1e9])[1];
+        seams += 'M' + q[0].toFixed(1) + ' ' + q[1].toFixed(1) + 'L' + best[0].toFixed(1) + ' ' + best[1].toFixed(1);
+      });
+    }
+    var pts = function (v) { return v.map(function (w) { return w[0].toFixed(1) + ',' + w[1].toFixed(1); }).join(' '); };
+    return { patches: patches.map(pts).concat([pts(center)]), seams: seams };
+  })();
+  function ballIcon(n, cls, fresh, ids) {   // n patches lit, fresh: the one just earned (it bumps)
+    var id = 'bc' + (++BI);
+    return '<svg class="bi' + (cls ? ' ' + cls : '') + '" viewBox="-50 -50 100 100" aria-hidden="true"><defs><clipPath id="' + id + '"><circle r="48"/></clipPath></defs>' +
+      '<g clip-path="url(#' + id + ')"><circle class="body" r="48"/><path class="sm" d="' + BALLG.seams + '"/>' +
+      BALLG.patches.map(function (pt, k) { return '<polygon class="pt' + (k < n ? ' on' : '') + (k === fresh ? ' new' : '') + '"' + (ids ? ' id="slot' + k + '"' : '') + ' points="' + pt + '"/>'; }).join('') + '</g></svg>';
   }
+  function ballSvg(size, cls, on) { return ballIcon(6, 'mini' + (on ? ' lit' : '') + (cls ? ' ' + cls : '')).replace('<svg ', '<svg style="width:' + size + 'px;height:' + size + 'px" '); }   // a solid little ball: dim until its goal is scored (the lamp's color does that)
   function svg(name, scale, cls, color) {
     if (name === 'ball') return ballSvg(11 * scale, cls, color);
     var rows = SPR[name], paths = {}, inked = rows.join('').indexOf('K') >= 0 && rows.join('').replace(/[.#K]/g, '') !== '';
@@ -495,13 +515,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     g.innerHTML = '<span class="lbl">' + label + '</span>' + svg(icon, 3); g.setAttribute('aria-label', label); g.classList.remove('wait'); g.tabIndex = 0;
   }
   var SLOTS = [0, 1, 2, 3, 4].map(function (k) { var a = (-90 + 72 * k) * Math.PI / 180; return [50 + 31.5 * Math.cos(a), 50 + 31.5 * Math.sin(a)]; }).concat([[50, 50]]);
-  function ballHTML(n, pending) {   // n chips in the ball: the five around clockwise from the top, then the center
-    var seams = '';   // the ball around the patches: a dotted rim, and dotted seams out from the center patch between the outer ones
-    for (var k = 0; k < 5; k++) { var a = (90 + 72 * k) * Math.PI / 180; seams += '<line x1="' + (50 + 16 * Math.cos(a)).toFixed(1) + '" y1="' + (50 + 16 * Math.sin(a)).toFixed(1) + '" x2="' + (50 + 48 * Math.cos(a)).toFixed(1) + '" y2="' + (50 + 48 * Math.sin(a)).toFixed(1) + '"/>'; }
-    return '<div class="ball" id="ball"><svg class="seams" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="48.5"/>' + seams + '</svg>' + SLOTS.map(function (xy, k) {
-      return '<div class="p' + (k < n ? ' on' : '') + (k === pending ? ' pending' : '') + '" id="slot' + k + '" style="left:' + xy[0] + '%;top:' + xy[1] + '%">' + pent(k >= n, k < 5 ? 72 * k : 180) + '</div>';
-    }).join('') + '</div>';
-  }
+  function ballHTML(n, fresh) { return '<div class="ball" id="ball">' + ballIcon(n, '', fresh, true) + '</div>'; }
   function lampsHTML(goals, scale, ids) {
     var h = ''; for (var i = 0; i < 3; i++) h += '<i class="lamp' + (i < goals ? ' on' : '') + '"' + (ids ? ' id="lamp' + i + '"' : '') + '>' + svg('ball', scale, '', i < goals) + '</i>';
     return '<span class="lamps">' + h + '</span>';
@@ -600,23 +614,20 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     if (!ok) return end();
     var n = chips(), k = (n - 1) % PER, goal = !(n % PER), timer = null;
     board(k); view('board');
-    var slot = $('slot' + k);
     function scored() {   // the goal lands: a lamp lights and the ball empties
       settle = null; board(); var l = $('lamp' + (n / PER - 1)); if (l) l.classList.add('new');
       var pitch = document.querySelector('#v-board .pitch');
       if (pitch) {
-        { pitch.insertAdjacentHTML('beforeend', goalScene(n / PER)); pitch.classList.add('fxon'); setTimeout(function () { var fx = pitch.querySelector('.goalfx'); if (fx) fx.remove(); pitch.classList.remove('fxon'); }, 2600); }
+        pitch.insertAdjacentHTML('beforeend', goalScene(n / PER)); pitch.classList.add('fxon'); setTimeout(function () { var fx = pitch.querySelector('.goalfx'); if (fx) fx.remove(); pitch.classList.remove('fxon'); }, 2600);
         var sh = document.createElement('p'); sh.className = 'shout'; sh.textContent = RESULT[n / PER]; pitch.appendChild(sh);   // Goal!, Brace!!, Hat Trick!!! (Morg, Oct 18, 2026)
       }
       if (n === 18) setTimeout(end, 2800);
     }
-    var stop = fly(document.querySelector('[data-i="' + i + '"]'), slot, k < 5 ? 72 * k : 180, function () {
-      slot.classList.remove('pending'); slot.classList.add('new');
-      if (!goal) { settle = null; return; }
-      $('ball').classList.add('goal');   // six chips: a goal
-      timer = setTimeout(scored, motion() ? 950 : 0);
-    });
-    if (stop) settle = function () { stop(); clearTimeout(timer); slot.classList.remove('pending'); if (goal) scored(); else settle = null; };
+    // the patch lights up in place (Morg, Oct 18, 2026: no flying chips)
+    if (!goal) { settle = null; return; }
+    $('ball').classList.add('goal');   // six patches: a goal
+    timer = setTimeout(scored, motion() ? 950 : 0);
+    settle = function () { clearTimeout(timer); scored(); };
   }
   // the goal: a still dot-matrix scene, like the LED boards of old arcade soccer (Morg, Oct 18, 2026): the goal and its net,
   // the striker celebrating, the shot's dotted flight and one ball in the net per goal (a Brace shows two, a Hat Trick three).
@@ -631,21 +642,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
       '<rect width="72" height="40" fill="url(#dm)"/>' + Object.keys(paths).map(function (c) { return '<path fill="' + cols[c] + '" d="' + paths[c] + '"/>'; }).join('') + '</svg>';
   }
   var motion = function () { return !window.matchMedia || !matchMedia('(prefers-reduced-motion: reduce)').matches; };
-  function fly(fromEl, slot, turn, done) {   // returns a function that lands it at once, or nothing if it already landed
-    var a = fromEl.getBoundingClientRect(), b = slot.getBoundingClientRect(), s = b.width;
-    if (!motion()) { done(); return null; }
-    var f = document.createElement('div'); f.className = 'flyer'; f.innerHTML = pent();
-    var x = a.left + a.width / 2 - s / 2, y = a.top + a.height / 2 - s / 2;
-    f.style.left = x + 'px'; f.style.top = y + 'px'; f.style.width = s + 'px';
-    document.body.appendChild(f);
-    var gone = false;
-    function land() { if (gone) return; gone = true; f.remove(); done(); }
-    requestAnimationFrame(function () { requestAnimationFrame(function () {
-      f.style.transform = 'translate(' + (b.left - x) + 'px,' + (b.top - y) + 'px)'; f.firstChild.style.transform = 'rotate(' + turn + 'deg)';
-    }); });
-    f.addEventListener('transitionend', land); setTimeout(land, 900);
-    return function () { if (!gone) { gone = true; f.remove(); } };
-  }
+
 
   // ---- the end of the day ----
   var tick;
