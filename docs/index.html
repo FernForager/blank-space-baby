@@ -319,6 +319,20 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     share: ['....#....','...###...','..#####..','....#....','....#....','##..#..##','#.......#','#.......#','#.......#','#########']
   };
   var PAL = { K: '#1E2A3B', W: '#FFFFFF' };
+  var RB = 0;
+  function realBall(size) {   // a proper soccer ball, for the shot into the net: white, a center pentagon, patches cut off by the rim, seams
+    var id = 'rb' + (++RB), ink = '#1E2A3B';
+    var pg = function (cx, cy, r, rot) { var pts = []; for (var k = 0; k < 5; k++) { var a = (rot - 90 + 72 * k) * Math.PI / 180; pts.push((cx + r * Math.cos(a)).toFixed(1) + ',' + (cy + r * Math.sin(a)).toFixed(1)); } return '<polygon points="' + pts.join(' ') + '"/>'; };
+    var seams = '', patches = '';
+    for (var k = 0; k < 5; k++) {
+      var a = (-90 + 72 * k) * Math.PI / 180, b = (-54 + 72 * k) * Math.PI / 180;
+      seams += '<line x1="' + (18 * Math.cos(a)).toFixed(1) + '" y1="' + (18 * Math.sin(a)).toFixed(1) + '" x2="' + (46 * Math.cos(a)).toFixed(1) + '" y2="' + (46 * Math.sin(a)).toFixed(1) + '"/>';
+      patches += pg(60 * Math.cos(b), 60 * Math.sin(b), 21, 216 + 72 * k);
+    }
+    return '<svg x="' + (-size / 2) + '" y="' + (-size / 2) + '" width="' + size + '" height="' + size + '" viewBox="-50 -50 100 100"><defs><clipPath id="' + id + '"><circle r="45"/></clipPath></defs>' +
+      '<circle r="45" fill="#fff"/><g clip-path="url(#' + id + ')" fill="' + ink + '" stroke="' + ink + '" stroke-width="3.5" stroke-linejoin="round">' + pg(0, 0, 19, 0) + patches + seams + '</g>' +
+      '<circle r="45" fill="none" stroke="' + ink + '" stroke-width="5"/></svg>';
+  }
   function ballSvg(size, cls, on) {   // a mini of the big ball, the same six pentagons in the same seams (Morg, Oct 18, 2026): outlines while empty, filled once earned
     var body = SLOTS.map(function (xy, k) {
       return '<svg x="' + (xy[0] - 16.5).toFixed(2) + '" y="' + (xy[1] - 16.5).toFixed(2) + '" width="33" height="33" viewBox="0 0 100 100" overflow="visible"><polygon transform="rotate(' + (k < 5 ? 72 * k : 180) + ' 50 54)" points="50.00,8.00 93.75,39.79 77.04,91.21 22.96,91.21 6.25,39.79"/></svg>';
@@ -646,7 +660,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
       '<path class="gl gf" pathLength="1" d="M2 120H198"/>' +
       '<path class="gl gf" pathLength="1" d="M24 120V30H176V120"/>' +
       '<g class="net"><path class="gl gn" d="M40 110V44H160V110M24 30L40 44M176 30L160 44M24 120L40 110M176 120L160 110' + net + '"/></g>' +
-      '<g class="gb"><g class="gbi">' + ballSvg(26, '', true).replace('<svg ', '<svg x="-13" y="-13" ') + '</g></g></svg>';
+      '<g class="gb"><g class="gbi">' + realBall(26) + '</g></g></svg>';
   })();
   var motion = function () { return !window.matchMedia || !matchMedia('(prefers-reduced-motion: reduce)').matches; };
   function fly(fromEl, slot, turn, done) {   // returns a function that lands it at once, or nothing if it already landed
