@@ -86,10 +86,12 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 /* the ball: six pentagon chip slots, five around and the center last. Like seams on a real ball, every outer
    pentagon turns a flat side to the center, and the center points down so its flat sides face back */
 .ball { position: relative; flex: none; aspect-ratio: 1; }
+.ball .seams { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; fill: none; stroke: #3E7A57; stroke-width: 1.3; stroke-linecap: round; stroke-dasharray: 0 2.6; filter: drop-shadow(0 0 2px rgba(92,240,154,.35)); }
+.ball.goal .seams { stroke: var(--text); filter: drop-shadow(0 0 4px rgba(92,240,154,.9)); }
 .ball .p { position: absolute; width: 33%; transform: translate(-50%, -50%); color: #3E7A57; filter: drop-shadow(0 0 3px rgba(92,240,154,.35)); }
 .pg { display: block; width: 100%; height: auto; overflow: visible; transform-origin: 50% 54%; }   /* turn around the shape's own center */
-.pg polygon { fill: currentColor; stroke: currentColor; stroke-width: 2; stroke-linejoin: round; }
-.pg.o polygon { fill: none; stroke-width: 6; }
+.pg polygon { fill: url(#pon); stroke: currentColor; stroke-width: 4; stroke-linejoin: round; }   /* dot-matrix pentagons (Morg, Oct 18, 2026): lit dots once earned */
+.pg.o polygon { fill: url(#pdim); stroke-width: 5; }
 .ball .p.on { color: var(--text); filter: drop-shadow(0 0 5px rgba(92,240,154,.8)); }
 .ball .p.pending { visibility: hidden; }
 .ball .p.new svg { animation: bump .45s steps(3); }   /* animate the shape, not the slot, so it stays centered */
@@ -104,6 +106,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .bv { display: block; overflow: visible; }
 .bv polygon { fill: none; stroke: currentColor; stroke-width: 9; stroke-linejoin: round; }
 .bv.on polygon { fill: currentColor; stroke-width: 4; }
+.bv .rim { fill: none; stroke: currentColor; stroke-width: 4; opacity: .55; }
 .flyer { position: fixed; z-index: 10; pointer-events: none; transition: transform .6s cubic-bezier(.3, .1, .2, 1); filter: drop-shadow(0 0 6px rgba(92,240,154,.8)); color: var(--text); transform-origin: 0 0; }
 .flyer .pg { transition: transform .6s cubic-bezier(.3, .1, .2, 1); }
 @keyframes bob { 50% { transform: translateY(-4px); } }
@@ -241,6 +244,10 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   .lost .sentence { font-size: 19px; } .lost .sentence.long, .lost .sentence.longer { font-size: 17px; } .means { font-size: 16px; } .word { font-size: 17px; } }
 @media (prefers-reduced-motion: reduce) { .key, .choice .def { transition: none; } .pips i.bump, .choice.wrong, .flick, .blank, .go, .ball.goal, .ball .p.new svg, .lamp.new, .cab.poweron .marquee h1, .cab.poweron .marquee.dm canvas, .endrow .next svg, .pitch .kick, .pitch .shout { animation: none; } .flyer, .flyer .pg { transition: none; } }
 </style>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <pattern id="pon" width="7" height="7" patternUnits="userSpaceOnUse"><circle cx="3.5" cy="3.5" r="2.6" fill="#EAFBF0"/></pattern>
+  <pattern id="pdim" width="7" height="7" patternUnits="userSpaceOnUse"><circle cx="3.5" cy="3.5" r="1.7" fill="#2C5A40"/></pattern>
+</defs></svg>
 <div class="cab" id="cab" data-v="board">
   <div class="marquee dm"><h1 class="sr">Triviela</h1><canvas id="sign" aria-hidden="true"></canvas><button class="menu-b" id="menu-b" type="button" aria-label="Menu"></button></div>
   <div class="ask-pop" id="menu" role="dialog" aria-modal="true" aria-label="Menu" hidden><div class="ask-box menu-box"><button class="key" id="m-how" type="button">How to play</button><button class="key" id="m-restart" type="button" hidden>Start over from <span class="num">#1</span></button><button class="key" id="m-close" type="button">Back to the game</button></div></div>
@@ -296,7 +303,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     var body = SLOTS.map(function (xy, k) {
       return '<svg x="' + (xy[0] - 16.5).toFixed(2) + '" y="' + (xy[1] - 16.5).toFixed(2) + '" width="33" height="33" viewBox="0 0 100 100" overflow="visible"><polygon transform="rotate(' + (k < 5 ? 72 * k : 180) + ' 50 54)" points="50.00,8.00 93.75,39.79 77.04,91.21 22.96,91.21 6.25,39.79"/></svg>';
     }).join('');
-    return '<svg class="bv' + (on ? ' on' : '') + (cls ? ' ' + cls : '') + '" width="' + size + '" height="' + size + '" viewBox="0 0 100 100" aria-hidden="true">' + body + '</svg>';
+    return '<svg class="bv' + (on ? ' on' : '') + (cls ? ' ' + cls : '') + '" width="' + size + '" height="' + size + '" viewBox="0 0 100 100" aria-hidden="true"><circle class="rim" cx="50" cy="50" r="49"/>' + body + '</svg>';
   }
   function svg(name, scale, cls, color) {
     if (name === 'ball') return ballSvg(11 * scale, cls, color);
@@ -489,7 +496,9 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   }
   var SLOTS = [0, 1, 2, 3, 4].map(function (k) { var a = (-90 + 72 * k) * Math.PI / 180; return [50 + 31.5 * Math.cos(a), 50 + 31.5 * Math.sin(a)]; }).concat([[50, 50]]);
   function ballHTML(n, pending) {   // n chips in the ball: the five around clockwise from the top, then the center
-    return '<div class="ball" id="ball">' + SLOTS.map(function (xy, k) {
+    var seams = '';   // the ball around the patches: a dotted rim, and dotted seams out from the center patch between the outer ones
+    for (var k = 0; k < 5; k++) { var a = (90 + 72 * k) * Math.PI / 180; seams += '<line x1="' + (50 + 16 * Math.cos(a)).toFixed(1) + '" y1="' + (50 + 16 * Math.sin(a)).toFixed(1) + '" x2="' + (50 + 48 * Math.cos(a)).toFixed(1) + '" y2="' + (50 + 48 * Math.sin(a)).toFixed(1) + '"/>'; }
+    return '<div class="ball" id="ball"><svg class="seams" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="48.5"/>' + seams + '</svg>' + SLOTS.map(function (xy, k) {
       return '<div class="p' + (k < n ? ' on' : '') + (k === pending ? ' pending' : '') + '" id="slot' + k + '" style="left:' + xy[0] + '%;top:' + xy[1] + '%">' + pent(k >= n, k < 5 ? 72 * k : 180) + '</div>';
     }).join('') + '</div>';
   }
