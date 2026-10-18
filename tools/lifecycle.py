@@ -57,7 +57,7 @@ async def run(b, html, demo):
     w = await pg.evaluate("document.getElementById('q').dataset.w")
     await pg.click(f'.choice[data-w="{w}"]'); await pg.reload(); await pg.wait_for_timeout(300)
     s = await state(); v = await pg.evaluate("document.getElementById('cab').dataset.v")
-    lit = await pg.evaluate("document.querySelectorAll('#ball .p.on').length")
+    lit = await pg.evaluate("document.querySelectorAll('#ball .pt.on').length")
     ok(v == 'board' and s['res'][3] == 1 and lit == 1, 'a right answer is saved at once and its chip is in the ball after a reload')
     # slot rule over the rest of the day, answering right
     slots = [s['tiles'][3]['ch'].index(next(c for c in s['tiles'][3]['ch'] if c['w'] == s['tiles'][3]['w']))]
