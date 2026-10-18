@@ -30,10 +30,8 @@ BOARD = """() => { const h = [...document.querySelectorAll('.hk')];
   return { min: Math.min(...h.map(e => parseFloat(getComputedStyle(e).fontSize))), over: h.filter(e => e.scrollWidth > e.clientWidth + 0.5).map(e => e.textContent),
            scroll: document.documentElement.scrollHeight > innerHeight }; }"""
 
-async def tap(pg, sel):   # a tile tap: the day's first tile asks for a second tap
+async def tap(pg, sel):   # a tile tap
     await pg.click(sel)
-    if await pg.evaluate("document.getElementById('cab').dataset.v") == 'board' and await pg.evaluate("!!document.querySelector('.tile.armed')"):
-        await pg.click(sel)
 
 
 async def main():

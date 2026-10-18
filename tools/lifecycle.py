@@ -26,10 +26,8 @@ def ok(cond, what):
     print(('ok    ' if cond else 'FAIL  ') + what)
     if not cond: fails.append(what)
 
-async def tap(pg, sel):   # a tile tap: the day's first tile asks for a second tap
+async def tap(pg, sel):   # a tile tap
     await pg.click(sel)
-    if await pg.evaluate("document.getElementById('cab').dataset.v") == 'board' and await pg.evaluate("!!document.querySelector('.tile.armed')"):
-        await pg.click(sel)
 
 
 async def run(b, html, demo):
@@ -45,9 +43,8 @@ async def run(b, html, demo):
     s = await state(); ok(s and s['day'] == 0, 'a fresh day is saved as soon as the board opens')
     # 1. commit
     await pg.click('[data-i="3"]')
-    v = await pg.evaluate("[document.getElementById('cab').dataset.v, !!document.querySelector('[data-i=\"3\"].armed'), !document.getElementById('kick').hidden]")
-    ok(v == ['board', True, True], f'the first tile of the day asks for a second tap: {v}')
-    await pg.click('[data-i="3"]')
+    v = await pg.evaluate("document.getElementById('cab').dataset.v")
+    ok(v == 'play', f'the first tile of the day opens on one tap: {v}')
     before = await pg.evaluate("[...document.querySelectorAll('.choice')].map(b => b.dataset.w)")
     await pg.reload(); await pg.wait_for_timeout(300)
     v = await pg.evaluate("document.getElementById('cab').dataset.v")

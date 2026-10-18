@@ -20,10 +20,8 @@ FONTS = """() => { const h = [...document.querySelectorAll('.hk')]; if (!h.lengt
   return { min: Math.min(...h.map(e => parseFloat(getComputedStyle(e).fontSize))), max: Math.max(...h.map(e => parseFloat(getComputedStyle(e).fontSize))),
            over: h.filter(e => e.scrollWidth > e.clientWidth + 0.5).map(e => e.textContent) }; }"""
 
-async def tap(pg, sel):   # a tile tap: the day's first tile asks for a second tap
+async def tap(pg, sel):   # a tile tap
     await pg.click(sel)
-    if await pg.evaluate("document.getElementById('cab').dataset.v") == 'board' and await pg.evaluate("!!document.querySelector('.tile.armed')"):
-        await pg.click(sel)
 
 
 async def main():
