@@ -325,7 +325,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 @media (prefers-reduced-motion: reduce) { .g-slots.nope, .screen.crton { animation: none; } .g-slots i { transition: none; } }
 /* attract mode (Morg, Oct 19, 2026: both his kids froze on the first screen, not knowing to pick a card): until the day's first
    tap, a wave of green light runs across the tiles every few seconds, like an arcade cabinet's chase lights, and the screen blinks
-   PICK A CARD with an arrow centered under it, under the A, pointing down to them (Morg: all things in balance). Both stop for good at the player's first tap ever (bsb-picked) */
+   PICK A CARD with an arrow centered under it, under the A, pointing down to them (Morg: all things in balance). Both stop at each new board's first tap (Morg's pick, Oct 19, 2026) */
 .pitch .pick { position: absolute; left: 0; right: 0; bottom: 0; margin: 0 auto; width: max-content; display: flex; flex-direction: column; align-items: center; gap: 5px; padding: 6px 10px; border-radius: 4px;
   background: rgba(7,19,12,.88); z-index: 2; font-family: var(--pixel); font-size: 11px; letter-spacing: 1px; color: var(--glow); text-shadow: 0 0 6px rgba(92,240,154,.8); animation: blink 1.05s steps(1) infinite; }
 .pitch .pick svg { transform: rotate(90deg); }
@@ -716,7 +716,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
       ' aria-label="' + esc(T.hook) + ', ' + COLOR[T.d - 1] + (S.res[i] ? (S.res[i] === 1 ? ', right' : ', missed') : '') + '">' + (S.res[i] ? (S.res[i] === 1 ? ballMark(22, 'res') : svg('no', 2, 'res')) : '<span class="hk">' + num(keep(esc(T.hook))) + '</span>') + '</button>';
   }
   function board(fresh) {   // fresh: the panel just lit, so it bumps
-    var idle = !S.path.length && !over() && !store.get('bsb-picked', false);   // attract mode until the player's first tap ever (Morg, Oct 19, 2026)
+    var idle = !S.path.length && !over();   // attract mode on every new board until its first tap (Morg, Oct 19, 2026)
     $('v-board').innerHTML = '<div class="pitch">' + ballHTML(chips(), fresh) + (idle ? '<p class="pick" id="pick">PICK A CARD' + svg('next', 2) + '</p>' : '') + '</div>';
     $('p-board').innerHTML = S.tiles.map(function (T, i) { return tileHTML(T, i); }).join('');
     $('p-board').classList.toggle('attract', idle);
@@ -739,7 +739,6 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   var T, answered;
   function open(i) {   // tapping a tile commits to it: a reload brings the same card back
     if (over() || S.res[i] || S.open >= 0) return;
-    store.set('bsb-picked', true);   // attract mode is for a player's first board only
     if (settle) settle();
     var t = S.tiles[i], slot = t.ch.map(function (p) { return p.w; }).indexOf(t.w);
     if (!t.set) {   // the right answer never lands in the same slot 3 times running
