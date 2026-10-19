@@ -373,7 +373,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 @media (max-height: 640px) { .gorow, .endrow { min-height: 48px; } .gorow .gokey, .endrow .next.key, .endrow .again.key, .sheet .menu-box #m-close, .mrow .key { min-height: 48px; } .gorow { margin-top: 8px; } .ask-pop.sheet { padding-bottom: max(12px, env(safe-area-inset-bottom, 0px)); } }
 
 /* ===== MOCKUP 5x3 (Oct 19, 2026): a scratch prototype, never the game. Switches: ?look=b (whole cards in their color),
-   ?white=sq|blue|green (the white row's miss in the share), ?hooks=0 (played cards show only their result) ===== */
+   ?white=sq|blue|green (the white row's miss in the share), ?hooks=1 (played cards show their hook too) ===== */
 #p-board.tiles { grid-template-columns: repeat(5, minmax(0, 1fr)); grid-template-rows: repeat(3, auto); grid-auto-flow: row; gap: 11px 7px; column-gap: 7px; }
 .tile { min-height: 92px; padding: 6px 3px 7px; border-radius: 9px; flex-direction: column; justify-content: center; gap: 7px; font-size: 11px; line-height: calc(12 / 11); }
 #p-board .tile.c2:not(:disabled), #p-board .tile.c3:not(:disabled) { padding-left: 3px; padding-right: 3px; }
@@ -771,7 +771,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   }
   function ballHTML(n, fresh) { return '<div class="ball" id="ball">' + ballIcon(n, '', fresh, true) + '</div>'; }
   var COLOR = ['white', 'yellow card', 'red card'];
-  var MP = new URLSearchParams(location.search), LOOKB = MP.get('look') === 'b', HOOKS = MP.get('hooks') !== '0';   // the mockup's switches
+  var MP = new URLSearchParams(location.search), LOOKB = MP.get('look') === 'b', HOOKS = MP.get('hooks') === '1';   // the mockup's switches
   var WHITE = { sq: '⬜', blue: '🟦', green: '🟩' }[MP.get('white')] || '⬜', MISS = [WHITE, '🟨', '🟥'];
   if (LOOKB) document.documentElement.classList.add('lookb');
   function rcard(d, cls) { return '<i class="rcard c' + d + (cls ? ' ' + cls : '') + '"></i>'; }
