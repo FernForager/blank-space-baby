@@ -597,7 +597,9 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   var DEV = /^(localhost|127\.0\.0\.1|bsb\.test)$|\.blank-space-baby\.pages\.dev$/.test(host);   // preview links only, never the real site
   // the 104 lock: the real site asks once per phone (see lock() below), and ?gate shows it on a preview link
   var CODE = '104', REAL = /(^|\.)triviela\.net$|^fernforager\.github\.io$/.test(host);
-  var gated = (REAL || (DEV && params.has('gate'))) && !store.get('bsb-104', false);   // a new key, so phones that typed the old golazo password see the pad once
+  // switched off on Oct 19, 2026 (Morg: people may start texting the link). LOCK = true brings it back. research/lock-104.md has the spec
+  var LOCK = false;
+  var gated = ((LOCK && REAL) || (DEV && params.has('gate'))) && !store.get('bsb-104', false);   // a new key, so phones that typed the old golazo password see the pad once
   var FIXED = DEV && params.get('day') ? Math.max(0, parseInt(params.get('day'), 10) - 1) : null;
   if (DEV && params.has('reset')) { store.del('bsb-daily'); params.delete('reset'); history.replaceState(null, '', location.pathname + (params.toString() ? '?' + params : '')); }
   function today() { return FIXED !== null ? FIXED : DEMO ? demoDay() : Math.max(0, dayOf(new Date())); }
