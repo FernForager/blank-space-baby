@@ -6,7 +6,7 @@ Runs twice: as the real daily (DEMO 0) and as the playtest demo (DEMO_DAYS in bu
 
 1. A tapped tile is committed: a reload reopens the same card with the same choices in the same order.
 2. A reload after a right answer keeps the chip, and the board shows it.
-3. A miss doesn't end the day: all 15 cards play, and the share is the board's grid, every card in its spot, exactly (checked through the clipboard).
+3. A miss doesn't end the day: all 15 cards play, and the share is the board's grid, every card in its spot, with the best run, exactly (checked through the clipboard).
 4. A finished day reopens to its result and can't be replayed, and How to play stops opening on its own.
 5. At local midnight the countdown runs out and a fresh board appears, numbered one higher.
    In the demo there is no countdown and midnight changes nothing: Play #2 opens #2, the last board ends with a
@@ -40,7 +40,10 @@ async def answer(pg, i, right):   # play tile i, right or wrong, then tap on. Re
 def expected(s, n):   # the share text for a saved day: a row per color, every card in its board spot, a miss as its card
     rows = [''.join('⚽' if s['res'][i] == 1 else '⬜🟨🟥'[d - 1] for i in range(15) if s['tiles'][i]['d'] == d) for d in (1, 2, 3)]
     right = sum(1 for r in s['res'] if r == 1)
-    return f'Triviela #{n}\n' + '\n'.join(rows) + '\n' + ('GOLAZO!' if right == 15 else f'{right}/15') + '\ntriviela.net'
+    best = run = 0   # the longest run of right answers in the order played
+    for i in s['path']: run = run + 1 if s['res'][i] == 1 else 0; best = max(best, run)
+    word = {2: 'Brace!', 3: 'Hat Trick!'}.get(best, f'{best} in a row!') if best >= 2 else ''
+    return f'Triviela #{n}\n' + '\n'.join(rows) + '\n' + ('GOLAZO!' if right == 15 else f'{right}/15' + (' · ' + word if word else '')) + '\ntriviela.net'
 
 
 async def run(b, html, demo):
