@@ -363,6 +363,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .tile .hk { width: 100%; font-size: 11px; }
 .tile .res { flex: none; }
 .tile.miss .res.rcard { transform: rotate(-12deg); }   /* booked */
+.tile.miss .res.rcard.solo { width: 18px; height: 25px; border-radius: 2.5px; }   /* alone on the card: as big as the ball */
 /* look B: the face-down cards are the referee's cards themselves */
 .lookb #p-board .tile:not(:disabled).c1 { background: #FFFFFF; box-shadow: 0 4px 0 #C9C2B4, 0 6px 8px rgba(0,0,0,.25); }
 .lookb #p-board .tile:not(:disabled).c2 { background: var(--c2); box-shadow: 0 4px 0 var(--c2-edge), 0 6px 8px rgba(0,0,0,.25); }
@@ -755,7 +756,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   function tileHTML(T, i) {
     var st = S.res[i] === 1 ? ' done' : S.res[i] === 2 ? ' miss' : '';
     return '<button type="button" class="key tile c' + T.d + st + '" data-i="' + i + '"' + (S.res[i] || over() ? ' disabled' : '') +
-      ' aria-label="' + esc(T.hook) + ', ' + COLOR[T.d - 1] + (S.res[i] ? (S.res[i] === 1 ? ', right' : ', missed') : '') + '">' + (S.res[i] ? (HOOKS ? '<span class="hk">' + num(keep(esc(T.hook))) + '</span>' : '') + (S.res[i] === 1 ? ballMark(HOOKS ? 18 : 26, 'res') : rcard(T.d, 'res')) : rcard(T.d, 'back')) + '</button>';
+      ' aria-label="' + esc(T.hook) + ', ' + COLOR[T.d - 1] + (S.res[i] ? (S.res[i] === 1 ? ', right' : ', missed') : '') + '">' + (S.res[i] ? (HOOKS ? '<span class="hk">' + num(keep(esc(T.hook))) + '</span>' : '') + (S.res[i] === 1 ? ballMark(HOOKS ? 18 : 26, 'res') : rcard(T.d, HOOKS ? 'res' : 'res solo')) : rcard(T.d, 'back')) + '</button>';
   }
   function board(fresh) {   // fresh: the panel just lit, so it bumps
     var idle = !S.path.length && !over();   // attract mode on every new board until its first tap (Morg, Oct 19, 2026)
