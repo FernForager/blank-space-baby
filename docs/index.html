@@ -325,8 +325,8 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 @media (prefers-reduced-motion: reduce) { .g-slots.nope, .screen.crton { animation: none; } .g-slots i { transition: none; } }
 /* attract mode (Morg, Oct 19, 2026: both his kids froze on the first screen, not knowing to pick a card): until the day's first
    tap, a wave of green light runs across the tiles every few seconds, like an arcade cabinet's chase lights, and the screen blinks
-   PICK A CARD with an arrow down to them. Both stop for good at the first tap */
-.pitch .pick { position: absolute; left: 0; right: 0; bottom: 0; margin: 0 auto; width: max-content; display: flex; align-items: center; gap: 8px; padding: 6px 10px; border-radius: 4px;
+   PICK A CARD with an arrow centered under it, under the A, pointing down to them (Morg: all things in balance). Both stop for good at the first tap */
+.pitch .pick { position: absolute; left: 0; right: 0; bottom: 0; margin: 0 auto; width: max-content; display: flex; flex-direction: column; align-items: center; gap: 5px; padding: 6px 10px; border-radius: 4px;
   background: rgba(7,19,12,.88); z-index: 2; font-family: var(--pixel); font-size: 11px; letter-spacing: 1px; color: var(--glow); text-shadow: 0 0 6px rgba(92,240,154,.8); animation: blink 1.05s steps(1) infinite; }
 .pitch .pick svg { transform: rotate(90deg); }
 #p-board.attract .tile:not(:disabled) { animation: chase 3.2s 1.2s infinite; animation-delay: calc(1.2s + var(--w) * 90ms); }
