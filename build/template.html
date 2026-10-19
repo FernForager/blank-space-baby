@@ -803,13 +803,25 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 
 
   // ---- the end of the day ----
+  // the playtest's anonymous results (Morg, Oct 19, 2026): a finished board sends its puzzle number, its 15 card ids, each
+  // one's result and the tap order to /api/result, once (S.sent), and tries again on the next visit if there was no signal.
+  // Nothing about who played. Only triviela.net and preview links have the service (the GitHub Pages address doesn't).
+  var SENDS = /(^|\.)triviela\.net$|\.blank-space-baby\.pages\.dev$/.test(host);
+  function report() {
+    if (!SENDS || S.sent || !over() || S.path.length !== S.tiles.length) return;
+    try {
+      fetch('/api/result', { method: 'POST', keepalive: true, headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({ day: S.day, ids: S.tiles.map(function (t) { return t.id; }), res: S.res, path: S.path }) })
+        .then(function (r) { if (r.ok) { S.sent = true; save(); } }).catch(function () {});
+    } catch (e) {}
+  }
   var tick;
   function shareText() {   // the shootout grid: ⚽ right, ❌ wrong, a row per color, then the score (Morg, Oct 19, 2026)
     return 'Triviela #' + (S.day + 1) + '\n' + rows().map(function (r) { return r.map(function (v) { return v === 1 ? '⚽' : '❌'; }).join(''); }).join('\n') +
       '\n' + (chips() === ALLN ? GOLAZO : chips() + '/' + ALLN) + '\ntriviela.net';
   }
   function end() {
-    settle = null; store.set('bsb-intro-off', true);
+    settle = null; store.set('bsb-intro-off', true); report();
     var n = chips(), top = n === ALLN, r = rows(), big = innerHeight > 700 ? 3 : 2;
     var cells = function (s) { return r.map(function (row, y) { return '<i class="rc c' + (y + 1) + '"></i>' + row.map(function (v) {
       var b = s === 3 ? 31 : 21;   // every cell the ball's size, so a ✕ sits centered where a ball would
