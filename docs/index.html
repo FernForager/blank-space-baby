@@ -547,8 +547,12 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     tiers.forEach(function (T, t) { T.forEach(function (c) { var Q = q[t]; Q.splice(Q.indexOf(c), 1); Q.push(c); }); });
     return tiers.map(function (T) { return shuffle(T, r); });
   }
+  // the testing boards wore out: before #1 the draw quietly deals PREROLL days nobody plays, so the cards Morg met on his
+  // first boards go to the back of their lines (Oct 19, 2026). Raise it again for a fresh run, or set it to 0 at launch.
+  var PREROLL = 40;
   function deal(day, every) {   // replay every day from puzzle #1, so each card's place in line is the same on every phone
     var r0 = rng(hash('triviela lines')), q = POOL.map(function (P) { return shuffle(P, r0); }), last = {}, b, all = [];
+    for (var d = -PREROLL; d < 0; d++) dealDay(d, q, last);
     for (var d = 0; d <= day; d++) { b = dealDay(d, q, last); if (every) all.push(b); }
     return every ? all : b;
   }
@@ -561,8 +565,36 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     var same = shuffle(D.cards.filter(function (x) { return x.k === c.k && ok(x); }), r);
     var any = shuffle(D.cards.filter(function (x) { return x.k !== c.k && ok(x); }), r);
     var picks = [c];
+    near2(c, seen, r).forEach(function (w) { picks.push({ w: w, m: '' }); });
     same.concat(any).forEach(function (x) { if (picks.length < 3 && !picks.some(function (p) { return D.clash(p.w, x.w); })) picks.push(x); });
     return shuffle(picks, r).map(function (p) { return { w: p.w, m: p.m }; });
+  }
+  // a number answer gets two near misses instead of numbers borrowed from other cards, which can be wildly off (Morg, Oct 19, 2026):
+  // a small count moves by 1 to 3, a bigger one by 10 to 35 percent at the answer's own roundness, a year by 1 to 10 years
+  // (by 4 or 8 for a World Cup, Euro or Olympics), never past this year unless the answer is, and a future year stays future. Each can land above or below,
+  // so the answer isn't always the middle one. A number that hedges (more than 8, about 50) keeps the borrowed numbers.
+  var HEDGE = /\b(more than|at least|nearly|almost|about|around|roughly|some|up to|over|under)\s+$/i;   // a hedge right before the number
+  function near2(c, seen, r) {
+    var w = String(c.w);
+    var at = c.ex.indexOf(w);
+    if (!/^\d[\d,]*$/.test(w) || (at >= 0 && HEDGE.test(c.ex.slice(0, at)))) return [];
+    var a = +w.replace(/,/g, ''), year = /year/.test(c.k) || (/^\d{4}$/.test(w) && a > 1850 && a < 2100);
+    var now = new Date().getFullYear(), cup = year && /World Cup|Euro\b|Olympic/.test(c.ex), cap = Math.max(a, now);
+    var round = [1000, 100, 10, 1].filter(function (k) { return a % k === 0 && k <= a * 0.2; })[0] || 1;   // 100 points moves by tens, 60,000 by thousands
+    var fmt = function (n) { return year || n < 1000 ? String(n) : String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ','); };
+    var out = [];
+    for (var tries = 0; out.length < 2 && tries < 60; tries++) {
+      var sign = r() < 0.5 ? -1 : 1, n;
+      if (cup) n = a + sign * 4 * (1 + Math.floor(r() * 2));
+      else if (year) n = a + sign * (1 + Math.floor(r() * 10));
+      else if (a <= 12) n = a + sign * (1 + Math.floor(r() * 3));
+      else n = Math.round(a * (1 + sign * (0.1 + r() * 0.25)) / round) * round;
+      if (n < 1 || n === a || (year && n > cap) || (year && a > now && n <= now) || Math.abs(n - a) < (year || a <= 12 ? 1 : 2)) continue;   // a future year keeps future misses
+      var f = fmt(n);
+      if (out.indexOf(f) >= 0 || seen.indexOf(plain(f)) >= 0) continue;
+      out.push(f);
+    }
+    return out.length === 2 ? out : [];
   }
   function dayOf(t) { return Math.round((Date.UTC(t.getFullYear(), t.getMonth(), t.getDate()) - Date.UTC(START[0], START[1] - 1, START[2])) / 864e5); }
 
@@ -575,12 +607,12 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   function demoDay() { return Math.min(DEMO - 1, Math.max(0, store.get('bsb-demo', 0) | 0)); }   // the playtest's place in its run of boards
   function fresh(day) {
     var b = deal(day);
-    return { v: 2, day: day, tiles: [].concat(b[0], b[1], b[2]).map(function (c) { return { id: c.id, h: c.fp, lk: c.lk, d: c.d, hook: c.hook, w: c.w, m: c.m, ex: c.ex, ch: choices(c, day) }; }),
-      res: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], open: -1, path: [], slots: [] };   // v 2: the shootout's 15 cards
+    return { v: 3, day: day, tiles: [].concat(b[0], b[1], b[2]).map(function (c) { return { id: c.id, h: c.fp, lk: c.lk, d: c.d, hook: c.hook, w: c.w, m: c.m, ex: c.ex, ch: choices(c, day) }; }),
+      res: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], open: -1, path: [], slots: [] };   // v 3: fresh cards and near-miss numbers (v 2 was the shootout's first 15)
   }
   function load() {
     var s = store.get('bsb-daily', null), d = today();
-    if (!(s && s.v === 2 && s.day === d && s.tiles && s.tiles.length === 3 * PER)) return fresh(d);
+    if (!(s && s.v === 3 && s.day === d && s.tiles && s.tiles.length === 3 * PER)) return fresh(d);
     s.tiles.forEach(function (t) {   // a board saved before cards had ids: find each card by its words
       if (t.id) return;
       for (var i = 0; i < ALL.length; i++) if (ALL[i].w === t.w && ALL[i].ex === t.ex) { t.id = ALL[i].id; t.h = ALL[i].fp; t.lk = ALL[i].lk; break; }
