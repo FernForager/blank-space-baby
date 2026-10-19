@@ -350,6 +350,15 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .sheet .intro-box { text-align: left; }
 @media (max-height: 640px) { .panel { padding-left: 8px; padding-right: 8px; } }
 @media (max-height: 640px) { .gorow, .endrow { min-height: 48px; } .gorow .gokey, .endrow .next.key, .endrow .again.key, .sheet .menu-box #m-close, .mrow .key { min-height: 48px; } .gorow { margin-top: 8px; } .ask-pop.sheet { padding-bottom: max(12px, env(safe-area-inset-bottom, 0px)); } }
+
+/* ===== MOCKUP (Oct 19, 2026, never the game): category tags on the cards, and streaks. ?look=icons swaps the words for symbols ===== */
+.tile { flex-direction: column; gap: 6px; }
+.tile .tag { display: block; max-width: 100%; font-size: 11px; line-height: calc(12 / 11); color: var(--btn-ink); text-align: center; hyphens: manual; overflow-wrap: normal; }
+.tile.done .tag, .tile.miss .tag { opacity: .7; }
+.tile .tagi { display: block; color: var(--btn-ink); }
+@media (max-height: 640px) { .tile { gap: 4px; } }
+.pitch .shout.streak { font-size: round(nearest, clamp(16px, 7cqw, 24px), var(--ps)); animation-duration: 1.6s; }
+.best { margin: -2cqh 0 0; font-family: var(--pixel); --b: var(--g0); font-size: round(nearest, 13px, var(--ps)); color: var(--glow); --g: 0 0 6px rgba(92,240,154,.6); text-align: center; }
 </style>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
   <pattern id="pon" width="7" height="7" patternUnits="userSpaceOnUse"><circle cx="3.5" cy="3.5" r="2.6" fill="#EAFBF0"/></pattern>
@@ -368,6 +377,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
       <li><span class="num">15</span> cards a day. Pick any one.</li>
       <li class="in-colors"><span><i class="tc c1"></i>easy</span><span><i class="tc c2"></i>harder</span><span><i class="tc c3"></i>hardest</span></li>
       <li>Play all <span class="num">15</span>, right or wrong.</li>
+      <li>Right in a row: Brace!!, Hat Trick!!!</li>
       <li>Light the whole ball: <span class="num">GOLAZO!</span></li>
     </ul>
     <button class="key yes in-go" id="in-go" type="button">Kick off</button>
@@ -402,6 +412,13 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   var SPR = {
     // color sprites: K ink, W white
     ball:  ['...KKKKK...','.KKWWWWWKK.','.KWWWKWWWK.','KWWWKKKWWWK','KKWWKKKWWKK','KWKWWWWWKWK','KWWKWWWKWWK','KWWKKWKKWWK','.KWKKWKKWK.','.KKWWWWWKK.','...KKKKK...'],
+    i101:     ['.#..###..#.', '##..#.#.##.', '.#..#.#..#.', '.#..#.#..#.', '###.###.###'],
+    iwhistle: ['.....#.', '..####.', '.#....#', '#..##.#', '#..##.#', '.#....#', '..####.'],
+    italk:    ['.######.', '#......#', '#.#.#..#', '#......#', '.###.##.', '...#.#..', '...##...'],
+    ishield:  ['#######', '#.....#', '#.....#', '#.....#', '.#...#.', '..#.#..', '...#...'],
+    iglobe:   ['..###..', '.#.#.#.', '#######', '#..#..#', '#######', '.#.#.#.', '..###..'],
+    icup:     ['#######', '#.###.#', '.#####.', '..###..', '...#...', '..###..', '.#####.'],
+    ishirt:   ['.##.##.', '#######', '#.###.#', '..###..', '..###..', '..###..', '..###..'],
     next:  ['...#...','...##..','######.','#######','######.','...##..','...#...'],
     ok:    ['......#','.....##','#...##.','##.##..','.###...','..#....'],
     no:    ['##...##','###.###','.#####.','..###..','.#####.','###.###','##...##'],
@@ -714,13 +731,20 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   }
   function ballHTML(n, fresh) { return '<div class="ball" id="ball">' + ballIcon(n, '', fresh, true) + '</div>'; }
   var COLOR = ['White', 'Yellow', 'Red'];
+  var MP = new URLSearchParams(location.search), ICONS = MP.get('look') === 'icons';   // the mockup's switch
+  var TAG = { basics: '101', rules: 'Rules', soccer: 'Lingo', 'lingo-more': 'Lingo', alpha: 'Slang', parents: 'Slang', epl: 'EPL', 'epl-more': 'EPL',
+    mls: 'MLS', nwsl: 'NWSL', ucl: 'UCL', wc26: 'WC26', laliga: 'La Liga', seriea: 'Serie A', ligue1: 'Ligue 1', ligamx: 'Liga MX', bundesliga: 'Bundes\u00ADliga',
+    'intl-men': 'World', 'intl-women': 'World', legends: 'Legends', awards: 'Awards', nicknames: 'Clubs' };
+  var FAM = { basics: 'i101', rules: 'iwhistle', soccer: 'italk', 'lingo-more': 'italk', alpha: 'italk', parents: 'italk', ucl: 'icup', wc26: 'iglobe',
+    'intl-men': 'iglobe', 'intl-women': 'iglobe', legends: 'icup', awards: 'icup', nicknames: 'ishirt' };   // every league: the shield
+  function tag(T) { var d = (T.id || '').split(':')[0]; return ICONS ? svg(FAM[d] || 'ishield', 2, 'tagi') : '<span class="tag">' + num(esc(TAG[d] || '')) + '</span>'; }
   function rcard(d, cls) { return '<i class="rcard c' + d + (cls ? ' ' + cls : '') + '"></i>'; }   // a referee's card in its color
   function spot(i) { var d = S.tiles[i].d, n = 0; for (var k = 0; k < i; k++) if (S.tiles[k].d === d) n++; return n; }   // a card's place in its row, 0 to 4
   function tileHTML(T, i) {   // face down: its row's card waiting in the slot. Face up: the ball, or its card tilted, booked
     var st = S.res[i] === 1 ? ' done' : S.res[i] === 2 ? ' miss' : '';
     return '<button type="button" class="key tile c' + T.d + st + '" data-i="' + i + '"' + (S.res[i] || over() ? ' disabled' : '') +
       ' aria-label="' + COLOR[T.d - 1] + ' card ' + (spot(i) + 1) + (S.res[i] ? ', ' + esc(T.hook) + (S.res[i] === 1 ? ', right' : ', missed') : '') + '">' +
-      (S.res[i] ? (S.res[i] === 1 ? ballMark(26, 'res') : rcard(T.d, 'res')) : rcard(T.d, 'back')) + '</button>';
+      (S.res[i] ? (S.res[i] === 1 ? ballMark(26, 'res') : rcard(T.d, 'res')) : rcard(T.d, 'back')) + tag(T) + '</button>';
   }
   function board(fresh) {   // fresh: the panel just lit, so it bumps
     var idle = !S.path.length && !over();   // attract mode on every new board until its first tap (Morg, Oct 19, 2026)
@@ -801,10 +825,17 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     if (document.activeElement && document.activeElement.blur) document.activeElement.blur();   // no leftover focus ring after a tap
   }
   var settle = null;   // ends the GOLAZO! moment at once if the player taps on
+  // streaks (the mockup): right answers in a row, in the order played. A lone right answer stays quiet, 2 is a Brace!!, 3 a Hat Trick!!!,
+  // then the count, and GOLAZO! stays 15 of 15
+  function streak(path) { var run = 0; (path || S.path).forEach(function (i) { run = S.res[i] === 1 ? run + 1 : S.res[i] === 2 ? 0 : run; }); return run; }
+  function best() { var b = 0, run = 0; S.path.forEach(function (i) { run = S.res[i] === 1 ? run + 1 : 0; b = Math.max(b, run); }); return b; }
+  function streakWord(n) { return n >= ALLN ? GOLAZO : n === 2 ? 'Brace!!' : n === 3 ? 'Hat Trick!!!' : n > 3 ? n + ' in a row!' : ''; }
   function next() {   // after an answer: back to the board, where a right one lights the next panel of the ball
     var i = S.open, ok = S.res[i] === 1, n = chips(), timer = null;
     S.open = -1; save(); go(null); beta(null);
     board(ok ? n - 1 : undefined); view('board');
+    var run = ok ? streak() : 0, pitch = document.querySelector('#v-board .pitch');
+    if (run >= 2 && run < ALLN && pitch) { var sh = document.createElement('p'); sh.className = 'shout streak'; sh.textContent = streakWord(run); pitch.appendChild(sh); }
     if (!over()) { settle = null; return; }
     if (n < ALLN) { timer = setTimeout(end, motion() ? 1300 : 0); settle = function () { clearTimeout(timer); end(); }; return; }   // the last card: a beat on the ball, then the grid
     function golazo() {   // 15/15: the center lights last, the whole ball glows, and the goal scene plays
@@ -852,7 +883,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   var MISS = ['⬜', '🟨', '🟥'];
   function shareText() {
     return 'Triviela #' + (S.day + 1) + '\n' + rows().map(function (r, y) { return r.map(function (v) { return v === 1 ? '⚽' : MISS[y]; }).join(''); }).join('\n') +
-      '\n' + (chips() === ALLN ? GOLAZO : chips() + '/' + ALLN) + '\ntriviela.net';
+      '\n' + (chips() === ALLN ? GOLAZO : chips() + '/' + ALLN + (best() >= 2 ? ' · ' + streakWord(best()) : '')) + '\ntriviela.net';
   }
   function end() {
     settle = null; store.set('bsb-intro-off', true); report();
@@ -863,10 +894,10 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
         '<i class="rcard c' + (y + 1) + '" style="width:' + Math.round(b * .55) + 'px;height:' + Math.round(b * .77) + 'px"></i>') + '</span>'; }).join(''); }).join(''); };
     $('v-end').className = 'view' + (top ? ' golazo' : '');
     $('v-end').innerHTML = '<div class="egrid" role="img" aria-label="' + rows().map(function (row, y) { return ['White', 'Yellow', 'Red'][y] + ': ' + row.filter(function (v) { return v === 1; }).length + ' of 5'; }).join(', ') + '">' + cells(big) + '</div>' +
-      '<p class="score">' + (top ? GOLAZO : num(n + '/' + ALLN)) + '</p>';
+      '<p class="score">' + (top ? GOLAZO : num(n + '/' + ALLN)) + '</p>' + (!top && best() >= 2 ? '<p class="best">Best: ' + streakWord(best()) + '</p>' : '');
     $('share-top').innerHTML = 'Triviela ' + num('#' + (S.day + 1));
     $('share-txt').innerHTML = '<span class="sgrid">' + r.map(function (row, y) { return row.map(function (v) { return v === 1 ? ballMark(11) : rcard(y + 1); }).join(''); }).join('') + '</span>' +
-      '<span>' + (top ? '<span class="num">' + GOLAZO + '</span>' : num(n + '/' + ALLN)) + '</span><span>triviela.net</span>';
+      '<span>' + (top ? '<span class="num">' + GOLAZO + '</span>' : num(n + '/' + ALLN) + (best() >= 2 ? ' · ' + num(streakWord(best())) : '')) + '</span><span>triviela.net</span>';
     $('share').setAttribute('aria-label', 'Share: ' + shareText().replace(/\n/g, ', '));
     $('share-mark').innerHTML = svg('share', 3);
     beta(null); view('end'); clearInterval(tick); endRow(); if (!DEMO) tick = setInterval(clock, 1000);
