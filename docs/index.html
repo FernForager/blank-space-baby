@@ -123,8 +123,8 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .cab[data-v="board"] #v-board, .cab[data-v="play"] #v-play, .cab[data-v="end"] #v-end { display: flex; }
 .px { shape-rendering: crispEdges; flex: none; display: block; fill: currentColor; }
 .nb { white-space: nowrap; }
-.num { font-family: var(--pixel); --b: var(--g0); font-weight: 400; font-size: round(nearest, .8em, var(--ps)); letter-spacing: -.02em; }
-.score .num { font-size: 1em; letter-spacing: 0; }   /* the score is already in the arcade font: its digits stay as tall as the slash */
+.num { font-family: var(--pixel); --b: var(--g0); font-weight: 400; font-size: calc(8em / 11); vertical-align: -.125em; letter-spacing: -.02em; }   /* a digit as tall as Triviela Pixel's capitals (7 of its 11 pixels to Press Start 2P's 7 of 8), so 8/11 of the text, which lands on Press Start 2P's own crisp step at every size. Press Start 2P draws one empty pixel row under every glyph, so the digit drops that row to sit on the baseline */
+.score .num { font-size: 1em; vertical-align: baseline; letter-spacing: 0; }   /* the score is already in the arcade font: its digits stay as tall as the slash */
 
 /* the ball: 15 lamp panels in three rings of five (the hexagons round the center, the outer pentagons, the half-hexagons
    at the edge) and the center pentagon, which lights only on 15/15 (Morg's lamp idea, Oct 19, 2026) */
