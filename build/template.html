@@ -121,7 +121,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .hud .lvl { display: flex; align-items: center; gap: 10px; }
 .chip-card { width: 13px; height: 18px; border-radius: 2px; box-shadow: 0 0 6px rgba(255,255,255,.25); }
 .chip-card.c1 { background: var(--c1); } .chip-card.c2 { background: var(--c2); } .chip-card.c3 { background: var(--c3); }
-/* the shootout scoreboard (Oct 19, 2026 mockup): three rows of five, white on top, then yellow, then red, like the share.
+/* the shootout scoreboard (Oct 19, 2026): three rows of five, white on top, then yellow, then red, like the share.
    A lit dot is a right answer, a pixel ✕ a miss, a dim ring a card still to play. The card in play blinks in its row */
 .sb { display: grid; grid-template-columns: repeat(5, 7px); grid-auto-rows: 7px; gap: 3px 4px; }
 .sb i { display: block; width: 7px; height: 7px; color: #2F6B49; }
@@ -246,7 +246,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   .means { font-size: 16px; } .score { font-size: 22px; } .golazo .score { font-size: 21px; } .egrid { gap: 7px 8px; } }
 @media (prefers-reduced-motion: reduce) { .key, .choice .def { transition: none; } .sb i.bump, .sb i.now, .choice.wrong, .flick, .blank, .go, .ball.goal, .bi .pt.new, .cab.poweron .marquee h1, .cab.poweron .marquee.dm canvas, .endrow .next svg, .pitch .shout { animation: none; } }
 
-/* == mockup: shared fixes == */
+/* layout A (Oct 19, 2026): wider column gaps, a bigger menu key, no key that moves */
 /* the answer panel keeps its height for the card: room for two means lines is reserved, keys sit at the top, nothing moves when you answer */
 .choices { justify-content: flex-start; }
 .choice.probe .def { max-height: 36px; opacity: 0; transition: none; }
@@ -275,6 +275,12 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .endrow .clock { flex: 1; }
 .thanks-s { margin: 0; text-align: center; font-size: 18px; color: var(--glow); text-shadow: 0 0 6px rgba(92,240,154,.6); }
 /* sheets: the menu and How to play rise from the bottom over the panel, like OP Hiker's pack and menu */
+.ask-pop.gate { z-index: 30; background: rgba(5,10,7,.9); }
+.gate-box .in-q { margin: 0 0 14px; font-size: 21px; }
+.gate-box input { display: block; width: 100%; box-sizing: border-box; min-height: 52px; margin: 0 0 14px; padding: 0 14px; border: 0; border-radius: 12px; background: var(--btn); color: var(--ink); font: inherit; font-size: 20px; text-align: center; letter-spacing: 1px; box-shadow: inset 0 3px 0 rgba(0,0,0,.12); }
+.gate-box input:focus { outline: 3px solid var(--glow); outline-offset: 2px; }
+.gate-box input.nope { animation: nope .4s; }
+.gate-box .in-go { width: 100%; min-height: 52px; font-size: 18px; background: var(--ok); box-shadow: 0 5px 0 var(--ok-edge), 0 7px 10px rgba(0,0,0,.25); }
 .ask-pop.sheet { align-items: flex-end; padding: 0 max(14px, env(safe-area-inset-right, 0px)) max(16px, env(safe-area-inset-bottom, 0px)) max(14px, env(safe-area-inset-left, 0px)); }
 .sheet .ask-box { max-width: 392px; border-radius: 18px; padding: 14px 12px 15px; background: linear-gradient(180deg, #1A1D1B 0%, #0D0F0E 100%); box-shadow: inset 0 2px 0 rgba(255,255,255,.08), inset 0 0 0 2px #222, 0 0 0 3px var(--body-dark), 0 -8px 30px rgba(0,0,0,.5); }
 .sheet .menu-box { gap: 10px; }
@@ -293,6 +299,11 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 </defs></svg>
 <div class="cab" id="cab" data-v="board">
   <div class="marquee dm"><h1 class="sr">Triviela</h1><canvas id="sign" aria-hidden="true"></canvas><button class="menu-b" id="menu-b" type="button" aria-label="Menu"></button></div>
+  <div class="ask-pop gate" id="gate" role="dialog" aria-modal="true" aria-labelledby="g-q" hidden><form class="ask-box gate-box" id="g-form" autocomplete="off">
+    <p class="in-q" id="g-q">Members only</p>
+    <input id="g-pw" type="password" placeholder="Password" aria-label="Password" autocapitalize="none" autocorrect="off" spellcheck="false" enterkeyhint="go">
+    <button class="key yes in-go" id="g-go" type="submit">Let me in</button>
+  </form></div>
   <div class="ask-pop sheet" id="menu" role="dialog" aria-modal="true" aria-label="Menu" hidden><div class="ask-box menu-box"><div class="mrow"><button class="key" id="m-restart" type="button" hidden>Start over from <span class="num">#1</span></button><button class="key" id="m-how" type="button">How to play</button></div><button class="key" id="m-close" type="button">Back to the game</button></div></div>
   <div class="ask-pop sheet" id="intro" role="dialog" aria-modal="true" aria-labelledby="in-q" hidden><div class="ask-box intro-box">
     <p class="in-q" id="in-q">How well do you know<br>the beautiful game?</p>
@@ -769,7 +780,18 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   // How to play shows on every visit until the player's first finished day, then only from the menu (Morg, Oct 19, 2026)
   function intro() { pop('intro', true); }
   $('in-go').addEventListener('click', function () { pop('intro', false); });
-  if (!store.get('bsb-intro-off', false)) intro();
+  // the members-only gate on the real site, for faux exclusivity while the game is in testing, not security (Morg, Oct 19, 2026).
+  // Preview links and the test tools never see it. Once the word is right, the phone remembers it.
+  var GATE = 'golazo', REAL = /(^|\.)triviela\.net$|^fernforager\.github\.io$/.test(host);
+  function gateOk(v) { return v.trim().toLowerCase().replace(/[^a-z0-9]/g, '') === GATE; }
+  if (REAL && !store.get('bsb-member', false)) {
+    pop('gate', true); setTimeout(function () { try { $('g-pw').focus(); } catch (e) {} }, 300);
+    $('g-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      if (gateOk($('g-pw').value)) { store.set('bsb-member', true); pop('gate', false); if (!store.get('bsb-intro-off', false)) intro(); return; }
+      var f = $('g-pw'); f.classList.remove('nope'); void f.offsetWidth; f.classList.add('nope'); f.value = ''; f.focus();
+    });
+  } else if (!store.get('bsb-intro-off', false)) intro();
   $('e-next').addEventListener('click', function () { if (DEMO && S.day < DEMO - 1) goDay(S.day + 1); });
   $('e-again').addEventListener('click', function () { if (DEMO) goDay(0); });
   function clock() {   // the countdown to tomorrow's board, at local midnight
@@ -848,7 +870,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   if (BETA) flush();
 
 
-  // == mockup: the panel reserves room for the two means lines it may show, so the keys never move under a finger
+  // the panel reserves room for the two means lines it may show, so the keys never move under a finger
   function reserve() {
     var c = $('choices'); c.style.minHeight = '';
     var base = c.offsetHeight, m = c.cloneNode(true);
