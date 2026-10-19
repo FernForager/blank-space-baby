@@ -30,6 +30,14 @@
    --dp is one device pixel, for letter-spacing */
 :root { --px: 5.5px; --dp: .5px; }
 @media (min-resolution: 3dppx) { :root { --px: calc(11px / 3); --dp: calc(1px / 3); } }
+/* A little extra weight for Triviela Pixel (Morg, Oct 20, 2026: he missed a bit of bold). Each stroke is drawn again one and two
+   device pixels to its right, so the letters keep their shapes and widths, nothing reflows, and every edge stays on a device pixel.
+   Two device pixels on a 3x screen, one on 2x and 1x, about half a font pixel either way. Every text-shadow is --b (the extra weight)
+   then --g (a rule's own glow): rules set --g, never text-shadow, and the arcade face sets --b to nothing. */
+:root { --g0: 0 0 0 transparent; --bold: var(--dp) 0 0 currentColor; --b: var(--bold); --g: var(--g0); }
+@media (max-resolution: 1.5dppx) { :root { --bold: 1px 0 0 currentColor; } }
+@media (min-resolution: 3dppx) { :root { --bold: calc(1px / 3) 0 0 currentColor, calc(2px / 3) 0 0 currentColor; } }
+*, *::before, *::after { text-shadow: var(--b), var(--g); }
 html, body { height: 100%; overflow: hidden; overscroll-behavior: none; touch-action: manipulation; }   /* the cabinet stays put: no rubber-band bounce on iPhone (Morg, Oct 17, 2026) */
 body { position: fixed; inset: 0; margin: 0; }
 body { background: var(--body); color: var(--text); font-family: var(--body-font); font-size: round(nearest, 16px, var(--px)); font-weight: 400; font-synthesis: none; -webkit-font-smoothing: antialiased; font-variant-ligatures: none; -webkit-user-select: none; user-select: none; }
@@ -41,14 +49,14 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 /* marquee: the lit sign (flickers on when the game opens) */
 .marquee { flex: none; position: relative; border-radius: 14px; padding: 14px 12px 15px; text-align: center; overflow: hidden;
   background: radial-gradient(120% 140% at 50% 0%, #1E3A2A 0%, #0B1710 70%); box-shadow: inset 0 0 0 3px #000, inset 0 0 18px rgba(92,240,154,.18), 0 3px 0 var(--body-dark); }
-.marquee h1 { margin: 0; font-family: var(--pixel); font-weight: 400; font-size: 22px; line-height: 1; letter-spacing: 3px; color: #fff; white-space: nowrap;
-  text-shadow: 0 0 4px rgba(255,255,255,.7), 0 0 10px var(--glow), 0 0 20px rgba(92,240,154,.55); }
+.marquee h1 { margin: 0; font-family: var(--pixel); --b: var(--g0); font-weight: 400; font-size: 22px; line-height: 1; letter-spacing: 3px; color: #fff; white-space: nowrap;
+  --g: 0 0 4px rgba(255,255,255,.7), 0 0 10px var(--glow), 0 0 20px rgba(92,240,154,.55); }
 .cab.poweron .marquee h1 { animation: power .6s steps(6); }
 /* the sign as a dot-matrix board (Morg, Oct 18, 2026): every dot lit at random, the brighter ones spell TRIVIELA */
 .marquee.dm { height: 84px; padding: 0; box-sizing: border-box; }
 /* the sign's subheading (Morg, Oct 19, 2026: what the game is, under the name, apart from the question that invites you to play):
    crisp arcade letters under the dots, solid and unglowing, at a size that lands on whole device pixels (10.67 px is 4 per font pixel at 3x) */
-.marquee.dm .subhead { position: absolute; left: 0; right: 34px; bottom: 9px; margin: 0; font: 400 round(nearest, 10.6667px, var(--ps))/1 var(--pixel); letter-spacing: 1.3333px; text-transform: uppercase; color: #C9FFDD; text-shadow: none; pointer-events: none; white-space: nowrap; }
+.marquee.dm .subhead { position: absolute; left: 0; right: 34px; bottom: 9px; margin: 0; font: 400 round(nearest, 10.6667px, var(--ps))/1 var(--pixel); --b: var(--g0); letter-spacing: 1.3333px; text-transform: uppercase; color: #C9FFDD; --g: var(--g0); pointer-events: none; white-space: nowrap; }
 @media (max-width: 372px) and (max-resolution: 2.9dppx), (max-width: 334px) { .marquee.dm .subhead { font-size: 8px; letter-spacing: 1px; } }   /* narrow phones: the next crisp step down, so it stays on one line */   /* no glow: a glow blurs pixel letters (Morg: clean and quiet) */
 .marquee.dm canvas { position: absolute; inset: 7px 8px 25px; width: calc(100% - 16px); height: calc(100% - 32px); }
 .cab.poweron .marquee.dm canvas { animation: power .6s steps(6); }
@@ -60,7 +68,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .menu-box .key { min-height: 50px; font-size: round(nearest, 17px, var(--px)); }
 .menu-box .key[hidden] { display: none; }
 .intro-box { max-width: 360px; text-align: left; padding: 20px 18px; }
-.intro-box .in-q { margin: 0 0 14px; font-size: round(nearest, 21px, var(--px)); line-height: calc(13 / 11); text-align: center; color: var(--text); text-shadow: none; }
+.intro-box .in-q { margin: 0 0 14px; font-size: round(nearest, 21px, var(--px)); line-height: calc(13 / 11); text-align: center; color: var(--text); --g: var(--g0); }
 .in-list { margin: 0 0 16px; padding: 0; list-style: none; display: grid; gap: 12px; font-size: round(nearest, 17px, var(--px)); line-height: calc(14 / 11); color: var(--text); text-align: center; white-space: nowrap; }
 .in-list b { color: #fff; }
 .in-colors { display: flex; gap: 14px; justify-content: center; color: var(--dim); font-size: round(nearest, 15px, var(--px)); }
@@ -71,7 +79,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .ask-pop { position: fixed; inset: 0; z-index: 20; display: flex; align-items: center; justify-content: center; padding: 24px; background: rgba(5,10,7,.72); }
 .ask-pop[hidden] { display: none; }
 .ask-box { width: 100%; max-width: 320px; box-sizing: border-box; padding: 20px 16px 18px; border-radius: 18px; background: var(--bezel); box-shadow: inset 0 0 0 3px #000, 0 0 0 3px var(--body-dark), 0 10px 30px rgba(0,0,0,.5); text-align: center; }
-.ask-box p { margin: 0 0 16px; font-size: round(nearest, 20px, var(--px)); color: var(--text); text-shadow: 0 0 8px rgba(92,240,154,.5); }
+.ask-box p { margin: 0 0 16px; font-size: round(nearest, 20px, var(--px)); color: var(--text); --g: 0 0 8px rgba(92,240,154,.5); }
 .ask-keys { display: flex; gap: 10px; }
 .ask-keys .key { flex: 1; min-height: 50px; font-size: round(nearest, 16px, var(--px)); }
 .ask-keys .key.yes { background: var(--ok); box-shadow: 0 5px 0 var(--ok-edge), 0 7px 10px rgba(0,0,0,.25); }
@@ -91,7 +99,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .cab[data-v="board"] #v-board, .cab[data-v="play"] #v-play, .cab[data-v="end"] #v-end { display: flex; }
 .px { shape-rendering: crispEdges; flex: none; display: block; fill: currentColor; }
 .nb { white-space: nowrap; }
-.num { font-family: var(--pixel); font-weight: 400; font-size: round(nearest, .8em, var(--ps)); letter-spacing: -.02em; }
+.num { font-family: var(--pixel); --b: var(--g0); font-weight: 400; font-size: round(nearest, .8em, var(--ps)); letter-spacing: -.02em; }
 .score .num { font-size: 1em; letter-spacing: 0; }   /* the score is already in the arcade font: its digits stay as tall as the slash */
 
 /* the ball: 15 lamp panels in three rings of five (the hexagons round the center, the outer pentagons, the half-hexagons
@@ -115,8 +123,8 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .bi.mark { flex: none; display: block; }
 .goalfx { position: absolute; left: 0; top: 0; width: 100%; height: 82%; z-index: 2; pointer-events: none; filter: drop-shadow(0 0 2px rgba(92,240,154,.55)); animation: power .5s steps(5); }
 .pitch.fxon .ball { opacity: 0; }
-.pitch .shout { position: absolute; inset: 0; margin: auto; height: max-content; z-index: 3; text-align: center; font-family: var(--pixel); font-size: round(nearest, clamp(22px, 9cqw, 34px), var(--ps)); line-height: 1.2; color: #fff; pointer-events: none;
-  text-shadow: 0 0 6px #fff, 0 0 14px var(--glow), 0 0 28px rgba(92,240,154,.7); animation: shout 2.2s ease-out forwards; }
+.pitch .shout { position: absolute; inset: 0; margin: auto; height: max-content; z-index: 3; text-align: center; font-family: var(--pixel); --b: var(--g0); font-size: round(nearest, clamp(22px, 9cqw, 34px), var(--ps)); line-height: 1.2; color: #fff; pointer-events: none;
+  --g: 0 0 6px #fff, 0 0 14px var(--glow), 0 0 28px rgba(92,240,154,.7); animation: shout 2.2s ease-out forwards; }
 .pitch.fxon .shout { inset: auto 0 2% 0; margin: 0 auto; opacity: 0; animation: shout 1.6s 1s ease-out forwards; }
 @keyframes shout { 0% { transform: scale(.4); opacity: 0; } 15% { transform: scale(1.15); opacity: 1; } 25% { transform: scale(1); } 75% { opacity: 1; } 100% { opacity: 0; } }
 .bv { display: block; overflow: visible; }
@@ -146,14 +154,14 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .sb i.bump { animation: bump .35s steps(3); }
 .sb svg { display: block; }
 .face { flex: 1; min-height: 0; display: flex; flex-direction: column; justify-content: center; gap: 8px; }
-.sentence { margin: 0; font-size: round(nearest, 26px, var(--px)); line-height: calc(13 / 11); text-wrap: balance; text-shadow: 0 0 6px rgba(234,251,240,.25); }
+.sentence { margin: 0; font-size: round(nearest, 26px, var(--px)); line-height: calc(13 / 11); text-wrap: balance; --g: 0 0 6px rgba(234,251,240,.25); }
 .sentence.long { font-size: round(nearest, 23px, var(--px)); } .sentence.longer { font-size: round(nearest, 21px, var(--px)); }
 .blank { display: inline-block; width: 2.9em; height: 4px; margin: 0 0.05em; vertical-align: -0.16em;
   background: repeating-linear-gradient(90deg, var(--glow) 0 0.42em, transparent 0.42em 0.62em); box-shadow: 0 0 6px rgba(92,240,154,.6); animation: blink 1.05s steps(1) infinite; }
 @keyframes blink { 50% { opacity: .15; } }
 /* the answer, filled into the blank: glowing on a win, plain with a dashed underline on a miss */
-.fill { color: var(--glow); text-shadow: 0 0 8px rgba(92,240,154,.7); }
-.missed .fill { color: #fff; text-shadow: 0 0 6px rgba(255,255,255,.35); padding-bottom: 3px;
+.fill { color: var(--glow); --g: 0 0 8px rgba(92,240,154,.7); }
+.missed .fill { color: #fff; --g: 0 0 6px rgba(255,255,255,.35); padding-bottom: 3px;
   background: repeating-linear-gradient(90deg, var(--glow) 0 0.42em, transparent 0.42em 0.62em) left bottom / 100% 3px no-repeat; }
 
 /* the end of the day: the shootout grid and the score */
@@ -165,18 +173,18 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .egrid .em.ok { filter: drop-shadow(0 0 5px rgba(92,240,154,.75)); }
 .egrid .em.no { color: var(--no); }
 .golazo .egrid .em.ok { filter: drop-shadow(0 0 4px #fff) drop-shadow(0 0 10px rgba(92,240,154,.9)); }
-.score { margin: 0; font-family: var(--pixel); font-weight: 400; font-size: round(nearest, 26px, var(--ps)); line-height: 1; color: #fff; text-align: center; text-shadow: 0 0 4px rgba(255,255,255,.6), 0 0 12px rgba(92,240,154,.6); }
-.golazo .score { font-size: round(nearest, 24px, var(--ps)); text-shadow: 0 0 6px #fff, 0 0 14px var(--glow), 0 0 28px rgba(92,240,154,.7); }
+.score { margin: 0; font-family: var(--pixel); --b: var(--g0); font-weight: 400; font-size: round(nearest, 26px, var(--ps)); line-height: 1; color: #fff; text-align: center; --g: 0 0 4px rgba(255,255,255,.6), 0 0 12px rgba(92,240,154,.6); }
+.golazo .score { font-size: round(nearest, 24px, var(--ps)); --g: 0 0 6px #fff, 0 0 14px var(--glow), 0 0 28px rgba(92,240,154,.7); }
 .result { display: flex; flex-direction: column; align-items: center; gap: 12px; }
 .word .run { display: block; margin-top: 4px; font-size: round(nearest, .8em, var(--ps)); color: var(--text); }
-.word { margin: 0; font-family: var(--pixel); font-weight: 400; font-size: 20px; line-height: 1.2; color: #fff; text-align: center;
-  text-shadow: 0 0 4px rgba(255,255,255,.6), 0 0 12px rgba(92,240,154,.6); }
+.word { margin: 0; font-family: var(--pixel); --b: var(--g0); font-weight: 400; font-size: 20px; line-height: 1.2; color: #fff; text-align: center;
+  --g: 0 0 4px rgba(255,255,255,.6), 0 0 12px rgba(92,240,154,.6); }
 .means { margin: 0; font-size: round(nearest, 18px, var(--px)); line-height: calc(13 / 11); color: #B8E6CA; }   /* the means line is the payoff, so it stays bright */
 #v-end .ball { width: min(62%, 60cqh); margin: 0 auto; }
 #v-end { container-type: size; }
 
 /* the blinking go arrow, bottom right of the screen */
-.go { position: absolute; right: 10px; bottom: 10px; height: 44px; padding: 0 6px 0 10px; gap: 8px; font-family: var(--pixel); font-size: 12px; letter-spacing: 1px; text-transform: uppercase; border: 0; background: none; color: var(--glow); cursor: pointer; z-index: 3;
+.go { position: absolute; right: 10px; bottom: 10px; height: 44px; padding: 0 6px 0 10px; gap: 8px; font-family: var(--pixel); --b: var(--g0); font-size: 12px; letter-spacing: 1px; text-transform: uppercase; border: 0; background: none; color: var(--glow); cursor: pointer; z-index: 3;
   display: flex; align-items: center; justify-content: center; filter: drop-shadow(0 0 6px rgba(92,240,154,.8)); animation: blink 1.05s steps(1) infinite; }
 .go.wait { display: none; }
 
@@ -188,7 +196,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .bk.on { opacity: 1; }
 .bk.flag.on { color: var(--gold); filter: drop-shadow(0 0 5px rgba(247,201,72,.8)); }
 .bk.lock.on { color: var(--text); filter: drop-shadow(0 0 5px rgba(92,240,154,.8)); }
-.bmsg { font-family: var(--pixel); font-size: round(nearest, 8px, var(--ps)); letter-spacing: 1px; color: var(--dim); margin-left: 6px; white-space: nowrap; text-transform: uppercase; }
+.bmsg { font-family: var(--pixel); --b: var(--g0); font-size: round(nearest, 8px, var(--ps)); letter-spacing: 1px; color: var(--dim); margin-left: 6px; white-space: nowrap; text-transform: uppercase; }
 
 /* control panel */
 .panel { flex: none; box-sizing: border-box; display: flex; margin-top: auto; border-radius: 18px; padding: 12px 12px 15px;
@@ -244,15 +252,15 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .endrow { display: flex; align-items: center; justify-content: center; gap: 6px; }
 .endrow .bk { height: 26px; color: #7C8A80; }
 .endrow .bk.flag.on { color: #B48A1C; filter: none; } .endrow .bk.lock.on { color: #45BE76; filter: none; }
-.clock { font-family: var(--pixel); font-size: round(nearest, 15px, var(--ps)); letter-spacing: 1px; color: var(--glow); text-align: center; text-shadow: 0 0 6px rgba(92,240,154,.6); padding: 2px 0 1px; }
+.clock { font-family: var(--pixel); --b: var(--g0); font-size: round(nearest, 15px, var(--ps)); letter-spacing: 1px; color: var(--glow); text-align: center; --g: 0 0 6px rgba(92,240,154,.6); padding: 2px 0 1px; }
 /* the playtest demo (DEMO_DAYS in build.py): a finished board leads to the next with a blinking arrow, Start over goes back
    to #1, and #7 ends with a thank-you in the clock's place (Morg, Oct 17, 2026) */
 .endrow [hidden] { display: none; }
 .endrow .next { font: inherit; font-size: round(nearest, 17px, var(--px)); height: 40px; padding: 0 8px; border: 0; background: none; color: var(--glow); cursor: pointer;
-  display: flex; align-items: center; gap: 8px; text-shadow: 0 0 6px rgba(92,240,154,.6); }
+  display: flex; align-items: center; gap: 8px; --g: 0 0 6px rgba(92,240,154,.6); }
 .endrow .next svg { filter: drop-shadow(0 0 4px rgba(92,240,154,.8)); animation: blink 1.05s steps(1) infinite; }
 .endrow .bk.again.on { color: var(--glow); opacity: 1; filter: drop-shadow(0 0 4px rgba(92,240,154,.8)); }
-.clock.thanks { font-family: var(--body-font); font-size: round(nearest, 17px, var(--px)); letter-spacing: 0; }   /* the CRT's sentence face: one line, or two beside the beta's keys on the smallest phones */
+.clock.thanks { font-family: var(--body-font); --b: var(--bold); font-size: round(nearest, 17px, var(--px)); letter-spacing: 0; }   /* the CRT's sentence face: one line, or two beside the beta's keys on the smallest phones */
 .key:focus-visible, .go:focus-visible, .bk:focus-visible { outline: 3px solid var(--glow); outline-offset: 3px; }
 
 @media (max-height: 700px) { .choice { min-height: 56px; } .tile { min-height: 54px; font-size: round(nearest, 16px, var(--px)); } }
@@ -278,34 +286,34 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .pv { flex: none; width: 100%; }
 .gorow { display: none; align-items: center; gap: 10px; margin-top: 10px; min-height: 52px; }
 .cab[data-v="play"] #g-play { display: flex; }
-.gorow .gokey { position: static; flex: 1; height: auto; padding: 0 12px; color: var(--btn-ink); filter: none; animation: none; min-height: 52px; font-family: var(--pixel); font-size: round(nearest, 13px, var(--ps)); letter-spacing: 1px; text-transform: uppercase; display: flex; align-items: center; justify-content: center; gap: 10px; }
+.gorow .gokey { position: static; flex: 1; height: auto; padding: 0 12px; color: var(--btn-ink); filter: none; animation: none; min-height: 52px; font-family: var(--pixel); --b: var(--g0); font-size: round(nearest, 13px, var(--ps)); letter-spacing: 1px; text-transform: uppercase; display: flex; align-items: center; justify-content: center; gap: 10px; }
 .gorow .gokey.wait { visibility: hidden; }
 .gorow .bk, .endrow .bk { width: 44px; height: 44px; color: #7C8A80; }
 .go:not(.gokey) { display: none; }
 /* the end: share, then the go row: Play #2 (demo), the countdown (daily), Play again from #1 (the demo's last board, nothing left to lose) */
 .endrow { min-height: 52px; gap: 10px; }
 .endrow .next.key[hidden], .endrow .again.key[hidden] { display: none; }
-.endrow .next.key, .endrow .again.key { background: var(--btn); flex: 1; height: auto; min-height: 52px; width: auto; color: var(--btn-ink); text-shadow: none; font-size: round(nearest, 17px, var(--px)); justify-content: center; opacity: 1; }
+.endrow .next.key, .endrow .again.key { background: var(--btn); flex: 1; height: auto; min-height: 52px; width: auto; color: var(--btn-ink); --g: var(--g0); font-size: round(nearest, 17px, var(--px)); justify-content: center; opacity: 1; }
 .endrow .next.key svg, .endrow .again.key svg { filter: none; animation: none; }
 .endrow .again.key { gap: 10px; display: flex; align-items: center; }
 .endrow .clock { flex: 1; }
-.thanks-s { margin: 0; text-align: center; font-size: round(nearest, 18px, var(--px)); color: var(--glow); text-shadow: 0 0 6px rgba(92,240,154,.6); }
+.thanks-s { margin: 0; text-align: center; font-size: round(nearest, 18px, var(--px)); color: var(--glow); --g: 0 0 6px rgba(92,240,154,.6); }
 /* sheets: the menu and How to play rise from the bottom over the panel, like OP Hiker's pack and menu */
 /* the 104 lock (Morg, Oct 19, 2026, after OP Hiker's): the cabinet is the lock. The screen shows three code slots and the panel
    becomes a 3x4 pad in phone order, cream push-buttons like the tiles. A wink, not security: the code is in the page */
 .cab[data-v="gate"] #v-gate { display: flex; } .cab[data-v="gate"] #p-gate { display: grid; } .cab[data-v="gate"] .menu-b { visibility: hidden; }
 #v-gate { align-items: center; justify-content: center; gap: 18px; text-align: center; }
-.g-title { margin: 0; font-family: var(--pixel); font-size: round(nearest, 12px, var(--ps)); letter-spacing: 2px; color: var(--dim); }
+.g-title { margin: 0; font-family: var(--pixel); --b: var(--g0); font-size: round(nearest, 12px, var(--ps)); letter-spacing: 2px; color: var(--dim); }
 .g-slots { display: flex; gap: 14px; }
 .g-slots.nope { animation: gshake .45s; }
 .g-slots i { width: 52px; height: 64px; display: flex; align-items: center; justify-content: center; border-radius: 8px; box-shadow: inset 0 0 0 2px rgba(92,240,154,.35);
-  font: 400 round(nearest, 34px, var(--ps))/1 var(--pixel); font-style: normal; color: var(--glow); text-shadow: 0 0 10px rgba(92,240,154,.8); transition: transform .12s, opacity .12s; }
-.g-slots i.empty { color: var(--dim); text-shadow: none; }
+  font: 400 round(nearest, 34px, var(--ps))/1 var(--pixel); --b: var(--g0); font-style: normal; color: var(--glow); --g: 0 0 10px rgba(92,240,154,.8); transition: transform .12s, opacity .12s; }
+.g-slots i.empty { color: var(--dim); --g: var(--g0); }
 .g-slots i.roll { transform: translateY(-10px); opacity: 0; }
-.g-toast { min-height: 1.3em; margin: 0; font: 400 round(nearest, 15px, var(--ps))/1.3 var(--pixel); letter-spacing: 1px; color: var(--glow); text-shadow: 0 0 8px rgba(92,240,154,.7); }
-.g-toast.no { color: var(--no); text-shadow: 0 0 8px rgba(255,90,95,.6); }
+.g-toast { min-height: 1.3em; margin: 0; font: 400 round(nearest, 15px, var(--ps))/1.3 var(--pixel); --b: var(--g0); letter-spacing: 1px; color: var(--glow); --g: 0 0 8px rgba(92,240,154,.7); }
+.g-toast.no { color: var(--no); --g: 0 0 8px rgba(255,90,95,.6); }
 #p-gate { grid-template-columns: repeat(3, 1fr); gap: 12px; }
-#p-gate .key { min-height: 62px; display: flex; align-items: center; justify-content: center; font: 400 round(nearest, 26px, var(--ps))/1 var(--pixel); touch-action: manipulation; }
+#p-gate .key { min-height: 62px; display: flex; align-items: center; justify-content: center; font: 400 round(nearest, 26px, var(--ps))/1 var(--pixel); --b: var(--g0); touch-action: manipulation; }
 #p-gate .key.on, #p-gate .key.hold { transform: translateY(4px); box-shadow: 0 1px 0 var(--btn-edge), 0 2px 4px rgba(0,0,0,.25); }
 #p-gate .key.enter { background: var(--ok); box-shadow: 0 5px 0 var(--ok-edge), 0 7px 10px rgba(0,0,0,.25); }
 #p-gate .key.enter.on, #p-gate .key.enter.hold { box-shadow: 0 1px 0 var(--ok-edge), 0 2px 4px rgba(0,0,0,.25); }
@@ -319,7 +327,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
    tap, a wave of green light runs across the tiles every few seconds, like an arcade cabinet's chase lights, and the screen blinks
    PICK A CARD with an arrow centered under it, under the A, pointing down to them (Morg: all things in balance). Both stop at each new board's first tap (Morg's pick, Oct 19, 2026) */
 .pitch .pick { position: absolute; left: 0; right: 0; bottom: 0; margin: 0 auto; width: max-content; display: flex; flex-direction: column; align-items: center; gap: 5px; padding: 6px 10px; border-radius: 4px;
-  background: rgba(7,19,12,.88); z-index: 2; font-family: var(--pixel); font-size: round(nearest, 11px, var(--ps)); letter-spacing: 1px; color: var(--glow); text-shadow: 0 0 6px rgba(92,240,154,.8); animation: blink 1.05s steps(1) infinite; }
+  background: rgba(7,19,12,.88); z-index: 2; font-family: var(--pixel); --b: var(--g0); font-size: round(nearest, 11px, var(--ps)); letter-spacing: 1px; color: var(--glow); --g: 0 0 6px rgba(92,240,154,.8); animation: blink 1.05s steps(1) infinite; }
 .pitch .pick svg { transform: rotate(90deg); }
 #p-board.attract .tile:not(:disabled) { animation: chase 3.2s 1.2s infinite; animation-delay: calc(1.2s + var(--w) * 90ms); }
 @keyframes chase { 0%, 14%, 100% { box-shadow: 0 4px 0 var(--btn-edge), 0 6px 8px rgba(0,0,0,.25); } 6% { box-shadow: 0 0 0 3px var(--glow), 0 0 16px rgba(92,240,154,.85), 0 4px 0 var(--btn-edge); } }
