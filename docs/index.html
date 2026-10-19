@@ -57,8 +57,8 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 /* the sign as a dot-matrix board (Morg, Oct 18, 2026): every dot lit at random, the brighter ones spell TRIVIELA */
 .marquee.dm { height: 84px; padding: 0; box-sizing: border-box; }
 /* the sign's subheading (Morg, Oct 19, 2026: what the game is, under the name, apart from the question that invites you to play):
-   crisp arcade letters glowing under the dots, at a size that lands on whole device pixels (10.67 px is 4 per font pixel at 3x) */
-.marquee.dm .subhead { position: absolute; left: 0; right: 34px; bottom: 9px; margin: 0; font: 400 10.6667px/1 var(--pixel); letter-spacing: 1.3333px; text-transform: uppercase; color: var(--glow); text-shadow: 0 0 6px rgba(92,240,154,.7); pointer-events: none; }
+   crisp arcade letters under the dots, solid and unglowing, at a size that lands on whole device pixels (10.67 px is 4 per font pixel at 3x) */
+.marquee.dm .subhead { position: absolute; left: 0; right: 34px; bottom: 9px; margin: 0; font: 400 10.6667px/1 var(--pixel); letter-spacing: 1.3333px; text-transform: uppercase; color: #C9FFDD; text-shadow: none; pointer-events: none; }   /* no glow: a glow blurs pixel letters (Morg: clean and quiet) */
 .marquee.dm canvas { position: absolute; inset: 7px 8px 25px; width: calc(100% - 16px); height: calc(100% - 32px); }
 .cab.poweron .marquee.dm canvas { animation: power .6s steps(6); }
 .sr { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
