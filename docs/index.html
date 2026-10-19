@@ -249,7 +249,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .share .txt { flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 3px; line-height: 1.12; }
 /* the share key shows the exact text it sends: the shootout grid in the game's pixel ball and ✕, one line per row */
 .sgrid { display: grid; grid-template-columns: repeat(5, 11px); grid-auto-rows: 11px; gap: 3px 3px; padding-block: 2px; align-items: center; justify-items: center; }
-.sgrid .no { color: #E0464B; }
+.sgrid .no { color: #E0464B; }   /* a red dot, as the share text sends 🔴 for a miss */
 #share-txt { display: flex; flex-direction: column; gap: 3px; }
 .sgrid svg { display: block; }
 .endrow { display: flex; align-items: center; justify-content: center; gap: 6px; }
@@ -841,8 +841,8 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     } catch (e) {}
   }
   var tick;
-  function shareText() {   // the shootout grid: ⚽ right, ❌ wrong, a row per color, then the score (Morg, Oct 19, 2026)
-    return 'Triviela #' + (S.day + 1) + '\n' + rows().map(function (r) { return r.map(function (v) { return v === 1 ? '⚽' : '❌'; }).join(''); }).join('\n') +
+  function shareText() {   // the shootout grid: ⚽ right, 🔴 wrong (a red dot, like TV shootout graphics: Morg found ❌ too loud), a row per color, then the score (Morg, Oct 19, 2026)
+    return 'Triviela #' + (S.day + 1) + '\n' + rows().map(function (r) { return r.map(function (v) { return v === 1 ? '⚽' : '🔴'; }).join(''); }).join('\n') +
       '\n' + (chips() === ALLN ? GOLAZO : chips() + '/' + ALLN) + '\ntriviela.net';
   }
   function end() {
@@ -855,7 +855,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     $('v-end').innerHTML = '<div class="egrid" role="img" aria-label="' + rows().map(function (row, y) { return ['White', 'Yellow', 'Red'][y] + ': ' + row.filter(function (v) { return v === 1; }).length + ' of 5'; }).join(', ') + '">' + cells(big) + '</div>' +
       '<p class="score">' + (top ? GOLAZO : num(n + '/' + ALLN)) + '</p>';
     $('share-top').innerHTML = 'Triviela ' + num('#' + (S.day + 1));
-    $('share-txt').innerHTML = '<span class="sgrid">' + r.map(function (row) { return row.map(function (v) { return v === 1 ? ballMark(11) : '<span class="no">' + svg('no', 1) + '</span>'; }).join(''); }).join('') + '</span>' +
+    $('share-txt').innerHTML = '<span class="sgrid">' + r.map(function (row) { return row.map(function (v) { return v === 1 ? ballMark(11) : '<span class="no"><svg viewBox="0 0 10 10" width="10" height="10"><circle cx="5" cy="5" r="4.6" fill="currentColor"/></svg></span>'; }).join(''); }).join('') + '</span>' +
       '<span>' + (top ? '<span class="num">' + GOLAZO + '</span>' : num(n + '/' + ALLN)) + '</span><span>triviela.net</span>';
     $('share').setAttribute('aria-label', 'Share: ' + shareText().replace(/\n/g, ', '));
     $('share-mark').innerHTML = svg('share', 3);

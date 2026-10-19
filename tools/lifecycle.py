@@ -37,7 +37,7 @@ async def answer(pg, i, right):   # play tile i, right or wrong, then tap on. Re
     return ch.index(w)
 
 def expected(s, n):   # the share text the locked format gives for a saved day: a row per color, in the order played
-    rows = [''.join('⚽' if s['res'][i] == 1 else '❌' for i in s['path'] if s['tiles'][i]['d'] == d) for d in (1, 2, 3)]
+    rows = [''.join('⚽' if s['res'][i] == 1 else '🔴' for i in s['path'] if s['tiles'][i]['d'] == d) for d in (1, 2, 3)]
     right = sum(1 for r in s['res'] if r == 1)
     return f'Triviela #{n}\n' + '\n'.join(rows) + '\n' + ('GOLAZO!' if right == 15 else f'{right}/15') + '\ntriviela.net'
 
@@ -112,7 +112,7 @@ async def run(b, html, demo):
         for i in range(15): await answer(pg, i, False)
         await pg.click('#share'); await pg.wait_for_timeout(200)
         text = await pg.evaluate("navigator.clipboard.readText()")
-        ok(text == 'Triviela #2\n' + '❌❌❌❌❌\n' * 3 + '0/15\ntriviela.net', 'board #2, all missed, shares as #2: ' + repr(text))
+        ok(text == 'Triviela #2\n' + '🔴🔴🔴🔴🔴\n' * 3 + '0/15\ntriviela.net', 'board #2, all missed, shares as #2: ' + repr(text))
         await pg.evaluate(f"localStorage.setItem('bsb-demo', '{demo - 1}'); localStorage.removeItem('bsb-daily')"); await pg.reload(); await pg.wait_for_timeout(300)
         s = await state(); ok(s['day'] == demo - 1, f'the demo picks up where it was left, on #{demo}')
         for i in range(15): await answer(pg, i, True)

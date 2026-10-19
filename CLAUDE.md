@@ -134,12 +134,12 @@ It replaces the arcade game: no category keys, no boss. The cabinet, palette, fo
 ## The shootout (Morg, Oct 19, 2026: live on `main` and the beta)
 It replaces “one miss ends the day”, the goals and the goal lamps. Where the sections above say 18 cards, 6 per goal, Nil to Hat Trick!!!, the card that got you or the first-tile confirm, this section wins.
 - **15 cards a day, 5 of each color, and you play all of them** (`PER = 5`). Like a penalty shootout: five takers, three rounds. No skipping: everyone plays the same 15, so every grid compares like for like (one skip per color stays in the back pocket if the board feels flat in the playtest). The board is 3 columns of 5 tiles, white, yellow, red. An answered tile stays pressed, dim, with the mini ball or a red pixel ✕ on it. The saved run is `v: 2`, so an old 18-card save is replaced.
-- **The share is a shootout grid:** ⚽ right, ❌ wrong, a row of five per color, white on top, then yellow, then red, each row in the order that color was played, like kicks. The fourth line is the score, `11/15`, or `GOLAZO!` on a perfect day (Morg’s name and caps):
+- **The share is a shootout grid:** ⚽ right, 🔴 wrong (a red dot since Oct 19, 2026, like TV shootout graphics: Morg found ❌ too loud. ✖️ and a plain ✖ fade to gray in a dark-mode bubble, and iPhone turns ✖ into the emoji anyway. The share key’s preview draws the same red dot, and the game screen keeps its red pixel ✕), a row of five per color, white on top, then yellow, then red, each row in the order that color was played, like kicks. The fourth line is the score, `11/15`, or `GOLAZO!` on a perfect day (Morg’s name and caps):
   ```
   Triviela #42
   ⚽⚽⚽⚽⚽
-  ⚽⚽❌⚽⚽
-  ❌⚽❌❌⚽
+  ⚽⚽🔴⚽⚽
+  🔴⚽🔴🔴⚽
   11/15
   triviela.net
   ```
