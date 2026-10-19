@@ -11,7 +11,7 @@
    The daily, as a shootout (Morg, Oct 19, 2026): everyone gets the same 15 cards a day, 5 white (easy), 5 yellow card
    (medium) and 5 red card (hard), and plays all 15. Tap any tile. A right answer lights the next panel of the ball,
    from the middle out, and 15 right lights the center last: GOLAZO! The board is the grid: the ball on the screen,
-   the 15 tiles as keys on the panel, one card color per column. */
+   the 15 cards as keys on the panel, 5 across and 3 down, a row per color, face down until played (Morg, Oct 19, 2026). */
 :root {
   --body: #F2EDE4; --body-dark: #00843D;   /* locked palette: warm white page, Celtic Green trim */
   --bezel: #0D0F0E; --screen: #07130C; --glow: #5CF09A; --text: #EAFBF0; --dim: #7FAF92; --gold: #F7C948;
@@ -149,7 +149,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .sb { display: grid; grid-template-columns: repeat(5, 7px); grid-auto-rows: 7px; gap: 3px 4px; }
 .sb i { display: block; width: 7px; height: 7px; color: #2F6B49; }
 .sb i.ok { color: var(--glow); filter: drop-shadow(0 0 3px rgba(92,240,154,.9)); }
-.sb i.no { color: var(--no); }
+.sb i .rcard { width: 6px; height: 8px; border-radius: 1px; margin: -.5px 0 0 .5px; box-shadow: none; }
 .sb i.now { color: var(--text); animation: blink 1.05s steps(1) infinite; }
 .sb i.bump { animation: bump .35s steps(3); }
 .sb svg { display: block; }
@@ -166,12 +166,10 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 
 /* the end of the day: the shootout grid and the score */
 #v-end { justify-content: center; align-items: center; gap: 6cqh; }
-.egrid { display: grid; grid-template-columns: auto repeat(5, auto); gap: 9px 10px; align-items: center; }
-.egrid .rc { width: 9px; height: 13px; border-radius: 1.5px; margin-right: 4px; }
-.egrid .rc.c1 { background: var(--c1); } .egrid .rc.c2 { background: var(--c2); } .egrid .rc.c3 { background: var(--c3); }
+.egrid { display: grid; grid-template-columns: repeat(5, auto); gap: 9px 10px; align-items: center; }
 .egrid .em { display: flex; align-items: center; justify-content: center; }
 .egrid .em.ok { filter: drop-shadow(0 0 5px rgba(92,240,154,.75)); }
-.egrid .em.no { color: var(--no); }
+.egrid .em.no .rcard { box-shadow: 0 0 6px rgba(255,255,255,.25); }
 .golazo .egrid .em.ok { filter: drop-shadow(0 0 4px #fff) drop-shadow(0 0 10px rgba(92,240,154,.9)); }
 .score { margin: 0; font-family: var(--pixel); --b: var(--g0); font-weight: 400; font-size: round(nearest, 26px, var(--ps)); line-height: 1; color: #fff; text-align: center; --g: 0 0 4px rgba(255,255,255,.6), 0 0 12px rgba(92,240,154,.6); }
 .golazo .score { font-size: round(nearest, 24px, var(--ps)); --g: 0 0 6px #fff, 0 0 14px var(--glow), 0 0 28px rgba(92,240,154,.7); }
@@ -209,22 +207,20 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .key:active:not(:disabled) { transform: translateY(4px); box-shadow: 0 1px 0 var(--btn-edge), 0 2px 4px rgba(0,0,0,.25); }
 .key:disabled { cursor: default; }
 
-/* the tiles: easy, medium and hard, one column each */
-#p-board.tiles { grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: repeat(5, auto); grid-auto-flow: column; gap: 9px 8px; padding-bottom: 4px; }
-.tile { position: relative; min-height: 60px; min-width: 0; padding: 4px 6px; font-size: round(nearest, 17px, var(--px)); line-height: calc(12 / 11); display: flex; align-items: center; justify-content: center; text-align: center; border-radius: 10px; }
-/* every tile is a cream key like the answer buttons. A small referee's card in the corner marks medium (yellow) and hard (red),
-   and easy tiles have none (Morg, Oct 16, 2026: the bold colors took over the cabinet) */
-.tile { background: var(--btn); color: var(--btn-ink); box-shadow: 0 4px 0 var(--btn-edge), 0 6px 8px rgba(0,0,0,.25); padding-left: 7px; padding-right: 7px; }   /* the shootout's taller tiles give the hook a little more width instead */
-.tile.c2::after, .tile.c3::after { content: ""; position: absolute; top: 5px; right: 6px; width: 7px; height: 10px; border-radius: 1.5px; box-shadow: 0 0 0 1px rgba(0,0,0,.18); }
-#p-board .tile.c2:not(:disabled), #p-board .tile.c3:not(:disabled) { padding-left: 14px; padding-right: 14px; }   /* the hook clears the corner card, evenly on both sides so it stays centered (the text audit) */
-.tile.c2::after { background: var(--c2); } .tile.c3::after { background: var(--c3); }
+/* the board (Morg, Oct 19, 2026): 5 across, 3 down, a row each for white, yellow and red, the same grid as the scoreboard,
+   the end screen and the share. Every card is a cream key, face down with a referee's card in its row's color waiting in its slot.
+   A played card turns face up, pressed a shade darker, with the game's ball for a right answer or its card tilted, booked, for a
+   miss. No words on the board: at 5 across the hooks don't fit the smallest phones, so they live in the Share board image */
+#p-board.tiles { grid-template-columns: repeat(5, minmax(0, 1fr)); grid-template-rows: repeat(3, auto); grid-auto-flow: row; gap: 11px 7px; padding-bottom: 4px; }
+.tile { position: relative; min-height: 92px; min-width: 0; padding: 0; display: flex; align-items: center; justify-content: center; border-radius: 9px;
+  background: var(--btn); color: var(--btn-ink); box-shadow: 0 4px 0 var(--btn-edge), 0 6px 8px rgba(0,0,0,.25); }
 .tile:active:not(:disabled) { transform: translateY(3px); box-shadow: 0 1px 0 rgba(0,0,0,.4); }
-.tile.done, .tile.miss { transform: translateY(3px); box-shadow: 0 1px 0 rgba(0,0,0,.4); background: rgba(246,240,226,.34); }
-/* an answered tile keeps its result: the game's pixel ball for a right answer, its pixel ✕ for a miss (shape, not just color) */
-.tile.done::after, .tile.miss::after { opacity: .55; }
-.tile .res { display: block; }
-.tile.miss .res { color: #B02A35; }
-.hk { display: block; width: 100%; overflow-wrap: normal; word-break: normal; hyphens: none; text-wrap: balance; }   /* two even lines, never one word alone (the text audit) */
+.tile.done, .tile.miss { transform: translateY(3px); box-shadow: 0 1px 0 rgba(0,0,0,.4); background: #DCD4C3; }
+.rcard { display: block; flex: none; width: 13px; height: 18px; border-radius: 2px; box-shadow: 0 0 0 1px rgba(0,0,0,.2); }   /* a referee's card */
+.rcard.c1 { background: var(--c1); box-shadow: 0 0 0 1px #B9B2A3; } .rcard.c2 { background: var(--c2); } .rcard.c3 { background: var(--c3); }
+.tile .back { width: 27px; height: 38px; border-radius: 3px; box-shadow: 0 0 0 1px rgba(0,0,0,.22), 0 2px 0 rgba(0,0,0,.12); }
+.tile .back.c1 { box-shadow: 0 0 0 1px #B9B2A3, 0 2px 0 rgba(0,0,0,.08); }
+.tile .res.rcard { width: 18px; height: 25px; border-radius: 2.5px; transform: rotate(-12deg); }   /* as big as the ball beside it */
 
 /* answer buttons */
 .choices { flex-direction: column; gap: 10px; }
@@ -244,12 +240,21 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .share { min-height: 62px; padding: 8px 16px 8px 18px; display: flex; align-items: center; justify-content: space-between; gap: 12px; text-align: left; font-size: round(nearest, 17px, var(--px)); line-height: calc(14 / 11); }
 .share .mark { flex: none; }
 .share .txt { flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 3px; line-height: calc(12 / 11); }
-/* the share key shows the exact text it sends: the shootout grid in the game's pixel ball and ✕, one line per row */
+/* the share key shows the exact text it sends: the grid in the game's ball and the referee's cards, one line per row */
 .sgrid { display: grid; grid-template-columns: repeat(5, 11px); grid-auto-rows: 11px; gap: 3px 3px; padding-block: 2px; align-items: center; justify-items: center; }
-.sgrid .no { color: #E0464B; }   /* a red dot, as the share text sends 🔴 for a miss */
+.sgrid .rcard { width: 8px; height: 11px; border-radius: 1.5px; }
 #share-txt { display: flex; flex-direction: column; gap: 3px; }
 .sgrid svg { display: block; }
 .endrow { display: flex; align-items: center; justify-content: center; gap: 6px; }
+.endrow .sboard { flex: 1; min-height: 52px; display: flex; align-items: center; justify-content: center; gap: 8px; white-space: nowrap; font-size: round(nearest, 17px, var(--px)); }
+.endrow .sboard svg { flex: none; }
+@media (max-width: 360px) { .endrow .sboard svg { display: none; } }
+@media (max-height: 640px) { .endrow .sboard { min-height: 48px; } }
+.bimg { position: fixed; inset: 0; z-index: 60; background: rgba(7,19,12,.92); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; padding: 18px; }
+.bimg[hidden] { display: none; }
+.bimg img { max-width: 100%; max-height: 74vh; border-radius: 12px; box-shadow: 0 6px 24px rgba(0,0,0,.6); }
+.bimg p { margin: 0; color: var(--text); text-align: center; }
+.bimg .key { min-height: 48px; padding: 0 24px; }
 .endrow .bk { height: 26px; color: #7C8A80; }
 .endrow .bk.flag.on { color: #B48A1C; filter: none; } .endrow .bk.lock.on { color: #45BE76; filter: none; }
 .clock { font-family: var(--pixel); --b: var(--g0); font-size: round(nearest, 15px, var(--ps)); letter-spacing: 1px; color: var(--glow); text-align: center; --g: 0 0 6px rgba(92,240,154,.6); padding: 2px 0 1px; }
@@ -263,10 +268,10 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .clock.thanks { font-family: var(--body-font); --b: var(--bold); font-size: round(nearest, 17px, var(--px)); letter-spacing: 0; }   /* the CRT's sentence face: one line, or two beside the beta's keys on the smallest phones */
 .key:focus-visible, .go:focus-visible, .bk:focus-visible { outline: 3px solid var(--glow); outline-offset: 3px; }
 
-@media (max-height: 700px) { .choice { min-height: 56px; } .tile { min-height: 54px; font-size: round(nearest, 16px, var(--px)); } }
+@media (max-height: 700px) { .choice { min-height: 56px; } .tile { min-height: 82px; } }
 @media (max-height: 640px) { .cab { gap: 9px; padding-top: max(9px, env(safe-area-inset-top, 0px)); padding-bottom: max(12px, env(safe-area-inset-bottom, 0px)); } .marquee { padding: 8px 10px 9px; } .marquee h1 { font-size: 19px; } .marquee.dm { height: 70px; } .marquee.dm .subhead { font-size: round(nearest, 8px, var(--ps)); letter-spacing: 1px; bottom: 7px; } .marquee.dm canvas { bottom: 20px; height: calc(100% - 27px); }
   .choice { font-size: round(nearest, 19px, var(--px)); min-height: 50px; } .sentence { font-size: round(nearest, 22px, var(--px)); } .sentence.long { font-size: round(nearest, 20px, var(--px)); } .sentence.longer { font-size: round(nearest, 18px, var(--px)); }
-  .tile { min-height: 50px; font-size: round(nearest, 15px, var(--px)); padding-left: 5px; padding-right: 5px; } #p-board.tiles { gap: 7px 7px; } .panel { padding: 10px 10px 13px; }
+  .tile { min-height: 72px; } .tile .back { width: 22px; height: 31px; } #p-board.tiles { gap: 8px 6px; } .panel { padding: 10px 10px 13px; }
   .means { font-size: round(nearest, 16px, var(--px)); } .score { font-size: round(nearest, 22px, var(--ps)); } .golazo .score { font-size: round(nearest, 21px, var(--ps)); } .egrid { gap: 7px 8px; } }
 @media (prefers-reduced-motion: reduce) { .key, .choice .def { transition: none; } .sb i.bump, .sb i.now, .choice.wrong, .flick, .blank, .go, .ball.goal, .bi .pt.new, .cab.poweron .marquee h1, .cab.poweron .marquee.dm canvas, .endrow .next svg, .pitch .shout { animation: none; } }
 
@@ -274,8 +279,6 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 /* the answer panel keeps its height for the card: room for two means lines is reserved, keys sit at the top, nothing moves when you answer */
 .choices { justify-content: flex-start; }
 .choice.probe .def { max-height: 36px; opacity: 0; transition: none; }
-/* columns carry difficulty, so a sideways slip costs most: wider column gaps, row gaps kept */
-#p-board.tiles { column-gap: 11px; }
 .panel { padding-left: 9px; padding-right: 9px; }
 /* the menu key: the sign's whole right end, 52 wide and the sign's full height */
 .marquee.dm .menu-b { right: 0; top: 0; transform: none; width: 52px; height: 100%; opacity: .9; border-radius: 0 14px 14px 0; background: radial-gradient(closest-side, rgba(7,19,12,.95), rgba(7,19,12,.8) 70%, transparent); }
@@ -345,7 +348,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .mrow .key { flex: 1; min-height: 52px; font-size: round(nearest, 15px, var(--px)); padding: 4px 6px; line-height: calc(12 / 11); }
 .sheet .menu-box #m-close { min-height: 52px; }
 .sheet .intro-box { text-align: left; }
-@media (max-height: 640px) { #p-board.tiles { column-gap: 10px; } .panel { padding-left: 8px; padding-right: 8px; } }
+@media (max-height: 640px) { .panel { padding-left: 8px; padding-right: 8px; } }
 @media (max-height: 640px) { .gorow, .endrow { min-height: 48px; } .gorow .gokey, .endrow .next.key, .endrow .again.key, .sheet .menu-box #m-close, .mrow .key { min-height: 48px; } .gorow { margin-top: 8px; } .ask-pop.sheet { padding-bottom: max(12px, env(safe-area-inset-bottom, 0px)); } }
 </style>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
@@ -388,9 +391,10 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     <div class="pv" id="p-gate"></div>
     <div class="pv choices" id="choices"></div>
     <div class="gorow" id="g-play"><button class="bk flag" id="b-flag" type="button" hidden></button><button class="key go gokey wait" id="go" type="button" tabindex="-1" aria-label="Next"></button><button class="bk lock" id="b-lock" type="button" hidden></button></div>
-    <div class="pv" id="p-end"><button class="key share" id="share" type="button"><span class="txt"><span id="share-top"></span><span id="share-txt"></span></span><span class="mark" id="share-mark"></span></button><div class="endrow"><button class="bk flag" id="e-flag" type="button" hidden></button><div class="clock" id="clock"></div><button class="next key" id="e-next" type="button" hidden></button><button class="again key" id="e-again" type="button" hidden></button><button class="bk lock" id="e-lock" type="button" hidden></button></div></div>
+    <div class="pv" id="p-end"><button class="key share" id="share" type="button"><span class="txt"><span id="share-top"></span><span id="share-txt"></span></span><span class="mark" id="share-mark"></span></button><div class="endrow"><button class="bk flag" id="e-flag" type="button" hidden></button><button class="key sboard" id="sboard" type="button"></button><div class="clock" id="clock"></div><button class="next key" id="e-next" type="button" hidden></button><button class="again key" id="e-again" type="button" hidden></button><button class="bk lock" id="e-lock" type="button" hidden></button></div></div>
   </div>
 </div>
+<div class="bimg" id="bimg" hidden><img id="bimg-i" alt="Your board"><button class="key" id="bimg-x" type="button">Close</button></div>
 <script>
 (function () {
   var DECKS = __DECKS__, START = __START__, DEMO = __DEMO__;   // DEMO: the playtest plays boards #1 to #DEMO back to back (DEMO_DAYS in build.py, 0 for the real daily)
@@ -709,11 +713,14 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     g.innerHTML = '<span class="lbl">' + label + '</span>' + svg(icon, 3); g.setAttribute('aria-label', label); g.classList.remove('wait'); g.tabIndex = 0;
   }
   function ballHTML(n, fresh) { return '<div class="ball" id="ball">' + ballIcon(n, '', fresh, true) + '</div>'; }
-  var COLOR = ['white', 'yellow card', 'red card'];
-  function tileHTML(T, i) {
+  var COLOR = ['White', 'Yellow', 'Red'];
+  function rcard(d, cls) { return '<i class="rcard c' + d + (cls ? ' ' + cls : '') + '"></i>'; }   // a referee's card in its color
+  function spot(i) { var d = S.tiles[i].d, n = 0; for (var k = 0; k < i; k++) if (S.tiles[k].d === d) n++; return n; }   // a card's place in its row, 0 to 4
+  function tileHTML(T, i) {   // face down: its row's card waiting in the slot. Face up: the ball, or its card tilted, booked
     var st = S.res[i] === 1 ? ' done' : S.res[i] === 2 ? ' miss' : '';
     return '<button type="button" class="key tile c' + T.d + st + '" data-i="' + i + '"' + (S.res[i] || over() ? ' disabled' : '') +
-      ' aria-label="' + esc(T.hook) + ', ' + COLOR[T.d - 1] + (S.res[i] ? (S.res[i] === 1 ? ', right' : ', missed') : '') + '">' + (S.res[i] ? (S.res[i] === 1 ? ballMark(22, 'res') : svg('no', 2, 'res')) : '<span class="hk">' + num(keep(esc(T.hook))) + '</span>') + '</button>';
+      ' aria-label="' + COLOR[T.d - 1] + ' card ' + (spot(i) + 1) + (S.res[i] ? ', ' + esc(T.hook) + (S.res[i] === 1 ? ', right' : ', missed') : '') + '">' +
+      (S.res[i] ? (S.res[i] === 1 ? ballMark(26, 'res') : rcard(T.d, 'res')) : rcard(T.d, 'back')) + '</button>';
   }
   function board(fresh) {   // fresh: the panel just lit, so it bumps
     var idle = !S.path.length && !over();   // attract mode on every new board until its first tap (Morg, Oct 19, 2026)
@@ -722,23 +729,9 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     $('p-board').classList.toggle('attract', idle);
     if (idle) [].forEach.call($('p-board').children, function (b, i) { b.style.setProperty('--w', (i % PER) + Math.floor(i / PER)); });   // the wave runs corner to corner
     document.querySelectorAll('[data-i]').forEach(function (b) { b.addEventListener('click', function (e) { e.stopPropagation(); open(+b.dataset.i); }); });
-    requestAnimationFrame(fitAll);
   }
-  // shrink a hook that won't fit its tile on two lines, one crisp step at a time (--px: 11/dpr px) down to 11 px. A hook still too long at
-  // 11 px (only long single words, on the smallest phones) keeps shrinking a device pixel at a time, blurred but inside its tile, down to 8 px.
-  // Stage 3 of sharp text ends the shrinking, once the editor has shortened the hooks that need it
-  var PX3 = window.matchMedia && matchMedia('(min-resolution: 3dppx)').matches, PXSTEP = PX3 ? 11 / 3 : 5.5, DEVPX = PX3 ? 1 / 3 : 0.5;
-  function fit(el) {
-    var hk = el.querySelector('.hk'); if (!hk) return;
-    hk.style.fontSize = '';
-    var px = parseFloat(getComputedStyle(hk).fontSize), lh = parseFloat(getComputedStyle(el).lineHeight) / parseFloat(getComputedStyle(el).fontSize) || 12 / 11;
-    var over = function () { return hk.scrollWidth > hk.clientWidth + 0.5 || hk.offsetHeight > 2 * px * lh + 1; };
-    while (px - PXSTEP > 10.9 && over()) { px -= PXSTEP; hk.style.fontSize = px + 'px'; }
-    while (px - DEVPX > 7.9 && over()) { px -= DEVPX; hk.style.fontSize = px + 'px'; }
-  }
-  function fitAll() { document.querySelectorAll('#p-board [data-i]').forEach(fit); }
-  window.addEventListener('resize', function () { if (cab.dataset.v === 'board') fitAll(); });
-  function refit() { fitAll(); if (cab.dataset.v === 'play' && T) fitQ(); }
+  var PX3 = window.matchMedia && matchMedia('(min-resolution: 3dppx)').matches, PXSTEP = PX3 ? 11 / 3 : 5.5;   // Triviela Pixel's crisp step
+  function refit() { if (cab.dataset.v === 'play' && T) fitQ(); }
   if (document.fonts) { document.fonts.ready.then(refit); if (document.fonts.addEventListener) document.fonts.addEventListener('loadingdone', refit); }   // refit once the pixel font arrives
 
   // ---- a card ----
@@ -753,17 +746,18 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     }
     S.open = i; S.path.push(i); save(); ask();
   }
-  // the shootout, row by color in the order played: [[1, 2, 0, 0, 0], ...] (1 right, 2 missed, 0 still to play)
+  // the board's grid, a row per color, every card in its spot: [[1, 2, 0, 0, 0], ...] (1 right, 2 missed, 0 still to play).
+  // The same spot is the same card for everyone (Morg, Oct 19, 2026: "you missed the Bournemouth one")
   function rows() {
     var r = [[], [], []];
-    S.path.forEach(function (i) { if (S.res[i]) r[S.tiles[i].d - 1].push(S.res[i]); });
-    return r.map(function (x) { while (x.length < PER) x.push(0); return x; });
+    S.tiles.forEach(function (t, i) { r[t.d - 1].push(S.res[i] || 0); });
+    return r;
   }
-  function hud(bump) {   // the card's color, and the scoreboard: the card in play blinks in its row
-    var r = rows(), now = answered ? -1 : T.d - 1, cell = now >= 0 ? r[now].indexOf(0) : -1, h = '';
+  function hud(bump) {   // the card's color, and the scoreboard: the card in play blinks in its spot
+    var r = rows(), now = answered ? -1 : T.d - 1, cell = now >= 0 ? spot(S.open) : -1, h = '';
     r.forEach(function (row, y) { row.forEach(function (v, x) {
       var cls = v === 1 ? 'ok' : v === 2 ? 'no' : y === now && x === cell ? 'now' : '';
-      h += '<i class="' + cls + (bump && y === T.d - 1 && x === bump - 1 ? ' bump' : '') + '">' + svg(v === 1 || cls === 'now' ? 'dot' : v === 2 ? 'no' : 'ring', 1) + '</i>';
+      h += '<i class="' + cls + (bump && y === T.d - 1 && x === bump - 1 ? ' bump' : '') + '">' + (v === 2 ? rcard(y + 1) : svg(v === 1 || cls === 'now' ? 'dot' : 'ring', 1)) + '</i>';
     }); });
     $('lvl').innerHTML = '<i class="chip-card c' + T.d + '"></i>';
     $('sb').innerHTML = h;
@@ -801,7 +795,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
       else if (b === btn) { b.classList.add('wrong'); b.lastChild.innerHTML = svg('no', 3); }
       else b.classList.add('dim');
     });
-    hud(rows()[T.d - 1].lastIndexOf(ok ? 1 : 2) + 1);
+    hud(spot(S.open) + 1);
     go('next', 'Next'); beta(T, 'play');
     $('q').classList.toggle('missed', !ok); $('q').innerHTML = sentence(T, true); flick();
     if (document.activeElement && document.activeElement.blur) document.activeElement.blur();   // no leftover focus ring after a tap
@@ -854,21 +848,24 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     } catch (e) {}
   }
   var tick;
-  function shareText() {   // the shootout grid: ⚽ right, 🔴 wrong (a red dot, like TV shootout graphics: Morg found ❌ too loud), a row per color, then the score (Morg, Oct 19, 2026)
-    return 'Triviela #' + (S.day + 1) + '\n' + rows().map(function (r) { return r.map(function (v) { return v === 1 ? '⚽' : '🔴'; }).join(''); }).join('\n') +
+  // the share: the board's grid, ⚽ right and a miss as its own card, ⬜ 🟨 🟥, every card in its spot, then the score (Morg, Oct 19, 2026)
+  var MISS = ['⬜', '🟨', '🟥'];
+  function shareText() {
+    return 'Triviela #' + (S.day + 1) + '\n' + rows().map(function (r, y) { return r.map(function (v) { return v === 1 ? '⚽' : MISS[y]; }).join(''); }).join('\n') +
       '\n' + (chips() === ALLN ? GOLAZO : chips() + '/' + ALLN) + '\ntriviela.net';
   }
   function end() {
     settle = null; store.set('bsb-intro-off', true); report();
     var n = chips(), top = n === ALLN, r = rows(), big = innerHeight > 700 ? 3 : 2;
-    var cells = function (s) { return r.map(function (row, y) { return '<i class="rc c' + (y + 1) + '"></i>' + row.map(function (v) {
-      var b = s === 3 ? 31 : 21;   // every cell the ball's size, so a ✕ sits centered where a ball would
-      return '<span class="em ' + (v === 1 ? 'ok' : 'no') + '" style="width:' + b + 'px;height:' + b + 'px">' + (v === 1 ? ballMark(b) : svg('no', s)) + '</span>'; }).join(''); }).join(''); };
+    var cells = function (s) { return r.map(function (row, y) { return row.map(function (v) {
+      var b = s === 3 ? 31 : 21;   // every cell the ball's size, so a card sits centered where a ball would
+      return '<span class="em ' + (v === 1 ? 'ok' : 'no') + '" style="width:' + b + 'px;height:' + b + 'px">' + (v === 1 ? ballMark(b) :
+        '<i class="rcard c' + (y + 1) + '" style="width:' + Math.round(b * .55) + 'px;height:' + Math.round(b * .77) + 'px"></i>') + '</span>'; }).join(''); }).join(''); };
     $('v-end').className = 'view' + (top ? ' golazo' : '');
     $('v-end').innerHTML = '<div class="egrid" role="img" aria-label="' + rows().map(function (row, y) { return ['White', 'Yellow', 'Red'][y] + ': ' + row.filter(function (v) { return v === 1; }).length + ' of 5'; }).join(', ') + '">' + cells(big) + '</div>' +
       '<p class="score">' + (top ? GOLAZO : num(n + '/' + ALLN)) + '</p>';
     $('share-top').innerHTML = 'Triviela ' + num('#' + (S.day + 1));
-    $('share-txt').innerHTML = '<span class="sgrid">' + r.map(function (row) { return row.map(function (v) { return v === 1 ? ballMark(11) : '<span class="no"><svg viewBox="0 0 10 10" width="10" height="10"><circle cx="5" cy="5" r="4.6" fill="currentColor"/></svg></span>'; }).join(''); }).join('') + '</span>' +
+    $('share-txt').innerHTML = '<span class="sgrid">' + r.map(function (row, y) { return row.map(function (v) { return v === 1 ? ballMark(11) : rcard(y + 1); }).join(''); }).join('') + '</span>' +
       '<span>' + (top ? '<span class="num">' + GOLAZO + '</span>' : num(n + '/' + ALLN)) + '</span><span>triviela.net</span>';
     $('share').setAttribute('aria-label', 'Share: ' + shareText().replace(/\n/g, ', '));
     $('share-mark').innerHTML = svg('share', 3);
@@ -925,7 +922,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   $('m-restart').addEventListener('click', function () { pop('menu', false); pop('restart-ask', true); });
   $('ra-no').addEventListener('click', function () { pop('restart-ask', false); });
   $('ra-yes').addEventListener('click', function () { pop('restart-ask', false); goDay(0); });
-  ['menu', 'restart-ask', 'intro'].forEach(function (id) { $(id).addEventListener('click', function (e) { if (e.target === $(id)) pop(id, false); }); });   // a tap outside the box closes it
+  ['menu', 'restart-ask', 'intro', 'bimg'].forEach(function (id) { $(id).addEventListener('click', function (e) { if (e.target === $(id)) pop(id, false); }); });   // a tap outside the box closes it
   // how to play: one screen, shown on every visit until the player ticks Don't show this again, and always in the menu
   // How to play shows on every visit until the player's first finished day, then only from the menu (Morg, Oct 19, 2026)
   function intro() { pop('intro', true); }
@@ -946,6 +943,44 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done, function () { copy(text); done(); }); return; }
     copy(text); done();
   });
+  // Share board (Morg, Oct 19, 2026): the finished board as an image, face up, every card in its spot with its hook, the one place the
+  // hooks show now. Drawn when the key is tapped, all at once, so the phone's share sheet opens from the tap itself. A computer shows it
+  function boardImage() {
+    var W = 1080, H = 1350, c = document.createElement('canvas'), g = c.getContext('2d'); c.width = W; c.height = H;
+    var bg = g.createRadialGradient(W / 2, 0, 0, W / 2, 0, H * 1.1); bg.addColorStop(0, '#1E3A2A'); bg.addColorStop(.7, '#0B1710'); g.fillStyle = bg; g.fillRect(0, 0, W, H);
+    g.fillStyle = 'rgba(92,240,154,.07)'; for (var y = 6; y < H; y += 12) for (var x = 6; x < W; x += 12) g.fillRect(x, y, 3, 3);   // the dot-matrix ground
+    g.strokeStyle = '#00843D'; g.lineWidth = 12; g.strokeRect(6, 6, W - 12, H - 12);
+    g.textAlign = 'center'; g.textBaseline = 'alphabetic';
+    g.font = '64px "Triviela Arcade"'; g.fillStyle = '#5CF09A'; g.shadowColor = 'rgba(92,240,154,.7)'; g.shadowBlur = 18; g.fillText('TRIVIELA', W / 2, 140);
+    var n = chips(); g.shadowBlur = 0; g.font = '40px "Triviela Arcade"'; g.fillStyle = '#FFFFFF'; g.fillText('#' + (S.day + 1) + '  ' + (n === ALLN ? GOLAZO : n + '/' + ALLN), W / 2, 222);
+    var CW = 176, CH = 236, GX = 16, GY = 34, X0 = (W - 5 * CW - 4 * GX) / 2 + 14, Y0 = 290, COLS = ['#FFFFFF', '#F7C948', '#D52B1E'];
+    function rr(x, y, w, h, r) { g.beginPath(); g.moveTo(x + r, y); g.arcTo(x + w, y, x + w, y + h, r); g.arcTo(x + w, y + h, x, y + h, r); g.arcTo(x, y + h, x, y, r); g.arcTo(x, y, x + w, y, r); g.closePath(); }
+    function card(x, y, w, h, d, rot) { g.save(); g.translate(x + w / 2, y + h / 2); g.rotate(rot || 0); rr(-w / 2, -h / 2, w, h, 4); g.fillStyle = COLS[d - 1]; g.fill();
+      g.lineWidth = 2; g.strokeStyle = d === 1 ? '#B9B2A3' : 'rgba(0,0,0,.25)'; g.stroke(); g.restore(); }
+    S.tiles.forEach(function (t, i) {
+      var col = spot(i), x = X0 + col * (CW + GX), y = Y0 + (t.d - 1) * (CH + GY);
+      if (col === 0) card(X0 - 52, y + CH / 2 - 20, 28, 40, t.d);   // the row's color, at its left
+      rr(x, y + 6, CW, CH, 18); g.fillStyle = '#CBBFA4'; g.fill(); rr(x, y, CW, CH, 18); g.fillStyle = '#F6F0E2'; g.fill();
+      var size = 22, words = t.hook.split(' '), lines = [], cur = '';   // 2 px to a font pixel, or 1.5 for a word too long for the card
+      g.font = size + 'px "Triviela Pixel"'; if (words.some(function (w) { return g.measureText(w).width > CW - 16; })) { size = 16.5; g.font = size + 'px "Triviela Pixel"'; }
+      g.fillStyle = '#1E2A3B';
+      words.forEach(function (w) { var tr = cur ? cur + ' ' + w : w; if (g.measureText(tr).width > CW - 16 && cur) { lines.push(cur); cur = w; } else cur = tr; }); lines.push(cur);
+      lines = lines.slice(0, 3); lines.forEach(function (l, k) { g.fillText(l, x + CW / 2, y + 78 - (lines.length - 1) * 13 + k * 26); });
+      if (S.res[i] === 1) { g.font = '64px "Apple Color Emoji", "Noto Color Emoji", sans-serif'; g.fillText('⚽', x + CW / 2, y + CH - 34); }
+      else card(x + CW / 2 - 23, y + CH - 100, 46, 64, t.d, -0.21);
+    });
+    g.font = '44px "Triviela Pixel"'; g.fillStyle = '#EAFBF0'; g.fillText('triviela.net', W / 2, H - 70);
+    return c;
+  }
+  $('sboard').innerHTML = 'Share board' + svg('share', 2);
+  $('sboard').addEventListener('click', function () {
+    var c = boardImage(), url = c.toDataURL('image/png'), bin = atob(url.split(',')[1]), a = new Uint8Array(bin.length);
+    for (var k = 0; k < bin.length; k++) a[k] = bin.charCodeAt(k);
+    var file = new File([a], 'triviela-' + (S.day + 1) + '.png', { type: 'image/png' });
+    if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent) && navigator.canShare && navigator.canShare({ files: [file] })) { navigator.share({ files: [file] }).catch(function () {}); return; }
+    $('bimg-i').src = url; pop('bimg', true);
+  });
+  $('bimg-x').addEventListener('click', function () { pop('bimg', false); });
   function copy(text) { var t = document.createElement('textarea'); t.value = text; t.style.position = 'fixed'; t.style.opacity = '0'; document.body.appendChild(t); t.select(); try { document.execCommand('copy'); } catch (e) {} t.remove(); }
 
   // ---- the beta (preview links only): Morg's flag and lock keys (Oct 16, 2026) ----

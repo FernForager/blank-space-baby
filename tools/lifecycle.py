@@ -6,7 +6,7 @@ Runs twice: as the real daily (DEMO 0) and as the playtest demo (DEMO_DAYS in bu
 
 1. A tapped tile is committed: a reload reopens the same card with the same choices in the same order.
 2. A reload after a right answer keeps the chip, and the board shows it.
-3. A miss doesn't end the day: all 15 cards play, and the share is the shootout grid, exactly (checked through the clipboard).
+3. A miss doesn't end the day: all 15 cards play, and the share is the board's grid, every card in its spot, exactly (checked through the clipboard).
 4. A finished day reopens to its result and can't be replayed, and How to play stops opening on its own.
 5. At local midnight the countdown runs out and a fresh board appears, numbered one higher.
    In the demo there is no countdown and midnight changes nothing: Play #2 opens #2, the last board ends with a
@@ -37,8 +37,8 @@ async def answer(pg, i, right):   # play tile i, right or wrong, then tap on. Re
     await pg.click(f'.choice[data-w="{pick}"]'); await pg.wait_for_timeout(40); await pg.click('#flip'); await pg.wait_for_timeout(60)
     return ch.index(w)
 
-def expected(s, n):   # the share text the locked format gives for a saved day: a row per color, in the order played
-    rows = [''.join('⚽' if s['res'][i] == 1 else '🔴' for i in s['path'] if s['tiles'][i]['d'] == d) for d in (1, 2, 3)]
+def expected(s, n):   # the share text for a saved day: a row per color, every card in its board spot, a miss as its card
+    rows = [''.join('⚽' if s['res'][i] == 1 else '⬜🟨🟥'[d - 1] for i in range(15) if s['tiles'][i]['d'] == d) for d in (1, 2, 3)]
     right = sum(1 for r in s['res'] if r == 1)
     return f'Triviela #{n}\n' + '\n'.join(rows) + '\n' + ('GOLAZO!' if right == 15 else f'{right}/15') + '\ntriviela.net'
 
@@ -113,7 +113,7 @@ async def run(b, html, demo):
         for i in range(15): await answer(pg, i, False)
         await pg.click('#share'); await pg.wait_for_timeout(200)
         text = await pg.evaluate("navigator.clipboard.readText()")
-        ok(text == 'Triviela #2\n' + '🔴🔴🔴🔴🔴\n' * 3 + '0/15\ntriviela.net', 'board #2, all missed, shares as #2: ' + repr(text))
+        ok(text == 'Triviela #2\n⬜⬜⬜⬜⬜\n🟨🟨🟨🟨🟨\n🟥🟥🟥🟥🟥\n0/15\ntriviela.net', 'board #2, all missed, shares as #2: ' + repr(text))
         await pg.evaluate(f"localStorage.setItem('bsb-demo', '{demo - 1}'); localStorage.removeItem('bsb-daily')"); await pg.reload(); await pg.wait_for_timeout(300)
         s = await state(); ok(s['day'] == demo - 1, f'the demo picks up where it was left, on #{demo}')
         for i in range(15): await answer(pg, i, True)
