@@ -1,0 +1,33 @@
+FONTLOG for the Triviela fonts
+==============================
+
+The two fonts in this folder are Modified Versions of fonts under the SIL Open Font License, Version 1.1. Each is
+renamed, as the license asks, and each carries its original copyright notice and license (OFL-*.txt here). They are
+built by build/font/pixelfont.py in the Triviela repository.
+
+Triviela Pixel (triviela-pixel-v1.woff2)
+----------------------------------------
+Based on Pixelify Sans, Copyright 2021 The Pixelify Sans Project Authors (https://github.com/eifetx/Pixelify-Sans).
+License: OFL-TrivielaPixel.txt.
+
+Pixelify Sans is drawn on a grid of 11 pixels to the em, but its outlines overhang each pixel by about a tenth, its
+advances carry 0.44 px of padding, its kerning and line metrics fall between pixels, and its accents and punctuation are
+drawn in half pixels, so it is never quite sharp on screen. Changes, Oct 19, 2026:
+
+- Rebuilt on its own grid: 1100 units to the em, every pixel exactly 100 units. Letters and digits are read back from
+  the static weight-400 master, one pixel per grid cell, a pixel on where the outline covers over half of the cell.
+- Punctuation, symbols and accents redrawn by hand on whole pixels (quotes, apostrophes, dashes, brackets, the
+  ellipsis, the accents and others). Accented letters are rebuilt from the base letter and the redrawn accent.
+- Whole-pixel advances: one pixel between letters, four between words. Kerning removed. No ligatures.
+- The lowercase j gets a dot (Pixelify's has none).
+- Ascent 10 px, descent 3 px, line gap 0, all on the grid.
+- One weight (Regular). Subset to Basic Latin, Latin-1, Latin Extended-A, Romanian comma letters and the common
+  punctuation. Left out: the fractions, the broken bar, the soft hyphen, ĳ, kra, long s and ŉ.
+
+Triviela Arcade (triviela-arcade-v1.woff2)
+------------------------------------------
+Based on Press Start 2P, Copyright 2012 The Press Start 2P Project Authors (cody@zone38.net), with Reserved Font
+Name "Press Start 2P". License: OFL-TrivielaArcade.txt.
+
+Changes, Oct 19, 2026: subset to Basic Latin, Latin-1 and a few punctuation marks, hinting and layout tables removed,
+renamed. The outlines are unchanged.
