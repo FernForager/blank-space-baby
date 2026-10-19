@@ -55,8 +55,11 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   text-shadow: 0 0 4px rgba(255,255,255,.7), 0 0 10px var(--glow), 0 0 20px rgba(92,240,154,.55); }
 .cab.poweron .marquee h1 { animation: power .6s steps(6); }
 /* the sign as a dot-matrix board (Morg, Oct 18, 2026): every dot lit at random, the brighter ones spell TRIVIELA */
-.marquee.dm { height: 66px; padding: 0; box-sizing: border-box; }
-.marquee.dm canvas { position: absolute; inset: 7px 8px; width: calc(100% - 16px); height: calc(100% - 14px); }
+.marquee.dm { height: 84px; padding: 0; box-sizing: border-box; }
+/* the sign's subheading (Morg, Oct 19, 2026: what the game is, under the name, apart from the question that invites you to play):
+   crisp arcade letters glowing under the dots, at a size that lands on whole device pixels (10.67 px is 4 per font pixel at 3x) */
+.marquee.dm .subhead { position: absolute; left: 0; right: 34px; bottom: 9px; margin: 0; font: 400 10.6667px/1 var(--pixel); letter-spacing: 1.3333px; text-transform: uppercase; color: var(--glow); text-shadow: 0 0 6px rgba(92,240,154,.7); pointer-events: none; }
+.marquee.dm canvas { position: absolute; inset: 7px 8px 25px; width: calc(100% - 16px); height: calc(100% - 32px); }
 .cab.poweron .marquee.dm canvas { animation: power .6s steps(6); }
 .sr { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .marquee.dm .menu-b { right: 4px; z-index: 1; background: radial-gradient(closest-side, rgba(7,19,12,.95), rgba(7,19,12,.8) 70%, transparent); border-radius: 50%; }
@@ -264,7 +267,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .key:focus-visible, .go:focus-visible, .bk:focus-visible { outline: 3px solid var(--glow); outline-offset: 3px; }
 
 @media (max-height: 700px) { .choice { min-height: 56px; } .tile { min-height: 54px; font-size: 16px; } }
-@media (max-height: 640px) { .cab { gap: 9px; padding-top: max(9px, env(safe-area-inset-top, 0px)); padding-bottom: max(12px, env(safe-area-inset-bottom, 0px)); } .marquee { padding: 8px 10px 9px; } .marquee h1 { font-size: 19px; } .marquee.dm { height: 54px; }
+@media (max-height: 640px) { .cab { gap: 9px; padding-top: max(9px, env(safe-area-inset-top, 0px)); padding-bottom: max(12px, env(safe-area-inset-bottom, 0px)); } .marquee { padding: 8px 10px 9px; } .marquee h1 { font-size: 19px; } .marquee.dm { height: 70px; } .marquee.dm .subhead { font-size: 8px; letter-spacing: 1px; bottom: 7px; } .marquee.dm canvas { bottom: 20px; height: calc(100% - 27px); }
   .choice { font-size: 19px; min-height: 50px; } .sentence { font-size: 22px; } .sentence.long { font-size: 20px; } .sentence.longer { font-size: 18px; }
   .tile { min-height: 50px; font-size: 15px; padding-left: 5px; padding-right: 5px; } #p-board.tiles { gap: 7px 7px; } .panel { padding: 10px 10px 13px; }
   .means { font-size: 16px; } .score { font-size: 22px; } .golazo .score { font-size: 21px; } .egrid { gap: 7px 8px; } }
@@ -357,7 +360,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   <pattern id="pdim" width="7" height="7" patternUnits="userSpaceOnUse"><circle cx="3.5" cy="3.5" r="1.7" fill="#2C5A40"/></pattern>
 </defs></svg>
 <div class="cab" id="cab" data-v="board">
-  <div class="marquee dm"><h1 class="sr">Triviela</h1><canvas id="sign" aria-hidden="true"></canvas><button class="menu-b" id="menu-b" type="button" aria-label="Menu"></button></div>
+  <div class="marquee dm"><h1 class="sr">Triviela</h1><canvas id="sign" aria-hidden="true"></canvas><p class="subhead">Soccer trivia shootout</p><button class="menu-b" id="menu-b" type="button" aria-label="Menu"></button></div>
   <div class="ask-pop sheet" id="menu" role="dialog" aria-modal="true" aria-label="Menu" hidden><div class="ask-box menu-box"><div class="mrow"><button class="key" id="m-restart" type="button" hidden>Start over from <span class="num">#1</span></button><button class="key" id="m-how" type="button">How to play</button></div><button class="key" id="m-close" type="button">Back to the game</button></div></div>
   <div class="ask-pop sheet" id="intro" role="dialog" aria-modal="true" aria-labelledby="in-q" hidden><div class="ask-box intro-box">
     <p class="in-q" id="in-q">How well do you know<br>the beautiful game?</p>
