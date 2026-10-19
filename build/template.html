@@ -86,6 +86,8 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .ball { position: relative; flex: none; aspect-ratio: 1; }
 .bi { display: block; width: 100%; height: 100%; overflow: visible; }
 .bi .body { fill: rgba(92,240,154,.05); }
+.bi .glow { fill: url(#bglow); pointer-events: none; } .bi .shine { fill: url(#bshine); pointer-events: none; }   /* a hologram: the rim glows and a soft light sits top left */
+.bi.mini .glow, .bi.mini .shine { display: none; }
 .bi .sm { fill: none; stroke: #3E7A57; stroke-width: 2.2; stroke-linecap: round; }
 .bi .pt { fill: url(#bdim); stroke: #3E7A57; stroke-width: 2.2; stroke-linejoin: round; stroke-linecap: round; transform-box: fill-box; transform-origin: center; }
 .bi .pt.hx { fill: url(#bdim); fill-opacity: .45; }   /* an unlit hexagon is fainter than an unlit pentagon, so the empty ball still reads as a ball */
@@ -94,7 +96,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .ball.goal .bi .sm, .ball.goal .bi .pt { stroke: var(--text); }
 .ball.goal .bi { filter: drop-shadow(0 0 4px #fff) drop-shadow(0 0 10px rgba(92,240,154,.9)); }
 .ball.goal { animation: bob .3s steps(2) 3; }
-.bi.mini .body { fill: currentColor; } .bi.mini .sm { stroke: var(--mp, #07130C); stroke-width: 4; } .bi.mini .pt, .bi.mini .pt.on { fill: var(--mp, #07130C); stroke: var(--mp, #07130C); stroke-width: 3; filter: none; } .bi.mini .pt.hx { fill: none; stroke: none; }
+.bi.mini .body { fill: currentColor; } .bi.mini .sm { stroke: var(--mp, #07130C); stroke-width: 4; } .bi.mini .pt, .bi.mini .pt.on { fill: var(--mp, #07130C); stroke: var(--mp, #07130C); stroke-width: 3; filter: none; } .bi.mini .pt.hx { fill: none; stroke: var(--mp, #07130C); stroke-width: 3; }   /* the hexagons' outlines are the seams */
 .share .bi.mini, .tile .bi.mini { color: #fff; --mp: #1E2A3B; } .share .bi.mini .body, .tile .bi.mini .body { stroke: #1E2A3B; stroke-width: 7; }
 .egrid .bi.mini { color: var(--text); --mp: #07130C; }   /* on the CRT: a lit ball, its patches the screen's own black */
 .bi.mark { flex: none; display: block; }
@@ -313,6 +315,8 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   <pattern id="pon" width="7" height="7" patternUnits="userSpaceOnUse"><circle cx="3.5" cy="3.5" r="2.6" fill="#EAFBF0"/></pattern>
   <pattern id="bon" width="2.6" height="2.6" patternUnits="userSpaceOnUse"><circle cx="1.3" cy="1.3" r="1" fill="#EAFBF0"/></pattern>
   <pattern id="bdim" width="2.6" height="2.6" patternUnits="userSpaceOnUse"><circle cx="1.3" cy="1.3" r=".6" fill="#2C5A40"/></pattern>
+  <radialGradient id="bglow" cx="0" cy="0" r="48" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#5CF09A" stop-opacity="0"/><stop offset=".72" stop-color="#5CF09A" stop-opacity=".04"/><stop offset="1" stop-color="#5CF09A" stop-opacity=".22"/></radialGradient>
+  <radialGradient id="bshine" cx="-16" cy="-20" r="34" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#EAFBF0" stop-opacity=".16"/><stop offset="1" stop-color="#EAFBF0" stop-opacity="0"/></radialGradient>
   <pattern id="pdim" width="7" height="7" patternUnits="userSpaceOnUse"><circle cx="3.5" cy="3.5" r="1.7" fill="#2C5A40"/></pattern>
 </defs></svg>
 <div class="cab" id="cab" data-v="board">
@@ -371,38 +375,62 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     ring:  ['..###..','.#...#.','#.....#','#.....#','#.....#','.#...#.','..###..']
   };
   var PAL = { K: '#1E2A3B', W: '#FFFFFF' };
-  // the ball: one classic soccer-ball icon (Morg, Oct 18, 2026), drawn in true proportions with no ring around it.
-  // Its 15 panels are lamps (Morg, Oct 19, 2026), three rings of five lit from the middle out, each ring clockwise from the top:
-  // ring 1 the hexagons round the center, ring 2 the outer pentagons, ring 3 the half-hexagons at the edge. The center
-  // pentagon is panel 15 and lights only on 15/15. The hexagons come from the seams, and the circle clips the edge ones.
-  var BI = 0, BALLG = (function () {   // every polygon has the same side, so the hexagons come out regular
-    var P = function (a, r) { return [r * Math.cos(a * Math.PI / 180), r * Math.sin(a * Math.PI / 180)]; };
-    var S = 15, R = S / (2 * Math.sin(Math.PI / 5));   // side, and a pentagon's corner radius
-    var poly = function (cx, cy, rot) { var v = []; for (var j = 0; j < 5; j++) { var p = P(rot + 72 * j, R); v.push([cx + p[0], cy + p[1]]); } return v; };
-    var center = poly(0, 0, -90), pents = [], ctr = [], seams = '', L = function (a, b) { return 'M' + a[0].toFixed(2) + ' ' + a[1].toFixed(2) + 'L' + b[0].toFixed(2) + ' ' + b[1].toFixed(2); };
-    // each edge patch sits straight out from a corner of the center one, a side's length away, pointing back at it
-    for (var k = 0; k < 5; k++) { var th = -90 + 72 * k, c = P(th, 2 * R + S); ctr.push(c); pents.push(poly(c[0], c[1], th + 180)); }
-    var ext = function (k, j) { var v = pents[k][j], c = ctr[k], dx = v[0] - c[0], dy = v[1] - c[1], m = Math.hypot(dx, dy); return [v[0] + dx / m * S, v[1] + dy / m * S]; };   // a seam on past an edge patch
-    var inner = [], outer = [];
-    for (k = 0; k < 5; k++) {
-      var n = (k + 1) % 5;
-      seams += L(center[k], pents[k][0]) + L(pents[k][4], pents[n][1]) + L(pents[k][2], ext(k, 2)) + L(pents[k][3], ext(k, 3));
-      inner.push([center[k], center[n], pents[n][0], pents[n][1], pents[k][4], pents[k][0]]);   // between center corners k and k+1, upper right first
-      outer.push([pents[k][4], pents[k][3], ext(k, 3), ext(n, 2), pents[n][2], pents[n][1]]);   // straight out from it, cut by the edge
-    }
-    var pts = function (v) { return v.map(function (w) { return w[0].toFixed(2) + ',' + w[1].toFixed(2); }).join(' '); };
+  // the ball: one classic soccer-ball icon (Morg, Oct 18, 2026), drawn as a real ball (Oct 19, 2026: the flat drawing looked wonky).
+  // It is a true truncated icosahedron, a pentagon facing us, each patch pressed onto a sphere and seen straight on, so the seams
+  // curve and the patches shrink toward the rim like a real ball's, a hologram held in the screen. Its 15 panels are lamps
+  // (Morg, Oct 19, 2026), three rings of five lit from the middle out, each ring clockwise from the top: ring 1 the hexagons round
+  // the center, ring 2 the pentagons, ring 3 the hexagons near the rim. The center pentagon is panel 15 and lights only on 15/15.
+  // The slivers of the next hexagons, just over the horizon, are drawn too but never light until the whole ball glows.
+  var BI = 0, BALLG = (function () {
+    var f = (1 + Math.sqrt(5)) / 2, V = [];
+    [[0, 1, f], [0, -1, f], [0, 1, -f], [0, -1, -f], [1, f, 0], [-1, f, 0], [1, -f, 0], [-1, -f, 0], [f, 0, 1], [-f, 0, 1], [f, 0, -1], [-f, 0, -1]].forEach(function (v) { V.push(v); });
+    var sub = function (a, b) { return [a[0] - b[0], a[1] - b[1], a[2] - b[2]]; }, add = function (a, b) { return [a[0] + b[0], a[1] + b[1], a[2] + b[2]]; };
+    var mul = function (a, k) { return [a[0] * k, a[1] * k, a[2] * k]; }, dot = function (a, b) { return a[0] * b[0] + a[1] * b[1] + a[2] * b[2]; };
+    var cross = function (a, b) { return [a[1] * b[2] - a[2] * b[1], a[2] * b[0] - a[0] * b[2], a[0] * b[1] - a[1] * b[0]]; }, unit = function (a) { return mul(a, 1 / Math.sqrt(dot(a, a))); };
+    var lerp = function (a, b, t) { return add(a, mul(sub(b, a), t)); };
+    // turn the ball so vertex 0 (a pentagon's middle) faces us, then spin it so a ring-2 pentagon sits at the top
+    var rot = function (v, ax, an) { var c = Math.cos(an), s2 = Math.sin(an); return add(add(mul(v, c), mul(cross(ax, v), s2)), mul(ax, dot(ax, v) * (1 - c))); };
+    var z = [0, 0, 1], v0 = unit(V[0]), ax = unit(cross(v0, z)), an = Math.acos(dot(v0, z));
+    V = V.map(function (v) { return rot(v, ax, an); });
+    var nb = function (i) { var out = []; V.forEach(function (w, j) { if (j !== i && Math.abs(Math.sqrt(dot(sub(w, V[i]), sub(w, V[i]))) - 2) < 1e-6) out.push(j); }); return out; };
+    var up = V[nb(0)[0]], spin = Math.PI / 2 - Math.atan2(up[1], up[0]);
+    V = V.map(function (v) { return rot(v, z, spin); });
+    var faces = [];   // a pentagon round each vertex, a hexagon on each triangle, corners a third of the way along each edge
+    V.forEach(function (v, i) {
+      var ns = nb(i), c = unit(v), e1 = unit(sub(V[ns[0]], mul(c, dot(V[ns[0]], c)))), e2 = cross(c, e1);
+      ns.sort(function (a, b) { var A = sub(V[a], v), B = sub(V[b], v); return Math.atan2(dot(A, e2), dot(A, e1)) - Math.atan2(dot(B, e2), dot(B, e1)); });
+      faces.push({ pent: 1, c: c, v: ns.map(function (n) { return lerp(v, V[n], 1 / 3); }) });
+      ns.forEach(function (a, k) {
+        var b = ns[(k + 1) % 5]; if (!(i < a && i < b)) return;   // each triangle once
+        if (nb(a).indexOf(b) < 0) return;
+        var A = V[a], B = V[b];
+        faces.push({ pent: 0, c: unit(add(add(v, A), B)), v: [lerp(v, A, 1 / 3), lerp(A, v, 1 / 3), lerp(A, B, 1 / 3), lerp(B, A, 1 / 3), lerp(B, v, 1 / 3), lerp(v, B, 1 / 3)] });
+      });
+    });
+    var R = 50.5, pt = function (w) {   // press onto the sphere and look straight on, laying anything past the horizon just outside the r 48 clip, so no ring shows
+      var u = unit(w), x = u[0] * R, y = -u[1] * R;
+      if (u[2] < 0) { var m = Math.hypot(x, y) || 1; x = x / m * R; y = y / m * R; }
+      return x.toFixed(2) + ',' + y.toFixed(2);
+    };
+    var outline = function (F) { var o = []; F.v.forEach(function (a, k) { var b = F.v[(k + 1) % F.v.length]; for (var t = 0; t < 8; t++) o.push(pt(lerp(a, b, t / 8))); }); return o.join(' '); };
+    var tilt = function (F) { return Math.acos(Math.max(-1, Math.min(1, F.c[2]))) * 180 / Math.PI; };   // 0 faces us, 90 is the rim
+    var az = function (F) { var a = Math.atan2(-F.c[1], F.c[0]) * 180 / Math.PI; return (a + 90 + 360 + 0.5) % 360; };   // clockwise from the top
+    var ring = function (lo, hi, pent) { return faces.filter(function (F) { var t = tilt(F); return F.pent === pent && t > lo && t < hi; }).sort(function (a, b) { return az(a) - az(b); }); };
     var panels = [];
-    inner.forEach(function (v) { panels.push({ p: pts(v), hx: 1 }); });
-    pents.forEach(function (v) { panels.push({ p: pts(v), hx: 0 }); });   // the top one first
-    outer.forEach(function (v) { panels.push({ p: pts(v), hx: 1 }); });
-    panels.push({ p: pts(center), hx: 0 });
-    return { panels: panels, seams: seams };
+    ring(30, 45, 0).forEach(function (F) { panels.push({ p: outline(F), hx: 1 }); });   // ring 1, upper right first
+    ring(55, 70, 1).forEach(function (F) { panels.push({ p: outline(F), hx: 0 }); });   // ring 2, the top one first
+    ring(72, 88, 0).forEach(function (F) { panels.push({ p: outline(F), hx: 1 }); });   // ring 3
+    panels.push({ p: outline(faces.filter(function (F) { return tilt(F) < 5; })[0]), hx: 0 });   // the center
+    var rim = ring(92, 112, 0).map(function (F) { return outline(F); });   // the slivers just past the horizon
+    return { panels: panels, rim: rim, seams: '' };
   })();
   function ballIcon(n, cls, fresh, ids) {   // n right answers: panels 0 to n−1 lit, and the center too at 15. fresh: the panel just lit (it bumps)
     var id = 'bc' + (++BI), lit = n >= 15 ? 16 : n;
     return '<svg class="bi' + (cls ? ' ' + cls : '') + '" viewBox="-50 -50 100 100" aria-hidden="true"><defs><clipPath id="' + id + '"><circle r="48"/></clipPath></defs>' +
-      '<g clip-path="url(#' + id + ')"><circle class="body" r="48"/><path class="sm" d="' + BALLG.seams + '"/>' +
-      BALLG.panels.map(function (pn, k) { return '<polygon class="pt' + (pn.hx ? ' hx' : '') + (k < lit ? ' on' : '') + (k === fresh ? ' new' : '') + '"' + (ids ? ' id="slot' + k + '"' : '') + ' points="' + pn.p + '"/>'; }).join('') + '</g></svg>';
+      '<g clip-path="url(#' + id + ')"><circle class="body" r="48"/>' +
+      BALLG.rim.map(function (p) { return '<polygon class="pt hx rim' + (lit >= 16 ? ' on' : '') + '" points="' + p + '"/>'; }).join('') +
+      BALLG.panels.map(function (pn, k) { return '<polygon class="pt' + (pn.hx ? ' hx' : '') + (k < lit ? ' on' : '') + (k === fresh ? ' new' : '') + '"' + (ids ? ' id="slot' + k + '"' : '') + ' points="' + pn.p + '"/>'; }).join('') +
+      '<circle class="glow" r="48"/><circle class="shine" r="48"/></g></svg>';
   }
   // the mark for a right answer: the ball is one icon, so it's the same drawing, small and solid (checked at 11 px at 3×: it still reads as a ball)
   function ballMark(size, cls) { return ballSvg(size, 'mark' + (cls ? ' ' + cls : ''), true); }
