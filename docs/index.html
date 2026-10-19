@@ -190,7 +190,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 
 /* the end of the day: the shootout grid and the score */
 #v-end { justify-content: center; align-items: center; gap: 6cqh; }
-.egrid { display: grid; grid-template-columns: auto repeat(5, auto); gap: 9px 10px; align-items: center; }
+.egrid { display: grid; grid-template-columns: repeat(5, auto); gap: 9px 10px; align-items: center; }
 .egrid .rc { width: 9px; height: 13px; border-radius: 1.5px; margin-right: 4px; }
 .egrid .rc.c1 { background: var(--c1); } .egrid .rc.c2 { background: var(--c2); } .egrid .rc.c3 { background: var(--c3); }
 .egrid .em { display: flex; align-items: center; justify-content: center; }
@@ -383,7 +383,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .tile .back { width: 27px; height: 38px; border-radius: 3px; }   /* face down: a referee's card waiting in its slot */
 .tile .back.rcard { box-shadow: 0 0 0 1px rgba(0,0,0,.22), 0 2px 0 rgba(0,0,0,.12); }
 .tile .back.rcard.c1 { box-shadow: 0 0 0 1px #B9B2A3, 0 2px 0 rgba(0,0,0,.08); }
-.tile.done, .tile.miss { background: rgba(246,240,226,.42); }
+.tile.done, .tile.miss { background: #DCD4C3; }   /* face up: pressed into the panel, a shade darker than a card still face down */
 .tile .hk { width: 100%; font-size: 11px; }
 .tile .res { flex: none; }
 .tile.miss .res.rcard { transform: rotate(-12deg); }   /* booked */
@@ -397,7 +397,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .egrid .em.no .rcard { box-shadow: 0 0 6px rgba(255,255,255,.25); }
 .sgrid .rcard { width: 8px; height: 11px; border-radius: 1.5px; }
 /* Share board, beside the countdown */
-.endrow .sboard { flex: 1; min-height: 52px; display: flex; align-items: center; justify-content: center; gap: 8px; font-size: round(nearest, 17px, var(--px)); }
+.endrow .sboard { flex: 1; white-space: nowrap; min-height: 52px; display: flex; align-items: center; justify-content: center; gap: 8px; font-size: round(nearest, 17px, var(--px)); }
 .endrow .sboard svg { flex: none; }
 .endrow .clock { flex: 1; }
 .bimg { position: fixed; inset: 0; z-index: 60; background: rgba(7,19,12,.92); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; padding: 18px; }
@@ -405,6 +405,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .bimg img { max-width: 100%; max-height: 72vh; border-radius: 12px; box-shadow: 0 6px 24px rgba(0,0,0,.6); }
 .bimg p { margin: 0; color: var(--text); font-size: round(nearest, 15px, var(--px)); text-align: center; }
 .bimg .row { display: flex; gap: 10px; } .bimg .key { min-height: 48px; padding: 0 20px; font-size: round(nearest, 17px, var(--px)); }
+@media (max-width: 360px) { .endrow .sboard svg { display: none; } }
 @media (max-height: 640px) { .tile { min-height: 72px; gap: 5px; } #p-board.tiles { row-gap: 8px; } .tile .back { width: 22px; height: 31px; } .endrow .sboard { min-height: 48px; } }
 </style>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
@@ -926,7 +927,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   function end() {
     settle = null; store.set('bsb-intro-off', true); report();
     var n = chips(), top = n === ALLN, r = rows(), big = innerHeight > 700 ? 3 : 2;
-    var cells = function (s) { return r.map(function (row, y) { return '<i class="rc c' + (y + 1) + '"></i>' + row.map(function (v) {
+    var cells = function (s) { return r.map(function (row, y) { return row.map(function (v) {
       var b = s === 3 ? 31 : 21;   // every cell the ball's size, so a ✕ sits centered where a ball would
       return '<span class="em ' + (v === 1 ? 'ok' : 'no') + '" style="width:' + b + 'px;height:' + b + 'px">' + (v === 1 ? ballMark(b) : rcard(y + 1, 'big')) + '</span>'; }).join(''); }).join(''); };
     $('v-end').className = 'view' + (top ? ' golazo' : '');
@@ -1033,7 +1034,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
       g.font = '22px "Triviela Pixel"'; g.fillStyle = '#1E2A3B';
       var words = t.hook.split(' '), lines = [], cur = '';
       words.forEach(function (w) { var tr = cur ? cur + ' ' + w : w; if (g.measureText(tr).width > CW - 20 && cur) { lines.push(cur); cur = w; } else cur = tr; }); lines.push(cur);
-      lines.slice(0, 3).forEach(function (l, k) { g.fillText(l, x + CW / 2, y + 48 + k * 26); });
+      lines = lines.slice(0, 3); lines.forEach(function (l, k) { g.fillText(l, x + CW / 2, y + 78 - (lines.length - 1) * 13 + k * 26); });
       if (S.res[i] === 1) { g.font = '64px "Apple Color Emoji", "Noto Color Emoji", sans-serif'; g.fillText('⚽', x + CW / 2, y + CH - 34); }
       else card(x + CW / 2 - 23, y + CH - 100, 46, 64, t.d, -0.21);
     });
