@@ -301,6 +301,16 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 @keyframes crton { 0% { transform: scale(.7, .006); filter: brightness(3); } 35% { transform: scale(1, .006); filter: brightness(3); } 100% { transform: scale(1, 1); filter: none; } }
 @media (max-height: 640px) { #p-gate { gap: 9px; } #p-gate .key { min-height: 50px; font-size: 22px; } .g-slots i { width: 44px; height: 54px; font-size: 28px; } #v-gate { gap: 12px; } }
 @media (prefers-reduced-motion: reduce) { .g-slots.nope, .screen.crton { animation: none; } .g-slots i { transition: none; } }
+/* attract mode (Morg, Oct 19, 2026: both his kids froze on the first screen, not knowing to pick a card): until the day's first
+   tap, a wave of green light runs across the tiles every few seconds, like an arcade cabinet's chase lights, and the screen blinks
+   PICK A CARD with an arrow down to them. Both stop for good at the first tap */
+.pitch .pick { position: absolute; left: 0; right: 0; bottom: 0; margin: 0 auto; width: max-content; display: flex; align-items: center; gap: 8px; padding: 6px 10px; border-radius: 4px;
+  background: rgba(7,19,12,.88); z-index: 2; font-family: var(--pixel); font-size: 11px; letter-spacing: 1px; color: var(--glow); text-shadow: 0 0 6px rgba(92,240,154,.8); animation: blink 1.05s steps(1) infinite; }
+.pitch .pick svg { transform: rotate(90deg); }
+#p-board.attract .tile:not(:disabled) { animation: chase 3.2s 1.2s infinite; animation-delay: calc(1.2s + var(--w) * 90ms); }
+@keyframes chase { 0%, 14%, 100% { box-shadow: 0 4px 0 var(--btn-edge), 0 6px 8px rgba(0,0,0,.25); } 6% { box-shadow: 0 0 0 3px var(--glow), 0 0 16px rgba(92,240,154,.85), 0 4px 0 var(--btn-edge); } }
+@media (max-height: 640px) { .pitch .pick { font-size: 9px; padding: 5px 8px; } }
+@media (prefers-reduced-motion: reduce) { .pitch .pick, #p-board.attract .tile:not(:disabled) { animation: none; } }
 .ask-pop.sheet { align-items: flex-end; padding: 0 max(14px, env(safe-area-inset-right, 0px)) max(16px, env(safe-area-inset-bottom, 0px)) max(14px, env(safe-area-inset-left, 0px)); }
 .sheet .ask-box { max-width: 392px; border-radius: 18px; padding: 14px 12px 15px; background: linear-gradient(180deg, #1A1D1B 0%, #0D0F0E 100%); box-shadow: inset 0 2px 0 rgba(255,255,255,.08), inset 0 0 0 2px #222, 0 0 0 3px var(--body-dark), 0 -8px 30px rgba(0,0,0,.5); }
 .sheet .menu-box { gap: 10px; }
@@ -678,8 +688,11 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
       ' aria-label="' + esc(T.hook) + ', ' + COLOR[T.d - 1] + (S.res[i] ? (S.res[i] === 1 ? ', right' : ', missed') : '') + '">' + (S.res[i] ? (S.res[i] === 1 ? ballMark(22, 'res') : svg('no', 2, 'res')) : '<span class="hk">' + num(keep(esc(T.hook))) + '</span>') + '</button>';
   }
   function board(fresh) {   // fresh: the panel just lit, so it bumps
-    $('v-board').innerHTML = '<div class="pitch">' + ballHTML(chips(), fresh) + '</div>';
+    var idle = !S.path.length && !over();   // attract mode until the day's first tap
+    $('v-board').innerHTML = '<div class="pitch">' + ballHTML(chips(), fresh) + (idle ? '<p class="pick" id="pick">PICK A CARD' + svg('next', 2) + '</p>' : '') + '</div>';
     $('p-board').innerHTML = S.tiles.map(function (T, i) { return tileHTML(T, i); }).join('');
+    $('p-board').classList.toggle('attract', idle);
+    if (idle) [].forEach.call($('p-board').children, function (b, i) { b.style.setProperty('--w', (i % PER) + Math.floor(i / PER)); });   // the wave runs corner to corner
     document.querySelectorAll('[data-i]').forEach(function (b) { b.addEventListener('click', function (e) { e.stopPropagation(); open(+b.dataset.i); }); });
     requestAnimationFrame(fitAll);
   }
