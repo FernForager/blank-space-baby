@@ -166,11 +166,12 @@ Morg needs to build and tune, not approve cards one by one. So:
 - **Content pace:** the vetting team sets it now, not Morg’s review (Oct 16, 2026). He flags and locks cards as he plays the beta. The old review page (https://claude.ai/artifact/M7WgEfdhNp6sMGGCNLrW7V) only points to the hub.
 - **triviela.net:** done Oct 17, 2026 (Cloudflare nameservers, DNSSEC off, the Squarespace parking records deleted, Pages custom domains for triviela.net and www). Moving the registration itself to Cloudflare waits for the 60-day rule (Morg’s parked to-do).
 
-## Where things are (Oct 17, 2026, evening: Morg is taking a break)
-- `main` (live at https://triviela.net and https://fernforager.github.io/blank-space-baby/): the daily game with the 7-board demo and the polish pass, Morg’s OK. His friend Tom has the link, sent without saying it’s Morg’s game. No Flag or Lock keys there.
-- `daily` branch (the beta, https://daily.blank-space-baby.pages.dev): level with `main` except for CLAUDE.md notes. New work lands here first and goes to `main` only with Morg’s OK. All 1,487 approved cards play (422 white, 766 yellow, 299 red, with 57 out).
-- **The name** is on hold: `research/naming-2026-10-17.md` has the search so far, the name board and what Morg turned down.
-- **Still running while he’s away:** the twice-daily beta flag sync (no flags yet). Nothing else needs him. When he’s back, the next steps are his: the G14 playtest, a name if one comes to him, and more red and white cards after the playtest.
+## Where things are (Oct 19, 2026)
+- `main` (live at https://triviela.net and https://fernforager.github.io/blank-space-baby/) and `daily` (the beta, https://daily.blank-space-baby.pages.dev) are level: the shootout with layout A, the 7-board demo and the Members only password (golazo), Morg’s OK. Morg likes testing it live. His friend Tom has the link and will need the word. No Flag or Lock keys on the real site.
+- New work still lands on `daily` first and goes to `main` only with Morg’s OK. 1,479 cards play (422 white, 766 yellow, 291 red). `python3 build/build.py` prints the current numbers.
+- **Next:** a 3×4 number-pad lock with the code 104 (a wink to the 104 Boyz) replaces the golazo pop-up, same pad and code as OP Hiker’s, in the cabinet look. OP Scout is designing OP Hiker’s first and will message this chat with the repo path, key sizes, wrong-code behavior, whether the phone remembers and the tap guards when it ships. Then build ours on `daily` and show Morg.
+- **The name** stays Triviela (said trih-vee-EL-uh). `research/naming-2026-10-17.md` has the old search.
+- **Still running:** the twice-daily beta flag sync (no flags yet). After that the next steps are Morg’s: the G14 playtest, then more red and white cards.
 
 ## The old plan (Oct 15, 2026, superseded by the daily game above)
 Ten categories, named on screen. The test for each one: who has the edge? Kids and parents play the same game, and each side owns some categories.
