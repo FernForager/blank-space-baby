@@ -130,6 +130,22 @@ It replaces the arcade game: no category keys, no boss. The cabinet, palette, fo
 - **How to play** (Oct 18, 2026, Morg’s ask, wording a placeholder until he signs off): one screen with the question “How well do you know the beautiful game?” in the body font, four short balanced lines, one idea each (Oct 18 second pass): “18 cards a day. Pick any one.”, the three colors as easy · harder · hardest, “6 right in a row is a goal.”, “One miss ends your day.” and a green Kick off key. It shows on every visit until the player ticks “Don’t show this again” (`bsb-intro-off`), and the menu always brings it back. The test tools set `bsb-intro-off` so it stays out of their way.
 - **The goal moment** (Morg, Oct 18, 2026): when a ball fills, it bobs, then a still dot-matrix scene flickers on, like the LED boards of old arcade soccer: the goal and its net, the striker celebrating with arms up, the shot’s dotted flight, and one ball in the net per goal (a Brace shows two, a Hat Trick three). “Goal!”, “Brace!!” or “Hat Trick!!!” pops up under it, and it all clears after about 2.5 seconds. The scenes are drawn as text in `tools/scene.py` (# lit, + dim, o white, * the shot) and pasted into `SCENES` in the template. Tried first the same day: a Tron-style animated line goal with a ball flying in (Morg preferred a still pixel scene).
 
+## The shootout redesign (Morg, Oct 19, 2026: decided, not built yet)
+It replaces “one miss ends the day” and the goals. Mockups go to the hub for Morg’s OK before building.
+- **15 cards a day, 5 of each color, and you play all of them** (a miss no longer ends the day). Like a penalty shootout: five takers, three rounds. No skipping: everyone plays the same 15, so every grid compares like for like (one skip per color stays in the back pocket if the board feels flat in the playtest).
+- **The share is a shootout grid:** ⚽ right, ❌ wrong, a row of five per color, white on top, then yellow, then red, so the rows carry the difficulty and no colored squares are needed. The fourth line is the score, `11/15`, or `GOLAZO!` on a perfect day (Morg’s name and caps):
+  ```
+  Triviela #42
+  ⚽⚽⚽⚽⚽
+  ⚽⚽❌⚽⚽
+  ❌⚽❌❌⚽
+  11/15
+  triviela.net
+  ```
+- **Nil, Goal!, Brace!! and Hat Trick!!! are dropped:** the grid does the work.
+- **The ball (Morg’s lamp idea):** the ball drawing’s 15 panels around the center, in three rings of five (the hexagons around the center, the outer pentagons, the half-hexagons at the edge), light one per right answer in a fixed order from the middle out, so the first five always complete the inner ring. On 15/15 the center pentagon lights last and the whole ball glows: Golazo. The ball shows the total on the board screen, and the end screen and share show the grid.
+- **Still to draw:** the board (three columns of five tiles), the play screen, the end screen, How to play, and whether the dot-matrix goal scene plays for a perfect row or only for Golazo.
+
 ## The beta and the vetting team (Morg, Oct 16, 2026)
 Morg needs to build and tune, not approve cards one by one. So:
 - **The beta** is the `daily` preview, https://daily.blank-space-baby.pages.dev. Nothing there is public.
