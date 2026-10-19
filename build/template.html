@@ -311,6 +311,11 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 @keyframes chase { 0%, 14%, 100% { box-shadow: 0 4px 0 var(--btn-edge), 0 6px 8px rgba(0,0,0,.25); } 6% { box-shadow: 0 0 0 3px var(--glow), 0 0 16px rgba(92,240,154,.85), 0 4px 0 var(--btn-edge); } }
 @media (max-height: 640px) { .pitch .pick { font-size: 9px; padding: 5px 8px; } }
 @media (prefers-reduced-motion: reduce) { .pitch .pick, #p-board.attract .tile:not(:disabled) { animation: none; } }
+/* the cabinet's printed slogan (Morg, Oct 19, 2026): the question from How to play, in ink on the cabinet body between the screen
+   and the cards, on the board only, where the player is choosing */
+.tagline { display: none; margin: -3px 0 -2px; text-align: center; font-size: 15px; font-weight: 600; line-height: 1.2; color: var(--btn-ink); letter-spacing: .2px; }
+.cab[data-v="board"] .tagline { display: block; }
+@media (max-height: 640px) { .tagline { font-size: 13px; margin: -4px 0 -3px; } }
 .ask-pop.sheet { align-items: flex-end; padding: 0 max(14px, env(safe-area-inset-right, 0px)) max(16px, env(safe-area-inset-bottom, 0px)) max(14px, env(safe-area-inset-left, 0px)); }
 .sheet .ask-box { max-width: 392px; border-radius: 18px; padding: 14px 12px 15px; background: linear-gradient(180deg, #1A1D1B 0%, #0D0F0E 100%); box-shadow: inset 0 2px 0 rgba(255,255,255,.08), inset 0 0 0 2px #222, 0 0 0 3px var(--body-dark), 0 -8px 30px rgba(0,0,0,.5); }
 .sheet .menu-box { gap: 10px; }
@@ -355,6 +360,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
       <div class="beta" id="beta" hidden><span class="bmsg" id="b-msg"></span></div>
     </div>
   </div>
+  <p class="tagline" id="tagline">How well do you know the beautiful game?</p>
   <div class="panel">
     <div class="pv tiles" id="p-board"></div>
     <div class="pv" id="p-gate"></div>
