@@ -10,6 +10,7 @@ records the smallest hook font. Prints how often the right answer lands in each 
 """
 import asyncio, collections, os, sys
 from playwright.async_api import async_playwright
+from docsroute import route   # the page plus docs/fonts
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DAYS = int(sys.argv[1]) if len(sys.argv) > 1 else 30
 W = int(sys.argv[2]) if len(sys.argv) > 2 else 402
@@ -40,7 +41,7 @@ async def main():
         ctx = await b.new_context(viewport={'width': W, 'height': H}, reduced_motion='reduce')
         pg = await ctx.new_page(); errs = []; pg.on('pageerror', lambda e: errs.append(str(e)))
         await pg.add_init_script("try { localStorage.setItem('bsb-intro-off', 'true') } catch (e) {}")   # skip the how-to-play screen
-        await pg.route('http://bsb.test/**', lambda r: r.fulfill(body=HTML, content_type='text/html'))
+        await pg.route('http://bsb.test/**', route(HTML))
         slots, problems, fonts, cards, gaps = collections.Counter(), [], [], 0, []
         for day in range(1, DAYS + 1):
             await pg.goto(f'http://bsb.test/?day={day}&reset'); await pg.wait_for_timeout(250)

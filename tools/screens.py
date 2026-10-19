@@ -6,11 +6,11 @@ For each size: board (a fresh day), q (a card open), win (a right answer),
 board3 (three panels lit), miss (a wrong answer), end (14/15) and hat (a perfect day, GOLAZO!).
 Prints a line for any screen that scrolls or throws a JS error, the smallest hook font on each board,
 and any hook that still overflows its tile.
-Uses Playwright's Chromium. If Google Fonts can't load in the sandbox, install Press Start 2P and
-Pixelify Sans into ~/.fonts (from raw.githubusercontent.com/google/fonts) so the pixel fonts render.
+Uses Playwright's Chromium. The fonts come from docs/fonts, as on the site.
 """
 import asyncio, json, os, sys
 from playwright.async_api import async_playwright
+from docsroute import route   # the page plus docs/fonts
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 HTML = open(sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, 'docs', 'index.html')).read()
 OUT = os.path.join(ROOT, 'out'); os.makedirs(OUT, exist_ok=True)
@@ -30,7 +30,7 @@ async def main():
             ctx = await b.new_context(viewport={'width': W, 'height': H}, device_scale_factor=3)
             pg = await ctx.new_page(); errs = []; pg.on('pageerror', lambda e: errs.append(str(e)))
             await pg.add_init_script("try { localStorage.setItem('bsb-intro-off', 'true') } catch (e) {}")   # skip the how-to-play screen
-            await pg.route('http://bsb.test/**', lambda r: r.fulfill(body=HTML, content_type='text/html'))
+            await pg.route('http://bsb.test/**', route(HTML))
             url = 'http://bsb.test/?day=1'
             async def shot(n):
                 sh = await pg.evaluate("[document.documentElement.scrollHeight, innerHeight]")

@@ -1,8 +1,12 @@
 <title>Triviela</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Pixelify+Sans:wght@500;600;700&family=Yellowtail&display=swap">
 <style>
+/* the two pixel fonts, served from the site itself (stage 2 of sharp text, Oct 19, 2026). Triviela Pixel is Pixelify Sans redrawn on its own
+   11-pixel grid, and Triviela Arcade is Press Start 2P cut down to the Latin letters: both under the SIL Open Font License, renamed as it
+   asks (docs/fonts/FONTLOG.txt, built by build/font/pixelfont.py). One weight serves every weight the page asks for. block: the page
+   waits for them rather than flashing a fallback, and they are preloaded in head.html and kept offline by sw.js */
+@font-face { font-family: "Triviela Pixel"; src: url(fonts/triviela-pixel-v1.woff2) format("woff2"); font-weight: 100 900; font-display: block; }
+@font-face { font-family: "Triviela Arcade"; src: url(fonts/triviela-arcade-v1.woff2) format("woff2"); font-weight: 100 900; font-display: block; }
 /* The phone is the cabinet: marquee sign, CRT screen in a black bezel, push-buttons on a black control panel.
    The daily, as a shootout (Morg, Oct 19, 2026): everyone gets the same 15 cards a day, 5 white (easy), 5 yellow card
    (medium) and 5 red card (hard), and plays all 15. Tap any tile. A right answer lights the next panel of the ball,
@@ -14,15 +18,29 @@
   --btn: #F6F0E2; --btn-edge: #CBBFA4; --btn-ink: #1E2A3B;
   --ok: #45BE76; --ok-edge: #00843D; --no: #FF5A5F; --no-edge: #B02A35;
   --c1: #FFFFFF; --c1-edge: #C9C2B4; --c2: #F7C948; --c2-edge: #B48A1C; --c3: #D52B1E; --c3-edge: #8C170F;   /* card colors: white, yellow card, red card */
-  --pixel: "Press Start 2P", ui-monospace, monospace;
-  --body-font: "Pixelify Sans", ui-rounded, "SF Pro Rounded", system-ui, sans-serif;
+  --pixel: "Triviela Arcade", ui-monospace, monospace;
+  --body-font: "Triviela Pixel", ui-rounded, "SF Pro Rounded", system-ui, sans-serif;
   color-scheme: dark;
 }
 :root { --ps: 4px; }   /* Press Start 2P's crisp step: 8 font pixels to the em, so a size is sharp only at a whole number of device pixels per font pixel (the text audit, Oct 19, 2026). 4 px is crisp at 2x and close enough on the rare 1x screen, where 8 px steps would make digits jump in size */
 @media (min-resolution: 3dppx) { :root { --ps: calc(8px / 3); } }
+/* Triviela Pixel's crisp step: 11 font pixels to the em, so a size is sharp only at a whole number of device pixels per font pixel: 11/dpr px.
+   5.5 px at 2x (11, 16.5, 22, 27.5) and 11/3 px at 3x (11, 14.67, 18.33, 22, 25.67). The rare 1x screen takes 2x's sizes, as --ps does, so
+   no layout changes between them. Every body-font size is round(nearest, X, var(--px)), and line heights are whole font pixels (n/11).
+   --dp is one device pixel, for letter-spacing */
+:root { --px: 5.5px; --dp: .5px; }
+@media (min-resolution: 3dppx) { :root { --px: calc(11px / 3); --dp: calc(1px / 3); } }
+/* A little extra weight for Triviela Pixel (Morg, Oct 20, 2026: he missed a bit of bold). Each stroke is drawn again one and two
+   device pixels to its right, so the letters keep their shapes and widths, nothing reflows, and every edge stays on a device pixel.
+   Two device pixels on a 3x screen, one on 2x and 1x, about half a font pixel either way. Every text-shadow is --b (the extra weight)
+   then --g (a rule's own glow): rules set --g, never text-shadow, and the arcade face sets --b to nothing. */
+:root { --g0: 0 0 0 transparent; --bold: var(--dp) 0 0 currentColor; --b: var(--bold); --g: var(--g0); }
+@media (max-resolution: 1.5dppx) { :root { --bold: 1px 0 0 currentColor; } }
+@media (min-resolution: 3dppx) { :root { --bold: calc(1px / 3) 0 0 currentColor, calc(2px / 3) 0 0 currentColor; } }
+*, *::before, *::after { text-shadow: var(--b), var(--g); }
 html, body { height: 100%; overflow: hidden; overscroll-behavior: none; touch-action: manipulation; }   /* the cabinet stays put: no rubber-band bounce on iPhone (Morg, Oct 17, 2026) */
 body { position: fixed; inset: 0; margin: 0; }
-body { background: var(--body); color: var(--text); font-family: var(--body-font); font-weight: 600; font-synthesis: none; -webkit-font-smoothing: antialiased; font-variant-ligatures: none; -webkit-user-select: none; user-select: none; }
+body { background: var(--body); color: var(--text); font-family: var(--body-font); font-size: round(nearest, 16px, var(--px)); font-weight: 400; font-synthesis: none; -webkit-font-smoothing: antialiased; font-variant-ligatures: none; -webkit-user-select: none; user-select: none; }
 button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none; }
 .cab { max-width: 420px; height: 100%; margin: 0 auto; box-sizing: border-box; display: flex; flex-direction: column; gap: 12px;
   padding-top: max(12px, env(safe-area-inset-top, 0px)); padding-bottom: max(16px, env(safe-area-inset-bottom, 0px)); padding-left: max(14px, env(safe-area-inset-left, 0px)); padding-right: max(14px, env(safe-area-inset-right, 0px));
@@ -31,43 +49,39 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 /* marquee: the lit sign (flickers on when the game opens) */
 .marquee { flex: none; position: relative; border-radius: 14px; padding: 14px 12px 15px; text-align: center; overflow: hidden;
   background: radial-gradient(120% 140% at 50% 0%, #1E3A2A 0%, #0B1710 70%); box-shadow: inset 0 0 0 3px #000, inset 0 0 18px rgba(92,240,154,.18), 0 3px 0 var(--body-dark); }
-.marquee h1 { margin: 0; font-family: var(--pixel); font-weight: 400; font-size: 22px; line-height: 1; letter-spacing: 3px; color: #fff; white-space: nowrap;
-  text-shadow: 0 0 4px rgba(255,255,255,.7), 0 0 10px var(--glow), 0 0 20px rgba(92,240,154,.55); }
+.marquee h1 { margin: 0; font-family: var(--pixel); --b: var(--g0); font-weight: 400; font-size: 22px; line-height: 1; letter-spacing: 3px; color: #fff; white-space: nowrap;
+  --g: 0 0 4px rgba(255,255,255,.7), 0 0 10px var(--glow), 0 0 20px rgba(92,240,154,.55); }
 .cab.poweron .marquee h1 { animation: power .6s steps(6); }
 /* the sign as a dot-matrix board (Morg, Oct 18, 2026): every dot lit at random, the brighter ones spell TRIVIELA */
 .marquee.dm { height: 84px; padding: 0; box-sizing: border-box; }
 /* the sign's subheading (Morg, Oct 19, 2026: what the game is, under the name, apart from the question that invites you to play):
    crisp arcade letters under the dots, solid and unglowing, at a size that lands on whole device pixels (10.67 px is 4 per font pixel at 3x) */
-.marquee.dm .subhead { position: absolute; left: 0; right: 34px; bottom: 9px; margin: 0; font: 400 round(nearest, 10.6667px, var(--ps))/1 var(--pixel); letter-spacing: 1.3333px; text-transform: uppercase; color: #C9FFDD; text-shadow: none; pointer-events: none; white-space: nowrap; }
+.marquee.dm .subhead { position: absolute; left: 0; right: 34px; bottom: 9px; margin: 0; font: 400 round(nearest, 10.6667px, var(--ps))/1 var(--pixel); --b: var(--g0); letter-spacing: 1.3333px; text-transform: uppercase; color: #C9FFDD; --g: var(--g0); pointer-events: none; white-space: nowrap; }
 @media (max-width: 372px) and (max-resolution: 2.9dppx), (max-width: 334px) { .marquee.dm .subhead { font-size: 8px; letter-spacing: 1px; } }   /* narrow phones: the next crisp step down, so it stays on one line */   /* no glow: a glow blurs pixel letters (Morg: clean and quiet) */
 .marquee.dm canvas { position: absolute; inset: 7px 8px 25px; width: calc(100% - 16px); height: calc(100% - 32px); }
 .cab.poweron .marquee.dm canvas { animation: power .6s steps(6); }
 .sr { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .marquee.dm .menu-b { right: 4px; z-index: 1; background: radial-gradient(closest-side, rgba(7,19,12,.95), rgba(7,19,12,.8) 70%, transparent); border-radius: 50%; }
-.marquee h1.neon { font-family: 'Yellowtail', cursive; font-size: 40px; line-height: 1; letter-spacing: 0; padding: 0 30px 4px; color: #FFE6F7;
-  text-shadow: 0 0 2px #fff, 0 0 7px #FF5FD2, 0 0 16px #FF2FC0, 0 0 30px rgba(255,47,192,.65), 0 0 48px rgba(255,47,192,.35); }   /* the name in pink neon (Morg, Oct 18, 2026) */
 .menu-b { position: absolute; right: 8px; top: 50%; transform: translateY(-50%); width: 36px; height: 36px; padding: 0; border: 0; background: none; color: var(--dim); opacity: .6; cursor: pointer; display: flex; align-items: center; justify-content: center; }
 .menu-b:focus-visible { outline: 3px solid var(--glow); outline-offset: 2px; }
 .menu-box { display: flex; flex-direction: column; gap: 12px; }
-.menu-box .key { min-height: 50px; font-size: 17px; }
+.menu-box .key { min-height: 50px; font-size: round(nearest, 17px, var(--px)); }
 .menu-box .key[hidden] { display: none; }
 .intro-box { max-width: 360px; text-align: left; padding: 20px 18px; }
-.intro-box .in-q { margin: 0 0 14px; font-size: 21px; line-height: 1.2; text-align: center; color: var(--text); text-shadow: none; }
-.in-list { margin: 0 0 16px; padding: 0; list-style: none; display: grid; gap: 12px; font-size: 17px; line-height: 1.3; color: var(--text); font-weight: 500; text-align: center; white-space: nowrap; }
-.in-list b { font-weight: 700; color: #fff; }
-.in-colors { display: flex; gap: 14px; justify-content: center; color: var(--dim); font-size: 15px; }
+.intro-box .in-q { margin: 0 0 14px; font-size: round(nearest, 21px, var(--px)); line-height: calc(13 / 11); text-align: center; color: var(--text); --g: var(--g0); }
+.in-list { margin: 0 0 16px; padding: 0; list-style: none; display: grid; gap: 12px; font-size: round(nearest, 17px, var(--px)); line-height: calc(14 / 11); color: var(--text); text-align: center; white-space: nowrap; }
+.in-list b { color: #fff; }
+.in-colors { display: flex; gap: 14px; justify-content: center; color: var(--dim); font-size: round(nearest, 15px, var(--px)); }
 .in-colors span { display: flex; align-items: center; gap: 6px; }
 .tc { display: inline-block; width: 11px; height: 15px; border-radius: 2px; }
 .tc.c1 { background: var(--c1); } .tc.c2 { background: var(--c2); } .tc.c3 { background: var(--c3); }
-.intro-box .in-go { width: 100%; min-height: 52px; font-size: 18px; background: var(--ok); box-shadow: 0 5px 0 var(--ok-edge), 0 7px 10px rgba(0,0,0,.25); }
-.marquee h1.cta { font-family: 'Yellowtail', cursive; font-size: 27px; line-height: 1.02; letter-spacing: 0; white-space: normal; padding: 0 26px 2px;
-  text-shadow: 0 0 3px rgba(255,255,255,.9), 0 0 9px var(--glow), 0 0 18px rgba(92,240,154,.6), 0 0 30px rgba(92,240,154,.35); }
+.intro-box .in-go { width: 100%; min-height: 52px; font-size: round(nearest, 18px, var(--px)); background: var(--ok); box-shadow: 0 5px 0 var(--ok-edge), 0 7px 10px rgba(0,0,0,.25); }
 .ask-pop { position: fixed; inset: 0; z-index: 20; display: flex; align-items: center; justify-content: center; padding: 24px; background: rgba(5,10,7,.72); }
 .ask-pop[hidden] { display: none; }
 .ask-box { width: 100%; max-width: 320px; box-sizing: border-box; padding: 20px 16px 18px; border-radius: 18px; background: var(--bezel); box-shadow: inset 0 0 0 3px #000, 0 0 0 3px var(--body-dark), 0 10px 30px rgba(0,0,0,.5); text-align: center; }
-.ask-box p { margin: 0 0 16px; font-size: 20px; color: var(--text); text-shadow: 0 0 8px rgba(92,240,154,.5); }
+.ask-box p { margin: 0 0 16px; font-size: round(nearest, 20px, var(--px)); color: var(--text); --g: 0 0 8px rgba(92,240,154,.5); }
 .ask-keys { display: flex; gap: 10px; }
-.ask-keys .key { flex: 1; min-height: 50px; font-size: 16px; }
+.ask-keys .key { flex: 1; min-height: 50px; font-size: round(nearest, 16px, var(--px)); }
 .ask-keys .key.yes { background: var(--ok); box-shadow: 0 5px 0 var(--ok-edge), 0 7px 10px rgba(0,0,0,.25); }
 .restart { position: absolute; right: 6px; top: 50%; transform: translateY(-50%); width: 34px; height: 34px; padding: 0; border: 0; background: none; color: var(--dim); opacity: .5; cursor: pointer; display: flex; align-items: center; justify-content: center; }
 .restart:focus-visible { outline: 3px solid var(--glow); outline-offset: 2px; }
@@ -85,7 +99,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .cab[data-v="board"] #v-board, .cab[data-v="play"] #v-play, .cab[data-v="end"] #v-end { display: flex; }
 .px { shape-rendering: crispEdges; flex: none; display: block; fill: currentColor; }
 .nb { white-space: nowrap; }
-.num { font-family: var(--pixel); font-weight: 400; font-size: round(nearest, .8em, var(--ps)); letter-spacing: -.02em; }
+.num { font-family: var(--pixel); --b: var(--g0); font-weight: 400; font-size: round(nearest, .8em, var(--ps)); letter-spacing: -.02em; }
 .score .num { font-size: 1em; letter-spacing: 0; }   /* the score is already in the arcade font: its digits stay as tall as the slash */
 
 /* the ball: 15 lamp panels in three rings of five (the hexagons round the center, the outer pentagons, the half-hexagons
@@ -109,8 +123,8 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .bi.mark { flex: none; display: block; }
 .goalfx { position: absolute; left: 0; top: 0; width: 100%; height: 82%; z-index: 2; pointer-events: none; filter: drop-shadow(0 0 2px rgba(92,240,154,.55)); animation: power .5s steps(5); }
 .pitch.fxon .ball { opacity: 0; }
-.pitch .shout { position: absolute; inset: 0; margin: auto; height: max-content; z-index: 3; text-align: center; font-family: var(--pixel); font-size: round(nearest, clamp(22px, 9cqw, 34px), var(--ps)); line-height: 1.2; color: #fff; pointer-events: none;
-  text-shadow: 0 0 6px #fff, 0 0 14px var(--glow), 0 0 28px rgba(92,240,154,.7); animation: shout 2.2s ease-out forwards; }
+.pitch .shout { position: absolute; inset: 0; margin: auto; height: max-content; z-index: 3; text-align: center; font-family: var(--pixel); --b: var(--g0); font-size: round(nearest, clamp(22px, 9cqw, 34px), var(--ps)); line-height: 1.2; color: #fff; pointer-events: none;
+  --g: 0 0 6px #fff, 0 0 14px var(--glow), 0 0 28px rgba(92,240,154,.7); animation: shout 2.2s ease-out forwards; }
 .pitch.fxon .shout { inset: auto 0 2% 0; margin: 0 auto; opacity: 0; animation: shout 1.6s 1s ease-out forwards; }
 @keyframes shout { 0% { transform: scale(.4); opacity: 0; } 15% { transform: scale(1.15); opacity: 1; } 25% { transform: scale(1); } 75% { opacity: 1; } 100% { opacity: 0; } }
 .bv { display: block; overflow: visible; }
@@ -140,14 +154,14 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .sb i.bump { animation: bump .35s steps(3); }
 .sb svg { display: block; }
 .face { flex: 1; min-height: 0; display: flex; flex-direction: column; justify-content: center; gap: 8px; }
-.sentence { margin: 0; font-size: 26px; line-height: 1.22; text-wrap: balance; text-shadow: 0 0 6px rgba(234,251,240,.25); }
-.sentence.long { font-size: 23px; } .sentence.longer { font-size: 21px; }
+.sentence { margin: 0; font-size: round(nearest, 26px, var(--px)); line-height: calc(13 / 11); text-wrap: balance; --g: 0 0 6px rgba(234,251,240,.25); }
+.sentence.long { font-size: round(nearest, 23px, var(--px)); } .sentence.longer { font-size: round(nearest, 21px, var(--px)); }
 .blank { display: inline-block; width: 2.9em; height: 4px; margin: 0 0.05em; vertical-align: -0.16em;
   background: repeating-linear-gradient(90deg, var(--glow) 0 0.42em, transparent 0.42em 0.62em); box-shadow: 0 0 6px rgba(92,240,154,.6); animation: blink 1.05s steps(1) infinite; }
 @keyframes blink { 50% { opacity: .15; } }
 /* the answer, filled into the blank: glowing on a win, plain with a dashed underline on a miss */
-.fill { color: var(--glow); text-shadow: 0 0 8px rgba(92,240,154,.7); }
-.missed .fill { color: #fff; text-shadow: 0 0 6px rgba(255,255,255,.35); padding-bottom: 3px;
+.fill { color: var(--glow); --g: 0 0 8px rgba(92,240,154,.7); }
+.missed .fill { color: #fff; --g: 0 0 6px rgba(255,255,255,.35); padding-bottom: 3px;
   background: repeating-linear-gradient(90deg, var(--glow) 0 0.42em, transparent 0.42em 0.62em) left bottom / 100% 3px no-repeat; }
 
 /* the end of the day: the shootout grid and the score */
@@ -159,18 +173,18 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .egrid .em.ok { filter: drop-shadow(0 0 5px rgba(92,240,154,.75)); }
 .egrid .em.no { color: var(--no); }
 .golazo .egrid .em.ok { filter: drop-shadow(0 0 4px #fff) drop-shadow(0 0 10px rgba(92,240,154,.9)); }
-.score { margin: 0; font-family: var(--pixel); font-weight: 400; font-size: round(nearest, 26px, var(--ps)); line-height: 1; color: #fff; text-align: center; text-shadow: 0 0 4px rgba(255,255,255,.6), 0 0 12px rgba(92,240,154,.6); }
-.golazo .score { font-size: round(nearest, 24px, var(--ps)); text-shadow: 0 0 6px #fff, 0 0 14px var(--glow), 0 0 28px rgba(92,240,154,.7); }
+.score { margin: 0; font-family: var(--pixel); --b: var(--g0); font-weight: 400; font-size: round(nearest, 26px, var(--ps)); line-height: 1; color: #fff; text-align: center; --g: 0 0 4px rgba(255,255,255,.6), 0 0 12px rgba(92,240,154,.6); }
+.golazo .score { font-size: round(nearest, 24px, var(--ps)); --g: 0 0 6px #fff, 0 0 14px var(--glow), 0 0 28px rgba(92,240,154,.7); }
 .result { display: flex; flex-direction: column; align-items: center; gap: 12px; }
 .word .run { display: block; margin-top: 4px; font-size: round(nearest, .8em, var(--ps)); color: var(--text); }
-.word { margin: 0; font-family: var(--pixel); font-weight: 400; font-size: 20px; line-height: 1.2; color: #fff; text-align: center;
-  text-shadow: 0 0 4px rgba(255,255,255,.6), 0 0 12px rgba(92,240,154,.6); }
-.means { margin: 0; font-size: 18px; line-height: 1.2; color: #B8E6CA; font-weight: 500; }   /* the means line is the payoff, so it stays bright */
+.word { margin: 0; font-family: var(--pixel); --b: var(--g0); font-weight: 400; font-size: 20px; line-height: 1.2; color: #fff; text-align: center;
+  --g: 0 0 4px rgba(255,255,255,.6), 0 0 12px rgba(92,240,154,.6); }
+.means { margin: 0; font-size: round(nearest, 18px, var(--px)); line-height: calc(13 / 11); color: #B8E6CA; }   /* the means line is the payoff, so it stays bright */
 #v-end .ball { width: min(62%, 60cqh); margin: 0 auto; }
 #v-end { container-type: size; }
 
 /* the blinking go arrow, bottom right of the screen */
-.go { position: absolute; right: 10px; bottom: 10px; height: 44px; padding: 0 6px 0 10px; gap: 8px; font-family: var(--pixel); font-size: 12px; letter-spacing: 1px; text-transform: uppercase; border: 0; background: none; color: var(--glow); cursor: pointer; z-index: 3;
+.go { position: absolute; right: 10px; bottom: 10px; height: 44px; padding: 0 6px 0 10px; gap: 8px; font-family: var(--pixel); --b: var(--g0); font-size: 12px; letter-spacing: 1px; text-transform: uppercase; border: 0; background: none; color: var(--glow); cursor: pointer; z-index: 3;
   display: flex; align-items: center; justify-content: center; filter: drop-shadow(0 0 6px rgba(92,240,154,.8)); animation: blink 1.05s steps(1) infinite; }
 .go.wait { display: none; }
 
@@ -182,7 +196,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .bk.on { opacity: 1; }
 .bk.flag.on { color: var(--gold); filter: drop-shadow(0 0 5px rgba(247,201,72,.8)); }
 .bk.lock.on { color: var(--text); filter: drop-shadow(0 0 5px rgba(92,240,154,.8)); }
-.bmsg { font-family: var(--pixel); font-size: round(nearest, 8px, var(--ps)); letter-spacing: 1px; color: var(--dim); margin-left: 6px; white-space: nowrap; text-transform: uppercase; }
+.bmsg { font-family: var(--pixel); --b: var(--g0); font-size: round(nearest, 8px, var(--ps)); letter-spacing: 1px; color: var(--dim); margin-left: 6px; white-space: nowrap; text-transform: uppercase; }
 
 /* control panel */
 .panel { flex: none; box-sizing: border-box; display: flex; margin-top: auto; border-radius: 18px; padding: 12px 12px 15px;
@@ -197,7 +211,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 
 /* the tiles: easy, medium and hard, one column each */
 #p-board.tiles { grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: repeat(5, auto); grid-auto-flow: column; gap: 9px 8px; padding-bottom: 4px; }
-.tile { position: relative; min-height: 60px; min-width: 0; padding: 4px 6px; font-size: 17px; line-height: 1.04; display: flex; align-items: center; justify-content: center; text-align: center; border-radius: 10px; }
+.tile { position: relative; min-height: 60px; min-width: 0; padding: 4px 6px; font-size: round(nearest, 17px, var(--px)); line-height: calc(12 / 11); display: flex; align-items: center; justify-content: center; text-align: center; border-radius: 10px; }
 /* every tile is a cream key like the answer buttons. A small referee's card in the corner marks medium (yellow) and hard (red),
    and easy tiles have none (Morg, Oct 16, 2026: the bold colors took over the cabinet) */
 .tile { background: var(--btn); color: var(--btn-ink); box-shadow: 0 4px 0 var(--btn-edge), 0 6px 8px rgba(0,0,0,.25); padding-left: 7px; padding-right: 7px; }   /* the shootout's taller tiles give the hook a little more width instead */
@@ -214,10 +228,10 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 
 /* answer buttons */
 .choices { flex-direction: column; gap: 10px; }
-.choice { flex: none; min-height: 62px; font-size: 21px; text-align: left; padding: 6px 16px 6px 18px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.choice { flex: none; min-height: 62px; font-size: round(nearest, 21px, var(--px)); text-align: left; padding: 6px 16px 6px 18px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
 .choice .txt { display: flex; flex-direction: column; gap: 1px; min-width: 0; }
-.choice .w { line-height: 1.1; }
-.choice .def { font-size: 15px; line-height: 1.15; font-weight: 500; text-wrap: balance; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; max-height: 0; opacity: 0; transition: max-height .2s, opacity .2s; }
+.choice .w { line-height: calc(12 / 11); }
+.choice .def { font-size: round(nearest, 15px, var(--px)); line-height: calc(12 / 11); text-wrap: balance; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; max-height: 0; opacity: 0; transition: max-height .2s, opacity .2s; }
 .choice.right .def, .choice.wrong .def { max-height: 36px; opacity: .9; }
 .choice .mark { width: 21px; flex: none; }
 .choice.right { background: var(--ok); color: #05230F; box-shadow: 0 5px 0 var(--ok-edge), 0 0 18px rgba(69,190,118,.75); }
@@ -227,9 +241,9 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 
 /* end of the day: one-tap share, and the countdown to tomorrow's board */
 #p-end { flex-direction: column; gap: 12px; }
-.share { min-height: 62px; padding: 8px 16px 8px 18px; display: flex; align-items: center; justify-content: space-between; gap: 12px; text-align: left; font-size: 17px; line-height: 1.25; }
+.share { min-height: 62px; padding: 8px 16px 8px 18px; display: flex; align-items: center; justify-content: space-between; gap: 12px; text-align: left; font-size: round(nearest, 17px, var(--px)); line-height: calc(14 / 11); }
 .share .mark { flex: none; }
-.share .txt { flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 3px; line-height: 1.12; }
+.share .txt { flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 3px; line-height: calc(12 / 11); }
 /* the share key shows the exact text it sends: the shootout grid in the game's pixel ball and ✕, one line per row */
 .sgrid { display: grid; grid-template-columns: repeat(5, 11px); grid-auto-rows: 11px; gap: 3px 3px; padding-block: 2px; align-items: center; justify-items: center; }
 .sgrid .no { color: #E0464B; }   /* a red dot, as the share text sends 🔴 for a miss */
@@ -238,22 +252,22 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .endrow { display: flex; align-items: center; justify-content: center; gap: 6px; }
 .endrow .bk { height: 26px; color: #7C8A80; }
 .endrow .bk.flag.on { color: #B48A1C; filter: none; } .endrow .bk.lock.on { color: #45BE76; filter: none; }
-.clock { font-family: var(--pixel); font-size: round(nearest, 15px, var(--ps)); letter-spacing: 1px; color: var(--glow); text-align: center; text-shadow: 0 0 6px rgba(92,240,154,.6); padding: 2px 0 1px; }
+.clock { font-family: var(--pixel); --b: var(--g0); font-size: round(nearest, 15px, var(--ps)); letter-spacing: 1px; color: var(--glow); text-align: center; --g: 0 0 6px rgba(92,240,154,.6); padding: 2px 0 1px; }
 /* the playtest demo (DEMO_DAYS in build.py): a finished board leads to the next with a blinking arrow, Start over goes back
    to #1, and #7 ends with a thank-you in the clock's place (Morg, Oct 17, 2026) */
 .endrow [hidden] { display: none; }
-.endrow .next { font: inherit; font-size: 17px; height: 40px; padding: 0 8px; border: 0; background: none; color: var(--glow); cursor: pointer;
-  display: flex; align-items: center; gap: 8px; text-shadow: 0 0 6px rgba(92,240,154,.6); }
+.endrow .next { font: inherit; font-size: round(nearest, 17px, var(--px)); height: 40px; padding: 0 8px; border: 0; background: none; color: var(--glow); cursor: pointer;
+  display: flex; align-items: center; gap: 8px; --g: 0 0 6px rgba(92,240,154,.6); }
 .endrow .next svg { filter: drop-shadow(0 0 4px rgba(92,240,154,.8)); animation: blink 1.05s steps(1) infinite; }
 .endrow .bk.again.on { color: var(--glow); opacity: 1; filter: drop-shadow(0 0 4px rgba(92,240,154,.8)); }
-.clock.thanks { font-family: var(--body-font); font-size: 17px; letter-spacing: 0; }   /* the CRT's sentence face: one line, or two beside the beta's keys on the smallest phones */
+.clock.thanks { font-family: var(--body-font); --b: var(--bold); font-size: round(nearest, 17px, var(--px)); letter-spacing: 0; }   /* the CRT's sentence face: one line, or two beside the beta's keys on the smallest phones */
 .key:focus-visible, .go:focus-visible, .bk:focus-visible { outline: 3px solid var(--glow); outline-offset: 3px; }
 
-@media (max-height: 700px) { .choice { min-height: 56px; } .tile { min-height: 54px; font-size: 16px; } }
+@media (max-height: 700px) { .choice { min-height: 56px; } .tile { min-height: 54px; font-size: round(nearest, 16px, var(--px)); } }
 @media (max-height: 640px) { .cab { gap: 9px; padding-top: max(9px, env(safe-area-inset-top, 0px)); padding-bottom: max(12px, env(safe-area-inset-bottom, 0px)); } .marquee { padding: 8px 10px 9px; } .marquee h1 { font-size: 19px; } .marquee.dm { height: 70px; } .marquee.dm .subhead { font-size: round(nearest, 8px, var(--ps)); letter-spacing: 1px; bottom: 7px; } .marquee.dm canvas { bottom: 20px; height: calc(100% - 27px); }
-  .choice { font-size: 19px; min-height: 50px; } .sentence { font-size: 22px; } .sentence.long { font-size: 20px; } .sentence.longer { font-size: 18px; }
-  .tile { min-height: 50px; font-size: 15px; padding-left: 5px; padding-right: 5px; } #p-board.tiles { gap: 7px 7px; } .panel { padding: 10px 10px 13px; }
-  .means { font-size: 16px; } .score { font-size: round(nearest, 22px, var(--ps)); } .golazo .score { font-size: round(nearest, 21px, var(--ps)); } .egrid { gap: 7px 8px; } }
+  .choice { font-size: round(nearest, 19px, var(--px)); min-height: 50px; } .sentence { font-size: round(nearest, 22px, var(--px)); } .sentence.long { font-size: round(nearest, 20px, var(--px)); } .sentence.longer { font-size: round(nearest, 18px, var(--px)); }
+  .tile { min-height: 50px; font-size: round(nearest, 15px, var(--px)); padding-left: 5px; padding-right: 5px; } #p-board.tiles { gap: 7px 7px; } .panel { padding: 10px 10px 13px; }
+  .means { font-size: round(nearest, 16px, var(--px)); } .score { font-size: round(nearest, 22px, var(--ps)); } .golazo .score { font-size: round(nearest, 21px, var(--ps)); } .egrid { gap: 7px 8px; } }
 @media (prefers-reduced-motion: reduce) { .key, .choice .def { transition: none; } .sb i.bump, .sb i.now, .choice.wrong, .flick, .blank, .go, .ball.goal, .bi .pt.new, .cab.poweron .marquee h1, .cab.poweron .marquee.dm canvas, .endrow .next svg, .pitch .shout { animation: none; } }
 
 /* layout A (Oct 19, 2026): wider column gaps, a bigger menu key, no key that moves */
@@ -272,34 +286,34 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .pv { flex: none; width: 100%; }
 .gorow { display: none; align-items: center; gap: 10px; margin-top: 10px; min-height: 52px; }
 .cab[data-v="play"] #g-play { display: flex; }
-.gorow .gokey { position: static; flex: 1; height: auto; padding: 0 12px; color: var(--btn-ink); filter: none; animation: none; min-height: 52px; font-family: var(--pixel); font-size: round(nearest, 13px, var(--ps)); letter-spacing: 1px; text-transform: uppercase; display: flex; align-items: center; justify-content: center; gap: 10px; }
+.gorow .gokey { position: static; flex: 1; height: auto; padding: 0 12px; color: var(--btn-ink); filter: none; animation: none; min-height: 52px; font-family: var(--pixel); --b: var(--g0); font-size: round(nearest, 13px, var(--ps)); letter-spacing: 1px; text-transform: uppercase; display: flex; align-items: center; justify-content: center; gap: 10px; }
 .gorow .gokey.wait { visibility: hidden; }
 .gorow .bk, .endrow .bk { width: 44px; height: 44px; color: #7C8A80; }
 .go:not(.gokey) { display: none; }
 /* the end: share, then the go row: Play #2 (demo), the countdown (daily), Play again from #1 (the demo's last board, nothing left to lose) */
 .endrow { min-height: 52px; gap: 10px; }
 .endrow .next.key[hidden], .endrow .again.key[hidden] { display: none; }
-.endrow .next.key, .endrow .again.key { background: var(--btn); flex: 1; height: auto; min-height: 52px; width: auto; color: var(--btn-ink); text-shadow: none; font-size: 17px; justify-content: center; opacity: 1; }
+.endrow .next.key, .endrow .again.key { background: var(--btn); flex: 1; height: auto; min-height: 52px; width: auto; color: var(--btn-ink); --g: var(--g0); font-size: round(nearest, 17px, var(--px)); justify-content: center; opacity: 1; }
 .endrow .next.key svg, .endrow .again.key svg { filter: none; animation: none; }
 .endrow .again.key { gap: 10px; display: flex; align-items: center; }
 .endrow .clock { flex: 1; }
-.thanks-s { margin: 0; text-align: center; font-size: 18px; color: var(--glow); text-shadow: 0 0 6px rgba(92,240,154,.6); }
+.thanks-s { margin: 0; text-align: center; font-size: round(nearest, 18px, var(--px)); color: var(--glow); --g: 0 0 6px rgba(92,240,154,.6); }
 /* sheets: the menu and How to play rise from the bottom over the panel, like OP Hiker's pack and menu */
 /* the 104 lock (Morg, Oct 19, 2026, after OP Hiker's): the cabinet is the lock. The screen shows three code slots and the panel
    becomes a 3x4 pad in phone order, cream push-buttons like the tiles. A wink, not security: the code is in the page */
 .cab[data-v="gate"] #v-gate { display: flex; } .cab[data-v="gate"] #p-gate { display: grid; } .cab[data-v="gate"] .menu-b { visibility: hidden; }
 #v-gate { align-items: center; justify-content: center; gap: 18px; text-align: center; }
-.g-title { margin: 0; font-family: var(--pixel); font-size: round(nearest, 12px, var(--ps)); letter-spacing: 2px; color: var(--dim); }
+.g-title { margin: 0; font-family: var(--pixel); --b: var(--g0); font-size: round(nearest, 12px, var(--ps)); letter-spacing: 2px; color: var(--dim); }
 .g-slots { display: flex; gap: 14px; }
 .g-slots.nope { animation: gshake .45s; }
 .g-slots i { width: 52px; height: 64px; display: flex; align-items: center; justify-content: center; border-radius: 8px; box-shadow: inset 0 0 0 2px rgba(92,240,154,.35);
-  font: 400 round(nearest, 34px, var(--ps))/1 var(--pixel); font-style: normal; color: var(--glow); text-shadow: 0 0 10px rgba(92,240,154,.8); transition: transform .12s, opacity .12s; }
-.g-slots i.empty { color: var(--dim); text-shadow: none; }
+  font: 400 round(nearest, 34px, var(--ps))/1 var(--pixel); --b: var(--g0); font-style: normal; color: var(--glow); --g: 0 0 10px rgba(92,240,154,.8); transition: transform .12s, opacity .12s; }
+.g-slots i.empty { color: var(--dim); --g: var(--g0); }
 .g-slots i.roll { transform: translateY(-10px); opacity: 0; }
-.g-toast { min-height: 1.3em; margin: 0; font: 400 round(nearest, 15px, var(--ps))/1.3 var(--pixel); letter-spacing: 1px; color: var(--glow); text-shadow: 0 0 8px rgba(92,240,154,.7); }
-.g-toast.no { color: var(--no); text-shadow: 0 0 8px rgba(255,90,95,.6); }
+.g-toast { min-height: 1.3em; margin: 0; font: 400 round(nearest, 15px, var(--ps))/1.3 var(--pixel); --b: var(--g0); letter-spacing: 1px; color: var(--glow); --g: 0 0 8px rgba(92,240,154,.7); }
+.g-toast.no { color: var(--no); --g: 0 0 8px rgba(255,90,95,.6); }
 #p-gate { grid-template-columns: repeat(3, 1fr); gap: 12px; }
-#p-gate .key { min-height: 62px; display: flex; align-items: center; justify-content: center; font: 400 round(nearest, 26px, var(--ps))/1 var(--pixel); touch-action: manipulation; }
+#p-gate .key { min-height: 62px; display: flex; align-items: center; justify-content: center; font: 400 round(nearest, 26px, var(--ps))/1 var(--pixel); --b: var(--g0); touch-action: manipulation; }
 #p-gate .key.on, #p-gate .key.hold { transform: translateY(4px); box-shadow: 0 1px 0 var(--btn-edge), 0 2px 4px rgba(0,0,0,.25); }
 #p-gate .key.enter { background: var(--ok); box-shadow: 0 5px 0 var(--ok-edge), 0 7px 10px rgba(0,0,0,.25); }
 #p-gate .key.enter.on, #p-gate .key.enter.hold { box-shadow: 0 1px 0 var(--ok-edge), 0 2px 4px rgba(0,0,0,.25); }
@@ -313,7 +327,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
    tap, a wave of green light runs across the tiles every few seconds, like an arcade cabinet's chase lights, and the screen blinks
    PICK A CARD with an arrow centered under it, under the A, pointing down to them (Morg: all things in balance). Both stop at each new board's first tap (Morg's pick, Oct 19, 2026) */
 .pitch .pick { position: absolute; left: 0; right: 0; bottom: 0; margin: 0 auto; width: max-content; display: flex; flex-direction: column; align-items: center; gap: 5px; padding: 6px 10px; border-radius: 4px;
-  background: rgba(7,19,12,.88); z-index: 2; font-family: var(--pixel); font-size: round(nearest, 11px, var(--ps)); letter-spacing: 1px; color: var(--glow); text-shadow: 0 0 6px rgba(92,240,154,.8); animation: blink 1.05s steps(1) infinite; }
+  background: rgba(7,19,12,.88); z-index: 2; font-family: var(--pixel); --b: var(--g0); font-size: round(nearest, 11px, var(--ps)); letter-spacing: 1px; color: var(--glow); --g: 0 0 6px rgba(92,240,154,.8); animation: blink 1.05s steps(1) infinite; }
 .pitch .pick svg { transform: rotate(90deg); }
 #p-board.attract .tile:not(:disabled) { animation: chase 3.2s 1.2s infinite; animation-delay: calc(1.2s + var(--w) * 90ms); }
 @keyframes chase { 0%, 14%, 100% { box-shadow: 0 4px 0 var(--btn-edge), 0 6px 8px rgba(0,0,0,.25); } 6% { box-shadow: 0 0 0 3px var(--glow), 0 0 16px rgba(92,240,154,.85), 0 4px 0 var(--btn-edge); } }
@@ -321,14 +335,14 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 @media (prefers-reduced-motion: reduce) { .pitch .pick, #p-board.attract .tile:not(:disabled) { animation: none; } }
 /* the cabinet's printed slogan (Morg, Oct 19, 2026): the question from How to play, in ink on the cabinet body between the screen
    and the cards, on the board only, where the player is choosing */
-.tagline { display: none; margin: -3px 0 -2px; text-align: center; text-wrap: balance; font-size: 15px; font-weight: 600; line-height: 1.2; color: var(--btn-ink); letter-spacing: .2px; }
+.tagline { display: none; margin: -3px 0 -2px; text-align: center; text-wrap: balance; font-size: round(nearest, 15px, var(--px)); line-height: calc(13 / 11); color: var(--btn-ink); letter-spacing: round(nearest, .2px, var(--dp)); }
 .cab[data-v="board"] .tagline { display: block; }
-@media (max-height: 640px) { .tagline { font-size: 13px; margin: -4px 0 -3px; } }
+@media (max-height: 640px) { .tagline { font-size: round(nearest, 13px, var(--px)); margin: -4px 0 -3px; } }
 .ask-pop.sheet { align-items: flex-end; padding: 0 max(14px, env(safe-area-inset-right, 0px)) max(16px, env(safe-area-inset-bottom, 0px)) max(14px, env(safe-area-inset-left, 0px)); }
 .sheet .ask-box { max-width: 392px; border-radius: 18px; padding: 14px 12px 15px; background: linear-gradient(180deg, #1A1D1B 0%, #0D0F0E 100%); box-shadow: inset 0 2px 0 rgba(255,255,255,.08), inset 0 0 0 2px #222, 0 0 0 3px var(--body-dark), 0 -8px 30px rgba(0,0,0,.5); }
 .sheet .menu-box { gap: 10px; }
 .mrow { display: flex; gap: 10px; }
-.mrow .key { flex: 1; min-height: 52px; font-size: 15px; padding: 4px 6px; line-height: 1.15; }
+.mrow .key { flex: 1; min-height: 52px; font-size: round(nearest, 15px, var(--px)); padding: 4px 6px; line-height: calc(12 / 11); }
 .sheet .menu-box #m-close { min-height: 52px; }
 .sheet .intro-box { text-align: left; }
 @media (max-height: 640px) { #p-board.tiles { column-gap: 10px; } .panel { padding-left: 8px; padding-right: 8px; } }
@@ -710,16 +724,22 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     document.querySelectorAll('[data-i]').forEach(function (b) { b.addEventListener('click', function (e) { e.stopPropagation(); open(+b.dataset.i); }); });
     requestAnimationFrame(fitAll);
   }
-  // shrink a hook that won't fit its tile on two lines, a half pixel at a time
+  // shrink a hook that won't fit its tile on two lines, one crisp step at a time (--px: 11/dpr px) down to 11 px. A hook still too long at
+  // 11 px (only long single words, on the smallest phones) keeps shrinking a device pixel at a time, blurred but inside its tile, down to 8 px.
+  // Stage 3 of sharp text ends the shrinking, once the editor has shortened the hooks that need it
+  var PX3 = window.matchMedia && matchMedia('(min-resolution: 3dppx)').matches, PXSTEP = PX3 ? 11 / 3 : 5.5, DEVPX = PX3 ? 1 / 3 : 0.5;
   function fit(el) {
     var hk = el.querySelector('.hk'); if (!hk) return;
     hk.style.fontSize = '';
-    var px = parseFloat(getComputedStyle(hk).fontSize), lh = parseFloat(getComputedStyle(el).lineHeight) / parseFloat(getComputedStyle(el).fontSize) || 1.04;
-    while (px > 8 && (hk.scrollWidth > hk.clientWidth + 0.5 || hk.offsetHeight > 2 * px * lh + 1)) { px -= 0.5; hk.style.fontSize = px + 'px'; }
+    var px = parseFloat(getComputedStyle(hk).fontSize), lh = parseFloat(getComputedStyle(el).lineHeight) / parseFloat(getComputedStyle(el).fontSize) || 12 / 11;
+    var over = function () { return hk.scrollWidth > hk.clientWidth + 0.5 || hk.offsetHeight > 2 * px * lh + 1; };
+    while (px - PXSTEP > 10.9 && over()) { px -= PXSTEP; hk.style.fontSize = px + 'px'; }
+    while (px - DEVPX > 7.9 && over()) { px -= DEVPX; hk.style.fontSize = px + 'px'; }
   }
   function fitAll() { document.querySelectorAll('#p-board [data-i]').forEach(fit); }
   window.addEventListener('resize', function () { if (cab.dataset.v === 'board') fitAll(); });
-  if (document.fonts) { document.fonts.ready.then(fitAll); if (document.fonts.addEventListener) document.fonts.addEventListener('loadingdone', fitAll); }   // refit once the pixel font arrives
+  function refit() { fitAll(); if (cab.dataset.v === 'play' && T) fitQ(); }
+  if (document.fonts) { document.fonts.ready.then(refit); if (document.fonts.addEventListener) document.fonts.addEventListener('loadingdone', refit); }   // refit once the pixel font arrives
 
   // ---- a card ----
   var T, answered;
@@ -759,7 +779,17 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
       b.addEventListener('click', function () { answer(p, b); });
       $('choices').appendChild(b);
     });
-    go(null); beta(null); view('play'); reserve();
+    go(null); beta(null); view('play'); reserve(); fitQ();
+  }
+  // the sentence takes its size from its length (size above). If it would still overflow the screen, with the blank or with the answer
+  // filled in, it steps down one crisp size at a time (--px), so the longest cards fit the smallest phones and stay sharp
+  function fitQ() {
+    var q = $('q'), f = q.parentNode, html = q.innerHTML, filled = sentence(T, true);
+    q.style.fontSize = '';
+    var px = parseFloat(getComputedStyle(q).fontSize);
+    var over = function () { return f.scrollHeight > f.clientHeight + 1 || q.scrollWidth > q.clientWidth + 1; };
+    var both = function () { q.innerHTML = filled; var o = over(); q.innerHTML = html; return o || over(); };
+    while (px - PXSTEP > 10.9 && both()) { px -= PXSTEP; q.style.fontSize = px + 'px'; }
   }
   function answer(p, btn) {
     if (answered) return; answered = true;

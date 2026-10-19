@@ -16,6 +16,7 @@ Runs on a fake clock set to 23:58 local time on puzzle #1's date.
 """
 import asyncio, datetime, json, os, re, sys
 from playwright.async_api import async_playwright
+from docsroute import route   # the page plus docs/fonts
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 HTML = open(sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, 'docs', 'index.html')).read()
 START = json.loads(re.search(r'START = (\[[^\]]+\])', HTML).group(1))
@@ -49,7 +50,7 @@ async def run(b, html, demo):
     pg = await ctx.new_page(); errs = []; pg.on('pageerror', lambda e: errs.append(str(e)))
     await pg.add_init_script("try { localStorage.setItem('bsb-intro-off', 'true') } catch (e) {}")   # skip the how-to-play screen
     await pg.clock.install(time=datetime.datetime(START[0], START[1], START[2], 23, 58, 0))
-    await pg.route('https://bsb.test/**', lambda r: r.fulfill(body=html, content_type='text/html'))
+    await pg.route('https://bsb.test/**', route(html))
     await pg.goto('https://bsb.test/'); await pg.wait_for_timeout(300)
     state = lambda: pg.evaluate("JSON.parse(localStorage.getItem('bsb-daily'))")
     s = await state(); ok(s and s['day'] == 0, 'a fresh day is saved as soon as the board opens')
