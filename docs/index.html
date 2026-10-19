@@ -569,6 +569,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     same.concat(any).forEach(function (x) { if (picks.length < 3 && !picks.some(function (p) { return D.clash(p.w, x.w); })) picks.push(x); });
     return shuffle(picks, r).map(function (p) { return { w: p.w, m: p.m }; });
   }
+  // a plural answer never draws 1, which reads broken before a plural noun (“1 cautions”, the editor’s catch).
   // a number answer gets two near misses instead of numbers borrowed from other cards, which can be wildly off (Morg, Oct 19, 2026):
   // a small count moves by 1 to 3, a bigger one by 10 to 35 percent at the answer's own roundness, a year by 1 to 10 years
   // (by 4 or 8 for a World Cup, Euro or Olympics), never past this year unless the answer is, and a future year stays future. Each can land above or below,
@@ -589,7 +590,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
       else if (year) n = a + sign * (1 + Math.floor(r() * 10));
       else if (a <= 12) n = a + sign * (1 + Math.floor(r() * 3));
       else n = Math.round(a * (1 + sign * (0.1 + r() * 0.25)) / round) * round;
-      if (n < 1 || n === a || (year && n > cap) || (year && a > now && n <= now) || Math.abs(n - a) < (year || a <= 12 ? 1 : 2)) continue;   // a future year keeps future misses
+      if (n < (a >= 2 ? 2 : 1) || n === a || (year && n > cap) || (year && a > now && n <= now) || Math.abs(n - a) < (year || a <= 12 ? 1 : 2)) continue;   // a future year keeps future misses
       var f = fmt(n);
       if (out.indexOf(f) >= 0 || seen.indexOf(plain(f)) >= 0) continue;
       out.push(f);
