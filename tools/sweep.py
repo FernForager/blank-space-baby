@@ -46,7 +46,7 @@ async def main():
             await pg.goto(f'http://bsb.test/?day={day}&reset'); await pg.wait_for_timeout(250)
             bd = await pg.evaluate(BOARD); fonts.append(bd['min'])
             if bd['over'] or bd['scroll']: problems.append((day, 'board', bd))
-            for i in range(18):
+            for i in range(15):
                 await tap(pg, f'[data-i="{i}"]')
                 st = await pg.evaluate(CARD); cards += 1
                 if len(set(st['ch'])) != 3 or st['w'] not in st['ch'] or not st['blank'] or st['ov'] or st['scroll']: problems.append((day, i, st))
@@ -54,9 +54,9 @@ async def main():
                 await pg.click(f'.choice[data-w="{st["w"]}"]')
                 if await pg.evaluate(AFTER): problems.append((day, i, 'answer screen overflows', st['w']))
                 cl = await pg.evaluate(CLEAR); gaps.append(cl['gap'])
-                if cl['hit'] or cl['keys'] != 3: problems.append((day, i, 'the sentence runs into the keys at the bottom', st['w'], cl))
-                await pg.click('#flip'); await pg.wait_for_timeout(30 if i < 17 else 4000)
-            if await pg.evaluate("document.getElementById('cab').dataset.v") != 'end': problems.append((day, 'no end screen after 18 right'))
+                if cl['hit']: problems.append((day, i, 'the sentence runs into the keys at the bottom', st['w'], cl))
+                await pg.click('#flip'); await pg.wait_for_timeout(30 if i < 14 else 4500)
+            if await pg.evaluate("document.getElementById('cab').dataset.v") != 'end': problems.append((day, 'no end screen after 15 right'))
         print(f'{W}x{H}: {DAYS} days, {cards} cards, slots {dict(sorted(slots.items()))}, smallest hook font {min(fonts):.1f}px, closest the sentence comes to a key below it {min(gaps):.0f}px')
         print('problems:', len(problems))
         for x in problems[:20]: print('  ', x)

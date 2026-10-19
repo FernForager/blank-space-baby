@@ -2,7 +2,7 @@
 
     python3 tools/drawcheck.py [days] [page.html]      # default 365 days of docs/index.html
 
-Replays the draw the way every phone does and checks each day's board: 6 white, 6 yellow and 6 red cards,
+Replays the draw the way every phone does and checks each day's board: 5 white, 5 yellow and 5 red cards,
 at least one women's game card and one rules card, at most 3 from one league, at most one slang card
 and never a red one, and no two cards that give each other away (one's answer in the other's
 sentence or hook, or a shared answer or hook). Then reports how far apart repeats land, checks that two
@@ -19,7 +19,7 @@ CHECK = """(days) => {
   const bad = [], last = {}, gaps = [], seen = {}, mix = { women: 0, rules: 0, slang: 0, leagues: {} };
   boards.forEach((tiers, day) => {
     const all = [].concat(...tiers);
-    tiers.forEach((t, i) => { if (t.length !== 6 || t.some(c => c.d !== i + 1)) bad.push([day, 'color ' + (i + 1) + ' has ' + t.length]); });
+    tiers.forEach((t, i) => { if (t.length !== 5 || t.some(c => c.d !== i + 1)) bad.push([day, 'color ' + (i + 1) + ' has ' + t.length]); });
     if (!all.some(c => c.wm)) bad.push([day, 'no women’s card']);
     if (!all.some(c => c.rl)) bad.push([day, 'no rules card']);
     const lg = {}; all.forEach(c => { if (c.lg) lg[c.lg] = (lg[c.lg] || 0) + 1; });

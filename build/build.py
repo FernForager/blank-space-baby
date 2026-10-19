@@ -213,9 +213,9 @@ def main(test_copy=None):
     if BETA_VETTED_ONLY and min(tiers) < BETA_MIN:
         print(f'\nToo few vetted cards to deal a board: {tiers} (white, yellow, red), and each color needs {BETA_MIN}.'); sys.exit(1)
     print('In the draw:', ', '.join(f'{n} {c}' for n, c in zip(tiers, ('white', 'yellow', 'red'))))
-    need = 6 * REPEAT_DAYS + WINDOW   # 6 a day for 3 months, plus the 24 oldest the draw shuffles from
+    need = 5 * REPEAT_DAYS + WINDOW   # 5 a day (the shootout, Oct 19, 2026) for 3 months, plus the 24 oldest the draw shuffles from
     print(f'Cards can stay 3 months apart once each color has about {need} cards. Until then the draw spaces them as far apart as it can:')
-    print(f'the smallest color ({min(tiers)} cards) repeats about every {(min(tiers) - WINDOW) // 6} days.')
+    print(f'the smallest color ({min(tiers)} cards) repeats about every {(min(tiers) - WINDOW) // 5} days.')
     if DEMO_DAYS: print(f'Demo: boards #1 to #{DEMO_DAYS} play back to back, then a thank-you (DEMO_DAYS in build.py, 0 for the real daily).')
     tpl = open(os.path.join(HERE, 'template.html')).read()
     tpl = tpl.replace('__DECKS__', json.dumps(decks, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')).replace('__START__', json.dumps(START)).replace('__DEMO__', str(DEMO_DAYS))

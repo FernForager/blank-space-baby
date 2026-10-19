@@ -3,8 +3,7 @@
     python3 tools/screens.py [page.html]       # default docs/index.html, writes PNGs to out/
 
 For each size: board (a fresh day), q (a card open), win (a right answer),
-board3 (three chips in), goal (the sixth chip landing), board6 (a goal banked), miss (a wrong answer),
-end (the end of the day) and hat (a perfect day).
+board3 (three panels lit), miss (a wrong answer), end (14/15) and hat (a perfect day, GOLAZO!).
 Prints a line for any screen that scrolls or throws a JS error, the smallest hook font on each board,
 and any hook that still overflows its tile.
 Uses Playwright's Chromium. If Google Fonts can't load in the sandbox, install Press Start 2P and
@@ -48,17 +47,16 @@ async def main():
             w = await pg.evaluate("document.getElementById('q').dataset.w")
             await pg.click(f'.choice[data-w="{w}"]'); await pg.wait_for_timeout(400); await shot('win')
             await pg.click('#flip'); await pg.wait_for_timeout(1100)
-            for i in (6, 12):
-                await right(i); await pg.click('#flip'); await pg.wait_for_timeout(1100)
+            for i in (5, 10):
+                await right(i); await pg.click('#flip'); await pg.wait_for_timeout(600)
             await shot('board3')
-            for i in (1, 7):
-                await right(i); await pg.click('#flip'); await pg.wait_for_timeout(1100)
-            await right(13); await pg.click('#flip'); await pg.wait_for_timeout(700); await shot('goal')
-            await pg.wait_for_timeout(1200); await shot('board6')
-            await tap(pg, '[data-i="14"]'); await pg.wait_for_timeout(350)
+            await tap(pg, '[data-i="1"]'); await pg.wait_for_timeout(350)
             wrong = await pg.evaluate("[...document.querySelectorAll('.choice')].map(b => b.dataset.w).find(x => x !== document.getElementById('q').dataset.w)")
             await pg.click(f'.choice[data-w="{wrong}"]'); await pg.wait_for_timeout(500); await shot('miss')
-            await pg.click('#flip'); await pg.wait_for_timeout(500); await shot('end')
+            await pg.click('#flip'); await pg.wait_for_timeout(600)
+            for i in (2, 3, 4, 6, 7, 8, 9, 11, 12, 13, 14):
+                await right(i); await pg.click('#flip'); await pg.wait_for_timeout(300)
+            await pg.wait_for_timeout(1500); await shot('end')
             await pg.reload(); await pg.wait_for_timeout(1200)
             if await pg.evaluate("document.getElementById('cab').dataset.v") != 'end': print(W, H, 'a finished day did not reopen to the end')
             await pg.evaluate("() => { const s = JSON.parse(localStorage.getItem('bsb-daily')); s.res = s.res.map(() => 1); s.open = -1; localStorage.setItem('bsb-daily', JSON.stringify(s)); }")

@@ -26,10 +26,10 @@
 <body style="margin:0">
 <style>
 /* The phone is the cabinet: marquee sign, CRT screen in a black bezel, push-buttons on a black control panel.
-   The daily: everyone gets the same 18 cards a day, 6 white (easy), 6 yellow card (medium) and 6 red card (hard).
-   Tap any tile. A right answer drops a pentagon chip into the ball, every 6 chips is a goal, one miss ends the day.
-   The board is the grid (Morg's pick, Oct 16, 2026): the ball and the goal lamps on the screen, the 18 tiles as keys
-   on the panel, one card color per column. */
+   The daily, as a shootout (Morg, Oct 19, 2026): everyone gets the same 15 cards a day, 5 white (easy), 5 yellow card
+   (medium) and 5 red card (hard), and plays all 15. Tap any tile. A right answer lights the next panel of the ball,
+   from the middle out, and 15 right lights the center last: GOLAZO! The board is the grid: the ball on the screen,
+   the 15 tiles as keys on the panel, one card color per column. */
 :root {
   --body: #F2EDE4; --body-dark: #00843D;   /* locked palette: warm white page, Celtic Green trim */
   --bezel: #0D0F0E; --screen: #07130C; --glow: #5CF09A; --text: #EAFBF0; --dim: #7FAF92; --gold: #F7C948;
@@ -75,8 +75,6 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .in-colors span { display: flex; align-items: center; gap: 6px; }
 .tc { display: inline-block; width: 11px; height: 15px; border-radius: 2px; }
 .tc.c1 { background: var(--c1); } .tc.c2 { background: var(--c2); } .tc.c3 { background: var(--c3); }
-.in-off { display: flex; align-items: center; justify-content: center; gap: 8px; margin: 0 0 14px; font-size: 15px; color: var(--dim); font-weight: 500; }
-.in-off input { width: 18px; height: 18px; accent-color: var(--ok); margin: 0; }
 .intro-box .in-go { width: 100%; min-height: 52px; font-size: 18px; background: var(--ok); box-shadow: 0 5px 0 var(--ok-edge), 0 7px 10px rgba(0,0,0,.25); }
 .marquee h1.cta { font-family: 'Yellowtail', cursive; font-size: 27px; line-height: 1.02; letter-spacing: 0; white-space: normal; padding: 0 26px 2px;
   text-shadow: 0 0 3px rgba(255,255,255,.9), 0 0 9px var(--glow), 0 0 18px rgba(92,240,154,.6), 0 0 30px rgba(92,240,154,.35); }
@@ -105,20 +103,23 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .nb { white-space: nowrap; }
 .num { font-family: var(--pixel); font-weight: 400; font-size: .8em; letter-spacing: -.02em; }
 
-/* the ball: six pentagon chip slots, five around and the center last. Like seams on a real ball, every outer
-   pentagon turns a flat side to the center, and the center points down so its flat sides face back */
+/* the ball: 15 lamp panels in three rings of five (the hexagons round the center, the outer pentagons, the half-hexagons
+   at the edge) and the center pentagon, which lights only on 15/15 (Morg's lamp idea, Oct 19, 2026) */
 .ball { position: relative; flex: none; aspect-ratio: 1; }
 .bi { display: block; width: 100%; height: 100%; overflow: visible; }
-.bi .body { fill: rgba(92,240,154,.07); }
+.bi .body { fill: rgba(92,240,154,.05); }
 .bi .sm { fill: none; stroke: #3E7A57; stroke-width: 2.2; stroke-linecap: round; }
-.bi .pt { fill: url(#bdim); stroke: #3E7A57; stroke-width: 2.4; stroke-linejoin: round; transform-box: fill-box; transform-origin: center; }
-.bi .pt.on { fill: url(#bon); stroke: var(--text); filter: drop-shadow(0 0 3px rgba(92,240,154,.8)); }
+.bi .pt { fill: url(#bdim); stroke: #3E7A57; stroke-width: 2.2; stroke-linejoin: round; stroke-linecap: round; transform-box: fill-box; transform-origin: center; }
+.bi .pt.hx { fill: url(#bdim); fill-opacity: .45; }   /* an unlit hexagon is fainter than an unlit pentagon, so the empty ball still reads as a ball */
+.bi .pt.on { fill: url(#bon); fill-opacity: 1; stroke: var(--text); filter: drop-shadow(0 0 1.5px rgba(92,240,154,.8)); }
 .bi .pt.new { animation: bump .45s steps(3); }
-.ball.goal .bi .sm { stroke: var(--text); }
-.ball.goal .bi { filter: drop-shadow(0 0 6px rgba(92,240,154,.8)); }
+.ball.goal .bi .sm, .ball.goal .bi .pt { stroke: var(--text); }
+.ball.goal .bi { filter: drop-shadow(0 0 4px #fff) drop-shadow(0 0 10px rgba(92,240,154,.9)); }
 .ball.goal { animation: bob .3s steps(2) 3; }
-.bi.mini .body { fill: currentColor; } .bi.mini .sm { stroke: var(--mp, #07130C); stroke-width: 4; } .bi.mini .pt, .bi.mini .pt.on { fill: var(--mp, #07130C); stroke: var(--mp, #07130C); stroke-width: 3; filter: none; }
-.share .bi.mini { color: #fff; --mp: #1E2A3B; } .share .bi.mini .body { stroke: #1E2A3B; stroke-width: 7; }
+.bi.mini .body { fill: currentColor; } .bi.mini .sm { stroke: var(--mp, #07130C); stroke-width: 4; } .bi.mini .pt, .bi.mini .pt.on { fill: var(--mp, #07130C); stroke: var(--mp, #07130C); stroke-width: 3; filter: none; } .bi.mini .pt.hx { fill: none; stroke: none; }
+.share .bi.mini, .tile .bi.mini { color: #fff; --mp: #1E2A3B; } .share .bi.mini .body, .tile .bi.mini .body { stroke: #1E2A3B; stroke-width: 7; }
+.egrid .bi.mini { color: var(--text); --mp: #07130C; }   /* on the CRT: a lit ball, its patches the screen's own black */
+.bi.mark { flex: none; display: block; }
 .goalfx { position: absolute; left: 0; top: 0; width: 100%; height: 82%; z-index: 2; pointer-events: none; filter: drop-shadow(0 0 2px rgba(92,240,154,.55)); animation: power .5s steps(5); }
 .pitch.fxon .ball { opacity: 0; }
 .pitch .shout { position: absolute; inset: 0; margin: auto; height: max-content; z-index: 3; text-align: center; font-family: var(--pixel); font-size: clamp(22px, 9cqw, 34px); line-height: 1.2; color: #fff; pointer-events: none;
@@ -132,28 +133,25 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 @keyframes bob { 50% { transform: translateY(-4px); } }
 @keyframes bump { 50% { transform: scale(1.5); } }
 
-/* goals: three lamps, lit one by one */
-.lamps { display: flex; justify-content: center; gap: 12px; }
-.lamp { display: flex; align-items: center; justify-content: center; color: #2F5A41; }
-.lamp.on { color: var(--text); filter: drop-shadow(0 0 6px rgba(92,240,154,.85)); }
-.lamp.new { animation: bump .45s steps(3); }
-
-/* the board: the ball and the goal lamps on the screen (the tiles are keys on the panel, below) */
+/* the board: the ball on the screen (the tiles are keys on the panel, below) */
 #v-board { container-type: size; align-items: center; justify-content: center; }
 .pitch { position: relative; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; }
 .pitch .ball { width: min(100cqw, 100cqh); }   /* the ball fills the screen (Morg, Oct 17, 2026: the assembled ball is the payoff) */
-.pitch .lamps { position: absolute; top: 0; right: 0; gap: 6px; }   /* the goal lamps sit top right, where the play screen keeps them */
 
 /* play */
-.hud { display: flex; justify-content: space-between; align-items: center; flex: none; height: 24px; position: relative; z-index: 3; }
+.hud { display: flex; justify-content: space-between; align-items: flex-start; flex: none; height: 27px; position: relative; z-index: 3; }
 .hud .lvl { display: flex; align-items: center; gap: 10px; }
 .chip-card { width: 13px; height: 18px; border-radius: 2px; box-shadow: 0 0 6px rgba(255,255,255,.25); }
 .chip-card.c1 { background: var(--c1); } .chip-card.c2 { background: var(--c2); } .chip-card.c3 { background: var(--c3); }
-.pips { display: flex; gap: 5px; }
-.pips i { width: 10px; height: 10px; box-shadow: inset 0 0 0 2px #2C4A39; }
-.pips i.on { background: var(--glow); box-shadow: 0 0 6px var(--glow); }
-.pips i.bump { animation: bump .35s steps(3); }
-.hud .lamps { gap: 6px; }
+/* the shootout scoreboard (Oct 19, 2026 mockup): three rows of five, white on top, then yellow, then red, like the share.
+   A lit dot is a right answer, a pixel ✕ a miss, a dim ring a card still to play. The card in play blinks in its row */
+.sb { display: grid; grid-template-columns: repeat(5, 7px); grid-auto-rows: 7px; gap: 3px 4px; }
+.sb i { display: block; width: 7px; height: 7px; color: #2F6B49; }
+.sb i.ok { color: var(--glow); filter: drop-shadow(0 0 3px rgba(92,240,154,.9)); }
+.sb i.no { color: var(--no); }
+.sb i.now { color: var(--text); animation: blink 1.05s steps(1) infinite; }
+.sb i.bump { animation: bump .35s steps(3); }
+.sb svg { display: block; }
 .face { flex: 1; min-height: 0; display: flex; flex-direction: column; justify-content: center; gap: 8px; }
 .sentence { margin: 0; font-size: 26px; line-height: 1.22; text-wrap: balance; text-shadow: 0 0 6px rgba(234,251,240,.25); }
 .sentence.long { font-size: 23px; } .sentence.longer { font-size: 21px; }
@@ -165,14 +163,21 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .missed .fill { color: #fff; text-shadow: 0 0 6px rgba(255,255,255,.35); padding-bottom: 3px;
   background: repeating-linear-gradient(90deg, var(--glow) 0 0.42em, transparent 0.42em 0.62em) left bottom / 100% 3px no-repeat; }
 
-/* the end of the day: the result, and the card that got you */
-#v-end { justify-content: center; gap: 18px; }
+/* the end of the day: the shootout grid and the score */
+#v-end { justify-content: center; align-items: center; gap: 6cqh; }
+.egrid { display: grid; grid-template-columns: auto repeat(5, auto); gap: 9px 10px; align-items: center; }
+.egrid .rc { width: 9px; height: 13px; border-radius: 1.5px; margin-right: 4px; }
+.egrid .rc.c1 { background: var(--c1); } .egrid .rc.c2 { background: var(--c2); } .egrid .rc.c3 { background: var(--c3); }
+.egrid .em { display: flex; align-items: center; justify-content: center; }
+.egrid .em.ok { filter: drop-shadow(0 0 5px rgba(92,240,154,.75)); }
+.egrid .em.no { color: var(--no); }
+.golazo .egrid .em.ok { filter: drop-shadow(0 0 4px #fff) drop-shadow(0 0 10px rgba(92,240,154,.9)); }
+.score { margin: 0; font-family: var(--pixel); font-weight: 400; font-size: 26px; line-height: 1; color: #fff; text-align: center; text-shadow: 0 0 4px rgba(255,255,255,.6), 0 0 12px rgba(92,240,154,.6); }
+.golazo .score { font-size: 24px; text-shadow: 0 0 6px #fff, 0 0 14px var(--glow), 0 0 28px rgba(92,240,154,.7); }
 .result { display: flex; flex-direction: column; align-items: center; gap: 12px; }
 .word .run { display: block; margin-top: 4px; font-size: .8em; color: var(--text); }
 .word { margin: 0; font-family: var(--pixel); font-weight: 400; font-size: 20px; line-height: 1.2; color: #fff; text-align: center;
   text-shadow: 0 0 4px rgba(255,255,255,.6), 0 0 12px rgba(92,240,154,.6); }
-.lost { display: flex; flex-direction: column; gap: 10px; }
-.lost .sentence { font-size: 22px; } .lost .sentence.long { font-size: 20px; } .lost .sentence.longer { font-size: 19px; }
 .means { margin: 0; font-size: 18px; line-height: 1.2; color: #B8E6CA; font-weight: 500; }   /* the means line is the payoff, so it stays bright */
 #v-end .ball { width: min(62%, 60cqh); margin: 0 auto; }
 #v-end { container-type: size; }
@@ -204,15 +209,19 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .key:disabled { cursor: default; }
 
 /* the tiles: easy, medium and hard, one column each */
-#p-board.tiles { grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: repeat(6, auto); grid-auto-flow: column; gap: 9px 8px; padding-bottom: 4px; }
-.tile { position: relative; min-height: 52px; min-width: 0; padding: 4px 6px; font-size: 17px; line-height: 1.04; display: flex; align-items: center; justify-content: center; text-align: center; border-radius: 10px; }
+#p-board.tiles { grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: repeat(5, auto); grid-auto-flow: column; gap: 9px 8px; padding-bottom: 4px; }
+.tile { position: relative; min-height: 60px; min-width: 0; padding: 4px 6px; font-size: 17px; line-height: 1.04; display: flex; align-items: center; justify-content: center; text-align: center; border-radius: 10px; }
 /* every tile is a cream key like the answer buttons. A small referee's card in the corner marks medium (yellow) and hard (red),
    and easy tiles have none (Morg, Oct 16, 2026: the bold colors took over the cabinet) */
-.tile { background: var(--btn); color: var(--btn-ink); box-shadow: 0 4px 0 var(--btn-edge), 0 6px 8px rgba(0,0,0,.25); padding-left: 9px; padding-right: 9px; }
+.tile { background: var(--btn); color: var(--btn-ink); box-shadow: 0 4px 0 var(--btn-edge), 0 6px 8px rgba(0,0,0,.25); padding-left: 7px; padding-right: 7px; }   /* the shootout's taller tiles give the hook a little more width instead */
 .tile.c2::after, .tile.c3::after { content: ""; position: absolute; top: 5px; right: 6px; width: 7px; height: 10px; border-radius: 1.5px; box-shadow: 0 0 0 1px rgba(0,0,0,.18); }
 .tile.c2::after { background: var(--c2); } .tile.c3::after { background: var(--c3); }
 .tile:active:not(:disabled) { transform: translateY(3px); box-shadow: 0 1px 0 rgba(0,0,0,.4); }
-.tile.done, .tile.miss { transform: translateY(3px); box-shadow: 0 1px 0 rgba(0,0,0,.4); opacity: .3; }
+.tile.done, .tile.miss { transform: translateY(3px); box-shadow: 0 1px 0 rgba(0,0,0,.4); background: rgba(246,240,226,.34); }
+/* an answered tile keeps its result: the game's pixel ball for a right answer, its pixel ✕ for a miss (shape, not just color) */
+.tile.done::after, .tile.miss::after { opacity: .55; }
+.tile .res { display: block; }
+.tile.miss .res { color: #B02A35; }
 .hk { display: block; width: 100%; overflow-wrap: normal; word-break: normal; hyphens: none; }
 
 /* answer buttons */
@@ -232,14 +241,12 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 #p-end { flex-direction: column; gap: 12px; }
 .share { min-height: 62px; padding: 8px 16px 8px 18px; display: flex; align-items: center; justify-content: space-between; gap: 12px; text-align: left; font-size: 17px; line-height: 1.25; }
 .share .mark { flex: none; }
-.share .ball-i { display: inline-block; vertical-align: -2px; margin-right: 3px; }
-.share .txt { flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 3px; }
-.sgrid { display: flex; flex-direction: column; gap: 2px; padding-block: 2px; }
-.srow { display: flex; gap: 2px; align-items: center; }
-.srow .ball-i { display: block; margin: 0; } .srow .num { margin-right: 4px; }
-.sq { display: block; width: 16px; height: 16px; position: relative; }
-.sq.x::before, .sq.x::after { content: ""; position: absolute; left: 0; top: 7px; width: 16px; height: 2px; background: #FF5A5F; transform: rotate(45deg); }
-.sq.x::after { transform: rotate(-45deg); }
+.share .txt { flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 3px; line-height: 1.12; }
+/* the share key shows the exact text it sends: the shootout grid in the game's pixel ball and ✕, one line per row */
+.sgrid { display: grid; grid-template-columns: repeat(5, 11px); grid-auto-rows: 11px; gap: 3px 3px; padding-block: 2px; align-items: center; justify-items: center; }
+.sgrid .no { color: #E0464B; }
+#share-txt { display: flex; flex-direction: column; gap: 3px; }
+.sgrid svg { display: block; }
 .endrow { display: flex; align-items: center; justify-content: center; gap: 6px; }
 .endrow .bk { height: 26px; color: #7C8A80; }
 .endrow .bk.flag.on { color: #B48A1C; filter: none; } .endrow .bk.lock.on { color: #45BE76; filter: none; }
@@ -254,12 +261,51 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .clock.thanks { font-family: var(--body-font); font-size: 17px; letter-spacing: 0; }   /* the CRT's sentence face: one line, or two beside the beta's keys on the smallest phones */
 .key:focus-visible, .go:focus-visible, .bk:focus-visible { outline: 3px solid var(--glow); outline-offset: 3px; }
 
-@media (max-height: 700px) { .choice { min-height: 56px; } .tile { min-height: 46px; font-size: 16px; } }
+@media (max-height: 700px) { .choice { min-height: 56px; } .tile { min-height: 54px; font-size: 16px; } }
 @media (max-height: 640px) { .cab { gap: 9px; padding-top: max(9px, env(safe-area-inset-top, 0px)); padding-bottom: max(12px, env(safe-area-inset-bottom, 0px)); } .marquee { padding: 8px 10px 9px; } .marquee h1 { font-size: 19px; } .marquee.dm { height: 54px; }
   .choice { font-size: 19px; min-height: 50px; } .sentence { font-size: 22px; } .sentence.long { font-size: 20px; } .sentence.longer { font-size: 18px; }
-  .tile { min-height: 44px; font-size: 15px; } #p-board.tiles { gap: 7px 7px; } .panel { padding: 10px 10px 13px; }
-  .lost .sentence { font-size: 19px; } .lost .sentence.long, .lost .sentence.longer { font-size: 17px; } .means { font-size: 16px; } .word { font-size: 17px; } }
-@media (prefers-reduced-motion: reduce) { .key, .choice .def { transition: none; } .pips i.bump, .choice.wrong, .flick, .blank, .go, .ball.goal, .bi .pt.new, .lamp.new, .cab.poweron .marquee h1, .cab.poweron .marquee.dm canvas, .endrow .next svg, .pitch .shout { animation: none; } }
+  .tile { min-height: 50px; font-size: 15px; padding-left: 5px; padding-right: 5px; } #p-board.tiles { gap: 7px 7px; } .panel { padding: 10px 10px 13px; }
+  .means { font-size: 16px; } .score { font-size: 22px; } .golazo .score { font-size: 21px; } .egrid { gap: 7px 8px; } }
+@media (prefers-reduced-motion: reduce) { .key, .choice .def { transition: none; } .sb i.bump, .sb i.now, .choice.wrong, .flick, .blank, .go, .ball.goal, .bi .pt.new, .cab.poweron .marquee h1, .cab.poweron .marquee.dm canvas, .endrow .next svg, .pitch .shout { animation: none; } }
+
+/* == mockup: shared fixes == */
+/* the answer panel keeps its height for the card: room for two means lines is reserved, keys sit at the top, nothing moves when you answer */
+.choices { justify-content: flex-start; }
+.choice.probe .def { max-height: 36px; opacity: 0; transition: none; }
+/* columns carry difficulty, so a sideways slip costs most: wider column gaps, row gaps kept */
+#p-board.tiles { column-gap: 11px; }
+.panel { padding-left: 9px; padding-right: 9px; }
+/* the menu key: the sign's whole right end, 52 wide and the sign's full height */
+.marquee.dm .menu-b { right: 0; top: 0; transform: none; width: 52px; height: 100%; opacity: .9; border-radius: 0 14px 14px 0; background: radial-gradient(closest-side, rgba(7,19,12,.95), rgba(7,19,12,.8) 70%, transparent); }
+/* Don't show this again: the whole row is the target, 44 tall */
+
+/* == A: the go row == */
+.panel { flex-direction: column; }
+.pv { flex: none; width: 100%; }
+.gorow { display: none; align-items: center; gap: 10px; margin-top: 10px; min-height: 52px; }
+.cab[data-v="play"] #g-play { display: flex; }
+.gorow .gokey { position: static; flex: 1; height: auto; padding: 0 12px; color: var(--btn-ink); filter: none; animation: none; min-height: 52px; font-family: var(--pixel); font-size: 13px; letter-spacing: 1px; text-transform: uppercase; display: flex; align-items: center; justify-content: center; gap: 10px; }
+.gorow .gokey.wait { visibility: hidden; }
+.gorow .bk, .endrow .bk { width: 44px; height: 44px; color: #7C8A80; }
+.go:not(.gokey) { display: none; }
+/* the end: share, then the go row: Play #2 (demo), the countdown (daily), Play again from #1 (the demo's last board, nothing left to lose) */
+.endrow { min-height: 52px; gap: 10px; }
+.endrow .next.key[hidden], .endrow .again.key[hidden] { display: none; }
+.endrow .next.key, .endrow .again.key { background: var(--btn); flex: 1; height: auto; min-height: 52px; width: auto; color: var(--btn-ink); text-shadow: none; font-size: 17px; justify-content: center; opacity: 1; }
+.endrow .next.key svg, .endrow .again.key svg { filter: none; animation: none; }
+.endrow .again.key { gap: 10px; display: flex; align-items: center; }
+.endrow .clock { flex: 1; }
+.thanks-s { margin: 0; text-align: center; font-size: 18px; color: var(--glow); text-shadow: 0 0 6px rgba(92,240,154,.6); }
+/* sheets: the menu and How to play rise from the bottom over the panel, like OP Hiker's pack and menu */
+.ask-pop.sheet { align-items: flex-end; padding: 0 max(14px, env(safe-area-inset-right, 0px)) max(16px, env(safe-area-inset-bottom, 0px)) max(14px, env(safe-area-inset-left, 0px)); }
+.sheet .ask-box { max-width: 392px; border-radius: 18px; padding: 14px 12px 15px; background: linear-gradient(180deg, #1A1D1B 0%, #0D0F0E 100%); box-shadow: inset 0 2px 0 rgba(255,255,255,.08), inset 0 0 0 2px #222, 0 0 0 3px var(--body-dark), 0 -8px 30px rgba(0,0,0,.5); }
+.sheet .menu-box { gap: 10px; }
+.mrow { display: flex; gap: 10px; }
+.mrow .key { flex: 1; min-height: 52px; font-size: 15px; padding: 4px 6px; line-height: 1.15; }
+.sheet .menu-box #m-close { min-height: 52px; }
+.sheet .intro-box { text-align: left; }
+@media (max-height: 640px) { #p-board.tiles { column-gap: 10px; } .panel { padding-left: 8px; padding-right: 8px; } }
+@media (max-height: 640px) { .gorow, .endrow { min-height: 48px; } .gorow .gokey, .endrow .next.key, .endrow .again.key, .sheet .menu-box #m-close, .mrow .key { min-height: 48px; } .gorow { margin-top: 8px; } .ask-pop.sheet { padding-bottom: max(12px, env(safe-area-inset-bottom, 0px)); } }
 </style>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
   <pattern id="pon" width="7" height="7" patternUnits="userSpaceOnUse"><circle cx="3.5" cy="3.5" r="2.6" fill="#EAFBF0"/></pattern>
@@ -269,16 +315,15 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 </defs></svg>
 <div class="cab" id="cab" data-v="board">
   <div class="marquee dm"><h1 class="sr">Triviela</h1><canvas id="sign" aria-hidden="true"></canvas><button class="menu-b" id="menu-b" type="button" aria-label="Menu"></button></div>
-  <div class="ask-pop" id="menu" role="dialog" aria-modal="true" aria-label="Menu" hidden><div class="ask-box menu-box"><button class="key" id="m-how" type="button">How to play</button><button class="key" id="m-restart" type="button" hidden>Start over from <span class="num">#1</span></button><button class="key" id="m-close" type="button">Back to the game</button></div></div>
-  <div class="ask-pop" id="intro" role="dialog" aria-modal="true" aria-labelledby="in-q" hidden><div class="ask-box intro-box">
+  <div class="ask-pop sheet" id="menu" role="dialog" aria-modal="true" aria-label="Menu" hidden><div class="ask-box menu-box"><div class="mrow"><button class="key" id="m-restart" type="button" hidden>Start over from <span class="num">#1</span></button><button class="key" id="m-how" type="button">How to play</button></div><button class="key" id="m-close" type="button">Back to the game</button></div></div>
+  <div class="ask-pop sheet" id="intro" role="dialog" aria-modal="true" aria-labelledby="in-q" hidden><div class="ask-box intro-box">
     <p class="in-q" id="in-q">How well do you know<br>the beautiful game?</p>
     <ul class="in-list">
-      <li>18 cards a day. Pick any one.</li>
+      <li><span class="num">15</span> cards a day. Pick any one.</li>
       <li class="in-colors"><span><i class="tc c1"></i>easy</span><span><i class="tc c2"></i>harder</span><span><i class="tc c3"></i>hardest</span></li>
-      <li>6 right in a row is a goal.</li>
-      <li>One miss ends your day.</li>
+      <li>Play all <span class="num">15</span>, right or wrong.</li>
+      <li>Light the whole ball: <span class="num">GOLAZO!</span></li>
     </ul>
-    <label class="in-off"><input type="checkbox" id="in-off"> Don’t show this again</label>
     <button class="key yes in-go" id="in-go" type="button">Kick off</button>
   </div></div>
   <div class="ask-pop" id="restart-ask" role="dialog" aria-modal="true" aria-labelledby="ra-q" hidden><div class="ask-box"><p id="ra-q">Start over from <span class="num">#1</span>?</p><div class="ask-keys"><button class="key" id="ra-no" type="button">Keep playing</button><button class="key yes" id="ra-yes" type="button">Start over</button></div></div></div>
@@ -286,18 +331,18 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     <div class="screen" id="flip" aria-live="polite">
       <section class="view" id="v-board"></section>
       <section class="view" id="v-play">
-        <div class="hud"><span class="lvl" id="lvl"></span><span id="hud-goals"></span></div>
+        <div class="hud"><span class="lvl" id="lvl"></span><span class="sb" id="sb" aria-hidden="true"></span></div>
         <section class="face"><p class="sentence" id="q"></p></section>
       </section>
       <section class="view" id="v-end"></section>
-      <button class="go wait" id="go" type="button" tabindex="-1" aria-label="Next"></button>
-      <div class="beta" id="beta" hidden><button class="bk flag" id="b-flag" type="button"></button><button class="bk lock" id="b-lock" type="button"></button><span class="bmsg" id="b-msg"></span></div>
+      <div class="beta" id="beta" hidden><span class="bmsg" id="b-msg"></span></div>
     </div>
   </div>
   <div class="panel">
     <div class="pv tiles" id="p-board"></div>
     <div class="pv choices" id="choices"></div>
-    <div class="pv" id="p-end"><button class="key share" id="share" type="button"><span class="txt"><span id="share-top"></span><span id="share-txt"></span></span><span class="mark" id="share-mark"></span></button><div class="endrow"><button class="bk flag" id="e-flag" type="button" hidden></button><button class="bk again" id="e-again" type="button" aria-label="Start over" hidden></button><div class="clock" id="clock"></div><button class="next" id="e-next" type="button" hidden></button><button class="bk lock" id="e-lock" type="button" hidden></button></div></div>
+    <div class="gorow" id="g-play"><button class="bk flag" id="b-flag" type="button" hidden></button><button class="key go gokey wait" id="go" type="button" tabindex="-1" aria-label="Next"></button><button class="bk lock" id="b-lock" type="button" hidden></button></div>
+    <div class="pv" id="p-end"><button class="key share" id="share" type="button"><span class="txt"><span id="share-top"></span><span id="share-txt"></span></span><span class="mark" id="share-mark"></span></button><div class="endrow"><button class="bk flag" id="e-flag" type="button" hidden></button><div class="clock" id="clock"></div><button class="next key" id="e-next" type="button" hidden></button><button class="again key" id="e-again" type="button" hidden></button><button class="bk lock" id="e-lock" type="button" hidden></button></div></div>
   </div>
 </div>
 <script>
@@ -315,36 +360,50 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     unlock:['.#####.','.#...#.','.....#.','#######','###.###','###.###','#######'],
     menu:  ['#######','.......','.......','#######','.......','.......','#######'],
     again: ['..####.#.','.##...##.','##...###.','##.......','##.......','##.....##','.##...##.','..#####..'],
-    share: ['....#....','...###...','..#####..','....#....','....#....','##..#..##','#.......#','#.......#','#.......#','#########']
+    share: ['....#....','...###...','..#####..','....#....','....#....','##..#..##','#.......#','#.......#','#.......#','#########'],
+    // the shootout scoreboard's lit dot and empty ring (a miss is the answer buttons' own ✕, 'no', at about 2/3 of the ball's
+    // width, so its corners reach the ball's circle and the two weigh about the same)
+    dot:   ['..###..','.#####.','#######','#######','#######','.#####.','..###..'],
+    ring:  ['..###..','.#...#.','#.....#','#.....#','#.....#','.#...#.','..###..']
   };
   var PAL = { K: '#1E2A3B', W: '#FFFFFF' };
-  // the ball: one classic soccer-ball icon (Morg, Oct 18, 2026). Six patches, the center one and five cut off by the
-  // edge, with seams between them and no ring around it. Patches light up as chips are earned: 0–4 clockwise from the upper
-  // right, then the center (5). A goal lamp is the same icon, small, with every patch lit or none.
-  var BI = 0, BALLG = (function () {   // true proportions: every polygon has the same side, so the hexagons come out regular
+  // the ball: one classic soccer-ball icon (Morg, Oct 18, 2026), drawn in true proportions with no ring around it.
+  // Its 15 panels are lamps (Morg, Oct 19, 2026), three rings of five lit from the middle out, each ring clockwise from the top:
+  // ring 1 the hexagons round the center, ring 2 the outer pentagons, ring 3 the half-hexagons at the edge. The center
+  // pentagon is panel 15 and lights only on 15/15. The hexagons come from the seams, and the circle clips the edge ones.
+  var BI = 0, BALLG = (function () {   // every polygon has the same side, so the hexagons come out regular
     var P = function (a, r) { return [r * Math.cos(a * Math.PI / 180), r * Math.sin(a * Math.PI / 180)]; };
     var S = 15, R = S / (2 * Math.sin(Math.PI / 5));   // side, and a pentagon's corner radius
     var poly = function (cx, cy, rot) { var v = []; for (var j = 0; j < 5; j++) { var p = P(rot + 72 * j, R); v.push([cx + p[0], cy + p[1]]); } return v; };
-    var center = poly(0, 0, -90), patches = [], seams = '', L = function (a, b) { return 'M' + a[0].toFixed(1) + ' ' + a[1].toFixed(1) + 'L' + b[0].toFixed(1) + ' ' + b[1].toFixed(1); };
+    var center = poly(0, 0, -90), pents = [], ctr = [], seams = '', L = function (a, b) { return 'M' + a[0].toFixed(2) + ' ' + a[1].toFixed(2) + 'L' + b[0].toFixed(2) + ' ' + b[1].toFixed(2); };
     // each edge patch sits straight out from a corner of the center one, a side's length away, pointing back at it
-    for (var k = 0; k < 5; k++) { var th = -90 + 72 * k, c = P(th, 2 * R + S); patches.push(poly(c[0], c[1], th + 180)); }
+    for (var k = 0; k < 5; k++) { var th = -90 + 72 * k, c = P(th, 2 * R + S); ctr.push(c); pents.push(poly(c[0], c[1], th + 180)); }
+    var ext = function (k, j) { var v = pents[k][j], c = ctr[k], dx = v[0] - c[0], dy = v[1] - c[1], m = Math.hypot(dx, dy); return [v[0] + dx / m * S, v[1] + dy / m * S]; };   // a seam on past an edge patch
+    var inner = [], outer = [];
     for (k = 0; k < 5; k++) {
-      seams += L(center[k], patches[k][0]);   // the seam from a center corner to the edge patch's tip
-      seams += L(patches[k][4], patches[(k + 1) % 5][1]);   // the outer edge of the hexagon between two edge patches
-      var c = P(-90 + 72 * k, 2 * R + S);
-      [2, 3].forEach(function (j) { var v = patches[k][j], dx = v[0] - c[0], dy = v[1] - c[1], m = Math.hypot(dx, dy); seams += L(v, [v[0] + dx / m * S, v[1] + dy / m * S]); });   // seams on past the edge patch
+      var n = (k + 1) % 5;
+      seams += L(center[k], pents[k][0]) + L(pents[k][4], pents[n][1]) + L(pents[k][2], ext(k, 2)) + L(pents[k][3], ext(k, 3));
+      inner.push([center[k], center[n], pents[n][0], pents[n][1], pents[k][4], pents[k][0]]);   // between center corners k and k+1, upper right first
+      outer.push([pents[k][4], pents[k][3], ext(k, 3), ext(n, 2), pents[n][2], pents[n][1]]);   // straight out from it, cut by the edge
     }
-    var pts = function (v) { return v.map(function (w) { return w[0].toFixed(1) + ',' + w[1].toFixed(1); }).join(' '); };
-    return { patches: patches.map(pts).concat([pts(center)]), seams: seams };
+    var pts = function (v) { return v.map(function (w) { return w[0].toFixed(2) + ',' + w[1].toFixed(2); }).join(' '); };
+    var panels = [];
+    inner.forEach(function (v) { panels.push({ p: pts(v), hx: 1 }); });
+    pents.forEach(function (v) { panels.push({ p: pts(v), hx: 0 }); });   // the top one first
+    outer.forEach(function (v) { panels.push({ p: pts(v), hx: 1 }); });
+    panels.push({ p: pts(center), hx: 0 });
+    return { panels: panels, seams: seams };
   })();
-  function ballIcon(n, cls, fresh, ids) {   // n patches lit, fresh: the one just earned (it bumps)
-    var id = 'bc' + (++BI);
+  function ballIcon(n, cls, fresh, ids) {   // n right answers: panels 0 to n−1 lit, and the center too at 15. fresh: the panel just lit (it bumps)
+    var id = 'bc' + (++BI), lit = n >= 15 ? 16 : n;
     return '<svg class="bi' + (cls ? ' ' + cls : '') + '" viewBox="-50 -50 100 100" aria-hidden="true"><defs><clipPath id="' + id + '"><circle r="48"/></clipPath></defs>' +
       '<g clip-path="url(#' + id + ')"><circle class="body" r="48"/><path class="sm" d="' + BALLG.seams + '"/>' +
-      BALLG.patches.map(function (pt, k) { return '<polygon class="pt' + (k < n ? ' on' : '') + (k === fresh ? ' new' : '') + '"' + (ids ? ' id="slot' + k + '"' : '') + ' points="' + pt + '"/>'; }).join('') + '</g></svg>';
+      BALLG.panels.map(function (pn, k) { return '<polygon class="pt' + (pn.hx ? ' hx' : '') + (k < lit ? ' on' : '') + (k === fresh ? ' new' : '') + '"' + (ids ? ' id="slot' + k + '"' : '') + ' points="' + pn.p + '"/>'; }).join('') + '</g></svg>';
   }
-  function ballSvg(size, cls, on) { return ballIcon(6, 'mini' + (on ? ' lit' : '') + (cls ? ' ' + cls : '')).replace('<svg ', '<svg style="width:' + size + 'px;height:' + size + 'px" '); }   // a solid little ball: dim until its goal is scored (the lamp's color does that)
-  function svg(name, scale, cls, color) {
+  // the mark for a right answer: the ball is one icon, so it's the same drawing, small and solid (checked at 11 px at 3×: it still reads as a ball)
+  function ballMark(size, cls) { return ballSvg(size, 'mark' + (cls ? ' ' + cls : ''), true); }
+  function ballSvg(size, cls, on) { return ballIcon(0, 'mini' + (on ? ' lit' : '') + (cls ? ' ' + cls : '')).replace('<svg ', '<svg style="width:' + size + 'px;height:' + size + 'px" '); }   // a solid little ball
+  function svg(name, scale, cls, color, pal) {
     if (name === 'ball') return ballSvg(11 * scale, cls, color);
     var rows = SPR[name], paths = {}, inked = rows.join('').indexOf('K') >= 0 && rows.join('').replace(/[.#K]/g, '') !== '';
     rows.forEach(function (r, y) {
@@ -356,7 +415,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
         paths[key] = (paths[key] || '') + 'M' + s + ' ' + y + 'h' + (x - s + 1) + 'v1h-' + (x - s + 1) + 'z';
       }
     });
-    var body = Object.keys(paths).map(function (k) { return '<path' + (k === '#' ? '' : ' fill="' + PAL[k] + '"') + ' d="' + paths[k] + '"/>'; }).join('');
+    var body = Object.keys(paths).map(function (k) { return '<path' + (k === '#' ? '' : ' fill="' + (pal || PAL)[k] + '"') + ' d="' + paths[k] + '"/>'; }).join('');
     return '<svg class="px' + (cls ? ' ' + cls : '') + '" width="' + rows[0].length * scale + '" height="' + rows.length * scale + '" viewBox="0 0 ' + rows[0].length + ' ' + rows.length + '" aria-hidden="true">' + body + '</svg>';
   }
   // pentagons are drawn as true vectors: a pixel grid can't hold their 36° and 72° edges cleanly
@@ -431,12 +490,12 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   var near = function (a, b) { return a.near[b.n] || a.key === b.key || a.hk === b.hk; };
 
   // ---- the draw ----
-  // Each color keeps a line of its cards, oldest first. A day deals from a shuffle of the 24 oldest in each line
+  // Each color keeps a line of its cards, oldest first. A day deals 5 of each from a shuffle of the 24 oldest in each line
   // (reaching further back only when a guardrail needs it), and dealt cards go to the back. So a card comes back
   // as late as the deck allows, and never within 3 months once each color has about 570 cards.
   // Guardrails: at least one women's game card and one rules card, at most 3 from one league,
   // at most one slang card in all (Kid Slang or Parent Slang) and never a red one.
-  var PER = 6, WINDOW = 24, LEAGUE_MAX = 3;
+  var PER = 5, WINDOW = 24, LEAGUE_MAX = 3;   // the shootout: 5 of each color (Morg, Oct 19, 2026)
   function fits(c, got) {
     var lg = 0;
     for (var i = 0; i < got.length; i++) {
@@ -505,12 +564,12 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   function demoDay() { return Math.min(DEMO - 1, Math.max(0, store.get('bsb-demo', 0) | 0)); }   // the playtest's place in its run of boards
   function fresh(day) {
     var b = deal(day);
-    return { v: 1, day: day, tiles: [].concat(b[0], b[1], b[2]).map(function (c) { return { id: c.id, h: c.fp, lk: c.lk, d: c.d, hook: c.hook, w: c.w, m: c.m, ex: c.ex, ch: choices(c, day) }; }),
-      res: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], open: -1, path: [], slots: [] };
+    return { v: 2, day: day, tiles: [].concat(b[0], b[1], b[2]).map(function (c) { return { id: c.id, h: c.fp, lk: c.lk, d: c.d, hook: c.hook, w: c.w, m: c.m, ex: c.ex, ch: choices(c, day) }; }),
+      res: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], open: -1, path: [], slots: [] };   // v 2: the shootout's 15 cards
   }
   function load() {
     var s = store.get('bsb-daily', null), d = today();
-    if (!(s && s.v === 1 && s.day === d && s.tiles && s.tiles.length === 18)) return fresh(d);
+    if (!(s && s.v === 2 && s.day === d && s.tiles && s.tiles.length === 3 * PER)) return fresh(d);
     s.tiles.forEach(function (t) {   // a board saved before cards had ids: find each card by its words
       if (t.id) return;
       for (var i = 0; i < ALL.length; i++) if (ALL[i].w === t.w && ALL[i].ex === t.ex) { t.id = ALL[i].id; t.h = ALL[i].fp; t.lk = ALL[i].lk; break; }
@@ -520,8 +579,8 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   var S = load();
   var save = function () { store.set('bsb-daily', S); };
   var chips = function () { return S.res.filter(function (x) { return x === 1; }).length; };
-  var over = function () { return S.res.indexOf(2) >= 0 || chips() === 18; };
-  var RESULT = ['Nil', 'Goal!', 'Brace!!', 'Hat Trick!!!'];   // Morg, Oct 17, 2026: one to three exclamation points
+  var over = function () { return S.res.indexOf(0) < 0; };   // every card played: a miss no longer ends the day
+  var ALLN = 3 * PER, GOLAZO = 'GOLAZO!';   // 15/15 (Morg's name and caps, Oct 19, 2026)
   if (DEV) window.TRIVIELA = { deal: deal, choices: choices, ALL: ALL, POOL: POOL, near: near, state: function () { return S; } };   // for tools/drawcheck.py
 
   // ---- the tap shield ----
@@ -541,27 +600,15 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     if (!icon) { g.classList.add('wait'); g.tabIndex = -1; return; }
     g.innerHTML = '<span class="lbl">' + label + '</span>' + svg(icon, 3); g.setAttribute('aria-label', label); g.classList.remove('wait'); g.tabIndex = 0;
   }
-  var SLOTS = [0, 1, 2, 3, 4].map(function (k) { var a = (-90 + 72 * k) * Math.PI / 180; return [50 + 31.5 * Math.cos(a), 50 + 31.5 * Math.sin(a)]; }).concat([[50, 50]]);
   function ballHTML(n, fresh) { return '<div class="ball" id="ball">' + ballIcon(n, '', fresh, true) + '</div>'; }
-  function lampsHTML(goals, scale, ids) {
-    var h = ''; for (var i = 0; i < 3; i++) h += '<i class="lamp' + (i < goals ? ' on' : '') + '"' + (ids ? ' id="lamp' + i + '"' : '') + '>' + svg('ball', scale, '', i < goals) + '</i>';
-    return '<span class="lamps">' + h + '</span>';
-  }
   var COLOR = ['white', 'yellow card', 'red card'];
   function tileHTML(T, i) {
     var st = S.res[i] === 1 ? ' done' : S.res[i] === 2 ? ' miss' : '';
     return '<button type="button" class="key tile c' + T.d + st + '" data-i="' + i + '"' + (S.res[i] || over() ? ' disabled' : '') +
-      ' aria-label="' + esc(T.hook) + ', ' + COLOR[T.d - 1] + '">' + (S.res[i] ? svg(S.res[i] === 1 ? 'ok' : 'no', 3) : '<span class="hk">' + num(keep(esc(T.hook))) + '</span>') + '</button>';
+      ' aria-label="' + esc(T.hook) + ', ' + COLOR[T.d - 1] + (S.res[i] ? (S.res[i] === 1 ? ', right' : ', missed') : '') + '">' + (S.res[i] ? (S.res[i] === 1 ? ballMark(22, 'res') : svg('no', 2, 'res')) : '<span class="hk">' + num(keep(esc(T.hook))) + '</span>') + '</button>';
   }
-  // chips in the ball and goals banked. Just after a goal-making answer, the ball still shows all six until the goal lands
-  function score(landing) {
-    var n = chips(), inBall = n % PER, goals = Math.floor(n / PER);
-    if (landing && n && !inBall) { inBall = PER; goals--; }
-    return { inBall: inBall, goals: goals };
-  }
-  function board(pending) {
-    var sc = score(pending !== undefined);
-    $('v-board').innerHTML = '<div class="pitch">' + ballHTML(sc.inBall, pending) + lampsHTML(sc.goals, 2, true) + '</div>';
+  function board(fresh) {   // fresh: the panel just lit, so it bumps
+    $('v-board').innerHTML = '<div class="pitch">' + ballHTML(chips(), fresh) + '</div>';
     $('p-board').innerHTML = S.tiles.map(function (T, i) { return tileHTML(T, i); }).join('');
     document.querySelectorAll('[data-i]').forEach(function (b) { b.addEventListener('click', function (e) { e.stopPropagation(); open(+b.dataset.i); }); });
     requestAnimationFrame(fitAll);
@@ -589,11 +636,20 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     }
     S.open = i; S.path.push(i); save(); ask();
   }
-  function hud(landing) {
-    var sc = score(landing), p = ''; for (var i = 0; i < PER; i++) p += '<i' + (i < sc.inBall ? ' class="on"' : '') + '></i>';
-    $('lvl').innerHTML = '<i class="chip-card c' + T.d + '"></i><span class="pips" id="pips">' + p + '</span>';
-    $('hud-goals').innerHTML = lampsHTML(sc.goals, 2);
-    return sc;
+  // the shootout, row by color in the order played: [[1, 2, 0, 0, 0], ...] (1 right, 2 missed, 0 still to play)
+  function rows() {
+    var r = [[], [], []];
+    S.path.forEach(function (i) { if (S.res[i]) r[S.tiles[i].d - 1].push(S.res[i]); });
+    return r.map(function (x) { while (x.length < PER) x.push(0); return x; });
+  }
+  function hud(bump) {   // the card's color, and the scoreboard: the card in play blinks in its row
+    var r = rows(), now = answered ? -1 : T.d - 1, cell = now >= 0 ? r[now].indexOf(0) : -1, h = '';
+    r.forEach(function (row, y) { row.forEach(function (v, x) {
+      var cls = v === 1 ? 'ok' : v === 2 ? 'no' : y === now && x === cell ? 'now' : '';
+      h += '<i class="' + cls + (bump && y === T.d - 1 && x === bump - 1 ? ' bump' : '') + '">' + svg(v === 1 || cls === 'now' ? 'dot' : v === 2 ? 'no' : 'ring', 1) + '</i>';
+    }); });
+    $('lvl').innerHTML = '<i class="chip-card c' + T.d + '"></i>';
+    $('sb').innerHTML = h;
   }
   function ask() {
     T = S.tiles[S.open]; answered = false;
@@ -606,7 +662,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
       b.addEventListener('click', function () { answer(p, b); });
       $('choices').appendChild(b);
     });
-    go(null); beta(null); view('play');
+    go(null); beta(null); view('play'); reserve();
   }
   function answer(p, btn) {
     if (answered) return; answered = true;
@@ -618,32 +674,29 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
       else if (b === btn) { b.classList.add('wrong'); b.lastChild.innerHTML = svg('no', 3); }
       else b.classList.add('dim');
     });
-    if (ok) { var pi = $('pips').children[hud(true).inBall - 1]; pi.classList.remove('bump'); void pi.offsetWidth; pi.classList.add('bump'); }
+    hud(rows()[T.d - 1].lastIndexOf(ok ? 1 : 2) + 1);
     go('next', 'Next'); beta(T, 'play');
     $('q').classList.toggle('missed', !ok); $('q').innerHTML = sentence(T, true); flick();
     if (document.activeElement && document.activeElement.blur) document.activeElement.blur();   // no leftover focus ring after a tap
   }
-  var settle = null;   // lands a flying chip, and its goal, at once if the player taps another tile first
-  function next() {   // after an answer: a right one flies its chip into the ball, a miss ends the day
-    var i = S.open, ok = S.res[i] === 1;
+  var settle = null;   // ends the GOLAZO! moment at once if the player taps on
+  function next() {   // after an answer: back to the board, where a right one lights the next panel of the ball
+    var i = S.open, ok = S.res[i] === 1, n = chips(), timer = null;
     S.open = -1; save(); go(null); beta(null);
-    if (!ok) return end();
-    var n = chips(), k = (n - 1) % PER, goal = !(n % PER), timer = null;
-    board(k); view('board');
-    function scored() {   // the goal lands: a lamp lights and the ball empties
-      settle = null; board(); var l = $('lamp' + (n / PER - 1)); if (l) l.classList.add('new');
+    board(ok ? n - 1 : undefined); view('board');
+    if (!over()) { settle = null; return; }
+    if (n < ALLN) { timer = setTimeout(end, motion() ? 1300 : 0); settle = function () { clearTimeout(timer); end(); }; return; }   // the last card: a beat on the ball, then the grid
+    function golazo() {   // 15/15: the center lights last, the whole ball glows, and the goal scene plays
       var pitch = document.querySelector('#v-board .pitch');
       if (pitch) {
-        pitch.insertAdjacentHTML('beforeend', goalScene(n / PER)); pitch.classList.add('fxon'); setTimeout(function () { var fx = pitch.querySelector('.goalfx'); if (fx) fx.remove(); pitch.classList.remove('fxon'); }, 2600);
-        var sh = document.createElement('p'); sh.className = 'shout'; sh.textContent = RESULT[n / PER]; pitch.appendChild(sh);   // Goal!, Brace!!, Hat Trick!!! (Morg, Oct 18, 2026)
+        pitch.insertAdjacentHTML('beforeend', goalScene(1)); pitch.classList.add('fxon');
+        var sh = document.createElement('p'); sh.className = 'shout'; sh.textContent = GOLAZO; pitch.appendChild(sh);
       }
-      if (n === 18) setTimeout(end, 2800);
+      timer = setTimeout(end, motion() ? 2800 : 0);
     }
-    // the patch lights up in place (Morg, Oct 18, 2026: no flying chips)
-    if (!goal) { settle = null; return; }
-    $('ball').classList.add('goal');   // six patches: a goal
-    timer = setTimeout(scored, motion() ? 950 : 0);
-    settle = function () { clearTimeout(timer); scored(); };
+    $('slot15').classList.add('new'); $('ball').classList.add('goal');
+    timer = setTimeout(golazo, motion() ? 1100 : 0);
+    settle = function () { clearTimeout(timer); end(); };
   }
   // the goal: a still dot-matrix scene, like the LED boards of old arcade soccer (Morg, Oct 18, 2026): the goal and its net,
   // the striker celebrating, the shot's dotted flight and one ball in the net per goal (a Brace shows two, a Hat Trick three).
@@ -662,42 +715,40 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 
   // ---- the end of the day ----
   var tick;
-  function grid() {   // a ball for each goal, then ❌ if a miss ended the day (Morg, Oct 17, 2026)
-    var g = Math.floor(chips() / PER), r = [];
-    for (var k = 0; k < g; k++) r.push('ball');
-    if (S.res.indexOf(2) >= 0) r.push('x');
-    return r;
-  }
-  function streak() { return chips() ? chips() + ' in a row' : ''; }
-  function shareText() {
-    return 'Triviela #' + (S.day + 1) + ' ' + grid().map(function (c) { return c === 'ball' ? '⚽' : '❌'; }).join('') +
-      '\n' + RESULT[Math.floor(chips() / PER)] + (chips() ? ' · ' + streak() : '') + '\ntriviela.net';
+  function shareText() {   // the shootout grid: ⚽ right, ❌ wrong, a row per color, then the score (Morg, Oct 19, 2026)
+    return 'Triviela #' + (S.day + 1) + '\n' + rows().map(function (r) { return r.map(function (v) { return v === 1 ? '⚽' : '❌'; }).join(''); }).join('\n') +
+      '\n' + (chips() === ALLN ? GOLAZO : chips() + '/' + ALLN) + '\ntriviela.net';
   }
   function end() {
-    var n = chips(), g = Math.floor(n / PER), lost = S.res.indexOf(2), L = S.tiles[lost];
-    var word = RESULT[g] + (n ? ' · ' + streak() : '');
-    $('v-end').innerHTML = '<div class="result">' + lampsHTML(g, 3) + '<p class="word">' + esc(RESULT[g]) + (n ? '<span class="run">' + num(esc(streak())) + '</span>' : '') + '</p></div>' +
-      (L ? '<div class="lost"><p class="' + size(L) + ' missed">' + sentence(L, true) + '</p><p class="means">' + num(keep(esc(L.m))) + '</p></div>' : ballHTML(6));
-    $('share-top').innerHTML = '<span class="srow">Triviela ' + num('#' + (S.day + 1)) + ' ' + grid().map(function (c) { return c === 'ball' ? svg('ball', 2, 'ball-i', true) : '<i class="sq x"></i>'; }).join('') + '</span>';
-    $('share-txt').innerHTML = num(esc(word)) + '<br>triviela.net';
+    settle = null; store.set('bsb-intro-off', true);
+    var n = chips(), top = n === ALLN, r = rows(), big = innerHeight > 700 ? 3 : 2;
+    var cells = function (s) { return r.map(function (row, y) { return '<i class="rc c' + (y + 1) + '"></i>' + row.map(function (v) {
+      var b = s === 3 ? 31 : 21;   // every cell the ball's size, so a ✕ sits centered where a ball would
+      return '<span class="em ' + (v === 1 ? 'ok' : 'no') + '" style="width:' + b + 'px;height:' + b + 'px">' + (v === 1 ? ballMark(b) : svg('no', s)) + '</span>'; }).join(''); }).join(''); };
+    $('v-end').className = 'view' + (top ? ' golazo' : '');
+    $('v-end').innerHTML = '<div class="egrid" role="img" aria-label="' + rows().map(function (row, y) { return ['White', 'Yellow', 'Red'][y] + ': ' + row.filter(function (v) { return v === 1; }).length + ' of 5'; }).join(', ') + '">' + cells(big) + '</div>' +
+      '<p class="score">' + (top ? GOLAZO : num(n + '/' + ALLN)) + '</p>';
+    $('share-top').innerHTML = 'Triviela ' + num('#' + (S.day + 1));
+    $('share-txt').innerHTML = '<span class="sgrid">' + r.map(function (row) { return row.map(function (v) { return v === 1 ? ballMark(11) : '<span class="no">' + svg('no', 1) + '</span>'; }).join(''); }).join('') + '</span>' +
+      '<span>' + (top ? '<span class="num">' + GOLAZO + '</span>' : num(n + '/' + ALLN)) + '</span><span>triviela.net</span>';
+    $('share').setAttribute('aria-label', 'Share: ' + shareText().replace(/\n/g, ', '));
     $('share-mark').innerHTML = svg('share', 3);
-    beta(L, 'end'); view('end'); clearInterval(tick); endRow(); if (!DEMO) tick = setInterval(clock, 1000);
+    beta(null); view('end'); clearInterval(tick); endRow(); if (!DEMO) tick = setInterval(clock, 1000);
   }
   function endRow() {   // after a finished board: the countdown to tomorrow's, or in the demo the next board and a way back to #1
     if (Date.now() < holdClock) return;   // a beta message is showing in its place
     var last = !!DEMO && S.day >= DEMO - 1;
-    $('e-again').hidden = !DEMO; $('e-again').classList.toggle('on', last);
+    $('e-again').hidden = !last;
     $('e-next').hidden = !DEMO || last; $('clock').hidden = !!DEMO && !last;
     if (!DEMO) return clock();
-    $('clock').classList.toggle('thanks', last);
-    if (last) { $('clock').textContent = 'Thanks for playing'; return; }
+    if (last) { $('clock').hidden = true; if (!$('thanks-s')) $('v-end').insertAdjacentHTML('afterbegin', '<p class="thanks-s" id="thanks-s">Thanks for playing</p>'); return; }
     $('e-next').innerHTML = 'Play ' + num('#' + (S.day + 2)) + svg('next', 3); $('e-next').setAttribute('aria-label', 'Next day, #' + (S.day + 2));
   }
   function goDay(d) {   // the demo's next board, or back to #1
     if (FIXED !== null) { params.set('day', d + 1); params.set('reset', ''); location.search = params.toString(); return; }   // a preview link's ?day=N
     clearInterval(tick); store.set('bsb-demo', d); store.del('bsb-daily'); S = load(); save(); show();
   }
-  $('e-again').innerHTML = svg('again', 3);
+  $('e-again').innerHTML = svg('again', 3) + '<span>Play again from <span class="num">#1</span></span>';
   // the sign: a dot-matrix board. Background dots glow at random, and the dots inside the 5×7 letters of TRIVIELA,
   // each font pixel 2×2 dots, glow brighter, so the name sits in the noise (Morg, Oct 18, 2026: pointillism)
   var GLYPH = {
@@ -737,8 +788,9 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   $('ra-yes').addEventListener('click', function () { pop('restart-ask', false); goDay(0); });
   ['menu', 'restart-ask', 'intro'].forEach(function (id) { $(id).addEventListener('click', function (e) { if (e.target === $(id)) pop(id, false); }); });   // a tap outside the box closes it
   // how to play: one screen, shown on every visit until the player ticks Don't show this again, and always in the menu
-  function intro() { $('in-off').checked = !!store.get('bsb-intro-off', false); pop('intro', true); }
-  $('in-go').addEventListener('click', function () { if ($('in-off').checked) store.set('bsb-intro-off', true); else store.del('bsb-intro-off'); pop('intro', false); });
+  // How to play shows on every visit until the player's first finished day, then only from the menu (Morg, Oct 19, 2026)
+  function intro() { pop('intro', true); }
+  $('in-go').addEventListener('click', function () { pop('intro', false); });
   if (!store.get('bsb-intro-off', false)) intro();
   $('e-next').addEventListener('click', function () { if (DEMO && S.day < DEMO - 1) goDay(S.day + 1); });
   $('e-again').addEventListener('click', function () { if (DEMO) goDay(0); });
@@ -766,7 +818,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   function marked(t) { var m = MARKS[t.id] || {}; return { flag: !!m.flag, lock: m.lock === undefined ? !!t.lk : !!m.lock }; }
   function beta(t, at) {   // show the keys for card t on the play screen or the end screen, or hide them (t null)
     BT = BETA && t && t.id ? t : null; where = BT ? at : null;
-    $('beta').hidden = where !== 'play'; $('e-flag').hidden = $('e-lock').hidden = where !== 'end'; $('b-msg').textContent = '';
+    $('beta').hidden = where !== 'play'; $('b-flag').hidden = $('b-lock').hidden = where !== 'play'; $('e-flag').hidden = $('e-lock').hidden = where !== 'end'; $('b-msg').textContent = '';
     if (!BT) return;
     paint();
     var id = BT.id;
@@ -817,8 +869,21 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   ['b-lock', 'e-lock'].forEach(function (id) { $(id).addEventListener('click', function (e) { tap(e, 'lock'); }); });
   if (BETA) flush();
 
+
+  // == mockup: the panel reserves room for the two means lines it may show, so the keys never move under a finger
+  function reserve() {
+    var c = $('choices'); c.style.minHeight = '';
+    var base = c.offsetHeight, m = c.cloneNode(true);
+    m.removeAttribute('id'); m.style.cssText = 'position:absolute;visibility:hidden;left:0;top:0;display:flex;width:' + c.offsetWidth + 'px';
+    c.parentNode.appendChild(m);
+    var grow = [].map.call(m.children, function (k, i) { var h0 = c.children[i].offsetHeight; k.classList.add('probe'); return k.offsetHeight - h0; }).sort(function (a, b) { return b - a; });
+    m.remove(); c.style.minHeight = (base + (grow[0] || 0) + (grow[1] || 0)) + 'px';
+  }
+  window.addEventListener('resize', function () { if (cab.dataset.v === 'play' && !answered) reserve(); });
+
   // ---- one tap target: the screen ----
-  $('flip').addEventListener('click', function () { if (cab.dataset.v === 'play' && answered) next(); });
+  // ---- after an answer, the screen or the panel's Next key goes on (option A's go row) ----
+  ['flip', 'go'].forEach(function (id) { $(id).addEventListener('click', function () { if (cab.dataset.v === 'play' && answered) next(); }); });
   function show() {   // open the day where it was left: the end, an open card, or the board
     if (S.open >= 0 && S.res[S.open]) { S.open = -1; save(); }
     if (over()) return end();

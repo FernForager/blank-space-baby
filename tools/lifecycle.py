@@ -6,11 +6,11 @@ Runs twice: as the real daily (DEMO 0) and as the playtest demo (DEMO_DAYS in bu
 
 1. A tapped tile is committed: a reload reopens the same card with the same choices in the same order.
 2. A reload after a right answer keeps the chip, and the board shows it.
-3. The share text matches the locked format exactly (checked through the clipboard).
-4. A finished day reopens to its result and can't be replayed.
+3. A miss doesn't end the day: all 15 cards play, and the share is the shootout grid, exactly (checked through the clipboard).
+4. A finished day reopens to its result and can't be replayed, and How to play stops opening on its own.
 5. At local midnight the countdown runs out and a fresh board appears, numbered one higher.
-   In the demo there is no countdown and midnight changes nothing: the arrow opens #2, the last board ends with a
-   thank-you that a reload keeps, and Start over goes back to #1.
+   In the demo there is no countdown and midnight changes nothing: Play #2 opens #2, the last board ends with a
+   thank-you that a reload keeps, and Play again from #1 goes back to #1.
 6. The right answer never lands in the same slot three cards running.
 Runs on a fake clock set to 23:58 local time on puzzle #1's date.
 """
@@ -28,6 +28,18 @@ def ok(cond, what):
 
 async def tap(pg, sel):   # a tile tap
     await pg.click(sel)
+
+async def answer(pg, i, right):   # play tile i, right or wrong, then tap on. Returns the right answer's slot
+    await tap(pg, f'[data-i="{i}"]'); w = await pg.evaluate("document.getElementById('q').dataset.w")
+    ch = await pg.evaluate("[...document.querySelectorAll('.choice')].map(b => b.dataset.w)")
+    pick = w if right else next(x for x in ch if x != w)
+    await pg.click(f'.choice[data-w="{pick}"]'); await pg.wait_for_timeout(40); await pg.click('#flip'); await pg.wait_for_timeout(60)
+    return ch.index(w)
+
+def expected(s, n):   # the share text the locked format gives for a saved day: a row per color, in the order played
+    rows = [''.join('⚽' if s['res'][i] == 1 else '❌' for i in s['path'] if s['tiles'][i]['d'] == d) for d in (1, 2, 3)]
+    right = sum(1 for r in s['res'] if r == 1)
+    return f'Triviela #{n}\n' + '\n'.join(rows) + '\n' + ('GOLAZO!' if right == 15 else f'{right}/15') + '\ntriviela.net'
 
 
 async def run(b, html, demo):
@@ -56,22 +68,20 @@ async def run(b, html, demo):
     s = await state(); v = await pg.evaluate("document.getElementById('cab').dataset.v")
     lit = await pg.evaluate("document.querySelectorAll('#ball .pt.on').length")
     ok(v == 'board' and s['res'][3] == 1 and lit == 1, 'a right answer is saved at once and its chip is in the ball after a reload')
-    # slot rule over the rest of the day, answering right
+    # the rest of the day: every tile is played, two of them wrong, and the right answer never takes one slot 3 times running
     slots = [s['tiles'][3]['ch'].index(next(c for c in s['tiles'][3]['ch'] if c['w'] == s['tiles'][3]['w']))]
-    for i in [x for x in range(18) if x != 3][:11]:
-        await tap(pg, f'[data-i="{i}"]'); w = await pg.evaluate("document.getElementById('q').dataset.w")
-        ch = await pg.evaluate("[...document.querySelectorAll('.choice')].map(b => b.dataset.w)"); slots.append(ch.index(w))
-        await pg.click(f'.choice[data-w="{w}"]'); await pg.click('#flip'); await pg.wait_for_timeout(1200 if (len(slots)) % 6 == 0 else 40)
+    for i in [x for x in range(15) if x != 3]:
+        ch = await answer(pg, i, i not in (5, 10)); slots.append(ch)
     ok(not any(slots[k] == slots[k + 1] == slots[k + 2] for k in range(len(slots) - 2)), f'the right answer never takes one slot 3 times running ({"".join(map(str, slots))})')
-    # 3. a miss ends the day, the share text is exact
-    await tap(pg, '[data-i="16"]'); w = await pg.evaluate("document.getElementById('q').dataset.w")
-    wrong = await pg.evaluate("[...document.querySelectorAll('.choice')].map(b => b.dataset.w).find(x => x !== document.getElementById('q').dataset.w)")
-    await pg.click(f'.choice[data-w="{wrong}"]'); await pg.click('#flip'); await pg.wait_for_timeout(300)
+    # 3. a miss doesn't end the day: all 15 play, then the share is the shootout grid, rows by color in the order played
+    s = await state(); v = await pg.evaluate("document.getElementById('cab').dataset.v")
+    ok(v == 'end' and all(s['res']), f'the day ends only after all 15 cards: {v}')
     await pg.click('#share'); await pg.wait_for_timeout(200)
     text = await pg.evaluate("navigator.clipboard.readText()")
-    ok(text == 'Triviela #1 ⚽⚽❌\nBrace!! · 12 in a row\ntriviela.net', 'the share text is exact: ' + repr(text))
-    lost = await pg.evaluate("document.querySelector('#v-end .lost .fill') && document.querySelector('#v-end .lost .fill').textContent")
-    ok(lost == w, 'the end screen fills in the right answer of the card that got you')
+    ok(text == expected(s, 1), 'the share text is exact: ' + repr(text))
+    score = await pg.evaluate("document.querySelector('#v-end .score').textContent")
+    ok(score == '13/15', f'the end screen shows the score: {score}')
+    ok(await pg.evaluate("localStorage.getItem('bsb-intro-off')") == 'true', 'a finished day stops How to play from opening on its own')
     # 4. locked
     await pg.reload(); await pg.wait_for_timeout(300)
     v = await pg.evaluate("document.getElementById('cab').dataset.v")
@@ -88,33 +98,36 @@ async def run(b, html, demo):
         v = await pg.evaluate("document.getElementById('cab').dataset.v"); s = await state()
         ok(v == 'board' and s['day'] == 1 and not any(s['res']), 'at midnight a fresh board appears, as puzzle #2')
     else:
-        # 5. the demo: no countdown, the arrow opens the next board, the last one thanks you, Start over goes back to #1
+        # 5. the demo: no countdown, Play #2 opens the next board, the last one thanks you and offers Play again from #1
         row = lambda: pg.evaluate("""({ clock: document.getElementById('clock').hidden ? null : document.getElementById('clock').textContent,
             next: document.getElementById('e-next').hidden ? null : document.getElementById('e-next').textContent,
-            again: !document.getElementById('e-again').hidden })""")
-        r = await row(); ok(r == {'clock': None, 'next': 'Play #2', 'again': True}, f'a finished board offers #2 and Start over, with no countdown: {r}')
+            again: !document.getElementById('e-again').hidden, thanks: !!document.getElementById('thanks-s') })""")
+        r = await row(); ok(r == {'clock': None, 'next': 'Play #2', 'again': False, 'thanks': False}, f'a finished board offers only #2, with no countdown (Start over lives in the menu): {r}')
         await pg.clock.run_for(125_000); await pg.wait_for_timeout(300)
         v = await pg.evaluate("document.getElementById('cab').dataset.v"); s = await state()
         ok(v == 'end' and s['day'] == 0, 'midnight changes nothing in the demo')
         await pg.click('#e-next'); await pg.wait_for_timeout(300)
         v = await pg.evaluate("document.getElementById('cab').dataset.v"); s = await state()
-        ok(v == 'board' and s['day'] == 1 and not any(s['res']), 'the arrow opens a fresh board, #2')
-        async def lose():
-            await tap(pg, '[data-i="0"]'); await pg.wait_for_timeout(100)
-            wrong = await pg.evaluate("[...document.querySelectorAll('.choice')].map(b => b.dataset.w).find(x => x !== document.getElementById('q').dataset.w)")
-            await pg.click(f'.choice[data-w="{wrong}"]'); await pg.click('#flip'); await pg.wait_for_timeout(300)
-        await lose(); await pg.click('#share'); await pg.wait_for_timeout(200)
+        ok(v == 'board' and s['day'] == 1 and not any(s['res']), 'Play #2 opens a fresh board, #2')
+        for i in range(15): await answer(pg, i, False)
+        await pg.click('#share'); await pg.wait_for_timeout(200)
         text = await pg.evaluate("navigator.clipboard.readText()")
-        ok(text == 'Triviela #2 ❌\nNil\ntriviela.net', 'board #2 shares as #2: ' + repr(text))
+        ok(text == 'Triviela #2\n' + '❌❌❌❌❌\n' * 3 + '0/15\ntriviela.net', 'board #2, all missed, shares as #2: ' + repr(text))
         await pg.evaluate(f"localStorage.setItem('bsb-demo', '{demo - 1}'); localStorage.removeItem('bsb-daily')"); await pg.reload(); await pg.wait_for_timeout(300)
         s = await state(); ok(s['day'] == demo - 1, f'the demo picks up where it was left, on #{demo}')
-        await lose(); r = await row()
-        ok(r == {'clock': 'Thanks for playing', 'next': None, 'again': True}, f'the last board ends with a thank-you and Start over: {r}')
+        for i in range(15): await answer(pg, i, True)
+        await pg.wait_for_timeout(5000)
+        s = await state(); lit = await pg.evaluate("document.querySelectorAll('#v-board .pt.on, #ball .pt.on').length")
+        await pg.click('#share'); await pg.wait_for_timeout(200)
+        text = await pg.evaluate("navigator.clipboard.readText()")
+        ok(text == f'Triviela #{demo}\n' + '⚽⚽⚽⚽⚽\n' * 3 + 'GOLAZO!\ntriviela.net', 'a perfect day shares as GOLAZO!: ' + repr(text))
+        r = await row()
+        ok(r == {'clock': None, 'next': None, 'again': True, 'thanks': True}, f'the last board thanks you and offers Play again from #1: {r}')
         await pg.reload(); await pg.wait_for_timeout(300); r = await row()
-        ok(await pg.evaluate("document.getElementById('cab').dataset.v") == 'end' and r['clock'] == 'Thanks for playing', 'a reload keeps the thank-you')
+        ok(await pg.evaluate("document.getElementById('cab').dataset.v") == 'end' and r['thanks'], 'a reload keeps the thank-you')
         await pg.click('#e-again'); await pg.wait_for_timeout(300)
         v = await pg.evaluate("document.getElementById('cab').dataset.v"); s = await state()
-        ok(v == 'board' and s['day'] == 0 and not any(s['res']), 'Start over goes back to a fresh #1')
+        ok(v == 'board' and s['day'] == 0 and not any(s['res']), 'Play again from #1 goes back to a fresh #1')
     ok(not errs, 'no JS errors ' + str(errs))
     await ctx.close()
 
