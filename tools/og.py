@@ -6,7 +6,6 @@ The cabinet with the sign lit and one sample card on the screen. Change CARD to 
 """
 import asyncio, os
 from playwright.async_api import async_playwright
-from docsroute import route   # the page plus docs/fonts
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 HTML = open(os.path.join(ROOT, 'docs', 'index.html')).read()
 CARD = 'The halftime orange slices were <span class="nb"><span class="blank"></span></span>'
@@ -21,7 +20,7 @@ async def main():
     async with async_playwright() as p:
         b = await p.chromium.launch(); pg = await b.new_page(viewport={'width': 600, 'height': 315}, device_scale_factor=2)
         await pg.add_init_script("try { localStorage.setItem('bsb-intro-off', 'true') } catch (e) {}")   # skip the how-to-play screen
-        await pg.route('http://bsb.test/**', route(HTML))
+        await pg.route('http://bsb.test/', lambda r: r.fulfill(body=HTML, content_type='text/html'))
         await pg.goto('http://bsb.test/'); await pg.wait_for_timeout(1500)
         await pg.add_style_tag(content=STYLE)
         await pg.evaluate("c => { document.getElementById('cab').dataset.v = 'play'; document.getElementById('q').className = 'sentence'; document.getElementById('q').innerHTML = c; }", CARD)

@@ -1,9 +1,9 @@
 // Offline copy, so the game loads at the field with no signal.
 // The page comes from the network first, so updates land right away. If the network fails,
 // or takes over 3 seconds, the saved copy loads instead. Everything else (fonts, icons) comes
-// from the saved copy first, so a changed font must get a new file name (triviela-pixel-v2.woff2), and a new CACHE name clears the old copies.
-var CACHE = 'bsb-v4';   // v4: the self-hosted fonts (Oct 19, 2026)
-var CORE = ['./', 'manifest.webmanifest', 'icon-192.png', 'apple-touch-icon.png', 'fonts/triviela-pixel-v1.woff2', 'fonts/triviela-arcade-v1.woff2'];
+// from the saved copy first.
+var CACHE = 'bsb-v3';
+var CORE = ['./', 'manifest.webmanifest', 'icon-192.png', 'apple-touch-icon.png'];
 
 self.addEventListener('install', function (e) {
   e.waitUntil(caches.open(CACHE).then(function (c) { return c.addAll(CORE); }).then(function () { return self.skipWaiting(); }));

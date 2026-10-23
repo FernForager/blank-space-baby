@@ -4,18 +4,20 @@
 
 For each size: board (a fresh day), q (a card open), win (a right answer),
 board3 (three panels lit), miss (a wrong answer), end (14/15) and hat (a perfect day, GOLAZO!).
-Prints a line for any screen that scrolls or throws a JS error, and any card that spills out of the panel.
-Uses Playwright's Chromium. The fonts come from docs/fonts, as on the site.
+Prints a line for any screen that scrolls or throws a JS error, the smallest hook font on each board,
+and any hook that still overflows its tile.
+Uses Playwright's Chromium. If Google Fonts can't load in the sandbox, install Press Start 2P and
+Pixelify Sans into ~/.fonts (from raw.githubusercontent.com/google/fonts) so the pixel fonts render.
 """
 import asyncio, json, os, sys
 from playwright.async_api import async_playwright
-from docsroute import route   # the page plus docs/fonts
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 HTML = open(sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, 'docs', 'index.html')).read()
 OUT = os.path.join(ROOT, 'out'); os.makedirs(OUT, exist_ok=True)
 SIZES = [(402, 744), (375, 667), (320, 568)]   # iPhone 17 in the Claude viewer, iPhone SE 2/3, iPhone SE 1
-FONTS = """() => { const t = [...document.querySelectorAll('#p-board .tile')], p = document.getElementById('p-board').getBoundingClientRect();
-  return t.filter(e => { const r = e.getBoundingClientRect(); return r.right > p.right + .5 || r.bottom > p.bottom + .5; }).length; }"""
+FONTS = """() => { const h = [...document.querySelectorAll('.hk')]; if (!h.length) return null;
+  return { min: Math.min(...h.map(e => parseFloat(getComputedStyle(e).fontSize))), max: Math.max(...h.map(e => parseFloat(getComputedStyle(e).fontSize))),
+           over: h.filter(e => e.scrollWidth > e.clientWidth + 0.5).map(e => e.textContent) }; }"""
 
 async def tap(pg, sel):   # a tile tap
     await pg.click(sel)
@@ -28,7 +30,7 @@ async def main():
             ctx = await b.new_context(viewport={'width': W, 'height': H}, device_scale_factor=3)
             pg = await ctx.new_page(); errs = []; pg.on('pageerror', lambda e: errs.append(str(e)))
             await pg.add_init_script("try { localStorage.setItem('bsb-intro-off', 'true') } catch (e) {}")   # skip the how-to-play screen
-            await pg.route('http://bsb.test/**', route(HTML))
+            await pg.route('http://bsb.test/**', lambda r: r.fulfill(body=HTML, content_type='text/html'))
             url = 'http://bsb.test/?day=1'
             async def shot(n):
                 sh = await pg.evaluate("[document.documentElement.scrollHeight, innerHeight]")
@@ -40,8 +42,7 @@ async def main():
                 await pg.click(f'.choice[data-w="{w}"]'); await pg.wait_for_timeout(350)
             await pg.goto(url + '&reset'); await pg.wait_for_timeout(1500)
             await shot('board')
-            f = await pg.evaluate(FONTS)
-            if f: print(W, H, f, 'cards spill out of the panel')
+            f = await pg.evaluate(FONTS); print(W, H, 'hook font', f['min'], '–', f['max'], 'px', ('OVERFLOW ' + str(f['over'])) if f['over'] else '')
             await tap(pg, '[data-i="0"]'); await pg.wait_for_timeout(400); await shot('q')
             w = await pg.evaluate("document.getElementById('q').dataset.w")
             await pg.click(f'.choice[data-w="{w}"]'); await pg.wait_for_timeout(400); await shot('win')

@@ -6,7 +6,7 @@ Runs twice: as the real daily (DEMO 0) and as the playtest demo (DEMO_DAYS in bu
 
 1. A tapped tile is committed: a reload reopens the same card with the same choices in the same order.
 2. A reload after a right answer keeps the chip, and the board shows it.
-3. A miss doesn't end the day: all 15 cards play, and the share is the board's grid, every card in its spot, with the best run, exactly (checked through the clipboard).
+3. A miss doesn't end the day: all 15 cards play, and the share is the shootout grid, exactly (checked through the clipboard).
 4. A finished day reopens to its result and can't be replayed, and How to play stops opening on its own.
 5. At local midnight the countdown runs out and a fresh board appears, numbered one higher.
    In the demo there is no countdown and midnight changes nothing: Play #2 opens #2, the last board ends with a
@@ -16,7 +16,6 @@ Runs on a fake clock set to 23:58 local time on puzzle #1's date.
 """
 import asyncio, datetime, json, os, re, sys
 from playwright.async_api import async_playwright
-from docsroute import route   # the page plus docs/fonts
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 HTML = open(sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, 'docs', 'index.html')).read()
 START = json.loads(re.search(r'START = (\[[^\]]+\])', HTML).group(1))
@@ -37,13 +36,10 @@ async def answer(pg, i, right):   # play tile i, right or wrong, then tap on. Re
     await pg.click(f'.choice[data-w="{pick}"]'); await pg.wait_for_timeout(40); await pg.click('#flip'); await pg.wait_for_timeout(60)
     return ch.index(w)
 
-def expected(s, n):   # the share text for a saved day: a row per color, every card in its board spot, a miss as its card
-    rows = [''.join('⚽' if s['res'][i] == 1 else '⬜🟨🟥'[d - 1] for i in range(15) if s['tiles'][i]['d'] == d) for d in (1, 2, 3)]
+def expected(s, n):   # the share text the locked format gives for a saved day: a row per color, in the order played
+    rows = [''.join('⚽' if s['res'][i] == 1 else '❌' for i in s['path'] if s['tiles'][i]['d'] == d) for d in (1, 2, 3)]
     right = sum(1 for r in s['res'] if r == 1)
-    best = run = 0   # the longest run of right answers in the order played
-    for i in s['path']: run = run + 1 if s['res'][i] == 1 else 0; best = max(best, run)
-    word = {2: 'Brace!', 3: 'Hat Trick!'}.get(best, f'{best} in a row!') if best >= 2 else ''
-    return f'Triviela #{n}\n' + '\n'.join(rows) + '\n' + ('GOLAZO!' if right == 15 else f'{right}/15' + (' · ' + word if word else '')) + '\ntriviela.net'
+    return f'Triviela #{n}\n' + '\n'.join(rows) + '\n' + ('GOLAZO!' if right == 15 else f'{right}/15') + '\ntriviela.net'
 
 
 async def run(b, html, demo):
@@ -53,7 +49,7 @@ async def run(b, html, demo):
     pg = await ctx.new_page(); errs = []; pg.on('pageerror', lambda e: errs.append(str(e)))
     await pg.add_init_script("try { localStorage.setItem('bsb-intro-off', 'true') } catch (e) {}")   # skip the how-to-play screen
     await pg.clock.install(time=datetime.datetime(START[0], START[1], START[2], 23, 58, 0))
-    await pg.route('https://bsb.test/**', route(html))
+    await pg.route('https://bsb.test/**', lambda r: r.fulfill(body=html, content_type='text/html'))
     await pg.goto('https://bsb.test/'); await pg.wait_for_timeout(300)
     state = lambda: pg.evaluate("JSON.parse(localStorage.getItem('bsb-daily'))")
     s = await state(); ok(s and s['day'] == 0, 'a fresh day is saved as soon as the board opens')
@@ -116,7 +112,7 @@ async def run(b, html, demo):
         for i in range(15): await answer(pg, i, False)
         await pg.click('#share'); await pg.wait_for_timeout(200)
         text = await pg.evaluate("navigator.clipboard.readText()")
-        ok(text == 'Triviela #2\n⬜⬜⬜⬜⬜\n🟨🟨🟨🟨🟨\n🟥🟥🟥🟥🟥\n0/15\ntriviela.net', 'board #2, all missed, shares as #2: ' + repr(text))
+        ok(text == 'Triviela #2\n' + '❌❌❌❌❌\n' * 3 + '0/15\ntriviela.net', 'board #2, all missed, shares as #2: ' + repr(text))
         await pg.evaluate(f"localStorage.setItem('bsb-demo', '{demo - 1}'); localStorage.removeItem('bsb-daily')"); await pg.reload(); await pg.wait_for_timeout(300)
         s = await state(); ok(s['day'] == demo - 1, f'the demo picks up where it was left, on #{demo}')
         for i in range(15): await answer(pg, i, True)

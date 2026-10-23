@@ -57,7 +57,7 @@ REVIEWERS = ('soccer', 'editor', 'facts')   # the soccer expert, the writing edi
 BETA_VETTED_ONLY = True   # True once the first vetting pass is done: until then every card that isn't out or flagged plays
 BETA_MIN = 48              # with BETA_VETTED_ONLY, the build stops if a color has fewer cards than this (twice the draw's window)
 START = [2026, 10, 16]   # the date of puzzle #1: launch day (Morg, Oct 16, 2026). A placeholder until that date is set.
-DEMO_DAYS = 0             # off since Oct 19, 2026: the playtest is a real daily, one board a day (Morg). It was 7: boards #1 to #7 back to back, then a
+DEMO_DAYS = 7             # the playtest (Morg, Oct 17, 2026): boards #1 to #7 back to back, each finished one leading to the next, then a
                           # thank-you and Start over. The date doesn't move it. 0 for the real daily, one board a day from START
 REPEAT_DAYS = 91          # a card never comes back within 3 months, once there are enough cards
 WINDOW = 24               # the draw deals from a shuffle of each color's 24 oldest cards (WINDOW in template.html)

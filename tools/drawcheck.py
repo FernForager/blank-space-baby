@@ -10,7 +10,6 @@ fresh page loads deal the same boards, and times the replay.
 """
 import asyncio, json, os, sys
 from playwright.async_api import async_playwright
-from docsroute import route   # the page plus docs/fonts
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DAYS = int(sys.argv[1]) if len(sys.argv) > 1 else 365
 HTML = open(sys.argv[2] if len(sys.argv) > 2 else os.path.join(ROOT, 'docs', 'index.html')).read()
@@ -49,7 +48,7 @@ async def main():
         for k in range(2):
             pg = await b.new_page()
             await pg.add_init_script("try { localStorage.setItem('bsb-intro-off', 'true') } catch (e) {}")   # skip the how-to-play screen
-            await pg.route('http://bsb.test/**', route(HTML))
+            await pg.route('http://bsb.test/**', lambda r: r.fulfill(body=HTML, content_type='text/html'))
             await pg.goto('http://bsb.test/?day=1&reset'); await pg.wait_for_timeout(300)
             if k == 0: res = await pg.evaluate(CHECK, DAYS)
             prints.append(await pg.evaluate(FINGER, DAYS))
