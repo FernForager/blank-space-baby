@@ -36,10 +36,13 @@ async def answer(pg, i, right):   # play tile i, right or wrong, then tap on. Re
     await pg.click(f'.choice[data-w="{pick}"]'); await pg.wait_for_timeout(40); await pg.click('#flip'); await pg.wait_for_timeout(60)
     return ch.index(w)
 
-def expected(s, n):   # the share text the locked format gives for a saved day: a row per color, in the order played
-    rows = [''.join('⚽' if s['res'][i] == 1 else '❌' for i in s['path'] if s['tiles'][i]['d'] == d) for d in (1, 2, 3)]
+def expected(s, n):   # the share text for a saved day: a row per color, every card in its board spot, a miss as its card, then the best run
+    rows = [''.join('⚽' if s['res'][i] == 1 else '⬜🟨🟥'[d - 1] for i in range(15) if s['tiles'][i]['d'] == d) for d in (1, 2, 3)]
     right = sum(1 for r in s['res'] if r == 1)
-    return f'Triviela #{n}\n' + '\n'.join(rows) + '\n' + ('GOLAZO!' if right == 15 else f'{right}/15') + '\ntriviela.net'
+    best = run = 0   # the longest run of right answers in the order played
+    for i in s['path']: run = run + 1 if s['res'][i] == 1 else 0; best = max(best, run)
+    word = {2: 'Brace!', 3: 'Hat Trick!'}.get(best, f'{best} in a row!') if best >= 2 else ''
+    return f'Triviela #{n}\n' + '\n'.join(rows) + '\n' + ('GOLAZO!' if right == 15 else f'{right}/15' + (' · ' + word if word else '')) + '\ntriviela.net'
 
 
 async def run(b, html, demo):
@@ -112,7 +115,7 @@ async def run(b, html, demo):
         for i in range(15): await answer(pg, i, False)
         await pg.click('#share'); await pg.wait_for_timeout(200)
         text = await pg.evaluate("navigator.clipboard.readText()")
-        ok(text == 'Triviela #2\n' + '❌❌❌❌❌\n' * 3 + '0/15\ntriviela.net', 'board #2, all missed, shares as #2: ' + repr(text))
+        ok(text == 'Triviela #2\n⬜⬜⬜⬜⬜\n🟨🟨🟨🟨🟨\n🟥🟥🟥🟥🟥\n0/15\ntriviela.net', 'board #2, all missed, shares as #2: ' + repr(text))
         await pg.evaluate(f"localStorage.setItem('bsb-demo', '{demo - 1}'); localStorage.removeItem('bsb-daily')"); await pg.reload(); await pg.wait_for_timeout(300)
         s = await state(); ok(s['day'] == demo - 1, f'the demo picks up where it was left, on #{demo}')
         for i in range(15): await answer(pg, i, True)
