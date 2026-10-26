@@ -392,14 +392,14 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 <div class="bimg" id="bimg" hidden><img id="bimg-i" data-t-alt="image.alt"><button class="key" id="bimg-x" type="button" data-t="image.close"></button></div>
 <script>
 (function () {
-  var DECKS = __DECKS__, START = __START__, DEMO = __DEMO__;
+  var DECKS = __DECKS__, START = __START__, DEMO = __DEMO__;   // DEMO: the playtest plays boards #1 to #DEMO back to back (DEMO_DAYS in build.py, 0 for the real daily)
   // every word the game shows or says, apart from the cards, from build/text/en.json (research/text-system.md). tx() gives the plain text,
   // with its {placeholders} filled, for spoken labels, the share and the image. th() gives it typeset for the page: escaped, digits and
   // GOLAZO! in the arcade face, punctuation glued to its word. The markup names its strings with data-t, data-t-label and data-t-alt
   // (filled in once, at load), and text the script writes later carries data-tid, the id of the string it shows, for tools/textcheck.py
   var TEXT = __TEXT__;
   function tx(id, v) { var s = TEXT[id]; if (s == null) return id; return v ? s.replace(/\{(\w+)\}/g, function (m, k) { return v[k] != null ? v[k] : m; }) : s; }
-  function th(id, v) { return num(keep(esc(tx(id, v)))); }   // DEMO: the playtest plays boards #1 to #DEMO back to back (DEMO_DAYS in build.py, 0 for the real daily)
+  function th(id, v) { return num(keep(esc(tx(id, v)))); }
   // pixel sprites, one string per row ('#' = lit pixel)
   var SPR = {
     // color sprites: K ink, W white
