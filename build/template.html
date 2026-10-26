@@ -989,7 +989,9 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   $('e-next').addEventListener('click', function () { if (DEMO && S.day < DEMO - 1) goDay(S.day + 1); });
   $('e-again').addEventListener('click', function () { if (DEMO) goDay(0); });
   function clock() {   // the countdown to tomorrow's board, at local midnight
-    var now = new Date(), left = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1) - now;
+    var now = new Date(), from = new Date(START[0], START[1] - 1, START[2]);   // before #1's date, #1 plays early and stays until the night after it
+    if (now > from) from = now;
+    var left = new Date(from.getFullYear(), from.getMonth(), from.getDate() + 1) - now;
     if (FIXED === null && today() !== S.day) { clearInterval(tick); S = load(); save(); return show(); }
     var s = Math.max(0, Math.floor(left / 1000)), pad = function (x) { return (x < 10 ? '0' : '') + x; };
     if (Date.now() < holdClock) return;   // a beta message is showing in its place

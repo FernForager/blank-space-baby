@@ -57,7 +57,7 @@ VET = os.path.join(HERE, 'vetting')
 REVIEWERS = ('soccer', 'editor', 'facts')   # the soccer expert, the writing editor and the fact checker (Morg, Oct 16, 2026)
 BETA_VETTED_ONLY = True   # True once the first vetting pass is done: until then every card that isn't out or flagged plays
 BETA_MIN = 48              # with BETA_VETTED_ONLY, the build stops if a color has fewer cards than this (twice the draw's window)
-START = [2026, 10, 25]   # the date of puzzle #1: the day Morg shares the playtest link (Oct 25, 2026, Seattle). After the playtest, launch day is #1 again.
+START = [2026, 10, 26]   # the date of puzzle #1 (Morg, Oct 25, 2026: #1 starts at midnight, and he sends the link on the 26th). Before it, #1 plays early. After the playtest, launch day is #1 again.
 DEMO_DAYS = 0             # off since Oct 19, 2026: the playtest is a real daily, one board a day (Morg). It was 7: boards #1 to #7 back to back, then a
                           # thank-you and Start over. The date doesn't move it. 0 for the real daily, one board a day from START
 REPEAT_DAYS = 91          # a card never comes back within 3 months, once there are enough cards
