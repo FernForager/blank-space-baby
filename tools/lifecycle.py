@@ -36,13 +36,10 @@ async def answer(pg, i, right):   # play tile i, right or wrong, then tap on. Re
     await pg.click(f'.choice[data-w="{pick}"]'); await pg.wait_for_timeout(40); await pg.click('#flip'); await pg.wait_for_timeout(60)
     return ch.index(w)
 
-def expected(s, n):   # the share text for a saved day: a row per color, every card in its board spot, a miss as its card, then the best run
+def expected(s, n):   # the share text for a saved day: a row per color, every card in its board spot, a miss as its card, then the score
     rows = [''.join('⚽' if s['res'][i] == 1 else '⬜🟨🟥'[d - 1] for i in range(15) if s['tiles'][i]['d'] == d) for d in (1, 2, 3)]
     right = sum(1 for r in s['res'] if r == 1)
-    best = run = 0   # the longest run of right answers in the order played
-    for i in s['path']: run = run + 1 if s['res'][i] == 1 else 0; best = max(best, run)
-    word = {2: 'Brace!', 3: 'Hat Trick!'}.get(best, f'{best} in a row!') if best >= 2 else ''
-    return f'Triviela #{n}\n' + '\n'.join(rows) + '\n' + ('GOLAZO!' if right == 15 else f'{right}/15' + (' · ' + word if word else '')) + '\ntriviela.net'
+    return f'Triviela #{n}\n' + '\n'.join(rows) + '\n' + ('GOLAZO!' if right == 15 else f'{right}/15') + '\ntriviela.net'
 
 
 async def run(b, html, demo):

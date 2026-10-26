@@ -319,7 +319,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 @media (max-height: 640px) { #p-board.tiles { column-gap: 10px; } .panel { padding-left: 8px; padding-right: 8px; } }
 @media (max-height: 640px) { .gorow, .endrow { min-height: 48px; } .gorow .gokey, .endrow .next.key, .endrow .again.key, .sheet .menu-box #m-close, .mrow .key { min-height: 48px; } .gorow { margin-top: 8px; } .ask-pop.sheet { padding-bottom: max(12px, env(safe-area-inset-bottom, 0px)); } }
 
-/* brought back from beta-oct22 at Morg's pick (Oct 25, 2026): a referee's card for a miss, the category tag, streaks and Share board */
+/* brought back from beta-oct22 at Morg's pick (Oct 25, 2026): a referee's card for a miss, the category tag and Share board (streaks came out Oct 26) */
 .rcard { display: inline-block; flex: none; width: 13px; height: 18px; border-radius: 2px; box-shadow: 0 0 0 1px rgba(0,0,0,.2); }   /* a referee's card */
 .rcard.c1 { background: var(--c1); box-shadow: 0 0 0 1px #B9B2A3; } .rcard.c2 { background: var(--c2); } .rcard.c3 { background: var(--c3); }
 .egrid .em.no .rcard { box-shadow: 0 0 6px rgba(255,255,255,.25); }
@@ -331,9 +331,6 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .tile .tag { display: block; flex: none; max-width: calc(100% - 22px); opacity: .55; overflow: hidden; text-overflow: clip; }
 .tile .hk { margin: auto 0; }
 .tile.done .tag, .tile.miss .tag { display: none; }
-/* a streak's shout, over the ball on the way back to the board: smaller and quicker than GOLAZO!'s */
-.pitch .shout.streak { animation-duration: 1.6s; }
-.best { margin: -2cqh 0 0; color: var(--glow); text-shadow: 0 0 6px rgba(92,240,154,.6); }
 /* Share board, beside the countdown */
 .endrow .sboard { flex: 1; min-height: 52px; display: flex; align-items: center; justify-content: center; gap: 8px; }
 .endrow .sboard svg { flex: none; }
@@ -373,7 +370,6 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
       <li data-t="intro.cards"></li>
       <li class="in-colors"><span><i class="tc c1"></i><span data-t="intro.easy"></span></span><span><i class="tc c2"></i><span data-t="intro.harder"></span></span><span><i class="tc c3"></i><span data-t="intro.hardest"></span></span></li>
       <li data-t="intro.all"></li>
-      <li data-t="intro.streaks"></li>
       <li data-t="intro.golazo"></li>
     </ul>
     <button class="key yes in-go" id="in-go" type="button" data-t="intro.go"></button>
@@ -836,19 +832,12 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     if (document.activeElement && document.activeElement.blur) document.activeElement.blur();   // no leftover focus ring after a tap
   }
   var settle = null;   // ends the GOLAZO! moment at once if the player taps on
-  // streaks (Morg, Oct 19, 2026, like bowling): right answers in a row, in the order played. A lone right answer stays quiet, 2 shouts
-  // Brace!, 3 Hat Trick! (hat trick began in cricket as three in a row), then the count. GOLAZO! stays 15 of 15. The best run is the
-  // longest anywhere in the day, so an early miss never ends the story
-  function streak() { var run = 0; S.path.forEach(function (i) { run = S.res[i] === 1 ? run + 1 : S.res[i] === 2 ? 0 : run; }); return run; }
-  function best() { var b = 0, run = 0; S.path.forEach(function (i) { run = S.res[i] === 1 ? run + 1 : 0; b = Math.max(b, run); }); return b; }
-  function streakId(n) { return n >= ALLN ? 'golazo' : n === 2 ? 'streak.2' : n === 3 ? 'streak.3' : 'streak.n'; }
-  function streakWord(n) { return n < 2 ? '' : tx(streakId(n), { n: n }); }
+  // streak shouts (Brace!, Hat Trick!, 4 in a row!) and the best run came out on Oct 26, 2026 (Morg: “Best: 4 in a row!” was hard
+  // to read). GOLAZO! stays for 15/15. A title for every score, 0 to 15, is on Morg’s list. Streaks are saved on beta-oct22
   function next() {   // after an answer: back to the board, where a right one lights the next panel of the ball
     var i = S.open, ok = S.res[i] === 1, n = chips(), timer = null;
     S.open = -1; save(); go(null); beta(null);
     board(ok ? n - 1 : undefined); view('board');
-    var run = ok ? streak() : 0, pitch = document.querySelector('#v-board .pitch');
-    if (run >= 2 && run < ALLN && pitch) { var sh = document.createElement('p'); sh.className = 'shout streak'; sh.dataset.tid = streakId(run); sh.dataset.tv = JSON.stringify({ n: run }); sh.dataset.tplain = 1; sh.textContent = streakWord(run); pitch.appendChild(sh); }
     if (!over()) { settle = null; return; }
     if (n < ALLN) { timer = setTimeout(end, motion() ? 1300 : 0); settle = function () { clearTimeout(timer); end(); }; return; }   // the last card: a beat on the ball, then the grid
     function golazo() {   // 15/15: the center lights last, the whole ball glows, and the goal scene plays
@@ -900,7 +889,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
       '\n' + scoreLine() + '\n' + tx('share.site');
   }
   function score() { return tx('end.score', { n: chips(), all: ALLN }); }
-  function scoreLine() { return chips() === ALLN ? GOLAZO : best() >= 2 ? tx('share.scoreBest', { score: score(), run: streakWord(best()) }) : score(); }
+  function scoreLine() { return chips() === ALLN ? GOLAZO : score(); }
   function end() {
     settle = null; store.set('bsb-intro-off', true); report();
     var n = chips(), top = n === ALLN, r = rows(), big = innerHeight > 700 ? 3 : 2;
@@ -911,11 +900,11 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     REV = -1;
     $('v-end').className = 'view' + (top ? ' golazo' : '');
     $('v-end').innerHTML = '<div class="egrid" role="group" aria-label="' + esc(tx('end.grid', { rows: rows().map(function (row, y) { return tx('end.row', { color: tx('row.' + (y + 1)), n: row.filter(function (v) { return v === 1; }).length }); }).join(', ') })) + '">' + cells(big) + '</div>' +
-      '<p class="score"' + (top ? ' data-tid="golazo" data-tplain="1"' : ' data-tid="end.score"' + tv({ n: n, all: ALLN })) + '>' + (top ? esc(GOLAZO) : num(esc(score()))) + '</p>' + (!top && best() >= 2 ? '<p class="best" data-tid="end.best" data-tplain="1"' + tv({ run: streakWord(best()) }) + '>' + esc(tx('end.best', { run: streakWord(best()) })) + '</p>' : '') +
+      '<p class="score"' + (top ? ' data-tid="golazo" data-tplain="1"' : ' data-tid="end.score"' + tv({ n: n, all: ALLN })) + '>' + (top ? esc(GOLAZO) : num(esc(score()))) + '</p>' +
       '<p class="rhint" data-tid="end.reviewHint">' + th('end.reviewHint') + '</p>';
     $('share-top').innerHTML = th('share.title', { day: S.day + 1 }); $('share-top').dataset.tid = 'share.title'; $('share-top').dataset.tv = JSON.stringify({ day: S.day + 1 });
     $('share-txt').innerHTML = '<span class="sgrid">' + r.map(function (row, y) { return row.map(function (v) { return v === 1 ? ballMark(11) : rcard(y + 1); }).join(''); }).join('') + '</span>' +
-      '<span data-tid="' + (chips() === ALLN ? 'golazo' : best() >= 2 ? 'share.scoreBest' : 'end.score') + '"' + tv({ score: score(), run: streakWord(best()), n: chips(), all: ALLN }) + '>' + num(keep(esc(scoreLine()))) + '</span><span data-tid="share.site">' + th('share.site') + '</span>';
+      '<span data-tid="' + (chips() === ALLN ? 'golazo' : 'end.score') + '"' + tv({ n: chips(), all: ALLN }) + '>' + num(keep(esc(scoreLine()))) + '</span><span data-tid="share.site">' + th('share.site') + '</span>';
     $('share').setAttribute('aria-label', tx('share.label', { text: shareText().replace(/\n/g, ', ') }));
     $('share-mark').innerHTML = svg('share', 3);
     beta(null); view('end'); clearInterval(tick); endRow(); if (!DEMO) tick = setInterval(clock, 1000);
@@ -1022,7 +1011,6 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     g.textAlign = 'center'; g.textBaseline = 'alphabetic';
     g.font = '64px "Press Start 2P"'; g.fillStyle = '#5CF09A'; g.shadowColor = 'rgba(92,240,154,.7)'; g.shadowBlur = 18; g.fillText(tx('image.title'), W / 2, 140);
     var n = chips(); g.shadowBlur = 0; g.font = '40px "Press Start 2P"'; g.fillStyle = '#FFFFFF'; g.fillText(tx('image.score', { day: S.day + 1, score: n === ALLN ? GOLAZO : score() }), W / 2, 222);
-    if (n < ALLN && best() >= 2) { g.fillStyle = '#5CF09A'; words(tx('end.best', { run: streakWord(best()) }), W / 2, 282, 33); }
     var CW = 176, CH = 236, GX = 16, GY = 34, X0 = (W - 5 * CW - 4 * GX) / 2 + 14, Y0 = 330, COLS = ['#FFFFFF', '#F7C948', '#D52B1E'];
     function runs(text, size) {   // Pixelify Sans, with its digits in the arcade face as in the game (Pixelify's 5 reads as an S)
       return String(text).split(/(\d+)/).filter(Boolean).map(function (r) { var f = /^\d/.test(r) ? (size * 8 / 11) + 'px "Press Start 2P"' : '600 ' + size + 'px "Pixelify Sans"'; g.font = f; return { r: r, f: f, w: g.measureText(r).width }; });
@@ -1216,7 +1204,6 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
       [].forEach.call(document.querySelectorAll('[data-tid]'), function (el) {
         var id = el.dataset.tid; if (!(id in TEXT)) return;
         var v = el.dataset.tv ? JSON.parse(el.dataset.tv) : null;
-        if (v && 'run' in v && v.run && id !== 'end.best' && id !== 'share.scoreBest') v.run = streakWord(best());
         if (el.dataset.tplain) el.textContent = tx(id, v); else el.innerHTML = th(id, v);
       });
       tighten(document);   // tags too wide for their tile

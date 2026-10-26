@@ -40,10 +40,8 @@
   "@intro.hardest": { "note": "How to play, line 2: beside a red card", "slot": "introColor" },
   "intro.all": "Play all 15, right or wrong.",
   "@intro.all": { "note": "How to play, line 3. One line", "slot": "introLine" },
-  "intro.streaks": "Right in a row: Brace!, Hat Trick!",
-  "@intro.streaks": { "note": "How to play, line 4. Should match streak.2 and streak.3. One line", "slot": "introLine" },
   "intro.golazo": "Light the whole ball: GOLAZO!",
-  "@intro.golazo": { "note": "How to play, line 5. Should match golazo. One line", "slot": "introLine" },
+  "@intro.golazo": { "note": "How to play, line 4. Should match golazo. One line", "slot": "introLine" },
   "intro.go": "Kick off",
   "@intro.go": { "note": "How to play's green key, closes it", "slot": "introGo" },
 
@@ -102,12 +100,6 @@
   "tag.clubs": "Clubs",
   "@tag.clubs": { "note": "Category tag: Club Nicknames", "slot": "tag" },
 
-  "streak.2": "Brace!",
-  "@streak.2": { "note": "Shouted over the ball after 2 right in a row, and the best run's name on the end screen and in the share", "slot": "streak" },
-  "streak.3": "Hat Trick!",
-  "@streak.3": { "note": "Shouted after 3 right in a row, and the best run's name", "slot": "streak" },
-  "streak.n": "{n} in a row!",
-  "@streak.n": { "note": "Shouted after 4 or more right in a row (up to 14), and the best run's name", "slot": "streak", "placeholders": { "n": { "example": "4", "widest": "14" } } },
   "golazo": "GOLAZO!",
   "@golazo": { "note": "All 15 right: the shout over the ball, the end screen's score and the share's score line. Always in the arcade face (Morg's name and caps)", "slot": "shout" },
 
@@ -123,8 +115,6 @@
   "@row.3": { "note": "The red row's spoken name" },
   "end.score": "{n}/{all}",
   "@end.score": { "note": "The day's score: on the end screen, in the share and in the image", "slot": "score", "placeholders": { "n": { "example": "11" }, "all": { "example": "15" } } },
-  "end.best": "Best: {run}",
-  "@end.best": { "note": "Under the score on the end screen and in the image, when the day's longest run is 2 or more and the day isn't perfect", "slot": "best", "placeholders": { "run": { "example": "Hat Trick!", "widest": "14 in a row!" } } },
   "end.thanks": "Thanks for playing",
   "@end.thanks": { "note": "Top of the end screen on the demo's last board", "slot": "thanks" },
   "end.next": "Play #{day}",
@@ -149,8 +139,6 @@
 
   "share.title": "Triviela #{day}",
   "@share.title": { "note": "The share text's first line, also shown on the share key", "slot": "shareKey", "placeholders": { "day": { "example": "42", "widest": "365" } } },
-  "share.scoreBest": "{score} · {run}",
-  "@share.scoreBest": { "note": "The share's score line when the best run is 2 or more", "slot": "shareKey", "placeholders": { "score": { "example": "11/15" }, "run": { "example": "Brace!", "widest": "14 in a row!" } } },
   "share.site": "triviela.net",
   "@share.site": { "note": "The share text's last line, on the share key and at the bottom of the image", "slot": "shareKey" },
   "share.label": "Share: {text}",

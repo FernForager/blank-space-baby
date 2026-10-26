@@ -6,8 +6,7 @@
     python3 tools/textcheck.py --page FILE  # another build
     python3 tools/textcheck.py --states     # also list the slots each screen showed
 
-It plays the daily, the 7-board demo and the lock (switched off on the real site) on puzzle #365, the widest number, and on a day
-whose best run is 14, the widest streak. In every screen it finds every slot in build/text/slots.json and checks the text in it:
+It plays the daily, the 7-board demo and the lock (switched off on the real site) on puzzle #365, the widest number. In every screen it finds every slot in build/text/slots.json and checks the text in it:
   - fits: no letter outside its box, and nothing cut off by a box that clips
   - lines: no more than the slot's "lines"
   - even: two or more lines, the last at least a third as wide as the longest (a lone word on its own line reads as a mistake)
@@ -172,11 +171,11 @@ async def main():
                     await pg.click('#flip'); await pg.wait_for_timeout(1200)
                     await card(5); await pg.click('#flip'); await pg.wait_for_timeout(250); await look('streak')
                     await pg.wait_for_timeout(1800)
-                    # the widest streak: a miss, then 14 right in a row
+                    # a day with one miss
                     await setday([2] + [1] * 12 + [0, 0], list(range(13)))
                     await card(13); await pg.click('#flip'); await pg.wait_for_timeout(1700)
-                    await card(14); await pg.click('#flip'); await pg.wait_for_timeout(250); await look('14 in a row')
-                    await pg.wait_for_timeout(1800); await look('end, best run 14')
+                    await card(14); await pg.click('#flip'); await pg.wait_for_timeout(250); await look('last card')
+                    await pg.wait_for_timeout(1800); await look('end, 14 right')
                     await pg.click('.egrid [data-k="0"]'); await pg.wait_for_timeout(420); await look('a card again')   # the grid opens each card again
                     for _ in range(14): await pg.click('#v-end'); await pg.wait_for_timeout(380)
                     await look('the last card again'); await pg.click('#v-end'); await pg.wait_for_timeout(420)

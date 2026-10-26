@@ -17,11 +17,9 @@
   "betaMsg":       { "where": "Play, beta only: Flagged, Locked and the rest", "sel": ".bmsg", "face": "arcade", "size": 8, "track": 1, "wrap": "line", "case": "upper", "lines": 1 },
 
   "shout":         { "where": "Board: GOLAZO! over the ball on a perfect day", "sel": ".pitch .shout", "face": "arcade", "size": "clamp(22px, 9cqw, 34px)", "lh": 1.2, "align": "center" },
-  "streak":        { "where": "Board: Brace!, Hat Trick! or 4 in a row! over the ball", "sel": ".pitch .shout.streak", "size": "clamp(16px, 7cqw, 24px)", "lines": 1 },
 
   "score":         { "where": "End screen: the score, 11/15", "sel": ".score", "face": "arcade", "weight": 400, "size": 26, "short": 22, "lh": 1, "align": "center", "lines": 1 },
   "scoreGolazo":   { "where": "End screen: GOLAZO! in the score's place", "sel": ".golazo .score", "size": 24, "short": 21 },
-  "best":          { "where": "End screen: Best: Hat Trick!, under the score", "sel": ".best", "face": "arcade", "size": 13, "align": "center", "lines": 1 },
   "thanks":        { "where": "End screen: Thanks for playing, the demo's last board", "sel": ".thanks-s", "size": 18, "align": "center", "lines": 1 },
   "shareKey":      { "where": "End screen: the share key, showing the text it sends", "sel": ".share", "size": 17, "lh": 1.25, "align": "left" },
   "shareLines":    { "where": "End screen: the share key's line height", "sel": ".share .txt", "lh": 1.12 },
