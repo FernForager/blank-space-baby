@@ -123,7 +123,7 @@
   "@end.nextLabel": { "note": "Spoken name of end.next", "placeholders": { "day": { "example": "2" } } },
   "end.again": "Play again from #1",
   "@end.again": { "note": "The demo's last board: back to #1", "slot": "endKey" },
-  "end.sboard": "Share board",
+  "end.sboard": "Share scoreboard",
   "@end.sboard": { "note": "End screen key beside the countdown: shares the board as a picture", "slot": "endKey" },
 
   "end.nextIn": "Next board in",

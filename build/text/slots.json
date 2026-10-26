@@ -23,7 +23,7 @@
   "thanks":        { "where": "End screen: Thanks for playing, the demo's last board", "sel": ".thanks-s", "size": 18, "align": "center", "lines": 1 },
   "shareKey":      { "where": "End screen: the share key, showing the text it sends", "sel": ".share", "size": 17, "lh": 1.25, "align": "left" },
   "shareLines":    { "where": "End screen: the share key's line height", "sel": ".share .txt", "lh": 1.12 },
-  "endKey":        { "where": "End screen: Play #2 and Play again from #1, the demo's keys", "sel": ".endrow .next, .endrow .next.key, .endrow .again.key", "size": 17, "lines": 2 },
+  "endKey":        { "where": "End screen: Play #2 and Play again from #1, the demo's keys", "sel": ".endrow .next, .endrow .next.key, .endrow .again.key", "size": 17, "lines": 3 },
   "sboard":        { "where": "End screen: the Share board key", "sel": ".endrow .sboard", "size": 17, "wrap": "line", "lines": 1 },
   "clockLabel":    { "where": "End screen: Next board in, over the countdown", "sel": ".clock .clk-l", "face": "pixel", "size": 13, "short": 12, "lh": 1.1, "track": 0, "align": "center", "lines": 1 },
   "endHint":       { "where": "End screen: the line under the score saying the grid opens your cards", "sel": ".rhint", "size": 15, "short": 13, "align": "center", "lines": 1 },

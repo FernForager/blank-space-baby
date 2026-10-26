@@ -334,7 +334,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 /* Share board, beside the countdown */
 .endrow .sboard { flex: 1; min-height: 52px; display: flex; align-items: center; justify-content: center; gap: 8px; }
 .endrow .sboard svg { flex: none; }
-@media (max-width: 360px) { .endrow .sboard svg { display: none; } }
+@media (max-width: 360px) { .endrow .sboard svg, .endrow .again.key svg { display: none; } }
 @media (max-height: 640px) { .endrow .sboard { min-height: 48px; } }
 .bimg { position: fixed; inset: 0; z-index: 60; background: rgba(7,19,12,.92); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; padding: 18px; }
 .bimg[hidden] { display: none; }
