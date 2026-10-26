@@ -36,8 +36,8 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .marquee.dm { height: 84px; padding: 0; box-sizing: border-box; }
 /* the sign's subheading (Morg, Oct 19, 2026: what the game is, under the name, apart from the question that invites you to play):
    crisp arcade letters under the dots, solid and unglowing, at a size that lands on whole device pixels (10.67 px is 4 per font pixel at 3x).
-   Since Oct 26, 2026 it says Daily soccer trivia shootout and sits centered under the whole sign, the name and the menu together (Morg),
-   above the menu's dark backing so its last letters stay bright */
+   Since Oct 26, 2026 it sits centered under the whole sign, the name and the menu together (Morg), above the menu's dark backing so
+   its last letters stay bright */
 .marquee.dm .subhead { position: absolute; left: 0; right: 0; bottom: 9px; z-index: 2; margin: 0; color: #C9FFDD; text-shadow: none; pointer-events: none; }   /* no glow: a glow blurs pixel letters (Morg: clean and quiet) */
 .marquee.dm canvas { position: absolute; inset: 7px 8px 25px; width: calc(100% - 16px); height: calc(100% - 32px); }
 .cab.poweron .marquee.dm canvas { animation: power .6s steps(6); }

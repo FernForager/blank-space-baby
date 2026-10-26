@@ -26,6 +26,7 @@ Write a JSON file (path given in your task) shaped exactly like:
 - Deadpan school-workbook tone: plain, dry, simple. The answer supplies the fun.
 - Kid-safe. Anything borderline (sexual, drugs/alcohol, violence, slurs, mean-spirited, gossip about private lives, rude) is OUT. When unsure, cut it and list it in `cut`.
 - Spelling: American.
+- Try to avoid the words soccer and football (Morg, Oct 26, 2026: the game stays global and never names the sport). Write “the game”, a role or the thing itself instead. Keep one only where the word is the fact (soccer mom, total football, footy).
 
 ## Accuracy
 - Research with WebSearch/WebFetch. Do not go from memory for any fact that could have changed. Today is 2026-10-14.
