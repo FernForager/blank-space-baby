@@ -662,7 +662,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     var g = {}; (D.groups || []).forEach(function (grp, i) { grp.forEach(function (w) { (g[w] = g[w] || []).push(i); }); });
     D.clash = function (a, b) { return a === b || (g[a] || []).some(function (i) { return (g[b] || []).indexOf(i) >= 0; }); };
     D.cards = D.items.map(function (x, i) {
-      var c = { D: D, id: D.id + ':' + (x.i != null ? x.i : i), fp: x.h, lk: x.lk, w: x.w, m: x.means, ex: x.ex, k: x.k || 'word', hook: x.hook, d: x.d, lg: x.lg || D.lg || '', wm: !!(D.wm || x.wm), rl: !!D.rl, sl: !!D.sl, n: ALL.length };
+      var c = { D: D, id: D.id + ':' + (x.i != null ? x.i : i), fp: x.h, lk: x.lk, w: x.w, m: x.means, ex: x.ex, k: x.k || 'word', hook: x.hook, d: x.d, lg: x.lg || D.lg || '', wm: !!(D.wm || x.wm), rl: !!D.rl, sl: !!D.sl, wr: x.wr, n: ALL.length };   // wr: wrong answers Morg wrote himself
       c.a = toks(c.w); c.key = c.a.join(' '); c.h = toks(c.hook); c.hk = c.h.join(' ');
       c.t = toks(c.ex + ' ' + c.hook + ' ' + c.m);   // everything a player sees of the card: the sentence, its tile and, after answering, its means line
       c.names = /[A-Z]/.test(c.w) && c.a.length > 1 ? c.a.filter(function (w) { return w.length > 3 && !PLAIN[w] && !/^\d+$/.test(w); }) : [];   // Bayern in Bayern Munich
@@ -701,13 +701,18 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     }
     return lg < LEAGUE_MAX;
   }
+  // Morg's own boards (Oct 26, 2026: he curates #2 to #7 himself): build/boards.json pins a day's 15 cards in his order, white,
+  // yellow, red, five each, and the draw takes them as that day's deal, so later days still skip them. A pinned card that can't
+  // play any more (flagged, out) leaves its spot to the draw
+  var PIN = {}, BYID = {}; ALL.forEach(function (c) { BYID[c.id] = c; });
   function dealDay(day, q, last) {
-    var r = rng(hash('triviela day ' + day)), got = [], tiers = [[], [], []];
+    var r = rng(hash('triviela day ' + day)), got = [], tiers = [[], [], []], pin = PIN[day + 1];
     var lists = q.map(function (Q) { return shuffle(Q.slice(0, WINDOW), r).concat(Q.slice(WINDOW)); });
     function take(t, c) { tiers[t].push(c); got.push(c); last[c.n] = day; }
+    if (pin) pin.forEach(function (id) { var c = BYID[id]; if (c && got.indexOf(c) < 0 && q[c.d - 1].indexOf(c) >= 0 && tiers[c.d - 1].length < PER) take(c.d - 1, c); });
     // a guardrail takes a card from the 24 oldest of a color if it can, or else the card that has rested longest
     [function (c) { return c.wm; }, function (c) { return c.rl; }].forEach(function (want) {
-      if (got.some(want)) return;
+      if (got.some(want) || pin) return;   // a pinned board is Morg's call
       var best = null, bt = 0, order = shuffle([0, 1, 2], r);
       order.forEach(function (t) {
         for (var i = 0; !best && i < Math.min(WINDOW, lists[t].length); i++) { var c = lists[t][i]; if (want(c) && fits(c, got)) { best = c; bt = t; } }
@@ -730,7 +735,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
       }
     }
     tiers.forEach(function (T, t) { T.forEach(function (c) { var Q = q[t]; Q.splice(Q.indexOf(c), 1); Q.push(c); }); });
-    return tiers.map(function (T) { return shuffle(T, r); });
+    return pin ? tiers : tiers.map(function (T) { return shuffle(T, r); });   // a pinned board keeps Morg's order
   }
   // the testing boards wore out: before #1 the draw quietly deals PREROLL days nobody plays, so the cards Morg met on his
   // first boards go to the back of their lines (Oct 19, 2026). Raise it again for a fresh run, or set it to 0 at launch.
@@ -750,6 +755,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     var same = shuffle(D.cards.filter(function (x) { return x.k === c.k && ok(x); }), r);
     var any = shuffle(D.cards.filter(function (x) { return x.k !== c.k && ok(x); }), r);
     var picks = [c];
+    if (c.wr) return shuffle(picks.concat(c.wr.map(function (x) { return typeof x === 'string' ? { w: x, m: '' } : { w: x.w, m: x.m || '' }; })), r).map(function (p) { return { w: p.w, m: p.m }; });   // Morg's own wrong answers
     near2(c, seen, r).forEach(function (w) { picks.push({ w: w, m: '' }); });
     same.concat(any).forEach(function (x) { if (picks.length < 3 && !picks.some(function (p) { return D.clash(p.w, x.w); })) picks.push(x); });
     return shuffle(picks, r).map(function (p) { return { w: p.w, m: p.m }; });

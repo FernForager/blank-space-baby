@@ -131,6 +131,7 @@ def shown(w, it):
 def wrong_pool(deck, it, clash=None):
     """The answers the game may put on this card's other two buttons: from its deck, not out, not clashing with its answer
     and not already in its sentence or on its tile. Same kind first, and any kind when the same kind has fewer than two."""
+    if it.get('wr'): return [x if isinstance(x, str) else x['w'] for x in it['wr']]   # Morg's own two wrong answers, and only those
     clash = clash or clasher(deck)
     ok = lambda x: not x.get('out') and not clash(x['w'], it['w']) and not shown(x['w'], it)
     same = list(dict.fromkeys(x['w'] for x in deck['items'] if x.get('k', 'word') == it.get('k', 'word') and ok(x)))
@@ -179,6 +180,26 @@ def league(deck_league, it):
     if deck_league != '*': return deck_league
     return SITE_LEAGUE.get(urlparse(it['src']).netloc.removeprefix('www.'), '')
 
+def pinned(decks):
+    """Morg's own boards (build/boards.json): {"2": [15 card ids], ...}, puzzle number to its cards in board order, five white,
+    then five yellow, then five red. Every card must be in the draw, in its spot's color, and on one board only."""
+    raw = load_json(os.path.join(HERE, 'boards.json'), {})
+    boards = {k: v for k, v in raw.items() if not k.startswith('@')}
+    color = {f"{d['id']}:{x['i']}": x['d'] for d in decks for x in d['items']}
+    bad, seen = [], {}
+    for n, ids in boards.items():
+        if not n.isdigit() or int(n) < 2: bad.append(f'board {n}: boards are puzzle numbers from 2 (#1 stays as dealt)')
+        if len(ids) != 15: bad.append(f'board #{n}: {len(ids)} cards, not 15')
+        for k, cid in enumerate(ids):
+            if cid not in color: bad.append(f'board #{n}: {cid} is not in the draw (out, flagged, waiting on a reviewer, or no such card)'); continue
+            if color[cid] != k // 5 + 1: bad.append(f'board #{n}: {cid} is {("white", "yellow", "red")[color[cid] - 1]} but sits in spot {k + 1}')
+            if cid in seen: bad.append(f'board #{n}: {cid} is on board #{seen[cid]} too')
+            seen[cid] = n
+    if bad:
+        print('\nProblems with build/boards.json:'); [print('  ', b) for b in bad]; sys.exit(1)
+    if boards: print('Pinned boards: ' + ', '.join('#' + n for n in sorted(boards, key=int)))
+    return {int(n): ids for n, ids in boards.items()}
+
 def main(test_copy=None):
     """Build the game into docs/index.html, or, given test_copy, into that file with pending cards playing too, so the
     desk can try a reworded card on a phone screen before the reviewers have passed it."""
@@ -195,7 +216,7 @@ def main(test_copy=None):
             m = marks.get(cid)
             if st == 'locked' and m['h'] != h: problems.append((did, it['w'], 'locked by Morg but changed since: undo the change or ask him to unlock it'))
             if st in ('out', 'flagged') or (BETA_VETTED_ONLY and st == 'pending' and not test_copy): continue
-            x = {k: it[k] for k in ('w', 'means', 'ex', 'k', 'hook', 'd') if k in it}
+            x = {k: it[k] for k in ('w', 'means', 'ex', 'k', 'hook', 'd', 'wr') if k in it}   # wr: Morg's own wrong answers
             x['i'], x['h'] = i, h   # the card's place in its deck and its fingerprint: the beta's flag and lock keys send both
             if st == 'locked': x['lk'] = 1
             if lg == '*': x['lg'] = league(lg, it)
@@ -218,6 +239,7 @@ def main(test_copy=None):
     print(f'Cards can stay 3 months apart once each color has about {need} cards. Until then the draw spaces them as far apart as it can:')
     print(f'the smallest color ({min(tiers)} cards) repeats about every {(min(tiers) - WINDOW) // 5} days.')
     if DEMO_DAYS: print(f'Demo: boards #1 to #{DEMO_DAYS} play back to back, then a thank-you (DEMO_DAYS in build.py, 0 for the real daily).')
+    pins = pinned(decks)
     tpl = open(os.path.join(HERE, 'template.html')).read()
     text, meta = strings.load()   # every word but the cards: build/text/en.json (research/text-system.md)
     slots = strings.load_slots()   # every place text appears: build/text/slots.json
@@ -230,6 +252,7 @@ def main(test_copy=None):
     tpl = tpl.replace('/*__TYPE__*/', strings.slot_css(slots)).replace('__FIT__', json.dumps(strings.slot_fit(slots)))
     pm, ps = strings.page_meta(meta, slots)
     tpl = tpl.replace('__TEXTMETA__', json.dumps(pm, ensure_ascii=False).replace('</', '<\\/')).replace('__SLOTS__', json.dumps(ps, ensure_ascii=False))
+    tpl = tpl.replace('__PIN__', json.dumps(pins))
     tpl = tpl.replace('__TEXT__', json.dumps(text, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/'))
     tpl = tpl.replace('__DECKS__', json.dumps(decks, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')).replace('__START__', json.dumps(START)).replace('__DEMO__', str(DEMO_DAYS))
     top, body = tpl.split('<style>', 1)              # title + font links move into <head>
