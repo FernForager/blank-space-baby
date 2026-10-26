@@ -66,7 +66,7 @@ async def run(b, html, demo):
     w = await pg.evaluate("document.getElementById('q').dataset.w")
     await pg.click(f'.choice[data-w="{w}"]'); await pg.reload(); await pg.wait_for_timeout(300)
     s = await state(); v = await pg.evaluate("document.getElementById('cab').dataset.v")
-    lit = await pg.evaluate("document.querySelectorAll('#v-board .ball .pt.on').length")   # the three balls: one panel lit
+    lit = await pg.evaluate("document.querySelectorAll('#v-board .ball .pt.on:not(.core)').length")   # the three balls: one panel lit, their free-space centers aside
     ok(v == 'board' and s['res'][3] == 1 and lit == 1, 'a right answer is saved at once and its chip is in the ball after a reload')
     # the rest of the day: every tile is played, two of them wrong, and the right answer never takes one slot 3 times running
     slots = [s['tiles'][3]['ch'].index(next(c for c in s['tiles'][3]['ch'] if c['w'] == s['tiles'][3]['w']))]
@@ -118,7 +118,7 @@ async def run(b, html, demo):
         s = await state(); ok(s['day'] == demo - 1, f'the demo picks up where it was left, on #{demo}')
         for i in range(15): await answer(pg, i, True)
         await pg.wait_for_timeout(5000)
-        s = await state(); lit = await pg.evaluate("document.querySelectorAll('#v-board .ball .pt.on').length")
+        s = await state(); lit = await pg.evaluate("document.querySelectorAll('#v-board .ball .pt.on:not(.core)').length")
         await pg.click('#share'); await pg.wait_for_timeout(200)
         text = await pg.evaluate("navigator.clipboard.readText()")
         ok(text == f'Triviela #{demo}\n' + '⚽⚽⚽⚽⚽\n' * 3 + 'GOLAZO!\ntriviela.net', 'a perfect day shares as GOLAZO!: ' + repr(text))
