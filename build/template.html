@@ -161,7 +161,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .word .run { display: block; margin-top: 4px; font-size: .8em; color: var(--text); }
 .word { margin: 0; font-family: var(--pixel); font-weight: 400; font-size: 20px; line-height: 1.2; color: #fff; text-align: center;
   text-shadow: 0 0 4px rgba(255,255,255,.6), 0 0 12px rgba(92,240,154,.6); }
-.means { margin: 0; font-size: 18px; line-height: 1.2; color: #B8E6CA; font-weight: 500; }   /* the means line is the payoff, so it stays bright */
+.means { margin: 0; color: #B8E6CA; }   /* the means line is the payoff, so it stays bright */
 #v-end .ball { width: min(62%, 60cqh); margin: 0 auto; }
 #v-end { container-type: size; }
 
@@ -246,7 +246,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 @media (max-height: 640px) { .cab { gap: 9px; padding-top: max(9px, env(safe-area-inset-top, 0px)); padding-bottom: max(12px, env(safe-area-inset-bottom, 0px)); } .marquee { padding: 8px 10px 9px; } .marquee h1 { font-size: 19px; } .marquee.dm { height: 70px; } .marquee.dm .subhead { bottom: 7px; } .marquee.dm canvas { bottom: 20px; height: calc(100% - 27px); }
   .choice { min-height: 50px; }   
   .tile { min-height: 50px; padding-left: 5px; padding-right: 5px; } #p-board.tiles { gap: 7px 7px; } .panel { padding: 10px 10px 13px; }
-  .means { font-size: 16px; }   .egrid { gap: 7px 8px; } }
+  .egrid { gap: 7px 8px; } }
 @media (prefers-reduced-motion: reduce) { .key, .choice .def { transition: none; } .sb i.bump, .sb i.now, .choice.wrong, .flick, .blank, .go, .ball.goal, .bi .pt.new, .cab.poweron .marquee h1, .cab.poweron .marquee.dm canvas, .endrow .next svg, .pitch .shout { animation: none; } }
 
 /* layout A (Oct 19, 2026): wider column gaps, a bigger menu key, no key that moves */
@@ -343,6 +343,17 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .bimg[hidden] { display: none; }
 .bimg img { max-width: 100%; max-height: 74vh; border-radius: 12px; box-shadow: 0 6px 24px rgba(0,0,0,.6); }
 .bimg .key { min-height: 48px; padding: 0 24px; }
+/* the end screen's way on: the countdown says what it counts to, and the grid opens your cards again (Oct 26, 2026) */
+.clock .clk-l { display: block; margin-bottom: 4px; color: var(--dim); text-shadow: none; }
+.egrid button.em { border: 0; padding: 0; margin: 0; background: none; color: inherit; font: inherit; cursor: pointer; -webkit-tap-highlight-color: transparent; }
+.egrid button.em:active { transform: translateY(1px); }
+.rhint { margin: -2cqh 0 0; color: var(--dim); }
+#v-end:has(.thanks-s) .rhint { display: none; }   /* the demo's last board has its thank-you there instead */
+#v-end.review { justify-content: flex-start; align-items: stretch; gap: 0; cursor: pointer; }
+.rv { flex: 1; min-height: 0; display: flex; flex-direction: column; }
+.rv-top { flex: none; height: 27px; margin: 0; display: flex; align-items: center; gap: 9px; color: var(--dim); }
+.rv-face { flex: 1; min-height: 0; display: flex; flex-direction: column; justify-content: center; gap: 12px; }
+.rv-hint { flex: none; margin: 0; color: var(--dim); }
 /*__TYPE__*/
 </style>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
@@ -700,12 +711,12 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   function demoDay() { return Math.min(DEMO - 1, Math.max(0, store.get('bsb-demo', 0) | 0)); }   // the playtest's place in its run of boards
   function fresh(day) {
     var b = deal(day);
-    return { v: 3, day: day, tiles: [].concat(b[0], b[1], b[2]).map(function (c) { return { id: c.id, h: c.fp, lk: c.lk, d: c.d, hook: c.hook, w: c.w, m: c.m, ex: c.ex, ch: choices(c, day) }; }),
+    return { v: 4, day: day, tiles: [].concat(b[0], b[1], b[2]).map(function (c) { return { id: c.id, h: c.fp, lk: c.lk, d: c.d, hook: c.hook, w: c.w, m: c.m, ex: c.ex, ch: choices(c, day) }; }),
       res: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], open: -1, path: [], slots: [] };   // v 3: fresh cards and near-miss numbers (v 2 was the shootout's first 15)
   }
   function load() {
     var s = store.get('bsb-daily', null), d = today();
-    if (!(s && s.v === 3 && s.day === d && s.tiles && s.tiles.length === 3 * PER)) return fresh(d);
+    if (!(s && s.v === 4 && s.day === d && s.tiles && s.tiles.length === 3 * PER)) return fresh(d);
     s.tiles.forEach(function (t) {   // a board saved before cards had ids: find each card by its words
       if (t.id) return;
       for (var i = 0; i < ALL.length; i++) if (ALL[i].w === t.w && ALL[i].ex === t.ex) { t.id = ALL[i].id; t.h = ALL[i].fp; t.lk = ALL[i].lk; break; }
@@ -893,13 +904,15 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   function end() {
     settle = null; store.set('bsb-intro-off', true); report();
     var n = chips(), top = n === ALLN, r = rows(), big = innerHeight > 700 ? 3 : 2;
-    var cells = function (s) { return r.map(function (row, y) { return row.map(function (v) {
-      var b = s === 3 ? 31 : 21;   // every cell the ball's size, so a card sits centered where a ball would
-      return '<span class="em ' + (v === 1 ? 'ok' : 'no') + '" style="width:' + b + 'px;height:' + b + 'px">' + (v === 1 ? ballMark(b) :
-        '<i class="rcard c' + (y + 1) + '" style="width:' + Math.round(b * .55) + 'px;height:' + Math.round(b * .77) + 'px"></i>') + '</span>'; }).join(''); }).join(''); };
+    var o = order(), cells = function (s) { return r.map(function (row, y) { return row.map(function (v, x) {
+      var b = s === 3 ? 31 : 21, k = y * PER + x;   // every cell the ball's size, so a card sits centered where a ball would
+      return '<button type="button" class="em ' + (v === 1 ? 'ok' : 'no') + '" data-k="' + k + '" aria-label="' + esc(tileLabel(S.tiles[o[k]], o[k])) + '" style="width:' + b + 'px;height:' + b + 'px">' + (v === 1 ? ballMark(b) :
+        '<i class="rcard c' + (y + 1) + '" style="width:' + Math.round(b * .55) + 'px;height:' + Math.round(b * .77) + 'px"></i>') + '</button>'; }).join(''); }).join(''); };
+    REV = -1;
     $('v-end').className = 'view' + (top ? ' golazo' : '');
-    $('v-end').innerHTML = '<div class="egrid" role="img" aria-label="' + esc(tx('end.grid', { rows: rows().map(function (row, y) { return tx('end.row', { color: tx('row.' + (y + 1)), n: row.filter(function (v) { return v === 1; }).length }); }).join(', ') })) + '">' + cells(big) + '</div>' +
-      '<p class="score"' + (top ? ' data-tid="golazo" data-tplain="1"' : ' data-tid="end.score"' + tv({ n: n, all: ALLN })) + '>' + (top ? esc(GOLAZO) : num(esc(score()))) + '</p>' + (!top && best() >= 2 ? '<p class="best" data-tid="end.best" data-tplain="1"' + tv({ run: streakWord(best()) }) + '>' + esc(tx('end.best', { run: streakWord(best()) })) + '</p>' : '');
+    $('v-end').innerHTML = '<div class="egrid" role="group" aria-label="' + esc(tx('end.grid', { rows: rows().map(function (row, y) { return tx('end.row', { color: tx('row.' + (y + 1)), n: row.filter(function (v) { return v === 1; }).length }); }).join(', ') })) + '">' + cells(big) + '</div>' +
+      '<p class="score"' + (top ? ' data-tid="golazo" data-tplain="1"' : ' data-tid="end.score"' + tv({ n: n, all: ALLN })) + '>' + (top ? esc(GOLAZO) : num(esc(score()))) + '</p>' + (!top && best() >= 2 ? '<p class="best" data-tid="end.best" data-tplain="1"' + tv({ run: streakWord(best()) }) + '>' + esc(tx('end.best', { run: streakWord(best()) })) + '</p>' : '') +
+      '<p class="rhint" data-tid="end.reviewHint">' + th('end.reviewHint') + '</p>';
     $('share-top').innerHTML = th('share.title', { day: S.day + 1 }); $('share-top').dataset.tid = 'share.title'; $('share-top').dataset.tv = JSON.stringify({ day: S.day + 1 });
     $('share-txt').innerHTML = '<span class="sgrid">' + r.map(function (row, y) { return row.map(function (v) { return v === 1 ? ballMark(11) : rcard(y + 1); }).join(''); }).join('') + '</span>' +
       '<span data-tid="' + (chips() === ALLN ? 'golazo' : best() >= 2 ? 'share.scoreBest' : 'end.score') + '"' + tv({ score: score(), run: streakWord(best()), n: chips(), all: ALLN }) + '>' + num(keep(esc(scoreLine()))) + '</span><span data-tid="share.site">' + th('share.site') + '</span>';
@@ -907,6 +920,26 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     $('share-mark').innerHTML = svg('share', 3);
     beta(null); view('end'); clearInterval(tick); endRow(); if (!DEMO) tick = setInterval(clock, 1000);
   }
+  // ---- your cards, again (Morg, Oct 26, 2026: a finished day should never feel like a dead end) ----
+  // tap a ball or card in the end grid and that card comes back on the screen, its answer filled in and its meaning under it.
+  // Each tap after shows the next card, row by row as in the grid, and after the last the grid comes back
+  var REV = -1;   // the card on the screen, by its place in the grid (0 to 14), or -1 for the grid itself
+  function order() { var o = []; S.tiles.forEach(function (T, i) { o[(T.d - 1) * PER + spot(i)] = i; }); return o; }
+  function review(k) {
+    var o = order(); if (k >= o.length) return end();
+    REV = k; var i = o[k], T = S.tiles[i], ok = S.res[i] === 1, more = k + 1 < o.length;
+    $('v-end').className = 'view review';
+    $('v-end').innerHTML = '<div class="rv"><p class="rv-top">' + (ok ? ballMark(16) : rcard(T.d)) +
+      '<span data-tid="review.count"' + tv({ i: k + 1, all: o.length }) + '>' + th('review.count', { i: k + 1, all: o.length }) + '</span></p>' +
+      '<div class="rv-face"><p class="' + size(T) + (ok ? '' : ' missed') + '">' + sentence(T, true) + '</p><p class="means">' + num(keep(esc(T.m))) + '</p></div>' +
+      '<p class="rv-hint" data-tid="' + (more ? 'review.next' : 'review.back') + '">' + th(more ? 'review.next' : 'review.back') + '</p></div>';
+    flick(); guard();
+  }
+  $('v-end').addEventListener('click', function (e) {
+    if (cab.dataset.v !== 'end') return;
+    if (REV >= 0) return review(REV + 1);
+    var b = e.target.closest('[data-k]'); if (b) review(+b.dataset.k); else if (e.target.closest('.egrid')) review(0);
+  });
   function endRow() {   // after a finished board: the countdown to tomorrow's, or in the demo the next board and a way back to #1
     if (Date.now() < holdClock) return;   // a beta message is showing in its place
     var last = !!DEMO && S.day >= DEMO - 1;
@@ -971,7 +1004,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     if (FIXED === null && today() !== S.day) { clearInterval(tick); S = load(); save(); return show(); }
     var s = Math.max(0, Math.floor(left / 1000)), pad = function (x) { return (x < 10 ? '0' : '') + x; };
     if (Date.now() < holdClock) return;   // a beta message is showing in its place
-    $('clock').textContent = pad(Math.floor(s / 3600)) + ':' + pad(Math.floor(s / 60) % 60) + ':' + pad(s % 60);
+    $('clock').innerHTML = '<span class="clk-l" data-tid="end.nextIn">' + th('end.nextIn') + '</span>' + pad(Math.floor(s / 3600)) + ':' + pad(Math.floor(s / 60) % 60) + ':' + pad(s % 60);
   }
   $('share').addEventListener('click', function () {
     var text = shareText(), done = function () { $('share-mark').innerHTML = svg('ok', 3); setTimeout(function () { $('share-mark').innerHTML = svg('share', 3); }, 1600); };

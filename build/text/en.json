@@ -136,6 +136,17 @@
   "end.sboard": "Share board",
   "@end.sboard": { "note": "End screen key beside the countdown: shares the board as a picture", "slot": "endKey" },
 
+  "end.nextIn": "Next board in",
+  "@end.nextIn": { "note": "End screen: a small line over the countdown to tomorrow's board", "slot": "clockLabel" },
+  "end.reviewHint": "Tap a card to read it again",
+  "@end.reviewHint": { "note": "End screen: under the score. Tapping a ball or card in the grid opens that card again", "slot": "endHint" },
+  "review.count": "{i} of {all}",
+  "@review.count": { "note": "End screen, a card again: which card this is, at the top beside its ball or card", "slot": "reviewCount", "placeholders": { "i": { "example": "3", "widest": "15" }, "all": { "example": "15" } } },
+  "review.next": "Tap for the next card",
+  "@review.next": { "note": "End screen, a card again: at the bottom, on every card but the last", "slot": "reviewHint" },
+  "review.back": "Tap to see your grid",
+  "@review.back": { "note": "End screen, a card again: at the bottom of the last card", "slot": "reviewHint" },
+
   "share.title": "Triviela #{day}",
   "@share.title": { "note": "The share text's first line, also shown on the share key", "slot": "shareKey", "placeholders": { "day": { "example": "42", "widest": "365" } } },
   "share.scoreBest": "{score} · {run}",

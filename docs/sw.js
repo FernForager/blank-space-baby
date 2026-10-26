@@ -2,7 +2,7 @@
 // The page comes from the network first, so updates land right away. If the network fails,
 // or takes over 3 seconds, the saved copy loads instead. Everything else (fonts, icons) comes
 // from the saved copy first.
-var CACHE = 'bsb-v3';
+var CACHE = 'bsb-v5';
 var CORE = ['./', 'manifest.webmanifest', 'icon-192.png', 'apple-touch-icon.png'];
 
 self.addEventListener('install', function (e) {

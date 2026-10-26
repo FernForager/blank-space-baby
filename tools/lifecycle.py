@@ -94,6 +94,7 @@ async def run(b, html, demo):
         # 5. midnight
         c0, left = await pg.evaluate("""[document.getElementById('clock').textContent,
             Math.floor((new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate() + 1) - new Date()) / 1000)]""")
+        c0 = re.search(r'\d\d:\d\d:\d\d', c0).group(0)   # the digits, after the Next board in label
         h, m, sec = map(int, c0.split(':'))
         ok(abs(h * 3600 + m * 60 + sec - left) <= 1, f'the countdown shows the time to local midnight: {c0}')
         ok(await pg.evaluate("document.getElementById('e-next').hidden && document.getElementById('e-again').hidden"), 'the real daily has no next or start-over keys')
