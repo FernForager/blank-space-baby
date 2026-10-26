@@ -204,11 +204,12 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 /* the tiles: easy, medium and hard, one column each */
 #p-board.tiles { grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: repeat(5, auto); grid-auto-flow: column; gap: 9px 8px; padding-bottom: 4px; }
 .tile { position: relative; min-height: 60px; min-width: 0; padding: 4px 6px; display: flex; align-items: center; justify-content: center; border-radius: 10px; }
-/* every tile is a cream key like the answer buttons. A small referee's card in the corner marks medium (yellow) and hard (red),
-   and easy tiles have none (Morg, Oct 16, 2026: the bold colors took over the cabinet) */
+/* every tile is a cream key like the answer buttons. A small referee's card in the corner marks its color: white, yellow or red
+   (Morg, Oct 26, 2026: white too, to match the white card a miss leaves in the grid. Easy tiles had none from Oct 16, when bold
+   tile colors took over the cabinet) */
 .tile { background: var(--btn); color: var(--btn-ink); box-shadow: 0 4px 0 var(--btn-edge), 0 6px 8px rgba(0,0,0,.25); padding-left: 7px; padding-right: 7px; }   /* the shootout's taller tiles give the hook a little more width instead */
-.tile.c2::after, .tile.c3::after { content: ""; position: absolute; top: 5px; right: 6px; width: 7px; height: 10px; border-radius: 1.5px; box-shadow: 0 0 0 1px rgba(0,0,0,.18); }
-.tile.c2::after { background: var(--c2); } .tile.c3::after { background: var(--c3); }
+.tile.c1::after, .tile.c2::after, .tile.c3::after { content: ""; position: absolute; top: 5px; right: 6px; width: 7px; height: 10px; border-radius: 1.5px; box-shadow: 0 0 0 1px rgba(0,0,0,.18); }
+.tile.c1::after { background: var(--c1); box-shadow: 0 0 0 1px #B9B2A3; } .tile.c2::after { background: var(--c2); } .tile.c3::after { background: var(--c3); }
 .tile:active:not(:disabled) { transform: translateY(3px); box-shadow: 0 1px 0 rgba(0,0,0,.4); }
 .tile.done, .tile.miss { transform: translateY(3px); box-shadow: 0 1px 0 rgba(0,0,0,.4); background: rgba(246,240,226,.34); }
 /* an answered tile keeps its result: the game's pixel ball for a right answer, its pixel ✕ for a miss (shape, not just color) */
@@ -279,6 +280,10 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .cab[data-v="play"] #g-play { display: flex; }
 .gorow .gokey { position: static; flex: 1; height: auto; padding: 0 12px; color: var(--btn-ink); filter: none; animation: none; min-height: 52px; display: flex; align-items: center; justify-content: center; gap: 10px; }
 .gorow .gokey.wait { visibility: hidden; }
+/* before an answer the same spot holds Back (Morg, Oct 26, 2026: a first-time player may want out of a card), quiet and at the
+   left so it never reads as a fourth answer. After the answer it turns into the cream Next key */
+.gorow .gokey.back { flex: none; margin-right: auto; padding: 0 18px 0 14px; background: transparent; color: #C9D6CD; box-shadow: inset 0 0 0 2px #3A4840; }
+.gorow .gokey.back:active { transform: translateY(2px); box-shadow: inset 0 0 0 2px #56685C; }
 .gorow .bk, .endrow .bk { width: 44px; height: 44px; color: #7C8A80; }
 .go:not(.gokey) { display: none; }
 /* the end: share, then the go row: Play #2 (demo), the countdown (daily), Play again from #1 (the demo's last board, nothing left to lose) */
@@ -441,6 +446,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     // color sprites: K ink, W white
     ball:  ['...KKKKK...','.KKWWWWWKK.','.KWWWKWWWK.','KWWWKKKWWWK','KKWWKKKWWKK','KWKWWWWWKWK','KWWKWWWKWWK','KWWKKWKKWWK','.KWKKWKKWK.','.KKWWWWWKK.','...KKKKK...'],
     next:  ['...#...','...##..','######.','#######','######.','...##..','...#...'],
+    back:  ['...#...','..##...','.######','#######','.######','..##...','...#...'],
     ok:    ['......#','.....##','#...##.','##.##..','.###...','..#....'],
     no:    ['##...##','###.###','.#####.','..###..','.#####.','###.###','##...##'],
     flag:  ['#######','#######','######.','#####..','#......','#......','#......','#......'],
@@ -775,10 +781,11 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   var cab = $('cab');
   function view(v) { cab.dataset.v = v; flick(); guard(); if (v === 'board') tighten($('p-board')); }   // fit measures, so only once the board shows
   function flick() { var s = $('flip'); s.classList.remove('flick'); void s.offsetWidth; s.classList.add('flick'); }
-  function go(icon, label) {
-    var g = $('go');
+  function go(icon, id, spoken) {   // the panel's bottom key: Back before an answer, Next after it, or nothing
+    var g = $('go'), label = tx(id), back = icon === 'back';
     if (!icon) { g.classList.add('wait'); g.tabIndex = -1; return; }
-    g.innerHTML = '<span class="lbl" data-tid="play.next">' + esc(label) + '</span>' + svg(icon, 3); g.setAttribute('aria-label', label); g.classList.remove('wait'); g.tabIndex = 0;
+    g.innerHTML = back ? svg(icon, 3) + '<span class="lbl" data-tid="' + id + '">' + esc(label) + '</span>' : '<span class="lbl" data-tid="' + id + '">' + esc(label) + '</span>' + svg(icon, 3);
+    g.setAttribute('aria-label', spoken ? tx(spoken) : label); g.classList.toggle('back', back); g.classList.remove('wait'); g.tabIndex = 0;
   }
   function results(d) { var r = []; S.tiles.forEach(function (T, i) { if (T.d === d) r[spot(i)] = S.res[i]; }); return r; }   // a color's five results, in board order
   function ballHTML(n, fresh) {   // fresh: the tile just answered right, so its panel bumps and a full ball flashes
@@ -819,7 +826,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 
   // ---- a card ----
   var T, answered;
-  function open(i) {   // tapping a tile commits to it: a reload brings the same card back
+  function open(i) {   // a reload brings the open card back, and Back returns it to the board still to play (Morg, Oct 26, 2026)
     if (over() || S.res[i] || S.open >= 0) return;
     if (settle) settle();
     var t = S.tiles[i], slot = t.ch.map(function (p) { return p.w; }).indexOf(t.w);
@@ -827,7 +834,11 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
       if (S.slots.length === 2 && S.slots[0] === slot && S.slots[1] === slot) { var to = (slot + 1 + Math.floor(Math.random() * 2)) % 3, x = t.ch[to]; t.ch[to] = t.ch[slot]; t.ch[slot] = x; slot = to; }
       S.slots = S.slots.concat(slot).slice(-2); t.set = 1;
     }
-    S.open = i; S.path.push(i); save(); ask();
+    S.open = i; save(); ask();
+  }
+  function back() {   // out of a card without answering it: its three choices keep their places for next time
+    S.open = -1; save(); go(null); beta(null);
+    board(); view('board');
   }
   // the shootout, row by color in the order played: [[1, 2, 0, 0, 0], ...] (1 right, 2 missed, 0 still to play)
   // a row per color, every card in its board spot (Morg, Oct 19, 2026): the same spot is the same card for everyone.
@@ -860,12 +871,12 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
       b.addEventListener('click', function () { answer(p, b); });
       $('choices').appendChild(b);
     });
-    go(null); beta(null); view('play'); reserve();
+    go('back', 'play.back', 'play.backLabel'); beta(null); view('play'); reserve();
   }
   function answer(p, btn) {
     if (answered) return; answered = true;
     var ok = p.w === T.w;
-    S.res[S.open] = ok ? 1 : 2; save();   // saved before anything else, so a reload can't undo it
+    S.res[S.open] = ok ? 1 : 2; if (S.path.indexOf(S.open) < 0) S.path.push(S.open); save();   // saved before anything else, so a reload can't undo it. The path is the order answered
     document.querySelectorAll('.choice').forEach(function (b) {
       b.disabled = true;
       if (b.dataset.w === T.w) { b.classList.add('right'); b.lastChild.innerHTML = svg('ok', 3); }
@@ -873,7 +884,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
       else b.classList.add('dim');
     });
     hud(spot(S.open) + 1);
-    go('next', tx('play.next')); beta(T, 'play');
+    go('next', 'play.next'); beta(T, 'play');
     $('q').classList.toggle('missed', !ok); $('q').innerHTML = sentence(T, true); flick();
     if (document.activeElement && document.activeElement.blur) document.activeElement.blur();   // no leftover focus ring after a tap
   }
@@ -1232,6 +1243,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   // ---- one tap target: the screen ----
   // ---- after an answer, the screen or the panel's Next key goes on (option A's go row) ----
   ['flip', 'go'].forEach(function (id) { $(id).addEventListener('click', function () { if (cab.dataset.v === 'play' && answered) next(); }); });
+  $('go').addEventListener('click', function () { if (cab.dataset.v === 'play' && !answered) back(); });   // before an answer only the key goes back, never the screen
   function show() {   // open the day where it was left: the end, an open card, or the board
     if (S.open >= 0 && S.res[S.open]) { S.open = -1; save(); }
     if (over()) return end();

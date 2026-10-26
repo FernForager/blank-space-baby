@@ -4,7 +4,8 @@
 
 Runs twice: as the real daily (DEMO 0) and as the playtest demo (DEMO_DAYS in build.py), whichever the page was built as.
 
-1. A tapped tile is committed: a reload reopens the same card with the same choices in the same order.
+1. A tapped tile opens its card: a reload reopens the same card with the same choices in the same order, and Back returns it
+   to the board still to play, its choices in place when it opens again (Morg, Oct 26, 2026).
 2. A reload after a right answer keeps the chip, and the board shows it.
 3. A miss doesn't end the day: all 15 cards play, and the share is the shootout grid, exactly (checked through the clipboard).
 4. A finished day reopens to its result and can't be replayed, and How to play stops opening on its own.
@@ -63,6 +64,16 @@ async def run(b, html, demo):
     v = await pg.evaluate("document.getElementById('cab').dataset.v")
     after = await pg.evaluate("[...document.querySelectorAll('.choice')].map(b => b.dataset.w)")
     ok(v == 'play' and before == after, 'a reload reopens the tapped card with the same choices in order')
+    # 1b. Back: out of the card without answering it, and the same card again later, its choices where they were
+    await pg.click('#go'); await pg.wait_for_timeout(100)
+    s = await state(); v = await pg.evaluate("document.getElementById('cab').dataset.v")
+    playable = await pg.evaluate("!document.querySelector('[data-i=\"3\"]').disabled")
+    ok(v == 'board' and s['open'] == -1 and s['res'][3] == 0 and playable and s['path'] == [], 'Back returns to the board with the card still to play')
+    await pg.reload(); await pg.wait_for_timeout(300)
+    ok(await pg.evaluate("document.getElementById('cab').dataset.v") == 'board', 'a reload after Back shows the board, not the card')
+    await pg.click('[data-i="3"]'); await pg.wait_for_timeout(100)
+    again = await pg.evaluate("[...document.querySelectorAll('.choice')].map(b => b.dataset.w)")
+    ok(again == before, 'the card opens again with the same choices in the same places')
     # 2. a right answer survives a reload before tapping on
     w = await pg.evaluate("document.getElementById('q').dataset.w")
     await pg.click(f'.choice[data-w="{w}"]'); await pg.reload(); await pg.wait_for_timeout(300)
@@ -77,6 +88,7 @@ async def run(b, html, demo):
     # 3. a miss doesn't end the day: all 15 play, then the share is the shootout grid, rows by color in the order played
     s = await state(); v = await pg.evaluate("document.getElementById('cab').dataset.v")
     ok(v == 'end' and all(s['res']), f'the day ends only after all 15 cards: {v}')
+    ok(sorted(s['path']) == list(range(15)) and s['path'][0] == 3, f'the path holds the 15 cards once each, in the order answered: {s["path"]}')
     await pg.click('#share'); await pg.wait_for_timeout(200)
     text = await pg.evaluate("navigator.clipboard.readText()")
     ok(text == expected(s, 1), 'the share text is exact: ' + repr(text))

@@ -47,6 +47,10 @@
 
   "play.next": "Next",
   "@play.next": { "note": "The full-width key after answering a card, back to the board. Shown in capitals", "slot": "goKey" },
+  "play.back": "Back",
+  "@play.back": { "note": "The key under the answers before you answer: back to the board, the card still to play (Morg, Oct 26, 2026, a placeholder). Shown in capitals", "slot": "goKey" },
+  "play.backLabel": "Back to the board",
+  "@play.backLabel": { "note": "Spoken name of play.back" },
   "play.blank": "blank",
   "@play.blank": { "note": "Spoken in place of the sentence's blank" },
 
