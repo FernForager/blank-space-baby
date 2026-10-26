@@ -101,8 +101,13 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .bi .pt.c2.on { fill: url(#byel); stroke: #F7C948; filter: drop-shadow(0 0 1.5px rgba(247,201,72,.85)); }
 .bi .pt.c3.on { fill: url(#bred); stroke: #E8473A; filter: drop-shadow(0 0 1.5px rgba(213,43,30,.95)); }
 .bi .pt.out { fill: #07130C; fill-opacity: 1; stroke: #24432F; }
-.bi .pt.flash { animation: ringflash .9s steps(3); }
-@keyframes ringflash { 0%, 66% { filter: drop-shadow(0 0 3px #fff) brightness(1.6); } }
+.bi .pt.core { fill: #07130C; fill-opacity: 1; }   /* the center patch is black, like a real ball's, until 15/15 */
+.bi .pt.core.on { fill: url(#bon); }
+.bi.full { animation: ringflash .9s steps(3); }   /* a color all right: its ball flashes */
+@keyframes ringflash { 0%, 66% { filter: drop-shadow(0 0 4px #fff) brightness(1.5); } }
+.balls { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: center; width: 100%; column-gap: 5%; }
+.pitch .balls .ball { width: 100%; max-width: 92cqh; justify-self: center; }
+.balls .bi { display: block; width: 100%; height: auto; }
 .ball.goal .bi .sm, .ball.goal .bi .pt { stroke: var(--text); }
 .ball.goal .bi { filter: drop-shadow(0 0 4px #fff) drop-shadow(0 0 10px rgba(92,240,154,.9)); }
 .ball.goal { animation: bob .3s steps(2) 3; }
@@ -253,7 +258,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   .choice { min-height: 50px; }   
   .tile { min-height: 50px; padding-left: 5px; padding-right: 5px; } #p-board.tiles { gap: 7px 7px; } .panel { padding: 10px 10px 13px; }
   .egrid { gap: 7px 8px; } }
-@media (prefers-reduced-motion: reduce) { .key, .choice .def { transition: none; } .sb i.bump, .sb i.now, .choice.wrong, .flick, .blank, .go, .ball.goal, .bi .pt.new, .bi .pt.flash, .cab.poweron .marquee h1, .cab.poweron .marquee.dm canvas, .endrow .next svg, .pitch .shout { animation: none; } }
+@media (prefers-reduced-motion: reduce) { .key, .choice .def { transition: none; } .sb i.bump, .sb i.now, .choice.wrong, .flick, .blank, .go, .ball.goal, .bi .pt.new, .bi.full, .cab.poweron .marquee h1, .cab.poweron .marquee.dm canvas, .endrow .next svg, .pitch .shout { animation: none; } }
 
 /* layout A (Oct 19, 2026): wider column gaps, a bigger menu key, no key that moves */
 /* the answer panel keeps its height for the card: room for two means lines is reserved, keys sit at the top, nothing moves when you answer */
@@ -498,20 +503,27 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     var rim = ring(92, 112, 0).map(function (F) { return outline(F); });   // the slivers just past the horizon
     return { panels: panels, rim: rim, seams: '' };
   })();
-  // the rings by color (Morg, Oct 26, 2026: lighting panels in order meant nothing once you missed one), a dartboard: ring 1, the
-  // big panels facing us, is the red cards (the bullseye), ring 2 the yellow, ring 3 at the rim the white, each panel a card in
-  // its board spot, clockwise from the top.
-  // A right answer lights its panel in its card's color, a miss leaves it dark, five right closes the ring with a flash,
-  // and the center lights only on 15/15. state: each panel's result (0 to play, 1 right, 2 missed), or none for the plain icon
-  function ballIcon(n, cls, fresh, ids, state, ring) {   // n right answers. fresh: the panel just lit (it bumps). ring: the ring just closed (it flashes)
+  function ballIcon(n, cls, fresh, ids) {   // n right answers: panels 0 to n−1 lit, and the center too at 15. fresh: the panel just lit (it bumps)
     var id = 'bc' + (++BI), lit = n >= 15 ? 16 : n;
     return '<svg class="bi' + (cls ? ' ' + cls : '') + '" viewBox="-50 -50 100 100" aria-hidden="true"><defs><clipPath id="' + id + '"><circle r="48"/></clipPath></defs>' +
       '<g clip-path="url(#' + id + ')"><circle class="body" r="48"/>' +
       BALLG.rim.map(function (p) { return '<polygon class="pt hx rim' + (lit >= 16 ? ' on' : '') + '" points="' + p + '"/>'; }).join('') +
+      BALLG.panels.map(function (pn, k) { return '<polygon class="pt' + (pn.hx ? ' hx' : '') + (k < lit ? ' on' : '') + (k === fresh ? ' new' : '') + '"' + (ids ? ' id="slot' + k + '"' : '') + ' points="' + pn.p + '"/>'; }).join('') +
+      '<circle class="glow" r="48"/><circle class="shine" r="48"/></g></svg>';
+  }
+  // three balls, one per card color (Morg, Oct 26, 2026: one ball lit in order meant nothing once you missed a card), each over its
+  // column of tiles: white, yellow, red. Each is a classic ball face, a black center and the five panels round it, one per card in
+  // its column, top to bottom running clockwise from the upper right. A right answer lights its panel in its card's color, a miss
+  // leaves it dark, and five right flash the ball. The rest of the ball stays a dim hologram, and on 15/15 all three light whole.
+  // res: the five cards' results (0 to play, 1 right, 2 missed). fresh: the panel just lit (it bumps). flash: the ball just filled
+  function colorBall(d, res, fresh, flash, all) {
+    var id = 'bc' + (++BI);
+    return '<svg class="bi' + (flash ? ' full' : '') + '" viewBox="-50 -50 100 100" aria-hidden="true"><defs><clipPath id="' + id + '"><circle r="48"/></clipPath></defs>' +
+      '<g clip-path="url(#' + id + ')"><circle class="body" r="48"/>' +
+      BALLG.rim.map(function (p) { return '<polygon class="pt hx rim' + (all ? ' on' : '') + '" points="' + p + '"/>'; }).join('') +
       BALLG.panels.map(function (pn, k) {
-        var r = Math.floor(k / 5), on = k < 15 && state ? state[k] === 1 : k < lit, out = k < 15 && state && state[k] === 2;
-        return '<polygon class="pt' + (pn.hx ? ' hx' : '') + (k < 15 && state ? ' c' + RINGD[r] : '') + (on ? ' on' : '') + (out ? ' out' : '') + (k === fresh ? ' new' : '') +
-          (ring != null && r === ring ? ' flash' : '') + '"' + (ids ? ' id="slot' + k + '"' : '') + ' points="' + pn.p + '"/>'; }).join('') +
+        var c = k === 15 ? ' core' + (all ? ' on' : '') : k < PER ? ' c' + d + (res[k] === 1 ? ' on' : res[k] === 2 ? ' out' : '') + (k === fresh ? ' new' : '') : all ? ' on' : '';
+        return '<polygon class="pt' + (pn.hx ? ' hx' : '') + c + '" points="' + pn.p + '"/>'; }).join('') +
       '<circle class="glow" r="48"/><circle class="shine" r="48"/></g></svg>';
   }
   // the mark for a right answer: the ball is one icon, so it's the same drawing, small and solid (checked at 11 px at 3×: it still reads as a ball)
@@ -760,10 +772,13 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     if (!icon) { g.classList.add('wait'); g.tabIndex = -1; return; }
     g.innerHTML = '<span class="lbl" data-tid="play.next">' + esc(label) + '</span>' + svg(icon, 3); g.setAttribute('aria-label', label); g.classList.remove('wait'); g.tabIndex = 0;
   }
-  var RINGD = [3, 2, 1];   // each ring's card color, from the middle out: red, yellow, white
-  function panelOf(i) { return RINGD.indexOf(S.tiles[i].d) * PER + spot(i); }
-  function panels() { var p = []; S.tiles.forEach(function (T, i) { p[panelOf(i)] = S.res[i]; }); return p; }   // each ball panel's card result
-  function ballHTML(n, fresh, ring) { return '<div class="ball" id="ball">' + ballIcon(n, '', fresh, true, panels(), ring) + '</div>'; }
+  function results(d) { var r = []; S.tiles.forEach(function (T, i) { if (T.d === d) r[spot(i)] = S.res[i]; }); return r; }   // a color's five results, in board order
+  function ballHTML(n, fresh) {   // fresh: the tile just answered right, so its panel bumps and a full ball flashes
+    var f = fresh != null ? S.tiles[fresh] : null;
+    return '<div class="balls">' + [1, 2, 3].map(function (d) {
+      var r = results(d), mine = f && f.d === d;
+      return '<div class="ball" id="ball' + d + '">' + colorBall(d, r, mine ? spot(fresh) : -1, mine && r.every(function (v) { return v === 1; }), n >= ALLN) + '</div>'; }).join('') + '</div>';
+  }
   var TAG = { basics: 'basics', rules: 'rules', soccer: 'lingo', 'lingo-more': 'lingo', alpha: 'slang', parents: 'slang', epl: 'epl', 'epl-more': 'epl',
     mls: 'mls', nwsl: 'nwsl', ucl: 'ucl', wc26: 'wc26', laliga: 'laliga', seriea: 'seriea', ligue1: 'ligue1', ligamx: 'ligamx', bundesliga: 'bundesliga',
     'intl-men': 'world', 'intl-women': 'world', legends: 'legends', awards: 'awards', nicknames: 'clubs' };   // a card's category, by its deck (Morg, Oct 19, 2026): its tag.* string
@@ -777,8 +792,8 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     return '<button type="button" class="key tile c' + T.d + st + '" data-i="' + i + '"' + (S.res[i] || over() ? ' disabled' : '') +
       ' aria-label="' + esc(tileLabel(T, i)) + '">' + (S.res[i] ? (S.res[i] === 1 ? ballMark(22, 'res') : svg('no', 2, 'res')) : '<span class="tag" data-tid="' + tagId(T) + '">' + num(keep(esc(tagOf(T)))) + '</span><span class="hk">' + num(keep(esc(T.hook))) + '</span>') + '</button>';
   }
-  function board(fresh, ring) {   // fresh: the panel just lit, so it bumps. ring: the ring it just closed, which flashes
-    $('v-board').innerHTML = '<div class="pitch">' + ballHTML(chips(), fresh, ring) + '</div>';
+  function board(fresh) {   // fresh: the tile just answered right, so its panel bumps
+    $('v-board').innerHTML = '<div class="pitch">' + ballHTML(chips(), fresh) + '</div>';
     $('p-board').innerHTML = S.tiles.map(function (T, i) { return tileHTML(T, i); }).join(''); tighten($('p-board'));
     document.querySelectorAll('[data-i]').forEach(function (b) { b.addEventListener('click', function (e) { e.stopPropagation(); open(+b.dataset.i); }); });
     requestAnimationFrame(fitAll);
@@ -856,9 +871,8 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   // to read). GOLAZO! stays for 15/15. A title for every score, 0 to 15, is on Morg’s list. Streaks are saved on beta-oct22
   function next() {   // after an answer: back to the board, where a right one lights the next panel of the ball
     var i = S.open, ok = S.res[i] === 1, n = chips(), timer = null;
-    var at = panelOf(i), row = panels().slice(at - at % PER, at - at % PER + PER);   // its panel, and its color's ring
     S.open = -1; save(); go(null); beta(null);
-    board(ok ? at : undefined, ok && row.every(function (v) { return v === 1; }) ? Math.floor(at / PER) : undefined); view('board');
+    board(ok ? i : undefined); view('board');
     if (!over()) { settle = null; return; }
     if (n < ALLN) { timer = setTimeout(end, motion() ? 1300 : 0); settle = function () { clearTimeout(timer); end(); }; return; }   // the last card: a beat on the ball, then the grid
     function golazo() {   // 15/15: the center lights last, the whole ball glows, and the goal scene plays
@@ -869,7 +883,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
       }
       timer = setTimeout(end, motion() ? 2800 : 0);
     }
-    $('slot15').classList.add('new'); $('ball').classList.add('goal');
+    [].forEach.call(document.querySelectorAll('#v-board .ball'), function (b) { b.classList.add('goal'); });
     timer = setTimeout(golazo, motion() ? 1100 : 0);
     settle = function () { clearTimeout(timer); end(); };
   }

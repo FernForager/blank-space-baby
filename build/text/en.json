@@ -40,7 +40,7 @@
   "@intro.hardest": { "note": "How to play, line 2: beside a red card", "slot": "introColor" },
   "intro.all": "Play all 15, right or wrong.",
   "@intro.all": { "note": "How to play, line 3. One line", "slot": "introLine" },
-  "intro.golazo": "Light the whole ball: GOLAZO!",
+  "intro.golazo": "Light all three balls: GOLAZO!",
   "@intro.golazo": { "note": "How to play, line 4. Should match golazo. One line", "slot": "introLine" },
   "intro.go": "Kick off",
   "@intro.go": { "note": "How to play's green key, closes it", "slot": "introGo" },
