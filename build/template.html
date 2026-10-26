@@ -82,7 +82,8 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .cab[data-v="board"] #v-board, .cab[data-v="play"] #v-play, .cab[data-v="end"] #v-end { display: flex; }
 .px { shape-rendering: crispEdges; flex: none; display: block; fill: currentColor; }
 .nb { white-space: nowrap; }
-.num { font-family: var(--pixel); font-weight: 400; font-size: .8em; letter-spacing: -.02em; }
+.num { font-family: var(--pixel); font-weight: 400; font-size: calc(8em / 11); vertical-align: -.125em; letter-spacing: -.02em; }   /* a digit as tall as Pixelify's capitals (7 of its 11 pixels to Press Start 2P's 7 of 8), so 8/11 of the text around it. Press Start 2P draws an empty pixel row under every glyph, so the digit drops that row to sit on the baseline (brought back from beta-oct22, Oct 26, 2026) */
+.score .num { font-size: 1em; vertical-align: baseline; letter-spacing: 0; }   /* the score is already in the arcade face */
 
 /* the ball: 15 lamp panels in three rings of five (the hexagons round the center, the outer pentagons, the half-hexagons
    at the edge) and the center pentagon, which lights only on 15/15 (Morg's lamp idea, Oct 19, 2026) */
@@ -306,9 +307,11 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 @media (prefers-reduced-motion: reduce) { .g-slots.nope, .screen.crton { animation: none; } .g-slots i { transition: none; } }
 /* the cabinet's printed slogan (Morg, Oct 19, 2026): the question from How to play, in ink on the cabinet body between the screen
    and the cards, on the board only, where the player is choosing */
-.tagline { display: none; margin: -3px 0 -2px; text-align: center; font-size: 15px; font-weight: 600; line-height: 1.2; color: var(--btn-ink); letter-spacing: .2px; }
+/* centered on its letters: text-box trims the line to its capitals and baseline, so the gaps above and below are the cabinet's own gap,
+   and the 3px top margin cancels the screen's bottom lip (the bezel's 0 3px 0 shadow), so the space you see is equal on both sides, within the 2 device pixels Pixelify's cap-height metric adds */
+.tagline { display: none; margin: 3px 0 0; text-box: trim-both cap alphabetic; text-align: center; font-size: 15px; font-weight: 600; line-height: 1.2; color: var(--btn-ink); letter-spacing: .2px; }
 .cab[data-v="board"] .tagline { display: block; }
-@media (max-height: 640px) { .tagline { font-size: 13px; margin: -4px 0 -3px; } }
+@media (max-height: 640px) { .tagline { font-size: 13px; } }
 .ask-pop.sheet { align-items: flex-end; padding: 0 max(14px, env(safe-area-inset-right, 0px)) max(16px, env(safe-area-inset-bottom, 0px)) max(14px, env(safe-area-inset-left, 0px)); }
 .sheet .ask-box { max-width: 392px; border-radius: 18px; padding: 14px 12px 15px; background: linear-gradient(180deg, #1A1D1B 0%, #0D0F0E 100%); box-shadow: inset 0 2px 0 rgba(255,255,255,.08), inset 0 0 0 2px #222, 0 0 0 3px var(--body-dark), 0 -8px 30px rgba(0,0,0,.5); }
 .sheet .menu-box { gap: 10px; }
@@ -330,7 +333,6 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .tile { flex-direction: column; justify-content: flex-start; padding-top: 5px; }
 .tile .tag { display: block; flex: none; max-width: calc(100% - 22px); font-size: 11px; line-height: 1; opacity: .55; white-space: nowrap; overflow: hidden; text-overflow: clip; }
 .tile .hk { margin: auto 0; }
-.tile .tag .num { font-size: calc(8em / 11); vertical-align: -.125em; }   /* digits in a tag as tall as its capitals and on its line: Press Start 2P draws an empty pixel row under every glyph */
 .tile.done .tag, .tile.miss .tag { display: none; }
 /* a streak's shout, over the ball on the way back to the board: smaller and quicker than GOLAZO!'s */
 .pitch .shout.streak { font-size: clamp(16px, 7cqw, 24px); animation-duration: 1.6s; }
