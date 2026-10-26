@@ -353,6 +353,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .tile .tag { display: block; flex: none; max-width: calc(100% - 22px); opacity: .55; overflow: hidden; text-overflow: clip; }
 .tile .hk { margin: auto 0; }
 .tile.done .tag, .tile.miss .tag { display: none; }
+.tile.done, .tile.miss { justify-content: center; padding-top: 4px; padding-bottom: 4px; }   /* a played tile's ball or ✕ sits in its middle (Morg, Oct 26, 2026: it hung at the top under the tag's band) */
 /* Share board, beside the countdown */
 .endrow .sboard { flex: 1; min-height: 52px; display: flex; align-items: center; justify-content: center; gap: 8px; }
 .endrow .sboard svg { flex: none; }
