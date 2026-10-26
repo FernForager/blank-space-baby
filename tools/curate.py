@@ -65,6 +65,6 @@ async def export(out, cats):
     print(f"{len(r['pool'])} cards, #1 kept, drafts for #" + ', #'.join(r['boards']) + f" from {len(cats)} decks")
 
 if __name__ == '__main__':
-    if sys.argv[1] == 'export':
-        cats = sys.argv[3].split(',') if len(sys.argv) > 3 else list(TAGS)
-        asyncio.run(export(sys.argv[2], cats))
+    if len(sys.argv) < 3 or sys.argv[1] != 'export': sys.exit(__doc__)
+    cats = sys.argv[3].split(',') if len(sys.argv) > 3 else list(TAGS)
+    asyncio.run(export(sys.argv[2], cats))
