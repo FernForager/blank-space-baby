@@ -325,8 +325,12 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .egrid .em.no .rcard { box-shadow: 0 0 6px rgba(255,255,255,.25); }
 .sgrid .rcard { display: block; width: 8px; height: 11px; border-radius: 1.5px; }
 /* the card's category, a quiet line over its hook (Morg, Oct 19, 2026: pick a topic you know) */
-.tile { flex-direction: column; gap: 2px; }
-.tile .tag { display: block; max-width: 100%; font-size: 11px; line-height: 1; opacity: .55; white-space: nowrap; overflow: hidden; text-overflow: clip; }
+/* the tag sits in a thin band along the tile's top, level with the corner card, and the hook is centered in all the space below it,
+   so the bold word carries the tile and the faint tag doesn't pull it off center (Morg, Oct 25, 2026) */
+.tile { flex-direction: column; justify-content: flex-start; padding-top: 5px; }
+.tile .tag { display: block; flex: none; max-width: calc(100% - 22px); font-size: 11px; line-height: 1; opacity: .55; white-space: nowrap; overflow: hidden; text-overflow: clip; }
+.tile .hk { margin: auto 0; }
+.tile .tag .num { font-size: calc(8em / 11); vertical-align: -.125em; }   /* digits in a tag as tall as its capitals and on its line: Press Start 2P draws an empty pixel row under every glyph */
 .tile.done .tag, .tile.miss .tag { display: none; }
 /* a streak's shout, over the ball on the way back to the board: smaller and quicker than GOLAZO!'s */
 .pitch .shout.streak { font-size: clamp(16px, 7cqw, 24px); animation-duration: 1.6s; }
