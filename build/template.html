@@ -967,6 +967,12 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
       g.shadowColor = 'rgba(92,240,154,.8)'; g.shadowBlur = lit ? pitch * .8 : 0;
       g.beginPath(); g.arc((x + .5) * pitch, oy + (y + .5) * pitch, pitch * .36, 0, 6.2832); g.fill();
     }
+    // the subheading sits centered between the dot field's last row and the sign's black rim (Morg, Oct 26, 2026: it sat too close
+    // to the dots). Its capitals are 7/8 of an em tall and start 3/32 of an em above its line box (Press Start 2P's tall ascent at
+    // line height 1), so that's what gets centered, on whole device pixels
+    var sub = c.parentNode.querySelector('.subhead'), fs = parseFloat(getComputedStyle(sub).fontSize);
+    var dots = c.offsetTop + oy + (ny - .5 + .36) * pitch, rim = c.parentNode.clientHeight - 3;
+    sub.style.bottom = 'auto'; sub.style.top = Math.round((dots + (rim - dots - fs * 7 / 8) / 2 + fs * 3 / 32) * dpr) / dpr + 'px';
   }
   drawSign(); window.addEventListener('resize', drawSign);
 
