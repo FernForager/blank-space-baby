@@ -62,8 +62,10 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
    its last letters stay bright */
 .marquee.dm .subhead { position: absolute; left: 0; right: 0; bottom: 9px; z-index: 2; margin: 0; color: #C9FFDD; text-shadow: none; pointer-events: none; }   /* no glow: a glow blurs pixel letters (Morg: clean and quiet) */
 .marquee.dm canvas { position: absolute; inset: 7px 8px 25px; width: calc(100% - 16px); height: calc(100% - 32px); }
-.tball { display: inline-block; width: calc(.875em + 2px); height: calc(.875em + 2px); vertical-align: -1px; position: relative; top: -.125em; line-height: 0; }   /* a ⚽ in a string: as tall as the arcade capitals and a pixel more each way, centered on them (they stand 1/8 em above the baseline and are 7/8 em tall). Lifted with top, so the line itself never grows */
-.tball svg { display: block; width: 100%; height: 100%; }
+.tball { --bu: 1px; display: inline-block; position: relative; width: calc(15 * var(--bu)); height: .875em; vertical-align: baseline; margin-right: .125em; }   /* the letter spacing a glyph would carry, so the gap after it matches the one before */   /* a ⚽ in a string: the pixel ball (Morg, Oct 26, 2026: it has to pop), 15 of its pixels across, each a whole number of screen dots */
+.tball svg { position: absolute; left: 0; bottom: calc(.5625em - 7.5 * var(--bu)); width: calc(15 * var(--bu)); height: calc(15 * var(--bu)); }   /* centered on the capitals (their middle is 9/16 em up), drawn outside the line box so the line never grows */
+@media (max-height: 640px) and (min-resolution: 2.5dppx) { .tball { --bu: .6667px; } }   /* with the smaller sign text, 2 screen dots a pixel at 3x, 1 at 2x */
+@media (max-height: 640px) and (max-resolution: 2.49dppx) { .tball { --bu: .5px; } }
 .cab.poweron .marquee.dm canvas { animation: power .6s steps(6); }
 .sr { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .marquee.dm .menu-b { right: 4px; z-index: 1; background: radial-gradient(closest-side, rgba(7,19,12,.95), rgba(7,19,12,.8) 70%, transparent); border-radius: 50%; }
@@ -496,7 +498,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   function th(id, v) { return tball(num(keep(esc(tx(id, v))))); }
   // a ⚽ in a string is drawn as the game's own little ball (Morg, Oct 26, 2026: the game never names the sport, so every player
   // reads it in their own word). Screen readers skip it
-  function tball(html) { return html.indexOf('⚽') < 0 ? html : html.replace(/⚽\uFE0F?/g, '<i class="tball" aria-hidden="true">' + ballIcon(0, 'mini lit mark') + '</i>'); }
+  function tball(html) { return html.indexOf('⚽') < 0 ? html : html.replace(/⚽\uFE0F?/g, '<i class="tball" aria-hidden="true">' + svg('sball', 1, '', true) + '</i>'); }
   function tv(v) { return ' data-tv="' + esc(JSON.stringify(v)) + '"'; }   // the values a string's placeholders were filled with, so the text editor can redraw it
   // a word too wide for its slot (Bundesliga on the smallest phones) tightens its letter spacing a device pixel at a time, never
   // past the slot's "fit" in slots.json: the letters keep their size, so a pixel font stays sharp, where a smaller size would blur it
@@ -517,6 +519,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     // a played tile's marks (Morg, Oct 26, 2026: our own pixel ball and pixel ✕, on one grid and big enough to fill the tile):
     // a white ball with a pentagon at its heart and five patches round its edge, and a red ✕, both outlined in ink
     pball: ['.....KKKKK.....','...KKWKKKWKK...','..KWWWWKWWWWK..','.KWWWWWWWWWWWK.','.KKWWWWWWWWWKK.','KKKWWWWKWWWWKKK','KKKWWWKKKWWWKKK','KWWWWKKKKKWWWWK','KWWWWKKKKKWWWWK','KWWWWWKKKWWWWWK','.KWWWWWWWWWWWK.','.KKKKWWWWWKKKK.','..KKKWWWWWKKK..','...KKKWWWKKK...','.....KKKKK.....'],
+    sball: ['.....#####.....','...##W...W##...','..#WWWW.WWWW#..','.#WWWWWWWWWWW#.','.#.WWWWWWWWW.#.','#..WWWW.WWWW..#','#..WWW...WWW..#','#WWWW.....WWWW#','#WWWW.....WWWW#','#WWWWW...WWWWW#','.#WWWWWWWWWWW#.','.#...WWWWW...#.','..#..WWWWW..#..','...##.WWW.##...','.....#####.....'],   // the same ball for text on the dark screens: its outline in the text's own color, its patches the screen showing through
     pmiss: ['.KK.......KK.','KRRK.....KRRK','KRRRK...KRRRK','.KRRRK.KRRRK.','..KRRRKRRRK..','...KRRRRRK...','....KRRRK....','...KRRRRRK...','..KRRRKRRRK..','.KRRRK.KRRRK.','KRRRK...KRRRK','KRRK.....KRRK','.KK.......KK.'],
     back:  ['...#...','..##...','.######','#######','.######','..##...','...#...'],
     ok:    ['......#','.....##','#...##.','##.##..','.###...','..#....'],
