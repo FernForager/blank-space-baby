@@ -101,8 +101,6 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .bi .pt.c2.on { fill: url(#byel); stroke: #F7C948; filter: drop-shadow(0 0 1.5px rgba(247,201,72,.85)); }
 .bi .pt.c3.on { fill: url(#bred); stroke: #E8473A; filter: drop-shadow(0 0 1.5px rgba(213,43,30,.95)); }
 .bi .pt.out { fill: #07130C; fill-opacity: 1; stroke: #24432F; }
-.bi .pt.core { fill: #07130C; fill-opacity: 1; }   /* the center patch is black, like a real ball's, until 15/15 */
-.bi .pt.core.on { fill: url(#bon); }
 .bi.full { animation: ringflash .9s steps(3); }   /* a color all right: its ball flashes */
 @keyframes ringflash { 0%, 66% { filter: drop-shadow(0 0 4px #fff) brightness(1.5); } }
 .balls { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: center; width: 100%; column-gap: 5%; }
@@ -512,9 +510,10 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
       '<circle class="glow" r="48"/><circle class="shine" r="48"/></g></svg>';
   }
   // three balls, one per card color (Morg, Oct 26, 2026: one ball lit in order meant nothing once you missed a card), each over its
-  // column of tiles: white, yellow, red. Each is a classic ball face, a black center and the five panels round it, one per card in
-  // its column, top to bottom running clockwise from the upper right. A right answer lights its panel in its card's color, a miss
-  // leaves it dark, and five right flash the ball. The rest of the ball stays a dim hologram, and on 15/15 all three light whole.
+  // column of tiles: white, yellow, red. Each is a classic ball face, its center lit in its color from the start like a bingo free
+  // space (Morg: black there read like a miss), and the five panels round it, one per card in its column, top to bottom running
+  // clockwise from the upper right. A right answer lights its panel in its card's color, a miss leaves it black, and five right
+  // flash the ball. The rest of the ball stays a dim hologram, and on 15/15 all three light whole.
   // res: the five cards' results (0 to play, 1 right, 2 missed). fresh: the panel just lit (it bumps). flash: the ball just filled
   function colorBall(d, res, fresh, flash, all) {
     var id = 'bc' + (++BI);
@@ -522,7 +521,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
       '<g clip-path="url(#' + id + ')"><circle class="body" r="48"/>' +
       BALLG.rim.map(function (p) { return '<polygon class="pt hx rim' + (all ? ' on' : '') + '" points="' + p + '"/>'; }).join('') +
       BALLG.panels.map(function (pn, k) {
-        var c = k === 15 ? ' core' + (all ? ' on' : '') : k < PER ? ' c' + d + (res[k] === 1 ? ' on' : res[k] === 2 ? ' out' : '') + (k === fresh ? ' new' : '') : all ? ' on' : '';
+        var c = k === 15 ? ' core c' + d + ' on' : k < PER ? ' c' + d + (res[k] === 1 ? ' on' : res[k] === 2 ? ' out' : '') + (k === fresh ? ' new' : '') : all ? ' on' : '';
         return '<polygon class="pt' + (pn.hx ? ' hx' : '') + c + '" points="' + pn.p + '"/>'; }).join('') +
       '<circle class="glow" r="48"/><circle class="shine" r="48"/></g></svg>';
   }
