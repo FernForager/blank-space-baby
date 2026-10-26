@@ -454,10 +454,13 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   // every word the game shows or says, apart from the cards, from build/text/en.json (research/text-system.md). tx() gives the plain text,
   // with its {placeholders} filled, for spoken labels, the share and the image. th() gives it typeset for the page: escaped, digits and
   // GOLAZO! in the arcade face, punctuation glued to its word. The markup names its strings with data-t, data-t-label and data-t-alt
-  // (filled in once, at load), and text the script writes later carries data-tid, the id of the string it shows, for tools/textcheck.py
+  // (filled in once, at load), and text the script writes later carries data-tid, the id of the string it shows (with data-tv, the values
+  // its blanks were filled with, and data-tplain when it's set as plain text), for tools/textcheck.py and the text editor
   var TEXT = {"brand":"Triviela","meta.description":"How well do you know the beautiful game?","sign.sub":"Soccer trivia shootout","board.slogan":"How well do you know the beautiful game?","menu.label":"Menu","menu.restart":"Start over from #1","menu.howto":"How to play","menu.close":"Back to the game","restart.q":"Start over from #1?","restart.no":"Keep playing","restart.yes":"Start over","intro.q":"How well do you know the beautiful game?","intro.cards":"15 cards a day. Pick any one.","intro.easy":"easy","intro.harder":"harder","intro.hardest":"hardest","intro.all":"Play all 15, right or wrong.","intro.streaks":"Right in a row: Brace!, Hat Trick!","intro.golazo":"Light the whole ball: GOLAZO!","intro.go":"Kick off","play.next":"Next","play.blank":"blank","color.1":"white","color.2":"yellow card","color.3":"red card","tile.label":"{hook}, {tag}, {color}","tile.right":"{label}, right","tile.missed":"{label}, missed","tag.basics":"101","tag.rules":"Rules","tag.lingo":"Lingo","tag.slang":"Slang","tag.epl":"EPL","tag.mls":"MLS","tag.nwsl":"NWSL","tag.ucl":"UCL","tag.wc26":"WC26","tag.laliga":"La Liga","tag.seriea":"Serie A","tag.ligue1":"Ligue 1","tag.ligamx":"Liga MX","tag.bundesliga":"Bundesliga","tag.world":"World","tag.legends":"Legends","tag.awards":"Awards","tag.clubs":"Clubs","streak.2":"Brace!","streak.3":"Hat Trick!","streak.n":"{n} in a row!","golazo":"GOLAZO!","end.grid":"{rows}","end.row":"{color}: {n} of 5","row.1":"White","row.2":"Yellow","row.3":"Red","end.score":"{n}/{all}","end.best":"Best: {run}","end.thanks":"Thanks for playing","end.next":"Play #{day}","end.nextLabel":"Next day, #{day}","end.again":"Play again from #1","end.sboard":"Share board","share.title":"Triviela #{day}","share.scoreBest":"{score} · {run}","share.site":"triviela.net","share.label":"Share: {text}","image.title":"TRIVIELA","image.score":"#{day}  {score}","image.file":"triviela-{day}.png","image.alt":"Your board","image.close":"Close","beta.flagged":"Flagged","beta.unflagged":"Unflagged","beta.locked":"Locked","beta.unlocked":"Unlocked","beta.queued":"Queued","beta.flag":"Flag this card","beta.unflag":"Flagged. Tap to unflag","beta.lock":"Lock this card","beta.unlock":"Locked. Tap to unlock","beta.note":"What’s wrong with this card? (optional)","gate.title":"MEMBERS ONLY","gate.code":"Code","gate.clear":"Clear","gate.enter":"Enter","gate.ok":"Onside!","gate.no":"Offside!"};
+  var META = {"brand": {"note": "The game's name: the page title, the Home Screen name, the link preview's title and the sign's spoken name (the sign itself is drawn dots)", "slot": "", "ph": ""}, "meta.description": {"note": "The link preview's line under the name, in Messages and social apps", "slot": "", "ph": ""}, "sign.sub": {"note": "Under TRIVIELA on the sign, in small arcade capitals (shown uppercase). One line on every phone", "slot": "subhead", "ph": ""}, "board.slogan": {"note": "Printed on the cabinet between the screen and the cards, on the board only. One line on every phone", "slot": "slogan", "ph": ""}, "menu.label": {"note": "Spoken name of the three-bar key in the sign's corner and of the menu sheet", "slot": "", "ph": ""}, "menu.restart": {"note": "Menu key, the 7-board demo only. Starts back at board #1 (asks first)", "slot": "menuKey", "ph": ""}, "menu.howto": {"note": "Menu key that opens How to play", "slot": "menuKey", "ph": ""}, "menu.close": {"note": "The menu's full-width bottom key, closes the menu", "slot": "menuKey", "ph": ""}, "restart.q": {"note": "Pop-up question after Start over in the menu, the 7-board demo only", "slot": "askQ", "ph": ""}, "restart.no": {"note": "Pop-up key: closes it, nothing changes", "slot": "askKey", "ph": ""}, "restart.yes": {"note": "Pop-up key: back to board #1", "slot": "askKey", "ph": ""}, "intro.q": {"note": "How to play: the heading. Two balanced lines", "slot": "introQ", "ph": ""}, "intro.cards": {"note": "How to play, line 1. One line", "slot": "introLine", "ph": ""}, "intro.easy": {"note": "How to play, line 2: beside a white card", "slot": "introColor", "ph": ""}, "intro.harder": {"note": "How to play, line 2: beside a yellow card", "slot": "introColor", "ph": ""}, "intro.hardest": {"note": "How to play, line 2: beside a red card", "slot": "introColor", "ph": ""}, "intro.all": {"note": "How to play, line 3. One line", "slot": "introLine", "ph": ""}, "intro.streaks": {"note": "How to play, line 4. Should match streak.2 and streak.3. One line", "slot": "introLine", "ph": ""}, "intro.golazo": {"note": "How to play, line 5. Should match golazo. One line", "slot": "introLine", "ph": ""}, "intro.go": {"note": "How to play's green key, closes it", "slot": "introGo", "ph": ""}, "play.next": {"note": "The full-width key after answering a card, back to the board. Shown in capitals", "slot": "goKey", "ph": ""}, "play.blank": {"note": "Spoken in place of the sentence's blank", "slot": "", "ph": ""}, "color.1": {"note": "Spoken on a white (easy) tile", "slot": "", "ph": ""}, "color.2": {"note": "Spoken on a yellow (medium) tile", "slot": "", "ph": ""}, "color.3": {"note": "Spoken on a red (hard) tile", "slot": "", "ph": ""}, "tile.label": {"note": "A tile's spoken name, before it's played", "slot": "", "ph": "{hook} (Rangers FC), {tag} (Clubs), {color} (red card)"}, "tile.right": {"note": "A played tile's spoken name, answered right", "slot": "", "ph": "{label} (Rangers FC, Clubs, red card)"}, "tile.missed": {"note": "A played tile's spoken name, missed", "slot": "", "ph": "{label} (Rangers FC, Clubs, red card)"}, "tag.basics": {"note": "Category tag over a tile's hook: the Soccer 101 deck", "slot": "tag", "ph": ""}, "tag.rules": {"note": "Category tag: Soccer Rules", "slot": "tag", "ph": ""}, "tag.lingo": {"note": "Category tag: both Soccer Lingo decks", "slot": "tag", "ph": ""}, "tag.slang": {"note": "Category tag: Kid Slang and Parent Slang", "slot": "tag", "ph": ""}, "tag.epl": {"note": "Category tag: both Premier League decks", "slot": "tag", "ph": ""}, "tag.mls": {"note": "Category tag", "slot": "tag", "ph": ""}, "tag.nwsl": {"note": "Category tag", "slot": "tag", "ph": ""}, "tag.ucl": {"note": "Category tag: the Champions League", "slot": "tag", "ph": ""}, "tag.wc26": {"note": "Category tag: World Cup 2026", "slot": "tag", "ph": ""}, "tag.laliga": {"note": "Category tag", "slot": "tag", "ph": ""}, "tag.seriea": {"note": "Category tag", "slot": "tag", "ph": ""}, "tag.ligue1": {"note": "Category tag", "slot": "tag", "ph": ""}, "tag.ligamx": {"note": "Category tag", "slot": "tag", "ph": ""}, "tag.bundesliga": {"note": "Category tag. The widest one: check it on the smallest phone", "slot": "tag", "ph": ""}, "tag.world": {"note": "Category tag: international men's and women's", "slot": "tag", "ph": ""}, "tag.legends": {"note": "Category tag", "slot": "tag", "ph": ""}, "tag.awards": {"note": "Category tag", "slot": "tag", "ph": ""}, "tag.clubs": {"note": "Category tag: Club Nicknames", "slot": "tag", "ph": ""}, "streak.2": {"note": "Shouted over the ball after 2 right in a row, and the best run's name on the end screen and in the share", "slot": "streak", "ph": ""}, "streak.3": {"note": "Shouted after 3 right in a row, and the best run's name", "slot": "streak", "ph": ""}, "streak.n": {"note": "Shouted after 4 or more right in a row (up to 14), and the best run's name", "slot": "streak", "ph": "{n} (4)"}, "golazo": {"note": "All 15 right: the shout over the ball, the end screen's score and the share's score line. Always in the arcade face (Morg's name and caps)", "slot": "shout", "ph": ""}, "end.grid": {"note": "The end screen grid's spoken name: the three row lines joined by commas", "slot": "", "ph": "{rows} (White: 4 of 5, Yellow: 5 of 5, Red: 3 of 5)"}, "end.row": {"note": "One row of the end grid, spoken", "slot": "", "ph": "{color} (White), {n} (4)"}, "row.1": {"note": "The white row's spoken name on the end grid", "slot": "", "ph": ""}, "row.2": {"note": "The yellow row's spoken name", "slot": "", "ph": ""}, "row.3": {"note": "The red row's spoken name", "slot": "", "ph": ""}, "end.score": {"note": "The day's score: on the end screen, in the share and in the image", "slot": "score", "ph": "{n} (11), {all} (15)"}, "end.best": {"note": "Under the score on the end screen and in the image, when the day's longest run is 2 or more and the day isn't perfect", "slot": "best", "ph": "{run} (Hat Trick!)"}, "end.thanks": {"note": "Top of the end screen on the demo's last board", "slot": "thanks", "ph": ""}, "end.next": {"note": "The demo's key to the next board", "slot": "endKey", "ph": "{day} (2)"}, "end.nextLabel": {"note": "Spoken name of end.next", "slot": "", "ph": "{day} (2)"}, "end.again": {"note": "The demo's last board: back to #1", "slot": "endKey", "ph": ""}, "end.sboard": {"note": "End screen key beside the countdown: shares the board as a picture", "slot": "endKey", "ph": ""}, "share.title": {"note": "The share text's first line, also shown on the share key", "slot": "shareKey", "ph": "{day} (42)"}, "share.scoreBest": {"note": "The share's score line when the best run is 2 or more", "slot": "shareKey", "ph": "{score} (11/15), {run} (Brace!)"}, "share.site": {"note": "The share text's last line, on the share key and at the bottom of the image", "slot": "shareKey", "ph": ""}, "share.label": {"note": "Spoken name of the share key", "slot": "", "ph": "{text} (Triviela #42, ...)"}, "image.title": {"note": "The Share board image's heading, in arcade capitals", "slot": "", "ph": ""}, "image.score": {"note": "The image's score line, under its heading", "slot": "", "ph": "{day} (42), {score} (11/15)"}, "image.file": {"note": "The image's file name when shared", "slot": "", "ph": "{day} (42)"}, "image.alt": {"note": "Spoken name of the image in its pop-up on a computer", "slot": "", "ph": ""}, "image.close": {"note": "Closes the image pop-up on a computer", "slot": "askKey", "ph": ""}, "beta.flagged": {"note": "Beta only (Morg): brief message after flagging a card", "slot": "betaMsg", "ph": ""}, "beta.unflagged": {"note": "Beta only: after unflagging", "slot": "betaMsg", "ph": ""}, "beta.locked": {"note": "Beta only: after locking", "slot": "betaMsg", "ph": ""}, "beta.unlocked": {"note": "Beta only: after unlocking", "slot": "betaMsg", "ph": ""}, "beta.queued": {"note": "Beta only: a mark saved on the phone with no signal", "slot": "betaMsg", "ph": ""}, "beta.flag": {"note": "Beta only: spoken name of the yellow Flag key", "slot": "", "ph": ""}, "beta.unflag": {"note": "Beta only: spoken name of the Flag key once flagged", "slot": "", "ph": ""}, "beta.lock": {"note": "Beta only: spoken name of the green Lock key", "slot": "", "ph": ""}, "beta.unlock": {"note": "Beta only: spoken name of the Lock key once locked", "slot": "", "ph": ""}, "beta.note": {"note": "Beta only: the phone's own prompt after Flag", "slot": "", "ph": ""}, "gate.title": {"note": "The 104 lock (switched off): heading over the code slots", "slot": "gateTitle", "ph": ""}, "gate.code": {"note": "The lock: spoken name of the code slots", "slot": "", "ph": ""}, "gate.clear": {"note": "The lock: spoken name of the clear key", "slot": "", "ph": ""}, "gate.enter": {"note": "The lock: spoken name of the enter key", "slot": "", "ph": ""}, "gate.ok": {"note": "The lock: the right code", "slot": "gateToast", "ph": ""}, "gate.no": {"note": "The lock: a wrong code", "slot": "gateToast", "ph": ""}}, SLOTS = {"subhead": {"sel": ".marquee.dm .subhead", "lines": 1, "where": "The sign: the line under TRIVIELA"}, "slogan": {"sel": ".tagline", "lines": 1, "where": "The cabinet: between the screen and the cards, on the board"}, "tag": {"sel": ".tile .tag", "lines": 1, "where": "Board: a tile's category, over its hook"}, "hook": {"sel": ".tile", "lines": 2, "where": "Board: a tile's hook, the word or name from its card"}, "sentence": {"sel": ".sentence", "lines": 0, "where": "Play: the card's sentence"}, "sentenceLong": {"sel": ".sentence.long", "lines": 0, "where": "Play: a sentence over 52 characters"}, "sentenceLonger": {"sel": ".sentence.longer", "lines": 0, "where": "Play: a sentence over 70 characters"}, "choice": {"sel": ".choice", "lines": 0, "where": "Play: an answer key's word"}, "choiceWord": {"sel": ".choice .w", "lines": 0, "where": "Play: the answer word's line height"}, "means": {"sel": ".choice .def", "lines": 2, "where": "Play: an answer's meaning, under its word after answering"}, "goKey": {"sel": ".gorow .gokey", "lines": 1, "where": "Play: the full-width Next key after answering"}, "betaMsg": {"sel": ".bmsg", "lines": 1, "where": "Play, beta only: Flagged, Locked and the rest"}, "shout": {"sel": ".pitch .shout", "lines": 0, "where": "Board: GOLAZO! over the ball on a perfect day"}, "streak": {"sel": ".pitch .shout.streak", "lines": 1, "where": "Board: Brace!, Hat Trick! or 4 in a row! over the ball"}, "score": {"sel": ".score", "lines": 1, "where": "End screen: the score, 11/15"}, "scoreGolazo": {"sel": ".golazo .score", "lines": 0, "where": "End screen: GOLAZO! in the score's place"}, "best": {"sel": ".best", "lines": 1, "where": "End screen: Best: Hat Trick!, under the score"}, "thanks": {"sel": ".thanks-s", "lines": 1, "where": "End screen: Thanks for playing, the demo's last board"}, "shareKey": {"sel": ".share", "lines": 0, "where": "End screen: the share key, showing the text it sends"}, "shareLines": {"sel": ".share .txt", "lines": 0, "where": "End screen: the share key's line height"}, "endKey": {"sel": ".endrow .next, .endrow .next.key, .endrow .again.key", "lines": 2, "where": "End screen: Play #2 and Play again from #1, the demo's keys"}, "sboard": {"sel": ".endrow .sboard", "lines": 1, "where": "End screen: the Share board key"}, "clock": {"sel": ".clock", "lines": 1, "where": "End screen: the countdown to tomorrow's board"}, "menuKey": {"sel": ".mrow .key", "lines": 2, "where": "Menu: How to play and Start over, side by side"}, "menuWide": {"sel": "#m-close", "lines": 1, "where": "Menu: Back to the game, full width"}, "askQ": {"sel": ".ask-box p", "lines": 0, "where": "Pop-up: the question (Start over from #1?)"}, "askKey": {"sel": ".ask-keys .key", "lines": 1, "where": "Pop-up: its two keys"}, "imageKey": {"sel": ".bimg .key", "lines": 1, "where": "Share board pop-up on a computer: Close"}, "introQ": {"sel": ".intro-box .in-q", "lines": 2, "where": "How to play: the heading"}, "introLine": {"sel": ".in-list li", "lines": 1, "where": "How to play: each rule, one line each"}, "introColor": {"sel": ".in-list .in-colors", "lines": 1, "where": "How to play: easy · harder · hardest, beside the three cards"}, "introGo": {"sel": ".intro-box .in-go", "lines": 1, "where": "How to play: the green Kick off key"}, "gateTitle": {"sel": ".g-title", "lines": 1, "where": "The 104 lock (switched off): MEMBERS ONLY"}, "gateToast": {"sel": ".g-toast", "lines": 1, "where": "The 104 lock: Onside! or Offside!"}};   // each string's note, slot and blanks, and each slot's selector, line limit and place: for the text editor
   function tx(id, v) { var s = TEXT[id]; if (s == null) return id; return v ? s.replace(/\{(\w+)\}/g, function (m, k) { return v[k] != null ? v[k] : m; }) : s; }
   function th(id, v) { return num(keep(esc(tx(id, v)))); }
+  function tv(v) { return ' data-tv="' + esc(JSON.stringify(v)) + '"'; }   // the values a string's placeholders were filled with, so the text editor can redraw it
   // pixel sprites, one string per row ('#' = lit pixel)
   var SPR = {
     // color sprites: K ink, W white
@@ -881,14 +884,14 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     S.open = -1; save(); go(null); beta(null);
     board(ok ? n - 1 : undefined); view('board');
     var run = ok ? streak() : 0, pitch = document.querySelector('#v-board .pitch');
-    if (run >= 2 && run < ALLN && pitch) { var sh = document.createElement('p'); sh.className = 'shout streak'; sh.dataset.tid = streakId(run); sh.textContent = streakWord(run); pitch.appendChild(sh); }
+    if (run >= 2 && run < ALLN && pitch) { var sh = document.createElement('p'); sh.className = 'shout streak'; sh.dataset.tid = streakId(run); sh.dataset.tv = JSON.stringify({ n: run }); sh.dataset.tplain = 1; sh.textContent = streakWord(run); pitch.appendChild(sh); }
     if (!over()) { settle = null; return; }
     if (n < ALLN) { timer = setTimeout(end, motion() ? 1300 : 0); settle = function () { clearTimeout(timer); end(); }; return; }   // the last card: a beat on the ball, then the grid
     function golazo() {   // 15/15: the center lights last, the whole ball glows, and the goal scene plays
       var pitch = document.querySelector('#v-board .pitch');
       if (pitch) {
         pitch.insertAdjacentHTML('beforeend', goalScene(1)); pitch.classList.add('fxon');
-        var sh = document.createElement('p'); sh.className = 'shout'; sh.dataset.tid = 'golazo'; sh.textContent = GOLAZO; pitch.appendChild(sh);
+        var sh = document.createElement('p'); sh.className = 'shout'; sh.dataset.tid = 'golazo'; sh.dataset.tplain = 1; sh.textContent = GOLAZO; pitch.appendChild(sh);
       }
       timer = setTimeout(end, motion() ? 2800 : 0);
     }
@@ -943,10 +946,10 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
         '<i class="rcard c' + (y + 1) + '" style="width:' + Math.round(b * .55) + 'px;height:' + Math.round(b * .77) + 'px"></i>') + '</span>'; }).join(''); }).join(''); };
     $('v-end').className = 'view' + (top ? ' golazo' : '');
     $('v-end').innerHTML = '<div class="egrid" role="img" aria-label="' + esc(tx('end.grid', { rows: rows().map(function (row, y) { return tx('end.row', { color: tx('row.' + (y + 1)), n: row.filter(function (v) { return v === 1; }).length }); }).join(', ') })) + '">' + cells(big) + '</div>' +
-      '<p class="score" data-tid="' + (top ? 'golazo' : 'end.score') + '">' + (top ? esc(GOLAZO) : num(esc(score()))) + '</p>' + (!top && best() >= 2 ? '<p class="best" data-tid="end.best">' + esc(tx('end.best', { run: streakWord(best()) })) + '</p>' : '');
-    $('share-top').innerHTML = th('share.title', { day: S.day + 1 }); $('share-top').dataset.tid = 'share.title';
+      '<p class="score"' + (top ? ' data-tid="golazo" data-tplain="1"' : ' data-tid="end.score"' + tv({ n: n, all: ALLN })) + '>' + (top ? esc(GOLAZO) : num(esc(score()))) + '</p>' + (!top && best() >= 2 ? '<p class="best" data-tid="end.best" data-tplain="1"' + tv({ run: streakWord(best()) }) + '>' + esc(tx('end.best', { run: streakWord(best()) })) + '</p>' : '');
+    $('share-top').innerHTML = th('share.title', { day: S.day + 1 }); $('share-top').dataset.tid = 'share.title'; $('share-top').dataset.tv = JSON.stringify({ day: S.day + 1 });
     $('share-txt').innerHTML = '<span class="sgrid">' + r.map(function (row, y) { return row.map(function (v) { return v === 1 ? ballMark(11) : rcard(y + 1); }).join(''); }).join('') + '</span>' +
-      '<span data-tid="' + (chips() === ALLN ? 'golazo' : best() >= 2 ? 'share.scoreBest' : 'end.score') + '">' + num(keep(esc(scoreLine()))) + '</span><span data-tid="share.site">' + th('share.site') + '</span>';
+      '<span data-tid="' + (chips() === ALLN ? 'golazo' : best() >= 2 ? 'share.scoreBest' : 'end.score') + '"' + tv({ score: score(), run: streakWord(best()), n: chips(), all: ALLN }) + '>' + num(keep(esc(scoreLine()))) + '</span><span data-tid="share.site">' + th('share.site') + '</span>';
     $('share').setAttribute('aria-label', tx('share.label', { text: shareText().replace(/\n/g, ', ') }));
     $('share-mark').innerHTML = svg('share', 3);
     beta(null); view('end'); clearInterval(tick); endRow(); if (!DEMO) tick = setInterval(clock, 1000);
@@ -958,7 +961,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     $('e-next').hidden = !DEMO || last; $('clock').hidden = !!DEMO && !last;
     if (!DEMO) return clock();
     if (last) { $('clock').hidden = true; if (!$('thanks-s')) $('v-end').insertAdjacentHTML('afterbegin', '<p class="thanks-s" id="thanks-s" data-tid="end.thanks">' + th('end.thanks') + '</p>'); return; }
-    $('e-next').innerHTML = '<span data-tid="end.next">' + th('end.next', { day: S.day + 2 }) + '</span>' + svg('next', 3); $('e-next').setAttribute('aria-label', tx('end.nextLabel', { day: S.day + 2 }));
+    $('e-next').innerHTML = '<span data-tid="end.next"' + tv({ day: S.day + 2 }) + '>' + th('end.next', { day: S.day + 2 }) + '</span>' + svg('next', 3); $('e-next').setAttribute('aria-label', tx('end.nextLabel', { day: S.day + 2 }));
   }
   function goDay(d) {   // the demo's next board, or back to #1
     if (FIXED !== null) { params.set('day', d + 1); params.set('reset', ''); location.search = params.toString(); return; }   // a preview link's ?day=N
@@ -1099,7 +1102,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   function say(id) {   // a beta message, by its string id
     var text = tx(id);
     if (where === 'end') { holdClock = Date.now() + 1600; $('clock').hidden = false; $('e-next').hidden = true; $('clock').classList.remove('thanks'); $('clock').textContent = text.toUpperCase(); setTimeout(endRow, 1650); return; }
-    var m = $('b-msg'); m.textContent = text; m.dataset.tid = id; clearTimeout(say.t); say.t = setTimeout(function () { m.textContent = ''; }, 1600);
+    var m = $('b-msg'); m.textContent = text; m.dataset.tid = id; m.dataset.tplain = 1; clearTimeout(say.t); say.t = setTimeout(function () { m.textContent = ''; }, 1600);
   }
   function flush() {   // send the queue in order: a refused mark is dropped, a network failure waits for the next try
     if (sending) return sending;
@@ -1212,6 +1215,110 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     S = load(); save(); show();
   });
   document.addEventListener('touchstart', function () {}, { passive: true });   // iPhone Safari only shows :active (keys pressing down) once a touch listener exists
+  // ---- the text editor (Morg, Oct 26, 2026: research/text-system.md) ----
+  // On a preview link with ?text, every string can be changed right on the game screen. Edit mode on, tap any text, type, and the
+  // real screen redraws as you go, with a check that it still fits its slot (slots.json). Changes wait on the phone (bsb-text-edits)
+  // until Send posts them to /api/text, where the hub's "Apply my text edits" picks them up: Trivelle writes them into
+  // build/text/en.json, rebuilds, runs the text check and puts them on the beta. The real site never shows any of this.
+  function textEditor() {
+    var BASE = {}, edits = store.get('bsb-text-edits', {}), on = false, cur = null;
+    Object.keys(TEXT).forEach(function (k) { BASE[k] = TEXT[k]; });
+    Object.keys(edits).forEach(function (k) { if (!(k in BASE) || edits[k] === BASE[k]) delete edits[k]; else TEXT[k] = edits[k]; });   // a change already in the build is done
+    function refresh() {   // every string the screen shows, redrawn from TEXT
+      GOLAZO = tx('golazo'); ARCADE = new RegExp('(<[^>]*>)|(' + quote(esc(tx('golazo'))) + '|#?\\d+)', 'g');
+      fill(document);
+      [].forEach.call(document.querySelectorAll('[data-tid]'), function (el) {
+        var id = el.dataset.tid; if (!(id in TEXT)) return;
+        var v = el.dataset.tv ? JSON.parse(el.dataset.tv) : null;
+        if (v && 'run' in v && v.run && id !== 'end.best' && id !== 'share.scoreBest') v.run = streakWord(best());
+        if (el.dataset.tplain) el.textContent = tx(id, v); else el.innerHTML = th(id, v);
+      });
+      if (typeof tighten === 'function') tighten(document);   // tags too wide for their tile (the tag-fit branch)
+      count();
+    }
+    var css = document.createElement('style');
+    css.textContent = '.tx-bar{position:fixed;left:8px;right:8px;top:max(6px,env(safe-area-inset-top,0px));z-index:99;display:flex;gap:6px;align-items:center;font:600 13px/1.2 system-ui,sans-serif;color:#fff;pointer-events:none}' +
+      '.tx-bar button{pointer-events:auto;font:inherit;border:0;border-radius:999px;padding:8px 12px;background:#2B2F45;color:#fff;box-shadow:0 2px 8px rgba(0,0,0,.35)}' +
+      '.tx-bar .tx-on{background:#E040A0}.tx-bar .tx-n{margin-left:auto}' +
+      '.tedit [data-t],.tedit [data-tid]{outline:1.5px dashed #E040A0;outline-offset:1px;cursor:text}' +
+      '.tx-sheet{position:fixed;left:0;right:0;bottom:0;z-index:100;max-height:78%;overflow:auto;background:#1B1E2E;color:#EEF;font:15px/1.35 system-ui,sans-serif;padding:14px 14px max(16px,env(safe-area-inset-bottom,0px));border-radius:16px 16px 0 0;box-shadow:0 -8px 30px rgba(0,0,0,.5)}' +
+      '.tx-sheet.tx-top{top:0;bottom:auto;border-radius:0 0 16px 16px;padding-top:max(14px,env(safe-area-inset-top,0px))}' +
+      '.tx-sheet h3{margin:0 0 2px;font-size:13px;font-weight:600;color:#B9BCE0}.tx-sheet .tx-note{margin:0 0 10px;color:#CDD}' +
+      '.tx-sheet textarea{width:100%;box-sizing:border-box;min-height:70px;font:17px/1.35 system-ui,sans-serif;padding:10px;border-radius:10px;border:0;background:#fff;color:#111}' +
+      '.tx-sheet .tx-was{margin:8px 0 0;color:#99A;font-size:13px}.tx-sheet .tx-fit{margin:8px 0 0;font-weight:600}.tx-sheet .tx-fit.ok{color:#7CE3A6}.tx-sheet .tx-fit.no{color:#FF8A8F}' +
+      '.tx-sheet .tx-keys{display:flex;gap:8px;margin-top:12px}.tx-sheet .tx-keys button{flex:1;font:600 15px system-ui,sans-serif;border:0;border-radius:10px;padding:12px;background:#33385A;color:#fff}.tx-sheet .tx-keys .tx-go{background:#45BE76;color:#0B1F12}' +
+      '.tx-list button{display:block;width:100%;text-align:left;font:14px/1.3 system-ui,sans-serif;background:none;color:#EEF;border:0;border-bottom:1px solid #2E3350;padding:9px 2px}.tx-list b{display:block;font-size:12px;color:#B9BCE0;font-weight:600}.tx-list .tx-ed b::after{content:" · changed";color:#E040A0}';
+    document.head.appendChild(css);
+    var bar = document.createElement('div'); bar.className = 'tx-bar';
+    bar.innerHTML = '<button type="button" id="tx-mode">Tap to edit</button><button type="button" id="tx-all">All text</button><button type="button" class="tx-n" id="tx-send"></button>';
+    document.body.appendChild(bar);
+    var sheet = document.createElement('div'); sheet.className = 'tx-sheet'; sheet.hidden = true; document.body.appendChild(sheet);
+    function count() { var n = Object.keys(edits).length; $('tx-send').textContent = n ? 'Send ' + n + (n === 1 ? ' change' : ' changes') : 'No changes'; }
+    function keep() { store.set('bsb-text-edits', edits); }
+    $('tx-mode').addEventListener('click', function () { on = !on; this.classList.toggle('tx-on', on); this.textContent = on ? 'Editing: tap text' : 'Tap to edit'; document.body.classList.toggle('tedit', on); if (!on) close(); });
+    document.addEventListener('click', function (e) {   // in edit mode a tap on text edits it, and never plays the game
+      if (!on || bar.contains(e.target) || sheet.contains(e.target)) return;
+      var el = e.target.closest('[data-t],[data-tid],[data-t-label]'); if (!el) return;
+      e.preventDefault(); e.stopPropagation(); edit(el.dataset.t || el.dataset.tid || el.dataset.tLabel, el);
+    }, true);
+    function slotOf(el) { var hit = null; Object.keys(SLOTS).forEach(function (k) { if (el && (el.matches(SLOTS[k].sel) || el.closest(SLOTS[k].sel))) hit = k; }); return hit; }
+    function fits(el, slot) {   // the text check, in the page: lines against the slot's limit, and nothing past its box
+      if (!el || !el.getClientRects().length) return null;
+      var box = (el.closest(SLOTS[slot] ? SLOTS[slot].sel : '*') || el), r = document.createRange(); r.selectNodeContents(el);
+      var rects = [].filter.call(r.getClientRects(), function (q) { return q.width > .5; }), mids = [], b = box.getBoundingClientRect(), fs = parseFloat(getComputedStyle(el).fontSize);
+      rects.forEach(function (q) { var m = (q.top + q.bottom) / 2; if (!mids.some(function (x) { return Math.abs(x - m) < fs * .45; })) mids.push(m); });
+      var over = Math.max(0, b.left - Math.min.apply(null, rects.map(function (q) { return q.left; })), Math.max.apply(null, rects.map(function (q) { return q.right; })) - b.right, box.scrollWidth - box.clientWidth);
+      var max = SLOTS[slot] && SLOTS[slot].lines;
+      if (over > 1) return [false, 'Too wide by ' + Math.round(over) + ' px'];
+      if (max && mids.length > max) return [false, mids.length + ' lines, this spot allows ' + max];
+      return [true, 'Fits' + (max ? ' (' + mids.length + ' of ' + max + (max === 1 ? ' line)' : ' lines)') : '')];
+    }
+    function edit(id, el) {
+      if (!(id in TEXT)) return;
+      cur = { id: id, el: el }; var m = META[id] || {}, slot = m.slot || slotOf(el), where = SLOTS[slot] ? SLOTS[slot].where : '';
+      sheet.innerHTML = '<h3>' + esc(id) + (where ? ' · ' + esc(where) : '') + '</h3><p class="tx-note">' + esc(m.note || '') + (m.ph ? '<br>Blanks the game fills in: ' + esc(m.ph) : '') + '</p>' +
+        '<textarea id="tx-ta" rows="3" spellcheck="true"></textarea><p class="tx-fit" id="tx-fit"></p><p class="tx-was" id="tx-was"></p>' +
+        '<div class="tx-keys"><button type="button" id="tx-undo">Back to the original</button><button type="button" class="tx-go" id="tx-done">Done</button></div>';
+      sheet.hidden = false;
+      var low = el && el.getBoundingClientRect().top > innerHeight * .45; sheet.classList.toggle('tx-top', !!low);   // the sheet never covers the text it edits
+      var ta = $('tx-ta'); ta.value = TEXT[id];
+      function upd() {
+        var v = ta.value.replace(/\n/g, ' ').replace(/(^|[\s(“])'/g, '$1‘').replace(/'/g, '’').replace(/(^|[\s(])"/g, '$1“').replace(/"/g, '”');   // curly quotes, as the house style has them
+        if (v !== ta.value) { var at = ta.selectionStart; ta.value = v; ta.selectionStart = ta.selectionEnd = at; }
+        TEXT[id] = v; if (v === BASE[id]) delete edits[id]; else edits[id] = v; keep(); refresh();
+        var live = el && document.contains(el) ? el : document.querySelector('[data-t="' + id + '"],[data-tid="' + id + '"]'), f = fits(live, slot);
+        var need = BASE[id].match(/\{\w+\}/g) || [], has = v.match(/\{\w+\}/g) || [];
+        var lost = need.filter(function (h) { return has.indexOf(h) < 0; }), odd = has.filter(function (h) { return need.indexOf(h) < 0; });
+        var warn = (v.indexOf(';') >= 0 ? ' · No semicolons (house style)' : '') + (!v.trim() ? ' · Empty' : '') +
+          (lost.length ? ' · Keep the blank ' + lost.join(' ') : '') + (odd.length ? ' · The game can’t fill ' + odd.join(' ') : '');
+        $('tx-fit').className = 'tx-fit ' + (f && f[0] && !warn ? 'ok' : f || warn ? 'no' : '');
+        $('tx-fit').textContent = (f ? f[1] : 'Not on this screen, so no fit check here') + warn;
+        $('tx-was').textContent = v === BASE[id] ? '' : 'Was: ' + BASE[id];
+      }
+      ta.addEventListener('input', upd); upd();
+      $('tx-undo').addEventListener('click', function () { ta.value = BASE[id]; upd(); });
+      $('tx-done').addEventListener('click', close);
+    }
+    function close() { sheet.hidden = true; cur = null; }
+    $('tx-all').addEventListener('click', function () {   // every string, including the spoken ones and the share text that no screen shows
+      sheet.innerHTML = '<h3>All text · ' + Object.keys(TEXT).length + ' strings, tap one to change it</h3><div class="tx-list">' + Object.keys(TEXT).map(function (k) {
+        return '<button type="button" data-k="' + esc(k) + '"' + (k in edits ? ' class="tx-ed"' : '') + '><b>' + esc(k) + '</b>' + esc(TEXT[k]) + '</button>'; }).join('') +
+        '</div><div class="tx-keys"><button type="button" class="tx-go" id="tx-done">Done</button></div>';
+      sheet.hidden = false; sheet.classList.remove('tx-top');
+      [].forEach.call(sheet.querySelectorAll('[data-k]'), function (b) { b.addEventListener('click', function () { edit(b.dataset.k, null); }); });
+      $('tx-done').addEventListener('click', close);
+    });
+    $('tx-send').addEventListener('click', function () {
+      var ids = Object.keys(edits); if (!ids.length) return;
+      var body = { edits: ids.map(function (k) { return { id: k, from: BASE[k], to: edits[k] }; }) }, btn = this;
+      btn.textContent = 'Sending…';
+      fetch('/api/text', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) })
+        .then(function (r) { return r.ok; }, function () { return false; })
+        .then(function (ok) { btn.textContent = ok ? 'Sent. Tap “Apply my text edits” in the hub' : 'Not sent: no signal? Try again'; setTimeout(count, 4000); });
+    });
+    refresh();
+  }
+  if (DEV && params.has('text')) textEditor();
   cab.classList.add('poweron'); if (gated) lock(); else show(); save();
 
   // offline: sw.js keeps a saved copy so the game loads at the field with no signal

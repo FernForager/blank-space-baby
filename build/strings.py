@@ -35,7 +35,7 @@ def problems(text, meta, template):
         if named - holes(s): out.append((k, 'lists placeholder ' + ', '.join(sorted(named - holes(s))) + ' but doesn’t use it'))
     for k in meta:
         if k not in text: out.append((k, 'a note for a string that doesn’t exist'))
-    asked = set(re.findall(r'data-t(?:-label|-alt)?="([^"]+)"', template))
+    asked = set(re.findall(r'data-t(?:-label|-alt)?="([a-z][a-zA-Z0-9.]*)"', template))
     asked |= {q for q in re.findall(r"'([a-z][a-z0-9]*\.[a-zA-Z0-9.]*[a-zA-Z0-9])'", template) if q.split('.')[0] + '.' in {k.split('.')[0] + '.' for k in text}}
     asked |= {q for q in re.findall(r"\btx\('([^']+)'", template) if not q.endswith('.')}
     asked |= {'tag.' + v for v in re.findall(r"'(?:[\w-]+)':\s*'(\w+)'|\b\w+:\s*'(\w+)'", re.search(r'var TAG = \{(.*?)\};', template, re.S).group(1)) for v in v if v}
@@ -71,6 +71,12 @@ def slot_problems(slots, meta):
     for k, m in meta.items():
         if m.get('slot') and m['slot'] not in slots: out.append((k, 'its slot "' + m['slot'] + '" isn’t in build/text/slots.json'))
     return out
+
+def page_meta(meta, slots):
+    """What the in-game text editor shows: each string's note, slot and blanks, and each slot's selector, line limit and place."""
+    m = {k: {'note': v.get('note', ''), 'slot': v.get('slot', ''), 'ph': ', '.join('{%s} (%s)' % (p, d.get('example', '')) for p, d in v.get('placeholders', {}).items())} for k, v in meta.items()}
+    s = {k: {'sel': v['sel'], 'lines': v.get('lines', 0), 'where': v['where']} for k, v in slots.items()}
+    return m, s
 
 def slot_css(slots):
     """One rule per slot, then the phone sizes, in the table's order (a later row wins a tie)."""

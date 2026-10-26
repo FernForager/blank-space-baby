@@ -396,10 +396,13 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   // every word the game shows or says, apart from the cards, from build/text/en.json (research/text-system.md). tx() gives the plain text,
   // with its {placeholders} filled, for spoken labels, the share and the image. th() gives it typeset for the page: escaped, digits and
   // GOLAZO! in the arcade face, punctuation glued to its word. The markup names its strings with data-t, data-t-label and data-t-alt
-  // (filled in once, at load), and text the script writes later carries data-tid, the id of the string it shows, for tools/textcheck.py
+  // (filled in once, at load), and text the script writes later carries data-tid, the id of the string it shows (with data-tv, the values
+  // its blanks were filled with, and data-tplain when it's set as plain text), for tools/textcheck.py and the text editor
   var TEXT = __TEXT__;
+  var META = __TEXTMETA__, SLOTS = __SLOTS__;   // each string's note, slot and blanks, and each slot's selector, line limit and place: for the text editor
   function tx(id, v) { var s = TEXT[id]; if (s == null) return id; return v ? s.replace(/\{(\w+)\}/g, function (m, k) { return v[k] != null ? v[k] : m; }) : s; }
   function th(id, v) { return num(keep(esc(tx(id, v)))); }
+  function tv(v) { return ' data-tv="' + esc(JSON.stringify(v)) + '"'; }   // the values a string's placeholders were filled with, so the text editor can redraw it
   // pixel sprites, one string per row ('#' = lit pixel)
   var SPR = {
     // color sprites: K ink, W white
@@ -823,14 +826,14 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     S.open = -1; save(); go(null); beta(null);
     board(ok ? n - 1 : undefined); view('board');
     var run = ok ? streak() : 0, pitch = document.querySelector('#v-board .pitch');
-    if (run >= 2 && run < ALLN && pitch) { var sh = document.createElement('p'); sh.className = 'shout streak'; sh.dataset.tid = streakId(run); sh.textContent = streakWord(run); pitch.appendChild(sh); }
+    if (run >= 2 && run < ALLN && pitch) { var sh = document.createElement('p'); sh.className = 'shout streak'; sh.dataset.tid = streakId(run); sh.dataset.tv = JSON.stringify({ n: run }); sh.dataset.tplain = 1; sh.textContent = streakWord(run); pitch.appendChild(sh); }
     if (!over()) { settle = null; return; }
     if (n < ALLN) { timer = setTimeout(end, motion() ? 1300 : 0); settle = function () { clearTimeout(timer); end(); }; return; }   // the last card: a beat on the ball, then the grid
     function golazo() {   // 15/15: the center lights last, the whole ball glows, and the goal scene plays
       var pitch = document.querySelector('#v-board .pitch');
       if (pitch) {
         pitch.insertAdjacentHTML('beforeend', goalScene(1)); pitch.classList.add('fxon');
-        var sh = document.createElement('p'); sh.className = 'shout'; sh.dataset.tid = 'golazo'; sh.textContent = GOLAZO; pitch.appendChild(sh);
+        var sh = document.createElement('p'); sh.className = 'shout'; sh.dataset.tid = 'golazo'; sh.dataset.tplain = 1; sh.textContent = GOLAZO; pitch.appendChild(sh);
       }
       timer = setTimeout(end, motion() ? 2800 : 0);
     }
@@ -885,10 +888,10 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
         '<i class="rcard c' + (y + 1) + '" style="width:' + Math.round(b * .55) + 'px;height:' + Math.round(b * .77) + 'px"></i>') + '</span>'; }).join(''); }).join(''); };
     $('v-end').className = 'view' + (top ? ' golazo' : '');
     $('v-end').innerHTML = '<div class="egrid" role="img" aria-label="' + esc(tx('end.grid', { rows: rows().map(function (row, y) { return tx('end.row', { color: tx('row.' + (y + 1)), n: row.filter(function (v) { return v === 1; }).length }); }).join(', ') })) + '">' + cells(big) + '</div>' +
-      '<p class="score" data-tid="' + (top ? 'golazo' : 'end.score') + '">' + (top ? esc(GOLAZO) : num(esc(score()))) + '</p>' + (!top && best() >= 2 ? '<p class="best" data-tid="end.best">' + esc(tx('end.best', { run: streakWord(best()) })) + '</p>' : '');
-    $('share-top').innerHTML = th('share.title', { day: S.day + 1 }); $('share-top').dataset.tid = 'share.title';
+      '<p class="score"' + (top ? ' data-tid="golazo" data-tplain="1"' : ' data-tid="end.score"' + tv({ n: n, all: ALLN })) + '>' + (top ? esc(GOLAZO) : num(esc(score()))) + '</p>' + (!top && best() >= 2 ? '<p class="best" data-tid="end.best" data-tplain="1"' + tv({ run: streakWord(best()) }) + '>' + esc(tx('end.best', { run: streakWord(best()) })) + '</p>' : '');
+    $('share-top').innerHTML = th('share.title', { day: S.day + 1 }); $('share-top').dataset.tid = 'share.title'; $('share-top').dataset.tv = JSON.stringify({ day: S.day + 1 });
     $('share-txt').innerHTML = '<span class="sgrid">' + r.map(function (row, y) { return row.map(function (v) { return v === 1 ? ballMark(11) : rcard(y + 1); }).join(''); }).join('') + '</span>' +
-      '<span data-tid="' + (chips() === ALLN ? 'golazo' : best() >= 2 ? 'share.scoreBest' : 'end.score') + '">' + num(keep(esc(scoreLine()))) + '</span><span data-tid="share.site">' + th('share.site') + '</span>';
+      '<span data-tid="' + (chips() === ALLN ? 'golazo' : best() >= 2 ? 'share.scoreBest' : 'end.score') + '"' + tv({ score: score(), run: streakWord(best()), n: chips(), all: ALLN }) + '>' + num(keep(esc(scoreLine()))) + '</span><span data-tid="share.site">' + th('share.site') + '</span>';
     $('share').setAttribute('aria-label', tx('share.label', { text: shareText().replace(/\n/g, ', ') }));
     $('share-mark').innerHTML = svg('share', 3);
     beta(null); view('end'); clearInterval(tick); endRow(); if (!DEMO) tick = setInterval(clock, 1000);
@@ -900,7 +903,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     $('e-next').hidden = !DEMO || last; $('clock').hidden = !!DEMO && !last;
     if (!DEMO) return clock();
     if (last) { $('clock').hidden = true; if (!$('thanks-s')) $('v-end').insertAdjacentHTML('afterbegin', '<p class="thanks-s" id="thanks-s" data-tid="end.thanks">' + th('end.thanks') + '</p>'); return; }
-    $('e-next').innerHTML = '<span data-tid="end.next">' + th('end.next', { day: S.day + 2 }) + '</span>' + svg('next', 3); $('e-next').setAttribute('aria-label', tx('end.nextLabel', { day: S.day + 2 }));
+    $('e-next').innerHTML = '<span data-tid="end.next"' + tv({ day: S.day + 2 }) + '>' + th('end.next', { day: S.day + 2 }) + '</span>' + svg('next', 3); $('e-next').setAttribute('aria-label', tx('end.nextLabel', { day: S.day + 2 }));
   }
   function goDay(d) {   // the demo's next board, or back to #1
     if (FIXED !== null) { params.set('day', d + 1); params.set('reset', ''); location.search = params.toString(); return; }   // a preview link's ?day=N
@@ -1041,7 +1044,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   function say(id) {   // a beta message, by its string id
     var text = tx(id);
     if (where === 'end') { holdClock = Date.now() + 1600; $('clock').hidden = false; $('e-next').hidden = true; $('clock').classList.remove('thanks'); $('clock').textContent = text.toUpperCase(); setTimeout(endRow, 1650); return; }
-    var m = $('b-msg'); m.textContent = text; m.dataset.tid = id; clearTimeout(say.t); say.t = setTimeout(function () { m.textContent = ''; }, 1600);
+    var m = $('b-msg'); m.textContent = text; m.dataset.tid = id; m.dataset.tplain = 1; clearTimeout(say.t); say.t = setTimeout(function () { m.textContent = ''; }, 1600);
   }
   function flush() {   // send the queue in order: a refused mark is dropped, a network failure waits for the next try
     if (sending) return sending;
@@ -1154,6 +1157,110 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     S = load(); save(); show();
   });
   document.addEventListener('touchstart', function () {}, { passive: true });   // iPhone Safari only shows :active (keys pressing down) once a touch listener exists
+  // ---- the text editor (Morg, Oct 26, 2026: research/text-system.md) ----
+  // On a preview link with ?text, every string can be changed right on the game screen. Edit mode on, tap any text, type, and the
+  // real screen redraws as you go, with a check that it still fits its slot (slots.json). Changes wait on the phone (bsb-text-edits)
+  // until Send posts them to /api/text, where the hub's "Apply my text edits" picks them up: Trivelle writes them into
+  // build/text/en.json, rebuilds, runs the text check and puts them on the beta. The real site never shows any of this.
+  function textEditor() {
+    var BASE = {}, edits = store.get('bsb-text-edits', {}), on = false, cur = null;
+    Object.keys(TEXT).forEach(function (k) { BASE[k] = TEXT[k]; });
+    Object.keys(edits).forEach(function (k) { if (!(k in BASE) || edits[k] === BASE[k]) delete edits[k]; else TEXT[k] = edits[k]; });   // a change already in the build is done
+    function refresh() {   // every string the screen shows, redrawn from TEXT
+      GOLAZO = tx('golazo'); ARCADE = new RegExp('(<[^>]*>)|(' + quote(esc(tx('golazo'))) + '|#?\\d+)', 'g');
+      fill(document);
+      [].forEach.call(document.querySelectorAll('[data-tid]'), function (el) {
+        var id = el.dataset.tid; if (!(id in TEXT)) return;
+        var v = el.dataset.tv ? JSON.parse(el.dataset.tv) : null;
+        if (v && 'run' in v && v.run && id !== 'end.best' && id !== 'share.scoreBest') v.run = streakWord(best());
+        if (el.dataset.tplain) el.textContent = tx(id, v); else el.innerHTML = th(id, v);
+      });
+      if (typeof tighten === 'function') tighten(document);   // tags too wide for their tile (the tag-fit branch)
+      count();
+    }
+    var css = document.createElement('style');
+    css.textContent = '.tx-bar{position:fixed;left:8px;right:8px;top:max(6px,env(safe-area-inset-top,0px));z-index:99;display:flex;gap:6px;align-items:center;font:600 13px/1.2 system-ui,sans-serif;color:#fff;pointer-events:none}' +
+      '.tx-bar button{pointer-events:auto;font:inherit;border:0;border-radius:999px;padding:8px 12px;background:#2B2F45;color:#fff;box-shadow:0 2px 8px rgba(0,0,0,.35)}' +
+      '.tx-bar .tx-on{background:#E040A0}.tx-bar .tx-n{margin-left:auto}' +
+      '.tedit [data-t],.tedit [data-tid]{outline:1.5px dashed #E040A0;outline-offset:1px;cursor:text}' +
+      '.tx-sheet{position:fixed;left:0;right:0;bottom:0;z-index:100;max-height:78%;overflow:auto;background:#1B1E2E;color:#EEF;font:15px/1.35 system-ui,sans-serif;padding:14px 14px max(16px,env(safe-area-inset-bottom,0px));border-radius:16px 16px 0 0;box-shadow:0 -8px 30px rgba(0,0,0,.5)}' +
+      '.tx-sheet.tx-top{top:0;bottom:auto;border-radius:0 0 16px 16px;padding-top:max(14px,env(safe-area-inset-top,0px))}' +
+      '.tx-sheet h3{margin:0 0 2px;font-size:13px;font-weight:600;color:#B9BCE0}.tx-sheet .tx-note{margin:0 0 10px;color:#CDD}' +
+      '.tx-sheet textarea{width:100%;box-sizing:border-box;min-height:70px;font:17px/1.35 system-ui,sans-serif;padding:10px;border-radius:10px;border:0;background:#fff;color:#111}' +
+      '.tx-sheet .tx-was{margin:8px 0 0;color:#99A;font-size:13px}.tx-sheet .tx-fit{margin:8px 0 0;font-weight:600}.tx-sheet .tx-fit.ok{color:#7CE3A6}.tx-sheet .tx-fit.no{color:#FF8A8F}' +
+      '.tx-sheet .tx-keys{display:flex;gap:8px;margin-top:12px}.tx-sheet .tx-keys button{flex:1;font:600 15px system-ui,sans-serif;border:0;border-radius:10px;padding:12px;background:#33385A;color:#fff}.tx-sheet .tx-keys .tx-go{background:#45BE76;color:#0B1F12}' +
+      '.tx-list button{display:block;width:100%;text-align:left;font:14px/1.3 system-ui,sans-serif;background:none;color:#EEF;border:0;border-bottom:1px solid #2E3350;padding:9px 2px}.tx-list b{display:block;font-size:12px;color:#B9BCE0;font-weight:600}.tx-list .tx-ed b::after{content:" · changed";color:#E040A0}';
+    document.head.appendChild(css);
+    var bar = document.createElement('div'); bar.className = 'tx-bar';
+    bar.innerHTML = '<button type="button" id="tx-mode">Tap to edit</button><button type="button" id="tx-all">All text</button><button type="button" class="tx-n" id="tx-send"></button>';
+    document.body.appendChild(bar);
+    var sheet = document.createElement('div'); sheet.className = 'tx-sheet'; sheet.hidden = true; document.body.appendChild(sheet);
+    function count() { var n = Object.keys(edits).length; $('tx-send').textContent = n ? 'Send ' + n + (n === 1 ? ' change' : ' changes') : 'No changes'; }
+    function keep() { store.set('bsb-text-edits', edits); }
+    $('tx-mode').addEventListener('click', function () { on = !on; this.classList.toggle('tx-on', on); this.textContent = on ? 'Editing: tap text' : 'Tap to edit'; document.body.classList.toggle('tedit', on); if (!on) close(); });
+    document.addEventListener('click', function (e) {   // in edit mode a tap on text edits it, and never plays the game
+      if (!on || bar.contains(e.target) || sheet.contains(e.target)) return;
+      var el = e.target.closest('[data-t],[data-tid],[data-t-label]'); if (!el) return;
+      e.preventDefault(); e.stopPropagation(); edit(el.dataset.t || el.dataset.tid || el.dataset.tLabel, el);
+    }, true);
+    function slotOf(el) { var hit = null; Object.keys(SLOTS).forEach(function (k) { if (el && (el.matches(SLOTS[k].sel) || el.closest(SLOTS[k].sel))) hit = k; }); return hit; }
+    function fits(el, slot) {   // the text check, in the page: lines against the slot's limit, and nothing past its box
+      if (!el || !el.getClientRects().length) return null;
+      var box = (el.closest(SLOTS[slot] ? SLOTS[slot].sel : '*') || el), r = document.createRange(); r.selectNodeContents(el);
+      var rects = [].filter.call(r.getClientRects(), function (q) { return q.width > .5; }), mids = [], b = box.getBoundingClientRect(), fs = parseFloat(getComputedStyle(el).fontSize);
+      rects.forEach(function (q) { var m = (q.top + q.bottom) / 2; if (!mids.some(function (x) { return Math.abs(x - m) < fs * .45; })) mids.push(m); });
+      var over = Math.max(0, b.left - Math.min.apply(null, rects.map(function (q) { return q.left; })), Math.max.apply(null, rects.map(function (q) { return q.right; })) - b.right, box.scrollWidth - box.clientWidth);
+      var max = SLOTS[slot] && SLOTS[slot].lines;
+      if (over > 1) return [false, 'Too wide by ' + Math.round(over) + ' px'];
+      if (max && mids.length > max) return [false, mids.length + ' lines, this spot allows ' + max];
+      return [true, 'Fits' + (max ? ' (' + mids.length + ' of ' + max + (max === 1 ? ' line)' : ' lines)') : '')];
+    }
+    function edit(id, el) {
+      if (!(id in TEXT)) return;
+      cur = { id: id, el: el }; var m = META[id] || {}, slot = m.slot || slotOf(el), where = SLOTS[slot] ? SLOTS[slot].where : '';
+      sheet.innerHTML = '<h3>' + esc(id) + (where ? ' · ' + esc(where) : '') + '</h3><p class="tx-note">' + esc(m.note || '') + (m.ph ? '<br>Blanks the game fills in: ' + esc(m.ph) : '') + '</p>' +
+        '<textarea id="tx-ta" rows="3" spellcheck="true"></textarea><p class="tx-fit" id="tx-fit"></p><p class="tx-was" id="tx-was"></p>' +
+        '<div class="tx-keys"><button type="button" id="tx-undo">Back to the original</button><button type="button" class="tx-go" id="tx-done">Done</button></div>';
+      sheet.hidden = false;
+      var low = el && el.getBoundingClientRect().top > innerHeight * .45; sheet.classList.toggle('tx-top', !!low);   // the sheet never covers the text it edits
+      var ta = $('tx-ta'); ta.value = TEXT[id];
+      function upd() {
+        var v = ta.value.replace(/\n/g, ' ').replace(/(^|[\s(“])'/g, '$1‘').replace(/'/g, '’').replace(/(^|[\s(])"/g, '$1“').replace(/"/g, '”');   // curly quotes, as the house style has them
+        if (v !== ta.value) { var at = ta.selectionStart; ta.value = v; ta.selectionStart = ta.selectionEnd = at; }
+        TEXT[id] = v; if (v === BASE[id]) delete edits[id]; else edits[id] = v; keep(); refresh();
+        var live = el && document.contains(el) ? el : document.querySelector('[data-t="' + id + '"],[data-tid="' + id + '"]'), f = fits(live, slot);
+        var need = BASE[id].match(/\{\w+\}/g) || [], has = v.match(/\{\w+\}/g) || [];
+        var lost = need.filter(function (h) { return has.indexOf(h) < 0; }), odd = has.filter(function (h) { return need.indexOf(h) < 0; });
+        var warn = (v.indexOf(';') >= 0 ? ' · No semicolons (house style)' : '') + (!v.trim() ? ' · Empty' : '') +
+          (lost.length ? ' · Keep the blank ' + lost.join(' ') : '') + (odd.length ? ' · The game can’t fill ' + odd.join(' ') : '');
+        $('tx-fit').className = 'tx-fit ' + (f && f[0] && !warn ? 'ok' : f || warn ? 'no' : '');
+        $('tx-fit').textContent = (f ? f[1] : 'Not on this screen, so no fit check here') + warn;
+        $('tx-was').textContent = v === BASE[id] ? '' : 'Was: ' + BASE[id];
+      }
+      ta.addEventListener('input', upd); upd();
+      $('tx-undo').addEventListener('click', function () { ta.value = BASE[id]; upd(); });
+      $('tx-done').addEventListener('click', close);
+    }
+    function close() { sheet.hidden = true; cur = null; }
+    $('tx-all').addEventListener('click', function () {   // every string, including the spoken ones and the share text that no screen shows
+      sheet.innerHTML = '<h3>All text · ' + Object.keys(TEXT).length + ' strings, tap one to change it</h3><div class="tx-list">' + Object.keys(TEXT).map(function (k) {
+        return '<button type="button" data-k="' + esc(k) + '"' + (k in edits ? ' class="tx-ed"' : '') + '><b>' + esc(k) + '</b>' + esc(TEXT[k]) + '</button>'; }).join('') +
+        '</div><div class="tx-keys"><button type="button" class="tx-go" id="tx-done">Done</button></div>';
+      sheet.hidden = false; sheet.classList.remove('tx-top');
+      [].forEach.call(sheet.querySelectorAll('[data-k]'), function (b) { b.addEventListener('click', function () { edit(b.dataset.k, null); }); });
+      $('tx-done').addEventListener('click', close);
+    });
+    $('tx-send').addEventListener('click', function () {
+      var ids = Object.keys(edits); if (!ids.length) return;
+      var body = { edits: ids.map(function (k) { return { id: k, from: BASE[k], to: edits[k] }; }) }, btn = this;
+      btn.textContent = 'Sending…';
+      fetch('/api/text', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) })
+        .then(function (r) { return r.ok; }, function () { return false; })
+        .then(function (ok) { btn.textContent = ok ? 'Sent. Tap “Apply my text edits” in the hub' : 'Not sent: no signal? Try again'; setTimeout(count, 4000); });
+    });
+    refresh();
+  }
+  if (DEV && params.has('text')) textEditor();
   cab.classList.add('poweron'); if (gated) lock(); else show(); save();
 
   // offline: sw.js keeps a saved copy so the game loads at the field with no signal

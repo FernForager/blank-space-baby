@@ -228,6 +228,8 @@ def main(test_copy=None):
         sys.exit(1)
     print(f'Text: {len(text)} strings in {len(slots)} slots')
     tpl = tpl.replace('/*__TYPE__*/', strings.slot_css(slots))
+    pm, ps = strings.page_meta(meta, slots)
+    tpl = tpl.replace('__TEXTMETA__', json.dumps(pm, ensure_ascii=False).replace('</', '<\\/')).replace('__SLOTS__', json.dumps(ps, ensure_ascii=False))
     tpl = tpl.replace('__TEXT__', json.dumps(text, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/'))
     tpl = tpl.replace('__DECKS__', json.dumps(decks, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')).replace('__START__', json.dumps(START)).replace('__DEMO__', str(DEMO_DAYS))
     top, body = tpl.split('<style>', 1)              # title + font links move into <head>
