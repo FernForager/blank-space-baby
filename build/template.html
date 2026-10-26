@@ -40,6 +40,8 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
    its last letters stay bright */
 .marquee.dm .subhead { position: absolute; left: 0; right: 0; bottom: 9px; z-index: 2; margin: 0; color: #C9FFDD; text-shadow: none; pointer-events: none; }   /* no glow: a glow blurs pixel letters (Morg: clean and quiet) */
 .marquee.dm canvas { position: absolute; inset: 7px 8px 25px; width: calc(100% - 16px); height: calc(100% - 32px); }
+.tball { display: inline-block; width: calc(.875em + 2px); height: calc(.875em + 2px); vertical-align: -1px; position: relative; top: -.125em; line-height: 0; }   /* a ⚽ in a string: as tall as the arcade capitals and a pixel more each way, centered on them (they stand 1/8 em above the baseline and are 7/8 em tall). Lifted with top, so the line itself never grows */
+.tball svg { display: block; width: 100%; height: 100%; }
 .cab.poweron .marquee.dm canvas { animation: power .6s steps(6); }
 .sr { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .marquee.dm .menu-b { right: 4px; z-index: 1; background: radial-gradient(closest-side, rgba(7,19,12,.95), rgba(7,19,12,.8) 70%, transparent); border-radius: 50%; }
@@ -240,7 +242,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .sgrid { display: grid; grid-template-columns: repeat(3, 11px); grid-auto-rows: 11px; gap: 3px 3px; padding-block: 2px; align-items: center; justify-items: center; }
 .sgrid .no { color: #E0464B; }
 #share-txt { display: grid; grid-template-columns: auto 1fr; column-gap: 14px; row-gap: 3px; align-items: end; }   /* the five-line grid beside the score and the site, so the key stays short */
-#share-txt .sgrid { grid-row: 1 / span 2; }
+#share-txt .sgrid { grid-row: 1 / span 3; }
 .sgrid svg { display: block; }
 .endrow { display: flex; align-items: center; justify-content: center; gap: 6px; }
 .endrow .bk { height: 26px; color: #7C8A80; }
@@ -292,7 +294,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .endrow .next.key, .endrow .again.key { background: var(--btn); flex: 1; height: auto; min-height: 52px; width: auto; color: var(--btn-ink); text-shadow: none; justify-content: center; opacity: 1; }
 .endrow .next.key svg, .endrow .again.key svg { filter: none; animation: none; }
 .endrow .again.key { gap: 10px; display: flex; align-items: center; }
-.endrow .clock { flex: 1; }
+.endrow .clock { flex: 1 1 auto; }
 .thanks-s { margin: 0; color: var(--glow); text-shadow: 0 0 6px rgba(92,240,154,.6); }
 /* sheets: the menu and How to play rise from the bottom over the panel, like OP Hiker's pack and menu */
 /* the 104 lock (Morg, Oct 19, 2026, after OP Hiker's): the cabinet is the lock. The screen shows three code slots and the panel
@@ -350,9 +352,10 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .tile.done .tag, .tile.miss .tag { display: none; }
 .tile.done, .tile.miss { justify-content: center; padding-top: 4px; padding-bottom: 4px; }   /* a played tile's ball or ✕ sits in its middle (Morg, Oct 26, 2026: it hung at the top under the tag's band) */
 /* Share board, beside the countdown */
-.endrow .sboard { flex: 1; min-height: 52px; display: flex; align-items: center; justify-content: center; gap: 8px; }
+.endrow .sboard { flex: 1 1 auto; min-height: 52px; display: flex; align-items: center; justify-content: center; gap: 8px; }   /* sized from its words, so it wraps only when the row can't hold it */
 .endrow .sboard svg { flex: none; }
-@media (max-width: 360px) { .endrow .sboard svg, .endrow .again.key svg { display: none; } }
+@media (max-width: 360px) { .endrow .again.key svg { display: none; } }
+@media (max-width: 389px) { .endrow .sboard svg { display: none; } }   /* below the iPhone 17's width the key gives its icon's room to the words, and on the smallest phones they take two lines, so the row stays inside the panel */
 @media (max-height: 640px) { .endrow .sboard { min-height: 48px; } }
 .bimg { position: fixed; inset: 0; z-index: 60; background: rgba(7,19,12,.92); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; padding: 18px; }
 .bimg[hidden] { display: none; }
@@ -428,7 +431,10 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   var TEXT = __TEXT__;
   var META = __TEXTMETA__, SLOTS = __SLOTS__;   // each string's note, slot and blanks, and each slot's selector, line limit and place: for the text editor
   function tx(id, v) { var s = TEXT[id]; if (s == null) return id; return v ? s.replace(/\{(\w+)\}/g, function (m, k) { return v[k] != null ? v[k] : m; }) : s; }
-  function th(id, v) { return num(keep(esc(tx(id, v)))); }
+  function th(id, v) { return tball(num(keep(esc(tx(id, v))))); }
+  // a ⚽ in a string is drawn as the game's own little ball (Morg, Oct 26, 2026: the game never names the sport, so every player
+  // reads it in their own word). Screen readers skip it
+  function tball(html) { return html.indexOf('⚽') < 0 ? html : html.replace(/⚽\uFE0F?/g, '<i class="tball" aria-hidden="true">' + ballIcon(0, 'mini lit mark') + '</i>'); }
   function tv(v) { return ' data-tv="' + esc(JSON.stringify(v)) + '"'; }   // the values a string's placeholders were filled with, so the text editor can redraw it
   // a word too wide for its slot (Bundesliga on the smallest phones) tightens its letter spacing a device pixel at a time, never
   // past the slot's "fit" in slots.json: the letters keep their size, so a pixel font stays sharp, where a smaller size would blur it
@@ -943,7 +949,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   var MISS = ['⬜', '🟨', '🟥'];
   function shareText() {
     return tx('share.title', { day: S.day + 1 }) + '\n' + lines().map(function (l) { return l.map(function (v, x) { return v === 1 ? '⚽' : MISS[x]; }).join(''); }).join('\n') +
-      '\n' + scoreLine() + '\n' + tx('share.site');
+      '\n' + scoreLine() + '\n' + tx('share.tagline') + '\n' + tx('share.site');   // the link last, so a phone shows its preview card
   }
   function score() { return tx('end.score', { n: chips(), all: ALLN }); }
   function scoreLine() { return chips() === ALLN ? GOLAZO : score(); }
@@ -961,7 +967,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
       '<p class="rhint" data-tid="end.reviewHint">' + th('end.reviewHint') + '</p>';
     $('share-top').innerHTML = th('share.title', { day: S.day + 1 }); $('share-top').dataset.tid = 'share.title'; $('share-top').dataset.tv = JSON.stringify({ day: S.day + 1 });
     $('share-txt').innerHTML = '<span class="sgrid">' + lines().map(function (l) { return l.map(function (v, x) { return v === 1 ? ballMark(11) : rcard(x + 1); }).join(''); }).join('') + '</span>' +
-      '<span data-tid="' + (chips() === ALLN ? 'golazo' : 'end.score') + '"' + tv({ n: chips(), all: ALLN }) + '>' + num(keep(esc(scoreLine()))) + '</span><span data-tid="share.site">' + th('share.site') + '</span>';
+      '<span data-tid="' + (chips() === ALLN ? 'golazo' : 'end.score') + '"' + tv({ n: chips(), all: ALLN }) + '>' + num(keep(esc(scoreLine()))) + '</span><span data-tid="share.tagline">' + th('share.tagline') + '</span><span data-tid="share.site">' + th('share.site') + '</span>';
     $('share').setAttribute('aria-label', tx('share.label', { text: shareText().replace(/\n/g, ', ') }));
     $('share-mark').innerHTML = svg('share', 3);
     beta(null); view('end'); clearInterval(tick); endRow(); if (!DEMO) tick = setInterval(clock, 1000);
@@ -1076,7 +1082,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     g.textAlign = 'center'; g.textBaseline = 'alphabetic';
     g.font = '64px "Press Start 2P"'; g.fillStyle = '#5CF09A'; g.shadowColor = 'rgba(92,240,154,.7)'; g.shadowBlur = 18; g.fillText(tx('image.title'), W / 2, 124);
     var n = chips(); g.shadowBlur = 0; g.font = '40px "Press Start 2P"'; g.fillStyle = '#FFFFFF'; g.fillText(tx('image.score', { day: S.day + 1, score: n === ALLN ? GOLAZO : score() }), W / 2, 200);
-    var CW = 300, CH = 166, GX = 24, GY = 24, X0 = (W - 3 * CW - 2 * GX) / 2, Y0 = 300, COLS = ['#FFFFFF', '#F7C948', '#D52B1E'];   // the board's shape: a column per color
+    var CW = 300, CH = 166, GX = 24, GY = 24, X0 = (W - 3 * CW - 2 * GX) / 2, Y0 = 284, COLS = ['#FFFFFF', '#F7C948', '#D52B1E'];   // the board's shape: a column per color
     function runs(text, size) {   // Pixelify Sans, with its digits in the arcade face as in the game (Pixelify's 5 reads as an S)
       return String(text).split(/(\d+)/).filter(Boolean).map(function (r) { var f = /^\d/.test(r) ? (size * 8 / 11) + 'px "Press Start 2P"' : '600 ' + size + 'px "Pixelify Sans"'; g.font = f; return { r: r, f: f, w: g.measureText(r).width }; });
     }
@@ -1101,7 +1107,8 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
       if (S.res[i] === 1) { g.font = '40px "Apple Color Emoji", "Noto Color Emoji", sans-serif'; g.fillText('⚽', x + CW - 34, y + 50); }   // right or missed, in its corner
       else card(x + CW - 50, y + 14, 30, 42, t.d, -0.21);
     });
-    g.font = '600 44px "Pixelify Sans"'; g.fillStyle = '#EAFBF0'; g.fillText(tx('share.site'), W / 2, H - 70);
+    g.font = '600 44px "Pixelify Sans"'; g.fillStyle = '#EAFBF0'; g.fillText(tx('share.site'), W / 2, H - 86);
+    g.font = '26px "Press Start 2P"'; g.fillStyle = '#C9FFDD'; g.fillText(tx('share.tagline').replace(/⚽\uFE0F?\s*/g, '').toUpperCase(), W / 2, H - 38);   // what the game is, like the sign's line
     return c;
   }
   $('sboard').innerHTML = '<span data-tid="end.sboard">' + th('end.sboard') + '</span>' + svg('share', 2);

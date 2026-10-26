@@ -7,8 +7,8 @@
   "meta.description": "How well do you know the beautiful game?",
   "@meta.description": { "note": "The link preview's line under the name, in Messages and social apps" },
 
-  "sign.sub": "Daily soccer trivia shootout",
-  "@sign.sub": { "note": "Under TRIVIELA on the sign, in small arcade capitals (shown uppercase). One line on every phone", "slot": "subhead" },
+  "sign.sub": "Daily ⚽ trivia shootout",
+  "@sign.sub": { "note": "Under TRIVIELA on the sign, in small arcade capitals (shown uppercase). One line on every phone. The ⚽ is drawn as the game’s own little ball, so the sign never names the sport and every player reads it in their own word (Morg, Oct 26, 2026). Screen readers skip it", "slot": "subhead" },
   "board.slogan": "How well do you know the beautiful game?",
   "@board.slogan": { "note": "Printed on the cabinet between the screen and the cards, on the board only. One line on every phone", "slot": "slogan" },
   "menu.label": "Menu",
@@ -143,6 +143,8 @@
 
   "share.title": "Triviela #{day}",
   "@share.title": { "note": "The share text's first line, also shown on the share key", "slot": "shareKey", "placeholders": { "day": { "example": "42", "widest": "365" } } },
+  "share.tagline": "Trivia shootout",
+  "@share.tagline": { "note": "What the game is, in the share: the line over triviela.net in the text (a link’s preview card shows only when the link ends the message) and under it in the Share scoreboard picture (Morg, Oct 26, 2026). Never soccer or football", "slot": "shareKey" },
   "share.site": "triviela.net",
   "@share.site": { "note": "The share text's last line, on the share key and at the bottom of the image", "slot": "shareKey" },
   "share.label": "Share: {text}",
