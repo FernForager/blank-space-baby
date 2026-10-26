@@ -53,7 +53,7 @@ def fill_head(page, text):
 FACES = {'pixel': 'var(--body-font)', 'arcade': 'var(--pixel)'}
 WRAPS = {'line': 'white-space: nowrap', 'balance': 'text-wrap: balance', 'pretty': 'text-wrap: pretty'}
 MEDIA = (('mid', '(max-height: 700px)'), ('short', '(max-height: 640px)'), ('narrow', '(max-width: 360px)'))
-KEYS = {'where', 'sel', 'face', 'weight', 'size', 'mid', 'short', 'narrow', 'lh', 'track', 'trackShort', 'case', 'align', 'wrap', 'lines', 'trim', 'nudge'}
+KEYS = {'where', 'sel', 'face', 'weight', 'size', 'mid', 'short', 'narrow', 'lh', 'track', 'trackShort', 'case', 'align', 'wrap', 'lines', 'trim', 'nudge', 'fit'}
 
 def load_slots():
     raw = json.load(open(os.path.join(TEXT, 'slots.json')))
@@ -71,6 +71,10 @@ def slot_problems(slots, meta):
     for k, m in meta.items():
         if m.get('slot') and m['slot'] not in slots: out.append((k, 'its slot "' + m['slot'] + '" isn’t in build/text/slots.json'))
     return out
+
+def slot_fit(slots):
+    """The slots whose too-wide words tighten to fit: {selector: the tightest letter spacing in px}, for the page's fit()."""
+    return {s['sel']: s['fit'] for s in slots.values() if 'fit' in s}
 
 def slot_css(slots):
     """One rule per slot, then the phone sizes, in the table's order (a later row wins a tie)."""

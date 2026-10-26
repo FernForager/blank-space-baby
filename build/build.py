@@ -227,7 +227,7 @@ def main(test_copy=None):
         for p in bad: print('  ', p)
         sys.exit(1)
     print(f'Text: {len(text)} strings in {len(slots)} slots')
-    tpl = tpl.replace('/*__TYPE__*/', strings.slot_css(slots))
+    tpl = tpl.replace('/*__TYPE__*/', strings.slot_css(slots)).replace('__FIT__', json.dumps(strings.slot_fit(slots)))
     tpl = tpl.replace('__TEXT__', json.dumps(text, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/'))
     tpl = tpl.replace('__DECKS__', json.dumps(decks, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')).replace('__START__', json.dumps(START)).replace('__DEMO__', str(DEMO_DAYS))
     top, body = tpl.split('<style>', 1)              # title + font links move into <head>
