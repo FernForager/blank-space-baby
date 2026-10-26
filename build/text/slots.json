@@ -30,7 +30,7 @@
   "reviewCount":   { "where": "End screen, a card again: 3 of 15, at the top", "sel": ".rv-top", "size": 15, "lines": 1 },
   "reviewMeans":   { "where": "End screen, a card again: its meaning, under the sentence", "sel": ".rv .means", "weight": 500, "size": 18, "short": 16, "lh": 1.2, "lines": 3 },
   "reviewHint":    { "where": "End screen, a card again: tap for the next one, at the bottom", "sel": ".rv-hint", "size": 13, "align": "center", "lines": 1 },
-  "clock":         { "where": "End screen: the countdown to tomorrow's board", "sel": ".clock", "face": "arcade", "size": 15, "track": 1, "align": "center", "lines": 1 },
+  "clock":         { "where": "End screen: the countdown to tomorrow's board", "sel": ".clock", "face": "arcade", "size": 15, "narrow": 13.3333, "track": 1, "align": "center", "lines": 1 },
 
   "menuKey":       { "where": "Menu: How to play and Start over, side by side", "sel": ".mrow .key", "size": 15, "lh": 1.15, "wrap": "balance", "lines": 2 },
   "menuWide":      { "where": "Menu: Back to the game, full width", "sel": "#m-close", "size": 17, "lines": 1 },

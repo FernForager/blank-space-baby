@@ -137,7 +137,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .chip-card.c1 { background: var(--c1); } .chip-card.c2 { background: var(--c2); } .chip-card.c3 { background: var(--c3); }
 /* the shootout scoreboard (Oct 19, 2026): three rows of five, white on top, then yellow, then red, like the share.
    A lit dot is a right answer, a pixel ✕ a miss, a dim ring a card still to play. The card in play blinks in its row */
-.sb { display: grid; grid-template-columns: repeat(5, 7px); grid-auto-rows: 7px; gap: 3px 4px; }
+.sb { display: grid; grid-template-columns: repeat(3, 7px); grid-auto-rows: 7px; gap: 3px 4px; }
 .sb i { display: block; width: 7px; height: 7px; color: #2F6B49; }
 .sb i.ok { color: var(--glow); filter: drop-shadow(0 0 3px rgba(92,240,154,.9)); }
 .sb i.no { color: var(--no); }
@@ -157,7 +157,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 
 /* the end of the day: the shootout grid and the score */
 #v-end { justify-content: center; align-items: center; gap: 6cqh; }
-.egrid { display: grid; grid-template-columns: repeat(5, auto); gap: 9px 10px; align-items: center; }
+.egrid { display: grid; grid-template-columns: repeat(3, auto); gap: 9px 10px; align-items: center; }
 .egrid .rc { width: 9px; height: 13px; border-radius: 1.5px; margin-right: 4px; }
 .egrid .rc.c1 { background: var(--c1); } .egrid .rc.c2 { background: var(--c2); } .egrid .rc.c3 { background: var(--c3); }
 .egrid .em { display: flex; align-items: center; justify-content: center; }
@@ -234,9 +234,10 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .share .mark { flex: none; }
 .share .txt { flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 3px; }
 /* the share key shows the exact text it sends: the shootout grid in the game's pixel ball and ✕, one line per row */
-.sgrid { display: grid; grid-template-columns: repeat(5, 11px); grid-auto-rows: 11px; gap: 3px 3px; padding-block: 2px; align-items: center; justify-items: center; }
+.sgrid { display: grid; grid-template-columns: repeat(3, 11px); grid-auto-rows: 11px; gap: 3px 3px; padding-block: 2px; align-items: center; justify-items: center; }
 .sgrid .no { color: #E0464B; }
-#share-txt { display: flex; flex-direction: column; gap: 3px; }
+#share-txt { display: grid; grid-template-columns: auto 1fr; column-gap: 14px; row-gap: 3px; align-items: end; }   /* the five-line grid beside the score and the site, so the key stays short */
+#share-txt .sgrid { grid-row: 1 / span 2; }
 .sgrid svg { display: block; }
 .endrow { display: flex; align-items: center; justify-content: center; gap: 6px; }
 .endrow .bk { height: 26px; color: #7C8A80; }
@@ -828,11 +829,14 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     S.tiles.forEach(function (t, i) { r[t.d - 1].push(S.res[i] || 0); });
     return r;
   }
+  // the grid as the board lays it out (Morg, Oct 26, 2026: share it the board's way): five lines, each white, yellow, red
+  // [[1, 2, 0], ...]: line j is the cards in spot j of each color's column
+  function lines() { var r = rows(); return [0, 1, 2, 3, 4].map(function (j) { return [r[0][j], r[1][j], r[2][j]]; }); }
   function hud(bump) {   // the card's color, and the scoreboard: the card in play blinks in its row
-    var r = rows(), now = answered ? -1 : T.d - 1, cell = now >= 0 ? spot(S.open) : -1, h = '';
-    r.forEach(function (row, y) { row.forEach(function (v, x) {
-      var cls = v === 1 ? 'ok' : v === 2 ? 'no' : y === now && x === cell ? 'now' : '';
-      h += '<i class="' + cls + (bump && y === T.d - 1 && x === bump - 1 ? ' bump' : '') + '">' + svg(v === 1 || cls === 'now' ? 'dot' : v === 2 ? 'no' : 'ring', 1) + '</i>';
+    var now = answered ? -1 : T.d - 1, cell = now >= 0 ? spot(S.open) : -1, h = '';
+    lines().forEach(function (line, j) { line.forEach(function (v, x) {   // x the color, j the spot, as on the board
+      var cls = v === 1 ? 'ok' : v === 2 ? 'no' : x === now && j === cell ? 'now' : '';
+      h += '<i class="' + cls + (bump && x === T.d - 1 && j === bump - 1 ? ' bump' : '') + '">' + svg(v === 1 || cls === 'now' ? 'dot' : v === 2 ? 'no' : 'ring', 1) + '</i>';
     }); });
     $('lvl').innerHTML = '<i class="chip-card c' + T.d + '"></i>';
     $('sb').innerHTML = h;
@@ -919,7 +923,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   // with the day's best run
   var MISS = ['⬜', '🟨', '🟥'];
   function shareText() {
-    return tx('share.title', { day: S.day + 1 }) + '\n' + rows().map(function (r, y) { return r.map(function (v) { return v === 1 ? '⚽' : MISS[y]; }).join(''); }).join('\n') +
+    return tx('share.title', { day: S.day + 1 }) + '\n' + lines().map(function (l) { return l.map(function (v, x) { return v === 1 ? '⚽' : MISS[x]; }).join(''); }).join('\n') +
       '\n' + scoreLine() + '\n' + tx('share.site');
   }
   function score() { return tx('end.score', { n: chips(), all: ALLN }); }
@@ -927,8 +931,8 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   function end() {
     settle = null; store.set('bsb-intro-off', true); report();
     var n = chips(), top = n === ALLN, r = rows(), big = innerHeight > 700 ? 3 : 2;
-    var o = order(), cells = function (s) { return r.map(function (row, y) { return row.map(function (v, x) {
-      var b = s === 3 ? 31 : 21, k = y * PER + x;   // every cell the ball's size, so a card sits centered where a ball would
+    var o = order(), cells = function (s) { return lines().map(function (line, j) { return line.map(function (v, y) {   // y the color, j the spot
+      var b = s === 3 ? 31 : 21, k = y * PER + j;   // every cell the ball's size, so a card sits centered where a ball would
       return '<button type="button" class="em ' + (v === 1 ? 'ok' : 'no') + '" data-k="' + k + '" aria-label="' + esc(tileLabel(S.tiles[o[k]], o[k])) + '" style="width:' + b + 'px;height:' + b + 'px">' + (v === 1 ? ballMark(b) :
         '<i class="rcard c' + (y + 1) + '" style="width:' + Math.round(b * .55) + 'px;height:' + Math.round(b * .77) + 'px"></i>') + '</button>'; }).join(''); }).join(''); };
     REV = -1;
@@ -937,7 +941,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
       '<p class="score"' + (top ? ' data-tid="golazo" data-tplain="1"' : ' data-tid="end.score"' + tv({ n: n, all: ALLN })) + '>' + (top ? esc(GOLAZO) : num(esc(score()))) + '</p>' +
       '<p class="rhint" data-tid="end.reviewHint">' + th('end.reviewHint') + '</p>';
     $('share-top').innerHTML = th('share.title', { day: S.day + 1 }); $('share-top').dataset.tid = 'share.title'; $('share-top').dataset.tv = JSON.stringify({ day: S.day + 1 });
-    $('share-txt').innerHTML = '<span class="sgrid">' + r.map(function (row, y) { return row.map(function (v) { return v === 1 ? ballMark(11) : rcard(y + 1); }).join(''); }).join('') + '</span>' +
+    $('share-txt').innerHTML = '<span class="sgrid">' + lines().map(function (l) { return l.map(function (v, x) { return v === 1 ? ballMark(11) : rcard(x + 1); }).join(''); }).join('') + '</span>' +
       '<span data-tid="' + (chips() === ALLN ? 'golazo' : 'end.score') + '"' + tv({ n: chips(), all: ALLN }) + '>' + num(keep(esc(scoreLine()))) + '</span><span data-tid="share.site">' + th('share.site') + '</span>';
     $('share').setAttribute('aria-label', tx('share.label', { text: shareText().replace(/\n/g, ', ') }));
     $('share-mark').innerHTML = svg('share', 3);
@@ -1051,9 +1055,9 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     g.fillStyle = 'rgba(92,240,154,.07)'; for (var y = 6; y < H; y += 12) for (var x = 6; x < W; x += 12) g.fillRect(x, y, 3, 3);   // the dot-matrix ground
     g.strokeStyle = '#00843D'; g.lineWidth = 12; g.strokeRect(6, 6, W - 12, H - 12);
     g.textAlign = 'center'; g.textBaseline = 'alphabetic';
-    g.font = '64px "Press Start 2P"'; g.fillStyle = '#5CF09A'; g.shadowColor = 'rgba(92,240,154,.7)'; g.shadowBlur = 18; g.fillText(tx('image.title'), W / 2, 140);
-    var n = chips(); g.shadowBlur = 0; g.font = '40px "Press Start 2P"'; g.fillStyle = '#FFFFFF'; g.fillText(tx('image.score', { day: S.day + 1, score: n === ALLN ? GOLAZO : score() }), W / 2, 222);
-    var CW = 176, CH = 236, GX = 16, GY = 34, X0 = (W - 5 * CW - 4 * GX) / 2 + 14, Y0 = 330, COLS = ['#FFFFFF', '#F7C948', '#D52B1E'];
+    g.font = '64px "Press Start 2P"'; g.fillStyle = '#5CF09A'; g.shadowColor = 'rgba(92,240,154,.7)'; g.shadowBlur = 18; g.fillText(tx('image.title'), W / 2, 124);
+    var n = chips(); g.shadowBlur = 0; g.font = '40px "Press Start 2P"'; g.fillStyle = '#FFFFFF'; g.fillText(tx('image.score', { day: S.day + 1, score: n === ALLN ? GOLAZO : score() }), W / 2, 200);
+    var CW = 300, CH = 166, GX = 24, GY = 24, X0 = (W - 3 * CW - 2 * GX) / 2, Y0 = 300, COLS = ['#FFFFFF', '#F7C948', '#D52B1E'];   // the board's shape: a column per color
     function runs(text, size) {   // Pixelify Sans, with its digits in the arcade face as in the game (Pixelify's 5 reads as an S)
       return String(text).split(/(\d+)/).filter(Boolean).map(function (r) { var f = /^\d/.test(r) ? (size * 8 / 11) + 'px "Press Start 2P"' : '600 ' + size + 'px "Pixelify Sans"'; g.font = f; return { r: r, f: f, w: g.measureText(r).width }; });
     }
@@ -1066,17 +1070,17 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     function card(x, y, w, h, d, rot) { g.save(); g.translate(x + w / 2, y + h / 2); g.rotate(rot || 0); rr(-w / 2, -h / 2, w, h, 4); g.fillStyle = COLS[d - 1]; g.fill();
       g.lineWidth = 2; g.strokeStyle = d === 1 ? '#B9B2A3' : 'rgba(0,0,0,.25)'; g.stroke(); g.restore(); }
     S.tiles.forEach(function (t, i) {
-      var col = spot(i), x = X0 + col * (CW + GX), y = Y0 + (t.d - 1) * (CH + GY);
-      if (col === 0) card(X0 - 52, y + CH / 2 - 20, 28, 40, t.d);   // the row's color, at its left
+      var row = spot(i), x = X0 + (t.d - 1) * (CW + GX), y = Y0 + row * (CH + GY);
+      if (row === 0) card(x + CW / 2 - 14, Y0 - 58, 28, 40, t.d);   // the column's color, over it
       rr(x, y + 6, CW, CH, 18); g.fillStyle = '#CBBFA4'; g.fill(); rr(x, y, CW, CH, 18); g.fillStyle = '#F6F0E2'; g.fill();
-      var size = 22, hw = t.hook.split(' '), lines = [], cur = '';   // 2 px to a font pixel, or 1.5 for a word too long for the card
-      if (hw.some(function (w) { return wide(w, size) > CW - 16; })) size = 16.5;
+      var size = 33, hw = t.hook.split(' '), lines = [], cur = '';
+      if (hw.some(function (w) { return wide(w, size) > CW - 24; })) size = 27.5;
       g.fillStyle = '#1E2A3B';
-      hw.forEach(function (w) { var tr = cur ? cur + ' ' + w : w; if (wide(tr, size) > CW - 16 && cur) { lines.push(cur); cur = w; } else cur = tr; }); lines.push(cur);
-      lines = lines.slice(0, 3); lines.forEach(function (l, k) { words(l, x + CW / 2, y + 88 - (lines.length - 1) * 13 + k * 26, size); });
-      g.fillStyle = '#7C8A80'; words(tagOf(t).replace('\u00AD', ''), x + CW / 2, y + 34, 22);   // its category, quieter
-      if (S.res[i] === 1) { g.font = '64px "Apple Color Emoji", "Noto Color Emoji", sans-serif'; g.fillText('⚽', x + CW / 2, y + CH - 34); }
-      else card(x + CW / 2 - 23, y + CH - 100, 46, 64, t.d, -0.21);
+      hw.forEach(function (w) { var tr = cur ? cur + ' ' + w : w; if (wide(tr, size) > CW - 24 && cur) { lines.push(cur); cur = w; } else cur = tr; }); lines.push(cur);
+      lines = lines.slice(0, 2); lines.forEach(function (l, k) { words(l, x + CW / 2, y + 112 - (lines.length - 1) * 19 + k * 38, size); });   // 3 px to a font pixel, or 2.5 for a word too long for the card
+      g.fillStyle = '#7C8A80'; words(tagOf(t).replace('\u00AD', ''), x + CW / 2, y + 40, 22);   // its category, quieter
+      if (S.res[i] === 1) { g.font = '40px "Apple Color Emoji", "Noto Color Emoji", sans-serif'; g.fillText('⚽', x + CW - 34, y + 50); }   // right or missed, in its corner
+      else card(x + CW - 50, y + 14, 30, 42, t.d, -0.21);
     });
     g.font = '600 44px "Pixelify Sans"'; g.fillStyle = '#EAFBF0'; g.fillText(tx('share.site'), W / 2, H - 70);
     return c;

@@ -36,8 +36,9 @@ async def answer(pg, i, right):   # play tile i, right or wrong, then tap on. Re
     await pg.click(f'.choice[data-w="{pick}"]'); await pg.wait_for_timeout(40); await pg.click('#flip'); await pg.wait_for_timeout(60)
     return ch.index(w)
 
-def expected(s, n):   # the share text for a saved day: a row per color, every card in its board spot, a miss as its card, then the score
-    rows = [''.join('⚽' if s['res'][i] == 1 else '⬜🟨🟥'[d - 1] for i in range(15) if s['tiles'][i]['d'] == d) for d in (1, 2, 3)]
+def expected(s, n):   # the share text for a saved day: the board's shape, every card in its spot, a miss as its card, then the score
+    cols = [[('⚽' if s['res'][i] == 1 else '⬜🟨🟥'[d - 1]) for i in range(15) if s['tiles'][i]['d'] == d] for d in (1, 2, 3)]
+    rows = [''.join(cols[d][j] for d in range(3)) for j in range(5)]   # the board's shape: five lines of white, yellow, red
     right = sum(1 for r in s['res'] if r == 1)
     return f'Triviela #{n}\n' + '\n'.join(rows) + '\n' + ('GOLAZO!' if right == 15 else f'{right}/15') + '\ntriviela.net'
 
@@ -113,7 +114,7 @@ async def run(b, html, demo):
         for i in range(15): await answer(pg, i, False)
         await pg.click('#share'); await pg.wait_for_timeout(200)
         text = await pg.evaluate("navigator.clipboard.readText()")
-        ok(text == 'Triviela #2\n⬜⬜⬜⬜⬜\n🟨🟨🟨🟨🟨\n🟥🟥🟥🟥🟥\n0/15\ntriviela.net', 'board #2, all missed, shares as #2: ' + repr(text))
+        ok(text == 'Triviela #2\n' + '⬜🟨🟥\n' * 5 + '0/15\ntriviela.net', 'board #2, all missed, shares as #2: ' + repr(text))
         await pg.evaluate(f"localStorage.setItem('bsb-demo', '{demo - 1}'); localStorage.removeItem('bsb-daily')"); await pg.reload(); await pg.wait_for_timeout(300)
         s = await state(); ok(s['day'] == demo - 1, f'the demo picks up where it was left, on #{demo}')
         for i in range(15): await answer(pg, i, True)
@@ -121,7 +122,7 @@ async def run(b, html, demo):
         s = await state(); lit = await pg.evaluate("document.querySelectorAll('#v-board .ball .pt.on:not(.core)').length")
         await pg.click('#share'); await pg.wait_for_timeout(200)
         text = await pg.evaluate("navigator.clipboard.readText()")
-        ok(text == f'Triviela #{demo}\n' + '⚽⚽⚽⚽⚽\n' * 3 + 'GOLAZO!\ntriviela.net', 'a perfect day shares as GOLAZO!: ' + repr(text))
+        ok(text == f'Triviela #{demo}\n' + '⚽⚽⚽\n' * 5 + 'GOLAZO!\ntriviela.net', 'a perfect day shares as GOLAZO!: ' + repr(text))
         r = await row()
         ok(r == {'clock': None, 'next': None, 'again': True, 'thanks': True}, f'the last board thanks you and offers Play again from #1: {r}')
         await pg.reload(); await pg.wait_for_timeout(300); r = await row()

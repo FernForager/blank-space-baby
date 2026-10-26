@@ -92,6 +92,7 @@ MEASURE = r"""(slots) => {
     const clip = [];   // the boxes that cut text off: this one and any ancestor that clips
     for (let e = el; e && e !== document.body; e = e.parentElement) { const c = getComputedStyle(e);
       if (c.overflowX !== 'visible' || c.overflowY !== 'visible') { const q = e.getBoundingClientRect(); clip.push({ l: q.left, r: q.right, t: q.top, b: q.bottom, who: e.className || e.id || e.tagName }); } }
+    clip.push({ l: 0, r: innerWidth, t: 0, b: innerHeight, who: 'the screen edge' });   // and nothing past the phone's own edge
     let cut = 0, cutBy = '';
     for (const c of clip) { const d = Math.max(c.l - ink.l, ink.r - c.r, c.t - ink.t, ink.b - c.b); if (d > cut) { cut = d; cutBy = c.who; } }
     const missing = new Set();
