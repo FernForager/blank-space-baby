@@ -79,7 +79,7 @@ def page_meta(meta, slots):
     return m, s
 
 def slot_fit(slots):
-    """The slots whose too-wide words tighten to fit: {selector: the tightest letter spacing in px}, for the page's fit()."""
+    """The slots whose too-wide words tighten to fit: {selector: the tightest letter spacing in px}, for the page's tighten()."""
     return {s['sel']: s['fit'] for s in slots.values() if 'fit' in s}
 
 def slot_css(slots):
