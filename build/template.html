@@ -217,7 +217,6 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 /* an answered tile keeps its result: the game's pixel ball for a right answer, its pixel ✕ for a miss (shape, not just color) */
 .tile.done::after, .tile.miss::after { opacity: .55; }
 .tile .res { display: block; }
-.tile.miss .res { color: #B02A35; }
 .hk { display: block; width: 100%; overflow-wrap: normal; word-break: normal; hyphens: none; }
 
 /* answer buttons */
@@ -352,7 +351,8 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .tile.done .tag, .tile.miss .tag { display: none; }
 .tile.done, .tile.miss { justify-content: center; padding-top: 4px; padding-bottom: 4px; }   /* a played tile's ball or ✕ sits in its middle (Morg, Oct 26, 2026: it hung at the top under the tag's band) */
 /* Share board, beside the countdown */
-.endrow .sboard { flex: 1 1 auto; min-height: 52px; display: flex; align-items: center; justify-content: center; gap: 8px; }   /* sized from its words, so it wraps only when the row can't hold it */
+.endrow .sboard { flex: 1; min-height: 52px; display: flex; align-items: center; justify-content: center; gap: 8px; }
+.endrow:has(> .clock:not([hidden])) > .sboard { flex: 1 1 auto; }   /* beside the countdown it sizes from its words, so it wraps only when the row can't hold it. The demo's keys still share the row evenly */
 .endrow .sboard svg { flex: none; }
 @media (max-width: 360px) { .endrow .again.key svg { display: none; } }
 @media (max-width: 389px) { .endrow .sboard svg { display: none; } }   /* below the iPhone 17's width the key gives its icon's room to the words, and on the smallest phones they take two lines, so the row stays inside the panel */
@@ -452,6 +452,10 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     // color sprites: K ink, W white
     ball:  ['...KKKKK...','.KKWWWWWKK.','.KWWWKWWWK.','KWWWKKKWWWK','KKWWKKKWWKK','KWKWWWWWKWK','KWWKWWWKWWK','KWWKKWKKWWK','.KWKKWKKWK.','.KKWWWWWKK.','...KKKKK...'],
     next:  ['...#...','...##..','######.','#######','######.','...##..','...#...'],
+    // a played tile's marks (Morg, Oct 26, 2026: our own pixel ball and pixel ✕, on one grid and big enough to fill the tile):
+    // a white ball with a pentagon at its heart and five patches round its edge, and a red ✕, both outlined in ink
+    pball: ['.....KKKKK.....','...KKWKKKWKK...','..KWWWWKWWWWK..','.KWWWWWWWWWWWK.','.KKWWWWWWWWWKK.','KKKWWWWKWWWWKKK','KKKWWWKKKWWWKKK','KWWWWKKKKKWWWWK','KWWWWKKKKKWWWWK','KWWWWWKKKWWWWWK','.KWWWWWWWWWWWK.','.KKKKWWWWWKKKK.','..KKKWWWWWKKK..','...KKKWWWKKK...','.....KKKKK.....'],
+    pmiss: ['.KK.......KK.','KRRK.....KRRK','KRRRK...KRRRK','.KRRRK.KRRRK.','..KRRRKRRRK..','...KRRRRRK...','....KRRRK....','...KRRRRRK...','..KRRRKRRRK..','.KRRRK.KRRRK.','KRRRK...KRRRK','KRRK.....KRRK','.KK.......KK.'],
     back:  ['...#...','..##...','.######','#######','.######','..##...','...#...'],
     ok:    ['......#','.....##','#...##.','##.##..','.###...','..#....'],
     no:    ['##...##','###.###','.#####.','..###..','.#####.','###.###','##...##'],
@@ -466,7 +470,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     dot:   ['..###..','.#####.','#######','#######','#######','.#####.','..###..'],
     ring:  ['..###..','.#...#.','#.....#','#.....#','#.....#','.#...#.','..###..']
   };
-  var PAL = { K: '#1E2A3B', W: '#FFFFFF' };
+  var PAL = { K: '#1E2A3B', W: '#FFFFFF', R: '#FF5A5F' };
   // the ball: one classic soccer-ball icon (Morg, Oct 18, 2026), drawn as a real ball (Oct 19, 2026: the flat drawing looked wonky).
   // It is a true truncated icosahedron, a pentagon facing us, each patch pressed onto a sphere and seen straight on, so the seams
   // curve and the patches shrink toward the rim like a real ball's, a hologram held in the screen. Its 15 panels are lamps
@@ -811,7 +815,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   function tileHTML(T, i) {
     var st = S.res[i] === 1 ? ' done' : S.res[i] === 2 ? ' miss' : '';
     return '<button type="button" class="key tile c' + T.d + st + '" data-i="' + i + '"' + (S.res[i] || over() ? ' disabled' : '') +
-      ' aria-label="' + esc(tileLabel(T, i)) + '">' + (S.res[i] ? (S.res[i] === 1 ? ballMark(22, 'res') : svg('no', 2, 'res')) : '<span class="tag" data-tid="' + tagId(T) + '">' + num(keep(esc(tagOf(T)))) + '</span><span class="hk">' + num(keep(esc(T.hook))) + '</span>') + '</button>';
+      ' aria-label="' + esc(tileLabel(T, i)) + '">' + (S.res[i] ? (S.res[i] === 1 ? svg('pball', 2, 'res', true) : svg('pmiss', 2, 'res', true)) : '<span class="tag" data-tid="' + tagId(T) + '">' + num(keep(esc(tagOf(T)))) + '</span><span class="hk">' + num(keep(esc(T.hook))) + '</span>') + '</button>';
   }
   function board(fresh) {   // fresh: the tile just answered right, so its panel bumps
     $('v-board').innerHTML = '<div class="pitch">' + ballHTML(chips(), fresh) + '</div>';
