@@ -403,6 +403,17 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   function tx(id, v) { var s = TEXT[id]; if (s == null) return id; return v ? s.replace(/\{(\w+)\}/g, function (m, k) { return v[k] != null ? v[k] : m; }) : s; }
   function th(id, v) { return num(keep(esc(tx(id, v)))); }
   function tv(v) { return ' data-tv="' + esc(JSON.stringify(v)) + '"'; }   // the values a string's placeholders were filled with, so the text editor can redraw it
+  // a word too wide for its slot (Bundesliga on the smallest phones) tightens its letter spacing a device pixel at a time, never
+  // past the slot's "fit" in slots.json: the letters keep their size, so a pixel font stays sharp, where a smaller size would blur it
+  var FIT = __FIT__;
+  function tighten(root) {
+    var step = 1 / (window.devicePixelRatio || 1);
+    Object.keys(FIT).forEach(function (sel) { [].forEach.call(root.querySelectorAll(sel), function (el) {
+      el.style.letterSpacing = '';
+      for (var t = -step; el.scrollWidth > el.clientWidth && t >= FIT[sel] - 1e-6; t -= step) el.style.letterSpacing = t + 'px';
+    }); });
+  }
+  if (document.fonts) document.fonts.ready.then(function () { tighten(document); });   // widths are only right once the fonts are in
   // pixel sprites, one string per row ('#' = lit pixel)
   var SPR = {
     // color sprites: K ink, W white
@@ -718,7 +729,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 
   // ---- the board ----
   var cab = $('cab');
-  function view(v) { cab.dataset.v = v; flick(); guard(); }
+  function view(v) { cab.dataset.v = v; flick(); guard(); if (v === 'board') tighten($('p-board')); }   // fit measures, so only once the board shows
   function flick() { var s = $('flip'); s.classList.remove('flick'); void s.offsetWidth; s.classList.add('flick'); }
   function go(icon, label) {
     var g = $('go');
@@ -741,7 +752,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   }
   function board(fresh) {   // fresh: the panel just lit, so it bumps
     $('v-board').innerHTML = '<div class="pitch">' + ballHTML(chips(), fresh) + '</div>';
-    $('p-board').innerHTML = S.tiles.map(function (T, i) { return tileHTML(T, i); }).join('');
+    $('p-board').innerHTML = S.tiles.map(function (T, i) { return tileHTML(T, i); }).join(''); tighten($('p-board'));
     document.querySelectorAll('[data-i]').forEach(function (b) { b.addEventListener('click', function (e) { e.stopPropagation(); open(+b.dataset.i); }); });
     requestAnimationFrame(fitAll);
   }
@@ -1175,7 +1186,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
         if (v && 'run' in v && v.run && id !== 'end.best' && id !== 'share.scoreBest') v.run = streakWord(best());
         if (el.dataset.tplain) el.textContent = tx(id, v); else el.innerHTML = th(id, v);
       });
-      if (typeof tighten === 'function') tighten(document);   // tags too wide for their tile (the tag-fit branch)
+      tighten(document);   // tags too wide for their tile
       count();
     }
     var css = document.createElement('style');

@@ -53,7 +53,7 @@ def fill_head(page, text):
 FACES = {'pixel': 'var(--body-font)', 'arcade': 'var(--pixel)'}
 WRAPS = {'line': 'white-space: nowrap', 'balance': 'text-wrap: balance', 'pretty': 'text-wrap: pretty'}
 MEDIA = (('mid', '(max-height: 700px)'), ('short', '(max-height: 640px)'), ('narrow', '(max-width: 360px)'))
-KEYS = {'where', 'sel', 'face', 'weight', 'size', 'mid', 'short', 'narrow', 'lh', 'track', 'trackShort', 'case', 'align', 'wrap', 'lines', 'trim', 'nudge'}
+KEYS = {'where', 'sel', 'face', 'weight', 'size', 'mid', 'short', 'narrow', 'lh', 'track', 'trackShort', 'case', 'align', 'wrap', 'lines', 'trim', 'nudge', 'fit'}
 
 def load_slots():
     raw = json.load(open(os.path.join(TEXT, 'slots.json')))
@@ -77,6 +77,10 @@ def page_meta(meta, slots):
     m = {k: {'note': v.get('note', ''), 'slot': v.get('slot', ''), 'ph': ', '.join('{%s} (%s)' % (p, d.get('example', '')) for p, d in v.get('placeholders', {}).items())} for k, v in meta.items()}
     s = {k: {'sel': v['sel'], 'lines': v.get('lines', 0), 'where': v['where']} for k, v in slots.items()}
     return m, s
+
+def slot_fit(slots):
+    """The slots whose too-wide words tighten to fit: {selector: the tightest letter spacing in px}, for the page's fit()."""
+    return {s['sel']: s['fit'] for s in slots.values() if 'fit' in s}
 
 def slot_css(slots):
     """One rule per slot, then the phone sizes, in the table's order (a later row wins a tie)."""

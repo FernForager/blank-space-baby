@@ -227,7 +227,7 @@ def main(test_copy=None):
         for p in bad: print('  ', p)
         sys.exit(1)
     print(f'Text: {len(text)} strings in {len(slots)} slots')
-    tpl = tpl.replace('/*__TYPE__*/', strings.slot_css(slots))
+    tpl = tpl.replace('/*__TYPE__*/', strings.slot_css(slots)).replace('__FIT__', json.dumps(strings.slot_fit(slots)))
     pm, ps = strings.page_meta(meta, slots)
     tpl = tpl.replace('__TEXTMETA__', json.dumps(pm, ensure_ascii=False).replace('</', '<\\/')).replace('__SLOTS__', json.dumps(ps, ensure_ascii=False))
     tpl = tpl.replace('__TEXT__', json.dumps(text, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/'))
