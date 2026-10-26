@@ -7,7 +7,7 @@
   "meta.description": "How well do you know the beautiful game?",
   "@meta.description": { "note": "The link preview's line under the name, in Messages and social apps" },
 
-  "sign.sub": "Soccer trivia shootout",
+  "sign.sub": "Daily soccer trivia shootout",
   "@sign.sub": { "note": "Under TRIVIELA on the sign, in small arcade capitals (shown uppercase). One line on every phone", "slot": "subhead" },
   "board.slogan": "How well do you know the beautiful game?",
   "@board.slogan": { "note": "Printed on the cabinet between the screen and the cards, on the board only. One line on every phone", "slot": "slogan" },
