@@ -3,7 +3,7 @@
     python3 build/build.py
     python3 build/build.py --with-pending FILE   # a test copy that also plays cards still waiting on a reviewer
 
-Reads build/template.html, build/head.html, the decks in build/decks/ and the verdicts in build/vetting/,
+Reads build/template.html, build/head.html, the strings in build/text/ (build/strings.py checks them), the decks in build/decks/ and the verdicts in build/vetting/,
 checks every card against the house style and the hook rules, and writes docs/index.html
 (the live page). Stops with a list of problems if any card breaks a rule.
 
@@ -14,6 +14,7 @@ change it). His marks live in build/vetting/morg.json, synced from the beta's da
 A card with "out": true never plays. tools/vet.py is how reviewers read cards and record verdicts.
 """
 import hashlib, json, os, re, sys
+import strings
 from urllib.parse import urlparse
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -218,10 +219,23 @@ def main(test_copy=None):
     print(f'the smallest color ({min(tiers)} cards) repeats about every {(min(tiers) - WINDOW) // 5} days.')
     if DEMO_DAYS: print(f'Demo: boards #1 to #{DEMO_DAYS} play back to back, then a thank-you (DEMO_DAYS in build.py, 0 for the real daily).')
     tpl = open(os.path.join(HERE, 'template.html')).read()
+    text, meta = strings.load()   # every word but the cards: build/text/en.json (research/text-system.md)
+    slots = strings.load_slots()   # every place text appears: build/text/slots.json
+    bad = strings.problems(text, meta, tpl) + strings.slot_problems(slots, meta)
+    if bad:
+        print('\nText problems (build/text/en.json):')
+        for p in bad: print('  ', p)
+        sys.exit(1)
+    print(f'Text: {len(text)} strings in {len(slots)} slots')
+    tpl = tpl.replace('/*__TYPE__*/', strings.slot_css(slots))
+    tpl = tpl.replace('__TEXT__', json.dumps(text, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/'))
     tpl = tpl.replace('__DECKS__', json.dumps(decks, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')).replace('__START__', json.dumps(START)).replace('__DEMO__', str(DEMO_DAYS))
     top, body = tpl.split('<style>', 1)              # title + font links move into <head>
     top = '\n'.join(l for l in top.splitlines() if 'claude:' not in l)
-    head = open(os.path.join(HERE, 'head.html')).read().replace('</head>', top.strip() + '\n</head>')
+    head = strings.fill_head(open(os.path.join(HERE, 'head.html')).read().replace('</head>', top.strip() + '\n</head>'), text)
+    mf = os.path.join(ROOT, 'docs', 'manifest.webmanifest'); man = json.load(open(mf))   # the Home Screen name
+    if (man['name'], man['short_name']) != (text['brand'],) * 2:
+        man['name'] = man['short_name'] = text['brand']; open(mf, 'w').write(json.dumps(man, indent=2, ensure_ascii=False) + '\n')
     body = '<style>' + body
     path = test_copy or os.path.join(ROOT, 'docs', 'index.html')
     os.makedirs(os.path.dirname(os.path.abspath(path)), exist_ok=True)

@@ -1,4 +1,4 @@
-<title>Triviela</title>
+<title>__T:brand__</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Pixelify+Sans:wght@500;600;700&family=Yellowtail&display=swap">
@@ -36,7 +36,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .marquee.dm { height: 84px; padding: 0; box-sizing: border-box; }
 /* the sign's subheading (Morg, Oct 19, 2026: what the game is, under the name, apart from the question that invites you to play):
    crisp arcade letters under the dots, solid and unglowing, at a size that lands on whole device pixels (10.67 px is 4 per font pixel at 3x) */
-.marquee.dm .subhead { position: absolute; left: 0; right: 34px; bottom: 9px; margin: 0; font: 400 10.6667px/1 var(--pixel); letter-spacing: 1.3333px; text-transform: uppercase; color: #C9FFDD; text-shadow: none; pointer-events: none; }   /* no glow: a glow blurs pixel letters (Morg: clean and quiet) */
+.marquee.dm .subhead { position: absolute; left: 0; right: 34px; bottom: 9px; margin: 0; color: #C9FFDD; text-shadow: none; pointer-events: none; }   /* no glow: a glow blurs pixel letters (Morg: clean and quiet) */
 .marquee.dm canvas { position: absolute; inset: 7px 8px 25px; width: calc(100% - 16px); height: calc(100% - 32px); }
 .cab.poweron .marquee.dm canvas { animation: power .6s steps(6); }
 .sr { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
@@ -46,25 +46,25 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .menu-b { position: absolute; right: 8px; top: 50%; transform: translateY(-50%); width: 36px; height: 36px; padding: 0; border: 0; background: none; color: var(--dim); opacity: .6; cursor: pointer; display: flex; align-items: center; justify-content: center; }
 .menu-b:focus-visible { outline: 3px solid var(--glow); outline-offset: 2px; }
 .menu-box { display: flex; flex-direction: column; gap: 12px; }
-.menu-box .key { min-height: 50px; font-size: 17px; }
+.menu-box .key { min-height: 50px; }
 .menu-box .key[hidden] { display: none; }
 .intro-box { max-width: 360px; text-align: left; padding: 20px 18px; }
-.intro-box .in-q { margin: 0 0 14px; font-size: 21px; line-height: 1.2; text-align: center; color: var(--text); text-shadow: none; }
-.in-list { margin: 0 0 16px; padding: 0; list-style: none; display: grid; gap: 12px; font-size: 17px; line-height: 1.3; color: var(--text); font-weight: 500; text-align: center; white-space: nowrap; }
+.intro-box .in-q { margin: 0 0 14px; color: var(--text); text-shadow: none; }
+.in-list { margin: 0 0 16px; padding: 0; list-style: none; display: grid; gap: 12px; color: var(--text); }
 .in-list b { font-weight: 700; color: #fff; }
-.in-colors { display: flex; gap: 14px; justify-content: center; color: var(--dim); font-size: 15px; }
+.in-colors { display: flex; gap: 14px; justify-content: center; color: var(--dim); }
 .in-colors span { display: flex; align-items: center; gap: 6px; }
 .tc { display: inline-block; width: 11px; height: 15px; border-radius: 2px; }
 .tc.c1 { background: var(--c1); } .tc.c2 { background: var(--c2); } .tc.c3 { background: var(--c3); }
-.intro-box .in-go { width: 100%; min-height: 52px; font-size: 18px; background: var(--ok); box-shadow: 0 5px 0 var(--ok-edge), 0 7px 10px rgba(0,0,0,.25); }
+.intro-box .in-go { width: 100%; min-height: 52px; background: var(--ok); box-shadow: 0 5px 0 var(--ok-edge), 0 7px 10px rgba(0,0,0,.25); }
 .marquee h1.cta { font-family: 'Yellowtail', cursive; font-size: 27px; line-height: 1.02; letter-spacing: 0; white-space: normal; padding: 0 26px 2px;
   text-shadow: 0 0 3px rgba(255,255,255,.9), 0 0 9px var(--glow), 0 0 18px rgba(92,240,154,.6), 0 0 30px rgba(92,240,154,.35); }
 .ask-pop { position: fixed; inset: 0; z-index: 20; display: flex; align-items: center; justify-content: center; padding: 24px; background: rgba(5,10,7,.72); }
 .ask-pop[hidden] { display: none; }
 .ask-box { width: 100%; max-width: 320px; box-sizing: border-box; padding: 20px 16px 18px; border-radius: 18px; background: var(--bezel); box-shadow: inset 0 0 0 3px #000, 0 0 0 3px var(--body-dark), 0 10px 30px rgba(0,0,0,.5); text-align: center; }
-.ask-box p { margin: 0 0 16px; font-size: 20px; color: var(--text); text-shadow: 0 0 8px rgba(92,240,154,.5); }
+.ask-box p { margin: 0 0 16px; color: var(--text); text-shadow: 0 0 8px rgba(92,240,154,.5); }
 .ask-keys { display: flex; gap: 10px; }
-.ask-keys .key { flex: 1; min-height: 50px; font-size: 16px; }
+.ask-keys .key { flex: 1; min-height: 50px; }
 .ask-keys .key.yes { background: var(--ok); box-shadow: 0 5px 0 var(--ok-edge), 0 7px 10px rgba(0,0,0,.25); }
 .restart { position: absolute; right: 6px; top: 50%; transform: translateY(-50%); width: 34px; height: 34px; padding: 0; border: 0; background: none; color: var(--dim); opacity: .5; cursor: pointer; display: flex; align-items: center; justify-content: center; }
 .restart:focus-visible { outline: 3px solid var(--glow); outline-offset: 2px; }
@@ -106,8 +106,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .bi.mark { flex: none; display: block; }
 .goalfx { position: absolute; left: 0; top: 0; width: 100%; height: 82%; z-index: 2; pointer-events: none; filter: drop-shadow(0 0 2px rgba(92,240,154,.55)); animation: power .5s steps(5); }
 .pitch.fxon .ball { opacity: 0; }
-.pitch .shout { position: absolute; inset: 0; margin: auto; height: max-content; z-index: 3; text-align: center; font-family: var(--pixel); font-size: clamp(22px, 9cqw, 34px); line-height: 1.2; color: #fff; pointer-events: none;
-  text-shadow: 0 0 6px #fff, 0 0 14px var(--glow), 0 0 28px rgba(92,240,154,.7); animation: shout 2.2s ease-out forwards; }
+.pitch .shout { position: absolute; inset: 0; margin: auto; height: max-content; z-index: 3; color: #fff; pointer-events: none; text-shadow: 0 0 6px #fff, 0 0 14px var(--glow), 0 0 28px rgba(92,240,154,.7); animation: shout 2.2s ease-out forwards; }
 .pitch.fxon .shout { inset: auto 0 2% 0; margin: 0 auto; opacity: 0; animation: shout 1.6s 1s ease-out forwards; }
 @keyframes shout { 0% { transform: scale(.4); opacity: 0; } 15% { transform: scale(1.15); opacity: 1; } 25% { transform: scale(1); } 75% { opacity: 1; } 100% { opacity: 0; } }
 .bv { display: block; overflow: visible; }
@@ -137,8 +136,8 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .sb i.bump { animation: bump .35s steps(3); }
 .sb svg { display: block; }
 .face { flex: 1; min-height: 0; display: flex; flex-direction: column; justify-content: center; gap: 8px; }
-.sentence { margin: 0; font-size: 26px; line-height: 1.22; text-wrap: balance; text-shadow: 0 0 6px rgba(234,251,240,.25); }
-.sentence.long { font-size: 23px; } .sentence.longer { font-size: 21px; }
+.sentence { margin: 0; text-shadow: 0 0 6px rgba(234,251,240,.25); }
+ 
 .blank { display: inline-block; width: 2.9em; height: 4px; margin: 0 0.05em; vertical-align: -0.16em;
   background: repeating-linear-gradient(90deg, var(--glow) 0 0.42em, transparent 0.42em 0.62em); box-shadow: 0 0 6px rgba(92,240,154,.6); animation: blink 1.05s steps(1) infinite; }
 @keyframes blink { 50% { opacity: .15; } }
@@ -156,8 +155,8 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .egrid .em.ok { filter: drop-shadow(0 0 5px rgba(92,240,154,.75)); }
 .egrid .em.no { color: var(--no); }
 .golazo .egrid .em.ok { filter: drop-shadow(0 0 4px #fff) drop-shadow(0 0 10px rgba(92,240,154,.9)); }
-.score { margin: 0; font-family: var(--pixel); font-weight: 400; font-size: 26px; line-height: 1; color: #fff; text-align: center; text-shadow: 0 0 4px rgba(255,255,255,.6), 0 0 12px rgba(92,240,154,.6); }
-.golazo .score { font-size: 24px; text-shadow: 0 0 6px #fff, 0 0 14px var(--glow), 0 0 28px rgba(92,240,154,.7); }
+.score { margin: 0; color: #fff; text-shadow: 0 0 4px rgba(255,255,255,.6), 0 0 12px rgba(92,240,154,.6); }
+.golazo .score { text-shadow: 0 0 6px #fff, 0 0 14px var(--glow), 0 0 28px rgba(92,240,154,.7); }
 .result { display: flex; flex-direction: column; align-items: center; gap: 12px; }
 .word .run { display: block; margin-top: 4px; font-size: .8em; color: var(--text); }
 .word { margin: 0; font-family: var(--pixel); font-weight: 400; font-size: 20px; line-height: 1.2; color: #fff; text-align: center;
@@ -167,8 +166,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 #v-end { container-type: size; }
 
 /* the blinking go arrow, bottom right of the screen */
-.go { position: absolute; right: 10px; bottom: 10px; height: 44px; padding: 0 6px 0 10px; gap: 8px; font-family: var(--pixel); font-size: 12px; letter-spacing: 1px; text-transform: uppercase; border: 0; background: none; color: var(--glow); cursor: pointer; z-index: 3;
-  display: flex; align-items: center; justify-content: center; filter: drop-shadow(0 0 6px rgba(92,240,154,.8)); animation: blink 1.05s steps(1) infinite; }
+.go { position: absolute; right: 10px; bottom: 10px; height: 44px; padding: 0 6px 0 10px; gap: 8px; border: 0; background: none; color: var(--glow); cursor: pointer; z-index: 3; display: flex; align-items: center; justify-content: center; filter: drop-shadow(0 0 6px rgba(92,240,154,.8)); animation: blink 1.05s steps(1) infinite; }
 .go.wait { display: none; }
 
 /* the beta only (preview links): Morg's flag and lock keys, on a card he has answered and on the card that got him
@@ -179,7 +177,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .bk.on { opacity: 1; }
 .bk.flag.on { color: var(--gold); filter: drop-shadow(0 0 5px rgba(247,201,72,.8)); }
 .bk.lock.on { color: var(--text); filter: drop-shadow(0 0 5px rgba(92,240,154,.8)); }
-.bmsg { font-family: var(--pixel); font-size: 8px; letter-spacing: 1px; color: var(--dim); margin-left: 6px; white-space: nowrap; text-transform: uppercase; }
+.bmsg { color: var(--dim); margin-left: 6px; }
 
 /* control panel */
 .panel { flex: none; box-sizing: border-box; display: flex; margin-top: auto; border-radius: 18px; padding: 12px 12px 15px;
@@ -194,7 +192,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 
 /* the tiles: easy, medium and hard, one column each */
 #p-board.tiles { grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: repeat(5, auto); grid-auto-flow: column; gap: 9px 8px; padding-bottom: 4px; }
-.tile { position: relative; min-height: 60px; min-width: 0; padding: 4px 6px; font-size: 17px; line-height: 1.04; display: flex; align-items: center; justify-content: center; text-align: center; border-radius: 10px; }
+.tile { position: relative; min-height: 60px; min-width: 0; padding: 4px 6px; display: flex; align-items: center; justify-content: center; border-radius: 10px; }
 /* every tile is a cream key like the answer buttons. A small referee's card in the corner marks medium (yellow) and hard (red),
    and easy tiles have none (Morg, Oct 16, 2026: the bold colors took over the cabinet) */
 .tile { background: var(--btn); color: var(--btn-ink); box-shadow: 0 4px 0 var(--btn-edge), 0 6px 8px rgba(0,0,0,.25); padding-left: 7px; padding-right: 7px; }   /* the shootout's taller tiles give the hook a little more width instead */
@@ -210,10 +208,10 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 
 /* answer buttons */
 .choices { flex-direction: column; gap: 10px; }
-.choice { flex: none; min-height: 62px; font-size: 21px; text-align: left; padding: 6px 16px 6px 18px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.choice { flex: none; min-height: 62px; padding: 6px 16px 6px 18px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
 .choice .txt { display: flex; flex-direction: column; gap: 1px; min-width: 0; }
-.choice .w { line-height: 1.1; }
-.choice .def { font-size: 15px; line-height: 1.15; font-weight: 500; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; max-height: 0; opacity: 0; transition: max-height .2s, opacity .2s; }
+
+.choice .def { overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; max-height: 0; opacity: 0; transition: max-height .2s, opacity .2s; }
 .choice.right .def, .choice.wrong .def { max-height: 36px; opacity: .9; }
 .choice .mark { width: 21px; flex: none; }
 .choice.right { background: var(--ok); color: #05230F; box-shadow: 0 5px 0 var(--ok-edge), 0 0 18px rgba(69,190,118,.75); }
@@ -223,9 +221,9 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 
 /* end of the day: one-tap share, and the countdown to tomorrow's board */
 #p-end { flex-direction: column; gap: 12px; }
-.share { min-height: 62px; padding: 8px 16px 8px 18px; display: flex; align-items: center; justify-content: space-between; gap: 12px; text-align: left; font-size: 17px; line-height: 1.25; }
+.share { min-height: 62px; padding: 8px 16px 8px 18px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
 .share .mark { flex: none; }
-.share .txt { flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 3px; line-height: 1.12; }
+.share .txt { flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 3px; }
 /* the share key shows the exact text it sends: the shootout grid in the game's pixel ball and ✕, one line per row */
 .sgrid { display: grid; grid-template-columns: repeat(5, 11px); grid-auto-rows: 11px; gap: 3px 3px; padding-block: 2px; align-items: center; justify-items: center; }
 .sgrid .no { color: #E0464B; }
@@ -234,22 +232,21 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .endrow { display: flex; align-items: center; justify-content: center; gap: 6px; }
 .endrow .bk { height: 26px; color: #7C8A80; }
 .endrow .bk.flag.on { color: #B48A1C; filter: none; } .endrow .bk.lock.on { color: #45BE76; filter: none; }
-.clock { font-family: var(--pixel); font-size: 15px; letter-spacing: 1px; color: var(--glow); text-align: center; text-shadow: 0 0 6px rgba(92,240,154,.6); padding: 2px 0 1px; }
+.clock { color: var(--glow); text-shadow: 0 0 6px rgba(92,240,154,.6); padding: 2px 0 1px; }
 /* the playtest demo (DEMO_DAYS in build.py): a finished board leads to the next with a blinking arrow, Start over goes back
    to #1, and #7 ends with a thank-you in the clock's place (Morg, Oct 17, 2026) */
 .endrow [hidden] { display: none; }
-.endrow .next { font: inherit; font-size: 17px; height: 40px; padding: 0 8px; border: 0; background: none; color: var(--glow); cursor: pointer;
-  display: flex; align-items: center; gap: 8px; text-shadow: 0 0 6px rgba(92,240,154,.6); }
+.endrow .next { font: inherit; height: 40px; padding: 0 8px; border: 0; background: none; color: var(--glow); cursor: pointer; display: flex; align-items: center; gap: 8px; text-shadow: 0 0 6px rgba(92,240,154,.6); }
 .endrow .next svg { filter: drop-shadow(0 0 4px rgba(92,240,154,.8)); animation: blink 1.05s steps(1) infinite; }
 .endrow .bk.again.on { color: var(--glow); opacity: 1; filter: drop-shadow(0 0 4px rgba(92,240,154,.8)); }
 .clock.thanks { font-family: var(--body-font); font-size: 17px; letter-spacing: 0; }   /* the CRT's sentence face: one line, or two beside the beta's keys on the smallest phones */
 .key:focus-visible, .go:focus-visible, .bk:focus-visible { outline: 3px solid var(--glow); outline-offset: 3px; }
 
-@media (max-height: 700px) { .choice { min-height: 56px; } .tile { min-height: 54px; font-size: 16px; } }
-@media (max-height: 640px) { .cab { gap: 9px; padding-top: max(9px, env(safe-area-inset-top, 0px)); padding-bottom: max(12px, env(safe-area-inset-bottom, 0px)); } .marquee { padding: 8px 10px 9px; } .marquee h1 { font-size: 19px; } .marquee.dm { height: 70px; } .marquee.dm .subhead { font-size: 8px; letter-spacing: 1px; bottom: 7px; } .marquee.dm canvas { bottom: 20px; height: calc(100% - 27px); }
-  .choice { font-size: 19px; min-height: 50px; } .sentence { font-size: 22px; } .sentence.long { font-size: 20px; } .sentence.longer { font-size: 18px; }
-  .tile { min-height: 50px; font-size: 15px; padding-left: 5px; padding-right: 5px; } #p-board.tiles { gap: 7px 7px; } .panel { padding: 10px 10px 13px; }
-  .means { font-size: 16px; } .score { font-size: 22px; } .golazo .score { font-size: 21px; } .egrid { gap: 7px 8px; } }
+@media (max-height: 700px) { .choice { min-height: 56px; } .tile { min-height: 54px; } }
+@media (max-height: 640px) { .cab { gap: 9px; padding-top: max(9px, env(safe-area-inset-top, 0px)); padding-bottom: max(12px, env(safe-area-inset-bottom, 0px)); } .marquee { padding: 8px 10px 9px; } .marquee h1 { font-size: 19px; } .marquee.dm { height: 70px; } .marquee.dm .subhead { bottom: 7px; } .marquee.dm canvas { bottom: 20px; height: calc(100% - 27px); }
+  .choice { min-height: 50px; }   
+  .tile { min-height: 50px; padding-left: 5px; padding-right: 5px; } #p-board.tiles { gap: 7px 7px; } .panel { padding: 10px 10px 13px; }
+  .means { font-size: 16px; }   .egrid { gap: 7px 8px; } }
 @media (prefers-reduced-motion: reduce) { .key, .choice .def { transition: none; } .sb i.bump, .sb i.now, .choice.wrong, .flick, .blank, .go, .ball.goal, .bi .pt.new, .cab.poweron .marquee h1, .cab.poweron .marquee.dm canvas, .endrow .next svg, .pitch .shout { animation: none; } }
 
 /* layout A (Oct 19, 2026): wider column gaps, a bigger menu key, no key that moves */
@@ -268,31 +265,31 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .pv { flex: none; width: 100%; }
 .gorow { display: none; align-items: center; gap: 10px; margin-top: 10px; min-height: 52px; }
 .cab[data-v="play"] #g-play { display: flex; }
-.gorow .gokey { position: static; flex: 1; height: auto; padding: 0 12px; color: var(--btn-ink); filter: none; animation: none; min-height: 52px; font-family: var(--pixel); font-size: 13px; letter-spacing: 1px; text-transform: uppercase; display: flex; align-items: center; justify-content: center; gap: 10px; }
+.gorow .gokey { position: static; flex: 1; height: auto; padding: 0 12px; color: var(--btn-ink); filter: none; animation: none; min-height: 52px; display: flex; align-items: center; justify-content: center; gap: 10px; }
 .gorow .gokey.wait { visibility: hidden; }
 .gorow .bk, .endrow .bk { width: 44px; height: 44px; color: #7C8A80; }
 .go:not(.gokey) { display: none; }
 /* the end: share, then the go row: Play #2 (demo), the countdown (daily), Play again from #1 (the demo's last board, nothing left to lose) */
 .endrow { min-height: 52px; gap: 10px; }
 .endrow .next.key[hidden], .endrow .again.key[hidden] { display: none; }
-.endrow .next.key, .endrow .again.key { background: var(--btn); flex: 1; height: auto; min-height: 52px; width: auto; color: var(--btn-ink); text-shadow: none; font-size: 17px; justify-content: center; opacity: 1; }
+.endrow .next.key, .endrow .again.key { background: var(--btn); flex: 1; height: auto; min-height: 52px; width: auto; color: var(--btn-ink); text-shadow: none; justify-content: center; opacity: 1; }
 .endrow .next.key svg, .endrow .again.key svg { filter: none; animation: none; }
 .endrow .again.key { gap: 10px; display: flex; align-items: center; }
 .endrow .clock { flex: 1; }
-.thanks-s { margin: 0; text-align: center; font-size: 18px; color: var(--glow); text-shadow: 0 0 6px rgba(92,240,154,.6); }
+.thanks-s { margin: 0; color: var(--glow); text-shadow: 0 0 6px rgba(92,240,154,.6); }
 /* sheets: the menu and How to play rise from the bottom over the panel, like OP Hiker's pack and menu */
 /* the 104 lock (Morg, Oct 19, 2026, after OP Hiker's): the cabinet is the lock. The screen shows three code slots and the panel
    becomes a 3x4 pad in phone order, cream push-buttons like the tiles. A wink, not security: the code is in the page */
 .cab[data-v="gate"] #v-gate { display: flex; } .cab[data-v="gate"] #p-gate { display: grid; } .cab[data-v="gate"] .menu-b { visibility: hidden; }
 #v-gate { align-items: center; justify-content: center; gap: 18px; text-align: center; }
-.g-title { margin: 0; font-family: var(--pixel); font-size: 12px; letter-spacing: 2px; color: var(--dim); }
+.g-title { margin: 0; color: var(--dim); }
 .g-slots { display: flex; gap: 14px; }
 .g-slots.nope { animation: gshake .45s; }
 .g-slots i { width: 52px; height: 64px; display: flex; align-items: center; justify-content: center; border-radius: 8px; box-shadow: inset 0 0 0 2px rgba(92,240,154,.35);
   font: 400 34px/1 var(--pixel); font-style: normal; color: var(--glow); text-shadow: 0 0 10px rgba(92,240,154,.8); transition: transform .12s, opacity .12s; }
 .g-slots i.empty { color: var(--dim); text-shadow: none; }
 .g-slots i.roll { transform: translateY(-10px); opacity: 0; }
-.g-toast { min-height: 1.3em; margin: 0; font: 400 15px/1.3 var(--pixel); letter-spacing: 1px; color: var(--glow); text-shadow: 0 0 8px rgba(92,240,154,.7); }
+.g-toast { min-height: 1.3em; margin: 0; color: var(--glow); text-shadow: 0 0 8px rgba(92,240,154,.7); }
 .g-toast.no { color: var(--no); text-shadow: 0 0 8px rgba(255,90,95,.6); }
 #p-gate { grid-template-columns: repeat(3, 1fr); gap: 12px; }
 #p-gate .key { min-height: 62px; display: flex; align-items: center; justify-content: center; font: 400 26px/1 var(--pixel); touch-action: manipulation; }
@@ -309,14 +306,14 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
    and the cards, on the board only, where the player is choosing */
 /* centered on its letters: text-box trims the line to its capitals and baseline, so the gaps above and below are the cabinet's own gap,
    and the 3px top margin cancels the screen's bottom lip (the bezel's 0 3px 0 shadow), so the space you see is equal on both sides, within the 2 device pixels Pixelify's cap-height metric adds */
-.tagline { display: none; margin: 3px 0 0; text-box: trim-both cap alphabetic; text-align: center; font-size: 15px; font-weight: 600; line-height: 1.2; color: var(--btn-ink); letter-spacing: .2px; }
+.tagline { display: none; margin: 3px 0 0; color: var(--btn-ink); }
 .cab[data-v="board"] .tagline { display: block; }
-@media (max-height: 640px) { .tagline { font-size: 13px; } }
+@media (max-height: 640px) {  }
 .ask-pop.sheet { align-items: flex-end; padding: 0 max(14px, env(safe-area-inset-right, 0px)) max(16px, env(safe-area-inset-bottom, 0px)) max(14px, env(safe-area-inset-left, 0px)); }
 .sheet .ask-box { max-width: 392px; border-radius: 18px; padding: 14px 12px 15px; background: linear-gradient(180deg, #1A1D1B 0%, #0D0F0E 100%); box-shadow: inset 0 2px 0 rgba(255,255,255,.08), inset 0 0 0 2px #222, 0 0 0 3px var(--body-dark), 0 -8px 30px rgba(0,0,0,.5); }
 .sheet .menu-box { gap: 10px; }
 .mrow { display: flex; gap: 10px; }
-.mrow .key { flex: 1; min-height: 52px; font-size: 15px; padding: 4px 6px; line-height: 1.15; }
+.mrow .key { flex: 1; min-height: 52px; padding: 4px 6px; }
 .sheet .menu-box #m-close { min-height: 52px; }
 .sheet .intro-box { text-align: left; }
 @media (max-height: 640px) { #p-board.tiles { column-gap: 10px; } .panel { padding-left: 8px; padding-right: 8px; } }
@@ -331,14 +328,14 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 /* the tag sits in a thin band along the tile's top, level with the corner card, and the hook is centered in all the space below it,
    so the bold word carries the tile and the faint tag doesn't pull it off center (Morg, Oct 25, 2026) */
 .tile { flex-direction: column; justify-content: flex-start; padding-top: 5px; }
-.tile .tag { display: block; flex: none; max-width: calc(100% - 22px); font-size: 11px; line-height: 1; opacity: .55; white-space: nowrap; overflow: hidden; text-overflow: clip; }
+.tile .tag { display: block; flex: none; max-width: calc(100% - 22px); opacity: .55; overflow: hidden; text-overflow: clip; }
 .tile .hk { margin: auto 0; }
 .tile.done .tag, .tile.miss .tag { display: none; }
 /* a streak's shout, over the ball on the way back to the board: smaller and quicker than GOLAZO!'s */
-.pitch .shout.streak { font-size: clamp(16px, 7cqw, 24px); animation-duration: 1.6s; }
-.best { margin: -2cqh 0 0; font-family: var(--pixel); font-size: 13px; color: var(--glow); text-shadow: 0 0 6px rgba(92,240,154,.6); text-align: center; }
+.pitch .shout.streak { animation-duration: 1.6s; }
+.best { margin: -2cqh 0 0; color: var(--glow); text-shadow: 0 0 6px rgba(92,240,154,.6); }
 /* Share board, beside the countdown */
-.endrow .sboard { flex: 1; min-height: 52px; display: flex; align-items: center; justify-content: center; gap: 8px; white-space: nowrap; font-size: 17px; }
+.endrow .sboard { flex: 1; min-height: 52px; display: flex; align-items: center; justify-content: center; gap: 8px; }
 .endrow .sboard svg { flex: none; }
 @media (max-width: 360px) { .endrow .sboard svg { display: none; } }
 @media (max-height: 640px) { .endrow .sboard { min-height: 48px; } }
@@ -346,6 +343,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .bimg[hidden] { display: none; }
 .bimg img { max-width: 100%; max-height: 74vh; border-radius: 12px; box-shadow: 0 6px 24px rgba(0,0,0,.6); }
 .bimg .key { min-height: 48px; padding: 0 24px; }
+/*__TYPE__*/
 </style>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
   <pattern id="pon" width="7" height="7" patternUnits="userSpaceOnUse"><circle cx="3.5" cy="3.5" r="2.6" fill="#EAFBF0"/></pattern>
@@ -356,20 +354,20 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   <pattern id="pdim" width="7" height="7" patternUnits="userSpaceOnUse"><circle cx="3.5" cy="3.5" r="1.7" fill="#2C5A40"/></pattern>
 </defs></svg>
 <div class="cab" id="cab" data-v="board">
-  <div class="marquee dm"><h1 class="sr">Triviela</h1><canvas id="sign" aria-hidden="true"></canvas><p class="subhead">Soccer trivia shootout</p><button class="menu-b" id="menu-b" type="button" aria-label="Menu"></button></div>
-  <div class="ask-pop sheet" id="menu" role="dialog" aria-modal="true" aria-label="Menu" hidden><div class="ask-box menu-box"><div class="mrow"><button class="key" id="m-restart" type="button" hidden>Start over from <span class="num">#1</span></button><button class="key" id="m-how" type="button">How to play</button></div><button class="key" id="m-close" type="button">Back to the game</button></div></div>
+  <div class="marquee dm"><h1 class="sr" data-t="brand"></h1><canvas id="sign" aria-hidden="true"></canvas><p class="subhead" data-t="sign.sub"></p><button class="menu-b" id="menu-b" type="button" data-t-label="menu.label"></button></div>
+  <div class="ask-pop sheet" id="menu" role="dialog" aria-modal="true" data-t-label="menu.label" hidden><div class="ask-box menu-box"><div class="mrow"><button class="key" id="m-restart" type="button" data-t="menu.restart" hidden></button><button class="key" id="m-how" type="button" data-t="menu.howto"></button></div><button class="key" id="m-close" type="button" data-t="menu.close"></button></div></div>
   <div class="ask-pop sheet" id="intro" role="dialog" aria-modal="true" aria-labelledby="in-q" hidden><div class="ask-box intro-box">
-    <p class="in-q" id="in-q">How well do you know<br>the beautiful game?</p>
+    <p class="in-q" id="in-q" data-t="intro.q"></p>
     <ul class="in-list">
-      <li><span class="num">15</span> cards a day. Pick any one.</li>
-      <li class="in-colors"><span><i class="tc c1"></i>easy</span><span><i class="tc c2"></i>harder</span><span><i class="tc c3"></i>hardest</span></li>
-      <li>Play all <span class="num">15</span>, right or wrong.</li>
-      <li>Right in a row: Brace!, Hat Trick!</li>
-      <li>Light the whole ball: <span class="num">GOLAZO!</span></li>
+      <li data-t="intro.cards"></li>
+      <li class="in-colors"><span><i class="tc c1"></i><span data-t="intro.easy"></span></span><span><i class="tc c2"></i><span data-t="intro.harder"></span></span><span><i class="tc c3"></i><span data-t="intro.hardest"></span></span></li>
+      <li data-t="intro.all"></li>
+      <li data-t="intro.streaks"></li>
+      <li data-t="intro.golazo"></li>
     </ul>
-    <button class="key yes in-go" id="in-go" type="button">Kick off</button>
+    <button class="key yes in-go" id="in-go" type="button" data-t="intro.go"></button>
   </div></div>
-  <div class="ask-pop" id="restart-ask" role="dialog" aria-modal="true" aria-labelledby="ra-q" hidden><div class="ask-box"><p id="ra-q">Start over from <span class="num">#1</span>?</p><div class="ask-keys"><button class="key" id="ra-no" type="button">Keep playing</button><button class="key yes" id="ra-yes" type="button">Start over</button></div></div></div>
+  <div class="ask-pop" id="restart-ask" role="dialog" aria-modal="true" aria-labelledby="ra-q" hidden><div class="ask-box"><p id="ra-q" data-t="restart.q"></p><div class="ask-keys"><button class="key" id="ra-no" type="button" data-t="restart.no"></button><button class="key yes" id="ra-yes" type="button" data-t="restart.yes"></button></div></div></div>
   <div class="bezel">
     <div class="screen" id="flip" aria-live="polite">
       <section class="view" id="v-board"></section>
@@ -378,23 +376,30 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
         <section class="face"><p class="sentence" id="q"></p></section>
       </section>
       <section class="view" id="v-end"></section>
-      <section class="view" id="v-gate" role="group" aria-labelledby="g-title"><p class="g-title" id="g-title">MEMBERS ONLY</p><div class="g-slots" id="g-slots" aria-label="Code"><i class="empty">–</i><i class="empty">–</i><i class="empty">–</i></div><p class="g-toast" id="g-toast" aria-live="assertive"></p></section>
+      <section class="view" id="v-gate" role="group" aria-labelledby="g-title"><p class="g-title" id="g-title" data-t="gate.title"></p><div class="g-slots" id="g-slots" data-t-label="gate.code"><i class="empty">–</i><i class="empty">–</i><i class="empty">–</i></div><p class="g-toast" id="g-toast" aria-live="assertive"></p></section>
       <div class="beta" id="beta" hidden><span class="bmsg" id="b-msg"></span></div>
     </div>
   </div>
-  <p class="tagline" id="tagline">How well do you know the beautiful game?</p>
+  <p class="tagline" id="tagline" data-t="board.slogan"></p>
   <div class="panel">
     <div class="pv tiles" id="p-board"></div>
     <div class="pv" id="p-gate"></div>
     <div class="pv choices" id="choices"></div>
-    <div class="gorow" id="g-play"><button class="bk flag" id="b-flag" type="button" hidden></button><button class="key go gokey wait" id="go" type="button" tabindex="-1" aria-label="Next"></button><button class="bk lock" id="b-lock" type="button" hidden></button></div>
+    <div class="gorow" id="g-play"><button class="bk flag" id="b-flag" type="button" hidden></button><button class="key go gokey wait" id="go" type="button" tabindex="-1" data-t-label="play.next"></button><button class="bk lock" id="b-lock" type="button" hidden></button></div>
     <div class="pv" id="p-end"><button class="key share" id="share" type="button"><span class="txt"><span id="share-top"></span><span id="share-txt"></span></span><span class="mark" id="share-mark"></span></button><div class="endrow"><button class="bk flag" id="e-flag" type="button" hidden></button><button class="key sboard" id="sboard" type="button"></button><div class="clock" id="clock"></div><button class="next key" id="e-next" type="button" hidden></button><button class="again key" id="e-again" type="button" hidden></button><button class="bk lock" id="e-lock" type="button" hidden></button></div></div>
   </div>
 </div>
-<div class="bimg" id="bimg" hidden><img id="bimg-i" alt="Your board"><button class="key" id="bimg-x" type="button">Close</button></div>
+<div class="bimg" id="bimg" hidden><img id="bimg-i" data-t-alt="image.alt"><button class="key" id="bimg-x" type="button" data-t="image.close"></button></div>
 <script>
 (function () {
-  var DECKS = __DECKS__, START = __START__, DEMO = __DEMO__;   // DEMO: the playtest plays boards #1 to #DEMO back to back (DEMO_DAYS in build.py, 0 for the real daily)
+  var DECKS = __DECKS__, START = __START__, DEMO = __DEMO__;
+  // every word the game shows or says, apart from the cards, from build/text/en.json (research/text-system.md). tx() gives the plain text,
+  // with its {placeholders} filled, for spoken labels, the share and the image. th() gives it typeset for the page: escaped, digits and
+  // GOLAZO! in the arcade face, punctuation glued to its word. The markup names its strings with data-t, data-t-label and data-t-alt
+  // (filled in once, at load), and text the script writes later carries data-tid, the id of the string it shows, for tools/textcheck.py
+  var TEXT = __TEXT__;
+  function tx(id, v) { var s = TEXT[id]; if (s == null) return id; return v ? s.replace(/\{(\w+)\}/g, function (m, k) { return v[k] != null ? v[k] : m; }) : s; }
+  function th(id, v) { return num(keep(esc(tx(id, v)))); }   // DEMO: the playtest plays boards #1 to #DEMO back to back (DEMO_DAYS in build.py, 0 for the real daily)
   // pixel sprites, one string per row ('#' = lit pixel)
   var SPR = {
     // color sprites: K ink, W white
@@ -496,14 +501,22 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   // keep hyphenated words and score/season ranges on one line (outside tags only)
   var keep = function (html) { return html.replace(/(<[^>]*>)|([A-Za-z0-9’]+(?:[-–][A-Za-z0-9’]+)+)/g, function (m, tag, word) { return tag || '<span class="nb">' + word + '</span>'; }); };
   // Pixelify Sans draws 5 like an S, so digits use the arcade face (text outside tags only)
-  var num = function (html) { return html.replace(/(<[^>]*>)|(\d+)/g, function (m, tag, d) { return tag || '<span class="num">' + d + '</span>'; }); };   // commas stay in the body font, so 60,704 doesn't gap
+  // and Pixelify draws Z like a 2 and G like a 6, so GOLAZO! is always in the arcade face too, and so is the # of a puzzle number
+  var ARCADE = new RegExp('(<[^>]*>)|(' + quote(esc(tx('golazo'))) + '|#?\\d+)', 'g');
+  var num = function (html) { return html.replace(ARCADE, function (m, tag, d) { return tag || '<span class="num">' + d + '</span>'; }); };   // commas stay in the body font, so 60,704 doesn't gap
   // the sentence with its answer swapped for a blank (or filled in), glued to its punctuation so they never split
   function sentence(it, fill) {
     var glue = new RegExp('(^|[^A-Za-z0-9])((?:&quot;|“)?)(' + quote(esc(it.w)) + ')(?![A-Za-z0-9])((?:[:,.!?…\'’”]|&quot;)*)', 'i');
-    return num(keep(esc(it.ex).replace(glue, '$1<span class="nb">$2' + (fill ? '<span class="fill">$3</span>' : '<span class="blank" aria-label="blank"></span>') + '$4</span>')));
+    return num(keep(esc(it.ex).replace(glue, '$1<span class="nb">$2' + (fill ? '<span class="fill">$3</span>' : '<span class="blank" aria-label="' + esc(tx('play.blank')) + '"></span>') + '$4</span>')));
   }
   var size = function (it) { var n = it.ex.length; return 'sentence' + (n > 70 ? ' longer' : n > 52 ? ' long' : ''); };
   var $ = function (id) { return document.getElementById(id); };
+  function fill(root) {   // the markup's strings, by id
+    [].forEach.call(root.querySelectorAll('[data-t]'), function (el) { el.innerHTML = th(el.dataset.t); });
+    [].forEach.call(root.querySelectorAll('[data-t-label]'), function (el) { el.setAttribute('aria-label', tx(el.dataset.tLabel)); });
+    [].forEach.call(root.querySelectorAll('[data-t-alt]'), function (el) { el.alt = tx(el.dataset.tAlt); });
+  }
+  fill(document);
   var store = {
     get: function (k, d) { try { var v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch (e) { return d; } },
     set: function (k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} },
@@ -689,7 +702,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   var save = function () { store.set('bsb-daily', S); };
   var chips = function () { return S.res.filter(function (x) { return x === 1; }).length; };
   var over = function () { return S.res.indexOf(0) < 0; };   // every card played: a miss no longer ends the day
-  var ALLN = 3 * PER, GOLAZO = 'GOLAZO!';   // 15/15 (Morg's name and caps, Oct 19, 2026)
+  var ALLN = 3 * PER, GOLAZO = tx('golazo');   // 15/15 (Morg's name and caps, Oct 19, 2026)
   if (DEV) window.TRIVIELA = { deal: deal, choices: choices, ALL: ALL, POOL: POOL, near: near, state: function () { return S; } };   // for tools/drawcheck.py
 
   // ---- the tap shield ----
@@ -707,20 +720,21 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   function go(icon, label) {
     var g = $('go');
     if (!icon) { g.classList.add('wait'); g.tabIndex = -1; return; }
-    g.innerHTML = '<span class="lbl">' + label + '</span>' + svg(icon, 3); g.setAttribute('aria-label', label); g.classList.remove('wait'); g.tabIndex = 0;
+    g.innerHTML = '<span class="lbl" data-tid="play.next">' + esc(label) + '</span>' + svg(icon, 3); g.setAttribute('aria-label', label); g.classList.remove('wait'); g.tabIndex = 0;
   }
   function ballHTML(n, fresh) { return '<div class="ball" id="ball">' + ballIcon(n, '', fresh, true) + '</div>'; }
-  var COLOR = ['white', 'yellow card', 'red card'];
-  var TAG = { basics: '101', rules: 'Rules', soccer: 'Lingo', 'lingo-more': 'Lingo', alpha: 'Slang', parents: 'Slang', epl: 'EPL', 'epl-more': 'EPL',
-    mls: 'MLS', nwsl: 'NWSL', ucl: 'UCL', wc26: 'WC26', laliga: 'La Liga', seriea: 'Serie A', ligue1: 'Ligue 1', ligamx: 'Liga MX', bundesliga: 'Bundesliga',
-    'intl-men': 'World', 'intl-women': 'World', legends: 'Legends', awards: 'Awards', nicknames: 'Clubs' };   // a card's category, by its deck (Morg, Oct 19, 2026)
-  function tagOf(T) { return TAG[(T.id || '').split(':')[0]] || ''; }
+  var TAG = { basics: 'basics', rules: 'rules', soccer: 'lingo', 'lingo-more': 'lingo', alpha: 'slang', parents: 'slang', epl: 'epl', 'epl-more': 'epl',
+    mls: 'mls', nwsl: 'nwsl', ucl: 'ucl', wc26: 'wc26', laliga: 'laliga', seriea: 'seriea', ligue1: 'ligue1', ligamx: 'ligamx', bundesliga: 'bundesliga',
+    'intl-men': 'world', 'intl-women': 'world', legends: 'legends', awards: 'awards', nicknames: 'clubs' };   // a card's category, by its deck (Morg, Oct 19, 2026): its tag.* string
+  function tagId(T) { var k = TAG[(T.id || '').split(':')[0]]; return k ? 'tag.' + k : ''; }
+  function tagOf(T) { return tagId(T) ? tx(tagId(T)) : ''; }
   function rcard(d, cls) { return '<i class="rcard c' + d + (cls ? ' ' + cls : '') + '"></i>'; }   // a referee's card in its color
   function spot(i) { var d = S.tiles[i].d, n = 0; for (var k = 0; k < i; k++) if (S.tiles[k].d === d) n++; return n; }   // a card's place in its color, 0 to 4
+  function tileLabel(T, i) { var l = tx('tile.label', { hook: T.hook, tag: tagOf(T), color: tx('color.' + T.d) }); return S.res[i] ? tx(S.res[i] === 1 ? 'tile.right' : 'tile.missed', { label: l }) : l; }
   function tileHTML(T, i) {
     var st = S.res[i] === 1 ? ' done' : S.res[i] === 2 ? ' miss' : '';
     return '<button type="button" class="key tile c' + T.d + st + '" data-i="' + i + '"' + (S.res[i] || over() ? ' disabled' : '') +
-      ' aria-label="' + esc(T.hook) + ', ' + tagOf(T) + ', ' + COLOR[T.d - 1] + (S.res[i] ? (S.res[i] === 1 ? ', right' : ', missed') : '') + '">' + (S.res[i] ? (S.res[i] === 1 ? ballMark(22, 'res') : svg('no', 2, 'res')) : '<span class="tag">' + num(esc(tagOf(T))) + '</span><span class="hk">' + num(keep(esc(T.hook))) + '</span>') + '</button>';
+      ' aria-label="' + esc(tileLabel(T, i)) + '">' + (S.res[i] ? (S.res[i] === 1 ? ballMark(22, 'res') : svg('no', 2, 'res')) : '<span class="tag" data-tid="' + tagId(T) + '">' + num(keep(esc(tagOf(T)))) + '</span><span class="hk">' + num(keep(esc(T.hook))) + '</span>') + '</button>';
   }
   function board(fresh) {   // fresh: the panel just lit, so it bumps
     $('v-board').innerHTML = '<div class="pitch">' + ballHTML(chips(), fresh) + '</div>';
@@ -792,7 +806,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
       else b.classList.add('dim');
     });
     hud(spot(S.open) + 1);
-    go('next', 'Next'); beta(T, 'play');
+    go('next', tx('play.next')); beta(T, 'play');
     $('q').classList.toggle('missed', !ok); $('q').innerHTML = sentence(T, true); flick();
     if (document.activeElement && document.activeElement.blur) document.activeElement.blur();   // no leftover focus ring after a tap
   }
@@ -802,20 +816,21 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   // longest anywhere in the day, so an early miss never ends the story
   function streak() { var run = 0; S.path.forEach(function (i) { run = S.res[i] === 1 ? run + 1 : S.res[i] === 2 ? 0 : run; }); return run; }
   function best() { var b = 0, run = 0; S.path.forEach(function (i) { run = S.res[i] === 1 ? run + 1 : 0; b = Math.max(b, run); }); return b; }
-  function streakWord(n) { return n >= ALLN ? GOLAZO : n === 2 ? 'Brace!' : n === 3 ? 'Hat Trick!' : n > 3 ? n + ' in a row!' : ''; }
+  function streakId(n) { return n >= ALLN ? 'golazo' : n === 2 ? 'streak.2' : n === 3 ? 'streak.3' : 'streak.n'; }
+  function streakWord(n) { return n < 2 ? '' : tx(streakId(n), { n: n }); }
   function next() {   // after an answer: back to the board, where a right one lights the next panel of the ball
     var i = S.open, ok = S.res[i] === 1, n = chips(), timer = null;
     S.open = -1; save(); go(null); beta(null);
     board(ok ? n - 1 : undefined); view('board');
     var run = ok ? streak() : 0, pitch = document.querySelector('#v-board .pitch');
-    if (run >= 2 && run < ALLN && pitch) { var sh = document.createElement('p'); sh.className = 'shout streak'; sh.textContent = streakWord(run); pitch.appendChild(sh); }
+    if (run >= 2 && run < ALLN && pitch) { var sh = document.createElement('p'); sh.className = 'shout streak'; sh.dataset.tid = streakId(run); sh.textContent = streakWord(run); pitch.appendChild(sh); }
     if (!over()) { settle = null; return; }
     if (n < ALLN) { timer = setTimeout(end, motion() ? 1300 : 0); settle = function () { clearTimeout(timer); end(); }; return; }   // the last card: a beat on the ball, then the grid
     function golazo() {   // 15/15: the center lights last, the whole ball glows, and the goal scene plays
       var pitch = document.querySelector('#v-board .pitch');
       if (pitch) {
         pitch.insertAdjacentHTML('beforeend', goalScene(1)); pitch.classList.add('fxon');
-        var sh = document.createElement('p'); sh.className = 'shout'; sh.textContent = GOLAZO; pitch.appendChild(sh);
+        var sh = document.createElement('p'); sh.className = 'shout'; sh.dataset.tid = 'golazo'; sh.textContent = GOLAZO; pitch.appendChild(sh);
       }
       timer = setTimeout(end, motion() ? 2800 : 0);
     }
@@ -856,9 +871,11 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   // with the day's best run
   var MISS = ['⬜', '🟨', '🟥'];
   function shareText() {
-    return 'Triviela #' + (S.day + 1) + '\n' + rows().map(function (r, y) { return r.map(function (v) { return v === 1 ? '⚽' : MISS[y]; }).join(''); }).join('\n') +
-      '\n' + (chips() === ALLN ? GOLAZO : chips() + '/' + ALLN + (best() >= 2 ? ' · ' + streakWord(best()) : '')) + '\ntriviela.net';
+    return tx('share.title', { day: S.day + 1 }) + '\n' + rows().map(function (r, y) { return r.map(function (v) { return v === 1 ? '⚽' : MISS[y]; }).join(''); }).join('\n') +
+      '\n' + scoreLine() + '\n' + tx('share.site');
   }
+  function score() { return tx('end.score', { n: chips(), all: ALLN }); }
+  function scoreLine() { return chips() === ALLN ? GOLAZO : best() >= 2 ? tx('share.scoreBest', { score: score(), run: streakWord(best()) }) : score(); }
   function end() {
     settle = null; store.set('bsb-intro-off', true); report();
     var n = chips(), top = n === ALLN, r = rows(), big = innerHeight > 700 ? 3 : 2;
@@ -867,12 +884,12 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
       return '<span class="em ' + (v === 1 ? 'ok' : 'no') + '" style="width:' + b + 'px;height:' + b + 'px">' + (v === 1 ? ballMark(b) :
         '<i class="rcard c' + (y + 1) + '" style="width:' + Math.round(b * .55) + 'px;height:' + Math.round(b * .77) + 'px"></i>') + '</span>'; }).join(''); }).join(''); };
     $('v-end').className = 'view' + (top ? ' golazo' : '');
-    $('v-end').innerHTML = '<div class="egrid" role="img" aria-label="' + rows().map(function (row, y) { return ['White', 'Yellow', 'Red'][y] + ': ' + row.filter(function (v) { return v === 1; }).length + ' of 5'; }).join(', ') + '">' + cells(big) + '</div>' +
-      '<p class="score">' + (top ? GOLAZO : num(n + '/' + ALLN)) + '</p>' + (!top && best() >= 2 ? '<p class="best">Best: ' + streakWord(best()) + '</p>' : '');
-    $('share-top').innerHTML = 'Triviela ' + num('#' + (S.day + 1));
+    $('v-end').innerHTML = '<div class="egrid" role="img" aria-label="' + esc(tx('end.grid', { rows: rows().map(function (row, y) { return tx('end.row', { color: tx('row.' + (y + 1)), n: row.filter(function (v) { return v === 1; }).length }); }).join(', ') })) + '">' + cells(big) + '</div>' +
+      '<p class="score" data-tid="' + (top ? 'golazo' : 'end.score') + '">' + (top ? esc(GOLAZO) : num(esc(score()))) + '</p>' + (!top && best() >= 2 ? '<p class="best" data-tid="end.best">' + esc(tx('end.best', { run: streakWord(best()) })) + '</p>' : '');
+    $('share-top').innerHTML = th('share.title', { day: S.day + 1 }); $('share-top').dataset.tid = 'share.title';
     $('share-txt').innerHTML = '<span class="sgrid">' + r.map(function (row, y) { return row.map(function (v) { return v === 1 ? ballMark(11) : rcard(y + 1); }).join(''); }).join('') + '</span>' +
-      '<span>' + (top ? '<span class="num">' + GOLAZO + '</span>' : num(n + '/' + ALLN) + (best() >= 2 ? ' · ' + num(streakWord(best())) : '')) + '</span><span>triviela.net</span>';
-    $('share').setAttribute('aria-label', 'Share: ' + shareText().replace(/\n/g, ', '));
+      '<span data-tid="' + (chips() === ALLN ? 'golazo' : best() >= 2 ? 'share.scoreBest' : 'end.score') + '">' + num(keep(esc(scoreLine()))) + '</span><span data-tid="share.site">' + th('share.site') + '</span>';
+    $('share').setAttribute('aria-label', tx('share.label', { text: shareText().replace(/\n/g, ', ') }));
     $('share-mark').innerHTML = svg('share', 3);
     beta(null); view('end'); clearInterval(tick); endRow(); if (!DEMO) tick = setInterval(clock, 1000);
   }
@@ -882,14 +899,14 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     $('e-again').hidden = !last;
     $('e-next').hidden = !DEMO || last; $('clock').hidden = !!DEMO && !last;
     if (!DEMO) return clock();
-    if (last) { $('clock').hidden = true; if (!$('thanks-s')) $('v-end').insertAdjacentHTML('afterbegin', '<p class="thanks-s" id="thanks-s">Thanks for playing</p>'); return; }
-    $('e-next').innerHTML = 'Play ' + num('#' + (S.day + 2)) + svg('next', 3); $('e-next').setAttribute('aria-label', 'Next day, #' + (S.day + 2));
+    if (last) { $('clock').hidden = true; if (!$('thanks-s')) $('v-end').insertAdjacentHTML('afterbegin', '<p class="thanks-s" id="thanks-s" data-tid="end.thanks">' + th('end.thanks') + '</p>'); return; }
+    $('e-next').innerHTML = '<span data-tid="end.next">' + th('end.next', { day: S.day + 2 }) + '</span>' + svg('next', 3); $('e-next').setAttribute('aria-label', tx('end.nextLabel', { day: S.day + 2 }));
   }
   function goDay(d) {   // the demo's next board, or back to #1
     if (FIXED !== null) { params.set('day', d + 1); params.set('reset', ''); location.search = params.toString(); return; }   // a preview link's ?day=N
     clearInterval(tick); store.set('bsb-demo', d); store.del('bsb-daily'); S = load(); save(); show();
   }
-  $('e-again').innerHTML = svg('again', 3) + '<span>Play again from <span class="num">#1</span></span>';
+  $('e-again').innerHTML = svg('again', 3) + '<span data-tid="end.again">' + th('end.again') + '</span>';
   // the sign: a dot-matrix board. Background dots glow at random, and the dots inside the 5×7 letters of TRIVIELA,
   // each font pixel 2×2 dots, glow brighter, so the name sits in the noise (Morg, Oct 18, 2026: pointillism)
   var GLYPH = {
@@ -956,9 +973,9 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     g.fillStyle = 'rgba(92,240,154,.07)'; for (var y = 6; y < H; y += 12) for (var x = 6; x < W; x += 12) g.fillRect(x, y, 3, 3);   // the dot-matrix ground
     g.strokeStyle = '#00843D'; g.lineWidth = 12; g.strokeRect(6, 6, W - 12, H - 12);
     g.textAlign = 'center'; g.textBaseline = 'alphabetic';
-    g.font = '64px "Press Start 2P"'; g.fillStyle = '#5CF09A'; g.shadowColor = 'rgba(92,240,154,.7)'; g.shadowBlur = 18; g.fillText('TRIVIELA', W / 2, 140);
-    var n = chips(); g.shadowBlur = 0; g.font = '40px "Press Start 2P"'; g.fillStyle = '#FFFFFF'; g.fillText('#' + (S.day + 1) + '  ' + (n === ALLN ? GOLAZO : n + '/' + ALLN), W / 2, 222);
-    if (n < ALLN && best() >= 2) { g.fillStyle = '#5CF09A'; words('Best: ' + streakWord(best()), W / 2, 282, 33); }
+    g.font = '64px "Press Start 2P"'; g.fillStyle = '#5CF09A'; g.shadowColor = 'rgba(92,240,154,.7)'; g.shadowBlur = 18; g.fillText(tx('image.title'), W / 2, 140);
+    var n = chips(); g.shadowBlur = 0; g.font = '40px "Press Start 2P"'; g.fillStyle = '#FFFFFF'; g.fillText(tx('image.score', { day: S.day + 1, score: n === ALLN ? GOLAZO : score() }), W / 2, 222);
+    if (n < ALLN && best() >= 2) { g.fillStyle = '#5CF09A'; words(tx('end.best', { run: streakWord(best()) }), W / 2, 282, 33); }
     var CW = 176, CH = 236, GX = 16, GY = 34, X0 = (W - 5 * CW - 4 * GX) / 2 + 14, Y0 = 330, COLS = ['#FFFFFF', '#F7C948', '#D52B1E'];
     function runs(text, size) {   // Pixelify Sans, with its digits in the arcade face as in the game (Pixelify's 5 reads as an S)
       return String(text).split(/(\d+)/).filter(Boolean).map(function (r) { var f = /^\d/.test(r) ? (size * 8 / 11) + 'px "Press Start 2P"' : '600 ' + size + 'px "Pixelify Sans"'; g.font = f; return { r: r, f: f, w: g.measureText(r).width }; });
@@ -984,14 +1001,14 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
       if (S.res[i] === 1) { g.font = '64px "Apple Color Emoji", "Noto Color Emoji", sans-serif'; g.fillText('⚽', x + CW / 2, y + CH - 34); }
       else card(x + CW / 2 - 23, y + CH - 100, 46, 64, t.d, -0.21);
     });
-    g.font = '600 44px "Pixelify Sans"'; g.fillStyle = '#EAFBF0'; g.fillText('triviela.net', W / 2, H - 70);
+    g.font = '600 44px "Pixelify Sans"'; g.fillStyle = '#EAFBF0'; g.fillText(tx('share.site'), W / 2, H - 70);
     return c;
   }
-  $('sboard').innerHTML = 'Share board' + svg('share', 2);
+  $('sboard').innerHTML = '<span data-tid="end.sboard">' + th('end.sboard') + '</span>' + svg('share', 2);
   $('sboard').addEventListener('click', function () {
     var c = boardImage(), url = c.toDataURL('image/png'), bin = atob(url.split(',')[1]), a = new Uint8Array(bin.length);
     for (var k = 0; k < bin.length; k++) a[k] = bin.charCodeAt(k);
-    var file = new File([a], 'triviela-' + (S.day + 1) + '.png', { type: 'image/png' });
+    var file = new File([a], tx('image.file', { day: S.day + 1 }), { type: 'image/png' });
     if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent) && navigator.canShare && navigator.canShare({ files: [file] })) { navigator.share({ files: [file] }).catch(function () {}); return; }
     $('bimg-i').src = url; pop('bimg', true);
   });
@@ -1003,7 +1020,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   // perfect: it keeps playing and nobody may change it. Each tap toggles, and a card is never both. Marks go to /api/mark (functions/api/mark.js,
   // the beta's database). With no signal they wait in a queue on the phone and go once the network is back.
   var BETA = DEV, MARKS = store.get('bsb-marks', {}), QUEUE = store.get('bsb-mark-queue', []), BT = null, where = null, holdClock = 0, sending = null;
-  var SAID = { flag: 'Flagged', unflag: 'Unflagged', lock: 'Locked', unlock: 'Unlocked' };
+  var SAID = { flag: 'beta.flagged', unflag: 'beta.unflagged', lock: 'beta.locked', unlock: 'beta.unlocked' };
   function marked(t) { var m = MARKS[t.id] || {}; return { flag: !!m.flag, lock: m.lock === undefined ? !!t.lk : !!m.lock }; }
   function beta(t, at) {   // show the keys for card t on the play screen or the end screen, or hide them (t null)
     BT = BETA && t && t.id ? t : null; where = BT ? at : null;
@@ -1018,12 +1035,13 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   }
   function paint() {
     var st = marked(BT), f = $(where === 'end' ? 'e-flag' : 'b-flag'), l = $(where === 'end' ? 'e-lock' : 'b-lock');
-    f.className = 'bk flag' + (st.flag ? ' on' : ''); f.innerHTML = svg('flag', 3); f.setAttribute('aria-pressed', st.flag); f.setAttribute('aria-label', st.flag ? 'Flagged. Tap to unflag' : 'Flag this card');
-    l.className = 'bk lock' + (st.lock ? ' on' : ''); l.innerHTML = svg(st.lock ? 'lock' : 'unlock', 3); l.setAttribute('aria-pressed', st.lock); l.setAttribute('aria-label', st.lock ? 'Locked. Tap to unlock' : 'Lock this card');
+    f.className = 'bk flag' + (st.flag ? ' on' : ''); f.innerHTML = svg('flag', 3); f.setAttribute('aria-pressed', st.flag); f.setAttribute('aria-label', tx(st.flag ? 'beta.unflag' : 'beta.flag'));
+    l.className = 'bk lock' + (st.lock ? ' on' : ''); l.innerHTML = svg(st.lock ? 'lock' : 'unlock', 3); l.setAttribute('aria-pressed', st.lock); l.setAttribute('aria-label', tx(st.lock ? 'beta.unlock' : 'beta.lock'));
   }
-  function say(text) {
+  function say(id) {   // a beta message, by its string id
+    var text = tx(id);
     if (where === 'end') { holdClock = Date.now() + 1600; $('clock').hidden = false; $('e-next').hidden = true; $('clock').classList.remove('thanks'); $('clock').textContent = text.toUpperCase(); setTimeout(endRow, 1650); return; }
-    var m = $('b-msg'); m.textContent = text; clearTimeout(say.t); say.t = setTimeout(function () { m.textContent = ''; }, 1600);
+    var m = $('b-msg'); m.textContent = text; m.dataset.tid = id; clearTimeout(say.t); say.t = setTimeout(function () { m.textContent = ''; }, 1600);
   }
   function flush() {   // send the queue in order: a refused mark is dropped, a network failure waits for the next try
     if (sending) return sending;
@@ -1040,7 +1058,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     e.stopPropagation(); if (!BT) return;
     var t = BT, st = marked(t), note = '', what;
     if (key === 'flag') {
-      if (!st.flag) { note = window.prompt('What’s wrong with this card? (optional)', ''); if (note === null) return; }
+      if (!st.flag) { note = window.prompt(tx('beta.note'), ''); if (note === null) return; }
       what = st.flag ? 'unflag' : 'flag';
     } else what = st.lock ? 'unlock' : 'lock';
     // a card is either flagged (it needs work) or locked (it's perfect), never both: one clears the other
@@ -1052,7 +1070,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     QUEUE.push({ card: t.id, hash: t.h || '', mark: what, note: String(note || '').slice(0, 500), day: S.day, snap: snap });
     store.set('bsb-mark-queue', QUEUE);
     paint();
-    flush().then(function (ok) { if (BT === t) say(ok ? SAID[what] : 'Queued'); });
+    flush().then(function (ok) { if (BT === t) say(ok ? SAID[what] : 'beta.queued'); });
   }
   ['b-flag', 'e-flag'].forEach(function (id) { $(id).addEventListener('click', function (e) { tap(e, 'flag'); }); });
   ['b-lock', 'e-lock'].forEach(function (id) { $(id).addEventListener('click', function (e) { tap(e, 'lock'); }); });
@@ -1078,7 +1096,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     var keys = ['1', '2', '3', '4', '5', '6', '7', '8', '9', 'clear', '0', 'enter'];
     $('p-gate').innerHTML = keys.map(function (k) {
       var face = k === 'clear' ? svg('no', 3) : k === 'enter' ? svg('ok', 4) : k;
-      return '<button class="key' + (k === 'enter' ? ' enter' : '') + '" type="button" data-k="' + k + '"' + (k === 'clear' ? ' aria-label="Clear"' : k === 'enter' ? ' aria-label="Enter"' : '') + '>' + face + '</button>';
+      return '<button class="key' + (k === 'enter' ? ' enter' : '') + '" type="button" data-k="' + k + '"' + (k === 'clear' || k === 'enter' ? ' aria-label="' + esc(tx('gate.' + k)) + '"' : '') + '>' + face + '</button>';
     }).join('');
     function slots() { [].forEach.call($('g-slots').children, function (el, i) { el.textContent = code[i] || '–'; el.className = code[i] ? '' : 'empty'; }); }
     function toast(t, no, ms) { clearTimeout(toastT); var el = $('g-toast'); el.textContent = t; el.className = 'g-toast' + (no ? ' no' : ''); if (ms) toastT = setTimeout(function () { el.textContent = ''; }, ms); }
@@ -1089,11 +1107,11 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
       if (k !== 'enter') { if (code.length < 3) { code += k; slots(); } return; }
       if (code === CODE) {
         done = true; store.set('bsb-104', true); buzz(18);
-        $('p-gate').querySelector('[data-k="enter"]').classList.add('hold'); toast('Onside!');
+        $('p-gate').querySelector('[data-k="enter"]').classList.add('hold'); toast(tx('gate.ok'));
         var t = setTimeout(open, 620); cab.addEventListener('pointerdown', function skip() { cab.removeEventListener('pointerdown', skip); clearTimeout(t); open(); });
         return;
       }
-      busy = true; buzz([40, 50, 40]); toast('Offside!', true, 1800);
+      busy = true; buzz([40, 50, 40]); toast(tx('gate.no'), true, 1800);
       var sl = $('g-slots'); sl.classList.remove('nope'); void sl.offsetWidth; sl.classList.add('nope');
       [].forEach.call(sl.children, function (el, i) { setTimeout(function () { el.classList.add('roll'); setTimeout(function () { el.textContent = '–'; el.className = 'empty'; }, 120); }, i * 60); });
       code = ''; setTimeout(function () { busy = false; }, 450);
