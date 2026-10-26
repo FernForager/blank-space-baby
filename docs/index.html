@@ -266,6 +266,8 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .sgrid .no { color: #E0464B; }
 #share-txt { display: grid; grid-template-columns: auto 1fr; column-gap: 14px; row-gap: 3px; align-items: end; }   /* the five-line grid beside the score and the site, so the key stays short */
 #share-txt .sgrid { grid-row: 1 / span 3; }
+.egrid .egh { display: flex; align-items: flex-end; justify-content: center; }   /* the column headers: each column's card */
+.egrid .em .mk, .sgrid .mk { display: block; }
 .sgrid svg { display: block; }
 .endrow { display: flex; align-items: center; justify-content: center; gap: 6px; }
 .endrow .bk { height: 26px; color: #7C8A80; }
@@ -366,6 +368,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .rcard.c1 { background: var(--c1); box-shadow: 0 0 0 1px #B9B2A3; } .rcard.c2 { background: var(--c2); } .rcard.c3 { background: var(--c3); }
 .egrid .em.no .rcard { box-shadow: 0 0 6px rgba(255,255,255,.25); }
 .sgrid .rcard { display: block; width: 8px; height: 11px; border-radius: 1.5px; }
+@media (max-height: 640px) { .egrid { row-gap: 4px; } .sgrid { grid-template-columns: repeat(3, 10px); grid-auto-rows: 10px; gap: 2px 3px; } .sgrid .rcard { width: 7px; height: 10px; } }   /* the shortest phones: the header rows still fit */
 /* the card's category, a quiet line over its hook (Morg, Oct 19, 2026: pick a topic you know) */
 /* the tag sits in a thin band along the tile's top, level with the corner card, and the hook is centered in all the space below it,
    so the bold word carries the tile and the faint tag doesn't pull it off center (Morg, Oct 25, 2026) */
@@ -875,6 +878,10 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   function tagId(T) { var k = TAG[(T.id || '').split(':')[0]]; return k ? 'tag.' + k : ''; }
   function tagOf(T) { return tagId(T) ? tx(tagId(T)) : ''; }
   function rcard(d, cls) { return '<i class="rcard c' + d + (cls ? ' ' + cls : '') + '"></i>'; }   // a referee's card in its color
+  function pxu(size, n) { var d = window.devicePixelRatio || 1; return Math.max(1, Math.round(size / n * d)) / d; }   // CSS px per sprite pixel, so an n-pixel sprite comes out near size px on whole screen dots
+  // a result in the grids (Morg, Oct 26, 2026): our pixel ball for a right answer and the red pixel ✕ for a miss, the same marks as the played tiles.
+  // On the dark screen the ball's outline takes the screen's text color
+  function mark(v, size, dark) { return v === 1 ? svg(dark ? 'sball' : 'pball', pxu(size, 15), 'mk', true) : svg('pmiss', pxu(size * 13 / 15, 13), 'mk', true); }
   function spot(i) { var d = S.tiles[i].d, n = 0; for (var k = 0; k < i; k++) if (S.tiles[k].d === d) n++; return n; }   // a card's place in its color, 0 to 4
   function tileLabel(T, i) { var l = tx('tile.label', { hook: T.hook, tag: tagOf(T), color: tx('color.' + T.d) }); return S.res[i] ? tx(S.res[i] === 1 ? 'tile.right' : 'tile.missed', { label: l }) : l; }
   function tileHTML(T, i) {
@@ -1013,29 +1020,30 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     } catch (e) {}
   }
   var tick;
-  // the share (Morg, Oct 19, 2026): a row per color, every card in its spot, ⚽ right and a miss as its own card, ⬜ 🟨 🟥, then the score
-  // with the day's best run
-  var MISS = ['⬜', '🟨', '🟥'];
+  // the share: the board's shape, a column per color with its card on top as the header (Morg, Oct 26, 2026), every card in its spot,
+  // ⚽ right and ❌ missed, then the score
+  var HEAD = '⬜🟨🟥';
   function shareText() {
-    return tx('share.title', { day: S.day + 1 }) + '\n' + lines().map(function (l) { return l.map(function (v, x) { return v === 1 ? '⚽' : MISS[x]; }).join(''); }).join('\n') +
+    return tx('share.title', { day: S.day + 1 }) + '\n' + HEAD + '\n' + lines().map(function (l) { return l.map(function (v) { return v === 1 ? '⚽' : '❌'; }).join(''); }).join('\n') +
       '\n' + scoreLine() + '\n' + tx('share.tagline') + '\n' + tx('share.site');   // the link last, so a phone shows its preview card
   }
   function score() { return tx('end.score', { n: chips(), all: ALLN }); }
   function scoreLine() { return chips() === ALLN ? GOLAZO : score(); }
   function end() {
     settle = null; store.set('bsb-intro-off', true); report();
-    var n = chips(), top = n === ALLN, r = rows(), big = innerHeight > 700 ? 3 : 2;
-    var o = order(), cells = function (s) { return lines().map(function (line, j) { return line.map(function (v, y) {   // y the color, j the spot
-      var b = s === 3 ? 31 : 21, k = y * PER + j;   // every cell the ball's size, so a card sits centered where a ball would
-      return '<button type="button" class="em ' + (v === 1 ? 'ok' : 'no') + '" data-k="' + k + '" aria-label="' + esc(tileLabel(S.tiles[o[k]], o[k])) + '" style="width:' + b + 'px;height:' + b + 'px">' + (v === 1 ? ballMark(b) :
-        '<i class="rcard c' + (y + 1) + '" style="width:' + Math.round(b * .55) + 'px;height:' + Math.round(b * .77) + 'px"></i>') + '</button>'; }).join(''); }).join(''); };
+    var n = chips(), top = n === ALLN, r = rows(), big = innerHeight > 700 ? 3 : innerHeight > 640 ? 2 : 1;
+    var o = order(), cells = function (s) { var b = s === 3 ? 31 : s === 2 ? 21 : 18;   // every cell the ball's size, a little smaller on the shortest phones so the header row fits
+      return [1, 2, 3].map(function (d) { return '<i class="egh" aria-hidden="true"><i class="rcard c' + d + '" style="width:' + Math.round(b * .45) + 'px;height:' + Math.round(b * .63) + 'px"></i></i>'; }).join('') +   // each column's card on top, like a header
+        lines().map(function (line, j) { return line.map(function (v, y) {   // y the color, j the spot
+        var k = y * PER + j;
+        return '<button type="button" class="em ' + (v === 1 ? 'ok' : 'no') + '" data-k="' + k + '" aria-label="' + esc(tileLabel(S.tiles[o[k]], o[k])) + '" style="width:' + b + 'px;height:' + b + 'px">' + mark(v, b - 1, true) + '</button>'; }).join(''); }).join(''); };
     REV = -1;
     $('v-end').className = 'view' + (top ? ' golazo' : '');
     $('v-end').innerHTML = '<div class="egrid" role="group" aria-label="' + esc(tx('end.grid', { rows: rows().map(function (row, y) { return tx('end.row', { color: tx('row.' + (y + 1)), n: row.filter(function (v) { return v === 1; }).length }); }).join(', ') })) + '">' + cells(big) + '</div>' +
       '<p class="score"' + (top ? ' data-tid="golazo" data-tplain="1"' : ' data-tid="end.score"' + tv({ n: n, all: ALLN })) + '>' + (top ? esc(GOLAZO) : num(esc(score()))) + '</p>' +
       '<p class="rhint" data-tid="end.reviewHint">' + th('end.reviewHint') + '</p>';
     $('share-top').innerHTML = th('share.title', { day: S.day + 1 }); $('share-top').dataset.tid = 'share.title'; $('share-top').dataset.tv = JSON.stringify({ day: S.day + 1 });
-    $('share-txt').innerHTML = '<span class="sgrid">' + lines().map(function (l) { return l.map(function (v, x) { return v === 1 ? ballMark(11) : rcard(x + 1); }).join(''); }).join('') + '</span>' +
+    $('share-txt').innerHTML = '<span class="sgrid">' + rcard(1) + rcard(2) + rcard(3) + lines().map(function (l) { return l.map(function (v) { return mark(v, 10); }).join(''); }).join('') + '</span>' +
       '<span data-tid="' + (chips() === ALLN ? 'golazo' : 'end.score') + '"' + tv({ n: chips(), all: ALLN }) + '>' + num(keep(esc(scoreLine()))) + '</span><span data-tid="share.tagline">' + th('share.tagline') + '</span><span data-tid="share.site">' + th('share.site') + '</span>';
     $('share').setAttribute('aria-label', tx('share.label', { text: shareText().replace(/\n/g, ', ') }));
     $('share-mark').innerHTML = svg('share', 3);
@@ -1050,7 +1058,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     var o = order(); if (k >= o.length) return end();
     REV = k; var i = o[k], T = S.tiles[i], ok = S.res[i] === 1, more = k + 1 < o.length;
     $('v-end').className = 'view review';
-    $('v-end').innerHTML = '<div class="rv"><p class="rv-top">' + (ok ? ballMark(16) : rcard(T.d)) +
+    $('v-end').innerHTML = '<div class="rv"><p class="rv-top">' + rcard(T.d) + mark(S.res[i], 16, true) +
       '<span data-tid="review.count"' + tv({ i: k + 1, all: o.length }) + '>' + th('review.count', { i: k + 1, all: o.length }) + '</span></p>' +
       '<div class="rv-face"><p class="' + size(T) + (ok ? '' : ' missed') + '">' + sentence(T, true) + '</p><p class="means">' + num(keep(esc(T.m))) + '</p></div>' +
       '<p class="rv-hint" data-tid="' + (more ? 'review.next' : 'review.back') + '">' + th(more ? 'review.next' : 'review.back') + '</p></div>';
@@ -1160,6 +1168,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
       var rs = runs(text, size), at = x - wide(text, size) / 2;
       g.textAlign = 'left'; rs.forEach(function (q) { g.font = q.f; g.fillText(q.r, at, y + (/^\d/.test(q.r) ? size / 11 : 0)); at += q.w; }); g.textAlign = 'center';
     }
+    function sprite(name, x, y, u) { SPR[name].forEach(function (r, yy) { for (var xx = 0; xx < r.length; xx++) { var ch = r[xx]; if (ch === '.') continue; g.fillStyle = PAL[ch] || '#EAFBF0'; g.fillRect(x + xx * u, y + yy * u, u, u); } }); }
     function rr(x, y, w, h, r) { g.beginPath(); g.moveTo(x + r, y); g.arcTo(x + w, y, x + w, y + h, r); g.arcTo(x + w, y + h, x, y + h, r); g.arcTo(x, y + h, x, y, r); g.arcTo(x, y, x + w, y, r); g.closePath(); }
     function card(x, y, w, h, d, rot) { g.save(); g.translate(x + w / 2, y + h / 2); g.rotate(rot || 0); rr(-w / 2, -h / 2, w, h, 4); g.fillStyle = COLS[d - 1]; g.fill();
       g.lineWidth = 2; g.strokeStyle = d === 1 ? '#B9B2A3' : 'rgba(0,0,0,.25)'; g.stroke(); g.restore(); }
@@ -1173,8 +1182,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
       hw.forEach(function (w) { var tr = cur ? cur + ' ' + w : w; if (wide(tr, size) > CW - 24 && cur) { lines.push(cur); cur = w; } else cur = tr; }); lines.push(cur);
       lines = lines.slice(0, 2); lines.forEach(function (l, k) { words(l, x + CW / 2, y + 112 - (lines.length - 1) * 19 + k * 38, size); });   // 3 px to a font pixel, or 2.5 for a word too long for the card
       g.fillStyle = '#7C8A80'; words(tagOf(t).replace('\u00AD', ''), x + CW / 2, y + 40, 22);   // its category, quieter
-      if (S.res[i] === 1) { g.font = '40px "Apple Color Emoji", "Noto Color Emoji", sans-serif'; g.fillText('⚽', x + CW - 34, y + 50); }   // right or missed, in its corner
-      else card(x + CW - 50, y + 14, 30, 42, t.d, -0.21);
+      sprite(S.res[i] === 1 ? 'pball' : 'pmiss', x + CW - 16 - (S.res[i] === 1 ? 45 : 39), y + 14, 3);   // right or missed, in its corner: the board's own pixel marks
     });
     g.font = '600 44px "Pixelify Sans"'; g.fillStyle = '#EAFBF0'; g.fillText(tx('share.site'), W / 2, H - 86);
     g.font = '26px "Press Start 2P"'; g.fillStyle = '#C9FFDD'; g.fillText(tx('share.tagline').replace(/⚽\uFE0F?\s*/g, '').toUpperCase(), W / 2, H - 38);   // what the game is, like the sign's line
