@@ -29,7 +29,7 @@ def problems(text, meta, template):
         if ';' in s: out.append((k, 'a semicolon (house style: never)'))
         if "'" in s or '"' in s: out.append((k, 'a straight quote or apostrophe (use ’ “ ”)'))
         if '<' in s or '&' in s: out.append((k, 'HTML in a string (the game does the typesetting)'))
-        if s != s.strip() or '  ' in s.replace('#{day}  {score}', ''): out.append((k, 'a stray space'))
+        if s != s.strip() or '  ' in s.replace('  {score}', ''): out.append((k, 'a stray space'))   # the image's score line may keep a wide gap before its score (#42  11/15)
         named = set((m or {}).get('placeholders', {}))
         if holes(s) - named: out.append((k, 'placeholder ' + ', '.join(sorted(holes(s) - named)) + ' isn’t listed in its "placeholders"'))
         if named - holes(s): out.append((k, 'lists placeholder ' + ', '.join(sorted(named - holes(s))) + ' but doesn’t use it'))

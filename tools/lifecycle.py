@@ -22,6 +22,7 @@ HTML = open(sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, 'docs', 'in
 START = json.loads(re.search(r'START = (\[[^\]]+\])', HTML).group(1))
 BUILT = int(re.search(r'DEMO = (\d+);', HTML).group(1))
 def as_demo(n): return re.sub(r'DEMO = \d+;', f'DEMO = {n};', HTML, count=1)
+TEXT = json.load(open(os.path.join(ROOT, 'build', 'text', 'en.json')))   # the share's own words
 fails = []
 def ok(cond, what):
     print(('ok    ' if cond else 'FAIL  ') + what)
@@ -41,7 +42,7 @@ def expected(s, n):   # the share text for a saved day: the board's shape, every
     cols = [[('⚽' if s['res'][i] == 1 else '❌') for i in range(15) if s['tiles'][i]['d'] == d] for d in (1, 2, 3)]
     rows = [''.join(cols[d][j] for d in range(3)) for j in range(5)]   # the board's shape: five lines of white, yellow, red
     right = sum(1 for r in s['res'] if r == 1)
-    return f'Triviela #{n}\n⬜🟨🟥\n' + '\n'.join(rows) + '\n' + ('GOLAZO!' if right == 15 else f'{right}/15') + '\nTrivia shootout\ntriviela.net'
+    return TEXT['share.title'].replace('{day}', str(n)) + '\n⬜🟨🟥\n' + '\n'.join(rows) + '\n' + ('GOLAZO!' if right == 15 else f'{right}/15') + '\n' + TEXT['share.tagline'] + '\n' + TEXT['share.site']
 
 
 async def run(b, html, demo):
@@ -126,7 +127,7 @@ async def run(b, html, demo):
         for i in range(15): await answer(pg, i, False)
         await pg.click('#share'); await pg.wait_for_timeout(200)
         text = await pg.evaluate("navigator.clipboard.readText()")
-        ok(text == 'Triviela #2\n⬜🟨🟥\n' + '❌❌❌\n' * 5 + '0/15\nTrivia shootout\ntriviela.net', 'board #2, all missed, shares as #2: ' + repr(text))
+        ok(text == TEXT['share.title'].replace('{day}', '2') + '\n⬜🟨🟥\n' + '❌❌❌\n' * 5 + '0/15\n' + TEXT['share.tagline'] + '\n' + TEXT['share.site'], 'board #2, all missed, shares as #2: ' + repr(text))
         await pg.evaluate(f"localStorage.setItem('bsb-demo', '{demo - 1}'); localStorage.removeItem('bsb-daily')"); await pg.reload(); await pg.wait_for_timeout(300)
         s = await state(); ok(s['day'] == demo - 1, f'the demo picks up where it was left, on #{demo}')
         for i in range(15): await answer(pg, i, True)
@@ -134,7 +135,7 @@ async def run(b, html, demo):
         s = await state(); lit = await pg.evaluate("document.querySelectorAll('#v-board .ball .pt.on:not(.core)').length")
         await pg.click('#share'); await pg.wait_for_timeout(200)
         text = await pg.evaluate("navigator.clipboard.readText()")
-        ok(text == f'Triviela #{demo}\n⬜🟨🟥\n' + '⚽⚽⚽\n' * 5 + 'GOLAZO!\nTrivia shootout\ntriviela.net', 'a perfect day shares as GOLAZO!: ' + repr(text))
+        ok(text == TEXT['share.title'].replace('{day}', str(demo)) + '\n⬜🟨🟥\n' + '⚽⚽⚽\n' * 5 + 'GOLAZO!\n' + TEXT['share.tagline'] + '\n' + TEXT['share.site'], 'a perfect day shares as GOLAZO!: ' + repr(text))
         r = await row()
         ok(r == {'clock': None, 'next': None, 'again': True, 'thanks': True}, f'the last board thanks you and offers Play again from #1: {r}')
         await pg.reload(); await pg.wait_for_timeout(300); r = await row()

@@ -141,8 +141,8 @@
   "review.back": "Tap to see your grid",
   "@review.back": { "note": "End screen, a card again: at the bottom of the last card", "slot": "reviewHint" },
 
-  "share.title": "Triviela #{day}",
-  "@share.title": { "note": "The share text's first line, also shown on the share key", "slot": "shareKey", "placeholders": { "day": { "example": "42", "widest": "365" } } },
+  "share.title": "Triviela #{day} (beta)",
+  "@share.title": { "note": "The share text's first line, also shown on the share key. (beta) marks the playtest's numbers, which start over at launch (Morg, Oct 26, 2026)", "slot": "shareKey", "placeholders": { "day": { "example": "42", "widest": "365" } } },
   "share.tagline": "Trivia shootout",
   "@share.tagline": { "note": "What the game is, in the share: the line over triviela.net in the text (a link’s preview card shows only when the link ends the message) and under it in the Share scoreboard picture (Morg, Oct 26, 2026). Never soccer or football", "slot": "shareKey" },
   "share.site": "triviela.net",
@@ -152,8 +152,8 @@
 
   "image.title": "TRIVIELA",
   "@image.title": { "note": "The Share board image's heading, in arcade capitals" },
-  "image.score": "#{day}  {score}",
-  "@image.score": { "note": "The image's score line, under its heading", "placeholders": { "day": { "example": "42" }, "score": { "example": "11/15" } } },
+  "image.score": "#{day} (beta) {score}",
+  "@image.score": { "note": "The image's score line, under its heading, in arcade capitals. (beta) as in share.title", "placeholders": { "day": { "example": "42" }, "score": { "example": "11/15" } } },
   "image.file": "triviela-{day}.png",
   "@image.file": { "note": "The image's file name when shared", "placeholders": { "day": { "example": "42" } } },
   "image.alt": "Your board",

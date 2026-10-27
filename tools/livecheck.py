@@ -12,6 +12,7 @@ from playwright.async_api import async_playwright
 from docsroute import route
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BUILD = open(os.path.join(ROOT, 'docs', 'index.html')).read()
+TEXT = json.load(open(os.path.join(ROOT, 'build', 'text', 'en.json')))   # the share's own words
 fails = []
 def ok(cond, what):
     print(('ok    ' if cond else 'FAIL  ') + what)
@@ -21,7 +22,7 @@ def expected(s, n):   # the share text for a saved day, the same as expected() i
     cols = [[('⚽' if s['res'][i] == 1 else '❌') for i in range(15) if s['tiles'][i]['d'] == d] for d in (1, 2, 3)]
     rows = [''.join(cols[d][j] for d in range(3)) for j in range(5)]
     right = sum(1 for r in s['res'] if r == 1)
-    return f'Triviela #{n}\n⬜🟨🟥\n' + '\n'.join(rows) + '\n' + ('GOLAZO!' if right == 15 else f'{right}/15') + '\nTrivia shootout\ntriviela.net'
+    return TEXT['share.title'].replace('{day}', str(n)) + '\n⬜🟨🟥\n' + '\n'.join(rows) + '\n' + ('GOLAZO!' if right == 15 else f'{right}/15') + '\n' + TEXT['share.tagline'] + '\n' + TEXT['share.site']
 
 state = lambda pg: pg.evaluate("JSON.parse(localStorage.getItem('bsb-daily'))")
 view = lambda pg: pg.evaluate("document.getElementById('cab').dataset.v")

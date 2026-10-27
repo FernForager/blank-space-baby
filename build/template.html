@@ -90,6 +90,8 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .nb { white-space: nowrap; }
 .num { font-family: var(--pixel); font-weight: 400; font-size: calc(8em / 11); vertical-align: -.125em; letter-spacing: -.02em; }   /* a digit as tall as Pixelify's capitals (7 of its 11 pixels to Press Start 2P's 7 of 8), so 8/11 of the text around it. Press Start 2P draws an empty pixel row under every glyph, so the digit drops that row to sit on the baseline (brought back from beta-oct22, Oct 26, 2026) */
 .score .num { font-size: 1em; vertical-align: baseline; letter-spacing: 0; }   /* the score is already in the arcade face */
+.num.po { margin: 0 -.1875em 0 -.25em; }   /* the arcade face's ( sits at the right of its cell, so it's pulled in 2 of its pixels on the left and 1½ on the right, and ) half a pixel: the gaps then match the body font's word space and letter gaps (measured at 3×, Oct 26, 2026) */
+.num.pc { margin-left: -.0625em; }
 
 /* the ball: 15 lamp panels in three rings of five (the hexagons round the center, the outer pentagons, the half-hexagons
    at the edge) and the center pentagon, which lights only on 15/15 (Morg's lamp idea, Oct 19, 2026) */
@@ -588,9 +590,10 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   // keep hyphenated words and score/season ranges on one line (outside tags only)
   var keep = function (html) { return html.replace(/(<[^>]*>)|([A-Za-z0-9’]+(?:[-–][A-Za-z0-9’]+)+)/g, function (m, tag, word) { return tag || '<span class="nb">' + word + '</span>'; }); };
   // Pixelify Sans draws 5 like an S, so digits use the arcade face (text outside tags only)
-  // and Pixelify draws Z like a 2 and G like a 6, so GOLAZO! is always in the arcade face too, and so is the # of a puzzle number
-  var ARCADE = new RegExp('(<[^>]*>)|(' + quote(esc(tx('golazo'))) + '|#?\\d+)', 'g');
-  var num = function (html) { return html.replace(ARCADE, function (m, tag, d) { return tag || '<span class="num">' + d + '</span>'; }); };   // commas stay in the body font, so 60,704 doesn't gap
+  // and Pixelify draws Z like a 2 and G like a 6, so GOLAZO! is always in the arcade face too, and so is the # of a puzzle number,
+  // and Pixelify draws ( and ) like curly braces, so parentheses are too, as in #1 (beta)
+  var ARCADE = new RegExp('(<[^>]*>)|(' + quote(esc(tx('golazo'))) + '|#?\\d+|[()])', 'g');
+  var num = function (html) { return html.replace(ARCADE, function (m, tag, d) { return tag || '<span class="num' + (d === '(' ? ' po' : d === ')' ? ' pc' : '') + '">' + d + '</span>'; }); };   // commas stay in the body font, so 60,704 doesn't gap
   // the sentence with its answer swapped for a blank (or filled in), glued to its punctuation so they never split
   function sentence(it, fill) {
     var glue = new RegExp('(^|[^A-Za-z0-9])((?:&quot;|“)?)(' + quote(esc(it.w)) + ')(?![A-Za-z0-9])((?:[:,.!?…\'’”]|&quot;)*)', 'i');
@@ -1109,7 +1112,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     g.strokeStyle = '#00843D'; g.lineWidth = 12; g.strokeRect(6, 6, W - 12, H - 12);
     g.textAlign = 'center'; g.textBaseline = 'alphabetic';
     g.font = '64px "Press Start 2P"'; g.fillStyle = '#5CF09A'; g.shadowColor = 'rgba(92,240,154,.7)'; g.shadowBlur = 18; g.fillText(tx('image.title'), W / 2, 124);
-    var n = chips(); g.shadowBlur = 0; g.font = '40px "Press Start 2P"'; g.fillStyle = '#FFFFFF'; g.fillText(tx('image.score', { day: S.day + 1, score: n === ALLN ? GOLAZO : score() }), W / 2, 200);
+    var n = chips(); g.shadowBlur = 0; g.font = '40px "Press Start 2P"'; g.fillStyle = '#FFFFFF'; g.fillText(tx('image.score', { day: S.day + 1, score: n === ALLN ? GOLAZO : score() }).toUpperCase(), W / 2, 200);
     var CW = 300, CH = 166, GX = 24, GY = 24, X0 = (W - 3 * CW - 2 * GX) / 2, Y0 = 284, COLS = ['#FFFFFF', '#F7C948', '#D52B1E'];   // the board's shape: a column per color
     function runs(text, size) {   // Pixelify Sans, with its digits in the arcade face as in the game (Pixelify's 5 reads as an S)
       return String(text).split(/(\d+)/).filter(Boolean).map(function (r) { var f = /^\d/.test(r) ? (size * 8 / 11) + 'px "Press Start 2P"' : '600 ' + size + 'px "Pixelify Sans"'; g.font = f; return { r: r, f: f, w: g.measureText(r).width }; });
