@@ -31,6 +31,7 @@ SCALE = 3
 args = sys.argv[1:]
 PSEUDO = '--pseudo' in args
 PAGE = args[args.index('--page') + 1] if '--page' in args else os.path.join(ROOT, 'docs', 'index.html')
+PER = int(re.search(r'var PER = (\d+)', open(PAGE).read()).group(1)); N = 3 * PER   # cards of each color, and a day's cards (9 since Oct 27, 2026)
 
 # ---- pseudo-localization: accented, about 40% longer, the placeholders and GOLAZO!'s shape kept ----
 # the accents are all in Latin-1 and Latin Extended-A, which cover the languages the game might meet first (Spanish, Portuguese,
@@ -170,22 +171,22 @@ async def main():
                     await pg.click('#b-flag'); await pg.wait_for_timeout(500); await look('beta message')
                     await pg.click('#b-flag'); await pg.wait_for_timeout(1800)
                     await pg.click('#flip'); await pg.wait_for_timeout(1200)
-                    await card(5); await pg.click('#flip'); await pg.wait_for_timeout(250); await look('streak')
+                    await card(PER); await pg.click('#flip'); await pg.wait_for_timeout(250); await look('second card')
                     await pg.wait_for_timeout(1800)
                     # a day with one miss
-                    await setday([2] + [1] * 12 + [0, 0], list(range(13)))
-                    await card(13); await pg.click('#flip'); await pg.wait_for_timeout(1700)
-                    await card(14); await pg.click('#flip'); await pg.wait_for_timeout(250); await look('last card')
-                    await pg.wait_for_timeout(1800); await look('end, 14 right')
+                    await setday([2] + [1] * (N - 3) + [0, 0], list(range(N - 2)))
+                    await card(N - 2); await pg.click('#flip'); await pg.wait_for_timeout(1700)
+                    await card(N - 1); await pg.click('#flip'); await pg.wait_for_timeout(250); await look('last card')
+                    await pg.wait_for_timeout(1800); await look('end, all right but one')
                     if PSEUDO: await pg.evaluate("document.querySelector('.egrid [data-k=\"0\"]').click()")   # longer text can crowd the grid under the sign: the check reports that and goes on
                     else: await pg.click('.egrid [data-k="0"]')
                     await pg.wait_for_timeout(420); await look('a card again')   # the grid opens each card again
-                    for _ in range(14): await pg.click('#v-end'); await pg.wait_for_timeout(380)
+                    for _ in range(N - 1): await pg.click('#v-end'); await pg.wait_for_timeout(380)
                     await look('the last card again'); await pg.click('#v-end'); await pg.wait_for_timeout(420)
                     await pg.click('#sboard'); await pg.wait_for_timeout(1200); await look('share board pop-up'); await pg.click('#bimg-x'); await pg.wait_for_timeout(400)
                     # a perfect day
-                    await setday([1] * 14 + [0], list(range(14)))
-                    await card(14); await pg.click('#flip'); await pg.wait_for_timeout(1500); await look('golazo')
+                    await setday([1] * (N - 1) + [0], list(range(N - 1)))
+                    await card(N - 1); await pg.click('#flip'); await pg.wait_for_timeout(1500); await look('golazo')
                     await pg.wait_for_timeout(3500); await look('end, golazo')
                     await pg.goto('http://bsb.test/?gate'); await pg.wait_for_timeout(1000)
                     for k in '999': await pg.click(f'[data-k="{k}"]')
@@ -195,9 +196,9 @@ async def main():
                     if await pg.is_visible('#in-go'): await pg.click('#in-go'); await pg.wait_for_timeout(450)
                     await pg.click('#menu-b'); await pg.wait_for_timeout(450); await look('demo menu')
                     await pg.click('#m-restart'); await pg.wait_for_timeout(450); await look('start over pop-up'); await pg.click('#ra-no'); await pg.wait_for_timeout(450)
-                    await setday([1, 2] * 7 + [1], list(range(15))); await look('demo end')
+                    await setday(([1, 2] * N)[:N], list(range(N))); await look('demo end')
                     await pg.evaluate("localStorage.setItem('bsb-demo', '6'); localStorage.removeItem('bsb-daily')"); await pg.goto(base); await pg.wait_for_timeout(1000)
-                    await setday([1, 2] * 7 + [1], list(range(15))); await look('demo last board')
+                    await setday(([1, 2] * N)[:N], list(range(N))); await look('demo last board')
                 if errs: problems.append(f'{W}×{H} JS errors: {errs}')
                 await ctx.close()
         await br.close()

@@ -7,7 +7,7 @@ The page (an artifact) reads pool.json beside it and keeps Morg's boards in its 
 with ArtifactData and writes build/boards.json, and any card he edited or wrote into its deck, once the fact checker has
 checked it.
 """
-import asyncio, json, os, sys
+import asyncio, json, os, re, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from docsroute import route
 from playwright.async_api import async_playwright
@@ -18,7 +18,7 @@ TAGS = {'basics': '101', 'rules': 'Rules', 'soccer': 'Lingo', 'lingo-more': 'Lin
 DAYS = range(1, 7)   # day index 1 to 6 is puzzle #2 to #7
 
 EXPORT = r"""(args) => {
-  const [days, cats, tags] = args, T = window.TRIVIELA, deal = T.deal(6, true);
+  const [days, cats, tags, per, lmax] = args, T = window.TRIVIELA, deal = T.deal(6, true);   // per: cards of each color (3 since Oct 27, 2026), lmax: the draw's cap on one league
   const deck = c => c.id.split(':')[0];
   const pool = [].concat(T.POOL[0], T.POOL[1], T.POOL[2]).map(c => ({ id: c.id, deck: deck(c), tag: tags[deck(c)], d: c.d, w: c.w, m: c.m, ex: c.ex, hook: c.hook, k: c.k,
     lg: c.lg, wm: c.wm ? 1 : 0, rl: c.rl ? 1 : 0, sl: c.sl ? 1 : 0, ch: Object.fromEntries(days.map(d => [d + 1, T.choices(c, d).map(x => x.w)])) }));
@@ -32,16 +32,16 @@ EXPORT = r"""(args) => {
     let best = null;
     for (let tries = 0; tries < 400 && !best; tries++) {
       const got = [], lg = {}, tag = {};
-      const fits = c => !got.some(x => T.near(x, c) || T.near(c, x)) && (!c.lg || (lg[c.lg] || 0) < 3) && (tag[tags[deck(c)]] || 0) < 3 && !(c.sl && got.some(x => x.sl));
+      const fits = c => !got.some(x => T.near(x, c) || T.near(c, x)) && (!c.lg || (lg[c.lg] || 0) < lmax) && (tag[tags[deck(c)]] || 0) < lmax && !(c.sl && got.some(x => x.sl));
       const take = c => { got.push(c); if (c.lg) lg[c.lg] = (lg[c.lg] || 0) + 1; tag[tags[deck(c)]] = (tag[tags[deck(c)]] || 0) + 1; };
       const cols = [[], [], []];
       // a women's card and a rules card first, in any color
       for (const want of [c => c.wm, c => c.rl]) {
         const c = shuffle([].concat(...T.POOL).filter(c => want(c) && ok(c) && fits(c)))[0];
-        if (c && cols[c.d - 1].length < 5) { take(c); cols[c.d - 1].push(c); }
+        if (c && cols[c.d - 1].length < per) { take(c); cols[c.d - 1].push(c); }
       }
-      for (let t = 0; t < 3; t++) for (const c of shuffle(T.POOL[t].filter(ok))) { if (cols[t].length >= 5) break; if (!got.includes(c) && fits(c)) { take(c); cols[t].push(c); } }
-      if (cols.every(c => c.length === 5) && got.some(c => c.wm) && got.some(c => c.rl)) best = cols;
+      for (let t = 0; t < 3; t++) for (const c of shuffle(T.POOL[t].filter(ok))) { if (cols[t].length >= per) break; if (!got.includes(c) && fits(c)) { take(c); cols[t].push(c); } }
+      if (cols.every(c => c.length === per) && got.some(c => c.wm) && got.some(c => c.rl)) best = cols;
     }
     if (!best) return { error: 'could not draft #' + (day + 1) };
     best.forEach(col => col.forEach(c => used.add(c.id)));
@@ -52,11 +52,12 @@ EXPORT = r"""(args) => {
 
 async def export(out, cats):
     html = open(os.path.join(ROOT, 'docs', 'index.html')).read()
+    per, lmax = (int(re.search(pat, html).group(1)) for pat in (r'var PER = (\d+)', r'LEAGUE_MAX = (\d+)'))
     async with async_playwright() as p:
         b = await p.chromium.launch(); pg = await (await b.new_context()).new_page()
         await pg.route('http://bsb.test/**', route(html))
         await pg.goto('http://bsb.test/?day=1'); await pg.wait_for_timeout(800)
-        r = await pg.evaluate(EXPORT, [list(DAYS), cats, TAGS])
+        r = await pg.evaluate(EXPORT, [list(DAYS), cats, TAGS, per, lmax])
         await b.close()
     if 'error' in r: sys.exit(r['error'])
     os.makedirs(out, exist_ok=True)

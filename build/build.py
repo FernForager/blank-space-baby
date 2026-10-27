@@ -60,6 +60,7 @@ BETA_MIN = 48              # with BETA_VETTED_ONLY, the build stops if a color h
 START = [2026, 10, 27]   # the date of puzzle #1 (Morg rolled it from the 26th to the 27th on the night of Oct 26, 2026, before sending the link). Before it, #1 plays early. After the playtest, launch day is #1 again.
 DEMO_DAYS = 0             # off since Oct 19, 2026: the playtest is a real daily, one board a day (Morg). It was 7: boards #1 to #7 back to back, then a
                           # thank-you and Start over. The date doesn't move it. 0 for the real daily, one board a day from START
+PER = 3                   # cards of each color a day (Morg, Oct 27, 2026: nine a day, three per color, was five): PER in template.html
 REPEAT_DAYS = 91          # a card never comes back within 3 months, once there are enough cards
 WINDOW = 24               # the draw deals from a shuffle of each color's 24 oldest cards (WINDOW in template.html)
 
@@ -181,18 +182,18 @@ def league(deck_league, it):
     return SITE_LEAGUE.get(urlparse(it['src']).netloc.removeprefix('www.'), '')
 
 def pinned(decks):
-    """Morg's own boards (build/boards.json): {"2": [15 card ids], ...}, puzzle number to its cards in board order, five white,
-    then five yellow, then five red. Every card must be in the draw, in its spot's color, and on one board only."""
+    """Morg's own boards (build/boards.json): {"2": [9 card ids], ...}, puzzle number to its cards in board order, three white,
+    then three yellow, then three red. Every card must be in the draw, in its spot's color, and on one board only."""
     raw = load_json(os.path.join(HERE, 'boards.json'), {})
     boards = {k: v for k, v in raw.items() if not k.startswith('@')}
     color = {f"{d['id']}:{x['i']}": x['d'] for d in decks for x in d['items']}
     bad, seen = [], {}
     for n, ids in boards.items():
         if not n.isdigit() or int(n) < 2: bad.append(f'board {n}: boards are puzzle numbers from 2 (#1 stays as dealt)')
-        if len(ids) != 15: bad.append(f'board #{n}: {len(ids)} cards, not 15')
+        if len(ids) != 3 * PER: bad.append(f'board #{n}: {len(ids)} cards, not {3 * PER}')
         for k, cid in enumerate(ids):
             if cid not in color: bad.append(f'board #{n}: {cid} is not in the draw (out, flagged, waiting on a reviewer, or no such card)'); continue
-            if color[cid] != k // 5 + 1: bad.append(f'board #{n}: {cid} is {("white", "yellow", "red")[color[cid] - 1]} but sits in spot {k + 1}')
+            if color[cid] != k // PER + 1: bad.append(f'board #{n}: {cid} is {("white", "yellow", "red")[color[cid] - 1]} but sits in spot {k + 1}')
             if cid in seen: bad.append(f'board #{n}: {cid} is on board #{seen[cid]} too')
             seen[cid] = n
     if bad:
@@ -235,9 +236,9 @@ def main(test_copy=None):
     if BETA_VETTED_ONLY and min(tiers) < BETA_MIN:
         print(f'\nToo few vetted cards to deal a board: {tiers} (white, yellow, red), and each color needs {BETA_MIN}.'); sys.exit(1)
     print('In the draw:', ', '.join(f'{n} {c}' for n, c in zip(tiers, ('white', 'yellow', 'red'))))
-    need = 5 * REPEAT_DAYS + WINDOW   # 5 a day (the shootout, Oct 19, 2026) for 3 months, plus the 24 oldest the draw shuffles from
+    need = PER * REPEAT_DAYS + WINDOW   # PER a day of each color for 3 months, plus the 24 oldest the draw shuffles from
     print(f'Cards can stay 3 months apart once each color has about {need} cards. Until then the draw spaces them as far apart as it can:')
-    print(f'the smallest color ({min(tiers)} cards) repeats about every {(min(tiers) - WINDOW) // 5} days.')
+    print(f'the smallest color ({min(tiers)} cards) repeats about every {(min(tiers) - WINDOW) // PER} days.')
     if DEMO_DAYS: print(f'Demo: boards #1 to #{DEMO_DAYS} play back to back, then a thank-you (DEMO_DAYS in build.py, 0 for the real daily).')
     pins = pinned(decks)
     tpl = open(os.path.join(HERE, 'template.html')).read()
@@ -254,7 +255,7 @@ def main(test_copy=None):
     tpl = tpl.replace('__TEXTMETA__', json.dumps(pm, ensure_ascii=False).replace('</', '<\\/')).replace('__SLOTS__', json.dumps(ps, ensure_ascii=False))
     tpl = tpl.replace('__PIN__', json.dumps(pins))
     tpl = tpl.replace('__TEXT__', json.dumps(text, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/'))
-    tpl = tpl.replace('__DECKS__', json.dumps(decks, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')).replace('__START__', json.dumps(START)).replace('__DEMO__', str(DEMO_DAYS))
+    tpl = tpl.replace('__DECKS__', json.dumps(decks, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')).replace('__START__', json.dumps(START)).replace('__DEMO__', str(DEMO_DAYS)).replace('__PER__', str(PER))
     top, body = tpl.split('<style>', 1)              # title + font links move into <head>
     top = '\n'.join(l for l in top.splitlines() if 'claude:' not in l)
     head = strings.fill_head(open(os.path.join(HERE, 'head.html')).read().replace('</head>', top.strip() + '\n</head>'), text)

@@ -2,8 +2,8 @@
 
     python3 tools/drawcheck.py [days] [page.html]      # default 365 days of docs/index.html
 
-Replays the draw the way every phone does and checks each day's board: 5 white, 5 yellow and 5 red cards,
-at least one women's game card and one rules card, at most 3 from one league, at most one slang card
+Replays the draw the way every phone does and checks each day's board: PER white, yellow and red cards (3 each since
+Oct 27, 2026), at least one women's game card and one rules card, at most LEAGUE_MAX from one league, at most one slang card
 and never a red one, and no two cards that give each other away (one's answer in the other's
 sentence or hook, or a shared answer or hook). Then reports how far apart repeats land, checks that two
 fresh page loads deal the same boards, and times the replay.
@@ -13,17 +13,19 @@ from playwright.async_api import async_playwright
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DAYS = int(sys.argv[1]) if len(sys.argv) > 1 else 365
 HTML = open(sys.argv[2] if len(sys.argv) > 2 else os.path.join(ROOT, 'docs', 'index.html')).read()
+import re
+PER = int(re.search(r'var PER = (\d+)', HTML).group(1)); LMAX = int(re.search(r'LEAGUE_MAX = (\d+)', HTML).group(1))   # read from the page itself
 
-CHECK = """(days) => {
+CHECK = """([days, per, lmax]) => {
   const T = window.TRIVIELA, t0 = performance.now(), boards = T.deal(days - 1, true), ms = performance.now() - t0;
   const bad = [], last = {}, gaps = [], seen = {}, mix = { women: 0, rules: 0, slang: 0, leagues: {} };
   boards.forEach((tiers, day) => {
     const all = [].concat(...tiers);
-    tiers.forEach((t, i) => { if (t.length !== 5 || t.some(c => c.d !== i + 1)) bad.push([day, 'color ' + (i + 1) + ' has ' + t.length]); });
+    tiers.forEach((t, i) => { if (t.length !== per || t.some(c => c.d !== i + 1)) bad.push([day, 'color ' + (i + 1) + ' has ' + t.length]); });
     if (!all.some(c => c.wm)) bad.push([day, 'no women’s card']);
     if (!all.some(c => c.rl)) bad.push([day, 'no rules card']);
     const lg = {}; all.forEach(c => { if (c.lg) lg[c.lg] = (lg[c.lg] || 0) + 1; });
-    Object.entries(lg).forEach(([k, n]) => { if (n > 3) bad.push([day, n + ' from ' + k]); mix.leagues[k] = (mix.leagues[k] || 0) + n; });
+    Object.entries(lg).forEach(([k, n]) => { if (n > lmax) bad.push([day, n + ' from ' + k]); mix.leagues[k] = (mix.leagues[k] || 0) + n; });
     const sl = all.filter(c => c.sl); sl.forEach(c => { if (c.d === 3) bad.push([day, 'red slang', c.id]); });
     if (sl.length > 1) bad.push([day, sl.length + ' slang cards']);
     for (let i = 0; i < all.length; i++) for (let j = i + 1; j < all.length; j++) if (T.near(all[i], all[j])) bad.push([day, 'give away', all[i].id + ' ' + all[i].w, all[j].id + ' ' + all[j].w]);
@@ -50,7 +52,7 @@ async def main():
             await pg.add_init_script("try { localStorage.setItem('bsb-intro-off', 'true') } catch (e) {}")   # skip the how-to-play screen
             await pg.route('http://bsb.test/**', lambda r: r.fulfill(body=HTML, content_type='text/html'))
             await pg.goto('http://bsb.test/?day=1&reset'); await pg.wait_for_timeout(300)
-            if k == 0: res = await pg.evaluate(CHECK, DAYS)
+            if k == 0: res = await pg.evaluate(CHECK, [DAYS, PER, LMAX])
             prints.append(await pg.evaluate(FINGER, DAYS))
             await pg.close()
         await b.close()

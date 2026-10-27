@@ -21,10 +21,10 @@ def ok(cond, what):
     if not cond: fails.append(what)
 
 def expected(s, n):   # the share text for a saved day, the same as expected() in tools/lifecycle.py
-    cols = [[('⚽' if s['res'][i] == 1 else '❌') for i in range(15) if s['tiles'][i]['d'] == d] for d in (1, 2, 3)]
-    rows = [''.join(cols[d][j] for d in range(3)) for j in range(5)]
+    k = len(s['res']); cols = [[('⚽' if s['res'][i] == 1 else '❌') for i in range(k) if s['tiles'][i]['d'] == d] for d in (1, 2, 3)]
+    rows = [''.join(cols[d][j] for d in range(3)) for j in range(k // 3)]
     right = sum(1 for r in s['res'] if r == 1)
-    return TEXT['share.title'].replace('{day}', str(n)) + '\n⬜🟨🟥\n' + '\n'.join(rows) + '\n' + ('GOLAZO!' if right == 15 else f'{right}/15') + '\n' + TEXT['share.tagline'] + '\n' + TEXT['share.site']
+    return TEXT['share.title'].replace('{day}', str(n)) + '\n⬜🟨🟥\n' + '\n'.join(rows) + '\n' + ('GOLAZO!' if right == k else f'{right}/{k}') + '\n' + TEXT['share.tagline'] + '\n' + TEXT['share.site']
 
 state = lambda pg: pg.evaluate("JSON.parse(localStorage.getItem('bsb-daily'))")
 view = lambda pg: pg.evaluate("document.getElementById('cab').dataset.v")
@@ -59,21 +59,22 @@ async def main():
         ok('back' in await pg.evaluate("document.getElementById('go').className"), 'an open card offers Back')
         await pg.click('#go'); await pg.wait_for_timeout(500)
         ok(await view(pg) == 'board', 'Back returns to the board')
-        for i in range(15):   # two misses
+        N = len(s['tiles'])   # the day's cards: 9 since Oct 27, 2026
+        for i in range(N):   # two misses
             await pg.click(f'[data-i="{i}"]'); await pg.wait_for_timeout(450)
             w = await pg.evaluate("document.getElementById('q').dataset.w")
             ch = await pg.evaluate("[...document.querySelectorAll('.choice')].map(b => b.dataset.w)")
-            await pg.click(f'.choice[data-w="{w if i not in (2, 11) else next(x for x in ch if x != w)}"]'); await pg.wait_for_timeout(450)
+            await pg.click(f'.choice[data-w="{w if i not in (2, N - 4) else next(x for x in ch if x != w)}"]'); await pg.wait_for_timeout(450)
             if i == 0: ok(await pg.evaluate("document.getElementById('b-flag').hidden && document.getElementById('b-lock').hidden"), 'no Flag or Lock keys')
             await pg.click('#go'); await pg.wait_for_timeout(450)
         await pg.wait_for_timeout(1500); s = await state(pg)
-        ok(await view(pg) == 'end' and s['res'].count(2) == 2 and s['res'].count(1) == 13, 'a full day ends on the end screen, 13 right and 2 missed')
+        ok(await view(pg) == 'end' and s['res'].count(2) == 2 and s['res'].count(1) == N - 2, f'a full day ends on the end screen, {N - 2} right and 2 missed')
         print('      the countdown reads', await pg.evaluate("document.getElementById('clock').innerText.replace(/\\s+/g, ' ')"))   # before #1's date it runs to the night of #1's date
-        ok(await pg.evaluate("document.querySelectorAll('.egrid .egh').length") == 3 and await pg.evaluate("document.querySelectorAll('.egrid .mk').length") == 15, 'the end grid has its three card headers and 15 marks')
+        ok(await pg.evaluate("document.querySelectorAll('.egrid .egh').length") == 3 and await pg.evaluate("document.querySelectorAll('.egrid .mk').length") == N, f'the end grid has its three card headers and {N} marks')
         await pg.click('#share'); await pg.wait_for_timeout(400)
         clip = await pg.evaluate("navigator.clipboard.readText()")
         ok(clip == expected(s, n), 'the share text is exact: ' + repr(clip))
-        ok(len(posts) == 1 and posts[0]['day'] == s['day'] and len(posts[0]['ids']) == 15 and posts[0]['res'] == s['res'] and sorted(posts[0]['path']) == list(range(15)), f'one result post, well formed, caught before the server ({len(posts)})')
+        ok(len(posts) == 1 and posts[0]['day'] == s['day'] and len(posts[0]['ids']) == N and posts[0]['res'] == s['res'] and sorted(posts[0]['path']) == list(range(N)), f'one result post, well formed, caught before the server ({len(posts)})')
         ok(not beta, 'no calls to the beta’s services ' + str(beta))
         ok(not errs, 'no script errors ' + str(errs))
         await ctx.close(); await b.close()

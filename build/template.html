@@ -4,10 +4,10 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Pixelify+Sans:wght@500;600;700&family=Yellowtail&display=swap">
 <style>
 /* The phone is the cabinet: marquee sign, CRT screen in a black bezel, push-buttons on a black control panel.
-   The daily, as a shootout (Morg, Oct 19, 2026): everyone gets the same 15 cards a day, 5 white (easy), 5 yellow card
-   (medium) and 5 red card (hard), and plays all 15. Tap any tile. A right answer lights the next panel of the ball,
-   from the middle out, and 15 right lights the center last: GOLAZO! The board is the grid: the ball on the screen,
-   the 15 tiles as keys on the panel, one card color per column. */
+   The daily, as a shootout (Morg, Oct 19, 2026), nine cards since Oct 27, 2026: everyone gets the same 9 cards a day,
+   3 white (easy), 3 yellow card (medium) and 3 red card (hard), and plays all 9. Tap any tile. A right answer lights a ring
+   of its color's ball, and 9 right light all three balls whole: GOLAZO! The board is the grid: the three balls on the
+   screen, the 9 tiles as keys on the panel, one card color per column. */
 :root {
   --body: #F2EDE4; --body-dark: #00843D;   /* locked palette: warm white page, Celtic Green trim */
   --bezel: #0D0F0E; --screen: #07130C; --glow: #5CF09A; --text: #EAFBF0; --dim: #7FAF92; --gold: #F7C948;
@@ -93,8 +93,8 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .num.po { margin: 0 -.1875em 0 -.25em; }   /* the arcade face's ( sits at the right of its cell, so it's pulled in 2 of its pixels on the left and 1½ on the right, and ) half a pixel: the gaps then match the body font's word space and letter gaps (measured at 3×, Oct 26, 2026) */
 .num.pc { margin-left: -.0625em; }
 
-/* the ball: 15 lamp panels in three rings of five (the hexagons round the center, the outer pentagons, the half-hexagons
-   at the edge) and the center pentagon, which lights only on 15/15 (Morg's lamp idea, Oct 19, 2026) */
+/* the ball: three rings of five lamp panels round its center pentagon (the hexagons round the center, the outer pentagons,
+   the half-hexagons at the edge), one ring per card of its color since Oct 27, 2026 (Morg's lamp idea, Oct 19, 2026) */
 .ball { position: relative; flex: none; aspect-ratio: 1; }
 .bi { display: block; width: 100%; height: 100%; overflow: visible; }
 .bi .body { fill: rgba(92,240,154,.05); }
@@ -215,8 +215,8 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .key:disabled { cursor: default; }
 
 /* the tiles: easy, medium and hard, one column each */
-#p-board.tiles { grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: repeat(5, auto); grid-auto-flow: column; gap: 9px 8px; padding-bottom: 4px; }
-.tile { position: relative; min-height: 60px; min-width: 0; padding: 4px 6px; display: flex; align-items: center; justify-content: center; border-radius: 10px; }
+#p-board.tiles { grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: repeat(3, auto); grid-auto-flow: column; gap: 10px 8px; padding-bottom: 4px; }   /* three cards a color (Oct 27, 2026), so three rows */
+.tile { position: relative; min-height: 80px; min-width: 0; padding: 4px 6px; display: flex; align-items: center; justify-content: center; border-radius: 10px; }
 /* every tile is a cream key like the answer buttons. A small referee's card in the corner marks its color: white, yellow or red
    (Morg, Oct 26, 2026: white too, to match the white card a miss leaves in the grid. Easy tiles had none from Oct 16, when bold
    tile colors took over the cabinet) */
@@ -251,7 +251,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 /* the share key shows the exact text it sends: the shootout grid in the game's pixel ball and ✕, one line per row */
 .sgrid { display: grid; grid-template-columns: repeat(3, 11px); grid-auto-rows: 11px; gap: 3px 3px; padding-block: 2px; align-items: center; justify-items: center; }
 .sgrid .no { color: #E0464B; }
-#share-txt { display: grid; grid-template-columns: auto 1fr; column-gap: 14px; row-gap: 3px; align-items: end; }   /* the five-line grid beside the score and the site, so the key stays short */
+#share-txt { display: grid; grid-template-columns: auto 1fr; column-gap: 14px; row-gap: 3px; align-items: end; }   /* the grid beside the score and the site, so the key stays short */
 #share-txt .sgrid { grid-row: 1 / span 3; }
 .egrid .egh { display: flex; align-items: flex-end; justify-content: center; }   /* the column headers: each column's card */
 .egrid .em .mk, .sgrid .mk { display: block; }
@@ -269,10 +269,10 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .clock.thanks { font-family: var(--body-font); font-size: 17px; letter-spacing: 0; }   /* the CRT's sentence face: one line, or two beside the beta's keys on the smallest phones */
 .key:focus-visible, .go:focus-visible, .bk:focus-visible { outline: 3px solid var(--glow); outline-offset: 3px; }
 
-@media (max-height: 700px) { .choice { min-height: 56px; } .tile { min-height: 54px; } }
+@media (max-height: 700px) { .choice { min-height: 56px; } .tile { min-height: 70px; } }
 @media (max-height: 640px) { .cab { gap: 9px; padding-top: max(9px, env(safe-area-inset-top, 0px)); padding-bottom: max(12px, env(safe-area-inset-bottom, 0px)); } .marquee { padding: 8px 10px 9px; } .marquee h1 { font-size: 19px; } .marquee.dm { height: 70px; } .marquee.dm .subhead { bottom: 7px; } .marquee.dm canvas { bottom: 20px; height: calc(100% - 27px); }
   .choice { min-height: 50px; }   
-  .tile { min-height: 50px; padding-left: 5px; padding-right: 5px; } #p-board.tiles { gap: 7px 7px; } .panel { padding: 10px 10px 13px; }
+  .tile { min-height: 62px; padding-left: 5px; padding-right: 5px; } #p-board.tiles { gap: 8px 7px; } .panel { padding: 10px 10px 13px; }
   .egrid { gap: 7px 8px; } }
 @media (prefers-reduced-motion: reduce) { .key, .choice .def { transition: none; } .sb i.bump, .sb i.now, .choice.wrong, .flick, .blank, .go, .ball.goal, .bi .pt.new, .bi.full, .cab.poweron .marquee h1, .cab.poweron .marquee.dm canvas, .endrow .next svg, .pitch .shout { animation: none; } }
 
@@ -355,7 +355,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .rcard.c1 { background: var(--c1); box-shadow: 0 0 0 1px #B9B2A3; } .rcard.c2 { background: var(--c2); } .rcard.c3 { background: var(--c3); }
 .egrid .em.no .rcard { box-shadow: 0 0 6px rgba(255,255,255,.25); }
 .sgrid .rcard { display: block; width: 8px; height: 11px; border-radius: 1.5px; }
-@media (max-height: 640px) { .egrid { row-gap: 4px; } .sgrid { grid-template-columns: repeat(3, 10px); grid-auto-rows: 10px; gap: 2px 3px; } .sgrid .rcard { width: 7px; height: 10px; } }   /* the shortest phones: the header rows still fit */
+@media (max-height: 640px) { .sgrid { grid-template-columns: repeat(3, 10px); grid-auto-rows: 10px; gap: 2px 3px; } .sgrid .rcard { width: 7px; height: 10px; } }   /* the shortest phones: the share key stays short */
 /* the card's category, a quiet line over its hook (Morg, Oct 19, 2026: pick a topic you know) */
 /* the tag sits in a thin band along the tile's top, level with the corner card, and the hook is centered in all the space below it,
    so the bold word carries the tile and the faint tag doesn't pull it off center (Morg, Oct 25, 2026) */
@@ -551,17 +551,17 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   }
   // three balls, one per card color (Morg, Oct 26, 2026: one ball lit in order meant nothing once you missed a card), each over its
   // column of tiles: white, yellow, red. Each is a classic ball face, its center lit in its color from the start like a bingo free
-  // space (Morg: black there read like a miss), and the five panels round it, one per card in its column, top to bottom running
-  // clockwise from the upper right. A right answer lights its panel in its card's color, a miss leaves it black, and five right
-  // flash the ball. The rest of the ball stays a dim hologram, and on 15/15 all three light whole.
-  // res: the five cards' results (0 to play, 1 right, 2 missed). fresh: the panel just lit (it bumps). flash: the ball just filled
+  // space (Morg: black there read like a miss), and three rings of panels round it, one per card in its column, from the center
+  // out (Oct 27, 2026: nine cards). A right answer lights its whole ring in its card's color, a miss leaves it black, and a color
+  // all right lights its ball whole and flashes it. On 9/9 the slivers at the rim light too.
+  // res: the color's results (0 to play, 1 right, 2 missed). fresh: the ring just lit (it bumps). flash: the ball just filled
   function colorBall(d, res, fresh, flash, all) {
     var id = 'bc' + (++BI);
     return '<svg class="bi k' + d + (flash ? ' full' : '') + '" viewBox="-50 -50 100 100" aria-hidden="true"><defs><clipPath id="' + id + '"><circle r="48"/></clipPath></defs>' +
       '<g clip-path="url(#' + id + ')"><circle class="body" r="48"/>' +
       BALLG.rim.map(function (p) { return '<polygon class="pt hx rim c' + d + (all ? ' on' : '') + '" points="' + p + '"/>'; }).join('') +
       BALLG.panels.map(function (pn, k) {
-        var c = k === 15 ? ' core c' + d + ' on' : k < PER ? ' c' + d + (res[k] === 1 ? ' on' : res[k] === 2 ? ' out' : '') + (k === fresh ? ' new' : '') : ' c' + d + (all ? ' on' : '');   // every panel in the ball's color, so 15/15 lights it whole in that color
+        var ring = Math.floor(k / 5), c = k === 15 ? ' core c' + d + ' on' : ' c' + d + (res[ring] === 1 ? ' on' : res[ring] === 2 ? ' out' : '') + (ring === fresh ? ' new' : '');   // panels 0 to 4 are ring 1, 5 to 9 ring 2, 10 to 14 ring 3: a card each, in the ball's color
         return '<polygon class="pt' + (pn.hx ? ' hx' : '') + c + '" points="' + pn.p + '"/>'; }).join('') +
       '<circle class="glow" r="48"/><circle class="shine" r="48"/></g></svg>';
   }
@@ -666,10 +666,10 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   // ---- the draw ----
   // Each color keeps a line of its cards, oldest first. A day deals 5 of each from a shuffle of the 24 oldest in each line
   // (reaching further back only when a guardrail needs it), and dealt cards go to the back. So a card comes back
-  // as late as the deck allows, and never within 3 months once each color has about 570 cards.
-  // Guardrails: at least one women's game card and one rules card, at most 3 from one league,
+  // as late as the deck allows, and never within 3 months once each color has about 300 cards.
+  // Guardrails: at least one women's game card and one rules card, at most 2 from one league,
   // at most one slang card in all (Kid Slang or Parent Slang) and never a red one.
-  var PER = 5, WINDOW = 24, LEAGUE_MAX = 3;   // the shootout: 5 of each color (Morg, Oct 19, 2026)
+  var PER = __PER__, WINDOW = 24, LEAGUE_MAX = 2;   // 3 of each color (Morg, Oct 27, 2026: nine cards a day, was five of each), so 2 from one league at most, as 3 was of 15
   function fits(c, got) {
     var lg = 0;
     for (var i = 0; i < got.length; i++) {
@@ -679,8 +679,8 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     }
     return lg < LEAGUE_MAX;
   }
-  // Morg's own boards (Oct 26, 2026: he curates #2 to #7 himself): build/boards.json pins a day's 15 cards in his order, white,
-  // yellow, red, five each, and the draw takes them as that day's deal, so later days still skip them. A pinned card that can't
+  // Morg's own boards (Oct 26, 2026: he curates #2 to #7 himself): build/boards.json pins a day's 9 cards in his order, white,
+  // yellow, red, three each, and the draw takes them as that day's deal, so later days still skip them. A pinned card that can't
   // play any more (flagged, out) leaves its spot to the draw
   var PIN = __PIN__, BYID = {}; ALL.forEach(function (c) { BYID[c.id] = c; });
   function dealDay(day, q, last) {
@@ -782,12 +782,13 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   function demoDay() { return Math.min(DEMO - 1, Math.max(0, store.get('bsb-demo', 0) | 0)); }   // the playtest's place in its run of boards
   function fresh(day) {
     var b = deal(day);
-    return { v: 4, day: day, tiles: [].concat(b[0], b[1], b[2]).map(function (c) { return { id: c.id, h: c.fp, lk: c.lk, d: c.d, hook: c.hook, w: c.w, m: c.m, ex: c.ex, ch: choices(c, day) }; }),
-      res: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], open: -1, path: [], slots: [] };   // v 3: fresh cards and near-miss numbers (v 2 was the shootout's first 15)
+    var tiles = [].concat(b[0], b[1], b[2]);
+    return { v: 5, day: day, tiles: tiles.map(function (c) { return { id: c.id, h: c.fp, lk: c.lk, d: c.d, hook: c.hook, w: c.w, m: c.m, ex: c.ex, ch: choices(c, day) }; }),
+      res: tiles.map(function () { return 0; }), open: -1, path: [], slots: [] };   // v 5: nine cards (Oct 27, 2026). v 3 brought fresh cards and near-miss numbers, v 2 the shootout's first 15
   }
   function load() {
     var s = store.get('bsb-daily', null), d = today();
-    if (!(s && s.v === 4 && s.day === d && s.tiles && s.tiles.length === 3 * PER)) return fresh(d);
+    if (!(s && s.v === 5 && s.day === d && s.tiles && s.tiles.length === 3 * PER)) return fresh(d);
     s.tiles.forEach(function (t) {   // a board saved before cards had ids: find each card by its words
       if (t.id) return;
       for (var i = 0; i < ALL.length; i++) if (ALL[i].w === t.w && ALL[i].ex === t.ex) { t.id = ALL[i].id; t.h = ALL[i].fp; t.lk = ALL[i].lk; break; }
@@ -798,7 +799,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   var save = function () { store.set('bsb-daily', S); };
   var chips = function () { return S.res.filter(function (x) { return x === 1; }).length; };
   var over = function () { return S.res.indexOf(0) < 0; };   // every card played: a miss no longer ends the day
-  var ALLN = 3 * PER, GOLAZO = tx('golazo');   // 15/15 (Morg's name and caps, Oct 19, 2026)
+  var ALLN = 3 * PER, GOLAZO = tx('golazo');   // a perfect day, 9/9 (Morg's name and caps, Oct 19, 2026)
   if (DEV) window.TRIVIELA = { deal: deal, choices: choices, ALL: ALL, POOL: POOL, near: near, state: function () { return S; } };   // for tools/drawcheck.py
 
   // ---- the tap shield ----
@@ -819,7 +820,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     g.innerHTML = back ? svg(icon, 3) + '<span class="lbl" data-tid="' + id + '">' + esc(label) + '</span>' : '<span class="lbl" data-tid="' + id + '">' + esc(label) + '</span>' + svg(icon, 3);
     g.setAttribute('aria-label', spoken ? tx(spoken) : label); g.classList.toggle('back', back); g.classList.remove('wait'); g.tabIndex = 0;
   }
-  function results(d) { var r = []; S.tiles.forEach(function (T, i) { if (T.d === d) r[spot(i)] = S.res[i]; }); return r; }   // a color's five results, in board order
+  function results(d) { var r = []; S.tiles.forEach(function (T, i) { if (T.d === d) r[spot(i)] = S.res[i]; }); return r; }   // a color's results, one per card in its column, in board order
   function ballHTML(n, fresh) {   // fresh: the tile just answered right, so its panel bumps and a full ball flashes
     var f = fresh != null ? S.tiles[fresh] : null;
     return '<div class="balls">' + [1, 2, 3].map(function (d) {
@@ -836,7 +837,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   // a result in the grids (Morg, Oct 26, 2026): our pixel ball for a right answer and the red pixel ✕ for a miss, the same marks as the played tiles.
   // On the dark screen the ball's outline takes the screen's text color
   function mark(v, size, dark) { return v === 1 ? svg(dark ? 'sball' : 'pball', pxu(size, 15), 'mk', true) : svg('pmiss', pxu(size * 13 / 15, 13), 'mk', true); }
-  function spot(i) { var d = S.tiles[i].d, n = 0; for (var k = 0; k < i; k++) if (S.tiles[k].d === d) n++; return n; }   // a card's place in its color, 0 to 4
+  function spot(i) { var d = S.tiles[i].d, n = 0; for (var k = 0; k < i; k++) if (S.tiles[k].d === d) n++; return n; }   // a card's place in its color, 0 to 2
   function tileLabel(T, i) { var l = tx('tile.label', { hook: T.hook, tag: tagOf(T), color: tx('color.' + T.d) }); return S.res[i] ? tx(S.res[i] === 1 ? 'tile.right' : 'tile.missed', { label: l }) : l; }
   function tileHTML(T, i) {
     var st = S.res[i] === 1 ? ' done' : S.res[i] === 2 ? ' miss' : '';
@@ -876,17 +877,16 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     S.open = -1; save(); go(null); beta(null);
     board(); view('board');
   }
-  // the shootout, row by color in the order played: [[1, 2, 0, 0, 0], ...] (1 right, 2 missed, 0 still to play)
   // a row per color, every card in its board spot (Morg, Oct 19, 2026): the same spot is the same card for everyone.
-  // [[1, 2, 0, 0, 0], ...]: 1 right, 2 missed, 0 still to play
+  // [[1, 2, 0], ...]: 1 right, 2 missed, 0 still to play
   function rows() {
     var r = [[], [], []];
     S.tiles.forEach(function (t, i) { r[t.d - 1].push(S.res[i] || 0); });
     return r;
   }
-  // the grid as the board lays it out (Morg, Oct 26, 2026: share it the board's way): five lines, each white, yellow, red
+  // the grid as the board lays it out (Morg, Oct 26, 2026: share it the board's way): a line per spot, each white, yellow, red
   // [[1, 2, 0], ...]: line j is the cards in spot j of each color's column
-  function lines() { var r = rows(); return [0, 1, 2, 3, 4].map(function (j) { return [r[0][j], r[1][j], r[2][j]]; }); }
+  function lines() { var r = rows(), out = []; for (var j = 0; j < PER; j++) out.push([r[0][j], r[1][j], r[2][j]]); return out; }
   function hud(bump) {   // the card's color, and the scoreboard: the card in play blinks in its row
     var now = answered ? -1 : T.d - 1, cell = now >= 0 ? spot(S.open) : -1, h = '';
     lines().forEach(function (line, j) { line.forEach(function (v, x) {   // x the color, j the spot, as on the board
@@ -926,14 +926,14 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   }
   var settle = null;   // ends the GOLAZO! moment at once if the player taps on
   // streak shouts (Brace!, Hat Trick!, 4 in a row!) and the best run came out on Oct 26, 2026 (Morg: “Best: 4 in a row!” was hard
-  // to read). GOLAZO! stays for 15/15. A title for every score, 0 to 15, is on Morg’s list. Streaks are saved on beta-oct22
-  function next() {   // after an answer: back to the board, where a right one lights the next panel of the ball
+  // to read). GOLAZO! is for a perfect day, 9/9. A title for every score, 0 to 9, is on Morg’s list. Streaks are saved on beta-oct22
+  function next() {   // after an answer: back to the board, where a right one lights its ring of its color's ball
     var i = S.open, ok = S.res[i] === 1, n = chips(), timer = null;
     S.open = -1; save(); go(null); beta(null);
     board(ok ? i : undefined); view('board');
     if (!over()) { settle = null; return; }
     if (n < ALLN) { timer = setTimeout(end, motion() ? 1300 : 0); settle = function () { clearTimeout(timer); end(); }; return; }   // the last card: a beat on the ball, then the grid
-    function golazo() {   // 15/15: the center lights last, the whole ball glows, and the goal scene plays
+    function golazo() {   // 9/9: all three balls glow whole, and the goal scene plays
       var pitch = document.querySelector('#v-board .pitch');
       if (pitch) {
         pitch.insertAdjacentHTML('beforeend', goalScene(1)); pitch.classList.add('fxon');
@@ -961,7 +961,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 
 
   // ---- the end of the day ----
-  // the playtest's anonymous results (Morg, Oct 19, 2026): a finished board sends its puzzle number, its 15 card ids, each
+  // the playtest's anonymous results (Morg, Oct 19, 2026): a finished board sends its puzzle number, its 9 card ids, each
   // one's result and the tap order to /api/result, once (S.sent), and tries again on the next visit if there was no signal.
   // Nothing about who played. Only triviela.net and preview links have the service (the GitHub Pages address doesn't).
   var SENDS = /(^|\.)triviela\.net$|\.blank-space-baby\.pages\.dev$/.test(host);
@@ -986,7 +986,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   function end() {
     settle = null; store.set('bsb-intro-off', true); report();
     var n = chips(), top = n === ALLN, r = rows(), big = innerHeight > 700 ? 3 : innerHeight > 640 ? 2 : 1;
-    var o = order(), cells = function (s) { var b = s === 3 ? 31 : s === 2 ? 21 : 18;   // every cell the ball's size, a little smaller on the shortest phones so the header row fits
+    var o = order(), cells = function (s) { var b = s === 3 ? 40 : s === 2 ? 32 : 26;   // every cell the ball's size, a little smaller on shorter phones (three rows since Oct 27, 2026, so the cells grew)
       return [1, 2, 3].map(function (d) { return '<i class="egh" aria-hidden="true"><i class="rcard c' + d + '" style="width:' + Math.round(b * .45) + 'px;height:' + Math.round(b * .63) + 'px"></i></i>'; }).join('') +   // each column's card on top, like a header
         lines().map(function (line, j) { return line.map(function (v, y) {   // y the color, j the spot
         var k = y * PER + j;
@@ -1006,7 +1006,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   // ---- your cards, again (Morg, Oct 26, 2026: a finished day should never feel like a dead end) ----
   // tap a ball or card in the end grid and that card comes back on the screen, its answer filled in and its meaning under it.
   // Each tap after shows the next card, row by row as in the grid, and after the last the grid comes back
-  var REV = -1;   // the card on the screen, by its place in the grid (0 to 14), or -1 for the grid itself
+  var REV = -1;   // the card on the screen, by its place in the grid (0 to 8), or -1 for the grid itself
   function order() { var o = []; S.tiles.forEach(function (T, i) { o[(T.d - 1) * PER + spot(i)] = i; }); return o; }
   function review(k) {
     var o = order(); if (k >= o.length) return end();
@@ -1113,7 +1113,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     g.textAlign = 'center'; g.textBaseline = 'alphabetic';
     g.font = '64px "Press Start 2P"'; g.fillStyle = '#5CF09A'; g.shadowColor = 'rgba(92,240,154,.7)'; g.shadowBlur = 18; g.fillText(tx('image.title'), W / 2, 124);
     var n = chips(); g.shadowBlur = 0; g.font = '40px "Press Start 2P"'; g.fillStyle = '#FFFFFF'; g.fillText(tx('image.score', { day: S.day + 1, score: n === ALLN ? GOLAZO : score() }), W / 2, 200);
-    var CW = 300, CH = 166, GX = 24, GY = 24, X0 = (W - 3 * CW - 2 * GX) / 2, Y0 = 284, COLS = ['#FFFFFF', '#F7C948', '#D52B1E'];   // the board's shape: a column per color
+    var CW = 300, CH = 262, GX = 24, GY = 30, X0 = (W - 3 * CW - 2 * GX) / 2, Y0 = 300, COLS = ['#FFFFFF', '#F7C948', '#D52B1E'];   // the board's shape: a column per color, three cards each (Oct 27, 2026)
     function runs(text, size) {   // Pixelify Sans, with its digits in the arcade face as in the game (Pixelify's 5 reads as an S)
       return String(text).split(/(\d+)/).filter(Boolean).map(function (r) { var f = /^\d/.test(r) ? (size * 8 / 11) + 'px "Press Start 2P"' : '600 ' + size + 'px "Pixelify Sans"'; g.font = f; return { r: r, f: f, w: g.measureText(r).width }; });
     }
@@ -1128,15 +1128,16 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
       g.lineWidth = 2; g.strokeStyle = d === 1 ? '#B9B2A3' : 'rgba(0,0,0,.25)'; g.stroke(); g.restore(); }
     S.tiles.forEach(function (t, i) {
       var row = spot(i), x = X0 + (t.d - 1) * (CW + GX), y = Y0 + row * (CH + GY);
-      if (row === 0) card(x + CW / 2 - 14, Y0 - 58, 28, 40, t.d);   // the column's color, over it
+      if (row === 0) card(x + CW / 2 - 17, Y0 - 70, 34, 48, t.d);   // the column's color, over it
       rr(x, y + 6, CW, CH, 18); g.fillStyle = '#CBBFA4'; g.fill(); rr(x, y, CW, CH, 18); g.fillStyle = '#F6F0E2'; g.fill();
-      var size = 33, hw = t.hook.split(' '), lines = [], cur = '';
-      if (hw.some(function (w) { return wide(w, size) > CW - 24; })) size = 27.5;
+      var size = 44, hw = t.hook.split(' '), lines = [], cur = '';
+      if (hw.some(function (w) { return wide(w, size) > CW - 28; })) size = 38.5;
+      if (hw.some(function (w) { return wide(w, size) > CW - 28; })) size = 33;
       g.fillStyle = '#1E2A3B';
-      hw.forEach(function (w) { var tr = cur ? cur + ' ' + w : w; if (wide(tr, size) > CW - 24 && cur) { lines.push(cur); cur = w; } else cur = tr; }); lines.push(cur);
-      lines = lines.slice(0, 2); lines.forEach(function (l, k) { words(l, x + CW / 2, y + 112 - (lines.length - 1) * 19 + k * 38, size); });   // 3 px to a font pixel, or 2.5 for a word too long for the card
-      g.fillStyle = '#7C8A80'; words(tagOf(t).replace('\u00AD', ''), x + CW / 2, y + 40, 22);   // its category, quieter
-      sprite(S.res[i] === 1 ? 'pball' : 'pmiss', x + CW - 16 - (S.res[i] === 1 ? 45 : 39), y + 14, 3);   // right or missed, in its corner: the board's own pixel marks
+      hw.forEach(function (w) { var tr = cur ? cur + ' ' + w : w; if (wide(tr, size) > CW - 28 && cur) { lines.push(cur); cur = w; } else cur = tr; }); lines.push(cur);
+      lines = lines.slice(0, 3); lines.forEach(function (l, k) { words(l, x + CW / 2, y + 168 - (lines.length - 1) * size * .58 + k * size * 1.16, size); });   // 4 px to a font pixel, or 3.5 or 3 for a word too long for the card
+      g.fillStyle = '#7C8A80'; words(tagOf(t).replace('\u00AD', ''), x + CW / 2, y + 52, 27.5);   // its category, quieter
+      sprite(S.res[i] === 1 ? 'pball' : 'pmiss', x + CW - 18 - (S.res[i] === 1 ? 60 : 52), y + 16, 4);   // right or missed, in its corner: the board's own pixel marks
     });
     g.font = '600 44px "Pixelify Sans"'; g.fillStyle = '#EAFBF0'; g.fillText(tx('share.site'), W / 2, H - 86);
     g.font = '26px "Press Start 2P"'; g.fillStyle = '#C9FFDD'; g.fillText(tx('share.tagline').replace(/⚽\uFE0F?\s*/g, '').toUpperCase(), W / 2, H - 38);   // what the game is, like the sign's line

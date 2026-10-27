@@ -7,7 +7,8 @@ Runs twice: as the real daily (DEMO 0) and as the playtest demo (DEMO_DAYS in bu
 1. A tapped tile opens its card: a reload reopens the same card with the same choices in the same order, and Back returns it
    to the board still to play, its choices in place when it opens again (Morg, Oct 26, 2026).
 2. A reload after a right answer keeps the chip, and the board shows it.
-3. A miss doesn't end the day: all 15 cards play, and the share is the shootout grid, exactly (checked through the clipboard).
+3. A miss doesn't end the day: all the day's cards play (9 since Oct 27, 2026), and the share is the grid, exactly (checked
+   through the clipboard).
 4. A finished day reopens to its result and can't be replayed, and How to play stops opening on its own.
 5. At local midnight the countdown runs out and a fresh board appears, numbered one higher.
    In the demo there is no countdown and midnight changes nothing: Play #2 opens #2, the last board ends with a
@@ -21,6 +22,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 HTML = open(sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, 'docs', 'index.html')).read()
 START = json.loads(re.search(r'START = (\[[^\]]+\])', HTML).group(1))
 BUILT = int(re.search(r'DEMO = (\d+);', HTML).group(1))
+PER = int(re.search(r'var PER = (\d+)', HTML).group(1)); N = 3 * PER   # cards of each color, and a day's cards
 def as_demo(n): return re.sub(r'DEMO = \d+;', f'DEMO = {n};', HTML, count=1)
 TEXT = json.load(open(os.path.join(ROOT, 'build', 'text', 'en.json')))   # the share's own words
 fails = []
@@ -39,10 +41,10 @@ async def answer(pg, i, right):   # play tile i, right or wrong, then tap on. Re
     return ch.index(w)
 
 def expected(s, n):   # the share text for a saved day: the board's shape, every card in its spot, a miss as its card, then the score
-    cols = [[('⚽' if s['res'][i] == 1 else '❌') for i in range(15) if s['tiles'][i]['d'] == d] for d in (1, 2, 3)]
-    rows = [''.join(cols[d][j] for d in range(3)) for j in range(5)]   # the board's shape: five lines of white, yellow, red
+    k = len(s['res']); cols = [[('⚽' if s['res'][i] == 1 else '❌') for i in range(k) if s['tiles'][i]['d'] == d] for d in (1, 2, 3)]
+    rows = [''.join(cols[d][j] for d in range(3)) for j in range(k // 3)]   # the board's shape: a line per spot, white, yellow, red
     right = sum(1 for r in s['res'] if r == 1)
-    return TEXT['share.title'].replace('{day}', str(n)) + '\n⬜🟨🟥\n' + '\n'.join(rows) + '\n' + ('GOLAZO!' if right == 15 else f'{right}/15') + '\n' + TEXT['share.tagline'] + '\n' + TEXT['share.site']
+    return TEXT['share.title'].replace('{day}', str(n)) + '\n⬜🟨🟥\n' + '\n'.join(rows) + '\n' + ('GOLAZO!' if right == k else f'{right}/{k}') + '\n' + TEXT['share.tagline'] + '\n' + TEXT['share.site']
 
 
 async def run(b, html, demo):
@@ -79,22 +81,22 @@ async def run(b, html, demo):
     w = await pg.evaluate("document.getElementById('q').dataset.w")
     await pg.click(f'.choice[data-w="{w}"]'); await pg.reload(); await pg.wait_for_timeout(300)
     s = await state(); v = await pg.evaluate("document.getElementById('cab').dataset.v")
-    lit = await pg.evaluate("document.querySelectorAll('#v-board .ball .pt.on:not(.core)').length")   # the three balls: one panel lit, their free-space centers aside
-    ok(v == 'board' and s['res'][3] == 1 and lit == 1, 'a right answer is saved at once and its chip is in the ball after a reload')
+    lit = await pg.evaluate("document.querySelectorAll('#v-board .ball .pt.on:not(.core)').length")   # the three balls: one ring of five lit, their free-space centers aside
+    ok(v == 'board' and s['res'][3] == 1 and lit == 5, f'a right answer is saved at once and its ring is lit in its ball after a reload ({lit} panels)')
     # the rest of the day: every tile is played, two of them wrong, and the right answer never takes one slot 3 times running
     slots = [s['tiles'][3]['ch'].index(next(c for c in s['tiles'][3]['ch'] if c['w'] == s['tiles'][3]['w']))]
-    for i in [x for x in range(15) if x != 3]:
-        ch = await answer(pg, i, i not in (5, 10)); slots.append(ch)
+    for i in [x for x in range(N) if x != 3]:
+        ch = await answer(pg, i, i not in (PER + 2, 2 * PER + 1)); slots.append(ch)   # a yellow and a red missed
     ok(not any(slots[k] == slots[k + 1] == slots[k + 2] for k in range(len(slots) - 2)), f'the right answer never takes one slot 3 times running ({"".join(map(str, slots))})')
-    # 3. a miss doesn't end the day: all 15 play, then the share is the shootout grid, rows by color in the order played
+    # 3. a miss doesn't end the day: all the cards play, then the share is the grid, every card in its spot
     s = await state(); v = await pg.evaluate("document.getElementById('cab').dataset.v")
-    ok(v == 'end' and all(s['res']), f'the day ends only after all 15 cards: {v}')
-    ok(sorted(s['path']) == list(range(15)) and s['path'][0] == 3, f'the path holds the 15 cards once each, in the order answered: {s["path"]}')
+    ok(v == 'end' and all(s['res']), f'the day ends only after all {N} cards: {v}')
+    ok(sorted(s['path']) == list(range(N)) and s['path'][0] == 3, f'the path holds the {N} cards once each, in the order answered: {s["path"]}')
     await pg.click('#share'); await pg.wait_for_timeout(200)
     text = await pg.evaluate("navigator.clipboard.readText()")
     ok(text == expected(s, 1), 'the share text is exact: ' + repr(text))
     score = await pg.evaluate("document.querySelector('#v-end .score').textContent")
-    ok(score == '13/15', f'the end screen shows the score: {score}')
+    ok(score == f'{N - 2}/{N}', f'the end screen shows the score: {score}')
     ok(await pg.evaluate("localStorage.getItem('bsb-intro-off')") == 'true', 'a finished day stops How to play from opening on its own')
     # 4. locked
     await pg.reload(); await pg.wait_for_timeout(300)
@@ -124,18 +126,18 @@ async def run(b, html, demo):
         await pg.click('#e-next'); await pg.wait_for_timeout(300)
         v = await pg.evaluate("document.getElementById('cab').dataset.v"); s = await state()
         ok(v == 'board' and s['day'] == 1 and not any(s['res']), 'Play #2 opens a fresh board, #2')
-        for i in range(15): await answer(pg, i, False)
+        for i in range(N): await answer(pg, i, False)
         await pg.click('#share'); await pg.wait_for_timeout(200)
         text = await pg.evaluate("navigator.clipboard.readText()")
-        ok(text == TEXT['share.title'].replace('{day}', '2') + '\n⬜🟨🟥\n' + '❌❌❌\n' * 5 + '0/15\n' + TEXT['share.tagline'] + '\n' + TEXT['share.site'], 'board #2, all missed, shares as #2: ' + repr(text))
+        ok(text == TEXT['share.title'].replace('{day}', '2') + '\n⬜🟨🟥\n' + '❌❌❌\n' * PER + f'0/{N}\n' + TEXT['share.tagline'] + '\n' + TEXT['share.site'], 'board #2, all missed, shares as #2: ' + repr(text))
         await pg.evaluate(f"localStorage.setItem('bsb-demo', '{demo - 1}'); localStorage.removeItem('bsb-daily')"); await pg.reload(); await pg.wait_for_timeout(300)
         s = await state(); ok(s['day'] == demo - 1, f'the demo picks up where it was left, on #{demo}')
-        for i in range(15): await answer(pg, i, True)
+        for i in range(N): await answer(pg, i, True)
         await pg.wait_for_timeout(5000)
         s = await state(); lit = await pg.evaluate("document.querySelectorAll('#v-board .ball .pt.on:not(.core)').length")
         await pg.click('#share'); await pg.wait_for_timeout(200)
         text = await pg.evaluate("navigator.clipboard.readText()")
-        ok(text == TEXT['share.title'].replace('{day}', str(demo)) + '\n⬜🟨🟥\n' + '⚽⚽⚽\n' * 5 + 'GOLAZO!\n' + TEXT['share.tagline'] + '\n' + TEXT['share.site'], 'a perfect day shares as GOLAZO!: ' + repr(text))
+        ok(text == TEXT['share.title'].replace('{day}', str(demo)) + '\n⬜🟨🟥\n' + '⚽⚽⚽\n' * PER + 'GOLAZO!\n' + TEXT['share.tagline'] + '\n' + TEXT['share.site'], 'a perfect day shares as GOLAZO!: ' + repr(text))
         r = await row()
         ok(r == {'clock': None, 'next': None, 'again': True, 'thanks': True}, f'the last board thanks you and offers Play again from #1: {r}')
         await pg.reload(); await pg.wait_for_timeout(300); r = await row()

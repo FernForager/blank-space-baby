@@ -3,7 +3,8 @@
     python3 tools/screens.py [page.html]       # default docs/index.html, writes PNGs to out/
 
 For each size: board (a fresh day), q (a card open), win (a right answer),
-board3 (three panels lit), miss (a wrong answer), end (14/15) and hat (a perfect day, GOLAZO!).
+board3 (a ring lit on each ball), miss (a wrong answer), end (all right but one) and hat (a perfect day, GOLAZO!).
+The tiles come from the page: the first third white, then yellow, then red.
 Prints a line for any screen that scrolls or throws a JS error, the smallest hook font on each board,
 and any hook that still overflows its tile.
 Uses Playwright's Chromium. If Google Fonts can't load in the sandbox, install Press Start 2P and
@@ -47,14 +48,15 @@ async def main():
             w = await pg.evaluate("document.getElementById('q').dataset.w")
             await pg.click(f'.choice[data-w="{w}"]'); await pg.wait_for_timeout(400); await shot('win')
             await pg.click('#flip'); await pg.wait_for_timeout(1100)
-            for i in (5, 10):
+            N = await pg.evaluate("document.querySelectorAll('#p-board [data-i]').length"); per = N // 3
+            for i in (per, 2 * per):   # the first card of yellow and red, so each ball has a ring lit
                 await right(i); await pg.click('#flip'); await pg.wait_for_timeout(600)
             await shot('board3')
             await tap(pg, '[data-i="1"]'); await pg.wait_for_timeout(350)
             wrong = await pg.evaluate("[...document.querySelectorAll('.choice')].map(b => b.dataset.w).find(x => x !== document.getElementById('q').dataset.w)")
             await pg.click(f'.choice[data-w="{wrong}"]'); await pg.wait_for_timeout(500); await shot('miss')
             await pg.click('#flip'); await pg.wait_for_timeout(600)
-            for i in (2, 3, 4, 6, 7, 8, 9, 11, 12, 13, 14):
+            for i in [k for k in range(N) if k not in (0, 1, per, 2 * per)]:
                 await right(i); await pg.click('#flip'); await pg.wait_for_timeout(300)
             await pg.wait_for_timeout(1500); await shot('end')
             await pg.reload(); await pg.wait_for_timeout(1200)

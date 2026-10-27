@@ -34,7 +34,8 @@ def main():
     by_day = collections.defaultdict(list)
     for r in R: by_day[r['day']].append(r['score'])
     print(f'{len(R)} finished boards')
-    for d in sorted(by_day): s = by_day[d]; print(f'  #{d + 1}: {len(s)} boards, average {sum(s) / len(s):.1f}/15, {s.count(15)} GOLAZO!')
+    size = {r['day']: len(r['ids'].split()) for r in R}   # a day's cards: 9 since Oct 27, 2026, 15 before
+    for d in sorted(by_day): s = by_day[d]; print(f'  #{d + 1}: {len(s)} boards, average {sum(s) / len(s):.1f}/{size[d]}, {s.count(size[d])} GOLAZO!')
     hit, seen, first, miss = collections.Counter(), collections.Counter(), collections.Counter(), collections.Counter()
     for r in R:
         ids, res, path = r['ids'].split(), r['res'], [int(x) for x in r['path'].split()]

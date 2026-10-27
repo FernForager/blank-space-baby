@@ -5,20 +5,20 @@
   "slogan":        { "where": "The cabinet: between the screen and the cards, on the board", "sel": ".tagline", "face": "pixel", "size": 15, "short": 13, "lh": 1.2, "track": 0.2, "align": "center", "trim": true, "lines": 1 },
 
   "tag":           { "where": "Board: a tile's category, over its hook", "sel": ".tile .tag", "size": 11, "lh": 1, "wrap": "line", "lines": 1, "fit": -0.67 },
-  "hook":          { "where": "Board: a tile's hook, the word or name from its card", "sel": ".tile", "size": 17, "mid": 16, "short": 15, "lh": 1.04, "align": "center", "lines": 2 },
+  "hook":          { "where": "Board: a tile's hook, the word or name from its card", "sel": ".tile", "size": 19, "mid": 18, "short": 16, "lh": 1.04, "align": "center", "lines": 2 },
 
   "sentence":      { "where": "Play: the card's sentence", "sel": ".sentence", "size": 26, "short": 22, "lh": 1.22, "wrap": "balance" },
   "sentenceLong":  { "where": "Play: a sentence over 52 characters", "sel": ".sentence.long", "size": 23, "short": 20 },
   "sentenceLonger":{ "where": "Play: a sentence over 70 characters", "sel": ".sentence.longer", "size": 21, "short": 18 },
   "choice":        { "where": "Play: an answer key's word", "sel": ".choice", "size": 21, "short": 19, "align": "left" },
   "choiceWord":    { "where": "Play: the answer word's line height", "sel": ".choice .w", "lh": 1.1 },
-  "means":         { "where": "Play: an answer's meaning, under its word after answering", "sel": ".choice .def", "weight": 500, "size": 15, "lh": 1.15, "lines": 2 },
+  "means":         { "where": "Play: an answer's meaning, under its word after answering", "sel": ".choice .def", "weight": 500, "size": 15, "lh": 1.15, "wrap": "balance", "lines": 2 },
   "goKey":         { "where": "Play: the full-width Next key after answering", "sel": ".gorow .gokey", "face": "arcade", "size": 13, "track": 1, "case": "upper", "lines": 1 },
   "betaMsg":       { "where": "Play, beta only: Flagged, Locked and the rest", "sel": ".bmsg", "face": "arcade", "size": 8, "track": 1, "wrap": "line", "case": "upper", "lines": 1 },
 
   "shout":         { "where": "Board: GOLAZO! over the ball on a perfect day", "sel": ".pitch .shout", "face": "arcade", "size": "clamp(22px, 9cqw, 34px)", "lh": 1.2, "align": "center" },
 
-  "score":         { "where": "End screen: the score, 11/15", "sel": ".score", "face": "arcade", "weight": 400, "size": 26, "short": 22, "lh": 1, "align": "center", "lines": 1 },
+  "score":         { "where": "End screen: the score, 7/9", "sel": ".score", "face": "arcade", "weight": 400, "size": 26, "short": 22, "lh": 1, "align": "center", "lines": 1 },
   "scoreGolazo":   { "where": "End screen: GOLAZO! in the score's place", "sel": ".golazo .score", "size": 24, "short": 21 },
   "thanks":        { "where": "End screen: Thanks for playing, the demo's last board", "sel": ".thanks-s", "size": 18, "align": "center", "lines": 1 },
   "shareKey":      { "where": "End screen: the share key, showing the text it sends", "sel": ".share", "size": 17, "lh": 1.25, "align": "left" },
@@ -27,8 +27,8 @@
   "sboard":        { "where": "End screen: the Share board key", "sel": ".endrow .sboard", "size": 17, "wrap": "balance", "lines": 2 },
   "clockLabel":    { "where": "End screen: Next board in, over the countdown", "sel": ".clock .clk-l", "face": "pixel", "size": 13, "short": 12, "lh": 1.1, "track": 0, "align": "center", "lines": 1 },
   "endHint":       { "where": "End screen: the line under the score saying the grid opens your cards", "sel": ".rhint", "size": 15, "short": 13, "align": "center", "lines": 1 },
-  "reviewCount":   { "where": "End screen, a card again: 3 of 15, at the top", "sel": ".rv-top", "size": 15, "lines": 1 },
-  "reviewMeans":   { "where": "End screen, a card again: its meaning, under the sentence", "sel": ".rv .means", "weight": 500, "size": 18, "short": 16, "lh": 1.2, "lines": 3 },
+  "reviewCount":   { "where": "End screen, a card again: 3 of 9, at the top", "sel": ".rv-top", "size": 15, "lines": 1 },
+  "reviewMeans":   { "where": "End screen, a card again: its meaning, under the sentence", "sel": ".rv .means", "weight": 500, "size": 18, "short": 16, "lh": 1.2, "wrap": "balance", "lines": 3 },
   "reviewHint":    { "where": "End screen, a card again: tap for the next one, at the bottom", "sel": ".rv-hint", "size": 13, "align": "center", "lines": 1 },
   "clock":         { "where": "End screen: the countdown to tomorrow's board", "sel": ".clock", "face": "arcade", "size": 15, "narrow": 13.3333, "track": 1, "align": "center", "lines": 1 },
 
