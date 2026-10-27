@@ -590,9 +590,9 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   // keep hyphenated words and score/season ranges on one line (outside tags only)
   var keep = function (html) { return html.replace(/(<[^>]*>)|([A-Za-z0-9’]+(?:[-–][A-Za-z0-9’]+)+)/g, function (m, tag, word) { return tag || '<span class="nb">' + word + '</span>'; }); };
   // Pixelify Sans draws 5 like an S, so digits use the arcade face (text outside tags only)
-  // and Pixelify draws Z like a 2 and G like a 6, so GOLAZO! is always in the arcade face too, and so is the # of a puzzle number,
-  // and Pixelify draws ( and ) like curly braces, so parentheses are too, as in #1 (beta)
-  var ARCADE = new RegExp('(<[^>]*>)|(' + quote(esc(tx('golazo'))) + '|#?\\d+|[()])', 'g');
+  // and Pixelify draws Z like a 2 and G like a 6, so GOLAZO! is always in the arcade face too, and so are the # and the playtest's β
+  // of a puzzle number (Pixelify has no Greek), and Pixelify draws ( and ) like curly braces, so parentheses are too
+  var ARCADE = new RegExp('(<[^>]*>)|(' + quote(esc(tx('golazo'))) + '|#?\\d+β?|[()])', 'g');
   var num = function (html) { return html.replace(ARCADE, function (m, tag, d) { return tag || '<span class="num' + (d === '(' ? ' po' : d === ')' ? ' pc' : '') + '">' + d + '</span>'; }); };   // commas stay in the body font, so 60,704 doesn't gap
   // the sentence with its answer swapped for a blank (or filled in), glued to its punctuation so they never split
   function sentence(it, fill) {
@@ -1112,7 +1112,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     g.strokeStyle = '#00843D'; g.lineWidth = 12; g.strokeRect(6, 6, W - 12, H - 12);
     g.textAlign = 'center'; g.textBaseline = 'alphabetic';
     g.font = '64px "Press Start 2P"'; g.fillStyle = '#5CF09A'; g.shadowColor = 'rgba(92,240,154,.7)'; g.shadowBlur = 18; g.fillText(tx('image.title'), W / 2, 124);
-    var n = chips(); g.shadowBlur = 0; g.font = '40px "Press Start 2P"'; g.fillStyle = '#FFFFFF'; g.fillText(tx('image.score', { day: S.day + 1, score: n === ALLN ? GOLAZO : score() }).toUpperCase(), W / 2, 200);
+    var n = chips(); g.shadowBlur = 0; g.font = '40px "Press Start 2P"'; g.fillStyle = '#FFFFFF'; g.fillText(tx('image.score', { day: S.day + 1, score: n === ALLN ? GOLAZO : score() }), W / 2, 200);
     var CW = 300, CH = 166, GX = 24, GY = 24, X0 = (W - 3 * CW - 2 * GX) / 2, Y0 = 284, COLS = ['#FFFFFF', '#F7C948', '#D52B1E'];   // the board's shape: a column per color
     function runs(text, size) {   // Pixelify Sans, with its digits in the arcade face as in the game (Pixelify's 5 reads as an S)
       return String(text).split(/(\d+)/).filter(Boolean).map(function (r) { var f = /^\d/.test(r) ? (size * 8 / 11) + 'px "Press Start 2P"' : '600 ' + size + 'px "Pixelify Sans"'; g.font = f; return { r: r, f: f, w: g.measureText(r).width }; });
