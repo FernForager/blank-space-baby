@@ -107,12 +107,19 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .bi .pt.c2.on { fill: url(#byel); stroke: #F7C948; filter: drop-shadow(0 0 1.5px rgba(247,201,72,.85)); }
 .bi .pt.c3.on { fill: url(#bred); stroke: #E8473A; filter: drop-shadow(0 0 1.5px rgba(213,43,30,.95)); }
 .bi .pt.out { fill: #07130C; fill-opacity: 1; stroke: #24432F; }
+/* each ball in its own card color (Morg, Oct 26, 2026: the old green on a yellow ball didn't make sense): dim dots and seams in its color
+   still to play, bright where right, near black where missed, and its rim glows in its color */
+.bi.k1 .pt.on { filter: drop-shadow(0 0 1.5px rgba(242,245,243,.75)); }   /* the white ball glows white, not green */
+.bi.k1 .pt:not(.on):not(.out) { fill: url(#bdim1); stroke: #7D8A84; } .bi.k1 .pt.out { fill: #1A1F1D; stroke: #7D8A84; stroke-opacity: .6; } .bi.k1 .glow { fill: url(#bglow1); } .bi.k1 .body { fill: #F2F5F3; fill-opacity: .04; }
+.bi.k2 .pt:not(.on):not(.out) { fill: url(#bdim2); stroke: #9A7E2C; } .bi.k2 .pt.out { fill: #1C190C; stroke: #9A7E2C; stroke-opacity: .6; } .bi.k2 .glow { fill: url(#bglow2); } .bi.k2 .body { fill: #F7C948; fill-opacity: .04; }
+.bi.k3 .pt:not(.on):not(.out) { fill: url(#bdim3); stroke: #9A3A30; } .bi.k3 .pt.out { fill: #1E0D0B; stroke: #9A3A30; stroke-opacity: .6; } .bi.k3 .glow { fill: url(#bglow3); } .bi.k3 .body { fill: #E8473A; fill-opacity: .04; }
 .bi.full { animation: ringflash .9s steps(3); }   /* a color all right: its ball flashes */
 @keyframes ringflash { 0%, 66% { filter: drop-shadow(0 0 4px #fff) brightness(1.5); } }
 .balls { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: center; width: 100%; column-gap: 5%; }
 .pitch .balls .ball { width: 100%; max-width: 92cqh; justify-self: center; }
 .balls .bi { display: block; width: 100%; height: auto; }
 .ball.goal .bi .sm, .ball.goal .bi .pt { stroke: var(--text); }
+.ball.goal .bi.k1 .pt { stroke: #7D8A84; }   /* the white ball lit whole keeps gray seams, so it still reads as a ball */
 .ball.goal .bi { filter: drop-shadow(0 0 4px #fff) drop-shadow(0 0 10px rgba(92,240,154,.9)); }
 .ball.goal { animation: bob .3s steps(2) 3; }
 .bi.mini .body { fill: currentColor; } .bi.mini .sm { stroke: var(--mp, #07130C); stroke-width: 4; } .bi.mini .pt, .bi.mini .pt.on { fill: var(--mp, #07130C); stroke: var(--mp, #07130C); stroke-width: 3; filter: none; } .bi.mini .pt.hx { fill: none; stroke: var(--mp, #07130C); stroke-width: 3; }   /* the hexagons' outlines are the seams */
@@ -386,6 +393,12 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   <pattern id="bred" width="2.6" height="2.6" patternUnits="userSpaceOnUse"><circle cx="1.3" cy="1.3" r="1" fill="#D52B1E"/></pattern>
   <pattern id="bdim" width="2.6" height="2.6" patternUnits="userSpaceOnUse"><circle cx="1.3" cy="1.3" r=".6" fill="#2C5A40"/></pattern>
   <radialGradient id="bglow" cx="0" cy="0" r="48" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#5CF09A" stop-opacity="0"/><stop offset=".72" stop-color="#5CF09A" stop-opacity=".04"/><stop offset="1" stop-color="#5CF09A" stop-opacity=".22"/></radialGradient>
+  <pattern id="bdim1" width="2.6" height="2.6" patternUnits="userSpaceOnUse"><circle cx="1.3" cy="1.3" r=".6" fill="#3A4440"/></pattern>
+  <radialGradient id="bglow1" cx="0" cy="0" r="48" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#F2F5F3" stop-opacity="0"/><stop offset=".72" stop-color="#F2F5F3" stop-opacity=".03"/><stop offset="1" stop-color="#F2F5F3" stop-opacity=".2"/></radialGradient>
+  <pattern id="bdim2" width="2.6" height="2.6" patternUnits="userSpaceOnUse"><circle cx="1.3" cy="1.3" r=".6" fill="#4A4020"/></pattern>
+  <radialGradient id="bglow2" cx="0" cy="0" r="48" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#F7C948" stop-opacity="0"/><stop offset=".72" stop-color="#F7C948" stop-opacity=".03"/><stop offset="1" stop-color="#F7C948" stop-opacity=".2"/></radialGradient>
+  <pattern id="bdim3" width="2.6" height="2.6" patternUnits="userSpaceOnUse"><circle cx="1.3" cy="1.3" r=".6" fill="#4A1E1A"/></pattern>
+  <radialGradient id="bglow3" cx="0" cy="0" r="48" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#E8473A" stop-opacity="0"/><stop offset=".72" stop-color="#E8473A" stop-opacity=".03"/><stop offset="1" stop-color="#E8473A" stop-opacity=".2"/></radialGradient>
   <radialGradient id="bshine" cx="-16" cy="-20" r="34" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#EAFBF0" stop-opacity=".16"/><stop offset="1" stop-color="#EAFBF0" stop-opacity="0"/></radialGradient>
   <pattern id="pdim" width="7" height="7" patternUnits="userSpaceOnUse"><circle cx="3.5" cy="3.5" r="1.7" fill="#2C5A40"/></pattern>
 </defs></svg>
@@ -542,11 +555,11 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   // res: the five cards' results (0 to play, 1 right, 2 missed). fresh: the panel just lit (it bumps). flash: the ball just filled
   function colorBall(d, res, fresh, flash, all) {
     var id = 'bc' + (++BI);
-    return '<svg class="bi' + (flash ? ' full' : '') + '" viewBox="-50 -50 100 100" aria-hidden="true"><defs><clipPath id="' + id + '"><circle r="48"/></clipPath></defs>' +
+    return '<svg class="bi k' + d + (flash ? ' full' : '') + '" viewBox="-50 -50 100 100" aria-hidden="true"><defs><clipPath id="' + id + '"><circle r="48"/></clipPath></defs>' +
       '<g clip-path="url(#' + id + ')"><circle class="body" r="48"/>' +
-      BALLG.rim.map(function (p) { return '<polygon class="pt hx rim' + (all ? ' on' : '') + '" points="' + p + '"/>'; }).join('') +
+      BALLG.rim.map(function (p) { return '<polygon class="pt hx rim c' + d + (all ? ' on' : '') + '" points="' + p + '"/>'; }).join('') +
       BALLG.panels.map(function (pn, k) {
-        var c = k === 15 ? ' core c' + d + ' on' : k < PER ? ' c' + d + (res[k] === 1 ? ' on' : res[k] === 2 ? ' out' : '') + (k === fresh ? ' new' : '') : all ? ' on' : '';
+        var c = k === 15 ? ' core c' + d + ' on' : k < PER ? ' c' + d + (res[k] === 1 ? ' on' : res[k] === 2 ? ' out' : '') + (k === fresh ? ' new' : '') : ' c' + d + (all ? ' on' : '');   // every panel in the ball's color, so 15/15 lights it whole in that color
         return '<polygon class="pt' + (pn.hx ? ' hx' : '') + c + '" points="' + pn.p + '"/>'; }).join('') +
       '<circle class="glow" r="48"/><circle class="shine" r="48"/></g></svg>';
   }
