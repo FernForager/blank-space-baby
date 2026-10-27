@@ -1,18 +1,20 @@
 """After main moves: play today's board on the live triviela.net, as a new phone in Seattle time.
 
-    python3 tools/livecheck.py
+    python3 tools/livecheck.py [REF]    # REF: the commit main points at, default origin/main
 
-Run it once triviela.net serves the new build. Checks the page is docs/index.html byte for byte (apart from Cloudflare’s visit counter), How to play opens on a
+Run it once triviela.net serves the new build. It checks against REF’s own files, so a branch ahead of main is no bother. Checks the page is its docs/index.html byte for byte (apart from Cloudflare’s visit counter), How to play opens on a
 first visit, today's board is the build's, Back works, the real site never shows Flag or Lock or calls the beta's services,
 a full day ends on the end screen with its grid, the share text is exact, and the result post is well formed. The post is
 caught here, so no row reaches the results table.
 """
-import asyncio, json, os, re, sys
+import asyncio, json, os, re, subprocess, sys
 from playwright.async_api import async_playwright
 from docsroute import route
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-BUILD = open(os.path.join(ROOT, 'docs', 'index.html')).read()
-TEXT = json.load(open(os.path.join(ROOT, 'build', 'text', 'en.json')))   # the share's own words
+REF = sys.argv[1] if len(sys.argv) > 1 else 'origin/main'
+show = lambda path: subprocess.run(['git', 'show', f'{REF}:{path}'], cwd=ROOT, capture_output=True, text=True, check=True).stdout
+BUILD = show('docs/index.html')
+TEXT = json.loads(show('build/text/en.json'))   # the share's own words
 fails = []
 def ok(cond, what):
     print(('ok    ' if cond else 'FAIL  ') + what)
@@ -66,6 +68,7 @@ async def main():
             await pg.click('#go'); await pg.wait_for_timeout(450)
         await pg.wait_for_timeout(1500); s = await state(pg)
         ok(await view(pg) == 'end' and s['res'].count(2) == 2 and s['res'].count(1) == 13, 'a full day ends on the end screen, 13 right and 2 missed')
+        print('      the countdown reads', await pg.evaluate("document.getElementById('clock').innerText.replace(/\\s+/g, ' ')"))   # before #1's date it runs to the night of #1's date
         ok(await pg.evaluate("document.querySelectorAll('.egrid .egh').length") == 3 and await pg.evaluate("document.querySelectorAll('.egrid .mk').length") == 15, 'the end grid has its three card headers and 15 marks')
         await pg.click('#share'); await pg.wait_for_timeout(400)
         clip = await pg.evaluate("navigator.clipboard.readText()")
