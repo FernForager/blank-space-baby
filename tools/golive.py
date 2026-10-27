@@ -2,14 +2,16 @@
 
     python3 tools/golive.py [REF]      # REF: the live build's commit, default origin/main
 
-1. Yesterday's, today's and tomorrow's boards (Seattle dates, which covers every time zone's today) deal the same 15 cards
-   with the same three choices in the same order. Later days only report a change: pinned boards change them on purpose.
+1. Yesterday's, today's and tomorrow's dates in Seattle (which covers every time zone's today) show the same puzzle, its
+   same 15 cards with the same three choices in the same order. Date by date, so moving #1's date shows up too. Later dates
+   only report a change: pinned boards change them on purpose.
 2. A day in progress on the live build (three cards played, a fourth open) opens on the new one with the same card and
    choices, Back works, and it plays to the end.
 3. A day finished on the live build reopens to its end screen with its results unchanged.
 Runs on the real clock in Seattle time.
 """
-import asyncio, json, os, subprocess, sys
+import asyncio, datetime, json, os, re, subprocess, sys
+from zoneinfo import ZoneInfo
 from playwright.async_api import async_playwright
 from docsroute import route
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -17,6 +19,8 @@ REF = sys.argv[1] if len(sys.argv) > 1 else 'origin/main'
 OLD = subprocess.run(['git', 'show', f'{REF}:docs/index.html'], cwd=ROOT, capture_output=True, text=True, check=True).stdout
 NEW = open(os.path.join(ROOT, 'docs', 'index.html')).read()
 DEAL = "d => TRIVIELA.deal(d).flat().map(c => [c.id, TRIVIELA.choices(c, d)])"   # a day's 15 cards and their choices
+def start(html): return datetime.date(*json.loads(re.search(r'START = (\[[^\]]+\])', html).group(1)))
+def number(first, date): return max(0, (date - first).days)   # the puzzle a build shows on a date: before #1's date, #1 plays early
 fails = []
 def ok(cond, what):
     print(('ok    ' if cond else 'FAIL  ') + what)
@@ -46,15 +50,21 @@ async def play(pg, i, right):   # tile i, right or wrong, then Next
 async def main():
     async with async_playwright() as p:
         b = await p.chromium.launch()
-        # 1. the boards being played somewhere right now
+        # 1. the boards being played somewhere right now, date by date
         c1, o = await page(b, OLD); c2, n = await page(b, NEW)
-        so, sn = await state(o), await state(n); d = sn['day']
-        print(f'-- {REF} (live) against docs/index.html, today #{d + 1} in Seattle')
-        ok(so['day'] == d and [(t['id'], t['ch']) for t in so['tiles']] == [(t['id'], t['ch']) for t in sn['tiles']], f'#{d + 1}, today: a fresh board is the same 15 cards with the same choices')
-        for k in [x for x in (d - 1, d + 1) if x >= 0]:
-            ok(await o.evaluate(f"({DEAL})({k})") == await n.evaluate(f"({DEAL})({k})"), f'#{k + 1}, {"yesterday" if k < d else "tomorrow"} somewhere: the same cards and choices')
-        changed = [k + 1 for k in range(d + 2, d + 8) if await o.evaluate(f"({DEAL})({k})") != await n.evaluate(f"({DEAL})({k})")]
-        print(f'      later days that change: {", ".join("#" + str(k) for k in changed) if changed else "none"}')
+        so, sn = await state(o), await state(n)
+        today, fo, fn = datetime.datetime.now(ZoneInfo('America/Los_Angeles')).date(), start(OLD), start(NEW)
+        board = lambda pg, k: pg.evaluate(f"({DEAL})({k})")
+        print(f'-- {REF} (live) against docs/index.html, {today:%b %-d} in Seattle')
+        ok(so['day'] == sn['day'] and [(t['id'], t['ch']) for t in so['tiles']] == [(t['id'], t['ch']) for t in sn['tiles']], f'today: a fresh board is the same #{sn["day"] + 1}, its cards and choices')
+        later = []
+        for off in (-1, 1, 2, 3, 4, 5, 6, 7):
+            date = today + datetime.timedelta(off); ko, kn = number(fo, date), number(fn, date)
+            same = ko == kn and await board(o, ko) == await board(n, kn)
+            what = f'#{kn + 1}, the same cards and choices' if same else f'#{ko + 1} becomes #{kn + 1}' if ko != kn else f'#{kn + 1} gets new cards or choices'
+            if off < 2: ok(same, f'{"yesterday" if off < 0 else "tomorrow"} somewhere ({date:%b %-d}): {what}')
+            elif not same: later.append(f'{date:%b %-d}: {what}')
+        print('      later dates that change: ' + ('. '.join(later) if later else 'none'))
         await c1.close(); await c2.close()
         # 2. a day in progress
         c1, o = await page(b, OLD)
