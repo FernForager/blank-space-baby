@@ -106,6 +106,17 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .bi.k2 .pt:not(.on) { fill: url(#bdim2); stroke: #9A7E2C; } .bi.k2 .glow { fill: url(#bglow2); } .bi.k2 .body { fill: #F7C948; fill-opacity: .04; }
 .bi.k3 .pt:not(.on) { fill: url(#bdim3); stroke: #9A3A30; } .bi.k3 .glow { fill: url(#bglow3); } .bi.k3 .body { fill: #E8473A; fill-opacity: .04; }
 .bi.full { animation: ringflash .9s steps(3); }   /* a color all right: its ball flashes */
+/* and its little moment (Morg, Oct 28, 2026: a cherry on top, with GOLAZO! still the peak): the ball spins once and pops, and a ring
+   of dots bursts from it in its color. On a perfect day the last ball's moment plays first, then GOLAZO! */
+.bi .spin { transform-box: view-box; transform-origin: 0 0; }   /* the view box starts at the drawing's 0 0, which is the ball's center */
+.bi.full .spin { animation: spin .8s cubic-bezier(.25, .8, .3, 1); }
+@keyframes spin { from { transform: rotate(-360deg); } }
+.ball.fill { container-type: inline-size; animation: pop .5s steps(4); }
+@keyframes pop { 40% { transform: scale(1.12); } }
+.sparks { position: absolute; inset: 0; pointer-events: none; }
+.sparks i { position: absolute; left: 50%; top: 50%; width: 5px; height: 5px; margin: -2.5px; border-radius: 1px; background: currentColor; box-shadow: 0 0 5px currentColor; opacity: 0; animation: spark .75s .1s steps(6) forwards; }
+.sparks.k1 { color: #5CF09A; } .sparks.k2 { color: #F7C948; } .sparks.k3 { color: #E8473A; }
+@keyframes spark { 0% { opacity: 1; transform: rotate(var(--a)) translateX(50cqw); } 100% { opacity: 0; transform: rotate(var(--a)) translateX(var(--r)) scale(.5); } }
 @keyframes ringflash { 0%, 66% { filter: drop-shadow(0 0 4px #fff) brightness(1.5); } }
 .balls { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: center; width: 100%; column-gap: 5%; }
 .pitch .balls .ball { width: 100%; max-width: 92cqh; justify-self: center; }
@@ -133,6 +144,13 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 #v-board { container-type: size; align-items: center; justify-content: center; }
 .pitch { position: relative; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; }
 .pitch .ball { width: min(100cqw, 100cqh); }   /* the ball fills the screen (Morg, Oct 17, 2026: the assembled ball is the payoff) */
+/* the screen hugs its balls (Morg, Oct 28, 2026: the screen around the balls a bit smaller). Its natural height is the balls plus
+   --hug above and below them (the balls are .3 of the screen's inner width, three columns with 5% gaps, and the cabinet, bezel and
+   screen pad that width by 80 px in all), and any room to spare goes two thirds to the cards and a third to the screen */
+.cab { --hug: 30px; }
+.cab[data-v="board"] .bezel { flex: 1 1 calc(.3 * (min(100vw, 420px) - 80px) + 2 * var(--hug) + 20px); }
+.cab[data-v="board"] .panel { flex: 2 1 auto; }
+.cab[data-v="board"] #p-board.tiles { flex: 1 1 auto; grid-template-rows: repeat(3, minmax(0, 1fr)); }
 /* below the cards, all day (Morg, Oct 28, 2026, in place of How to play): Pick a card in glowing screen letters, then the three card
    colors from easier to harder. They sit on the panel under the tiles, so the screen gives up their room and hugs the balls */
 .hint { flex-direction: column; align-items: center; gap: 8px; padding-top: 14px; }
@@ -281,7 +299,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   .choice { min-height: 50px; }   
   .tile { min-height: 62px; padding-left: 5px; padding-right: 5px; } .tile .tag { max-width: calc(100% - 28px); } #p-board.tiles { gap: 8px 7px; } .panel { padding: 10px 10px 13px; }
   .egrid { gap: 7px 8px; } }
-@media (prefers-reduced-motion: reduce) { #p-board.attract .tile:not(:disabled) { animation: none; } .key, .choice .def { transition: none; } .sb i.bump, .sb i.now, .choice.wrong, .flick, .blank, .go, .ball.goal, .bi .pt.new, .bi.full, .cab.poweron .marquee h1, .cab.poweron .marquee.dm canvas, .endrow .next svg, .pitch .shout { animation: none; } }
+@media (prefers-reduced-motion: reduce) { #p-board.attract .tile:not(:disabled) { animation: none; } .key, .choice .def { transition: none; } .sb i.bump, .sb i.now, .choice.wrong, .flick, .blank, .go, .ball.goal, .bi .pt.new, .bi.full, .bi.full .spin, .ball.fill, .sparks i, .cab.poweron .marquee h1, .cab.poweron .marquee.dm canvas, .endrow .next svg, .pitch .shout { animation: none; } }
 
 /* layout A (Oct 19, 2026): wider column gaps, a bigger menu key, no key that moves */
 /* the answer panel keeps its height for the card: room for two means lines is reserved, keys sit at the top, nothing moves when you answer */
@@ -313,7 +331,8 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .endrow .next.key, .endrow .again.key { background: var(--btn); flex: 1; height: auto; min-height: 52px; width: auto; color: var(--btn-ink); text-shadow: none; justify-content: center; opacity: 1; }
 .endrow .next.key svg, .endrow .again.key svg { filter: none; animation: none; }
 .endrow .again.key { gap: 10px; display: flex; align-items: center; }
-.endrow .clock { flex: 1 1 auto; }
+.endrow { flex-wrap: wrap; row-gap: 10px; }
+.endrow .next.key, .endrow .again.key { flex-basis: 100%; }   /* the demo's Play #2 and Play again take their own row under Review and Share board (Oct 28, 2026) */
 .thanks-s { margin: 0; color: var(--glow); text-shadow: 0 0 6px rgba(92,240,154,.6); }
 /* sheets: the menu and How to play rise from the bottom over the panel, like OP Hiker's pack and menu */
 /* the 104 lock (Morg, Oct 19, 2026, after OP Hiker's): the cabinet is the lock. The screen shows three code slots and the panel
@@ -372,10 +391,8 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .tile.done, .tile.miss { justify-content: center; padding-top: 4px; padding-bottom: 4px; }   /* a played tile's ball or ✕ sits in its middle (Morg, Oct 26, 2026: it hung at the top under the tag's band) */
 /* Share board, beside the countdown */
 .endrow .sboard { flex: 1; min-height: 52px; display: flex; align-items: center; justify-content: center; gap: 8px; }
-.endrow:has(> .clock:not([hidden])) > .sboard { flex: 1 1 auto; }   /* beside the countdown it sizes from its words, so it wraps only when the row can't hold it. The demo's keys still share the row evenly */
 .endrow .sboard svg { flex: none; }
 @media (max-width: 360px) { .endrow .again.key svg { display: none; } }
-@media (max-width: 389px) { .endrow:has(> .clock:not([hidden])) > .sboard svg { display: none; } }   /* below the iPhone 17's width the key gives its icon's room to the words, and on the smallest phones they take two lines, so the row stays inside the panel */
 @media (max-height: 640px) { .endrow .sboard { min-height: 48px; } }
 .bimg { position: fixed; inset: 0; z-index: 60; background: rgba(7,19,12,.92); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; padding: 18px; }
 .bimg[hidden] { display: none; }
@@ -385,13 +402,25 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .clock .clk-l { display: block; margin-bottom: 4px; color: var(--dim); text-shadow: none; }
 .egrid button.em { border: 0; padding: 0; margin: 0; background: none; color: inherit; font: inherit; cursor: pointer; -webkit-tap-highlight-color: transparent; }
 .egrid button.em:active { transform: translateY(1px); }
-.rhint { margin: -2cqh 0 0; color: var(--dim); }
-#v-end:has(.thanks-s) .rhint { display: none; }   /* the demo's last board has its thank-you there instead */
+#v-end .clock { margin: -2cqh 0 0; text-align: center; }   /* the real daily's countdown, under the score (Oct 28, 2026: the panel's row holds Review and Share board) */
+#v-end .clock[hidden] { display: none; }
+@media (max-height: 640px) { #v-end:has(.thanks-s) { gap: 3cqh; } }   /* the demo's last board on the smallest phones: its thank-you, grid and score fit over the two rows of keys */
+.sl { display: inline-block; margin-right: .125em; }   /* the score's own slash, a glyph's width with its right bearing, raised the empty pixel row the arcade face leaves under its digits */
+.sl svg { display: inline-block; vertical-align: .125em; filter: drop-shadow(0 0 2px rgba(255,255,255,.6)) drop-shadow(0 0 6px rgba(92,240,154,.6)); }
+.endrow .rvkey { flex: 1; min-height: 52px; display: flex; align-items: center; justify-content: center; gap: 8px; }
+.endrow .rvkey svg { flex: none; }
+.rvk { display: none; }
+#p-end.rv-on .endrow > * { display: none; }
+#p-end.rv-on .endrow > .rvk { display: flex; align-items: center; justify-content: center; min-height: 52px; }
+#r-prev, #r-next { flex: none; width: 64px; }
+.rvk.rv-exit { flex: 1; }
+.rvk:disabled { opacity: .35; }
+@media (max-height: 640px) { .endrow .rvkey, #p-end.rv-on .endrow > .rvk { min-height: 48px; } }
+@media (max-width: 359px) { .endrow .sboard svg, .endrow .rvkey svg { display: none; } }   /* the smallest phones: the two keys give their icons' room to the words */
 #v-end.review { justify-content: flex-start; align-items: stretch; gap: 0; cursor: pointer; }
 .rv { flex: 1; min-height: 0; display: flex; flex-direction: column; }
 .rv-top { flex: none; height: 27px; margin: 0; display: flex; align-items: center; gap: 9px; color: var(--dim); }
 .rv-face { flex: 1; min-height: 0; display: flex; flex-direction: column; justify-content: center; gap: 12px; }
-.rv-hint { flex: none; margin: 0; color: var(--dim); }
 /*__TYPE__*/
 </style>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
@@ -434,7 +463,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     <div class="pv" id="p-gate"></div>
     <div class="pv choices" id="choices"></div>
     <div class="gorow" id="g-play"><button class="bk flag" id="b-flag" type="button" hidden></button><button class="key go gokey wait" id="go" type="button" tabindex="-1" data-t-label="play.next"></button><button class="bk lock" id="b-lock" type="button" hidden></button></div>
-    <div class="pv" id="p-end"><button class="key share" id="share" type="button"><span class="txt"><span class="stop"><span id="share-top"></span><span class="mark"><span class="sg-l" data-t="end.sgrid"></span><span id="share-mark"></span></span></span><span id="share-txt"></span></span></button><div class="endrow"><button class="bk flag" id="e-flag" type="button" hidden></button><button class="key sboard" id="sboard" type="button"></button><div class="clock" id="clock"></div><button class="next key" id="e-next" type="button" hidden></button><button class="again key" id="e-again" type="button" hidden></button><button class="bk lock" id="e-lock" type="button" hidden></button></div></div>
+    <div class="pv" id="p-end"><button class="key share" id="share" type="button"><span class="txt"><span class="stop"><span id="share-top"></span><span class="mark"><span class="sg-l" data-t="end.sgrid"></span><span id="share-mark"></span></span></span><span id="share-txt"></span></span></button><div class="endrow"><button class="bk flag" id="e-flag" type="button" hidden></button><button class="key rvkey" id="e-review" type="button"></button><button class="key sboard" id="sboard" type="button"></button><button class="next key" id="e-next" type="button" hidden></button><button class="again key" id="e-again" type="button" hidden></button><button class="key rvk" id="r-prev" type="button"></button><button class="key rvk rv-exit" id="r-exit" type="button"></button><button class="key rvk" id="r-next" type="button"></button><button class="bk lock" id="e-lock" type="button" hidden></button></div></div>
   </div>
 </div>
 <div class="bimg" id="bimg" hidden><img id="bimg-i" data-t-alt="image.alt"><button class="key" id="bimg-x" type="button" data-t="image.close"></button></div>
@@ -471,13 +500,11 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     // color sprites: K ink, W white
     ball:  ['...KKKKK...','.KKWWWWWKK.','.KWWWKWWWK.','KWWWKKKWWWK','KKWWKKKWWKK','KWKWWWWWKWK','KWWKWWWKWWK','KWWKKWKKWWK','.KWKKWKKWK.','.KKWWWWWKK.','...KKKKK...'],
     next:  ['...#...','...##..','######.','#######','######.','...##..','...#...'],
-    // the pixel ball and its ✕ (Morg, Oct 28, 2026: the old ones looked janky): the ball drawn from the game's own ball, its
-    // pentagons ink wherever they fall on a 19-pixel grid, the heart a pentagon pointing up at the top patch, outlined in ink, and
-    // a red ✕ on a 17-pixel grid with the same outline. pball on cream (the Share board picture), sball on the dark screen (the
-    // end grid, a card again, the sign). Played tiles show the top ball itself, in black and white (bwBall)
-    pball: ['.......KKKKK.......','.....KKWKKKWKK.....','...KKWWKKKKKWWKK...','..KKWWWWWKWWWWWKK..','..KWWWWWWWWWWWWWK..','.KKKWWWWWWWWWWWKKK.','.KKKWWWWWWWWWWWKKK.','KKKKWWWWWKWWWWWKKKK','KKKWWWWWKKKWWWWWKKK','KKKWWWWKKKKKWWWWKKK','KWWWWWWKKKKKWWWWWWK','KWWWWWWWKKKWWWWWWWK','.KWWWWWWWWWWWWWWWK.','.KWWWWWWWWWWWWWWWK.','..KKKKWWWWWWWKKKK..','..KKKKKWWWWWKKKKK..','...KKKKKWWWKKKKK...','.....KKWWWWWKK.....','.......KKKKK.......'],
-    sball: ['.......#####.......','.....##W...W##.....','...##WW.....WW##...','..#.WWWWW.WWWWW.#..','..#WWWWWWWWWWWWW#..','.#..WWWWWWWWWWW..#.','.#..WWWWWWWWWWW..#.','#...WWWWW.WWWWW...#','#..WWWWW...WWWWW..#','#..WWWW.....WWWW..#','#WWWWWW.....WWWWWW#','#WWWWWWW...WWWWWWW#','.#WWWWWWWWWWWWWWW#.','.#WWWWWWWWWWWWWWW#.','..#...WWWWWWW...#..','..#....WWWWW....#..','...##...WWW...##...','.....##WWWWW##.....','.......#####.......'],   // the same ball for text on the dark screens: its outline in the text's own color, its patches the screen showing through
-    pmiss: ['.KK...........KK.','KRRK.........KRRK','KRRRK.......KRRRK','.KRRRK.....KRRRK.','..KRRRK...KRRRK..','...KRRRK.KRRRK...','....KRRRKRRRK....','.....KRRRRRK.....','......KRRRK......','.....KRRRRRK.....','....KRRRKRRRK....','...KRRRK.KRRRK...','..KRRRK...KRRRK..','.KRRRK.....KRRRK.','KRRRK.......KRRRK','KRRK.........KRRK','.KK...........KK.'],
+    slash: ['......##','.....##.','....##..','...##...','..##....','.##.....','##......'],   // the score's slash, as thick as the arcade digits
+    // the pixel ball (Morg, Oct 28, 2026), drawn from the game's own ball on a 19-pixel grid, the heart a pentagon pointing up at the
+    // top patch: only the sign's line uses it now, as the ⚽ in “Daily ⚽ trivia shootout”, its outline in the text's own color and its
+    // patches the sign showing through. Everywhere else a result is the played tile's own smooth ball or ✕ (bwBall, bwMiss)
+    sball: ['.......#####.......','.....##W...W##.....','...##WW.....WW##...','..#.WWWWW.WWWWW.#..','..#WWWWWWWWWWWWW#..','.#..WWWWWWWWWWW..#.','.#..WWWWWWWWWWW..#.','#...WWWWW.WWWWW...#','#..WWWWW...WWWWW..#','#..WWWW.....WWWW..#','#WWWWWW.....WWWWWW#','#WWWWWWW...WWWWWWW#','.#WWWWWWWWWWWWWWW#.','.#WWWWWWWWWWWWWWW#.','..#...WWWWWWW...#..','..#....WWWWW....#..','...##...WWW...##...','.....##WWWWW##.....','.......#####.......'],
     back:  ['...#...','..##...','.######','#######','.######','..##...','...#...'],
     ok:    ['......#','.....##','#...##.','##.##..','.###...','..#....'],
     no:    ['##...##','###.###','.#####.','..###..','.#####.','###.###','##...##'],
@@ -560,26 +587,26 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   function colorBall(d, res, fresh, flash, all) {
     var id = 'bc' + (++BI), n = res.filter(function (v) { return v === 1; }).length;
     return '<svg class="bi k' + d + (flash ? ' full' : '') + '" viewBox="-50 -50 100 100" aria-hidden="true"><defs><clipPath id="' + id + '"><circle r="48"/></clipPath></defs>' +
-      '<g clip-path="url(#' + id + ')"><circle class="body" r="48"/>' +
+      '<g clip-path="url(#' + id + ')"><circle class="body" r="48"/><g class="spin">' +
       BALLG.rim.map(function (p) { return '<polygon class="pt hx rim c' + d + (all ? ' on' : '') + '" points="' + p + '"/>'; }).join('') +
       BALLG.panels.map(function (pn, k) {
         var st = stage(k), c = (k === 15 ? ' core' : '') + ' c' + d + (st <= n ? ' on' : '') + (fresh && st === n ? ' new' : '');
         return '<polygon class="pt' + (pn.hx ? ' hx' : '') + c + '" points="' + pn.p + '"/>'; }).join('') +
-      '<circle class="glow" r="48"/><circle class="shine" r="48"/></g></svg>';
+      '</g><circle class="glow" r="48"/><circle class="shine" r="48"/></g></svg>';
   }
   // a played tile's marks (Morg, Oct 28, 2026: "why not just use our ball from the top but black and white"): the top ball's own
   // drawing, white hexagons and ink pentagons with ink seams, a soft shade toward the rim, outlined in ink, and a smooth red ✕ in
   // the same ink outline to match it. The drawing shrinks to .95 so the ball's whole front shows: cut at 72° like the top ball,
   // the outer pentagons ran into the outline and the hexagons between them were hairlines
-  function bwBall() {
+  function bwBall(size, cls) {   // size in px, or none for the tile's own
     var id = 'bw' + (++BI);
-    return '<svg class="res bw" viewBox="-50 -50 100 100" aria-hidden="true"><defs><clipPath id="' + id + '"><circle r="48"/></clipPath>' +
+    return '<svg class="res bw' + (cls ? ' ' + cls : '') + '" viewBox="-50 -50 100 100"' + (size ? ' style="width:' + size + 'px;height:' + size + 'px"' : '') + ' aria-hidden="true"><defs><clipPath id="' + id + '"><circle r="48"/></clipPath>' +
       '<radialGradient id="' + id + 's" gradientUnits="userSpaceOnUse" cx="-16" cy="-18" r="74"><stop offset=".55" stop-color="#1E2A3B" stop-opacity="0"/><stop offset="1" stop-color="#1E2A3B" stop-opacity=".3"/></radialGradient></defs>' +
       '<g clip-path="url(#' + id + ')"><circle r="48" fill="#fff"/><g transform="scale(.95)">' + BALLG.rim.map(function (q) { return '<polygon class="h" points="' + q + '"/>'; }).join('') +
       BALLG.panels.map(function (pn) { return '<polygon class="' + (pn.hx ? 'h' : 'p') + '" points="' + pn.p + '"/>'; }).join('') +
       '</g><circle r="48" fill="url(#' + id + 's)"/></g><circle r="46.8" fill="none" stroke="#1E2A3B" stroke-width="2.4"/></svg>';
   }
-  function bwMiss() { var d = 'M24 24L76 76M76 24L24 76'; return '<svg class="res bwx" viewBox="0 0 100 100" aria-hidden="true"><path d="' + d + '" stroke="#1E2A3B" stroke-width="27" stroke-linecap="round"/><path d="' + d + '" stroke="#FF5A5F" stroke-width="17" stroke-linecap="round"/></svg>'; }
+  function bwMiss(size, cls) { var d = 'M24 24L76 76M76 24L24 76'; return '<svg class="res bwx' + (cls ? ' ' + cls : '') + '" viewBox="0 0 100 100"' + (size ? ' style="width:' + size + 'px;height:' + size + 'px"' : '') + ' aria-hidden="true"><path d="' + d + '" stroke="#1E2A3B" stroke-width="27" stroke-linecap="round"/><path d="' + d + '" stroke="#FF5A5F" stroke-width="17" stroke-linecap="round"/></svg>'; }
   // the mark for a right answer: the ball is one icon, so it's the same drawing, small and solid (checked at 11 px at 3×: it still reads as a ball)
   function ballMark(size, cls) { return ballSvg(size, 'mark' + (cls ? ' ' + cls : ''), true); }
   function ballSvg(size, cls, on) { return ballIcon(0, 'mini' + (on ? ' lit' : '') + (cls ? ' ' + cls : '')).replace('<svg ', '<svg style="width:' + size + 'px;height:' + size + 'px" '); }   // a solid little ball
@@ -843,8 +870,12 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   function ballHTML(n, fresh) {   // fresh: the tile just answered right, so its ball's newly lit part bumps and a full ball flashes
     var f = fresh != null ? S.tiles[fresh] : null;
     return '<div class="balls">' + [1, 2, 3].map(function (d) {
-      var r = results(d), mine = f && f.d === d;
-      return '<div class="ball" id="ball' + d + '">' + colorBall(d, r, !!mine, mine && r.every(function (v) { return v === 1; }), n >= ALLN) + '</div>'; }).join('') + '</div>';
+      var r = results(d), mine = f && f.d === d, full = mine && r.every(function (v) { return v === 1; });
+      return '<div class="ball' + (full ? ' fill' : '') + '" id="ball' + d + '">' + colorBall(d, r, !!mine, full, n >= ALLN) + (full && motion() ? sparks(d) : '') + '</div>'; }).join('') + '</div>';
+  }
+  function sparks(d) {   // the dots that burst from a ball as it fills, every 30°, the odd ones a little shorter
+    for (var h = '', k = 0; k < 12; k++) h += '<i style="--a:' + (k * 30 + 15) + 'deg;--r:' + (k % 2 ? 62 : 76) + 'cqw"></i>';
+    return '<span class="sparks k' + d + '" aria-hidden="true">' + h + '</span>';
   }
   var TAG = { basics: 'basics', rules: 'rules', soccer: 'lingo', 'lingo-more': 'lingo', alpha: 'slang', parents: 'slang', epl: 'epl', 'epl-more': 'epl',
     mls: 'mls', nwsl: 'nwsl', ucl: 'ucl', wc26: 'wc26', laliga: 'laliga', seriea: 'seriea', ligue1: 'ligue1', ligamx: 'ligamx', bundesliga: 'bundesliga',
@@ -852,10 +883,9 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   function tagId(T) { var k = TAG[(T.id || '').split(':')[0]]; return k ? 'tag.' + k : ''; }
   function tagOf(T) { return tagId(T) ? tx(tagId(T)) : ''; }
   function rcard(d, cls) { return '<i class="rcard c' + d + (cls ? ' ' + cls : '') + '"></i>'; }   // a referee's card in its color
-  function pxu(size, n) { var d = window.devicePixelRatio || 1; return Math.max(1, Math.round(size / n * d)) / d; }   // CSS px per sprite pixel, so an n-pixel sprite comes out near size px on whole screen dots
-  // a result in the grids (Morg, Oct 26, 2026): our pixel ball for a right answer and the red pixel ✕ for a miss, the same marks as the played tiles.
-  // On the dark screen the ball's outline takes the screen's text color
-  function mark(v, size, dark) { var n = SPR.sball.length, m = SPR.pmiss.length; return v === 1 ? svg(dark ? 'sball' : 'pball', pxu(size, n), 'mk', true) : svg('pmiss', pxu(size * m / n, m), 'mk', true); }
+  // a result in the grids and on a card again (Morg, Oct 28, 2026: the pixel balls were janky): the played tile's own marks, the top
+  // ball in black and white for a right answer and the smooth red ✕ for a miss, the ✕ a little smaller so the two weigh the same
+  function mark(v, size) { return v === 1 ? bwBall(size, 'mk') : bwMiss(Math.round(size * .88), 'mk'); }
   function spot(i) { var d = S.tiles[i].d, n = 0; for (var k = 0; k < i; k++) if (S.tiles[k].d === d) n++; return n; }   // a card's place in its color, 0 to 2
   function tileLabel(T, i) { var l = tx('tile.label', { hook: T.hook, tag: tagOf(T), color: tx('color.' + T.d) }); return S.res[i] ? tx(S.res[i] === 1 ? 'tile.right' : 'tile.missed', { label: l }) : l; }
   // a tile's words, two text boxes (Morg, Oct 28, 2026): its category on one line, and its hook on two lines at most, never a word
@@ -974,8 +1004,11 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
       }
       timer = setTimeout(end, motion() ? 2800 : 0);
     }
-    [].forEach.call(document.querySelectorAll('#v-board .ball'), function (b) { b.classList.add('goal'); });
-    timer = setTimeout(golazo, motion() ? 1100 : 0);
+    function glow() {   // then all three balls glow whole and bob, and the goal scene follows
+      [].forEach.call(document.querySelectorAll('#v-board .ball'), function (b) { b.classList.add('goal'); });
+      timer = setTimeout(golazo, motion() ? 1100 : 0);
+    }
+    timer = setTimeout(glow, motion() ? 900 : 0);   // first the last ball's own moment (Morg, Oct 28, 2026: GOLAZO! stays the peak)
     settle = function () { clearTimeout(timer); end(); };
   }
   // the goal: a still dot-matrix scene, like the LED boards of old arcade soccer (Morg, Oct 18, 2026): the goal and its net,
@@ -1015,6 +1048,9 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
       '\n' + scoreLine() + '\n' + tx('share.tagline') + '\n' + tx('share.site');   // the link last, so a phone shows its preview card
   }
   function score() { return tx('end.score', { n: chips(), all: ALLN }); }
+  // the arcade face draws / as a stair of loose single pixels, so beside its two-pixel digits it read as dots (Morg, Oct 28, 2026:
+  // janky). The score draws its own, two pixels thick, the real / kept for reading and copying
+  function slash(html) { return html.replace(/(<[^>]*>)|\//g, function (m, tag) { return tag || '<span class="sl"><span class="sr">/</span>' + svg('slash', 3) + '</span>'; }); }
   function scoreLine() { return chips() === ALLN ? GOLAZO : score(); }
   function end() {
     settle = null; report();
@@ -1022,12 +1058,12 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     var o = order(), cells = function (s) { var b = s === 3 ? 40 : s === 2 ? 32 : 26;   // every cell the ball's size, a little smaller on shorter phones (three rows since Oct 27, 2026, so the cells grew)
       return lines().map(function (line, j) { return line.map(function (v, y) {   // y the color, j the spot
         var k = y * PER + j;
-        return '<button type="button" class="em ' + (v === 1 ? 'ok' : 'no') + '" data-k="' + k + '" aria-label="' + esc(tileLabel(S.tiles[o[k]], o[k])) + '" style="width:' + b + 'px;height:' + b + 'px">' + mark(v, b - 1, true) + '</button>'; }).join(''); }).join(''); };
-    REV = -1;
+        return '<button type="button" class="em ' + (v === 1 ? 'ok' : 'no') + '" data-k="' + k + '" aria-label="' + esc(tileLabel(S.tiles[o[k]], o[k])) + '" style="width:' + b + 'px;height:' + b + 'px">' + mark(v, b - 2) + '</button>'; }).join(''); }).join(''); };
+    REV = -1; $('p-end').classList.remove('rv-on');
     $('v-end').className = 'view' + (top ? ' golazo' : '');
     $('v-end').innerHTML = '<div class="egrid" role="group" aria-label="' + esc(tx('end.grid', { rows: rows().map(function (row, y) { return tx('end.row', { color: tx('row.' + (y + 1)), n: row.filter(function (v) { return v === 1; }).length, all: PER }); }).join(', ') })) + '">' + cells(big) + '</div>' +
-      '<p class="score"' + (top ? ' data-tid="golazo" data-tplain="1"' : ' data-tid="end.score"' + tv({ n: n, all: ALLN })) + '>' + (top ? esc(GOLAZO) : num(esc(score()))) + '</p>' +
-      '<p class="rhint" data-tid="end.reviewHint">' + th('end.reviewHint') + '</p>';
+      '<p class="score"' + (top ? ' data-tid="golazo" data-tplain="1"' : ' data-tid="end.score"' + tv({ n: n, all: ALLN })) + '>' + (top ? esc(GOLAZO) : slash(num(esc(score())))) + '</p>' +
+      '<p class="clock" id="clock"' + (DEMO || ONE ? ' hidden' : '') + '></p>';   // the countdown, where the review hint was (Oct 28, 2026), so the panel's row holds Review and Share board
     $('share-top').innerHTML = th('share.title', { day: S.day + 1 }); $('share-top').dataset.tid = 'share.title'; $('share-top').dataset.tv = JSON.stringify({ day: S.day + 1 });
     $('share-txt').innerHTML = '<span class="sgrid se" aria-hidden="true">' + Array.from(HEAD).map(function (e) { return '<i>' + e + '</i>'; }).join('') + lines().map(function (l) { return l.map(function (v) { return '<i>' + (v === 1 ? '⚽' : '❌') + '</i>'; }).join(''); }).join('') + '</span>' +   // the grid as the text sends it, emoji and all (Morg, Oct 28, 2026)
       '<span data-tid="' + (chips() === ALLN ? 'golazo' : 'end.score') + '"' + tv({ n: chips(), all: ALLN }) + '>' + num(keep(esc(scoreLine()))) + '</span><span data-tid="share.tagline">' + th('share.tagline') + '</span><span data-tid="share.site">' + th('share.site') + '</span>';
@@ -1036,27 +1072,36 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     beta(null); view('end'); clearInterval(tick); endRow(); if (!DEMO && !ONE) tick = setInterval(clock, 1000);
   }
   // ---- your cards, again (Morg, Oct 26, 2026: a finished day should never feel like a dead end) ----
-  // tap a ball or card in the end grid and that card comes back on the screen, its answer filled in and its meaning under it.
-  // Each tap after shows the next card, row by row as in the grid, and after the last the grid comes back
+  // Review (Morg, Oct 28, 2026, in place of the line saying to tap a card) opens card one on the screen, its answer filled in and its
+  // meaning under it, and the panel's row turns into ◀ Exit ▶: the arrows step through the cards, green first, then yellow, then
+  // red, and Exit goes back to the grid. Tapping a mark in the grid still opens its card, and a tap on the screen still steps on
   var REV = -1;   // the card on the screen, by its place in the grid (0 to 8), or -1 for the grid itself
   function order() { var o = []; S.tiles.forEach(function (T, i) { o[(T.d - 1) * PER + spot(i)] = i; }); return o; }
   function review(k) {
     var o = order(); if (k >= o.length) return end();
     REV = k; var i = o[k], T = S.tiles[i], ok = S.res[i] === 1, more = k + 1 < o.length;
     $('v-end').className = 'view review';
-    $('v-end').innerHTML = '<div class="rv"><p class="rv-top">' + rcard(T.d) + mark(S.res[i], 16, true) +
+    $('v-end').innerHTML = '<div class="rv"><p class="rv-top">' + rcard(T.d) + mark(S.res[i], 18) +
       '<span data-tid="review.count"' + tv({ i: k + 1, all: o.length }) + '>' + th('review.count', { i: k + 1, all: o.length }) + '</span></p>' +
-      '<div class="rv-face"><p class="' + size(T) + (ok ? '' : ' missed') + '">' + sentence(T, true) + '</p><p class="means">' + num(keep(orph(esc(T.m)))) + '</p></div>' +
-      '<p class="rv-hint" data-tid="' + (more ? 'review.next' : 'review.back') + '">' + th(more ? 'review.next' : 'review.back') + '</p></div>';
+      '<div class="rv-face"><p class="' + size(T) + (ok ? '' : ' missed') + '">' + sentence(T, true) + '</p><p class="means">' + num(keep(orph(esc(T.m)))) + '</p></div></div>';
+    $('p-end').classList.add('rv-on'); $('r-prev').disabled = k === 0; $('r-next').disabled = !more;
     flick(); guard();
   }
+  $('e-review').innerHTML = '<span data-tid="end.review">' + th('end.review') + '</span>' + svg('next', 2);
+  $('e-review').addEventListener('click', function () { review(0); });
+  $('r-prev').innerHTML = svg('back', 3); $('r-prev').setAttribute('aria-label', tx('review.prevLabel')); $('r-prev').dataset.tLabel = 'review.prevLabel';
+  $('r-next').innerHTML = svg('next', 3); $('r-next').setAttribute('aria-label', tx('review.nextLabel')); $('r-next').dataset.tLabel = 'review.nextLabel';
+  $('r-exit').innerHTML = '<span data-tid="review.exit">' + th('review.exit') + '</span>';
+  $('r-prev').addEventListener('click', function () { if (REV > 0) review(REV - 1); });
+  $('r-next').addEventListener('click', function () { if (REV >= 0 && REV + 1 < S.tiles.length) review(REV + 1); });
+  $('r-exit').addEventListener('click', function () { end(); });
   $('v-end').addEventListener('click', function (e) {
     if (cab.dataset.v !== 'end') return;
     if (REV >= 0) return review(REV + 1);
     var b = e.target.closest('[data-k]'); if (b) review(+b.dataset.k); else if (e.target.closest('.egrid')) review(0);
   });
   function endRow() {   // after a finished board: the countdown to tomorrow's, or in the demo the next board and a way back to #1
-    if (Date.now() < holdClock) return;   // a beta message is showing in its place
+    if (Date.now() < holdClock || !$('clock')) return;   // a beta message is showing in its place, or a card is on the screen
     var last = !!DEMO && S.day >= DEMO - 1;
     $('e-again').hidden = !last;
     $('e-next').hidden = !DEMO || last; $('clock').hidden = !!DEMO && !last;
@@ -1122,7 +1167,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     var left = new Date(from.getFullYear(), from.getMonth(), from.getDate() + 1) - now;
     if (FIXED === null && today() !== S.day) { clearInterval(tick); S = load(); save(); return show(); }
     var s = Math.max(0, Math.floor(left / 1000)), pad = function (x) { return (x < 10 ? '0' : '') + x; };
-    if (Date.now() < holdClock) return;   // a beta message is showing in its place
+    if (Date.now() < holdClock || !$('clock')) return;   // a beta message is showing in its place, or a card is on the screen
     $('clock').innerHTML = '<span class="clk-l" data-tid="end.nextIn">' + th('end.nextIn') + '</span>' + pad(Math.floor(s / 3600)) + ':' + pad(Math.floor(s / 60) % 60) + ':' + pad(s % 60);
   }
   $('share').addEventListener('click', function () {
@@ -1140,7 +1185,12 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     g.strokeStyle = '#00843D'; g.lineWidth = 12; g.strokeRect(6, 6, W - 12, H - 12);
     g.textAlign = 'center'; g.textBaseline = 'alphabetic';
     g.font = '64px "Press Start 2P"'; g.fillStyle = '#5CF09A'; g.shadowColor = 'rgba(92,240,154,.7)'; g.shadowBlur = 18; g.fillText(tx('image.title'), W / 2, 124);
-    var n = chips(); g.shadowBlur = 0; g.font = '40px "Press Start 2P"'; g.fillStyle = '#FFFFFF'; g.fillText(tx('image.score', { day: S.day + 1, score: n === ALLN ? GOLAZO : score() }), W / 2, 200);
+    var n = chips(), sc = tx('image.score', { day: S.day + 1, score: n === ALLN ? GOLAZO : score() }).split('/'); g.shadowBlur = 0; g.font = '40px "Press Start 2P"'; g.fillStyle = '#FFFFFF';
+    var sw = sc.length > 1 ? 45 : 0, sx = W / 2 - (g.measureText(sc.join('')).width + sw * (sc.length - 1)) / 2, sy = 200 - g.measureText('0').actualBoundingBoxAscent;   // the score, with the game's own slash
+    g.textAlign = 'left'; sc.forEach(function (part, k) {
+      if (k) { SPR.slash.forEach(function (r, yy) { for (var xx = 0; xx < r.length; xx++) if (r[xx] === '#') g.fillRect(sx + xx * 5, sy + yy * 5, 5, 5); }); sx += sw; }
+      g.fillText(part, sx, 200); sx += g.measureText(part).width; });
+    g.textAlign = 'center';
     var CW = 300, CH = 262, GX = 24, GY = 30, X0 = (W - 3 * CW - 2 * GX) / 2, Y0 = 300, COLS = ['#45BE76', '#F7C948', '#D52B1E'];   // the board's shape: a column per color, three cards each (Oct 27, 2026)
     function runs(text, size) {   // Pixelify Sans, with its digits in the arcade face as in the game (Pixelify's 5 reads as an S)
       return String(text).split(/(\d+)/).filter(Boolean).map(function (r) { var f = /^\d/.test(r) ? (size * 8 / 11) + 'px "Press Start 2P"' : '600 ' + size + 'px "Pixelify Sans"'; g.font = f; return { r: r, f: f, w: g.measureText(r).width }; });
@@ -1151,6 +1201,22 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
       g.textAlign = 'left'; rs.forEach(function (q) { g.font = q.f; g.fillText(q.r, at, y + (/^\d/.test(q.r) ? size / 11 : 0)); at += q.w; }); g.textAlign = 'center';
     }
     function sprite(name, x, y, u) { SPR[name].forEach(function (r, yy) { for (var xx = 0; xx < r.length; xx++) { var ch = r[xx]; if (ch === '.') continue; g.fillStyle = PAL[ch] || '#EAFBF0'; g.fillRect(x + xx * u, y + yy * u, u, u); } }); }
+    function bwDraw(x, y, s, ok) {   // the played tile's marks on the canvas (Oct 28, 2026): the top ball in black and white, or the smooth red ✕
+      g.save(); g.translate(x + s / 2, y + s / 2); g.scale(s / 100, s / 100); g.lineJoin = 'round';
+      if (ok) {
+        g.save(); g.beginPath(); g.arc(0, 0, 48, 0, 2 * Math.PI); g.clip(); g.fillStyle = '#FFFFFF'; g.fill();
+        g.save(); g.scale(.95, .95); g.lineWidth = 2.2; g.strokeStyle = '#1E2A3B';
+        var poly = function (pts, fill) { g.beginPath(); pts.split(' ').forEach(function (q, k) { var c = q.split(','); if (k) g.lineTo(+c[0], +c[1]); else g.moveTo(+c[0], +c[1]); }); g.closePath(); g.fillStyle = fill; g.fill(); g.stroke(); };
+        BALLG.rim.forEach(function (q) { poly(q, '#FFFFFF'); }); BALLG.panels.forEach(function (pn) { poly(pn.p, pn.hx ? '#FFFFFF' : '#1E2A3B'); });
+        g.restore();
+        var sh = g.createRadialGradient(-16, -18, 0, -16, -18, 74); sh.addColorStop(.55, 'rgba(30,42,59,0)'); sh.addColorStop(1, 'rgba(30,42,59,.3)'); g.fillStyle = sh; g.fillRect(-50, -50, 100, 100);
+        g.restore(); g.beginPath(); g.arc(0, 0, 46.8, 0, 2 * Math.PI); g.lineWidth = 2.4; g.strokeStyle = '#1E2A3B'; g.stroke();
+      } else {
+        g.translate(-50, -50); g.lineCap = 'round';
+        [[27, '#1E2A3B'], [17, '#FF5A5F']].forEach(function (w) { g.beginPath(); g.moveTo(24, 24); g.lineTo(76, 76); g.moveTo(76, 24); g.lineTo(24, 76); g.lineWidth = w[0]; g.strokeStyle = w[1]; g.stroke(); });
+      }
+      g.restore();
+    }
     function rr(x, y, w, h, r) { g.beginPath(); g.moveTo(x + r, y); g.arcTo(x + w, y, x + w, y + h, r); g.arcTo(x + w, y + h, x, y + h, r); g.arcTo(x, y + h, x, y, r); g.arcTo(x, y, x + w, y, r); g.closePath(); }
     function card(x, y, w, h, d, rot) { g.save(); g.translate(x + w / 2, y + h / 2); g.rotate(rot || 0); rr(-w / 2, -h / 2, w, h, 4); g.fillStyle = COLS[d - 1]; g.fill();
       g.lineWidth = 2; g.strokeStyle = 'rgba(0,0,0,.25)'; g.stroke(); g.restore(); }
@@ -1164,8 +1230,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
       hw.forEach(function (w) { var tr = cur ? cur + ' ' + w : w; if (wide(tr, size) > CW - 28 && cur) { lines.push(cur); cur = w; } else cur = tr; }); lines.push(cur);
       lines = lines.slice(0, 3); lines.forEach(function (l, k) { words(l, x + CW / 2, y + 168 - (lines.length - 1) * size * .58 + k * size * 1.16, size); });   // 4 px to a font pixel, or 3.5 or 3 for a word too long for the card
       g.fillStyle = '#7C8A80'; words(tagOf(t).replace('\u00AD', ''), x + CW / 2, y + 52, 27.5);   // its category, quieter
-      var nm = S.res[i] === 1 ? 'pball' : 'pmiss', pu = 3, pw = SPR[nm].length * pu;
-      sprite(nm, x + CW - 18 - pw, y + 16 + (SPR.pball.length * pu - pw) / 2, pu);   // right or missed, in its corner: the board's own pixel marks
+      var ms = S.res[i] === 1 ? 60 : 53; bwDraw(x + CW - 18 - ms, y + 16 + (60 - ms) / 2, ms, S.res[i] === 1);   // right or missed, in its corner: the played tile's own marks
       card(x + 30, y + 21, 34, 48, t.d);   // and its color in the other corner (Oct 28, 2026: no headers over the columns)
     });
     g.font = '600 44px "Pixelify Sans"'; g.fillStyle = '#EAFBF0'; g.fillText(tx('share.site'), W / 2, H - 86);
@@ -1208,7 +1273,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   }
   function say(id) {   // a beta message, by its string id
     var text = tx(id);
-    if (where === 'end') { holdClock = Date.now() + 1600; $('clock').hidden = false; $('e-next').hidden = true; $('clock').classList.remove('thanks'); $('clock').textContent = text.toUpperCase(); setTimeout(endRow, 1650); return; }
+    if (where === 'end' && $('clock')) { holdClock = Date.now() + 1600; $('clock').hidden = false; $('e-next').hidden = true; $('clock').classList.remove('thanks'); $('clock').textContent = text.toUpperCase(); setTimeout(endRow, 1650); return; }
     var m = $('b-msg'); m.textContent = text; m.dataset.tid = id; m.dataset.tplain = 1; clearTimeout(say.t); say.t = setTimeout(function () { m.textContent = ''; }, 1600);
   }
   function flush() {   // send the queue in order: a refused mark is dropped, a network failure waits for the next try

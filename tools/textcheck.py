@@ -178,15 +178,13 @@ async def main():
                     await card(N - 2); await pg.click('#flip'); await pg.wait_for_timeout(1700)
                     await card(N - 1); await pg.click('#flip'); await pg.wait_for_timeout(250); await look('last card')
                     await pg.wait_for_timeout(1800); await look('end, all right but one')
-                    if PSEUDO: await pg.evaluate("document.querySelector('.egrid [data-k=\"0\"]').click()")   # longer text can crowd the grid under the sign: the check reports that and goes on
-                    else: await pg.click('.egrid [data-k="0"]')
-                    await pg.wait_for_timeout(420); await look('a card again')   # the grid opens each card again
-                    for _ in range(N - 1): await pg.click('#v-end'); await pg.wait_for_timeout(380)
-                    await look('the last card again'); await pg.click('#v-end'); await pg.wait_for_timeout(420)
+                    await pg.click('#e-review'); await pg.wait_for_timeout(420); await look('a card again')   # Review opens card one (Oct 28, 2026)
+                    for _ in range(N - 1): await pg.click('#r-next'); await pg.wait_for_timeout(420)
+                    await look('the last card again'); await pg.click('#r-exit'); await pg.wait_for_timeout(420)
                     await pg.click('#sboard'); await pg.wait_for_timeout(1200); await look('share board pop-up'); await pg.click('#bimg-x'); await pg.wait_for_timeout(400)
                     # a perfect day
                     await setday([1] * (N - 1) + [0], list(range(N - 1)))
-                    await card(N - 1); await pg.click('#flip'); await pg.wait_for_timeout(1500); await look('golazo')
+                    await card(N - 1); await pg.click('#flip'); await pg.wait_for_timeout(2400); await look('golazo')   # the last ball's own moment comes first
                     await pg.wait_for_timeout(3500); await look('end, golazo')
                     await pg.goto('http://bsb.test/?gate'); await pg.wait_for_timeout(1000)
                     for k in '999': await pg.click(f'[data-k="{k}"]')
