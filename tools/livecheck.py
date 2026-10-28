@@ -15,6 +15,7 @@ REF = sys.argv[1] if len(sys.argv) > 1 else 'origin/main'
 show = lambda path: subprocess.run(['git', 'show', f'{REF}:{path}'], cwd=ROOT, capture_output=True, text=True, check=True).stdout
 BUILD = show('docs/index.html')
 TEXT = json.loads(show('build/text/en.json'))   # the share's own words
+HEAD = re.search(r"var HEAD = '([^']+)'", BUILD).group(1)   # the share's header row: a card per column (🟩🟨🟥 since Oct 28, 2026)
 fails = []
 def ok(cond, what):
     print(('ok    ' if cond else 'FAIL  ') + what)
@@ -24,7 +25,7 @@ def expected(s, n):   # the share text for a saved day, the same as expected() i
     k = len(s['res']); cols = [[('⚽' if s['res'][i] == 1 else '❌') for i in range(k) if s['tiles'][i]['d'] == d] for d in (1, 2, 3)]
     rows = [''.join(cols[d][j] for d in range(3)) for j in range(k // 3)]
     right = sum(1 for r in s['res'] if r == 1)
-    return TEXT['share.title'].replace('{day}', str(n)) + '\n⬜🟨🟥\n' + '\n'.join(rows) + '\n' + ('GOLAZO!' if right == k else f'{right}/{k}') + '\n' + TEXT['share.tagline'] + '\n' + TEXT['share.site']
+    return TEXT['share.title'].replace('{day}', str(n)) + '\n' + HEAD + '\n' + '\n'.join(rows) + '\n' + ('GOLAZO!' if right == k else f'{right}/{k}') + '\n' + TEXT['share.tagline'] + '\n' + TEXT['share.site']
 
 state = lambda pg: pg.evaluate("JSON.parse(localStorage.getItem('bsb-daily'))")
 view = lambda pg: pg.evaluate("document.getElementById('cab').dataset.v")

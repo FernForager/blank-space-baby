@@ -5,7 +5,7 @@
 <style>
 /* The phone is the cabinet: marquee sign, CRT screen in a black bezel, push-buttons on a black control panel.
    The daily, as a shootout (Morg, Oct 19, 2026), nine cards since Oct 27, 2026: everyone gets the same 9 cards a day,
-   3 white (easy), 3 yellow card (medium) and 3 red card (hard), and plays all 9. Tap any tile. A right answer lights a ring
+   3 green (easy), 3 yellow card (medium) and 3 red card (hard), and plays all 9. Tap any tile. A right answer lights a ring
    of its color's ball, and 9 right light all three balls whole: GOLAZO! The board is the grid: the three balls on the
    screen, the 9 tiles as keys on the panel, one card color per column. */
 :root {
@@ -13,7 +13,7 @@
   --bezel: #0D0F0E; --screen: #07130C; --glow: #5CF09A; --text: #EAFBF0; --dim: #7FAF92; --gold: #F7C948;
   --btn: #F6F0E2; --btn-edge: #CBBFA4; --btn-ink: #1E2A3B;
   --ok: #45BE76; --ok-edge: #00843D; --no: #FF5A5F; --no-edge: #B02A35;
-  --c1: #FFFFFF; --c1-edge: #C9C2B4; --c2: #F7C948; --c2-edge: #B48A1C; --c3: #D52B1E; --c3-edge: #8C170F;   /* card colors: white, yellow card, red card */
+  --c1: #45BE76; --c1-edge: #00843D; --c2: #F7C948; --c2-edge: #B48A1C; --c3: #D52B1E; --c3-edge: #8C170F;   /* card colors: green (Morg, Oct 28, 2026: it was white, and green, yellow, red reads as easy to hard at a glance), yellow card, red card */
   --pixel: "Press Start 2P", ui-monospace, monospace;
   --body-font: "Pixelify Sans", ui-rounded, "SF Pro Rounded", system-ui, sans-serif;
   color-scheme: dark;
@@ -106,13 +106,13 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .bi .pt.on { fill: url(#bon); fill-opacity: 1; stroke: var(--text); filter: drop-shadow(0 0 1.5px rgba(92,240,154,.8)); }
 .bi .pt.new { animation: bump .45s steps(3); }
 /* the rings by color: a lit panel glows in its card's color, a missed one goes dark (Oct 26, 2026) */
+.bi .pt.c1.on { fill: url(#bgrn); stroke: var(--glow); }   /* green lights in the screen's own green */
 .bi .pt.c2.on { fill: url(#byel); stroke: #F7C948; filter: drop-shadow(0 0 1.5px rgba(247,201,72,.85)); }
 .bi .pt.c3.on { fill: url(#bred); stroke: #E8473A; filter: drop-shadow(0 0 1.5px rgba(213,43,30,.95)); }
 .bi .pt.out { fill: #07130C; fill-opacity: 1; stroke: #24432F; }
 /* each ball in its own card color (Morg, Oct 26, 2026: the old green on a yellow ball didn't make sense): dim dots and seams in its color
    still to play, bright where right, near black where missed, and its rim glows in its color */
-.bi.k1 .pt.on { filter: drop-shadow(0 0 1.5px rgba(242,245,243,.75)); }   /* the white ball glows white, not green */
-.bi.k1 .pt:not(.on):not(.out) { fill: url(#bdim1); stroke: #7D8A84; } .bi.k1 .pt.out { fill: #1A1F1D; stroke: #7D8A84; stroke-opacity: .6; } .bi.k1 .glow { fill: url(#bglow1); } .bi.k1 .body { fill: #F2F5F3; fill-opacity: .04; }
+.bi.k1 .pt:not(.on):not(.out) { fill: url(#bdim1); stroke: #3E7A57; } .bi.k1 .pt.out { fill: #0C1A12; stroke: #3E7A57; stroke-opacity: .6; } .bi.k1 .glow { fill: url(#bglow1); } .bi.k1 .body { fill: #5CF09A; fill-opacity: .04; }
 .bi.k2 .pt:not(.on):not(.out) { fill: url(#bdim2); stroke: #9A7E2C; } .bi.k2 .pt.out { fill: #1C190C; stroke: #9A7E2C; stroke-opacity: .6; } .bi.k2 .glow { fill: url(#bglow2); } .bi.k2 .body { fill: #F7C948; fill-opacity: .04; }
 .bi.k3 .pt:not(.on):not(.out) { fill: url(#bdim3); stroke: #9A3A30; } .bi.k3 .pt.out { fill: #1E0D0B; stroke: #9A3A30; stroke-opacity: .6; } .bi.k3 .glow { fill: url(#bglow3); } .bi.k3 .body { fill: #E8473A; fill-opacity: .04; }
 .bi.full { animation: ringflash .9s steps(3); }   /* a color all right: its ball flashes */
@@ -121,7 +121,6 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .pitch .balls .ball { width: 100%; max-width: 92cqh; justify-self: center; }
 .balls .bi { display: block; width: 100%; height: auto; }
 .ball.goal .bi .sm, .ball.goal .bi .pt { stroke: var(--text); }
-.ball.goal .bi.k1 .pt { stroke: #7D8A84; }   /* the white ball lit whole keeps gray seams, so it still reads as a ball */
 .ball.goal .bi { filter: drop-shadow(0 0 4px #fff) drop-shadow(0 0 10px rgba(92,240,154,.9)); }
 .ball.goal { animation: bob .3s steps(2) 3; }
 .bi.mini .body { fill: currentColor; } .bi.mini .sm { stroke: var(--mp, #07130C); stroke-width: 4; } .bi.mini .pt, .bi.mini .pt.on { fill: var(--mp, #07130C); stroke: var(--mp, #07130C); stroke-width: 3; filter: none; } .bi.mini .pt.hx { fill: none; stroke: var(--mp, #07130C); stroke-width: 3; }   /* the hexagons' outlines are the seams */
@@ -217,12 +216,12 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 /* the tiles: easy, medium and hard, one column each */
 #p-board.tiles { grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: repeat(3, auto); grid-auto-flow: column; gap: 10px 8px; padding-bottom: 4px; }   /* three cards a color (Oct 27, 2026), so three rows */
 .tile { position: relative; min-height: 80px; min-width: 0; padding: 4px 6px; display: flex; align-items: center; justify-content: center; border-radius: 10px; }
-/* every tile is a cream key like the answer buttons. A small referee's card in the corner marks its color: white, yellow or red
-   (Morg, Oct 26, 2026: white too, to match the white card a miss leaves in the grid. Easy tiles had none from Oct 16, when bold
-   tile colors took over the cabinet) */
+/* every tile is a cream key like the answer buttons. A small referee's card in the corner marks its color: green, yellow or red
+   (Morg, Oct 26, 2026: easy too, to match the grid's header. Easy tiles had none from Oct 16, when bold tile colors took over
+   the cabinet. Green since Oct 28, 2026, was white) */
 .tile { background: var(--btn); color: var(--btn-ink); box-shadow: 0 4px 0 var(--btn-edge), 0 6px 8px rgba(0,0,0,.25); padding-left: 7px; padding-right: 7px; }   /* the shootout's taller tiles give the hook a little more width instead */
 .tile.c1::after, .tile.c2::after, .tile.c3::after { content: ""; position: absolute; top: 5px; right: 6px; width: 7px; height: 10px; border-radius: 1.5px; box-shadow: 0 0 0 1px rgba(0,0,0,.18); }
-.tile.c1::after { background: var(--c1); box-shadow: 0 0 0 1px #B9B2A3; } .tile.c2::after { background: var(--c2); } .tile.c3::after { background: var(--c3); }
+.tile.c1::after { background: var(--c1); } .tile.c2::after { background: var(--c2); } .tile.c3::after { background: var(--c3); }
 .tile:active:not(:disabled) { transform: translateY(3px); box-shadow: 0 1px 0 rgba(0,0,0,.4); }
 .tile.done, .tile.miss { transform: translateY(3px); box-shadow: 0 1px 0 rgba(0,0,0,.4); background: rgba(246,240,226,.34); }
 /* an answered tile keeps its result: the game's pixel ball for a right answer, its pixel ✕ for a miss (shape, not just color) */
@@ -352,7 +351,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 
 /* brought back from beta-oct22 at Morg's pick (Oct 25, 2026): a referee's card for a miss, the category tag and Share board (streaks came out Oct 26) */
 .rcard { display: inline-block; flex: none; width: 13px; height: 18px; border-radius: 2px; box-shadow: 0 0 0 1px rgba(0,0,0,.2); }   /* a referee's card */
-.rcard.c1 { background: var(--c1); box-shadow: 0 0 0 1px #B9B2A3; } .rcard.c2 { background: var(--c2); } .rcard.c3 { background: var(--c3); }
+.rcard.c1 { background: var(--c1); } .rcard.c2 { background: var(--c2); } .rcard.c3 { background: var(--c3); }
 .egrid .em.no .rcard { box-shadow: 0 0 6px rgba(255,255,255,.25); }
 .sgrid .rcard { display: block; width: 8px; height: 11px; border-radius: 1.5px; }
 @media (max-height: 640px) { .sgrid { grid-template-columns: repeat(3, 10px); grid-auto-rows: 10px; gap: 2px 3px; } .sgrid .rcard { width: 7px; height: 10px; } }   /* the shortest phones: the share key stays short */
@@ -395,8 +394,9 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   <pattern id="bred" width="2.6" height="2.6" patternUnits="userSpaceOnUse"><circle cx="1.3" cy="1.3" r="1" fill="#D52B1E"/></pattern>
   <pattern id="bdim" width="2.6" height="2.6" patternUnits="userSpaceOnUse"><circle cx="1.3" cy="1.3" r=".6" fill="#2C5A40"/></pattern>
   <radialGradient id="bglow" cx="0" cy="0" r="48" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#5CF09A" stop-opacity="0"/><stop offset=".72" stop-color="#5CF09A" stop-opacity=".04"/><stop offset="1" stop-color="#5CF09A" stop-opacity=".22"/></radialGradient>
-  <pattern id="bdim1" width="2.6" height="2.6" patternUnits="userSpaceOnUse"><circle cx="1.3" cy="1.3" r=".6" fill="#3A4440"/></pattern>
-  <radialGradient id="bglow1" cx="0" cy="0" r="48" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#F2F5F3" stop-opacity="0"/><stop offset=".72" stop-color="#F2F5F3" stop-opacity=".03"/><stop offset="1" stop-color="#F2F5F3" stop-opacity=".2"/></radialGradient>
+  <pattern id="bgrn" width="2.6" height="2.6" patternUnits="userSpaceOnUse"><circle cx="1.3" cy="1.3" r="1" fill="#5CF09A"/></pattern>
+  <pattern id="bdim1" width="2.6" height="2.6" patternUnits="userSpaceOnUse"><circle cx="1.3" cy="1.3" r=".6" fill="#2C5A40"/></pattern>
+  <radialGradient id="bglow1" cx="0" cy="0" r="48" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#5CF09A" stop-opacity="0"/><stop offset=".72" stop-color="#5CF09A" stop-opacity=".03"/><stop offset="1" stop-color="#5CF09A" stop-opacity=".2"/></radialGradient>
   <pattern id="bdim2" width="2.6" height="2.6" patternUnits="userSpaceOnUse"><circle cx="1.3" cy="1.3" r=".6" fill="#4A4020"/></pattern>
   <radialGradient id="bglow2" cx="0" cy="0" r="48" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#F7C948" stop-opacity="0"/><stop offset=".72" stop-color="#F7C948" stop-opacity=".03"/><stop offset="1" stop-color="#F7C948" stop-opacity=".2"/></radialGradient>
   <pattern id="bdim3" width="2.6" height="2.6" patternUnits="userSpaceOnUse"><circle cx="1.3" cy="1.3" r=".6" fill="#4A1E1A"/></pattern>
@@ -550,7 +550,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
       '<circle class="glow" r="48"/><circle class="shine" r="48"/></g></svg>';
   }
   // three balls, one per card color (Morg, Oct 26, 2026: one ball lit in order meant nothing once you missed a card), each over its
-  // column of tiles: white, yellow, red. Each is a classic ball face, its center lit in its color from the start like a bingo free
+  // column of tiles: green, yellow, red. Each is a classic ball face, its center lit in its color from the start like a bingo free
   // space (Morg: black there read like a miss), and three rings of panels round it, one per card in its column, from the center
   // out (Oct 27, 2026: nine cards). A right answer lights its whole ring in its card's color, a miss leaves it black, and a color
   // all right lights its ball whole and flashes it. On 9/9 the slivers at the rim light too.
@@ -679,7 +679,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     }
     return lg < LEAGUE_MAX;
   }
-  // Morg's own boards (Oct 26, 2026: he curates #2 to #7 himself): build/boards.json pins a day's 9 cards in his order, white,
+  // Morg's own boards (Oct 26, 2026: he curates #2 to #7 himself): build/boards.json pins a day's 9 cards in his order, green,
   // yellow, red, three each, and the draw takes them as that day's deal, so later days still skip them. A pinned card that can't
   // play any more (flagged, out) leaves its spot to the draw
   var PIN = __PIN__, BYID = {}; ALL.forEach(function (c) { BYID[c.id] = c; });
@@ -884,7 +884,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     S.tiles.forEach(function (t, i) { r[t.d - 1].push(S.res[i] || 0); });
     return r;
   }
-  // the grid as the board lays it out (Morg, Oct 26, 2026: share it the board's way): a line per spot, each white, yellow, red
+  // the grid as the board lays it out (Morg, Oct 26, 2026: share it the board's way): a line per spot, each green, yellow, red
   // [[1, 2, 0], ...]: line j is the cards in spot j of each color's column
   function lines() { var r = rows(), out = []; for (var j = 0; j < PER; j++) out.push([r[0][j], r[1][j], r[2][j]]); return out; }
   function hud(bump) {   // the card's color, and the scoreboard: the card in play blinks in its row
@@ -976,7 +976,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   var tick;
   // the share: the board's shape, a column per color with its card on top as the header (Morg, Oct 26, 2026), every card in its spot,
   // ⚽ right and ❌ missed, then the score
-  var HEAD = '⬜🟨🟥';
+  var HEAD = '🟩🟨🟥';   // green, yellow, red (Oct 28, 2026: was ⬜)
   function shareText() {
     return tx('share.title', { day: S.day + 1 }) + '\n' + HEAD + '\n' + lines().map(function (l) { return l.map(function (v) { return v === 1 ? '⚽' : '❌'; }).join(''); }).join('\n') +
       '\n' + scoreLine() + '\n' + tx('share.tagline') + '\n' + tx('share.site');   // the link last, so a phone shows its preview card
@@ -1113,7 +1113,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     g.textAlign = 'center'; g.textBaseline = 'alphabetic';
     g.font = '64px "Press Start 2P"'; g.fillStyle = '#5CF09A'; g.shadowColor = 'rgba(92,240,154,.7)'; g.shadowBlur = 18; g.fillText(tx('image.title'), W / 2, 124);
     var n = chips(); g.shadowBlur = 0; g.font = '40px "Press Start 2P"'; g.fillStyle = '#FFFFFF'; g.fillText(tx('image.score', { day: S.day + 1, score: n === ALLN ? GOLAZO : score() }), W / 2, 200);
-    var CW = 300, CH = 262, GX = 24, GY = 30, X0 = (W - 3 * CW - 2 * GX) / 2, Y0 = 300, COLS = ['#FFFFFF', '#F7C948', '#D52B1E'];   // the board's shape: a column per color, three cards each (Oct 27, 2026)
+    var CW = 300, CH = 262, GX = 24, GY = 30, X0 = (W - 3 * CW - 2 * GX) / 2, Y0 = 300, COLS = ['#45BE76', '#F7C948', '#D52B1E'];   // the board's shape: a column per color, three cards each (Oct 27, 2026)
     function runs(text, size) {   // Pixelify Sans, with its digits in the arcade face as in the game (Pixelify's 5 reads as an S)
       return String(text).split(/(\d+)/).filter(Boolean).map(function (r) { var f = /^\d/.test(r) ? (size * 8 / 11) + 'px "Press Start 2P"' : '600 ' + size + 'px "Pixelify Sans"'; g.font = f; return { r: r, f: f, w: g.measureText(r).width }; });
     }
@@ -1125,7 +1125,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     function sprite(name, x, y, u) { SPR[name].forEach(function (r, yy) { for (var xx = 0; xx < r.length; xx++) { var ch = r[xx]; if (ch === '.') continue; g.fillStyle = PAL[ch] || '#EAFBF0'; g.fillRect(x + xx * u, y + yy * u, u, u); } }); }
     function rr(x, y, w, h, r) { g.beginPath(); g.moveTo(x + r, y); g.arcTo(x + w, y, x + w, y + h, r); g.arcTo(x + w, y + h, x, y + h, r); g.arcTo(x, y + h, x, y, r); g.arcTo(x, y, x + w, y, r); g.closePath(); }
     function card(x, y, w, h, d, rot) { g.save(); g.translate(x + w / 2, y + h / 2); g.rotate(rot || 0); rr(-w / 2, -h / 2, w, h, 4); g.fillStyle = COLS[d - 1]; g.fill();
-      g.lineWidth = 2; g.strokeStyle = d === 1 ? '#B9B2A3' : 'rgba(0,0,0,.25)'; g.stroke(); g.restore(); }
+      g.lineWidth = 2; g.strokeStyle = 'rgba(0,0,0,.25)'; g.stroke(); g.restore(); }
     S.tiles.forEach(function (t, i) {
       var row = spot(i), x = X0 + (t.d - 1) * (CW + GX), y = Y0 + row * (CH + GY);
       if (row === 0) card(x + CW / 2 - 17, Y0 - 70, 34, 48, t.d);   // the column's color, over it

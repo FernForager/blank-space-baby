@@ -20,7 +20,7 @@ DECKS = [('basics','Soccer 101 (new)'),('mls','MLS'),('nwsl','NWSL'),('intl-men'
 sys.path.insert(0, os.path.join(ROOT, 'build'))
 from build import wrong_pool as wrongs   # one set of rules for the wrong answers, shared with the build and tools/vet.py
 
-TILE = {1: ('#FFFFFF', '#1E2A3B', 'White tile (easy)'), 2: ('#F7C948', '#1E2A3B', 'Yellow card (medium)'), 3: ('#D52B1E', '#FFFFFF', 'Red card (hard)')}
+TILE = {1: ('#45BE76', '#1E2A3B', 'Green card (easy)'), 2: ('#F7C948', '#1E2A3B', 'Yellow card (medium)'), 3: ('#D52B1E', '#FFFFFF', 'Red card (hard)')}
 
 def hub_item(i, x, pool):
     shown = ' · '.join(pool[:8]) + (f' · and {len(pool) - 8} more' if len(pool) > 8 else '')

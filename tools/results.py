@@ -30,7 +30,7 @@ def main():
     if len(sys.argv) < 2: print(__doc__); sys.exit(1)
     R = [r for r in rows(sys.argv[1]) if r['host'] == 'real' or '--beta' in sys.argv]
     if not R: print('no finished boards yet'); return
-    C = cards(); COL = {1: 'white', 2: 'yellow', 3: 'red'}
+    C = cards(); COL = {1: 'green', 2: 'yellow', 3: 'red'}
     by_day = collections.defaultdict(list)
     for r in R: by_day[r['day']].append(r['score'])
     print(f'{len(R)} finished boards')
@@ -44,7 +44,7 @@ def main():
             col = COL.get(C.get(cid, (0,))[0], '?'); seen[col] += 1; seen[cid] += 1
             if v == '1': hit[col] += 1; hit[cid] += 1
             else: miss[cid] += 1
-    print('right by color: ' + ', '.join(f'{c} {100 * hit[c] / seen[c]:.0f}%' for c in ('white', 'yellow', 'red') if seen[c]))
+    print('right by color: ' + ', '.join(f'{c} {100 * hit[c] / seen[c]:.0f}%' for c in ('green', 'yellow', 'red') if seen[c]))
     print('first tap: ' + ', '.join(f'{c} {n}' for c, n in first.most_common()))
     worst = sorted((m for m in miss if seen[m] >= 3), key=lambda m: hit[m] / seen[m])[:10]
     if worst: print('missed most (3+ plays):')
