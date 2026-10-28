@@ -65,10 +65,10 @@ async def run(b, html, demo, one=False):
     state = lambda: pg.evaluate("JSON.parse(localStorage.getItem('bsb-daily'))")
     s = await state(); ok(s and s['day'] == 0, 'a fresh day is saved as soon as the board opens')
     # 0. no How to play: Pick a card under the balls, the wave until the first tap, and the menu only in the demo
-    first = await pg.evaluate("""({ intro: !!document.getElementById('intro'), pick: !!document.querySelector('#v-board .pick'), legend: document.querySelectorAll('#v-board .legend .rcard').length,
+    first = await pg.evaluate("""({ intro: !!document.getElementById('intro'), pick: !!document.querySelector('#p-hint .pick'), legend: document.querySelectorAll('#p-hint .legend .rcard').length,
         wave: document.getElementById('p-board').classList.contains('attract'), menu: !document.getElementById('menu-b').hidden,
         lit: document.querySelectorAll('#v-board .ball .pt.on').length })""")
-    ok(first == {'intro': False, 'pick': True, 'legend': 3, 'wave': True, 'menu': bool(demo), 'lit': 0}, f'a first visit opens on the board: no How to play, Pick a card and three colors under the balls, the wave on, no ball lit, the menu {"there" if demo else "gone"}: {first}')
+    ok(first == {'intro': False, 'pick': True, 'legend': 3, 'wave': True, 'menu': bool(demo), 'lit': 0}, f'a first visit opens on the board: no How to play, Pick a card and three colors below the cards, the wave on, no ball lit, the menu {"there" if demo else "gone"}: {first}')
     # 1. commit
     await pg.click('[data-i="3"]')
     v = await pg.evaluate("document.getElementById('cab').dataset.v")

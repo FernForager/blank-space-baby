@@ -134,18 +134,18 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 #v-board { container-type: size; align-items: center; justify-content: center; }
 .pitch { position: relative; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; }
 .pitch .ball { width: min(100cqw, 100cqh); }   /* the ball fills the screen (Morg, Oct 17, 2026: the assembled ball is the payoff) */
-/* under the balls, all day (Morg, Oct 28, 2026, in place of How to play): Pick a card inside an arrow that points down at the cards,
-   then the three card colors from easier to harder. The sign sizes to its words, and its point aims at the cards */
-#v-board { flex-direction: column; }
-#v-board .pitch { flex: 1 1 auto; min-height: 0; height: auto; }
-.hint { flex: none; display: flex; flex-direction: column; align-items: center; gap: 8px; padding-bottom: 4px; }
-.pick { position: relative; margin: 0 0 8px; padding: 6px 13px; border: 2px solid var(--glow); border-radius: 3px; background: #0D2618; color: var(--text); filter: drop-shadow(0 0 3px rgba(92,240,154,.5)); }
-.pick::after { content: ""; position: absolute; left: 50%; bottom: -9px; width: 12px; height: 12px; margin-left: -8px; transform: rotate(45deg); background: #0D2618; border: solid var(--glow); border-width: 0 2px 2px 0; }   /* the point: a square turned on its corner, its lower two sides drawn */
+/* below the cards, all day (Morg, Oct 28, 2026, in place of How to play): Pick a card in a sign that points up at the cards, then the
+   three card colors from easier to harder. They sit on the panel under the tiles, so the screen gives up their room and hugs the balls.
+   The sign sizes to its words */
+.hint { flex-direction: column; align-items: center; gap: 7px; padding-top: 16px; }
+.cab[data-v="board"] #p-hint { display: flex; }
+.pick { position: relative; margin: 0; padding: 6px 13px; border: 2px solid var(--glow); border-radius: 3px; background: #0D2618; color: var(--text); filter: drop-shadow(0 0 3px rgba(92,240,154,.5)); }
+.pick::after { content: ""; position: absolute; left: 50%; top: -9px; width: 12px; height: 12px; margin-left: -8px; transform: rotate(45deg); background: #0D2618; border: solid var(--glow); border-width: 2px 0 0 2px; }   /* the point: a square turned on its corner, its upper two sides drawn */
 .pick .pk-t { position: relative; z-index: 1; display: block; }
 .legend { margin: 0; display: flex; align-items: center; gap: 5px; color: var(--dim); }
 .legend .rcard { width: 9px; height: 13px; }
 .legend > span:first-child { margin-right: 3px; } .legend > span:last-child { margin-left: 3px; }
-@media (max-height: 640px) { .hint { gap: 5px; padding-bottom: 2px; } .pick { padding: 4px 10px; margin-bottom: 7px; } .pick::after { width: 10px; height: 10px; margin-left: -7px; bottom: -8px; } .legend .rcard { width: 8px; height: 11px; } }
+@media (max-height: 640px) { .hint { gap: 5px; padding-top: 13px; } .pick { padding: 4px 10px; } .pick::after { width: 10px; height: 10px; margin-left: -7px; top: -8px; } .legend .rcard { width: 8px; height: 11px; } }
 
 /* play */
 .hud { display: flex; justify-content: space-between; align-items: flex-start; flex: none; height: 27px; position: relative; z-index: 3; }
@@ -429,6 +429,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   <p class="tagline" id="tagline" data-t="board.slogan"></p>
   <div class="panel">
     <div class="pv tiles" id="p-board"></div>
+    <div class="pv hint" id="p-hint"></div>
     <div class="pv" id="p-gate"></div>
     <div class="pv choices" id="choices"></div>
     <div class="gorow" id="g-play"><button class="bk flag" id="b-flag" type="button" hidden></button><button class="key go gokey wait" id="go" type="button" tabindex="-1" data-t-label="play.next"></button><button class="bk lock" id="b-lock" type="button" hidden></button></div>
@@ -850,7 +851,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
       ' aria-label="' + esc(tileLabel(T, i)) + '">' + (S.res[i] ? (S.res[i] === 1 ? svg('pball', 2, 'res', true) : svg('pmiss', 2, 'res', true)) : face(T)) + '</button>';
   }
   function board(fresh) {   // fresh: the tile just answered right, so its panel bumps
-    $('v-board').innerHTML = '<div class="pitch">' + ballHTML(chips(), fresh) + '</div>' + (over() ? '' : hint());
+    $('v-board').innerHTML = '<div class="pitch">' + ballHTML(chips(), fresh) + '</div>'; $('p-hint').innerHTML = over() ? '' : hint();
     $('p-board').innerHTML = S.tiles.map(function (T, i) { return tileHTML(T, i); }).join(''); tighten($('p-board'));
     var idle = !S.tapped && !S.path.length && !over();   // the wave of light until the day's first tap
     $('p-board').classList.toggle('attract', idle);
@@ -858,10 +859,10 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     document.querySelectorAll('[data-i]').forEach(function (b) { b.addEventListener('click', function (e) { e.stopPropagation(); open(+b.dataset.i); }); });
     requestAnimationFrame(fitAll);
   }
-  function hint() {   // under the balls, all day (Morg, Oct 28, 2026): Pick a card in its arrow, then the colors from easier to harder
-    return '<div class="hint"><p class="pick"><span class="pk-t" data-tid="board.pick">' + th('board.pick') + '</span></p>' +
+  function hint() {   // below the cards, all day (Morg, Oct 28, 2026): Pick a card in its sign, then the colors from easier to harder
+    return '<p class="pick"><span class="pk-t" data-tid="board.pick">' + th('board.pick') + '</span></p>' +
       '<p class="legend" role="img" aria-label="' + esc(tx('board.legend')) + '"><span data-tid="board.easier">' + th('board.easier') + '</span>' + rcard(1) + rcard(2) + rcard(3) +
-      '<span data-tid="board.harder">' + th('board.harder') + '</span></p></div>';
+      '<span data-tid="board.harder">' + th('board.harder') + '</span></p>';
   }
   // shrink a hook that won't fit its tile on two lines, a half pixel at a time, but never below its slot's floor (the hook row's
   // "shrink" in slots.json): a hook too long even then is the card's to fix, and tools/tilecheck.py finds it first

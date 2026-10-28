@@ -3,8 +3,8 @@
 
   "subhead":       { "where": "The sign: the line under TRIVIELA", "sel": ".marquee.dm .subhead", "face": "arcade", "weight": 400, "size": 10.6667, "short": 8, "lh": 1, "track": 1.3333, "trackShort": 1, "nudge": ["0.125em", 0], "case": "upper", "lines": 1 },
   "slogan":        { "where": "The cabinet: between the screen and the cards, on the board", "sel": ".tagline", "face": "pixel", "size": 15, "short": 13, "lh": 1.2, "track": 0.2, "align": "center", "trim": true, "lines": 1 },
-  "pick":          { "where": "Board: Pick a card, inside the arrow under the balls", "sel": ".pick .pk-t", "face": "arcade", "weight": 400, "size": 10.6667, "short": 8, "lh": 1, "track": 1.3333, "trackShort": 1, "case": "upper", "align": "center", "lines": 1 },
-  "legend":        { "where": "Board: easier and harder, either side of the three card colors under Pick a card", "sel": ".legend > span", "size": 14, "short": 12, "lh": 1, "lines": 1 },
+  "pick":          { "where": "Board: Pick a card, in the sign below the cards", "sel": ".pick .pk-t", "face": "arcade", "weight": 400, "size": 10.6667, "short": 8, "lh": 1, "track": 1.3333, "trackShort": 1, "case": "upper", "align": "center", "lines": 1 },
+  "legend":        { "where": "Board: easier and harder, either side of the three card colors, below Pick a card", "sel": ".legend > span", "size": 14, "short": 12, "lh": 1, "lines": 1 },
 
   "tag":           { "where": "Board: a tile's category, over its hook", "sel": ".tile .tag", "size": 11, "lh": 1, "wrap": "line", "lines": 1, "fit": -0.67 },
   "hook":          { "where": "Board: a tile's hook, the word or name from its card", "sel": ".tile", "size": 19, "mid": 18, "short": 16, "lh": 1.04, "align": "center", "lines": 2, "shrink": 0.7 },

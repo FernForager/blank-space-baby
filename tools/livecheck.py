@@ -52,7 +52,7 @@ async def main():
         resp = await pg.goto('https://triviela.net/'); await pg.wait_for_timeout(1500)
         live = re.sub(r'<script[^>]*static\.cloudflareinsights\.com/beacon[^>]*>\s*</script>\n?', '', await resp.text())   # Cloudflare’s visit counter, added to pages browsers fetch
         ok(live == BUILD, 'triviela.net serves docs/index.html byte for byte, apart from Cloudflare’s visit counter')
-        ok(await pg.evaluate("!document.getElementById('intro') && !!document.querySelector('#v-board .pick') && document.getElementById('p-board').classList.contains('attract')"), 'a first visit opens on the board: Pick a card under the balls, the wave over the tiles, no How to play')
+        ok(await pg.evaluate("!document.getElementById('intro') && !!document.querySelector('#p-hint .pick') && document.getElementById('p-board').classList.contains('attract')"), 'a first visit opens on the board: Pick a card below the cards, the wave over the tiles, no How to play')
         s = await state(pg); n = s['day'] + 1
         ok([(t['id'], t['ch']) for t in s['tiles']] == [(t['id'], t['ch']) for t in want['tiles']], f'#{n} is the build’s board, its cards and choices')
         await pg.click('[data-i="7"]'); await pg.wait_for_timeout(500)
