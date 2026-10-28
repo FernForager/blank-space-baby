@@ -4,7 +4,7 @@
 
 For each size: board (a fresh day), q (a card open), win (a right answer),
 board3 (a ring lit on each ball), miss (a wrong answer), end (all right but one) and hat (a perfect day, GOLAZO!).
-The tiles come from the page: the first third white, then yellow, then red.
+The tiles come from the page: the first third green, then yellow, then red.
 Prints a line for any screen that scrolls or throws a JS error, the smallest hook font on each board,
 and any hook that still overflows its tile.
 Uses Playwright's Chromium. If Google Fonts can't load in the sandbox, install Press Start 2P and

@@ -95,14 +95,14 @@ async def run(b, html, demo, one=False):
     s = await state(); v = await pg.evaluate("document.getElementById('cab').dataset.v")
     rings = lambda: pg.evaluate("""[1, 2, 3].map(d => [...document.querySelectorAll('#ball' + d + ' .pt:not(.rim)')].map((e, k) => e.classList.contains('on') ? k : -1).filter(k => k >= 0))""")   # each ball's lit panels, 0 to 15
     lit = await rings()
-    ok(v == 'board' and s['res'][3] == 1 and lit == [[], [10, 11, 12, 13, 14], []], f'a right answer is saved at once, and after a reload its ball has its outer ring lit, nothing else: {lit}')
+    ok(v == 'board' and s['res'][3] == 1 and lit == [[], list(range(5, 15)), []], f'a right answer is saved at once, and after a reload its ball has its pentagons and outer ring lit, nothing else: {lit}')
     # the rest of the day: every tile is played, two of them wrong, and the right answer never takes one slot 3 times running
     slots = [s['tiles'][3]['ch'].index(next(c for c in s['tiles'][3]['ch'] if c['w'] == s['tiles'][3]['w']))]
     for i in [x for x in range(N) if x != 3]:
         ch = await answer(pg, i, i not in (PER + 2, 2 * PER + 1)); slots.append(ch)   # a yellow and a red missed
         if i == N - 2:   # one card to go: green all right, yellow 2 of 3, red 1 of 2 so far
             lit = await rings()
-            ok(lit == [list(range(16)), list(range(5, 15)), list(range(10, 15))], f'the balls fill from the rim in: 3 right lights a ball whole, 2 its outer ring and pentagons, 1 its outer ring ({[len(x) for x in lit]} panels)')
+            ok(lit == [list(range(16)), list(range(15)), list(range(5, 15))], f'the balls fill from the rim in: 3 right lights a ball whole, 2 all but its center, 1 its pentagons and outer ring ({[len(x) for x in lit]} panels)')
     ok(not any(slots[k] == slots[k + 1] == slots[k + 2] for k in range(len(slots) - 2)), f'the right answer never takes one slot 3 times running ({"".join(map(str, slots))})')
     # 3. a miss doesn't end the day: all the cards play, then the share is the grid, every card in its spot
     s = await state(); v = await pg.evaluate("document.getElementById('cab').dataset.v")

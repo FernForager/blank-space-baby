@@ -12,7 +12,7 @@
   "board.slogan": "How well do you know the beautiful game?",
   "@board.slogan": { "note": "Printed on the cabinet between the screen and the cards, on the board only. One line on every phone", "slot": "slogan" },
   "board.pick": "Pick a card",
-  "@board.pick": { "note": "Board: below the cards, inside the sign that points up at them. Shows all day (Morg, Oct 28, 2026, in place of How to play)", "slot": "pick" },
+  "@board.pick": { "note": "Board: below the cards, in glowing screen letters, over the line of card colors. Shows all day (Morg, Oct 28, 2026, in place of How to play)", "slot": "pick" },
   "board.easier": "easier",
   "@board.easier": { "note": "Board: under Pick a card, left of the three card colors", "slot": "legend" },
   "board.harder": "harder",
