@@ -2,17 +2,23 @@
 
     python3 tools/lifecycle.py [page.html]       # default docs/index.html
 
-Runs twice: as the real daily (DEMO 0) and as the playtest demo (DEMO_DAYS in build.py), whichever the page was built as.
+Runs three times, whichever way the page was built: as the real daily, as the daily with one fixed board (ONE_BOARD in
+build.py, Oct 28, 2026), and as the playtest demo (DEMO_DAYS in build.py).
+
+0. There is no How to play: the board opens with Pick a card and the colors under the balls, the wave of light runs over the
+   tiles until the first tap, and the menu shows only in the demo (Oct 28, 2026).
 
 1. A tapped tile opens its card: a reload reopens the same card with the same choices in the same order, and Back returns it
    to the board still to play, its choices in place when it opens again (Morg, Oct 26, 2026).
 2. A reload after a right answer keeps the chip, and the board shows it.
 3. A miss doesn't end the day: all the day's cards play (9 since Oct 27, 2026), and the share is the grid, exactly (checked
    through the clipboard).
-4. A finished day reopens to its result and can't be replayed, and How to play stops opening on its own.
-5. At local midnight the countdown runs out and a fresh board appears, numbered one higher.
-   In the demo there is no countdown and midnight changes nothing: Play #2 opens #2, the last board ends with a
-   thank-you that a reload keeps, and Play again from #1 goes back to #1.
+4. A finished day reopens to its result and can't be replayed.
+5. At local midnight the countdown runs out and a fresh board appears, numbered one higher. With one fixed board there is
+   no countdown and midnight changes nothing. In the demo there is no countdown and midnight changes nothing: Play #2
+   opens #2, the last board ends with a thank-you that a reload keeps, and Play again from #1 goes back to #1.
+7. The balls fill by right answers from the rim in: a color's first lights its outer ring, the second its pentagons, the
+   third the rest and the center, and nothing is lit before.
 6. The right answer never lands in the same slot three cards running.
 Runs on a fake clock set to 23:58 local time on puzzle #1's date.
 """
@@ -23,7 +29,7 @@ HTML = open(sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, 'docs', 'in
 START = json.loads(re.search(r'START = (\[[^\]]+\])', HTML).group(1))
 BUILT = int(re.search(r'DEMO = (\d+);', HTML).group(1))
 PER = int(re.search(r'var PER = (\d+)', HTML).group(1)); N = 3 * PER   # cards of each color, and a day's cards
-def as_demo(n): return re.sub(r'DEMO = \d+;', f'DEMO = {n};', HTML, count=1)
+def as_demo(n, one=False): return re.sub(r'var ONE = (true|false)', 'var ONE = ' + ('true' if one else 'false'), re.sub(r'DEMO = \d+;', f'DEMO = {n};', HTML, count=1), count=1)
 TEXT = json.load(open(os.path.join(ROOT, 'build', 'text', 'en.json')))   # the share's own words
 HEAD = re.search(r"var HEAD = '([^']+)'", HTML).group(1)   # the share's header row: a card per column (🟩🟨🟥 since Oct 28, 2026)
 fails = []
@@ -43,22 +49,26 @@ async def answer(pg, i, right):   # play tile i, right or wrong, then tap on. Re
 
 def expected(s, n):   # the share text for a saved day: the board's shape, every card in its spot, a miss as its card, then the score
     k = len(s['res']); cols = [[('⚽' if s['res'][i] == 1 else '❌') for i in range(k) if s['tiles'][i]['d'] == d] for d in (1, 2, 3)]
-    rows = [''.join(cols[d][j] for d in range(3)) for j in range(k // 3)]   # the board's shape: a line per spot, white, yellow, red
+    rows = [''.join(cols[d][j] for d in range(3)) for j in range(k // 3)]   # the board's shape: a line per spot, green, yellow, red
     right = sum(1 for r in s['res'] if r == 1)
     return TEXT['share.title'].replace('{day}', str(n)) + '\n' + HEAD + '\n' + '\n'.join(rows) + '\n' + ('GOLAZO!' if right == k else f'{right}/{k}') + '\n' + TEXT['share.tagline'] + '\n' + TEXT['share.site']
 
 
-async def run(b, html, demo):
-    print(f'-- as the {"demo, " + str(demo) + " boards" if demo else "real daily"}')
+async def run(b, html, demo, one=False):
+    print(f'-- as the {"demo, " + str(demo) + " boards" if demo else "real daily, one fixed board" if one else "real daily"}')
     ctx = await b.new_context(viewport={'width': 402, 'height': 744}, reduced_motion='reduce')
     await ctx.grant_permissions(['clipboard-read', 'clipboard-write'], origin='https://bsb.test')
     pg = await ctx.new_page(); errs = []; pg.on('pageerror', lambda e: errs.append(str(e)))
-    await pg.add_init_script("try { localStorage.setItem('bsb-intro-off', 'true') } catch (e) {}")   # skip the how-to-play screen
     await pg.clock.install(time=datetime.datetime(START[0], START[1], START[2], 23, 58, 0))
     await pg.route('https://bsb.test/**', lambda r: r.fulfill(body=html, content_type='text/html'))
     await pg.goto('https://bsb.test/'); await pg.wait_for_timeout(300)
     state = lambda: pg.evaluate("JSON.parse(localStorage.getItem('bsb-daily'))")
     s = await state(); ok(s and s['day'] == 0, 'a fresh day is saved as soon as the board opens')
+    # 0. no How to play: Pick a card under the balls, the wave until the first tap, and the menu only in the demo
+    first = await pg.evaluate("""({ intro: !!document.getElementById('intro'), pick: !!document.querySelector('#v-board .pick'), legend: document.querySelectorAll('#v-board .legend .rcard').length,
+        wave: document.getElementById('p-board').classList.contains('attract'), menu: !document.getElementById('menu-b').hidden,
+        lit: document.querySelectorAll('#v-board .ball .pt.on').length })""")
+    ok(first == {'intro': False, 'pick': True, 'legend': 3, 'wave': True, 'menu': bool(demo), 'lit': 0}, f'a first visit opens on the board: no How to play, Pick a card and three colors under the balls, the wave on, no ball lit, the menu {"there" if demo else "gone"}: {first}')
     # 1. commit
     await pg.click('[data-i="3"]')
     v = await pg.evaluate("document.getElementById('cab').dataset.v")
@@ -73,6 +83,7 @@ async def run(b, html, demo):
     s = await state(); v = await pg.evaluate("document.getElementById('cab').dataset.v")
     playable = await pg.evaluate("!document.querySelector('[data-i=\"3\"]').disabled")
     ok(v == 'board' and s['open'] == -1 and s['res'][3] == 0 and playable and s['path'] == [], 'Back returns to the board with the card still to play')
+    ok(not await pg.evaluate("document.getElementById('p-board').classList.contains('attract')"), 'the wave stops at the first tap, even one that went back')
     await pg.reload(); await pg.wait_for_timeout(300)
     ok(await pg.evaluate("document.getElementById('cab').dataset.v") == 'board', 'a reload after Back shows the board, not the card')
     await pg.click('[data-i="3"]'); await pg.wait_for_timeout(100)
@@ -82,12 +93,16 @@ async def run(b, html, demo):
     w = await pg.evaluate("document.getElementById('q').dataset.w")
     await pg.click(f'.choice[data-w="{w}"]'); await pg.reload(); await pg.wait_for_timeout(300)
     s = await state(); v = await pg.evaluate("document.getElementById('cab').dataset.v")
-    lit = await pg.evaluate("document.querySelectorAll('#v-board .ball .pt.on:not(.core)').length")   # the three balls: one ring of five lit, their free-space centers aside
-    ok(v == 'board' and s['res'][3] == 1 and lit == 5, f'a right answer is saved at once and its ring is lit in its ball after a reload ({lit} panels)')
+    rings = lambda: pg.evaluate("""[1, 2, 3].map(d => [...document.querySelectorAll('#ball' + d + ' .pt:not(.rim)')].map((e, k) => e.classList.contains('on') ? k : -1).filter(k => k >= 0))""")   # each ball's lit panels, 0 to 15
+    lit = await rings()
+    ok(v == 'board' and s['res'][3] == 1 and lit == [[], [10, 11, 12, 13, 14], []], f'a right answer is saved at once, and after a reload its ball has its outer ring lit, nothing else: {lit}')
     # the rest of the day: every tile is played, two of them wrong, and the right answer never takes one slot 3 times running
     slots = [s['tiles'][3]['ch'].index(next(c for c in s['tiles'][3]['ch'] if c['w'] == s['tiles'][3]['w']))]
     for i in [x for x in range(N) if x != 3]:
         ch = await answer(pg, i, i not in (PER + 2, 2 * PER + 1)); slots.append(ch)   # a yellow and a red missed
+        if i == N - 2:   # one card to go: green all right, yellow 2 of 3, red 1 of 2 so far
+            lit = await rings()
+            ok(lit == [list(range(16)), list(range(5, 15)), list(range(10, 15))], f'the balls fill from the rim in: 3 right lights a ball whole, 2 its outer ring and pentagons, 1 its outer ring ({[len(x) for x in lit]} panels)')
     ok(not any(slots[k] == slots[k + 1] == slots[k + 2] for k in range(len(slots) - 2)), f'the right answer never takes one slot 3 times running ({"".join(map(str, slots))})')
     # 3. a miss doesn't end the day: all the cards play, then the share is the grid, every card in its spot
     s = await state(); v = await pg.evaluate("document.getElementById('cab').dataset.v")
@@ -98,13 +113,20 @@ async def run(b, html, demo):
     ok(text == expected(s, 1), 'the share text is exact: ' + repr(text))
     score = await pg.evaluate("document.querySelector('#v-end .score').textContent")
     ok(score == f'{N - 2}/{N}', f'the end screen shows the score: {score}')
-    ok(await pg.evaluate("localStorage.getItem('bsb-intro-off')") == 'true', 'a finished day stops How to play from opening on its own')
     # 4. locked
     await pg.reload(); await pg.wait_for_timeout(300)
     v = await pg.evaluate("document.getElementById('cab').dataset.v")
     n = await pg.evaluate("document.querySelectorAll('[data-i]:not([disabled])').length")
     ok(v == 'end' and n == 0, 'a finished day reopens to its result, with nothing left to tap')
-    if not demo:
+    if one and not demo:
+        # 5. one fixed board: no countdown, and midnight changes nothing
+        ok(await pg.evaluate("document.getElementById('clock').hidden && document.getElementById('e-next').hidden && document.getElementById('e-again').hidden"), 'with one fixed board the end has no countdown and no next or start-over keys')
+        await pg.clock.run_for(125_000); await pg.wait_for_timeout(300)
+        v = await pg.evaluate("document.getElementById('cab').dataset.v"); s = await state()
+        ok(v == 'end' and s['day'] == 0 and all(s['res']), 'midnight changes nothing with one fixed board: the day stays finished, #1')
+        await pg.reload(); await pg.wait_for_timeout(300)
+        ok(await pg.evaluate("document.getElementById('cab').dataset.v") == 'end', 'and a reload the next day still opens its end screen')
+    elif not demo:
         # 5. midnight
         c0, left = await pg.evaluate("""[document.getElementById('clock').textContent,
             Math.floor((new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate() + 1) - new Date()) / 1000)]""")
@@ -153,6 +175,7 @@ async def main():
     async with async_playwright() as p:
         b = await p.chromium.launch()
         await run(b, as_demo(0), 0)
+        await run(b, as_demo(0, True), 0, True)
         await run(b, as_demo(BUILT or 7), BUILT or 7)
         await b.close()
     print('all good' if not fails else f'{len(fails)} failed')

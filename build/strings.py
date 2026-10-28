@@ -53,7 +53,7 @@ def fill_head(page, text):
 FACES = {'pixel': 'var(--body-font)', 'arcade': 'var(--pixel)'}
 WRAPS = {'line': 'white-space: nowrap', 'balance': 'text-wrap: balance', 'pretty': 'text-wrap: pretty'}
 MEDIA = (('mid', '(max-height: 700px)'), ('short', '(max-height: 640px)'), ('narrow', '(max-width: 360px)'))
-KEYS = {'where', 'sel', 'face', 'weight', 'size', 'mid', 'short', 'narrow', 'lh', 'track', 'trackShort', 'case', 'align', 'wrap', 'lines', 'trim', 'nudge', 'fit'}
+KEYS = {'where', 'sel', 'face', 'weight', 'size', 'mid', 'short', 'narrow', 'lh', 'track', 'trackShort', 'case', 'align', 'wrap', 'lines', 'trim', 'nudge', 'fit', 'shrink'}
 
 def load_slots():
     raw = json.load(open(os.path.join(TEXT, 'slots.json')))
@@ -68,6 +68,7 @@ def slot_problems(slots, meta):
         if not s.get('where') or not s.get('sel'): out.append(('slot ' + k, 'needs "where" and "sel"'))
         if s.get('face', 'pixel') not in FACES: out.append(('slot ' + k, 'face is pixel or arcade'))
         if s.get('wrap', 'line') not in WRAPS: out.append(('slot ' + k, 'wrap is line, balance or pretty'))
+        if 'shrink' in s and not (0.5 <= s['shrink'] <= 1): out.append(('slot ' + k, 'shrink is the smallest share of its size the text may shrink to, from 0.5 to 1'))
     for k, m in meta.items():
         if m.get('slot') and m['slot'] not in slots: out.append((k, 'its slot "' + m['slot'] + '" isn’t in build/text/slots.json'))
     return out
@@ -75,7 +76,7 @@ def slot_problems(slots, meta):
 def page_meta(meta, slots):
     """What the in-game text editor shows: each string's note, slot and blanks, and each slot's selector, line limit and place."""
     m = {k: {'note': v.get('note', ''), 'slot': v.get('slot', ''), 'ph': ', '.join('{%s} (%s)' % (p, d.get('example', '')) for p, d in v.get('placeholders', {}).items())} for k, v in meta.items()}
-    s = {k: {'sel': v['sel'], 'lines': v.get('lines', 0), 'where': v['where']} for k, v in slots.items()}
+    s = {k: dict({'sel': v['sel'], 'lines': v.get('lines', 0), 'where': v['where']}, **({'shrink': v['shrink']} if 'shrink' in v else {})) for k, v in slots.items()}
     return m, s
 
 def slot_fit(slots):

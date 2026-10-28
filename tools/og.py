@@ -19,7 +19,6 @@ STYLE = """
 async def main():
     async with async_playwright() as p:
         b = await p.chromium.launch(); pg = await b.new_page(viewport={'width': 600, 'height': 315}, device_scale_factor=2)
-        await pg.add_init_script("try { localStorage.setItem('bsb-intro-off', 'true') } catch (e) {}")   # skip the how-to-play screen
         await pg.route('http://bsb.test/', lambda r: r.fulfill(body=HTML, content_type='text/html'))
         await pg.goto('http://bsb.test/'); await pg.wait_for_timeout(1500)
         await pg.add_style_tag(content=STYLE)

@@ -6,7 +6,7 @@
     python3 tools/textcheck.py --page FILE  # another build
     python3 tools/textcheck.py --states     # also list the slots each screen showed
 
-It plays the daily, the 7-board demo and the lock (switched off on the real site) on puzzle #365, the widest number. In every screen it finds every slot in build/text/slots.json and checks the text in it:
+It plays the daily, its end with one fixed board (ONE_BOARD in build.py), the 7-board demo and the lock (switched off on the real site) on puzzle #365, the widest number. In every screen it finds every slot in build/text/slots.json and checks the text in it:
   - fits: no letter outside its box, and nothing cut off by a box that clips
   - lines: no more than the slot's "lines"
   - even: two or more lines, the last at least a third as wide as the longest (a lone word on its own line reads as a mistake)
@@ -50,8 +50,8 @@ def pseudo(s):
 
 KNOWN = [pseudo(v) for v in strings.load()[0].values()]   # every string as --pseudo shows it
 
-def page_html(demo=False):
-    html = open(PAGE).read()
+def page_html(demo=False, one=False):   # the daily (with its countdown), one fixed board (no countdown, Share board across the row), or the demo
+    html = re.sub(r'var ONE = (true|false)', 'var ONE = ' + ('true' if one else 'false'), open(PAGE).read(), count=1)
     if demo: html = re.sub(r'DEMO = 0\b', 'DEMO = 7', html, count=1)
     if PSEUDO:
         m = re.search(r'var TEXT = (\{.*?\});\n', html)
@@ -130,8 +130,8 @@ async def main():
     async with async_playwright() as p:
         br = await p.chromium.launch()
         for W, H in SIZES:
-            for demo in (False, True):
-                html = page_html(demo)
+            for demo, one in ((False, False), (False, True), (True, False)):
+                html = page_html(demo, one)
                 ctx = await br.new_context(viewport={'width': W, 'height': H}, device_scale_factor=SCALE)
                 pg = await ctx.new_page(); errs = []; pg.on('pageerror', lambda e: errs.append(str(e)))
                 pg.on('dialog', lambda d: asyncio.ensure_future(d.accept('test')))
@@ -158,13 +158,13 @@ async def main():
                 async def setday(res, path):   # a saved day: each tile's result and the tap order
                     await pg.evaluate("([res, path]) => { const s = JSON.parse(localStorage.getItem('bsb-daily')); s.res = res; s.path = path; s.open = -1; localStorage.setItem('bsb-daily', JSON.stringify(s)); }", [res, path])
                     await pg.goto(base); await pg.wait_for_timeout(1200)   # without ?reset, which would clear it
-                    if await pg.is_visible('#in-go'): await pg.click('#in-go'); await pg.wait_for_timeout(450)   # How to play opens until a day is finished
                 base = 'http://bsb.test/' + ('' if demo else '?day=365')
                 url = 'http://bsb.test/' + ('?reset' if demo else '?day=365&reset')
-                if not demo:
-                    await pg.goto(url); await pg.wait_for_timeout(1500); await look('how to play')
-                    await pg.click('#in-go'); await pg.wait_for_timeout(500); await look('board')
-                    await pg.click('#menu-b'); await pg.wait_for_timeout(450); await look('menu'); await pg.click('#m-close'); await pg.wait_for_timeout(450)
+                if one:   # one fixed board: only its end differs
+                    await pg.goto(url); await pg.wait_for_timeout(1200)
+                    await setday(([1, 2] * N)[:N], list(range(N))); await look('end, one fixed board')
+                elif not demo:
+                    await pg.goto(url); await pg.wait_for_timeout(1500); await look('board')   # no How to play since Oct 28, 2026, and no menu outside the demo
                     await pg.click('[data-i="0"]'); await pg.wait_for_timeout(450); await look('card')
                     w = await pg.evaluate("document.getElementById('q').dataset.w"); await pg.click(f'.choice[data-w="{w}"]'); await pg.wait_for_timeout(450)
                     await look('answered')
@@ -193,7 +193,6 @@ async def main():
                     await pg.click('[data-k="enter"]'); await pg.wait_for_timeout(250); await look('lock')
                 else:
                     await pg.goto(url); await pg.wait_for_timeout(1200)
-                    if await pg.is_visible('#in-go'): await pg.click('#in-go'); await pg.wait_for_timeout(450)
                     await pg.click('#menu-b'); await pg.wait_for_timeout(450); await look('demo menu')
                     await pg.click('#m-restart'); await pg.wait_for_timeout(450); await look('start over pop-up'); await pg.click('#ra-no'); await pg.wait_for_timeout(450)
                     await setday(([1, 2] * N)[:N], list(range(N))); await look('demo end')

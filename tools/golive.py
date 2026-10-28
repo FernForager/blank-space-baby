@@ -9,7 +9,8 @@
    choices, Back works, and it plays to the end.
 3. A day finished on the live build reopens to its end screen with its results unchanged.
 When the new build changes the save's version (v 5 on Oct 27, 2026: nine cards), saved days start fresh by design, so
-2 and 3 are skipped and say so.
+2 and 3 are skipped and say so. A build with one fixed board (ONE_BOARD) plays #1 on every date, so tomorrow changes when it
+first goes live or comes off, by design.
 Runs on the real clock in Seattle time.
 """
 import asyncio, datetime, json, os, re, subprocess, sys
@@ -22,7 +23,8 @@ OLD = subprocess.run(['git', 'show', f'{REF}:docs/index.html'], cwd=ROOT, captur
 NEW = open(os.path.join(ROOT, 'docs', 'index.html')).read()
 DEAL = "d => TRIVIELA.deal(d).flat().map(c => [c.id, TRIVIELA.choices(c, d)])"   # a day's cards and their choices
 def start(html): return datetime.date(*json.loads(re.search(r'START = (\[[^\]]+\])', html).group(1)))
-def number(first, date): return max(0, (date - first).days)   # the puzzle a build shows on a date: before #1's date, #1 plays early
+def one(html): m = re.search(r'var ONE = (true|false)', html); return bool(m) and m.group(1) == 'true'   # one fixed board (ONE_BOARD in build.py, Oct 28, 2026): every date plays #1
+def number(first, date, fixed=False): return 0 if fixed else max(0, (date - first).days)   # the puzzle a build shows on a date: before #1's date, #1 plays early
 fails = []
 def ok(cond, what):
     print(('ok    ' if cond else 'FAIL  ') + what)
@@ -31,9 +33,9 @@ def ok(cond, what):
 async def page(b, html, saved=None):   # a phone in Seattle, with whatever the old build left in its storage
     ctx = await b.new_context(viewport={'width': 402, 'height': 744}, timezone_id='America/Los_Angeles', service_workers='block', reduced_motion='reduce')
     pg = await ctx.new_page(); pg.errs = []; pg.on('pageerror', lambda e: pg.errs.append(str(e)))
-    init = "try { localStorage.setItem('bsb-intro-off', 'true') } catch (e) {}"
+    init = ""
     for k, v in (saved or {}).items(): init += f"try {{ localStorage.setItem({json.dumps(k)}, {json.dumps(v)}) }} catch (e) {{}}"
-    await pg.add_init_script(init)
+    if init: await pg.add_init_script(init)
     await pg.route('https://bsb.test/**', route(html))
     await pg.goto('https://bsb.test/'); await pg.wait_for_timeout(400)
     return ctx, pg
@@ -56,12 +58,14 @@ async def main():
         c1, o = await page(b, OLD); c2, n = await page(b, NEW)
         so, sn = await state(o), await state(n)
         today, fo, fn = datetime.datetime.now(ZoneInfo('America/Los_Angeles')).date(), start(OLD), start(NEW)
+        oo, on = one(OLD), one(NEW)
+        if oo != on: print(f'      one fixed board: {"on" if on else "off"} in the new build, {"on" if oo else "off"} live, so later dates change by design')
         board = lambda pg, k: pg.evaluate(f"({DEAL})({k})")
         print(f'-- {REF} (live) against docs/index.html, {today:%b %-d} in Seattle')
         ok(so['day'] == sn['day'] and [(t['id'], t['ch']) for t in so['tiles']] == [(t['id'], t['ch']) for t in sn['tiles']], f'today: a fresh board is the same #{sn["day"] + 1}, its cards and choices')
         later = []
         for off in (-1, 1, 2, 3, 4, 5, 6, 7):
-            date = today + datetime.timedelta(off); ko, kn = number(fo, date), number(fn, date)
+            date = today + datetime.timedelta(off); ko, kn = number(fo, date, oo), number(fn, date, on)
             same = ko == kn and await board(o, ko) == await board(n, kn)
             what = f'#{kn + 1}, the same cards and choices' if same else f'#{ko + 1} becomes #{kn + 1}' if ko != kn else f'#{kn + 1} gets new cards or choices'
             if off < 2: ok(same, f'{"yesterday" if off < 0 else "tomorrow"} somewhere ({date:%b %-d}): {what}')

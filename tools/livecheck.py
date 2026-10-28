@@ -2,8 +2,8 @@
 
     python3 tools/livecheck.py [REF]    # REF: the commit main points at, default origin/main
 
-Run it once triviela.net serves the new build. It checks against REF’s own files, so a branch ahead of main is no bother. Checks the page is its docs/index.html byte for byte (apart from Cloudflare’s visit counter), How to play opens on a
-first visit, today's board is the build's, Back works, the real site never shows Flag or Lock or calls the beta's services,
+Run it once triviela.net serves the new build. It checks against REF’s own files, so a branch ahead of main is no bother. Checks the page is its docs/index.html byte for byte (apart from Cloudflare’s visit counter), a first visit opens on the
+board with Pick a card and no How to play (since Oct 28, 2026), today's board is the build's, Back works, the real site never shows Flag or Lock or calls the beta's services,
 a full day ends on the end screen with its grid, the share text is exact, and the result post is well formed. The post is
 caught here, so no row reaches the results table.
 """
@@ -15,6 +15,7 @@ REF = sys.argv[1] if len(sys.argv) > 1 else 'origin/main'
 show = lambda path: subprocess.run(['git', 'show', f'{REF}:{path}'], cwd=ROOT, capture_output=True, text=True, check=True).stdout
 BUILD = show('docs/index.html')
 TEXT = json.loads(show('build/text/en.json'))   # the share's own words
+ONE = 'var ONE = true' in BUILD   # one fixed board (ONE_BOARD in build.py): no countdown
 HEAD = re.search(r"var HEAD = '([^']+)'", BUILD).group(1)   # the share's header row: a card per column (🟩🟨🟥 since Oct 28, 2026)
 fails = []
 def ok(cond, what):
@@ -36,7 +37,6 @@ async def main():
         opts = dict(timezone_id='America/Los_Angeles', service_workers='block', reduced_motion='reduce')
         # today's board as the build deals it
         ctx = await b.new_context(**opts); pg = await ctx.new_page()
-        await pg.add_init_script("try { localStorage.setItem('bsb-intro-off', 'true') } catch (e) {}")
         await pg.route('https://bsb.test/**', route(BUILD)); await pg.goto('https://bsb.test/'); await pg.wait_for_timeout(400)
         want = await state(pg); await ctx.close()
         # the live site, as a new phone
@@ -52,8 +52,7 @@ async def main():
         resp = await pg.goto('https://triviela.net/'); await pg.wait_for_timeout(1500)
         live = re.sub(r'<script[^>]*static\.cloudflareinsights\.com/beacon[^>]*>\s*</script>\n?', '', await resp.text())   # Cloudflare’s visit counter, added to pages browsers fetch
         ok(live == BUILD, 'triviela.net serves docs/index.html byte for byte, apart from Cloudflare’s visit counter')
-        ok(await pg.evaluate("!document.getElementById('intro').hidden"), 'a first visit opens How to play over the board')
-        await pg.evaluate("localStorage.setItem('bsb-intro-off', 'true')"); await pg.reload(); await pg.wait_for_timeout(1500)
+        ok(await pg.evaluate("!document.getElementById('intro') && !!document.querySelector('#v-board .pick') && document.getElementById('p-board').classList.contains('attract')"), 'a first visit opens on the board: Pick a card under the balls, the wave over the tiles, no How to play')
         s = await state(pg); n = s['day'] + 1
         ok([(t['id'], t['ch']) for t in s['tiles']] == [(t['id'], t['ch']) for t in want['tiles']], f'#{n} is the build’s board, its cards and choices')
         await pg.click('[data-i="7"]'); await pg.wait_for_timeout(500)
@@ -70,8 +69,9 @@ async def main():
             await pg.click('#go'); await pg.wait_for_timeout(450)
         await pg.wait_for_timeout(1500); s = await state(pg)
         ok(await view(pg) == 'end' and s['res'].count(2) == 2 and s['res'].count(1) == N - 2, f'a full day ends on the end screen, {N - 2} right and 2 missed')
-        print('      the countdown reads', await pg.evaluate("document.getElementById('clock').innerText.replace(/\\s+/g, ' ')"))   # before #1's date it runs to the night of #1's date
-        ok(await pg.evaluate("document.querySelectorAll('.egrid .egh').length") == 3 and await pg.evaluate("document.querySelectorAll('.egrid .mk').length") == N, f'the end grid has its three card headers and {N} marks')
+        if ONE: ok(await pg.evaluate("document.getElementById('clock').hidden"), 'one fixed board: no countdown on the end screen')
+        else: print('      the countdown reads', await pg.evaluate("document.getElementById('clock').innerText.replace(/\\s+/g, ' ')"))   # before #1's date it runs to the night of #1's date
+        ok(await pg.evaluate("document.querySelectorAll('.egrid .egh').length") == 0 and await pg.evaluate("document.querySelectorAll('.egrid .mk').length") == N, f'the end grid has its {N} marks and no card headers')
         await pg.click('#share'); await pg.wait_for_timeout(400)
         clip = await pg.evaluate("navigator.clipboard.readText()")
         ok(clip == expected(s, n), 'the share text is exact: ' + repr(clip))

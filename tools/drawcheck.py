@@ -49,7 +49,6 @@ async def main():
         prints = []
         for k in range(2):
             pg = await b.new_page()
-            await pg.add_init_script("try { localStorage.setItem('bsb-intro-off', 'true') } catch (e) {}")   # skip the how-to-play screen
             await pg.route('http://bsb.test/**', lambda r: r.fulfill(body=HTML, content_type='text/html'))
             await pg.goto('http://bsb.test/?day=1&reset'); await pg.wait_for_timeout(300)
             if k == 0: res = await pg.evaluate(CHECK, [DAYS, PER, LMAX])

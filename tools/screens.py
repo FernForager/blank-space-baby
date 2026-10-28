@@ -30,7 +30,6 @@ async def main():
         for W, H in SIZES:
             ctx = await b.new_context(viewport={'width': W, 'height': H}, device_scale_factor=3)
             pg = await ctx.new_page(); errs = []; pg.on('pageerror', lambda e: errs.append(str(e)))
-            await pg.add_init_script("try { localStorage.setItem('bsb-intro-off', 'true') } catch (e) {}")   # skip the how-to-play screen
             await pg.route('http://bsb.test/**', lambda r: r.fulfill(body=HTML, content_type='text/html'))
             url = 'http://bsb.test/?day=1'
             async def shot(n):
