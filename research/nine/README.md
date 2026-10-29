@@ -40,4 +40,5 @@ A simpler way for cards that already exist: an optional `tag` on the card itself
 - `messi.md`, `cr7.md`: the research, every fact with its official source and the date it was true.
 - `mls-nwsl.md`: fresh MLS facts and NWSL leads, the start of the first worker's job.
 - `epl-wc.md`: what the pool already has for EPL and the World Cup, and this week's Ballon d'Or leads.
+- `draft-board.md`: a first draft of the nine, for Morg to react to.
 - `BRIEF.md`: the brief for the workers who research the rest, three of them instead of nine.
