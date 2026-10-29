@@ -4,12 +4,13 @@ Written by GM TRIVELLE (session `session_014c87SZPcUX9dUDfVKhzS8s`) for the work
 
 ## The plan, resized
 
-Morg's plan was nine workers, one per category. The inventory in `README.md` shows the vetted pool already holds plenty of cards for seven of the nine, and Trivelle researched Messi and CR7 itself before the reset (`messi.md`, `cr7.md`). Technique turned out to have 22 vetted cards already (`README.md`). So two workers cover what's left:
+Morg's plan was nine workers, one per category. The inventory in `README.md` shows the vetted pool already holds plenty of cards for seven of the nine, and Trivelle researched Messi and CR7 itself before the reset (`messi.md`, `cr7.md`). Technique turned out to have 22 vetted cards already, and EPL and the World Cup are current in the pool (`epl-wc.md`). So one worker covers what's left: confirming this week's fresh facts on official pages.
 
 | # | Title | Job | Effort |
 |---|---|---|---|
-| 1 | TRIVELLE 1 · HOLD · MLS and NWSL | finish `mls-nwsl.md`: the NWSL on its stats API, and the MLS leads | medium |
-| 2 | TRIVELLE 2 · HOLD · EPL and World Cup | fresh facts from this season and this summer | medium |
+| 1 | TRIVELLE 1 · HOLD · Fresh facts | finish `mls-nwsl.md` (the NWSL on its stats API, the MLS leads), confirm the Ballon d'Or leads in `epl-wc.md`, and the Messi and CR7 leads | medium |
+
+Jobs 2 and 3 below stay in case Morg wants more than the pool holds.
 
 Technique, Lingo and Basics need no research: the desk picks their cards from the vetted pool. Job 3 below, a few fresh Technique facts, is there if Morg wants more than the pool holds. The Messi and CR7 leads (facts so far only on news sites) go to whoever has room after, or to Trivelle.
 
