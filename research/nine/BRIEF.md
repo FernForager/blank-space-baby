@@ -2,6 +2,8 @@
 
 Written by GM TRIVELLE (session `session_014c87SZPcUX9dUDfVKhzS8s`) for the workers it starts after the usage reset, once Morg says go. Each worker gets this file plus its own job below.
 
+**The stats desk** (Morg, Oct 29, 2026: “They become our Bill James”): fresh, exact numbers are Triviela’s edge, so this worker is our stats desk, the way Bill James was baseball’s. Every number comes from an official page with its date, and anything that will change goes on the watch list. The role lives in this brief, not in one long session: each new round of stats starts a fresh worker from it, since a fresh session with a good brief costs a fraction of a woken one (Scout’s lesson).
+
 ## The plan, resized
 
 Morg's plan was nine workers, one per category. The inventory in `README.md` shows the vetted pool already holds plenty of cards for seven of the nine, and Trivelle researched Messi and CR7 itself before the reset (`messi.md`, `cr7.md`). Technique turned out to have 22 vetted cards already, and EPL and the World Cup are current in the pool (`epl-wc.md`). So one worker covers what's left: confirming this week's fresh facts on official pages.
