@@ -5,7 +5,7 @@ The start of worker job 1, done before the reset. MLS is on mlssoccer.com. The N
 ## MLS (mlssoccer.com)
 
 **"Nashville's Shield standard, El Tráfico fireworks, more from Matchday 32"** (https://www.mlssoccer.com/news/nashville-s-shield-standard-el-trafico-fireworks-more-from-matchday-32, Oct 26, 2026 by its embedded posts):
-1. Nashville SC clinched the 2026 Supporters' Shield with a 2–0 win at CF Montréal on Oct 24, 2026, tying the record for the fastest march to the Shield. They had won 21 and lost 3, with a goal difference of +43. News reports (AP) add that it's the club's first Shield, with goals from Sam Surridge and Hany Mukhtar: confirm on mlssoccer.com or nashvillesc.com.
+1. Nashville SC clinched the 2026 Supporters' Shield with a 2–0 win at CF Montréal on Oct 24, 2026, tying the record for the fastest march to the Shield. They had won 21 and lost 3, with a goal difference of +43. Their first Shield, confirmed by the league's own Spanish-language release (https://www.mlssoccer.com/news/nashville-sc-conquista-su-primer-supporters-shield-en-la-historia-del-club), with three games to spare. It's the club's second major trophy after the 2025 U.S. Open Cup, and it earns a place in the 2027 CONCACAF Champions Cup. News reports (AP) name the scorers, Sam Surridge and Hany Mukhtar.
 2. Nashville needed five points from their last three games to break Inter Miami's single-season record of 74 points, set in 2024. **Watch:** if they do, "Nashville set an MLS record with ___ points in 2026" is a fresh card after Nov 7.
 3. Decision Day is Nov 7, 2026. A FIFA international window comes before the playoffs begin.
 4. Nine teams per conference make the playoffs. CF Montréal and Sporting Kansas City were the first eliminated in each conference.
