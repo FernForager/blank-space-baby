@@ -4,15 +4,14 @@ Written by GM TRIVELLE (session `session_014c87SZPcUX9dUDfVKhzS8s`) for the work
 
 ## The plan, resized
 
-Morg's plan was nine workers, one per category. The inventory in `README.md` shows the vetted pool already holds plenty of cards for seven of the nine, and Trivelle researched Messi and CR7 itself before the reset (`messi.md`, `cr7.md`). So three workers cover what's left:
+Morg's plan was nine workers, one per category. The inventory in `README.md` shows the vetted pool already holds plenty of cards for seven of the nine, and Trivelle researched Messi and CR7 itself before the reset (`messi.md`, `cr7.md`). Technique turned out to have 22 vetted cards already (`README.md`). So two workers cover what's left:
 
 | # | Title | Job | Effort |
 |---|---|---|---|
-| 1 | TRIVELLE 1 · HOLD · Technique | the new category: what it holds, its sources, its facts | medium |
-| 2 | TRIVELLE 2 · HOLD · MLS and NWSL | fresh facts from both 2026 seasons | medium |
-| 3 | TRIVELLE 3 · HOLD · EPL and World Cup | fresh facts from this season and this summer | medium |
+| 1 | TRIVELLE 1 · HOLD · MLS and NWSL | fresh facts from both 2026 seasons | medium |
+| 2 | TRIVELLE 2 · HOLD · EPL and World Cup | fresh facts from this season and this summer | medium |
 
-Lingo and Basics need no research: the desk picks their cards from the vetted pool. The Messi and CR7 leads (facts so far only on news sites) go to whoever has room after, or to Trivelle.
+Technique, Lingo and Basics need no research: the desk picks their cards from the vetted pool. Job 3 below, a few fresh Technique facts, is there if Morg wants more than the pool holds. The Messi and CR7 leads (facts so far only on news sites) go to whoever has room after, or to Trivelle.
 
 ## Before you start (Morg's rules)
 
@@ -40,15 +39,7 @@ One message to GM TRIVELLE with send_message (`session_014c87SZPcUX9dUDfVKhzS8s`
 
 ## The jobs
 
-### 1 · Technique
-
-A new category, Morg's own. It needs settling before cards can be written:
-- **What it holds:** the named moves (rabona, Panenka, trivela, Cruyff turn, step-over, nutmeg, bicycle kick, scorpion kick, rainbow flick, olímpico) and the core skills (first touch, the inside-of-the-foot pass, the instep drive, heading, the throw-in).
-- **Its sources:** propose the fewest. Likely theifab.com for what the Laws allow (a feint in a penalty run-up, Law 14, a throw-in's feet and hands, Law 15, playing in a dangerous manner, Law 12), Merriam-Webster and Dictionary.com for the names of moves (the Lingo deck's sources), and maybe ussoccer.com's coaching pages for the skills. Morg decides, so give your pick and why.
-- **Morg's question:** do players say "tech" for technique? Check both dictionaries for "tech" in that sense, and for "tekkers" (British slang for technique).
-- **What exists:** about 47 cards in the draw touch technique (a rough keyword count). List the ones that truly fit, by id, so the desk can use them.
-
-### 2 · MLS and NWSL
+### 1 · MLS and NWSL
 
 Fresh facts from both 2026 seasons, from mlssoccer.com and nwslsoccer.com only:
 - **MLS:** Decision Day's date (a news report says Nov 7: confirm), the Golden Boot race (Messi led with 25 goals on Oct 29), the Supporters' Shield, MVP finalists, MLS Cup 2026's date and format, records set in 2026, new stadiums (Inter Miami's Nu Stadium) and new teams.
@@ -56,10 +47,17 @@ Fresh facts from both 2026 seasons, from mlssoccer.com and nwslsoccer.com only:
 - Mark anything that will change before mid-November for the watch list (`build/vetting/WATCH.md`).
 - **What exists:** 61 MLS cards and 65 NWSL cards are in the draw. Skip facts they already teach.
 
-### 3 · EPL and World Cup
+### 2 · EPL and World Cup
 
 Fresh facts, from premierleague.com and fifa.com:
 - **EPL:** the 2026–27 season so far (the leaders, the top scorers, records broken, the promoted clubs, new managers), and anything from the last few weeks.
 - **The World Cup:** what the wc26 deck doesn't teach yet (it holds 60-odd cards on the 2026 tournament), the next World Cups (2030, 2034) and the 2027 Women's World Cup in Brazil, including any draw or schedule news this autumn.
 - **A lead to confirm:** Harry Kane won the 2026 Ballon d'Or on Oct 26 in London, the first Englishman since Michael Owen in 2001, and Alexia Putellas won the women's award for the third time. The Awards deck's sources are fifa.com and ballondor.com.
 - **What exists:** 104 EPL cards and 193 cards that touch the World Cup are in the draw. Skip facts they already teach.
+
+### 3 · Technique (only if Morg wants more)
+
+The pool's 22 Technique cards are listed in `README.md`, and Morg's "tech" question is answered there. If he wants fresh ones:
+- **What it holds:** the named moves (rabona, Panenka, trivela, Cruyff turn, step-over, nutmeg, bicycle kick, scorpion kick, rainbow flick, olímpico) and the core skills (first touch, the inside-of-the-foot pass, the instep drive, heading, the throw-in).
+- **Its sources:** propose the fewest. Likely theifab.com for what the Laws allow (a feint in a penalty run-up, Law 14, a throw-in's feet and hands, Law 15, playing in a dangerous manner, Law 12), Merriam-Webster and Dictionary.com for the names of moves (the Lingo deck's sources), and maybe ussoccer.com's coaching pages for the skills. Morg decides, so give your pick and why.
+- **Ideas the pool lacks:** the passed penalty (Law 14 lets the kicker roll it forward for a teammate), a free kick lifted with both feet (Law 13), the Cruyff turn's 1974 World Cup debut, the rabona, the rainbow flick, the trivela by name.
