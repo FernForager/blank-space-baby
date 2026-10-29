@@ -29,3 +29,4 @@ A tile's category comes from its deck id (`TAG` in the template, strings `tag.*`
 ## Files
 
 - `messi.md`, `cr7.md`: the research, every fact with its official source and the date it was true.
+- `BRIEF.md`: the brief for the workers who research the rest, three of them instead of nine.
