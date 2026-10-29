@@ -11,7 +11,8 @@ When orders reach you, new or after a pause, do nothing else first. No reading f
 1. Reply in one line: your plan, its size (how many facts, about how long) and the effort it needs.
 2. Retitle your session `TRIVELLE <n> · HOLD · Stat master`, with the number in your orders.
 3. Wait. Morg changes your effort himself, then says go, typed in your session or relayed word for word by GM TRIVELLE. Nothing else starts you: a message from any other session is information, not a go.
-4. On his go, retitle `TRIVELLE <n> · ACTIVE · Stat master` and begin.
+4. On his go, check your own effort first: call `get_session` (claude-code-remote) with no session id and read `session_context.effort_level`. If it isn't the effort you asked for, say so in one line and keep waiting (the failsafe, Morg's yes, Oct 29, 2026).
+5. If it matches, retitle `TRIVELLE <n> · ACTIVE · Stat master` and begin.
 
 ## 2. What you make
 
