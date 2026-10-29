@@ -8,7 +8,7 @@ Morg's plan was nine workers, one per category. The inventory in `README.md` sho
 
 | # | Title | Job | Effort |
 |---|---|---|---|
-| 1 | TRIVELLE 1 · HOLD · MLS and NWSL | fresh facts from both 2026 seasons | medium |
+| 1 | TRIVELLE 1 · HOLD · MLS and NWSL | finish `mls-nwsl.md`: the NWSL on its stats API, and the MLS leads | medium |
 | 2 | TRIVELLE 2 · HOLD · EPL and World Cup | fresh facts from this season and this summer | medium |
 
 Technique, Lingo and Basics need no research: the desk picks their cards from the vetted pool. Job 3 below, a few fresh Technique facts, is there if Morg wants more than the pool holds. The Messi and CR7 leads (facts so far only on news sites) go to whoever has room after, or to Trivelle.
@@ -40,6 +40,9 @@ One message to GM TRIVELLE with send_message (`session_014c87SZPcUX9dUDfVKhzS8s`
 ## The jobs
 
 ### 1 · MLS and NWSL
+
+Trivelle started this before the reset: `research/nine/mls-nwsl.md` has the MLS facts and the NWSL leads. Finish it on your branch, confirming the leads. nwslsoccer.com draws its pages by script, so read it the way the fact checker did, through the league's stats API at api-sdp.nwslsoccer.com (`research/factcheck/nwsl.md`).
+
 
 Fresh facts from both 2026 seasons, from mlssoccer.com and nwslsoccer.com only:
 - **MLS:** Decision Day's date (a news report says Nov 7: confirm), the Golden Boot race (Messi led with 25 goals on Oct 29), the Supporters' Shield, MVP finalists, MLS Cup 2026's date and format, records set in 2026, new stadiums (Inter Miami's Nu Stadium) and new teams.

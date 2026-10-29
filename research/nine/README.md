@@ -38,4 +38,5 @@ A simpler way for cards that already exist: an optional `tag` on the card itself
 ## Files
 
 - `messi.md`, `cr7.md`: the research, every fact with its official source and the date it was true.
+- `mls-nwsl.md`: fresh MLS facts and NWSL leads, the start of the first worker's job.
 - `BRIEF.md`: the brief for the workers who research the rest, three of them instead of nine.
