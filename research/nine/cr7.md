@@ -73,4 +73,4 @@ Morg's list for Cristiano Ronaldo, worked through on official sources, the same 
 
 ## Still open
 
-- Most of the fun bio facts (youth clubs, height, the club list) aren't on uefa.com or fifa.com pages we have. His clubs' own sites (sporting.pt, manutd.com, realmadrid.com) are official but not on our list: Morg's call, the same question as Messi's fcbarcelona.com.
+- Most of the fun bio facts (youth clubs, height, the club list) aren't on uefa.com or fifa.com pages we have. His clubs' own sites (sporting.pt, manutd.com, realmadrid.com, alnassr.sa) count for player facts (Morg's yes, Oct 29, 2026), so they can confirm his youth clubs, his height and his club list.

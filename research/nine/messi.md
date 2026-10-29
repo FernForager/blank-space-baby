@@ -74,5 +74,5 @@ The pilot for the nine workers: Morg's own list for Messi, worked through on off
 
 ## Still open
 
-- **The source rule for player categories.** A Messi fact lives on the site of the competition it happened in: fifa.com for the World Cup and Argentina, mlssoccer.com and intermiamicf.com for MLS, and laliga.com or uefa.com for his Barcelona years. That follows the rule we already have (a fact's source is its natural deck's site). His youth years would need fcbarcelona.com, which isn't on our list yet: Morg's call.
+- **The source rule for player categories.** A Messi fact lives on the site of the competition it happened in: fifa.com for the World Cup and Argentina, mlssoccer.com and intermiamicf.com for MLS, and laliga.com or uefa.com for his Barcelona years. That follows the rule we already have (a fact's source is its natural deck's site). His clubs' own sites count for player facts (Morg's yes, Oct 29, 2026), so fcbarcelona.com can confirm Newell's Old Boys and his years at Barcelona.
 - **The 900th goal** wants concacaf.com or intermiamicf.com.

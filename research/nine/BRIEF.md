@@ -26,7 +26,7 @@ A research pile in `research/nine/<job>.md`, in the shape of `research/nine/mess
 
 ## The rules
 
-- **Official sources only** confirm a fact: the list in CLAUDE.md, "Sources per deck". News sites and Wikipedia can point you to a fact (call it a **lead**), never confirm it. Never trust memory for anything that could have changed, and give every number its source's date.
+- **Official sources only** confirm a fact: the list in CLAUDE.md, "Sources per deck". For Messi and CR7, their clubs' own official sites count too (Morg's yes, Oct 29, 2026), for player facts only. News sites and Wikipedia can point you to a fact (call it a **lead**), never confirm it. Never trust memory for anything that could have changed, and give every number its source's date.
 - **fifa.com** comes back empty in a plain fetch: use `python3 tools/fifa.py <fifa.com url>`, which reads FIFA's own content feed.
 - **Facts, never wording:** no copying anyone's sentences or question lists. Every idea in your own words.
 - **Card ideas follow `build/decks/SPEC.md`** (read it): one plain sentence holding the answer, a hook from the sentence that isn't the answer, two believable wrong answers, and never the words soccer or football (CLAUDE.md, "House style").
