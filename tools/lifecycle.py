@@ -33,6 +33,7 @@ HTML = open(sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, 'docs', 'in
 START = json.loads(re.search(r'START = (\[[^\]]+\])', HTML).group(1))
 BUILT = int(re.search(r'DEMO = (\d+);', HTML).group(1))
 PER = int(re.search(r'var PER = (\d+)', HTML).group(1)); N = 3 * PER   # cards of each color, and a day's cards
+LOOP = int((re.search(r'var LOOP = (\d+)', HTML) or [0, 0])[1])   # every day replays this board (LOOP in build.py, Oct 30, 2026), 0 for the daily's own boards
 def as_demo(n, one=False): return re.sub(r'var ONE = (true|false)', 'var ONE = ' + ('true' if one else 'false'), re.sub(r'DEMO = \d+;', f'DEMO = {n};', HTML, count=1), count=1)
 TEXT = json.load(open(os.path.join(ROOT, 'build', 'text', 'en.json')))   # the share's own words
 HEAD = re.search(r"var HEAD = '([^']+)'", HTML).group(1)   # the share's header row: a card per column (🟩🟨🟥 since Oct 28, 2026)
@@ -137,15 +138,19 @@ async def run(b, html, demo, one=False):
         ok(await pg.evaluate("document.getElementById('cab').dataset.v") == 'end', 'and a reload the next day still opens its end screen')
     elif not demo:
         # 5. midnight
-        c0, left = await pg.evaluate("""[document.getElementById('clock').textContent,
+        c0, left = await pg.evaluate("""[document.getElementById('e-next').textContent,
             Math.floor((new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate() + 1) - new Date()) / 1000)]""")
-        c0 = re.search(r'\d\d:\d\d:\d\d', c0).group(0)   # the digits, after the Next board in label
+        c0 = re.search(r'\d+:\d\d:\d\d', c0).group(0)   # the digits, after the Next label, beside Review since Oct 30, 2026
         h, m, sec = map(int, c0.split(':'))
         ok(abs(h * 3600 + m * 60 + sec - left) <= 1, f'the countdown shows the time to local midnight: {c0}')
-        ok(await pg.evaluate("document.getElementById('e-next').hidden && document.getElementById('e-again').hidden"), 'the real daily has no next or start-over keys')
+        nx = await pg.evaluate("(() => { const e = document.getElementById('e-next'); return [e.hidden, e.disabled, e.classList.contains('wait')]; })()")
+        ok(nx == [False, True, True] and await pg.evaluate("document.getElementById('e-again').hidden"), f'the real daily shows the countdown beside Review, a display and not a key, and no start-over key: {nx}')
         await pg.clock.run_for(125_000); await pg.wait_for_timeout(300)
         v = await pg.evaluate("document.getElementById('cab').dataset.v"); s = await state()
         ok(v == 'board' and s['day'] == 1 and not any(s['res']), 'at midnight a fresh board appears, as puzzle #2')
+        if LOOP:   # against #1 as freshly dealt: a played board's buttons can move (the right answer never three times in one slot)
+            first = await pg.evaluate(f"TRIVIELA.deal({LOOP - 1}).flat().map(c => [c.id, TRIVIELA.choices(c, {LOOP - 1})])")
+            ok([[t['id'], t['ch']] for t in s['tiles']] == first, f'with LOOP, #2 replays board #{LOOP} as dealt: the same cards and the same choices in the same order')
         # 6. a day finished with no signal is sent on a later visit, after a new day has replaced it (the audit)
         posts = []
         async def offline(r): await r.abort()

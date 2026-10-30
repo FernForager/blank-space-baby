@@ -3,7 +3,7 @@
     python3 tools/golive.py [REF] [--demo] [--no-live]   # REF: the live build's commit, default origin/main (fetched first)
 
 0. triviela.net serves REF's build (apart from Cloudflare's visit counter), so the comparison starts from what players
-   have, and the new build's switches (DEMO, ONE, START, PER, PREROLL) are printed. A build with the demo on fails unless
+   have, and the new build's switches (DEMO, ONE, LOOP, START, PER, PREROLL) are printed. A build with the demo on fails unless
    --demo says it's meant. --no-live skips the triviela.net fetch (offline only).
 
 1. Yesterday's, today's and tomorrow's dates in Seattle (which covers every time zone's today) show the same puzzle, its
@@ -29,7 +29,7 @@ REF = ARGS[0] if ARGS else 'origin/main'
 if REF == 'origin/main': subprocess.run(['git', 'fetch', '-q', 'origin', 'main'], cwd=ROOT)   # the live build as it is now, not as this copy last saw it
 OLD = subprocess.run(['git', 'show', f'{REF}:docs/index.html'], cwd=ROOT, capture_output=True, text=True, check=True).stdout
 NEW = open(os.path.join(ROOT, 'docs', 'index.html')).read()
-DEAL = "d => TRIVIELA.deal(d).flat().map(c => [c.id, TRIVIELA.choices(c, d)])"   # a day's cards and their choices
+DEAL = "d => TRIVIELA.board ? TRIVIELA.board(d) : TRIVIELA.deal(d).flat().map(c => [c.id, TRIVIELA.choices(c, d)])"   # a day's cards and their choices, as it plays them (LOOP replays one board, Oct 30, 2026)
 def start(html): return datetime.date(*json.loads(re.search(r'START = (\[[^\]]+\])', html).group(1)))
 def one(html): m = re.search(r'var ONE = (true|false)', html); return bool(m) and m.group(1) == 'true'   # one fixed board (ONE_BOARD in build.py, Oct 28, 2026): every date plays #1
 def switch(html, name): m = re.search(r'\b' + name + r' = (\[[^\]]*\]|[\w.]+)', html); return m.group(1) if m else '?'
@@ -71,7 +71,7 @@ async def main():
             resp = await lp.goto('https://triviela.net/', wait_until='domcontentloaded')
             live = re.sub(r'<script[^>]*static\.cloudflareinsights\.com/beacon[^>]*>\s*</script>\n?', '', await resp.text())   # Cloudflare's visit counter
             ok(live == OLD, f'triviela.net serves {REF} ({sha}), the build this compares against'); await lc.close()
-        for name in ('DEMO', 'ONE', 'START', 'PER', 'PREROLL'):
+        for name in ('DEMO', 'ONE', 'LOOP', 'START', 'PER', 'PREROLL'):
             a, z = switch(OLD, name), switch(NEW, name)
             print(f'      {name}: {a}' + (f' -> {z}, CHANGED' if a != z else ', unchanged'))
         ok(switch(NEW, 'DEMO') in ('0', '?') or '--demo' in sys.argv, 'the new build has the demo off (--demo if it is meant to go live)')

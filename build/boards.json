@@ -1,5 +1,5 @@
 {
- "@note": "Morg’s own boards: puzzle number to its 9 card ids in board order, three green, three yellow, three red. #1 stays as dealt, except while ONE_BOARD in build.py holds one fixed board, when \"1\" pins it.",
+ "@note": "Morg’s own boards: puzzle number to its 9 card ids in board order, three green, three yellow, three red. #1 stays as dealt, except while ONE_BOARD or LOOP in build.py replays it, when \"1\" pins it.",
  "1": [
   "basics:1",
   "alpha:107",

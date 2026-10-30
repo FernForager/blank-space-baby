@@ -8,7 +8,7 @@ after answering, the answered sentence clear of the go arrow and the beta's flag
 smallest gap between a line and a key under it), and the page never scrolling. On each board it checks every hook fits its tile and
 records the smallest hook font. Prints how often the right answer lands in each slot (should be even).
 """
-import asyncio, collections, os, sys
+import asyncio, collections, os, re, sys
 from playwright.async_api import async_playwright
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DAYS = int(sys.argv[1]) if len(sys.argv) > 1 else 30
@@ -63,7 +63,7 @@ async def main():
         print('JS errors:', errs or 'none'); await b.close()
         # a problem on a board that plays fails the sweep (the audit, Oct 30, 2026: it used to exit 0 whatever it found). With one
         # fixed board only #1 plays, so the rest are listed for the editor, the same rule as tools/tilecheck.py
-        one = 'var ONE = true' in HTML; fatal = [x for x in problems if not one or x[0] == 1]
+        one = 'var ONE = true' in HTML or bool(re.search(r'var LOOP = [1-9]', HTML)); fatal = [x for x in problems if not one or x[0] == 1]
         if one and len(fatal) < len(problems): print(f'{len(problems) - len(fatal)} of them on boards that don\'t play while one fixed board holds: for the editor')
         return 1 if fatal or errs else 0
 sys.exit(asyncio.run(main()))

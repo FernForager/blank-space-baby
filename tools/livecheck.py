@@ -71,9 +71,11 @@ async def main():
             await pg.click('#go'); await pg.wait_for_timeout(450)
         await pg.wait_for_timeout(1500); s = await state(pg)
         ok(await view(pg) == 'end' and s['res'].count(2) == 2 and s['res'].count(1) == N - 2, f'a full day ends on the end screen, {N - 2} right and 2 missed')
-        if ONE: ok(await pg.evaluate("document.getElementById('clock').hidden"), 'one fixed board: no countdown on the end screen')
-        else: print('      the countdown reads', await pg.evaluate("document.getElementById('clock').innerText.replace(/\\s+/g, ' ')"))   # before #1's date it runs to the night of #1's date
-        ok(await pg.evaluate("document.getElementById('e-next').hidden && document.getElementById('e-again').hidden"), 'no Play #2 or Play again on the end screen')
+        if ONE: ok(await pg.evaluate("document.getElementById('e-next').hidden"), 'one fixed board: no countdown on the end screen')
+        else:   # the countdown, beside Review since Oct 30, 2026: a display, not a key. Before #1's date it runs to the night of #1's date
+            nx = await pg.evaluate("(() => { const e = document.getElementById('e-next'); return [e.hidden, e.disabled, e.classList.contains('wait'), e.innerText.replace(/\\s+/g, ' ').trim()]; })()")
+            ok(not nx[0] and nx[1] and nx[2], 'beside Review, the countdown to the next board, not a key: ' + nx[3])
+        ok(await pg.evaluate("document.getElementById('e-again').hidden"), 'no Play again on the end screen')
         ok(await pg.evaluate("document.querySelectorAll('.egrid .egh').length") == 0 and await pg.evaluate("document.querySelectorAll('.egrid .mk').length") == N, f'the end grid has its {N} marks and no card headers')
         await pg.click('#share'); await pg.wait_for_timeout(400)
         clip = await pg.evaluate("navigator.clipboard.readText()")

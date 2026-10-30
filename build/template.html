@@ -262,12 +262,17 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .choice.dim { opacity: .35; }
 @keyframes nope { 20% { transform: translateX(-7px); } 45% { transform: translateX(6px); } 70% { transform: translateX(-4px); } 90% { transform: translateX(2px); } }
 
-/* end of the day: one-tap share, and the countdown to tomorrow's board */
+/* end of the day (Morg, Oct 30, 2026): two share keys side by side, each showing what it sends, then Review and what comes next */
 #p-end { flex-direction: column; gap: 12px; }
-.share { min-height: 62px; padding: 8px 16px 8px 18px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
-.share .stop { display: flex; align-items: center; justify-content: space-between; gap: 10px; }   /* the title row: the share text's first line, and Share grid with its icon at the right */
-.share .mark { flex: none; display: flex; align-items: center; gap: 7px; }
-.share .txt { flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 3px; }
+.sharerow { display: flex; gap: 10px; align-items: stretch; }
+.sharerow .key { flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; align-items: center; gap: 7px; padding: 9px 8px 11px; }
+.sharerow .kl { flex: none; display: flex; align-items: center; justify-content: center; gap: 7px; }   /* the key's name and its share icon */
+.share .txt { flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 3px; }   /* the text it sends, as a message reads */
+.thumb { flex: none; margin: auto 0; display: grid; grid-template-columns: repeat(3, 22px); grid-template-rows: repeat(3, 19px); gap: 4px; padding: 6px; border-radius: 6px; background: radial-gradient(120% 100% at 50% 0, #1E3A2A, #0B1710 70%); box-shadow: 0 0 0 2px #00843D; }   /* the picture it sends, small: each card in its spot with its color and its mark */
+.thumb i { position: relative; display: flex; align-items: center; justify-content: center; background: #F6F0E2; border-radius: 3px; box-shadow: 0 1.5px 0 #CBBFA4; }
+.thumb i::before { content: ''; position: absolute; left: 2px; top: 2px; width: 3px; height: 5px; border-radius: 1px; background: var(--c1); }
+.thumb i.c2::before { background: #F7C948; } .thumb i.c3::before { background: #D52B1E; }
+.thumb .mk { display: block; }
 /* the share key shows the exact text it sends: the shootout grid in the game's pixel ball and ✕, one line per row */
 .sgrid { display: grid; grid-template-columns: repeat(3, 11px); grid-auto-rows: 11px; gap: 3px 3px; padding-block: 2px; align-items: center; justify-items: center; }
 .sgrid .no { color: #E0464B; }
@@ -328,7 +333,12 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .endrow .next.key svg, .endrow .again.key svg { filter: none; animation: none; }
 .endrow .again.key { gap: 10px; display: flex; align-items: center; }
 .endrow { flex-wrap: wrap; row-gap: 10px; }
-.endrow .next.key, .endrow .again.key { flex-basis: 100%; }   /* the demo's Play #2 and Play again take their own row under Review and Share board (Oct 28, 2026) */
+/* what comes next, beside Review (Morg, Oct 30, 2026): the countdown to the next board, quiet like a display, or after a late finish
+   (and in the demo) the key to the next board */
+.endrow .next.wait { flex-direction: column; gap: 4px; background: #0B1710; color: var(--glow); box-shadow: inset 0 0 0 2px #26332B, inset 0 3px 8px rgba(0,0,0,.8); }
+#p-end:not(.rv-on) .endrow > .key { flex: 1 1 0; min-width: 0; }   /* Review and its neighbor, the same width */
+.endrow .next.wait .clk-l { display: block; color: var(--dim); }
+.endrow .next.wait .clk { display: block; text-shadow: 0 0 6px rgba(92,240,154,.6); }
 .thanks-s { margin: 0; color: var(--glow); text-shadow: 0 0 6px rgba(92,240,154,.6); }
 /* sheets: the menu and How to play rise from the bottom over the panel, like OP Hiker's pack and menu */
 /* the 104 lock (Morg, Oct 19, 2026, after OP Hiker's): the cabinet is the lock. The screen shows three code slots and the panel
@@ -385,11 +395,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .tile .hk { margin: auto 0; }
 .tile.done .tag, .tile.miss .tag { display: none; }
 .tile.done, .tile.miss { justify-content: center; padding-top: 4px; padding-bottom: 4px; }   /* a played tile's ball or ✕ sits in its middle (Morg, Oct 26, 2026: it hung at the top under the tag's band) */
-/* Share board, beside the countdown */
-.endrow .sboard { flex: 1; min-height: 52px; display: flex; align-items: center; justify-content: center; gap: 8px; }
-.endrow .sboard svg { flex: none; }
 @media (max-width: 360px) { .endrow .again.key svg { display: none; } }
-@media (max-height: 640px) { .endrow .sboard { min-height: 48px; } }
 .bimg { position: fixed; inset: 0; z-index: 60; background: rgba(7,19,12,.92); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; padding: 18px; }
 .bimg[hidden] { display: none; }
 .bimg img { max-width: 100%; max-height: 74vh; border-radius: 12px; box-shadow: 0 6px 24px rgba(0,0,0,.6); }
@@ -412,7 +418,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .rvk.rv-exit { flex: 1; }
 .rvk:disabled { opacity: .35; }
 @media (max-height: 640px) { .endrow .rvkey, #p-end.rv-on .endrow > .rvk { min-height: 48px; } }
-@media (max-width: 359px) { .endrow .sboard svg, .endrow .rvkey svg { display: none; } }   /* the smallest phones: the two keys give their icons' room to the words */
+@media (max-width: 359px) { .endrow .rvkey svg, .endrow .next.key svg { display: none; } }   /* the smallest phones: the keys give their icons' room to the words */
 #v-end.review { justify-content: flex-start; align-items: stretch; gap: 0; cursor: pointer; }
 .rv { flex: 1; min-height: 0; display: flex; flex-direction: column; }
 .rv-top { flex: none; height: 27px; margin: 0; display: flex; align-items: center; gap: 9px; color: var(--dim); }
@@ -459,7 +465,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     <div class="pv" id="p-gate"></div>
     <div class="pv choices" id="choices"></div>
     <div class="gorow" id="g-play"><button class="bk flag" id="b-flag" type="button" hidden></button><button class="key go gokey wait" id="go" type="button" tabindex="-1" data-t-label="play.next"></button><button class="bk lock" id="b-lock" type="button" hidden></button></div>
-    <div class="pv" id="p-end"><button class="key share" id="share" type="button"><span class="txt"><span class="stop"><span id="share-top"></span><span class="mark"><span class="sg-l" data-t="end.sgrid"></span><span id="share-mark"></span></span></span><span id="share-txt"></span></span></button><div class="endrow"><button class="bk flag" id="e-flag" type="button" hidden></button><button class="key rvkey" id="e-review" type="button"></button><button class="key sboard" id="sboard" type="button"></button><button class="next key" id="e-next" type="button" hidden></button><button class="again key" id="e-again" type="button" hidden></button><button class="key rvk" id="r-prev" type="button"></button><button class="key rvk rv-exit" id="r-exit" type="button"></button><button class="key rvk" id="r-next" type="button"></button><button class="bk lock" id="e-lock" type="button" hidden></button></div></div>
+    <div class="pv" id="p-end"><div class="sharerow"><button class="key share" id="share" type="button"><span class="kl"><span class="sg-l" data-t="end.sgrid"></span><span id="share-mark"></span></span><span class="txt"><span id="share-top"></span><span id="share-txt"></span></span></button><button class="key sboard" id="sboard" type="button"><span class="kl"><span class="sg-l" data-t="end.sboard"></span><span id="sboard-mark"></span></span><span class="thumb" id="sb-thumb" aria-hidden="true"></span></button></div><div class="endrow"><button class="bk flag" id="e-flag" type="button" hidden></button><button class="key rvkey" id="e-review" type="button"></button><button class="next key" id="e-next" type="button" hidden></button><button class="again key" id="e-again" type="button" hidden></button><button class="key rvk" id="r-prev" type="button"></button><button class="key rvk rv-exit" id="r-exit" type="button"></button><button class="key rvk" id="r-next" type="button"></button><button class="bk lock" id="e-lock" type="button" hidden></button></div></div>
   </div>
 </div>
 <div class="bimg" id="bimg" hidden><img id="bimg-i" data-t-alt="image.alt"><button class="key" id="bimg-x" type="button" data-t="image.close"></button></div>
@@ -467,6 +473,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 (function () {
   var DECKS = __DECKS__, START = __START__, DEMO = __DEMO__;   // DEMO: the playtest plays boards #1 to #DEMO back to back (DEMO_DAYS in build.py, 0 for the real daily)
   var ONE = __ONE__;   // one fixed board until the game is tidy (Morg, Oct 28, 2026): every date plays #1, and the countdown hides (ONE_BOARD in build.py)
+  var LOOP = __LOOP__;   // the daily runs, numbers, midnight and all, but every day replays this board's cards and choices (Morg, Oct 30, 2026, LOOP in build.py). 0: the daily's own boards
   // every word the game shows or says, apart from the cards, from build/text/en.json (research/text-system.md). tx() gives the plain text,
   // with its {placeholders} filled, for spoken labels, the share and the image. th() gives it typeset for the page: escaped, digits and
   // GOLAZO! in the arcade face, punctuation glued to its word. The markup names its strings with data-t, data-t-label and data-t-alt
@@ -837,10 +844,11 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     else for (var j = 0; j < 16; j++) a[j] = Math.floor(Math.random() * 16).toString(16);
     return a.join('');
   }
+  function dealOf(day) { return LOOP ? LOOP - 1 : day; }   // the deal a day plays: its own, or the loop's
+  function dealt(day) { var k = dealOf(day), b = deal(k); return [].concat(b[0], b[1], b[2]).map(function (c) { return { c: c, ch: choices(c, k) }; }); }   // a day's nine cards, each with its three choices
   function fresh(day) {
-    var b = deal(day);
-    var tiles = [].concat(b[0], b[1], b[2]);
-    return { v: 6, day: day, tk: token(), tiles: tiles.map(function (c) { return { id: c.id, h: c.fp, lk: c.lk, d: c.d, hook: c.hook, w: c.w, m: c.m, ex: c.ex, ch: choices(c, day) }; }),
+    var tiles = dealt(day);
+    return { v: 6, day: day, tk: token(), tiles: tiles.map(function (x) { var c = x.c; return { id: c.id, h: c.fp, lk: c.lk, d: c.d, hook: c.hook, w: c.w, m: c.m, ex: c.ex, ch: x.ch }; }),
       res: tiles.map(function () { return 0; }), open: -1, path: [], slots: [] };   // v 6: Morg's first nine and steadier choices (Oct 30, 2026), so every phone starts them fresh. v 5: nine cards (Oct 27, 2026). v 3 brought fresh cards and near-miss numbers, v 2 the shootout's first 15
   }
   function load() {
@@ -876,7 +884,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   var chips = function () { return S.res.filter(function (x) { return x === 1; }).length; };
   var over = function () { return S.res.indexOf(0) < 0; };   // every card played: a miss no longer ends the day
   var ALLN = 3 * PER, GOLAZO = tx('golazo');   // a perfect day, 9/9 (Morg's name and caps, Oct 19, 2026)
-  if (DEV) window.TRIVIELA = { deal: deal, choices: choices, ALL: ALL, POOL: POOL, near: near, PIN: PIN, state: function () { return S; } };   // for tools/drawcheck.py, and tools/tilecheck.py below
+  if (DEV) window.TRIVIELA = { deal: deal, choices: choices, board: function (d) { return dealt(d).map(function (x) { return [x.c.id, x.ch]; }); }, LOOP: LOOP, ALL: ALL, POOL: POOL, near: near, PIN: PIN, state: function () { return S; } };   // for tools/drawcheck.py, and tools/tilecheck.py below
 
   // ---- the tap shield ----
   // a touch within 350 ms of a new screen or a pop-up opening or closing is dropped,
@@ -1125,12 +1133,13 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     $('v-end').className = 'view' + (top ? ' golazo' : '');
     $('v-end').innerHTML = '<div class="egrid" role="group" aria-label="' + esc(tx('end.grid', { rows: rows().map(function (row, y) { return tx('end.row', { color: tx('row.' + (y + 1)), n: row.filter(function (v) { return v === 1; }).length, all: PER }); }).join(', ') })) + '">' + cells(big) + '</div>' +
       '<p class="score"' + (top ? ' data-tid="golazo" data-tplain="1"' : ' data-tid="end.score"' + tv({ n: n, all: ALLN })) + '>' + (top ? esc(GOLAZO) : slash(num(esc(score())))) + '</p>' +
-      '<p class="clock" id="clock" role="timer" aria-live="off"' + (DEMO || ONE ? ' hidden' : '') + '></p>';   // aria-live off: inside the screen's polite region it was read out every second (the audit)   // the countdown, where the review hint was (Oct 28, 2026), so the panel's row holds Review and Share board
+      '<p class="clock" id="clock" role="status" hidden></p>';   // the beta's messages, and the demo's thank-you (the countdown moved to the panel, beside Review, Oct 30, 2026)
     $('share-top').innerHTML = th('share.title', { day: S.day + 1 }); $('share-top').dataset.tid = 'share.title'; $('share-top').dataset.tv = JSON.stringify({ day: S.day + 1 });
     $('share-txt').innerHTML = '<span class="sgrid se" aria-hidden="true">' + Array.from(HEAD).map(function (e) { return '<i>' + e + '</i>'; }).join('') + lines().map(function (l) { return l.map(function (v) { return '<i>' + (v === 1 ? '⚽' : '❌') + '</i>'; }).join(''); }).join('') + '</span>' +   // the grid as the text sends it, emoji and all (Morg, Oct 28, 2026)
       (chips() === ALLN ? '<span data-tid="golazo">' + num(keep(esc(GOLAZO))) + '</span>' : '') + '<span data-tid="share.site">' + th('share.site') + '</span>';
     $('share').setAttribute('aria-label', tx('share.label', { text: shareText().replace(/\n/g, ', ') }));
-    $('share-mark').innerHTML = svg('share', 3);
+    $('share-mark').innerHTML = svg('share', 2);
+    $('sb-thumb').innerHTML = S.tiles.map(function (t, i) { return '<i class="c' + t.d + '" style="grid-column:' + t.d + ';grid-row:' + (spot(i) + 1) + '">' + mark(S.res[i], 12) + '</i>'; }).join('');   // the picture's cards in their spots
     beta(null); view('end'); clearInterval(tick); endRow(); if (!DEMO && !ONE) tick = setInterval(clock, 1000);
   }
   // ---- your cards, again (Morg, Oct 26, 2026: a finished day should never feel like a dead end) ----
@@ -1163,21 +1172,23 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     if (REV >= 0) return review(REV + 1);
     var b = e.target.closest('[data-k]'); if (b) review(+b.dataset.k); else if (e.target.closest('.egrid')) review(0);
   });
-  function endRow() {   // after a finished board: the countdown to tomorrow's, or in the demo the next board and a way back to #1
-    if (Date.now() < holdClock || !$('clock')) return;   // a beta message is showing in its place, or a card is on the screen
-    var last = !!DEMO && S.day >= DEMO - 1;
-    $('e-again').hidden = !last;
-    $('e-next').hidden = !DEMO || last; $('clock').hidden = !!DEMO && !last;
-    if (ONE && !DEMO) { $('clock').hidden = true; return; }   // one fixed board: no next board to count down to, so Share board takes the row
-    if (!DEMO) {
-      if (!S.late) return clock();
-      // finished after its own midnight: the countdown at zero gives way to the demo's Play key, one tap to the new board (Morg, Oct 30, 2026, hub decision lateday)
-      var n = today() + 1; $('clock').hidden = true; $('e-next').hidden = false;
-      $('e-next').innerHTML = '<span data-tid="end.next"' + tv({ day: n }) + '>' + th('end.next', { day: n }) + '</span>' + svg('next', 3); $('e-next').setAttribute('aria-label', tx('end.nextLabel', { day: n }));
-      return;
+  function endRow() {   // beside Review: the countdown to the next board, its Play key after a late finish, or in the demo the next board and a way back to #1
+    if (Date.now() < holdClock || !$('clock')) return;   // a beta message is showing on the screen, or a card is on it
+    var last = !!DEMO && S.day >= DEMO - 1, nx = $('e-next');
+    $('clock').hidden = true; $('e-again').hidden = !last;
+    if (DEMO) {
+      nx.hidden = last;
+      if (last) { if (!$('thanks-s')) $('v-end').insertAdjacentHTML('afterbegin', '<p class="thanks-s" id="thanks-s" data-tid="end.thanks">' + th('end.thanks') + '</p>'); return; }
+      return play(S.day + 2);
     }
-    if (last) { $('clock').hidden = true; if (!$('thanks-s')) $('v-end').insertAdjacentHTML('afterbegin', '<p class="thanks-s" id="thanks-s" data-tid="end.thanks">' + th('end.thanks') + '</p>'); return; }
-    $('e-next').innerHTML = '<span data-tid="end.next"' + tv({ day: S.day + 2 }) + '>' + th('end.next', { day: S.day + 2 }) + '</span>' + svg('next', 3); $('e-next').setAttribute('aria-label', tx('end.nextLabel', { day: S.day + 2 }));
+    if (ONE) { nx.hidden = true; return; }   // one fixed board: no next board, so Review has the row
+    nx.hidden = false;
+    if (S.late) return play(today() + 1);   // finished after its own midnight: one tap to the new board (Morg, Oct 30, 2026, hub decision lateday)
+    clock();
+  }
+  function play(n) {   // the key to board #n
+    var nx = $('e-next'); nx.disabled = false; nx.className = 'next key'; nx.removeAttribute('aria-hidden');
+    nx.innerHTML = '<span data-tid="end.next"' + tv({ day: n }) + '>' + th('end.next', { day: n }) + '</span>' + svg('next', 3); nx.setAttribute('aria-label', tx('end.nextLabel', { day: n }));
   }
   function goDay(d) {   // the demo's next board, or back to #1
     if (FIXED !== null) { params.set('day', d + 1); params.set('reset', ''); location.search = params.toString(); return; }   // a preview link's ?day=N
@@ -1234,18 +1245,19 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     else if (!DEMO && S.late) { clearInterval(tick); S = load(); save(); show(); }   // the new board, after a late finish
   });
   $('e-again').addEventListener('click', function () { if (DEMO) goDay(0); });
-  function clock() {   // the countdown to tomorrow's board, at local midnight
+  function clock() {   // the countdown to tomorrow's board, at local midnight, in the display beside Review
     var now = new Date(), from = new Date(START[0], START[1] - 1, START[2]);   // before #1's date, #1 plays early and stays until the night after it
     if (now > from) from = now;
     var left = new Date(from.getFullYear(), from.getMonth(), from.getDate() + 1) - now;
-    if (S.late) left = 0;   // finished after its own midnight: its end screen stays, with the Play key in the countdown's place (endRow)
-    else if (FIXED === null && today() !== S.day) { clearInterval(tick); S = load(); save(); return show(); }
-    var s = Math.max(0, Math.floor(left / 1000)), pad = function (x) { return (x < 10 ? '0' : '') + x; };
-    if (Date.now() < holdClock || !$('clock')) return;   // a beta message is showing in its place, or a card is on the screen
-    $('clock').innerHTML = '<span class="clk-l" data-tid="end.nextIn">' + th('end.nextIn') + '</span> ' + pad(Math.floor(s / 3600)) + ':' + pad(Math.floor(s / 60) % 60) + ':' + pad(s % 60);
+    if (S.late) return;   // finished after its own midnight: its end screen stays, with the Play key in the countdown's place (endRow)
+    if (FIXED === null && today() !== S.day) { clearInterval(tick); S = load(); save(); return show(); }
+    if (cab.dataset.v !== 'end' || DEMO || ONE) return;
+    var s = Math.max(0, Math.floor(left / 1000)), pad = function (x) { return (x < 10 ? '0' : '') + x; }, nx = $('e-next');
+    if (!nx.classList.contains('wait')) { nx.disabled = true; nx.className = 'next key wait'; nx.removeAttribute('aria-label'); nx.innerHTML = '<span class="clk-l" data-tid="end.nextIn">' + th('end.nextIn') + '</span><span class="clk" role="timer" aria-live="off"></span>'; }   // aria-live off: read out every second otherwise (the audit)
+    nx.lastChild.textContent = Math.floor(s / 3600) + ':' + pad(Math.floor(s / 60) % 60) + ':' + pad(s % 60);
   }
   $('share').addEventListener('click', function () {
-    var text = shareText(), done = function () { $('share-mark').innerHTML = svg('ok', 3); setTimeout(function () { $('share-mark').innerHTML = svg('share', 3); }, 1600); };
+    var text = shareText(), done = function () { $('share-mark').innerHTML = svg('ok', 2); setTimeout(function () { $('share-mark').innerHTML = svg('share', 2); }, 1600); };
     if (navigator.share && /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) { navigator.share({ text: text }).catch(function () {}); return; }
     if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done, function () { copy(text); done(); }); return; }
     copy(text); done();
@@ -1312,7 +1324,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     g.font = '600 44px "Pixelify Sans"'; g.fillStyle = '#EAFBF0'; g.fillText(nolig(tx('share.site')), W / 2, H - 50);
     return c;
   }
-  $('sboard').innerHTML = '<span data-tid="end.sboard">' + th('end.sboard') + '</span>' + svg('share', 2);
+  $('sboard-mark').innerHTML = svg('share', 2);
   $('sboard').addEventListener('click', function () {
     var c = boardImage(), url = c.toDataURL('image/png'), bin = atob(url.split(',')[1]), a = new Uint8Array(bin.length);
     for (var k = 0; k < bin.length; k++) a[k] = bin.charCodeAt(k);
@@ -1348,7 +1360,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   }
   function say(id) {   // a beta message, by its string id
     var text = tx(id);
-    if (where === 'end' && $('clock')) { holdClock = Date.now() + 1600; $('clock').hidden = false; $('e-next').hidden = true; $('clock').classList.remove('thanks'); $('clock').textContent = text.toUpperCase(); setTimeout(endRow, 1650); return; }
+    if (where === 'end' && $('clock')) { holdClock = Date.now() + 1600; $('clock').hidden = false; $('clock').classList.remove('thanks'); $('clock').textContent = text.toUpperCase(); setTimeout(endRow, 1650); return; }
     var m = $('b-msg'); m.textContent = text; m.dataset.tid = id; m.dataset.tplain = 1; clearTimeout(say.t); say.t = setTimeout(function () { m.textContent = ''; }, 1600);
   }
   function flush() {   // send the queue in order: a refused mark is dropped, a network failure waits for the next try

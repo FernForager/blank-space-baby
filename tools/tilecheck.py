@@ -12,7 +12,7 @@ from playwright.async_api import async_playwright
 from docsroute import route
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 HTML = open(os.path.join(ROOT, 'docs', 'index.html')).read()
-ONE = re.search(r'var ONE = (true|false)', HTML).group(1) == 'true'
+ONE = re.search(r'var ONE = (true|false)', HTML).group(1) == 'true' or bool(re.search(r'var LOOP = [1-9]', HTML))   # one board plays: the fixed board, or the loop's (Oct 30, 2026)
 SIZES = [(402, 744, 3), (375, 667, 3), (320, 568, 2)]   # each phone at its own scale: a 320-wide iPhone is 2× (the audit, Oct 30, 2026)
 MEASURE = """() => {
   const board = document.getElementById('p-board'), boxes = [...board.querySelectorAll('[data-i]')], out = [];
@@ -80,7 +80,7 @@ async def main():
         f.write('\n'.join(lines_out) + '\n\n')
         for cid, v in sorted(bad.items()): f.write(f'{cid}\t{v["tag"]}\t{v["hook"]}\t' + '; '.join(sorted(v['why'])) + '\n')
     now = sorted(c for c in bad if c in play)
-    print(f'{len(bad)} cards break a rule somewhere (out/tilecheck.txt). Playing now ({"the fixed board" if ONE else "the whole draw"}): {len(now)}')
+    print(f'{len(bad)} cards break a rule somewhere (out/tilecheck.txt). Playing now ({"the one board that plays" if ONE else "the whole draw"}): {len(now)}')
     for c in now: print('  ', c, '|', bad[c]['tag'], '|', bad[c]['hook'], '|', '; '.join(sorted(bad[c]['why'])))
     sys.exit(1 if now else 0)
 asyncio.run(main())

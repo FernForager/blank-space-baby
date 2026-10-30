@@ -57,11 +57,14 @@ VET = os.path.join(HERE, 'vetting')
 REVIEWERS = ('soccer', 'editor', 'facts')   # the soccer expert, the writing editor and the fact checker (Morg, Oct 16, 2026)
 BETA_VETTED_ONLY = True   # True once the first vetting pass is done: until then every card that isn't out or flagged plays
 BETA_MIN = 48              # with BETA_VETTED_ONLY, the build stops if a color has fewer cards than this (twice the draw's window)
-START = [2026, 10, 28]   # the date of puzzle #1 (nine cards went live on the night of Oct 27, 2026, at Morg's go, so #1 starts over on the 28th, the first full nine-card day). Before it, #1 plays early. After the playtest, launch day is #1 again.
+START = [2026, 10, 30]   # the date of puzzle #1: the day the daily came back as a loop of Morg's nine (Oct 30, 2026), so the #1 finished that day carries over. It was Oct 28, the first full nine-card day. Before it, #1 plays early. After the playtest, launch day is #1 again.
 DEMO_DAYS = 0             # off since Oct 19, 2026: the playtest is a real daily, one board a day (Morg). It was 7: boards #1 to #7 back to back, then a
                           # thank-you and Start over. The date doesn't move it. 0 for the real daily, one board a day from START
-ONE_BOARD = True          # one fixed board until the game is tidy (Morg, Oct 28, 2026): every date plays #1, the countdown hides, and
-                          # boards.json can pin #1's nine cards once Morg and Trivelle write them. False for the daily, one board a day
+ONE_BOARD = False         # True: one fixed board (Morg, Oct 28, 2026), every date plays #1 and the countdown hides. Off since Oct 30, 2026,
+                          # when the daily came back underneath LOOP below. False for the daily, one board a day
+LOOP = 1                  # every day replays this board, its nine cards and their three choices each, while the daily runs for real around it:
+                          # a new number each day, the countdown, midnight and Play #N (Morg, Oct 30, 2026: test the daily before its boards are
+                          # ready). 0 deals the daily's own boards. Passed to the page as LOOP
 PER = 3                   # cards of each color a day (Morg, Oct 27, 2026: nine a day, three per color, was five): PER in template.html
 REPEAT_DAYS = 91          # a card never comes back within 3 months, once there are enough cards
 WINDOW = 24               # the draw deals from a shuffle of each color's 24 oldest cards (passed to the page as WINDOW)
@@ -227,7 +230,7 @@ def pinned(decks):
     color = {f"{d['id']}:{x['i']}": x['d'] for d in decks for x in d['items'] if not (d['sl'] and x['d'] == 3)}   # red slang never deals, so the page would drop it from a pin too (the audit)
     bad, seen = [], {}
     for n, ids in boards.items():
-        if not n.isdigit() or int(n) < (1 if ONE_BOARD else 2): bad.append(f'board {n}: boards are puzzle numbers from 2 (#1 stays as dealt), or #1 while ONE_BOARD holds one fixed board')
+        if not n.isdigit() or int(n) < (1 if ONE_BOARD or LOOP else 2): bad.append(f'board {n}: boards are puzzle numbers from 2 (#1 stays as dealt), or #1 while ONE_BOARD or LOOP replays it')
         if len(ids) != 3 * PER: bad.append(f'board #{n}: {len(ids)} cards, not {3 * PER}')
         for k, cid in enumerate(ids):
             if cid not in color: bad.append(f'board #{n}: {cid} is not in the draw (out, flagged, waiting on a reviewer, or no such card)'); continue
@@ -280,6 +283,7 @@ def main(test_copy=None):
     print(f'the smallest color ({min(tiers)} cards) repeats about every {(min(tiers) - WINDOW) // PER} days.')
     if DEMO_DAYS: print(f'Demo: boards #1 to #{DEMO_DAYS} play back to back, then a thank-you (DEMO_DAYS in build.py, 0 for the real daily).')
     if ONE_BOARD: print('One fixed board: every date plays #1, with no countdown (ONE_BOARD in build.py, False for the daily).')
+    elif LOOP: print(f'The daily runs, and every day replays board #{LOOP}, its cards and choices (LOOP in build.py, 0 for the daily’s own boards).')
     pins = pinned(decks)
     tpl = open(os.path.join(HERE, 'template.html')).read()
     tagmap = re.search(r'var TAG = \{(.*?)\};', tpl, re.S)
@@ -301,7 +305,7 @@ def main(test_copy=None):
     tpl = tpl.replace('__TEXTMETA__', json.dumps(pm, ensure_ascii=False).replace('</', '<\\/')).replace('__SLOTS__', json.dumps(ps, ensure_ascii=False))
     tpl = tpl.replace('__PIN__', json.dumps(pins))
     tpl = tpl.replace('__TEXT__', json.dumps(text, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/'))
-    tpl = tpl.replace('__DECKS__', json.dumps(decks, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')).replace('__WINDOW__', str(WINDOW)).replace('__LEAGUE_MAX__', str(LEAGUE_MAX)).replace('__START__', json.dumps(START)).replace('__DEMO__', str(DEMO_DAYS)).replace('__PER__', str(PER)).replace('__ONE__', 'true' if ONE_BOARD else 'false')
+    tpl = tpl.replace('__DECKS__', json.dumps(decks, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')).replace('__WINDOW__', str(WINDOW)).replace('__LEAGUE_MAX__', str(LEAGUE_MAX)).replace('__START__', json.dumps(START)).replace('__DEMO__', str(DEMO_DAYS)).replace('__PER__', str(PER)).replace('__ONE__', 'true' if ONE_BOARD else 'false').replace('__LOOP__', str(int(LOOP)))
     top, body = tpl.split('<style>', 1)              # title + font links move into <head>
     top = '\n'.join(l for l in top.splitlines() if 'claude:' not in l)
     head = strings.fill_head(open(os.path.join(HERE, 'head.html')).read().replace('</head>', top.strip() + '\n</head>'), text)
