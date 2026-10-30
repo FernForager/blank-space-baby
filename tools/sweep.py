@@ -22,7 +22,7 @@ AFTER = """() => { const q = document.getElementById('q'), f = document.querySel
   return q.scrollWidth > q.clientWidth + 1 || f.scrollHeight > f.clientHeight + 1 || document.documentElement.scrollHeight > innerHeight; }"""
 # after answering, the sentence must clear the go arrow and, on preview links, the beta's flag and lock keys
 CLEAR = """() => { const r = document.createRange(); r.selectNodeContents(document.getElementById('q'));
-  const lines = [...r.getClientRects()], keys = [...document.querySelectorAll('#go:not(.wait), #beta:not([hidden]) .bk')].map(e => e.getBoundingClientRect());
+  const lines = [...r.getClientRects()], keys = [...document.querySelectorAll('#go:not(.wait), #g-play .bk:not([hidden])')].map(e => e.getBoundingClientRect());
   const hit = (a, b) => a.left < b.right && b.left < a.right && a.top < b.bottom && b.top < a.bottom;
   const above = [].concat(...lines.map(l => keys.filter(k => l.left < k.right && k.left < l.right).map(k => k.top - l.bottom)));   // only keys a line sits over
   return { hit: lines.some(l => keys.some(k => hit(l, k))), gap: above.length ? Math.min(...above) : 999, keys: keys.length }; }"""
@@ -61,4 +61,9 @@ async def main():
         print('problems:', len(problems))
         for x in problems[:20]: print('  ', x)
         print('JS errors:', errs or 'none'); await b.close()
-asyncio.run(main())
+        # a problem on a board that plays fails the sweep (the audit, Oct 30, 2026: it used to exit 0 whatever it found). With one
+        # fixed board only #1 plays, so the rest are listed for the editor, the same rule as tools/tilecheck.py
+        one = 'var ONE = true' in HTML; fatal = [x for x in problems if not one or x[0] == 1]
+        if one and len(fatal) < len(problems): print(f'{len(problems) - len(fatal)} of them on boards that don\'t play while one fixed board holds: for the editor')
+        return 1 if fatal or errs else 0
+sys.exit(asyncio.run(main()))

@@ -12,6 +12,7 @@ from playwright.async_api import async_playwright
 from docsroute import route
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 REF = sys.argv[1] if len(sys.argv) > 1 else 'origin/main'
+if REF == 'origin/main': subprocess.run(['git', 'fetch', '-q', 'origin', 'main'], cwd=ROOT)   # main as it is now, not as this copy last saw it (the audit, Oct 30, 2026)
 show = lambda path: subprocess.run(['git', 'show', f'{REF}:{path}'], cwd=ROOT, capture_output=True, text=True, check=True).stdout
 BUILD = show('docs/index.html')
 TEXT = json.loads(show('build/text/en.json'))   # the share's own words
@@ -48,10 +49,11 @@ async def main():
             posts.append(json.loads(r.request.post_data or 'null')); await r.fulfill(status=200, body='{"ok":true}', content_type='application/json')
         async def refuse(r):
             beta.append(r.request.url); await r.fulfill(status=204, body='')
-        await pg.route('**/api/result', catch); await pg.route('**/api/mark', refuse); await pg.route('**/api/text', refuse)
+        await pg.route(re.compile(r'/api/(?!result$)'), refuse); await pg.route(re.compile(r'/api/result$'), catch)   # every /api/ call stops here, GET /api/mark?card=… too (the audit)
         resp = await pg.goto('https://triviela.net/'); await pg.wait_for_timeout(1500)
         live = re.sub(r'<script[^>]*static\.cloudflareinsights\.com/beacon[^>]*>\s*</script>\n?', '', await resp.text())   # Cloudflare’s visit counter, added to pages browsers fetch
         ok(live == BUILD, 'triviela.net serves docs/index.html byte for byte, apart from Cloudflare’s visit counter')
+        ok(re.search(r'DEMO = (\d+);', BUILD).group(1) == '0', 'the real daily, not the demo (DEMO_DAYS is 0)')
         ok(await pg.evaluate("!document.getElementById('intro') && !!document.querySelector('#p-hint .pick') && document.getElementById('p-board').classList.contains('attract')"), 'a first visit opens on the board: Pick a card below the cards, the wave over the tiles, no How to play')
         s = await state(pg); n = s['day'] + 1
         ok([(t['id'], t['ch']) for t in s['tiles']] == [(t['id'], t['ch']) for t in want['tiles']], f'#{n} is the build’s board, its cards and choices')
@@ -71,11 +73,13 @@ async def main():
         ok(await view(pg) == 'end' and s['res'].count(2) == 2 and s['res'].count(1) == N - 2, f'a full day ends on the end screen, {N - 2} right and 2 missed')
         if ONE: ok(await pg.evaluate("document.getElementById('clock').hidden"), 'one fixed board: no countdown on the end screen')
         else: print('      the countdown reads', await pg.evaluate("document.getElementById('clock').innerText.replace(/\\s+/g, ' ')"))   # before #1's date it runs to the night of #1's date
+        ok(await pg.evaluate("document.getElementById('e-next').hidden && document.getElementById('e-again').hidden"), 'no Play #2 or Play again on the end screen')
         ok(await pg.evaluate("document.querySelectorAll('.egrid .egh').length") == 0 and await pg.evaluate("document.querySelectorAll('.egrid .mk').length") == N, f'the end grid has its {N} marks and no card headers')
         await pg.click('#share'); await pg.wait_for_timeout(400)
         clip = await pg.evaluate("navigator.clipboard.readText()")
         ok(clip == expected(s, n), 'the share text is exact: ' + repr(clip))
-        ok(len(posts) == 1 and posts[0]['day'] == s['day'] and len(posts[0]['ids']) == N and posts[0]['res'] == s['res'] and sorted(posts[0]['path']) == list(range(N)), f'one result post, well formed, caught before the server ({len(posts)})')
+        ok(len(posts) == 1 and posts[0]['day'] == s['day'] and len(posts[0]['ids']) == N and posts[0]['res'] == s['res'] and sorted(posts[0]['path']) == list(range(N))
+           and len(set(posts[0]['ids'])) == N and all(re.fullmatch(r'[a-z0-9-]{1,30}:\d{1,5}', x) for x in posts[0]['ids']), f'one result post, well formed by the server’s own rules, caught before the server ({len(posts)})')
         ok(not beta, 'no calls to the beta’s services ' + str(beta))
         ok(not errs, 'no script errors ' + str(errs))
         await ctx.close(); await b.close()
