@@ -187,7 +187,7 @@
   "v": "ok"
  },
  "alpha:22": {
-  "at": "2026-10-30T10:56:45Z",
+  "at": "2026-10-30T15:22:21Z",
   "h": "290511a5cf",
   "v": "ok"
  },
@@ -278,7 +278,7 @@
   "v": "ok"
  },
  "alpha:33": {
-  "at": "2026-10-30T10:56:45Z",
+  "at": "2026-10-30T15:22:21Z",
   "h": "3ef78d6e0e",
   "v": "ok"
  },
@@ -491,13 +491,10 @@
   "v": "fix"
  },
  "alpha:67": {
-  "at": "2026-10-30T10:56:45Z",
-  "fix": {
-   "hook": "World Cup"
-  },
-  "h": "88347b5401",
-  "note": "Slang hooks name the soccer word (SPEC). “Movie” is not one and hints at fiction, which nudges a red card toward Mary Sue. “World Cup” is in the sentence, fits, and no other alpha tile uses it",
-  "v": "fix"
+  "at": "2026-10-30T15:22:21Z",
+  "h": "0d2bad7a1d",
+  "note": "World Cup is the soccer word in the sentence and keeps the tile off the fiction hint",
+  "v": "ok"
  },
  "alpha:68": {
   "at": "2026-10-17T00:18:40Z",
@@ -683,7 +680,7 @@
   "v": "ok"
  },
  "alpha:92": {
-  "at": "2026-10-30T10:56:45Z",
+  "at": "2026-10-30T15:22:21Z",
   "h": "bdf0a02e72",
   "v": "ok"
  },
@@ -925,7 +922,7 @@
   "v": "ok"
  },
  "awards:37": {
-  "at": "2026-10-30T10:56:45Z",
+  "at": "2026-10-30T15:22:21Z",
   "h": "b970c44ff2",
   "v": "ok"
  },
@@ -1399,7 +1396,7 @@
   "v": "ok"
  },
  "basics:14": {
-  "at": "2026-10-30T10:56:45Z",
+  "at": "2026-10-30T15:22:21Z",
   "h": "90bc1409be",
   "v": "ok"
  },
@@ -1469,8 +1466,9 @@
   "v": "ok"
  },
  "basics:152": {
-  "at": "2026-10-30T10:56:45Z",
+  "at": "2026-10-30T15:22:21Z",
   "h": "851088e5cf",
+  "note": "“defends” is thin as a hook, but goal is part of the answer and nothing better sits in the sentence, and on a green Basics card it gives nothing away the color doesn’t",
   "v": "ok"
  },
  "basics:153": {
@@ -1479,7 +1477,7 @@
   "v": "ok"
  },
  "basics:154": {
-  "at": "2026-10-30T10:56:45Z",
+  "at": "2026-10-30T15:22:21Z",
   "h": "fe9e0524f7",
   "v": "ok"
  },
@@ -1524,13 +1522,10 @@
   "v": "ok"
  },
  "basics:2": {
-  "at": "2026-10-30T10:56:45Z",
-  "fix": {
-   "ex": "Sports shoes with grips on the bottom go by the name cleats"
-  },
-  "h": "718c2ba36f",
-  "note": "“Shoes for the field” is not how anyone says it. “Sports shoes” is plain, true and keeps the hook grips",
-  "v": "fix"
+  "at": "2026-10-30T15:22:21Z",
+  "h": "070e83def7",
+  "note": "Sports shoes reads plainly, true by Merriam-Webster",
+  "v": "ok"
  },
  "basics:20": {
   "at": "2026-10-17T00:00:49Z",
@@ -1571,7 +1566,7 @@
   "v": "ok"
  },
  "basics:27": {
-  "at": "2026-10-30T10:56:45Z",
+  "at": "2026-10-30T15:22:21Z",
   "h": "3fd22abcf8",
   "v": "ok"
  },
@@ -1691,7 +1686,7 @@
   "v": "ok"
  },
  "basics:48": {
-  "at": "2026-10-30T10:56:45Z",
+  "at": "2026-10-30T15:22:21Z",
   "h": "840fd9e137",
   "v": "ok"
  },
@@ -1769,7 +1764,7 @@
   "v": "ok"
  },
  "basics:60": {
-  "at": "2026-10-30T10:56:45Z",
+  "at": "2026-10-30T15:22:21Z",
   "h": "858327b2db",
   "v": "ok"
  },
@@ -1779,7 +1774,7 @@
   "v": "ok"
  },
  "basics:62": {
-  "at": "2026-10-30T10:56:45Z",
+  "at": "2026-10-30T15:22:21Z",
   "h": "1ca8b6d840",
   "v": "ok"
  },
@@ -1882,8 +1877,8 @@
   "v": "ok"
  },
  "basics:8": {
-  "at": "2026-10-30T10:56:45Z",
-  "h": "9e6d33c297",
+  "at": "2026-10-30T15:22:21Z",
+  "h": "cd9ee31603",
   "v": "ok"
  },
  "basics:80": {
@@ -2493,8 +2488,9 @@
   "v": "ok"
  },
  "epl-more:23": {
-  "at": "2026-10-30T10:56:45Z",
+  "at": "2026-10-30T15:22:21Z",
   "h": "7fec120393",
+  "note": "premierleague.com: a meeting of schoolteachers in 1879, opened to non-teachers in 1880",
   "v": "ok"
  },
  "epl-more:24": {
@@ -2523,9 +2519,9 @@
   "v": "ok"
  },
  "epl-more:29": {
-  "at": "2026-10-30T10:56:45Z",
+  "at": "2026-10-30T15:22:21Z",
   "h": "ec20f098e8",
-  "note": "Small one for the editor: a manager is a title winner rather than “the champion”, but it reads fine",
+  "note": "Small one for the editor: a manager is a title winner more than “the champion”, but it reads fine",
   "v": "ok"
  },
  "epl-more:3": {
@@ -2709,8 +2705,9 @@
   "v": "ok"
  },
  "epl-more:59": {
-  "at": "2026-10-30T10:56:45Z",
+  "at": "2026-10-30T15:22:21Z",
   "h": "3cb548e6f2",
+  "note": "premierleague.com: founded in 1899 as Boscombe Football Club, AFC Bournemouth from 1971",
   "v": "ok"
  },
  "epl-more:6": {
@@ -2770,8 +2767,9 @@
   "v": "ok"
  },
  "epl-more:9": {
-  "at": "2026-10-30T10:56:45Z",
+  "at": "2026-10-30T15:22:21Z",
   "h": "9deb6d1b3b",
+  "note": "premierleague.com records: 7.69 seconds, Shane Long (Watford v Southampton, 24 April 2019)",
   "v": "ok"
  },
  "epl:0": {
@@ -2835,8 +2833,9 @@
   "v": "ok"
  },
  "epl:18": {
-  "at": "2026-10-30T10:56:45Z",
+  "at": "2026-10-30T15:22:21Z",
   "h": "9b166a7fb9",
+  "note": "premierleague.com records: 658, James Milner, from 2002/03",
   "v": "ok"
  },
  "epl:19": {
@@ -3024,9 +3023,9 @@
   "v": "ok"
  },
  "epl:5": {
-  "at": "2026-10-30T10:56:45Z",
+  "at": "2026-10-30T15:22:21Z",
   "h": "a9510a1ee7",
-  "note": "Southampton 0–9 Leicester (Oct 2019) is the record away win, Man United’s 9–0 was at home",
+  "note": "premierleague.com records: 0–9 Southampton v Leicester City (25 October 2019), the biggest away win",
   "v": "ok"
  },
  "epl:6": {
@@ -3050,7 +3049,7 @@
   "v": "ok"
  },
  "epl:9": {
-  "at": "2026-10-30T10:56:45Z",
+  "at": "2026-10-30T15:22:21Z",
   "h": "115ad799c3",
   "v": "ok"
  },
@@ -3412,7 +3411,7 @@
   "v": "ok"
  },
  "intl-men:7": {
-  "at": "2026-10-30T10:56:45Z",
+  "at": "2026-10-30T15:22:21Z",
   "h": "7f6d8b0ed1",
   "v": "ok"
  },
@@ -3603,7 +3602,7 @@
   "v": "ok"
  },
  "intl-women:36": {
-  "at": "2026-10-30T10:56:45Z",
+  "at": "2026-10-30T15:22:21Z",
   "h": "45ee47fd2e",
   "v": "ok"
  },
@@ -3639,7 +3638,7 @@
   "v": "ok"
  },
  "intl-women:42": {
-  "at": "2026-10-30T10:56:45Z",
+  "at": "2026-10-30T15:22:21Z",
   "h": "7b618dcd0f",
   "v": "ok"
  },
@@ -3747,7 +3746,7 @@
   "v": "ok"
  },
  "intl-women:60": {
-  "at": "2026-10-30T10:56:45Z",
+  "at": "2026-10-30T15:22:21Z",
   "h": "92a9bb62c5",
   "v": "ok"
  },
@@ -3757,8 +3756,9 @@
   "v": "ok"
  },
  "intl-women:62": {
-  "at": "2026-10-30T10:56:45Z",
+  "at": "2026-10-30T15:22:21Z",
   "h": "71b0fb706f",
+  "note": "fifa.com: the SBS poll after a 1995 match, Matildas beat Soccertoos, Blue Flyers, Waratahs and Lorikeets",
   "v": "ok"
  },
  "intl-women:63": {
@@ -4041,7 +4041,7 @@
   "v": "ok"
  },
  "laliga:5": {
-  "at": "2026-10-30T10:56:45Z",
+  "at": "2026-10-30T15:22:21Z",
   "h": "0026513668",
   "v": "ok"
  },
@@ -4077,9 +4077,9 @@
   "v": "ok"
  },
  "laliga:56": {
-  "at": "2026-10-30T10:56:45Z",
-  "h": "71ec7a329c",
-  "note": "laliga.com: “ELCLASICO became the first football match ever televised on Spanish television” (Feb 15, 1959), so “ever” holds",
+  "at": "2026-10-30T15:22:21Z",
+  "h": "9075b12795",
+  "note": "laliga.com: “the first football match ever televised on Spanish television” (Feb 15, 1959), and the 1959 Clásico was a league match, so the narrower “league match” holds",
   "v": "ok"
  },
  "laliga:6": {
@@ -4771,7 +4771,7 @@
   "v": "ok"
  },
  "ligamx:47": {
-  "at": "2026-10-30T10:56:45Z",
+  "at": "2026-10-30T15:22:21Z",
   "h": "f974c84117",
   "v": "ok"
  },
@@ -4998,9 +4998,9 @@
   "v": "ok"
  },
  "ligue1:21": {
-  "at": "2026-10-30T10:56:45Z",
+  "at": "2026-10-30T15:22:21Z",
   "h": "d772a66d3d",
-  "note": "ligue1.com calls him “French football’s longest serving manager”, so “club manager” is a fair reading",
+  "note": "ligue1.com: “French football’s longest serving manager”, so “club manager” is a fair reading",
   "v": "ok"
  },
  "ligue1:22": {
@@ -5460,7 +5460,7 @@
   "v": "ok"
  },
  "lingo-more:37": {
-  "at": "2026-10-30T10:56:45Z",
+  "at": "2026-10-30T15:22:21Z",
   "h": "ca1d10b844",
   "v": "ok"
  },
@@ -5565,7 +5565,7 @@
   "v": "ok"
  },
  "lingo-more:54": {
-  "at": "2026-10-30T10:56:45Z",
+  "at": "2026-10-30T15:22:21Z",
   "h": "74722c48b5",
   "v": "ok"
  },
@@ -6303,8 +6303,9 @@
   "v": "ok"
  },
  "nicknames:6": {
-  "at": "2026-10-30T10:56:45Z",
+  "at": "2026-10-30T15:22:21Z",
   "h": "5a01baf879",
+  "note": "premierleague.com: the red-striped shirts or the Cooper-Dean estate’s cherry trees",
   "v": "ok"
  },
  "nicknames:60": {
@@ -6580,9 +6581,8 @@
   "v": "ok"
  },
  "nwsl:42": {
-  "at": "2026-10-30T10:56:45Z",
+  "at": "2026-10-30T15:22:21Z",
   "h": "b7a13e5664",
-  "note": "The appositive is there for the hook, but it reads fine and is true",
   "v": "ok"
  },
  "nwsl:43": {
@@ -6930,12 +6930,12 @@
   "v": "ok"
  },
  "parents:38": {
-  "at": "2026-10-30T10:56:45Z",
+  "at": "2026-10-30T15:22:21Z",
   "h": "b09ac6af23",
   "v": "ok"
  },
  "parents:39": {
-  "at": "2026-10-30T10:56:45Z",
+  "at": "2026-10-30T15:22:21Z",
   "h": "cec9df28de",
   "v": "ok"
  },
@@ -7935,7 +7935,7 @@
   "v": "ok"
  },
  "soccer:37": {
-  "at": "2026-10-30T10:56:45Z",
+  "at": "2026-10-30T15:22:21Z",
   "h": "1e52e4d278",
   "v": "ok"
  },
@@ -8004,7 +8004,7 @@
   "v": "fix"
  },
  "soccer:46": {
-  "at": "2026-10-30T10:56:45Z",
+  "at": "2026-10-30T15:22:21Z",
   "h": "fa612487ef",
   "v": "ok"
  },
@@ -8131,7 +8131,7 @@
   "v": "ok"
  },
  "ucl:18": {
-  "at": "2026-10-30T10:56:45Z",
+  "at": "2026-10-30T15:22:21Z",
   "h": "b107b7f00d",
   "v": "ok"
  },
@@ -8371,7 +8371,7 @@
   "v": "ok"
  },
  "ucl:53": {
-  "at": "2026-10-30T10:56:45Z",
+  "at": "2026-10-30T15:22:21Z",
   "h": "b789bc4bb1",
   "v": "ok"
  },
@@ -8519,8 +8519,9 @@
   "v": "ok"
  },
  "wc26:16": {
-  "at": "2026-10-30T10:56:45Z",
+  "at": "2026-10-30T15:22:21Z",
   "h": "ef715c69a7",
+  "note": "fifa.com match report: his 121st appearance made him England’s outfield player with the most outings",
   "v": "ok"
  },
  "wc26:17": {
