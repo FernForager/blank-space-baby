@@ -420,9 +420,11 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .rvk { display: none; }
 #p-end.rv-on .endrow > * { display: none; }
 #p-end.rv-on .endrow > .rvk { display: flex; align-items: center; justify-content: center; min-height: 52px; }
-#r-prev, #r-next { flex: none; width: 64px; }
-.rvk.rv-exit { flex: 1; }
-.rvk:disabled { opacity: .35; }
+#p-end.rv-on .endrow > .rvpair { align-items: stretch; gap: 10px; }   /* the arrows side by side in the countdown's half, Exit in Review's, so the row keeps its two halves going in and out (Morg, Oct 30, 2026) */
+.rvk.rv-exit, .rvpair { flex: 1 1 0; min-width: 0; }
+#p-end .endrow > #e-review, #p-end .endrow > #r-exit { flex: 0 0 calc(50% - 5px); }   /* Review and Exit hold exactly half the row, and what sits beside them fills the other half */
+#r-prev, #r-next { flex: 1 1 0; min-width: 0; display: flex; align-items: center; justify-content: center; }
+#r-prev:disabled, #r-next:disabled { opacity: .35; }
 @media (max-height: 640px) { .endrow .rvkey, #p-end.rv-on .endrow > .rvk { min-height: 48px; } }
 @media (max-width: 359px) { .endrow .rvkey svg, .endrow .next.key svg { display: none; } }   /* the smallest phones: the keys give their icons' room to the words */
 #v-end.review { justify-content: flex-start; align-items: stretch; gap: 0; cursor: pointer; }
@@ -471,7 +473,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     <div class="pv" id="p-gate"></div>
     <div class="pv choices" id="choices"></div>
     <div class="gorow" id="g-play"><button class="bk flag" id="b-flag" type="button" hidden></button><button class="key go gokey wait" id="go" type="button" tabindex="-1" data-t-label="play.next"></button><button class="bk lock" id="b-lock" type="button" hidden></button></div>
-    <div class="pv" id="p-end"><div class="sharerow"><button class="key share" id="share" type="button"><span class="kl"><span class="sg-l" data-t="end.sgrid"></span><span id="share-mark"></span></span><span class="txt bubble"><span id="share-top"></span><span id="share-txt"></span></span></button><button class="key sboard" id="sboard" type="button"><span class="kl"><span class="sg-l" data-t="end.sboard"></span><span id="sboard-mark"></span></span><span class="photo" id="sb-thumb" aria-hidden="true"></span></button></div><div class="endrow"><button class="bk flag" id="e-flag" type="button" hidden></button><button class="key rvkey" id="e-review" type="button"></button><button class="next key" id="e-next" type="button" hidden></button><button class="again key" id="e-again" type="button" hidden></button><button class="key rvk" id="r-prev" type="button"></button><button class="key rvk rv-exit" id="r-exit" type="button"></button><button class="key rvk" id="r-next" type="button"></button><button class="bk lock" id="e-lock" type="button" hidden></button></div></div>
+    <div class="pv" id="p-end"><div class="sharerow"><button class="key share" id="share" type="button"><span class="kl"><span class="sg-l" data-t="end.sgrid"></span><span id="share-mark"></span></span><span class="txt bubble"><span id="share-top"></span><span id="share-txt"></span></span></button><button class="key sboard" id="sboard" type="button"><span class="kl"><span class="sg-l" data-t="end.sboard"></span><span id="sboard-mark"></span></span><span class="photo" id="sb-thumb" aria-hidden="true"></span></button></div><div class="endrow"><button class="bk flag" id="e-flag" type="button" hidden></button><button class="key rvkey" id="e-review" type="button"></button><button class="next key" id="e-next" type="button" hidden></button><button class="again key" id="e-again" type="button" hidden></button><button class="key rvk rv-exit" id="r-exit" type="button"></button><span class="rvk rvpair"><button class="key" id="r-prev" type="button"></button><button class="key" id="r-next" type="button"></button></span><button class="bk lock" id="e-lock" type="button" hidden></button></div></div>
   </div>
 </div>
 <div class="bimg" id="bimg" hidden><img id="bimg-i" data-t-alt="image.alt"><button class="key" id="bimg-x" type="button" data-t="image.close"></button></div>
