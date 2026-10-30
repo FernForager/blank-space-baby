@@ -18,7 +18,7 @@ export async function onRequestPost({ request, env }) {
   try { d = await request.json(); } catch (e) { return json({ error: 'not JSON' }, 400); }
   const n = d && Array.isArray(d.ids) ? d.ids.length : 0;   // nine cards a day since Oct 27, 2026, and a 15-card day finished earlier can still arrive
   const ok = (n === 9 || n === 15) && typeof d === 'object' && Number.isInteger(d.day) && d.day >= 0 && d.day < 100000 &&
-    d.ids.every(x => CARD.test(String(x))) &&
+    d.ids.every(x => typeof x === 'string' && CARD.test(x)) && new Set(d.ids).size === n &&   // n different cards (the audit, Oct 30, 2026)
     Array.isArray(d.res) && d.res.length === n && d.res.every(x => x === 1 || x === 2) &&
     Array.isArray(d.path) && d.path.length === n && new Set(d.path).size === n && d.path.every(x => Number.isInteger(x) && x >= 0 && x < n);
   if (!ok) return json({ error: 'not a finished board' }, 400);

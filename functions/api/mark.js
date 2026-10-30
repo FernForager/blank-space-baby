@@ -21,7 +21,7 @@ export async function onRequestPost({ request, env }) {
   let d;
   try { d = await request.json(); } catch (e) { return json({ error: 'not JSON' }, 400); }
   if (!d || typeof d !== 'object') return json({ error: 'not a mark' }, 400);
-  if (!CARD.test(String(d.card || '')) || !HASH.test(String(d.hash || '')) || !MARKS.has(d.mark)) return json({ error: 'not a mark' }, 400);
+  if (typeof d.card !== 'string' || typeof d.hash !== 'string' || !CARD.test(d.card) || !HASH.test(d.hash) || !MARKS.has(d.mark)) return json({ error: 'not a mark' }, 400);
   const note = typeof d.note === 'string' ? d.note.trim().slice(0, 500) : '';
   const snap = JSON.stringify(d.snap && typeof d.snap === 'object' ? d.snap : {}).slice(0, 2000);
   const day = Number.isInteger(d.day) && d.day >= 0 && d.day < 100000 ? d.day : null;

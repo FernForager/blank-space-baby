@@ -17,7 +17,7 @@ export async function onRequestPost({ request, env }) {
   const edits = d && Array.isArray(d.edits) ? d.edits : null;
   if (!edits || !edits.length || edits.length > 200) return json({ error: 'no edits' }, 400);
   for (const e of edits) {
-    if (!e || !ID.test(String(e.id || '')) || typeof e.to !== 'string' || typeof e.from !== 'string' || e.to.length > 500 || e.from.length > 500) return json({ error: 'not an edit' }, 400);
+    if (!e || typeof e.id !== 'string' || !ID.test(e.id) || typeof e.to !== 'string' || typeof e.from !== 'string' || e.to.length > 500 || e.from.length > 500) return json({ error: 'not an edit' }, 400);
   }
   const body = JSON.stringify(edits.map(e => ({ id: e.id, from: e.from, to: e.to.trim() })));
   await env.DB.prepare('INSERT INTO texts (body, host, at) VALUES (?, ?, ?)').bind(body, url.hostname, new Date().toISOString()).run();
