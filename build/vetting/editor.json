@@ -6554,14 +6554,10 @@
   "v": "ok"
  },
  "parents:38": {
-  "at": "2026-10-30T10:41:45Z",
-  "fix": {
-   "ex": "Dad says he is a striker at heart, but he is more of a couch potato",
-   "hook": "striker"
-  },
-  "h": "cee7fe5c4c",
-  "note": "says soccer or football in passing (Morg, Oct 26, 2026): the striker at heart sharpens the joke against couch potato, new hook measured in a real tile at 402, 375 and 320 wide: fits, no split",
-  "v": "fix"
+  "at": "2026-10-30T10:48:05Z",
+  "h": "b09ac6af23",
+  "note": "the desk’s wording keeps the original joke, a self-styled fan who only watches, and the game keeps it in the sport without the word",
+  "v": "ok"
  },
  "parents:39": {
   "at": "2026-10-30T10:41:45Z",
