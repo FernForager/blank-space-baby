@@ -390,14 +390,10 @@
   "v": "ok"
  },
  "alpha:67": {
-  "at": "2026-10-30T16:01:57Z",
-  "fix": {
-   "ex": "The striker in the movie never misses a penalty and is a Mary Sue",
-   "hook": "movie"
-  },
-  "h": "0d2bad7a1d",
-  "note": "slang decks take no proper names, real or made up, and World Cup is one, in the sentence and on the tile: the striker and the penalty carry the sport, and movie is the clue to a too-perfect character, new hook measured in a real tile at 402, 375 and 320 wide: fits, no split",
-  "v": "fix"
+  "at": "2026-10-30T16:04:38Z",
+  "h": "1c469f5411",
+  "note": "striker puts the sport on the tile, a word from the sentence, never the answer. It is the third striker hook in the deck (alpha:0, alpha:21), fine since the draw keeps shared hooks off one board",
+  "v": "ok"
  },
  "alpha:68": {
   "at": "2026-10-17T00:25:20Z",
