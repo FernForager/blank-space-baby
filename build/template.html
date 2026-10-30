@@ -503,6 +503,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     // color sprites: K ink, W white
     ball:  ['...KKKKK...','.KKWWWWWKK.','.KWWWKWWWK.','KWWWKKKWWWK','KKWWKKKWWKK','KWKWWWWWKWK','KWWKWWWKWWK','KWWKKWKKWWK','.KWKKWKKWK.','.KKWWWWWKK.','...KKKKK...'],
     next:  ['...#...','...##..','######.','#######','######.','...##..','...#...'],
+    look:  ['...###.....','.##...##...','.#.....#...','#.......#..','#.......#..','#.......#..','.#.....#...','.##...##...','...###..##.','.........##','..........#'],   // Review's magnifying glass (Morg, Oct 30, 2026: an arrow beside Next read as going on)
     slash: ['......##','.....##.','....##..','...##...','..##....','.##.....','##......'],   // the score's slash, as thick as the arcade digits
     // the pixel ball (Morg, Oct 28, 2026), drawn from the game's own ball on a 19-pixel grid, the heart a pentagon pointing up at the
     // top patch: only the sign's line uses it now, as the ⚽ in “Daily ⚽ trivia shootout”, its outline in the text's own color and its
@@ -1159,7 +1160,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     $('p-end').classList.add('rv-on'); $('r-prev').disabled = k === 0; $('r-next').disabled = !more;
     flick(); guard();
   }
-  $('e-review').innerHTML = '<span data-tid="end.review">' + th('end.review') + '</span>' + svg('next', 2);
+  $('e-review').innerHTML = '<span data-tid="end.review">' + th('end.review') + '</span>' + svg('look', 2);
   $('e-review').addEventListener('click', function () { review(0); });
   $('r-prev').innerHTML = svg('back', 3); $('r-prev').setAttribute('aria-label', tx('review.prevLabel')); $('r-prev').dataset.tLabel = 'review.prevLabel';
   $('r-next').innerHTML = svg('next', 3); $('r-next').setAttribute('aria-label', tx('review.nextLabel')); $('r-next').dataset.tLabel = 'review.nextLabel';
