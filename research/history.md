@@ -1,6 +1,6 @@
 # Triviela: how the game got here (Oct 14 to Oct 30, 2026)
 
-The history that used to fill CLAUDE.md, moved here on Oct 30, 2026 (Morg’s yes, hub decision `audit`, item 4) so a fresh session reads only the game as built and his rules. Every section is the old brief’s text, whole and unedited, in date order, each under a note saying what it was and where its surviving rules now live. CLAUDE.md wins where the two disagree. `DOSSIER.md` is older still: the arcade game’s handoff of Oct 14, with its tried-and-dropped list and gotchas.
+The history that used to fill CLAUDE.md, moved here on Oct 30, 2026 (Morg’s yes, hub decision `audit`, item 4) so a fresh session reads only the game as built and his rules (since a second slimming the same day, the game as built is `GAME.md`). Every section is the old brief’s text, whole and unedited, in date order, each under a note saying what it was and where its surviving rules now live. CLAUDE.md wins where the two disagree. `DOSSIER.md` is older still: the arcade game’s handoff of Oct 14, with its tried-and-dropped list and gotchas.
 
 **Versions, in order:** the old plan and the arcade (Oct 14 to 17) → the daily, 18 cards (Oct 16 to 17) → the polish pass (Oct 17 to 18) → the shootout, 15 cards, milestone 1 (Oct 19) → the 5×3 board (Oct 19) → back to milestone 1 (Oct 22) → milestone 2 and Morg’s notes (Oct 25 to 26) → hand-made boards (Oct 26) → nine cards (Oct 27) → green for easy and the tidy-up update (Oct 28 to 29) → the audit and Morg’s first nine (Oct 29 to 30).
 
