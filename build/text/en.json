@@ -146,7 +146,7 @@
   "share.title": "Triviela #{day}β",
   "@share.title": { "note": "The share text's first line, also shown on the share key. The β marks the playtest's numbers, which start over at launch (Morg, Oct 26, 2026)", "slot": "shareKey", "placeholders": { "day": { "example": "42", "widest": "365" } } },
   "share.site": "triviela.net",
-  "@share.site": { "note": "The share text's last line, on the share key and at the bottom of the image", "slot": "shareKey" },
+  "@share.site": { "note": "The share text's last line, so a phone shows the link's preview, and the bottom of the image. Not in the share key's bubble (Morg, Oct 30, 2026)", "slot": "shareKey" },
   "share.label": "Share: {text}",
   "@share.label": { "note": "Spoken name of the share key", "placeholders": { "text": { "example": "Triviela #42, ..." } } },
 
