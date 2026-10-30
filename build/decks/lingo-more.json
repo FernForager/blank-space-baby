@@ -497,7 +497,8 @@
       "hook": "bench",
       "k": "lingo",
       "src": "https://www.merriam-webster.com/dictionary/eleven",
-      "d": 1
+      "d": 1,
+      "wr": ["ten", "twelve"]
     },
     {
       "w": "footy",
