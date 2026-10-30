@@ -894,10 +894,16 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   if (DEV && params.has('reset')) { store.del('bsb-daily'); params.delete('reset'); history.replaceState(null, '', location.pathname + (params.toString() ? '?' + params : '')); }
   function today() { return FIXED !== null ? FIXED : DEMO ? demoDay() : ONE ? 0 : Math.max(0, dayOf(new Date())); }
   function demoDay() { return Math.min(DEMO - 1, Math.max(0, store.get('bsb-demo', 0) | 0)); }   // the playtest's place in its run of boards
+  function token() {   // one random mark per board, new every board so it never names a phone: the results table keeps each board once (the audit, Morg's yes, Oct 30, 2026)
+    var a = new Array(16), c = window.crypto || window.msCrypto;
+    if (c && c.getRandomValues) { var u = new Uint8Array(8); c.getRandomValues(u); for (var i = 0; i < 8; i++) { a[2 * i] = (u[i] >> 4).toString(16); a[2 * i + 1] = (u[i] & 15).toString(16); } }
+    else for (var j = 0; j < 16; j++) a[j] = Math.floor(Math.random() * 16).toString(16);
+    return a.join('');
+  }
   function fresh(day) {
     var b = deal(day);
     var tiles = [].concat(b[0], b[1], b[2]);
-    return { v: 6, day: day, tiles: tiles.map(function (c) { return { id: c.id, h: c.fp, lk: c.lk, d: c.d, hook: c.hook, w: c.w, m: c.m, ex: c.ex, ch: choices(c, day) }; }),
+    return { v: 6, day: day, tk: token(), tiles: tiles.map(function (c) { return { id: c.id, h: c.fp, lk: c.lk, d: c.d, hook: c.hook, w: c.w, m: c.m, ex: c.ex, ch: choices(c, day) }; }),
       res: tiles.map(function () { return 0; }), open: -1, path: [], slots: [] };   // v 6: Morg's first nine and steadier choices (Oct 30, 2026), so every phone starts them fresh. v 5: nine cards (Oct 27, 2026). v 3 brought fresh cards and near-miss numbers, v 2 the shootout's first 15
   }
   function load() {
@@ -1126,7 +1132,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     var s = S; posting = true; s.sending = Date.now(); save();   // the day being sent, even if a new day takes its place before the answer comes back
     try {
       fetch('/api/result', { method: 'POST', keepalive: true, headers: { 'content-type': 'application/json' },
-        body: JSON.stringify({ day: s.day, ids: s.tiles.map(function (t) { return t.id; }), res: s.res, path: s.path }) })
+        body: JSON.stringify({ day: s.day, ids: s.tiles.map(function (t) { return t.id; }), res: s.res, path: s.path, token: s.tk }) })
         .then(function (r) { posting = false; s.sending = 0; if (r.ok) s.sent = true; if (s === S) save(); }, function () { posting = false; s.sending = 0; if (s === S) save(); });
     } catch (e) { posting = false; s.sending = 0; }
   }

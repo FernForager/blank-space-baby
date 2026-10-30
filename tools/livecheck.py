@@ -79,7 +79,7 @@ async def main():
         clip = await pg.evaluate("navigator.clipboard.readText()")
         ok(clip == expected(s, n), 'the share text is exact: ' + repr(clip))
         ok(len(posts) == 1 and posts[0]['day'] == s['day'] and len(posts[0]['ids']) == N and posts[0]['res'] == s['res'] and sorted(posts[0]['path']) == list(range(N))
-           and len(set(posts[0]['ids'])) == N and all(re.fullmatch(r'[a-z0-9-]{1,30}:\d{1,5}', x) for x in posts[0]['ids']), f'one result post, well formed by the server’s own rules, caught before the server ({len(posts)})')
+           and len(set(posts[0]['ids'])) == N and all(re.fullmatch(r'[a-z0-9-]{1,30}:\d{1,5}', x) for x in posts[0]['ids']) and re.fullmatch(r'[0-9a-f]{16}', posts[0].get('token', '')), f'one result post, well formed by the server’s own rules, with its board token, caught before the server ({len(posts)})')
         ok(not beta, 'no calls to the beta’s services ' + str(beta))
         ok(not errs, 'no script errors ' + str(errs))
         await ctx.close(); await b.close()

@@ -1,5 +1,5 @@
 // The playtest's anonymous results (Morg, Oct 19, 2026). A Cloudflare Pages Function, served at /api/result.
-//   POST {day, ids, res, path}   records one finished board: the puzzle (day 0 is #1), its 9 card ids in board order (15 before Oct 27, 2026),
+//   POST {day, ids, res, path, token}   records one finished board (token: the board's own random mark, so a retry can't count it twice): the puzzle (day 0 is #1), its 9 card ids in board order (15 before Oct 27, 2026),
 //                                each one's result (1 right, 2 wrong) and the order they were tapped
 // Nothing about who played: no name, no device id, no IP stored. Rows go to the triviela-beta database (the DB binding in
 // wrangler.toml), into its results table, and tools/results.py sums them up. The beta's rows say host 'beta', so Morg's own
@@ -23,7 +23,8 @@ export async function onRequestPost({ request, env }) {
     Array.isArray(d.path) && d.path.length === n && new Set(d.path).size === n && d.path.every(x => Number.isInteger(x) && x >= 0 && x < n);
   if (!ok) return json({ error: 'not a finished board' }, 400);
   const score = d.res.filter(x => x === 1).length;
-  await env.DB.prepare('INSERT INTO results (day, score, ids, res, path, host, at) VALUES (?, ?, ?, ?, ?, ?, ?)')
-    .bind(d.day, score, d.ids.join(' '), d.res.join(''), d.path.join(' '), where, new Date().toISOString()).run();
+  const token = typeof d.token === 'string' && /^[0-9a-f]{16}$/.test(d.token) ? d.token : null;   // the board's own mark: a retry after a lost reply is ignored (unique index, the audit, Oct 30, 2026)
+  await env.DB.prepare('INSERT OR IGNORE INTO results (day, score, ids, res, path, host, at, token) VALUES (?, ?, ?, ?, ?, ?, ?, ?)')
+    .bind(d.day, score, d.ids.join(' '), d.res.join(''), d.path.join(' '), where, new Date().toISOString(), token).run();
   return json({ ok: true });
 }
