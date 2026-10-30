@@ -152,3 +152,31 @@ All from nwslsoccer.com recaps. Each count could still grow on Nov 1, so none is
 - Mel Barcenas set the record for goals by a teenager in one season, seven by Oct 20, 2026, and Vanessa DiBernardo’s 33rd regular-season assist put her second all time, behind Seattle’s Sofia Huerta (35) (https://www.nwslsoccer.com/news/matchweek-25-recap-washington-spirit-clinch-playoff-spot-angel-city-mount-3-goal-comeback, Oct 20, 2026). The recap doesn’t name Barcenas’s club.
 - Marta earned her 20th career assist, the fourth player with 40 goals and 20 assists for one club (the same recap).
 - Rafaelle, whom the league credits as the first Brazilian to blaze the trail before Marta and others came (she was on Houston’s first roster, 2014), will retire at the end of the year after four seasons with Orlando (the Oct 27 recap, fact 2).
+
+## Leads (news only so far, never cards)
+- **Messi, the second man to 900 goals, after Ronaldo.** In AP and TimesLive reports only. No official page we read says it. Inter Miami’s and mlssoccer.com’s stories on the 900th don’t mention Ronaldo.
+- **Ronaldo, the first man to 900 goals.** In ESPN and beIN only. A search snippet quoted an spl.com.sa story saying he was the first to 900 senior goals, but that page now returns 404. fpf.pt (Portugal’s federation) would be the natural proof, and it refuses this workspace’s fetches.
+- **How long Messi lasted on his debut.** Official pages disagree (47 seconds, under a minute, 90 seconds, 92 seconds, two minutes): fact 17. Never on a card.
+- **Messi’s Barcelona numbers.** 778 games on fcbarcelona.com and mlssoccer.com, 780 on Inter Miami’s 2023 signing page. Assists: 305 on fcbarcelona.com, 291 on Inter Miami’s page. Use goals only (672 on all three).
+- **Messi’s Argentina caps and goals.** fifa.com (Sept 15, 2026) says 125 goals in 207 caps before his farewell game against Benin, and afa.com.ar (Oct 6, 2026) says 207 games and 126 goals after it. One of the two cap counts is off by a game. Check both before any card on his caps.
+- **Ronaldo’s age when he joined Sporting.** 11 on uefa.com (2007), 12 on a sporting.pt page seen only in a search snippet (sporting.pt sends every visit to its ticket site). Write “as a boy,” or use 11 with the uefa.com page.
+- **Ronaldo’s Sporting debut, Aug 14, 2002.** A lead only, since sporting.pt couldn’t be read.
+- **Al Nassr since 2023.** spl.com.sa says he signed in late December 2022, the Premier League’s data says he joined on Jan 1, 2023. Say “since the end of 2022” or “joined Al Nassr in 2023” only with the matching source.
+- **Messi, the first individual footballer to win the Princess of Asturias Award for Sports.** In news reports only. The fpa.es laureates list shows the last twelve winners (2015 to 2026, Messi the only footballer among them). The older years would settle it, from the same list’s earlier pages.
+- **Charlyn Corral’s award as the Gerd Müller Trophy, and as a first for Mexico.** News reports call it the Gerd Müller Trophy. uefa.com calls it Women’s Striker of the Year. Whether she is the first Mexican winner of any Ballon d’Or night award needs the full winners list (ballondor.com refuses this workspace’s fetches, uefa.com’s laureates page covers only the Ballon d’Or itself).
+- **Alexia Putellas and London City Lionesses.** uefa.com lists her as “FC Barcelona/London City Lionesses FC,” so she moved during the year. When and how is news only so far.
+- **Kane’s 2025–26 goals.** News reports give 61 in 51 games and 73. uefa.com says 73 for club and country, so use 73 with that page.
+- **Stale leads corrected:** the NWSL Golden Boot leader has 20, not 15 (fact 4), Gotham lead by three points, not four (fact 2), and Decision Day is one Sunday, not three days (fact 3).
+
+## Watch list
+| Recheck on | What changes | Facts |
+|---|---|---|
+| Nov 2, 2026 | NWSL Decision Day (Nov 1): the Shield winner (Gotham’s first or San Diego’s second), Sanchez’s final total and whether the record is hers alone, Bethune’s final assist count, the eighth playoff place, the seeds | 1 to 6 |
+| Nov 9, 2026 | NWSL quarterfinals (Nov 6–8) | 8 |
+| Nov 8, 2026 | MLS Decision Day (Nov 7, by research/nine/mls-nwsl.md): Messi’s Golden Boot (25 goals on Oct 26) and Nashville’s points record chase | research/nine/mls-nwsl.md |
+| Nov 16, 2026 | NWSL semifinals (Nov 13–15) | 8 |
+| Nov 19, 2026 | NWSL Awards (Nov 18): MVP and the season’s other awards | 9 |
+| Nov 22, 2026 | the 2026 NWSL Championship (Nov 21, Audi Field): the champion | 9 |
+| every Al Nassr game | Ronaldo’s career total (985 on Oct 29, 2026, by spl.com.sa) and the 1,000th goal | 19 |
+| Messi’s next trophy | his record 48 for club and country (fpa.es counted 47 in June, before the Campeones Cup) | 15, research/nine/messi.md |
+| fall 2027 | the next Ballon d’Or: Messi’s eight, Putellas’s and Bonmatí’s three | 12, 14 |
