@@ -422,17 +422,14 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 #p-end.rv-on .endrow > .rvk { display: flex; align-items: center; justify-content: center; min-height: 52px; }
 #p-end .endrow > #e-review, #p-end .endrow > #r-back { flex: 0 0 calc(50% - 5px); }   /* Review and Back hold exactly half the row, and what sits beside them fills the other half */
 @media (max-height: 640px) { .endrow .rvkey, #p-end.rv-on .endrow > .rvk { min-height: 48px; } }
-/* the arrows on the screen, under the card's meaning (Morg, Oct 30, 2026: "the arrows should probably up under the cards"), glowing like the play screen's own arrow */
-.rv-nav { display: flex; justify-content: center; gap: 24px; margin-top: -4px; }
-.rv-nav button { width: 64px; height: 44px; padding: 0; border: 0; background: none; color: var(--glow); cursor: pointer; display: flex; align-items: center; justify-content: center; filter: drop-shadow(0 0 6px rgba(92,240,154,.8)); -webkit-tap-highlight-color: transparent; }
+/* the arrows on the screen, at the right end of the card's top line (Morg, Oct 30, 2026: "the arrows should probably up under the cards",
+   then "I like the top arrows for everything"), glowing like the play screen's own arrow, outside the top line's aria-hidden */
+.rv { position: relative; }
+.rv-nav { position: absolute; top: -8.5px; right: -10px; display: flex; }
+.rv-nav button { width: 48px; height: 44px; padding: 0; border: 0; background: none; color: var(--glow); cursor: pointer; display: flex; align-items: center; justify-content: center; filter: drop-shadow(0 0 6px rgba(92,240,154,.8)); -webkit-tap-highlight-color: transparent; }
 .rv-nav button:active:not(:disabled) { transform: translateY(1px); }
 .rv-nav button:disabled { opacity: .3; cursor: default; filter: none; }
 .rv-nav button:focus-visible { outline: 3px solid var(--glow); outline-offset: 2px; }
-@media (max-height: 640px) {   /* the smallest phone has no room under its longest cards, so the arrows sit at the end of the top line */
-  .rv { position: relative; }
-  .rv-nav { position: absolute; top: -8.5px; right: -10px; margin: 0; gap: 0; }
-  .rv-nav button { width: 48px; }
-}
 @media (max-width: 359px) { .endrow .rvkey svg, .endrow .next.key svg { display: none; } }   /* the smallest phones: the keys give their icons' room to the words */
 #v-end.review { justify-content: flex-start; align-items: stretch; gap: 0; cursor: pointer; }
 .rv { flex: 1; min-height: 0; display: flex; flex-direction: column; }
@@ -1161,7 +1158,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   }
   // ---- your cards, again (Morg, Oct 26, 2026: a finished day should never feel like a dead end) ----
   // Review (Morg, Oct 28, 2026, in place of the line saying to tap a card) opens card one on the screen, its answer filled in and its
-  // meaning under it and ◀ ▶ under that, and Review turns into Back, the countdown staying beside it (Morg, Oct 30, 2026): the arrows
+  // meaning under it, ◀ ▶ at the end of its top line, and Review turns into Back, the countdown staying beside it (Morg, Oct 30, 2026): the arrows
   // step through the cards, green first, then yellow, then red, and Back goes back to the grid. Tapping a mark in the grid still opens
   // its card, and a tap on the screen still steps on
   var REV = -1;   // the card on the screen, by its place in the grid (0 to 8), or -1 for the grid itself
