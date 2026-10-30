@@ -22,6 +22,7 @@ The history that used to fill CLAUDE.md, moved here on Oct 30, 2026 (Morg’s ye
 - Oct 28 and 29, 2026: The tidy-up update (Morg, Oct 28, 2026: live on triviela.net since Oct 29)
 - Oct 29 and 30, 2026: The audit (Oct 29–30, 2026, Morg’s ask at max effort)
 - Oct 15, 2026: Open
+- Oct 14 to 30, 2026: The go-live log (moved from CLAUDE.md on Oct 30, 2026)
 
 ---
 
@@ -265,3 +266,9 @@ Five fresh reviewers read the whole codebase, and the clear bugs were fixed on `
 - Final boss game: TBD (Morg decides).
 - Morg may rename or redraw any icon. The Soccer Lingo HUD icon (a ball) is the weakest. A jersey was offered.
 
+---
+
+> **Oct 30, 2026.** Every go-live to triviela.net up to a6b134f, newest first, as CLAUDE.md’s “Where things are” logged it. Moved here when the brief was slimmed to playbook v2’s 15k tokens. New go-lives are logged here, one line each, and CLAUDE.md keeps only the current live commit.
+
+## The go-live log (Oct 14 to 30, 2026)
+- **Live on triviela.net:** `main` a6b134f, pushed in the small hours of Oct 30, 2026 (Seattle) at Morg’s “Go live, then postmortem” in chat: the new end panel (two share keys, a chat bubble and a photo as identical squares, Review with its magnifying glass beside the Next countdown), the square Share board picture, categories in full ink, no focus ring round the board, and the daily back on underneath looping Morg’s nine (`LOOP = 1`, `START` Oct 30, so tonight’s #1 carried over and tomorrow is #2). `tools/golive.py` all good, `tools/livecheck.py` passed on its first run. Before it, 14c80a1, the same night: the Share board picture’s ligature fix (“Finals” no longer draws as “Anals”), and the share key and the picture stacked like the text share. `tools/golive.py` all good, `tools/livecheck.py` passed on its first run. Before it, 3c664c3, the same night at Morg’s “Go live” in chat: the clean share text (no score line, no tagline, GOLAZO! only on a perfect day). `tools/golive.py` all good, `tools/livecheck.py` passed on its first run (waiting 30 seconds past the deploy). Before it, f6313c9, the same evening (TRIVELLE 4’s first go-live): the audit’s whole open list fixed, the slim brief, and the Play key after a late finish. Today’s fixed board unchanged, so the go-live was quiet. `tools/golive.py` all good. `tools/livecheck.py` failed one check on its first run, a minute after the push, then passed twice in a row: most likely the new build hadn’t reached every server yet. Before it: Morg’s first nine as #1 (4e0c4f4, Oct 29 evening), the tidy-up update (9b41b32, Oct 29 morning), the nine (c2f8351, Oct 27 night), milestone 2 and Morg’s notes (Oct 25 and 26), milestone 1 (Oct 19), the first daily (Oct 17), the arcade (Oct 14).
