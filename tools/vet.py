@@ -286,16 +286,27 @@ def import_marks(path):
     if isinstance(rows, dict): rows = rows.get('results', [])
     mpath = os.path.join(B.VET, 'morg.json')
     state = B.load_json(mpath, {'last': 0, 'cards': {}})
-    new = []
+    new, held = [], []
+    def current(cid):   # the card's fingerprint now, or None for a card that doesn't exist
+        did, _, i = cid.partition(':')
+        path = os.path.join(B.DECKS, did + '.json')
+        if not re.fullmatch(r'[a-z0-9-]+', did) or not i.isdigit() or not os.path.exists(path): return None
+        deck = json.load(open(path))
+        return B.fingerprint(deck, int(i)) if int(i) < len(deck['items']) else None
     for r in sorted(rows, key=lambda r: int(r['id'])):
         if int(r['id']) <= state['last']: continue
         state['last'] = int(r['id']); cid, m = r['card'], r['mark']
+        # Anyone who finds a preview link can post a mark (the audit, Oct 30, 2026), so a lock must name the card as it is
+        # now, and an unlock the lock it lifts. Anything else waits for Morg to confirm it.
+        if (m == 'lock' and r['hash'] != current(cid)) or (m == 'unlock' and state['cards'].get(cid, {}).get('m') == 'lock' and r['hash'] != state['cards'][cid]['h']):
+            held.append(r); continue
         if m in ('flag', 'lock'): state['cards'][cid] = {'m': m, 'h': r['hash'], 'note': r.get('note') or '', 'at': r['at'], 'row': int(r['id'])}
         elif state['cards'].get(cid, {}).get('m') == m[2:]: del state['cards'][cid]   # unflag clears a flag, unlock a lock
         new.append(r)
     save_json(mpath, state)
     for r in new: print(f"{r['id']}  {r['mark']:7} {r['card']}  {r.get('note') or ''}")
-    print(f'{len(new)} new marks, up to row {state["last"]}')
+    for r in held: print(f"HELD {r['id']}  {r['mark']:7} {r['card']}: its fingerprint {r['hash']} doesn't match the card, so ask Morg before recording it by hand")
+    print(f'{len(new)} new marks' + (f', {len(held)} held' if held else '') + f', up to row {state["last"]}')
 
 if __name__ == '__main__':
     a = sys.argv[1:]

@@ -1,6 +1,6 @@
 """Apply Morg's text edits from the beta's text editor (research/text-system.md) to build/text/en.json.
 
-    python3 tools/textedits.py FILE     # FILE: the saved reply to SELECT id, body, at FROM texts WHERE applied = 0 ORDER BY id
+    python3 tools/textedits.py FILE [--confirm]   # FILE: the saved reply to SELECT id, body, at FROM texts WHERE applied = 0 ORDER BY id
 
 Read the rows with the Cloudflare tool (the triviela-beta database), save the reply, run this, then rebuild, run
 tools/textcheck.py, and mark the rows done: UPDATE texts SET applied = 1 WHERE id <= <the last id this prints>.
@@ -19,18 +19,24 @@ def rows(path):
     if isinstance(d, dict) and 'results' in d: d = d['results']
     return sorted(d, key=lambda r: r['id'])
 
-def main(path):
+GUARDED = ('brand', 'share.site', 'share.title', 'image.file', 'meta.description')
+
+def main(path, confirm=False):
     src = open(EN).read()
     text, meta = strings.load()
     final, last = {}, 0
     for r in rows(path):
         last = max(last, r['id'])
         for e in json.loads(r['body']): final[e['id']] = (e['from'], e['to'], r['at'])
-    done, skipped = [], []
+    done, skipped, held = [], [], []
     for k, (was, to, at) in final.items():
         if k not in text: skipped.append(f'{k}: no such string now'); continue
         if text[k] == to: continue
         if text[k] != was: skipped.append(f'{k}: changed since the edit (now “{text[k]}”, edit was from “{was}” to “{to}”)'); continue
+        # anyone who finds a preview link can post an edit (the audit, Oct 30, 2026): the game's name and address, and any
+        # new web or email address, wait for Morg to say the edit is his
+        if not confirm and (k in GUARDED or re.search(r'[\w-]+\.[a-z]{2,}\b|@', to.replace(was, ''))):
+            held.append(f'{k}: “{text[k]}” → “{to}” (the game’s name or address, or a new web address: confirm with Morg, then rerun with --confirm)'); continue
         pat = re.compile(r'^(\s*' + re.escape(json.dumps(k)) + r':\s*)' + re.escape(json.dumps(text[k], ensure_ascii=False)) + r'(,?\s*)$', re.M)
         if len(pat.findall(src)) != 1: skipped.append(f'{k}: couldn’t find its line in en.json'); continue
         src = pat.sub(lambda m: m.group(1) + json.dumps(to, ensure_ascii=False) + m.group(2), src)
@@ -40,10 +46,12 @@ def main(path):
         new, newmeta = strings.load()   # the same checks as the build, before anything else runs
         bad = [p for p in strings.problems(new, newmeta, open(os.path.join(os.path.dirname(strings.TEXT), 'template.html')).read()) if p[0] in final]
         for p in bad: print('problem:', p)
-    print(f'{len(done)} applied' + (f', {len(skipped)} skipped' if skipped else ''))
+    print(f'{len(done)} applied' + (f', {len(skipped)} skipped' if skipped else '') + (f', {len(held)} held' if held else ''))
     for x in done: print('  ', x)
     for x in skipped: print('   skipped', x)
-    if last: print(f'then: UPDATE texts SET applied = 1 WHERE id <= {last}')
+    for x in held: print('   held', x)
+    if last and not held: print(f'then: UPDATE texts SET applied = 1 WHERE id <= {last}')
+    elif last: print('held edits stay unapplied: once Morg confirms, rerun with --confirm, then mark the rows done')
 
 if __name__ == '__main__':
-    main(sys.argv[1])
+    main(sys.argv[1], '--confirm' in sys.argv[2:])
