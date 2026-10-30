@@ -1,6 +1,6 @@
 # Triviela — brief for every session
 
-Read this first. It holds the decisions already made so nobody re-learns them. Then read DOSSIER.md for where things stand, what’s been tried and what’s next.
+Read this first. It holds the decisions already made so nobody re-learns them. DOSSIER.md is history from the old arcade game (its tried-and-dropped list still helps), and `research/audit-2026-10-30.md` is the latest full audit.
 
 ## What it is
 **Triviela** (trivia + trivela, the outside-of-the-foot curling kick, Morg's coinage on Oct 15, 2026. One L. Portuguese spells the kick "trivela" and has no "triviela" variant, so the extra i is ours and deliberate) is a public, standalone soccer trivia game: a daily puzzle in an arcade-cabinet look. It began as a word game for Morg's daughter's youth team (Seattle Celtic G14) and grew into its own thing on Oct 16, 2026. It's a standalone game first. Morg may still embed it in Carpool HQ's Arcade later, for fun. Built by Morg (owner, names everything, approves all player-facing text) with Claude. Domain: triviela.net, live since Oct 17, 2026: registered at Squarespace, with Cloudflare’s nameservers (anton and marjory) pointing it and www at the Pages project. The old address https://fernforager.github.io/blank-space-baby/ still works too, with its own saved progress. The repo, that address and the saved-progress keys (`bsb-…`) keep the old name Blank Space Baby on purpose.
@@ -61,8 +61,17 @@ python3 tools/livecheck.py           # after: plays today’s board on triviela.
 - `functions/api/mark.js` and `wrangler.toml`: the beta’s flag and lock service on Cloudflare Pages, with its database `triviela-beta` (D1, id 28b9326e-e80a-433a-ab24-64c0c11712fe). While `wrangler.toml` exists, Pages takes its settings from the file, not the dashboard.
 - `docs/`: what GitHub Pages serves (index.html, icons, manifest, `sw.js` for offline play, `og.png` for link previews). Don't hand-edit docs/index.html. Rebuild it. Rerun `python3 tools/og.py` if the look or the icons change.
 - Preview links: Cloudflare Pages (project blank-space-baby, output `docs`, no build command) deploys every pushed branch to `https://<branch>.blank-space-baby.pages.dev` within a minute or two. Give Morg that link with every branch so he can play it on his phone before merging. `main` also deploys to https://blank-space-baby.pages.dev, but GitHub Pages stays the official link.
-- Cloud sessions run `.claude/hooks/session-start.sh` at startup: it installs Playwright for Python (1.56.0, matching the preinstalled Chromium). The fonts come with the game (`docs/fonts/`), and every test tool serves them through `tools/docsroute.py`, so screenshots are right from the first minute. A new tool that renders the page must route through it too.
+- Cloud sessions run `.claude/hooks/session-start.sh` at startup: it installs Playwright for Python (1.56.0, matching the preinstalled Chromium) and copies the game’s two fonts into `~/.fonts` as a fallback. This build loads Pixelify Sans and Press Start 2P from Google Fonts, the self-hosted `docs/fonts/` belong to `beta-oct22` (the audit, Oct 30, 2026), and `tools/docsroute.py` serves the page and anything under `docs/` to the tools that use it.
 - Test in headless Chromium at device scale 3 (the iPhone is 3×, so 2× hides jaggies) (Playwright is preinstalled in Claude's cloud workspace) at 402×744 (his phone in the Claude viewer), 375×667 and 320×568. Every screen must fit with no scrolling. Zoom in on punctuation, line ends and icon pixels before calling anything done, not just the whole screen at a glance.
+
+## The audit (Oct 29–30, 2026, Morg’s ask at max effort)
+Five fresh reviewers read the whole codebase, and the clear bugs were fixed on `daily` (`research/audit-2026-10-30.md` has every finding and what’s still open). The rules it leaves behind:
+- **Choices hold still:** `choices()` ranks wrong answers by their own hash and gives near misses and the button order their own random streams, so a card in or out of a deck never moves another card’s choices. Spelled counts (four, eight) get spelled near misses, and year near misses follow the puzzle’s date.
+- **One result per board,** shared between tabs (`S.sending`), and two tabs on one day merge their answers on every save, every other tab’s save and every return to the tab.
+- **Preview links are open to anyone who finds them,** so the marks sync holds a lock or unlock whose fingerprint doesn’t match, and textedits.py holds edits to the game’s name or address. Cloudflare Access on the previews is the real fix (Morg’s switch).
+- **The service worker deletes only caches named `bsb-`:** fernforager.github.io holds Morg’s other games too.
+- **The checks fail when they should:** golive.py checks triviela.net serves the build it compares and excuses a changed board only when its number changes or the save version does, sweep.py fails on boards that play, and lifecycle.py has a pass with real phone taps.
+- **A card with its own two wrong answers (`wr`) needs no kind** (adding one used to send its deck-mates back to the reviewers), and the build checks `wr` like any answer.
 
 ## Palette (locked Oct 15, 2026, shared with Carpool HQ)
 Hex is the standard for screens. For print, convert with the Pantone Connect app, never from memory.
