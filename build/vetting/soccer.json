@@ -187,8 +187,9 @@
   "v": "ok"
  },
  "alpha:22": {
-  "at": "2026-10-30T15:22:21Z",
-  "h": "290511a5cf",
+  "at": "2026-10-30T16:03:49Z",
+  "h": "18bbc6c87c",
+  "note": "Video game shoot-outs keeps it about the sport without a name",
   "v": "ok"
  },
  "alpha:23": {
@@ -491,10 +492,13 @@
   "v": "fix"
  },
  "alpha:67": {
-  "at": "2026-10-30T15:22:21Z",
-  "h": "0d2bad7a1d",
-  "note": "World Cup is the soccer word in the sentence and keeps the tile off the fiction hint",
-  "v": "ok"
+  "at": "2026-10-30T16:03:49Z",
+  "fix": {
+   "hook": "striker"
+  },
+  "h": "bcd7bc140b",
+  "note": "The editor is right that World Cup is a proper name, my miss. Slang tiles name the soccer word (SPEC), and striker is the Mary Sue herself, so it names the topic without the movie’s hint toward fiction",
+  "v": "fix"
  },
  "alpha:68": {
   "at": "2026-10-17T00:18:40Z",
@@ -1477,8 +1481,9 @@
   "v": "ok"
  },
  "basics:154": {
-  "at": "2026-10-30T15:22:21Z",
-  "h": "fe9e0524f7",
+  "at": "2026-10-30T16:03:49Z",
+  "h": "5ad29f916c",
+  "note": "Field is the word for our families",
   "v": "ok"
  },
  "basics:155": {
@@ -1566,8 +1571,9 @@
   "v": "ok"
  },
  "basics:27": {
-  "at": "2026-10-30T15:22:21Z",
-  "h": "3fd22abcf8",
+  "at": "2026-10-30T16:03:49Z",
+  "h": "8e45438295",
+  "note": "theifab.com general modifications cover the halves and the halves of extra time",
   "v": "ok"
  },
  "basics:28": {
@@ -2519,9 +2525,8 @@
   "v": "ok"
  },
  "epl-more:29": {
-  "at": "2026-10-30T15:22:21Z",
-  "h": "ec20f098e8",
-  "note": "Small one for the editor: a manager is a title winner more than “the champion”, but it reads fine",
+  "at": "2026-10-30T16:03:49Z",
+  "h": "40248558be",
   "v": "ok"
  },
  "epl-more:3": {
@@ -4041,8 +4046,8 @@
   "v": "ok"
  },
  "laliga:5": {
-  "at": "2026-10-30T15:22:21Z",
-  "h": "0026513668",
+  "at": "2026-10-30T16:03:49Z",
+  "h": "1f46e65ef9",
   "v": "ok"
  },
  "laliga:50": {
@@ -6303,9 +6308,9 @@
   "v": "ok"
  },
  "nicknames:6": {
-  "at": "2026-10-30T15:22:21Z",
-  "h": "5a01baf879",
-  "note": "premierleague.com: the red-striped shirts or the Cooper-Dean estate’s cherry trees",
+  "at": "2026-10-30T16:03:49Z",
+  "h": "9797205139",
+  "note": "premierleague.com gives both, the red-striped shirts and the cherry trees of the Cooper-Dean estate",
   "v": "ok"
  },
  "nicknames:60": {
@@ -8371,8 +8376,9 @@
   "v": "ok"
  },
  "ucl:53": {
-  "at": "2026-10-30T15:22:21Z",
-  "h": "b789bc4bb1",
+  "at": "2026-10-30T16:03:49Z",
+  "h": "7207e24fdc",
+  "note": "European is a thin hook, but the sentence has nothing more specific that fits and isn’t the answer",
   "v": "ok"
  },
  "ucl:54": {
