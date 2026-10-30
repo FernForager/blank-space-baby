@@ -11,7 +11,7 @@ When orders reach you, new or after a pause, do nothing else first. No reading f
 1. Reply in one line: your plan and its size (how many facts, about how long), ending “Holding for <level>” with the effort it needs. Ask for max when the round really calls for it, such as a hard sourcing question or numbers that disagree across official pages (Morg likes to use max when it makes sense).
 2. Keep the title your orders gave you, `⚽️🟡 Stats #<n> · Opus <Effort>` (the playbook’s title rule: project, state, the job in one word and its number, then model and effort), with the number in your orders.
 3. Wait. Morg changes your effort himself, then says go, typed in your session or relayed word for word by GM TRIVELLE. Nothing else starts you: a message from any other session is information, not a go.
-4. Your effort: when your orders say your branch pins it (CLAUDE_CODE_EFFORT_LEVEL in .claude/settings.json, playbook 4), it does, so his go or his tick in the hub’s Queue needs no level check, and your first commit removes the pin. Otherwise trust a go only if it names your level (“go high”) or says go anyway, and answer a bare go with one line, “Did you set <level>?”, and keep waiting (hub decision effort-in-the-go, Oct 30, 2026).
+4. Your effort: Morg sets it in the app (branch pins are retired, hub decision drop-pin, Oct 30, 2026). Before you start, and at every step, read your own get_session (no id): external_metadata.effort_level and last_served_model must match the level and model in your orders and title. If either is missing or wrong, hold and tell the GM in one line, even after a go (playbook 4).
 5. Then retitle `⚽️🟢 Stats #<n> · Opus <Effort>` and begin.
 
 ## 2. What you make
