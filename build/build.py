@@ -114,7 +114,7 @@ def item_problems(level, items, clash, it, hooks=True):
     if len(w) > 22: bad.append(tag + ('answer over 22 characters',))
     if hooks: bad += [tag + (p, it.get('hook')) for p in hook_problems(it)]
     same = [x for x in items if x is not it and not x.get('out') and x.get('k', 'word') == it['k'] and not clash(x['w'], w)]   # cut cards are never offered
-    if not it.get('out') and not any(not clash(x['w'], y['w']) for x in same for y in same if x is not y):
+    if not it.get('out') and len(it.get('wr') or []) < 2 and not any(not clash(x['w'], y['w']) for x in same for y in same if x is not y):   # Morg's own two wrong answers (wr) need no kind to draw from
         bad.append(tag + ('not enough same-kind wrong answers',))
     return bad
 
@@ -219,7 +219,7 @@ def main(test_copy=None):
             m = marks.get(cid)
             if st == 'locked' and m['h'] != h: problems.append((did, it['w'], 'locked by Morg but changed since: undo the change or ask him to unlock it'))
             if st in ('out', 'flagged') or (BETA_VETTED_ONLY and st == 'pending' and not test_copy): continue
-            x = {k: it[k] for k in ('w', 'means', 'ex', 'k', 'hook', 'd', 'wr') if k in it}   # wr: Morg's own wrong answers
+            x = {k: it[k] for k in ('w', 'means', 'ex', 'k', 'hook', 'd', 'wr', 'tag') if k in it}   # wr: Morg's own wrong answers. tag: the card's own category, over its deck's
             x['i'], x['h'] = i, h   # the card's place in its deck and its fingerprint: the beta's flag and lock keys send both
             if st == 'locked': x['lk'] = 1
             if lg == '*': x['lg'] = league(lg, it)
@@ -252,6 +252,9 @@ def main(test_copy=None):
         print('\nText problems (build/text/en.json):')
         for p in bad: print('  ', p)
         sys.exit(1)
+    tagless = sorted({f"{d['id']}:{x['i']} tag {x['tag']}" for d in decks for x in d['items'] if 'tag' in x and 'tag.' + x['tag'] not in text})
+    if tagless:
+        print('\nCards with a tag build/text has no string for (add tag.<id> to en.json):'); [print('  ', t) for t in tagless]; sys.exit(1)
     print(f'Text: {len(text)} strings in {len(slots)} slots')
     tpl = tpl.replace('/*__TYPE__*/', strings.slot_css(slots)).replace('__FIT__', json.dumps(strings.slot_fit(slots)))
     pm, ps = strings.page_meta(meta, slots)
