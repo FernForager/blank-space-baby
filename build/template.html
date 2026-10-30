@@ -271,9 +271,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 /* the share key shows the exact text it sends: the shootout grid in the game's pixel ball and ✕, one line per row */
 .sgrid { display: grid; grid-template-columns: repeat(3, 11px); grid-auto-rows: 11px; gap: 3px 3px; padding-block: 2px; align-items: center; justify-items: center; }
 .sgrid .no { color: #E0464B; }
-#share-txt { display: grid; grid-template-columns: auto 1fr; column-gap: 14px; row-gap: 3px; align-items: end; }   /* the grid beside the score and the site, so the key stays short */
-#share-txt .sgrid { grid-row: 1 / span 3; }
-#share-txt { grid-template-rows: 1fr auto auto; } #share-txt [data-tid] { grid-column: 2; } #share-txt [data-tid="golazo"] { grid-row: 2; } #share-txt [data-tid="share.site"] { grid-row: 3; }   /* the link at the foot of the grid, as it ends the text, GOLAZO! over it on a perfect day (Oct 30, 2026) */
+#share-txt { display: grid; grid-template-columns: auto; row-gap: 3px; justify-items: start; }   /* stacked as the text sends it (Morg, Oct 30, 2026): the grid, GOLAZO! on a perfect day, then the site */
 .egrid .em .mk, .sgrid .mk { display: block; }
 .sgrid svg { display: block; }
 .sgrid.se { grid-template-columns: repeat(3, 14px); grid-auto-rows: 14px; gap: 1px 2px; font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji', sans-serif; font-size: 12px; line-height: 1; }
@@ -1262,7 +1260,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     g.strokeStyle = '#00843D'; g.lineWidth = 12; g.strokeRect(6, 6, W - 12, H - 12);
     g.textAlign = 'center'; g.textBaseline = 'alphabetic';
     g.font = '64px "Press Start 2P"'; g.fillStyle = '#5CF09A'; g.shadowColor = 'rgba(92,240,154,.7)'; g.shadowBlur = 18; g.fillText(tx('image.title'), W / 2, 124);
-    var n = chips(), sc = tx('image.score', { day: S.day + 1, score: n === ALLN ? GOLAZO : score() }).split('/'); g.shadowBlur = 0; g.font = '40px "Press Start 2P"'; g.fillStyle = '#FFFFFF';
+    var n = chips(), sc = tx('image.score', { day: S.day + 1 }).split('/'); g.shadowBlur = 0; g.font = '40px "Press Start 2P"'; g.fillStyle = '#FFFFFF';
     var sw = sc.length > 1 ? 45 : 0, sx = W / 2 - (g.measureText(sc.join('')).width + sw * (sc.length - 1)) / 2, sy = 200 - g.measureText('0').actualBoundingBoxAscent;   // the score, with the game's own slash
     g.textAlign = 'left'; sc.forEach(function (part, k) {
       if (k) { SPR.slash.forEach(function (r, yy) { for (var xx = 0; xx < r.length; xx++) if (r[xx] === '#') g.fillRect(sx + xx * 5, sy + yy * 5, 5, 5); }); sx += sw; }
@@ -1310,8 +1308,8 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
       var ms = S.res[i] === 1 ? 60 : 53; bwDraw(x + CW - 18 - ms, y + 16 + (60 - ms) / 2, ms, S.res[i] === 1);   // right or missed, in its corner: the played tile's own marks
       card(x + 30, y + 21, 34, 48, t.d);   // and its color in the other corner (Oct 28, 2026: no headers over the columns)
     });
-    g.font = '600 44px "Pixelify Sans"'; g.fillStyle = '#EAFBF0'; g.fillText(nolig(tx('share.site')), W / 2, H - 86);
-    g.font = '26px "Press Start 2P"'; g.fillStyle = '#C9FFDD'; g.fillText(tx('share.tagline').replace(/⚽\uFE0F?\s*/g, '').toUpperCase(), W / 2, H - 38);   // what the game is, like the sign's line
+    if (n === ALLN) { g.font = '40px "Press Start 2P"'; g.fillStyle = '#5CF09A'; g.shadowColor = 'rgba(92,240,154,.7)'; g.shadowBlur = 18; g.fillText(GOLAZO, W / 2, H - 112); g.shadowBlur = 0; }   // stacked as the text share is (Morg, Oct 30, 2026): GOLAZO! on a perfect day only, then the site
+    g.font = '600 44px "Pixelify Sans"'; g.fillStyle = '#EAFBF0'; g.fillText(nolig(tx('share.site')), W / 2, H - 50);
     return c;
   }
   $('sboard').innerHTML = '<span data-tid="end.sboard">' + th('end.sboard') + '</span>' + svg('share', 2);
