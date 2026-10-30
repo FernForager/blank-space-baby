@@ -137,9 +137,13 @@
   "v": "ok"
  },
  "alpha:22": {
-  "at": "2026-10-16T23:55:32Z",
-  "h": "8a2a410f73",
-  "v": "ok"
+  "at": "2026-10-30T10:41:45Z",
+  "fix": {
+   "ex": "After a day of World Cup video games, Mom said to touch grass"
+  },
+  "h": "2b8d7ad884",
+  "note": "says soccer or football in passing (Morg, Oct 26, 2026): the game named by its biggest event",
+  "v": "fix"
  },
  "alpha:23": {
   "at": "2026-10-16T23:55:32Z",
@@ -197,9 +201,14 @@
   "v": "ok"
  },
  "alpha:33": {
-  "at": "2026-10-17T00:25:20Z",
+  "at": "2026-10-30T10:41:45Z",
+  "fix": {
+   "ex": "Three hours of goofy goal clips gave the striker brain rot",
+   "hook": "goal clips"
+  },
   "h": "0875b2d2a0",
-  "v": "ok"
+  "note": "says soccer or football in passing (Morg, Oct 26, 2026): goal clips keeps it in the sport, new hook measured in a real tile at 402, 375 and 320 wide: fits, no split",
+  "v": "fix"
  },
  "alpha:34": {
   "at": "2026-10-17T00:09:05Z",
@@ -385,9 +394,14 @@
   "v": "ok"
  },
  "alpha:67": {
-  "at": "2026-10-17T00:15:22Z",
+  "at": "2026-10-30T10:41:45Z",
+  "fix": {
+   "ex": "The striker in the World Cup movie never misses and is a Mary Sue",
+   "hook": "movie"
+  },
   "h": "da79349482",
-  "v": "ok"
+  "note": "says soccer or football in passing (Morg, Oct 26, 2026): new hook measured in a real tile at 402, 375 and 320 wide: fits, no split",
+  "v": "fix"
  },
  "alpha:68": {
   "at": "2026-10-17T00:25:20Z",
@@ -525,9 +539,13 @@
   "v": "ok"
  },
  "alpha:92": {
-  "at": "2026-10-17T00:25:20Z",
+  "at": "2026-10-30T10:41:45Z",
+  "fix": {
+   "ex": "Pastel bows on cleats are very preppy"
+  },
   "h": "ad8beacf49",
-  "v": "ok"
+  "note": "says soccer or football in passing (Morg, Oct 26, 2026): cleats carries the sport alone",
+  "v": "fix"
  },
  "alpha:93": {
   "at": "2026-10-16T23:55:32Z",
@@ -724,13 +742,12 @@
   "v": "ok"
  },
  "awards:37": {
-  "at": "2026-10-17T00:15:30Z",
+  "at": "2026-10-30T10:41:45Z",
   "fix": {
-   "ex": "Marcin Oleksy won the 2022 FIFA Puskás Award with a scissors kick",
-   "hook": "Puskás"
+   "means": "A star of the amputee game"
   },
-  "h": "e0112b410d",
-  "note": "scissors kick, to match MW, Dictionary.com and the lingo deck. Spelled right it runs past 12 characters, so the hook is now Puskás",
+  "h": "b5de0b6c6e",
+  "note": "says soccer or football in passing (Morg, Oct 26, 2026):",
   "v": "fix"
  },
  "awards:38": {
@@ -1204,9 +1221,13 @@
   "v": "ok"
  },
  "basics:14": {
-  "at": "2026-10-16T23:57:03Z",
+  "at": "2026-10-30T10:41:45Z",
+  "fix": {
+   "ex": "In youth games, a player taken off who later comes back on is a return substitute"
+  },
   "h": "7adb35f639",
-  "v": "ok"
+  "note": "says soccer or football in passing (Morg, Oct 26, 2026):",
+  "v": "fix"
  },
  "basics:140": {
   "at": "2026-10-16T23:57:03Z",
@@ -1278,9 +1299,15 @@
   "v": "ok"
  },
  "basics:152": {
-  "at": "2026-10-16T23:57:03Z",
+  "at": "2026-10-30T10:41:45Z",
+  "fix": {
+   "ex": "The player who defends the goal is the goalkeeper",
+   "hook": "defends",
+   "means": "Hockey and lacrosse have them too"
+  },
   "h": "c845c50488",
-  "v": "ok"
+  "note": "says soccer or football in passing (Morg, Oct 26, 2026): hockey moves to the means line with lacrosse, new hook measured in a real tile at 402, 375 and 320 wide: fits, no split",
+  "v": "fix"
  },
  "basics:153": {
   "at": "2026-10-16T23:57:03Z",
@@ -1292,9 +1319,13 @@
   "v": "fix"
  },
  "basics:154": {
-  "at": "2026-10-16T23:57:03Z",
+  "at": "2026-10-30T10:41:45Z",
+  "fix": {
+   "ex": "The word striker is another name for a forward on the pitch"
+  },
   "h": "c10d6b0481",
-  "v": "ok"
+  "note": "says soccer or football in passing (Morg, Oct 26, 2026):",
+  "v": "fix"
  },
  "basics:155": {
   "at": "2026-10-16T23:57:03Z",
@@ -1337,12 +1368,12 @@
   "v": "ok"
  },
  "basics:2": {
-  "at": "2026-10-16T23:57:03Z",
+  "at": "2026-10-30T10:41:45Z",
   "fix": {
-   "ex": "Soccer shoes with grips on the bottom go by the name cleats"
+   "ex": "Shoes for the field with grips on the bottom go by the name cleats"
   },
-  "h": "f6f100731a",
-  "note": "Plural verb ruled out the singular wrong answers. “Go by the name” fits any",
+  "h": "312a5a5f01",
+  "note": "says soccer or football in passing (Morg, Oct 26, 2026):",
   "v": "fix"
  },
  "basics:20": {
@@ -1385,12 +1416,13 @@
   "v": "ok"
  },
  "basics:27": {
-  "at": "2026-10-16T23:57:03Z",
+  "at": "2026-10-30T10:41:45Z",
   "fix": {
-   "ex": "In youth soccer, halves may be shorter than the usual 45 minutes"
+   "ex": "In youth games, halves may be shorter than the usual 45 minutes",
+   "hook": "45 minutes"
   },
-  "h": "cefb1a370b",
-  "note": "Smoother: youth soccer doesn’t play its own halves",
+  "h": "7e60116c16",
+  "note": "says soccer or football in passing (Morg, Oct 26, 2026): the old hook had the word, the 45 minutes is a better clue, new hook measured in a real tile at 402, 375 and 320 wide: fits, no split",
   "v": "fix"
  },
  "basics:28": {
@@ -1509,9 +1541,13 @@
   "v": "ok"
  },
  "basics:48": {
-  "at": "2026-10-17T00:25:20Z",
+  "at": "2026-10-30T10:41:45Z",
+  "fix": {
+   "ex": "The goalmouth is the area directly in front of the net"
+  },
   "h": "ff75aa47d7",
-  "v": "ok"
+  "note": "says soccer or football in passing (Morg, Oct 26, 2026): the other sport isn’t needed",
+  "v": "fix"
  },
  "basics:49": {
   "at": "2026-10-16T23:57:03Z",
@@ -1579,9 +1615,13 @@
   "v": "ok"
  },
  "basics:60": {
-  "at": "2026-10-16T23:57:03Z",
+  "at": "2026-10-30T10:41:45Z",
+  "fix": {
+   "ex": "By rule, every goalpost on the field must be white"
+  },
   "h": "9933bc35df",
-  "v": "ok"
+  "note": "says soccer or football in passing (Morg, Oct 26, 2026):",
+  "v": "fix"
  },
  "basics:61": {
   "at": "2026-10-16T23:57:03Z",
@@ -1589,9 +1629,13 @@
   "v": "ok"
  },
  "basics:62": {
-  "at": "2026-10-16T23:57:03Z",
+  "at": "2026-10-30T10:41:45Z",
+  "fix": {
+   "ex": "In youth games, the goal’s width and the height of its crossbar may change"
+  },
   "h": "ff8b7619c6",
-  "v": "ok"
+  "note": "says soccer or football in passing (Morg, Oct 26, 2026):",
+  "v": "fix"
  },
  "basics:63": {
   "at": "2026-10-16T23:57:03Z",
@@ -1697,12 +1741,12 @@
   "v": "ok"
  },
  "basics:8": {
-  "at": "2026-10-16T23:57:03Z",
+  "at": "2026-10-30T10:41:45Z",
   "fix": {
-   "ex": "The stiff pad over the front of the leg below the knee goes by the name shin guard"
+   "means": "Hockey players wear them too"
   },
-  "h": "5e8eb9da45",
-  "note": "“is a ___” ruled out the plural wrong answers",
+  "h": "161aaf83bf",
+  "note": "says soccer or football in passing (Morg, Oct 26, 2026): M-W’s own example sports include hockey",
   "v": "fix"
  },
  "basics:80": {
@@ -2250,9 +2294,13 @@
   "v": "ok"
  },
  "epl-more:23": {
-  "at": "2026-10-16T23:57:25Z",
+  "at": "2026-10-30T10:41:45Z",
+  "fix": {
+   "ex": "Sunderland began in 1879 as a club for local teachers"
+  },
   "h": "68cc570588",
-  "v": "ok"
+  "note": "says soccer or football in passing (Morg, Oct 26, 2026):",
+  "v": "fix"
  },
  "epl-more:24": {
   "at": "2026-10-16T23:57:25Z",
@@ -2280,9 +2328,15 @@
   "v": "ok"
  },
  "epl-more:29": {
-  "at": "2026-10-16T23:57:25Z",
+  "at": "2026-10-30T10:42:16Z",
+  "fix": {
+   "ex": "With Man City, Manuel Pellegrini became the first non-European boss to win the title",
+   "hook": "Man City",
+   "means": "From Chile, the champion in 2013–14"
+  },
   "h": "5aa6597c7b",
-  "v": "ok"
+  "note": "hook too wide for the 320-wide phone even shrunk (tilecheck): non-European stays in the sentence, the club becomes the hook and Chile moves to the means line, new hook measured in a real tile at 402, 375 and 320 wide: fits, no split",
+  "v": "fix"
  },
  "epl-more:3": {
   "at": "2026-10-16T23:57:25Z",
@@ -2460,9 +2514,14 @@
   "v": "fix"
  },
  "epl-more:59": {
-  "at": "2026-10-16T23:57:25Z",
+  "at": "2026-10-30T10:41:45Z",
+  "fix": {
+   "ex": "The Cherries began in 1899 under the name Boscombe",
+   "hook": "Cherries"
+  },
   "h": "b4e702dc77",
-  "v": "ok"
+  "note": "hook too wide for the 320-wide phone even shrunk (tilecheck): and says soccer or football in passing (Morg, Oct 26, 2026): Boscombe Football Club becomes the name Boscombe, the club named by its nickname for a short hook, the full name still in the means line, new hook measured in a real tile at 402, 375 and 320 wide: fits, no split",
+  "v": "fix"
  },
  "epl-more:6": {
   "at": "2026-10-16T23:57:25Z",
@@ -2523,9 +2582,13 @@
   "v": "ok"
  },
  "epl-more:9": {
-  "at": "2026-10-16T23:57:25Z",
+  "at": "2026-10-30T10:41:45Z",
+  "fix": {
+   "hook": "7.69 seconds"
+  },
   "h": "16774b5952",
-  "v": "ok"
+  "note": "hook too wide for the 320-wide phone even shrunk (tilecheck): the time itself is the hook, new hook measured in a real tile at 402, 375 and 320 wide: fits, no split",
+  "v": "fix"
  },
  "epl:0": {
   "at": "2026-10-17T00:09:05Z",
@@ -2579,9 +2642,14 @@
   "v": "ok"
  },
  "epl:18": {
-  "at": "2026-10-16T23:54:41Z",
+  "at": "2026-10-30T10:41:45Z",
+  "fix": {
+   "ex": "James Milner has played the most matches in Premier League history",
+   "hook": "most matches"
+  },
   "h": "e162a49b3e",
-  "v": "ok"
+  "note": "hook too wide for the 320-wide phone even shrunk (tilecheck): appearances becomes matches played, the same record, new hook measured in a real tile at 402, 375 and 320 wide: fits, no split",
+  "v": "fix"
  },
  "epl:19": {
   "at": "2026-10-16T23:54:41Z",
@@ -2754,9 +2822,13 @@
   "v": "ok"
  },
  "epl:5": {
-  "at": "2026-10-16T23:54:41Z",
+  "at": "2026-10-30T10:41:45Z",
+  "fix": {
+   "hook": "away win"
+  },
   "h": "dabaae9cac",
-  "v": "ok"
+  "note": "hook too wide for the 320-wide phone even shrunk (tilecheck): from the sentence’s own record away win, new hook measured in a real tile at 402, 375 and 320 wide: fits, no split",
+  "v": "fix"
  },
  "epl:6": {
   "at": "2026-10-17T00:09:05Z",
@@ -2774,9 +2846,14 @@
   "v": "ok"
  },
  "epl:9": {
-  "at": "2026-10-16T23:54:41Z",
+  "at": "2026-10-30T10:41:45Z",
+  "fix": {
+   "ex": "The Premier League, England’s top tier, has 20 clubs",
+   "hook": "top tier"
+  },
   "h": "bb16f6d85b",
-  "v": "ok"
+  "note": "hook too wide for the 320-wide phone even shrunk (tilecheck): premier-league-explained calls it the top tier, new hook measured in a real tile at 402, 375 and 320 wide: fits, no split",
+  "v": "fix"
  },
  "intl-men:0": {
   "at": "2026-10-17T00:09:05Z",
@@ -3109,9 +3186,13 @@
   "v": "ok"
  },
  "intl-men:7": {
-  "at": "2026-10-17T00:09:05Z",
+  "at": "2026-10-30T10:41:45Z",
+  "fix": {
+   "hook": "World Cups"
+  },
   "h": "4a544d0036",
-  "v": "ok"
+  "note": "hook too wide for the 320-wide phone even shrunk (tilecheck): new hook measured in a real tile at 402, 375 and 320 wide: fits, no split",
+  "v": "fix"
  },
  "intl-men:8": {
   "at": "2026-10-17T00:09:05Z",
@@ -3279,9 +3360,13 @@
   "v": "ok"
  },
  "intl-women:36": {
-  "at": "2026-10-16T23:58:53Z",
+  "at": "2026-10-30T10:41:45Z",
+  "fix": {
+   "ex": "Women’s teams first played at the Olympics in 1996"
+  },
   "h": "6644ffc769",
-  "v": "ok"
+  "note": "says soccer or football in passing (Morg, Oct 26, 2026):",
+  "v": "fix"
  },
  "intl-women:37": {
   "at": "2026-10-16T23:58:53Z",
@@ -3314,9 +3399,13 @@
   "v": "ok"
  },
  "intl-women:42": {
-  "at": "2026-10-16T23:58:53Z",
+  "at": "2026-10-30T10:41:45Z",
+  "fix": {
+   "ex": "The USA women have won five Olympic gold medals"
+  },
   "h": "4bd4eb1b92",
-  "v": "ok"
+  "note": "says soccer or football in passing (Morg, Oct 26, 2026):",
+  "v": "fix"
  },
  "intl-women:43": {
   "at": "2026-10-16T23:58:53Z",
@@ -3416,9 +3505,13 @@
   "v": "ok"
  },
  "intl-women:60": {
-  "at": "2026-10-16T23:58:53Z",
+  "at": "2026-10-30T10:41:45Z",
+  "fix": {
+   "ex": "The FIFA Marta Award honors the year’s best goal in the women’s game"
+  },
   "h": "fcd4abddb8",
-  "v": "ok"
+  "note": "says soccer or football in passing (Morg, Oct 26, 2026):",
+  "v": "fix"
  },
  "intl-women:61": {
   "at": "2026-10-16T23:58:53Z",
@@ -3426,12 +3519,12 @@
   "v": "ok"
  },
  "intl-women:62": {
-  "at": "2026-10-16T23:58:53Z",
+  "at": "2026-10-30T10:42:06Z",
   "fix": {
-   "ex": "Australia’s women got their nickname, the Matildas, from a 1995 TV poll"
+   "means": "Picked over Blue Flyers and Lorikeets"
   },
-  "h": "49059e3fdb",
-  "note": "“Australia’s team” could mean the men, and a singular team took “their”",
+  "h": "e70a0ebe4e",
+  "note": "says soccer or football in passing (Morg, Oct 26, 2026): Soccertoos swapped for two other names the same fifa.com article says the Matildas beat (Soccertoos, Blue Flyers, Waratahs, Lorikeets)",
   "v": "fix"
  },
  "intl-women:63": {
@@ -3731,9 +3824,14 @@
   "v": "ok"
  },
  "laliga:5": {
-  "at": "2026-10-16T23:57:35Z",
+  "at": "2026-10-30T10:41:45Z",
+  "fix": {
+   "ex": "Real Sociedad won the league back to back, in 1980–81 and 1981–82",
+   "hook": "back to back"
+  },
   "h": "4f286afc0a",
-  "v": "ok"
+  "note": "hook too wide for the 320-wide phone even shrunk (tilecheck): back to back as an adverb, open, so it wraps, new hook measured in a real tile at 402, 375 and 320 wide: fits, no split",
+  "v": "fix"
  },
  "laliga:50": {
   "at": "2026-10-16T23:57:35Z",
@@ -3766,9 +3864,13 @@
   "v": "ok"
  },
  "laliga:56": {
-  "at": "2026-10-16T23:57:35Z",
+  "at": "2026-10-30T10:41:45Z",
+  "fix": {
+   "ex": "The first match ever televised in Spain was a Clásico in 1959"
+  },
   "h": "80cbb29635",
-  "v": "ok"
+  "note": "says soccer or football in passing (Morg, Oct 26, 2026): laliga.com: the first match ever televised on Spanish television",
+  "v": "fix"
  },
  "laliga:6": {
   "at": "2026-10-17T00:15:22Z",
@@ -4443,9 +4545,14 @@
   "v": "ok"
  },
  "ligamx:47": {
-  "at": "2026-10-16T23:58:25Z",
+  "at": "2026-10-30T10:41:45Z",
+  "fix": {
+   "ex": "Liga MX moved to a split season of two short tournaments in 1996",
+   "hook": "split season"
+  },
   "h": "84cec404d0",
-  "v": "ok"
+  "note": "hook too wide for the 320-wide phone even shrunk (tilecheck): names the league and the format, new hook measured in a real tile at 402, 375 and 320 wide: fits, no split",
+  "v": "fix"
  },
  "ligamx:48": {
   "at": "2026-10-16T23:58:25Z",
@@ -4645,9 +4752,13 @@
   "v": "ok"
  },
  "ligue1:21": {
-  "at": "2026-10-16T23:58:01Z",
+  "at": "2026-10-30T10:41:45Z",
+  "fix": {
+   "ex": "France’s longest-serving club manager, Guy Roux, led Auxerre until 2005"
+  },
   "h": "c411341f31",
-  "v": "ok"
+  "note": "says soccer or football in passing (Morg, Oct 26, 2026): club keeps it from reading as the national team",
+  "v": "fix"
  },
  "ligue1:22": {
   "at": "2026-10-16T23:58:01Z",
@@ -5058,9 +5169,13 @@
   "v": "ok"
  },
  "lingo-more:37": {
-  "at": "2026-10-16T23:56:48Z",
-  "h": "28c5ede5f3",
-  "v": "ok"
+  "at": "2026-10-30T10:41:45Z",
+  "fix": {
+   "means": "A game with five players a team"
+  },
+  "h": "dbb48b6b78",
+  "note": "says soccer or football in passing (Morg, Oct 26, 2026):",
+  "v": "fix"
  },
  "lingo-more:38": {
   "at": "2026-10-16T23:56:48Z",
@@ -5156,9 +5271,13 @@
   "v": "ok"
  },
  "lingo-more:54": {
-  "at": "2026-10-16T23:56:48Z",
+  "at": "2026-10-30T10:41:45Z",
+  "fix": {
+   "means": "A full team on the pitch"
+  },
   "h": "6e0504e4d5",
-  "v": "ok"
+  "note": "says soccer or football in passing (Morg, Oct 26, 2026):",
+  "v": "fix"
  },
  "lingo-more:55": {
   "at": "2026-10-16T23:56:48Z",
@@ -5401,8 +5520,9 @@
   "v": "ok"
  },
  "mls:35": {
-  "at": "2026-10-17T00:09:05Z",
+  "at": "2026-10-30T10:41:45Z",
   "h": "c90459c165",
+  "note": "soccer-specific stadium kept: it is the league’s own term and the fact itself, mlssoccer.com’s timeline says Historic Crew Stadium became the league’s first soccer-specific stadium in 1999",
   "v": "ok"
  },
  "mls:36": {
@@ -5861,9 +5981,14 @@
   "v": "fix"
  },
  "nicknames:6": {
-  "at": "2026-10-17T00:15:22Z",
+  "at": "2026-10-30T10:41:45Z",
+  "fix": {
+   "ex": "Bournemouth may owe their nickname, the Cherries, to the red stripes on their shirts",
+   "hook": "red stripes"
+  },
   "h": "833d633988",
-  "v": "ok"
+  "note": "hook too wide for the 320-wide phone even shrunk (tilecheck): no shorter name for the club, so the stripes carry the tile, new hook measured in a real tile at 402, 375 and 320 wide: fits, no split",
+  "v": "fix"
  },
  "nicknames:60": {
   "at": "2026-10-17T00:09:05Z",
@@ -6104,9 +6229,14 @@
   "v": "ok"
  },
  "nwsl:42": {
-  "at": "2026-10-16T23:58:42Z",
+  "at": "2026-10-30T10:41:45Z",
+  "fix": {
+   "ex": "Jessica Berman became NWSL commissioner, the league’s top job, in 2022",
+   "hook": "top job"
+  },
   "h": "bc627483aa",
-  "v": "ok"
+  "note": "hook too wide for the 320-wide phone even shrunk (tilecheck): new hook measured in a real tile at 402, 375 and 320 wide: fits, no split",
+  "v": "fix"
  },
  "nwsl:43": {
   "at": "2026-10-16T23:58:42Z",
@@ -6424,15 +6554,23 @@
   "v": "ok"
  },
  "parents:38": {
-  "at": "2026-10-16T23:55:41Z",
+  "at": "2026-10-30T10:41:45Z",
+  "fix": {
+   "ex": "Dad says he is a striker at heart, but he is more of a couch potato",
+   "hook": "striker"
+  },
   "h": "cee7fe5c4c",
-  "note": "more of a ___ rules out peeps, props, kicks and bling, others fit",
-  "v": "ok"
+  "note": "says soccer or football in passing (Morg, Oct 26, 2026): the striker at heart sharpens the joke against couch potato, new hook measured in a real tile at 402, 375 and 320 wide: fits, no split",
+  "v": "fix"
  },
  "parents:39": {
-  "at": "2026-10-16T23:59:29Z",
+  "at": "2026-10-30T10:41:45Z",
+  "fix": {
+   "ex": "Grandma shops for new cleats so often that the team calls her a mall rat"
+  },
   "h": "ddc6785923",
-  "v": "ok"
+  "note": "says soccer or football in passing (Morg, Oct 26, 2026):",
+  "v": "fix"
  },
  "parents:4": {
   "at": "2026-10-16T23:55:41Z",
@@ -7370,9 +7508,13 @@
   "v": "ok"
  },
  "soccer:37": {
-  "at": "2026-10-16T23:56:37Z",
+  "at": "2026-10-30T10:41:45Z",
+  "fix": {
+   "means": "Zero, when giving a score"
+  },
   "h": "cebdd42cec",
-  "v": "ok"
+  "note": "says soccer or football in passing (Morg, Oct 26, 2026):",
+  "v": "fix"
  },
  "soccer:38": {
   "at": "2026-10-17T00:15:22Z",
@@ -7426,9 +7568,13 @@
   "v": "ok"
  },
  "soccer:46": {
-  "at": "2026-10-16T23:56:37Z",
+  "at": "2026-10-30T10:41:45Z",
+  "fix": {
+   "means": "An indoor game, five per team"
+  },
   "h": "4e7db61ea3",
-  "v": "ok"
+  "note": "says soccer or football in passing (Morg, Oct 26, 2026):",
+  "v": "fix"
  },
  "soccer:47": {
   "at": "2026-10-16T23:56:37Z",
@@ -7556,12 +7702,12 @@
   "v": "ok"
  },
  "ucl:18": {
-  "at": "2026-10-16T23:58:42Z",
+  "at": "2026-10-30T10:41:45Z",
   "fix": {
-   "ex": "Cristiano Ronaldo holds the Champions League records for goals and appearances"
+   "hook": "records"
   },
-  "h": "1fcecd4e71",
-  "note": "all-time records read as career records, named the competition",
+  "h": "9f823aca67",
+  "note": "hook too wide for the 320-wide phone even shrunk (tilecheck): new hook measured in a real tile at 402, 375 and 320 wide: fits, no split",
   "v": "fix"
  },
  "ucl:19": {
@@ -7797,9 +7943,14 @@
   "v": "fix"
  },
  "ucl:53": {
-  "at": "2026-10-17T00:15:22Z",
+  "at": "2026-10-30T10:41:45Z",
+  "fix": {
+   "ex": "Wolfsburg won the women’s European title back to back, in 2013 and 2014",
+   "hook": "back to back"
+  },
   "h": "31a765c7a1",
-  "v": "ok"
+  "note": "hook too wide for the 320-wide phone even shrunk (tilecheck): back to back as an adverb, open, so it wraps, new hook measured in a real tile at 402, 375 and 320 wide: fits, no split",
+  "v": "fix"
  },
  "ucl:54": {
   "at": "2026-10-17T00:15:22Z",
@@ -7939,9 +8090,14 @@
   "v": "ok"
  },
  "wc26:16": {
-  "at": "2026-10-16T23:59:07Z",
-  "h": "9c97c797e8",
-  "v": "ok"
+  "at": "2026-10-30T10:41:45Z",
+  "fix": {
+   "ex": "Harry Kane became the outfield player with the most England caps",
+   "hook": "England caps"
+  },
+  "h": "cf2e85aa56",
+  "note": "hook too wide for the 320-wide phone even shrunk (tilecheck): England alone is already the hook on five wc26 cards, new hook measured in a real tile at 402, 375 and 320 wide: fits, no split",
+  "v": "fix"
  },
  "wc26:17": {
   "at": "2026-10-17T00:34:39Z",
