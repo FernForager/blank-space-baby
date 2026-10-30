@@ -2,7 +2,8 @@
 
     python3 tools/vet.py todo WHO [DECK] [--limit N] [--json]   # cards waiting on WHO's verdict, with all they need to judge them
     python3 tools/vet.py apply WHO FILE.json                    # record verdicts: a JSON list of {id, h, v, note, fix}
-    python3 tools/vet.py card ID                                # one card in full: every verdict and mark on it
+    python3 tools/vet.py card ID                                # one card in full: every verdict and mark on it (for Trivelle)
+    python3 tools/vet.py review ID [ID ...]                     # named cards as todo shows them, no one's verdicts: for a re-check the desk asks for
     python3 tools/vet.py status                                 # where every card stands
     python3 tools/vet.py fixes [DECK]                           # open fix and cut verdicts on current cards (for Trivelle)
     python3 tools/vet.py take ID WHO                            # write WHO's proposed fix into the deck (for Trivelle)
@@ -311,6 +312,14 @@ def import_marks(path):
     for r in new: print(f"{r['id']}  {r['mark']:7} {r['card']}  {r.get('note') or ''}")
     for r in held: print(f"HELD {r['id']}  {r['mark']:7} {r['card']}: its fingerprint {r['hash']} doesn't match the card, so ask Morg before recording it by hand")
     print(f'{len(new)} new marks' + (f', {len(held)} held' if held else '') + f', up to row {state["last"]}')
+def review(cids):
+    """Named cards, each as todo shows it and nothing more, so a reviewer re-judging them never sees another's verdict."""
+    flags = dict((d, f) for d, _, f in B.DAILY)
+    out = []
+    for cid in cids:
+        did, deck, i = find(cid)
+        out.append(view(did, deck, i, flags.get(did, '')))
+    print(json.dumps(out, ensure_ascii=False, indent=1))
 
 if __name__ == '__main__':
     a = sys.argv[1:]
@@ -326,6 +335,7 @@ if __name__ == '__main__':
         if len(plain_args) != 2 or plain_args[0] not in B.REVIEWERS: sys.exit('usage: vet.py apply WHO FILE.json')
         apply(plain_args[0], plain_args[1])
     elif cmd == 'card': card(plain_args[0])
+    elif cmd == 'review': review(plain_args)
     elif cmd == 'status': status()
     elif cmd == 'fixes': fixes(plain_args[0] if plain_args else None)
     elif cmd == 'take': take(plain_args[0], plain_args[1])
