@@ -699,6 +699,20 @@
       "k": "nickname",
       "src": "https://www.fifa.com/en/articles/lionel-messi-argentina-wins-golden-ball-award-best-player-fifa-world-cup-qatar-2022",
       "d": 2
+    },
+    {
+      "w": "Manchester City",
+      "means": "His clubs: Barcelona, PSG, Inter Miami",
+      "ex": "Lionel Messi never played for Manchester City",
+      "hook": "never played",
+      "k": "messi-club",
+      "src": "https://www.intermiamicf.com/news/inter-miami-cf-signs-seven-time-ballon-d-or-winner-world-cup-champion-lionel-mes",
+      "d": 2,
+      "wr": [
+        "Barcelona",
+        "Paris Saint-Germain"
+      ],
+      "tag": "messi"
     }
   ],
   "groups": [

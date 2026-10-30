@@ -565,6 +565,19 @@
    "k": "trophy",
    "src": "https://www.mlssoccer.com/news/toronto-fc-win-first-domestic-treble-mls-history",
    "d": 2
+  },
+  {
+   "w": "Nashville SC",
+   "means": "With three games to spare",
+   "ex": "In 2026, Nashville SC won the Supporters’ Shield for the first time",
+   "hook": "Shield",
+   "k": "shield-club",
+   "src": "https://www.mlssoccer.com/news/nashville-sc-conquista-su-primer-supporters-shield-en-la-historia-del-club",
+   "d": 2,
+   "wr": [
+    "FC Cincinnati",
+    "Inter Miami"
+   ]
   }
  ],
  "groups": [

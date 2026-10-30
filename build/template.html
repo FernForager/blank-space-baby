@@ -686,7 +686,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     var g = {}; (D.groups || []).forEach(function (grp, i) { grp.forEach(function (w) { (g[w] = g[w] || []).push(i); }); });
     D.clash = function (a, b) { return a === b || (g[a] || []).some(function (i) { return (g[b] || []).indexOf(i) >= 0; }); };
     D.cards = D.items.map(function (x, i) {
-      var c = { D: D, id: D.id + ':' + (x.i != null ? x.i : i), fp: x.h, lk: x.lk, w: x.w, m: x.means, ex: x.ex, k: x.k || 'word', hook: x.hook, d: x.d, lg: x.lg || D.lg || '', wm: !!(D.wm || x.wm), rl: !!D.rl, sl: !!D.sl, wr: x.wr, n: ALL.length };   // wr: wrong answers Morg wrote himself
+      var c = { D: D, id: D.id + ':' + (x.i != null ? x.i : i), fp: x.h, lk: x.lk, w: x.w, m: x.means, ex: x.ex, k: x.k || 'word', hook: x.hook, d: x.d, lg: x.lg || D.lg || '', wm: !!(D.wm || x.wm), rl: !!D.rl, sl: !!D.sl, wr: x.wr, tg: x.tag, n: ALL.length };   // wr: wrong answers Morg wrote himself. tg: the card's own category, over its deck's
       c.a = toks(c.w); c.key = c.a.join(' '); c.h = toks(c.hook); c.hk = c.h.join(' ');
       c.t = toks(c.ex + ' ' + c.hook + ' ' + c.m);   // everything a player sees of the card: the sentence, its tile and, after answering, its means line
       c.names = /[A-Z]/.test(c.w) && c.a.length > 1 ? c.a.filter(function (w) { return w.length > 3 && !PLAIN[w] && !/^\d+$/.test(w); }) : [];   // Bayern in Bayern Munich
@@ -880,7 +880,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   var TAG = { basics: 'basics', rules: 'rules', soccer: 'lingo', 'lingo-more': 'lingo', alpha: 'slang', parents: 'slang', epl: 'epl', 'epl-more': 'epl',
     mls: 'mls', nwsl: 'nwsl', ucl: 'ucl', wc26: 'wc26', laliga: 'laliga', seriea: 'seriea', ligue1: 'ligue1', ligamx: 'ligamx', bundesliga: 'bundesliga',
     'intl-men': 'world', 'intl-women': 'world', legends: 'legends', awards: 'awards', nicknames: 'clubs' };   // a card's category, by its deck (Morg, Oct 19, 2026): its tag.* string
-  function tagId(T) { var k = TAG[(T.id || '').split(':')[0]]; return k ? 'tag.' + k : ''; }
+  function tagId(T) { var c = BYID[T.id], k = (c && c.tg) || TAG[(T.id || '').split(':')[0]]; return k ? 'tag.' + k : ''; }   // a card's own tag (the first nine's categories, Morg, Oct 29, 2026) wins over its deck's
   function tagOf(T) { return tagId(T) ? tx(tagId(T)) : ''; }
   function rcard(d, cls) { return '<i class="rcard c' + d + (cls ? ' ' + cls : '') + '"></i>'; }   // a referee's card in its color
   // a result in the grids and on a card again (Morg, Oct 28, 2026: the pixel balls were janky): the played tile's own marks, the top

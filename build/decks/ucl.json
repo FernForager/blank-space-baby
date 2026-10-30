@@ -630,6 +630,20 @@
    "src": "https://www.uefa.com/womenschampionsleague/history/seasons/2026/",
    "d": 3,
    "women": true
+  },
+  {
+   "w": "17",
+   "means": "In 2013–14, for Real Madrid",
+   "ex": "Cristiano Ronaldo scored a record 17 goals in one Champions League season",
+   "hook": "Champions",
+   "k": "cr7-count",
+   "src": "https://www.uefa.com/uefachampionsleague/news/0253-0d820b46805f-b78ccae2c451-1000--what-uefa-records-does-cristiano-ronaldo-hold/",
+   "d": 3,
+   "tag": "cr7",
+   "wr": [
+    "15",
+    "20"
+   ]
   }
  ],
  "groups": [
