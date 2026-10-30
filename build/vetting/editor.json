@@ -1734,13 +1734,10 @@
   "v": "ok"
  },
  "basics:8": {
-  "at": "2026-10-30T10:41:45Z",
-  "fix": {
-   "means": "Hockey players wear them too"
-  },
-  "h": "161aaf83bf",
-  "note": "says soccer or football in passing (Morg, Oct 26, 2026): M-W’s own example sports include hockey",
-  "v": "fix"
+  "at": "2026-10-30T11:01:41Z",
+  "h": "cd9ee31603",
+  "note": "plain, true and free of the word",
+  "v": "ok"
  },
  "basics:80": {
   "at": "2026-10-16T23:57:03Z",
@@ -3857,13 +3854,10 @@
   "v": "ok"
  },
  "laliga:56": {
-  "at": "2026-10-30T10:41:45Z",
-  "fix": {
-   "ex": "The first match ever televised in Spain was a Clásico in 1959"
-  },
-  "h": "80cbb29635",
-  "note": "says soccer or football in passing (Morg, Oct 26, 2026): laliga.com: the first match ever televised on Spanish television",
-  "v": "fix"
+  "at": "2026-10-30T11:01:41Z",
+  "h": "9075b12795",
+  "note": "league match reads cleanly and narrows it to the game without the word",
+  "v": "ok"
  },
  "laliga:6": {
   "at": "2026-10-17T00:15:22Z",
