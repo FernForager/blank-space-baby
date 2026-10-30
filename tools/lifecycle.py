@@ -56,7 +56,7 @@ def expected(s, n):   # the share text for a saved day: the board's shape, every
 
 async def run(b, html, demo, one=False):
     print(f'-- as the {"demo, " + str(demo) + " boards" if demo else "real daily, one fixed board" if one else "real daily"}')
-    ctx = await b.new_context(viewport={'width': 402, 'height': 744}, reduced_motion='reduce')
+    ctx = await b.new_context(viewport={'width': 402, 'height': 744}, reduced_motion='reduce', service_workers='block')   # the page's sw.js stays out of the test
     await ctx.grant_permissions(['clipboard-read', 'clipboard-write'], origin='https://bsb.test')
     pg = await ctx.new_page(); errs = []; pg.on('pageerror', lambda e: errs.append(str(e)))
     await pg.clock.install(time=datetime.datetime(START[0], START[1], START[2], 23, 58, 0))
@@ -171,9 +171,36 @@ async def run(b, html, demo, one=False):
     ok(not errs, 'no JS errors ' + str(errs))
     await ctx.close()
 
+async def touch(b, html):
+    """A phone's own taps (the audit, Oct 30, 2026: every other check clicks with a mouse, so the phone-only tap shield never ran).
+    A touch within 350 ms of a new screen is dropped, so a quick double tap can't answer a card unread or skip the next screen."""
+    print('-- as a phone, with real taps')
+    ctx = await b.new_context(viewport={'width': 402, 'height': 744}, has_touch=True, is_mobile=True, device_scale_factor=3, reduced_motion='reduce', service_workers='block')
+    pg = await ctx.new_page(); errs = []; pg.on('pageerror', lambda e: errs.append(str(e)))
+    await pg.route('https://bsb.test/**', lambda r: r.fulfill(body=html, content_type='text/html'))
+    await pg.goto('https://bsb.test/'); await pg.wait_for_timeout(600)
+    v = lambda: pg.evaluate("document.getElementById('cab').dataset.v")
+    await pg.tap('[data-i="0"]'); await pg.wait_for_timeout(500)
+    ok(await v() == 'play', 'a tap on a tile opens its card')
+    w = await pg.evaluate("document.getElementById('q').dataset.w")
+    await pg.tap('#go'); await pg.wait_for_timeout(500)   # Back to the board
+    async def double(sel):   # a thumb's quick double tap: twice on the same spot, 80 ms apart, wherever the second one lands
+        box = await pg.locator(sel).bounding_box(); x, y = box['x'] + box['width'] / 2, box['y'] + box['height'] / 2
+        await pg.touchscreen.tap(x, y); await pg.wait_for_timeout(80); await pg.touchscreen.tap(x, y)
+    await double('[data-i="1"]'); await pg.wait_for_timeout(500)
+    s = await pg.evaluate("JSON.parse(localStorage.getItem('bsb-daily'))")
+    ok(await v() == 'play' and s['open'] == 1 and not s['res'][1], 'a double tap on a tile opens its card and the second tap answers nothing')
+    w = await pg.evaluate("document.getElementById('q').dataset.w")
+    await pg.tap(f'.choice[data-w="{w}"]'); await pg.wait_for_timeout(500)
+    await double('#go'); await pg.wait_for_timeout(600)
+    s = await pg.evaluate("JSON.parse(localStorage.getItem('bsb-daily'))")
+    ok(await v() == 'board' and sum(1 for r in s['res'] if r) == 1 and s['open'] == -1, 'a double tap on Next goes back to the board once, and the second tap opens nothing')
+    ok(not errs, 'no script errors ' + str(errs)); await ctx.close()
+
 async def main():
     async with async_playwright() as p:
         b = await p.chromium.launch()
+        await touch(b, as_demo(0, True))
         await run(b, as_demo(0), 0)
         await run(b, as_demo(0, True), 0, True)
         await run(b, as_demo(BUILT or 7), BUILT or 7)
