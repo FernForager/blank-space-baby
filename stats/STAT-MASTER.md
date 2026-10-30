@@ -32,7 +32,8 @@ One stats file per round, `stats/round-<n>.md`, named in your orders. Model it o
   - fifa.com: `python3 tools/fifa.py <fifa.com address>` reads FIFA's own content feed.
   - nwslsoccer.com: read the league's stats API at api-sdp.nwslsoccer.com, as the fact checker did (`research/factcheck/nwsl.md`).
   - mlssoccer.com: news stories read fine, but standings and stats pages load by script, so prove numbers from news stories.
-  - uefa.com stories read fine. premierleague.com: see how `research/factcheck/epl.md` read it.
+  - nwslsoccer.com's stats API answers a plain fetch: `https://api-sdp.nwslsoccer.com/v1/nwsl/football/seasons/<season id>/standings/overall`, `/matches` and `/stats/players?category=general&orderBy=goals&direction=desc`, each with `?locale=en-US`. The 2026 season's id is `nwsl::Football_Season::0b6761e4701749f593690c0f338da74c`. Its news stories keep their text in the page's script data as `markdownText` (round 1's header, `stats/round-1.md`).
+  - uefa.com times out to curl here, so read it with WebFetch. premierleague.com's player data is at `sdp-prem-prod.premier-league-prod.pulselive.com/api/v1/players/<id>`. ballondor.com, fpf.pt and sporting.pt refuse this workspace's fetches, so don't spend time on them, and never try to get around a refusal (a browser-header workaround was refused in round 1).
 - **Exact or hedged:** a number card must be exactly right, or say "more than" or "about". A count that keeps growing (career goals, caps, trophies) needs an anchor that stays true: a finished event ("won the 2025 Golden Boot with 29") or a fixed date ("through October 2026").
 - Check what the game already teaches before you add a fact: `build/decks/*.json` hold every card. A fact already on a card is not news.
 
@@ -43,6 +44,7 @@ One stats file per round, `stats/round-<n>.md`, named in your orders. Model it o
 - **No semicolons** in anything you write (Morg's house rule). Use commas, colons, em dashes or periods.
 - **Files:** you own only your round's stats file. No deck edits, no builds, no hub writes, and no messages to any session but GM TRIVELLE.
 - **Git:** work on your own branch (named in your orders), never `daily` or `main`. Commit and push after every five facts: a usage limit can stop you mid-turn without warning, and a pushed branch is never lost.
+- **Helpers:** use a helper agent only if your orders allow one, and reread every key line yourself before it goes in your file (round 1 did, and said which page it hadn't reread).
 - **Size:** stop at the round's cap (25 facts or about an hour unless your orders say otherwise). No new jobs.
 
 ## 5. Report

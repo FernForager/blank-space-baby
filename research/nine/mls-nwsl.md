@@ -27,10 +27,10 @@ The start of worker job 1, done before the reset. MLS is on mlssoccer.com. The N
 
 From news reports of the league's own announcements:
 10. The 2026 season has a record 16 teams, with Boston Legacy FC and Denver Summit FC new, and a 30-game regular season. (nwslsoccer.com's team list does show both clubs.)
-11. Decision Day is this weekend, Oct 30 to Nov 1, 2026. Gotham, four points clear, were favorites for their first Shield (Opta's projections), with San Diego and Washington the only other contenders.
+11. Decision Day is one afternoon, Sunday, Nov 1, 2026, every game at 5 pm ET (stats/round-1.md fact 3). Gotham, three points clear, were favorites for their first Shield (Opta's projections), with San Diego and Washington the only other contenders.
 12. The quarterfinals are Nov 6–8, the semifinals Nov 13–15, and the 2026 NWSL Championship is on Saturday, Nov 21, at Audi Field in Washington, D.C., in primetime on CBS. Audi Field also hosted the 2022 final, when Portland beat Kansas City 2–0. (nwslsoccer.com's championship page shows the event and a hotel window of Nov 20–22, but not the date or venue in text.)
 13. The NWSL Awards are on Nov 18 and the Skills Challenge on Nov 20, in championship week.
-14. The Golden Boot race: undated reports have Ashley Sanchez (North Carolina) leading with 15 goals, ahead of Orlando's Barbra Banda and Kansas City's Temwa Chawinga. Stale fast: wait for the final numbers.
+14. The Golden Boot race: Ashley Sanchez (North Carolina) leads with 20 goals, level with Chawinga's record (proved in stats/round-1.md fact 4, which replaces an undated report of 15), ahead of Orlando's Barbra Banda and Kansas City's Temwa Chawinga. Stale fast: wait for the final numbers.
 
 **Fresh cards that wait on this weekend:** the 2026 Shield winner (Gotham's first, if it holds), the Golden Boot winner and her total, and after Nov 21, the champion.
 
