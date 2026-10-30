@@ -151,9 +151,9 @@
   "@share.label": { "note": "Spoken name of the share key", "placeholders": { "text": { "example": "Triviela #42, ..." } } },
 
   "image.title": "TRIVIELA",
-  "@image.title": { "note": "The Share board image's heading, in arcade capitals" },
+  "@image.title": { "note": "The Share board image's heading, in arcade capitals, with the puzzle number beside it on one line (Oct 30, 2026: the picture is square)" },
   "image.score": "#{day}β",
-  "@image.score": { "note": "The image's puzzle number, under its heading. No score: the marks on the cards are the score, as in the text share (Morg, Oct 30, 2026). The β as in share.title", "placeholders": { "day": { "example": "42" } } },
+  "@image.score": { "note": "The image's puzzle number, beside its heading. No score: the marks on the cards are the score, as in the text share (Morg, Oct 30, 2026). The β as in share.title", "placeholders": { "day": { "example": "42" } } },
   "image.file": "triviela-{day}.png",
   "@image.file": { "note": "The image's file name when shared", "placeholders": { "day": { "example": "42" } } },
   "image.alt": "Your board",
