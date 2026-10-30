@@ -15,7 +15,9 @@ back to the reviewers and the hub, or lock it, which keeps it as it is for good.
 Each reviewer writes only its own file, on its own branch, with `tools/vet.py apply`. Trivelle merges the branches
 into `daily`, applies the fixes (`tools/vet.py fixes`, `take`, `out`) and rebuilds. A fix changes a card’s
 fingerprint, so it goes back to the other two reviewers. A fix applied exactly as proposed counts as its proposer’s ok,
-recorded by Trivelle in `desk.json`, so it doesn’t come back to you. Read `python3 tools/vet.py` for every command.
+recorded by Trivelle in `desk.json`, so it doesn’t come back to you. Read `python3 tools/vet.py` for every command. Morg’s flags and locks hold to the card’s own fields (its answer, sentence,
+means, hook, color, kind and his own wrong answers), never to the wrong answers its deck-mates lend it, so a change
+elsewhere in the deck sends a card back to the reviewers but never lapses a flag or breaks a lock (the audit, Oct 30, 2026).
 
 ## The rules every reviewer follows
 

@@ -159,6 +159,14 @@ def card_hash(it, pool):
 def fingerprint(deck, i, clash=None):
     return card_hash(deck['items'][i], wrong_pool(deck, deck['items'][i], clash))
 
+def mark_hash(it):
+    """The fingerprint Morg's flags and locks hold to: the card's own fields alone (what a player sees, its kind, and his own
+    wrong answers with their meanings), never the wrong answers its deck-mates lend it. A reviewer's verdict covers those
+    too (card_hash), so a deck-mate's change sends a card back to the reviewers but never lapses a flag or breaks a lock
+    (the audit, Oct 30, 2026: before, a lock stopped the build when only a deck-mate changed)."""
+    wr = [[x, ''] if isinstance(x, str) else [x.get('w'), x.get('m', '')] for x in it.get('wr') or []]
+    return hashlib.sha1(json.dumps([it.get(k, 'word' if k == 'k' else None) for k in HASHED] + [wr], ensure_ascii=False).encode()).hexdigest()[:10]
+
 def load_json(path, default):
     try: return json.load(open(path))
     except FileNotFoundError: return default
@@ -179,11 +187,11 @@ def vetting():
 
 def standing(cid, it, h, verdicts, marks):
     """Where a card stands: out, locked, flagged, approved (all three reviewers said ok to this wording) or pending.
-    h is the card's fingerprint (fingerprint() above)."""
+    h is the card's fingerprint (fingerprint() above), which the verdicts hold to. Morg's marks hold to mark_hash(it)."""
     m = marks.get(cid)
     if it.get('out'): return 'out'
     if m and m['m'] == 'lock': return 'locked'
-    if m and m['m'] == 'flag' and m['h'] == h: return 'flagged'
+    if m and m['m'] == 'flag' and m['h'] == mark_hash(it): return 'flagged'
     if all(verdicts[who].get(cid, {}).get('v') == 'ok' and verdicts[who][cid].get('h') == h for who in REVIEWERS): return 'approved'
     return 'pending'
 
@@ -226,10 +234,10 @@ def main(test_copy=None):
             cid, h = f'{did}:{i}', fingerprint(deck, i, clash)
             st = stand[cid] = standing(cid, it, h, verdicts, marks)
             m = marks.get(cid)
-            if st == 'locked' and m['h'] != h: problems.append((did, it['w'], 'locked by Morg but changed since: undo the change or ask him to unlock it'))
+            if st == 'locked' and m['h'] != mark_hash(it): problems.append((did, it['w'], 'locked by Morg but changed since: undo the change or ask him to unlock it'))
             if st in ('out', 'flagged') or (BETA_VETTED_ONLY and st == 'pending' and not test_copy): continue
             x = {k: it[k] for k in ('w', 'means', 'ex', 'k', 'hook', 'd', 'wr', 'tag') if k in it}   # wr: Morg's own wrong answers. tag: the card's own category, over its deck's
-            x['i'], x['h'] = i, h   # the card's place in its deck and its fingerprint: the beta's flag and lock keys send both
+            x['i'], x['h'] = i, mark_hash(it)   # the card's place in its deck and the fingerprint its marks hold to: the beta's flag and lock keys send both
             if st == 'locked': x['lk'] = 1
             if lg == '*': x['lg'] = league(lg, it)
             if it.get('women'): x['wm'] = 1

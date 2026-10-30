@@ -19,7 +19,9 @@ A verdict is v "ok" (the card is right as it stands), "fix" (it needs a change: 
 changed fields in fix, like {"means": "..."}) or "cut" (it can't be saved: say why). Each verdict carries h, the
 fingerprint of the card the reviewer read (todo prints it). apply refuses a verdict whose card has changed since,
 so nobody approves wording they never saw, and checks every proposed fix against the house rules before saving it.
-A card plays in the beta once all three reviewers have said ok to its current wording, or once Morg locks it.
+A card plays in the beta once all three reviewers have said ok to its current wording, or once Morg locks it. His
+marks hold to the card's own fields (build.py's mark_hash), never to the wrong answers its deck-mates lend it, so a
+change elsewhere in the deck sends a card back to the reviewers but never lapses a flag or breaks a lock.
 """
 import datetime, json, os, re, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -148,7 +150,7 @@ def card(cid):
     for who in B.REVIEWERS:
         v = verdicts[who].get(cid)
         print(f'{who}:', json.dumps(v, ensure_ascii=False) if v else 'no verdict', '' if not v or v.get('h') == c['h'] else '(for an older wording)')
-    if marks.get(cid): print('Morg:', json.dumps(marks[cid], ensure_ascii=False))
+    if marks.get(cid): print('Morg:', json.dumps(marks[cid], ensure_ascii=False), '' if marks[cid].get('h') == B.mark_hash(it) else '(for an older wording)')
 
 def status():
     verdicts, marks = B.vetting()
@@ -294,7 +296,7 @@ def import_marks(path):
         path = os.path.join(B.DECKS, did + '.json')
         if not re.fullmatch(r'[a-z0-9-]+', did) or not i.isdigit() or not os.path.exists(path): return None
         deck = json.load(open(path))
-        return B.fingerprint(deck, int(i)) if int(i) < len(deck['items']) else None
+        return B.mark_hash(deck['items'][int(i)]) if int(i) < len(deck['items']) else None
     for r in sorted(rows, key=lambda r: int(r['id'])):
         if int(r['id']) <= state['last']: continue
         state['last'] = int(r['id']); cid, m = r['card'], r['mark']
