@@ -113,6 +113,11 @@ def item_problems(level, items, clash, it, hooks=True):
     if len(mn) > 40: bad.append(tag + ('meaning over 40 characters', mn))
     if len(w) > 22: bad.append(tag + ('answer over 22 characters',))
     if hooks: bad += [tag + (p, it.get('hook')) for p in hook_problems(it)]
+    if 'wr' in it:   # Morg's own wrong answers: exactly two, different from each other and from the answer, and not already on the card (the audit, Oct 30, 2026)
+        ws = [x if isinstance(x, str) else (x or {}).get('w', '') for x in (it['wr'] if isinstance(it['wr'], list) else [])]
+        if len(ws) != 2 or not all(ws) or plain(ws[0]) == plain(ws[1]): bad.append(tag + ('wr must be two different wrong answers', it['wr']))
+        elif any(plain(x) == plain(w) for x in ws): bad.append(tag + ('a wrong answer in wr is the answer itself', ws))
+        elif any(shown(x, it) for x in ws): bad.append(tag + ('a wrong answer in wr is already in the sentence or on the tile', ws))
     same = [x for x in items if x is not it and not x.get('out') and x.get('k', 'word') == it['k'] and not clash(x['w'], w)]   # cut cards are never offered
     if not it.get('out') and len(it.get('wr') or []) < 2 and not any(not clash(x['w'], y['w']) for x in same for y in same if x is not y):   # Morg's own two wrong answers (wr) need no kind to draw from
         bad.append(tag + ('not enough same-kind wrong answers',))
@@ -210,6 +215,7 @@ def main(test_copy=None):
     verdicts, marks = vetting()
     stand = {}
     for did, lg, flags in DAILY:
+        if not re.fullmatch(r'[a-z0-9-]{1,30}', did): problems.append((did, '', 'a deck id must be lowercase letters, digits and hyphens (the beta’s services and results refuse anything else)'))
         deck = json.load(open(os.path.join(DECKS, did + '.json')))
         problems += check(did, deck, hooks=True)
         items, clash = [], clasher(deck)
@@ -245,6 +251,9 @@ def main(test_copy=None):
     if ONE_BOARD: print('One fixed board: every date plays #1, with no countdown (ONE_BOARD in build.py, False for the daily).')
     pins = pinned(decks)
     tpl = open(os.path.join(HERE, 'template.html')).read()
+    tagmap = re.search(r'var TAG = \{(.*?)\};', tpl, re.S)
+    untagged = [did for did, lg, flags in DAILY if not tagmap or not re.search(r"(^|[\s{,])'?" + re.escape(did) + r"'?\s*:", tagmap.group(1))]
+    if untagged: print('\nDecks with no category in the template’s TAG (their tiles would show a blank category):', ', '.join(untagged)); sys.exit(1)
     text, meta = strings.load()   # every word but the cards: build/text/en.json (research/text-system.md)
     slots = strings.load_slots()   # every place text appears: build/text/slots.json
     bad = strings.problems(text, meta, tpl) + strings.slot_problems(slots, meta)
