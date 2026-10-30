@@ -47,7 +47,7 @@ Every card also needs these fields:
   - No empty words (team, game, player, fans, season, year, record) unless nothing better exists.
   - Varied: don’t give many cards in one deck the same hook. Two tiles with the same hook on one board would confuse.
 - `d`: difficulty, which sets the tile’s card color. One bar for every deck:
-  - 1, easy (a white tile): a 10-year-old player and a brand-new soccer parent would both very likely get it right. True basics: rules every young player learns, field words, the most famous names anyone has heard of (Messi, the World Cup, Real Madrid). If you have to follow a league, a club or a national team to know it, it isn’t easy.
+  - 1, easy (a green tile, white until Oct 28, 2026): a 10-year-old player and a brand-new soccer parent would both very likely get it right. True basics: rules every young player learns, field words, the most famous names anyone has heard of (Messi, the World Cup, Real Madrid). If you have to follow a league, a club or a national team to know it, it isn’t easy.
   - 2, medium (a yellow card): a regular fan, or a player who watches some games, likely gets it. A beginner might or might not.
   - 3, hard (a red card): a real fan knows it. Deep but gettable (Laws nuance, tactics, history across eras, the women’s game in depth, club lore), never obscure trivia.
   - Judge the card as it’s played: the answer shows up next to two wrong answers of the same kind (`k`) from the same deck.
