@@ -273,6 +273,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .sgrid .no { color: #E0464B; }
 #share-txt { display: grid; grid-template-columns: auto 1fr; column-gap: 14px; row-gap: 3px; align-items: end; }   /* the grid beside the score and the site, so the key stays short */
 #share-txt .sgrid { grid-row: 1 / span 3; }
+#share-txt { grid-template-rows: 1fr auto auto; } #share-txt [data-tid] { grid-column: 2; } #share-txt [data-tid="golazo"] { grid-row: 2; } #share-txt [data-tid="share.site"] { grid-row: 3; }   /* the link at the foot of the grid, as it ends the text, GOLAZO! over it on a perfect day (Oct 30, 2026) */
 .egrid .em .mk, .sgrid .mk { display: block; }
 .sgrid svg { display: block; }
 .sgrid.se { grid-template-columns: repeat(3, 14px); grid-auto-rows: 14px; gap: 1px 2px; font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji', sans-serif; font-size: 12px; line-height: 1; }
@@ -1108,7 +1109,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   var HEAD = '🟩🟨🟥';   // green, yellow, red (Oct 28, 2026: was ⬜)
   function shareText() {
     return tx('share.title', { day: S.day + 1 }) + '\n' + HEAD + '\n' + lines().map(function (l) { return l.map(function (v) { return v === 1 ? '⚽' : '❌'; }).join(''); }).join('\n') +
-      '\n' + scoreLine() + '\n' + tx('share.tagline') + '\n' + tx('share.site');   // the link last, so a phone shows its preview card
+      (chips() === ALLN ? '\n' + GOLAZO : '') + '\n' + tx('share.site');   // the balls are the score, GOLAZO! only on a perfect day, the link last so a phone shows its preview card (Morg, Oct 30, 2026)
   }
   function score() { return tx('end.score', { n: chips(), all: ALLN }); }
   // the arcade face draws / as a stair of loose single pixels, so beside its two-pixel digits it read as dots (Morg, Oct 28, 2026:
@@ -1129,7 +1130,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
       '<p class="clock" id="clock" role="timer" aria-live="off"' + (DEMO || ONE ? ' hidden' : '') + '></p>';   // aria-live off: inside the screen's polite region it was read out every second (the audit)   // the countdown, where the review hint was (Oct 28, 2026), so the panel's row holds Review and Share board
     $('share-top').innerHTML = th('share.title', { day: S.day + 1 }); $('share-top').dataset.tid = 'share.title'; $('share-top').dataset.tv = JSON.stringify({ day: S.day + 1 });
     $('share-txt').innerHTML = '<span class="sgrid se" aria-hidden="true">' + Array.from(HEAD).map(function (e) { return '<i>' + e + '</i>'; }).join('') + lines().map(function (l) { return l.map(function (v) { return '<i>' + (v === 1 ? '⚽' : '❌') + '</i>'; }).join(''); }).join('') + '</span>' +   // the grid as the text sends it, emoji and all (Morg, Oct 28, 2026)
-      '<span data-tid="' + (chips() === ALLN ? 'golazo' : 'end.score') + '"' + tv({ n: chips(), all: ALLN }) + '>' + num(keep(esc(scoreLine()))) + '</span><span data-tid="share.tagline">' + th('share.tagline') + '</span><span data-tid="share.site">' + th('share.site') + '</span>';
+      (chips() === ALLN ? '<span data-tid="golazo">' + num(keep(esc(GOLAZO))) + '</span>' : '') + '<span data-tid="share.site">' + th('share.site') + '</span>';
     $('share').setAttribute('aria-label', tx('share.label', { text: shareText().replace(/\n/g, ', ') }));
     $('share-mark').innerHTML = svg('share', 3);
     beta(null); view('end'); clearInterval(tick); endRow(); if (!DEMO && !ONE) tick = setInterval(clock, 1000);

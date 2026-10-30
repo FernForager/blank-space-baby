@@ -27,7 +27,7 @@ def expected(s, n):   # the share text for a saved day, the same as expected() i
     k = len(s['res']); cols = [[('⚽' if s['res'][i] == 1 else '❌') for i in range(k) if s['tiles'][i]['d'] == d] for d in (1, 2, 3)]
     rows = [''.join(cols[d][j] for d in range(3)) for j in range(k // 3)]
     right = sum(1 for r in s['res'] if r == 1)
-    return TEXT['share.title'].replace('{day}', str(n)) + '\n' + HEAD + '\n' + '\n'.join(rows) + '\n' + ('GOLAZO!' if right == k else f'{right}/{k}') + '\n' + TEXT['share.tagline'] + '\n' + TEXT['share.site']
+    return TEXT['share.title'].replace('{day}', str(n)) + '\n' + HEAD + '\n' + '\n'.join(rows) + ('\nGOLAZO!' if right == k else '') + '\n' + TEXT['share.site']
 
 state = lambda pg: pg.evaluate("JSON.parse(localStorage.getItem('bsb-daily'))")
 view = lambda pg: pg.evaluate("document.getElementById('cab').dataset.v")

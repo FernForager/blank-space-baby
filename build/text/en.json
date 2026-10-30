@@ -146,7 +146,7 @@
   "share.title": "Triviela #{day}β",
   "@share.title": { "note": "The share text's first line, also shown on the share key. The β marks the playtest's numbers, which start over at launch (Morg, Oct 26, 2026)", "slot": "shareKey", "placeholders": { "day": { "example": "42", "widest": "365" } } },
   "share.tagline": "Trivia shootout",
-  "@share.tagline": { "note": "What the game is, in the share: the line over triviela.net in the text (a link’s preview card shows only when the link ends the message) and under it in the Share board picture (Morg, Oct 26, 2026). Never soccer or football", "slot": "shareKey" },
+  "@share.tagline": { "note": "What the game is, under triviela.net in the Share board picture (Morg, Oct 26, 2026). The text share dropped it on Oct 30, 2026 (Morg: too redundant). Never soccer or football", "slot": "shareKey" },
   "share.site": "triviela.net",
   "@share.site": { "note": "The share text's last line, on the share key and at the bottom of the image", "slot": "shareKey" },
   "share.label": "Share: {text}",
