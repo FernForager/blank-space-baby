@@ -393,7 +393,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 /* the tag sits in a thin band along the tile's top, level with the corner card, and the hook is centered in all the space below it,
    so the bold word carries the tile and the faint tag doesn't pull it off center (Morg, Oct 25, 2026) */
 .tile { flex-direction: column; justify-content: flex-start; padding-top: 5px; }
-.tile .tag { display: block; flex: none; max-width: calc(100% - 24px); opacity: .55; overflow: hidden; text-overflow: clip; }
+.tile .tag { display: block; flex: none; max-width: calc(100% - 24px); overflow: hidden; text-overflow: clip; }   /* full ink at a lighter weight than the hook (Morg, Oct 30, 2026: at 55% it looked grayed out, like a key that's off) */
 .tile .hk { margin: auto 0; }
 .tile.done .tag, .tile.miss .tag { display: none; }
 .tile.done, .tile.miss { justify-content: center; padding-top: 4px; padding-bottom: 4px; }   /* a played tile's ball or ✕ sits in its middle (Morg, Oct 26, 2026: it hung at the top under the tag's band) */
@@ -1282,12 +1282,12 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     g.shadowBlur = 0; g.font = '40px "Press Start 2P"'; g.fillStyle = '#FFFFFF'; g.fillText(no, x0 + tw + gap, 108);
     g.textAlign = 'center';
     var CW = 300, CH = 236, GX = 24, GY = 24, X0 = (W - 3 * CW - 2 * GX) / 2, Y0 = 152, COLS = ['#45BE76', '#F7C948', '#D52B1E'];   // the board's shape: a column per color, three cards each (Oct 27, 2026)
-    function runs(text, size) {   // Pixelify Sans, with its digits in the arcade face as in the game (Pixelify's 5 reads as an S)
-      return String(text).split(/(\d+)/).filter(Boolean).map(function (r) { var dg = /^\d/.test(r), f = dg ? (size * 8 / 11) + 'px "Press Start 2P"' : '600 ' + size + 'px "Pixelify Sans"'; if (!dg) r = nolig(r); g.font = f; return { r: r, f: f, w: g.measureText(r).width }; });
+    function runs(text, size, wt) {   // Pixelify Sans, with its digits in the arcade face as in the game (Pixelify's 5 reads as an S). wt: its weight, 600 unless given
+      return String(text).split(/(\d+)/).filter(Boolean).map(function (r) { var dg = /^\d/.test(r), f = dg ? (size * 8 / 11) + 'px "Press Start 2P"' : (wt || 600) + ' ' + size + 'px "Pixelify Sans"'; if (!dg) r = nolig(r); g.font = f; return { r: r, f: f, w: g.measureText(r).width }; });
     }
-    function wide(text, size) { return runs(text, size).reduce(function (a, b) { return a + b.w; }, 0); }
-    function words(text, x, y, size) {   // centered
-      var rs = runs(text, size), at = x - wide(text, size) / 2;
+    function wide(text, size, wt) { return runs(text, size, wt).reduce(function (a, b) { return a + b.w; }, 0); }
+    function words(text, x, y, size, wt) {   // centered
+      var rs = runs(text, size, wt), at = x - wide(text, size, wt) / 2;
       g.textAlign = 'left'; rs.forEach(function (q) { g.font = q.f; g.fillText(q.r, at, y + (/^\d/.test(q.r) ? size / 11 : 0)); at += q.w; }); g.textAlign = 'center';
     }
     function sprite(name, x, y, u) { SPR[name].forEach(function (r, yy) { for (var xx = 0; xx < r.length; xx++) { var ch = r[xx]; if (ch === '.') continue; g.fillStyle = PAL[ch] || '#EAFBF0'; g.fillRect(x + xx * u, y + yy * u, u, u); } }); }
@@ -1319,8 +1319,8 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
       g.fillStyle = '#1E2A3B';
       hw.forEach(function (w) { var tr = cur ? cur + ' ' + w : w; if (wide(tr, size) > CW - 28 && cur) { lines.push(cur); cur = w; } else cur = tr; }); lines.push(cur);
       lines = lines.slice(0, 3); lines.forEach(function (l, k) { words(l, x + CW / 2, y + (CH + 74) / 2 - (lines.length - 1) * size * .58 + k * size * 1.16, size); });   // 4 px to a font pixel, or 3.5 or 3 for a word too long for the card
-      var tg = tagOf(t).replace('\u00AD', ''), ts = 30.5; while (ts > 22 && wide(tg, ts) > 138) ts -= .5;   // its category, quieter, between the color card and the mark (larger and a shade darker since Oct 30, 2026: CR7 read as OR7), a long one a little smaller
-      g.fillStyle = '#66756B'; words(tg, x + 143, y + 53, ts);
+      var tg = tagOf(t).replace('\u00AD', ''), ts = 30.5; while (ts > 22 && wide(tg, ts, 500) > 138) ts -= .5;   // its category between the color card and the mark, in ink at a lighter weight than the hook, as on the tiles (Oct 30, 2026: gray read as switched off), a long one a little smaller
+      g.fillStyle = '#1E2A3B'; words(tg, x + 143, y + 53, ts, 500);
       var ms = S.res[i] === 1 ? 60 : 53; bwDraw(x + CW - 18 - ms, y + 16 + (60 - ms) / 2, ms, S.res[i] === 1);   // right or missed, in its corner: the played tile's own marks
       card(x + 30, y + 21, 34, 48, t.d);   // and its color in the other corner (Oct 28, 2026: no headers over the columns)
     });

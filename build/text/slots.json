@@ -6,7 +6,7 @@
   "pick":          { "where": "Board: Pick a card, in glowing screen letters below the cards", "sel": ".pick .pk-t", "face": "arcade", "weight": 400, "size": 10.6667, "short": 8, "lh": 1, "track": 1.3333, "trackShort": 1, "case": "upper", "align": "center", "lines": 1 },
   "legend":        { "where": "Board: easier and harder, either side of the three card colors, below Pick a card", "sel": ".legend > span", "size": 14, "short": 12, "lh": 1, "lines": 1 },
 
-  "tag":           { "where": "Board: a tile's category, over its hook", "sel": ".tile .tag", "size": 11, "lh": 1, "wrap": "line", "lines": 1, "fit": -2 },
+  "tag":           { "where": "Board: a tile's category, over its hook", "sel": ".tile .tag", "weight": 500, "size": 11, "lh": 1, "wrap": "line", "lines": 1, "fit": -2 },
   "hook":          { "where": "Board: a tile's hook, the word or name from its card", "sel": ".tile", "size": 19, "mid": 18, "short": 16, "lh": 1.04, "align": "center", "lines": 2, "shrink": 0.7 },
 
   "sentence":      { "where": "Play: the card's sentence", "sel": ".sentence", "size": 26, "short": 22, "lh": 1.22, "wrap": "balance" },
