@@ -18,12 +18,14 @@ PER = int(re.search(r'var PER = (\d+)', HTML).group(1)); LMAX = int(re.search(r'
 
 CHECK = """([days, per, lmax]) => {
   const T = window.TRIVIELA, t0 = performance.now(), boards = T.deal(days - 1, true), ms = performance.now() - t0;
-  const bad = [], last = {}, gaps = [], seen = {}, mix = { women: 0, rules: 0, slang: 0, leagues: {} };
+  const bad = [], pinned = [], last = {}, gaps = [], seen = {}, mix = { women: 0, rules: 0, slang: 0, leagues: {} };
   boards.forEach((tiers, day) => {
     const all = [].concat(...tiers);
     tiers.forEach((t, i) => { if (t.length !== per || t.some(c => c.d !== i + 1)) bad.push([day, 'color ' + (i + 1) + ' has ' + t.length]); });
-    if (!all.some(c => c.wm)) bad.push([day, 'no women’s card']);
-    if (!all.some(c => c.rl)) bad.push([day, 'no rules card']);
+    const mine = T.PIN && T.PIN[day + 1];   // Morg's own board: the page deals it as he set it, guardrails and all (Hand-made boards in CLAUDE.md)
+    const rule = (what) => (mine ? pinned : bad).push(what);
+    if (!all.some(c => c.wm)) rule([day, 'no women’s card']);
+    if (!all.some(c => c.rl)) rule([day, 'no rules card']);
     const lg = {}; all.forEach(c => { if (c.lg) lg[c.lg] = (lg[c.lg] || 0) + 1; });
     Object.entries(lg).forEach(([k, n]) => { if (n > lmax) bad.push([day, n + ' from ' + k]); mix.leagues[k] = (mix.leagues[k] || 0) + n; });
     const sl = all.filter(c => c.sl); sl.forEach(c => { if (c.d === 3) bad.push([day, 'red slang', c.id]); });
@@ -34,7 +36,7 @@ CHECK = """([days, per, lmax]) => {
   });
   gaps.sort((a, b) => a - b);
   const pool = T.POOL.map(p => p.length);
-  return { ms: Math.round(ms), bad: bad.slice(0, 40), nbad: bad.length, pool, used: Object.keys(seen).length,
+  return { ms: Math.round(ms), bad: bad.slice(0, 40), nbad: bad.length, pinned, pool, used: Object.keys(seen).length,
     repeats: gaps.length, minGap: gaps[0] || null, under91: gaps.filter(g => g < 91).length, firstRepeatDay: (() => { const f = {}; let d0 = null;
       boards.forEach((tiers, day) => [].concat(...tiers).forEach(c => { if (f[c.id] && d0 === null) d0 = day; f[c.id] = 1; })); return d0; })(),
     perDay: { women: (mix.women / days).toFixed(2), rules: (mix.rules / days).toFixed(2), slang: (mix.slang / days).toFixed(2) },
@@ -61,6 +63,7 @@ async def main():
     print('per day: women', res['perDay']['women'], '| rules', res['perDay']['rules'], '| slang', res['perDay']['slang'])
     print('per day by league:', res['leagues'])
     print('same boards on a second load:', 'yes' if prints[0] == prints[1] else 'NO')
+    if res['pinned']: print('on Morg’s own boards, his call, not counted:', '; '.join(f'#{d + 1} {w}' for d, w in res['pinned']))
     print('problems:', res['nbad'])
     for x in res['bad']: print('  ', x)
     print('day 1 board:')

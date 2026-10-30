@@ -838,12 +838,12 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   function fresh(day) {
     var b = deal(day);
     var tiles = [].concat(b[0], b[1], b[2]);
-    return { v: 5, day: day, tiles: tiles.map(function (c) { return { id: c.id, h: c.fp, lk: c.lk, d: c.d, hook: c.hook, w: c.w, m: c.m, ex: c.ex, ch: choices(c, day) }; }),
-      res: tiles.map(function () { return 0; }), open: -1, path: [], slots: [] };   // v 5: nine cards (Oct 27, 2026). v 3 brought fresh cards and near-miss numbers, v 2 the shootout's first 15
+    return { v: 6, day: day, tiles: tiles.map(function (c) { return { id: c.id, h: c.fp, lk: c.lk, d: c.d, hook: c.hook, w: c.w, m: c.m, ex: c.ex, ch: choices(c, day) }; }),
+      res: tiles.map(function () { return 0; }), open: -1, path: [], slots: [] };   // v 6: Morg's first nine and steadier choices (Oct 30, 2026), so every phone starts them fresh. v 5: nine cards (Oct 27, 2026). v 3 brought fresh cards and near-miss numbers, v 2 the shootout's first 15
   }
   function load() {
     var s = store.get('bsb-daily', null), d = today();
-    if (!(s && s.v === 5 && s.day === d && s.tiles && s.tiles.length === 3 * PER)) return fresh(d);
+    if (!(s && s.v === 6 && s.day === d && s.tiles && s.tiles.length === 3 * PER)) return fresh(d);
     s.tiles.forEach(function (t) {   // a board saved before cards had ids: find each card by its words
       if (t.id) return;
       for (var i = 0; i < ALL.length; i++) if (ALL[i].w === t.w && ALL[i].ex === t.ex) { t.id = ALL[i].id; t.h = ALL[i].fp; t.lk = ALL[i].lk; break; }
@@ -874,7 +874,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   var chips = function () { return S.res.filter(function (x) { return x === 1; }).length; };
   var over = function () { return S.res.indexOf(0) < 0; };   // every card played: a miss no longer ends the day
   var ALLN = 3 * PER, GOLAZO = tx('golazo');   // a perfect day, 9/9 (Morg's name and caps, Oct 19, 2026)
-  if (DEV) window.TRIVIELA = { deal: deal, choices: choices, ALL: ALL, POOL: POOL, near: near, state: function () { return S; } };   // for tools/drawcheck.py, and tools/tilecheck.py below
+  if (DEV) window.TRIVIELA = { deal: deal, choices: choices, ALL: ALL, POOL: POOL, near: near, PIN: PIN, state: function () { return S; } };   // for tools/drawcheck.py, and tools/tilecheck.py below
 
   // ---- the tap shield ----
   // a touch within 350 ms of a new screen or a pop-up opening or closing is dropped,

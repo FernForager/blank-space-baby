@@ -211,6 +211,11 @@ async def main():
         if m['lines'] >= 2 and min(m['widths'][-1:]) < max(m['widths']) / 3: say(f'uneven lines ({", ".join(str(round(w)) for w in m["widths"])} px)')
         if m['align'] == 'center' and m['lines'] == 1 and abs(m['off']) * SCALE > 1.5 and m['over'] == 0: say(f'{abs(m["off"]):.1f} px off center')
         if m['missing']: say(f'characters not in its font: {m["missing"]}')
+    if 'var ONE = true' in open(PAGE).read():   # card text on #365, a board nobody plays while one fixed board holds: for the editor, the same rule as tilecheck and sweep
+        editor = [q for q in problems if ' card “' in q]
+        if editor:
+            problems = [q for q in problems if q not in editor]
+            print(f'{len(editor)} card-text problems on a board that doesn’t play while one fixed board holds, for the editor:'); [print('   ', q) for q in editor]
     if PSEUDO:
         for t in sorted(strays): problems.append(f'English not from build/text: “{t}”')
     measured = {m['slot'] for m in found}
