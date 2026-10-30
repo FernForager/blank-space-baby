@@ -1254,6 +1254,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   });
   // Share board (Morg, Oct 19, 2026): the finished board as an image, face up, every card in its spot with its hook, the one place the
   // hooks show now. Drawn when the key is tapped, all at once, so the phone's share sheet opens from the tap itself. A computer shows it
+  function nolig(s) { return String(s).replace(/(\S)(?=\S)/g, '$1\u200C'); }   // a canvas can't turn ligatures off, and Pixelify's fi looks like an A ("2026 Anals", Oct 30, 2026): a zero-width non-joiner between letters keeps them apart
   function boardImage() {
     var W = 1080, H = 1350, c = document.createElement('canvas'), g = c.getContext('2d'); c.width = W; c.height = H;
     var bg = g.createRadialGradient(W / 2, 0, 0, W / 2, 0, H * 1.1); bg.addColorStop(0, '#1E3A2A'); bg.addColorStop(.7, '#0B1710'); g.fillStyle = bg; g.fillRect(0, 0, W, H);
@@ -1269,7 +1270,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     g.textAlign = 'center';
     var CW = 300, CH = 262, GX = 24, GY = 30, X0 = (W - 3 * CW - 2 * GX) / 2, Y0 = 300, COLS = ['#45BE76', '#F7C948', '#D52B1E'];   // the board's shape: a column per color, three cards each (Oct 27, 2026)
     function runs(text, size) {   // Pixelify Sans, with its digits in the arcade face as in the game (Pixelify's 5 reads as an S)
-      return String(text).split(/(\d+)/).filter(Boolean).map(function (r) { var f = /^\d/.test(r) ? (size * 8 / 11) + 'px "Press Start 2P"' : '600 ' + size + 'px "Pixelify Sans"'; g.font = f; return { r: r, f: f, w: g.measureText(r).width }; });
+      return String(text).split(/(\d+)/).filter(Boolean).map(function (r) { var dg = /^\d/.test(r), f = dg ? (size * 8 / 11) + 'px "Press Start 2P"' : '600 ' + size + 'px "Pixelify Sans"'; if (!dg) r = nolig(r); g.font = f; return { r: r, f: f, w: g.measureText(r).width }; });
     }
     function wide(text, size) { return runs(text, size).reduce(function (a, b) { return a + b.w; }, 0); }
     function words(text, x, y, size) {   // centered
@@ -1309,7 +1310,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
       var ms = S.res[i] === 1 ? 60 : 53; bwDraw(x + CW - 18 - ms, y + 16 + (60 - ms) / 2, ms, S.res[i] === 1);   // right or missed, in its corner: the played tile's own marks
       card(x + 30, y + 21, 34, 48, t.d);   // and its color in the other corner (Oct 28, 2026: no headers over the columns)
     });
-    g.font = '600 44px "Pixelify Sans"'; g.fillStyle = '#EAFBF0'; g.fillText(tx('share.site'), W / 2, H - 86);
+    g.font = '600 44px "Pixelify Sans"'; g.fillStyle = '#EAFBF0'; g.fillText(nolig(tx('share.site')), W / 2, H - 86);
     g.font = '26px "Press Start 2P"'; g.fillStyle = '#C9FFDD'; g.fillText(tx('share.tagline').replace(/⚽\uFE0F?\s*/g, '').toUpperCase(), W / 2, H - 38);   // what the game is, like the sign's line
     return c;
   }
