@@ -185,7 +185,7 @@ async def main():
                     await pg.wait_for_timeout(1800); await look('end, all right but one')
                     await pg.click('#e-review'); await pg.wait_for_timeout(420); await look('a card again')   # Review opens card one (Oct 28, 2026)
                     for _ in range(N - 1): await pg.click('#r-next'); await pg.wait_for_timeout(420)
-                    await look('the last card again'); await pg.click('#r-exit'); await pg.wait_for_timeout(420)
+                    await look('the last card again'); await pg.click('#r-back'); await pg.wait_for_timeout(420)
                     await pg.click('#sboard'); await pg.wait_for_timeout(1200); await look('share board pop-up'); await pg.click('#bimg-x'); await pg.wait_for_timeout(400)
                     # a perfect day
                     await setday([1] * (N - 1) + [0], list(range(N - 1)))

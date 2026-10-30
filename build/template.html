@@ -418,14 +418,21 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .endrow .rvkey { flex: 1; min-height: 52px; display: flex; align-items: center; justify-content: center; gap: 8px; }
 .endrow .rvkey svg { flex: none; }
 .rvk { display: none; }
-#p-end.rv-on .endrow > * { display: none; }
+#p-end.rv-on .endrow > #e-review, #p-end.rv-on .endrow > .bk { display: none; }   /* Review turns into Back, the same size and place, and the countdown stays beside it (Morg, Oct 30, 2026) */
 #p-end.rv-on .endrow > .rvk { display: flex; align-items: center; justify-content: center; min-height: 52px; }
-#p-end.rv-on .endrow > .rvpair { align-items: stretch; gap: 10px; }   /* the arrows side by side in the countdown's half, Exit in Review's, so the row keeps its two halves going in and out (Morg, Oct 30, 2026) */
-.rvk.rv-exit, .rvpair { flex: 1 1 0; min-width: 0; }
-#p-end .endrow > #e-review, #p-end .endrow > #r-exit { flex: 0 0 calc(50% - 5px); }   /* Review and Exit hold exactly half the row, and what sits beside them fills the other half */
-#r-prev, #r-next { flex: 1 1 0; min-width: 0; display: flex; align-items: center; justify-content: center; }
-#r-prev:disabled, #r-next:disabled { opacity: .35; }
+#p-end .endrow > #e-review, #p-end .endrow > #r-back { flex: 0 0 calc(50% - 5px); }   /* Review and Back hold exactly half the row, and what sits beside them fills the other half */
 @media (max-height: 640px) { .endrow .rvkey, #p-end.rv-on .endrow > .rvk { min-height: 48px; } }
+/* the arrows on the screen, under the card's meaning (Morg, Oct 30, 2026: "the arrows should probably up under the cards"), glowing like the play screen's own arrow */
+.rv-nav { display: flex; justify-content: center; gap: 24px; margin-top: -4px; }
+.rv-nav button { width: 64px; height: 44px; padding: 0; border: 0; background: none; color: var(--glow); cursor: pointer; display: flex; align-items: center; justify-content: center; filter: drop-shadow(0 0 6px rgba(92,240,154,.8)); -webkit-tap-highlight-color: transparent; }
+.rv-nav button:active:not(:disabled) { transform: translateY(1px); }
+.rv-nav button:disabled { opacity: .3; cursor: default; filter: none; }
+.rv-nav button:focus-visible { outline: 3px solid var(--glow); outline-offset: 2px; }
+@media (max-height: 640px) {   /* the smallest phone has no room under its longest cards, so the arrows sit at the end of the top line */
+  .rv { position: relative; }
+  .rv-nav { position: absolute; top: -8.5px; right: -10px; margin: 0; gap: 0; }
+  .rv-nav button { width: 48px; }
+}
 @media (max-width: 359px) { .endrow .rvkey svg, .endrow .next.key svg { display: none; } }   /* the smallest phones: the keys give their icons' room to the words */
 #v-end.review { justify-content: flex-start; align-items: stretch; gap: 0; cursor: pointer; }
 .rv { flex: 1; min-height: 0; display: flex; flex-direction: column; }
@@ -473,7 +480,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     <div class="pv" id="p-gate"></div>
     <div class="pv choices" id="choices"></div>
     <div class="gorow" id="g-play"><button class="bk flag" id="b-flag" type="button" hidden></button><button class="key go gokey wait" id="go" type="button" tabindex="-1" data-t-label="play.next"></button><button class="bk lock" id="b-lock" type="button" hidden></button></div>
-    <div class="pv" id="p-end"><div class="sharerow"><button class="key share" id="share" type="button"><span class="kl"><span class="sg-l" data-t="end.sgrid"></span><span id="share-mark"></span></span><span class="txt bubble"><span id="share-top"></span><span id="share-txt"></span></span></button><button class="key sboard" id="sboard" type="button"><span class="kl"><span class="sg-l" data-t="end.sboard"></span><span id="sboard-mark"></span></span><span class="photo" id="sb-thumb" aria-hidden="true"></span></button></div><div class="endrow"><button class="bk flag" id="e-flag" type="button" hidden></button><button class="key rvkey" id="e-review" type="button"></button><button class="next key" id="e-next" type="button" hidden></button><button class="again key" id="e-again" type="button" hidden></button><button class="key rvk rv-exit" id="r-exit" type="button"></button><span class="rvk rvpair"><button class="key" id="r-prev" type="button"></button><button class="key" id="r-next" type="button"></button></span><button class="bk lock" id="e-lock" type="button" hidden></button></div></div>
+    <div class="pv" id="p-end"><div class="sharerow"><button class="key share" id="share" type="button"><span class="kl"><span class="sg-l" data-t="end.sgrid"></span><span id="share-mark"></span></span><span class="txt bubble"><span id="share-top"></span><span id="share-txt"></span></span></button><button class="key sboard" id="sboard" type="button"><span class="kl"><span class="sg-l" data-t="end.sboard"></span><span id="sboard-mark"></span></span><span class="photo" id="sb-thumb" aria-hidden="true"></span></button></div><div class="endrow"><button class="bk flag" id="e-flag" type="button" hidden></button><button class="key rvkey" id="e-review" type="button"></button><button class="key rvk rv-back" id="r-back" type="button"></button><button class="next key" id="e-next" type="button" hidden></button><button class="again key" id="e-again" type="button" hidden></button><button class="bk lock" id="e-lock" type="button" hidden></button></div></div>
   </div>
 </div>
 <div class="bimg" id="bimg" hidden><img id="bimg-i" data-t-alt="image.alt"><button class="key" id="bimg-x" type="button" data-t="image.close"></button></div>
@@ -1154,8 +1161,9 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   }
   // ---- your cards, again (Morg, Oct 26, 2026: a finished day should never feel like a dead end) ----
   // Review (Morg, Oct 28, 2026, in place of the line saying to tap a card) opens card one on the screen, its answer filled in and its
-  // meaning under it, and the panel's row turns into ◀ Exit ▶: the arrows step through the cards, green first, then yellow, then
-  // red, and Exit goes back to the grid. Tapping a mark in the grid still opens its card, and a tap on the screen still steps on
+  // meaning under it and ◀ ▶ under that, and Review turns into Back, the countdown staying beside it (Morg, Oct 30, 2026): the arrows
+  // step through the cards, green first, then yellow, then red, and Back goes back to the grid. Tapping a mark in the grid still opens
+  // its card, and a tap on the screen still steps on
   var REV = -1;   // the card on the screen, by its place in the grid (0 to 8), or -1 for the grid itself
   function order() { var o = []; S.tiles.forEach(function (T, i) { o[(T.d - 1) * PER + spot(i)] = i; }); return o; }
   function review(k) {
@@ -1165,21 +1173,19 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     var said = tx(ok ? 'tile.right' : 'tile.missed', { label: tx('review.count', { i: k + 1, all: o.length }) });   // spoken: “3 of 9, right” in the tiles' own words (the audit)
     $('v-end').innerHTML = '<div class="rv"><p class="sr">' + esc(said) + '</p><p class="rv-top" aria-hidden="true">' + rcard(T.d) + mark(S.res[i], 18) +
       '<span data-tid="review.count"' + tv({ i: k + 1, all: o.length }) + '>' + th('review.count', { i: k + 1, all: o.length }) + '</span></p>' +
-      '<div class="rv-face"><p class="' + size(T) + (ok ? '' : ' missed') + '">' + sentence(T, true) + '</p><p class="means">' + num(keep(orph(esc(T.m)))) + '</p></div></div>';
-    $('p-end').classList.add('rv-on'); $('r-prev').disabled = k === 0; $('r-next').disabled = !more;
+      '<div class="rv-face"><p class="' + size(T) + (ok ? '' : ' missed') + '">' + sentence(T, true) + '</p><p class="means">' + num(keep(orph(esc(T.m)))) + '</p>' +
+      '<div class="rv-nav"><button type="button" id="r-prev" aria-label="' + esc(tx('review.prevLabel')) + '" data-t-label="review.prevLabel"' + (k === 0 ? ' disabled' : '') + '>' + svg('back', 3) + '</button>' +
+      '<button type="button" id="r-next" aria-label="' + esc(tx('review.nextLabel')) + '" data-t-label="review.nextLabel"' + (more ? '' : ' disabled') + '>' + svg('next', 3) + '</button></div></div></div>';
+    $('p-end').classList.add('rv-on');
     flick(); guard();
   }
   $('e-review').innerHTML = '<span data-tid="end.review">' + th('end.review') + '</span>' + svg('look', 2);
   $('e-review').addEventListener('click', function () { review(0); });
-  $('r-prev').innerHTML = svg('back', 3); $('r-prev').setAttribute('aria-label', tx('review.prevLabel')); $('r-prev').dataset.tLabel = 'review.prevLabel';
-  $('r-next').innerHTML = svg('next', 3); $('r-next').setAttribute('aria-label', tx('review.nextLabel')); $('r-next').dataset.tLabel = 'review.nextLabel';
-  $('r-exit').innerHTML = '<span data-tid="review.exit">' + th('review.exit') + '</span>';
-  $('r-prev').addEventListener('click', function () { if (REV > 0) review(REV - 1); });
-  $('r-next').addEventListener('click', function () { if (REV >= 0 && REV + 1 < S.tiles.length) review(REV + 1); });
-  $('r-exit').addEventListener('click', function () { end(); });
+  $('r-back').innerHTML = '<span data-tid="review.back">' + th('review.back') + '</span>';
+  $('r-back').addEventListener('click', function () { end(); });
   $('v-end').addEventListener('click', function (e) {
     if (cab.dataset.v !== 'end') return;
-    if (REV >= 0) return review(REV + 1);
+    if (REV >= 0) { if (e.target.closest('#r-prev')) return REV > 0 && review(REV - 1); return review(REV + 1); }   // the arrows on the screen, and a tap anywhere else on it steps on
     var b = e.target.closest('[data-k]'); if (b) review(+b.dataset.k); else if (e.target.closest('.egrid')) review(0);
   });
   function endRow() {   // beside Review: the countdown to the next board, its Play key after a late finish, or in the demo the next board and a way back to #1

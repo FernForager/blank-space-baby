@@ -25,7 +25,7 @@
   "thanks":        { "where": "End screen: Thanks for playing, the demo's last board", "sel": ".thanks-s", "size": 18, "align": "center", "lines": 1 },
   "shareKey":      { "where": "End screen: the left share key's chat bubble, the text it sends", "sel": ".share", "size": 12, "narrow": 11, "lh": 1.25, "align": "left" },
   "shareLines":    { "where": "End screen: the share key's line height", "sel": ".share .txt", "lh": 1.12 },
-  "endKey":        { "where": "End screen: Review, the next board's key beside it, Exit between the arrows, and the demo's Play again from #1", "sel": ".endrow .next, .endrow .next.key, .endrow .again.key, .endrow .rvkey, .endrow .rv-exit", "size": 17, "lines": 3 },
+  "endKey":        { "where": "End screen: Review, the next board's key beside it, Back in Review's place, a card again, and the demo's Play again from #1", "sel": ".endrow .next, .endrow .next.key, .endrow .again.key, .endrow .rvkey, .endrow .rv-back", "size": 17, "lines": 3 },
   "sgridKey":      { "where": "End screen: the two share keys' names, Share grid and Share board, each over its preview", "sel": ".sharerow .sg-l", "size": 14, "short": 13, "narrow": 12, "lh": 1, "wrap": "line", "lines": 1 },
   "clockLabel":    { "where": "End screen, beside Review: Next, over the countdown", "sel": ".next.wait .clk-l", "face": "pixel", "size": 13, "short": 12, "lh": 1.1, "track": 0, "align": "center", "lines": 1 },
   "reviewCount":   { "where": "End screen, a card again: 3 of 9, at the top", "sel": ".rv-top", "size": 15, "lines": 1 },
