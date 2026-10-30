@@ -349,8 +349,8 @@
   {
    "w": "couch potato",
    "means": "A lazy TV watcher",
-   "ex": "Dad calls himself a soccer fan, but he is more of a couch potato",
-   "hook": "soccer fan",
+   "ex": "Dad calls himself a big fan of the game, but he is more of a couch potato",
+   "hook": "big fan",
    "k": "noun",
    "src": "https://www.merriam-webster.com/dictionary/couch%20potato",
    "d": 1
@@ -358,7 +358,7 @@
   {
    "w": "mall rat",
    "means": "Someone who lives at the mall",
-   "ex": "Grandma shops for soccer gear so often that the team calls her a mall rat",
+   "ex": "Grandma shops for new cleats so often that the team calls her a mall rat",
    "hook": "Grandma",
    "k": "noun",
    "src": "https://www.merriam-webster.com/dictionary/mall%20rat",

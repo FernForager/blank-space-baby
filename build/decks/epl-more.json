@@ -89,7 +89,7 @@
       "w": "Shane Long",
       "means": "The fastest goal in league history",
       "ex": "Shane Long scored after just 7.69 seconds for Southampton in 2019",
-      "hook": "Southampton",
+      "hook": "7.69 seconds",
       "k": "player",
       "src": "https://www.premierleague.com/en/stats/records",
       "d": 2
@@ -214,7 +214,7 @@
     {
       "w": "Sunderland",
       "means": "Opened to all players in 1880",
-      "ex": "Sunderland began in 1879 as a football club for local teachers",
+      "ex": "Sunderland began in 1879 as a club for local teachers",
       "hook": "teachers",
       "k": "club",
       "src": "https://www.premierleague.com/en/news/4592046/what-is-the-history-behind-every-premier-league-clubs-name",
@@ -267,9 +267,9 @@
     },
     {
       "w": "Manuel Pellegrini",
-      "means": "From Chile, with Man City in 2013–14",
-      "ex": "Manuel Pellegrini became the first non-European boss to win the title",
-      "hook": "non-European",
+      "means": "From Chile, the champion in 2013–14",
+      "ex": "With Man City, Manuel Pellegrini became the first non-European boss to win the title",
+      "hook": "Man City",
       "k": "manager",
       "src": "https://www.premierleague.com/en/news/4660971/every-premier-league-title-winning-manager-in-history",
       "d": 2
@@ -540,8 +540,8 @@
     {
       "w": "Boscombe",
       "means": "Renamed AFC Bournemouth in 1971",
-      "ex": "AFC Bournemouth began in 1899 as Boscombe Football Club",
-      "hook": "Bournemouth",
+      "ex": "The Cherries began in 1899 under the name Boscombe",
+      "hook": "Cherries",
       "k": "old name",
       "src": "https://www.premierleague.com/en/news/4592046/what-is-the-history-behind-every-premier-league-clubs-name",
       "d": 3

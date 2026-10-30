@@ -25,7 +25,7 @@
     {
       "w": "cleats",
       "means": "The grips themselves are cleats too",
-      "ex": "Soccer shoes with grips on the bottom go by the name cleats",
+      "ex": "Shoes for the field with grips on the bottom go by the name cleats",
       "hook": "grips",
       "k": "game-gear",
       "src": "https://www.merriam-webster.com/dictionary/cleat",
@@ -78,7 +78,7 @@
     },
     {
       "w": "shin guard",
-      "means": "Used in several sports, not just soccer",
+      "means": "Hockey players wear them too",
       "ex": "The stiff pad over the front of the leg below the knee goes by the name shin guard",
       "hook": "knee",
       "k": "game-gear",
@@ -133,7 +133,7 @@
     {
       "w": "return substitute",
       "means": "Youth and grassroots games may allow it",
-      "ex": "In youth soccer, a player taken off who later comes back on is a return substitute",
+      "ex": "In youth games, a player taken off who later comes back on is a return substitute",
       "hook": "taken off",
       "k": "game-who",
       "src": "https://www.theifab.com/laws/latest/guidelines-for-return-substitutes/",
@@ -250,8 +250,8 @@
     {
       "w": "halves",
       "means": "So can the halves of extra time",
-      "ex": "In youth soccer, halves may be shorter than the usual 45 minutes",
-      "hook": "youth soccer",
+      "ex": "In youth games, halves may be shorter than the usual 45 minutes",
+      "hook": "45 minutes",
       "k": "game-time",
       "src": "https://www.theifab.com/laws/latest/general-modifications/",
       "d": 1
@@ -439,7 +439,7 @@
     {
       "w": "goalmouth",
       "means": "Written as one word",
-      "ex": "In soccer and hockey, the goalmouth is the area directly in front of the net",
+      "ex": "The goalmouth is the area directly in front of the net",
       "hook": "net",
       "k": "field-area",
       "src": "https://www.merriam-webster.com/dictionary/goalmouth",
@@ -547,7 +547,7 @@
     {
       "w": "goalpost",
       "means": "So must the crossbar",
-      "ex": "By rule, every goalpost on a soccer field must be white",
+      "ex": "By rule, every goalpost on the field must be white",
       "hook": "white",
       "k": "field-goal",
       "src": "https://www.theifab.com/laws/latest/the-field-of-play/",
@@ -565,7 +565,7 @@
     {
       "w": "crossbar",
       "means": "The field’s size can change too",
-      "ex": "In youth soccer, the goal’s width and the height of its crossbar may change",
+      "ex": "In youth games, the goal’s width and the height of its crossbar may change",
       "hook": "youth",
       "k": "field-goal",
       "src": "https://www.theifab.com/laws/latest/general-modifications/",
@@ -1374,9 +1374,9 @@
     },
     {
       "w": "goalkeeper",
-      "means": "Lacrosse has goalkeepers too",
-      "ex": "In soccer and hockey, the player who defends the goal is the goalkeeper",
-      "hook": "hockey",
+      "means": "Hockey and lacrosse have them too",
+      "ex": "The player who defends the goal is the goalkeeper",
+      "hook": "defends",
       "k": "people-team",
       "src": "https://www.merriam-webster.com/dictionary/goalkeeper",
       "d": 1
@@ -1393,7 +1393,7 @@
     {
       "w": "striker",
       "means": "Strikers strike at the ball",
-      "ex": "The word striker is another name for a soccer forward",
+      "ex": "The word striker is another name for a forward on the pitch",
       "hook": "forward",
       "k": "people-team",
       "src": "https://www.merriam-webster.com/dictionary/striker",

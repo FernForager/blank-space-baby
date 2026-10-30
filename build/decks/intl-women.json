@@ -336,7 +336,7 @@
     {
       "w": "1996",
       "means": "First gold: USA, in Atlanta",
-      "ex": "Women’s soccer joined the Olympics in 1996",
+      "ex": "Women’s teams first played at the Olympics in 1996",
       "hook": "Olympics",
       "k": "year",
       "src": "https://www.fifa.com/en/tournaments/olympicgames/paris2024/articles/medal-winners-womens-tournament",
@@ -391,7 +391,7 @@
     {
       "w": "five",
       "means": "Four more than any other team",
-      "ex": "The USA have won five Olympic gold medals in women’s soccer",
+      "ex": "The USA women have won five Olympic gold medals",
       "hook": "Olympic gold",
       "k": "number",
       "src": "https://www.ussoccer.com/stories/2024/08/us-womens-national-team-paris-olympics-highlights-by-the-numbers-stats",
@@ -558,7 +558,7 @@
     {
       "w": "Marta Award",
       "means": "Named for Brazil’s great scorer",
-      "ex": "The FIFA Marta Award honors the year’s best goal in women’s soccer",
+      "ex": "The FIFA Marta Award honors the year’s best goal in the women’s game",
       "hook": "best goal",
       "k": "award",
       "src": "https://www.fifa.com/en/articles/every-marta-goal-womens-world-cup",
@@ -575,7 +575,7 @@
     },
     {
       "w": "Matildas",
-      "means": "Picked over the Soccertoos",
+      "means": "Picked over Blue Flyers and Lorikeets",
       "ex": "Australia’s women got their nickname, the Matildas, from a 1995 TV poll",
       "hook": "Australia",
       "k": "nickname",

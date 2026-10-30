@@ -339,7 +339,7 @@
     },
     {
       "w": "five-a-side",
-      "means": "Soccer with five players a team",
+      "means": "A game with five players a team",
       "ex": "Mom plays in a five-a-side league on a tiny field every Tuesday night",
       "hook": "tiny field",
       "k": "game",
@@ -492,7 +492,7 @@
     },
     {
       "w": "eleven",
-      "means": "A full soccer team",
+      "means": "A full team on the pitch",
       "ex": "The coach picked her starting eleven and sent the rest to the bench",
       "hook": "bench",
       "k": "lingo",

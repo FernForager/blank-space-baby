@@ -54,7 +54,7 @@
    "w": "Leicester City",
    "means": "Also the 2015–16 champions",
    "ex": "Leicester City won 9–0 at Southampton in 2019, a record away win",
-   "hook": "Southampton",
+   "hook": "away win",
    "k": "club",
    "src": "https://www.premierleague.com/en/stats/records",
    "d": 3
@@ -92,8 +92,8 @@
   {
    "w": "20",
    "means": "Each plays the others twice",
-   "ex": "The Premier League has 20 clubs, one tier above the Championship",
-   "hook": "Championship",
+   "ex": "The Premier League, England’s top tier, has 20 clubs",
+   "hook": "top tier",
    "k": "number",
    "src": "https://www.premierleague.com/en/premier-league-explained",
    "d": 2
@@ -174,8 +174,8 @@
   {
    "w": "James Milner",
    "means": "His run began in 2002–03",
-   "ex": "James Milner has made the most Premier League appearances",
-   "hook": "appearances",
+   "ex": "James Milner has played the most matches in Premier League history",
+   "hook": "most matches",
    "k": "player",
    "src": "https://www.premierleague.com/en/stats/records",
    "d": 2

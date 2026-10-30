@@ -179,7 +179,7 @@
   {
    "w": "touch grass",
    "means": "Get off screens, go outside",
-   "ex": "After a day of soccer video games, Mom said to touch grass",
+   "ex": "After a day of World Cup video games, Mom said to touch grass",
    "hook": "video games",
    "src": "https://www.merriam-webster.com/dictionary/touch%20grass",
    "d": 1
@@ -267,8 +267,8 @@
   {
    "w": "brain rot",
    "means": "Mind fog from too much junk online",
-   "ex": "Three hours of goofy soccer clips gave the striker brain rot",
-   "hook": "soccer clips",
+   "ex": "Three hours of goofy goal clips gave the striker brain rot",
+   "hook": "goal clips",
    "src": "https://www.merriam-webster.com/dictionary/brain%20rot",
    "d": 1
   },
@@ -539,8 +539,8 @@
   {
    "w": "Mary Sue",
    "means": "A too-perfect character",
-   "ex": "The striker in the soccer movie never misses and is a Mary Sue",
-   "hook": "soccer movie",
+   "ex": "The striker in the World Cup movie never misses and is a Mary Sue",
+   "hook": "movie",
    "src": "https://www.merriam-webster.com/slang/mary-sue",
    "d": 3
   },
@@ -739,7 +739,7 @@
   {
    "w": "preppy",
    "means": "Bright, bows-and-smiles style",
-   "ex": "Pastel bows on soccer cleats are very preppy",
+   "ex": "Pastel bows on cleats are very preppy",
    "hook": "pastel bows",
    "src": "https://www.merriam-webster.com/slang/preppy",
    "d": 1

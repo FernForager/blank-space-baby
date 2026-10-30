@@ -340,7 +340,7 @@
   },
   {
    "w": "nil",
-   "means": "Zero, in a soccer score",
+   "means": "Zero, when giving a score",
    "ex": "The other team lost 4–nil and still went out for ice cream",
    "hook": "ice cream",
    "k": "score",
@@ -421,7 +421,7 @@
   },
   {
    "w": "futsal",
-   "means": "Indoor soccer, five per team",
+   "means": "An indoor game, five per team",
    "ex": "On rainy days the team plays futsal in the gym, five players per side",
    "hook": "gym",
    "k": "game",

@@ -52,8 +52,8 @@
   {
    "w": "Real Sociedad",
    "means": "In 1980–81 they tied Madrid on points",
-   "ex": "Real Sociedad won back-to-back titles in 1980–81 and 1981–82",
-   "hook": "back-to-back",
+   "ex": "Real Sociedad won the league back to back, in 1980–81 and 1981–82",
+   "hook": "back to back",
    "k": "club",
    "src": "https://www.laliga.com/noticias/todos-los-campeones-de-la-historia-de-laliga",
    "d": 3
@@ -516,7 +516,7 @@
   {
    "w": "1959",
    "means": "Real Madrid won 1–0 at home",
-   "ex": "Spain’s first televised soccer match was a Clásico in 1959",
+   "ex": "The first match ever televised in Spain was a Clásico in 1959",
    "hook": "televised",
    "k": "year",
    "src": "https://www.laliga.com/en-CA/news/the-history-of-elclasico-decade-by-decade",
