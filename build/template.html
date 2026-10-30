@@ -268,14 +268,14 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .sharerow .key { flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; align-items: center; gap: 7px; padding: 9px 8px 11px; }
 .sharerow .kl { flex: none; display: flex; align-items: center; justify-content: center; gap: 7px; }   /* the key's name and its share icon */
 /* each preview says what kind of thing it sends (Morg, Oct 30, 2026: two little grids looked the same): the text in a chat bubble, the picture as a photo */
-.share .bubble { position: relative; flex: none; margin: auto 0; display: flex; flex-direction: column; align-items: flex-start; gap: 3px; padding: 7px 10px 8px; background: #FFFFFF; border-radius: 12px; box-shadow: 0 1px 2px rgba(30,42,59,.25); }
+.share .bubble { position: relative; flex: none; margin: auto 0; display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 7px 10px 8px; background: #FFFFFF; border-radius: 12px; box-shadow: 0 1px 2px rgba(30,42,59,.25); }
 .share .bubble::after { content: ''; position: absolute; left: -5px; bottom: 0; width: 12px; height: 12px; background: #FFFFFF; clip-path: polygon(100% 0, 100% 100%, 0 100%); }   /* its tail, as a message that came in */
-.photo { flex: none; margin: auto 0; padding: 3px; background: #FFFFFF; line-height: 0; box-shadow: 0 2px 5px rgba(30,42,59,.35); transform: rotate(-4deg); }   /* a print of the picture, a little askew */
+.photo { flex: none; margin: auto 0; padding: 3px; background: #FFFFFF; line-height: 0; box-shadow: 0 2px 5px rgba(30,42,59,.35); }   /* a print of the picture, straight (Morg, Oct 30, 2026) */
 .photo canvas { display: block; width: 72px; height: 90px; }
 /* the share key shows the exact text it sends: the shootout grid in the game's pixel ball and ✕, one line per row */
 .sgrid { display: grid; grid-template-columns: repeat(3, 11px); grid-auto-rows: 11px; gap: 3px 3px; padding-block: 2px; align-items: center; justify-items: center; }
 .sgrid .no { color: #E0464B; }
-#share-txt { display: grid; grid-template-columns: auto; row-gap: 3px; justify-items: start; }   /* stacked as the text sends it (Morg, Oct 30, 2026): the grid, GOLAZO! on a perfect day, then the site */
+#share-txt { display: grid; grid-template-columns: auto; row-gap: 3px; justify-items: center; }   /* stacked as the text sends it (Morg, Oct 30, 2026): the grid, GOLAZO! on a perfect day, then the site */
 .egrid .em .mk, .sgrid .mk { display: block; }
 .sgrid svg { display: block; }
 .sgrid.se { grid-template-columns: repeat(3, 14px); grid-auto-rows: 14px; gap: 1px 2px; font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji', sans-serif; font-size: 12px; line-height: 1; }
