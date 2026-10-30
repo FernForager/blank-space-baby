@@ -4783,6 +4783,12 @@
   "note": "src shows La Pulga Atomica. English form The Atomic Flea at https://www.fifa.com/en/tournaments/mens/worldcup/articles/lionel-messi-performance-argentina-switzerland",
   "v": "ok"
  },
+ "legends:72": {
+  "at": "2026-10-30T00:35:45Z",
+  "h": "8e1b0fcbbc",
+  "note": "intermiamicf.com signing page (July 2023): he played the majority of his club career with FC Barcelona and two seasons for Paris Saint-Germain, and names no other club. fcbarcelona.com legend card: Newell’s Old Boys 1995 to 2000 (ages 8 to 13, before his Barça debut at 16, so youth only), Barça 2003 to 2021. He is still Inter Miami’s (mlssoccer.com, Oct 26, 2026). Never Manchester City. Both wrong answers are clubs he did play for, so neither is right.",
+  "v": "ok"
+ },
  "legends:9": {
   "at": "2026-10-17T00:21:33Z",
   "h": "cdd52624d0",
@@ -6336,6 +6342,12 @@
   "at": "2026-10-17T00:11:44Z",
   "h": "bd0e9d7dc0",
   "note": "src: TFC beat Seattle 2–0 in MLS Cup 2017, completing the first domestic treble in MLS history",
+  "v": "ok"
+ },
+ "mls:61": {
+  "at": "2026-10-30T00:35:45Z",
+  "h": "5b71e0c1b2",
+  "note": "mlssoccer.com, Nashville SC clinch Supporters’ Shield for first time in club history (Oct 24, 2026): they claimed the 2026 Shield for the first time in club history, beating CF Montréal 2–0 at Stade Saputo, and still have three games remaining in the regular season. The Matchday 32 story agrees (three games left). FC Cincinnati (2023) and Inter Miami (2024) are past winners but not of 2026, so neither is a second right answer.",
   "v": "ok"
  },
  "mls:7": {
@@ -8992,6 +9004,12 @@
   "at": "2026-10-17T00:17:55Z",
   "h": "9690592c86",
   "note": "uefa.com/womenschampionsleague/history/seasons/2026: Barcelona defeated OL Lyonnes 4-0 in Oslo. Fourth title per WUCL history page (Barcelona 4)",
+  "v": "ok"
+ },
+ "ucl:67": {
+  "at": "2026-10-30T00:35:45Z",
+  "h": "d7e6eb6fe8",
+  "note": "uefa.com, What UEFA records does Cristiano Ronaldo hold? (updated Sept 27, 2026): most goals in a Champions League season, 17 (2013/14), still his record. uefa.com, Record-breaking Ronaldo takes scoring honours (May 24, 2014): 17 goals, a new best for a single campaign, listed as Cristiano Ronaldo (Real Madrid CF). 15 and 20 are both wrong. Red is fair: a real fan knows the record, the exact count is hard.",
   "v": "ok"
  },
  "ucl:7": {
