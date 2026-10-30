@@ -394,14 +394,10 @@
   "v": "ok"
  },
  "alpha:67": {
-  "at": "2026-10-30T10:41:45Z",
-  "fix": {
-   "ex": "The striker in the World Cup movie never misses and is a Mary Sue",
-   "hook": "movie"
-  },
-  "h": "da79349482",
-  "note": "says soccer or football in passing (Morg, Oct 26, 2026): new hook measured in a real tile at 402, 375 and 320 wide: fits, no split",
-  "v": "fix"
+  "at": "2026-10-30T10:58:17Z",
+  "h": "0d2bad7a1d",
+  "note": "World Cup is the only one in the deck, and it carries the sport on the tile better than movie",
+  "v": "ok"
  },
  "alpha:68": {
   "at": "2026-10-17T00:25:20Z",
@@ -1368,13 +1364,10 @@
   "v": "ok"
  },
  "basics:2": {
-  "at": "2026-10-30T10:41:45Z",
-  "fix": {
-   "ex": "Shoes for the field with grips on the bottom go by the name cleats"
-  },
-  "h": "312a5a5f01",
-  "note": "says soccer or football in passing (Morg, Oct 26, 2026):",
-  "v": "fix"
+  "at": "2026-10-30T10:58:17Z",
+  "h": "070e83def7",
+  "note": "sports shoes reads plainer than mine and stays true to M-W’s cleat",
+  "v": "ok"
  },
  "basics:20": {
   "at": "2026-10-16T23:57:03Z",
