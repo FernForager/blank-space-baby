@@ -13,7 +13,7 @@ from docsroute import route
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 HTML = open(os.path.join(ROOT, 'docs', 'index.html')).read()
 ONE = re.search(r'var ONE = (true|false)', HTML).group(1) == 'true'
-SIZES = [(402, 744), (375, 667), (320, 568)]
+SIZES = [(402, 744, 3), (375, 667, 3), (320, 568, 2)]   # each phone at its own scale: a 320-wide iPhone is 2× (the audit, Oct 30, 2026)
 MEASURE = """() => {
   const board = document.getElementById('p-board'), boxes = [...board.querySelectorAll('[data-i]')], out = [];
   // lines by the middle of each box: digits sit in the arcade face a little lower than the letters, so tops alone would split a line
@@ -53,8 +53,8 @@ async def main():
     res = {}
     async with async_playwright() as p:
         b = await p.chromium.launch()
-        for W, H in SIZES:
-            ctx = await b.new_context(viewport={'width': W, 'height': H}, device_scale_factor=3, timezone_id='America/Los_Angeles', service_workers='block', reduced_motion='reduce')
+        for W, H, DPR in SIZES:
+            ctx = await b.new_context(viewport={'width': W, 'height': H}, device_scale_factor=DPR, timezone_id='America/Los_Angeles', service_workers='block', reduced_motion='reduce')
             pg = await ctx.new_page()
             await pg.route('https://bsb.test/**', route(HTML)); await pg.goto('https://bsb.test/'); await pg.wait_for_timeout(800)
             await pg.evaluate("document.fonts.ready")
@@ -69,7 +69,7 @@ async def main():
     bad, lines_out = {}, []
     for W, rows in res.items():
         shrunk = [r for r in rows if r['fs'] < r['base'] - .01]
-        lines_out.append(f'-- {W} wide: hook {rows[0]["base"]:g} px, {len(shrunk)} of {len(rows)} hooks shrink to fit (smallest {min([r["fs"] for r in rows]):g} px)')
+        lines_out.append(f'-- {W} wide, {dict((w, d) for w, _, d in SIZES)[W]}×: hook {rows[0]["base"]:g} px, {len(shrunk)} of {len(rows)} hooks shrink to fit (smallest {min([r["fs"] for r in rows]):g} px)')
         for key, test, what in rules:
             hit = [r for r in rows if test(r)]
             lines_out.append(f'   {len(hit):4} {what}')

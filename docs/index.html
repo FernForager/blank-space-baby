@@ -165,7 +165,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 /* the board: the ball on the screen (the tiles are keys on the panel, below) */
 #v-board { container-type: size; align-items: center; justify-content: center; }
 .pitch { position: relative; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; }
-.pitch .ball { width: min(100cqw, 100cqh); }   /* the ball fills the screen (Morg, Oct 17, 2026: the assembled ball is the payoff) */
+.pitch .ball { width: 100%; width: min(100cqw, 100cqh); }   /* a plain width first, for a browser without container units (iOS 15, the audit). The ball fills the screen (Morg, Oct 17, 2026: the assembled ball is the payoff) */
 /* the screen hugs its balls (Morg, Oct 28, 2026: the screen around the balls a bit smaller). Its natural height is the balls plus
    --hug above and below them (the balls are .3 of the screen's inner width, three columns with 5% gaps, and the cabinet, bezel and
    screen pad that width by 80 px in all), and any room to spare goes two thirds to the cards and a third to the screen */
@@ -210,7 +210,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   background: repeating-linear-gradient(90deg, var(--glow) 0 0.42em, transparent 0.42em 0.62em) left bottom / 100% 3px no-repeat; }
 
 /* the end of the day: the shootout grid and the score */
-#v-end { justify-content: center; align-items: center; gap: 6cqh; }
+#v-end { justify-content: center; align-items: center; gap: 18px; gap: 6cqh; }   /* the px gap stands where cqh isn't understood (iOS 15) */
 .egrid { display: grid; grid-template-columns: repeat(3, auto); gap: 9px 10px; align-items: center; }
 .egrid .rc { width: 9px; height: 13px; border-radius: 1.5px; margin-right: 4px; }
 .egrid .rc.c1 { background: var(--c1); } .egrid .rc.c2 { background: var(--c2); } .egrid .rc.c3 { background: var(--c3); }
@@ -225,7 +225,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .word { margin: 0; font-family: var(--pixel); font-weight: 400; font-size: 20px; line-height: 1.2; color: #fff; text-align: center;
   text-shadow: 0 0 4px rgba(255,255,255,.6), 0 0 12px rgba(92,240,154,.6); }
 .means { margin: 0; color: #B8E6CA; }   /* the means line is the payoff, so it stays bright */
-#v-end .ball { width: min(62%, 60cqh); margin: 0 auto; }
+#v-end .ball { width: 62%; width: min(62%, 60cqh); margin: 0 auto; }
 #v-end { container-type: size; }
 
 /* the blinking go arrow, bottom right of the screen */
@@ -425,9 +425,9 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .clock .clk-l { display: block; margin-bottom: 4px; color: var(--dim); text-shadow: none; }
 .egrid button.em { border: 0; padding: 0; margin: 0; background: none; color: inherit; font: inherit; cursor: pointer; -webkit-tap-highlight-color: transparent; }
 .egrid button.em:active { transform: translateY(1px); }
-#v-end .clock { margin: -2cqh 0 0; text-align: center; }   /* the real daily's countdown, under the score (Oct 28, 2026: the panel's row holds Review and Share board) */
+#v-end .clock { margin: -6px 0 0; margin: -2cqh 0 0; text-align: center; }   /* the real daily's countdown, under the score (Oct 28, 2026: the panel's row holds Review and Share board) */
 #v-end .clock[hidden] { display: none; }
-@media (max-height: 640px) { #v-end:has(.thanks-s) { gap: 3cqh; } }   /* the demo's last board on the smallest phones: its thank-you, grid and score fit over the two rows of keys */
+@media (max-height: 640px) { #v-end:has(.thanks-s) { gap: 9px; gap: 3cqh; } }   /* the demo's last board on the smallest phones: its thank-you, grid and score fit over the two rows of keys */
 .sl { display: inline-block; margin-right: .125em; }   /* the score's own slash, a glyph's width with its right bearing, raised the empty pixel row the arcade face leaves under its digits */
 .sl svg { display: inline-block; vertical-align: .125em; filter: drop-shadow(0 0 2px rgba(255,255,255,.6)) drop-shadow(0 0 6px rgba(92,240,154,.6)); }
 .endrow .rvkey { flex: 1; min-height: 52px; display: flex; align-items: center; justify-content: center; gap: 8px; }
@@ -459,7 +459,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .choice .def { font-weight: 500; font-size: 15px; line-height: 1.15; text-wrap: balance; }   /* means */
 .gorow .gokey { font-family: var(--pixel); font-size: 13px; letter-spacing: 1px; text-transform: uppercase; }   /* goKey */
 .bmsg { font-family: var(--pixel); font-size: 8px; letter-spacing: 1px; text-transform: uppercase; white-space: nowrap; }   /* betaMsg */
-.pitch .shout { font-family: var(--pixel); font-size: clamp(22px, 9cqw, 34px); line-height: 1.2; text-align: center; }   /* shout */
+.pitch .shout { font-family: var(--pixel); font-size: clamp(22px, calc(9vw - 7px), 34px); font-size: clamp(22px, 9cqw, 34px); line-height: 1.2; text-align: center; }   /* shout */
 .score { font-family: var(--pixel); font-weight: 400; font-size: 24px; line-height: 1; text-align: center; }   /* score */
 .golazo .score { font-size: 24px; }   /* scoreGolazo */
 .thanks-s { font-size: 18px; text-align: center; }   /* thanks */
@@ -545,13 +545,14 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   function tball(html) { return html.indexOf('⚽') < 0 ? html : html.replace(/⚽\uFE0F?/g, '<i class="tball" aria-hidden="true">' + svg('sball', 1, '', true) + '</i>'); }
   function tv(v) { return ' data-tv="' + esc(JSON.stringify(v)) + '"'; }   // the values a string's placeholders were filled with, so the text editor can redraw it
   // a word too wide for its slot (Bundesliga on the smallest phones) tightens its letter spacing a device pixel at a time, never
-  // past the slot's "fit" in slots.json: the letters keep their size, so a pixel font stays sharp, where a smaller size would blur it
-  var FIT = {".tile .tag": -0.67};
+  // past the slot's "fit" in slots.json, in device pixels, so a 2× phone gets the same steps as a 3× one (the audit, Oct 30, 2026: at 2× the
+  // old floor in CSS px allowed one step, and 65 categories were cut off): the letters keep their size, so a pixel font stays sharp
+  var FIT = {".tile .tag": -2};
   function tighten(root) {
     var step = 1 / (window.devicePixelRatio || 1);
     Object.keys(FIT).forEach(function (sel) { [].forEach.call(root.querySelectorAll(sel), function (el) {
       el.style.letterSpacing = '';
-      for (var t = -step; el.scrollWidth > el.clientWidth && t >= FIT[sel] - 1e-6; t -= step) el.style.letterSpacing = t + 'px';
+      for (var t = -step; el.scrollWidth > el.clientWidth && t >= FIT[sel] * step - 1e-6; t -= step) el.style.letterSpacing = t + 'px';
     }); });
   }
   if (document.fonts) document.fonts.ready.then(function () { tighten(document); });   // widths are only right once the fonts are in

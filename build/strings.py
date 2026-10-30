@@ -55,7 +55,7 @@ def fill_head(page, text):
 FACES = {'pixel': 'var(--body-font)', 'arcade': 'var(--pixel)'}
 WRAPS = {'line': 'white-space: nowrap', 'balance': 'text-wrap: balance', 'pretty': 'text-wrap: pretty'}
 MEDIA = (('mid', '(max-height: 700px)'), ('short', '(max-height: 640px)'), ('narrow', '(max-width: 360px)'))
-KEYS = {'where', 'sel', 'face', 'weight', 'size', 'mid', 'short', 'narrow', 'lh', 'track', 'trackShort', 'case', 'align', 'wrap', 'lines', 'trim', 'nudge', 'fit', 'shrink'}
+KEYS = {'where', 'sel', 'face', 'weight', 'size', 'fallback', 'mid', 'short', 'narrow', 'lh', 'track', 'trackShort', 'case', 'align', 'wrap', 'lines', 'trim', 'nudge', 'fit', 'shrink'}
 
 def load_slots():
     raw = json.load(open(os.path.join(TEXT, 'slots.json')))
@@ -82,7 +82,7 @@ def page_meta(meta, slots):
     return m, s
 
 def slot_fit(slots):
-    """The slots whose too-wide words tighten to fit: {selector: the tightest letter spacing in px}, for the page's tighten()."""
+    """The slots whose too-wide words tighten to fit: {selector: the tightest letter spacing, in device pixels}, for the page's tighten()."""
     return {s['sel']: s['fit'] for s in slots.values() if 'fit' in s}
 
 def slot_css(slots):
@@ -92,6 +92,7 @@ def slot_css(slots):
         d = []
         if 'face' in s: d.append('font-family: ' + FACES[s['face']])
         if 'weight' in s: d.append(f'font-weight: {s["weight"]}')
+        if 'fallback' in s: d.append('font-size: ' + px(s['fallback']))   # for a browser without container units (iOS 15): the size below wins where it is understood
         if 'size' in s: d.append('font-size: ' + px(s['size']))
         if 'lh' in s: d.append(f'line-height: {s["lh"]:g}')
         if 'track' in s: d.append('letter-spacing: ' + px(s['track']))

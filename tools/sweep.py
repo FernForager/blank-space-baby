@@ -37,7 +37,7 @@ async def tap(pg, sel):   # a tile tap
 async def main():
     async with async_playwright() as p:
         b = await p.chromium.launch()
-        ctx = await b.new_context(viewport={'width': W, 'height': H}, reduced_motion='reduce')
+        ctx = await b.new_context(viewport={'width': W, 'height': H}, device_scale_factor=2 if W <= 320 else 3, reduced_motion='reduce')   # a 320-wide iPhone is 2×, the rest 3× (the audit, Oct 30, 2026)
         pg = await ctx.new_page(); errs = []; pg.on('pageerror', lambda e: errs.append(str(e)))
         await pg.route('http://bsb.test/**', lambda r: r.fulfill(body=HTML, content_type='text/html'))
         slots, problems, fonts, cards, gaps = collections.Counter(), [], [], 0, []

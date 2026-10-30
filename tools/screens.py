@@ -15,7 +15,7 @@ from playwright.async_api import async_playwright
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 HTML = open(sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, 'docs', 'index.html')).read()
 OUT = os.path.join(ROOT, 'out'); os.makedirs(OUT, exist_ok=True)
-SIZES = [(402, 744), (375, 667), (320, 568)]   # iPhone 17 in the Claude viewer, iPhone SE 2/3, iPhone SE 1
+SIZES = [(402, 744, 3), (375, 667, 3), (320, 568, 2)]   # iPhone 17 in the Claude viewer, iPhone SE 2/3, iPhone SE 1, each at its own scale (a 320-wide iPhone is 2×)
 FONTS = """() => { const h = [...document.querySelectorAll('.hk')]; if (!h.length) return null;
   return { min: Math.min(...h.map(e => parseFloat(getComputedStyle(e).fontSize))), max: Math.max(...h.map(e => parseFloat(getComputedStyle(e).fontSize))),
            over: h.filter(e => e.scrollWidth > e.clientWidth + 0.5).map(e => e.textContent) }; }"""
@@ -27,8 +27,8 @@ async def tap(pg, sel):   # a tile tap
 async def main():
     async with async_playwright() as p:
         b = await p.chromium.launch()
-        for W, H in SIZES:
-            ctx = await b.new_context(viewport={'width': W, 'height': H}, device_scale_factor=3)
+        for W, H, DPR in SIZES:
+            ctx = await b.new_context(viewport={'width': W, 'height': H}, device_scale_factor=DPR)
             pg = await ctx.new_page(); errs = []; pg.on('pageerror', lambda e: errs.append(str(e)))
             await pg.route('http://bsb.test/**', lambda r: r.fulfill(body=HTML, content_type='text/html'))
             url = 'http://bsb.test/?day=1'

@@ -26,8 +26,8 @@ from PIL import Image, ImageDraw, ImageFont
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, 'out')
-SIZES = [(402, 744), (375, 667), (320, 568)]   # iPhone 17 in the Claude viewer, iPhone SE 2/3, iPhone SE 1
-SCALE = 3
+SIZES = [(402, 744, 3), (375, 667, 3), (320, 568, 2)]   # iPhone 17 in the Claude viewer, iPhone SE 2/3, iPhone SE 1, each at its own scale (a 320-wide iPhone is 2×)
+DPR = {w: d for w, _, d in SIZES}
 args = sys.argv[1:]
 PSEUDO = '--pseudo' in args
 PAGE = args[args.index('--page') + 1] if '--page' in args else os.path.join(ROOT, 'docs', 'index.html')
@@ -129,7 +129,7 @@ async def main():
     found, problems, strays, crops = [], [], set(), {}
     async with async_playwright() as p:
         br = await p.chromium.launch()
-        for W, H in SIZES:
+        for W, H, SCALE in SIZES:
             for demo, one in ((False, False), (False, True), (True, False)):
                 html = page_html(demo, one)
                 ctx = await br.new_context(viewport={'width': W, 'height': H}, device_scale_factor=SCALE)
@@ -209,7 +209,7 @@ async def main():
         if m['cut'] > 1: say(f'cut off {m["cut"]:.1f} px by {m["cutBy"]}')
         if s.get('lines') and m['lines'] > s['lines']: say(f'takes {m["lines"]} lines, the slot allows {s["lines"]}')
         if m['lines'] >= 2 and min(m['widths'][-1:]) < max(m['widths']) / 3: say(f'uneven lines ({", ".join(str(round(w)) for w in m["widths"])} px)')
-        if m['align'] == 'center' and m['lines'] == 1 and abs(m['off']) * SCALE > 1.5 and m['over'] == 0: say(f'{abs(m["off"]):.1f} px off center')
+        if m['align'] == 'center' and m['lines'] == 1 and abs(m['off']) * DPR[m['W']] > 1.5 and m['over'] == 0: say(f'{abs(m["off"]):.1f} px off center')
         if m['missing']: say(f'characters not in its font: {m["missing"]}')
     if 'var ONE = true' in open(PAGE).read():   # card text on #365, a board nobody plays while one fixed board holds: for the editor, the same rule as tilecheck and sweep
         editor = [q for q in problems if ' card “' in q]
@@ -242,12 +242,12 @@ def sheet(crops, slots):
     COLW, GAP = 1240, 24
     rows = []
     for slot, sid in keys:
-        cells = [[im for _, im in crops.get((slot, sid, W), [])] for W, _ in SIZES]
+        cells = [[im for _, im in crops.get((slot, sid, W), [])] for W, _, _ in SIZES]
         h = max((sum(im.height + 8 for im in c) for c in cells), default=0)
         if h: rows.append((slot, sid, cells, h))
     H = sum(h + 60 + GAP for *_, h in rows) + 80
     img = Image.new('RGB', (COLW * 3 + GAP * 4, H), '#2A2F2C'); d = ImageDraw.Draw(img)
-    for i, (W, Hh) in enumerate(SIZES): d.text((GAP + i * (COLW + GAP), 24), f'{W}×{Hh}', fill='#9FB5A8', font=font)
+    for i, (W, Hh, _) in enumerate(SIZES): d.text((GAP + i * (COLW + GAP), 24), f'{W}×{Hh}', fill='#9FB5A8', font=font)
     y = 80
     for slot, sid, cells, h in rows:
         d.text((GAP, y), f'{slot}  ·  {sid or "-"}  ·  {slots[slot]["where"]}', fill='#EAFBF0', font=font)
