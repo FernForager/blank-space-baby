@@ -187,8 +187,8 @@
   "v": "ok"
  },
  "alpha:22": {
-  "at": "2026-10-17T00:00:40Z",
-  "h": "8a2a410f73",
+  "at": "2026-10-30T10:56:45Z",
+  "h": "290511a5cf",
   "v": "ok"
  },
  "alpha:23": {
@@ -278,8 +278,8 @@
   "v": "ok"
  },
  "alpha:33": {
-  "at": "2026-10-17T00:26:44Z",
-  "h": "0875b2d2a0",
+  "at": "2026-10-30T10:56:45Z",
+  "h": "3ef78d6e0e",
   "v": "ok"
  },
  "alpha:34": {
@@ -491,10 +491,13 @@
   "v": "fix"
  },
  "alpha:67": {
-  "at": "2026-10-17T00:18:40Z",
-  "h": "da79349482",
-  "note": "Mary Sue is fan-fiction talk more than kid slang. Red, so it never plays as slang",
-  "v": "ok"
+  "at": "2026-10-30T10:56:45Z",
+  "fix": {
+   "hook": "World Cup"
+  },
+  "h": "88347b5401",
+  "note": "Slang hooks name the soccer word (SPEC). “Movie” is not one and hints at fiction, which nudges a red card toward Mary Sue. “World Cup” is in the sentence, fits, and no other alpha tile uses it",
+  "v": "fix"
  },
  "alpha:68": {
   "at": "2026-10-17T00:18:40Z",
@@ -680,8 +683,8 @@
   "v": "ok"
  },
  "alpha:92": {
-  "at": "2026-10-17T00:26:44Z",
-  "h": "ad8beacf49",
+  "at": "2026-10-30T10:56:45Z",
+  "h": "bdf0a02e72",
   "v": "ok"
  },
  "alpha:93": {
@@ -922,8 +925,8 @@
   "v": "ok"
  },
  "awards:37": {
-  "at": "2026-10-17T00:26:44Z",
-  "h": "b5de0b6c6e",
+  "at": "2026-10-30T10:56:45Z",
+  "h": "b970c44ff2",
   "v": "ok"
  },
  "awards:38": {
@@ -1396,8 +1399,8 @@
   "v": "ok"
  },
  "basics:14": {
-  "at": "2026-10-17T00:00:49Z",
-  "h": "7adb35f639",
+  "at": "2026-10-30T10:56:45Z",
+  "h": "90bc1409be",
   "v": "ok"
  },
  "basics:140": {
@@ -1466,8 +1469,8 @@
   "v": "ok"
  },
  "basics:152": {
-  "at": "2026-10-17T00:00:49Z",
-  "h": "c845c50488",
+  "at": "2026-10-30T10:56:45Z",
+  "h": "851088e5cf",
   "v": "ok"
  },
  "basics:153": {
@@ -1476,8 +1479,8 @@
   "v": "ok"
  },
  "basics:154": {
-  "at": "2026-10-17T00:00:49Z",
-  "h": "c10d6b0481",
+  "at": "2026-10-30T10:56:45Z",
+  "h": "fe9e0524f7",
   "v": "ok"
  },
  "basics:155": {
@@ -1521,9 +1524,13 @@
   "v": "ok"
  },
  "basics:2": {
-  "at": "2026-10-17T00:18:40Z",
-  "h": "312a5a5f01",
-  "v": "ok"
+  "at": "2026-10-30T10:56:45Z",
+  "fix": {
+   "ex": "Sports shoes with grips on the bottom go by the name cleats"
+  },
+  "h": "718c2ba36f",
+  "note": "“Shoes for the field” is not how anyone says it. “Sports shoes” is plain, true and keeps the hook grips",
+  "v": "fix"
  },
  "basics:20": {
   "at": "2026-10-17T00:00:49Z",
@@ -1564,9 +1571,8 @@
   "v": "ok"
  },
  "basics:27": {
-  "at": "2026-10-17T00:18:40Z",
-  "h": "7e60116c16",
-  "note": "Its hook “youth soccer” sits close to basics:62 (youth) and basics:156 (youth games), which the draw can put on one board. Minor",
+  "at": "2026-10-30T10:56:45Z",
+  "h": "3fd22abcf8",
   "v": "ok"
  },
  "basics:28": {
@@ -1685,13 +1691,9 @@
   "v": "ok"
  },
  "basics:48": {
-  "at": "2026-10-17T00:18:40Z",
-  "fix": {
-   "hook": "net"
-  },
-  "h": "6c7267afd6",
-  "note": "“Hockey” is a non-soccer tile, and basics:152 already has the same hook. Net is the soccer object in the sentence",
-  "v": "fix"
+  "at": "2026-10-30T10:56:45Z",
+  "h": "840fd9e137",
+  "v": "ok"
  },
  "basics:49": {
   "at": "2026-10-17T00:00:49Z",
@@ -1767,8 +1769,8 @@
   "v": "ok"
  },
  "basics:60": {
-  "at": "2026-10-17T00:00:49Z",
-  "h": "9933bc35df",
+  "at": "2026-10-30T10:56:45Z",
+  "h": "858327b2db",
   "v": "ok"
  },
  "basics:61": {
@@ -1777,8 +1779,8 @@
   "v": "ok"
  },
  "basics:62": {
-  "at": "2026-10-17T00:00:49Z",
-  "h": "ff8b7619c6",
+  "at": "2026-10-30T10:56:45Z",
+  "h": "1ca8b6d840",
   "v": "ok"
  },
  "basics:63": {
@@ -1880,8 +1882,8 @@
   "v": "ok"
  },
  "basics:8": {
-  "at": "2026-10-17T00:18:40Z",
-  "h": "161aaf83bf",
+  "at": "2026-10-30T10:56:45Z",
+  "h": "9e6d33c297",
   "v": "ok"
  },
  "basics:80": {
@@ -2491,8 +2493,8 @@
   "v": "ok"
  },
  "epl-more:23": {
-  "at": "2026-10-17T00:01:48Z",
-  "h": "68cc570588",
+  "at": "2026-10-30T10:56:45Z",
+  "h": "7fec120393",
   "v": "ok"
  },
  "epl-more:24": {
@@ -2521,8 +2523,9 @@
   "v": "ok"
  },
  "epl-more:29": {
-  "at": "2026-10-17T00:01:48Z",
-  "h": "5aa6597c7b",
+  "at": "2026-10-30T10:56:45Z",
+  "h": "ec20f098e8",
+  "note": "Small one for the editor: a manager is a title winner rather than “the champion”, but it reads fine",
   "v": "ok"
  },
  "epl-more:3": {
@@ -2706,8 +2709,8 @@
   "v": "ok"
  },
  "epl-more:59": {
-  "at": "2026-10-17T00:01:48Z",
-  "h": "b4e702dc77",
+  "at": "2026-10-30T10:56:45Z",
+  "h": "3cb548e6f2",
   "v": "ok"
  },
  "epl-more:6": {
@@ -2767,8 +2770,8 @@
   "v": "ok"
  },
  "epl-more:9": {
-  "at": "2026-10-17T00:01:48Z",
-  "h": "16774b5952",
+  "at": "2026-10-30T10:56:45Z",
+  "h": "9deb6d1b3b",
   "v": "ok"
  },
  "epl:0": {
@@ -2832,8 +2835,8 @@
   "v": "ok"
  },
  "epl:18": {
-  "at": "2026-10-16T23:58:31Z",
-  "h": "e162a49b3e",
+  "at": "2026-10-30T10:56:45Z",
+  "h": "9b166a7fb9",
   "v": "ok"
  },
  "epl:19": {
@@ -3021,8 +3024,9 @@
   "v": "ok"
  },
  "epl:5": {
-  "at": "2026-10-16T23:58:31Z",
-  "h": "dabaae9cac",
+  "at": "2026-10-30T10:56:45Z",
+  "h": "a9510a1ee7",
+  "note": "Southampton 0–9 Leicester (Oct 2019) is the record away win, Man United’s 9–0 was at home",
   "v": "ok"
  },
  "epl:6": {
@@ -3046,8 +3050,8 @@
   "v": "ok"
  },
  "epl:9": {
-  "at": "2026-10-16T23:58:31Z",
-  "h": "bb16f6d85b",
+  "at": "2026-10-30T10:56:45Z",
+  "h": "115ad799c3",
   "v": "ok"
  },
  "intl-men:0": {
@@ -3408,13 +3412,9 @@
   "v": "ok"
  },
  "intl-men:7": {
-  "at": "2026-10-17T00:00:51Z",
-  "fix": {
-   "hook": "back-to-back"
-  },
-  "h": "d05b48c399",
-  "note": "Four cards in this deck use the hook World Cups, which says nothing on a World Cup tile. Back-to-back is the fact a fan taps for",
-  "v": "fix"
+  "at": "2026-10-30T10:56:45Z",
+  "h": "7f6d8b0ed1",
+  "v": "ok"
  },
  "intl-men:8": {
   "at": "2026-10-17T00:26:19Z",
@@ -3603,8 +3603,8 @@
   "v": "ok"
  },
  "intl-women:36": {
-  "at": "2026-10-17T00:03:04Z",
-  "h": "6644ffc769",
+  "at": "2026-10-30T10:56:45Z",
+  "h": "45ee47fd2e",
   "v": "ok"
  },
  "intl-women:37": {
@@ -3639,8 +3639,8 @@
   "v": "ok"
  },
  "intl-women:42": {
-  "at": "2026-10-17T00:03:04Z",
-  "h": "4bd4eb1b92",
+  "at": "2026-10-30T10:56:45Z",
+  "h": "7b618dcd0f",
   "v": "ok"
  },
  "intl-women:43": {
@@ -3747,9 +3747,8 @@
   "v": "ok"
  },
  "intl-women:60": {
-  "at": "2026-10-17T00:03:04Z",
-  "h": "fcd4abddb8",
-  "note": "ok. Near-twin of legends:8 (same hook) and awards:51, awards:70",
+  "at": "2026-10-30T10:56:45Z",
+  "h": "92a9bb62c5",
   "v": "ok"
  },
  "intl-women:61": {
@@ -3758,8 +3757,8 @@
   "v": "ok"
  },
  "intl-women:62": {
-  "at": "2026-10-17T00:26:19Z",
-  "h": "e70a0ebe4e",
+  "at": "2026-10-30T10:56:45Z",
+  "h": "71b0fb706f",
   "v": "ok"
  },
  "intl-women:63": {
@@ -4042,8 +4041,8 @@
   "v": "ok"
  },
  "laliga:5": {
-  "at": "2026-10-17T00:02:07Z",
-  "h": "4f286afc0a",
+  "at": "2026-10-30T10:56:45Z",
+  "h": "0026513668",
   "v": "ok"
  },
  "laliga:50": {
@@ -4078,9 +4077,9 @@
   "v": "ok"
  },
  "laliga:56": {
-  "at": "2026-10-17T00:02:07Z",
-  "h": "80cbb29635",
-  "note": "Weak decoys: founding years from 1898 to 1903 can’t be a TV date, so it often plays easy. Yellow is the most it can be. A few postwar years in the year kind would sharpen it",
+  "at": "2026-10-30T10:56:45Z",
+  "h": "71ec7a329c",
+  "note": "laliga.com: “ELCLASICO became the first football match ever televised on Spanish television” (Feb 15, 1959), so “ever” holds",
   "v": "ok"
  },
  "laliga:6": {
@@ -4772,8 +4771,8 @@
   "v": "ok"
  },
  "ligamx:47": {
-  "at": "2026-10-17T00:01:31Z",
-  "h": "84cec404d0",
+  "at": "2026-10-30T10:56:45Z",
+  "h": "f974c84117",
   "v": "ok"
  },
  "ligamx:48": {
@@ -4999,8 +4998,9 @@
   "v": "ok"
  },
  "ligue1:21": {
-  "at": "2026-10-16T23:59:47Z",
-  "h": "c411341f31",
+  "at": "2026-10-30T10:56:45Z",
+  "h": "d772a66d3d",
+  "note": "ligue1.com calls him “French football’s longest serving manager”, so “club manager” is a fair reading",
   "v": "ok"
  },
  "ligue1:22": {
@@ -5460,8 +5460,8 @@
   "v": "ok"
  },
  "lingo-more:37": {
-  "at": "2026-10-17T00:02:01Z",
-  "h": "28c5ede5f3",
+  "at": "2026-10-30T10:56:45Z",
+  "h": "ca1d10b844",
   "v": "ok"
  },
  "lingo-more:38": {
@@ -5565,8 +5565,8 @@
   "v": "ok"
  },
  "lingo-more:54": {
-  "at": "2026-10-17T00:02:01Z",
-  "h": "6e0504e4d5",
+  "at": "2026-10-30T10:56:45Z",
+  "h": "74722c48b5",
   "v": "ok"
  },
  "lingo-more:55": {
@@ -6303,8 +6303,8 @@
   "v": "ok"
  },
  "nicknames:6": {
-  "at": "2026-10-17T00:19:44Z",
-  "h": "833d633988",
+  "at": "2026-10-30T10:56:45Z",
+  "h": "5a01baf879",
   "v": "ok"
  },
  "nicknames:60": {
@@ -6580,8 +6580,9 @@
   "v": "ok"
  },
  "nwsl:42": {
-  "at": "2026-10-17T00:03:32Z",
-  "h": "bc627483aa",
+  "at": "2026-10-30T10:56:45Z",
+  "h": "b7a13e5664",
+  "note": "The appositive is there for the hook, but it reads fine and is true",
   "v": "ok"
  },
  "nwsl:43": {
@@ -6929,18 +6930,14 @@
   "v": "ok"
  },
  "parents:38": {
-  "at": "2026-10-16T23:57:20Z",
-  "h": "cee7fe5c4c",
+  "at": "2026-10-30T10:56:45Z",
+  "h": "b09ac6af23",
   "v": "ok"
  },
  "parents:39": {
-  "at": "2026-10-16T23:57:20Z",
-  "fix": {
-   "ex": "Grandma shops for soccer gear so often that the team calls her a mall rat"
-  },
-  "h": "edaee03e5b",
-  "note": "The sentence had no soccer in it beyond “the team.” Shopping for soccer gear keeps it on the sideline",
-  "v": "fix"
+  "at": "2026-10-30T10:56:45Z",
+  "h": "cec9df28de",
+  "v": "ok"
  },
  "parents:4": {
   "at": "2026-10-16T23:57:20Z",
@@ -7938,8 +7935,8 @@
   "v": "ok"
  },
  "soccer:37": {
-  "at": "2026-10-17T00:01:58Z",
-  "h": "cebdd42cec",
+  "at": "2026-10-30T10:56:45Z",
+  "h": "1e52e4d278",
   "v": "ok"
  },
  "soccer:38": {
@@ -8007,8 +8004,8 @@
   "v": "fix"
  },
  "soccer:46": {
-  "at": "2026-10-17T00:01:58Z",
-  "h": "4e7db61ea3",
+  "at": "2026-10-30T10:56:45Z",
+  "h": "fa612487ef",
   "v": "ok"
  },
  "soccer:47": {
@@ -8134,9 +8131,8 @@
   "v": "ok"
  },
  "ucl:18": {
-  "at": "2026-10-17T00:26:19Z",
-  "h": "9f823aca67",
-  "note": "Still true on uefa.com today: 141 goals, 187 appearances",
+  "at": "2026-10-30T10:56:45Z",
+  "h": "b107b7f00d",
   "v": "ok"
  },
  "ucl:19": {
@@ -8375,13 +8371,9 @@
   "v": "ok"
  },
  "ucl:53": {
-  "at": "2026-10-17T00:07:24Z",
-  "fix": {
-   "ex": "Wolfsburg won back-to-back women’s European titles in 2013 and 2014"
-  },
-  "h": "ebf5aa9aff",
-  "note": "Wolfsburg also won the Bundesliga in 2013 and 2014, so “women’s titles” needs “European”",
-  "v": "fix"
+  "at": "2026-10-30T10:56:45Z",
+  "h": "b789bc4bb1",
+  "v": "ok"
  },
  "ucl:54": {
   "at": "2026-10-17T00:07:24Z",
@@ -8527,8 +8519,8 @@
   "v": "ok"
  },
  "wc26:16": {
-  "at": "2026-10-17T00:04:39Z",
-  "h": "9c97c797e8",
+  "at": "2026-10-30T10:56:45Z",
+  "h": "ef715c69a7",
   "v": "ok"
  },
  "wc26:17": {
