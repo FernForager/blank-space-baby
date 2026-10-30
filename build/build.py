@@ -245,6 +245,9 @@ def pinned(decks):
 def main(test_copy=None):
     """Build the game into docs/index.html, or, given test_copy, into that file with pending cards playing too, so the
     desk can try a reworded card on a phone screen before the reviewers have passed it."""
+    pin = json.load(open(os.path.join(ROOT, '.claude', 'settings.json'))).get('env', {}).get('CLAUDE_CODE_EFFORT_LEVEL')
+    if pin:   # a job branch's effort pin (playbook 4) must never reach daily: the worker's first commit removes it
+        sys.exit(f'.claude/settings.json pins CLAUDE_CODE_EFFORT_LEVEL ({pin}): remove the pin before building (it belongs only on a job branch, for the session start)')
     decks, problems, tiers = [], [], [0, 0, 0]
     verdicts, marks = vetting()
     stand = {}
