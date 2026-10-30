@@ -267,7 +267,10 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .sharerow { display: flex; gap: 10px; align-items: stretch; --pv: 104px; }   /* --pv: both previews' square (Morg, Oct 30, 2026: the same size and shape) */
 @media (max-width: 359px) { .sharerow { --pv: 92px; } }
 .sharerow .key { flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; align-items: center; gap: 7px; padding: 9px 8px 11px; }
-.sharerow .kl { flex: none; display: flex; align-items: center; justify-content: center; gap: 7px; }   /* the key's name and its share icon */
+.sharerow .key { position: relative; }
+.sharerow .kl { flex: none; min-height: 20px; display: flex; align-items: center; justify-content: center; }   /* the key's name, centered over its preview (Morg, Oct 30, 2026) */
+#share-mark, #sboard-mark { position: absolute; top: 9px; right: 9px; line-height: 0; }   /* the share icon, in the same corner of both keys */
+@media (max-width: 359px) { #share-mark, #sboard-mark { top: 8px; right: 7px; } }
 /* each preview says what kind of thing it sends (Morg, Oct 30, 2026: two little grids looked the same): the text in a chat bubble, the picture as a photo */
 .share .bubble { position: relative; flex: none; margin: auto 0; box-sizing: border-box; width: var(--pv); height: var(--pv); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; padding: 5px 4px; background: #FFFFFF; border-radius: 12px; box-shadow: 0 1px 2px rgba(30,42,59,.25); }
 .share .bubble .sgrid.se { grid-template-columns: repeat(3, 13px); grid-auto-rows: 13px; gap: 1px 2px; font-size: 11px; }   /* the grid sized so the title, the grid and GOLAZO! fit its square */
@@ -295,6 +298,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .endrow .bk.again.on { color: var(--glow); opacity: 1; filter: drop-shadow(0 0 4px rgba(92,240,154,.8)); }
 .clock.thanks { font-family: var(--body-font); font-size: 17px; letter-spacing: 0; }   /* the CRT's sentence face: one line, or two beside the beta's keys on the smallest phones */
 .key:focus-visible, .go:focus-visible, .bk:focus-visible { outline: 3px solid var(--glow); outline-offset: 3px; }
+#p-board:focus, #q:focus, #v-end:focus { outline: none; }   /* focus moves here only to bring a screen reader along (the audit), never by tabbing, so no ring (Morg, Oct 30, 2026: a thin line round the cards) */
 
 @media (max-height: 700px) { .choice { min-height: 56px; } .tile { min-height: 70px; } }
 @media (max-height: 539px) { html, body { overflow-y: auto; } body { position: static; } .cab { height: auto; min-height: 560px; } }   /* sideways or very short: scroll rather than lose the question (the audit, Oct 30, 2026) */
@@ -1278,8 +1282,10 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     g.textAlign = 'center'; g.textBaseline = 'alphabetic';
     var n = chips(), title = tx('image.title'), no = tx('image.score', { day: S.day + 1 }), gap = 36;   // the title on one line, as the text's first line reads
     g.font = '64px "Press Start 2P"'; var tw = g.measureText(title).width; g.font = '40px "Press Start 2P"'; var x0 = W / 2 - (tw + gap + g.measureText(no).width) / 2;
-    g.textAlign = 'left'; g.font = '64px "Press Start 2P"'; g.fillStyle = '#5CF09A'; g.shadowColor = 'rgba(92,240,154,.7)'; g.shadowBlur = 18; g.fillText(title, x0, 108);
-    g.shadowBlur = 0; g.font = '40px "Press Start 2P"'; g.fillStyle = '#FFFFFF'; g.fillText(no, x0 + tw + gap, 108);
+    g.textAlign = 'left'; g.font = '64px "Press Start 2P"'; var mt = g.measureText(title), mid = 108 - (mt.actualBoundingBoxAscent - mt.actualBoundingBoxDescent) / 2;   // the title's middle
+    g.fillStyle = '#5CF09A'; g.shadowColor = 'rgba(92,240,154,.7)'; g.shadowBlur = 18; g.fillText(title, x0, 108);
+    g.shadowBlur = 0; g.font = '40px "Press Start 2P"'; var mn = g.measureText(no); g.fillStyle = '#FFFFFF';
+    g.fillText(no, x0 + tw + gap, mid + (mn.actualBoundingBoxAscent - mn.actualBoundingBoxDescent) / 2);   // centered on the title's height, not sitting low on its baseline (Morg, Oct 30, 2026)
     g.textAlign = 'center';
     var CW = 300, CH = 236, GX = 24, GY = 24, X0 = (W - 3 * CW - 2 * GX) / 2, Y0 = 152, COLS = ['#45BE76', '#F7C948', '#D52B1E'];   // the board's shape: a column per color, three cards each (Oct 27, 2026)
     function runs(text, size, wt) {   // Pixelify Sans, with its digits in the arcade face as in the game (Pixelify's 5 reads as an S). wt: its weight, 600 unless given
