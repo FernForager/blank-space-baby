@@ -29,7 +29,8 @@ def problems(text, meta, template):
         if ';' in s: out.append((k, 'a semicolon (house style: never)'))
         if "'" in s or '"' in s: out.append((k, 'a straight quote or apostrophe (use ’ “ ”)'))
         if '<' in s or '&' in s: out.append((k, 'HTML in a string (the game does the typesetting)'))
-        if s != s.strip() or '  ' in s.replace('  {score}', ''): out.append((k, 'a stray space'))   # the image's score line may keep a wide gap before its score (#42  11/15)
+        if s != s.strip() or '  ' in s.replace('  {score}', ''): out.append((k, 'a stray space'))
+        if re.search(r'\b(soccer|football)', s, re.I): out.append((k, 'says soccer or football (Morg, Oct 26, 2026: never, so the game stays global)'))   # the image's score line may keep a wide gap before its score (#42  11/15)
         named = set((m or {}).get('placeholders', {}))
         if holes(s) - named: out.append((k, 'placeholder ' + ', '.join(sorted(holes(s) - named)) + ' isn’t listed in its "placeholders"'))
         if named - holes(s): out.append((k, 'lists placeholder ' + ', '.join(sorted(named - holes(s))) + ' but doesn’t use it'))
@@ -37,7 +38,8 @@ def problems(text, meta, template):
         if k not in text: out.append((k, 'a note for a string that doesn’t exist'))
     asked = set(re.findall(r'data-t(?:-label|-alt)?="([a-z][a-zA-Z0-9.]*)"', template))
     asked |= {q for q in re.findall(r"'([a-z][a-z0-9]*\.[a-zA-Z0-9.]*[a-zA-Z0-9])'", template) if q.split('.')[0] + '.' in {k.split('.')[0] + '.' for k in text}}
-    asked |= {q for q in re.findall(r"\btx\('([^']+)'", template) if not q.endswith('.')}
+    asked |= {q for q in re.findall(r"\b(?:tx|th)\('([^']+)'", template) if not q.endswith('.')}
+    asked |= {q for q in re.findall(r'data-tid="([a-z][a-zA-Z0-9.]*[a-zA-Z0-9])"', template)}   # th() and data-tid with a new prefix used to slip past (the audit, Oct 30, 2026)
     asked |= {'tag.' + v for v in re.findall(r"'(?:[\w-]+)':\s*'(\w+)'|\b\w+:\s*'(\w+)'", re.search(r'var TAG = \{(.*?)\};', template, re.S).group(1)) for v in v if v}
     asked |= {'color.%d' % d for d in (1, 2, 3)} | {'row.%d' % d for d in (1, 2, 3)} | {'gate.clear', 'gate.enter'}
     for k in sorted(asked - set(text)): out.append((k, 'the game asks for it, but build/text has no such string'))

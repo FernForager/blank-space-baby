@@ -273,6 +273,8 @@ def desk_note(cid, who):
 
 def take_out(cid, why):
     did, deck, i = find(cid)
+    marks = B.vetting()[1]
+    if (marks.get(cid) or {}).get('m') == 'lock': sys.exit(f'Morg locked {cid}: ask him to unlock it first')
     before = json.loads(json.dumps(deck))
     deck['items'][i]['out'] = True; deck['items'][i]['out_why'] = why; save_deck(did, deck)
     n = carry(did, before, deck, skip=(i,))

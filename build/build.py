@@ -118,6 +118,8 @@ def item_problems(level, items, clash, it, hooks=True):
         if len(ws) != 2 or not all(ws) or plain(ws[0]) == plain(ws[1]): bad.append(tag + ('wr must be two different wrong answers', it['wr']))
         elif any(plain(x) == plain(w) for x in ws): bad.append(tag + ('a wrong answer in wr is the answer itself', ws))
         elif any(shown(x, it) for x in ws): bad.append(tag + ('a wrong answer in wr is already in the sentence or on the tile', ws))
+        for x in ws:
+            if ';' in x or re.search(r"['\"]", x) or len(x) > 22: bad.append(tag + ('a wrong answer in wr breaks the house style (no semicolons, curly quotes only, 22 characters at most)', x))
     same = [x for x in items if x is not it and not x.get('out') and x.get('k', 'word') == it['k'] and not clash(x['w'], w)]   # cut cards are never offered
     if not it.get('out') and len(it.get('wr') or []) < 2 and not any(not clash(x['w'], y['w']) for x in same for y in same if x is not y):   # Morg's own two wrong answers (wr) need no kind to draw from
         bad.append(tag + ('not enough same-kind wrong answers',))
@@ -151,7 +153,8 @@ HASHED = ('w', 'ex', 'means', 'hook', 'd', 'k')   # what a player sees of a card
 def card_hash(it, pool):
     """A short fingerprint of a card and the wrong answers it can draw. A verdict or a lock holds only while the card still
     has the fingerprint it was given for, so a change to the card, or to the answers it can be offered, sends it back."""
-    return hashlib.sha1(json.dumps([it.get(k, 'word' if k == 'k' else None) for k in HASHED] + [sorted(pool)], ensure_ascii=False).encode()).hexdigest()[:10]
+    wm = [x.get('m', '') for x in it.get('wr') or [] if isinstance(x, dict)]   # a wrong answer's own meaning shows after a wrong pick, so it counts too
+    return hashlib.sha1(json.dumps([it.get(k, 'word' if k == 'k' else None) for k in HASHED] + [sorted(pool)] + ([wm] if wm else []), ensure_ascii=False).encode()).hexdigest()[:10]
 
 def fingerprint(deck, i, clash=None):
     return card_hash(deck['items'][i], wrong_pool(deck, deck['items'][i], clash))
@@ -193,7 +196,7 @@ def pinned(decks):
     then three yellow, then three red. Every card must be in the draw, in its spot's color, and on one board only."""
     raw = load_json(os.path.join(HERE, 'boards.json'), {})
     boards = {k: v for k, v in raw.items() if not k.startswith('@')}
-    color = {f"{d['id']}:{x['i']}": x['d'] for d in decks for x in d['items']}
+    color = {f"{d['id']}:{x['i']}": x['d'] for d in decks for x in d['items'] if not (d['sl'] and x['d'] == 3)}   # red slang never deals, so the page would drop it from a pin too (the audit)
     bad, seen = [], {}
     for n, ids in boards.items():
         if not n.isdigit() or int(n) < (1 if ONE_BOARD else 2): bad.append(f'board {n}: boards are puzzle numbers from 2 (#1 stays as dealt), or #1 while ONE_BOARD holds one fixed board')

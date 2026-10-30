@@ -1,6 +1,6 @@
 """Sum up the playtest's anonymous results (Morg, Oct 19, 2026).
 
-    python3 tools/results.py FILE [--beta]
+    python3 tools/results.py FILE [--beta] [--since=YYYY-MM-DD] [--beta]
 
 FILE is the reply to this query on the triviela-beta database (the Cloudflare tool), saved as JSON:
     SELECT day, score, ids, res, path, host, at FROM results ORDER BY id
@@ -31,11 +31,15 @@ def main():
     R = [r for r in rows(sys.argv[1]) if r['host'] == 'real' or '--beta' in sys.argv]
     if not R: print('no finished boards yet'); return
     C = cards(); COL = {1: 'green', 2: 'yellow', 3: 'red'}
-    by_day = collections.defaultdict(list)
-    for r in R: by_day[r['day']].append(r['score'])
+    since = next((a.split('=', 1)[1] for a in sys.argv if a.startswith('--since=')), '')   # --since=2026-10-30: only boards finished from that date
+    R = [r for r in R if r.get('at', '') >= since]
+    if not R: print('no finished boards in that time'); return
+    by_board = collections.defaultdict(list)   # one fixed board keeps every row on #1, so a board is its own cards, not its number (the audit, Oct 30, 2026)
+    for r in R: by_board[(r['day'], ' '.join(sorted(r['ids'].split())))].append(r)
     print(f'{len(R)} finished boards')
-    size = {r['day']: len(r['ids'].split()) for r in R}   # a day's cards: 9 since Oct 27, 2026, 15 before
-    for d in sorted(by_day): s = by_day[d]; print(f'  #{d + 1}: {len(s)} boards, average {sum(s) / len(s):.1f}/{size[d]}, {s.count(size[d])} GOLAZO!')
+    for (d, ids), rs in sorted(by_board.items(), key=lambda kv: min(r['at'] for r in kv[1])):
+        s, n = [r['score'] for r in rs], len(ids.split())
+        print(f'  #{d + 1}, first played {min(r["at"] for r in rs)[:10]}: {len(s)} boards, average {sum(s) / len(s):.1f}/{n}, {s.count(n)} GOLAZO!')
     hit, seen, first, miss = collections.Counter(), collections.Counter(), collections.Counter(), collections.Counter()
     for r in R:
         ids, res, path = r['ids'].split(), r['res'], [int(x) for x in r['path'].split()]

@@ -24,10 +24,13 @@ GUARDED = ('brand', 'share.site', 'share.title', 'image.file', 'meta.description
 def main(path, confirm=False):
     src = open(EN).read()
     text, meta = strings.load()
-    final, last = {}, 0
-    for r in rows(path):
-        last = max(last, r['id'])
-        for e in json.loads(r['body']): final[e['id']] = (e['from'], e['to'], r['at'])
+    final, last, batches = {}, 0, rows(path)
+    for r in batches: last = max(last, r['id'])
+    if batches:   # each Send carries the phone's whole list of changes, so the newest batch is Morg's latest word, and a string he set back is simply missing from it (the audit, Oct 30, 2026)
+        newest = batches[-1]
+        for e in json.loads(newest['body']): final[e['id']] = (e['from'], e['to'], newest['at'])
+        dropped = sorted({e['id'] for r in batches[:-1] for e in json.loads(r['body'])} - set(final))
+        if dropped: print('set back since an earlier Send, so left as they are:', ', '.join(dropped))
     done, skipped, held = [], [], []
     for k, (was, to, at) in final.items():
         if k not in text: skipped.append(f'{k}: no such string now'); continue
@@ -41,15 +44,19 @@ def main(path, confirm=False):
         if len(pat.findall(src)) != 1: skipped.append(f'{k}: couldn’t find its line in en.json'); continue
         src = pat.sub(lambda m: m.group(1) + json.dumps(to, ensure_ascii=False) + m.group(2), src)
         done.append(f'{k}: “{text[k]}” → “{to}”')
+    bad = []
     if done:
-        open(EN, 'w').write(src)
-        new, newmeta = strings.load()   # the same checks as the build, before anything else runs
-        bad = [p for p in strings.problems(new, newmeta, open(os.path.join(os.path.dirname(strings.TEXT), 'template.html')).read()) if p[0] in final]
+        text2 = json.loads(src); new = {k: v for k, v in text2.items() if not k.startswith('@')}
+        newmeta = {k[1:]: v for k, v in text2.items() if k.startswith('@') and not k.startswith('@@')}
+        bad = [p for p in strings.problems(new, newmeta, open(os.path.join(os.path.dirname(strings.TEXT), 'template.html')).read()) if p[0] in final]   # the build's own checks, before anything is written
         for p in bad: print('problem:', p)
+        if not bad: open(EN, 'w').write(src)
+        else: print('nothing written: fix the problems above with Morg first')
     print(f'{len(done)} applied' + (f', {len(skipped)} skipped' if skipped else '') + (f', {len(held)} held' if held else ''))
     for x in done: print('  ', x)
     for x in skipped: print('   skipped', x)
     for x in held: print('   held', x)
+    if bad: sys.exit(1)
     if last and not held: print(f'then: UPDATE texts SET applied = 1 WHERE id <= {last}')
     elif last: print('held edits stay unapplied: once Morg confirms, rerun with --confirm, then mark the rows done')
 
