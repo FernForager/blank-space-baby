@@ -1,7 +1,7 @@
 <title>__T:brand__</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Pixelify+Sans:wght@500;600;700&family=Yellowtail&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Pixelify+Sans:wght@500;600;700&display=swap">
 <style>
 /* The phone is the cabinet: marquee sign, CRT screen in a black bezel, push-buttons on a black control panel.
    The daily, as a shootout (Morg, Oct 19, 2026), nine cards since Oct 27, 2026: everyone gets the same 9 cards a day,
@@ -295,6 +295,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .key:focus-visible, .go:focus-visible, .bk:focus-visible { outline: 3px solid var(--glow); outline-offset: 3px; }
 
 @media (max-height: 700px) { .choice { min-height: 56px; } .tile { min-height: 70px; } }
+@media (max-height: 539px) { html, body { overflow-y: auto; } body { position: static; } .cab { height: auto; min-height: 560px; } }   /* sideways or very short: scroll rather than lose the question (the audit, Oct 30, 2026) */
 @media (max-height: 640px) { .cab { gap: 9px; padding-top: max(9px, env(safe-area-inset-top, 0px)); padding-bottom: max(12px, env(safe-area-inset-bottom, 0px)); } .marquee { padding: 8px 10px 9px; } .marquee h1 { font-size: 19px; } .marquee.dm { height: 70px; } .marquee.dm .subhead { bottom: 7px; } .marquee.dm canvas { bottom: 20px; height: calc(100% - 27px); }
   .choice { min-height: 50px; }   
   .tile { min-height: 62px; padding-left: 5px; padding-right: 5px; } .tile .tag { max-width: calc(100% - 28px); } #p-board.tiles { gap: 8px 7px; } .panel { padding: 10px 10px 13px; }
@@ -638,7 +639,8 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   // Pixelify Sans draws 5 like an S, so digits use the arcade face (text outside tags only)
   // and Pixelify draws Z like a 2 and G like a 6, so GOLAZO! is always in the arcade face too, and so are the # and the playtest's β
   // of a puzzle number (Pixelify has no Greek), and Pixelify draws ( and ) like curly braces, so parentheses are too
-  var ARCADE = new RegExp('(<[^>]*>)|(' + quote(esc(tx('golazo'))) + '|#?\\d+β?|[()])', 'g');
+  function arcadeRe() { return new RegExp('(<[^>]*>)|(' + quote(esc(tx('golazo'))) + '|#?\\d+β?|[()])', 'g'); }   // one pattern for the game and the text editor
+  var ARCADE = arcadeRe();
   var num = function (html) { return html.replace(ARCADE, function (m, tag, d) { return tag || '<span class="num' + (d === '(' ? ' po' : d === ')' ? ' pc' : '') + '">' + d + '</span>'; }); };   // commas stay in the body font, so 60,704 doesn't gap
   // the sentence with its answer swapped for a blank (or filled in), glued to its punctuation so they never split
   function sentence(it, fill) {
@@ -773,16 +775,22 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   // the three choices on a card: the answer and two of the same kind from its deck, the same for everyone that day.
   // A wrong answer is never one already in the sentence or on the tile (Barcelona for "___ beat Barcelona")
   function plain(s) { return ' ' + String(s || '').toLowerCase().replace(/[^0-9a-z\u00c0-\u024f]+/g, ' ').trim() + ' '; }
+  // Each wrong answer is ranked by its own hash and each part has its own random stream, so one card more or fewer in a deck
+  // never moves another card's choices (the audit, Oct 30, 2026: a desk round reshuffled #1). The best-ranked pair of the same
+  // kind that don't clash with each other wins, and only when the kind has no such pair do other kinds fill in.
   function choices(c, day) {
-    var r = rng(hash('triviela choices ' + day + ' ' + c.id)), D = c.D, seen = plain(c.ex).replace(plain(c.w), ' ') + plain(c.hook);   // its own answer left out: referee in assistant referee
+    var D = c.D, seen = plain(c.ex).replace(plain(c.w), ' ') + plain(c.hook);   // its own answer left out: referee in assistant referee
+    var order = rng(hash('triviela order ' + day + ' ' + c.id));
+    var place = function (picks) { return shuffle(picks, order).map(function (p) { return { w: p.w, m: p.m }; }); };
+    if (c.wr) return place([c].concat(c.wr.map(function (x) { return typeof x === 'string' ? { w: x, m: '' } : { w: x.w, m: x.m || '' }; })));   // Morg's own wrong answers
+    var picks = [c].concat(near2(c, seen, rng(hash('triviela near ' + day + ' ' + c.id)), day).map(function (w) { return { w: w, m: '' }; }));
+    if (picks.length === 3) return place(picks);
     var ok = function (x) { return !D.clash(x.w, c.w) && seen.indexOf(plain(x.w)) < 0; };
-    var same = shuffle(D.cards.filter(function (x) { return x.k === c.k && ok(x); }), r);
-    var any = shuffle(D.cards.filter(function (x) { return x.k !== c.k && ok(x); }), r);
-    var picks = [c];
-    if (c.wr) return shuffle(picks.concat(c.wr.map(function (x) { return typeof x === 'string' ? { w: x, m: '' } : { w: x.w, m: x.m || '' }; })), r).map(function (p) { return { w: p.w, m: p.m }; });   // Morg's own wrong answers
-    near2(c, seen, r).forEach(function (w) { picks.push({ w: w, m: '' }); });
+    var rank = function (xs) { return xs.map(function (x) { return [hash('triviela choices ' + day + ' ' + c.id + ' ' + x.w), x]; }).sort(function (a, b) { return a[0] - b[0]; }).map(function (p) { return p[1]; }); };
+    var same = rank(D.cards.filter(function (x) { return x.k === c.k && ok(x); })), any = rank(D.cards.filter(function (x) { return x.k !== c.k && ok(x); }));
+    for (var i = 0; i < same.length; i++) for (var j = i + 1; j < same.length; j++) if (!D.clash(same[i].w, same[j].w)) return place([c, same[i], same[j]]);
     same.concat(any).forEach(function (x) { if (picks.length < 3 && !picks.some(function (p) { return D.clash(p.w, x.w); })) picks.push(x); });
-    return shuffle(picks, r).map(function (p) { return { w: p.w, m: p.m }; });
+    return place(picks);
   }
   // a plural answer never draws 1, which reads broken before a plural noun (“1 cautions”, the editor’s catch).
   // a number answer gets two near misses instead of numbers borrowed from other cards, which can be wildly off (Morg, Oct 19, 2026):
@@ -790,14 +798,15 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   // (by 4 or 8 for a World Cup, Euro or Olympics), never past this year unless the answer is, and a future year stays future. Each can land above or below,
   // so the answer isn't always the middle one. A number that hedges (more than 8, about 50) keeps the borrowed numbers.
   var HEDGE = /\b(more than|at least|nearly|almost|about|around|roughly|some|up to|over|under)\s+$/i;   // a hedge right before the number
-  function near2(c, seen, r) {
-    var w = String(c.w);
+  var SPELLED = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen', 'twenty'];
+  function near2(c, seen, r, day) {
+    var w = String(c.w), sp = SPELLED.indexOf(w);   // a spelled count (eight) gets spelled near misses (the audit: it drew 354 and 48)
     var at = c.ex.indexOf(w);
-    if (!/^\d[\d,]*$/.test(w) || (at >= 0 && HEDGE.test(c.ex.slice(0, at)))) return [];
-    var a = +w.replace(/,/g, ''), year = /year/.test(c.k) || (/^\d{4}$/.test(w) && a > 1850 && a < 2100);
-    var now = new Date().getFullYear(), cup = year && /World Cup|Euro\b|Olympic/.test(c.ex), cap = Math.max(a, now);
+    if ((sp < 2 && !/^\d[\d,]*$/.test(w)) || (at >= 0 && HEDGE.test(c.ex.slice(0, at)))) return [];
+    var a = sp >= 2 ? sp : +w.replace(/,/g, ''), year = sp < 2 && (/year/.test(c.k) || (/^\d{4}$/.test(w) && a > 1850 && a < 2100));
+    var now = new Date(START[0], START[1] - 1, START[2] + (day || 0)).getFullYear(), cup = year && /World Cup|Euro\b|Olympic/.test(c.ex), cap = Math.max(a, now);
     var round = [1000, 100, 10, 1].filter(function (k) { return a % k === 0 && k <= a * 0.2; })[0] || 1;   // 100 points moves by tens, 60,000 by thousands
-    var fmt = function (n) { return year || n < 1000 ? String(n) : String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ','); };
+    var fmt = function (n) { return sp >= 2 ? SPELLED[n] : year || n < 1000 ? String(n) : String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ','); };
     var out = [];
     for (var tries = 0; out.length < 2 && tries < 60; tries++) {
       var sign = r() < 0.5 ? -1 : 1, n;
@@ -805,7 +814,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
       else if (year) n = a + sign * (1 + Math.floor(r() * 10));
       else if (a <= 12) n = a + sign * (1 + Math.floor(r() * 3));
       else n = Math.round(a * (1 + sign * (0.1 + r() * 0.25)) / round) * round;
-      if (n < (a >= 2 ? 2 : 1) || n === a || (year && n > cap) || (year && a > now && n <= now) || Math.abs(n - a) < (year || a <= 12 ? 1 : 2)) continue;   // a future year keeps future misses
+      if (n < (a >= 2 ? 2 : 1) || n === a || (sp >= 2 && n > 20) || (year && n > cap) || (year && a > now && n <= now) || Math.abs(n - a) < (year || a <= 12 ? 1 : 2)) continue;   // a future year keeps future misses
       var f = fmt(n);
       if (out.indexOf(f) >= 0 || seen.indexOf(plain(f)) >= 0) continue;
       out.push(f);
@@ -822,7 +831,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   // switched off on Oct 19, 2026 (Morg: people may start texting the link). LOCK = true brings it back. research/lock-104.md has the spec
   var LOCK = false;
   var gated = ((LOCK && REAL) || (DEV && params.has('gate'))) && !store.get('bsb-104', false);   // a new key, so phones that typed the old golazo password see the pad once
-  var FIXED = DEV && params.get('day') ? Math.max(0, parseInt(params.get('day'), 10) - 1) : null;
+  var FIXED = DEV && parseInt(params.get('day'), 10) > 0 ? parseInt(params.get('day'), 10) - 1 : null;   // ?day=abc used to blank the page
   if (DEV && params.has('reset')) { store.del('bsb-daily'); params.delete('reset'); history.replaceState(null, '', location.pathname + (params.toString() ? '?' + params : '')); }
   function today() { return FIXED !== null ? FIXED : DEMO ? demoDay() : ONE ? 0 : Math.max(0, dayOf(new Date())); }
   function demoDay() { return Math.min(DEMO - 1, Math.max(0, store.get('bsb-demo', 0) | 0)); }   // the playtest's place in its run of boards
@@ -842,7 +851,26 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     return s;
   }
   var S = load();
-  var save = function () { store.set('bsb-daily', S); };
+  // The same day open in two tabs (the audit, Oct 30, 2026): a stale tab used to save its old copy over the other's answers.
+  // Now every save, every other tab's save and every return to the tab first take in what the other tab played.
+  function sameBoard(a, b) { return !!(a && b && a.v === b.v && a.day === b.day && a.tiles && b.tiles && a.tiles.length === b.tiles.length && a.tiles.every(function (t, i) { return t.id === b.tiles[i].id; })); }
+  function merge(from) {   // how much it took in: cards the other tab answered, in the order it answered them, and its sent result
+    var n = 0;
+    (from.path || []).forEach(function (i) { if (from.res[i] && !S.res[i]) { S.res[i] = from.res[i]; if (S.path.indexOf(i) < 0) S.path.push(i); n++; } });
+    if (from.sent && !S.sent) { S.sent = true; n++; }
+    if ((from.sending || 0) > (S.sending || 0)) S.sending = from.sending;   // a post another tab has on its way
+    if (from.tapped) S.tapped = 1;
+    return n;
+  }
+  var save = function () { var t = store.get('bsb-daily', null); if (sameBoard(t, S)) merge(t); store.set('bsb-daily', S); };
+  function catchUp() {   // another tab played on: take it in and redraw, unless this tab is showing an answer
+    var t = store.get('bsb-daily', null);
+    if (!sameBoard(t, S) || !merge(t)) return false;
+    if (!(cab.dataset.v === 'play' && answered)) show();
+    return true;
+  }
+  window.addEventListener('storage', function (e) { if (e.key === 'bsb-daily') catchUp(); });
+  document.addEventListener('visibilitychange', function () { if (!document.hidden) catchUp(); });
   var chips = function () { return S.res.filter(function (x) { return x === 1; }).length; };
   var over = function () { return S.res.indexOf(0) < 0; };   // every card played: a miss no longer ends the day
   var ALLN = 3 * PER, GOLAZO = tx('golazo');   // a perfect day, 9/9 (Morg's name and caps, Oct 19, 2026)
@@ -927,12 +955,12 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   // ---- a card ----
   var T, answered;
   function open(i) {   // a reload brings the open card back, and Back returns it to the board still to play (Morg, Oct 26, 2026)
-    if (over() || S.res[i] || S.open >= 0) return;
+    if (over() || S.res[i] || S.open >= 0 || catchUp()) return;
     if (settle) settle();
     var t = S.tiles[i], slot = t.ch.map(function (p) { return p.w; }).indexOf(t.w);
     if (!t.set) {   // the right answer never lands in the same slot 3 times running
       if (S.slots.length === 2 && S.slots[0] === slot && S.slots[1] === slot) { var to = (slot + 1 + Math.floor(Math.random() * 2)) % 3, x = t.ch[to]; t.ch[to] = t.ch[slot]; t.ch[slot] = x; slot = to; }
-      S.slots = S.slots.concat(slot).slice(-2); t.set = 1;
+      t.set = 1;   // its slot counts once it's answered (answer() below), so a card opened and put Back doesn't count (the audit)
     }
     S.open = i; S.tapped = 1; save(); ask();   // tapped: the wave stops for the day
   }
@@ -966,7 +994,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     $('choices').innerHTML = '';
     T.ch.forEach(function (p) {
       var b = document.createElement('button'); b.type = 'button'; b.className = 'key choice'; b.dataset.w = p.w;
-      b.innerHTML = '<span class="txt"><span class="w">' + num(esc(p.w)) + '</span><span class="def">' + num(keep(orph(esc(p.m)))) + '</span></span><span class="mark" aria-hidden="true"></span>';
+      b.innerHTML = '<span class="txt"><span class="w">' + num(esc(p.w)) + '</span><span class="def" aria-hidden="true">' + num(keep(orph(esc(p.m)))) + '</span></span><span class="mark" aria-hidden="true"></span>';   // silent until it shows: VoiceOver read every meaning before the answer (the audit, Oct 30, 2026)
       b.addEventListener('click', function () { answer(p, b); });
       $('choices').appendChild(b);
     });
@@ -975,11 +1003,12 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   function answer(p, btn) {
     if (answered) return; answered = true;
     var ok = p.w === T.w;
-    S.res[S.open] = ok ? 1 : 2; if (S.path.indexOf(S.open) < 0) S.path.push(S.open); save();   // saved before anything else, so a reload can't undo it. The path is the order answered
+    var at = S.tiles[S.open]; S.slots = S.slots.concat(at.ch.map(function (q) { return q.w; }).indexOf(at.w)).slice(-2);
+    S.res[S.open] = ok ? 1 : 2; if (S.path.indexOf(S.open) < 0) S.path.push(S.open); if (over() && FIXED === null && today() !== S.day) S.late = 1; save();   // saved before anything else, so a reload can't undo it. The path is the order answered
     document.querySelectorAll('.choice').forEach(function (b) {
       b.disabled = true;
-      if (b.dataset.w === T.w) { b.classList.add('right'); b.lastChild.innerHTML = svg('ok', 3); }
-      else if (b === btn) { b.classList.add('wrong'); b.lastChild.innerHTML = svg('no', 3); }
+      if (b.dataset.w === T.w) { b.classList.add('right'); b.lastChild.innerHTML = svg('ok', 3); b.querySelector('.def').removeAttribute('aria-hidden'); }
+      else if (b === btn) { b.classList.add('wrong'); b.lastChild.innerHTML = svg('no', 3); b.querySelector('.def').removeAttribute('aria-hidden'); }
       else b.classList.add('dim');
     });
     hud(spot(S.open) + 1);
@@ -1031,13 +1060,16 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   // one's result and the tap order to /api/result, once (S.sent), and tries again on the next visit if there was no signal.
   // Nothing about who played. Only triviela.net and preview links have the service (the GitHub Pages address doesn't).
   var SENDS = /(^|\.)triviela\.net$|\.blank-space-baby\.pages\.dev$/.test(host);
+  var posting = false;   // one post at a time: Review's Exit and the end screen's redraws used to post again while the first was on its way (the audit, Oct 30, 2026)
   function report() {
-    if (!SENDS || S.sent || !over() || S.path.length !== S.tiles.length) return;
+    if (!SENDS || S.sent || posting || !over() || S.path.length !== S.tiles.length) return;
+    if (S.sending && Date.now() - S.sending < 30000) return;   // another tab is sending this day right now
+    var s = S; posting = true; s.sending = Date.now(); save();   // the day being sent, even if a new day takes its place before the answer comes back
     try {
       fetch('/api/result', { method: 'POST', keepalive: true, headers: { 'content-type': 'application/json' },
-        body: JSON.stringify({ day: S.day, ids: S.tiles.map(function (t) { return t.id; }), res: S.res, path: S.path }) })
-        .then(function (r) { if (r.ok) { S.sent = true; save(); } }).catch(function () {});
-    } catch (e) {}
+        body: JSON.stringify({ day: s.day, ids: s.tiles.map(function (t) { return t.id; }), res: s.res, path: s.path }) })
+        .then(function (r) { posting = false; s.sending = 0; if (r.ok) s.sent = true; if (s === S) save(); }, function () { posting = false; s.sending = 0; if (s === S) save(); });
+    } catch (e) { posting = false; s.sending = 0; }
   }
   var tick;
   // the share: the board's shape, a column per color with its card on top as the header (Morg, Oct 26, 2026), every card in its spot,
@@ -1063,7 +1095,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     $('v-end').className = 'view' + (top ? ' golazo' : '');
     $('v-end').innerHTML = '<div class="egrid" role="group" aria-label="' + esc(tx('end.grid', { rows: rows().map(function (row, y) { return tx('end.row', { color: tx('row.' + (y + 1)), n: row.filter(function (v) { return v === 1; }).length, all: PER }); }).join(', ') })) + '">' + cells(big) + '</div>' +
       '<p class="score"' + (top ? ' data-tid="golazo" data-tplain="1"' : ' data-tid="end.score"' + tv({ n: n, all: ALLN })) + '>' + (top ? esc(GOLAZO) : slash(num(esc(score())))) + '</p>' +
-      '<p class="clock" id="clock"' + (DEMO || ONE ? ' hidden' : '') + '></p>';   // the countdown, where the review hint was (Oct 28, 2026), so the panel's row holds Review and Share board
+      '<p class="clock" id="clock" aria-live="off"' + (DEMO || ONE ? ' hidden' : '') + '></p>';   // aria-live off: inside the screen's polite region it was read out every second (the audit)   // the countdown, where the review hint was (Oct 28, 2026), so the panel's row holds Review and Share board
     $('share-top').innerHTML = th('share.title', { day: S.day + 1 }); $('share-top').dataset.tid = 'share.title'; $('share-top').dataset.tv = JSON.stringify({ day: S.day + 1 });
     $('share-txt').innerHTML = '<span class="sgrid se" aria-hidden="true">' + Array.from(HEAD).map(function (e) { return '<i>' + e + '</i>'; }).join('') + lines().map(function (l) { return l.map(function (v) { return '<i>' + (v === 1 ? '⚽' : '❌') + '</i>'; }).join(''); }).join('') + '</span>' +   // the grid as the text sends it, emoji and all (Morg, Oct 28, 2026)
       '<span data-tid="' + (chips() === ALLN ? 'golazo' : 'end.score') + '"' + tv({ n: chips(), all: ALLN }) + '>' + num(keep(esc(scoreLine()))) + '</span><span data-tid="share.tagline">' + th('share.tagline') + '</span><span data-tid="share.site">' + th('share.site') + '</span>';
@@ -1126,7 +1158,8 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   function drawSign() {
     var c = $('sign'), w = c.clientWidth, h = c.clientHeight; if (!w || !h) return;
     var dpr = window.devicePixelRatio || 1; c.width = Math.round(w * dpr); c.height = Math.round(h * dpr);
-    var g = c.getContext('2d'); g.setTransform(dpr, 0, 0, dpr, 0, 0); g.clearRect(0, 0, w, h);
+    var g = c.getContext && c.getContext('2d'); if (!g) return;   // no canvas: the sign stays dark, the game still plays
+    g.setTransform(dpr, 0, 0, dpr, 0, 0); g.clearRect(0, 0, w, h);
     var word = 'TRIVIELA', cols = word.length * 6 - 1, rows = 7, k = 2;   // font pixels across, and dots per font pixel
     var pitch = (w - 34) / (cols * k + 3), nx = Math.floor(w / pitch), ny = Math.max(rows * k + 2, Math.floor(h / pitch)), oy = (h - ny * pitch) / 2;   // the name leaves room for the menu
     var on = {}, top = Math.floor((ny - rows * k) / 2), ox = $('menu-b').hidden ? Math.max(0, Math.floor((nx - cols * k - 2) / 2)) : 0;   // with no menu the name sits in the middle
@@ -1165,10 +1198,11 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     var now = new Date(), from = new Date(START[0], START[1] - 1, START[2]);   // before #1's date, #1 plays early and stays until the night after it
     if (now > from) from = now;
     var left = new Date(from.getFullYear(), from.getMonth(), from.getDate() + 1) - now;
-    if (FIXED === null && today() !== S.day) { clearInterval(tick); S = load(); save(); return show(); }
+    if (S.late) left = 0;   // finished after its own midnight: its end screen stays, and the new board is ready on the next visit (the audit)
+    else if (FIXED === null && today() !== S.day) { clearInterval(tick); S = load(); save(); return show(); }
     var s = Math.max(0, Math.floor(left / 1000)), pad = function (x) { return (x < 10 ? '0' : '') + x; };
     if (Date.now() < holdClock || !$('clock')) return;   // a beta message is showing in its place, or a card is on the screen
-    $('clock').innerHTML = '<span class="clk-l" data-tid="end.nextIn">' + th('end.nextIn') + '</span>' + pad(Math.floor(s / 3600)) + ':' + pad(Math.floor(s / 60) % 60) + ':' + pad(s % 60);
+    $('clock').innerHTML = '<span class="clk-l" data-tid="end.nextIn">' + th('end.nextIn') + '</span> ' + pad(Math.floor(s / 3600)) + ':' + pad(Math.floor(s / 60) % 60) + ':' + pad(s % 60);
   }
   $('share').addEventListener('click', function () {
     var text = shareText(), done = function () { $('share-mark').innerHTML = svg('ok', 3); setTimeout(function () { $('share-mark').innerHTML = svg('share', 3); }, 1600); };
@@ -1353,7 +1387,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
       if (open.ran) return; open.ran = true;
       var sc = $('flip'); sc.classList.remove('crton'); void sc.offsetWidth; sc.classList.add('crton');
       cab.classList.remove('poweron'); void cab.offsetWidth; cab.classList.add('poweron');
-      gated = false; show(); if (!store.get('bsb-intro-off', false)) setTimeout(intro, 650);
+      gated = false; show();   // How to play is gone (Oct 28, 2026)
     }
     var pad = $('p-gate'), keyOf = function (e) { var b = e.target.closest && e.target.closest('[data-k]'); return b && pad.contains(b) ? b : null; };
     pad.addEventListener('pointerdown', function (e) { var b = keyOf(e); if (!b || down || Date.now() < shield) return; down = { id: e.pointerId, b: b }; b.classList.add('on'); try { b.setPointerCapture(e.pointerId); } catch (x) {} });
@@ -1398,7 +1432,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     Object.keys(TEXT).forEach(function (k) { BASE[k] = TEXT[k]; });
     Object.keys(edits).forEach(function (k) { if (!(k in BASE) || edits[k] === BASE[k]) delete edits[k]; else TEXT[k] = edits[k]; });   // a change already in the build is done
     function refresh() {   // every string the screen shows, redrawn from TEXT
-      GOLAZO = tx('golazo'); ARCADE = new RegExp('(<[^>]*>)|(' + quote(esc(tx('golazo'))) + '|#?\\d+)', 'g');
+      GOLAZO = tx('golazo'); ARCADE = arcadeRe();
       fill(document);
       [].forEach.call(document.querySelectorAll('[data-tid]'), function (el) {
         var id = el.dataset.tid; if (!(id in TEXT)) return;
