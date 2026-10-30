@@ -22,7 +22,7 @@ ROOT = os.path.dirname(HERE)
 DECKS = os.path.join(HERE, 'decks')
 
 # The decks the daily draws from (Morg, Oct 16, 2026: every soccer deck plus both slang decks, no Taylor Swift).
-#   league: the draw allows at most LEAGUE_MAX cards a day from one league (2 since nine cards, Oct 27, 2026, set in template.html) ('' for none, '*' for one per card, from its source site)
+#   league: the draw allows at most LEAGUE_MAX cards a day from one league (2 since nine cards, Oct 27, 2026, LEAGUE_MAX below) ('' for none, '*' for one per card, from its source site)
 #   women:  every card in the deck counts as a women's game card (elsewhere a card says so itself, with "women": true)
 #   rules:  every card in the deck counts as a rules card
 #   slang:  at most one slang card a day across these decks (Morg, Oct 16, 2026), and never a red one

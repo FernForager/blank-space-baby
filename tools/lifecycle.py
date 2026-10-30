@@ -21,8 +21,8 @@ build.py, Oct 28, 2026), and as the playtest demo (DEMO_DAYS in build.py).
    third the rest and the center, and nothing is lit before.
 6. The right answer never lands in the same slot three cards running.6. A day finished with no signal is not marked sent. When a new day replaces it, it waits in bsb-unsent, and the next visit
    sends it once and forgets it (the audit, Oct 30, 2026).
-7. A day in progress stays past midnight. Finished after its own midnight, it keeps its end screen with the countdown at
-   zero, even when the tab comes back, and the next visit opens the new board.
+7. A day in progress stays past midnight. Finished after its own midnight, it keeps its end screen, the countdown gone
+   and a Play #N key in its place (Morg, Oct 30, 2026), even when the tab comes back, and the key opens the new board.
 
 Runs on a fake clock set to 23:58 local time on puzzle #1's date.
 """
@@ -166,13 +166,13 @@ async def run(b, html, demo, one=False):
         await pg.clock.fast_forward(24 * 3600 * 1000); await pg.wait_for_timeout(300)
         ok(await pg.evaluate("document.getElementById('cab').dataset.v") == 'board' and (await state())['day'] == 2, 'a day in progress stays past midnight')
         await answer(pg, N - 1, True); await pg.wait_for_timeout(300)
-        s = await state(); c = await pg.evaluate("document.getElementById('clock').textContent")
-        ok(await pg.evaluate("document.getElementById('cab').dataset.v") == 'end' and s.get('late') == 1 and '00:00:00' in c, f'finished after its own midnight: the end screen, with the countdown at zero: {c}')
+        s = await state(); key = await pg.evaluate("[document.getElementById('clock').hidden, document.getElementById('e-next').hidden, document.getElementById('e-next').textContent.trim()]")
+        ok(await pg.evaluate("document.getElementById('cab').dataset.v") == 'end' and s.get('late') == 1 and key == [True, False, 'Play #4'], f'finished after its own midnight: the end screen, the countdown gone and a Play #4 key in its place: {key}')
         await pg.evaluate("document.dispatchEvent(new Event('visibilitychange'))"); await pg.wait_for_timeout(300)
         ok(await pg.evaluate("document.getElementById('cab').dataset.v") == 'end' and (await state())['day'] == 2, 'coming back to the tab keeps that end screen')
-        await pg.reload(); await pg.wait_for_timeout(500)
+        await pg.click('#e-next'); await pg.wait_for_timeout(500)
         s = await state()
-        ok(await pg.evaluate("document.getElementById('cab').dataset.v") == 'board' and s['day'] == 3 and len(posts) == 2 and posts[1]['day'] == 2, f'the next visit opens the new board, #4, and the late day was sent: {len(posts)} posted')
+        ok(await pg.evaluate("document.getElementById('cab').dataset.v") == 'board' and s['day'] == 3 and len(posts) == 2 and posts[1]['day'] == 2, f'the Play key opens the new board, #4, and the late day was sent: {len(posts)} posted')
     else:
         # 5. the demo: no countdown, Play #2 opens the next board, the last one thanks you and offers Play again from #1
         row = lambda: pg.evaluate("""({ clock: document.getElementById('clock').hidden ? null : document.getElementById('clock').textContent,

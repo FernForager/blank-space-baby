@@ -1229,7 +1229,13 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     $('e-again').hidden = !last;
     $('e-next').hidden = !DEMO || last; $('clock').hidden = !!DEMO && !last;
     if (ONE && !DEMO) { $('clock').hidden = true; return; }   // one fixed board: no next board to count down to, so Share board takes the row
-    if (!DEMO) return clock();
+    if (!DEMO) {
+      if (!S.late) return clock();
+      // finished after its own midnight: the countdown at zero gives way to the demo's Play key, one tap to the new board (Morg, Oct 30, 2026, hub decision lateday)
+      var n = today() + 1; $('clock').hidden = true; $('e-next').hidden = false;
+      $('e-next').innerHTML = '<span data-tid="end.next"' + tv({ day: n }) + '>' + th('end.next', { day: n }) + '</span>' + svg('next', 3); $('e-next').setAttribute('aria-label', tx('end.nextLabel', { day: n }));
+      return;
+    }
     if (last) { $('clock').hidden = true; if (!$('thanks-s')) $('v-end').insertAdjacentHTML('afterbegin', '<p class="thanks-s" id="thanks-s" data-tid="end.thanks">' + th('end.thanks') + '</p>'); return; }
     $('e-next').innerHTML = '<span data-tid="end.next"' + tv({ day: S.day + 2 }) + '>' + th('end.next', { day: S.day + 2 }) + '</span>' + svg('next', 3); $('e-next').setAttribute('aria-label', tx('end.nextLabel', { day: S.day + 2 }));
   }
@@ -1283,13 +1289,16 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   $('ra-no').addEventListener('click', function () { pop('restart-ask', false); });
   $('ra-yes').addEventListener('click', function () { pop('restart-ask', false); goDay(0); });
   ['menu', 'restart-ask', 'bimg'].forEach(function (id) { $(id).addEventListener('click', function (e) { if (e.target === $(id)) pop(id, false); }); });   // a tap outside the box closes it
-  $('e-next').addEventListener('click', function () { if (DEMO && S.day < DEMO - 1) goDay(S.day + 1); });
+  $('e-next').addEventListener('click', function () {
+    if (DEMO && S.day < DEMO - 1) goDay(S.day + 1);
+    else if (!DEMO && S.late) { clearInterval(tick); S = load(); save(); show(); }   // the new board, after a late finish
+  });
   $('e-again').addEventListener('click', function () { if (DEMO) goDay(0); });
   function clock() {   // the countdown to tomorrow's board, at local midnight
     var now = new Date(), from = new Date(START[0], START[1] - 1, START[2]);   // before #1's date, #1 plays early and stays until the night after it
     if (now > from) from = now;
     var left = new Date(from.getFullYear(), from.getMonth(), from.getDate() + 1) - now;
-    if (S.late) left = 0;   // finished after its own midnight: its end screen stays, and the new board is ready on the next visit (the audit)
+    if (S.late) left = 0;   // finished after its own midnight: its end screen stays, with the Play key in the countdown's place (endRow)
     else if (FIXED === null && today() !== S.day) { clearInterval(tick); S = load(); save(); return show(); }
     var s = Math.max(0, Math.floor(left / 1000)), pad = function (x) { return (x < 10 ? '0' : '') + x; };
     if (Date.now() < holdClock || !$('clock')) return;   // a beta message is showing in its place, or a card is on the screen
