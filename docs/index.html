@@ -908,7 +908,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   }
   function load() {
     var s = store.get('bsb-daily', null), d = today();
-    if (!(s && s.v === 6 && s.day === d && s.tiles && s.tiles.length === 3 * PER)) return fresh(d);
+    if (!(s && s.v === 6 && s.day === d && s.tiles && s.tiles.length === 3 * PER)) { stash(s); return fresh(d); }   // a finished day never sent is kept for a later visit
     s.tiles.forEach(function (t) {   // a board saved before cards had ids: find each card by its words
       if (t.id) return;
       for (var i = 0; i < ALL.length; i++) if (ALL[i].w === t.w && ALL[i].ex === t.ex) { t.id = ALL[i].id; t.h = ALL[i].fp; t.lk = ALL[i].lk; break; }
@@ -1127,15 +1127,39 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   var SENDS = /(^|\.)triviela\.net$|\.blank-space-baby\.pages\.dev$/.test(host);
   var posting = false;   // one post at a time: Review's Exit and the end screen's redraws used to post again while the first was on its way (the audit, Oct 30, 2026)
   function report() {
-    if (!SENDS || S.sent || posting || !over() || S.path.length !== S.tiles.length) return;
+    if (!SENDS || posting) return;
+    if (S.sent || !over() || S.path.length !== S.tiles.length) return resend();   // nothing of today's to send: an earlier day's, if one waits
     if (S.sending && Date.now() - S.sending < 30000) return;   // another tab is sending this day right now
     var s = S; posting = true; s.sending = Date.now(); save();   // the day being sent, even if a new day takes its place before the answer comes back
-    try {
-      fetch('/api/result', { method: 'POST', keepalive: true, headers: { 'content-type': 'application/json' },
-        body: JSON.stringify({ day: s.day, ids: s.tiles.map(function (t) { return t.id; }), res: s.res, path: s.path, token: s.tk }) })
-        .then(function (r) { posting = false; s.sending = 0; if (r.ok) s.sent = true; if (s === S) save(); }, function () { posting = false; s.sending = 0; if (s === S) save(); });
-    } catch (e) { posting = false; s.sending = 0; }
+    postResult({ day: s.day, ids: s.tiles.map(function (t) { return t.id; }), res: s.res, path: s.path, token: s.tk }, function (ok) {
+      posting = false; s.sending = 0; if (ok) s.sent = true; if (s === S) save(); if (ok) resend();
+    });
   }
+  function postResult(body, done) {   // done(ok, status), status 0 when the post never reached the server
+    try {
+      fetch('/api/result', { method: 'POST', keepalive: true, headers: { 'content-type': 'application/json' }, body: JSON.stringify(body) })
+        .then(function (r) { done(r.ok, r.status); }, function () { done(false, 0); });
+    } catch (e) { done(false, 0); }
+  }
+  // A day finished with no signal, then replaced by a new day before it could post, used to be lost (the audit, Oct 30, 2026).
+  // Now load() keeps such a day in bsb-unsent, and resend() sends the oldest on a later visit, dropping one the server refuses for good
+  function stash(s) {
+    if (!SENDS || !s || s.v !== 6 || s.sent || !s.tiles || !s.res || s.res.indexOf(0) >= 0 || !s.path || s.path.length !== s.tiles.length) return;   // never on an address with no service
+    var q = store.get('bsb-unsent', []).filter(function (x) { return x.tk !== s.tk; });
+    q.push({ day: s.day, ids: s.tiles.map(function (t) { return t.id; }), res: s.res, path: s.path, tk: s.tk });
+    store.set('bsb-unsent', q.slice(-5));
+  }
+  function resend() {   // not the beta keys’ flush() below
+    var q = store.get('bsb-unsent', []);
+    if (!SENDS || posting || !q.length) return;
+    var b = q[0]; posting = true;
+    postResult({ day: b.day, ids: b.ids, res: b.res, path: b.path, token: b.tk }, function (ok, status) {
+      posting = false;
+      if (ok || (status && status < 500)) store.set('bsb-unsent', store.get('bsb-unsent', []).filter(function (x) { return x.tk !== b.tk; }));   // sent, or refused for good
+      if (ok) resend();
+    });
+  }
+  resend();   // every visit: send what an earlier day left behind
   var tick;
   // the share: the board's shape, a column per color with its card on top as the header (Morg, Oct 26, 2026), every card in its spot,
   // ⚽ right and ❌ missed, then the score
@@ -1160,7 +1184,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     $('v-end').className = 'view' + (top ? ' golazo' : '');
     $('v-end').innerHTML = '<div class="egrid" role="group" aria-label="' + esc(tx('end.grid', { rows: rows().map(function (row, y) { return tx('end.row', { color: tx('row.' + (y + 1)), n: row.filter(function (v) { return v === 1; }).length, all: PER }); }).join(', ') })) + '">' + cells(big) + '</div>' +
       '<p class="score"' + (top ? ' data-tid="golazo" data-tplain="1"' : ' data-tid="end.score"' + tv({ n: n, all: ALLN })) + '>' + (top ? esc(GOLAZO) : slash(num(esc(score())))) + '</p>' +
-      '<p class="clock" id="clock" aria-live="off"' + (DEMO || ONE ? ' hidden' : '') + '></p>';   // aria-live off: inside the screen's polite region it was read out every second (the audit)   // the countdown, where the review hint was (Oct 28, 2026), so the panel's row holds Review and Share board
+      '<p class="clock" id="clock" role="timer" aria-live="off"' + (DEMO || ONE ? ' hidden' : '') + '></p>';   // aria-live off: inside the screen's polite region it was read out every second (the audit)   // the countdown, where the review hint was (Oct 28, 2026), so the panel's row holds Review and Share board
     $('share-top').innerHTML = th('share.title', { day: S.day + 1 }); $('share-top').dataset.tid = 'share.title'; $('share-top').dataset.tv = JSON.stringify({ day: S.day + 1 });
     $('share-txt').innerHTML = '<span class="sgrid se" aria-hidden="true">' + Array.from(HEAD).map(function (e) { return '<i>' + e + '</i>'; }).join('') + lines().map(function (l) { return l.map(function (v) { return '<i>' + (v === 1 ? '⚽' : '❌') + '</i>'; }).join(''); }).join('') + '</span>' +   // the grid as the text sends it, emoji and all (Morg, Oct 28, 2026)
       '<span data-tid="' + (chips() === ALLN ? 'golazo' : 'end.score') + '"' + tv({ n: chips(), all: ALLN }) + '>' + num(keep(esc(scoreLine()))) + '</span><span data-tid="share.tagline">' + th('share.tagline') + '</span><span data-tid="share.site">' + th('share.site') + '</span>';
@@ -1209,7 +1233,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   }
   function goDay(d) {   // the demo's next board, or back to #1
     if (FIXED !== null) { params.set('day', d + 1); params.set('reset', ''); location.search = params.toString(); return; }   // a preview link's ?day=N
-    clearInterval(tick); store.set('bsb-demo', d); store.del('bsb-daily'); S = load(); save(); show();
+    clearInterval(tick); store.set('bsb-demo', d); stash(S); store.del('bsb-daily'); S = load(); save(); show();
   }
   $('e-again').innerHTML = svg('again', 3) + '<span data-tid="end.again">' + th('end.again') + '</span>';
   // the sign: a dot-matrix board. Background dots glow at random, and the dots inside the 5×7 letters of TRIVIELA,
@@ -1483,7 +1507,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     board(); view('board');
   }
   document.addEventListener('visibilitychange', function () {   // a finished or untouched day rolls over at midnight
-    if (document.hidden || FIXED !== null || today() === S.day || !(over() || !S.path.length)) return;
+    if (document.hidden || FIXED !== null || today() === S.day || S.late || !(over() || !S.path.length)) return;   // a day finished after its own midnight keeps its end screen until the next visit (the audit)
     S = load(); save(); show();
   });
   document.addEventListener('touchstart', function () {}, { passive: true });   // iPhone Safari only shows :active (keys pressing down) once a touch listener exists

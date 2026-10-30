@@ -19,7 +19,11 @@ build.py, Oct 28, 2026), and as the playtest demo (DEMO_DAYS in build.py).
    opens #2, the last board ends with a thank-you that a reload keeps, and Play again from #1 goes back to #1.
 7. The balls fill by right answers from the rim in: a color's first lights its outer ring, the second its pentagons, the
    third the rest and the center, and nothing is lit before.
-6. The right answer never lands in the same slot three cards running.
+6. The right answer never lands in the same slot three cards running.6. A day finished with no signal is not marked sent. When a new day replaces it, it waits in bsb-unsent, and the next visit
+   sends it once and forgets it (the audit, Oct 30, 2026).
+7. A day in progress stays past midnight. Finished after its own midnight, it keeps its end screen with the countdown at
+   zero, even when the tab comes back, and the next visit opens the new board.
+
 Runs on a fake clock set to 23:58 local time on puzzle #1's date.
 """
 import asyncio, datetime, json, os, re, sys
@@ -54,8 +58,13 @@ def expected(s, n):   # the share text for a saved day: the board's shape, every
     return TEXT['share.title'].replace('{day}', str(n)) + '\n' + HEAD + '\n' + '\n'.join(rows) + '\n' + ('GOLAZO!' if right == k else f'{right}/{k}') + '\n' + TEXT['share.tagline'] + '\n' + TEXT['share.site']
 
 
+def sends(html):   # the real daily's run posts results: the page sends only from triviela.net and the previews, so the test's own address joins them
+    old = r'triviela\.net$|\.blank-space-baby\.pages\.dev$/.test(host);'; assert html.count(old) == 1, html.count(old)
+    return html.replace(old, r'triviela\.net$|\.blank-space-baby\.pages\.dev$|^bsb\.test$/.test(host);')
+
 async def run(b, html, demo, one=False):
     print(f'-- as the {"demo, " + str(demo) + " boards" if demo else "real daily, one fixed board" if one else "real daily"}')
+    if not demo and not one: html = sends(html)
     ctx = await b.new_context(viewport={'width': 402, 'height': 744}, reduced_motion='reduce', service_workers='block')   # the page's sw.js stays out of the test
     await ctx.grant_permissions(['clipboard-read', 'clipboard-write'], origin='https://bsb.test')
     pg = await ctx.new_page(); errs = []; pg.on('pageerror', lambda e: errs.append(str(e)))
@@ -137,6 +146,33 @@ async def run(b, html, demo, one=False):
         await pg.clock.run_for(125_000); await pg.wait_for_timeout(300)
         v = await pg.evaluate("document.getElementById('cab').dataset.v"); s = await state()
         ok(v == 'board' and s['day'] == 1 and not any(s['res']), 'at midnight a fresh board appears, as puzzle #2')
+        # 6. a day finished with no signal is sent on a later visit, after a new day has replaced it (the audit)
+        posts = []
+        async def offline(r): await r.abort()
+        async def online(r): posts.append(json.loads(r.request.post_data)); await r.fulfill(body='{"ok":true}', content_type='application/json')
+        await pg.route('https://bsb.test/api/result', offline)
+        for i in range(N): await answer(pg, i, True)
+        await pg.wait_for_timeout(300); s = await state(); tk = s['tk']
+        ok(await pg.evaluate("document.getElementById('cab').dataset.v") == 'end' and not s.get('sent'), 'a day finished with no signal is not marked sent')
+        await pg.clock.fast_forward(24 * 3600 * 1000); await pg.wait_for_timeout(300)
+        s = await state(); q = await pg.evaluate("JSON.parse(localStorage.getItem('bsb-unsent') || '[]')")
+        ok(s['day'] == 2 and not any(s['res']) and len(q) == 1 and q[0]['day'] == 1 and q[0]['tk'] == tk and len(q[0]['ids']) == N, f'a day later the next board replaces it, and the unsent day waits: {len(q)} waiting')
+        await pg.unroute('https://bsb.test/api/result'); await pg.route('https://bsb.test/api/result', online)
+        await pg.reload(); await pg.wait_for_timeout(500)
+        q = await pg.evaluate("JSON.parse(localStorage.getItem('bsb-unsent') || '[]')")
+        ok(len(posts) == 1 and posts[0]['day'] == 1 and posts[0]['token'] == tk and len(posts[0]['ids']) == N and not q, f'the next visit sends the waiting day, once, and forgets it: {len(posts)} posted, {len(q)} waiting')
+        # 7. a day finished after its own midnight keeps its end screen until the next visit
+        for i in range(N - 1): await answer(pg, i, True)
+        await pg.clock.fast_forward(24 * 3600 * 1000); await pg.wait_for_timeout(300)
+        ok(await pg.evaluate("document.getElementById('cab').dataset.v") == 'board' and (await state())['day'] == 2, 'a day in progress stays past midnight')
+        await answer(pg, N - 1, True); await pg.wait_for_timeout(300)
+        s = await state(); c = await pg.evaluate("document.getElementById('clock').textContent")
+        ok(await pg.evaluate("document.getElementById('cab').dataset.v") == 'end' and s.get('late') == 1 and '00:00:00' in c, f'finished after its own midnight: the end screen, with the countdown at zero: {c}')
+        await pg.evaluate("document.dispatchEvent(new Event('visibilitychange'))"); await pg.wait_for_timeout(300)
+        ok(await pg.evaluate("document.getElementById('cab').dataset.v") == 'end' and (await state())['day'] == 2, 'coming back to the tab keeps that end screen')
+        await pg.reload(); await pg.wait_for_timeout(500)
+        s = await state()
+        ok(await pg.evaluate("document.getElementById('cab').dataset.v") == 'board' and s['day'] == 3 and len(posts) == 2 and posts[1]['day'] == 2, f'the next visit opens the new board, #4, and the late day was sent: {len(posts)} posted')
     else:
         # 5. the demo: no countdown, Play #2 opens the next board, the last one thanks you and offers Play again from #1
         row = lambda: pg.evaluate("""({ clock: document.getElementById('clock').hidden ? null : document.getElementById('clock').textContent,
