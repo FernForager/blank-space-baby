@@ -249,7 +249,7 @@
     },
     {
       "w": "halves",
-      "means": "So can the halves of extra time",
+      "means": "Extra time can be shorter too",
       "ex": "In youth games, halves may be shorter than the usual 45 minutes",
       "hook": "45 minutes",
       "k": "game-time",
@@ -1393,7 +1393,7 @@
     {
       "w": "striker",
       "means": "Strikers strike at the ball",
-      "ex": "The word striker is another name for a forward on the pitch",
+      "ex": "The word striker is another name for a forward on the field",
       "hook": "forward",
       "k": "people-team",
       "src": "https://www.merriam-webster.com/dictionary/striker",

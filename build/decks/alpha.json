@@ -179,8 +179,8 @@
   {
    "w": "touch grass",
    "means": "Get off screens, go outside",
-   "ex": "After a day of World Cup video games, Mom said to touch grass",
-   "hook": "video games",
+   "ex": "After a day of video game shoot-outs, Mom said to touch grass",
+   "hook": "video game",
    "src": "https://www.merriam-webster.com/dictionary/touch%20grass",
    "d": 1
   },
@@ -539,8 +539,8 @@
   {
    "w": "Mary Sue",
    "means": "A too-perfect character",
-   "ex": "The striker in the World Cup movie never misses and is a Mary Sue",
-   "hook": "World Cup",
+   "ex": "The striker in the movie never misses a penalty and is a Mary Sue",
+   "hook": "movie",
    "src": "https://www.merriam-webster.com/slang/mary-sue",
    "d": 3
   },
