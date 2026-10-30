@@ -1,6 +1,10 @@
 """Before main moves: the live build against the new one, so a push never changes a board someone is playing.
 
-    python3 tools/golive.py [REF]      # REF: the live build's commit, default origin/main
+    python3 tools/golive.py [REF] [--demo] [--no-live]   # REF: the live build's commit, default origin/main (fetched first)
+
+0. triviela.net serves REF's build (apart from Cloudflare's visit counter), so the comparison starts from what players
+   have, and the new build's switches (DEMO, ONE, START, PER, PREROLL) are printed. A build with the demo on fails unless
+   --demo says it's meant. --no-live skips the triviela.net fetch (offline only).
 
 1. Yesterday's, today's and tomorrow's dates in Seattle (which covers every time zone's today) show the same puzzle, its
    same cards with the same three choices in the same order. Date by date, so moving #1's date shows up too. Later dates
@@ -9,8 +13,10 @@
    choices, Back works, and it plays to the end.
 3. A day finished on the live build reopens to its end screen with its results unchanged.
 When the new build changes the save's version (v 5 on Oct 27, 2026: nine cards), saved days start fresh by design, so
-2 and 3 are skipped and say so. A build with one fixed board (ONE_BOARD) plays #1 on every date, so tomorrow changes when it
-first goes live or comes off, by design.
+every phone gets the new boards and 2 and 3 are skipped. A build with one fixed board (ONE_BOARD) plays #1 on every date, so
+dates whose puzzle number changes when it goes live or comes off are excused. A date that keeps its number must keep its
+board, or the save's version must change: otherwise phones that started it keep the old cards while new phones get new ones,
+and grids for the same number stop matching (the audit, Oct 30, 2026).
 Runs on the real clock in Seattle time.
 """
 import asyncio, datetime, json, os, re, subprocess, sys
@@ -18,12 +24,15 @@ from zoneinfo import ZoneInfo
 from playwright.async_api import async_playwright
 from docsroute import route
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-REF = sys.argv[1] if len(sys.argv) > 1 else 'origin/main'
+ARGS = [a for a in sys.argv[1:] if not a.startswith('--')]
+REF = ARGS[0] if ARGS else 'origin/main'
+if REF == 'origin/main': subprocess.run(['git', 'fetch', '-q', 'origin', 'main'], cwd=ROOT)   # the live build as it is now, not as this copy last saw it
 OLD = subprocess.run(['git', 'show', f'{REF}:docs/index.html'], cwd=ROOT, capture_output=True, text=True, check=True).stdout
 NEW = open(os.path.join(ROOT, 'docs', 'index.html')).read()
 DEAL = "d => TRIVIELA.deal(d).flat().map(c => [c.id, TRIVIELA.choices(c, d)])"   # a day's cards and their choices
 def start(html): return datetime.date(*json.loads(re.search(r'START = (\[[^\]]+\])', html).group(1)))
 def one(html): m = re.search(r'var ONE = (true|false)', html); return bool(m) and m.group(1) == 'true'   # one fixed board (ONE_BOARD in build.py, Oct 28, 2026): every date plays #1
+def switch(html, name): m = re.search(r'\b' + name + r' = (\[[^\]]*\]|[\w.]+)', html); return m.group(1) if m else '?'
 def number(first, date, fixed=False): return 0 if fixed else max(0, (date - first).days)   # the puzzle a build shows on a date: before #1's date, #1 plays early
 fails = []
 def ok(cond, what):
@@ -55,8 +64,20 @@ async def play(pg, i, right):   # tile i, right or wrong, then Next
 async def main():
     async with async_playwright() as p:
         b = await p.chromium.launch()
+        # 0. what players have now, and the new build's switches
+        sha = subprocess.run(['git', 'rev-parse', '--short', REF], cwd=ROOT, capture_output=True, text=True).stdout.strip()
+        if '--no-live' not in sys.argv:
+            lc = await b.new_context(service_workers='block'); lp = await lc.new_page()
+            resp = await lp.goto('https://triviela.net/', wait_until='domcontentloaded')
+            live = re.sub(r'<script[^>]*static\.cloudflareinsights\.com/beacon[^>]*>\s*</script>\n?', '', await resp.text())   # Cloudflare's visit counter
+            ok(live == OLD, f'triviela.net serves {REF} ({sha}), the build this compares against'); await lc.close()
+        for name in ('DEMO', 'ONE', 'START', 'PER', 'PREROLL'):
+            a, z = switch(OLD, name), switch(NEW, name)
+            print(f'      {name}: {a}' + (f' -> {z}, CHANGED' if a != z else ', unchanged'))
+        ok(switch(NEW, 'DEMO') in ('0', '?') or '--demo' in sys.argv, 'the new build has the demo off (--demo if it is meant to go live)')
         # 1. the boards being played somewhere right now, date by date
         c1, o = await page(b, OLD); c2, n = await page(b, NEW)
+        ok(not o.errs and not n.errs, 'both builds load with no script errors ' + str(o.errs + n.errs))
         so, sn = await state(o), await state(n)
         today, fo, fn = datetime.datetime.now(ZoneInfo('America/Los_Angeles')).date(), start(OLD), start(NEW)
         oo, on = one(OLD), one(NEW)
@@ -65,13 +86,17 @@ async def main():
         board = lambda pg, k: pg.evaluate(f"({DEAL})({k})")
         print(f'-- {REF} (live) against docs/index.html, {today:%b %-d} in Seattle')
         same = so['day'] == sn['day'] and [(t['id'], t['ch']) for t in so['tiles']] == [(t['id'], t['ch']) for t in sn['tiles']]
-        ok(same or flip, f'today: a fresh board is the same #{sn["day"] + 1}, its cards and choices' if same else f'today: #{so["day"] + 1} becomes #{sn["day"] + 1}, by design')
+        fresh = so['v'] != sn['v']   # the save's version changes, so every phone starts the new boards fresh
+        def why(same, renumbered):   # a changed board is excused only when its number changes with ONE, or every phone starts fresh
+            return '' if same else ', by design (one fixed board moves the number)' if flip and renumbered else ', by design (the save changes, so every phone gets it fresh)' if fresh else ', under the same number while saved days keep the old one'
+        what = f'today: a fresh board is the same #{sn["day"] + 1}, its cards and choices' if same else f'today: #{so["day"] + 1} becomes #{sn["day"] + 1}' if so['day'] != sn['day'] else f'today: #{sn["day"] + 1} gets new cards or choices'
+        ok(same or (flip and so['day'] != sn['day']) or fresh, what + why(same, so['day'] != sn['day']))
         later = []
         for off in (-1, 1, 2, 3, 4, 5, 6, 7):
             date = today + datetime.timedelta(off); ko, kn = number(fo, date, oo), number(fn, date, on)
             same = ko == kn and await board(o, ko) == await board(n, kn)
             what = f'#{kn + 1}, the same cards and choices' if same else f'#{ko + 1} becomes #{kn + 1}' if ko != kn else f'#{kn + 1} gets new cards or choices'
-            if off < 2: ok(same or flip, f'{"yesterday" if off < 0 else "tomorrow"} somewhere ({date:%b %-d}): {what}' + ('' if same else ', by design'))
+            if off < 2: ok(same or (flip and ko != kn) or fresh, f'{"yesterday" if off < 0 else "tomorrow"} somewhere ({date:%b %-d}): {what}' + why(same, ko != kn))
             elif not same: later.append(f'{date:%b %-d}: {what}')
         print('      later dates that change: ' + ('. '.join(later) if later else 'none'))
         await c1.close(); await c2.close()
@@ -85,7 +110,8 @@ async def main():
             for i in range(N): await play(o, i, i % 4 != 0)
             saved = await storage(o); res = json.loads(saved['bsb-daily'])['res']; await c1.close()
             c2, n = await page(b, NEW, saved)
-            ok(await view(n) == 'end' and (await state(n))['res'] == res, f'#1 finished on its own day ({fo:%b %-d}) on the live build reopens today to its end screen, results unchanged')
+            if on: ok(await view(n) == 'end' and (await state(n))['res'] == res, f'#1 finished on its own day ({fo:%b %-d}) on the live build reopens today to its end screen, results unchanged')
+            else: ok(await view(n) == 'board' and (await state(n))['day'] == sn['day'], f'with one fixed board off, a phone that finished #1 on {fo:%b %-d} opens today on #{sn["day"] + 1}, fresh')
             ok(not n.errs, 'no script errors ' + str(n.errs)); await c2.close()
             await b.close(); print('all good' if not fails else f'{len(fails)} failed'); sys.exit(1 if fails else 0)
         # 2. a day in progress
