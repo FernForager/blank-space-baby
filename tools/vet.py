@@ -61,7 +61,7 @@ def view(did, deck, i, flags=''):
     return {'id': f'{did}:{i}', 'h': B.fingerprint(deck, i), 'deck': deck.get('deck', did), 'source': deck.get('primary', ''),
             'color': COLOR.get(it.get('d'), '?'), 'kind': it.get('k', 'word'), 'answer': it['w'], 'sentence': it['ex'],
             'means': it['means'], 'hook': it.get('hook', ''), 'src': it.get('src', ''),
-            'wrong_answers': B.wrong_pool(deck, it), 'notes': [x for x in (('women’s game' if it.get('women') or 'women' in flags else ''),
+            'wrong_answers': B.wrong_pool(deck, it), 'notes': [x for x in ((f'number answer: the game makes up its two wrong answers, {B.near_rule(it)} (the list above is only the fallback), so the fact must be exact, since a near miss can’t be a second right answer' if B.near_rule(it) else ''), ('women’s game' if it.get('women') or 'women' in flags else ''),
             ('slang deck: no proper names' if 'slang' in flags else ''), ('can go stale: check it is still true today' if it.get('current') else '')) if x]}
 
 def todo(who, deck_id=None, limit=None, as_json=False):

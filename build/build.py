@@ -159,6 +159,25 @@ def card_hash(it, pool):
 def fingerprint(deck, i, clash=None):
     return card_hash(deck['items'][i], wrong_pool(deck, deck['items'][i], clash))
 
+# ---- near misses: the same rules as near2() in template.html, in words, so a reviewer sees what a number card draws ----
+HEDGE = re.compile(r'\b(more than|at least|nearly|almost|about|around|roughly|some|up to|over|under)\s+$', re.I)
+SPELLED = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve', 'thirteen', 'fourteen',
+           'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen', 'twenty']
+def near_rule(it):
+    """How the page makes up a number card's two wrong answers (near2 in template.html), in words, or None for a card that draws
+    them from its deck: a card with its own wr, a word answer, or a number right after a hedge (more than, about). The deck's
+    pool is still the fallback when the page can't make two near misses, so wrong_pool matters for these cards too."""
+    w = str(it['w']); sp = SPELLED.index(w) if w in SPELLED else -1
+    if it.get('wr') or (sp < 2 and not re.fullmatch(r'\d[\d,]*', w)): return None
+    at = it['ex'].find(w)
+    if at >= 0 and HEDGE.search(it['ex'][:at]): return None
+    a = sp if sp >= 2 else int(w.replace(',', ''))
+    year = sp < 2 and ('year' in it.get('k', 'word') or (re.fullmatch(r'\d{4}', w) and 1850 < a < 2100))
+    if sp >= 2: return 'two spelled counts 1 to 3 off, never above twenty'
+    if year: return 'two years ' + ('4 or 8' if re.search(r'World Cup|Euro\b|Olympic', it['ex']) else '1 to 10') + ' off, never past the puzzle’s own year unless the answer is'
+    if a <= 12: return 'two counts 1 to 3 off'
+    return 'two numbers 10 to 35 percent off, at the answer’s own roundness'
+
 def mark_hash(it):
     """The fingerprint Morg's flags and locks hold to: the card's own fields alone (what a player sees, its kind, and his own
     wrong answers with their meanings), never the wrong answers its deck-mates lend it. A reviewer's verdict covers those
