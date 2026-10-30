@@ -46,16 +46,12 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 .cab.poweron .marquee.dm canvas { animation: power .6s steps(6); }
 .sr { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .marquee.dm .menu-b { right: 4px; z-index: 1; background: radial-gradient(closest-side, rgba(7,19,12,.95), rgba(7,19,12,.8) 70%, transparent); border-radius: 50%; }
-.marquee h1.neon { font-family: 'Yellowtail', cursive; font-size: 40px; line-height: 1; letter-spacing: 0; padding: 0 30px 4px; color: #FFE6F7;
-  text-shadow: 0 0 2px #fff, 0 0 7px #FF5FD2, 0 0 16px #FF2FC0, 0 0 30px rgba(255,47,192,.65), 0 0 48px rgba(255,47,192,.35); }   /* the name in pink neon (Morg, Oct 18, 2026) */
 .menu-b { position: absolute; right: 8px; top: 50%; transform: translateY(-50%); width: 36px; height: 36px; padding: 0; border: 0; background: none; color: var(--dim); opacity: .6; cursor: pointer; display: flex; align-items: center; justify-content: center; }
 .menu-b[hidden] { display: none; }   /* the menu shows only when it has something in it: the demo's Start over (How to play went on Oct 28, 2026) */
 .menu-b:focus-visible { outline: 3px solid var(--glow); outline-offset: 2px; }
 .menu-box { display: flex; flex-direction: column; gap: 12px; }
 .menu-box .key { min-height: 50px; }
 .menu-box .key[hidden] { display: none; }
-.marquee h1.cta { font-family: 'Yellowtail', cursive; font-size: 27px; line-height: 1.02; letter-spacing: 0; white-space: normal; padding: 0 26px 2px;
-  text-shadow: 0 0 3px rgba(255,255,255,.9), 0 0 9px var(--glow), 0 0 18px rgba(92,240,154,.6), 0 0 30px rgba(92,240,154,.35); }
 .ask-pop { position: fixed; inset: 0; z-index: 20; display: flex; align-items: center; justify-content: center; padding: 24px; background: rgba(5,10,7,.72); }
 .ask-pop[hidden] { display: none; }
 .ask-box { width: 100%; max-width: 320px; box-sizing: border-box; padding: 20px 16px 18px; border-radius: 18px; background: var(--bezel); box-shadow: inset 0 0 0 3px #000, 0 0 0 3px var(--body-dark), 0 10px 30px rgba(0,0,0,.5); text-align: center; }
@@ -646,7 +642,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   // the sentence with its answer swapped for a blank (or filled in), glued to its punctuation so they never split
   function sentence(it, fill) {
     var glue = new RegExp('(^|[^A-Za-z0-9])((?:&quot;|“)?)(' + quote(esc(it.w)).replace(/ /g, '[ \\u00a0]') + ')(?![A-Za-z0-9])((?:[:,.!?…\'’”]|&quot;)*)', 'i');   // orph() may have glued the answer's last two words
-    return num(keep(orph(esc(it.ex)).replace(glue, '$1<span class="nb">$2' + (fill ? '<span class="fill">$3</span>' : '<span class="blank" aria-label="' + esc(tx('play.blank')) + '"></span>') + '$4</span>')));
+    return num(keep(orph(esc(it.ex)).replace(glue, '$1<span class="nb">$2' + (fill ? '<span class="fill">$3</span>' : '<span class="blank" role="img" aria-label="' + esc(tx('play.blank')) + '"></span>') + '$4</span>')));
   }
   var size = function (it) { var n = it.ex.length; return 'sentence' + (n > 70 ? ' longer' : n > 52 ? ' long' : ''); };
   var $ = function (id) { return document.getElementById(id); };
@@ -718,7 +714,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
   // as late as the deck allows, and never within 3 months once each color has about 300 cards.
   // Guardrails: at least one women's game card and one rules card, at most 2 from one league,
   // at most one slang card in all (Kid Slang or Parent Slang) and never a red one.
-  var PER = __PER__, WINDOW = 24, LEAGUE_MAX = 2;   // 3 of each color (Morg, Oct 27, 2026: nine cards a day, was five of each), so 2 from one league at most, as 3 was of 15
+  var PER = __PER__, WINDOW = __WINDOW__, LEAGUE_MAX = __LEAGUE_MAX__;   // all three from build.py (the audit). 3 of each color (Morg, Oct 27, 2026: nine cards a day, was five of each), so 2 from one league at most, as 3 was of 15
   function fits(c, got) {
     var lg = 0;
     for (var i = 0; i < got.length; i++) {
@@ -893,7 +889,11 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 
   // ---- the board ----
   var cab = $('cab');
-  function view(v) { cab.dataset.v = v; flick(); guard(); if (v === 'board') tighten($('p-board')); }   // fit measures, so only once the board shows
+  function view(v) {
+    cab.dataset.v = v; flick(); guard(); if (v === 'board') tighten($('p-board'));   // fit measures, so only once the board shows
+    var f = $({ play: 'q', board: 'p-board', end: 'v-end' }[v] || '');   // a screen reader follows the screen: the card, the board, the end (the audit: focus used to stay on the tapped tile)
+    if (f) { f.tabIndex = -1; try { f.focus({ preventScroll: true }); } catch (e) {} }
+  }
   function flick() { var s = $('flip'); s.classList.remove('flick'); void s.offsetWidth; s.classList.add('flick'); }
   function go(icon, id, spoken) {   // the panel's bottom key: Back before an answer, Next after it, or nothing
     var g = $('go'), label = tx(id), back = icon === 'back';
@@ -1144,7 +1144,8 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     var o = order(); if (k >= o.length) return end();
     REV = k; var i = o[k], T = S.tiles[i], ok = S.res[i] === 1, more = k + 1 < o.length;
     $('v-end').className = 'view review';
-    $('v-end').innerHTML = '<div class="rv"><p class="rv-top">' + rcard(T.d) + mark(S.res[i], 18) +
+    var said = tx(ok ? 'tile.right' : 'tile.missed', { label: tx('review.count', { i: k + 1, all: o.length }) });   // spoken: “3 of 9, right” in the tiles' own words (the audit)
+    $('v-end').innerHTML = '<div class="rv"><p class="sr">' + esc(said) + '</p><p class="rv-top" aria-hidden="true">' + rcard(T.d) + mark(S.res[i], 18) +
       '<span data-tid="review.count"' + tv({ i: k + 1, all: o.length }) + '>' + th('review.count', { i: k + 1, all: o.length }) + '</span></p>' +
       '<div class="rv-face"><p class="' + size(T) + (ok ? '' : ' missed') + '">' + sentence(T, true) + '</p><p class="means">' + num(keep(orph(esc(T.m)))) + '</p></div></div>';
     $('p-end').classList.add('rv-on'); $('r-prev').disabled = k === 0; $('r-next').disabled = !more;

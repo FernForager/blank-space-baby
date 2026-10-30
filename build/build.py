@@ -64,7 +64,8 @@ ONE_BOARD = True          # one fixed board until the game is tidy (Morg, Oct 28
                           # boards.json can pin #1's nine cards once Morg and Trivelle write them. False for the daily, one board a day
 PER = 3                   # cards of each color a day (Morg, Oct 27, 2026: nine a day, three per color, was five): PER in template.html
 REPEAT_DAYS = 91          # a card never comes back within 3 months, once there are enough cards
-WINDOW = 24               # the draw deals from a shuffle of each color's 24 oldest cards (WINDOW in template.html)
+WINDOW = 24               # the draw deals from a shuffle of each color's 24 oldest cards (passed to the page as WINDOW)
+LEAGUE_MAX = 2            # at most this many cards a day from one league, Basics included (passed to the page: 2 since nine cards, Oct 27, 2026, 3 of 15 before)
 
 def rx(w):
     return re.compile(r'(^|[^A-Za-z0-9])(' + re.escape(w) + r')(?![A-Za-z0-9])', re.I)
@@ -300,7 +301,7 @@ def main(test_copy=None):
     tpl = tpl.replace('__TEXTMETA__', json.dumps(pm, ensure_ascii=False).replace('</', '<\\/')).replace('__SLOTS__', json.dumps(ps, ensure_ascii=False))
     tpl = tpl.replace('__PIN__', json.dumps(pins))
     tpl = tpl.replace('__TEXT__', json.dumps(text, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/'))
-    tpl = tpl.replace('__DECKS__', json.dumps(decks, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')).replace('__START__', json.dumps(START)).replace('__DEMO__', str(DEMO_DAYS)).replace('__PER__', str(PER)).replace('__ONE__', 'true' if ONE_BOARD else 'false')
+    tpl = tpl.replace('__DECKS__', json.dumps(decks, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')).replace('__WINDOW__', str(WINDOW)).replace('__LEAGUE_MAX__', str(LEAGUE_MAX)).replace('__START__', json.dumps(START)).replace('__DEMO__', str(DEMO_DAYS)).replace('__PER__', str(PER)).replace('__ONE__', 'true' if ONE_BOARD else 'false')
     top, body = tpl.split('<style>', 1)              # title + font links move into <head>
     top = '\n'.join(l for l in top.splitlines() if 'claude:' not in l)
     head = strings.fill_head(open(os.path.join(HERE, 'head.html')).read().replace('</head>', top.strip() + '\n</head>'), text)

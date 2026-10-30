@@ -158,13 +158,18 @@ async def main():
                 async def setday(res, path):   # a saved day: each tile's result and the tap order
                     await pg.evaluate("([res, path]) => { const s = JSON.parse(localStorage.getItem('bsb-daily')); s.res = res; s.path = path; s.open = -1; localStorage.setItem('bsb-daily', JSON.stringify(s)); }", [res, path])
                     await pg.goto(base); await pg.wait_for_timeout(1200)   # without ?reset, which would clear it
+                async def longest():   # tile 0 carries the draw's longest sentence and the last tile one over 52 characters (shown in the review's last card), so the smaller sentence sizes are measured too (the audit)
+                    await pg.evaluate("""([a, b]) => { const s = JSON.parse(localStorage.getItem('bsb-daily')), all = TRIVIELA.ALL.slice().sort((x, y) => y.ex.length - x.ex.length);
+                        const put = (i, c) => { s.tiles[i] = { id: c.id, h: c.fp, lk: c.lk, d: s.tiles[i].d, hook: c.hook, w: c.w, m: c.m, ex: c.ex, ch: TRIVIELA.choices(c, s.day) }; };
+                        put(a, all[0]); put(b, all.find(c => c.ex.length > 52 && c.ex.length <= 70)); localStorage.setItem('bsb-daily', JSON.stringify(s)); }""", [0, N - 1])
+                    await pg.goto(base); await pg.wait_for_timeout(1200)
                 base = 'http://bsb.test/' + ('' if demo else '?day=365')
                 url = 'http://bsb.test/' + ('?reset' if demo else '?day=365&reset')
                 if one:   # one fixed board: only its end differs
                     await pg.goto(url); await pg.wait_for_timeout(1200)
                     await setday(([1, 2] * N)[:N], list(range(N))); await look('end, one fixed board')
                 elif not demo:
-                    await pg.goto(url); await pg.wait_for_timeout(1500); await look('board')   # no How to play since Oct 28, 2026, and no menu outside the demo
+                    await pg.goto(url); await pg.wait_for_timeout(1500); await longest(); await look('board')   # no How to play since Oct 28, 2026, and no menu outside the demo
                     await pg.click('[data-i="0"]'); await pg.wait_for_timeout(450); await look('card')
                     w = await pg.evaluate("document.getElementById('q').dataset.w"); await pg.click(f'.choice[data-w="{w}"]'); await pg.wait_for_timeout(450)
                     await look('answered')
