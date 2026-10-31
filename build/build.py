@@ -203,7 +203,7 @@ def standing(cid, it, h, verdicts, marks):
     return 'pending'
 
 def tile_tag(cat):
-    """The string a category shows on its tiles, without its tag. prefix: what the page's TAG and a card's own tag hold."""
+    """The tag.* string id a category shows on its tiles, less its tag. prefix: what the page’s TAG and a card’s own tag hold."""
     return CATEGORY[cat]['tag'].removeprefix('tag.') if cat in CATEGORY else cat
 
 def tag_js():
