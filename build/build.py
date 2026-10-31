@@ -34,6 +34,7 @@ CATEGORY = {c['id']: c for c in CATS['categories']}
 DECK_CAT = {d['id']: d['category'] for d in CATS['decks']}   # each deck's own category, shown on its tiles
 DAILY = [(d['id'], d.get('league', ''), ' '.join(d.get('flags', []))) for d in CATS['decks']]
 FLAGS = ('women', 'rules', 'slang')
+WRONG = os.path.join(LIBRARY, 'wrong.json')   # the wrong answers, as their own sets (Morg, Oct 31, 2026: "all wrong answers are a separate database")
 SITE_LEAGUE = {'premierleague.com': 'epl', 'laliga.com': 'laliga', 'bundesliga.com': 'bundesliga', 'legaseriea.it': 'seriea',
                'ligue1.com': 'ligue1', 'ligamx.net': 'ligamx', 'mlssoccer.com': 'mls', 'nwslsoccer.com': 'nwsl'}
 VET = os.path.join(HERE, 'vetting')
@@ -108,9 +109,9 @@ def item_problems(level, items, clash, it, hooks=True):
         elif any(shown(x, it) for x in ws): bad.append(tag + ('a wrong answer in wr is already in the sentence or on the tile', ws))
         for x in ws:
             if ';' in x or re.search(r"['\"]", x) or len(x) > 22: bad.append(tag + ('a wrong answer in wr breaks the house style (no semicolons, curly quotes only, 22 characters at most)', x))
-    same = [x for x in items if x is not it and not x.get('out') and x.get('k', 'word') == it['k'] and not clash(x['w'], w)]   # cut cards are never offered
-    if not it.get('out') and len(it.get('wr') or []) < 2 and not any(not clash(x['w'], y['w']) for x in same for y in same if x is not y):   # Morg's own two wrong answers (wr) need no kind to draw from
-        bad.append(tag + ('not enough same-kind wrong answers',))
+    same = [e['w'] for e in set_entries(level, items, set_id(level, it)) if e['live'] and not clash(e['w'], w)]   # an answer whose card is out is never offered
+    if not it.get('out') and len(it.get('wr') or []) < 2 and not any(not clash(a, b) for x, a in enumerate(same) for y, b in enumerate(same) if x != y):   # Morg's own two wrong answers (wr) need no set to draw from
+        bad.append(tag + (f'not enough wrong answers in its set {set_id(level, it)} (build/library/wrong.json): it needs two that could never fill each other’s blank',))
     return bad
 
 def check(level, deck, hooks=False):
@@ -126,26 +127,118 @@ def shown(w, it):
     """Is the answer w already in this card's sentence (its own answer left out) or hook? Then it can't be one of its wrong answers."""
     return plain(w) in plain(it['ex']).replace(plain(it['w']), ' ', 1) + plain(it.get('hook') or '')
 
-def wrong_pool(deck, it, clash=None):
-    """The answers the game may put on this card's other two buttons: from its deck, not out, not clashing with its answer
-    and not already in its sentence or on its tile. Same kind first, and any kind when the same kind has fewer than two."""
-    if it.get('wr'): return [x if isinstance(x, str) else x['w'] for x in it['wr']]   # Morg's own two wrong answers, and only those
+# ---- the wrong answers, as their own sets (build/library/wrong.json, Morg, Oct 31, 2026) ----
+# Each set has an id, <deck>/<kind>, a name, a note and its entries: {w, from: "<deck>:<i>"}, an answer borrowed from a card of
+# the set's deck, its meaning line that card's means (so a reworded card never leaves a stale copy), or {w, m}, a wrong answer
+# with a meaning of its own. A card draws from the set its k names in its deck. An answer joins a set only when Morg or the
+# desk adds it: a new card never joins one by itself, and a card going out stays in every set it's in. A borrowed entry shows
+# only while its card plays, since its meaning line is that card's and only vetted wording reaches players. Seeded on Oct 31,
+# 2026 from the kinds as they were (every answer of each kind's cards not out), so no fingerprint or choice moved.
+def load_sets(path=WRONG):
+    return load_json(path, {'sets': []})
+
+SETS = None   # the sets as loaded (wrong_sets() below), or as a tool set them for a trial
+def wrong_sets():
+    global SETS
+    if SETS is None: SETS = load_sets()
+    return SETS
+
+def save_sets(data, path=WRONG):
+    """One entry a line, so two branches that touch different sets merge cleanly."""
+    global SETS
+    out = ['{', ' "@note": ' + json.dumps(data.get('@note', ''), ensure_ascii=False) + ',', ' "sets": [']
+    for n, st in enumerate(data['sets']):
+        head = json.dumps({k: st[k] for k in st if k != 'entries'}, ensure_ascii=False)[:-1]
+        rows = [json.dumps(e, ensure_ascii=False) for e in st.get('entries', [])]
+        out.append('  ' + head + ', "entries": [' + ('\n   ' + ',\n   '.join(rows) + '\n  ' if rows else '') + ']}' + (',' if n < len(data['sets']) - 1 else ''))
+    open(path, 'w').write('\n'.join(out + [' ]', '}']) + '\n')
+    SETS = data
+
+def set_id(did, it):
+    """The set a card draws its wrong answers from: its kind (k) in its deck."""
+    return f"{did}/{it.get('k', 'word')}"
+
+def set_entries(did, items, sid=None, sets=None):
+    """The entries of a deck's sets (or of the one set sid), each as {sid, w, m, i, live}: m is None and i the card's place
+    for an entry borrowed from a card, whose answer it reads from the card as it is now, and live says whether it can show
+    (its card isn't out). Unknown cards are skipped here and refused by wrong_problems(). sets: a trial copy of the sets
+    (a tool weighing a change), or None for the file's."""
+    out = []
+    for st in (sets or wrong_sets())['sets']:
+        if not st['id'].startswith(did + '/') or (sid and st['id'] != sid): continue
+        for e in st.get('entries', []):
+            if 'from' in e:
+                d, _, i = str(e['from']).partition(':')
+                if d != did or not i.isdigit() or int(i) >= len(items): continue
+                c = items[int(i)]
+                out.append({'sid': st['id'], 'w': c['w'], 'm': None, 'i': int(i), 'live': not c.get('out')})
+            else: out.append({'sid': st['id'], 'w': e.get('w', ''), 'm': e.get('m', ''), 'i': None, 'live': True})
+    return out
+
+def draws(did, deck, it, clash=None, sets=None):
+    """The wrong answers the game may put on this card's other two buttons, as (answer, own meaning or None): from its set,
+    never clashing with its answer and never already in its sentence or on its tile. When its set has fewer than two that
+    can show, the deck's other sets fill in, as the page's choices() does."""
+    if it.get('wr'): return [(x if isinstance(x, str) else x['w'], None) for x in it['wr']]   # Morg's own two wrong answers, and only those
     clash = clash or clasher(deck)
-    ok = lambda x: not x.get('out') and not clash(x['w'], it['w']) and not shown(x['w'], it)
-    same = list(dict.fromkeys(x['w'] for x in deck['items'] if x.get('k', 'word') == it.get('k', 'word') and ok(x)))
-    if len(same) >= 2: return same
-    return same + list(dict.fromkeys(x['w'] for x in deck['items'] if x.get('k', 'word') != it.get('k', 'word') and ok(x) and x['w'] not in same))
+    mine, every = set_id(did, it), [e for e in set_entries(did, deck['items'], sets=sets) if not clash(e['w'], it['w']) and not shown(e['w'], it)]
+    same = [e for e in every if e['sid'] == mine]
+    if len({e['w'] for e in same if e['live']}) < 2: same += [e for e in every if e['sid'] != mine]
+    out = {}
+    for e in same: out.setdefault(e['w'], set()).add(e['m'])
+    return [(w, m) for w, ms in out.items() for m in sorted(ms, key=lambda m: (m is not None, m or ''))]
+
+def wrong_pool(did, deck, it, clash=None, sets=None):
+    """The answers this card can be offered as wrong (draws() above), what its reviewers see."""
+    return list(dict.fromkeys(w for w, _ in draws(did, deck, it, clash, sets)))
+
+def wrong_problems(data=None):
+    """What's wrong with the sets: an id that names no deck, a set listed twice or with an answer twice, an entry borrowed
+    from no card, from another deck's card or with another answer than its card has now, and any house-style slip in a
+    wrong answer or meaning of its own (no semicolons, curly quotes only, 22 characters for an answer, 40 for a meaning)."""
+    bad, seen = [], set()
+    data = data or wrong_sets()
+    if not isinstance(data.get('sets'), list): return ['build/library/wrong.json needs a list of sets']
+    for st in data['sets']:
+        sid = str(st.get('id', ''))
+        did, _, k = sid.partition('/')
+        if did not in DECK_CAT or not k: bad.append(f'set {sid!r}: an id is <deck>/<kind>, with a deck on the library’s list'); continue
+        if sid in seen: bad.append(f'set {sid}: listed twice')
+        seen.add(sid)
+        if not str(st.get('name', '')).strip() or not isinstance(st.get('note', ''), str): bad.append(f'set {sid}: it needs a name, and its note is text')
+        if set(st) - {'id', 'name', 'note', 'entries'} or not isinstance(st.get('entries'), list): bad.append(f'set {sid}: id, name, note and a list of entries only'); continue
+        items, answers = json.load(open(os.path.join(DECKS, did + '.json')))['items'], set()
+        for e in st['entries']:
+            w = e.get('w') if isinstance(e, dict) else None
+            if not isinstance(w, str) or not w or set(e) - {'w', 'from', 'm'} or ('from' in e) == ('m' in e):
+                bad.append(f'set {sid}: {e!r}: an entry is {{w, from}} or {{w, m}}'); continue
+            if 'from' in e:
+                d, _, i = str(e['from']).partition(':')
+                if d != did or not i.isdigit() or int(i) >= len(items): bad.append(f'set {sid}: {w} borrows from {e["from"]}, not a card of {did}')
+                elif items[int(i)]['w'] != w: bad.append(f'set {sid}: {w} borrows from {e["from"]}, whose answer is now {items[int(i)]["w"]}: update the entry')
+            else:
+                m = e['m']
+                if not isinstance(m, str) or len(m) > 40: bad.append(f'set {sid}: {w}: its meaning is text, 40 characters at most')
+                for x in (w, m if isinstance(m, str) else ''):
+                    if ';' in x or re.search(r"['\"]", x): bad.append(f'set {sid}: {x!r}: no semicolons, curly quotes only')
+                if len(w) > 22: bad.append(f'set {sid}: {w}: an answer is 22 characters at most')
+            if plain(w) in answers: bad.append(f'set {sid}: {w} is in it twice')
+            answers.add(plain(w))
+    return bad
 
 # ---- vetting ----
 HASHED = ('w', 'ex', 'means', 'hook', 'd', 'k')   # what a player sees of a card, and the kind that picks its wrong answers
-def card_hash(it, pool):
+def card_hash(it, pool, own=()):
     """A short fingerprint of a card and the wrong answers it can draw. A verdict or a lock holds only while the card still
-    has the fingerprint it was given for, so a change to the card, or to the answers it can be offered, sends it back."""
+    has the fingerprint it was given for, so a change to the card, or to the answers it can be offered, sends it back.
+    own: the [answer, meaning] pairs of set entries with a meaning of their own, which show after a wrong pick, so they
+    count too (a borrowed meaning is its card's means, which that card's own fingerprint covers)."""
     wm = [x.get('m', '') for x in it.get('wr') or [] if isinstance(x, dict)]   # a wrong answer's own meaning shows after a wrong pick, so it counts too
-    return hashlib.sha1(json.dumps([it.get(k, 'word' if k == 'k' else None) for k in HASHED] + [sorted(pool)] + ([wm] if wm else []), ensure_ascii=False).encode()).hexdigest()[:10]
+    return hashlib.sha1(json.dumps([it.get(k, 'word' if k == 'k' else None) for k in HASHED] + [sorted(pool)] + ([wm] if wm else []) + ([sorted(own)] if own else []), ensure_ascii=False).encode()).hexdigest()[:10]
 
-def fingerprint(deck, i, clash=None):
-    return card_hash(deck['items'][i], wrong_pool(deck, deck['items'][i], clash))
+def fingerprint(did, deck, i, clash=None, sets=None):
+    d = draws(did, deck, deck['items'][i], clash, sets)
+    return card_hash(deck['items'][i], list(dict.fromkeys(w for w, _ in d)), [[w, m] for w, m in d if m is not None])
 
 # ---- near misses: the same rules as near2() in template.html, in words, so a reviewer sees what a number card draws ----
 HEDGE = re.compile(r'\b(more than|at least|nearly|almost|about|around|roughly|some|up to|over|under)\s+$', re.I)
@@ -268,7 +361,10 @@ def main(test_copy=None):
     bad = category_problems(text)
     if bad:
         print('\nProblems with build/library/categories.json:'); [print('  ', b) for b in bad]; sys.exit(1)
-    decks, problems, tiers = [], [], [0, 0, 0]
+    bad = wrong_problems()
+    if bad:
+        print('\nProblems with build/library/wrong.json:'); [print('  ', b) for b in bad]; sys.exit(1)
+    decks, problems, tiers, wrong = [], [], [0, 0, 0], {}
     verdicts, marks = vetting()
     stand = {}
     for did, lg, flags in DAILY:
@@ -277,7 +373,7 @@ def main(test_copy=None):
         problems += check(did, deck, hooks=True)
         items, clash = [], clasher(deck)
         for i, it in enumerate(deck['items']):
-            cid, h = f'{did}:{i}', fingerprint(deck, i, clash)
+            cid, h = f'{did}:{i}', fingerprint(did, deck, i, clash)
             st = stand[cid] = standing(cid, it, h, verdicts, marks)
             m = marks.get(cid)
             if st == 'locked' and m['h'] != mark_hash(it): problems.append((did, it['w'], 'locked by Morg but changed since: undo the change or ask him to unlock it'))
@@ -290,6 +386,9 @@ def main(test_copy=None):
             if it.get('women'): x['wm'] = 1
             items.append(x)
             if it.get('d') in (1, 2, 3) and not ('slang' in flags and it['d'] == 3): tiers[it['d'] - 1] += 1
+        plays = {x['i'] for x in items}   # a borrowed wrong answer shows only while its card plays: [kind, its card's place], or [kind, answer, meaning] of its own
+        es = sorted((e for e in set_entries(did, deck['items']) if e['i'] is None or e['i'] in plays), key=lambda e: (e['i'] is None, e['i'] or 0))   # in the cards' order, as the page drew them before the sets
+        wrong[did] = [[e['sid'].partition('/')[2], e['i']] if e['i'] is not None else [e['sid'].partition('/')[2], e['w'], e['m']] for e in es]
         decks.append({'id': did, 'lg': '' if lg == '*' else lg, 'wm': int('women' in flags), 'rl': int('rules' in flags),
                       'sl': int('slang' in flags), 'groups': deck.get('groups', []), 'items': items})
         print(f'{did}: {len(items)} cards')
@@ -310,6 +409,7 @@ def main(test_copy=None):
     elif LOOP: print(f'The daily runs, and every day replays board #{LOOP}, its cards and choices (LOOP in build.py, 0 for the daily’s own boards).')
     pins = pinned(decks)
     tpl = open(os.path.join(HERE, 'template.html')).read()
+    if 'var WRONG = __WRONG__;' not in tpl: sys.exit('build/template.html must take its wrong answers from the build (var WRONG = __WRONG__;): the sets live in build/library/wrong.json')
     if 'var TAG = __TAG__;' not in tpl: sys.exit('build/template.html must take its TAG from the build (var TAG = __TAG__;): the categories live in build/library/categories.json')
     tpl = tpl.replace('__TAG__', tag_js())   # each deck's tile category, from the library's list, so a deck can't show a blank one
     slots = strings.load_slots()   # every place text appears: build/text/slots.json
@@ -322,7 +422,7 @@ def main(test_copy=None):
     tpl = tpl.replace('/*__TYPE__*/', strings.slot_css(slots)).replace('__FIT__', json.dumps(strings.slot_fit(slots)))
     pm, ps = strings.page_meta(meta, slots)
     tpl = tpl.replace('__TEXTMETA__', json.dumps(pm, ensure_ascii=False).replace('</', '<\\/')).replace('__SLOTS__', json.dumps(ps, ensure_ascii=False))
-    tpl = tpl.replace('__PIN__', json.dumps(pins))
+    tpl = tpl.replace('__PIN__', json.dumps(pins)).replace('__WRONG__', json.dumps(wrong, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/'))
     tpl = tpl.replace('__TEXT__', json.dumps(text, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/'))
     tpl = tpl.replace('__DECKS__', json.dumps(decks, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')).replace('__WINDOW__', str(WINDOW)).replace('__LEAGUE_MAX__', str(LEAGUE_MAX)).replace('__START__', json.dumps(START)).replace('__DEMO__', str(DEMO_DAYS)).replace('__PER__', str(PER)).replace('__ONE__', 'true' if ONE_BOARD else 'false').replace('__LOOP__', str(int(LOOP)))
     top, body = tpl.split('<style>', 1)              # title + font links move into <head>

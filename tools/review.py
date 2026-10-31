@@ -38,7 +38,7 @@ if __name__ == '__main__':
         out = sys.argv[2]; os.makedirs(out, exist_ok=True); n = 0
         for order, (did, name) in enumerate(DECKS):
             d = json.load(open(os.path.join(ROOT, 'build', 'decks', did + '.json')))
-            q = {'title': name, 'order': order + 1, 'seconds': 15, 'items': [hub_item(i, x, wrongs(d, x)) for i, x in enumerate(d['items'])]}
+            q = {'title': name, 'order': order + 1, 'seconds': 15, 'items': [hub_item(i, x, wrongs(did, d, x)) for i, x in enumerate(d['items'])]}
             body = json.dumps(q, ensure_ascii=False)
             assert len(body.encode()) < 250_000, (did, len(body.encode()), 'too big for one hub document')
             open(os.path.join(out, did + '.json'), 'w').write(body); n += len(q['items'])
@@ -48,7 +48,7 @@ if __name__ == '__main__':
         for did, name in DECKS:
             d = json.load(open(os.path.join(ROOT, 'build', 'decks', did + '.json')))
             data.append({'id': did, 'name': name, 'cards': [[x['w'], x['ex'], x['means'], x.get('k', 'word'), x.get('d', 0), 1 if x.get('current') else 0, x['src'],
-                                                             x.get('hook', ''), wrongs(d, x)] for x in d['items']]})
+                                                             x.get('hook', ''), wrongs(did, d, x)] for x in d['items']]})
         page = open(os.path.join(ROOT, 'tools', 'review.html')).read().replace('__DATA__', json.dumps(data, ensure_ascii=False).replace('</', '<\\/'))
         open(sys.argv[1], 'w').write(page)
         print('wrote', sys.argv[1], sum(len(x['cards']) for x in data), 'cards')

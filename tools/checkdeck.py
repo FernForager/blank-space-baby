@@ -12,7 +12,7 @@ from build import check
 path = sys.argv[1]
 deck = json.load(open(path))
 items = deck['items']
-bad = [p for p in check(os.path.basename(path), deck, hooks=True)]
+bad = [p for p in check(os.path.basename(path).removesuffix('.json'), deck, hooks=True)]   # the deck id names its sets of wrong answers
 kinds = collections.Counter(it.get('k', 'word') for it in items)
 for k, n in kinds.items():
     if n < 4: bad.append((k, 'kind has fewer than 4 items', n))

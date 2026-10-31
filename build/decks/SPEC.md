@@ -13,7 +13,7 @@ Write a JSON file (path given in your task) shaped exactly like:
 - `w`: the answer exactly as it appears on the button and in the sentence. Short (ideally ≤ 16 characters, hard max 20).
 - `means`: the line shown after answering. Our own words, never copied. Sentence case, no end period, ideally ≤ 32 characters, hard max 40. For slang: a short definition. For trivia: a short extra fact or a crisp restatement that teaches something (e.g. "Her 2014 album, named for her birth year").
 - `ex`: the sentence. Must contain `w` exactly once (case-insensitive, as a whole word/phrase, not inside another word). Must not contain any other wording that gives the answer away. ≤ 70 characters ideally, hard max 85.
-- `k`: kind tag. The two wrong buttons are drawn ONLY from items with the same `k`. So within one `k`, every other item's `w` must be clearly WRONG in every sentence of that `k`. Every `k` needs at least 4 items (6+ is better). For slang decks use parts of speech or meaning families as needed. If one tag works, use "word".
+- `k`: kind tag. It names the card's set of wrong answers, `<deck>/<k>` in `build/library/wrong.json` (Oct 31, 2026), and the two wrong buttons are drawn ONLY from that set. So within one set, every answer must be clearly WRONG in every sentence of the cards that draw from it. Every set needs at least 4 answers that can show (6+ is better). A new card never joins a set by itself: when its answer should turn up as a wrong answer on the set's cards, add it to the set as `{"w": …, "from": "<deck>:<i>"}`, which sends those cards back to the reviewers. For slang decks use parts of speech or meaning families as needed. If one tag works, use "word".
 - `src`: the URL of the page that supports this item (dictionary entry, official page, etc.).
 - `groups`: lists of answers that could plausibly fill each other's blanks (synonyms, near-synonyms). Two answers in one group never appear on the same card. Be generous.
 - `cut`: things you considered and dropped, with a few words on why (not in source, borderline, stale, ambiguous).
@@ -56,6 +56,6 @@ Every card also needs these fields:
   - 1, easy (a green tile, white until Oct 28, 2026): a 10-year-old player and a brand-new soccer parent would both very likely get it right. True basics: rules every young player learns, field words, the most famous names anyone has heard of (Messi, the World Cup, Real Madrid). If you have to follow a league, a club or a national team to know it, it isn’t easy.
   - 2, medium (a yellow card): a regular fan, or a player who watches some games, likely gets it. A beginner might or might not.
   - 3, hard (a red card): a real fan knows it. Deep but gettable (Laws nuance, tactics, history across eras, the women’s game in depth, club lore), never obscure trivia.
-  - Judge the card as it’s played: the answer shows up next to two wrong answers of the same kind (`k`) from the same deck.
+  - Judge the card as it’s played: the answer shows up next to two wrong answers from its set (its `k` in its deck, `build/library/wrong.json`).
   - Slang: easy means kids and parents both know it. Known mostly by one side of the family is medium.
 - `women`: `true` on a card about the women’s game (a women’s player, team, coach, league or competition), in any deck except NWSL and International Women’s, where every card counts already.

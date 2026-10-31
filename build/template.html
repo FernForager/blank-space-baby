@@ -483,6 +483,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
 <div class="bimg" id="bimg" hidden><img id="bimg-i" data-t-alt="image.alt"><button class="key" id="bimg-x" type="button" data-t="image.close"></button></div>
 <script>
 (function () {
+  var WRONG = __WRONG__;   // each deck's wrong answers, from the sets in build/library/wrong.json: [kind, a card's place] borrows that card's answer and means, [kind, answer, meaning] has its own
   var DECKS = __DECKS__, START = __START__, DEMO = __DEMO__;   // DEMO: the playtest plays boards #1 to #DEMO back to back (DEMO_DAYS in build.py, 0 for the real daily)
   var ONE = __ONE__;   // one fixed board until the game is tidy (Morg, Oct 28, 2026): every date plays #1, and the countdown hides (ONE_BOARD in build.py)
   var LOOP = __LOOP__;   // the daily runs, numbers, midnight and all, but every day replays this board's cards and choices (Morg, Oct 30, 2026, LOOP in build.py). 0: the daily's own boards
@@ -712,6 +713,8 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
       ALL.push(c); if (!(c.sl && c.d === 3)) POOL[c.d - 1].push(c);
       return c;
     });
+    var at = {}; D.cards.forEach(function (c, i) { at[D.items[i].i != null ? D.items[i].i : i] = c; });
+    D.wrong = (WRONG[D.id] || []).map(function (e) { var c = e.length === 2 ? at[e[1]] : { w: e[1], m: e[2] }; return c && { w: c.w, m: c.m, k: e[0] }; }).filter(Boolean);   // in the cards' order, each with the set (kind) it's in
   });
   // two cards can't share a board when one gives the other away: one's answer shows up in what a player sees of the other
   // (a short form or a telling name word counts), one's hook sits inside the other's answer, or they share an answer or a hook
@@ -788,12 +791,12 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     for (var d = 0; d <= day; d++) { b = dealDay(d, q, last); if (every) all.push(b); }
     return every ? all : b;
   }
-  // the three choices on a card: the answer and two of the same kind from its deck, the same for everyone that day.
+  // the three choices on a card: the answer and two from its set of wrong answers (its kind in its deck), the same for everyone that day.
   // A wrong answer is never one already in the sentence or on the tile (Barcelona for "___ beat Barcelona")
   function plain(s) { return ' ' + String(s || '').toLowerCase().replace(/[^0-9a-z\u00c0-\u024f]+/g, ' ').trim() + ' '; }
   // Each wrong answer is ranked by its own hash and each part has its own random stream, so one card more or fewer in a deck
   // never moves another card's choices (the audit, Oct 30, 2026: a desk round reshuffled #1). The best-ranked pair of the same
-  // kind that don't clash with each other wins, and only when the kind has no such pair do other kinds fill in.
+  // set that don't clash with each other wins, and only when the set has no such pair do the deck's other sets fill in.
   function choices(c, day) {
     var D = c.D, seen = plain(c.ex).replace(plain(c.w), ' ') + plain(c.hook);   // its own answer left out: referee in assistant referee
     var order = rng(hash('triviela order ' + day + ' ' + c.id));
@@ -803,7 +806,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     if (picks.length === 3) return place(picks);
     var ok = function (x) { return !D.clash(x.w, c.w) && seen.indexOf(plain(x.w)) < 0; };
     var rank = function (xs) { return xs.map(function (x) { return [hash('triviela choices ' + day + ' ' + c.id + ' ' + x.w), x]; }).sort(function (a, b) { return a[0] - b[0]; }).map(function (p) { return p[1]; }); };
-    var same = rank(D.cards.filter(function (x) { return x.k === c.k && ok(x); })), any = rank(D.cards.filter(function (x) { return x.k !== c.k && ok(x); }));
+    var same = rank(D.wrong.filter(function (x) { return x.k === c.k && ok(x); })), any = rank(D.wrong.filter(function (x) { return x.k !== c.k && ok(x); }));
     for (var i = 0; i < same.length; i++) for (var j = i + 1; j < same.length; j++) if (!D.clash(same[i].w, same[j].w)) return place([c, same[i], same[j]]);
     same.concat(any).forEach(function (x) { if (picks.length < 3 && !picks.some(function (p) { return D.clash(p.w, x.w); })) picks.push(x); });
     return place(picks);
