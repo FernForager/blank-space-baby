@@ -2645,8 +2645,9 @@
   "v": "ok"
  },
  "epl:3": {
-  "at": "2026-10-31T05:15:21Z",
-  "h": "091c7622fb",
+  "at": "2026-10-31T05:32:32Z",
+  "h": "44bb85a324",
+  "note": "tighter: three managers, no different",
   "v": "ok"
  },
  "epl:30": {
@@ -3437,8 +3438,9 @@
   "v": "ok"
  },
  "intl-women:64": {
-  "at": "2026-10-31T05:15:21Z",
-  "h": "a6c05ed033",
+  "at": "2026-10-31T05:32:32Z",
+  "h": "932b22766a",
+  "note": "40 characters, at the hard max",
   "v": "ok"
  },
  "intl-women:65": {
@@ -7163,8 +7165,9 @@
   "v": "ok"
  },
  "seriea:54": {
-  "at": "2026-10-31T05:15:21Z",
-  "h": "da0472b6f9",
+  "at": "2026-10-31T05:32:32Z",
+  "h": "15d5fbea10",
+  "note": "red fits an exact goal total",
   "v": "ok"
  },
  "seriea:55": {
