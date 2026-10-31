@@ -589,8 +589,8 @@
   "v": "ok"
  },
  "alpha:81": {
-  "at": "2026-10-17T00:00:40Z",
-  "h": "9b6a938292",
+  "at": "2026-10-31T05:17:43Z",
+  "h": "ed8bea766c",
   "v": "ok"
  },
  "alpha:82": {
@@ -1168,8 +1168,9 @@
   "v": "ok"
  },
  "basics:0": {
-  "at": "2026-10-17T00:00:49Z",
-  "h": "0e34592af3",
+  "at": "2026-10-31T05:17:43Z",
+  "h": "0cf5644d08",
+  "note": "Right: theifab.com Law 4 lists gloves as optional, and its Q&A says the keeper needn’t wear them",
   "v": "ok"
  },
  "basics:1": {
@@ -1193,8 +1194,8 @@
   "v": "ok"
  },
  "basics:102": {
-  "at": "2026-10-17T00:00:49Z",
-  "h": "01bb6d3bd3",
+  "at": "2026-10-31T05:17:43Z",
+  "h": "6bb98f4340",
   "v": "ok"
  },
  "basics:103": {
@@ -1750,8 +1751,9 @@
   "v": "ok"
  },
  "basics:57": {
-  "at": "2026-10-17T00:00:49Z",
-  "h": "fa82247817",
+  "at": "2026-10-31T05:17:43Z",
+  "h": "77acef12ed",
+  "note": "Right: Law 1 says the goalposts and crossbar must be the same shape",
   "v": "ok"
  },
  "basics:58": {
@@ -1765,8 +1767,8 @@
   "v": "ok"
  },
  "basics:6": {
-  "at": "2026-10-17T00:00:49Z",
-  "h": "6a509c3b2f",
+  "at": "2026-10-31T05:17:43Z",
+  "h": "b61678141b",
   "v": "ok"
  },
  "basics:60": {
@@ -2232,8 +2234,8 @@
   "v": "ok"
  },
  "bundesliga:41": {
-  "at": "2026-10-17T00:03:01Z",
-  "h": "c9599ec918",
+  "at": "2026-10-31T05:17:43Z",
+  "h": "101eb22109",
   "v": "ok"
  },
  "bundesliga:42": {
@@ -2896,13 +2898,9 @@
   "v": "ok"
  },
  "epl:28": {
-  "at": "2026-10-16T23:58:31Z",
-  "fix": {
-   "hook": "Emirates"
-  },
-  "h": "ff284afb2a",
-  "note": "Holloway is a neighborhood few fans outside London know, so it names nothing on the tile. Emirates is the recognizable name in the sentence. The draw already keeps this card apart from epl:24 and epl:47",
-  "v": "fix"
+  "at": "2026-10-31T05:17:43Z",
+  "h": "15459892d7",
+  "v": "ok"
  },
  "epl:29": {
   "at": "2026-10-16T23:58:31Z",
@@ -2910,10 +2908,13 @@
   "v": "ok"
  },
  "epl:3": {
-  "at": "2026-10-16T23:58:31Z",
-  "h": "ae110593de",
-  "note": "Right: Mourinho, Ancelotti, Conte and Mancini, Pellegrini, Guardiola. Arsenal and Liverpool have two each now, so they make good decoys",
-  "v": "ok"
+  "at": "2026-10-31T05:17:43Z",
+  "fix": {
+   "ex": "Like Man City, Chelsea have won the Premier League under three managers"
+  },
+  "h": "091c7622fb",
+  "note": "Right for the Premier League (premierleague.com, May 19, 2026, after Arsenal’s 2025–26 title: City and Chelsea three each, Arsenal and Liverpool two). But plain “titles” takes in the old First Division too, and Chelsea won that in 1955 under Ted Drake, which makes four managers. Name the Premier League",
+  "v": "fix"
  },
  "epl:30": {
   "at": "2026-10-16T23:58:31Z",
@@ -3380,8 +3381,8 @@
   "v": "ok"
  },
  "intl-men:58": {
-  "at": "2026-10-17T00:00:51Z",
-  "h": "ff9b280e46",
+  "at": "2026-10-31T05:17:43Z",
+  "h": "aefa70228c",
   "v": "ok"
  },
  "intl-men:59": {
@@ -3627,9 +3628,8 @@
   "v": "ok"
  },
  "intl-women:4": {
-  "at": "2026-10-17T00:03:04Z",
-  "h": "39afd9022b",
-  "note": "ok. Near-twin of awards:46, wc26:41 and intl-women:24, all kept apart by the draw",
+  "at": "2026-10-31T05:17:43Z",
+  "h": "287d4397ce",
   "v": "ok"
  },
  "intl-women:40": {
@@ -3638,8 +3638,8 @@
   "v": "ok"
  },
  "intl-women:41": {
-  "at": "2026-10-17T00:03:04Z",
-  "h": "304c1d72d5",
+  "at": "2026-10-31T05:17:43Z",
+  "h": "a0ba91b630",
   "v": "ok"
  },
  "intl-women:42": {
@@ -3736,8 +3736,8 @@
   "v": "ok"
  },
  "intl-women:58": {
-  "at": "2026-10-17T00:03:04Z",
-  "h": "cbf064e85d",
+  "at": "2026-10-31T05:17:43Z",
+  "h": "0904498c59",
   "v": "ok"
  },
  "intl-women:59": {
@@ -3772,13 +3772,9 @@
   "v": "ok"
  },
  "intl-women:64": {
-  "at": "2026-10-17T00:03:04Z",
-  "fix": {
-   "ex": "Brazil’s women’s team is also called the Seleção"
-  },
-  "h": "47c76c287a",
-  "note": "As written this is the men’s card (intl-men has the same fact) in a women’s deck. Make it about the women’s team",
-  "v": "fix"
+  "at": "2026-10-31T05:17:43Z",
+  "h": "a6c05ed033",
+  "v": "ok"
  },
  "intl-women:65": {
   "at": "2026-10-17T00:03:04Z",
@@ -3940,8 +3936,9 @@
   "v": "ok"
  },
  "laliga:31": {
-  "at": "2026-10-17T00:02:07Z",
-  "h": "60c208cc82",
+  "at": "2026-10-31T05:17:43Z",
+  "h": "96692a8fcc",
+  "note": "Right: he took over in January 2016, aged 43",
   "v": "ok"
  },
  "laliga:32": {
@@ -4115,9 +4112,8 @@
   "v": "ok"
  },
  "legends:0": {
-  "at": "2026-10-17T00:05:12Z",
-  "h": "911cc0a677",
-  "note": "Twin of intl-men:16 (same fact, same hook). The draw keeps them apart, but Trivelle should keep one",
+  "at": "2026-10-31T05:17:43Z",
+  "h": "14f2fdf5a3",
   "v": "ok"
  },
  "legends:1": {
@@ -4683,9 +4679,8 @@
   "v": "ok"
  },
  "ligamx:33": {
-  "at": "2026-10-17T00:01:31Z",
-  "h": "9bb4f19942",
-  "note": "Nahuel Guzmán (a keeper) and Rotondi are weak decoys for every scoring card in the player kind. The deck has no better ones",
+  "at": "2026-10-31T05:17:43Z",
+  "h": "6c0b56d30b",
   "v": "ok"
  },
  "ligamx:34": {
@@ -5066,8 +5061,8 @@
   "v": "ok"
  },
  "ligue1:32": {
-  "at": "2026-10-16T23:59:47Z",
-  "h": "861d47c788",
+  "at": "2026-10-31T05:17:43Z",
+  "h": "4bf3597a2f",
   "v": "ok"
  },
  "ligue1:33": {
@@ -5381,13 +5376,9 @@
   "v": "fix"
  },
  "lingo-more:25": {
-  "at": "2026-10-17T00:02:01Z",
-  "fix": {
-   "d": 1
-  },
-  "h": "6477758fd5",
-  "note": "Free agent is everyday American sports talk a new parent knows, and the other choices never fit, so it plays white",
-  "v": "fix"
+  "at": "2026-10-31T05:17:43Z",
+  "h": "0ad7d8141a",
+  "v": "ok"
  },
  "lingo-more:26": {
   "at": "2026-10-17T00:02:01Z",
@@ -5425,8 +5416,8 @@
   "v": "ok"
  },
  "lingo-more:31": {
-  "at": "2026-10-17T00:02:01Z",
-  "h": "5e7a4268fc",
+  "at": "2026-10-31T05:17:43Z",
+  "h": "106e7e1b5b",
   "v": "ok"
  },
  "lingo-more:32": {
@@ -5667,8 +5658,8 @@
   "v": "ok"
  },
  "mls:10": {
-  "at": "2026-10-17T00:00:30Z",
-  "h": "ecbd714ce2",
+  "at": "2026-10-31T05:17:43Z",
+  "h": "749a3d608c",
   "v": "ok"
  },
  "mls:11": {
@@ -6653,8 +6644,8 @@
   "v": "ok"
  },
  "nwsl:53": {
-  "at": "2026-10-17T00:03:32Z",
-  "h": "93d7ecc2da",
+  "at": "2026-10-31T05:17:43Z",
+  "h": "a20d826b00",
   "v": "ok"
  },
  "nwsl:54": {
@@ -6683,13 +6674,9 @@
   "v": "ok"
  },
  "nwsl:59": {
-  "at": "2026-10-17T00:03:32Z",
-  "fix": {
-   "ex": "Racing play their home games in Louisville"
-  },
-  "h": "383a66b595",
-  "note": "House style gives clubs British plurals (plays its → play their), and Racing is how fans say it",
-  "v": "fix"
+  "at": "2026-10-31T05:17:43Z",
+  "h": "36cc637547",
+  "v": "ok"
  },
  "nwsl:6": {
   "at": "2026-10-17T00:26:19Z",
@@ -7200,8 +7187,8 @@
   "v": "ok"
  },
  "rules:35": {
-  "at": "2026-10-17T00:00:54Z",
-  "h": "7849fce549",
+  "at": "2026-10-31T05:17:43Z",
+  "h": "c67f136f37",
   "v": "ok"
  },
  "rules:36": {
@@ -7261,8 +7248,8 @@
   "v": "ok"
  },
  "rules:44": {
-  "at": "2026-10-17T00:00:54Z",
-  "h": "c752ad2d69",
+  "at": "2026-10-31T05:17:43Z",
+  "h": "a7e12cda50",
   "v": "ok"
  },
  "rules:45": {
@@ -7402,13 +7389,9 @@
   "v": "ok"
  },
  "seriea:0": {
-  "at": "2026-10-17T00:00:12Z",
-  "fix": {
-   "means": "Under Conte, Allegri and Sarri"
-  },
-  "h": "f5139dd43d",
-  "note": "The means names 36, which is card seriea:50’s answer, so seeing card 0 first gives that one away. Name the three coaches instead",
-  "v": "fix"
+  "at": "2026-10-31T05:17:43Z",
+  "h": "bd22e5b7de",
+  "v": "ok"
  },
  "seriea:1": {
   "at": "2026-10-17T00:00:12Z",
@@ -7426,8 +7409,8 @@
   "v": "ok"
  },
  "seriea:12": {
-  "at": "2026-10-17T00:00:12Z",
-  "h": "67da43ca9f",
+  "at": "2026-10-31T05:17:43Z",
+  "h": "b8259a8e11",
   "v": "ok"
  },
  "seriea:13": {
@@ -7517,8 +7500,9 @@
   "v": "ok"
  },
  "seriea:26": {
-  "at": "2026-10-17T00:00:12Z",
-  "h": "f6e04deba2",
+  "at": "2026-10-31T05:17:43Z",
+  "h": "875af4a51c",
+  "note": "Right: 23 for Juventus, 57 for Inter, 76 for Milan over two spells make 156. Five scudetti once Juventus’s two revoked titles are left out",
   "v": "ok"
  },
  "seriea:27": {
@@ -7702,12 +7686,12 @@
   "v": "ok"
  },
  "seriea:54": {
-  "at": "2026-10-17T00:00:12Z",
+  "at": "2026-10-31T05:17:43Z",
   "fix": {
-   "d": 1
+   "d": 3
   },
-  "h": "10942e7223",
-  "note": "Plays trivially easy: next to 4, 19, 20, 21, 36 or 974, only 274 can be a career goal record. Honest color is white",
+  "h": "da0472b6f9",
+  "note": "The game now makes up near-miss decoys for numbers, about 200 and 340 next to 274, so only a fan who knows Piola’s exact record gets it. That is red now, not the white it was when the deck lent it 4, 19 and 974",
   "v": "fix"
  },
  "seriea:55": {
@@ -7826,12 +7810,17 @@
   "v": "ok"
  },
  "soccer:2": {
-  "at": "2026-10-17T00:01:58Z",
+  "at": "2026-10-31T05:17:43Z",
   "fix": {
-   "means": "Kicked out of the air"
+   "groups": [
+    [
+     "volley",
+     "header"
+    ]
+   ]
   },
-  "h": "95501cd181",
-  "note": "The new means names half volley, the answer of lingo-more:4, so it gives that card away if both are dealt. Define the volley itself",
+  "h": "a85b761dbc",
+  "note": "A cross headed in never touches the grass either, so header can pass for a second right answer here. Keep the two apart on this card",
   "v": "fix"
  },
  "soccer:20": {
@@ -8132,8 +8121,8 @@
   "v": "ok"
  },
  "ucl:17": {
-  "at": "2026-10-17T00:07:24Z",
-  "h": "65a3118291",
+  "at": "2026-10-31T05:17:43Z",
+  "h": "cc4e2065a8",
   "v": "ok"
  },
  "ucl:18": {
@@ -8278,14 +8267,10 @@
   "v": "ok"
  },
  "ucl:40": {
-  "at": "2026-10-17T00:07:24Z",
-  "fix": {
-   "means": "At Hampden Park",
-   "src": "https://www.uefa.com/uefachampionsleague/match/69489--leverkusen-vs-real-madrid/"
-  },
-  "h": "67dd2d0f44",
-  "note": "The means line “Zidane scored a famous winner” gives away card 24 (Zidane, 2002 final), which can share its board",
-  "v": "fix"
+  "at": "2026-10-31T05:17:43Z",
+  "h": "a09ae1fda2",
+  "note": "Right, and the meaning line is uefa.com’s own headline for the final",
+  "v": "ok"
  },
  "ucl:41": {
   "at": "2026-10-17T00:07:24Z",
@@ -8458,8 +8443,8 @@
   "v": "ok"
  },
  "ucl:65": {
-  "at": "2026-10-17T00:07:24Z",
-  "h": "a27fc9b60b",
+  "at": "2026-10-31T05:17:43Z",
+  "h": "2131ec70d9",
   "v": "ok"
  },
  "ucl:66": {
@@ -8656,9 +8641,9 @@
   "v": "ok"
  },
  "wc26:37": {
-  "at": "2026-10-17T00:26:19Z",
-  "h": "fa9ef8db93",
-  "note": "“Third-best” points to Bronze, so it plays white, as rated",
+  "at": "2026-10-31T05:17:43Z",
+  "h": "5050d93875",
+  "note": "Right: fifa.com, Jul 19, 2026, Mbappé took the Golden Boot (ten goals) and the Bronze Ball",
   "v": "ok"
  },
  "wc26:38": {
@@ -8718,13 +8703,13 @@
   "v": "ok"
  },
  "wc26:47": {
-  "at": "2026-10-17T00:04:39Z",
-  "h": "39c1f29055",
+  "at": "2026-10-31T05:17:43Z",
+  "h": "2db4dce8a0",
   "v": "ok"
  },
  "wc26:48": {
-  "at": "2026-10-17T00:04:39Z",
-  "h": "80e8d5f15b",
+  "at": "2026-10-31T05:17:43Z",
+  "h": "b852c427e9",
   "v": "ok"
  },
  "wc26:49": {
