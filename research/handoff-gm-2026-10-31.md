@@ -1,0 +1,33 @@
+# GM handoff: TRIVELLE 13 (session_01EtV5RnE5wPM87cH93Pu7a4) to TRIVELLE 16, Oct 31, 2026
+
+TRIVELLE 13 reached about 390,000 tokens at a clean break (Library #14 landed and verified, Billboard #15 running on its own) and sits at depth 6, so Morg starts TRIVELLE 16 in the app with the ready prompt at the end of this note (playbook 8, hub decision fresh-roots). CLAUDE.md is current to this commit, so this note holds only what a fresh chat can’t read there.
+
+1. **Workers running:** Billboard #15 (session_01EtV5RnCjZuXwzvwNgt1oVQ, ⚽️🟢⚽️ Billboard #15 · Fable Max, branch `billboard`, hub job `n15-billboard`): three poster directions for the iMessage link preview (`docs/og.png`), Morg’s line “daily ⚽️ trivia”, a private A/B/C sheet, then `tools/og.py` renders his pick. Tell it your session id at once. When it reports the sheet, put the three to Morg as a hub decision with its pick, relay his pick word for word, then land `billboard` on daily (build, textcheck, look at `docs/og.png` zoomed in). The preview only reaches triviela.net at his go-live. Done: Library #14 (session_01EtV5RjZjYM9RZGy6M9zFQX), landed. Never wake it for new work. The next number on the one counter is 17 (you are 16).
+2. **Scheduled tasks bound to TRIVELLE 13:** “Sync Triviela beta flags” (trig_019fApo9r4g7Hhg5bY99rqkk, CRON_TZ=America/Los_Angeles 53 7,19 * * *) and “Triviela stat round 2: NWSL Decision Day” (trig_01UvbQ9X7qU9vKPXy2VG9SC4, one shot at 2026-11-02T18:13:00Z, no branch pin, its stat master titled ⚽️🟡⚽️ Stats #<n>). Read each with get_trigger, create your own copies with the same prompts, then tell TRIVELLE 13 “ACTIVE”, and it deletes its own. No marks have come in yet (last id 0).
+3. **The hub’s pointer:** team/triviela, field session, becomes your id (update, never set), with `effort`, `model`, `title` and `ctx` current for Hubble’s sweep.
+4. **Open with no owner:**
+   - **Billboard #15**, above.
+   - **The Board Room** (https://claude.ai/artifact/B3orp7GwdLgFrqpFELHbKj, source `tools/board-room.html`): fresh drafts for all seven boards, #1 included (Morg’s pick: a fresh draft over his own nine, which Swap marks “Your first nine”). Hub to-do `curate` is unparked. When he taps “My boards are ready”, follow GAME.md, log his edits in `build/decks/MORG-STYLE.md`, and run golive.py before any go-live, since a new #1 replaces the nine `LOOP` replays.
+   - **The Card Room** (https://claude.ai/artifact/Cn4okMKyiFa4Eg9a8ioWBx, placeholder name, source `tools/card-room.html`, linked in the hub with the ask “Apply my card edits”, also a placeholder). Morg names both. He has an idea to streamline card writing (“a cool addition upgrade”) that he’ll bring when ready: it’s a follow-up job, not a fix.
+   - **The library’s findings** (`python3 tools/library.py report --all`), desk work: lingo-more:54 (Morg’s “eleven”, not locked) kept kind `lingo`, so “eleven” can show as a wrong answer on word cards: move it to its own kind, which sends it back to the three reviewers. Two duplicate facts: Germany’s 2003 and 2007 titles (intl-women:2 and awards:43) and the kickoff after a goal (lingo-more:27 and rules:30), one copy each goes out by the `moved_from` rule. Capitals: hooks Save/save, Goalkeeper/goalkeeper, Champions/champions, Men’s Coach/men’s coach, answers Clutch/clutch and Zinedine/Zinédine Zidane. shoot-out and shootout, Barcelona and FC Barcelona, Atlético de Madrid and Atlético Madrid. Nine thin kinds. Six cards say soccer or football.
+   - **Library #14’s proposal, not built:** wrong answers from their own curated decoy sets (`build/library/wrong.json`) instead of kinds. Every set starts as today’s kind pool, so no fingerprint changes until a set is edited. About a day of worker time at high, plus a golive.py pass. Put it to Morg as a hub decision with a pick once the boards and the billboard settle.
+   - **Score titles 0 to 9** (hub to-do `scoretitles`): his words first, then one build with pictures.
+   - **Stat round 2** fires Nov 2 from the scheduled task above.
+   - **Branches to delete** (the permission check refuses them): `gm-9`, `endpanel`, `slim-brief-2` (hub to-do `delete-gm-9`). `library` is merged and can go too.
+   - **The weekly usage warning** was on all session (rate_limit_info allowed_warning). Morg said go anyway for #14 and #15.
+5. **Verified tips today (on daily, checks named):** e1d16fb (the Board Room’s refresh: build), 7b61dfe (Library #14 landed: build, drawcheck 0 problems, lifecycle all good, textcheck, tilecheck, library.py check). Earlier commits today were docs only: the VP title, branch pins retired, fresh roots, doubled marks, nothing stale, the counter.
+6. **Learned today:**
+   - **The rule that worked against this seat** (playbook 0): the hold that waits for a level Morg can’t see until he opens the worker. Every worker started today held with no effort level until he set it in the app, and he twice had to go find the chat. The hub’s Go card (`needsLevel`) carries it, and saying the worker’s exact title in chat helps him find it.
+   - Hubble sent five playbook changes in two hours. Read each against the playbook before changing our copies, then reply done in one line. Our copies are CLAUDE.md, team/GM.md, team/WORKER.md, stats/STAT-MASTER.md and research/hub.md.
+   - A GM near its size line hands a build to a fresh worker instead of starting it: #14 and #15 both went out at 330k to 390k.
+
+## The ready prompt for TRIVELLE 16
+Morg starts a new Claude Code session in the app on the repo `fernforager/blank-space-baby`, branch `daily`, titled ⚽️🟡⚽️ GM #16 · Opus High, sets High, and pastes the block below.
+
+```
+You are TRIVELLE 16, Triviela’s GM. Your standing orders are team/GM.md in the repo, the text below its line, with <n> as 16: follow them exactly. Read CLAUDE.md, the hub’s shared/team-practices (the playbook) and research/handoff-gm-2026-10-31.md before anything else. The outgoing GM is TRIVELLE 13, session_01EtV5RnE5wPM87cH93Pu7a4.
+
+On Morg’s go, once your own record reads High on Opus, in this order: 1. retitle ⚽️🟢⚽️ GM #16 · Opus High. 2. Create your own copies of the two scheduled tasks in the handoff’s section 2 (read each with get_trigger). 3. Update the hub’s team/triviela: session to your id, with effort, model and title. 4. Send TRIVELLE 13 one line by send_message: "ACTIVE". It then deletes its scheduled tasks and stops. 5. Tell Billboard #15 your id. 6. Read the hub’s open Triviela decisions and to-dos. Your first job is Billboard #15’s sheet when it reports.
+
+Orders, then hold: reply in one line with your plan and its size, ending "Holding for High", and wait for Morg’s go.
+```
