@@ -13,8 +13,8 @@ as the game draws one in a string, its own pixel ball, so it looks the same on e
 Oct 31, 2026: cards with hooks were too specific, the rest is visuals): each shows its color card and one of the game's own
 marks, the black-and-white ball for a right answer or the red ✕ for a miss, cloned from a played tile on the board.
 
-The directions: A, lights, the sign's dot field over the CRT with the three balls lit under it, Morg's line in the sign's own
-subheading slot under the dots (the site's, Morg's pick, Oct 31, 2026).
+The directions: A, lights, the sign's dot field over the CRT with the three balls lit under it and Morg's line under the balls,
+in the screen's own caption slot (the site's, Morg's pick, Oct 31, 2026: "the art is compelling", "text below the balls").
 B, collage, the cabinet's cream and green trim, the sign in its rim at a tilt, three keys scattered, the balls and the line in ink.
 C, three keys, the control panel's black, the sign across the top, a key of each color and the line in the screen's glow.
 """
@@ -26,8 +26,8 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 HTML = open(os.path.join(ROOT, 'docs', 'index.html')).read()
 DIRECTION = 'A'   # the poster the site uses: A, Morg's pick (Oct 31, 2026: "the art is compelling")
 W, H = 1200, 630
-LINE = 'daily trivia shootout'   # Morg's line under the name (Oct 31, 2026, as he wrote it: no ⚽, since the colored balls carry it), in the sign's own subheading slot
-CAPS = True   # the line in capitals, as the cabinet's sign sets this same subheading (False keeps it lowercase, as Morg typed it)
+LINE = 'daily trivia shootout'   # Morg's line (Oct 31, 2026, as he wrote it: no ⚽, since the colored balls carry it), under the balls on the screen
+CAPS = True   # the line in capitals, as the cabinet sets this same line on its sign (False keeps it lowercase, as Morg typed it)
 MARKS = [1, 1, 2]   # the three keys, green, yellow, red: 1 the ball (right), 2 the ✕ (a miss), a day like the share grid's ⚽⚽❌
 
 CSS = """
@@ -51,15 +51,16 @@ CSS = """
 #poster .trim { top: 0; bottom: 0; width: 14px; background: var(--body-dark); }
 #poster .trim.l { left: 0; } #poster .trim.r { right: 0; }
 
-/* A: the sign alone, the cabinet's own stack edge to edge: the dot board over the screen, the three balls lit on it */
+/* A: the sign alone, the cabinet's own stack edge to edge: the dot board over the screen, the three balls lit on it and Morg's line under them */
 #poster[data-d="A"] { background: radial-gradient(130% 110% at 50% 60%, #0D2216 0%, #07130C 70%); }
-#poster[data-d="A"] .marquee { left: 0; top: 0; width: 1200px; height: 396px; border-radius: 0; box-shadow: inset 0 -3px 0 #000, 0 4px 0 var(--body-dark); }
-#poster[data-d="A"] .marquee.dm canvas { inset: 8px 0 96px; height: calc(100% - 104px); }
-#poster[data-d="A"] .marquee.dm .subhead { visibility: visible; font-size: 40px; letter-spacing: 5px; translate: 5px 0; }   /* the sign's own subheading slot at 5 device pixels a font pixel, placed by drawSign between the dots and the rim */
-#poster[data-d="A"] .marquee.dm .subhead.lc { text-transform: none; }
-#poster[data-d="A"] .scan { top: 400px; }
-#poster[data-d="A"] .balls { left: 50%; top: 418px; transform: translateX(-50%); column-gap: 72px; }
-#poster[data-d="A"] .balls .ball { width: 192px; }
+#poster[data-d="A"] .marquee { left: 0; top: 0; width: 1200px; height: 330px; border-radius: 0; box-shadow: inset 0 -3px 0 #000, 0 4px 0 var(--body-dark); }
+#poster[data-d="A"] .marquee.dm canvas { inset: 8px 0 12px; height: calc(100% - 20px); }
+#poster[data-d="A"] .scan { top: 334px; }
+#poster[data-d="A"] .balls { left: 50%; top: 354px; transform: translateX(-50%); column-gap: 72px; }
+#poster[data-d="A"] .balls .ball { width: 168px; }
+#poster[data-d="A"] .pick { left: 0; right: 0; top: 556px; margin: 0; text-align: center; text-shadow: 0 0 12px rgba(92,240,154,.55); }   /* the screen's own caption slot (Pick a card), at 5 device pixels a font pixel, under the balls (Morg, Oct 31, 2026) */
+#poster[data-d="A"] .pick .pk-t { font-size: 40px; line-height: 1; letter-spacing: 5px; translate: 5px 0; }
+#poster[data-d="A"] .pick.lc .pk-t { text-transform: none; }
 
 /* B: the collage on the cabinet's cream body, with its green trim */
 #poster[data-d="B"] { background: var(--body); }
@@ -110,9 +111,9 @@ async (o) => {
   // Morg's line, the ⚽ as the sign's own pixel ball (the game's way of drawing one in a string)
   const ball = Q('.subhead .tball');
   const line = () => { const p = document.createElement('p'); p.className = 'line'; p.append('daily ', ball.cloneNode(true), ' trivia'); return p; };
-  if (o.dir === 'A') {   // the sign's own subheading carries Morg's line, in the slot the cabinet's sign uses for its subheading
-    const sub = sign.querySelector('.subhead'); sub.textContent = o.line; sub.classList.toggle('lc', !o.caps);
-    P.append(sign, balls, el('scan'));
+  if (o.dir === 'A') {   // Morg's line under the balls, in the screen's own caption slot (the board's Pick a card line), cloned from the board
+    const pick = Q('#p-hint .pick').cloneNode(true), t = pick.querySelector('.pk-t'); t.textContent = o.line; t.removeAttribute('style'); t.removeAttribute('data-tid');
+    pick.classList.toggle('lc', !o.caps); P.append(sign, balls, pick, el('scan'));
   }
   if (o.dir === 'B') { P.append(el('trim l'), el('trim r'), sign, el('crt', el('screen', balls)), ...o.marks.map(key), line()); }
   if (o.dir === 'C') { P.append(sign, ...o.marks.map(key), line()); }
