@@ -1,0 +1,678 @@
+<title>Triviela Card Room</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Pixelify+Sans:wght@500;600&display=swap">
+<style>
+/* Layout: the library as five lists (cards and the four pools they share), a sticky strip of views and search on top,
+   bottom sheets for a card, a pool entry, an edit and a new card. The Board Room's palette and type, so the two rooms match. */
+:root {
+  --page: #F2EDE4; --card: #FBF8F3; --ink: #1E2A3B; --muted: #5C6675; --line: #E1D8C7; --cream: #F6F0E2;
+  --green: #00843D; --green-soft: #E3F1E8; --green-card: #45BE76; --yellow: #F7C948; --red: #D52B1E;
+  --warn: #9A5B08; --warn-bg: #FBEFD9; --bad: #B0262C; --bad-bg: #FBE3E3; --ok: #1E6B40; --ok-bg: #E3F1E8; --info: #3D5470; --info-bg: #E6ECF3;
+  --shadow: 0 1px 0 #D9CFBC; --scrim: rgba(10,14,20,.45);
+  --display: "Pixelify Sans", ui-rounded, system-ui, sans-serif;
+  --body: "Atkinson Hyperlegible", system-ui, -apple-system, sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --page: #161B22; --card: #1F2630; --ink: #E9EEF3; --muted: #A2AEBB; --line: #313B47; --cream: #26303B;
+  --green: #45BE76; --green-soft: #1C3328; --green-card: #45BE76; --warn: #F2B65A; --warn-bg: #3A2C15; --bad: #FF8A8F; --bad-bg: #3D1F22; --ok: #7FD9A3; --ok-bg: #1C3328; --info: #A9C2DE; --info-bg: #222C38;
+  --shadow: 0 1px 0 #0D1116; --scrim: rgba(0,0,0,.6); color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --page: #161B22; --card: #1F2630; --ink: #E9EEF3; --muted: #A2AEBB; --line: #313B47; --cream: #26303B;
+  --green: #45BE76; --green-soft: #1C3328; --green-card: #45BE76; --warn: #F2B65A; --warn-bg: #3A2C15; --bad: #FF8A8F; --bad-bg: #3D1F22; --ok: #7FD9A3; --ok-bg: #1C3328; --info: #A9C2DE; --info-bg: #222C38;
+  --shadow: 0 1px 0 #0D1116; --scrim: rgba(0,0,0,.6); color-scheme: dark; }
+* { box-sizing: border-box; }
+body { background: var(--page); color: var(--ink); font: 16px/1.4 var(--body); -webkit-font-smoothing: antialiased; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--page); }
+button { font: inherit; color: inherit; }
+.wrap { max-width: 640px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 14px 120px; }
+h1 { font: 600 26px/1.1 var(--display); margin: 0; letter-spacing: .2px; }
+.eyebrow { font: 600 12px/1 var(--body); letter-spacing: .12em; text-transform: uppercase; color: var(--green); margin: 0 0 6px; }
+.lede { margin: 6px 0 0; color: var(--muted); font-size: 14px; font-variant-numeric: tabular-nums; }
+.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--page); padding: 12px 0 10px; display: grid; gap: 10px; }
+.tabs { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; }
+.tabs::-webkit-scrollbar { display: none; }
+.tabs button { flex: none; border: 1px solid var(--line); background: var(--card); border-radius: 999px; padding: 7px 13px; font: 700 15px var(--body); cursor: pointer; }
+.tabs button[aria-pressed="true"] { background: var(--ink); color: var(--page); border-color: var(--ink); }
+input[type="search"], input[type="text"], input[type="url"], textarea, select { width: 100%; font: 16px/1.35 var(--body); color: var(--ink); background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 10px 11px; }
+select { padding-right: 28px; }
+textarea { min-height: 76px; resize: vertical; }
+.filters { display: grid; gap: 8px; margin: 2px 0 12px; }
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+@media (max-width: 360px) { .two { grid-template-columns: 1fr; } }
+.chips { display: flex; gap: 6px; flex-wrap: wrap; }
+.chips button { font-size: 14px; border-radius: 999px; border: 1px solid var(--line); background: var(--card); padding: 5px 10px; cursor: pointer; display: inline-flex; gap: 6px; align-items: center; }
+.chips button[aria-pressed="true"] { background: var(--green); border-color: var(--green); color: #fff; }
+.count { margin: 0 0 10px; color: var(--muted); font-size: 14px; font-variant-numeric: tabular-nums; }
+.count b { color: var(--ink); }
+.rc { width: 11px; height: 15px; border-radius: 2px; box-shadow: 0 0 0 1px rgba(0,0,0,.18); flex: none; display: inline-block; }
+.rc.c1 { background: var(--green-card); } .rc.c2 { background: var(--yellow); } .rc.c3 { background: var(--red); }
+ol.list { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.row { width: 100%; text-align: left; background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; display: grid; gap: 4px; box-shadow: var(--shadow); min-width: 0; cursor: pointer; }
+.row .head { display: flex; align-items: center; gap: 8px; min-width: 0; }
+.hook { font: 600 18px/1.15 var(--display); min-width: 0; overflow-wrap: anywhere; }
+.tag { margin-left: auto; flex: none; font-size: 12px; letter-spacing: .04em; color: var(--muted); border: 1px solid var(--line); border-radius: 6px; padding: 1px 6px; }
+.ex { margin: 0; overflow-wrap: anywhere; }
+.ex mark { background: var(--green-soft); color: var(--ink); border-radius: 3px; padding: 0 2px; font-weight: 700; }
+.means { margin: 0; font-size: 14px; color: var(--muted); font-style: italic; }
+.badges { display: flex; gap: 6px; flex-wrap: wrap; }
+.badge { font-size: 12px; border-radius: 6px; padding: 1px 7px; background: var(--info-bg); color: var(--info); }
+.badge.warn { background: var(--warn-bg); color: var(--warn); } .badge.bad { background: var(--bad-bg); color: var(--bad); }
+.badge.mine, .badge.new { background: var(--green-soft); color: var(--green); }
+.prow { width: 100%; text-align: left; background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 9px 12px; display: grid; grid-template-columns: 1fr auto; gap: 4px 10px; align-items: baseline; cursor: pointer; min-width: 0; }
+.prow .pt { font-weight: 700; min-width: 0; overflow-wrap: anywhere; }
+.prow .pn { font-size: 14px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.prow .badges { grid-column: 1 / -1; }
+.more { display: block; margin: 12px auto 0; }
+.btn { font: 700 14px var(--body); border-radius: 9px; border: 1px solid var(--line); background: var(--cream); padding: 8px 12px; cursor: pointer; }
+.btn.go { background: var(--green); border-color: var(--green); color: #fff; }
+.btn.ghost { background: transparent; }
+.btn:disabled { opacity: .45; cursor: default; }
+button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible, summary:focus-visible { outline: 3px solid var(--green); outline-offset: 2px; }
+.panel { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 4px 12px; margin: 0 0 12px; }
+.panel summary { cursor: pointer; padding: 8px 0; font-weight: 700; display: flex; gap: 8px; align-items: baseline; }
+.panel summary .n { margin-left: auto; font-weight: 400; color: var(--muted); font-size: 14px; font-variant-numeric: tabular-nums; }
+.panel .why { margin: 0 0 6px; font-size: 14px; color: var(--muted); }
+.panel.inner { border: 0; border-top: 1px solid var(--line); border-radius: 0; margin: 0; padding: 0; background: none; }
+.panel.inner summary { font-weight: 400; }
+.countrow { display: flex; align-items: center; gap: 8px; margin: 0 0 10px; }
+.countrow .count { margin: 0; flex: 1; min-width: 0; }
+.countrow select { width: auto; padding: 5px 26px 5px 9px; font-size: 14px; }
+.panel ul { list-style: none; margin: 0 0 10px; padding: 0; display: grid; gap: 4px; }
+.panel li button { background: none; border: 0; padding: 4px 0; text-align: left; cursor: pointer; font-size: 15px; width: 100%; }
+.panel li button:hover { color: var(--green); }
+.cat { display: grid; gap: 6px; }
+.bar { display: flex; height: 8px; border-radius: 4px; overflow: hidden; background: var(--line); }
+.bar i { display: block; } .bar .c1 { background: var(--green-card); } .bar .c2 { background: var(--yellow); } .bar .c3 { background: var(--red); }
+.nums { font-size: 14px; color: var(--muted); font-variant-numeric: tabular-nums; display: flex; gap: 12px; flex-wrap: wrap; }
+.foot { position: fixed; left: 0; right: 0; bottom: 0; z-index: 6; background: var(--page); border-top: 1px solid var(--line);
+  padding: 10px max(16px, env(safe-area-inset-right, 0px)) max(12px, env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px)); }
+.foot .in { max-width: 640px; margin: 0 auto; display: flex; gap: 10px; align-items: center; }
+.foot .state { flex: 1; min-width: 0; font-size: 13px; color: var(--muted); }
+/* the sheet: a card, an entry, an edit, over the list */
+.scrim { position: fixed; inset: 0; z-index: 20; background: var(--scrim); display: flex; align-items: flex-end; justify-content: center; }
+.sheet { width: 100%; max-width: 640px; max-height: 90%; overflow: auto; overscroll-behavior: contain; background: var(--page); border-radius: 18px 18px 0 0;
+  padding: 14px max(16px, env(safe-area-inset-right, 0px)) max(18px, env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px)); display: grid; gap: 12px; }
+.sheet h2 { font: 600 21px/1.15 var(--display); margin: 0; overflow-wrap: anywhere; }
+.sheet .sub { margin: -6px 0 0; color: var(--muted); font-size: 14px; }
+.shead { display: flex; gap: 8px; align-items: center; }
+.shead .btn { flex: none; }
+.shead .sp { flex: 1; }
+label.f { display: grid; gap: 4px; font: 700 14px var(--body); }
+label.f small { font-weight: 400; color: var(--muted); }
+.seg { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+.seg button { border: 0; background: var(--card); padding: 9px 6px; font: 700 14px var(--body); cursor: pointer; display: flex; gap: 6px; align-items: center; justify-content: center; }
+.seg button + button { border-left: 1px solid var(--line); }
+.seg button[aria-pressed="true"] { background: var(--ink); color: var(--page); }
+.msgs { display: grid; gap: 4px; }
+.msg { font-size: 14px; border-radius: 8px; padding: 6px 9px; background: var(--bad-bg); color: var(--bad); }
+.msg.ok { background: var(--ok-bg); color: var(--ok); } .msg.warn { background: var(--warn-bg); color: var(--warn); } .msg.info { background: var(--info-bg); color: var(--info); }
+.kv { display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; margin: 0; font-size: 14px; }
+.kv dt { color: var(--muted); } .kv dd { margin: 0; min-width: 0; overflow-wrap: anywhere; }
+.kv a { color: var(--green); }
+.choices { display: flex; flex-wrap: wrap; gap: 6px; }
+.choices span { font-size: 14px; border: 1px solid var(--line); border-radius: 7px; padding: 2px 8px; background: var(--card); }
+.choices span.right { border-color: var(--green); color: var(--green); font-weight: 700; }
+/* a tile as the game draws it, and the card as it plays */
+.tilebox { display: flex; gap: 14px; align-items: flex-start; }
+.tile { position: relative; flex: none; width: 112px; height: 92px; border-radius: 10px; background: #F6F0E2; color: #1E2A3B; box-shadow: inset 0 -4px 0 rgba(30,42,59,.18), 0 0 0 1px rgba(30,42,59,.25);
+  display: grid; align-content: center; justify-items: center; gap: 2px; padding: 8px 6px 10px; text-align: center; }
+.tile .tt { font: 500 12px/1.1 var(--display); }
+.tile .th { font: 600 16px/1.05 var(--display); overflow-wrap: anywhere; }
+.tile .rc { position: absolute; top: 6px; right: 6px; width: 8px; height: 11px; }
+.play { background: #10151C; color: #E8F6EC; border-radius: 12px; padding: 14px; display: grid; gap: 12px; }
+.play p { margin: 0; font: 600 18px/1.35 var(--display); }
+.play .blank { display: inline-block; min-width: 4.5em; border-bottom: 2px dashed #5CF09A; color: #5CF09A; }
+.play .keys { display: grid; gap: 8px; }
+.play .keys button { background: #F6F0E2; color: #1E2A3B; border: 0; border-radius: 10px; padding: 10px; font: 600 16px var(--display); cursor: pointer; text-align: center; }
+.play .keys button.right { background: #45BE76; } .play .keys button.wrong { background: #FF5A5F; color: #fff; } .play .keys button.dim { opacity: .45; }
+.play .pm { font: 500 14px var(--display); color: #BFD8C8; min-height: 1.2em; }
+.empty { padding: 32px 0; color: var(--muted); }
+@media (prefers-reduced-motion: no-preference) { .sheet { animation: up .18s ease-out; } @keyframes up { from { transform: translateY(24px); opacity: .6; } } }
+</style>
+
+<div class="wrap">
+  <header>
+    <p class="eyebrow">Triviela · the library</p>
+    <h1>Card Room</h1>
+    <p class="lede" id="lede">Every card, and the pools they share.</p>
+  </header>
+  <div class="top">
+    <nav class="tabs" id="tabs" aria-label="Views">
+      <button type="button" data-v="cards">Cards</button><button type="button" data-v="categories">Categories</button><button type="button" data-v="hook">Hooks</button><button type="button" data-v="answer">Answers</button><button type="button" data-v="wrong">Wrong answers</button>
+    </nav>
+    <input type="search" id="q" placeholder="Search" aria-label="Search">
+  </div>
+  <main id="main"><p class="empty">Loading the library…</p></main>
+</div>
+<div class="foot"><div class="in"><span class="state" id="save" aria-live="polite"></span><button class="btn go" id="newcard" type="button" hidden>New card</button></div></div>
+<div class="scrim" id="scrim" hidden><div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-h"></div></div>
+
+<script>
+(function () {
+  'use strict';
+  // ---- small helpers ----
+  const $ = id => document.getElementById(id);
+  const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const fmt = n => Number(n).toLocaleString('en-US');
+  const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  const day = iso => { const p = String(iso || '').slice(0, 10).split('-').map(Number); return p.length === 3 ? MON[p[1] - 1] + ' ' + p[2] : ''; };
+  const plural = (n, one, many) => fmt(n) + ' ' + (n === 1 ? one : (many || one + 's'));
+  const COLOR = ['', 'Green', 'Yellow', 'Red'], EASE = ['', 'easy', 'harder', 'hardest'];
+  const STATE = { a: 'In play', l: 'Locked', p: 'Waiting on the reviewers', f: 'Flagged', o: 'Out', n: 'Your new card' };
+  const WHO = { soccer: 'the soccer expert', editor: 'the editor', facts: 'the fact checker' };
+  // the library's own keys (tools/library.py): case and accents dropped, a score keeps its dash
+  const letters = s => String(s == null ? '' : s).normalize('NFKD').replace(/[̀-ͯ]/g, '').toLowerCase();
+  const key = s => letters(s).replace(/(\d)\s*[–-]\s*(?=\d)/g, '$1x').replace(/[^0-9a-z]+/g, '');
+  const wtext = x => typeof x === 'string' ? x : (x && x.w) || '';
+  const escRe = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  // the build's own tests (build/build.py), so a check here means what the build will say
+  const plain = s => ' ' + String(s).toLowerCase().replace(/[^0-9a-zÀ-ɏ]+/g, ' ').trim().split(' ').filter(Boolean).join(' ') + ' ';
+  const words = s => String(s).toLowerCase().match(/[\p{L}\p{N}_’]+/gu) || [];
+  const holds = (a, b) => b.length > 0 && a.some((_, i) => i <= a.length - b.length && b.every((x, j) => a[i + j] === x));
+  const rxCount = (w, s) => (s.match(new RegExp('(^|[^A-Za-z0-9])(' + escRe(w) + ')(?![A-Za-z0-9])', 'gi')) || []).length;
+  const shown = (w, ex, ans, hook) => (plain(ex).replace(plain(ans), ' ') + plain(hook || '')).includes(plain(w));
+  const curly = s => s.replace(/(^|[\s(\[“—–-])'/g, '$1‘').replace(/'/g, '’').replace(/(^|[\s(\[—–-])"/g, '$1“').replace(/"/g, '”');
+  const says = s => { const m = /\b(soccer|football)/i.exec(s); return m ? m[1].toLowerCase() : ''; };
+
+  let D = null, C = [], CAT = {}, DECK = {}, DRAW = [], FIND = [], NOTES = [], SINCE = '', SPELL = { hook: {}, answer: {} };
+  const QUIET = ['hook-answer', 'cross-cat'];   // findings that are fine as they are: shown on the card, never counted as a check
+  let db = null, owner = false, live = false;
+  const EDITS = {}, NEWS = {}, ASKS = {}, DONE = {};   // his saves, and the GM's log of what became of each (done)
+  const S = {
+    v: 'cards',
+    cards: { q: '', cat: '', st: 'live', colors: [1, 2, 3], mine: false, checks: false, sort: 'deck', n: 40 },
+    categories: { q: '' },
+    hook: { q: '', sort: 'most', checks: false, fresh: false, n: 60 },
+    answer: { q: '', sort: 'most', checks: false, fresh: false, n: 60 },
+    wrong: { q: '', sort: 'most', checks: false, fresh: false, n: 60, mode: 'answers' }
+  };
+  const POOLNAME = { hook: ['hook', 'hooks'], answer: ['answer', 'answers'], wrong: ['wrong answer', 'wrong answers'] };
+  const FLAG = {   // a pool entry's own findings (tools/library.py entry_flags): its badge, and whether it asks for a look
+    case: ['Two capitals or accents', 'bad', 1], marks: ['Hyphen or space differs', 'warn', 1], near: ['Near twin', 'warn', 1], repeat: ['Repeats in one deck', 'warn', 1],
+    kinds: ['In two kinds', 'warn', 1], lonely: ['Only one card', 'warn', 1], thin: ['Thin: under 4 answers', 'bad', 1], mixed: ['Mixes numbers and words', 'bad', 1],
+    answer: ['Also an answer', '', 0], hook: ['Also a hook', '', 0], mine: ['Your own', 'mine', 0], own: ['Your own wrong answers only', 'mine', 0]
+  };
+
+  // ---- a card as it reads now: the library's card with Morg's saved edit on top ----
+  function derive() {   // each save's fate: the newest record in the log for the wording he saved (its at), or still waiting
+    const last = {};
+    Object.keys(DONE).map(k => DONE[k]).sort((a, b) => String(a.at).localeCompare(String(b.at))).forEach(r => { last[r.col + '|' + r.id + '|' + r.for] = r; });
+    [['edits', EDITS], ['new', NEWS], ['asks', ASKS]].forEach(([col, store]) => Object.keys(store).forEach(id => {
+      const d = store[id], r = last[col + '|' + id + '|' + d.at];
+      d.st = r ? r.st : col === 'asks' ? 'asked' : 'saved'; d.res = r ? r.res || '' : ''; d.card = r ? r.card || '' : '';
+    }));
+  }
+  function inLibrary(c, e) {   // the library already reads as his edit (the GM republished it after applying)
+    return Object.keys(e.f || {}).every(k => k === 'wr' ? JSON.stringify(c.wr && c.wr.length ? c.wr.map(wtext) : null) === JSON.stringify(e.f.wr || null) : base(c, k) === e.f[k]);
+  }
+  function ed(c) { const e = c && EDITS[c.id]; return e && e.st !== 'dropped' && !(e.st === 'applied' && inLibrary(c, e)) ? e : null; }
+  function view(c) {
+    if (c.s === 'n') return c;
+    const e = ed(c), f = e ? e.f || {} : {};
+    const v = Object.assign({}, c);
+    if ('ex' in f) v.ex = f.ex; if ('w' in f) v.w = f.w; if ('hook' in f) v.h = f.hook; if ('means' in f) v.m = f.means; if ('d' in f) v.d = f.d; if ('cat' in f) v.c = f.cat;
+    if ('wr' in f) { if (f.wr) v.wr = f.wr; else delete v.wr; }
+    v.edited = !!e; v.edit = e; return v;
+  }
+  function news() {   // his own new cards, waiting to go into their decks
+    return Object.keys(NEWS).map(id => NEWS[id]).filter(n => n.st !== 'dropped' && !(n.st === 'applied' && n.card && IDX[n.card] != null && C[IDX[n.card]].w === n.w)).sort((a, b) => (b.at || '').localeCompare(a.at || ''))
+      .map(n => ({ id: 'new:' + n._id, doc: n._id, s: 'n', fate: n.st, res: n.res, card: n.card, c: n.cat, d: n.d, w: n.w, ex: n.ex, m: n.means, h: n.hook, k: n.k || 'own', wr: (n.wr || []).filter(Boolean), src: n.src, wm: n.wm, deck: n.deck, a: (n.at || '').slice(0, 10) }));
+  }
+  const deckOf = c => c.deck || c.id.split(':')[0];
+  const tileOf = cat => (CAT[cat] || {}).tile || '';
+  function marked(ex, w) {
+    const m = w ? new RegExp('(^|[^A-Za-z0-9])(' + escRe(w) + ')(?![A-Za-z0-9])', 'i').exec(ex) : null;
+    if (!m) return esc(ex);
+    const i = m.index + m[1].length;
+    return esc(ex.slice(0, i)) + '<mark>' + esc(ex.slice(i, i + w.length)) + '</mark>' + esc(ex.slice(i + w.length));
+  }
+  function wrongsOf(c) {   // what its other two buttons can show
+    if (c.wr && c.wr.length) return { kind: 'mine', list: c.wr.map(wtext) };
+    if (c.nr) return { kind: 'near', rule: c.nr };
+    if (c.ix == null) { const kd = c.k && c.k !== 'own' && D.pools.kind.find(x => x.dk === c.deck && x.k === c.k); return kd ? { kind: 'pool', list: kd.a.filter(a => a !== c.w) } : { kind: 'none', list: [] }; }
+    return { kind: 'pool', list: DRAW[c.ix].map(j => D.pools.wrong[j].t) };
+  }
+
+  // ---- drawing ----
+  function lede() {
+    const n = C.filter(c => c.s !== 'o').length, play = C.filter(c => c.s === 'a' || c.s === 'l').length, fresh = C.filter(c => c.s !== 'o' && c.a > SINCE).length;
+    $('lede').innerHTML = '<b>' + fmt(n) + '</b> cards, ' + fmt(play) + ' in play' + (fresh ? ', ' + fmt(fresh) + ' new this week' : '') + '. From the decks on ' + day(D.today) + ' (' + esc(D.commit) + ')';
+  }
+  function tabs() { $('tabs').querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.v === S.v))); }
+  function render() {
+    tabs();
+    const s = S[S.v]; $('q').value = s.q || '';
+    $('q').placeholder = { cards: 'Search a word, a name, a card id', categories: 'Search the categories', hook: 'Search the hooks', answer: 'Search the answers', wrong: 'Search the wrong answers' }[S.v];
+    if (S.v === 'cards') viewCards(); else if (S.v === 'categories') viewCats(); else viewPool(S.v);
+  }
+  function badges(c) {
+    const b = [];
+    if (c.s === 'n') b.push(c.fate === 'held' ? ['Your new card, held', 'warn'] : c.fate === 'applied' ? ['Your new card, now ' + c.card, 'mine'] : ['Your new card', 'mine']);
+    if (c.edited) { const st = c.edit.st; b.push(st === 'held' ? ['Your edit, held', 'warn'] : st === 'applied' ? ['Your edit, applied', 'mine'] : ['Your edit, waiting', 'mine']); }
+    if (c.s === 'p') b.push(['Waiting on ' + (c.wt || []).map(w => WHO[w] || w).join(', '), 'warn']);
+    if (c.s === 'f') b.push(['Flagged', 'bad']); if (c.s === 'o') b.push(['Out', 'bad']); if (c.s === 'l') b.push(['Locked', 'mine']);
+    if (c.s !== 'n' && c.s !== 'o' && c.a > SINCE) b.push(['New', 'new']);
+    if (c.ix != null && FIND[c.ix].length) b.push([plural(FIND[c.ix].length, 'check'), 'warn']);
+    if (says([c.ex, c.m, c.h, c.w].join(' '))) b.push(['Says ' + says([c.ex, c.m, c.h, c.w].join(' ')), 'warn']);
+    return b.length ? '<div class="badges">' + b.map(x => '<span class="badge ' + x[1] + '">' + esc(x[0]) + '</span>').join('') + '</div>' : '';
+  }
+  function cardRow(c) {
+    const v = view(c);
+    return '<li><button type="button" class="row" data-card="' + esc(c.id) + '"><span class="head"><i class="rc c' + v.d + '"></i><span class="hook">' + esc(v.h) + '</span><span class="tag">' + esc(tileOf(v.c)) + '</span></span>' +
+      '<span class="ex">' + marked(v.ex, v.w) + '</span><span class="means">' + esc(v.m) + '</span>' + badges(v) + '</button></li>';
+  }
+  const HAY = {};
+  function hay(c) { const v = view(c); return letters([v.h, v.w, v.ex, v.m, c.id, (v.wr || []).map(wtext).join(' '), (CAT[v.c] || {}).name].join(' ')); }
+  function stateOk(c, st) {
+    return st === 'all' || (st === 'live' && c.s !== 'o') || (st === 'play' && (c.s === 'a' || c.s === 'l')) || (st === 'wait' && (c.s === 'p' || c.s === 'n')) || (st === 'flag' && c.s === 'f') || (st === 'out' && c.s === 'o') || (st === 'mine' && (c.s === 'n' || ed(c)));
+  }
+  function shownCards() {
+    const s = S.cards, q = letters(s.q).trim();
+    const all = news().concat(C).filter(c => {
+      const v = view(c);
+      return (!s.cat || v.c === s.cat) && s.colors.indexOf(v.d) >= 0 && stateOk(c, s.st) && (!s.checks || (c.ix != null && FIND[c.ix].length)) && (!q || (HAY[c.id] || (HAY[c.id] = hay(c))).indexOf(q) >= 0);
+    });
+    if (s.sort === 'new') all.sort((a, b) => (view(b).a || '').localeCompare(view(a).a || '') || (b.e || '').localeCompare(a.e || ''));
+    else if (s.sort === 'az') all.sort((a, b) => letters(view(a).h).localeCompare(letters(view(b).h)));
+    else if (s.sort === 'color') all.sort((a, b) => view(a).d - view(b).d);
+    return all;
+  }
+  function catOptions(sel, any) { return (any ? '<option value="">' + esc(any) + '</option>' : '') + D.cats.map(c => '<option value="' + c.id + '"' + (c.id === sel ? ' selected' : '') + '>' + esc(c.name) + (c.tile && c.tile !== c.name ? ' · ' + esc(c.tile) : '') + '</option>').join(''); }
+  function checksPanel(pool) {
+    const fs = D.report.map((f, k) => [f, k]).filter(x => x[0].pool === pool && x[0].items.length);
+    if (!fs.length) return '';
+    return '<details class="panel" id="checks"' + (S.open === pool ? ' open' : '') + '><summary>Checks<span class="n">' + fs.map(([f]) => fmt(f.items.length)).join(' · ') + '</span></summary>' +
+      fs.map(([f, k]) => '<details class="panel inner"><summary>' + esc(f.title) + '<span class="n">' + fmt(f.items.length) + '</span></summary><p class="why">' + esc(f.why) + (f.rule ? '. A clear rule: new and reworded cards are held to it' : '') + '</p><ul>' +
+        f.items.slice(0, 200).map((x, n) => '<li><button type="button" data-find="' + k + ':' + n + '">' + esc(x.text) + '</button></li>').join('') + (f.items.length > 200 ? '<li class="why">… and ' + fmt(f.items.length - 200) + ' more in the printed report</li>' : '') + '</ul></details>').join('') + '</details>';
+  }
+  function viewCards() {
+    const s = S.cards, list = shownCards(), fresh = list.filter(c => c.s !== 'n' && c.s !== 'o' && c.a > SINCE).length;
+    const chip = (attr, val, on, label) => '<button type="button" ' + attr + '="' + val + '" aria-pressed="' + on + '">' + label + '</button>';
+    $('main').innerHTML = '<div class="filters"><div class="two"><select id="f-cat" aria-label="Category">' + catOptions(s.cat, 'Every category') + '</select>' +
+      '<select id="f-st" aria-label="Standing">' + [['live', 'All but out'], ['play', 'In play'], ['wait', 'Waiting on the reviewers'], ['flag', 'Flagged'], ['out', 'Out'], ['mine', 'Your edits and cards'], ['all', 'All']].map(o => '<option value="' + o[0] + '"' + (s.st === o[0] ? ' selected' : '') + '>' + o[1] + '</option>').join('') + '</select></div>' +
+      '<div class="chips">' + [1, 2, 3].map(d => chip('data-color', d, s.colors.indexOf(d) >= 0, '<i class="rc c' + d + '"></i>' + COLOR[d])).join('') + chip('data-tog', 'checks', s.checks, 'Has a check') + '</div></div>' +
+      checksPanel('card') +
+      '<div class="countrow"><p class="count"><b>' + plural(list.length, 'card') + '</b>' + (fresh ? ', ' + fmt(fresh) + ' new this week' : '') + '</p>' +
+      '<select id="f-sort" aria-label="Order">' + [['deck', 'Deck order'], ['new', 'Newest'], ['az', 'A to Z'], ['color', 'By color']].map(o => '<option value="' + o[0] + '"' + (s.sort === o[0] ? ' selected' : '') + '>' + o[1] + '</option>').join('') + '</select></div><ol class="list" id="list"></ol>';
+    paginate(list, cardRow, 'cards');
+  }
+  function paginate(list, row, v) {
+    const box = $('list'), s = S[v], step = v === 'cards' ? 40 : 60;
+    let shownN = 0;
+    function more() {
+      const to = Math.min(list.length, Math.max(shownN + step, shownN ? 0 : s.n));
+      box.insertAdjacentHTML('beforeend', list.slice(shownN, to).map(row).join('')); shownN = to; s.n = Math.max(step, shownN);
+      const old = $('more'); if (old) old.remove();
+      if (shownN < list.length) {
+        box.insertAdjacentHTML('afterend', '<button type="button" class="btn more" id="more">Show more (' + fmt(list.length - shownN) + ' left)</button>');
+        $('more').addEventListener('click', more);
+        if (window.IntersectionObserver) { const io = new IntersectionObserver(es => { if (es[0].isIntersecting) { io.disconnect(); more(); } }, { rootMargin: '600px' }); io.observe($('more')); }
+      }
+      if (!list.length) box.innerHTML = '<li class="empty">Nothing matches. Try fewer filters.</li>';
+    }
+    s.n = s.n || step; more();
+  }
+  function viewCats() {
+    const q = letters(S.categories.q).trim(), asks = Object.keys(ASKS).map(id => ASKS[id]).sort((a, b) => (b.at || '').localeCompare(a.at || ''));
+    const all = news().concat(C), cats = D.cats.filter(c => !q || letters(c.name + ' ' + c.tile + ' ' + c.note + ' ' + c.decks.join(' ')).indexOf(q) >= 0);
+    $('main').innerHTML = '<div class="filters"><div class="row" style="cursor:default"><span>One list of categories: every card picks one from it, and a new one starts as your ask, for the GM to add with its tile word.</span>' +
+      (live && owner ? '<span><button type="button" class="btn" id="ask">Ask for a new category</button></span>' : '') + '</div></div>' +
+      (asks.length ? '<p class="count"><b>Your asks</b></p><ol class="list" style="margin-bottom:14px">' + asks.map(a => '<li><div class="row" style="cursor:default"><span class="head"><span class="hook">' + esc(a.name) + '</span><span class="tag">' + esc(a.tile || '') + '</span></span>' +
+        (a.note ? '<span class="means">' + esc(a.note) + '</span>' : '') + '<div class="badges"><span class="badge ' + (a.st === 'added' ? 'mine' : a.st === 'dropped' ? 'bad' : 'warn') + '">' + (a.st === 'added' ? 'Added' : a.st === 'dropped' ? 'Not added' : 'Waiting for the GM') + '</span>' + (a.res ? '<span class="badge">' + esc(a.res) + '</span>' : '') + '</div>' +
+        (a.st !== 'added' && live && owner ? '<div><button type="button" class="btn ghost" data-unask="' + esc(a._id) + '">' + (a.st === 'dropped' ? 'Clear it' : 'Take back') + '</button></div>' : '') + '</div></li>').join('') + '</ol>' : '') +
+      checksPanel('category') +
+      '<p class="count"><b>' + plural(D.cats.length, 'category', 'categories') + '</b></p><ol class="list">' + cats.map(cat => {
+        const mine = all.filter(c => view(c).c === cat.id && c.s !== 'o'), by = [1, 2, 3].map(d => mine.filter(c => view(c).d === d).length), tot = mine.length || 1;
+        const fresh = mine.filter(c => c.s !== 'n' && c.a > SINCE).length, wait = mine.filter(c => c.s === 'p' || c.s === 'n').length, flag = mine.filter(c => c.s === 'f').length;
+        const decks = cat.decks.length ? (cat.decks.length > 1 ? 'Decks: ' : 'Deck: ') + cat.decks.map(d => DECK[d].name).join(', ') : 'Cards from any deck, new ones to ' + DECK[cat.home].name;
+        return '<li><button type="button" class="row cat" data-cat="' + cat.id + '"><span class="head"><span class="hook">' + esc(cat.name) + '</span><span class="tag">' + esc(cat.tile) + '</span></span>' +
+          '<span class="bar" aria-hidden="true">' + by.map((n, i) => '<i class="c' + (i + 1) + '" style="width:' + (100 * n / tot) + '%"></i>').join('') + '</span>' +
+          '<span class="nums"><span>' + plural(mine.length, 'card') + '</span>' + by.map((n, i) => '<span><i class="rc c' + (i + 1) + '"></i> ' + fmt(n) + '</span>').join('') +
+          (fresh ? '<span>' + fmt(fresh) + ' new</span>' : '') + (wait ? '<span>' + fmt(wait) + ' waiting</span>' : '') + (flag ? '<span>' + fmt(flag) + ' flagged</span>' : '') + '</span>' +
+          (cat.note ? '<span class="means">' + esc(cat.note) + '</span>' : '') + '<span class="nums">' + esc(decks) + '</span></button></li>';
+      }).join('') + '</ol>';
+  }
+  function entryBadges(e, name) {
+    const b = (e.x || []).map(x => { const f = FLAG[x[0]] || [x[0], '', 0]; return '<span class="badge ' + f[1] + '">' + esc(f[0] + (x[1] ? ': ' + x[1] : '')) + '</span>'; });
+    if (e.n > SINCE) b.unshift('<span class="badge new">New</span>');
+    if (e.f) b.push('<span class="badge">' + esc(e.f.join(' · ')) + '</span>');
+    if (name === 'wrong' && e.o) b.push('<span class="badge mine">' + plural(e.o.length, 'card') + ' of yours</span>');
+    return b.length ? '<span class="badges">' + b.join('') + '</span>' : '';
+  }
+  const asks = e => (e.x || []).some(x => (FLAG[x[0]] || [])[2]);
+  function viewPool(name) {
+    const s = S[name], q = letters(s.q).trim();
+    const kinds = name === 'wrong' && s.mode === 'kinds';
+    const src = kinds ? D.pools.kind.map((e, j) => Object.assign({ j: j, t: DECK[e.dk].name + ' · ' + e.k, n: '' }, e)) : D.pools[name].map((e, j) => Object.assign({ j: j }, e));
+    let list = src.filter(e => (!q || letters(e.t + ' ' + (e.a || []).join(' ')).indexOf(q) >= 0) && (!s.checks || asks(e)) && (!s.fresh || e.n > SINCE));
+    const count = e => kinds ? e.a.length : name === 'wrong' ? e.c.length + (e.o || []).length : e.c.length;
+    if (s.sort === 'az') list.sort((a, b) => letters(a.t).localeCompare(letters(b.t)));
+    else if (s.sort === 'new') list.sort((a, b) => String(b.n).localeCompare(String(a.n)) || count(b) - count(a));
+    else list.sort((a, b) => count(b) - count(a) || letters(a.t).localeCompare(letters(b.t)));
+    const all = D.pools[name], fresh = all.filter(e => e.n > SINCE).length, flagged = (kinds ? D.pools.kind : all).filter(asks).length;
+    const intro = { hook: 'Every tile word, with the cards behind it. A tile shows its category over its hook.', answer: 'Every right answer, with the cards that use it and the kinds it lends itself to as a wrong answer.',
+      wrong: 'Every answer a card can show as wrong: its kind’s answers in its deck, or your own two. ' + fmt(C.filter(c => c.nr && c.s !== 'o').length) + ' number cards get two made-up near misses instead.' }[name];
+    const chip = (tog, on, label) => '<button type="button" data-ptog="' + tog + '" aria-pressed="' + on + '">' + label + '</button>';
+    $('main').innerHTML = '<div class="filters"><p class="means" style="font-style:normal">' + esc(intro) + '</p>' +
+      (name === 'wrong' ? '<div class="seg" role="group" aria-label="Show"><button type="button" data-mode="answers" aria-pressed="' + !kinds + '">Wrong answers</button><button type="button" data-mode="kinds" aria-pressed="' + kinds + '">Kinds</button></div>' : '') +
+      '<div class="chips">' + chip('checks', s.checks, 'Needs a look (' + fmt(flagged) + ')') + (kinds ? '' : chip('fresh', s.fresh, 'New this week (' + fmt(fresh) + ')')) + '</div></div>' +
+      checksPanel(name) +
+      '<div class="countrow"><p class="count"><b>' + plural(kinds ? D.pools.kind.length : all.length, kinds ? 'kind' : POOLNAME[name][0], kinds ? 'kinds' : POOLNAME[name][1]) + '</b>' + (kinds ? '' : ', ' + fmt(fresh) + ' new this week') + (list.length !== (kinds ? D.pools.kind.length : all.length) ? ', ' + fmt(list.length) + ' shown' : '') + '</p>' +
+      '<select id="p-sort" aria-label="Order">' + [['most', 'Most used'], ['az', 'A to Z']].concat(kinds ? [] : [['new', 'Newest']]).map(o => '<option value="' + o[0] + '"' + (s.sort === o[0] ? ' selected' : '') + '>' + o[1] + '</option>').join('') + '</select></div><ol class="list" id="list"></ol>';
+    paginate(list, e => '<li><button type="button" class="prow" data-e="' + (kinds ? 'k' : '') + e.j + '"><span class="pt">' + esc(e.t) + '</span><span class="pn">' +
+      (kinds ? plural(e.a.length, 'answer') : plural(count(e), 'card')) + '</span>' + (kinds ? '<span class="means" style="grid-column:1/-1">' + esc(e.a.slice(0, 8).join(', ') + (e.a.length > 8 ? '…' : '')) + '</span>' : '') + entryBadges(e, name) + '</button></li>', name);
+  }
+
+  // ---- the sheet: a stack, so Back goes to the sheet before ----
+  const stack = [];
+  function sheet(fn) { stack.push(fn); draw(); }
+  function draw() {
+    const fn = stack[stack.length - 1]; if (!fn) return close();
+    $('sheet').innerHTML = ''; $('scrim').hidden = false; document.body.style.overflow = 'hidden';
+    fn($('sheet')); $('sheet').scrollTop = 0;
+  }
+  function back() { stack.pop(); if (stack.length) draw(); else close(); }
+  function close() { stack.length = 0; $('scrim').hidden = true; $('sheet').innerHTML = ''; document.body.style.overflow = ''; }
+  function head(title, sub) {
+    return '<div class="shead">' + (stack.length > 1 ? '<button type="button" class="btn ghost" data-back>‹ Back</button>' : '') + '<span class="sp"></span><button type="button" class="btn ghost" data-close>Close</button></div>' +
+      '<h2 id="sheet-h">' + title + '</h2>' + (sub ? '<p class="sub">' + sub + '</p>' : '');
+  }
+  $('scrim').addEventListener('click', e => { if (e.target === $('scrim')) close(); });
+  $('sheet').addEventListener('click', e => {
+    if (e.target.closest('[data-close]')) close(); else if (e.target.closest('[data-back]')) back();
+    const c = e.target.closest('[data-card]'); if (c && $('sheet').contains(c)) openCard(c.dataset.card);
+  });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && !$('scrim').hidden) back(); });
+
+  function findCard(id) { return id.indexOf('new:') === 0 ? news().find(n => n.id === id) : C[IDX[id]]; }
+  let IDX = {};
+  function cardList(ixs) { return '<ol class="list">' + ixs.map(i => cardRow(C[i])).join('') + '</ol>'; }
+
+  function openCard(id) {
+    const c = findCard(id); if (!c) return;
+    sheet(el => {
+      const v = view(c), dk = DECK[v.deck || deckOf(c)] || {}, wr = wrongsOf(v), e = ed(c), fs = c.ix != null ? FIND[c.ix].concat(NOTES[c.ix]) : [];
+      const choice = wr.kind === 'mine' ? 'Your own two: ' : wr.kind === 'near' ? 'Two made-up near misses: ' + wr.rule : wr.kind === 'pool' ? 'Any two of ' + plural(wr.list.length, 'answer') + ' of its kind, “' + v.k + '”, in ' + (dk.name || '') : 'None yet';
+      el.innerHTML = head(esc(v.h), esc(STATE[c.s] || '') + (c.s === 'p' && c.wt ? ': ' + c.wt.map(w => WHO[w] || w).join(', ') : '') + (c.fn ? '. Your flag: ' + esc(c.fn) : '') + (c.ow ? '. ' + esc(c.ow) : '')) +
+        '<div class="tilebox"><div class="tile" aria-label="The tile"><i class="rc c' + v.d + '"></i><span class="tt">' + esc(tileOf(v.c)) + '</span><span class="th">' + esc(v.h) + '</span></div>' +
+        '<div style="display:grid;gap:6px;min-width:0"><p class="ex">' + marked(v.ex, v.w) + '</p><p class="means">' + esc(v.m) + '</p></div></div>' +
+        '<div style="display:flex;gap:8px;flex-wrap:wrap">' + (live && owner && c.s !== 'o' ? '<button type="button" class="btn go" id="edit">' + (c.s === 'n' ? 'Edit your card' : 'Edit') + '</button>' : '') + '<button type="button" class="btn" id="try">Try it</button>' +
+          (live && owner && ((e && e.st !== 'applied') || (c.s === 'n' && c.fate !== 'applied')) ? '<button type="button" class="btn ghost" id="undo">' + (c.s === 'n' ? 'Delete your card' : 'Undo your edit') + '</button>' : '') + '</div><div id="playbox"></div>' +
+        (e || c.s === 'n' ? fateMsg(e || c, c.s === 'n') : '') +
+        (fs.length ? '<div class="msgs">' + fs.map(([k, n]) => '<div class="msg ' + (QUIET.indexOf(D.report[k].code) >= 0 ? 'info' : 'warn') + '">' + esc(D.report[k].title + ': ' + D.report[k].items[n].text) + '</div>').join('') + '</div>' : '') +
+        '<div style="display:grid;gap:6px"><b style="font-size:14px">Wrong answers</b><p class="means" style="font-style:normal">' + esc(choice) + '</p>' +
+        (wr.list && wr.list.length ? '<div class="choices"><span class="right">' + esc(v.w) + '</span>' + wr.list.slice(0, 12).map(x => '<span>' + esc(x) + '</span>').join('') + (wr.list.length > 12 ? '<span>+' + fmt(wr.list.length - 12) + ' more</span>' : '') + '</div>' : '') + '</div>' +
+        '<dl class="kv"><dt>Category</dt><dd>' + esc((CAT[v.c] || {}).name || v.c) + (c.own || (v.c !== (DECK[deckOf(c)] || {}).cat) ? ' (its own, over its deck’s ' + esc((CAT[(DECK[deckOf(c)] || {}).cat] || {}).name || '') + ')' : '') + '</dd>' +
+        '<dt>Color</dt><dd>' + COLOR[v.d] + ', ' + EASE[v.d] + '</dd><dt>Deck</dt><dd>' + esc(dk.name || deckOf(c)) + '</dd>' +
+        (v.src ? '<dt>Source</dt><dd><a href="' + esc(v.src) + '" target="_blank" rel="noopener">' + esc(v.src.replace(/^https?:\/\/(www\.)?/, '').slice(0, 60)) + '</a></dd>' : '<dt>Source</dt><dd>' + esc(dk.src || 'None yet: the fact checker finds one') + '</dd>') +
+        '<dt>Kind</dt><dd>' + esc(v.k === 'own' ? 'its own (lends its answer to no other card)' : v.k) + '</dd>' +
+        (c.a ? '<dt>Came in</dt><dd>' + day(c.a) + (c.e && c.e > c.a ? ', last changed ' + day(c.e) : '') + '</dd>' : '') + '<dt>Card</dt><dd>' + esc(c.id) + '</dd></dl>' +
+        '';
+      $('try').addEventListener('click', () => tryIt(v, wr));
+      if ($('edit')) $('edit').addEventListener('click', () => sheet(s => editSheet(s, c)));
+      if ($('undo')) $('undo').addEventListener('click', () => { if (c.s === 'n') remove('new', c.doc); else remove('edits', c.id); back(); });
+    });
+  }
+  function fateMsg(x, isNew) {
+    const st = isNew ? x.fate : x.st, what = isNew ? 'Your card' : 'Your edit';
+    if (st === 'held') return '<div class="msg warn">' + what + ' is held: ' + esc(x.res || 'the GM will ask you about it') + '. Change it and save again, or tell the GM it’s OK</div>';
+    if (st === 'applied') return '<div class="msg ok">' + what + ' is in its deck' + (x.card ? ' as ' + esc(x.card) : '') + ': ' + esc(x.res || '') + '. It reads as yours here until the room’s data refreshes</div>';
+    return '<div class="msg ok">' + what + ' waits for the hub’s “Apply my card edits”' + (isNew ? '' : '. It changes ' + Object.keys(x.f || {}).map(k => FIELD[k] || k).join(', ')) + '</div>';
+  }
+  const FIELD = { ex: 'the sentence', w: 'the answer', hook: 'the hook', means: 'the meaning', d: 'the color', cat: 'the category', wr: 'the wrong answers' };
+
+  // ---- Try it: the card as it plays, with two of its wrong answers ----
+  function nearTwo(w) {
+    const sp = (D.rules.spelled || []).indexOf(String(w).toLowerCase()), n = sp >= 2 ? sp : Number(String(w).replace(/,/g, ''));
+    const out = new Set(), year = sp < 2 && /^\d{4}$/.test(w) && n > 1850 && n < 2100, step = () => 1 + Math.floor(Math.random() * 3);
+    for (let t = 0; out.size < 2 && t < 50; t++) {
+      let m = year ? n + (Math.random() < .5 ? -1 : 1) * (1 + Math.floor(Math.random() * 10)) : n <= 12 ? n + (Math.random() < .5 ? -1 : 1) * step() : Math.round(n * (1 + (Math.random() < .5 ? -1 : 1) * (.1 + Math.random() * .25)));
+      if (m < 0 || m === n || (sp >= 2 && (m < 1 || m > 20))) continue;
+      out.add(sp >= 2 ? D.rules.spelled[m] : (String(w).indexOf(',') >= 0 ? m.toLocaleString('en-US') : String(m)));
+    }
+    return Array.from(out);
+  }
+  function tryIt(v, wr) {
+    const pool = wr.kind === 'near' ? nearTwo(v.w) : (wr.list || []).slice();
+    for (let i = pool.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [pool[i], pool[j]] = [pool[j], pool[i]]; }
+    const keys = pool.slice(0, 2).concat([v.w]); for (let i = keys.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [keys[i], keys[j]] = [keys[j], keys[i]]; }
+    const m = new RegExp('(^|[^A-Za-z0-9])(' + escRe(v.w) + ')(?![A-Za-z0-9])', 'i').exec(v.ex), i = m ? m.index + m[1].length : -1;
+    const blank = i < 0 ? esc(v.ex) : esc(v.ex.slice(0, i)) + '<span class="blank" id="blank">&nbsp;</span>' + esc(v.ex.slice(i + v.w.length));
+    $('playbox').innerHTML = '<div class="play"><p>' + blank + '</p><div class="keys">' + keys.map(k => '<button type="button" data-k="' + esc(k) + '">' + esc(k) + '</button>').join('') + '</div><div class="pm" id="pm"></div>' +
+      (wr.kind === 'near' ? '<div class="pm">The game makes up its own near misses each day: these are like them</div>' : '') + '</div>';
+    $('playbox').querySelector('.keys').addEventListener('click', e => {
+      const b = e.target.closest('[data-k]'); if (!b || b.parentNode.dataset.done) return;
+      b.parentNode.dataset.done = 1; const right = b.dataset.k === v.w;
+      b.parentNode.querySelectorAll('button').forEach(x => { if (x.dataset.k === v.w) x.classList.add('right'); else if (x === b) x.classList.add('wrong'); else x.classList.add('dim'); });
+      if ($('blank')) $('blank').textContent = v.w;
+      $('pm').textContent = (right ? 'Right. ' : 'Missed. ') + v.m;
+    });
+  }
+
+  // ---- edits: the build's own rules, warning but never blocking except for the game's hard rules ----
+  function problems(f, c) {
+    const p = [], w = [], low = f.ex.toLowerCase(), R = D.rules;
+    if (!f.ex) p.push('Write the sentence'); if (!f.w) p.push('Give the answer'); if (!f.hook) p.push('Give a hook'); if (!f.means) p.push('Give the meaning');
+    if (!f.cat || !CAT[f.cat]) p.push('Pick a category from the list');
+    if (f.ex && f.w) { const n = rxCount(f.w, f.ex); if (n !== 1) p.push(n ? 'The answer is in the sentence twice' : 'The answer isn’t in the sentence word for word'); }
+    if (f.hook) {
+      if (f.hook.length > R.hook_max) p.push('The hook is over ' + R.hook_max + ' letters, counting spaces');
+      if (/^(the|a|an)\s/i.test(f.hook)) p.push('The hook can’t start with the, a or an');
+      if (f.ex && !new RegExp('(^|[^\\p{L}\\p{N}_’-])' + escRe(f.hook) + '(?![\\p{L}\\p{N}_-])', 'iu').test(f.ex)) p.push('The hook isn’t in the sentence word for word');
+      if (f.w && (holds(words(f.hook), words(f.w)) || holds(words(f.w), words(f.hook)))) p.push('The hook can’t be, hold or be part of the answer');
+    }
+    const all = [f.ex, f.means, f.w, f.hook].concat(f.wr || []).join(' ');
+    if (/;/.test(all)) p.push('No semicolons');
+    if (/\.$/.test(f.ex.trim())) p.push('No period at the end of the sentence');
+    if (/[.!?][”"]?\s+[A-Z]/.test(f.ex.replace(/\b(Mrs|Mr|Ms|No|St|vs|D\.C|U\.S)\. /g, 'X '))) p.push('One sentence only');
+    if (f.ex.length > R.ex_max) p.push('The sentence is over ' + R.ex_max + ' characters (' + f.ex.length + ')');
+    if (f.means.length > R.means_max) p.push('The meaning is over ' + R.means_max + ' characters (' + f.means.length + ')');
+    if (f.w.length > R.w_max) p.push('The answer is over ' + R.w_max + ' characters');
+    if (f.own) {
+      const [a, b] = f.wr;
+      if (!a || !b) p.push('Give two wrong answers');
+      else if (plain(a) === plain(b)) p.push('The two wrong answers must differ');
+      else if (plain(a) === plain(f.w) || plain(b) === plain(f.w)) p.push('A wrong answer is the answer itself');
+      else if (shown(a, f.ex, f.w, f.hook) || shown(b, f.ex, f.w, f.hook)) p.push('A wrong answer is already in the sentence or on the tile');
+      if ((a || '').length > R.w_max || (b || '').length > R.w_max) p.push('A wrong answer is over ' + R.w_max + ' characters');
+    } else if (f.fresh && !f.k) p.push('Pick a kind for its wrong answers, or write your own two');
+    // the library's own consistency: spelled as the cards in play spell it
+    const slip = (pool, form, what) => { const seen = SPELL[pool][key(form)]; if (!form || !seen || seen.has(form)) return; const o = Array.from(seen).find(x => letters(x) === letters(form)); if (o) w.push(['warn', 'The cards in play spell this ' + what + ' “' + o + '”']); };
+    slip('hook', f.hook, 'hook'); slip('answer', f.w, 'answer'); if (f.own) f.wr.forEach(x => slip('answer', x, 'wrong answer'));
+    if (says(all)) w.push(['warn', 'Try to avoid “' + says(all) + '”, so the game reads the same everywhere. Keep it only where the word is the fact']);
+    if (f.ex.length > 70 && f.ex.length <= R.ex_max) w.push(['info', 'Over 70 characters: fine, but shorter reads better on a small phone']);
+    if (f.hook.length > 10 && f.hook.length <= R.hook_max) w.push(['info', 'A hook of 10 letters or fewer fits every phone best']);
+    const dk = f.deck || (c && deckOf(c));
+    if (f.hook) { const same = C.filter(x => x !== c && x.s !== 'o' && deckOf(x) === dk && key(x.h) === key(f.hook)).length; if (same >= 2) w.push(['info', plural(same, 'other card') + ' in this deck already show “' + f.hook + '”']); }
+    if (f.w) {
+      const bl = s => letters(s.replace(new RegExp(escRe(f.w), 'i'), '___')), mine = bl(f.ex), bi = s => { const o = {}; for (let i = 0; i < s.length - 1; i++) o[s.slice(i, i + 2)] = (o[s.slice(i, i + 2)] || 0) + 1; return o; };
+      const dice = (a, b) => { const A = bi(a), B = bi(b); let n = 0, t = 0; for (const k in A) { t += A[k]; if (B[k]) n += Math.min(A[k], B[k]); } for (const k in B) t += B[k]; return t ? 2 * n / t : 0; };
+      const twin = C.find(x => x !== c && x.s !== 'o' && key(x.w) === key(f.w) && dice(bl(x.ex), mine) >= .7);
+      if (twin) w.push(['warn', 'Looks like the same fact as ' + twin.id + ': ' + twin.ex]);
+      const sp = (R.spelled || []).indexOf(f.w.toLowerCase());
+      if (!f.own && (/^\d[\d,]*$/.test(f.w) || sp >= 2)) w.push(['info', 'A number answer gets two made-up near misses, so the fact must be exact, or hedged (more than, about)']);
+    }
+    if (c && c.s === 'l') w.push(['warn', 'You locked this card. Your edit waits for your OK to unlock it']);
+    if (c && c.s !== 'n' && f.d !== c.d) w.push(['info', 'A new color sends the card back to the three reviewers']);
+    if (c && c.s !== 'n' && ['ex', 'w', 'hook', 'means'].some(k => f[k] !== base(c, k)) || f.fresh) w.push(['info', 'Your wording plays as written, once the fact checker checks the facts. You have the last word']);
+    return { p: p, w: w };
+  }
+  function base(c, k) { return { ex: c.ex, w: c.w, hook: c.h, means: c.m, d: c.d, cat: c.c }[k]; }
+  function editSheet(el, c) {
+    const fresh = !c || c.s === 'n', v = c ? view(c) : { c: S.cards.cat || D.cats[0].id, d: 1, ex: '', w: '', h: '', m: '', wr: [], k: '', src: '', wm: 0 };
+    let cat = v.c, d = v.d, deck = c ? (c.deck || deckOf(c)) : homeOf(cat, ''), own = !!(v.wr && v.wr.length) || (fresh && (!v.k || v.k === 'own')), k = fresh && v.k !== 'own' ? v.k : '';
+    const wr = (v.wr || []).map(wtext).concat(['', '']).slice(0, 2);
+    el.innerHTML = head(fresh ? (c ? 'Your new card' : 'A new card') : 'Edit “' + esc(v.h) + '”', fresh ? 'It goes on the end of its deck once you send it. The fact checker checks the facts, and you have the last word.' : 'Saved as you go. Send your edits from the hub when you’re done.') +
+      '<label class="f">Category<select id="f-c">' + catOptions(cat) + '</select></label>' +
+      (fresh ? '<label class="f" id="deckf">Deck <small>Where it lives: its official source and the draw’s rules</small><select id="f-deck"></select></label>' : '') +
+      '<div style="display:grid;gap:4px"><b style="font-size:14px">Color</b><div class="seg" id="f-d" role="group" aria-label="Color">' + [1, 2, 3].map(n => '<button type="button" data-d="' + n + '" aria-pressed="' + (d === n) + '"><i class="rc c' + n + '"></i>' + COLOR[n] + '</button>').join('') + '</div></div>' +
+      '<label class="f">Sentence <small>The answer must be in it word for word: it becomes the blank</small><textarea id="f-ex" rows="3">' + esc(v.ex) + '</textarea></label>' +
+      '<div class="two"><label class="f">Answer<input type="text" id="f-w" value="' + esc(v.w) + '" autocomplete="off"></label><label class="f">Hook <small>From the sentence, never the answer</small><input type="text" id="f-hook" value="' + esc(v.h) + '" autocomplete="off"></label></div>' +
+      '<label class="f">Meaning <small>Shows under the answer once it’s played</small><input type="text" id="f-m" value="' + esc(v.m) + '" autocomplete="off"></label>' +
+      '<div style="display:grid;gap:6px"><b style="font-size:14px">Wrong answers</b><div class="seg" id="f-own" role="group" aria-label="Wrong answers"><button type="button" data-own="0">' + (fresh ? 'From a kind' : 'From its kind') + '</button><button type="button" data-own="1">Your own two</button></div>' +
+      '<div id="ownbox" class="two"><label class="f">Wrong answer<input type="text" id="f-w1" value="' + esc(wr[0]) + '" autocomplete="off"></label><label class="f">Wrong answer<input type="text" id="f-w2" value="' + esc(wr[1]) + '" autocomplete="off"></label></div>' +
+      '<div id="kindbox"></div></div>' +
+      (fresh ? '<label class="f">Where the fact comes from <small>A link on the deck’s official site, for the fact checker</small><input type="url" id="f-src" value="' + esc(v.src || '') + '" placeholder="https://" autocomplete="off"></label>' +
+        '<label class="row" id="wmf" style="cursor:default;display:flex;gap:8px;align-items:center;font-size:14px"><input type="checkbox" id="f-wm"' + (v.wm ? ' checked' : '') + '> About the women’s game</label>' : '') +
+      '<div class="msgs" id="msgs"></div><div style="display:flex;gap:8px"><button type="button" class="btn go" id="ok">' + (fresh ? 'Save your card' : 'Save your edit') + '</button><button type="button" class="btn ghost" data-back>Cancel</button></div>';
+    function homeOf(cid, cur) { const ct = CAT[cid]; return ct ? (ct.decks.indexOf(cur) >= 0 ? cur : ct.home) : D.decks[0].id; }
+    function decks() {
+      if (!fresh) return;
+      const ct = CAT[cat], opts = ct.decks.length ? ct.decks : D.decks.map(x => x.id);
+      if (opts.indexOf(deck) < 0) deck = ct.home;
+      $('f-deck').innerHTML = opts.map(id => '<option value="' + id + '"' + (id === deck ? ' selected' : '') + '>' + esc(DECK[id].name) + '</option>').join('');
+      $('deckf').hidden = opts.length < 2;
+      $('wmf').hidden = DECK[deck].flags.indexOf('women') >= 0;
+    }
+    function kindbox() {
+      $('f-own').querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', String(!!+b.dataset.own === own)));
+      $('ownbox').hidden = !own;
+      if (own) { $('kindbox').innerHTML = fresh ? '<p class="means" style="font-style:normal">Your answer stays yours: it won’t turn up as a wrong answer on other cards.</p>' : ''; return; }
+      if (!fresh) { const x = wrongsOf(Object.assign({}, v, { wr: null, ix: c.ix })); $('kindbox').innerHTML = '<p class="means" style="font-style:normal">' + (c.wr && c.wr.length ? 'Back to its kind’s answers' : x.kind === 'near' ? 'Two made-up near misses: ' + esc(x.rule) : 'Any two of ' + plural((x.list || []).length, 'answer') + ' of its kind, “' + esc(c.k) + '”') + '</p>'; return; }
+      const ks = D.pools.kind.filter(x => x.dk === deck && !x.own);
+      if (ks.map(x => x.k).indexOf(k) < 0) k = '';
+      $('kindbox').innerHTML = '<label class="f">Kind <small>Its answer also turns up as a wrong answer on this kind’s cards, which go back to the reviewers</small><select id="f-k"><option value="">Pick a kind</option>' +
+        ks.map(x => '<option value="' + esc(x.k) + '"' + (x.k === k ? ' selected' : '') + '>' + esc(x.k + ': ' + x.a.slice(0, 4).join(', ') + (x.a.length > 4 ? '…' : '')) + '</option>').join('') + '</select></label>';
+      $('f-k').addEventListener('change', function () { k = this.value; check(); });
+    }
+    function read() {
+      const g = id => { const x = $(id); return x ? curly(x.value.replace(/\s+/g, ' ').trim()) : ''; };
+      return { cat: cat, d: d, deck: fresh ? deck : '', ex: g('f-ex'), w: g('f-w'), hook: g('f-hook'), means: g('f-m'), own: own, wr: own ? [g('f-w1'), g('f-w2')] : [], k: own ? '' : k, src: $('f-src') ? $('f-src').value.trim() : '', wm: $('f-wm') && !$('wmf').hidden && $('f-wm').checked ? 1 : 0, fresh: fresh };
+    }
+    function check() {
+      const f = read(), r = problems(f, c);
+      $('msgs').innerHTML = (r.p.length ? r.p.map(x => '<div class="msg">' + esc(x) + '</div>').join('') : '<div class="msg ok">Ready to save</div>') + r.w.map(x => '<div class="msg ' + x[0] + '">' + esc(x[1]) + '</div>').join('');
+      $('ok').disabled = !!r.p.length || !(live && owner); return f;
+    }
+    decks(); kindbox();
+    $('f-c').addEventListener('change', function () { cat = this.value; if (fresh) { deck = homeOf(cat, deck); decks(); kindbox(); } check(); });
+    if (fresh) $('f-deck').addEventListener('change', function () { deck = this.value; $('wmf').hidden = DECK[deck].flags.indexOf('women') >= 0; kindbox(); check(); });
+    $('f-d').addEventListener('click', e => { const b = e.target.closest('[data-d]'); if (!b) return; d = +b.dataset.d; $('f-d').querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', String(x === b))); check(); });
+    $('f-own').addEventListener('click', e => { const b = e.target.closest('[data-own]'); if (!b) return; own = !!+b.dataset.own; kindbox(); check(); });
+    ['f-ex', 'f-w', 'f-hook', 'f-m', 'f-w1', 'f-w2', 'f-src', 'f-wm'].forEach(id => { const x = $(id); if (x) { x.addEventListener('input', check); x.addEventListener('change', check); } });
+    check();
+    $('ok').addEventListener('click', () => {
+      const f = check(); if (problems(f, c).p.length) return;
+      if (fresh) {
+        const body = { cat: f.cat, deck: f.deck, d: f.d, ex: f.ex, w: f.w, hook: f.hook, means: f.means, wr: f.own ? f.wr : [], k: f.own ? '' : f.k, src: f.src, wm: f.wm, at: new Date().toISOString(), st: 'saved' };
+        put('new', c ? c.doc : 'n' + Date.now().toString(36) + Math.random().toString(36).slice(2, 6), body);
+      } else {
+        const now = { ex: f.ex, w: f.w, hook: f.hook, means: f.means, d: f.d, cat: f.cat }, ch = {}, was = {};
+        Object.keys(now).forEach(k => { if (now[k] !== base(c, k)) { ch[k] = now[k]; was[k] = base(c, k); } });
+        const bw = c.wr && c.wr.length ? c.wr.map(wtext) : null, nw = f.own ? f.wr : null;
+        if (JSON.stringify(bw) !== JSON.stringify(nw)) { ch.wr = nw; was.wr = bw; }
+        if (Object.keys(ch).length) put('edits', c.id, { id: c.id, f: ch, was: was, fp: c.fp, at: new Date().toISOString(), st: 'saved' });
+        else if (EDITS[c.id]) remove('edits', c.id);
+      }
+      back();
+    });
+  }
+  function askSheet(el) {
+    el.innerHTML = head('Ask for a new category', 'The GM adds it to the list with its tile word once you’ve named it. Until then, cards pick from the list as it is.') +
+      '<label class="f">Its name<input type="text" id="a-name" autocomplete="off" placeholder="Say, Goalkeepers"></label>' +
+      '<label class="f">Its tile word <small>Short: it sits over the hook on every tile, in every language</small><input type="text" id="a-tile" autocomplete="off"></label>' +
+      '<label class="f">What it covers<textarea id="a-note" rows="2"></textarea></label>' +
+      '<div class="msgs" id="msgs"></div><div style="display:flex;gap:8px"><button type="button" class="btn go" id="ok" disabled>Send the ask</button><button type="button" class="btn ghost" data-back>Cancel</button></div>';
+    const read = () => ({ name: curly($('a-name').value.trim()), tile: curly($('a-tile').value.trim()), note: curly($('a-note').value.trim()) });
+    const check = () => { const a = read(), taken = D.cats.find(c => letters(c.name) === letters(a.name) || (a.tile && letters(c.tile) === letters(a.tile)));
+      $('msgs').innerHTML = taken ? '<div class="msg warn">The list has ' + esc(taken.name) + ' (' + esc(taken.tile) + ') already</div>' : a.tile.length > 10 ? '<div class="msg info">Over 10 letters may not fit a tile on a small phone</div>' : '';
+      $('ok').disabled = !a.name || !(live && owner); };
+    ['a-name', 'a-tile', 'a-note'].forEach(id => $(id).addEventListener('input', check));
+    $('ok').addEventListener('click', () => { const a = read(); if (!a.name) return; put('asks', 'a' + Date.now().toString(36), Object.assign(a, { at: new Date().toISOString(), st: 'asked' })); back(); });
+  }
+
+  // ---- saving: one write at a time per document ----
+  const chain = {};
+  function status() {
+    const e = Object.keys(EDITS).filter(id => EDITS[id].st === 'saved').length, n = Object.keys(NEWS).filter(id => NEWS[id].st === 'saved').length, a = Object.keys(ASKS).filter(id => ASKS[id].st === 'asked').length;
+    const parts = [e && plural(e, 'edit'), n && plural(n, 'new card'), a && plural(a, 'category ask')].filter(Boolean);
+    const held = Object.keys(EDITS).filter(id => EDITS[id].st === 'held').length + Object.keys(NEWS).filter(id => NEWS[id].st === 'held').length;
+    $('save').textContent = !live ? 'Open this page in Claude to save edits' : !owner ? 'Only Morg can change the cards here' :
+      (parts.length ? parts.join(', ') + ' saved. Send them with “Apply my card edits” in the hub' : 'Nothing waiting. Your edits save as you go') + (held ? '. ' + plural(held, 'change') + ' held: open ' + (held === 1 ? 'it' : 'them') + ' to see why' : '');
+  }
+  function put(col, id, body) {
+    const store = { edits: EDITS, new: NEWS, asks: ASKS }[col];
+    store[id] = Object.assign({ _id: id }, body); refresh();
+    $('save').textContent = 'Saving…';
+    chain[col + id] = (chain[col + id] || Promise.resolve()).then(() => db.collection(col).doc(id).set(body))
+      .then(status, err => { $('save').textContent = err && err.code === 'invalid_argument' ? 'Only Morg can change the cards here' : err && err.code === 'quota_exceeded' ? 'The room’s database is full. Ask the GM to clear applied edits' : 'Couldn’t save. Check your signal, then save again'; });
+  }
+  function remove(col, id) {
+    const store = { edits: EDITS, new: NEWS, asks: ASKS }[col];
+    delete store[id]; refresh();
+    chain[col + id] = (chain[col + id] || Promise.resolve()).then(() => db.collection(col).doc(id).delete()).then(status, () => { $('save').textContent = 'Couldn’t save. Check your signal, then try again'; });
+  }
+  let pending = 0;
+  function refresh() {   // after a change: the indexes, the list and the footer
+    derive(); Object.keys(HAY).forEach(k => delete HAY[k]);
+    clearTimeout(pending); pending = setTimeout(() => { const y = scrollY; render(); scrollTo(0, y); }, 50);
+    status();
+  }
+
+  // ---- events ----
+  $('tabs').addEventListener('click', e => { const b = e.target.closest('[data-v]'); if (!b) return; S.v = b.dataset.v; try { localStorage.setItem('cr-view', S.v); } catch (x) {} location.hash = S.v; render(); scrollTo(0, 0); });
+  let qt = 0;
+  $('q').addEventListener('input', function () { const s = S[S.v], val = this.value; clearTimeout(qt); qt = setTimeout(() => { s.q = val; s.n = 0; render(); }, 120); });
+  $('main').addEventListener('click', e => {
+    const t = e.target, s = S[S.v];
+    const card = t.closest('[data-card]'); if (card) return openCard(card.dataset.card);
+    const col = t.closest('[data-color]'); if (col) { const d = +col.dataset.color, i = s.colors.indexOf(d); if (i >= 0) { if (s.colors.length > 1) s.colors.splice(i, 1); } else s.colors.push(d); s.n = 0; return render(); }
+    const tog = t.closest('[data-tog]'); if (tog) { s[tog.dataset.tog] = !s[tog.dataset.tog]; s.n = 0; return render(); }
+    const pt = t.closest('[data-ptog]'); if (pt) { s[pt.dataset.ptog] = !s[pt.dataset.ptog]; s.n = 0; return render(); }
+    const mode = t.closest('[data-mode]'); if (mode) { s.mode = mode.dataset.mode; s.n = 0; return render(); }
+    const cat = t.closest('[data-cat]'); if (cat) { S.v = 'cards'; Object.assign(S.cards, { cat: cat.dataset.cat, n: 0 }); location.hash = 'cards'; render(); return scrollTo(0, 0); }
+    const en = t.closest('[data-e]'); if (en) return openEntry(S.v, en.dataset.e);
+    const fd = t.closest('[data-find]'); if (fd) { const [k, n] = fd.dataset.find.split(':').map(Number), f = D.report[k], x = f.items[n]; return sheet(el => { el.innerHTML = head(esc(f.title), esc(x.text)) + '<p class="means" style="font-style:normal">' + esc(f.why) + '</p>' + cardList(x.c); }); }
+    if (t.closest('#ask')) return sheet(askSheet);
+    const un = t.closest('[data-unask]'); if (un) return remove('asks', un.dataset.unask);
+  });
+  $('main').addEventListener('toggle', e => { if (e.target.id === 'checks') S.open = e.target.open ? S.v : ''; }, true);
+  $('main').addEventListener('change', e => {
+    const s = S[S.v], id = e.target.id;
+    if (id === 'f-cat') s.cat = e.target.value; else if (id === 'f-st') s.st = e.target.value; else if (id === 'f-sort' || id === 'p-sort') s.sort = e.target.value; else return;
+    s.n = 0; render();
+  });
+  function openEntry(name, ref) {
+    if (ref[0] === 'k') {
+      const e = D.pools.kind[+ref.slice(1)];
+      return sheet(el => { el.innerHTML = head(esc(DECK[e.dk].name + ' · ' + e.k), plural(e.a.length, 'answer') + ', ' + plural(e.c.length, 'card') + '. Every card of this kind can show the others’ answers as wrong ones') +
+        '<div class="choices">' + e.a.map(a => '<span>' + esc(a) + '</span>').join('') + '</div>' + (e.x ? '<div class="badges">' + entryBadges(e, 'kind') + '</div>' : '') + cardList(e.c); });
+    }
+    const e = D.pools[name][+ref];
+    sheet(el => {
+      const mine = e.o || [];
+      el.innerHTML = head(esc(e.t), (name === 'wrong' ? plural(e.c.length, 'card') + ' can draw it' + (mine.length ? ', ' + plural(mine.length, 'card') + ' of yours have it as your own' : '') : plural(e.c.length, 'card')) + '. In the library since ' + day(e.n)) +
+        entryBadges(e, name) + (name === 'wrong' && mine.length ? '<b style="font-size:14px">Your own</b>' + cardList(mine) + '<b style="font-size:14px">From kinds</b>' : '') + cardList(e.c);
+    });
+  }
+  $('newcard').addEventListener('click', () => sheet(el => editSheet(el, null)));
+  addEventListener('hashchange', () => { const h = location.hash.slice(1); if (S[h] && h !== S.v) { S.v = h; render(); } });
+
+  // ---- start: the library, then Morg's saved edits, live ----
+  try { const h = location.hash.slice(1), t = localStorage.getItem('cr-view'); if (S[h] && h !== 'v') S.v = h; else if (S[t] && t !== 'v') S.v = t; } catch (x) {}
+  fetch('library.json').then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }).then(data => {
+    D = data; C = D.cards; D.cats.forEach(c => CAT[c.id] = c); D.decks.forEach(d => DECK[d.id] = d);
+    const since = new Date(D.today + 'T12:00:00Z'); since.setUTCDate(since.getUTCDate() - D.lately); SINCE = since.toISOString().slice(0, 10);
+    DRAW = C.map(() => []); D.pools.wrong.forEach((e, j) => e.c.forEach(i => DRAW[i].push(j)));
+    FIND = C.map(() => []); NOTES = C.map(() => []);   // a card's findings: the ones that ask for a look, and the quiet ones (fine as they are)
+    D.report.forEach((f, k) => f.items.forEach((x, n) => x.c.forEach(i => (QUIET.indexOf(f.code) >= 0 ? NOTES : FIND)[i].push([k, n]))));
+    C.forEach((c, i) => { c.ix = i; IDX[c.id] = i; c.deck = c.id.split(':')[0];
+      if (c.s === 'a' || c.s === 'l') { (SPELL.hook[key(c.h)] = SPELL.hook[key(c.h)] || new Set()).add(c.h); (SPELL.answer[key(c.w)] = SPELL.answer[key(c.w)] || new Set()).add(c.w); } });
+    lede(); render(); status();
+    return window.claude ? Promise.all([claude.use('db'), claude.use('user')]) : [null, null];
+  }).then(([d, u]) => Promise.resolve(d && u ? u.isOwner() : !!d).then(o => [d, o], () => [d, true])).then(([d, o]) => {
+    db = d; if (!db) { status(); return; }
+    live = true; owner = !!o;   // only Morg writes here: the database's rules say so too
+    $('newcard').hidden = !owner; status();
+    const slow = setTimeout(() => { $('save').textContent = 'Your saved edits haven’t loaded yet. They will once the connection answers'; }, 10000);
+    [['edits', EDITS], ['new', NEWS], ['asks', ASKS], ['done', DONE]].forEach(([col, store]) => db.collection(col).onSnapshot(snap => {
+      clearTimeout(slow);
+      if (snap.metadata.hasPendingWrites) return;   // our own change, already drawn
+      Object.keys(store).forEach(k => delete store[k]);
+      snap.docs.forEach(doc => { store[doc.id] = Object.assign({ _id: doc.id }, doc.data()); });
+      refresh();
+    }, () => { $('save').textContent = 'Your saved edits stopped updating. Reload the page'; }));
+  }).catch(err => { $('main').innerHTML = '<p class="empty">The library didn’t load. Reload the page' + (err && err.message ? ' (' + esc(err.message) + ')' : '') + '.</p>'; });
+})();
+</script>

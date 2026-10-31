@@ -17,6 +17,7 @@ Write a JSON file (path given in your task) shaped exactly like:
 - `src`: the URL of the page that supports this item (dictionary entry, official page, etc.).
 - `groups`: lists of answers that could plausibly fill each other's blanks (synonyms, near-synonyms). Two answers in one group never appear on the same card. Be generous.
 - `cut`: things you considered and dropped, with a few words on why (not in source, borderline, stale, ambiguous).
+- `tag` (optional): the card’s own category on its tile when it isn’t its deck’s (Messi, CR7, Technique, World Cup): an id from `build/library/categories.json`, never a new name. A new category goes on that list first, named by Morg. Before handing cards in, `python3 tools/library.py check` holds them to the library’s spelling of every hook and answer.
 
 ## House style for `ex` (strict — the owner is an editor and cares)
 - ONE plain sentence. Never two sentences.

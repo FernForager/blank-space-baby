@@ -21,36 +21,19 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 DECKS = os.path.join(HERE, 'decks')
 
-# The decks the daily draws from (Morg, Oct 16, 2026: every soccer deck plus both slang decks, no Taylor Swift).
+# The decks the daily draws from (Morg, Oct 16, 2026: every soccer deck plus both slang decks, no Taylor Swift), and the
+# categories their tiles show, from the library's one list (build/library/categories.json, Morg, Oct 31, 2026: categories
+# are reference tags, picked from one curated list). Its decks, in order, are DAILY: (id, league, flags), where
 #   league: the draw allows at most LEAGUE_MAX cards a day from one league (2 since nine cards, Oct 27, 2026, LEAGUE_MAX below) ('' for none, '*' for one per card, from its source site)
 #   women:  every card in the deck counts as a women's game card (elsewhere a card says so itself, with "women": true)
 #   rules:  every card in the deck counts as a rules card
 #   slang:  at most one slang card a day across these decks (Morg, Oct 16, 2026), and never a red one
-DAILY = [
-    # id            league         flags
-    ('alpha',      '',            'slang'),
-    ('parents',    '',            'slang'),
-    ('basics',     'basics',      ''),        # Soccer 101: all green, capped like a league (LEAGUE_MAX a day)
-    ('soccer',     '',            ''),
-    ('lingo-more', '',            ''),
-    ('rules',      '',            'rules'),
-    ('epl',        'epl',         ''),
-    ('epl-more',   'epl',         ''),
-    ('laliga',     'laliga',      ''),
-    ('bundesliga', 'bundesliga',  ''),
-    ('seriea',     'seriea',      ''),
-    ('ligue1',     'ligue1',      ''),
-    ('ligamx',     'ligamx',      ''),
-    ('mls',        'mls',         ''),
-    ('nwsl',       'nwsl',        'women'),
-    ('ucl',        'ucl',         ''),
-    ('nicknames',  '*',           ''),
-    ('intl-men',   '',            ''),
-    ('intl-women', '',            'women'),
-    ('wc26',       '',            ''),
-    ('legends',    '',            ''),
-    ('awards',     '',            ''),
-]
+LIBRARY = os.path.join(HERE, 'library')
+CATS = json.load(open(os.path.join(LIBRARY, 'categories.json')))
+CATEGORY = {c['id']: c for c in CATS['categories']}
+DECK_CAT = {d['id']: d['category'] for d in CATS['decks']}   # each deck's own category, shown on its tiles
+DAILY = [(d['id'], d.get('league', ''), ' '.join(d.get('flags', []))) for d in CATS['decks']]
+FLAGS = ('women', 'rules', 'slang')
 SITE_LEAGUE = {'premierleague.com': 'epl', 'laliga.com': 'laliga', 'bundesliga.com': 'bundesliga', 'legaseriea.it': 'seriea',
                'ligue1.com': 'ligue1', 'ligamx.net': 'ligamx', 'mlssoccer.com': 'mls', 'nwslsoccer.com': 'nwsl'}
 VET = os.path.join(HERE, 'vetting')
@@ -117,6 +100,7 @@ def item_problems(level, items, clash, it, hooks=True):
     if len(mn) > 40: bad.append(tag + ('meaning over 40 characters', mn))
     if len(w) > 22: bad.append(tag + ('answer over 22 characters',))
     if hooks: bad += [tag + (p, it.get('hook')) for p in hook_problems(it)]
+    if 'tag' in it and it['tag'] not in CATEGORY: bad.append(tag + ('tag is not a category on the list: pick one from build/library/categories.json, or add the category there first', it['tag']))
     if 'wr' in it:   # Morg's own wrong answers: exactly two, different from each other and from the answer, and not already on the card (the audit, Oct 30, 2026)
         ws = [x if isinstance(x, str) else (x or {}).get('w', '') for x in (it['wr'] if isinstance(it['wr'], list) else [])]
         if len(ws) != 2 or not all(ws) or plain(ws[0]) == plain(ws[1]): bad.append(tag + ('wr must be two different wrong answers', it['wr']))
@@ -218,6 +202,38 @@ def standing(cid, it, h, verdicts, marks):
     if all(verdicts[who].get(cid, {}).get('v') == 'ok' and verdicts[who][cid].get('h') == h for who in REVIEWERS): return 'approved'
     return 'pending'
 
+def tile_tag(cat):
+    """The tag.* string id a category shows on its tiles, less its tag. prefix: what the page’s TAG and a card’s own tag hold."""
+    return CATEGORY[cat]['tag'].removeprefix('tag.') if cat in CATEGORY else cat
+
+def tag_js():
+    """The page's TAG, each deck's tile category, written the way the template wrote it by hand before Oct 31, 2026."""
+    key = lambda k: k if re.fullmatch(r'[a-z_][a-z0-9_]*', k) else repr(k)
+    return '{ ' + ', '.join(f'{key(did)}: {tile_tag(DECK_CAT[did])!r}' for did, _, _ in DAILY) + ' }'
+
+def category_problems(text):
+    """What's wrong with the library's category list (build/library/categories.json): every category has a name and its
+    tag string in build/text, every deck has its file and names a category on the list, and a category with no deck of
+    its own names the deck its new cards go to. A card's own tag is checked with the card (item_problems)."""
+    bad, seen = [], set()
+    for c in CATS['categories']:
+        cid = c.get('id', '')
+        if not re.fullmatch(r'[a-z0-9-]{1,30}', cid): bad.append(f'category {cid!r}: an id is lowercase letters, digits and hyphens')
+        if cid in seen: bad.append(f'category {cid}: on the list twice')
+        seen.add(cid)
+        if not str(c.get('name', '')).strip(): bad.append(f'category {cid}: no name')
+        if not str(c.get('tag', '')).startswith('tag.') or c['tag'] not in text: bad.append(f'category {cid}: its tag {c.get("tag")} is not a string in build/text/en.json (add it with a note and the tag slot: Morg approves it)')
+        if c.get('home') and c['home'] not in DECK_CAT: bad.append(f'category {cid}: its home {c["home"]} is not a deck on the list')
+        if not c.get('home') and cid not in DECK_CAT.values(): bad.append(f'category {cid}: no deck of its own, so it needs a home, the deck its new cards go to')
+    seen = set()
+    for d in CATS['decks']:
+        if d['id'] in seen: bad.append(f'deck {d["id"]}: on the list twice')
+        seen.add(d['id'])
+        if d.get('category') not in CATEGORY: bad.append(f'deck {d["id"]}: its category {d.get("category")} is not on the list')
+        if not os.path.exists(os.path.join(DECKS, d['id'] + '.json')): bad.append(f'deck {d["id"]}: no file build/decks/{d["id"]}.json')
+        if not isinstance(d.get('league', ''), str) or set(d.get('flags', [])) - set(FLAGS): bad.append(f'deck {d["id"]}: league must be a string, flags only ' + ', '.join(FLAGS))
+    return bad
+
 def league(deck_league, it):
     if deck_league != '*': return deck_league
     return SITE_LEAGUE.get(urlparse(it['src']).netloc.removeprefix('www.'), '')
@@ -248,6 +264,10 @@ def main(test_copy=None):
     pin = json.load(open(os.path.join(ROOT, '.claude', 'settings.json'))).get('env', {}).get('CLAUDE_CODE_EFFORT_LEVEL')
     if pin:   # an effort level in the settings file must never reach daily (playbook 4: Morg sets each level in the app)
         sys.exit(f'.claude/settings.json sets CLAUDE_CODE_EFFORT_LEVEL ({pin}): remove it before building (branch pins are retired, playbook 4)')
+    text, meta = strings.load()   # every word but the cards: build/text/en.json (research/text-system.md)
+    bad = category_problems(text)
+    if bad:
+        print('\nProblems with build/library/categories.json:'); [print('  ', b) for b in bad]; sys.exit(1)
     decks, problems, tiers = [], [], [0, 0, 0]
     verdicts, marks = vetting()
     stand = {}
@@ -262,7 +282,8 @@ def main(test_copy=None):
             m = marks.get(cid)
             if st == 'locked' and m['h'] != mark_hash(it): problems.append((did, it['w'], 'locked by Morg but changed since: undo the change or ask him to unlock it'))
             if st in ('out', 'flagged') or (BETA_VETTED_ONLY and st == 'pending' and not test_copy): continue
-            x = {k: it[k] for k in ('w', 'means', 'ex', 'k', 'hook', 'd', 'wr', 'tag') if k in it}   # wr: Morg's own wrong answers. tag: the card's own category, over its deck's
+            x = {k: it[k] for k in ('w', 'means', 'ex', 'k', 'hook', 'd', 'wr') if k in it}   # wr: Morg's own wrong answers
+            if 'tag' in it: x['tag'] = tile_tag(it['tag'])   # the card's own category, over its deck's, as its tile string
             x['i'], x['h'] = i, mark_hash(it)   # the card's place in its deck and the fingerprint its marks hold to: the beta's flag and lock keys send both
             if st == 'locked': x['lk'] = 1
             if lg == '*': x['lg'] = league(lg, it)
@@ -289,19 +310,14 @@ def main(test_copy=None):
     elif LOOP: print(f'The daily runs, and every day replays board #{LOOP}, its cards and choices (LOOP in build.py, 0 for the daily’s own boards).')
     pins = pinned(decks)
     tpl = open(os.path.join(HERE, 'template.html')).read()
-    tagmap = re.search(r'var TAG = \{(.*?)\};', tpl, re.S)
-    untagged = [did for did, lg, flags in DAILY if not tagmap or not re.search(r"(^|[\s{,])'?" + re.escape(did) + r"'?\s*:", tagmap.group(1))]
-    if untagged: print('\nDecks with no category in the template’s TAG (their tiles would show a blank category):', ', '.join(untagged)); sys.exit(1)
-    text, meta = strings.load()   # every word but the cards: build/text/en.json (research/text-system.md)
+    if 'var TAG = __TAG__;' not in tpl: sys.exit('build/template.html must take its TAG from the build (var TAG = __TAG__;): the categories live in build/library/categories.json')
+    tpl = tpl.replace('__TAG__', tag_js())   # each deck's tile category, from the library's list, so a deck can't show a blank one
     slots = strings.load_slots()   # every place text appears: build/text/slots.json
     bad = strings.problems(text, meta, tpl) + strings.slot_problems(slots, meta)
     if bad:
         print('\nText problems (build/text/en.json):')
         for p in bad: print('  ', p)
         sys.exit(1)
-    tagless = sorted({f"{d['id']}:{x['i']} tag {x['tag']}" for d in decks for x in d['items'] if 'tag' in x and 'tag.' + x['tag'] not in text})
-    if tagless:
-        print('\nCards with a tag build/text has no string for (add tag.<id> to en.json):'); [print('  ', t) for t in tagless]; sys.exit(1)
     print(f'Text: {len(text)} strings in {len(slots)} slots')
     tpl = tpl.replace('/*__TYPE__*/', strings.slot_css(slots)).replace('__FIT__', json.dumps(strings.slot_fit(slots)))
     pm, ps = strings.page_meta(meta, slots)
