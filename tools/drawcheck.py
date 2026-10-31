@@ -6,7 +6,8 @@ Replays the draw the way every phone does and checks each day's board: PER white
 Oct 27, 2026), at least one women's game card and one rules card, at most LEAGUE_MAX from one league, at most one slang card
 and never a red one, and no two cards that give each other away (one's answer in the other's
 sentence or hook, or a shared answer or hook). Then every card's three choices on every day: the answer among three
-different ones, and every wrong answer one its reviewers saw (the build's wrong_pool, what tools/vet.py shows them) or a
+different ones, and every wrong answer one its reviewers saw (the build's wrong_pool from its set in build/library/wrong.json,
+what tools/vet.py shows them) or a
 made-up near miss on a number card (the audit, Oct 30, 2026: a playing card never shows a wrong answer nobody vetted).
 Then reports how far apart repeats land, checks that two fresh page loads deal the same boards, and times the replay.
 """
@@ -21,7 +22,7 @@ sys.path.insert(0, os.path.join(ROOT, 'build')); import build as B
 POOLS, NUMERIC = {}, {}   # what the reviewers saw of each card's wrong answers, and whether the page makes up near misses for it
 for did, _, _ in B.DAILY:
     deck = json.load(open(os.path.join(B.DECKS, did + '.json'))); clash = B.clasher(deck)
-    for i, it in enumerate(deck['items']): POOLS[f'{did}:{i}'] = B.wrong_pool(deck, it, clash); NUMERIC[f'{did}:{i}'] = bool(B.near_rule(it))
+    for i, it in enumerate(deck['items']): POOLS[f'{did}:{i}'] = B.wrong_pool(did, deck, it, clash); NUMERIC[f'{did}:{i}'] = bool(B.near_rule(it))
 
 CHECK = """([days, per, lmax, pools, numeric, spelled]) => {
   const T = window.TRIVIELA, t0 = performance.now(), boards = T.deal(days - 1, true), ms = performance.now() - t0;
