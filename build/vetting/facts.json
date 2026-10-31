@@ -636,9 +636,9 @@
   "v": "ok"
  },
  "alpha:81": {
-  "at": "2026-10-17T00:01:37Z",
-  "h": "9b6a938292",
-  "note": "M-W slang girl dinner: a light meal of snacks or easy-to-prepare foods",
+  "at": "2026-10-31T05:17:33Z",
+  "h": "ed8bea766c",
+  "note": "M-W slang: a light meal of snacks or easy-to-prepare foods",
   "v": "ok"
  },
  "alpha:82": {
@@ -1188,9 +1188,9 @@
   "v": "fix"
  },
  "basics:0": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "0e34592af3",
-  "note": "theifab.com Law 4 (The Players’ Equipment) FAQ: gloves are optional for all players, the Laws don’t require the goalkeeper to wear them",
+  "at": "2026-10-31T05:17:33Z",
+  "h": "0cf5644d08",
+  "note": "theifab.com Law 4 FAQ: gloves optional for all players, the Laws do not require the goalkeeper to wear them",
   "v": "ok"
  },
  "basics:1": {
@@ -1218,9 +1218,9 @@
   "v": "ok"
  },
  "basics:102": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "01bb6d3bd3",
-  "note": "theifab.com Law 11.3: no offside offence directly from a goal kick, throw-in or corner kick (free kicks are not listed)",
+  "at": "2026-10-31T05:17:33Z",
+  "h": "6bb98f4340",
+  "note": "theifab.com Law 11: no offside offense directly from a goal kick, throw-in or corner kick, free kicks not exempt",
   "v": "ok"
  },
  "basics:103": {
@@ -1866,9 +1866,9 @@
   "v": "ok"
  },
  "basics:57": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "fa82247817",
-  "note": "theifab.com Law 1 (The Field of Play) 2026/27 1.10: goalposts and crossbar must be the same shape, square, rectangular, round, elliptical or a hybrid",
+  "at": "2026-10-31T05:17:33Z",
+  "h": "77acef12ed",
+  "note": "theifab.com Law 1.10: goalposts and crossbar the same shape, square, rectangular, round, elliptical or a hybrid",
   "v": "ok"
  },
  "basics:58": {
@@ -1884,9 +1884,9 @@
   "v": "ok"
  },
  "basics:6": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "6a509c3b2f",
-  "note": "merriam-webster.com uniform: dress of a distinctive design worn by members of a group, serving as a means of identification",
+  "at": "2026-10-31T05:17:33Z",
+  "h": "b61678141b",
+  "note": "M-W uniform: distinctive dress serving as identification, Law 4.3 teams wear distinguishing colors",
   "v": "ok"
  },
  "basics:60": {
@@ -2376,9 +2376,9 @@
   "v": "ok"
  },
  "bundesliga:41": {
-  "at": "2026-10-17T00:04:10Z",
-  "h": "c9599ec918",
-  "note": "bundesliga.com Leverkusen nickname page: the team known as the Werkself, Factory XI",
+  "at": "2026-10-31T05:17:33Z",
+  "h": "101eb22109",
+  "note": "bundesliga.com: founded July 1904 by Bayer workers, Werkself, Neverkusen used to mock the club",
   "v": "ok"
  },
  "bundesliga:42": {
@@ -3099,9 +3099,9 @@
   "v": "ok"
  },
  "epl:28": {
-  "at": "2026-10-17T00:20:23Z",
-  "h": "d1fb19c376",
-  "note": "Stadiums page (26 Sep 2026): Emirates Stadium is in Holloway, north London. Same page also places Brentford, Fulham and Crystal Palace in London",
+  "at": "2026-10-31T05:17:33Z",
+  "h": "15459892d7",
+  "note": "premierleague.com stadiums guide: Holloway, north London, there since 2006, previously Highbury",
   "v": "ok"
  },
  "epl:29": {
@@ -3111,9 +3111,9 @@
   "v": "ok"
  },
  "epl:3": {
-  "at": "2026-10-17T00:02:26Z",
-  "h": "ae110593de",
-  "note": "news 4660971 (every title-winning manager): Man City (Guardiola, Mancini, Pellegrini) and Chelsea (Mourinho, Ancelotti, Conte) have won with three managers. Arsenal and Liverpool have two, Man United one",
+  "at": "2026-10-31T05:17:33Z",
+  "h": "091c7622fb",
+  "note": "premierleague.com title-winning managers: Chelsea under Mourinho, Ancelotti, Conte, Man City under Mancini, Pellegrini, Guardiola. Arsenal now have two (Wenger, Arteta 2025/26)",
   "v": "ok"
  },
  "epl:30": {
@@ -3576,9 +3576,9 @@
   "v": "ok"
  },
  "intl-men:58": {
-  "at": "2026-10-17T00:17:37Z",
-  "h": "ff9b280e46",
-  "note": "fifa.com Netherlands profile: Oranje, Runners-up (1974, 1978, 2010). They did not reach the 2026 final",
+  "at": "2026-10-31T05:17:33Z",
+  "h": "aefa70228c",
+  "note": "fifa.com Netherlands profile: Oranje, runners-up 1974, 1978, 2010",
   "v": "ok"
  },
  "intl-men:59": {
@@ -3840,9 +3840,9 @@
   "v": "ok"
  },
  "intl-women:4": {
-  "at": "2026-10-17T00:14:49Z",
-  "h": "39afd9022b",
-  "note": "fifa.com every-final-highlights (now at /en/tournaments/womens/womensworldcup/brazil-2027/articles/every-final-highlights, read via cxm-api.fifa.com): Spain beat England 1-0 in 2023, the first final for both",
+  "at": "2026-10-31T05:17:33Z",
+  "h": "287d4397ce",
+  "note": "fifa.com: Spain 1–0 England in Sydney 2023, debut in Canada 2015",
   "v": "ok"
  },
  "intl-women:40": {
@@ -3852,9 +3852,9 @@
   "v": "ok"
  },
  "intl-women:41": {
-  "at": "2026-10-17T00:14:49Z",
-  "h": "304c1d72d5",
-  "note": "fifa.com champions page lists 1991, 1999, 2015, 2019. Still four today: fifa.com every final article (Aug 2026) says the 1991 title was the first of USA’s four and Spain are the current holders",
+  "at": "2026-10-31T05:17:33Z",
+  "h": "a0ba91b630",
+  "note": "fifa.com: USA won 1991, 1999, 2015, 2019, Spain won 2023",
   "v": "ok"
  },
  "intl-women:42": {
@@ -3966,9 +3966,9 @@
   "v": "fix"
  },
  "intl-women:58": {
-  "at": "2026-10-17T00:14:49Z",
-  "h": "cbf064e85d",
-  "note": "ussoccer.com timeline 2016: won the inaugural SheBelieves Cup with wins over England, France and Germany",
+  "at": "2026-10-31T05:17:33Z",
+  "h": "0904498c59",
+  "note": "ussoccer.com timeline: inaugural SheBelieves Cup 2016 won by the USA over England, France and Germany",
   "v": "ok"
  },
  "intl-women:59": {
@@ -4008,10 +4008,13 @@
   "v": "ok"
  },
  "intl-women:64": {
-  "at": "2026-10-17T00:29:57Z",
-  "h": "dcd6124074",
-  "note": "src fifa.com Marta article: FIFA reflects on every goal she scored for the Seleção at the Women’s World Cup (Brazil’s women’s team). None of the wrong nicknames is Brazil’s",
-  "v": "ok"
+  "at": "2026-10-31T05:17:33Z",
+  "fix": {
+   "means": "Marta scored at five World Cups, a first"
+  },
+  "h": "a6c05ed033",
+  "note": "Seleção checked on fifa.com (Marta scored for the Seleção). The means went stale on July 19, 2026: Marta’s 17 is still the Women’s World Cup record, but fifa.com now calls Mbappé (22 across 2018, 2022 and 2026) the all-time leading scorer in World Cup history, so “are a record” reads false to a fan. The fix keeps Marta and is true for good: fifa.com, she became the first player to score at five World Cups in 2019. A record line that fits 40 characters would need “Women’s World Cup”, which runs to 43",
+  "v": "fix"
  },
  "intl-women:65": {
   "at": "2026-10-17T00:14:49Z",
@@ -4188,9 +4191,9 @@
   "v": "ok"
  },
  "laliga:31": {
-  "at": "2026-10-17T00:08:54Z",
-  "h": "60c208cc82",
-  "note": "src (published Jan 4, 2016): Zidane, 43, replaces Rafa Benítez",
+  "at": "2026-10-31T05:17:33Z",
+  "h": "96692a8fcc",
+  "note": "laliga.com, Jan 4, 2016: Zidane replaces Benítez, aged 43",
   "v": "ok"
  },
  "laliga:32": {
@@ -4383,9 +4386,9 @@
   "v": "ok"
  },
  "legends:0": {
-  "at": "2026-10-17T00:21:33Z",
-  "h": "5166ddc2cd",
-  "note": "fifa.com Pelé obituary: three titles, more World Cups than any other player, won 1958, 1962 and 1970. No player could reach three titles since",
+  "at": "2026-10-31T05:17:33Z",
+  "h": "14f2fdf5a3",
+  "note": "fifa.com obituary: three titles, more World Cups than any other player, 1958, 1962, 1970",
   "v": "ok"
  },
  "legends:1": {
@@ -4935,9 +4938,9 @@
   "v": "fix"
  },
  "ligamx:33": {
-  "at": "2026-10-17T00:04:57Z",
-  "h": "9bb4f19942",
-  "note": "4614 (ligamx.net, 2013) says Cabinho won the scoring title 8 times, with Pumas, Atlante and León, the most ever (next best Adalberto López with 5). No later ligamx.net page found showing anyone near 8, and the Apertura 2026 is only at Jornada 12",
+  "at": "2026-10-31T05:17:33Z",
+  "h": "6c0b56d30b",
+  "note": "ligamx.net: Cabinho 8 scoring titles, the most, with UNAM, Atlante and León",
   "v": "ok"
  },
  "ligamx:34": {
@@ -5337,9 +5340,9 @@
   "v": "ok"
  },
  "ligue1:32": {
-  "at": "2026-10-17T00:12:04Z",
-  "h": "861d47c788",
-  "note": "src (2024 preview) lists Stadium: Stade de la Beaujoire. Still current: https://ligue1.com/en/articles/l1_article_4273-lyon-grind-out-nantes-win-to-climb-onto-podium (Feb 7, 2026) has Nantes hosting Lyon at La Beaujoire. Nantes are not in the 2026–27 Ligue 1 matchday 1 list, the sentence still holds",
+  "at": "2026-10-31T05:17:33Z",
+  "h": "4bf3597a2f",
+  "note": "ligue1.com Nantes preview: Stade de la Beaujoire, nickname Les Canaris",
   "v": "ok"
  },
  "ligue1:33": {
@@ -5674,9 +5677,9 @@
   "v": "ok"
  },
  "lingo-more:25": {
-  "at": "2026-10-17T00:24:33Z",
-  "h": "25d4d22e68",
-  "note": "MW free agent: a professional athlete free to negotiate a contract with any team",
+  "at": "2026-10-31T05:17:33Z",
+  "h": "0ad7d8141a",
+  "note": "M-W free agent: free to negotiate a contract with any team",
   "v": "ok"
  },
  "lingo-more:26": {
@@ -5719,9 +5722,9 @@
   "v": "ok"
  },
  "lingo-more:31": {
-  "at": "2026-10-16T23:56:49Z",
-  "h": "5e7a4268fc",
-  "note": "MW professional foul: a foul made on purpose especially to prevent the other team from scoring a goal",
+  "at": "2026-10-31T05:17:33Z",
+  "h": "106e7e1b5b",
+  "note": "M-W professional foul: a foul made on purpose to prevent the other team from scoring",
   "v": "ok"
  },
  "lingo-more:32": {
@@ -5980,9 +5983,9 @@
   "v": "ok"
  },
  "mls:10": {
-  "at": "2026-10-17T00:11:44Z",
-  "h": "ecbd714ce2",
-  "note": "src Shield list: FC Cincinnati 2023, their only Shield",
+  "at": "2026-10-31T05:17:33Z",
+  "h": "749a3d608c",
+  "note": "mlssoccer.com: Shield for the best regular-season record, FC Cincinnati 2023",
   "v": "ok"
  },
  "mls:11": {
@@ -7049,13 +7052,10 @@
   "v": "fix"
  },
  "nwsl:53": {
-  "at": "2026-10-17T00:10:57Z",
-  "fix": {
-   "src": "https://www.nwslsoccer.com/news/2026-nwsl-schedule-release-how-to-watch-portland-thorns-fc"
-  },
-  "h": "93d7ecc2da",
-  "note": "The about-the-nwsl page renders no text about clubs. The Thorns’ 2026 schedule page shows Portland Thorns FC at home at Providence Park",
-  "v": "fix"
+  "at": "2026-10-31T05:17:33Z",
+  "h": "a20d826b00",
+  "note": "nwslsoccer.com 2026 schedule: Portland Thorns FC home games at Providence Park",
+  "v": "ok"
  },
  "nwsl:54": {
   "at": "2026-10-17T00:10:57Z",
@@ -7091,13 +7091,10 @@
   "v": "ok"
  },
  "nwsl:59": {
-  "at": "2026-10-17T00:24:47Z",
-  "fix": {
-   "src": "https://www.nwslsoccer.com/news/2026-nwsl-schedule-release-how-to-watch-racing-louisville-fc"
-  },
-  "h": "d7a7d9e8ce",
-  "note": "The about-the-nwsl page renders no text about clubs. Racing’s 2026 schedule page shows Racing Louisville FC at home at Lynn Family Stadium",
-  "v": "fix"
+  "at": "2026-10-31T05:17:33Z",
+  "h": "36cc637547",
+  "note": "nwslsoccer.com 2026 schedule: Racing Louisville FC home games at Lynn Family Stadium",
+  "v": "ok"
  },
  "nwsl:6": {
   "at": "2026-10-17T00:11:13Z",
@@ -7649,9 +7646,9 @@
   "v": "ok"
  },
  "rules:35": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "7849fce549",
-  "note": "Law 6.5 (2026/27): the VAR uses replay footage only for a clear and obvious error or serious missed incident about goals, penalties, red cards and mistaken identity",
+  "at": "2026-10-31T05:17:33Z",
+  "h": "c67f136f37",
+  "note": "theifab.com Law 5/VAR protocol: replays for clear and obvious errors on goals, penalties, direct reds, mistaken identity",
   "v": "ok"
  },
  "rules:36": {
@@ -7709,9 +7706,9 @@
   "v": "ok"
  },
  "rules:44": {
-  "at": "2026-10-16T23:59:06Z",
-  "h": "c752ad2d69",
-  "note": "https://www.theifab.com/laws/latest/offside/ (2026/27): hands and arms of all players are not considered, only the head, body or feet",
+  "at": "2026-10-31T05:17:33Z",
+  "h": "a7e12cda50",
+  "note": "theifab.com Law 11: hands and arms of all players not considered, head, body and feet are",
   "v": "ok"
  },
  "rules:45": {
@@ -7868,9 +7865,9 @@
   "v": "ok"
  },
  "seriea:0": {
-  "at": "2026-10-17T00:20:23Z",
-  "h": "20fc018aef",
-  "note": "Juventus palmares lists 2011-12 to 2019-20 in a row. Means: legaseriea.it/serie-a/news/buon-compleanno-antonio-conte-x2055 (Conte won the scudetto with Juventus), massimiliano-allegri-e-il-nuovo-allenatore-del-napoli (five straight scudetti with Juve 2014–2019) and la-panchina-dell-atalanta-e-di-maurizio-sarri (champion of Italy with Juventus the season after Chelsea)",
+  "at": "2026-10-31T05:17:33Z",
+  "h": "bd22e5b7de",
+  "note": "legaseriea.it palmares: nine titles 2011-12 to 2019-20. Coaches from legaseriea.it news: Conte from 2011, Allegri 2014–19, Sarri 2019/20 the ninth",
   "v": "ok"
  },
  "seriea:1": {
@@ -7898,9 +7895,9 @@
   "v": "fix"
  },
  "seriea:12": {
-  "at": "2026-10-17T00:03:32Z",
-  "h": "67da43ca9f",
-  "note": "legaseriea.it La Lazio compie 126 anni: sky blue and white taken from the flag of Greece, home of the Olympics",
+  "at": "2026-10-31T05:17:33Z",
+  "h": "b8259a8e11",
+  "note": "legaseriea.it Lazio at 126: Società Podistica Lazio 1900, colors from the flag of Greece, homeland of the Olympics",
   "v": "ok"
  },
  "seriea:13": {
@@ -7988,9 +7985,9 @@
   "v": "ok"
  },
  "seriea:26": {
-  "at": "2026-10-17T00:03:32Z",
-  "h": "f6e04deba2",
-  "note": "legaseriea.it Buon compleanno Bologna: Ibrahimović 156 Serie A goals for Juventus, Inter and Milan, five scudetti",
+  "at": "2026-10-31T05:17:33Z",
+  "h": "875af4a51c",
+  "note": "legaseriea.it: 156 Serie A goals for Juventus, Inter and Milan, 5 scudetti",
   "v": "ok"
  },
  "seriea:27": {
@@ -8174,9 +8171,9 @@
   "v": "ok"
  },
  "seriea:54": {
-  "at": "2026-10-17T00:20:23Z",
-  "h": "8dd896a8be",
-  "note": "Shevchenko birthday article (29 Sep 2026): Piola still the top scorer in single-group Serie A with 274, played for Pro Vercelli, Lazio, Juventus and Novara",
+  "at": "2026-10-31T05:17:33Z",
+  "h": "da0472b6f9",
+  "note": "legaseriea.it: 274 goals, single-group record, Pro Vercelli, Lazio, Juventus, Novara",
   "v": "ok"
  },
  "seriea:55": {
@@ -8309,9 +8306,9 @@
   "v": "ok"
  },
  "soccer:2": {
-  "at": "2026-10-17T00:16:49Z",
-  "h": "19f2ad9517",
-  "note": "merriam-webster.com/dictionary/volley sense 1a(2): a kick of the ball in soccer before it rebounds. Means line backed by dictionary.com/browse/half-volley (Collins: hit or kick a ball immediately after it bounces) and merriam-webster.com/dictionary/half%20volley (at the instant it rebounds)",
+  "at": "2026-10-31T05:17:33Z",
+  "h": "a85b761dbc",
+  "note": "M-W volley: a kick of the ball before it rebounds",
   "v": "ok"
  },
  "soccer:20": {
@@ -8639,9 +8636,9 @@
   "v": "ok"
  },
  "ucl:17": {
-  "at": "2026-10-17T00:17:55Z",
-  "h": "65a3118291",
-  "note": "uefa.com 2016 season page: Real Madrid 1–1 Atleti (5–3p), triumphed against their city rivals",
+  "at": "2026-10-31T05:17:33Z",
+  "h": "cc4e2065a8",
+  "note": "uefa.com 2016: Real Madrid 1–1 Atleti, 5–3 on penalties",
   "v": "ok"
  },
  "ucl:18": {
@@ -8795,9 +8792,9 @@
   "v": "ok"
  },
  "ucl:40": {
-  "at": "2026-10-17T00:30:51Z",
-  "h": "ee00e98b9e",
-  "note": "uefa.com match page (src) shows the final as Madrid’s ninth European crown. Its own match data, https://match.uefa.com/v5/matches/69489, gives 15 May 2002, Leverkusen 1-2 Real Madrid at Hampden Park, Glasgow",
+  "at": "2026-10-31T05:17:33Z",
+  "h": "a09ae1fda2",
+  "note": "uefa.com 2001/02: Glasgow, 15 May 2002, “Famous Zidane finish wins it for Madrid”",
   "v": "ok"
  },
  "ucl:41": {
@@ -8966,9 +8963,9 @@
   "v": "ok"
  },
  "ucl:65": {
-  "at": "2026-10-17T00:17:55Z",
-  "h": "a27fc9b60b",
-  "note": "uefa.com seasons/2017: Ronaldo-powered Madrid defend title in Cardiff, 2017 final Real Madrid 4-1 Juventus. match.uefa.com/v5/matches?matchId=2019641 confirms 1–4 in Cardiff",
+  "at": "2026-10-31T05:17:33Z",
+  "h": "2131ec70d9",
+  "note": "uefa.com 2017: 4–1 v Juventus in Cardiff, back-to-back triumphs",
   "v": "ok"
  },
  "ucl:66": {
@@ -9190,9 +9187,9 @@
   "v": "fix"
  },
  "wc26:37": {
-  "at": "2026-10-17T00:20:59Z",
-  "h": "fa9ef8db93",
-  "note": "src (now redirects to https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/adidas-golden-boot-race-top-scorer) shows Mbappé won the Golden Boot and the Bronze Ball. The awards PDF (https://digitalhub.fifa.com/asset/5f21873f-792f-4972-9f55-96e73ac61a01/FIFA-World-Cup-2026-Official-FIFA-Awards.pdf) lists him Bronze Ball and defines it as third-best player",
+  "at": "2026-10-31T05:17:33Z",
+  "h": "5050d93875",
+  "note": "fifa.com: Mbappé won the Golden Boot (10 goals) and the Bronze Ball, which goes to the third-ranked player",
   "v": "ok"
  },
  "wc26:38": {
@@ -9256,15 +9253,15 @@
   "v": "ok"
  },
  "wc26:47": {
-  "at": "2026-10-17T00:20:59Z",
-  "h": "1ae146d1d9",
-  "note": "src: for the first time hosting divided among three countries, Canada, Mexico and the USA",
+  "at": "2026-10-31T05:17:33Z",
+  "h": "2db4dce8a0",
+  "note": "fifa.com: first time hosting shared by three countries, Canada, Mexico and the USA",
   "v": "ok"
  },
  "wc26:48": {
-  "at": "2026-10-17T00:20:59Z",
-  "h": "606af427c5",
-  "note": "src: the biggest-ever edition boasted 104 games featuring 48 teams in Canada, Mexico and the United States",
+  "at": "2026-10-31T05:17:33Z",
+  "h": "b852c427e9",
+  "note": "fifa.com: biggest-ever edition, 104 games, 48 teams, 16 cities",
   "v": "ok"
  },
  "wc26:49": {
