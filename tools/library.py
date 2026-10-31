@@ -344,8 +344,135 @@ def load_ledger():
     try: return json.load(open(LEDGER))
     except FileNotFoundError: return {'@note': NOTE, 'cards': {}}
 
-def apply(path, dry=False):
-    sys.exit('apply comes in the next commit on this branch')
+# ---- Morg's edits from the Card Room, back into the decks ----
+STYLE = os.path.join(B.DECKS, 'MORG-STYLE.md')
+NAMES = {'ex': 'ex', 'w': 'w', 'hook': 'hook', 'means': 'means', 'wr': 'wr', 'd': 'color', 'cat': 'category'}
+WORDING = ('ex', 'w', 'hook', 'means', 'wr')   # what the fact checker's facts-only pass reads again
+
+def room(src):
+    """The Card Room's database as ArtifactData saved it: a folder with edits/, new/ and asks/ (list each collection with
+    out_dir), or one JSON file {"edits": [...], "new": [...], "asks": [...]}. Each document as {id, version, data}."""
+    def doc(raw, did):
+        if isinstance(raw, dict) and isinstance(raw.get('data'), dict):   # a wrapper with the document under data
+            return {'id': raw.get('doc_id') or raw.get('id') or did, 'version': raw.get('version'), 'data': raw['data']}
+        return {'id': (raw or {}).get('_id') or did, 'version': (raw or {}).get('_version'), 'data': {k: v for k, v in (raw or {}).items() if not k.startswith('_')}}
+    out = {'edits': [], 'new': [], 'asks': []}
+    if os.path.isdir(src):
+        for col in out:
+            d = os.path.join(src, col)
+            for name in sorted(os.listdir(d)) if os.path.isdir(d) else []:
+                if name.endswith('.json'): out[col].append(doc(json.load(open(os.path.join(d, name))), name[:-5]))
+    else:
+        raw = json.load(open(src))
+        for col in out: out[col] = [doc(x, (x or {}).get('id', '')) for x in raw.get(col, [])]
+    return out
+
+def cell(v):
+    if v is None: return '(none)'
+    if isinstance(v, list): v = ', '.join(wrongs({'wr': v}))
+    if isinstance(v, int) and not isinstance(v, bool): v = ('', 'green', 'yellow', 'red')[v] if 0 < v < 4 else str(v)
+    return str(v).replace('|', '\\|').replace('\n', ' ')
+
+def log_style(rows):
+    """Morg's changes as before-and-after rows at the top of build/decks/MORG-STYLE.md's log, newest first."""
+    text = open(STYLE).read()
+    head = '| Card | Field | Before | After | Date |\n|---|---|---|---|---|\n'
+    if head not in text: sys.exit('build/decks/MORG-STYLE.md has no log table to add to')
+    lines = ''.join(f'| {cid} | {NAMES.get(f, f)} | {cell(b)} | {cell(a)} | {today()} |\n' for cid, f, b, a in rows)
+    open(STYLE, 'w').write(text.replace(head, head + lines, 1))
+
+def apply(src, dry=False):
+    """Every saved edit and new card from the Card Room, turned into what the desk does by hand: an edit is checked
+    against the house rules like tools/vet.py edit and written into its deck in place (so it goes back to the three
+    reviewers), with the oks of deck-mates that only lost a wrong answer carried, a new card goes on the end of its
+    deck, and every changed field is logged in build/decks/MORG-STYLE.md. A locked card, a card that's out, a field
+    someone else changed since Morg edited it, or an edit that breaks a house rule is held, never forced."""
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import vet as V
+    R = room(src)
+    _, marks = B.vetting()
+    done, style, facts, writes = [], [], [], []
+    def result(col, d, st, res, cid=None):
+        done.append((st, col, d['id'], res))
+        w = {'st': st, 'res': res, 'done': now()}
+        if cid: w['card'] = cid
+        writes.append(dict({'op': 'update', 'collection': col, 'doc_id': d['id'], 'data': w}, **({'if_version': d['version']} if d['version'] else {})))
+    for d in R['edits']:
+        e = d['data']; f = e.get('f') or {}
+        if e.get('st') not in ('saved', 'held'): continue
+        cid = e.get('id') or d['id']
+        try: did, deck, i = V.find(cid)
+        except SystemExit: result('edits', d, 'held', 'no such card'); continue
+        it = deck['items'][i]
+        now_ = {'ex': it['ex'], 'w': it['w'], 'hook': it.get('hook'), 'means': it['means'], 'd': it.get('d'), 'cat': it.get('tag') or B.DECK_CAT[did], 'wr': wrongs(it) or None}
+        if (marks.get(cid) or {}).get('m') == 'lock': result('edits', d, 'held', 'You locked this card: unlock it on the beta, or say OK in the chat, and the GM applies it'); continue
+        if it.get('out'): result('edits', d, 'held', 'This card is out: ' + it.get('out_why', '')); continue
+        bad = [k for k in f if k not in now_]
+        if bad: result('edits', d, 'held', 'fields the room can’t edit: ' + ', '.join(bad)); continue
+        clash = [k for k in f if now_[k] != (e.get('was') or {}).get(k) and now_[k] != f[k]]
+        if clash: result('edits', d, 'held', 'Changed since you edited it: ' + ', '.join(f'{NAMES[k]} now reads “{cell(now_[k])}”' for k in clash)); continue
+        if 'cat' in f and f['cat'] not in B.CATEGORY: result('edits', d, 'held', f'{f["cat"]} is not on the category list'); continue
+        new = dict(it); ch = [(k, now_[k], v) for k, v in f.items() if now_[k] != v]
+        for k, before, v in ch:
+            if k == 'cat':
+                if v == B.DECK_CAT[did]: new.pop('tag', None)
+                else: new['tag'] = v
+            elif k == 'wr':
+                if not v: new.pop('wr', None)
+                else:   # a wrong answer Morg kept keeps its own meaning line
+                    old = {wrongs({'wr': [x]})[0]: x for x in it.get('wr') or []}
+                    new['wr'] = [old.get(x, x) for x in v]
+            else: new[k] = v
+        if not ch: result('edits', d, 'applied', 'Already in the deck'); continue
+        trial = dict(deck, items=deck['items'][:i] + [new] + deck['items'][i + 1:])
+        probs = B.item_problems(did, trial['items'], B.clasher(trial), new, hooks=True)
+        if probs: result('edits', d, 'held', 'It breaks a house rule: ' + '. '.join(' '.join(str(x) for x in p[2:]) for p in probs)); continue
+        carried = 0
+        if not dry:
+            V.save_deck(did, trial); carried = V.carry(did, deck, trial, skip=(i,))
+        style += [(cid, k, b, a) for k, b, a in ch]
+        if any(k in WORDING for k, _, _ in ch): facts.append(cid)
+        result('edits', d, 'applied', 'In its deck: ' + ', '.join(NAMES[k] for k, _, _ in ch) + (', back to the three reviewers' if any(k != 'cat' for k, _, _ in ch) else '') + (f' ({carried} deck-mates keep their oks)' if carried else ''), cid)
+    for d in R['new']:
+        n = d['data']
+        if n.get('st') not in ('saved', 'held'): continue
+        did, cat = n.get('deck') or (B.CATEGORY.get(n.get('cat')) or {}).get('home') or '', n.get('cat')
+        if cat not in B.CATEGORY: result('new', d, 'held', f'{cat} is not on the category list'); continue
+        if did not in B.DECK_CAT and cat in B.CATEGORY: did = B.CATEGORY[cat].get('home') or next(x for x, c in B.DECK_CAT.items() if c == cat)
+        path = os.path.join(B.DECKS, did + '.json'); deck = json.load(open(path))
+        kinds = {x.get('k', 'word') for x in deck['items']}
+        k = n.get('k') or 'own'
+        if k != 'own' and k not in kinds: result('new', d, 'held', f'{did} has no kind {k}'); continue
+        item = {'w': n.get('w', ''), 'means': n.get('means', ''), 'ex': n.get('ex', ''), 'k': k, 'src': n.get('src') or '', 'hook': n.get('hook', ''), 'd': n.get('d')}
+        if k == 'own' or [x for x in n.get('wr') or [] if x]: item['wr'] = [x for x in n.get('wr') or [] if x]
+        if n.get('wm') and 'women' not in dict((x, f) for x, _, f in B.DAILY).get(did, ''): item['women'] = True
+        if cat != B.DECK_CAT[did]: item['tag'] = cat
+        twin = next((j for j, x in enumerate(deck['items']) if x['w'] == item['w'] and x['ex'] == item['ex']), None)
+        if twin is not None: result('new', d, 'applied', 'Already in its deck', f'{did}:{twin}'); continue
+        trial = dict(deck, items=deck['items'] + [item])
+        probs = B.item_problems(did, trial['items'], B.clasher(trial), item, hooks=True)
+        if probs: result('new', d, 'held', 'It breaks a house rule: ' + '. '.join(' '.join(str(x) for x in p[2:]) for p in probs)); continue
+        cid = f'{did}:{len(deck["items"])}'
+        grew = sum(B.fingerprint(deck, j) != B.fingerprint(trial, j) for j in range(len(deck['items'])) if not deck['items'][j].get('out'))
+        if not dry: V.save_deck(did, trial)
+        style += [(cid, f, '(new card)', item[f]) for f in ('ex', 'w', 'hook', 'means', 'wr') if item.get(f)]
+        facts.append(cid)
+        result('new', d, 'applied', f'On the end of {did} as {cid}' + (f', and {grew} deck-mates can now draw its answer, so they go back to the reviewers' if grew else '') + ('' if item['src'] else '. No source yet: the fact checker finds one on the deck’s site'), cid)
+    asks = [d for d in R['asks'] if d['data'].get('st') == 'asked']
+    if style and not dry: log_style(style)
+    for st, col, did, res in done: print(f'{st.upper():8} {col:5} {did}: {res}')
+    for a in asks: print(f'ASK      category “{a["data"].get("name")}”' + (f', tile “{a["data"].get("tile")}”' if a['data'].get('tile') else '') + (f': {a["data"].get("note")}' if a['data'].get('note') else '') + '. Morg names it, then the GM adds it to build/library/categories.json with its tag string')
+    if not done and not asks: print('Nothing saved in the Card Room waits to be applied'); return
+    if dry: print('\nA dry run: nothing was written'); return
+    if facts:
+        print('\nFor the fact checker’s facts-only pass (then lock them for Morg once the facts hold, as for his Board Room cards):')
+        print('  python3 tools/vet.py review ' + ' '.join(facts))
+    if writes:
+        out = os.path.join(src if os.path.isdir(src) else os.path.dirname(os.path.abspath(src)), 'applied.json')
+        json.dump([writes[n:n + 50] for n in range(0, len(writes), 50)], open(out, 'w'), ensure_ascii=False, indent=1)
+        print(f'\nThe room’s status writes, in batches of 50 for ArtifactData batch: {out}')
+    print('Then: python3 build/build.py, python3 tools/library.py check, python3 tools/library.py export DIR and republish library.json,')
+    print('and commit the decks, build/vetting/desk.json, build/decks/MORG-STYLE.md and build/library/ledger.json')
 
 # ---- the Card Room's data ----
 def export(out):
