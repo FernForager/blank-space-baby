@@ -22,6 +22,9 @@ TRIVELLE 13 reached about 390,000 tokens at a clean break (Library #14 landed an
    - Hubble sent five playbook changes in two hours. Read each against the playbook before changing our copies, then reply done in one line. Our copies are CLAUDE.md, team/GM.md, team/WORKER.md, stats/STAT-MASTER.md and research/hub.md.
    - A GM near its size line hands a build to a fresh worker instead of starting it: #14 and #15 both went out at 330k to 390k.
 
+
+7. **Since the note was first written (TRIVELLE 13, 04:55):** Billboard #15 done, its poster (Morg’s pick A, “DAILY TRIVIA SHOOTOUT” under the balls) on the beta at 68dbbac, one call open: capitals or lowercase (`CAPS` in tools/og.py, then run it and commit docs/og.png). Wordsmith #18 round one landed at a28ed28: build/decks/VOICE.md, 19 cards back with the three reviewers (send them the round, the reviewers’ chats run their own `todo`), four taste tests and the serial comma as hub decisions (`taste1-werkself` to `taste4-lazio`, `serialcomma`): log his picks in MORG-STYLE.md and apply any non-A pick with `vet.py edit`. Add VOICE.md to CLAUDE.md’s reading list and build/vetting/README.md rule 1. Its 12 decoy notes went to Decoys #17. Wordsmith round two (the “home games” and “nicknamed” templates) is a fresh session at High on his go.
+
 ## The ready prompt for TRIVELLE 16
 Morg starts a new Claude Code session in the app on the repo `fernforager/blank-space-baby`, branch `daily`, titled ⚽️🟡⚽️ GM #16 · Opus High, sets High, and pastes the block below.
 
