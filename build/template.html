@@ -932,9 +932,7 @@ button { -webkit-tap-highlight-color: transparent; font-variant-ligatures: none;
     for (var h = '', k = 0; k < 12; k++) h += '<i style="--a:' + (k * 30 + 15) + 'deg;--r:' + (k % 2 ? 62 : 76) + 'cqw"></i>';
     return '<span class="sparks k' + d + '" aria-hidden="true">' + h + '</span>';
   }
-  var TAG = { basics: 'basics', rules: 'rules', soccer: 'lingo', 'lingo-more': 'lingo', alpha: 'slang', parents: 'slang', epl: 'epl', 'epl-more': 'epl',
-    mls: 'mls', nwsl: 'nwsl', ucl: 'ucl', wc26: 'wc26', laliga: 'laliga', seriea: 'seriea', ligue1: 'ligue1', ligamx: 'ligamx', bundesliga: 'bundesliga',
-    'intl-men': 'world', 'intl-women': 'world', legends: 'legends', awards: 'awards', nicknames: 'clubs' };   // a card's category, by its deck (Morg, Oct 19, 2026): its tag.* string
+  var TAG = __TAG__;   // a card's category, by its deck (Morg, Oct 19, 2026): its tag.* string, from build/library/categories.json (Oct 31, 2026)
   function tagId(T) { var c = BYID[T.id], k = (c && c.tg) || TAG[(T.id || '').split(':')[0]]; return k ? 'tag.' + k : ''; }   // a card's own tag (the first nine's categories, Morg, Oct 29, 2026) wins over its deck's
   function tagOf(T) { return tagId(T) ? tx(tagId(T)) : ''; }
   function rcard(d, cls) { return '<i class="rcard c' + d + (cls ? ' ' + cls : '') + '"></i>'; }   // a referee's card in its color
