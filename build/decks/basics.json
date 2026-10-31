@@ -6,8 +6,8 @@
   "items": [
     {
       "w": "gloves",
-      "means": "The same goes for every player",
-      "ex": "Even for the goalkeeper, wearing her gloves is optional",
+      "means": "Optional for every player under Law 4",
+      "ex": "Under the Laws, even the goalkeeper doesn’t have to wear her gloves",
       "hook": "goalkeeper",
       "k": "game-gear",
       "src": "https://www.theifab.com/laws/latest/the-players-equipment/",

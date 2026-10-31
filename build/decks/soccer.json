@@ -26,8 +26,8 @@
   {
    "w": "volley",
    "means": "Kicked out of the air",
-   "ex": "To hit a volley, kick the ball out of the air before it bounces",
-   "hook": "bounces",
+   "ex": "The cross never touched the grass: the striker smashed it in on the volley",
+   "hook": "cross",
    "k": "move",
    "src": "https://www.merriam-webster.com/dictionary/volley",
    "d": 1

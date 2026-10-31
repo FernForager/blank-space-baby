@@ -651,8 +651,8 @@
   {
    "w": "girl dinner",
    "means": "A snack-plate dinner",
-   "ex": "Mom had leftover orange slices and crackers for girl dinner",
-   "hook": "crackers",
+   "ex": "Mom turned the leftover halftime orange slices into girl dinner",
+   "hook": "halftime",
    "src": "https://www.merriam-webster.com/slang/girl-dinner",
    "d": 1
   },
