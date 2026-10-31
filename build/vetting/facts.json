@@ -3111,9 +3111,9 @@
   "v": "ok"
  },
  "epl:3": {
-  "at": "2026-10-31T05:17:33Z",
-  "h": "091c7622fb",
-  "note": "premierleague.com title-winning managers: Chelsea under Mourinho, Ancelotti, Conte, Man City under Mancini, Pellegrini, Guardiola. Arsenal now have two (Wenger, Arteta 2025/26)",
+  "at": "2026-10-31T05:32:30Z",
+  "h": "44bb85a324",
+  "note": "premierleague.com title-winning managers: Chelsea under Mourinho, Ancelotti, Conte, Man City under Mancini, Pellegrini, Guardiola, no other club under three (Arsenal two, with Arteta 2025/26)",
   "v": "ok"
  },
  "epl:30": {
@@ -8171,9 +8171,9 @@
   "v": "ok"
  },
  "seriea:54": {
-  "at": "2026-10-31T05:17:33Z",
-  "h": "da0472b6f9",
-  "note": "legaseriea.it: 274 goals, single-group record, Pro Vercelli, Lazio, Juventus, Novara",
+  "at": "2026-10-31T05:32:30Z",
+  "h": "15d5fbea10",
+  "note": "legaseriea.it: 274 goals, still the single-group record, for Pro Vercelli, Lazio, Juventus, Novara. Color is not a fact call",
   "v": "ok"
  },
  "seriea:55": {
@@ -8306,9 +8306,9 @@
   "v": "ok"
  },
  "soccer:2": {
-  "at": "2026-10-31T05:17:33Z",
-  "h": "a85b761dbc",
-  "note": "M-W volley: a kick of the ball before it rebounds",
+  "at": "2026-10-31T05:32:30Z",
+  "h": "6cc10f4268",
+  "note": "M-W volley: a kick of the ball before it rebounds. Facts unchanged by the decoy split",
   "v": "ok"
  },
  "soccer:20": {
