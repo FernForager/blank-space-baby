@@ -1,7 +1,7 @@
 """Render docs/og.png, the 1200×630 picture iMessage and other apps show when triviela.net is texted or posted.
 
     python3 tools/og.py                      # the chosen direction (DIRECTION below) into docs/og.png
-    python3 tools/og.py B out/og-B.png 2     # one direction into a file, at 1× or 2× (to zoom in on the edges)
+    python3 tools/og.py A out/og-A.png 2     # one direction into a file, at 1× or 2× (to zoom in on the edges), "lc" after for the line in lowercase
     python3 tools/og.py all out [SCALE]      # every direction into a folder, as og-A.png, og-B.png, og-C.png
 
 A poster from the real build's own pieces, never a screenshot of the phone (Morg, Oct 31, 2026: "a billboard you'd see on a
@@ -13,7 +13,8 @@ as the game draws one in a string, its own pixel ball, so it looks the same on e
 Oct 31, 2026: cards with hooks were too specific, the rest is visuals): each shows its color card and one of the game's own
 marks, the black-and-white ball for a right answer or the red ✕ for a miss, cloned from a played tile on the board.
 
-The directions: A, lights, the sign's dot field over the CRT with the three balls lit under it, the sign alone.
+The directions: A, lights, the sign's dot field over the CRT with the three balls lit under it, Morg's line in the sign's own
+subheading slot under the dots (the site's, Morg's pick, Oct 31, 2026).
 B, collage, the cabinet's cream and green trim, the sign in its rim at a tilt, three keys scattered, the balls and the line in ink.
 C, three keys, the control panel's black, the sign across the top, a key of each color and the line in the screen's glow.
 """
@@ -23,8 +24,10 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from docsroute import route
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 HTML = open(os.path.join(ROOT, 'docs', 'index.html')).read()
-DIRECTION = 'B'   # the poster the site uses, Morg's pick
+DIRECTION = 'A'   # the poster the site uses: A, Morg's pick (Oct 31, 2026: "the art is compelling")
 W, H = 1200, 630
+LINE = 'daily trivia shootout'   # Morg's line under the name (Oct 31, 2026, as he wrote it: no ⚽, since the colored balls carry it), in the sign's own subheading slot
+CAPS = True   # the line in capitals, as the cabinet's sign sets this same subheading (False keeps it lowercase, as Morg typed it)
 MARKS = [1, 1, 2]   # the three keys, green, yellow, red: 1 the ball (right), 2 the ✕ (a miss), a day like the share grid's ⚽⚽❌
 
 CSS = """
@@ -51,7 +54,9 @@ CSS = """
 /* A: the sign alone, the cabinet's own stack edge to edge: the dot board over the screen, the three balls lit on it */
 #poster[data-d="A"] { background: radial-gradient(130% 110% at 50% 60%, #0D2216 0%, #07130C 70%); }
 #poster[data-d="A"] .marquee { left: 0; top: 0; width: 1200px; height: 396px; border-radius: 0; box-shadow: inset 0 -3px 0 #000, 0 4px 0 var(--body-dark); }
-#poster[data-d="A"] .marquee.dm canvas { inset: 8px 0 12px; height: calc(100% - 20px); }
+#poster[data-d="A"] .marquee.dm canvas { inset: 8px 0 96px; height: calc(100% - 104px); }
+#poster[data-d="A"] .marquee.dm .subhead { visibility: visible; font-size: 40px; letter-spacing: 5px; translate: 5px 0; }   /* the sign's own subheading slot at 5 device pixels a font pixel, placed by drawSign between the dots and the rim */
+#poster[data-d="A"] .marquee.dm .subhead.lc { text-transform: none; }
 #poster[data-d="A"] .scan { top: 400px; }
 #poster[data-d="A"] .balls { left: 50%; top: 418px; transform: translateX(-50%); column-gap: 72px; }
 #poster[data-d="A"] .balls .ball { width: 192px; }
@@ -105,7 +110,10 @@ async (o) => {
   // Morg's line, the ⚽ as the sign's own pixel ball (the game's way of drawing one in a string)
   const ball = Q('.subhead .tball');
   const line = () => { const p = document.createElement('p'); p.className = 'line'; p.append('daily ', ball.cloneNode(true), ' trivia'); return p; };
-  if (o.dir === 'A') { P.append(sign, balls, el('scan')); }
+  if (o.dir === 'A') {   // the sign's own subheading carries Morg's line, in the slot the cabinet's sign uses for its subheading
+    const sub = sign.querySelector('.subhead'); sub.textContent = o.line; sub.classList.toggle('lc', !o.caps);
+    P.append(sign, balls, el('scan'));
+  }
   if (o.dir === 'B') { P.append(el('trim l'), el('trim r'), sign, el('crt', el('screen', balls)), ...o.marks.map(key), line()); }
   if (o.dir === 'C') { P.append(sign, ...o.marks.map(key), line()); }
   await document.fonts.ready;
@@ -119,7 +127,7 @@ async (o) => {
 }
 """
 
-async def render(dir, out, scale):
+async def render(dir, out, scale, caps=CAPS):
     async with async_playwright() as p:
         b = await p.chromium.launch()
         pg = await b.new_page(viewport={'width': W, 'height': H}, device_scale_factor=scale)
@@ -133,7 +141,7 @@ async def render(dir, out, scale):
             pick = w if right else await pg.evaluate("[...document.querySelectorAll('.choice')].map(b => b.dataset.w).find(x => x !== document.getElementById('q').dataset.w)")
             await pg.click(f'.choice[data-w="{pick}"]'); await pg.wait_for_timeout(400)
             await pg.click('#flip'); await pg.wait_for_timeout(1200)
-        info = await pg.evaluate(JS, {'dir': dir, 'css': CSS, 'marks': MARKS})
+        info = await pg.evaluate(JS, {'dir': dir, 'css': CSS, 'marks': MARKS, 'line': LINE, 'caps': caps})
         await pg.wait_for_timeout(400)
         await pg.screenshot(path=out); await b.close()
     if errs: print('JS ERRORS', errs)
@@ -142,9 +150,9 @@ async def render(dir, out, scale):
 def main():
     a = sys.argv[1:]
     if not a: return asyncio.run(render(DIRECTION, os.path.join(ROOT, 'docs', 'og.png'), 1))
-    scale = int(a[2]) if len(a) > 2 else 1
+    scale = int(a[2]) if len(a) > 2 else 1; caps = CAPS and 'lc' not in a[3:]
     if a[0] == 'all':
         os.makedirs(a[1], exist_ok=True)
-        for d in 'ABC': asyncio.run(render(d, os.path.join(a[1], f'og-{d}.png'), scale))
-    else: asyncio.run(render(a[0].upper(), a[1], scale))
+        for d in 'ABC': asyncio.run(render(d, os.path.join(a[1], f'og-{d}.png'), scale, caps))
+    else: asyncio.run(render(a[0].upper(), a[1], scale, caps))
 main()
