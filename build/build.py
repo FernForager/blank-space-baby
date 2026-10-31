@@ -158,12 +158,13 @@ def set_id(did, it):
     """The set a card draws its wrong answers from: its kind (k) in its deck."""
     return f"{did}/{it.get('k', 'word')}"
 
-def set_entries(did, items, sid=None):
+def set_entries(did, items, sid=None, sets=None):
     """The entries of a deck's sets (or of the one set sid), each as {sid, w, m, i, live}: m is None and i the card's place
     for an entry borrowed from a card, whose answer it reads from the card as it is now, and live says whether it can show
-    (its card isn't out). Unknown cards are skipped here and refused by wrong_problems()."""
+    (its card isn't out). Unknown cards are skipped here and refused by wrong_problems(). sets: a trial copy of the sets
+    (a tool weighing a change), or None for the file's."""
     out = []
-    for st in wrong_sets()['sets']:
+    for st in (sets or wrong_sets())['sets']:
         if not st['id'].startswith(did + '/') or (sid and st['id'] != sid): continue
         for e in st.get('entries', []):
             if 'from' in e:
@@ -174,29 +175,29 @@ def set_entries(did, items, sid=None):
             else: out.append({'sid': st['id'], 'w': e.get('w', ''), 'm': e.get('m', ''), 'i': None, 'live': True})
     return out
 
-def draws(did, deck, it, clash=None):
+def draws(did, deck, it, clash=None, sets=None):
     """The wrong answers the game may put on this card's other two buttons, as (answer, own meaning or None): from its set,
     never clashing with its answer and never already in its sentence or on its tile. When its set has fewer than two that
     can show, the deck's other sets fill in, as the page's choices() does."""
     if it.get('wr'): return [(x if isinstance(x, str) else x['w'], None) for x in it['wr']]   # Morg's own two wrong answers, and only those
     clash = clash or clasher(deck)
-    mine, every = set_id(did, it), [e for e in set_entries(did, deck['items']) if not clash(e['w'], it['w']) and not shown(e['w'], it)]
+    mine, every = set_id(did, it), [e for e in set_entries(did, deck['items'], sets=sets) if not clash(e['w'], it['w']) and not shown(e['w'], it)]
     same = [e for e in every if e['sid'] == mine]
     if len({e['w'] for e in same if e['live']}) < 2: same += [e for e in every if e['sid'] != mine]
     out = {}
     for e in same: out.setdefault(e['w'], set()).add(e['m'])
     return [(w, m) for w, ms in out.items() for m in sorted(ms, key=lambda m: (m is not None, m or ''))]
 
-def wrong_pool(did, deck, it, clash=None):
+def wrong_pool(did, deck, it, clash=None, sets=None):
     """The answers this card can be offered as wrong (draws() above), what its reviewers see."""
-    return list(dict.fromkeys(w for w, _ in draws(did, deck, it, clash)))
+    return list(dict.fromkeys(w for w, _ in draws(did, deck, it, clash, sets)))
 
-def wrong_problems():
+def wrong_problems(data=None):
     """What's wrong with the sets: an id that names no deck, a set listed twice or with an answer twice, an entry borrowed
     from no card, from another deck's card or with another answer than its card has now, and any house-style slip in a
     wrong answer or meaning of its own (no semicolons, curly quotes only, 22 characters for an answer, 40 for a meaning)."""
     bad, seen = [], set()
-    data = wrong_sets()
+    data = data or wrong_sets()
     if not isinstance(data.get('sets'), list): return ['build/library/wrong.json needs a list of sets']
     for st in data['sets']:
         sid = str(st.get('id', ''))
@@ -235,8 +236,8 @@ def card_hash(it, pool, own=()):
     wm = [x.get('m', '') for x in it.get('wr') or [] if isinstance(x, dict)]   # a wrong answer's own meaning shows after a wrong pick, so it counts too
     return hashlib.sha1(json.dumps([it.get(k, 'word' if k == 'k' else None) for k in HASHED] + [sorted(pool)] + ([wm] if wm else []) + ([sorted(own)] if own else []), ensure_ascii=False).encode()).hexdigest()[:10]
 
-def fingerprint(did, deck, i, clash=None):
-    d = draws(did, deck, deck['items'][i], clash)
+def fingerprint(did, deck, i, clash=None, sets=None):
+    d = draws(did, deck, deck['items'][i], clash, sets)
     return card_hash(deck['items'][i], list(dict.fromkeys(w for w, _ in d)), [[w, m] for w, m in d if m is not None])
 
 # ---- near misses: the same rules as near2() in template.html, in words, so a reviewer sees what a number card draws ----

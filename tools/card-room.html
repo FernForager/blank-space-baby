@@ -63,6 +63,7 @@ ol.list { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
 .prow .pt { font-weight: 700; min-width: 0; overflow-wrap: anywhere; }
 .prow .pn { font-size: 14px; color: var(--muted); font-variant-numeric: tabular-nums; }
 .prow .badges { grid-column: 1 / -1; }
+.prow a { color: var(--green); }
 .more { display: block; margin: 12px auto 0; }
 .btn { font: 700 14px var(--body); border-radius: 9px; border: 1px solid var(--line); background: var(--cream); padding: 8px 12px; cursor: pointer; }
 .btn.go { background: var(--green); border-color: var(--green); color: #fff; }
@@ -91,6 +92,7 @@ button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-
 .foot .state { flex: 1; min-width: 0; font-size: 13px; color: var(--muted); }
 /* the sheet: a card, an entry, an edit, over the list */
 .scrim { position: fixed; inset: 0; z-index: 20; background: var(--scrim); display: flex; align-items: flex-end; justify-content: center; }
+.scrim[hidden] { display: none; }   /* display: flex above would otherwise keep a closed sheet's shade over the page */
 .sheet { width: 100%; max-width: 640px; max-height: 90%; overflow: auto; overscroll-behavior: contain; background: var(--page); border-radius: 18px 18px 0 0;
   padding: 14px max(16px, env(safe-area-inset-right, 0px)) max(18px, env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px)); display: grid; gap: 12px; }
 .sheet h2 { font: 600 21px/1.15 var(--display); margin: 0; overflow-wrap: anywhere; }
@@ -178,7 +180,7 @@ label.f small { font-weight: 400; color: var(--muted); }
   let D = null, C = [], CAT = {}, DECK = {}, DRAW = [], FIND = [], NOTES = [], SINCE = '', SPELL = { hook: {}, answer: {} };
   const QUIET = ['hook-answer', 'cross-cat'];   // findings that are fine as they are: shown on the card, never counted as a check
   let db = null, owner = false, live = false;
-  const EDITS = {}, NEWS = {}, ASKS = {}, DONE = {};   // his saves, and the GM's log of what became of each (done)
+  const EDITS = {}, NEWS = {}, ASKS = {}, SETS = {}, DONE = {};   // his saves (sets: his sets of wrong answers), and the GM's log of what became of each (done)
   const S = {
     v: 'cards',
     cards: { q: '', cat: '', st: 'live', colors: [1, 2, 3], mine: false, checks: false, sort: 'deck', n: 40 },
@@ -190,7 +192,7 @@ label.f small { font-weight: 400; color: var(--muted); }
   const POOLNAME = { hook: ['hook', 'hooks'], answer: ['answer', 'answers'], wrong: ['wrong answer', 'wrong answers'] };
   const FLAG = {   // a pool entry's own findings (tools/library.py entry_flags): its badge, and whether it asks for a look
     case: ['Two capitals or accents', 'bad', 1], marks: ['Hyphen or space differs', 'warn', 1], near: ['Near twin', 'warn', 1], repeat: ['Repeats in one deck', 'warn', 1],
-    kinds: ['In two kinds', 'warn', 1], lonely: ['Only one card', 'warn', 1], thin: ['Thin: under 4 answers', 'bad', 1], mixed: ['Mixes numbers and words', 'bad', 1],
+    sets: ['In two sets', 'warn', 1], idle: ['No card draws from it', 'warn', 1], lonely: ['Only one card', 'warn', 1], thin: ['Thin: under 4 answers', 'bad', 1], mixed: ['Mixes numbers and words', 'bad', 1],
     answer: ['Also an answer', '', 0], hook: ['Also a hook', '', 0], mine: ['Your own', 'mine', 0], own: ['Your own wrong answers only', 'mine', 0]
   };
 
@@ -198,7 +200,7 @@ label.f small { font-weight: 400; color: var(--muted); }
   function derive() {   // each save's fate: the newest record in the log for the wording he saved (its at), or still waiting
     const last = {};
     Object.keys(DONE).map(k => DONE[k]).sort((a, b) => String(a.at).localeCompare(String(b.at))).forEach(r => { last[r.col + '|' + r.id + '|' + r.for] = r; });
-    [['edits', EDITS], ['new', NEWS], ['asks', ASKS]].forEach(([col, store]) => Object.keys(store).forEach(id => {
+    [['edits', EDITS], ['new', NEWS], ['asks', ASKS], ['sets', SETS]].forEach(([col, store]) => Object.keys(store).forEach(id => {
       const d = store[id], r = last[col + '|' + id + '|' + d.at];
       d.st = r ? r.st : col === 'asks' ? 'asked' : 'saved'; d.res = r ? r.res || '' : ''; d.card = r ? r.card || '' : '';
     }));
@@ -211,13 +213,13 @@ label.f small { font-weight: 400; color: var(--muted); }
     if (c.s === 'n') return c;
     const e = ed(c), f = e ? e.f || {} : {};
     const v = Object.assign({}, c);
-    if ('ex' in f) v.ex = f.ex; if ('w' in f) v.w = f.w; if ('hook' in f) v.h = f.hook; if ('means' in f) v.m = f.means; if ('d' in f) v.d = f.d; if ('cat' in f) v.c = f.cat;
+    if ('ex' in f) v.ex = f.ex; if ('w' in f) v.w = f.w; if ('hook' in f) v.h = f.hook; if ('means' in f) v.m = f.means; if ('d' in f) v.d = f.d; if ('cat' in f) v.c = f.cat; if ('k' in f) v.k = f.k;
     if ('wr' in f) { if (f.wr) v.wr = f.wr; else delete v.wr; }
     v.edited = !!e; v.edit = e; return v;
   }
   function news() {   // his own new cards, waiting to go into their decks
     return Object.keys(NEWS).map(id => NEWS[id]).filter(n => n.st !== 'dropped' && !(n.st === 'applied' && n.card && IDX[n.card] != null && C[IDX[n.card]].w === n.w)).sort((a, b) => (b.at || '').localeCompare(a.at || ''))
-      .map(n => ({ id: 'new:' + n._id, doc: n._id, s: 'n', fate: n.st, res: n.res, card: n.card, c: n.cat, d: n.d, w: n.w, ex: n.ex, m: n.means, h: n.hook, k: n.k || 'own', wr: (n.wr || []).filter(Boolean), src: n.src, wm: n.wm, deck: n.deck, a: (n.at || '').slice(0, 10) }));
+      .map(n => ({ id: 'new:' + n._id, doc: n._id, s: 'n', fate: n.st, res: n.res, card: n.card, c: n.cat, d: n.d, w: n.w, ex: n.ex, m: n.means, h: n.hook, k: n.k || 'own', join: n.join, wr: (n.wr || []).filter(Boolean), src: n.src, wm: n.wm, deck: n.deck, a: (n.at || '').slice(0, 10) }));
   }
   const deckOf = c => c.deck || c.id.split(':')[0];
   const tileOf = cat => (CAT[cat] || {}).tile || '';
@@ -227,11 +229,20 @@ label.f small { font-weight: 400; color: var(--muted); }
     const i = m.index + m[1].length;
     return esc(ex.slice(0, i)) + '<mark>' + esc(ex.slice(i, i + w.length)) + '</mark>' + esc(ex.slice(i + w.length));
   }
+  // ---- the sets of wrong answers (build/library/wrong.json): a card draws from the set its kind names in its deck ----
+  const setOf = (dk, k) => D.pools.set.find(x => x.dk === dk && x.k === k);
+  const setDoc = id => id.replace(/\//g, '~').replace(/[^A-Za-z0-9~-]+/g, '_');   // a set's document in the room's database
+  function setNow(st) {   // a set as it reads now: the library's, or his saved edit over it until the library shows it
+    const x = SETS[setDoc(st.id)], mine = x && x.st !== 'dropped' && !(x.st === 'applied' && x.was !== st.fp);
+    const es = mine ? (x.entries || []).map(e => e.from ? [e.w, null, IDX[e.from], C[IDX[e.from]] && C[IDX[e.from]].s !== 'o' ? 1 : 0] : [e.w, e.m || '', null, 1]) : st.e;
+    return Object.assign({}, st, mine ? { name: x.name, note: x.note || '' } : {}, { e: es, edit: mine ? x : null });
+  }
   function wrongsOf(c) {   // what its other two buttons can show
     if (c.wr && c.wr.length) return { kind: 'mine', list: c.wr.map(wtext) };
     if (c.nr) return { kind: 'near', rule: c.nr };
-    if (c.ix == null) { const kd = c.k && c.k !== 'own' && D.pools.kind.find(x => x.dk === c.deck && x.k === c.k); return kd ? { kind: 'pool', list: kd.a.filter(a => a !== c.w) } : { kind: 'none', list: [] }; }
-    return { kind: 'pool', list: DRAW[c.ix].map(j => D.pools.wrong[j].t) };
+    const st = c.k && c.k !== 'own' && setOf(c.deck || deckOf(c), c.k);
+    if (c.ix == null || c.k !== C[c.ix].k || (st && setNow(st).edit)) return st ? { kind: 'pool', set: setNow(st), list: setNow(st).e.filter(x => x[3] && plain(x[0]) !== plain(c.w) && !shown(x[0], c.ex, c.w, c.h)).map(x => x[0]) } : { kind: 'none', list: [] };
+    return { kind: 'pool', set: st && setNow(st), list: DRAW[c.ix].map(j => D.pools.wrong[j].t) };
   }
 
   // ---- drawing ----
@@ -343,22 +354,23 @@ label.f small { font-weight: 400; color: var(--muted); }
   const asks = e => (e.x || []).some(x => (FLAG[x[0]] || [])[2]);
   function viewPool(name) {
     const s = S[name], q = letters(s.q).trim();
-    const kinds = name === 'wrong' && s.mode === 'kinds';
-    const src = kinds ? D.pools.kind.map((e, j) => Object.assign({ j: j, t: DECK[e.dk].name + ' · ' + e.k, n: '' }, e)) : D.pools[name].map((e, j) => Object.assign({ j: j }, e));
+    const kinds = name === 'wrong' && s.mode === 'sets';   // the sets of wrong answers, each with the answers that can show
+    const src = kinds ? D.pools.set.map((e, j) => { const n = setNow(e); return Object.assign({}, n, { j: j, t: n.name, n: '', a: n.e.filter(x => x[3]).map(x => x[0]) }); }) : D.pools[name].map((e, j) => Object.assign({ j: j }, e));
     let list = src.filter(e => (!q || letters(e.t + ' ' + (e.a || []).join(' ')).indexOf(q) >= 0) && (!s.checks || asks(e)) && (!s.fresh || e.n > SINCE));
     const count = e => kinds ? e.a.length : name === 'wrong' ? e.c.length + (e.o || []).length : e.c.length;
     if (s.sort === 'az') list.sort((a, b) => letters(a.t).localeCompare(letters(b.t)));
     else if (s.sort === 'new') list.sort((a, b) => String(b.n).localeCompare(String(a.n)) || count(b) - count(a));
     else list.sort((a, b) => count(b) - count(a) || letters(a.t).localeCompare(letters(b.t)));
-    const all = D.pools[name], fresh = all.filter(e => e.n > SINCE).length, flagged = (kinds ? D.pools.kind : all).filter(asks).length;
-    const intro = { hook: 'Every tile word, with the cards behind it. A tile shows its category over its hook.', answer: 'Every right answer, with the cards that use it and the kinds it lends itself to as a wrong answer.',
-      wrong: 'Every answer a card can show as wrong: its kind’s answers in its deck, or your own two. ' + fmt(C.filter(c => c.nr && c.s !== 'o').length) + ' number cards get two made-up near misses instead.' }[name];
+    const all = D.pools[name], fresh = all.filter(e => e.n > SINCE).length, flagged = (kinds ? D.pools.set : all).filter(asks).length;
+    const intro = { hook: 'Every tile word, with the cards behind it. A tile shows its category over its hook.', answer: 'Every right answer, with the cards that use it.',
+      wrong: kinds ? 'The sets of wrong answers. A card draws its two from the set its kind names in its deck. An answer turns up as a wrong one only where a set lists it.' :
+        'Every answer a card can show as wrong: its set’s answers, or your own two. ' + fmt(C.filter(c => c.nr && c.s !== 'o').length) + ' number cards get two made-up near misses instead.' }[name];
     const chip = (tog, on, label) => '<button type="button" data-ptog="' + tog + '" aria-pressed="' + on + '">' + label + '</button>';
     $('main').innerHTML = '<div class="filters"><p class="means" style="font-style:normal">' + esc(intro) + '</p>' +
-      (name === 'wrong' ? '<div class="seg" role="group" aria-label="Show"><button type="button" data-mode="answers" aria-pressed="' + !kinds + '">Wrong answers</button><button type="button" data-mode="kinds" aria-pressed="' + kinds + '">Kinds</button></div>' : '') +
+      (name === 'wrong' ? '<div class="seg" role="group" aria-label="Show"><button type="button" data-mode="answers" aria-pressed="' + !kinds + '">Wrong answers</button><button type="button" data-mode="sets" aria-pressed="' + kinds + '">Sets</button></div>' : '') +
       '<div class="chips">' + chip('checks', s.checks, 'Needs a look (' + fmt(flagged) + ')') + (kinds ? '' : chip('fresh', s.fresh, 'New this week (' + fmt(fresh) + ')')) + '</div></div>' +
       checksPanel(name) +
-      '<div class="countrow"><p class="count"><b>' + plural(kinds ? D.pools.kind.length : all.length, kinds ? 'kind' : POOLNAME[name][0], kinds ? 'kinds' : POOLNAME[name][1]) + '</b>' + (kinds ? '' : ', ' + fmt(fresh) + ' new this week') + (list.length !== (kinds ? D.pools.kind.length : all.length) ? ', ' + fmt(list.length) + ' shown' : '') + '</p>' +
+      '<div class="countrow"><p class="count"><b>' + plural(kinds ? D.pools.set.length : all.length, kinds ? 'set' : POOLNAME[name][0], kinds ? 'sets' : POOLNAME[name][1]) + '</b>' + (kinds ? '' : ', ' + fmt(fresh) + ' new this week') + (list.length !== (kinds ? D.pools.set.length : all.length) ? ', ' + fmt(list.length) + ' shown' : '') + '</p>' +
       '<select id="p-sort" aria-label="Order">' + [['most', 'Most used'], ['az', 'A to Z']].concat(kinds ? [] : [['new', 'Newest']]).map(o => '<option value="' + o[0] + '"' + (s.sort === o[0] ? ' selected' : '') + '>' + o[1] + '</option>').join('') + '</select></div><ol class="list" id="list"></ol>';
     paginate(list, e => '<li><button type="button" class="prow" data-e="' + (kinds ? 'k' : '') + e.j + '"><span class="pt">' + esc(e.t) + '</span><span class="pn">' +
       (kinds ? plural(e.a.length, 'answer') : plural(count(e), 'card')) + '</span>' + (kinds ? '<span class="means" style="grid-column:1/-1">' + esc(e.a.slice(0, 8).join(', ') + (e.a.length > 8 ? '…' : '')) + '</span>' : '') + entryBadges(e, name) + '</button></li>', name);
@@ -382,6 +394,7 @@ label.f small { font-weight: 400; color: var(--muted); }
   $('sheet').addEventListener('click', e => {
     if (e.target.closest('[data-close]')) close(); else if (e.target.closest('[data-back]')) back();
     const c = e.target.closest('[data-card]'); if (c && $('sheet').contains(c)) openCard(c.dataset.card);
+    const st = e.target.closest('[data-set]'); if (st && $('sheet').contains(st)) { e.preventDefault(); openSet(D.pools.set.findIndex(x => x.id === st.dataset.set)); }
   });
   document.addEventListener('keydown', e => { if (e.key === 'Escape' && !$('scrim').hidden) back(); });
 
@@ -393,7 +406,7 @@ label.f small { font-weight: 400; color: var(--muted); }
     const c = findCard(id); if (!c) return;
     sheet(el => {
       const v = view(c), dk = DECK[v.deck || deckOf(c)] || {}, wr = wrongsOf(v), e = ed(c), fs = c.ix != null ? FIND[c.ix].concat(NOTES[c.ix]) : [];
-      const choice = wr.kind === 'mine' ? 'Your own two: ' : wr.kind === 'near' ? 'Two made-up near misses: ' + wr.rule : wr.kind === 'pool' ? 'Any two of ' + plural(wr.list.length, 'answer') + ' of its kind, “' + v.k + '”, in ' + (dk.name || '') : 'None yet';
+      const choice = wr.kind === 'mine' ? 'Your own two: ' : wr.kind === 'near' ? 'Two made-up near misses: ' + wr.rule : wr.kind === 'pool' ? 'Any two of ' + plural(wr.list.length, 'answer') + ' in its set, “' + (wr.set ? wr.set.name : v.k) + '”' : 'None yet';
       el.innerHTML = head(esc(v.h), esc(STATE[c.s] || '') + (c.s === 'p' && c.wt ? ': ' + c.wt.map(w => WHO[w] || w).join(', ') : '') + (c.fn ? '. Your flag: ' + esc(c.fn) : '') + (c.ow ? '. ' + esc(c.ow) : '')) +
         '<div class="tilebox"><div class="tile" aria-label="The tile"><i class="rc c' + v.d + '"></i><span class="tt">' + esc(tileOf(v.c)) + '</span><span class="th">' + esc(v.h) + '</span></div>' +
         '<div style="display:grid;gap:6px;min-width:0"><p class="ex">' + marked(v.ex, v.w) + '</p><p class="means">' + esc(v.m) + '</p></div></div>' +
@@ -406,7 +419,7 @@ label.f small { font-weight: 400; color: var(--muted); }
         '<dl class="kv"><dt>Category</dt><dd>' + esc((CAT[v.c] || {}).name || v.c) + (c.own || (v.c !== (DECK[deckOf(c)] || {}).cat) ? ' (its own, over its deck’s ' + esc((CAT[(DECK[deckOf(c)] || {}).cat] || {}).name || '') + ')' : '') + '</dd>' +
         '<dt>Color</dt><dd>' + COLOR[v.d] + ', ' + EASE[v.d] + '</dd><dt>Deck</dt><dd>' + esc(dk.name || deckOf(c)) + '</dd>' +
         (v.src ? '<dt>Source</dt><dd><a href="' + esc(v.src) + '" target="_blank" rel="noopener">' + esc(v.src.replace(/^https?:\/\/(www\.)?/, '').slice(0, 60)) + '</a></dd>' : '<dt>Source</dt><dd>' + esc(dk.src || 'None yet: the fact checker finds one') + '</dd>') +
-        '<dt>Kind</dt><dd>' + esc(v.k === 'own' ? 'its own (lends its answer to no other card)' : v.k) + '</dd>' +
+        '<dt>Wrong answers from</dt><dd>' + (v.k === 'own' || !setOf(v.deck || deckOf(c), v.k) ? esc(v.k === 'own' ? 'your own two' : v.k) : '<a href="#" data-set="' + esc(setOf(v.deck || deckOf(c), v.k).id) + '">' + esc(setNow(setOf(v.deck || deckOf(c), v.k)).name) + '</a>') + '</dd>' +
         (c.a ? '<dt>Came in</dt><dd>' + day(c.a) + (c.e && c.e > c.a ? ', last changed ' + day(c.e) : '') + '</dd>' : '') + '<dt>Card</dt><dd>' + esc(c.id) + '</dd></dl>' +
         '';
       $('try').addEventListener('click', () => tryIt(v, wr));
@@ -420,7 +433,7 @@ label.f small { font-weight: 400; color: var(--muted); }
     if (st === 'applied') return '<div class="msg ok">' + what + ' is in its deck' + (x.card ? ' as ' + esc(x.card) : '') + ': ' + esc(x.res || '') + '. It reads as yours here until the room’s data refreshes</div>';
     return '<div class="msg ok">' + what + ' waits for the hub’s “Apply my card edits”' + (isNew ? '' : '. It changes ' + Object.keys(x.f || {}).map(k => FIELD[k] || k).join(', ')) + '</div>';
   }
-  const FIELD = { ex: 'the sentence', w: 'the answer', hook: 'the hook', means: 'the meaning', d: 'the color', cat: 'the category', wr: 'the wrong answers' };
+  const FIELD = { ex: 'the sentence', w: 'the answer', hook: 'the hook', means: 'the meaning', d: 'the color', cat: 'the category', wr: 'the wrong answers', k: 'the set its wrong answers come from' };
 
   // ---- Try it: the card as it plays, with two of its wrong answers ----
   function nearTwo(w) {
@@ -476,7 +489,8 @@ label.f small { font-weight: 400; color: var(--muted); }
       else if (plain(a) === plain(f.w) || plain(b) === plain(f.w)) p.push('A wrong answer is the answer itself');
       else if (shown(a, f.ex, f.w, f.hook) || shown(b, f.ex, f.w, f.hook)) p.push('A wrong answer is already in the sentence or on the tile');
       if ((a || '').length > R.w_max || (b || '').length > R.w_max) p.push('A wrong answer is over ' + R.w_max + ' characters');
-    } else if (f.fresh && !f.k) p.push('Pick a kind for its wrong answers, or write your own two');
+    } else if (f.fresh && !f.k) p.push('Pick a set for its wrong answers, or write your own two');
+    else if (f.k) { const st = setOf(f.deck || deckOf(c), f.k), n = st ? setNow(st).e.filter(x => x[3] && plain(x[0]) !== plain(f.w)).length : 0; if (n < 2) p.push('That set has fewer than two wrong answers this card can show'); }   // the build's own test
     // the library's own consistency: spelled as the cards in play spell it
     const slip = (pool, form, what) => { const seen = SPELL[pool][key(form)]; if (!form || !seen || seen.has(form)) return; const o = Array.from(seen).find(x => letters(x) === letters(form)); if (o) w.push(['warn', 'The cards in play spell this ' + what + ' “' + o + '”']); };
     slip('hook', f.hook, 'hook'); slip('answer', f.w, 'answer'); if (f.own) f.wr.forEach(x => slip('answer', x, 'wrong answer'));
@@ -498,10 +512,10 @@ label.f small { font-weight: 400; color: var(--muted); }
     if (c && c.s !== 'n' && ['ex', 'w', 'hook', 'means'].some(k => f[k] !== base(c, k)) || f.fresh) w.push(['info', 'Your wording plays as written, once the fact checker checks the facts. You have the last word']);
     return { p: p, w: w };
   }
-  function base(c, k) { return { ex: c.ex, w: c.w, hook: c.h, means: c.m, d: c.d, cat: c.c }[k]; }
+  function base(c, k) { return { ex: c.ex, w: c.w, hook: c.h, means: c.m, d: c.d, cat: c.c, k: c.k }[k]; }
   function editSheet(el, c) {
     const fresh = !c || c.s === 'n', v = c ? view(c) : { c: S.cards.cat || D.cats[0].id, d: 1, ex: '', w: '', h: '', m: '', wr: [], k: '', src: '', wm: 0 };
-    let cat = v.c, d = v.d, deck = c ? (c.deck || deckOf(c)) : homeOf(cat, ''), own = !!(v.wr && v.wr.length) || (fresh && (!v.k || v.k === 'own')), k = fresh && v.k !== 'own' ? v.k : '';
+    let cat = v.c, d = v.d, deck = c ? (c.deck || deckOf(c)) : homeOf(cat, ''), own = !!(v.wr && v.wr.length) || (fresh && (!v.k || v.k === 'own')), k = v.k && v.k !== 'own' ? v.k : '', join = !!(c && c.join);
     const wr = (v.wr || []).map(wtext).concat(['', '']).slice(0, 2);
     el.innerHTML = head(fresh ? (c ? 'Your new card' : 'A new card') : 'Edit “' + esc(v.h) + '”', fresh ? 'It goes on the end of its deck once you send it. The fact checker checks the facts, and you have the last word.' : 'Saved as you go. Send your edits from the hub when you’re done.') +
       '<label class="f">Category<select id="f-c">' + catOptions(cat) + '</select></label>' +
@@ -510,7 +524,7 @@ label.f small { font-weight: 400; color: var(--muted); }
       '<label class="f">Sentence <small>The answer must be in it word for word: it becomes the blank</small><textarea id="f-ex" rows="3">' + esc(v.ex) + '</textarea></label>' +
       '<div class="two"><label class="f">Answer<input type="text" id="f-w" value="' + esc(v.w) + '" autocomplete="off"></label><label class="f">Hook <small>From the sentence, never the answer</small><input type="text" id="f-hook" value="' + esc(v.h) + '" autocomplete="off"></label></div>' +
       '<label class="f">Meaning <small>Shows under the answer once it’s played</small><input type="text" id="f-m" value="' + esc(v.m) + '" autocomplete="off"></label>' +
-      '<div style="display:grid;gap:6px"><b style="font-size:14px">Wrong answers</b><div class="seg" id="f-own" role="group" aria-label="Wrong answers"><button type="button" data-own="0">' + (fresh ? 'From a kind' : 'From its kind') + '</button><button type="button" data-own="1">Your own two</button></div>' +
+      '<div style="display:grid;gap:6px"><b style="font-size:14px">Wrong answers</b><div class="seg" id="f-own" role="group" aria-label="Wrong answers"><button type="button" data-own="0">From a set</button><button type="button" data-own="1">Your own two</button></div>' +
       '<div id="ownbox" class="two"><label class="f">Wrong answer<input type="text" id="f-w1" value="' + esc(wr[0]) + '" autocomplete="off"></label><label class="f">Wrong answer<input type="text" id="f-w2" value="' + esc(wr[1]) + '" autocomplete="off"></label></div>' +
       '<div id="kindbox"></div></div>' +
       (fresh ? '<label class="f">Where the fact comes from <small>A link on the deck’s official site, for the fact checker</small><input type="url" id="f-src" value="' + esc(v.src || '') + '" placeholder="https://" autocomplete="off"></label>' +
@@ -529,16 +543,18 @@ label.f small { font-weight: 400; color: var(--muted); }
       $('f-own').querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', String(!!+b.dataset.own === own)));
       $('ownbox').hidden = !own;
       if (own) { $('kindbox').innerHTML = fresh ? '<p class="means" style="font-style:normal">Your answer stays yours: it won’t turn up as a wrong answer on other cards.</p>' : ''; return; }
-      if (!fresh) { const x = wrongsOf(Object.assign({}, v, { wr: null, ix: c.ix })); $('kindbox').innerHTML = '<p class="means" style="font-style:normal">' + (c.wr && c.wr.length ? 'Back to its kind’s answers' : x.kind === 'near' ? 'Two made-up near misses: ' + esc(x.rule) : 'Any two of ' + plural((x.list || []).length, 'answer') + ' of its kind, “' + esc(c.k) + '”') + '</p>'; return; }
-      const ks = D.pools.kind.filter(x => x.dk === deck && !x.own);
+      const ks = D.pools.set.filter(x => x.dk === deck).map(setNow), near = !fresh && c.nr;
       if (ks.map(x => x.k).indexOf(k) < 0) k = '';
-      $('kindbox').innerHTML = '<label class="f">Kind <small>Its answer also turns up as a wrong answer on this kind’s cards, which go back to the reviewers</small><select id="f-k"><option value="">Pick a kind</option>' +
-        ks.map(x => '<option value="' + esc(x.k) + '"' + (x.k === k ? ' selected' : '') + '>' + esc(x.k + ': ' + x.a.slice(0, 4).join(', ') + (x.a.length > 4 ? '…' : '')) + '</option>').join('') + '</select></label>';
+      $('kindbox').innerHTML = (near ? '<p class="means" style="font-style:normal">Two made-up near misses: ' + esc(c.nr) + '. Its set is the fallback</p>' : '') +
+        '<label class="f">Wrong answers from <small>A set of its deck: the card shows two of its answers</small><select id="f-k"><option value="">Pick a set</option>' +
+        ks.map(x => { const a = x.e.filter(y => y[3]).map(y => y[0]); return '<option value="' + esc(x.k) + '"' + (x.k === k ? ' selected' : '') + '>' + esc(x.name + ': ' + a.slice(0, 4).join(', ') + (a.length > 4 ? '…' : '')) + '</option>'; }).join('') + '</select></label>' +
+        (fresh ? '<label class="row" style="cursor:default;display:flex;gap:8px;align-items:center;font-size:14px"><input type="checkbox" id="f-join"' + (join ? ' checked' : '') + '> Its answer joins this set too, so the set’s cards can show it (they go back to the reviewers)</label>' : '');
       $('f-k').addEventListener('change', function () { k = this.value; check(); });
+      if ($('f-join')) $('f-join').addEventListener('change', function () { join = this.checked; check(); });
     }
     function read() {
       const g = id => { const x = $(id); return x ? curly(x.value.replace(/\s+/g, ' ').trim()) : ''; };
-      return { cat: cat, d: d, deck: fresh ? deck : '', ex: g('f-ex'), w: g('f-w'), hook: g('f-hook'), means: g('f-m'), own: own, wr: own ? [g('f-w1'), g('f-w2')] : [], k: own ? '' : k, src: $('f-src') ? $('f-src').value.trim() : '', wm: $('f-wm') && !$('wmf').hidden && $('f-wm').checked ? 1 : 0, fresh: fresh };
+      return { cat: cat, d: d, deck: fresh ? deck : '', ex: g('f-ex'), w: g('f-w'), hook: g('f-hook'), means: g('f-m'), own: own, wr: own ? [g('f-w1'), g('f-w2')] : [], k: own ? '' : k, join: !own && join, src: $('f-src') ? $('f-src').value.trim() : '', wm: $('f-wm') && !$('wmf').hidden && $('f-wm').checked ? 1 : 0, fresh: fresh };
     }
     function check() {
       const f = read(), r = problems(f, c);
@@ -555,10 +571,10 @@ label.f small { font-weight: 400; color: var(--muted); }
     $('ok').addEventListener('click', () => {
       const f = check(); if (problems(f, c).p.length) return;
       if (fresh) {
-        const body = { cat: f.cat, deck: f.deck, d: f.d, ex: f.ex, w: f.w, hook: f.hook, means: f.means, wr: f.own ? f.wr : [], k: f.own ? '' : f.k, src: f.src, wm: f.wm, at: new Date().toISOString(), st: 'saved' };
+        const body = { cat: f.cat, deck: f.deck, d: f.d, ex: f.ex, w: f.w, hook: f.hook, means: f.means, wr: f.own ? f.wr : [], k: f.own ? '' : f.k, join: f.join, src: f.src, wm: f.wm, at: new Date().toISOString(), st: 'saved' };
         put('new', c ? c.doc : 'n' + Date.now().toString(36) + Math.random().toString(36).slice(2, 6), body);
       } else {
-        const now = { ex: f.ex, w: f.w, hook: f.hook, means: f.means, d: f.d, cat: f.cat }, ch = {}, was = {};
+        const now = { ex: f.ex, w: f.w, hook: f.hook, means: f.means, d: f.d, cat: f.cat, k: f.own ? base(c, 'k') : f.k || base(c, 'k') }, ch = {}, was = {};
         Object.keys(now).forEach(k => { if (now[k] !== base(c, k)) { ch[k] = now[k]; was[k] = base(c, k); } });
         const bw = c.wr && c.wr.length ? c.wr.map(wtext) : null, nw = f.own ? f.wr : null;
         if (JSON.stringify(bw) !== JSON.stringify(nw)) { ch.wr = nw; was.wr = bw; }
@@ -585,21 +601,21 @@ label.f small { font-weight: 400; color: var(--muted); }
   // ---- saving: one write at a time per document ----
   const chain = {};
   function status() {
-    const e = Object.keys(EDITS).filter(id => EDITS[id].st === 'saved').length, n = Object.keys(NEWS).filter(id => NEWS[id].st === 'saved').length, a = Object.keys(ASKS).filter(id => ASKS[id].st === 'asked').length;
-    const parts = [e && plural(e, 'edit'), n && plural(n, 'new card'), a && plural(a, 'category ask')].filter(Boolean);
-    const held = Object.keys(EDITS).filter(id => EDITS[id].st === 'held').length + Object.keys(NEWS).filter(id => NEWS[id].st === 'held').length;
+    const e = Object.keys(EDITS).filter(id => EDITS[id].st === 'saved').length, n = Object.keys(NEWS).filter(id => NEWS[id].st === 'saved').length, a = Object.keys(ASKS).filter(id => ASKS[id].st === 'asked').length, w = Object.keys(SETS).filter(id => SETS[id].st === 'saved').length;
+    const parts = [e && plural(e, 'edit'), n && plural(n, 'new card'), w && plural(w, 'set'), a && plural(a, 'category ask')].filter(Boolean);
+    const held = [EDITS, NEWS, SETS].reduce((t, store) => t + Object.keys(store).filter(id => store[id].st === 'held').length, 0);
     $('save').textContent = !live ? 'Open this page in Claude to save edits' : !owner ? 'Only Morg can change the cards here' :
       (parts.length ? parts.join(', ') + ' saved. Send them with “Apply my card edits” in the hub' : 'Nothing waiting. Your edits save as you go') + (held ? '. ' + plural(held, 'change') + ' held: open ' + (held === 1 ? 'it' : 'them') + ' to see why' : '');
   }
   function put(col, id, body) {
-    const store = { edits: EDITS, new: NEWS, asks: ASKS }[col];
+    const store = { edits: EDITS, new: NEWS, asks: ASKS, sets: SETS }[col];
     store[id] = Object.assign({ _id: id }, body); refresh();
     $('save').textContent = 'Saving…';
     chain[col + id] = (chain[col + id] || Promise.resolve()).then(() => db.collection(col).doc(id).set(body))
       .then(status, err => { $('save').textContent = err && err.code === 'invalid_argument' ? 'Only Morg can change the cards here' : err && err.code === 'quota_exceeded' ? 'The room’s database is full. Ask the GM to clear applied edits' : 'Couldn’t save. Check your signal, then save again'; });
   }
   function remove(col, id) {
-    const store = { edits: EDITS, new: NEWS, asks: ASKS }[col];
+    const store = { edits: EDITS, new: NEWS, asks: ASKS, sets: SETS }[col];
     delete store[id]; refresh();
     chain[col + id] = (chain[col + id] || Promise.resolve()).then(() => db.collection(col).doc(id).delete()).then(status, () => { $('save').textContent = 'Couldn’t save. Check your signal, then try again'; });
   }
@@ -633,17 +649,83 @@ label.f small { font-weight: 400; color: var(--muted); }
     if (id === 'f-cat') s.cat = e.target.value; else if (id === 'f-st') s.st = e.target.value; else if (id === 'f-sort' || id === 'p-sort') s.sort = e.target.value; else return;
     s.n = 0; render();
   });
-  function openEntry(name, ref) {
-    if (ref[0] === 'k') {
-      const e = D.pools.kind[+ref.slice(1)];
-      return sheet(el => { el.innerHTML = head(esc(DECK[e.dk].name + ' · ' + e.k), plural(e.a.length, 'answer') + ', ' + plural(e.c.length, 'card') + '. Every card of this kind can show the others’ answers as wrong ones') +
-        '<div class="choices">' + e.a.map(a => '<span>' + esc(a) + '</span>').join('') + '</div>' + (e.x ? '<div class="badges">' + entryBadges(e, 'kind') + '</div>' : '') + cardList(e.c); });
+  function setFate(x) {
+    if (x.st === 'held') return '<div class="msg warn">Your set is held: ' + esc(x.res || 'the GM will ask you about it') + '. Change it and save again, or tell the GM it’s OK</div>';
+    if (x.st === 'applied') return '<div class="msg ok">Your set is in the library: ' + esc(x.res || '') + '. It reads as yours here until the room’s data refreshes</div>';
+    return '<div class="msg ok">Your set waits for the hub’s “Apply my card edits”</div>';
+  }
+  function openSet(j) {
+    sheet(el => {
+      const e = setNow(D.pools.set[j]), shows = e.e.filter(x => x[3]).length;
+      el.innerHTML = head(esc(e.name), plural(shows, 'answer') + ' to show, ' + plural(e.c.length, 'card') + ' draw from it. ' + esc(DECK[e.dk].name) + ', kind “' + esc(e.k) + '”') +
+        (e.note ? '<p class="means" style="font-style:normal">' + esc(e.note) + '</p>' : '') + (e.x ? '<div class="badges">' + entryBadges(e, 'set') + '</div>' : '') +
+        (live && owner ? '<div><button type="button" class="btn go" id="setedit">Edit this set</button></div>' : '') + (e.edit ? setFate(e.edit) : '') +
+        '<ol class="list">' + e.e.map(x => '<li class="prow" style="cursor:default' + (x[3] ? '' : ';opacity:.55') + '"><span class="pt">' + esc(x[0]) + '</span><span class="pn">' +
+          (x[2] != null && C[x[2]] ? '<a href="#" data-card="' + esc(C[x[2]].id) + '">' + esc(C[x[2]].id) + '</a>' : 'its own') + '</span><span class="means" style="grid-column:1/-1">' +
+          esc(x[2] != null && C[x[2]] ? C[x[2]].m + (x[3] ? '' : ' (its card is out, so it doesn’t show)') : x[1] || 'No meaning line') + '</span></li>').join('') + '</ol>' +
+        '<b style="font-size:14px">Cards that draw from it</b>' + cardList(e.c);
+      if ($('setedit')) $('setedit').addEventListener('click', () => sheet(s => setSheet(s, D.pools.set[j])));
+    });
+  }
+  function setSheet(el, st) {
+    const now = setNow(st), es = now.e.map(x => x[2] != null && C[x[2]] ? { w: x[0], from: C[x[2]].id } : { w: x[0], m: x[1] || '' });
+    el.innerHTML = head('Edit “' + esc(now.name) + '”', 'Saved when you press Save. Send it from the hub with your card edits. ' + plural(st.c.length, 'card') + ' draw from this set: a new wrong answer sends them back to the reviewers') +
+      '<label class="f">Name<input type="text" id="s-name" value="' + esc(now.name) + '" autocomplete="off"></label>' +
+      '<label class="f">Note <small>For you and the desk</small><input type="text" id="s-note" value="' + esc(now.note) + '" autocomplete="off"></label>' +
+      '<div class="two"><label class="f">A new wrong answer<input type="text" id="s-w" autocomplete="off"></label><label class="f">Its meaning <small>Shows after a wrong pick</small><input type="text" id="s-m" autocomplete="off"></label></div>' +
+      '<div><button type="button" class="btn" id="s-add">Add it</button></div>' +
+      '<ol class="list" id="s-list"></ol>' +
+      '<div class="msgs" id="msgs"></div><div style="display:flex;gap:8px"><button type="button" class="btn go" id="ok">Save your set</button><button type="button" class="btn ghost" data-back>Cancel</button></div>';
+    const R = D.rules, txt = id => curly($(id).value.replace(/\s+/g, ' ').trim());
+    function rows() {
+      $('s-list').innerHTML = es.map((e, n) => '<li class="prow" style="cursor:default"><span class="pt">' + esc(e.w) + '</span><span class="pn"><button type="button" class="btn ghost" data-drop="' + n + '" aria-label="Take ' + esc(e.w) + ' out of the set">Take out</button></span>' +
+        (e.from ? '<span class="means" style="grid-column:1/-1">' + esc(C[IDX[e.from]].m) + ' (from ' + esc(e.from) + ')</span>' : '<input type="text" data-m="' + n + '" value="' + esc(e.m) + '" aria-label="The meaning of ' + esc(e.w) + '" style="grid-column:1/-1">') + '</li>').join('');
+      check();
     }
+    function problemsOf() {
+      const p = [], seen = {};
+      if (!txt('s-name')) p.push('Give the set a name');
+      es.forEach(e => {
+        if (seen[plain(e.w)]) p.push(e.w + ' is in the set twice'); seen[plain(e.w)] = 1;
+        if (!e.from && (e.m || '').length > R.means_max) p.push('The meaning of ' + e.w + ' is over ' + R.means_max + ' characters');
+        if (/;/.test(e.w + (e.m || ''))) p.push('No semicolons');
+      });
+      if (es.filter(e => !e.from || C[IDX[e.from]].s !== 'o').length < 2 && st.c.length) p.push('Its cards need at least two wrong answers to show');
+      return p;
+    }
+    function check() {
+      const p = problemsOf(), w = es.length < 4 && st.c.length ? [['warn', 'Under 4 answers: its cards will show the same ones often']] : [];
+      $('msgs').innerHTML = (p.length ? p.map(x => '<div class="msg">' + esc(x) + '</div>').join('') : '<div class="msg ok">Ready to save</div>') + w.map(x => '<div class="msg ' + x[0] + '">' + esc(x[1]) + '</div>').join('');
+      $('ok').disabled = !!p.length || !(live && owner);
+    }
+    $('s-list').addEventListener('click', e => { const b = e.target.closest('[data-drop]'); if (b) { es.splice(+b.dataset.drop, 1); rows(); } });
+    $('s-list').addEventListener('input', e => { const x = e.target.closest('[data-m]'); if (x) { es[+x.dataset.m].m = curly(x.value.replace(/\s+/g, ' ').trim()); check(); } });
+    ['s-name', 's-note'].forEach(id => $(id).addEventListener('input', check));
+    $('s-add').addEventListener('click', () => {
+      const w = txt('s-w'), m = txt('s-m');
+      if (!w) return;
+      if (w.length > R.w_max) { $('msgs').innerHTML = '<div class="msg">A wrong answer is ' + R.w_max + ' characters at most</div>'; return; }
+      if (es.some(e => plain(e.w) === plain(w))) { $('msgs').innerHTML = '<div class="msg">' + esc(w) + ' is in the set already</div>'; return; }
+      const card = C.find(c => c.deck === st.dk && c.s !== 'o' && plain(c.w) === plain(w));   // an answer of its own deck lends its card’s meaning, so it never goes stale
+      es.push(card && !m ? { w: card.w, from: card.id } : { w: w, m: m }); $('s-w').value = ''; $('s-m').value = ''; rows();
+    });
+    rows();
+    $('ok').addEventListener('click', () => {
+      if (problemsOf().length) return;
+      const lib = st.e.map(x => x[2] != null && C[x[2]] ? { w: x[0], from: C[x[2]].id } : { w: x[0], m: x[1] || '' });
+      const body = { id: st.id, name: txt('s-name'), note: txt('s-note'), entries: es, was: st.fp, at: new Date().toISOString(), st: 'saved' };
+      if (body.name === st.name && body.note === (st.note || '') && JSON.stringify(es) === JSON.stringify(lib)) { if (SETS[setDoc(st.id)]) remove('sets', setDoc(st.id)); }
+      else put('sets', setDoc(st.id), body);
+      back();
+    });
+  }
+  function openEntry(name, ref) {
+    if (ref[0] === 'k') return openSet(+ref.slice(1));
     const e = D.pools[name][+ref];
     sheet(el => {
       const mine = e.o || [];
       el.innerHTML = head(esc(e.t), (name === 'wrong' ? plural(e.c.length, 'card') + ' can draw it' + (mine.length ? ', ' + plural(mine.length, 'card') + ' of yours have it as your own' : '') : plural(e.c.length, 'card')) + '. In the library since ' + day(e.n)) +
-        entryBadges(e, name) + (name === 'wrong' && mine.length ? '<b style="font-size:14px">Your own</b>' + cardList(mine) + '<b style="font-size:14px">From kinds</b>' : '') + cardList(e.c);
+        entryBadges(e, name) + (name === 'wrong' && mine.length ? '<b style="font-size:14px">Your own</b>' + cardList(mine) + '<b style="font-size:14px">From sets</b>' : '') + cardList(e.c);
     });
   }
   $('newcard').addEventListener('click', () => sheet(el => editSheet(el, null)));
@@ -666,7 +748,7 @@ label.f small { font-weight: 400; color: var(--muted); }
     live = true; owner = !!o;   // only Morg writes here: the database's rules say so too
     $('newcard').hidden = !owner; status();
     const slow = setTimeout(() => { $('save').textContent = 'Your saved edits haven’t loaded yet. They will once the connection answers'; }, 10000);
-    [['edits', EDITS], ['new', NEWS], ['asks', ASKS], ['done', DONE]].forEach(([col, store]) => db.collection(col).onSnapshot(snap => {
+    [['edits', EDITS], ['new', NEWS], ['asks', ASKS], ['sets', SETS], ['done', DONE]].forEach(([col, store]) => db.collection(col).onSnapshot(snap => {
       clearTimeout(slow);
       if (snap.metadata.hasPendingWrites) return;   // our own change, already drawn
       Object.keys(store).forEach(k => delete store[k]);

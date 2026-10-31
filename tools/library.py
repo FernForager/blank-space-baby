@@ -13,8 +13,9 @@ The pools, each built from every card that isn't out (pending and flagged cards 
   categories     the curated list, with each one's cards by color and standing
   hooks          every tile word, with the cards behind it
   answers        every right answer, with its cards and kinds
-  wrong answers  every answer a card can show as wrong (its kind's answers in its deck, or Morg's own wr), and the kinds
-                 themselves. A number card gets two made-up near misses instead (build.py's near_rule), so it draws none.
+  wrong answers  every answer a card can show as wrong (its set's answers, or Morg's own wr), and the sets themselves
+                 (build/library/wrong.json, Oct 31, 2026). A number card gets two made-up near misses instead (build.py's
+                 near_rule), so it draws none.
 
 The ledger (build/library/ledger.json) remembers when each card came in and when each of its fields last changed, seeded
 from git history on Oct 31, 2026 and kept up by export, so the Card Room can show what grew lately. Commit it after export.
@@ -68,11 +69,11 @@ def cards():
         deck = json.load(open(os.path.join(B.DECKS, did + '.json')))
         clash = B.clasher(deck)
         for i, it in enumerate(deck['items']):
-            cid, h = f'{did}:{i}', B.fingerprint(deck, i, clash)
+            cid, h = f'{did}:{i}', B.fingerprint(did, deck, i, clash)
             st = B.standing(cid, it, h, verdicts, marks)
             wait = [w for w in B.REVIEWERS if not (verdicts[w].get(cid, {}).get('v') == 'ok' and verdicts[w][cid].get('h') == h)] if st == 'pending' else []
-            out.append({'id': cid, 'deck': did, 'i': i, 'it': it, 'st': st, 'wait': wait, 'cat': it.get('tag') or B.DECK_CAT[did],
-                        'pool': B.wrong_pool(deck, it, clash), 'near': B.near_rule(it), 'women': bool(it.get('women') or 'women' in flags),
+            out.append({'id': cid, 'deck': did, 'i': i, 'it': it, 'st': st, 'wait': wait, 'cat': it.get('tag') or B.DECK_CAT[did], 'set': B.set_id(did, it),
+                        'pool': B.wrong_pool(did, deck, it, clash), 'near': B.near_rule(it), 'women': bool(it.get('women') or 'women' in flags),
                         'league': B.league(lg, it), 'mh': B.mark_hash(it), 'note': (marks.get(cid) or {}).get('note', '') if st == 'flagged' else ''})
     return out
 
@@ -87,22 +88,36 @@ def shown_form(e):
     """The spelling an entry goes by: its most used one, then the one with capitals (a name), then A to Z."""
     return sorted(e['forms'], key=lambda f: (-e['forms'][f], f == f.lower(), f))[0]
 
+def set_fp(st):
+    """A short fingerprint of a set as the Card Room showed it, so a save made on an older copy is held, never forced."""
+    return hashlib.sha1(json.dumps([st.get('name', ''), st.get('note', ''), st.get('entries', [])], ensure_ascii=False, sort_keys=True).encode()).hexdigest()[:10]
+
+def sets_pool(cs):
+    """Every set of wrong answers (build/library/wrong.json) with its entries as they read now (build.py's set_entries:
+    a borrowed one takes its card's answer and means), the cards that draw from it, and how many of those have Morg's own."""
+    items = {did: json.load(open(os.path.join(B.DECKS, did + '.json')))['items'] for did in B.DECK_CAT}
+    out = {}
+    for st in B.wrong_sets()['sets']:
+        did, _, k = st['id'].partition('/')
+        out[st['id']] = {'deck': did, 'k': k, 'name': st['name'], 'note': st.get('note', ''), 'fp': set_fp(st), 'cards': [], 'own': 0,
+                         'entries': B.set_entries(did, items[did], st['id']) if did in items else []}
+    for c in cs:
+        if c['st'] != 'out' and c['set'] in out:
+            out[c['set']]['cards'].append(c['id']); out[c['set']]['own'] += bool(c['it'].get('wr'))
+    return out
+
 def pools(cs):
     live = [c for c in cs if c['st'] != 'out']
-    hooks, answers, wrong, kinds = {}, {}, {}, {}
+    hooks, answers, wrong = {}, {}, {}
     for c in live:
         it = c['it']
         entry(hooks, it['hook'], c['id'])
         entry(answers, it['w'], c['id'])
-        k = kinds.setdefault((c['deck'], it.get('k', 'word')), {'answers': [], 'cards': [], 'own': 0})
-        k['cards'].append(c['id'])
-        if it['w'] not in k['answers']: k['answers'].append(it['w'])
-        if it.get('wr'): k['own'] += 1
         if it.get('wr'):
             for x in wrongs(it): entry(wrong, x, c['id'], 'mine')
         elif not c['near']:
             for x in c['pool']: entry(wrong, x, c['id'], 'kind')
-    return {'hook': hooks, 'answer': answers, 'wrong': wrong, 'kind': kinds}
+    return {'hook': hooks, 'answer': answers, 'wrong': wrong, 'set': sets_pool(cs)}
 
 def categories(cs, text):
     out = []
@@ -167,10 +182,9 @@ def report(cs, P):
         a = P['answer'].get(k)
         if a and set(e['forms']) - set(a['forms']): clash.append({'text': ' and '.join(q(f) for f in sorted(set(e['forms']) | set(a['forms']))), 'cards': e['by'].get('mine', []) + a['cards']})
     add('forms-wrong', 'wrong', 'Wrong answers spelled unlike the answer', 'Morg’s own wrong answer and the same answer on another card, spelled two ways', clash, rule=True)
-    kinds = defaultdict(set)
-    for c in live: kinds[(c['deck'], key(c['it']['w']))].add(c['it'].get('k', 'word'))
-    add('kinds-answer', 'answer', 'Answers in two kinds of one deck', 'An answer lends itself as a wrong answer to every card of its kind, so in two kinds it lends itself twice',
-        [{'text': f'{q(shown_form(P["answer"][w]))} in {d}: ' + ', '.join(sorted(ks)), 'cards': [c for c in P['answer'][w]['cards'] if by[c]['deck'] == d]} for (d, w), ks in kinds.items() if len(ks) > 1])
+    two = in_two(P)
+    add('sets-answer', 'wrong', 'Answers in two sets of one deck', 'An answer lends itself as a wrong answer to every card that draws from a set it’s in, so in two sets it lends itself twice',
+        [{'text': f'{q(form)} in {d}: ' + ', '.join(sorted(ks)), 'cards': [c for c in P['answer'].get(w, {'cards': []})['cards'] if by[c]['deck'] == d]} for (d, w), (form, ks) in two.items() if len(ks) > 1])
     add('own-tag', 'category', 'A card’s own category repeats its deck’s', 'A card names a category only to show another one than its deck’s',
         [{'text': f'{c["id"]} names {c["it"]["tag"]}, its deck’s own', 'cards': [c['id']]} for c in cs if c['it'].get('tag') == B.DECK_CAT[c['deck']]], rule=True)
     answer_keys = set(P['answer'])
@@ -189,14 +203,17 @@ def report(cs, P):
                 if r >= .6: same.append({'text': f'{q(shown_form(e))}: {ids[x]} and {ids[y]} ({round(r * 100)}% alike)', 'cards': [ids[x], ids[y]], 'r': r})
     add('same-fact', 'card', 'The same fact twice?', 'Two cards with one answer and sentences much alike: one fact lives in one deck',
         sorted(same, key=lambda s: -s['r']))
-    thin, mixed = [], []
-    for (d, k), e in P['kind'].items():
-        if e['own'] == len(e['cards']): continue   # every card in it has Morg’s own two wrong answers
-        if len(e['answers']) < 4: thin.append({'text': f'{d} {k}: {len(e["answers"])} answers (' + ', '.join(e['answers']) + ')', 'cards': e['cards']})
-        nums = [a for a in e['answers'] if number(a)]
-        if nums and len(nums) < len(e['answers']): mixed.append({'text': f'{d} {k}: ' + ', '.join(e['answers']), 'cards': e['cards']})
-    add('thin-kind', 'wrong', 'Kinds too thin', 'A kind needs at least 4 answers (build/decks/SPEC.md), so its cards don’t show the same wrong answers every time', thin)
-    add('mixed-kind', 'wrong', 'Kinds that mix numbers and words', 'A number can turn up as the wrong answer to a word, an easy give-away', mixed)
+    thin, mixed, idle = [], [], []
+    for sid, e in P['set'].items():
+        shows = [x['w'] for x in e['entries'] if x['live']]
+        if not e['cards']: idle.append({'text': f'{sid} ({e["name"]}): ' + ', '.join(shows), 'cards': []}); continue
+        if e['own'] == len(e['cards']): continue   # every card drawing from it has Morg’s own two wrong answers
+        if len(shows) < 4: thin.append({'text': f'{sid}: {len(shows)} answers (' + ', '.join(shows) + ')', 'cards': e['cards']})
+        nums = [a for a in shows if number(a)]
+        if nums and len(nums) < len(shows): mixed.append({'text': f'{sid}: ' + ', '.join(shows), 'cards': e['cards']})
+    add('thin-set', 'wrong', 'Sets too thin', 'A set needs at least 4 answers that can show (build/decks/SPEC.md), so its cards don’t show the same wrong answers every time', thin)
+    add('mixed-set', 'wrong', 'Sets that mix numbers and words', 'A number can turn up as the wrong answer to a word, an easy give-away', mixed)
+    add('idle-set', 'wrong', 'Sets no card draws from', 'Fine while a set is being built, otherwise a leftover: a card draws from the set its kind names', idle)
     add('lonely-wrong', 'wrong', 'Wrong answers only one card can draw', 'A wrong answer its kind lends to one card alone: the kind may be too narrow',
         [{'text': f'{q(shown_form(e))} on {e["by"]["kind"][0]}', 'cards': e['by']['kind']} for e in P['wrong'].values() if len(e['by'].get('kind', [])) == 1 and not e['by'].get('mine')])
     rep = defaultdict(list)
@@ -212,9 +229,16 @@ def report(cs, P):
         for x in f['items']: x.pop('r', None); x['cards'] = list(dict.fromkeys(x['cards']))
     return F
 
+def in_two(P):
+    """Each answer's sets in each deck, by its key: (deck, key) to (its spelling, the kinds of the sets it's in)."""
+    two = {}
+    for sid, e in P['set'].items():
+        for x in e['entries']: two.setdefault((e['deck'], key(x['w'])), (x['w'], set()))[1].add(e['k'])
+    return two
+
 def entry_flags(cs, P):
     """Each pool entry's own findings, for its badges in the Card Room: [code, detail]."""
-    X = {'hook': defaultdict(list), 'answer': defaultdict(list), 'wrong': defaultdict(list), 'kind': defaultdict(list)}
+    X = {'hook': defaultdict(list), 'answer': defaultdict(list), 'wrong': defaultdict(list), 'set': defaultdict(list)}
     live = [c for c in cs if c['st'] != 'out']
     for name in ('hook', 'answer', 'wrong'):
         for k, e in P[name].items():
@@ -224,10 +248,8 @@ def entry_flags(cs, P):
             X[name][a].append(['near', shown_form(P[name][b])]); X[name][b].append(['near', shown_form(P[name][a])])
     for k in P['hook']:
         if k in P['answer']: X['hook'][k].append(['answer', '']); X['answer'][k].append(['hook', ''])
-    kinds = defaultdict(set)
-    for c in live: kinds[(c['deck'], key(c['it']['w']))].add(c['it'].get('k', 'word'))
-    for (d, k), ks in kinds.items():
-        if len(ks) > 1: X['answer'][k].append(['kinds', d + ': ' + ', '.join(sorted(ks))])
+    for (d, k), (_, ks) in in_two(P).items():
+        if len(ks) > 1: X['wrong'][k].append(['sets', d + ': ' + ', '.join(sorted(ks))])
     rep = Counter((c['deck'], key(c['it']['hook'])) for c in live)
     for (d, k), n in rep.items():
         if n >= 4: X['hook'][k].append(['repeat', f'{n} in {d}'])
@@ -236,18 +258,20 @@ def entry_flags(cs, P):
         if len(e['by'].get('kind', [])) == 1 and not e['by'].get('mine'): X['wrong'][k].append(['lonely', ''])
         a = P['answer'].get(k)
         if a and set(e['forms']) - set(a['forms']): X['wrong'][k].append(['case', ''])
-    for (d, k), e in P['kind'].items():
-        if e['own'] == len(e['cards']): X['kind'][(d, k)].append(['own', '']); continue
-        if len(e['answers']) < 4: X['kind'][(d, k)].append(['thin', ''])
-        nums = [a for a in e['answers'] if number(a)]
-        if nums and len(nums) < len(e['answers']): X['kind'][(d, k)].append(['mixed', ', '.join(nums)])
+    for sid, e in P['set'].items():
+        shows = [x['w'] for x in e['entries'] if x['live']]
+        if not e['cards']: X['set'][sid].append(['idle', '']); continue
+        if e['own'] == len(e['cards']): X['set'][sid].append(['own', '']); continue
+        if len(shows) < 4: X['set'][sid].append(['thin', ''])
+        nums = [a for a in shows if number(a)]
+        if nums and len(nums) < len(shows): X['set'][sid].append(['mixed', ', '.join(nums)])
     return X
 
 def print_report(cs, P, F, full=False):
     live = [c for c in cs if c['st'] != 'out']
     play = sum(c['st'] in ('approved', 'locked') for c in live)
     print(f'The library: {len(cs)} cards in {len(B.CATS["categories"])} categories and {len(B.DAILY)} decks, {len(live)} not out, {play} in play')
-    print(f'  hooks {len(P["hook"])}, answers {len(P["answer"])}, wrong answers {len(P["wrong"])} in {len(P["kind"])} kinds, '
+    print(f'  hooks {len(P["hook"])}, answers {len(P["answer"])}, wrong answers {len(P["wrong"])}, {len(P["set"])} sets of them, '
           f'{sum(1 for c in live if c["near"] and not c["it"].get("wr"))} number cards with made-up near misses')
     print(f'\nConsistency: {sum(len(f["items"]) for f in F)} findings ({sum(len(f["items"]) for f in F if f["rule"])} against a clear rule)')
     for f in F:
@@ -346,17 +370,17 @@ def load_ledger():
 
 # ---- Morg's edits from the Card Room, back into the decks ----
 STYLE = os.path.join(B.DECKS, 'MORG-STYLE.md')
-NAMES = {'ex': 'ex', 'w': 'w', 'hook': 'hook', 'means': 'means', 'wr': 'wr', 'd': 'color', 'cat': 'category'}
+NAMES = {'ex': 'ex', 'w': 'w', 'hook': 'hook', 'means': 'means', 'wr': 'wr', 'd': 'color', 'cat': 'category', 'k': 'wrong answers from'}
 WORDING = ('ex', 'w', 'hook', 'means', 'wr')   # what the fact checker's facts-only pass reads again
 
 def room(src):
-    """The Card Room's database as ArtifactData saved it: a folder with edits/, new/, asks/ and done/ (list each
+    """The Card Room's database as ArtifactData saved it: a folder with edits/, new/, asks/, sets/ and done/ (list each
     collection with out_dir), or one JSON file {"edits": [...], ...}. Each document as {id, version, data}."""
     def doc(raw, did):
         if isinstance(raw, dict) and isinstance(raw.get('data'), dict):   # a wrapper with the document under data
             return {'id': raw.get('doc_id') or raw.get('id') or did, 'version': raw.get('version'), 'data': raw['data']}
         return {'id': (raw or {}).get('_id') or did, 'version': (raw or {}).get('_version'), 'data': {k: v for k, v in (raw or {}).items() if not k.startswith('_')}}
-    out = {'edits': [], 'new': [], 'asks': [], 'done': []}
+    out = {'edits': [], 'new': [], 'asks': [], 'sets': [], 'done': []}
     if os.path.isdir(src):
         for col in out:
             d = os.path.join(src, col)
@@ -385,8 +409,11 @@ def apply(src, dry=False):
     """Every saved edit and new card from the Card Room, turned into what the desk does by hand: an edit is checked
     against the house rules like tools/vet.py edit and written into its deck in place (so it goes back to the three
     reviewers), with the oks of deck-mates that only lost a wrong answer carried, a new card goes on the end of its
-    deck, and every changed field is logged in build/decks/MORG-STYLE.md. A locked card, a card that's out, a field
-    someone else changed since Morg edited it, or an edit that breaks a house rule is held, never forced."""
+    deck, and every changed field is logged in build/decks/MORG-STYLE.md. A set of wrong answers he edited replaces its
+    copy in build/library/wrong.json, and the cards that can now show a wrong answer they couldn't before go back to the
+    reviewers by themselves (their fingerprints change), while those that only lost one keep their oks. A locked card,
+    a card that's out, a field or a set someone else changed since Morg edited it, or anything that breaks a house rule
+    is held, never forced."""
     sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
     import vet as V
     R = room(src)
@@ -403,6 +430,32 @@ def apply(src, dry=False):
         w = {'col': col, 'id': d['id'], 'for': d['data'].get('at', ''), 'st': st, 'res': res, 'at': now()}
         if cid: w['card'] = cid
         writes.append({'op': 'set', 'collection': 'done', 'doc_id': f'{col}~{d["id"]}~{stamp}', 'data': w})
+    data, moved = B.wrong_sets(), []   # the sets as they stand, and the cards whose wrong answers his set edits change
+    for d in R['sets']:
+        x = d['data']; sid = x.get('id') or ''
+        if x.get('st') != 'saved' or settled('sets', d): continue
+        did, _, k = sid.partition('/')
+        cur = next((st for st in data['sets'] if st['id'] == sid), None)
+        if did not in B.DECK_CAT or not k: result('sets', d, 'held', f'{sid} names no deck on the list'); continue
+        if (set_fp(cur) if cur else '') != (x.get('was') or ''): result('sets', d, 'held', 'Changed since you edited it: it reads ' + ('as the library shows it now' if cur else 'as gone') + ', so open it again'); continue
+        es = [{'w': e.get('w', ''), 'from': e['from']} if e.get('from') else {'w': e.get('w', ''), 'm': e.get('m') or ''} for e in x.get('entries') or [] if isinstance(e, dict)]
+        new = {'id': sid, 'name': (x.get('name') or '').strip() or (cur or {}).get('name') or sid, 'note': (x.get('note') or '').strip(), 'entries': es}
+        trial = dict(data, sets=[new if st['id'] == sid else st for st in data['sets']] + ([] if cur else [new]))
+        probs = [p for p in B.wrong_problems(trial) if p.startswith(f'set {sid}:')]
+        if probs: result('sets', d, 'held', 'It breaks a house rule: ' + '. '.join(p.partition(': ')[2] for p in probs)); continue
+        deck = json.load(open(os.path.join(B.DECKS, did + '.json'))); clash = B.clasher(deck)
+        grew = [f'{did}:{j}' for j, it in enumerate(deck['items']) if not it.get('out') and B.fingerprint(did, deck, j, clash, data) != B.fingerprint(did, deck, j, clash, trial)]
+        carried = 0
+        if not dry:
+            B.save_sets(trial); carried = V.carry(did, deck, deck, sets=(data, trial))
+        was = {e['w']: e for e in (cur or {}).get('entries', [])}; now_ = {e['w']: e for e in es}
+        style += [(sid, 'set name', (cur or {}).get('name'), new['name'])] if cur and cur['name'] != new['name'] else []
+        style += [(sid, 'set note', cur.get('note') or None, new['note'] or None)] if cur and cur.get('note', '') != new['note'] else []
+        style += [(sid, 'wrong answer', None, w + (f' ({e["m"]})' if 'm' in e else '')) for w, e in now_.items() if w not in was]
+        style += [(sid, 'wrong answer', w, None) for w in was if w not in now_]
+        style += [(sid, f'meaning of {w}', was[w].get('m'), e['m']) for w, e in now_.items() if w in was and 'm' in e and was[w].get('m') != e['m']]
+        data = B.SETS = trial; moved += grew   # what follows weighs his other saves against the sets as they now stand
+        result('sets', d, 'applied', f'In build/library/wrong.json' + (f': {len(grew)} cards that draw from it change, so they go back to the three reviewers' if grew else ', and no card’s wrong answers change') + (f' ({carried} keep their oks, since they only lost wrong answers)' if carried else ''))
     for d in R['edits']:
         e = d['data']; f = e.get('f') or {}
         if e.get('st') != 'saved' or settled('edits', d): continue
@@ -410,7 +463,7 @@ def apply(src, dry=False):
         try: did, deck, i = V.find(cid)
         except SystemExit: result('edits', d, 'held', 'no such card'); continue
         it = deck['items'][i]
-        now_ = {'ex': it['ex'], 'w': it['w'], 'hook': it.get('hook'), 'means': it['means'], 'd': it.get('d'), 'cat': it.get('tag') or B.DECK_CAT[did], 'wr': wrongs(it) or None}
+        now_ = {'ex': it['ex'], 'w': it['w'], 'hook': it.get('hook'), 'means': it['means'], 'd': it.get('d'), 'cat': it.get('tag') or B.DECK_CAT[did], 'wr': wrongs(it) or None, 'k': it.get('k', 'word')}
         if (marks.get(cid) or {}).get('m') == 'lock': result('edits', d, 'held', 'You locked this card: unlock it on the beta, or say OK in the chat, and the GM applies it'); continue
         if it.get('out'): result('edits', d, 'held', 'This card is out: ' + it.get('out_why', '')); continue
         bad = [k for k in f if k not in now_]
@@ -418,6 +471,7 @@ def apply(src, dry=False):
         clash = [k for k in f if now_[k] != (e.get('was') or {}).get(k) and now_[k] != f[k]]
         if clash: result('edits', d, 'held', 'Changed since you edited it: ' + ', '.join(f'{NAMES[k]} now reads “{cell(now_[k])}”' for k in clash)); continue
         if 'cat' in f and f['cat'] not in B.CATEGORY: result('edits', d, 'held', f'{f["cat"]} is not on the category list'); continue
+        if 'k' in f and not any(st['id'] == f'{did}/{f["k"]}' for st in data['sets']): result('edits', d, 'held', f'{did} has no set {f["k"]}'); continue
         new = dict(it); ch = [(k, now_[k], v) for k, v in f.items() if now_[k] != v]
         for k, before, v in ch:
             if k == 'cat':
@@ -435,7 +489,7 @@ def apply(src, dry=False):
         if probs: result('edits', d, 'held', 'It breaks a house rule: ' + '. '.join(' '.join(str(x) for x in p[2:]) for p in probs)); continue
         carried = 0
         if not dry:
-            V.save_deck(did, trial); carried = V.carry(did, deck, trial, skip=(i,))
+            V.save_deck(did, trial); carried = V.carry(did, deck, trial, skip=(i,)); V.follow(cid, deck, trial)
         style += [(cid, k, b, a) for k, b, a in ch]
         if any(k in WORDING for k, _, _ in ch): facts.append(cid)
         result('edits', d, 'applied', 'In its deck: ' + ', '.join(NAMES[k] for k, _, _ in ch) + (', back to the three reviewers' if any(k != 'cat' for k, _, _ in ch) else '') + (f' ({carried} deck-mates keep their oks)' if carried else ''), cid)
@@ -446,9 +500,8 @@ def apply(src, dry=False):
         if cat not in B.CATEGORY: result('new', d, 'held', f'{cat} is not on the category list'); continue
         if did not in B.DECK_CAT and cat in B.CATEGORY: did = B.CATEGORY[cat].get('home') or next(x for x, c in B.DECK_CAT.items() if c == cat)
         path = os.path.join(B.DECKS, did + '.json'); deck = json.load(open(path))
-        kinds = {x.get('k', 'word') for x in deck['items']}
         k = n.get('k') or 'own'
-        if k != 'own' and k not in kinds: result('new', d, 'held', f'{did} has no kind {k}'); continue
+        if k != 'own' and not any(st['id'] == f'{did}/{k}' for st in data['sets']): result('new', d, 'held', f'{did} has no set {k}'); continue
         item = {'w': n.get('w', ''), 'means': n.get('means', ''), 'ex': n.get('ex', ''), 'k': k, 'src': n.get('src') or '', 'hook': n.get('hook', ''), 'd': n.get('d')}
         if k == 'own' or [x for x in n.get('wr') or [] if x]: item['wr'] = [x for x in n.get('wr') or [] if x]
         if n.get('wm') and 'women' not in dict((x, f) for x, _, f in B.DAILY).get(did, ''): item['women'] = True
@@ -459,17 +512,24 @@ def apply(src, dry=False):
         probs = B.item_problems(did, trial['items'], B.clasher(trial), item, hooks=True)
         if probs: result('new', d, 'held', 'It breaks a house rule: ' + '. '.join(' '.join(str(x) for x in p[2:]) for p in probs)); continue
         cid = f'{did}:{len(deck["items"])}'
-        grew = sum(B.fingerprint(deck, j) != B.fingerprint(trial, j) for j in range(len(deck['items'])) if not deck['items'][j].get('out'))
-        if not dry: V.save_deck(did, trial)
+        joined = data   # Morg can put the new card's answer in the set it draws from, so it turns up as a wrong answer on that set's cards
+        if n.get('join') and k != 'own' and not any(B.plain(e['w']) == B.plain(item['w']) for st in data['sets'] if st['id'] == f'{did}/{k}' for e in st['entries']):
+            joined = dict(data, sets=[dict(st, entries=st['entries'] + [{'w': item['w'], 'from': cid}]) if st['id'] == f'{did}/{k}' else st for st in data['sets']])
+        grew = [f'{did}:{j}' for j in range(len(deck['items'])) if not deck['items'][j].get('out') and B.fingerprint(did, deck, j, None, data) != B.fingerprint(did, trial, j, None, joined)]
+        if not dry:
+            V.save_deck(did, trial)
+            if joined is not data: B.save_sets(joined)
+        data = B.SETS = joined; moved += grew
         style += [(cid, f, '(new card)', item[f]) for f in ('ex', 'w', 'hook', 'means', 'wr') if item.get(f)]
         facts.append(cid)
-        result('new', d, 'applied', f'On the end of {did} as {cid}' + (f', and {grew} deck-mates can now draw its answer, so they go back to the reviewers' if grew else '') + ('' if item['src'] else '. No source yet: the fact checker finds one on the deck’s site'), cid)
+        result('new', d, 'applied', f'On the end of {did} as {cid}' + (f', and {len(grew)} cards can now draw its answer, so they go back to the reviewers' if grew else '') + ('' if item['src'] else '. No source yet: the fact checker finds one on the deck’s site'), cid)
     asks = [d for d in R['asks'] if d['data'].get('st') == 'asked' and not settled('asks', d)]
     if style and not dry: log_style(style)
     for st, col, did, res in done: print(f'{st.upper():8} {col:5} {did}: {res}')
     for a in asks: print(f'ASK      category “{a["data"].get("name")}”' + (f', tile “{a["data"].get("tile")}”' if a['data'].get('tile') else '') + (f': {a["data"].get("note")}' if a['data'].get('note') else '') + '. Morg names it, then the GM adds it to build/library/categories.json with its tag string')
     if not done and not asks: print('Nothing saved in the Card Room waits to be applied'); return
     if dry: print('\nA dry run: nothing was written'); return
+    if moved: print('\nCards whose wrong answers his changes move (they go back to the three reviewers by themselves): ' + ' '.join(dict.fromkeys(moved)))
     if facts:
         print('\nFor the fact checker’s facts-only pass (then lock them for Morg once the facts hold, as for his Board Room cards):')
         print('  python3 tools/vet.py review ' + ' '.join(facts))
@@ -478,7 +538,7 @@ def apply(src, dry=False):
         json.dump([writes[n:n + 50] for n in range(0, len(writes), 50)], open(out, 'w'), ensure_ascii=False, indent=1)
         print(f'\nThe room’s log, in batches of 50 for ArtifactData batch (new documents in done, so no versions needed): {out}')
     print('Then: python3 build/build.py, python3 tools/library.py check, python3 tools/library.py export DIR and republish library.json,')
-    print('and commit the decks, build/vetting/desk.json, build/decks/MORG-STYLE.md and build/library/ledger.json')
+    print('and commit the decks, build/library/wrong.json, build/vetting/desk.json, build/decks/MORG-STYLE.md and build/library/ledger.json')
 
 # ---- the Card Room's data ----
 def export(out):
@@ -517,8 +577,9 @@ def export(out):
                 if k in P['answer']: r['ans'] = 1
             rows.append(r)
         return rows
-    kinds = [dict({'dk': d, 'k': k, 'a': e['answers'], 'c': [idx[c] for c in e['cards']], 'own': e['own']}, **({'x': X['kind'][(d, k)]} if X['kind'].get((d, k)) else {}))
-             for (d, k), e in P['kind'].items()]
+    sets = [dict({'id': sid, 'dk': e['deck'], 'k': e['k'], 'name': e['name'], 'note': e['note'], 'fp': e['fp'], 'c': [idx[c] for c in e['cards']], 'own': e['own'],
+                  'e': [[x['w'], x['m'], idx.get(f'{e["deck"]}:{x["i"]}') if x['i'] is not None else None, int(x['live'])] for x in e['entries']]},
+                 **({'x': X['set'][sid]} if X['set'].get(sid) else {})) for sid, e in P['set'].items()]   # e: [answer, its own meaning or null, the card it's borrowed from, shows]
     dates = sorted({e['a'] for e in led['cards'].values()} | {today()})
     days = [(datetime.date.fromisoformat(dates[0]) + datetime.timedelta(n)).isoformat() for n in range((datetime.date.fromisoformat(today()) - datetime.date.fromisoformat(dates[0])).days + 1)]
     growth = {'days': days,
@@ -533,7 +594,7 @@ def export(out):
                       'src': raw.get('primary', ''), 'n': len(raw['items'])})
     data = {'v': 1, 'at': now(), 'today': today(), 'lately': LATELY, 'commit': git('rev-parse', '--short', 'HEAD').strip(),
             'reviewers': list(B.REVIEWERS), 'cats': categories(cs, text), 'decks': decks, 'cards': [card(c) for c in cs],
-            'pools': {'hook': pool('hook', 'hook'), 'answer': pool('answer', 'w'), 'wrong': pool('wrong', 'w'), 'kind': kinds},
+            'pools': {'hook': pool('hook', 'hook'), 'answer': pool('answer', 'w'), 'wrong': pool('wrong', 'w'), 'set': sets},
             'growth': growth, 'report': [{**{k: v for k, v in f.items() if k != 'items'}, 'items': [{'text': x['text'], 'c': [idx[c] for c in x['cards']]} for x in f['items']]} for f in F],
             'rules': {'hook_max': B.HOOK_MAX, 'ex_max': 85, 'means_max': 40, 'w_max': 22, 'spelled': B.SPELLED, 'hedge': B.HEDGE.pattern}}
     os.makedirs(out, exist_ok=True)

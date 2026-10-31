@@ -244,18 +244,19 @@ def edit(cid, fix):
     carried = carry(did, deck, new, skip=(i,)); follow(cid, deck, new)
     print(f'{cid} now reads: {p["ex"]}  [{p["w"]}]  means: {p["means"]}  tile: {p.get("hook")}  (the desk’s wording, back to all three)' + (f'  ({carried} oks carried on deck-mates)' if carried else ''))
 
-def carry(did, before, after, skip=()):
+def carry(did, before, after, skip=(), sets=(None, None)):
     """After a deck changes, keep the oks of every other card whose only change is losing wrong answers: a card offered
     fewer decoys can't gain a second right answer, so its reviewers needn't see it again. A card that gains a decoy
     goes back to them. Recorded in desk.json like a taken fix. Since the sets (build/library/wrong.json, Oct 31, 2026)
-    only new groups take decoys away like this: a card going out stays in every set it's in, so out carries nothing."""
+    only new groups and an answer dropped from a set take decoys away like this (sets: the sets before and after, for a
+    set's change): a card going out stays in every set it's in, so out carries nothing."""
     verdicts, _ = B.vetting(); cb, ca = B.clasher(before), B.clasher(after)
     dpath = os.path.join(B.VET, 'desk.json'); desk = B.load_json(dpath, {}); n = 0
     for j, it in enumerate(after['items']):
         if j in skip or it.get('out') or j >= len(before['items']): continue
-        old, new = B.fingerprint(did, before, j, cb), B.fingerprint(did, after, j, ca)
+        old, new = B.fingerprint(did, before, j, cb, sets[0]), B.fingerprint(did, after, j, ca, sets[1])
         if old == new or {k: v for k, v in before['items'][j].items()} != it: continue
-        if not set(B.draws(did, after, it, ca)) <= set(B.draws(did, before, before['items'][j], cb)): continue
+        if not set(B.draws(did, after, it, ca, sets[1])) <= set(B.draws(did, before, before['items'][j], cb, sets[0])): continue
         cid = f'{did}:{j}'
         for w in B.REVIEWERS:
             v = verdicts[w].get(cid)
