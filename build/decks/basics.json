@@ -61,7 +61,7 @@
     {
       "w": "uniform",
       "means": "It shows which team a player is on",
-      "ex": "A team’s matching shirts, shorts and socks make up its uniform",
+      "ex": "A team’s matching shirts, shorts, and socks make up its uniform",
       "hook": "shorts",
       "k": "game-gear",
       "src": "https://www.merriam-webster.com/dictionary/uniform",
@@ -519,7 +519,7 @@
     },
     {
       "w": "goalpost",
-      "means": "Square, round or oval all work",
+      "means": "Square, round, or oval all work",
       "ex": "Each goalpost must be the same shape as the crossbar",
       "hook": "shape",
       "k": "field-goal",
@@ -925,7 +925,7 @@
     {
       "w": "offside",
       "means": "Offside still applies at free kicks",
-      "ex": "There’s no offside straight from a goal kick, a throw-in or a corner kick",
+      "ex": "There’s no offside straight from a goal kick, a throw-in, or a corner kick",
       "hook": "corner kick",
       "k": "fouls-act",
       "src": "https://www.theifab.com/laws/latest/offside/",

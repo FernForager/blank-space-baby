@@ -23,6 +23,7 @@ Write a JSON file (path given in your task) shaped exactly like:
 - ONE plain sentence. Never two sentences.
 - No period at the end. `!`, `?`, `?!` or `…` at the end are fine when natural, otherwise no end punctuation at all.
 - NEVER semicolons, anywhere (also not in `means`). Use commas, colons or em dashes (—) instead.
+- The serial comma in every series of three or more, in `ex` and `means` alike (Morg, Oct 31, 2026): Canada, Mexico, and the USA.
 - Curly quotes and apostrophes only: ’ “ ” (never ' or "). Scores use an en dash: 3–1.
 - Deadpan school-workbook tone: plain, dry, simple. The answer supplies the fun.
 - Kid-safe. Anything borderline (sexual, drugs/alcohol, violence, slurs, mean-spirited, gossip about private lives, rude) is OUT. When unsure, cut it and list it in `cut`.

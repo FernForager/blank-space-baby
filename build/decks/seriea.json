@@ -6,7 +6,7 @@
  "items": [
   {
    "w": "Juventus",
-   "means": "Under Conte, Allegri and Sarri",
+   "means": "Under Conte, Allegri, and Sarri",
    "ex": "Juventus won nine titles in a row, from 2011–12 to 2019–20",
    "hook": "nine titles",
    "k": "club",
@@ -243,7 +243,7 @@
   {
    "w": "Zlatan Ibrahimović",
    "means": "He also won five scudetti",
-   "ex": "Zlatan Ibrahimović scored 156 Serie A goals for Juventus, Inter and Milan",
+   "ex": "Zlatan Ibrahimović scored 156 Serie A goals for Juventus, Inter, and Milan",
    "hook": "Milan",
    "k": "player",
    "src": "https://www.legaseriea.it/serie-a/news/buon-compleanno-bologna-x7084",
@@ -502,7 +502,7 @@
   },
   {
    "w": "274",
-   "means": "For Pro Vercelli, Lazio and more",
+   "means": "For Pro Vercelli, Lazio, and more",
    "ex": "Silvio Piola scored a record 274 Serie A goals",
    "hook": "Silvio Piola",
    "k": "number",

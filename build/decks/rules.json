@@ -328,7 +328,7 @@
   },
   {
    "w": "VAR",
-   "means": "It checks goals, penalties and reds",
+   "means": "It checks goals, penalties, and reds",
    "ex": "The VAR uses replays to help with clear and obvious errors",
    "hook": "replays",
    "k": "role",
@@ -409,7 +409,7 @@
   },
   {
    "w": "offside",
-   "means": "Only head, body and feet count",
+   "means": "Only head, body, and feet count",
    "ex": "When judging offside, a player’s hands and arms don’t count",
    "hook": "arms",
    "k": "offense",

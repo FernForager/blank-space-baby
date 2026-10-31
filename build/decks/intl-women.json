@@ -380,7 +380,7 @@
     },
     {
       "w": "four",
-      "means": "1991, 1999, 2015 and 2019",
+      "means": "1991, 1999, 2015, and 2019",
       "ex": "The USA have won the Women’s World Cup four times",
       "hook": "USA",
       "k": "number",
@@ -539,7 +539,7 @@
     },
     {
       "w": "SheBelieves Cup",
-      "means": "Beat England, France and Germany",
+      "means": "Beat England, France, and Germany",
       "ex": "The USA won the first SheBelieves Cup in 2016",
       "hook": "USA",
       "k": "term",

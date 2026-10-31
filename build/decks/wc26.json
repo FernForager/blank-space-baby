@@ -437,7 +437,7 @@
   },
   {
    "w": "3",
-   "means": "Canada, Mexico and the USA",
+   "means": "Canada, Mexico, and the USA",
    "ex": "The 2026 World Cup was the first shared by 3 countries",
    "hook": "shared",
    "k": "number",
@@ -447,7 +447,7 @@
   {
    "w": "104",
    "means": "The biggest World Cup yet",
-   "ex": "The World Cup in Canada, Mexico and the USA had 104 matches in all",
+   "ex": "The World Cup in Canada, Mexico, and the USA had 104 matches in all",
    "hook": "Canada",
    "k": "number",
    "src": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/knockout-stage-match-schedule-bracket",

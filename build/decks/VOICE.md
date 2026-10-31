@@ -65,6 +65,9 @@ The desk’s own rewrites, now with the three reviewers.
 | `mls:10` means | Their first Supporters’ Shield | For the best regular-season record |
 | `alpha:81` | Mom had leftover orange slices and crackers for girl dinner | Mom turned the leftover halftime orange slices into girl dinner |
 
+## Morg’s answers (Oct 31, 2026)
+He picked A in all four taste tests, so the rules above stand as written: a meaning line that pays off (bundesliga:41), a little story (lingo-more:25), a green card’s meaning line defines its answer (wc26:37), and the most surprising fact leads (seriea:12). On the serial comma he overruled the pick: every series of three or more takes it.
+
 ## Before you hand a card in
 1. Read it out loud once.
 2. Cover the blank: could someone who doesn’t know the fact still work it out? Then it’s a freebie.
