@@ -1,7 +1,7 @@
-"""Data for Morg's curation page (Oct 26, 2026): boards #2 to #7 by hand.
+"""Data for Morg's curation page (Oct 26, 2026): boards #1 to #7 by hand (#1 too since Oct 31, 2026, Morg's pick: a fresh draft).
 
-    python3 tools/curate.py export OUT_DIR [CATS]   # pool.json: every card in the draw, with its wrong answers on each day #2 to #7,
-                                                    # and draft.json: a first draft of boards #2 to #7 from only the categories CATS
+    python3 tools/curate.py export OUT_DIR [CATS]   # pool.json: every card in the draw, with its wrong answers on each day #1 to #7,
+                                                    # and draft.json: a first draft of boards #1 to #7 from only the categories CATS
                                                     # (deck ids, comma separated), following the draw's own guardrails
 The page (an artifact) reads pool.json beside it and keeps Morg's boards in its own database. Trivelle reads them back
 with ArtifactData and writes build/boards.json, and any card he edited or wrote into its deck, once the fact checker has
@@ -15,18 +15,18 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TAGS = {'basics': '101', 'rules': 'Rules', 'soccer': 'Lingo', 'lingo-more': 'Lingo', 'alpha': 'Slang', 'parents': 'Slang', 'epl': 'EPL', 'epl-more': 'EPL',
         'mls': 'MLS', 'nwsl': 'NWSL', 'ucl': 'UCL', 'wc26': 'WC26', 'laliga': 'La Liga', 'seriea': 'Serie A', 'ligue1': 'Ligue 1', 'ligamx': 'Liga MX',
         'bundesliga': 'Bundesliga', 'intl-men': 'World', 'intl-women': 'World', 'legends': 'Legends', 'awards': 'Awards', 'nicknames': 'Clubs'}
-DAYS = range(1, 7)   # day index 1 to 6 is puzzle #2 to #7
+DAYS = range(0, 7)   # day index 0 to 6 is puzzle #1 to #7
 
 EXPORT = r"""(args) => {
   const [days, cats, tags, per, lmax] = args, T = window.TRIVIELA, deal = T.deal(6, true);   // per: cards of each color (3 since Oct 27, 2026), lmax: the draw's cap on one league
   const deck = c => c.id.split(':')[0];
   const pool = [].concat(T.POOL[0], T.POOL[1], T.POOL[2]).map(c => ({ id: c.id, deck: deck(c), tag: tags[deck(c)], d: c.d, w: c.w, m: c.m, ex: c.ex, hook: c.hook, k: c.k,
     lg: c.lg, wm: c.wm ? 1 : 0, rl: c.rl ? 1 : 0, sl: c.sl ? 1 : 0, ch: Object.fromEntries(days.map(d => [d + 1, T.choices(c, d).map(x => x.w)])) }));
-  const one = [].concat(deal[0][0], deal[0][1], deal[0][2]).map(c => c.id);   // #1, as dealt: it stays
+  const mine = [].concat(deal[0][0], deal[0][1], deal[0][2]).map(c => c.id);   // #1 as it plays now, Morg's own nine: drafted over, but marked in the pool so he can swap them back
   // the first draft: from the chosen categories only, the draw's guardrails, no card twice in the week
   let seed = 7; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
   const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(rnd() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
-  const used = new Set(one), boards = {};
+  const used = new Set(), boards = {};
   const ok = c => cats.includes(deck(c)) && !used.has(c.id);
   for (const day of days) {
     let best = null;
@@ -47,7 +47,7 @@ EXPORT = r"""(args) => {
     best.forEach(col => col.forEach(c => used.add(c.id)));
     boards[day + 1] = [].concat(...best.map(col => shuffle(col))).map(c => c.id);
   }
-  return { pool, one, boards };
+  return { pool, mine, boards };
 }"""
 
 async def export(out, cats):
@@ -61,9 +61,9 @@ async def export(out, cats):
         await b.close()
     if 'error' in r: sys.exit(r['error'])
     os.makedirs(out, exist_ok=True)
-    json.dump({'cards': r['pool'], 'one': r['one'], 'tags': TAGS}, open(os.path.join(out, 'pool.json'), 'w'), ensure_ascii=False, separators=(',', ':'))
+    json.dump({'cards': r['pool'], 'one': [], 'mine': r['mine'], 'tags': TAGS}, open(os.path.join(out, 'pool.json'), 'w'), ensure_ascii=False, separators=(',', ':'))
     json.dump({'boards': r['boards'], 'cats': cats}, open(os.path.join(out, 'draft.json'), 'w'), ensure_ascii=False, indent=1)
-    print(f"{len(r['pool'])} cards, #1 kept, drafts for #" + ', #'.join(r['boards']) + f" from {len(cats)} decks")
+    print(f"{len(r['pool'])} cards, drafts for #" + ', #'.join(r['boards']) + f" from {len(cats)} decks")
 
 if __name__ == '__main__':
     if len(sys.argv) < 3 or sys.argv[1] != 'export': sys.exit(__doc__)

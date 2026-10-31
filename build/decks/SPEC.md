@@ -28,6 +28,9 @@ Write a JSON file (path given in your task) shaped exactly like:
 - Spelling: American.
 - Try to avoid the words soccer and football (Morg, Oct 26, 2026: the game stays global and never names the sport). Write “the game”, a role or the thing itself instead. Keep one only where the word is the fact (soccer mom, total football, footy).
 
+## Morg’s style
+- Read `build/decks/MORG-STYLE.md` before writing or rewording a card: his own edits, before and after, and the patterns they show (Oct 31, 2026). His wording is the model, and the editor holds new cards to it.
+
 ## Accuracy
 - Research with WebSearch/WebFetch. Do not go from memory for any fact that could have changed. Today is 2026-10-14.
 - Every item must be supported by the primary source. Use the secondary only to fill gaps or confirm, and note in `src` which one you used.

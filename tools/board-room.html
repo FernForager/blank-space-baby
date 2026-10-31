@@ -1,0 +1,328 @@
+<title>Triviela Board Room</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Pixelify+Sans:wght@500;600&display=swap">
+<style>
+/* Layout: one board at a time, the board's three columns stacked as green, yellow and red lists, each card a row Morg can keep,
+   swap or rewrite. A sticky strip of board tabs on top, a bottom sheet for swapping and editing. The cabinet's own palette. */
+:root {
+  --page: #F2EDE4; --card: #FBF8F3; --ink: #1E2A3B; --muted: #5C6675; --line: #E1D8C7; --cream: #F6F0E2;
+  --green: #00843D; --green-soft: #E3F1E8; --green-card: #45BE76; --yellow: #F7C948; --red: #D52B1E;
+  --warn: #9A5B08; --warn-bg: #FBEFD9; --bad: #B0262C; --bad-bg: #FBE3E3; --ok: #1E6B40; --ok-bg: #E3F1E8;
+  --shadow: 0 1px 0 #D9CFBC;
+  --display: "Pixelify Sans", ui-rounded, system-ui, sans-serif;
+  --body: "Atkinson Hyperlegible", system-ui, -apple-system, sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --page: #161B22; --card: #1F2630; --ink: #E9EEF3; --muted: #A2AEBB; --line: #313B47; --cream: #26303B;
+  --green: #45BE76; --green-soft: #1C3328; --green-card: #45BE76; --warn: #F2B65A; --warn-bg: #3A2C15; --bad: #FF8A8F; --bad-bg: #3D1F22; --ok: #7FD9A3; --ok-bg: #1C3328;
+  --shadow: 0 1px 0 #0D1116; color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --page: #161B22; --card: #1F2630; --ink: #E9EEF3; --muted: #A2AEBB; --line: #313B47; --cream: #26303B;
+  --green: #45BE76; --green-soft: #1C3328; --green-card: #45BE76; --warn: #F2B65A; --warn-bg: #3A2C15; --bad: #FF8A8F; --bad-bg: #3D1F22; --ok: #7FD9A3; --ok-bg: #1C3328;
+  --shadow: 0 1px 0 #0D1116; color-scheme: dark; }
+* { box-sizing: border-box; }
+body { background: var(--page); color: var(--ink); font: 16px/1.4 var(--body); -webkit-font-smoothing: antialiased; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--page); }
+.wrap { max-width: 640px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 14px 120px; }
+h1 { font: 600 26px/1.1 var(--display); margin: 0; letter-spacing: .2px; }
+.eyebrow { font: 600 12px/1 var(--body); letter-spacing: .12em; text-transform: uppercase; color: var(--green); margin: 0 0 6px; }
+.lede { margin: 6px 0 0; color: var(--muted); max-width: 60ch; }
+.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--page); padding: 12px 0 10px; display: grid; gap: 10px; }
+.tabs { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; }
+.tabs button { flex: none; border: 1px solid var(--line); background: var(--card); color: var(--ink); border-radius: 999px; padding: 7px 13px; font: 700 15px var(--body); display: flex; gap: 6px; align-items: center; cursor: pointer; }
+.tabs button[aria-pressed="true"] { background: var(--ink); color: var(--page); border-color: var(--ink); }
+.dot { width: 8px; height: 8px; border-radius: 50%; background: var(--line); }
+.dot.ready { background: var(--green); } .dot.edited { background: var(--yellow); }
+.state { font-size: 13px; color: var(--muted); min-height: 1.2em; }
+.checks { display: flex; flex-wrap: wrap; gap: 6px; margin: 4px 0 16px; }
+.chip { font-size: 13px; border-radius: 999px; padding: 4px 10px; background: var(--ok-bg); color: var(--ok); }
+.chip.warn { background: var(--warn-bg); color: var(--warn); } .chip.bad { background: var(--bad-bg); color: var(--bad); }
+section.col { margin-top: 18px; }
+.colhead { display: flex; align-items: center; gap: 10px; margin: 0 0 8px; font: 600 18px var(--display); }
+.rc { width: 14px; height: 19px; border-radius: 3px; box-shadow: 0 0 0 1px rgba(0,0,0,.18); flex: none; }
+.rc.c1 { background: var(--green-card); } .rc.c2 { background: var(--yellow); } .rc.c3 { background: var(--red); }
+.colhead .n { font: 400 13px var(--body); color: var(--muted); }
+ol.cards { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.cardrow { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 11px 12px 10px; display: grid; gap: 5px; box-shadow: var(--shadow); min-width: 0; }
+.cardrow .head { display: flex; align-items: baseline; gap: 8px; min-width: 0; }
+.spot { font: 600 13px var(--display); color: var(--muted); width: 1.2em; flex: none; }
+.hook { font: 600 18px/1.15 var(--display); min-width: 0; overflow-wrap: anywhere; }
+.tag { margin-left: auto; flex: none; font-size: 12px; letter-spacing: .04em; color: var(--muted); border: 1px solid var(--line); border-radius: 6px; padding: 1px 6px; }
+.ex { margin: 0; }
+.ex mark { background: var(--green-soft); color: var(--ink); border-radius: 3px; padding: 0 2px; font-weight: 700; }
+.ch { margin: 0; font-size: 14px; color: var(--muted); }
+.ch b { color: var(--green); }
+.means { margin: 0; font-size: 14px; color: var(--muted); font-style: italic; }
+.badges { display: flex; gap: 6px; flex-wrap: wrap; }
+.badge { font-size: 12px; border-radius: 6px; padding: 1px 7px; background: var(--warn-bg); color: var(--warn); }
+.badge.mine { background: var(--green-soft); color: var(--green); }
+.acts { display: flex; gap: 8px; margin-top: 2px; }
+.acts button, .btn { font: 700 14px var(--body); border-radius: 9px; border: 1px solid var(--line); background: var(--cream); color: var(--ink); padding: 7px 12px; cursor: pointer; }
+.btn.go { background: var(--green); border-color: var(--green); color: #fff; }
+.btn.ghost { background: transparent; }
+button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible { outline: 3px solid var(--green); outline-offset: 2px; }
+.foot { position: fixed; left: 0; right: 0; bottom: 0; z-index: 6; background: var(--page); border-top: 1px solid var(--line);
+  padding: 10px max(16px, env(safe-area-inset-right, 0px)) max(12px, env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px)); }
+.foot .in { max-width: 640px; margin: 0 auto; display: flex; gap: 10px; align-items: center; }
+.foot .in .state { flex: 1; min-width: 0; }
+/* the sheet: swap or edit, over the board */
+.scrim { position: fixed; inset: 0; z-index: 20; background: rgba(10,14,20,.45); display: flex; align-items: flex-end; justify-content: center; }
+.scrim[hidden], [hidden] { display: none !important; }
+.sheet { width: 100%; max-width: 640px; max-height: 88%; overflow: auto; background: var(--page); border-radius: 18px 18px 0 0;
+  padding: 16px max(16px, env(safe-area-inset-right, 0px)) max(18px, env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px)); display: grid; gap: 12px; }
+.sheet h2 { font: 600 20px var(--display); margin: 0; }
+.sheet .sub { margin: -6px 0 0; color: var(--muted); font-size: 14px; }
+.row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+input[type="search"], input[type="text"], textarea, select { width: 100%; font: 16px/1.35 var(--body); color: var(--ink); background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 10px 11px; }
+textarea { min-height: 76px; resize: vertical; }
+label.f { display: grid; gap: 4px; font: 700 14px var(--body); }
+label.f small { font-weight: 400; color: var(--muted); }
+.cats { display: flex; gap: 6px; flex-wrap: wrap; }
+.cats button { font: 14px var(--body); border-radius: 999px; border: 1px solid var(--line); background: var(--card); color: var(--ink); padding: 5px 10px; cursor: pointer; }
+.cats button[aria-pressed="true"] { background: var(--green); border-color: var(--green); color: #fff; }
+.cand { display: grid; gap: 4px; background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; text-align: left; font: inherit; color: inherit; cursor: pointer; width: 100%; }
+.cand .head { display: flex; gap: 8px; align-items: baseline; }
+.list { display: grid; gap: 8px; }
+.more { color: var(--muted); font-size: 14px; text-align: center; }
+.msgs { display: grid; gap: 4px; }
+.msg { font-size: 14px; border-radius: 8px; padding: 6px 9px; background: var(--bad-bg); color: var(--bad); }
+.msg.ok { background: var(--ok-bg); color: var(--ok); } .msg.warn { background: var(--warn-bg); color: var(--warn); }
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+@media (max-width: 380px) { .two { grid-template-columns: 1fr; } }
+.empty { padding: 40px 0; color: var(--muted); }
+@media (prefers-reduced-motion: no-preference) { .sheet { animation: up .18s ease-out; } @keyframes up { from { transform: translateY(24px); opacity: .6; } } }
+</style>
+
+<div class="wrap">
+  <header>
+    <p class="eyebrow">Triviela · the first week</p>
+    <h1>Board Room</h1>
+    <p class="lede">Boards #1 to #7, card by card, nine cards each: three green, three yellow, three red. Keep a card, swap it for another of the same color, or rewrite it. Everything saves as you go. When a board looks right, mark it ready. Your edits are kept as before-and-after pairs, so future cards are written closer to your style.</p>
+  </header>
+  <div class="top">
+    <nav class="tabs" id="tabs" aria-label="Boards"></nav>
+  </div>
+  <main id="board"><p class="empty">Loading the cards…</p></main>
+</div>
+<div class="foot"><div class="in"><span class="state" id="save" aria-live="polite"></span><button class="btn go" id="ready" type="button" hidden>Mark ready</button></div></div>
+<div class="scrim" id="scrim" hidden><div class="sheet" id="sheet" role="dialog" aria-modal="true"></div></div>
+
+<script>
+(function () {
+  var PER = 3, LMAX = 2;   // cards of each color on a board, and the most from one league (the game's PER and LEAGUE_MAX, Oct 27, 2026: nine cards a day)
+  var BOARDS = [1, 2, 3, 4, 5, 6, 7], COLOR = ['Green', 'Yellow', 'Red'], DECKS = {
+    basics: '101', rules: 'Rules', soccer: 'Lingo', 'lingo-more': 'Lingo', alpha: 'Kid slang', parents: 'Parent slang', epl: 'EPL', 'epl-more': 'EPL',
+    mls: 'MLS', nwsl: 'NWSL', ucl: 'Champions League', wc26: 'World Cup 2026', laliga: 'La Liga', seriea: 'Serie A', ligue1: 'Ligue 1', ligamx: 'Liga MX',
+    bundesliga: 'Bundesliga', 'intl-men': 'World, men', 'intl-women': 'World, women', legends: 'Legends', awards: 'Awards', nicknames: 'Club nicknames' };
+  var LEAGUE = { epl: 'epl', 'epl-more': 'epl', laliga: 'laliga', mls: 'mls', nwsl: 'nwsl', ucl: 'ucl', basics: 'basics', seriea: 'seriea', ligue1: 'ligue1', ligamx: 'ligamx', bundesliga: 'bundesliga' };
+  var $ = function (id) { return document.getElementById(id); };
+  var esc = function (s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
+  var POOL = null, BY = {}, ONE = [], MINE = [], db = null, data = {}, cats = [], cur = 2, refs = {};
+
+  // ---- a card as it plays on its board: the pool's card, with Morg's edit or his own card on top ----
+  function view(e, n) {
+    if (e.nw) return Object.assign({ mine: 1, id: e.nw.id || '', tag: DECKS[e.nw.deck] || '', ch: [e.nw.w].concat(e.nw.wr || []) }, e.nw);
+    var c = BY[e.id]; if (!c) return { id: e.id, missing: 1, d: 0, w: '', ex: 'This card is no longer in the draw', m: '', hook: e.id, tag: '' };
+    var v = Object.assign({}, c, e.edit || {}); v.ch = e.edit && e.edit.wr ? [v.w].concat(e.edit.wr) : c.ch[n]; v.edited = !!e.edit; return v;
+  }
+  function wrongs(v) { return (v.ch || []).filter(function (x) { return x !== v.w; }); }
+  function marked(ex, w) {   // the sentence with its answer marked, as the game blanks it
+    var i = w ? ex.toLowerCase().indexOf(w.toLowerCase()) : -1;
+    return i < 0 ? esc(ex) : esc(ex.slice(0, i)) + '<mark>' + esc(ex.slice(i, i + w.length)) + '</mark>' + esc(ex.slice(i + w.length));
+  }
+  function words(s) { return ' ' + String(s || '').toLowerCase().replace(/[^0-9a-zÀ-ɏ]+/g, ' ').trim() + ' '; }
+
+  // Morg's rule (Oct 26, 2026): the game never says soccer or football, so it reads the same everywhere. Cards try to avoid both too
+  function says(v) { var m = /\b(soccer|football)/i.exec([v.ex, v.m, v.hook, v.w].concat(v.wr || []).join(' ')); return m ? m[1].toLowerCase() : ''; }
+  // ---- the draw's guardrails, as warnings: Morg has the last word ----
+  function checks(n) {
+    var vs = (data[n] && data[n].cards || []).map(function (e) { return view(e, n); }), out = [];
+    var by = [0, 0, 0]; vs.forEach(function (v) { if (v.d) by[v.d - 1]++; });
+    if (by.join() !== [PER, PER, PER].join()) out.push(['bad', 'Colors: ' + by[0] + ' green, ' + by[1] + ' yellow, ' + by[2] + ' red (' + PER + ' each)']);
+    out.push(vs.some(function (v) { return v.wm || v.deck === 'nwsl' || v.deck === 'intl-women'; }) ? ['ok', 'A women’s card'] : ['warn', 'No women’s card yet']);
+    out.push(vs.some(function (v) { return v.deck === 'rules' || v.rl; }) ? ['ok', 'A rules card'] : ['warn', 'No rules card yet']);
+    var lg = {}; vs.forEach(function (v) { var l = LEAGUE[v.deck]; if (l) lg[l] = (lg[l] || 0) + 1; });
+    Object.keys(lg).forEach(function (l) { if (lg[l] > LMAX) out.push(['warn', lg[l] + ' cards from ' + (l === 'basics' ? '101' : DECKS[l] || l) + ' (the draw allows ' + LMAX + ')']); });
+    var sl = vs.filter(function (v) { return v.deck === 'alpha' || v.deck === 'parents'; });
+    if (sl.length > 1) out.push(['warn', sl.length + ' slang cards (the draw allows 1)']);
+    if (sl.some(function (v) { return v.d === 3; })) out.push(['warn', 'A red slang card']);
+    vs.forEach(function (a, i) { vs.forEach(function (b, j) {
+      if (i >= j || !a.w || !b.w) return;
+      var give = function (x, y) { return words(y.ex + ' ' + y.hook + ' ' + y.m).indexOf(words(x.w)) >= 0; };
+      if (words(a.w) === words(b.w)) out.push(['warn', '“' + a.hook + '” and “' + b.hook + '” share the answer ' + a.w]);
+      else if (give(a, b)) out.push(['warn', '“' + b.hook + '” gives away “' + a.hook + '” (' + a.w + ')']);
+      else if (give(b, a)) out.push(['warn', '“' + a.hook + '” gives away “' + b.hook + '” (' + b.w + ')']);
+    }); });
+    var off = vs.filter(function (v) { return v.deck && cats.indexOf(v.deck) < 0; });
+    if (off.length) out.push(['warn', off.length + (off.length === 1 ? ' card outside' : ' cards outside') + ' your categories']);
+    var used = usedElsewhere(n); vs.forEach(function (v) { if (v.id && used[v.id]) out.push(['bad', '“' + v.hook + '” is on #' + used[v.id] + ' too']); });
+    if (!out.some(function (o) { return o[0] !== 'ok'; })) out.push(['ok', 'No give-aways']);
+    return out;
+  }
+  function usedElsewhere(n) { var u = {}; ONE.forEach(function (id) { u[id] = 1; }); BOARDS.forEach(function (m) { if (m !== n && data[m]) data[m].cards.forEach(function (e) { if (e.id) u[e.id] = m; }); }); return u; }
+
+  // ---- drawing ----
+  function tabs() {
+    $('tabs').innerHTML = BOARDS.map(function (n) {
+      var b = data[n], st = b && b.status === 'ready' ? 'ready' : b && b.cards.some(function (e) { return e.edit || e.nw || e.swapped; }) ? 'edited' : '';
+      return '<button type="button" aria-pressed="' + (n === cur) + '" data-n="' + n + '"><span class="dot ' + st + '"></span>#' + n + '</button>'; }).join('');
+  }
+  function draw() {
+    tabs();
+    var b = data[cur];
+    if (!b) { $('board').innerHTML = '<p class="empty">Board #' + cur + ' has no cards yet. Trivelle drafts it from your categories.</p>'; $('ready').hidden = true; return; }
+    var cs = checks(cur);
+    var h = '<div class="checks">' + cs.map(function (c) { return '<span class="chip ' + (c[0] === 'ok' ? '' : c[0]) + '">' + esc(c[1]) + '</span>'; }).join('') + '</div>';
+    [0, 1, 2].forEach(function (t) {
+      h += '<section class="col" aria-label="' + COLOR[t] + ' cards"><h2 class="colhead"><i class="rc c' + (t + 1) + '"></i>' + COLOR[t] + ' <span class="n">' + ['easy', 'harder', 'hardest'][t] + '</span></h2><ol class="cards">';
+      for (var k = t * PER; k < t * PER + PER; k++) {
+        var e = b.cards[k], v = view(e, cur), wr = wrongs(v);
+        h += '<li class="cardrow"><div class="head"><span class="spot">' + (k % PER + 1) + '</span><span class="hook">' + esc(v.hook) + '</span><span class="tag">' + esc(v.tag) + '</span></div>' +
+          '<p class="ex">' + marked(v.ex, v.w) + '</p>' +
+          '<p class="ch">Choices: <b>' + esc(v.w) + '</b>' + (wr.length ? ' · ' + wr.map(esc).join(' · ') : '') + '</p>' +
+          (v.m ? '<p class="means">' + esc(v.m) + '</p>' : '') +
+          ((v.edited || v.mine || v.missing || MINE.indexOf(v.id) >= 0 || says(v) || (v.deck && cats.indexOf(v.deck) < 0)) ? '<div class="badges">' + (v.mine ? '<span class="badge mine">Your card</span>' : '') + (MINE.indexOf(v.id) >= 0 ? '<span class="badge mine">Your first nine</span>' : '') + (v.edited ? '<span class="badge mine">Edited</span>' : '') +
+            (v.missing ? '<span class="badge">No longer in the draw: swap it</span>' : '') + (v.deck && cats.indexOf(v.deck) < 0 ? '<span class="badge">Outside your categories</span>' : '') +
+            (says(v) ? '<span class="badge">Says ' + says(v) + '</span>' : '') + '</div>' : '') +
+          '<div class="acts"><button type="button" data-swap="' + k + '">Swap</button><button type="button" data-edit="' + k + '">Edit</button>' +
+          ((e.edit || (e.nw && e.was)) ? '<button type="button" class="ghost" data-undo="' + k + '">Undo edit</button>' : '') + '</div></li>';
+      }
+      h += '</ol></section>';
+    });
+    $('board').innerHTML = h;
+    $('ready').hidden = false;
+    $('ready').textContent = b.status === 'ready' ? '#' + cur + ' is ready ✓' : 'Mark #' + cur + ' ready';
+    $('ready').className = 'btn ' + (b.status === 'ready' ? 'ghost' : 'go');
+  }
+
+  // ---- saving: one write at a time per board, after a short pause ----
+  var timers = {}, busy = {}, again = {}, pend = {};   // pend: a change not yet saved, so a snapshot can't undo it on screen
+  function save(n, now) {
+    clearTimeout(timers[n]); pend[n] = true; $('save').textContent = 'Saving…';
+    timers[n] = setTimeout(function go() {
+      if (busy[n]) { again[n] = true; return; }
+      busy[n] = true; var body = JSON.parse(JSON.stringify(data[n])); body.at = new Date().toISOString();
+      refs[n].set(body).then(function () { $('save').textContent = 'Saved'; }, function (e) { $('save').textContent = e && e.code === 'invalid_argument' ? 'Only Morg can change these boards' : 'Couldn’t save. Check your signal, then make any change to try again'; })
+        .then(function () { busy[n] = false; if (again[n]) { again[n] = false; go(); } else pend[n] = false; });
+    }, now ? 0 : 500);
+  }
+  function change(n, fn) { var b = data[n]; fn(b); if (b.status === 'ready') b.status = 'draft'; draw(); save(n); }
+
+  // ---- the sheet ----
+  function open(html) { $('sheet').innerHTML = html; $('scrim').hidden = false; var f = $('sheet').querySelector('input, textarea'); if (f && matchMedia('(pointer: fine)').matches) f.focus(); }
+  function close() { $('scrim').hidden = true; $('sheet').innerHTML = ''; }
+  $('scrim').addEventListener('click', function (e) { if (e.target === $('scrim')) close(); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !$('scrim').hidden) close(); });
+
+  var swapState = { q: '', all: false };
+  function swap(k) {
+    var t = Math.floor(k / PER), used = usedElsewhere(cur), mine = {}; data[cur].cards.forEach(function (e) { if (e.id) mine[e.id] = 1; });
+    function list() {
+      var q = words(swapState.q).trim(), hits = POOL.filter(function (c) {
+        if (c.d !== t + 1 || used[c.id] || mine[c.id]) return false;
+        if (!swapState.all && cats.indexOf(c.deck) < 0) return false;
+        return !q || words(c.ex + ' ' + c.hook + ' ' + c.w + ' ' + c.tag + ' ' + DECKS[c.deck]).indexOf(' ' + q) >= 0;
+      });
+      return hits.slice(0, 40).map(function (c) {
+        return '<button type="button" class="cand" data-pick="' + esc(c.id) + '"><span class="head"><span class="hook">' + esc(c.hook) + '</span><span class="tag">' + esc(c.tag) + '</span></span>' +
+          '<span class="ex">' + marked(c.ex, c.w) + '</span><span class="ch">Answer: <b>' + esc(c.w) + '</b></span>' +
+          ((says(c) || MINE.indexOf(c.id) >= 0) ? '<span class="badges">' + (MINE.indexOf(c.id) >= 0 ? '<span class="badge mine">Your first nine</span>' : '') + (says(c) ? '<span class="badge">Says ' + says(c) + '</span>' : '') + '</span>' : '') + '</button>'; }).join('') +
+        (hits.length > 40 ? '<p class="more">' + (hits.length - 40) + ' more. Search to narrow them down</p>' : !hits.length ? '<p class="more">No ' + COLOR[t].toLowerCase() + ' cards match</p>' : '');
+    }
+    open('<h2>Swap ' + COLOR[t].toLowerCase() + ' card ' + (k % PER + 1) + ' on #' + cur + '</h2><p class="sub">Pick any ' + COLOR[t].toLowerCase() + ' card not already in the week, or write your own.</p>' +
+      '<input type="search" id="q" placeholder="Search a word, a name, a team" value="' + esc(swapState.q) + '" aria-label="Search the cards">' +
+      '<div class="row"><div class="cats"><button type="button" id="mineonly" aria-pressed="' + !swapState.all + '">Your categories</button><button type="button" id="allcats" aria-pressed="' + swapState.all + '">All categories</button></div></div>' +
+      '<div class="row"><button type="button" class="btn go" id="write">Write your own card</button><button type="button" class="btn ghost" id="x">Cancel</button></div>' +
+      '<div class="list" id="hits">' + list() + '</div>');
+    var redo = function () { $('hits').innerHTML = list(); };
+    $('q').addEventListener('input', function () { swapState.q = this.value; redo(); });
+    $('mineonly').addEventListener('click', function () { swapState.all = false; this.setAttribute('aria-pressed', 'true'); $('allcats').setAttribute('aria-pressed', 'false'); redo(); });
+    $('allcats').addEventListener('click', function () { swapState.all = true; this.setAttribute('aria-pressed', 'true'); $('mineonly').setAttribute('aria-pressed', 'false'); redo(); });
+    $('hits').addEventListener('click', function (e) { var b = e.target.closest('[data-pick]'); if (!b) return; change(cur, function (bd) { bd.cards[k] = { id: b.dataset.pick, swapped: 1 }; }); close(); });
+    $('write').addEventListener('click', function () { edit(k, true); });
+    $('x').addEventListener('click', close);
+  }
+
+  function curly(s) { return s.replace(/(^|[\s(\[“—–-])'/g, '$1‘').replace(/'/g, '’').replace(/(^|[\s(\[—–-])"/g, '$1“').replace(/"/g, '”'); }
+  function edit(k, fresh) {
+    var e = data[cur].cards[k], v = fresh ? { d: Math.floor(k / PER) + 1, deck: cats[0] || 'basics', ex: '', w: '', m: '', hook: '' } : view(e, cur), wr = fresh ? ['', ''] : wrongs(v).concat(['', '']).slice(0, 2);
+    var mine = fresh || !!e.nw, deckOpts = Object.keys(DECKS).map(function (d) { return '<option value="' + d + '"' + (d === v.deck ? ' selected' : '') + '>' + esc(DECKS[d]) + '</option>'; }).join('');
+    open('<h2>' + (fresh ? 'Write your own card' : 'Edit “' + esc(v.hook) + '”') + '</h2><p class="sub">' + (fresh ? 'For ' + COLOR[v.d - 1].toLowerCase() + ' card ' + (k % PER + 1) + ' on #' + cur + '.' : 'Your wording plays as written.') + ' The fact checker checks the facts before it plays, and you have the last word.</p>' +
+      '<label class="f">Sentence <small>The answer must appear in it word for word, and it becomes the blank</small><textarea id="f-ex" rows="3">' + esc(v.ex) + '</textarea></label>' +
+      '<div class="two"><label class="f">Answer<input type="text" id="f-w" value="' + esc(v.w) + '"></label><label class="f">Hook <small>A word or name from the sentence, never the answer</small><input type="text" id="f-hook" value="' + esc(v.hook) + '"></label></div>' +
+      '<div class="two"><label class="f">Wrong answer<input type="text" id="f-w1" value="' + esc(wr[0]) + '"></label><label class="f">Wrong answer<input type="text" id="f-w2" value="' + esc(wr[1]) + '"></label></div>' +
+      '<label class="f">Meaning <small>Shows under the answer once it’s played</small><input type="text" id="f-m" value="' + esc(v.m) + '"></label>' +
+      (mine ? '<div class="two"><label class="f">Category<select id="f-deck">' + deckOpts + '</select></label><label class="f">Color<select id="f-d"><option value="1"' + (v.d === 1 ? ' selected' : '') + '>Green (easy)</option><option value="2"' + (v.d === 2 ? ' selected' : '') + '>Yellow (harder)</option><option value="3"' + (v.d === 3 ? ' selected' : '') + '>Red (hardest)</option></select></label></div>' +
+        '<label class="f">Where the fact comes from <small>A link for the fact checker, from the category’s official site if you have one</small><input type="text" id="f-src" value="' + esc(v.src || '') + '" placeholder="https://"></label>' +
+        '<label class="row" style="font-size:14px"><input type="checkbox" id="f-wm"' + (v.wm ? ' checked' : '') + '> About the women’s game</label>' : '') +
+      '<div class="msgs" id="msgs"></div>' +
+      '<div class="row"><button type="button" class="btn go" id="ok">' + (fresh ? 'Use this card' : 'Save the edit') + '</button><button type="button" class="btn ghost" id="x">Cancel</button></div>');
+    function read() {
+      var g = function (id) { var el = $(id); return el ? curly(el.value.replace(/\s+/g, ' ').trim()) : ''; };
+      return { ex: g('f-ex'), w: g('f-w'), hook: g('f-hook'), wr: [g('f-w1'), g('f-w2')], m: g('f-m'), src: g('f-src'), deck: $('f-deck') ? $('f-deck').value : v.deck, d: $('f-d') ? +$('f-d').value : v.d, wm: $('f-wm') ? $('f-wm').checked : false };
+    }
+    function problems(f) {   // the house style and the game's own rules
+      var p = [], low = f.ex.toLowerCase();
+      if (!f.ex) p.push('Write the sentence');
+      if (!f.w) p.push('Give the answer');
+      else if (low.indexOf(f.w.toLowerCase()) < 0) p.push('The answer isn’t in the sentence word for word');
+      if (!f.hook) p.push('Give a hook');
+      else if (low.indexOf(f.hook.toLowerCase()) < 0) p.push('The hook isn’t in the sentence');
+      else if (f.w && f.hook.toLowerCase() === f.w.toLowerCase()) p.push('The hook can’t be the answer');
+      if (!f.wr[0] || !f.wr[1]) p.push('Give two wrong answers');
+      else if (words(f.wr[0]) === words(f.wr[1]) || words(f.wr[0]) === words(f.w) || words(f.wr[1]) === words(f.w)) p.push('The three choices must all differ');
+      if (!f.m) p.push('Give the meaning');
+      if (/;/.test(f.ex + f.m + f.w + f.wr.join(''))) p.push('No semicolons (house style)');
+      if (/\.$/.test(f.ex)) p.push('No period at the end of the sentence (house style)');
+      return p;
+    }
+    function check() {
+      var f = read(), p = problems(f), w = says({ ex: f.ex, m: f.m, hook: f.hook, w: f.w, wr: f.wr });
+      $('msgs').innerHTML = (p.length ? p.map(function (x) { return '<div class="msg">' + esc(x) + '</div>'; }).join('') : '<div class="msg ok">Ready to use</div>') +
+        (w ? '<div class="msg warn">Try to avoid “' + w + '”, so the game reads the same everywhere. Keep it only if the card needs it</div>' : '');
+      $('ok').disabled = !!p.length; return f;
+    }
+    ['f-ex', 'f-w', 'f-hook', 'f-w1', 'f-w2', 'f-m', 'f-src', 'f-deck', 'f-d', 'f-wm'].forEach(function (id) { var el = $(id); if (el) { el.addEventListener('input', check); el.addEventListener('change', check); } }); check();
+    $('ok').addEventListener('click', function () {
+      var f = check(); if (problems(f).length) return;
+      change(cur, function (bd) {
+        if (mine) bd.cards[k] = { nw: { deck: f.deck, d: f.d, ex: f.ex, w: f.w, hook: f.hook, wr: f.wr, m: f.m, src: f.src, wm: f.wm ? 1 : 0 }, was: e.was || e.id || '' };   // was: the card it replaced, for Undo
+        else { var c = BY[e.id], ed = {}; ['ex', 'w', 'hook', 'm'].forEach(function (x) { if (f[x] !== c[x]) ed[x] = f[x]; });
+          var was = c.ch[cur].filter(function (x) { return x !== c.w; }); if (f.wr.join('|') !== was.join('|') || ed.w) ed.wr = f.wr;
+          bd.cards[k] = Object.keys(ed).length ? { id: e.id, edit: ed } : { id: e.id }; }
+      });
+      close();
+    });
+    $('x').addEventListener('click', close);
+  }
+
+  $('tabs').addEventListener('click', function (e) { var b = e.target.closest('[data-n]'); if (b) { cur = +b.dataset.n; try { localStorage.setItem('br-tab', cur); } catch (x) {} draw(); scrollTo(0, 0); } });
+  $('board').addEventListener('click', function (e) {
+    var s = e.target.closest('[data-swap]'), d = e.target.closest('[data-edit]'), u = e.target.closest('[data-undo]');
+    if (s) swap(+s.dataset.swap); else if (d) edit(+d.dataset.edit, false);
+    else if (u) { var k = +u.dataset.undo; change(cur, function (bd) { var en = bd.cards[k]; bd.cards[k] = { id: en.nw ? en.was : en.id }; }); }
+  });
+  $('ready').addEventListener('click', function () { var b = data[cur]; if (!b) return; b.status = b.status === 'ready' ? 'draft' : 'ready'; draw(); save(cur, true); });
+
+  // ---- start: the cards, then the boards, live ----
+  try { var t = +localStorage.getItem('br-tab'); if (BOARDS.indexOf(t) >= 0) cur = t; } catch (x) {}
+  fetch('pool.json').then(function (r) { return r.json(); }).then(function (p) {
+    POOL = p.cards; ONE = p.one || []; MINE = p.mine || []; POOL.forEach(function (c) { BY[c.id] = c; });
+    return window.claude ? claude.use('db') : null;
+  }).then(function (d) {
+    db = d;
+    if (!db) { $('board').innerHTML = '<p class="empty">Open this page in Claude to see and edit the boards.</p>'; return; }
+    db.doc('settings/main').onSnapshot(function (s) { cats = (s.exists && s.data().cats) || []; draw(); }, function () {});
+    BOARDS.forEach(function (n) {
+      refs[n] = db.doc('boards/b' + n);
+      refs[n].onSnapshot(function (s) {
+        if (!s.exists) { delete data[n]; draw(); return; }
+        if (pend[n] || (s.metadata.hasPendingWrites && data[n])) return;   // our own change, already drawn
+        data[n] = JSON.parse(JSON.stringify(s.data())); draw();
+      }, function () { $('save').textContent = 'The boards stopped updating. Reload the page'; });
+    });
+    draw();
+  }).catch(function () { $('board').innerHTML = '<p class="empty">The cards didn’t load. Reload the page.</p>'; });
+})();
+</script>
