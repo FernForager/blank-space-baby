@@ -1,0 +1,12 @@
+# Brief: four fixes to the sets of wrong answers (Oct 31, 2026)
+
+The independent review of Decoys #17’s landing (TRIVELLE 19, on fc74a7b) found no change for players today: `tools/choicediff.py 05df3f5` gives 0 differences and drawcheck 0 problems. These four bite only once a card changes. Fix them with no change to any choice or fingerprint today, proved by `python3 tools/choicediff.py <daily before your work>` at 0 differences.
+
+1. **A rename drops an answer other cards still have** (`tools/vet.py` `follow`, called by take, combine, edit and `library.py apply`). 30 groups of cards share one answer in one deck and kind, and each set borrows it once from the lowest card. Rewording basics:10’s answer from goalkeeper takes goalkeeper out of `basics/game-who` though basics:11 and :12 still answer it, and 8 set-mates lose it. Fix: when other cards still have the old answer, point the entry at the next one that isn’t out, and add the new answer as its own entry.
+2. **A rename onto an answer already in the set breaks the build** (same function): it writes the answer twice, `wrong_problems` refuses it, and by then the deck and `wrong.json` are saved. Fix: no duplicate, and every tool that saves the sets runs `wrong_problems` before it writes.
+3. **“Can show” ignores other cards with the same answer** (`build.py` `set_entries`, `live`, used by `item_problems`, `draws`, `library.py`’s thin and in-two reports and the Card Room’s `setNow`). An out lender hides the entry in Python while the page borrows from another card. Fix: an entry is live when any card with its answer in the set’s kind isn’t out, the same rule as the page’s `stand_in` (build.py main).
+4. **Reviewers see answers that can never show** (`build.py` `draws`): an out card’s answer stays in `wrong_pool` and the fingerprint. If that’s on purpose (taking a card out lapses no verdicts), write it down where `wrong_pool` and line 111’s comment say otherwise, and make `vet.py todo` mark such answers.
+
+Smaller: `stand_in` looks only among cards of the set’s kind, so an entry the Card Room adds from another kind’s card gets no stand-in while that card is in review. And `save_sets` writes invalid JSON for a set with only entries.
+
+Checks before you report: build, choicediff 0, drawcheck, lifecycle, textcheck, tilecheck, `library.py check`, golive.py, and a trial for each fix (rename basics:10, rename basics:20 to coach, take basics:10 out) run in a copy and reverted.
