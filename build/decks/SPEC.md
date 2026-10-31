@@ -31,6 +31,7 @@ Write a JSON file (path given in your task) shaped exactly like:
 
 ## Morg’s style
 - Read `build/decks/MORG-STYLE.md` before writing or rewording a card: his own edits, before and after, and the patterns they show (Oct 31, 2026). His wording is the model, and the editor holds new cards to it.
+- Read `build/decks/VOICE.md` too (Oct 31, 2026): the house voice, with how the sentence shows its answer, what the meaning line teaches, honest difficulty and wrong answers in range.
 
 ## Accuracy
 - Research with WebSearch/WebFetch. Do not go from memory for any fact that could have changed. Today is 2026-10-14.

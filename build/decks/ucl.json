@@ -159,7 +159,7 @@
   },
   {
    "w": "Atlético Madrid",
-   "means": "Real’s city rivals lost 5–3 on penalties",
+   "means": "Real’s neighbors lost the shoot-out 5–3",
    "ex": "In 2016, Real Madrid beat Atlético Madrid on penalties in the final",
    "hook": "penalties",
    "k": "club",
@@ -369,11 +369,11 @@
   },
   {
    "w": "Glasgow",
-   "means": "At Hampden Park",
+   "means": "Won by a famous Zidane finish",
    "ex": "Real Madrid beat Bayer Leverkusen in Glasgow in 2002",
    "hook": "Leverkusen",
    "k": "city",
-   "src": "https://www.uefa.com/uefachampionsleague/match/69489--leverkusen-vs-real-madrid/",
+   "src": "https://www.uefa.com/uefachampionsleague/history/seasons/2001/",
    "d": 3
   },
   {
@@ -614,9 +614,9 @@
   },
   {
    "w": "4–1",
-   "means": "Real Madrid kept the trophy",
+   "means": "Their second title in a row",
    "ex": "Real Madrid beat Juventus 4–1 in Cardiff in 2017",
-   "hook": "Real Madrid",
+   "hook": "Cardiff",
    "k": "score",
    "src": "https://www.uefa.com/uefachampionsleague/history/seasons/2017/",
    "d": 3

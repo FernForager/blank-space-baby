@@ -23,7 +23,7 @@ wrong pick shows for any answer with a meaning of its own, which you judge with 
 
 ## The rules every reviewer follows
 
-1. Read `CLAUDE.md` (house style, sources per deck, how Morg works), `build/decks/SPEC.md` (the card format, hooks and difficulty) and `build/decks/MORG-STYLE.md` (Morg’s own edits and the patterns they show: the editor holds new wording to them) first.
+1. Read `CLAUDE.md` (house style, sources per deck, how Morg works), `build/decks/SPEC.md` (the card format, hooks and difficulty) `build/decks/MORG-STYLE.md` (Morg’s own edits and the patterns they show: the editor holds new wording to them) and `build/decks/VOICE.md` (the house voice, from the wordsmith) first.
 2. Work on your branch. The first time: `git fetch origin daily && git checkout -b vet-WHO origin/daily`. In a fresh container later: `git fetch origin vet-WHO daily && git checkout -B vet-WHO origin/vet-WHO`. Before every batch: `git fetch origin daily && git merge --no-edit origin/daily`, so you judge the cards as they stand. Never rebase, never force-push, never push to `daily` or `main`.
 3. Get cards with `python3 tools/vet.py todo WHO --json --limit 40` (add a deck id to stay in one deck). Each card comes with its fingerprint `h`, its source, its color and the wrong answers it can draw.
 4. Judge each card on its own and write a JSON list outside the repo, one object per card: `{"id": "rules:0", "h": "…", "v": "ok"}`, or `"v": "fix"` with a `note` saying why and `fix` holding only the changed fields (`ex`, `means`, `hook`, `d`, `k`, `w`, `src`, or `groups` to add to the deck, like `[["Aston Villa", "Crystal Palace"]]`), or `"v": "cut"` with a `note`. An ok may carry a short note too (the fact checker’s says where it checked).

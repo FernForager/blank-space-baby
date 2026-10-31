@@ -232,7 +232,7 @@
     {
       "w": "free agent",
       "means": "Free to sign with any team",
-      "ex": "With no contract, the star became a free agent and could join any team",
+      "ex": "Her contract over, the star became a free agent and her phone began to ring",
       "hook": "contract",
       "k": "role",
       "src": "https://www.merriam-webster.com/dictionary/free%20agent",
@@ -286,8 +286,8 @@
     {
       "w": "professional foul",
       "means": "Foul on purpose to stop a goal",
-      "ex": "Beaten for speed, the defender made a professional foul to stop a goal",
-      "hook": "speed",
+      "ex": "Outrun, the last defender tugged the striker’s shirt: a professional foul",
+      "hook": "defender",
       "k": "rules",
       "src": "https://www.merriam-webster.com/dictionary/professional%20foul",
       "d": 2
