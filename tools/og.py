@@ -7,13 +7,15 @@
 A poster from the real build's own pieces, never a screenshot of the phone (Morg, Oct 31, 2026: "a billboard you'd see on a
 Tokyo train, a cool compelling collage of our best elements"). The page is loaded through tools/docsroute.py like the other
 tools, then its own pieces are moved into a 1200×630 layout: the sign (the dot-matrix board, redrawn by the page's own
-drawSign at poster size), the three balls from the screen with every panel lit, tiles from board #1 with their real hooks,
+drawSign at poster size), the three balls from the screen with every panel lit, three keys from the board with its own marks,
 and the sign's pixel ball. The only words are the sign and Morg's line "daily ⚽ trivia" (his words, Oct 31, 2026), the ⚽ drawn
-as the game draws one in a string, its own pixel ball, so it looks the same on every phone.
+as the game draws one in a string, its own pixel ball, so it looks the same on every phone. The keys carry no words (Morg,
+Oct 31, 2026: cards with hooks were too specific, the rest is visuals): each shows its color card and one of the game's own
+marks, the black-and-white ball for a right answer or the red ✕ for a miss, cloned from a played tile on the board.
 
 The directions: A, lights, the sign's dot field over the CRT with the three balls lit under it, the sign alone.
-B, collage, the cabinet's cream and green trim, the sign in its rim at a tilt, three fanned tiles, the balls and the line in ink.
-C, three cards, the control panel's black, the sign across the top, a tile of each color and the line in the screen's glow.
+B, collage, the cabinet's cream and green trim, the sign in its rim at a tilt, three keys scattered, the balls and the line in ink.
+C, three keys, the control panel's black, the sign across the top, a key of each color and the line in the screen's glow.
 """
 import asyncio, os, sys
 from playwright.async_api import async_playwright
@@ -23,7 +25,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 HTML = open(os.path.join(ROOT, 'docs', 'index.html')).read()
 DIRECTION = 'B'   # the poster the site uses, Morg's pick
 W, H = 1200, 630
-HOOKS = ['scorer', 'never played', 'Champions']   # one tile a color from board #1 (Basics, Messi, CR7), all approved or locked
+MARKS = [1, 1, 2]   # the three keys, green, yellow, red: 1 the ball (right), 2 the ✕ (a miss), a day like the share grid's ⚽⚽❌
 
 CSS = """
 #poster { position: fixed; inset: 0; width: 1200px; height: 630px; overflow: hidden; z-index: 50; font-family: var(--body-font); font-weight: 600; color: var(--text); }
@@ -37,8 +39,8 @@ CSS = """
 #poster .balls .bi { overflow: visible; }
 #poster .tile { width: 300px; height: 230px; min-height: 0; padding: 16px 20px 14px; border-radius: 24px; box-shadow: 0 10px 0 var(--btn-edge), 0 16px 22px rgba(0,0,0,.25); transform-origin: 50% 50%; }
 #poster .tile.c1::after, #poster .tile.c2::after, #poster .tile.c3::after { top: 16px; right: 18px; width: 30px; height: 42px; border-radius: 6px; box-shadow: 0 0 0 2px rgba(0,0,0,.18); }
-#poster .tile .tag { font-size: 33px; line-height: 1; letter-spacing: 0; max-width: calc(100% - 72px); }
-#poster .tile .hk { font-size: 44px; line-height: 1.15; letter-spacing: 0; text-align: center; margin: auto 0; }
+#poster .tile { justify-content: center; }
+#poster .tile .res { margin: 0; } #poster .tile .bw { width: 118px; height: 118px; } #poster .tile .bwx { width: 104px; height: 104px; }
 #poster .line { margin: 0; white-space: nowrap; line-height: 1; font-size: 77px; }
 #poster .line .tball { --bu: 3px; height: .64em; margin: 0 .08em; vertical-align: baseline; }
 #poster .line .tball svg { bottom: calc(.318em - 9.5 * var(--bu)); }
@@ -75,7 +77,6 @@ CSS = """
 #poster[data-d="C"] .marquee { left: 60px; top: 30px; width: 1080px; height: 214px; }
 #poster[data-d="C"] .marquee.dm canvas { inset: 9px 12px; width: calc(100% - 24px); height: calc(100% - 18px); }
 #poster[data-d="C"] .tile { width: 330px; height: 210px; top: 268px; }
-#poster[data-d="C"] .tile .hk { font-size: 55px; }
 #poster[data-d="C"] .tile.t0 { left: 60px; } #poster[data-d="C"] .tile.t1 { left: 435px; } #poster[data-d="C"] .tile.t2 { left: 810px; }
 #poster[data-d="C"] .line { left: 0; right: 0; top: 514px; text-align: center; color: var(--glow); text-shadow: 0 0 6px rgba(92,240,154,.55); }
 """
@@ -92,20 +93,21 @@ async (o) => {
   const balls = Q('#v-board .balls').cloneNode(true);
   balls.querySelectorAll('.pt').forEach(p => p.classList.add('on'));
   balls.querySelectorAll('.bi').forEach(b => b.classList.remove('full'));
-  // tiles from today's board, by hook, as the board draws them (its category and its hook, the color card in the corner)
-  const tiles = [...document.querySelectorAll('#p-board .tile')];
-  const tile = (hook, k) => {
-    const t = tiles.find(t => t.querySelector('.hk').textContent.replace(/\\u00a0/g, ' ') === hook);
-    if (!t) throw new Error('no tile on the board with the hook ' + hook);
-    const c = t.cloneNode(true); c.removeAttribute('style'); c.removeAttribute('disabled'); c.classList.add('t' + k);
-    c.querySelectorAll('.hk, .tag').forEach(e => e.removeAttribute('style')); return c;
+  // the keys: a tile of each color from the board with its words taken off, so only its color card stays, and in its middle one of
+  // the game's own marks, cloned from the tiles the tool played before this ran (the ball of a right answer, the ✕ of a miss)
+  const done = Q('#p-board .tile.done .res'), miss = Q('#p-board .tile.miss .res');
+  if (!done || !miss) throw new Error('no played tiles to take the marks from');
+  const key = (m, k) => {
+    const t = Q('#p-board .tile.c' + (k + 1) + ':not(.done):not(.miss)');
+    const c = t.cloneNode(true); c.removeAttribute('style'); c.removeAttribute('disabled'); c.removeAttribute('aria-label'); c.classList.add('t' + k);
+    c.innerHTML = ''; const r = (m === 1 ? done : miss).cloneNode(true); r.removeAttribute('style'); c.appendChild(r); return c;
   };
   // Morg's line, the ⚽ as the sign's own pixel ball (the game's way of drawing one in a string)
   const ball = Q('.subhead .tball');
   const line = () => { const p = document.createElement('p'); p.className = 'line'; p.append('daily ', ball.cloneNode(true), ' trivia'); return p; };
   if (o.dir === 'A') { P.append(sign, balls, el('scan')); }
-  if (o.dir === 'B') { P.append(el('trim l'), el('trim r'), sign, el('crt', el('screen', balls)), ...o.hooks.map(tile), line()); }
-  if (o.dir === 'C') { P.append(sign, ...o.hooks.map(tile), line()); }
+  if (o.dir === 'B') { P.append(el('trim l'), el('trim r'), sign, el('crt', el('screen', balls)), ...o.marks.map(key), line()); }
+  if (o.dir === 'C') { P.append(sign, ...o.marks.map(key), line()); }
   await document.fonts.ready;
   window.dispatchEvent(new Event('resize'));
   await new Promise(r => setTimeout(r, 100));
@@ -125,7 +127,13 @@ async def render(dir, out, scale):
         await pg.route('http://bsb.test/**', route(HTML))
         await pg.goto('http://bsb.test/?day=1&reset'); await pg.wait_for_timeout(1500)
         await pg.evaluate("document.fonts.ready.then(() => 1)")
-        info = await pg.evaluate(JS, {'dir': dir, 'css': CSS, 'hooks': HOOKS})
+        for i, right in ((0, True), (1, False)):   # one card right and one missed, so the board holds both marks
+            await pg.click(f'[data-i="{i}"]'); await pg.wait_for_timeout(400)
+            w = await pg.evaluate("document.getElementById('q').dataset.w")
+            pick = w if right else await pg.evaluate("[...document.querySelectorAll('.choice')].map(b => b.dataset.w).find(x => x !== document.getElementById('q').dataset.w)")
+            await pg.click(f'.choice[data-w="{pick}"]'); await pg.wait_for_timeout(400)
+            await pg.click('#flip'); await pg.wait_for_timeout(1200)
+        info = await pg.evaluate(JS, {'dir': dir, 'css': CSS, 'marks': MARKS})
         await pg.wait_for_timeout(400)
         await pg.screenshot(path=out); await b.close()
     if errs: print('JS ERRORS', errs)
