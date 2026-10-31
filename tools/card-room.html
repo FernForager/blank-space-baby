@@ -178,7 +178,7 @@ label.f small { font-weight: 400; color: var(--muted); }
   let D = null, C = [], CAT = {}, DECK = {}, DRAW = [], FIND = [], NOTES = [], SINCE = '', SPELL = { hook: {}, answer: {} };
   const QUIET = ['hook-answer', 'cross-cat'];   // findings that are fine as they are: shown on the card, never counted as a check
   let db = null, owner = false, live = false;
-  const EDITS = {}, NEWS = {}, ASKS = {};
+  const EDITS = {}, NEWS = {}, ASKS = {}, DONE = {};   // his saves, and the GM's log of what became of each (done)
   const S = {
     v: 'cards',
     cards: { q: '', cat: '', st: 'live', colors: [1, 2, 3], mine: false, checks: false, sort: 'deck', n: 40 },
@@ -195,18 +195,29 @@ label.f small { font-weight: 400; color: var(--muted); }
   };
 
   // ---- a card as it reads now: the library's card with Morg's saved edit on top ----
-  function ed(c) { const e = c && EDITS[c.id]; return e && e.st !== 'applied' && e.st !== 'dropped' ? e : null; }
+  function derive() {   // each save's fate: the newest record in the log for the wording he saved (its at), or still waiting
+    const last = {};
+    Object.keys(DONE).map(k => DONE[k]).sort((a, b) => String(a.at).localeCompare(String(b.at))).forEach(r => { last[r.col + '|' + r.id + '|' + r.for] = r; });
+    [['edits', EDITS], ['new', NEWS], ['asks', ASKS]].forEach(([col, store]) => Object.keys(store).forEach(id => {
+      const d = store[id], r = last[col + '|' + id + '|' + d.at];
+      d.st = r ? r.st : col === 'asks' ? 'asked' : 'saved'; d.res = r ? r.res || '' : ''; d.card = r ? r.card || '' : '';
+    }));
+  }
+  function inLibrary(c, e) {   // the library already reads as his edit (the GM republished it after applying)
+    return Object.keys(e.f || {}).every(k => k === 'wr' ? JSON.stringify(c.wr && c.wr.length ? c.wr.map(wtext) : null) === JSON.stringify(e.f.wr || null) : base(c, k) === e.f[k]);
+  }
+  function ed(c) { const e = c && EDITS[c.id]; return e && e.st !== 'dropped' && !(e.st === 'applied' && inLibrary(c, e)) ? e : null; }
   function view(c) {
     if (c.s === 'n') return c;
     const e = ed(c), f = e ? e.f || {} : {};
     const v = Object.assign({}, c);
     if ('ex' in f) v.ex = f.ex; if ('w' in f) v.w = f.w; if ('hook' in f) v.h = f.hook; if ('means' in f) v.m = f.means; if ('d' in f) v.d = f.d; if ('cat' in f) v.c = f.cat;
     if ('wr' in f) { if (f.wr) v.wr = f.wr; else delete v.wr; }
-    v.edited = !!e; return v;
+    v.edited = !!e; v.edit = e; return v;
   }
   function news() {   // his own new cards, waiting to go into their decks
-    return Object.keys(NEWS).map(id => NEWS[id]).filter(n => n.st !== 'applied' && n.st !== 'dropped').sort((a, b) => (b.at || '').localeCompare(a.at || ''))
-      .map(n => ({ id: 'new:' + n._id, doc: n._id, s: 'n', c: n.cat, d: n.d, w: n.w, ex: n.ex, m: n.means, h: n.hook, k: n.k || 'own', wr: (n.wr || []).filter(Boolean), src: n.src, wm: n.wm, deck: n.deck, a: (n.at || '').slice(0, 10) }));
+    return Object.keys(NEWS).map(id => NEWS[id]).filter(n => n.st !== 'dropped' && !(n.st === 'applied' && n.card && IDX[n.card] != null && C[IDX[n.card]].w === n.w)).sort((a, b) => (b.at || '').localeCompare(a.at || ''))
+      .map(n => ({ id: 'new:' + n._id, doc: n._id, s: 'n', fate: n.st, res: n.res, card: n.card, c: n.cat, d: n.d, w: n.w, ex: n.ex, m: n.means, h: n.hook, k: n.k || 'own', wr: (n.wr || []).filter(Boolean), src: n.src, wm: n.wm, deck: n.deck, a: (n.at || '').slice(0, 10) }));
   }
   const deckOf = c => c.deck || c.id.split(':')[0];
   const tileOf = cat => (CAT[cat] || {}).tile || '';
@@ -237,8 +248,8 @@ label.f small { font-weight: 400; color: var(--muted); }
   }
   function badges(c) {
     const b = [];
-    if (c.s === 'n') b.push(['Your new card', 'mine']);
-    if (c.edited) b.push([ed(c).st === 'held' ? 'Your edit, held' : 'Your edit, waiting', 'mine']);
+    if (c.s === 'n') b.push(c.fate === 'held' ? ['Your new card, held', 'warn'] : c.fate === 'applied' ? ['Your new card, now ' + c.card, 'mine'] : ['Your new card', 'mine']);
+    if (c.edited) { const st = c.edit.st; b.push(st === 'held' ? ['Your edit, held', 'warn'] : st === 'applied' ? ['Your edit, applied', 'mine'] : ['Your edit, waiting', 'mine']); }
     if (c.s === 'p') b.push(['Waiting on ' + (c.wt || []).map(w => WHO[w] || w).join(', '), 'warn']);
     if (c.s === 'f') b.push(['Flagged', 'bad']); if (c.s === 'o') b.push(['Out', 'bad']); if (c.s === 'l') b.push(['Locked', 'mine']);
     if (c.s !== 'n' && c.s !== 'o' && c.a > SINCE) b.push(['New', 'new']);
@@ -303,13 +314,13 @@ label.f small { font-weight: 400; color: var(--muted); }
     s.n = s.n || step; more();
   }
   function viewCats() {
-    const q = letters(S.categories.q).trim(), asks = Object.keys(ASKS).map(id => ASKS[id]).filter(a => a.st !== 'dropped').sort((a, b) => (b.at || '').localeCompare(a.at || ''));
+    const q = letters(S.categories.q).trim(), asks = Object.keys(ASKS).map(id => ASKS[id]).sort((a, b) => (b.at || '').localeCompare(a.at || ''));
     const all = news().concat(C), cats = D.cats.filter(c => !q || letters(c.name + ' ' + c.tile + ' ' + c.note + ' ' + c.decks.join(' ')).indexOf(q) >= 0);
     $('main').innerHTML = '<div class="filters"><div class="row" style="cursor:default"><span>One list of categories: every card picks one from it, and a new one starts as your ask, for the GM to add with its tile word.</span>' +
       (live && owner ? '<span><button type="button" class="btn" id="ask">Ask for a new category</button></span>' : '') + '</div></div>' +
       (asks.length ? '<p class="count"><b>Your asks</b></p><ol class="list" style="margin-bottom:14px">' + asks.map(a => '<li><div class="row" style="cursor:default"><span class="head"><span class="hook">' + esc(a.name) + '</span><span class="tag">' + esc(a.tile || '') + '</span></span>' +
-        (a.note ? '<span class="means">' + esc(a.note) + '</span>' : '') + '<div class="badges"><span class="badge ' + (a.st === 'added' ? 'mine' : 'warn') + '">' + (a.st === 'added' ? 'Added' : 'Waiting for the GM') + '</span>' + (a.res ? '<span class="badge">' + esc(a.res) + '</span>' : '') + '</div>' +
-        (a.st !== 'added' && live && owner ? '<div><button type="button" class="btn ghost" data-unask="' + esc(a._id) + '">Take back</button></div>' : '') + '</div></li>').join('') + '</ol>' : '') +
+        (a.note ? '<span class="means">' + esc(a.note) + '</span>' : '') + '<div class="badges"><span class="badge ' + (a.st === 'added' ? 'mine' : a.st === 'dropped' ? 'bad' : 'warn') + '">' + (a.st === 'added' ? 'Added' : a.st === 'dropped' ? 'Not added' : 'Waiting for the GM') + '</span>' + (a.res ? '<span class="badge">' + esc(a.res) + '</span>' : '') + '</div>' +
+        (a.st !== 'added' && live && owner ? '<div><button type="button" class="btn ghost" data-unask="' + esc(a._id) + '">' + (a.st === 'dropped' ? 'Clear it' : 'Take back') + '</button></div>' : '') + '</div></li>').join('') + '</ol>' : '') +
       checksPanel('category') +
       '<p class="count"><b>' + plural(D.cats.length, 'category', 'categories') + '</b></p><ol class="list">' + cats.map(cat => {
         const mine = all.filter(c => view(c).c === cat.id && c.s !== 'o'), by = [1, 2, 3].map(d => mine.filter(c => view(c).d === d).length), tot = mine.length || 1;
@@ -387,8 +398,8 @@ label.f small { font-weight: 400; color: var(--muted); }
         '<div class="tilebox"><div class="tile" aria-label="The tile"><i class="rc c' + v.d + '"></i><span class="tt">' + esc(tileOf(v.c)) + '</span><span class="th">' + esc(v.h) + '</span></div>' +
         '<div style="display:grid;gap:6px;min-width:0"><p class="ex">' + marked(v.ex, v.w) + '</p><p class="means">' + esc(v.m) + '</p></div></div>' +
         '<div style="display:flex;gap:8px;flex-wrap:wrap">' + (live && owner && c.s !== 'o' ? '<button type="button" class="btn go" id="edit">' + (c.s === 'n' ? 'Edit your card' : 'Edit') + '</button>' : '') + '<button type="button" class="btn" id="try">Try it</button>' +
-          (live && owner && (e || c.s === 'n') ? '<button type="button" class="btn ghost" id="undo">' + (c.s === 'n' ? 'Delete your card' : 'Undo your edit') + '</button>' : '') + '</div><div id="playbox"></div>' +
-        (e ? '<div class="msg ' + (e.st === 'held' ? 'warn' : 'ok') + '">' + (e.st === 'held' ? 'Your edit is held: ' + esc(e.res || 'the GM will ask you') : 'Your edit waits for the hub’s “Apply my card edits”. It changed ' + Object.keys(e.f || {}).map(k => FIELD[k] || k).join(', ')) + '</div>' : '') +
+          (live && owner && ((e && e.st !== 'applied') || (c.s === 'n' && c.fate !== 'applied')) ? '<button type="button" class="btn ghost" id="undo">' + (c.s === 'n' ? 'Delete your card' : 'Undo your edit') + '</button>' : '') + '</div><div id="playbox"></div>' +
+        (e || c.s === 'n' ? fateMsg(e || c, c.s === 'n') : '') +
         (fs.length ? '<div class="msgs">' + fs.map(([k, n]) => '<div class="msg ' + (QUIET.indexOf(D.report[k].code) >= 0 ? 'info' : 'warn') + '">' + esc(D.report[k].title + ': ' + D.report[k].items[n].text) + '</div>').join('') + '</div>' : '') +
         '<div style="display:grid;gap:6px"><b style="font-size:14px">Wrong answers</b><p class="means" style="font-style:normal">' + esc(choice) + '</p>' +
         (wr.list && wr.list.length ? '<div class="choices"><span class="right">' + esc(v.w) + '</span>' + wr.list.slice(0, 12).map(x => '<span>' + esc(x) + '</span>').join('') + (wr.list.length > 12 ? '<span>+' + fmt(wr.list.length - 12) + ' more</span>' : '') + '</div>' : '') + '</div>' +
@@ -402,6 +413,12 @@ label.f small { font-weight: 400; color: var(--muted); }
       if ($('edit')) $('edit').addEventListener('click', () => sheet(s => editSheet(s, c)));
       if ($('undo')) $('undo').addEventListener('click', () => { if (c.s === 'n') remove('new', c.doc); else remove('edits', c.id); back(); });
     });
+  }
+  function fateMsg(x, isNew) {
+    const st = isNew ? x.fate : x.st, what = isNew ? 'Your card' : 'Your edit';
+    if (st === 'held') return '<div class="msg warn">' + what + ' is held: ' + esc(x.res || 'the GM will ask you about it') + '. Change it and save again, or tell the GM it’s OK</div>';
+    if (st === 'applied') return '<div class="msg ok">' + what + ' is in its deck' + (x.card ? ' as ' + esc(x.card) : '') + ': ' + esc(x.res || '') + '. It reads as yours here until the room’s data refreshes</div>';
+    return '<div class="msg ok">' + what + ' waits for the hub’s “Apply my card edits”' + (isNew ? '' : '. It changes ' + Object.keys(x.f || {}).map(k => FIELD[k] || k).join(', ')) + '</div>';
   }
   const FIELD = { ex: 'the sentence', w: 'the answer', hook: 'the hook', means: 'the meaning', d: 'the color', cat: 'the category', wr: 'the wrong answers' };
 
@@ -570,7 +587,9 @@ label.f small { font-weight: 400; color: var(--muted); }
   function status() {
     const e = Object.keys(EDITS).filter(id => EDITS[id].st === 'saved').length, n = Object.keys(NEWS).filter(id => NEWS[id].st === 'saved').length, a = Object.keys(ASKS).filter(id => ASKS[id].st === 'asked').length;
     const parts = [e && plural(e, 'edit'), n && plural(n, 'new card'), a && plural(a, 'category ask')].filter(Boolean);
-    $('save').textContent = !live ? 'Open this page in Claude to save edits' : !owner ? 'Only Morg can change the cards here' : parts.length ? parts.join(', ') + ' saved. Send them with “Apply my card edits” in the hub' : 'Nothing waiting. Your edits save as you go';
+    const held = Object.keys(EDITS).filter(id => EDITS[id].st === 'held').length + Object.keys(NEWS).filter(id => NEWS[id].st === 'held').length;
+    $('save').textContent = !live ? 'Open this page in Claude to save edits' : !owner ? 'Only Morg can change the cards here' :
+      (parts.length ? parts.join(', ') + ' saved. Send them with “Apply my card edits” in the hub' : 'Nothing waiting. Your edits save as you go') + (held ? '. ' + plural(held, 'change') + ' held: open ' + (held === 1 ? 'it' : 'them') + ' to see why' : '');
   }
   function put(col, id, body) {
     const store = { edits: EDITS, new: NEWS, asks: ASKS }[col];
@@ -586,7 +605,7 @@ label.f small { font-weight: 400; color: var(--muted); }
   }
   let pending = 0;
   function refresh() {   // after a change: the indexes, the list and the footer
-    Object.keys(HAY).forEach(k => delete HAY[k]);
+    derive(); Object.keys(HAY).forEach(k => delete HAY[k]);
     clearTimeout(pending); pending = setTimeout(() => { const y = scrollY; render(); scrollTo(0, y); }, 50);
     status();
   }
@@ -647,7 +666,7 @@ label.f small { font-weight: 400; color: var(--muted); }
     live = true; owner = !!o;   // only Morg writes here: the database's rules say so too
     $('newcard').hidden = !owner; status();
     const slow = setTimeout(() => { $('save').textContent = 'Your saved edits haven’t loaded yet. They will once the connection answers'; }, 10000);
-    [['edits', EDITS], ['new', NEWS], ['asks', ASKS]].forEach(([col, store]) => db.collection(col).onSnapshot(snap => {
+    [['edits', EDITS], ['new', NEWS], ['asks', ASKS], ['done', DONE]].forEach(([col, store]) => db.collection(col).onSnapshot(snap => {
       clearTimeout(slow);
       if (snap.metadata.hasPendingWrites) return;   // our own change, already drawn
       Object.keys(store).forEach(k => delete store[k]);

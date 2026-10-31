@@ -350,13 +350,13 @@ NAMES = {'ex': 'ex', 'w': 'w', 'hook': 'hook', 'means': 'means', 'wr': 'wr', 'd'
 WORDING = ('ex', 'w', 'hook', 'means', 'wr')   # what the fact checker's facts-only pass reads again
 
 def room(src):
-    """The Card Room's database as ArtifactData saved it: a folder with edits/, new/ and asks/ (list each collection with
-    out_dir), or one JSON file {"edits": [...], "new": [...], "asks": [...]}. Each document as {id, version, data}."""
+    """The Card Room's database as ArtifactData saved it: a folder with edits/, new/, asks/ and done/ (list each
+    collection with out_dir), or one JSON file {"edits": [...], ...}. Each document as {id, version, data}."""
     def doc(raw, did):
         if isinstance(raw, dict) and isinstance(raw.get('data'), dict):   # a wrapper with the document under data
             return {'id': raw.get('doc_id') or raw.get('id') or did, 'version': raw.get('version'), 'data': raw['data']}
         return {'id': (raw or {}).get('_id') or did, 'version': (raw or {}).get('_version'), 'data': {k: v for k, v in (raw or {}).items() if not k.startswith('_')}}
-    out = {'edits': [], 'new': [], 'asks': []}
+    out = {'edits': [], 'new': [], 'asks': [], 'done': []}
     if os.path.isdir(src):
         for col in out:
             d = os.path.join(src, col)
@@ -392,14 +392,20 @@ def apply(src, dry=False):
     R = room(src)
     _, marks = B.vetting()
     done, style, facts, writes = [], [], [], []
+    stamp = now().replace('-', '').replace(':', '')
+    last = {}   # the room's log: the newest record for each saved document, as it was saved (its at)
+    for x in sorted(R['done'], key=lambda x: x['data'].get('at', '')): last[(x['data'].get('col'), x['data'].get('id'), x['data'].get('for'))] = x['data']
+    def settled(col, d):   # applied, dropped or added already, for the wording Morg saved
+        return (last.get((col, d['id'], d['data'].get('at'))) or {}).get('st') in ('applied', 'dropped', 'added')
     def result(col, d, st, res, cid=None):
+        """Each outcome is a new record in the room's done log, so no write ever needs a document's version."""
         done.append((st, col, d['id'], res))
-        w = {'st': st, 'res': res, 'done': now()}
+        w = {'col': col, 'id': d['id'], 'for': d['data'].get('at', ''), 'st': st, 'res': res, 'at': now()}
         if cid: w['card'] = cid
-        writes.append(dict({'op': 'update', 'collection': col, 'doc_id': d['id'], 'data': w}, **({'if_version': d['version']} if d['version'] else {})))
+        writes.append({'op': 'set', 'collection': 'done', 'doc_id': f'{col}~{d["id"]}~{stamp}', 'data': w})
     for d in R['edits']:
         e = d['data']; f = e.get('f') or {}
-        if e.get('st') not in ('saved', 'held'): continue
+        if e.get('st') != 'saved' or settled('edits', d): continue
         cid = e.get('id') or d['id']
         try: did, deck, i = V.find(cid)
         except SystemExit: result('edits', d, 'held', 'no such card'); continue
@@ -435,7 +441,7 @@ def apply(src, dry=False):
         result('edits', d, 'applied', 'In its deck: ' + ', '.join(NAMES[k] for k, _, _ in ch) + (', back to the three reviewers' if any(k != 'cat' for k, _, _ in ch) else '') + (f' ({carried} deck-mates keep their oks)' if carried else ''), cid)
     for d in R['new']:
         n = d['data']
-        if n.get('st') not in ('saved', 'held'): continue
+        if n.get('st') != 'saved' or settled('new', d): continue
         did, cat = n.get('deck') or (B.CATEGORY.get(n.get('cat')) or {}).get('home') or '', n.get('cat')
         if cat not in B.CATEGORY: result('new', d, 'held', f'{cat} is not on the category list'); continue
         if did not in B.DECK_CAT and cat in B.CATEGORY: did = B.CATEGORY[cat].get('home') or next(x for x, c in B.DECK_CAT.items() if c == cat)
@@ -458,7 +464,7 @@ def apply(src, dry=False):
         style += [(cid, f, '(new card)', item[f]) for f in ('ex', 'w', 'hook', 'means', 'wr') if item.get(f)]
         facts.append(cid)
         result('new', d, 'applied', f'On the end of {did} as {cid}' + (f', and {grew} deck-mates can now draw its answer, so they go back to the reviewers' if grew else '') + ('' if item['src'] else '. No source yet: the fact checker finds one on the deck’s site'), cid)
-    asks = [d for d in R['asks'] if d['data'].get('st') == 'asked']
+    asks = [d for d in R['asks'] if d['data'].get('st') == 'asked' and not settled('asks', d)]
     if style and not dry: log_style(style)
     for st, col, did, res in done: print(f'{st.upper():8} {col:5} {did}: {res}')
     for a in asks: print(f'ASK      category “{a["data"].get("name")}”' + (f', tile “{a["data"].get("tile")}”' if a['data'].get('tile') else '') + (f': {a["data"].get("note")}' if a['data'].get('note') else '') + '. Morg names it, then the GM adds it to build/library/categories.json with its tag string')
@@ -470,7 +476,7 @@ def apply(src, dry=False):
     if writes:
         out = os.path.join(src if os.path.isdir(src) else os.path.dirname(os.path.abspath(src)), 'applied.json')
         json.dump([writes[n:n + 50] for n in range(0, len(writes), 50)], open(out, 'w'), ensure_ascii=False, indent=1)
-        print(f'\nThe room’s status writes, in batches of 50 for ArtifactData batch: {out}')
+        print(f'\nThe room’s log, in batches of 50 for ArtifactData batch (new documents in done, so no versions needed): {out}')
     print('Then: python3 build/build.py, python3 tools/library.py check, python3 tools/library.py export DIR and republish library.json,')
     print('and commit the decks, build/vetting/desk.json, build/decks/MORG-STYLE.md and build/library/ledger.json')
 
