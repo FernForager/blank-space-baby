@@ -132,7 +132,8 @@ def shown(w, it):
 # the set's deck, its meaning line that card's means (so a reworded card never leaves a stale copy), or {w, m}, a wrong answer
 # with a meaning of its own. A card draws from the set its k names in its deck. An answer joins a set only when Morg or the
 # desk adds it: a new card never joins one by itself, and a card going out stays in every set it's in. A borrowed entry shows
-# only while its card plays, since its meaning line is that card's and only vetted wording reaches players. Seeded on Oct 31,
+# only with vetted wording: while its card sits out, it borrows from the first card that plays with its answer in the set's kind
+# (main(), stand_in). Seeded on Oct 31,
 # 2026 from the kinds as they were (every answer of each kind's cards not out), so no fingerprint or choice moved.
 def load_sets(path=WRONG):
     return load_json(path, {'sets': []})
@@ -386,8 +387,15 @@ def main(test_copy=None):
             if it.get('women'): x['wm'] = 1
             items.append(x)
             if it.get('d') in (1, 2, 3) and not ('slang' in flags and it['d'] == 3): tiers[it['d'] - 1] += 1
-        plays = {x['i'] for x in items}   # a borrowed wrong answer shows only while its card plays: [kind, its card's place], or [kind, answer, meaning] of its own
-        es = sorted((e for e in set_entries(did, deck['items']) if e['i'] is None or e['i'] in plays), key=lambda e: (e['i'] is None, e['i'] or 0))   # in the cards' order, as the page drew them before the sets
+        plays = {x['i']: x.get('k', 'word') for x in items}   # a borrowed wrong answer shows only while its card plays: [kind, its card's place], or [kind, answer, meaning] of its own
+        def stand_in(e):
+            """A borrowed entry whose card sits out (pending or flagged) borrows from the first card that plays with the same answer
+            in the set's kind, as the page drew before the sets, so a card in review never takes its answer off its deck-mates."""
+            if e['i'] is None or e['i'] in plays: return e
+            k = e['sid'].partition('/')[2]
+            j = next((j for j in sorted(plays) if plays[j] == k and deck['items'][j]['w'] == e['w']), None)
+            return j is not None and dict(e, i=j)
+        es = sorted(filter(None, map(stand_in, set_entries(did, deck['items']))), key=lambda e: (e['i'] is None, e['i'] or 0))   # in the cards' order, as the page drew them before the sets
         wrong[did] = [[e['sid'].partition('/')[2], e['i']] if e['i'] is not None else [e['sid'].partition('/')[2], e['w'], e['m']] for e in es]
         decks.append({'id': did, 'lg': '' if lg == '*' else lg, 'wm': int('women' in flags), 'rl': int('rules' in flags),
                       'sl': int('slang' in flags), 'groups': deck.get('groups', []), 'items': items})
